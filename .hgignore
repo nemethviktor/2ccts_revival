@@ -15,7 +15,7 @@ Makefile.fordist
 *-*-source.tar*
 *-*-source.zip
 2ccts_revival/*
-2ccts_revival.tar
+2ccts_revival*.tar
 
 # The local makefile should be ignored:
 Makefile.local

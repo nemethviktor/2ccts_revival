@@ -1,8 +1,9 @@
 ### 2cc TrainsInNML (Revival) changelog
 
-**3.1-alpha0 [20260316]**
+**3.1-alpha0 + 3.3-alpha1 [20260316]**
 - NEW & UPDATED:
 	- Cloned to new GitHub location
+	- Figured that the real 2ccNML was last released as 3.2 so revamped versioning.
 	- Added Gen6 Wagons (using Gen5 graphics)
 - BUGS & FIXES:
 	- TBA

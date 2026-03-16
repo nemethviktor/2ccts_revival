@@ -1,5 +1,5 @@
 /*
- *  Copyright (C) 2017 Transportman
+ *  Copyright (C) 2017 Transportman // 2026 V Nemeth
  *  This file is part of the 2cc Trains In NML and is based on The Dutch Trainset 2.0 by Jasper Vries
  *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
  *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
@@ -813,6 +813,21 @@ item(FEAT_TRAINS, item_wagon_Service_Car_Type1, 12045) {}
 item(FEAT_TRAINS, item_wagon_Service_Car_Type2, 12046) {}
 item(FEAT_TRAINS, item_wagon_Gen3_Boxcar_Type2, 12047) {}
 item(FEAT_TRAINS, item_wagon_Gen4_Boxcar_Type2, 12048) {}
+item(FEAT_TRAINS, item_wagon_Gen6_Flatcar, 12049) {}
+item(FEAT_TRAINS, item_wagon_Gen6_Heavy_Flatcar, 12050) {}
+item(FEAT_TRAINS, item_wagon_Gen6_Boxcar_Type1, 12051) {}
+item(FEAT_TRAINS, item_wagon_Gen6_Tanker, 12052) {}
+item(FEAT_TRAINS, item_wagon_Gen6_Gondola, 12053) {}
+item(FEAT_TRAINS, item_wagon_Gen6_Silo_Type1, 12054) {}
+item(FEAT_TRAINS, item_wagon_Gen6_Hopper_Type1, 12055) {}
+item(FEAT_TRAINS, item_wagon_Gen6_Car_Transporter, 12056) {}
+item(FEAT_TRAINS, item_wagon_Gen6_Container_Carrier, 12057) {}
+item(FEAT_TRAINS, item_wagon_Gen6_Centerbeam, 12058) {}
+item(FEAT_TRAINS, item_wagon_Gen6_Container_Doublestack, 12059) {}
+item(FEAT_TRAINS, item_wagon_Gen6_Superheavy_Flatcar, 12060) {}
+item(FEAT_TRAINS, item_wagon_Gen6_Boxcar_Type2, 12061) {}
+item(FEAT_TRAINS, item_wagon_Gen6_Silo_Type2, 12062) {}
+item(FEAT_TRAINS, item_wagon_Gen6_Hopper_Type2, 12063) {}
 
 //Unit Wagons, available ID range: 13000-13499 (hex 0x32C8..0x34BB)
 #define ID_RANGE_UNIT_WAGONS 0x32C8..0x34BB

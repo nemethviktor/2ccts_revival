@@ -788,6 +788,21 @@ item_wagon_Gen5_Container_Carrier, /*Year: 1990*/ \
 item_wagon_Gen5_Centerbeam, /*Year: 1990*/ \
 item_wagon_Gen5_Container_Doublestack, /*Year: 1980*/ \
 item_wagon_Gen5_Superheavy_Flatcar, /*Year: 1990*/ \
+item_wagon_Gen6_Flatcar, /*Year: 2010*/ \
+item_wagon_Gen6_Heavy_Flatcar, /*Year: 2020*/ \
+item_wagon_Gen6_Boxcar_Type1, /*Year: 2010*/ \
+item_wagon_Gen6_Boxcar_Type2, /*Year: 2010*/ \
+item_wagon_Gen6_Tanker, /*Year: 2020*/ \
+item_wagon_Gen6_Gondola, /*Year: 2010*/ \
+item_wagon_Gen6_Silo_Type1, /*Year: 2020*/ \
+item_wagon_Gen6_Silo_Type2, /*Year: 2020*/ \
+item_wagon_Gen6_Hopper_Type1, /*Year: 2020*/ \
+item_wagon_Gen6_Hopper_Type2, /*Year: 2020*/ \
+item_wagon_Gen6_Car_Transporter, /*Year: 2020*/ \
+item_wagon_Gen6_Container_Carrier, /*Year: 2010*/ \
+item_wagon_Gen6_Centerbeam, /*Year: 2010*/ \
+item_wagon_Gen6_Container_Doublestack, /*Year: 2005*/ \
+item_wagon_Gen6_Superheavy_Flatcar, /*Year: 2010*/ \
 item_wagon_Service_Car_Type1, /*Year: 1660*/ \
 item_wagon_Service_Car_Type2, /*Year: 1660*/
 

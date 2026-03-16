@@ -2,7 +2,7 @@
 
 #Main grf title and description
 STR_GRF_NAME			:{TITLE}
-STR_GRF_DESCRIPTION		:{SILVER}2cc Trains of the World in NML {}{}(c)2ccts {}License:GPLv2 or higher. {}See readme for details.
+STR_GRF_DESCRIPTION		:{SILVER}2cc Trains of the World in NML {}{}(c)2ccts Revival {}License:GPLv2 or higher. {}See readme for details.
 STR_GRF_URL             :https://dev.openttdcoop.org/projects/2ccts
 
 #General error messages
@@ -760,6 +760,21 @@ str_wagon_Gen5_Container_Carrier 		:5th Gen Container Carrier
 str_wagon_Gen5_Centerbeam 				:5th Gen Centerbeam Flatcar
 str_wagon_Gen5_Container_Doublestack 	:5th Gen Container Doublestack
 str_wagon_Gen5_Superheavy_Flatcar 		:5th Gen Superheavy Flatcar
+str_wagon_Gen6_Flatcar 					:6th Gen Flatcar
+str_wagon_Gen6_Heavy_Flatcar 			:6th Gen Heavy Flatcar
+str_wagon_Gen6_Boxcar_Type1				:6th Gen Boxcar (Type 1)
+str_wagon_Gen6_Boxcar_Type2				:6th Gen Boxcar (Type 2)
+str_wagon_Gen6_Tanker 					:6th Gen Tanker
+str_wagon_Gen6_Gondola 					:6th Gen Gondola
+str_wagon_Gen6_Silo_Type1				:6th Gen Silo (Type 1)
+str_wagon_Gen6_Silo_Type2				:6th Gen Silo (Type 2)
+str_wagon_Gen6_Hopper_Type1				:6th Gen Self-discharging Hopper (Type 1)
+str_wagon_Gen6_Hopper_Type2				:6th Gen Self-discharging Hopper (Type 2)
+str_wagon_Gen6_Car_Transporter 			:6th Gen Car Transporter
+str_wagon_Gen6_Container_Carrier 		:6th Gen Container Carrier
+str_wagon_Gen6_Centerbeam 				:6th Gen Centerbeam Flatcar
+str_wagon_Gen6_Container_Doublestack 	:6th Gen Container Doublestack
+str_wagon_Gen6_Superheavy_Flatcar 		:6th Gen Superheavy Flatcar
 
 str_wagon_Service_Car_Type1				:Service Car (Type 1)
 str_wagon_Service_Car_Type2				:Service Car (Type 2)

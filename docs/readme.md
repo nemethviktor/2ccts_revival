@@ -16,7 +16,7 @@ Then in `bash` (if you're on Windows, google around about this, but if you manag
 {{GRF_TITLE}}
 MD5Hash:  {{GRF_MD5}}
 Version:  {{REPO_REVISION}}
-~~GRF ID:   "TM\01\01"~~
+GRF ID:   "VN\01\01"
 
 ## Ye Olde Readme
 ### 1 About
