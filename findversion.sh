@@ -94,8 +94,23 @@ if [ -d "$ROOT_DIR/.hg" ]; then
 	BRANCH="`hg branch | sed 's@^default$@@'`"
 	TAG="`hg id -t | grep -v 'tip$'`"
 	REPO_DATE="`hg log -r$HASH --template="{date|shortdate}" | sed s/-/,/g | sed s/,0/,/g`"
-	VERSION=`python -c "from datetime import date; print (date($REPO_DATE)-date(2000,1,1)).days"`
+	VERSION=`python3 -c "from datetime import date; print (date($REPO_DATE)-date(2000,1,1)).days"`
 	DISPLAY_VERSION="v${VERSION}"
+	if [ -n "$TAG" ]; then
+		BRANCH=""
+		DISPLAY_VERSION="${TAG}"
+	fi
+elif [ -d "$ROOT_DIR/.git" ]; then
+	#_DESCRIBE=$(git describe --always)
+	_DESCRIBE_DIRTY=$(git describe --dirty --always --tags)
+	_DESCRIBE_TAGS=$(git describe --always --tags)
+	HASH=$(git log --pretty=format:'%H' -n 1)
+	TAG="${_DESCRIBE_TAGS}"
+	REPO_DATE=$(git log --pretty=format:'%at' -n 1)
+	VERSION=`python3 -c "from datetime import date; print((date.fromtimestamp($REPO_DATE)-date(2000,1,1)).days)"`
+	MODIFIED=$(if [ "${_DESCRIBE_DIRTY}" = "${_DESCRIBE_TAGS}" ]; then echo ""; else echo "_dirty"; fi)
+	BRANCH=$(git branch | cut -d' ' -f2)
+	DISPLAY_VERSION="${VERSION}"
 	if [ -n "$TAG" ]; then
 		BRANCH=""
 		DISPLAY_VERSION="${TAG}"

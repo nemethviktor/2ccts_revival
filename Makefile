@@ -26,7 +26,7 @@ REPO_NAME           ?= My NewGRF
 BASE_FILENAME       ?= mynewgrf
 
 # Documentation files
-DOC_FILES ?= docs/readme.txt docs/license.txt docs/changelog.txt
+DOC_FILES ?= docs/readme.md docs/license.md docs/changelog.md
 
 # Directory structure
 SCRIPT_DIR          ?= scripts
@@ -301,7 +301,7 @@ maintainer-clean::
 # target 'doc' which builds the docs
 ################################################################
 
-%.txt: %.ptxt
+%.md: %.pmd
 	$(_E) "[DOC] $@"
 	$(_V) cat $< \
 		| sed -e "s/$(REPLACE_TITLE)/$(REPO_TITLE)/" \
@@ -314,7 +314,7 @@ doc: $(DOC_FILES) $(GRF_FILE)
 
 clean::
 	$(_E) "[CLEAN DOC]"
-	$(_V) -for i in $(patsubst %.txt,%,$(DOC_FILES)); do [ -f $$i.ptxt ] && [ -f $$i.txt ] && rm -rf $$i.txt || true; done
+	$(_V) -for i in $(patsubst %.md,%,$(DOC_FILES)); do [ -f $$i.pmd ] && [ -f $$i.md ] && rm -rf $$i.md || true; done
 
 ################################################################
 # Bundle targets

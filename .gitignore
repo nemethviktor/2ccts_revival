@@ -1,6 +1,3 @@
-# Use glob syntax:
-syntax: glob
-
 # And the description file and the grs which are generated automatically
 # This has to be adopted to the newgrf filename
 *.nml
@@ -14,15 +11,13 @@ Makefile.fordist
 *-*-source
 *-*-source.tar*
 *-*-source.zip
-2ccts_revival/*
-2ccts_revival.tar
 
 # The local makefile should be ignored:
 Makefile.local
 
 # NML intermediate files
 parsetab.py
-.nmlcache/*
+.nmlcache
 
 # Dependency files:
 .version
@@ -38,6 +33,5 @@ Makefile.dep
 **.rej
 **.diff
 
-# Files created by Mac image preview and file browser:
-**/.DS_Store
-**/Thumbs.db
+2ccts_revival*.tar
+/2ccts_revival*
