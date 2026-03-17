@@ -1,9 +1,8 @@
 /*
- *  Copyright (C) 2017 Transportman // 2026 V Nemeth
+ *  Copyright (C) 2017 Transportman // V. Nemeth 2026
  *  This file is part of the 2cc Trains In NML and is based on The Dutch Trainset 2.0 by Jasper Vries
- *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
- *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
- *  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+ *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
+
 */
 
 //This file sets all vehicle IDs. Each type has a range of 1000 possible IDs.
@@ -683,10 +682,11 @@ item(FEAT_TRAINS, item_mtro_Algeria_Algiers_CAF_2011_Stock, 9053) {}
 item(FEAT_TRAINS, item_mtro_Germany_Berlin_U_Bahn_IK, 9054) {}
 item(FEAT_TRAINS, item_mtro_USA_Chicago_L_6000, 9055) {}
 
-//Multi Unit Maglev, available ID range: 10000-10499 (hex 0x2710..0x2903)
+//Multi Unit Maglev (and "Normal"), available ID range: 10000-10499 (hex 0x2710..0x2903)
 #define ID_RANGE_MULTIMAGLEV 0x2710..0x2903
 item(FEAT_TRAINS, item_mglv_China_Transrapid, 10000) {}
 item(FEAT_TRAINS, item_mglv_Japan_MLX01_901, 10001) {}
+item(FEAT_TRAINS, item_mglv_Germany_DB_182_ES64UM_Mutus, 10002) {}
 
 //Coaches, available ID range: 11000-11999 (hex 0x2AF8..0x2EDF)
 #define ID_RANGE_COACHES 0x2AF8..0x2EDF
