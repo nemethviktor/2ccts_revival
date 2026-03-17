@@ -829,12 +829,31 @@ item(FEAT_TRAINS, item_wagon_Gen6_Boxcar_Type2, 12061) {}
 item(FEAT_TRAINS, item_wagon_Gen6_Silo_Type2, 12062) {}
 item(FEAT_TRAINS, item_wagon_Gen6_Hopper_Type2, 12063) {}
 
+// Maglev Wagons, available ID range: 18000-19000 (hex 0x4650..0x4A38)
+#define ID_RANGE_WAGONS_MGLV 0x4650..0x4A38 // 18000+ 
+item(FEAT_TRAINS, item_mglv_wagon_Gen7M_Flatcar, 18001) {}
+item(FEAT_TRAINS, item_mglv_wagon_Gen7M_Heavy_Flatcar, 18002) {}
+item(FEAT_TRAINS, item_mglv_wagon_Gen7M_Boxcar_Type1, 18003) {}
+item(FEAT_TRAINS, item_mglv_wagon_Gen7M_Tanker, 18004) {}
+item(FEAT_TRAINS, item_mglv_wagon_Gen7M_Gondola, 18005) {}
+item(FEAT_TRAINS, item_mglv_wagon_Gen7M_Silo_Type1, 18006) {}
+item(FEAT_TRAINS, item_mglv_wagon_Gen7M_Hopper_Type1, 18007) {}
+item(FEAT_TRAINS, item_mglv_wagon_Gen7M_Car_Transporter, 18008) {}
+item(FEAT_TRAINS, item_mglv_wagon_Gen7M_Container_Carrier, 18009) {}
+item(FEAT_TRAINS, item_mglv_wagon_Gen7M_Centerbeam, 18010) {}
+item(FEAT_TRAINS, item_mglv_wagon_Gen7M_Container_Doublestack, 18011) {}
+item(FEAT_TRAINS, item_mglv_wagon_Gen7M_Superheavy_Flatcar, 18012) {}
+item(FEAT_TRAINS, item_mglv_wagon_Gen7M_Boxcar_Type2, 18013) {}
+item(FEAT_TRAINS, item_mglv_wagon_Gen7M_Silo_Type2, 18014) {}
+item(FEAT_TRAINS, item_mglv_wagon_Gen7M_Hopper_Type2, 18015) {}
+
 //Unit Wagons, available ID range: 13000-13499 (hex 0x32C8..0x34BB)
 #define ID_RANGE_UNIT_WAGONS 0x32C8..0x34BB
-#define ID_RANGE_UNIT_WAGONS_RAIL 0x32C8..0x32C9
-#define ID_RANGE_UNIT_WAGONS_MTRO 0x32CA..0x32CB
-#define ID_RANGE_UNIT_WAGONS_MGLV 0x32CC..0x32CD
-#define ID_RANGE_UNIT_WAGONS_RAIL_CARGO 0x32CE..0x32CF
+#define ID_RANGE_UNIT_WAGONS_RAIL 0x32C8..0x32C9 // 13000-13001
+#define ID_RANGE_UNIT_WAGONS_MTRO 0x32CA..0x32CB // 13002-13003
+#define ID_RANGE_UNIT_WAGONS_MGLV 0x32CC..0x32CD // 13004-13005
+#define ID_RANGE_UNIT_WAGONS_RAIL_CARGO 0x32CE..0x32CF // 13006-13007
+
 item(FEAT_TRAINS, item_mu_wagon_unpowered, 13000) {}
 item(FEAT_TRAINS, item_mu_wagon_powered, 13001) {}
 item(FEAT_TRAINS, item_mtro_wagon_unpowered, 13002) {}
@@ -855,7 +874,7 @@ item(FEAT_TRAINS, item_singlemtro_Germany_Berlin_U_Bahn_C_II, 14003) {}
 #define ID_RANGE_SMU 0x38A4..0x3A97
 //Currently has no vehicles, range reserved
 
-//Cargo DMU, available ID range: 15500-15499 (hex 0x3C8C..0x3E7F)
+//Cargo DMU, available ID range: 15500-15999 (hex 0x3C8C..0x3E7F)
 #define ID_RANGE_CARGODMU 0x3C8C..0x3E7F
 item(FEAT_TRAINS, item_cargodmu_Germany_DB_691_CargoSprinter, 15501) {}
 

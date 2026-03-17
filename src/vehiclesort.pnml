@@ -806,6 +806,23 @@ item_wagon_Gen6_Superheavy_Flatcar, /*Year: 2010*/ \
 item_wagon_Service_Car_Type1, /*Year: 1660*/ \
 item_wagon_Service_Car_Type2, /*Year: 1660*/
 
+#define SORTING_WAGONS_MAGLEV \
+item_mglv_wagon_Gen7M_Flatcar, /*Year: 2010*/ \
+item_mglv_wagon_Gen7M_Heavy_Flatcar, /*Year: 2020*/ \
+item_mglv_wagon_Gen7M_Boxcar_Type1, /*Year: 2010*/ \
+item_mglv_wagon_Gen7M_Boxcar_Type2, /*Year: 2010*/ \
+item_mglv_wagon_Gen7M_Tanker, /*Year: 2020*/ \
+item_mglv_wagon_Gen7M_Gondola, /*Year: 2010*/ \
+item_mglv_wagon_Gen7M_Silo_Type1, /*Year: 2020*/ \
+item_mglv_wagon_Gen7M_Silo_Type2, /*Year: 2020*/ \
+item_mglv_wagon_Gen7M_Hopper_Type1, /*Year: 2020*/ \
+item_mglv_wagon_Gen7M_Hopper_Type2, /*Year: 2020*/ \
+item_mglv_wagon_Gen7M_Car_Transporter, /*Year: 2020*/ \
+item_mglv_wagon_Gen7M_Container_Carrier, /*Year: 2010*/ \
+item_mglv_wagon_Gen7M_Centerbeam, /*Year: 2010*/ \
+item_mglv_wagon_Gen7M_Container_Doublestack, /*Year: 2005*/ \
+item_mglv_wagon_Gen7M_Superheavy_Flatcar, /*Year: 2010*/ 
+
 #define SORTING_SPECIAL \
 item_mu_wagon_unpowered, \
 item_mu_wagon_powered, \
@@ -833,4 +850,5 @@ sort(FEAT_TRAINS, [
 	SORTING_SPECIAL
 	SORTING_COACHES
 	SORTING_WAGONS
+	SORTING_WAGONS_MAGLEV
 ]);

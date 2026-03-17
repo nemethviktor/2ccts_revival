@@ -1,16 +1,16 @@
 ﻿##grflangid 0x01
 
-#Main grf title and description
+# Main grf title and description
 STR_GRF_NAME			:{TITLE}
 STR_GRF_DESCRIPTION		:{SILVER}2cc Trains of the World in NML {}{}(c)2ccts Revival {}License:GPLv2 or higher. {}See readme for details.
-STR_GRF_URL             :https://dev.openttdcoop.org/projects/2ccts
+STR_GRF_URL             :https://github.com/nemethviktor/2ccts_revival
 
-#General error messages
+# General error messages
 str_used_with_dynamic_engines 		:dynamic_engines = true (setting in openttd.cfg)
 str_error_region					:No regions enabled, {STRING} has been disabled
 
-#parameter strings
-#cost parameters
+# parameter strings
+# cost parameters
 STR_PARAM_PURCHASE_COST             :Purchase cost multiplier
 STR_PARAM_PURCHASE_COST_DESC        :You can use this setting to increase or decrease the purchase costs of the vehicles in this set.
 STR_PARAM_RUNNING_COST              :Running cost multiplier
@@ -26,7 +26,7 @@ STR_PARAM_TIMES_4                   :4
 STR_PARAM_TIMES_8                   :8
 STR_PARAM_TIMES_16                  :16
 
-#region parameters
+# region parameters
 STR_PARAM_CONCEPT						:Concept vehicles
 STR_PARAM_CONCEPT_DESC					:Use concept vehicles
 STR_PARAM_REGION_AFRICA					:Africa
@@ -48,7 +48,7 @@ STR_PARAM_REGION_WESTERNEUROPE_DESC		:Use vehicles from Western Europe
 STR_PARAM_REGION_OCEANIA				:Oceania
 STR_PARAM_REGION_OCEANIA_DESC			:Use vehicles from Oceania
 
-#loading speed parameter
+# loading speed parameter
 STR_PARAM_LOADINGSPEED					:Loading speed
 STR_PARAM_LOADINGSPEED_DESC				:Set the loading speed of this set
 STR_PARAM_LOADINGSPEED_SLOW				:Slow
@@ -56,8 +56,8 @@ STR_PARAM_LOADINGSPEED_NORMAL			:Normal (default)
 STR_PARAM_LOADINGSPEED_FAST				:Fast
 STR_PARAM_LOADINGSPEED_ULTRA			:As fast as possible
 
-#VEHICLE NAMES
-#Railbus-steam
+# VEHICLE NAMES
+# Railbus-steam
 str_rbs_Austria_NOLB_1		:NOLB 1 (Steam Railbus)
 str_rbs_Italy_FS_86			:FS 86 (Steam Railbus)
 str_rbs_Australia_Victorian_Railways_Rowan_Railmotor :Victorian Railways Rowan Railmotor (Steam Railbus)
@@ -67,7 +67,7 @@ str_rbs_South_Africa_CSAR_Railmotor :CSAR Railmotor (Steam Railbus)
 str_rbs_Australia_Victorian_Railways_Motor_Car_3 :Victorian Railways Motor Car 3 (Steam Railbus)
 str_rbs_Austria_kkStB_4_0	:kkStB 4.0 (Steam Goods Railbus)
 
-#Railbus-diesel
+# Railbus-diesel
 str_rbd_Australia_Victorian_Railways_AEC_RM1 	:Victorian Railways AEC RM1 (Diesel Railbus)
 str_rbd_Germany_DB_VT_133 						:DB VT 133 'Wismar railbus' (Diesel Railbus)
 str_rbd_United_Kingdom_GWR_AEC_Railcar 			:GWR AEC Railcar (Diesel Railbus)
@@ -114,7 +114,7 @@ str_rbd_Argentina_FCPBA_M_Railcar :FCPBA M Railcar (Diesel railbus)
 str_rbd_Eritrea_Eritrean_Railway_A62_70_Littorina :Eritrean Railway A.62-70 'Littorina' (Diesel railbus)
 str_rbd_Italy_FS_ALn_668 :FS ALn 668 (Diesel railbus)
 
-#Railbus-electric
+# Railbus-electric
 str_rbe_Switzerland_AB_CFe_3_3		:AB CFe 3/3 (Electric Railbus)
 str_rbe_Morocco_ONCFM_ZAB1000		:ONCFM ZAB1000 (Electric Railbus)
 str_rbe_Germany_DB_ET_85				:DB ET 85 / DB 485 (Electric Railbus)
@@ -137,7 +137,7 @@ str_rbe_USA_SEPTA_Silverliner_V :SEPTA Silverliner V (Electric Railbus)
 str_rbe_Germany_Buckower_Kleinbahn_Nr_1_3 :Buckower Kleinbahn Nr. 1-3 (Electric Railbus)
 str_rbe_Germany_DB_4792: DB 479.2 (Electric Railbus)
 
-#Steam
+# Steam
 str_steam_Belgium_Le_Belge 			:Le Belge (Steam)
 str_steam_USA_4_4_0_American 		:4-4-0 'American' (Steam)
 str_steam_Switzerland_SBB_Ec_2_5 	:SBB Ec 2/5 (Steam)
@@ -251,7 +251,7 @@ str_steam_Belgium_NMBS_SNCB_Type_29 :NMBS/SNCB Type 29 (Steam)
 str_steam_Chile_FCAB_4_8_2 :FCAB 4-8-2 (Steam)
 str_steam_China_Railways_QJ :China Railways QJ (Steam)
 
-#Diesel
+# Diesel
 str_diesel_Germany_DB_Kof_II							:DB Kof II / DB 322 (Diesel) 
 str_diesel_USA_CNJ_ALCo_GE_IR_Boxcab 					:CNJ ALCo-GE-IR Boxcab (Diesel)
 str_diesel_Netherlands_NS_200 							:NS 200 'Sik' (Diesel)
@@ -383,7 +383,7 @@ str_diesel_Australia_Pacific_National_92 :Pacific National 92 (Diesel)
 str_diesel_UK_BR_68 :BR 68 (Diesel)
 str_diesel_USA_Amtrak_Charger :Amtrak Charger (Diesel)
 
-#Electric
+# Electric
 str_electric_Switzerland_RhB_DE_2_2 			:RhB De 2/2 (Electric)
 str_electric_Norway_NSB_EL7 					:NSB EL7 (Electric)
 str_electric_UK_NER_EF1 						:NER EF1 (Electric)
@@ -513,7 +513,7 @@ str_electric_Russia_RZD_VL11 :RZD VL11 (Electric)
 str_electric_Germany_Prussian_ES_6 :K.P.St.E. ES 6 (Electric)
 str_electric_China_China_Railways_6K :China Railways 6K (Electric)
 
-#DMU
+# DMU
 str_dmu_Germany_DB_VT_040_Flying_Hamburger 	:DB VT 04.0 'Flying Hamburger' (DMU)
 str_dmu_Australia_NSWGR_Silver_City_Comet 	:NSWGR 'Silver City Comet' (DMU)
 str_dmu_Czech_Republic_CD_M131 				:CD M131 (DMU)
@@ -567,10 +567,15 @@ str_dmu_Portugal_CP_0400 :CP 0400 (DMU)
 str_dmu_Portugal_CP_0600 :CP 0600 (DMU)
 str_dmu_Spain_FEVE_2400_Apollos :FEVE 2400 'Apollos' (DMU)
 
-#CargoDMU
+# CargoDMU
 str_cargodmu_Germany_DB_691_CargoSprinter	:DB 691 'CargoSprinter' (Cargo DMU)
 
-#EMU
+# CargoEMU
+#  unused
+# CargoMMU
+#  unused
+
+# EMU
 str_emu_Netherlands_NS_Mat24 				:NS Mat'24 (EMU)
 str_emu_Austria_OBB_4041 					:OBB 4041 (EMU)
 str_emu_Italy_ATAC_ECD_21_30 				:ATAC ECD 21-30 (EMU)
@@ -645,13 +650,13 @@ str_emu_Croatia_HZ_6112 :HZ 6112 (EMU)
 str_emu_China_Railways_CHR380A :China Railways CHR380A(EMU)
 str_emu_Europe_Sureot :Sureot (EMU)
 
-#Single Unit Metro
+# Single Unit Metro
 str_singlemtro_USA_Brooklyn_Union_Gate_Car					:Brooklyn Union Gate Car (Single Unit Metro)
 str_singlemtro_Hungary_Budapest_1894_Stock					:Budapest 1894 Stock (Single Unit Metro)
 str_singlemtro_USA_Chicago_L_Northwest_Elevated_1907_Stock	:Chicago L Northwest Elevated 1907 Stock (Single Unit Metro)
 str_singlemtro_Germany_Berlin_U_Bahn_C_II						:Berlin U-Bahn C II (Single Unit Metro)
 
-#Multiple Unit Metro
+# Multiple Unit Metro
 str_mtro_UK_London_1903_Stock					:London 1903 Stock (Metro)
 str_mtro_Argentina_Le_Brugeoise					:Buenos Aires 'Le Brugeoise' (Metro)
 str_mtro_USA_NY_R1								:New York R1 (Metro)
@@ -705,14 +710,14 @@ str_mtro_Algeria_Algiers_CAF_2011_Stock :Algiers CAF 2011 Stock (Metro)
 str_mtro_Germany_Berlin_U_Bahn_IK :Berlin U-Bahn IK (Metro)
 str_mtro_USA_Chicago_L_6000 :Chicago L 6000 Series (Metro)
 
-#Maglev railbus
+# Maglev railbus
 str_rbm_World_Turbobus		:Turbobus (Maglev)
 
-#Maglev
+# Maglev
 str_mglv_China_Transrapid	:Shanghai Transrapid (Maglev)
 str_mglv_Japan_MLX01_901	:JR MLX01-901 (Maglev)
 
-#wagons
+# Wagons
 str_wagon_Gen1_Flat_Wagon 				:1st Gen Flat Wagon
 str_wagon_Gen1_Boxcar					:1st Gen Wooden Box Van
 str_wagon_Gen1_Tanker 					:1st Gen Tanker
@@ -775,11 +780,27 @@ str_wagon_Gen6_Container_Carrier 		:6th Gen Container Carrier
 str_wagon_Gen6_Centerbeam 				:6th Gen Centerbeam Flatcar
 str_wagon_Gen6_Container_Doublestack 	:6th Gen Container Doublestack
 str_wagon_Gen6_Superheavy_Flatcar 		:6th Gen Superheavy Flatcar
-
 str_wagon_Service_Car_Type1				:Service Car (Type 1)
 str_wagon_Service_Car_Type2				:Service Car (Type 2)
 
-#coaches
+# Maglev Wagons
+str_mglv_wagon_Gen7M_Flatcar 					:7th Gen Flatcar (Maglev)
+str_mglv_wagon_Gen7M_Heavy_Flatcar 			:7th Gen Heavy Flatcar (Maglev)
+str_mglv_wagon_Gen7M_Boxcar_Type1				:7th Gen Boxcar (Type 1) (Maglev)
+str_mglv_wagon_Gen7M_Boxcar_Type2				:7th Gen Boxcar (Type 2) (Maglev)
+str_mglv_wagon_Gen7M_Tanker 					:7th Gen Tanker (Maglev)
+str_mglv_wagon_Gen7M_Gondola 					:7th Gen Gondola (Maglev)
+str_mglv_wagon_Gen7M_Silo_Type1				:7th Gen Silo (Type 1) (Maglev)
+str_mglv_wagon_Gen7M_Silo_Type2				:7th Gen Silo (Type 2) (Maglev)
+str_mglv_wagon_Gen7M_Hopper_Type1				:7th Gen Self-discharging Hopper (Type 1) (Maglev)
+str_mglv_wagon_Gen7M_Hopper_Type2				:7th Gen Self-discharging Hopper (Type 2) (Maglev)
+str_mglv_wagon_Gen7M_Car_Transporter 			:7th Gen Car Transporter (Maglev)
+str_mglv_wagon_Gen7M_Container_Carrier 		:7th Gen Container Carrier (Maglev)
+str_mglv_wagon_Gen7M_Centerbeam 				:7th Gen Centerbeam Flatcar (Maglev)
+str_mglv_wagon_Gen7M_Container_Doublestack 	:7th Gen Container Doublestack (Maglev)
+str_mglv_wagon_Gen7M_Superheavy_Flatcar 		:7th Gen Superheavy Flatcar (Maglev)
+
+# Coaches
 str_coach_Gen1_Wooden_2_axle_Compartment_Coach 			:Wooden 2-axle Compartment Coach
 str_coach_Gen1_Wooden_2_axle_Regional_Coach 			:Wooden 2-axle Regional Coach
 str_coach_Gen1_Wooden_2_axle_Mail_Coach 				:Wooden 2-axle Mail Coach
@@ -852,7 +873,7 @@ str_coach_Gen6_Speedmail_Coach 							:Speedmail Coach
 str_coach_Gen6_Super_Regio_Coach 						:Super Regio Coach
 str_coach_Gen6_Super_Voyager_Coach 						:Super Voyager Coach
 
-#special wagons
+# Special wagons
 str_mu_wagon_unpowered			:Multiple Unit Wagon (Unpowered)
 str_mtro_wagon_unpowered		:Metro Unit Wagon (Unpowered)
 str_mglv_wagon_unpowered		:Maglev Unit Wagon (Unpowered)
@@ -862,13 +883,13 @@ str_mtro_wagon_powered			:Metro Unit Wagon (Powered)
 str_mglv_wagon_powered			:Maglev Unit Wagon (Powered)
 str_mu_cargo_wagon_powered		:Multipe Unit Cargo Wagon (Powered)
 
-#Obsolete vehicles
+# Obsolete vehicles
 
-#PURCHASE MENU TEXTS
+# PURCHASE MENU TEXTS
 str_unit_wagon_passenger	:This generic wagon can ONLY be used with passenger MUs to create trains of the desired length
 str_unit_wagon_cargo		:This generic wagon can ONLY be used with cargo MUs to create trains of the desired length
 
-#Can attach vehicle texts
+# Can attach vehicle texts
 str_cannot_attach_wagon_to_MU					:Cannot attach wagon to Multiple Unit engine
 str_cannot_attach_wagon_to_Unit_Wagon			:Cannot attach regular wagon to Unit Wagon
 str_cannot_attach_Unit_wagon_to_engine			:Cannot attach Unit Wagon to regular engine
