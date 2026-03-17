@@ -23,7 +23,7 @@
 #define SPEED 160
 #define POWER 400
 #define WEIGHT 39
-#define TE_COEFFICENT 0.19
+#define TE_COEFFICIENT 0.19
 #define AIR_COEFFICIENT 0
 
 #define LENGTH 8
@@ -34,7 +34,7 @@
 #define WAGON_CAPACITY 50
 
 
-#define DUALHEADED 1
+#define DUAL_HEADED 1
 #define PASSENGER 1
 #define MICS_FLAGS bitmask(TRAIN_FLAG_MU,TRAIN_FLAG_2CC)
 #define VISUAL_FLAG visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER)

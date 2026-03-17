@@ -23,7 +23,7 @@
 #define SPEED 35
 #define POWER 195
 #define WEIGHT 24
-#define TE_COEFFICENT 0.15
+#define TE_COEFFICIENT 0.15
 #define AIR_COEFFICIENT 0
 
 #define LENGTH 6
@@ -32,7 +32,7 @@
 #define HEAD_CAPACITY 24
 
 
-#define DUALHEADED 0
+#define DUAL_HEADED 0
 #define PASSENGER 1
 #define MICS_FLAGS bitmask(TRAIN_FLAG_2CC)
 #define VISUAL_FLAG visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, -3, DISABLE_WAGON_POWER)
