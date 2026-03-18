@@ -1,11 +1,11 @@
 ### 2cc TrainsInNML (Revival) changelog
 
-**3.1-alpha0 + 3.3-alpha0 [20260316]**
+**3.3-alpha0 [20260316]**
 - CODE CHANGES:
 	- Cloned to new GitHub location
-	- Figured that the real 2ccNML was last released as 3.2 so revamped versioning.
-	- Fixed some tags being incorrectly named as reported on the [OTTD Forums in 2020](https://www.tt-forums.net/viewtopic.php?p=1231342#p1231342)
 	- Turned off extraneous warnings in the makefile config
+	- Fixed some tags being incorrectly named as reported on the [OTTD Forums in 2020](https://www.tt-forums.net/viewtopic.php?p=1231342#p1231342)
+	- Fixed template_2cc_L12 temple 2nd/4th sprite being off as reported on the [OTTD Forums in 2020](https://www.tt-forums.net/viewtopic.php?p=1239539#p1239539)
 - VEHICLES CHANGES:
 	- Added Cargo Gen6 Wagons (using Gen5 graphics) - **NOCONCEPT**
 		- These are a little faster and about 10% more capacity than G5s and are introduced around 2005-2020
