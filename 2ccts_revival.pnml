@@ -5,6 +5,8 @@
 
 */
 
+// NOTE: for vehicles the file order MUST be (include [optional/as relevant]), property, graphics, item. Otherwise the code will draw errouneous values.
+
 /*
 * GRF HEADER
 */
@@ -68,7 +70,7 @@
 #include "src/Special/Metro_Wagon_Powered_property.pnml"
 #include "src/Special/Metro_Wagon_Powered_graphics.pnml"
 #include "src/Special/Metro_Wagon_Powered_item.pnml"
-#include "src/_CodeSupport/TypeInitialization/init_type_Maglev.pnml"
+#include "src/_CodeSupport/TypeInitialization/init_type_Maglev_MU.pnml"
 #include "src/Special/Maglev_Wagon_Unpowered_property.pnml"
 #include "src/Special/Maglev_Wagon_Unpowered_graphics.pnml"
 #include "src/Special/Maglev_Wagon_Unpowered_item.pnml"
@@ -1994,8 +1996,14 @@
 #include "src/Railbus-maglev/World_Turbobus_graphics.pnml"
 #include "src/Railbus-maglev/World_Turbobus_item.pnml"
 
-//Maglev
-#include "src/_CodeSupport/TypeInitialization/init_type_Maglev.pnml"
+// Maglev SU
+#include "src/_CodeSupport/TypeInitialization/init_type_Maglev_SU.pnml"
+#include "src/Maglev/Germany_DB_182_ES64UM_Mutus_property.pnml"
+#include "src/Maglev/Germany_DB_182_ES64UM_Mutus_graphics.pnml"
+#include "src/Maglev/Germany_DB_182_ES64UM_Mutus_item.pnml"
+
+// Maglev MU
+#include "src/_CodeSupport/TypeInitialization/init_type_Maglev_MU.pnml"
 #include "src/Maglev/China_Transrapid_property.pnml"
 #include "src/Maglev/China_Transrapid_graphics.pnml"
 #include "src/Maglev/China_Transrapid_item.pnml"
@@ -2003,7 +2011,7 @@
 #include "src/Maglev/Japan_MLX01_901_graphics.pnml"
 #include "src/Maglev/Japan_MLX01_901_item.pnml"
 
-//coaches
+// Coaches
 #include "src/_CodeSupport/TypeInitialization/init_type_Coaches.pnml"
 #include "src/Coaches/Gen1/Wooden_2_axle_Compartment_Coach_property.pnml"
 #include "src/Coaches/Gen1/Wooden_2_axle_Compartment_Coach_graphics.pnml"
@@ -2219,7 +2227,7 @@
 #include "src/Coaches/Gen6/Super_Voyager_Coach_graphics.pnml"
 #include "src/Coaches/Gen6/Super_Voyager_Coach_item.pnml"
 
-//Wagons-Maglev
+// Wagons-Maglev
 #include "src/_CodeSupport/TypeInitialization/init_type_Wagon_Maglev.pnml"
 #include "src/Wagons-Maglev/Gen7M/Gen7M_Boxcar_Type1_property.pnml"
 #include "src/Wagons-Maglev/Gen7M/Gen7M_Boxcar_Type1_graphics.pnml"
@@ -2267,7 +2275,7 @@
 #include "src/Wagons-Maglev/Gen7M/Gen7M_Tanker_graphics.pnml"
 #include "src/Wagons-Maglev/Gen7M/Gen7M_Tanker_item.pnml"
 
-//wagons
+// Wagons (normal)
 #include "src/_CodeSupport/TypeInitialization/init_type_Wagon.pnml"
 #include "src/Wagons/Gen1/Gen1_Flat_Wagon_property.pnml"
 #include "src/Wagons/Gen1/Gen1_Flat_Wagon_graphics.pnml"

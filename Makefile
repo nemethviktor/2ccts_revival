@@ -96,7 +96,7 @@ MAKE           ?= make
 MAKE_FLAGS     ?= -r
 
 NML            ?= nmlc
-NML_FLAGS      ?= -c
+NML_FLAGS      ?= -c --quiet
 ifdef REQUIRED_NML_BRANCH
 	NML_BRANCH = $(shell $(NML) --version | head -n1 | cut -d. -f1-2)
 endif
@@ -116,7 +116,7 @@ GREP           ?= grep
 HG             ?= hg
 GIT            ?= git
 
-PYTHON         ?= python
+PYTHON         ?= python3
 
 UNIX2DOS       ?= unix2dos
 UNIX2DOS_FLAGS ?= $(shell [ -n $(UNIX2DOS) ] && $(UNIX2DOS) -q --version 2>/dev/null && echo "-q" || echo "")

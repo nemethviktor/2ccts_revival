@@ -5,9 +5,9 @@
 
 */
 
-//This file sets all vehicle IDs. Each type has a range of 1000 possible IDs.
+// This file sets all vehicle IDs. Each type has a range of 1000 possible IDs.
 
-//Railbus-Steam, available ID range: 1000-1499 (hex 0x03E8..0x05DB)
+// Railbus-Steam, available ID range: 1000-1499 (hex 0x03E8..0x05DB)
 #define ID_RANGE_RBS 0x03E8..0x05DB
 item(FEAT_TRAINS, item_rbs_Austria_NOLB_1, 1000) {}
 item(FEAT_TRAINS, item_rbs_Italy_FS_86, 1001) {}
@@ -18,7 +18,7 @@ item(FEAT_TRAINS, item_rbs_South_Africa_CSAR_Railmotor, 1005) {}
 item(FEAT_TRAINS, item_rbs_Australia_Victorian_Railways_Motor_Car_3, 1006) {}
 item(FEAT_TRAINS, item_rbs_Austria_kkStB_4_0, 1007) {}
 
-//Railbus-Diesel, available ID range: 2000-2499 (hex 0x07D0..0x09C3)
+// Railbus-Diesel, available ID range: 2000-2499 (hex 0x07D0..0x09C3)
 #define ID_RANGE_RBD 0x07D0..0x09C3
 item(FEAT_TRAINS, item_rbd_Australia_Victorian_Railways_AEC_RM1, 2000) {}
 item(FEAT_TRAINS, item_rbd_Germany_DB_VT_133, 2001) {}
@@ -68,7 +68,7 @@ item(FEAT_TRAINS, item_rbd_Germany_DB_VT_989, 2044) {}
 item(FEAT_TRAINS, item_rbd_Eritrea_Eritrean_Railway_A62_70_Littorina, 2045) {}
 item(FEAT_TRAINS, item_rbd_Italy_FS_ALn_668, 2046) {} 
 
-//Railbus-Electric, available ID range: 3000-3499 (hex 0x0BB8..0x0DAB)
+// Railbus-Electric, available ID range: 3000-3499 (hex 0x0BB8..0x0DAB)
 #define ID_RANGE_RBE 0x0BB8..0x0DAB
 item(FEAT_TRAINS, item_rbe_Switzerland_AB_CFe_3_3, 3000) {}
 item(FEAT_TRAINS, item_rbe_Morocco_ONCFM_ZAB1000, 3001) {}
@@ -93,12 +93,12 @@ item(FEAT_TRAINS, item_rbe_USA_SEPTA_Silverliner_V, 3019) {}
 item(FEAT_TRAINS, item_rbe_Germany_DB_4792, 3020) {}
 item(FEAT_TRAINS, item_rbe_Germany_Buckower_Kleinbahn_Nr_1_3, 3021) {}
 
-//Steam, available ID range: 4000-4999 (hex 0x0FA0..0x1387)
+// Steam, available ID range: 4000-4999 (hex 0x0FA0..0x1387)
 #define ID_RANGE_STEAM 0x0FA0..0x1387
 item(FEAT_TRAINS, item_steam_Belgium_Le_Belge, 4000) {}
-//4001 free
+// 4001 free
 item(FEAT_TRAINS, item_steam_Switzerland_SBB_Ec_2_5, 4002) {}
-//4003 free
+// 4003 free
 item(FEAT_TRAINS, item_steam_USA_2_8_0_Consolidation, 4004) {}
 item(FEAT_TRAINS, item_steam_Hungary_MAV_377, 4005) {}
 item(FEAT_TRAINS, item_steam_Austria_KkStB_99, 4006) {}
@@ -125,9 +125,9 @@ item(FEAT_TRAINS, item_steam_Russia_RZD_9P, 4026) {}
 item(FEAT_TRAINS, item_steam_Poland_PKP_Okz32, 4027) {}
 item(FEAT_TRAINS, item_steam_UK_LNER_A4_Gresley, 4028) {}
 item(FEAT_TRAINS, item_steam_Canada_CPR_Royal_Hudson, 4029) {}
-//4030 free
+// 4030 free
 item(FEAT_TRAINS, item_steam_Germany_DB_52, 4031) {}
-//4032 free
+// 4032 free
 item(FEAT_TRAINS, item_steam_UK_LNER_A1_Peppercorn, 4033) {}
 item(FEAT_TRAINS, item_steam_South_Africa_SAR_25, 4034) {}
 item(FEAT_TRAINS, item_steam_Russia_RZD_P36, 4035) {}
@@ -213,7 +213,7 @@ item(FEAT_TRAINS, item_steam_Belgium_NMBS_SNCB_Type_29, 4114) {}
 item(FEAT_TRAINS, item_steam_Chile_FCAB_4_8_2, 4115) {}
 item(FEAT_TRAINS, item_steam_China_Railways_QJ, 4116) {}
 
-//Diesel, available ID range: 5000-5999 (hex 0x1388..0x176F)
+// Diesel, available ID range: 5000-5999 (hex 0x1388..0x176F)
 #define ID_RANGE_DIESEL 0x1388..0x176F
 item(FEAT_TRAINS, item_diesel_Germany_DB_Kof_II, 5000) {}
 item(FEAT_TRAINS, item_diesel_USA_CNJ_ALCo_GE_IR_Boxcab, 5001) {}
@@ -253,7 +253,7 @@ item(FEAT_TRAINS, item_diesel_Argentina_MF_GM_EMD_J16CW_AC, 5034) {}
 item(FEAT_TRAINS, item_diesel_Russia_RZD_M62, 5035) {}
 item(FEAT_TRAINS, item_diesel_Australia_NSWGR_422, 5036) {}
 item(FEAT_TRAINS, item_diesel_Egypt_ENR_G22W, 5037) {}
-//5038 free
+// 5038 free
 item(FEAT_TRAINS, item_diesel_Australia_Queensland_Rail_2100, 5039) {}
 item(FEAT_TRAINS, item_diesel_Croatia_HZ_2062, 5040) {}
 item(FEAT_TRAINS, item_diesel_Sweden_SJ_V4, 5041) {}
@@ -279,7 +279,7 @@ item(FEAT_TRAINS, item_diesel_China_China_Railways_HXN5, 5060) {}
 item(FEAT_TRAINS, item_diesel_Germany_DB_261_Gravita_10BB, 5061) {}
 item(FEAT_TRAINS, item_diesel_Germany_HVLE_V490, 5062) {}
 item(FEAT_TRAINS, item_diesel_Russia_RZD_GT1, 5063) {}
-//5064 free
+// 5064 free
 item(FEAT_TRAINS, item_diesel_USA_UP_EMD_DDA40X, 5065) {}
 item(FEAT_TRAINS, item_diesel_Russia_RZD_Emch_3, 5066) {}
 item(FEAT_TRAINS, item_diesel_Canada_CNR_9000, 5067) {}
@@ -350,14 +350,14 @@ item(FEAT_TRAINS, item_diesel_UK_BR_68, 5131) {}
 item(FEAT_TRAINS, item_diesel_South_Africa_SAR_Afro_4000, 5132) {}
 item(FEAT_TRAINS, item_diesel_USA_Amtrak_Charger, 5133) {}
 
-//Electric, available ID range: 6000-6999 (hex 0x1770..0x1B57)
+// Electric, available ID range: 6000-6999 (hex 0x1770..0x1B57)
 #define ID_RANGE_ELECTRIC 0x1770..0x1B57
 item(FEAT_TRAINS, item_electric_Switzerland_RhB_DE_2_2, 6000) {}
 item(FEAT_TRAINS, item_electric_Norway_NSB_EL7, 6001) {}
 item(FEAT_TRAINS, item_electric_UK_NER_EF1, 6002) {}
 item(FEAT_TRAINS, item_electric_USA_Milwaukee_Road_ES_2, 6003) {}
-//6004 free
-//6005 free
+// 6004 free
+// 6005 free
 item(FEAT_TRAINS, item_electric_Chile_EFE_Series_E_28, 6006) {}
 item(FEAT_TRAINS, item_electric_Austria_OBB_1161, 6007) {}
 item(FEAT_TRAINS, item_electric_India_Indian_Railways_WCG_1, 6008) {}
@@ -366,7 +366,7 @@ item(FEAT_TRAINS, item_electric_Japan_JNR_EB10, 6010) {}
 item(FEAT_TRAINS, item_electric_Norway_NSB_EL10, 6011) {}
 item(FEAT_TRAINS, item_electric_Germany_DB_104, 6012) {}
 item(FEAT_TRAINS, item_electric_Italy_FS_E428, 6013) {}
-//6014 free
+// 6014 free
 item(FEAT_TRAINS, item_electric_Japan_JNR_EF55, 6015) {}
 item(FEAT_TRAINS, item_electric_South_Africa_SAR_ES_Class, 6016) {}
 item(FEAT_TRAINS, item_electric_Austria_OBB_1020_Crocodile, 6017) {}
@@ -412,9 +412,9 @@ item(FEAT_TRAINS, item_electric_Ukraine_UZ_DS3, 6056) {}
 item(FEAT_TRAINS, item_electric_Kazakhstan_KTZ_KZ4A, 6057) {}
 item(FEAT_TRAINS, item_electric_China_China_Railways_HXD3, 6058) {}
 item(FEAT_TRAINS, item_electric_Switzerland_SBB_Eem_923, 6059) {}
-//6060 free
-//6061 free
-//6062 free
+// 6060 free
+// 6061 free
+// 6062 free
 item(FEAT_TRAINS, item_electric_USA_Pennsylvania_Railroad_FF_1, 6063) {}
 item(FEAT_TRAINS, item_electric_USA_Milwaukee_Road_EP_2_Bipolar, 6064) {}
 item(FEAT_TRAINS, item_electric_USA_Pennsylvania_Railroad_GG_1, 6065) {}
@@ -489,7 +489,7 @@ item(FEAT_TRAINS, item_electric_Brasil_MRS_He_4_4, 6133) {}
 item(FEAT_TRAINS, item_electric_Russia_RZD_VL11, 6134) {}
 item(FEAT_TRAINS, item_electric_Germany_Prussian_ES_6, 6135) {}
 
-//DMU, available ID range: 7000-7999 (hex 0x1B58..0x1F3F)
+// DMU, available ID range: 7000-7999 (hex 0x1B58..0x1F3F)
 #define ID_RANGE_DMU 0x1B58..0x1F3F
 item(FEAT_TRAINS, item_dmu_Denmark_DSB_IC4, 7000) {}
 item(FEAT_TRAINS, item_dmu_Croatia_HZ_7022, 7001) {}
@@ -547,7 +547,7 @@ item(FEAT_TRAINS, item_dmu_Canada_UP_Express_Nippon_Sharyo_DMU, 7052) {}
 item(FEAT_TRAINS, item_dmu_Argentina_FCGU_CMM_400_2, 7053) {}
 
 
-//EMU, available ID range: 8000-8999 (hex 0x1F40..0x2327)
+// EMU, available ID range: 8000-8999 (hex 0x1F40..0x2327)
 #define ID_RANGE_EMU 0x1F40..0x2327
 item(FEAT_TRAINS, item_emu_Netherlands_NS_Mat24, 8000) {}
 item(FEAT_TRAINS, item_emu_Austria_OBB_4041, 8001) {}
@@ -623,14 +623,14 @@ item(FEAT_TRAINS, item_emu_Croatia_HZ_6112, 8070) {}
 item(FEAT_TRAINS, item_emu_China_Railways_CHR380A, 8071) {}
 item(FEAT_TRAINS, item_emu_Europe_Sureot, 8072) {}
 
-//Multi Unit Metro, available ID range: 9000-9999 (hex 0x2328..0x270F)
+// Multi Unit Metro, available ID range: 9000-9999 (hex 0x2328..0x270F)
 #define ID_RANGE_MULTIMETRO 0x2328..0x270F
-//9000 free
-//9001 free
+// 9000 free
+// 9001 free
 item(FEAT_TRAINS, item_mtro_UK_London_1903_Stock, 9002) {}
-//9003 free
+// 9003 free
 item(FEAT_TRAINS, item_mtro_Argentina_Le_Brugeoise, 9004) {}
-//9005 free
+// 9005 free
 item(FEAT_TRAINS, item_mtro_USA_NY_R1, 9006) {}
 item(FEAT_TRAINS, item_mtro_UK_London_1938_Stock, 9007) {}
 item(FEAT_TRAINS, item_mtro_Germany_DB_ET_171, 9008) {}
@@ -682,13 +682,12 @@ item(FEAT_TRAINS, item_mtro_Algeria_Algiers_CAF_2011_Stock, 9053) {}
 item(FEAT_TRAINS, item_mtro_Germany_Berlin_U_Bahn_IK, 9054) {}
 item(FEAT_TRAINS, item_mtro_USA_Chicago_L_6000, 9055) {}
 
-//Multi Unit Maglev (and "Normal"), available ID range: 10000-10499 (hex 0x2710..0x2903)
+// Multi Unit Maglev, available ID range: 10000-10499 (hex 0x2710..0x2903)
 #define ID_RANGE_MULTIMAGLEV 0x2710..0x2903
 item(FEAT_TRAINS, item_mglv_China_Transrapid, 10000) {}
 item(FEAT_TRAINS, item_mglv_Japan_MLX01_901, 10001) {}
-item(FEAT_TRAINS, item_mglv_Germany_DB_182_ES64UM_Mutus, 10002) {}
 
-//Coaches, available ID range: 11000-11999 (hex 0x2AF8..0x2EDF)
+// Coaches, available ID range: 11000-11999 (hex 0x2AF8..0x2EDF)
 #define ID_RANGE_COACHES 0x2AF8..0x2EDF
 item(FEAT_TRAINS, item_coach_Gen1_Wooden_2_axle_Compartment_Coach, 11000) {}
 item(FEAT_TRAINS, item_coach_Gen1_Wooden_2_axle_Regional_Coach, 11001) {}
@@ -762,7 +761,7 @@ item(FEAT_TRAINS, item_coach_Gen6_Speedmail_Coach, 11068) {}
 item(FEAT_TRAINS, item_coach_Gen6_Super_Regio_Coach, 11069) {}
 item(FEAT_TRAINS, item_coach_Gen6_Super_Voyager_Coach, 11070) {}
 
-//Wagons, available ID range: 12000-12999 (hex 0x2EE0..0x32C7)
+// Wagons, available ID range: 12000-12999 (hex 0x2EE0..0x32C7)
 #define ID_RANGE_WAGONS 0x2EE0..0x32C7
 item(FEAT_TRAINS, item_wagon_Gen1_Flat_Wagon, 12000) {}
 item(FEAT_TRAINS, item_wagon_Gen1_BoxCar, 12001) {}
@@ -847,7 +846,7 @@ item(FEAT_TRAINS, item_mglv_wagon_Gen7M_Boxcar_Type2, 18013) {}
 item(FEAT_TRAINS, item_mglv_wagon_Gen7M_Silo_Type2, 18014) {}
 item(FEAT_TRAINS, item_mglv_wagon_Gen7M_Hopper_Type2, 18015) {}
 
-//Unit Wagons, available ID range: 13000-13499 (hex 0x32C8..0x34BB)
+// Unit Wagons, available ID range: 13000-13499 (hex 0x32C8..0x34BB)
 #define ID_RANGE_UNIT_WAGONS 0x32C8..0x34BB
 #define ID_RANGE_UNIT_WAGONS_RAIL 0x32C8..0x32C9 // 13000-13001
 #define ID_RANGE_UNIT_WAGONS_MTRO 0x32CA..0x32CB // 13002-13003
@@ -863,25 +862,26 @@ item(FEAT_TRAINS, item_mglv_wagon_powered, 13005) {}
 item(FEAT_TRAINS, item_mu_cargo_wagon_unpowered, 13006) {}
 item(FEAT_TRAINS, item_mu_cargo_wagon_powered, 13007) {}
 
-//Single Unit Metros, available ID range: 14000-14499 (hex 0x36B0..0x38A3)
+// Single Unit Metros, available ID range: 14000-14499 (hex 0x36B0..0x38A3)
 #define ID_RANGE_SINGLEMETRO 0x36B0..0x38A3
 item(FEAT_TRAINS, item_singlemtro_USA_Brooklyn_Union_Gate_Car, 14000) {}
 item(FEAT_TRAINS, item_singlemtro_Hungary_Budapest_1894_Stock, 14001) {}
 item(FEAT_TRAINS, item_singlemtro_USA_Chicago_L_Northwest_Elevated_1907_Stock, 14002) {}
 item(FEAT_TRAINS, item_singlemtro_Germany_Berlin_U_Bahn_C_II, 14003) {}
 
-//SMU, available ID range: 14500-14999 (hex 0x38A4..0x3A97)
+// SMU, available ID range: 14500-14999 (hex 0x38A4..0x3A97)
 #define ID_RANGE_SMU 0x38A4..0x3A97
-//Currently has no vehicles, range reserved
+// Currently has no vehicles, range reserved
 
-//Cargo DMU, available ID range: 15500-15999 (hex 0x3C8C..0x3E7F)
+// Cargo DMU, available ID range: 15500-15999 (hex 0x3C8C..0x3E7F)
 #define ID_RANGE_CARGODMU 0x3C8C..0x3E7F
 item(FEAT_TRAINS, item_cargodmu_Germany_DB_691_CargoSprinter, 15501) {}
 
-//Railbus-Maglev, available ID range: 16000-16499 (hex 0x3E80..0x4073)
+// Railbus-Maglev, available ID range: 16000-16499 (hex 0x3E80..0x4073)
 #define ID_RANGE_RBM 0x3E80..0x4073
 item(FEAT_TRAINS, item_rbm_World_Turbobus, 16000) {}
 
-//Single Unit Maglevs, available ID range: 15000-15499 (hex 0x3A98..0x3C8B)
+// Single Unit Maglevs, available ID range: 15000-15499 (hex 0x3A98..0x3C8B)
 #define ID_RANGE_SINGLEMAGLEV 0x3A98..0x3C8B
-//Currently has no vehicles, range reserved
+// Currently has no vehicles, range reserved
+item(FEAT_TRAINS, item_mglv_Germany_DB_182_ES64UM_Mutus, 15001) {}

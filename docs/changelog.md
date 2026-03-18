@@ -1,12 +1,20 @@
 ### 2cc TrainsInNML (Revival) changelog
 
-**3.1-alpha0 + 3.3-alpha1 [20260316]**
-- NEW & UPDATED:
+**3.1-alpha0 + 3.3-alpha0 [20260316]**
+- CODE CHANGES:
 	- Cloned to new GitHub location
 	- Figured that the real 2ccNML was last released as 3.2 so revamped versioning.
-	- Added Gen6 Wagons (using Gen5 graphics)
-- BUGS & FIXES:
-	- TBA
+	- Fixed some tags being incorrectly named as reported on the [OTTD Forums in 2020](https://www.tt-forums.net/viewtopic.php?p=1231342#p1231342)
+	- Turned off extraneous warnings in the makefile config
+- VEHICLES CHANGES:
+	- Added Cargo Gen6 Wagons (using Gen5 graphics) - **NOCONCEPT**
+		- These are a little faster and about 10% more capacity than G5s and are introduced around 2005-2020
+	- Added Single Unit Maglev (_DB 182 ES64UM 'Mutus' (Maglev)_) + Cargo Gen7M Wagons - **ISCONCEPT**
+		- This is using the Taurus graphics without the pantograph. Properties otherwise identical to Taurus.
+- OTHER:
+	- Revamped the readme file a little
+	- Updated licence to GNU v3
+
 
 #### Old/Original Changelog Below:
 

@@ -660,10 +660,10 @@ item_mtro_Greece_Thessaloniki_2014, /*Year: 2014*/ \
 item_mtro_Germany_Berlin_U_Bahn_IK, /*Year: 2015*/
 
 #define SORTING_SINGLE_MAGLEV \
+item_mglv_Germany_DB_182_ES64UM_Mutus, /*Year: 2005*/ \
 item_rbm_World_Turbobus, /*Year 2040 */
 
 #define SORTING_MAGLEV \
-item_mglv_Germany_DB_182_ES64UM_Mutus, /*Year: 2005*/ \
 item_mglv_China_Transrapid, /*Year: 2004*/ \
 item_mglv_Japan_MLX01_901, /*Year: 2025*/
 

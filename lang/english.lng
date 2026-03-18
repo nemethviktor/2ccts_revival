@@ -714,6 +714,7 @@ str_mtro_USA_Chicago_L_6000 :Chicago L 6000 Series (Metro)
 str_rbm_World_Turbobus		:Turbobus (Maglev)
 
 # Maglev
+str_mglv_Germany_DB_182_ES64UM_Mutus	:DB 182 ES64UM 'Mutus' (Maglev)
 str_mglv_China_Transrapid	:Shanghai Transrapid (Maglev)
 str_mglv_Japan_MLX01_901	:JR MLX01-901 (Maglev)
 
