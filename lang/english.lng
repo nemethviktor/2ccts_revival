@@ -8,6 +8,7 @@ STR_GRF_URL             :https://github.com/nemethviktor/2ccts_revival
 # General error messages
 str_used_with_dynamic_engines 		:dynamic_engines = true (setting in openttd.cfg)
 str_error_region					:No regions enabled, {STRING} has been disabled
+str_error_2ccnml_loaded				:Can't load if the original 2ccNML is loaded
 
 # parameter strings
 # cost parameters

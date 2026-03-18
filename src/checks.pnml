@@ -30,3 +30,14 @@ if (ALLREGION == 0) {
 	//Continue loading to allow changing parameters to fix problem
 	error(FATAL, string(str_error_region));
 }
+
+//check if 2ccNML is loaded 
+if(grf_current_status("TM\01\01") == 1) {
+    error(FATAL, string(str_error_2ccnml_loaded));
+}
+if(grf_future_status("TM\01\01") == 1) {
+    error(FATAL, string(str_error_2ccnml_loaded));
+}
+if(grf_order_behind("TM\01\01") == 1) {
+    error(FATAL, string(str_error_2ccnml_loaded));
+}
