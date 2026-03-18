@@ -11,6 +11,7 @@
 		- These are a little faster and about 10% more capacity than G5s and are introduced around 2005-2020
 	- Added Single Unit Maglev (_DB 182 ES64UM 'Mutus' (Maglev)_) + Cargo Gen7M Wagons - **ISCONCEPT**
 		- This is using the Taurus graphics without the pantograph. Properties otherwise identical to Taurus.
+	- Changed Steel_3_axle_Compartment_Coach INTRODUCTION_YEAR to 1920 and MODEL_LIFE to 60 ref [OTTD Forums post](https://www.tt-forums.net/viewtopic.php?p=1231507#p1231507)
 - OTHER:
 	- Revamped the readme file a little
 	- Updated licence to GNU v3
