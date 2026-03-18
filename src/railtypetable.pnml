@@ -6,12 +6,33 @@
 */
 
 //Railtype translation table
-//This set uses the default labels and adds Metro-vehicles. 
+// Note to self: the way this works is that on the left side is the custom label and the right side is a fallback list.
+// e.g. STANDARD_GAUGE_25KV: [SAAA, SAAE, ELRL] // -> and then define track_type:  STANDARD_GAUGE_25KV in the item file
+// e.g. SHINKANSEN: [SGAA, SAAE, ELRL] // -> and then define track_type:  SHINKANSEN in the item file
+
 
 railtypetable {
-    RAIL,
+// SETS compatibility
+
+	STANDARD_GAUGE_RAILTYPE_ALL 	: ["SAAN", "SAAE", "SAA3", "SAA4"],
+	STANDARD_GAUGE_RAILTYPE_OHLE 	: ["ELRL", "SAAa", "SAAA", "SAAD", "SAAd", "SAAZ"],
+
+	STANDARD_GAUGE_RAILTYPE_25KV 	: ["SAAA", "SBAA", "SCAA", "SY2A", "SY3A", "SY4A", "ELRL", "SAA$", "SAA(", "SAA)", "SAA^", "SAA'", "SAA_"],
+	STANDARD_GAUGE_RAILTYPE_15KV 	: ["SAAa", "SBAa", "SCAa", "SY2a", "SY3a", "SY4a", "ELRL", "SAA$", "SAA[", "SAA]", "SAA^", "SAA'", "SAA,"],
+	STANDARD_GAUGE_RAILTYPE_3KV 	: ["SAAD", "SBAD", "SCAD", "SY2D", "SY3D", "SY4D", "ELRL", "SAA=", "SAA]", "SAA)", "SAA'", "SAA,", "SAA_"],
+	STANDARD_GAUGE_RAILTYPE_1500V	: ["SAAd", "SBAd", "SCAd", "SY2d", "SY3d", "SY4d", "ELRL", "SAA=", "SAA[", "SAA(", "SAA^", "SAA,", "SAA_"],
+	STANDARD_GAUGE_RAILTYPE_MULTI 	: ["ELRL", "SAA$", "SAA=", "SAA[", "SAA]", "SAA(", "SAA)", "SAA^", "SAA'", "SAA,", "SAA_"],
+	STANDARD_GAUGE_RAILTYPE_3RD 	: ["SAA3", "SBA3", "SCA3", "SY23", "SY33", "SY43", "SAAZ"],
+	STANDARD_GAUGE_RAILTYPE_4TH 	: ["SAA4", "SBA4", "SCA4"],
+	STANDARD_GAUGE_RAILTYPE_DUAL 	: ["SAAZ", "SBAZ", "SY2Z", "SY3Z", "SY4Z"],
+	STANDARD_GAUGE_RAILTYPE_NONE 	: ["RAIL", "SBAN", "SCAN", "SY2N", "SY3N", "SY4N"],
+
+
+    
+// original things
+	RAIL,
 	ELRL,
 	MONO,
-	MGLV,
+	MGLV: [MGLV, LCAI, LCAE],
 	MTRO: [SAB3, "3RDR", MTRO, MONO] // fall back to monorail if no Metro-tracks are available
 }
