@@ -6,7 +6,7 @@ That said, I've not worked on NML files before and my gfx skills are zero so if 
 
 ## Availability
 
-The grf file is/will be available on Github for the time being. If there is ample interest from people, I'll figure a way to push the files into the game's ecosystem.
+The grf file is available on Github under [Releases](https://github.com/nemethviktor/2ccts_revival/releases/latest) for the time being (scroll down to Assets and it should be there). If there is ample interest from people, I'll figure a way to push the files into the game's ecosystem.
 
 
 ## Build
@@ -32,11 +32,14 @@ Please try to either stick to whichever current template (none technically avail
 
 ## Info
 
-_I know this isn't actually self-replacing the variables._
+(_I know this isn't actually self-replacing the variables._)
 
 {{GRF_TITLE}}
+
 MD5Hash:  {{GRF_MD5}}
+
 Version:  {{REPO_REVISION}}
+
 GRF ID:   "VN\01\01"
 
 
@@ -58,7 +61,7 @@ GRF ID:   "VN\01\01"
 OpenTTD: see https://wiki.openttd.org/en/Community/NewGRF/
 
 Releases will be available from the ingame Online Content
-	~~Nightlies/Push builds can be downloaded from http://bundles.openttdcoop.org/2ccts/~~ (Side dead as of 2026; use github)
+	~~Nightlies/Push builds can be downloaded from http://bundles.openttdcoop.org/2ccts/~~ (Site dead as of 2026; use github)
 	
 #### 2.3 Parameter settings
  
