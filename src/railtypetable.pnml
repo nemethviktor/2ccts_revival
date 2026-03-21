@@ -13,18 +13,36 @@
 
 railtypetable {
 // SETS compatibility
+// To whom it may concern: 
+// I didn't really separate out _OHLE from _MULTI because 1: I don't fully grasp the difference/point and 2: I think it's a PITA.
+// OHLE is A/a, D/d, Z, which are any AC, any DC and any other that includes the first two (aka both 3RDR _and_ Overhead)
+// There are very few obscure ones (espc in the USA) where they support 3kV and 11kV but not 15 or 25kV. Those just go into OHLE.
 
+
+	// All Rails exc Maglev, ie: NE, E, 3rd, 4th
 	STANDARD_GAUGE_RAILTYPE_ALL 	: ["SAAN", "SAAE", "SAA3", "SAA4"],
+	
+	// All Overhead Catenary Pickup (see notes above)
 	STANDARD_GAUGE_RAILTYPE_OHLE 	: ["ELRL", "SAAa", "SAAA", "SAAD", "SAAd", "SAAZ"],
 
 	STANDARD_GAUGE_RAILTYPE_25KV 	: ["SAAA", "SBAA", "SCAA", "SY2A", "SY3A", "SY4A", "ELRL", "SAA$", "SAA(", "SAA)", "SAA^", "SAA'", "SAA_"],
 	STANDARD_GAUGE_RAILTYPE_15KV 	: ["SAAa", "SBAa", "SCAa", "SY2a", "SY3a", "SY4a", "ELRL", "SAA$", "SAA[", "SAA]", "SAA^", "SAA'", "SAA,"],
 	STANDARD_GAUGE_RAILTYPE_3KV 	: ["SAAD", "SBAD", "SCAD", "SY2D", "SY3D", "SY4D", "ELRL", "SAA=", "SAA]", "SAA)", "SAA'", "SAA,", "SAA_"],
 	STANDARD_GAUGE_RAILTYPE_1500V	: ["SAAd", "SBAd", "SCAd", "SY2d", "SY3d", "SY4d", "ELRL", "SAA=", "SAA[", "SAA(", "SAA^", "SAA,", "SAA_"],
+	
+	// Unused
 	STANDARD_GAUGE_RAILTYPE_MULTI 	: ["ELRL", "SAA$", "SAA=", "SAA[", "SAA]", "SAA(", "SAA)", "SAA^", "SAA'", "SAA,", "SAA_"],
+
+	// 3rd Rail
 	STANDARD_GAUGE_RAILTYPE_3RD 	: ["SAA3", "SBA3", "SCA3", "SY23", "SY33", "SY43", "SAAZ"],
+	
+	// 4th
 	STANDARD_GAUGE_RAILTYPE_4TH 	: ["SAA4", "SBA4", "SCA4"],
+
+	// Dual Pickup (both catenary and 3RDR)
 	STANDARD_GAUGE_RAILTYPE_DUAL 	: ["SAAZ", "SBAZ", "SY2Z", "SY3Z", "SY4Z"],
+
+	// Non-Electrified
 	STANDARD_GAUGE_RAILTYPE_NONE 	: ["RAIL", "SBAN", "SCAN", "SY2N", "SY3N", "SY4N"],
 
 

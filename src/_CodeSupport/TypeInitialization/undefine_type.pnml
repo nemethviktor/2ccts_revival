@@ -5,7 +5,7 @@
 
 */
 
-//this file is used to undefine vehicle type defines to silence warnings and should be included in every type file
+// This file is used to undefine vehicle type defines to silence warnings and should be included in every type file
 
 #undef CURRENT_TRACK_TYPE
 #undef CURRENT_RUNNING_COST_BASE
