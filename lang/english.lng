@@ -8,7 +8,6 @@ STR_GRF_URL                         :https://github.com/nemethviktor/2ccts_reviv
 # General error messages
 str_used_with_dynamic_engines       :dynamic_engines = true (setting in openttd.cfg)
 str_error_region                    :No regions enabled, {STRING} has been disabled
-str_error_2ccnml_loaded             :Can't load if the original 2ccNML is loaded
 
 # parameter strings
 # cost parameters
@@ -58,6 +57,8 @@ STR_PARAM_LOADINGSPEED_FAST                                     :Fast
 STR_PARAM_LOADINGSPEED_ULTRA                                    :As fast as possible
 
 # VEHICLE NAMES
+
+# Note to self/everyone: I'm not separating the language element of Standard/Narrow/etc because it should be relevant from the depot and it's a PITA.
 
 # Railbus Steam
 str_rbs_Austria_NOLB_1                                          :NOLB 1 (Steam Railbus)
@@ -915,15 +916,13 @@ str_coach_Gen6_Super_Regio_Coach                                :Super Regio Coa
 str_coach_Gen6_Super_Voyager_Coach                              :Super Voyager Coach
 
 # Special wagons
-str_mu_wagon_unpowered                                          :Multiple Unit Wagon (Unpowered)
-str_el3r_wagon_unpowered                                        :Metro [3R] Unit Wagon (Unpowered)
-str_el4r_wagon_unpowered                                        :Metro [4R] Unit Wagon (Unpowered)
-str_mglv_wagon_unpowered                                        :Maglev Unit Wagon (Unpowered)
+str_mu_unit_unpowered                                           :Multiple Unit Wagon (Unpowered)
+str_mu_unit_powered                                             :Multiple Unit Wagon (Powered)
+str_electric_metro_unit_unpowered                               :Metro Unit Wagon (Unpowered)
+str_electric_metro_unit_powered                                 :Metro Unit Wagon (Powered)
+str_mglv_unit_unpowered                                         :Maglev Unit Wagon (Unpowered)
+str_mglv_unit_powered                                           :Maglev Unit Wagon (Powered)
 str_mu_cargo_wagon_unpowered                                    :Multiple Unit Cargo Wagon (Unpowered)
-str_mu_wagon_powered                                            :Multiple Unit Wagon (Powered)
-str_el3r_wagon_powered                                          :Metro [3R] Unit Wagon (Powered)
-str_el4r_wagon_powered                                          :Metro [4R] Unit Wagon (Powered)
-str_mglv_wagon_powered                                          :Maglev Unit Wagon (Powered)
 str_mu_cargo_wagon_powered                                      :Multipe Unit Cargo Wagon (Powered)
 
 # Obsolete vehicles

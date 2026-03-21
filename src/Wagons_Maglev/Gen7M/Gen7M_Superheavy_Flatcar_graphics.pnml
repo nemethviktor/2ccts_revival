@@ -9,7 +9,7 @@
 * PURCHASE
 */
 
-spriteset(spriteset_wagon_Gen7M_Superheavy_Flatcar_purchase, "gfx/Wagons-Maglev/Gen7M/Gen7M_Superheavy_Flatcar_Purchase.png") {
+spriteset(spriteset_wagon_Gen7M_Superheavy_Flatcar_purchase, "gfx/Wagons_Maglev/Gen7M/Gen7M_Superheavy_Flatcar_Purchase.png") {
 	template_purchase_wagon(1, 1)
 }
 
@@ -18,22 +18,22 @@ spriteset(spriteset_wagon_Gen7M_Superheavy_Flatcar_purchase, "gfx/Wagons-Maglev/
 */
 
 //Front
-spriteset(spriteset_wagon_Gen7M_Superheavy_Flatcar_front, "gfx/Wagons-Maglev/Gen7M/Gen7M_Superheavy_Flatcar.png") {
+spriteset(spriteset_wagon_Gen7M_Superheavy_Flatcar_front, "gfx/Wagons_Maglev/Gen7M/Gen7M_Superheavy_Flatcar.png") {
 	template_2cc_wagons(1, 1)
 }
 
 //Back
-spriteset(spriteset_wagon_Gen7M_Superheavy_Flatcar_back, "gfx/Wagons-Maglev/Gen7M/Gen7M_Superheavy_Flatcar.png") {
+spriteset(spriteset_wagon_Gen7M_Superheavy_Flatcar_back, "gfx/Wagons_Maglev/Gen7M/Gen7M_Superheavy_Flatcar.png") {
 	template_2cc_wagons(1, 64)
 }
 
 //Middle - Empty
-spriteset(spriteset_wagon_Gen7M_Superheavy_Flatcar_middle_empty, "gfx/Wagons-Maglev/Gen7M/Gen7M_Superheavy_Flatcar.png") {
+spriteset(spriteset_wagon_Gen7M_Superheavy_Flatcar_middle_empty, "gfx/Wagons_Maglev/Gen7M/Gen7M_Superheavy_Flatcar.png") {
 	template_2cc_wagons(1, 32)
 }
 
 //Middle - L1
-spriteset(spriteset_wagon_Gen7M_Superheavy_Flatcar_middle_L1, "gfx/Wagons-Maglev/Gen7M/Gen7M_Superheavy_Flatcar.png") {
+spriteset(spriteset_wagon_Gen7M_Superheavy_Flatcar_middle_L1, "gfx/Wagons_Maglev/Gen7M/Gen7M_Superheavy_Flatcar.png") {
 	template_2cc_wagons(1, 126)
 }
 
@@ -43,7 +43,7 @@ spritegroup spritegroup_wagon_Gen7M_Superheavy_Flatcar_middle_L1 {
 }
 
 //Middle - L2
-spriteset(spriteset_wagon_Gen7M_Superheavy_Flatcar_middle_L2, "gfx/Wagons-Maglev/Gen7M/Gen7M_Superheavy_Flatcar.png") {
+spriteset(spriteset_wagon_Gen7M_Superheavy_Flatcar_middle_L2, "gfx/Wagons_Maglev/Gen7M/Gen7M_Superheavy_Flatcar.png") {
 	template_2cc_wagons(179,126)
 }
 
@@ -53,7 +53,7 @@ spritegroup spritegroup_wagon_Gen7M_Superheavy_Flatcar_middle_L2 {
 }
 
 //Middle - L3
-spriteset(spriteset_wagon_Gen7M_Superheavy_Flatcar_middle_L3, "gfx/Wagons-Maglev/Gen7M/Gen7M_Superheavy_Flatcar.png") {
+spriteset(spriteset_wagon_Gen7M_Superheavy_Flatcar_middle_L3, "gfx/Wagons_Maglev/Gen7M/Gen7M_Superheavy_Flatcar.png") {
 	template_2cc_wagons(357,126)
 }
 
@@ -63,7 +63,7 @@ spritegroup spritegroup_wagon_Gen7M_Superheavy_Flatcar_middle_L3 {
 }
 
 //Middle - L4
-spriteset(spriteset_wagon_Gen7M_Superheavy_Flatcar_middle_L4, "gfx/Wagons-Maglev/Gen7M/Gen7M_Superheavy_Flatcar.png") {
+spriteset(spriteset_wagon_Gen7M_Superheavy_Flatcar_middle_L4, "gfx/Wagons_Maglev/Gen7M/Gen7M_Superheavy_Flatcar.png") {
 	template_2cc_wagons(535,126)
 }
 

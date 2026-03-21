@@ -9,7 +9,7 @@
 * PURCHASE
 */
 
-spriteset(spriteset_wagon_Gen7M_Silo_Type1_purchase, "gfx/Wagons-Maglev/Gen7M/Gen7M_Silo_Type1_Purchase.png") {
+spriteset(spriteset_wagon_Gen7M_Silo_Type1_purchase, "gfx/Wagons_Maglev/Gen7M/Gen7M_Silo_Type1_Purchase.png") {
 	template_purchase_wagon(1, 1)
 }
 
@@ -18,17 +18,17 @@ spriteset(spriteset_wagon_Gen7M_Silo_Type1_purchase, "gfx/Wagons-Maglev/Gen7M/Ge
 */
 
 //Livery 1 - Loading State 1
-spriteset(spriteset_wagon_Gen7M_Silo_Type1_L1_S1, "gfx/Wagons-Maglev/Gen7M/Gen7M_Silo_Type1.png") {
+spriteset(spriteset_wagon_Gen7M_Silo_Type1_L1_S1, "gfx/Wagons_Maglev/Gen7M/Gen7M_Silo_Type1.png") {
 	template_2cc_wagons(1, 1)
 }
 
 //Livery 1 - Loading State 2
-spriteset(spriteset_wagon_Gen7M_Silo_Type1_L1_S2, "gfx/Wagons-Maglev/Gen7M/Gen7M_Silo_Type1.png") {
+spriteset(spriteset_wagon_Gen7M_Silo_Type1_L1_S2, "gfx/Wagons_Maglev/Gen7M/Gen7M_Silo_Type1.png") {
 	template_2cc_wagons(1, 32)
 }
 
 //Livery 1 - Loading State 3
-spriteset(spriteset_wagon_Gen7M_Silo_Type1_L1_S3, "gfx/Wagons-Maglev/Gen7M/Gen7M_Silo_Type1.png") {
+spriteset(spriteset_wagon_Gen7M_Silo_Type1_L1_S3, "gfx/Wagons_Maglev/Gen7M/Gen7M_Silo_Type1.png") {
 	template_2cc_wagons(1, 64)
 }
 
@@ -39,17 +39,17 @@ spritegroup spritegroup_wagon_Gen7M_Silo_Type1_L1 {
 }
 
 //Livery 2 - Loading State 1
-spriteset(spriteset_wagon_Gen7M_Silo_Type1_L2_S1, "gfx/Wagons-Maglev/Gen7M/Gen7M_Silo_Type1.png") {
+spriteset(spriteset_wagon_Gen7M_Silo_Type1_L2_S1, "gfx/Wagons_Maglev/Gen7M/Gen7M_Silo_Type1.png") {
 	template_2cc_wagons(179, 1)
 }
 
 //Livery 2 - Loading State 2
-spriteset(spriteset_wagon_Gen7M_Silo_Type1_L2_S2, "gfx/Wagons-Maglev/Gen7M/Gen7M_Silo_Type1.png") {
+spriteset(spriteset_wagon_Gen7M_Silo_Type1_L2_S2, "gfx/Wagons_Maglev/Gen7M/Gen7M_Silo_Type1.png") {
 	template_2cc_wagons(179, 32)
 }
 
 //Livery 2 - Loading State 3
-spriteset(spriteset_wagon_Gen7M_Silo_Type1_L2_S3, "gfx/Wagons-Maglev/Gen7M/Gen7M_Silo_Type1.png") {
+spriteset(spriteset_wagon_Gen7M_Silo_Type1_L2_S3, "gfx/Wagons_Maglev/Gen7M/Gen7M_Silo_Type1.png") {
 	template_2cc_wagons(179, 64)
 }
 
@@ -60,17 +60,17 @@ spritegroup spritegroup_wagon_Gen7M_Silo_Type1_L2 {
 }
 
 //Livery 3 - Loading State 1
-spriteset(spriteset_wagon_Gen7M_Silo_Type1_L3_S1, "gfx/Wagons-Maglev/Gen7M/Gen7M_Silo_Type1.png") {
+spriteset(spriteset_wagon_Gen7M_Silo_Type1_L3_S1, "gfx/Wagons_Maglev/Gen7M/Gen7M_Silo_Type1.png") {
 	template_2cc_wagons(357, 1)
 }
 
 //Livery 3 - Loading State 2
-spriteset(spriteset_wagon_Gen7M_Silo_Type1_L3_S2, "gfx/Wagons-Maglev/Gen7M/Gen7M_Silo_Type1.png") {
+spriteset(spriteset_wagon_Gen7M_Silo_Type1_L3_S2, "gfx/Wagons_Maglev/Gen7M/Gen7M_Silo_Type1.png") {
 	template_2cc_wagons(357, 32)
 }
 
 //Livery 3 - Loading State 3
-spriteset(spriteset_wagon_Gen7M_Silo_Type1_L3_S3, "gfx/Wagons-Maglev/Gen7M/Gen7M_Silo_Type1.png") {
+spriteset(spriteset_wagon_Gen7M_Silo_Type1_L3_S3, "gfx/Wagons_Maglev/Gen7M/Gen7M_Silo_Type1.png") {
 	template_2cc_wagons(357, 64)
 }
 
@@ -81,17 +81,17 @@ spritegroup spritegroup_wagon_Gen7M_Silo_Type1_L3 {
 }
 
 //Livery 4 - Loading State 1
-spriteset(spriteset_wagon_Gen7M_Silo_Type1_L4_S1, "gfx/Wagons-Maglev/Gen7M/Gen7M_Silo_Type1.png") {
+spriteset(spriteset_wagon_Gen7M_Silo_Type1_L4_S1, "gfx/Wagons_Maglev/Gen7M/Gen7M_Silo_Type1.png") {
 	template_2cc_wagons(535, 1)
 }
 
 //Livery 4 - Loading State 2
-spriteset(spriteset_wagon_Gen7M_Silo_Type1_L4_S2, "gfx/Wagons-Maglev/Gen7M/Gen7M_Silo_Type1.png") {
+spriteset(spriteset_wagon_Gen7M_Silo_Type1_L4_S2, "gfx/Wagons_Maglev/Gen7M/Gen7M_Silo_Type1.png") {
 	template_2cc_wagons(535, 32)
 }
 
 //Livery 4 - Loading State 3
-spriteset(spriteset_wagon_Gen7M_Silo_Type1_L4_S3, "gfx/Wagons-Maglev/Gen7M/Gen7M_Silo_Type1.png") {
+spriteset(spriteset_wagon_Gen7M_Silo_Type1_L4_S3, "gfx/Wagons_Maglev/Gen7M/Gen7M_Silo_Type1.png") {
 	template_2cc_wagons(535, 64)
 }
 

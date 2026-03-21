@@ -9,7 +9,7 @@
 * PURCHASE
 */
 
-spriteset(spriteset_singlemtro_USA_Chicago_L_Northwest_Elevated_1907_Stock_purchase, "gfx/Single-Metro/USA_Chicago_L_Northwest_Elevated_1907_Stock.png") {
+spriteset(spriteset_singlemtro_USA_Chicago_L_Northwest_Elevated_1907_Stock_purchase, "gfx/Single_Metro/USA_Chicago_L_Northwest_Elevated_1907_Stock.png") {
 	template_purchase(1, 128)
 }
 
@@ -18,7 +18,7 @@ spriteset(spriteset_singlemtro_USA_Chicago_L_Northwest_Elevated_1907_Stock_purch
 */
 
 //Only one spriteset needed for this set
-spriteset(spriteset_singlemtro_USA_Chicago_L_Northwest_Elevated_1907_Stock, "gfx/Single-Metro/USA_Chicago_L_Northwest_Elevated_1907_Stock.png") {
+spriteset(spriteset_singlemtro_USA_Chicago_L_Northwest_Elevated_1907_Stock, "gfx/Single_Metro/USA_Chicago_L_Northwest_Elevated_1907_Stock.png") {
 	template_2cc_railbus_general(1, 1)
 }
 	
