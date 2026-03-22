@@ -12,12 +12,11 @@ The grf file is available on Github under [Releases](https://github.com/nemethvi
 
 ## Build
 
-The assumption is that you have at least a vague idea about how Linux works. If you're on Windows: Install WSL. It makes life a lot easier, don't bother with CoreUtils etc. 
+You'll likely need [nmlc 0.8.1+](https://github.com/OpenTTD/nml/tree/master) to run the build and that seems to be around for Windows only. Get MinGW from [here](https://sourceforge.net/projects/mingw-w64/files/latest/download), install (you'll need the base and some compilers), then add the resulting folder's `bin` subfolder to `PATH` (ie `c:\MinGW\bin\`)
 
-Regardless you'll need to `apt install` a variety of things, `python3` and `pip3` obviously, `make`, `gcc`, `nmlc`, `dos2unix`
+You'll also need python 3...
 
-Then in `bash` (if you're on Windows, google around about this, but if you managed to get `apt` generally functioning this shouldn't be a problem) run `make`. If you get warnings that don't seem "deadly", ignore them, especially if you are new to this. 
-
+Run the `pybuild.bat`.
 
 ## "Under new management" (project directions, bug reports/feature requests)
 

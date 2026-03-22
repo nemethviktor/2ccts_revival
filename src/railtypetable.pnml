@@ -9,96 +9,48 @@
 // Note to self: the way this works is that on the left side is the custom label and the right side is a fallback list.
 // e.g. STANDARD_GAUGE_25KV: [SAAA, SAAE, ELRL] // -> and then define track_type:  STANDARD_GAUGE_25KV in the item file
 // e.g. SHINKANSEN: [SGAA, SAAE, ELRL] // -> and then define track_type:  SHINKANSEN in the item file
-
+// Fallbacks are in first-come-first-serve order. So if we define [SAAN, NAAN] and both exist, the first one will be taken, the second will be ignored.
+// Which means that if something (e.g. generic wagons) are to be available universally then in the item file define them thrice _AS A LIST_.
+// --> #define CURRENT_TRACK_TYPE [STANDARD_GAUGE_RAILTYPE_NONE, NARROW_GAUGE_RAILTYPE_NONE, BROAD_GAUGE_RAILTYPE_NONE]
 
 railtypetable {
-// SETS compatibility
-// To whom it may concern: 
-// We don't use _MULTI but do use _OHLE because 1: I don't fully grasp the difference/point and 2: I think it's a PITA. Please open a ticket if there's an issue.
-// OHLE is A/a, D/d, Z, which are any AC, any DC and any other that includes the first two (aka both 3RDR _and_ Overhead)
-// There are very few obscure ones (espc in the USA) where they support 3kV and 11kV but not 15 or 25kV. Those just go into OHLE.
 
+// STANDARD
 
-	// All Rails exc Maglev, ie: NE, E, 3rd, 4th
-	// Technically STANDARD_GAUGE_RAILTYPE_ALL STANDARD_GAUGE_RAILTYPE_NONE, STANDARD_GAUGE_RAILTYPE_OHLE, STANDARD_GAUGE_RAILTYPE_3RD, STANDARD_GAUGE_RAILTYPE_4TH
-	// I think this is unused
-	STANDARD_GAUGE_RAILTYPE_ALL 	: ["RAIL", "SBAN", "SCAN", "SY2N", "SY3N", "SY4N", "ELRL", "SAA$", "SAA=", "SAA[", "SAA]", "SAA(", "SAA)", "SAA^", "SAA'", "SAA,", "SAA_", "SAAa", "SBAa", "SCAa", "SY2a", "SY3a", "SY4a", "ELRL", "SAA$", "SAA[", "SAA]", "SAA^", "SAA'", "SAA,","SAAA", "SBAA", "SCAA", "SY2A", "SY3A", "SY4A", "ELRL", "SAA$", "SAA(", "SAA)", "SAA^", "SAA'", "SAA_","SAAD", "SBAD", "SCAD", "SY2D", "SY3D", "SY4D", "ELRL", "SAA=", "SAA]", "SAA)", "SAA'", "SAA,", "SAA_", "SAAd", "SBAd", "SCAd", "SY2d", "SY3d", "SY4d", "ELRL", "SAA=", "SAA[", "SAA(", "SAA^", "SAA,", "SAA_", "SAA3", "SBA3", "SCA3", "SY23", "SY33", "SY43", "SAAZ","SAA4", "SBA4", "SCA4"],
-	
-	// All Overhead Catenary Pickup (see notes above)
-	// Technically STANDARD_GAUGE_RAILTYPE_OHLE STANDARD_GAUGE_RAILTYPE_MULTI, STANDARD_GAUGE_RAILTYPE_15KV, STANDARD_GAUGE_RAILTYPE_25KV, STANDARD_GAUGE_RAILTYPE_3KV, STANDARD_GAUGE_RAILTYPE_1500V, STANDARD_GAUGE_RAILTYPE_DUAL
-	STANDARD_GAUGE_RAILTYPE_OHLE 	: ["ELRL", "SAA$", "SAA=", "SAA[", "SAA]", "SAA(", "SAA)", "SAA^", "SAA'", "SAA,", "SAA_", "SAAa", "SBAa", "SCAa", "SY2a", "SY3a", "SY4a", "ELRL", "SAA$", "SAA[", "SAA]", "SAA^", "SAA'", "SAA,","SAAA", "SBAA", "SCAA", "SY2A", "SY3A", "SY4A", "ELRL", "SAA$", "SAA(", "SAA)", "SAA^", "SAA'", "SAA_","SAAD", "SBAD", "SCAD", "SY2D", "SY3D", "SY4D", "ELRL", "SAA=", "SAA]", "SAA)", "SAA'", "SAA,", "SAA_",	"SAAd", "SBAd", "SCAd", "SY2d", "SY3d", "SY4d", "ELRL", "SAA=", "SAA[", "SAA(", "SAA^", "SAA,", "SAA_"],
+	STANDARD_GAUGE_RAILTYPE_OHLE 	: ["SAAE", "ELRL", "RAIL"],
+	STANDARD_GAUGE_RAILTYPE_25KV 	: ["SAAA", "ELRL", "RAIL"],
+	STANDARD_GAUGE_RAILTYPE_15KV 	: ["SAAa", "SAAA", "ELRL", "RAIL"],
+	STANDARD_GAUGE_RAILTYPE_3KV 	: ["SAAD", "ELRL", "RAIL"],
+	STANDARD_GAUGE_RAILTYPE_1500V	: ["SAAd", "SAAD", "ELRL", "RAIL"],
+	STANDARD_GAUGE_RAILTYPE_3RD 	: ["SAA3", "MTRO"],
+	STANDARD_GAUGE_RAILTYPE_4TH 	: ["SAA4", "MTRO"],
+	STANDARD_GAUGE_RAILTYPE_DUAL 	: ["SAAZ", "ELRL", "MTRO"],
+	STANDARD_GAUGE_RAILTYPE_NONE 	: ["SAAN", "RAIL"],
 
-	STANDARD_GAUGE_RAILTYPE_25KV 	: ["SAAA", "SBAA", "SCAA", "SY2A", "SY3A", "SY4A", "ELRL", "SAA$", "SAA(", "SAA)", "SAA^", "SAA'", "SAA_"],
-	STANDARD_GAUGE_RAILTYPE_15KV 	: ["SAAa", "SBAa", "SCAa", "SY2a", "SY3a", "SY4a", "ELRL", "SAA$", "SAA[", "SAA]", "SAA^", "SAA'", "SAA,"],
-	STANDARD_GAUGE_RAILTYPE_3KV 	: ["SAAD", "SBAD", "SCAD", "SY2D", "SY3D", "SY4D", "ELRL", "SAA=", "SAA]", "SAA)", "SAA'", "SAA,", "SAA_"],
-	STANDARD_GAUGE_RAILTYPE_1500V	: ["SAAd", "SBAd", "SCAd", "SY2d", "SY3d", "SY4d", "ELRL", "SAA=", "SAA[", "SAA(", "SAA^", "SAA,", "SAA_"],
-	
-	// Unused
-	STANDARD_GAUGE_RAILTYPE_MULTI 	: ["ELRL", "SAA$", "SAA=", "SAA[", "SAA]", "SAA(", "SAA)", "SAA^", "SAA'", "SAA,", "SAA_"],
+// NARROW
 
-	// 3rd Rail
-	STANDARD_GAUGE_RAILTYPE_3RD 	: ["SAA3", "SBA3", "SCA3", "SY23", "SY33", "SY43", "SAAZ"],
-	
-	// 4th Rail
-	STANDARD_GAUGE_RAILTYPE_4TH 	: ["SAA4", "SBA4", "SCA4"],
-
-	// Dual Pickup (both catenary and 3RDR)
-	STANDARD_GAUGE_RAILTYPE_DUAL 	: ["SAAZ", "SBAZ", "SY2Z", "SY3Z", "SY4Z"],
-
-	// Non-Electrified
-	STANDARD_GAUGE_RAILTYPE_NONE 	: ["RAIL", "SBAN", "SCAN", "SY2N", "SY3N", "SY4N"],
-
-	// See generic notes above that also apply to NARROW
-	// We don't actually use ALL or MULTI
-	
-	// Technically NARROW_GAUGE_RAILTYPE_ALL NARROW_GAUGE_RAILTYPE_NONE, NARROW_GAUGE_RAILTYPE_OHLE, NARROW_GAUGE_RAILTYPE_3RD
-	NARROW_GAUGE_RAILTYPE_ALL 		: ["NAAN", "NBAN", "NCAN", "NY2N", "NY3N", "NY4N", "NAAE", "NBAE", "NCAE", "NAAa", "NBAa", "NCAa", "NY2a", "NY3a", "NY4a", "NAAE", "NBAE", "NCAE", "NAAA", "NBAA", "NCAA", "NY2A", "NY3A", "NY4A", "NAAE", "NBAE", "NCAE", "NAAD", "NBAD", "NCAD", "NY2D", "NY3D", "NY4D", "NAAE", "NBAE", "NCAE", "NAAd", "NBAd", "NCAd", "NY2d", "NY3d", "NY4d", "NAAE", "NBAE", "NCAE", "NAAZ", "NBAZ", "NY2Z", "NY3Z", "NY4Z", "NAA3", "NBA3", "NCA3", "NY23", "NY33", "NY43", "NAAZ", "NBAZ", "NY2Z", "NY3Z", "NY4Z"],
-	
-	// Technically NARROW_GAUGE_RAILTYPE_OHLE NARROW_GAUGE_RAILTYPE_MULTI, NARROW_GAUGE_RAILTYPE_15KV, NARROW_GAUGE_RAILTYPE_25KV, NARROW_GAUGE_RAILTYPE_3KV, NARROW_GAUGE_RAILTYPE_1500V, NARROW_GAUGE_RAILTYPE_DUAL
- 	NARROW_GAUGE_RAILTYPE_OHLE 		: ["NAAE", "NBAE", "NCAE", "NAAa", "NBAa", "NCAa", "NY2a", "NY3a", "NY4a", "NAAE", "NBAE", "NCAE", "NAAA", "NBAA", "NCAA", "NY2A", "NY3A", "NY4A", "NAAE", "NBAE", "NCAE", "NAAD", "NBAD", "NCAD", "NY2D", "NY3D", "NY4D", "NAAE", "NBAE", "NCAE", "NAAd", "NBAd", "NCAd", "NY2d", "NY3d", "NY4d", "NAAE", "NBAE", "NCAE", "NAAZ", "NBAZ", "NY2Z", "NY3Z", "NY4Z"],
+	NARROW_GAUGE_RAILTYPE_OHLE 		: ["NAAE", "ELRL", "RAIL"],
+	NARROW_GAUGE_RAILTYPE_25KV 		: ["NAAA", "ELRL", "RAIL"],
+	NARROW_GAUGE_RAILTYPE_15KV 		: ["NAAa", "NAAA", "ELRL", "RAIL"],
+	NARROW_GAUGE_RAILTYPE_3KV 		: ["NAAD", "ELRL", "RAIL"],
+	NARROW_GAUGE_RAILTYPE_1500V		: ["NAAd", "NAAD", "ELRL", "RAIL"],
+	NARROW_GAUGE_RAILTYPE_3RD 		: ["NAA3", "MTRO"],
+	NARROW_GAUGE_RAILTYPE_4TH 		: ["NAA4", "MTRO"],
+	NARROW_GAUGE_RAILTYPE_DUAL 		: ["NAAZ", "ELRL", "MTRO"],
+	NARROW_GAUGE_RAILTYPE_NONE 		: ["NAAN", "RAIL"],
  	
-	NARROW_GAUGE_RAILTYPE_25KV 		: ["NAAA", "NBAA", "NCAA", "NY2A", "NY3A", "NY4A", "NAAE", "NBAE", "NCAE"],
- 	NARROW_GAUGE_RAILTYPE_15KV 		: ["NAAa", "NBAa", "NCAa", "NY2a", "NY3a", "NY4a", "NAAE", "NBAE", "NCAE"],
- 	NARROW_GAUGE_RAILTYPE_3KV 		: ["NAAD", "NBAD", "NCAD", "NY2D", "NY3D", "NY4D", "NAAE", "NBAE", "NCAE"],
- 	NARROW_GAUGE_RAILTYPE_1500V 	: ["NAAd", "NBAd", "NCAd", "NY2d", "NY3d", "NY4d", "NAAE", "NBAE", "NCAE"],
- 	
-	NARROW_GAUGE_RAILTYPE_MULTI 	: ["NAAE", "NBAE", "NCAE"],
- 	NARROW_GAUGE_RAILTYPE_3RD 		: ["NAA3", "NBA3", "NCA3", "NY23", "NY33", "NY43", "NAAZ", "NBAZ", "NY2Z", "NY3Z", "NY4Z"],
- 	NARROW_GAUGE_RAILTYPE_DUAL 		: ["NAAZ", "NBAZ", "NY2Z", "NY3Z", "NY4Z"],
- 	NARROW_GAUGE_RAILTYPE_NONE 		: ["NAAN", "NBAN", "NCAN", "NY2N", "NY3N", "NY4N"],
- 	
-	// BROAD -> Copying from STANDARD as there is no actual 'broad' in SETS but I think the logic is still useful.
-	BROAD_GAUGE_RAILTYPE_ALL 		: ["RAIL", "BBAN", "BCAN", "BY2N", "BY3N", "BY4N", "ELRL", "BAA$", "BAA=", "BAA[", "BAA]", "BAA(", "BAA)", "BAA^", "BAA'", "BAA,", "BAA_", "BAAa", "BBAa", "BCAa", "BY2a", "BY3a", "BY4a", "ELRL", "BAA$", "BAA[", "BAA]", "BAA^", "BAA'", "BAA,","BAAA", "BBAA", "BCAA", "BY2A", "BY3A", "BY4A", "ELRL", "BAA$", "BAA(", "BAA)", "BAA^", "BAA'", "BAA_","BAAD", "BBAD", "BCAD", "BY2D", "BY3D", "BY4D", "ELRL", "BAA=", "BAA]", "BAA)", "BAA'", "BAA,", "BAA_", "BAAd", "BBAd", "BCAd", "BY2d", "BY3d", "BY4d", "ELRL", "BAA=", "BAA[", "BAA(", "BAA^", "BAA,", "BAA_", "BAA3", "BBA3", "BCA3", "BY23", "BY33", "BY43", "BAAZ","BAA4", "BBA4", "BCA4"],
-	
-	// All Overhead Catenary Pickup (see notes above)
-	// Technically BROAD_GAUGE_RAILTYPE_OHLE BROAD_GAUGE_RAILTYPE_MULTI, BROAD_GAUGE_RAILTYPE_15KV, BROAD_GAUGE_RAILTYPE_25KV, BROAD_GAUGE_RAILTYPE_3KV, BROAD_GAUGE_RAILTYPE_1500V, BROAD_GAUGE_RAILTYPE_DUAL
-	BROAD_GAUGE_RAILTYPE_OHLE 		: ["ELRL", "BAA$", "BAA=", "BAA[", "BAA]", "BAA(", "BAA)", "BAA^", "BAA'", "BAA,", "BAA_", "BAAa", "BBAa", "BCAa", "BY2a", "BY3a", "BY4a", "ELRL", "BAA$", "BAA[", "BAA]", "BAA^", "BAA'", "BAA,","BAAA", "BBAA", "BCAA", "BY2A", "BY3A", "BY4A", "ELRL", "BAA$", "BAA(", "BAA)", "BAA^", "BAA'", "BAA_","BAAD", "BBAD", "BCAD", "BY2D", "BY3D", "BY4D", "ELRL", "BAA=", "BAA]", "BAA)", "BAA'", "BAA,", "BAA_",	"BAAd", "BBAd", "BCAd", "BY2d", "BY3d", "BY4d", "ELRL", "BAA=", "BAA[", "BAA(", "BAA^", "BAA,", "BAA_"],
+// BROAD 
 
-	BROAD_GAUGE_RAILTYPE_25KV 		: ["BAAA", "BBAA", "BCAA", "BY2A", "BY3A", "BY4A", "ELRL", "BAA$", "BAA(", "BAA)", "BAA^", "BAA'", "BAA_"],
-	BROAD_GAUGE_RAILTYPE_15KV 		: ["BAAa", "BBAa", "BCAa", "BY2a", "BY3a", "BY4a", "ELRL", "BAA$", "BAA[", "BAA]", "BAA^", "BAA'", "BAA,"],
-	BROAD_GAUGE_RAILTYPE_3KV 		: ["BAAD", "BBAD", "BCAD", "BY2D", "BY3D", "BY4D", "ELRL", "BAA=", "BAA]", "BAA)", "BAA'", "BAA,", "BAA_"],
-	BROAD_GAUGE_RAILTYPE_1500V		: ["BAAd", "BBAd", "BCAd", "BY2d", "BY3d", "BY4d", "ELRL", "BAA=", "BAA[", "BAA(", "BAA^", "BAA,", "BAA_"],
-	
-	// This is actually used in one place.
-	BROAD_GAUGE_RAILTYPE_MULTI 		: ["ELRL", "BAA$", "BAA=", "BAA[", "BAA]", "BAA(", "BAA)", "BAA^", "BAA'", "BAA,", "BAA_"],
+	BROAD_GAUGE_RAILTYPE_OHLE 		: ["BAAE", "ELRL", "RAIL"],
+	BROAD_GAUGE_RAILTYPE_25KV 		: ["BAAA", "ELRL", "RAIL"],
+	BROAD_GAUGE_RAILTYPE_15KV 		: ["BAAa", "BAAA", "ELRL", "RAIL"],
+	BROAD_GAUGE_RAILTYPE_3KV 		: ["BAAD", "ELRL", "RAIL"],
+	BROAD_GAUGE_RAILTYPE_1500V		: ["BAAd", "BAAD", "ELRL", "RAIL"],
+	BROAD_GAUGE_RAILTYPE_3RD 		: ["BAA3", "MTRO"],
+	BROAD_GAUGE_RAILTYPE_4TH 		: ["BAA4", "MTRO"],
+	BROAD_GAUGE_RAILTYPE_DUAL 		: ["BAAZ", "ELRL", "MTRO"],
+	BROAD_GAUGE_RAILTYPE_NONE 		: ["BAAN", "RAIL"],
 
-	// 3rd Rail	
-	BROAD_GAUGE_RAILTYPE_3RD 		: ["BAA3", "BBA3", "BCA3", "BY23", "BY33", "BY43", "BAAZ"],
-
-	// 4th Rail	
-	BROAD_GAUGE_RAILTYPE_4TH 		: ["BAA4", "BBA4", "BCA4"],
-
-	// Dual Pickup (both catenary and 3RDR)
-	BROAD_GAUGE_RAILTYPE_DUAL 		: ["BAAZ", "BBAZ", "BY2Z", "BY3Z", "BY4Z"],
-
-	// Non-Electrified
-	BROAD_GAUGE_RAILTYPE_NONE 		: ["RAIL", "BBAN", "BCAN", "BY2N", "BY3N", "BY4N"],
-
-
-
-	/// UNIVERSAL RAIL
-	// NE
-	UNIVERSAL_NONE					: ["NAAN", "SAAN", "BAAN", RAIL],
 
 // (Semi-original things)
 	RAIL,
@@ -106,7 +58,4 @@ railtypetable {
 	MONO,
 	MGLV: [MGLV, LCAI, LCAE],
 	MTRO: [SAB3, "3RDR", MTRO, MONO], // fall back to monorail if no Metro-tracks are available
-	NARR: [NAAN, RAIL],
-	ELNR: [NAAE, ELRL],
-
 }

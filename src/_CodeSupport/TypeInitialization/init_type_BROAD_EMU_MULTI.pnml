@@ -4,11 +4,11 @@
  *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
 */
 
-// This file is used to define EMU vehicle type information (OHLE Multi-Voltage)
+// This file is used to define EMU vehicle type information (25kV + 3kV DC)
 
 #include "undefine_type.pnml"
 
-#define CURRENT_TRACK_TYPE BROAD_GAUGE_RAILTYPE_MULTI
+#define CURRENT_TRACK_TYPE [BROAD_GAUGE_RAILTYPE_25KV, BROAD_GAUGE_RAILTYPE_3KV]
 #define CURRENT_RUNNING_COST_BASE RUNNING_COST_ELECTRIC
 #define CURRENT_ENGINE_CLASS ENGINE_CLASS_ELECTRIC
 
