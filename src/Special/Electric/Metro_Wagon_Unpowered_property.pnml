@@ -7,19 +7,19 @@
 
 #include "../undefine_properties.pnml"
 
-#define VEHIDCODE mu_unit_powered
-#define ITEM item_mu_unit_powered
-#define NAME string(str_mu_unit_powered)
+#define VEHIDCODE mtro_wagon_unpowered
+#define ITEM item_mtro_wagon_unpowered
+#define NAME string(str_mtro_wagon_unpowered)
 
 #define VEHICLE_REGION REGION(ALLREGION,NOREGION,NOCONCEPT)
 
-#define INTRODUCTION_YEAR 1908
+#define INTRODUCTION_YEAR 1900
 #define MODEL_LIFE VEHICLE_NEVER_EXPIRES
 #define RETIRE_EARLY DEFAULT_RETIRE_EARLY
 #define VEHICLE_LIFE 60
 
 #define LOADINGSPEED LOADINGSPEEDDEF_NONE
-#define CARGODEF CARGODEF_PASSENGERS
+#define CARGODEF CARGODEF_PASSENGERS_ONLY
 
 #define SPEED 0
 #define POWER 0

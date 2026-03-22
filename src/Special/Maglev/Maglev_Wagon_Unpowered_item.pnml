@@ -41,8 +41,8 @@ item(FEAT_TRAINS, ITEM ) {
 		bitmask_vehicle_info: BITMASK_VEHICLE_INFO;
 	}
 	graphics {
-		purchase: spriteset_electric_metro_unit_unpowered_purchase;
+		purchase: spriteset_mglv_wagon_unpowered_purchase;
 		PURCHASETEXTMUWAGONPASSENGERUNPOWERED
-		default: spriteset_electric_metro_unit_unpowered;
+		default: spriteset_mglv_wagon_unpowered;
 	}
 }

@@ -9,7 +9,7 @@
 * PURCHASE
 */
 
-spriteset(spriteset_mu_unit_unpowered_purchase, "gfx/Special/Multiple_Unit_Unpowered.png") {
+spriteset(spriteset_mtro_wagon_powered_purchase, "gfx/Special/Metro_Unit_Wagon_Powered.png") {
 	template_purchase_wagon_special(1, 1)
 }
 
@@ -17,7 +17,7 @@ spriteset(spriteset_mu_unit_unpowered_purchase, "gfx/Special/Multiple_Unit_Unpow
 * VEHICLE
 */
 
-spriteset(spriteset_mu_unit_unpowered, "gfx/Special/Multiple_Unit_Unpowered.png") {
+spriteset(spriteset_mtro_wagon_powered, "gfx/Special/Metro_Unit_Wagon_Powered.png") {
 	template_wagon_special(21, 1)
 }
 	

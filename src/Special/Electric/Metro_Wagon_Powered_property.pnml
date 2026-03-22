@@ -7,9 +7,9 @@
 
 #include "../undefine_properties.pnml"
 
-#define VEHIDCODE electric_metro_unit_unpowered
-#define ITEM item_electric_metro_unit_unpowered
-#define NAME string(str_electric_metro_unit_unpowered)
+#define VEHIDCODE mtro_wagon_powered
+#define ITEM item_mtro_wagon_powered
+#define NAME string(str_mtro_wagon_powered)
 
 #define VEHICLE_REGION REGION(ALLREGION,NOREGION,NOCONCEPT)
 

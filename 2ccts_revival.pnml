@@ -52,12 +52,12 @@
 //// ------------------------------------
 
 #include "src/_CodeSupport/TypeInitialization/init_type_STANDARD_Maglev_MU.pnml"
-#include "src/Special/Maglev/Maglev_Unit_Unpowered_property.pnml"
-#include "src/Special/Maglev/Maglev_Unit_Unpowered_graphics.pnml"
-#include "src/Special/Maglev/Maglev_Unit_Unpowered_item.pnml"
-#include "src/Special/Maglev/Maglev_Unit_Powered_property.pnml"
-#include "src/Special/Maglev/Maglev_Unit_Powered_graphics.pnml"
-#include "src/Special/Maglev/Maglev_Unit_Powered_item.pnml"
+#include "src/Special/Maglev/Maglev_Wagon_Powered_property.pnml"
+#include "src/Special/Maglev/Maglev_Wagon_Powered_graphics.pnml"
+#include "src/Special/Maglev/Maglev_Wagon_Powered_item.pnml"
+#include "src/Special/Maglev/Maglev_Wagon_Unpowered_property.pnml"
+#include "src/Special/Maglev/Maglev_Wagon_Unpowered_graphics.pnml"
+#include "src/Special/Maglev/Maglev_Wagon_Unpowered_item.pnml"
 
 // Railbus_steam (Standard)
 #include "src/_CodeSupport/TypeInitialization/init_type_STANDARD_RBS.pnml"
@@ -2211,12 +2211,12 @@
 //// ------------------------------------
 
 #include "src/_CodeSupport/TypeInitialization/init_type_UNIVERSAL_Electric_Metro.pnml"
-#include "src/Special/Electric/Electric_Metro_Unit_Unpowered_property.pnml"
-#include "src/Special/Electric/Electric_Metro_Unit_Unpowered_graphics.pnml"
-#include "src/Special/Electric/Electric_Metro_Unit_Unpowered_item.pnml"
-#include "src/Special/Electric/Electric_Metro_Unit_Powered_property.pnml"
-#include "src/Special/Electric/Electric_Metro_Unit_Powered_graphics.pnml"
-#include "src/Special/Electric/Electric_Metro_Unit_Powered_item.pnml"
+#include "src/Special/Electric/Metro_Wagon_Powered_property.pnml"
+#include "src/Special/Electric/Metro_Wagon_Powered_graphics.pnml"
+#include "src/Special/Electric/Metro_Wagon_Powered_item.pnml"
+#include "src/Special/Electric/Metro_Wagon_Unpowered_property.pnml"
+#include "src/Special/Electric/Metro_Wagon_Unpowered_graphics.pnml"
+#include "src/Special/Electric/Metro_Wagon_Unpowered_item.pnml"
 
 //// ------------------------------------
 //// UNIVERSAL (ANY GAUGE, NE)
@@ -2225,18 +2225,18 @@
 
 // Unit wagons (Universal)
 #include "src/_CodeSupport/TypeInitialization/init_type_UNIVERSAL_DMU.pnml"
-#include "src/Special/DMU/MU_Unit_Unpowered_property.pnml"
-#include "src/Special/DMU/MU_Unit_Unpowered_graphics.pnml"
-#include "src/Special/DMU/MU_Unit_Unpowered_item.pnml"
-#include "src/Special/DMU/MU_Unit_Powered_property.pnml"
-#include "src/Special/DMU/MU_Unit_Powered_graphics.pnml"
-#include "src/Special/DMU/MU_Unit_Powered_item.pnml"
-#include "src/Special/DMU/MU_Cargo_Wagon_Unpowered_property.pnml"
-#include "src/Special/DMU/MU_Cargo_Wagon_Unpowered_graphics.pnml"
-#include "src/Special/DMU/MU_Cargo_Wagon_Unpowered_item.pnml"
 #include "src/Special/DMU/MU_Cargo_Wagon_Powered_property.pnml"
 #include "src/Special/DMU/MU_Cargo_Wagon_Powered_graphics.pnml"
 #include "src/Special/DMU/MU_Cargo_Wagon_Powered_item.pnml"
+#include "src/Special/DMU/MU_Cargo_Wagon_Unpowered_property.pnml"
+#include "src/Special/DMU/MU_Cargo_Wagon_Unpowered_graphics.pnml"
+#include "src/Special/DMU/MU_Cargo_Wagon_Unpowered_item.pnml"
+#include "src/Special/DMU/MU_Wagon_Powered_property.pnml"
+#include "src/Special/DMU/MU_Wagon_Powered_graphics.pnml"
+#include "src/Special/DMU/MU_Wagon_Powered_item.pnml"
+#include "src/Special/DMU/MU_Wagon_Unpowered_property.pnml"
+#include "src/Special/DMU/MU_Wagon_Unpowered_graphics.pnml"
+#include "src/Special/DMU/MU_Wagon_Unpowered_item.pnml"
 
 // Wagons (normal) (Universal)
 #include "src/_CodeSupport/TypeInitialization/init_type_UNIVERSAL_Wagon.pnml"

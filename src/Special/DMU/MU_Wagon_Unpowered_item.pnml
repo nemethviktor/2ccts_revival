@@ -14,7 +14,7 @@ item(FEAT_TRAINS, ITEM ) {
 		vehicle_life: VEHICLE_LIFE; 
 		retire_early: RETIRE_EARLY;
 		LOADINGSPEEDPROPERTY
-		PURCHASECOSTMUPOWERED
+		PURCHASECOSTMUUNPOWERED
 		RUNNINGCOSTMU
 		speed: SPEED km/h;
 		power: POWER hp;
@@ -41,8 +41,8 @@ item(FEAT_TRAINS, ITEM ) {
 		bitmask_vehicle_info: BITMASK_VEHICLE_INFO;
 	}
 	graphics {
-		purchase: spriteset_mu_unit_powered_purchase;
-		PURCHASETEXTMUWAGONPASSENGERPOWERED
-		default: spriteset_mu_unit_powered;
+		purchase: spriteset_mu_wagon_unpowered_purchase;
+		PURCHASETEXTMUWAGONPASSENGERUNPOWERED
+		default: spriteset_mu_wagon_unpowered;
 	}
 }
