@@ -1,5 +1,14 @@
 ### 2cc TrainsInNML (Revival) changelog
 
+**3.3-alpha1 [20260322]**
+- CODE CHANGES:
+	- Added a py script to export all vehicle info on `make` running.
+	- Separated out the various railtypes and voltages. This is very "beta" at the moment.
+	- Did some superficial testing against popular tracktype newgrfs, again, needs testing
+- VEHICLES CHANGES:
+	- Reiterating from above, separated out the various railtypes and voltages.
+
+
 **3.3-alpha0 [20260316]**
 - CODE CHANGES:
 	- Cloned to new GitHub location

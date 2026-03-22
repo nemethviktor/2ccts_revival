@@ -2,6 +2,7 @@
 
 This project aims to capitalise on the work of Transportman, EmperorJake, VoyagerOne and the others mentioned further down in the original readme and better document, as well as extend the last "official" release, which was around 2020.
 That said, I've not worked on NML files before and my gfx skills are zero so if people will desire extra amendments that involve say new params or new graphics, they'll need to help out with them.
+In version `3.3-alpha1` (code only, unrelease for now but you can build if interested) I've added support for various track types and voltages. Need thorough testing though.
 
 
 ## Availability

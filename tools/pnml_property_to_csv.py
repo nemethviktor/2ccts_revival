@@ -26,6 +26,7 @@ REPLACEMENT_MAP = {
 }
 
 def extract_with_context():
+    print("--- Vehicle Extraction Start ---")
     # Setup paths relative to root/tools/script.py
     script_dir = os.path.dirname(os.path.abspath(__file__))
     project_root = os.path.dirname(script_dir) 

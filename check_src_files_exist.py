@@ -2,7 +2,7 @@ import os
 import re
 
 def check_pnml_includes(file_path):
-    "clear||cls"
+    print("--- PNML Include Check Start ---")
     # Set the base directory to the 'src' folder relative to this script
     base_dir = os.path.join(os.path.dirname(__file__), 'src')
     
@@ -36,7 +36,7 @@ def check_pnml_includes(file_path):
                     missing_files.append((line_num, relative_path))
 
     # Output results
-    print(f"--- PNML Include Check ---")
+    print(f"--- PNML Include Check --- Done")
     print(f"Total #include lines found: {total_includes}")
     
     if missing_files:
