@@ -35,3 +35,4 @@ Makefile.dep
 
 2ccts_revival*.tar
 /2ccts_revival*
+*.gsheet
