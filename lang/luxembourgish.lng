@@ -4,7 +4,7 @@
 #Main grf title and description
 STR_GRF_NAME                    :{TITLE}
 STR_GRF_DESCRIPTION             :{SILVER}2cc Zich aus aller Welt am NML codéiert{}{}(c)2ccts{}Lizenz:GPLv2 oder méi héich.{}Lies d'Readme fir méi Detailer.
-STR_GRF_URL             :https://dev.openttdcoop.org/projects/2ccts
+STR_GRF_URL             :https://github.com/nemethviktor/2ccts_revival
 
 #General error messages
 str_used_with_dynamic_engines           :dynamic_engines = true (Astellung an der openttd.cfg)

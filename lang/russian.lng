@@ -6,7 +6,7 @@
 #Main grf title and description
 STR_GRF_NAME                    :{TITLE}
 STR_GRF_DESCRIPTION             :{SILVER}2cc Поезда Мира в NML{}{}(c)2ccts{}Лицензия:GPLv2 или выше.{}Смотрите readme с описанием детальной работы данного NewGRF.
-STR_GRF_URL             :https://dev.openttdcoop.org/projects/2ccts
+STR_GRF_URL             :https://github.com/nemethviktor/2ccts_revival
 
 #General error messages
 str_used_with_dynamic_engines           :dynamic_engines = true (настройка в openttd.cfg)

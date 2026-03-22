@@ -4,7 +4,7 @@
 #Main grf title and description
 STR_GRF_NAME                    :{TITLE}
 STR_GRF_DESCRIPTION             :{SILVER}2cc世界列车扩展包(NML版){}{}(c)2ccts{}License:GPLv2 or higher.{}参见readme获取更多信息.
-STR_GRF_URL             :https://dev.openttdcoop.org/projects/2ccts
+STR_GRF_URL             :https://github.com/nemethviktor/2ccts_revival
 
 #General error messages
 str_used_with_dynamic_engines           :dynamic_engines = true (在openttd.cfg内设置)

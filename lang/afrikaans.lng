@@ -5,7 +5,7 @@
 #Main grf title and description
 STR_GRF_NAME                    :{TITLE}
 STR_GRF_DESCRIPTION             :{SILVER}2cc Treine van die Wêreld in NML{}{}(c)2ccts{}Lisensie:GPLv2 of hoër.{}Sien readme vir meer inligting.
-STR_GRF_URL             :https://dev.openttdcoop.org/projects/2ccts
+STR_GRF_URL             :https://github.com/nemethviktor/2ccts_revival
 
 #General error messages
 str_used_with_dynamic_engines           :dynamic_engines = waar (stelling in openttd.cfg)
