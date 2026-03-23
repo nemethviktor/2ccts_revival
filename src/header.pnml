@@ -11,7 +11,7 @@ grf {
 	name:	string(STR_GRF_NAME);
 	desc:	string(STR_GRF_DESCRIPTION);
     url:    string(STR_GRF_URL);
-	version:		9577;
+	version:		9578;
 	min_compatible_version:	6630;
     param {
         param_purchase_cost {
@@ -74,16 +74,16 @@ grf {
 	param {
 		NORTH_AMERICA {
 			type:	bool;
-			name:	string(STR_PARAM_REGION_NORTHAMERICA);
-			desc:	string(STR_PARAM_REGION_NORTHAMERICA_DESC);
+			name:	string(STR_PARAM_REGION_NORTH_AMERICA);
+			desc:	string(STR_PARAM_REGION_NORTH_AMERICA_DESC);
 			def_value: 1;
 		}
 	}
 	param {
 		SOUTH_AMERICA {
 			type:	bool;
-			name:	string(STR_PARAM_REGION_SOUTHAMERICA);
-			desc:	string(STR_PARAM_REGION_SOUTHAMERICA_DESC);
+			name:	string(STR_PARAM_REGION_SOUTH_AMERICA);
+			desc:	string(STR_PARAM_REGION_SOUTH_AMERICA_DESC);
 			def_value: 1;
 		}
 	}	
@@ -98,32 +98,32 @@ grf {
 	param {
 		NORTHERN_EUROPE {
 			type:	bool;
-			name:	string(STR_PARAM_REGION_NORTHERNEUROPE);
-			desc:	string(STR_PARAM_REGION_NORTHERNEUROPE_DESC);
+			name:	string(STR_PARAM_REGION_NORTHERN_EUROPE);
+			desc:	string(STR_PARAM_REGION_NORTHERN_EUROPE_DESC);
 			def_value: 1;
 		}
 	}
 	param {
 		EASTERN_EUROPE {
 			type:	bool;
-			name:	string(STR_PARAM_REGION_EASTERNEUROPE);
-			desc:	string(STR_PARAM_REGION_EASTERNEUROPE_DESC);
+			name:	string(STR_PARAM_REGION_EASTERN_EUROPE);
+			desc:	string(STR_PARAM_REGION_EASTERN_EUROPE_DESC);
 			def_value: 1;
 		}
 	}	
 	param {
 		SOUTHERN_EUROPE {
 			type:	bool;
-			name:	string(STR_PARAM_REGION_SOUTHERNEUROPE);
-			desc:	string(STR_PARAM_REGION_SOUTHERNEUROPE_DESC);
+			name:	string(STR_PARAM_REGION_SOUTHERN_EUROPE);
+			desc:	string(STR_PARAM_REGION_SOUTHERN_EUROPE_DESC);
 			def_value: 1;
 		}
 	}
 	param {
 		WESTERN_EUROPE {
 			type:	bool;
-			name:	string(STR_PARAM_REGION_WESTERNEUROPE);
-			desc:	string(STR_PARAM_REGION_WESTERNEUROPE_DESC);
+			name:	string(STR_PARAM_REGION_WESTERN_EUROPE);
+			desc:	string(STR_PARAM_REGION_WESTERN_EUROPE_DESC);
 			def_value: 1;
 		}
 	}

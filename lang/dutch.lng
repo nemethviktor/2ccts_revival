@@ -31,20 +31,20 @@ STR_PARAM_CONCEPT                                               :Conceptvoertuig
 STR_PARAM_CONCEPT_DESC                                  :Gebruik conceptvoertuigen (deze parameter heeft op dit moment geen functie)
 STR_PARAM_REGION_AFRICA                                 :Afrika
 STR_PARAM_REGION_AFRICA_DESC                    :Gebruik voertuigen uit Afrika
-STR_PARAM_REGION_NORTHAMERICA                   :Noord-Amerika
-STR_PARAM_REGION_NORTHAMERICA_DESC              :Gebruik voertuigen uit Noord-Amerika
-STR_PARAM_REGION_SOUTHAMERICA                   :Zuid-Amerika
-STR_PARAM_REGION_SOUTHAMERICA_DESC              :Gebruik voertuigen uit Zuid-Amerika
+STR_PARAM_REGION_NORTH_AMERICA                   :Noord-Amerika
+STR_PARAM_REGION_NORTH_AMERICA_DESC              :Gebruik voertuigen uit Noord-Amerika
+STR_PARAM_REGION_SOUTH_AMERICA                   :Zuid-Amerika
+STR_PARAM_REGION_SOUTH_AMERICA_DESC              :Gebruik voertuigen uit Zuid-Amerika
 STR_PARAM_REGION_ASIA                                   :Azië
 STR_PARAM_REGION_ASIA_DESC                              :Gebruik voertuigen uit Azië
-STR_PARAM_REGION_NORTHERNEUROPE                 :Noord-Europa
-STR_PARAM_REGION_NORTHERNEUROPE_DESC    :Gebruik voertuigen uit Noord-Europa
-STR_PARAM_REGION_EASTERNEUROPE                  :Oost-Europa
-STR_PARAM_REGION_EASTERNEUROPE_DESC             :Gebruik voertuigen uit Oost-Europa
-STR_PARAM_REGION_SOUTHERNEUROPE                 :Zuid-Europa
-STR_PARAM_REGION_SOUTHERNEUROPE_DESC    :Gebruik voertuigen uit Zuid-Europa
-STR_PARAM_REGION_WESTERNEUROPE                  :West-Europa
-STR_PARAM_REGION_WESTERNEUROPE_DESC             :Gebruik voertuigen uit West-Europa
+STR_PARAM_REGION_NORTHERN_EUROPE                 :Noord-Europa
+STR_PARAM_REGION_NORTHERN_EUROPE_DESC    :Gebruik voertuigen uit Noord-Europa
+STR_PARAM_REGION_EASTERN_EUROPE                  :Oost-Europa
+STR_PARAM_REGION_EASTERN_EUROPE_DESC             :Gebruik voertuigen uit Oost-Europa
+STR_PARAM_REGION_SOUTHERN_EUROPE                 :Zuid-Europa
+STR_PARAM_REGION_SOUTHERN_EUROPE_DESC    :Gebruik voertuigen uit Zuid-Europa
+STR_PARAM_REGION_WESTERN_EUROPE                  :West-Europa
+STR_PARAM_REGION_WESTERN_EUROPE_DESC             :Gebruik voertuigen uit West-Europa
 STR_PARAM_REGION_OCEANIA                                :Oceanië
 STR_PARAM_REGION_OCEANIA_DESC                   :Gebruik voertuigen uit Oceanië
 
@@ -483,38 +483,38 @@ str_mglv_China_Transrapid       :Shanghai Transrapid (Maglev)
 str_mglv_Japan_MLX01_901        :JR MLX01-901 (Maglev)
 
 #wagons
-str_wagon_Gen1_Open_Wagon                               :1ste Generatie Houten Open Wagen
-str_wagon_Gen4_Flatcar                                  :4de Generatie Kuilwagen
-str_wagon_Gen4_Silo_Type2                               :4de Generatie Silowagen (Type 2)
-str_wagon_Gen4_Car_Transporter                  :4de Generatie Autotreinwagen
-str_wagon_Gen5_Heavy_Flatcar                    :5de Generatie Kuilwagen
-str_wagon_Gen5_Hopper_Type2                             :5de Generatie Onderlosser (Type 2)
+str_mu_Wagon_Gen1_Open_Wagon                               :1ste Generatie Houten Open Wagen
+str_mu_Wagon_Gen4_Flatcar                                  :4de Generatie Kuilwagen
+str_mu_Wagon_Gen4_Silo_Type2                               :4de Generatie Silowagen (Type 2)
+str_mu_Wagon_Gen4_Car_Transporter                  :4de Generatie Autotreinwagen
+str_mu_Wagon_Gen5_Heavy_Flatcar                    :5de Generatie Kuilwagen
+str_mu_Wagon_Gen5_Hopper_Type2                             :5de Generatie Onderlosser (Type 2)
 
 
 #coaches
-str_coach_Gen1_Wooden_2_axle_Compartment_Coach                  :Houten 2-asser Coupérijtuig
-str_coach_Gen1_Wooden_2_axle_Regional_Coach                     :Houten 2-asser Regionaal Rijtuig
-str_coach_Gen1_Wooden_2_axle_Mail_Coach                                 :Houten 2-asser Postwagen
-str_coach_Gen1_Clerestory_Compartment_Coach                     :Coupérijtuig met Bovenramen
-str_coach_Gen1_Clerestory_Mail_Coach                                    :Postwagen met Bovenramen
-str_coach_Gen1_Wooden_3_axle_Compartment_Coach                  :Houten 3-asser Coupérijtuig
-str_coach_Gen2_Steel_Intercity_Coach                                    :Stalen Intercityrijtuig
-str_coach_Gen2_Steel_Regional_Coach                                     :Stalen Regionaal Rijtuig
-str_coach_Gen2_Steel_Mail_Coach                                                 :Stalen Postwagen
-str_coach_Gen2_Steel_2_axle_Regional_Coach                              :Stalen 2-asser Regionaal Rijtuig
-str_coach_Gen2_Steel_2_axle_Mail_Coach                                  :Stalen 2-asser Postrijtuig
-str_coach_Gen3_Steel_Lightweight_Intercity_Coach                :Lichtgewicht Stalen Intercityrijtuig
-str_coach_Gen3_Steel_Lightweight_Mail_Coach                     :Lichtgewicht Stalen Postwagen
-str_coach_Gen3_Aluminium_Lightweight_Mail_Coach                 :Lichtgewicht Aluminium Postwagen
-str_coach_Gen3_UIC_X_Regional_Coach                                     :UIC-X Regionaal Rijtuig
-str_coach_Gen3_Indian_Intercity_Coach                                   :Indiaas Intercityrijtuig
-str_coach_Gen3_Indian_Local_Coach                                               :Indiaas Stoptreinrijtuig
-str_coach_Gen4_InterRegio_Coach                                                 :InterRegio Rijtuig
-str_coach_Gen4_Double_Decker_Coach                                              :Dubbeldekkerrijtuig
-str_coach_Gen4_Superliner_California                                    :Superliner California
-str_coach_Gen4_Horizon_Baggage_Coach                                    :Horizon Bagagewagen
-str_coach_Gen4_Bombardier_Bi_level                                              :Bombardier Dubbeldekker
-str_coach_Gen5_High_Speed_Double_Decker_IC2000                  :Hogesnelheid Dubbeldekker (IC2000)
+str_mu_Coach_Gen1_Wooden_2_axle_Compartment_Coach                  :Houten 2-asser Coupérijtuig
+str_mu_Coach_Gen1_Wooden_2_axle_Regional_Coach                     :Houten 2-asser Regionaal Rijtuig
+str_mu_Coach_Gen1_Wooden_2_axle_Mail_Coach                                 :Houten 2-asser Postwagen
+str_mu_Coach_Gen1_Clerestory_Compartment_Coach                     :Coupérijtuig met Bovenramen
+str_mu_Coach_Gen1_Clerestory_Mail_Coach                                    :Postwagen met Bovenramen
+str_mu_Coach_Gen1_Wooden_3_axle_Compartment_Coach                  :Houten 3-asser Coupérijtuig
+str_mu_Coach_Gen2_Steel_Intercity_Coach                                    :Stalen Intercityrijtuig
+str_mu_Coach_Gen2_Steel_Regional_Coach                                     :Stalen Regionaal Rijtuig
+str_mu_Coach_Gen2_Steel_Mail_Coach                                                 :Stalen Postwagen
+str_mu_Coach_Gen2_Steel_2_axle_Regional_Coach                              :Stalen 2-asser Regionaal Rijtuig
+str_mu_Coach_Gen2_Steel_2_axle_Mail_Coach                                  :Stalen 2-asser Postrijtuig
+str_mu_Coach_Gen3_Steel_Lightweight_Intercity_Coach                :Lichtgewicht Stalen Intercityrijtuig
+str_mu_Coach_Gen3_Steel_Lightweight_Mail_Coach                     :Lichtgewicht Stalen Postwagen
+str_mu_Coach_Gen3_Aluminium_Lightweight_Mail_Coach                 :Lichtgewicht Aluminium Postwagen
+str_mu_Coach_Gen3_UIC_X_Regional_Coach                                     :UIC-X Regionaal Rijtuig
+str_mu_Coach_Gen3_Indian_Intercity_Coach                                   :Indiaas Intercityrijtuig
+str_mu_Coach_Gen3_Indian_Local_Coach                                               :Indiaas Stoptreinrijtuig
+str_mu_Coach_Gen4_InterRegio_Coach                                                 :InterRegio Rijtuig
+str_mu_Coach_Gen4_Double_Decker_Coach                                              :Dubbeldekkerrijtuig
+str_mu_Coach_Gen4_Superliner_California                                    :Superliner California
+str_mu_Coach_Gen4_Horizon_Baggage_Coach                                    :Horizon Bagagewagen
+str_mu_Coach_Gen4_Bombardier_Bi_level                                              :Bombardier Dubbeldekker
+str_mu_Coach_Gen5_High_Speed_Double_Decker_IC2000                  :Hogesnelheid Dubbeldekker (IC2000)
 
 #special wagons
 

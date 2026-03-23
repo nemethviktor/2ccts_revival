@@ -668,170 +668,170 @@ item_mglv_China_Transrapid, /*Year: 2004*/ \
 item_mglv_Japan_MLX01_901, /*Year: 2025*/
 
 #define SORTING_COACHES \
-item_coach_Gen1_Wooden_2_axle_Compartment_Coach, /*Year: 1650*/ \
-item_coach_Gen1_Wooden_2_axle_Regional_Coach, /*Year: 1650*/ \
-item_coach_Gen1_Wooden_2_axle_Mail_Coach, /*Year: 1650*/ \
-item_coach_Gen1_Clerestory_Compartment_Coach, /*Year: 1840*/ \
-item_coach_Gen1_Clerestory_Regional_Coach, /*Year: 1840*/ \
-item_coach_Gen1_Clerestory_Mail_Coach, /*Year: 1840*/ \
-item_coach_Gen1_Wooden_3_axle_Compartment_Coach, /*Year: 1850*/ \
-item_coach_Gen1_Wooden_3_axle_Regional_Coach, /*Year: 1850*/ \
-item_coach_Gen1_Wooden_3_axle_Mail_Coach, /*Year: 1850*/ \
-item_coach_Gen2_Heavyweight_Intercity_Coach, /*Year: 1900*/ \
-item_coach_Gen2_Heavyweight_Mail_Coach, /*Year: 1900*/ \
-item_coach_Gen2_Steel_Intercity_Coach, /*Year: 1910*/ \
-item_coach_Gen2_Steel_Compartment_Coach, /*Year: 1910*/ \
-item_coach_Gen2_Steel_Regional_Coach, /*Year: 1910*/ \
-item_coach_Gen2_Steel_Mail_Coach, /*Year: 1910*/ \
-item_coach_Gen2_Steel_2_axle_Compartment_Coach, /*Year: 1920*/ \
-item_coach_Gen2_Steel_2_axle_Regional_Coach, /*Year: 1920*/ \
-item_coach_Gen2_Steel_2_axle_Mail_Coach, /*Year: 1920*/ \
-item_coach_Gen2_Steel_3_axle_Compartment_Coach, /*Year: 1920*/ \
-item_coach_Gen2_Steel_3_axle_Regional_Coach, /*Year: 1920*/ \
-item_coach_Gen2_Steel_3_axle_Mail_Coach, /*Year: 1920*/ \
-item_coach_Gen3_Steel_Lightweight_Intercity_Coach, /*Year: 1930*/ \
-item_coach_Gen3_Steel_Lightweight_Regional_Coach, /*Year: 1930*/ \
-item_coach_Gen3_Steel_Lightweight_Mail_Coach, /*Year: 1930*/ \
-item_coach_Gen3_Aluminium_Lightweight_Intercity_Coach, /*Year: 1940*/ \
-item_coach_Gen3_Aluminium_Lightweight_Regional_Coach, /*Year: 1940*/ \
-item_coach_Gen3_Aluminium_Lightweight_Mail_Coach, /*Year: 1940*/ \
-item_coach_Gen3_Gallery_Car, /*Year: 1950*/ \
-item_coach_Gen3_Mk1_Intercity_Coach, /*Year: 1950*/ \
-item_coach_Gen3_Mk1_Regional_Coach, /*Year: 1950*/ \
-item_coach_Gen3_Mk1_Mail_Coach, /*Year: 1950*/ \
-item_coach_Gen3_UIC_X_Intercity_Coach, /*Year: 1950*/ \
-item_coach_Gen3_TEE_Intercity_Coach, /*Year: 1950*/ \
-item_coach_Gen3_UIC_X_Regional_Coach, /*Year: 1950*/ \
-item_coach_Gen3_Umbauwagen_Local_Coach, /*Year: 1950*/ \
-item_coach_Gen3_Doppelstockwagen_Local_Coach, /*Year: 1950*/ \
-item_coach_Gen3_UIC_X_Mail_Coach, /*Year: 1950*/ \
-item_coach_Gen3_Indian_Intercity_Coach, /*Year: 1950*/ \
-item_coach_Gen3_Indian_Local_Coach, /*Year: 1950*/ \
-item_coach_Gen3_Indian_Regional_Coach, /*Year: 1950*/ \
-item_coach_Gen3_Indian_Mail_Coach, /*Year: 1950*/ \
-item_coach_Gen4_Eurofima_Intercity_Coach, /*Year: 1970*/ \
-item_coach_Gen4_InterRegio_Coach, /*Year: 1970*/ \
-item_coach_Gen4_Silberling_Commuter_Coach, /*Year: 1960*/ \
-item_coach_Gen4_Eurofima_Mail_Coach, /*Year: 1970*/ \
-item_coach_Gen4_Double_Decker_Coach, /*Year: 1970*/ \
-item_coach_Gen4_Russian_Intercity_Coach, /*Year: 1960*/ \
-item_coach_Gen4_Russian_Regional_Coach, /*Year: 1960*/ \
-item_coach_Gen4_Russian_Mail_Coach, /*Year: 1960*/ \
-item_coach_Gen4_Superliner_Coach, /*Year: 1980*/ \
-item_coach_Gen4_Superliner_California, /*Year: 1980*/ \
-item_coach_Gen4_Amfleet_Regional_Coach, /*Year: 1970*/ \
-item_coach_Gen4_Amfleet_Intercity_Coach, /*Year: 1970*/ \
-item_coach_Gen4_Comet_Commuter_Coach, /*Year: 1970*/ \
-item_coach_Gen4_Horizon_Regional_Coach, /*Year: 1970*/ \
-item_coach_Gen4_Horizon_Baggage_Coach, /*Year: 1970*/ \
-item_coach_Gen4_Bombardier_Bi_level, /*Year: 1970*/ \
-item_coach_Gen5_High_Speed_Coach, /*Year: 2000*/ \
-item_coach_Gen5_Modern_Regional_Coach, /*Year: 2000*/ \
-item_coach_Gen5_Modern_Commuter_Coach, /*Year: 2000*/ \
-item_coach_Gen5_Modern_Double_Decker_Coach, /*Year: 2000*/ \
-item_coach_Gen5_High_Speed_Double_Decker_IC2000, /*Year: 2000*/ \
-item_coach_Gen5_High_Speed_Mail_Coach, /*Year: 2000*/ \
-item_coach_Gen5_Talgo_Pendular, /*Year: 1980*/ \
-item_coach_Gen5_Talgo_Pendular_Mail, /*Year: 1980*/ \
-item_coach_Gen6_Grand_Voyager_Coach, /*Year: 2030*/ \
-item_coach_Gen6_Grand_Regio_Coach, /*Year: 2030*/ \
-item_coach_Gen6_Metropolis_Coach, /*Year: 2030*/ \
-item_coach_Gen6_Speedmail_Coach, /*Year: 2030*/ \
-item_coach_Gen6_Super_Regio_Coach, /*Year: 2030*/ \
-item_coach_Gen6_Super_Voyager_Coach, /*Year: 2030*/
+item_mu_Coach_Gen1_Wooden_2_axle_Compartment_Coach, /*Year: 1650*/ \
+item_mu_Coach_Gen1_Wooden_2_axle_Regional_Coach, /*Year: 1650*/ \
+item_mu_Coach_Gen1_Wooden_2_axle_Mail_Coach, /*Year: 1650*/ \
+item_mu_Coach_Gen1_Clerestory_Compartment_Coach, /*Year: 1840*/ \
+item_mu_Coach_Gen1_Clerestory_Regional_Coach, /*Year: 1840*/ \
+item_mu_Coach_Gen1_Clerestory_Mail_Coach, /*Year: 1840*/ \
+item_mu_Coach_Gen1_Wooden_3_axle_Compartment_Coach, /*Year: 1850*/ \
+item_mu_Coach_Gen1_Wooden_3_axle_Regional_Coach, /*Year: 1850*/ \
+item_mu_Coach_Gen1_Wooden_3_axle_Mail_Coach, /*Year: 1850*/ \
+item_mu_Coach_Gen2_Heavyweight_Intercity_Coach, /*Year: 1900*/ \
+item_mu_Coach_Gen2_Heavyweight_Mail_Coach, /*Year: 1900*/ \
+item_mu_Coach_Gen2_Steel_Intercity_Coach, /*Year: 1910*/ \
+item_mu_Coach_Gen2_Steel_Compartment_Coach, /*Year: 1910*/ \
+item_mu_Coach_Gen2_Steel_Regional_Coach, /*Year: 1910*/ \
+item_mu_Coach_Gen2_Steel_Mail_Coach, /*Year: 1910*/ \
+item_mu_Coach_Gen2_Steel_2_axle_Compartment_Coach, /*Year: 1920*/ \
+item_mu_Coach_Gen2_Steel_2_axle_Regional_Coach, /*Year: 1920*/ \
+item_mu_Coach_Gen2_Steel_2_axle_Mail_Coach, /*Year: 1920*/ \
+item_mu_Coach_Gen2_Steel_3_axle_Compartment_Coach, /*Year: 1920*/ \
+item_mu_Coach_Gen2_Steel_3_axle_Regional_Coach, /*Year: 1920*/ \
+item_mu_Coach_Gen2_Steel_3_axle_Mail_Coach, /*Year: 1920*/ \
+item_mu_Coach_Gen3_Steel_Lightweight_Intercity_Coach, /*Year: 1930*/ \
+item_mu_Coach_Gen3_Steel_Lightweight_Regional_Coach, /*Year: 1930*/ \
+item_mu_Coach_Gen3_Steel_Lightweight_Mail_Coach, /*Year: 1930*/ \
+item_mu_Coach_Gen3_Aluminium_Lightweight_Intercity_Coach, /*Year: 1940*/ \
+item_mu_Coach_Gen3_Aluminium_Lightweight_Regional_Coach, /*Year: 1940*/ \
+item_mu_Coach_Gen3_Aluminium_Lightweight_Mail_Coach, /*Year: 1940*/ \
+item_mu_Coach_Gen3_Gallery_Car, /*Year: 1950*/ \
+item_mu_Coach_Gen3_Mk1_Intercity_Coach, /*Year: 1950*/ \
+item_mu_Coach_Gen3_Mk1_Regional_Coach, /*Year: 1950*/ \
+item_mu_Coach_Gen3_Mk1_Mail_Coach, /*Year: 1950*/ \
+item_mu_Coach_Gen3_UIC_X_Intercity_Coach, /*Year: 1950*/ \
+item_mu_Coach_Gen3_TEE_Intercity_Coach, /*Year: 1950*/ \
+item_mu_Coach_Gen3_UIC_X_Regional_Coach, /*Year: 1950*/ \
+item_mu_Coach_Gen3_Umbauwagen_Local_Coach, /*Year: 1950*/ \
+item_mu_Coach_Gen3_Doppelstockwagen_Local_Coach, /*Year: 1950*/ \
+item_mu_Coach_Gen3_UIC_X_Mail_Coach, /*Year: 1950*/ \
+item_mu_Coach_Gen3_Indian_Intercity_Coach, /*Year: 1950*/ \
+item_mu_Coach_Gen3_Indian_Local_Coach, /*Year: 1950*/ \
+item_mu_Coach_Gen3_Indian_Regional_Coach, /*Year: 1950*/ \
+item_mu_Coach_Gen3_Indian_Mail_Coach, /*Year: 1950*/ \
+item_mu_Coach_Gen4_Eurofima_Intercity_Coach, /*Year: 1970*/ \
+item_mu_Coach_Gen4_InterRegio_Coach, /*Year: 1970*/ \
+item_mu_Coach_Gen4_Silberling_Commuter_Coach, /*Year: 1960*/ \
+item_mu_Coach_Gen4_Eurofima_Mail_Coach, /*Year: 1970*/ \
+item_mu_Coach_Gen4_Double_Decker_Coach, /*Year: 1970*/ \
+item_mu_Coach_Gen4_Russian_Intercity_Coach, /*Year: 1960*/ \
+item_mu_Coach_Gen4_Russian_Regional_Coach, /*Year: 1960*/ \
+item_mu_Coach_Gen4_Russian_Mail_Coach, /*Year: 1960*/ \
+item_mu_Coach_Gen4_Superliner_Coach, /*Year: 1980*/ \
+item_mu_Coach_Gen4_Superliner_California, /*Year: 1980*/ \
+item_mu_Coach_Gen4_Amfleet_Regional_Coach, /*Year: 1970*/ \
+item_mu_Coach_Gen4_Amfleet_Intercity_Coach, /*Year: 1970*/ \
+item_mu_Coach_Gen4_Comet_Commuter_Coach, /*Year: 1970*/ \
+item_mu_Coach_Gen4_Horizon_Regional_Coach, /*Year: 1970*/ \
+item_mu_Coach_Gen4_Horizon_Baggage_Coach, /*Year: 1970*/ \
+item_mu_Coach_Gen4_Bombardier_Bi_level, /*Year: 1970*/ \
+item_mu_Coach_Gen5_High_Speed_Coach, /*Year: 2000*/ \
+item_mu_Coach_Gen5_Modern_Regional_Coach, /*Year: 2000*/ \
+item_mu_Coach_Gen5_Modern_Commuter_Coach, /*Year: 2000*/ \
+item_mu_Coach_Gen5_Modern_Double_Decker_Coach, /*Year: 2000*/ \
+item_mu_Coach_Gen5_High_Speed_Double_Decker_IC2000, /*Year: 2000*/ \
+item_mu_Coach_Gen5_High_Speed_Mail_Coach, /*Year: 2000*/ \
+item_mu_Coach_Gen5_Talgo_Pendular, /*Year: 1980*/ \
+item_mu_Coach_Gen5_Talgo_Pendular_Mail, /*Year: 1980*/ \
+item_mu_Coach_Gen6_Grand_Voyager_Coach, /*Year: 2030*/ \
+item_mu_Coach_Gen6_Grand_Regio_Coach, /*Year: 2030*/ \
+item_mu_Coach_Gen6_Metropolis_Coach, /*Year: 2030*/ \
+item_mu_Coach_Gen6_Speedmail_Coach, /*Year: 2030*/ \
+item_mu_Coach_Gen6_Super_Regio_Coach, /*Year: 2030*/ \
+item_mu_Coach_Gen6_Super_Voyager_Coach, /*Year: 2030*/
 
 #define SORTING_WAGONS \
-item_wagon_Gen1_Flat_Wagon, /*Year: 1660*/ \
-item_wagon_Gen1_Boxcar, /*Year: 1660*/ \
-item_wagon_Gen1_Tanker, /*Year: 1660*/ \
-item_wagon_Gen1_Open_Wagon, /*Year: 1660*/ \
-item_wagon_Gen2_Flat_Wagon, /*Year: 1900*/ \
-item_wagon_Gen2_Boxcar_Type1, /*Year: 1890*/ \
-item_wagon_Gen2_Boxcar_Type2, /*Year: 1890*/ \
-item_wagon_Gen2_Tanker, /*Year: 1900*/ \
-item_wagon_Gen2_Open_Wagon, /*Year: 1890*/ \
-item_wagon_Gen2_Silo, /*Year: 1900*/ \
-item_wagon_Gen2_Hopper, /*Year: 1890*/ \
-item_wagon_Gen3_Flat_Wagon, /*Year: 1930*/ \
-item_wagon_Gen3_Boxcar_Type1, /*Year: 1920*/ \
-item_wagon_Gen3_Boxcar_Type2, /*Year: 1920*/ \
-item_wagon_Gen3_Tanker, /*Year: 1930*/ \
-item_wagon_Gen3_Open_Wagon, /*Year: 1920*/ \
-item_wagon_Gen3_Silo_Type1, /*Year: 1930*/ \
-item_wagon_Gen3_Silo_Type2, /*Year: 1930*/ \
-item_wagon_Gen3_Hopper, /*Year: 1920*/ \
-item_wagon_Gen4_Flatcar, /*Year: 1960*/ \
-item_wagon_Gen4_Heavy_Flatcar, /*Year: 1960*/ \
-item_wagon_Gen4_Boxcar_Type1, /*Year: 1950*/ \
-item_wagon_Gen4_Boxcar_Type2, /*Year: 1950*/ \
-item_wagon_Gen4_Tanker, /*Year: 1950*/ \
-item_wagon_Gen4_Gondola, /*Year: 1950*/ \
-item_wagon_Gen4_Silo_Type1, /*Year: 1950*/ \
-item_wagon_Gen4_Silo_Type2, /*Year: 1950*/ \
-item_wagon_Gen4_Hopper_Type1, /*Year: 1960*/ \
-item_wagon_Gen4_Hopper_Type2, /*Year: 1960*/ \
-item_wagon_Gen4_Car_Transporter, /*Year: 1960*/ \
-item_wagon_Gen4_Container_Carrier, /*Year: 1960*/ \
-item_wagon_Gen4_Centerbeam, /*Year: 1950*/ \
-item_wagon_Gen5_Flatcar, /*Year: 1990*/ \
-item_wagon_Gen5_Heavy_Flatcar, /*Year: 2000*/ \
-item_wagon_Gen5_Boxcar_Type1, /*Year: 1990*/ \
-item_wagon_Gen5_Boxcar_Type2, /*Year: 1990*/ \
-item_wagon_Gen5_Tanker, /*Year: 2000*/ \
-item_wagon_Gen5_Gondola, /*Year: 1990*/ \
-item_wagon_Gen5_Silo_Type1, /*Year: 2000*/ \
-item_wagon_Gen5_Silo_Type2, /*Year: 2000*/ \
-item_wagon_Gen5_Hopper_Type1, /*Year: 2000*/ \
-item_wagon_Gen5_Hopper_Type2, /*Year: 2000*/ \
-item_wagon_Gen5_Car_Transporter, /*Year: 2000*/ \
-item_wagon_Gen5_Container_Carrier, /*Year: 1990*/ \
-item_wagon_Gen5_Centerbeam, /*Year: 1990*/ \
-item_wagon_Gen5_Container_Doublestack, /*Year: 1980*/ \
-item_wagon_Gen5_Superheavy_Flatcar, /*Year: 1990*/ \
-item_wagon_Gen6_Flatcar, /*Year: 2010*/ \
-item_wagon_Gen6_Heavy_Flatcar, /*Year: 2020*/ \
-item_wagon_Gen6_Boxcar_Type1, /*Year: 2010*/ \
-item_wagon_Gen6_Boxcar_Type2, /*Year: 2010*/ \
-item_wagon_Gen6_Tanker, /*Year: 2020*/ \
-item_wagon_Gen6_Gondola, /*Year: 2010*/ \
-item_wagon_Gen6_Silo_Type1, /*Year: 2020*/ \
-item_wagon_Gen6_Silo_Type2, /*Year: 2020*/ \
-item_wagon_Gen6_Hopper_Type1, /*Year: 2020*/ \
-item_wagon_Gen6_Hopper_Type2, /*Year: 2020*/ \
-item_wagon_Gen6_Car_Transporter, /*Year: 2020*/ \
-item_wagon_Gen6_Container_Carrier, /*Year: 2010*/ \
-item_wagon_Gen6_Centerbeam, /*Year: 2010*/ \
-item_wagon_Gen6_Container_Doublestack, /*Year: 2005*/ \
-item_wagon_Gen6_Superheavy_Flatcar, /*Year: 2010*/ \
-item_wagon_Service_Car_Type1, /*Year: 1660*/ \
-item_wagon_Service_Car_Type2, /*Year: 1660*/
+item_mu_Wagon_Gen1_Flat_Wagon, /*Year: 1660*/ \
+item_mu_Wagon_Gen1_Boxcar, /*Year: 1660*/ \
+item_mu_Wagon_Gen1_Tanker, /*Year: 1660*/ \
+item_mu_Wagon_Gen1_Open_Wagon, /*Year: 1660*/ \
+item_mu_Wagon_Gen2_Flat_Wagon, /*Year: 1900*/ \
+item_mu_Wagon_Gen2_Boxcar_Type1, /*Year: 1890*/ \
+item_mu_Wagon_Gen2_Boxcar_Type2, /*Year: 1890*/ \
+item_mu_Wagon_Gen2_Tanker, /*Year: 1900*/ \
+item_mu_Wagon_Gen2_Open_Wagon, /*Year: 1890*/ \
+item_mu_Wagon_Gen2_Silo, /*Year: 1900*/ \
+item_mu_Wagon_Gen2_Hopper, /*Year: 1890*/ \
+item_mu_Wagon_Gen3_Flat_Wagon, /*Year: 1930*/ \
+item_mu_Wagon_Gen3_Boxcar_Type1, /*Year: 1920*/ \
+item_mu_Wagon_Gen3_Boxcar_Type2, /*Year: 1920*/ \
+item_mu_Wagon_Gen3_Tanker, /*Year: 1930*/ \
+item_mu_Wagon_Gen3_Open_Wagon, /*Year: 1920*/ \
+item_mu_Wagon_Gen3_Silo_Type1, /*Year: 1930*/ \
+item_mu_Wagon_Gen3_Silo_Type2, /*Year: 1930*/ \
+item_mu_Wagon_Gen3_Hopper, /*Year: 1920*/ \
+item_mu_Wagon_Gen4_Flatcar, /*Year: 1960*/ \
+item_mu_Wagon_Gen4_Heavy_Flatcar, /*Year: 1960*/ \
+item_mu_Wagon_Gen4_Boxcar_Type1, /*Year: 1950*/ \
+item_mu_Wagon_Gen4_Boxcar_Type2, /*Year: 1950*/ \
+item_mu_Wagon_Gen4_Tanker, /*Year: 1950*/ \
+item_mu_Wagon_Gen4_Gondola, /*Year: 1950*/ \
+item_mu_Wagon_Gen4_Silo_Type1, /*Year: 1950*/ \
+item_mu_Wagon_Gen4_Silo_Type2, /*Year: 1950*/ \
+item_mu_Wagon_Gen4_Hopper_Type1, /*Year: 1960*/ \
+item_mu_Wagon_Gen4_Hopper_Type2, /*Year: 1960*/ \
+item_mu_Wagon_Gen4_Car_Transporter, /*Year: 1960*/ \
+item_mu_Wagon_Gen4_Container_Carrier, /*Year: 1960*/ \
+item_mu_Wagon_Gen4_Centerbeam, /*Year: 1950*/ \
+item_mu_Wagon_Gen5_Flatcar, /*Year: 1990*/ \
+item_mu_Wagon_Gen5_Heavy_Flatcar, /*Year: 2000*/ \
+item_mu_Wagon_Gen5_Boxcar_Type1, /*Year: 1990*/ \
+item_mu_Wagon_Gen5_Boxcar_Type2, /*Year: 1990*/ \
+item_mu_Wagon_Gen5_Tanker, /*Year: 2000*/ \
+item_mu_Wagon_Gen5_Gondola, /*Year: 1990*/ \
+item_mu_Wagon_Gen5_Silo_Type1, /*Year: 2000*/ \
+item_mu_Wagon_Gen5_Silo_Type2, /*Year: 2000*/ \
+item_mu_Wagon_Gen5_Hopper_Type1, /*Year: 2000*/ \
+item_mu_Wagon_Gen5_Hopper_Type2, /*Year: 2000*/ \
+item_mu_Wagon_Gen5_Car_Transporter, /*Year: 2000*/ \
+item_mu_Wagon_Gen5_Container_Carrier, /*Year: 1990*/ \
+item_mu_Wagon_Gen5_Centerbeam, /*Year: 1990*/ \
+item_mu_Wagon_Gen5_Container_Doublestack, /*Year: 1980*/ \
+item_mu_Wagon_Gen5_Superheavy_Flatcar, /*Year: 1990*/ \
+item_mu_Wagon_Gen6_Flatcar, /*Year: 2010*/ \
+item_mu_Wagon_Gen6_Heavy_Flatcar, /*Year: 2020*/ \
+item_mu_Wagon_Gen6_Boxcar_Type1, /*Year: 2010*/ \
+item_mu_Wagon_Gen6_Boxcar_Type2, /*Year: 2010*/ \
+item_mu_Wagon_Gen6_Tanker, /*Year: 2020*/ \
+item_mu_Wagon_Gen6_Gondola, /*Year: 2010*/ \
+item_mu_Wagon_Gen6_Silo_Type1, /*Year: 2020*/ \
+item_mu_Wagon_Gen6_Silo_Type2, /*Year: 2020*/ \
+item_mu_Wagon_Gen6_Hopper_Type1, /*Year: 2020*/ \
+item_mu_Wagon_Gen6_Hopper_Type2, /*Year: 2020*/ \
+item_mu_Wagon_Gen6_Car_Transporter, /*Year: 2020*/ \
+item_mu_Wagon_Gen6_Container_Carrier, /*Year: 2010*/ \
+item_mu_Wagon_Gen6_Centerbeam, /*Year: 2010*/ \
+item_mu_Wagon_Gen6_Container_Doublestack, /*Year: 2005*/ \
+item_mu_Wagon_Gen6_Superheavy_Flatcar, /*Year: 2010*/ \
+item_mu_Wagon_Service_Car_Type1, /*Year: 1660*/ \
+item_mu_Wagon_Service_Car_Type2, /*Year: 1660*/
 
 #define SORTING_WAGONS_MAGLEV \
-item_mglv_wagon_Gen7M_Flatcar, /*Year: 2010*/ \
-item_mglv_wagon_Gen7M_Heavy_Flatcar, /*Year: 2020*/ \
-item_mglv_wagon_Gen7M_Boxcar_Type1, /*Year: 2010*/ \
-item_mglv_wagon_Gen7M_Boxcar_Type2, /*Year: 2010*/ \
-item_mglv_wagon_Gen7M_Tanker, /*Year: 2020*/ \
-item_mglv_wagon_Gen7M_Gondola, /*Year: 2010*/ \
-item_mglv_wagon_Gen7M_Silo_Type1, /*Year: 2020*/ \
-item_mglv_wagon_Gen7M_Silo_Type2, /*Year: 2020*/ \
-item_mglv_wagon_Gen7M_Hopper_Type1, /*Year: 2020*/ \
-item_mglv_wagon_Gen7M_Hopper_Type2, /*Year: 2020*/ \
-item_mglv_wagon_Gen7M_Car_Transporter, /*Year: 2020*/ \
-item_mglv_wagon_Gen7M_Container_Carrier, /*Year: 2010*/ \
-item_mglv_wagon_Gen7M_Centerbeam, /*Year: 2010*/ \
-item_mglv_wagon_Gen7M_Container_Doublestack, /*Year: 2005*/ \
-item_mglv_wagon_Gen7M_Superheavy_Flatcar, /*Year: 2010*/ 
+item_mglv_Wagon_Gen7M_Flatcar, /*Year: 2010*/ \
+item_mglv_Wagon_Gen7M_Heavy_Flatcar, /*Year: 2020*/ \
+item_mglv_Wagon_Gen7M_Boxcar_Type1, /*Year: 2010*/ \
+item_mglv_Wagon_Gen7M_Boxcar_Type2, /*Year: 2010*/ \
+item_mglv_Wagon_Gen7M_Tanker, /*Year: 2020*/ \
+item_mglv_Wagon_Gen7M_Gondola, /*Year: 2010*/ \
+item_mglv_Wagon_Gen7M_Silo_Type1, /*Year: 2020*/ \
+item_mglv_Wagon_Gen7M_Silo_Type2, /*Year: 2020*/ \
+item_mglv_Wagon_Gen7M_Hopper_Type1, /*Year: 2020*/ \
+item_mglv_Wagon_Gen7M_Hopper_Type2, /*Year: 2020*/ \
+item_mglv_Wagon_Gen7M_Car_Transporter, /*Year: 2020*/ \
+item_mglv_Wagon_Gen7M_Container_Carrier, /*Year: 2010*/ \
+item_mglv_Wagon_Gen7M_Centerbeam, /*Year: 2010*/ \
+item_mglv_Wagon_Gen7M_Container_Doublestack, /*Year: 2005*/ \
+item_mglv_Wagon_Gen7M_Superheavy_Flatcar, /*Year: 2010*/ 
 
 #define SORTING_SPECIAL \
-item_mu_wagon_unpowered, \
-item_mu_wagon_powered, \
-item_mtro_wagon_unpowered, \
-item_mtro_wagon_powered, \
-item_mglv_wagon_unpowered, \
-item_mglv_wagon_powered, \
-item_mu_cargo_wagon_unpowered, \
-item_mu_cargo_wagon_powered,
+item_mu_MU_Wagon_Unpowered, \
+item_mu_MU_Wagon_Powered, \
+item_mtro_Metro_Wagon_Unpowered, \
+item_mtro_Metro_Wagon_Powered, \
+item_mglv_Maglev_Wagon_Unpowered, \
+item_mglv_Maglev_Wagon_Powered, \
+item_mu_MU_Cargo_Wagon_Unpowered, \
+item_mu_MU_Cargo_Wagon_Powered,
 
 sort(FEAT_TRAINS, [
 	SORTING_RBS

@@ -48,7 +48,7 @@ item(FEAT_TRAINS, ITEM ) {
 		PURCHASETEXTSWITCHCALL
 		default: switch_mtro_North_Korea_Pyongyang_D_stock_reversed;
 	}
-	livery_override (item_mtro_wagon_unpowered ) {
+	livery_override (item_mtro_Metro_Wagon_Unpowered ) {
 		LOADINGSPEEDPROPERTY
 		RUNNINGCOSTMUWAGONUNPOWEREDSWITCHCALL
 		weight: WEIGHTMUWAGONUNPOWERED
@@ -56,7 +56,7 @@ item(FEAT_TRAINS, ITEM ) {
 		length: WAGON_LENGTH;
 		default: spriteset_mtro_North_Korea_Pyongyang_D_stock_middle;
 	}
-	livery_override (item_mtro_wagon_powered ) {
+	livery_override (item_mtro_Metro_Wagon_Powered ) {
 		LOADINGSPEEDPROPERTY
 		RUNNINGCOSTMUWAGONPOWEREDSWITCHCALL
 		power: POWERMUWAGONPOWERED

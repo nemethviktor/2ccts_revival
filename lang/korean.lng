@@ -33,20 +33,20 @@ STR_PARAM_CONCEPT                                               :콘셉트 차�
 STR_PARAM_CONCEPT_DESC                                  :콘셉트 차량을 사용합니다.
 STR_PARAM_REGION_AFRICA                                 :아프리카
 STR_PARAM_REGION_AFRICA_DESC                    :아프리카 차량을 사용합니다.
-STR_PARAM_REGION_NORTHAMERICA                   :북아메리카
-STR_PARAM_REGION_NORTHAMERICA_DESC              :북아메리카 차량을 사용합니다.
-STR_PARAM_REGION_SOUTHAMERICA                   :남아메리카
-STR_PARAM_REGION_SOUTHAMERICA_DESC              :남아메리카 차량을 사용합니다.
+STR_PARAM_REGION_NORTH_AMERICA                   :북아메리카
+STR_PARAM_REGION_NORTH_AMERICA_DESC              :북아메리카 차량을 사용합니다.
+STR_PARAM_REGION_SOUTH_AMERICA                   :남아메리카
+STR_PARAM_REGION_SOUTH_AMERICA_DESC              :남아메리카 차량을 사용합니다.
 STR_PARAM_REGION_ASIA                                   :아시아
 STR_PARAM_REGION_ASIA_DESC                              :아시아 차량을 사용합니다.
-STR_PARAM_REGION_NORTHERNEUROPE                 :북유럽
-STR_PARAM_REGION_NORTHERNEUROPE_DESC    :북유럽 차량을 사용합니다.
-STR_PARAM_REGION_EASTERNEUROPE                  :동유럽
-STR_PARAM_REGION_EASTERNEUROPE_DESC             :동유럽 차량을 사용합니다.
-STR_PARAM_REGION_SOUTHERNEUROPE                 :남유럽
-STR_PARAM_REGION_SOUTHERNEUROPE_DESC    :남유럽 차량을 사용합니다.
-STR_PARAM_REGION_WESTERNEUROPE                  :서유럽
-STR_PARAM_REGION_WESTERNEUROPE_DESC             :서유럽 차량을 사용합니다.
+STR_PARAM_REGION_NORTHERN_EUROPE                 :북유럽
+STR_PARAM_REGION_NORTHERN_EUROPE_DESC    :북유럽 차량을 사용합니다.
+STR_PARAM_REGION_EASTERN_EUROPE                  :동유럽
+STR_PARAM_REGION_EASTERN_EUROPE_DESC             :동유럽 차량을 사용합니다.
+STR_PARAM_REGION_SOUTHERN_EUROPE                 :남유럽
+STR_PARAM_REGION_SOUTHERN_EUROPE_DESC    :남유럽 차량을 사용합니다.
+STR_PARAM_REGION_WESTERN_EUROPE                  :서유럽
+STR_PARAM_REGION_WESTERN_EUROPE_DESC             :서유럽 차량을 사용합니다.
 STR_PARAM_REGION_OCEANIA                                :오세아니아
 STR_PARAM_REGION_OCEANIA_DESC                   :오세아니아 차량을 사용합니다.
 
@@ -715,139 +715,139 @@ str_mglv_China_Transrapid       :상하이 트랜스래피드 (자기부상)
 str_mglv_Japan_MLX01_901        :JR MLX01-901 (자기부상)
 
 #wagons
-str_wagon_Gen1_Flat_Wagon                               :1세대 평판화차
-str_wagon_Gen1_Boxcar                                   :1세대 목제 유개화차
-str_wagon_Gen1_Tanker                                   :1세대 유조차
-str_wagon_Gen1_Open_Wagon                               :1세대 목제 무개화차
-str_wagon_Gen2_Flat_Wagon                               :2세대 평판화차
-str_wagon_Gen2_Boxcar_Type1                             :2세대 나무 유개화차 (타입 1)
-str_wagon_Gen2_Boxcar_Type2                             :2세대 나무 유개화차 (타입 2)
-str_wagon_Gen2_Tanker                                   :2세대 유조차
-str_wagon_Gen2_Open_Wagon                               :2세대 목재 무개화차
-str_wagon_Gen2_Silo                                     :2세대 곡물화차
-str_wagon_Gen2_Hopper                                   :2세대 목재 호퍼차
-str_wagon_Gen3_Flat_Wagon                               :3세대 평판화차
-str_wagon_Gen3_Boxcar_Type1                     :3세대 나무 유개화차 (타입 1)
-str_wagon_Gen3_Boxcar_Type2                     :3세대 나무 유개화차 (타입 2)
-str_wagon_Gen3_Tanker                                   :3세대 유조차
-str_wagon_Gen3_Open_Wagon                               :3세대 무개화차
-str_wagon_Gen3_Silo_Type1                               :3세대 사일로 화차 (타입 1)
-str_wagon_Gen3_Silo_Type2                               :3세대 사일로 화차 (타입 2)
-str_wagon_Gen3_Hopper                                   :3세대 호퍼차
-str_wagon_Gen4_Flatcar                                  :4세대 평판화차
-str_wagon_Gen4_Heavy_Flatcar                    :4세대 중량 평판화차
-str_wagon_Gen4_Boxcar_Type1                             :4세대 유개화차 (타입 1)
-str_wagon_Gen4_Boxcar_Type2                             :4세대 유개화차 (타입 2)
-str_wagon_Gen4_Tanker                                   :4세대 유조차
-str_wagon_Gen4_Gondola                                  :4세대 곤돌라
-str_wagon_Gen4_Silo_Type1                               :4세대 사일로 화차 (타입 1)
-str_wagon_Gen4_Silo_Type2                               :4세대 사일로 화차 (타입 2)
-str_wagon_Gen4_Hopper_Type1                             :4세대 자동 적하 호퍼차 (타입 1)
-str_wagon_Gen4_Hopper_Type2                             :4세대 자동 적하 호퍼차 (타입 2)
-str_wagon_Gen4_Car_Transporter                  :4세대 자동차 수송차량
-str_wagon_Gen4_Container_Carrier                :4세대 컨테이너 화차
-str_wagon_Gen4_Centerbeam                               :4세대 구획평판화차
-str_wagon_Gen5_Flatcar                                  :5세대 평판화차
-str_wagon_Gen5_Heavy_Flatcar                    :5세대 중량 평판화차
-str_wagon_Gen5_Boxcar_Type1                             :5세대 유개화차 (타입 1)
-str_wagon_Gen5_Boxcar_Type2                             :5세대 유개화차 (타입 2)
-str_wagon_Gen5_Tanker                                   :5세대 유조차
-str_wagon_Gen5_Gondola                                  :5세대 무개화차
-str_wagon_Gen5_Silo_Type1                               :5세대 사일로 화차 (타입 1)
-str_wagon_Gen5_Silo_Type2                               :5세대 사일로 화차 (타입 2)
-str_wagon_Gen5_Hopper_Type1                             :5세대 자동 적하 호퍼차 (타입 1)
-str_wagon_Gen5_Hopper_Type2                             :5세대 자동 적하 호퍼차 (타입 2)
-str_wagon_Gen5_Car_Transporter                  :5세대 차량수송화차
-str_wagon_Gen5_Container_Carrier                :5세대 컨테이너 화차
-str_wagon_Gen5_Centerbeam                               :5세대 구획평판화차
-str_wagon_Gen5_Container_Doublestack    :5세대 컨테이너 복화차
-str_wagon_Gen5_Superheavy_Flatcar               :5세대 초중량 평판화차
+str_mu_Wagon_Gen1_Flat_Wagon                               :1세대 평판화차
+str_mu_Wagon_Gen1_Boxcar                                   :1세대 목제 유개화차
+str_mu_Wagon_Gen1_Tanker                                   :1세대 유조차
+str_mu_Wagon_Gen1_Open_Wagon                               :1세대 목제 무개화차
+str_mu_Wagon_Gen2_Flat_Wagon                               :2세대 평판화차
+str_mu_Wagon_Gen2_Boxcar_Type1                             :2세대 나무 유개화차 (타입 1)
+str_mu_Wagon_Gen2_Boxcar_Type2                             :2세대 나무 유개화차 (타입 2)
+str_mu_Wagon_Gen2_Tanker                                   :2세대 유조차
+str_mu_Wagon_Gen2_Open_Wagon                               :2세대 목재 무개화차
+str_mu_Wagon_Gen2_Silo                                     :2세대 곡물화차
+str_mu_Wagon_Gen2_Hopper                                   :2세대 목재 호퍼차
+str_mu_Wagon_Gen3_Flat_Wagon                               :3세대 평판화차
+str_mu_Wagon_Gen3_Boxcar_Type1                     :3세대 나무 유개화차 (타입 1)
+str_mu_Wagon_Gen3_Boxcar_Type2                     :3세대 나무 유개화차 (타입 2)
+str_mu_Wagon_Gen3_Tanker                                   :3세대 유조차
+str_mu_Wagon_Gen3_Open_Wagon                               :3세대 무개화차
+str_mu_Wagon_Gen3_Silo_Type1                               :3세대 사일로 화차 (타입 1)
+str_mu_Wagon_Gen3_Silo_Type2                               :3세대 사일로 화차 (타입 2)
+str_mu_Wagon_Gen3_Hopper                                   :3세대 호퍼차
+str_mu_Wagon_Gen4_Flatcar                                  :4세대 평판화차
+str_mu_Wagon_Gen4_Heavy_Flatcar                    :4세대 중량 평판화차
+str_mu_Wagon_Gen4_Boxcar_Type1                             :4세대 유개화차 (타입 1)
+str_mu_Wagon_Gen4_Boxcar_Type2                             :4세대 유개화차 (타입 2)
+str_mu_Wagon_Gen4_Tanker                                   :4세대 유조차
+str_mu_Wagon_Gen4_Gondola                                  :4세대 곤돌라
+str_mu_Wagon_Gen4_Silo_Type1                               :4세대 사일로 화차 (타입 1)
+str_mu_Wagon_Gen4_Silo_Type2                               :4세대 사일로 화차 (타입 2)
+str_mu_Wagon_Gen4_Hopper_Type1                             :4세대 자동 적하 호퍼차 (타입 1)
+str_mu_Wagon_Gen4_Hopper_Type2                             :4세대 자동 적하 호퍼차 (타입 2)
+str_mu_Wagon_Gen4_Car_Transporter                  :4세대 자동차 수송차량
+str_mu_Wagon_Gen4_Container_Carrier                :4세대 컨테이너 화차
+str_mu_Wagon_Gen4_Centerbeam                               :4세대 구획평판화차
+str_mu_Wagon_Gen5_Flatcar                                  :5세대 평판화차
+str_mu_Wagon_Gen5_Heavy_Flatcar                    :5세대 중량 평판화차
+str_mu_Wagon_Gen5_Boxcar_Type1                             :5세대 유개화차 (타입 1)
+str_mu_Wagon_Gen5_Boxcar_Type2                             :5세대 유개화차 (타입 2)
+str_mu_Wagon_Gen5_Tanker                                   :5세대 유조차
+str_mu_Wagon_Gen5_Gondola                                  :5세대 무개화차
+str_mu_Wagon_Gen5_Silo_Type1                               :5세대 사일로 화차 (타입 1)
+str_mu_Wagon_Gen5_Silo_Type2                               :5세대 사일로 화차 (타입 2)
+str_mu_Wagon_Gen5_Hopper_Type1                             :5세대 자동 적하 호퍼차 (타입 1)
+str_mu_Wagon_Gen5_Hopper_Type2                             :5세대 자동 적하 호퍼차 (타입 2)
+str_mu_Wagon_Gen5_Car_Transporter                  :5세대 차량수송화차
+str_mu_Wagon_Gen5_Container_Carrier                :5세대 컨테이너 화차
+str_mu_Wagon_Gen5_Centerbeam                               :5세대 구획평판화차
+str_mu_Wagon_Gen5_Container_Doublestack    :5세대 컨테이너 복화차
+str_mu_Wagon_Gen5_Superheavy_Flatcar               :5세대 초중량 평판화차
 
-str_wagon_Service_Car_Type1                             :업무차 (타입 1)
-str_wagon_Service_Car_Type2                             :업무차 (타입 2)
+str_mu_Wagon_Service_Car_Type1                             :업무차 (타입 1)
+str_mu_Wagon_Service_Car_Type2                             :업무차 (타입 2)
 
 #coaches
-str_coach_Gen1_Wooden_2_axle_Compartment_Coach                  :목제 2차축 객차
-str_coach_Gen1_Wooden_2_axle_Regional_Coach                     :목제 2차축 지역간 객차
-str_coach_Gen1_Wooden_2_axle_Mail_Coach                                 :목제 2차축 우편차
-str_coach_Gen1_Clerestory_Compartment_Coach                     :통풍 컴파트먼트 객차
-str_coach_Gen1_Clerestory_Regional_Coach                                :채광창이 있는 지역간 객차
-str_coach_Gen1_Clerestory_Mail_Coach                                    :고측창 우편차
-str_coach_Gen1_Wooden_3_axle_Compartment_Coach                  :목재 3차축 객차
-str_coach_Gen1_Wooden_3_axle_Regional_Coach                     :목제 3차축 지역간 객차
-str_coach_Gen1_Wooden_3_axle_Mail_Coach                                 :목재 3차축 우편차
-str_coach_Gen2_Heavyweight_Intercity_Coach                              :중량 도시간 객차
-str_coach_Gen2_Heavyweight_Mail_Coach                                   :중량 우편차
-str_coach_Gen2_Steel_Intercity_Coach                                    :철제 도시간 객차
-str_coach_Gen2_Steel_Compartment_Coach                                  :철제 컴파트먼트 객차
-str_coach_Gen2_Steel_Regional_Coach                                     :철제 지역간 객차
-str_coach_Gen2_Steel_Mail_Coach                                                 :철제 우편차
-str_coach_Gen2_Steel_2_axle_Compartment_Coach                   :철제 2차축 객차
-str_coach_Gen2_Steel_2_axle_Regional_Coach                              :철제 2차축 지역간 객차
-str_coach_Gen2_Steel_2_axle_Mail_Coach                                  :철제 2차축 우편차
-str_coach_Gen2_Steel_3_axle_Compartment_Coach                   :철제 3차축 객차
-str_coach_Gen2_Steel_3_axle_Regional_Coach                              :철제 3차축 지역간 객차
-str_coach_Gen2_Steel_3_axle_Mail_Coach                                  :철제 3차축 우편차
-str_coach_Gen3_Steel_Lightweight_Intercity_Coach                :철제 경량 도시간 객차
-str_coach_Gen3_Steel_Lightweight_Regional_Coach                 :철제 경량 지역간 객차
-str_coach_Gen3_Steel_Lightweight_Mail_Coach                     :철제 경량 우편차
-str_coach_Gen3_Aluminium_Lightweight_Intercity_Coach    :알루미늄제 경량 도시간 객차
-str_coach_Gen3_Aluminium_Lightweight_Regional_Coach     :알루미늄제 경량화 객차
-str_coach_Gen3_Aluminium_Lightweight_Mail_Coach                 :알루미늄제 경량화 우편차
-str_coach_Gen3_Gallery_Car                                                              :전망칸
-str_coach_Gen3_Mk1_Intercity_Coach                                              :Mk1 도시간 객차
-str_coach_Gen3_Mk1_Regional_Coach                                               :Mk1 지역간 객차
-str_coach_Gen3_Mk1_Mail_Coach                                                   :Mk1 우편차
-str_coach_Gen3_UIC_X_Intercity_Coach                                    :UIC-X 도시간 객차
-str_coach_Gen3_TEE_Intercity_Coach                                              :TEE 도시간 객차
-str_coach_Gen3_UIC_X_Regional_Coach                                     :UIC-X 지역간 객차
-str_coach_Gen3_Umbauwagen_Local_Coach                                   :'움바우바겐' 지역 객차
-str_coach_Gen3_Doppelstockwagen_Local_Coach                     :2층객차
-str_coach_Gen3_UIC_X_Mail_Coach                                                 :UIC-X 우편차
-str_coach_Gen3_Indian_Intercity_Coach                                   :인도 도시간 객차
-str_coach_Gen3_Indian_Local_Coach                                               :인도 지역 객차
-str_coach_Gen3_Indian_Regional_Coach                                    :인도 지역간 객차
-str_coach_Gen3_Indian_Mail_Coach                                                :인도 우편차
-str_coach_Gen4_Eurofima_Intercity_Coach                                 :유럽 표준 객차
-str_coach_Gen4_InterRegio_Coach                                                 :Regio간 객차
-str_coach_Gen4_Silberling_Commuter_Coach                                :'실버링' 통근 객차
-str_coach_Gen4_Eurofima_Mail_Coach                                              :유럽 표준 우편차
-str_coach_Gen4_Double_Decker_Coach                                              :2층 객차
-str_coach_Gen4_Russian_Intercity_Coach                                  :러시아 도시간 객차
-str_coach_Gen4_Russian_Regional_Coach                                   :러시아 지역간 객차
-str_coach_Gen4_Russian_Mail_Coach                                               :러시아 우편차
-str_coach_Gen4_Superliner_Coach                                                 :수퍼라이너 객차
-str_coach_Gen4_Superliner_California                                    :수퍼라이너 캘리포니아
-str_coach_Gen4_Amfleet_Regional_Coach                                   :암플리트 지역간 객차
-str_coach_Gen4_Amfleet_Intercity_Coach                                  :암플릿트 도시간 객차
-str_coach_Gen4_Comet_Commuter_Coach                                     :코멧 통근 객차
-str_coach_Gen4_Horizon_Regional_Coach                                   :호라이즌 지역간 객차
-str_coach_Gen4_Horizon_Baggage_Coach                                    :호라이즌 수화물 객차
-str_coach_Gen4_Bombardier_Bi_level                                              :2단식 설상차
-str_coach_Gen5_High_Speed_Coach                                                 :고속형 객차
-str_coach_Gen5_Modern_Regional_Coach                                    :현대식 지역간 객차
-str_coach_Gen5_Modern_Commuter_Coach                                    :현대식 통근 객차
-str_coach_Gen5_Modern_Double_Decker_Coach                               :현대식 2층객차
-str_coach_Gen5_High_Speed_Double_Decker_IC2000                  :고속형 복층객차 (IC2000)
-str_coach_Gen5_High_Speed_Mail_Coach                                    :고속형 우편차
-str_coach_Gen5_Talgo_Pendular                                                   :탈고 펜듈러
-str_coach_Gen5_Talgo_Pendular_Mail                                              :Talgo Pendular 우편화차
-str_coach_Gen6_Grand_Voyager_Coach                                              :대형 여객차
-str_coach_Gen6_Grand_Regio_Coach                                                :대형 Regio 객차
-str_coach_Gen6_Metropolis_Coach                                                 :Metropolis Coach
-str_coach_Gen6_Speedmail_Coach                                                  :특급우편 수송차
-str_coach_Gen6_Super_Regio_Coach                                                :중형 Regio 객차
-str_coach_Gen6_Super_Voyager_Coach                                              :중형 여객차
+str_mu_Coach_Gen1_Wooden_2_axle_Compartment_Coach                  :목제 2차축 객차
+str_mu_Coach_Gen1_Wooden_2_axle_Regional_Coach                     :목제 2차축 지역간 객차
+str_mu_Coach_Gen1_Wooden_2_axle_Mail_Coach                                 :목제 2차축 우편차
+str_mu_Coach_Gen1_Clerestory_Compartment_Coach                     :통풍 컴파트먼트 객차
+str_mu_Coach_Gen1_Clerestory_Regional_Coach                                :채광창이 있는 지역간 객차
+str_mu_Coach_Gen1_Clerestory_Mail_Coach                                    :고측창 우편차
+str_mu_Coach_Gen1_Wooden_3_axle_Compartment_Coach                  :목재 3차축 객차
+str_mu_Coach_Gen1_Wooden_3_axle_Regional_Coach                     :목제 3차축 지역간 객차
+str_mu_Coach_Gen1_Wooden_3_axle_Mail_Coach                                 :목재 3차축 우편차
+str_mu_Coach_Gen2_Heavyweight_Intercity_Coach                              :중량 도시간 객차
+str_mu_Coach_Gen2_Heavyweight_Mail_Coach                                   :중량 우편차
+str_mu_Coach_Gen2_Steel_Intercity_Coach                                    :철제 도시간 객차
+str_mu_Coach_Gen2_Steel_Compartment_Coach                                  :철제 컴파트먼트 객차
+str_mu_Coach_Gen2_Steel_Regional_Coach                                     :철제 지역간 객차
+str_mu_Coach_Gen2_Steel_Mail_Coach                                                 :철제 우편차
+str_mu_Coach_Gen2_Steel_2_axle_Compartment_Coach                   :철제 2차축 객차
+str_mu_Coach_Gen2_Steel_2_axle_Regional_Coach                              :철제 2차축 지역간 객차
+str_mu_Coach_Gen2_Steel_2_axle_Mail_Coach                                  :철제 2차축 우편차
+str_mu_Coach_Gen2_Steel_3_axle_Compartment_Coach                   :철제 3차축 객차
+str_mu_Coach_Gen2_Steel_3_axle_Regional_Coach                              :철제 3차축 지역간 객차
+str_mu_Coach_Gen2_Steel_3_axle_Mail_Coach                                  :철제 3차축 우편차
+str_mu_Coach_Gen3_Steel_Lightweight_Intercity_Coach                :철제 경량 도시간 객차
+str_mu_Coach_Gen3_Steel_Lightweight_Regional_Coach                 :철제 경량 지역간 객차
+str_mu_Coach_Gen3_Steel_Lightweight_Mail_Coach                     :철제 경량 우편차
+str_mu_Coach_Gen3_Aluminium_Lightweight_Intercity_Coach    :알루미늄제 경량 도시간 객차
+str_mu_Coach_Gen3_Aluminium_Lightweight_Regional_Coach     :알루미늄제 경량화 객차
+str_mu_Coach_Gen3_Aluminium_Lightweight_Mail_Coach                 :알루미늄제 경량화 우편차
+str_mu_Coach_Gen3_Gallery_Car                                                              :전망칸
+str_mu_Coach_Gen3_Mk1_Intercity_Coach                                              :Mk1 도시간 객차
+str_mu_Coach_Gen3_Mk1_Regional_Coach                                               :Mk1 지역간 객차
+str_mu_Coach_Gen3_Mk1_Mail_Coach                                                   :Mk1 우편차
+str_mu_Coach_Gen3_UIC_X_Intercity_Coach                                    :UIC-X 도시간 객차
+str_mu_Coach_Gen3_TEE_Intercity_Coach                                              :TEE 도시간 객차
+str_mu_Coach_Gen3_UIC_X_Regional_Coach                                     :UIC-X 지역간 객차
+str_mu_Coach_Gen3_Umbauwagen_Local_Coach                                   :'움바우바겐' 지역 객차
+str_mu_Coach_Gen3_Doppelstockwagen_Local_Coach                     :2층객차
+str_mu_Coach_Gen3_UIC_X_Mail_Coach                                                 :UIC-X 우편차
+str_mu_Coach_Gen3_Indian_Intercity_Coach                                   :인도 도시간 객차
+str_mu_Coach_Gen3_Indian_Local_Coach                                               :인도 지역 객차
+str_mu_Coach_Gen3_Indian_Regional_Coach                                    :인도 지역간 객차
+str_mu_Coach_Gen3_Indian_Mail_Coach                                                :인도 우편차
+str_mu_Coach_Gen4_Eurofima_Intercity_Coach                                 :유럽 표준 객차
+str_mu_Coach_Gen4_InterRegio_Coach                                                 :Regio간 객차
+str_mu_Coach_Gen4_Silberling_Commuter_Coach                                :'실버링' 통근 객차
+str_mu_Coach_Gen4_Eurofima_Mail_Coach                                              :유럽 표준 우편차
+str_mu_Coach_Gen4_Double_Decker_Coach                                              :2층 객차
+str_mu_Coach_Gen4_Russian_Intercity_Coach                                  :러시아 도시간 객차
+str_mu_Coach_Gen4_Russian_Regional_Coach                                   :러시아 지역간 객차
+str_mu_Coach_Gen4_Russian_Mail_Coach                                               :러시아 우편차
+str_mu_Coach_Gen4_Superliner_Coach                                                 :수퍼라이너 객차
+str_mu_Coach_Gen4_Superliner_California                                    :수퍼라이너 캘리포니아
+str_mu_Coach_Gen4_Amfleet_Regional_Coach                                   :암플리트 지역간 객차
+str_mu_Coach_Gen4_Amfleet_Intercity_Coach                                  :암플릿트 도시간 객차
+str_mu_Coach_Gen4_Comet_Commuter_Coach                                     :코멧 통근 객차
+str_mu_Coach_Gen4_Horizon_Regional_Coach                                   :호라이즌 지역간 객차
+str_mu_Coach_Gen4_Horizon_Baggage_Coach                                    :호라이즌 수화물 객차
+str_mu_Coach_Gen4_Bombardier_Bi_level                                              :2단식 설상차
+str_mu_Coach_Gen5_High_Speed_Coach                                                 :고속형 객차
+str_mu_Coach_Gen5_Modern_Regional_Coach                                    :현대식 지역간 객차
+str_mu_Coach_Gen5_Modern_Commuter_Coach                                    :현대식 통근 객차
+str_mu_Coach_Gen5_Modern_Double_Decker_Coach                               :현대식 2층객차
+str_mu_Coach_Gen5_High_Speed_Double_Decker_IC2000                  :고속형 복층객차 (IC2000)
+str_mu_Coach_Gen5_High_Speed_Mail_Coach                                    :고속형 우편차
+str_mu_Coach_Gen5_Talgo_Pendular                                                   :탈고 펜듈러
+str_mu_Coach_Gen5_Talgo_Pendular_Mail                                              :Talgo Pendular 우편화차
+str_mu_Coach_Gen6_Grand_Voyager_Coach                                              :대형 여객차
+str_mu_Coach_Gen6_Grand_Regio_Coach                                                :대형 Regio 객차
+str_mu_Coach_Gen6_Metropolis_Coach                                                 :Metropolis Coach
+str_mu_Coach_Gen6_Speedmail_Coach                                                  :특급우편 수송차
+str_mu_Coach_Gen6_Super_Regio_Coach                                                :중형 Regio 객차
+str_mu_Coach_Gen6_Super_Voyager_Coach                                              :중형 여객차
 
 #special wagons
-str_mu_wagon_unpowered                  :다중 기본 객차 (동력 없음)
-str_mtro_wagon_unpowered                :지하철 기본 객차 (동력 없음)
-str_mglv_wagon_unpowered                :자기부상 기본 객차 (동력 없음)
-str_mu_cargo_wagon_unpowered    :다중 기본 화물차 (동력 없음)
-str_mu_wagon_powered                    :다중 기본 객차 (동력 있음)
-str_mtro_wagon_powered                  :지하철 기본 객차 (동력 있음)
-str_mglv_wagon_powered                  :자기부상 기본 객차 (동력 있음)
-str_mu_cargo_wagon_powered              :다중 유닛 화물차 (동력 있음)
+str_mu_MU_Wagon_Unpowered                  :다중 기본 객차 (동력 없음)
+str_mtro_Metro_Wagon_Unpowered                :지하철 기본 객차 (동력 없음)
+str_mglv_Maglev_Wagon_Unpowered                :자기부상 기본 객차 (동력 없음)
+str_mu_MU_Cargo_Wagon_Unpowered    :다중 기본 화물차 (동력 없음)
+str_mu_MU_Wagon_Powered                    :다중 기본 객차 (동력 있음)
+str_mtro_Metro_Wagon_Powered                  :지하철 기본 객차 (동력 있음)
+str_mglv_Maglev_Wagon_Powered                  :자기부상 기본 객차 (동력 있음)
+str_mu_MU_Cargo_Wagon_Powered              :다중 유닛 화물차 (동력 있음)
 
 #Obsolete vehicles
 

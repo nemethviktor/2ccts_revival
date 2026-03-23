@@ -34,20 +34,20 @@ STR_PARAM_CONCEPT                                               :Veicoli prototi
 STR_PARAM_CONCEPT_DESC                                  :Attiva i veicoli prototipo
 STR_PARAM_REGION_AFRICA                                 :Africa
 STR_PARAM_REGION_AFRICA_DESC                    :Attiva i veicoli africani
-STR_PARAM_REGION_NORTHAMERICA                   :America del Nord
-STR_PARAM_REGION_NORTHAMERICA_DESC              :Attiva i veicoli nordamericani
-STR_PARAM_REGION_SOUTHAMERICA                   :America del Sud
-STR_PARAM_REGION_SOUTHAMERICA_DESC              :Attiva i veicoli sudamericani
+STR_PARAM_REGION_NORTH_AMERICA                   :America del Nord
+STR_PARAM_REGION_NORTH_AMERICA_DESC              :Attiva i veicoli nordamericani
+STR_PARAM_REGION_SOUTH_AMERICA                   :America del Sud
+STR_PARAM_REGION_SOUTH_AMERICA_DESC              :Attiva i veicoli sudamericani
 STR_PARAM_REGION_ASIA                                   :Asia
 STR_PARAM_REGION_ASIA_DESC                              :Attiva i veicoli asiatici
-STR_PARAM_REGION_NORTHERNEUROPE                 :Europa del Nord
-STR_PARAM_REGION_NORTHERNEUROPE_DESC    :Attiva i veicoli nordeuropei
-STR_PARAM_REGION_EASTERNEUROPE                  :Europa dell'Est
-STR_PARAM_REGION_EASTERNEUROPE_DESC             :Attiva i veicoli dell'Est europeo
-STR_PARAM_REGION_SOUTHERNEUROPE                 :Europa del Sud
-STR_PARAM_REGION_SOUTHERNEUROPE_DESC    :Attiva i veicoli dell'Europa del Sud
-STR_PARAM_REGION_WESTERNEUROPE                  :Europa dell'Ovest
-STR_PARAM_REGION_WESTERNEUROPE_DESC             :Attiva i veicoli dell'Europa dell'Ovest
+STR_PARAM_REGION_NORTHERN_EUROPE                 :Europa del Nord
+STR_PARAM_REGION_NORTHERN_EUROPE_DESC    :Attiva i veicoli nordeuropei
+STR_PARAM_REGION_EASTERN_EUROPE                  :Europa dell'Est
+STR_PARAM_REGION_EASTERN_EUROPE_DESC             :Attiva i veicoli dell'Est europeo
+STR_PARAM_REGION_SOUTHERN_EUROPE                 :Europa del Sud
+STR_PARAM_REGION_SOUTHERN_EUROPE_DESC    :Attiva i veicoli dell'Europa del Sud
+STR_PARAM_REGION_WESTERN_EUROPE                  :Europa dell'Ovest
+STR_PARAM_REGION_WESTERN_EUROPE_DESC             :Attiva i veicoli dell'Europa dell'Ovest
 STR_PARAM_REGION_OCEANIA                                :Oceania
 STR_PARAM_REGION_OCEANIA_DESC                   :Attiva i veicoli dell'Oceania
 
@@ -716,139 +716,139 @@ str_mglv_China_Transrapid       :Shanghai Transrapid (Maglev)
 str_mglv_Japan_MLX01_901        :JR MLX01-901 (Maglev)
 
 #wagons
-str_wagon_Gen1_Flat_Wagon                               :Carro piatto di prima generazione
-str_wagon_Gen1_Boxcar                                   :Carro chiuso in legno di prima generazione
-str_wagon_Gen1_Tanker                                   :Carro cisterna di prima generazione
-str_wagon_Gen1_Open_Wagon                               :Carro aperto in legno di prima generazione
-str_wagon_Gen2_Flat_Wagon                               :Carro piatto di seconda generazione
-str_wagon_Gen2_Boxcar_Type1                             :Carro chiuso in legno di seconda generazione (Tipo 1)
-str_wagon_Gen2_Boxcar_Type2                             :Carro chiuso in legno di seconda generazione (Tipo 2)
-str_wagon_Gen2_Tanker                                   :Carro cisterna di seconda generazione
-str_wagon_Gen2_Open_Wagon                               :Carro aperto in legno di seconda generazione
-str_wagon_Gen2_Silo                                     :Carro silo di seconda generazione
-str_wagon_Gen2_Hopper                                   :Carro tramoggia in legno di seconda generazione
-str_wagon_Gen3_Flat_Wagon                               :Carro piatto di terza generazione
-str_wagon_Gen3_Boxcar_Type1                     :Carro chiuso in legno di terza generazione (Tipo 1)
-str_wagon_Gen3_Boxcar_Type2                     :Carro chiuso in legno di terza generazione (Tipo 2)
-str_wagon_Gen3_Tanker                                   :Carro cisterna di terza generazione
-str_wagon_Gen3_Open_Wagon                               :Carro aperto di terza generazione
-str_wagon_Gen3_Silo_Type1                               :Carro silo di terza generazione (Tipo 1)
-str_wagon_Gen3_Silo_Type2                               :Carro silo di terza generazione (Tipo 2)
-str_wagon_Gen3_Hopper                                   :Carro tramoggia di terza generazione
-str_wagon_Gen4_Flatcar                                  :Carro piatto di quarta generazione
-str_wagon_Gen4_Heavy_Flatcar                    :Carro piatto ad alta capacità di quarta generazione
-str_wagon_Gen4_Boxcar_Type1                             :Carro chiuso di quarta generazione (Tipo 1)
-str_wagon_Gen4_Boxcar_Type2                             :Carro chiuso di quarta generazione (Tipo 2)
-str_wagon_Gen4_Tanker                                   :Carro cisterna di quarta generazione
-str_wagon_Gen4_Gondola                                  :Carro aperto a sponde alte di quarta generazione
-str_wagon_Gen4_Silo_Type1                               :Carro silo di quarta generazione (Tipo 1)
-str_wagon_Gen4_Silo_Type2                               :Carro silo di quarta generazione (Tipo 2)
-str_wagon_Gen4_Hopper_Type1                             :Carro tramoggia a scarico automatico di quarta generazione (Tipo 1)
-str_wagon_Gen4_Hopper_Type2                             :Carro tramoggia a scarico automatico di quarta generazione (Tipo 2)
-str_wagon_Gen4_Car_Transporter                  :Carro per trasporto auto di quarta generazione
-str_wagon_Gen4_Container_Carrier                :Carro porta-container di quarta generazione
-str_wagon_Gen4_Centerbeam                               :Carro piatto con trave centrale di quarta generazione
-str_wagon_Gen5_Flatcar                                  :Carro piatto di quinta generazione
-str_wagon_Gen5_Heavy_Flatcar                    :Carro piatto ad alta capacità di quinta generazione
-str_wagon_Gen5_Boxcar_Type1                             :Carro chiuso di quinta generazione (Tipo 1)
-str_wagon_Gen5_Boxcar_Type2                             :Carro chiuso di quinta generazione (Tipo 2)
-str_wagon_Gen5_Tanker                                   :Carro cisterna di quinta generazione
-str_wagon_Gen5_Gondola                                  :Carro aperto a sponde alte di quinta generazione
-str_wagon_Gen5_Silo_Type1                               :Carro silo di quinta generazione (Tipo 1)
-str_wagon_Gen5_Silo_Type2                               :Carro silo di quinta generazione (Tipo 2)
-str_wagon_Gen5_Hopper_Type1                             :Carro tramoggia a scarico automatico di quinta generazione (Tipo 1)
-str_wagon_Gen5_Hopper_Type2                             :Carro tramoggia a scarico automatico di quinta generazione (Tipo 2)
-str_wagon_Gen5_Car_Transporter                  :Carro per trasporto auto di quinta generazione
-str_wagon_Gen5_Container_Carrier                :Carro porta-container di quinta generazione
-str_wagon_Gen5_Centerbeam                               :Carro piatto con trave centrale di quinta generazione
-str_wagon_Gen5_Container_Doublestack    :Carro porta-container doppio di quinta generazione
-str_wagon_Gen5_Superheavy_Flatcar               :Carro piatto per carichi pesanti di quinta generazione
+str_mu_Wagon_Gen1_Flat_Wagon                               :Carro piatto di prima generazione
+str_mu_Wagon_Gen1_Boxcar                                   :Carro chiuso in legno di prima generazione
+str_mu_Wagon_Gen1_Tanker                                   :Carro cisterna di prima generazione
+str_mu_Wagon_Gen1_Open_Wagon                               :Carro aperto in legno di prima generazione
+str_mu_Wagon_Gen2_Flat_Wagon                               :Carro piatto di seconda generazione
+str_mu_Wagon_Gen2_Boxcar_Type1                             :Carro chiuso in legno di seconda generazione (Tipo 1)
+str_mu_Wagon_Gen2_Boxcar_Type2                             :Carro chiuso in legno di seconda generazione (Tipo 2)
+str_mu_Wagon_Gen2_Tanker                                   :Carro cisterna di seconda generazione
+str_mu_Wagon_Gen2_Open_Wagon                               :Carro aperto in legno di seconda generazione
+str_mu_Wagon_Gen2_Silo                                     :Carro silo di seconda generazione
+str_mu_Wagon_Gen2_Hopper                                   :Carro tramoggia in legno di seconda generazione
+str_mu_Wagon_Gen3_Flat_Wagon                               :Carro piatto di terza generazione
+str_mu_Wagon_Gen3_Boxcar_Type1                     :Carro chiuso in legno di terza generazione (Tipo 1)
+str_mu_Wagon_Gen3_Boxcar_Type2                     :Carro chiuso in legno di terza generazione (Tipo 2)
+str_mu_Wagon_Gen3_Tanker                                   :Carro cisterna di terza generazione
+str_mu_Wagon_Gen3_Open_Wagon                               :Carro aperto di terza generazione
+str_mu_Wagon_Gen3_Silo_Type1                               :Carro silo di terza generazione (Tipo 1)
+str_mu_Wagon_Gen3_Silo_Type2                               :Carro silo di terza generazione (Tipo 2)
+str_mu_Wagon_Gen3_Hopper                                   :Carro tramoggia di terza generazione
+str_mu_Wagon_Gen4_Flatcar                                  :Carro piatto di quarta generazione
+str_mu_Wagon_Gen4_Heavy_Flatcar                    :Carro piatto ad alta capacità di quarta generazione
+str_mu_Wagon_Gen4_Boxcar_Type1                             :Carro chiuso di quarta generazione (Tipo 1)
+str_mu_Wagon_Gen4_Boxcar_Type2                             :Carro chiuso di quarta generazione (Tipo 2)
+str_mu_Wagon_Gen4_Tanker                                   :Carro cisterna di quarta generazione
+str_mu_Wagon_Gen4_Gondola                                  :Carro aperto a sponde alte di quarta generazione
+str_mu_Wagon_Gen4_Silo_Type1                               :Carro silo di quarta generazione (Tipo 1)
+str_mu_Wagon_Gen4_Silo_Type2                               :Carro silo di quarta generazione (Tipo 2)
+str_mu_Wagon_Gen4_Hopper_Type1                             :Carro tramoggia a scarico automatico di quarta generazione (Tipo 1)
+str_mu_Wagon_Gen4_Hopper_Type2                             :Carro tramoggia a scarico automatico di quarta generazione (Tipo 2)
+str_mu_Wagon_Gen4_Car_Transporter                  :Carro per trasporto auto di quarta generazione
+str_mu_Wagon_Gen4_Container_Carrier                :Carro porta-container di quarta generazione
+str_mu_Wagon_Gen4_Centerbeam                               :Carro piatto con trave centrale di quarta generazione
+str_mu_Wagon_Gen5_Flatcar                                  :Carro piatto di quinta generazione
+str_mu_Wagon_Gen5_Heavy_Flatcar                    :Carro piatto ad alta capacità di quinta generazione
+str_mu_Wagon_Gen5_Boxcar_Type1                             :Carro chiuso di quinta generazione (Tipo 1)
+str_mu_Wagon_Gen5_Boxcar_Type2                             :Carro chiuso di quinta generazione (Tipo 2)
+str_mu_Wagon_Gen5_Tanker                                   :Carro cisterna di quinta generazione
+str_mu_Wagon_Gen5_Gondola                                  :Carro aperto a sponde alte di quinta generazione
+str_mu_Wagon_Gen5_Silo_Type1                               :Carro silo di quinta generazione (Tipo 1)
+str_mu_Wagon_Gen5_Silo_Type2                               :Carro silo di quinta generazione (Tipo 2)
+str_mu_Wagon_Gen5_Hopper_Type1                             :Carro tramoggia a scarico automatico di quinta generazione (Tipo 1)
+str_mu_Wagon_Gen5_Hopper_Type2                             :Carro tramoggia a scarico automatico di quinta generazione (Tipo 2)
+str_mu_Wagon_Gen5_Car_Transporter                  :Carro per trasporto auto di quinta generazione
+str_mu_Wagon_Gen5_Container_Carrier                :Carro porta-container di quinta generazione
+str_mu_Wagon_Gen5_Centerbeam                               :Carro piatto con trave centrale di quinta generazione
+str_mu_Wagon_Gen5_Container_Doublestack    :Carro porta-container doppio di quinta generazione
+str_mu_Wagon_Gen5_Superheavy_Flatcar               :Carro piatto per carichi pesanti di quinta generazione
 
-str_wagon_Service_Car_Type1                             :Carro di servizio (Tipo 1)
-str_wagon_Service_Car_Type2                             :Carro di servizio (Tipo 2)
+str_mu_Wagon_Service_Car_Type1                             :Carro di servizio (Tipo 1)
+str_mu_Wagon_Service_Car_Type2                             :Carro di servizio (Tipo 2)
 
 #coaches
-str_coach_Gen1_Wooden_2_axle_Compartment_Coach                  :Carrozza in legno a 2 assi a scompartimenti
-str_coach_Gen1_Wooden_2_axle_Regional_Coach                     :Carrozza medie distanze in legno a 2 assi
-str_coach_Gen1_Wooden_2_axle_Mail_Coach                                 :Carrozza postale in legno a 2 assi
-str_coach_Gen1_Clerestory_Compartment_Coach                     :Carrozza a scompartimenti con lucernaio
-str_coach_Gen1_Clerestory_Regional_Coach                                :Carrozza medie distanze con lucernaio
-str_coach_Gen1_Clerestory_Mail_Coach                                    :Carrozza postale con lucernaio
-str_coach_Gen1_Wooden_3_axle_Compartment_Coach                  :Carrozza in legno a 3 assi a scompartimenti
-str_coach_Gen1_Wooden_3_axle_Regional_Coach                     :Carrozza medie distanze in legno a 3 assi
-str_coach_Gen1_Wooden_3_axle_Mail_Coach                                 :Carrozza postale in legno a 3 assi
-str_coach_Gen2_Heavyweight_Intercity_Coach                              :Carrozza Intercity
-str_coach_Gen2_Heavyweight_Mail_Coach                                   :Carrozza postale pesante
-str_coach_Gen2_Steel_Intercity_Coach                                    :Carrozza Intercity in acciaio
-str_coach_Gen2_Steel_Compartment_Coach                                  :Carrozza in acciaio a scompartimenti
-str_coach_Gen2_Steel_Regional_Coach                                     :Carrozza medie distanze in acciaio
-str_coach_Gen2_Steel_Mail_Coach                                                 :Carrozza postale in acciaio
-str_coach_Gen2_Steel_2_axle_Compartment_Coach                   :Carrozza in acciaio a 2 assi a scompartimenti
-str_coach_Gen2_Steel_2_axle_Regional_Coach                              :Carrozza medie distanze in acciaio a 2 assi
-str_coach_Gen2_Steel_2_axle_Mail_Coach                                  :Carrozza postale in acciaio a 2 assi
-str_coach_Gen2_Steel_3_axle_Compartment_Coach                   :Carrozza in acciaio a 3 assi a scompartimenti
-str_coach_Gen2_Steel_3_axle_Regional_Coach                              :Carrozza medie distanze in acciaio a 3 assi
-str_coach_Gen2_Steel_3_axle_Mail_Coach                                  :Carrozza postale in acciaio a 3 assi
-str_coach_Gen3_Steel_Lightweight_Intercity_Coach                :Carrozza Intercity leggera in acciaio
-str_coach_Gen3_Steel_Lightweight_Regional_Coach                 :Carrozza medie distanze leggera in acciaio
-str_coach_Gen3_Steel_Lightweight_Mail_Coach                     :Carrozza postale leggera in acciaio
-str_coach_Gen3_Aluminium_Lightweight_Intercity_Coach    :Carrozza Intercity in alluminio
-str_coach_Gen3_Aluminium_Lightweight_Regional_Coach     :Carrozza medie distanze in alluminio
-str_coach_Gen3_Aluminium_Lightweight_Mail_Coach                 :Carrozza postale in alluminio
-str_coach_Gen3_Gallery_Car                                                              :Carrozza panoramica
-str_coach_Gen3_Mk1_Intercity_Coach                                              :Carrozza Intercity Mk1
-str_coach_Gen3_Mk1_Regional_Coach                                               :Carrozza regionale Mk1
-str_coach_Gen3_Mk1_Mail_Coach                                                   :Carrozza postale Mk1
-str_coach_Gen3_UIC_X_Intercity_Coach                                    :Carrozza Intercity UIC-X
-str_coach_Gen3_TEE_Intercity_Coach                                              :Carrozza Intercity tipo "TEE"
-str_coach_Gen3_UIC_X_Regional_Coach                                     :Carrozza medie distanze UIC-X
-str_coach_Gen3_Umbauwagen_Local_Coach                                   :Carrozza locale tipo 'Umbauwagen'
-str_coach_Gen3_Doppelstockwagen_Local_Coach                     :Carrozza locale tipo 'Doppelstockwagen'
-str_coach_Gen3_UIC_X_Mail_Coach                                                 :Carrozza postale UIC-X
-str_coach_Gen3_Indian_Intercity_Coach                                   :Carrozza Intercity indiana
-str_coach_Gen3_Indian_Local_Coach                                               :Carrozza locale indiana
-str_coach_Gen3_Indian_Regional_Coach                                    :Carrozza regionale indiana
-str_coach_Gen3_Indian_Mail_Coach                                                :Carrozza postale indiana
-str_coach_Gen4_Eurofima_Intercity_Coach                                 :Carrozza tipo "Eurofima"
-str_coach_Gen4_InterRegio_Coach                                                 :Carrozza tipo "InterRegio"
-str_coach_Gen4_Silberling_Commuter_Coach                                :Carrozza pendolare tipo 'Silberling'
-str_coach_Gen4_Eurofima_Mail_Coach                                              :Carrozza postale tipo "Eurofima"
-str_coach_Gen4_Double_Decker_Coach                                              :Carrozza a due piani
-str_coach_Gen4_Russian_Intercity_Coach                                  :Carrozza Intercity russa
-str_coach_Gen4_Russian_Regional_Coach                                   :Carrozza regionale russa
-str_coach_Gen4_Russian_Mail_Coach                                               :Carrozza postale russa
-str_coach_Gen4_Superliner_Coach                                                 :Carrozza tipo "Superliner"
-str_coach_Gen4_Superliner_California                                    :Carrozza tipo "Superliner California"
-str_coach_Gen4_Amfleet_Regional_Coach                                   :Carrozza medie distanze tipo "Amfleet"
-str_coach_Gen4_Amfleet_Intercity_Coach                                  :Carrozza Intercity tipo "Amfleet"
-str_coach_Gen4_Comet_Commuter_Coach                                     :Carrozza pendolare tipo "Comet"
-str_coach_Gen4_Horizon_Regional_Coach                                   :Carrozza medie distanze  tipo "Horizon"
-str_coach_Gen4_Horizon_Baggage_Coach                                    :Carrozza bagagli tipo "Horizon"
-str_coach_Gen4_Bombardier_Bi_level                                              :Carrozza Bombardier a due piani
-str_coach_Gen5_High_Speed_Coach                                                 :Carrozza per treni ad alta velocità
-str_coach_Gen5_Modern_Regional_Coach                                    :Carozza medie distanze moderna
-str_coach_Gen5_Modern_Commuter_Coach                                    :Carrozza pendolare moderna
-str_coach_Gen5_Modern_Double_Decker_Coach                               :Carrozza a due piani moderna
-str_coach_Gen5_High_Speed_Double_Decker_IC2000                  :Carrozza a due piani per treni ad alta velocità (IC2000)
-str_coach_Gen5_High_Speed_Mail_Coach                                    :Carrozza postale per treni ad alta velocità
-str_coach_Gen5_Talgo_Pendular                                                   :Carrozza Talgo Pendular
-str_coach_Gen5_Talgo_Pendular_Mail                                              :Carrozza postale Talgo Pendular
-str_coach_Gen6_Grand_Voyager_Coach                                              :Carrozza tipo "Grand Voyager"
-str_coach_Gen6_Grand_Regio_Coach                                                :Carrozza tipo "Grand Regio"
-str_coach_Gen6_Metropolis_Coach                                                 :Carrozza Metropolis
-str_coach_Gen6_Speedmail_Coach                                                  :Carrozza postale Speedmail
-str_coach_Gen6_Super_Regio_Coach                                                :Carrozza tipo "Super Regio"
-str_coach_Gen6_Super_Voyager_Coach                                              :Carrozza tipo "Super Voyager"
+str_mu_Coach_Gen1_Wooden_2_axle_Compartment_Coach                  :Carrozza in legno a 2 assi a scompartimenti
+str_mu_Coach_Gen1_Wooden_2_axle_Regional_Coach                     :Carrozza medie distanze in legno a 2 assi
+str_mu_Coach_Gen1_Wooden_2_axle_Mail_Coach                                 :Carrozza postale in legno a 2 assi
+str_mu_Coach_Gen1_Clerestory_Compartment_Coach                     :Carrozza a scompartimenti con lucernaio
+str_mu_Coach_Gen1_Clerestory_Regional_Coach                                :Carrozza medie distanze con lucernaio
+str_mu_Coach_Gen1_Clerestory_Mail_Coach                                    :Carrozza postale con lucernaio
+str_mu_Coach_Gen1_Wooden_3_axle_Compartment_Coach                  :Carrozza in legno a 3 assi a scompartimenti
+str_mu_Coach_Gen1_Wooden_3_axle_Regional_Coach                     :Carrozza medie distanze in legno a 3 assi
+str_mu_Coach_Gen1_Wooden_3_axle_Mail_Coach                                 :Carrozza postale in legno a 3 assi
+str_mu_Coach_Gen2_Heavyweight_Intercity_Coach                              :Carrozza Intercity
+str_mu_Coach_Gen2_Heavyweight_Mail_Coach                                   :Carrozza postale pesante
+str_mu_Coach_Gen2_Steel_Intercity_Coach                                    :Carrozza Intercity in acciaio
+str_mu_Coach_Gen2_Steel_Compartment_Coach                                  :Carrozza in acciaio a scompartimenti
+str_mu_Coach_Gen2_Steel_Regional_Coach                                     :Carrozza medie distanze in acciaio
+str_mu_Coach_Gen2_Steel_Mail_Coach                                                 :Carrozza postale in acciaio
+str_mu_Coach_Gen2_Steel_2_axle_Compartment_Coach                   :Carrozza in acciaio a 2 assi a scompartimenti
+str_mu_Coach_Gen2_Steel_2_axle_Regional_Coach                              :Carrozza medie distanze in acciaio a 2 assi
+str_mu_Coach_Gen2_Steel_2_axle_Mail_Coach                                  :Carrozza postale in acciaio a 2 assi
+str_mu_Coach_Gen2_Steel_3_axle_Compartment_Coach                   :Carrozza in acciaio a 3 assi a scompartimenti
+str_mu_Coach_Gen2_Steel_3_axle_Regional_Coach                              :Carrozza medie distanze in acciaio a 3 assi
+str_mu_Coach_Gen2_Steel_3_axle_Mail_Coach                                  :Carrozza postale in acciaio a 3 assi
+str_mu_Coach_Gen3_Steel_Lightweight_Intercity_Coach                :Carrozza Intercity leggera in acciaio
+str_mu_Coach_Gen3_Steel_Lightweight_Regional_Coach                 :Carrozza medie distanze leggera in acciaio
+str_mu_Coach_Gen3_Steel_Lightweight_Mail_Coach                     :Carrozza postale leggera in acciaio
+str_mu_Coach_Gen3_Aluminium_Lightweight_Intercity_Coach    :Carrozza Intercity in alluminio
+str_mu_Coach_Gen3_Aluminium_Lightweight_Regional_Coach     :Carrozza medie distanze in alluminio
+str_mu_Coach_Gen3_Aluminium_Lightweight_Mail_Coach                 :Carrozza postale in alluminio
+str_mu_Coach_Gen3_Gallery_Car                                                              :Carrozza panoramica
+str_mu_Coach_Gen3_Mk1_Intercity_Coach                                              :Carrozza Intercity Mk1
+str_mu_Coach_Gen3_Mk1_Regional_Coach                                               :Carrozza regionale Mk1
+str_mu_Coach_Gen3_Mk1_Mail_Coach                                                   :Carrozza postale Mk1
+str_mu_Coach_Gen3_UIC_X_Intercity_Coach                                    :Carrozza Intercity UIC-X
+str_mu_Coach_Gen3_TEE_Intercity_Coach                                              :Carrozza Intercity tipo "TEE"
+str_mu_Coach_Gen3_UIC_X_Regional_Coach                                     :Carrozza medie distanze UIC-X
+str_mu_Coach_Gen3_Umbauwagen_Local_Coach                                   :Carrozza locale tipo 'Umbauwagen'
+str_mu_Coach_Gen3_Doppelstockwagen_Local_Coach                     :Carrozza locale tipo 'Doppelstockwagen'
+str_mu_Coach_Gen3_UIC_X_Mail_Coach                                                 :Carrozza postale UIC-X
+str_mu_Coach_Gen3_Indian_Intercity_Coach                                   :Carrozza Intercity indiana
+str_mu_Coach_Gen3_Indian_Local_Coach                                               :Carrozza locale indiana
+str_mu_Coach_Gen3_Indian_Regional_Coach                                    :Carrozza regionale indiana
+str_mu_Coach_Gen3_Indian_Mail_Coach                                                :Carrozza postale indiana
+str_mu_Coach_Gen4_Eurofima_Intercity_Coach                                 :Carrozza tipo "Eurofima"
+str_mu_Coach_Gen4_InterRegio_Coach                                                 :Carrozza tipo "InterRegio"
+str_mu_Coach_Gen4_Silberling_Commuter_Coach                                :Carrozza pendolare tipo 'Silberling'
+str_mu_Coach_Gen4_Eurofima_Mail_Coach                                              :Carrozza postale tipo "Eurofima"
+str_mu_Coach_Gen4_Double_Decker_Coach                                              :Carrozza a due piani
+str_mu_Coach_Gen4_Russian_Intercity_Coach                                  :Carrozza Intercity russa
+str_mu_Coach_Gen4_Russian_Regional_Coach                                   :Carrozza regionale russa
+str_mu_Coach_Gen4_Russian_Mail_Coach                                               :Carrozza postale russa
+str_mu_Coach_Gen4_Superliner_Coach                                                 :Carrozza tipo "Superliner"
+str_mu_Coach_Gen4_Superliner_California                                    :Carrozza tipo "Superliner California"
+str_mu_Coach_Gen4_Amfleet_Regional_Coach                                   :Carrozza medie distanze tipo "Amfleet"
+str_mu_Coach_Gen4_Amfleet_Intercity_Coach                                  :Carrozza Intercity tipo "Amfleet"
+str_mu_Coach_Gen4_Comet_Commuter_Coach                                     :Carrozza pendolare tipo "Comet"
+str_mu_Coach_Gen4_Horizon_Regional_Coach                                   :Carrozza medie distanze  tipo "Horizon"
+str_mu_Coach_Gen4_Horizon_Baggage_Coach                                    :Carrozza bagagli tipo "Horizon"
+str_mu_Coach_Gen4_Bombardier_Bi_level                                              :Carrozza Bombardier a due piani
+str_mu_Coach_Gen5_High_Speed_Coach                                                 :Carrozza per treni ad alta velocità
+str_mu_Coach_Gen5_Modern_Regional_Coach                                    :Carozza medie distanze moderna
+str_mu_Coach_Gen5_Modern_Commuter_Coach                                    :Carrozza pendolare moderna
+str_mu_Coach_Gen5_Modern_Double_Decker_Coach                               :Carrozza a due piani moderna
+str_mu_Coach_Gen5_High_Speed_Double_Decker_IC2000                  :Carrozza a due piani per treni ad alta velocità (IC2000)
+str_mu_Coach_Gen5_High_Speed_Mail_Coach                                    :Carrozza postale per treni ad alta velocità
+str_mu_Coach_Gen5_Talgo_Pendular                                                   :Carrozza Talgo Pendular
+str_mu_Coach_Gen5_Talgo_Pendular_Mail                                              :Carrozza postale Talgo Pendular
+str_mu_Coach_Gen6_Grand_Voyager_Coach                                              :Carrozza tipo "Grand Voyager"
+str_mu_Coach_Gen6_Grand_Regio_Coach                                                :Carrozza tipo "Grand Regio"
+str_mu_Coach_Gen6_Metropolis_Coach                                                 :Carrozza Metropolis
+str_mu_Coach_Gen6_Speedmail_Coach                                                  :Carrozza postale Speedmail
+str_mu_Coach_Gen6_Super_Regio_Coach                                                :Carrozza tipo "Super Regio"
+str_mu_Coach_Gen6_Super_Voyager_Coach                                              :Carrozza tipo "Super Voyager"
 
 #special wagons
-str_mu_wagon_unpowered                  :Carrozza per treno articolato (non motorizzata)
-str_mtro_wagon_unpowered                :Carrozza della metropolitana (non motorizzata)
-str_mglv_wagon_unpowered                :Carozza maglev (non motorizzata)
-str_mu_cargo_wagon_unpowered    :Carrozza per treno merci articolato (non motorizzata)
-str_mu_wagon_powered                    :Carrozza per treno articolato (motorizzata)
-str_mtro_wagon_powered                  :Carrozza della metropolitana (motorizzata)
-str_mglv_wagon_powered                  :Carrozza maglev (motorizzata)
-str_mu_cargo_wagon_powered              :Carrozza per treno merci articolato (motorizzata)
+str_mu_MU_Wagon_Unpowered                  :Carrozza per treno articolato (non motorizzata)
+str_mtro_Metro_Wagon_Unpowered                :Carrozza della metropolitana (non motorizzata)
+str_mglv_Maglev_Wagon_Unpowered                :Carozza maglev (non motorizzata)
+str_mu_MU_Cargo_Wagon_Unpowered    :Carrozza per treno merci articolato (non motorizzata)
+str_mu_MU_Wagon_Powered                    :Carrozza per treno articolato (motorizzata)
+str_mtro_Metro_Wagon_Powered                  :Carrozza della metropolitana (motorizzata)
+str_mglv_Maglev_Wagon_Powered                  :Carrozza maglev (motorizzata)
+str_mu_MU_Cargo_Wagon_Powered              :Carrozza per treno merci articolato (motorizzata)
 
 #Obsolete vehicles
 

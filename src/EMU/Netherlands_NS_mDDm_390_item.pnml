@@ -50,7 +50,7 @@ item(FEAT_TRAINS, ITEM ) {
 		PURCHASETEXTSWITCHCALL
 		default: switch_emu_Netherlands_NS_mDDm_390_reversed;
 	}
-	livery_override (item_mu_wagon_unpowered ) {
+	livery_override (item_mu_MU_Wagon_Unpowered ) {
 		LOADINGSPEEDPROPERTY
 		RUNNINGCOSTMUWAGONUNPOWEREDSWITCHCALL
 		weight: WEIGHTMUWAGONUNPOWERED
@@ -58,7 +58,7 @@ item(FEAT_TRAINS, ITEM ) {
 		length: WAGON_LENGTH;
 		default: switch_emu_Netherlands_NS_mDDm_390_cargo_selection;
 	}
-	livery_override (item_mu_wagon_powered ) {
+	livery_override (item_mu_MU_Wagon_Powered ) {
 		LOADINGSPEEDPROPERTY
 		RUNNINGCOSTMUWAGONPOWEREDSWITCHCALL
 		power: POWERMUWAGONPOWERED

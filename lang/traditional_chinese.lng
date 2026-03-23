@@ -112,10 +112,10 @@ str_mglv_China_Transrapid       :上海 Transrapid (磁浮)
 #coaches
 
 #special wagons
-str_mtro_wagon_unpowered                :捷運車廂 (無動力)
-str_mglv_wagon_unpowered                :磁浮車廂 (無動力)
-str_mtro_wagon_powered                  :捷運車廂 (有動力)
-str_mglv_wagon_powered                  :磁浮車廂 (有動力)
+str_mtro_Metro_Wagon_Unpowered                :捷運車廂 (無動力)
+str_mglv_Maglev_Wagon_Unpowered                :磁浮車廂 (無動力)
+str_mtro_Metro_Wagon_Powered                  :捷運車廂 (有動力)
+str_mglv_Maglev_Wagon_Powered                  :磁浮車廂 (有動力)
 
 #Obsolete vehicles
 

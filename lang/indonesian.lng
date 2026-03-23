@@ -12,7 +12,7 @@ STR_GRF_URL             :https://github.com/nemethviktor/2ccts_revival
 STR_PARAM_DIVIDE_2                  :1/2
 
 #region parameters
-STR_PARAM_REGION_NORTHAMERICA_DESC              :Gunakan kendaraan dari Amerika Utara
+STR_PARAM_REGION_NORTH_AMERICA_DESC              :Gunakan kendaraan dari Amerika Utara
 
 #loading speed parameter
 STR_PARAM_LOADINGSPEED_SLOW                             :Lambat
@@ -92,8 +92,8 @@ str_mtro_Germany_Berlin_U_Bahn_IK :Berlin U-Bahn IK (Metro)
 
 
 #coaches
-str_coach_Gen3_Indian_Regional_Coach                                    :Gerbong Daerah India
-str_coach_Gen4_Superliner_California                                    :Superliner California
+str_mu_Coach_Gen3_Indian_Regional_Coach                                    :Gerbong Daerah India
+str_mu_Coach_Gen4_Superliner_California                                    :Superliner California
 
 #special wagons
 

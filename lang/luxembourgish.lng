@@ -32,20 +32,20 @@ STR_PARAM_CONCEPT                                               :Konzeptgefierer
 STR_PARAM_CONCEPT_DESC                                  :Benotz Konzeptgefierer
 STR_PARAM_REGION_AFRICA                                 :Afrika
 STR_PARAM_REGION_AFRICA_DESC                    :Benotz Gefierer aus Afrika
-STR_PARAM_REGION_NORTHAMERICA                   :Nordamerika
-STR_PARAM_REGION_NORTHAMERICA_DESC              :Benotz Gefierer aus Nordamerika
-STR_PARAM_REGION_SOUTHAMERICA                   :Südamerika
-STR_PARAM_REGION_SOUTHAMERICA_DESC              :Benotz Gefierer aus Südamerika
+STR_PARAM_REGION_NORTH_AMERICA                   :Nordamerika
+STR_PARAM_REGION_NORTH_AMERICA_DESC              :Benotz Gefierer aus Nordamerika
+STR_PARAM_REGION_SOUTH_AMERICA                   :Südamerika
+STR_PARAM_REGION_SOUTH_AMERICA_DESC              :Benotz Gefierer aus Südamerika
 STR_PARAM_REGION_ASIA                                   :Asien
 STR_PARAM_REGION_ASIA_DESC                              :Benotz Gefierer aus Asien
-STR_PARAM_REGION_NORTHERNEUROPE                 :Nordeuropa
-STR_PARAM_REGION_NORTHERNEUROPE_DESC    :Benotz Gefierer aus Nordeuropa
-STR_PARAM_REGION_EASTERNEUROPE                  :Osteuropa
-STR_PARAM_REGION_EASTERNEUROPE_DESC             :Benotz Gefierer aus Osteuropa
-STR_PARAM_REGION_SOUTHERNEUROPE                 :Südeuropa
-STR_PARAM_REGION_SOUTHERNEUROPE_DESC    :Benotz Gefierer aus Südeuropa
-STR_PARAM_REGION_WESTERNEUROPE                  :Westeuropa
-STR_PARAM_REGION_WESTERNEUROPE_DESC             :Benotz Gefierer aus Westeuropa
+STR_PARAM_REGION_NORTHERN_EUROPE                 :Nordeuropa
+STR_PARAM_REGION_NORTHERN_EUROPE_DESC    :Benotz Gefierer aus Nordeuropa
+STR_PARAM_REGION_EASTERN_EUROPE                  :Osteuropa
+STR_PARAM_REGION_EASTERN_EUROPE_DESC             :Benotz Gefierer aus Osteuropa
+STR_PARAM_REGION_SOUTHERN_EUROPE                 :Südeuropa
+STR_PARAM_REGION_SOUTHERN_EUROPE_DESC    :Benotz Gefierer aus Südeuropa
+STR_PARAM_REGION_WESTERN_EUROPE                  :Westeuropa
+STR_PARAM_REGION_WESTERN_EUROPE_DESC             :Benotz Gefierer aus Westeuropa
 STR_PARAM_REGION_OCEANIA                                :Ozeanien
 STR_PARAM_REGION_OCEANIA_DESC                   :Benotz Gefierer aus Ozeanien
 
@@ -714,139 +714,139 @@ str_mglv_China_Transrapid       :Shanghai Transrapid (Maglev)
 str_mglv_Japan_MLX01_901        :JR MLX01-901 (Maglev)
 
 #wagons
-str_wagon_Gen1_Flat_Wagon                               :1t Gen Flaachwaggon
-str_wagon_Gen1_Boxcar                                   :1t Gen holze Këschtewaggon
-str_wagon_Gen1_Tanker                                   :1t Gen Tankwaggon
-str_wagon_Gen1_Open_Wagon                               :1t Gen holzen openen Waggon
-str_wagon_Gen2_Flat_Wagon                               :2t Gen Flaachwaggon
-str_wagon_Gen2_Boxcar_Type1                             :2t Gen holze Këschtewaggon (Typ 1)
-str_wagon_Gen2_Boxcar_Type2                             :2t Gen holze Këschtewaggon (Typ 2)
-str_wagon_Gen2_Tanker                                   :2t Gen Tankwaggon
-str_wagon_Gen2_Open_Wagon                               :2t Gen holzen openen Waggon
-str_wagon_Gen2_Silo                                     :2t Gen Siloswaggon
-str_wagon_Gen2_Hopper                                   :2t Gen holze Kippwaggon
-str_wagon_Gen3_Flat_Wagon                               :3t Gen Flaachwaggon
-str_wagon_Gen3_Boxcar_Type1                     :3t Gen holze Këschtewaggon (Typ 1)
-str_wagon_Gen3_Boxcar_Type2                     :3t Gen holze Këschtewaggon (Typ 2)
-str_wagon_Gen3_Tanker                                   :3t Gen Tankwaggon
-str_wagon_Gen3_Open_Wagon                               :3t Gen openen Waggon
-str_wagon_Gen3_Silo_Type1                               :3t Gen Siloswaggon (Typ 1)
-str_wagon_Gen3_Silo_Type2                               :3t Gen Siloswaggon (Typ 2)
-str_wagon_Gen3_Hopper                                   :3t Gen Kippwaggon
-str_wagon_Gen4_Flatcar                                  :4t Gen Flaachwaggon
-str_wagon_Gen4_Heavy_Flatcar                    :4t Gen schwéiere Flaachwaggon
-str_wagon_Gen4_Boxcar_Type1                             :4t Gen Këschtewaggon (Typ 1)
-str_wagon_Gen4_Boxcar_Type2                             :4t Gen Këschtewaggon (Typ 2)
-str_wagon_Gen4_Tanker                                   :4t Gen Tankwaggon
-str_wagon_Gen4_Gondola                                  :4t Gen Flachwaggon
-str_wagon_Gen4_Silo_Type1                               :4t Gen Siloswaggon (Typ 1)
-str_wagon_Gen4_Silo_Type2                               :4t Gen Siloswaggon (Typ 2)
-str_wagon_Gen4_Hopper_Type1                             :4t Gen Selbstentlader Kippwaggon (Typ 1)
-str_wagon_Gen4_Hopper_Type2                             :4t Gen Selbstentlader Kippwaggon (Typ 2)
-str_wagon_Gen4_Car_Transporter                  :4t Gen Autoswaggon
-str_wagon_Gen4_Container_Carrier                :4t Gen Containerwaggon
-str_wagon_Gen4_Centerbeam                               :4t Gen S-Flaachwaggon
-str_wagon_Gen5_Flatcar                                  :5t Gen Flaachwaggon
-str_wagon_Gen5_Heavy_Flatcar                    :5t Gen schwéiere Flaachwaggon
-str_wagon_Gen5_Boxcar_Type1                             :5t Gen Këschtewaggon (Typ 1)
-str_wagon_Gen5_Boxcar_Type2                             :5t Gen Këschtewaggon (Typ 2)
-str_wagon_Gen5_Tanker                                   :5t Gen Tankwaggon
-str_wagon_Gen5_Gondola                                  :5t Gen Flaachwaggon
-str_wagon_Gen5_Silo_Type1                               :5t Gen Siloswaggon (Typ 1)
-str_wagon_Gen5_Silo_Type2                               :5t Gen Siloswaggon (Typ 2)
-str_wagon_Gen5_Hopper_Type1                             :5t Gen Selbstentlader Kippwaggon (Typ 1)
-str_wagon_Gen5_Hopper_Type2                             :5t Gen Selbstentlader Kippwaggon (Typ 2)
-str_wagon_Gen5_Car_Transporter                  :5t Gen Autoswaggon
-str_wagon_Gen5_Container_Carrier                :5t Gen Containerwaggon
-str_wagon_Gen5_Centerbeam                               :5t Gen S-Flaachwaggon
-str_wagon_Gen5_Container_Doublestack    :5t Gen duebele Containerwaggon
-str_wagon_Gen5_Superheavy_Flatcar               :5t Gen Tieflader Flaachwaggon
+str_mu_Wagon_Gen1_Flat_Wagon                               :1t Gen Flaachwaggon
+str_mu_Wagon_Gen1_Boxcar                                   :1t Gen holze Këschtewaggon
+str_mu_Wagon_Gen1_Tanker                                   :1t Gen Tankwaggon
+str_mu_Wagon_Gen1_Open_Wagon                               :1t Gen holzen openen Waggon
+str_mu_Wagon_Gen2_Flat_Wagon                               :2t Gen Flaachwaggon
+str_mu_Wagon_Gen2_Boxcar_Type1                             :2t Gen holze Këschtewaggon (Typ 1)
+str_mu_Wagon_Gen2_Boxcar_Type2                             :2t Gen holze Këschtewaggon (Typ 2)
+str_mu_Wagon_Gen2_Tanker                                   :2t Gen Tankwaggon
+str_mu_Wagon_Gen2_Open_Wagon                               :2t Gen holzen openen Waggon
+str_mu_Wagon_Gen2_Silo                                     :2t Gen Siloswaggon
+str_mu_Wagon_Gen2_Hopper                                   :2t Gen holze Kippwaggon
+str_mu_Wagon_Gen3_Flat_Wagon                               :3t Gen Flaachwaggon
+str_mu_Wagon_Gen3_Boxcar_Type1                     :3t Gen holze Këschtewaggon (Typ 1)
+str_mu_Wagon_Gen3_Boxcar_Type2                     :3t Gen holze Këschtewaggon (Typ 2)
+str_mu_Wagon_Gen3_Tanker                                   :3t Gen Tankwaggon
+str_mu_Wagon_Gen3_Open_Wagon                               :3t Gen openen Waggon
+str_mu_Wagon_Gen3_Silo_Type1                               :3t Gen Siloswaggon (Typ 1)
+str_mu_Wagon_Gen3_Silo_Type2                               :3t Gen Siloswaggon (Typ 2)
+str_mu_Wagon_Gen3_Hopper                                   :3t Gen Kippwaggon
+str_mu_Wagon_Gen4_Flatcar                                  :4t Gen Flaachwaggon
+str_mu_Wagon_Gen4_Heavy_Flatcar                    :4t Gen schwéiere Flaachwaggon
+str_mu_Wagon_Gen4_Boxcar_Type1                             :4t Gen Këschtewaggon (Typ 1)
+str_mu_Wagon_Gen4_Boxcar_Type2                             :4t Gen Këschtewaggon (Typ 2)
+str_mu_Wagon_Gen4_Tanker                                   :4t Gen Tankwaggon
+str_mu_Wagon_Gen4_Gondola                                  :4t Gen Flachwaggon
+str_mu_Wagon_Gen4_Silo_Type1                               :4t Gen Siloswaggon (Typ 1)
+str_mu_Wagon_Gen4_Silo_Type2                               :4t Gen Siloswaggon (Typ 2)
+str_mu_Wagon_Gen4_Hopper_Type1                             :4t Gen Selbstentlader Kippwaggon (Typ 1)
+str_mu_Wagon_Gen4_Hopper_Type2                             :4t Gen Selbstentlader Kippwaggon (Typ 2)
+str_mu_Wagon_Gen4_Car_Transporter                  :4t Gen Autoswaggon
+str_mu_Wagon_Gen4_Container_Carrier                :4t Gen Containerwaggon
+str_mu_Wagon_Gen4_Centerbeam                               :4t Gen S-Flaachwaggon
+str_mu_Wagon_Gen5_Flatcar                                  :5t Gen Flaachwaggon
+str_mu_Wagon_Gen5_Heavy_Flatcar                    :5t Gen schwéiere Flaachwaggon
+str_mu_Wagon_Gen5_Boxcar_Type1                             :5t Gen Këschtewaggon (Typ 1)
+str_mu_Wagon_Gen5_Boxcar_Type2                             :5t Gen Këschtewaggon (Typ 2)
+str_mu_Wagon_Gen5_Tanker                                   :5t Gen Tankwaggon
+str_mu_Wagon_Gen5_Gondola                                  :5t Gen Flaachwaggon
+str_mu_Wagon_Gen5_Silo_Type1                               :5t Gen Siloswaggon (Typ 1)
+str_mu_Wagon_Gen5_Silo_Type2                               :5t Gen Siloswaggon (Typ 2)
+str_mu_Wagon_Gen5_Hopper_Type1                             :5t Gen Selbstentlader Kippwaggon (Typ 1)
+str_mu_Wagon_Gen5_Hopper_Type2                             :5t Gen Selbstentlader Kippwaggon (Typ 2)
+str_mu_Wagon_Gen5_Car_Transporter                  :5t Gen Autoswaggon
+str_mu_Wagon_Gen5_Container_Carrier                :5t Gen Containerwaggon
+str_mu_Wagon_Gen5_Centerbeam                               :5t Gen S-Flaachwaggon
+str_mu_Wagon_Gen5_Container_Doublestack    :5t Gen duebele Containerwaggon
+str_mu_Wagon_Gen5_Superheavy_Flatcar               :5t Gen Tieflader Flaachwaggon
 
-str_wagon_Service_Car_Type1                             :Servicewaggon (Typ 1)
-str_wagon_Service_Car_Type2                             :Servicewaggon (Typ 2)
+str_mu_Wagon_Service_Car_Type1                             :Servicewaggon (Typ 1)
+str_mu_Wagon_Service_Car_Type2                             :Servicewaggon (Typ 2)
 
 #coaches
-str_coach_Gen1_Wooden_2_axle_Compartment_Coach                  :Holzen 2-Achser Abteilwaggon
-str_coach_Gen1_Wooden_2_axle_Regional_Coach                     :Holzen 2-Achser Regionalwaggon
-str_coach_Gen1_Wooden_2_axle_Mail_Coach                                 :Holzen 2-Achser Postwaggon
-str_coach_Gen1_Clerestory_Compartment_Coach                     :Clerestory Abteilwaggon
-str_coach_Gen1_Clerestory_Regional_Coach                                :Clerestory Regionalwaggon
-str_coach_Gen1_Clerestory_Mail_Coach                                    :Clerestory Postwaggon
-str_coach_Gen1_Wooden_3_axle_Compartment_Coach                  :Holzen 3-Achser Abteilwaggon
-str_coach_Gen1_Wooden_3_axle_Regional_Coach                     :Holzen 3-Achser Regionalwaggon
-str_coach_Gen1_Wooden_3_axle_Mail_Coach                                 :Holzen 3-Achser Postwaggon
-str_coach_Gen2_Heavyweight_Intercity_Coach                              :Schwéieren Intercity Passagéierwaggon
-str_coach_Gen2_Heavyweight_Mail_Coach                                   :Schwéiere Postwaggon
-str_coach_Gen2_Steel_Intercity_Coach                                    :Stolen Intercity Passagéierwaggon
-str_coach_Gen2_Steel_Compartment_Coach                                  :Stolenen Abteilwaggon
-str_coach_Gen2_Steel_Regional_Coach                                     :Stolen Regionalwaggon
-str_coach_Gen2_Steel_Mail_Coach                                                 :Stolenen Postwaggon
-str_coach_Gen2_Steel_2_axle_Compartment_Coach                   :Stolen 2-Achser Abteilwaggon
-str_coach_Gen2_Steel_2_axle_Regional_Coach                              :Stolen 2-Achser Regionalwaggon
-str_coach_Gen2_Steel_2_axle_Mail_Coach                                  :Stolen 2-Achser Postwaggon
-str_coach_Gen2_Steel_3_axle_Compartment_Coach                   :Stolen 3-Achser Abteilwaggon
-str_coach_Gen2_Steel_3_axle_Regional_Coach                              :Stolen 3-Achser Regionalwaggon
-str_coach_Gen2_Steel_3_axle_Mail_Coach                                  :Stolen 3-Achser Postwaggon
-str_coach_Gen3_Steel_Lightweight_Intercity_Coach                :Stolen liichtgewiicht Intercity Passagéierwaggon
-str_coach_Gen3_Steel_Lightweight_Regional_Coach                 :Stolen liichtgewiicht Regionalwaggon
-str_coach_Gen3_Steel_Lightweight_Mail_Coach                     :Stolen liichtgewiicht Postwaggon
-str_coach_Gen3_Aluminium_Lightweight_Intercity_Coach    :Liichten aluminiums Intercity Passagéierwaggon
-str_coach_Gen3_Aluminium_Lightweight_Regional_Coach     :Liichten aluminiums Regionalwaggon
-str_coach_Gen3_Aluminium_Lightweight_Mail_Coach                 :Liichten aluminiums Postwaggon
-str_coach_Gen3_Gallery_Car                                                              :Galleriewaggon
-str_coach_Gen3_Mk1_Intercity_Coach                                              :Mk1 Intercity Passagéierwaggon
-str_coach_Gen3_Mk1_Regional_Coach                                               :Mk1 Regionalwaggon
-str_coach_Gen3_Mk1_Mail_Coach                                                   :Mk1 Postwaggon
-str_coach_Gen3_UIC_X_Intercity_Coach                                    :UIC-X Intercity Passagéierwaggon
-str_coach_Gen3_TEE_Intercity_Coach                                              :TEE Intercity Passagéierwaggon
-str_coach_Gen3_UIC_X_Regional_Coach                                     :UIC-X Regionalwaggon
-str_coach_Gen3_Umbauwagen_Local_Coach                                   :'Umbauwagen' Kuerzstreckewaggon
-str_coach_Gen3_Doppelstockwagen_Local_Coach                     :'Dosto' Kuerzstreckewaggon
-str_coach_Gen3_UIC_X_Mail_Coach                                                 :UIC-X Postwaggon
-str_coach_Gen3_Indian_Intercity_Coach                                   :Indeschen Intercity Passagéierwaggon
-str_coach_Gen3_Indian_Local_Coach                                               :Indeschen Kuerzstreckewaggon
-str_coach_Gen3_Indian_Regional_Coach                                    :Indeschen Regionalwaggon
-str_coach_Gen3_Indian_Mail_Coach                                                :Indeschen Postwaggon
-str_coach_Gen4_Eurofima_Intercity_Coach                                 :Eurofima Passagéierwaggon
-str_coach_Gen4_InterRegio_Coach                                                 :InterRegio Passagéierwaggon
-str_coach_Gen4_Silberling_Commuter_Coach                                :'Silberling' Pendlerwaggon
-str_coach_Gen4_Eurofima_Mail_Coach                                              :Eurofima Postwaggon
-str_coach_Gen4_Double_Decker_Coach                                              :Dosto Passagéierwaggon
-str_coach_Gen4_Russian_Intercity_Coach                                  :Russeschen Intercity Passagéierwaggon
-str_coach_Gen4_Russian_Regional_Coach                                   :Russeschen Regionalwaggon
-str_coach_Gen4_Russian_Mail_Coach                                               :Russeschen Postwaggon
-str_coach_Gen4_Superliner_Coach                                                 :Dosto Passagéierwaggon
-str_coach_Gen4_Superliner_California                                    :California Dosto
-str_coach_Gen4_Amfleet_Regional_Coach                                   :Amfleet Regionalwaggon
-str_coach_Gen4_Amfleet_Intercity_Coach                                  :Amfleet Intercity Passagéierwaggon
-str_coach_Gen4_Comet_Commuter_Coach                                     :Comet Pendlerwaggon
-str_coach_Gen4_Horizon_Regional_Coach                                   :Horizon Regionalwaggon
-str_coach_Gen4_Horizon_Baggage_Coach                                    :Horizon Gepäckwaggon
-str_coach_Gen4_Bombardier_Bi_level                                              :Bombardier Dosto
-str_coach_Gen5_High_Speed_Coach                                                 :Héichgeschw. Passagéierwaggon
-str_coach_Gen5_Modern_Regional_Coach                                    :Modernen Regionalwaggon
-str_coach_Gen5_Modern_Commuter_Coach                                    :Modernen Pendlerwaggon
-str_coach_Gen5_Modern_Double_Decker_Coach                               :Modernen Dosto Passagéierwaggon
-str_coach_Gen5_High_Speed_Double_Decker_IC2000                  :Héichgeschw. Dosto (IC2000)
-str_coach_Gen5_High_Speed_Mail_Coach                                    :Héichgeschw. Postwaggon
-str_coach_Gen5_Talgo_Pendular                                                   :Talgo Pendlerwaggon
-str_coach_Gen5_Talgo_Pendular_Mail                                              :Talgo Postwaggon
-str_coach_Gen6_Grand_Voyager_Coach                                              :Grousse Reeswaggon
-str_coach_Gen6_Grand_Regio_Coach                                                :Grousse Regionalwaggon
-str_coach_Gen6_Metropolis_Coach                                                 :Metropolis Passagéierwaggon
-str_coach_Gen6_Speedmail_Coach                                                  :Express Postwaggon
-str_coach_Gen6_Super_Regio_Coach                                                :Super Regionalwaggon
-str_coach_Gen6_Super_Voyager_Coach                                              :Super Reeswaggon
+str_mu_Coach_Gen1_Wooden_2_axle_Compartment_Coach                  :Holzen 2-Achser Abteilwaggon
+str_mu_Coach_Gen1_Wooden_2_axle_Regional_Coach                     :Holzen 2-Achser Regionalwaggon
+str_mu_Coach_Gen1_Wooden_2_axle_Mail_Coach                                 :Holzen 2-Achser Postwaggon
+str_mu_Coach_Gen1_Clerestory_Compartment_Coach                     :Clerestory Abteilwaggon
+str_mu_Coach_Gen1_Clerestory_Regional_Coach                                :Clerestory Regionalwaggon
+str_mu_Coach_Gen1_Clerestory_Mail_Coach                                    :Clerestory Postwaggon
+str_mu_Coach_Gen1_Wooden_3_axle_Compartment_Coach                  :Holzen 3-Achser Abteilwaggon
+str_mu_Coach_Gen1_Wooden_3_axle_Regional_Coach                     :Holzen 3-Achser Regionalwaggon
+str_mu_Coach_Gen1_Wooden_3_axle_Mail_Coach                                 :Holzen 3-Achser Postwaggon
+str_mu_Coach_Gen2_Heavyweight_Intercity_Coach                              :Schwéieren Intercity Passagéierwaggon
+str_mu_Coach_Gen2_Heavyweight_Mail_Coach                                   :Schwéiere Postwaggon
+str_mu_Coach_Gen2_Steel_Intercity_Coach                                    :Stolen Intercity Passagéierwaggon
+str_mu_Coach_Gen2_Steel_Compartment_Coach                                  :Stolenen Abteilwaggon
+str_mu_Coach_Gen2_Steel_Regional_Coach                                     :Stolen Regionalwaggon
+str_mu_Coach_Gen2_Steel_Mail_Coach                                                 :Stolenen Postwaggon
+str_mu_Coach_Gen2_Steel_2_axle_Compartment_Coach                   :Stolen 2-Achser Abteilwaggon
+str_mu_Coach_Gen2_Steel_2_axle_Regional_Coach                              :Stolen 2-Achser Regionalwaggon
+str_mu_Coach_Gen2_Steel_2_axle_Mail_Coach                                  :Stolen 2-Achser Postwaggon
+str_mu_Coach_Gen2_Steel_3_axle_Compartment_Coach                   :Stolen 3-Achser Abteilwaggon
+str_mu_Coach_Gen2_Steel_3_axle_Regional_Coach                              :Stolen 3-Achser Regionalwaggon
+str_mu_Coach_Gen2_Steel_3_axle_Mail_Coach                                  :Stolen 3-Achser Postwaggon
+str_mu_Coach_Gen3_Steel_Lightweight_Intercity_Coach                :Stolen liichtgewiicht Intercity Passagéierwaggon
+str_mu_Coach_Gen3_Steel_Lightweight_Regional_Coach                 :Stolen liichtgewiicht Regionalwaggon
+str_mu_Coach_Gen3_Steel_Lightweight_Mail_Coach                     :Stolen liichtgewiicht Postwaggon
+str_mu_Coach_Gen3_Aluminium_Lightweight_Intercity_Coach    :Liichten aluminiums Intercity Passagéierwaggon
+str_mu_Coach_Gen3_Aluminium_Lightweight_Regional_Coach     :Liichten aluminiums Regionalwaggon
+str_mu_Coach_Gen3_Aluminium_Lightweight_Mail_Coach                 :Liichten aluminiums Postwaggon
+str_mu_Coach_Gen3_Gallery_Car                                                              :Galleriewaggon
+str_mu_Coach_Gen3_Mk1_Intercity_Coach                                              :Mk1 Intercity Passagéierwaggon
+str_mu_Coach_Gen3_Mk1_Regional_Coach                                               :Mk1 Regionalwaggon
+str_mu_Coach_Gen3_Mk1_Mail_Coach                                                   :Mk1 Postwaggon
+str_mu_Coach_Gen3_UIC_X_Intercity_Coach                                    :UIC-X Intercity Passagéierwaggon
+str_mu_Coach_Gen3_TEE_Intercity_Coach                                              :TEE Intercity Passagéierwaggon
+str_mu_Coach_Gen3_UIC_X_Regional_Coach                                     :UIC-X Regionalwaggon
+str_mu_Coach_Gen3_Umbauwagen_Local_Coach                                   :'Umbauwagen' Kuerzstreckewaggon
+str_mu_Coach_Gen3_Doppelstockwagen_Local_Coach                     :'Dosto' Kuerzstreckewaggon
+str_mu_Coach_Gen3_UIC_X_Mail_Coach                                                 :UIC-X Postwaggon
+str_mu_Coach_Gen3_Indian_Intercity_Coach                                   :Indeschen Intercity Passagéierwaggon
+str_mu_Coach_Gen3_Indian_Local_Coach                                               :Indeschen Kuerzstreckewaggon
+str_mu_Coach_Gen3_Indian_Regional_Coach                                    :Indeschen Regionalwaggon
+str_mu_Coach_Gen3_Indian_Mail_Coach                                                :Indeschen Postwaggon
+str_mu_Coach_Gen4_Eurofima_Intercity_Coach                                 :Eurofima Passagéierwaggon
+str_mu_Coach_Gen4_InterRegio_Coach                                                 :InterRegio Passagéierwaggon
+str_mu_Coach_Gen4_Silberling_Commuter_Coach                                :'Silberling' Pendlerwaggon
+str_mu_Coach_Gen4_Eurofima_Mail_Coach                                              :Eurofima Postwaggon
+str_mu_Coach_Gen4_Double_Decker_Coach                                              :Dosto Passagéierwaggon
+str_mu_Coach_Gen4_Russian_Intercity_Coach                                  :Russeschen Intercity Passagéierwaggon
+str_mu_Coach_Gen4_Russian_Regional_Coach                                   :Russeschen Regionalwaggon
+str_mu_Coach_Gen4_Russian_Mail_Coach                                               :Russeschen Postwaggon
+str_mu_Coach_Gen4_Superliner_Coach                                                 :Dosto Passagéierwaggon
+str_mu_Coach_Gen4_Superliner_California                                    :California Dosto
+str_mu_Coach_Gen4_Amfleet_Regional_Coach                                   :Amfleet Regionalwaggon
+str_mu_Coach_Gen4_Amfleet_Intercity_Coach                                  :Amfleet Intercity Passagéierwaggon
+str_mu_Coach_Gen4_Comet_Commuter_Coach                                     :Comet Pendlerwaggon
+str_mu_Coach_Gen4_Horizon_Regional_Coach                                   :Horizon Regionalwaggon
+str_mu_Coach_Gen4_Horizon_Baggage_Coach                                    :Horizon Gepäckwaggon
+str_mu_Coach_Gen4_Bombardier_Bi_level                                              :Bombardier Dosto
+str_mu_Coach_Gen5_High_Speed_Coach                                                 :Héichgeschw. Passagéierwaggon
+str_mu_Coach_Gen5_Modern_Regional_Coach                                    :Modernen Regionalwaggon
+str_mu_Coach_Gen5_Modern_Commuter_Coach                                    :Modernen Pendlerwaggon
+str_mu_Coach_Gen5_Modern_Double_Decker_Coach                               :Modernen Dosto Passagéierwaggon
+str_mu_Coach_Gen5_High_Speed_Double_Decker_IC2000                  :Héichgeschw. Dosto (IC2000)
+str_mu_Coach_Gen5_High_Speed_Mail_Coach                                    :Héichgeschw. Postwaggon
+str_mu_Coach_Gen5_Talgo_Pendular                                                   :Talgo Pendlerwaggon
+str_mu_Coach_Gen5_Talgo_Pendular_Mail                                              :Talgo Postwaggon
+str_mu_Coach_Gen6_Grand_Voyager_Coach                                              :Grousse Reeswaggon
+str_mu_Coach_Gen6_Grand_Regio_Coach                                                :Grousse Regionalwaggon
+str_mu_Coach_Gen6_Metropolis_Coach                                                 :Metropolis Passagéierwaggon
+str_mu_Coach_Gen6_Speedmail_Coach                                                  :Express Postwaggon
+str_mu_Coach_Gen6_Super_Regio_Coach                                                :Super Regionalwaggon
+str_mu_Coach_Gen6_Super_Voyager_Coach                                              :Super Reeswaggon
 
 #special wagons
-str_mu_wagon_unpowered                  :MU Waggon (Net motoriséiert)
-str_mtro_wagon_unpowered                :Metro Waggon (Net motoriséiert)
-str_mglv_wagon_unpowered                :Maglev Waggon (net motoriséiert)
-str_mu_cargo_wagon_unpowered    :MU Wuere-Waggon (Net motoriséiert)
-str_mu_wagon_powered                    :MU Waggon (Motoriséiert)
-str_mtro_wagon_powered                  :Metro Waggon (Motoriséiert)
-str_mglv_wagon_powered                  :Maglev Waggon (motoriséiert)
-str_mu_cargo_wagon_powered              :MU Wuere-Waggon (motoriséiert)
+str_mu_MU_Wagon_Unpowered                  :MU Waggon (Net motoriséiert)
+str_mtro_Metro_Wagon_Unpowered                :Metro Waggon (Net motoriséiert)
+str_mglv_Maglev_Wagon_Unpowered                :Maglev Waggon (net motoriséiert)
+str_mu_MU_Cargo_Wagon_Unpowered    :MU Wuere-Waggon (Net motoriséiert)
+str_mu_MU_Wagon_Powered                    :MU Waggon (Motoriséiert)
+str_mtro_Metro_Wagon_Powered                  :Metro Waggon (Motoriséiert)
+str_mglv_Maglev_Wagon_Powered                  :Maglev Waggon (motoriséiert)
+str_mu_MU_Cargo_Wagon_Powered              :MU Wuere-Waggon (motoriséiert)
 
 #Obsolete vehicles
 

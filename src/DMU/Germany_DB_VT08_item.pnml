@@ -49,7 +49,7 @@ item(FEAT_TRAINS, ITEM ) {
 		RUNNINGCOSTENGINESWITCHCALL
 		PURCHASETEXTSWITCHCALL
 		default: switch_dmu_Germany_DB_VT08_reversed;
-	livery_override (item_mu_wagon_unpowered ) {
+	livery_override (item_mu_MU_Wagon_Unpowered ) {
 		LOADINGSPEED
 		RUNNINGCOSTMUWAGONSWITCHCALLMUWAGONUNPOWERED;
 		power: POWERMUWAGONUNPOWERED;
@@ -59,7 +59,7 @@ item(FEAT_TRAINS, ITEM ) {
 		length: WAGON_LENGTH;
 		default: switch_dmu_Germany_DB_VT08_cargo_selection
 	}
-	livery_override (item_mu_wagon_powered ) {
+	livery_override (item_mu_MU_Wagon_Powered ) {
 		LOADINGSPEED
 		RUNNINGCOSTMUWAGONSWITCHCALLMUWAGONPOWERED;
 		power: POWERMUWAGONPOWERED;

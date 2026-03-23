@@ -31,20 +31,20 @@ STR_PARAM_TIMES_16                  :16
 #region parameters
 STR_PARAM_REGION_AFRICA                                 :Afryka
 STR_PARAM_REGION_AFRICA_DESC                    :Użyj pojazdów z Afryki
-STR_PARAM_REGION_NORTHAMERICA                   :Ameryka Północna
-STR_PARAM_REGION_NORTHAMERICA_DESC              :Użyj pojazdów z Ameryki Północnej
-STR_PARAM_REGION_SOUTHAMERICA                   :Ameryka Południowa
-STR_PARAM_REGION_SOUTHAMERICA_DESC              :Użyj pojazdów z Ameryki Południowej
+STR_PARAM_REGION_NORTH_AMERICA                   :Ameryka Północna
+STR_PARAM_REGION_NORTH_AMERICA_DESC              :Użyj pojazdów z Ameryki Północnej
+STR_PARAM_REGION_SOUTH_AMERICA                   :Ameryka Południowa
+STR_PARAM_REGION_SOUTH_AMERICA_DESC              :Użyj pojazdów z Ameryki Południowej
 STR_PARAM_REGION_ASIA                                   :Azja
 STR_PARAM_REGION_ASIA_DESC                              :Użyj pojazdów z Azji
-STR_PARAM_REGION_NORTHERNEUROPE                 :Europa Północna
-STR_PARAM_REGION_NORTHERNEUROPE_DESC    :Użyj pojazdów z Północnej Europy
-STR_PARAM_REGION_EASTERNEUROPE                  :Europa Wschodnia
-STR_PARAM_REGION_EASTERNEUROPE_DESC             :Użyj pojazdów ze Wschodniej Europy
-STR_PARAM_REGION_SOUTHERNEUROPE                 :Europa Południowa
-STR_PARAM_REGION_SOUTHERNEUROPE_DESC    :Użyj pojazdów z Południowej Europy
-STR_PARAM_REGION_WESTERNEUROPE                  :Europa Zachodnia
-STR_PARAM_REGION_WESTERNEUROPE_DESC             :Użyj pojazdów z Europy Zachodniej
+STR_PARAM_REGION_NORTHERN_EUROPE                 :Europa Północna
+STR_PARAM_REGION_NORTHERN_EUROPE_DESC    :Użyj pojazdów z Północnej Europy
+STR_PARAM_REGION_EASTERN_EUROPE                  :Europa Wschodnia
+STR_PARAM_REGION_EASTERN_EUROPE_DESC             :Użyj pojazdów ze Wschodniej Europy
+STR_PARAM_REGION_SOUTHERN_EUROPE                 :Europa Południowa
+STR_PARAM_REGION_SOUTHERN_EUROPE_DESC    :Użyj pojazdów z Południowej Europy
+STR_PARAM_REGION_WESTERN_EUROPE                  :Europa Zachodnia
+STR_PARAM_REGION_WESTERN_EUROPE_DESC             :Użyj pojazdów z Europy Zachodniej
 STR_PARAM_REGION_OCEANIA                                :Oceania
 STR_PARAM_REGION_OCEANIA_DESC                   :Użyj pojazdów z Oceanii
 
@@ -617,118 +617,118 @@ str_mtro_Brazil_Recife_VLT_Mobile_3 :Recife VLT Mobile 3 (Metro)
 #Maglev
 
 #wagons
-str_wagon_Gen1_Flat_Wagon                               :1-sza generacja wagonu platformy
-str_wagon_Gen1_Boxcar                                   :1-sza generacja wagonu krytego, o konstrukcji drewnianej
-str_wagon_Gen1_Tanker                                   :1-sza generacja wagonu cysterny
-str_wagon_Gen1_Open_Wagon                               :1-sza generacja wagonu węglarki, o konstrukcji drewnianej
-str_wagon_Gen2_Flat_Wagon                               :2-ga generacja wagonu platformy
-str_wagon_Gen2_Boxcar_Type1                             :2-ga generacja wagonu krytego (typ 1)
-str_wagon_Gen2_Boxcar_Type2                             :2-ga generacja wagonu krytego (typ 2)
-str_wagon_Gen2_Tanker                                   :2-ga generacja wagonu cysterny
-str_wagon_Gen2_Open_Wagon                               :2-ga generacja wagonu węglarki, o konstrukcji drewnianej
-str_wagon_Gen2_Silo                                     :2-ga generacja wagonu zbiornikowego (silos)
-str_wagon_Gen2_Hopper                                   :2-ga generacja wagonu samowyładowczego
-str_wagon_Gen3_Flat_Wagon                               :3-cia generacja wagonu platformy
-str_wagon_Gen3_Boxcar_Type1                     :3-cia generacja wagonu krytego konstr. drewnianej (typ 1)
-str_wagon_Gen3_Boxcar_Type2                     :3-cia generacja wagonu krytego (typ 2)
-str_wagon_Gen3_Tanker                                   :3-cia generacja wagonu cysterny
-str_wagon_Gen3_Open_Wagon                               :3-cia generacja wagonu węglarki
-str_wagon_Gen3_Silo_Type1                               :3-cia generacja wagonu zbiornikowego (silos typ 1)
-str_wagon_Gen3_Silo_Type2                               :3-cia generacja wagonu zbiornikowego (silos typ 2)
-str_wagon_Gen3_Hopper                                   :3-cia generacja wagonu samowyładowczego
-str_wagon_Gen4_Flatcar                                  :4-ta generacja platformy
-str_wagon_Gen4_Heavy_Flatcar                    :4-ta generacja platformy do ciężkich ładunków
-str_wagon_Gen4_Boxcar_Type1                             :4-ta generacja wagonu krytego (typ 1)
-str_wagon_Gen4_Boxcar_Type2                             :4-ta generacja wagonu krytego (typ 2)
-str_wagon_Gen4_Tanker                                   :4-ta generacja wagonu cysterny
-str_wagon_Gen4_Gondola                                  :4-ta generacja wagonu gondoli
-str_wagon_Gen4_Silo_Type1                               :4-ta generacja wagonu zbiornikowego (typ 1)
-str_wagon_Gen4_Silo_Type2                               :4-ta generacja wagonu zbiornikowego (typ 2)
-str_wagon_Gen4_Hopper_Type1                             :4-ta generacja wagonu samowyładowczego (typ 1)
-str_wagon_Gen4_Hopper_Type2                             :4-ta generacja wagonu samowyładowczego (typ 2)
-str_wagon_Gen4_Car_Transporter                  :4-ta generacja wagonu do transportu aut
-str_wagon_Gen4_Container_Carrier                :4-ta generacja wagonu kontenerowego
-str_wagon_Gen4_Centerbeam                               :4-ta generacja platformy dwudzielnej
-str_wagon_Gen5_Flatcar                                  :5-ta generacja platformy
-str_wagon_Gen5_Heavy_Flatcar                    :5-ta generacja platformy do ciężkich ładunków
-str_wagon_Gen5_Boxcar_Type1                             :5-ta generacja wagonu krytego (typ 1)
-str_wagon_Gen5_Boxcar_Type2                             :5-ta generacja wagonu krytego (typ 2)
-str_wagon_Gen5_Tanker                                   :5-ta generacja wagonu cysterny
-str_wagon_Gen5_Gondola                                  :5-ta generacja wagonu gondoli
-str_wagon_Gen5_Silo_Type1                               :5-ta generacja wagonu zbiornikowego (typ 1)
-str_wagon_Gen5_Silo_Type2                               :5-ta generacja wagonu zbiornikowego (silos typ 2)
-str_wagon_Gen5_Hopper_Type1                             :5-ta generacja wagonu samowyładowczego (typ 1)
-str_wagon_Gen5_Hopper_Type2                             :5-ta generacja wagonu samowyładowczego (typ 2)
-str_wagon_Gen5_Car_Transporter                  :5-ta generacja wagonu do transportu aut
-str_wagon_Gen5_Container_Carrier                :5-ta generacja wagonu kontenerowego
-str_wagon_Gen5_Centerbeam                               :5-ta generacja platformy dwudzielnej
-str_wagon_Gen5_Container_Doublestack    :5-ta generacja piętrowego wagonu kontenerowego
-str_wagon_Gen5_Superheavy_Flatcar               :5-ta generacja platformy do bardzo ciężkich ładunków
+str_mu_Wagon_Gen1_Flat_Wagon                               :1-sza generacja wagonu platformy
+str_mu_Wagon_Gen1_Boxcar                                   :1-sza generacja wagonu krytego, o konstrukcji drewnianej
+str_mu_Wagon_Gen1_Tanker                                   :1-sza generacja wagonu cysterny
+str_mu_Wagon_Gen1_Open_Wagon                               :1-sza generacja wagonu węglarki, o konstrukcji drewnianej
+str_mu_Wagon_Gen2_Flat_Wagon                               :2-ga generacja wagonu platformy
+str_mu_Wagon_Gen2_Boxcar_Type1                             :2-ga generacja wagonu krytego (typ 1)
+str_mu_Wagon_Gen2_Boxcar_Type2                             :2-ga generacja wagonu krytego (typ 2)
+str_mu_Wagon_Gen2_Tanker                                   :2-ga generacja wagonu cysterny
+str_mu_Wagon_Gen2_Open_Wagon                               :2-ga generacja wagonu węglarki, o konstrukcji drewnianej
+str_mu_Wagon_Gen2_Silo                                     :2-ga generacja wagonu zbiornikowego (silos)
+str_mu_Wagon_Gen2_Hopper                                   :2-ga generacja wagonu samowyładowczego
+str_mu_Wagon_Gen3_Flat_Wagon                               :3-cia generacja wagonu platformy
+str_mu_Wagon_Gen3_Boxcar_Type1                     :3-cia generacja wagonu krytego konstr. drewnianej (typ 1)
+str_mu_Wagon_Gen3_Boxcar_Type2                     :3-cia generacja wagonu krytego (typ 2)
+str_mu_Wagon_Gen3_Tanker                                   :3-cia generacja wagonu cysterny
+str_mu_Wagon_Gen3_Open_Wagon                               :3-cia generacja wagonu węglarki
+str_mu_Wagon_Gen3_Silo_Type1                               :3-cia generacja wagonu zbiornikowego (silos typ 1)
+str_mu_Wagon_Gen3_Silo_Type2                               :3-cia generacja wagonu zbiornikowego (silos typ 2)
+str_mu_Wagon_Gen3_Hopper                                   :3-cia generacja wagonu samowyładowczego
+str_mu_Wagon_Gen4_Flatcar                                  :4-ta generacja platformy
+str_mu_Wagon_Gen4_Heavy_Flatcar                    :4-ta generacja platformy do ciężkich ładunków
+str_mu_Wagon_Gen4_Boxcar_Type1                             :4-ta generacja wagonu krytego (typ 1)
+str_mu_Wagon_Gen4_Boxcar_Type2                             :4-ta generacja wagonu krytego (typ 2)
+str_mu_Wagon_Gen4_Tanker                                   :4-ta generacja wagonu cysterny
+str_mu_Wagon_Gen4_Gondola                                  :4-ta generacja wagonu gondoli
+str_mu_Wagon_Gen4_Silo_Type1                               :4-ta generacja wagonu zbiornikowego (typ 1)
+str_mu_Wagon_Gen4_Silo_Type2                               :4-ta generacja wagonu zbiornikowego (typ 2)
+str_mu_Wagon_Gen4_Hopper_Type1                             :4-ta generacja wagonu samowyładowczego (typ 1)
+str_mu_Wagon_Gen4_Hopper_Type2                             :4-ta generacja wagonu samowyładowczego (typ 2)
+str_mu_Wagon_Gen4_Car_Transporter                  :4-ta generacja wagonu do transportu aut
+str_mu_Wagon_Gen4_Container_Carrier                :4-ta generacja wagonu kontenerowego
+str_mu_Wagon_Gen4_Centerbeam                               :4-ta generacja platformy dwudzielnej
+str_mu_Wagon_Gen5_Flatcar                                  :5-ta generacja platformy
+str_mu_Wagon_Gen5_Heavy_Flatcar                    :5-ta generacja platformy do ciężkich ładunków
+str_mu_Wagon_Gen5_Boxcar_Type1                             :5-ta generacja wagonu krytego (typ 1)
+str_mu_Wagon_Gen5_Boxcar_Type2                             :5-ta generacja wagonu krytego (typ 2)
+str_mu_Wagon_Gen5_Tanker                                   :5-ta generacja wagonu cysterny
+str_mu_Wagon_Gen5_Gondola                                  :5-ta generacja wagonu gondoli
+str_mu_Wagon_Gen5_Silo_Type1                               :5-ta generacja wagonu zbiornikowego (typ 1)
+str_mu_Wagon_Gen5_Silo_Type2                               :5-ta generacja wagonu zbiornikowego (silos typ 2)
+str_mu_Wagon_Gen5_Hopper_Type1                             :5-ta generacja wagonu samowyładowczego (typ 1)
+str_mu_Wagon_Gen5_Hopper_Type2                             :5-ta generacja wagonu samowyładowczego (typ 2)
+str_mu_Wagon_Gen5_Car_Transporter                  :5-ta generacja wagonu do transportu aut
+str_mu_Wagon_Gen5_Container_Carrier                :5-ta generacja wagonu kontenerowego
+str_mu_Wagon_Gen5_Centerbeam                               :5-ta generacja platformy dwudzielnej
+str_mu_Wagon_Gen5_Container_Doublestack    :5-ta generacja piętrowego wagonu kontenerowego
+str_mu_Wagon_Gen5_Superheavy_Flatcar               :5-ta generacja platformy do bardzo ciężkich ładunków
 
 
 #coaches
-str_coach_Gen1_Wooden_2_axle_Compartment_Coach                  :Dwuosiowy wagon przedziałowy, nadwozie drewniane
-str_coach_Gen1_Wooden_2_axle_Regional_Coach                     :Dwuosiowy wagon bezprzedziałowy, nadwozie drewniane
-str_coach_Gen1_Wooden_2_axle_Mail_Coach                                 :Dwuosiowy wagon pocztowy, nadwozie drewniane
-str_coach_Gen1_Clerestory_Compartment_Coach                     :Wagon przedziałowy z dachem świetlikowym
-str_coach_Gen1_Clerestory_Regional_Coach                                :Wagon bezprzedziałowy z dachem świetlikowym
-str_coach_Gen1_Clerestory_Mail_Coach                                    :Wagon pocztowy z dachem świetlikowym
-str_coach_Gen1_Wooden_3_axle_Compartment_Coach                  :Trzyosiowy wagon przedziałowy, nadwozie drewniane
-str_coach_Gen1_Wooden_3_axle_Regional_Coach                     :Trzyosiowy wagon bezprzedziałowy, nadwozie drewniane
-str_coach_Gen1_Wooden_3_axle_Mail_Coach                                 :Trzyosiowy wagon pocztowy, nadwozie drewniane
-str_coach_Gen2_Heavyweight_Intercity_Coach                              :Wagon dalekobieżny 'Pulmann'
-str_coach_Gen2_Heavyweight_Mail_Coach                                   :Dalekobieżny wagon pocztowy
-str_coach_Gen2_Steel_Intercity_Coach                                    :Wagon dalekobieżny, nadwozie stalowe
-str_coach_Gen2_Steel_Compartment_Coach                                  :Wagon przedziałowy, nadwozie stalowe
-str_coach_Gen2_Steel_Regional_Coach                                     :Wagon bezprzedziałowy, nadwozie stalowe
-str_coach_Gen2_Steel_Mail_Coach                                                 :Wagon pocztowy, nadwozie stalowe
-str_coach_Gen2_Steel_2_axle_Compartment_Coach                   :Dwuosiowy wagon przedziałowy, nadwozie stalowe
-str_coach_Gen2_Steel_2_axle_Regional_Coach                              :Dwuosiowy wagon bezprzedziałowy, nadwozie stalowe
-str_coach_Gen2_Steel_2_axle_Mail_Coach                                  :Dwuosiowy wagon pocztowy, nadwozie stalowe
-str_coach_Gen2_Steel_3_axle_Compartment_Coach                   :Trzyosiowy wagon przedziałowy, nadwozie stalowe
-str_coach_Gen2_Steel_3_axle_Regional_Coach                              :Trzyosiowy wagon bezprzedziałowy, nadwozie stalowe
-str_coach_Gen2_Steel_3_axle_Mail_Coach                                  :Trzyosiowy wagon pocztowy, nadwozie stalowe
-str_coach_Gen3_Steel_Lightweight_Intercity_Coach                :Wagon dalekobieżny, lekkie nadwozie stalowe
-str_coach_Gen3_Steel_Lightweight_Regional_Coach                 :Wagon bezprzedziałowy, lekkie nadwozie stalowe
-str_coach_Gen3_Steel_Lightweight_Mail_Coach                     :Wagon pocztowy, lekkie nadwozie stalowe
-str_coach_Gen3_Aluminium_Lightweight_Intercity_Coach    :Wagon dalekobieżny, lekkie nadwozie aluminiowe
-str_coach_Gen3_Aluminium_Lightweight_Regional_Coach     :Wagon bezprzedziałowy, lekkie nadwozie aluminiowe
-str_coach_Gen3_Aluminium_Lightweight_Mail_Coach                 :Wagon pocztowy, lekkie nadwozie aluminiowe
-str_coach_Gen3_Gallery_Car                                                              :Wagon dwupoziomowy
-str_coach_Gen3_Mk1_Intercity_Coach                                              :Wagon IC typu Mark 1
-str_coach_Gen3_Mk1_Regional_Coach                                               :Wagon osobowy typu Mark 1
-str_coach_Gen3_Mk1_Mail_Coach                                                   :Wagon pocztowy typu Mark 1
-str_coach_Gen3_UIC_X_Intercity_Coach                                    :Wagon dalekobieżny standardu UIC-X
-str_coach_Gen3_TEE_Intercity_Coach                                              :Wagon Eurocity TEE
-str_coach_Gen3_UIC_X_Regional_Coach                                     :Wagon bezprzedziałowy standardu UIC-X
-str_coach_Gen3_Umbauwagen_Local_Coach                                   :Wagon 'reko' do ruchu lokalnego
-str_coach_Gen3_Doppelstockwagen_Local_Coach                     :Wagon piętrowy do ruchu lokalnego
-str_coach_Gen3_UIC_X_Mail_Coach                                                 :Wagon pocztowy standardu UIC-X
-str_coach_Gen4_Eurofima_Intercity_Coach                                 :Wagon dalekobieżny Eurofima
-str_coach_Gen4_InterRegio_Coach                                                 :Wagon InterRegio
-str_coach_Gen4_Silberling_Commuter_Coach                                :Podmiejski wagon bezprzedziałowy 'Silberling'
-str_coach_Gen4_Eurofima_Mail_Coach                                              :Wagon pocztowy Eurofima
-str_coach_Gen4_Double_Decker_Coach                                              :Wagon piętrowy
-str_coach_Gen4_Russian_Intercity_Coach                                  :Dalekobieżny wagon RZD
-str_coach_Gen4_Russian_Regional_Coach                                   :Bezprzedziałowy wagon RZD
-str_coach_Gen4_Russian_Mail_Coach                                               :Pocztowy wagon RZD
-str_coach_Gen4_Bombardier_Bi_level                                              :Wagon piętrowy firmy Bombardier
-str_coach_Gen5_High_Speed_Coach                                                 :Wagon pasażerski dużych prędkości
-str_coach_Gen5_Modern_Regional_Coach                                    :Wagon bezprzedziałowy nowej generacji
-str_coach_Gen5_Modern_Commuter_Coach                                    :Wagon podmiejski nowej generacji
-str_coach_Gen5_Modern_Double_Decker_Coach                               :Wagon piętrowy nowej generacji
-str_coach_Gen5_High_Speed_Double_Decker_IC2000                  :Piętrowy wagon pasażerski dużych prędkości (IC2000)
-str_coach_Gen5_High_Speed_Mail_Coach                                    :Wagon pocztowy dużych prędkości
-str_coach_Gen5_Talgo_Pendular                                                   :Wagon składu Talgo
-str_coach_Gen5_Talgo_Pendular_Mail                                              :Wagon pocztowy składu Talgo
+str_mu_Coach_Gen1_Wooden_2_axle_Compartment_Coach                  :Dwuosiowy wagon przedziałowy, nadwozie drewniane
+str_mu_Coach_Gen1_Wooden_2_axle_Regional_Coach                     :Dwuosiowy wagon bezprzedziałowy, nadwozie drewniane
+str_mu_Coach_Gen1_Wooden_2_axle_Mail_Coach                                 :Dwuosiowy wagon pocztowy, nadwozie drewniane
+str_mu_Coach_Gen1_Clerestory_Compartment_Coach                     :Wagon przedziałowy z dachem świetlikowym
+str_mu_Coach_Gen1_Clerestory_Regional_Coach                                :Wagon bezprzedziałowy z dachem świetlikowym
+str_mu_Coach_Gen1_Clerestory_Mail_Coach                                    :Wagon pocztowy z dachem świetlikowym
+str_mu_Coach_Gen1_Wooden_3_axle_Compartment_Coach                  :Trzyosiowy wagon przedziałowy, nadwozie drewniane
+str_mu_Coach_Gen1_Wooden_3_axle_Regional_Coach                     :Trzyosiowy wagon bezprzedziałowy, nadwozie drewniane
+str_mu_Coach_Gen1_Wooden_3_axle_Mail_Coach                                 :Trzyosiowy wagon pocztowy, nadwozie drewniane
+str_mu_Coach_Gen2_Heavyweight_Intercity_Coach                              :Wagon dalekobieżny 'Pulmann'
+str_mu_Coach_Gen2_Heavyweight_Mail_Coach                                   :Dalekobieżny wagon pocztowy
+str_mu_Coach_Gen2_Steel_Intercity_Coach                                    :Wagon dalekobieżny, nadwozie stalowe
+str_mu_Coach_Gen2_Steel_Compartment_Coach                                  :Wagon przedziałowy, nadwozie stalowe
+str_mu_Coach_Gen2_Steel_Regional_Coach                                     :Wagon bezprzedziałowy, nadwozie stalowe
+str_mu_Coach_Gen2_Steel_Mail_Coach                                                 :Wagon pocztowy, nadwozie stalowe
+str_mu_Coach_Gen2_Steel_2_axle_Compartment_Coach                   :Dwuosiowy wagon przedziałowy, nadwozie stalowe
+str_mu_Coach_Gen2_Steel_2_axle_Regional_Coach                              :Dwuosiowy wagon bezprzedziałowy, nadwozie stalowe
+str_mu_Coach_Gen2_Steel_2_axle_Mail_Coach                                  :Dwuosiowy wagon pocztowy, nadwozie stalowe
+str_mu_Coach_Gen2_Steel_3_axle_Compartment_Coach                   :Trzyosiowy wagon przedziałowy, nadwozie stalowe
+str_mu_Coach_Gen2_Steel_3_axle_Regional_Coach                              :Trzyosiowy wagon bezprzedziałowy, nadwozie stalowe
+str_mu_Coach_Gen2_Steel_3_axle_Mail_Coach                                  :Trzyosiowy wagon pocztowy, nadwozie stalowe
+str_mu_Coach_Gen3_Steel_Lightweight_Intercity_Coach                :Wagon dalekobieżny, lekkie nadwozie stalowe
+str_mu_Coach_Gen3_Steel_Lightweight_Regional_Coach                 :Wagon bezprzedziałowy, lekkie nadwozie stalowe
+str_mu_Coach_Gen3_Steel_Lightweight_Mail_Coach                     :Wagon pocztowy, lekkie nadwozie stalowe
+str_mu_Coach_Gen3_Aluminium_Lightweight_Intercity_Coach    :Wagon dalekobieżny, lekkie nadwozie aluminiowe
+str_mu_Coach_Gen3_Aluminium_Lightweight_Regional_Coach     :Wagon bezprzedziałowy, lekkie nadwozie aluminiowe
+str_mu_Coach_Gen3_Aluminium_Lightweight_Mail_Coach                 :Wagon pocztowy, lekkie nadwozie aluminiowe
+str_mu_Coach_Gen3_Gallery_Car                                                              :Wagon dwupoziomowy
+str_mu_Coach_Gen3_Mk1_Intercity_Coach                                              :Wagon IC typu Mark 1
+str_mu_Coach_Gen3_Mk1_Regional_Coach                                               :Wagon osobowy typu Mark 1
+str_mu_Coach_Gen3_Mk1_Mail_Coach                                                   :Wagon pocztowy typu Mark 1
+str_mu_Coach_Gen3_UIC_X_Intercity_Coach                                    :Wagon dalekobieżny standardu UIC-X
+str_mu_Coach_Gen3_TEE_Intercity_Coach                                              :Wagon Eurocity TEE
+str_mu_Coach_Gen3_UIC_X_Regional_Coach                                     :Wagon bezprzedziałowy standardu UIC-X
+str_mu_Coach_Gen3_Umbauwagen_Local_Coach                                   :Wagon 'reko' do ruchu lokalnego
+str_mu_Coach_Gen3_Doppelstockwagen_Local_Coach                     :Wagon piętrowy do ruchu lokalnego
+str_mu_Coach_Gen3_UIC_X_Mail_Coach                                                 :Wagon pocztowy standardu UIC-X
+str_mu_Coach_Gen4_Eurofima_Intercity_Coach                                 :Wagon dalekobieżny Eurofima
+str_mu_Coach_Gen4_InterRegio_Coach                                                 :Wagon InterRegio
+str_mu_Coach_Gen4_Silberling_Commuter_Coach                                :Podmiejski wagon bezprzedziałowy 'Silberling'
+str_mu_Coach_Gen4_Eurofima_Mail_Coach                                              :Wagon pocztowy Eurofima
+str_mu_Coach_Gen4_Double_Decker_Coach                                              :Wagon piętrowy
+str_mu_Coach_Gen4_Russian_Intercity_Coach                                  :Dalekobieżny wagon RZD
+str_mu_Coach_Gen4_Russian_Regional_Coach                                   :Bezprzedziałowy wagon RZD
+str_mu_Coach_Gen4_Russian_Mail_Coach                                               :Pocztowy wagon RZD
+str_mu_Coach_Gen4_Bombardier_Bi_level                                              :Wagon piętrowy firmy Bombardier
+str_mu_Coach_Gen5_High_Speed_Coach                                                 :Wagon pasażerski dużych prędkości
+str_mu_Coach_Gen5_Modern_Regional_Coach                                    :Wagon bezprzedziałowy nowej generacji
+str_mu_Coach_Gen5_Modern_Commuter_Coach                                    :Wagon podmiejski nowej generacji
+str_mu_Coach_Gen5_Modern_Double_Decker_Coach                               :Wagon piętrowy nowej generacji
+str_mu_Coach_Gen5_High_Speed_Double_Decker_IC2000                  :Piętrowy wagon pasażerski dużych prędkości (IC2000)
+str_mu_Coach_Gen5_High_Speed_Mail_Coach                                    :Wagon pocztowy dużych prędkości
+str_mu_Coach_Gen5_Talgo_Pendular                                                   :Wagon składu Talgo
+str_mu_Coach_Gen5_Talgo_Pendular_Mail                                              :Wagon pocztowy składu Talgo
 
 #special wagons
-str_mu_wagon_unpowered                  :Wagon Zespołu Trakcyjnego (doczepny)
-str_mtro_wagon_unpowered                :Wagon metra (doczepny)
-str_mu_cargo_wagon_unpowered    :Wagon towarowego Zespołu Trakcyjnego (doczepny)
-str_mu_wagon_powered                    :Wagon Zespołu Trakcyjnego (silnikowy)
-str_mtro_wagon_powered                  :Wagon metra (silnikowyy)
-str_mu_cargo_wagon_powered              :Wagon towarowego Zespołu Trakcyjnego (silnikowy)
+str_mu_MU_Wagon_Unpowered                  :Wagon Zespołu Trakcyjnego (doczepny)
+str_mtro_Metro_Wagon_Unpowered                :Wagon metra (doczepny)
+str_mu_MU_Cargo_Wagon_Unpowered    :Wagon towarowego Zespołu Trakcyjnego (doczepny)
+str_mu_MU_Wagon_Powered                    :Wagon Zespołu Trakcyjnego (silnikowy)
+str_mtro_Metro_Wagon_Powered                  :Wagon metra (silnikowyy)
+str_mu_MU_Cargo_Wagon_Powered              :Wagon towarowego Zespołu Trakcyjnego (silnikowy)
 
 #Obsolete vehicles
 

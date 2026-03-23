@@ -32,20 +32,20 @@ STR_PARAM_CONCEPT                                               :Konzeptfahrzeug
 STR_PARAM_CONCEPT_DESC                                  :Benutze Konzeptfahrzeuge (dieser Parameter ist gegenwärtig funktionslos)
 STR_PARAM_REGION_AFRICA                                 :Afrika
 STR_PARAM_REGION_AFRICA_DESC                    :Benutze die Fahrzeuge aus Afrika.
-STR_PARAM_REGION_NORTHAMERICA                   :Nordamerika
-STR_PARAM_REGION_NORTHAMERICA_DESC              :Benutze die Fahrzeuge aus Nordamerika.
-STR_PARAM_REGION_SOUTHAMERICA                   :Südamerika
-STR_PARAM_REGION_SOUTHAMERICA_DESC              :Benutze die Fahrzeuge aus Südamerika
+STR_PARAM_REGION_NORTH_AMERICA                   :Nordamerika
+STR_PARAM_REGION_NORTH_AMERICA_DESC              :Benutze die Fahrzeuge aus Nordamerika.
+STR_PARAM_REGION_SOUTH_AMERICA                   :Südamerika
+STR_PARAM_REGION_SOUTH_AMERICA_DESC              :Benutze die Fahrzeuge aus Südamerika
 STR_PARAM_REGION_ASIA                                   :Asien
 STR_PARAM_REGION_ASIA_DESC                              :Benutze die Fahrzeuge aus Asien.
-STR_PARAM_REGION_NORTHERNEUROPE                 :Nordeuropa
-STR_PARAM_REGION_NORTHERNEUROPE_DESC    :Benutze die Fahrzeuge aus Nordeuropa
-STR_PARAM_REGION_EASTERNEUROPE                  :Osteuropa
-STR_PARAM_REGION_EASTERNEUROPE_DESC             :Benutze die Fahrzeuge aus Osteuropa
-STR_PARAM_REGION_SOUTHERNEUROPE                 :Südeuropa
-STR_PARAM_REGION_SOUTHERNEUROPE_DESC    :Benutze die Fahrzeuge aus Südeuropa
-STR_PARAM_REGION_WESTERNEUROPE                  :Westeuropa
-STR_PARAM_REGION_WESTERNEUROPE_DESC             :Benutze die Fahrzeuge aus Westeuropa
+STR_PARAM_REGION_NORTHERN_EUROPE                 :Nordeuropa
+STR_PARAM_REGION_NORTHERN_EUROPE_DESC    :Benutze die Fahrzeuge aus Nordeuropa
+STR_PARAM_REGION_EASTERN_EUROPE                  :Osteuropa
+STR_PARAM_REGION_EASTERN_EUROPE_DESC             :Benutze die Fahrzeuge aus Osteuropa
+STR_PARAM_REGION_SOUTHERN_EUROPE                 :Südeuropa
+STR_PARAM_REGION_SOUTHERN_EUROPE_DESC    :Benutze die Fahrzeuge aus Südeuropa
+STR_PARAM_REGION_WESTERN_EUROPE                  :Westeuropa
+STR_PARAM_REGION_WESTERN_EUROPE_DESC             :Benutze die Fahrzeuge aus Westeuropa
 STR_PARAM_REGION_OCEANIA                                :Ozeanien
 STR_PARAM_REGION_OCEANIA_DESC                   :Benutze die Fahrzeuge aus Ozeanien
 
@@ -152,21 +152,21 @@ str_mglv_China_Transrapid       :Shanghai Transrapid (Maglev)
 
 
 #coaches
-str_coach_Gen2_Heavyweight_Intercity_Coach                              :Schwerer Fernverkehrswagen
-str_coach_Gen2_Steel_Intercity_Coach                                    :Stahl-Fernverkehrswagen
-str_coach_Gen2_Steel_3_axle_Regional_Coach                              :3-achsiger Regionalbahnwage, Stahl
-str_coach_Gen3_Steel_Lightweight_Intercity_Coach                :Stahl-Leichtbau-Fernverkehrswagen
-str_coach_Gen3_Aluminium_Lightweight_Intercity_Coach    :Aluminium-Leichtbau-Fernverkehrswagen
-str_coach_Gen3_Mk1_Intercity_Coach                                              :Mk1 Fernverkehrswagen
-str_coach_Gen3_UIC_X_Intercity_Coach                                    :UIC-X Fernverkehrswagen
-str_coach_Gen3_TEE_Intercity_Coach                                              :TEE-Fernverkehrswagen
-str_coach_Gen3_Indian_Intercity_Coach                                   :Indischer Fernverkehrswagen
-str_coach_Gen4_Eurofima_Intercity_Coach                                 :Eurofima Fernverkehrswagen
-str_coach_Gen4_Russian_Intercity_Coach                                  :Russischer Fernverkehrswagen
-str_coach_Gen4_Amfleet_Intercity_Coach                                  :Amfleet Fernverkehrswagen
+str_mu_Coach_Gen2_Heavyweight_Intercity_Coach                              :Schwerer Fernverkehrswagen
+str_mu_Coach_Gen2_Steel_Intercity_Coach                                    :Stahl-Fernverkehrswagen
+str_mu_Coach_Gen2_Steel_3_axle_Regional_Coach                              :3-achsiger Regionalbahnwage, Stahl
+str_mu_Coach_Gen3_Steel_Lightweight_Intercity_Coach                :Stahl-Leichtbau-Fernverkehrswagen
+str_mu_Coach_Gen3_Aluminium_Lightweight_Intercity_Coach    :Aluminium-Leichtbau-Fernverkehrswagen
+str_mu_Coach_Gen3_Mk1_Intercity_Coach                                              :Mk1 Fernverkehrswagen
+str_mu_Coach_Gen3_UIC_X_Intercity_Coach                                    :UIC-X Fernverkehrswagen
+str_mu_Coach_Gen3_TEE_Intercity_Coach                                              :TEE-Fernverkehrswagen
+str_mu_Coach_Gen3_Indian_Intercity_Coach                                   :Indischer Fernverkehrswagen
+str_mu_Coach_Gen4_Eurofima_Intercity_Coach                                 :Eurofima Fernverkehrswagen
+str_mu_Coach_Gen4_Russian_Intercity_Coach                                  :Russischer Fernverkehrswagen
+str_mu_Coach_Gen4_Amfleet_Intercity_Coach                                  :Amfleet Fernverkehrswagen
 
 #special wagons
-str_mtro_wagon_unpowered                :U-Bahn-Beiwagen (nicht angetrieben)
+str_mtro_Metro_Wagon_Unpowered                :U-Bahn-Beiwagen (nicht angetrieben)
 
 #Obsolete vehicles
 

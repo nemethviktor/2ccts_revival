@@ -32,20 +32,20 @@ STR_PARAM_CONCEPT                                               :概念车型
 STR_PARAM_CONCEPT_DESC                                  :使用概念车型
 STR_PARAM_REGION_AFRICA                                 :非洲
 STR_PARAM_REGION_AFRICA_DESC                    :使用非洲车辆
-STR_PARAM_REGION_NORTHAMERICA                   :北美
-STR_PARAM_REGION_NORTHAMERICA_DESC              :使用北美车辆
-STR_PARAM_REGION_SOUTHAMERICA                   :南美
-STR_PARAM_REGION_SOUTHAMERICA_DESC              :使用南美车辆
+STR_PARAM_REGION_NORTH_AMERICA                   :北美
+STR_PARAM_REGION_NORTH_AMERICA_DESC              :使用北美车辆
+STR_PARAM_REGION_SOUTH_AMERICA                   :南美
+STR_PARAM_REGION_SOUTH_AMERICA_DESC              :使用南美车辆
 STR_PARAM_REGION_ASIA                                   :亚洲
 STR_PARAM_REGION_ASIA_DESC                              :使用亚洲车辆
-STR_PARAM_REGION_NORTHERNEUROPE                 :北欧
-STR_PARAM_REGION_NORTHERNEUROPE_DESC    :使用北欧车辆
-STR_PARAM_REGION_EASTERNEUROPE                  :东欧
-STR_PARAM_REGION_EASTERNEUROPE_DESC             :使用东欧车辆
-STR_PARAM_REGION_SOUTHERNEUROPE                 :南欧
-STR_PARAM_REGION_SOUTHERNEUROPE_DESC    :使用南欧车辆
-STR_PARAM_REGION_WESTERNEUROPE                  :西欧
-STR_PARAM_REGION_WESTERNEUROPE_DESC             :使用西欧车辆
+STR_PARAM_REGION_NORTHERN_EUROPE                 :北欧
+STR_PARAM_REGION_NORTHERN_EUROPE_DESC    :使用北欧车辆
+STR_PARAM_REGION_EASTERN_EUROPE                  :东欧
+STR_PARAM_REGION_EASTERN_EUROPE_DESC             :使用东欧车辆
+STR_PARAM_REGION_SOUTHERN_EUROPE                 :南欧
+STR_PARAM_REGION_SOUTHERN_EUROPE_DESC    :使用南欧车辆
+STR_PARAM_REGION_WESTERN_EUROPE                  :西欧
+STR_PARAM_REGION_WESTERN_EUROPE_DESC             :使用西欧车辆
 STR_PARAM_REGION_OCEANIA                                :大洋洲
 STR_PARAM_REGION_OCEANIA_DESC                   :使用大洋洲车辆
 
@@ -714,139 +714,139 @@ str_mglv_China_Transrapid       :上海磁浮 (磁浮)
 str_mglv_Japan_MLX01_901        :日铁MLX01-901 (磁浮)
 
 #wagons
-str_wagon_Gen1_Flat_Wagon                               :1代平板车(英)
-str_wagon_Gen1_Boxcar                                   :1代木制棚车
-str_wagon_Gen1_Tanker                                   :1代油罐车
-str_wagon_Gen1_Open_Wagon                               :1代木制敞篷车
-str_wagon_Gen2_Flat_Wagon                               :2代平板车
-str_wagon_Gen2_Boxcar_Type1                             :2代木制棚车 (I型)
-str_wagon_Gen2_Boxcar_Type2                             :2代木制棚车 (II型)
-str_wagon_Gen2_Tanker                                   :2代油罐车
-str_wagon_Gen2_Open_Wagon                               :2代木制敞篷车
-str_wagon_Gen2_Silo                                     :2代筒仓车
-str_wagon_Gen2_Hopper                                   :2代木制料斗
-str_wagon_Gen3_Flat_Wagon                               :3代平板车
-str_wagon_Gen3_Boxcar_Type1                     :3代木制棚车 (I型)
-str_wagon_Gen3_Boxcar_Type2                     :3代木制棚车 (II型)
-str_wagon_Gen3_Tanker                                   :3代油罐车
-str_wagon_Gen3_Open_Wagon                               :3代敞篷车
-str_wagon_Gen3_Silo_Type1                               :3代筒仓车 (I型)
-str_wagon_Gen3_Silo_Type2                               :3代筒仓车 (II型)
-str_wagon_Gen3_Hopper                                   :3代料斗车
-str_wagon_Gen4_Flatcar                                  :4代平板车(美)
-str_wagon_Gen4_Heavy_Flatcar                    :4代重型平板车
-str_wagon_Gen4_Boxcar_Type1                             :4代棚车 (I型)
-str_wagon_Gen4_Boxcar_Type2                             :4代棚车 (II型)
-str_wagon_Gen4_Tanker                                   :4代油罐车
-str_wagon_Gen4_Gondola                                  :4代敞篷车(美)
-str_wagon_Gen4_Silo_Type1                               :4代筒仓车 (I型)
-str_wagon_Gen4_Silo_Type2                               :4代筒仓车 (II型)
-str_wagon_Gen4_Hopper_Type1                             :4代自卸料斗车 (I型)
-str_wagon_Gen4_Hopper_Type2                             :4代自卸料斗车 (II型)
-str_wagon_Gen4_Car_Transporter                  :4代转轨车
-str_wagon_Gen4_Container_Carrier                :4代集装箱车
-str_wagon_Gen4_Centerbeam                               :4代桁架平板车
-str_wagon_Gen5_Flatcar                                  :5代平板车
-str_wagon_Gen5_Heavy_Flatcar                    :5代重型平板车
-str_wagon_Gen5_Boxcar_Type1                             :5代棚车 (I型)
-str_wagon_Gen5_Boxcar_Type2                             :5代棚车 (II型)
-str_wagon_Gen5_Tanker                                   :5代油罐车
-str_wagon_Gen5_Gondola                                  :5代敞篷车(美)
-str_wagon_Gen5_Silo_Type1                               :5代筒仓车 (I型)
-str_wagon_Gen5_Silo_Type2                               :5代筒仓车 (II型)
-str_wagon_Gen5_Hopper_Type1                             :5代自卸料斗车 (I型)
-str_wagon_Gen5_Hopper_Type2                             :5代自卸料斗车 (II型)
-str_wagon_Gen5_Car_Transporter                  :5代转轨车
-str_wagon_Gen5_Container_Carrier                :5代集装箱车
-str_wagon_Gen5_Centerbeam                               :5代桁架平板车
-str_wagon_Gen5_Container_Doublestack    :5代双层集装箱车(美)
-str_wagon_Gen5_Superheavy_Flatcar               :5代超级重型平板车
+str_mu_Wagon_Gen1_Flat_Wagon                               :1代平板车(英)
+str_mu_Wagon_Gen1_Boxcar                                   :1代木制棚车
+str_mu_Wagon_Gen1_Tanker                                   :1代油罐车
+str_mu_Wagon_Gen1_Open_Wagon                               :1代木制敞篷车
+str_mu_Wagon_Gen2_Flat_Wagon                               :2代平板车
+str_mu_Wagon_Gen2_Boxcar_Type1                             :2代木制棚车 (I型)
+str_mu_Wagon_Gen2_Boxcar_Type2                             :2代木制棚车 (II型)
+str_mu_Wagon_Gen2_Tanker                                   :2代油罐车
+str_mu_Wagon_Gen2_Open_Wagon                               :2代木制敞篷车
+str_mu_Wagon_Gen2_Silo                                     :2代筒仓车
+str_mu_Wagon_Gen2_Hopper                                   :2代木制料斗
+str_mu_Wagon_Gen3_Flat_Wagon                               :3代平板车
+str_mu_Wagon_Gen3_Boxcar_Type1                     :3代木制棚车 (I型)
+str_mu_Wagon_Gen3_Boxcar_Type2                     :3代木制棚车 (II型)
+str_mu_Wagon_Gen3_Tanker                                   :3代油罐车
+str_mu_Wagon_Gen3_Open_Wagon                               :3代敞篷车
+str_mu_Wagon_Gen3_Silo_Type1                               :3代筒仓车 (I型)
+str_mu_Wagon_Gen3_Silo_Type2                               :3代筒仓车 (II型)
+str_mu_Wagon_Gen3_Hopper                                   :3代料斗车
+str_mu_Wagon_Gen4_Flatcar                                  :4代平板车(美)
+str_mu_Wagon_Gen4_Heavy_Flatcar                    :4代重型平板车
+str_mu_Wagon_Gen4_Boxcar_Type1                             :4代棚车 (I型)
+str_mu_Wagon_Gen4_Boxcar_Type2                             :4代棚车 (II型)
+str_mu_Wagon_Gen4_Tanker                                   :4代油罐车
+str_mu_Wagon_Gen4_Gondola                                  :4代敞篷车(美)
+str_mu_Wagon_Gen4_Silo_Type1                               :4代筒仓车 (I型)
+str_mu_Wagon_Gen4_Silo_Type2                               :4代筒仓车 (II型)
+str_mu_Wagon_Gen4_Hopper_Type1                             :4代自卸料斗车 (I型)
+str_mu_Wagon_Gen4_Hopper_Type2                             :4代自卸料斗车 (II型)
+str_mu_Wagon_Gen4_Car_Transporter                  :4代转轨车
+str_mu_Wagon_Gen4_Container_Carrier                :4代集装箱车
+str_mu_Wagon_Gen4_Centerbeam                               :4代桁架平板车
+str_mu_Wagon_Gen5_Flatcar                                  :5代平板车
+str_mu_Wagon_Gen5_Heavy_Flatcar                    :5代重型平板车
+str_mu_Wagon_Gen5_Boxcar_Type1                             :5代棚车 (I型)
+str_mu_Wagon_Gen5_Boxcar_Type2                             :5代棚车 (II型)
+str_mu_Wagon_Gen5_Tanker                                   :5代油罐车
+str_mu_Wagon_Gen5_Gondola                                  :5代敞篷车(美)
+str_mu_Wagon_Gen5_Silo_Type1                               :5代筒仓车 (I型)
+str_mu_Wagon_Gen5_Silo_Type2                               :5代筒仓车 (II型)
+str_mu_Wagon_Gen5_Hopper_Type1                             :5代自卸料斗车 (I型)
+str_mu_Wagon_Gen5_Hopper_Type2                             :5代自卸料斗车 (II型)
+str_mu_Wagon_Gen5_Car_Transporter                  :5代转轨车
+str_mu_Wagon_Gen5_Container_Carrier                :5代集装箱车
+str_mu_Wagon_Gen5_Centerbeam                               :5代桁架平板车
+str_mu_Wagon_Gen5_Container_Doublestack    :5代双层集装箱车(美)
+str_mu_Wagon_Gen5_Superheavy_Flatcar               :5代超级重型平板车
 
-str_wagon_Service_Car_Type1                             :路务车 (I型)
-str_wagon_Service_Car_Type2                             :路务车 (II型)
+str_mu_Wagon_Service_Car_Type1                             :路务车 (I型)
+str_mu_Wagon_Service_Car_Type2                             :路务车 (II型)
 
 #coaches
-str_coach_Gen1_Wooden_2_axle_Compartment_Coach                  :木制2轴隔间客车
-str_coach_Gen1_Wooden_2_axle_Regional_Coach                     :木制2轴地区客车
-str_coach_Gen1_Wooden_2_axle_Mail_Coach                                 :2轴木制邮车
-str_coach_Gen1_Clerestory_Compartment_Coach                     :带天窗隔间客车
-str_coach_Gen1_Clerestory_Regional_Coach                                :带天窗地区客车
-str_coach_Gen1_Clerestory_Mail_Coach                                    :带天窗邮车
-str_coach_Gen1_Wooden_3_axle_Compartment_Coach                  :木制3轴隔间客车
-str_coach_Gen1_Wooden_3_axle_Regional_Coach                     :木制3轴地区客车
-str_coach_Gen1_Wooden_3_axle_Mail_Coach                                 :3轴木制邮车
-str_coach_Gen2_Heavyweight_Intercity_Coach                              :重型城际客车
-str_coach_Gen2_Heavyweight_Mail_Coach                                   :重型邮车
-str_coach_Gen2_Steel_Intercity_Coach                                    :钢制城际客车
-str_coach_Gen2_Steel_Compartment_Coach                                  :钢制隔间客车
-str_coach_Gen2_Steel_Regional_Coach                                     :钢制地区客车
-str_coach_Gen2_Steel_Mail_Coach                                                 :钢制邮车
-str_coach_Gen2_Steel_2_axle_Compartment_Coach                   :钢制2轴隔间客车
-str_coach_Gen2_Steel_2_axle_Regional_Coach                              :钢制2轴地区客车
-str_coach_Gen2_Steel_2_axle_Mail_Coach                                  :钢制2轴邮车
-str_coach_Gen2_Steel_3_axle_Compartment_Coach                   :钢制3轴隔间客车
-str_coach_Gen2_Steel_3_axle_Regional_Coach                              :钢制3轴地区客车
-str_coach_Gen2_Steel_3_axle_Mail_Coach                                  :钢制3轴邮车
-str_coach_Gen3_Steel_Lightweight_Intercity_Coach                :钢制轻型城际客车
-str_coach_Gen3_Steel_Lightweight_Regional_Coach                 :钢制轻型地区客车
-str_coach_Gen3_Steel_Lightweight_Mail_Coach                     :钢制轻型邮车
-str_coach_Gen3_Aluminium_Lightweight_Intercity_Coach    :铝制轻型城际客车
-str_coach_Gen3_Aluminium_Lightweight_Regional_Coach     :铝制轻型地区客车
-str_coach_Gen3_Aluminium_Lightweight_Mail_Coach                 :铝制轻型邮车
-str_coach_Gen3_Gallery_Car                                                              :双层廊座客车
-str_coach_Gen3_Mk1_Intercity_Coach                                              :Mk1城际客车(英)
-str_coach_Gen3_Mk1_Regional_Coach                                               :Mk1地区客车(英)
-str_coach_Gen3_Mk1_Mail_Coach                                                   :Mk1邮车(英)
-str_coach_Gen3_UIC_X_Intercity_Coach                                    :UIC-X城际客车(德铁DB)
-str_coach_Gen3_TEE_Intercity_Coach                                              :全欧快车(TEE)城际客车
-str_coach_Gen3_UIC_X_Regional_Coach                                     :UIC-X地区客车(德铁DB)
-str_coach_Gen3_Umbauwagen_Local_Coach                                   :'Umbauwagen'本地客车(德铁DB)
-str_coach_Gen3_Doppelstockwagen_Local_Coach                     :'Doppelstockwagen'本地客车(双层廊座)
-str_coach_Gen3_UIC_X_Mail_Coach                                                 :UIC-X邮车(德铁DB)
-str_coach_Gen3_Indian_Intercity_Coach                                   :印度城际客车
-str_coach_Gen3_Indian_Local_Coach                                               :印度本地客车
-str_coach_Gen3_Indian_Regional_Coach                                    :印度地区客车
-str_coach_Gen3_Indian_Mail_Coach                                                :印度邮车
-str_coach_Gen4_Eurofima_Intercity_Coach                                 :欧铁(Eurofima)客车
-str_coach_Gen4_InterRegio_Coach                                                 :区间(IR)客车
-str_coach_Gen4_Silberling_Commuter_Coach                                :'西柏林'通勤客车
-str_coach_Gen4_Eurofima_Mail_Coach                                              :欧铁(Eurofima)邮车
-str_coach_Gen4_Double_Decker_Coach                                              :双层客车
-str_coach_Gen4_Russian_Intercity_Coach                                  :俄罗斯城际客车
-str_coach_Gen4_Russian_Regional_Coach                                   :俄罗斯地区客车
-str_coach_Gen4_Russian_Mail_Coach                                               :俄罗斯邮车
-str_coach_Gen4_Superliner_Coach                                                 :超级班轮客车(双层)(美铁)
-str_coach_Gen4_Superliner_California                                    :超级班轮-加利福尼亚(美铁)
-str_coach_Gen4_Amfleet_Regional_Coach                                   :Amfleet型地区客车(美铁)
-str_coach_Gen4_Amfleet_Intercity_Coach                                  :Amfleet型城际客车(美铁)
-str_coach_Gen4_Comet_Commuter_Coach                                     :'彗星'通勤客车(新泽西公交)
-str_coach_Gen4_Horizon_Regional_Coach                                   :'地平线'地区客车(美铁)
-str_coach_Gen4_Horizon_Baggage_Coach                                    :'地平线'行李车厢
-str_coach_Gen4_Bombardier_Bi_level                                              :庞巴迪双层
-str_coach_Gen5_High_Speed_Coach                                                 :高速客车
-str_coach_Gen5_Modern_Regional_Coach                                    :现代地区客车
-str_coach_Gen5_Modern_Commuter_Coach                                    :现代通勤客车
-str_coach_Gen5_Modern_Double_Decker_Coach                               :现代双层客车
-str_coach_Gen5_High_Speed_Double_Decker_IC2000                  :高速双层客车(IC2000)
-str_coach_Gen5_High_Speed_Mail_Coach                                    :高速邮车
-str_coach_Gen5_Talgo_Pendular                                                   :塔尔高摆式客车
-str_coach_Gen5_Talgo_Pendular_Mail                                              :塔尔高摆式邮车
-str_coach_Gen6_Grand_Voyager_Coach                                              :大航海家客车(英铁220型)
-str_coach_Gen6_Grand_Regio_Coach                                                :大型区域客车
-str_coach_Gen6_Metropolis_Coach                                                 :大都会城市铁路巴士
-str_coach_Gen6_Speedmail_Coach                                                  :快邮邮车
-str_coach_Gen6_Super_Regio_Coach                                                :超级区域客车
-str_coach_Gen6_Super_Voyager_Coach                                              :超级航海家客车(英铁221型)
+str_mu_Coach_Gen1_Wooden_2_axle_Compartment_Coach                  :木制2轴隔间客车
+str_mu_Coach_Gen1_Wooden_2_axle_Regional_Coach                     :木制2轴地区客车
+str_mu_Coach_Gen1_Wooden_2_axle_Mail_Coach                                 :2轴木制邮车
+str_mu_Coach_Gen1_Clerestory_Compartment_Coach                     :带天窗隔间客车
+str_mu_Coach_Gen1_Clerestory_Regional_Coach                                :带天窗地区客车
+str_mu_Coach_Gen1_Clerestory_Mail_Coach                                    :带天窗邮车
+str_mu_Coach_Gen1_Wooden_3_axle_Compartment_Coach                  :木制3轴隔间客车
+str_mu_Coach_Gen1_Wooden_3_axle_Regional_Coach                     :木制3轴地区客车
+str_mu_Coach_Gen1_Wooden_3_axle_Mail_Coach                                 :3轴木制邮车
+str_mu_Coach_Gen2_Heavyweight_Intercity_Coach                              :重型城际客车
+str_mu_Coach_Gen2_Heavyweight_Mail_Coach                                   :重型邮车
+str_mu_Coach_Gen2_Steel_Intercity_Coach                                    :钢制城际客车
+str_mu_Coach_Gen2_Steel_Compartment_Coach                                  :钢制隔间客车
+str_mu_Coach_Gen2_Steel_Regional_Coach                                     :钢制地区客车
+str_mu_Coach_Gen2_Steel_Mail_Coach                                                 :钢制邮车
+str_mu_Coach_Gen2_Steel_2_axle_Compartment_Coach                   :钢制2轴隔间客车
+str_mu_Coach_Gen2_Steel_2_axle_Regional_Coach                              :钢制2轴地区客车
+str_mu_Coach_Gen2_Steel_2_axle_Mail_Coach                                  :钢制2轴邮车
+str_mu_Coach_Gen2_Steel_3_axle_Compartment_Coach                   :钢制3轴隔间客车
+str_mu_Coach_Gen2_Steel_3_axle_Regional_Coach                              :钢制3轴地区客车
+str_mu_Coach_Gen2_Steel_3_axle_Mail_Coach                                  :钢制3轴邮车
+str_mu_Coach_Gen3_Steel_Lightweight_Intercity_Coach                :钢制轻型城际客车
+str_mu_Coach_Gen3_Steel_Lightweight_Regional_Coach                 :钢制轻型地区客车
+str_mu_Coach_Gen3_Steel_Lightweight_Mail_Coach                     :钢制轻型邮车
+str_mu_Coach_Gen3_Aluminium_Lightweight_Intercity_Coach    :铝制轻型城际客车
+str_mu_Coach_Gen3_Aluminium_Lightweight_Regional_Coach     :铝制轻型地区客车
+str_mu_Coach_Gen3_Aluminium_Lightweight_Mail_Coach                 :铝制轻型邮车
+str_mu_Coach_Gen3_Gallery_Car                                                              :双层廊座客车
+str_mu_Coach_Gen3_Mk1_Intercity_Coach                                              :Mk1城际客车(英)
+str_mu_Coach_Gen3_Mk1_Regional_Coach                                               :Mk1地区客车(英)
+str_mu_Coach_Gen3_Mk1_Mail_Coach                                                   :Mk1邮车(英)
+str_mu_Coach_Gen3_UIC_X_Intercity_Coach                                    :UIC-X城际客车(德铁DB)
+str_mu_Coach_Gen3_TEE_Intercity_Coach                                              :全欧快车(TEE)城际客车
+str_mu_Coach_Gen3_UIC_X_Regional_Coach                                     :UIC-X地区客车(德铁DB)
+str_mu_Coach_Gen3_Umbauwagen_Local_Coach                                   :'Umbauwagen'本地客车(德铁DB)
+str_mu_Coach_Gen3_Doppelstockwagen_Local_Coach                     :'Doppelstockwagen'本地客车(双层廊座)
+str_mu_Coach_Gen3_UIC_X_Mail_Coach                                                 :UIC-X邮车(德铁DB)
+str_mu_Coach_Gen3_Indian_Intercity_Coach                                   :印度城际客车
+str_mu_Coach_Gen3_Indian_Local_Coach                                               :印度本地客车
+str_mu_Coach_Gen3_Indian_Regional_Coach                                    :印度地区客车
+str_mu_Coach_Gen3_Indian_Mail_Coach                                                :印度邮车
+str_mu_Coach_Gen4_Eurofima_Intercity_Coach                                 :欧铁(Eurofima)客车
+str_mu_Coach_Gen4_InterRegio_Coach                                                 :区间(IR)客车
+str_mu_Coach_Gen4_Silberling_Commuter_Coach                                :'西柏林'通勤客车
+str_mu_Coach_Gen4_Eurofima_Mail_Coach                                              :欧铁(Eurofima)邮车
+str_mu_Coach_Gen4_Double_Decker_Coach                                              :双层客车
+str_mu_Coach_Gen4_Russian_Intercity_Coach                                  :俄罗斯城际客车
+str_mu_Coach_Gen4_Russian_Regional_Coach                                   :俄罗斯地区客车
+str_mu_Coach_Gen4_Russian_Mail_Coach                                               :俄罗斯邮车
+str_mu_Coach_Gen4_Superliner_Coach                                                 :超级班轮客车(双层)(美铁)
+str_mu_Coach_Gen4_Superliner_California                                    :超级班轮-加利福尼亚(美铁)
+str_mu_Coach_Gen4_Amfleet_Regional_Coach                                   :Amfleet型地区客车(美铁)
+str_mu_Coach_Gen4_Amfleet_Intercity_Coach                                  :Amfleet型城际客车(美铁)
+str_mu_Coach_Gen4_Comet_Commuter_Coach                                     :'彗星'通勤客车(新泽西公交)
+str_mu_Coach_Gen4_Horizon_Regional_Coach                                   :'地平线'地区客车(美铁)
+str_mu_Coach_Gen4_Horizon_Baggage_Coach                                    :'地平线'行李车厢
+str_mu_Coach_Gen4_Bombardier_Bi_level                                              :庞巴迪双层
+str_mu_Coach_Gen5_High_Speed_Coach                                                 :高速客车
+str_mu_Coach_Gen5_Modern_Regional_Coach                                    :现代地区客车
+str_mu_Coach_Gen5_Modern_Commuter_Coach                                    :现代通勤客车
+str_mu_Coach_Gen5_Modern_Double_Decker_Coach                               :现代双层客车
+str_mu_Coach_Gen5_High_Speed_Double_Decker_IC2000                  :高速双层客车(IC2000)
+str_mu_Coach_Gen5_High_Speed_Mail_Coach                                    :高速邮车
+str_mu_Coach_Gen5_Talgo_Pendular                                                   :塔尔高摆式客车
+str_mu_Coach_Gen5_Talgo_Pendular_Mail                                              :塔尔高摆式邮车
+str_mu_Coach_Gen6_Grand_Voyager_Coach                                              :大航海家客车(英铁220型)
+str_mu_Coach_Gen6_Grand_Regio_Coach                                                :大型区域客车
+str_mu_Coach_Gen6_Metropolis_Coach                                                 :大都会城市铁路巴士
+str_mu_Coach_Gen6_Speedmail_Coach                                                  :快邮邮车
+str_mu_Coach_Gen6_Super_Regio_Coach                                                :超级区域客车
+str_mu_Coach_Gen6_Super_Voyager_Coach                                              :超级航海家客车(英铁221型)
 
 #special wagons
-str_mu_wagon_unpowered                  :动车车厢 (无动力)
-str_mtro_wagon_unpowered                :城轨车厢 (无动力)
-str_mglv_wagon_unpowered                :磁浮车厢 (无动力)
-str_mu_cargo_wagon_unpowered    :动车车厢(无动力)
-str_mu_wagon_powered                    :动车车厢 (有动力)
-str_mtro_wagon_powered                  :城轨车厢 (有动力)
-str_mglv_wagon_powered                  :磁浮车厢 (有动力)
-str_mu_cargo_wagon_powered              :动车组车厢(带动力)
+str_mu_MU_Wagon_Unpowered                  :动车车厢 (无动力)
+str_mtro_Metro_Wagon_Unpowered                :城轨车厢 (无动力)
+str_mglv_Maglev_Wagon_Unpowered                :磁浮车厢 (无动力)
+str_mu_MU_Cargo_Wagon_Unpowered    :动车车厢(无动力)
+str_mu_MU_Wagon_Powered                    :动车车厢 (有动力)
+str_mtro_Metro_Wagon_Powered                  :城轨车厢 (有动力)
+str_mglv_Maglev_Wagon_Powered                  :磁浮车厢 (有动力)
+str_mu_MU_Cargo_Wagon_Powered              :动车组车厢(带动力)
 
 #Obsolete vehicles
 

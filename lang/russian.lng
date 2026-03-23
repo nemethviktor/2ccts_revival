@@ -31,17 +31,17 @@ STR_PARAM_CONCEPT                                               :Консепт�
 STR_PARAM_CONCEPT_DESC                                  :Использовать консептуальные поезда (этот параметер на данный момент ничего не делает)
 STR_PARAM_REGION_AFRICA                                 :Африка
 STR_PARAM_REGION_AFRICA_DESC                    :Использовать поезда из Африки
-STR_PARAM_REGION_NORTHAMERICA                   :Северная Америка
-STR_PARAM_REGION_NORTHAMERICA_DESC              :Использовать поезда из Северной Америки
-STR_PARAM_REGION_SOUTHAMERICA                   :Южная Америка
-STR_PARAM_REGION_SOUTHAMERICA_DESC              :Использовать поезда из Южной Америки
+STR_PARAM_REGION_NORTH_AMERICA                   :Северная Америка
+STR_PARAM_REGION_NORTH_AMERICA_DESC              :Использовать поезда из Северной Америки
+STR_PARAM_REGION_SOUTH_AMERICA                   :Южная Америка
+STR_PARAM_REGION_SOUTH_AMERICA_DESC              :Использовать поезда из Южной Америки
 STR_PARAM_REGION_ASIA                                   :Азия
 STR_PARAM_REGION_ASIA_DESC                              :Использовать поезда из Азии
-STR_PARAM_REGION_NORTHERNEUROPE                 :Северная Европа
-STR_PARAM_REGION_NORTHERNEUROPE_DESC    :Использовать поезда из Северной Европы
-STR_PARAM_REGION_EASTERNEUROPE                  :Восточная Европа
-STR_PARAM_REGION_EASTERNEUROPE_DESC             :Использовать поезда из Восточной Европы
-STR_PARAM_REGION_SOUTHERNEUROPE                 :Южная Европа
+STR_PARAM_REGION_NORTHERN_EUROPE                 :Северная Европа
+STR_PARAM_REGION_NORTHERN_EUROPE_DESC    :Использовать поезда из Северной Европы
+STR_PARAM_REGION_EASTERN_EUROPE                  :Восточная Европа
+STR_PARAM_REGION_EASTERN_EUROPE_DESC             :Использовать поезда из Восточной Европы
+STR_PARAM_REGION_SOUTHERN_EUROPE                 :Южная Европа
 STR_PARAM_REGION_OCEANIA                                :Океания
 
 #loading speed parameter
@@ -184,62 +184,62 @@ str_mtro_Greece_Thessaloniki_2014                               :Салоник�
 #Maglev
 
 #wagons
-str_wagon_Gen1_Tanker                                   :Танкер 1-го Покол.
-str_wagon_Gen2_Flat_Wagon                               :Вагон-Платформа 2-го Покол.
-str_wagon_Gen2_Boxcar_Type1                             :Деревянный Товарный Вагон 2-го Покол. (Тип 1)
-str_wagon_Gen2_Boxcar_Type2                             :Деревянный Товарный Вагон 2-го Покол. (Тип 2)
-str_wagon_Gen2_Silo                                     :Хоппер 2-го Покол.
-str_wagon_Gen2_Hopper                                   :Деревянный Вагон-Хопер 2-го Покол.
-str_wagon_Gen3_Silo_Type1                               :Силос Вагон 3-го Поколения (Тип 1)
-str_wagon_Gen4_Silo_Type2                               :Силос Вагон 4-го Поколения (Тип 2)
-str_wagon_Gen4_Hopper_Type1                             :Само-разгружающийся Хоппер 4-го Покол. (Тип 1)
-str_wagon_Gen4_Hopper_Type2                             :Само-разгружающийся Хоппер 4-го Покол. (Тип 2)
-str_wagon_Gen4_Car_Transporter                  :Автомобильный Вагон 4-го Покол.
-str_wagon_Gen5_Flatcar                                  :Вагон-Платформа 5-го Покол.
-str_wagon_Gen5_Boxcar_Type1                             :Товарный Вагон 5-го Покол. (Тип 1)
-str_wagon_Gen5_Tanker                                   :Танкер 5-го Покол.
-str_wagon_Gen5_Hopper_Type1                             :Само-разгружающийся Хоппер 5-го Покол. (Тип 1)
-str_wagon_Gen5_Hopper_Type2                             :Само-разгружающийся Хоппер 5-го Покол. (Тип 2)
-str_wagon_Gen5_Car_Transporter                  :Автомобильный Вагон 5-го Покол.
+str_mu_Wagon_Gen1_Tanker                                   :Танкер 1-го Покол.
+str_mu_Wagon_Gen2_Flat_Wagon                               :Вагон-Платформа 2-го Покол.
+str_mu_Wagon_Gen2_Boxcar_Type1                             :Деревянный Товарный Вагон 2-го Покол. (Тип 1)
+str_mu_Wagon_Gen2_Boxcar_Type2                             :Деревянный Товарный Вагон 2-го Покол. (Тип 2)
+str_mu_Wagon_Gen2_Silo                                     :Хоппер 2-го Покол.
+str_mu_Wagon_Gen2_Hopper                                   :Деревянный Вагон-Хопер 2-го Покол.
+str_mu_Wagon_Gen3_Silo_Type1                               :Силос Вагон 3-го Поколения (Тип 1)
+str_mu_Wagon_Gen4_Silo_Type2                               :Силос Вагон 4-го Поколения (Тип 2)
+str_mu_Wagon_Gen4_Hopper_Type1                             :Само-разгружающийся Хоппер 4-го Покол. (Тип 1)
+str_mu_Wagon_Gen4_Hopper_Type2                             :Само-разгружающийся Хоппер 4-го Покол. (Тип 2)
+str_mu_Wagon_Gen4_Car_Transporter                  :Автомобильный Вагон 4-го Покол.
+str_mu_Wagon_Gen5_Flatcar                                  :Вагон-Платформа 5-го Покол.
+str_mu_Wagon_Gen5_Boxcar_Type1                             :Товарный Вагон 5-го Покол. (Тип 1)
+str_mu_Wagon_Gen5_Tanker                                   :Танкер 5-го Покол.
+str_mu_Wagon_Gen5_Hopper_Type1                             :Само-разгружающийся Хоппер 5-го Покол. (Тип 1)
+str_mu_Wagon_Gen5_Hopper_Type2                             :Само-разгружающийся Хоппер 5-го Покол. (Тип 2)
+str_mu_Wagon_Gen5_Car_Transporter                  :Автомобильный Вагон 5-го Покол.
 
-str_wagon_Service_Car_Type1                             :Вагон Обслуживания (Тип 1)
-str_wagon_Service_Car_Type2                             :Вагон Обслуживания (Тип 2)
+str_mu_Wagon_Service_Car_Type1                             :Вагон Обслуживания (Тип 1)
+str_mu_Wagon_Service_Car_Type2                             :Вагон Обслуживания (Тип 2)
 
 #coaches
-str_coach_Gen1_Wooden_2_axle_Compartment_Coach                  :Деревянный 2-х осный Купейный Вагон
-str_coach_Gen1_Clerestory_Compartment_Coach                     :Освещенный Купейный Вагон
-str_coach_Gen1_Clerestory_Regional_Coach                                :Освещенный Междугородний Вагон
-str_coach_Gen1_Clerestory_Mail_Coach                                    :Освещенный Почтовый Вагон
-str_coach_Gen2_Steel_2_axle_Compartment_Coach                   :Металический 2-х осный Купейный Вагон
-str_coach_Gen2_Steel_2_axle_Mail_Coach                                  :Металический 2-ч осный Почтовый Вагон
-str_coach_Gen2_Steel_3_axle_Compartment_Coach                   :Металический 3-х осный Купейный Вагон
-str_coach_Gen2_Steel_3_axle_Mail_Coach                                  :Металический 3-ч осный Почтовый Вагон
-str_coach_Gen3_Steel_Lightweight_Intercity_Coach                :Стальной Легкий Пригородный Вагон
-str_coach_Gen3_Aluminium_Lightweight_Intercity_Coach    :Алюминевый Легкий Пригородный Вагон
-str_coach_Gen3_Aluminium_Lightweight_Regional_Coach     :Алюминевый Легкий Междугородний Вагон
-str_coach_Gen3_Aluminium_Lightweight_Mail_Coach                 :Алюминевый Легкий Почтовый Вагон
-str_coach_Gen3_Mk1_Intercity_Coach                                              :Mk1 Пригородный Вагон
-str_coach_Gen3_Mk1_Regional_Coach                                               :Междугородний Вагон 'Mk1'
-str_coach_Gen3_UIC_X_Intercity_Coach                                    :UIC-X Междугородный Вагон
-str_coach_Gen3_Umbauwagen_Local_Coach                                   :'Umbauwagen' Городской Вагон
-str_coach_Gen3_Indian_Intercity_Coach                                   :Индийский Пригородный Вагон
-str_coach_Gen3_Indian_Mail_Coach                                                :Индийский Почтовый Вагон
-str_coach_Gen4_Silberling_Commuter_Coach                                :Пригородный Вагон 'Silberling'
-str_coach_Gen4_Eurofima_Mail_Coach                                              :Почтовый Вагон "Eurofima"
-str_coach_Gen4_Russian_Mail_Coach                                               :Российский Почтовый Вагон
-str_coach_Gen4_Superliner_Coach                                                 :Скоростной Спальный Вагон
-str_coach_Gen4_Amfleet_Regional_Coach                                   :Междугородний Пассажирский Вагон "Amfleet"
-str_coach_Gen4_Amfleet_Intercity_Coach                                  :Пригородный Вагон "Amfleet"
-str_coach_Gen4_Comet_Commuter_Coach                                     :Пригородный Вагон 'Comet'
-str_coach_Gen4_Horizon_Baggage_Coach                                    :Грузовой Вагон "Горизонт"
-str_coach_Gen5_Modern_Regional_Coach                                    :Современный Междугородний Вагон
-str_coach_Gen5_Modern_Commuter_Coach                                    :Современный Пригородный Вагон
-str_coach_Gen5_High_Speed_Double_Decker_IC2000                  :Скоростной Двухэтажный Вагон (IC2000)
-str_coach_Gen5_High_Speed_Mail_Coach                                    :Скоростной Почтовый Вагон
-str_coach_Gen6_Metropolis_Coach                                                 :Городской Вагон
+str_mu_Coach_Gen1_Wooden_2_axle_Compartment_Coach                  :Деревянный 2-х осный Купейный Вагон
+str_mu_Coach_Gen1_Clerestory_Compartment_Coach                     :Освещенный Купейный Вагон
+str_mu_Coach_Gen1_Clerestory_Regional_Coach                                :Освещенный Междугородний Вагон
+str_mu_Coach_Gen1_Clerestory_Mail_Coach                                    :Освещенный Почтовый Вагон
+str_mu_Coach_Gen2_Steel_2_axle_Compartment_Coach                   :Металический 2-х осный Купейный Вагон
+str_mu_Coach_Gen2_Steel_2_axle_Mail_Coach                                  :Металический 2-ч осный Почтовый Вагон
+str_mu_Coach_Gen2_Steel_3_axle_Compartment_Coach                   :Металический 3-х осный Купейный Вагон
+str_mu_Coach_Gen2_Steel_3_axle_Mail_Coach                                  :Металический 3-ч осный Почтовый Вагон
+str_mu_Coach_Gen3_Steel_Lightweight_Intercity_Coach                :Стальной Легкий Пригородный Вагон
+str_mu_Coach_Gen3_Aluminium_Lightweight_Intercity_Coach    :Алюминевый Легкий Пригородный Вагон
+str_mu_Coach_Gen3_Aluminium_Lightweight_Regional_Coach     :Алюминевый Легкий Междугородний Вагон
+str_mu_Coach_Gen3_Aluminium_Lightweight_Mail_Coach                 :Алюминевый Легкий Почтовый Вагон
+str_mu_Coach_Gen3_Mk1_Intercity_Coach                                              :Mk1 Пригородный Вагон
+str_mu_Coach_Gen3_Mk1_Regional_Coach                                               :Междугородний Вагон 'Mk1'
+str_mu_Coach_Gen3_UIC_X_Intercity_Coach                                    :UIC-X Междугородный Вагон
+str_mu_Coach_Gen3_Umbauwagen_Local_Coach                                   :'Umbauwagen' Городской Вагон
+str_mu_Coach_Gen3_Indian_Intercity_Coach                                   :Индийский Пригородный Вагон
+str_mu_Coach_Gen3_Indian_Mail_Coach                                                :Индийский Почтовый Вагон
+str_mu_Coach_Gen4_Silberling_Commuter_Coach                                :Пригородный Вагон 'Silberling'
+str_mu_Coach_Gen4_Eurofima_Mail_Coach                                              :Почтовый Вагон "Eurofima"
+str_mu_Coach_Gen4_Russian_Mail_Coach                                               :Российский Почтовый Вагон
+str_mu_Coach_Gen4_Superliner_Coach                                                 :Скоростной Спальный Вагон
+str_mu_Coach_Gen4_Amfleet_Regional_Coach                                   :Междугородний Пассажирский Вагон "Amfleet"
+str_mu_Coach_Gen4_Amfleet_Intercity_Coach                                  :Пригородный Вагон "Amfleet"
+str_mu_Coach_Gen4_Comet_Commuter_Coach                                     :Пригородный Вагон 'Comet'
+str_mu_Coach_Gen4_Horizon_Baggage_Coach                                    :Грузовой Вагон "Горизонт"
+str_mu_Coach_Gen5_Modern_Regional_Coach                                    :Современный Междугородний Вагон
+str_mu_Coach_Gen5_Modern_Commuter_Coach                                    :Современный Пригородный Вагон
+str_mu_Coach_Gen5_High_Speed_Double_Decker_IC2000                  :Скоростной Двухэтажный Вагон (IC2000)
+str_mu_Coach_Gen5_High_Speed_Mail_Coach                                    :Скоростной Почтовый Вагон
+str_mu_Coach_Gen6_Metropolis_Coach                                                 :Городской Вагон
 
 #special wagons
-str_mglv_wagon_powered                  :Вагон Состава на Магнитной Подушке (Моторный)
+str_mglv_Maglev_Wagon_Powered                  :Вагон Состава на Магнитной Подушке (Моторный)
 
 #Obsolete vehicles
 

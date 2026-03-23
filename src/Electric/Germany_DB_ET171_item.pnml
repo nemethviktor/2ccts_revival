@@ -47,7 +47,7 @@ item(FEAT_TRAINS, ITEM ) {
 		RUNNINGCOSTENGINESWITCHCALL
 		PURCHASETEXTSWITCHCALL
 		default: switch_mtro_Germany_DB_ET171_reversed;
-	livery_override (item_mtro_wagon_unpowered ) {
+	livery_override (item_mtro_Metro_Wagon_Unpowered ) {
 		LOADINGSPEED
 		RUNNINGCOSTMUWAGONSWITCHCALLMUWAGONUNPOWERED;
 		power: POWERMUWAGONUNPOWERED;
@@ -57,7 +57,7 @@ item(FEAT_TRAINS, ITEM ) {
 		length: WAGON_LENGTH;
 		default: spriteset_mtro_Germany_DB_ET171_middle
 	}
-	livery_override (item_mtro_wagon_powered ) {
+	livery_override (item_mtro_Metro_Wagon_Powered ) {
 		LOADINGSPEED
 		RUNNINGCOSTMUWAGONSWITCHCALLMUWAGONPOWERED;
 		power: POWERMUWAGONPOWERED;
