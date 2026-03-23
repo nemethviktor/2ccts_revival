@@ -11,7 +11,7 @@
 #define ITEM item_emu_Australia_Victorian_Railways_Swing_Door
 #define NAME string(str_emu_Australia_Victorian_Railways_Swing_Door)
 
-#define VEHICLE_REGION REGION(OCEANIA,NOREGION,NOCONCEPT)
+#define VEHICLE_REGION REGION(OCEANIA,NO_REGION,NO_CONCEPT)
 
 #define INTRODUCTION_YEAR 1917
 #define MODEL_LIFE 45

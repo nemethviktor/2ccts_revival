@@ -11,7 +11,7 @@
 #define ITEM item_diesel_South_Korea_Korail_6000_EMD_SD18
 #define NAME string(str_diesel_South_Korea_Korail_6000_EMD_SD18)
 
-#define VEHICLE_REGION REGION(ASIA,NOREGION,NOCONCEPT)
+#define VEHICLE_REGION REGION(ASIA,NO_REGION,NO_CONCEPT)
 
 #define INTRODUCTION_YEAR 1960
 #define MODEL_LIFE 45

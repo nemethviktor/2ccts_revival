@@ -11,7 +11,7 @@
 #define ITEM item_steam_Israel_Israel_Railways_H
 #define NAME string(str_steam_Israel_Israel_Railways_H)
 
-#define VEHICLE_REGION REGION(ASIA,NOREGION,NOCONCEPT)
+#define VEHICLE_REGION REGION(ASIA,NO_REGION,NO_CONCEPT)
 
 #define INTRODUCTION_YEAR 1918
 #define MODEL_LIFE 45

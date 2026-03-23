@@ -11,7 +11,7 @@
 #define ITEM item_mu_cargo_wagon_unpowered
 #define NAME string(str_mu_cargo_wagon_unpowered)
 
-#define VEHICLE_REGION REGION(ALLREGION,NOREGION,NOCONCEPT)
+#define VEHICLE_REGION REGION(ALL_REGION,NO_REGION,NO_CONCEPT)
 
 #define INTRODUCTION_YEAR 1992
 #define MODEL_LIFE VEHICLE_NEVER_EXPIRES

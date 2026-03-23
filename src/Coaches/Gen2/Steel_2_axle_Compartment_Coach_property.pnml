@@ -11,7 +11,7 @@
 #define ITEM item_coach_Gen2_Steel_2_axle_Compartment_Coach
 #define NAME string(str_coach_Gen2_Steel_2_axle_Compartment_Coach)
 
-#define VEHICLE_REGION REGION(REGIONTYPE1,OCEANIA,NOCONCEPT)
+#define VEHICLE_REGION REGION(REGIONTYPE1,OCEANIA,NO_CONCEPT)
 
 #define INTRODUCTION_YEAR 1920
 #define MODEL_LIFE 60

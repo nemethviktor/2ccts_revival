@@ -11,7 +11,7 @@
 #define ITEM item_diesel_Russia_RZD_M62
 #define NAME string(str_diesel_Russia_RZD_M62)
 
-#define VEHICLE_REGION REGION(ASIA,NOREGION,NOCONCEPT)
+#define VEHICLE_REGION REGION(ASIA,NO_REGION,NO_CONCEPT)
 
 #define INTRODUCTION_YEAR 1965
 #define MODEL_LIFE 45

@@ -11,7 +11,7 @@
 #define ITEM item_coach_Gen4_Russian_Intercity_Coach
 #define NAME string(str_coach_Gen4_Russian_Intercity_Coach)
 
-#define VEHICLE_REGION REGION(EUROPE,ASIA,NOCONCEPT)
+#define VEHICLE_REGION REGION(ALL_EUROPE,ASIA,NO_CONCEPT)
 
 #define INTRODUCTION_YEAR 1960
 #define MODEL_LIFE 50

@@ -7,11 +7,11 @@
 
 #include "../undefine_properties.pnml"
 
-#define VEHIDCODE mglv_wagon_wagon_Gen7M_Boxcar_Type2
+#define VEHIDCODE mglv_wagon_Gen7M_Boxcar_Type2
 #define ITEM item_mglv_wagon_Gen7M_Boxcar_Type2
 #define NAME string(str_mglv_wagon_Gen7M_Boxcar_Type2)
 
-#define VEHICLE_REGION REGION(REGIONTYPE2,NOREGION,ISCONCEPT)
+#define VEHICLE_REGION REGION(REGIONTYPE2,NO_REGION,IS_CONCEPT)
 
 #define INTRODUCTION_YEAR 2010
 #define MODEL_LIFE VEHICLE_NEVER_EXPIRES

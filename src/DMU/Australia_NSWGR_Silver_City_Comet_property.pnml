@@ -11,7 +11,7 @@
 #define ITEM item_dmu_Australia_NSWGR_Silver_City_Comet
 #define NAME string(str_dmu_Australia_NSWGR_Silver_City_Comet)
 
-#define VEHICLE_REGION REGION(OCEANIA,NOREGION,NOCONCEPT)
+#define VEHICLE_REGION REGION(OCEANIA,NO_REGION,NO_CONCEPT)
 
 #define INTRODUCTION_YEAR 1937
 #define MODEL_LIFE 45

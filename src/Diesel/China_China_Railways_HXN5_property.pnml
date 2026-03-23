@@ -11,7 +11,7 @@
 #define ITEM item_diesel_China_China_Railways_HXN5
 #define NAME string(str_diesel_China_China_Railways_HXN5)
 
-#define VEHICLE_REGION REGION(ASIA,NOREGION,NOCONCEPT)
+#define VEHICLE_REGION REGION(ASIA,NO_REGION,NO_CONCEPT)
 
 #define INTRODUCTION_YEAR 2008
 #define MODEL_LIFE VEHICLE_NEVER_EXPIRES

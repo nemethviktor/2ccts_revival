@@ -11,7 +11,7 @@
 #define ITEM item_steam_Australia_South_Australian_Railways_520
 #define NAME string(str_steam_Australia_South_Australian_Railways_520)
 
-#define VEHICLE_REGION REGION(OCEANIA,NOREGION,NOCONCEPT)
+#define VEHICLE_REGION REGION(OCEANIA,NO_REGION,NO_CONCEPT)
 
 #define INTRODUCTION_YEAR 1943
 #define MODEL_LIFE 45

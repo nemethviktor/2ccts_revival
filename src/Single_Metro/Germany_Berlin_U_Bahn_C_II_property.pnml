@@ -11,7 +11,7 @@
 #define ITEM item_singlemtro_Germany_Berlin_U_Bahn_C_II
 #define NAME string(str_singlemtro_Germany_Berlin_U_Bahn_C_II)
 
-#define VEHICLE_REGION REGION(WESTERNEUROPE,NOREGION,NOCONCEPT)
+#define VEHICLE_REGION REGION(WESTERN_EUROPE,NO_REGION,NO_CONCEPT)
 
 #define INTRODUCTION_YEAR 1929
 #define MODEL_LIFE 45

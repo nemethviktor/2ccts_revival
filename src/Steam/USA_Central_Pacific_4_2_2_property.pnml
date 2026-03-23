@@ -11,7 +11,7 @@
 #define ITEM item_steam_USA_Central_Pacific_4_2_2
 #define NAME string(str_steam_USA_Central_Pacific_4_2_2)
 
-#define VEHICLE_REGION REGION(NORTHAMERICA,NOREGION,NOCONCEPT)
+#define VEHICLE_REGION REGION(NORTH_AMERICA,NO_REGION,NO_CONCEPT)
 
 #define INTRODUCTION_YEAR 1863
 #define MODEL_LIFE 45

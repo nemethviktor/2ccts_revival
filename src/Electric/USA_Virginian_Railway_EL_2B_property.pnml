@@ -11,7 +11,7 @@
 #define ITEM item_electric_USA_Virginian_Railway_EL_2B
 #define NAME string(str_electric_USA_Virginian_Railway_EL_2B)
 
-#define VEHICLE_REGION REGION(NORTHAMERICA,NOREGION,NOCONCEPT)
+#define VEHICLE_REGION REGION(NORTH_AMERICA,NO_REGION,NO_CONCEPT)
 
 #define INTRODUCTION_YEAR 1948
 #define MODEL_LIFE 45

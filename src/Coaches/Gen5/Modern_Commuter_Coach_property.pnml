@@ -11,7 +11,7 @@
 #define ITEM item_coach_Gen5_Modern_Commuter_Coach
 #define NAME string(str_coach_Gen5_Modern_Commuter_Coach)
 
-#define VEHICLE_REGION REGION(ALLREGION,NOREGION,NOCONCEPT)
+#define VEHICLE_REGION REGION(ALL_REGION,NO_REGION,NO_CONCEPT)
 
 #define INTRODUCTION_YEAR 2000
 #define MODEL_LIFE VEHICLE_NEVER_EXPIRES

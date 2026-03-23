@@ -11,7 +11,7 @@
 #define ITEM item_electric_Switzerland_RhB_Ge_6_6_Krokodil
 #define NAME string(str_electric_Switzerland_RhB_Ge_6_6_Krokodil)
 
-#define VEHICLE_REGION REGION(WESTERNEUROPE,NOREGION,NOCONCEPT)
+#define VEHICLE_REGION REGION(WESTERN_EUROPE,NO_REGION,NO_CONCEPT)
 
 #define INTRODUCTION_YEAR 1921
 #define MODEL_LIFE 45

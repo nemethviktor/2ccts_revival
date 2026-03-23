@@ -11,7 +11,7 @@
 #define ITEM item_rbs_Germany_Bavarian_MCCi
 #define NAME string(str_rbs_Germany_Bavarian_MCCi)
 
-#define VEHICLE_REGION REGION(WESTERNEUROPE,NOREGION,NOCONCEPT)
+#define VEHICLE_REGION REGION(WESTERN_EUROPE,NO_REGION,NO_CONCEPT)
 
 #define INTRODUCTION_YEAR 1906
 #define MODEL_LIFE 45

@@ -11,7 +11,7 @@
 #define ITEM item_coach_Gen3_Aluminium_Lightweight_Mail_Coach
 #define NAME string(str_coach_Gen3_Aluminium_Lightweight_Mail_Coach)
 
-#define VEHICLE_REGION REGION(AMERICA,OCEANIA,NOCONCEPT)
+#define VEHICLE_REGION REGION(ALL_AMERICA,OCEANIA,NO_CONCEPT)
 
 #define INTRODUCTION_YEAR 1940
 #define MODEL_LIFE 50

@@ -11,7 +11,7 @@
 #define ITEM item_coach_Gen5_Talgo_Pendular_Mail
 #define NAME string(str_coach_Gen5_Talgo_Pendular_Mail)
 
-#define VEHICLE_REGION REGION(ALLREGION,NOREGION,NOCONCEPT)
+#define VEHICLE_REGION REGION(ALL_REGION,NO_REGION,NO_CONCEPT)
 
 #define INTRODUCTION_YEAR 1980
 #define MODEL_LIFE VEHICLE_NEVER_EXPIRES

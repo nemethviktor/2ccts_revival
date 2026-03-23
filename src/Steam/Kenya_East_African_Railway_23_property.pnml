@@ -11,7 +11,7 @@
 #define ITEM item_steam_Kenya_East_African_Railway_23
 #define NAME string(str_steam_Kenya_East_African_Railway_23)
 
-#define VEHICLE_REGION REGION(AFRICA,NOREGION,NOCONCEPT)
+#define VEHICLE_REGION REGION(AFRICA,NO_REGION,NO_CONCEPT)
 
 #define INTRODUCTION_YEAR 1923
 #define MODEL_LIFE 45

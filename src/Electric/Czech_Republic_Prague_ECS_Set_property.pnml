@@ -11,7 +11,7 @@
 #define ITEM item_mtro_Czech_Republic_Prague_ECS_Set
 #define NAME string(str_mtro_Czech_Republic_Prague_ECS_Set)
 
-#define VEHICLE_REGION REGION(EASTERNEUROPE,NOREGION,NOCONCEPT)
+#define VEHICLE_REGION REGION(EASTERN_EUROPE,NO_REGION,NO_CONCEPT)
 
 #define INTRODUCTION_YEAR 1972
 #define MODEL_LIFE 45

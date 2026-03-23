@@ -11,7 +11,7 @@
 #define ITEM item_steam_Canada_CPR_Royal_Hudson
 #define NAME string(str_steam_Canada_CPR_Royal_Hudson)
 
-#define VEHICLE_REGION REGION(NORTHAMERICA,NOREGION,NOCONCEPT)
+#define VEHICLE_REGION REGION(NORTH_AMERICA,NO_REGION,NO_CONCEPT)
 
 #define INTRODUCTION_YEAR 1937
 #define MODEL_LIFE 45

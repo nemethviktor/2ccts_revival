@@ -11,7 +11,7 @@
 #define ITEM item_electric_Russia_RZD_VL11
 #define NAME string(str_electric_Russia_RZD_VL11)
 
-#define VEHICLE_REGION REGION(ASIA,NOREGION,NOCONCEPT)
+#define VEHICLE_REGION REGION(ASIA,NO_REGION,NO_CONCEPT)
 
 #define INTRODUCTION_YEAR 1974
 #define MODEL_LIFE 45

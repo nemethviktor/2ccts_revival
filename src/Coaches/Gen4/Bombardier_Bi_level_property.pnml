@@ -11,7 +11,7 @@
 #define ITEM item_coach_Gen4_Bombardier_Bi_level
 #define NAME string(str_coach_Gen4_Bombardier_Bi_level)
 
-#define VEHICLE_REGION REGION(AMERICA,OCEANIA,NOCONCEPT)
+#define VEHICLE_REGION REGION(ALL_AMERICA,OCEANIA,NO_CONCEPT)
 
 #define INTRODUCTION_YEAR 1970
 #define MODEL_LIFE VEHICLE_NEVER_EXPIRES

@@ -11,7 +11,7 @@
 #define ITEM item_steam_South_Africa_SAR_25
 #define NAME string(str_steam_South_Africa_SAR_25)
 
-#define VEHICLE_REGION REGION(AFRICA,NOREGION,NOCONCEPT)
+#define VEHICLE_REGION REGION(AFRICA,NO_REGION,NO_CONCEPT)
 
 #define INTRODUCTION_YEAR 1953
 #define MODEL_LIFE 45

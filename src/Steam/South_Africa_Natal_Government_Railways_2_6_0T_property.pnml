@@ -11,7 +11,7 @@
 #define ITEM item_steam_South_Africa_Natal_Government_Railways_2_6_0T
 #define NAME string(str_steam_South_Africa_Natal_Government_Railways_2_6_0T)
 
-#define VEHICLE_REGION REGION(AFRICA,NOREGION,NOCONCEPT)
+#define VEHICLE_REGION REGION(AFRICA,NO_REGION,NO_CONCEPT)
 
 #define INTRODUCTION_YEAR 1876
 #define MODEL_LIFE 45

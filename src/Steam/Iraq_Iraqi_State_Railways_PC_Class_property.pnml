@@ -11,7 +11,7 @@
 #define ITEM item_steam_Iraq_Iraqi_State_Railways_PC_Class
 #define NAME string(str_steam_Iraq_Iraqi_State_Railways_PC_Class)
 
-#define VEHICLE_REGION REGION(ASIA,NOREGION,NOCONCEPT)
+#define VEHICLE_REGION REGION(ASIA,NO_REGION,NO_CONCEPT)
 
 #define INTRODUCTION_YEAR 1940
 #define MODEL_LIFE 45

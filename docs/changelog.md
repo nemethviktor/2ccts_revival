@@ -16,9 +16,9 @@
 	- Fixed some tags being incorrectly named as reported on the [OTTD Forums in 2020](https://www.tt-forums.net/viewtopic.php?p=1231342#p1231342)
 	- Fixed template_2cc_L12 temple 2nd/4th sprite being off as reported on the [OTTD Forums in 2020](https://www.tt-forums.net/viewtopic.php?p=1239539#p1239539)
 - VEHICLES CHANGES:
-	- Added Cargo Gen6 Wagons (using Gen5 graphics) - **NOCONCEPT**
+	- Added Cargo Gen6 Wagons (using Gen5 graphics) - **NO_CONCEPT**
 		- These are a little faster and about 10% more capacity than G5s and are introduced around 2005-2020
-	- Added Single Unit Maglev (_DB 182 ES64UM 'Mutus' (Maglev)_) + Cargo Gen7M Wagons - **ISCONCEPT**
+	- Added Single Unit Maglev (_DB 182 ES64UM 'Mutus' (Maglev)_) + Cargo Gen7M Wagons - **IS_CONCEPT**
 		- This is using the Taurus graphics without the pantograph. Properties otherwise identical to Taurus.
 	- Changed Steel_3_axle_Compartment_Coach INTRODUCTION_YEAR to 1920 and MODEL_LIFE to 60 ref [OTTD Forums post](https://www.tt-forums.net/viewtopic.php?p=1231507#p1231507)
 - OTHER:

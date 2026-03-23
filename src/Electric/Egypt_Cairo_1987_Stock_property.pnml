@@ -11,7 +11,7 @@
 #define ITEM item_mtro_Egypt_Cairo_1987_Stock
 #define NAME string(str_mtro_Egypt_Cairo_1987_Stock)
 
-#define VEHICLE_REGION REGION(AFRICA,NOREGION,NOCONCEPT)
+#define VEHICLE_REGION REGION(AFRICA,NO_REGION,NO_CONCEPT)
 
 #define INTRODUCTION_YEAR 1987
 #define MODEL_LIFE 45

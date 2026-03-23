@@ -11,7 +11,7 @@
 #define ITEM item_dmu_Germany_DB_VT_040_Flying_Hamburger
 #define NAME string(str_dmu_Germany_DB_VT_040_Flying_Hamburger)
 
-#define VEHICLE_REGION REGION(WESTERNEUROPE,NOREGION,NOCONCEPT)
+#define VEHICLE_REGION REGION(WESTERN_EUROPE,NO_REGION,NO_CONCEPT)
 
 #define INTRODUCTION_YEAR 1932
 #define MODEL_LIFE 45

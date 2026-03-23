@@ -11,7 +11,7 @@
 #define ITEM item_diesel_South_Africa_SAR_DS
 #define NAME string(str_diesel_South_Africa_SAR_DS)
 
-#define VEHICLE_REGION REGION(AFRICA,NOREGION,NOCONCEPT)
+#define VEHICLE_REGION REGION(AFRICA,NO_REGION,NO_CONCEPT)
 
 #define INTRODUCTION_YEAR 1939
 #define MODEL_LIFE 45

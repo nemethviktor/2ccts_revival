@@ -11,7 +11,7 @@
 #define ITEM item_diesel_Saudi_Arabia_Saudi_Railways_4000_EMD_SD70ACS
 #define NAME string(str_diesel_Saudi_Arabia_Saudi_Railways_4000_EMD_SD70ACS)
 
-#define VEHICLE_REGION REGION(ASIA,NOREGION,NOCONCEPT)
+#define VEHICLE_REGION REGION(ASIA,NO_REGION,NO_CONCEPT)
 
 #define INTRODUCTION_YEAR 1992
 #define MODEL_LIFE 45

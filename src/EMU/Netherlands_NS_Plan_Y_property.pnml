@@ -11,7 +11,7 @@
 #define ITEM item_emu_Netherlands_NS_Plan_Y
 #define NAME string(str_emu_Netherlands_NS_Plan_Y)
 
-#define VEHICLE_REGION REGION(WESTERNEUROPE,NOREGION,NOCONCEPT)
+#define VEHICLE_REGION REGION(WESTERN_EUROPE,NO_REGION,NO_CONCEPT)
 
 #define INTRODUCTION_YEAR 1975
 #define MODEL_LIFE 45
