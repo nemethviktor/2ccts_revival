@@ -1,7 +1,9 @@
 # Welcome to 2cc NML (Revival)
 
 This project aims to capitalise on the work of Transportman, EmperorJake, VoyagerOne and the others mentioned further down in the original readme and better document, as well as extend the last "official" release, which was around 2020.
+
 That said, I've not worked on NML files before and my gfx skills are zero so if people will desire extra amendments that involve say new params or new graphics, they'll need to help out with them.
+
 In version `3.3-alpha1` (code only, unrelease for now but you can build if interested) I've added support for various track types and voltages. Need thorough testing though.
 
 
@@ -14,7 +16,7 @@ The grf file is available on Github under [Releases](https://github.com/nemethvi
 
 You'll likely need [nmlc 0.8.1+](https://github.com/OpenTTD/nml/tree/master) to run the build and that seems to be around for Windows only. Get MinGW from [here](https://sourceforge.net/projects/mingw-w64/files/latest/download), install (you'll need the base and some compilers), then add the resulting folder's `bin` subfolder to `PATH` (ie `c:\MinGW\bin\`)
 
-You'll also need python 3...
+You'll also need python 3... with `pandas openpyxl`, which you get via `pip install pandas openpyxl`
 
 Run the `pybuild.bat`.
 
