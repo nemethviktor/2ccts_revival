@@ -34,6 +34,6 @@ switch(FEAT_TRAINS, SELF, switch_steam_Switzerland_RhB_G_3_4_animation, motion_c
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+PURCHASETEXT_SWITCH

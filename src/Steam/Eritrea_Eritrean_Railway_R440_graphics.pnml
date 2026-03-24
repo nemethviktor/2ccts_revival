@@ -39,6 +39,6 @@ switch(FEAT_TRAINS, SELF, switch_steam_Eritrea_Eritrean_Railway_R440_animation, 
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+PURCHASETEXT_SWITCH

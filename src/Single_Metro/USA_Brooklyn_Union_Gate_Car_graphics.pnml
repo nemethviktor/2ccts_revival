@@ -25,6 +25,6 @@ spriteset(spriteset_singlemtro_USA_Brooklyn_Union_Gate_Car, "gfx/Single_Metro/US
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+PURCHASETEXT_SWITCH

@@ -24,6 +24,6 @@ spriteset(spriteset_electric_New_Zealand_NZR_EA, "gfx/Electric/New_Zealand_NZR_E
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+PURCHASETEXT_SWITCH

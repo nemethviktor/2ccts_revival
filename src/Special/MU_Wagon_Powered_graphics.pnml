@@ -24,6 +24,6 @@ spriteset(spriteset_mu_MU_Wagon_Powered, "gfx/Special/MU_Wagon_Powered.png") {
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+PURCHASETEXT_SWITCH

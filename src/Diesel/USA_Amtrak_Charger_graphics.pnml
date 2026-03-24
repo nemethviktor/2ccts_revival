@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_USA_Amtrak_Charger, "gfx/Diesel/USA_Amtrak_Charger.pn
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+PURCHASETEXT_SWITCH

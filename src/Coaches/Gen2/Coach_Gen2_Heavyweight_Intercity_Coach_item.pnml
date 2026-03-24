@@ -14,8 +14,8 @@ item(FEAT_TRAINS, ITEM ) {
 		vehicle_life: VEHICLE_LIFE; 
 		retire_early: RETIRE_EARLY;
 		LOADINGSPEEDPROPERTY
-		PURCHASECOSTPROPERTY
-		RUNNINGCOSTPROPERTY
+		PURCHASECOST_PROPERTY
+		RUNNINGCOST_PROPERTY
 		speed: SPEED km/h;
 		power: POWER hp;
 		cargo_capacity: HEAD_CAPACITY;
@@ -43,8 +43,8 @@ item(FEAT_TRAINS, ITEM ) {
 	graphics {
 		purchase: spriteset_mu_Coach_Gen2_Heavyweight_Intercity_Coach_purchase;
 		//Add calls to defined switches below
-		RUNNINGCOSTENGINESWITCHCALL
-		PURCHASETEXTSWITCHCALL
+		RUNNINGCOST_ENGINE_SWITCH_CALL
+		PURCHASETEXT_SWITCH_CALL
 		default: switch_mu_Coach_Gen2_Heavyweight_Intercity_Coach_livery;
 	}
 }

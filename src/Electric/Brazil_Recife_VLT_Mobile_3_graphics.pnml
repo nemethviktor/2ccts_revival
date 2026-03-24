@@ -41,6 +41,6 @@ switch(FEAT_TRAINS, SELF, switch_mtro_Brazil_Recife_VLT_Mobile_3_reversed, var[0
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+PURCHASETEXT_SWITCH

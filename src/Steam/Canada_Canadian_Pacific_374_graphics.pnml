@@ -63,6 +63,6 @@ switch(FEAT_TRAINS, SELF, switch_steam_Canada_Canadian_Pacific_374_articulated, 
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+PURCHASETEXT_SWITCH

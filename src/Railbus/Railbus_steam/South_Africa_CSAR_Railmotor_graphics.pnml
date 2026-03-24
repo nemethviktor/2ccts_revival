@@ -73,6 +73,6 @@ switch(FEAT_TRAINS, SELF, switch_rbs_South_Africa_CSAR_Railmotor_articulated, ex
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+PURCHASETEXT_SWITCH

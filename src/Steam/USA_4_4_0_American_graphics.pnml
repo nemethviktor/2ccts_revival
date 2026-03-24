@@ -63,6 +63,6 @@ switch(FEAT_TRAINS, SELF, switch_steam_USA_4_4_0_American_articulated, extra_cal
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+PURCHASETEXT_SWITCH

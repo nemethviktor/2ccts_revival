@@ -59,6 +59,6 @@ switch(FEAT_TRAINS, SELF, switch_mglv_China_Transrapid_cargo_selection, cargo_cl
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+PURCHASETEXT_SWITCH

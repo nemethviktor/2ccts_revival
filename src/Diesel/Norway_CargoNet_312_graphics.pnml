@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_Norway_CargoNet_312, "gfx/Diesel/Norway_CargoNet_312.
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+PURCHASETEXT_SWITCH

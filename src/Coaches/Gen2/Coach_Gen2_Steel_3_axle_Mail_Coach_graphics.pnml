@@ -47,6 +47,6 @@ random_switch(FEAT_TRAINS, SELF, switch_mu_Coach_Gen2_Steel_3_axle_Mail_Coach_li
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+PURCHASETEXT_SWITCH

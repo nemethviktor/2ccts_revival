@@ -52,6 +52,6 @@ switch(FEAT_TRAINS, SELF, switch_electric_Russia_RZD_VL15_articulated, extra_cal
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+PURCHASETEXT_SWITCH

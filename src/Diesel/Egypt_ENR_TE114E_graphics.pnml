@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_Egypt_ENR_TE114E, "gfx/Diesel/Egypt_ENR_TE114E.png") 
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+PURCHASETEXT_SWITCH

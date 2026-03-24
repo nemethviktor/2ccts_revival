@@ -24,6 +24,6 @@ spriteset(spriteset_electric_USA_Amtrak_HHP_8, "gfx/Electric/USA_Amtrak_HHP_8.pn
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+PURCHASETEXT_SWITCH

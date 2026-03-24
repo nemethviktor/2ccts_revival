@@ -63,6 +63,6 @@ switch(FEAT_TRAINS, SELF, switch_steam_Germany_DB_18_201_articulated, extra_call
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+PURCHASETEXT_SWITCH

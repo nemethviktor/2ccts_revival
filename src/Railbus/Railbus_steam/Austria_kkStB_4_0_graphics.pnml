@@ -34,6 +34,6 @@ switch(FEAT_TRAINS, SELF, switch_rbs_Austria_kkStB_4_0_animation, motion_counter
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+PURCHASETEXT_SWITCH

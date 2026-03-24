@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_Chile_EFE_GE_U5B, "gfx/Diesel/Chile_EFE_GE_U5B.png") 
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+PURCHASETEXT_SWITCH

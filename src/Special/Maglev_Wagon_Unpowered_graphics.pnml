@@ -24,6 +24,6 @@ spriteset(spriteset_mglv_Maglev_Wagon_Unpowered, "gfx/Special/Maglev_Wagon_Unpow
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+PURCHASETEXT_SWITCH

@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_Hungary_MAV_M28, "gfx/Diesel/Hungary_MAV_M28.png") {
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+PURCHASETEXT_SWITCH

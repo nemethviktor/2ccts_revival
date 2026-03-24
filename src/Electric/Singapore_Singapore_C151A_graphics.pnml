@@ -41,6 +41,6 @@ switch(FEAT_TRAINS, SELF, switch_mtro_Singapore_Singapore_C151A_reversed, var[0x
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+PURCHASETEXT_SWITCH

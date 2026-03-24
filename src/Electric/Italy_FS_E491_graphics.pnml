@@ -24,6 +24,6 @@ spriteset(spriteset_electric_Italy_FS_E491, "gfx/Electric/Italy_FS_E491.png") {
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+PURCHASETEXT_SWITCH

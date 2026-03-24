@@ -52,6 +52,6 @@ switch(FEAT_TRAINS, SELF, switch_electric_Italy_FS_E646_articulated, extra_callb
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+PURCHASETEXT_SWITCH

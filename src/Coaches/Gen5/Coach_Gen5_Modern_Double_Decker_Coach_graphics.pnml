@@ -47,6 +47,6 @@ random_switch(FEAT_TRAINS, SELF, switch_mu_Coach_Gen5_Modern_Double_Decker_Coach
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+PURCHASETEXT_SWITCH

@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_Argentina_SOFSE_3193, "gfx/Diesel/Argentina_SOFSE_319
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+PURCHASETEXT_SWITCH

@@ -45,6 +45,6 @@ switch(FEAT_TRAINS, SELF, switch_rbm_World_Turbobus_articulated, extra_callback_
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+PURCHASETEXT_SWITCH

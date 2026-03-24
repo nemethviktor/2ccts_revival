@@ -41,6 +41,6 @@ switch(FEAT_TRAINS, SELF, switch_mtro_Germany_Berlin_U_Bahn_IK_reversed, var[0xC
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+PURCHASETEXT_SWITCH

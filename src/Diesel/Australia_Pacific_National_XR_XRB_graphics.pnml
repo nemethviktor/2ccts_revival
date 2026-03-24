@@ -49,6 +49,6 @@ switch(FEAT_TRAINS, SELF, switch_diesel_Australia_Pacific_National_XR_XRB_visual
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+PURCHASETEXT_SWITCH

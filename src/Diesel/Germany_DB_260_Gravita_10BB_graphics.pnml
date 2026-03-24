@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_Germany_DB_260_Gravita_10BB, "gfx/Diesel/Germany_DB_2
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+PURCHASETEXT_SWITCH

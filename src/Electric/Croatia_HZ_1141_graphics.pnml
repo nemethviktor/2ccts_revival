@@ -24,6 +24,6 @@ spriteset(spriteset_electric_Croatia_HZ_1141, "gfx/Electric/Croatia_HZ_1141.png"
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+PURCHASETEXT_SWITCH

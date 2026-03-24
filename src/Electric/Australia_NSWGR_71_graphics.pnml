@@ -24,6 +24,6 @@ spriteset(spriteset_electric_Australia_NSWGR_71, "gfx/Electric/Australia_NSWGR_7
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+PURCHASETEXT_SWITCH

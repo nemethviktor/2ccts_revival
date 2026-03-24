@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_USA_Rock_Island_EMC_TA, "gfx/Diesel/USA_Rock_Island_E
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+PURCHASETEXT_SWITCH

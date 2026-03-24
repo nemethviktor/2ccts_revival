@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_China_China_Railways_DF8, "gfx/Diesel/China_China_Rai
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+PURCHASETEXT_SWITCH

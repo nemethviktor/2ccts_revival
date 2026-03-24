@@ -36,6 +36,6 @@ switch(FEAT_TRAINS, SELF, switch_steam_Belgium_Le_Belge_animation, motion_counte
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+PURCHASETEXT_SWITCH

@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_Mexico_CHP_500_FM_H_16_44, "gfx/Diesel/Mexico_CHP_500
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+PURCHASETEXT_SWITCH

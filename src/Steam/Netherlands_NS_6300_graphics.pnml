@@ -36,6 +36,6 @@ switch(FEAT_TRAINS, SELF, switch_steam_Netherlands_NS_6300_animation, motion_cou
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+PURCHASETEXT_SWITCH

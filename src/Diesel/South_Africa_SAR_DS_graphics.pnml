@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_South_Africa_SAR_DS, "gfx/Diesel/South_Africa_SAR_DS.
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+PURCHASETEXT_SWITCH

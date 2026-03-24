@@ -24,6 +24,6 @@ spriteset(spriteset_electric_Canada_BC_Rail_GF6C, "gfx/Electric/Canada_BC_Rail_G
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+PURCHASETEXT_SWITCH

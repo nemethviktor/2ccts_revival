@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_Russia_RZD_ChME3, "gfx/Diesel/Russia_RZD_ChME3.png") 
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+PURCHASETEXT_SWITCH

@@ -24,6 +24,6 @@ spriteset(spriteset_electric_Brasil_RFFSA_GE_C_C_4400, "gfx/Electric/Brasil_RFFS
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+PURCHASETEXT_SWITCH

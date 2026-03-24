@@ -41,6 +41,6 @@ switch(FEAT_TRAINS, SELF, switch_mtro_Netherlands_Rotterdam_MG2_Type_M_reversed,
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+PURCHASETEXT_SWITCH

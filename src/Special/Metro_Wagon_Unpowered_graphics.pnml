@@ -24,6 +24,6 @@ spriteset(spriteset_mtro_Metro_Wagon_Unpowered, "gfx/Special/Metro_Wagon_Unpower
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+PURCHASETEXT_SWITCH

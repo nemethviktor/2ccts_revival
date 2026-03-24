@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_Ireland_IE_201, "gfx/Diesel/Ireland_IE_201.png") {
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+PURCHASETEXT_SWITCH

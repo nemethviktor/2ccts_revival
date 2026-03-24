@@ -24,6 +24,6 @@ spriteset(spriteset_electric_Sweden_SJ_F_Class, "gfx/Electric/Sweden_SJ_F_Class.
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+PURCHASETEXT_SWITCH

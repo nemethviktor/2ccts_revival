@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_USA_Metrolink_EMD_F59PH, "gfx/Diesel/USA_Metrolink_EM
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+PURCHASETEXT_SWITCH

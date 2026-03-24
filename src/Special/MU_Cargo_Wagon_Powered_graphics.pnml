@@ -24,6 +24,6 @@ spriteset(spriteset_mu_MU_Cargo_Wagon_Powered, "gfx/Special/MU_Cargo_Wagon_Power
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+PURCHASETEXT_SWITCH

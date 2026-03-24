@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_Germany_DB_220_V200, "gfx/Diesel/Germany_DB_220_V200.
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+PURCHASETEXT_SWITCH

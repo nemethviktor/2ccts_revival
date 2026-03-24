@@ -63,6 +63,6 @@ switch(FEAT_TRAINS, SELF, switch_steam_Poland_PKP_Ok22_articulated, extra_callba
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+PURCHASETEXT_SWITCH

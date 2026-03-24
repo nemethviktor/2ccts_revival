@@ -24,6 +24,6 @@ spriteset(spriteset_electric_Mexico_FNM_GE_E60C_2, "gfx/Electric/Mexico_FNM_GE_E
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+PURCHASETEXT_SWITCH

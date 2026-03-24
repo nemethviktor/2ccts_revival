@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_Italy_FS_D345, "gfx/Diesel/Italy_FS_D345.png") {
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+PURCHASETEXT_SWITCH

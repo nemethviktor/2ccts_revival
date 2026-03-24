@@ -49,8 +49,8 @@ def generate_property_files():
 
         content.append(f"// Row in Excel: {index + 2}\n\n")
 
-        content.append('#include "../undefine_properties.pnml"\n\n')
-
+        content.append('#include "../undefine_properties.pnml"\n')
+        
         # Identity
         content.append(f"#define VEHIDCODE {row['VEHIDCODE']}\n")
         content.append(f"#define ITEM {row['ITEM']}\n")
@@ -111,19 +111,30 @@ def generate_property_files():
         v1 = f"VISUAL_EFFECT_{row['VISUAL_EFFECT_1']}" if str(row['VISUAL_EFFECT_1']) != "0" else "0"
         content.append(f"#define VISUAL_FLAG visual_effect_and_powered({v1}, {row['VISUAL_EFFECT_2']}, {row['VISUAL_EFFECT_3']})\n\n")
 
-        content.append(f"#define REFIT_COST DEFAULT_REFIT_COST\n")
-        content.append(f"#define RELIABILITY_DECAY DEFAULT_RELIABILITY_DECAY\n")
-        content.append(f"#define CARGO_AGE_PERIOD DEFAULT_CARGO_AGE_PERIOD\n")
-        content.append(f"#define POWER_PER_WAGON DEFAULT_POWER_PER_WAGON\n")
-        content.append(f"#define BITMASK_VEHICLE_INFO DEFAULT_BITMASK\n")
-        content.append(f"#define SPRITE_ID DEFAULT_SPRITE_ID\n")
+        content.append(f"#define REFIT_COST {row['REFIT_COST']}\n")
+        content.append(f"#define RELIABILITY_DECAY {row['RELIABILITY_DECAY']}\n")
+        content.append(f"#define CARGO_AGE_PERIOD {row['CARGO_AGE_PERIOD']}\n")
+        content.append(f"#define POWER_PER_WAGON {row['POWER_PER_WAGON']}\n")
+        content.append(f"#define BITMASK_VEHICLE_INFO {row['BITMASK_VEHICLE_INFO']}\n")
+        content.append(f"#define SPRITE_ID {row['SPRITE_ID']}\n\n")
 
+        content.append(f"#define PURCHASECOST_VALUE {row['PURCHASECOST_VALUE']}\n")
+        content.append(f"#define RUNNINGCOST_VALUE {row['RUNNINGCOST_VALUE']}\n\n")
+
+        # Hardcoded defaults; do not remove.
+        content.append(f"#define AIFLAGPROPERTY ai_special_flag: PASSENGER ? AI_FLAG_PASSENGER : AI_FLAG_CARGO;\n")
+        content.append(f"#define INTRODUCTIONDATEPROPERTY introduction_date: date({row['INTRODUCTION_YEAR']},1,1);\n")
+        content.append(f"#define WEIGHTMUWAGONUNPOWERED int(WEIGHT*1/2);\n")
+        content.append(f"#define POWERMUWAGONPOWERED int(POWER*1/2);\n")
+        content.append(f"#define WEIGHTMUWAGONPOWERED int(WEIGHT*3/4);\n")
+        content.append(f"#define TEMUWAGONPOWERED int(TE_COEFFICIENT*10*WEIGHT);\n")
+        
         df.to_csv(os.path.join(script_dir, 'vehicle_report.csv'), index=False)
 
         try:
             with open(full_path, 'w', encoding='utf-8') as f:
                 f.writelines(content)
-            print(f"Generated: {full_path}")
+            # print(f"Generated: {full_path}")
         except Exception as e:
             print(f"Error writing {full_path}: {e}")
 

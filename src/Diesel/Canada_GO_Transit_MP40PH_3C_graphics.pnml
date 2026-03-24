@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_Canada_GO_Transit_MP40PH_3C, "gfx/Diesel/Canada_GO_Tr
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+PURCHASETEXT_SWITCH

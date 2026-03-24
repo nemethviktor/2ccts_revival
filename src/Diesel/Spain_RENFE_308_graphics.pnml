@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_Spain_RENFE_308, "gfx/Diesel/Spain_RENFE_308.png") {
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+PURCHASETEXT_SWITCH

@@ -41,6 +41,6 @@ switch(FEAT_TRAINS, SELF, switch_mtro_Netherlands_Amsterdam_CAF_90_reversed, var
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+PURCHASETEXT_SWITCH

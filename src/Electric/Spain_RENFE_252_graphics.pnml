@@ -24,6 +24,6 @@ spriteset(spriteset_electric_Spain_RENFE_252, "gfx/Electric/Spain_RENFE_252.png"
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+PURCHASETEXT_SWITCH

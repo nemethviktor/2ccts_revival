@@ -24,6 +24,6 @@ spriteset(spriteset_electric_Poland_PKP_EU06, "gfx/Electric/Poland_PKP_EU06.png"
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+PURCHASETEXT_SWITCH

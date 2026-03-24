@@ -14,8 +14,8 @@ item(FEAT_TRAINS, ITEM ) {
 		vehicle_life: VEHICLE_LIFE; 
 		retire_early: RETIRE_EARLY;
 		LOADINGSPEEDPROPERTY
-		PURCHASECOSTPROPERTY
-		RUNNINGCOSTPROPERTY
+		PURCHASECOST_PROPERTY
+		RUNNINGCOST_PROPERTY
 		speed: SPEED km/h;
 		power: POWER hp;
 		cargo_capacity: HEAD_CAPACITY;
@@ -44,8 +44,8 @@ item(FEAT_TRAINS, ITEM ) {
 		purchase: spriteset_mu_Wagon_Gen5_Heavy_Flatcar_purchase;
 		//Add calls to defined switches below
 		ENGINECAPACITYSWITCHCALL(VEHIDCODE)
-		RUNNINGCOSTENGINESWITCHCALL
-		PURCHASETEXTSWITCHCALL
+		RUNNINGCOST_ENGINE_SWITCH_CALL
+		PURCHASETEXT_SWITCH_CALL
 		default: switch_mu_Wagon_Gen5_Heavy_Flatcar_cargo_selection;
 	}
 }

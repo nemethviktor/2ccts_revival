@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_Sweden_SJ_V4, "gfx/Diesel/Sweden_SJ_V4.png") {
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+PURCHASETEXT_SWITCH
