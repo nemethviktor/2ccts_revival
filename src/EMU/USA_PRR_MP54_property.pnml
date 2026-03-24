@@ -1,9 +1,8 @@
-/*
- *  Copyright (C) 2017 Transportman // V. Nemeth 2026
- *  This file is part of the 2cc Trains In NML and is based on The Dutch Trainset 2.0 by Jasper Vries
- *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
 
- */
+//  Copyright (C) 2017 Transportman // V. Nemeth 2026+
+//  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
+
+// Row in Excel: 551
 
 #include "../undefine_properties.pnml"
 
@@ -12,6 +11,10 @@
 #define NAME string(str_emu_USA_PRR_MP54)
 
 #define VEHICLE_REGION REGION(NORTH_AMERICA,NO_REGION,NO_CONCEPT)
+
+#define ENGINE_CLASS ENGINE_CLASS_ELECTRIC
+#define RUNNING_COST_BASE RUNNING_COST_ELECTRIC
+#define TRACK_TYPE [STANDARD_GAUGE_RAILTYPE_OHLE, STANDARD_GAUGE_RAILTYPE_DUAL]
 
 #define INTRODUCTION_YEAR 1908
 #define MODEL_LIFE 45
@@ -26,25 +29,17 @@
 #define WEIGHT 68
 #define TE_COEFFICIENT 0.22
 #define AIR_DRAG_COEFFICIENT 0
-
 #define LENGTH 8
 #define ACTUAL_LENGTH 8
 #define WAGON_LENGTH 8
-
 #define HEAD_CAPACITY 72
 #define WAGON_CAPACITY 72
 
-
 #define DUAL_HEADED 1
 #define PASSENGER 1
-#define MISC_FLAGS bitmask(TRAIN_FLAG_MU,TRAIN_FLAG_2CC)
-#define VISUAL_FLAG visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER)
 
-
-#define TRACK_TYPE CURRENT_TRACK_TYPE
-#define ENGINE_CLASS CURRENT_ENGINE_CLASS
-#define RUNNING_COST_BASE CURRENT_RUNNING_COST_BASE
-
+#define MISC_FLAGS bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU)
+#define VISUAL_FLAG visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER)
 
 #define REFIT_COST DEFAULT_REFIT_COST
 #define RELIABILITY_DECAY DEFAULT_RELIABILITY_DECAY

@@ -1,9 +1,8 @@
-/*
- *  Copyright (C) 2017 Transportman // V. Nemeth 2026
- *  This file is part of the 2cc Trains In NML and is based on The Dutch Trainset 2.0 by Jasper Vries
- *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
 
- */
+//  Copyright (C) 2017 Transportman // V. Nemeth 2026+
+//  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
+
+// Row in Excel: 225
 
 #include "../undefine_properties.pnml"
 
@@ -12,6 +11,10 @@
 #define NAME string(str_diesel_Belgium_NMBS_SNCB_7800)
 
 #define VEHICLE_REGION REGION(WESTERN_EUROPE,NO_REGION,NO_CONCEPT)
+
+#define ENGINE_CLASS ENGINE_CLASS_DIESEL
+#define RUNNING_COST_BASE RUNNING_COST_DIESEL
+#define TRACK_TYPE [STANDARD_GAUGE_RAILTYPE_NONE]
 
 #define INTRODUCTION_YEAR 1997
 #define MODEL_LIFE 45
@@ -26,23 +29,15 @@
 #define WEIGHT 83
 #define TE_COEFFICIENT 0.34
 #define AIR_DRAG_COEFFICIENT 0
-
 #define LENGTH 7
 #define ACTUAL_LENGTH 7
-
 #define HEAD_CAPACITY 0
-
 
 #define DUAL_HEADED 0
 #define PASSENGER 1
+
 #define MISC_FLAGS bitmask(TRAIN_FLAG_2CC)
 #define VISUAL_FLAG visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 0, DISABLE_WAGON_POWER)
-
-
-#define TRACK_TYPE CURRENT_TRACK_TYPE
-#define ENGINE_CLASS CURRENT_ENGINE_CLASS
-#define RUNNING_COST_BASE CURRENT_RUNNING_COST_BASE
-
 
 #define REFIT_COST DEFAULT_REFIT_COST
 #define RELIABILITY_DECAY DEFAULT_RELIABILITY_DECAY

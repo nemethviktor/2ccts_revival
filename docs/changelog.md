@@ -4,9 +4,11 @@
 - CODE CHANGES:
 	- Added a py script to export all vehicle info on `make` running.
 	- Separated out the various railtypes and voltages. This is very "beta" at the moment.
-	- Did some superficial testing against popular tracktype newgrfs, again, needs testing
+	- Did some superficial testing against popular tracktype newgrfs, again, needs testing.
+	- Automated the 'property' file creation via Excel/Python
 - VEHICLES CHANGES:
 	- Reiterating from above, separated out the various railtypes and voltages.
+	- Turned the visual for DMUs to _DIESEL_ (was _DISABLE_)
 
 
 **3.3-alpha0 [20260316]**

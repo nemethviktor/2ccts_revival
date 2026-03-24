@@ -5,7 +5,7 @@ warnings.filterwarnings("ignore", category=UserWarning, module="openpyxl")
 
 # --- Configuration ---
 EXCEL_FILE = 'vehicle_report.xlsx'
-TEST_CASE_ONLY = True 
+TEST_CASE_ONLY = False
 
 def generate_property_files():
     print("--- Property File Generation Starting ---")
@@ -46,6 +46,9 @@ def generate_property_files():
 
         content = []
         content.append(header_block)
+
+        content.append(f"// Row in Excel: {index + 2}\n\n")
+
         content.append('#include "../undefine_properties.pnml"\n\n')
 
         # Identity
@@ -54,9 +57,8 @@ def generate_property_files():
         content.append(f"#define NAME string({row['NAME']})\n\n")
 
         # Region & Context
-        content.append(f"#define VEHICLE_REGION REGION({row['REGION1']},{row['REGION2']},{row['REGION3']})\n")
-        # Now pulling from column L (ENGINE_CLASS) and column AA (RUNNING_COST_BASE)
-        content.append(f"#define ENGINE_CLASS {row['ENGINE_CLASS']}\n")
+        content.append(f"#define VEHICLE_REGION REGION({row['REGION1']},{row['REGION2']},{row['REGION3']})\n\n")
+        content.append(f"#define ENGINE_CLASS ENGINE_CLASS_{row['ENGINE_CLASS']}\n")
         content.append(f"#define RUNNING_COST_BASE {row['RUNNING_COST_BASE']}\n")
         
         # Track Type Logic (Handles Bool, Int, or String)
@@ -72,19 +74,29 @@ def generate_property_files():
         content.append(f"#define INTRODUCTION_YEAR {row['INTRODUCTION_YEAR']}\n")
         content.append(f"#define MODEL_LIFE {row['MODEL_LIFE']}\n")
         content.append(f"#define RETIRE_EARLY {row['RETIRE_EARLY']}\n")
-        content.append(f"#define VEHICLE_LIFE {row['VEHICLE_LIFE']}\n")
+        content.append(f"#define VEHICLE_LIFE {row['VEHICLE_LIFE']}\n\n")
 
         # Prefixed Values
         content.append(f"#define LOADINGSPEED LOADINGSPEEDDEF_{row['LOADINGSPEED']}\n")
         content.append(f"#define CARGODEF CARGODEF_{row['CARGODEF']}\n\n")
 
         # Technical Specs
-        tech_specs = ['SPEED', 'POWER', 'WEIGHT', 'TE_COEFFICIENT', 'AIR_DRAG_COEFFICIENT', 'LENGTH', 'ACTUAL_LENGTH', 'HEAD_CAPACITY']
+        tech_specs = ['SPEED', 'POWER', 'WEIGHT', 'TE_COEFFICIENT', 'AIR_DRAG_COEFFICIENT', 'LENGTH', 'ACTUAL_LENGTH', 'WAGON_LENGTH', 'HEAD_CAPACITY', 'WAGON_CAPACITY']
         for spec in tech_specs:
-            content.append(f"#define {spec} {row[spec]}\n")
+            # Use int() for whole numbers, but keep float() for TE_COEFFICIENT if it has decimals
+            val = row[spec]
+            if pd.isna(val):
+                continue
+            if spec == 'TE_COEFFICIENT':
+                content.append(f"#define {spec} {val}\n")
+            else:
+                content.append(f"#define {spec} {int(val)}\n")
+           
+        # Extra newline after tech specs
+        content.append("\n")
 
         content.append(f"#define DUAL_HEADED {row['DUAL_HEADED']}\n")
-        content.append(f"#define PASSENGER {row['PASSENGER']}\n")
+        content.append(f"#define PASSENGER {row['PASSENGER']}\n\n")
 
         # Misc Flags
         misc_flags = []
@@ -97,14 +109,14 @@ def generate_property_files():
 
         # Visual Flag (Prepending VISUAL_EFFECT_ to the first element)
         v1 = f"VISUAL_EFFECT_{row['VISUAL_EFFECT_1']}" if str(row['VISUAL_EFFECT_1']) != "0" else "0"
-        content.append(f"#define VISUAL_FLAG visual_effect_and_powered({v1}, {row['VISUAL_EFFECT_2']}, {row['VISUAL_EFFECT_3']})\n")
+        content.append(f"#define VISUAL_FLAG visual_effect_and_powered({v1}, {row['VISUAL_EFFECT_2']}, {row['VISUAL_EFFECT_3']})\n\n")
 
         content.append(f"#define REFIT_COST DEFAULT_REFIT_COST\n")
         content.append(f"#define RELIABILITY_DECAY DEFAULT_RELIABILITY_DECAY\n")
         content.append(f"#define CARGO_AGE_PERIOD DEFAULT_CARGO_AGE_PERIOD\n")
         content.append(f"#define POWER_PER_WAGON DEFAULT_POWER_PER_WAGON\n")
         content.append(f"#define BITMASK_VEHICLE_INFO DEFAULT_BITMASK\n")
-        content.append(f"#define SPRITE_ID DEFAULT_SPRITE_ID\n\n")
+        content.append(f"#define SPRITE_ID DEFAULT_SPRITE_ID\n")
 
         df.to_csv(os.path.join(script_dir, 'vehicle_report.csv'), index=False)
 
