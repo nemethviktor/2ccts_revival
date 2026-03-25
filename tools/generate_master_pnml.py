@@ -85,8 +85,8 @@ def generate_master_pnml():
         content.append(f'#include "{folder_path}/{base_name}_graphics.pnml"\n')
         content.append(f'#include "{folder_path}/{base_name}_item.pnml"\n\n')
 
-        content.append(f'// Sort vehicles in purchase list\n')
-        content.append(f'#include "src/vehiclesort.pnml"\n')
+    content.append(f'// Sort vehicles in purchase list\n')
+    content.append(f'#include "src/vehiclesort.pnml"\n')
 
     # 4. Save
     try:
