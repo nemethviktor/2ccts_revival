@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_Brazil_EE_VFFLB, "gfx/Diesel/Brazil_EE_VFFLB.png") {
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

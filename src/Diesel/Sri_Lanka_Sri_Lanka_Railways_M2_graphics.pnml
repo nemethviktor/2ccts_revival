@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_Sri_Lanka_Sri_Lanka_Railways_M2, "gfx/Diesel/Sri_Lank
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

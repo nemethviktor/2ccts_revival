@@ -111,6 +111,6 @@ random_switch(FEAT_TRAINS, SELF, switch_mu_Coach_Gen3_Indian_Regional_Coach_live
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

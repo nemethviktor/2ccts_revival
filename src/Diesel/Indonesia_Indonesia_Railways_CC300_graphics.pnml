@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_Indonesia_Indonesia_Railways_CC300, "gfx/Diesel/Indon
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

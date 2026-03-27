@@ -5,7 +5,9 @@
 	- Added a py script to export all vehicle info on `make` running.
 	- Separated out the various railtypes and voltages. This is very "beta" at the moment.
 	- Did some superficial testing against popular tracktype newgrfs, again, needs testing.
-	- Automated the 'property' file creation via Excel/Python
+	- ~~Automated the 'property' file creation via Excel/Python~~
+	- Automated the 'item' file creation and integrated the 'property' details into that.
+		- Automated the puchase costs and running costs calcs. I've done several spot checks and apart from rounding differences, they all checked out.
 - VEHICLES CHANGES:
 	- Reiterating from above, separated out the various railtypes and voltages.
 	- Turned the visual for DMUs to _DIESEL_ (was _DISABLE_)

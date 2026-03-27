@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_Croatia_HZ_2062, "gfx/Diesel/Croatia_HZ_2062.png") {
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

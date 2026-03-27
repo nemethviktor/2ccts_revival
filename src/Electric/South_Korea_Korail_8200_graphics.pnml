@@ -24,6 +24,6 @@ spriteset(spriteset_electric_South_Korea_Korail_8200, "gfx/Electric/South_Korea_
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

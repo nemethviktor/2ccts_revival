@@ -24,6 +24,6 @@ spriteset(spriteset_electric_Morocco_ONCF_E_700, "gfx/Electric/Morocco_ONCF_E_70
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

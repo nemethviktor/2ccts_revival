@@ -41,6 +41,6 @@ switch(FEAT_TRAINS, SELF, switch_mtro_Netherlands_Amsterdam_Type_M1_reversed, va
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

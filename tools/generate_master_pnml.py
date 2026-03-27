@@ -17,16 +17,16 @@ def generate_master_pnml():
 
     try:
         sheets = pd.read_excel(excel_path, sheet_name=None)
-        df_props = sheets['properties']
-        df_copy = sheets['copyright_text']
+        df_control = sheets['control']
+        df_copyright = sheets['copyright_text']
     except Exception as e:
         print(f"Error reading Excel: {e}")
         return
 
     # 1. Prepare Copyright
-    header_text = str(df_copy.columns[0]) if "Unnamed" not in str(df_copy.columns[0]) else ""
-    if not df_copy.empty:
-        data_text = str(df_copy.iloc[0, 0])
+    header_text = str(df_copyright.columns[0]) if "Unnamed" not in str(df_copyright.columns[0]) else ""
+    if not df_copyright.empty:
+        data_text = str(df_copyright.iloc[0, 0])
         raw_copyright = data_text if header_text == "" else f"{header_text}\n{data_text}"
     else:
         raw_copyright = header_text
@@ -39,18 +39,16 @@ def generate_master_pnml():
     content.append("//// ------------------------------------\n\n")
     
     boilerplate = [
-        ("// Region file, defines are used in header, so this file is included before that", 'src/regions.pnml'),
+        ("// Regions have to come first", 'src/regions.pnml'),
         ("// Define grf", 'src/header.pnml'),
         ("// Check for valid settings", 'src/checks.pnml'),
+        ("// Loading speeds", 'src/loadingspeeds.pnml'),
         ("// Include sprite templates", 'src/templates.pnml'),
         ("// Cargo translation table", 'src/cargotable.pnml'),
-        ("// Cargo refit definitions", 'src/cargorefits.pnml'),
-        ("// Loading speeds", 'src/loadingspeeds.pnml'),
-        ("// Railtype translation table", 'src/railtypetable.pnml'),
         ("// Give unique IDs to vehicles", 'src/vehicleID.pnml'),
         ("// Can (not) attach vehcile", 'src/wagon_attach.pnml'),
-        ("// Costs", 'src/costs.pnml'),
         ("// Capacities", 'src/capacities.pnml'),
+        ("// Rail types", 'src/railtypetable.pnml'),
         ("// Purchase text switch", 'src/purchasetext.pnml'),
         ("// Cleanup", 'src/undefine_properties.pnml')
     ]
@@ -64,11 +62,11 @@ def generate_master_pnml():
 
     # 3. Sorting and Grouping Headers
     # We sort by SAVE_TO and VEHID_ID to maintain chronological/type order within categories
-    df_props = df_props.sort_values(by=['SAVE_TO', 'VEHID_ID'])
+    df_control = df_control.sort_values(by=['SAVE_TO', 'VEHID_ID'])
 
     current_group = None
 
-    for _, row in df_props.iterrows():
+    for _, row in df_control.iterrows():
         folder_path = str(row['SAVE_TO']).replace('\\', '/')
         
         # Logic to insert section headers based on folder path
@@ -80,8 +78,7 @@ def generate_master_pnml():
 
         base_name = row['FILENAMES_EXPECTED']
         
-        # The mandatory 3-file sequence + Undefine
-        content.append(f'#include "{folder_path}/{base_name}_property.pnml"\n')
+        # The mandatory 2-file sequence
         content.append(f'#include "{folder_path}/{base_name}_graphics.pnml"\n')
         content.append(f'#include "{folder_path}/{base_name}_item.pnml"\n\n')
 

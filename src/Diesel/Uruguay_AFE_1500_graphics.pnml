@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_Uruguay_AFE_1500, "gfx/Diesel/Uruguay_AFE_1500.png") 
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

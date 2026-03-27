@@ -26,10 +26,10 @@ spriteset(spriteset_rbd_Finland_VR_Dm7, "gfx/Railbus/Railbus_diesel/Finland_VR_D
 * Cargo capacity
 */
 
-ENGINECAPACITYSWITCH(VEHIDCODE)
+// ENGINECAPACITYSWITCH(VEHIDCODE)
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

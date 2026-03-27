@@ -27,7 +27,7 @@ spriteset(spriteset_rbs_Australia_Victorian_Railways_Rowan_Railmotor_engine2, "g
 }
 
 //Animation states
-switch(FEAT_TRAINS, SELF, switch_rbs_spriteset_rbs_Australia_Victorian_Railways_Rowan_Railmotor_animation, motion_counter % 2){
+switch(FEAT_TRAINS, SELF, switch_rbs_Australia_Victorian_Railways_Rowan_Railmotor_animation, motion_counter % 2){
 	0: spriteset_rbs_Australia_Victorian_Railways_Rowan_Railmotor_engine1;
 	spriteset_rbs_Australia_Victorian_Railways_Rowan_Railmotor_engine2;
 }	
@@ -36,10 +36,10 @@ switch(FEAT_TRAINS, SELF, switch_rbs_spriteset_rbs_Australia_Victorian_Railways_
 * Cargo capacity
 */
 
-ENGINECAPACITYSWITCH(VEHIDCODE)
+// ENGINECAPACITYSWITCH(VEHIDCODE)
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

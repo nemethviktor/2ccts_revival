@@ -47,6 +47,6 @@ random_switch(FEAT_TRAINS, SELF, switch_mu_Coach_Gen6_Grand_Regio_Coach_livery) 
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

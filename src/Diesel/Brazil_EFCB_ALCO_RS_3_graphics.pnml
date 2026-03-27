@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_Brazil_EFCB_ALCO_RS_3, "gfx/Diesel/Brazil_EFCB_ALCO_R
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

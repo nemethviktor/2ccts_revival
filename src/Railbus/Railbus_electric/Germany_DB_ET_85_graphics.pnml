@@ -26,11 +26,11 @@ spriteset(spriteset_rbe_Germany_DB_ET_85, "gfx/Railbus/Railbus_electric/Germany_
 * Cargo capacity
 */
 
-ENGINECAPACITYSWITCH(VEHIDCODE)
+// ENGINECAPACITYSWITCH(VEHIDCODE)
 	
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

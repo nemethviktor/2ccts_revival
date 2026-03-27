@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_Germany_HVLE_V490, "gfx/Diesel/Germany_HVLE_V490.png"
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

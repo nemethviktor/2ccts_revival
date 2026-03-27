@@ -63,6 +63,6 @@ switch(FEAT_TRAINS, SELF, switch_steam_USA_Central_Pacific_4_2_2_articulated, ex
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

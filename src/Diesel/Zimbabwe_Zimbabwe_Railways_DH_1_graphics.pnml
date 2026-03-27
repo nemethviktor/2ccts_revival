@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_Zimbabwe_Zimbabwe_Railways_DH_1, "gfx/Diesel/Zimbabwe
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

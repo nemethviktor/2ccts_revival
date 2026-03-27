@@ -1,51 +1,67 @@
-/*
- *  Copyright (C) 2017 Transportman // V. Nemeth 2026
- *  This file is part of the 2cc Trains In NML and is based on The Dutch Trainset 2.0 by Jasper Vries
- *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
 
- */
+//  Copyright (C) 2017 Transportman // V. Nemeth 2026+
+//  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
-item(FEAT_TRAINS, ITEM ) {
-	property {
-		name: NAME;
-		VEHICLE_REGION
-		INTRODUCTIONDATEPROPERTY
-		model_life: MODEL_LIFE;
-		vehicle_life: VEHICLE_LIFE; 
-		retire_early: RETIRE_EARLY;
-		LOADINGSPEEDPROPERTY
-		PURCHASECOST_PROPERTY
-		RUNNINGCOST_PROPERTY
-		speed: SPEED km/h;
-		power: POWER hp;
-		cargo_capacity: HEAD_CAPACITY;
-		weight: WEIGHT ton;
-		tractive_effort_coefficient: TE_COEFFICIENT;
-		air_drag_coefficient: AIR_DRAG_COEFFICIENT;
-		
-		reliability_decay: RELIABILITY_DECAY;
-		CARGODEF
-		cargo_age_period: CARGO_AGE_PERIOD;
-		misc_flags: MISC_FLAGS;
-		refit_cost: REFIT_COST;
-		track_type: TRACK_TYPE;
-		AIFLAGPROPERTY
-		running_cost_base: RUNNING_COST_BASE;
-		engine_class: ENGINE_CLASS;
-		visual_effect_and_powered: VISUAL_FLAG;
-		
-		sprite_id: SPRITE_ID;
-		dual_headed: DUAL_HEADED;
-		length: LENGTH;
-		extra_power_per_wagon: POWER_PER_WAGON;
-		bitmask_vehicle_info: BITMASK_VEHICLE_INFO;
-	}
-	graphics {
-		purchase: spriteset_mu_Wagon_Gen5_Gondola_purchase;
-		//Add calls to defined switches below
-		ENGINECAPACITYSWITCHCALL(VEHIDCODE)
-		RUNNINGCOST_ENGINE_SWITCH_CALL
-		PURCHASETEXT_SWITCH_CALL
-		default: switch_mu_Wagon_Gen5_Gondola_cargo_selection;
-	}
+// Cargo capacity
+
+    switch(FEAT_TRAINS, SELF, switch_mu_Wagon_Gen5_Gondola_capacity_engine, cargo_classes) { \
+        bitmask(CC_MAIL): 65/2; \
+        bitmask(CC_ARMOURED): 65/4; \
+        65; \
+    }
+
+
+    switch(FEAT_TRAINS, SELF, switch_mu_Wagon_Gen5_Gondola_capacity_wagon, cargo_classes) { \
+        bitmask(CC_MAIL): 0/2; \
+        bitmask(CC_ARMOURED): 0/4; \
+        0; \
+    }
+
+item(FEAT_TRAINS, item_mu_Wagon_Gen5_Gondola) {
+    property {
+        name: string(str_mu_Wagon_Gen5_Gondola);
+        climates_available: (((param_region_africa || (param_region_north_america || param_region_south_america) || param_region_asia || (param_region_northern_europe || param_region_eastern_europe || param_region_southern_europe || param_region_western_europe) || param_region_oceania) || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
+        introduction_date: date(1990,1,1);
+        model_life: VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 25;
+        retire_early: 20;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
+        cost_factor: 33.87985;
+        running_cost_factor: 32.55597;
+        speed: 120 km/h;
+        power: 0 hp;
+        cargo_capacity: 65;
+        weight: 22 ton;
+        tractive_effort_coefficient: 0.3;
+        air_drag_coefficient: 0;
+
+        reliability_decay: 20;
+        refittable_cargo_classes: bitmask(CC_BULK);non_refittable_cargo_classes: 0;cargo_allow_refit: [COAL, GRAI, WOOD, IORE, WHEA, MAIZ, CORE, SUGR, TOFF, CTCD, AORE, CERE, CLAY, CMNT, GRVL, LIME, POTA, SAND, SCMT, WDPR];cargo_disallow_refit: [PASS, MAIL, TOUR, OIL_, LVST, GOOD, STEL, VALU, PAPR, FOOD, GOLD, RUBR, FRUT, WATR, DIAM, TOYS, BATT, SWET, COLA, BUBL, PLST, FZDR, BEER, BDMT, BRCK, CERA, COPR, DYES, ENSP, FERT, FICR, FISH, FMSP, GLAS, JAVA, MILK, MNSP, OLSD, PETR, PLAS, RCYC, RFPR, SGBT, SGCN, SULP, VEHI, VPTS, WOOL, URAN, YETI, YETY];
+        cargo_age_period: 185;
+        misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_AUTOREFIT);
+        refit_cost: 0;
+        ai_special_flag: AI_FLAG_CARGO;
+        track_type: [STANDARD_GAUGE_RAILTYPE_NONE, NARROW_GAUGE_RAILTYPE_NONE, BROAD_GAUGE_RAILTYPE_NONE];
+        running_cost_base: RUNNING_COST_DIESEL;
+        engine_class: ENGINE_CLASS_DIESEL;
+        visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+
+        sprite_id: SPRITE_ID_NEW_TRAIN;
+        dual_headed: 0;
+        length: 8;
+        extra_power_per_wagon: 0;
+        bitmask_vehicle_info: 0;
+    }
+    graphics {
+        purchase: spriteset_mu_Wagon_Gen5_Gondola_purchase;
+        cargo_capacity: switch_mu_Wagon_Gen5_Gondola_capacity_engine;
+        // no 'visual_effect' or 'visual_effect_and_powered'
+        // no 'length'
+        // no 'articulated_part'
+        // no 'can_attach'
+        // Add calls to defined switches below
+        // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
+        // PURCHASETEXT_SWITCH_CALL // this is actually blank
+        default: switch_mu_Wagon_Gen5_Gondola_cargo_selection;
+    }
 }

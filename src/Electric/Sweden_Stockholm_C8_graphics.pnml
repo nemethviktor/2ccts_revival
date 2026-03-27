@@ -41,6 +41,6 @@ switch(FEAT_TRAINS, SELF, switch_mtro_Sweden_Stockholm_C8_reversed, var[0xC8]) {
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

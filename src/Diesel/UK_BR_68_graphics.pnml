@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_UK_BR_68, "gfx/Diesel/UK_BR_68.png") {
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

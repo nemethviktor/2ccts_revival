@@ -41,6 +41,6 @@ switch(FEAT_TRAINS, SELF, switch_mtro_Russia_Moscow_81_720_reversed, var[0xC8]) 
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

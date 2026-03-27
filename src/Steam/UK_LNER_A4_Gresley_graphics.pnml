@@ -63,6 +63,6 @@ switch(FEAT_TRAINS, SELF, switch_steam_UK_LNER_A4_Gresley_articulated, extra_cal
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

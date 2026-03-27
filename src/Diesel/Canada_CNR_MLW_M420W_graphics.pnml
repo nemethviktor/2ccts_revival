@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_Canada_CNR_MLW_M420W, "gfx/Diesel/Canada_CNR_MLW_M420
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

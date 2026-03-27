@@ -24,6 +24,6 @@ spriteset(spriteset_electric_Norway_NSB_EL10, "gfx/Electric/Norway_NSB_EL10.png"
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

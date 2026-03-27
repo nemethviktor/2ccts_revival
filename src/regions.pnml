@@ -37,8 +37,3 @@
 #define IS_CONCEPT param_concept
 
 #define NO_CONCEPT 1
-
-//The #define that allows region availability, replaces climates_available property of vehicles.
-//If the vehicle is only available in one region, set REGION2 to NOREGION
-//If the vehicle is NOT a concept vehicle, set CONCEPT to NO_CONCEPT
-#define REGION(REGION1,REGION2,CONCEPT) climates_available: ((REGION1 || REGION2) && CONCEPT) ? ALL_CLIMATES : NO_CLIMATE; 

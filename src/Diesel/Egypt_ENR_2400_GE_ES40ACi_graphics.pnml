@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_Egypt_ENR_2400_GE_ES40ACi, "gfx/Diesel/Egypt_ENR_2400
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

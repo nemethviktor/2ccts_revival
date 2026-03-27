@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_South_Korea_Korail_6000_EMD_SD18, "gfx/Diesel/South_K
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_Algeria_SNTF_040_DG, "gfx/Diesel/Algeria_SNTF_040_DG.
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

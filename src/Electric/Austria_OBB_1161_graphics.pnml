@@ -34,6 +34,6 @@ switch(FEAT_TRAINS, SELF, switch_electric_Austria_OBB_1161_animation, motion_cou
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

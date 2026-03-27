@@ -36,6 +36,6 @@ switch(FEAT_TRAINS, SELF, switch_steam_Switzerland_SBB_Ec_2_5_animation, motion_
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

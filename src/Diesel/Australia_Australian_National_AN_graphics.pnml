@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_Australia_Australian_National_AN, "gfx/Diesel/Austral
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

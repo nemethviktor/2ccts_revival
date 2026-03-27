@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_Canada_CPR_Trainmaster, "gfx/Diesel/Canada_CPR_Trainm
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

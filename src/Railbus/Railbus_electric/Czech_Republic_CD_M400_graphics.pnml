@@ -26,10 +26,10 @@ spriteset(spriteset_rbe_Czech_Republic_CD_M400, "gfx/Railbus/Railbus_electric/Cz
 * Cargo capacity
 */
 
-ENGINECAPACITYSWITCH(VEHIDCODE)
+// ENGINECAPACITYSWITCH(VEHIDCODE)
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

@@ -63,6 +63,6 @@ switch(FEAT_TRAINS, SELF, switch_steam_Mozambique_Beira_Railway_BR6_F2_Falcon_ar
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

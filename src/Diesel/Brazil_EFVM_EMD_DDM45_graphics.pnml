@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_Brazil_EFVM_EMD_DDM45, "gfx/Diesel/Brazil_EFVM_EMD_DD
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

@@ -34,6 +34,6 @@ switch(FEAT_TRAINS, SELF, switch_electric_Italy_FS_E550_animation, motion_counte
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

@@ -63,6 +63,6 @@ switch(FEAT_TRAINS, SELF, switch_steam_New_Zealand_NZR_X_Class_articulated, extr
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

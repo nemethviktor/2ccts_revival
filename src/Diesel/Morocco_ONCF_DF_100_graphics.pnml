@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_Morocco_ONCF_DF_100, "gfx/Diesel/Morocco_ONCF_DF_100.
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

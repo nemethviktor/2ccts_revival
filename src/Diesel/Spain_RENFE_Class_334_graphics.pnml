@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_Spain_RENFE_Class_334, "gfx/Diesel/Spain_RENFE_Class_
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_Romania_CFR_060_DA, "gfx/Diesel/Romania_CFR_060_DA.pn
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

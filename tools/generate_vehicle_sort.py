@@ -16,17 +16,32 @@ def generate_vehiclesort_pnml():
 
     try:
         sheets = pd.read_excel(excel_path, sheet_name=None)
-        df_props = sheets['properties']
+    
+        # 1. Start with the 'control' sheet as the base (defines what to generate)
+        df_master = sheets['control']
+        
+        # 2. List of sheets that provide extra vehicle properties (keyed by VEHIDCODE)
+        data_sheets = [
+            'properties'
+        ]
+        
+        for sheet_name in data_sheets:
+            if sheet_name in sheets:
+                # Merge on VEHIDCODE. 'left' join ensures we keep only what's in 'control'
+                df_master = pd.merge(df_master, sheets[sheet_name], on='VEHIDCODE', how='left', suffixes=('', '_dup'))
+                # Drop any duplicate columns created by the merge
+                df_master = df_master.loc[:, ~df_master.columns.str.endswith('_dup')]
+                
         df_ranges = sheets['vehicle_id_ranges']
-        df_copy = sheets['copyright_text']
+        df_copyright = sheets['copyright_text']
     except Exception as e:
         print(f"Error reading Excel: {e}")
         return
 
     # 2. Extract Copyright
-    header_text = str(df_copy.columns[0]) if "Unnamed" not in str(df_copy.columns[0]) else ""
-    if not df_copy.empty:
-        data_text = str(df_copy.iloc[0, 0])
+    header_text = str(df_copyright.columns[0]) if "Unnamed" not in str(df_copyright.columns[0]) else ""
+    if not df_copyright.empty:
+        data_text = str(df_copyright.iloc[0, 0])
         raw_copyright = data_text if header_text == "" else f"{header_text}\n{data_text}"
     else:
         raw_copyright = header_text
@@ -52,7 +67,7 @@ def generate_vehiclesort_pnml():
         content.append(f"#define {macro_name} \\\n")
 
         # Filter properties for this category
-        cat_items = df_props[df_props['VEHID_ID_CATEGORY'].astype(str).str.strip() == cat_id].copy()
+        cat_items = df_master[df_master['VEHID_ID_CATEGORY'].astype(str).str.strip() == cat_id].copy()
         
         # Sort by Intro Year, then by ID
         cat_items = cat_items.sort_values(by=['INTRODUCTION_YEAR', 'VEHID_ID'])

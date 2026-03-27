@@ -24,6 +24,6 @@ spriteset(spriteset_electric_Switzerland_RhB_DE_2_2, "gfx/Electric/Switzerland_R
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

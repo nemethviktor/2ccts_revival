@@ -34,6 +34,6 @@ switch(FEAT_TRAINS, SELF, switch_steam_Norway_NSB_Class_XXI_animation, motion_co
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

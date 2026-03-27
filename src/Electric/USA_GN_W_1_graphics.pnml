@@ -51,6 +51,6 @@ switch(FEAT_TRAINS, SELF, switch_electric_USA_GN_W_1_articulated, extra_callback
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

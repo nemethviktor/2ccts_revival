@@ -24,6 +24,6 @@ spriteset(spriteset_electric_Belgium_NMBS_SNCB_13_HLE, "gfx/Electric/Belgium_NMB
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

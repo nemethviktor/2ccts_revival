@@ -52,6 +52,6 @@ switch(FEAT_TRAINS, SELF, switch_electric_Sweden_MTAB_IORE_articulated, extra_ca
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

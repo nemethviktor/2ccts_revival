@@ -41,6 +41,6 @@ switch(FEAT_TRAINS, SELF, switch_mtro_Brazil_Sao_Paulo_Serie_5500_reversed, var[
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

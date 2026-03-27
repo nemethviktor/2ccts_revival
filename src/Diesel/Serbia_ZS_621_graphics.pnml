@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_Serbia_ZS_621, "gfx/Diesel/Serbia_ZS_621.png") {
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

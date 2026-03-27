@@ -24,6 +24,6 @@ spriteset(spriteset_electric_Slovakia_ZSSK_162, "gfx/Electric/Slovakia_ZSSK_162.
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

@@ -34,6 +34,6 @@ switch(FEAT_TRAINS, SELF, switch_steam_Japan_JNR_Class_E10_animation, motion_cou
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

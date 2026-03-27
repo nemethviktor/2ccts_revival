@@ -51,6 +51,6 @@ switch(FEAT_TRAINS, SELF, switch_electric_Chile_EFE_E_29_articulated, extra_call
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

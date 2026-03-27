@@ -35,6 +35,6 @@ switch(FEAT_TRAINS, SELF, switch_steam_Italy_FS_880_animation, motion_counter % 
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

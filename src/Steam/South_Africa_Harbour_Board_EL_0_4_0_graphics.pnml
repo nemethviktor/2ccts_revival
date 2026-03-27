@@ -39,6 +39,6 @@ switch(FEAT_TRAINS, SELF, switch_steam_South_Africa_Harbour_Board_EL_0_4_0_anima
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

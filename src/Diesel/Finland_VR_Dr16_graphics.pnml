@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_Finland_VR_Dr16, "gfx/Diesel/Finland_VR_Dr16.png") {
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

@@ -53,6 +53,6 @@ switch(FEAT_TRAINS, SELF, switch_diesel_USA_Pennsylvania_Railroad_RF_16_Sharknos
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

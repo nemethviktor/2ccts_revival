@@ -41,6 +41,6 @@ switch(FEAT_TRAINS, SELF, switch_mtro_Finland_Helsinki_M100_reversed, var[0xC8])
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

@@ -33,6 +33,6 @@ switch(FEAT_TRAINS, SELF, switch_diesel_Panama_Panama_Canal_Railway_EMD_F40PH_po
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

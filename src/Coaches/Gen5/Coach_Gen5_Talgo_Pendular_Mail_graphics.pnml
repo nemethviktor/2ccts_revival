@@ -47,6 +47,6 @@ random_switch(FEAT_TRAINS, SELF, switch_mu_Coach_Gen5_Talgo_Pendular_Mail_livery
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

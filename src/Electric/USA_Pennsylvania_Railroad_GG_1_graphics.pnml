@@ -51,6 +51,6 @@ switch(FEAT_TRAINS, SELF, switch_electric_USA_Pennsylvania_Railroad_GG_1_articul
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

@@ -1,69 +1,69 @@
-/*
- *  Copyright (C) 2017 Transportman // V. Nemeth 2026
- *  This file is part of the 2cc Trains In NML and is based on The Dutch Trainset 2.0 by Jasper Vries
- *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
 
- */
+//  Copyright (C) 2017 Transportman // V. Nemeth 2026+
+//  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
-item(FEAT_TRAINS, ITEM ) {
-	property {
-		name: NAME;
-		VEHICLE_REGION
-		INTRODUCTIONDATEPROPERTY
-		model_life: MODEL_LIFE;
-		vehicle_life: VEHICLE_LIFE; 
-		retire_early: RETIRE_EARLY;
-		LOADINGSPEEDPROPERTY
-		PURCHASECOST_PROPERTY
-		RUNNINGCOST_PROPERTY
-		speed: SPEED km/h;
-		power: POWER hp;
-		cargo_capacity: HEAD_CAPACITY;
-		weight: WEIGHT ton;
-		tractive_effort_coefficient: TE_COEFFICIENT;
-		air_drag_coefficient: AIR_DRAG_COEFFICIENT;
-		
-		reliability_decay: RELIABILITY_DECAY;
-		CARGODEF
-		cargo_age_period: CARGO_AGE_PERIOD;
-		misc_flags: MISC_FLAGS;
-		refit_cost: REFIT_COST;
-		track_type: TRACK_TYPE;
-		AIFLAGPROPERTY
-		running_cost_base: RUNNING_COST_BASE;
-		engine_class: ENGINE_CLASS;
-		visual_effect_and_powered: VISUAL_FLAG;
-		
-		sprite_id: SPRITE_ID;
-		dual_headed: DUAL_HEADED;
-		length: LENGTH;
-		extra_power_per_wagon: POWER_PER_WAGON;
-		bitmask_vehicle_info: BITMASK_VEHICLE_INFO;
-	}
-	graphics {
-		purchase: spriteset_mtro_Brazil_Sao_Paulo_Serie_5500_purchase;
-		can_attach_wagon: switch_can_attach_vehicle;
-		//Add calls to defined switches below
-		RUNNINGCOST_ENGINE_SWITCH_CALL
-		PURCHASETEXT_SWITCH_CALL
-		default: switch_mtro_Brazil_Sao_Paulo_Serie_5500_reversed;
-	}
-	livery_override (item_mtro_Metro_Wagon_Unpowered ) {
-		LOADINGSPEEDPROPERTY
-		RUNNINGCOST_MU_WAGON_UNPOWERED_SWITCH_CALL
-		weight: WEIGHTMUWAGONUNPOWERED
-		cargo_capacity: WAGON_CAPACITY;
-		length: WAGON_LENGTH;
-		default: spriteset_mtro_Brazil_Sao_Paulo_Serie_5500_middle;
-	}
-	livery_override (item_mtro_Metro_Wagon_Powered ) {
-		LOADINGSPEEDPROPERTY
-		RUNNINGCOST_MU_WAGON_POWERED_SWITCH_CALL
-		power: POWERMUWAGONPOWERED
-		weight: WEIGHTMUWAGONPOWERED
-		cargo_capacity: WAGON_CAPACITY;
-		tractive_effort_coefficient: TEMUWAGONPOWERED
-		length: WAGON_LENGTH;
-		default: spriteset_mtro_Brazil_Sao_Paulo_Serie_5500_middle;
-	}
+item(FEAT_TRAINS, item_mtro_Brazil_Sao_Paulo_Serie_5500) {
+    property {
+        name: string(str_mtro_Brazil_Sao_Paulo_Serie_5500);
+        climates_available: ((param_region_south_america || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
+        introduction_date: date(1979,1,1);
+        model_life: 45;
+        vehicle_life: 60;
+        retire_early: 20;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
+        cost_factor: 28.03546;
+        running_cost_factor: 23.94061;
+        speed: 90 km/h;
+        power: 250 hp;
+        cargo_capacity: 230;
+        weight: 37 ton;
+        tractive_effort_coefficient: 0.38;
+        air_drag_coefficient: 0;
+
+        reliability_decay: 20;
+        refittable_cargo_classes: bitmask(CC_PASSENGERS);non_refittable_cargo_classes: 0;
+        cargo_age_period: 185;
+        misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
+        refit_cost: 0;
+        ai_special_flag: AI_FLAG_PASSENGER;
+        track_type: [STANDARD_GAUGE_RAILTYPE_3RD];
+        running_cost_base: RUNNING_COST_ELECTRIC;
+        engine_class: ENGINE_CLASS_MAGLEV;
+        visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+
+        sprite_id: SPRITE_ID_NEW_TRAIN;
+        dual_headed: 1;
+        length: 8;
+        extra_power_per_wagon: 0;
+        bitmask_vehicle_info: 0;
+    }
+    graphics {
+        purchase: spriteset_mtro_Brazil_Sao_Paulo_Serie_5500_purchase;
+        // no 'visual_effect' or 'visual_effect_and_powered'
+        // no 'length'
+        // no 'articulated_part'
+        can_attach_wagon: switch_can_attach_vehicle;
+        // Add calls to defined switches below
+        // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
+        // PURCHASETEXT_SWITCH_CALL // this is actually blank
+        default: switch_mtro_Brazil_Sao_Paulo_Serie_5500_reversed;
+    }
+    livery_override (item_mtro_Metro_Wagon_Unpowered) {
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
+        running_cost_factor: int(90/10);
+        weight: int(37*1/2);
+        cargo_capacity: 230;
+        length: 8;
+        default: spriteset_mtro_Brazil_Sao_Paulo_Serie_5500_middle;
+    }
+    livery_override (item_mtro_Metro_Wagon_Powered) {
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
+        running_cost_factor: (round(24.645256964788636));
+        power: int(250*1/2);
+        weight: int(37*3/4);
+        cargo_capacity: 230;
+        tractive_effort_coefficient: int(0.38*10*37);
+        length: 8;
+        default: spriteset_mtro_Brazil_Sao_Paulo_Serie_5500_middle;
+    }
 }

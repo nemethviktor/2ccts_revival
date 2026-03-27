@@ -24,6 +24,6 @@ spriteset(spriteset_electric_Czech_Republic_CD_S499, "gfx/Electric/Czech_Republi
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

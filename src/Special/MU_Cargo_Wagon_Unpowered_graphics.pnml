@@ -24,6 +24,6 @@ spriteset(spriteset_mu_MU_Cargo_Wagon_Unpowered, "gfx/Special/MU_Cargo_Wagon_Unp
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

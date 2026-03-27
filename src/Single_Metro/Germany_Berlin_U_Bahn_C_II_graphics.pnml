@@ -25,6 +25,6 @@ spriteset(spriteset_singlemtro_Germany_Berlin_U_Bahn_C_II, "gfx/Single_Metro/Ger
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

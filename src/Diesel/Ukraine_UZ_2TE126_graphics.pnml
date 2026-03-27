@@ -57,6 +57,6 @@ switch(FEAT_TRAINS, SELF, switch_diesel_Ukraine_UZ_2TE126_articulated, extra_cal
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

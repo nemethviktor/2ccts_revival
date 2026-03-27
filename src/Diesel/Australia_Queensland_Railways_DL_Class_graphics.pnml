@@ -34,6 +34,6 @@ switch(FEAT_TRAINS, SELF, switch_diesel_Australia_Queensland_Railways_DL_Class_a
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

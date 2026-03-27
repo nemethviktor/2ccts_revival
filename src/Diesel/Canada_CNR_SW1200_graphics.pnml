@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_Canada_CNR_SW1200, "gfx/Diesel/Canada_CNR_SW1200.png"
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

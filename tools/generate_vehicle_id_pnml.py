@@ -20,17 +20,17 @@ def generate_vehicle_id_pnml():
 
     try:
         sheets = pd.read_excel(excel_path, sheet_name=None)
-        df_props = sheets['properties']
+        df_control = sheets['control']
         df_ranges = sheets['vehicle_id_ranges']
-        df_copy = sheets['copyright_text']
+        df_copyright = sheets['copyright_text']
     except Exception as e:
         print(f"Error reading Excel sheets: {e}")
         return
 
     # 2. Extract Copyright
-    header_text = str(df_copy.columns[0]) if "Unnamed" not in str(df_copy.columns[0]) else ""
-    if not df_copy.empty:
-        data_text = str(df_copy.iloc[0, 0])
+    header_text = str(df_copyright.columns[0]) if "Unnamed" not in str(df_copyright.columns[0]) else ""
+    if not df_copyright.empty:
+        data_text = str(df_copyright.iloc[0, 0])
         raw_copyright = data_text if header_text == "" else f"{header_text}\n{data_text}"
     else:
         raw_copyright = header_text
@@ -45,8 +45,8 @@ def generate_vehicle_id_pnml():
     # Pre-process properties into a dictionary for O(1) lookup
     # Key: VEHID_ID, Value: ITEM name
     # We only care about rows that have a numeric ID
-    df_props['VEHID_ID'] = pd.to_numeric(df_props['VEHID_ID'], errors='coerce')
-    id_map = df_props.dropna(subset=['VEHID_ID']).set_index('VEHID_ID')['ITEM'].to_dict()
+    df_control['VEHID_ID'] = pd.to_numeric(df_control['VEHID_ID'], errors='coerce')
+    id_map = df_control.dropna(subset=['VEHID_ID']).set_index('VEHID_ID')['ITEM'].to_dict()
 
     # 4. Process Category Blocks
     for _, r_row in df_ranges.iterrows():

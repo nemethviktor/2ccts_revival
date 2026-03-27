@@ -63,6 +63,6 @@ switch(FEAT_TRAINS, SELF, switch_steam_France_SNCF_150B_articulated, extra_callb
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_France_SNCF_461000, "gfx/Diesel/France_SNCF_461000.pn
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

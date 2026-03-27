@@ -52,6 +52,6 @@ switch(FEAT_TRAINS, SELF, switch_diesel_Canada_CNR_9000_articulated, extra_callb
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH

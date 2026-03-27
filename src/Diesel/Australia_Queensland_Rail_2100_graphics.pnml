@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_Australia_Queensland_Rail_2100, "gfx/Diesel/Australia
 
 //Add defined switches
 
-RUNNINGCOST_ENGINE_SWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXT_SWITCH
+// PURCHASETEXT_SWITCH
