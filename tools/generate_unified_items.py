@@ -610,10 +610,10 @@ def generate_unified_items():
         with open(os.path.join(abs_folder, f"{row['FILENAMES_EXPECTED']}_item.pnml"), 'w', encoding='utf-8') as f:
             f.writelines(content)
 
-        # Save as CSV - this takes quite a few seconds.
-        print("---- Saving CSV File ----")
-        df_master.to_csv(os.path.join(script_dir, 'vehicle_report.csv'), index=False)
-        print("---- Saving CSV File Complete ----")
+    # Save as CSV - this takes quite a few seconds.
+    print("---- Saving CSV File ----")
+    df_master.to_csv(os.path.join(script_dir, 'vehicle_report.csv'), index=False)
+    print("---- Saving CSV File Complete ----")
 
 if __name__ == "__main__":
     generate_unified_items()
