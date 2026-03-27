@@ -53,6 +53,6 @@ switch(FEAT_TRAINS, SELF, switch_diesel_Canada_VIA_Rail_FP9_visual_effect, posit
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

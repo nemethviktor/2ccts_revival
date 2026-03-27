@@ -24,6 +24,6 @@ spriteset(spriteset_electric_UK_BR_85, "gfx/Electric/UK_BR_85.png") {
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

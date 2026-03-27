@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_Netherlands_NS_200, "gfx/Diesel/Netherlands_NS_200.pn
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

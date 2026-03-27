@@ -24,6 +24,6 @@ spriteset(spriteset_electric_Ukraine_UZ_DS3, "gfx/Electric/Ukraine_UZ_DS3.png") 
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

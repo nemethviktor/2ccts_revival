@@ -24,6 +24,6 @@ spriteset(spriteset_electric_Macedonia_Macedonian_Railways_462, "gfx/Electric/Ma
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

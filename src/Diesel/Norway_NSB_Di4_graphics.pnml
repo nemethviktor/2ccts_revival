@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_Norway_NSB_Di4, "gfx/Diesel/Norway_NSB_Di4.png") {
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

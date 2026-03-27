@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_Austria_OBB_2060, "gfx/Diesel/Austria_OBB_2060.png") 
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

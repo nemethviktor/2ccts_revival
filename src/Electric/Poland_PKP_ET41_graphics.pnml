@@ -52,6 +52,6 @@ switch(FEAT_TRAINS, SELF, switch_electric_Poland_PKP_ET41_articulated, extra_cal
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

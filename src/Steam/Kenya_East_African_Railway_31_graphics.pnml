@@ -63,6 +63,6 @@ switch(FEAT_TRAINS, SELF, switch_steam_Kenya_East_African_Railway_31_articulated
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

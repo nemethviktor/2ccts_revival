@@ -24,6 +24,6 @@ spriteset(spriteset_electric_Chile_EFE_E_269, "gfx/Electric/Chile_EFE_E_269.png"
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

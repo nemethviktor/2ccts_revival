@@ -54,9 +54,9 @@ switch(FEAT_TRAINS, SELF, switch_dmu_Netherlands_NS_Plan_U_DE_III_visual_effect_
 * Cargo capacity
 */
 
-ENGINECAPACITYSWITCH(VEHIDCODE)
+// ENGINECAPACITYSWITCH(VEHIDCODE)
 
-WAGONCAPACITYSWITCH(VEHIDCODE)
+// WAGONCAPACITYSWITCH(VEHIDCODE)
 
 //Graphics for the unit wagon based on cargo class
 switch(FEAT_TRAINS, SELF, switch_dmu_Netherlands_NS_Plan_U_DE_III_cargo_selection, cargo_classes){
@@ -66,8 +66,8 @@ switch(FEAT_TRAINS, SELF, switch_dmu_Netherlands_NS_Plan_U_DE_III_cargo_selectio
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-RUNNINGCOSTMUWAGONSWITCH
+// RUNNINGCOST_MU_WAGON_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

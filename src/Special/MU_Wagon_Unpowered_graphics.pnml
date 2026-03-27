@@ -9,7 +9,7 @@
 * PURCHASE
 */
 
-spriteset(spriteset_mu_wagon_unpowered_purchase, "gfx/Special/Multiple_Unit_Wagon_Unpowered.png") {
+spriteset(spriteset_mu_MU_Wagon_Unpowered_purchase, "gfx/Special/MU_Wagon_Unpowered.png") {
 	template_purchase_wagon_special(1, 1)
 }
 
@@ -17,13 +17,13 @@ spriteset(spriteset_mu_wagon_unpowered_purchase, "gfx/Special/Multiple_Unit_Wago
 * VEHICLE
 */
 
-spriteset(spriteset_mu_wagon_unpowered, "gfx/Special/Multiple_Unit_Wagon_Unpowered.png") {
+spriteset(spriteset_mu_MU_Wagon_Unpowered, "gfx/Special/MU_Wagon_Unpowered.png") {
 	template_wagon_special(21, 1)
 }
 	
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

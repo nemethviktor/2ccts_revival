@@ -24,6 +24,6 @@ spriteset(spriteset_electric_South_Africa_SAR_ES_Class, "gfx/Electric/South_Afri
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

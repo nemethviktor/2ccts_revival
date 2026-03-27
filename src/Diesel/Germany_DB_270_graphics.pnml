@@ -34,6 +34,6 @@ switch(FEAT_TRAINS, SELF, switch_diesel_Germany_DB_270_animation, motion_counter
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

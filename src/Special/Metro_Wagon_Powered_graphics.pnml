@@ -9,7 +9,7 @@
 * PURCHASE
 */
 
-spriteset(spriteset_mtro_wagon_powered_purchase, "gfx/Special/Metro_Unit_Wagon_Powered.png") {
+spriteset(spriteset_mtro_Metro_Wagon_Powered_purchase, "gfx/Special/Metro_Wagon_Powered.png") {
 	template_purchase_wagon_special(1, 1)
 }
 
@@ -17,13 +17,13 @@ spriteset(spriteset_mtro_wagon_powered_purchase, "gfx/Special/Metro_Unit_Wagon_P
 * VEHICLE
 */
 
-spriteset(spriteset_mtro_wagon_powered, "gfx/Special/Metro_Unit_Wagon_Powered.png") {
+spriteset(spriteset_mtro_Metro_Wagon_Powered, "gfx/Special/Metro_Wagon_Powered.png") {
 	template_wagon_special(21, 1)
 }
 	
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

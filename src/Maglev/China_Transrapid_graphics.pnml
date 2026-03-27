@@ -47,9 +47,9 @@ switch(FEAT_TRAINS, SELF, switch_mglv_China_Transrapid_reversed, var[0xC8]) {
 * Cargo capacity
 */
 
-ENGINECAPACITYSWITCH(VEHIDCODE)
+// ENGINECAPACITYSWITCH(VEHIDCODE)
 
-WAGONCAPACITYSWITCH(VEHIDCODE)
+// WAGONCAPACITYSWITCH(VEHIDCODE)
 
 //Graphics for the unit wagon based on cargo class
 switch(FEAT_TRAINS, SELF, switch_mglv_China_Transrapid_cargo_selection, cargo_classes){
@@ -59,6 +59,6 @@ switch(FEAT_TRAINS, SELF, switch_mglv_China_Transrapid_cargo_selection, cargo_cl
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

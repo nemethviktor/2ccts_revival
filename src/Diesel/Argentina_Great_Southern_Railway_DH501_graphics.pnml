@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_Argentina_Great_Southern_Railway_DH501, "gfx/Diesel/A
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

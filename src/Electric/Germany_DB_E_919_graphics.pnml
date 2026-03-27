@@ -24,6 +24,6 @@ spriteset(spriteset_electric_Germany_DB_E_919, "gfx/Electric/Germany_DB_E_919.pn
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

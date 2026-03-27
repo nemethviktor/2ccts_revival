@@ -1,7 +1,10 @@
 # Welcome to 2cc NML (Revival)
 
 This project aims to capitalise on the work of Transportman, EmperorJake, VoyagerOne and the others mentioned further down in the original readme and better document, as well as extend the last "official" release, which was around 2020.
+
 That said, I've not worked on NML files before and my gfx skills are zero so if people will desire extra amendments that involve say new params or new graphics, they'll need to help out with them.
+
+In version `3.3-alpha1` (code only, unrelease for now but you can build if interested) I've added support for various track types and voltages. Need thorough testing though.
 
 
 ## Availability
@@ -11,17 +14,55 @@ The grf file is available on Github under [Releases](https://github.com/nemethvi
 
 ## Build
 
-The assumption is that you have at least a vague idea about how Linux works. If you're on Windows: Install WSL. It makes life a lot easier, don't bother with CoreUtils etc. 
+You'll likely need [nmlc 0.8.1+](https://github.com/OpenTTD/nml/tree/master) to run the build and that seems to be around for Windows only. Get MinGW from [here](https://sourceforge.net/projects/mingw-w64/files/latest/download), install (you'll need the base and some compilers), then add the resulting folder's `bin` subfolder to `PATH` (ie `c:\MinGW\bin\`)
 
-Regardless you'll need to `apt install` a variety of things, `python3` and `pip3` obviously, `make`, `gcc`, `nmlc`, `dos2unix`
+You'll also need python 3... with `pandas openpyxl`, which you get via `pip install pandas openpyxl`
 
-Then in `bash` (if you're on Windows, google around about this, but if you managed to get `apt` generally functioning this shouldn't be a problem) run `make`. If you get warnings that don't seem "deadly", ignore them, especially if you are new to this. 
-
+Run the `pybuild.bat`.
 
 ## "Under new management" (project directions, bug reports/feature requests)
 
 I forked the original project because I was unsatisfied with the availability of items past Gen5 wagons and so the original aim was to extend that. However of course I'm hoping to keep the project running and extend it where possible. Not only a fair bit of time has passed since the mid 2010s when this was active (and a lot of new real vehicles have come out) but I think there'd be significant scope for extending _concept_ vehicles for future purposes because I personally find it boring that there are almost no new vehicles in any NewGRF past ~2020
 Please use github to submit requests of any kind, _don't use the OTTD forums_ - I'm not active there. Also preferably don't use Reddit, I'm a reader there but Github is easier to manage.
+
+### Changes in logic vs the old code. (Purchase and maintenance costs)
+
+As part of the porting process I've automated the creation of the individual item files. This, considering that there was limited documentation (read: almost none) available as to why certain things had been the way inevitably caused some differences in the outcomes. There had been some incosistencies in the graphics override allocations that were most likely down to simple human errors. A particular consistent element in differences are the running cost and purchase cost calculations. These changes are very minor but I wanted to include a note on them. 
+
+I know that AI is frowned upon in OpenTTD realms but such is life. I'm terrible at math and Newton-Raphson calculations (which is what the legacy code uses and has been emulated in the remake) are well beyond my maths capabilities. Gemini's explanation to the situation: (the precise query was, that the outcome for a particular vehicle had resulted in a calc value `79.65744748` in the old code but we got `79.36745`, a difference of `0.29`, consistent with the multiplier of tractive effort coefficient (not) being added across the board.)
+
+> In the context of OpenTTD and NML, these small differences usually matter less for the **gameplay balance** and more for the **code maintenance**. 
+> 
+> Here is the breakdown of why that `+1*TE` logic exists and whether the "drift" you are seeing is a problem.
+> 
+> #### 1. The "Flat Addition" Logic
+> In your legacy calculation for the `rbm_World_Turbobus`, the Tractive Effort (TE) was added as a raw value at the very end.
+> * **Your Current Script Logic:** `m.P1 * (Base + m.P7 * TE)`
+> * **Legacy Logic:** `(m.P1 * Base) + TE`
+> 
+> If $P1$ is $1.0$, there is zero difference. However, if $P1$ is $0.5$ (like in the Coach formula), the script would divide the TE in half, whereas the legacy system kept the full $0.29$. Since most of your engines have a $P1$ of $1.0$, the difference stays hidden until you hit a vehicle with a scalar.
+> 
+> #### 2. Does the "Drift" make a difference?
+> In short: **No.**
+> 
+> OpenTTD’s engine eventually rounds these factors to integers or specific bit-depths when it calculates the final price in British Pounds (or your chosen currency). A difference between `79.65` and `79.36` is less than 0.4%. 
+> * **Purchase Price:** If the base cost is £20,000, a 0.4% difference is £80. In a game where players have millions, this is invisible.
+> * **Running Cost:** The game engine updates running costs only in discrete steps. A 0.3 shift in a factor of 79 usually won't even change the final £/year value displayed > in the train window.
+> 
+> #### 3. The "Integer Truncation" Factor
+> The most likely reason for the tiny discrepancies is that the NML compiler and the OpenTTD engine use **Integer Math**. 
+> 
+>  
+> When NML processes `0.05 * SQRT(SPEED)`, it doesn't keep 15 decimal places like Python does. It often "chops off" the decimals at each stage of the macro. Python is "too accurate," which causes it to drift away from the "simplified" math of the 2017 script.
+> 
+> #### 4. Recommendation: "Tell it like it is"
+> Unless you are trying to create a "perfect" byte-for-byte replica of the old GRF (for checksum matching), **don't sweat the 0.29 difference.** Actually, the Python results are technically **more fair** because they don't suffer from the cumulative rounding errors of the old macros. As long as the Turbobus costs roughly what a Turbobus should cost, the "forward-thinking" move is to stick with the cleaner Python math. It is much easier to explain to a new contributor than a 2,000-character string of Newton-Raphson iterations.
+> 
+> **If you really want them to match perfectly**, you can change the final return to:
+> `return round(m.P1 * base, 2) + TE`
+> (Moving TE outside the multiplier bracket). 
+> 
+> Otherwise, I’d leave it as is. The "drift" is a sign of a better tool, not a broken one.
 
 
 ### Help wanted/Contributing

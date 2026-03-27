@@ -20,9 +20,9 @@ STR_PARAM_TIMES_8                   :8
 #region parameters
 STR_PARAM_CONCEPT                                               :Koncepto verturiloj (ne implementado ankoraŭ)
 STR_PARAM_CONCEPT_DESC                                  :Uzu koncepto verturiloj (ne implementado ankoraŭ)
-STR_PARAM_REGION_NORTHAMERICA                   :Nordameriko
+STR_PARAM_REGION_NORTH_AMERICA                   :Nordameriko
 STR_PARAM_REGION_ASIA                                   :Azio
-STR_PARAM_REGION_EASTERNEUROPE_DESC             :Uzu veturilojn de orienta Eŭropo
+STR_PARAM_REGION_EASTERN_EUROPE_DESC             :Uzu veturilojn de orienta Eŭropo
 
 #loading speed parameter
 
@@ -154,40 +154,40 @@ str_mtro_Germany_Berlin_U_Bahn_A_I :Berlino U-Bahn A I (Metro)
 #Maglev
 
 #wagons
-str_wagon_Gen2_Boxcar_Type2                             :2a Gen Ligna Ŝarĝo Aŭto (Tipo 2)
-str_wagon_Gen2_Silo                                     :2a Gen Silo
-str_wagon_Gen3_Flat_Wagon                               :3a Gen Plata Vagono
-str_wagon_Gen3_Boxcar_Type1                     :3a Gen Ligna Ŝarĝo Aŭto (Tipo 1)
-str_wagon_Gen3_Silo_Type1                               :3a Gen Silo (Tipo 1)
-str_wagon_Gen4_Boxcar_Type2                             :4a Gen Ŝarĝo aŭto (Tipo 2)
-str_wagon_Gen4_Hopper_Type2                             :4a Gen Memo-efluado Ujo (Tipo 2)
-str_wagon_Gen4_Centerbeam                               :4a Gen Centratrabo Plata Ujo
-str_wagon_Gen5_Heavy_Flatcar                    :5a Gen Peza Plata Ujo
-str_wagon_Gen5_Silo_Type2                               :5th Gen Silo (Tipo 2)
-str_wagon_Gen5_Container_Carrier                :5a Gen Ujo Portilo
-str_wagon_Gen5_Centerbeam                               :5a Gen Centratrabo Plata Ujo
+str_mu_Wagon_Gen2_Boxcar_Type2                             :2a Gen Ligna Ŝarĝo Aŭto (Tipo 2)
+str_mu_Wagon_Gen2_Silo                                     :2a Gen Silo
+str_mu_Wagon_Gen3_Flat_Wagon                               :3a Gen Plata Vagono
+str_mu_Wagon_Gen3_Boxcar_Type1                     :3a Gen Ligna Ŝarĝo Aŭto (Tipo 1)
+str_mu_Wagon_Gen3_Silo_Type1                               :3a Gen Silo (Tipo 1)
+str_mu_Wagon_Gen4_Boxcar_Type2                             :4a Gen Ŝarĝo aŭto (Tipo 2)
+str_mu_Wagon_Gen4_Hopper_Type2                             :4a Gen Memo-efluado Ujo (Tipo 2)
+str_mu_Wagon_Gen4_Centerbeam                               :4a Gen Centratrabo Plata Ujo
+str_mu_Wagon_Gen5_Heavy_Flatcar                    :5a Gen Peza Plata Ujo
+str_mu_Wagon_Gen5_Silo_Type2                               :5th Gen Silo (Tipo 2)
+str_mu_Wagon_Gen5_Container_Carrier                :5a Gen Ujo Portilo
+str_mu_Wagon_Gen5_Centerbeam                               :5a Gen Centratrabo Plata Ujo
 
-str_wagon_Service_Car_Type2                             :Servilo Aŭto (Tipo 2)
+str_mu_Wagon_Service_Car_Type2                             :Servilo Aŭto (Tipo 2)
 
 #coaches
-str_coach_Gen1_Clerestory_Mail_Coach                                    :Klerestorio Poŝto Kaleŝo
-str_coach_Gen2_Heavyweight_Intercity_Coach                              :Forta Interurba Kaleŝo
-str_coach_Gen2_Steel_Compartment_Coach                                  :Ŝtalo Kupeo Kaleŝo
-str_coach_Gen2_Steel_3_axle_Compartment_Coach                   :Ŝtalo 3-akso Kupeo Kaleŝo
-str_coach_Gen2_Steel_3_axle_Mail_Coach                                  :Ŝtalo 3-akso Poŝto Kaleŝo
-str_coach_Gen3_Aluminium_Lightweight_Regional_Coach     :Aluminio Malpeza Regiono Kaleŝo
-str_coach_Gen3_Indian_Intercity_Coach                                   :Hinda Interurba Kaleŝo
-str_coach_Gen4_Silberling_Commuter_Coach                                :'Silberling' Komutila Kaleŝo
-str_coach_Gen4_Russian_Mail_Coach                                               :Rusa Poŝto Kaleŝo
-str_coach_Gen4_Superliner_Coach                                                 :Ekskursokaleŝo
-str_coach_Gen4_Horizon_Regional_Coach                                   :Horizon Regiono Kaleŝo
-str_coach_Gen4_Horizon_Baggage_Coach                                    :Horizon Bagaĝo Kaleŝo
-str_coach_Gen5_High_Speed_Coach                                                 :Altrapida Kaleŝo
-str_coach_Gen5_Talgo_Pendular                                                   :Talgo Pendular
-str_coach_Gen6_Speedmail_Coach                                                  :Altrapida Poŝto Kaleŝo
+str_mu_Coach_Gen1_Clerestory_Mail_Coach                                    :Klerestorio Poŝto Kaleŝo
+str_mu_Coach_Gen2_Heavyweight_Intercity_Coach                              :Forta Interurba Kaleŝo
+str_mu_Coach_Gen2_Steel_Compartment_Coach                                  :Ŝtalo Kupeo Kaleŝo
+str_mu_Coach_Gen2_Steel_3_axle_Compartment_Coach                   :Ŝtalo 3-akso Kupeo Kaleŝo
+str_mu_Coach_Gen2_Steel_3_axle_Mail_Coach                                  :Ŝtalo 3-akso Poŝto Kaleŝo
+str_mu_Coach_Gen3_Aluminium_Lightweight_Regional_Coach     :Aluminio Malpeza Regiono Kaleŝo
+str_mu_Coach_Gen3_Indian_Intercity_Coach                                   :Hinda Interurba Kaleŝo
+str_mu_Coach_Gen4_Silberling_Commuter_Coach                                :'Silberling' Komutila Kaleŝo
+str_mu_Coach_Gen4_Russian_Mail_Coach                                               :Rusa Poŝto Kaleŝo
+str_mu_Coach_Gen4_Superliner_Coach                                                 :Ekskursokaleŝo
+str_mu_Coach_Gen4_Horizon_Regional_Coach                                   :Horizon Regiono Kaleŝo
+str_mu_Coach_Gen4_Horizon_Baggage_Coach                                    :Horizon Bagaĝo Kaleŝo
+str_mu_Coach_Gen5_High_Speed_Coach                                                 :Altrapida Kaleŝo
+str_mu_Coach_Gen5_Talgo_Pendular                                                   :Talgo Pendular
+str_mu_Coach_Gen6_Speedmail_Coach                                                  :Altrapida Poŝto Kaleŝo
 
 #special wagons
-str_mglv_wagon_powered                  :Magnetatrajno Unuo Vagono (Funkciigata)
+str_mglv_Maglev_Wagon_Powered                  :Magnetatrajno Unuo Vagono (Funkciigata)
 
 #Obsolete vehicles
 

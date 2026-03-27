@@ -5,7 +5,7 @@
 #Main grf title and description
 STR_GRF_NAME                    :{TITLE}
 STR_GRF_DESCRIPTION             :{SILVER}2cc Treine van die Wêreld in NML{}{}(c)2ccts{}Lisensie:GPLv2 of hoër.{}Sien readme vir meer inligting.
-STR_GRF_URL             :https://dev.openttdcoop.org/projects/2ccts
+STR_GRF_URL             :https://github.com/nemethviktor/2ccts_revival
 
 #General error messages
 str_used_with_dynamic_engines           :dynamic_engines = waar (stelling in openttd.cfg)
@@ -33,20 +33,20 @@ STR_PARAM_CONCEPT                                               :Konsep voertuie
 STR_PARAM_CONCEPT_DESC                                  :Gebruik konsep voertuie (Die roster is nog nie beskikbaar nie)
 STR_PARAM_REGION_AFRICA                                 :Afrika
 STR_PARAM_REGION_AFRICA_DESC                    :Gebruik voertuie van Afrika
-STR_PARAM_REGION_NORTHAMERICA                   :Noord Amerika
-STR_PARAM_REGION_NORTHAMERICA_DESC              :Gebruik voertuie van Noord Amerika
-STR_PARAM_REGION_SOUTHAMERICA                   :Suid Amerika
-STR_PARAM_REGION_SOUTHAMERICA_DESC              :Gebruik voertuie van Suid Amerika
+STR_PARAM_REGION_NORTH_AMERICA                   :Noord Amerika
+STR_PARAM_REGION_NORTH_AMERICA_DESC              :Gebruik voertuie van Noord Amerika
+STR_PARAM_REGION_SOUTH_AMERICA                   :Suid Amerika
+STR_PARAM_REGION_SOUTH_AMERICA_DESC              :Gebruik voertuie van Suid Amerika
 STR_PARAM_REGION_ASIA                                   :Asië
 STR_PARAM_REGION_ASIA_DESC                              :Gebruik voertuie van Asië
-STR_PARAM_REGION_NORTHERNEUROPE                 :Noord Europa
-STR_PARAM_REGION_NORTHERNEUROPE_DESC    :Gebruik voertuie van Noord Europa
-STR_PARAM_REGION_EASTERNEUROPE                  :Oos Europa
-STR_PARAM_REGION_EASTERNEUROPE_DESC             :Gebruik voertuie van Oos Europa
-STR_PARAM_REGION_SOUTHERNEUROPE                 :Suid Europa
-STR_PARAM_REGION_SOUTHERNEUROPE_DESC    :Gebruik voertuie van Suid Europa
-STR_PARAM_REGION_WESTERNEUROPE                  :Wes Europa
-STR_PARAM_REGION_WESTERNEUROPE_DESC             :Gebruik voertuie van Wes Europa
+STR_PARAM_REGION_NORTHERN_EUROPE                 :Noord Europa
+STR_PARAM_REGION_NORTHERN_EUROPE_DESC    :Gebruik voertuie van Noord Europa
+STR_PARAM_REGION_EASTERN_EUROPE                  :Oos Europa
+STR_PARAM_REGION_EASTERN_EUROPE_DESC             :Gebruik voertuie van Oos Europa
+STR_PARAM_REGION_SOUTHERN_EUROPE                 :Suid Europa
+STR_PARAM_REGION_SOUTHERN_EUROPE_DESC    :Gebruik voertuie van Suid Europa
+STR_PARAM_REGION_WESTERN_EUROPE                  :Wes Europa
+STR_PARAM_REGION_WESTERN_EUROPE_DESC             :Gebruik voertuie van Wes Europa
 STR_PARAM_REGION_OCEANIA                                :Oseanië
 STR_PARAM_REGION_OCEANIA_DESC                   :Gebruik voertuie van Oseanië
 
@@ -277,7 +277,7 @@ str_diesel_Australia_Queensland_Rail_2100                               :Queensl
 str_diesel_Croatia_HZ_2062                                                              :HZ 2062 (Diesel)
 str_diesel_Sweden_SJ_V4                                                                 :SJ V4 (Diesel)
 str_diesel_Canada_CNR_MLW_M420W                                                 :CNR MLW M420W (Diesel)
-str_diesel_USA_Amtrack_SDP_40F                                                  :Amtrak SDP-40F (Diesel)
+str_diesel_USA_Amtrak_SDP_40F                                                  :Amtrak SDP-40F (Diesel)
 str_diesel_China_China_Railways_DFH3                                    :Sjina Spoorwëe DFH3 (Diesel)
 str_diesel_Panama_Panama_Canal_Railway_EMD_F40PH                :Panama Kanaal Spoorwëe EMD F40PH (Diesel)
 str_diesel_Portugal_CP_1900                                                     :CP 1900 (Diesel)
@@ -621,137 +621,137 @@ str_mglv_China_Transrapid       :Sjanghai Transrapid (Maglev)
 str_mglv_Japan_MLX01_901        :JR MLX01-901 (Maglev)
 
 #wagons
-str_wagon_Gen1_Flat_Wagon                               :1ste Gen Plat Wa
-str_wagon_Gen1_Boxcar                                   :1ste Gen Hout Boks Wa
-str_wagon_Gen1_Tanker                                   :1ste Gen Tenkwa
-str_wagon_Gen1_Open_Wagon                               :1ste Gen Hout Oop Wa
-str_wagon_Gen2_Flat_Wagon                               :2de Gen Plat Wa
-str_wagon_Gen2_Boxcar_Type1                             :2de Gen Hout Boks Wa (Tipe 1)
-str_wagon_Gen2_Boxcar_Type2                             :2de Gen Hout Boks Wa (Tipe 2)
-str_wagon_Gen2_Tanker                                   :2de Gen Tenkwa
-str_wagon_Gen2_Open_Wagon                               :2de Gen Hout Oop Wa
-str_wagon_Gen2_Silo                                     :2de Gen Silo
-str_wagon_Gen2_Hopper                                   :2de Gen Hout Laai Bak
-str_wagon_Gen3_Flat_Wagon                               :3de Gen Plat Wa
-str_wagon_Gen3_Boxcar_Type1                     :3de Gen Hout Boks Wa (Tipe 1)
-str_wagon_Gen3_Boxcar_Type2                     :3de Gen Hout Boks Wa (Tipe 2)
-str_wagon_Gen3_Tanker                                   :3de Gen Tenkwa
-str_wagon_Gen3_Open_Wagon                               :3de Gen Oop Wa
-str_wagon_Gen3_Silo_Type1                               :3de Gen Silo (Tipe 1)
-str_wagon_Gen3_Silo_Type2                               :3de Gen Silo (Tipe 2)
-str_wagon_Gen3_Hopper                                   :3de Gen Laai Bak
-str_wagon_Gen4_Flatcar                                  :4de Gen Plat Wa
-str_wagon_Gen4_Heavy_Flatcar                    :4de Gen Swaar Plat Wa
-str_wagon_Gen4_Boxcar_Type1                             :4de Gen Boks Wa (Tipe 1)
-str_wagon_Gen4_Boxcar_Type2                             :4de Gen Bokskar (Tipe 2)
-str_wagon_Gen4_Tanker                                   :4de Gen Tenkwa
-str_wagon_Gen4_Gondola                                  :4de Gen Gondola
-str_wagon_Gen4_Silo_Type1                               :4de Gen Silo (Tipe 1)
-str_wagon_Gen4_Silo_Type2                               :4de Gen Silo (Tipe 2)
-str_wagon_Gen4_Hopper_Type1                             :4de Gen 'Self-discharging Hopper' (Tipe 1)
-str_wagon_Gen4_Hopper_Type2                             :4de Gen 'Self-discharging Hopper' (Tipe 2)
-str_wagon_Gen4_Car_Transporter                  :4de Gen Motorkar Vervoerder
-str_wagon_Gen4_Container_Carrier                :4de Gen Boks Vervoerder
-str_wagon_Gen4_Centerbeam                               :4de Gen 'Centerbeam' Plat Wa
-str_wagon_Gen5_Flatcar                                  :5de Gen Plat Wa
-str_wagon_Gen5_Heavy_Flatcar                    :5de Gen Swaar Plat Wa
-str_wagon_Gen5_Boxcar_Type1                             :5de Gen Bokskar (Tipe 1)
-str_wagon_Gen5_Boxcar_Type2                             :5de Gen Hout Boks Wa (Tipe 2)
-str_wagon_Gen5_Tanker                                   :5de Gen Tenkwa
-str_wagon_Gen5_Gondola                                  :5de Gen Gondola
-str_wagon_Gen5_Silo_Type1                               :5de Gen Silo (Tipe 1)
-str_wagon_Gen5_Silo_Type2                               :5de Gen Silo (Tipe 2)
-str_wagon_Gen5_Hopper_Type1                             :5de Gen 'Self-discharging Hopper' (Tipe 1)
-str_wagon_Gen5_Hopper_Type2                             :5de Gen 'Self-discharging Hopper' (Tipe 2)
-str_wagon_Gen5_Car_Transporter                  :5de Gen Motorkar Vervoerder
-str_wagon_Gen5_Container_Carrier                :5de Gen Boks Vervoerder
-str_wagon_Gen5_Centerbeam                               :5de Gen 'Centerbeam' Plat Wa
-str_wagon_Gen5_Container_Doublestack    :5de Gen Boks 'Doublestack'
-str_wagon_Gen5_Superheavy_Flatcar               :5de Gen Superheavy Plat Wa
+str_mu_Wagon_Gen1_Flat_Wagon                               :1ste Gen Plat Wa
+str_mu_Wagon_Gen1_Boxcar                                   :1ste Gen Hout Boks Wa
+str_mu_Wagon_Gen1_Tanker                                   :1ste Gen Tenkwa
+str_mu_Wagon_Gen1_Open_Wagon                               :1ste Gen Hout Oop Wa
+str_mu_Wagon_Gen2_Flat_Wagon                               :2de Gen Plat Wa
+str_mu_Wagon_Gen2_Boxcar_Type1                             :2de Gen Hout Boks Wa (Tipe 1)
+str_mu_Wagon_Gen2_Boxcar_Type2                             :2de Gen Hout Boks Wa (Tipe 2)
+str_mu_Wagon_Gen2_Tanker                                   :2de Gen Tenkwa
+str_mu_Wagon_Gen2_Open_Wagon                               :2de Gen Hout Oop Wa
+str_mu_Wagon_Gen2_Silo                                     :2de Gen Silo
+str_mu_Wagon_Gen2_Hopper                                   :2de Gen Hout Laai Bak
+str_mu_Wagon_Gen3_Flat_Wagon                               :3de Gen Plat Wa
+str_mu_Wagon_Gen3_Boxcar_Type1                     :3de Gen Hout Boks Wa (Tipe 1)
+str_mu_Wagon_Gen3_Boxcar_Type2                     :3de Gen Hout Boks Wa (Tipe 2)
+str_mu_Wagon_Gen3_Tanker                                   :3de Gen Tenkwa
+str_mu_Wagon_Gen3_Open_Wagon                               :3de Gen Oop Wa
+str_mu_Wagon_Gen3_Silo_Type1                               :3de Gen Silo (Tipe 1)
+str_mu_Wagon_Gen3_Silo_Type2                               :3de Gen Silo (Tipe 2)
+str_mu_Wagon_Gen3_Hopper                                   :3de Gen Laai Bak
+str_mu_Wagon_Gen4_Flatcar                                  :4de Gen Plat Wa
+str_mu_Wagon_Gen4_Heavy_Flatcar                    :4de Gen Swaar Plat Wa
+str_mu_Wagon_Gen4_Boxcar_Type1                             :4de Gen Boks Wa (Tipe 1)
+str_mu_Wagon_Gen4_Boxcar_Type2                             :4de Gen Bokskar (Tipe 2)
+str_mu_Wagon_Gen4_Tanker                                   :4de Gen Tenkwa
+str_mu_Wagon_Gen4_Gondola                                  :4de Gen Gondola
+str_mu_Wagon_Gen4_Silo_Type1                               :4de Gen Silo (Tipe 1)
+str_mu_Wagon_Gen4_Silo_Type2                               :4de Gen Silo (Tipe 2)
+str_mu_Wagon_Gen4_Hopper_Type1                             :4de Gen 'Self-discharging Hopper' (Tipe 1)
+str_mu_Wagon_Gen4_Hopper_Type2                             :4de Gen 'Self-discharging Hopper' (Tipe 2)
+str_mu_Wagon_Gen4_Car_Transporter                  :4de Gen Motorkar Vervoerder
+str_mu_Wagon_Gen4_Container_Carrier                :4de Gen Boks Vervoerder
+str_mu_Wagon_Gen4_Centerbeam                               :4de Gen 'Centerbeam' Plat Wa
+str_mu_Wagon_Gen5_Flatcar                                  :5de Gen Plat Wa
+str_mu_Wagon_Gen5_Heavy_Flatcar                    :5de Gen Swaar Plat Wa
+str_mu_Wagon_Gen5_Boxcar_Type1                             :5de Gen Bokskar (Tipe 1)
+str_mu_Wagon_Gen5_Boxcar_Type2                             :5de Gen Hout Boks Wa (Tipe 2)
+str_mu_Wagon_Gen5_Tanker                                   :5de Gen Tenkwa
+str_mu_Wagon_Gen5_Gondola                                  :5de Gen Gondola
+str_mu_Wagon_Gen5_Silo_Type1                               :5de Gen Silo (Tipe 1)
+str_mu_Wagon_Gen5_Silo_Type2                               :5de Gen Silo (Tipe 2)
+str_mu_Wagon_Gen5_Hopper_Type1                             :5de Gen 'Self-discharging Hopper' (Tipe 1)
+str_mu_Wagon_Gen5_Hopper_Type2                             :5de Gen 'Self-discharging Hopper' (Tipe 2)
+str_mu_Wagon_Gen5_Car_Transporter                  :5de Gen Motorkar Vervoerder
+str_mu_Wagon_Gen5_Container_Carrier                :5de Gen Boks Vervoerder
+str_mu_Wagon_Gen5_Centerbeam                               :5de Gen 'Centerbeam' Plat Wa
+str_mu_Wagon_Gen5_Container_Doublestack    :5de Gen Boks 'Doublestack'
+str_mu_Wagon_Gen5_Superheavy_Flatcar               :5de Gen Superheavy Plat Wa
 
-str_wagon_Service_Car_Type1                             :Diens Kar (Tipe 1)
-str_wagon_Service_Car_Type2                             :Diens Kar (Tipe 2)
+str_mu_Wagon_Service_Car_Type1                             :Diens Kar (Tipe 1)
+str_mu_Wagon_Service_Car_Type2                             :Diens Kar (Tipe 2)
 
 #coaches
-str_coach_Gen1_Wooden_2_axle_Compartment_Coach                  :Hout 2-as Kompartement Rytuig
-str_coach_Gen1_Wooden_2_axle_Regional_Coach                     :Hout 2-as Plaaslike Rytuig
-str_coach_Gen1_Wooden_2_axle_Mail_Coach                                 :Hout 2-as Pos Rytuig
-str_coach_Gen1_Clerestory_Compartment_Coach                     :Clerestory Kompartement Rytuig
-str_coach_Gen1_Clerestory_Regional_Coach                                :Clerestory Plaaslike Rytuig
-str_coach_Gen1_Clerestory_Mail_Coach                                    :Clerestory Pos Rytuig
-str_coach_Gen1_Wooden_3_axle_Compartment_Coach                  :Hout 3-as Kompartement Rytuig
-str_coach_Gen1_Wooden_3_axle_Regional_Coach                     :Hout 3-as Plaaslike Rytuig
-str_coach_Gen1_Wooden_3_axle_Mail_Coach                                 :Hout 3-as Pos Rytuig
-str_coach_Gen2_Heavyweight_Intercity_Coach                              :Swaargewig Interstad Rytuig
-str_coach_Gen2_Heavyweight_Mail_Coach                                   :Swaargewig Pos Rytuig
-str_coach_Gen2_Steel_Intercity_Coach                                    :Staal Interstad Rytuig
-str_coach_Gen2_Steel_Compartment_Coach                                  :Staal Kompartement Rytuig
-str_coach_Gen2_Steel_Regional_Coach                                     :Staal Plaaslike Rytuig
-str_coach_Gen2_Steel_Mail_Coach                                                 :Staal Pos Rytuig
-str_coach_Gen2_Steel_2_axle_Compartment_Coach                   :Staal 2-as Kompartement Rytuig
-str_coach_Gen2_Steel_2_axle_Regional_Coach                              :Staal 2-as Plaaslike Rytuig
-str_coach_Gen2_Steel_2_axle_Mail_Coach                                  :Staal 2-as Pos Rytuig
-str_coach_Gen2_Steel_3_axle_Compartment_Coach                   :Staal 3-as Kompartement Rytuig
-str_coach_Gen2_Steel_3_axle_Regional_Coach                              :Staal 3-as Plaaslike Rytuig
-str_coach_Gen2_Steel_3_axle_Mail_Coach                                  :Staal 3-as Pos Rytuig
-str_coach_Gen3_Steel_Lightweight_Intercity_Coach                :Staal Liggewig Interstad Rytuig
-str_coach_Gen3_Steel_Lightweight_Regional_Coach                 :Staal Liggewig Plaaslike Rytuig
-str_coach_Gen3_Steel_Lightweight_Mail_Coach                     :Staal Liggewig Pos Rytuig
-str_coach_Gen3_Aluminium_Lightweight_Intercity_Coach    :Aluminium Liggewig Interstad Rytuig
-str_coach_Gen3_Aluminium_Lightweight_Regional_Coach     :Aluminium Liggewig Plaaslike Rytuig
-str_coach_Gen3_Aluminium_Lightweight_Mail_Coach                 :Aluminium Liggewig Pos Rytuig
-str_coach_Gen3_Gallery_Car                                                              :Galery Wa
-str_coach_Gen3_Mk1_Intercity_Coach                                              :Mk1 Interstad Rytuig
-str_coach_Gen3_Mk1_Regional_Coach                                               :Mk1 Plaaslike Rytuig
-str_coach_Gen3_Mk1_Mail_Coach                                                   :Mk1 Pos Rytuig
-str_coach_Gen3_UIC_X_Intercity_Coach                                    :UIC-X Interstad Rytuig
-str_coach_Gen3_TEE_Intercity_Coach                                              :TEE Interstad Rytuig
-str_coach_Gen3_UIC_X_Regional_Coach                                     :UIC-X Plaaslike Rytuig
-str_coach_Gen3_Umbauwagen_Local_Coach                                   :'Umbauwagen' Plaaslike Rytuig
-str_coach_Gen3_Doppelstockwagen_Local_Coach                     :'Doppelstockwagen' Plaaslike Rytuig
-str_coach_Gen3_UIC_X_Mail_Coach                                                 :UIC-X Pos Rytuig
-str_coach_Gen3_Indian_Intercity_Coach                                   :Indiese Interstad Rytuig
-str_coach_Gen3_Indian_Local_Coach                                               :Indiese Plaaslike Rytuig
-str_coach_Gen3_Indian_Regional_Coach                                    :Indiese Plaaslike Rytuig
-str_coach_Gen3_Indian_Mail_Coach                                                :Indiese Pos Rytuig
-str_coach_Gen4_Eurofima_Intercity_Coach                                 :Eurofima Rytuig
-str_coach_Gen4_InterRegio_Coach                                                 :InterRegio Rytuig
-str_coach_Gen4_Silberling_Commuter_Coach                                :'Silberling' Pendelaar Rytuig
-str_coach_Gen4_Eurofima_Mail_Coach                                              :Eurofima Pos Rytuig
-str_coach_Gen4_Double_Decker_Coach                                              :Double Decker Rytuig
-str_coach_Gen4_Russian_Intercity_Coach                                  :Russiese Interstad Rytuig
-str_coach_Gen4_Russian_Regional_Coach                                   :Russiese Plaaslike Rytuig
-str_coach_Gen4_Russian_Mail_Coach                                               :Russiese Pos Rytuig
-str_coach_Gen4_Superliner_Coach                                                 :Superliner Rytuig
-str_coach_Gen4_Superliner_California                                    :Superliner California
-str_coach_Gen4_Amfleet_Regional_Coach                                   :Amfleet Plaaslike Rytuig
-str_coach_Gen4_Amfleet_Intercity_Coach                                  :Amfleet Interstad Rytuig
-str_coach_Gen4_Comet_Commuter_Coach                                     :Comet Pendelaar Rytuig
-str_coach_Gen4_Horizon_Regional_Coach                                   :Horizon Plaaslike Rytuig
-str_coach_Gen4_Horizon_Baggage_Coach                                    :Horizon Baggage Rytuig
-str_coach_Gen4_Bombardier_Bi_level                                              :Bombardier Bi-level
-str_coach_Gen5_High_Speed_Coach                                                 :Hoëspoed Rytuig
-str_coach_Gen5_Modern_Regional_Coach                                    :Moderne Plaaslike Rytuig
-str_coach_Gen5_Modern_Commuter_Coach                                    :Moderne Pendelaar Rytuig
-str_coach_Gen5_Modern_Double_Decker_Coach                               :Moderne Dubbeldekker Rytuig
-str_coach_Gen5_High_Speed_Double_Decker_IC2000                  :Hoëspoed Dubbeldekker (IC2000)
-str_coach_Gen5_High_Speed_Mail_Coach                                    :Snelpos Rytuig
-str_coach_Gen5_Talgo_Pendular                                                   :Talgo Pendular
-str_coach_Gen5_Talgo_Pendular_Mail                                              :Talgo Pendular Pos
-str_coach_Gen6_Grand_Voyager_Coach                                              :Grand Voyager Rytuig
-str_coach_Gen6_Grand_Regio_Coach                                                :Grand Regio Rytuig
-str_coach_Gen6_Metropolis_Coach                                                 :Metropolis Rytuig
-str_coach_Gen6_Speedmail_Coach                                                  :Spoedpos Rytuig
-str_coach_Gen6_Super_Regio_Coach                                                :Super Regio Rytuig
-str_coach_Gen6_Super_Voyager_Coach                                              :Super Voyager Rytuig
+str_mu_Coach_Gen1_Wooden_2_axle_Compartment_Coach                  :Hout 2-as Kompartement Rytuig
+str_mu_Coach_Gen1_Wooden_2_axle_Regional_Coach                     :Hout 2-as Plaaslike Rytuig
+str_mu_Coach_Gen1_Wooden_2_axle_Mail_Coach                                 :Hout 2-as Pos Rytuig
+str_mu_Coach_Gen1_Clerestory_Compartment_Coach                     :Clerestory Kompartement Rytuig
+str_mu_Coach_Gen1_Clerestory_Regional_Coach                                :Clerestory Plaaslike Rytuig
+str_mu_Coach_Gen1_Clerestory_Mail_Coach                                    :Clerestory Pos Rytuig
+str_mu_Coach_Gen1_Wooden_3_axle_Compartment_Coach                  :Hout 3-as Kompartement Rytuig
+str_mu_Coach_Gen1_Wooden_3_axle_Regional_Coach                     :Hout 3-as Plaaslike Rytuig
+str_mu_Coach_Gen1_Wooden_3_axle_Mail_Coach                                 :Hout 3-as Pos Rytuig
+str_mu_Coach_Gen2_Heavyweight_Intercity_Coach                              :Swaargewig Interstad Rytuig
+str_mu_Coach_Gen2_Heavyweight_Mail_Coach                                   :Swaargewig Pos Rytuig
+str_mu_Coach_Gen2_Steel_Intercity_Coach                                    :Staal Interstad Rytuig
+str_mu_Coach_Gen2_Steel_Compartment_Coach                                  :Staal Kompartement Rytuig
+str_mu_Coach_Gen2_Steel_Regional_Coach                                     :Staal Plaaslike Rytuig
+str_mu_Coach_Gen2_Steel_Mail_Coach                                                 :Staal Pos Rytuig
+str_mu_Coach_Gen2_Steel_2_axle_Compartment_Coach                   :Staal 2-as Kompartement Rytuig
+str_mu_Coach_Gen2_Steel_2_axle_Regional_Coach                              :Staal 2-as Plaaslike Rytuig
+str_mu_Coach_Gen2_Steel_2_axle_Mail_Coach                                  :Staal 2-as Pos Rytuig
+str_mu_Coach_Gen2_Steel_3_axle_Compartment_Coach                   :Staal 3-as Kompartement Rytuig
+str_mu_Coach_Gen2_Steel_3_axle_Regional_Coach                              :Staal 3-as Plaaslike Rytuig
+str_mu_Coach_Gen2_Steel_3_axle_Mail_Coach                                  :Staal 3-as Pos Rytuig
+str_mu_Coach_Gen3_Steel_Lightweight_Intercity_Coach                :Staal Liggewig Interstad Rytuig
+str_mu_Coach_Gen3_Steel_Lightweight_Regional_Coach                 :Staal Liggewig Plaaslike Rytuig
+str_mu_Coach_Gen3_Steel_Lightweight_Mail_Coach                     :Staal Liggewig Pos Rytuig
+str_mu_Coach_Gen3_Aluminium_Lightweight_Intercity_Coach    :Aluminium Liggewig Interstad Rytuig
+str_mu_Coach_Gen3_Aluminium_Lightweight_Regional_Coach     :Aluminium Liggewig Plaaslike Rytuig
+str_mu_Coach_Gen3_Aluminium_Lightweight_Mail_Coach                 :Aluminium Liggewig Pos Rytuig
+str_mu_Coach_Gen3_Gallery_Car                                                              :Galery Wa
+str_mu_Coach_Gen3_Mk1_Intercity_Coach                                              :Mk1 Interstad Rytuig
+str_mu_Coach_Gen3_Mk1_Regional_Coach                                               :Mk1 Plaaslike Rytuig
+str_mu_Coach_Gen3_Mk1_Mail_Coach                                                   :Mk1 Pos Rytuig
+str_mu_Coach_Gen3_UIC_X_Intercity_Coach                                    :UIC-X Interstad Rytuig
+str_mu_Coach_Gen3_TEE_Intercity_Coach                                              :TEE Interstad Rytuig
+str_mu_Coach_Gen3_UIC_X_Regional_Coach                                     :UIC-X Plaaslike Rytuig
+str_mu_Coach_Gen3_Umbauwagen_Local_Coach                                   :'Umbauwagen' Plaaslike Rytuig
+str_mu_Coach_Gen3_Doppelstockwagen_Local_Coach                     :'Doppelstockwagen' Plaaslike Rytuig
+str_mu_Coach_Gen3_UIC_X_Mail_Coach                                                 :UIC-X Pos Rytuig
+str_mu_Coach_Gen3_Indian_Intercity_Coach                                   :Indiese Interstad Rytuig
+str_mu_Coach_Gen3_Indian_Local_Coach                                               :Indiese Plaaslike Rytuig
+str_mu_Coach_Gen3_Indian_Regional_Coach                                    :Indiese Plaaslike Rytuig
+str_mu_Coach_Gen3_Indian_Mail_Coach                                                :Indiese Pos Rytuig
+str_mu_Coach_Gen4_Eurofima_Intercity_Coach                                 :Eurofima Rytuig
+str_mu_Coach_Gen4_InterRegio_Coach                                                 :InterRegio Rytuig
+str_mu_Coach_Gen4_Silberling_Commuter_Coach                                :'Silberling' Pendelaar Rytuig
+str_mu_Coach_Gen4_Eurofima_Mail_Coach                                              :Eurofima Pos Rytuig
+str_mu_Coach_Gen4_Double_Decker_Coach                                              :Double Decker Rytuig
+str_mu_Coach_Gen4_Russian_Intercity_Coach                                  :Russiese Interstad Rytuig
+str_mu_Coach_Gen4_Russian_Regional_Coach                                   :Russiese Plaaslike Rytuig
+str_mu_Coach_Gen4_Russian_Mail_Coach                                               :Russiese Pos Rytuig
+str_mu_Coach_Gen4_Superliner_Coach                                                 :Superliner Rytuig
+str_mu_Coach_Gen4_Superliner_California                                    :Superliner California
+str_mu_Coach_Gen4_Amfleet_Regional_Coach                                   :Amfleet Plaaslike Rytuig
+str_mu_Coach_Gen4_Amfleet_Intercity_Coach                                  :Amfleet Interstad Rytuig
+str_mu_Coach_Gen4_Comet_Commuter_Coach                                     :Comet Pendelaar Rytuig
+str_mu_Coach_Gen4_Horizon_Regional_Coach                                   :Horizon Plaaslike Rytuig
+str_mu_Coach_Gen4_Horizon_Baggage_Coach                                    :Horizon Baggage Rytuig
+str_mu_Coach_Gen4_Bombardier_Bi_level                                              :Bombardier Bi-level
+str_mu_Coach_Gen5_High_Speed_Coach                                                 :Hoëspoed Rytuig
+str_mu_Coach_Gen5_Modern_Regional_Coach                                    :Moderne Plaaslike Rytuig
+str_mu_Coach_Gen5_Modern_Commuter_Coach                                    :Moderne Pendelaar Rytuig
+str_mu_Coach_Gen5_Modern_Double_Decker_Coach                               :Moderne Dubbeldekker Rytuig
+str_mu_Coach_Gen5_High_Speed_Double_Decker_IC2000                  :Hoëspoed Dubbeldekker (IC2000)
+str_mu_Coach_Gen5_High_Speed_Mail_Coach                                    :Snelpos Rytuig
+str_mu_Coach_Gen5_Talgo_Pendular                                                   :Talgo Pendular
+str_mu_Coach_Gen5_Talgo_Pendular_Mail                                              :Talgo Pendular Pos
+str_mu_Coach_Gen6_Grand_Voyager_Coach                                              :Grand Voyager Rytuig
+str_mu_Coach_Gen6_Grand_Regio_Coach                                                :Grand Regio Rytuig
+str_mu_Coach_Gen6_Metropolis_Coach                                                 :Metropolis Rytuig
+str_mu_Coach_Gen6_Speedmail_Coach                                                  :Spoedpos Rytuig
+str_mu_Coach_Gen6_Super_Regio_Coach                                                :Super Regio Rytuig
+str_mu_Coach_Gen6_Super_Voyager_Coach                                              :Super Voyager Rytuig
 
 #special wagons
-str_mu_wagon_unpowered                  :Veelvoudige-eenheid Wa(Onaangedrewe)
-str_mtro_wagon_unpowered                :Metro-eenheid Wa(Onaangedrewe)
-str_mglv_wagon_unpowered                :Maglev-eenheid Wa(Onaangedrewe)
-str_mu_wagon_powered                    :Veelvoudige-eenheid Wa(Aangedrewe)
-str_mtro_wagon_powered                  :Metro-eenheid Wa(Aangedrewe)
-str_mglv_wagon_powered                  :Maglev-eenheid Wa(Aangedrewe)
+str_mu_MU_Wagon_Unpowered                  :Veelvoudige-eenheid Wa(Onaangedrewe)
+str_mtro_Metro_Wagon_Unpowered                :Metro-eenheid Wa(Onaangedrewe)
+str_mglv_Maglev_Wagon_Unpowered                :Maglev-eenheid Wa(Onaangedrewe)
+str_mu_MU_Wagon_Powered                    :Veelvoudige-eenheid Wa(Aangedrewe)
+str_mtro_Metro_Wagon_Powered                  :Metro-eenheid Wa(Aangedrewe)
+str_mglv_Maglev_Wagon_Powered                  :Maglev-eenheid Wa(Aangedrewe)
 
 #Obsolete vehicles
 

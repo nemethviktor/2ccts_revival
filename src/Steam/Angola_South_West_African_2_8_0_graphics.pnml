@@ -63,6 +63,6 @@ switch(FEAT_TRAINS, SELF, switch_steam_Angola_South_West_African_2_8_0_articulat
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

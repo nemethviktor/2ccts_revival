@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_Argentina_MF_GM_EMD_J16CW_AC, "gfx/Diesel/Argentina_M
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

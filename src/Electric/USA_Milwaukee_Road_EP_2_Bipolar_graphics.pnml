@@ -52,6 +52,6 @@ switch(FEAT_TRAINS, SELF, switch_electric_USA_Milwaukee_Road_EP_2_Bipolar_articu
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

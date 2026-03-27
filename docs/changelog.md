@@ -1,5 +1,26 @@
 ### 2cc TrainsInNML (Revival) changelog
 
+**3.3-alpha2 [20260xxx]**
+- CODE CHANGES:
+	- Automated English Language file creation
+- VEHICLES CHANGES:
+	- Chile_EFE_XTrapolis_100 -> Modified to 1500V voltage, was None, incorrectly.
+	- Corrected a number of wrong string values for voltage categorisation (ref above automation)
+
+
+**3.3-alpha1 [20260327]**
+- CODE CHANGES:
+	- Added a py script to export all vehicle info on `gcc` running. Moved away from `make`.
+	- Separated out the various railtypes and voltages. This is very "beta" at the moment.
+	- Did some superficial testing against popular tracktype newgrfs, again, needs testing.
+	- ~~Automated the 'property' file creation via Excel/Python~~
+	- Automated the 'item' file creation and integrated the 'property' details into that.
+		- Automated the puchase costs and running costs calcs. I've done several spot checks and apart from rounding differences, they all checked out.
+- VEHICLES CHANGES:
+	- Reiterating from above, separated out the various railtypes and voltages.
+	- Turned the visual for DMUs to _DIESEL_ (was _DISABLE_)
+
+
 **3.3-alpha0 [20260316]**
 - CODE CHANGES:
 	- Cloned to new GitHub location
@@ -7,9 +28,9 @@
 	- Fixed some tags being incorrectly named as reported on the [OTTD Forums in 2020](https://www.tt-forums.net/viewtopic.php?p=1231342#p1231342)
 	- Fixed template_2cc_L12 temple 2nd/4th sprite being off as reported on the [OTTD Forums in 2020](https://www.tt-forums.net/viewtopic.php?p=1239539#p1239539)
 - VEHICLES CHANGES:
-	- Added Cargo Gen6 Wagons (using Gen5 graphics) - **NOCONCEPT**
+	- Added Cargo Gen6 Wagons (using Gen5 graphics) - **NO_CONCEPT**
 		- These are a little faster and about 10% more capacity than G5s and are introduced around 2005-2020
-	- Added Single Unit Maglev (_DB 182 ES64UM 'Mutus' (Maglev)_) + Cargo Gen7M Wagons - **ISCONCEPT**
+	- Added Single Unit Maglev (_DB 182 ES64UM 'Mutus' (Maglev)_) + Cargo Gen7M Wagons - **IS_CONCEPT**
 		- This is using the Taurus graphics without the pantograph. Properties otherwise identical to Taurus.
 	- Changed Steel_3_axle_Compartment_Coach INTRODUCTION_YEAR to 1920 and MODEL_LIFE to 60 ref [OTTD Forums post](https://www.tt-forums.net/viewtopic.php?p=1231507#p1231507)
 - OTHER:

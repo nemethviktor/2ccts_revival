@@ -24,6 +24,6 @@ spriteset(spriteset_electric_India_Indian_Railways_WAP_4, "gfx/Electric/India_In
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

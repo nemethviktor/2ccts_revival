@@ -6,7 +6,7 @@
 #Main grf title and description
 STR_GRF_NAME                    :{TITLE}
 STR_GRF_DESCRIPTION             :{SILVER}2cc Vozovi sveta u NML-u{}{}(c)2ccts{}Licenca:GPLv2 ili viša.{}Pogledajte readme za detalje.
-STR_GRF_URL             :https://dev.openttdcoop.org/projects/2ccts
+STR_GRF_URL             :https://github.com/nemethviktor/2ccts_revival
 
 #General error messages
 str_used_with_dynamic_engines           :dynamic_engines = true (postavka u openttd.cfg)
@@ -34,20 +34,20 @@ STR_PARAM_CONCEPT                                               :Konceptualna vo
 STR_PARAM_CONCEPT_DESC                                  :Koristite konceptualna vozila (ovaj parametar trenutno nije u funkciji)
 STR_PARAM_REGION_AFRICA                                 :Afrika
 STR_PARAM_REGION_AFRICA_DESC                    :Koristite vozila iz Afrike
-STR_PARAM_REGION_NORTHAMERICA                   :Severna Amerika
-STR_PARAM_REGION_NORTHAMERICA_DESC              :Koristite vozila iz severne Amerike
-STR_PARAM_REGION_SOUTHAMERICA                   :Južna Amerika
-STR_PARAM_REGION_SOUTHAMERICA_DESC              :Koristite vozila iz južne Amerike
+STR_PARAM_REGION_NORTH_AMERICA                   :Severna Amerika
+STR_PARAM_REGION_NORTH_AMERICA_DESC              :Koristite vozila iz severne Amerike
+STR_PARAM_REGION_SOUTH_AMERICA                   :Južna Amerika
+STR_PARAM_REGION_SOUTH_AMERICA_DESC              :Koristite vozila iz južne Amerike
 STR_PARAM_REGION_ASIA                                   :Azija
 STR_PARAM_REGION_ASIA_DESC                              :Koristite vozila iz Azije
-STR_PARAM_REGION_NORTHERNEUROPE                 :Severna Evropa
-STR_PARAM_REGION_NORTHERNEUROPE_DESC    :Koristite vozila iz severne Evrope
-STR_PARAM_REGION_EASTERNEUROPE                  :Istočna evropa
-STR_PARAM_REGION_EASTERNEUROPE_DESC             :Koristite vozila iz istočne Evrope
-STR_PARAM_REGION_SOUTHERNEUROPE                 :Južna evropa
-STR_PARAM_REGION_SOUTHERNEUROPE_DESC    :Koristite vozila iz južne Evrope
-STR_PARAM_REGION_WESTERNEUROPE                  :Zapadna Evropa
-STR_PARAM_REGION_WESTERNEUROPE_DESC             :Koristite vozila iz zapadne Evrope
+STR_PARAM_REGION_NORTHERN_EUROPE                 :Severna Evropa
+STR_PARAM_REGION_NORTHERN_EUROPE_DESC    :Koristite vozila iz severne Evrope
+STR_PARAM_REGION_EASTERN_EUROPE                  :Istočna evropa
+STR_PARAM_REGION_EASTERN_EUROPE_DESC             :Koristite vozila iz istočne Evrope
+STR_PARAM_REGION_SOUTHERN_EUROPE                 :Južna evropa
+STR_PARAM_REGION_SOUTHERN_EUROPE_DESC    :Koristite vozila iz južne Evrope
+STR_PARAM_REGION_WESTERN_EUROPE                  :Zapadna Evropa
+STR_PARAM_REGION_WESTERN_EUROPE_DESC             :Koristite vozila iz zapadne Evrope
 STR_PARAM_REGION_OCEANIA                                :Okeanija
 STR_PARAM_REGION_OCEANIA_DESC                   :Koristite vozila iz Okeanije
 
@@ -293,7 +293,7 @@ str_diesel_Australia_Queensland_Rail_2100                               :Queensl
 str_diesel_Croatia_HZ_2062                                                              :HZ 2062 (dizel lokomotiva)
 str_diesel_Sweden_SJ_V4                                                                 :SJ V4 (dizel lokomotiva)
 str_diesel_Canada_CNR_MLW_M420W                                                 :CNR MLW M420W (dizel lokomotiva)
-str_diesel_USA_Amtrack_SDP_40F                                                  :Amtrak SDP-40F (dizel lokomotiva)
+str_diesel_USA_Amtrak_SDP_40F                                                  :Amtrak SDP-40F (dizel lokomotiva)
 str_diesel_China_China_Railways_DFH3                                    :China Railways DFH3 (dizel lokomotiva)
 str_diesel_Panama_Panama_Canal_Railway_EMD_F40PH                :Panama Canal Railway EMD F40PH (dizel lokomotiva)
 str_diesel_Portugal_CP_1900                                                     :CP 1900 (dizel lokomotiva)
@@ -701,138 +701,138 @@ str_mglv_China_Transrapid       :Shanghai Transrapid (maglev)
 str_mglv_Japan_MLX01_901        :JR MLX01-901 (maglev)
 
 #wagons
-str_wagon_Gen1_Flat_Wagon                               :Otvoreni vagon 1. generacije
-str_wagon_Gen1_Boxcar                                   :Drveni zatvoreni vagon 1. generacije
-str_wagon_Gen1_Tanker                                   :Vagon cisterna 1. generacije
-str_wagon_Gen1_Open_Wagon                               :Drveni otvoreni vagon 1. generacije
-str_wagon_Gen2_Flat_Wagon                               :Otvoreni vagon 2. generacije
-str_wagon_Gen2_Boxcar_Type1                             :Drveni zatvoreni vagon 2. generacije (tip 1)
-str_wagon_Gen2_Boxcar_Type2                             :Drveni zatvoreni vagon 2. generacije (tip 2)
-str_wagon_Gen2_Tanker                                   :Vagon cisterna 2. generacije
-str_wagon_Gen2_Open_Wagon                               :Drveni otvoreni vagon 2. generacije
-str_wagon_Gen2_Silo                                     :Silos 4. generacije
-str_wagon_Gen2_Hopper                                   :Drveni vagon za rasuti teret 2. generacije
-str_wagon_Gen3_Flat_Wagon                               :Otvoreni vagon 3. generacije
-str_wagon_Gen3_Boxcar_Type1                     :Drveni zatvoreni vagon 3. generacije (tip 1)
-str_wagon_Gen3_Boxcar_Type2                     :Drveni zatvoreni vagon 3. generacije (tip 2)
-str_wagon_Gen3_Tanker                                   :Vagon cisterna 3. generacije
-str_wagon_Gen3_Open_Wagon                               :Otvoreni vagon 3. generacije
-str_wagon_Gen3_Silo_Type1                               :Silos 3. generacije (tip 1)
-str_wagon_Gen3_Silo_Type2                               :Silos 3. generacije (tip 2)
-str_wagon_Gen3_Hopper                                   :Samoistovarajući vagon za rasuti teret 3. generacije
-str_wagon_Gen4_Flatcar                                  :Otvoreni teretni vagon 4. generacije
-str_wagon_Gen4_Heavy_Flatcar                    :Teški otvoreni teretni vagon 4. generacije
-str_wagon_Gen4_Boxcar_Type1                             :Zatvoreni vagon 4. generacije  (tip 1)
-str_wagon_Gen4_Boxcar_Type2                             :Zatvoreni vagon 4. generacije (tip 2)
-str_wagon_Gen4_Tanker                                   :Vagon cisterna 4. generacije
-str_wagon_Gen4_Gondola                                  :Vagon-gondola 4. generacije
-str_wagon_Gen4_Silo_Type1                               :Silos 4. generacije (tip 1)
-str_wagon_Gen4_Silo_Type2                               :Silos 4. generacije (tip 2)
-str_wagon_Gen4_Hopper_Type1                             :Samoistovarajući vagon za rasuti teret 4. generacije (tip 1)
-str_wagon_Gen4_Hopper_Type2                             :Samoistovarajući vagon za rasuti teret 4. generacije (tip 2)
-str_wagon_Gen4_Car_Transporter                  :Vagon za prevoz automobila 4. generacije
-str_wagon_Gen4_Container_Carrier                :Vagon za kontejnere 4. generacije
-str_wagon_Gen4_Centerbeam                               :Teški otvoreni teretni vagon sa centralnom pregradom
-str_wagon_Gen5_Flatcar                                  :Otvoreni teretni vagon 5. generacije
-str_wagon_Gen5_Heavy_Flatcar                    :Teški otvoreni teretni vagon 5. generacije
-str_wagon_Gen5_Boxcar_Type1                             :Zatvoreni vagon 5. generacije (tip 1)
-str_wagon_Gen5_Boxcar_Type2                             :Zatvoreni vagon 5. generacije (tip 2)
-str_wagon_Gen5_Tanker                                   :Vagon cisterna 5. generacije
-str_wagon_Gen5_Gondola                                  :Vagon-gondola 5. generacije
-str_wagon_Gen5_Silo_Type1                               :Silos 5. generacije (tip 1)
-str_wagon_Gen5_Silo_Type2                               :Silos 5. generacije (tip 2)
-str_wagon_Gen5_Hopper_Type1                             :Samoistovarajući vagon za rasuti teret 5. generacije (tip 1)
-str_wagon_Gen5_Hopper_Type2                             :Samoistovarajući vagon za rasuti teret 5. generacije (tip 2)
-str_wagon_Gen5_Car_Transporter                  :Vagon za prevoz automobila 5. generacije
-str_wagon_Gen5_Container_Carrier                :Vagon za kontejnere 5. generacije
-str_wagon_Gen5_Centerbeam                               :Teški otvoreni teretni vagon sa centralnom pregradom 5. generacije
-str_wagon_Gen5_Container_Doublestack    :Vagon za kontejnere na kat 5. generacije
-str_wagon_Gen5_Superheavy_Flatcar               :Super teški otvoreni teretni vagon 5. generacije
+str_mu_Wagon_Gen1_Flat_Wagon                               :Otvoreni vagon 1. generacije
+str_mu_Wagon_Gen1_Boxcar                                   :Drveni zatvoreni vagon 1. generacije
+str_mu_Wagon_Gen1_Tanker                                   :Vagon cisterna 1. generacije
+str_mu_Wagon_Gen1_Open_Wagon                               :Drveni otvoreni vagon 1. generacije
+str_mu_Wagon_Gen2_Flat_Wagon                               :Otvoreni vagon 2. generacije
+str_mu_Wagon_Gen2_Boxcar_Type1                             :Drveni zatvoreni vagon 2. generacije (tip 1)
+str_mu_Wagon_Gen2_Boxcar_Type2                             :Drveni zatvoreni vagon 2. generacije (tip 2)
+str_mu_Wagon_Gen2_Tanker                                   :Vagon cisterna 2. generacije
+str_mu_Wagon_Gen2_Open_Wagon                               :Drveni otvoreni vagon 2. generacije
+str_mu_Wagon_Gen2_Silo                                     :Silos 4. generacije
+str_mu_Wagon_Gen2_Hopper                                   :Drveni vagon za rasuti teret 2. generacije
+str_mu_Wagon_Gen3_Flat_Wagon                               :Otvoreni vagon 3. generacije
+str_mu_Wagon_Gen3_Boxcar_Type1                     :Drveni zatvoreni vagon 3. generacije (tip 1)
+str_mu_Wagon_Gen3_Boxcar_Type2                     :Drveni zatvoreni vagon 3. generacije (tip 2)
+str_mu_Wagon_Gen3_Tanker                                   :Vagon cisterna 3. generacije
+str_mu_Wagon_Gen3_Open_Wagon                               :Otvoreni vagon 3. generacije
+str_mu_Wagon_Gen3_Silo_Type1                               :Silos 3. generacije (tip 1)
+str_mu_Wagon_Gen3_Silo_Type2                               :Silos 3. generacije (tip 2)
+str_mu_Wagon_Gen3_Hopper                                   :Samoistovarajući vagon za rasuti teret 3. generacije
+str_mu_Wagon_Gen4_Flatcar                                  :Otvoreni teretni vagon 4. generacije
+str_mu_Wagon_Gen4_Heavy_Flatcar                    :Teški otvoreni teretni vagon 4. generacije
+str_mu_Wagon_Gen4_Boxcar_Type1                             :Zatvoreni vagon 4. generacije  (tip 1)
+str_mu_Wagon_Gen4_Boxcar_Type2                             :Zatvoreni vagon 4. generacije (tip 2)
+str_mu_Wagon_Gen4_Tanker                                   :Vagon cisterna 4. generacije
+str_mu_Wagon_Gen4_Gondola                                  :Vagon-gondola 4. generacije
+str_mu_Wagon_Gen4_Silo_Type1                               :Silos 4. generacije (tip 1)
+str_mu_Wagon_Gen4_Silo_Type2                               :Silos 4. generacije (tip 2)
+str_mu_Wagon_Gen4_Hopper_Type1                             :Samoistovarajući vagon za rasuti teret 4. generacije (tip 1)
+str_mu_Wagon_Gen4_Hopper_Type2                             :Samoistovarajući vagon za rasuti teret 4. generacije (tip 2)
+str_mu_Wagon_Gen4_Car_Transporter                  :Vagon za prevoz automobila 4. generacije
+str_mu_Wagon_Gen4_Container_Carrier                :Vagon za kontejnere 4. generacije
+str_mu_Wagon_Gen4_Centerbeam                               :Teški otvoreni teretni vagon sa centralnom pregradom
+str_mu_Wagon_Gen5_Flatcar                                  :Otvoreni teretni vagon 5. generacije
+str_mu_Wagon_Gen5_Heavy_Flatcar                    :Teški otvoreni teretni vagon 5. generacije
+str_mu_Wagon_Gen5_Boxcar_Type1                             :Zatvoreni vagon 5. generacije (tip 1)
+str_mu_Wagon_Gen5_Boxcar_Type2                             :Zatvoreni vagon 5. generacije (tip 2)
+str_mu_Wagon_Gen5_Tanker                                   :Vagon cisterna 5. generacije
+str_mu_Wagon_Gen5_Gondola                                  :Vagon-gondola 5. generacije
+str_mu_Wagon_Gen5_Silo_Type1                               :Silos 5. generacije (tip 1)
+str_mu_Wagon_Gen5_Silo_Type2                               :Silos 5. generacije (tip 2)
+str_mu_Wagon_Gen5_Hopper_Type1                             :Samoistovarajući vagon za rasuti teret 5. generacije (tip 1)
+str_mu_Wagon_Gen5_Hopper_Type2                             :Samoistovarajući vagon za rasuti teret 5. generacije (tip 2)
+str_mu_Wagon_Gen5_Car_Transporter                  :Vagon za prevoz automobila 5. generacije
+str_mu_Wagon_Gen5_Container_Carrier                :Vagon za kontejnere 5. generacije
+str_mu_Wagon_Gen5_Centerbeam                               :Teški otvoreni teretni vagon sa centralnom pregradom 5. generacije
+str_mu_Wagon_Gen5_Container_Doublestack    :Vagon za kontejnere na kat 5. generacije
+str_mu_Wagon_Gen5_Superheavy_Flatcar               :Super teški otvoreni teretni vagon 5. generacije
 
-str_wagon_Service_Car_Type1                             :Servisni vagon (tip 1)
-str_wagon_Service_Car_Type2                             :Servisni vagon (tip 2)
+str_mu_Wagon_Service_Car_Type1                             :Servisni vagon (tip 1)
+str_mu_Wagon_Service_Car_Type2                             :Servisni vagon (tip 2)
 
 #coaches
-str_coach_Gen1_Wooden_2_axle_Compartment_Coach                  :Drveni dvoosovinski vagon za putnike sa kupeima
-str_coach_Gen1_Wooden_2_axle_Regional_Coach                     :Drveni dvoosovinski regionalni vagon za putnike
-str_coach_Gen1_Wooden_2_axle_Mail_Coach                                 :Drveni dvoosovinski vagon za poštu
-str_coach_Gen1_Clerestory_Compartment_Coach                     :Clerestory vagon za putnike sa kupeima
-str_coach_Gen1_Clerestory_Regional_Coach                                :Clerestory regionalni vagon za putnike
-str_coach_Gen1_Clerestory_Mail_Coach                                    :Clerestory vagon za poštu
-str_coach_Gen1_Wooden_3_axle_Compartment_Coach                  :Drveni troosovinski vagon za putnike sa kupeima
-str_coach_Gen1_Wooden_3_axle_Regional_Coach                     :Drveni troosovinski regionalni vagon za putnike
-str_coach_Gen1_Wooden_3_axle_Mail_Coach                                 :Drveni troosovinski vagon za poštu
-str_coach_Gen2_Heavyweight_Intercity_Coach                              :Teški Intercity vagon za putnike
-str_coach_Gen2_Heavyweight_Mail_Coach                                   :Teški vagon za poštu
-str_coach_Gen2_Steel_Intercity_Coach                                    :Čelični Intercity vagon za putnike
-str_coach_Gen2_Steel_Compartment_Coach                                  :Čelični vagon za putnike sa kupeima
-str_coach_Gen2_Steel_Regional_Coach                                     :Čelični regionalni vagon za putnike
-str_coach_Gen2_Steel_Mail_Coach                                                 :Čelični vagon za poštu
-str_coach_Gen2_Steel_2_axle_Compartment_Coach                   :Čelični dvoosovinski vagon za putnike
-str_coach_Gen2_Steel_2_axle_Regional_Coach                              :Čelični dvoosovinski regionalni vagon za putnike
-str_coach_Gen2_Steel_2_axle_Mail_Coach                                  :Čelični dvoosovinski vagon za poštu
-str_coach_Gen2_Steel_3_axle_Compartment_Coach                   :Čelični troosovinski vagon za putnike sa kupeima
-str_coach_Gen2_Steel_3_axle_Regional_Coach                              :Čelični troosovinski regionalni vagon za putnike
-str_coach_Gen2_Steel_3_axle_Mail_Coach                                  :Čelični troosovinski vagon za poštu
-str_coach_Gen3_Steel_Lightweight_Intercity_Coach                :Čelični lagani vagon za putnike
-str_coach_Gen3_Steel_Lightweight_Regional_Coach                 :Čelični lagani regionalni vagon za putnike
-str_coach_Gen3_Steel_Lightweight_Mail_Coach                     :Čelični lagani vagon za poštu
-str_coach_Gen3_Aluminium_Lightweight_Intercity_Coach    :Aluminijski lagani Intercity vagon za putnike
-str_coach_Gen3_Aluminium_Lightweight_Regional_Coach     :Aluminijski lagani regionalni vagon za putnike
-str_coach_Gen3_Aluminium_Lightweight_Mail_Coach                 :Aluminijski lagani vagon za poštu
-str_coach_Gen3_Gallery_Car                                                              :Panoramski vagon za putnike
-str_coach_Gen3_Mk1_Intercity_Coach                                              :Mk1 Intercity vagon za putnike
-str_coach_Gen3_Mk1_Regional_Coach                                               :Mk1 regionalni vagon za putnike
-str_coach_Gen3_Mk1_Mail_Coach                                                   :Mk1 vagon za poštu
-str_coach_Gen3_UIC_X_Intercity_Coach                                    :UIC-X Intercity vagon za putnike
-str_coach_Gen3_TEE_Intercity_Coach                                              :TEE Intercity vagon za putnike
-str_coach_Gen3_UIC_X_Regional_Coach                                     :UIC-X regionalni vagon za putnike
-str_coach_Gen3_Umbauwagen_Local_Coach                                   :'Umbauwagen' lokalni vagon za putnike
-str_coach_Gen3_Doppelstockwagen_Local_Coach                     :Lokalni vagon za putnike na kat
-str_coach_Gen3_UIC_X_Mail_Coach                                                 :UIC-X vagon za poštu
-str_coach_Gen3_Indian_Intercity_Coach                                   :Indijski Intercity vagon za putnike
-str_coach_Gen3_Indian_Local_Coach                                               :Indijski lokalni vagon za putnike
-str_coach_Gen3_Indian_Regional_Coach                                    :Indijski regionalni vagon za putnike
-str_coach_Gen3_Indian_Mail_Coach                                                :Indijski vagon za poštu
-str_coach_Gen4_Eurofima_Intercity_Coach                                 :Eurofima vagon za putnike
-str_coach_Gen4_InterRegio_Coach                                                 :InterRegio vagon za putnike
-str_coach_Gen4_Silberling_Commuter_Coach                                :'Silberling' prigradski vagon za putnike
-str_coach_Gen4_Eurofima_Mail_Coach                                              :Eurofima vagon za poštu
-str_coach_Gen4_Double_Decker_Coach                                              :Vagon za putnike na kat
-str_coach_Gen4_Russian_Intercity_Coach                                  :Ruski Intercity vagon za putnike
-str_coach_Gen4_Russian_Regional_Coach                                   :Ruski regionalni vagon za putnike
-str_coach_Gen4_Russian_Mail_Coach                                               :Ruski vagon za poštu
-str_coach_Gen4_Superliner_Coach                                                 :Superliner vagon za putnike
-str_coach_Gen4_Superliner_California                                    :Superliner California
-str_coach_Gen4_Amfleet_Regional_Coach                                   :Amfleet regionalni vagon za putnike
-str_coach_Gen4_Amfleet_Intercity_Coach                                  :Amfleet Intercity vagon za putnike
-str_coach_Gen4_Comet_Commuter_Coach                                     :Comet prigradski vagon za putnike
-str_coach_Gen4_Horizon_Regional_Coach                                   :Horizon regionalni vagon za putnike
-str_coach_Gen4_Horizon_Baggage_Coach                                    :Horizon vagon za prtjagu
-str_coach_Gen4_Bombardier_Bi_level                                              :Bombardier vagon na kat
-str_coach_Gen5_High_Speed_Coach                                                 :Ekspresni vagon za putnike
-str_coach_Gen5_Modern_Regional_Coach                                    :Moderni regionalni vagon za putnike
-str_coach_Gen5_Modern_Commuter_Coach                                    :Moderni prigradski vagon za putnike
-str_coach_Gen5_Modern_Double_Decker_Coach                               :Moderni vagon za putnike na kat
-str_coach_Gen5_High_Speed_Double_Decker_IC2000                  :Ekspresni vagon za putnike na kat (IC2000)
-str_coach_Gen5_High_Speed_Mail_Coach                                    :Ekspresni vagon za poštu
-str_coach_Gen5_Talgo_Pendular                                                   :Talgo Pendular
-str_coach_Gen5_Talgo_Pendular_Mail                                              :Talgo Pendular vagon za poštu
-str_coach_Gen6_Grand_Voyager_Coach                                              :Grand Voyager vagon za putnike
-str_coach_Gen6_Grand_Regio_Coach                                                :Grand regio vagon za putnike
-str_coach_Gen6_Metropolis_Coach                                                 :Metropolis vagon za putnike
-str_coach_Gen6_Speedmail_Coach                                                  :Speedmail vagon za putnike
-str_coach_Gen6_Super_Regio_Coach                                                :Super Regio vagon za putnike
-str_coach_Gen6_Super_Voyager_Coach                                              :Super Voyager vagon za putnike
+str_mu_Coach_Gen1_Wooden_2_axle_Compartment_Coach                  :Drveni dvoosovinski vagon za putnike sa kupeima
+str_mu_Coach_Gen1_Wooden_2_axle_Regional_Coach                     :Drveni dvoosovinski regionalni vagon za putnike
+str_mu_Coach_Gen1_Wooden_2_axle_Mail_Coach                                 :Drveni dvoosovinski vagon za poštu
+str_mu_Coach_Gen1_Clerestory_Compartment_Coach                     :Clerestory vagon za putnike sa kupeima
+str_mu_Coach_Gen1_Clerestory_Regional_Coach                                :Clerestory regionalni vagon za putnike
+str_mu_Coach_Gen1_Clerestory_Mail_Coach                                    :Clerestory vagon za poštu
+str_mu_Coach_Gen1_Wooden_3_axle_Compartment_Coach                  :Drveni troosovinski vagon za putnike sa kupeima
+str_mu_Coach_Gen1_Wooden_3_axle_Regional_Coach                     :Drveni troosovinski regionalni vagon za putnike
+str_mu_Coach_Gen1_Wooden_3_axle_Mail_Coach                                 :Drveni troosovinski vagon za poštu
+str_mu_Coach_Gen2_Heavyweight_Intercity_Coach                              :Teški Intercity vagon za putnike
+str_mu_Coach_Gen2_Heavyweight_Mail_Coach                                   :Teški vagon za poštu
+str_mu_Coach_Gen2_Steel_Intercity_Coach                                    :Čelični Intercity vagon za putnike
+str_mu_Coach_Gen2_Steel_Compartment_Coach                                  :Čelični vagon za putnike sa kupeima
+str_mu_Coach_Gen2_Steel_Regional_Coach                                     :Čelični regionalni vagon za putnike
+str_mu_Coach_Gen2_Steel_Mail_Coach                                                 :Čelični vagon za poštu
+str_mu_Coach_Gen2_Steel_2_axle_Compartment_Coach                   :Čelični dvoosovinski vagon za putnike
+str_mu_Coach_Gen2_Steel_2_axle_Regional_Coach                              :Čelični dvoosovinski regionalni vagon za putnike
+str_mu_Coach_Gen2_Steel_2_axle_Mail_Coach                                  :Čelični dvoosovinski vagon za poštu
+str_mu_Coach_Gen2_Steel_3_axle_Compartment_Coach                   :Čelični troosovinski vagon za putnike sa kupeima
+str_mu_Coach_Gen2_Steel_3_axle_Regional_Coach                              :Čelični troosovinski regionalni vagon za putnike
+str_mu_Coach_Gen2_Steel_3_axle_Mail_Coach                                  :Čelični troosovinski vagon za poštu
+str_mu_Coach_Gen3_Steel_Lightweight_Intercity_Coach                :Čelični lagani vagon za putnike
+str_mu_Coach_Gen3_Steel_Lightweight_Regional_Coach                 :Čelični lagani regionalni vagon za putnike
+str_mu_Coach_Gen3_Steel_Lightweight_Mail_Coach                     :Čelični lagani vagon za poštu
+str_mu_Coach_Gen3_Aluminium_Lightweight_Intercity_Coach    :Aluminijski lagani Intercity vagon za putnike
+str_mu_Coach_Gen3_Aluminium_Lightweight_Regional_Coach     :Aluminijski lagani regionalni vagon za putnike
+str_mu_Coach_Gen3_Aluminium_Lightweight_Mail_Coach                 :Aluminijski lagani vagon za poštu
+str_mu_Coach_Gen3_Gallery_Car                                                              :Panoramski vagon za putnike
+str_mu_Coach_Gen3_Mk1_Intercity_Coach                                              :Mk1 Intercity vagon za putnike
+str_mu_Coach_Gen3_Mk1_Regional_Coach                                               :Mk1 regionalni vagon za putnike
+str_mu_Coach_Gen3_Mk1_Mail_Coach                                                   :Mk1 vagon za poštu
+str_mu_Coach_Gen3_UIC_X_Intercity_Coach                                    :UIC-X Intercity vagon za putnike
+str_mu_Coach_Gen3_TEE_Intercity_Coach                                              :TEE Intercity vagon za putnike
+str_mu_Coach_Gen3_UIC_X_Regional_Coach                                     :UIC-X regionalni vagon za putnike
+str_mu_Coach_Gen3_Umbauwagen_Local_Coach                                   :'Umbauwagen' lokalni vagon za putnike
+str_mu_Coach_Gen3_Doppelstockwagen_Local_Coach                     :Lokalni vagon za putnike na kat
+str_mu_Coach_Gen3_UIC_X_Mail_Coach                                                 :UIC-X vagon za poštu
+str_mu_Coach_Gen3_Indian_Intercity_Coach                                   :Indijski Intercity vagon za putnike
+str_mu_Coach_Gen3_Indian_Local_Coach                                               :Indijski lokalni vagon za putnike
+str_mu_Coach_Gen3_Indian_Regional_Coach                                    :Indijski regionalni vagon za putnike
+str_mu_Coach_Gen3_Indian_Mail_Coach                                                :Indijski vagon za poštu
+str_mu_Coach_Gen4_Eurofima_Intercity_Coach                                 :Eurofima vagon za putnike
+str_mu_Coach_Gen4_InterRegio_Coach                                                 :InterRegio vagon za putnike
+str_mu_Coach_Gen4_Silberling_Commuter_Coach                                :'Silberling' prigradski vagon za putnike
+str_mu_Coach_Gen4_Eurofima_Mail_Coach                                              :Eurofima vagon za poštu
+str_mu_Coach_Gen4_Double_Decker_Coach                                              :Vagon za putnike na kat
+str_mu_Coach_Gen4_Russian_Intercity_Coach                                  :Ruski Intercity vagon za putnike
+str_mu_Coach_Gen4_Russian_Regional_Coach                                   :Ruski regionalni vagon za putnike
+str_mu_Coach_Gen4_Russian_Mail_Coach                                               :Ruski vagon za poštu
+str_mu_Coach_Gen4_Superliner_Coach                                                 :Superliner vagon za putnike
+str_mu_Coach_Gen4_Superliner_California                                    :Superliner California
+str_mu_Coach_Gen4_Amfleet_Regional_Coach                                   :Amfleet regionalni vagon za putnike
+str_mu_Coach_Gen4_Amfleet_Intercity_Coach                                  :Amfleet Intercity vagon za putnike
+str_mu_Coach_Gen4_Comet_Commuter_Coach                                     :Comet prigradski vagon za putnike
+str_mu_Coach_Gen4_Horizon_Regional_Coach                                   :Horizon regionalni vagon za putnike
+str_mu_Coach_Gen4_Horizon_Baggage_Coach                                    :Horizon vagon za prtjagu
+str_mu_Coach_Gen4_Bombardier_Bi_level                                              :Bombardier vagon na kat
+str_mu_Coach_Gen5_High_Speed_Coach                                                 :Ekspresni vagon za putnike
+str_mu_Coach_Gen5_Modern_Regional_Coach                                    :Moderni regionalni vagon za putnike
+str_mu_Coach_Gen5_Modern_Commuter_Coach                                    :Moderni prigradski vagon za putnike
+str_mu_Coach_Gen5_Modern_Double_Decker_Coach                               :Moderni vagon za putnike na kat
+str_mu_Coach_Gen5_High_Speed_Double_Decker_IC2000                  :Ekspresni vagon za putnike na kat (IC2000)
+str_mu_Coach_Gen5_High_Speed_Mail_Coach                                    :Ekspresni vagon za poštu
+str_mu_Coach_Gen5_Talgo_Pendular                                                   :Talgo Pendular
+str_mu_Coach_Gen5_Talgo_Pendular_Mail                                              :Talgo Pendular vagon za poštu
+str_mu_Coach_Gen6_Grand_Voyager_Coach                                              :Grand Voyager vagon za putnike
+str_mu_Coach_Gen6_Grand_Regio_Coach                                                :Grand regio vagon za putnike
+str_mu_Coach_Gen6_Metropolis_Coach                                                 :Metropolis vagon za putnike
+str_mu_Coach_Gen6_Speedmail_Coach                                                  :Speedmail vagon za putnike
+str_mu_Coach_Gen6_Super_Regio_Coach                                                :Super Regio vagon za putnike
+str_mu_Coach_Gen6_Super_Voyager_Coach                                              :Super Voyager vagon za putnike
 
 #special wagons
-str_mu_wagon_unpowered                  :Vagon višestruke jedinice (bez pogona)
-str_mtro_wagon_unpowered                :Vagon metroa (bez pogona)
-str_mglv_wagon_unpowered                :Vagon magleva (bez pogona)
-str_mu_cargo_wagon_unpowered    :Teretni vagon višestruke jedinice (bez pogona)
-str_mu_wagon_powered                    :Vagon višestruke jedinice (sa pogonom)
-str_mtro_wagon_powered                  :Vagon metroa (sa pogonom)
-str_mglv_wagon_powered                  :Vagon magleva (sa pogonom)
+str_mu_MU_Wagon_Unpowered                  :Vagon višestruke jedinice (bez pogona)
+str_mtro_Metro_Wagon_Unpowered                :Vagon metroa (bez pogona)
+str_mglv_Maglev_Wagon_Unpowered                :Vagon magleva (bez pogona)
+str_mu_MU_Cargo_Wagon_Unpowered    :Teretni vagon višestruke jedinice (bez pogona)
+str_mu_MU_Wagon_Powered                    :Vagon višestruke jedinice (sa pogonom)
+str_mtro_Metro_Wagon_Powered                  :Vagon metroa (sa pogonom)
+str_mglv_Maglev_Wagon_Powered                  :Vagon magleva (sa pogonom)
 
 #Obsolete vehicles
 

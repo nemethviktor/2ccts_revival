@@ -5,7 +5,7 @@
 #Main grf title and description
 STR_GRF_NAME                    :{TITLE}
 STR_GRF_DESCRIPTION             :{SILVER}Trens 2cc del Món en NML{}{}(c)2ccts{}Llicència:GPLv2 o superior.{}Veure el llegeix-me per a més detalls.
-STR_GRF_URL             :https://dev.openttdcoop.org/projects/2ccts
+STR_GRF_URL             :https://github.com/nemethviktor/2ccts_revival
 
 #General error messages
 str_used_with_dynamic_engines           :dynamic_engines = true (paràmetre en openttd.cfg)
@@ -33,20 +33,20 @@ STR_PARAM_CONCEPT                                               :Vehicles imagin
 STR_PARAM_CONCEPT_DESC                                  :Emprar vehicles imaginaris (aquest paràmetre no funciona de moment)
 STR_PARAM_REGION_AFRICA                                 :Àfrica
 STR_PARAM_REGION_AFRICA_DESC                    :Emprar vehicles d'Àfrica
-STR_PARAM_REGION_NORTHAMERICA                   :Amèrica del Nord
-STR_PARAM_REGION_NORTHAMERICA_DESC              :Emprar vehicles d'Amèrica del Nord
-STR_PARAM_REGION_SOUTHAMERICA                   :Amèrica del Sud
-STR_PARAM_REGION_SOUTHAMERICA_DESC              :Emprar vehicles d'Amèrica del Sud
+STR_PARAM_REGION_NORTH_AMERICA                   :Amèrica del Nord
+STR_PARAM_REGION_NORTH_AMERICA_DESC              :Emprar vehicles d'Amèrica del Nord
+STR_PARAM_REGION_SOUTH_AMERICA                   :Amèrica del Sud
+STR_PARAM_REGION_SOUTH_AMERICA_DESC              :Emprar vehicles d'Amèrica del Sud
 STR_PARAM_REGION_ASIA                                   :Àsia
 STR_PARAM_REGION_ASIA_DESC                              :Emprar vehicles d'Àsia
-STR_PARAM_REGION_NORTHERNEUROPE                 :Nord d'Europa
-STR_PARAM_REGION_NORTHERNEUROPE_DESC    :Emprar vehicles del nord d'Europa
-STR_PARAM_REGION_EASTERNEUROPE                  :Europa oriental
-STR_PARAM_REGION_EASTERNEUROPE_DESC             :Emprar vehicles d'Europa oriental
-STR_PARAM_REGION_SOUTHERNEUROPE                 :Sud d'Europa
-STR_PARAM_REGION_SOUTHERNEUROPE_DESC    :Emprar vehicles del sud d'Europa
-STR_PARAM_REGION_WESTERNEUROPE                  :Europa occidental
-STR_PARAM_REGION_WESTERNEUROPE_DESC             :Emprar vehicles d'Europa occidental
+STR_PARAM_REGION_NORTHERN_EUROPE                 :Nord d'Europa
+STR_PARAM_REGION_NORTHERN_EUROPE_DESC    :Emprar vehicles del nord d'Europa
+STR_PARAM_REGION_EASTERN_EUROPE                  :Europa oriental
+STR_PARAM_REGION_EASTERN_EUROPE_DESC             :Emprar vehicles d'Europa oriental
+STR_PARAM_REGION_SOUTHERN_EUROPE                 :Sud d'Europa
+STR_PARAM_REGION_SOUTHERN_EUROPE_DESC    :Emprar vehicles del sud d'Europa
+STR_PARAM_REGION_WESTERN_EUROPE                  :Europa occidental
+STR_PARAM_REGION_WESTERN_EUROPE_DESC             :Emprar vehicles d'Europa occidental
 STR_PARAM_REGION_OCEANIA                                :Oceania
 STR_PARAM_REGION_OCEANIA_DESC                   :Emprar vehicles d'Oceania
 
@@ -243,7 +243,7 @@ str_diesel_Australia_Queensland_Rail_2100                               :Queensl
 str_diesel_Croatia_HZ_2062                                                              :HZ 2062 (Dièsel)
 str_diesel_Sweden_SJ_V4                                                                 :SJ V4 (Dièsel)
 str_diesel_Canada_CNR_MLW_M420W                                                 :CNR MLW M420W (Dièsel)
-str_diesel_USA_Amtrack_SDP_40F                                                  :Amtrak SDP-40F (Dièsel)
+str_diesel_USA_Amtrak_SDP_40F                                                  :Amtrak SDP-40F (Dièsel)
 str_diesel_China_China_Railways_DFH3                                    :Ferrocarrils xinesos - DFH3 (Dièsel)
 str_diesel_Panama_Panama_Canal_Railway_EMD_F40PH                :Ferrocarril del Canal de Panamà - EMD F40PH (Dièsel)
 str_diesel_Portugal_CP_1900                                                     :CP 1900 (Dièsel)
@@ -548,137 +548,137 @@ str_mglv_China_Transrapid       :Shanghai Transrapid (Maglev)
 str_mglv_Japan_MLX01_901        :JR MLX01-901 (Maglev)
 
 #wagons
-str_wagon_Gen1_Flat_Wagon                               :Vagó Plataforma de 1a Generació
-str_wagon_Gen1_Boxcar                                   :Furgó de Fusta de 1a Generació
-str_wagon_Gen1_Tanker                                   :Vagó Cisterna de 1a Generació
-str_wagon_Gen1_Open_Wagon                               :Vagó Obert de Fusta de 1a Generació
-str_wagon_Gen2_Flat_Wagon                               :Vagó Plataforma de 2a Generació
-str_wagon_Gen2_Boxcar_Type1                             :Furgó de Fusta de 2a Generació (Tipus 1)
-str_wagon_Gen2_Boxcar_Type2                             :Furgó de Fusta de 2a Generació (Tipus 2)
-str_wagon_Gen2_Tanker                                   :Vagó Cisterna de 2a Generació
-str_wagon_Gen2_Open_Wagon                               :Vagó Obert de Fusta de 2a Generació
-str_wagon_Gen2_Silo                                     :Vagó Sitja de 2a Generació
-str_wagon_Gen2_Hopper                                   :Vagó Tremuja de 2a Generació
-str_wagon_Gen3_Flat_Wagon                               :Vagó Plataforma de 3a Generació
-str_wagon_Gen3_Boxcar_Type1                     :Furgó de Fusta de 3a Generació (Tipus 1)
-str_wagon_Gen3_Boxcar_Type2                     :Furgó de Fusta de 3a Generació (Tipus 2)
-str_wagon_Gen3_Tanker                                   :Vagó Cisterna de 3a Generació
-str_wagon_Gen3_Open_Wagon                               :Vagó Obert de 3a Generació
-str_wagon_Gen3_Silo_Type1                               :Vagó Sitja de 3a Generació (Tipus 1)
-str_wagon_Gen3_Silo_Type2                               :Vagó Sitja de 3a Generació (Tipus 2)
-str_wagon_Gen3_Hopper                                   :Vagó Tremuja de 3a Generació
-str_wagon_Gen4_Flatcar                                  :Vagó Plataforma de 4a Generació
-str_wagon_Gen4_Heavy_Flatcar                    :Vagó Plataforma Pesant de 4a Generació
-str_wagon_Gen4_Boxcar_Type1                             :Furgó de 4a Generació (Tipus 1)
-str_wagon_Gen4_Boxcar_Type2                             :Furgó de 4a Generació (Tipus 2)
-str_wagon_Gen4_Tanker                                   :Vagó Cisterna de 4a Generació
-str_wagon_Gen4_Gondola                                  :Vagó Obert de 4a Generació
-str_wagon_Gen4_Silo_Type1                               :Vagó Sitja de 4a Generació (Tipus 1)
-str_wagon_Gen4_Silo_Type2                               :Vagó Sitja de 4a Generació (Tipus 2)
-str_wagon_Gen4_Hopper_Type1                             :Vagó Tremuja amb Autodescàrrega de 4a Generació (Tipus 1)
-str_wagon_Gen4_Hopper_Type2                             :Vagó Tremuja amb Autodescàrrega de 4a Generació (Tipus 2)
-str_wagon_Gen4_Car_Transporter                  :Vagó Portacotxes de 4a Generació
-str_wagon_Gen4_Container_Carrier                :Vagó de Contenidors de 4a Generació
-str_wagon_Gen4_Centerbeam                               :Vagó Plataforma de 4a Generació (Centerbeam)
-str_wagon_Gen5_Flatcar                                  :Vagó Plataforma de 5a Generació
-str_wagon_Gen5_Heavy_Flatcar                    :Vagó Plataforma Pesant de 5a Generació
-str_wagon_Gen5_Boxcar_Type1                             :Furgó de 5a Generació (Tipus 1)
-str_wagon_Gen5_Boxcar_Type2                             :Furgó de 5a Generació (Tipus 2)
-str_wagon_Gen5_Tanker                                   :Vagó Cisterna de 5a Generació
-str_wagon_Gen5_Gondola                                  :Vagó Obert de 5a Generació
-str_wagon_Gen5_Silo_Type1                               :Vagó Sitja de 5a Generació (Tipus 1)
-str_wagon_Gen5_Silo_Type2                               :Vagó Sitja de 5a Generació (Tipus 2)
-str_wagon_Gen5_Hopper_Type1                             :Vagó Tremuja amb Autodescàrrega de 5a Generació (Tipus 1)
-str_wagon_Gen5_Hopper_Type2                             :Vagó Tremuja amb Autodescàrrega de 5a Generació (Tipus 2)
-str_wagon_Gen5_Car_Transporter                  :Vagó Portacotxes de 5a Generació
-str_wagon_Gen5_Container_Carrier                :Vagó de Contenidors de 5a Generació
-str_wagon_Gen5_Centerbeam                               :Vagó Plataforma de 5a Generació (Centerbeam)
-str_wagon_Gen5_Container_Doublestack    :Vagó de Contenidors Apilats de 5a Generació
-str_wagon_Gen5_Superheavy_Flatcar               :Vagó Plataforma Superpesant de 5a Generació
+str_mu_Wagon_Gen1_Flat_Wagon                               :Vagó Plataforma de 1a Generació
+str_mu_Wagon_Gen1_Boxcar                                   :Furgó de Fusta de 1a Generació
+str_mu_Wagon_Gen1_Tanker                                   :Vagó Cisterna de 1a Generació
+str_mu_Wagon_Gen1_Open_Wagon                               :Vagó Obert de Fusta de 1a Generació
+str_mu_Wagon_Gen2_Flat_Wagon                               :Vagó Plataforma de 2a Generació
+str_mu_Wagon_Gen2_Boxcar_Type1                             :Furgó de Fusta de 2a Generació (Tipus 1)
+str_mu_Wagon_Gen2_Boxcar_Type2                             :Furgó de Fusta de 2a Generació (Tipus 2)
+str_mu_Wagon_Gen2_Tanker                                   :Vagó Cisterna de 2a Generació
+str_mu_Wagon_Gen2_Open_Wagon                               :Vagó Obert de Fusta de 2a Generació
+str_mu_Wagon_Gen2_Silo                                     :Vagó Sitja de 2a Generació
+str_mu_Wagon_Gen2_Hopper                                   :Vagó Tremuja de 2a Generació
+str_mu_Wagon_Gen3_Flat_Wagon                               :Vagó Plataforma de 3a Generació
+str_mu_Wagon_Gen3_Boxcar_Type1                     :Furgó de Fusta de 3a Generació (Tipus 1)
+str_mu_Wagon_Gen3_Boxcar_Type2                     :Furgó de Fusta de 3a Generació (Tipus 2)
+str_mu_Wagon_Gen3_Tanker                                   :Vagó Cisterna de 3a Generació
+str_mu_Wagon_Gen3_Open_Wagon                               :Vagó Obert de 3a Generació
+str_mu_Wagon_Gen3_Silo_Type1                               :Vagó Sitja de 3a Generació (Tipus 1)
+str_mu_Wagon_Gen3_Silo_Type2                               :Vagó Sitja de 3a Generació (Tipus 2)
+str_mu_Wagon_Gen3_Hopper                                   :Vagó Tremuja de 3a Generació
+str_mu_Wagon_Gen4_Flatcar                                  :Vagó Plataforma de 4a Generació
+str_mu_Wagon_Gen4_Heavy_Flatcar                    :Vagó Plataforma Pesant de 4a Generació
+str_mu_Wagon_Gen4_Boxcar_Type1                             :Furgó de 4a Generació (Tipus 1)
+str_mu_Wagon_Gen4_Boxcar_Type2                             :Furgó de 4a Generació (Tipus 2)
+str_mu_Wagon_Gen4_Tanker                                   :Vagó Cisterna de 4a Generació
+str_mu_Wagon_Gen4_Gondola                                  :Vagó Obert de 4a Generació
+str_mu_Wagon_Gen4_Silo_Type1                               :Vagó Sitja de 4a Generació (Tipus 1)
+str_mu_Wagon_Gen4_Silo_Type2                               :Vagó Sitja de 4a Generació (Tipus 2)
+str_mu_Wagon_Gen4_Hopper_Type1                             :Vagó Tremuja amb Autodescàrrega de 4a Generació (Tipus 1)
+str_mu_Wagon_Gen4_Hopper_Type2                             :Vagó Tremuja amb Autodescàrrega de 4a Generació (Tipus 2)
+str_mu_Wagon_Gen4_Car_Transporter                  :Vagó Portacotxes de 4a Generació
+str_mu_Wagon_Gen4_Container_Carrier                :Vagó de Contenidors de 4a Generació
+str_mu_Wagon_Gen4_Centerbeam                               :Vagó Plataforma de 4a Generació (Centerbeam)
+str_mu_Wagon_Gen5_Flatcar                                  :Vagó Plataforma de 5a Generació
+str_mu_Wagon_Gen5_Heavy_Flatcar                    :Vagó Plataforma Pesant de 5a Generació
+str_mu_Wagon_Gen5_Boxcar_Type1                             :Furgó de 5a Generació (Tipus 1)
+str_mu_Wagon_Gen5_Boxcar_Type2                             :Furgó de 5a Generació (Tipus 2)
+str_mu_Wagon_Gen5_Tanker                                   :Vagó Cisterna de 5a Generació
+str_mu_Wagon_Gen5_Gondola                                  :Vagó Obert de 5a Generació
+str_mu_Wagon_Gen5_Silo_Type1                               :Vagó Sitja de 5a Generació (Tipus 1)
+str_mu_Wagon_Gen5_Silo_Type2                               :Vagó Sitja de 5a Generació (Tipus 2)
+str_mu_Wagon_Gen5_Hopper_Type1                             :Vagó Tremuja amb Autodescàrrega de 5a Generació (Tipus 1)
+str_mu_Wagon_Gen5_Hopper_Type2                             :Vagó Tremuja amb Autodescàrrega de 5a Generació (Tipus 2)
+str_mu_Wagon_Gen5_Car_Transporter                  :Vagó Portacotxes de 5a Generació
+str_mu_Wagon_Gen5_Container_Carrier                :Vagó de Contenidors de 5a Generació
+str_mu_Wagon_Gen5_Centerbeam                               :Vagó Plataforma de 5a Generació (Centerbeam)
+str_mu_Wagon_Gen5_Container_Doublestack    :Vagó de Contenidors Apilats de 5a Generació
+str_mu_Wagon_Gen5_Superheavy_Flatcar               :Vagó Plataforma Superpesant de 5a Generació
 
-str_wagon_Service_Car_Type1                             :Cotxe de Servei (Tipus 1)
-str_wagon_Service_Car_Type2                             :Cotxe de Servei (Tipus 2)
+str_mu_Wagon_Service_Car_Type1                             :Cotxe de Servei (Tipus 1)
+str_mu_Wagon_Service_Car_Type2                             :Cotxe de Servei (Tipus 2)
 
 #coaches
-str_coach_Gen1_Wooden_2_axle_Compartment_Coach                  :Vagó amb Compartiments de Fusta amb 2 Eixos
-str_coach_Gen1_Wooden_2_axle_Regional_Coach                     :Vagó Regional de Fusta amb 2 Eixos
-str_coach_Gen1_Wooden_2_axle_Mail_Coach                                 :Vagó de Correu de Fusta amb 2 Eixos
-str_coach_Gen1_Clerestory_Compartment_Coach                     :Vagó amb Compartiments Clerestory
-str_coach_Gen1_Clerestory_Regional_Coach                                :Vagó Regional Clerestory
-str_coach_Gen1_Clerestory_Mail_Coach                                    :Vagó de Correu Clerestory
-str_coach_Gen1_Wooden_3_axle_Compartment_Coach                  :Vagó amb Compartiments de Fusta amb 3 Eixos
-str_coach_Gen1_Wooden_3_axle_Regional_Coach                     :Vagó Regional de Fusta amb 3 Eixos
-str_coach_Gen1_Wooden_3_axle_Mail_Coach                                 :Vagó de Correu de Fusta amb 3 Eixos
-str_coach_Gen2_Heavyweight_Intercity_Coach                              :Vagó Interurbà Pesant
-str_coach_Gen2_Heavyweight_Mail_Coach                                   :Vagó de Correu Pesant
-str_coach_Gen2_Steel_Intercity_Coach                                    :Vagó Interurbà d'Acer
-str_coach_Gen2_Steel_Compartment_Coach                                  :Vagó amb Compartiments d'Acer
-str_coach_Gen2_Steel_Regional_Coach                                     :Vagó Regional d'Acer
-str_coach_Gen2_Steel_Mail_Coach                                                 :Vagó de Correu d'Acer
-str_coach_Gen2_Steel_2_axle_Compartment_Coach                   :Vagó amb Compartiments d'Acer amb 2 Eixos
-str_coach_Gen2_Steel_2_axle_Regional_Coach                              :Vagó Regional d'Acer de 2 Eixos
-str_coach_Gen2_Steel_2_axle_Mail_Coach                                  :Vagó de Correu d'Acer amb 2 Eixos
-str_coach_Gen2_Steel_3_axle_Compartment_Coach                   :Vagó amb Compartiments d'Acer amb 3 Eixos
-str_coach_Gen2_Steel_3_axle_Regional_Coach                              :Vagó Regional d'Acer de 3 Eixos
-str_coach_Gen2_Steel_3_axle_Mail_Coach                                  :Vagó de Correu d'Acer amb 3 Eixos
-str_coach_Gen3_Steel_Lightweight_Intercity_Coach                :Vagó Interurbà d'Acer Lleuger
-str_coach_Gen3_Steel_Lightweight_Regional_Coach                 :Vagó Regional d'Acer Lleuger
-str_coach_Gen3_Steel_Lightweight_Mail_Coach                     :Vagó de Correu d'Acer Lleuger
-str_coach_Gen3_Aluminium_Lightweight_Intercity_Coach    :Vagó Interurbà d'Alumini Lleuger
-str_coach_Gen3_Aluminium_Lightweight_Regional_Coach     :Vagó Regional Lleuger d'Alumini
-str_coach_Gen3_Aluminium_Lightweight_Mail_Coach                 :Vagó de Correu d'Alumini Lleuger
-str_coach_Gen3_Gallery_Car                                                              :Cotxe Galeria
-str_coach_Gen3_Mk1_Intercity_Coach                                              :Vagó Interurbà Mk1
-str_coach_Gen3_Mk1_Regional_Coach                                               :Vagó Regional Mk1
-str_coach_Gen3_Mk1_Mail_Coach                                                   :Vagó de Correu Mk1
-str_coach_Gen3_UIC_X_Intercity_Coach                                    :Vagó Interurbà UIC-X
-str_coach_Gen3_TEE_Intercity_Coach                                              :Vagó Interurbà TEE
-str_coach_Gen3_UIC_X_Regional_Coach                                     :Vagó Regional UIC-X
-str_coach_Gen3_Umbauwagen_Local_Coach                                   :Vagó Local 'Umbauwagen'
-str_coach_Gen3_Doppelstockwagen_Local_Coach                     :Vagó Local 'Doppelstockwagen'
-str_coach_Gen3_UIC_X_Mail_Coach                                                 :Vagó de Correu UIC-X
-str_coach_Gen3_Indian_Intercity_Coach                                   :Vagó Interurbà Indi
-str_coach_Gen3_Indian_Local_Coach                                               :Vagó Local Indi
-str_coach_Gen3_Indian_Regional_Coach                                    :Vagó Regional Indi
-str_coach_Gen3_Indian_Mail_Coach                                                :Vagó de Correu Indi
-str_coach_Gen4_Eurofima_Intercity_Coach                                 :Vagó Eurofima
-str_coach_Gen4_InterRegio_Coach                                                 :Vagó InterRegio
-str_coach_Gen4_Silberling_Commuter_Coach                                :Vagó Suburbà 'Silberling'
-str_coach_Gen4_Eurofima_Mail_Coach                                              :Vagó de Correu Eurofima
-str_coach_Gen4_Double_Decker_Coach                                              :Vagó de Dos Pisos
-str_coach_Gen4_Russian_Intercity_Coach                                  :Vagó Interurbà Rus
-str_coach_Gen4_Russian_Regional_Coach                                   :Vagó Regional Rus
-str_coach_Gen4_Russian_Mail_Coach                                               :Vagó de Correu Rus
-str_coach_Gen4_Superliner_Coach                                                 :Vagó Superliner
-str_coach_Gen4_Superliner_California                                    :Superliner Califòrnia
-str_coach_Gen4_Amfleet_Regional_Coach                                   :Vagó Regional Amfleet
-str_coach_Gen4_Amfleet_Intercity_Coach                                  :Vagó Interurbà Amfleet
-str_coach_Gen4_Comet_Commuter_Coach                                     :Vagó Suburbà Comet
-str_coach_Gen4_Horizon_Regional_Coach                                   :Vagó Regional Horizon
-str_coach_Gen4_Horizon_Baggage_Coach                                    :Vagó d'Equipatge Horizon
-str_coach_Gen4_Bombardier_Bi_level                                              :Bombardier de Dos Pisos
-str_coach_Gen5_High_Speed_Coach                                                 :Vagó d'Alta Velocitat
-str_coach_Gen5_Modern_Regional_Coach                                    :Vagó Regional Modern
-str_coach_Gen5_Modern_Commuter_Coach                                    :Vagó Suburbà Modern
-str_coach_Gen5_Modern_Double_Decker_Coach                               :Vagó de Dos Pisos Modern
-str_coach_Gen5_High_Speed_Double_Decker_IC2000                  :Vagó de Dos Pisos d'Alta Velocitat (IC2000)
-str_coach_Gen5_High_Speed_Mail_Coach                                    :Vagó de Correu d'Alta Velocitat
-str_coach_Gen5_Talgo_Pendular                                                   :Talgo Pendular
-str_coach_Gen5_Talgo_Pendular_Mail                                              :Talgo Pendular per Correu
-str_coach_Gen6_Grand_Voyager_Coach                                              :Vagó Grand Voyager
-str_coach_Gen6_Grand_Regio_Coach                                                :Vagó Grand Regio
-str_coach_Gen6_Metropolis_Coach                                                 :Vagó Metropolis
-str_coach_Gen6_Speedmail_Coach                                                  :Vagó de Correu Speedmail
-str_coach_Gen6_Super_Regio_Coach                                                :Vagó Super Regio
-str_coach_Gen6_Super_Voyager_Coach                                              :Vagó Super Voyager
+str_mu_Coach_Gen1_Wooden_2_axle_Compartment_Coach                  :Vagó amb Compartiments de Fusta amb 2 Eixos
+str_mu_Coach_Gen1_Wooden_2_axle_Regional_Coach                     :Vagó Regional de Fusta amb 2 Eixos
+str_mu_Coach_Gen1_Wooden_2_axle_Mail_Coach                                 :Vagó de Correu de Fusta amb 2 Eixos
+str_mu_Coach_Gen1_Clerestory_Compartment_Coach                     :Vagó amb Compartiments Clerestory
+str_mu_Coach_Gen1_Clerestory_Regional_Coach                                :Vagó Regional Clerestory
+str_mu_Coach_Gen1_Clerestory_Mail_Coach                                    :Vagó de Correu Clerestory
+str_mu_Coach_Gen1_Wooden_3_axle_Compartment_Coach                  :Vagó amb Compartiments de Fusta amb 3 Eixos
+str_mu_Coach_Gen1_Wooden_3_axle_Regional_Coach                     :Vagó Regional de Fusta amb 3 Eixos
+str_mu_Coach_Gen1_Wooden_3_axle_Mail_Coach                                 :Vagó de Correu de Fusta amb 3 Eixos
+str_mu_Coach_Gen2_Heavyweight_Intercity_Coach                              :Vagó Interurbà Pesant
+str_mu_Coach_Gen2_Heavyweight_Mail_Coach                                   :Vagó de Correu Pesant
+str_mu_Coach_Gen2_Steel_Intercity_Coach                                    :Vagó Interurbà d'Acer
+str_mu_Coach_Gen2_Steel_Compartment_Coach                                  :Vagó amb Compartiments d'Acer
+str_mu_Coach_Gen2_Steel_Regional_Coach                                     :Vagó Regional d'Acer
+str_mu_Coach_Gen2_Steel_Mail_Coach                                                 :Vagó de Correu d'Acer
+str_mu_Coach_Gen2_Steel_2_axle_Compartment_Coach                   :Vagó amb Compartiments d'Acer amb 2 Eixos
+str_mu_Coach_Gen2_Steel_2_axle_Regional_Coach                              :Vagó Regional d'Acer de 2 Eixos
+str_mu_Coach_Gen2_Steel_2_axle_Mail_Coach                                  :Vagó de Correu d'Acer amb 2 Eixos
+str_mu_Coach_Gen2_Steel_3_axle_Compartment_Coach                   :Vagó amb Compartiments d'Acer amb 3 Eixos
+str_mu_Coach_Gen2_Steel_3_axle_Regional_Coach                              :Vagó Regional d'Acer de 3 Eixos
+str_mu_Coach_Gen2_Steel_3_axle_Mail_Coach                                  :Vagó de Correu d'Acer amb 3 Eixos
+str_mu_Coach_Gen3_Steel_Lightweight_Intercity_Coach                :Vagó Interurbà d'Acer Lleuger
+str_mu_Coach_Gen3_Steel_Lightweight_Regional_Coach                 :Vagó Regional d'Acer Lleuger
+str_mu_Coach_Gen3_Steel_Lightweight_Mail_Coach                     :Vagó de Correu d'Acer Lleuger
+str_mu_Coach_Gen3_Aluminium_Lightweight_Intercity_Coach    :Vagó Interurbà d'Alumini Lleuger
+str_mu_Coach_Gen3_Aluminium_Lightweight_Regional_Coach     :Vagó Regional Lleuger d'Alumini
+str_mu_Coach_Gen3_Aluminium_Lightweight_Mail_Coach                 :Vagó de Correu d'Alumini Lleuger
+str_mu_Coach_Gen3_Gallery_Car                                                              :Cotxe Galeria
+str_mu_Coach_Gen3_Mk1_Intercity_Coach                                              :Vagó Interurbà Mk1
+str_mu_Coach_Gen3_Mk1_Regional_Coach                                               :Vagó Regional Mk1
+str_mu_Coach_Gen3_Mk1_Mail_Coach                                                   :Vagó de Correu Mk1
+str_mu_Coach_Gen3_UIC_X_Intercity_Coach                                    :Vagó Interurbà UIC-X
+str_mu_Coach_Gen3_TEE_Intercity_Coach                                              :Vagó Interurbà TEE
+str_mu_Coach_Gen3_UIC_X_Regional_Coach                                     :Vagó Regional UIC-X
+str_mu_Coach_Gen3_Umbauwagen_Local_Coach                                   :Vagó Local 'Umbauwagen'
+str_mu_Coach_Gen3_Doppelstockwagen_Local_Coach                     :Vagó Local 'Doppelstockwagen'
+str_mu_Coach_Gen3_UIC_X_Mail_Coach                                                 :Vagó de Correu UIC-X
+str_mu_Coach_Gen3_Indian_Intercity_Coach                                   :Vagó Interurbà Indi
+str_mu_Coach_Gen3_Indian_Local_Coach                                               :Vagó Local Indi
+str_mu_Coach_Gen3_Indian_Regional_Coach                                    :Vagó Regional Indi
+str_mu_Coach_Gen3_Indian_Mail_Coach                                                :Vagó de Correu Indi
+str_mu_Coach_Gen4_Eurofima_Intercity_Coach                                 :Vagó Eurofima
+str_mu_Coach_Gen4_InterRegio_Coach                                                 :Vagó InterRegio
+str_mu_Coach_Gen4_Silberling_Commuter_Coach                                :Vagó Suburbà 'Silberling'
+str_mu_Coach_Gen4_Eurofima_Mail_Coach                                              :Vagó de Correu Eurofima
+str_mu_Coach_Gen4_Double_Decker_Coach                                              :Vagó de Dos Pisos
+str_mu_Coach_Gen4_Russian_Intercity_Coach                                  :Vagó Interurbà Rus
+str_mu_Coach_Gen4_Russian_Regional_Coach                                   :Vagó Regional Rus
+str_mu_Coach_Gen4_Russian_Mail_Coach                                               :Vagó de Correu Rus
+str_mu_Coach_Gen4_Superliner_Coach                                                 :Vagó Superliner
+str_mu_Coach_Gen4_Superliner_California                                    :Superliner Califòrnia
+str_mu_Coach_Gen4_Amfleet_Regional_Coach                                   :Vagó Regional Amfleet
+str_mu_Coach_Gen4_Amfleet_Intercity_Coach                                  :Vagó Interurbà Amfleet
+str_mu_Coach_Gen4_Comet_Commuter_Coach                                     :Vagó Suburbà Comet
+str_mu_Coach_Gen4_Horizon_Regional_Coach                                   :Vagó Regional Horizon
+str_mu_Coach_Gen4_Horizon_Baggage_Coach                                    :Vagó d'Equipatge Horizon
+str_mu_Coach_Gen4_Bombardier_Bi_level                                              :Bombardier de Dos Pisos
+str_mu_Coach_Gen5_High_Speed_Coach                                                 :Vagó d'Alta Velocitat
+str_mu_Coach_Gen5_Modern_Regional_Coach                                    :Vagó Regional Modern
+str_mu_Coach_Gen5_Modern_Commuter_Coach                                    :Vagó Suburbà Modern
+str_mu_Coach_Gen5_Modern_Double_Decker_Coach                               :Vagó de Dos Pisos Modern
+str_mu_Coach_Gen5_High_Speed_Double_Decker_IC2000                  :Vagó de Dos Pisos d'Alta Velocitat (IC2000)
+str_mu_Coach_Gen5_High_Speed_Mail_Coach                                    :Vagó de Correu d'Alta Velocitat
+str_mu_Coach_Gen5_Talgo_Pendular                                                   :Talgo Pendular
+str_mu_Coach_Gen5_Talgo_Pendular_Mail                                              :Talgo Pendular per Correu
+str_mu_Coach_Gen6_Grand_Voyager_Coach                                              :Vagó Grand Voyager
+str_mu_Coach_Gen6_Grand_Regio_Coach                                                :Vagó Grand Regio
+str_mu_Coach_Gen6_Metropolis_Coach                                                 :Vagó Metropolis
+str_mu_Coach_Gen6_Speedmail_Coach                                                  :Vagó de Correu Speedmail
+str_mu_Coach_Gen6_Super_Regio_Coach                                                :Vagó Super Regio
+str_mu_Coach_Gen6_Super_Voyager_Coach                                              :Vagó Super Voyager
 
 #special wagons
-str_mu_wagon_unpowered                  :Unitat de Vagó Múltiple (Sense alimentació)
-str_mtro_wagon_unpowered                :Unitat de Vagó de Metro (Sense alimentació)
-str_mglv_wagon_unpowered                :Unitat de Vagó Maglev (Sense alimentació)
-str_mu_wagon_powered                    :Unitat de Vagó de Metro (Alimentat)
-str_mtro_wagon_powered                  :Unitat de Vagó de Metro (Amb alimentació)
-str_mglv_wagon_powered                  :Unitat de Vagó Maglev (Alimentat)
+str_mu_MU_Wagon_Unpowered                  :Unitat de Vagó Múltiple (Sense alimentació)
+str_mtro_Metro_Wagon_Unpowered                :Unitat de Vagó de Metro (Sense alimentació)
+str_mglv_Maglev_Wagon_Unpowered                :Unitat de Vagó Maglev (Sense alimentació)
+str_mu_MU_Wagon_Powered                    :Unitat de Vagó de Metro (Alimentat)
+str_mtro_Metro_Wagon_Powered                  :Unitat de Vagó de Metro (Amb alimentació)
+str_mglv_Maglev_Wagon_Powered                  :Unitat de Vagó Maglev (Alimentat)
 
 #Obsolete vehicles
 

@@ -4,7 +4,7 @@
 #Main grf title and description
 STR_GRF_NAME                    :{TITLE}
 STR_GRF_DESCRIPTION             :{SILVER}2cc 世界列車大全，以 NML 開發{}{}(c)2ccts{}授權認證：GPLv2 或更高版本{}更多資訊請參閱 readme 檔案
-STR_GRF_URL             :https://dev.openttdcoop.org/projects/2ccts
+STR_GRF_URL             :https://github.com/nemethviktor/2ccts_revival
 
 #General error messages
 
@@ -112,10 +112,10 @@ str_mglv_China_Transrapid       :上海 Transrapid (磁浮)
 #coaches
 
 #special wagons
-str_mtro_wagon_unpowered                :捷運車廂 (無動力)
-str_mglv_wagon_unpowered                :磁浮車廂 (無動力)
-str_mtro_wagon_powered                  :捷運車廂 (有動力)
-str_mglv_wagon_powered                  :磁浮車廂 (有動力)
+str_mtro_Metro_Wagon_Unpowered                :捷運車廂 (無動力)
+str_mglv_Maglev_Wagon_Unpowered                :磁浮車廂 (無動力)
+str_mtro_Metro_Wagon_Powered                  :捷運車廂 (有動力)
+str_mglv_Maglev_Wagon_Powered                  :磁浮車廂 (有動力)
 
 #Obsolete vehicles
 

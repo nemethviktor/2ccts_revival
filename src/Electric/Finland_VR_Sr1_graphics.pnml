@@ -24,6 +24,6 @@ spriteset(spriteset_electric_Finland_VR_Sr1, "gfx/Electric/Finland_VR_Sr1.png") 
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

@@ -34,6 +34,6 @@ switch(FEAT_TRAINS, SELF, switch_electric_Switzerland_RhB_Ge_6_6_Krokodil_animat
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

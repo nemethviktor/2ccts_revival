@@ -47,6 +47,6 @@ switch(FEAT_TRAINS, SELF, switch_electric_Ukraine_UZ_DE1_articulated, extra_call
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

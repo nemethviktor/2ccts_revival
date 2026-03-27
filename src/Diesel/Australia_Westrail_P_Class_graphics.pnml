@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_Australia_Westrail_P_Class, "gfx/Diesel/Australia_Wes
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

@@ -39,6 +39,6 @@ switch(FEAT_TRAINS, SELF, switch_steam_India_Fairy_Queen_animation, motion_count
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_Poland_PKP_SP32, "gfx/Diesel/Poland_PKP_SP32.png") {
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

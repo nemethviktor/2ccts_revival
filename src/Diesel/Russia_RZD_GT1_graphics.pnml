@@ -52,6 +52,6 @@ switch(FEAT_TRAINS, SELF, switch_diesel_Russia_RZD_GT1_articulated, extra_callba
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

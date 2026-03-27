@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_Tunisia_SNCFT_040_DF, "gfx/Diesel/Tunisia_SNCFT_040_D
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

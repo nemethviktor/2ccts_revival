@@ -24,6 +24,6 @@ spriteset(spriteset_electric_Brasil_MRS_He_4_4, "gfx/Electric/Brasil_MRS_He_4_4.
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

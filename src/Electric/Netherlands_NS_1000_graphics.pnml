@@ -24,6 +24,6 @@ spriteset(spriteset_electric_Netherlands_NS_1000, "gfx/Electric/Netherlands_NS_1
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

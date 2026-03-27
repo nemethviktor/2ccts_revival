@@ -63,6 +63,6 @@ switch(FEAT_TRAINS, SELF, switch_steam_USA_Southern_Pacific_GS_4_Daylight_articu
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

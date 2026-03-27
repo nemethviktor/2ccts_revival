@@ -24,6 +24,6 @@ spriteset(spriteset_electric_Portugal_CP_2600, "gfx/Electric/Portugal_CP_2600.pn
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

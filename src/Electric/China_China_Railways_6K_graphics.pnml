@@ -24,6 +24,6 @@ spriteset(spriteset_electric_China_China_Railways_6K, "gfx/Electric/China_China_
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

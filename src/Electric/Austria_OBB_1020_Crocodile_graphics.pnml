@@ -24,6 +24,6 @@ spriteset(spriteset_electric_Austria_OBB_1020_Crocodile, "gfx/Electric/Austria_O
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

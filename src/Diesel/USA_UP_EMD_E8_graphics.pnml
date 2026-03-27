@@ -53,6 +53,6 @@ switch(FEAT_TRAINS, SELF, switch_diesel_USA_UP_EMD_E8_visual_effect, position_in
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

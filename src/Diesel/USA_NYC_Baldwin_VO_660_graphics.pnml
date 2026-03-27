@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_USA_NYC_Baldwin_VO_660, "gfx/Diesel/USA_NYC_Baldwin_V
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

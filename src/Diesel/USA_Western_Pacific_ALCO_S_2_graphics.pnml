@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_USA_Western_Pacific_ALCO_S_2, "gfx/Diesel/USA_Western
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

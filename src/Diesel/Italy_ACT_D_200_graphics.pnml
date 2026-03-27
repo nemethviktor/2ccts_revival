@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_Italy_ACT_D_200, "gfx/Diesel/Italy_ACT_D_200.png") {
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

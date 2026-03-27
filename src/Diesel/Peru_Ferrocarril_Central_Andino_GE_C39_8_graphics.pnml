@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_Peru_Ferrocarril_Central_Andino_GE_C39_8, "gfx/Diesel
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

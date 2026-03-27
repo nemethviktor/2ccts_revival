@@ -24,6 +24,6 @@ spriteset(spriteset_electric_France_SNCF_BB_26000, "gfx/Electric/France_SNCF_BB_
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

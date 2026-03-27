@@ -34,6 +34,6 @@ switch(FEAT_TRAINS, SELF, switch_electric_India_Indian_Railways_WCG_1_animation,
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

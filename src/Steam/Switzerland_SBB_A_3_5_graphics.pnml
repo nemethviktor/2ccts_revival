@@ -63,6 +63,6 @@ switch(FEAT_TRAINS, SELF, switch_steam_Switzerland_SBB_A_3_5_articulated, extra_
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

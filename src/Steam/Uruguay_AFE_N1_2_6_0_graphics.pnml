@@ -63,6 +63,6 @@ switch(FEAT_TRAINS, SELF, switch_steam_Uruguay_AFE_N1_2_6_0_articulated, extra_c
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

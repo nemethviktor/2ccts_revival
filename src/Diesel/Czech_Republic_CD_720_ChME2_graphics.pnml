@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_Czech_Republic_CD_720_ChME2, "gfx/Diesel/Czech_Republ
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

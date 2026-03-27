@@ -34,6 +34,6 @@ switch(FEAT_TRAINS, SELF, switch_electric_Germany_Prussian_ES_6_animation, motio
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

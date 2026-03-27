@@ -5,7 +5,7 @@
 #Main grf title and description
 STR_GRF_NAME                    :{TITLE}
 STR_GRF_DESCRIPTION             :{SILVER}2cc Trains of the World in NML (Trenes del mundo 2cc, en NML){}{}(c)2ccts{}Licencia:GPL v2 o superior.{}Consulta el archivo Léeme para detalles.
-STR_GRF_URL             :https://dev.openttdcoop.org/projects/2ccts
+STR_GRF_URL             :https://github.com/nemethviktor/2ccts_revival
 
 #General error messages
 str_used_with_dynamic_engines           :dynamic_engines = true (opción en archivo openttd.cfg)
@@ -33,20 +33,20 @@ STR_PARAM_CONCEPT                                               :Vehículos conc
 STR_PARAM_CONCEPT_DESC                                  :Usar vehículos conceptuales
 STR_PARAM_REGION_AFRICA                                 :África
 STR_PARAM_REGION_AFRICA_DESC                    :Usar vehículos de África
-STR_PARAM_REGION_NORTHAMERICA                   :Norteamérica
-STR_PARAM_REGION_NORTHAMERICA_DESC              :Usar vehículos de Norteamérica
-STR_PARAM_REGION_SOUTHAMERICA                   :Sudamérica
-STR_PARAM_REGION_SOUTHAMERICA_DESC              :Usar vehículos de Sudamérica
+STR_PARAM_REGION_NORTH_AMERICA                   :Norteamérica
+STR_PARAM_REGION_NORTH_AMERICA_DESC              :Usar vehículos de Norteamérica
+STR_PARAM_REGION_SOUTH_AMERICA                   :Sudamérica
+STR_PARAM_REGION_SOUTH_AMERICA_DESC              :Usar vehículos de Sudamérica
 STR_PARAM_REGION_ASIA                                   :Asia
 STR_PARAM_REGION_ASIA_DESC                              :Usar vehículos de Asia
-STR_PARAM_REGION_NORTHERNEUROPE                 :Europa del Norte
-STR_PARAM_REGION_NORTHERNEUROPE_DESC    :Usar vehículos de Europa del Norte
-STR_PARAM_REGION_EASTERNEUROPE                  :Europa Oriental
-STR_PARAM_REGION_EASTERNEUROPE_DESC             :Usar vehículos de Europa Oriental
-STR_PARAM_REGION_SOUTHERNEUROPE                 :Europa del Sur
-STR_PARAM_REGION_SOUTHERNEUROPE_DESC    :Usar vehículos de Europa del Sur
-STR_PARAM_REGION_WESTERNEUROPE                  :Europa Occidental
-STR_PARAM_REGION_WESTERNEUROPE_DESC             :Usar vehículos de Europa Occidental
+STR_PARAM_REGION_NORTHERN_EUROPE                 :Europa del Norte
+STR_PARAM_REGION_NORTHERN_EUROPE_DESC    :Usar vehículos de Europa del Norte
+STR_PARAM_REGION_EASTERN_EUROPE                  :Europa Oriental
+STR_PARAM_REGION_EASTERN_EUROPE_DESC             :Usar vehículos de Europa Oriental
+STR_PARAM_REGION_SOUTHERN_EUROPE                 :Europa del Sur
+STR_PARAM_REGION_SOUTHERN_EUROPE_DESC    :Usar vehículos de Europa del Sur
+STR_PARAM_REGION_WESTERN_EUROPE                  :Europa Occidental
+STR_PARAM_REGION_WESTERN_EUROPE_DESC             :Usar vehículos de Europa Occidental
 STR_PARAM_REGION_OCEANIA                                :Oceanía
 STR_PARAM_REGION_OCEANIA_DESC                   :Usar vehículos de Oceanía
 
@@ -297,7 +297,7 @@ str_diesel_Australia_Queensland_Rail_2100                               :QR 2100
 str_diesel_Croatia_HZ_2062                                                              :HZ 2062 (diésel)
 str_diesel_Sweden_SJ_V4                                                                 :SJ V4 (diésel)
 str_diesel_Canada_CNR_MLW_M420W                                                 :CNR MLW M420W (diésel)
-str_diesel_USA_Amtrack_SDP_40F                                                  :Amtrak SDP-40F (diésel)
+str_diesel_USA_Amtrak_SDP_40F                                                  :Amtrak SDP-40F (diésel)
 str_diesel_China_China_Railways_DFH3                                    :CR DFH3 (diésel)
 str_diesel_Panama_Panama_Canal_Railway_EMD_F40PH                :PCR EMD F40PH (diésel)
 str_diesel_Portugal_CP_1900                                                     :CP 1900 (diésel)
@@ -715,139 +715,139 @@ str_mglv_China_Transrapid       :Transrapid de Shanghái (maglev)
 str_mglv_Japan_MLX01_901        :JR MLX01-901 (maglev)
 
 #wagons
-str_wagon_Gen1_Flat_Wagon                               :Plataforma 1a gen.
-str_wagon_Gen1_Boxcar                                   :Furgoneta 1a gen. de madera
-str_wagon_Gen1_Tanker                                   :Carro tanque 1a gen.
-str_wagon_Gen1_Open_Wagon                               :Vagón descubierto 1a gen. de madera
-str_wagon_Gen2_Flat_Wagon                               :Plataforma 2a gen.
-str_wagon_Gen2_Boxcar_Type1                             :Furgoneta 2a gen. de madera (tipo 1)
-str_wagon_Gen2_Boxcar_Type2                             :Furgoneta 2a gen. de madera (tipo 2)
-str_wagon_Gen2_Tanker                                   :Carro tanque 2a gen.
-str_wagon_Gen2_Open_Wagon                               :Vagón descubierto 2a gen. de madera
-str_wagon_Gen2_Silo                                     :Tolva silo 2a gen.
-str_wagon_Gen2_Hopper                                   :Tolva 2a gen. de madera
-str_wagon_Gen3_Flat_Wagon                               :Plataforma 3a gen.
-str_wagon_Gen3_Boxcar_Type1                     :Furgón 3a gen. de madera (tipo 1)
-str_wagon_Gen3_Boxcar_Type2                     :Furgón 3a gen. de madera (tipo 2)
-str_wagon_Gen3_Tanker                                   :Carro tanque 3a gen.
-str_wagon_Gen3_Open_Wagon                               :Vagón descubierto 3a gen.
-str_wagon_Gen3_Silo_Type1                               :Tolva silo 3a gen. (tipo 1)
-str_wagon_Gen3_Silo_Type2                               :Tolva silo 3a gen. (tipo 2)
-str_wagon_Gen3_Hopper                                   :Tolva 3a gen.
-str_wagon_Gen4_Flatcar                                  :Plataforma 4a gen.
-str_wagon_Gen4_Heavy_Flatcar                    :Plataforma pesada 4a gen.
-str_wagon_Gen4_Boxcar_Type1                             :Furgón 4a gen. (tipo 1)
-str_wagon_Gen4_Boxcar_Type2                             :Furgón 4a gen. (tipo 2)
-str_wagon_Gen4_Tanker                                   :Carro tanque 4a gen.
-str_wagon_Gen4_Gondola                                  :Góndola 4a gen.
-str_wagon_Gen4_Silo_Type1                               :Tolva silo 4a gen. (tipo 1)
-str_wagon_Gen4_Silo_Type2                               :Tolva silo 4a gen. (tipo 2)
-str_wagon_Gen4_Hopper_Type1                             :Tolva de descarga automática 4a gen. (tipo 1)
-str_wagon_Gen4_Hopper_Type2                             :Tolva de descarga automática 4a gen. (tipo 2)
-str_wagon_Gen4_Car_Transporter                  :Madrina transportadora 4a gen.
-str_wagon_Gen4_Container_Carrier                :Intermodal 4a gen.
-str_wagon_Gen4_Centerbeam                               :Plataforma con viga central 4a gen.
-str_wagon_Gen5_Flatcar                                  :Plataforma 5a gen.
-str_wagon_Gen5_Heavy_Flatcar                    :Plataforma pesada 5a gen.
-str_wagon_Gen5_Boxcar_Type1                             :Furgón 5a gen. (tipo 1)
-str_wagon_Gen5_Boxcar_Type2                             :Furgón 5a gen. (tipo 2)
-str_wagon_Gen5_Tanker                                   :Carro tanque 5a gen.
-str_wagon_Gen5_Gondola                                  :Góndola 5a gen.
-str_wagon_Gen5_Silo_Type1                               :Tolva silo 5a gen. (tipo 1)
-str_wagon_Gen5_Silo_Type2                               :Tolva silo 5a gen. (tipo 2)
-str_wagon_Gen5_Hopper_Type1                             :Tolva de descarga automática 5a gen. (tipo 1)
-str_wagon_Gen5_Hopper_Type2                             :Tolva de descarga automática 5a gen. (tipo 2)
-str_wagon_Gen5_Car_Transporter                  :Madrina transportadora 5a gen.
-str_wagon_Gen5_Container_Carrier                :Intermodal 5a gen.
-str_wagon_Gen5_Centerbeam                               :Plataforma con viga central 5a gen.
-str_wagon_Gen5_Container_Doublestack    :Intermodal doble estiba 5a gen.
-str_wagon_Gen5_Superheavy_Flatcar               :Plataforma utlrapesada 5a gen.
+str_mu_Wagon_Gen1_Flat_Wagon                               :Plataforma 1a gen.
+str_mu_Wagon_Gen1_Boxcar                                   :Furgoneta 1a gen. de madera
+str_mu_Wagon_Gen1_Tanker                                   :Carro tanque 1a gen.
+str_mu_Wagon_Gen1_Open_Wagon                               :Vagón descubierto 1a gen. de madera
+str_mu_Wagon_Gen2_Flat_Wagon                               :Plataforma 2a gen.
+str_mu_Wagon_Gen2_Boxcar_Type1                             :Furgoneta 2a gen. de madera (tipo 1)
+str_mu_Wagon_Gen2_Boxcar_Type2                             :Furgoneta 2a gen. de madera (tipo 2)
+str_mu_Wagon_Gen2_Tanker                                   :Carro tanque 2a gen.
+str_mu_Wagon_Gen2_Open_Wagon                               :Vagón descubierto 2a gen. de madera
+str_mu_Wagon_Gen2_Silo                                     :Tolva silo 2a gen.
+str_mu_Wagon_Gen2_Hopper                                   :Tolva 2a gen. de madera
+str_mu_Wagon_Gen3_Flat_Wagon                               :Plataforma 3a gen.
+str_mu_Wagon_Gen3_Boxcar_Type1                     :Furgón 3a gen. de madera (tipo 1)
+str_mu_Wagon_Gen3_Boxcar_Type2                     :Furgón 3a gen. de madera (tipo 2)
+str_mu_Wagon_Gen3_Tanker                                   :Carro tanque 3a gen.
+str_mu_Wagon_Gen3_Open_Wagon                               :Vagón descubierto 3a gen.
+str_mu_Wagon_Gen3_Silo_Type1                               :Tolva silo 3a gen. (tipo 1)
+str_mu_Wagon_Gen3_Silo_Type2                               :Tolva silo 3a gen. (tipo 2)
+str_mu_Wagon_Gen3_Hopper                                   :Tolva 3a gen.
+str_mu_Wagon_Gen4_Flatcar                                  :Plataforma 4a gen.
+str_mu_Wagon_Gen4_Heavy_Flatcar                    :Plataforma pesada 4a gen.
+str_mu_Wagon_Gen4_Boxcar_Type1                             :Furgón 4a gen. (tipo 1)
+str_mu_Wagon_Gen4_Boxcar_Type2                             :Furgón 4a gen. (tipo 2)
+str_mu_Wagon_Gen4_Tanker                                   :Carro tanque 4a gen.
+str_mu_Wagon_Gen4_Gondola                                  :Góndola 4a gen.
+str_mu_Wagon_Gen4_Silo_Type1                               :Tolva silo 4a gen. (tipo 1)
+str_mu_Wagon_Gen4_Silo_Type2                               :Tolva silo 4a gen. (tipo 2)
+str_mu_Wagon_Gen4_Hopper_Type1                             :Tolva de descarga automática 4a gen. (tipo 1)
+str_mu_Wagon_Gen4_Hopper_Type2                             :Tolva de descarga automática 4a gen. (tipo 2)
+str_mu_Wagon_Gen4_Car_Transporter                  :Madrina transportadora 4a gen.
+str_mu_Wagon_Gen4_Container_Carrier                :Intermodal 4a gen.
+str_mu_Wagon_Gen4_Centerbeam                               :Plataforma con viga central 4a gen.
+str_mu_Wagon_Gen5_Flatcar                                  :Plataforma 5a gen.
+str_mu_Wagon_Gen5_Heavy_Flatcar                    :Plataforma pesada 5a gen.
+str_mu_Wagon_Gen5_Boxcar_Type1                             :Furgón 5a gen. (tipo 1)
+str_mu_Wagon_Gen5_Boxcar_Type2                             :Furgón 5a gen. (tipo 2)
+str_mu_Wagon_Gen5_Tanker                                   :Carro tanque 5a gen.
+str_mu_Wagon_Gen5_Gondola                                  :Góndola 5a gen.
+str_mu_Wagon_Gen5_Silo_Type1                               :Tolva silo 5a gen. (tipo 1)
+str_mu_Wagon_Gen5_Silo_Type2                               :Tolva silo 5a gen. (tipo 2)
+str_mu_Wagon_Gen5_Hopper_Type1                             :Tolva de descarga automática 5a gen. (tipo 1)
+str_mu_Wagon_Gen5_Hopper_Type2                             :Tolva de descarga automática 5a gen. (tipo 2)
+str_mu_Wagon_Gen5_Car_Transporter                  :Madrina transportadora 5a gen.
+str_mu_Wagon_Gen5_Container_Carrier                :Intermodal 5a gen.
+str_mu_Wagon_Gen5_Centerbeam                               :Plataforma con viga central 5a gen.
+str_mu_Wagon_Gen5_Container_Doublestack    :Intermodal doble estiba 5a gen.
+str_mu_Wagon_Gen5_Superheavy_Flatcar               :Plataforma utlrapesada 5a gen.
 
-str_wagon_Service_Car_Type1                             :Vagoneta de servicio (tipo 1)
-str_wagon_Service_Car_Type2                             :Vagoneta de servicio (tipo 2)
+str_mu_Wagon_Service_Car_Type1                             :Vagoneta de servicio (tipo 1)
+str_mu_Wagon_Service_Car_Type2                             :Vagoneta de servicio (tipo 2)
 
 #coaches
-str_coach_Gen1_Wooden_2_axle_Compartment_Coach                  :Coche de compartimentos doble eje de madera
-str_coach_Gen1_Wooden_2_axle_Regional_Coach                     :Coche regional doble eje de madera
-str_coach_Gen1_Wooden_2_axle_Mail_Coach                                 :Vagón postal doble eje de madera
-str_coach_Gen1_Clerestory_Compartment_Coach                     :Coche de compartimentos con claristorio
-str_coach_Gen1_Clerestory_Regional_Coach                                :Coche regional con claristorio
-str_coach_Gen1_Clerestory_Mail_Coach                                    :Vagón postal con claristorio
-str_coach_Gen1_Wooden_3_axle_Compartment_Coach                  :Coche de compartimentos triple eje de madera
-str_coach_Gen1_Wooden_3_axle_Regional_Coach                     :Coche regional triple eje de madera
-str_coach_Gen1_Wooden_3_axle_Mail_Coach                                 :Vagón postal triple eje de madera
-str_coach_Gen2_Heavyweight_Intercity_Coach                              :Coche interurbano pesado
-str_coach_Gen2_Heavyweight_Mail_Coach                                   :Vagón postal pesado
-str_coach_Gen2_Steel_Intercity_Coach                                    :Coche interurbano de acero
-str_coach_Gen2_Steel_Compartment_Coach                                  :Coche de compartimientos de acero
-str_coach_Gen2_Steel_Regional_Coach                                     :Coche regional de acero
-str_coach_Gen2_Steel_Mail_Coach                                                 :Vagón postal de acero
-str_coach_Gen2_Steel_2_axle_Compartment_Coach                   :Coche de compartimentos doble eje de acero
-str_coach_Gen2_Steel_2_axle_Regional_Coach                              :Coche regional doble eje de acero
-str_coach_Gen2_Steel_2_axle_Mail_Coach                                  :Vagón postal doble eje de acero
-str_coach_Gen2_Steel_3_axle_Compartment_Coach                   :Coche de compartimentos triple eje de acero
-str_coach_Gen2_Steel_3_axle_Regional_Coach                              :Coche regional triple eje de acero
-str_coach_Gen2_Steel_3_axle_Mail_Coach                                  :Vagón postal triple eje de acero
-str_coach_Gen3_Steel_Lightweight_Intercity_Coach                :Coche interurbano ligero de acero
-str_coach_Gen3_Steel_Lightweight_Regional_Coach                 :Coche regional ligero de acero
-str_coach_Gen3_Steel_Lightweight_Mail_Coach                     :Vagón postal ligero de acero
-str_coach_Gen3_Aluminium_Lightweight_Intercity_Coach    :Coche interurbano interurbano de aluminio
-str_coach_Gen3_Aluminium_Lightweight_Regional_Coach     :Coche regional ligero de aluminio
-str_coach_Gen3_Aluminium_Lightweight_Mail_Coach                 :Vagón postal ligero de aluminio
-str_coach_Gen3_Gallery_Car                                                              :Coche panorámico
-str_coach_Gen3_Mk1_Intercity_Coach                                              :Coche interurbano Mk1
-str_coach_Gen3_Mk1_Regional_Coach                                               :Coche regional Mk1
-str_coach_Gen3_Mk1_Mail_Coach                                                   :Vagón postal Mk1
-str_coach_Gen3_UIC_X_Intercity_Coach                                    :Coche interurbano UIC-X
-str_coach_Gen3_TEE_Intercity_Coach                                              :Coche interurbano TEE
-str_coach_Gen3_UIC_X_Regional_Coach                                     :Coche regional UIC-X
-str_coach_Gen3_Umbauwagen_Local_Coach                                   :Coche de cercanías "Umbauwagen"
-str_coach_Gen3_Doppelstockwagen_Local_Coach                     :Coche de cercanías "Doppelstockwagen"
-str_coach_Gen3_UIC_X_Mail_Coach                                                 :Vagón postal UIC-X
-str_coach_Gen3_Indian_Intercity_Coach                                   :Coche interurbano indio
-str_coach_Gen3_Indian_Local_Coach                                               :Coche de cercanías indio
-str_coach_Gen3_Indian_Regional_Coach                                    :Coche regional indio
-str_coach_Gen3_Indian_Mail_Coach                                                :Vagón postal indio
-str_coach_Gen4_Eurofima_Intercity_Coach                                 :Coche interurbano Eurofima
-str_coach_Gen4_InterRegio_Coach                                                 :Coche InterRegio
-str_coach_Gen4_Silberling_Commuter_Coach                                :Coche de cercanías "Silberling"
-str_coach_Gen4_Eurofima_Mail_Coach                                              :Vagón postal Eurofima
-str_coach_Gen4_Double_Decker_Coach                                              :Coche de dos pisos
-str_coach_Gen4_Russian_Intercity_Coach                                  :Coche interurbano ruso
-str_coach_Gen4_Russian_Regional_Coach                                   :Coche regional ruso
-str_coach_Gen4_Russian_Mail_Coach                                               :Vagón postal ruso
-str_coach_Gen4_Superliner_Coach                                                 :Coche Superliner
-str_coach_Gen4_Superliner_California                                    :Coche Superliner California
-str_coach_Gen4_Amfleet_Regional_Coach                                   :Coche regional Amfleet
-str_coach_Gen4_Amfleet_Intercity_Coach                                  :Coche interurbano Amfleet
-str_coach_Gen4_Comet_Commuter_Coach                                     :Coche de cercanías "Comet"
-str_coach_Gen4_Horizon_Regional_Coach                                   :Coche regional Horizon
-str_coach_Gen4_Horizon_Baggage_Coach                                    :Vagón de equipaje Horizon
-str_coach_Gen4_Bombardier_Bi_level                                              :Coche Bombardier BiLevel
-str_coach_Gen5_High_Speed_Coach                                                 :Coche de alta velocidad
-str_coach_Gen5_Modern_Regional_Coach                                    :Coche regional moderno
-str_coach_Gen5_Modern_Commuter_Coach                                    :Coche de cercanías moderno
-str_coach_Gen5_Modern_Double_Decker_Coach                               :Coche de dos pisos moderno
-str_coach_Gen5_High_Speed_Double_Decker_IC2000                  :Coche de dos pisos de alta velocidad (IC2000)
-str_coach_Gen5_High_Speed_Mail_Coach                                    :Vagón postal de alta velocidad
-str_coach_Gen5_Talgo_Pendular                                                   :Coche Talgo Pendular
-str_coach_Gen5_Talgo_Pendular_Mail                                              :Vagón postal Talgo Pendular
-str_coach_Gen6_Grand_Voyager_Coach                                              :Coche Grand Voyager
-str_coach_Gen6_Grand_Regio_Coach                                                :Coche Grand Regio
-str_coach_Gen6_Metropolis_Coach                                                 :Coche Metropolis
-str_coach_Gen6_Speedmail_Coach                                                  :Coche Speedmail
-str_coach_Gen6_Super_Regio_Coach                                                :Coche Super Regio
-str_coach_Gen6_Super_Voyager_Coach                                              :Coche Super Voyager
+str_mu_Coach_Gen1_Wooden_2_axle_Compartment_Coach                  :Coche de compartimentos doble eje de madera
+str_mu_Coach_Gen1_Wooden_2_axle_Regional_Coach                     :Coche regional doble eje de madera
+str_mu_Coach_Gen1_Wooden_2_axle_Mail_Coach                                 :Vagón postal doble eje de madera
+str_mu_Coach_Gen1_Clerestory_Compartment_Coach                     :Coche de compartimentos con claristorio
+str_mu_Coach_Gen1_Clerestory_Regional_Coach                                :Coche regional con claristorio
+str_mu_Coach_Gen1_Clerestory_Mail_Coach                                    :Vagón postal con claristorio
+str_mu_Coach_Gen1_Wooden_3_axle_Compartment_Coach                  :Coche de compartimentos triple eje de madera
+str_mu_Coach_Gen1_Wooden_3_axle_Regional_Coach                     :Coche regional triple eje de madera
+str_mu_Coach_Gen1_Wooden_3_axle_Mail_Coach                                 :Vagón postal triple eje de madera
+str_mu_Coach_Gen2_Heavyweight_Intercity_Coach                              :Coche interurbano pesado
+str_mu_Coach_Gen2_Heavyweight_Mail_Coach                                   :Vagón postal pesado
+str_mu_Coach_Gen2_Steel_Intercity_Coach                                    :Coche interurbano de acero
+str_mu_Coach_Gen2_Steel_Compartment_Coach                                  :Coche de compartimientos de acero
+str_mu_Coach_Gen2_Steel_Regional_Coach                                     :Coche regional de acero
+str_mu_Coach_Gen2_Steel_Mail_Coach                                                 :Vagón postal de acero
+str_mu_Coach_Gen2_Steel_2_axle_Compartment_Coach                   :Coche de compartimentos doble eje de acero
+str_mu_Coach_Gen2_Steel_2_axle_Regional_Coach                              :Coche regional doble eje de acero
+str_mu_Coach_Gen2_Steel_2_axle_Mail_Coach                                  :Vagón postal doble eje de acero
+str_mu_Coach_Gen2_Steel_3_axle_Compartment_Coach                   :Coche de compartimentos triple eje de acero
+str_mu_Coach_Gen2_Steel_3_axle_Regional_Coach                              :Coche regional triple eje de acero
+str_mu_Coach_Gen2_Steel_3_axle_Mail_Coach                                  :Vagón postal triple eje de acero
+str_mu_Coach_Gen3_Steel_Lightweight_Intercity_Coach                :Coche interurbano ligero de acero
+str_mu_Coach_Gen3_Steel_Lightweight_Regional_Coach                 :Coche regional ligero de acero
+str_mu_Coach_Gen3_Steel_Lightweight_Mail_Coach                     :Vagón postal ligero de acero
+str_mu_Coach_Gen3_Aluminium_Lightweight_Intercity_Coach    :Coche interurbano interurbano de aluminio
+str_mu_Coach_Gen3_Aluminium_Lightweight_Regional_Coach     :Coche regional ligero de aluminio
+str_mu_Coach_Gen3_Aluminium_Lightweight_Mail_Coach                 :Vagón postal ligero de aluminio
+str_mu_Coach_Gen3_Gallery_Car                                                              :Coche panorámico
+str_mu_Coach_Gen3_Mk1_Intercity_Coach                                              :Coche interurbano Mk1
+str_mu_Coach_Gen3_Mk1_Regional_Coach                                               :Coche regional Mk1
+str_mu_Coach_Gen3_Mk1_Mail_Coach                                                   :Vagón postal Mk1
+str_mu_Coach_Gen3_UIC_X_Intercity_Coach                                    :Coche interurbano UIC-X
+str_mu_Coach_Gen3_TEE_Intercity_Coach                                              :Coche interurbano TEE
+str_mu_Coach_Gen3_UIC_X_Regional_Coach                                     :Coche regional UIC-X
+str_mu_Coach_Gen3_Umbauwagen_Local_Coach                                   :Coche de cercanías "Umbauwagen"
+str_mu_Coach_Gen3_Doppelstockwagen_Local_Coach                     :Coche de cercanías "Doppelstockwagen"
+str_mu_Coach_Gen3_UIC_X_Mail_Coach                                                 :Vagón postal UIC-X
+str_mu_Coach_Gen3_Indian_Intercity_Coach                                   :Coche interurbano indio
+str_mu_Coach_Gen3_Indian_Local_Coach                                               :Coche de cercanías indio
+str_mu_Coach_Gen3_Indian_Regional_Coach                                    :Coche regional indio
+str_mu_Coach_Gen3_Indian_Mail_Coach                                                :Vagón postal indio
+str_mu_Coach_Gen4_Eurofima_Intercity_Coach                                 :Coche interurbano Eurofima
+str_mu_Coach_Gen4_InterRegio_Coach                                                 :Coche InterRegio
+str_mu_Coach_Gen4_Silberling_Commuter_Coach                                :Coche de cercanías "Silberling"
+str_mu_Coach_Gen4_Eurofima_Mail_Coach                                              :Vagón postal Eurofima
+str_mu_Coach_Gen4_Double_Decker_Coach                                              :Coche de dos pisos
+str_mu_Coach_Gen4_Russian_Intercity_Coach                                  :Coche interurbano ruso
+str_mu_Coach_Gen4_Russian_Regional_Coach                                   :Coche regional ruso
+str_mu_Coach_Gen4_Russian_Mail_Coach                                               :Vagón postal ruso
+str_mu_Coach_Gen4_Superliner_Coach                                                 :Coche Superliner
+str_mu_Coach_Gen4_Superliner_California                                    :Coche Superliner California
+str_mu_Coach_Gen4_Amfleet_Regional_Coach                                   :Coche regional Amfleet
+str_mu_Coach_Gen4_Amfleet_Intercity_Coach                                  :Coche interurbano Amfleet
+str_mu_Coach_Gen4_Comet_Commuter_Coach                                     :Coche de cercanías "Comet"
+str_mu_Coach_Gen4_Horizon_Regional_Coach                                   :Coche regional Horizon
+str_mu_Coach_Gen4_Horizon_Baggage_Coach                                    :Vagón de equipaje Horizon
+str_mu_Coach_Gen4_Bombardier_Bi_level                                              :Coche Bombardier BiLevel
+str_mu_Coach_Gen5_High_Speed_Coach                                                 :Coche de alta velocidad
+str_mu_Coach_Gen5_Modern_Regional_Coach                                    :Coche regional moderno
+str_mu_Coach_Gen5_Modern_Commuter_Coach                                    :Coche de cercanías moderno
+str_mu_Coach_Gen5_Modern_Double_Decker_Coach                               :Coche de dos pisos moderno
+str_mu_Coach_Gen5_High_Speed_Double_Decker_IC2000                  :Coche de dos pisos de alta velocidad (IC2000)
+str_mu_Coach_Gen5_High_Speed_Mail_Coach                                    :Vagón postal de alta velocidad
+str_mu_Coach_Gen5_Talgo_Pendular                                                   :Coche Talgo Pendular
+str_mu_Coach_Gen5_Talgo_Pendular_Mail                                              :Vagón postal Talgo Pendular
+str_mu_Coach_Gen6_Grand_Voyager_Coach                                              :Coche Grand Voyager
+str_mu_Coach_Gen6_Grand_Regio_Coach                                                :Coche Grand Regio
+str_mu_Coach_Gen6_Metropolis_Coach                                                 :Coche Metropolis
+str_mu_Coach_Gen6_Speedmail_Coach                                                  :Coche Speedmail
+str_mu_Coach_Gen6_Super_Regio_Coach                                                :Coche Super Regio
+str_mu_Coach_Gen6_Super_Voyager_Coach                                              :Coche Super Voyager
 
 #special wagons
-str_mu_wagon_unpowered                  :Coche de automotor (remolque)
-str_mtro_wagon_unpowered                :Coche de metro (remolque)
-str_mglv_wagon_unpowered                :Coche de maglev (remolque)
-str_mu_cargo_wagon_unpowered    :Vagón de carga de automotor (remolque)
-str_mu_wagon_powered                    :Coche de automotor (motriz)
-str_mtro_wagon_powered                  :Coche de metro (motriz)
-str_mglv_wagon_powered                  :Coche de maglev (motriz)
-str_mu_cargo_wagon_powered              :Vagón de carga de automotor (motriz)
+str_mu_MU_Wagon_Unpowered                  :Coche de automotor (remolque)
+str_mtro_Metro_Wagon_Unpowered                :Coche de metro (remolque)
+str_mglv_Maglev_Wagon_Unpowered                :Coche de maglev (remolque)
+str_mu_MU_Cargo_Wagon_Unpowered    :Vagón de carga de automotor (remolque)
+str_mu_MU_Wagon_Powered                    :Coche de automotor (motriz)
+str_mtro_Metro_Wagon_Powered                  :Coche de metro (motriz)
+str_mglv_Maglev_Wagon_Powered                  :Coche de maglev (motriz)
+str_mu_MU_Cargo_Wagon_Powered              :Vagón de carga de automotor (motriz)
 
 #Obsolete vehicles
 

@@ -52,6 +52,6 @@ switch(FEAT_TRAINS, SELF, switch_electric_Japan_JR_EH500_articulated, extra_call
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

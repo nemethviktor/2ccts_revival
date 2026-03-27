@@ -35,6 +35,6 @@ switch(FEAT_TRAINS, SELF, switch_steam_Poland_PKP_Okz32_animation, motion_counte
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

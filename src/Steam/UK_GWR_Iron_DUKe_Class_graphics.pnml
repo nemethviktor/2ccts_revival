@@ -63,6 +63,6 @@ switch(FEAT_TRAINS, SELF, switch_steam_UK_GWR_Iron_DUKe_Class_articulated, extra
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

@@ -23,6 +23,6 @@ spriteset(spriteset_mglv_Germany_DB_182_ES64UM_Mutus, "gfx/Maglev/Germany_DB_182
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

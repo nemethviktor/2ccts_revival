@@ -63,6 +63,6 @@ switch(FEAT_TRAINS, SELF, switch_steam_Chile_FCAB_4_8_2_articulated, extra_callb
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_Belgium_NMBS_SNCB_62, "gfx/Diesel/Belgium_NMBS_SNCB_6
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

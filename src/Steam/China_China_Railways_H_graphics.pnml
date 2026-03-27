@@ -63,6 +63,6 @@ switch(FEAT_TRAINS, SELF, switch_steam_China_China_Railways_H_articulated, extra
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

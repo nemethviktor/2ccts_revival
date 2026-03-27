@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_Japan_JNR_DF50, "gfx/Diesel/Japan_JNR_DF50.png") {
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

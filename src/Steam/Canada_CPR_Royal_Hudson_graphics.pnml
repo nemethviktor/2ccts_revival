@@ -63,6 +63,6 @@ switch(FEAT_TRAINS, SELF, switch_steam_Canada_CPR_Royal_Hudson_articulated, extr
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

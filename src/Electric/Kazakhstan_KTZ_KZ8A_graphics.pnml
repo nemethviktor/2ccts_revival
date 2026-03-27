@@ -53,6 +53,6 @@ switch(FEAT_TRAINS, SELF, switch_electric_Kazakhstan_KTZ_KZ8A_articulated, extra
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

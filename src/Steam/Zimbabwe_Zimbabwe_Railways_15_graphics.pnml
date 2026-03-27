@@ -78,6 +78,6 @@ switch(FEAT_TRAINS, SELF, switch_steam_Zimbabwe_Zimbabwe_Railways_15_articulated
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

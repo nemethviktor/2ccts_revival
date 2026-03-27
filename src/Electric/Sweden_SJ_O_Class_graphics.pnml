@@ -73,6 +73,6 @@ switch(FEAT_TRAINS, SELF, switch_electric_Sweden_SJ_O_Class_articulated, extra_c
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

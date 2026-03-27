@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_India_Indian_Railways_WDM_2, "gfx/Diesel/India_Indian
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

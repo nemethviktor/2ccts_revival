@@ -63,6 +63,6 @@ switch(FEAT_TRAINS, SELF, switch_steam_Israel_Israel_Railways_H_articulated, ext
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

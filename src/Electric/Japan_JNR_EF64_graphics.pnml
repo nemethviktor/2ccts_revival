@@ -24,6 +24,6 @@ spriteset(spriteset_electric_Japan_JNR_EF64, "gfx/Electric/Japan_JNR_EF64.png") 
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

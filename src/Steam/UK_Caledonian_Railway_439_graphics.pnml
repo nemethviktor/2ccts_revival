@@ -35,6 +35,6 @@ switch(FEAT_TRAINS, SELF, switch_steam_UK_Caledonian_Railway_439_animation, moti
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

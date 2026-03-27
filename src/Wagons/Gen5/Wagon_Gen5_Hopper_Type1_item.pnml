@@ -1,0 +1,67 @@
+
+//  Copyright (C) 2017 Transportman // V. Nemeth 2026+
+//  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
+
+// Cargo capacity
+
+    switch(FEAT_TRAINS, SELF, switch_mu_Wagon_Gen5_Hopper_Type1_capacity_engine, cargo_classes) { \
+        bitmask(CC_MAIL): 65/2; \
+        bitmask(CC_ARMOURED): 65/4; \
+        65; \
+    }
+
+
+    switch(FEAT_TRAINS, SELF, switch_mu_Wagon_Gen5_Hopper_Type1_capacity_wagon, cargo_classes) { \
+        bitmask(CC_MAIL): 0/2; \
+        bitmask(CC_ARMOURED): 0/4; \
+        0; \
+    }
+
+item(FEAT_TRAINS, item_mu_Wagon_Gen5_Hopper_Type1) {
+    property {
+        name: string(str_mu_Wagon_Gen5_Hopper_Type1);
+        climates_available: ((((param_region_northern_europe || param_region_eastern_europe || param_region_southern_europe || param_region_western_europe) || param_region_asia || param_region_africa) || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
+        introduction_date: date(2000,1,1);
+        model_life: VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 25;
+        retire_early: 20;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
+        cost_factor: 34.07985;
+        running_cost_factor: 32.55597;
+        speed: 120 km/h;
+        power: 0 hp;
+        cargo_capacity: 65;
+        weight: 26 ton;
+        tractive_effort_coefficient: 0.3;
+        air_drag_coefficient: 0;
+
+        reliability_decay: 20;
+        refittable_cargo_classes: bitmask(CC_BULK);non_refittable_cargo_classes: bitmask(CC_NON_POURABLE);cargo_allow_refit: [COAL, IORE, CORE, AORE, CLAY, CMNT, GRVL, LIME, SAND, SGBT];cargo_disallow_refit: [PASS, MAIL, TOUR, OIL_, LVST, GOOD, GRAI, WOOD, STEL, VALU, PAPR, WHEA, FOOD, GOLD, RUBR, FRUT, MAIZ, WATR, DIAM, SUGR, TOYS, BATT, SWET, TOFF, COLA, CTCD, BUBL, PLST, FZDR, BEER, BDMT, BRCK, CERA, CERE, COPR, DYES, ENSP, FERT, FICR, FISH, FMSP, GLAS, JAVA, MILK, MNSP, OLSD, PETR, PLAS, POTA, RCYC, RFPR, SCMT, SGCN, SULP, VEHI, VPTS, WDPR, WOOL, URAN, YETI, YETY];
+        cargo_age_period: 185;
+        misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_AUTOREFIT);
+        refit_cost: 0;
+        ai_special_flag: AI_FLAG_CARGO;
+        track_type: [STANDARD_GAUGE_RAILTYPE_NONE, NARROW_GAUGE_RAILTYPE_NONE, BROAD_GAUGE_RAILTYPE_NONE];
+        running_cost_base: RUNNING_COST_DIESEL;
+        engine_class: ENGINE_CLASS_DIESEL;
+        visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+
+        sprite_id: SPRITE_ID_NEW_TRAIN;
+        dual_headed: 0;
+        length: 8;
+        extra_power_per_wagon: 0;
+        bitmask_vehicle_info: 0;
+    }
+    graphics {
+        purchase: spriteset_mu_Wagon_Gen5_Hopper_Type1_purchase;
+        cargo_capacity: switch_mu_Wagon_Gen5_Hopper_Type1_capacity_engine;
+        // no 'visual_effect' or 'visual_effect_and_powered'
+        // no 'length'
+        // no 'articulated_part'
+        // no 'can_attach'
+        // Add calls to defined switches below
+        // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
+        // PURCHASETEXT_SWITCH_CALL // this is actually blank
+        default: switch_mu_Wagon_Gen5_Hopper_Type1_cargo_selection;
+    }
+}

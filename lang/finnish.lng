@@ -4,7 +4,7 @@
 #Main grf title and description
 STR_GRF_NAME                    :{TITLE}
 STR_GRF_DESCRIPTION             :{SILVER}2cc Trains of the World in NML{}{}(c)2ccts{}Lisenssi:GPLv2 tai korkeampi.{}Yksityiskohdat readme:ssa.
-STR_GRF_URL             :https://dev.openttdcoop.org/projects/2ccts
+STR_GRF_URL             :https://github.com/nemethviktor/2ccts_revival
 
 #General error messages
 str_used_with_dynamic_engines           :dynamic_engines = true (asetus openttd.cfg -tiedostossa)
@@ -32,20 +32,20 @@ STR_PARAM_CONCEPT                                               :Konseptiajoneuv
 STR_PARAM_CONCEPT_DESC                                  :Käytä konseptiajoneuvoja (tällä asetuksella ei ole tällä hetkellä merkitystä)
 STR_PARAM_REGION_AFRICA                                 :Afrikka
 STR_PARAM_REGION_AFRICA_DESC                    :Käytä Afrikkalaisia ajoneuvoja
-STR_PARAM_REGION_NORTHAMERICA                   :Pohjois-Amerikka
-STR_PARAM_REGION_NORTHAMERICA_DESC              :Käytä Pohjois-Amerikkalaisia ajoneuvoja
-STR_PARAM_REGION_SOUTHAMERICA                   :Etelä-Amerikka
-STR_PARAM_REGION_SOUTHAMERICA_DESC              :Käytä Etelä-Amerikkalaisia ajoneuvoja
+STR_PARAM_REGION_NORTH_AMERICA                   :Pohjois-Amerikka
+STR_PARAM_REGION_NORTH_AMERICA_DESC              :Käytä Pohjois-Amerikkalaisia ajoneuvoja
+STR_PARAM_REGION_SOUTH_AMERICA                   :Etelä-Amerikka
+STR_PARAM_REGION_SOUTH_AMERICA_DESC              :Käytä Etelä-Amerikkalaisia ajoneuvoja
 STR_PARAM_REGION_ASIA                                   :Aasia
 STR_PARAM_REGION_ASIA_DESC                              :Käytä Aasialaisia ajoneuvoja
-STR_PARAM_REGION_NORTHERNEUROPE                 :Pohjois-Eurooppa
-STR_PARAM_REGION_NORTHERNEUROPE_DESC    :Käytä Pohjois-Eurooppalaisia ajoneuvoja
-STR_PARAM_REGION_EASTERNEUROPE                  :Itä-Eurooppa
-STR_PARAM_REGION_EASTERNEUROPE_DESC             :Käytä Itä-Eurooppalaisia ajoneuvoja
-STR_PARAM_REGION_SOUTHERNEUROPE                 :Etelä-Eurooppa
-STR_PARAM_REGION_SOUTHERNEUROPE_DESC    :Käytä Etelä-Eurooppalaisia ajoneuvoja
-STR_PARAM_REGION_WESTERNEUROPE                  :Länsi-Eurooppa
-STR_PARAM_REGION_WESTERNEUROPE_DESC             :Käytä Länsi-Eurooppalaisia ajoneuvoja
+STR_PARAM_REGION_NORTHERN_EUROPE                 :Pohjois-Eurooppa
+STR_PARAM_REGION_NORTHERN_EUROPE_DESC    :Käytä Pohjois-Eurooppalaisia ajoneuvoja
+STR_PARAM_REGION_EASTERN_EUROPE                  :Itä-Eurooppa
+STR_PARAM_REGION_EASTERN_EUROPE_DESC             :Käytä Itä-Eurooppalaisia ajoneuvoja
+STR_PARAM_REGION_SOUTHERN_EUROPE                 :Etelä-Eurooppa
+STR_PARAM_REGION_SOUTHERN_EUROPE_DESC    :Käytä Etelä-Eurooppalaisia ajoneuvoja
+STR_PARAM_REGION_WESTERN_EUROPE                  :Länsi-Eurooppa
+STR_PARAM_REGION_WESTERN_EUROPE_DESC             :Käytä Länsi-Eurooppalaisia ajoneuvoja
 STR_PARAM_REGION_OCEANIA                                :Oseania
 STR_PARAM_REGION_OCEANIA_DESC                   :Käytä Oseanialaisia ajoneuvoja
 
@@ -158,7 +158,7 @@ str_diesel_Australia_Queensland_Rail_2100                               :Queensl
 str_diesel_Croatia_HZ_2062                                                              :HZ 2062 (Diesel)
 str_diesel_Sweden_SJ_V4                                                                 :SJ V4 (Diesel)
 str_diesel_Canada_CNR_MLW_M420W                                                 :CNR MLW M420W (Diesel)
-str_diesel_USA_Amtrack_SDP_40F                                                  :Amtrack SDP-40F (Diesel)
+str_diesel_USA_Amtrak_SDP_40F                                                  :Amtrak SDP-40F (Diesel)
 str_diesel_China_China_Railways_DFH3                                    :China Railways DFH3 (Diesel)
 str_diesel_Panama_Panama_Canal_Railway_EMD_F40PH                :Panama Canal Railway EMD F40PH (Diesel)
 str_diesel_Portugal_CP_1900                                                     :CP 1900 (Diesel)
@@ -356,137 +356,137 @@ str_mglv_China_Transrapid       :Shanghai Transrapid (Maglev)
 str_mglv_Japan_MLX01_901        :JR MLX01-901 (Maglev)
 
 #wagons
-str_wagon_Gen1_Flat_Wagon                               :1. sukupolven avolavavaunu
-str_wagon_Gen1_Boxcar                                   :1. sukupolven puinen katettu tavaravaunu
-str_wagon_Gen1_Tanker                                   :1. sukupolven säiliövaunu
-str_wagon_Gen1_Open_Wagon                               :1. sukupolven puinen lavavaunu
-str_wagon_Gen2_Flat_Wagon                               :2. sukupolven avolavavaunu
-str_wagon_Gen2_Boxcar_Type1                             :2. sukupolven katettu puinen rahtivaunu (Tyyppi 1)
-str_wagon_Gen2_Boxcar_Type2                             :2. sukupolven katettu puinen rahtivaunu (Tyyppi 2)
-str_wagon_Gen2_Tanker                                   :2. sukupolven säiliövaunu
-str_wagon_Gen2_Open_Wagon                               :2. sukupolven puinen lavavaunu
-str_wagon_Gen2_Silo                                     :2. sukupolven siilovaunu
-str_wagon_Gen2_Hopper                                   :2. sukupolven puinen suppilovaunu
-str_wagon_Gen3_Flat_Wagon                               :3. sukupolven avolavavaunu
-str_wagon_Gen3_Boxcar_Type1                     :3. sukupolven katettu puinen rahtivaunu (Tyyppi 1)
-str_wagon_Gen3_Boxcar_Type2                     :3. sukupolven katettu puinen rahtivaunu (Tyyppi 2)
-str_wagon_Gen3_Tanker                                   :3. sukupolven säiliövaunu
-str_wagon_Gen3_Open_Wagon                               :3. sukupolven lavavaunu
-str_wagon_Gen3_Silo_Type1                               :3. sukupolven siilovaunu (Tyyppi 1)
-str_wagon_Gen3_Silo_Type2                               :3. sukupolven siilovaunu (Tyyppi 2)
-str_wagon_Gen3_Hopper                                   :3. sukupolven suppilovaunu
-str_wagon_Gen4_Flatcar                                  :4. sukupolven avolavavaunu
-str_wagon_Gen4_Heavy_Flatcar                    :4. sukupolven raskas avolavavaunu
-str_wagon_Gen4_Boxcar_Type1                             :4. sukupolven katettu rahtivaunu (Tyyppi 1)
-str_wagon_Gen4_Boxcar_Type2                             :4. sukupolven katettu rahtivaunu (Tyyppi 2)
-str_wagon_Gen4_Tanker                                   :4. sukupolven säiliövaunu
-str_wagon_Gen4_Gondola                                  :4. sukupolven gondolivaunu
-str_wagon_Gen4_Silo_Type1                               :4. sukupolven siilovaunu (Tyyppi 1)
-str_wagon_Gen4_Silo_Type2                               :4. sukupolven siilovaunu (Tyyppi 2)
-str_wagon_Gen4_Hopper_Type1                             :4. sukupolven itsestäntyhjentyvä suppilovaunu (Tyyppi 1)
-str_wagon_Gen4_Hopper_Type2                             :4. sukupolven itsestääntyhjentyvä suppilovaunu (Tyyppi 2)
-str_wagon_Gen4_Car_Transporter                  :4. sukupolven autonkuljetusvaunu
-str_wagon_Gen4_Container_Carrier                :4. sukupolven konttivaunu
-str_wagon_Gen4_Centerbeam                               :4. sukupolven keskilaitavaunu
-str_wagon_Gen5_Flatcar                                  :5. sukupolven avolavavaunu
-str_wagon_Gen5_Heavy_Flatcar                    :5. sukupolven raskas avolavavaunu
-str_wagon_Gen5_Boxcar_Type1                             :5. sukupolven katettu rahtivaunu (Tyyppi 1)
-str_wagon_Gen5_Boxcar_Type2                             :5. sukupolven katettu rahtivaunu (Tyyppi 2)
-str_wagon_Gen5_Tanker                                   :5. sukupolven säiliövaunu
-str_wagon_Gen5_Gondola                                  :5. sukupolven gondolivaunu
-str_wagon_Gen5_Silo_Type1                               :5. sukupolven siilovaunu (Tyyppi 1)
-str_wagon_Gen5_Silo_Type2                               :5. sukupolven siilovaunu (Tyyppi 2)
-str_wagon_Gen5_Hopper_Type1                             :5. sukupolven itsestääntyhjentyvä suppilovaunu (Tyyppi 1)
-str_wagon_Gen5_Hopper_Type2                             :5. sukupolven itsestääntyhjentyvä suppilovaunu (Tyyppi 2)
-str_wagon_Gen5_Car_Transporter                  :5. sukupolven autonkuljetusvaunu
-str_wagon_Gen5_Container_Carrier                :5. sukupolven konttivaunu
-str_wagon_Gen5_Centerbeam                               :5. sukupolven keskilaitavaunu
-str_wagon_Gen5_Container_Doublestack    :5. sukupolven kerroskonttivaunu
-str_wagon_Gen5_Superheavy_Flatcar               :5. sukupolven superraskas avolavavaunu
+str_mu_Wagon_Gen1_Flat_Wagon                               :1. sukupolven avolavavaunu
+str_mu_Wagon_Gen1_Boxcar                                   :1. sukupolven puinen katettu tavaravaunu
+str_mu_Wagon_Gen1_Tanker                                   :1. sukupolven säiliövaunu
+str_mu_Wagon_Gen1_Open_Wagon                               :1. sukupolven puinen lavavaunu
+str_mu_Wagon_Gen2_Flat_Wagon                               :2. sukupolven avolavavaunu
+str_mu_Wagon_Gen2_Boxcar_Type1                             :2. sukupolven katettu puinen rahtivaunu (Tyyppi 1)
+str_mu_Wagon_Gen2_Boxcar_Type2                             :2. sukupolven katettu puinen rahtivaunu (Tyyppi 2)
+str_mu_Wagon_Gen2_Tanker                                   :2. sukupolven säiliövaunu
+str_mu_Wagon_Gen2_Open_Wagon                               :2. sukupolven puinen lavavaunu
+str_mu_Wagon_Gen2_Silo                                     :2. sukupolven siilovaunu
+str_mu_Wagon_Gen2_Hopper                                   :2. sukupolven puinen suppilovaunu
+str_mu_Wagon_Gen3_Flat_Wagon                               :3. sukupolven avolavavaunu
+str_mu_Wagon_Gen3_Boxcar_Type1                     :3. sukupolven katettu puinen rahtivaunu (Tyyppi 1)
+str_mu_Wagon_Gen3_Boxcar_Type2                     :3. sukupolven katettu puinen rahtivaunu (Tyyppi 2)
+str_mu_Wagon_Gen3_Tanker                                   :3. sukupolven säiliövaunu
+str_mu_Wagon_Gen3_Open_Wagon                               :3. sukupolven lavavaunu
+str_mu_Wagon_Gen3_Silo_Type1                               :3. sukupolven siilovaunu (Tyyppi 1)
+str_mu_Wagon_Gen3_Silo_Type2                               :3. sukupolven siilovaunu (Tyyppi 2)
+str_mu_Wagon_Gen3_Hopper                                   :3. sukupolven suppilovaunu
+str_mu_Wagon_Gen4_Flatcar                                  :4. sukupolven avolavavaunu
+str_mu_Wagon_Gen4_Heavy_Flatcar                    :4. sukupolven raskas avolavavaunu
+str_mu_Wagon_Gen4_Boxcar_Type1                             :4. sukupolven katettu rahtivaunu (Tyyppi 1)
+str_mu_Wagon_Gen4_Boxcar_Type2                             :4. sukupolven katettu rahtivaunu (Tyyppi 2)
+str_mu_Wagon_Gen4_Tanker                                   :4. sukupolven säiliövaunu
+str_mu_Wagon_Gen4_Gondola                                  :4. sukupolven gondolivaunu
+str_mu_Wagon_Gen4_Silo_Type1                               :4. sukupolven siilovaunu (Tyyppi 1)
+str_mu_Wagon_Gen4_Silo_Type2                               :4. sukupolven siilovaunu (Tyyppi 2)
+str_mu_Wagon_Gen4_Hopper_Type1                             :4. sukupolven itsestäntyhjentyvä suppilovaunu (Tyyppi 1)
+str_mu_Wagon_Gen4_Hopper_Type2                             :4. sukupolven itsestääntyhjentyvä suppilovaunu (Tyyppi 2)
+str_mu_Wagon_Gen4_Car_Transporter                  :4. sukupolven autonkuljetusvaunu
+str_mu_Wagon_Gen4_Container_Carrier                :4. sukupolven konttivaunu
+str_mu_Wagon_Gen4_Centerbeam                               :4. sukupolven keskilaitavaunu
+str_mu_Wagon_Gen5_Flatcar                                  :5. sukupolven avolavavaunu
+str_mu_Wagon_Gen5_Heavy_Flatcar                    :5. sukupolven raskas avolavavaunu
+str_mu_Wagon_Gen5_Boxcar_Type1                             :5. sukupolven katettu rahtivaunu (Tyyppi 1)
+str_mu_Wagon_Gen5_Boxcar_Type2                             :5. sukupolven katettu rahtivaunu (Tyyppi 2)
+str_mu_Wagon_Gen5_Tanker                                   :5. sukupolven säiliövaunu
+str_mu_Wagon_Gen5_Gondola                                  :5. sukupolven gondolivaunu
+str_mu_Wagon_Gen5_Silo_Type1                               :5. sukupolven siilovaunu (Tyyppi 1)
+str_mu_Wagon_Gen5_Silo_Type2                               :5. sukupolven siilovaunu (Tyyppi 2)
+str_mu_Wagon_Gen5_Hopper_Type1                             :5. sukupolven itsestääntyhjentyvä suppilovaunu (Tyyppi 1)
+str_mu_Wagon_Gen5_Hopper_Type2                             :5. sukupolven itsestääntyhjentyvä suppilovaunu (Tyyppi 2)
+str_mu_Wagon_Gen5_Car_Transporter                  :5. sukupolven autonkuljetusvaunu
+str_mu_Wagon_Gen5_Container_Carrier                :5. sukupolven konttivaunu
+str_mu_Wagon_Gen5_Centerbeam                               :5. sukupolven keskilaitavaunu
+str_mu_Wagon_Gen5_Container_Doublestack    :5. sukupolven kerroskonttivaunu
+str_mu_Wagon_Gen5_Superheavy_Flatcar               :5. sukupolven superraskas avolavavaunu
 
-str_wagon_Service_Car_Type1                             :Huoltovaunu (Tyyppi 1)
-str_wagon_Service_Car_Type2                             :Huoltovaunu (Tyyppi 2)
+str_mu_Wagon_Service_Car_Type1                             :Huoltovaunu (Tyyppi 1)
+str_mu_Wagon_Service_Car_Type2                             :Huoltovaunu (Tyyppi 2)
 
 #coaches
-str_coach_Gen1_Wooden_2_axle_Compartment_Coach                  :Puinen 2-akselinen hyttivaunu
-str_coach_Gen1_Wooden_2_axle_Regional_Coach                     :Puinen 2-akselinen taajamaliikennevaunu
-str_coach_Gen1_Wooden_2_axle_Mail_Coach                                 :Puinen 2-akselinen postivaunu
-str_coach_Gen1_Clerestory_Compartment_Coach                     :Clerestory hyttivaunu
-str_coach_Gen1_Clerestory_Regional_Coach                                :Clerestory taajamaliikennevaunu
-str_coach_Gen1_Clerestory_Mail_Coach                                    :Clerestory postivaunu
-str_coach_Gen1_Wooden_3_axle_Compartment_Coach                  :Puinen 3-akselinen osastollinen matkustajavaunu
-str_coach_Gen1_Wooden_3_axle_Regional_Coach                     :Puinen 3-akselinen taajamaliikennevaunu
-str_coach_Gen1_Wooden_3_axle_Mail_Coach                                 :Puinen 3-akselinen postivaunu
-str_coach_Gen2_Heavyweight_Intercity_Coach                              :Raskas InterCity-vaunu
-str_coach_Gen2_Heavyweight_Mail_Coach                                   :Raskas postivaunu
-str_coach_Gen2_Steel_Intercity_Coach                                    :Teräksinen InterCity-vaunu
-str_coach_Gen2_Steel_Compartment_Coach                                  :Teräksinen hyttivaunu
-str_coach_Gen2_Steel_Regional_Coach                                     :Teräksinen taajamaliikennevaunu
-str_coach_Gen2_Steel_Mail_Coach                                                 :Teräksinen postivaunu
-str_coach_Gen2_Steel_2_axle_Compartment_Coach                   :Teräksinen 2-akselinen hyttivaunu
-str_coach_Gen2_Steel_2_axle_Regional_Coach                              :Teräksinen 2-akselinen taajamaliikennevaunu
-str_coach_Gen2_Steel_2_axle_Mail_Coach                                  :Teräksinen 2-akselinen postivaunu
-str_coach_Gen2_Steel_3_axle_Compartment_Coach                   :Teräksinen 3-akselinen hyttivaunu
-str_coach_Gen2_Steel_3_axle_Regional_Coach                              :Teräksinen 3-akselinen taajamaliikennevaunu
-str_coach_Gen2_Steel_3_axle_Mail_Coach                                  :Teräksinen 3-akselinen postivaunu
-str_coach_Gen3_Steel_Lightweight_Intercity_Coach                :Kevyt teräksinen InterCity-vaunu
-str_coach_Gen3_Steel_Lightweight_Regional_Coach                 :Kevyt teräksinen taajamaliikennevaunu
-str_coach_Gen3_Steel_Lightweight_Mail_Coach                     :Kevyt teräksinen postivaunu
-str_coach_Gen3_Aluminium_Lightweight_Intercity_Coach    :Kevyt alumiininen InterCity-vaunu
-str_coach_Gen3_Aluminium_Lightweight_Regional_Coach     :Kevyt alumiininen taajamaliikennevaunu
-str_coach_Gen3_Aluminium_Lightweight_Mail_Coach                 :Kevyt alumiininen postivaunu
-str_coach_Gen3_Gallery_Car                                                              :Lehterivaunu
-str_coach_Gen3_Mk1_Intercity_Coach                                              :Mk1 InterCity-vaunu
-str_coach_Gen3_Mk1_Regional_Coach                                               :Mk1 taajamaliikennevaunu
-str_coach_Gen3_Mk1_Mail_Coach                                                   :Mk1 postivaunu
-str_coach_Gen3_UIC_X_Intercity_Coach                                    :UIC-X InterCity-vaunu
-str_coach_Gen3_TEE_Intercity_Coach                                              :TEE InterCity-vaunu
-str_coach_Gen3_UIC_X_Regional_Coach                                     :UIC-X taajamaliikennevaunu
-str_coach_Gen3_Umbauwagen_Local_Coach                                   :Umbauwagen lähiliikennevaunu
-str_coach_Gen3_Doppelstockwagen_Local_Coach                     :Doppelstockwagen lähiliikennevaunu
-str_coach_Gen3_UIC_X_Mail_Coach                                                 :UIC-X postivaunu
-str_coach_Gen3_Indian_Intercity_Coach                                   :Intialainen InterCity-vaunu
-str_coach_Gen3_Indian_Local_Coach                                               :Intialainen lähiliikennevaunu
-str_coach_Gen3_Indian_Regional_Coach                                    :Intialainen taajamaliikennevaunu
-str_coach_Gen3_Indian_Mail_Coach                                                :Intialainen postivaunu
-str_coach_Gen4_Eurofima_Intercity_Coach                                 :Eurofima matkustajavaunu
-str_coach_Gen4_InterRegio_Coach                                                 :InterRegio matkustajavaunu
-str_coach_Gen4_Silberling_Commuter_Coach                                :Silberling lähiliikennevaunu
-str_coach_Gen4_Eurofima_Mail_Coach                                              :Eurofirma postivaunu
-str_coach_Gen4_Double_Decker_Coach                                              :Kaksikerrosvaunu
-str_coach_Gen4_Russian_Intercity_Coach                                  :Venäläinen InterCity-vaunu
-str_coach_Gen4_Russian_Regional_Coach                                   :Venäläinen taajamaliikennevaunu
-str_coach_Gen4_Russian_Mail_Coach                                               :Venäläinen postivaunu
-str_coach_Gen4_Superliner_Coach                                                 :Superliner matkustajavaunu
-str_coach_Gen4_Superliner_California                                    :Superliner California
-str_coach_Gen4_Amfleet_Regional_Coach                                   :Amfleet taajamaliikennevaunu
-str_coach_Gen4_Amfleet_Intercity_Coach                                  :Amfleet InterCity-vaunu
-str_coach_Gen4_Comet_Commuter_Coach                                     :Comet lähiliikennevaunu
-str_coach_Gen4_Horizon_Regional_Coach                                   :Horizon taajamaliikennevaunu
-str_coach_Gen4_Horizon_Baggage_Coach                                    :Horizon matkatavaravaunu
-str_coach_Gen4_Bombardier_Bi_level                                              :Bombardier Bi-level
-str_coach_Gen5_High_Speed_Coach                                                 :Suurnopeusvaunu
-str_coach_Gen5_Modern_Regional_Coach                                    :Moderni taajamaliikennevaunu
-str_coach_Gen5_Modern_Commuter_Coach                                    :Moderni lähiliikennevaunu
-str_coach_Gen5_Modern_Double_Decker_Coach                               :Moderni kaksikerrosvaunu
-str_coach_Gen5_High_Speed_Double_Decker_IC2000                  :Kaksikerroksinen suurnopeusvaunu (IC2000)
-str_coach_Gen5_High_Speed_Mail_Coach                                    :Pikapostivaunu
-str_coach_Gen5_Talgo_Pendular                                                   :Talgo Pendular matkustajavaunu
-str_coach_Gen5_Talgo_Pendular_Mail                                              :Talgo Pendular postivaunu
-str_coach_Gen6_Grand_Voyager_Coach                                              :Grand Voyager matkustajavaunu
-str_coach_Gen6_Grand_Regio_Coach                                                :Grand Regio matkustajavaunu
-str_coach_Gen6_Metropolis_Coach                                                 :Metropolis matkustajavaunu
-str_coach_Gen6_Speedmail_Coach                                                  :Speedmail postivaunu
-str_coach_Gen6_Super_Regio_Coach                                                :Super Regio matkustajavaunu
-str_coach_Gen6_Super_Voyager_Coach                                              :Super Voyager matkustajavaunu
+str_mu_Coach_Gen1_Wooden_2_axle_Compartment_Coach                  :Puinen 2-akselinen hyttivaunu
+str_mu_Coach_Gen1_Wooden_2_axle_Regional_Coach                     :Puinen 2-akselinen taajamaliikennevaunu
+str_mu_Coach_Gen1_Wooden_2_axle_Mail_Coach                                 :Puinen 2-akselinen postivaunu
+str_mu_Coach_Gen1_Clerestory_Compartment_Coach                     :Clerestory hyttivaunu
+str_mu_Coach_Gen1_Clerestory_Regional_Coach                                :Clerestory taajamaliikennevaunu
+str_mu_Coach_Gen1_Clerestory_Mail_Coach                                    :Clerestory postivaunu
+str_mu_Coach_Gen1_Wooden_3_axle_Compartment_Coach                  :Puinen 3-akselinen osastollinen matkustajavaunu
+str_mu_Coach_Gen1_Wooden_3_axle_Regional_Coach                     :Puinen 3-akselinen taajamaliikennevaunu
+str_mu_Coach_Gen1_Wooden_3_axle_Mail_Coach                                 :Puinen 3-akselinen postivaunu
+str_mu_Coach_Gen2_Heavyweight_Intercity_Coach                              :Raskas InterCity-vaunu
+str_mu_Coach_Gen2_Heavyweight_Mail_Coach                                   :Raskas postivaunu
+str_mu_Coach_Gen2_Steel_Intercity_Coach                                    :Teräksinen InterCity-vaunu
+str_mu_Coach_Gen2_Steel_Compartment_Coach                                  :Teräksinen hyttivaunu
+str_mu_Coach_Gen2_Steel_Regional_Coach                                     :Teräksinen taajamaliikennevaunu
+str_mu_Coach_Gen2_Steel_Mail_Coach                                                 :Teräksinen postivaunu
+str_mu_Coach_Gen2_Steel_2_axle_Compartment_Coach                   :Teräksinen 2-akselinen hyttivaunu
+str_mu_Coach_Gen2_Steel_2_axle_Regional_Coach                              :Teräksinen 2-akselinen taajamaliikennevaunu
+str_mu_Coach_Gen2_Steel_2_axle_Mail_Coach                                  :Teräksinen 2-akselinen postivaunu
+str_mu_Coach_Gen2_Steel_3_axle_Compartment_Coach                   :Teräksinen 3-akselinen hyttivaunu
+str_mu_Coach_Gen2_Steel_3_axle_Regional_Coach                              :Teräksinen 3-akselinen taajamaliikennevaunu
+str_mu_Coach_Gen2_Steel_3_axle_Mail_Coach                                  :Teräksinen 3-akselinen postivaunu
+str_mu_Coach_Gen3_Steel_Lightweight_Intercity_Coach                :Kevyt teräksinen InterCity-vaunu
+str_mu_Coach_Gen3_Steel_Lightweight_Regional_Coach                 :Kevyt teräksinen taajamaliikennevaunu
+str_mu_Coach_Gen3_Steel_Lightweight_Mail_Coach                     :Kevyt teräksinen postivaunu
+str_mu_Coach_Gen3_Aluminium_Lightweight_Intercity_Coach    :Kevyt alumiininen InterCity-vaunu
+str_mu_Coach_Gen3_Aluminium_Lightweight_Regional_Coach     :Kevyt alumiininen taajamaliikennevaunu
+str_mu_Coach_Gen3_Aluminium_Lightweight_Mail_Coach                 :Kevyt alumiininen postivaunu
+str_mu_Coach_Gen3_Gallery_Car                                                              :Lehterivaunu
+str_mu_Coach_Gen3_Mk1_Intercity_Coach                                              :Mk1 InterCity-vaunu
+str_mu_Coach_Gen3_Mk1_Regional_Coach                                               :Mk1 taajamaliikennevaunu
+str_mu_Coach_Gen3_Mk1_Mail_Coach                                                   :Mk1 postivaunu
+str_mu_Coach_Gen3_UIC_X_Intercity_Coach                                    :UIC-X InterCity-vaunu
+str_mu_Coach_Gen3_TEE_Intercity_Coach                                              :TEE InterCity-vaunu
+str_mu_Coach_Gen3_UIC_X_Regional_Coach                                     :UIC-X taajamaliikennevaunu
+str_mu_Coach_Gen3_Umbauwagen_Local_Coach                                   :Umbauwagen lähiliikennevaunu
+str_mu_Coach_Gen3_Doppelstockwagen_Local_Coach                     :Doppelstockwagen lähiliikennevaunu
+str_mu_Coach_Gen3_UIC_X_Mail_Coach                                                 :UIC-X postivaunu
+str_mu_Coach_Gen3_Indian_Intercity_Coach                                   :Intialainen InterCity-vaunu
+str_mu_Coach_Gen3_Indian_Local_Coach                                               :Intialainen lähiliikennevaunu
+str_mu_Coach_Gen3_Indian_Regional_Coach                                    :Intialainen taajamaliikennevaunu
+str_mu_Coach_Gen3_Indian_Mail_Coach                                                :Intialainen postivaunu
+str_mu_Coach_Gen4_Eurofima_Intercity_Coach                                 :Eurofima matkustajavaunu
+str_mu_Coach_Gen4_InterRegio_Coach                                                 :InterRegio matkustajavaunu
+str_mu_Coach_Gen4_Silberling_Commuter_Coach                                :Silberling lähiliikennevaunu
+str_mu_Coach_Gen4_Eurofima_Mail_Coach                                              :Eurofirma postivaunu
+str_mu_Coach_Gen4_Double_Decker_Coach                                              :Kaksikerrosvaunu
+str_mu_Coach_Gen4_Russian_Intercity_Coach                                  :Venäläinen InterCity-vaunu
+str_mu_Coach_Gen4_Russian_Regional_Coach                                   :Venäläinen taajamaliikennevaunu
+str_mu_Coach_Gen4_Russian_Mail_Coach                                               :Venäläinen postivaunu
+str_mu_Coach_Gen4_Superliner_Coach                                                 :Superliner matkustajavaunu
+str_mu_Coach_Gen4_Superliner_California                                    :Superliner California
+str_mu_Coach_Gen4_Amfleet_Regional_Coach                                   :Amfleet taajamaliikennevaunu
+str_mu_Coach_Gen4_Amfleet_Intercity_Coach                                  :Amfleet InterCity-vaunu
+str_mu_Coach_Gen4_Comet_Commuter_Coach                                     :Comet lähiliikennevaunu
+str_mu_Coach_Gen4_Horizon_Regional_Coach                                   :Horizon taajamaliikennevaunu
+str_mu_Coach_Gen4_Horizon_Baggage_Coach                                    :Horizon matkatavaravaunu
+str_mu_Coach_Gen4_Bombardier_Bi_level                                              :Bombardier Bi-level
+str_mu_Coach_Gen5_High_Speed_Coach                                                 :Suurnopeusvaunu
+str_mu_Coach_Gen5_Modern_Regional_Coach                                    :Moderni taajamaliikennevaunu
+str_mu_Coach_Gen5_Modern_Commuter_Coach                                    :Moderni lähiliikennevaunu
+str_mu_Coach_Gen5_Modern_Double_Decker_Coach                               :Moderni kaksikerrosvaunu
+str_mu_Coach_Gen5_High_Speed_Double_Decker_IC2000                  :Kaksikerroksinen suurnopeusvaunu (IC2000)
+str_mu_Coach_Gen5_High_Speed_Mail_Coach                                    :Pikapostivaunu
+str_mu_Coach_Gen5_Talgo_Pendular                                                   :Talgo Pendular matkustajavaunu
+str_mu_Coach_Gen5_Talgo_Pendular_Mail                                              :Talgo Pendular postivaunu
+str_mu_Coach_Gen6_Grand_Voyager_Coach                                              :Grand Voyager matkustajavaunu
+str_mu_Coach_Gen6_Grand_Regio_Coach                                                :Grand Regio matkustajavaunu
+str_mu_Coach_Gen6_Metropolis_Coach                                                 :Metropolis matkustajavaunu
+str_mu_Coach_Gen6_Speedmail_Coach                                                  :Speedmail postivaunu
+str_mu_Coach_Gen6_Super_Regio_Coach                                                :Super Regio matkustajavaunu
+str_mu_Coach_Gen6_Super_Voyager_Coach                                              :Super Voyager matkustajavaunu
 
 #special wagons
-str_mu_wagon_unpowered                  :Moottorijunan vaunu (moottoroimaton)
-str_mtro_wagon_unpowered                :Metrovaunu (moottoroimaton)
-str_mglv_wagon_unpowered                :Maglev-vaunu (moottoroimaton)
-str_mu_wagon_powered                    :Moottorijunan vaunu (moottoroitu)
-str_mtro_wagon_powered                  :Metrovaunu (moottoroitu)
-str_mglv_wagon_powered                  :Maglev-vaunu (moottoroitu)
+str_mu_MU_Wagon_Unpowered                  :Moottorijunan vaunu (moottoroimaton)
+str_mtro_Metro_Wagon_Unpowered                :Metrovaunu (moottoroimaton)
+str_mglv_Maglev_Wagon_Unpowered                :Maglev-vaunu (moottoroimaton)
+str_mu_MU_Wagon_Powered                    :Moottorijunan vaunu (moottoroitu)
+str_mtro_Metro_Wagon_Powered                  :Metrovaunu (moottoroitu)
+str_mglv_Maglev_Wagon_Powered                  :Maglev-vaunu (moottoroitu)
 
 #Obsolete vehicles
 

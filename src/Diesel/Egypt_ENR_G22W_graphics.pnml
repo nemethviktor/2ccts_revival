@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_Egypt_ENR_G22W, "gfx/Diesel/Egypt_ENR_G22W.png") {
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

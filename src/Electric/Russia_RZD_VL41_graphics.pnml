@@ -24,6 +24,6 @@ spriteset(spriteset_electric_Russia_RZD_VL41, "gfx/Electric/Russia_RZD_VL41.png"
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

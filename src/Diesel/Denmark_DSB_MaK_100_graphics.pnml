@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_Denmark_DSB_MaK_100, "gfx/Diesel/Denmark_DSB_MaK_100.
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

@@ -4,7 +4,7 @@
 #Main grf title and description
 STR_GRF_NAME                    :{TITLE}
 STR_GRF_DESCRIPTION             :{SILVER}2cc Trains of the World in NML{}{}(c)2ccts{}License:GPLv2 or higher.{}See readme for details.
-STR_GRF_URL             :https://dev.openttdcoop.org/projects/2ccts
+STR_GRF_URL             :https://github.com/nemethviktor/2ccts_revival
 
 #General error messages
 
@@ -132,10 +132,10 @@ str_mglv_Japan_MLX01_901        :JR MLX01-901 (Maglev)
 #coaches
 
 #special wagons
-str_mtro_wagon_unpowered                :Metro Unit Wagon (Unpowered)
-str_mglv_wagon_unpowered                :Maglev Unit Wagon (Unpowered)
-str_mtro_wagon_powered                  :Metro Unit Wagon (Powered)
-str_mglv_wagon_powered                  :Maglev Unit Wagon (Powered)
+str_mtro_Metro_Wagon_Unpowered                :Metro Unit Wagon (Unpowered)
+str_mglv_Maglev_Wagon_Unpowered                :Maglev Unit Wagon (Unpowered)
+str_mtro_Metro_Wagon_Powered                  :Metro Unit Wagon (Powered)
+str_mglv_Maglev_Wagon_Powered                  :Maglev Unit Wagon (Powered)
 
 #Obsolete vehicles
 

@@ -63,6 +63,6 @@ switch(FEAT_TRAINS, SELF, switch_steam_India_Indian_Railways_XB_Class_articulate
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_Germany_DB_310_Kof_II, "gfx/Diesel/Germany_DB_310_Kof
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

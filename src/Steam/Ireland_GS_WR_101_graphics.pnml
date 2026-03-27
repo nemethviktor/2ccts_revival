@@ -63,6 +63,6 @@ switch(FEAT_TRAINS, SELF, switch_steam_Ireland_GS_WR_101_articulated, extra_call
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

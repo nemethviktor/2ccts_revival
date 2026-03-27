@@ -89,6 +89,6 @@ switch(FEAT_TRAINS, SELF, switch_electric_Sweden_MTAB_Dm3_articulated, extra_cal
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

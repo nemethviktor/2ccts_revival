@@ -24,6 +24,6 @@ spriteset(spriteset_electric_Kazakhstan_KTZ_KZ4A, "gfx/Electric/Kazakhstan_KTZ_K
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

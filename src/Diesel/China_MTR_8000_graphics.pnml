@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_China_MTR_8000, "gfx/Diesel/China_MTR_8000.png") {
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

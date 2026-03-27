@@ -54,9 +54,9 @@ switch(FEAT_TRAINS, SELF, switch_emu_New_Zealand_NZR_EM_ET_Class_visual_effect_a
 * Cargo capacity
 */
 
-ENGINECAPACITYSWITCH(VEHIDCODE)
+// ENGINECAPACITYSWITCH(VEHIDCODE)
 
-WAGONCAPACITYSWITCH(VEHIDCODE)
+// WAGONCAPACITYSWITCH(VEHIDCODE)
 
 //Graphics for the unit wagon based on cargo class
 switch(FEAT_TRAINS, SELF, switch_emu_New_Zealand_NZR_EM_ET_Class_cargo_selection, cargo_classes){
@@ -66,8 +66,8 @@ switch(FEAT_TRAINS, SELF, switch_emu_New_Zealand_NZR_EM_ET_Class_cargo_selection
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-RUNNINGCOSTMUWAGONSWITCH
+// RUNNINGCOST_MU_WAGON_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH

@@ -24,6 +24,6 @@ spriteset(spriteset_diesel_Ukraine_UZ_TEP10L, "gfx/Diesel/Ukraine_UZ_TEP10L.png"
 
 //Add defined switches
 
-RUNNINGCOSTENGINESWITCH
+// RUNNINGCOST_ENGINE_SWITCH
 
-PURCHASETEXTSWITCH
+// PURCHASETEXT_SWITCH
