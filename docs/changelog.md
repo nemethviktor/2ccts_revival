@@ -2,10 +2,10 @@
 
 **3.3-alpha2 [20260xxx]**
 - CODE CHANGES:
-	- TBA
+	- Automated English Language file creation
 - VEHICLES CHANGES:
-	- TBA
-
+	- Chile_EFE_XTrapolis_100 -> Modified to 1500V voltage, was None, incorrectly.
+	- Corrected a number of wrong string values for voltage categorisation (ref above automation)
 
 
 **3.3-alpha1 [20260327]**
