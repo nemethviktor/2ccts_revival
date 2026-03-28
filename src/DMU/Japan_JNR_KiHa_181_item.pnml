@@ -2,24 +2,27 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
+
+// Template: TPL_02A
+
 // Cargo capacity
 
-    switch(FEAT_TRAINS, SELF, switch_dmu_Japan_JNR_KiHa_181_capacity_engine, cargo_classes) { \
+    switch(FEAT_TRAINS, SELF, switch_dmu_japan_jnr_kiha_181_capacity_engine, cargo_classes) { \
         bitmask(CC_MAIL): 52/2; \
         bitmask(CC_ARMOURED): 52/4; \
         52; \
     }
 
 
-    switch(FEAT_TRAINS, SELF, switch_dmu_Japan_JNR_KiHa_181_capacity_wagon, cargo_classes) { \
+    switch(FEAT_TRAINS, SELF, switch_dmu_japan_jnr_kiha_181_capacity_wagon, cargo_classes) { \
         bitmask(CC_MAIL): 52/2; \
         bitmask(CC_ARMOURED): 52/4; \
         52; \
     }
 
-item(FEAT_TRAINS, item_dmu_Japan_JNR_KiHa_181) {
+item(FEAT_TRAINS, item_dmu_japan_jnr_kiha_181) {
     property {
-        name: string(str_dmu_Japan_JNR_KiHa_181);
+        name: string(str_dmu_japan_jnr_kiha_181);
         climates_available: ((param_region_asia || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1968,1,1);
         model_life: 45;
@@ -53,26 +56,26 @@ item(FEAT_TRAINS, item_dmu_Japan_JNR_KiHa_181) {
         bitmask_vehicle_info: 0;
     }
     graphics {
-        purchase: spriteset_dmu_Japan_JNR_KiHa_181_purchase;
-        cargo_capacity: switch_dmu_Japan_JNR_KiHa_181_capacity_engine;
-        visual_effect_and_powered: switch_dmu_Japan_JNR_KiHa_181_visual_effect_and_powered;
+        purchase: spriteset_dmu_japan_jnr_kiha_181_purchase;
+        cargo_capacity: switch_dmu_japan_jnr_kiha_181_capacity_engine;
+        visual_effect_and_powered: switch_dmu_japan_jnr_kiha_181_visual_effect_and_powered;
         // no 'length'
         // no 'articulated_part'
         can_attach_wagon: switch_can_attach_vehicle;
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
         // PURCHASETEXT_SWITCH_CALL // this is actually blank
-        default: switch_dmu_Japan_JNR_KiHa_181_reversed;
+        default: switch_dmu_japan_jnr_kiha_181_reversed;
     }
-    livery_override (item_mu_MU_Wagon_Unpowered) {
+    livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: int(120/10);
         weight: int(44*1/2);
         cargo_capacity: 52;
         length: 8;
-        default: switch_dmu_Japan_JNR_KiHa_181_cargo_selection;
+        default: switch_dmu_japan_jnr_kiha_181_cargo_selection;
     }
-    livery_override (item_mu_MU_Wagon_Powered) {
+    livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: (round(29.196313276997156));
         power: int(500*1/2);
@@ -80,6 +83,6 @@ item(FEAT_TRAINS, item_dmu_Japan_JNR_KiHa_181) {
         cargo_capacity: 52;
         tractive_effort_coefficient: int(0.34*10*44);
         length: 8;
-        default: switch_dmu_Japan_JNR_KiHa_181_cargo_selection;
+        default: switch_dmu_japan_jnr_kiha_181_cargo_selection;
     }
 }

@@ -2,9 +2,12 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
-item(FEAT_TRAINS, item_diesel_India_Indian_Railways_WDM_2) {
+
+// Template: TPL_01A
+
+item(FEAT_TRAINS, item_diesel_india_indian_railways_wdm_2) {
     property {
-        name: string(str_diesel_India_Indian_Railways_WDM_2);
+        name: string(str_diesel_india_indian_railways_wdm_2);
         climates_available: ((param_region_asia || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1963,1,1);
         model_life: 45;
@@ -38,7 +41,7 @@ item(FEAT_TRAINS, item_diesel_India_Indian_Railways_WDM_2) {
         bitmask_vehicle_info: 0;
     }
     graphics {
-        purchase: spriteset_diesel_India_Indian_Railways_WDM_2_purchase;
+        purchase: spriteset_diesel_india_indian_railways_wdm_2_purchase;
         // no 'visual_effect' or 'visual_effect_and_powered'
         // no 'length'
         // no 'articulated_part'
@@ -46,6 +49,6 @@ item(FEAT_TRAINS, item_diesel_India_Indian_Railways_WDM_2) {
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
         // PURCHASETEXT_SWITCH_CALL // this is actually blank
-        default: spriteset_diesel_India_Indian_Railways_WDM_2;
+        default: spriteset_diesel_india_indian_railways_wdm_2;
     }
 }

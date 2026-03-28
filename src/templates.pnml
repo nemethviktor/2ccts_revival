@@ -106,7 +106,7 @@ template template_2cc_railbus_general(x, y) {
 }
 
 //Special template for vehicles with length 12
-template template_2cc_L12(x, y) {
+template template_2cc_l12(x, y) {
     //[left_x, upper_y, width, height, offset_x, offset_y]
     [x    , y,  8, 36,  -3, -15]
     [x+9  , y, 30, 26, -22, -14]

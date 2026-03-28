@@ -2,9 +2,12 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
-item(FEAT_TRAINS, item_steam_France_SNCF_140C) {
+
+// Template: TPL_03A
+
+item(FEAT_TRAINS, item_steam_france_sncf_140c) {
     property {
-        name: string(str_steam_France_SNCF_140C);
+        name: string(str_steam_france_sncf_140c);
         climates_available: ((param_region_western_europe || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1920,1,1);
         model_life: 45;
@@ -38,14 +41,14 @@ item(FEAT_TRAINS, item_steam_France_SNCF_140C) {
         bitmask_vehicle_info: 0;
     }
     graphics {
-        purchase: spriteset_steam_France_SNCF_140C_purchase;
-        visual_effect_and_powered: switch_steam_France_SNCF_140C_visual_effect;
-        length: switch_steam_France_SNCF_140C_length;
-        articulated_part: switch_steam_France_SNCF_140C_articulated;
+        purchase: spriteset_steam_france_sncf_140c_purchase;
+        visual_effect_and_powered: switch_steam_france_sncf_140c_visual_effect;
+        length: switch_steam_france_sncf_140c_length;
+        articulated_part: switch_steam_france_sncf_140c_articulated;
         can_attach_wagon: switch_can_attach_vehicle;
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
         // PURCHASETEXT_SWITCH_CALL // this is actually blank
-        default: switch_steam_France_SNCF_140C_position;
+        default: switch_steam_france_sncf_140c_position;
     }
 }

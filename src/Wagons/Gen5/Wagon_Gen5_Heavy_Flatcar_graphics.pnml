@@ -1,519 +1,443 @@
-/*
- *  Copyright (C) 2017 Transportman // V. Nemeth 2026
- *  This file is part of the 2cc Trains In NML
- *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
-
-*/
-
-/*
-* PURCHASE
-*/
-
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_purchase, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_Purchase.png") {
-	template_purchase_wagon(1, 1)
-}
+//  Copyright (C) 2017 Transportman // V. Nemeth 2026+
+//  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
-/*
-* Crates
-*/
+// Template: TPL_04O
 
-//Livery 1 - Loading State 1 - Crates
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Crates_L1_S1, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_Crates.png") {
-	template_2cc_wagons(1, 1)
-}
+// PURCHASE
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_purchase, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_purchase.png") {template_purchase_wagon(1, 1)}
 
-//Livery 1 - Loading State 2 - Crates
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Crates_L1_S2, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_Crates.png") {
-	template_2cc_wagons(1, 32)
-}
 
-//Livery 1 - Loading State 3 - Crates
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Crates_L1_S3, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_Crates.png") {
-	template_2cc_wagons(1, 64)
-}
+// VEHICLE
 
-//Livery 1 Spritegroup - Crates
-spritegroup spritegroup_wagon_Gen5_Heavy_Flatcar_Crates_L1 {
-	loading: [spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Crates_L1_S1, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Crates_L1_S2, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Crates_L1_S3];
-	loaded: [spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Crates_L1_S1, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Crates_L1_S2, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Crates_L1_S3];
-}
+// crates
 
-//Livery 2 - Loading State 1 - Crates
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Crates_L2_S1, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_Crates.png") {
-	template_2cc_wagons(179, 1)
-}
+/// LIVERY 1   LOADING STATE 1   CRATES
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_crates_l1_s1, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_crates.png") {template_2cc_wagons(1, 1)}
 
-//Livery 2 - Loading State 2 - Crates
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Crates_L2_S2, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_Crates.png") {
-	template_2cc_wagons(179, 32)
-}
 
-//Livery 2 - Loading State 3 - Crates
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Crates_L2_S3, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_Crates.png") {
-	template_2cc_wagons(179, 64)
-}
+/// LIVERY 1   LOADING STATE 2   CRATES
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_crates_l1_s2, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_crates.png") {template_2cc_wagons(1, 32)}
 
-//Livery 2 Spritegroup - Crates
-spritegroup spritegroup_wagon_Gen5_Heavy_Flatcar_Crates_L2 {
-	loading: [spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Crates_L2_S1, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Crates_L2_S2, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Crates_L2_S3];
-	loaded: [spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Crates_L2_S1, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Crates_L2_S2, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Crates_L2_S3];	
-}
 
-//Livery 3 - Loading State 1 - Crates
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Crates_L3_S1, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_Crates.png") {
-	template_2cc_wagons(357, 1)
-}
+/// LIVERY 1   LOADING STATE 3   CRATES
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_crates_l1_s3, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_crates.png") {template_2cc_wagons(1, 64)}
 
-//Livery 3 - Loading State 2 - Crates
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Crates_L3_S2, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_Crates.png") {
-	template_2cc_wagons(357, 32)
-}
 
-//Livery 3 - Loading State 3 - Crates
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Crates_L3_S3, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_Crates.png") {
-	template_2cc_wagons(357, 64)
+/// LIVERY 1 SPRITEGROUP - CRATES
+spritegroup spritegroup_mu_wagon_gen5_heavy_flatcar_crates_l1 {
+    loading: [spriteset_mu_wagon_gen5_heavy_flatcar_crates_l1_s1, spriteset_mu_wagon_gen5_heavy_flatcar_crates_l1_s2, spriteset_mu_wagon_gen5_heavy_flatcar_crates_l1_s3];
+    loaded: [spriteset_mu_wagon_gen5_heavy_flatcar_crates_l1_s1, spriteset_mu_wagon_gen5_heavy_flatcar_crates_l1_s2, spriteset_mu_wagon_gen5_heavy_flatcar_crates_l1_s3];
 }
 
-//Livery 3 Spritegroup - Crates
-spritegroup spritegroup_wagon_Gen5_Heavy_Flatcar_Crates_L3 {
-	loading: [spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Crates_L3_S1, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Crates_L3_S2, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Crates_L3_S3];
-	loaded: [spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Crates_L3_S1, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Crates_L3_S2, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Crates_L3_S3];	
-}
+/// LIVERY 2   LOADING STATE 1   CRATES
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_crates_l2_s1, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_crates.png") {template_2cc_wagons(179, 1)}
 
-//Livery 4 - Loading State 1 - Crates
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Crates_L4_S1, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_Crates.png") {
-	template_2cc_wagons(535, 1)
-}
 
-//Livery 4 - Loading State 2 - Crates
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Crates_L4_S2, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_Crates.png") {
-	template_2cc_wagons(535, 32)
-}
+/// LIVERY 2   LOADING STATE 2   CRATES
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_crates_l2_s2, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_crates.png") {template_2cc_wagons(179, 32)}
 
-//Livery 4 - Loading State 3 - Crates
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Crates_L4_S3, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_Crates.png") {
-	template_2cc_wagons(535, 64)
-}
 
-//Livery 4 Spritegroup - Crates
-spritegroup spritegroup_wagon_Gen5_Heavy_Flatcar_Crates_L4 {
-	loading: [spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Crates_L4_S1, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Crates_L4_S2, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Crates_L4_S3];
-	loaded: [spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Crates_L4_S1, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Crates_L4_S2, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Crates_L4_S3];	
-}
+/// LIVERY 2   LOADING STATE 3   CRATES
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_crates_l2_s3, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_crates.png") {template_2cc_wagons(179, 64)}
 
-random_switch(FEAT_TRAINS, SELF, switch_mu_Wagon_Gen5_Heavy_Flatcar_Crates_livery) {
-	7: spritegroup_wagon_Gen5_Heavy_Flatcar_Crates_L1;
-	1: spritegroup_wagon_Gen5_Heavy_Flatcar_Crates_L2;
-	1: spritegroup_wagon_Gen5_Heavy_Flatcar_Crates_L3;
-	1: spritegroup_wagon_Gen5_Heavy_Flatcar_Crates_L4;
+
+/// LIVERY 2 SPRITEGROUP - CRATES
+spritegroup spritegroup_mu_wagon_gen5_heavy_flatcar_crates_l2 {
+    loading: [spriteset_mu_wagon_gen5_heavy_flatcar_crates_l2_s1, spriteset_mu_wagon_gen5_heavy_flatcar_crates_l2_s2, spriteset_mu_wagon_gen5_heavy_flatcar_crates_l2_s3];
+    loaded: [spriteset_mu_wagon_gen5_heavy_flatcar_crates_l2_s1, spriteset_mu_wagon_gen5_heavy_flatcar_crates_l2_s2, spriteset_mu_wagon_gen5_heavy_flatcar_crates_l2_s3];
 }
 
-/*
-* Cars
-*/
+/// LIVERY 3   LOADING STATE 1   CRATES
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_crates_l3_s1, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_crates.png") {template_2cc_wagons(357, 1)}
 
-//Livery 1 - Loading State 1 - Cars
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Cars_L1_S1, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_Cars.png") {
-	template_2cc_wagons(1, 1)
-}
 
-//Livery 1 - Loading State 2 - Cars
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Cars_L1_S2, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_Cars.png") {
-	template_2cc_wagons(1, 32)
-}
+/// LIVERY 3   LOADING STATE 2   CRATES
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_crates_l3_s2, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_crates.png") {template_2cc_wagons(357, 32)}
 
-//Livery 1 - Loading State 3 - Cars
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Cars_L1_S3, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_Cars.png") {
-	template_2cc_wagons(1, 64)
-}
 
-//Livery 1 Spritegroup - Cars
-spritegroup spritegroup_wagon_Gen5_Heavy_Flatcar_Cars_L1 {
-	loading: [spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Cars_L1_S1, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Cars_L1_S2, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Cars_L1_S3];
-	loaded: [spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Cars_L1_S1, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Cars_L1_S2, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Cars_L1_S3];
-}
+/// LIVERY 3   LOADING STATE 3   CRATES
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_crates_l3_s3, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_crates.png") {template_2cc_wagons(357, 64)}
 
-//Livery 2 - Loading State 1 - Cars
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Cars_L2_S1, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_Cars.png") {
-	template_2cc_wagons(179, 1)
-}
 
-//Livery 2 - Loading State 2 - Cars
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Cars_L2_S2, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_Cars.png") {
-	template_2cc_wagons(179, 32)
+/// LIVERY 3 SPRITEGROUP - CRATES
+spritegroup spritegroup_mu_wagon_gen5_heavy_flatcar_crates_l3 {
+    loading: [spriteset_mu_wagon_gen5_heavy_flatcar_crates_l3_s1, spriteset_mu_wagon_gen5_heavy_flatcar_crates_l3_s2, spriteset_mu_wagon_gen5_heavy_flatcar_crates_l3_s3];
+    loaded: [spriteset_mu_wagon_gen5_heavy_flatcar_crates_l3_s1, spriteset_mu_wagon_gen5_heavy_flatcar_crates_l3_s2, spriteset_mu_wagon_gen5_heavy_flatcar_crates_l3_s3];
 }
 
-//Livery 2 - Loading State 3 - Cars
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Cars_L2_S3, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_Cars.png") {
-	template_2cc_wagons(179, 64)
-}
+/// LIVERY 4   LOADING STATE 1   CRATES
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_crates_l4_s1, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_crates.png") {template_2cc_wagons(535, 1)}
 
-//Livery 2 Spritegroup - Cars
-spritegroup spritegroup_wagon_Gen5_Heavy_Flatcar_Cars_L2 {
-	loading: [spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Cars_L2_S1, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Cars_L2_S2, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Cars_L2_S3];
-	loaded: [spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Cars_L2_S1, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Cars_L2_S2, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Cars_L2_S3];	
-}
 
-//Livery 3 - Loading State 1 - Cars
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Cars_L3_S1, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_Cars.png") {
-	template_2cc_wagons(357, 1)
-}
+/// LIVERY 4   LOADING STATE 2   CRATES
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_crates_l4_s2, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_crates.png") {template_2cc_wagons(535, 32)}
 
-//Livery 3 - Loading State 2 - Cars
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Cars_L3_S2, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_Cars.png") {
-	template_2cc_wagons(357, 32)
-}
 
-//Livery 3 - Loading State 3 - Cars
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Cars_L3_S3, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_Cars.png") {
-	template_2cc_wagons(357, 64)
-}
+/// LIVERY 4   LOADING STATE 3   CRATES
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_crates_l4_s3, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_crates.png") {template_2cc_wagons(535, 64)}
 
-//Livery 3 Spritegroup - Cars
-spritegroup spritegroup_wagon_Gen5_Heavy_Flatcar_Cars_L3 {
-	loading: [spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Cars_L3_S1, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Cars_L3_S2, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Cars_L3_S3];
-	loaded: [spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Cars_L3_S1, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Cars_L3_S2, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Cars_L3_S3];	
-}
 
-//Livery 4 - Loading State 1 - Cars
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Cars_L4_S1, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_Cars.png") {
-	template_2cc_wagons(535, 1)
+/// LIVERY 4 SPRITEGROUP - CRATES
+spritegroup spritegroup_mu_wagon_gen5_heavy_flatcar_crates_l4 {
+    loading: [spriteset_mu_wagon_gen5_heavy_flatcar_crates_l4_s1, spriteset_mu_wagon_gen5_heavy_flatcar_crates_l4_s2, spriteset_mu_wagon_gen5_heavy_flatcar_crates_l4_s3];
+    loaded: [spriteset_mu_wagon_gen5_heavy_flatcar_crates_l4_s1, spriteset_mu_wagon_gen5_heavy_flatcar_crates_l4_s2, spriteset_mu_wagon_gen5_heavy_flatcar_crates_l4_s3];
 }
 
-//Livery 4 - Loading State 2 - Cars
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Cars_L4_S2, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_Cars.png") {
-	template_2cc_wagons(535, 32)
+// Random Livery Selector for crates
+random_switch(FEAT_TRAINS, SELF, switch_mu_wagon_gen5_heavy_flatcar_crates_livery) {
+	7: spritegroup_mu_wagon_gen5_heavy_flatcar_crates_l1;
+	1: spritegroup_mu_wagon_gen5_heavy_flatcar_crates_l2;
+	1: spritegroup_mu_wagon_gen5_heavy_flatcar_crates_l3;
+	1: spritegroup_mu_wagon_gen5_heavy_flatcar_crates_l4;
 }
 
-//Livery 4 - Loading State 3 - Cars
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Cars_L4_S3, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_Cars.png") {
-	template_2cc_wagons(535, 64)
-}
+// cars
 
-//Livery 4 Spritegroup - Cars
-spritegroup spritegroup_wagon_Gen5_Heavy_Flatcar_Cars_L4 {
-	loading: [spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Cars_L4_S1, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Cars_L4_S2, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Cars_L4_S3];
-	loaded: [spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Cars_L4_S1, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Cars_L4_S2, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Cars_L4_S3];	
-}
+/// LIVERY 1   LOADING STATE 1   CARS
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_cars_l1_s1, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_cars.png") {template_2cc_wagons(1, 1)}
 
-random_switch(FEAT_TRAINS, SELF, switch_mu_Wagon_Gen5_Heavy_Flatcar_Cars_livery) {
-	7: spritegroup_wagon_Gen5_Heavy_Flatcar_Cars_L1;
-	1: spritegroup_wagon_Gen5_Heavy_Flatcar_Cars_L2;
-	1: spritegroup_wagon_Gen5_Heavy_Flatcar_Cars_L3;
-	1: spritegroup_wagon_Gen5_Heavy_Flatcar_Cars_L4;
-}
 
-/*
-* Machinery
-*/
+/// LIVERY 1   LOADING STATE 2   CARS
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_cars_l1_s2, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_cars.png") {template_2cc_wagons(1, 32)}
 
-//Livery 1 - Loading State 1 - Machinery
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Machinery_L1_S1, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_Machinery.png") {
-	template_2cc_wagons(1, 1)
-}
 
-//Livery 1 - Loading State 2 - Machinery
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Machinery_L1_S2, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_Machinery.png") {
-	template_2cc_wagons(1, 32)
-}
+/// LIVERY 1   LOADING STATE 3   CARS
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_cars_l1_s3, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_cars.png") {template_2cc_wagons(1, 64)}
 
-//Livery 1 - Loading State 3 - Machinery
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Machinery_L1_S3, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_Machinery.png") {
-	template_2cc_wagons(1, 64)
-}
 
-//Livery 1 Spritegroup - Machinery
-spritegroup spritegroup_wagon_Gen5_Heavy_Flatcar_Machinery_L1 {
-	loading: [spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Machinery_L1_S1, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Machinery_L1_S2, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Machinery_L1_S3];
-	loaded: [spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Machinery_L1_S1, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Machinery_L1_S2, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Machinery_L1_S3];
+/// LIVERY 1 SPRITEGROUP - CARS
+spritegroup spritegroup_mu_wagon_gen5_heavy_flatcar_cars_l1 {
+    loading: [spriteset_mu_wagon_gen5_heavy_flatcar_cars_l1_s1, spriteset_mu_wagon_gen5_heavy_flatcar_cars_l1_s2, spriteset_mu_wagon_gen5_heavy_flatcar_cars_l1_s3];
+    loaded: [spriteset_mu_wagon_gen5_heavy_flatcar_cars_l1_s1, spriteset_mu_wagon_gen5_heavy_flatcar_cars_l1_s2, spriteset_mu_wagon_gen5_heavy_flatcar_cars_l1_s3];
 }
 
-//Livery 2 - Loading State 1 - Machinery
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Machinery_L2_S1, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_Machinery.png") {
-	template_2cc_wagons(179, 1)
-}
+/// LIVERY 2   LOADING STATE 1   CARS
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_cars_l2_s1, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_cars.png") {template_2cc_wagons(179, 1)}
 
-//Livery 2 - Loading State 2 - Machinery
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Machinery_L2_S2, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_Machinery.png") {
-	template_2cc_wagons(179, 32)
-}
 
-//Livery 2 - Loading State 3 - Machinery
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Machinery_L2_S3, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_Machinery.png") {
-	template_2cc_wagons(179, 64)
-}
+/// LIVERY 2   LOADING STATE 2   CARS
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_cars_l2_s2, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_cars.png") {template_2cc_wagons(179, 32)}
 
-//Livery 2 Spritegroup - Machinery
-spritegroup spritegroup_wagon_Gen5_Heavy_Flatcar_Machinery_L2 {
-	loading: [spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Machinery_L2_S1, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Machinery_L2_S2, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Machinery_L2_S3];
-	loaded: [spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Machinery_L2_S1, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Machinery_L2_S2, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Machinery_L2_S3];	
-}
 
-//Livery 3 - Loading State 1 - Machinery
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Machinery_L3_S1, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_Machinery.png") {
-	template_2cc_wagons(357, 1)
-}
+/// LIVERY 2   LOADING STATE 3   CARS
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_cars_l2_s3, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_cars.png") {template_2cc_wagons(179, 64)}
 
-//Livery 3 - Loading State 2 - Machinery
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Machinery_L3_S2, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_Machinery.png") {
-	template_2cc_wagons(357, 32)
-}
 
-//Livery 3 - Loading State 3 - Machinery
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Machinery_L3_S3, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_Machinery.png") {
-	template_2cc_wagons(357, 64)
+/// LIVERY 2 SPRITEGROUP - CARS
+spritegroup spritegroup_mu_wagon_gen5_heavy_flatcar_cars_l2 {
+    loading: [spriteset_mu_wagon_gen5_heavy_flatcar_cars_l2_s1, spriteset_mu_wagon_gen5_heavy_flatcar_cars_l2_s2, spriteset_mu_wagon_gen5_heavy_flatcar_cars_l2_s3];
+    loaded: [spriteset_mu_wagon_gen5_heavy_flatcar_cars_l2_s1, spriteset_mu_wagon_gen5_heavy_flatcar_cars_l2_s2, spriteset_mu_wagon_gen5_heavy_flatcar_cars_l2_s3];
 }
 
-//Livery 3 Spritegroup - Machinery
-spritegroup spritegroup_wagon_Gen5_Heavy_Flatcar_Machinery_L3 {
-	loading: [spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Machinery_L3_S1, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Machinery_L3_S2, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Machinery_L3_S3];
-	loaded: [spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Machinery_L3_S1, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Machinery_L3_S2, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Machinery_L3_S3];	
-}
+/// LIVERY 3   LOADING STATE 1   CARS
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_cars_l3_s1, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_cars.png") {template_2cc_wagons(357, 1)}
 
-//Livery 4 - Loading State 1 - Machinery
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Machinery_L4_S1, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_Machinery.png") {
-	template_2cc_wagons(535, 1)
-}
 
-//Livery 4 - Loading State 2 - Machinery
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Machinery_L4_S2, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_Machinery.png") {
-	template_2cc_wagons(535, 32)
-}
+/// LIVERY 3   LOADING STATE 2   CARS
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_cars_l3_s2, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_cars.png") {template_2cc_wagons(357, 32)}
 
-//Livery 4 - Loading State 3 - Machinery
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Machinery_L4_S3, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_Machinery.png") {
-	template_2cc_wagons(535, 64)
-}
 
-//Livery 4 Spritegroup - Machinery
-spritegroup spritegroup_wagon_Gen5_Heavy_Flatcar_Machinery_L4 {
-	loading: [spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Machinery_L4_S1, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Machinery_L4_S2, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Machinery_L4_S3];
-	loaded: [spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Machinery_L4_S1, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Machinery_L4_S2, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Machinery_L4_S3];	
-}
+/// LIVERY 3   LOADING STATE 3   CARS
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_cars_l3_s3, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_cars.png") {template_2cc_wagons(357, 64)}
+
 
-random_switch(FEAT_TRAINS, SELF, switch_mu_Wagon_Gen5_Heavy_Flatcar_Machinery_livery) {
-	7: spritegroup_wagon_Gen5_Heavy_Flatcar_Machinery_L1;
-	1: spritegroup_wagon_Gen5_Heavy_Flatcar_Machinery_L2;
-	1: spritegroup_wagon_Gen5_Heavy_Flatcar_Machinery_L3;
-	1: spritegroup_wagon_Gen5_Heavy_Flatcar_Machinery_L4;
+/// LIVERY 3 SPRITEGROUP - CARS
+spritegroup spritegroup_mu_wagon_gen5_heavy_flatcar_cars_l3 {
+    loading: [spriteset_mu_wagon_gen5_heavy_flatcar_cars_l3_s1, spriteset_mu_wagon_gen5_heavy_flatcar_cars_l3_s2, spriteset_mu_wagon_gen5_heavy_flatcar_cars_l3_s3];
+    loaded: [spriteset_mu_wagon_gen5_heavy_flatcar_cars_l3_s1, spriteset_mu_wagon_gen5_heavy_flatcar_cars_l3_s2, spriteset_mu_wagon_gen5_heavy_flatcar_cars_l3_s3];
 }
 
-/*
-* Steel
-*/
+/// LIVERY 4   LOADING STATE 1   CARS
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_cars_l4_s1, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_cars.png") {template_2cc_wagons(535, 1)}
 
-//Livery 1 - Loading State 1 - Steel
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Steel_L1_S1, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_Steel.png") {
-	template_2cc_wagons(1, 1)
-}
 
-//Livery 1 - Loading State 2 - Steel
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Steel_L1_S2, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_Steel.png") {
-	template_2cc_wagons(1, 32)
-}
+/// LIVERY 4   LOADING STATE 2   CARS
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_cars_l4_s2, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_cars.png") {template_2cc_wagons(535, 32)}
 
-//Livery 1 - Loading State 3 - Steel
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Steel_L1_S3, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_Steel.png") {
-	template_2cc_wagons(1, 64)
-}
 
-//Livery 1 Spritegroup - Steel
-spritegroup spritegroup_wagon_Gen5_Heavy_Flatcar_Steel_L1 {
-	loading: [spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Steel_L1_S1, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Steel_L1_S2, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Steel_L1_S3];
-	loaded: [spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Steel_L1_S1, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Steel_L1_S2, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Steel_L1_S3];
-}
+/// LIVERY 4   LOADING STATE 3   CARS
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_cars_l4_s3, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_cars.png") {template_2cc_wagons(535, 64)}
 
-//Livery 2 - Loading State 1 - Steel
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Steel_L2_S1, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_Steel.png") {
-	template_2cc_wagons(179, 1)
-}
 
-//Livery 2 - Loading State 2 - Steel
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Steel_L2_S2, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_Steel.png") {
-	template_2cc_wagons(179, 32)
+/// LIVERY 4 SPRITEGROUP - CARS
+spritegroup spritegroup_mu_wagon_gen5_heavy_flatcar_cars_l4 {
+    loading: [spriteset_mu_wagon_gen5_heavy_flatcar_cars_l4_s1, spriteset_mu_wagon_gen5_heavy_flatcar_cars_l4_s2, spriteset_mu_wagon_gen5_heavy_flatcar_cars_l4_s3];
+    loaded: [spriteset_mu_wagon_gen5_heavy_flatcar_cars_l4_s1, spriteset_mu_wagon_gen5_heavy_flatcar_cars_l4_s2, spriteset_mu_wagon_gen5_heavy_flatcar_cars_l4_s3];
 }
 
-//Livery 2 - Loading State 3 - Steel
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Steel_L2_S3, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_Steel.png") {
-	template_2cc_wagons(179, 64)
+// Random Livery Selector for cars
+random_switch(FEAT_TRAINS, SELF, switch_mu_wagon_gen5_heavy_flatcar_cars_livery) {
+	7: spritegroup_mu_wagon_gen5_heavy_flatcar_cars_l1;
+	1: spritegroup_mu_wagon_gen5_heavy_flatcar_cars_l2;
+	1: spritegroup_mu_wagon_gen5_heavy_flatcar_cars_l3;
+	1: spritegroup_mu_wagon_gen5_heavy_flatcar_cars_l4;
 }
 
-//Livery 2 Spritegroup - Steel
-spritegroup spritegroup_wagon_Gen5_Heavy_Flatcar_Steel_L2 {
-	loading: [spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Steel_L2_S1, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Steel_L2_S2, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Steel_L2_S3];
-	loaded: [spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Steel_L2_S1, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Steel_L2_S2, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Steel_L2_S3];	
-}
+// machinery
 
-//Livery 3 - Loading State 1 - Steel
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Steel_L3_S1, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_Steel.png") {
-	template_2cc_wagons(357, 1)
-}
+/// LIVERY 1   LOADING STATE 1   MACHINERY
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_machinery_l1_s1, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_machinery.png") {template_2cc_wagons(1, 1)}
 
-//Livery 3 - Loading State 2 - Steel
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Steel_L3_S2, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_Steel.png") {
-	template_2cc_wagons(357, 32)
-}
 
-//Livery 3 - Loading State 3 - Steel
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Steel_L3_S3, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_Steel.png") {
-	template_2cc_wagons(357, 64)
-}
+/// LIVERY 1   LOADING STATE 2   MACHINERY
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_machinery_l1_s2, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_machinery.png") {template_2cc_wagons(1, 32)}
 
-//Livery 3 Spritegroup - Steel
-spritegroup spritegroup_wagon_Gen5_Heavy_Flatcar_Steel_L3 {
-	loading: [spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Steel_L3_S1, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Steel_L3_S2, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Steel_L3_S3];
-	loaded: [spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Steel_L3_S1, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Steel_L3_S2, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Steel_L3_S3];	
-}
 
-//Livery 4 - Loading State 1 - Steel
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Steel_L4_S1, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_Steel.png") {
-	template_2cc_wagons(535, 1)
-}
+/// LIVERY 1   LOADING STATE 3   MACHINERY
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_machinery_l1_s3, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_machinery.png") {template_2cc_wagons(1, 64)}
 
-//Livery 4 - Loading State 2 - Steel
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Steel_L4_S2, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_Steel.png") {
-	template_2cc_wagons(535, 32)
-}
 
-//Livery 4 - Loading State 3 - Steel
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Steel_L4_S3, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_Steel.png") {
-	template_2cc_wagons(535, 64)
+/// LIVERY 1 SPRITEGROUP - MACHINERY
+spritegroup spritegroup_mu_wagon_gen5_heavy_flatcar_machinery_l1 {
+    loading: [spriteset_mu_wagon_gen5_heavy_flatcar_machinery_l1_s1, spriteset_mu_wagon_gen5_heavy_flatcar_machinery_l1_s2, spriteset_mu_wagon_gen5_heavy_flatcar_machinery_l1_s3];
+    loaded: [spriteset_mu_wagon_gen5_heavy_flatcar_machinery_l1_s1, spriteset_mu_wagon_gen5_heavy_flatcar_machinery_l1_s2, spriteset_mu_wagon_gen5_heavy_flatcar_machinery_l1_s3];
 }
 
-//Livery 4 Spritegroup - Steel
-spritegroup spritegroup_wagon_Gen5_Heavy_Flatcar_Steel_L4 {
-	loading: [spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Steel_L4_S1, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Steel_L4_S2, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Steel_L4_S3];
-	loaded: [spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Steel_L4_S1, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Steel_L4_S2, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_Steel_L4_S3];	
-}
+/// LIVERY 2   LOADING STATE 1   MACHINERY
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_machinery_l2_s1, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_machinery.png") {template_2cc_wagons(179, 1)}
 
-random_switch(FEAT_TRAINS, SELF, switch_mu_Wagon_Gen5_Heavy_Flatcar_Steel_livery) {
-	7: spritegroup_wagon_Gen5_Heavy_Flatcar_Steel_L1;
-	1: spritegroup_wagon_Gen5_Heavy_Flatcar_Steel_L2;
-	1: spritegroup_wagon_Gen5_Heavy_Flatcar_Steel_L3;
-	1: spritegroup_wagon_Gen5_Heavy_Flatcar_Steel_L4;
-}
 
-/*
-* YETI
-*/
+/// LIVERY 2   LOADING STATE 2   MACHINERY
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_machinery_l2_s2, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_machinery.png") {template_2cc_wagons(179, 32)}
 
-//Livery 1 - Loading State 1 - YETI
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_YETI_L1_S1, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_YETI.png") {
-	template_2cc_wagons(1, 1)
-}
 
-//Livery 1 - Loading State 2 - YETI
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_YETI_L1_S2, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_YETI.png") {
-	template_2cc_wagons(1, 32)
-}
+/// LIVERY 2   LOADING STATE 3   MACHINERY
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_machinery_l2_s3, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_machinery.png") {template_2cc_wagons(179, 64)}
 
-//Livery 1 - Loading State 3 - YETI
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_YETI_L1_S3, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_YETI.png") {
-	template_2cc_wagons(1, 64)
-}
 
-//Livery 1 Spritegroup - YETI
-spritegroup spritegroup_wagon_Gen5_Heavy_Flatcar_YETI_L1 {
-	loading: [spriteset_mu_Wagon_Gen5_Heavy_Flatcar_YETI_L1_S1, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_YETI_L1_S2, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_YETI_L1_S3];
-	loaded: [spriteset_mu_Wagon_Gen5_Heavy_Flatcar_YETI_L1_S1, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_YETI_L1_S2, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_YETI_L1_S3];
+/// LIVERY 2 SPRITEGROUP - MACHINERY
+spritegroup spritegroup_mu_wagon_gen5_heavy_flatcar_machinery_l2 {
+    loading: [spriteset_mu_wagon_gen5_heavy_flatcar_machinery_l2_s1, spriteset_mu_wagon_gen5_heavy_flatcar_machinery_l2_s2, spriteset_mu_wagon_gen5_heavy_flatcar_machinery_l2_s3];
+    loaded: [spriteset_mu_wagon_gen5_heavy_flatcar_machinery_l2_s1, spriteset_mu_wagon_gen5_heavy_flatcar_machinery_l2_s2, spriteset_mu_wagon_gen5_heavy_flatcar_machinery_l2_s3];
 }
 
-//Livery 2 - Loading State 1 - YETI
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_YETI_L2_S1, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_YETI.png") {
-	template_2cc_wagons(179, 1)
-}
+/// LIVERY 3   LOADING STATE 1   MACHINERY
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_machinery_l3_s1, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_machinery.png") {template_2cc_wagons(357, 1)}
 
-//Livery 2 - Loading State 2 - YETI
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_YETI_L2_S2, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_YETI.png") {
-	template_2cc_wagons(179, 32)
-}
 
-//Livery 2 - Loading State 3 - YETI
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_YETI_L2_S3, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_YETI.png") {
-	template_2cc_wagons(179, 64)
-}
+/// LIVERY 3   LOADING STATE 2   MACHINERY
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_machinery_l3_s2, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_machinery.png") {template_2cc_wagons(357, 32)}
 
-//Livery 2 Spritegroup - YETI
-spritegroup spritegroup_wagon_Gen5_Heavy_Flatcar_YETI_L2 {
-	loading: [spriteset_mu_Wagon_Gen5_Heavy_Flatcar_YETI_L2_S1, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_YETI_L2_S2, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_YETI_L2_S3];
-	loaded: [spriteset_mu_Wagon_Gen5_Heavy_Flatcar_YETI_L2_S1, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_YETI_L2_S2, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_YETI_L2_S3];	
-}
+
+/// LIVERY 3   LOADING STATE 3   MACHINERY
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_machinery_l3_s3, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_machinery.png") {template_2cc_wagons(357, 64)}
+
 
-//Livery 3 - Loading State 1 - YETI
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_YETI_L3_S1, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_YETI.png") {
-	template_2cc_wagons(357, 1)
+/// LIVERY 3 SPRITEGROUP - MACHINERY
+spritegroup spritegroup_mu_wagon_gen5_heavy_flatcar_machinery_l3 {
+    loading: [spriteset_mu_wagon_gen5_heavy_flatcar_machinery_l3_s1, spriteset_mu_wagon_gen5_heavy_flatcar_machinery_l3_s2, spriteset_mu_wagon_gen5_heavy_flatcar_machinery_l3_s3];
+    loaded: [spriteset_mu_wagon_gen5_heavy_flatcar_machinery_l3_s1, spriteset_mu_wagon_gen5_heavy_flatcar_machinery_l3_s2, spriteset_mu_wagon_gen5_heavy_flatcar_machinery_l3_s3];
 }
+
+/// LIVERY 4   LOADING STATE 1   MACHINERY
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_machinery_l4_s1, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_machinery.png") {template_2cc_wagons(535, 1)}
+
+
+/// LIVERY 4   LOADING STATE 2   MACHINERY
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_machinery_l4_s2, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_machinery.png") {template_2cc_wagons(535, 32)}
+
 
-//Livery 3 - Loading State 2 - YETI
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_YETI_L3_S2, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_YETI.png") {
-	template_2cc_wagons(357, 32)
+/// LIVERY 4   LOADING STATE 3   MACHINERY
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_machinery_l4_s3, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_machinery.png") {template_2cc_wagons(535, 64)}
+
+
+/// LIVERY 4 SPRITEGROUP - MACHINERY
+spritegroup spritegroup_mu_wagon_gen5_heavy_flatcar_machinery_l4 {
+    loading: [spriteset_mu_wagon_gen5_heavy_flatcar_machinery_l4_s1, spriteset_mu_wagon_gen5_heavy_flatcar_machinery_l4_s2, spriteset_mu_wagon_gen5_heavy_flatcar_machinery_l4_s3];
+    loaded: [spriteset_mu_wagon_gen5_heavy_flatcar_machinery_l4_s1, spriteset_mu_wagon_gen5_heavy_flatcar_machinery_l4_s2, spriteset_mu_wagon_gen5_heavy_flatcar_machinery_l4_s3];
 }
 
-//Livery 3 - Loading State 3 - YETI
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_YETI_L3_S3, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_YETI.png") {
-	template_2cc_wagons(357, 64)
+// Random Livery Selector for machinery
+random_switch(FEAT_TRAINS, SELF, switch_mu_wagon_gen5_heavy_flatcar_machinery_livery) {
+	7: spritegroup_mu_wagon_gen5_heavy_flatcar_machinery_l1;
+	1: spritegroup_mu_wagon_gen5_heavy_flatcar_machinery_l2;
+	1: spritegroup_mu_wagon_gen5_heavy_flatcar_machinery_l3;
+	1: spritegroup_mu_wagon_gen5_heavy_flatcar_machinery_l4;
 }
+
+// steel
+
+/// LIVERY 1   LOADING STATE 1   STEEL
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_steel_l1_s1, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_steel.png") {template_2cc_wagons(1, 1)}
+
+
+/// LIVERY 1   LOADING STATE 2   STEEL
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_steel_l1_s2, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_steel.png") {template_2cc_wagons(1, 32)}
+
+
+/// LIVERY 1   LOADING STATE 3   STEEL
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_steel_l1_s3, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_steel.png") {template_2cc_wagons(1, 64)}
 
-//Livery 3 Spritegroup - YETI
-spritegroup spritegroup_wagon_Gen5_Heavy_Flatcar_YETI_L3 {
-	loading: [spriteset_mu_Wagon_Gen5_Heavy_Flatcar_YETI_L3_S1, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_YETI_L3_S2, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_YETI_L3_S3];
-	loaded: [spriteset_mu_Wagon_Gen5_Heavy_Flatcar_YETI_L3_S1, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_YETI_L3_S2, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_YETI_L3_S3];	
+
+/// LIVERY 1 SPRITEGROUP - STEEL
+spritegroup spritegroup_mu_wagon_gen5_heavy_flatcar_steel_l1 {
+    loading: [spriteset_mu_wagon_gen5_heavy_flatcar_steel_l1_s1, spriteset_mu_wagon_gen5_heavy_flatcar_steel_l1_s2, spriteset_mu_wagon_gen5_heavy_flatcar_steel_l1_s3];
+    loaded: [spriteset_mu_wagon_gen5_heavy_flatcar_steel_l1_s1, spriteset_mu_wagon_gen5_heavy_flatcar_steel_l1_s2, spriteset_mu_wagon_gen5_heavy_flatcar_steel_l1_s3];
 }
+
+/// LIVERY 2   LOADING STATE 1   STEEL
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_steel_l2_s1, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_steel.png") {template_2cc_wagons(179, 1)}
+
+
+/// LIVERY 2   LOADING STATE 2   STEEL
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_steel_l2_s2, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_steel.png") {template_2cc_wagons(179, 32)}
 
-//Livery 4 - Loading State 1 - YETI
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_YETI_L4_S1, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_YETI.png") {
-	template_2cc_wagons(535, 1)
+
+/// LIVERY 2   LOADING STATE 3   STEEL
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_steel_l2_s3, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_steel.png") {template_2cc_wagons(179, 64)}
+
+
+/// LIVERY 2 SPRITEGROUP - STEEL
+spritegroup spritegroup_mu_wagon_gen5_heavy_flatcar_steel_l2 {
+    loading: [spriteset_mu_wagon_gen5_heavy_flatcar_steel_l2_s1, spriteset_mu_wagon_gen5_heavy_flatcar_steel_l2_s2, spriteset_mu_wagon_gen5_heavy_flatcar_steel_l2_s3];
+    loaded: [spriteset_mu_wagon_gen5_heavy_flatcar_steel_l2_s1, spriteset_mu_wagon_gen5_heavy_flatcar_steel_l2_s2, spriteset_mu_wagon_gen5_heavy_flatcar_steel_l2_s3];
 }
+
+/// LIVERY 3   LOADING STATE 1   STEEL
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_steel_l3_s1, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_steel.png") {template_2cc_wagons(357, 1)}
 
-//Livery 4 - Loading State 2 - YETI
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_YETI_L4_S2, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_YETI.png") {
-	template_2cc_wagons(535, 32)
+
+/// LIVERY 3   LOADING STATE 2   STEEL
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_steel_l3_s2, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_steel.png") {template_2cc_wagons(357, 32)}
+
+
+/// LIVERY 3   LOADING STATE 3   STEEL
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_steel_l3_s3, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_steel.png") {template_2cc_wagons(357, 64)}
+
+
+/// LIVERY 3 SPRITEGROUP - STEEL
+spritegroup spritegroup_mu_wagon_gen5_heavy_flatcar_steel_l3 {
+    loading: [spriteset_mu_wagon_gen5_heavy_flatcar_steel_l3_s1, spriteset_mu_wagon_gen5_heavy_flatcar_steel_l3_s2, spriteset_mu_wagon_gen5_heavy_flatcar_steel_l3_s3];
+    loaded: [spriteset_mu_wagon_gen5_heavy_flatcar_steel_l3_s1, spriteset_mu_wagon_gen5_heavy_flatcar_steel_l3_s2, spriteset_mu_wagon_gen5_heavy_flatcar_steel_l3_s3];
 }
+
+/// LIVERY 4   LOADING STATE 1   STEEL
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_steel_l4_s1, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_steel.png") {template_2cc_wagons(535, 1)}
+
+
+/// LIVERY 4   LOADING STATE 2   STEEL
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_steel_l4_s2, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_steel.png") {template_2cc_wagons(535, 32)}
 
-//Livery 4 - Loading State 3 - YETI
-spriteset(spriteset_mu_Wagon_Gen5_Heavy_Flatcar_YETI_L4_S3, "gfx/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_YETI.png") {
-	template_2cc_wagons(535, 64)
+
+/// LIVERY 4   LOADING STATE 3   STEEL
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_steel_l4_s3, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_steel.png") {template_2cc_wagons(535, 64)}
+
+
+/// LIVERY 4 SPRITEGROUP - STEEL
+spritegroup spritegroup_mu_wagon_gen5_heavy_flatcar_steel_l4 {
+    loading: [spriteset_mu_wagon_gen5_heavy_flatcar_steel_l4_s1, spriteset_mu_wagon_gen5_heavy_flatcar_steel_l4_s2, spriteset_mu_wagon_gen5_heavy_flatcar_steel_l4_s3];
+    loaded: [spriteset_mu_wagon_gen5_heavy_flatcar_steel_l4_s1, spriteset_mu_wagon_gen5_heavy_flatcar_steel_l4_s2, spriteset_mu_wagon_gen5_heavy_flatcar_steel_l4_s3];
 }
 
-//Livery 4 Spritegroup - YETI
-spritegroup spritegroup_wagon_Gen5_Heavy_Flatcar_YETI_L4 {
-	loading: [spriteset_mu_Wagon_Gen5_Heavy_Flatcar_YETI_L4_S1, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_YETI_L4_S2, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_YETI_L4_S3];
-	loaded: [spriteset_mu_Wagon_Gen5_Heavy_Flatcar_YETI_L4_S1, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_YETI_L4_S2, spriteset_mu_Wagon_Gen5_Heavy_Flatcar_YETI_L4_S3];	
+// Random Livery Selector for steel
+random_switch(FEAT_TRAINS, SELF, switch_mu_wagon_gen5_heavy_flatcar_steel_livery) {
+	7: spritegroup_mu_wagon_gen5_heavy_flatcar_steel_l1;
+	1: spritegroup_mu_wagon_gen5_heavy_flatcar_steel_l2;
+	1: spritegroup_mu_wagon_gen5_heavy_flatcar_steel_l3;
+	1: spritegroup_mu_wagon_gen5_heavy_flatcar_steel_l4;
 }
+
+// yeti
+
+/// LIVERY 1   LOADING STATE 1   YETI
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_yeti_l1_s1, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_yeti.png") {template_2cc_wagons(1, 1)}
+
+
+/// LIVERY 1   LOADING STATE 2   YETI
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_yeti_l1_s2, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_yeti.png") {template_2cc_wagons(1, 32)}
+
 
-random_switch(FEAT_TRAINS, SELF, switch_mu_Wagon_Gen5_Heavy_Flatcar_YETI_livery) {
-	7: spritegroup_wagon_Gen5_Heavy_Flatcar_YETI_L1;
-	1: spritegroup_wagon_Gen5_Heavy_Flatcar_YETI_L2;
-	1: spritegroup_wagon_Gen5_Heavy_Flatcar_YETI_L3;
-	1: spritegroup_wagon_Gen5_Heavy_Flatcar_YETI_L4;
+/// LIVERY 1   LOADING STATE 3   YETI
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_yeti_l1_s3, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_yeti.png") {template_2cc_wagons(1, 64)}
+
+
+/// LIVERY 1 SPRITEGROUP - YETI
+spritegroup spritegroup_mu_wagon_gen5_heavy_flatcar_yeti_l1 {
+    loading: [spriteset_mu_wagon_gen5_heavy_flatcar_yeti_l1_s1, spriteset_mu_wagon_gen5_heavy_flatcar_yeti_l1_s2, spriteset_mu_wagon_gen5_heavy_flatcar_yeti_l1_s3];
+    loaded: [spriteset_mu_wagon_gen5_heavy_flatcar_yeti_l1_s1, spriteset_mu_wagon_gen5_heavy_flatcar_yeti_l1_s2, spriteset_mu_wagon_gen5_heavy_flatcar_yeti_l1_s3];
 }
+
+/// LIVERY 2   LOADING STATE 1   YETI
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_yeti_l2_s1, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_yeti.png") {template_2cc_wagons(179, 1)}
+
+
+/// LIVERY 2   LOADING STATE 2   YETI
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_yeti_l2_s2, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_yeti.png") {template_2cc_wagons(179, 32)}
+
+
+/// LIVERY 2   LOADING STATE 3   YETI
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_yeti_l2_s3, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_yeti.png") {template_2cc_wagons(179, 64)}
+
 
-random_switch(FEAT_TRAINS, SELF, switch_mu_Wagon_Gen5_Heavy_Flatcar_Goods_livery) {
-	7: switch_mu_Wagon_Gen5_Heavy_Flatcar_Crates_livery;
-	2: switch_mu_Wagon_Gen5_Heavy_Flatcar_Cars_livery;
-	1: switch_mu_Wagon_Gen5_Heavy_Flatcar_Machinery_livery;
+/// LIVERY 2 SPRITEGROUP - YETI
+spritegroup spritegroup_mu_wagon_gen5_heavy_flatcar_yeti_l2 {
+    loading: [spriteset_mu_wagon_gen5_heavy_flatcar_yeti_l2_s1, spriteset_mu_wagon_gen5_heavy_flatcar_yeti_l2_s2, spriteset_mu_wagon_gen5_heavy_flatcar_yeti_l2_s3];
+    loaded: [spriteset_mu_wagon_gen5_heavy_flatcar_yeti_l2_s1, spriteset_mu_wagon_gen5_heavy_flatcar_yeti_l2_s2, spriteset_mu_wagon_gen5_heavy_flatcar_yeti_l2_s3];
 }
 
-random_switch(FEAT_TRAINS, SELF, switch_mu_Wagon_Gen5_Heavy_Flatcar_Supplies_livery) {
-	7: switch_mu_Wagon_Gen5_Heavy_Flatcar_Crates_livery;
-	3: switch_mu_Wagon_Gen5_Heavy_Flatcar_Machinery_livery;
+/// LIVERY 3   LOADING STATE 1   YETI
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_yeti_l3_s1, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_yeti.png") {template_2cc_wagons(357, 1)}
+
+
+/// LIVERY 3   LOADING STATE 2   YETI
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_yeti_l3_s2, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_yeti.png") {template_2cc_wagons(357, 32)}
+
+
+/// LIVERY 3   LOADING STATE 3   YETI
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_yeti_l3_s3, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_yeti.png") {template_2cc_wagons(357, 64)}
+
+
+/// LIVERY 3 SPRITEGROUP - YETI
+spritegroup spritegroup_mu_wagon_gen5_heavy_flatcar_yeti_l3 {
+    loading: [spriteset_mu_wagon_gen5_heavy_flatcar_yeti_l3_s1, spriteset_mu_wagon_gen5_heavy_flatcar_yeti_l3_s2, spriteset_mu_wagon_gen5_heavy_flatcar_yeti_l3_s3];
+    loaded: [spriteset_mu_wagon_gen5_heavy_flatcar_yeti_l3_s1, spriteset_mu_wagon_gen5_heavy_flatcar_yeti_l3_s2, spriteset_mu_wagon_gen5_heavy_flatcar_yeti_l3_s3];
 }
-switch(FEAT_TRAINS, SELF, switch_mu_Wagon_Gen5_Heavy_Flatcar_cargo_selection, cargo_type_in_veh) {
-	GOOD: switch_mu_Wagon_Gen5_Heavy_Flatcar_Goods_livery;
-	STEL: switch_mu_Wagon_Gen5_Heavy_Flatcar_Steel_livery;
-	BDMT: switch_mu_Wagon_Gen5_Heavy_Flatcar_Goods_livery;
-	ENSP: switch_mu_Wagon_Gen5_Heavy_Flatcar_Supplies_livery;
-	FMSP: switch_mu_Wagon_Gen5_Heavy_Flatcar_Supplies_livery;
-	VEHI: switch_mu_Wagon_Gen5_Heavy_Flatcar_Cars_livery;
-	YETI: switch_mu_Wagon_Gen5_Heavy_Flatcar_YETI_livery;
-	YETY: switch_mu_Wagon_Gen5_Heavy_Flatcar_YETI_livery;
-	switch_mu_Wagon_Gen5_Heavy_Flatcar_Crates_livery;
+
+/// LIVERY 4   LOADING STATE 1   YETI
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_yeti_l4_s1, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_yeti.png") {template_2cc_wagons(535, 1)}
+
+
+/// LIVERY 4   LOADING STATE 2   YETI
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_yeti_l4_s2, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_yeti.png") {template_2cc_wagons(535, 32)}
+
+
+/// LIVERY 4   LOADING STATE 3   YETI
+spriteset(spriteset_mu_wagon_gen5_heavy_flatcar_yeti_l4_s3, "gfx/wagons/gen5/wagon_gen5_heavy_flatcar_yeti.png") {template_2cc_wagons(535, 64)}
+
+
+/// LIVERY 4 SPRITEGROUP - YETI
+spritegroup spritegroup_mu_wagon_gen5_heavy_flatcar_yeti_l4 {
+    loading: [spriteset_mu_wagon_gen5_heavy_flatcar_yeti_l4_s1, spriteset_mu_wagon_gen5_heavy_flatcar_yeti_l4_s2, spriteset_mu_wagon_gen5_heavy_flatcar_yeti_l4_s3];
+    loaded: [spriteset_mu_wagon_gen5_heavy_flatcar_yeti_l4_s1, spriteset_mu_wagon_gen5_heavy_flatcar_yeti_l4_s2, spriteset_mu_wagon_gen5_heavy_flatcar_yeti_l4_s3];
 }
 
-//Add defined switches 
+// Random Livery Selector for yeti
+random_switch(FEAT_TRAINS, SELF, switch_mu_wagon_gen5_heavy_flatcar_yeti_livery) {
+	7: spritegroup_mu_wagon_gen5_heavy_flatcar_yeti_l1;
+	1: spritegroup_mu_wagon_gen5_heavy_flatcar_yeti_l2;
+	1: spritegroup_mu_wagon_gen5_heavy_flatcar_yeti_l3;
+	1: spritegroup_mu_wagon_gen5_heavy_flatcar_yeti_l4;
+}
 
-// ENGINECAPACITYSWITCH(VEHIDCODE)
+random_switch(FEAT_TRAINS, SELF, switch_mu_wagon_gen5_heavy_flatcar_goods_livery) {
+	7: switch_mu_wagon_gen5_heavy_flatcar_crates_livery;
+	2: switch_mu_wagon_gen5_heavy_flatcar_cars_livery;
+	1: switch_mu_wagon_gen5_heavy_flatcar_machinery_livery;
+}
 
-// RUNNINGCOST_ENGINE_SWITCH
+random_switch(FEAT_TRAINS, SELF, switch_mu_wagon_gen5_heavy_flatcar_supplies_livery) {
+	7: switch_mu_wagon_gen5_heavy_flatcar_crates_livery;
+	3: switch_mu_wagon_gen5_heavy_flatcar_machinery_livery;
+}
 
-// PURCHASETEXT_SWITCH
+switch(FEAT_TRAINS, SELF, switch_mu_wagon_gen5_heavy_flatcar_cargo_selection, cargo_type_in_veh) {
+	GOOD: switch_mu_wagon_gen5_heavy_flatcar_goods_livery;
+	STEL: switch_mu_wagon_gen5_heavy_flatcar_steel_livery;
+	BDMT: switch_mu_wagon_gen5_heavy_flatcar_goods_livery;
+	ENSP: switch_mu_wagon_gen5_heavy_flatcar_supplies_livery;
+	FMSP: switch_mu_wagon_gen5_heavy_flatcar_supplies_livery;
+	VEHI: switch_mu_wagon_gen5_heavy_flatcar_cars_livery;
+	YETI: switch_mu_wagon_gen5_heavy_flatcar_yeti_livery;
+	YETY: switch_mu_wagon_gen5_heavy_flatcar_yeti_livery;
+	switch_mu_wagon_gen5_heavy_flatcar_crates_livery;
+}

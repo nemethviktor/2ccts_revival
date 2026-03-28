@@ -51,442 +51,442 @@ STR_PARAM_REGION_OCEANIA_DESC                   :Käytä Oseanialaisia ajoneuvoj
 
 #loading speed parameter
 
-#VEHICLE NAMES
-#Railbus-steam
-str_rbs_Austria_NOLB_1          :NOLB 1 (Höyrykiskobussi)
-str_rbs_Italy_FS_86                     :FS 86 (Höyrykiskobussi)
+#vehicle names
+#railbus-steam
+str_rbs_austria_nolb_1          :NOLB 1 (Höyrykiskobussi)
+str_rbs_italy_fs_86                     :FS 86 (Höyrykiskobussi)
 
-#Railbus-diesel
-str_rbd_Australia_Victorian_Railways_AEC_RM1    :Victorian Railways AEC RM1 (Dieselkiskobussi)
-str_rbd_United_Kingdom_GWR_AEC_Railcar                  :GWR AEC kiskobussi (Dieselkiskobussi)
-str_rbd_New_Zealand_NZR_RM31                                    :NZR RM31 (Dieselkiskobussi)
-str_rbd_Portugal_CP_0100                                                :CP 0100 (Dieselkiskobussi)
-str_rbd_USA_Amtrak_Budd_RDC                                     :Amtrak Budd RDC (Dieselkiskobussi)
-str_rbd_Germany_OHE_520_GDT                                     :OHE 520 GDT (Dieselkiskobussi)
-str_rbd_Netherlands_NS_20_Kameel                                :NS 20 'Kameel' (Dieselkiskobussi)
-str_rbd_Finland_VR_Dm7                                                  :VR Dm7 (Dieselkiskobussi)
-str_rbd_Russia_RZD_ACh2                                                 :RZD ACh2 (Dieselkiskobussi)
-str_rbd_Netherlands_NS_DH1                                              :NS DH1 (Dieselkiskobussi)
-str_rbd_Austria_OBB_5047                                                :OBB 5047 (Dieselkiskobussi)
-str_rbd_United_Kingdom_BR_153_Super_Sprinter    :BR 153 'Super Sprinter' (Dieselkiskobussi)
-str_rbd_Czech_Republic_CD_809                                   :CD 809 (Dieselkiskobussi)
-str_rbd_Germany_DB_670                                                  :DB 670 (Dieselkiskobussi)
-str_rbd_Lithuania_Lithuanian_Railways_AR2               :Lithuanian Railways AR2 (Dieselkiskobussi)
+#railbus-diesel
+str_rbd_australia_victorian_railways_aec_rm1    :Victorian Railways AEC RM1 (Dieselkiskobussi)
+str_rbd_united_kingdom_gwr_aec_railcar                  :GWR AEC kiskobussi (Dieselkiskobussi)
+str_rbd_new_zealand_nzr_rm31                                    :NZR RM31 (Dieselkiskobussi)
+str_rbd_portugal_cp_0100                                                :CP 0100 (Dieselkiskobussi)
+str_rbd_usa_amtrak_budd_rdc                                     :Amtrak Budd RDC (Dieselkiskobussi)
+str_rbd_germany_ohe_520_gdt                                     :OHE 520 GDT (Dieselkiskobussi)
+str_rbd_netherlands_ns_20_kameel                                :NS 20 'Kameel' (Dieselkiskobussi)
+str_rbd_finland_vr_dm7                                                  :VR Dm7 (Dieselkiskobussi)
+str_rbd_russia_rzd_ach2                                                 :RZD ACh2 (Dieselkiskobussi)
+str_rbd_netherlands_ns_dh1                                              :NS DH1 (Dieselkiskobussi)
+str_rbd_austria_obb_5047                                                :OBB 5047 (Dieselkiskobussi)
+str_rbd_united_kingdom_br_153_super_sprinter    :BR 153 'Super Sprinter' (Dieselkiskobussi)
+str_rbd_czech_republic_cd_809                                   :CD 809 (Dieselkiskobussi)
+str_rbd_germany_db_670                                                  :DB 670 (Dieselkiskobussi)
+str_rbd_lithuania_lithuanian_railways_ar2               :Lithuanian Railways AR2 (Dieselkiskobussi)
 
-#Railbus-electric
-str_rbe_Switzerland_AB_CFe_3_3          :AB CFe 3/3 (Sähkökiskobussi)
-str_rbe_Morocco_ONCFM_ZAB1000           :ONCFM ZAB1000 (Sähkökiskobussi)
-str_rbe_Italy_FS_ALe_840                        :FS ALe 840 (Sähkökiskobussi)
+#railbus-electric
+str_rbe_switzerland_ab_cfe_3_3          :AB CFe 3/3 (Sähkökiskobussi)
+str_rbe_morocco_oncfm_zab1000           :ONCFM ZAB1000 (Sähkökiskobussi)
+str_rbe_italy_fs_ale_840                        :FS ALe 840 (Sähkökiskobussi)
 
-#Steam
-str_steam_Belgium_Le_Belge                      :Le Belge (Höyry)
-str_steam_USA_4_4_0_American            :4-4-0 'American' (Höyry)
-str_steam_Switzerland_SBB_Ec_2_5        :SBB Ec 2/5 (Höyry)
-str_steam_USA_4_6_0_Ten_wheeler         :4-6-0 'Ten-wheeler' (Höyry)
-str_steam_USA_2_8_0_Consolidation       :2-8-0 'Consolidation' (Höyry)
-str_steam_Hungary_MAV_377                       :MAV 377 (Höyry)
-str_steam_Austria_KkStB_99                      :KkStB 99 (Höyry)
-str_steam_UK_Caledonian_Railway_439     :Caledonian Railway 439 (Höyry)
-str_steam_Switzerland_SBB_A_3_5         :SBB A 3/5 (Höyry)
-str_steam_Switzerland_SBB_E_3_3         :SBB E 3/3 (Höyry)
-str_steam_Austria_KkStB_299             :KkStB 299 (Höyry)
-str_steam_New_Zealand_NZR_X_Class       :NZR X-sarja (Höyry)
-str_steam_Croatia_HZ_51                         :HZ 51 (Höyry)
-str_steam_Italy_FS_880                          :FS 880 (Höyry)
-str_steam_Argentina_FCNEA_11B_2_8_0     :FCNEA 11B 2-8-0 (Höyry)
-str_steam_France_SNCF_140C                      :SNCF 140C (Höyry)
-str_steam_France_SNCF_141TA             :SNCF 141TA (Höyry)
-str_steam_UK_GWR_4900                           :GWR 4900 (Höyry)
-str_steam_UK_GWR_5700                           :GWR 5700 (Höyry)
-str_steam_Netherlands_NS_6300           :NS 6300 (Höyry)
-str_steam_USA_AT_SF_5000                        :AT&amp;SF 5000 (Höyry)
-str_steam_Germany_Prussian_S10          :Prussian S.10 (Höyry)
-str_steam_UK_LMS_5MT_Black_Five         :LMS 5MT 'Black Five' (Höyry)
-str_steam_Russia_RZD_9P                         :RZD 9P (Höyry)
-str_steam_UK_LNER_A4_Gresley            :LNER A4 'Gresley' (Höyry)
-str_steam_Canada_CPR_Royal_Hudson       :CPR Royal Hudson (Höyry)
-str_steam_Denmark_DSB_E                         :DSB E (Höyry)
-str_steam_Germany_DB_52                         :DB 52 (Höyry)
-str_steam_UK_LNER_A1_Peppercorn         :LNER A1 'Peppercorn' (Höyry)
-str_steam_South_Africa_SAR_25           :SAR 25 (Höyry)
-str_steam_Russia_RZD_P36                        :RZD P36 (Höyry)
-str_steam_France_SNCF_150B                      :SNCF 150B (Höyry)
-str_steam_Italy_FS_895                          :FS 895 (Höyry)
-str_steam_Poland_PKP_Okz32                      :PKP Okz32 (Höyry)
-str_steam_Switzerland_SBB_C_5_6         :SBB C 5/6 (Höyry)
-str_steam_USA_UP_4000_Big_Boy           :UP 4000 'Big Boy' (Höyry)
+#steam
+str_steam_belgium_le_belge                      :Le Belge (Höyry)
+str_steam_usa_4_4_0_american            :4-4-0 'American' (Höyry)
+str_steam_switzerland_sbb_ec_2_5        :SBB Ec 2/5 (Höyry)
+str_steam_usa_4_6_0_ten_wheeler         :4-6-0 'Ten-wheeler' (Höyry)
+str_steam_usa_2_8_0_consolidation       :2-8-0 'Consolidation' (Höyry)
+str_steam_hungary_mav_377                       :MAV 377 (Höyry)
+str_steam_austria_kkstb_99                      :KkStB 99 (Höyry)
+str_steam_uk_caledonian_railway_439     :Caledonian Railway 439 (Höyry)
+str_steam_switzerland_sbb_a_3_5         :SBB A 3/5 (Höyry)
+str_steam_switzerland_sbb_e_3_3         :SBB E 3/3 (Höyry)
+str_steam_austria_kkstb_299             :KkStB 299 (Höyry)
+str_steam_new_zealand_nzr_x_class       :NZR X-sarja (Höyry)
+str_steam_croatia_hz_51                         :HZ 51 (Höyry)
+str_steam_italy_fs_880                          :FS 880 (Höyry)
+str_steam_argentina_fcnea_11b_2_8_0     :FCNEA 11B 2-8-0 (Höyry)
+str_steam_france_sncf_140c                      :SNCF 140C (Höyry)
+str_steam_france_sncf_141ta             :SNCF 141TA (Höyry)
+str_steam_uk_gwr_4900                           :GWR 4900 (Höyry)
+str_steam_uk_gwr_5700                           :GWR 5700 (Höyry)
+str_steam_netherlands_ns_6300           :NS 6300 (Höyry)
+str_steam_usa_at_sf_5000                        :AT&amp;SF 5000 (Höyry)
+str_steam_germany_prussian_s10          :Prussian S.10 (Höyry)
+str_steam_uk_lms_5mt_black_five         :LMS 5MT 'Black Five' (Höyry)
+str_steam_russia_rzd_9p                         :RZD 9P (Höyry)
+str_steam_uk_lner_a4_gresley            :LNER A4 'Gresley' (Höyry)
+str_steam_canada_cpr_royal_hudson       :CPR Royal Hudson (Höyry)
+str_steam_denmark_dsb_e                         :DSB E (Höyry)
+str_steam_germany_db_52                         :DB 52 (Höyry)
+str_steam_uk_lner_a1_peppercorn         :LNER A1 'Peppercorn' (Höyry)
+str_steam_south_africa_sar_25           :SAR 25 (Höyry)
+str_steam_russia_rzd_p36                        :RZD P36 (Höyry)
+str_steam_france_sncf_150b                      :SNCF 150B (Höyry)
+str_steam_italy_fs_895                          :FS 895 (Höyry)
+str_steam_poland_pkp_okz32                      :PKP Okz32 (Höyry)
+str_steam_switzerland_sbb_c_5_6         :SBB C 5/6 (Höyry)
+str_steam_usa_up_4000_big_boy           :UP 4000 'Big Boy' (Höyry)
 
-#Diesel
-str_diesel_USA_CNJ_ALCo_GE_IR_Boxcab                                    :CNJ ALCo-GE-IR Boxcab (Diesel)
-str_diesel_Netherlands_NS_200                                                   :NS 200 'Sik' (Diesel)
-str_diesel_Germany_DB_270                                                               :DB 270 (Diesel)
-str_diesel_Switzerland_SBB_Am_4_6                                               :SBB Am 4/6 (Diesel)
-str_diesel_Australia_NSWGR_79                                                   :NSWGR 79 (Diesel)
-str_diesel_USA_Western_Pacific_ALCO_S_2                                 :Western Pacific ALCO S-2 (Diesel)
-str_diesel_USA_AT_SF_EMD_F3                                                     :AT&SF EMD F3 (Diesel)
-str_diesel_USA_UP_EMD_E8                                                                :UP EMD E8 (Diesel)
-str_diesel_Brazil_EFCB_ALCO_RS_3                                                :EFCB ALCO RS-3 (Diesel)
-str_diesel_Netherlands_NS_600                                                   :NS 600 'Bakkie' (Diesel)
-str_diesel_USA_Pennsylvania_Railroad_RF_16_Sharknose    :Pennsylvania Railroad RF-16 'Sharknose' (Diesel)
-str_diesel_Uruguay_AFE_1500                                                     :AFE 1500 (Diesel)
-str_diesel_Canada_CPR_Trainmaster                                               :CPR 'Trainmaster' (Diesel)
-str_diesel_Liberia_Liberia_Railways_Class_08                    :Liberia Railways Class 08 (Diesel)
-str_diesel_Austria_OBB_2060                                                     :OBB 2060 (Diesel)
-str_diesel_Canada_CNR_SW1200                                                    :CNR SW1200 (Diesel)
-str_diesel_Canada_VIA_Rail_FP9                                                  :VIA Rail FP9 (Diesel)
-str_diesel_Hungary_MAV_M44                                                              :MAV M44 (Diesel)
-str_diesel_Hungary_MAV_M28                                                              :MAV M28 (Diesel)
-str_diesel_Belgium_NMBS_SNCB_83                                                 :NMBS/SNCB 83 (Diesel)
-str_diesel_USA_Amtrak_FL9                                                               :Amtrak FL9 (Diesel)
-str_diesel_Czech_Republic_CD_720_ChME2                                  :CD 720 ChME2 (Diesel)
-str_diesel_Finland_VR_Dr12                                                              :VR Dr12 (Diesel)
-str_diesel_Romania_CFR_060_DA                                                   :CFR 060-DA (Diesel)
-str_diesel_Brazil_BF_EMD_GL8                                                    :BF EMD GL8 (Diesel)
-str_diesel_Brazil_EFVM_ML4000                                                   :EFVM ML4000 (Diesel)
-str_diesel_Russia_RZD_TEP60                                                     :RZD TEP60 (Diesel)
-str_diesel_Belgium_NMBS_SNCB_62                                                 :NMBS/SNCB 62 (Diesel)
-str_diesel_Denmark_DSB_MaK_100                                                  :DSB MaK 100 (Diesel)
-str_diesel_India_Indian_Railways_WDM_2                                  :Indian Railways WDM-2 (Diesel)
-str_diesel_UK_BR_14                                                                     :BR 14 (Diesel)
-str_diesel_Russia_RZD_ChME3                                                     :RZD ChME3 (Diesel)
-str_diesel_Argentina_MF_GM_EMD_J16CW_AC                                 :MF GM-EMD-J16CW-AC (Diesel)
-str_diesel_Russia_RZD_M62                                                               :RZD M62 (Diesel)
-str_diesel_Australia_NSWGR_422                                                  :NSWGR 422 (Diesel)
-str_diesel_Egypt_ENR_G22W                                                               :ENR G22W (Diesel)
-str_diesel_USA_UP_EMD_DDA40X                                                    :UP EMD DDA40X (Diesel)
-str_diesel_Australia_Queensland_Rail_2100                               :Queensland Rail 2100 (Diesel)
-str_diesel_Croatia_HZ_2062                                                              :HZ 2062 (Diesel)
-str_diesel_Sweden_SJ_V4                                                                 :SJ V4 (Diesel)
-str_diesel_Canada_CNR_MLW_M420W                                                 :CNR MLW M420W (Diesel)
-str_diesel_USA_Amtrak_SDP_40F                                                  :Amtrak SDP-40F (Diesel)
-str_diesel_China_China_Railways_DFH3                                    :China Railways DFH3 (Diesel)
-str_diesel_Panama_Panama_Canal_Railway_EMD_F40PH                :Panama Canal Railway EMD F40PH (Diesel)
-str_diesel_Portugal_CP_1900                                                     :CP 1900 (Diesel)
-str_diesel_Finland_VR_Dr16                                                              :VR Dr16 (Diesel)
-str_diesel_Russia_RZD_TEP80                                                     :RZD TEP80 (Diesel)
-str_diesel_Australia_Australian_National_AN                     :Australian National AN (Diesel)
-str_diesel_USA_Amtrak_P42DC_Genesis                                     :Amtrak P42DC 'Genesis' (Diesel)
-str_diesel_Turkey_TCDD_DH7000                                                   :TCDD DH7000 (Diesel)
-str_diesel_Argentina_MF_GE_U20C                                                 :MF GE U20C (Diesel)
-str_diesel_Belgium_NMBS_SNCB_7800                                               :NMBS/SNCB 7800 (Diesel)
-str_diesel_UK_BR_66                                                                     :BR 66 (Diesel)
-str_diesel_UK_BR_67                                                                     :BR 67 (Diesel)
-str_diesel_Iran_RAI_DE43CA_Prima                                                :RAI DE43CA 'Prima' (Diesel)
-str_diesel_Ukraine_UZ_TEP150                                                    :UZ TEP150 (Diesel)
-str_diesel_China_China_Railways_HXN5                                    :China Railways HXN5 (Diesel)
-str_diesel_Russia_RZD_GT1                                                               :RZD GT1 (Diesel)
-str_diesel_China_MTR_8000                                                               :MTR 8000 (Diesel)
-str_diesel_Germany_HVLE_V490                                                    :HVLE V490 (Diesel)
+#diesel
+str_diesel_usa_cnj_alco_ge_ir_boxcab                                    :CNJ ALCo-GE-IR Boxcab (Diesel)
+str_diesel_netherlands_ns_200                                                   :NS 200 'Sik' (Diesel)
+str_diesel_germany_db_270                                                               :DB 270 (Diesel)
+str_diesel_switzerland_sbb_am_4_6                                               :SBB Am 4/6 (Diesel)
+str_diesel_australia_nswgr_79                                                   :NSWGR 79 (Diesel)
+str_diesel_usa_western_pacific_alco_s_2                                 :Western Pacific ALCO S-2 (Diesel)
+str_diesel_usa_at_sf_emd_f3                                                     :AT&SF EMD F3 (Diesel)
+str_diesel_usa_up_emd_e8                                                                :UP EMD E8 (Diesel)
+str_diesel_brazil_efcb_alco_rs_3                                                :EFCB ALCO RS-3 (Diesel)
+str_diesel_netherlands_ns_600                                                   :NS 600 'Bakkie' (Diesel)
+str_diesel_usa_pennsylvania_railroad_rf_16_sharknose    :Pennsylvania Railroad RF-16 'Sharknose' (Diesel)
+str_diesel_uruguay_afe_1500                                                     :AFE 1500 (Diesel)
+str_diesel_canada_cpr_trainmaster                                               :CPR 'Trainmaster' (Diesel)
+str_diesel_liberia_liberia_railways_class_08                    :Liberia Railways Class 08 (Diesel)
+str_diesel_austria_obb_2060                                                     :OBB 2060 (Diesel)
+str_diesel_canada_cnr_sw1200                                                    :CNR SW1200 (Diesel)
+str_diesel_canada_via_rail_fp9                                                  :VIA Rail FP9 (Diesel)
+str_diesel_hungary_mav_m44                                                              :MAV M44 (Diesel)
+str_diesel_hungary_mav_m28                                                              :MAV M28 (Diesel)
+str_diesel_belgium_nmbs_sncb_83                                                 :NMBS/SNCB 83 (Diesel)
+str_diesel_usa_amtrak_fl9                                                               :Amtrak FL9 (Diesel)
+str_diesel_czech_republic_cd_720_chme2                                  :CD 720 ChME2 (Diesel)
+str_diesel_finland_vr_dr12                                                              :VR Dr12 (Diesel)
+str_diesel_romania_cfr_060_da                                                   :CFR 060-DA (Diesel)
+str_diesel_brazil_bf_emd_gl8                                                    :BF EMD GL8 (Diesel)
+str_diesel_brazil_efvm_ml4000                                                   :EFVM ML4000 (Diesel)
+str_diesel_russia_rzd_tep60                                                     :RZD TEP60 (Diesel)
+str_diesel_belgium_nmbs_sncb_62                                                 :NMBS/SNCB 62 (Diesel)
+str_diesel_denmark_dsb_mak_100                                                  :DSB MaK 100 (Diesel)
+str_diesel_india_indian_railways_wdm_2                                  :Indian Railways WDM-2 (Diesel)
+str_diesel_uk_br_14                                                                     :BR 14 (Diesel)
+str_diesel_russia_rzd_chme3                                                     :RZD ChME3 (Diesel)
+str_diesel_argentina_mf_gm_emd_j16cw_ac                                 :MF GM-EMD-J16CW-AC (Diesel)
+str_diesel_russia_rzd_m62                                                               :RZD M62 (Diesel)
+str_diesel_australia_nswgr_422                                                  :NSWGR 422 (Diesel)
+str_diesel_egypt_enr_g22w                                                               :ENR G22W (Diesel)
+str_diesel_usa_up_emd_dda40x                                                    :UP EMD DDA40X (Diesel)
+str_diesel_australia_queensland_rail_2100                               :Queensland Rail 2100 (Diesel)
+str_diesel_croatia_hz_2062                                                              :HZ 2062 (Diesel)
+str_diesel_sweden_sj_v4                                                                 :SJ V4 (Diesel)
+str_diesel_canada_cnr_mlw_m420w                                                 :CNR MLW M420W (Diesel)
+str_diesel_usa_amtrak_sdp_40f                                                  :Amtrak SDP-40F (Diesel)
+str_diesel_china_china_railways_dfh3                                    :China Railways DFH3 (Diesel)
+str_diesel_panama_panama_canal_railway_emd_f40ph                :Panama Canal Railway EMD F40PH (Diesel)
+str_diesel_portugal_cp_1900                                                     :CP 1900 (Diesel)
+str_diesel_finland_vr_dr16                                                              :VR Dr16 (Diesel)
+str_diesel_russia_rzd_tep80                                                     :RZD TEP80 (Diesel)
+str_diesel_australia_australian_national_an                     :Australian National AN (Diesel)
+str_diesel_usa_amtrak_p42dc_genesis                                     :Amtrak P42DC 'Genesis' (Diesel)
+str_diesel_turkey_tcdd_dh7000                                                   :TCDD DH7000 (Diesel)
+str_diesel_argentina_mf_ge_u20c                                                 :MF GE U20C (Diesel)
+str_diesel_belgium_nmbs_sncb_7800                                               :NMBS/SNCB 7800 (Diesel)
+str_diesel_uk_br_66                                                                     :BR 66 (Diesel)
+str_diesel_uk_br_67                                                                     :BR 67 (Diesel)
+str_diesel_iran_rai_de43ca_prima                                                :RAI DE43CA 'Prima' (Diesel)
+str_diesel_ukraine_uz_tep150                                                    :UZ TEP150 (Diesel)
+str_diesel_china_china_railways_hxn5                                    :China Railways HXN5 (Diesel)
+str_diesel_russia_rzd_gt1                                                               :RZD GT1 (Diesel)
+str_diesel_china_mtr_8000                                                               :MTR 8000 (Diesel)
+str_diesel_germany_hvle_v490                                                    :HVLE V490 (Diesel)
 
-#Electric
-str_electric_Switzerland_RhB_DE_2_2                     :RhB DE 2/2 (Sähkö)
-str_electric_Norway_NSB_EL7                                     :NSB EL7 (Sähkö)
-str_electric_UK_NER_EF1                                                 :NER EF1 (Sähkö)
-str_electric_USA_Milwaukee_Road_ES_2                    :Milwaukee Road ES-2 (Sähkö)
-str_electric_USA_Pennsylvania_Railroad_FF_1     :Pennsylvania Railroad FF-1 (Sähkö)
-str_electric_USA_Milwaukee_Road_EP_2_Bipolar    :Milwaukee Road EP-2 Bipolar (Sähkö)
-str_electric_Chile_EFE_E_28                                     :EFE E-28 (Sähkö)
-str_electric_Austria_OBB_1161                                   :OBB 1161 (Sähkö)
-str_electric_Germany_DB_169                                     :DB 169 (Sähkö)
-str_electric_Japan_JNR_EB10                                     :JNR EB10 (Sähkö)
-str_electric_Norway_NSB_EL10                                    :NSB EL10 (Sähkö)
-str_electric_Germany_DB_104                                     :DB 104 (Sähkö)
-str_electric_Italy_FS_E428                                              :FS E428 (Sähkö)
-str_electric_USA_Pennsylvania_Railroad_GG_1     :Pennsylvania Railroad GG-1 (Sähkö)
-str_electric_Japan_JNR_EF55                                     :JNR EF55 (Sähkö)
-str_electric_South_Africa_SAR_ES_Class                  :SAR ES Class (Sähkö)
-str_electric_Austria_OBB_1020_Crocodile                 :OBB 1020 'Crocodile' (Sähkö)
-str_electric_Russia_RZD_VL22M                                   :RZD VL22M (Sähkö)
-str_electric_Netherlands_NS_1000                                :NS 1000 (Sähkö)
-str_electric_Sweden_MTAB_Dm3                                    :MTAB Dm3 (Sähkö)
-str_electric_UK_BR_77_Metrovic                                  :BR 77 'Metrovic' (Sähkö)
-str_electric_France_SNCF_BB_9004                                :SNCF BB 9004 (Sähkö)
-str_electric_Switzerland_BLS_Ce_4_4                     :BLS Ce 4/4 (Sähkö)
-str_electric_Switzerland_SBB_Ae_6_6                     :SBB Ae 6/6 (Sähkö)
-str_electric_India_Indian_Railways_WCM_1                :Indian Railways WCM-1 (Sähkö)
-str_electric_Italy_FS_E646                                              :FS E646 (Sähkö)
-str_electric_Russia_RZD_VL41                                    :RZD VL41 (Sähkö)
-str_electric_Japan_JNR_EF64                                     :JNR EF64 (Sähkö)
-str_electric_Croatia_HZ_1141                                    :HZ 1141 (Sähkö)
-str_electric_South_Africa_SAR_6E                                :SAR 6E (Sähkö)
-str_electric_Finland_VR_Sr1                                     :VR Sr1 (Sähkö)
-str_electric_Austria_OBB_1044                                   :OBB 1044 (Sähkö)
-str_electric_France_SNCF_BB_22200                               :SNCF BB 22200 (Sähkö)
-str_electric_Poland_PKP_ET41                                    :PKP ET41 (Sähkö)
-str_electric_Netherlands_NS_1600                                :NS 1600 (Sähkö)
-str_electric_Austria_OBB_1063                                   :OBB 1063 (Sähkö)
-str_electric_Russia_RZD_VL85                                    :RZD VL85 (Sähkö)
-str_electric_Russia_RZD_VL15                                    :RZD VL15 (Sähkö)
-str_electric_France_SNCF_BB_26000                               :SNCF BB 26000 (Sähkö)
-str_electric_China_China_Railways_SS6                   :China Railways SS6 (Sähkö)
-str_electric_Switzerland_SBB_Re460_Lok_2000     :SBB Re460 'Lok 2000' (Sähkö)
-str_electric_Spain_RENFE_252                                    :RENFE 252 (Sähkö)
-str_electric_UK_BR_92                                                   :BR 92 (Sähkö)
-str_electric_Germany_DB_185_TRAXX_F140                  :DB 185 TRAXX F140 (Sähkö)
-str_electric_Belgium_NMBS_SNCB_13_HLE                   :NMBS/SNCB 13 HLE (Sähkö)
-str_electric_Japan_JR_EH500                                     :JR EH500 (Sähkö)
-str_electric_Germany_DB_182_ES64U_Taurus                :DB 182 ES64U 'Taurus' (Sähkö)
-str_electric_Sweden_MTAB_IORE                                   :MTAB IORE (Sähkö)
-str_electric_South_Korea_Korail_8200                    :Korail 8200 (Sähkö)
-str_electric_Ukraine_UZ_DS3                                     :UZ DS3 (Sähkö)
-str_electric_Kazakhstan_KTZ_KZ4A                                :KTZ KZ4A (Sähkö)
-str_electric_Switzerland_SBB_Eem_923                    :SBB Eem 923 (Sähkö)
-str_electric_China_China_Railways_HXD3                  :China Railways HXD3 (Sähkö)
-str_electric_France_SNCF_CC_40100                               :SNCF CC 40100 (Sähkö)
-str_electric_India_Indian_Railways_WAP_4                :Indian Railways WAP-4 (Sähkö)
-str_electric_India_Indian_Railways_WCG_1                :Indian Railways WCG-1 (Sähkö)
-str_electric_Portugal_CP_2500                                   :CP 2500 (Sähkö)
+#electric
+str_electric_switzerland_rhb_de_2_2                     :RhB DE 2/2 (Sähkö)
+str_electric_norway_nsb_el7                                     :NSB EL7 (Sähkö)
+str_electric_uk_ner_ef1                                                 :NER EF1 (Sähkö)
+str_electric_usa_milwaukee_road_es_2                    :Milwaukee Road ES-2 (Sähkö)
+str_electric_usa_pennsylvania_railroad_ff_1     :Pennsylvania Railroad FF-1 (Sähkö)
+str_electric_usa_milwaukee_road_ep_2_bipolar    :Milwaukee Road EP-2 Bipolar (Sähkö)
+str_electric_chile_efe_e_28                                     :EFE E-28 (Sähkö)
+str_electric_austria_obb_1161                                   :OBB 1161 (Sähkö)
+str_electric_germany_db_169                                     :DB 169 (Sähkö)
+str_electric_japan_jnr_eb10                                     :JNR EB10 (Sähkö)
+str_electric_norway_nsb_el10                                    :NSB EL10 (Sähkö)
+str_electric_germany_db_104                                     :DB 104 (Sähkö)
+str_electric_italy_fs_e428                                              :FS E428 (Sähkö)
+str_electric_usa_pennsylvania_railroad_gg_1     :Pennsylvania Railroad GG-1 (Sähkö)
+str_electric_japan_jnr_ef55                                     :JNR EF55 (Sähkö)
+str_electric_south_africa_sar_es_class                  :SAR ES Class (Sähkö)
+str_electric_austria_obb_1020_crocodile                 :OBB 1020 'Crocodile' (Sähkö)
+str_electric_russia_rzd_vl22m                                   :RZD VL22M (Sähkö)
+str_electric_netherlands_ns_1000                                :NS 1000 (Sähkö)
+str_electric_sweden_mtab_dm3                                    :MTAB Dm3 (Sähkö)
+str_electric_uk_br_77_metrovic                                  :BR 77 'Metrovic' (Sähkö)
+str_electric_france_sncf_bb_9004                                :SNCF BB 9004 (Sähkö)
+str_electric_switzerland_bls_ce_4_4                     :BLS Ce 4/4 (Sähkö)
+str_electric_switzerland_sbb_ae_6_6                     :SBB Ae 6/6 (Sähkö)
+str_electric_india_indian_railways_wcm_1                :Indian Railways WCM-1 (Sähkö)
+str_electric_italy_fs_e646                                              :FS E646 (Sähkö)
+str_electric_russia_rzd_vl41                                    :RZD VL41 (Sähkö)
+str_electric_japan_jnr_ef64                                     :JNR EF64 (Sähkö)
+str_electric_croatia_hz_1141                                    :HZ 1141 (Sähkö)
+str_electric_south_africa_sar_6e                                :SAR 6E (Sähkö)
+str_electric_finland_vr_sr1                                     :VR Sr1 (Sähkö)
+str_electric_austria_obb_1044                                   :OBB 1044 (Sähkö)
+str_electric_france_sncf_bb_22200                               :SNCF BB 22200 (Sähkö)
+str_electric_poland_pkp_et41                                    :PKP ET41 (Sähkö)
+str_electric_netherlands_ns_1600                                :NS 1600 (Sähkö)
+str_electric_austria_obb_1063                                   :OBB 1063 (Sähkö)
+str_electric_russia_rzd_vl85                                    :RZD VL85 (Sähkö)
+str_electric_russia_rzd_vl15                                    :RZD VL15 (Sähkö)
+str_electric_france_sncf_bb_26000                               :SNCF BB 26000 (Sähkö)
+str_electric_china_china_railways_ss6                   :China Railways SS6 (Sähkö)
+str_electric_switzerland_sbb_re460_lok_2000     :SBB Re460 'Lok 2000' (Sähkö)
+str_electric_spain_renfe_252                                    :RENFE 252 (Sähkö)
+str_electric_uk_br_92                                                   :BR 92 (Sähkö)
+str_electric_germany_db_185_traxx_f140                  :DB 185 TRAXX F140 (Sähkö)
+str_electric_belgium_nmbs_sncb_13_hle                   :NMBS/SNCB 13 HLE (Sähkö)
+str_electric_japan_jr_eh500                                     :JR EH500 (Sähkö)
+str_electric_germany_db_182_es64u_taurus                :DB 182 ES64U 'Taurus' (Sähkö)
+str_electric_sweden_mtab_iore                                   :MTAB IORE (Sähkö)
+str_electric_south_korea_korail_8200                    :Korail 8200 (Sähkö)
+str_electric_ukraine_uz_ds3                                     :UZ DS3 (Sähkö)
+str_electric_kazakhstan_ktz_kz4a                                :KTZ KZ4A (Sähkö)
+str_electric_switzerland_sbb_eem_923                    :SBB Eem 923 (Sähkö)
+str_electric_china_china_railways_hxd3                  :China Railways HXD3 (Sähkö)
+str_electric_france_sncf_cc_40100                               :SNCF CC 40100 (Sähkö)
+str_electric_india_indian_railways_wap_4                :Indian Railways WAP-4 (Sähkö)
+str_electric_india_indian_railways_wcg_1                :Indian Railways WCG-1 (Sähkö)
+str_electric_portugal_cp_2500                                   :CP 2500 (Sähkö)
 
-#DMU
-str_dmu_Australia_NSWGR_Silver_City_Comet       :NSWGR Silver City Comet (Dieselmoottorivaunu)
-str_dmu_Czech_Republic_CD_M131                          :CD M131 (Dieselmoottorivaunu)
-str_dmu_Australia_Queensland_Rail_400           :Queensland Rail 400 (Dieselmoottorivaunu)
-str_dmu_Netherlands_NS_Plan_U_DE_III            :NS Plan U DE-III (Dieselmoottorivaunu)
-str_dmu_Canada_CNR_Turbo_Train                          :CNR 'Turbo Train' (Dieselmoottorivaunu)
-str_dmu_Serbia_ZS_811                                           :ZS 811 (Dieselmoottorivaunu)
-str_dmu_UK_BR_43_IC125                                          :BR 43 IC125 (Dieselmoottorivaunu)
-str_dmu_Canada_VIA_Rail_LRC                             :VIA Rail LRC (Dieselmoottorivaunu)
-str_dmu_Sweden_SJ_Y2                                            :SJ Y2 (Dieselmoottorivaunu)
-str_dmu_Spain_RENFE_594_TRD                             :RENFE 594 TRD (Dieselmoottorivaunu)
-str_dmu_UK_BR_168                                                       :BR 168 (Dieselmoottorivaunu)
-str_dmu_Germany_DB_612_Regio_Swinger            :DB 612 'Regio Swinger' (Dieselmoottorivaunu)
-str_dmu_Germany_DB_642_Desiro                           :DB 642 'Desiro' (Dieselmoottorivaunu)
-str_dmu_Denmark_Arriva_Lint_41                          :Arriva Lint 41 (Dieselmoottorivaunu)
-str_dmu_Norway_NSB_BM_93_Talent                         :NSB BM 93 'Talent' (Dieselmoottorivaunu)
-str_dmu_Australia_Transwa_Prospector            :Transwa Prospector (Dieselmoottorivaunu)
-str_dmu_Australia_CityRail_Hunter_Railcar       :CityRail Hunter Railcar (Dieselmoottorivaunu)
-str_dmu_Russia_RZD_RA2                                          :RZD RA2 (Diesemoottorivaunu)
-str_dmu_Denmark_DSB_IC4                                         :DSB IC4 (Dieselmoottorivaunu)
-str_dmu_Croatia_HZ_7022                                         :HZ 7022 (Dieselmoottorivaunu)
+#dmu
+str_dmu_australia_nswgr_silver_city_comet       :NSWGR Silver City Comet (Dieselmoottorivaunu)
+str_dmu_czech_republic_cd_m131                          :CD M131 (Dieselmoottorivaunu)
+str_dmu_australia_queensland_rail_400           :Queensland Rail 400 (Dieselmoottorivaunu)
+str_dmu_netherlands_ns_plan_u_de_iii            :NS Plan U DE-III (Dieselmoottorivaunu)
+str_dmu_canada_cnr_turbo_train                          :CNR 'Turbo Train' (Dieselmoottorivaunu)
+str_dmu_serbia_zs_811                                           :ZS 811 (Dieselmoottorivaunu)
+str_dmu_uk_br_43_ic125                                          :BR 43 IC125 (Dieselmoottorivaunu)
+str_dmu_canada_via_rail_lrc                             :VIA Rail LRC (Dieselmoottorivaunu)
+str_dmu_sweden_sj_y2                                            :SJ Y2 (Dieselmoottorivaunu)
+str_dmu_spain_renfe_594_trd                             :RENFE 594 TRD (Dieselmoottorivaunu)
+str_dmu_uk_br_168                                                       :BR 168 (Dieselmoottorivaunu)
+str_dmu_germany_db_612_regio_swinger            :DB 612 'Regio Swinger' (Dieselmoottorivaunu)
+str_dmu_germany_db_642_desiro                           :DB 642 'Desiro' (Dieselmoottorivaunu)
+str_dmu_denmark_arriva_lint_41                          :Arriva Lint 41 (Dieselmoottorivaunu)
+str_dmu_norway_nsb_bm_93_talent                         :NSB BM 93 'Talent' (Dieselmoottorivaunu)
+str_dmu_australia_transwa_prospector            :Transwa Prospector (Dieselmoottorivaunu)
+str_dmu_australia_cityrail_hunter_railcar       :CityRail Hunter Railcar (Dieselmoottorivaunu)
+str_dmu_russia_rzd_ra2                                          :RZD RA2 (Diesemoottorivaunu)
+str_dmu_denmark_dsb_ic4                                         :DSB IC4 (Dieselmoottorivaunu)
+str_dmu_croatia_hz_7022                                         :HZ 7022 (Dieselmoottorivaunu)
 
-#CargoDMU
+#cargodmu
 
-#EMU
-str_emu_Netherlands_NS_Mat24                            :NS Mat'24 (Sähkömoottorivaunu)
-str_emu_Austria_OBB_4041                                        :OBB 4041 (Sähkömoottorivaunu)
-str_emu_Italy_ATAC_ECD_21_30                            :ATAC ECD 21-30 (Sähkömoottorijuna)
-str_emu_Netherlands_NS_Mat36                            :NS Mat'36 (Sähkömoottorivaunu)
-str_emu_Italy_FS_ETR200                                         :FS ETR200 (Sähkömoottorijuna)
-str_emu_Norway_NSB_BM65                                         :NSB BM65 (Sähkömoottorivaunu)
-str_emu_Italy_FS_ETR300_Settebello                      :FS ETR300 'Settebello' (Sähkömoottorijuna)
-str_emu_Netherlands_NS_Mat54                            :NS Mat'54 (Sähkömoottorivaunu)
-str_emu_Turkey_TCDD_E8000                                       :TCDD E8000 (Sähkömoottorivaunu)
-str_emu_Switzerland_SBB_Rae_TEE_II                      :SBB Rae TEE II (Sähkömoottorivaunu)
-str_emu_Japan_Odakyu_3100_Series_Romance        :Odakyu 3100 Series 'Romance' (Sähkömoottorivaunu)
-str_emu_Japan_JNR_Shinkansen_Series_0           :JNR Shinkansen Series 0 (Sähkömoottorivaunu)
-str_emu_Switzerland_SBB_RABDe_510                       :SBB RABDe 510 (Sähkömoottorivaunu)
-str_emu_Denmark_DSB_S_Tog_II                            :DSB S-Tog II (Sähkömoottorivaunu)
-str_emu_Germany_DB_ET420                                        :DB ET420 (Sähkömoottorivaunu)
-str_emu_Australia_Sydney_Trains_S_Set           :Sydney Trains S-set (Sähkömoottorijuna)
-str_emu_Netherlands_NS_Plan_Y                           :NS Plan Y (Sähkömoottorivaunu)
-str_emu_Finland_VR_Sm2                                          :VR Sm2 (Sähkömoottorivaunu)
-str_emu_Netherlands_NS_ICM_4000                         :NS ICM 4000 (Sähkömoottorivaunu)
-str_emu_France_SNCF_TGV_Sud_Est                         :SNCF TGV Sud-Est (Sähkömoottorivaunu)
-str_emu_Switzerland_SBB_RBDe_560                        :SBB RBDe 560 (Sähkömoottorivaunu)
-str_emu_Japan_Odakyu_10000_Series_Romance       :Odakyu 10000 Series 'Romance' (Sähkömoottorivaunu)
-str_emu_Hungary_MAV_BDVmot                                      :MAV BDVmot (Sähkomoottorivaunu)
-str_emu_Sweden_SJ_X2000                                         :SJ X2000 (Sähkömoottorivaunu)
-str_emu_Italy_FS_ETR500                                         :FS ETR500 (Sähkömoottorivaunu)
-str_emu_Netherlands_NS_DD_IRM_VIRM                      :NS DD-IRM 'VIRM' (Sähkömoottorivaunu)
-str_emu_France_SNCF_TGV_Duplex                          :SNCF TGV Duplex (Sähkömoottorivaunu)
-str_emu_France_Thalys_PBKA                                      :Thalys PBKA (Sähkömoottorijuna)
-str_emu_Denmark_DSB_S_Tog_IV                            :DSB S-Tog IV (Sähkömoottorivaunu)
-str_emu_Italy_FS_ALe426                                         :FS ALe426 (Sähkömoottorivaunu)
-str_emu_Japan_JR_Shinkansen_Series_700          :JR Shinkansen Series 700 (Sähkömoottorivaunu)
-str_emu_Netherlands_NS_mDDm_390                         :NS mDDm 390 (Sähkömoottorivaunu)
-str_emu_Norway_NSB_BM73                                         :NSB BM73 (Sähkömoottorivaunu)
-str_emu_Czech_Republic_CD_680_Pendolino         :CD 680 'Pendolino' (Sähkömoottorivaunu)
-str_emu_Luxembourg_CFL_2200_Coradia_Duplex      :CFL 2200 'Coradia Duplex' (Sähkömoottorivaunu)
-str_emu_Finland_VR_Sm4                                          :VR Sm4 (Sähkömoottorivaunu)
-str_emu_Germany_DB_403_ICE_3                            :DB 403 ICE-3 (Sähkömoottorivaunu)
-str_emu_Spain_RENFE_120                                         :RENFE 120 (Sähkömoottorivaunu)
-str_emu_Switzerland_SBB_RABe_523_Flirt          :SBB RAVe 523 'Flirt' (Sähkömoottorivaunu)
-str_emu_Bulgaria_BDZ_10_Desiro                          :BDZ 10 'Desiro' (Sähkömoottorivaunu)
-str_emu_Australia_Sydney_Trains_OSCars          :Sydney Trains OSCars (Sähkömoottorijuna)
-str_emu_South_Africa_Gautrain_Electrostar       :Gautrain Electrostar (Sähkömoottorivaunu)
-str_emu_Italy_NTV_AGV                                           :NTV AGV (Sähkömoottorivaunu)
-str_emu_Netherlands_NS_4800_HSA                         :NS 4800 HSA (Sähkömoottorivaunu)
-str_emu_Italy_NTV_AGV_Duplex                            :NTV AGV Duplex (Sähkömoottorivaunu)
+#emu
+str_emu_netherlands_ns_mat24                            :NS Mat'24 (Sähkömoottorivaunu)
+str_emu_austria_obb_4041                                        :OBB 4041 (Sähkömoottorivaunu)
+str_emu_italy_atac_ecd_21_30                            :ATAC ECD 21-30 (Sähkömoottorijuna)
+str_emu_netherlands_ns_mat36                            :NS Mat'36 (Sähkömoottorivaunu)
+str_emu_italy_fs_etr200                                         :FS ETR200 (Sähkömoottorijuna)
+str_emu_norway_nsb_bm65                                         :NSB BM65 (Sähkömoottorivaunu)
+str_emu_italy_fs_etr300_settebello                      :FS ETR300 'Settebello' (Sähkömoottorijuna)
+str_emu_netherlands_ns_mat54                            :NS Mat'54 (Sähkömoottorivaunu)
+str_emu_turkey_tcdd_e8000                                       :TCDD E8000 (Sähkömoottorivaunu)
+str_emu_switzerland_sbb_rae_tee_ii                      :SBB Rae TEE II (Sähkömoottorivaunu)
+str_emu_japan_odakyu_3100_series_romance        :Odakyu 3100 Series 'Romance' (Sähkömoottorivaunu)
+str_emu_japan_jnr_shinkansen_series_0           :JNR Shinkansen Series 0 (Sähkömoottorivaunu)
+str_emu_switzerland_sbb_rabde_510                       :SBB RABDe 510 (Sähkömoottorivaunu)
+str_emu_denmark_dsb_s_tog_ii                            :DSB S-Tog II (Sähkömoottorivaunu)
+str_emu_germany_db_et420                                        :DB ET420 (Sähkömoottorivaunu)
+str_emu_australia_sydney_trains_s_set           :Sydney Trains S-set (Sähkömoottorijuna)
+str_emu_netherlands_ns_plan_y                           :NS Plan Y (Sähkömoottorivaunu)
+str_emu_finland_vr_sm2                                          :VR Sm2 (Sähkömoottorivaunu)
+str_emu_netherlands_ns_icm_4000                         :NS ICM 4000 (Sähkömoottorivaunu)
+str_emu_france_sncf_tgv_sud_est                         :SNCF TGV Sud-Est (Sähkömoottorivaunu)
+str_emu_switzerland_sbb_rbde_560                        :SBB RBDe 560 (Sähkömoottorivaunu)
+str_emu_japan_odakyu_10000_series_romance       :Odakyu 10000 Series 'Romance' (Sähkömoottorivaunu)
+str_emu_hungary_mav_bdvmot                                      :MAV BDVmot (Sähkomoottorivaunu)
+str_emu_sweden_sj_x2000                                         :SJ X2000 (Sähkömoottorivaunu)
+str_emu_italy_fs_etr500                                         :FS ETR500 (Sähkömoottorivaunu)
+str_emu_netherlands_ns_dd_irm_virm                      :NS DD-IRM 'VIRM' (Sähkömoottorivaunu)
+str_emu_france_sncf_tgv_duplex                          :SNCF TGV Duplex (Sähkömoottorivaunu)
+str_emu_france_thalys_pbka                                      :Thalys PBKA (Sähkömoottorijuna)
+str_emu_denmark_dsb_s_tog_iv                            :DSB S-Tog IV (Sähkömoottorivaunu)
+str_emu_italy_fs_ale426                                         :FS ALe426 (Sähkömoottorivaunu)
+str_emu_japan_jr_shinkansen_series_700          :JR Shinkansen Series 700 (Sähkömoottorivaunu)
+str_emu_netherlands_ns_mddm_390                         :NS mDDm 390 (Sähkömoottorivaunu)
+str_emu_norway_nsb_bm73                                         :NSB BM73 (Sähkömoottorivaunu)
+str_emu_czech_republic_cd_680_pendolino         :CD 680 'Pendolino' (Sähkömoottorivaunu)
+str_emu_luxembourg_cfl_2200_coradia_duplex      :CFL 2200 'Coradia Duplex' (Sähkömoottorivaunu)
+str_emu_finland_vr_sm4                                          :VR Sm4 (Sähkömoottorivaunu)
+str_emu_germany_db_403_ice_3                            :DB 403 ICE-3 (Sähkömoottorivaunu)
+str_emu_spain_renfe_120                                         :RENFE 120 (Sähkömoottorivaunu)
+str_emu_switzerland_sbb_rabe_523_flirt          :SBB RAVe 523 'Flirt' (Sähkömoottorivaunu)
+str_emu_bulgaria_bdz_10_desiro                          :BDZ 10 'Desiro' (Sähkömoottorivaunu)
+str_emu_australia_sydney_trains_oscars          :Sydney Trains OSCars (Sähkömoottorijuna)
+str_emu_south_africa_gautrain_electrostar       :Gautrain Electrostar (Sähkömoottorivaunu)
+str_emu_italy_ntv_agv                                           :NTV AGV (Sähkömoottorivaunu)
+str_emu_netherlands_ns_4800_hsa                         :NS 4800 HSA (Sähkömoottorivaunu)
+str_emu_italy_ntv_agv_duplex                            :NTV AGV Duplex (Sähkömoottorivaunu)
 
-#Single Unit Metro
-str_singlemtro_USA_Brooklyn_Union_Gate_Car                                      :Brooklyn Union Gate Car (Yhden yksikön metro)
-str_singlemtro_Hungary_Budapest_1894_Stock                                      :Budapest vuoden 1894 kalusto (Yhden yksiön metro)
-str_singlemtro_USA_Chicago_L_Northwest_Elevated_1907_Stock      :Chicago L Northwest Elevated vuoden 1907 kalusto (Yhden yksikön metro)
-str_singlemtro_Germany_Berlin_U_Bahn_C_II                                               :Berliini U-Bahn C II (Yhden yksikön metro)
+#single unit metro
+str_singlemtro_usa_brooklyn_union_gate_car                                      :Brooklyn Union Gate Car (Yhden yksikön metro)
+str_singlemtro_hungary_budapest_1894_stock                                      :Budapest vuoden 1894 kalusto (Yhden yksiön metro)
+str_singlemtro_usa_chicago_l_northwest_elevated_1907_stock      :Chicago L Northwest Elevated vuoden 1907 kalusto (Yhden yksikön metro)
+str_singlemtro_germany_berlin_u_bahn_c_ii                                               :Berliini U-Bahn C II (Yhden yksikön metro)
 
-#Multiple Unit Metro
-str_mtro_UK_London_1903_Stock                                   :Lontoo vuoden 1903 kalusto (Metro)
-str_mtro_Argentina_Le_Brugeoise                                 :Buenos Aires 'Le Brugeoise' (Metro)
-str_mtro_USA_NY_R1                                                              :New York R1 (Metro)
-str_mtro_UK_London_1938_Stock                                   :Lontoo vuoden 1938 kalusto (Metro)
-str_mtro_France_Paris_M2_840                                    :Pariisi M2 840 (Metro)
-str_mtro_Portugal_Lisbon_ML7                                    :Lissabon ML7 (Metro)
-str_mtro_Hungary_Budapest_Ev3_200                               :Budapest Ev3-200 (Metro)
-str_mtro_Norway_Oslo_T1000                                              :Oslo T1000 (Metro)
-str_mtro_Canada_Toronto_H_series                                :Toronto H-sarja (Metro)
-str_mtro_Germany_Munchen_MVG_A2                                 :München MVG A2 (Metro)
-str_mtro_USA_NY_R44                                                     :New York R44 (Metro)
-str_mtro_Netherlands_Amsterdam_Type_M1                  :Amsterdam M1 (Metro)
-str_mtro_Sweden_Stockholm_C8                                    :Tukholma C8 (Metro)
-str_mtro_North_Korea_Pyongyang_D_stock                  :Pjongjang D-sarja (Metro)
-str_mtro_Finland_Helsinki_M100                                  :Helsinki M100 (Metro)
-str_mtro_Brazil_Sao_Paulo_Serie_5500                    :Sao Paulo 5500-sarja (Metro)
-str_mtro_Russia_Moscow_81_720                                   :Moskova 81-720 (Metro)
-str_mtro_Japan_Tokyo_S01                                                :Tokio S01 (Metro)
-str_mtro_Egypt_Cairo_1987_Stock                                 :Kairo vuoden 1987 kalusto (Metro)
-str_mtro_UK_DLR_P86                                                     :DLR P86 (Metro)
-str_mtro_Russia_Moscow_81_7175M                                 :Moskova 81-717.5M (Metro)
-str_mtro_USA_Boston_01800                                               :Boston 01800 (Metro)
-str_mtro_USA_LA_A650                                                    :LA A650 (Metro)
-str_mtro_Taiwan_Taipei_C301                                     :Taipei C301 (Metro)
-str_mtro_Netherlands_Amsterdam_CAF_90                   :Amsterdam CAF 90 (Metro)
-str_mtro_France_Paris_MP89                                              :Pariisi MP89 (Metro)
-str_mtro_Russia_Moscow_81_740                                   :Moskova 81-740 (Metro)
-str_mtro_Singapore_Singapore_C830_Metropolis    :Singapore C830 'Metropolis' (Metro)
-str_mtro_Norway_Oslo_MX3000                                     :Oslo MX3000 (Metro)
-str_mtro_Japan_Osaka_30000                                              :Osaka 30000 (Metro)
-str_mtro_Singapore_Singapore_C151A                              :Singapore C151A (Metro)
-str_mtro_USA_Washington_7000                                    :Washington 7000 (Metro)
-str_mtro_Greece_Thessaloniki_2014                               :Thessaloniki 2014 (Metro)
+#multiple unit metro
+str_mtro_uk_london_1903_stock                                   :Lontoo vuoden 1903 kalusto (Metro)
+str_mtro_argentina_le_brugeoise                                 :Buenos Aires 'Le Brugeoise' (Metro)
+str_mtro_usa_ny_r1                                                              :New York R1 (Metro)
+str_mtro_uk_london_1938_stock                                   :Lontoo vuoden 1938 kalusto (Metro)
+str_mtro_france_paris_m2_840                                    :Pariisi M2 840 (Metro)
+str_mtro_portugal_lisbon_ml7                                    :Lissabon ML7 (Metro)
+str_mtro_hungary_budapest_ev3_200                               :Budapest Ev3-200 (Metro)
+str_mtro_norway_oslo_t1000                                              :Oslo T1000 (Metro)
+str_mtro_canada_toronto_h_series                                :Toronto H-sarja (Metro)
+str_mtro_germany_munchen_mvg_a2                                 :München MVG A2 (Metro)
+str_mtro_usa_ny_r44                                                     :New York R44 (Metro)
+str_mtro_netherlands_amsterdam_type_m1                  :Amsterdam M1 (Metro)
+str_mtro_sweden_stockholm_c8                                    :Tukholma C8 (Metro)
+str_mtro_north_korea_pyongyang_d_stock                  :Pjongjang D-sarja (Metro)
+str_mtro_finland_helsinki_m100                                  :Helsinki M100 (Metro)
+str_mtro_brazil_sao_paulo_serie_5500                    :Sao Paulo 5500-sarja (Metro)
+str_mtro_russia_moscow_81_720                                   :Moskova 81-720 (Metro)
+str_mtro_japan_tokyo_s01                                                :Tokio S01 (Metro)
+str_mtro_egypt_cairo_1987_stock                                 :Kairo vuoden 1987 kalusto (Metro)
+str_mtro_uk_dlr_p86                                                     :DLR P86 (Metro)
+str_mtro_russia_moscow_81_7175m                                 :Moskova 81-717.5M (Metro)
+str_mtro_usa_boston_01800                                               :Boston 01800 (Metro)
+str_mtro_usa_la_a650                                                    :LA A650 (Metro)
+str_mtro_taiwan_taipei_c301                                     :Taipei C301 (Metro)
+str_mtro_netherlands_amsterdam_caf_90                   :Amsterdam CAF 90 (Metro)
+str_mtro_france_paris_mp89                                              :Pariisi MP89 (Metro)
+str_mtro_russia_moscow_81_740                                   :Moskova 81-740 (Metro)
+str_mtro_singapore_singapore_c830_metropolis    :Singapore C830 'Metropolis' (Metro)
+str_mtro_norway_oslo_mx3000                                     :Oslo MX3000 (Metro)
+str_mtro_japan_osaka_30000                                              :Osaka 30000 (Metro)
+str_mtro_singapore_singapore_c151a                              :Singapore C151A (Metro)
+str_mtro_usa_washington_7000                                    :Washington 7000 (Metro)
+str_mtro_greece_thessaloniki_2014                               :Thessaloniki 2014 (Metro)
 
-#Maglev railbus
+#maglev railbus
 
-#Maglev
-str_mglv_China_Transrapid       :Shanghai Transrapid (Maglev)
-str_mglv_Japan_MLX01_901        :JR MLX01-901 (Maglev)
+#maglev
+str_mglv_china_transrapid       :Shanghai Transrapid (Maglev)
+str_mglv_japan_mlx01_901        :JR MLX01-901 (Maglev)
 
 #wagons
-str_mu_Wagon_Gen1_Flat_Wagon                               :1. sukupolven avolavavaunu
-str_mu_Wagon_Gen1_Boxcar                                   :1. sukupolven puinen katettu tavaravaunu
-str_mu_Wagon_Gen1_Tanker                                   :1. sukupolven säiliövaunu
-str_mu_Wagon_Gen1_Open_Wagon                               :1. sukupolven puinen lavavaunu
-str_mu_Wagon_Gen2_Flat_Wagon                               :2. sukupolven avolavavaunu
-str_mu_Wagon_Gen2_Boxcar_Type1                             :2. sukupolven katettu puinen rahtivaunu (Tyyppi 1)
-str_mu_Wagon_Gen2_Boxcar_Type2                             :2. sukupolven katettu puinen rahtivaunu (Tyyppi 2)
-str_mu_Wagon_Gen2_Tanker                                   :2. sukupolven säiliövaunu
-str_mu_Wagon_Gen2_Open_Wagon                               :2. sukupolven puinen lavavaunu
-str_mu_Wagon_Gen2_Silo                                     :2. sukupolven siilovaunu
-str_mu_Wagon_Gen2_Hopper                                   :2. sukupolven puinen suppilovaunu
-str_mu_Wagon_Gen3_Flat_Wagon                               :3. sukupolven avolavavaunu
-str_mu_Wagon_Gen3_Boxcar_Type1                     :3. sukupolven katettu puinen rahtivaunu (Tyyppi 1)
-str_mu_Wagon_Gen3_Boxcar_Type2                     :3. sukupolven katettu puinen rahtivaunu (Tyyppi 2)
-str_mu_Wagon_Gen3_Tanker                                   :3. sukupolven säiliövaunu
-str_mu_Wagon_Gen3_Open_Wagon                               :3. sukupolven lavavaunu
-str_mu_Wagon_Gen3_Silo_Type1                               :3. sukupolven siilovaunu (Tyyppi 1)
-str_mu_Wagon_Gen3_Silo_Type2                               :3. sukupolven siilovaunu (Tyyppi 2)
-str_mu_Wagon_Gen3_Hopper                                   :3. sukupolven suppilovaunu
-str_mu_Wagon_Gen4_Flatcar                                  :4. sukupolven avolavavaunu
-str_mu_Wagon_Gen4_Heavy_Flatcar                    :4. sukupolven raskas avolavavaunu
-str_mu_Wagon_Gen4_Boxcar_Type1                             :4. sukupolven katettu rahtivaunu (Tyyppi 1)
-str_mu_Wagon_Gen4_Boxcar_Type2                             :4. sukupolven katettu rahtivaunu (Tyyppi 2)
-str_mu_Wagon_Gen4_Tanker                                   :4. sukupolven säiliövaunu
-str_mu_Wagon_Gen4_Gondola                                  :4. sukupolven gondolivaunu
-str_mu_Wagon_Gen4_Silo_Type1                               :4. sukupolven siilovaunu (Tyyppi 1)
-str_mu_Wagon_Gen4_Silo_Type2                               :4. sukupolven siilovaunu (Tyyppi 2)
-str_mu_Wagon_Gen4_Hopper_Type1                             :4. sukupolven itsestäntyhjentyvä suppilovaunu (Tyyppi 1)
-str_mu_Wagon_Gen4_Hopper_Type2                             :4. sukupolven itsestääntyhjentyvä suppilovaunu (Tyyppi 2)
-str_mu_Wagon_Gen4_Car_Transporter                  :4. sukupolven autonkuljetusvaunu
-str_mu_Wagon_Gen4_Container_Carrier                :4. sukupolven konttivaunu
-str_mu_Wagon_Gen4_Centerbeam                               :4. sukupolven keskilaitavaunu
-str_mu_Wagon_Gen5_Flatcar                                  :5. sukupolven avolavavaunu
-str_mu_Wagon_Gen5_Heavy_Flatcar                    :5. sukupolven raskas avolavavaunu
-str_mu_Wagon_Gen5_Boxcar_Type1                             :5. sukupolven katettu rahtivaunu (Tyyppi 1)
-str_mu_Wagon_Gen5_Boxcar_Type2                             :5. sukupolven katettu rahtivaunu (Tyyppi 2)
-str_mu_Wagon_Gen5_Tanker                                   :5. sukupolven säiliövaunu
-str_mu_Wagon_Gen5_Gondola                                  :5. sukupolven gondolivaunu
-str_mu_Wagon_Gen5_Silo_Type1                               :5. sukupolven siilovaunu (Tyyppi 1)
-str_mu_Wagon_Gen5_Silo_Type2                               :5. sukupolven siilovaunu (Tyyppi 2)
-str_mu_Wagon_Gen5_Hopper_Type1                             :5. sukupolven itsestääntyhjentyvä suppilovaunu (Tyyppi 1)
-str_mu_Wagon_Gen5_Hopper_Type2                             :5. sukupolven itsestääntyhjentyvä suppilovaunu (Tyyppi 2)
-str_mu_Wagon_Gen5_Car_Transporter                  :5. sukupolven autonkuljetusvaunu
-str_mu_Wagon_Gen5_Container_Carrier                :5. sukupolven konttivaunu
-str_mu_Wagon_Gen5_Centerbeam                               :5. sukupolven keskilaitavaunu
-str_mu_Wagon_Gen5_Container_Doublestack    :5. sukupolven kerroskonttivaunu
-str_mu_Wagon_Gen5_Superheavy_Flatcar               :5. sukupolven superraskas avolavavaunu
+str_mu_wagon_gen1_flat_wagon                               :1. sukupolven avolavavaunu
+str_mu_wagon_gen1_boxcar                                   :1. sukupolven puinen katettu tavaravaunu
+str_mu_wagon_gen1_tanker                                   :1. sukupolven säiliövaunu
+str_mu_wagon_gen1_open_wagon                               :1. sukupolven puinen lavavaunu
+str_mu_wagon_gen2_flat_wagon                               :2. sukupolven avolavavaunu
+str_mu_wagon_gen2_boxcar_type1                             :2. sukupolven katettu puinen rahtivaunu (Tyyppi 1)
+str_mu_wagon_gen2_boxcar_type2                             :2. sukupolven katettu puinen rahtivaunu (Tyyppi 2)
+str_mu_wagon_gen2_tanker                                   :2. sukupolven säiliövaunu
+str_mu_wagon_gen2_open_wagon                               :2. sukupolven puinen lavavaunu
+str_mu_wagon_gen2_silo                                     :2. sukupolven siilovaunu
+str_mu_wagon_gen2_hopper                                   :2. sukupolven puinen suppilovaunu
+str_mu_wagon_gen3_flat_wagon                               :3. sukupolven avolavavaunu
+str_mu_wagon_gen3_boxcar_type1                     :3. sukupolven katettu puinen rahtivaunu (Tyyppi 1)
+str_mu_wagon_gen3_boxcar_type2                     :3. sukupolven katettu puinen rahtivaunu (Tyyppi 2)
+str_mu_wagon_gen3_tanker                                   :3. sukupolven säiliövaunu
+str_mu_wagon_gen3_open_wagon                               :3. sukupolven lavavaunu
+str_mu_wagon_gen3_silo_type1                               :3. sukupolven siilovaunu (Tyyppi 1)
+str_mu_wagon_gen3_silo_type2                               :3. sukupolven siilovaunu (Tyyppi 2)
+str_mu_wagon_gen3_hopper                                   :3. sukupolven suppilovaunu
+str_mu_wagon_gen4_flatcar                                  :4. sukupolven avolavavaunu
+str_mu_wagon_gen4_heavy_flatcar                    :4. sukupolven raskas avolavavaunu
+str_mu_wagon_gen4_boxcar_type1                             :4. sukupolven katettu rahtivaunu (Tyyppi 1)
+str_mu_wagon_gen4_boxcar_type2                             :4. sukupolven katettu rahtivaunu (Tyyppi 2)
+str_mu_wagon_gen4_tanker                                   :4. sukupolven säiliövaunu
+str_mu_wagon_gen4_gondola                                  :4. sukupolven gondolivaunu
+str_mu_wagon_gen4_silo_type1                               :4. sukupolven siilovaunu (Tyyppi 1)
+str_mu_wagon_gen4_silo_type2                               :4. sukupolven siilovaunu (Tyyppi 2)
+str_mu_wagon_gen4_hopper_type1                             :4. sukupolven itsestäntyhjentyvä suppilovaunu (Tyyppi 1)
+str_mu_wagon_gen4_hopper_type2                             :4. sukupolven itsestääntyhjentyvä suppilovaunu (Tyyppi 2)
+str_mu_wagon_gen4_car_transporter                  :4. sukupolven autonkuljetusvaunu
+str_mu_wagon_gen4_container_carrier                :4. sukupolven konttivaunu
+str_mu_wagon_gen4_centerbeam                               :4. sukupolven keskilaitavaunu
+str_mu_wagon_gen5_flatcar                                  :5. sukupolven avolavavaunu
+str_mu_wagon_gen5_heavy_flatcar                    :5. sukupolven raskas avolavavaunu
+str_mu_wagon_gen5_boxcar_type1                             :5. sukupolven katettu rahtivaunu (Tyyppi 1)
+str_mu_wagon_gen5_boxcar_type2                             :5. sukupolven katettu rahtivaunu (Tyyppi 2)
+str_mu_wagon_gen5_tanker                                   :5. sukupolven säiliövaunu
+str_mu_wagon_gen5_gondola                                  :5. sukupolven gondolivaunu
+str_mu_wagon_gen5_silo_type1                               :5. sukupolven siilovaunu (Tyyppi 1)
+str_mu_wagon_gen5_silo_type2                               :5. sukupolven siilovaunu (Tyyppi 2)
+str_mu_wagon_gen5_hopper_type1                             :5. sukupolven itsestääntyhjentyvä suppilovaunu (Tyyppi 1)
+str_mu_wagon_gen5_hopper_type2                             :5. sukupolven itsestääntyhjentyvä suppilovaunu (Tyyppi 2)
+str_mu_wagon_gen5_car_transporter                  :5. sukupolven autonkuljetusvaunu
+str_mu_wagon_gen5_container_carrier                :5. sukupolven konttivaunu
+str_mu_wagon_gen5_centerbeam                               :5. sukupolven keskilaitavaunu
+str_mu_wagon_gen5_container_doublestack    :5. sukupolven kerroskonttivaunu
+str_mu_wagon_gen5_superheavy_flatcar               :5. sukupolven superraskas avolavavaunu
 
-str_mu_Wagon_Service_Car_Type1                             :Huoltovaunu (Tyyppi 1)
-str_mu_Wagon_Service_Car_Type2                             :Huoltovaunu (Tyyppi 2)
+str_mu_wagon_service_car_type1                             :Huoltovaunu (Tyyppi 1)
+str_mu_wagon_service_car_type2                             :Huoltovaunu (Tyyppi 2)
 
 #coaches
-str_mu_Coach_Gen1_Wooden_2_axle_Compartment_Coach                  :Puinen 2-akselinen hyttivaunu
-str_mu_Coach_Gen1_Wooden_2_axle_Regional_Coach                     :Puinen 2-akselinen taajamaliikennevaunu
-str_mu_Coach_Gen1_Wooden_2_axle_Mail_Coach                                 :Puinen 2-akselinen postivaunu
-str_mu_Coach_Gen1_Clerestory_Compartment_Coach                     :Clerestory hyttivaunu
-str_mu_Coach_Gen1_Clerestory_Regional_Coach                                :Clerestory taajamaliikennevaunu
-str_mu_Coach_Gen1_Clerestory_Mail_Coach                                    :Clerestory postivaunu
-str_mu_Coach_Gen1_Wooden_3_axle_Compartment_Coach                  :Puinen 3-akselinen osastollinen matkustajavaunu
-str_mu_Coach_Gen1_Wooden_3_axle_Regional_Coach                     :Puinen 3-akselinen taajamaliikennevaunu
-str_mu_Coach_Gen1_Wooden_3_axle_Mail_Coach                                 :Puinen 3-akselinen postivaunu
-str_mu_Coach_Gen2_Heavyweight_Intercity_Coach                              :Raskas InterCity-vaunu
-str_mu_Coach_Gen2_Heavyweight_Mail_Coach                                   :Raskas postivaunu
-str_mu_Coach_Gen2_Steel_Intercity_Coach                                    :Teräksinen InterCity-vaunu
-str_mu_Coach_Gen2_Steel_Compartment_Coach                                  :Teräksinen hyttivaunu
-str_mu_Coach_Gen2_Steel_Regional_Coach                                     :Teräksinen taajamaliikennevaunu
-str_mu_Coach_Gen2_Steel_Mail_Coach                                                 :Teräksinen postivaunu
-str_mu_Coach_Gen2_Steel_2_axle_Compartment_Coach                   :Teräksinen 2-akselinen hyttivaunu
-str_mu_Coach_Gen2_Steel_2_axle_Regional_Coach                              :Teräksinen 2-akselinen taajamaliikennevaunu
-str_mu_Coach_Gen2_Steel_2_axle_Mail_Coach                                  :Teräksinen 2-akselinen postivaunu
-str_mu_Coach_Gen2_Steel_3_axle_Compartment_Coach                   :Teräksinen 3-akselinen hyttivaunu
-str_mu_Coach_Gen2_Steel_3_axle_Regional_Coach                              :Teräksinen 3-akselinen taajamaliikennevaunu
-str_mu_Coach_Gen2_Steel_3_axle_Mail_Coach                                  :Teräksinen 3-akselinen postivaunu
-str_mu_Coach_Gen3_Steel_Lightweight_Intercity_Coach                :Kevyt teräksinen InterCity-vaunu
-str_mu_Coach_Gen3_Steel_Lightweight_Regional_Coach                 :Kevyt teräksinen taajamaliikennevaunu
-str_mu_Coach_Gen3_Steel_Lightweight_Mail_Coach                     :Kevyt teräksinen postivaunu
-str_mu_Coach_Gen3_Aluminium_Lightweight_Intercity_Coach    :Kevyt alumiininen InterCity-vaunu
-str_mu_Coach_Gen3_Aluminium_Lightweight_Regional_Coach     :Kevyt alumiininen taajamaliikennevaunu
-str_mu_Coach_Gen3_Aluminium_Lightweight_Mail_Coach                 :Kevyt alumiininen postivaunu
-str_mu_Coach_Gen3_Gallery_Car                                                              :Lehterivaunu
-str_mu_Coach_Gen3_Mk1_Intercity_Coach                                              :Mk1 InterCity-vaunu
-str_mu_Coach_Gen3_Mk1_Regional_Coach                                               :Mk1 taajamaliikennevaunu
-str_mu_Coach_Gen3_Mk1_Mail_Coach                                                   :Mk1 postivaunu
-str_mu_Coach_Gen3_UIC_X_Intercity_Coach                                    :UIC-X InterCity-vaunu
-str_mu_Coach_Gen3_TEE_Intercity_Coach                                              :TEE InterCity-vaunu
-str_mu_Coach_Gen3_UIC_X_Regional_Coach                                     :UIC-X taajamaliikennevaunu
-str_mu_Coach_Gen3_Umbauwagen_Local_Coach                                   :Umbauwagen lähiliikennevaunu
-str_mu_Coach_Gen3_Doppelstockwagen_Local_Coach                     :Doppelstockwagen lähiliikennevaunu
-str_mu_Coach_Gen3_UIC_X_Mail_Coach                                                 :UIC-X postivaunu
-str_mu_Coach_Gen3_Indian_Intercity_Coach                                   :Intialainen InterCity-vaunu
-str_mu_Coach_Gen3_Indian_Local_Coach                                               :Intialainen lähiliikennevaunu
-str_mu_Coach_Gen3_Indian_Regional_Coach                                    :Intialainen taajamaliikennevaunu
-str_mu_Coach_Gen3_Indian_Mail_Coach                                                :Intialainen postivaunu
-str_mu_Coach_Gen4_Eurofima_Intercity_Coach                                 :Eurofima matkustajavaunu
-str_mu_Coach_Gen4_InterRegio_Coach                                                 :InterRegio matkustajavaunu
-str_mu_Coach_Gen4_Silberling_Commuter_Coach                                :Silberling lähiliikennevaunu
-str_mu_Coach_Gen4_Eurofima_Mail_Coach                                              :Eurofirma postivaunu
-str_mu_Coach_Gen4_Double_Decker_Coach                                              :Kaksikerrosvaunu
-str_mu_Coach_Gen4_Russian_Intercity_Coach                                  :Venäläinen InterCity-vaunu
-str_mu_Coach_Gen4_Russian_Regional_Coach                                   :Venäläinen taajamaliikennevaunu
-str_mu_Coach_Gen4_Russian_Mail_Coach                                               :Venäläinen postivaunu
-str_mu_Coach_Gen4_Superliner_Coach                                                 :Superliner matkustajavaunu
-str_mu_Coach_Gen4_Superliner_California                                    :Superliner California
-str_mu_Coach_Gen4_Amfleet_Regional_Coach                                   :Amfleet taajamaliikennevaunu
-str_mu_Coach_Gen4_Amfleet_Intercity_Coach                                  :Amfleet InterCity-vaunu
-str_mu_Coach_Gen4_Comet_Commuter_Coach                                     :Comet lähiliikennevaunu
-str_mu_Coach_Gen4_Horizon_Regional_Coach                                   :Horizon taajamaliikennevaunu
-str_mu_Coach_Gen4_Horizon_Baggage_Coach                                    :Horizon matkatavaravaunu
-str_mu_Coach_Gen4_Bombardier_Bi_level                                              :Bombardier Bi-level
-str_mu_Coach_Gen5_High_Speed_Coach                                                 :Suurnopeusvaunu
-str_mu_Coach_Gen5_Modern_Regional_Coach                                    :Moderni taajamaliikennevaunu
-str_mu_Coach_Gen5_Modern_Commuter_Coach                                    :Moderni lähiliikennevaunu
-str_mu_Coach_Gen5_Modern_Double_Decker_Coach                               :Moderni kaksikerrosvaunu
-str_mu_Coach_Gen5_High_Speed_Double_Decker_IC2000                  :Kaksikerroksinen suurnopeusvaunu (IC2000)
-str_mu_Coach_Gen5_High_Speed_Mail_Coach                                    :Pikapostivaunu
-str_mu_Coach_Gen5_Talgo_Pendular                                                   :Talgo Pendular matkustajavaunu
-str_mu_Coach_Gen5_Talgo_Pendular_Mail                                              :Talgo Pendular postivaunu
-str_mu_Coach_Gen6_Grand_Voyager_Coach                                              :Grand Voyager matkustajavaunu
-str_mu_Coach_Gen6_Grand_Regio_Coach                                                :Grand Regio matkustajavaunu
-str_mu_Coach_Gen6_Metropolis_Coach                                                 :Metropolis matkustajavaunu
-str_mu_Coach_Gen6_Speedmail_Coach                                                  :Speedmail postivaunu
-str_mu_Coach_Gen6_Super_Regio_Coach                                                :Super Regio matkustajavaunu
-str_mu_Coach_Gen6_Super_Voyager_Coach                                              :Super Voyager matkustajavaunu
+str_mu_coach_gen1_wooden_2_axle_compartment_coach                  :Puinen 2-akselinen hyttivaunu
+str_mu_coach_gen1_wooden_2_axle_regional_coach                     :Puinen 2-akselinen taajamaliikennevaunu
+str_mu_coach_gen1_wooden_2_axle_mail_coach                                 :Puinen 2-akselinen postivaunu
+str_mu_coach_gen1_clerestory_compartment_coach                     :Clerestory hyttivaunu
+str_mu_coach_gen1_clerestory_regional_coach                                :Clerestory taajamaliikennevaunu
+str_mu_coach_gen1_clerestory_mail_coach                                    :Clerestory postivaunu
+str_mu_coach_gen1_wooden_3_axle_compartment_coach                  :Puinen 3-akselinen osastollinen matkustajavaunu
+str_mu_coach_gen1_wooden_3_axle_regional_coach                     :Puinen 3-akselinen taajamaliikennevaunu
+str_mu_coach_gen1_wooden_3_axle_mail_coach                                 :Puinen 3-akselinen postivaunu
+str_mu_coach_gen2_heavyweight_intercity_coach                              :Raskas InterCity-vaunu
+str_mu_coach_gen2_heavyweight_mail_coach                                   :Raskas postivaunu
+str_mu_coach_gen2_steel_intercity_coach                                    :Teräksinen InterCity-vaunu
+str_mu_coach_gen2_steel_compartment_coach                                  :Teräksinen hyttivaunu
+str_mu_coach_gen2_steel_regional_coach                                     :Teräksinen taajamaliikennevaunu
+str_mu_coach_gen2_steel_mail_coach                                                 :Teräksinen postivaunu
+str_mu_coach_gen2_steel_2_axle_compartment_coach                   :Teräksinen 2-akselinen hyttivaunu
+str_mu_coach_gen2_steel_2_axle_regional_coach                              :Teräksinen 2-akselinen taajamaliikennevaunu
+str_mu_coach_gen2_steel_2_axle_mail_coach                                  :Teräksinen 2-akselinen postivaunu
+str_mu_coach_gen2_steel_3_axle_compartment_coach                   :Teräksinen 3-akselinen hyttivaunu
+str_mu_coach_gen2_steel_3_axle_regional_coach                              :Teräksinen 3-akselinen taajamaliikennevaunu
+str_mu_coach_gen2_steel_3_axle_mail_coach                                  :Teräksinen 3-akselinen postivaunu
+str_mu_coach_gen3_steel_lightweight_intercity_coach                :Kevyt teräksinen InterCity-vaunu
+str_mu_coach_gen3_steel_lightweight_regional_coach                 :Kevyt teräksinen taajamaliikennevaunu
+str_mu_coach_gen3_steel_lightweight_mail_coach                     :Kevyt teräksinen postivaunu
+str_mu_coach_gen3_aluminium_lightweight_intercity_coach    :Kevyt alumiininen InterCity-vaunu
+str_mu_coach_gen3_aluminium_lightweight_regional_coach     :Kevyt alumiininen taajamaliikennevaunu
+str_mu_coach_gen3_aluminium_lightweight_mail_coach                 :Kevyt alumiininen postivaunu
+str_mu_coach_gen3_gallery_car                                                              :Lehterivaunu
+str_mu_coach_gen3_mk1_intercity_coach                                              :Mk1 InterCity-vaunu
+str_mu_coach_gen3_mk1_regional_coach                                               :Mk1 taajamaliikennevaunu
+str_mu_coach_gen3_mk1_mail_coach                                                   :Mk1 postivaunu
+str_mu_coach_gen3_uic_x_intercity_coach                                    :UIC-X InterCity-vaunu
+str_mu_coach_gen3_tee_intercity_coach                                              :TEE InterCity-vaunu
+str_mu_coach_gen3_uic_x_regional_coach                                     :UIC-X taajamaliikennevaunu
+str_mu_coach_gen3_umbauwagen_local_coach                                   :Umbauwagen lähiliikennevaunu
+str_mu_coach_gen3_doppelstockwagen_local_coach                     :Doppelstockwagen lähiliikennevaunu
+str_mu_coach_gen3_uic_x_mail_coach                                                 :UIC-X postivaunu
+str_mu_coach_gen3_indian_intercity_coach                                   :Intialainen InterCity-vaunu
+str_mu_coach_gen3_indian_local_coach                                               :Intialainen lähiliikennevaunu
+str_mu_coach_gen3_indian_regional_coach                                    :Intialainen taajamaliikennevaunu
+str_mu_coach_gen3_indian_mail_coach                                                :Intialainen postivaunu
+str_mu_coach_gen4_eurofima_intercity_coach                                 :Eurofima matkustajavaunu
+str_mu_coach_gen4_interregio_coach                                                 :InterRegio matkustajavaunu
+str_mu_coach_gen4_silberling_commuter_coach                                :Silberling lähiliikennevaunu
+str_mu_coach_gen4_eurofima_mail_coach                                              :Eurofirma postivaunu
+str_mu_coach_gen4_double_decker_coach                                              :Kaksikerrosvaunu
+str_mu_coach_gen4_russian_intercity_coach                                  :Venäläinen InterCity-vaunu
+str_mu_coach_gen4_russian_regional_coach                                   :Venäläinen taajamaliikennevaunu
+str_mu_coach_gen4_russian_mail_coach                                               :Venäläinen postivaunu
+str_mu_coach_gen4_superliner_coach                                                 :Superliner matkustajavaunu
+str_mu_coach_gen4_superliner_california                                    :Superliner California
+str_mu_coach_gen4_amfleet_regional_coach                                   :Amfleet taajamaliikennevaunu
+str_mu_coach_gen4_amfleet_intercity_coach                                  :Amfleet InterCity-vaunu
+str_mu_coach_gen4_comet_commuter_coach                                     :Comet lähiliikennevaunu
+str_mu_coach_gen4_horizon_regional_coach                                   :Horizon taajamaliikennevaunu
+str_mu_coach_gen4_horizon_baggage_coach                                    :Horizon matkatavaravaunu
+str_mu_coach_gen4_bombardier_bi_level                                              :Bombardier Bi-level
+str_mu_coach_gen5_high_speed_coach                                                 :Suurnopeusvaunu
+str_mu_coach_gen5_modern_regional_coach                                    :Moderni taajamaliikennevaunu
+str_mu_coach_gen5_modern_commuter_coach                                    :Moderni lähiliikennevaunu
+str_mu_coach_gen5_modern_double_decker_coach                               :Moderni kaksikerrosvaunu
+str_mu_coach_gen5_high_speed_double_decker_ic2000                  :Kaksikerroksinen suurnopeusvaunu (IC2000)
+str_mu_coach_gen5_high_speed_mail_coach                                    :Pikapostivaunu
+str_mu_coach_gen5_talgo_pendular                                                   :Talgo Pendular matkustajavaunu
+str_mu_coach_gen5_talgo_pendular_mail                                              :Talgo Pendular postivaunu
+str_mu_coach_gen6_grand_voyager_coach                                              :Grand Voyager matkustajavaunu
+str_mu_coach_gen6_grand_regio_coach                                                :Grand Regio matkustajavaunu
+str_mu_coach_gen6_metropolis_coach                                                 :Metropolis matkustajavaunu
+str_mu_coach_gen6_speedmail_coach                                                  :Speedmail postivaunu
+str_mu_coach_gen6_super_regio_coach                                                :Super Regio matkustajavaunu
+str_mu_coach_gen6_super_voyager_coach                                              :Super Voyager matkustajavaunu
 
 #special wagons
-str_mu_MU_Wagon_Unpowered                  :Moottorijunan vaunu (moottoroimaton)
-str_mtro_Metro_Wagon_Unpowered                :Metrovaunu (moottoroimaton)
-str_mglv_Maglev_Wagon_Unpowered                :Maglev-vaunu (moottoroimaton)
-str_mu_MU_Wagon_Powered                    :Moottorijunan vaunu (moottoroitu)
-str_mtro_Metro_Wagon_Powered                  :Metrovaunu (moottoroitu)
-str_mglv_Maglev_Wagon_Powered                  :Maglev-vaunu (moottoroitu)
+str_mu_mu_wagon_unpowered                  :Moottorijunan vaunu (moottoroimaton)
+str_mtro_metro_wagon_unpowered                :Metrovaunu (moottoroimaton)
+str_mglv_maglev_wagon_unpowered                :Maglev-vaunu (moottoroimaton)
+str_mu_mu_wagon_powered                    :Moottorijunan vaunu (moottoroitu)
+str_mtro_metro_wagon_powered                  :Metrovaunu (moottoroitu)
+str_mglv_maglev_wagon_powered                  :Maglev-vaunu (moottoroitu)
 
 #Obsolete vehicles
 

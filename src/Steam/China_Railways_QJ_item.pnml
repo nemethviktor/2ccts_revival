@@ -2,9 +2,12 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
-item(FEAT_TRAINS, item_steam_China_Railways_QJ) {
+
+// Template: TPL_03A
+
+item(FEAT_TRAINS, item_steam_china_railways_qj) {
     property {
-        name: string(str_steam_China_Railways_QJ);
+        name: string(str_steam_china_railways_qj);
         climates_available: ((param_region_asia || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1956,1,1);
         model_life: 45;
@@ -38,14 +41,14 @@ item(FEAT_TRAINS, item_steam_China_Railways_QJ) {
         bitmask_vehicle_info: 0;
     }
     graphics {
-        purchase: spriteset_steam_China_Railways_QJ_purchase;
-        visual_effect_and_powered: switch_steam_China_Railways_QJ_visual_effect;
-        length: switch_steam_China_Railways_QJ_length;
-        articulated_part: switch_steam_China_Railways_QJ_articulated;
+        purchase: spriteset_steam_china_railways_qj_purchase;
+        visual_effect_and_powered: switch_steam_china_railways_qj_visual_effect;
+        length: switch_steam_china_railways_qj_length;
+        articulated_part: switch_steam_china_railways_qj_articulated;
         can_attach_wagon: switch_can_attach_vehicle;
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
         // PURCHASETEXT_SWITCH_CALL // this is actually blank
-        default: switch_steam_China_Railways_QJ_position;
+        default: switch_steam_china_railways_qj_position;
     }
 }

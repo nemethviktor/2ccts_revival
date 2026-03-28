@@ -2,9 +2,12 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
-item(FEAT_TRAINS, item_electric_Italy_FS_E646) {
+
+// Template: TPL_03D
+
+item(FEAT_TRAINS, item_electric_italy_fs_e646) {
     property {
-        name: string(str_electric_Italy_FS_E646);
+        name: string(str_electric_italy_fs_e646);
         climates_available: ((param_region_southern_europe || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1961,1,1);
         model_life: 45;
@@ -38,14 +41,14 @@ item(FEAT_TRAINS, item_electric_Italy_FS_E646) {
         bitmask_vehicle_info: 0;
     }
     graphics {
-        purchase: spriteset_electric_Italy_FS_E646_purchase;
-        visual_effect_and_powered: switch_electric_Italy_FS_E646_visual_effect;
-        length: switch_electric_Italy_FS_E646_length;
-        articulated_part: switch_electric_Italy_FS_E646_articulated;
+        purchase: spriteset_electric_italy_fs_e646_purchase;
+        visual_effect_and_powered: switch_electric_italy_fs_e646_visual_effect;
+        length: switch_electric_italy_fs_e646_length;
+        articulated_part: switch_electric_italy_fs_e646_articulated;
         can_attach_wagon: switch_can_attach_vehicle;
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
         // PURCHASETEXT_SWITCH_CALL // this is actually blank
-        default: switch_electric_Italy_FS_E646_position;
+        default: switch_electric_italy_fs_e646_position;
     }
 }

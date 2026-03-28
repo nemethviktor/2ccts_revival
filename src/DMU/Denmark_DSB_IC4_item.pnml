@@ -2,24 +2,27 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
+
+// Template: TPL_02A
+
 // Cargo capacity
 
-    switch(FEAT_TRAINS, SELF, switch_dmu_Denmark_DSB_IC4_capacity_engine, cargo_classes) { \
+    switch(FEAT_TRAINS, SELF, switch_dmu_denmark_dsb_ic4_capacity_engine, cargo_classes) { \
         bitmask(CC_MAIL): 52/2; \
         bitmask(CC_ARMOURED): 52/4; \
         52; \
     }
 
 
-    switch(FEAT_TRAINS, SELF, switch_dmu_Denmark_DSB_IC4_capacity_wagon, cargo_classes) { \
+    switch(FEAT_TRAINS, SELF, switch_dmu_denmark_dsb_ic4_capacity_wagon, cargo_classes) { \
         bitmask(CC_MAIL): 52/2; \
         bitmask(CC_ARMOURED): 52/4; \
         52; \
     }
 
-item(FEAT_TRAINS, item_dmu_Denmark_DSB_IC4) {
+item(FEAT_TRAINS, item_dmu_denmark_dsb_ic4) {
     property {
-        name: string(str_dmu_Denmark_DSB_IC4);
+        name: string(str_dmu_denmark_dsb_ic4);
         climates_available: ((param_region_northern_europe || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(2007,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
@@ -53,26 +56,26 @@ item(FEAT_TRAINS, item_dmu_Denmark_DSB_IC4) {
         bitmask_vehicle_info: 0;
     }
     graphics {
-        purchase: spriteset_dmu_Denmark_DSB_IC4_purchase;
-        cargo_capacity: switch_dmu_Denmark_DSB_IC4_capacity_engine;
-        visual_effect_and_powered: switch_dmu_Denmark_DSB_IC4_visual_effect_and_powered;
+        purchase: spriteset_dmu_denmark_dsb_ic4_purchase;
+        cargo_capacity: switch_dmu_denmark_dsb_ic4_capacity_engine;
+        visual_effect_and_powered: switch_dmu_denmark_dsb_ic4_visual_effect_and_powered;
         // no 'length'
         // no 'articulated_part'
         can_attach_wagon: switch_can_attach_vehicle;
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
         // PURCHASETEXT_SWITCH_CALL // this is actually blank
-        default: switch_dmu_Denmark_DSB_IC4_reversed;
+        default: switch_dmu_denmark_dsb_ic4_reversed;
     }
-    livery_override (item_mu_MU_Wagon_Unpowered) {
+    livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
         running_cost_factor: int(200/10);
         weight: int(36*1/2);
         cargo_capacity: 52;
         length: 8;
-        default: switch_dmu_Denmark_DSB_IC4_cargo_selection;
+        default: switch_dmu_denmark_dsb_ic4_cargo_selection;
     }
-    livery_override (item_mu_MU_Wagon_Powered) {
+    livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
         running_cost_factor: (round(45.058633863002555));
         power: int(750*1/2);
@@ -80,6 +83,6 @@ item(FEAT_TRAINS, item_dmu_Denmark_DSB_IC4) {
         cargo_capacity: 52;
         tractive_effort_coefficient: int(0.62*10*36);
         length: 8;
-        default: switch_dmu_Denmark_DSB_IC4_cargo_selection;
+        default: switch_dmu_denmark_dsb_ic4_cargo_selection;
     }
 }

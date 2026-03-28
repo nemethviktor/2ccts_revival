@@ -2,24 +2,27 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
+
+// Template: TPL_02D
+
 // Cargo capacity
 
-    switch(FEAT_TRAINS, SELF, switch_emu_Norway_NSB_BM73_capacity_engine, cargo_classes) { \
+    switch(FEAT_TRAINS, SELF, switch_emu_norway_nsb_bm73_capacity_engine, cargo_classes) { \
         bitmask(CC_MAIL): 40/2; \
         bitmask(CC_ARMOURED): 40/4; \
         40; \
     }
 
 
-    switch(FEAT_TRAINS, SELF, switch_emu_Norway_NSB_BM73_capacity_wagon, cargo_classes) { \
+    switch(FEAT_TRAINS, SELF, switch_emu_norway_nsb_bm73_capacity_wagon, cargo_classes) { \
         bitmask(CC_MAIL): 40/2; \
         bitmask(CC_ARMOURED): 40/4; \
         40; \
     }
 
-item(FEAT_TRAINS, item_emu_Norway_NSB_BM73) {
+item(FEAT_TRAINS, item_emu_norway_nsb_bm73) {
     property {
-        name: string(str_emu_Norway_NSB_BM73);
+        name: string(str_emu_norway_nsb_bm73);
         climates_available: ((param_region_northern_europe || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1998,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
@@ -53,8 +56,8 @@ item(FEAT_TRAINS, item_emu_Norway_NSB_BM73) {
         bitmask_vehicle_info: 0;
     }
     graphics {
-        purchase: spriteset_emu_Norway_NSB_BM73_purchase;
-        cargo_capacity: switch_emu_Norway_NSB_BM73_capacity_engine;
+        purchase: spriteset_emu_norway_nsb_bm73_purchase;
+        cargo_capacity: switch_emu_norway_nsb_bm73_capacity_engine;
         // no 'visual_effect_and_powered' becuase while it does exist, _visual_effect_and_powered_position is set for livery overrides
         // no 'length'
         // no 'articulated_part'
@@ -62,26 +65,26 @@ item(FEAT_TRAINS, item_emu_Norway_NSB_BM73) {
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
         // PURCHASETEXT_SWITCH_CALL // this is actually blank
-        default: switch_emu_Norway_NSB_BM73_reversed;
+        default: switch_emu_norway_nsb_bm73_reversed;
     }
-    livery_override (item_mu_MU_Wagon_Unpowered) {
+    livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
         running_cost_factor: int(220/10);
         weight: int(54*1/2);
-        visual_effect_and_powered: switch_emu_Norway_NSB_BM73_visual_effect_and_powered_position;
+        visual_effect_and_powered: switch_emu_norway_nsb_bm73_visual_effect_and_powered_position;
         cargo_capacity: 40;
         length: 8;
-        default: switch_emu_Norway_NSB_BM73_cargo_selection;
+        default: switch_emu_norway_nsb_bm73_cargo_selection;
     }
-    livery_override (item_mu_MU_Wagon_Powered) {
+    livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
         running_cost_factor: (round(62.72410194744431));
         power: int(1200*1/2);
         weight: int(54*3/4);
-        visual_effect_and_powered: switch_emu_Norway_NSB_BM73_visual_effect_and_powered_position;
+        visual_effect_and_powered: switch_emu_norway_nsb_bm73_visual_effect_and_powered_position;
         cargo_capacity: 40;
         tractive_effort_coefficient: int(0.69*10*54);
         length: 8;
-        default: switch_emu_Norway_NSB_BM73_cargo_selection;
+        default: switch_emu_norway_nsb_bm73_cargo_selection;
     }
 }

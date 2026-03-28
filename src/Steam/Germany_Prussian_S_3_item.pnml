@@ -2,9 +2,12 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
-item(FEAT_TRAINS, item_steam_Germany_Prussian_S_3) {
+
+// Template: TPL_03A
+
+item(FEAT_TRAINS, item_steam_germany_prussian_s_3) {
     property {
-        name: string(str_steam_Germany_Prussian_S_3);
+        name: string(str_steam_germany_prussian_s_3);
         climates_available: ((param_region_western_europe || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1893,1,1);
         model_life: 45;
@@ -38,14 +41,14 @@ item(FEAT_TRAINS, item_steam_Germany_Prussian_S_3) {
         bitmask_vehicle_info: 0;
     }
     graphics {
-        purchase: spriteset_steam_Germany_Prussian_S_3_purchase;
-        visual_effect_and_powered: switch_steam_Germany_Prussian_S_3_visual_effect;
-        length: switch_steam_Germany_Prussian_S_3_length;
-        articulated_part: switch_steam_Germany_Prussian_S_3_articulated;
+        purchase: spriteset_steam_germany_prussian_s_3_purchase;
+        visual_effect_and_powered: switch_steam_germany_prussian_s_3_visual_effect;
+        length: switch_steam_germany_prussian_s_3_length;
+        articulated_part: switch_steam_germany_prussian_s_3_articulated;
         can_attach_wagon: switch_can_attach_vehicle;
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
         // PURCHASETEXT_SWITCH_CALL // this is actually blank
-        default: switch_steam_Germany_Prussian_S_3_position;
+        default: switch_steam_germany_prussian_s_3_position;
     }
 }

@@ -2,9 +2,12 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
-item(FEAT_TRAINS, item_mtro_UK_London_1938_Stock) {
+
+// Template: TPL_02C
+
+item(FEAT_TRAINS, item_mtro_uk_london_1938_stock) {
     property {
-        name: string(str_mtro_UK_London_1938_Stock);
+        name: string(str_mtro_uk_london_1938_stock);
         climates_available: ((param_region_northern_europe || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1938,1,1);
         model_life: 45;
@@ -38,7 +41,7 @@ item(FEAT_TRAINS, item_mtro_UK_London_1938_Stock) {
         bitmask_vehicle_info: 0;
     }
     graphics {
-        purchase: spriteset_mtro_UK_London_1938_Stock_purchase;
+        purchase: spriteset_mtro_uk_london_1938_stock_purchase;
         // no 'visual_effect' or 'visual_effect_and_powered'
         // no 'length'
         // no 'articulated_part'
@@ -46,17 +49,17 @@ item(FEAT_TRAINS, item_mtro_UK_London_1938_Stock) {
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
         // PURCHASETEXT_SWITCH_CALL // this is actually blank
-        default: switch_mtro_UK_London_1938_Stock_reversed;
+        default: switch_mtro_uk_london_1938_stock_reversed;
     }
-    livery_override (item_mtro_Metro_Wagon_Unpowered) {
+    livery_override (item_mtro_metro_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
         running_cost_factor: int(70/10);
         weight: int(26*1/2);
         cargo_capacity: 120;
         length: 7;
-        default: spriteset_mtro_UK_London_1938_Stock_middle;
+        default: spriteset_mtro_uk_london_1938_stock_middle;
     }
-    livery_override (item_mtro_Metro_Wagon_Powered) {
+    livery_override (item_mtro_metro_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
         running_cost_factor: (round(29.469578240496595));
         power: int(600*1/2);
@@ -64,6 +67,6 @@ item(FEAT_TRAINS, item_mtro_UK_London_1938_Stock) {
         cargo_capacity: 120;
         tractive_effort_coefficient: int(0.77*10*26);
         length: 7;
-        default: spriteset_mtro_UK_London_1938_Stock_middle;
+        default: spriteset_mtro_uk_london_1938_stock_middle;
     }
 }

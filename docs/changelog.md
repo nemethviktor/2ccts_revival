@@ -1,8 +1,9 @@
 ### 2cc TrainsInNML (Revival) changelog
 
-**3.3-alpha2 [20260xxx]**
+**3.3-beta1 [20260401]**
 - CODE CHANGES:
 	- Automated English Language file creation
+	- Automated the whole graphics and templating. This is likely to result in some bugs, please test.
 - VEHICLES CHANGES:
 	- Chile_EFE_XTrapolis_100 -> Modified to 1500V voltage, was None, incorrectly.
 	- Corrected a number of wrong string values for voltage categorisation (ref above automation)

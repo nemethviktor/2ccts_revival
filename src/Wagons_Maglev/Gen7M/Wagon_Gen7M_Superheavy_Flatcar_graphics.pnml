@@ -1,103 +1,80 @@
-/*
- *  Copyright (C) 2017 Transportman // V. Nemeth 2026
- *  This file is part of the 2cc Trains In NML
- *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
+//  Copyright (C) 2017 Transportman // V. Nemeth 2026+
+//  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
-*/
+// Template: TPL_25A
 
-/*
-* PURCHASE
-*/
+// PURCHASE
+spriteset(spriteset_mglv_wagon_gen7m_superheavy_flatcar_purchase, "gfx/wagons_maglev/gen7m/wagon_gen7m_superheavy_flatcar_purchase.png") {template_purchase_wagon(1, 1)}
 
-spriteset(spriteset_mglv_Wagon_Gen7M_Superheavy_Flatcar_purchase, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Superheavy_Flatcar_Purchase.png") {
-	template_purchase_wagon(1, 1)
+
+/// Front
+spriteset(spriteset_mglv_wagon_gen7m_superheavy_flatcar_front, "gfx/wagons_maglev/gen7m/wagon_gen7m_superheavy_flatcar.png") {template_2cc_wagons(1, 1)}
+
+
+/// Back
+spriteset(spriteset_mglv_wagon_gen7m_superheavy_flatcar_back, "gfx/wagons_maglev/gen7m/wagon_gen7m_superheavy_flatcar.png") {template_2cc_wagons(1, 64)}
+
+
+/// Middle Empty
+spriteset(spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_empty, "gfx/wagons_maglev/gen7m/wagon_gen7m_superheavy_flatcar.png") {template_2cc_wagons(1, 32)}
+
+
+/// Middle L1
+spriteset(spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_l1, "gfx/wagons_maglev/gen7m/wagon_gen7m_superheavy_flatcar.png") {template_2cc_wagons(1, 126)}
+
+
+/// LIVERY 1 SPRITEGROUP - MIDDLE
+spritegroup spritegroup_mglv_wagon_gen7m_superheavy_flatcar_middle_l1 {
+    loading: [spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_empty, spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_l1, spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_l1];
+    loaded: [spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_empty, spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_l1, spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_l1];
 }
 
-/*
-* VEHICLE
-*/
+/// Middle L2
+spriteset(spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_l2, "gfx/wagons_maglev/gen7m/wagon_gen7m_superheavy_flatcar.png") {template_2cc_wagons(179, 126)}
 
-//Front
-spriteset(spriteset_mglv_Wagon_Gen7M_Superheavy_Flatcar_front, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Superheavy_Flatcar.png") {
-	template_2cc_wagons(1, 1)
+
+/// LIVERY 2 SPRITEGROUP - MIDDLE
+spritegroup spritegroup_mglv_wagon_gen7m_superheavy_flatcar_middle_l2 {
+    loading: [spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_empty, spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_l2, spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_l2];
+    loaded: [spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_empty, spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_l2, spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_l2];
 }
 
-//Back
-spriteset(spriteset_mglv_Wagon_Gen7M_Superheavy_Flatcar_back, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Superheavy_Flatcar.png") {
-	template_2cc_wagons(1, 64)
+/// Middle L3
+spriteset(spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_l3, "gfx/wagons_maglev/gen7m/wagon_gen7m_superheavy_flatcar.png") {template_2cc_wagons(357, 126)}
+
+
+/// LIVERY 3 SPRITEGROUP - MIDDLE
+spritegroup spritegroup_mglv_wagon_gen7m_superheavy_flatcar_middle_l3 {
+    loading: [spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_empty, spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_l3, spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_l3];
+    loaded: [spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_empty, spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_l3, spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_l3];
 }
 
-//Middle - Empty
-spriteset(spriteset_mglv_Wagon_Gen7M_Superheavy_Flatcar_middle_empty, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Superheavy_Flatcar.png") {
-	template_2cc_wagons(1, 32)
+/// Middle L4
+spriteset(spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_l4, "gfx/wagons_maglev/gen7m/wagon_gen7m_superheavy_flatcar.png") {template_2cc_wagons(535, 126)}
+
+
+/// LIVERY 4 SPRITEGROUP - MIDDLE
+spritegroup spritegroup_mglv_wagon_gen7m_superheavy_flatcar_middle_l4 {
+    loading: [spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_empty, spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_l4, spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_l4];
+    loaded: [spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_empty, spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_l4, spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_l4];
 }
 
-//Middle - L1
-spriteset(spriteset_mglv_Wagon_Gen7M_Superheavy_Flatcar_middle_L1, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Superheavy_Flatcar.png") {
-	template_2cc_wagons(1, 126)
+// Random Livery Selector for middle
+random_switch(FEAT_TRAINS, SELF, switch_mglv_wagon_gen7m_superheavy_flatcar_middle_livery) {
+	7: spritegroup_mglv_wagon_gen7m_superheavy_flatcar_middle_l1;
+	1: spritegroup_mglv_wagon_gen7m_superheavy_flatcar_middle_l2;
+	1: spritegroup_mglv_wagon_gen7m_superheavy_flatcar_middle_l3;
+	1: spritegroup_mglv_wagon_gen7m_superheavy_flatcar_middle_l4;
+}
+switch(FEAT_TRAINS, SELF, switch_mglv_wagon_gen7m_superheavy_flatcar, position_in_vehid_chain % 3) {
+	1: switch_mglv_wagon_gen7m_superheavy_flatcar_middle_livery;
+	2: spriteset_mglv_wagon_gen7m_superheavy_flatcar_back;
+	spriteset_mglv_wagon_gen7m_superheavy_flatcar_front;
 }
 
-spritegroup spritegroup_wagon_Gen7M_Superheavy_Flatcar_middle_L1 {
-	loading: [spriteset_mglv_Wagon_Gen7M_Superheavy_Flatcar_middle_empty, spriteset_mglv_Wagon_Gen7M_Superheavy_Flatcar_middle_L1, spriteset_mglv_Wagon_Gen7M_Superheavy_Flatcar_middle_L1];
-	loaded: [spriteset_mglv_Wagon_Gen7M_Superheavy_Flatcar_middle_empty, spriteset_mglv_Wagon_Gen7M_Superheavy_Flatcar_middle_L1, spriteset_mglv_Wagon_Gen7M_Superheavy_Flatcar_middle_L1];
+/// Articulated Return
+/// extra_callback_info1 is the index of the part being added.
+switch(FEAT_TRAINS, SELF, switch_mglv_wagon_gen7m_superheavy_flatcar_articulated, extra_callback_info1) {
+    1..2: return item_mglv_wagon_gen7m_superheavy_flatcar;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
-
-//Middle - L2
-spriteset(spriteset_mglv_Wagon_Gen7M_Superheavy_Flatcar_middle_L2, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Superheavy_Flatcar.png") {
-	template_2cc_wagons(179,126)
-}
-
-spritegroup spritegroup_wagon_Gen7M_Superheavy_Flatcar_middle_L2 {
-	loading: [spriteset_mglv_Wagon_Gen7M_Superheavy_Flatcar_middle_empty, spriteset_mglv_Wagon_Gen7M_Superheavy_Flatcar_middle_L2, spriteset_mglv_Wagon_Gen7M_Superheavy_Flatcar_middle_L2];
-	loaded: [spriteset_mglv_Wagon_Gen7M_Superheavy_Flatcar_middle_empty, spriteset_mglv_Wagon_Gen7M_Superheavy_Flatcar_middle_L2, spriteset_mglv_Wagon_Gen7M_Superheavy_Flatcar_middle_L2];
-}
-
-//Middle - L3
-spriteset(spriteset_mglv_Wagon_Gen7M_Superheavy_Flatcar_middle_L3, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Superheavy_Flatcar.png") {
-	template_2cc_wagons(357,126)
-}
-
-spritegroup spritegroup_wagon_Gen7M_Superheavy_Flatcar_middle_L3 {
-	loading: [spriteset_mglv_Wagon_Gen7M_Superheavy_Flatcar_middle_empty, spriteset_mglv_Wagon_Gen7M_Superheavy_Flatcar_middle_L3, spriteset_mglv_Wagon_Gen7M_Superheavy_Flatcar_middle_L3];
-	loaded: [spriteset_mglv_Wagon_Gen7M_Superheavy_Flatcar_middle_empty, spriteset_mglv_Wagon_Gen7M_Superheavy_Flatcar_middle_L3, spriteset_mglv_Wagon_Gen7M_Superheavy_Flatcar_middle_L3];
-}
-
-//Middle - L4
-spriteset(spriteset_mglv_Wagon_Gen7M_Superheavy_Flatcar_middle_L4, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Superheavy_Flatcar.png") {
-	template_2cc_wagons(535,126)
-}
-
-spritegroup spritegroup_wagon_Gen7M_Superheavy_Flatcar_middle_L4 {
-	loading: [spriteset_mglv_Wagon_Gen7M_Superheavy_Flatcar_middle_empty, spriteset_mglv_Wagon_Gen7M_Superheavy_Flatcar_middle_L4, spriteset_mglv_Wagon_Gen7M_Superheavy_Flatcar_middle_L4];
-	loaded: [spriteset_mglv_Wagon_Gen7M_Superheavy_Flatcar_middle_empty, spriteset_mglv_Wagon_Gen7M_Superheavy_Flatcar_middle_L4, spriteset_mglv_Wagon_Gen7M_Superheavy_Flatcar_middle_L4];
-}
-
-random_switch(FEAT_TRAINS, SELF, switch_mglv_Wagon_Gen7M_Superheavy_Flatcar_middle_livery) {
-	7: spritegroup_wagon_Gen7M_Superheavy_Flatcar_middle_L1;
-	1: spritegroup_wagon_Gen7M_Superheavy_Flatcar_middle_L2;
-	1: spritegroup_wagon_Gen7M_Superheavy_Flatcar_middle_L3;
-	1: spritegroup_wagon_Gen7M_Superheavy_Flatcar_middle_L4;
-}
-
-switch(FEAT_TRAINS, SELF, switch_mglv_Wagon_Gen7M_Superheavy_Flatcar, position_in_vehid_chain % 3) {
-	1: switch_mglv_Wagon_Gen7M_Superheavy_Flatcar_middle_livery;
-	2: spriteset_mglv_Wagon_Gen7M_Superheavy_Flatcar_back;
-	spriteset_mglv_Wagon_Gen7M_Superheavy_Flatcar_front;
-}
-
-/*
-* Articulated part
-*/
-
-switch(FEAT_TRAINS, SELF, switch_mglv_Wagon_Gen7M_Superheavy_Flatcar_articulated, extra_callback_info1) {
-	1..2: return item_mglv_Wagon_Gen7M_Superheavy_Flatcar;
-	CB_RESULT_NO_MORE_ARTICULATED_PARTS;
-}
-
-//Add defined switches 
-
-// ENGINECAPACITYSWITCH(VEHIDCODE)
-
-// RUNNINGCOST_ENGINE_SWITCH
-
-// PURCHASETEXT_SWITCH

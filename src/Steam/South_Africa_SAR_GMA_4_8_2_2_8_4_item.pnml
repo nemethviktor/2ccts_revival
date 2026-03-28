@@ -2,9 +2,12 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
-item(FEAT_TRAINS, item_steam_South_Africa_SAR_GMA_4_8_2_2_8_4) {
+
+// Template: TPL_17C
+
+item(FEAT_TRAINS, item_steam_south_africa_sar_gma_4_8_2_2_8_4) {
     property {
-        name: string(str_steam_South_Africa_SAR_GMA_4_8_2_2_8_4);
+        name: string(str_steam_south_africa_sar_gma_4_8_2_2_8_4);
         climates_available: ((param_region_africa || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1953,1,1);
         model_life: 45;
@@ -38,14 +41,14 @@ item(FEAT_TRAINS, item_steam_South_Africa_SAR_GMA_4_8_2_2_8_4) {
         bitmask_vehicle_info: 0;
     }
     graphics {
-        purchase: spriteset_steam_South_Africa_SAR_GMA_4_8_2_2_8_4_purchase;
-        visual_effect_and_powered: switch_steam_South_Africa_SAR_GMA_4_8_2_2_8_4_visual_effect;
-        length: switch_steam_South_Africa_SAR_GMA_4_8_2_2_8_4_length;
-        articulated_part: switch_steam_South_Africa_SAR_GMA_4_8_2_2_8_4_articulated;
+        purchase: spriteset_steam_south_africa_sar_gma_4_8_2_2_8_4_purchase;
+        visual_effect_and_powered: switch_steam_south_africa_sar_gma_4_8_2_2_8_4_visual_effect;
+        length: switch_steam_south_africa_sar_gma_4_8_2_2_8_4_length;
+        articulated_part: switch_steam_south_africa_sar_gma_4_8_2_2_8_4_articulated;
         can_attach_wagon: switch_can_attach_vehicle;
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
         // PURCHASETEXT_SWITCH_CALL // this is actually blank
-        default: switch_steam_South_Africa_SAR_GMA_4_8_2_2_8_4_position;
+        default: switch_steam_south_africa_sar_gma_4_8_2_2_8_4_position;
     }
 }

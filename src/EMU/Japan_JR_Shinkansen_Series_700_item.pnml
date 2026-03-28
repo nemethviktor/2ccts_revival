@@ -2,24 +2,27 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
+
+// Template: TPL_02D
+
 // Cargo capacity
 
-    switch(FEAT_TRAINS, SELF, switch_emu_Japan_JR_Shinkansen_Series_700_capacity_engine, cargo_classes) { \
+    switch(FEAT_TRAINS, SELF, switch_emu_japan_jr_shinkansen_series_700_capacity_engine, cargo_classes) { \
         bitmask(CC_MAIL): 83/2; \
         bitmask(CC_ARMOURED): 83/4; \
         83; \
     }
 
 
-    switch(FEAT_TRAINS, SELF, switch_emu_Japan_JR_Shinkansen_Series_700_capacity_wagon, cargo_classes) { \
+    switch(FEAT_TRAINS, SELF, switch_emu_japan_jr_shinkansen_series_700_capacity_wagon, cargo_classes) { \
         bitmask(CC_MAIL): 83/2; \
         bitmask(CC_ARMOURED): 83/4; \
         83; \
     }
 
-item(FEAT_TRAINS, item_emu_Japan_JR_Shinkansen_Series_700) {
+item(FEAT_TRAINS, item_emu_japan_jr_shinkansen_series_700) {
     property {
-        name: string(str_emu_Japan_JR_Shinkansen_Series_700);
+        name: string(str_emu_japan_jr_shinkansen_series_700);
         climates_available: ((param_region_asia || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1997,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
@@ -53,8 +56,8 @@ item(FEAT_TRAINS, item_emu_Japan_JR_Shinkansen_Series_700) {
         bitmask_vehicle_info: 0;
     }
     graphics {
-        purchase: spriteset_emu_Japan_JR_Shinkansen_Series_700_purchase;
-        cargo_capacity: switch_emu_Japan_JR_Shinkansen_Series_700_capacity_engine;
+        purchase: spriteset_emu_japan_jr_shinkansen_series_700_purchase;
+        cargo_capacity: switch_emu_japan_jr_shinkansen_series_700_capacity_engine;
         // no 'visual_effect_and_powered' becuase while it does exist, _visual_effect_and_powered_position is set for livery overrides
         // no 'length'
         // no 'articulated_part'
@@ -62,26 +65,26 @@ item(FEAT_TRAINS, item_emu_Japan_JR_Shinkansen_Series_700) {
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
         // PURCHASETEXT_SWITCH_CALL // this is actually blank
-        default: switch_emu_Japan_JR_Shinkansen_Series_700_reversed;
+        default: switch_emu_japan_jr_shinkansen_series_700_reversed;
     }
-    livery_override (item_mu_MU_Wagon_Unpowered) {
+    livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
         running_cost_factor: int(270/10);
         weight: int(45*1/2);
-        visual_effect_and_powered: switch_emu_Japan_JR_Shinkansen_Series_700_visual_effect_and_powered_position;
+        visual_effect_and_powered: switch_emu_japan_jr_shinkansen_series_700_visual_effect_and_powered_position;
         cargo_capacity: 83;
         length: 8;
-        default: switch_emu_Japan_JR_Shinkansen_Series_700_cargo_selection;
+        default: switch_emu_japan_jr_shinkansen_series_700_cargo_selection;
     }
-    livery_override (item_mu_MU_Wagon_Powered) {
+    livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
         running_cost_factor: (round(55.996050591931656));
         power: int(1441*1/2);
         weight: int(45*3/4);
-        visual_effect_and_powered: switch_emu_Japan_JR_Shinkansen_Series_700_visual_effect_and_powered_position;
+        visual_effect_and_powered: switch_emu_japan_jr_shinkansen_series_700_visual_effect_and_powered_position;
         cargo_capacity: 83;
         tractive_effort_coefficient: int(0.56*10*45);
         length: 8;
-        default: switch_emu_Japan_JR_Shinkansen_Series_700_cargo_selection;
+        default: switch_emu_japan_jr_shinkansen_series_700_cargo_selection;
     }
 }

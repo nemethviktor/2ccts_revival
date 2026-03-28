@@ -2,24 +2,27 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
+
+// Template: TPL_02A
+
 // Cargo capacity
 
-    switch(FEAT_TRAINS, SELF, switch_dmu_UK_BR_168_capacity_engine, cargo_classes) { \
+    switch(FEAT_TRAINS, SELF, switch_dmu_uk_br_168_capacity_engine, cargo_classes) { \
         bitmask(CC_MAIL): 42/2; \
         bitmask(CC_ARMOURED): 42/4; \
         42; \
     }
 
 
-    switch(FEAT_TRAINS, SELF, switch_dmu_UK_BR_168_capacity_wagon, cargo_classes) { \
+    switch(FEAT_TRAINS, SELF, switch_dmu_uk_br_168_capacity_wagon, cargo_classes) { \
         bitmask(CC_MAIL): 42/2; \
         bitmask(CC_ARMOURED): 42/4; \
         42; \
     }
 
-item(FEAT_TRAINS, item_dmu_UK_BR_168) {
+item(FEAT_TRAINS, item_dmu_uk_br_168) {
     property {
-        name: string(str_dmu_UK_BR_168);
+        name: string(str_dmu_uk_br_168);
         climates_available: ((param_region_northern_europe || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1997,1,1);
         model_life: 45;
@@ -53,27 +56,27 @@ item(FEAT_TRAINS, item_dmu_UK_BR_168) {
         bitmask_vehicle_info: 0;
     }
     graphics {
-        purchase: spriteset_dmu_UK_BR_168_purchase;
-        cargo_capacity: switch_dmu_UK_BR_168_capacity_engine;
+        purchase: spriteset_dmu_uk_br_168_purchase;
+        cargo_capacity: switch_dmu_uk_br_168_capacity_engine;
         purchase_cargo_capacity: 52;
-        visual_effect_and_powered: switch_dmu_UK_BR_168_visual_effect_and_powered;
+        visual_effect_and_powered: switch_dmu_uk_br_168_visual_effect_and_powered;
         // no 'length'
         // no 'articulated_part'
         can_attach_wagon: switch_can_attach_vehicle;
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
         // PURCHASETEXT_SWITCH_CALL // this is actually blank
-        default: switch_dmu_UK_BR_168_reversed;
+        default: switch_dmu_uk_br_168_reversed;
     }
-    livery_override (item_mu_MU_Wagon_Unpowered) {
+    livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: int(160/10);
         weight: int(50*1/2);
         cargo_capacity: 42;
         length: 8;
-        default: switch_dmu_UK_BR_168_cargo_selection;
+        default: switch_dmu_uk_br_168_cargo_selection;
     }
-    livery_override (item_mu_MU_Wagon_Powered) {
+    livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: (round(39.105551380198236));
         power: int(1300*1/2);
@@ -81,6 +84,6 @@ item(FEAT_TRAINS, item_dmu_UK_BR_168) {
         cargo_capacity: 42;
         tractive_effort_coefficient: int(0.39*10*50);
         length: 8;
-        default: switch_dmu_UK_BR_168_cargo_selection;
+        default: switch_dmu_uk_br_168_cargo_selection;
     }
 }

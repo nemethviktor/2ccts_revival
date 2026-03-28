@@ -2,24 +2,27 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
+
+// Template: TPL_02D
+
 // Cargo capacity
 
-    switch(FEAT_TRAINS, SELF, switch_emu_Russia_RZD_ES1_Lastochka_capacity_engine, cargo_classes) { \
+    switch(FEAT_TRAINS, SELF, switch_emu_russia_rzd_es1_lastochka_capacity_engine, cargo_classes) { \
         bitmask(CC_MAIL): 88/2; \
         bitmask(CC_ARMOURED): 88/4; \
         88; \
     }
 
 
-    switch(FEAT_TRAINS, SELF, switch_emu_Russia_RZD_ES1_Lastochka_capacity_wagon, cargo_classes) { \
+    switch(FEAT_TRAINS, SELF, switch_emu_russia_rzd_es1_lastochka_capacity_wagon, cargo_classes) { \
         bitmask(CC_MAIL): 88/2; \
         bitmask(CC_ARMOURED): 88/4; \
         88; \
     }
 
-item(FEAT_TRAINS, item_emu_Russia_RZD_ES1_Lastochka) {
+item(FEAT_TRAINS, item_emu_russia_rzd_es1_lastochka) {
     property {
-        name: string(str_emu_Russia_RZD_ES1_Lastochka);
+        name: string(str_emu_russia_rzd_es1_lastochka);
         climates_available: ((param_region_asia || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(2011,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
@@ -53,8 +56,8 @@ item(FEAT_TRAINS, item_emu_Russia_RZD_ES1_Lastochka) {
         bitmask_vehicle_info: 0;
     }
     graphics {
-        purchase: spriteset_emu_Russia_RZD_ES1_Lastochka_purchase;
-        cargo_capacity: switch_emu_Russia_RZD_ES1_Lastochka_capacity_engine;
+        purchase: spriteset_emu_russia_rzd_es1_lastochka_purchase;
+        cargo_capacity: switch_emu_russia_rzd_es1_lastochka_capacity_engine;
         // no 'visual_effect_and_powered' becuase while it does exist, _visual_effect_and_powered_position is set for livery overrides
         // no 'length'
         // no 'articulated_part'
@@ -62,26 +65,26 @@ item(FEAT_TRAINS, item_emu_Russia_RZD_ES1_Lastochka) {
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
         // PURCHASETEXT_SWITCH_CALL // this is actually blank
-        default: switch_emu_Russia_RZD_ES1_Lastochka_reversed;
+        default: switch_emu_russia_rzd_es1_lastochka_reversed;
     }
-    livery_override (item_mu_MU_Wagon_Unpowered) {
+    livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: int(160/10);
         weight: int(56*1/2);
-        visual_effect_and_powered: switch_emu_Russia_RZD_ES1_Lastochka_visual_effect_and_powered_position;
+        visual_effect_and_powered: switch_emu_russia_rzd_es1_lastochka_visual_effect_and_powered_position;
         cargo_capacity: 88;
         length: 8;
-        default: switch_emu_Russia_RZD_ES1_Lastochka_cargo_selection;
+        default: switch_emu_russia_rzd_es1_lastochka_cargo_selection;
     }
-    livery_override (item_mu_MU_Wagon_Powered) {
+    livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: (round(52.07098211812666));
         power: int(3400*1/2);
         weight: int(56*3/4);
-        visual_effect_and_powered: switch_emu_Russia_RZD_ES1_Lastochka_visual_effect_and_powered_position;
+        visual_effect_and_powered: switch_emu_russia_rzd_es1_lastochka_visual_effect_and_powered_position;
         cargo_capacity: 88;
         tractive_effort_coefficient: int(0.54*10*56);
         length: 8;
-        default: switch_emu_Russia_RZD_ES1_Lastochka_cargo_selection;
+        default: switch_emu_russia_rzd_es1_lastochka_cargo_selection;
     }
 }

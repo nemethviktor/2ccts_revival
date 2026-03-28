@@ -2,9 +2,12 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
-item(FEAT_TRAINS, item_electric_USA_Virginian_Railway_EL_2B) {
+
+// Template: TPL_17A
+
+item(FEAT_TRAINS, item_electric_usa_virginian_railway_el_2b) {
     property {
-        name: string(str_electric_USA_Virginian_Railway_EL_2B);
+        name: string(str_electric_usa_virginian_railway_el_2b);
         climates_available: ((param_region_north_america || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1948,1,1);
         model_life: 45;
@@ -38,14 +41,14 @@ item(FEAT_TRAINS, item_electric_USA_Virginian_Railway_EL_2B) {
         bitmask_vehicle_info: 0;
     }
     graphics {
-        purchase: spriteset_electric_USA_Virginian_Railway_EL_2B_purchase;
-        visual_effect_and_powered: switch_electric_USA_Virginian_Railway_EL_2B_visual_effect;
+        purchase: spriteset_electric_usa_virginian_railway_el_2b_purchase;
+        visual_effect_and_powered: switch_electric_usa_virginian_railway_el_2b_visual_effect;
         // no 'length'
-        articulated_part: switch_electric_USA_Virginian_Railway_EL_2B_articulated;
+        articulated_part: switch_electric_usa_virginian_railway_el_2b_articulated;
         can_attach_wagon: switch_can_attach_vehicle;
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
         // PURCHASETEXT_SWITCH_CALL // this is actually blank
-        default: switch_electric_USA_Virginian_Railway_EL_2B_position;
+        default: switch_electric_usa_virginian_railway_el_2b_position;
     }
 }

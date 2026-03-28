@@ -1,68 +1,50 @@
-/*
- *  Copyright (C) 2017 Transportman // V. Nemeth 2026
- *  This file is part of the 2cc Trains In NML
- *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
+//  Copyright (C) 2017 Transportman // V. Nemeth 2026+
+//  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
-*/
+// Template: TPL_03A
 
-/*
-* PURCHASE
-*/
+// PURCHASE
+spriteset(spriteset_steam_russia_rzd_e_purchase, "gfx/steam/russia_rzd_e.png") {template_purchase(1, 96)}
 
-spriteset(spriteset_steam_Russia_RZD_E_purchase, "gfx/Steam/Russia_RZD_E.png") {
-	template_purchase(1, 96)
+
+// VEHICLE
+/// Engine1
+spriteset(spriteset_steam_russia_rzd_e_engine1, "gfx/steam/russia_rzd_e.png") {template_2cc_engines_general(1, 1)}
+
+
+/// Engine2
+spriteset(spriteset_steam_russia_rzd_e_engine2, "gfx/steam/russia_rzd_e.png") {template_2cc_engines_general(1, 32)}
+
+
+/// Tender
+spriteset(spriteset_steam_russia_rzd_e_tender, "gfx/steam/russia_rzd_e.png") {template_2cc_engines_general(1, 64)}
+
+
+/// Animation states (animation)
+switch(FEAT_TRAINS, SELF, switch_steam_russia_rzd_e_animation, motion_counter % 2){
+	0: spriteset_steam_russia_rzd_e_engine1;
+	spriteset_steam_russia_rzd_e_engine2;
+}
+switch(FEAT_TRAINS, SELF, switch_steam_russia_rzd_e_position, position_in_vehid_chain % 2) {
+	0: switch_steam_russia_rzd_e_animation;
+	spriteset_steam_russia_rzd_e_tender;
 }
 
-/*
-* VEHICLE
-*/
-
-//Engine
-spriteset(spriteset_steam_Russia_RZD_E_engine1, "gfx/Steam/Russia_RZD_E.png") {
-	template_2cc_engines_general(1, 1)
-}
-
-spriteset(spriteset_steam_Russia_RZD_E_engine2, "gfx/Steam/Russia_RZD_E.png") {
-	template_2cc_engines_general(1, 32)
-}
-
-//Tender
-spriteset(spriteset_steam_Russia_RZD_E_tender, "gfx/Steam/Russia_RZD_E.png") {
-	template_2cc_engines_general(1, 64)
-}
-
-//Animation states
-switch(FEAT_TRAINS, SELF, switch_steam_Russia_RZD_E_animation, motion_counter % 2){
-	0: spriteset_steam_Russia_RZD_E_engine1;
-	spriteset_steam_Russia_RZD_E_engine2;
-}
-
-switch(FEAT_TRAINS, SELF, switch_steam_Russia_RZD_E_position, position_in_vehid_chain % 2) {
-	0: switch_steam_Russia_RZD_E_animation;
-	spriteset_steam_Russia_RZD_E_tender;
-}
-
-/*
-* Visual effect
-*/
-
-switch(FEAT_TRAINS, SELF, switch_steam_Russia_RZD_E_visual_effect, position_in_vehid_chain % 2) {
+/// Visual Effect
+switch(FEAT_TRAINS, SELF, switch_steam_russia_rzd_e_visual_effect, position_in_vehid_chain % 2) {
 	0: return visual_effect_and_powered(VISUAL_EFFECT_STEAM, -3, DISABLE_WAGON_POWER);
 	return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }
 
-switch(FEAT_TRAINS, SELF, switch_steam_Russia_RZD_E_length, position_in_vehid_chain % 2) {
-	0: 5;
+/// Length
+switch(FEAT_TRAINS, SELF, switch_steam_russia_rzd_e_length, position_in_vehid_chain % 2) {
+    0: 5;
 	3;
 }
 
-switch(FEAT_TRAINS, SELF, switch_steam_Russia_RZD_E_articulated, extra_callback_info1) {
-	1: return item_steam_Russia_RZD_E;
+/// Articulated Return
+/// extra_callback_info1 is the index of the part being added.
+switch(FEAT_TRAINS, SELF, switch_steam_russia_rzd_e_articulated, extra_callback_info1) {
+    1: return item_steam_russia_rzd_e;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
-
-//Add defined switches
-
-// RUNNINGCOST_ENGINE_SWITCH
-
-// PURCHASETEXT_SWITCH

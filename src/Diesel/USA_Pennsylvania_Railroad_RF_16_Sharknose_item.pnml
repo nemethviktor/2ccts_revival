@@ -2,9 +2,12 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
-item(FEAT_TRAINS, item_diesel_USA_Pennsylvania_Railroad_RF_16_Sharknose) {
+
+// Template: TPL_17B
+
+item(FEAT_TRAINS, item_diesel_usa_pennsylvania_railroad_rf_16_sharknose) {
     property {
-        name: string(str_diesel_USA_Pennsylvania_Railroad_RF_16_Sharknose);
+        name: string(str_diesel_usa_pennsylvania_railroad_rf_16_sharknose);
         climates_available: ((param_region_north_america || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1950,1,1);
         model_life: 45;
@@ -38,14 +41,14 @@ item(FEAT_TRAINS, item_diesel_USA_Pennsylvania_Railroad_RF_16_Sharknose) {
         bitmask_vehicle_info: 0;
     }
     graphics {
-        purchase: spriteset_diesel_USA_Pennsylvania_Railroad_RF_16_Sharknose_purchase;
-        visual_effect_and_powered: switch_diesel_USA_Pennsylvania_Railroad_RF_16_Sharknose_visual_effect;
+        purchase: spriteset_diesel_usa_pennsylvania_railroad_rf_16_sharknose_purchase;
+        visual_effect_and_powered: switch_diesel_usa_pennsylvania_railroad_rf_16_sharknose_visual_effect;
         // no 'length'
         // no 'articulated_part'
         can_attach_wagon: switch_can_attach_vehicle;
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
         // PURCHASETEXT_SWITCH_CALL // this is actually blank
-        default: switch_diesel_USA_Pennsylvania_Railroad_RF_16_Sharknose_position;
+        default: switch_diesel_usa_pennsylvania_railroad_rf_16_sharknose_position;
     }
 }

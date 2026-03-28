@@ -2,9 +2,12 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
-item(FEAT_TRAINS, item_steam_Ireland_GS_WR_101) {
+
+// Template: TPL_03A
+
+item(FEAT_TRAINS, item_steam_ireland_gs_wr_101) {
     property {
-        name: string(str_steam_Ireland_GS_WR_101);
+        name: string(str_steam_ireland_gs_wr_101);
         climates_available: ((param_region_northern_europe || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1866,1,1);
         model_life: 45;
@@ -38,14 +41,14 @@ item(FEAT_TRAINS, item_steam_Ireland_GS_WR_101) {
         bitmask_vehicle_info: 0;
     }
     graphics {
-        purchase: spriteset_steam_Ireland_GS_WR_101_purchase;
-        visual_effect_and_powered: switch_steam_Ireland_GS_WR_101_visual_effect;
-        length: switch_steam_Ireland_GS_WR_101_length;
-        articulated_part: switch_steam_Ireland_GS_WR_101_articulated;
+        purchase: spriteset_steam_ireland_gs_wr_101_purchase;
+        visual_effect_and_powered: switch_steam_ireland_gs_wr_101_visual_effect;
+        length: switch_steam_ireland_gs_wr_101_length;
+        articulated_part: switch_steam_ireland_gs_wr_101_articulated;
         can_attach_wagon: switch_can_attach_vehicle;
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
         // PURCHASETEXT_SWITCH_CALL // this is actually blank
-        default: switch_steam_Ireland_GS_WR_101_position;
+        default: switch_steam_ireland_gs_wr_101_position;
     }
 }

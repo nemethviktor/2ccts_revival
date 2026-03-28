@@ -2,24 +2,27 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
+
+// Template: TPL_01B
+
 // Cargo capacity
 
-    switch(FEAT_TRAINS, SELF, switch_rbd_United_Kingdom_BR_153_Super_Sprinter_capacity_engine, cargo_classes) { \
+    switch(FEAT_TRAINS, SELF, switch_rbd_united_kingdom_br_153_super_sprinter_capacity_engine, cargo_classes) { \
         bitmask(CC_MAIL): 75/2; \
         bitmask(CC_ARMOURED): 75/4; \
         75; \
     }
 
 
-    switch(FEAT_TRAINS, SELF, switch_rbd_United_Kingdom_BR_153_Super_Sprinter_capacity_wagon, cargo_classes) { \
+    switch(FEAT_TRAINS, SELF, switch_rbd_united_kingdom_br_153_super_sprinter_capacity_wagon, cargo_classes) { \
         bitmask(CC_MAIL): 0/2; \
         bitmask(CC_ARMOURED): 0/4; \
         0; \
     }
 
-item(FEAT_TRAINS, item_rbd_United_Kingdom_BR_153_Super_Sprinter) {
+item(FEAT_TRAINS, item_rbd_united_kingdom_br_153_super_sprinter) {
     property {
-        name: string(str_rbd_United_Kingdom_BR_153_Super_Sprinter);
+        name: string(str_rbd_united_kingdom_br_153_super_sprinter);
         climates_available: ((param_region_northern_europe || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1991,1,1);
         model_life: 45;
@@ -53,8 +56,8 @@ item(FEAT_TRAINS, item_rbd_United_Kingdom_BR_153_Super_Sprinter) {
         bitmask_vehicle_info: 0;
     }
     graphics {
-        purchase: spriteset_rbd_United_Kingdom_BR_153_Super_Sprinter_purchase;
-        cargo_capacity: switch_rbd_United_Kingdom_BR_153_Super_Sprinter_capacity_engine;
+        purchase: spriteset_rbd_united_kingdom_br_153_super_sprinter_purchase;
+        cargo_capacity: switch_rbd_united_kingdom_br_153_super_sprinter_capacity_engine;
         // no 'visual_effect' or 'visual_effect_and_powered'
         // no 'length'
         // no 'articulated_part'
@@ -62,6 +65,6 @@ item(FEAT_TRAINS, item_rbd_United_Kingdom_BR_153_Super_Sprinter) {
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
         // PURCHASETEXT_SWITCH_CALL // this is actually blank
-        default: spriteset_rbd_United_Kingdom_BR_153_Super_Sprinter;
+        default: spriteset_rbd_united_kingdom_br_153_super_sprinter;
     }
 }

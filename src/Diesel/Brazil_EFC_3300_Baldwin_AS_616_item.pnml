@@ -2,9 +2,12 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
-item(FEAT_TRAINS, item_diesel_Brazil_EFC_3300_Baldwin_AS_616) {
+
+// Template: TPL_01A
+
+item(FEAT_TRAINS, item_diesel_brazil_efc_3300_baldwin_as_616) {
     property {
-        name: string(str_diesel_Brazil_EFC_3300_Baldwin_AS_616);
+        name: string(str_diesel_brazil_efc_3300_baldwin_as_616);
         climates_available: ((param_region_south_america || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1950,1,1);
         model_life: 45;
@@ -38,7 +41,7 @@ item(FEAT_TRAINS, item_diesel_Brazil_EFC_3300_Baldwin_AS_616) {
         bitmask_vehicle_info: 0;
     }
     graphics {
-        purchase: spriteset_diesel_Brazil_EFC_3300_Baldwin_AS_616_purchase;
+        purchase: spriteset_diesel_brazil_efc_3300_baldwin_as_616_purchase;
         // no 'visual_effect' or 'visual_effect_and_powered'
         // no 'length'
         // no 'articulated_part'
@@ -46,6 +49,6 @@ item(FEAT_TRAINS, item_diesel_Brazil_EFC_3300_Baldwin_AS_616) {
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
         // PURCHASETEXT_SWITCH_CALL // this is actually blank
-        default: spriteset_diesel_Brazil_EFC_3300_Baldwin_AS_616;
+        default: spriteset_diesel_brazil_efc_3300_baldwin_as_616;
     }
 }

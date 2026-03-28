@@ -2,6 +2,7 @@
 cls
 python ./tools/custom_tags_generator.py
 python ./tools/generate_english_lng.py
+python ./tools/generate_graphics_pnml.py
 python ./tools/generate_master_pnml.py
 python ./tools/generate_unified_items.py
 python ./tools/generate_vehicle_id_pnml.py

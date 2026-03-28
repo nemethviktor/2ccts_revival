@@ -2,24 +2,27 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
+
+// Template: TPL_02F
+
 // Cargo capacity
 
-    switch(FEAT_TRAINS, SELF, switch_emu_Europe_Sureot_capacity_engine, cargo_classes) { \
+    switch(FEAT_TRAINS, SELF, switch_emu_europe_sureot_capacity_engine, cargo_classes) { \
         bitmask(CC_MAIL): 85/2; \
         bitmask(CC_ARMOURED): 85/4; \
         85; \
     }
 
 
-    switch(FEAT_TRAINS, SELF, switch_emu_Europe_Sureot_capacity_wagon, cargo_classes) { \
+    switch(FEAT_TRAINS, SELF, switch_emu_europe_sureot_capacity_wagon, cargo_classes) { \
         bitmask(CC_MAIL): 85/2; \
         bitmask(CC_ARMOURED): 85/4; \
         85; \
     }
 
-item(FEAT_TRAINS, item_emu_Europe_Sureot) {
+item(FEAT_TRAINS, item_emu_europe_sureot) {
     property {
-        name: string(str_emu_Europe_Sureot);
+        name: string(str_emu_europe_sureot);
         climates_available: (((param_region_northern_europe || param_region_eastern_europe || param_region_southern_europe || param_region_western_europe) || 0) && param_concept) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(2030,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
@@ -53,26 +56,26 @@ item(FEAT_TRAINS, item_emu_Europe_Sureot) {
         bitmask_vehicle_info: 0;
     }
     graphics {
-        purchase: spriteset_emu_Europe_Sureot_purchase;
-        cargo_capacity: switch_emu_Europe_Sureot_capacity_engine;
-        visual_effect_and_powered: switch_emu_Europe_Sureot_visual_effect_and_powered;
+        purchase: spriteset_emu_europe_sureot_purchase;
+        cargo_capacity: switch_emu_europe_sureot_capacity_engine;
+        visual_effect_and_powered: switch_emu_europe_sureot_visual_effect_and_powered;
         // no 'length'
         // no 'articulated_part'
         can_attach_wagon: switch_can_attach_vehicle;
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
         // PURCHASETEXT_SWITCH_CALL // this is actually blank
-        default: switch_emu_Europe_Sureot_reversed;
+        default: switch_emu_europe_sureot_reversed;
     }
-    livery_override (item_mu_MU_Wagon_Unpowered) {
+    livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
         running_cost_factor: int(300/10);
         weight: int(50*1/2);
         cargo_capacity: 85;
         length: 8;
-        default: switch_emu_Europe_Sureot_cargo_selection;
+        default: switch_emu_europe_sureot_cargo_selection;
     }
-    livery_override (item_mu_MU_Wagon_Powered) {
+    livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
         running_cost_factor: (round(53.784960746004316));
         power: int(16000*1/2);
@@ -80,6 +83,6 @@ item(FEAT_TRAINS, item_emu_Europe_Sureot) {
         cargo_capacity: 85;
         tractive_effort_coefficient: int(0.22*10*50);
         length: 8;
-        default: switch_emu_Europe_Sureot_cargo_selection;
+        default: switch_emu_europe_sureot_cargo_selection;
     }
 }

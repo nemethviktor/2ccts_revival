@@ -2,9 +2,12 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
-item(FEAT_TRAINS, item_steam_New_Zealand_NZR_WAB) {
+
+// Template: TPL_03E
+
+item(FEAT_TRAINS, item_steam_new_zealand_nzr_wab) {
     property {
-        name: string(str_steam_New_Zealand_NZR_WAB);
+        name: string(str_steam_new_zealand_nzr_wab);
         climates_available: ((param_region_oceania || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1923,1,1);
         model_life: 45;
@@ -38,7 +41,7 @@ item(FEAT_TRAINS, item_steam_New_Zealand_NZR_WAB) {
         bitmask_vehicle_info: 0;
     }
     graphics {
-        purchase: spriteset_steam_New_Zealand_NZR_WAB_purchase;
+        purchase: spriteset_steam_new_zealand_nzr_wab_purchase;
         // no 'visual_effect' or 'visual_effect_and_powered'
         // no 'length'
         // no 'articulated_part'
@@ -46,6 +49,6 @@ item(FEAT_TRAINS, item_steam_New_Zealand_NZR_WAB) {
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
         // PURCHASETEXT_SWITCH_CALL // this is actually blank
-        default: switch_steam_New_Zealand_NZR_WAB_animation;
+        default: switch_steam_new_zealand_nzr_wab_animation;
     }
 }

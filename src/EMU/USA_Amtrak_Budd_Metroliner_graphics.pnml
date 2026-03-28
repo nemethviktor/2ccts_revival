@@ -1,73 +1,53 @@
-/*
- *  Copyright (C) 2017 Transportman // V. Nemeth 2026
- *  This file is part of the 2cc Trains In NML
- *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
+//  Copyright (C) 2017 Transportman // V. Nemeth 2026+
+//  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
-*/
+// Template: TPL_02A
 
-/*
-* PURCHASE
-*/
+// PURCHASE
+spriteset(spriteset_emu_usa_amtrak_budd_metroliner_purchase, "gfx/emu/usa_amtrak_budd_metroliner.png") {template_purchase_dualheaded(1, 128)}
 
-spriteset(spriteset_emu_USA_Amtrak_Budd_Metroliner_purchase, "gfx/EMU/USA_Amtrak_Budd_Metroliner.png") {
-	template_purchase_dualheaded(1, 128)
+
+// VEHICLE
+/// Front
+spriteset(spriteset_emu_usa_amtrak_budd_metroliner_front, "gfx/emu/usa_amtrak_budd_metroliner.png") {template_2cc_engines_general(1, 1)}
+
+
+// VEHICLE
+/// Back
+spriteset(spriteset_emu_usa_amtrak_budd_metroliner_back, "gfx/emu/usa_amtrak_budd_metroliner.png") {template_2cc_engines_general(1, 32)}
+
+
+/// MIDDLEPASS
+spriteset(spriteset_emu_usa_amtrak_budd_metroliner_middlepass, "gfx/emu/usa_amtrak_budd_metroliner.png") {template_2cc_engines_general(1, 64)}
+
+
+/// MIDDLEMAIL
+spriteset(spriteset_emu_usa_amtrak_budd_metroliner_middlemail, "gfx/emu/usa_amtrak_budd_metroliner.png") {template_2cc_engines_general(1, 96)}
+
+
+/// Dualheaded (reverse switch)
+/// In the context of var[0xC8] (which is the variable for "position in consist"):
+/// 0xFE: The very first vehicle in the train (The Engine/Front).
+/// 0xFF: The very last vehicle in the train (The Caboose/End).
+switch(FEAT_TRAINS, SELF, switch_emu_usa_amtrak_budd_metroliner_reversed, var[0xC8]) {
+    0xFE: spriteset_emu_usa_amtrak_budd_metroliner_back;
+    0xFF: spriteset_emu_usa_amtrak_budd_metroliner_back;
+    spriteset_emu_usa_amtrak_budd_metroliner_front;
 }
 
-/*
-* VEHICLE
-*/
-
-//Front
-spriteset(spriteset_emu_USA_Amtrak_Budd_Metroliner_front, "gfx/EMU/USA_Amtrak_Budd_Metroliner.png") {
-	template_2cc_engines_general(1, 1)
+// Visual effect and power management
+// Position-based logic: ENDS
+/// In the context of var[0xC8] (which is the variable for "position in consist"):
+/// 0xFE: The very first vehicle in the train (The Engine/Front).
+/// 0xFF: The very last vehicle in the train (The Caboose/End).
+switch(FEAT_TRAINS, SELF, switch_emu_usa_amtrak_budd_metroliner_visual_effect_and_powered, var[0xC8]) {
+    0xFE: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, -3, DISABLE_WAGON_POWER);
+    0xFF: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, -3, DISABLE_WAGON_POWER);
+    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }
 
-//Back
-spriteset(spriteset_emu_USA_Amtrak_Budd_Metroliner_back, "gfx/EMU/USA_Amtrak_Budd_Metroliner.png") {
-	template_2cc_engines_general(1, 32)
+/// Graphics for the unit wagon based on cargo class
+switch(FEAT_TRAINS, SELF, switch_emu_usa_amtrak_budd_metroliner_cargo_selection, cargo_classes){
+	bitmask(CC_PASSENGERS): spriteset_emu_usa_amtrak_budd_metroliner_middlepass;
+	spriteset_emu_usa_amtrak_budd_metroliner_middlemail;
 }
-
-//Middle - PAX
-spriteset(spriteset_emu_USA_Amtrak_Budd_Metroliner_middlepass, "gfx/EMU/USA_Amtrak_Budd_Metroliner.png") {
-	template_2cc_engines_general(1, 64)
-}
-//Middle - MAIL
-spriteset(spriteset_emu_USA_Amtrak_Budd_Metroliner_middlemail, "gfx/EMU/USA_Amtrak_Budd_Metroliner.png") {
-	template_2cc_engines_general(1, 96)
-}
-
-//Dualheaded engines
-switch(FEAT_TRAINS, SELF, switch_emu_USA_Amtrak_Budd_Metroliner_reversed, var[0xC8]) {
-	0xFE: spriteset_emu_USA_Amtrak_Budd_Metroliner_back;
-    0xFF: spriteset_emu_USA_Amtrak_Budd_Metroliner_back; 
-    spriteset_emu_USA_Amtrak_Budd_Metroliner_front;
-}
-
-//Visual effect, for DMU this is done on the front engine
-switch(FEAT_TRAINS, SELF, switch_emu_USA_Amtrak_Budd_Metroliner_visual_effect_and_powered, var[0xC8]) {
-	0xFE: visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
-	0xFF: visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
-	visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, -3, DISABLE_WAGON_POWER);
-}
-	
-/*
-* Cargo capacity
-*/
-
-// ENGINECAPACITYSWITCH(VEHIDCODE)
-
-// WAGONCAPACITYSWITCH(VEHIDCODE)
-
-//Graphics for the unit wagon based on cargo class
-switch(FEAT_TRAINS, SELF, switch_emu_USA_Amtrak_Budd_Metroliner_cargo_selection, cargo_classes){
-	bitmask(CC_PASSENGERS): spriteset_emu_USA_Amtrak_Budd_Metroliner_middlepass;
-	spriteset_emu_USA_Amtrak_Budd_Metroliner_middlemail;
-}
-
-//Add defined switches
-
-// RUNNINGCOST_ENGINE_SWITCH
-
-// RUNNINGCOST_MU_WAGON_SWITCH
-
-// PURCHASETEXT_SWITCH

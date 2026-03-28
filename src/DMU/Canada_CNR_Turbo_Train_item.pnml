@@ -2,24 +2,27 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
+
+// Template: TPL_02A
+
 // Cargo capacity
 
-    switch(FEAT_TRAINS, SELF, switch_dmu_Canada_CNR_Turbo_Train_capacity_engine, cargo_classes) { \
+    switch(FEAT_TRAINS, SELF, switch_dmu_canada_cnr_turbo_train_capacity_engine, cargo_classes) { \
         bitmask(CC_MAIL): 44/2; \
         bitmask(CC_ARMOURED): 44/4; \
         44; \
     }
 
 
-    switch(FEAT_TRAINS, SELF, switch_dmu_Canada_CNR_Turbo_Train_capacity_wagon, cargo_classes) { \
+    switch(FEAT_TRAINS, SELF, switch_dmu_canada_cnr_turbo_train_capacity_wagon, cargo_classes) { \
         bitmask(CC_MAIL): 44/2; \
         bitmask(CC_ARMOURED): 44/4; \
         44; \
     }
 
-item(FEAT_TRAINS, item_dmu_Canada_CNR_Turbo_Train) {
+item(FEAT_TRAINS, item_dmu_canada_cnr_turbo_train) {
     property {
-        name: string(str_dmu_Canada_CNR_Turbo_Train);
+        name: string(str_dmu_canada_cnr_turbo_train);
         climates_available: ((param_region_north_america || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1967,1,1);
         model_life: 45;
@@ -53,27 +56,27 @@ item(FEAT_TRAINS, item_dmu_Canada_CNR_Turbo_Train) {
         bitmask_vehicle_info: 0;
     }
     graphics {
-        purchase: spriteset_dmu_Canada_CNR_Turbo_Train_purchase;
-        cargo_capacity: switch_dmu_Canada_CNR_Turbo_Train_capacity_engine;
+        purchase: spriteset_dmu_canada_cnr_turbo_train_purchase;
+        cargo_capacity: switch_dmu_canada_cnr_turbo_train_capacity_engine;
         purchase_cargo_capacity: 50;
-        visual_effect_and_powered: switch_dmu_Canada_CNR_Turbo_Train_visual_effect_and_powered;
+        visual_effect_and_powered: switch_dmu_canada_cnr_turbo_train_visual_effect_and_powered;
         // no 'length'
         // no 'articulated_part'
         can_attach_wagon: switch_can_attach_vehicle;
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
         // PURCHASETEXT_SWITCH_CALL // this is actually blank
-        default: switch_dmu_Canada_CNR_Turbo_Train_reversed;
+        default: switch_dmu_canada_cnr_turbo_train_reversed;
     }
-    livery_override (item_mu_MU_Wagon_Unpowered) {
+    livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
         running_cost_factor: int(225/10);
         weight: int(40*1/2);
         cargo_capacity: 44;
         length: 8;
-        default: switch_dmu_Canada_CNR_Turbo_Train_cargo_selection;
+        default: switch_dmu_canada_cnr_turbo_train_cargo_selection;
     }
-    livery_override (item_mu_MU_Wagon_Powered) {
+    livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
         running_cost_factor: (round(45.39898077750403));
         power: int(2400*1/2);
@@ -81,6 +84,6 @@ item(FEAT_TRAINS, item_dmu_Canada_CNR_Turbo_Train) {
         cargo_capacity: 44;
         tractive_effort_coefficient: int(0.45*10*40);
         length: 8;
-        default: switch_dmu_Canada_CNR_Turbo_Train_cargo_selection;
+        default: switch_dmu_canada_cnr_turbo_train_cargo_selection;
     }
 }

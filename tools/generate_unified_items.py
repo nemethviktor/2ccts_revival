@@ -8,30 +8,31 @@ import re
 warnings.filterwarnings("ignore", category=UserWarning, module="openpyxl")
 
 
-
 def load_master_data(excel_path):
     print("--- Loading and Merging Excel Sheets ---")
     sheets = pd.read_excel(excel_path, sheet_name=None)
-    
+
     # 1. Start with the 'control' sheet as the base (defines what to generate)
     df_master = sheets['control']
-    
+
     # 2. List of sheets that provide extra vehicle properties (keyed by VEHIDCODE)
     data_sheets = [
-        'properties', 'constants', 'flags', 'track_types', 
+        'properties', 'constants', 'flags', 'track_types',
         'regions', 'graphics_properties'
     ]
-    
+
     for sheet_name in data_sheets:
         if sheet_name in sheets:
             # Merge on VEHIDCODE. 'left' join ensures we keep only what's in 'control'
-            df_master = pd.merge(df_master, sheets[sheet_name], on='VEHIDCODE', how='left', suffixes=('', '_dup'))
+            df_master = pd.merge(
+                df_master, sheets[sheet_name], on='VEHIDCODE', how='left', suffixes=('', '_dup'))
             # Drop any duplicate columns created by the merge
-            df_master = df_master.loc[:, ~df_master.columns.str.endswith('_dup')]
-            
+            df_master = df_master.loc[:, ~
+                                      df_master.columns.str.endswith('_dup')]
+
     # 3. Load the Lookups and Copyright (Global data)
     df_cost_lookup = sheets['cost_lookup'].set_index('COST_CAT').fillna(0)
-    
+
     # Safer Copyright Extraction
     df_copyright = sheets['copyright_text']
     if not df_copyright.empty:
@@ -40,14 +41,9 @@ def load_master_data(excel_path):
     elif len(df_copyright.columns) > 0 and "Unnamed" not in str(df_copyright.columns[0]):
         # If the data is empty but the header contains the text
         copyright_txt = str(df_copyright.columns[0])
-    else:
-        # Fallback if the sheet is totally blank
-        copyright_txt = "// Copyright (C) 2026 Revival Team"
-    
+
     return df_master, df_cost_lookup, copyright_txt
 
-# Inside your main loop:
-# master_df, df_lookup, copy_val = load_master_data(excel_path)
 
 def is_true(val) -> bool:
     """ Checks if a value evals to true (ie is a string that says so, or 1, or just True)"""
@@ -55,51 +51,54 @@ def is_true(val) -> bool:
 
 # --- Newton-Raphson Emulation (Matches NML SQRT) ---
 
+
 def nml_sqrt(value) -> float:
     """
     Emulates the NML 'SQRTESTIMATE' macro using the Newton-Raphson method.
-    
+
     This function replicates the specific mathematical approximation used in 
     legacy NML property files. It performs 3 iterations to converge on a 
     square root value, matching the precision (or lack thereof) of the 
     original Newton-Raphson implementation in the game's compilation process.
-    
+
     Args:
         value (float/int): The radicand to calculate the square root for.
-        
+
     Returns:
         float: The approximated square root after 3 iterations. 
                Returns 0 if the input is less than or equal to 0.
     """
     val = float(value)
-    if val <= 0: return 0
+    if val <= 0:
+        return 0
     # Initial guess is VALUE/40 per your eval string
-    guess = val / 40 
+    guess = val / 40
     for _ in range(3):
         # guess - ((guess^2 - val) / (0.1 + 2*guess))
         guess = guess - ((guess**2) - val) / (0.1 + 2 * guess)
     return guess
 
+
 def calculate_nml_cost(row, m, is_running_cost=False) -> float:
     """
     Universal cost calculator for Purchase and Running Cost properties.
-    
+
     This function handles the logic branching between 'Engine/MU' and 
     'Coach/Wagon' cost formulas. It pulls multipliers (P1-P7 or R1-R6) 
     from the cost_lookup sheet and vehicle data from the properties sheet.
-    
+
     Logic Branches:
     1. COACH/WAGON: Uses 'PURCHASECOSTNONENGINEVALUE' logic where capacity 
        is added linearly rather than using a square root complexity factor.
     2. ENGINES/MU: Uses a complexity-based formula where Power and Capacity 
        are processed through the nml_sqrt function.
-    
+
     Args:
         row (pd.Series): A row from the merged 'master_df' containing vehicle specs.
         m (pd.Series): The row from 'cost_lookup' corresponding to the vehicle category.
         is_running_cost (bool): If True, calculates 'running_cost_factor'. 
                                 If False, calculates 'cost_factor'.
-    
+
     Returns:
         float: The final cost factor rounded to 5 decimal places.
     """
@@ -110,7 +109,7 @@ def calculate_nml_cost(row, m, is_running_cost=False) -> float:
     S = float(row.get('SPEED', 0))
     TE = float(row.get('TE_COEFFICIENT', 0))
     C = float(row.get('HEAD_CAPACITY', 0))
-    
+
     # Emulate the 3-iteration Newton SQRT
     sqrt_S = nml_sqrt(S)
     sqrt_P = nml_sqrt(P)
@@ -133,16 +132,19 @@ def calculate_nml_cost(row, m, is_running_cost=False) -> float:
         # Standard Engine/MU Logic (Power & Capacity use SQRT)
         sqrt_C = nml_sqrt(C)
         if not is_running_cost:
-            base = (m.P2 * W) + (m.P3 * sqrt_S) + (m.P4 * sqrt_P) + (m.P5 * sqrt_C) + (m.P7 * TE)
+            base = (m.P2 * W) + (m.P3 * sqrt_S) + \
+                (m.P4 * sqrt_P) + (m.P5 * sqrt_C) + (m.P7 * TE)
             if row['COST_CAT'] in ['DMU', 'EMU', 'METRO', 'MAGLEVMU']:
                 base += (m.P6 * nml_sqrt(row.get('WAGON_POWER', 0)))
             return round(m.P1 * base, 5)
         else:
-            base = (m.R2 * sqrt_S) + (m.R3 * sqrt_P) + (m.R4 * sqrt_C) + (m.R6 * TE)
+            base = (m.R2 * sqrt_S) + (m.R3 * sqrt_P) + \
+                (m.R4 * sqrt_C) + (m.R6 * TE)
             if row['COST_CAT'] in ['DMU', 'EMU', 'METRO', 'MAGLEVMU']:
                 base += (m.R5 * nml_sqrt(row.get('WAGON_POWER', 0)))
             return round(max(m.R1 * base, 1.0), 5)
-    
+
+
 def get_climates(row) -> str:
     # 1. Define the Mapping (Excel Text -> NML Variable)
     region_map = {
@@ -164,7 +166,7 @@ def get_climates(row) -> str:
     # These reference the basic variables defined above
     ALL_EUROPE = f"({region_map['NORTHERN_EUROPE']} || {region_map['EASTERN_EUROPE']} || {region_map['SOUTHERN_EUROPE']} || {region_map['WESTERN_EUROPE']})"
     ALL_AMERICA = f"({region_map['NORTH_AMERICA']} || {region_map['SOUTH_AMERICA']})"
-    
+
     region_map.update({
         "ALL_EUROPE": ALL_EUROPE,
         "ALL_AMERICA": ALL_AMERICA,
@@ -178,7 +180,8 @@ def get_climates(row) -> str:
     # Adjust column names if they differ in your master_df
     r1_raw = str(row.get('REGION1', 'NO_REGION')).strip()
     r2_raw = str(row.get('REGION2', 'NO_REGION')).strip()
-    c_raw = str(row.get('REGION3', 'NO_CONCEPT')).strip() # Assuming CONCEPT is in Region3 column
+    # Assuming CONCEPT is in Region3 column
+    c_raw = str(row.get('REGION3', 'NO_CONCEPT')).strip()
 
     # 4. Perform the "Magic" Lookup
     # .get(key, default) ensures that if Excel has a typo, it defaults to NO_REGION/NO_CONCEPT
@@ -189,16 +192,17 @@ def get_climates(row) -> str:
     # 5. Build the final string
     return f"climates_available: (({region1} || {region2}) && {concept}) ? ALL_CLIMATES : NO_CLIMATE;"
 
+
 def get_cargo_definitions(row) -> str:
     """
     Translates the CARGODEF column into full NML cargo property strings.
     This replaces the need for an external cargorefits.pnml file.
     """
-    
+
     # Define common reusable lists to keep the dictionary clean
     PASS_MAIL_VAL = "CC_PASSENGERS, CC_MAIL, CC_ARMOURED"
     EXPRESS_REF = "CC_PIECE_GOODS, CC_EXPRESS, CC_REFRIGERATED"
-    
+
     NO_NONREFITTABLE = "non_refittable_cargo_classes: 0;"
 
     # Standard cargo list used in your DMU example
@@ -219,106 +223,107 @@ def get_cargo_definitions(row) -> str:
             f"cargo_allow_refit: [{STANDARD_ALLOW}];"
             f"cargo_disallow_refit: [{STANDARD_DISALLOW}];"
         ),
-        
-        #Metro does not allow it
-        "PASSENGERS_ONLY" : (
+
+        # Metro does not allow it
+        "PASSENGERS_ONLY": (
             f"refittable_cargo_classes: bitmask(CC_PASSENGERS);"
             f"{NO_NONREFITTABLE}"
         ),
-        "MAIL_ONLY" : (
+        "MAIL_ONLY": (
             f"refittable_cargo_classes: bitmask(CC_MAIL);"
             f"{NO_NONREFITTABLE}"
         ),
-        "GOODS_RAILBUS" : (
+        "GOODS_RAILBUS": (
             f"refittable_cargo_classes: bitmask({EXPRESS_REF});"
-            f"{NO_NONREFITTABLE}" 
+            f"{NO_NONREFITTABLE}"
             "cargo_allow_refit:[MAIL, GOOD, VALU, GOLD, DIAM];"
             "cargo_disallow_refit: [PASS, TOUR, COAL, OIL_, LVST, GRAI, WOOD, IORE, STEL, PAPR, WHEA, FOOD, RUBR, FRUT, MAIZ, CORE, WATR, SUGR, TOYS, BATT, SWET, TOFF, COLA, CTCD, BUBL, PLST, FZDR, AORE, BEER, BDMT, BRCK, CERA, CERE, CLAY, CMNT, COPR, DYES, ENSP, FERT, FICR, FISH, FMSP, GLAS, GRVL, JAVA, LIME, MILK, MNSP, OLSD, PETR, PLAS, POTA, RCYC, RFPR, SAND, SCMT, SGBT, SGCN, SULP, VEHI, VPTS, WDPR, WOOL, URAN, YETI, YETY];"
-            ),
-        "FLAT_WAGON" : (
+        ),
+        "FLAT_WAGON": (
             f"refittable_cargo_classes: bitmask(CC_PIECE_GOODS);"
             "non_refittable_cargo_classes: bitmask(CC_OVERSIZED);"
             "cargo_allow_refit: [GOOD, WOOD, STEL, TOYS, BATT, SWET, BUBL, FZDR, BDMT, BRCK, CERA, COPR, ENSP, FICR, FMSP, JAVA, MNSP, VPTS, WDPR, YETI, YETY];"
             "cargo_disallow_refit: [PASS, MAIL, TOUR, COAL, OIL_, LVST, GRAI, IORE, VALU, PAPR, WHEA, FOOD, GOLD, RUBR, FRUT, MAIZ, CORE, WATR, DIAM, SUGR, TOFF, COLA, CTCD, PLST, AORE, BEER, CERE, CLAY, CMNT, DYES, FERT, FISH, GLAS, GRVL, LIME, MILK, OLSD, PETR, PLAS, POTA, RCYC, RFPR, SAND, SCMT, SGBT, SGCN, SULP, VEHI, WOOL, URAN];"
-            ),
-        "HEAVYFLAT" : (
+        ),
+        "HEAVYFLAT": (
             f"refittable_cargo_classes: bitmask(CC_PIECE_GOODS, CC_OVERSIZED);"
-            f"{NO_NONREFITTABLE}" 
+            f"{NO_NONREFITTABLE}"
             "cargo_allow_refit: [GOOD, STEL, TOYS, BATT, SWET, BUBL, FZDR, BDMT, BRCK, CERA, COPR, ENSP, FMSP, GLAS, JAVA, MNSP, VEHI, VPTS, YETI, YETY];"
             "cargo_disallow_refit: [PASS, MAIL, TOUR, COAL, OIL_, LVST, GRAI, WOOD, IORE, VALU, PAPR, WHEA, FOOD, GOLD, RUBR, FRUT, MAIZ, CORE, WATR, DIAM, SUGR, TOFF, COLA, CTCD, PLST, AORE, BEER, CERE, CLAY, CMNT, DYES, FERT, FICR, FISH, GRVL, LIME, MILK, OLSD, PETR, PLAS, POTA, RCYC, RFPR, SAND, SCMT, SGBT, SGCN, SULP, WDPR, WOOL, URAN];"
         ),
-        "SUPERHEAVY" : (
+        "SUPERHEAVY": (
             f"refittable_cargo_classes: bitmask(CC_PIECE_GOODS, CC_OVERSIZED);"
             f"{NO_NONREFITTABLE}"
             "cargo_allow_refit: [GOOD, VEHI];"
             "cargo_disallow_refit: [PASS, MAIL, TOUR, COAL, OIL_, LVST, GRAI, WOOD, IORE, STEL, VALU, PAPR, WHEA, FOOD, GOLD, RUBR, FRUT, MAIZ, CORE, WATR, DIAM, SUGR, TOYS, BATT, SWET, TOFF, COLA, CTCD, BUBL, PLST, FZDR, AORE, BEER, BDMT, BRCK, CERA, CERE, CLAY, CMNT, COPR, DYES, ENSP, FERT, FICR, FISH, FMSP, GLAS, GRVL, JAVA, LIME, MILK, MNSP, OLSD, PETR, PLAS, POTA, RCYC, RFPR, SAND, SCMT, SGBT, SGCN, SULP, VPTS, WDPR, WOOL, URAN, YETI, YETY];"
         ),
-        "BOXCAR" : (
+        "BOXCAR": (
             f"refittable_cargo_classes: bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_ARMOURED);"
-            f"{NO_NONREFITTABLE}" 
+            f"{NO_NONREFITTABLE}"
             "cargo_allow_refit: [LVST, GOOD, GRAI, VALU, PAPR, WHEA, FOOD, GOLD, FRUT, MAIZ, DIAM, SUGR, TOYS, BATT, SWET, BUBL, FZDR, BEER, BDMT, BRCK, CERA, CERE, COPR, ENSP, FERT, FISH, FMSP, GLAS, JAVA, MNSP, OLSD, POTA, RCYC, SGBT, SGCN, SULP, VEHI, VPTS, WOOL, URAN];"
             "cargo_disallow_refit: [PASS, MAIL, TOUR, COAL, OIL_, WOOD, IORE, STEL, RUBR, CORE, WATR, TOFF, COLA, CTCD, PLST, AORE, CLAY, CMNT, DYES, FICR, GRVL, LIME, MILK, PETR, PLAS, RFPR, SAND, SCMT, WDPR, YETI, YETY];"
         ),
-        "TANKER" : (
+        "TANKER": (
             f"refittable_cargo_classes: bitmask(CC_LIQUID);"
-            f"{NO_NONREFITTABLE}" 
+            f"{NO_NONREFITTABLE}"
             "cargo_allow_refit: [OIL_, GOOD, RUBR, WATR, COLA, PLST, BEER, DYES, MILK, PETR, PLAS, RFPR];"
             "cargo_disallow_refit: [PASS, MAIL, TOUR, COAL, LVST, GRAI, WOOD, IORE, STEL, VALU, PAPR, WHEA, FOOD, GOLD, FRUT, MAIZ, CORE, DIAM, SUGR, TOYS, BATT, SWET, TOFF, CTCD, BUBL, FZDR, AORE, BDMT, BRCK, CERA, CERE, CLAY, CMNT, COPR, ENSP, FERT, FICR, FISH, FMSP, GLAS, GRVL, JAVA, LIME, MNSP, OLSD, POTA, RCYC, SAND, SCMT, SGBT, SGCN, SULP, VEHI, VPTS, WDPR, WOOL, URAN, YETI, YETY];"
         ),
-        "OPEN_WAGON" : (
+        "OPEN_WAGON": (
             f"refittable_cargo_classes: bitmask(CC_BULK);"
-            f"{NO_NONREFITTABLE}" 
+            f"{NO_NONREFITTABLE}"
             "cargo_allow_refit: [COAL, GRAI, WOOD, IORE, WHEA, FRUT, MAIZ, CORE, SUGR, TOFF, CTCD, BUBL, AORE, CERE, CLAY, CMNT, GRVL, LIME, OLSD, POTA, SAND, SCMT];"
             "cargo_disallow_refit: [PASS, MAIL, TOUR, OIL_, LVST, GOOD, STEL, VALU, PAPR, FOOD, GOLD, RUBR, WATR, DIAM, TOYS, BATT, SWET, COLA, PLST, FZDR, BEER, BDMT, BRCK, CERA, COPR, DYES, ENSP, FERT, FICR, FISH, FMSP, GLAS, JAVA, MILK, MNSP, PETR, PLAS, RCYC, RFPR, SGBT, SGCN, SULP, VEHI, VPTS, WDPR, WOOL, URAN, YETI, YETY];"
         ),
-        "GONDOLA" : (
+        "GONDOLA": (
             f"refittable_cargo_classes: bitmask(CC_BULK);"
-            f"{NO_NONREFITTABLE}" 
+            f"{NO_NONREFITTABLE}"
             "cargo_allow_refit: [COAL, GRAI, WOOD, IORE, WHEA, MAIZ, CORE, SUGR, TOFF, CTCD, AORE, CERE, CLAY, CMNT, GRVL, LIME, POTA, SAND, SCMT, WDPR];"
             "cargo_disallow_refit: [PASS, MAIL, TOUR, OIL_, LVST, GOOD, STEL, VALU, PAPR, FOOD, GOLD, RUBR, FRUT, WATR, DIAM, TOYS, BATT, SWET, COLA, BUBL, PLST, FZDR, BEER, BDMT, BRCK, CERA, COPR, DYES, ENSP, FERT, FICR, FISH, FMSP, GLAS, JAVA, MILK, MNSP, OLSD, PETR, PLAS, RCYC, RFPR, SGBT, SGCN, SULP, VEHI, VPTS, WOOL, URAN, YETI, YETY];"
         ),
-        "SILO" : (
+        "SILO": (
             f"refittable_cargo_classes: bitmask(CC_POWDERIZED);"
-            f"{NO_NONREFITTABLE}" 
+            f"{NO_NONREFITTABLE}"
             "cargo_allow_refit: [GRAI, WHEA, MAIZ, SUGR, CERE, OLSD, POTA, SULP, URAN];"
             "cargo_disallow_refit: [PASS, MAIL, TOUR, COAL, OIL_, LVST, GOOD, WOOD, IORE, STEL, VALU, PAPR, FOOD, GOLD, RUBR, FRUT, CORE, WATR, DIAM, TOYS, BATT, SWET, TOFF, COLA, CTCD, BUBL, PLST, FZDR, AORE, BEER, BDMT, BRCK, CERA, CLAY, CMNT, COPR, DYES, ENSP, FERT, FICR, FISH, FMSP, GLAS, GRVL, JAVA, LIME, MILK, MNSP, PETR, PLAS, RCYC, RFPR, SAND, SCMT, SGBT, SGCN, VEHI, VPTS, WDPR, WOOL, YETI, YETY];"
         ),
-        "HOPPER" : (
+        "HOPPER": (
             f"refittable_cargo_classes: bitmask(CC_BULK);"
             "non_refittable_cargo_classes: bitmask(CC_NON_POURABLE);"
             "cargo_allow_refit: [COAL, IORE, CORE, AORE, CLAY, CMNT, GRVL, LIME, SAND, SGBT];"
             "cargo_disallow_refit: [PASS, MAIL, TOUR, OIL_, LVST, GOOD, GRAI, WOOD, STEL, VALU, PAPR, WHEA, FOOD, GOLD, RUBR, FRUT, MAIZ, WATR, DIAM, SUGR, TOYS, BATT, SWET, TOFF, COLA, CTCD, BUBL, PLST, FZDR, BEER, BDMT, BRCK, CERA, CERE, COPR, DYES, ENSP, FERT, FICR, FISH, FMSP, GLAS, JAVA, MILK, MNSP, OLSD, PETR, PLAS, POTA, RCYC, RFPR, SCMT, SGCN, SULP, VEHI, VPTS, WDPR, WOOL, URAN, YETI, YETY];"
         ),
-        "CARTRANSPORTER" : (
+        "CARTRANSPORTER": (
             f"refittable_cargo_classes: bitmask(CC_PIECE_GOODS, CC_OVERSIZED);"
             f"{NO_NONREFITTABLE}"
             "cargo_allow_refit: [GOOD, VEHI];"
             "cargo_disallow_refit: [PASS, MAIL, TOUR, COAL, OIL_, LVST, GRAI, WOOD, IORE, STEL, VALU, PAPR, WHEA, FOOD, GOLD, RUBR, FRUT, MAIZ, CORE, WATR, DIAM, SUGR, TOYS, BATT, SWET, TOFF, COLA, CTCD, BUBL, PLST, FZDR, AORE, BEER, BDMT, BRCK, CERA, CERE, CLAY, CMNT, COPR, DYES, ENSP, FERT, FICR, FISH, FMSP, GLAS, GRVL, JAVA, LIME, MILK, MNSP, OLSD, PETR, PLAS, POTA, RCYC, RFPR, SAND, SCMT, SGBT, SGCN, SULP, VPTS, WDPR, WOOL, URAN, YETI, YETY];"
         ),
-        "CONTAINER" : (
+        "CONTAINER": (
             f"refittable_cargo_classes: bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_REFRIGERATED);"
-            f"{NO_NONREFITTABLE}" 
+            f"{NO_NONREFITTABLE}"
             f"cargo_allow_refit: [{STANDARD_ALLOW}];"
             f"cargo_disallow_refit: [{STANDARD_DISALLOW}];"
         ),
-        "CENTERBEAM" : (
+        "CENTERBEAM": (
             f"refittable_cargo_classes: bitmask(CC_PIECE_GOODS, CC_EXPRESS);"
-            f"{NO_NONREFITTABLE}" 
+            f"{NO_NONREFITTABLE}"
             "cargo_allow_refit: [GOOD, STEL, PAPR, TOYS, BATT, SWET, BUBL, FZDR, BDMT, BRCK, CERA, COPR, ENSP, FERT, FMSP, GLAS, JAVA, MNSP, RCYC, VPTS, WDPR, WOOL, URAN];"
             "cargo_disallow_refit: [PASS, MAIL, TOUR, COAL, OIL_, LVST, GRAI, WOOD, IORE, VALU, WHEA, FOOD, GOLD, RUBR, FRUT, MAIZ, CORE, WATR, DIAM, SUGR, TOFF, COLA, CTCD, PLST, AORE, BEER, CERE, CLAY, CMNT, DYES, FICR, FISH, GRVL, LIME, MILK, OLSD, PETR, PLAS, POTA, RFPR, SAND, SCMT, SGBT, SGCN, SULP, VEHI, YETI, YETY];"
         ),
-        "DOUBLECONTAINER" : (
+        "DOUBLECONTAINER": (
             f"refittable_cargo_classes: bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_REFRIGERATED);"
-            f"{NO_NONREFITTABLE}" 
+            f"{NO_NONREFITTABLE}"
             "cargo_allow_refit: [GOOD, PAPR, FOOD, FRUT, TOYS, BATT, SWET, BUBL, FZDR, BDMT, BRCK, CERA, CERE, COPR, ENSP, FERT, FICR, FISH, FMSP, GLAS, JAVA, MNSP, RCYC, VPTS, WDPR, WOOL, URAN];"
             "cargo_disallow_refit: [PASS, MAIL, TOUR, COAL, OIL_, LVST, GRAI, WOOD, IORE, STEL, VALU, WHEA, GOLD, RUBR, MAIZ, CORE, WATR, DIAM, SUGR, TOFF, COLA, CTCD, PLST, AORE, BEER, CLAY, CMNT, DYES, GRVL, LIME, MILK, OLSD, PETR, PLAS, POTA, RFPR, SAND, SCMT, SGBT, SGCN, SULP, VEHI, YETI, YETY];"
-            )
+        )
     }
 
     raw_val = str(row.get('CARGODEF', 'NONE')).strip().upper()
-    
+
     # Return the mapped string, or a fallback if the category is missing
     return cargo_map.get(raw_val, cargo_map["NONE"])
+
 
 def parse_cargo_definitions(pnml_path):
     """
@@ -331,7 +336,8 @@ def parse_cargo_definitions(pnml_path):
         return cargo_dict
 
     # Regex captures the macro name and the entire body until the next #define or EOF
-    pattern = re.compile(r'#define\s+(CARGODEF_[A-Z0-9_]+)\s+(.*?)(?=\s*#define|$)', re.DOTALL)
+    pattern = re.compile(
+        r'#define\s+(CARGODEF_[A-Z0-9_]+)\s+(.*?)(?=\s*#define|$)', re.DOTALL)
 
     with open(pnml_path, 'r', encoding='utf-8') as f:
         content = f.read()
@@ -343,36 +349,39 @@ def parse_cargo_definitions(pnml_path):
         for name, body in matches:
             # Clean up whitespace/newlines within the definition body
             cargo_dict[name.strip()] = " ".join(body.split())
-            
+
     return cargo_dict
+
 
 def get_expanded_engine_capacity_switch(row) -> str:
     # We use \\ to produce a single literal \ in the output
     # We use {{ }} to produce literal { } in the NML code
     cap = row['HEAD_CAPACITY']
-    vehid = row['VEHIDCODE']
-    
+    vehid_lcase = row['VEHIDCODE'].lower()
+
     return f"""
-    switch(FEAT_TRAINS, SELF, switch_{vehid}_capacity_engine, cargo_classes) {{ \\
+    switch(FEAT_TRAINS, SELF, switch_{vehid_lcase}_capacity_engine, cargo_classes) {{ \\
         bitmask(CC_MAIL): {cap}/2; \\
         bitmask(CC_ARMOURED): {cap}/4; \\
         {cap}; \\
     }}\n\n"""
 
+
 def get_expanded_wagon_capacity_switch(row) -> str:
     # We use \\ to produce a single literal \ in the output
     # We use {{ }} to produce literal { } in the NML code
     cap = row['WAGON_CAPACITY']
-    vehid = row['VEHIDCODE']
-    
+    vehid_lcase = row['VEHIDCODE'].lower()
+
     return f"""
-    switch(FEAT_TRAINS, SELF, switch_{vehid}_capacity_wagon, cargo_classes) {{ \\
+    switch(FEAT_TRAINS, SELF, switch_{vehid_lcase}_capacity_wagon, cargo_classes) {{ \\
         bitmask(CC_MAIL): {cap}/2; \\
         bitmask(CC_ARMOURED): {cap}/4; \\
         {cap}; \\
     }}\n\n"""
 
 # --- Main Generation Function ---
+
 
 def generate_unified_items():
     print("--- Starting Unified Item Generation ---")
@@ -382,90 +391,173 @@ def generate_unified_items():
 
     # 1. Load Data
     df_master, df_cost_lookup, copyright_text = load_master_data(excel_path)
-    
+
     for _, row in df_master.iterrows():
-        if pd.isna(row['VEHIDCODE']): continue
-        VEHIDCODE = row['VEHIDCODE']
-        
+        if pd.isna(row['VEHIDCODE']):
+            continue
+        VEHIDCODE_lcase = row['VEHIDCODE'].lower()
+        TEMPLATE_ID = row['TEMPLATE_ID']
+        TEMPLATE_AMENDMENT_CODE = row['TEMPLATE_AMENDMENT_CODE']
+
+        TEMPLATE_ID_FULL = f"{TEMPLATE_ID}{TEMPLATE_AMENDMENT_CODE}"
+
         # Fetch Multipliers
         category = str(row['COST_CAT']).strip()
         m = df_cost_lookup.loc[category]
-        
+
         # Calculate Costs for main item
         p_cost = calculate_nml_cost(row, m, is_running_cost=False)
         r_cost = calculate_nml_cost(row, m, is_running_cost=True)
 
-
         # 2. Tracks Logic
-        tracks = [col.replace('TRACK_TYPE_', '') for col in df_master.columns 
+        tracks = [col.replace('TRACK_TYPE_', '') for col in df_master.columns
                   if col.startswith('TRACK_TYPE_') and (is_true(row[col]))]
         track_logic = f"[{', '.join(tracks)}]"
 
         # 3. Logic: Misc Flags
-        flags = [col.replace('MISC_FLAGS_', '') for col in df_master.columns 
+        flags = [col.replace('MISC_FLAGS_', '') for col in df_master.columns
                  if col.startswith('MISC_FLAGS_') and (is_true(row[col]))]
         misc_logic = f"bitmask({', '.join(flags)})"
-        v1 = f"VISUAL_EFFECT_{row['VISUAL_EFFECT_1']}" if str(row['VISUAL_EFFECT_1']) != "0" else "0"
+        v1 = f"VISUAL_EFFECT_{row['VISUAL_EFFECT_1']}" if str(
+            row['VISUAL_EFFECT_1']) != "0" else "0"
 
         # Loading Speed
         ls_val = int(row['LOADINGSPEED_VALUE'])
         ls_logic = f"isUltraSpeed ? 255 : (param_loadingspeed == 0) ? {ls_val}/2 : (param_loadingspeed == 2) ? {ls_val}*2 : {ls_val}"
 
-        purchase_cargo_capacity = row['PURCHASE_CARGO_CAPACITY'] if is_number(row['PURCHASE_CARGO_CAPACITY']) else None
-        
+        purchase_cargo_capacity = row['PURCHASE_CARGO_CAPACITY'] if is_number(
+            row['PURCHASE_CARGO_CAPACITY']) else None
+
         # Separate from the further below because this is for powered/unpowered livery overrides only
-        graphics_switch_visual_effect_and_powered_position = f"visual_effect_and_powered: switch_{VEHIDCODE}_visual_effect_and_powered_position;" if is_true(row['GRAPHICS_HAS_visual_effect_and_powered_position']) else None
-        
+        graphics_switch_visual_effect_and_powered_position = f"visual_effect_and_powered: switch_{VEHIDCODE_lcase}_visual_effect_and_powered_position;" if TEMPLATE_ID_FULL in [
+            'TPL_02D'] else None
+
         # Ie "below" is this...
         if graphics_switch_visual_effect_and_powered_position:
             graphics_switch_visual_effect_and_powered = "// no 'visual_effect_and_powered' becuase while it does exist, _visual_effect_and_powered_position is set for livery overrides"
-        elif is_true(row['GRAPHICS_HAS_visual_effect']) and not is_true(row['GRAPHICS_HAS_visual_effect_and_powered']):
-            graphics_switch_visual_effect_and_powered = f"visual_effect_and_powered: switch_{VEHIDCODE}_visual_effect;"
-        elif is_true(row['GRAPHICS_HAS_visual_effect_and_powered']):
-            graphics_switch_visual_effect_and_powered = f"visual_effect_and_powered: switch_{VEHIDCODE}_visual_effect_and_powered;"
+        elif TEMPLATE_ID_FULL in [
+            'TPL_03A',
+            'TPL_03D',
+            'TPL_16A',
+            'TPL_17A',
+            'TPL_17B',
+            'TPL_17C',
+            'TPL_17D',
+            'TPL_17E',
+            'TPL_32A',
+            'TPL_32B',
+            'TPL_32C',
+        ] and TEMPLATE_ID_FULL not in [
+            'TPL_02A',
+            'TPL_02D',
+            'TPL_02E',
+            'TPL_02F',
+            'TPL_42A',
+        ]:
+            graphics_switch_visual_effect_and_powered = f"visual_effect_and_powered: switch_{VEHIDCODE_lcase}_visual_effect;"
+        elif TEMPLATE_ID_FULL in [
+            'TPL_02A',
+            'TPL_02D',
+            'TPL_02E',
+            'TPL_02F',
+            'TPL_42A',
+        ]:
+            graphics_switch_visual_effect_and_powered = f"visual_effect_and_powered: switch_{VEHIDCODE_lcase}_visual_effect_and_powered;"
         else:
             graphics_switch_visual_effect_and_powered = "// no 'visual_effect' or 'visual_effect_and_powered'"
 
+        graphics_switch_articulated_part = f"articulated_part: switch_{VEHIDCODE_lcase}_articulated;" if TEMPLATE_ID_FULL in [
+            'TPL_03A',
+            'TPL_03D',
+            'TPL_16A',
+            'TPL_16A',
+            'TPL_16B',
+            'TPL_17A',
+            'TPL_17C',
+            'TPL_17D',
+            'TPL_17E',
+            'TPL_25A',
+            'TPL_32A',
+            'TPL_32B',
+            'TPL_32C',
+        ] else "// no 'articulated_part'"
+        graphics_switch_length = f"length: switch_{VEHIDCODE_lcase}_length;" if TEMPLATE_ID_FULL in [
+            'TPL_03A',
+            'TPL_03D',
+            'TPL_16A',
+            'TPL_16B',
+            'TPL_17C',
+            'TPL_17D',
+            'TPL_17E',
+            'TPL_32A',
+            'TPL_32B',
+            'TPL_32C',
 
-        graphics_switch_articulated_part = f"articulated_part: switch_{VEHIDCODE}_articulated;" if is_true(row['GRAPHICS_HAS_articulated']) else "// no 'articulated_part'"   
-        graphics_switch_length = f"length: switch_{VEHIDCODE}_length;" if is_true(row['GRAPHICS_HAS_length']) else "// no 'length'"
-        
+        ] else "// no 'length'"
+
         # These are for livery overrides
         # Actually I think we only care about middle and cargo -> basically it's to say that if there is something between the two ends
         # ... then it should look like xy so even though 1 and only 1 item has front/back, it's never been called even in legacy code.
-        # Also no ending ";" for these on purpose. 
-        graphics_switch_front_livery = f"switch_{VEHIDCODE}_front_livery" if is_true(row['GRAPHICS_HAS_front_livery']) else None
-        graphics_switch_middle_livery = f"switch_{VEHIDCODE}_middle_livery" if is_true(row['GRAPHICS_HAS_middle_livery']) else None
-        graphics_switch_back_livery = f"switch_{VEHIDCODE}_back_livery" if is_true(row['GRAPHICS_HAS_back_livery']) else None
-        graphics_switch_cargo_selection = f"switch_{VEHIDCODE}_cargo_selection" if is_true(row['GRAPHICS_HAS_cargo_selection']) else None
+        # Also no ending ";" for these on purpose.
+        graphics_switch_front_livery = f"switch_{VEHIDCODE_lcase}_front_livery" if TEMPLATE_ID_FULL in [
+            'TPL_42A'] else None
+        graphics_switch_middle_livery = f"switch_{VEHIDCODE_lcase}_middle_livery" if TEMPLATE_ID_FULL in [
+            'TPL_25A', 'TPL_42A'] else None
+        graphics_switch_back_livery = f"switch_{VEHIDCODE_lcase}_back_livery" if TEMPLATE_ID_FULL in [
+            'TPL_42A'] else None
+        graphics_switch_cargo_selection = f"switch_{VEHIDCODE_lcase}_cargo_selection" if TEMPLATE_ID_FULL in [
+            'TPL_02A',
+            'TPL_02D',
+            'TPL_02E',
+            'TPL_02F',
+            'TPL_02F',
+            'TPL_04C',
+            'TPL_04E',
+            'TPL_04F',
+            'TPL_04G',
+            'TPL_04H',
+            'TPL_04I',
+            'TPL_04J',
+            'TPL_04K',
+            'TPL_04L',
+            'TPL_04M',
+            'TPL_04N',
+            'TPL_04O',
+            'TPL_04P',
+            'TPL_04Q',
+        ] else None
 
         # This middle is not the middle above...[we ignore the 3-4 'steam' types that also actually have this because in legacy code i checked and it's not being applied.]
-        graphics_spriteset_middle = f"spriteset_{VEHIDCODE}_middle" if is_true(category == 'METRO') and not is_true(row['IS_WAGON_OR_COACH']) else None
+        graphics_spriteset_middle = f"spriteset_{VEHIDCODE_lcase}_middle" if is_true(
+            category == 'METRO') and not is_true(row['IS_WAGON_OR_COACH']) else None
 
-        graphics_switch_can_attach = f"can_attach_wagon: switch_can_attach_vehicle;" if not is_true(row['IS_WAGON_OR_COACH']) else "// no 'can_attach'"
-        
+        graphics_switch_can_attach = f"can_attach_wagon: switch_can_attach_vehicle;" if not is_true(
+            row['IS_WAGON_OR_COACH']) else "// no 'can_attach'"
+
         content = []
         content.append(f"\n{copyright_text}\n\n")
-        # We need to port some of the random crap from _graphics here else it won't work because we are no longer defining HEAD_CAPACITY as a generic thing. 
+        content.append(f"\n// Template: {TEMPLATE_ID_FULL}\n\n")
+        # We need to port some of the random crap from _graphics here else it won't work because we are no longer defining HEAD_CAPACITY as a generic thing.
         if (category in ['DMU', 'EMU', 'WAGON', 'MAGLEVMU'] and row['VEHID_ID_CATEGORY'] != 'ID_RANGE_CARGODMU') or category.endswith('RAILBUS'):
             content.append("// Cargo capacity" + "\n")
             content.append(get_expanded_engine_capacity_switch(row))
             content.append(get_expanded_wagon_capacity_switch(row))
 
         # I've wholly failed to figure out why these two are special in a logical way so i'm just hardcoding them
-        if VEHIDCODE in ['rbd_Germany_Saxon_DET_1_2', 'rbs_South_Africa_CSAR_Railmotor']:
-            content.append(f"""switch(FEAT_TRAINS, SELF, switch_{VEHIDCODE}_capacity_position, position_in_vehid_chain % 2) {{
-                0: switch_{VEHIDCODE}_capacity_engine;
+        if VEHIDCODE_lcase in ['rbd_germany_saxon_det_1_2', 'rbs_south_africa_csar_railmotor']:
+            content.append(f"""switch(FEAT_TRAINS, SELF, switch_{VEHIDCODE_lcase}_capacity_position, position_in_vehid_chain % 2) {{
+                0: switch_{VEHIDCODE_lcase}_capacity_engine;
                 0;
             }}\n\n""")
-        
 
-        content.append(f"item(FEAT_TRAINS, {row['ITEM']}) {{\n")
+        content.append(f"item(FEAT_TRAINS, {row['ITEM'].lower()}) {{\n")
         content.append("    property {\n")
-        content.append(f"        name: string({row['NAME']});\n")
+        content.append(f"        name: string({row['NAME'].lower()});\n")
         content.append(f"        {get_climates(row)}\n")
-        content.append(f"        introduction_date: date({int(row['INTRODUCTION_YEAR'])},1,1);\n")
-        content.append(f"        model_life: {"VEHICLE_NEVER_EXPIRES" if row['MODEL_LIFE'] == "VEHICLE_NEVER_EXPIRES" else int(row['MODEL_LIFE'])};\n")
+        content.append(
+            f"        introduction_date: date({int(row['INTRODUCTION_YEAR'])},1,1);\n")
+        content.append(
+            f"        model_life: {"VEHICLE_NEVER_EXPIRES" if row['MODEL_LIFE'] == "VEHICLE_NEVER_EXPIRES" else int(row['MODEL_LIFE'])};\n")
         content.append(f"        vehicle_life: {int(row['VEHICLE_LIFE'])};\n")
         content.append(f"        retire_early: {int(row['RETIRE_EARLY'])};\n")
         content.append(f"        loading_speed: {ls_logic};\n")
@@ -473,131 +565,229 @@ def generate_unified_items():
         content.append(f"        running_cost_factor: {r_cost};\n")
         content.append(f"        speed: {int(row['SPEED'])} km/h;\n")
         content.append(f"        power: {int(row['POWER'])} hp;\n")
-        content.append(f"        cargo_capacity: {int(row['HEAD_CAPACITY'])};\n")
+        content.append(
+            f"        cargo_capacity: {int(row['HEAD_CAPACITY'])};\n")
         content.append(f"        weight: {int(row['WEIGHT'])} ton;\n")
-        content.append(f"        tractive_effort_coefficient: {row['TE_COEFFICIENT']};\n")
-        content.append(f"        air_drag_coefficient: {int(row['AIR_DRAG_COEFFICIENT'])};\n\n")
-        content.append(f"        reliability_decay: {row['RELIABILITY_DECAY']};\n")
+        content.append(
+            f"        tractive_effort_coefficient: {row['TE_COEFFICIENT']};\n")
+        content.append(
+            f"        air_drag_coefficient: {int(row['AIR_DRAG_COEFFICIENT'])};\n\n")
+        content.append(
+            f"        reliability_decay: {row['RELIABILITY_DECAY']};\n")
         content.append(f"        {get_cargo_definitions(row)}\n")
-        content.append(f"        cargo_age_period: {row['CARGO_AGE_PERIOD']};\n")
+        content.append(
+            f"        cargo_age_period: {row['CARGO_AGE_PERIOD']};\n")
         content.append(f"        misc_flags: {misc_logic};\n")
         content.append(f"        refit_cost: {row['REFIT_COST']};\n")
-        content.append(f"        ai_special_flag: {"AI_FLAG_PASSENGER" if is_true(row['PASSENGER']) else "AI_FLAG_CARGO"};\n")
+        content.append(
+            f"        ai_special_flag: {"AI_FLAG_PASSENGER" if is_true(row['PASSENGER']) else "AI_FLAG_CARGO"};\n")
         content.append(f"        track_type: {track_logic};\n")
-        content.append(f"        running_cost_base: {row['RUNNING_COST_BASE']};\n")
-        content.append(f"        engine_class: {'ENGINE_CLASS_' + row['ENGINE_CLASS']};\n")
-        content.append(f"        visual_effect_and_powered: visual_effect_and_powered({v1}, {row['VISUAL_EFFECT_2']}, {row['VISUAL_EFFECT_3']});\n\n")
+        content.append(
+            f"        running_cost_base: {row['RUNNING_COST_BASE']};\n")
+        content.append(
+            f"        engine_class: {'ENGINE_CLASS_' + row['ENGINE_CLASS']};\n")
+        content.append(
+            f"        visual_effect_and_powered: visual_effect_and_powered({v1}, {row['VISUAL_EFFECT_2']}, {row['VISUAL_EFFECT_3']});\n\n")
         content.append(f"        sprite_id: {row['SPRITE_ID']};\n")
         content.append(f"        dual_headed: {int(row['DUAL_HEADED'])};\n")
         content.append(f"        length: {int(row['LENGTH'])};\n")
-        content.append(f"        extra_power_per_wagon: {int(row['POWER_PER_WAGON'])};\n")
-        content.append(f"        bitmask_vehicle_info: {row['BITMASK_VEHICLE_INFO']};\n")
+        content.append(
+            f"        extra_power_per_wagon: {int(row['POWER_PER_WAGON'])};\n")
+        content.append(
+            f"        bitmask_vehicle_info: {row['BITMASK_VEHICLE_INFO']};\n")
         content.append("    }\n")
-            
-        
+
         # Graphics selection/overrides
         content.append("    graphics {\n")
         cargo_capacity_defined = False
-        if is_true(row['GRAPHICS_HAS_capacity_position']):
-            content.append(f"        cargo_capacity: switch_{VEHIDCODE}_capacity_position;\n")
+        if TEMPLATE_ID_FULL in ['TPL_32B']:
+            content.append(
+                f"        cargo_capacity: switch_{VEHIDCODE_lcase}_capacity_position;\n")
             cargo_capacity_defined = True
 
-        content.append(f"        purchase: spriteset_{VEHIDCODE}_purchase;\n")
+        content.append(
+            f"        purchase: spriteset_{VEHIDCODE_lcase}_purchase;\n")
         if is_true(row['IS_POWERED_UNPOWERED_SUNDRY']):
-                # FML.
-                purchasetext = "PURCHASETEXT"
-                cargodef = "PASSENGER" if is_true(row['CARGODEF'].startswith('PASSENGER')) else "CARGO"
-                powered_state = "UNPOWERED" if VEHIDCODE.endswith('Unpowered') else "POWERED"
-                content.append(f"        {purchasetext}MUWAGON{cargodef}{powered_state}\n")
+            # FML.
+            purchasetext = "PURCHASETEXT"
+            cargodef = "PASSENGER" if is_true(
+                row['CARGODEF'].startswith('PASSENGER')) else "CARGO"
+            powered_state = "UNPOWERED" if VEHIDCODE_lcase.endswith(
+                'unpowered') else "POWERED"
+            content.append(
+                f"        {purchasetext}MUWAGON{cargodef}{powered_state}\n")
         elif (category in ['DMU', 'EMU', 'WAGON', 'MAGLEVMU'] and row['VEHID_ID_CATEGORY'] != 'ID_RANGE_CARGODMU') or category.endswith('RAILBUS'):
             if not cargo_capacity_defined:
-                content.append(f"        cargo_capacity: switch_{VEHIDCODE}_capacity_engine;\n")
+                content.append(
+                    f"        cargo_capacity: switch_{VEHIDCODE_lcase}_capacity_engine;\n")
         if purchase_cargo_capacity and purchase_cargo_capacity > 0:
-            content.append(f"        purchase_cargo_capacity: {int(purchase_cargo_capacity)};\n")
-        content.append(f"        {graphics_switch_visual_effect_and_powered}\n")
+            content.append(
+                f"        purchase_cargo_capacity: {int(purchase_cargo_capacity)};\n")
+        content.append(
+            f"        {graphics_switch_visual_effect_and_powered}\n")
         content.append(f"        {graphics_switch_length}\n")
         content.append(f"        {graphics_switch_articulated_part}\n")
         content.append(f"        {graphics_switch_can_attach}\n")
-        
+
         if not is_true(row['IS_POWERED_UNPOWERED_SUNDRY']):
             content.append(f"        // Add calls to defined switches below\n")
-            content.append(f"        // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank\n")
-            content.append(f"        // PURCHASETEXT_SWITCH_CALL // this is actually blank\n")
+            content.append(
+                f"        // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank\n")
+            content.append(
+                f"        // PURCHASETEXT_SWITCH_CALL // this is actually blank\n")
             pass
 
-        if is_true(row['GRAPHICS_HAS_position']):
-            content.append(f"        default: switch_{VEHIDCODE}_position;\n")
-        elif is_true(row['GRAPHICS_HAS_animation']):
-            content.append(f"        default: switch_{VEHIDCODE}_animation;\n")
+        if TEMPLATE_ID_FULL in [
+            'TPL_03A',
+            'TPL_03D',
+            'TPL_03F',
+            'TPL_16A',
+            'TPL_16B',
+            'TPL_17A',
+            'TPL_17B',
+            'TPL_17C',
+            'TPL_17D',
+            'TPL_17E',
+            'TPL_32A',
+            'TPL_32B',
+            'TPL_32C',
+        ]:
+            content.append(
+                f"        default: switch_{VEHIDCODE_lcase}_position;\n")
+        elif TEMPLATE_ID_FULL in [
+            'TPL_03A',
+            'TPL_03B',
+            'TPL_03C',
+            'TPL_03E',
+            'TPL_32B',
+            'TPL_32C',
+        ]:
+            content.append(
+                f"        default: switch_{VEHIDCODE_lcase}_animation;\n")
         elif category in ['DIESELENGINE', 'ELECTRICENGINE', 'MAGLEVSU', 'STEAMENGINE'] \
-            or category.endswith('RAILBUS') \
-            or is_true(row['IS_POWERED_UNPOWERED_SUNDRY']):
-                if is_true(row['GRAPHICS_HAS_reversed']):
-                    content.append(f"        default: switch_{VEHIDCODE}_reversed;\n")
-                else:
-                    content.append(f"        default: spriteset_{VEHIDCODE};\n")
+                or category.endswith('RAILBUS') \
+                or is_true(row['IS_POWERED_UNPOWERED_SUNDRY']):
+            if TEMPLATE_ID_FULL in [
+                'TPL_02A',
+                'TPL_02C',
+                'TPL_02D',
+                'TPL_02E',
+                'TPL_02F',
+                'TPL_42A',
+            ]:
+                content.append(
+                    f"        default: switch_{VEHIDCODE_lcase}_reversed;\n")
+            else:
+                content.append(
+                    f"        default: spriteset_{VEHIDCODE_lcase};\n")
         elif category in ['COACH', 'WAGON']:
-            if(is_true(row['GRAPHICS_HAS_cargo_selection'])):
-                content.append(f"        default: switch_{VEHIDCODE}_cargo_selection;\n")
-            elif(is_true(row['GRAPHICS_HAS_standard_livery'])):
+            if TEMPLATE_ID_FULL in [
+                'TPL_02A',
+                'TPL_02D',
+                'TPL_02E',
+                'TPL_02F',
+                'TPL_04C',
+                'TPL_04E',
+                'TPL_04F',
+                'TPL_04G',
+                'TPL_04H',
+                'TPL_04I',
+                'TPL_04J',
+                'TPL_04K',
+                'TPL_04L',
+                'TPL_04M',
+                'TPL_04N',
+                'TPL_04O',
+                'TPL_04P',
+                'TPL_04Q',
+            ]:
+                content.append(
+                    f"        default: switch_{VEHIDCODE_lcase}_cargo_selection;\n")
+            elif TEMPLATE_ID_FULL in [
+                'TPL_04C',
+                'TPL_04D',
+                'TPL_04J',
+                'TPL_04M',
+                'TPL_04P',
+            ]:
                 # Total cluserf.k but box-cars and some tanker-wagons have so-called standard liveries
                 # ....with a capital 'S'!
-                content.append(f"        default: switch_{VEHIDCODE}_Standard_livery;\n") 
-            elif(is_true(row['GRAPHICS_HAS_livery'])):
-                content.append(f"        default: switch_{VEHIDCODE}_livery;\n")
+                content.append(
+                    f"        default: switch_{VEHIDCODE_lcase}_standard_livery;\n")
+            elif TEMPLATE_ID_FULL in [
+                'TPL_02F',
+                'TPL_04A',
+                'TPL_04B',
+                'TPL_04R',
+            ]:
+                content.append(
+                    f"        default: switch_{VEHIDCODE_lcase}_livery;\n")
             else:
                 # I've lost track of this sh.t by now.
-                content.append(f"        default: switch_{VEHIDCODE};\n")
+                content.append(f"        default: switch_{VEHIDCODE_lcase};\n")
         elif category in ['DMU', 'EMU', 'METRO', 'MAGLEVMU']:
-            content.append(f"        default: switch_{VEHIDCODE}_reversed;\n")
+            content.append(
+                f"        default: switch_{VEHIDCODE_lcase}_reversed;\n")
         else:
             pass
         content.append("    }\n")
-        
 
         # Livery Overrides for MUs - but not actual wagons.
         # TBH I have no idea why powered/unpowered wagons are generally classified as *MUs, rather than COACHes/WAGONs but I'll leave it as-is.
-        if (category in ['DMU', 'EMU', 'METRO', 'MAGLEVMU'] and not is_true(row['IS_POWERED_UNPOWERED_SUNDRY'])) :
+        if (category in ['DMU', 'EMU', 'METRO', 'MAGLEVMU'] and not is_true(row['IS_POWERED_UNPOWERED_SUNDRY'])):
 
             # At the moment there's just 1 CARGOxMU..
-            overrideType = "Cargo_" if row['LOADINGSPEED'] == "CARGO" and is_true(row['MISC_FLAGS_TRAIN_FLAG_MU']) else ""
-            
+            overrideType = "cargo_" if row['LOADINGSPEED'] == "CARGO" and is_true(
+                row['MISC_FLAGS_TRAIN_FLAG_MU']) else ""
+
             # Unpowered Wagon
             if category in ['METRO']:
-                content.append(f"    livery_override (item_mtro_Metro_{overrideType}Wagon_Unpowered) {{\n")
+                content.append(
+                    f"    livery_override (item_mtro_metro_{overrideType}wagon_unpowered) {{\n")
             else:
-                content.append(f"    livery_override (item_mu_MU_{overrideType}Wagon_Unpowered) {{\n")
+                content.append(
+                    f"    livery_override (item_mu_mu_{overrideType}wagon_unpowered) {{\n")
             content.append(f"        loading_speed: {ls_logic};\n")
-            content.append(f"        running_cost_factor: int({int(row['SPEED'])}/10);\n")
+            content.append(
+                f"        running_cost_factor: int({int(row['SPEED'])}/10);\n")
             content.append(f"        weight: int({int(row['WEIGHT'])}*1/2);\n")
             if graphics_switch_visual_effect_and_powered_position:
-                content.append(f"        {graphics_switch_visual_effect_and_powered_position}\n")
-            content.append(f"        cargo_capacity: {int(row['WAGON_CAPACITY'])};\n")
+                content.append(
+                    f"        {graphics_switch_visual_effect_and_powered_position}\n")
+            content.append(
+                f"        cargo_capacity: {int(row['WAGON_CAPACITY'])};\n")
             content.append(f"        length: {int(row['WAGON_LENGTH'])};\n")
-            content.append(f"        default: {graphics_switch_middle_livery if graphics_switch_middle_livery 
-                                               else graphics_switch_cargo_selection if graphics_switch_cargo_selection 
+            content.append(f"        default: {graphics_switch_middle_livery if graphics_switch_middle_livery
+                                               else graphics_switch_cargo_selection if graphics_switch_cargo_selection
                                                else graphics_spriteset_middle};\n")
             content.append(f"    }}\n")
 
             # Powered Wagon - Replicating complex RC eval
             p_sqrt = nml_sqrt(row['POWER'])
-            rc_powered = (int(row['SPEED'])/10) + (p_sqrt/10) + (row['TE_COEFFICIENT'] * row['WEIGHT'])
-            
+            rc_powered = (int(row['SPEED'])/10) + (p_sqrt/10) + \
+                (row['TE_COEFFICIENT'] * row['WEIGHT'])
+
             if category in ['METRO']:
-                content.append(f"    livery_override (item_mtro_Metro_{overrideType}Wagon_Powered) {{\n")
+                content.append(
+                    f"    livery_override (item_mtro_metro_{overrideType}wagon_powered) {{\n")
             else:
-                content.append(f"    livery_override (item_mu_MU_{overrideType}Wagon_Powered) {{\n")
+                content.append(
+                    f"    livery_override (item_mu_mu_{overrideType}wagon_powered) {{\n")
             content.append(f"        loading_speed: {ls_logic};\n")
-            content.append(f"        running_cost_factor: (round({rc_powered}));\n")
+            content.append(
+                f"        running_cost_factor: (round({rc_powered}));\n")
             content.append(f"        power: int({int(row['POWER'])}*1/2);\n")
             content.append(f"        weight: int({int(row['WEIGHT'])}*3/4);\n")
             if graphics_switch_visual_effect_and_powered_position:
-                content.append(f"        {graphics_switch_visual_effect_and_powered_position}\n")
-            content.append(f"        cargo_capacity: {int(row['WAGON_CAPACITY'])};\n")
-            content.append(f"        tractive_effort_coefficient: int({row['TE_COEFFICIENT']}*10*{int(row['WEIGHT'])});\n")
+                content.append(
+                    f"        {graphics_switch_visual_effect_and_powered_position}\n")
+            content.append(
+                f"        cargo_capacity: {int(row['WAGON_CAPACITY'])};\n")
+            content.append(
+                f"        tractive_effort_coefficient: int({row['TE_COEFFICIENT']}*10*{int(row['WEIGHT'])});\n")
             content.append(f"        length: {int(row['WAGON_LENGTH'])};\n")
-            content.append(f"        default: {graphics_switch_middle_livery if graphics_switch_middle_livery 
-                                               else graphics_switch_cargo_selection if graphics_switch_cargo_selection 
+            content.append(f"        default: {graphics_switch_middle_livery if graphics_switch_middle_livery
+                                               else graphics_switch_cargo_selection if graphics_switch_cargo_selection
                                                else graphics_spriteset_middle};\n")
             content.append(f"    }}\n")
 
@@ -612,8 +802,10 @@ def generate_unified_items():
 
     # Save as CSV - this takes quite a few seconds.
     print("---- Saving CSV File ----")
-    df_master.to_csv(os.path.join(script_dir, 'vehicle_report.csv'), index=False)
+    df_master.to_csv(os.path.join(
+        script_dir, 'vehicle_report.csv'), index=False)
     print("---- Saving CSV File Complete ----")
+
 
 if __name__ == "__main__":
     generate_unified_items()

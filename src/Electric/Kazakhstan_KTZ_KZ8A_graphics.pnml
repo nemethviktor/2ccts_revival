@@ -1,58 +1,40 @@
-/*
- *  Copyright (C) 2017 Transportman // V. Nemeth 2026
- *  This file is part of the 2cc Trains In NML
- *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
+//  Copyright (C) 2017 Transportman // V. Nemeth 2026+
+//  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
-*/
+// Template: TPL_03D
 
-/*
-* PURCHASE
-*/
+// PURCHASE
+spriteset(spriteset_electric_kazakhstan_ktz_kz8a_purchase, "gfx/electric/kazakhstan_ktz_kz8a.png") {template_purchase(1, 64)}
 
-spriteset(spriteset_electric_Kazakhstan_KTZ_KZ8A_purchase, "gfx/Electric/Kazakhstan_KTZ_KZ8A.png") {
-	template_purchase(1, 64)
+
+// VEHICLE
+/// Engine
+spriteset(spriteset_electric_kazakhstan_ktz_kz8a_engine, "gfx/electric/kazakhstan_ktz_kz8a.png") {template_2cc_engines_general(1, 1)}
+
+
+/// Tender
+spriteset(spriteset_electric_kazakhstan_ktz_kz8a_tender, "gfx/electric/kazakhstan_ktz_kz8a.png") {template_2cc_engines_general(1, 32)}
+
+switch(FEAT_TRAINS, SELF, switch_electric_kazakhstan_ktz_kz8a_position, position_in_vehid_chain % 2) {
+	0: spriteset_electric_kazakhstan_ktz_kz8a_engine;
+	spriteset_electric_kazakhstan_ktz_kz8a_tender;
 }
 
-/*
-* VEHICLE
-*/
-
-//Engine
-spriteset(spriteset_electric_Kazakhstan_KTZ_KZ8A_engine, "gfx/Electric/Kazakhstan_KTZ_KZ8A.png") {
-	template_2cc_engines_general(1, 1)
-}
-
-//Tender
-spriteset(spriteset_electric_Kazakhstan_KTZ_KZ8A_tender, "gfx/Electric/Kazakhstan_KTZ_KZ8A.png") {
-	template_2cc_engines_general(1, 32)
-}
-
-switch(FEAT_TRAINS, SELF, switch_electric_Kazakhstan_KTZ_KZ8A_position, position_in_vehid_chain % 2) {
-	0: spriteset_electric_Kazakhstan_KTZ_KZ8A_engine;
-	spriteset_electric_Kazakhstan_KTZ_KZ8A_tender;
-}
-
-/*
-* Visual effect
-*/
-
-switch(FEAT_TRAINS, SELF, switch_electric_Kazakhstan_KTZ_KZ8A_visual_effect, position_in_vehid_chain % 2) {
+/// Visual Effect
+switch(FEAT_TRAINS, SELF, switch_electric_kazakhstan_ktz_kz8a_visual_effect, position_in_vehid_chain % 2) {
 	0: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, -3, DISABLE_WAGON_POWER);
 	return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }
 
-switch(FEAT_TRAINS, SELF, switch_electric_Kazakhstan_KTZ_KZ8A_length, position_in_vehid_chain % 2) {
-	0: 8;
+/// Length
+switch(FEAT_TRAINS, SELF, switch_electric_kazakhstan_ktz_kz8a_length, position_in_vehid_chain % 2) {
+    0: 8;
 	8;
 }
 
-switch(FEAT_TRAINS, SELF, switch_electric_Kazakhstan_KTZ_KZ8A_articulated, extra_callback_info1) {
-	1: return item_electric_Kazakhstan_KTZ_KZ8A;
+/// Articulated Return
+/// extra_callback_info1 is the index of the part being added.
+switch(FEAT_TRAINS, SELF, switch_electric_kazakhstan_ktz_kz8a_articulated, extra_callback_info1) {
+    1: return item_electric_kazakhstan_ktz_kz8a;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
-
-//Add defined switches
-
-// RUNNINGCOST_ENGINE_SWITCH
-
-// PURCHASETEXT_SWITCH

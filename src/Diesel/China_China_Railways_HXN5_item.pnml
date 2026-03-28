@@ -2,9 +2,12 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
-item(FEAT_TRAINS, item_diesel_China_China_Railways_HXN5) {
+
+// Template: TPL_01A
+
+item(FEAT_TRAINS, item_diesel_china_china_railways_hxn5) {
     property {
-        name: string(str_diesel_China_China_Railways_HXN5);
+        name: string(str_diesel_china_china_railways_hxn5);
         climates_available: ((param_region_asia || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(2008,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
@@ -38,7 +41,7 @@ item(FEAT_TRAINS, item_diesel_China_China_Railways_HXN5) {
         bitmask_vehicle_info: 0;
     }
     graphics {
-        purchase: spriteset_diesel_China_China_Railways_HXN5_purchase;
+        purchase: spriteset_diesel_china_china_railways_hxn5_purchase;
         // no 'visual_effect' or 'visual_effect_and_powered'
         // no 'length'
         // no 'articulated_part'
@@ -46,6 +49,6 @@ item(FEAT_TRAINS, item_diesel_China_China_Railways_HXN5) {
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
         // PURCHASETEXT_SWITCH_CALL // this is actually blank
-        default: spriteset_diesel_China_China_Railways_HXN5;
+        default: spriteset_diesel_china_china_railways_hxn5;
     }
 }

@@ -1,117 +1,90 @@
-/*
- *  Copyright (C) 2017 Transportman // V. Nemeth 2026
- *  This file is part of the 2cc Trains In NML
- *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
+//  Copyright (C) 2017 Transportman // V. Nemeth 2026+
+//  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
-*/
+// Template: TPL_04B
 
-/*
-* PURCHASE
-*/
+// PURCHASE
+spriteset(spriteset_mu_wagon_gen5_car_transporter_purchase, "gfx/wagons/gen5/wagon_gen5_car_transporter_purchase.png") {template_purchase_wagon(1, 1)}
 
-spriteset(spriteset_mu_Wagon_Gen5_Car_Transporter_purchase, "gfx/Wagons/Gen5/Wagon_Gen5_Car_Transporter_Purchase.png") {
-	template_purchase_wagon(1, 1)
+
+// VEHICLE
+
+/// LIVERY 1   LOADING STATE 1
+spriteset(spriteset_mu_wagon_gen5_car_transporter_l1_s1, "gfx/wagons/gen5/wagon_gen5_car_transporter.png") {template_2cc_wagons(1, 1)}
+
+
+/// LIVERY 1   LOADING STATE 2
+spriteset(spriteset_mu_wagon_gen5_car_transporter_l1_s2, "gfx/wagons/gen5/wagon_gen5_car_transporter.png") {template_2cc_wagons(1, 32)}
+
+
+/// LIVERY 1   LOADING STATE 3
+spriteset(spriteset_mu_wagon_gen5_car_transporter_l1_s3, "gfx/wagons/gen5/wagon_gen5_car_transporter.png") {template_2cc_wagons(1, 64)}
+
+
+/// LIVERY 1 SPRITEGROUP
+spritegroup spritegroup_mu_wagon_gen5_car_transporter_l1 {
+    loading: [spriteset_mu_wagon_gen5_car_transporter_l1_s1, spriteset_mu_wagon_gen5_car_transporter_l1_s2, spriteset_mu_wagon_gen5_car_transporter_l1_s3];
+    loaded: [spriteset_mu_wagon_gen5_car_transporter_l1_s1, spriteset_mu_wagon_gen5_car_transporter_l1_s2, spriteset_mu_wagon_gen5_car_transporter_l1_s3];
 }
 
-/*
-* No livery
-*/
+/// LIVERY 2   LOADING STATE 1
+spriteset(spriteset_mu_wagon_gen5_car_transporter_l2_s1, "gfx/wagons/gen5/wagon_gen5_car_transporter.png") {template_2cc_wagons(179, 1)}
 
-//Livery 1 - Loading State 1
-spriteset(spriteset_mu_Wagon_Gen5_Car_Transporter_L1_S1, "gfx/Wagons/Gen5/Wagon_Gen5_Car_Transporter.png") {
-	template_2cc_wagons(1, 1)
+
+/// LIVERY 2   LOADING STATE 2
+spriteset(spriteset_mu_wagon_gen5_car_transporter_l2_s2, "gfx/wagons/gen5/wagon_gen5_car_transporter.png") {template_2cc_wagons(179, 32)}
+
+
+/// LIVERY 2   LOADING STATE 3
+spriteset(spriteset_mu_wagon_gen5_car_transporter_l2_s3, "gfx/wagons/gen5/wagon_gen5_car_transporter.png") {template_2cc_wagons(179, 64)}
+
+
+/// LIVERY 2 SPRITEGROUP
+spritegroup spritegroup_mu_wagon_gen5_car_transporter_l2 {
+    loading: [spriteset_mu_wagon_gen5_car_transporter_l2_s1, spriteset_mu_wagon_gen5_car_transporter_l2_s2, spriteset_mu_wagon_gen5_car_transporter_l2_s3];
+    loaded: [spriteset_mu_wagon_gen5_car_transporter_l2_s1, spriteset_mu_wagon_gen5_car_transporter_l2_s2, spriteset_mu_wagon_gen5_car_transporter_l2_s3];
 }
 
-//Livery 1 - Loading State 2
-spriteset(spriteset_mu_Wagon_Gen5_Car_Transporter_L1_S2, "gfx/Wagons/Gen5/Wagon_Gen5_Car_Transporter.png") {
-	template_2cc_wagons(1, 32)
+/// LIVERY 3   LOADING STATE 1
+spriteset(spriteset_mu_wagon_gen5_car_transporter_l3_s1, "gfx/wagons/gen5/wagon_gen5_car_transporter.png") {template_2cc_wagons(357, 1)}
+
+
+/// LIVERY 3   LOADING STATE 2
+spriteset(spriteset_mu_wagon_gen5_car_transporter_l3_s2, "gfx/wagons/gen5/wagon_gen5_car_transporter.png") {template_2cc_wagons(357, 32)}
+
+
+/// LIVERY 3   LOADING STATE 3
+spriteset(spriteset_mu_wagon_gen5_car_transporter_l3_s3, "gfx/wagons/gen5/wagon_gen5_car_transporter.png") {template_2cc_wagons(357, 64)}
+
+
+/// LIVERY 3 SPRITEGROUP
+spritegroup spritegroup_mu_wagon_gen5_car_transporter_l3 {
+    loading: [spriteset_mu_wagon_gen5_car_transporter_l3_s1, spriteset_mu_wagon_gen5_car_transporter_l3_s2, spriteset_mu_wagon_gen5_car_transporter_l3_s3];
+    loaded: [spriteset_mu_wagon_gen5_car_transporter_l3_s1, spriteset_mu_wagon_gen5_car_transporter_l3_s2, spriteset_mu_wagon_gen5_car_transporter_l3_s3];
 }
 
-//Livery 1 - Loading State 3
-spriteset(spriteset_mu_Wagon_Gen5_Car_Transporter_L1_S3, "gfx/Wagons/Gen5/Wagon_Gen5_Car_Transporter.png") {
-	template_2cc_wagons(1, 64)
+/// LIVERY 4   LOADING STATE 1
+spriteset(spriteset_mu_wagon_gen5_car_transporter_l4_s1, "gfx/wagons/gen5/wagon_gen5_car_transporter.png") {template_2cc_wagons(535, 1)}
+
+
+/// LIVERY 4   LOADING STATE 2
+spriteset(spriteset_mu_wagon_gen5_car_transporter_l4_s2, "gfx/wagons/gen5/wagon_gen5_car_transporter.png") {template_2cc_wagons(535, 32)}
+
+
+/// LIVERY 4   LOADING STATE 3
+spriteset(spriteset_mu_wagon_gen5_car_transporter_l4_s3, "gfx/wagons/gen5/wagon_gen5_car_transporter.png") {template_2cc_wagons(535, 64)}
+
+
+/// LIVERY 4 SPRITEGROUP
+spritegroup spritegroup_mu_wagon_gen5_car_transporter_l4 {
+    loading: [spriteset_mu_wagon_gen5_car_transporter_l4_s1, spriteset_mu_wagon_gen5_car_transporter_l4_s2, spriteset_mu_wagon_gen5_car_transporter_l4_s3];
+    loaded: [spriteset_mu_wagon_gen5_car_transporter_l4_s1, spriteset_mu_wagon_gen5_car_transporter_l4_s2, spriteset_mu_wagon_gen5_car_transporter_l4_s3];
 }
 
-//Livery 1 Spritegroup
-spritegroup spritegroup_wagon_Gen5_Car_Transporter_L1 {
-	loading: [spriteset_mu_Wagon_Gen5_Car_Transporter_L1_S1, spriteset_mu_Wagon_Gen5_Car_Transporter_L1_S2, spriteset_mu_Wagon_Gen5_Car_Transporter_L1_S3];
-	loaded: [spriteset_mu_Wagon_Gen5_Car_Transporter_L1_S1, spriteset_mu_Wagon_Gen5_Car_Transporter_L1_S2, spriteset_mu_Wagon_Gen5_Car_Transporter_L1_S3];
+// Random Livery Selector
+random_switch(FEAT_TRAINS, SELF, switch_mu_wagon_gen5_car_transporter_livery) {
+	7: spritegroup_mu_wagon_gen5_car_transporter_l1;
+	1: spritegroup_mu_wagon_gen5_car_transporter_l2;
+	1: spritegroup_mu_wagon_gen5_car_transporter_l3;
+	1: spritegroup_mu_wagon_gen5_car_transporter_l4;
 }
-
-//Livery 2 - Loading State 1
-spriteset(spriteset_mu_Wagon_Gen5_Car_Transporter_L2_S1, "gfx/Wagons/Gen5/Wagon_Gen5_Car_Transporter.png") {
-	template_2cc_wagons(179, 1)
-}
-
-//Livery 2 - Loading State 2
-spriteset(spriteset_mu_Wagon_Gen5_Car_Transporter_L2_S2, "gfx/Wagons/Gen5/Wagon_Gen5_Car_Transporter.png") {
-	template_2cc_wagons(179, 32)
-}
-
-//Livery 2 - Loading State 3
-spriteset(spriteset_mu_Wagon_Gen5_Car_Transporter_L2_S3, "gfx/Wagons/Gen5/Wagon_Gen5_Car_Transporter.png") {
-	template_2cc_wagons(179, 64)
-}
-
-//Livery 2 Spritegroup
-spritegroup spritegroup_wagon_Gen5_Car_Transporter_L2 {
-	loading: [spriteset_mu_Wagon_Gen5_Car_Transporter_L2_S1, spriteset_mu_Wagon_Gen5_Car_Transporter_L2_S2, spriteset_mu_Wagon_Gen5_Car_Transporter_L2_S3];
-	loaded: [spriteset_mu_Wagon_Gen5_Car_Transporter_L2_S1, spriteset_mu_Wagon_Gen5_Car_Transporter_L2_S2, spriteset_mu_Wagon_Gen5_Car_Transporter_L2_S3];	
-}
-
-//Livery 3 - Loading State 1
-spriteset(spriteset_mu_Wagon_Gen5_Car_Transporter_L3_S1, "gfx/Wagons/Gen5/Wagon_Gen5_Car_Transporter.png") {
-	template_2cc_wagons(357, 1)
-}
-
-//Livery 3 - Loading State 2
-spriteset(spriteset_mu_Wagon_Gen5_Car_Transporter_L3_S2, "gfx/Wagons/Gen5/Wagon_Gen5_Car_Transporter.png") {
-	template_2cc_wagons(357, 32)
-}
-
-//Livery 3 - Loading State 3
-spriteset(spriteset_mu_Wagon_Gen5_Car_Transporter_L3_S3, "gfx/Wagons/Gen5/Wagon_Gen5_Car_Transporter.png") {
-	template_2cc_wagons(357, 64)
-}
-
-//Livery 3 Spritegroup
-spritegroup spritegroup_wagon_Gen5_Car_Transporter_L3 {
-	loading: [spriteset_mu_Wagon_Gen5_Car_Transporter_L3_S1, spriteset_mu_Wagon_Gen5_Car_Transporter_L3_S2, spriteset_mu_Wagon_Gen5_Car_Transporter_L3_S3];
-	loaded: [spriteset_mu_Wagon_Gen5_Car_Transporter_L3_S1, spriteset_mu_Wagon_Gen5_Car_Transporter_L3_S2, spriteset_mu_Wagon_Gen5_Car_Transporter_L3_S3];	
-}
-
-//Livery 4 - Loading State 1
-spriteset(spriteset_mu_Wagon_Gen5_Car_Transporter_L4_S1, "gfx/Wagons/Gen5/Wagon_Gen5_Car_Transporter.png") {
-	template_2cc_wagons(535, 1)
-}
-
-//Livery 4 - Loading State 2
-spriteset(spriteset_mu_Wagon_Gen5_Car_Transporter_L4_S2, "gfx/Wagons/Gen5/Wagon_Gen5_Car_Transporter.png") {
-	template_2cc_wagons(535, 32)
-}
-
-//Livery 4 - Loading State 3
-spriteset(spriteset_mu_Wagon_Gen5_Car_Transporter_L4_S3, "gfx/Wagons/Gen5/Wagon_Gen5_Car_Transporter.png") {
-	template_2cc_wagons(535, 64)
-}
-
-//Livery 4 Spritegroup
-spritegroup spritegroup_wagon_Gen5_Car_Transporter_L4 {
-	loading: [spriteset_mu_Wagon_Gen5_Car_Transporter_L4_S1, spriteset_mu_Wagon_Gen5_Car_Transporter_L4_S2, spriteset_mu_Wagon_Gen5_Car_Transporter_L4_S3];
-	loaded: [spriteset_mu_Wagon_Gen5_Car_Transporter_L4_S1, spriteset_mu_Wagon_Gen5_Car_Transporter_L4_S2, spriteset_mu_Wagon_Gen5_Car_Transporter_L4_S3];	
-}
-
-random_switch(FEAT_TRAINS, SELF, switch_mu_Wagon_Gen5_Car_Transporter_livery) {
-	7: spritegroup_wagon_Gen5_Car_Transporter_L1;
-	1: spritegroup_wagon_Gen5_Car_Transporter_L2;
-	1: spritegroup_wagon_Gen5_Car_Transporter_L3;
-	1: spritegroup_wagon_Gen5_Car_Transporter_L4;
-}
-
-//Add defined switches 
-
-// ENGINECAPACITYSWITCH(VEHIDCODE)
-
-// RUNNINGCOST_ENGINE_SWITCH
-
-// PURCHASETEXT_SWITCH

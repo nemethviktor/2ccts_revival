@@ -2,24 +2,27 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
+
+// Template: TPL_02A
+
 // Cargo capacity
 
-    switch(FEAT_TRAINS, SELF, switch_dmu_Australia_CityRail_Hunter_Railcar_capacity_engine, cargo_classes) { \
+    switch(FEAT_TRAINS, SELF, switch_dmu_australia_cityrail_hunter_railcar_capacity_engine, cargo_classes) { \
         bitmask(CC_MAIL): 70/2; \
         bitmask(CC_ARMOURED): 70/4; \
         70; \
     }
 
 
-    switch(FEAT_TRAINS, SELF, switch_dmu_Australia_CityRail_Hunter_Railcar_capacity_wagon, cargo_classes) { \
+    switch(FEAT_TRAINS, SELF, switch_dmu_australia_cityrail_hunter_railcar_capacity_wagon, cargo_classes) { \
         bitmask(CC_MAIL): 70/2; \
         bitmask(CC_ARMOURED): 70/4; \
         70; \
     }
 
-item(FEAT_TRAINS, item_dmu_Australia_CityRail_Hunter_Railcar) {
+item(FEAT_TRAINS, item_dmu_australia_cityrail_hunter_railcar) {
     property {
-        name: string(str_dmu_Australia_CityRail_Hunter_Railcar);
+        name: string(str_dmu_australia_cityrail_hunter_railcar);
         climates_available: ((param_region_oceania || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(2006,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
@@ -53,26 +56,26 @@ item(FEAT_TRAINS, item_dmu_Australia_CityRail_Hunter_Railcar) {
         bitmask_vehicle_info: 0;
     }
     graphics {
-        purchase: spriteset_dmu_Australia_CityRail_Hunter_Railcar_purchase;
-        cargo_capacity: switch_dmu_Australia_CityRail_Hunter_Railcar_capacity_engine;
-        visual_effect_and_powered: switch_dmu_Australia_CityRail_Hunter_Railcar_visual_effect_and_powered;
+        purchase: spriteset_dmu_australia_cityrail_hunter_railcar_purchase;
+        cargo_capacity: switch_dmu_australia_cityrail_hunter_railcar_capacity_engine;
+        visual_effect_and_powered: switch_dmu_australia_cityrail_hunter_railcar_visual_effect_and_powered;
         // no 'length'
         // no 'articulated_part'
         can_attach_wagon: switch_can_attach_vehicle;
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
         // PURCHASETEXT_SWITCH_CALL // this is actually blank
-        default: switch_dmu_Australia_CityRail_Hunter_Railcar_reversed;
+        default: switch_dmu_australia_cityrail_hunter_railcar_reversed;
     }
-    livery_override (item_mu_MU_Wagon_Unpowered) {
+    livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: int(160/10);
         weight: int(30*1/2);
         cargo_capacity: 70;
         length: 8;
-        default: switch_dmu_Australia_CityRail_Hunter_Railcar_cargo_selection;
+        default: switch_dmu_australia_cityrail_hunter_railcar_cargo_selection;
     }
-    livery_override (item_mu_MU_Wagon_Powered) {
+    livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: (round(28.63863386300256));
         power: int(750*1/2);
@@ -80,6 +83,6 @@ item(FEAT_TRAINS, item_dmu_Australia_CityRail_Hunter_Railcar) {
         cargo_capacity: 70;
         tractive_effort_coefficient: int(0.33*10*30);
         length: 8;
-        default: switch_dmu_Australia_CityRail_Hunter_Railcar_cargo_selection;
+        default: switch_dmu_australia_cityrail_hunter_railcar_cargo_selection;
     }
 }

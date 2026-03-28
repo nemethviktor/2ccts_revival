@@ -2,9 +2,12 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
-item(FEAT_TRAINS, item_mu_Coach_Gen4_Superliner_California) {
+
+// Template: TPL_04A
+
+item(FEAT_TRAINS, item_mu_coach_gen4_superliner_california) {
     property {
-        name: string(str_mu_Coach_Gen4_Superliner_California);
+        name: string(str_mu_coach_gen4_superliner_california);
         climates_available: (((param_region_north_america || param_region_south_america) || param_region_oceania) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1990,1,1);
         model_life: 50;
@@ -38,7 +41,7 @@ item(FEAT_TRAINS, item_mu_Coach_Gen4_Superliner_California) {
         bitmask_vehicle_info: 0;
     }
     graphics {
-        purchase: spriteset_mu_Coach_Gen4_Superliner_California_purchase;
+        purchase: spriteset_mu_coach_gen4_superliner_california_purchase;
         // no 'visual_effect' or 'visual_effect_and_powered'
         // no 'length'
         // no 'articulated_part'
@@ -46,6 +49,6 @@ item(FEAT_TRAINS, item_mu_Coach_Gen4_Superliner_California) {
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
         // PURCHASETEXT_SWITCH_CALL // this is actually blank
-        default: switch_mu_Coach_Gen4_Superliner_California_livery;
+        default: switch_mu_coach_gen4_superliner_california_livery;
     }
 }

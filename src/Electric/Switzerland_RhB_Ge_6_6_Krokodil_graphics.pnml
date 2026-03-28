@@ -1,39 +1,23 @@
-/*
- *  Copyright (C) 2017 Transportman // V. Nemeth 2026
- *  This file is part of the 2cc Trains In NML
- *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
+//  Copyright (C) 2017 Transportman // V. Nemeth 2026+
+//  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
-*/
+// Template: TPL_03B
 
-/*
-* PURCHASE
-*/
+// PURCHASE
+spriteset(spriteset_electric_switzerland_rhb_ge_6_6_krokodil_purchase, "gfx/electric/switzerland_rhb_ge_6_6_krokodil.png") {template_purchase(1, 64)}
 
-spriteset(spriteset_electric_Switzerland_RhB_Ge_6_6_Krokodil_purchase, "gfx/Electric/Switzerland_RhB_Ge_6_6_Krokodil.png") {
-	template_purchase(1, 64)
+
+// VEHICLE
+/// Engine1
+spriteset(spriteset_electric_switzerland_rhb_ge_6_6_krokodil_engine1, "gfx/electric/switzerland_rhb_ge_6_6_krokodil.png") {template_2cc_engines_general(1, 1)}
+
+
+/// Engine2
+spriteset(spriteset_electric_switzerland_rhb_ge_6_6_krokodil_engine2, "gfx/electric/switzerland_rhb_ge_6_6_krokodil.png") {template_2cc_engines_general(1, 32)}
+
+
+/// Animation states (animation)
+switch(FEAT_TRAINS, SELF, switch_electric_switzerland_rhb_ge_6_6_krokodil_animation, motion_counter % 2){
+	0: spriteset_electric_switzerland_rhb_ge_6_6_krokodil_engine1;
+	spriteset_electric_switzerland_rhb_ge_6_6_krokodil_engine2;
 }
-
-/*
-* VEHICLE
-*/
-
-//Engine
-spriteset(spriteset_electric_Switzerland_RhB_Ge_6_6_Krokodil_engine1, "gfx/Electric/Switzerland_RhB_Ge_6_6_Krokodil.png") {
-	template_2cc_engines_general(1, 1)
-}
-
-spriteset(spriteset_electric_Switzerland_RhB_Ge_6_6_Krokodil_engine2, "gfx/Electric/Switzerland_RhB_Ge_6_6_Krokodil.png") {
-	template_2cc_engines_general(1, 32)
-}
-
-//Animation states
-switch(FEAT_TRAINS, SELF, switch_electric_Switzerland_RhB_Ge_6_6_Krokodil_animation, motion_counter % 2){
-	0: spriteset_electric_Switzerland_RhB_Ge_6_6_Krokodil_engine1;
-	spriteset_electric_Switzerland_RhB_Ge_6_6_Krokodil_engine2;
-}	
-
-//Add defined switches
-
-// RUNNINGCOST_ENGINE_SWITCH
-
-// PURCHASETEXT_SWITCH

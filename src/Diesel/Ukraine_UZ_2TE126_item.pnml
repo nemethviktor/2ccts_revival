@@ -2,9 +2,12 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
-item(FEAT_TRAINS, item_diesel_Ukraine_UZ_2TE126) {
+
+// Template: TPL_32A
+
+item(FEAT_TRAINS, item_diesel_ukraine_uz_2te126) {
     property {
-        name: string(str_diesel_Ukraine_UZ_2TE126);
+        name: string(str_diesel_ukraine_uz_2te126);
         climates_available: ((param_region_eastern_europe || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1987,1,1);
         model_life: 45;
@@ -38,14 +41,14 @@ item(FEAT_TRAINS, item_diesel_Ukraine_UZ_2TE126) {
         bitmask_vehicle_info: 0;
     }
     graphics {
-        purchase: spriteset_diesel_Ukraine_UZ_2TE126_purchase;
-        visual_effect_and_powered: switch_diesel_Ukraine_UZ_2TE126_visual_effect;
-        length: switch_diesel_Ukraine_UZ_2TE126_length;
-        articulated_part: switch_diesel_Ukraine_UZ_2TE126_articulated;
+        purchase: spriteset_diesel_ukraine_uz_2te126_purchase;
+        visual_effect_and_powered: switch_diesel_ukraine_uz_2te126_visual_effect;
+        length: switch_diesel_ukraine_uz_2te126_length;
+        articulated_part: switch_diesel_ukraine_uz_2te126_articulated;
         can_attach_wagon: switch_can_attach_vehicle;
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
         // PURCHASETEXT_SWITCH_CALL // this is actually blank
-        default: switch_diesel_Ukraine_UZ_2TE126_position;
+        default: switch_diesel_ukraine_uz_2te126_position;
     }
 }

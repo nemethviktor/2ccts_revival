@@ -1,331 +1,364 @@
-/*
- *  Copyright (C) 2017 Transportman // V. Nemeth 2026
- *  This file is part of the 2cc Trains In NML
- *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
+//  Copyright (C) 2017 Transportman // V. Nemeth 2026+
+//  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
-*/
+// Template: TPL_04K
 
-/*
-* PURCHASE
-*/
+// PURCHASE
+spriteset(spriteset_mu_wagon_gen2_tanker_purchase, "gfx/wagons/gen2/wagon_gen2_tanker_purchase.png") {template_purchase_wagon(1, 1)}
 
-spriteset(spriteset_mu_Wagon_Gen2_Tanker_purchase, "gfx/Wagons/Gen2/Wagon_Gen2_Tanker_Purchase.png") {
-	template_purchase_wagon(1, 1)
+
+// VEHICLE
+
+// oil
+
+/// LIVERY 1   LOADING STATE 1   OIL
+spriteset(spriteset_mu_wagon_gen2_tanker_oil_l1_s1, "gfx/wagons/gen2/wagon_gen2_tanker_oil.png") {template_2cc_wagons(1, 1)}
+
+
+/// LIVERY 1   LOADING STATE 2   OIL
+spriteset(spriteset_mu_wagon_gen2_tanker_oil_l1_s2, "gfx/wagons/gen2/wagon_gen2_tanker_oil.png") {template_2cc_wagons(1, 32)}
+
+
+/// LIVERY 1   LOADING STATE 3   OIL
+spriteset(spriteset_mu_wagon_gen2_tanker_oil_l1_s3, "gfx/wagons/gen2/wagon_gen2_tanker_oil.png") {template_2cc_wagons(1, 64)}
+
+
+/// LIVERY 1 SPRITEGROUP - OIL
+spritegroup spritegroup_mu_wagon_gen2_tanker_oil_l1 {
+    loading: [spriteset_mu_wagon_gen2_tanker_oil_l1_s1, spriteset_mu_wagon_gen2_tanker_oil_l1_s2, spriteset_mu_wagon_gen2_tanker_oil_l1_s3];
+    loaded: [spriteset_mu_wagon_gen2_tanker_oil_l1_s1, spriteset_mu_wagon_gen2_tanker_oil_l1_s2, spriteset_mu_wagon_gen2_tanker_oil_l1_s3];
 }
 
-/*
-* Oil
-*/
+/// LIVERY 2   LOADING STATE 1   OIL
+spriteset(spriteset_mu_wagon_gen2_tanker_oil_l2_s1, "gfx/wagons/gen2/wagon_gen2_tanker_oil.png") {template_2cc_wagons(179, 1)}
 
-//Livery 1 - Loading State 1 - Oil
-spriteset(spriteset_mu_Wagon_Gen2_Tanker_Oil_L1_S1, "gfx/Wagons/Gen2/Wagon_Gen2_Tanker_Oil.png") {
-	template_2cc_wagons(1, 1)
+
+/// LIVERY 2   LOADING STATE 2   OIL
+spriteset(spriteset_mu_wagon_gen2_tanker_oil_l2_s2, "gfx/wagons/gen2/wagon_gen2_tanker_oil.png") {template_2cc_wagons(179, 32)}
+
+
+/// LIVERY 2   LOADING STATE 3   OIL
+spriteset(spriteset_mu_wagon_gen2_tanker_oil_l2_s3, "gfx/wagons/gen2/wagon_gen2_tanker_oil.png") {template_2cc_wagons(179, 64)}
+
+
+/// LIVERY 2 SPRITEGROUP - OIL
+spritegroup spritegroup_mu_wagon_gen2_tanker_oil_l2 {
+    loading: [spriteset_mu_wagon_gen2_tanker_oil_l2_s1, spriteset_mu_wagon_gen2_tanker_oil_l2_s2, spriteset_mu_wagon_gen2_tanker_oil_l2_s3];
+    loaded: [spriteset_mu_wagon_gen2_tanker_oil_l2_s1, spriteset_mu_wagon_gen2_tanker_oil_l2_s2, spriteset_mu_wagon_gen2_tanker_oil_l2_s3];
 }
 
-//Livery 1 - Loading State 2 - Oil
-spriteset(spriteset_mu_Wagon_Gen2_Tanker_Oil_L1_S2, "gfx/Wagons/Gen2/Wagon_Gen2_Tanker_Oil.png") {
-	template_2cc_wagons(1, 32)
+/// LIVERY 3   LOADING STATE 1   OIL
+spriteset(spriteset_mu_wagon_gen2_tanker_oil_l3_s1, "gfx/wagons/gen2/wagon_gen2_tanker_oil.png") {template_2cc_wagons(357, 1)}
+
+
+/// LIVERY 3   LOADING STATE 2   OIL
+spriteset(spriteset_mu_wagon_gen2_tanker_oil_l3_s2, "gfx/wagons/gen2/wagon_gen2_tanker_oil.png") {template_2cc_wagons(357, 32)}
+
+
+/// LIVERY 3   LOADING STATE 3   OIL
+spriteset(spriteset_mu_wagon_gen2_tanker_oil_l3_s3, "gfx/wagons/gen2/wagon_gen2_tanker_oil.png") {template_2cc_wagons(357, 64)}
+
+
+/// LIVERY 3 SPRITEGROUP - OIL
+spritegroup spritegroup_mu_wagon_gen2_tanker_oil_l3 {
+    loading: [spriteset_mu_wagon_gen2_tanker_oil_l3_s1, spriteset_mu_wagon_gen2_tanker_oil_l3_s2, spriteset_mu_wagon_gen2_tanker_oil_l3_s3];
+    loaded: [spriteset_mu_wagon_gen2_tanker_oil_l3_s1, spriteset_mu_wagon_gen2_tanker_oil_l3_s2, spriteset_mu_wagon_gen2_tanker_oil_l3_s3];
 }
 
-//Livery 1 - Loading State 3 - Oil
-spriteset(spriteset_mu_Wagon_Gen2_Tanker_Oil_L1_S3, "gfx/Wagons/Gen2/Wagon_Gen2_Tanker_Oil.png") {
-	template_2cc_wagons(1, 64)
+/// LIVERY 4   LOADING STATE 1   OIL
+spriteset(spriteset_mu_wagon_gen2_tanker_oil_l4_s1, "gfx/wagons/gen2/wagon_gen2_tanker_oil.png") {template_2cc_wagons(535, 1)}
+
+
+/// LIVERY 4   LOADING STATE 2   OIL
+spriteset(spriteset_mu_wagon_gen2_tanker_oil_l4_s2, "gfx/wagons/gen2/wagon_gen2_tanker_oil.png") {template_2cc_wagons(535, 32)}
+
+
+/// LIVERY 4   LOADING STATE 3   OIL
+spriteset(spriteset_mu_wagon_gen2_tanker_oil_l4_s3, "gfx/wagons/gen2/wagon_gen2_tanker_oil.png") {template_2cc_wagons(535, 64)}
+
+
+/// LIVERY 4 SPRITEGROUP - OIL
+spritegroup spritegroup_mu_wagon_gen2_tanker_oil_l4 {
+    loading: [spriteset_mu_wagon_gen2_tanker_oil_l4_s1, spriteset_mu_wagon_gen2_tanker_oil_l4_s2, spriteset_mu_wagon_gen2_tanker_oil_l4_s3];
+    loaded: [spriteset_mu_wagon_gen2_tanker_oil_l4_s1, spriteset_mu_wagon_gen2_tanker_oil_l4_s2, spriteset_mu_wagon_gen2_tanker_oil_l4_s3];
 }
 
-//Livery 1 Spritegroup - Oil
-spritegroup spritegroup_wagon_Gen2_Tanker_Oil_L1 {
-	loading: [spriteset_mu_Wagon_Gen2_Tanker_Oil_L1_S1, spriteset_mu_Wagon_Gen2_Tanker_Oil_L1_S2, spriteset_mu_Wagon_Gen2_Tanker_Oil_L1_S3];
-	loaded: [spriteset_mu_Wagon_Gen2_Tanker_Oil_L1_S1, spriteset_mu_Wagon_Gen2_Tanker_Oil_L1_S2, spriteset_mu_Wagon_Gen2_Tanker_Oil_L1_S3];
+// Random Livery Selector for oil
+random_switch(FEAT_TRAINS, SELF, switch_mu_wagon_gen2_tanker_oil_livery) {
+	7: spritegroup_mu_wagon_gen2_tanker_oil_l1;
+	1: spritegroup_mu_wagon_gen2_tanker_oil_l2;
+	1: spritegroup_mu_wagon_gen2_tanker_oil_l3;
+	1: spritegroup_mu_wagon_gen2_tanker_oil_l4;
 }
 
-//Livery 2 - Loading State 1 - Oil
-spriteset(spriteset_mu_Wagon_Gen2_Tanker_Oil_L2_S1, "gfx/Wagons/Gen2/Wagon_Gen2_Tanker_Oil.png") {
-	template_2cc_wagons(179, 1)
+// standard
+
+/// LIVERY 1   LOADING STATE 1   STANDARD
+spriteset(spriteset_mu_wagon_gen2_tanker_standard_l1_s1, "gfx/wagons/gen2/wagon_gen2_tanker_standard.png") {template_2cc_wagons(1, 1)}
+
+
+/// LIVERY 1   LOADING STATE 2   STANDARD
+spriteset(spriteset_mu_wagon_gen2_tanker_standard_l1_s2, "gfx/wagons/gen2/wagon_gen2_tanker_standard.png") {template_2cc_wagons(1, 32)}
+
+
+/// LIVERY 1   LOADING STATE 3   STANDARD
+spriteset(spriteset_mu_wagon_gen2_tanker_standard_l1_s3, "gfx/wagons/gen2/wagon_gen2_tanker_standard.png") {template_2cc_wagons(1, 64)}
+
+
+/// LIVERY 1 SPRITEGROUP - STANDARD
+spritegroup spritegroup_mu_wagon_gen2_tanker_standard_l1 {
+    loading: [spriteset_mu_wagon_gen2_tanker_standard_l1_s1, spriteset_mu_wagon_gen2_tanker_standard_l1_s2, spriteset_mu_wagon_gen2_tanker_standard_l1_s3];
+    loaded: [spriteset_mu_wagon_gen2_tanker_standard_l1_s1, spriteset_mu_wagon_gen2_tanker_standard_l1_s2, spriteset_mu_wagon_gen2_tanker_standard_l1_s3];
 }
 
-//Livery 2 - Loading State 2 - Oil
-spriteset(spriteset_mu_Wagon_Gen2_Tanker_Oil_L2_S2, "gfx/Wagons/Gen2/Wagon_Gen2_Tanker_Oil.png") {
-	template_2cc_wagons(179, 32)
+/// LIVERY 2   LOADING STATE 1   STANDARD
+spriteset(spriteset_mu_wagon_gen2_tanker_standard_l2_s1, "gfx/wagons/gen2/wagon_gen2_tanker_standard.png") {template_2cc_wagons(179, 1)}
+
+
+/// LIVERY 2   LOADING STATE 2   STANDARD
+spriteset(spriteset_mu_wagon_gen2_tanker_standard_l2_s2, "gfx/wagons/gen2/wagon_gen2_tanker_standard.png") {template_2cc_wagons(179, 32)}
+
+
+/// LIVERY 2   LOADING STATE 3   STANDARD
+spriteset(spriteset_mu_wagon_gen2_tanker_standard_l2_s3, "gfx/wagons/gen2/wagon_gen2_tanker_standard.png") {template_2cc_wagons(179, 64)}
+
+
+/// LIVERY 2 SPRITEGROUP - STANDARD
+spritegroup spritegroup_mu_wagon_gen2_tanker_standard_l2 {
+    loading: [spriteset_mu_wagon_gen2_tanker_standard_l2_s1, spriteset_mu_wagon_gen2_tanker_standard_l2_s2, spriteset_mu_wagon_gen2_tanker_standard_l2_s3];
+    loaded: [spriteset_mu_wagon_gen2_tanker_standard_l2_s1, spriteset_mu_wagon_gen2_tanker_standard_l2_s2, spriteset_mu_wagon_gen2_tanker_standard_l2_s3];
 }
 
-//Livery 2 - Loading State 3 - Oil
-spriteset(spriteset_mu_Wagon_Gen2_Tanker_Oil_L2_S3, "gfx/Wagons/Gen2/Wagon_Gen2_Tanker_Oil.png") {
-	template_2cc_wagons(179, 64)
+/// LIVERY 3   LOADING STATE 1   STANDARD
+spriteset(spriteset_mu_wagon_gen2_tanker_standard_l3_s1, "gfx/wagons/gen2/wagon_gen2_tanker_standard.png") {template_2cc_wagons(357, 1)}
+
+
+/// LIVERY 3   LOADING STATE 2   STANDARD
+spriteset(spriteset_mu_wagon_gen2_tanker_standard_l3_s2, "gfx/wagons/gen2/wagon_gen2_tanker_standard.png") {template_2cc_wagons(357, 32)}
+
+
+/// LIVERY 3   LOADING STATE 3   STANDARD
+spriteset(spriteset_mu_wagon_gen2_tanker_standard_l3_s3, "gfx/wagons/gen2/wagon_gen2_tanker_standard.png") {template_2cc_wagons(357, 64)}
+
+
+/// LIVERY 3 SPRITEGROUP - STANDARD
+spritegroup spritegroup_mu_wagon_gen2_tanker_standard_l3 {
+    loading: [spriteset_mu_wagon_gen2_tanker_standard_l3_s1, spriteset_mu_wagon_gen2_tanker_standard_l3_s2, spriteset_mu_wagon_gen2_tanker_standard_l3_s3];
+    loaded: [spriteset_mu_wagon_gen2_tanker_standard_l3_s1, spriteset_mu_wagon_gen2_tanker_standard_l3_s2, spriteset_mu_wagon_gen2_tanker_standard_l3_s3];
 }
 
-//Livery 2 Spritegroup - Oil
-spritegroup spritegroup_wagon_Gen2_Tanker_Oil_L2 {
-	loading: [spriteset_mu_Wagon_Gen2_Tanker_Oil_L2_S1, spriteset_mu_Wagon_Gen2_Tanker_Oil_L2_S2, spriteset_mu_Wagon_Gen2_Tanker_Oil_L2_S3];
-	loaded: [spriteset_mu_Wagon_Gen2_Tanker_Oil_L2_S1, spriteset_mu_Wagon_Gen2_Tanker_Oil_L2_S2, spriteset_mu_Wagon_Gen2_Tanker_Oil_L2_S3];	
+/// LIVERY 4   LOADING STATE 1   STANDARD
+spriteset(spriteset_mu_wagon_gen2_tanker_standard_l4_s1, "gfx/wagons/gen2/wagon_gen2_tanker_standard.png") {template_2cc_wagons(535, 1)}
+
+
+/// LIVERY 4   LOADING STATE 2   STANDARD
+spriteset(spriteset_mu_wagon_gen2_tanker_standard_l4_s2, "gfx/wagons/gen2/wagon_gen2_tanker_standard.png") {template_2cc_wagons(535, 32)}
+
+
+/// LIVERY 4   LOADING STATE 3   STANDARD
+spriteset(spriteset_mu_wagon_gen2_tanker_standard_l4_s3, "gfx/wagons/gen2/wagon_gen2_tanker_standard.png") {template_2cc_wagons(535, 64)}
+
+
+/// LIVERY 4 SPRITEGROUP - STANDARD
+spritegroup spritegroup_mu_wagon_gen2_tanker_standard_l4 {
+    loading: [spriteset_mu_wagon_gen2_tanker_standard_l4_s1, spriteset_mu_wagon_gen2_tanker_standard_l4_s2, spriteset_mu_wagon_gen2_tanker_standard_l4_s3];
+    loaded: [spriteset_mu_wagon_gen2_tanker_standard_l4_s1, spriteset_mu_wagon_gen2_tanker_standard_l4_s2, spriteset_mu_wagon_gen2_tanker_standard_l4_s3];
 }
 
-//Livery 3 - Loading State 1 - Oil
-spriteset(spriteset_mu_Wagon_Gen2_Tanker_Oil_L3_S1, "gfx/Wagons/Gen2/Wagon_Gen2_Tanker_Oil.png") {
-	template_2cc_wagons(357, 1)
+// Random Livery Selector for standard
+random_switch(FEAT_TRAINS, SELF, switch_mu_wagon_gen2_tanker_standard_livery) {
+	7: spritegroup_mu_wagon_gen2_tanker_standard_l1;
+	1: spritegroup_mu_wagon_gen2_tanker_standard_l2;
+	1: spritegroup_mu_wagon_gen2_tanker_standard_l3;
+	1: spritegroup_mu_wagon_gen2_tanker_standard_l4;
 }
 
-//Livery 3 - Loading State 2 - Oil
-spriteset(spriteset_mu_Wagon_Gen2_Tanker_Oil_L3_S2, "gfx/Wagons/Gen2/Wagon_Gen2_Tanker_Oil.png") {
-	template_2cc_wagons(357, 32)
+// rubber
+
+/// LIVERY 1   LOADING STATE 1   RUBBER
+spriteset(spriteset_mu_wagon_gen2_tanker_rubber_l1_s1, "gfx/wagons/gen2/wagon_gen2_tanker_rubber.png") {template_2cc_wagons(1, 1)}
+
+
+/// LIVERY 1   LOADING STATE 2   RUBBER
+spriteset(spriteset_mu_wagon_gen2_tanker_rubber_l1_s2, "gfx/wagons/gen2/wagon_gen2_tanker_rubber.png") {template_2cc_wagons(1, 32)}
+
+
+/// LIVERY 1   LOADING STATE 3   RUBBER
+spriteset(spriteset_mu_wagon_gen2_tanker_rubber_l1_s3, "gfx/wagons/gen2/wagon_gen2_tanker_rubber.png") {template_2cc_wagons(1, 64)}
+
+
+/// LIVERY 1 SPRITEGROUP - RUBBER
+spritegroup spritegroup_mu_wagon_gen2_tanker_rubber_l1 {
+    loading: [spriteset_mu_wagon_gen2_tanker_rubber_l1_s1, spriteset_mu_wagon_gen2_tanker_rubber_l1_s2, spriteset_mu_wagon_gen2_tanker_rubber_l1_s3];
+    loaded: [spriteset_mu_wagon_gen2_tanker_rubber_l1_s1, spriteset_mu_wagon_gen2_tanker_rubber_l1_s2, spriteset_mu_wagon_gen2_tanker_rubber_l1_s3];
 }
 
-//Livery 3 - Loading State 3 - Oil
-spriteset(spriteset_mu_Wagon_Gen2_Tanker_Oil_L3_S3, "gfx/Wagons/Gen2/Wagon_Gen2_Tanker_Oil.png") {
-	template_2cc_wagons(357, 64)
+/// LIVERY 2   LOADING STATE 1   RUBBER
+spriteset(spriteset_mu_wagon_gen2_tanker_rubber_l2_s1, "gfx/wagons/gen2/wagon_gen2_tanker_rubber.png") {template_2cc_wagons(179, 1)}
+
+
+/// LIVERY 2   LOADING STATE 2   RUBBER
+spriteset(spriteset_mu_wagon_gen2_tanker_rubber_l2_s2, "gfx/wagons/gen2/wagon_gen2_tanker_rubber.png") {template_2cc_wagons(179, 32)}
+
+
+/// LIVERY 2   LOADING STATE 3   RUBBER
+spriteset(spriteset_mu_wagon_gen2_tanker_rubber_l2_s3, "gfx/wagons/gen2/wagon_gen2_tanker_rubber.png") {template_2cc_wagons(179, 64)}
+
+
+/// LIVERY 2 SPRITEGROUP - RUBBER
+spritegroup spritegroup_mu_wagon_gen2_tanker_rubber_l2 {
+    loading: [spriteset_mu_wagon_gen2_tanker_rubber_l2_s1, spriteset_mu_wagon_gen2_tanker_rubber_l2_s2, spriteset_mu_wagon_gen2_tanker_rubber_l2_s3];
+    loaded: [spriteset_mu_wagon_gen2_tanker_rubber_l2_s1, spriteset_mu_wagon_gen2_tanker_rubber_l2_s2, spriteset_mu_wagon_gen2_tanker_rubber_l2_s3];
 }
 
-//Livery 3 Spritegroup - Oil
-spritegroup spritegroup_wagon_Gen2_Tanker_Oil_L3 {
-	loading: [spriteset_mu_Wagon_Gen2_Tanker_Oil_L3_S1, spriteset_mu_Wagon_Gen2_Tanker_Oil_L3_S2, spriteset_mu_Wagon_Gen2_Tanker_Oil_L3_S3];
-	loaded: [spriteset_mu_Wagon_Gen2_Tanker_Oil_L3_S1, spriteset_mu_Wagon_Gen2_Tanker_Oil_L3_S2, spriteset_mu_Wagon_Gen2_Tanker_Oil_L3_S3];	
+/// LIVERY 3   LOADING STATE 1   RUBBER
+spriteset(spriteset_mu_wagon_gen2_tanker_rubber_l3_s1, "gfx/wagons/gen2/wagon_gen2_tanker_rubber.png") {template_2cc_wagons(357, 1)}
+
+
+/// LIVERY 3   LOADING STATE 2   RUBBER
+spriteset(spriteset_mu_wagon_gen2_tanker_rubber_l3_s2, "gfx/wagons/gen2/wagon_gen2_tanker_rubber.png") {template_2cc_wagons(357, 32)}
+
+
+/// LIVERY 3   LOADING STATE 3   RUBBER
+spriteset(spriteset_mu_wagon_gen2_tanker_rubber_l3_s3, "gfx/wagons/gen2/wagon_gen2_tanker_rubber.png") {template_2cc_wagons(357, 64)}
+
+
+/// LIVERY 3 SPRITEGROUP - RUBBER
+spritegroup spritegroup_mu_wagon_gen2_tanker_rubber_l3 {
+    loading: [spriteset_mu_wagon_gen2_tanker_rubber_l3_s1, spriteset_mu_wagon_gen2_tanker_rubber_l3_s2, spriteset_mu_wagon_gen2_tanker_rubber_l3_s3];
+    loaded: [spriteset_mu_wagon_gen2_tanker_rubber_l3_s1, spriteset_mu_wagon_gen2_tanker_rubber_l3_s2, spriteset_mu_wagon_gen2_tanker_rubber_l3_s3];
 }
 
-//Livery 4 - Loading State 1 - Oil
-spriteset(spriteset_mu_Wagon_Gen2_Tanker_Oil_L4_S1, "gfx/Wagons/Gen2/Wagon_Gen2_Tanker_Oil.png") {
-	template_2cc_wagons(535, 1)
+/// LIVERY 4   LOADING STATE 1   RUBBER
+spriteset(spriteset_mu_wagon_gen2_tanker_rubber_l4_s1, "gfx/wagons/gen2/wagon_gen2_tanker_rubber.png") {template_2cc_wagons(535, 1)}
+
+
+/// LIVERY 4   LOADING STATE 2   RUBBER
+spriteset(spriteset_mu_wagon_gen2_tanker_rubber_l4_s2, "gfx/wagons/gen2/wagon_gen2_tanker_rubber.png") {template_2cc_wagons(535, 32)}
+
+
+/// LIVERY 4   LOADING STATE 3   RUBBER
+spriteset(spriteset_mu_wagon_gen2_tanker_rubber_l4_s3, "gfx/wagons/gen2/wagon_gen2_tanker_rubber.png") {template_2cc_wagons(535, 64)}
+
+
+/// LIVERY 4 SPRITEGROUP - RUBBER
+spritegroup spritegroup_mu_wagon_gen2_tanker_rubber_l4 {
+    loading: [spriteset_mu_wagon_gen2_tanker_rubber_l4_s1, spriteset_mu_wagon_gen2_tanker_rubber_l4_s2, spriteset_mu_wagon_gen2_tanker_rubber_l4_s3];
+    loaded: [spriteset_mu_wagon_gen2_tanker_rubber_l4_s1, spriteset_mu_wagon_gen2_tanker_rubber_l4_s2, spriteset_mu_wagon_gen2_tanker_rubber_l4_s3];
 }
 
-//Livery 4 - Loading State 2 - Oil
-spriteset(spriteset_mu_Wagon_Gen2_Tanker_Oil_L4_S2, "gfx/Wagons/Gen2/Wagon_Gen2_Tanker_Oil.png") {
-	template_2cc_wagons(535, 32)
+// Random Livery Selector for rubber
+random_switch(FEAT_TRAINS, SELF, switch_mu_wagon_gen2_tanker_rubber_livery) {
+	7: spritegroup_mu_wagon_gen2_tanker_rubber_l1;
+	1: spritegroup_mu_wagon_gen2_tanker_rubber_l2;
+	1: spritegroup_mu_wagon_gen2_tanker_rubber_l3;
+	1: spritegroup_mu_wagon_gen2_tanker_rubber_l4;
 }
 
-//Livery 4 - Loading State 3 - Oil
-spriteset(spriteset_mu_Wagon_Gen2_Tanker_Oil_L4_S3, "gfx/Wagons/Gen2/Wagon_Gen2_Tanker_Oil.png") {
-	template_2cc_wagons(535, 64)
+// water
+
+/// LIVERY 1   LOADING STATE 1   WATER
+spriteset(spriteset_mu_wagon_gen2_tanker_water_l1_s1, "gfx/wagons/gen2/wagon_gen2_tanker_water.png") {template_2cc_wagons(1, 1)}
+
+
+/// LIVERY 1   LOADING STATE 2   WATER
+spriteset(spriteset_mu_wagon_gen2_tanker_water_l1_s2, "gfx/wagons/gen2/wagon_gen2_tanker_water.png") {template_2cc_wagons(1, 32)}
+
+
+/// LIVERY 1   LOADING STATE 3   WATER
+spriteset(spriteset_mu_wagon_gen2_tanker_water_l1_s3, "gfx/wagons/gen2/wagon_gen2_tanker_water.png") {template_2cc_wagons(1, 64)}
+
+
+/// LIVERY 1 SPRITEGROUP - WATER
+spritegroup spritegroup_mu_wagon_gen2_tanker_water_l1 {
+    loading: [spriteset_mu_wagon_gen2_tanker_water_l1_s1, spriteset_mu_wagon_gen2_tanker_water_l1_s2, spriteset_mu_wagon_gen2_tanker_water_l1_s3];
+    loaded: [spriteset_mu_wagon_gen2_tanker_water_l1_s1, spriteset_mu_wagon_gen2_tanker_water_l1_s2, spriteset_mu_wagon_gen2_tanker_water_l1_s3];
 }
 
-//Livery 4 Spritegroup - Oil
-spritegroup spritegroup_wagon_Gen2_Tanker_Oil_L4 {
-	loading: [spriteset_mu_Wagon_Gen2_Tanker_Oil_L4_S1, spriteset_mu_Wagon_Gen2_Tanker_Oil_L4_S2, spriteset_mu_Wagon_Gen2_Tanker_Oil_L4_S3];
-	loaded: [spriteset_mu_Wagon_Gen2_Tanker_Oil_L4_S1, spriteset_mu_Wagon_Gen2_Tanker_Oil_L4_S2, spriteset_mu_Wagon_Gen2_Tanker_Oil_L4_S3];	
+/// LIVERY 2   LOADING STATE 1   WATER
+spriteset(spriteset_mu_wagon_gen2_tanker_water_l2_s1, "gfx/wagons/gen2/wagon_gen2_tanker_water.png") {template_2cc_wagons(179, 1)}
+
+
+/// LIVERY 2   LOADING STATE 2   WATER
+spriteset(spriteset_mu_wagon_gen2_tanker_water_l2_s2, "gfx/wagons/gen2/wagon_gen2_tanker_water.png") {template_2cc_wagons(179, 32)}
+
+
+/// LIVERY 2   LOADING STATE 3   WATER
+spriteset(spriteset_mu_wagon_gen2_tanker_water_l2_s3, "gfx/wagons/gen2/wagon_gen2_tanker_water.png") {template_2cc_wagons(179, 64)}
+
+
+/// LIVERY 2 SPRITEGROUP - WATER
+spritegroup spritegroup_mu_wagon_gen2_tanker_water_l2 {
+    loading: [spriteset_mu_wagon_gen2_tanker_water_l2_s1, spriteset_mu_wagon_gen2_tanker_water_l2_s2, spriteset_mu_wagon_gen2_tanker_water_l2_s3];
+    loaded: [spriteset_mu_wagon_gen2_tanker_water_l2_s1, spriteset_mu_wagon_gen2_tanker_water_l2_s2, spriteset_mu_wagon_gen2_tanker_water_l2_s3];
 }
 
-random_switch(FEAT_TRAINS, SELF, switch_mu_Wagon_Gen2_Tanker_Oil_livery) {
-	7: spritegroup_wagon_Gen2_Tanker_Oil_L1;
-	1: spritegroup_wagon_Gen2_Tanker_Oil_L2;
-	1: spritegroup_wagon_Gen2_Tanker_Oil_L3;
-	1: spritegroup_wagon_Gen2_Tanker_Oil_L4;
+/// LIVERY 3   LOADING STATE 1   WATER
+spriteset(spriteset_mu_wagon_gen2_tanker_water_l3_s1, "gfx/wagons/gen2/wagon_gen2_tanker_water.png") {template_2cc_wagons(357, 1)}
+
+
+/// LIVERY 3   LOADING STATE 2   WATER
+spriteset(spriteset_mu_wagon_gen2_tanker_water_l3_s2, "gfx/wagons/gen2/wagon_gen2_tanker_water.png") {template_2cc_wagons(357, 32)}
+
+
+/// LIVERY 3   LOADING STATE 3   WATER
+spriteset(spriteset_mu_wagon_gen2_tanker_water_l3_s3, "gfx/wagons/gen2/wagon_gen2_tanker_water.png") {template_2cc_wagons(357, 64)}
+
+
+/// LIVERY 3 SPRITEGROUP - WATER
+spritegroup spritegroup_mu_wagon_gen2_tanker_water_l3 {
+    loading: [spriteset_mu_wagon_gen2_tanker_water_l3_s1, spriteset_mu_wagon_gen2_tanker_water_l3_s2, spriteset_mu_wagon_gen2_tanker_water_l3_s3];
+    loaded: [spriteset_mu_wagon_gen2_tanker_water_l3_s1, spriteset_mu_wagon_gen2_tanker_water_l3_s2, spriteset_mu_wagon_gen2_tanker_water_l3_s3];
 }
 
-/*
-* Rubber
-*/
+/// LIVERY 4   LOADING STATE 1   WATER
+spriteset(spriteset_mu_wagon_gen2_tanker_water_l4_s1, "gfx/wagons/gen2/wagon_gen2_tanker_water.png") {template_2cc_wagons(535, 1)}
 
-//Livery 1 - Loading State 1 - Rubber
-spriteset(spriteset_mu_Wagon_Gen2_Tanker_Rubber_L1_S1, "gfx/Wagons/Gen2/Wagon_Gen2_Tanker_Rubber.png") {
-	template_2cc_wagons(1, 1)
+
+/// LIVERY 4   LOADING STATE 2   WATER
+spriteset(spriteset_mu_wagon_gen2_tanker_water_l4_s2, "gfx/wagons/gen2/wagon_gen2_tanker_water.png") {template_2cc_wagons(535, 32)}
+
+
+/// LIVERY 4   LOADING STATE 3   WATER
+spriteset(spriteset_mu_wagon_gen2_tanker_water_l4_s3, "gfx/wagons/gen2/wagon_gen2_tanker_water.png") {template_2cc_wagons(535, 64)}
+
+
+/// LIVERY 4 SPRITEGROUP - WATER
+spritegroup spritegroup_mu_wagon_gen2_tanker_water_l4 {
+    loading: [spriteset_mu_wagon_gen2_tanker_water_l4_s1, spriteset_mu_wagon_gen2_tanker_water_l4_s2, spriteset_mu_wagon_gen2_tanker_water_l4_s3];
+    loaded: [spriteset_mu_wagon_gen2_tanker_water_l4_s1, spriteset_mu_wagon_gen2_tanker_water_l4_s2, spriteset_mu_wagon_gen2_tanker_water_l4_s3];
 }
 
-//Livery 1 - Loading State 2 - Rubber
-spriteset(spriteset_mu_Wagon_Gen2_Tanker_Rubber_L1_S2, "gfx/Wagons/Gen2/Wagon_Gen2_Tanker_Rubber.png") {
-	template_2cc_wagons(1, 32)
+// Random Livery Selector for water
+random_switch(FEAT_TRAINS, SELF, switch_mu_wagon_gen2_tanker_water_livery) {
+	7: spritegroup_mu_wagon_gen2_tanker_water_l1;
+	1: spritegroup_mu_wagon_gen2_tanker_water_l2;
+	1: spritegroup_mu_wagon_gen2_tanker_water_l3;
+	1: spritegroup_mu_wagon_gen2_tanker_water_l4;
 }
 
-//Livery 1 - Loading State 3 - Rubber
-spriteset(spriteset_mu_Wagon_Gen2_Tanker_Rubber_L1_S3, "gfx/Wagons/Gen2/Wagon_Gen2_Tanker_Rubber.png") {
-	template_2cc_wagons(1, 64)
+
+
+// Goods can have multiple liveries
+random_switch(FEAT_TRAINS, SELF, switch_mu_wagon_gen2_tanker_goods_livery) {
+	1: switch_mu_wagon_gen2_tanker_oil_livery;
+	1: switch_mu_wagon_gen2_tanker_rubber_livery;
+	1: switch_mu_wagon_gen2_tanker_water_livery;
 }
 
-//Livery 1 Spritegroup - Rubber
-spritegroup spritegroup_wagon_Gen2_Tanker_Rubber_L1 {
-	loading: [spriteset_mu_Wagon_Gen2_Tanker_Rubber_L1_S1, spriteset_mu_Wagon_Gen2_Tanker_Rubber_L1_S2, spriteset_mu_Wagon_Gen2_Tanker_Rubber_L1_S3];
-	loaded: [spriteset_mu_Wagon_Gen2_Tanker_Rubber_L1_S1, spriteset_mu_Wagon_Gen2_Tanker_Rubber_L1_S2, spriteset_mu_Wagon_Gen2_Tanker_Rubber_L1_S3];
+// Plastic can have multiple liveries
+random_switch(FEAT_TRAINS, SELF, switch_mu_wagon_gen2_tanker_plastic_livery) {
+	1: switch_mu_wagon_gen2_tanker_oil_livery;
+	1: switch_mu_wagon_gen2_tanker_rubber_livery;
 }
 
-//Livery 2 - Loading State 1 - Rubber
-spriteset(spriteset_mu_Wagon_Gen2_Tanker_Rubber_L2_S1, "gfx/Wagons/Gen2/Wagon_Gen2_Tanker_Rubber.png") {
-	template_2cc_wagons(179, 1)
+switch(FEAT_TRAINS, SELF, switch_mu_wagon_gen2_tanker_cargo_selection, cargo_type_in_veh) {
+	OIL_: switch_mu_wagon_gen2_tanker_oil_livery;
+	GOOD: switch_mu_wagon_gen2_tanker_goods_livery;
+	RUBR: switch_mu_wagon_gen2_tanker_rubber_livery;
+	PLST: switch_mu_wagon_gen2_tanker_plastic_livery;
+	PETR: switch_mu_wagon_gen2_tanker_oil_livery;
+	PLAS: switch_mu_wagon_gen2_tanker_plastic_livery;
+	RFPR: switch_mu_wagon_gen2_tanker_oil_livery;
+	switch_mu_wagon_gen2_tanker_water_livery; // WATR, COLA, BEER, DYES, MILK
 }
-
-//Livery 2 - Loading State 2 - Rubber
-spriteset(spriteset_mu_Wagon_Gen2_Tanker_Rubber_L2_S2, "gfx/Wagons/Gen2/Wagon_Gen2_Tanker_Rubber.png") {
-	template_2cc_wagons(179, 32)
-}
-
-//Livery 2 - Loading State 3 - Rubber
-spriteset(spriteset_mu_Wagon_Gen2_Tanker_Rubber_L2_S3, "gfx/Wagons/Gen2/Wagon_Gen2_Tanker_Rubber.png") {
-	template_2cc_wagons(179, 64)
-}
-
-//Livery 2 Spritegroup - Rubber
-spritegroup spritegroup_wagon_Gen2_Tanker_Rubber_L2 {
-	loading: [spriteset_mu_Wagon_Gen2_Tanker_Rubber_L2_S1, spriteset_mu_Wagon_Gen2_Tanker_Rubber_L2_S2, spriteset_mu_Wagon_Gen2_Tanker_Rubber_L2_S3];
-	loaded: [spriteset_mu_Wagon_Gen2_Tanker_Rubber_L2_S1, spriteset_mu_Wagon_Gen2_Tanker_Rubber_L2_S2, spriteset_mu_Wagon_Gen2_Tanker_Rubber_L2_S3];	
-}
-
-//Livery 3 - Loading State 1 - Rubber
-spriteset(spriteset_mu_Wagon_Gen2_Tanker_Rubber_L3_S1, "gfx/Wagons/Gen2/Wagon_Gen2_Tanker_Rubber.png") {
-	template_2cc_wagons(357, 1)
-}
-
-//Livery 3 - Loading State 2 - Rubber
-spriteset(spriteset_mu_Wagon_Gen2_Tanker_Rubber_L3_S2, "gfx/Wagons/Gen2/Wagon_Gen2_Tanker_Rubber.png") {
-	template_2cc_wagons(357, 32)
-}
-
-//Livery 3 - Loading State 3 - Rubber
-spriteset(spriteset_mu_Wagon_Gen2_Tanker_Rubber_L3_S3, "gfx/Wagons/Gen2/Wagon_Gen2_Tanker_Rubber.png") {
-	template_2cc_wagons(357, 64)
-}
-
-//Livery 3 Spritegroup - Rubber
-spritegroup spritegroup_wagon_Gen2_Tanker_Rubber_L3 {
-	loading: [spriteset_mu_Wagon_Gen2_Tanker_Rubber_L3_S1, spriteset_mu_Wagon_Gen2_Tanker_Rubber_L3_S2, spriteset_mu_Wagon_Gen2_Tanker_Rubber_L3_S3];
-	loaded: [spriteset_mu_Wagon_Gen2_Tanker_Rubber_L3_S1, spriteset_mu_Wagon_Gen2_Tanker_Rubber_L3_S2, spriteset_mu_Wagon_Gen2_Tanker_Rubber_L3_S3];	
-}
-
-//Livery 4 - Loading State 1 - Rubber
-spriteset(spriteset_mu_Wagon_Gen2_Tanker_Rubber_L4_S1, "gfx/Wagons/Gen2/Wagon_Gen2_Tanker_Rubber.png") {
-	template_2cc_wagons(535, 1)
-}
-
-//Livery 4 - Loading State 2 - Rubber
-spriteset(spriteset_mu_Wagon_Gen2_Tanker_Rubber_L4_S2, "gfx/Wagons/Gen2/Wagon_Gen2_Tanker_Rubber.png") {
-	template_2cc_wagons(535, 32)
-}
-
-//Livery 4 - Loading State 3 - Rubber
-spriteset(spriteset_mu_Wagon_Gen2_Tanker_Rubber_L4_S3, "gfx/Wagons/Gen2/Wagon_Gen2_Tanker_Rubber.png") {
-	template_2cc_wagons(535, 64)
-}
-
-//Livery 4 Spritegroup - Rubber
-spritegroup spritegroup_wagon_Gen2_Tanker_Rubber_L4 {
-	loading: [spriteset_mu_Wagon_Gen2_Tanker_Rubber_L4_S1, spriteset_mu_Wagon_Gen2_Tanker_Rubber_L4_S2, spriteset_mu_Wagon_Gen2_Tanker_Rubber_L4_S3];
-	loaded: [spriteset_mu_Wagon_Gen2_Tanker_Rubber_L4_S1, spriteset_mu_Wagon_Gen2_Tanker_Rubber_L4_S2, spriteset_mu_Wagon_Gen2_Tanker_Rubber_L4_S3];	
-}
-
-random_switch(FEAT_TRAINS, SELF, switch_mu_Wagon_Gen2_Tanker_Rubber_livery) {
-	7: spritegroup_wagon_Gen2_Tanker_Rubber_L1;
-	1: spritegroup_wagon_Gen2_Tanker_Rubber_L2;
-	1: spritegroup_wagon_Gen2_Tanker_Rubber_L3;
-	1: spritegroup_wagon_Gen2_Tanker_Rubber_L4;
-}
-
-/*
-* Water
-*/
-
-//Livery 1 - Loading State 1 - Water
-spriteset(spriteset_mu_Wagon_Gen2_Tanker_Water_L1_S1, "gfx/Wagons/Gen2/Wagon_Gen2_Tanker_Water.png") {
-	template_2cc_wagons(1, 1)
-}
-
-//Livery 1 - Loading State 2 - Water
-spriteset(spriteset_mu_Wagon_Gen2_Tanker_Water_L1_S2, "gfx/Wagons/Gen2/Wagon_Gen2_Tanker_Water.png") {
-	template_2cc_wagons(1, 32)
-}
-
-//Livery 1 - Loading State 3 - Water
-spriteset(spriteset_mu_Wagon_Gen2_Tanker_Water_L1_S3, "gfx/Wagons/Gen2/Wagon_Gen2_Tanker_Water.png") {
-	template_2cc_wagons(1, 64)
-}
-
-//Livery 1 Spritegroup - Water
-spritegroup spritegroup_wagon_Gen2_Tanker_Water_L1 {
-	loading: [spriteset_mu_Wagon_Gen2_Tanker_Water_L1_S1, spriteset_mu_Wagon_Gen2_Tanker_Water_L1_S2, spriteset_mu_Wagon_Gen2_Tanker_Water_L1_S3];
-	loaded: [spriteset_mu_Wagon_Gen2_Tanker_Water_L1_S1, spriteset_mu_Wagon_Gen2_Tanker_Water_L1_S2, spriteset_mu_Wagon_Gen2_Tanker_Water_L1_S3];
-}
-
-//Livery 2 - Loading State 1 - Water
-spriteset(spriteset_mu_Wagon_Gen2_Tanker_Water_L2_S1, "gfx/Wagons/Gen2/Wagon_Gen2_Tanker_Water.png") {
-	template_2cc_wagons(179, 1)
-}
-
-//Livery 2 - Loading State 2 - Water
-spriteset(spriteset_mu_Wagon_Gen2_Tanker_Water_L2_S2, "gfx/Wagons/Gen2/Wagon_Gen2_Tanker_Water.png") {
-	template_2cc_wagons(179, 32)
-}
-
-//Livery 2 - Loading State 3 - Water
-spriteset(spriteset_mu_Wagon_Gen2_Tanker_Water_L2_S3, "gfx/Wagons/Gen2/Wagon_Gen2_Tanker_Water.png") {
-	template_2cc_wagons(179, 64)
-}
-
-//Livery 2 Spritegroup - Water
-spritegroup spritegroup_wagon_Gen2_Tanker_Water_L2 {
-	loading: [spriteset_mu_Wagon_Gen2_Tanker_Water_L2_S1, spriteset_mu_Wagon_Gen2_Tanker_Water_L2_S2, spriteset_mu_Wagon_Gen2_Tanker_Water_L2_S3];
-	loaded: [spriteset_mu_Wagon_Gen2_Tanker_Water_L2_S1, spriteset_mu_Wagon_Gen2_Tanker_Water_L2_S2, spriteset_mu_Wagon_Gen2_Tanker_Water_L2_S3];	
-}
-
-//Livery 3 - Loading State 1 - Water
-spriteset(spriteset_mu_Wagon_Gen2_Tanker_Water_L3_S1, "gfx/Wagons/Gen2/Wagon_Gen2_Tanker_Water.png") {
-	template_2cc_wagons(357, 1)
-}
-
-//Livery 3 - Loading State 2 - Water
-spriteset(spriteset_mu_Wagon_Gen2_Tanker_Water_L3_S2, "gfx/Wagons/Gen2/Wagon_Gen2_Tanker_Water.png") {
-	template_2cc_wagons(357, 32)
-}
-
-//Livery 3 - Loading State 3 - Water
-spriteset(spriteset_mu_Wagon_Gen2_Tanker_Water_L3_S3, "gfx/Wagons/Gen2/Wagon_Gen2_Tanker_Water.png") {
-	template_2cc_wagons(357, 64)
-}
-
-//Livery 3 Spritegroup - Water
-spritegroup spritegroup_wagon_Gen2_Tanker_Water_L3 {
-	loading: [spriteset_mu_Wagon_Gen2_Tanker_Water_L3_S1, spriteset_mu_Wagon_Gen2_Tanker_Water_L3_S2, spriteset_mu_Wagon_Gen2_Tanker_Water_L3_S3];
-	loaded: [spriteset_mu_Wagon_Gen2_Tanker_Water_L3_S1, spriteset_mu_Wagon_Gen2_Tanker_Water_L3_S2, spriteset_mu_Wagon_Gen2_Tanker_Water_L3_S3];	
-}
-
-//Livery 4 - Loading State 1 - Water
-spriteset(spriteset_mu_Wagon_Gen2_Tanker_Water_L4_S1, "gfx/Wagons/Gen2/Wagon_Gen2_Tanker_Water.png") {
-	template_2cc_wagons(535, 1)
-}
-
-//Livery 4 - Loading State 2 - Water
-spriteset(spriteset_mu_Wagon_Gen2_Tanker_Water_L4_S2, "gfx/Wagons/Gen2/Wagon_Gen2_Tanker_Water.png") {
-	template_2cc_wagons(535, 32)
-}
-
-//Livery 4 - Loading State 3 - Water
-spriteset(spriteset_mu_Wagon_Gen2_Tanker_Water_L4_S3, "gfx/Wagons/Gen2/Wagon_Gen2_Tanker_Water.png") {
-	template_2cc_wagons(535, 64)
-}
-
-//Livery 4 Spritegroup - Water
-spritegroup spritegroup_wagon_Gen2_Tanker_Water_L4 {
-	loading: [spriteset_mu_Wagon_Gen2_Tanker_Water_L4_S1, spriteset_mu_Wagon_Gen2_Tanker_Water_L4_S2, spriteset_mu_Wagon_Gen2_Tanker_Water_L4_S3];
-	loaded: [spriteset_mu_Wagon_Gen2_Tanker_Water_L4_S1, spriteset_mu_Wagon_Gen2_Tanker_Water_L4_S2, spriteset_mu_Wagon_Gen2_Tanker_Water_L4_S3];	
-}
-
-random_switch(FEAT_TRAINS, SELF, switch_mu_Wagon_Gen2_Tanker_Water_livery) {
-	7: spritegroup_wagon_Gen2_Tanker_Water_L1;
-	1: spritegroup_wagon_Gen2_Tanker_Water_L2;
-	1: spritegroup_wagon_Gen2_Tanker_Water_L3;
-	1: spritegroup_wagon_Gen2_Tanker_Water_L4;
-}
-
-//Goods can have multiple liveries
-random_switch(FEAT_TRAINS, SELF, switch_mu_Wagon_Gen2_Tanker_Goods_livery) {
-	1: switch_mu_Wagon_Gen2_Tanker_Oil_livery;
-	1: switch_mu_Wagon_Gen2_Tanker_Rubber_livery;
-	1: switch_mu_Wagon_Gen2_Tanker_Water_livery;
-}
-
-//Plastic can have multiple liveries
-random_switch(FEAT_TRAINS, SELF, switch_mu_Wagon_Gen2_Tanker_Plastic_livery) {
-	1: switch_mu_Wagon_Gen2_Tanker_Oil_livery;
-	1: switch_mu_Wagon_Gen2_Tanker_Rubber_livery;
-}
-
-switch(FEAT_TRAINS, SELF, switch_mu_Wagon_Gen2_Tanker_cargo_selection, cargo_type_in_veh) {
-	OIL_: switch_mu_Wagon_Gen2_Tanker_Oil_livery;
-	GOOD: switch_mu_Wagon_Gen2_Tanker_Goods_livery;
-	RUBR: switch_mu_Wagon_Gen2_Tanker_Rubber_livery;
-	PLST: switch_mu_Wagon_Gen2_Tanker_Plastic_livery;
-	PETR: switch_mu_Wagon_Gen2_Tanker_Oil_livery;
-	PLAS: switch_mu_Wagon_Gen2_Tanker_Plastic_livery;
-	RFPR: switch_mu_Wagon_Gen2_Tanker_Oil_livery;
-	switch_mu_Wagon_Gen2_Tanker_Water_livery; //WATR, COLA, BEER, DYES, MILK
-}
-
-//Add defined switches 
-
-// ENGINECAPACITYSWITCH(VEHIDCODE)
-
-// RUNNINGCOST_ENGINE_SWITCH
-
-// PURCHASETEXT_SWITCH

@@ -2,9 +2,12 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
-item(FEAT_TRAINS, item_electric_USA_Milwaukee_Road_EP_2_Bipolar) {
+
+// Template: TPL_16A
+
+item(FEAT_TRAINS, item_electric_usa_milwaukee_road_ep_2_bipolar) {
     property {
-        name: string(str_electric_USA_Milwaukee_Road_EP_2_Bipolar);
+        name: string(str_electric_usa_milwaukee_road_ep_2_bipolar);
         climates_available: ((param_region_north_america || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1919,1,1);
         model_life: 45;
@@ -38,14 +41,14 @@ item(FEAT_TRAINS, item_electric_USA_Milwaukee_Road_EP_2_Bipolar) {
         bitmask_vehicle_info: 0;
     }
     graphics {
-        purchase: spriteset_electric_USA_Milwaukee_Road_EP_2_Bipolar_purchase;
-        visual_effect_and_powered: switch_electric_USA_Milwaukee_Road_EP_2_Bipolar_visual_effect;
-        length: switch_electric_USA_Milwaukee_Road_EP_2_Bipolar_length;
-        articulated_part: switch_electric_USA_Milwaukee_Road_EP_2_Bipolar_articulated;
+        purchase: spriteset_electric_usa_milwaukee_road_ep_2_bipolar_purchase;
+        visual_effect_and_powered: switch_electric_usa_milwaukee_road_ep_2_bipolar_visual_effect;
+        length: switch_electric_usa_milwaukee_road_ep_2_bipolar_length;
+        articulated_part: switch_electric_usa_milwaukee_road_ep_2_bipolar_articulated;
         can_attach_wagon: switch_can_attach_vehicle;
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
         // PURCHASETEXT_SWITCH_CALL // this is actually blank
-        default: switch_electric_USA_Milwaukee_Road_EP_2_Bipolar_position;
+        default: switch_electric_usa_milwaukee_road_ep_2_bipolar_position;
     }
 }

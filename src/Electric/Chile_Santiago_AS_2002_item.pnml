@@ -2,9 +2,12 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
-item(FEAT_TRAINS, item_mtro_Chile_Santiago_AS_2002) {
+
+// Template: TPL_02C
+
+item(FEAT_TRAINS, item_mtro_chile_santiago_as_2002) {
     property {
-        name: string(str_mtro_Chile_Santiago_AS_2002);
+        name: string(str_mtro_chile_santiago_as_2002);
         climates_available: ((param_region_south_america || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(2004,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
@@ -38,7 +41,7 @@ item(FEAT_TRAINS, item_mtro_Chile_Santiago_AS_2002) {
         bitmask_vehicle_info: 0;
     }
     graphics {
-        purchase: spriteset_mtro_Chile_Santiago_AS_2002_purchase;
+        purchase: spriteset_mtro_chile_santiago_as_2002_purchase;
         // no 'visual_effect' or 'visual_effect_and_powered'
         // no 'length'
         // no 'articulated_part'
@@ -46,17 +49,17 @@ item(FEAT_TRAINS, item_mtro_Chile_Santiago_AS_2002) {
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
         // PURCHASETEXT_SWITCH_CALL // this is actually blank
-        default: switch_mtro_Chile_Santiago_AS_2002_reversed;
+        default: switch_mtro_chile_santiago_as_2002_reversed;
     }
-    livery_override (item_mtro_Metro_Wagon_Unpowered) {
+    livery_override (item_mtro_metro_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
         running_cost_factor: int(100/10);
         weight: int(42*1/2);
         cargo_capacity: 196;
         length: 8;
-        default: spriteset_mtro_Chile_Santiago_AS_2002_middle;
+        default: spriteset_mtro_chile_santiago_as_2002_middle;
     }
-    livery_override (item_mtro_Metro_Wagon_Powered) {
+    livery_override (item_mtro_metro_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
         running_cost_factor: (round(52.51298334985152));
         power: int(1500*1/2);
@@ -64,6 +67,6 @@ item(FEAT_TRAINS, item_mtro_Chile_Santiago_AS_2002) {
         cargo_capacity: 196;
         tractive_effort_coefficient: int(0.92*10*42);
         length: 8;
-        default: spriteset_mtro_Chile_Santiago_AS_2002_middle;
+        default: spriteset_mtro_chile_santiago_as_2002_middle;
     }
 }

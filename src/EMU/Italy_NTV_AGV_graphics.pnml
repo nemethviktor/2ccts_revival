@@ -1,134 +1,107 @@
-/*
- *  Copyright (C) 2017 Transportman // V. Nemeth 2026
- *  This file is part of the 2cc Trains In NML
- *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
+//  Copyright (C) 2017 Transportman // V. Nemeth 2026+
+//  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
-*/
+// Template: TPL_02E
 
-/*
-* PURCHASE
-*/
+// PURCHASE
+spriteset(spriteset_emu_italy_ntv_agv_purchase, "gfx/emu/italy_ntv_agv.png") {template_purchase_dualheaded(1, 320)}
 
-spriteset(spriteset_emu_Italy_NTV_AGV_purchase, "gfx/EMU/Italy_NTV_AGV.png") {
-	template_purchase_dualheaded(1, 320)
+
+// VEHICLE
+/// Front
+spriteset(spriteset_emu_italy_ntv_agv_front, "gfx/emu/italy_ntv_agv.png") {template_2cc_engines_general(1, 1)}
+
+
+// VEHICLE
+/// Back
+spriteset(spriteset_emu_italy_ntv_agv_back, "gfx/emu/italy_ntv_agv.png") {template_2cc_engines_general(1, 32)}
+
+
+/// MIDDLEPASS PART 2 REGULAR
+spriteset(spriteset_emu_italy_ntv_agv_middlepass_part_2_regular, "gfx/emu/italy_ntv_agv.png") {template_2cc_engines_general(1, 64)}
+
+
+/// MIDDLEMAIL PART 2 REGULAR
+spriteset(spriteset_emu_italy_ntv_agv_middlemail_part_2_regular, "gfx/emu/italy_ntv_agv.png") {template_2cc_engines_general(1, 192)}
+
+
+/// MIDDLEPASS PART 2 FRONT
+spriteset(spriteset_emu_italy_ntv_agv_middlepass_part_2_front, "gfx/emu/italy_ntv_agv.png") {template_2cc_engines_general(1, 96)}
+
+
+/// MIDDLEMAIL PART 2 FRONT
+spriteset(spriteset_emu_italy_ntv_agv_middlemail_part_2_front, "gfx/emu/italy_ntv_agv.png") {template_2cc_engines_general(1, 224)}
+
+
+/// MIDDLEPASS PART 2 BACK
+spriteset(spriteset_emu_italy_ntv_agv_middlepass_part_2_back, "gfx/emu/italy_ntv_agv.png") {template_2cc_engines_general(1, 128)}
+
+
+/// MIDDLEMAIL PART 2 BACK
+spriteset(spriteset_emu_italy_ntv_agv_middlemail_part_2_back, "gfx/emu/italy_ntv_agv.png") {template_2cc_engines_general(1, 256)}
+
+
+/// MIDDLEPASS DOUBLE
+spriteset(spriteset_emu_italy_ntv_agv_middlepass_double, "gfx/emu/italy_ntv_agv.png") {template_2cc_engines_general(1, 160)}
+
+
+/// MIDDLEMAIL DOUBLE
+spriteset(spriteset_emu_italy_ntv_agv_middlemail_double, "gfx/emu/italy_ntv_agv.png") {template_2cc_engines_general(1, 288)}
+
+
+switch(FEAT_TRAINS, SELF, switch_emu_italy_ntv_agv_middlepass_position_back, [STORE_TEMP(1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
+	ID_RANGE_UNIT_WAGONS: spriteset_emu_italy_ntv_agv_middlepass_part_2_regular;
+	spriteset_emu_italy_ntv_agv_middlepass_part_2_back;
 }
 
-/*
-* VEHICLE
-*/
-
-//Front
-spriteset(spriteset_emu_Italy_NTV_AGV_front, "gfx/EMU/Italy_NTV_AGV.png") {
-	template_2cc_engines_general(1, 1)
+switch(FEAT_TRAINS, SELF, switch_emu_italy_ntv_agv_middlepass_position_front, [STORE_TEMP(1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
+	ID_RANGE_UNIT_WAGONS: spriteset_emu_italy_ntv_agv_middlepass_part_2_front;
+	spriteset_emu_italy_ntv_agv_middlepass_double;
 }
 
-//Back
-spriteset(spriteset_emu_Italy_NTV_AGV_back, "gfx/EMU/Italy_NTV_AGV.png") {
-	template_2cc_engines_general(1, 32)
+switch(FEAT_TRAINS, SELF, switch_emu_italy_ntv_agv_middlepass_length, [STORE_TEMP(-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
+	ID_RANGE_UNIT_WAGONS: switch_emu_italy_ntv_agv_middlepass_position_back;
+	switch_emu_italy_ntv_agv_middlepass_position_front;
 }
 
-//Middle - PAX - Regular
-spriteset(spriteset_emu_Italy_NTV_AGV_middlepass_regular, "gfx/EMU/Italy_NTV_AGV.png") {
-	template_2cc_engines_general(1, 64)
+switch(FEAT_TRAINS, SELF, switch_emu_italy_ntv_agv_middlemail_position_back, [STORE_TEMP(1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
+	ID_RANGE_UNIT_WAGONS: spriteset_emu_italy_ntv_agv_middlemail_part_2_regular;
+	spriteset_emu_italy_ntv_agv_middlemail_part_2_back;
 }
 
-//Middle - PAX - Part 2 back
-spriteset(spriteset_emu_Italy_NTV_AGV_middlepass_part2_front, "gfx/EMU/Italy_NTV_AGV.png") {
-	template_2cc_engines_general(1, 96)
+switch(FEAT_TRAINS, SELF, switch_emu_italy_ntv_agv_middlemail_position_front, [STORE_TEMP(1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
+	ID_RANGE_UNIT_WAGONS: spriteset_emu_italy_ntv_agv_middlemail_part_2_front;
+	spriteset_emu_italy_ntv_agv_middlemail_double;
 }
 
-//Middle - PAX - Part 2 front
-spriteset(spriteset_emu_Italy_NTV_AGV_middlepass_part2_back, "gfx/EMU/Italy_NTV_AGV.png") {
-	template_2cc_engines_general(1, 128)
+switch(FEAT_TRAINS, SELF, switch_emu_italy_ntv_agv_middlemail_length, [STORE_TEMP(-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
+	ID_RANGE_UNIT_WAGONS: switch_emu_italy_ntv_agv_middlemail_position_back;
+	switch_emu_italy_ntv_agv_middlemail_position_front;
 }
 
-//Middle - PAX - Double
-spriteset(spriteset_emu_Italy_NTV_AGV_middlepass_double, "gfx/EMU/Italy_NTV_AGV.png") {
-	template_2cc_engines_general(1, 160)
+/// Dualheaded (reverse switch)
+/// In the context of var[0xC8] (which is the variable for "position in consist"):
+/// 0xFE: The very first vehicle in the train (The Engine/Front).
+/// 0xFF: The very last vehicle in the train (The Caboose/End).
+switch(FEAT_TRAINS, SELF, switch_emu_italy_ntv_agv_reversed, var[0xC8]) {
+    0xFE: spriteset_emu_italy_ntv_agv_back;
+    0xFF: spriteset_emu_italy_ntv_agv_back;
+    spriteset_emu_italy_ntv_agv_front;
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_Italy_NTV_AGV_middlepass_position_back, [STORE_TEMP(1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
-	ID_RANGE_UNIT_WAGONS: spriteset_emu_Italy_NTV_AGV_middlepass_regular;
-	spriteset_emu_Italy_NTV_AGV_middlepass_part2_back;
+// Visual effect and power management
+// Position-based logic: middle
+/// In the context of var[0xC8] (which is the variable for "position in consist"):
+/// 0xFE: The very first vehicle in the train (The Engine/Front).
+/// 0xFF: The very last vehicle in the train (The Caboose/End).
+switch(FEAT_TRAINS, SELF, switch_emu_italy_ntv_agv_visual_effect_and_powered, var[0xC8]) {
+    0xFE: visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+    0xFF: visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+    visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, -3, DISABLE_WAGON_POWER);
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_Italy_NTV_AGV_middlepass_position_front, [STORE_TEMP(1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
-	ID_RANGE_UNIT_WAGONS: spriteset_emu_Italy_NTV_AGV_middlepass_part2_front;
-	spriteset_emu_Italy_NTV_AGV_middlepass_double;
+/// Graphics for the unit wagon based on cargo class
+switch(FEAT_TRAINS, SELF, switch_emu_italy_ntv_agv_cargo_selection, cargo_classes){
+	bitmask(CC_PASSENGERS): switch_emu_italy_ntv_agv_middlepass_length;
+	switch_emu_italy_ntv_agv_middlemail_length;
 }
-
-switch(FEAT_TRAINS, SELF, switch_emu_Italy_NTV_AGV_middlepass_length, [STORE_TEMP(-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
-	ID_RANGE_UNIT_WAGONS: switch_emu_Italy_NTV_AGV_middlepass_position_back;
-	switch_emu_Italy_NTV_AGV_middlepass_position_front;
-}
-
-//Middle - MAIL - Part 2 regular
-spriteset(spriteset_emu_Italy_NTV_AGV_middlemail_regular, "gfx/EMU/Italy_NTV_AGV.png") {
-	template_2cc_engines_general(1, 192)
-}
-
-//Middle - MAIL - Part 2 Front
-spriteset(spriteset_emu_Italy_NTV_AGV_middlemail_part2_front, "gfx/EMU/Italy_NTV_AGV.png") {
-	template_2cc_engines_general(1, 224)
-}
-
-//Middle - MAIL - Part 2 Back
-spriteset(spriteset_emu_Italy_NTV_AGV_middlemail_part2_back, "gfx/EMU/Italy_NTV_AGV.png") {
-	template_2cc_engines_general(1, 256)
-}
-
-//Middle - MAIL - Double
-spriteset(spriteset_emu_Italy_NTV_AGV_middlemail_double, "gfx/EMU/Italy_NTV_AGV.png") {
-	template_2cc_engines_general(1, 288)
-}
-
-switch(FEAT_TRAINS, SELF, switch_emu_Italy_NTV_AGV_middlemail_position_back, [STORE_TEMP(1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
-	ID_RANGE_UNIT_WAGONS: spriteset_emu_Italy_NTV_AGV_middlemail_regular;
-	spriteset_emu_Italy_NTV_AGV_middlemail_part2_back;
-}
-
-switch(FEAT_TRAINS, SELF, switch_emu_Italy_NTV_AGV_middlemail_position_front, [STORE_TEMP(1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
-	ID_RANGE_UNIT_WAGONS: spriteset_emu_Italy_NTV_AGV_middlemail_part2_front;
-	spriteset_emu_Italy_NTV_AGV_middlemail_double;
-}
-
-switch(FEAT_TRAINS, SELF, switch_emu_Italy_NTV_AGV_middlemail_length, [STORE_TEMP(-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
-	ID_RANGE_UNIT_WAGONS: switch_emu_Italy_NTV_AGV_middlemail_position_back;
-	switch_emu_Italy_NTV_AGV_middlemail_position_front;
-}
-
-//Dualheaded engines
-switch(FEAT_TRAINS, SELF, switch_emu_Italy_NTV_AGV_reversed, var[0xC8]) {
-	0xFE: spriteset_emu_Italy_NTV_AGV_back;
-    0xFF: spriteset_emu_Italy_NTV_AGV_back; 
-    spriteset_emu_Italy_NTV_AGV_front;
-}
-
-//Visual effect, for EMU this is done on the part with the pantograph
-switch(FEAT_TRAINS, SELF, switch_emu_Italy_NTV_AGV_visual_effect_and_powered, var[0xC8]) {
-	0xFE: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, -3, DISABLE_WAGON_POWER);
-	0xFF: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, -3, DISABLE_WAGON_POWER);
-	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
-}
-	
-/*
-* Cargo capacity
-*/
-
-// ENGINECAPACITYSWITCH(VEHIDCODE)
-
-// WAGONCAPACITYSWITCH(VEHIDCODE)
-
-//Graphics for the unit wagon based on cargo class
-switch(FEAT_TRAINS, SELF, switch_emu_Italy_NTV_AGV_cargo_selection, cargo_classes){
-	bitmask(CC_PASSENGERS): switch_emu_Italy_NTV_AGV_middlepass_length;
-	switch_emu_Italy_NTV_AGV_middlemail_length;
-}
-
-//Add defined switches
-
-// RUNNINGCOST_ENGINE_SWITCH
-
-// RUNNINGCOST_MU_WAGON_SWITCH
-
-// PURCHASETEXT_SWITCH

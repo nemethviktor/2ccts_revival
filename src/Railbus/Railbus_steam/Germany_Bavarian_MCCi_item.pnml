@@ -2,24 +2,27 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
+
+// Template: TPL_01B
+
 // Cargo capacity
 
-    switch(FEAT_TRAINS, SELF, switch_rbs_Germany_Bavarian_MCCi_capacity_engine, cargo_classes) { \
+    switch(FEAT_TRAINS, SELF, switch_rbs_germany_bavarian_mcci_capacity_engine, cargo_classes) { \
         bitmask(CC_MAIL): 52/2; \
         bitmask(CC_ARMOURED): 52/4; \
         52; \
     }
 
 
-    switch(FEAT_TRAINS, SELF, switch_rbs_Germany_Bavarian_MCCi_capacity_wagon, cargo_classes) { \
+    switch(FEAT_TRAINS, SELF, switch_rbs_germany_bavarian_mcci_capacity_wagon, cargo_classes) { \
         bitmask(CC_MAIL): 0/2; \
         bitmask(CC_ARMOURED): 0/4; \
         0; \
     }
 
-item(FEAT_TRAINS, item_rbs_Germany_Bavarian_MCCi) {
+item(FEAT_TRAINS, item_rbs_germany_bavarian_mcci) {
     property {
-        name: string(str_rbs_Germany_Bavarian_MCCi);
+        name: string(str_rbs_germany_bavarian_mcci);
         climates_available: ((param_region_western_europe || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1906,1,1);
         model_life: 45;
@@ -53,8 +56,8 @@ item(FEAT_TRAINS, item_rbs_Germany_Bavarian_MCCi) {
         bitmask_vehicle_info: 0;
     }
     graphics {
-        purchase: spriteset_rbs_Germany_Bavarian_MCCi_purchase;
-        cargo_capacity: switch_rbs_Germany_Bavarian_MCCi_capacity_engine;
+        purchase: spriteset_rbs_germany_bavarian_mcci_purchase;
+        cargo_capacity: switch_rbs_germany_bavarian_mcci_capacity_engine;
         // no 'visual_effect' or 'visual_effect_and_powered'
         // no 'length'
         // no 'articulated_part'
@@ -62,6 +65,6 @@ item(FEAT_TRAINS, item_rbs_Germany_Bavarian_MCCi) {
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
         // PURCHASETEXT_SWITCH_CALL // this is actually blank
-        default: spriteset_rbs_Germany_Bavarian_MCCi;
+        default: spriteset_rbs_germany_bavarian_mcci;
     }
 }

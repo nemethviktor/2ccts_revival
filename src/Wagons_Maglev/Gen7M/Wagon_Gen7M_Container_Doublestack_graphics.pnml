@@ -1,227 +1,192 @@
-/*
- *  Copyright (C) 2017 Transportman // V. Nemeth 2026
- *  This file is part of the 2cc Trains In NML
- *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
+//  Copyright (C) 2017 Transportman // V. Nemeth 2026+
+//  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
-*/
+// Template: TPL_04G
 
-/*
-* PURCHASE
-*/
+// PURCHASE
+spriteset(spriteset_mglv_wagon_gen7m_container_doublestack_purchase, "gfx/wagons_maglev/gen7m/wagon_gen7m_container_doublestack_purchase.png") {template_purchase_wagon(1, 1)}
 
-spriteset(spriteset_mglv_Wagon_Gen7M_Container_Doublestack_purchase, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Container_Doublestack_Purchase.png") {
-	template_purchase_wagon(1, 1)
+
+// VEHICLE
+
+// container
+
+/// LIVERY 1   LOADING STATE 1   CONTAINER
+spriteset(spriteset_mglv_wagon_gen7m_container_doublestack_container_l1_s1, "gfx/wagons_maglev/gen7m/wagon_gen7m_container_doublestack_container.png") {template_2cc_wagons(1, 1)}
+
+
+/// LIVERY 1   LOADING STATE 2   CONTAINER
+spriteset(spriteset_mglv_wagon_gen7m_container_doublestack_container_l1_s2, "gfx/wagons_maglev/gen7m/wagon_gen7m_container_doublestack_container.png") {template_2cc_wagons(1, 32)}
+
+
+/// LIVERY 1   LOADING STATE 3   CONTAINER
+spriteset(spriteset_mglv_wagon_gen7m_container_doublestack_container_l1_s3, "gfx/wagons_maglev/gen7m/wagon_gen7m_container_doublestack_container.png") {template_2cc_wagons(1, 64)}
+
+
+/// LIVERY 1 SPRITEGROUP - CONTAINER
+spritegroup spritegroup_mglv_wagon_gen7m_container_doublestack_container_l1 {
+    loading: [spriteset_mglv_wagon_gen7m_container_doublestack_container_l1_s1, spriteset_mglv_wagon_gen7m_container_doublestack_container_l1_s2, spriteset_mglv_wagon_gen7m_container_doublestack_container_l1_s3];
+    loaded: [spriteset_mglv_wagon_gen7m_container_doublestack_container_l1_s1, spriteset_mglv_wagon_gen7m_container_doublestack_container_l1_s2, spriteset_mglv_wagon_gen7m_container_doublestack_container_l1_s3];
 }
 
-/*
-* Container
-*/
+/// LIVERY 2   LOADING STATE 1   CONTAINER
+spriteset(spriteset_mglv_wagon_gen7m_container_doublestack_container_l2_s1, "gfx/wagons_maglev/gen7m/wagon_gen7m_container_doublestack_container.png") {template_2cc_wagons(179, 1)}
 
-//Livery 1 - Loading State 1 - Container
-spriteset(spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Container_L1_S1, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Container_Doublestack_Container.png") {
-	template_2cc_wagons(1, 1)
+
+/// LIVERY 2   LOADING STATE 2   CONTAINER
+spriteset(spriteset_mglv_wagon_gen7m_container_doublestack_container_l2_s2, "gfx/wagons_maglev/gen7m/wagon_gen7m_container_doublestack_container.png") {template_2cc_wagons(179, 32)}
+
+
+/// LIVERY 2   LOADING STATE 3   CONTAINER
+spriteset(spriteset_mglv_wagon_gen7m_container_doublestack_container_l2_s3, "gfx/wagons_maglev/gen7m/wagon_gen7m_container_doublestack_container.png") {template_2cc_wagons(179, 64)}
+
+
+/// LIVERY 2 SPRITEGROUP - CONTAINER
+spritegroup spritegroup_mglv_wagon_gen7m_container_doublestack_container_l2 {
+    loading: [spriteset_mglv_wagon_gen7m_container_doublestack_container_l2_s1, spriteset_mglv_wagon_gen7m_container_doublestack_container_l2_s2, spriteset_mglv_wagon_gen7m_container_doublestack_container_l2_s3];
+    loaded: [spriteset_mglv_wagon_gen7m_container_doublestack_container_l2_s1, spriteset_mglv_wagon_gen7m_container_doublestack_container_l2_s2, spriteset_mglv_wagon_gen7m_container_doublestack_container_l2_s3];
 }
 
-//Livery 1 - Loading State 2 - Container
-spriteset(spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Container_L1_S2, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Container_Doublestack_Container.png") {
-	template_2cc_wagons(1, 32)
+/// LIVERY 3   LOADING STATE 1   CONTAINER
+spriteset(spriteset_mglv_wagon_gen7m_container_doublestack_container_l3_s1, "gfx/wagons_maglev/gen7m/wagon_gen7m_container_doublestack_container.png") {template_2cc_wagons(357, 1)}
+
+
+/// LIVERY 3   LOADING STATE 2   CONTAINER
+spriteset(spriteset_mglv_wagon_gen7m_container_doublestack_container_l3_s2, "gfx/wagons_maglev/gen7m/wagon_gen7m_container_doublestack_container.png") {template_2cc_wagons(357, 32)}
+
+
+/// LIVERY 3   LOADING STATE 3   CONTAINER
+spriteset(spriteset_mglv_wagon_gen7m_container_doublestack_container_l3_s3, "gfx/wagons_maglev/gen7m/wagon_gen7m_container_doublestack_container.png") {template_2cc_wagons(357, 64)}
+
+
+/// LIVERY 3 SPRITEGROUP - CONTAINER
+spritegroup spritegroup_mglv_wagon_gen7m_container_doublestack_container_l3 {
+    loading: [spriteset_mglv_wagon_gen7m_container_doublestack_container_l3_s1, spriteset_mglv_wagon_gen7m_container_doublestack_container_l3_s2, spriteset_mglv_wagon_gen7m_container_doublestack_container_l3_s3];
+    loaded: [spriteset_mglv_wagon_gen7m_container_doublestack_container_l3_s1, spriteset_mglv_wagon_gen7m_container_doublestack_container_l3_s2, spriteset_mglv_wagon_gen7m_container_doublestack_container_l3_s3];
 }
 
-//Livery 1 - Loading State 3 - Container
-spriteset(spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Container_L1_S3, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Container_Doublestack_Container.png") {
-	template_2cc_wagons(1, 64)
+/// LIVERY 4   LOADING STATE 1   CONTAINER
+spriteset(spriteset_mglv_wagon_gen7m_container_doublestack_container_l4_s1, "gfx/wagons_maglev/gen7m/wagon_gen7m_container_doublestack_container.png") {template_2cc_wagons(535, 1)}
+
+
+/// LIVERY 4   LOADING STATE 2   CONTAINER
+spriteset(spriteset_mglv_wagon_gen7m_container_doublestack_container_l4_s2, "gfx/wagons_maglev/gen7m/wagon_gen7m_container_doublestack_container.png") {template_2cc_wagons(535, 32)}
+
+
+/// LIVERY 4   LOADING STATE 3   CONTAINER
+spriteset(spriteset_mglv_wagon_gen7m_container_doublestack_container_l4_s3, "gfx/wagons_maglev/gen7m/wagon_gen7m_container_doublestack_container.png") {template_2cc_wagons(535, 64)}
+
+
+/// LIVERY 4 SPRITEGROUP - CONTAINER
+spritegroup spritegroup_mglv_wagon_gen7m_container_doublestack_container_l4 {
+    loading: [spriteset_mglv_wagon_gen7m_container_doublestack_container_l4_s1, spriteset_mglv_wagon_gen7m_container_doublestack_container_l4_s2, spriteset_mglv_wagon_gen7m_container_doublestack_container_l4_s3];
+    loaded: [spriteset_mglv_wagon_gen7m_container_doublestack_container_l4_s1, spriteset_mglv_wagon_gen7m_container_doublestack_container_l4_s2, spriteset_mglv_wagon_gen7m_container_doublestack_container_l4_s3];
 }
 
-//Livery 1 Spritegroup - Container
-spritegroup spritegroup_wagon_Gen7M_Container_Doublestack_Container_L1 {
-	loading: [spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Container_L1_S1, spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Container_L1_S2, spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Container_L1_S3];
-	loaded: [spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Container_L1_S1, spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Container_L1_S2, spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Container_L1_S3];
+// Random Livery Selector for container
+random_switch(FEAT_TRAINS, SELF, switch_mglv_wagon_gen7m_container_doublestack_container_livery) {
+	7: spritegroup_mglv_wagon_gen7m_container_doublestack_container_l1;
+	1: spritegroup_mglv_wagon_gen7m_container_doublestack_container_l2;
+	1: spritegroup_mglv_wagon_gen7m_container_doublestack_container_l3;
+	1: spritegroup_mglv_wagon_gen7m_container_doublestack_container_l4;
 }
 
-//Livery 2 - Loading State 1 - Container
-spriteset(spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Container_L2_S1, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Container_Doublestack_Container.png") {
-	template_2cc_wagons(179, 1)
+// refrigerated
+
+/// LIVERY 1   LOADING STATE 1   REFRIGERATED
+spriteset(spriteset_mglv_wagon_gen7m_container_doublestack_refrigerated_l1_s1, "gfx/wagons_maglev/gen7m/wagon_gen7m_container_doublestack_refrigerated.png") {template_2cc_wagons(1, 1)}
+
+
+/// LIVERY 1   LOADING STATE 2   REFRIGERATED
+spriteset(spriteset_mglv_wagon_gen7m_container_doublestack_refrigerated_l1_s2, "gfx/wagons_maglev/gen7m/wagon_gen7m_container_doublestack_refrigerated.png") {template_2cc_wagons(1, 32)}
+
+
+/// LIVERY 1   LOADING STATE 3   REFRIGERATED
+spriteset(spriteset_mglv_wagon_gen7m_container_doublestack_refrigerated_l1_s3, "gfx/wagons_maglev/gen7m/wagon_gen7m_container_doublestack_refrigerated.png") {template_2cc_wagons(1, 64)}
+
+
+/// LIVERY 1 SPRITEGROUP - REFRIGERATED
+spritegroup spritegroup_mglv_wagon_gen7m_container_doublestack_refrigerated_l1 {
+    loading: [spriteset_mglv_wagon_gen7m_container_doublestack_refrigerated_l1_s1, spriteset_mglv_wagon_gen7m_container_doublestack_refrigerated_l1_s2, spriteset_mglv_wagon_gen7m_container_doublestack_refrigerated_l1_s3];
+    loaded: [spriteset_mglv_wagon_gen7m_container_doublestack_refrigerated_l1_s1, spriteset_mglv_wagon_gen7m_container_doublestack_refrigerated_l1_s2, spriteset_mglv_wagon_gen7m_container_doublestack_refrigerated_l1_s3];
 }
 
-//Livery 2 - Loading State 2 - Container
-spriteset(spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Container_L2_S2, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Container_Doublestack_Container.png") {
-	template_2cc_wagons(179, 32)
+/// LIVERY 2   LOADING STATE 1   REFRIGERATED
+spriteset(spriteset_mglv_wagon_gen7m_container_doublestack_refrigerated_l2_s1, "gfx/wagons_maglev/gen7m/wagon_gen7m_container_doublestack_refrigerated.png") {template_2cc_wagons(179, 1)}
+
+
+/// LIVERY 2   LOADING STATE 2   REFRIGERATED
+spriteset(spriteset_mglv_wagon_gen7m_container_doublestack_refrigerated_l2_s2, "gfx/wagons_maglev/gen7m/wagon_gen7m_container_doublestack_refrigerated.png") {template_2cc_wagons(179, 32)}
+
+
+/// LIVERY 2   LOADING STATE 3   REFRIGERATED
+spriteset(spriteset_mglv_wagon_gen7m_container_doublestack_refrigerated_l2_s3, "gfx/wagons_maglev/gen7m/wagon_gen7m_container_doublestack_refrigerated.png") {template_2cc_wagons(179, 64)}
+
+
+/// LIVERY 2 SPRITEGROUP - REFRIGERATED
+spritegroup spritegroup_mglv_wagon_gen7m_container_doublestack_refrigerated_l2 {
+    loading: [spriteset_mglv_wagon_gen7m_container_doublestack_refrigerated_l2_s1, spriteset_mglv_wagon_gen7m_container_doublestack_refrigerated_l2_s2, spriteset_mglv_wagon_gen7m_container_doublestack_refrigerated_l2_s3];
+    loaded: [spriteset_mglv_wagon_gen7m_container_doublestack_refrigerated_l2_s1, spriteset_mglv_wagon_gen7m_container_doublestack_refrigerated_l2_s2, spriteset_mglv_wagon_gen7m_container_doublestack_refrigerated_l2_s3];
 }
 
-//Livery 2 - Loading State 3 - Container
-spriteset(spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Container_L2_S3, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Container_Doublestack_Container.png") {
-	template_2cc_wagons(179, 64)
+/// LIVERY 3   LOADING STATE 1   REFRIGERATED
+spriteset(spriteset_mglv_wagon_gen7m_container_doublestack_refrigerated_l3_s1, "gfx/wagons_maglev/gen7m/wagon_gen7m_container_doublestack_refrigerated.png") {template_2cc_wagons(357, 1)}
+
+
+/// LIVERY 3   LOADING STATE 2   REFRIGERATED
+spriteset(spriteset_mglv_wagon_gen7m_container_doublestack_refrigerated_l3_s2, "gfx/wagons_maglev/gen7m/wagon_gen7m_container_doublestack_refrigerated.png") {template_2cc_wagons(357, 32)}
+
+
+/// LIVERY 3   LOADING STATE 3   REFRIGERATED
+spriteset(spriteset_mglv_wagon_gen7m_container_doublestack_refrigerated_l3_s3, "gfx/wagons_maglev/gen7m/wagon_gen7m_container_doublestack_refrigerated.png") {template_2cc_wagons(357, 64)}
+
+
+/// LIVERY 3 SPRITEGROUP - REFRIGERATED
+spritegroup spritegroup_mglv_wagon_gen7m_container_doublestack_refrigerated_l3 {
+    loading: [spriteset_mglv_wagon_gen7m_container_doublestack_refrigerated_l3_s1, spriteset_mglv_wagon_gen7m_container_doublestack_refrigerated_l3_s2, spriteset_mglv_wagon_gen7m_container_doublestack_refrigerated_l3_s3];
+    loaded: [spriteset_mglv_wagon_gen7m_container_doublestack_refrigerated_l3_s1, spriteset_mglv_wagon_gen7m_container_doublestack_refrigerated_l3_s2, spriteset_mglv_wagon_gen7m_container_doublestack_refrigerated_l3_s3];
 }
 
-//Livery 2 Spritegroup - Container
-spritegroup spritegroup_wagon_Gen7M_Container_Doublestack_Container_L2 {
-	loading: [spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Container_L2_S1, spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Container_L2_S2, spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Container_L2_S3];
-	loaded: [spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Container_L2_S1, spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Container_L2_S2, spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Container_L2_S3];	
+/// LIVERY 4   LOADING STATE 1   REFRIGERATED
+spriteset(spriteset_mglv_wagon_gen7m_container_doublestack_refrigerated_l4_s1, "gfx/wagons_maglev/gen7m/wagon_gen7m_container_doublestack_refrigerated.png") {template_2cc_wagons(535, 1)}
+
+
+/// LIVERY 4   LOADING STATE 2   REFRIGERATED
+spriteset(spriteset_mglv_wagon_gen7m_container_doublestack_refrigerated_l4_s2, "gfx/wagons_maglev/gen7m/wagon_gen7m_container_doublestack_refrigerated.png") {template_2cc_wagons(535, 32)}
+
+
+/// LIVERY 4   LOADING STATE 3   REFRIGERATED
+spriteset(spriteset_mglv_wagon_gen7m_container_doublestack_refrigerated_l4_s3, "gfx/wagons_maglev/gen7m/wagon_gen7m_container_doublestack_refrigerated.png") {template_2cc_wagons(535, 64)}
+
+
+/// LIVERY 4 SPRITEGROUP - REFRIGERATED
+spritegroup spritegroup_mglv_wagon_gen7m_container_doublestack_refrigerated_l4 {
+    loading: [spriteset_mglv_wagon_gen7m_container_doublestack_refrigerated_l4_s1, spriteset_mglv_wagon_gen7m_container_doublestack_refrigerated_l4_s2, spriteset_mglv_wagon_gen7m_container_doublestack_refrigerated_l4_s3];
+    loaded: [spriteset_mglv_wagon_gen7m_container_doublestack_refrigerated_l4_s1, spriteset_mglv_wagon_gen7m_container_doublestack_refrigerated_l4_s2, spriteset_mglv_wagon_gen7m_container_doublestack_refrigerated_l4_s3];
 }
 
-//Livery 3 - Loading State 1 - Container
-spriteset(spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Container_L3_S1, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Container_Doublestack_Container.png") {
-	template_2cc_wagons(357, 1)
+// Random Livery Selector for refrigerated
+random_switch(FEAT_TRAINS, SELF, switch_mglv_wagon_gen7m_container_doublestack_refrigerated_livery) {
+	7: spritegroup_mglv_wagon_gen7m_container_doublestack_refrigerated_l1;
+	1: spritegroup_mglv_wagon_gen7m_container_doublestack_refrigerated_l2;
+	1: spritegroup_mglv_wagon_gen7m_container_doublestack_refrigerated_l3;
+	1: spritegroup_mglv_wagon_gen7m_container_doublestack_refrigerated_l4;
 }
 
-//Livery 3 - Loading State 2 - Container
-spriteset(spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Container_L3_S2, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Container_Doublestack_Container.png") {
-	template_2cc_wagons(357, 32)
+
+// Goods have multiple liveries
+random_switch(FEAT_TRAINS, SELF, switch_mglv_wagon_gen7m_container_doublestack_goods_livery) {
+	7: switch_mglv_wagon_gen7m_container_doublestack_container_livery;
+	3: switch_mglv_wagon_gen7m_container_doublestack_refrigerated_livery;
 }
 
-//Livery 3 - Loading State 3 - Container
-spriteset(spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Container_L3_S3, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Container_Doublestack_Container.png") {
-	template_2cc_wagons(357, 64)
+switch(FEAT_TRAINS, SELF, switch_mglv_wagon_gen7m_container_doublestack_cargo_selection, cargo_type_in_veh) {
+	GOOD: switch_mglv_wagon_gen7m_container_doublestack_goods_livery;
+	FOOD: switch_mglv_wagon_gen7m_container_doublestack_refrigerated_livery;
+	FRUT: switch_mglv_wagon_gen7m_container_doublestack_refrigerated_livery;
+	FZDR: switch_mglv_wagon_gen7m_container_doublestack_refrigerated_livery;
+	FISH: switch_mglv_wagon_gen7m_container_doublestack_refrigerated_livery;
+    // PAPR, TOYS, BATT, SWET, BUBL, BDMT, BRCK, CERA, CERE, COPR, ENSP, FERT,
+    // FICR, FMSP, GLAS, JAVA, MNSP, RCYC, WDPR, WOOL, URAN
+	switch_mglv_wagon_gen7m_container_doublestack_container_livery;
 }
-
-//Livery 3 Spritegroup - Container
-spritegroup spritegroup_wagon_Gen7M_Container_Doublestack_Container_L3 {
-	loading: [spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Container_L3_S1, spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Container_L3_S2, spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Container_L3_S3];
-	loaded: [spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Container_L3_S1, spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Container_L3_S2, spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Container_L3_S3];	
-}
-
-//Livery 4 - Loading State 1 - Container
-spriteset(spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Container_L4_S1, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Container_Doublestack_Container.png") {
-	template_2cc_wagons(535, 1)
-}
-
-//Livery 4 - Loading State 2 - Container
-spriteset(spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Container_L4_S2, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Container_Doublestack_Container.png") {
-	template_2cc_wagons(535, 32)
-}
-
-//Livery 4 - Loading State 3 - Container
-spriteset(spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Container_L4_S3, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Container_Doublestack_Container.png") {
-	template_2cc_wagons(535, 64)
-}
-
-//Livery 4 Spritegroup - Container
-spritegroup spritegroup_wagon_Gen7M_Container_Doublestack_Container_L4 {
-	loading: [spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Container_L4_S1, spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Container_L4_S2, spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Container_L4_S3];
-	loaded: [spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Container_L4_S1, spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Container_L4_S2, spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Container_L4_S3];	
-}
-
-random_switch(FEAT_TRAINS, SELF, switch_mglv_Wagon_Gen7M_Container_Doublestack_Container_livery) {
-	7: spritegroup_wagon_Gen7M_Container_Doublestack_Container_L1;
-	1: spritegroup_wagon_Gen7M_Container_Doublestack_Container_L2;
-	1: spritegroup_wagon_Gen7M_Container_Doublestack_Container_L3;
-	1: spritegroup_wagon_Gen7M_Container_Doublestack_Container_L4;
-}
-
-/*
-* Refrigerated
-*/
-
-//Livery 1 - Loading State 1 - Refrigerated
-spriteset(spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Refrigerated_L1_S1, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Container_Doublestack_Refrigerated.png") {
-	template_2cc_wagons(1, 1)
-}
-
-//Livery 1 - Loading State 2 - Refrigerated
-spriteset(spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Refrigerated_L1_S2, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Container_Doublestack_Refrigerated.png") {
-	template_2cc_wagons(1, 32)
-}
-
-//Livery 1 - Loading State 3 - Refrigerated
-spriteset(spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Refrigerated_L1_S3, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Container_Doublestack_Refrigerated.png") {
-	template_2cc_wagons(1, 64)
-}
-
-//Livery 1 Spritegroup - Refrigerated
-spritegroup spritegroup_wagon_Gen7M_Container_Doublestack_Refrigerated_L1 {
-	loading: [spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Refrigerated_L1_S1, spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Refrigerated_L1_S2, spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Refrigerated_L1_S3];
-	loaded: [spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Refrigerated_L1_S1, spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Refrigerated_L1_S2, spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Refrigerated_L1_S3];
-}
-
-//Livery 2 - Loading State 1 - Refrigerated
-spriteset(spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Refrigerated_L2_S1, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Container_Doublestack_Refrigerated.png") {
-	template_2cc_wagons(179, 1)
-}
-
-//Livery 2 - Loading State 2 - Refrigerated
-spriteset(spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Refrigerated_L2_S2, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Container_Doublestack_Refrigerated.png") {
-	template_2cc_wagons(179, 32)
-}
-
-//Livery 2 - Loading State 3 - Refrigerated
-spriteset(spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Refrigerated_L2_S3, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Container_Doublestack_Refrigerated.png") {
-	template_2cc_wagons(179, 64)
-}
-
-//Livery 2 Spritegroup - Refrigerated
-spritegroup spritegroup_wagon_Gen7M_Container_Doublestack_Refrigerated_L2 {
-	loading: [spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Refrigerated_L2_S1, spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Refrigerated_L2_S2, spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Refrigerated_L2_S3];
-	loaded: [spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Refrigerated_L2_S1, spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Refrigerated_L2_S2, spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Refrigerated_L2_S3];	
-}
-
-//Livery 3 - Loading State 1 - Refrigerated
-spriteset(spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Refrigerated_L3_S1, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Container_Doublestack_Refrigerated.png") {
-	template_2cc_wagons(357, 1)
-}
-
-//Livery 3 - Loading State 2 - Refrigerated
-spriteset(spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Refrigerated_L3_S2, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Container_Doublestack_Refrigerated.png") {
-	template_2cc_wagons(357, 32)
-}
-
-//Livery 3 - Loading State 3 - Refrigerated
-spriteset(spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Refrigerated_L3_S3, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Container_Doublestack_Refrigerated.png") {
-	template_2cc_wagons(357, 64)
-}
-
-//Livery 3 Spritegroup - Refrigerated
-spritegroup spritegroup_wagon_Gen7M_Container_Doublestack_Refrigerated_L3 {
-	loading: [spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Refrigerated_L3_S1, spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Refrigerated_L3_S2, spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Refrigerated_L3_S3];
-	loaded: [spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Refrigerated_L3_S1, spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Refrigerated_L3_S2, spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Refrigerated_L3_S3];	
-}
-
-//Livery 4 - Loading State 1 - Refrigerated
-spriteset(spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Refrigerated_L4_S1, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Container_Doublestack_Refrigerated.png") {
-	template_2cc_wagons(535, 1)
-}
-
-//Livery 4 - Loading State 2 - Refrigerated
-spriteset(spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Refrigerated_L4_S2, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Container_Doublestack_Refrigerated.png") {
-	template_2cc_wagons(535, 32)
-}
-
-//Livery 4 - Loading State 3 - Refrigerated
-spriteset(spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Refrigerated_L4_S3, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Container_Doublestack_Refrigerated.png") {
-	template_2cc_wagons(535, 64)
-}
-
-//Livery 4 Spritegroup - Refrigerated
-spritegroup spritegroup_wagon_Gen7M_Container_Doublestack_Refrigerated_L4 {
-	loading: [spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Refrigerated_L4_S1, spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Refrigerated_L4_S2, spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Refrigerated_L4_S3];
-	loaded: [spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Refrigerated_L4_S1, spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Refrigerated_L4_S2, spriteset_mglv_Wagon_Gen7M_Container_Doublestack_Refrigerated_L4_S3];	
-}
-
-random_switch(FEAT_TRAINS, SELF, switch_mglv_Wagon_Gen7M_Container_Doublestack_Refrigerated_livery) {
-	7: spritegroup_wagon_Gen7M_Container_Doublestack_Refrigerated_L1;
-	1: spritegroup_wagon_Gen7M_Container_Doublestack_Refrigerated_L2;
-	1: spritegroup_wagon_Gen7M_Container_Doublestack_Refrigerated_L3;
-	1: spritegroup_wagon_Gen7M_Container_Doublestack_Refrigerated_L4;
-}
-
-//Goods have multiple liveries
-random_switch(FEAT_TRAINS, SELF, switch_mglv_Wagon_Gen7M_Container_Doublestack_Goods_livery) {
-	7: switch_mglv_Wagon_Gen7M_Container_Doublestack_Container_livery;
-	3: switch_mglv_Wagon_Gen7M_Container_Doublestack_Refrigerated_livery;
-}
-
-switch(FEAT_TRAINS, SELF, switch_mglv_Wagon_Gen7M_Container_Doublestack_cargo_selection, cargo_type_in_veh) {
-	GOOD: switch_mglv_Wagon_Gen7M_Container_Doublestack_Goods_livery;
-	FOOD: switch_mglv_Wagon_Gen7M_Container_Doublestack_Refrigerated_livery;
-	FRUT: switch_mglv_Wagon_Gen7M_Container_Doublestack_Refrigerated_livery;
-	FZDR: switch_mglv_Wagon_Gen7M_Container_Doublestack_Refrigerated_livery;
-	FISH: switch_mglv_Wagon_Gen7M_Container_Doublestack_Refrigerated_livery;
-	switch_mglv_Wagon_Gen7M_Container_Doublestack_Container_livery; //PAPR, TOYS, BATT, SWET, BUBL, BDMT, BRCK, CERA, CERE, COPR, ENSP, FERT, FICR, FMSP, GLAS, JAVA, MNSP, RCYC, WDPR, WOOL, URAN
-}
-
-//Add defined switches 
-
-// ENGINECAPACITYSWITCH(VEHIDCODE)
-
-// RUNNINGCOST_ENGINE_SWITCH
-
-// PURCHASETEXT_SWITCH

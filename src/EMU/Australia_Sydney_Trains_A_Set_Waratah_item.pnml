@@ -2,24 +2,27 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
+
+// Template: TPL_02A
+
 // Cargo capacity
 
-    switch(FEAT_TRAINS, SELF, switch_emu_Australia_Sydney_Trains_A_Set_Waratah_capacity_engine, cargo_classes) { \
+    switch(FEAT_TRAINS, SELF, switch_emu_australia_sydney_trains_a_set_waratah_capacity_engine, cargo_classes) { \
         bitmask(CC_MAIL): 110/2; \
         bitmask(CC_ARMOURED): 110/4; \
         110; \
     }
 
 
-    switch(FEAT_TRAINS, SELF, switch_emu_Australia_Sydney_Trains_A_Set_Waratah_capacity_wagon, cargo_classes) { \
+    switch(FEAT_TRAINS, SELF, switch_emu_australia_sydney_trains_a_set_waratah_capacity_wagon, cargo_classes) { \
         bitmask(CC_MAIL): 110/2; \
         bitmask(CC_ARMOURED): 110/4; \
         110; \
     }
 
-item(FEAT_TRAINS, item_emu_Australia_Sydney_Trains_A_Set_Waratah) {
+item(FEAT_TRAINS, item_emu_australia_sydney_trains_a_set_waratah) {
     property {
-        name: string(str_emu_Australia_Sydney_Trains_A_Set_Waratah);
+        name: string(str_emu_australia_sydney_trains_a_set_waratah);
         climates_available: ((param_region_oceania || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(2011,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
@@ -53,26 +56,26 @@ item(FEAT_TRAINS, item_emu_Australia_Sydney_Trains_A_Set_Waratah) {
         bitmask_vehicle_info: 0;
     }
     graphics {
-        purchase: spriteset_emu_Australia_Sydney_Trains_A_Set_Waratah_purchase;
-        cargo_capacity: switch_emu_Australia_Sydney_Trains_A_Set_Waratah_capacity_engine;
-        visual_effect_and_powered: switch_emu_Australia_Sydney_Trains_A_Set_Waratah_visual_effect_and_powered;
+        purchase: spriteset_emu_australia_sydney_trains_a_set_waratah_purchase;
+        cargo_capacity: switch_emu_australia_sydney_trains_a_set_waratah_capacity_engine;
+        visual_effect_and_powered: switch_emu_australia_sydney_trains_a_set_waratah_visual_effect_and_powered;
         // no 'length'
         // no 'articulated_part'
         can_attach_wagon: switch_can_attach_vehicle;
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
         // PURCHASETEXT_SWITCH_CALL // this is actually blank
-        default: switch_emu_Australia_Sydney_Trains_A_Set_Waratah_reversed;
+        default: switch_emu_australia_sydney_trains_a_set_waratah_reversed;
     }
-    livery_override (item_mu_MU_Wagon_Unpowered) {
+    livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: int(130/10);
         weight: int(51*1/2);
         cargo_capacity: 110;
         length: 8;
-        default: switch_emu_Australia_Sydney_Trains_A_Set_Waratah_cargo_selection;
+        default: switch_emu_australia_sydney_trains_a_set_waratah_cargo_selection;
     }
-    livery_override (item_mu_MU_Wagon_Powered) {
+    livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: (round(29.09664085392604));
         power: int(1120*1/2);
@@ -80,6 +83,6 @@ item(FEAT_TRAINS, item_emu_Australia_Sydney_Trains_A_Set_Waratah) {
         cargo_capacity: 110;
         tractive_effort_coefficient: int(0.25*10*51);
         length: 8;
-        default: switch_emu_Australia_Sydney_Trains_A_Set_Waratah_cargo_selection;
+        default: switch_emu_australia_sydney_trains_a_set_waratah_cargo_selection;
     }
 }

@@ -2,9 +2,12 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
-item(FEAT_TRAINS, item_diesel_Egypt_ENR_2400_GE_ES40ACi) {
+
+// Template: TPL_01A
+
+item(FEAT_TRAINS, item_diesel_egypt_enr_2400_ge_es40aci) {
     property {
-        name: string(str_diesel_Egypt_ENR_2400_GE_ES40ACi);
+        name: string(str_diesel_egypt_enr_2400_ge_es40aci);
         climates_available: ((param_region_africa || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(2009,1,1);
         model_life: 45;
@@ -38,7 +41,7 @@ item(FEAT_TRAINS, item_diesel_Egypt_ENR_2400_GE_ES40ACi) {
         bitmask_vehicle_info: 0;
     }
     graphics {
-        purchase: spriteset_diesel_Egypt_ENR_2400_GE_ES40ACi_purchase;
+        purchase: spriteset_diesel_egypt_enr_2400_ge_es40aci_purchase;
         // no 'visual_effect' or 'visual_effect_and_powered'
         // no 'length'
         // no 'articulated_part'
@@ -46,6 +49,6 @@ item(FEAT_TRAINS, item_diesel_Egypt_ENR_2400_GE_ES40ACi) {
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
         // PURCHASETEXT_SWITCH_CALL // this is actually blank
-        default: spriteset_diesel_Egypt_ENR_2400_GE_ES40ACi;
+        default: spriteset_diesel_egypt_enr_2400_ge_es40aci;
     }
 }

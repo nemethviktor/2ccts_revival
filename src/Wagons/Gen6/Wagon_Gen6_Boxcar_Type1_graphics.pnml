@@ -1,422 +1,363 @@
-/*
- *  Copyright (C) 2017 Transportman // V. Nemeth 2026
- *  This file is part of the 2cc Trains In NML
- *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
+//  Copyright (C) 2017 Transportman // V. Nemeth 2026+
+//  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
-*/
+// Template: TPL_04C
 
-/*
-* PURCHASE
-*/
+// PURCHASE
+spriteset(spriteset_mu_wagon_gen6_boxcar_type1_purchase, "gfx/wagons/gen6/wagon_gen6_boxcar_type1_purchase.png") {template_purchase_wagon(1, 1)}
 
-spriteset(spriteset_mu_Wagon_Gen6_Boxcar_Type1_purchase, "gfx/Wagons/Gen6/Wagon_Gen6_Boxcar_Type1_Purchase.png") {
-	template_purchase_wagon(1, 1)
-}
 
-/*
-* Armoured
-*/
+// VEHICLE
 
-//Livery 1 - Loading State 1 - Armoured
-spriteset(spriteset_mu_Wagon_Gen6_Boxcar_Type1_Armoured_L1_S1, "gfx/Wagons/Gen6/Wagon_Gen6_Boxcar_Type1_Armoured.png") {
-	template_2cc_wagons(1, 1)
-}
+// armoured
 
-//Livery 1 - Loading State 2 - Armoured
-spriteset(spriteset_mu_Wagon_Gen6_Boxcar_Type1_Armoured_L1_S2, "gfx/Wagons/Gen6/Wagon_Gen6_Boxcar_Type1_Armoured.png") {
-	template_2cc_wagons(1, 32)
-}
+/// LIVERY 1   LOADING STATE 1   ARMOURED
+spriteset(spriteset_mu_wagon_gen6_boxcar_type1_armoured_l1_s1, "gfx/wagons/gen6/wagon_gen6_boxcar_type1_armoured.png") {template_2cc_wagons(1, 1)}
 
-//Livery 1 - Loading State 3 - Armoured
-spriteset(spriteset_mu_Wagon_Gen6_Boxcar_Type1_Armoured_L1_S3, "gfx/Wagons/Gen6/Wagon_Gen6_Boxcar_Type1_Armoured.png") {
-	template_2cc_wagons(1, 64)
-}
 
-//Livery 1 Spritegroup - Armoured
-spritegroup spritegroup_wagon_Gen6_Boxcar_Type1_Armoured_L1 {
-	loading: [spriteset_mu_Wagon_Gen6_Boxcar_Type1_Armoured_L1_S1, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Armoured_L1_S2, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Armoured_L1_S3];
-	loaded: [spriteset_mu_Wagon_Gen6_Boxcar_Type1_Armoured_L1_S1, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Armoured_L1_S2, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Armoured_L1_S3];
-}
+/// LIVERY 1   LOADING STATE 2   ARMOURED
+spriteset(spriteset_mu_wagon_gen6_boxcar_type1_armoured_l1_s2, "gfx/wagons/gen6/wagon_gen6_boxcar_type1_armoured.png") {template_2cc_wagons(1, 32)}
 
-//Livery 2 - Loading State 1 - Armoured
-spriteset(spriteset_mu_Wagon_Gen6_Boxcar_Type1_Armoured_L2_S1, "gfx/Wagons/Gen6/Wagon_Gen6_Boxcar_Type1_Armoured.png") {
-	template_2cc_wagons(179, 1)
-}
 
-//Livery 2 - Loading State 2 - Armoured
-spriteset(spriteset_mu_Wagon_Gen6_Boxcar_Type1_Armoured_L2_S2, "gfx/Wagons/Gen6/Wagon_Gen6_Boxcar_Type1_Armoured.png") {
-	template_2cc_wagons(179, 32)
-}
+/// LIVERY 1   LOADING STATE 3   ARMOURED
+spriteset(spriteset_mu_wagon_gen6_boxcar_type1_armoured_l1_s3, "gfx/wagons/gen6/wagon_gen6_boxcar_type1_armoured.png") {template_2cc_wagons(1, 64)}
 
-//Livery 2 - Loading State 3 - Armoured
-spriteset(spriteset_mu_Wagon_Gen6_Boxcar_Type1_Armoured_L2_S3, "gfx/Wagons/Gen6/Wagon_Gen6_Boxcar_Type1_Armoured.png") {
-	template_2cc_wagons(179, 64)
-}
 
-//Livery 2 Spritegroup - Armoured
-spritegroup spritegroup_wagon_Gen6_Boxcar_Type1_Armoured_L2 {
-	loading: [spriteset_mu_Wagon_Gen6_Boxcar_Type1_Armoured_L2_S1, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Armoured_L2_S2, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Armoured_L2_S3];
-	loaded: [spriteset_mu_Wagon_Gen6_Boxcar_Type1_Armoured_L2_S1, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Armoured_L2_S2, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Armoured_L2_S3];	
+/// LIVERY 1 SPRITEGROUP - ARMOURED
+spritegroup spritegroup_mu_wagon_gen6_boxcar_type1_armoured_l1 {
+    loading: [spriteset_mu_wagon_gen6_boxcar_type1_armoured_l1_s1, spriteset_mu_wagon_gen6_boxcar_type1_armoured_l1_s2, spriteset_mu_wagon_gen6_boxcar_type1_armoured_l1_s3];
+    loaded: [spriteset_mu_wagon_gen6_boxcar_type1_armoured_l1_s1, spriteset_mu_wagon_gen6_boxcar_type1_armoured_l1_s2, spriteset_mu_wagon_gen6_boxcar_type1_armoured_l1_s3];
 }
 
-//Livery 3 - Loading State 1 - Armoured
-spriteset(spriteset_mu_Wagon_Gen6_Boxcar_Type1_Armoured_L3_S1, "gfx/Wagons/Gen6/Wagon_Gen6_Boxcar_Type1_Armoured.png") {
-	template_2cc_wagons(357, 1)
-}
+/// LIVERY 2   LOADING STATE 1   ARMOURED
+spriteset(spriteset_mu_wagon_gen6_boxcar_type1_armoured_l2_s1, "gfx/wagons/gen6/wagon_gen6_boxcar_type1_armoured.png") {template_2cc_wagons(179, 1)}
 
-//Livery 3 - Loading State 2 - Armoured
-spriteset(spriteset_mu_Wagon_Gen6_Boxcar_Type1_Armoured_L3_S2, "gfx/Wagons/Gen6/Wagon_Gen6_Boxcar_Type1_Armoured.png") {
-	template_2cc_wagons(357, 32)
-}
 
-//Livery 3 - Loading State 3 - Armoured
-spriteset(spriteset_mu_Wagon_Gen6_Boxcar_Type1_Armoured_L3_S3, "gfx/Wagons/Gen6/Wagon_Gen6_Boxcar_Type1_Armoured.png") {
-	template_2cc_wagons(357, 64)
-}
+/// LIVERY 2   LOADING STATE 2   ARMOURED
+spriteset(spriteset_mu_wagon_gen6_boxcar_type1_armoured_l2_s2, "gfx/wagons/gen6/wagon_gen6_boxcar_type1_armoured.png") {template_2cc_wagons(179, 32)}
 
-//Livery 3 Spritegroup - Armoured
-spritegroup spritegroup_wagon_Gen6_Boxcar_Type1_Armoured_L3 {
-	loading: [spriteset_mu_Wagon_Gen6_Boxcar_Type1_Armoured_L3_S1, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Armoured_L3_S2, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Armoured_L3_S3];
-	loaded: [spriteset_mu_Wagon_Gen6_Boxcar_Type1_Armoured_L3_S1, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Armoured_L3_S2, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Armoured_L3_S3];	
-}
 
-//Livery 4 - Loading State 1 - Armoured
-spriteset(spriteset_mu_Wagon_Gen6_Boxcar_Type1_Armoured_L4_S1, "gfx/Wagons/Gen6/Wagon_Gen6_Boxcar_Type1_Armoured.png") {
-	template_2cc_wagons(535, 1)
-}
+/// LIVERY 2   LOADING STATE 3   ARMOURED
+spriteset(spriteset_mu_wagon_gen6_boxcar_type1_armoured_l2_s3, "gfx/wagons/gen6/wagon_gen6_boxcar_type1_armoured.png") {template_2cc_wagons(179, 64)}
 
-//Livery 4 - Loading State 2 - Armoured
-spriteset(spriteset_mu_Wagon_Gen6_Boxcar_Type1_Armoured_L4_S2, "gfx/Wagons/Gen6/Wagon_Gen6_Boxcar_Type1_Armoured.png") {
-	template_2cc_wagons(535, 32)
-}
 
-//Livery 4 - Loading State 3 - Armoured
-spriteset(spriteset_mu_Wagon_Gen6_Boxcar_Type1_Armoured_L4_S3, "gfx/Wagons/Gen6/Wagon_Gen6_Boxcar_Type1_Armoured.png") {
-	template_2cc_wagons(535, 64)
+/// LIVERY 2 SPRITEGROUP - ARMOURED
+spritegroup spritegroup_mu_wagon_gen6_boxcar_type1_armoured_l2 {
+    loading: [spriteset_mu_wagon_gen6_boxcar_type1_armoured_l2_s1, spriteset_mu_wagon_gen6_boxcar_type1_armoured_l2_s2, spriteset_mu_wagon_gen6_boxcar_type1_armoured_l2_s3];
+    loaded: [spriteset_mu_wagon_gen6_boxcar_type1_armoured_l2_s1, spriteset_mu_wagon_gen6_boxcar_type1_armoured_l2_s2, spriteset_mu_wagon_gen6_boxcar_type1_armoured_l2_s3];
 }
 
-//Livery 4 Spritegroup - Armoured
-spritegroup spritegroup_wagon_Gen6_Boxcar_Type1_Armoured_L4 {
-	loading: [spriteset_mu_Wagon_Gen6_Boxcar_Type1_Armoured_L4_S1, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Armoured_L4_S2, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Armoured_L4_S3];
-	loaded: [spriteset_mu_Wagon_Gen6_Boxcar_Type1_Armoured_L4_S1, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Armoured_L4_S2, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Armoured_L4_S3];	
-}
+/// LIVERY 3   LOADING STATE 1   ARMOURED
+spriteset(spriteset_mu_wagon_gen6_boxcar_type1_armoured_l3_s1, "gfx/wagons/gen6/wagon_gen6_boxcar_type1_armoured.png") {template_2cc_wagons(357, 1)}
 
-random_switch(FEAT_TRAINS, SELF, switch_mu_Wagon_Gen6_Boxcar_Type1_Armoured_livery) {
-	7: spritegroup_wagon_Gen6_Boxcar_Type1_Armoured_L1;
-	1: spritegroup_wagon_Gen6_Boxcar_Type1_Armoured_L2;
-	1: spritegroup_wagon_Gen6_Boxcar_Type1_Armoured_L3;
-	1: spritegroup_wagon_Gen6_Boxcar_Type1_Armoured_L4;
-}
 
-/*
-* Livestock
-*/
+/// LIVERY 3   LOADING STATE 2   ARMOURED
+spriteset(spriteset_mu_wagon_gen6_boxcar_type1_armoured_l3_s2, "gfx/wagons/gen6/wagon_gen6_boxcar_type1_armoured.png") {template_2cc_wagons(357, 32)}
 
-//Livery 1 - Loading State 1 - Livestock
-spriteset(spriteset_mu_Wagon_Gen6_Boxcar_Type1_Livestock_L1_S1, "gfx/Wagons/Gen6/Wagon_Gen6_Boxcar_Type1_Livestock.png") {
-	template_2cc_wagons(1, 1)
-}
 
-//Livery 1 - Loading State 2 - Livestock
-spriteset(spriteset_mu_Wagon_Gen6_Boxcar_Type1_Livestock_L1_S2, "gfx/Wagons/Gen6/Wagon_Gen6_Boxcar_Type1_Livestock.png") {
-	template_2cc_wagons(1, 32)
-}
+/// LIVERY 3   LOADING STATE 3   ARMOURED
+spriteset(spriteset_mu_wagon_gen6_boxcar_type1_armoured_l3_s3, "gfx/wagons/gen6/wagon_gen6_boxcar_type1_armoured.png") {template_2cc_wagons(357, 64)}
 
-//Livery 1 - Loading State 3 - Livestock
-spriteset(spriteset_mu_Wagon_Gen6_Boxcar_Type1_Livestock_L1_S3, "gfx/Wagons/Gen6/Wagon_Gen6_Boxcar_Type1_Livestock.png") {
-	template_2cc_wagons(1, 64)
-}
 
-//Livery 1 Spritegroup - Livestock
-spritegroup spritegroup_wagon_Gen6_Boxcar_Type1_Livestock_L1 {
-	loading: [spriteset_mu_Wagon_Gen6_Boxcar_Type1_Livestock_L1_S1, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Livestock_L1_S2, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Livestock_L1_S3];
-	loaded: [spriteset_mu_Wagon_Gen6_Boxcar_Type1_Livestock_L1_S1, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Livestock_L1_S2, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Livestock_L1_S3];
+/// LIVERY 3 SPRITEGROUP - ARMOURED
+spritegroup spritegroup_mu_wagon_gen6_boxcar_type1_armoured_l3 {
+    loading: [spriteset_mu_wagon_gen6_boxcar_type1_armoured_l3_s1, spriteset_mu_wagon_gen6_boxcar_type1_armoured_l3_s2, spriteset_mu_wagon_gen6_boxcar_type1_armoured_l3_s3];
+    loaded: [spriteset_mu_wagon_gen6_boxcar_type1_armoured_l3_s1, spriteset_mu_wagon_gen6_boxcar_type1_armoured_l3_s2, spriteset_mu_wagon_gen6_boxcar_type1_armoured_l3_s3];
 }
 
-//Livery 2 - Loading State 1 - Livestock
-spriteset(spriteset_mu_Wagon_Gen6_Boxcar_Type1_Livestock_L2_S1, "gfx/Wagons/Gen6/Wagon_Gen6_Boxcar_Type1_Livestock.png") {
-	template_2cc_wagons(179, 1)
-}
+/// LIVERY 4   LOADING STATE 1   ARMOURED
+spriteset(spriteset_mu_wagon_gen6_boxcar_type1_armoured_l4_s1, "gfx/wagons/gen6/wagon_gen6_boxcar_type1_armoured.png") {template_2cc_wagons(535, 1)}
 
-//Livery 2 - Loading State 2 - Livestock
-spriteset(spriteset_mu_Wagon_Gen6_Boxcar_Type1_Livestock_L2_S2, "gfx/Wagons/Gen6/Wagon_Gen6_Boxcar_Type1_Livestock.png") {
-	template_2cc_wagons(179, 32)
-}
 
-//Livery 2 - Loading State 3 - Livestock
-spriteset(spriteset_mu_Wagon_Gen6_Boxcar_Type1_Livestock_L2_S3, "gfx/Wagons/Gen6/Wagon_Gen6_Boxcar_Type1_Livestock.png") {
-	template_2cc_wagons(179, 64)
-}
+/// LIVERY 4   LOADING STATE 2   ARMOURED
+spriteset(spriteset_mu_wagon_gen6_boxcar_type1_armoured_l4_s2, "gfx/wagons/gen6/wagon_gen6_boxcar_type1_armoured.png") {template_2cc_wagons(535, 32)}
 
-//Livery 2 Spritegroup - Livestock
-spritegroup spritegroup_wagon_Gen6_Boxcar_Type1_Livestock_L2 {
-	loading: [spriteset_mu_Wagon_Gen6_Boxcar_Type1_Livestock_L2_S1, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Livestock_L2_S2, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Livestock_L2_S3];
-	loaded: [spriteset_mu_Wagon_Gen6_Boxcar_Type1_Livestock_L2_S1, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Livestock_L2_S2, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Livestock_L2_S3];	
-}
 
-//Livery 3 - Loading State 1 - Livestock
-spriteset(spriteset_mu_Wagon_Gen6_Boxcar_Type1_Livestock_L3_S1, "gfx/Wagons/Gen6/Wagon_Gen6_Boxcar_Type1_Livestock.png") {
-	template_2cc_wagons(357, 1)
-}
+/// LIVERY 4   LOADING STATE 3   ARMOURED
+spriteset(spriteset_mu_wagon_gen6_boxcar_type1_armoured_l4_s3, "gfx/wagons/gen6/wagon_gen6_boxcar_type1_armoured.png") {template_2cc_wagons(535, 64)}
 
-//Livery 3 - Loading State 2 - Livestock
-spriteset(spriteset_mu_Wagon_Gen6_Boxcar_Type1_Livestock_L3_S2, "gfx/Wagons/Gen6/Wagon_Gen6_Boxcar_Type1_Livestock.png") {
-	template_2cc_wagons(357, 32)
-}
 
-//Livery 3 - Loading State 3 - Livestock
-spriteset(spriteset_mu_Wagon_Gen6_Boxcar_Type1_Livestock_L3_S3, "gfx/Wagons/Gen6/Wagon_Gen6_Boxcar_Type1_Livestock.png") {
-	template_2cc_wagons(357, 64)
+/// LIVERY 4 SPRITEGROUP - ARMOURED
+spritegroup spritegroup_mu_wagon_gen6_boxcar_type1_armoured_l4 {
+    loading: [spriteset_mu_wagon_gen6_boxcar_type1_armoured_l4_s1, spriteset_mu_wagon_gen6_boxcar_type1_armoured_l4_s2, spriteset_mu_wagon_gen6_boxcar_type1_armoured_l4_s3];
+    loaded: [spriteset_mu_wagon_gen6_boxcar_type1_armoured_l4_s1, spriteset_mu_wagon_gen6_boxcar_type1_armoured_l4_s2, spriteset_mu_wagon_gen6_boxcar_type1_armoured_l4_s3];
 }
 
-//Livery 3 Spritegroup - Livestock
-spritegroup spritegroup_wagon_Gen6_Boxcar_Type1_Livestock_L3 {
-	loading: [spriteset_mu_Wagon_Gen6_Boxcar_Type1_Livestock_L3_S1, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Livestock_L3_S2, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Livestock_L3_S3];
-	loaded: [spriteset_mu_Wagon_Gen6_Boxcar_Type1_Livestock_L3_S1, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Livestock_L3_S2, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Livestock_L3_S3];	
+// Random Livery Selector for armoured
+random_switch(FEAT_TRAINS, SELF, switch_mu_wagon_gen6_boxcar_type1_armoured_livery) {
+	7: spritegroup_mu_wagon_gen6_boxcar_type1_armoured_l1;
+	1: spritegroup_mu_wagon_gen6_boxcar_type1_armoured_l2;
+	1: spritegroup_mu_wagon_gen6_boxcar_type1_armoured_l3;
+	1: spritegroup_mu_wagon_gen6_boxcar_type1_armoured_l4;
 }
 
-//Livery 4 - Loading State 1 - Livestock
-spriteset(spriteset_mu_Wagon_Gen6_Boxcar_Type1_Livestock_L4_S1, "gfx/Wagons/Gen6/Wagon_Gen6_Boxcar_Type1_Livestock.png") {
-	template_2cc_wagons(535, 1)
-}
+// livestock
 
-//Livery 4 - Loading State 2 - Livestock
-spriteset(spriteset_mu_Wagon_Gen6_Boxcar_Type1_Livestock_L4_S2, "gfx/Wagons/Gen6/Wagon_Gen6_Boxcar_Type1_Livestock.png") {
-	template_2cc_wagons(535, 32)
-}
+/// LIVERY 1   LOADING STATE 1   LIVESTOCK
+spriteset(spriteset_mu_wagon_gen6_boxcar_type1_livestock_l1_s1, "gfx/wagons/gen6/wagon_gen6_boxcar_type1_livestock.png") {template_2cc_wagons(1, 1)}
 
-//Livery 4 - Loading State 3 - Livestock
-spriteset(spriteset_mu_Wagon_Gen6_Boxcar_Type1_Livestock_L4_S3, "gfx/Wagons/Gen6/Wagon_Gen6_Boxcar_Type1_Livestock.png") {
-	template_2cc_wagons(535, 64)
-}
 
-//Livery 4 Spritegroup - Livestock
-spritegroup spritegroup_wagon_Gen6_Boxcar_Type1_Livestock_L4 {
-	loading: [spriteset_mu_Wagon_Gen6_Boxcar_Type1_Livestock_L4_S1, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Livestock_L4_S2, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Livestock_L4_S3];
-	loaded: [spriteset_mu_Wagon_Gen6_Boxcar_Type1_Livestock_L4_S1, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Livestock_L4_S2, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Livestock_L4_S3];	
-}
+/// LIVERY 1   LOADING STATE 2   LIVESTOCK
+spriteset(spriteset_mu_wagon_gen6_boxcar_type1_livestock_l1_s2, "gfx/wagons/gen6/wagon_gen6_boxcar_type1_livestock.png") {template_2cc_wagons(1, 32)}
 
-random_switch(FEAT_TRAINS, SELF, switch_mu_Wagon_Gen6_Boxcar_Type1_Livestock_livery) {
-	7: spritegroup_wagon_Gen6_Boxcar_Type1_Livestock_L1;
-	1: spritegroup_wagon_Gen6_Boxcar_Type1_Livestock_L2;
-	1: spritegroup_wagon_Gen6_Boxcar_Type1_Livestock_L3;
-	1: spritegroup_wagon_Gen6_Boxcar_Type1_Livestock_L4;
-}
 
-/*
-* Reefer
-*/
+/// LIVERY 1   LOADING STATE 3   LIVESTOCK
+spriteset(spriteset_mu_wagon_gen6_boxcar_type1_livestock_l1_s3, "gfx/wagons/gen6/wagon_gen6_boxcar_type1_livestock.png") {template_2cc_wagons(1, 64)}
 
-//Livery 1 - Loading State 1 - Reefer
-spriteset(spriteset_mu_Wagon_Gen6_Boxcar_Type1_Reefer_L1_S1, "gfx/Wagons/Gen6/Wagon_Gen6_Boxcar_Type1_Reefer.png") {
-	template_2cc_wagons(1, 1)
-}
 
-//Livery 1 - Loading State 2 - Reefer
-spriteset(spriteset_mu_Wagon_Gen6_Boxcar_Type1_Reefer_L1_S2, "gfx/Wagons/Gen6/Wagon_Gen6_Boxcar_Type1_Reefer.png") {
-	template_2cc_wagons(1, 32)
+/// LIVERY 1 SPRITEGROUP - LIVESTOCK
+spritegroup spritegroup_mu_wagon_gen6_boxcar_type1_livestock_l1 {
+    loading: [spriteset_mu_wagon_gen6_boxcar_type1_livestock_l1_s1, spriteset_mu_wagon_gen6_boxcar_type1_livestock_l1_s2, spriteset_mu_wagon_gen6_boxcar_type1_livestock_l1_s3];
+    loaded: [spriteset_mu_wagon_gen6_boxcar_type1_livestock_l1_s1, spriteset_mu_wagon_gen6_boxcar_type1_livestock_l1_s2, spriteset_mu_wagon_gen6_boxcar_type1_livestock_l1_s3];
 }
 
-//Livery 1 - Loading State 3 - Reefer
-spriteset(spriteset_mu_Wagon_Gen6_Boxcar_Type1_Reefer_L1_S3, "gfx/Wagons/Gen6/Wagon_Gen6_Boxcar_Type1_Reefer.png") {
-	template_2cc_wagons(1, 64)
-}
+/// LIVERY 2   LOADING STATE 1   LIVESTOCK
+spriteset(spriteset_mu_wagon_gen6_boxcar_type1_livestock_l2_s1, "gfx/wagons/gen6/wagon_gen6_boxcar_type1_livestock.png") {template_2cc_wagons(179, 1)}
 
-//Livery 1 Spritegroup - Reefer
-spritegroup spritegroup_wagon_Gen6_Boxcar_Type1_Reefer_L1 {
-	loading: [spriteset_mu_Wagon_Gen6_Boxcar_Type1_Reefer_L1_S1, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Reefer_L1_S2, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Reefer_L1_S3];
-	loaded: [spriteset_mu_Wagon_Gen6_Boxcar_Type1_Reefer_L1_S1, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Reefer_L1_S2, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Reefer_L1_S3];
-}
 
-//Livery 2 - Loading State 1 - Reefer
-spriteset(spriteset_mu_Wagon_Gen6_Boxcar_Type1_Reefer_L2_S1, "gfx/Wagons/Gen6/Wagon_Gen6_Boxcar_Type1_Reefer.png") {
-	template_2cc_wagons(179, 1)
-}
+/// LIVERY 2   LOADING STATE 2   LIVESTOCK
+spriteset(spriteset_mu_wagon_gen6_boxcar_type1_livestock_l2_s2, "gfx/wagons/gen6/wagon_gen6_boxcar_type1_livestock.png") {template_2cc_wagons(179, 32)}
 
-//Livery 2 - Loading State 2 - Reefer
-spriteset(spriteset_mu_Wagon_Gen6_Boxcar_Type1_Reefer_L2_S2, "gfx/Wagons/Gen6/Wagon_Gen6_Boxcar_Type1_Reefer.png") {
-	template_2cc_wagons(179, 32)
-}
 
-//Livery 2 - Loading State 3 - Reefer
-spriteset(spriteset_mu_Wagon_Gen6_Boxcar_Type1_Reefer_L2_S3, "gfx/Wagons/Gen6/Wagon_Gen6_Boxcar_Type1_Reefer.png") {
-	template_2cc_wagons(179, 64)
-}
+/// LIVERY 2   LOADING STATE 3   LIVESTOCK
+spriteset(spriteset_mu_wagon_gen6_boxcar_type1_livestock_l2_s3, "gfx/wagons/gen6/wagon_gen6_boxcar_type1_livestock.png") {template_2cc_wagons(179, 64)}
 
-//Livery 2 Spritegroup - Reefer
-spritegroup spritegroup_wagon_Gen6_Boxcar_Type1_Reefer_L2 {
-	loading: [spriteset_mu_Wagon_Gen6_Boxcar_Type1_Reefer_L2_S1, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Reefer_L2_S2, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Reefer_L2_S3];
-	loaded: [spriteset_mu_Wagon_Gen6_Boxcar_Type1_Reefer_L2_S1, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Reefer_L2_S2, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Reefer_L2_S3];	
-}
 
-//Livery 3 - Loading State 1 - Reefer
-spriteset(spriteset_mu_Wagon_Gen6_Boxcar_Type1_Reefer_L3_S1, "gfx/Wagons/Gen6/Wagon_Gen6_Boxcar_Type1_Reefer.png") {
-	template_2cc_wagons(357, 1)
+/// LIVERY 2 SPRITEGROUP - LIVESTOCK
+spritegroup spritegroup_mu_wagon_gen6_boxcar_type1_livestock_l2 {
+    loading: [spriteset_mu_wagon_gen6_boxcar_type1_livestock_l2_s1, spriteset_mu_wagon_gen6_boxcar_type1_livestock_l2_s2, spriteset_mu_wagon_gen6_boxcar_type1_livestock_l2_s3];
+    loaded: [spriteset_mu_wagon_gen6_boxcar_type1_livestock_l2_s1, spriteset_mu_wagon_gen6_boxcar_type1_livestock_l2_s2, spriteset_mu_wagon_gen6_boxcar_type1_livestock_l2_s3];
 }
 
-//Livery 3 - Loading State 2 - Reefer
-spriteset(spriteset_mu_Wagon_Gen6_Boxcar_Type1_Reefer_L3_S2, "gfx/Wagons/Gen6/Wagon_Gen6_Boxcar_Type1_Reefer.png") {
-	template_2cc_wagons(357, 32)
-}
+/// LIVERY 3   LOADING STATE 1   LIVESTOCK
+spriteset(spriteset_mu_wagon_gen6_boxcar_type1_livestock_l3_s1, "gfx/wagons/gen6/wagon_gen6_boxcar_type1_livestock.png") {template_2cc_wagons(357, 1)}
 
-//Livery 3 - Loading State 3 - Reefer
-spriteset(spriteset_mu_Wagon_Gen6_Boxcar_Type1_Reefer_L3_S3, "gfx/Wagons/Gen6/Wagon_Gen6_Boxcar_Type1_Reefer.png") {
-	template_2cc_wagons(357, 64)
-}
 
-//Livery 3 Spritegroup - Reefer
-spritegroup spritegroup_wagon_Gen6_Boxcar_Type1_Reefer_L3 {
-	loading: [spriteset_mu_Wagon_Gen6_Boxcar_Type1_Reefer_L3_S1, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Reefer_L3_S2, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Reefer_L3_S3];
-	loaded: [spriteset_mu_Wagon_Gen6_Boxcar_Type1_Reefer_L3_S1, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Reefer_L3_S2, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Reefer_L3_S3];	
-}
+/// LIVERY 3   LOADING STATE 2   LIVESTOCK
+spriteset(spriteset_mu_wagon_gen6_boxcar_type1_livestock_l3_s2, "gfx/wagons/gen6/wagon_gen6_boxcar_type1_livestock.png") {template_2cc_wagons(357, 32)}
 
-//Livery 4 - Loading State 1 - Reefer
-spriteset(spriteset_mu_Wagon_Gen6_Boxcar_Type1_Reefer_L4_S1, "gfx/Wagons/Gen6/Wagon_Gen6_Boxcar_Type1_Reefer.png") {
-	template_2cc_wagons(535, 1)
-}
 
-//Livery 4 - Loading State 2 - Reefer
-spriteset(spriteset_mu_Wagon_Gen6_Boxcar_Type1_Reefer_L4_S2, "gfx/Wagons/Gen6/Wagon_Gen6_Boxcar_Type1_Reefer.png") {
-	template_2cc_wagons(535, 32)
-}
+/// LIVERY 3   LOADING STATE 3   LIVESTOCK
+spriteset(spriteset_mu_wagon_gen6_boxcar_type1_livestock_l3_s3, "gfx/wagons/gen6/wagon_gen6_boxcar_type1_livestock.png") {template_2cc_wagons(357, 64)}
 
-//Livery 4 - Loading State 3 - Reefer
-spriteset(spriteset_mu_Wagon_Gen6_Boxcar_Type1_Reefer_L4_S3, "gfx/Wagons/Gen6/Wagon_Gen6_Boxcar_Type1_Reefer.png") {
-	template_2cc_wagons(535, 64)
-}
 
-//Livery 4 Spritegroup - Reefer
-spritegroup spritegroup_wagon_Gen6_Boxcar_Type1_Reefer_L4 {
-	loading: [spriteset_mu_Wagon_Gen6_Boxcar_Type1_Reefer_L4_S1, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Reefer_L4_S2, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Reefer_L4_S3];
-	loaded: [spriteset_mu_Wagon_Gen6_Boxcar_Type1_Reefer_L4_S1, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Reefer_L4_S2, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Reefer_L4_S3];	
+/// LIVERY 3 SPRITEGROUP - LIVESTOCK
+spritegroup spritegroup_mu_wagon_gen6_boxcar_type1_livestock_l3 {
+    loading: [spriteset_mu_wagon_gen6_boxcar_type1_livestock_l3_s1, spriteset_mu_wagon_gen6_boxcar_type1_livestock_l3_s2, spriteset_mu_wagon_gen6_boxcar_type1_livestock_l3_s3];
+    loaded: [spriteset_mu_wagon_gen6_boxcar_type1_livestock_l3_s1, spriteset_mu_wagon_gen6_boxcar_type1_livestock_l3_s2, spriteset_mu_wagon_gen6_boxcar_type1_livestock_l3_s3];
 }
 
-random_switch(FEAT_TRAINS, SELF, switch_mu_Wagon_Gen6_Boxcar_Type1_Reefer_livery) {
-	7: spritegroup_wagon_Gen6_Boxcar_Type1_Reefer_L1;
-	1: spritegroup_wagon_Gen6_Boxcar_Type1_Reefer_L2;
-	1: spritegroup_wagon_Gen6_Boxcar_Type1_Reefer_L3;
-	1: spritegroup_wagon_Gen6_Boxcar_Type1_Reefer_L4;
-}
+/// LIVERY 4   LOADING STATE 1   LIVESTOCK
+spriteset(spriteset_mu_wagon_gen6_boxcar_type1_livestock_l4_s1, "gfx/wagons/gen6/wagon_gen6_boxcar_type1_livestock.png") {template_2cc_wagons(535, 1)}
 
-/*
-* Standard
-*/
 
-//Livery 1 - Loading State 1 - Standard
-spriteset(spriteset_mu_Wagon_Gen6_Boxcar_Type1_Standard_L1_S1, "gfx/Wagons/Gen6/Wagon_Gen6_Boxcar_Type1_Standard.png") {
-	template_2cc_wagons(1, 1)
-}
+/// LIVERY 4   LOADING STATE 2   LIVESTOCK
+spriteset(spriteset_mu_wagon_gen6_boxcar_type1_livestock_l4_s2, "gfx/wagons/gen6/wagon_gen6_boxcar_type1_livestock.png") {template_2cc_wagons(535, 32)}
 
-//Livery 1 - Loading State 2 - Standard
-spriteset(spriteset_mu_Wagon_Gen6_Boxcar_Type1_Standard_L1_S2, "gfx/Wagons/Gen6/Wagon_Gen6_Boxcar_Type1_Standard.png") {
-	template_2cc_wagons(1, 32)
-}
 
-//Livery 1 - Loading State 3 - Standard
-spriteset(spriteset_mu_Wagon_Gen6_Boxcar_Type1_Standard_L1_S3, "gfx/Wagons/Gen6/Wagon_Gen6_Boxcar_Type1_Standard.png") {
-	template_2cc_wagons(1, 64)
-}
+/// LIVERY 4   LOADING STATE 3   LIVESTOCK
+spriteset(spriteset_mu_wagon_gen6_boxcar_type1_livestock_l4_s3, "gfx/wagons/gen6/wagon_gen6_boxcar_type1_livestock.png") {template_2cc_wagons(535, 64)}
 
-//Livery 1 Spritegroup - Standard
-spritegroup spritegroup_wagon_Gen6_Boxcar_Type1_Standard_L1 {
-	loading: [spriteset_mu_Wagon_Gen6_Boxcar_Type1_Standard_L1_S1, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Standard_L1_S2, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Standard_L1_S3];
-	loaded: [spriteset_mu_Wagon_Gen6_Boxcar_Type1_Standard_L1_S1, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Standard_L1_S2, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Standard_L1_S3];
-}
 
-//Livery 2 - Loading State 1 - Standard
-spriteset(spriteset_mu_Wagon_Gen6_Boxcar_Type1_Standard_L2_S1, "gfx/Wagons/Gen6/Wagon_Gen6_Boxcar_Type1_Standard.png") {
-	template_2cc_wagons(179, 1)
+/// LIVERY 4 SPRITEGROUP - LIVESTOCK
+spritegroup spritegroup_mu_wagon_gen6_boxcar_type1_livestock_l4 {
+    loading: [spriteset_mu_wagon_gen6_boxcar_type1_livestock_l4_s1, spriteset_mu_wagon_gen6_boxcar_type1_livestock_l4_s2, spriteset_mu_wagon_gen6_boxcar_type1_livestock_l4_s3];
+    loaded: [spriteset_mu_wagon_gen6_boxcar_type1_livestock_l4_s1, spriteset_mu_wagon_gen6_boxcar_type1_livestock_l4_s2, spriteset_mu_wagon_gen6_boxcar_type1_livestock_l4_s3];
 }
 
-//Livery 2 - Loading State 2 - Standard
-spriteset(spriteset_mu_Wagon_Gen6_Boxcar_Type1_Standard_L2_S2, "gfx/Wagons/Gen6/Wagon_Gen6_Boxcar_Type1_Standard.png") {
-	template_2cc_wagons(179, 32)
+// Random Livery Selector for livestock
+random_switch(FEAT_TRAINS, SELF, switch_mu_wagon_gen6_boxcar_type1_livestock_livery) {
+	7: spritegroup_mu_wagon_gen6_boxcar_type1_livestock_l1;
+	1: spritegroup_mu_wagon_gen6_boxcar_type1_livestock_l2;
+	1: spritegroup_mu_wagon_gen6_boxcar_type1_livestock_l3;
+	1: spritegroup_mu_wagon_gen6_boxcar_type1_livestock_l4;
 }
 
-//Livery 2 - Loading State 3 - Standard
-spriteset(spriteset_mu_Wagon_Gen6_Boxcar_Type1_Standard_L2_S3, "gfx/Wagons/Gen6/Wagon_Gen6_Boxcar_Type1_Standard.png") {
-	template_2cc_wagons(179, 64)
-}
+// reefer
 
-//Livery 2 Spritegroup - Standard
-spritegroup spritegroup_wagon_Gen6_Boxcar_Type1_Standard_L2 {
-	loading: [spriteset_mu_Wagon_Gen6_Boxcar_Type1_Standard_L2_S1, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Standard_L2_S2, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Standard_L2_S3];
-	loaded: [spriteset_mu_Wagon_Gen6_Boxcar_Type1_Standard_L2_S1, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Standard_L2_S2, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Standard_L2_S3];	
-}
+/// LIVERY 1   LOADING STATE 1   REEFER
+spriteset(spriteset_mu_wagon_gen6_boxcar_type1_reefer_l1_s1, "gfx/wagons/gen6/wagon_gen6_boxcar_type1_reefer.png") {template_2cc_wagons(1, 1)}
 
-//Livery 3 - Loading State 1 - Standard
-spriteset(spriteset_mu_Wagon_Gen6_Boxcar_Type1_Standard_L3_S1, "gfx/Wagons/Gen6/Wagon_Gen6_Boxcar_Type1_Standard.png") {
-	template_2cc_wagons(357, 1)
-}
+
+/// LIVERY 1   LOADING STATE 2   REEFER
+spriteset(spriteset_mu_wagon_gen6_boxcar_type1_reefer_l1_s2, "gfx/wagons/gen6/wagon_gen6_boxcar_type1_reefer.png") {template_2cc_wagons(1, 32)}
+
 
-//Livery 3 - Loading State 2 - Standard
-spriteset(spriteset_mu_Wagon_Gen6_Boxcar_Type1_Standard_L3_S2, "gfx/Wagons/Gen6/Wagon_Gen6_Boxcar_Type1_Standard.png") {
-	template_2cc_wagons(357, 32)
+/// LIVERY 1   LOADING STATE 3   REEFER
+spriteset(spriteset_mu_wagon_gen6_boxcar_type1_reefer_l1_s3, "gfx/wagons/gen6/wagon_gen6_boxcar_type1_reefer.png") {template_2cc_wagons(1, 64)}
+
+
+/// LIVERY 1 SPRITEGROUP - REEFER
+spritegroup spritegroup_mu_wagon_gen6_boxcar_type1_reefer_l1 {
+    loading: [spriteset_mu_wagon_gen6_boxcar_type1_reefer_l1_s1, spriteset_mu_wagon_gen6_boxcar_type1_reefer_l1_s2, spriteset_mu_wagon_gen6_boxcar_type1_reefer_l1_s3];
+    loaded: [spriteset_mu_wagon_gen6_boxcar_type1_reefer_l1_s1, spriteset_mu_wagon_gen6_boxcar_type1_reefer_l1_s2, spriteset_mu_wagon_gen6_boxcar_type1_reefer_l1_s3];
 }
+
+/// LIVERY 2   LOADING STATE 1   REEFER
+spriteset(spriteset_mu_wagon_gen6_boxcar_type1_reefer_l2_s1, "gfx/wagons/gen6/wagon_gen6_boxcar_type1_reefer.png") {template_2cc_wagons(179, 1)}
 
-//Livery 3 - Loading State 3 - Standard
-spriteset(spriteset_mu_Wagon_Gen6_Boxcar_Type1_Standard_L3_S3, "gfx/Wagons/Gen6/Wagon_Gen6_Boxcar_Type1_Standard.png") {
-	template_2cc_wagons(357, 64)
+
+/// LIVERY 2   LOADING STATE 2   REEFER
+spriteset(spriteset_mu_wagon_gen6_boxcar_type1_reefer_l2_s2, "gfx/wagons/gen6/wagon_gen6_boxcar_type1_reefer.png") {template_2cc_wagons(179, 32)}
+
+
+/// LIVERY 2   LOADING STATE 3   REEFER
+spriteset(spriteset_mu_wagon_gen6_boxcar_type1_reefer_l2_s3, "gfx/wagons/gen6/wagon_gen6_boxcar_type1_reefer.png") {template_2cc_wagons(179, 64)}
+
+
+/// LIVERY 2 SPRITEGROUP - REEFER
+spritegroup spritegroup_mu_wagon_gen6_boxcar_type1_reefer_l2 {
+    loading: [spriteset_mu_wagon_gen6_boxcar_type1_reefer_l2_s1, spriteset_mu_wagon_gen6_boxcar_type1_reefer_l2_s2, spriteset_mu_wagon_gen6_boxcar_type1_reefer_l2_s3];
+    loaded: [spriteset_mu_wagon_gen6_boxcar_type1_reefer_l2_s1, spriteset_mu_wagon_gen6_boxcar_type1_reefer_l2_s2, spriteset_mu_wagon_gen6_boxcar_type1_reefer_l2_s3];
 }
+
+/// LIVERY 3   LOADING STATE 1   REEFER
+spriteset(spriteset_mu_wagon_gen6_boxcar_type1_reefer_l3_s1, "gfx/wagons/gen6/wagon_gen6_boxcar_type1_reefer.png") {template_2cc_wagons(357, 1)}
 
-//Livery 3 Spritegroup - Standard
-spritegroup spritegroup_wagon_Gen6_Boxcar_Type1_Standard_L3 {
-	loading: [spriteset_mu_Wagon_Gen6_Boxcar_Type1_Standard_L3_S1, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Standard_L3_S2, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Standard_L3_S3];
-	loaded: [spriteset_mu_Wagon_Gen6_Boxcar_Type1_Standard_L3_S1, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Standard_L3_S2, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Standard_L3_S3];	
+
+/// LIVERY 3   LOADING STATE 2   REEFER
+spriteset(spriteset_mu_wagon_gen6_boxcar_type1_reefer_l3_s2, "gfx/wagons/gen6/wagon_gen6_boxcar_type1_reefer.png") {template_2cc_wagons(357, 32)}
+
+
+/// LIVERY 3   LOADING STATE 3   REEFER
+spriteset(spriteset_mu_wagon_gen6_boxcar_type1_reefer_l3_s3, "gfx/wagons/gen6/wagon_gen6_boxcar_type1_reefer.png") {template_2cc_wagons(357, 64)}
+
+
+/// LIVERY 3 SPRITEGROUP - REEFER
+spritegroup spritegroup_mu_wagon_gen6_boxcar_type1_reefer_l3 {
+    loading: [spriteset_mu_wagon_gen6_boxcar_type1_reefer_l3_s1, spriteset_mu_wagon_gen6_boxcar_type1_reefer_l3_s2, spriteset_mu_wagon_gen6_boxcar_type1_reefer_l3_s3];
+    loaded: [spriteset_mu_wagon_gen6_boxcar_type1_reefer_l3_s1, spriteset_mu_wagon_gen6_boxcar_type1_reefer_l3_s2, spriteset_mu_wagon_gen6_boxcar_type1_reefer_l3_s3];
 }
+
+/// LIVERY 4   LOADING STATE 1   REEFER
+spriteset(spriteset_mu_wagon_gen6_boxcar_type1_reefer_l4_s1, "gfx/wagons/gen6/wagon_gen6_boxcar_type1_reefer.png") {template_2cc_wagons(535, 1)}
 
-//Livery 4 - Loading State 1 - Standard
-spriteset(spriteset_mu_Wagon_Gen6_Boxcar_Type1_Standard_L4_S1, "gfx/Wagons/Gen6/Wagon_Gen6_Boxcar_Type1_Standard.png") {
-	template_2cc_wagons(535, 1)
+
+/// LIVERY 4   LOADING STATE 2   REEFER
+spriteset(spriteset_mu_wagon_gen6_boxcar_type1_reefer_l4_s2, "gfx/wagons/gen6/wagon_gen6_boxcar_type1_reefer.png") {template_2cc_wagons(535, 32)}
+
+
+/// LIVERY 4   LOADING STATE 3   REEFER
+spriteset(spriteset_mu_wagon_gen6_boxcar_type1_reefer_l4_s3, "gfx/wagons/gen6/wagon_gen6_boxcar_type1_reefer.png") {template_2cc_wagons(535, 64)}
+
+
+/// LIVERY 4 SPRITEGROUP - REEFER
+spritegroup spritegroup_mu_wagon_gen6_boxcar_type1_reefer_l4 {
+    loading: [spriteset_mu_wagon_gen6_boxcar_type1_reefer_l4_s1, spriteset_mu_wagon_gen6_boxcar_type1_reefer_l4_s2, spriteset_mu_wagon_gen6_boxcar_type1_reefer_l4_s3];
+    loaded: [spriteset_mu_wagon_gen6_boxcar_type1_reefer_l4_s1, spriteset_mu_wagon_gen6_boxcar_type1_reefer_l4_s2, spriteset_mu_wagon_gen6_boxcar_type1_reefer_l4_s3];
 }
 
-//Livery 4 - Loading State 2 - Standard
-spriteset(spriteset_mu_Wagon_Gen6_Boxcar_Type1_Standard_L4_S2, "gfx/Wagons/Gen6/Wagon_Gen6_Boxcar_Type1_Standard.png") {
-	template_2cc_wagons(535, 32)
+// Random Livery Selector for reefer
+random_switch(FEAT_TRAINS, SELF, switch_mu_wagon_gen6_boxcar_type1_reefer_livery) {
+	7: spritegroup_mu_wagon_gen6_boxcar_type1_reefer_l1;
+	1: spritegroup_mu_wagon_gen6_boxcar_type1_reefer_l2;
+	1: spritegroup_mu_wagon_gen6_boxcar_type1_reefer_l3;
+	1: spritegroup_mu_wagon_gen6_boxcar_type1_reefer_l4;
 }
+
+// standard
+
+/// LIVERY 1   LOADING STATE 1   STANDARD
+spriteset(spriteset_mu_wagon_gen6_boxcar_type1_standard_l1_s1, "gfx/wagons/gen6/wagon_gen6_boxcar_type1_standard.png") {template_2cc_wagons(1, 1)}
 
-//Livery 4 - Loading State 3 - Standard
-spriteset(spriteset_mu_Wagon_Gen6_Boxcar_Type1_Standard_L4_S3, "gfx/Wagons/Gen6/Wagon_Gen6_Boxcar_Type1_Standard.png") {
-	template_2cc_wagons(535, 64)
+
+/// LIVERY 1   LOADING STATE 2   STANDARD
+spriteset(spriteset_mu_wagon_gen6_boxcar_type1_standard_l1_s2, "gfx/wagons/gen6/wagon_gen6_boxcar_type1_standard.png") {template_2cc_wagons(1, 32)}
+
+
+/// LIVERY 1   LOADING STATE 3   STANDARD
+spriteset(spriteset_mu_wagon_gen6_boxcar_type1_standard_l1_s3, "gfx/wagons/gen6/wagon_gen6_boxcar_type1_standard.png") {template_2cc_wagons(1, 64)}
+
+
+/// LIVERY 1 SPRITEGROUP - STANDARD
+spritegroup spritegroup_mu_wagon_gen6_boxcar_type1_standard_l1 {
+    loading: [spriteset_mu_wagon_gen6_boxcar_type1_standard_l1_s1, spriteset_mu_wagon_gen6_boxcar_type1_standard_l1_s2, spriteset_mu_wagon_gen6_boxcar_type1_standard_l1_s3];
+    loaded: [spriteset_mu_wagon_gen6_boxcar_type1_standard_l1_s1, spriteset_mu_wagon_gen6_boxcar_type1_standard_l1_s2, spriteset_mu_wagon_gen6_boxcar_type1_standard_l1_s3];
 }
+
+/// LIVERY 2   LOADING STATE 1   STANDARD
+spriteset(spriteset_mu_wagon_gen6_boxcar_type1_standard_l2_s1, "gfx/wagons/gen6/wagon_gen6_boxcar_type1_standard.png") {template_2cc_wagons(179, 1)}
 
-//Livery 4 Spritegroup - Standard
-spritegroup spritegroup_wagon_Gen6_Boxcar_Type1_Standard_L4 {
-	loading: [spriteset_mu_Wagon_Gen6_Boxcar_Type1_Standard_L4_S1, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Standard_L4_S2, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Standard_L4_S3];
-	loaded: [spriteset_mu_Wagon_Gen6_Boxcar_Type1_Standard_L4_S1, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Standard_L4_S2, spriteset_mu_Wagon_Gen6_Boxcar_Type1_Standard_L4_S3];	
+
+/// LIVERY 2   LOADING STATE 2   STANDARD
+spriteset(spriteset_mu_wagon_gen6_boxcar_type1_standard_l2_s2, "gfx/wagons/gen6/wagon_gen6_boxcar_type1_standard.png") {template_2cc_wagons(179, 32)}
+
+
+/// LIVERY 2   LOADING STATE 3   STANDARD
+spriteset(spriteset_mu_wagon_gen6_boxcar_type1_standard_l2_s3, "gfx/wagons/gen6/wagon_gen6_boxcar_type1_standard.png") {template_2cc_wagons(179, 64)}
+
+
+/// LIVERY 2 SPRITEGROUP - STANDARD
+spritegroup spritegroup_mu_wagon_gen6_boxcar_type1_standard_l2 {
+    loading: [spriteset_mu_wagon_gen6_boxcar_type1_standard_l2_s1, spriteset_mu_wagon_gen6_boxcar_type1_standard_l2_s2, spriteset_mu_wagon_gen6_boxcar_type1_standard_l2_s3];
+    loaded: [spriteset_mu_wagon_gen6_boxcar_type1_standard_l2_s1, spriteset_mu_wagon_gen6_boxcar_type1_standard_l2_s2, spriteset_mu_wagon_gen6_boxcar_type1_standard_l2_s3];
 }
+
+/// LIVERY 3   LOADING STATE 1   STANDARD
+spriteset(spriteset_mu_wagon_gen6_boxcar_type1_standard_l3_s1, "gfx/wagons/gen6/wagon_gen6_boxcar_type1_standard.png") {template_2cc_wagons(357, 1)}
 
-random_switch(FEAT_TRAINS, SELF, switch_mu_Wagon_Gen6_Boxcar_Type1_Standard_livery) {
-	7: spritegroup_wagon_Gen6_Boxcar_Type1_Standard_L1;
-	1: spritegroup_wagon_Gen6_Boxcar_Type1_Standard_L2;
-	1: spritegroup_wagon_Gen6_Boxcar_Type1_Standard_L3;
-	1: spritegroup_wagon_Gen6_Boxcar_Type1_Standard_L4;
+
+/// LIVERY 3   LOADING STATE 2   STANDARD
+spriteset(spriteset_mu_wagon_gen6_boxcar_type1_standard_l3_s2, "gfx/wagons/gen6/wagon_gen6_boxcar_type1_standard.png") {template_2cc_wagons(357, 32)}
+
+
+/// LIVERY 3   LOADING STATE 3   STANDARD
+spriteset(spriteset_mu_wagon_gen6_boxcar_type1_standard_l3_s3, "gfx/wagons/gen6/wagon_gen6_boxcar_type1_standard.png") {template_2cc_wagons(357, 64)}
+
+
+/// LIVERY 3 SPRITEGROUP - STANDARD
+spritegroup spritegroup_mu_wagon_gen6_boxcar_type1_standard_l3 {
+    loading: [spriteset_mu_wagon_gen6_boxcar_type1_standard_l3_s1, spriteset_mu_wagon_gen6_boxcar_type1_standard_l3_s2, spriteset_mu_wagon_gen6_boxcar_type1_standard_l3_s3];
+    loaded: [spriteset_mu_wagon_gen6_boxcar_type1_standard_l3_s1, spriteset_mu_wagon_gen6_boxcar_type1_standard_l3_s2, spriteset_mu_wagon_gen6_boxcar_type1_standard_l3_s3];
 }
+
+/// LIVERY 4   LOADING STATE 1   STANDARD
+spriteset(spriteset_mu_wagon_gen6_boxcar_type1_standard_l4_s1, "gfx/wagons/gen6/wagon_gen6_boxcar_type1_standard.png") {template_2cc_wagons(535, 1)}
 
-//Goods have multiple liveries
-random_switch(FEAT_TRAINS, SELF, switch_mu_Wagon_Gen6_Boxcar_Type1_Goods_livery) {
-	7: switch_mu_Wagon_Gen6_Boxcar_Type1_Standard_livery;
-	3: switch_mu_Wagon_Gen6_Boxcar_Type1_Reefer_livery;
+
+/// LIVERY 4   LOADING STATE 2   STANDARD
+spriteset(spriteset_mu_wagon_gen6_boxcar_type1_standard_l4_s2, "gfx/wagons/gen6/wagon_gen6_boxcar_type1_standard.png") {template_2cc_wagons(535, 32)}
+
+
+/// LIVERY 4   LOADING STATE 3   STANDARD
+spriteset(spriteset_mu_wagon_gen6_boxcar_type1_standard_l4_s3, "gfx/wagons/gen6/wagon_gen6_boxcar_type1_standard.png") {template_2cc_wagons(535, 64)}
+
+
+/// LIVERY 4 SPRITEGROUP - STANDARD
+spritegroup spritegroup_mu_wagon_gen6_boxcar_type1_standard_l4 {
+    loading: [spriteset_mu_wagon_gen6_boxcar_type1_standard_l4_s1, spriteset_mu_wagon_gen6_boxcar_type1_standard_l4_s2, spriteset_mu_wagon_gen6_boxcar_type1_standard_l4_s3];
+    loaded: [spriteset_mu_wagon_gen6_boxcar_type1_standard_l4_s1, spriteset_mu_wagon_gen6_boxcar_type1_standard_l4_s2, spriteset_mu_wagon_gen6_boxcar_type1_standard_l4_s3];
 }
 
-switch(FEAT_TRAINS, SELF, switch_mu_Wagon_Gen6_Boxcar_Type1_cargo_selection, cargo_type_in_veh) {
-	LVST: switch_mu_Wagon_Gen6_Boxcar_Type1_Livestock_livery;
-	GOOD: switch_mu_Wagon_Gen6_Boxcar_Type1_Goods_livery;
-	VALU: switch_mu_Wagon_Gen6_Boxcar_Type1_Armoured_livery;
-	FOOD: switch_mu_Wagon_Gen6_Boxcar_Type1_Reefer_livery;
-	GOLD: switch_mu_Wagon_Gen6_Boxcar_Type1_Armoured_livery;
-	FRUT: switch_mu_Wagon_Gen6_Boxcar_Type1_Reefer_livery;
-	DIAM: switch_mu_Wagon_Gen6_Boxcar_Type1_Armoured_livery;
-	FZDR: switch_mu_Wagon_Gen6_Boxcar_Type1_Reefer_livery;
-	BEER: switch_mu_Wagon_Gen6_Boxcar_Type1_Reefer_livery;
-	FISH: switch_mu_Wagon_Gen6_Boxcar_Type1_Reefer_livery;
-	switch_mu_Wagon_Gen6_Boxcar_Type1_Standard_livery; //GRAI, PAPR, WHEA, MAIZ, SUGR, TOYS, BATT, BUBL, BDMT, BRCK, CERA, CERE, COPR,ENSP, FERT, FMSP, GLAS, JAVA, MNSP, OLSD, POTA, RCYC, SGBT, SGCN, SULP, VEHI, WOOL
+// Random Livery Selector for standard
+random_switch(FEAT_TRAINS, SELF, switch_mu_wagon_gen6_boxcar_type1_standard_livery) {
+	7: spritegroup_mu_wagon_gen6_boxcar_type1_standard_l1;
+	1: spritegroup_mu_wagon_gen6_boxcar_type1_standard_l2;
+	1: spritegroup_mu_wagon_gen6_boxcar_type1_standard_l3;
+	1: spritegroup_mu_wagon_gen6_boxcar_type1_standard_l4;
 }
 
-//Add defined switches 
+// Goods have multiple liveries
 
-// ENGINECAPACITYSWITCH(VEHIDCODE)
+                       random_switch(FEAT_TRAINS, SELF, switch_mu_wagon_gen6_boxcar_type1_goods_livery) {
+	7: switch_mu_wagon_gen6_boxcar_type1_standard_livery;
+	3: switch_mu_wagon_gen6_boxcar_type1_reefer_livery;
+}
 
-// RUNNINGCOST_ENGINE_SWITCH
+// Random Goods Livery Selector
 
-// PURCHASETEXT_SWITCH
+        switch(FEAT_TRAINS, SELF, switch_mu_wagon_gen6_boxcar_type1_cargo_selection, cargo_type_in_veh) {
+        LVST: switch_mu_wagon_gen6_boxcar_type1_livestock_livery;
+        GOOD: switch_mu_wagon_gen6_boxcar_type1_goods_livery;
+        VALU: switch_mu_wagon_gen6_boxcar_type1_armoured_livery;
+        FOOD: switch_mu_wagon_gen6_boxcar_type1_reefer_livery;
+        GOLD: switch_mu_wagon_gen6_boxcar_type1_armoured_livery;
+        FRUT: switch_mu_wagon_gen6_boxcar_type1_reefer_livery;
+        DIAM: switch_mu_wagon_gen6_boxcar_type1_armoured_livery;
+        FZDR: switch_mu_wagon_gen6_boxcar_type1_reefer_livery;
+        BEER: switch_mu_wagon_gen6_boxcar_type1_reefer_livery;
+        FISH: switch_mu_wagon_gen6_boxcar_type1_reefer_livery;
+        // GRAI, PAPR, WHEA, MAIZ, SUGR, TOYS, BATT, BUBL, BDMT, BRCK, CERA, CERE, COPR, ENSP,
+        // FERT, FMSP, GLAS, JAVA, MNSP, OLSD, POTA, RCYC, SGBT, SGCN, SULP, VEHI, WOOL
+        switch_mu_wagon_gen6_boxcar_type1_standard_livery;
+}

@@ -2,24 +2,27 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
+
+// Template: TPL_02A
+
 // Cargo capacity
 
-    switch(FEAT_TRAINS, SELF, switch_emu_Morocco_ONCF_ZMC_capacity_engine, cargo_classes) { \
+    switch(FEAT_TRAINS, SELF, switch_emu_morocco_oncf_zmc_capacity_engine, cargo_classes) { \
         bitmask(CC_MAIL): 90/2; \
         bitmask(CC_ARMOURED): 90/4; \
         90; \
     }
 
 
-    switch(FEAT_TRAINS, SELF, switch_emu_Morocco_ONCF_ZMC_capacity_wagon, cargo_classes) { \
+    switch(FEAT_TRAINS, SELF, switch_emu_morocco_oncf_zmc_capacity_wagon, cargo_classes) { \
         bitmask(CC_MAIL): 90/2; \
         bitmask(CC_ARMOURED): 90/4; \
         90; \
     }
 
-item(FEAT_TRAINS, item_emu_Morocco_ONCF_ZMC) {
+item(FEAT_TRAINS, item_emu_morocco_oncf_zmc) {
     property {
-        name: string(str_emu_Morocco_ONCF_ZMC);
+        name: string(str_emu_morocco_oncf_zmc);
         climates_available: ((param_region_africa || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1984,1,1);
         model_life: 45;
@@ -53,26 +56,26 @@ item(FEAT_TRAINS, item_emu_Morocco_ONCF_ZMC) {
         bitmask_vehicle_info: 0;
     }
     graphics {
-        purchase: spriteset_emu_Morocco_ONCF_ZMC_purchase;
-        cargo_capacity: switch_emu_Morocco_ONCF_ZMC_capacity_engine;
-        visual_effect_and_powered: switch_emu_Morocco_ONCF_ZMC_visual_effect_and_powered;
+        purchase: spriteset_emu_morocco_oncf_zmc_purchase;
+        cargo_capacity: switch_emu_morocco_oncf_zmc_capacity_engine;
+        visual_effect_and_powered: switch_emu_morocco_oncf_zmc_visual_effect_and_powered;
         // no 'length'
         // no 'articulated_part'
         can_attach_wagon: switch_can_attach_vehicle;
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
         // PURCHASETEXT_SWITCH_CALL // this is actually blank
-        default: switch_emu_Morocco_ONCF_ZMC_reversed;
+        default: switch_emu_morocco_oncf_zmc_reversed;
     }
-    livery_override (item_mu_MU_Wagon_Unpowered) {
+    livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: int(160/10);
         weight: int(48*1/2);
         cargo_capacity: 90;
         length: 8;
-        default: switch_emu_Morocco_ONCF_ZMC_cargo_selection;
+        default: switch_emu_morocco_oncf_zmc_cargo_selection;
     }
-    livery_override (item_mu_MU_Wagon_Powered) {
+    livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: (round(30.43889900098415));
         power: int(1900*1/2);
@@ -80,6 +83,6 @@ item(FEAT_TRAINS, item_emu_Morocco_ONCF_ZMC) {
         cargo_capacity: 90;
         tractive_effort_coefficient: int(0.21*10*48);
         length: 8;
-        default: switch_emu_Morocco_ONCF_ZMC_cargo_selection;
+        default: switch_emu_morocco_oncf_zmc_cargo_selection;
     }
 }

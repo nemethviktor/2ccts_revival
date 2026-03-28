@@ -1,35 +1,12 @@
-/*
- *  Copyright (C) 2017 Transportman // V. Nemeth 2026
- *  This file is part of the 2cc Trains In NML
- *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
+//  Copyright (C) 2017 Transportman // V. Nemeth 2026+
+//  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
-*/
+// Template: TPL_01B
 
-/*
-* PURCHASE
-*/
+// PURCHASE
+spriteset(spriteset_rbe_japan_choshi_deha_1000_purchase, "gfx/railbus/railbus_electric/japan_choshi_deha_1000.png") {template_purchase(1, 32)}
 
-spriteset(spriteset_rbe_Japan_Choshi_DeHa_1000_purchase, "gfx/Railbus/Railbus_electric/Japan_Choshi_DeHa_1000.png") {
-	template_purchase(1, 32)
-}
 
-/*
-* VEHICLE
-*/
-
-//Engine
-spriteset(spriteset_rbe_Japan_Choshi_DeHa_1000, "gfx/Railbus/Railbus_electric/Japan_Choshi_DeHa_1000.png") {
-	template_2cc_engines_general(1, 1)
-}
-
-/*
-* Cargo capacity
-*/
-
-// ENGINECAPACITYSWITCH(VEHIDCODE)
-
-//Add defined switches
-
-// RUNNINGCOST_ENGINE_SWITCH
-
-// PURCHASETEXT_SWITCH
+// VEHICLE
+/// Engine
+spriteset(spriteset_rbe_japan_choshi_deha_1000, "gfx/railbus/railbus_electric/japan_choshi_deha_1000.png") {template_2cc_engines_general(1, 1)}

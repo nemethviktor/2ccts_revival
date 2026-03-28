@@ -2,9 +2,12 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
-item(FEAT_TRAINS, item_electric_New_Zealand_NZR_EA) {
+
+// Template: TPL_01A
+
+item(FEAT_TRAINS, item_electric_new_zealand_nzr_ea) {
     property {
-        name: string(str_electric_New_Zealand_NZR_EA);
+        name: string(str_electric_new_zealand_nzr_ea);
         climates_available: ((param_region_oceania || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1968,1,1);
         model_life: 45;
@@ -38,7 +41,7 @@ item(FEAT_TRAINS, item_electric_New_Zealand_NZR_EA) {
         bitmask_vehicle_info: 0;
     }
     graphics {
-        purchase: spriteset_electric_New_Zealand_NZR_EA_purchase;
+        purchase: spriteset_electric_new_zealand_nzr_ea_purchase;
         // no 'visual_effect' or 'visual_effect_and_powered'
         // no 'length'
         // no 'articulated_part'
@@ -46,6 +49,6 @@ item(FEAT_TRAINS, item_electric_New_Zealand_NZR_EA) {
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
         // PURCHASETEXT_SWITCH_CALL // this is actually blank
-        default: spriteset_electric_New_Zealand_NZR_EA;
+        default: spriteset_electric_new_zealand_nzr_ea;
     }
 }

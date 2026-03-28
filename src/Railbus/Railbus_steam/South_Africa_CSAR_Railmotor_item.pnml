@@ -2,29 +2,32 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
+
+// Template: TPL_32B
+
 // Cargo capacity
 
-    switch(FEAT_TRAINS, SELF, switch_rbs_South_Africa_CSAR_Railmotor_capacity_engine, cargo_classes) { \
+    switch(FEAT_TRAINS, SELF, switch_rbs_south_africa_csar_railmotor_capacity_engine, cargo_classes) { \
         bitmask(CC_MAIL): 50/2; \
         bitmask(CC_ARMOURED): 50/4; \
         50; \
     }
 
 
-    switch(FEAT_TRAINS, SELF, switch_rbs_South_Africa_CSAR_Railmotor_capacity_wagon, cargo_classes) { \
+    switch(FEAT_TRAINS, SELF, switch_rbs_south_africa_csar_railmotor_capacity_wagon, cargo_classes) { \
         bitmask(CC_MAIL): 0/2; \
         bitmask(CC_ARMOURED): 0/4; \
         0; \
     }
 
-switch(FEAT_TRAINS, SELF, switch_rbs_South_Africa_CSAR_Railmotor_capacity_position, position_in_vehid_chain % 2) {
-                0: switch_rbs_South_Africa_CSAR_Railmotor_capacity_engine;
+switch(FEAT_TRAINS, SELF, switch_rbs_south_africa_csar_railmotor_capacity_position, position_in_vehid_chain % 2) {
+                0: switch_rbs_south_africa_csar_railmotor_capacity_engine;
                 0;
             }
 
-item(FEAT_TRAINS, item_rbs_South_Africa_CSAR_Railmotor) {
+item(FEAT_TRAINS, item_rbs_south_africa_csar_railmotor) {
     property {
-        name: string(str_rbs_South_Africa_CSAR_Railmotor);
+        name: string(str_rbs_south_africa_csar_railmotor);
         climates_available: ((param_region_africa || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1906,1,1);
         model_life: 45;
@@ -58,15 +61,15 @@ item(FEAT_TRAINS, item_rbs_South_Africa_CSAR_Railmotor) {
         bitmask_vehicle_info: 0;
     }
     graphics {
-        cargo_capacity: switch_rbs_South_Africa_CSAR_Railmotor_capacity_position;
-        purchase: spriteset_rbs_South_Africa_CSAR_Railmotor_purchase;
-        visual_effect_and_powered: switch_rbs_South_Africa_CSAR_Railmotor_visual_effect;
-        length: switch_rbs_South_Africa_CSAR_Railmotor_length;
-        articulated_part: switch_rbs_South_Africa_CSAR_Railmotor_articulated;
+        cargo_capacity: switch_rbs_south_africa_csar_railmotor_capacity_position;
+        purchase: spriteset_rbs_south_africa_csar_railmotor_purchase;
+        visual_effect_and_powered: switch_rbs_south_africa_csar_railmotor_visual_effect;
+        length: switch_rbs_south_africa_csar_railmotor_length;
+        articulated_part: switch_rbs_south_africa_csar_railmotor_articulated;
         can_attach_wagon: switch_can_attach_vehicle;
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
         // PURCHASETEXT_SWITCH_CALL // this is actually blank
-        default: switch_rbs_South_Africa_CSAR_Railmotor_position;
+        default: switch_rbs_south_africa_csar_railmotor_position;
     }
 }

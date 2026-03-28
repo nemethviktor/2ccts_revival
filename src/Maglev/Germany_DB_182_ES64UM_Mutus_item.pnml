@@ -2,9 +2,12 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
-item(FEAT_TRAINS, item_mglv_Germany_DB_182_ES64UM_Mutus) {
+
+// Template: TPL_01A
+
+item(FEAT_TRAINS, item_mglv_germany_db_182_es64um_mutus) {
     property {
-        name: string(str_mglv_Germany_DB_182_ES64UM_Mutus);
+        name: string(str_mglv_germany_db_182_es64um_mutus);
         climates_available: ((param_region_western_europe || 0) && param_concept) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(2005,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
@@ -38,7 +41,7 @@ item(FEAT_TRAINS, item_mglv_Germany_DB_182_ES64UM_Mutus) {
         bitmask_vehicle_info: 0;
     }
     graphics {
-        purchase: spriteset_mglv_Germany_DB_182_ES64UM_Mutus_purchase;
+        purchase: spriteset_mglv_germany_db_182_es64um_mutus_purchase;
         // no 'visual_effect' or 'visual_effect_and_powered'
         // no 'length'
         // no 'articulated_part'
@@ -46,6 +49,6 @@ item(FEAT_TRAINS, item_mglv_Germany_DB_182_ES64UM_Mutus) {
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
         // PURCHASETEXT_SWITCH_CALL // this is actually blank
-        default: spriteset_mglv_Germany_DB_182_ES64UM_Mutus;
+        default: spriteset_mglv_germany_db_182_es64um_mutus;
     }
 }

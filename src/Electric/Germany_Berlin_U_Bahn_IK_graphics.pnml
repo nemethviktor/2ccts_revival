@@ -1,46 +1,32 @@
-/*
- *  Copyright (C) 2017 Transportman // V. Nemeth 2026
- *  This file is part of the 2cc Trains In NML
- *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
+//  Copyright (C) 2017 Transportman // V. Nemeth 2026+
+//  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
-*/
+// Template: TPL_02C
 
-/*
-* PURCHASE
-*/
+// PURCHASE
+spriteset(spriteset_mtro_germany_berlin_u_bahn_ik_purchase, "gfx/electric/germany_berlin_u_bahn_ik.png") {template_purchase_dualheaded(1, 96)}
 
-spriteset(spriteset_mtro_Germany_Berlin_U_Bahn_IK_purchase, "gfx/Metro/Germany_Berlin_U_Bahn_IK.png") {
-	template_purchase_dualheaded(1, 96)
+
+// VEHICLE
+/// Front
+spriteset(spriteset_mtro_germany_berlin_u_bahn_ik_front, "gfx/electric/germany_berlin_u_bahn_ik.png") {template_2cc_engines_general(1, 1)}
+
+
+// VEHICLE
+/// Back
+spriteset(spriteset_mtro_germany_berlin_u_bahn_ik_back, "gfx/electric/germany_berlin_u_bahn_ik.png") {template_2cc_engines_general(1, 32)}
+
+
+/// MIDDLE
+spriteset(spriteset_mtro_germany_berlin_u_bahn_ik_middle, "gfx/electric/germany_berlin_u_bahn_ik.png") {template_2cc_engines_general(1, 64)}
+
+
+/// Dualheaded (reverse switch)
+/// In the context of var[0xC8] (which is the variable for "position in consist"):
+/// 0xFE: The very first vehicle in the train (The Engine/Front).
+/// 0xFF: The very last vehicle in the train (The Caboose/End).
+switch(FEAT_TRAINS, SELF, switch_mtro_germany_berlin_u_bahn_ik_reversed, var[0xC8]) {
+    0xFE: spriteset_mtro_germany_berlin_u_bahn_ik_back;
+    0xFF: spriteset_mtro_germany_berlin_u_bahn_ik_back;
+    spriteset_mtro_germany_berlin_u_bahn_ik_front;
 }
-
-/*
-* VEHICLE
-*/
-
-//Front
-spriteset(spriteset_mtro_Germany_Berlin_U_Bahn_IK_front, "gfx/Metro/Germany_Berlin_U_Bahn_IK.png") {
-	template_2cc_engines_general(1, 1)
-}
-
-//Back
-spriteset(spriteset_mtro_Germany_Berlin_U_Bahn_IK_back, "gfx/Metro/Germany_Berlin_U_Bahn_IK.png") {
-	template_2cc_engines_general(1, 32)
-}
-
-//Middle
-spriteset(spriteset_mtro_Germany_Berlin_U_Bahn_IK_middle, "gfx/Metro/Germany_Berlin_U_Bahn_IK.png") {
-	template_2cc_engines_general(1, 64)
-}
-
-//Dualheaded engines
-switch(FEAT_TRAINS, SELF, switch_mtro_Germany_Berlin_U_Bahn_IK_reversed, var[0xC8]) {
-	0xFE: spriteset_mtro_Germany_Berlin_U_Bahn_IK_back;
-    0xFF: spriteset_mtro_Germany_Berlin_U_Bahn_IK_back; 
-    spriteset_mtro_Germany_Berlin_U_Bahn_IK_front;
-}
-
-//Add defined switches
-
-// RUNNINGCOST_ENGINE_SWITCH
-
-// PURCHASETEXT_SWITCH

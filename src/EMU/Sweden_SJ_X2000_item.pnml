@@ -2,24 +2,27 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
+
+// Template: TPL_02A
+
 // Cargo capacity
 
-    switch(FEAT_TRAINS, SELF, switch_emu_Sweden_SJ_X2000_capacity_engine, cargo_classes) { \
+    switch(FEAT_TRAINS, SELF, switch_emu_sweden_sj_x2000_capacity_engine, cargo_classes) { \
         bitmask(CC_MAIL): 0/2; \
         bitmask(CC_ARMOURED): 0/4; \
         0; \
     }
 
 
-    switch(FEAT_TRAINS, SELF, switch_emu_Sweden_SJ_X2000_capacity_wagon, cargo_classes) { \
+    switch(FEAT_TRAINS, SELF, switch_emu_sweden_sj_x2000_capacity_wagon, cargo_classes) { \
         bitmask(CC_MAIL): 42/2; \
         bitmask(CC_ARMOURED): 42/4; \
         42; \
     }
 
-item(FEAT_TRAINS, item_emu_Sweden_SJ_X2000) {
+item(FEAT_TRAINS, item_emu_sweden_sj_x2000) {
     property {
-        name: string(str_emu_Sweden_SJ_X2000);
+        name: string(str_emu_sweden_sj_x2000);
         climates_available: ((param_region_northern_europe || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1990,1,1);
         model_life: 45;
@@ -53,26 +56,26 @@ item(FEAT_TRAINS, item_emu_Sweden_SJ_X2000) {
         bitmask_vehicle_info: 0;
     }
     graphics {
-        purchase: spriteset_emu_Sweden_SJ_X2000_purchase;
-        cargo_capacity: switch_emu_Sweden_SJ_X2000_capacity_engine;
-        visual_effect_and_powered: switch_emu_Sweden_SJ_X2000_visual_effect_and_powered;
+        purchase: spriteset_emu_sweden_sj_x2000_purchase;
+        cargo_capacity: switch_emu_sweden_sj_x2000_capacity_engine;
+        visual_effect_and_powered: switch_emu_sweden_sj_x2000_visual_effect_and_powered;
         // no 'length'
         // no 'articulated_part'
         can_attach_wagon: switch_can_attach_vehicle;
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
         // PURCHASETEXT_SWITCH_CALL // this is actually blank
-        default: switch_emu_Sweden_SJ_X2000_reversed;
+        default: switch_emu_sweden_sj_x2000_reversed;
     }
-    livery_override (item_mu_MU_Wagon_Unpowered) {
+    livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
         running_cost_factor: int(210/10);
         weight: int(50*1/2);
         cargo_capacity: 42;
         length: 8;
-        default: switch_emu_Sweden_SJ_X2000_cargo_selection;
+        default: switch_emu_sweden_sj_x2000_cargo_selection;
     }
-    livery_override (item_mu_MU_Wagon_Powered) {
+    livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
         running_cost_factor: (round(52.13348046975556));
         power: int(4400*1/2);
@@ -80,6 +83,6 @@ item(FEAT_TRAINS, item_emu_Sweden_SJ_X2000) {
         cargo_capacity: 42;
         tractive_effort_coefficient: int(0.49*10*50);
         length: 8;
-        default: switch_emu_Sweden_SJ_X2000_cargo_selection;
+        default: switch_emu_sweden_sj_x2000_cargo_selection;
     }
 }

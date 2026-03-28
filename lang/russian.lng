@@ -46,200 +46,200 @@ STR_PARAM_REGION_OCEANIA                                :Океания
 
 #loading speed parameter
 
-#VEHICLE NAMES
-#Railbus-steam
-str_rbs_Austria_NOLB_1          :NOLB 1 (Паровая Моториса)
-str_rbs_Italy_FS_86                     :FS 86 (Паровая Моториса)
+#vehicle names
+#railbus-steam
+str_rbs_austria_nolb_1          :NOLB 1 (Паровая Моториса)
+str_rbs_italy_fs_86                     :FS 86 (Паровая Моториса)
 
-#Railbus-diesel
-str_rbd_United_Kingdom_GWR_AEC_Railcar                  :GWR AEC (Дизель Моториса)
-str_rbd_Portugal_CP_0100                                                :CP 0100 (Дизель Моториса)
-str_rbd_Netherlands_NS_20_Kameel                                :NS 20 'Kameel' (Дизель Моториса)
-str_rbd_Russia_RZD_ACh2                                                 :РЖД АЧ2 (Дизель Моториса)
-str_rbd_United_Kingdom_BR_153_Super_Sprinter    :BR 153 'Super Sprinter' (Дизель Моториса)
-str_rbd_Czech_Republic_CD_809                                   :CD 809 (Дизель Моториса)
+#railbus-diesel
+str_rbd_united_kingdom_gwr_aec_railcar                  :GWR AEC (Дизель Моториса)
+str_rbd_portugal_cp_0100                                                :CP 0100 (Дизель Моториса)
+str_rbd_netherlands_ns_20_kameel                                :NS 20 'Kameel' (Дизель Моториса)
+str_rbd_russia_rzd_ach2                                                 :РЖД АЧ2 (Дизель Моториса)
+str_rbd_united_kingdom_br_153_super_sprinter    :BR 153 'Super Sprinter' (Дизель Моториса)
+str_rbd_czech_republic_cd_809                                   :CD 809 (Дизель Моториса)
 
-#Railbus-electric
-str_rbe_Switzerland_AB_CFe_3_3          :AB CFe 3/3 (Электро-Моториса)
-str_rbe_Italy_FS_ALe_840                        :FS ALe 840 (Электро-Моториса)
+#railbus-electric
+str_rbe_switzerland_ab_cfe_3_3          :AB CFe 3/3 (Электро-Моториса)
+str_rbe_italy_fs_ale_840                        :FS ALe 840 (Электро-Моториса)
 
-#Steam
-str_steam_USA_4_4_0_American            :4-4-0 'Американец' (Пар)
-str_steam_Switzerland_SBB_Ec_2_5        :SBB Ec 2/5 (Пар)
-str_steam_USA_4_6_0_Ten_wheeler         :4-6-0 'Десяти-колесник' (Пар)
-str_steam_Austria_KkStB_99                      :KkStB 99 (Пар)
-str_steam_UK_Caledonian_Railway_439     :Каледонские ЖД 439 (Пар)
-str_steam_Switzerland_SBB_A_3_5         :SBB A 3/5 (Пар)
-str_steam_Switzerland_SBB_E_3_3         :SBB E 3/3 (Пар)
-str_steam_Austria_KkStB_299             :KkStB 299 (Пар)
-str_steam_Croatia_HZ_51                         :HZ 51 (Пар)
-str_steam_Argentina_FCNEA_11B_2_8_0     :FCNEA 11B 2-8-0 (Пар)
-str_steam_France_SNCF_140C                      :SNCF 140C (Пар)
-str_steam_France_SNCF_141TA             :SNCF 141TA (Пар)
-str_steam_UK_GWR_4900                           :GWR 4900 (Пар)
-str_steam_UK_GWR_5700                           :GWR 5700 (Пар)
-str_steam_Netherlands_NS_6300           :NS 6300 (Пар)
-str_steam_Germany_Prussian_S10          :Пруссак S.10 (Пар)
-str_steam_UK_LMS_5MT_Black_Five         :LMS 5MT 'Black Five' (Пар)
-str_steam_UK_LNER_A4_Gresley            :LNER A4 'Gresley' (Пар)
-str_steam_Denmark_DSB_E                         :DSB E (Пар)
-str_steam_Germany_DB_52                         :DB 52 (Пар)
-str_steam_Italy_FS_895                          :FS 895 (Пар)
+#steam
+str_steam_usa_4_4_0_american            :4-4-0 'Американец' (Пар)
+str_steam_switzerland_sbb_ec_2_5        :SBB Ec 2/5 (Пар)
+str_steam_usa_4_6_0_ten_wheeler         :4-6-0 'Десяти-колесник' (Пар)
+str_steam_austria_kkstb_99                      :KkStB 99 (Пар)
+str_steam_uk_caledonian_railway_439     :Каледонские ЖД 439 (Пар)
+str_steam_switzerland_sbb_a_3_5         :SBB A 3/5 (Пар)
+str_steam_switzerland_sbb_e_3_3         :SBB E 3/3 (Пар)
+str_steam_austria_kkstb_299             :KkStB 299 (Пар)
+str_steam_croatia_hz_51                         :HZ 51 (Пар)
+str_steam_argentina_fcnea_11b_2_8_0     :FCNEA 11B 2-8-0 (Пар)
+str_steam_france_sncf_140c                      :SNCF 140C (Пар)
+str_steam_france_sncf_141ta             :SNCF 141TA (Пар)
+str_steam_uk_gwr_4900                           :GWR 4900 (Пар)
+str_steam_uk_gwr_5700                           :GWR 5700 (Пар)
+str_steam_netherlands_ns_6300           :NS 6300 (Пар)
+str_steam_germany_prussian_s10          :Пруссак S.10 (Пар)
+str_steam_uk_lms_5mt_black_five         :LMS 5MT 'Black Five' (Пар)
+str_steam_uk_lner_a4_gresley            :LNER A4 'Gresley' (Пар)
+str_steam_denmark_dsb_e                         :DSB E (Пар)
+str_steam_germany_db_52                         :DB 52 (Пар)
+str_steam_italy_fs_895                          :FS 895 (Пар)
 
-#Diesel
-str_diesel_USA_CNJ_ALCo_GE_IR_Boxcab                                    :CNJ ALCo-GE-IR Маневровый (Дизель)
-str_diesel_USA_Western_Pacific_ALCO_S_2                                 :Западно-Тихоокеанские ЖД США ALCO S-2 (Дизель)
-str_diesel_Brazil_EFCB_ALCO_RS_3                                                :EFCB ALCO RS-3 (Дизель)
-str_diesel_Austria_OBB_2060                                                     :OBB 2060 (Дизель)
-str_diesel_Canada_VIA_Rail_FP9                                                  :VIA ЖД FP9 (Дизель)
-str_diesel_Hungary_MAV_M44                                                              :MAV M44 (Дизель)
-str_diesel_Belgium_NMBS_SNCB_83                                                 :NMBS/SNCB 83 (Дизель)
-str_diesel_Brazil_BF_EMD_GL8                                                    :BF EMD GL8 (Дизель)
-str_diesel_Russia_RZD_TEP60                                                     :РЖД ТЕП60 (Дизель)
-str_diesel_India_Indian_Railways_WDM_2                                  :ИЖД WDM-2 (Дизель)
-str_diesel_Australia_NSWGR_422                                                  :NSWGR 422 (Дизель)
-str_diesel_Egypt_ENR_G22W                                                               :ENR G22W (Дизель)
-str_diesel_Panama_Panama_Canal_Railway_EMD_F40PH                :EMD F40PH ЖД Панамского Канала (Дизель)
-str_diesel_USA_Amtrak_P42DC_Genesis                                     :Амтрак P42DC 'Genesis' (Дизель)
-str_diesel_Argentina_MF_GE_U20C                                                 :MF GE U20C (Дизель)
-str_diesel_Belgium_NMBS_SNCB_7800                                               :NMBS/SNCB 7800 (Дизель)
-str_diesel_UK_BR_66                                                                     :BR 66 (Дизель)
-str_diesel_Iran_RAI_DE43CA_Prima                                                :RAI DE43CA 'Prima' (Дизель)
-str_diesel_Ukraine_UZ_TEP150                                                    :УЖД ТЕП150 (Дизель)
-str_diesel_China_China_Railways_HXN5                                    :КЖД HXN5 (Дизель)
-str_diesel_Russia_RZD_GT1                                                               :РЖД ГТ1 (Дизель)
-str_diesel_Germany_HVLE_V490                                                    :HVLE V490 (Дизель)
+#diesel
+str_diesel_usa_cnj_alco_ge_ir_boxcab                                    :CNJ ALCo-GE-IR Маневровый (Дизель)
+str_diesel_usa_western_pacific_alco_s_2                                 :Западно-Тихоокеанские ЖД США ALCO S-2 (Дизель)
+str_diesel_brazil_efcb_alco_rs_3                                                :EFCB ALCO RS-3 (Дизель)
+str_diesel_austria_obb_2060                                                     :OBB 2060 (Дизель)
+str_diesel_canada_via_rail_fp9                                                  :VIA ЖД FP9 (Дизель)
+str_diesel_hungary_mav_m44                                                              :MAV M44 (Дизель)
+str_diesel_belgium_nmbs_sncb_83                                                 :NMBS/SNCB 83 (Дизель)
+str_diesel_brazil_bf_emd_gl8                                                    :BF EMD GL8 (Дизель)
+str_diesel_russia_rzd_tep60                                                     :РЖД ТЕП60 (Дизель)
+str_diesel_india_indian_railways_wdm_2                                  :ИЖД WDM-2 (Дизель)
+str_diesel_australia_nswgr_422                                                  :NSWGR 422 (Дизель)
+str_diesel_egypt_enr_g22w                                                               :ENR G22W (Дизель)
+str_diesel_panama_panama_canal_railway_emd_f40ph                :EMD F40PH ЖД Панамского Канала (Дизель)
+str_diesel_usa_amtrak_p42dc_genesis                                     :Амтрак P42DC 'Genesis' (Дизель)
+str_diesel_argentina_mf_ge_u20c                                                 :MF GE U20C (Дизель)
+str_diesel_belgium_nmbs_sncb_7800                                               :NMBS/SNCB 7800 (Дизель)
+str_diesel_uk_br_66                                                                     :BR 66 (Дизель)
+str_diesel_iran_rai_de43ca_prima                                                :RAI DE43CA 'Prima' (Дизель)
+str_diesel_ukraine_uz_tep150                                                    :УЖД ТЕП150 (Дизель)
+str_diesel_china_china_railways_hxn5                                    :КЖД HXN5 (Дизель)
+str_diesel_russia_rzd_gt1                                                               :РЖД ГТ1 (Дизель)
+str_diesel_germany_hvle_v490                                                    :HVLE V490 (Дизель)
 
-#Electric
-str_electric_Norway_NSB_EL7                                     :NSB EL7 (Электро)
-str_electric_UK_NER_EF1                                                 :NER EF1 (Электро)
-str_electric_USA_Pennsylvania_Railroad_FF_1     :Локомотив Пенсильванской ЖД FF-1 (Электро)
-str_electric_Japan_JNR_EB10                                     :JNR EB10 (Электро)
-str_electric_Norway_NSB_EL10                                    :NSB EL10 (Электро)
-str_electric_Germany_DB_104                                     :DB 104 (Электро)
-str_electric_Italy_FS_E428                                              :FS E428 (Электро)
-str_electric_USA_Pennsylvania_Railroad_GG_1     :Локомотив Пенсильванской ЖД GG-1 (Электро)
-str_electric_South_Africa_SAR_ES_Class                  :SAR ES Class (Электро)
-str_electric_Netherlands_NS_1000                                :NS 1000 (Электро)
-str_electric_UK_BR_77_Metrovic                                  :BR 77 'Metrovic' (Электро)
-str_electric_France_SNCF_BB_9004                                :SNCF BB 9004 (Электро)
-str_electric_Switzerland_SBB_Ae_6_6                     :SBB Ae 6/6 (Электро)
-str_electric_India_Indian_Railways_WCM_1                :ИЖД WCM-1 (Электро)
-str_electric_Italy_FS_E646                                              :FS E646 (Электро)
-str_electric_Japan_JNR_EF64                                     :JNR EF64 (Электро)
-str_electric_Austria_OBB_1044                                   :OBB 1044 (Электро)
-str_electric_France_SNCF_BB_22200                               :SNCF BB 22200 (Электро)
-str_electric_Poland_PKP_ET41                                    :PKP ET41 (Электро)
-str_electric_Netherlands_NS_1600                                :NS 1600 (Электро)
-str_electric_China_China_Railways_SS6                   :КЖД SS6 (Электро)
-str_electric_Belgium_NMBS_SNCB_13_HLE                   :NMBS/SNCB 13 HLE (Электрик)
-str_electric_Ukraine_UZ_DS3                                     :УЗ ДС3 (Электро)
-str_electric_Kazakhstan_KTZ_KZ4A                                :КТЖ КЗ4A (Электро)
-str_electric_France_SNCF_CC_40100                               :SNCF CC 40100 (Электро)
-str_electric_India_Indian_Railways_WCG_1                :ИЖД WCG-1 (Электро)
+#electric
+str_electric_norway_nsb_el7                                     :NSB EL7 (Электро)
+str_electric_uk_ner_ef1                                                 :NER EF1 (Электро)
+str_electric_usa_pennsylvania_railroad_ff_1     :Локомотив Пенсильванской ЖД FF-1 (Электро)
+str_electric_japan_jnr_eb10                                     :JNR EB10 (Электро)
+str_electric_norway_nsb_el10                                    :NSB EL10 (Электро)
+str_electric_germany_db_104                                     :DB 104 (Электро)
+str_electric_italy_fs_e428                                              :FS E428 (Электро)
+str_electric_usa_pennsylvania_railroad_gg_1     :Локомотив Пенсильванской ЖД GG-1 (Электро)
+str_electric_south_africa_sar_es_class                  :SAR ES Class (Электро)
+str_electric_netherlands_ns_1000                                :NS 1000 (Электро)
+str_electric_uk_br_77_metrovic                                  :BR 77 'Metrovic' (Электро)
+str_electric_france_sncf_bb_9004                                :SNCF BB 9004 (Электро)
+str_electric_switzerland_sbb_ae_6_6                     :SBB Ae 6/6 (Электро)
+str_electric_india_indian_railways_wcm_1                :ИЖД WCM-1 (Электро)
+str_electric_italy_fs_e646                                              :FS E646 (Электро)
+str_electric_japan_jnr_ef64                                     :JNR EF64 (Электро)
+str_electric_austria_obb_1044                                   :OBB 1044 (Электро)
+str_electric_france_sncf_bb_22200                               :SNCF BB 22200 (Электро)
+str_electric_poland_pkp_et41                                    :PKP ET41 (Электро)
+str_electric_netherlands_ns_1600                                :NS 1600 (Электро)
+str_electric_china_china_railways_ss6                   :КЖД SS6 (Электро)
+str_electric_belgium_nmbs_sncb_13_hle                   :NMBS/SNCB 13 HLE (Электрик)
+str_electric_ukraine_uz_ds3                                     :УЗ ДС3 (Электро)
+str_electric_kazakhstan_ktz_kz4a                                :КТЖ КЗ4A (Электро)
+str_electric_france_sncf_cc_40100                               :SNCF CC 40100 (Электро)
+str_electric_india_indian_railways_wcg_1                :ИЖД WCG-1 (Электро)
 
-#DMU
-str_dmu_Sweden_SJ_Y2                                            :SJ Y2 (Дизельпоезд)
-str_dmu_Germany_DB_642_Desiro                           :DB 642 'Desiro' (Дизельпоезд)
-str_dmu_Russia_RZD_RA2                                          :РЖД РA2 (Дизельпоезд)
-str_dmu_Croatia_HZ_7022                                         :HZ 7022 (Дизельпоезд)
+#dmu
+str_dmu_sweden_sj_y2                                            :SJ Y2 (Дизельпоезд)
+str_dmu_germany_db_642_desiro                           :DB 642 'Desiro' (Дизельпоезд)
+str_dmu_russia_rzd_ra2                                          :РЖД РA2 (Дизельпоезд)
+str_dmu_croatia_hz_7022                                         :HZ 7022 (Дизельпоезд)
 
-#CargoDMU
+#cargodmu
 
-#EMU
-str_emu_Italy_FS_ETR200                                         :FS ETR200 (Электропоезд)
-str_emu_Japan_JNR_Shinkansen_Series_0           :JNR Shinkansen Серия 0 (Электропоезд)
-str_emu_Denmark_DSB_S_Tog_II                            :DSB S-Tog II (Электропоезд)
-str_emu_Germany_DB_ET420                                        :DB ET420 (Электропоезд)
-str_emu_Finland_VR_Sm2                                          :VR Sm2 (Электропоезд)
-str_emu_Hungary_MAV_BDVmot                                      :MAV BDVmot (Электропоезд)
-str_emu_Sweden_SJ_X2000                                         :SJ X2000 (Электропоезд)
-str_emu_Italy_FS_ETR500                                         :FS ETR500 (Электропоезд)
-str_emu_Denmark_DSB_S_Tog_IV                            :DSB S-Tog IV (Электропоезд)
-str_emu_Italy_FS_ALe426                                         :FS ALe426 (Электропоезд)
-str_emu_Czech_Republic_CD_680_Pendolino         :CD 680 'Pendolino' (Электропоезд)
-str_emu_Switzerland_SBB_RABe_523_Flirt          :SBB RABe 523 'Ухажер' (Электропоезд)
+#emu
+str_emu_italy_fs_etr200                                         :FS ETR200 (Электропоезд)
+str_emu_japan_jnr_shinkansen_series_0           :JNR Shinkansen Серия 0 (Электропоезд)
+str_emu_denmark_dsb_s_tog_ii                            :DSB S-Tog II (Электропоезд)
+str_emu_germany_db_et420                                        :DB ET420 (Электропоезд)
+str_emu_finland_vr_sm2                                          :VR Sm2 (Электропоезд)
+str_emu_hungary_mav_bdvmot                                      :MAV BDVmot (Электропоезд)
+str_emu_sweden_sj_x2000                                         :SJ X2000 (Электропоезд)
+str_emu_italy_fs_etr500                                         :FS ETR500 (Электропоезд)
+str_emu_denmark_dsb_s_tog_iv                            :DSB S-Tog IV (Электропоезд)
+str_emu_italy_fs_ale426                                         :FS ALe426 (Электропоезд)
+str_emu_czech_republic_cd_680_pendolino         :CD 680 'Pendolino' (Электропоезд)
+str_emu_switzerland_sbb_rabe_523_flirt          :SBB RABe 523 'Ухажер' (Электропоезд)
 
-#Single Unit Metro
+#single unit metro
 
-#Multiple Unit Metro
-str_mtro_Argentina_Le_Brugeoise                                 :Буйнос Айрес 'Le Brugeoise' (Метро)
-str_mtro_Germany_Munchen_MVG_A2                                 :Мюнхенец MVG A2 (Метро)
-str_mtro_Netherlands_Amsterdam_Type_M1                  :Амстердам M1 (Метро)
-str_mtro_Sweden_Stockholm_C8                                    :Стокгольм C8 (Метро)
-str_mtro_North_Korea_Pyongyang_D_stock                  :Пхеньян D серия (Метро)
-str_mtro_Finland_Helsinki_M100                                  :Хельсинки M100 (Метро)
-str_mtro_Egypt_Cairo_1987_Stock                                 :Каир 1987 серия (Метро)
-str_mtro_UK_DLR_P86                                                     :DLR P86 (Метро)
-str_mtro_Russia_Moscow_81_7175M                                 :Москва 81-717.5M Серия (Метро)
-str_mtro_Taiwan_Taipei_C301                                     :Тайпей C301 (Метро)
-str_mtro_Netherlands_Amsterdam_CAF_90                   :Амстердам CAF 90 (Метро)
-str_mtro_France_Paris_MP89                                              :Париж MP89 (Метро)
-str_mtro_Singapore_Singapore_C830_Metropolis    :Сингапур C830 'Metropolis' (Метро)
-str_mtro_Norway_Oslo_MX3000                                     :Осло MX3000 (Метро)
-str_mtro_Greece_Thessaloniki_2014                               :Салоники 2014 (Метро)
+#multiple unit metro
+str_mtro_argentina_le_brugeoise                                 :Буйнос Айрес 'Le Brugeoise' (Метро)
+str_mtro_germany_munchen_mvg_a2                                 :Мюнхенец MVG A2 (Метро)
+str_mtro_netherlands_amsterdam_type_m1                  :Амстердам M1 (Метро)
+str_mtro_sweden_stockholm_c8                                    :Стокгольм C8 (Метро)
+str_mtro_north_korea_pyongyang_d_stock                  :Пхеньян D серия (Метро)
+str_mtro_finland_helsinki_m100                                  :Хельсинки M100 (Метро)
+str_mtro_egypt_cairo_1987_stock                                 :Каир 1987 серия (Метро)
+str_mtro_uk_dlr_p86                                                     :DLR P86 (Метро)
+str_mtro_russia_moscow_81_7175m                                 :Москва 81-717.5M Серия (Метро)
+str_mtro_taiwan_taipei_c301                                     :Тайпей C301 (Метро)
+str_mtro_netherlands_amsterdam_caf_90                   :Амстердам CAF 90 (Метро)
+str_mtro_france_paris_mp89                                              :Париж MP89 (Метро)
+str_mtro_singapore_singapore_c830_metropolis    :Сингапур C830 'Metropolis' (Метро)
+str_mtro_norway_oslo_mx3000                                     :Осло MX3000 (Метро)
+str_mtro_greece_thessaloniki_2014                               :Салоники 2014 (Метро)
 
-#Maglev railbus
+#maglev railbus
 
-#Maglev
+#maglev
 
 #wagons
-str_mu_Wagon_Gen1_Tanker                                   :Танкер 1-го Покол.
-str_mu_Wagon_Gen2_Flat_Wagon                               :Вагон-Платформа 2-го Покол.
-str_mu_Wagon_Gen2_Boxcar_Type1                             :Деревянный Товарный Вагон 2-го Покол. (Тип 1)
-str_mu_Wagon_Gen2_Boxcar_Type2                             :Деревянный Товарный Вагон 2-го Покол. (Тип 2)
-str_mu_Wagon_Gen2_Silo                                     :Хоппер 2-го Покол.
-str_mu_Wagon_Gen2_Hopper                                   :Деревянный Вагон-Хопер 2-го Покол.
-str_mu_Wagon_Gen3_Silo_Type1                               :Силос Вагон 3-го Поколения (Тип 1)
-str_mu_Wagon_Gen4_Silo_Type2                               :Силос Вагон 4-го Поколения (Тип 2)
-str_mu_Wagon_Gen4_Hopper_Type1                             :Само-разгружающийся Хоппер 4-го Покол. (Тип 1)
-str_mu_Wagon_Gen4_Hopper_Type2                             :Само-разгружающийся Хоппер 4-го Покол. (Тип 2)
-str_mu_Wagon_Gen4_Car_Transporter                  :Автомобильный Вагон 4-го Покол.
-str_mu_Wagon_Gen5_Flatcar                                  :Вагон-Платформа 5-го Покол.
-str_mu_Wagon_Gen5_Boxcar_Type1                             :Товарный Вагон 5-го Покол. (Тип 1)
-str_mu_Wagon_Gen5_Tanker                                   :Танкер 5-го Покол.
-str_mu_Wagon_Gen5_Hopper_Type1                             :Само-разгружающийся Хоппер 5-го Покол. (Тип 1)
-str_mu_Wagon_Gen5_Hopper_Type2                             :Само-разгружающийся Хоппер 5-го Покол. (Тип 2)
-str_mu_Wagon_Gen5_Car_Transporter                  :Автомобильный Вагон 5-го Покол.
+str_mu_wagon_gen1_tanker                                   :Танкер 1-го Покол.
+str_mu_wagon_gen2_flat_wagon                               :Вагон-Платформа 2-го Покол.
+str_mu_wagon_gen2_boxcar_type1                             :Деревянный Товарный Вагон 2-го Покол. (Тип 1)
+str_mu_wagon_gen2_boxcar_type2                             :Деревянный Товарный Вагон 2-го Покол. (Тип 2)
+str_mu_wagon_gen2_silo                                     :Хоппер 2-го Покол.
+str_mu_wagon_gen2_hopper                                   :Деревянный Вагон-Хопер 2-го Покол.
+str_mu_wagon_gen3_silo_type1                               :Силос Вагон 3-го Поколения (Тип 1)
+str_mu_wagon_gen4_silo_type2                               :Силос Вагон 4-го Поколения (Тип 2)
+str_mu_wagon_gen4_hopper_type1                             :Само-разгружающийся Хоппер 4-го Покол. (Тип 1)
+str_mu_wagon_gen4_hopper_type2                             :Само-разгружающийся Хоппер 4-го Покол. (Тип 2)
+str_mu_wagon_gen4_car_transporter                  :Автомобильный Вагон 4-го Покол.
+str_mu_wagon_gen5_flatcar                                  :Вагон-Платформа 5-го Покол.
+str_mu_wagon_gen5_boxcar_type1                             :Товарный Вагон 5-го Покол. (Тип 1)
+str_mu_wagon_gen5_tanker                                   :Танкер 5-го Покол.
+str_mu_wagon_gen5_hopper_type1                             :Само-разгружающийся Хоппер 5-го Покол. (Тип 1)
+str_mu_wagon_gen5_hopper_type2                             :Само-разгружающийся Хоппер 5-го Покол. (Тип 2)
+str_mu_wagon_gen5_car_transporter                  :Автомобильный Вагон 5-го Покол.
 
-str_mu_Wagon_Service_Car_Type1                             :Вагон Обслуживания (Тип 1)
-str_mu_Wagon_Service_Car_Type2                             :Вагон Обслуживания (Тип 2)
+str_mu_wagon_service_car_type1                             :Вагон Обслуживания (Тип 1)
+str_mu_wagon_service_car_type2                             :Вагон Обслуживания (Тип 2)
 
 #coaches
-str_mu_Coach_Gen1_Wooden_2_axle_Compartment_Coach                  :Деревянный 2-х осный Купейный Вагон
-str_mu_Coach_Gen1_Clerestory_Compartment_Coach                     :Освещенный Купейный Вагон
-str_mu_Coach_Gen1_Clerestory_Regional_Coach                                :Освещенный Междугородний Вагон
-str_mu_Coach_Gen1_Clerestory_Mail_Coach                                    :Освещенный Почтовый Вагон
-str_mu_Coach_Gen2_Steel_2_axle_Compartment_Coach                   :Металический 2-х осный Купейный Вагон
-str_mu_Coach_Gen2_Steel_2_axle_Mail_Coach                                  :Металический 2-ч осный Почтовый Вагон
-str_mu_Coach_Gen2_Steel_3_axle_Compartment_Coach                   :Металический 3-х осный Купейный Вагон
-str_mu_Coach_Gen2_Steel_3_axle_Mail_Coach                                  :Металический 3-ч осный Почтовый Вагон
-str_mu_Coach_Gen3_Steel_Lightweight_Intercity_Coach                :Стальной Легкий Пригородный Вагон
-str_mu_Coach_Gen3_Aluminium_Lightweight_Intercity_Coach    :Алюминевый Легкий Пригородный Вагон
-str_mu_Coach_Gen3_Aluminium_Lightweight_Regional_Coach     :Алюминевый Легкий Междугородний Вагон
-str_mu_Coach_Gen3_Aluminium_Lightweight_Mail_Coach                 :Алюминевый Легкий Почтовый Вагон
-str_mu_Coach_Gen3_Mk1_Intercity_Coach                                              :Mk1 Пригородный Вагон
-str_mu_Coach_Gen3_Mk1_Regional_Coach                                               :Междугородний Вагон 'Mk1'
-str_mu_Coach_Gen3_UIC_X_Intercity_Coach                                    :UIC-X Междугородный Вагон
-str_mu_Coach_Gen3_Umbauwagen_Local_Coach                                   :'Umbauwagen' Городской Вагон
-str_mu_Coach_Gen3_Indian_Intercity_Coach                                   :Индийский Пригородный Вагон
-str_mu_Coach_Gen3_Indian_Mail_Coach                                                :Индийский Почтовый Вагон
-str_mu_Coach_Gen4_Silberling_Commuter_Coach                                :Пригородный Вагон 'Silberling'
-str_mu_Coach_Gen4_Eurofima_Mail_Coach                                              :Почтовый Вагон "Eurofima"
-str_mu_Coach_Gen4_Russian_Mail_Coach                                               :Российский Почтовый Вагон
-str_mu_Coach_Gen4_Superliner_Coach                                                 :Скоростной Спальный Вагон
-str_mu_Coach_Gen4_Amfleet_Regional_Coach                                   :Междугородний Пассажирский Вагон "Amfleet"
-str_mu_Coach_Gen4_Amfleet_Intercity_Coach                                  :Пригородный Вагон "Amfleet"
-str_mu_Coach_Gen4_Comet_Commuter_Coach                                     :Пригородный Вагон 'Comet'
-str_mu_Coach_Gen4_Horizon_Baggage_Coach                                    :Грузовой Вагон "Горизонт"
-str_mu_Coach_Gen5_Modern_Regional_Coach                                    :Современный Междугородний Вагон
-str_mu_Coach_Gen5_Modern_Commuter_Coach                                    :Современный Пригородный Вагон
-str_mu_Coach_Gen5_High_Speed_Double_Decker_IC2000                  :Скоростной Двухэтажный Вагон (IC2000)
-str_mu_Coach_Gen5_High_Speed_Mail_Coach                                    :Скоростной Почтовый Вагон
-str_mu_Coach_Gen6_Metropolis_Coach                                                 :Городской Вагон
+str_mu_coach_gen1_wooden_2_axle_compartment_coach                  :Деревянный 2-х осный Купейный Вагон
+str_mu_coach_gen1_clerestory_compartment_coach                     :Освещенный Купейный Вагон
+str_mu_coach_gen1_clerestory_regional_coach                                :Освещенный Междугородний Вагон
+str_mu_coach_gen1_clerestory_mail_coach                                    :Освещенный Почтовый Вагон
+str_mu_coach_gen2_steel_2_axle_compartment_coach                   :Металический 2-х осный Купейный Вагон
+str_mu_coach_gen2_steel_2_axle_mail_coach                                  :Металический 2-ч осный Почтовый Вагон
+str_mu_coach_gen2_steel_3_axle_compartment_coach                   :Металический 3-х осный Купейный Вагон
+str_mu_coach_gen2_steel_3_axle_mail_coach                                  :Металический 3-ч осный Почтовый Вагон
+str_mu_coach_gen3_steel_lightweight_intercity_coach                :Стальной Легкий Пригородный Вагон
+str_mu_coach_gen3_aluminium_lightweight_intercity_coach    :Алюминевый Легкий Пригородный Вагон
+str_mu_coach_gen3_aluminium_lightweight_regional_coach     :Алюминевый Легкий Междугородний Вагон
+str_mu_coach_gen3_aluminium_lightweight_mail_coach                 :Алюминевый Легкий Почтовый Вагон
+str_mu_coach_gen3_mk1_intercity_coach                                              :Mk1 Пригородный Вагон
+str_mu_coach_gen3_mk1_regional_coach                                               :Междугородний Вагон 'Mk1'
+str_mu_coach_gen3_uic_x_intercity_coach                                    :UIC-X Междугородный Вагон
+str_mu_coach_gen3_umbauwagen_local_coach                                   :'Umbauwagen' Городской Вагон
+str_mu_coach_gen3_indian_intercity_coach                                   :Индийский Пригородный Вагон
+str_mu_coach_gen3_indian_mail_coach                                                :Индийский Почтовый Вагон
+str_mu_coach_gen4_silberling_commuter_coach                                :Пригородный Вагон 'Silberling'
+str_mu_coach_gen4_eurofima_mail_coach                                              :Почтовый Вагон "Eurofima"
+str_mu_coach_gen4_russian_mail_coach                                               :Российский Почтовый Вагон
+str_mu_coach_gen4_superliner_coach                                                 :Скоростной Спальный Вагон
+str_mu_coach_gen4_amfleet_regional_coach                                   :Междугородний Пассажирский Вагон "Amfleet"
+str_mu_coach_gen4_amfleet_intercity_coach                                  :Пригородный Вагон "Amfleet"
+str_mu_coach_gen4_comet_commuter_coach                                     :Пригородный Вагон 'Comet'
+str_mu_coach_gen4_horizon_baggage_coach                                    :Грузовой Вагон "Горизонт"
+str_mu_coach_gen5_modern_regional_coach                                    :Современный Междугородний Вагон
+str_mu_coach_gen5_modern_commuter_coach                                    :Современный Пригородный Вагон
+str_mu_coach_gen5_high_speed_double_decker_ic2000                  :Скоростной Двухэтажный Вагон (IC2000)
+str_mu_coach_gen5_high_speed_mail_coach                                    :Скоростной Почтовый Вагон
+str_mu_coach_gen6_metropolis_coach                                                 :Городской Вагон
 
 #special wagons
-str_mglv_Maglev_Wagon_Powered                  :Вагон Состава на Магнитной Подушке (Моторный)
+str_mglv_maglev_wagon_powered                  :Вагон Состава на Магнитной Подушке (Моторный)
 
 #Obsolete vehicles
 

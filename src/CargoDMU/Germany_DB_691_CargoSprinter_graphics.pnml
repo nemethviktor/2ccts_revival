@@ -1,184 +1,161 @@
-/*
- *  Copyright (C) 2017 Transportman // V. Nemeth 2026
- *  This file is part of the 2cc Trains In NML
- *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
+//  Copyright (C) 2017 Transportman // V. Nemeth 2026+
+//  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
-*/
+// Template: TPL_42A
 
-/*
-* PURCHASE
-*/
+// PURCHASE
+spriteset(spriteset_cargodmu_germany_db_691_cargosprinter_purchase, "gfx/cargodmu/germany_db_691_cargosprinter.png") {template_purchase_dualheaded(1, 192)}
 
-spriteset(spriteset_cargodmu_Germany_DB_691_CargoSprinter_purchase, "gfx/CargoDMU/Germany_DB_691_CargoSprinter.png") {
-	template_purchase_dualheaded(1, 192)
+
+// Front
+
+/// FRONT   LIVERY 1   LOADING STATE 1
+spriteset(spriteset_cargodmu_germany_db_691_cargosprinter_front_l1_s1, "gfx/cargodmu/germany_db_691_cargosprinter.png") {template_2cc_engines_general(1, 0)}
+
+
+/// FRONT   LIVERY 1   LOADING STATE 2
+spriteset(spriteset_cargodmu_germany_db_691_cargosprinter_front_l1_s2, "gfx/cargodmu/germany_db_691_cargosprinter.png") {template_2cc_engines_general(178, 0)}
+
+
+/// FRONT   LIVERY 1   LOADING STATE 3
+spriteset(spriteset_cargodmu_germany_db_691_cargosprinter_front_l1_s3, "gfx/cargodmu/germany_db_691_cargosprinter.png") {template_2cc_engines_general(356, 0)}
+
+
+/// LIVERY 1 SPRITEGROUP - FRONT
+spritegroup spritegroup_cargodmu_germany_db_691_cargosprinter_front_l1 {
+    loading: [spriteset_cargodmu_germany_db_691_cargosprinter_front_l1_s1, spriteset_cargodmu_germany_db_691_cargosprinter_front_l1_s2, spriteset_cargodmu_germany_db_691_cargosprinter_front_l1_s3];
+    loaded: [spriteset_cargodmu_germany_db_691_cargosprinter_front_l1_s1, spriteset_cargodmu_germany_db_691_cargosprinter_front_l1_s2, spriteset_cargodmu_germany_db_691_cargosprinter_front_l1_s3];
 }
 
-/*
-* VEHICLE
-*/
+/// FRONT   LIVERY 2   LOADING STATE 1
+spriteset(spriteset_cargodmu_germany_db_691_cargosprinter_front_l2_s1, "gfx/cargodmu/germany_db_691_cargosprinter.png") {template_2cc_engines_general(1, 32)}
 
-//Front - Livery 1 - State 1
-spriteset(spriteset_cargodmu_Germany_DB_691_CargoSprinter_front_L1_S1, "gfx/CargoDMU/Germany_DB_691_CargoSprinter.png") {
-	template_2cc_engines_general(1, 1)
+
+/// FRONT   LIVERY 2   LOADING STATE 2
+spriteset(spriteset_cargodmu_germany_db_691_cargosprinter_front_l2_s2, "gfx/cargodmu/germany_db_691_cargosprinter.png") {template_2cc_engines_general(178, 32)}
+
+
+/// FRONT   LIVERY 2   LOADING STATE 3
+spriteset(spriteset_cargodmu_germany_db_691_cargosprinter_front_l2_s3, "gfx/cargodmu/germany_db_691_cargosprinter.png") {template_2cc_engines_general(356, 32)}
+
+
+/// LIVERY 2 SPRITEGROUP - FRONT
+spritegroup spritegroup_cargodmu_germany_db_691_cargosprinter_front_l2 {
+    loading: [spriteset_cargodmu_germany_db_691_cargosprinter_front_l1_s1, spriteset_cargodmu_germany_db_691_cargosprinter_front_l1_s2, spriteset_cargodmu_germany_db_691_cargosprinter_front_l1_s3, spriteset_cargodmu_germany_db_691_cargosprinter_front_l2_s1, spriteset_cargodmu_germany_db_691_cargosprinter_front_l2_s2, spriteset_cargodmu_germany_db_691_cargosprinter_front_l2_s3];
+    loaded: [spriteset_cargodmu_germany_db_691_cargosprinter_front_l1_s1, spriteset_cargodmu_germany_db_691_cargosprinter_front_l1_s2, spriteset_cargodmu_germany_db_691_cargosprinter_front_l1_s3, spriteset_cargodmu_germany_db_691_cargosprinter_front_l2_s1, spriteset_cargodmu_germany_db_691_cargosprinter_front_l2_s2, spriteset_cargodmu_germany_db_691_cargosprinter_front_l2_s3];
 }
 
-//Front - Livery 1 - State 2
-spriteset(spriteset_cargodmu_Germany_DB_691_CargoSprinter_front_L1_S2, "gfx/CargoDMU/Germany_DB_691_CargoSprinter.png") {
-	template_2cc_engines_general(179, 1)
+// Random Livery Selector for front
+random_switch(FEAT_TRAINS, SELF, switch_cargodmu_germany_db_691_cargosprinter_front_livery) {
+	5: spritegroup_cargodmu_germany_db_691_cargosprinter_front_l1;
+	5: spritegroup_cargodmu_germany_db_691_cargosprinter_front_l2;
 }
 
-//Front - Livery 1 - State 3
-spriteset(spriteset_cargodmu_Germany_DB_691_CargoSprinter_front_L1_S3, "gfx/CargoDMU/Germany_DB_691_CargoSprinter.png") {
-	template_2cc_engines_general(357, 1)
+// Back
+
+/// BACK   LIVERY 1   LOADING STATE 1
+spriteset(spriteset_cargodmu_germany_db_691_cargosprinter_back_l1_s1, "gfx/cargodmu/germany_db_691_cargosprinter.png") {template_2cc_engines_general(1, 64)}
+
+
+/// BACK   LIVERY 1   LOADING STATE 2
+spriteset(spriteset_cargodmu_germany_db_691_cargosprinter_back_l1_s2, "gfx/cargodmu/germany_db_691_cargosprinter.png") {template_2cc_engines_general(178, 64)}
+
+
+/// BACK   LIVERY 1   LOADING STATE 3
+spriteset(spriteset_cargodmu_germany_db_691_cargosprinter_back_l1_s3, "gfx/cargodmu/germany_db_691_cargosprinter.png") {template_2cc_engines_general(356, 64)}
+
+
+/// LIVERY 1 SPRITEGROUP - BACK
+spritegroup spritegroup_cargodmu_germany_db_691_cargosprinter_back_l1 {
+    loading: [spriteset_cargodmu_germany_db_691_cargosprinter_back_l1_s1, spriteset_cargodmu_germany_db_691_cargosprinter_back_l1_s2, spriteset_cargodmu_germany_db_691_cargosprinter_back_l1_s3];
+    loaded: [spriteset_cargodmu_germany_db_691_cargosprinter_back_l1_s1, spriteset_cargodmu_germany_db_691_cargosprinter_back_l1_s2, spriteset_cargodmu_germany_db_691_cargosprinter_back_l1_s3];
 }
 
-//Front - Livery 1
-spritegroup spritegroup_cargodmu_Germany_DB_691_CargoSprinter_front_L1{
-	loading: [spriteset_cargodmu_Germany_DB_691_CargoSprinter_front_L1_S1, spriteset_cargodmu_Germany_DB_691_CargoSprinter_front_L1_S2, spriteset_cargodmu_Germany_DB_691_CargoSprinter_front_L1_S3];
-	loaded: [spriteset_cargodmu_Germany_DB_691_CargoSprinter_front_L1_S1, spriteset_cargodmu_Germany_DB_691_CargoSprinter_front_L1_S2, spriteset_cargodmu_Germany_DB_691_CargoSprinter_front_L1_S3];
+/// BACK   LIVERY 2   LOADING STATE 1
+spriteset(spriteset_cargodmu_germany_db_691_cargosprinter_back_l2_s1, "gfx/cargodmu/germany_db_691_cargosprinter.png") {template_2cc_engines_general(1, 96)}
+
+
+/// BACK   LIVERY 2   LOADING STATE 2
+spriteset(spriteset_cargodmu_germany_db_691_cargosprinter_back_l2_s2, "gfx/cargodmu/germany_db_691_cargosprinter.png") {template_2cc_engines_general(178, 96)}
+
+
+/// BACK   LIVERY 2   LOADING STATE 3
+spriteset(spriteset_cargodmu_germany_db_691_cargosprinter_back_l2_s3, "gfx/cargodmu/germany_db_691_cargosprinter.png") {template_2cc_engines_general(356, 96)}
+
+
+/// LIVERY 2 SPRITEGROUP - BACK
+spritegroup spritegroup_cargodmu_germany_db_691_cargosprinter_back_l2 {
+    loading: [spriteset_cargodmu_germany_db_691_cargosprinter_back_l1_s1, spriteset_cargodmu_germany_db_691_cargosprinter_back_l1_s2, spriteset_cargodmu_germany_db_691_cargosprinter_back_l1_s3, spriteset_cargodmu_germany_db_691_cargosprinter_back_l2_s1, spriteset_cargodmu_germany_db_691_cargosprinter_back_l2_s2, spriteset_cargodmu_germany_db_691_cargosprinter_back_l2_s3];
+    loaded: [spriteset_cargodmu_germany_db_691_cargosprinter_back_l1_s1, spriteset_cargodmu_germany_db_691_cargosprinter_back_l1_s2, spriteset_cargodmu_germany_db_691_cargosprinter_back_l1_s3, spriteset_cargodmu_germany_db_691_cargosprinter_back_l2_s1, spriteset_cargodmu_germany_db_691_cargosprinter_back_l2_s2, spriteset_cargodmu_germany_db_691_cargosprinter_back_l2_s3];
 }
 
-//Front - Livery 2 - State 1
-spriteset(spriteset_cargodmu_Germany_DB_691_CargoSprinter_front_L2_S1, "gfx/CargoDMU/Germany_DB_691_CargoSprinter.png") {
-	template_2cc_engines_general(1, 32)
+// Random Livery Selector for back
+random_switch(FEAT_TRAINS, SELF, switch_cargodmu_germany_db_691_cargosprinter_back_livery) {
+	5: spritegroup_cargodmu_germany_db_691_cargosprinter_back_l1;
+	5: spritegroup_cargodmu_germany_db_691_cargosprinter_back_l2;
 }
 
-//Front - Livery 2 - State 2
-spriteset(spriteset_cargodmu_Germany_DB_691_CargoSprinter_front_L2_S2, "gfx/CargoDMU/Germany_DB_691_CargoSprinter.png") {
-	template_2cc_engines_general(179, 32)
+// Middle
+
+/// MIDDLE   LIVERY 1   LOADING STATE 1
+spriteset(spriteset_cargodmu_germany_db_691_cargosprinter_middle_l1_s1, "gfx/cargodmu/germany_db_691_cargosprinter.png") {template_2cc_engines_general(1, 128)}
+
+
+/// MIDDLE   LIVERY 1   LOADING STATE 2
+spriteset(spriteset_cargodmu_germany_db_691_cargosprinter_middle_l1_s2, "gfx/cargodmu/germany_db_691_cargosprinter.png") {template_2cc_engines_general(178, 128)}
+
+
+/// MIDDLE   LIVERY 1   LOADING STATE 3
+spriteset(spriteset_cargodmu_germany_db_691_cargosprinter_middle_l1_s3, "gfx/cargodmu/germany_db_691_cargosprinter.png") {template_2cc_engines_general(356, 128)}
+
+
+/// LIVERY 1 SPRITEGROUP - MIDDLE
+spritegroup spritegroup_cargodmu_germany_db_691_cargosprinter_middle_l1 {
+    loading: [spriteset_cargodmu_germany_db_691_cargosprinter_middle_l1_s1, spriteset_cargodmu_germany_db_691_cargosprinter_middle_l1_s2, spriteset_cargodmu_germany_db_691_cargosprinter_middle_l1_s3];
+    loaded: [spriteset_cargodmu_germany_db_691_cargosprinter_middle_l1_s1, spriteset_cargodmu_germany_db_691_cargosprinter_middle_l1_s2, spriteset_cargodmu_germany_db_691_cargosprinter_middle_l1_s3];
 }
 
-//Front - Livery 2 - State 3
-spriteset(spriteset_cargodmu_Germany_DB_691_CargoSprinter_front_L2_S3, "gfx/CargoDMU/Germany_DB_691_CargoSprinter.png") {
-	template_2cc_engines_general(357, 32)
+/// MIDDLE   LIVERY 2   LOADING STATE 1
+spriteset(spriteset_cargodmu_germany_db_691_cargosprinter_middle_l2_s1, "gfx/cargodmu/germany_db_691_cargosprinter.png") {template_2cc_engines_general(1, 160)}
+
+
+/// MIDDLE   LIVERY 2   LOADING STATE 2
+spriteset(spriteset_cargodmu_germany_db_691_cargosprinter_middle_l2_s2, "gfx/cargodmu/germany_db_691_cargosprinter.png") {template_2cc_engines_general(178, 160)}
+
+
+/// MIDDLE   LIVERY 2   LOADING STATE 3
+spriteset(spriteset_cargodmu_germany_db_691_cargosprinter_middle_l2_s3, "gfx/cargodmu/germany_db_691_cargosprinter.png") {template_2cc_engines_general(356, 160)}
+
+
+/// LIVERY 2 SPRITEGROUP - MIDDLE
+spritegroup spritegroup_cargodmu_germany_db_691_cargosprinter_middle_l2 {
+    loading: [spriteset_cargodmu_germany_db_691_cargosprinter_middle_l1_s1, spriteset_cargodmu_germany_db_691_cargosprinter_middle_l1_s2, spriteset_cargodmu_germany_db_691_cargosprinter_middle_l1_s3, spriteset_cargodmu_germany_db_691_cargosprinter_middle_l2_s1, spriteset_cargodmu_germany_db_691_cargosprinter_middle_l2_s2, spriteset_cargodmu_germany_db_691_cargosprinter_middle_l2_s3];
+    loaded: [spriteset_cargodmu_germany_db_691_cargosprinter_middle_l1_s1, spriteset_cargodmu_germany_db_691_cargosprinter_middle_l1_s2, spriteset_cargodmu_germany_db_691_cargosprinter_middle_l1_s3, spriteset_cargodmu_germany_db_691_cargosprinter_middle_l2_s1, spriteset_cargodmu_germany_db_691_cargosprinter_middle_l2_s2, spriteset_cargodmu_germany_db_691_cargosprinter_middle_l2_s3];
 }
 
-//Front - Livery 2
-spritegroup spritegroup_cargodmu_Germany_DB_691_CargoSprinter_front_L2{
-	loading: [spriteset_cargodmu_Germany_DB_691_CargoSprinter_front_L2_S1, spriteset_cargodmu_Germany_DB_691_CargoSprinter_front_L2_S2, spriteset_cargodmu_Germany_DB_691_CargoSprinter_front_L2_S3];
-	loaded: [spriteset_cargodmu_Germany_DB_691_CargoSprinter_front_L2_S1, spriteset_cargodmu_Germany_DB_691_CargoSprinter_front_L2_S2, spriteset_cargodmu_Germany_DB_691_CargoSprinter_front_L2_S3];
+// Random Livery Selector for middle
+random_switch(FEAT_TRAINS, SELF, switch_cargodmu_germany_db_691_cargosprinter_middle_livery) {
+	5: spritegroup_cargodmu_germany_db_691_cargosprinter_middle_l1;
+	5: spritegroup_cargodmu_germany_db_691_cargosprinter_middle_l2;
 }
 
-//Front
-random_switch(FEAT_TRAINS, SELF, switch_cargodmu_Germany_DB_691_CargoSprinter_front_livery){
-	1: spritegroup_cargodmu_Germany_DB_691_CargoSprinter_front_L1;
-	1: spritegroup_cargodmu_Germany_DB_691_CargoSprinter_front_L2;
+/// Dualheaded (reverse switch)
+/// In the context of var[0xC8] (which is the variable for "position in consist"):
+/// 0xFE: The very first vehicle in the train (The Engine/Front).
+/// 0xFF: The very last vehicle in the train (The Caboose/End).
+switch(FEAT_TRAINS, SELF, switch_cargodmu_germany_db_691_cargosprinter_reversed, var[0xC8]) {
+    0xFE: switch_cargodmu_germany_db_691_cargosprinter_back_livery;
+    0xFF: switch_cargodmu_germany_db_691_cargosprinter_back_livery;
+    switch_cargodmu_germany_db_691_cargosprinter_front_livery;
 }
 
-//Back - Livery 1 - State 1
-spriteset(spriteset_cargodmu_Germany_DB_691_CargoSprinter_back_L1_S1, "gfx/CargoDMU/Germany_DB_691_CargoSprinter.png") {
-	template_2cc_engines_general(1, 64)
+// Visual effect and power management
+// Position-based logic: DIESEL
+/// In the context of var[0xC8] (which is the variable for "position in consist"):
+/// 0xFE: The very first vehicle in the train (The Engine/Front).
+/// 0xFF: The very last vehicle in the train (The Caboose/End).
+switch(FEAT_TRAINS, SELF, switch_cargodmu_germany_db_691_cargosprinter_visual_effect_and_powered, var[0xC8]) {
+    0xFE: visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+    0xFF: visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+    visual_effect_and_powered(VISUAL_EFFECT_DIESEL, -3, DISABLE_WAGON_POWER);
 }
-
-//Back - Livery 1 - State 2
-spriteset(spriteset_cargodmu_Germany_DB_691_CargoSprinter_back_L1_S2, "gfx/CargoDMU/Germany_DB_691_CargoSprinter.png") {
-	template_2cc_engines_general(179, 64)
-}
-
-//Back - Livery 1 - State 3
-spriteset(spriteset_cargodmu_Germany_DB_691_CargoSprinter_back_L1_S3, "gfx/CargoDMU/Germany_DB_691_CargoSprinter.png") {
-	template_2cc_engines_general(357, 64)
-}
-
-//Back - Livery 1
-spritegroup spritegroup_cargodmu_Germany_DB_691_CargoSprinter_back_L1{
-	loading: [spriteset_cargodmu_Germany_DB_691_CargoSprinter_back_L1_S1, spriteset_cargodmu_Germany_DB_691_CargoSprinter_back_L1_S2, spriteset_cargodmu_Germany_DB_691_CargoSprinter_back_L1_S3];
-	loaded: [spriteset_cargodmu_Germany_DB_691_CargoSprinter_back_L1_S1, spriteset_cargodmu_Germany_DB_691_CargoSprinter_back_L1_S2, spriteset_cargodmu_Germany_DB_691_CargoSprinter_back_L1_S3];
-}
-
-//Back - Livery 2 - State 1
-spriteset(spriteset_cargodmu_Germany_DB_691_CargoSprinter_back_L2_S1, "gfx/CargoDMU/Germany_DB_691_CargoSprinter.png") {
-	template_2cc_engines_general(1, 96)
-}
-
-//Back - Livery 2 - State 2
-spriteset(spriteset_cargodmu_Germany_DB_691_CargoSprinter_back_L2_S2, "gfx/CargoDMU/Germany_DB_691_CargoSprinter.png") {
-	template_2cc_engines_general(179, 96)
-}
-
-//Back - Livery 2 - State 3
-spriteset(spriteset_cargodmu_Germany_DB_691_CargoSprinter_back_L2_S3, "gfx/CargoDMU/Germany_DB_691_CargoSprinter.png") {
-	template_2cc_engines_general(357, 96)
-}
-
-//Back - Livery 2
-spritegroup spritegroup_cargodmu_Germany_DB_691_CargoSprinter_back_L2{
-	loading: [spriteset_cargodmu_Germany_DB_691_CargoSprinter_back_L2_S1, spriteset_cargodmu_Germany_DB_691_CargoSprinter_back_L2_S2, spriteset_cargodmu_Germany_DB_691_CargoSprinter_back_L2_S3];
-	loaded: [spriteset_cargodmu_Germany_DB_691_CargoSprinter_back_L2_S1, spriteset_cargodmu_Germany_DB_691_CargoSprinter_back_L2_S2, spriteset_cargodmu_Germany_DB_691_CargoSprinter_back_L2_S3];
-}
-
-//Back
-random_switch(FEAT_TRAINS, SELF, switch_cargodmu_Germany_DB_691_CargoSprinter_back_livery){
-	1: spritegroup_cargodmu_Germany_DB_691_CargoSprinter_back_L1;
-	1: spritegroup_cargodmu_Germany_DB_691_CargoSprinter_back_L2;
-}
-
-//Middle - Livery 1 - State 1
-spriteset(spriteset_cargodmu_Germany_DB_691_CargoSprinter_middle_L1_S1, "gfx/CargoDMU/Germany_DB_691_CargoSprinter.png") {
-	template_2cc_engines_general(1, 128)
-}
-
-//Middle - Livery 1 - State 2
-spriteset(spriteset_cargodmu_Germany_DB_691_CargoSprinter_middle_L1_S2, "gfx/CargoDMU/Germany_DB_691_CargoSprinter.png") {
-	template_2cc_engines_general(179, 128)
-}
-
-//Middle - Livery 1 - State 3
-spriteset(spriteset_cargodmu_Germany_DB_691_CargoSprinter_middle_L1_S3, "gfx/CargoDMU/Germany_DB_691_CargoSprinter.png") {
-	template_2cc_engines_general(357, 128)
-}
-
-//Middle - Livery 1
-spritegroup spritegroup_cargodmu_Germany_DB_691_CargoSprinter_middle_L1{
-	loading: [spriteset_cargodmu_Germany_DB_691_CargoSprinter_middle_L1_S1, spriteset_cargodmu_Germany_DB_691_CargoSprinter_middle_L1_S2, spriteset_cargodmu_Germany_DB_691_CargoSprinter_middle_L1_S3];
-	loaded: [spriteset_cargodmu_Germany_DB_691_CargoSprinter_middle_L1_S1, spriteset_cargodmu_Germany_DB_691_CargoSprinter_middle_L1_S2, spriteset_cargodmu_Germany_DB_691_CargoSprinter_middle_L1_S3];
-}
-
-//Middle - Livery 2 - State 1
-spriteset(spriteset_cargodmu_Germany_DB_691_CargoSprinter_middle_L2_S1, "gfx/CargoDMU/Germany_DB_691_CargoSprinter.png") {
-	template_2cc_engines_general(1, 160)
-}
-
-//Middle - Livery 2 - State 2
-spriteset(spriteset_cargodmu_Germany_DB_691_CargoSprinter_middle_L2_S2, "gfx/CargoDMU/Germany_DB_691_CargoSprinter.png") {
-	template_2cc_engines_general(179, 160)
-}
-
-//Middle - Livery 2 - State 3
-spriteset(spriteset_cargodmu_Germany_DB_691_CargoSprinter_middle_L2_S3, "gfx/CargoDMU/Germany_DB_691_CargoSprinter.png") {
-	template_2cc_engines_general(357, 160)
-}
-
-//Middle - Livery 2
-spritegroup spritegroup_cargodmu_Germany_DB_691_CargoSprinter_middle_L2{
-	loading: [spriteset_cargodmu_Germany_DB_691_CargoSprinter_middle_L2_S1, spriteset_cargodmu_Germany_DB_691_CargoSprinter_middle_L2_S2, spriteset_cargodmu_Germany_DB_691_CargoSprinter_middle_L2_S3];
-	loaded: [spriteset_cargodmu_Germany_DB_691_CargoSprinter_middle_L2_S1, spriteset_cargodmu_Germany_DB_691_CargoSprinter_middle_L2_S2, spriteset_cargodmu_Germany_DB_691_CargoSprinter_middle_L2_S3];
-}
-
-//Middle
-random_switch(FEAT_TRAINS, SELF, switch_cargodmu_Germany_DB_691_CargoSprinter_middle_livery){
-	1: spritegroup_cargodmu_Germany_DB_691_CargoSprinter_middle_L1;
-	1: spritegroup_cargodmu_Germany_DB_691_CargoSprinter_middle_L2;
-}
-
-
-
-//Dualheaded engines
-switch(FEAT_TRAINS, SELF, switch_cargodmu_Germany_DB_691_CargoSprinter_reversed, var[0xC8]) {
-	0xFE: switch_cargodmu_Germany_DB_691_CargoSprinter_back_livery;
-    0xFF: switch_cargodmu_Germany_DB_691_CargoSprinter_back_livery; 
-    switch_cargodmu_Germany_DB_691_CargoSprinter_front_livery;
-}
-
-//Visual effect, for DMU this is done on the front engine
-switch(FEAT_TRAINS, SELF, switch_cargodmu_Germany_DB_691_CargoSprinter_visual_effect_and_powered, var[0xC8]) {
-	0xFE: visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
-	0xFF: visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
-	visual_effect_and_powered(VISUAL_EFFECT_DIESEL, -3, DISABLE_WAGON_POWER);
-}
-
-//Add defined switches
-
-// RUNNINGCOST_ENGINE_SWITCH
-
-// PURCHASETEXT_SWITCH

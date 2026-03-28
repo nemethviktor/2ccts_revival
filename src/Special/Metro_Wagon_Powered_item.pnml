@@ -2,9 +2,12 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
-item(FEAT_TRAINS, item_mtro_Metro_Wagon_Powered) {
+
+// Template: TPL_01F
+
+item(FEAT_TRAINS, item_mtro_metro_wagon_powered) {
     property {
-        name: string(str_mtro_Metro_Wagon_Powered);
+        name: string(str_mtro_metro_wagon_powered);
         climates_available: (((param_region_africa || (param_region_north_america || param_region_south_america) || param_region_asia || (param_region_northern_europe || param_region_eastern_europe || param_region_southern_europe || param_region_western_europe) || param_region_oceania) || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1900,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
@@ -38,12 +41,12 @@ item(FEAT_TRAINS, item_mtro_Metro_Wagon_Powered) {
         bitmask_vehicle_info: 0;
     }
     graphics {
-        purchase: spriteset_mtro_Metro_Wagon_Powered_purchase;
+        purchase: spriteset_mtro_metro_wagon_powered_purchase;
         PURCHASETEXTMUWAGONPASSENGERPOWERED
         // no 'visual_effect' or 'visual_effect_and_powered'
         // no 'length'
         // no 'articulated_part'
         // no 'can_attach'
-        default: spriteset_mtro_Metro_Wagon_Powered;
+        default: spriteset_mtro_metro_wagon_powered;
     }
 }

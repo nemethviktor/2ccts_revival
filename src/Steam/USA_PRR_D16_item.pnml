@@ -2,9 +2,12 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
-item(FEAT_TRAINS, item_steam_USA_PRR_D16) {
+
+// Template: TPL_03A
+
+item(FEAT_TRAINS, item_steam_usa_prr_d16) {
     property {
-        name: string(str_steam_USA_PRR_D16);
+        name: string(str_steam_usa_prr_d16);
         climates_available: ((param_region_north_america || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1895,1,1);
         model_life: 45;
@@ -38,14 +41,14 @@ item(FEAT_TRAINS, item_steam_USA_PRR_D16) {
         bitmask_vehicle_info: 0;
     }
     graphics {
-        purchase: spriteset_steam_USA_PRR_D16_purchase;
-        visual_effect_and_powered: switch_steam_USA_PRR_D16_visual_effect;
-        length: switch_steam_USA_PRR_D16_length;
-        articulated_part: switch_steam_USA_PRR_D16_articulated;
+        purchase: spriteset_steam_usa_prr_d16_purchase;
+        visual_effect_and_powered: switch_steam_usa_prr_d16_visual_effect;
+        length: switch_steam_usa_prr_d16_length;
+        articulated_part: switch_steam_usa_prr_d16_articulated;
         can_attach_wagon: switch_can_attach_vehicle;
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
         // PURCHASETEXT_SWITCH_CALL // this is actually blank
-        default: switch_steam_USA_PRR_D16_position;
+        default: switch_steam_usa_prr_d16_position;
     }
 }

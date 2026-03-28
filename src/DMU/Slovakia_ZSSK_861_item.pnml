@@ -2,24 +2,27 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
+
+// Template: TPL_02A
+
 // Cargo capacity
 
-    switch(FEAT_TRAINS, SELF, switch_dmu_Slovakia_ZSSK_861_capacity_engine, cargo_classes) { \
+    switch(FEAT_TRAINS, SELF, switch_dmu_slovakia_zssk_861_capacity_engine, cargo_classes) { \
         bitmask(CC_MAIL): 60/2; \
         bitmask(CC_ARMOURED): 60/4; \
         60; \
     }
 
 
-    switch(FEAT_TRAINS, SELF, switch_dmu_Slovakia_ZSSK_861_capacity_wagon, cargo_classes) { \
+    switch(FEAT_TRAINS, SELF, switch_dmu_slovakia_zssk_861_capacity_wagon, cargo_classes) { \
         bitmask(CC_MAIL): 60/2; \
         bitmask(CC_ARMOURED): 60/4; \
         60; \
     }
 
-item(FEAT_TRAINS, item_dmu_Slovakia_ZSSK_861) {
+item(FEAT_TRAINS, item_dmu_slovakia_zssk_861) {
     property {
-        name: string(str_dmu_Slovakia_ZSSK_861);
+        name: string(str_dmu_slovakia_zssk_861);
         climates_available: ((param_region_eastern_europe || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(2011,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
@@ -53,26 +56,26 @@ item(FEAT_TRAINS, item_dmu_Slovakia_ZSSK_861) {
         bitmask_vehicle_info: 0;
     }
     graphics {
-        purchase: spriteset_dmu_Slovakia_ZSSK_861_purchase;
-        cargo_capacity: switch_dmu_Slovakia_ZSSK_861_capacity_engine;
-        visual_effect_and_powered: switch_dmu_Slovakia_ZSSK_861_visual_effect_and_powered;
+        purchase: spriteset_dmu_slovakia_zssk_861_purchase;
+        cargo_capacity: switch_dmu_slovakia_zssk_861_capacity_engine;
+        visual_effect_and_powered: switch_dmu_slovakia_zssk_861_visual_effect_and_powered;
         // no 'length'
         // no 'articulated_part'
         can_attach_wagon: switch_can_attach_vehicle;
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
         // PURCHASETEXT_SWITCH_CALL // this is actually blank
-        default: switch_dmu_Slovakia_ZSSK_861_reversed;
+        default: switch_dmu_slovakia_zssk_861_reversed;
     }
-    livery_override (item_mu_MU_Wagon_Unpowered) {
+    livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: int(140/10);
         weight: int(45*1/2);
         cargo_capacity: 60;
         length: 7;
-        default: switch_dmu_Slovakia_ZSSK_861_cargo_selection;
+        default: switch_dmu_slovakia_zssk_861_cargo_selection;
     }
-    livery_override (item_mu_MU_Wagon_Powered) {
+    livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: (round(33.27492138294491));
         power: int(1580*1/2);
@@ -80,6 +83,6 @@ item(FEAT_TRAINS, item_dmu_Slovakia_ZSSK_861) {
         cargo_capacity: 60;
         tractive_effort_coefficient: int(0.34*10*45);
         length: 7;
-        default: switch_dmu_Slovakia_ZSSK_861_cargo_selection;
+        default: switch_dmu_slovakia_zssk_861_cargo_selection;
     }
 }

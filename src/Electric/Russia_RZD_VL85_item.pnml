@@ -2,9 +2,12 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
-item(FEAT_TRAINS, item_electric_Russia_RZD_VL85) {
+
+// Template: TPL_03D
+
+item(FEAT_TRAINS, item_electric_russia_rzd_vl85) {
     property {
-        name: string(str_electric_Russia_RZD_VL85);
+        name: string(str_electric_russia_rzd_vl85);
         climates_available: ((param_region_asia || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1983,1,1);
         model_life: 45;
@@ -38,14 +41,14 @@ item(FEAT_TRAINS, item_electric_Russia_RZD_VL85) {
         bitmask_vehicle_info: 0;
     }
     graphics {
-        purchase: spriteset_electric_Russia_RZD_VL85_purchase;
-        visual_effect_and_powered: switch_electric_Russia_RZD_VL85_visual_effect;
-        length: switch_electric_Russia_RZD_VL85_length;
-        articulated_part: switch_electric_Russia_RZD_VL85_articulated;
+        purchase: spriteset_electric_russia_rzd_vl85_purchase;
+        visual_effect_and_powered: switch_electric_russia_rzd_vl85_visual_effect;
+        length: switch_electric_russia_rzd_vl85_length;
+        articulated_part: switch_electric_russia_rzd_vl85_articulated;
         can_attach_wagon: switch_can_attach_vehicle;
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
         // PURCHASETEXT_SWITCH_CALL // this is actually blank
-        default: switch_electric_Russia_RZD_VL85_position;
+        default: switch_electric_russia_rzd_vl85_position;
     }
 }

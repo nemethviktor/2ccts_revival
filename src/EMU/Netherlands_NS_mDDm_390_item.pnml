@@ -2,24 +2,27 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
+
+// Template: TPL_02A
+
 // Cargo capacity
 
-    switch(FEAT_TRAINS, SELF, switch_emu_Netherlands_NS_mDDm_390_capacity_engine, cargo_classes) { \
+    switch(FEAT_TRAINS, SELF, switch_emu_netherlands_ns_mddm_390_capacity_engine, cargo_classes) { \
         bitmask(CC_MAIL): 48/2; \
         bitmask(CC_ARMOURED): 48/4; \
         48; \
     }
 
 
-    switch(FEAT_TRAINS, SELF, switch_emu_Netherlands_NS_mDDm_390_capacity_wagon, cargo_classes) { \
+    switch(FEAT_TRAINS, SELF, switch_emu_netherlands_ns_mddm_390_capacity_wagon, cargo_classes) { \
         bitmask(CC_MAIL): 95/2; \
         bitmask(CC_ARMOURED): 95/4; \
         95; \
     }
 
-item(FEAT_TRAINS, item_emu_Netherlands_NS_mDDm_390) {
+item(FEAT_TRAINS, item_emu_netherlands_ns_mddm_390) {
     property {
-        name: string(str_emu_Netherlands_NS_mDDm_390);
+        name: string(str_emu_netherlands_ns_mddm_390);
         climates_available: ((param_region_western_europe || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1997,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
@@ -53,26 +56,26 @@ item(FEAT_TRAINS, item_emu_Netherlands_NS_mDDm_390) {
         bitmask_vehicle_info: 0;
     }
     graphics {
-        purchase: spriteset_emu_Netherlands_NS_mDDm_390_purchase;
-        cargo_capacity: switch_emu_Netherlands_NS_mDDm_390_capacity_engine;
-        visual_effect_and_powered: switch_emu_Netherlands_NS_mDDm_390_visual_effect_and_powered;
+        purchase: spriteset_emu_netherlands_ns_mddm_390_purchase;
+        cargo_capacity: switch_emu_netherlands_ns_mddm_390_capacity_engine;
+        visual_effect_and_powered: switch_emu_netherlands_ns_mddm_390_visual_effect_and_powered;
         // no 'length'
         // no 'articulated_part'
         can_attach_wagon: switch_can_attach_vehicle;
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
         // PURCHASETEXT_SWITCH_CALL // this is actually blank
-        default: switch_emu_Netherlands_NS_mDDm_390_reversed;
+        default: switch_emu_netherlands_ns_mddm_390_reversed;
     }
-    livery_override (item_mu_MU_Wagon_Unpowered) {
+    livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: int(160/10);
         weight: int(76*1/2);
         cargo_capacity: 95;
         length: 8;
-        default: switch_emu_Netherlands_NS_mDDm_390_cargo_selection;
+        default: switch_emu_netherlands_ns_mddm_390_cargo_selection;
     }
-    livery_override (item_mu_MU_Wagon_Powered) {
+    livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: (round(45.23364217863026));
         power: int(3219*1/2);
@@ -80,6 +83,6 @@ item(FEAT_TRAINS, item_emu_Netherlands_NS_mDDm_390) {
         cargo_capacity: 95;
         tractive_effort_coefficient: int(0.31*10*76);
         length: 8;
-        default: switch_emu_Netherlands_NS_mDDm_390_cargo_selection;
+        default: switch_emu_netherlands_ns_mddm_390_cargo_selection;
     }
 }

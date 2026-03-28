@@ -1,321 +1,271 @@
-/*
- *  Copyright (C) 2017 Transportman // V. Nemeth 2026
- *  This file is part of the 2cc Trains In NML
- *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
+//  Copyright (C) 2017 Transportman // V. Nemeth 2026+
+//  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
-*/
+// Template: TPL_04E
 
-/*
-* PURCHASE
-*/
+// PURCHASE
+spriteset(spriteset_mglv_wagon_gen7m_centerbeam_purchase, "gfx/wagons_maglev/gen7m/wagon_gen7m_centerbeam_purchase.png") {template_purchase_wagon(1, 1)}
 
-spriteset(spriteset_mglv_Wagon_Gen7M_Centerbeam_purchase, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Centerbeam_Purchase.png") {
-	template_purchase_wagon(1, 1)
+
+// VEHICLE
+
+// crates
+
+/// LIVERY 1   LOADING STATE 1   CRATES
+spriteset(spriteset_mglv_wagon_gen7m_centerbeam_crates_l1_s1, "gfx/wagons_maglev/gen7m/wagon_gen7m_centerbeam_crates.png") {template_2cc_wagons(1, 1)}
+
+
+/// LIVERY 1   LOADING STATE 2   CRATES
+spriteset(spriteset_mglv_wagon_gen7m_centerbeam_crates_l1_s2, "gfx/wagons_maglev/gen7m/wagon_gen7m_centerbeam_crates.png") {template_2cc_wagons(1, 32)}
+
+
+/// LIVERY 1   LOADING STATE 3   CRATES
+spriteset(spriteset_mglv_wagon_gen7m_centerbeam_crates_l1_s3, "gfx/wagons_maglev/gen7m/wagon_gen7m_centerbeam_crates.png") {template_2cc_wagons(1, 64)}
+
+
+/// LIVERY 1 SPRITEGROUP - CRATES
+spritegroup spritegroup_mglv_wagon_gen7m_centerbeam_crates_l1 {
+    loading: [spriteset_mglv_wagon_gen7m_centerbeam_crates_l1_s1, spriteset_mglv_wagon_gen7m_centerbeam_crates_l1_s2, spriteset_mglv_wagon_gen7m_centerbeam_crates_l1_s3];
+    loaded: [spriteset_mglv_wagon_gen7m_centerbeam_crates_l1_s1, spriteset_mglv_wagon_gen7m_centerbeam_crates_l1_s2, spriteset_mglv_wagon_gen7m_centerbeam_crates_l1_s3];
 }
 
-/*
-* Crates
-*/
+/// LIVERY 2   LOADING STATE 1   CRATES
+spriteset(spriteset_mglv_wagon_gen7m_centerbeam_crates_l2_s1, "gfx/wagons_maglev/gen7m/wagon_gen7m_centerbeam_crates.png") {template_2cc_wagons(179, 1)}
 
-//Livery 1 - Loading State 1 - Crates
-spriteset(spriteset_mglv_Wagon_Gen7M_Centerbeam_Crates_L1_S1, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Centerbeam_Crates.png") {
-	template_2cc_wagons(1, 1)
+
+/// LIVERY 2   LOADING STATE 2   CRATES
+spriteset(spriteset_mglv_wagon_gen7m_centerbeam_crates_l2_s2, "gfx/wagons_maglev/gen7m/wagon_gen7m_centerbeam_crates.png") {template_2cc_wagons(179, 32)}
+
+
+/// LIVERY 2   LOADING STATE 3   CRATES
+spriteset(spriteset_mglv_wagon_gen7m_centerbeam_crates_l2_s3, "gfx/wagons_maglev/gen7m/wagon_gen7m_centerbeam_crates.png") {template_2cc_wagons(179, 64)}
+
+
+/// LIVERY 2 SPRITEGROUP - CRATES
+spritegroup spritegroup_mglv_wagon_gen7m_centerbeam_crates_l2 {
+    loading: [spriteset_mglv_wagon_gen7m_centerbeam_crates_l2_s1, spriteset_mglv_wagon_gen7m_centerbeam_crates_l2_s2, spriteset_mglv_wagon_gen7m_centerbeam_crates_l2_s3];
+    loaded: [spriteset_mglv_wagon_gen7m_centerbeam_crates_l2_s1, spriteset_mglv_wagon_gen7m_centerbeam_crates_l2_s2, spriteset_mglv_wagon_gen7m_centerbeam_crates_l2_s3];
 }
 
-//Livery 1 - Loading State 2 - Crates
-spriteset(spriteset_mglv_Wagon_Gen7M_Centerbeam_Crates_L1_S2, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Centerbeam_Crates.png") {
-	template_2cc_wagons(1, 32)
+/// LIVERY 3   LOADING STATE 1   CRATES
+spriteset(spriteset_mglv_wagon_gen7m_centerbeam_crates_l3_s1, "gfx/wagons_maglev/gen7m/wagon_gen7m_centerbeam_crates.png") {template_2cc_wagons(357, 1)}
+
+
+/// LIVERY 3   LOADING STATE 2   CRATES
+spriteset(spriteset_mglv_wagon_gen7m_centerbeam_crates_l3_s2, "gfx/wagons_maglev/gen7m/wagon_gen7m_centerbeam_crates.png") {template_2cc_wagons(357, 32)}
+
+
+/// LIVERY 3   LOADING STATE 3   CRATES
+spriteset(spriteset_mglv_wagon_gen7m_centerbeam_crates_l3_s3, "gfx/wagons_maglev/gen7m/wagon_gen7m_centerbeam_crates.png") {template_2cc_wagons(357, 64)}
+
+
+/// LIVERY 3 SPRITEGROUP - CRATES
+spritegroup spritegroup_mglv_wagon_gen7m_centerbeam_crates_l3 {
+    loading: [spriteset_mglv_wagon_gen7m_centerbeam_crates_l3_s1, spriteset_mglv_wagon_gen7m_centerbeam_crates_l3_s2, spriteset_mglv_wagon_gen7m_centerbeam_crates_l3_s3];
+    loaded: [spriteset_mglv_wagon_gen7m_centerbeam_crates_l3_s1, spriteset_mglv_wagon_gen7m_centerbeam_crates_l3_s2, spriteset_mglv_wagon_gen7m_centerbeam_crates_l3_s3];
 }
 
-//Livery 1 - Loading State 3 - Crates
-spriteset(spriteset_mglv_Wagon_Gen7M_Centerbeam_Crates_L1_S3, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Centerbeam_Crates.png") {
-	template_2cc_wagons(1, 64)
+/// LIVERY 4   LOADING STATE 1   CRATES
+spriteset(spriteset_mglv_wagon_gen7m_centerbeam_crates_l4_s1, "gfx/wagons_maglev/gen7m/wagon_gen7m_centerbeam_crates.png") {template_2cc_wagons(535, 1)}
+
+
+/// LIVERY 4   LOADING STATE 2   CRATES
+spriteset(spriteset_mglv_wagon_gen7m_centerbeam_crates_l4_s2, "gfx/wagons_maglev/gen7m/wagon_gen7m_centerbeam_crates.png") {template_2cc_wagons(535, 32)}
+
+
+/// LIVERY 4   LOADING STATE 3   CRATES
+spriteset(spriteset_mglv_wagon_gen7m_centerbeam_crates_l4_s3, "gfx/wagons_maglev/gen7m/wagon_gen7m_centerbeam_crates.png") {template_2cc_wagons(535, 64)}
+
+
+/// LIVERY 4 SPRITEGROUP - CRATES
+spritegroup spritegroup_mglv_wagon_gen7m_centerbeam_crates_l4 {
+    loading: [spriteset_mglv_wagon_gen7m_centerbeam_crates_l4_s1, spriteset_mglv_wagon_gen7m_centerbeam_crates_l4_s2, spriteset_mglv_wagon_gen7m_centerbeam_crates_l4_s3];
+    loaded: [spriteset_mglv_wagon_gen7m_centerbeam_crates_l4_s1, spriteset_mglv_wagon_gen7m_centerbeam_crates_l4_s2, spriteset_mglv_wagon_gen7m_centerbeam_crates_l4_s3];
 }
 
-//Livery 1 Spritegroup - Crates
-spritegroup spritegroup_wagon_Gen7M_Centerbeam_Crates_L1 {
-	loading: [spriteset_mglv_Wagon_Gen7M_Centerbeam_Crates_L1_S1, spriteset_mglv_Wagon_Gen7M_Centerbeam_Crates_L1_S2, spriteset_mglv_Wagon_Gen7M_Centerbeam_Crates_L1_S3];
-	loaded: [spriteset_mglv_Wagon_Gen7M_Centerbeam_Crates_L1_S1, spriteset_mglv_Wagon_Gen7M_Centerbeam_Crates_L1_S2, spriteset_mglv_Wagon_Gen7M_Centerbeam_Crates_L1_S3];
+// Random Livery Selector for crates
+random_switch(FEAT_TRAINS, SELF, switch_mglv_wagon_gen7m_centerbeam_crates_livery) {
+	7: spritegroup_mglv_wagon_gen7m_centerbeam_crates_l1;
+	1: spritegroup_mglv_wagon_gen7m_centerbeam_crates_l2;
+	1: spritegroup_mglv_wagon_gen7m_centerbeam_crates_l3;
+	1: spritegroup_mglv_wagon_gen7m_centerbeam_crates_l4;
 }
 
-//Livery 2 - Loading State 1 - Crates
-spriteset(spriteset_mglv_Wagon_Gen7M_Centerbeam_Crates_L2_S1, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Centerbeam_Crates.png") {
-	template_2cc_wagons(179, 1)
+// planks
+
+/// LIVERY 1   LOADING STATE 1   PLANKS
+spriteset(spriteset_mglv_wagon_gen7m_centerbeam_planks_l1_s1, "gfx/wagons_maglev/gen7m/wagon_gen7m_centerbeam_planks.png") {template_2cc_wagons(1, 1)}
+
+
+/// LIVERY 1   LOADING STATE 2   PLANKS
+spriteset(spriteset_mglv_wagon_gen7m_centerbeam_planks_l1_s2, "gfx/wagons_maglev/gen7m/wagon_gen7m_centerbeam_planks.png") {template_2cc_wagons(1, 32)}
+
+
+/// LIVERY 1   LOADING STATE 3   PLANKS
+spriteset(spriteset_mglv_wagon_gen7m_centerbeam_planks_l1_s3, "gfx/wagons_maglev/gen7m/wagon_gen7m_centerbeam_planks.png") {template_2cc_wagons(1, 64)}
+
+
+/// LIVERY 1 SPRITEGROUP - PLANKS
+spritegroup spritegroup_mglv_wagon_gen7m_centerbeam_planks_l1 {
+    loading: [spriteset_mglv_wagon_gen7m_centerbeam_planks_l1_s1, spriteset_mglv_wagon_gen7m_centerbeam_planks_l1_s2, spriteset_mglv_wagon_gen7m_centerbeam_planks_l1_s3];
+    loaded: [spriteset_mglv_wagon_gen7m_centerbeam_planks_l1_s1, spriteset_mglv_wagon_gen7m_centerbeam_planks_l1_s2, spriteset_mglv_wagon_gen7m_centerbeam_planks_l1_s3];
 }
 
-//Livery 2 - Loading State 2 - Crates
-spriteset(spriteset_mglv_Wagon_Gen7M_Centerbeam_Crates_L2_S2, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Centerbeam_Crates.png") {
-	template_2cc_wagons(179, 32)
+/// LIVERY 2   LOADING STATE 1   PLANKS
+spriteset(spriteset_mglv_wagon_gen7m_centerbeam_planks_l2_s1, "gfx/wagons_maglev/gen7m/wagon_gen7m_centerbeam_planks.png") {template_2cc_wagons(179, 1)}
+
+
+/// LIVERY 2   LOADING STATE 2   PLANKS
+spriteset(spriteset_mglv_wagon_gen7m_centerbeam_planks_l2_s2, "gfx/wagons_maglev/gen7m/wagon_gen7m_centerbeam_planks.png") {template_2cc_wagons(179, 32)}
+
+
+/// LIVERY 2   LOADING STATE 3   PLANKS
+spriteset(spriteset_mglv_wagon_gen7m_centerbeam_planks_l2_s3, "gfx/wagons_maglev/gen7m/wagon_gen7m_centerbeam_planks.png") {template_2cc_wagons(179, 64)}
+
+
+/// LIVERY 2 SPRITEGROUP - PLANKS
+spritegroup spritegroup_mglv_wagon_gen7m_centerbeam_planks_l2 {
+    loading: [spriteset_mglv_wagon_gen7m_centerbeam_planks_l2_s1, spriteset_mglv_wagon_gen7m_centerbeam_planks_l2_s2, spriteset_mglv_wagon_gen7m_centerbeam_planks_l2_s3];
+    loaded: [spriteset_mglv_wagon_gen7m_centerbeam_planks_l2_s1, spriteset_mglv_wagon_gen7m_centerbeam_planks_l2_s2, spriteset_mglv_wagon_gen7m_centerbeam_planks_l2_s3];
 }
 
-//Livery 2 - Loading State 3 - Crates
-spriteset(spriteset_mglv_Wagon_Gen7M_Centerbeam_Crates_L2_S3, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Centerbeam_Crates.png") {
-	template_2cc_wagons(179, 64)
+/// LIVERY 3   LOADING STATE 1   PLANKS
+spriteset(spriteset_mglv_wagon_gen7m_centerbeam_planks_l3_s1, "gfx/wagons_maglev/gen7m/wagon_gen7m_centerbeam_planks.png") {template_2cc_wagons(357, 1)}
+
+
+/// LIVERY 3   LOADING STATE 2   PLANKS
+spriteset(spriteset_mglv_wagon_gen7m_centerbeam_planks_l3_s2, "gfx/wagons_maglev/gen7m/wagon_gen7m_centerbeam_planks.png") {template_2cc_wagons(357, 32)}
+
+
+/// LIVERY 3   LOADING STATE 3   PLANKS
+spriteset(spriteset_mglv_wagon_gen7m_centerbeam_planks_l3_s3, "gfx/wagons_maglev/gen7m/wagon_gen7m_centerbeam_planks.png") {template_2cc_wagons(357, 64)}
+
+
+/// LIVERY 3 SPRITEGROUP - PLANKS
+spritegroup spritegroup_mglv_wagon_gen7m_centerbeam_planks_l3 {
+    loading: [spriteset_mglv_wagon_gen7m_centerbeam_planks_l3_s1, spriteset_mglv_wagon_gen7m_centerbeam_planks_l3_s2, spriteset_mglv_wagon_gen7m_centerbeam_planks_l3_s3];
+    loaded: [spriteset_mglv_wagon_gen7m_centerbeam_planks_l3_s1, spriteset_mglv_wagon_gen7m_centerbeam_planks_l3_s2, spriteset_mglv_wagon_gen7m_centerbeam_planks_l3_s3];
 }
 
-//Livery 2 Spritegroup - Crates
-spritegroup spritegroup_wagon_Gen7M_Centerbeam_Crates_L2 {
-	loading: [spriteset_mglv_Wagon_Gen7M_Centerbeam_Crates_L2_S1, spriteset_mglv_Wagon_Gen7M_Centerbeam_Crates_L2_S2, spriteset_mglv_Wagon_Gen7M_Centerbeam_Crates_L2_S3];
-	loaded: [spriteset_mglv_Wagon_Gen7M_Centerbeam_Crates_L2_S1, spriteset_mglv_Wagon_Gen7M_Centerbeam_Crates_L2_S2, spriteset_mglv_Wagon_Gen7M_Centerbeam_Crates_L2_S3];	
+/// LIVERY 4   LOADING STATE 1   PLANKS
+spriteset(spriteset_mglv_wagon_gen7m_centerbeam_planks_l4_s1, "gfx/wagons_maglev/gen7m/wagon_gen7m_centerbeam_planks.png") {template_2cc_wagons(535, 1)}
+
+
+/// LIVERY 4   LOADING STATE 2   PLANKS
+spriteset(spriteset_mglv_wagon_gen7m_centerbeam_planks_l4_s2, "gfx/wagons_maglev/gen7m/wagon_gen7m_centerbeam_planks.png") {template_2cc_wagons(535, 32)}
+
+
+/// LIVERY 4   LOADING STATE 3   PLANKS
+spriteset(spriteset_mglv_wagon_gen7m_centerbeam_planks_l4_s3, "gfx/wagons_maglev/gen7m/wagon_gen7m_centerbeam_planks.png") {template_2cc_wagons(535, 64)}
+
+
+/// LIVERY 4 SPRITEGROUP - PLANKS
+spritegroup spritegroup_mglv_wagon_gen7m_centerbeam_planks_l4 {
+    loading: [spriteset_mglv_wagon_gen7m_centerbeam_planks_l4_s1, spriteset_mglv_wagon_gen7m_centerbeam_planks_l4_s2, spriteset_mglv_wagon_gen7m_centerbeam_planks_l4_s3];
+    loaded: [spriteset_mglv_wagon_gen7m_centerbeam_planks_l4_s1, spriteset_mglv_wagon_gen7m_centerbeam_planks_l4_s2, spriteset_mglv_wagon_gen7m_centerbeam_planks_l4_s3];
 }
 
-//Livery 3 - Loading State 1 - Crates
-spriteset(spriteset_mglv_Wagon_Gen7M_Centerbeam_Crates_L3_S1, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Centerbeam_Crates.png") {
-	template_2cc_wagons(357, 1)
+// Random Livery Selector for planks
+random_switch(FEAT_TRAINS, SELF, switch_mglv_wagon_gen7m_centerbeam_planks_livery) {
+	7: spritegroup_mglv_wagon_gen7m_centerbeam_planks_l1;
+	1: spritegroup_mglv_wagon_gen7m_centerbeam_planks_l2;
+	1: spritegroup_mglv_wagon_gen7m_centerbeam_planks_l3;
+	1: spritegroup_mglv_wagon_gen7m_centerbeam_planks_l4;
 }
 
-//Livery 3 - Loading State 2 - Crates
-spriteset(spriteset_mglv_Wagon_Gen7M_Centerbeam_Crates_L3_S2, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Centerbeam_Crates.png") {
-	template_2cc_wagons(357, 32)
+// steel
+
+/// LIVERY 1   LOADING STATE 1   STEEL
+spriteset(spriteset_mglv_wagon_gen7m_centerbeam_steel_l1_s1, "gfx/wagons_maglev/gen7m/wagon_gen7m_centerbeam_steel.png") {template_2cc_wagons(1, 1)}
+
+
+/// LIVERY 1   LOADING STATE 2   STEEL
+spriteset(spriteset_mglv_wagon_gen7m_centerbeam_steel_l1_s2, "gfx/wagons_maglev/gen7m/wagon_gen7m_centerbeam_steel.png") {template_2cc_wagons(1, 32)}
+
+
+/// LIVERY 1   LOADING STATE 3   STEEL
+spriteset(spriteset_mglv_wagon_gen7m_centerbeam_steel_l1_s3, "gfx/wagons_maglev/gen7m/wagon_gen7m_centerbeam_steel.png") {template_2cc_wagons(1, 64)}
+
+
+/// LIVERY 1 SPRITEGROUP - STEEL
+spritegroup spritegroup_mglv_wagon_gen7m_centerbeam_steel_l1 {
+    loading: [spriteset_mglv_wagon_gen7m_centerbeam_steel_l1_s1, spriteset_mglv_wagon_gen7m_centerbeam_steel_l1_s2, spriteset_mglv_wagon_gen7m_centerbeam_steel_l1_s3];
+    loaded: [spriteset_mglv_wagon_gen7m_centerbeam_steel_l1_s1, spriteset_mglv_wagon_gen7m_centerbeam_steel_l1_s2, spriteset_mglv_wagon_gen7m_centerbeam_steel_l1_s3];
 }
 
-//Livery 3 - Loading State 3 - Crates
-spriteset(spriteset_mglv_Wagon_Gen7M_Centerbeam_Crates_L3_S3, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Centerbeam_Crates.png") {
-	template_2cc_wagons(357, 64)
+/// LIVERY 2   LOADING STATE 1   STEEL
+spriteset(spriteset_mglv_wagon_gen7m_centerbeam_steel_l2_s1, "gfx/wagons_maglev/gen7m/wagon_gen7m_centerbeam_steel.png") {template_2cc_wagons(179, 1)}
+
+
+/// LIVERY 2   LOADING STATE 2   STEEL
+spriteset(spriteset_mglv_wagon_gen7m_centerbeam_steel_l2_s2, "gfx/wagons_maglev/gen7m/wagon_gen7m_centerbeam_steel.png") {template_2cc_wagons(179, 32)}
+
+
+/// LIVERY 2   LOADING STATE 3   STEEL
+spriteset(spriteset_mglv_wagon_gen7m_centerbeam_steel_l2_s3, "gfx/wagons_maglev/gen7m/wagon_gen7m_centerbeam_steel.png") {template_2cc_wagons(179, 64)}
+
+
+/// LIVERY 2 SPRITEGROUP - STEEL
+spritegroup spritegroup_mglv_wagon_gen7m_centerbeam_steel_l2 {
+    loading: [spriteset_mglv_wagon_gen7m_centerbeam_steel_l2_s1, spriteset_mglv_wagon_gen7m_centerbeam_steel_l2_s2, spriteset_mglv_wagon_gen7m_centerbeam_steel_l2_s3];
+    loaded: [spriteset_mglv_wagon_gen7m_centerbeam_steel_l2_s1, spriteset_mglv_wagon_gen7m_centerbeam_steel_l2_s2, spriteset_mglv_wagon_gen7m_centerbeam_steel_l2_s3];
 }
 
-//Livery 3 Spritegroup - Crates
-spritegroup spritegroup_wagon_Gen7M_Centerbeam_Crates_L3 {
-	loading: [spriteset_mglv_Wagon_Gen7M_Centerbeam_Crates_L3_S1, spriteset_mglv_Wagon_Gen7M_Centerbeam_Crates_L3_S2, spriteset_mglv_Wagon_Gen7M_Centerbeam_Crates_L3_S3];
-	loaded: [spriteset_mglv_Wagon_Gen7M_Centerbeam_Crates_L3_S1, spriteset_mglv_Wagon_Gen7M_Centerbeam_Crates_L3_S2, spriteset_mglv_Wagon_Gen7M_Centerbeam_Crates_L3_S3];	
+/// LIVERY 3   LOADING STATE 1   STEEL
+spriteset(spriteset_mglv_wagon_gen7m_centerbeam_steel_l3_s1, "gfx/wagons_maglev/gen7m/wagon_gen7m_centerbeam_steel.png") {template_2cc_wagons(357, 1)}
+
+
+/// LIVERY 3   LOADING STATE 2   STEEL
+spriteset(spriteset_mglv_wagon_gen7m_centerbeam_steel_l3_s2, "gfx/wagons_maglev/gen7m/wagon_gen7m_centerbeam_steel.png") {template_2cc_wagons(357, 32)}
+
+
+/// LIVERY 3   LOADING STATE 3   STEEL
+spriteset(spriteset_mglv_wagon_gen7m_centerbeam_steel_l3_s3, "gfx/wagons_maglev/gen7m/wagon_gen7m_centerbeam_steel.png") {template_2cc_wagons(357, 64)}
+
+
+/// LIVERY 3 SPRITEGROUP - STEEL
+spritegroup spritegroup_mglv_wagon_gen7m_centerbeam_steel_l3 {
+    loading: [spriteset_mglv_wagon_gen7m_centerbeam_steel_l3_s1, spriteset_mglv_wagon_gen7m_centerbeam_steel_l3_s2, spriteset_mglv_wagon_gen7m_centerbeam_steel_l3_s3];
+    loaded: [spriteset_mglv_wagon_gen7m_centerbeam_steel_l3_s1, spriteset_mglv_wagon_gen7m_centerbeam_steel_l3_s2, spriteset_mglv_wagon_gen7m_centerbeam_steel_l3_s3];
 }
 
-//Livery 4 - Loading State 1 - Crates
-spriteset(spriteset_mglv_Wagon_Gen7M_Centerbeam_Crates_L4_S1, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Centerbeam_Crates.png") {
-	template_2cc_wagons(535, 1)
+/// LIVERY 4   LOADING STATE 1   STEEL
+spriteset(spriteset_mglv_wagon_gen7m_centerbeam_steel_l4_s1, "gfx/wagons_maglev/gen7m/wagon_gen7m_centerbeam_steel.png") {template_2cc_wagons(535, 1)}
+
+
+/// LIVERY 4   LOADING STATE 2   STEEL
+spriteset(spriteset_mglv_wagon_gen7m_centerbeam_steel_l4_s2, "gfx/wagons_maglev/gen7m/wagon_gen7m_centerbeam_steel.png") {template_2cc_wagons(535, 32)}
+
+
+/// LIVERY 4   LOADING STATE 3   STEEL
+spriteset(spriteset_mglv_wagon_gen7m_centerbeam_steel_l4_s3, "gfx/wagons_maglev/gen7m/wagon_gen7m_centerbeam_steel.png") {template_2cc_wagons(535, 64)}
+
+
+/// LIVERY 4 SPRITEGROUP - STEEL
+spritegroup spritegroup_mglv_wagon_gen7m_centerbeam_steel_l4 {
+    loading: [spriteset_mglv_wagon_gen7m_centerbeam_steel_l4_s1, spriteset_mglv_wagon_gen7m_centerbeam_steel_l4_s2, spriteset_mglv_wagon_gen7m_centerbeam_steel_l4_s3];
+    loaded: [spriteset_mglv_wagon_gen7m_centerbeam_steel_l4_s1, spriteset_mglv_wagon_gen7m_centerbeam_steel_l4_s2, spriteset_mglv_wagon_gen7m_centerbeam_steel_l4_s3];
 }
 
-//Livery 4 - Loading State 2 - Crates
-spriteset(spriteset_mglv_Wagon_Gen7M_Centerbeam_Crates_L4_S2, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Centerbeam_Crates.png") {
-	template_2cc_wagons(535, 32)
+// Random Livery Selector for steel
+random_switch(FEAT_TRAINS, SELF, switch_mglv_wagon_gen7m_centerbeam_steel_livery) {
+	7: spritegroup_mglv_wagon_gen7m_centerbeam_steel_l1;
+	1: spritegroup_mglv_wagon_gen7m_centerbeam_steel_l2;
+	1: spritegroup_mglv_wagon_gen7m_centerbeam_steel_l3;
+	1: spritegroup_mglv_wagon_gen7m_centerbeam_steel_l4;
 }
 
-//Livery 4 - Loading State 3 - Crates
-spriteset(spriteset_mglv_Wagon_Gen7M_Centerbeam_Crates_L4_S3, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Centerbeam_Crates.png") {
-	template_2cc_wagons(535, 64)
+                       random_switch(FEAT_TRAINS, SELF, switch_mglv_wagon_gen7m_centerbeam_supplies_livery) {
+	1: switch_mglv_wagon_gen7m_centerbeam_crates_livery;
+	1: switch_mglv_wagon_gen7m_centerbeam_planks_livery;
+	1: switch_mglv_wagon_gen7m_centerbeam_steel_livery;
 }
 
-//Livery 4 Spritegroup - Crates
-spritegroup spritegroup_wagon_Gen7M_Centerbeam_Crates_L4 {
-	loading: [spriteset_mglv_Wagon_Gen7M_Centerbeam_Crates_L4_S1, spriteset_mglv_Wagon_Gen7M_Centerbeam_Crates_L4_S2, spriteset_mglv_Wagon_Gen7M_Centerbeam_Crates_L4_S3];
-	loaded: [spriteset_mglv_Wagon_Gen7M_Centerbeam_Crates_L4_S1, spriteset_mglv_Wagon_Gen7M_Centerbeam_Crates_L4_S2, spriteset_mglv_Wagon_Gen7M_Centerbeam_Crates_L4_S3];	
+switch(FEAT_TRAINS, SELF, switch_mglv_wagon_gen7m_centerbeam_cargo_selection, cargo_type_in_veh) {
+	STEL: switch_mglv_wagon_gen7m_centerbeam_steel_livery;
+	BDMT: switch_mglv_wagon_gen7m_centerbeam_supplies_livery;
+	MNSP: switch_mglv_wagon_gen7m_centerbeam_supplies_livery;
+	WDPR: switch_mglv_wagon_gen7m_centerbeam_planks_livery;
+    // Goods, Paper
+	switch_mglv_wagon_gen7m_centerbeam_crates_livery;
 }
-
-random_switch(FEAT_TRAINS, SELF, switch_mglv_Wagon_Gen7M_Centerbeam_Crates_livery) {
-	7: spritegroup_wagon_Gen7M_Centerbeam_Crates_L1;
-	1: spritegroup_wagon_Gen7M_Centerbeam_Crates_L2;
-	1: spritegroup_wagon_Gen7M_Centerbeam_Crates_L3;
-	1: spritegroup_wagon_Gen7M_Centerbeam_Crates_L4;
-}
-
-/*
-* Planks
-*/
-
-//Livery 1 - Loading State 1 - Planks
-spriteset(spriteset_mglv_Wagon_Gen7M_Centerbeam_Planks_L1_S1, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Centerbeam_Planks.png") {
-	template_2cc_wagons(1, 1)
-}
-
-//Livery 1 - Loading State 2 - Planks
-spriteset(spriteset_mglv_Wagon_Gen7M_Centerbeam_Planks_L1_S2, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Centerbeam_Planks.png") {
-	template_2cc_wagons(1, 32)
-}
-
-//Livery 1 - Loading State 3 - Planks
-spriteset(spriteset_mglv_Wagon_Gen7M_Centerbeam_Planks_L1_S3, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Centerbeam_Planks.png") {
-	template_2cc_wagons(1, 64)
-}
-
-//Livery 1 Spritegroup - Planks
-spritegroup spritegroup_wagon_Gen7M_Centerbeam_Planks_L1 {
-	loading: [spriteset_mglv_Wagon_Gen7M_Centerbeam_Planks_L1_S1, spriteset_mglv_Wagon_Gen7M_Centerbeam_Planks_L1_S2, spriteset_mglv_Wagon_Gen7M_Centerbeam_Planks_L1_S3];
-	loaded: [spriteset_mglv_Wagon_Gen7M_Centerbeam_Planks_L1_S1, spriteset_mglv_Wagon_Gen7M_Centerbeam_Planks_L1_S2, spriteset_mglv_Wagon_Gen7M_Centerbeam_Planks_L1_S3];
-}
-
-//Livery 2 - Loading State 1 - Planks
-spriteset(spriteset_mglv_Wagon_Gen7M_Centerbeam_Planks_L2_S1, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Centerbeam_Planks.png") {
-	template_2cc_wagons(179, 1)
-}
-
-//Livery 2 - Loading State 2 - Planks
-spriteset(spriteset_mglv_Wagon_Gen7M_Centerbeam_Planks_L2_S2, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Centerbeam_Planks.png") {
-	template_2cc_wagons(179, 32)
-}
-
-//Livery 2 - Loading State 3 - Planks
-spriteset(spriteset_mglv_Wagon_Gen7M_Centerbeam_Planks_L2_S3, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Centerbeam_Planks.png") {
-	template_2cc_wagons(179, 64)
-}
-
-//Livery 2 Spritegroup - Planks
-spritegroup spritegroup_wagon_Gen7M_Centerbeam_Planks_L2 {
-	loading: [spriteset_mglv_Wagon_Gen7M_Centerbeam_Planks_L2_S1, spriteset_mglv_Wagon_Gen7M_Centerbeam_Planks_L2_S2, spriteset_mglv_Wagon_Gen7M_Centerbeam_Planks_L2_S3];
-	loaded: [spriteset_mglv_Wagon_Gen7M_Centerbeam_Planks_L2_S1, spriteset_mglv_Wagon_Gen7M_Centerbeam_Planks_L2_S2, spriteset_mglv_Wagon_Gen7M_Centerbeam_Planks_L2_S3];	
-}
-
-//Livery 3 - Loading State 1 - Planks
-spriteset(spriteset_mglv_Wagon_Gen7M_Centerbeam_Planks_L3_S1, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Centerbeam_Planks.png") {
-	template_2cc_wagons(357, 1)
-}
-
-//Livery 3 - Loading State 2 - Planks
-spriteset(spriteset_mglv_Wagon_Gen7M_Centerbeam_Planks_L3_S2, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Centerbeam_Planks.png") {
-	template_2cc_wagons(357, 32)
-}
-
-//Livery 3 - Loading State 3 - Planks
-spriteset(spriteset_mglv_Wagon_Gen7M_Centerbeam_Planks_L3_S3, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Centerbeam_Planks.png") {
-	template_2cc_wagons(357, 64)
-}
-
-//Livery 3 Spritegroup - Planks
-spritegroup spritegroup_wagon_Gen7M_Centerbeam_Planks_L3 {
-	loading: [spriteset_mglv_Wagon_Gen7M_Centerbeam_Planks_L3_S1, spriteset_mglv_Wagon_Gen7M_Centerbeam_Planks_L3_S2, spriteset_mglv_Wagon_Gen7M_Centerbeam_Planks_L3_S3];
-	loaded: [spriteset_mglv_Wagon_Gen7M_Centerbeam_Planks_L3_S1, spriteset_mglv_Wagon_Gen7M_Centerbeam_Planks_L3_S2, spriteset_mglv_Wagon_Gen7M_Centerbeam_Planks_L3_S3];	
-}
-
-//Livery 4 - Loading State 1 - Planks
-spriteset(spriteset_mglv_Wagon_Gen7M_Centerbeam_Planks_L4_S1, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Centerbeam_Planks.png") {
-	template_2cc_wagons(535, 1)
-}
-
-//Livery 4 - Loading State 2 - Planks
-spriteset(spriteset_mglv_Wagon_Gen7M_Centerbeam_Planks_L4_S2, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Centerbeam_Planks.png") {
-	template_2cc_wagons(535, 32)
-}
-
-//Livery 4 - Loading State 3 - Planks
-spriteset(spriteset_mglv_Wagon_Gen7M_Centerbeam_Planks_L4_S3, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Centerbeam_Planks.png") {
-	template_2cc_wagons(535, 64)
-}
-
-//Livery 4 Spritegroup - Planks
-spritegroup spritegroup_wagon_Gen7M_Centerbeam_Planks_L4 {
-	loading: [spriteset_mglv_Wagon_Gen7M_Centerbeam_Planks_L4_S1, spriteset_mglv_Wagon_Gen7M_Centerbeam_Planks_L4_S2, spriteset_mglv_Wagon_Gen7M_Centerbeam_Planks_L4_S3];
-	loaded: [spriteset_mglv_Wagon_Gen7M_Centerbeam_Planks_L4_S1, spriteset_mglv_Wagon_Gen7M_Centerbeam_Planks_L4_S2, spriteset_mglv_Wagon_Gen7M_Centerbeam_Planks_L4_S3];	
-}
-
-random_switch(FEAT_TRAINS, SELF, switch_mglv_Wagon_Gen7M_Centerbeam_Planks_livery) {
-	7: spritegroup_wagon_Gen7M_Centerbeam_Planks_L1;
-	1: spritegroup_wagon_Gen7M_Centerbeam_Planks_L2;
-	1: spritegroup_wagon_Gen7M_Centerbeam_Planks_L3;
-	1: spritegroup_wagon_Gen7M_Centerbeam_Planks_L4;
-}
-
-/*
-* Steel
-*/
-
-//Livery 1 - Loading State 1 - Steel
-spriteset(spriteset_mglv_Wagon_Gen7M_Centerbeam_Steel_L1_S1, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Centerbeam_Steel.png") {
-	template_2cc_wagons(1, 1)
-}
-
-//Livery 1 - Loading State 2 - Steel
-spriteset(spriteset_mglv_Wagon_Gen7M_Centerbeam_Steel_L1_S2, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Centerbeam_Steel.png") {
-	template_2cc_wagons(1, 32)
-}
-
-//Livery 1 - Loading State 3 - Steel
-spriteset(spriteset_mglv_Wagon_Gen7M_Centerbeam_Steel_L1_S3, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Centerbeam_Steel.png") {
-	template_2cc_wagons(1, 64)
-}
-
-//Livery 1 Spritegroup - Steel
-spritegroup spritegroup_wagon_Gen7M_Centerbeam_Steel_L1 {
-	loading: [spriteset_mglv_Wagon_Gen7M_Centerbeam_Steel_L1_S1, spriteset_mglv_Wagon_Gen7M_Centerbeam_Steel_L1_S2, spriteset_mglv_Wagon_Gen7M_Centerbeam_Steel_L1_S3];
-	loaded: [spriteset_mglv_Wagon_Gen7M_Centerbeam_Steel_L1_S1, spriteset_mglv_Wagon_Gen7M_Centerbeam_Steel_L1_S2, spriteset_mglv_Wagon_Gen7M_Centerbeam_Steel_L1_S3];
-}
-
-//Livery 2 - Loading State 1 - Steel
-spriteset(spriteset_mglv_Wagon_Gen7M_Centerbeam_Steel_L2_S1, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Centerbeam_Steel.png") {
-	template_2cc_wagons(179, 1)
-}
-
-//Livery 2 - Loading State 2 - Steel
-spriteset(spriteset_mglv_Wagon_Gen7M_Centerbeam_Steel_L2_S2, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Centerbeam_Steel.png") {
-	template_2cc_wagons(179, 32)
-}
-
-//Livery 2 - Loading State 3 - Steel
-spriteset(spriteset_mglv_Wagon_Gen7M_Centerbeam_Steel_L2_S3, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Centerbeam_Steel.png") {
-	template_2cc_wagons(179, 64)
-}
-
-//Livery 2 Spritegroup - Steel
-spritegroup spritegroup_wagon_Gen7M_Centerbeam_Steel_L2 {
-	loading: [spriteset_mglv_Wagon_Gen7M_Centerbeam_Steel_L2_S1, spriteset_mglv_Wagon_Gen7M_Centerbeam_Steel_L2_S2, spriteset_mglv_Wagon_Gen7M_Centerbeam_Steel_L2_S3];
-	loaded: [spriteset_mglv_Wagon_Gen7M_Centerbeam_Steel_L2_S1, spriteset_mglv_Wagon_Gen7M_Centerbeam_Steel_L2_S2, spriteset_mglv_Wagon_Gen7M_Centerbeam_Steel_L2_S3];	
-}
-
-//Livery 3 - Loading State 1 - Steel
-spriteset(spriteset_mglv_Wagon_Gen7M_Centerbeam_Steel_L3_S1, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Centerbeam_Steel.png") {
-	template_2cc_wagons(357, 1)
-}
-
-//Livery 3 - Loading State 2 - Steel
-spriteset(spriteset_mglv_Wagon_Gen7M_Centerbeam_Steel_L3_S2, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Centerbeam_Steel.png") {
-	template_2cc_wagons(357, 32)
-}
-
-//Livery 3 - Loading State 3 - Steel
-spriteset(spriteset_mglv_Wagon_Gen7M_Centerbeam_Steel_L3_S3, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Centerbeam_Steel.png") {
-	template_2cc_wagons(357, 64)
-}
-
-//Livery 3 Spritegroup - Steel
-spritegroup spritegroup_wagon_Gen7M_Centerbeam_Steel_L3 {
-	loading: [spriteset_mglv_Wagon_Gen7M_Centerbeam_Steel_L3_S1, spriteset_mglv_Wagon_Gen7M_Centerbeam_Steel_L3_S2, spriteset_mglv_Wagon_Gen7M_Centerbeam_Steel_L3_S3];
-	loaded: [spriteset_mglv_Wagon_Gen7M_Centerbeam_Steel_L3_S1, spriteset_mglv_Wagon_Gen7M_Centerbeam_Steel_L3_S2, spriteset_mglv_Wagon_Gen7M_Centerbeam_Steel_L3_S3];	
-}
-
-//Livery 4 - Loading State 1 - Steel
-spriteset(spriteset_mglv_Wagon_Gen7M_Centerbeam_Steel_L4_S1, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Centerbeam_Steel.png") {
-	template_2cc_wagons(535, 1)
-}
-
-//Livery 4 - Loading State 2 - Steel
-spriteset(spriteset_mglv_Wagon_Gen7M_Centerbeam_Steel_L4_S2, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Centerbeam_Steel.png") {
-	template_2cc_wagons(535, 32)
-}
-
-//Livery 4 - Loading State 3 - Steel
-spriteset(spriteset_mglv_Wagon_Gen7M_Centerbeam_Steel_L4_S3, "gfx/Wagons_Maglev/Gen7M/Wagon_Gen7M_Centerbeam_Steel.png") {
-	template_2cc_wagons(535, 64)
-}
-
-//Livery 4 Spritegroup - Steel
-spritegroup spritegroup_wagon_Gen7M_Centerbeam_Steel_L4 {
-	loading: [spriteset_mglv_Wagon_Gen7M_Centerbeam_Steel_L4_S1, spriteset_mglv_Wagon_Gen7M_Centerbeam_Steel_L4_S2, spriteset_mglv_Wagon_Gen7M_Centerbeam_Steel_L4_S3];
-	loaded: [spriteset_mglv_Wagon_Gen7M_Centerbeam_Steel_L4_S1, spriteset_mglv_Wagon_Gen7M_Centerbeam_Steel_L4_S2, spriteset_mglv_Wagon_Gen7M_Centerbeam_Steel_L4_S3];	
-}
-
-random_switch(FEAT_TRAINS, SELF, switch_mglv_Wagon_Gen7M_Centerbeam_Steel_livery) {
-	7: spritegroup_wagon_Gen7M_Centerbeam_Steel_L1;
-	1: spritegroup_wagon_Gen7M_Centerbeam_Steel_L2;
-	1: spritegroup_wagon_Gen7M_Centerbeam_Steel_L3;
-	1: spritegroup_wagon_Gen7M_Centerbeam_Steel_L4;
-}
-
-random_switch(FEAT_TRAINS, SELF, switch_mglv_Wagon_Gen7M_Centerbeam_Supplies_livery) {
-	1: switch_mglv_Wagon_Gen7M_Centerbeam_Crates_livery;
-	1: switch_mglv_Wagon_Gen7M_Centerbeam_Planks_livery;
-	1: switch_mglv_Wagon_Gen7M_Centerbeam_Steel_livery;
-}
-
-switch(FEAT_TRAINS, SELF, switch_mglv_Wagon_Gen7M_Centerbeam_cargo_selection, cargo_type_in_veh) {
-	STEL: switch_mglv_Wagon_Gen7M_Centerbeam_Steel_livery;
-	BDMT: switch_mglv_Wagon_Gen7M_Centerbeam_Supplies_livery;
-	MNSP: switch_mglv_Wagon_Gen7M_Centerbeam_Supplies_livery;
-	WDPR: switch_mglv_Wagon_Gen7M_Centerbeam_Planks_livery;
-	switch_mglv_Wagon_Gen7M_Centerbeam_Crates_livery; //Goods, Paper
-}
-
-//Add defined switches 
-
-// ENGINECAPACITYSWITCH(VEHIDCODE)
-
-// RUNNINGCOST_ENGINE_SWITCH
-
-// PURCHASETEXT_SWITCH

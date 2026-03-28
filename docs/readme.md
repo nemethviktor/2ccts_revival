@@ -4,7 +4,7 @@ This project aims to capitalise on the work of Transportman, EmperorJake, Voyage
 
 That said, I've not worked on NML files before and my gfx skills are zero so if people will desire extra amendments that involve say new params or new graphics, they'll need to help out with them.
 
-In version `3.3-alpha1` (code only, unrelease for now but you can build if interested) I've added support for various track types and voltages. Need thorough testing though.
+In version `3.3-alpha1` I've added support for various track types and voltages. Need thorough testing though.
 
 
 ## Availability
@@ -16,14 +16,15 @@ The grf file is available on Github under [Releases](https://github.com/nemethvi
 
 You'll likely need [nmlc 0.8.1+](https://github.com/OpenTTD/nml/tree/master) to run the build and that seems to be around for Windows only. Get MinGW from [here](https://sourceforge.net/projects/mingw-w64/files/latest/download), install (you'll need the base and some compilers), then add the resulting folder's `bin` subfolder to `PATH` (ie `c:\MinGW\bin\`)
 
-You'll also need python 3... with `pandas openpyxl`, which you get via `pip install pandas openpyxl`
+You'll also need `python 3.13+`... with `pandas openpyxl`, which you get via `pip install pandas openpyxl`
 
 Run the `pybuild.bat`.
 
 ## "Under new management" (project directions, bug reports/feature requests)
 
 I forked the original project because I was unsatisfied with the availability of items past Gen5 wagons and so the original aim was to extend that. However of course I'm hoping to keep the project running and extend it where possible. Not only a fair bit of time has passed since the mid 2010s when this was active (and a lot of new real vehicles have come out) but I think there'd be significant scope for extending _concept_ vehicles for future purposes because I personally find it boring that there are almost no new vehicles in any NewGRF past ~2020
-Please use github to submit requests of any kind, _don't use the OTTD forums_ - I'm not active there. Also preferably don't use Reddit, I'm a reader there but Github is easier to manage.
+
+Please use github to submit requests of any kind, _don't use the OTTD forums_ - I'm not active there. Also preferably don't use Reddit, I'm a reader there but Github is easier to manage. You can also find me on Discord if you know where to look. 
 
 ### Changes in logic vs the old code. (Purchase and maintenance costs)
 
@@ -68,20 +69,8 @@ I know that AI is frowned upon in OpenTTD realms but such is life. I'm terrible 
 ### Help wanted/Contributing
 
 As I wrote above my GFX skills are zero so I'd like to ask people with graphics skills to chip in with the designs, either for new/concept vehicles or just changes to existing ones. 
-Please try to either stick to whichever current template (none technically available as a PSD but if people need it then I can probably hack one from the existing PNG files). The code side of the graphics templates are in src/templates.pnml
 
-
-## Info
-
-(_I know this isn't actually self-replacing the variables._)
-
-{{GRF_TITLE}}
-
-MD5Hash:  {{GRF_MD5}}
-
-Version:  {{REPO_REVISION}}
-
-GRF ID:   "VN\01\01"
+Please **do stick to one of the template files** or, while beggars can't be choosers I _will_ reject the design. You may ofc put your logo or text or palette on the file(s) but don't move the template boxes. There are/were over 50 (!!!) various combinations in the legacy files and I'd rather die than to decipher any more random ones. (Main) Template logic cna be found in another readme inside the `gfx` folder and there are templates of existing files as well there. Furthermore each pnml file has the template designation inside it so if you would like to add more designs, pick one from the existing ones.
 
 
 

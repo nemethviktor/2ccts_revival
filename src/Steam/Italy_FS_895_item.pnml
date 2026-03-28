@@ -2,9 +2,12 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
-item(FEAT_TRAINS, item_steam_Italy_FS_895) {
+
+// Template: TPL_03C
+
+item(FEAT_TRAINS, item_steam_italy_fs_895) {
     property {
-        name: string(str_steam_Italy_FS_895);
+        name: string(str_steam_italy_fs_895);
         climates_available: ((param_region_southern_europe || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1908,1,1);
         model_life: 45;
@@ -38,7 +41,7 @@ item(FEAT_TRAINS, item_steam_Italy_FS_895) {
         bitmask_vehicle_info: 0;
     }
     graphics {
-        purchase: spriteset_steam_Italy_FS_895_purchase;
+        purchase: spriteset_steam_italy_fs_895_purchase;
         // no 'visual_effect' or 'visual_effect_and_powered'
         // no 'length'
         // no 'articulated_part'
@@ -46,6 +49,6 @@ item(FEAT_TRAINS, item_steam_Italy_FS_895) {
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
         // PURCHASETEXT_SWITCH_CALL // this is actually blank
-        default: switch_steam_Italy_FS_895_animation;
+        default: switch_steam_italy_fs_895_animation;
     }
 }

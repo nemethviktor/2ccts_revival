@@ -51,122 +51,122 @@ STR_PARAM_REGION_OCEANIA_DESC                   :Benutze die Fahrzeuge aus Ozean
 
 #loading speed parameter
 
-#VEHICLE NAMES
-#Railbus-steam
-str_rbs_Austria_NOLB_1          :NOLB 1 (Dampf-Schienenbus)
+#vehicle names
+#railbus-steam
+str_rbs_austria_nolb_1          :NOLB 1 (Dampf-Schienenbus)
 
-#Railbus-diesel
-str_rbd_New_Zealand_NZR_RM31                                    :NZR RM31 (Diesel-Schienenbus)
+#railbus-diesel
+str_rbd_new_zealand_nzr_rm31                                    :NZR RM31 (Diesel-Schienenbus)
 
-#Railbus-electric
+#railbus-electric
 
-#Steam
-str_steam_Belgium_Le_Belge                      :Le Belge (Dampf)
-str_steam_USA_4_4_0_American            :4-4-0 'American' (Dampf)
-str_steam_Switzerland_SBB_Ec_2_5        :SBB Ec 2/5 (Dampf)
-str_steam_USA_4_6_0_Ten_wheeler         :4-6-0 'Ten-Wheeler' (Dampf)
-str_steam_USA_2_8_0_Consolidation       :2-8-0 'Consolidation' (Dampf)
-str_steam_Austria_KkStB_99                      :KkStB 99 (Dampf)
-str_steam_UK_Caledonian_Railway_439     :Caledonian Railway 439 (Dampf)
-str_steam_Switzerland_SBB_A_3_5         :SBB A 3/5 (Dampf)
-str_steam_Switzerland_SBB_E_3_3         :SBB E 3/3 (Dampf)
-str_steam_Austria_KkStB_299             :KkStB 299 (Dampf)
-str_steam_Argentina_FCNEA_11B_2_8_0     :FCNEA 11B 2-8-0 (Dampf)
-str_steam_UK_GWR_5700                           :GWR 5700 (Dampf)
-str_steam_USA_AT_SF_5000                        :AT&SF 5000 (Dampf)
-str_steam_Germany_Prussian_S10          :Preussische S 10 (Dampf)
-str_steam_UK_LMS_5MT_Black_Five         :LMS 5MT 'Black Five' (Dampf)
-str_steam_UK_LNER_A4_Gresley            :LNER A4 'Gresley' (Dampf)
-str_steam_Germany_DB_52                         :DB BR 52 (Dampf)
-str_steam_UK_LNER_A1_Peppercorn         :LNER A1 'Peppercorn' (Dampf)
-str_steam_France_SNCF_150B                      :SNCF 150B (Dampf)
-str_steam_Italy_FS_895                          :FS 895 (Dampf)
-str_steam_Switzerland_SBB_C_5_6         :SBB C 5/6 (Dampf)
-str_steam_USA_UP_4000_Big_Boy           :UP 4000 'Big Boy' (Dampf)
+#steam
+str_steam_belgium_le_belge                      :Le Belge (Dampf)
+str_steam_usa_4_4_0_american            :4-4-0 'American' (Dampf)
+str_steam_switzerland_sbb_ec_2_5        :SBB Ec 2/5 (Dampf)
+str_steam_usa_4_6_0_ten_wheeler         :4-6-0 'Ten-Wheeler' (Dampf)
+str_steam_usa_2_8_0_consolidation       :2-8-0 'Consolidation' (Dampf)
+str_steam_austria_kkstb_99                      :KkStB 99 (Dampf)
+str_steam_uk_caledonian_railway_439     :Caledonian Railway 439 (Dampf)
+str_steam_switzerland_sbb_a_3_5         :SBB A 3/5 (Dampf)
+str_steam_switzerland_sbb_e_3_3         :SBB E 3/3 (Dampf)
+str_steam_austria_kkstb_299             :KkStB 299 (Dampf)
+str_steam_argentina_fcnea_11b_2_8_0     :FCNEA 11B 2-8-0 (Dampf)
+str_steam_uk_gwr_5700                           :GWR 5700 (Dampf)
+str_steam_usa_at_sf_5000                        :AT&SF 5000 (Dampf)
+str_steam_germany_prussian_s10          :Preussische S 10 (Dampf)
+str_steam_uk_lms_5mt_black_five         :LMS 5MT 'Black Five' (Dampf)
+str_steam_uk_lner_a4_gresley            :LNER A4 'Gresley' (Dampf)
+str_steam_germany_db_52                         :DB BR 52 (Dampf)
+str_steam_uk_lner_a1_peppercorn         :LNER A1 'Peppercorn' (Dampf)
+str_steam_france_sncf_150b                      :SNCF 150B (Dampf)
+str_steam_italy_fs_895                          :FS 895 (Dampf)
+str_steam_switzerland_sbb_c_5_6         :SBB C 5/6 (Dampf)
+str_steam_usa_up_4000_big_boy           :UP 4000 'Big Boy' (Dampf)
 
-#Diesel
-str_diesel_Switzerland_SBB_Am_4_6                                               :SBB Am 4/6 (Diesel)
-str_diesel_Uruguay_AFE_1500                                                     :AFE 1500 (Diesel)
-str_diesel_Argentina_MF_GM_EMD_J16CW_AC                                 :MF GM-EMD-J16CW-AC (Diesel)
-str_diesel_Egypt_ENR_G22W                                                               :ENR G22W (Diesel)
-str_diesel_USA_UP_EMD_DDA40X                                                    :UP EMD DDA40X (Diesel)
-str_diesel_Belgium_NMBS_SNCB_7800                                               :NMBS/SNCB 7800 (Diesel)
-str_diesel_China_MTR_8000                                                               :MTR 8000 (Diesel)
+#diesel
+str_diesel_switzerland_sbb_am_4_6                                               :SBB Am 4/6 (Diesel)
+str_diesel_uruguay_afe_1500                                                     :AFE 1500 (Diesel)
+str_diesel_argentina_mf_gm_emd_j16cw_ac                                 :MF GM-EMD-J16CW-AC (Diesel)
+str_diesel_egypt_enr_g22w                                                               :ENR G22W (Diesel)
+str_diesel_usa_up_emd_dda40x                                                    :UP EMD DDA40X (Diesel)
+str_diesel_belgium_nmbs_sncb_7800                                               :NMBS/SNCB 7800 (Diesel)
+str_diesel_china_mtr_8000                                                               :MTR 8000 (Diesel)
 
-#Electric
-str_electric_South_Africa_SAR_ES_Class                  :SAR ES-Klasse (Elektrisch)
-str_electric_South_Africa_SAR_6E                                :SAR 6E (Elektrisch)
-str_electric_Austria_OBB_1063                                   :OBB 1063 (Elektrisch)
-str_electric_Spain_RENFE_252                                    :RENFE 252 (Elektrisch)
-str_electric_UK_BR_92                                                   :BR 92 (Elektrisch)
-str_electric_Germany_DB_185_TRAXX_F140                  :DB 145 TRAXX F140 (Elektrisch)
+#electric
+str_electric_south_africa_sar_es_class                  :SAR ES-Klasse (Elektrisch)
+str_electric_south_africa_sar_6e                                :SAR 6E (Elektrisch)
+str_electric_austria_obb_1063                                   :OBB 1063 (Elektrisch)
+str_electric_spain_renfe_252                                    :RENFE 252 (Elektrisch)
+str_electric_uk_br_92                                                   :BR 92 (Elektrisch)
+str_electric_germany_db_185_traxx_f140                  :DB 145 TRAXX F140 (Elektrisch)
 
-#DMU
+#dmu
 
-#CargoDMU
+#cargodmu
 
-#EMU
+#emu
 
-#Single Unit Metro
+#single unit metro
 
-#Multiple Unit Metro
-str_mtro_UK_London_1903_Stock                                   :London 1903-er Baureihe (U-Bahn)
-str_mtro_Argentina_Le_Brugeoise                                 :Buenos Aires 'Le Brugeoise' (U-Bahn)
-str_mtro_USA_NY_R1                                                              :New York R1 (U-Bahn)
-str_mtro_UK_London_1938_Stock                                   :London 1938-er Baureihe (U-Bahn)
-str_mtro_France_Paris_M2_840                                    :Paris M2 840 (U-Bahn)
-str_mtro_Portugal_Lisbon_ML7                                    :Lissabon ML7 (U-Bahn)
-str_mtro_Hungary_Budapest_Ev3_200                               :Budapest Ev3-200 (U-Bahn)
-str_mtro_Norway_Oslo_T1000                                              :Oslo T1000 (U-Bahn)
-str_mtro_Canada_Toronto_H_series                                :Toronto H-Serie (U-Bahn)
-str_mtro_Germany_Munchen_MVG_A2                                 :München MVG A2 (U-Bahn)
-str_mtro_USA_NY_R44                                                     :New York R44 (U-Bahn)
-str_mtro_Netherlands_Amsterdam_Type_M1                  :Amsterdam M1 (U-Bahn)
-str_mtro_Sweden_Stockholm_C8                                    :Stockholm C8 (U-Bahn)
-str_mtro_North_Korea_Pyongyang_D_stock                  :Pjöngjang Baureihe D (U-Bahn)
-str_mtro_Finland_Helsinki_M100                                  :Helsinki M100 (U-Bahn)
-str_mtro_Brazil_Sao_Paulo_Serie_5500                    :Sao Paulo Serie 5500 (U-Bahn)
-str_mtro_Russia_Moscow_81_720                                   :Moskau 81-720 (U-Bahn)
-str_mtro_Japan_Tokyo_S01                                                :Tokio S01 (U-Bahn)
-str_mtro_Egypt_Cairo_1987_Stock                                 :Kairo 1987-er Baureihe (U-Bahn)
-str_mtro_Russia_Moscow_81_7175M                                 :Moskau 81-717.5M (U-Bahn)
-str_mtro_USA_Boston_01800                                               :Boston 01800 (U-Bahn)
-str_mtro_USA_LA_A650                                                    :LA A650 (U-Bahn)
-str_mtro_Taiwan_Taipei_C301                                     :Taipei C301 (U-Bahn)
-str_mtro_Netherlands_Amsterdam_CAF_90                   :Amsterdam CAF 90 (U-Bahn)
-str_mtro_France_Paris_MP89                                              :Paris MP89 (U-Bahn)
-str_mtro_Russia_Moscow_81_740                                   :Moscow 81-740 (U-Bahn)
-str_mtro_Singapore_Singapore_C830_Metropolis    :Singapore C830 'Metropolis' (U-Bahn)
-str_mtro_Norway_Oslo_MX3000                                     :Oslo MX3000 (U-Bahn)
-str_mtro_Japan_Osaka_30000                                              :Osaka 30000 (U-Bahn)
-str_mtro_Singapore_Singapore_C151A                              :Singapore C151A (U-Bahn)
-str_mtro_USA_Washington_7000                                    :Washington 7000 (U-Bahn)
-str_mtro_Greece_Thessaloniki_2014                               :Thessaloniki 2014 (U-Bahn)
+#multiple unit metro
+str_mtro_uk_london_1903_stock                                   :London 1903-er Baureihe (U-Bahn)
+str_mtro_argentina_le_brugeoise                                 :Buenos Aires 'Le Brugeoise' (U-Bahn)
+str_mtro_usa_ny_r1                                                              :New York R1 (U-Bahn)
+str_mtro_uk_london_1938_stock                                   :London 1938-er Baureihe (U-Bahn)
+str_mtro_france_paris_m2_840                                    :Paris M2 840 (U-Bahn)
+str_mtro_portugal_lisbon_ml7                                    :Lissabon ML7 (U-Bahn)
+str_mtro_hungary_budapest_ev3_200                               :Budapest Ev3-200 (U-Bahn)
+str_mtro_norway_oslo_t1000                                              :Oslo T1000 (U-Bahn)
+str_mtro_canada_toronto_h_series                                :Toronto H-Serie (U-Bahn)
+str_mtro_germany_munchen_mvg_a2                                 :München MVG A2 (U-Bahn)
+str_mtro_usa_ny_r44                                                     :New York R44 (U-Bahn)
+str_mtro_netherlands_amsterdam_type_m1                  :Amsterdam M1 (U-Bahn)
+str_mtro_sweden_stockholm_c8                                    :Stockholm C8 (U-Bahn)
+str_mtro_north_korea_pyongyang_d_stock                  :Pjöngjang Baureihe D (U-Bahn)
+str_mtro_finland_helsinki_m100                                  :Helsinki M100 (U-Bahn)
+str_mtro_brazil_sao_paulo_serie_5500                    :Sao Paulo Serie 5500 (U-Bahn)
+str_mtro_russia_moscow_81_720                                   :Moskau 81-720 (U-Bahn)
+str_mtro_japan_tokyo_s01                                                :Tokio S01 (U-Bahn)
+str_mtro_egypt_cairo_1987_stock                                 :Kairo 1987-er Baureihe (U-Bahn)
+str_mtro_russia_moscow_81_7175m                                 :Moskau 81-717.5M (U-Bahn)
+str_mtro_usa_boston_01800                                               :Boston 01800 (U-Bahn)
+str_mtro_usa_la_a650                                                    :LA A650 (U-Bahn)
+str_mtro_taiwan_taipei_c301                                     :Taipei C301 (U-Bahn)
+str_mtro_netherlands_amsterdam_caf_90                   :Amsterdam CAF 90 (U-Bahn)
+str_mtro_france_paris_mp89                                              :Paris MP89 (U-Bahn)
+str_mtro_russia_moscow_81_740                                   :Moscow 81-740 (U-Bahn)
+str_mtro_singapore_singapore_c830_metropolis    :Singapore C830 'Metropolis' (U-Bahn)
+str_mtro_norway_oslo_mx3000                                     :Oslo MX3000 (U-Bahn)
+str_mtro_japan_osaka_30000                                              :Osaka 30000 (U-Bahn)
+str_mtro_singapore_singapore_c151a                              :Singapore C151A (U-Bahn)
+str_mtro_usa_washington_7000                                    :Washington 7000 (U-Bahn)
+str_mtro_greece_thessaloniki_2014                               :Thessaloniki 2014 (U-Bahn)
 
-#Maglev railbus
+#maglev railbus
 
-#Maglev
-str_mglv_China_Transrapid       :Shanghai Transrapid (Maglev)
+#maglev
+str_mglv_china_transrapid       :Shanghai Transrapid (Maglev)
 
 #wagons
 
 
 #coaches
-str_mu_Coach_Gen2_Heavyweight_Intercity_Coach                              :Schwerer Fernverkehrswagen
-str_mu_Coach_Gen2_Steel_Intercity_Coach                                    :Stahl-Fernverkehrswagen
-str_mu_Coach_Gen2_Steel_3_axle_Regional_Coach                              :3-achsiger Regionalbahnwage, Stahl
-str_mu_Coach_Gen3_Steel_Lightweight_Intercity_Coach                :Stahl-Leichtbau-Fernverkehrswagen
-str_mu_Coach_Gen3_Aluminium_Lightweight_Intercity_Coach    :Aluminium-Leichtbau-Fernverkehrswagen
-str_mu_Coach_Gen3_Mk1_Intercity_Coach                                              :Mk1 Fernverkehrswagen
-str_mu_Coach_Gen3_UIC_X_Intercity_Coach                                    :UIC-X Fernverkehrswagen
-str_mu_Coach_Gen3_TEE_Intercity_Coach                                              :TEE-Fernverkehrswagen
-str_mu_Coach_Gen3_Indian_Intercity_Coach                                   :Indischer Fernverkehrswagen
-str_mu_Coach_Gen4_Eurofima_Intercity_Coach                                 :Eurofima Fernverkehrswagen
-str_mu_Coach_Gen4_Russian_Intercity_Coach                                  :Russischer Fernverkehrswagen
-str_mu_Coach_Gen4_Amfleet_Intercity_Coach                                  :Amfleet Fernverkehrswagen
+str_mu_coach_gen2_heavyweight_intercity_coach                              :Schwerer Fernverkehrswagen
+str_mu_coach_gen2_steel_intercity_coach                                    :Stahl-Fernverkehrswagen
+str_mu_coach_gen2_steel_3_axle_regional_coach                              :3-achsiger Regionalbahnwage, Stahl
+str_mu_coach_gen3_steel_lightweight_intercity_coach                :Stahl-Leichtbau-Fernverkehrswagen
+str_mu_coach_gen3_aluminium_lightweight_intercity_coach    :Aluminium-Leichtbau-Fernverkehrswagen
+str_mu_coach_gen3_mk1_intercity_coach                                              :Mk1 Fernverkehrswagen
+str_mu_coach_gen3_uic_x_intercity_coach                                    :UIC-X Fernverkehrswagen
+str_mu_coach_gen3_tee_intercity_coach                                              :TEE-Fernverkehrswagen
+str_mu_coach_gen3_indian_intercity_coach                                   :Indischer Fernverkehrswagen
+str_mu_coach_gen4_eurofima_intercity_coach                                 :Eurofima Fernverkehrswagen
+str_mu_coach_gen4_russian_intercity_coach                                  :Russischer Fernverkehrswagen
+str_mu_coach_gen4_amfleet_intercity_coach                                  :Amfleet Fernverkehrswagen
 
 #special wagons
-str_mtro_Metro_Wagon_Unpowered                :U-Bahn-Beiwagen (nicht angetrieben)
+str_mtro_metro_wagon_unpowered                :U-Bahn-Beiwagen (nicht angetrieben)
 
 #Obsolete vehicles
 

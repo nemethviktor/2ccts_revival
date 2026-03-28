@@ -2,24 +2,27 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
+
+// Template: TPL_25A
+
 // Cargo capacity
 
-    switch(FEAT_TRAINS, SELF, switch_mu_Wagon_Gen6_Superheavy_Flatcar_capacity_engine, cargo_classes) { \
+    switch(FEAT_TRAINS, SELF, switch_mu_wagon_gen6_superheavy_flatcar_capacity_engine, cargo_classes) { \
         bitmask(CC_MAIL): 65/2; \
         bitmask(CC_ARMOURED): 65/4; \
         65; \
     }
 
 
-    switch(FEAT_TRAINS, SELF, switch_mu_Wagon_Gen6_Superheavy_Flatcar_capacity_wagon, cargo_classes) { \
+    switch(FEAT_TRAINS, SELF, switch_mu_wagon_gen6_superheavy_flatcar_capacity_wagon, cargo_classes) { \
         bitmask(CC_MAIL): 0/2; \
         bitmask(CC_ARMOURED): 0/4; \
         0; \
     }
 
-item(FEAT_TRAINS, item_mu_Wagon_Gen6_Superheavy_Flatcar) {
+item(FEAT_TRAINS, item_mu_wagon_gen6_superheavy_flatcar) {
     property {
-        name: string(str_mu_Wagon_Gen6_Superheavy_Flatcar);
+        name: string(str_mu_wagon_gen6_superheavy_flatcar);
         climates_available: (((param_region_africa || (param_region_north_america || param_region_south_america) || param_region_asia || (param_region_northern_europe || param_region_eastern_europe || param_region_southern_europe || param_region_western_europe) || param_region_oceania) || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(2010,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
@@ -53,15 +56,15 @@ item(FEAT_TRAINS, item_mu_Wagon_Gen6_Superheavy_Flatcar) {
         bitmask_vehicle_info: 0;
     }
     graphics {
-        purchase: spriteset_mu_Wagon_Gen6_Superheavy_Flatcar_purchase;
-        cargo_capacity: switch_mu_Wagon_Gen6_Superheavy_Flatcar_capacity_engine;
+        purchase: spriteset_mu_wagon_gen6_superheavy_flatcar_purchase;
+        cargo_capacity: switch_mu_wagon_gen6_superheavy_flatcar_capacity_engine;
         // no 'visual_effect' or 'visual_effect_and_powered'
         // no 'length'
-        articulated_part: switch_mu_Wagon_Gen6_Superheavy_Flatcar_articulated;
+        articulated_part: switch_mu_wagon_gen6_superheavy_flatcar_articulated;
         // no 'can_attach'
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
         // PURCHASETEXT_SWITCH_CALL // this is actually blank
-        default: switch_mu_Wagon_Gen6_Superheavy_Flatcar;
+        default: switch_mu_wagon_gen6_superheavy_flatcar;
     }
 }

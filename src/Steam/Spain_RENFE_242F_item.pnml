@@ -2,9 +2,12 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
-item(FEAT_TRAINS, item_steam_Spain_RENFE_242F) {
+
+// Template: TPL_03A
+
+item(FEAT_TRAINS, item_steam_spain_renfe_242f) {
     property {
-        name: string(str_steam_Spain_RENFE_242F);
+        name: string(str_steam_spain_renfe_242f);
         climates_available: ((param_region_southern_europe || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1955,1,1);
         model_life: 45;
@@ -38,14 +41,14 @@ item(FEAT_TRAINS, item_steam_Spain_RENFE_242F) {
         bitmask_vehicle_info: 0;
     }
     graphics {
-        purchase: spriteset_steam_Spain_RENFE_242F_purchase;
-        visual_effect_and_powered: switch_steam_Spain_RENFE_242F_visual_effect;
-        length: switch_steam_Spain_RENFE_242F_length;
-        articulated_part: switch_steam_Spain_RENFE_242F_articulated;
+        purchase: spriteset_steam_spain_renfe_242f_purchase;
+        visual_effect_and_powered: switch_steam_spain_renfe_242f_visual_effect;
+        length: switch_steam_spain_renfe_242f_length;
+        articulated_part: switch_steam_spain_renfe_242f_articulated;
         can_attach_wagon: switch_can_attach_vehicle;
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
         // PURCHASETEXT_SWITCH_CALL // this is actually blank
-        default: switch_steam_Spain_RENFE_242F_position;
+        default: switch_steam_spain_renfe_242f_position;
     }
 }

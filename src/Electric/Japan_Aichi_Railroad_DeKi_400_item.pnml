@@ -2,9 +2,12 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
-item(FEAT_TRAINS, item_electric_Japan_Aichi_Railroad_DeKi_400) {
+
+// Template: TPL_01A
+
+item(FEAT_TRAINS, item_electric_japan_aichi_railroad_deki_400) {
     property {
-        name: string(str_electric_Japan_Aichi_Railroad_DeKi_400);
+        name: string(str_electric_japan_aichi_railroad_deki_400);
         climates_available: ((param_region_asia || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1930,1,1);
         model_life: 45;
@@ -38,7 +41,7 @@ item(FEAT_TRAINS, item_electric_Japan_Aichi_Railroad_DeKi_400) {
         bitmask_vehicle_info: 0;
     }
     graphics {
-        purchase: spriteset_electric_Japan_Aichi_Railroad_DeKi_400_purchase;
+        purchase: spriteset_electric_japan_aichi_railroad_deki_400_purchase;
         // no 'visual_effect' or 'visual_effect_and_powered'
         // no 'length'
         // no 'articulated_part'
@@ -46,6 +49,6 @@ item(FEAT_TRAINS, item_electric_Japan_Aichi_Railroad_DeKi_400) {
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
         // PURCHASETEXT_SWITCH_CALL // this is actually blank
-        default: spriteset_electric_Japan_Aichi_Railroad_DeKi_400;
+        default: spriteset_electric_japan_aichi_railroad_deki_400;
     }
 }

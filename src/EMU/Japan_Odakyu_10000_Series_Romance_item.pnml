@@ -2,24 +2,27 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
+
+// Template: TPL_02D
+
 // Cargo capacity
 
-    switch(FEAT_TRAINS, SELF, switch_emu_Japan_Odakyu_10000_Series_Romance_capacity_engine, cargo_classes) { \
+    switch(FEAT_TRAINS, SELF, switch_emu_japan_odakyu_10000_series_romance_capacity_engine, cargo_classes) { \
         bitmask(CC_MAIL): 40/2; \
         bitmask(CC_ARMOURED): 40/4; \
         40; \
     }
 
 
-    switch(FEAT_TRAINS, SELF, switch_emu_Japan_Odakyu_10000_Series_Romance_capacity_wagon, cargo_classes) { \
+    switch(FEAT_TRAINS, SELF, switch_emu_japan_odakyu_10000_series_romance_capacity_wagon, cargo_classes) { \
         bitmask(CC_MAIL): 40/2; \
         bitmask(CC_ARMOURED): 40/4; \
         40; \
     }
 
-item(FEAT_TRAINS, item_emu_Japan_Odakyu_10000_Series_Romance) {
+item(FEAT_TRAINS, item_emu_japan_odakyu_10000_series_romance) {
     property {
-        name: string(str_emu_Japan_Odakyu_10000_Series_Romance);
+        name: string(str_emu_japan_odakyu_10000_series_romance);
         climates_available: ((param_region_asia || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1986,1,1);
         model_life: 45;
@@ -53,8 +56,8 @@ item(FEAT_TRAINS, item_emu_Japan_Odakyu_10000_Series_Romance) {
         bitmask_vehicle_info: 0;
     }
     graphics {
-        purchase: spriteset_emu_Japan_Odakyu_10000_Series_Romance_purchase;
-        cargo_capacity: switch_emu_Japan_Odakyu_10000_Series_Romance_capacity_engine;
+        purchase: spriteset_emu_japan_odakyu_10000_series_romance_purchase;
+        cargo_capacity: switch_emu_japan_odakyu_10000_series_romance_capacity_engine;
         // no 'visual_effect_and_powered' becuase while it does exist, _visual_effect_and_powered_position is set for livery overrides
         // no 'length'
         // no 'articulated_part'
@@ -62,26 +65,26 @@ item(FEAT_TRAINS, item_emu_Japan_Odakyu_10000_Series_Romance) {
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
         // PURCHASETEXT_SWITCH_CALL // this is actually blank
-        default: switch_emu_Japan_Odakyu_10000_Series_Romance_reversed;
+        default: switch_emu_japan_odakyu_10000_series_romance_reversed;
     }
-    livery_override (item_mu_MU_Wagon_Unpowered) {
+    livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: int(110/10);
         weight: int(35*1/2);
-        visual_effect_and_powered: switch_emu_Japan_Odakyu_10000_Series_Romance_visual_effect_and_powered_position;
+        visual_effect_and_powered: switch_emu_japan_odakyu_10000_series_romance_visual_effect_and_powered_position;
         cargo_capacity: 40;
         length: 8;
-        default: switch_emu_Japan_Odakyu_10000_Series_Romance_cargo_selection;
+        default: switch_emu_japan_odakyu_10000_series_romance_cargo_selection;
     }
-    livery_override (item_mu_MU_Wagon_Powered) {
+    livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: (round(22.637003937702143));
         power: int(1550*1/2);
         weight: int(35*3/4);
-        visual_effect_and_powered: switch_emu_Japan_Odakyu_10000_Series_Romance_visual_effect_and_powered_position;
+        visual_effect_and_powered: switch_emu_japan_odakyu_10000_series_romance_visual_effect_and_powered_position;
         cargo_capacity: 40;
         tractive_effort_coefficient: int(0.22*10*35);
         length: 8;
-        default: switch_emu_Japan_Odakyu_10000_Series_Romance_cargo_selection;
+        default: switch_emu_japan_odakyu_10000_series_romance_cargo_selection;
     }
 }

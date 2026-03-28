@@ -1,52 +1,38 @@
-/*
- *  Copyright (C) 2017 Transportman // V. Nemeth 2026
- *  This file is part of the 2cc Trains In NML
- *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU Gen3eral Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
- *  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Gen3eral Public License for more details.
- *  You should have received a copy of the GNU Gen3eral Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
-*/
+//  Copyright (C) 2017 Transportman // V. Nemeth 2026+
+//  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
-/*
-* PURCHASE
-*/
+// Template: TPL_04A
 
-spriteset(spriteset_mu_Coach_Gen3_Doppelstockwagen_Local_Coach_purchase, "gfx/Coaches/Gen3/Coach_Doppelstockwagen_Local_Coach_Purchase.png") {
-	template_purchase_wagon(1, 1)
+// PURCHASE
+spriteset(spriteset_mu_coach_gen3_doppelstockwagen_local_coach_purchase, "gfx/coaches/gen3/coach_gen3_doppelstockwagen_local_coach_purchase.png") {template_purchase_wagon(1, 1)}
+
+
+// VEHICLE
+
+/// LIVERY 1
+spriteset(spriteset_mu_coach_gen3_doppelstockwagen_local_coach_l1, "gfx/coaches/gen3/coach_gen3_doppelstockwagen_local_coach.png") {template_2cc_wagons(1, 1)}
+
+
+
+/// LIVERY 2
+spriteset(spriteset_mu_coach_gen3_doppelstockwagen_local_coach_l2, "gfx/coaches/gen3/coach_gen3_doppelstockwagen_local_coach.png") {template_2cc_wagons(179, 1)}
+
+
+
+/// LIVERY 3
+spriteset(spriteset_mu_coach_gen3_doppelstockwagen_local_coach_l3, "gfx/coaches/gen3/coach_gen3_doppelstockwagen_local_coach.png") {template_2cc_wagons(357, 1)}
+
+
+
+/// LIVERY 4
+spriteset(spriteset_mu_coach_gen3_doppelstockwagen_local_coach_l4, "gfx/coaches/gen3/coach_gen3_doppelstockwagen_local_coach.png") {template_2cc_wagons(535, 1)}
+
+
+
+// Random Livery Selector
+random_switch(FEAT_TRAINS, SELF, switch_mu_coach_gen3_doppelstockwagen_local_coach_livery) {
+	7: spriteset_mu_coach_gen3_doppelstockwagen_local_coach_l1;
+	1: spriteset_mu_coach_gen3_doppelstockwagen_local_coach_l2;
+	1: spriteset_mu_coach_gen3_doppelstockwagen_local_coach_l3;
+	1: spriteset_mu_coach_gen3_doppelstockwagen_local_coach_l4;
 }
-
-/*
-* Vehicle
-*/
-
-//Livery 1
-spriteset(spriteset_mu_Coach_Gen3_Doppelstockwagen_Local_Coach_L1, "gfx/Coaches/Gen3/Coach_Doppelstockwagen_Local_Coach.png") {
-	template_2cc_wagons(1, 1)
-}
-
-//Livery 2
-spriteset(spriteset_mu_Coach_Gen3_Doppelstockwagen_Local_Coach_L2, "gfx/Coaches/Gen3/Coach_Doppelstockwagen_Local_Coach.png") {
-	template_2cc_wagons(179, 1)
-}
-
-//Livery 3
-spriteset(spriteset_mu_Coach_Gen3_Doppelstockwagen_Local_Coach_L3, "gfx/Coaches/Gen3/Coach_Doppelstockwagen_Local_Coach.png") {
-	template_2cc_wagons(357, 1)
-}
-
-//Livery 4
-spriteset(spriteset_mu_Coach_Gen3_Doppelstockwagen_Local_Coach_L4, "gfx/Coaches/Gen3/Coach_Doppelstockwagen_Local_Coach.png") {
-	template_2cc_wagons(535, 1)
-}
-
-random_switch(FEAT_TRAINS, SELF, switch_mu_Coach_Gen3_Doppelstockwagen_Local_Coach_livery) {
-	7: spriteset_mu_Coach_Gen3_Doppelstockwagen_Local_Coach_L1;
-	1: spriteset_mu_Coach_Gen3_Doppelstockwagen_Local_Coach_L2;
-	1: spriteset_mu_Coach_Gen3_Doppelstockwagen_Local_Coach_L3;
-	1: spriteset_mu_Coach_Gen3_Doppelstockwagen_Local_Coach_L4;
-}
-
-//Add defined switches
-
-// RUNNINGCOST_ENGINE_SWITCH
-
-// PURCHASETEXT_SWITCH
