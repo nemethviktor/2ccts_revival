@@ -11,7 +11,13 @@ Most **xMUs** will be `TPL_02A` (There is no `TPL_02B` - it has been removed dur
 
 Most **Metros** will be `TPL_02C`.
 
-**Things with Tenders [exc chickens]** are usually `TPL_03x` (honestly I've given up, have a look if you would like to design sth w a tender that's not a chicken; there are like 6-7 different 03s), whereas things with **2-state-animation** are `TPL_03B` [I'm rather unsure of that - ie the code says so but the images look more like shunters].
+**Things with Tenders [exc chickens]** are usually `TPL_03x`:
+- Steam w / Tender -> `TPL_03A` 
+- Items w 2 engine animation states -> `TPL_03B` 
+- Same as B but different 'purhchase' position -> `TPL_03C` 
+- Non-Steam w / Tender -> `TPL_03D` 
+- Same as A but no Visual Effect -> `TPL_03E` 
+- Same as B but no Visual effect -> `TPL_03F` 
 
 
 For **Wagons**, it's a little chaotic because there are 'simple' (`TPL_01F`) ones with no loading states, then ones with liveries (`TPL_04A`) + loading states (`TPL_04B`) and ones _with liveries + loading states + different sprites per cargo type_ 

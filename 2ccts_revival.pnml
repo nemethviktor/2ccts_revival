@@ -2200,6 +2200,9 @@
 #include "src/Steam/China_Railways_QJ_graphics.pnml"
 #include "src/Steam/China_Railways_QJ_item.pnml"
 
+#include "src/Steam/South_Africa_Katanga_Mikado_2_8_2_graphics.pnml"
+#include "src/Steam/South_Africa_Katanga_Mikado_2_8_2_item.pnml"
+
 
 //// WAGONS - GEN1
 #include "src/Wagons/Gen1/Wagon_Gen1_Flat_Wagon_graphics.pnml"

@@ -4,8 +4,9 @@
 - CODE CHANGES:
 	- TBA
 - VEHICLES CHANGES:
-	- Added `Alsthom AD30B`
-	- Reclassify `FS ALn 668` as template `TPL_01B`
+	- Added `Alsthom AD30B` (Standard/Diesel)
+	- Added `Katanga Mikado 2-8-2` (Narrow/Steam)
+	- Reclassified `FS ALn 668` as template `TPL_01B`
 	
 
 **3.3-beta1 [20260401]**

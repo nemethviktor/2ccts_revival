@@ -1633,7 +1633,7 @@ item(FEAT_TRAINS, item_steam_australia_nswgr_c35, 4113) {}
 item(FEAT_TRAINS, item_steam_belgium_nmbs_sncb_type_29, 4114) {}
 item(FEAT_TRAINS, item_steam_chile_fcab_4_8_2, 4115) {}
 item(FEAT_TRAINS, item_steam_china_railways_qj, 4116) {}
-// 4117 free
+item(FEAT_TRAINS, item_steam_south_africa_katanga_mikado_2_8_2, 4117) {}
 // 4118 free
 // 4119 free
 // 4120 free
