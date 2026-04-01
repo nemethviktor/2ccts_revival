@@ -1,5 +1,13 @@
 ### 2cc TrainsInNML (Revival) changelog
 
+**3.3-beta2 [20260xxx]**
+- CODE CHANGES:
+	- TBA
+- VEHICLES CHANGES:
+	- Added `Alsthom AD30B`
+	- Reclassify `FS ALn 668` as template `TPL_01B`
+	
+
 **3.3-beta1 [20260401]**
 - CODE CHANGES:
 	- Automated English Language file creation

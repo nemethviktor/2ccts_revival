@@ -1,10 +1,10 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
-// Template: TPL_01C
+// Template: TPL_01B
 
 // PURCHASE
-spriteset(spriteset_rbd_italy_fs_aln_668_purchase, "gfx/railbus/railbus_diesel/italy_fs_aln_668.png") {template_purchase_dualheaded(1, 32)}
+spriteset(spriteset_rbd_italy_fs_aln_668_purchase, "gfx/railbus/railbus_diesel/italy_fs_aln_668.png") {template_purchase(1, 32)}
 
 
 // VEHICLE
