@@ -812,6 +812,9 @@
 #include "src/Diesel/USA_Amtrak_Charger_graphics.pnml"
 #include "src/Diesel/USA_Amtrak_Charger_item.pnml"
 
+#include "src/Diesel/Gabon_Alsthom_AD30B_graphics.pnml"
+#include "src/Diesel/Gabon_Alsthom_AD30B_item.pnml"
+
 
 //// EMU
 #include "src/EMU/Netherlands_NS_Mat24_graphics.pnml"

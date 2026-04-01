@@ -389,6 +389,7 @@ str_diesel_australia_pacific_national_92                              :Pacific N
 str_diesel_uk_br_68                                                   :BR 68 (Diesel)
 str_diesel_usa_amtrak_charger                                         :Amtrak Charger (Diesel)
 str_diesel_japan_jnr_df50                                             :JNR DF50 (Diesel)
+str_diesel_gabon_alsthom_ad30b                                        :Alsthom AD30B (Diesel)
 
 # METRO
 str_mtro_argentina_le_brugeoise                                       :Buenos Aires 'Le Brugeoise' (Metro, 3rd Rail)

@@ -2653,7 +2653,7 @@ item(FEAT_TRAINS, item_diesel_egypt_enr_2400_ge_es40aci, 5130) {}
 item(FEAT_TRAINS, item_diesel_uk_br_68, 5131) {}
 item(FEAT_TRAINS, item_diesel_south_africa_sar_afro_4000, 5132) {}
 item(FEAT_TRAINS, item_diesel_usa_amtrak_charger, 5133) {}
-// 5134 free
+item(FEAT_TRAINS, item_diesel_gabon_alsthom_ad30b, 5134) {}
 // 5135 free
 // 5136 free
 // 5137 free
