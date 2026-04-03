@@ -1,3 +1,5 @@
+from typing import Literal
+
 import pandas as pd
 import os
 import math
@@ -49,6 +51,17 @@ def is_true(val) -> bool:
     """ Checks if a value evals to true (ie is a string that says so, or 1, or just True)"""
     return (val == True or str(val).upper() == 'TRUE') or (val == 1)
 
+
+def get_badges(row: pd.Series) -> str:
+    # example: badges: ["type/bus", "power/diesel", "flag/flag_CC", "usage/city"];
+    # ok that's from a bus-nml but docu is s.it and can't find a better one.
+    power = row['ENGINE_CLASS'].lower()
+    if power == 'maglev':
+        power = 'electric'
+    return f"""
+        badges: ["power/{power}"];\n"""
+
+
 # --- Newton-Raphson Emulation (Matches NML SQRT) ---
 
 
@@ -56,16 +69,16 @@ def nml_sqrt(value) -> float:
     """
     Emulates the NML 'SQRTESTIMATE' macro using the Newton-Raphson method.
 
-    This function replicates the specific mathematical approximation used in 
-    legacy NML property files. It performs 3 iterations to converge on a 
-    square root value, matching the precision (or lack thereof) of the 
+    This function replicates the specific mathematical approximation used in
+    legacy NML property files. It performs 3 iterations to converge on a
+    square root value, matching the precision (or lack thereof) of the
     original Newton-Raphson implementation in the game's compilation process.
 
     Args:
         value (float/int): The radicand to calculate the square root for.
 
     Returns:
-        float: The approximated square root after 3 iterations. 
+        float: The approximated square root after 3 iterations.
                Returns 0 if the input is less than or equal to 0.
     """
     val = float(value)
@@ -79,24 +92,24 @@ def nml_sqrt(value) -> float:
     return guess
 
 
-def calculate_nml_cost(row, m, is_running_cost=False) -> float:
+def calculate_nml_cost(row: pd.Series, m, is_running_cost=False) -> float:
     """
     Universal cost calculator for Purchase and Running Cost properties.
 
-    This function handles the logic branching between 'Engine/MU' and 
-    'Coach/Wagon' cost formulas. It pulls multipliers (P1-P7 or R1-R6) 
+    This function handles the logic branching between 'Engine/MU' and
+    'Coach/Wagon' cost formulas. It pulls multipliers (P1-P7 or R1-R6)
     from the cost_lookup sheet and vehicle data from the properties sheet.
 
     Logic Branches:
-    1. COACH/WAGON: Uses 'PURCHASECOSTNONENGINEVALUE' logic where capacity 
+    1. COACH/WAGON: Uses 'PURCHASECOSTNONENGINEVALUE' logic where capacity
        is added linearly rather than using a square root complexity factor.
-    2. ENGINES/MU: Uses a complexity-based formula where Power and Capacity 
+    2. ENGINES/MU: Uses a complexity-based formula where Power and Capacity
        are processed through the nml_sqrt function.
 
     Args:
         row (pd.Series): A row from the merged 'master_df' containing vehicle specs.
         m (pd.Series): The row from 'cost_lookup' corresponding to the vehicle category.
-        is_running_cost (bool): If True, calculates 'running_cost_factor'. 
+        is_running_cost (bool): If True, calculates 'running_cost_factor'.
                                 If False, calculates 'cost_factor'.
 
     Returns:
@@ -145,7 +158,7 @@ def calculate_nml_cost(row, m, is_running_cost=False) -> float:
             return round(max(m.R1 * base, 1.0), 5)
 
 
-def get_climates(row) -> str:
+def get_climates(row: pd.Series) -> str:
     # 1. Define the Mapping (Excel Text -> NML Variable)
     region_map = {
         "AFRICA": "param_region_africa",
@@ -193,7 +206,7 @@ def get_climates(row) -> str:
     return f"climates_available: (({region1} || {region2}) && {concept}) ? ALL_CLIMATES : NO_CLIMATE;"
 
 
-def get_cargo_definitions(row) -> str:
+def get_cargo_definitions(row: pd.Series) -> str:
     """
     Translates the CARGODEF column into full NML cargo property strings.
     This replaces the need for an external cargorefits.pnml file.
@@ -327,7 +340,7 @@ def get_cargo_definitions(row) -> str:
 
 def parse_cargo_definitions(pnml_path):
     """
-    Parses cargorefits.pnml and returns a dictionary: 
+    Parses cargorefits.pnml and returns a dictionary:
     {'CARGODEF_CONTAINER': 'refittable_cargo_classes: ...', ...}
     """
     cargo_dict = {}
@@ -353,7 +366,7 @@ def parse_cargo_definitions(pnml_path):
     return cargo_dict
 
 
-def get_expanded_engine_capacity_switch(row) -> str:
+def get_expanded_engine_capacity_switch(row: pd.Series) -> str:
     # We use \\ to produce a single literal \ in the output
     # We use {{ }} to produce literal { } in the NML code
     cap = row['HEAD_CAPACITY']
@@ -367,7 +380,7 @@ def get_expanded_engine_capacity_switch(row) -> str:
     }}\n\n"""
 
 
-def get_expanded_wagon_capacity_switch(row) -> str:
+def get_expanded_wagon_capacity_switch(row: pd.Series) -> str:
     # We use \\ to produce a single literal \ in the output
     # We use {{ }} to produce literal { } in the NML code
     cap = row['WAGON_CAPACITY']
@@ -595,8 +608,10 @@ def generate_unified_items():
             f"        extra_power_per_wagon: {int(row['POWER_PER_WAGON'])};\n")
         content.append(
             f"        bitmask_vehicle_info: {row['BITMASK_VEHICLE_INFO']};\n")
-        content.append("    }\n")
 
+        # Badges (ignore for now)
+        # content.append(f"{get_badges(row)}\n")
+        content.append("    }\n")
         # Graphics selection/overrides
         content.append("    graphics {\n")
         cargo_capacity_defined = False

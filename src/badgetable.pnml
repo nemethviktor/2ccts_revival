@@ -1,0 +1,2393 @@
+
+//  Copyright (C) 2017 Transportman // V. Nemeth 2026+
+//  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
+
+
+badgetable {
+// Flags
+	"flag",
+	"flag/AF",
+	"flag/AX",
+	"flag/AL",
+	"flag/DZ",
+	"flag/AS",
+	"flag/AD",
+	"flag/AO",
+	"flag/AI",
+	"flag/AQ",
+	"flag/AG",
+	"flag/AR",
+	"flag/AM",
+	"flag/AW",
+	"flag/AU",
+	"flag/AT",
+	"flag/AZ",
+	"flag/BS",
+	"flag/BH",
+	"flag/BD",
+	"flag/BB",
+	"flag/BY",
+	"flag/BE",
+	"flag/BZ",
+	"flag/BJ",
+	"flag/BM",
+	"flag/BT",
+	"flag/BO",
+	"flag/BQ",
+	"flag/BA",
+	"flag/BW",
+	"flag/BV",
+	"flag/BR",
+	"flag/IO",
+	"flag/BN",
+	"flag/BG",
+	"flag/BF",
+	"flag/BI",
+	"flag/KH",
+	"flag/CM",
+	"flag/CA",
+	"flag/CV",
+	"flag/KY",
+	"flag/CF",
+	"flag/TD",
+	"flag/CL",
+	"flag/CN",
+	"flag/CX",
+	"flag/CC",
+	"flag/CO",
+	"flag/KM",
+	"flag/CG",
+	"flag/CD",
+	"flag/CK",
+	"flag/CR",
+	"flag/CI",
+	"flag/HR",
+	"flag/CU",
+	"flag/CW",
+	"flag/CY",
+	"flag/CZ",
+	"flag/DK",
+	"flag/DJ",
+	"flag/DM",
+	"flag/DO",
+	"flag/EC",
+	"flag/EG",
+	"flag/SV",
+	"flag/GQ",
+	"flag/ER",
+	"flag/EE",
+	"flag/ET",
+	"flag/FK",
+	"flag/FO",
+	"flag/FJ",
+	"flag/FI",
+	"flag/FR",
+	"flag/GF",
+	"flag/PF",
+	"flag/TF",
+	"flag/GA",
+	"flag/GM",
+	"flag/GE",
+	"flag/DE",
+	"flag/GH",
+	"flag/GI",
+	"flag/GR",
+	"flag/GL",
+	"flag/GD",
+	"flag/GP",
+	"flag/GU",
+	"flag/GT",
+	"flag/GG",
+	"flag/GN",
+	"flag/GW",
+	"flag/GY",
+	"flag/HT",
+	"flag/HM",
+	"flag/VA",
+	"flag/HN",
+	"flag/HK",
+	"flag/HU",
+	"flag/IS",
+	"flag/IN",
+	"flag/ID",
+	"flag/IR",
+	"flag/IQ",
+	"flag/IE",
+	"flag/IM",
+	"flag/IL",
+	"flag/IT",
+	"flag/JM",
+	"flag/JP",
+	"flag/JE",
+	"flag/JO",
+	"flag/KZ",
+	"flag/KE",
+	"flag/KI",
+	"flag/KP",
+	"flag/KR",
+	"flag/KW",
+	"flag/KG",
+	"flag/LA",
+	"flag/LV",
+	"flag/LB",
+	"flag/LS",
+	"flag/LR",
+	"flag/LY",
+	"flag/LI",
+	"flag/LT",
+	"flag/LU",
+	"flag/MO",
+	"flag/MK",
+	"flag/MG",
+	"flag/MW",
+	"flag/MY",
+	"flag/MV",
+	"flag/ML",
+	"flag/MT",
+	"flag/MH",
+	"flag/MQ",
+	"flag/MR",
+	"flag/MU",
+	"flag/YT",
+	"flag/MX",
+	"flag/FM",
+	"flag/MD",
+	"flag/MC",
+	"flag/MN",
+	"flag/ME",
+	"flag/MS",
+	"flag/MA",
+	"flag/MZ",
+	"flag/MM",
+	"flag/NA",
+	"flag/NR",
+	"flag/NP",
+	"flag/NL",
+	"flag/NC",
+	"flag/NZ",
+	"flag/NI",
+	"flag/NE",
+	"flag/NG",
+	"flag/NU",
+	"flag/NF",
+	"flag/MP",
+	"flag/NO",
+	"flag/OM",
+	"flag/PK",
+	"flag/PW",
+	"flag/PS",
+	"flag/PA",
+	"flag/PG",
+	"flag/PY",
+	"flag/PE",
+	"flag/PH",
+	"flag/PN",
+	"flag/PL",
+	"flag/PT",
+	"flag/PR",
+	"flag/QA",
+	"flag/RE",
+	"flag/RO",
+	"flag/RU",
+	"flag/RW",
+	"flag/BL",
+	"flag/SH",
+	"flag/KN",
+	"flag/LC",
+	"flag/MF",
+	"flag/PM",
+	"flag/VC",
+	"flag/WS",
+	"flag/SM",
+	"flag/ST",
+	"flag/SA",
+	"flag/SN",
+	"flag/RS",
+	"flag/SC",
+	"flag/SL",
+	"flag/SG",
+	"flag/SX",
+	"flag/SK",
+	"flag/SI",
+	"flag/SB",
+	"flag/SO",
+	"flag/ZA",
+	"flag/GS",
+	"flag/SS",
+	"flag/ES",
+	"flag/LK",
+	"flag/SD",
+	"flag/SR",
+	"flag/SJ",
+	"flag/SZ",
+	"flag/SE",
+	"flag/CH",
+	"flag/SY",
+	"flag/TW",
+	"flag/TJ",
+	"flag/TZ",
+	"flag/TH",
+	"flag/TL",
+	"flag/TG",
+	"flag/TK",
+	"flag/TO",
+	"flag/TT",
+	"flag/TN",
+	"flag/TR",
+	"flag/TM",
+	"flag/TC",
+	"flag/TV",
+	"flag/UG",
+	"flag/UA",
+	"flag/AE",
+	"flag/GB",
+	"flag/US",
+	"flag/UM",
+	"flag/UY",
+	"flag/UZ",
+	"flag/VU",
+	"flag/VE",
+	"flag/VN",
+	"flag/VG",
+	"flag/VI",
+	"flag/WF",
+	"flag/EH",
+	"flag/YE",
+	"flag/ZM",
+	"flag/ZW",
+	"flag/europe",
+
+// Powers
+	"power",
+	"power/diesel",
+	"power/electric",
+	"power/electric/ac",
+	"power/electric/dc",
+	"power/steam",
+	"power/turbine",
+
+// Regions
+	"region",
+	"region/africa",
+	"region/africa/eastern",
+	"region/africa/middle",
+	"region/africa/northern",
+	"region/africa/southern",
+	"region/africa/western",
+	"region/america",
+	"region/america/caribbean",
+	"region/america/central",
+	"region/america/northern",
+	"region/america/south",
+	"region/asia",
+	"region/asia/central",
+	"region/asia/eastern",
+	"region/asia/southeastern",
+	"region/asia/southern",
+	"region/asia/western",
+	"region/europe",
+	"region/europe/eastern",
+	"region/europe/northern",
+	"region/europe/southern",
+	"region/europe/western",
+	"region/oceania",
+	"region/oceania/australia_and_new_zealand",
+	"region/oceania/melanesia",
+	"region/oceania/micronesia",
+	"region/oceania/polynesia",
+
+// Roles
+	"role",
+	"role/banking",
+	"role/express_freight",
+	"role/express_passenger",
+	"role/freight",
+	"role/heavy_freight",
+	"role/light_freight",
+	"role/mail",
+	"role/mixed",
+	"role/passenger",
+	"role/prototype",
+	"role/restaurant_car",
+	"role/shunting",
+	"role/snowplough",
+	"role/utility",
+}
+
+// Flag Items
+	
+item (FEAT_BADGES, flag) {
+    property {
+        label: "flag";
+        name: string(STR_FLAG);
+	}}
+
+	
+item (FEAT_BADGES, flag_AF) {
+    property {
+        label: "flag/AF";
+        name: string(STR_FLAG_AF);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_AX) {
+    property {
+        label: "flag/AX";
+        name: string(STR_FLAG_AX);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_AL) {
+    property {
+        label: "flag/AL";
+        name: string(STR_FLAG_AL);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_DZ) {
+    property {
+        label: "flag/DZ";
+        name: string(STR_FLAG_DZ);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_AS) {
+    property {
+        label: "flag/AS";
+        name: string(STR_FLAG_AS);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_AD) {
+    property {
+        label: "flag/AD";
+        name: string(STR_FLAG_AD);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_AO) {
+    property {
+        label: "flag/AO";
+        name: string(STR_FLAG_AO);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_AI) {
+    property {
+        label: "flag/AI";
+        name: string(STR_FLAG_AI);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_AQ) {
+    property {
+        label: "flag/AQ";
+        name: string(STR_FLAG_AQ);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_AG) {
+    property {
+        label: "flag/AG";
+        name: string(STR_FLAG_AG);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_AR) {
+    property {
+        label: "flag/AR";
+        name: string(STR_FLAG_AR);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_AM) {
+    property {
+        label: "flag/AM";
+        name: string(STR_FLAG_AM);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_AW) {
+    property {
+        label: "flag/AW";
+        name: string(STR_FLAG_AW);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_AU) {
+    property {
+        label: "flag/AU";
+        name: string(STR_FLAG_AU);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_AT) {
+    property {
+        label: "flag/AT";
+        name: string(STR_FLAG_AT);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_AZ) {
+    property {
+        label: "flag/AZ";
+        name: string(STR_FLAG_AZ);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_BS) {
+    property {
+        label: "flag/BS";
+        name: string(STR_FLAG_BS);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_BH) {
+    property {
+        label: "flag/BH";
+        name: string(STR_FLAG_BH);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_BD) {
+    property {
+        label: "flag/BD";
+        name: string(STR_FLAG_BD);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_BB) {
+    property {
+        label: "flag/BB";
+        name: string(STR_FLAG_BB);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_BY) {
+    property {
+        label: "flag/BY";
+        name: string(STR_FLAG_BY);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_BE) {
+    property {
+        label: "flag/BE";
+        name: string(STR_FLAG_BE);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_BZ) {
+    property {
+        label: "flag/BZ";
+        name: string(STR_FLAG_BZ);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_BJ) {
+    property {
+        label: "flag/BJ";
+        name: string(STR_FLAG_BJ);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_BM) {
+    property {
+        label: "flag/BM";
+        name: string(STR_FLAG_BM);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_BT) {
+    property {
+        label: "flag/BT";
+        name: string(STR_FLAG_BT);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_BO) {
+    property {
+        label: "flag/BO";
+        name: string(STR_FLAG_BO);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_BQ) {
+    property {
+        label: "flag/BQ";
+        name: string(STR_FLAG_BQ);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_BA) {
+    property {
+        label: "flag/BA";
+        name: string(STR_FLAG_BA);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_BW) {
+    property {
+        label: "flag/BW";
+        name: string(STR_FLAG_BW);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_BV) {
+    property {
+        label: "flag/BV";
+        name: string(STR_FLAG_BV);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_BR) {
+    property {
+        label: "flag/BR";
+        name: string(STR_FLAG_BR);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_IO) {
+    property {
+        label: "flag/IO";
+        name: string(STR_FLAG_IO);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_BN) {
+    property {
+        label: "flag/BN";
+        name: string(STR_FLAG_BN);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_BG) {
+    property {
+        label: "flag/BG";
+        name: string(STR_FLAG_BG);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_BF) {
+    property {
+        label: "flag/BF";
+        name: string(STR_FLAG_BF);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_BI) {
+    property {
+        label: "flag/BI";
+        name: string(STR_FLAG_BI);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_KH) {
+    property {
+        label: "flag/KH";
+        name: string(STR_FLAG_KH);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_CM) {
+    property {
+        label: "flag/CM";
+        name: string(STR_FLAG_CM);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_CA) {
+    property {
+        label: "flag/CA";
+        name: string(STR_FLAG_CA);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_CV) {
+    property {
+        label: "flag/CV";
+        name: string(STR_FLAG_CV);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_KY) {
+    property {
+        label: "flag/KY";
+        name: string(STR_FLAG_KY);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_CF) {
+    property {
+        label: "flag/CF";
+        name: string(STR_FLAG_CF);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_TD) {
+    property {
+        label: "flag/TD";
+        name: string(STR_FLAG_TD);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_CL) {
+    property {
+        label: "flag/CL";
+        name: string(STR_FLAG_CL);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_CN) {
+    property {
+        label: "flag/CN";
+        name: string(STR_FLAG_CN);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_CX) {
+    property {
+        label: "flag/CX";
+        name: string(STR_FLAG_CX);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_CC) {
+    property {
+        label: "flag/CC";
+        name: string(STR_FLAG_CC);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_CO) {
+    property {
+        label: "flag/CO";
+        name: string(STR_FLAG_CO);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_KM) {
+    property {
+        label: "flag/KM";
+        name: string(STR_FLAG_KM);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_CG) {
+    property {
+        label: "flag/CG";
+        name: string(STR_FLAG_CG);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_CD) {
+    property {
+        label: "flag/CD";
+        name: string(STR_FLAG_CD);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_CK) {
+    property {
+        label: "flag/CK";
+        name: string(STR_FLAG_CK);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_CR) {
+    property {
+        label: "flag/CR";
+        name: string(STR_FLAG_CR);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_CI) {
+    property {
+        label: "flag/CI";
+        name: string(STR_FLAG_CI);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_HR) {
+    property {
+        label: "flag/HR";
+        name: string(STR_FLAG_HR);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_CU) {
+    property {
+        label: "flag/CU";
+        name: string(STR_FLAG_CU);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_CW) {
+    property {
+        label: "flag/CW";
+        name: string(STR_FLAG_CW);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_CY) {
+    property {
+        label: "flag/CY";
+        name: string(STR_FLAG_CY);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_CZ) {
+    property {
+        label: "flag/CZ";
+        name: string(STR_FLAG_CZ);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_DK) {
+    property {
+        label: "flag/DK";
+        name: string(STR_FLAG_DK);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_DJ) {
+    property {
+        label: "flag/DJ";
+        name: string(STR_FLAG_DJ);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_DM) {
+    property {
+        label: "flag/DM";
+        name: string(STR_FLAG_DM);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_DO) {
+    property {
+        label: "flag/DO";
+        name: string(STR_FLAG_DO);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_EC) {
+    property {
+        label: "flag/EC";
+        name: string(STR_FLAG_EC);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_EG) {
+    property {
+        label: "flag/EG";
+        name: string(STR_FLAG_EG);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_SV) {
+    property {
+        label: "flag/SV";
+        name: string(STR_FLAG_SV);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_GQ) {
+    property {
+        label: "flag/GQ";
+        name: string(STR_FLAG_GQ);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_ER) {
+    property {
+        label: "flag/ER";
+        name: string(STR_FLAG_ER);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_EE) {
+    property {
+        label: "flag/EE";
+        name: string(STR_FLAG_EE);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_ET) {
+    property {
+        label: "flag/ET";
+        name: string(STR_FLAG_ET);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_FK) {
+    property {
+        label: "flag/FK";
+        name: string(STR_FLAG_FK);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_FO) {
+    property {
+        label: "flag/FO";
+        name: string(STR_FLAG_FO);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_FJ) {
+    property {
+        label: "flag/FJ";
+        name: string(STR_FLAG_FJ);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_FI) {
+    property {
+        label: "flag/FI";
+        name: string(STR_FLAG_FI);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_FR) {
+    property {
+        label: "flag/FR";
+        name: string(STR_FLAG_FR);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_GF) {
+    property {
+        label: "flag/GF";
+        name: string(STR_FLAG_GF);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_PF) {
+    property {
+        label: "flag/PF";
+        name: string(STR_FLAG_PF);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_TF) {
+    property {
+        label: "flag/TF";
+        name: string(STR_FLAG_TF);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_GA) {
+    property {
+        label: "flag/GA";
+        name: string(STR_FLAG_GA);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_GM) {
+    property {
+        label: "flag/GM";
+        name: string(STR_FLAG_GM);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_GE) {
+    property {
+        label: "flag/GE";
+        name: string(STR_FLAG_GE);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_DE) {
+    property {
+        label: "flag/DE";
+        name: string(STR_FLAG_DE);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_GH) {
+    property {
+        label: "flag/GH";
+        name: string(STR_FLAG_GH);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_GI) {
+    property {
+        label: "flag/GI";
+        name: string(STR_FLAG_GI);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_GR) {
+    property {
+        label: "flag/GR";
+        name: string(STR_FLAG_GR);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_GL) {
+    property {
+        label: "flag/GL";
+        name: string(STR_FLAG_GL);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_GD) {
+    property {
+        label: "flag/GD";
+        name: string(STR_FLAG_GD);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_GP) {
+    property {
+        label: "flag/GP";
+        name: string(STR_FLAG_GP);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_GU) {
+    property {
+        label: "flag/GU";
+        name: string(STR_FLAG_GU);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_GT) {
+    property {
+        label: "flag/GT";
+        name: string(STR_FLAG_GT);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_GG) {
+    property {
+        label: "flag/GG";
+        name: string(STR_FLAG_GG);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_GN) {
+    property {
+        label: "flag/GN";
+        name: string(STR_FLAG_GN);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_GW) {
+    property {
+        label: "flag/GW";
+        name: string(STR_FLAG_GW);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_GY) {
+    property {
+        label: "flag/GY";
+        name: string(STR_FLAG_GY);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_HT) {
+    property {
+        label: "flag/HT";
+        name: string(STR_FLAG_HT);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_HM) {
+    property {
+        label: "flag/HM";
+        name: string(STR_FLAG_HM);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_VA) {
+    property {
+        label: "flag/VA";
+        name: string(STR_FLAG_VA);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_HN) {
+    property {
+        label: "flag/HN";
+        name: string(STR_FLAG_HN);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_HK) {
+    property {
+        label: "flag/HK";
+        name: string(STR_FLAG_HK);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_HU) {
+    property {
+        label: "flag/HU";
+        name: string(STR_FLAG_HU);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_IS) {
+    property {
+        label: "flag/IS";
+        name: string(STR_FLAG_IS);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_IN) {
+    property {
+        label: "flag/IN";
+        name: string(STR_FLAG_IN);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_ID) {
+    property {
+        label: "flag/ID";
+        name: string(STR_FLAG_ID);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_IR) {
+    property {
+        label: "flag/IR";
+        name: string(STR_FLAG_IR);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_IQ) {
+    property {
+        label: "flag/IQ";
+        name: string(STR_FLAG_IQ);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_IE) {
+    property {
+        label: "flag/IE";
+        name: string(STR_FLAG_IE);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_IM) {
+    property {
+        label: "flag/IM";
+        name: string(STR_FLAG_IM);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_IL) {
+    property {
+        label: "flag/IL";
+        name: string(STR_FLAG_IL);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_IT) {
+    property {
+        label: "flag/IT";
+        name: string(STR_FLAG_IT);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_JM) {
+    property {
+        label: "flag/JM";
+        name: string(STR_FLAG_JM);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_JP) {
+    property {
+        label: "flag/JP";
+        name: string(STR_FLAG_JP);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_JE) {
+    property {
+        label: "flag/JE";
+        name: string(STR_FLAG_JE);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_JO) {
+    property {
+        label: "flag/JO";
+        name: string(STR_FLAG_JO);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_KZ) {
+    property {
+        label: "flag/KZ";
+        name: string(STR_FLAG_KZ);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_KE) {
+    property {
+        label: "flag/KE";
+        name: string(STR_FLAG_KE);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_KI) {
+    property {
+        label: "flag/KI";
+        name: string(STR_FLAG_KI);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_KP) {
+    property {
+        label: "flag/KP";
+        name: string(STR_FLAG_KP);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_KR) {
+    property {
+        label: "flag/KR";
+        name: string(STR_FLAG_KR);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_KW) {
+    property {
+        label: "flag/KW";
+        name: string(STR_FLAG_KW);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_KG) {
+    property {
+        label: "flag/KG";
+        name: string(STR_FLAG_KG);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_LA) {
+    property {
+        label: "flag/LA";
+        name: string(STR_FLAG_LA);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_LV) {
+    property {
+        label: "flag/LV";
+        name: string(STR_FLAG_LV);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_LB) {
+    property {
+        label: "flag/LB";
+        name: string(STR_FLAG_LB);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_LS) {
+    property {
+        label: "flag/LS";
+        name: string(STR_FLAG_LS);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_LR) {
+    property {
+        label: "flag/LR";
+        name: string(STR_FLAG_LR);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_LY) {
+    property {
+        label: "flag/LY";
+        name: string(STR_FLAG_LY);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_LI) {
+    property {
+        label: "flag/LI";
+        name: string(STR_FLAG_LI);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_LT) {
+    property {
+        label: "flag/LT";
+        name: string(STR_FLAG_LT);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_LU) {
+    property {
+        label: "flag/LU";
+        name: string(STR_FLAG_LU);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_MO) {
+    property {
+        label: "flag/MO";
+        name: string(STR_FLAG_MO);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_MK) {
+    property {
+        label: "flag/MK";
+        name: string(STR_FLAG_MK);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_MG) {
+    property {
+        label: "flag/MG";
+        name: string(STR_FLAG_MG);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_MW) {
+    property {
+        label: "flag/MW";
+        name: string(STR_FLAG_MW);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_MY) {
+    property {
+        label: "flag/MY";
+        name: string(STR_FLAG_MY);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_MV) {
+    property {
+        label: "flag/MV";
+        name: string(STR_FLAG_MV);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_ML) {
+    property {
+        label: "flag/ML";
+        name: string(STR_FLAG_ML);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_MT) {
+    property {
+        label: "flag/MT";
+        name: string(STR_FLAG_MT);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_MH) {
+    property {
+        label: "flag/MH";
+        name: string(STR_FLAG_MH);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_MQ) {
+    property {
+        label: "flag/MQ";
+        name: string(STR_FLAG_MQ);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_MR) {
+    property {
+        label: "flag/MR";
+        name: string(STR_FLAG_MR);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_MU) {
+    property {
+        label: "flag/MU";
+        name: string(STR_FLAG_MU);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_YT) {
+    property {
+        label: "flag/YT";
+        name: string(STR_FLAG_YT);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_MX) {
+    property {
+        label: "flag/MX";
+        name: string(STR_FLAG_MX);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_FM) {
+    property {
+        label: "flag/FM";
+        name: string(STR_FLAG_FM);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_MD) {
+    property {
+        label: "flag/MD";
+        name: string(STR_FLAG_MD);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_MC) {
+    property {
+        label: "flag/MC";
+        name: string(STR_FLAG_MC);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_MN) {
+    property {
+        label: "flag/MN";
+        name: string(STR_FLAG_MN);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_ME) {
+    property {
+        label: "flag/ME";
+        name: string(STR_FLAG_ME);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_MS) {
+    property {
+        label: "flag/MS";
+        name: string(STR_FLAG_MS);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_MA) {
+    property {
+        label: "flag/MA";
+        name: string(STR_FLAG_MA);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_MZ) {
+    property {
+        label: "flag/MZ";
+        name: string(STR_FLAG_MZ);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_MM) {
+    property {
+        label: "flag/MM";
+        name: string(STR_FLAG_MM);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_NA) {
+    property {
+        label: "flag/NA";
+        name: string(STR_FLAG_NA);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_NR) {
+    property {
+        label: "flag/NR";
+        name: string(STR_FLAG_NR);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_NP) {
+    property {
+        label: "flag/NP";
+        name: string(STR_FLAG_NP);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_NL) {
+    property {
+        label: "flag/NL";
+        name: string(STR_FLAG_NL);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_NC) {
+    property {
+        label: "flag/NC";
+        name: string(STR_FLAG_NC);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_NZ) {
+    property {
+        label: "flag/NZ";
+        name: string(STR_FLAG_NZ);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_NI) {
+    property {
+        label: "flag/NI";
+        name: string(STR_FLAG_NI);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_NE) {
+    property {
+        label: "flag/NE";
+        name: string(STR_FLAG_NE);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_NG) {
+    property {
+        label: "flag/NG";
+        name: string(STR_FLAG_NG);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_NU) {
+    property {
+        label: "flag/NU";
+        name: string(STR_FLAG_NU);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_NF) {
+    property {
+        label: "flag/NF";
+        name: string(STR_FLAG_NF);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_MP) {
+    property {
+        label: "flag/MP";
+        name: string(STR_FLAG_MP);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_NO) {
+    property {
+        label: "flag/NO";
+        name: string(STR_FLAG_NO);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_OM) {
+    property {
+        label: "flag/OM";
+        name: string(STR_FLAG_OM);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_PK) {
+    property {
+        label: "flag/PK";
+        name: string(STR_FLAG_PK);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_PW) {
+    property {
+        label: "flag/PW";
+        name: string(STR_FLAG_PW);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_PS) {
+    property {
+        label: "flag/PS";
+        name: string(STR_FLAG_PS);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_PA) {
+    property {
+        label: "flag/PA";
+        name: string(STR_FLAG_PA);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_PG) {
+    property {
+        label: "flag/PG";
+        name: string(STR_FLAG_PG);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_PY) {
+    property {
+        label: "flag/PY";
+        name: string(STR_FLAG_PY);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_PE) {
+    property {
+        label: "flag/PE";
+        name: string(STR_FLAG_PE);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_PH) {
+    property {
+        label: "flag/PH";
+        name: string(STR_FLAG_PH);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_PN) {
+    property {
+        label: "flag/PN";
+        name: string(STR_FLAG_PN);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_PL) {
+    property {
+        label: "flag/PL";
+        name: string(STR_FLAG_PL);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_PT) {
+    property {
+        label: "flag/PT";
+        name: string(STR_FLAG_PT);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_PR) {
+    property {
+        label: "flag/PR";
+        name: string(STR_FLAG_PR);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_QA) {
+    property {
+        label: "flag/QA";
+        name: string(STR_FLAG_QA);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_RE) {
+    property {
+        label: "flag/RE";
+        name: string(STR_FLAG_RE);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_RO) {
+    property {
+        label: "flag/RO";
+        name: string(STR_FLAG_RO);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_RU) {
+    property {
+        label: "flag/RU";
+        name: string(STR_FLAG_RU);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_RW) {
+    property {
+        label: "flag/RW";
+        name: string(STR_FLAG_RW);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_BL) {
+    property {
+        label: "flag/BL";
+        name: string(STR_FLAG_BL);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_SH) {
+    property {
+        label: "flag/SH";
+        name: string(STR_FLAG_SH);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_KN) {
+    property {
+        label: "flag/KN";
+        name: string(STR_FLAG_KN);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_LC) {
+    property {
+        label: "flag/LC";
+        name: string(STR_FLAG_LC);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_MF) {
+    property {
+        label: "flag/MF";
+        name: string(STR_FLAG_MF);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_PM) {
+    property {
+        label: "flag/PM";
+        name: string(STR_FLAG_PM);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_VC) {
+    property {
+        label: "flag/VC";
+        name: string(STR_FLAG_VC);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_WS) {
+    property {
+        label: "flag/WS";
+        name: string(STR_FLAG_WS);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_SM) {
+    property {
+        label: "flag/SM";
+        name: string(STR_FLAG_SM);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_ST) {
+    property {
+        label: "flag/ST";
+        name: string(STR_FLAG_ST);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_SA) {
+    property {
+        label: "flag/SA";
+        name: string(STR_FLAG_SA);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_SN) {
+    property {
+        label: "flag/SN";
+        name: string(STR_FLAG_SN);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_RS) {
+    property {
+        label: "flag/RS";
+        name: string(STR_FLAG_RS);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_SC) {
+    property {
+        label: "flag/SC";
+        name: string(STR_FLAG_SC);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_SL) {
+    property {
+        label: "flag/SL";
+        name: string(STR_FLAG_SL);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_SG) {
+    property {
+        label: "flag/SG";
+        name: string(STR_FLAG_SG);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_SX) {
+    property {
+        label: "flag/SX";
+        name: string(STR_FLAG_SX);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_SK) {
+    property {
+        label: "flag/SK";
+        name: string(STR_FLAG_SK);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_SI) {
+    property {
+        label: "flag/SI";
+        name: string(STR_FLAG_SI);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_SB) {
+    property {
+        label: "flag/SB";
+        name: string(STR_FLAG_SB);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_SO) {
+    property {
+        label: "flag/SO";
+        name: string(STR_FLAG_SO);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_ZA) {
+    property {
+        label: "flag/ZA";
+        name: string(STR_FLAG_ZA);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_GS) {
+    property {
+        label: "flag/GS";
+        name: string(STR_FLAG_GS);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_SS) {
+    property {
+        label: "flag/SS";
+        name: string(STR_FLAG_SS);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_ES) {
+    property {
+        label: "flag/ES";
+        name: string(STR_FLAG_ES);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_LK) {
+    property {
+        label: "flag/LK";
+        name: string(STR_FLAG_LK);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_SD) {
+    property {
+        label: "flag/SD";
+        name: string(STR_FLAG_SD);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_SR) {
+    property {
+        label: "flag/SR";
+        name: string(STR_FLAG_SR);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_SJ) {
+    property {
+        label: "flag/SJ";
+        name: string(STR_FLAG_SJ);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_SZ) {
+    property {
+        label: "flag/SZ";
+        name: string(STR_FLAG_SZ);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_SE) {
+    property {
+        label: "flag/SE";
+        name: string(STR_FLAG_SE);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_CH) {
+    property {
+        label: "flag/CH";
+        name: string(STR_FLAG_CH);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_SY) {
+    property {
+        label: "flag/SY";
+        name: string(STR_FLAG_SY);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_TW) {
+    property {
+        label: "flag/TW";
+        name: string(STR_FLAG_TW);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_TJ) {
+    property {
+        label: "flag/TJ";
+        name: string(STR_FLAG_TJ);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_TZ) {
+    property {
+        label: "flag/TZ";
+        name: string(STR_FLAG_TZ);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_TH) {
+    property {
+        label: "flag/TH";
+        name: string(STR_FLAG_TH);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_TL) {
+    property {
+        label: "flag/TL";
+        name: string(STR_FLAG_TL);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_TG) {
+    property {
+        label: "flag/TG";
+        name: string(STR_FLAG_TG);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_TK) {
+    property {
+        label: "flag/TK";
+        name: string(STR_FLAG_TK);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_TO) {
+    property {
+        label: "flag/TO";
+        name: string(STR_FLAG_TO);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_TT) {
+    property {
+        label: "flag/TT";
+        name: string(STR_FLAG_TT);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_TN) {
+    property {
+        label: "flag/TN";
+        name: string(STR_FLAG_TN);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_TR) {
+    property {
+        label: "flag/TR";
+        name: string(STR_FLAG_TR);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_TM) {
+    property {
+        label: "flag/TM";
+        name: string(STR_FLAG_TM);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_TC) {
+    property {
+        label: "flag/TC";
+        name: string(STR_FLAG_TC);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_TV) {
+    property {
+        label: "flag/TV";
+        name: string(STR_FLAG_TV);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_UG) {
+    property {
+        label: "flag/UG";
+        name: string(STR_FLAG_UG);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_UA) {
+    property {
+        label: "flag/UA";
+        name: string(STR_FLAG_UA);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_AE) {
+    property {
+        label: "flag/AE";
+        name: string(STR_FLAG_AE);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_GB) {
+    property {
+        label: "flag/GB";
+        name: string(STR_FLAG_GB);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_US) {
+    property {
+        label: "flag/US";
+        name: string(STR_FLAG_US);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_UM) {
+    property {
+        label: "flag/UM";
+        name: string(STR_FLAG_UM);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_UY) {
+    property {
+        label: "flag/UY";
+        name: string(STR_FLAG_UY);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_UZ) {
+    property {
+        label: "flag/UZ";
+        name: string(STR_FLAG_UZ);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_VU) {
+    property {
+        label: "flag/VU";
+        name: string(STR_FLAG_VU);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_VE) {
+    property {
+        label: "flag/VE";
+        name: string(STR_FLAG_VE);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_VN) {
+    property {
+        label: "flag/VN";
+        name: string(STR_FLAG_VN);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_VG) {
+    property {
+        label: "flag/VG";
+        name: string(STR_FLAG_VG);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_VI) {
+    property {
+        label: "flag/VI";
+        name: string(STR_FLAG_VI);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_WF) {
+    property {
+        label: "flag/WF";
+        name: string(STR_FLAG_WF);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_EH) {
+    property {
+        label: "flag/EH";
+        name: string(STR_FLAG_EH);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_YE) {
+    property {
+        label: "flag/YE";
+        name: string(STR_FLAG_YE);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_ZM) {
+    property {
+        label: "flag/ZM";
+        name: string(STR_FLAG_ZM);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_ZW) {
+    property {
+        label: "flag/ZW";
+        name: string(STR_FLAG_ZW);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, flag_europe) {
+    property {
+        label: "flag/europe";
+        name: string(STR_FLAG_EUROPE);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+
+// Powers
+	
+item (FEAT_BADGES, power) {
+    property {
+        label: "power";
+        name: string(STR_POWER);
+	}}
+
+	
+item (FEAT_BADGES, power_diesel) {
+    property {
+        label: "power/diesel";
+        name: string(STR_POWER_DIESEL);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}
+	graphics {default: sprite_diesel;}
+}
+
+	
+item (FEAT_BADGES, power_electric) {
+    property {
+        label: "power/electric";
+        name: string(STR_POWER_ELECTRIC);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}
+	graphics {default: sprite_electric;}
+}
+
+	
+item (FEAT_BADGES, power_electric_ac) {
+    property {
+        label: "power/electric/ac";
+        name: string(STR_POWER_ELECTRIC_AC);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}
+	graphics {default: sprite_electric_ac;}
+}
+
+	
+item (FEAT_BADGES, power_electric_dc) {
+    property {
+        label: "power/electric/dc";
+        name: string(STR_POWER_ELECTRIC_DC);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}
+	graphics {default: sprite_electric_dc;}
+}
+
+	
+item (FEAT_BADGES, power_steam) {
+    property {
+        label: "power/steam";
+        name: string(STR_POWER_STEAM);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}
+	graphics {default: sprite_steam;}
+}
+
+	
+item (FEAT_BADGES, power_turbine) {
+    property {
+        label: "power/turbine";
+        name: string(STR_POWER_TURBINE);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}
+	graphics {default: sprite_turbine;}
+}
+

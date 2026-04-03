@@ -2,14 +2,15 @@ import pandas as pd
 import os
 import warnings
 import shutil
-    
+
 
 # Silence openpyxl warnings
 warnings.filterwarnings("ignore", category=UserWarning, module="openpyxl")
 
+
 def generate_master_pnml():
     print("--- Starting Master PNML Generation ---")
-    
+
     script_dir = os.path.dirname(os.path.abspath(__file__))
     project_root = os.path.dirname(script_dir)
     excel_path = os.path.join(script_dir, 'vehicle_report.xlsx')
@@ -24,20 +25,21 @@ def generate_master_pnml():
         return
 
     # 1. Prepare Copyright
-    header_text = str(df_copyright.columns[0]) if "Unnamed" not in str(df_copyright.columns[0]) else ""
+    header_text = str(df_copyright.columns[0]) if "Unnamed" not in str(
+        df_copyright.columns[0]) else ""
     if not df_copyright.empty:
         data_text = str(df_copyright.iloc[0, 0])
         raw_copyright = data_text if header_text == "" else f"{header_text}\n{data_text}"
     else:
         raw_copyright = header_text
-    
+
     content = [f"\n{raw_copyright}\n\n\n"]
 
     # 2. Restored GRF HEADER Boilerplate
     content.append("//// ------------------------------------\n")
     content.append("//// GRF HEADER\n")
     content.append("//// ------------------------------------\n\n")
-    
+
     boilerplate = [
         ("// Regions have to come first", 'src/regions.pnml'),
         ("// Define grf", 'src/header.pnml'),
@@ -49,6 +51,7 @@ def generate_master_pnml():
         ("// Can (not) attach vehcile", 'src/wagon_attach.pnml'),
         ("// Capacities", 'src/capacities.pnml'),
         ("// Rail types", 'src/railtypetable.pnml'),
+        # ("// Badges", 'src/badgetable.pnml'),
         ("// Purchase text switch", 'src/purchasetext.pnml'),
         ("// Cleanup", 'src/undefine_properties.pnml')
     ]
@@ -68,7 +71,7 @@ def generate_master_pnml():
 
     for _, row in df_control.iterrows():
         folder_path = str(row['SAVE_TO']).replace('\\', '/')
-        
+
         # Logic to insert section headers based on folder path
         # This mimics the "Broad Gauge", "15KV AC" type headers in the original file
         group_label = folder_path.replace('src/', '').replace('/', ' - ')
@@ -77,7 +80,7 @@ def generate_master_pnml():
             current_group = group_label
 
         base_name = row['FILENAMES_EXPECTED']
-        
+
         # The mandatory 2-file sequence
         content.append(f'#include "{folder_path}/{base_name}_graphics.pnml"\n')
         content.append(f'#include "{folder_path}/{base_name}_item.pnml"\n\n')
@@ -92,9 +95,10 @@ def generate_master_pnml():
         print(f"Success! Master file generated: {output_path}")
     except Exception as e:
         print(f"Error writing: {e}")
-    
+
     # 5 Delete cache
     shutil.rmtree(project_root + '/.nmlcache', ignore_errors=True)
+
 
 if __name__ == "__main__":
     generate_master_pnml()
