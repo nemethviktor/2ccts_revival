@@ -105,10 +105,14 @@ spriteset(spriteset_mu_wagon_gen3_open_wagon_grain_l1_s2, "gfx/wagons/gen3/wagon
 spriteset(spriteset_mu_wagon_gen3_open_wagon_grain_l1_s3, "gfx/wagons/gen3/wagon_gen3_open_wagon_grain.png") {template_2cc_wagons(1, 64)}
 
 
+/// LIVERY 1   LOADING STATE 4   GRAIN
+spriteset(spriteset_mu_wagon_gen3_open_wagon_grain_l1_s4, "gfx/wagons/gen3/wagon_gen3_open_wagon_grain.png") {template_2cc_wagons(1, 96)}
+
+
 /// LIVERY 1 SPRITEGROUP - GRAIN
 spritegroup spritegroup_mu_wagon_gen3_open_wagon_grain_l1 {
-    loading: [spriteset_mu_wagon_gen3_open_wagon_grain_l1_s1, spriteset_mu_wagon_gen3_open_wagon_grain_l1_s2];
-    loaded: [spriteset_mu_wagon_gen3_open_wagon_grain_l1_s1, spriteset_mu_wagon_gen3_open_wagon_grain_l1_s3, spriteset_mu_wagon_gen3_open_wagon_grain_l1_s3];
+    loading: [spriteset_mu_wagon_gen3_open_wagon_grain_l1_s1, spriteset_mu_wagon_gen3_open_wagon_grain_l1_s2, spriteset_mu_wagon_gen3_open_wagon_grain_l1_s3];
+    loaded: [spriteset_mu_wagon_gen3_open_wagon_grain_l1_s1, spriteset_mu_wagon_gen3_open_wagon_grain_l1_s4, spriteset_mu_wagon_gen3_open_wagon_grain_l1_s4];
 }
 
 /// LIVERY 2   LOADING STATE 1   GRAIN
@@ -123,10 +127,14 @@ spriteset(spriteset_mu_wagon_gen3_open_wagon_grain_l2_s2, "gfx/wagons/gen3/wagon
 spriteset(spriteset_mu_wagon_gen3_open_wagon_grain_l2_s3, "gfx/wagons/gen3/wagon_gen3_open_wagon_grain.png") {template_2cc_wagons(179, 64)}
 
 
+/// LIVERY 2   LOADING STATE 4   GRAIN
+spriteset(spriteset_mu_wagon_gen3_open_wagon_grain_l2_s4, "gfx/wagons/gen3/wagon_gen3_open_wagon_grain.png") {template_2cc_wagons(179, 96)}
+
+
 /// LIVERY 2 SPRITEGROUP - GRAIN
 spritegroup spritegroup_mu_wagon_gen3_open_wagon_grain_l2 {
-    loading: [spriteset_mu_wagon_gen3_open_wagon_grain_l2_s1, spriteset_mu_wagon_gen3_open_wagon_grain_l2_s2];
-    loaded: [spriteset_mu_wagon_gen3_open_wagon_grain_l2_s1, spriteset_mu_wagon_gen3_open_wagon_grain_l2_s3, spriteset_mu_wagon_gen3_open_wagon_grain_l2_s3];
+    loading: [spriteset_mu_wagon_gen3_open_wagon_grain_l2_s1, spriteset_mu_wagon_gen3_open_wagon_grain_l2_s2, spriteset_mu_wagon_gen3_open_wagon_grain_l2_s3];
+    loaded: [spriteset_mu_wagon_gen3_open_wagon_grain_l2_s1, spriteset_mu_wagon_gen3_open_wagon_grain_l2_s4, spriteset_mu_wagon_gen3_open_wagon_grain_l2_s4];
 }
 
 /// LIVERY 3   LOADING STATE 1   GRAIN
@@ -141,10 +149,14 @@ spriteset(spriteset_mu_wagon_gen3_open_wagon_grain_l3_s2, "gfx/wagons/gen3/wagon
 spriteset(spriteset_mu_wagon_gen3_open_wagon_grain_l3_s3, "gfx/wagons/gen3/wagon_gen3_open_wagon_grain.png") {template_2cc_wagons(357, 64)}
 
 
+/// LIVERY 3   LOADING STATE 4   GRAIN
+spriteset(spriteset_mu_wagon_gen3_open_wagon_grain_l3_s4, "gfx/wagons/gen3/wagon_gen3_open_wagon_grain.png") {template_2cc_wagons(357, 96)}
+
+
 /// LIVERY 3 SPRITEGROUP - GRAIN
 spritegroup spritegroup_mu_wagon_gen3_open_wagon_grain_l3 {
-    loading: [spriteset_mu_wagon_gen3_open_wagon_grain_l3_s1, spriteset_mu_wagon_gen3_open_wagon_grain_l3_s2];
-    loaded: [spriteset_mu_wagon_gen3_open_wagon_grain_l3_s1, spriteset_mu_wagon_gen3_open_wagon_grain_l3_s3, spriteset_mu_wagon_gen3_open_wagon_grain_l3_s3];
+    loading: [spriteset_mu_wagon_gen3_open_wagon_grain_l3_s1, spriteset_mu_wagon_gen3_open_wagon_grain_l3_s2, spriteset_mu_wagon_gen3_open_wagon_grain_l3_s3];
+    loaded: [spriteset_mu_wagon_gen3_open_wagon_grain_l3_s1, spriteset_mu_wagon_gen3_open_wagon_grain_l3_s4, spriteset_mu_wagon_gen3_open_wagon_grain_l3_s4];
 }
 
 /// LIVERY 4   LOADING STATE 1   GRAIN
@@ -159,10 +171,14 @@ spriteset(spriteset_mu_wagon_gen3_open_wagon_grain_l4_s2, "gfx/wagons/gen3/wagon
 spriteset(spriteset_mu_wagon_gen3_open_wagon_grain_l4_s3, "gfx/wagons/gen3/wagon_gen3_open_wagon_grain.png") {template_2cc_wagons(535, 64)}
 
 
+/// LIVERY 4   LOADING STATE 4   GRAIN
+spriteset(spriteset_mu_wagon_gen3_open_wagon_grain_l4_s4, "gfx/wagons/gen3/wagon_gen3_open_wagon_grain.png") {template_2cc_wagons(535, 96)}
+
+
 /// LIVERY 4 SPRITEGROUP - GRAIN
 spritegroup spritegroup_mu_wagon_gen3_open_wagon_grain_l4 {
-    loading: [spriteset_mu_wagon_gen3_open_wagon_grain_l4_s1, spriteset_mu_wagon_gen3_open_wagon_grain_l4_s2];
-    loaded: [spriteset_mu_wagon_gen3_open_wagon_grain_l4_s1, spriteset_mu_wagon_gen3_open_wagon_grain_l4_s3, spriteset_mu_wagon_gen3_open_wagon_grain_l4_s3];
+    loading: [spriteset_mu_wagon_gen3_open_wagon_grain_l4_s1, spriteset_mu_wagon_gen3_open_wagon_grain_l4_s2, spriteset_mu_wagon_gen3_open_wagon_grain_l4_s3];
+    loaded: [spriteset_mu_wagon_gen3_open_wagon_grain_l4_s1, spriteset_mu_wagon_gen3_open_wagon_grain_l4_s4, spriteset_mu_wagon_gen3_open_wagon_grain_l4_s4];
 }
 
 // Random Livery Selector for grain

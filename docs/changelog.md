@@ -4,6 +4,7 @@
 **3.3-beta3 [202604xx]**
 - CODE CHANGES:
 	- Added template `TPL_03G` (12-len steam w tender)
+	- Fix "Driving State S4" logic not working correctly
 - VEHICLES CHANGES:
 	- Reclassified `USA_UP_4000_Big_Boy` as template `TPL_03G`
 

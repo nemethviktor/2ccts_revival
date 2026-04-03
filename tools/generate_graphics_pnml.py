@@ -1211,7 +1211,7 @@ def get_tpl_04(vid, gfx_path, row, template_amendment_code):
     has_loading_states = template_amendment_code in [
         'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q']
     has_driving_states = template_amendment_code in ['L', 'N', 'Q']
-    cargo_with_driving_state = ['Grain']
+    cargo_with_driving_state = ['grain']
     states = {1: 1}
     if has_loading_states:
         states = {1: 1, 2: 32, 3: 64}
@@ -1236,7 +1236,7 @@ def get_tpl_04(vid, gfx_path, row, template_amendment_code):
                     # We cut the loop here if it's not a real 'Driving State' situation
                     continue
 
-                s_suffix = ""
+                s_suffix: str = ""
                 s_suffix += f"{cargo_string}" if not cargo_string_is_dummy else ""
                 s_suffix += f"{'_' if not cargo_string_is_dummy else ''}L{livery_num}"
                 s_suffix += f"_s{state_num}" if has_loading_states else ""
