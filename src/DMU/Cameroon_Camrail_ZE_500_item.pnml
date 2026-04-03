@@ -29,13 +29,13 @@ item(FEAT_TRAINS, item_dmu_cameroon_camrail_ze_500) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 28.76977;
-        running_cost_factor: 24.57492;
+        cost_factor: 28.06269;
+        running_cost_factor: 23.86784;
         speed: 90 km/h;
-        power: 400 hp;
+        power: 376 hp;
         cargo_capacity: 62;
         weight: 38 ton;
-        tractive_effort_coefficient: 0.22;
+        tractive_effort_coefficient: 0.12;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -77,11 +77,11 @@ item(FEAT_TRAINS, item_dmu_cameroon_camrail_ze_500) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(19.360718154932407));
-        power: int(400*1/2);
+        running_cost_factor: (round(15.500009896610251));
+        power: int(376*1/2);
         weight: int(38*3/4);
         cargo_capacity: 62;
-        tractive_effort_coefficient: int(0.22*10*38);
+        tractive_effort_coefficient: int(0.12*10*38);
         length: 8;
         default: switch_dmu_cameroon_camrail_ze_500_cargo_selection;
     }
