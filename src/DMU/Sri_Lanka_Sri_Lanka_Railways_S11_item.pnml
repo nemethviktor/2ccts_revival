@@ -54,6 +54,9 @@ item(FEAT_TRAINS, item_dmu_sri_lanka_sri_lanka_railways_s11) {
         length: 8;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+
+badges: ["power/diesel"];
+
     }
     graphics {
         purchase: spriteset_dmu_sri_lanka_sri_lanka_railways_s11_purchase;

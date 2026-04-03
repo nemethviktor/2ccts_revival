@@ -39,6 +39,9 @@ item(FEAT_TRAINS, item_diesel_brazil_efcb_alco_rs_3) {
         length: 7;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+
+badges: ["power/diesel", "flag/BR"];
+
     }
     graphics {
         purchase: spriteset_diesel_brazil_efcb_alco_rs_3_purchase;

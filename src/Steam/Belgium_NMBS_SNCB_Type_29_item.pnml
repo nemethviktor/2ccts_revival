@@ -39,6 +39,9 @@ item(FEAT_TRAINS, item_steam_belgium_nmbs_sncb_type_29) {
         length: 7;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+
+badges: ["power/steam", "flag/BE"];
+
     }
     graphics {
         purchase: spriteset_steam_belgium_nmbs_sncb_type_29_purchase;

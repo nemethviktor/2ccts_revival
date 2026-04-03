@@ -39,6 +39,9 @@ item(FEAT_TRAINS, item_electric_south_africa_sar_e38) {
         length: 6;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+
+badges: ["power/electric"];
+
     }
     graphics {
         purchase: spriteset_electric_south_africa_sar_e38_purchase;

@@ -54,6 +54,9 @@ item(FEAT_TRAINS, item_dmu_france_sncf_x_4630) {
         length: 8;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+
+badges: ["power/diesel", "flag/FR"];
+
     }
     graphics {
         purchase: spriteset_dmu_france_sncf_x_4630_purchase;

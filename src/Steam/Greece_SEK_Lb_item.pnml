@@ -39,6 +39,9 @@ item(FEAT_TRAINS, item_steam_greece_sek_lb) {
         length: 7;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+
+badges: ["power/steam", "flag/GR"];
+
     }
     graphics {
         purchase: spriteset_steam_greece_sek_lb_purchase;

@@ -39,6 +39,9 @@ item(FEAT_TRAINS, item_steam_usa_4_4_0_american) {
         length: 6;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+
+badges: ["power/steam", "flag/US"];
+
     }
     graphics {
         purchase: spriteset_steam_usa_4_4_0_american_purchase;

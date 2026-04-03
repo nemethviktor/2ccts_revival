@@ -54,6 +54,9 @@ item(FEAT_TRAINS, item_rbd_russia_rzd_ach2) {
         length: 8;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+
+badges: ["power/diesel", "flag/RU"];
+
     }
     graphics {
         purchase: spriteset_rbd_russia_rzd_ach2_purchase;

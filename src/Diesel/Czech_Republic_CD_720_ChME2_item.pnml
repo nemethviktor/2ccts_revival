@@ -39,6 +39,9 @@ item(FEAT_TRAINS, item_diesel_czech_republic_cd_720_chme2) {
         length: 6;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+
+badges: ["power/diesel", "flag/CZ"];
+
     }
     graphics {
         purchase: spriteset_diesel_czech_republic_cd_720_chme2_purchase;

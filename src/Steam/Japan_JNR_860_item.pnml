@@ -39,6 +39,9 @@ item(FEAT_TRAINS, item_steam_japan_jnr_860) {
         length: 5;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+
+badges: ["power/steam", "flag/JP"];
+
     }
     graphics {
         purchase: spriteset_steam_japan_jnr_860_purchase;

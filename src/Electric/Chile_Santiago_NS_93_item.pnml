@@ -39,6 +39,9 @@ item(FEAT_TRAINS, item_mtro_chile_santiago_ns_93) {
         length: 7;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+
+badges: ["power/maglev", "flag/CL"];
+
     }
     graphics {
         purchase: spriteset_mtro_chile_santiago_ns_93_purchase;

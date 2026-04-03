@@ -39,6 +39,9 @@ item(FEAT_TRAINS, item_mtro_brazil_sao_paulo_serie_5500) {
         length: 8;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+
+badges: ["power/maglev", "flag/BR"];
+
     }
     graphics {
         purchase: spriteset_mtro_brazil_sao_paulo_serie_5500_purchase;

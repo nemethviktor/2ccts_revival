@@ -39,6 +39,9 @@ item(FEAT_TRAINS, item_steam_denmark_dsb_e) {
         length: 6;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+
+badges: ["power/steam", "flag/DK"];
+
     }
     graphics {
         purchase: spriteset_steam_denmark_dsb_e_purchase;

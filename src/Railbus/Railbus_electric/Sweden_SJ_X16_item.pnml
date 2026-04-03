@@ -54,6 +54,9 @@ item(FEAT_TRAINS, item_rbe_sweden_sj_x16) {
         length: 6;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+
+badges: ["power/electric", "flag/SE"];
+
     }
     graphics {
         purchase: spriteset_rbe_sweden_sj_x16_purchase;

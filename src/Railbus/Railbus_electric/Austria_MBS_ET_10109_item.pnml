@@ -54,6 +54,9 @@ item(FEAT_TRAINS, item_rbe_austria_mbs_et_10109) {
         length: 8;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+
+badges: ["power/electric", "flag/AT"];
+
     }
     graphics {
         purchase: spriteset_rbe_austria_mbs_et_10109_purchase;

@@ -54,6 +54,9 @@ item(FEAT_TRAINS, item_rbe_slovakia_zssk_490) {
         length: 7;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+
+badges: ["power/electric", "flag/SK"];
+
     }
     graphics {
         purchase: spriteset_rbe_slovakia_zssk_490_purchase;

@@ -3,7 +3,265 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-badgetable {
+
+spriteset (sprite_power_battery) {[0, 0, 16, 12, 0, 0, "gfx/Badges/power/power_battery.png"]}
+spriteset (sprite_power_diesel) {[0, 0, 16, 12, 0, 0, "gfx/Badges/power/power_diesel.png"]}
+spriteset (sprite_power_electric) {[0, 0, 16, 12, 0, 0, "gfx/Badges/power/power_electric.png"]}
+spriteset (sprite_power_electric_ac) {[0, 0, 16, 12, 0, 0, "gfx/Badges/power/power_electric_ac.png"]}
+spriteset (sprite_power_electric_dc) {[0, 0, 16, 12, 0, 0, "gfx/Badges/power/power_electric_dc.png"]}
+spriteset (sprite_power_steam) {[0, 0, 16, 12, 0, 0, "gfx/Badges/power/power_steam.png"]}
+spriteset (sprite_power_turbine) {[0, 0, 16, 12, 0, 0, "gfx/Badges/power/power_turbine.png"]}
+spriteset (sprite_power_maglev) {[0, 0, 16, 12, 0, 0, "gfx/Badges/power/power_maglev.png"]}
+spriteset (sprite_flag_AF) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/af.png"]}
+spriteset (sprite_flag_AX) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/ax.png"]}
+spriteset (sprite_flag_AL) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/al.png"]}
+spriteset (sprite_flag_DZ) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/dz.png"]}
+spriteset (sprite_flag_AS) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/as.png"]}
+spriteset (sprite_flag_AD) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/ad.png"]}
+spriteset (sprite_flag_AO) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/ao.png"]}
+spriteset (sprite_flag_AI) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/ai.png"]}
+spriteset (sprite_flag_AQ) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/aq.png"]}
+spriteset (sprite_flag_AG) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/ag.png"]}
+spriteset (sprite_flag_AR) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/ar.png"]}
+spriteset (sprite_flag_AM) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/am.png"]}
+spriteset (sprite_flag_AW) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/aw.png"]}
+spriteset (sprite_flag_AU) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/au.png"]}
+spriteset (sprite_flag_AT) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/at.png"]}
+spriteset (sprite_flag_AZ) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/az.png"]}
+spriteset (sprite_flag_BS) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/bs.png"]}
+spriteset (sprite_flag_BH) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/bh.png"]}
+spriteset (sprite_flag_BD) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/bd.png"]}
+spriteset (sprite_flag_BB) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/bb.png"]}
+spriteset (sprite_flag_BY) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/by.png"]}
+spriteset (sprite_flag_BE) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/be.png"]}
+spriteset (sprite_flag_BZ) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/bz.png"]}
+spriteset (sprite_flag_BJ) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/bj.png"]}
+spriteset (sprite_flag_BM) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/bm.png"]}
+spriteset (sprite_flag_BT) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/bt.png"]}
+spriteset (sprite_flag_BO) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/bo.png"]}
+spriteset (sprite_flag_BQ) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/bq.png"]}
+spriteset (sprite_flag_BA) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/ba.png"]}
+spriteset (sprite_flag_BW) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/bw.png"]}
+spriteset (sprite_flag_BV) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/bv.png"]}
+spriteset (sprite_flag_BR) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/br.png"]}
+spriteset (sprite_flag_IO) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/io.png"]}
+spriteset (sprite_flag_BN) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/bn.png"]}
+spriteset (sprite_flag_BG) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/bg.png"]}
+spriteset (sprite_flag_BF) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/bf.png"]}
+spriteset (sprite_flag_BI) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/bi.png"]}
+spriteset (sprite_flag_KH) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/kh.png"]}
+spriteset (sprite_flag_CM) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/cm.png"]}
+spriteset (sprite_flag_CA) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/ca.png"]}
+spriteset (sprite_flag_CV) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/cv.png"]}
+spriteset (sprite_flag_KY) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/ky.png"]}
+spriteset (sprite_flag_CF) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/cf.png"]}
+spriteset (sprite_flag_TD) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/td.png"]}
+spriteset (sprite_flag_CL) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/cl.png"]}
+spriteset (sprite_flag_CN) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/cn.png"]}
+spriteset (sprite_flag_CX) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/cx.png"]}
+spriteset (sprite_flag_CC) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/cc.png"]}
+spriteset (sprite_flag_CO) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/co.png"]}
+spriteset (sprite_flag_KM) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/km.png"]}
+spriteset (sprite_flag_CG) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/cg.png"]}
+spriteset (sprite_flag_CD) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/cd.png"]}
+spriteset (sprite_flag_CK) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/ck.png"]}
+spriteset (sprite_flag_CR) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/cr.png"]}
+spriteset (sprite_flag_CI) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/ci.png"]}
+spriteset (sprite_flag_HR) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/hr.png"]}
+spriteset (sprite_flag_CU) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/cu.png"]}
+spriteset (sprite_flag_CW) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/cw.png"]}
+spriteset (sprite_flag_CY) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/cy.png"]}
+spriteset (sprite_flag_CZ) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/cz.png"]}
+spriteset (sprite_flag_DK) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/dk.png"]}
+spriteset (sprite_flag_DJ) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/dj.png"]}
+spriteset (sprite_flag_DM) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/dm.png"]}
+spriteset (sprite_flag_DO) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/do.png"]}
+spriteset (sprite_flag_EC) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/ec.png"]}
+spriteset (sprite_flag_EG) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/eg.png"]}
+spriteset (sprite_flag_SV) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/sv.png"]}
+spriteset (sprite_flag_GQ) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/gq.png"]}
+spriteset (sprite_flag_ER) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/er.png"]}
+spriteset (sprite_flag_EE) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/ee.png"]}
+spriteset (sprite_flag_ET) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/et.png"]}
+spriteset (sprite_flag_FK) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/fk.png"]}
+spriteset (sprite_flag_FO) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/fo.png"]}
+spriteset (sprite_flag_FJ) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/fj.png"]}
+spriteset (sprite_flag_FI) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/fi.png"]}
+spriteset (sprite_flag_FR) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/fr.png"]}
+spriteset (sprite_flag_GF) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/gf.png"]}
+spriteset (sprite_flag_PF) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/pf.png"]}
+spriteset (sprite_flag_TF) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/tf.png"]}
+spriteset (sprite_flag_GA) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/ga.png"]}
+spriteset (sprite_flag_GM) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/gm.png"]}
+spriteset (sprite_flag_GE) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/ge.png"]}
+spriteset (sprite_flag_DE) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/de.png"]}
+spriteset (sprite_flag_GH) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/gh.png"]}
+spriteset (sprite_flag_GI) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/gi.png"]}
+spriteset (sprite_flag_GR) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/gr.png"]}
+spriteset (sprite_flag_GL) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/gl.png"]}
+spriteset (sprite_flag_GD) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/gd.png"]}
+spriteset (sprite_flag_GP) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/gp.png"]}
+spriteset (sprite_flag_GU) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/gu.png"]}
+spriteset (sprite_flag_GT) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/gt.png"]}
+spriteset (sprite_flag_GG) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/gg.png"]}
+spriteset (sprite_flag_GN) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/gn.png"]}
+spriteset (sprite_flag_GW) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/gw.png"]}
+spriteset (sprite_flag_GY) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/gy.png"]}
+spriteset (sprite_flag_HT) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/ht.png"]}
+spriteset (sprite_flag_HM) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/hm.png"]}
+spriteset (sprite_flag_VA) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/va.png"]}
+spriteset (sprite_flag_HN) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/hn.png"]}
+spriteset (sprite_flag_HK) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/hk.png"]}
+spriteset (sprite_flag_HU) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/hu.png"]}
+spriteset (sprite_flag_IS) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/is.png"]}
+spriteset (sprite_flag_IN) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/in.png"]}
+spriteset (sprite_flag_ID) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/id.png"]}
+spriteset (sprite_flag_IR) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/ir.png"]}
+spriteset (sprite_flag_IQ) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/iq.png"]}
+spriteset (sprite_flag_IE) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/ie.png"]}
+spriteset (sprite_flag_IM) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/im.png"]}
+spriteset (sprite_flag_IL) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/il.png"]}
+spriteset (sprite_flag_IT) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/it.png"]}
+spriteset (sprite_flag_JM) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/jm.png"]}
+spriteset (sprite_flag_JP) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/jp.png"]}
+spriteset (sprite_flag_JE) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/je.png"]}
+spriteset (sprite_flag_JO) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/jo.png"]}
+spriteset (sprite_flag_KZ) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/kz.png"]}
+spriteset (sprite_flag_KE) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/ke.png"]}
+spriteset (sprite_flag_KI) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/ki.png"]}
+spriteset (sprite_flag_KP) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/kp.png"]}
+spriteset (sprite_flag_KR) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/kr.png"]}
+spriteset (sprite_flag_KW) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/kw.png"]}
+spriteset (sprite_flag_KG) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/kg.png"]}
+spriteset (sprite_flag_LA) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/la.png"]}
+spriteset (sprite_flag_LV) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/lv.png"]}
+spriteset (sprite_flag_LB) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/lb.png"]}
+spriteset (sprite_flag_LS) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/ls.png"]}
+spriteset (sprite_flag_LR) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/lr.png"]}
+spriteset (sprite_flag_LY) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/ly.png"]}
+spriteset (sprite_flag_LI) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/li.png"]}
+spriteset (sprite_flag_LT) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/lt.png"]}
+spriteset (sprite_flag_LU) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/lu.png"]}
+spriteset (sprite_flag_MO) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/mo.png"]}
+spriteset (sprite_flag_MK) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/mk.png"]}
+spriteset (sprite_flag_MG) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/mg.png"]}
+spriteset (sprite_flag_MW) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/mw.png"]}
+spriteset (sprite_flag_MY) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/my.png"]}
+spriteset (sprite_flag_MV) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/mv.png"]}
+spriteset (sprite_flag_ML) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/ml.png"]}
+spriteset (sprite_flag_MT) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/mt.png"]}
+spriteset (sprite_flag_MH) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/mh.png"]}
+spriteset (sprite_flag_MQ) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/mq.png"]}
+spriteset (sprite_flag_MR) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/mr.png"]}
+spriteset (sprite_flag_MU) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/mu.png"]}
+spriteset (sprite_flag_YT) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/yt.png"]}
+spriteset (sprite_flag_MX) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/mx.png"]}
+spriteset (sprite_flag_FM) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/fm.png"]}
+spriteset (sprite_flag_MD) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/md.png"]}
+spriteset (sprite_flag_MC) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/mc.png"]}
+spriteset (sprite_flag_MN) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/mn.png"]}
+spriteset (sprite_flag_ME) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/me.png"]}
+spriteset (sprite_flag_MS) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/ms.png"]}
+spriteset (sprite_flag_MA) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/ma.png"]}
+spriteset (sprite_flag_MZ) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/mz.png"]}
+spriteset (sprite_flag_MM) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/mm.png"]}
+spriteset (sprite_flag_NA) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/na.png"]}
+spriteset (sprite_flag_NR) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/nr.png"]}
+spriteset (sprite_flag_NP) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/np.png"]}
+spriteset (sprite_flag_NL) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/nl.png"]}
+spriteset (sprite_flag_NC) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/nc.png"]}
+spriteset (sprite_flag_NZ) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/nz.png"]}
+spriteset (sprite_flag_NI) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/ni.png"]}
+spriteset (sprite_flag_NE) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/ne.png"]}
+spriteset (sprite_flag_NG) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/ng.png"]}
+spriteset (sprite_flag_NU) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/nu.png"]}
+spriteset (sprite_flag_NF) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/nf.png"]}
+spriteset (sprite_flag_MP) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/mp.png"]}
+spriteset (sprite_flag_NO) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/no.png"]}
+spriteset (sprite_flag_OM) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/om.png"]}
+spriteset (sprite_flag_PK) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/pk.png"]}
+spriteset (sprite_flag_PW) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/pw.png"]}
+spriteset (sprite_flag_PS) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/ps.png"]}
+spriteset (sprite_flag_PA) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/pa.png"]}
+spriteset (sprite_flag_PG) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/pg.png"]}
+spriteset (sprite_flag_PY) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/py.png"]}
+spriteset (sprite_flag_PE) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/pe.png"]}
+spriteset (sprite_flag_PH) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/ph.png"]}
+spriteset (sprite_flag_PN) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/pn.png"]}
+spriteset (sprite_flag_PL) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/pl.png"]}
+spriteset (sprite_flag_PT) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/pt.png"]}
+spriteset (sprite_flag_PR) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/pr.png"]}
+spriteset (sprite_flag_QA) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/qa.png"]}
+spriteset (sprite_flag_RE) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/re.png"]}
+spriteset (sprite_flag_RO) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/ro.png"]}
+spriteset (sprite_flag_RU) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/ru.png"]}
+spriteset (sprite_flag_RW) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/rw.png"]}
+spriteset (sprite_flag_BL) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/bl.png"]}
+spriteset (sprite_flag_SH) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/sh.png"]}
+spriteset (sprite_flag_KN) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/kn.png"]}
+spriteset (sprite_flag_LC) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/lc.png"]}
+spriteset (sprite_flag_MF) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/mf.png"]}
+spriteset (sprite_flag_PM) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/pm.png"]}
+spriteset (sprite_flag_VC) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/vc.png"]}
+spriteset (sprite_flag_WS) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/ws.png"]}
+spriteset (sprite_flag_SM) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/sm.png"]}
+spriteset (sprite_flag_ST) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/st.png"]}
+spriteset (sprite_flag_SA) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/sa.png"]}
+spriteset (sprite_flag_SN) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/sn.png"]}
+spriteset (sprite_flag_RS) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/rs.png"]}
+spriteset (sprite_flag_SC) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/sc.png"]}
+spriteset (sprite_flag_SL) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/sl.png"]}
+spriteset (sprite_flag_SG) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/sg.png"]}
+spriteset (sprite_flag_SX) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/sx.png"]}
+spriteset (sprite_flag_SK) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/sk.png"]}
+spriteset (sprite_flag_SI) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/si.png"]}
+spriteset (sprite_flag_SB) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/sb.png"]}
+spriteset (sprite_flag_SO) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/so.png"]}
+spriteset (sprite_flag_ZA) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/za.png"]}
+spriteset (sprite_flag_GS) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/gs.png"]}
+spriteset (sprite_flag_SS) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/ss.png"]}
+spriteset (sprite_flag_ES) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/es.png"]}
+spriteset (sprite_flag_LK) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/lk.png"]}
+spriteset (sprite_flag_SD) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/sd.png"]}
+spriteset (sprite_flag_SR) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/sr.png"]}
+spriteset (sprite_flag_SJ) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/sj.png"]}
+spriteset (sprite_flag_SZ) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/sz.png"]}
+spriteset (sprite_flag_SE) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/se.png"]}
+spriteset (sprite_flag_CH) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/ch.png"]}
+spriteset (sprite_flag_SY) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/sy.png"]}
+spriteset (sprite_flag_TW) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/tw.png"]}
+spriteset (sprite_flag_TJ) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/tj.png"]}
+spriteset (sprite_flag_TZ) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/tz.png"]}
+spriteset (sprite_flag_TH) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/th.png"]}
+spriteset (sprite_flag_TL) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/tl.png"]}
+spriteset (sprite_flag_TG) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/tg.png"]}
+spriteset (sprite_flag_TK) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/tk.png"]}
+spriteset (sprite_flag_TO) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/to.png"]}
+spriteset (sprite_flag_TT) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/tt.png"]}
+spriteset (sprite_flag_TN) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/tn.png"]}
+spriteset (sprite_flag_TR) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/tr.png"]}
+spriteset (sprite_flag_TM) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/tm.png"]}
+spriteset (sprite_flag_TC) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/tc.png"]}
+spriteset (sprite_flag_TV) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/tv.png"]}
+spriteset (sprite_flag_UG) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/ug.png"]}
+spriteset (sprite_flag_UA) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/ua.png"]}
+spriteset (sprite_flag_AE) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/ae.png"]}
+spriteset (sprite_flag_GB) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/gb.png"]}
+spriteset (sprite_flag_US) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/us.png"]}
+spriteset (sprite_flag_UM) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/um.png"]}
+spriteset (sprite_flag_UY) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/uy.png"]}
+spriteset (sprite_flag_UZ) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/uz.png"]}
+spriteset (sprite_flag_VU) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/vu.png"]}
+spriteset (sprite_flag_VE) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/ve.png"]}
+spriteset (sprite_flag_VN) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/vn.png"]}
+spriteset (sprite_flag_VG) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/vg.png"]}
+spriteset (sprite_flag_VI) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/vi.png"]}
+spriteset (sprite_flag_WF) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/wf.png"]}
+spriteset (sprite_flag_EH) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/eh.png"]}
+spriteset (sprite_flag_YE) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/ye.png"]}
+spriteset (sprite_flag_ZM) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/zm.png"]}
+spriteset (sprite_flag_ZW) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/zw.png"]}
+spriteset (sprite_flag_EU) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/eu.png"]}badgetable {
 // Flags
 	"flag",
 	"flag/AF",
@@ -255,63 +513,18 @@ badgetable {
 	"flag/YE",
 	"flag/ZM",
 	"flag/ZW",
-	"flag/europe",
+	"flag/EU",
 
 // Powers
 	"power",
+	"power/battery",
 	"power/diesel",
 	"power/electric",
 	"power/electric/ac",
 	"power/electric/dc",
 	"power/steam",
 	"power/turbine",
-
-// Regions
-	"region",
-	"region/africa",
-	"region/africa/eastern",
-	"region/africa/middle",
-	"region/africa/northern",
-	"region/africa/southern",
-	"region/africa/western",
-	"region/america",
-	"region/america/caribbean",
-	"region/america/central",
-	"region/america/northern",
-	"region/america/south",
-	"region/asia",
-	"region/asia/central",
-	"region/asia/eastern",
-	"region/asia/southeastern",
-	"region/asia/southern",
-	"region/asia/western",
-	"region/europe",
-	"region/europe/eastern",
-	"region/europe/northern",
-	"region/europe/southern",
-	"region/europe/western",
-	"region/oceania",
-	"region/oceania/australia_and_new_zealand",
-	"region/oceania/melanesia",
-	"region/oceania/micronesia",
-	"region/oceania/polynesia",
-
-// Roles
-	"role",
-	"role/banking",
-	"role/express_freight",
-	"role/express_passenger",
-	"role/freight",
-	"role/heavy_freight",
-	"role/light_freight",
-	"role/mail",
-	"role/mixed",
-	"role/passenger",
-	"role/prototype",
-	"role/restaurant_car",
-	"role/shunting",
-	"role/snowplough",
-	"role/utility",
+	"power/maglev",
 }
 
 // Flag Items
@@ -328,7 +541,9 @@ item (FEAT_BADGES, flag_AF) {
         label: "flag/AF";
         name: string(STR_FLAG_AF);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_AF;}
+}
 
 	
 item (FEAT_BADGES, flag_AX) {
@@ -336,7 +551,9 @@ item (FEAT_BADGES, flag_AX) {
         label: "flag/AX";
         name: string(STR_FLAG_AX);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_AX;}
+}
 
 	
 item (FEAT_BADGES, flag_AL) {
@@ -344,7 +561,9 @@ item (FEAT_BADGES, flag_AL) {
         label: "flag/AL";
         name: string(STR_FLAG_AL);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_AL;}
+}
 
 	
 item (FEAT_BADGES, flag_DZ) {
@@ -352,7 +571,9 @@ item (FEAT_BADGES, flag_DZ) {
         label: "flag/DZ";
         name: string(STR_FLAG_DZ);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_DZ;}
+}
 
 	
 item (FEAT_BADGES, flag_AS) {
@@ -360,7 +581,9 @@ item (FEAT_BADGES, flag_AS) {
         label: "flag/AS";
         name: string(STR_FLAG_AS);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_AS;}
+}
 
 	
 item (FEAT_BADGES, flag_AD) {
@@ -368,7 +591,9 @@ item (FEAT_BADGES, flag_AD) {
         label: "flag/AD";
         name: string(STR_FLAG_AD);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_AD;}
+}
 
 	
 item (FEAT_BADGES, flag_AO) {
@@ -376,7 +601,9 @@ item (FEAT_BADGES, flag_AO) {
         label: "flag/AO";
         name: string(STR_FLAG_AO);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_AO;}
+}
 
 	
 item (FEAT_BADGES, flag_AI) {
@@ -384,7 +611,9 @@ item (FEAT_BADGES, flag_AI) {
         label: "flag/AI";
         name: string(STR_FLAG_AI);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_AI;}
+}
 
 	
 item (FEAT_BADGES, flag_AQ) {
@@ -392,7 +621,9 @@ item (FEAT_BADGES, flag_AQ) {
         label: "flag/AQ";
         name: string(STR_FLAG_AQ);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_AQ;}
+}
 
 	
 item (FEAT_BADGES, flag_AG) {
@@ -400,7 +631,9 @@ item (FEAT_BADGES, flag_AG) {
         label: "flag/AG";
         name: string(STR_FLAG_AG);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_AG;}
+}
 
 	
 item (FEAT_BADGES, flag_AR) {
@@ -408,7 +641,9 @@ item (FEAT_BADGES, flag_AR) {
         label: "flag/AR";
         name: string(STR_FLAG_AR);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_AR;}
+}
 
 	
 item (FEAT_BADGES, flag_AM) {
@@ -416,7 +651,9 @@ item (FEAT_BADGES, flag_AM) {
         label: "flag/AM";
         name: string(STR_FLAG_AM);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_AM;}
+}
 
 	
 item (FEAT_BADGES, flag_AW) {
@@ -424,7 +661,9 @@ item (FEAT_BADGES, flag_AW) {
         label: "flag/AW";
         name: string(STR_FLAG_AW);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_AW;}
+}
 
 	
 item (FEAT_BADGES, flag_AU) {
@@ -432,7 +671,9 @@ item (FEAT_BADGES, flag_AU) {
         label: "flag/AU";
         name: string(STR_FLAG_AU);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_AU;}
+}
 
 	
 item (FEAT_BADGES, flag_AT) {
@@ -440,7 +681,9 @@ item (FEAT_BADGES, flag_AT) {
         label: "flag/AT";
         name: string(STR_FLAG_AT);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_AT;}
+}
 
 	
 item (FEAT_BADGES, flag_AZ) {
@@ -448,7 +691,9 @@ item (FEAT_BADGES, flag_AZ) {
         label: "flag/AZ";
         name: string(STR_FLAG_AZ);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_AZ;}
+}
 
 	
 item (FEAT_BADGES, flag_BS) {
@@ -456,7 +701,9 @@ item (FEAT_BADGES, flag_BS) {
         label: "flag/BS";
         name: string(STR_FLAG_BS);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_BS;}
+}
 
 	
 item (FEAT_BADGES, flag_BH) {
@@ -464,7 +711,9 @@ item (FEAT_BADGES, flag_BH) {
         label: "flag/BH";
         name: string(STR_FLAG_BH);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_BH;}
+}
 
 	
 item (FEAT_BADGES, flag_BD) {
@@ -472,7 +721,9 @@ item (FEAT_BADGES, flag_BD) {
         label: "flag/BD";
         name: string(STR_FLAG_BD);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_BD;}
+}
 
 	
 item (FEAT_BADGES, flag_BB) {
@@ -480,7 +731,9 @@ item (FEAT_BADGES, flag_BB) {
         label: "flag/BB";
         name: string(STR_FLAG_BB);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_BB;}
+}
 
 	
 item (FEAT_BADGES, flag_BY) {
@@ -488,7 +741,9 @@ item (FEAT_BADGES, flag_BY) {
         label: "flag/BY";
         name: string(STR_FLAG_BY);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_BY;}
+}
 
 	
 item (FEAT_BADGES, flag_BE) {
@@ -496,7 +751,9 @@ item (FEAT_BADGES, flag_BE) {
         label: "flag/BE";
         name: string(STR_FLAG_BE);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_BE;}
+}
 
 	
 item (FEAT_BADGES, flag_BZ) {
@@ -504,7 +761,9 @@ item (FEAT_BADGES, flag_BZ) {
         label: "flag/BZ";
         name: string(STR_FLAG_BZ);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_BZ;}
+}
 
 	
 item (FEAT_BADGES, flag_BJ) {
@@ -512,7 +771,9 @@ item (FEAT_BADGES, flag_BJ) {
         label: "flag/BJ";
         name: string(STR_FLAG_BJ);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_BJ;}
+}
 
 	
 item (FEAT_BADGES, flag_BM) {
@@ -520,7 +781,9 @@ item (FEAT_BADGES, flag_BM) {
         label: "flag/BM";
         name: string(STR_FLAG_BM);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_BM;}
+}
 
 	
 item (FEAT_BADGES, flag_BT) {
@@ -528,7 +791,9 @@ item (FEAT_BADGES, flag_BT) {
         label: "flag/BT";
         name: string(STR_FLAG_BT);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_BT;}
+}
 
 	
 item (FEAT_BADGES, flag_BO) {
@@ -536,7 +801,9 @@ item (FEAT_BADGES, flag_BO) {
         label: "flag/BO";
         name: string(STR_FLAG_BO);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_BO;}
+}
 
 	
 item (FEAT_BADGES, flag_BQ) {
@@ -544,7 +811,9 @@ item (FEAT_BADGES, flag_BQ) {
         label: "flag/BQ";
         name: string(STR_FLAG_BQ);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_BQ;}
+}
 
 	
 item (FEAT_BADGES, flag_BA) {
@@ -552,7 +821,9 @@ item (FEAT_BADGES, flag_BA) {
         label: "flag/BA";
         name: string(STR_FLAG_BA);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_BA;}
+}
 
 	
 item (FEAT_BADGES, flag_BW) {
@@ -560,7 +831,9 @@ item (FEAT_BADGES, flag_BW) {
         label: "flag/BW";
         name: string(STR_FLAG_BW);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_BW;}
+}
 
 	
 item (FEAT_BADGES, flag_BV) {
@@ -568,7 +841,9 @@ item (FEAT_BADGES, flag_BV) {
         label: "flag/BV";
         name: string(STR_FLAG_BV);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_BV;}
+}
 
 	
 item (FEAT_BADGES, flag_BR) {
@@ -576,7 +851,9 @@ item (FEAT_BADGES, flag_BR) {
         label: "flag/BR";
         name: string(STR_FLAG_BR);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_BR;}
+}
 
 	
 item (FEAT_BADGES, flag_IO) {
@@ -584,7 +861,9 @@ item (FEAT_BADGES, flag_IO) {
         label: "flag/IO";
         name: string(STR_FLAG_IO);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_IO;}
+}
 
 	
 item (FEAT_BADGES, flag_BN) {
@@ -592,7 +871,9 @@ item (FEAT_BADGES, flag_BN) {
         label: "flag/BN";
         name: string(STR_FLAG_BN);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_BN;}
+}
 
 	
 item (FEAT_BADGES, flag_BG) {
@@ -600,7 +881,9 @@ item (FEAT_BADGES, flag_BG) {
         label: "flag/BG";
         name: string(STR_FLAG_BG);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_BG;}
+}
 
 	
 item (FEAT_BADGES, flag_BF) {
@@ -608,7 +891,9 @@ item (FEAT_BADGES, flag_BF) {
         label: "flag/BF";
         name: string(STR_FLAG_BF);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_BF;}
+}
 
 	
 item (FEAT_BADGES, flag_BI) {
@@ -616,7 +901,9 @@ item (FEAT_BADGES, flag_BI) {
         label: "flag/BI";
         name: string(STR_FLAG_BI);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_BI;}
+}
 
 	
 item (FEAT_BADGES, flag_KH) {
@@ -624,7 +911,9 @@ item (FEAT_BADGES, flag_KH) {
         label: "flag/KH";
         name: string(STR_FLAG_KH);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_KH;}
+}
 
 	
 item (FEAT_BADGES, flag_CM) {
@@ -632,7 +921,9 @@ item (FEAT_BADGES, flag_CM) {
         label: "flag/CM";
         name: string(STR_FLAG_CM);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_CM;}
+}
 
 	
 item (FEAT_BADGES, flag_CA) {
@@ -640,7 +931,9 @@ item (FEAT_BADGES, flag_CA) {
         label: "flag/CA";
         name: string(STR_FLAG_CA);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_CA;}
+}
 
 	
 item (FEAT_BADGES, flag_CV) {
@@ -648,7 +941,9 @@ item (FEAT_BADGES, flag_CV) {
         label: "flag/CV";
         name: string(STR_FLAG_CV);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_CV;}
+}
 
 	
 item (FEAT_BADGES, flag_KY) {
@@ -656,7 +951,9 @@ item (FEAT_BADGES, flag_KY) {
         label: "flag/KY";
         name: string(STR_FLAG_KY);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_KY;}
+}
 
 	
 item (FEAT_BADGES, flag_CF) {
@@ -664,7 +961,9 @@ item (FEAT_BADGES, flag_CF) {
         label: "flag/CF";
         name: string(STR_FLAG_CF);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_CF;}
+}
 
 	
 item (FEAT_BADGES, flag_TD) {
@@ -672,7 +971,9 @@ item (FEAT_BADGES, flag_TD) {
         label: "flag/TD";
         name: string(STR_FLAG_TD);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_TD;}
+}
 
 	
 item (FEAT_BADGES, flag_CL) {
@@ -680,7 +981,9 @@ item (FEAT_BADGES, flag_CL) {
         label: "flag/CL";
         name: string(STR_FLAG_CL);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_CL;}
+}
 
 	
 item (FEAT_BADGES, flag_CN) {
@@ -688,7 +991,9 @@ item (FEAT_BADGES, flag_CN) {
         label: "flag/CN";
         name: string(STR_FLAG_CN);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_CN;}
+}
 
 	
 item (FEAT_BADGES, flag_CX) {
@@ -696,7 +1001,9 @@ item (FEAT_BADGES, flag_CX) {
         label: "flag/CX";
         name: string(STR_FLAG_CX);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_CX;}
+}
 
 	
 item (FEAT_BADGES, flag_CC) {
@@ -704,7 +1011,9 @@ item (FEAT_BADGES, flag_CC) {
         label: "flag/CC";
         name: string(STR_FLAG_CC);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_CC;}
+}
 
 	
 item (FEAT_BADGES, flag_CO) {
@@ -712,7 +1021,9 @@ item (FEAT_BADGES, flag_CO) {
         label: "flag/CO";
         name: string(STR_FLAG_CO);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_CO;}
+}
 
 	
 item (FEAT_BADGES, flag_KM) {
@@ -720,7 +1031,9 @@ item (FEAT_BADGES, flag_KM) {
         label: "flag/KM";
         name: string(STR_FLAG_KM);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_KM;}
+}
 
 	
 item (FEAT_BADGES, flag_CG) {
@@ -728,7 +1041,9 @@ item (FEAT_BADGES, flag_CG) {
         label: "flag/CG";
         name: string(STR_FLAG_CG);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_CG;}
+}
 
 	
 item (FEAT_BADGES, flag_CD) {
@@ -736,7 +1051,9 @@ item (FEAT_BADGES, flag_CD) {
         label: "flag/CD";
         name: string(STR_FLAG_CD);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_CD;}
+}
 
 	
 item (FEAT_BADGES, flag_CK) {
@@ -744,7 +1061,9 @@ item (FEAT_BADGES, flag_CK) {
         label: "flag/CK";
         name: string(STR_FLAG_CK);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_CK;}
+}
 
 	
 item (FEAT_BADGES, flag_CR) {
@@ -752,7 +1071,9 @@ item (FEAT_BADGES, flag_CR) {
         label: "flag/CR";
         name: string(STR_FLAG_CR);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_CR;}
+}
 
 	
 item (FEAT_BADGES, flag_CI) {
@@ -760,7 +1081,9 @@ item (FEAT_BADGES, flag_CI) {
         label: "flag/CI";
         name: string(STR_FLAG_CI);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_CI;}
+}
 
 	
 item (FEAT_BADGES, flag_HR) {
@@ -768,7 +1091,9 @@ item (FEAT_BADGES, flag_HR) {
         label: "flag/HR";
         name: string(STR_FLAG_HR);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_HR;}
+}
 
 	
 item (FEAT_BADGES, flag_CU) {
@@ -776,7 +1101,9 @@ item (FEAT_BADGES, flag_CU) {
         label: "flag/CU";
         name: string(STR_FLAG_CU);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_CU;}
+}
 
 	
 item (FEAT_BADGES, flag_CW) {
@@ -784,7 +1111,9 @@ item (FEAT_BADGES, flag_CW) {
         label: "flag/CW";
         name: string(STR_FLAG_CW);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_CW;}
+}
 
 	
 item (FEAT_BADGES, flag_CY) {
@@ -792,7 +1121,9 @@ item (FEAT_BADGES, flag_CY) {
         label: "flag/CY";
         name: string(STR_FLAG_CY);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_CY;}
+}
 
 	
 item (FEAT_BADGES, flag_CZ) {
@@ -800,7 +1131,9 @@ item (FEAT_BADGES, flag_CZ) {
         label: "flag/CZ";
         name: string(STR_FLAG_CZ);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_CZ;}
+}
 
 	
 item (FEAT_BADGES, flag_DK) {
@@ -808,7 +1141,9 @@ item (FEAT_BADGES, flag_DK) {
         label: "flag/DK";
         name: string(STR_FLAG_DK);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_DK;}
+}
 
 	
 item (FEAT_BADGES, flag_DJ) {
@@ -816,7 +1151,9 @@ item (FEAT_BADGES, flag_DJ) {
         label: "flag/DJ";
         name: string(STR_FLAG_DJ);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_DJ;}
+}
 
 	
 item (FEAT_BADGES, flag_DM) {
@@ -824,7 +1161,9 @@ item (FEAT_BADGES, flag_DM) {
         label: "flag/DM";
         name: string(STR_FLAG_DM);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_DM;}
+}
 
 	
 item (FEAT_BADGES, flag_DO) {
@@ -832,7 +1171,9 @@ item (FEAT_BADGES, flag_DO) {
         label: "flag/DO";
         name: string(STR_FLAG_DO);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_DO;}
+}
 
 	
 item (FEAT_BADGES, flag_EC) {
@@ -840,7 +1181,9 @@ item (FEAT_BADGES, flag_EC) {
         label: "flag/EC";
         name: string(STR_FLAG_EC);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_EC;}
+}
 
 	
 item (FEAT_BADGES, flag_EG) {
@@ -848,7 +1191,9 @@ item (FEAT_BADGES, flag_EG) {
         label: "flag/EG";
         name: string(STR_FLAG_EG);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_EG;}
+}
 
 	
 item (FEAT_BADGES, flag_SV) {
@@ -856,7 +1201,9 @@ item (FEAT_BADGES, flag_SV) {
         label: "flag/SV";
         name: string(STR_FLAG_SV);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_SV;}
+}
 
 	
 item (FEAT_BADGES, flag_GQ) {
@@ -864,7 +1211,9 @@ item (FEAT_BADGES, flag_GQ) {
         label: "flag/GQ";
         name: string(STR_FLAG_GQ);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_GQ;}
+}
 
 	
 item (FEAT_BADGES, flag_ER) {
@@ -872,7 +1221,9 @@ item (FEAT_BADGES, flag_ER) {
         label: "flag/ER";
         name: string(STR_FLAG_ER);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_ER;}
+}
 
 	
 item (FEAT_BADGES, flag_EE) {
@@ -880,7 +1231,9 @@ item (FEAT_BADGES, flag_EE) {
         label: "flag/EE";
         name: string(STR_FLAG_EE);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_EE;}
+}
 
 	
 item (FEAT_BADGES, flag_ET) {
@@ -888,7 +1241,9 @@ item (FEAT_BADGES, flag_ET) {
         label: "flag/ET";
         name: string(STR_FLAG_ET);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_ET;}
+}
 
 	
 item (FEAT_BADGES, flag_FK) {
@@ -896,7 +1251,9 @@ item (FEAT_BADGES, flag_FK) {
         label: "flag/FK";
         name: string(STR_FLAG_FK);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_FK;}
+}
 
 	
 item (FEAT_BADGES, flag_FO) {
@@ -904,7 +1261,9 @@ item (FEAT_BADGES, flag_FO) {
         label: "flag/FO";
         name: string(STR_FLAG_FO);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_FO;}
+}
 
 	
 item (FEAT_BADGES, flag_FJ) {
@@ -912,7 +1271,9 @@ item (FEAT_BADGES, flag_FJ) {
         label: "flag/FJ";
         name: string(STR_FLAG_FJ);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_FJ;}
+}
 
 	
 item (FEAT_BADGES, flag_FI) {
@@ -920,7 +1281,9 @@ item (FEAT_BADGES, flag_FI) {
         label: "flag/FI";
         name: string(STR_FLAG_FI);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_FI;}
+}
 
 	
 item (FEAT_BADGES, flag_FR) {
@@ -928,7 +1291,9 @@ item (FEAT_BADGES, flag_FR) {
         label: "flag/FR";
         name: string(STR_FLAG_FR);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_FR;}
+}
 
 	
 item (FEAT_BADGES, flag_GF) {
@@ -936,7 +1301,9 @@ item (FEAT_BADGES, flag_GF) {
         label: "flag/GF";
         name: string(STR_FLAG_GF);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_GF;}
+}
 
 	
 item (FEAT_BADGES, flag_PF) {
@@ -944,7 +1311,9 @@ item (FEAT_BADGES, flag_PF) {
         label: "flag/PF";
         name: string(STR_FLAG_PF);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_PF;}
+}
 
 	
 item (FEAT_BADGES, flag_TF) {
@@ -952,7 +1321,9 @@ item (FEAT_BADGES, flag_TF) {
         label: "flag/TF";
         name: string(STR_FLAG_TF);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_TF;}
+}
 
 	
 item (FEAT_BADGES, flag_GA) {
@@ -960,7 +1331,9 @@ item (FEAT_BADGES, flag_GA) {
         label: "flag/GA";
         name: string(STR_FLAG_GA);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_GA;}
+}
 
 	
 item (FEAT_BADGES, flag_GM) {
@@ -968,7 +1341,9 @@ item (FEAT_BADGES, flag_GM) {
         label: "flag/GM";
         name: string(STR_FLAG_GM);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_GM;}
+}
 
 	
 item (FEAT_BADGES, flag_GE) {
@@ -976,7 +1351,9 @@ item (FEAT_BADGES, flag_GE) {
         label: "flag/GE";
         name: string(STR_FLAG_GE);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_GE;}
+}
 
 	
 item (FEAT_BADGES, flag_DE) {
@@ -984,7 +1361,9 @@ item (FEAT_BADGES, flag_DE) {
         label: "flag/DE";
         name: string(STR_FLAG_DE);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_DE;}
+}
 
 	
 item (FEAT_BADGES, flag_GH) {
@@ -992,7 +1371,9 @@ item (FEAT_BADGES, flag_GH) {
         label: "flag/GH";
         name: string(STR_FLAG_GH);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_GH;}
+}
 
 	
 item (FEAT_BADGES, flag_GI) {
@@ -1000,7 +1381,9 @@ item (FEAT_BADGES, flag_GI) {
         label: "flag/GI";
         name: string(STR_FLAG_GI);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_GI;}
+}
 
 	
 item (FEAT_BADGES, flag_GR) {
@@ -1008,7 +1391,9 @@ item (FEAT_BADGES, flag_GR) {
         label: "flag/GR";
         name: string(STR_FLAG_GR);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_GR;}
+}
 
 	
 item (FEAT_BADGES, flag_GL) {
@@ -1016,7 +1401,9 @@ item (FEAT_BADGES, flag_GL) {
         label: "flag/GL";
         name: string(STR_FLAG_GL);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_GL;}
+}
 
 	
 item (FEAT_BADGES, flag_GD) {
@@ -1024,7 +1411,9 @@ item (FEAT_BADGES, flag_GD) {
         label: "flag/GD";
         name: string(STR_FLAG_GD);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_GD;}
+}
 
 	
 item (FEAT_BADGES, flag_GP) {
@@ -1032,7 +1421,9 @@ item (FEAT_BADGES, flag_GP) {
         label: "flag/GP";
         name: string(STR_FLAG_GP);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_GP;}
+}
 
 	
 item (FEAT_BADGES, flag_GU) {
@@ -1040,7 +1431,9 @@ item (FEAT_BADGES, flag_GU) {
         label: "flag/GU";
         name: string(STR_FLAG_GU);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_GU;}
+}
 
 	
 item (FEAT_BADGES, flag_GT) {
@@ -1048,7 +1441,9 @@ item (FEAT_BADGES, flag_GT) {
         label: "flag/GT";
         name: string(STR_FLAG_GT);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_GT;}
+}
 
 	
 item (FEAT_BADGES, flag_GG) {
@@ -1056,7 +1451,9 @@ item (FEAT_BADGES, flag_GG) {
         label: "flag/GG";
         name: string(STR_FLAG_GG);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_GG;}
+}
 
 	
 item (FEAT_BADGES, flag_GN) {
@@ -1064,7 +1461,9 @@ item (FEAT_BADGES, flag_GN) {
         label: "flag/GN";
         name: string(STR_FLAG_GN);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_GN;}
+}
 
 	
 item (FEAT_BADGES, flag_GW) {
@@ -1072,7 +1471,9 @@ item (FEAT_BADGES, flag_GW) {
         label: "flag/GW";
         name: string(STR_FLAG_GW);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_GW;}
+}
 
 	
 item (FEAT_BADGES, flag_GY) {
@@ -1080,7 +1481,9 @@ item (FEAT_BADGES, flag_GY) {
         label: "flag/GY";
         name: string(STR_FLAG_GY);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_GY;}
+}
 
 	
 item (FEAT_BADGES, flag_HT) {
@@ -1088,7 +1491,9 @@ item (FEAT_BADGES, flag_HT) {
         label: "flag/HT";
         name: string(STR_FLAG_HT);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_HT;}
+}
 
 	
 item (FEAT_BADGES, flag_HM) {
@@ -1096,7 +1501,9 @@ item (FEAT_BADGES, flag_HM) {
         label: "flag/HM";
         name: string(STR_FLAG_HM);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_HM;}
+}
 
 	
 item (FEAT_BADGES, flag_VA) {
@@ -1104,7 +1511,9 @@ item (FEAT_BADGES, flag_VA) {
         label: "flag/VA";
         name: string(STR_FLAG_VA);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_VA;}
+}
 
 	
 item (FEAT_BADGES, flag_HN) {
@@ -1112,7 +1521,9 @@ item (FEAT_BADGES, flag_HN) {
         label: "flag/HN";
         name: string(STR_FLAG_HN);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_HN;}
+}
 
 	
 item (FEAT_BADGES, flag_HK) {
@@ -1120,7 +1531,9 @@ item (FEAT_BADGES, flag_HK) {
         label: "flag/HK";
         name: string(STR_FLAG_HK);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_HK;}
+}
 
 	
 item (FEAT_BADGES, flag_HU) {
@@ -1128,7 +1541,9 @@ item (FEAT_BADGES, flag_HU) {
         label: "flag/HU";
         name: string(STR_FLAG_HU);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_HU;}
+}
 
 	
 item (FEAT_BADGES, flag_IS) {
@@ -1136,7 +1551,9 @@ item (FEAT_BADGES, flag_IS) {
         label: "flag/IS";
         name: string(STR_FLAG_IS);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_IS;}
+}
 
 	
 item (FEAT_BADGES, flag_IN) {
@@ -1144,7 +1561,9 @@ item (FEAT_BADGES, flag_IN) {
         label: "flag/IN";
         name: string(STR_FLAG_IN);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_IN;}
+}
 
 	
 item (FEAT_BADGES, flag_ID) {
@@ -1152,7 +1571,9 @@ item (FEAT_BADGES, flag_ID) {
         label: "flag/ID";
         name: string(STR_FLAG_ID);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_ID;}
+}
 
 	
 item (FEAT_BADGES, flag_IR) {
@@ -1160,7 +1581,9 @@ item (FEAT_BADGES, flag_IR) {
         label: "flag/IR";
         name: string(STR_FLAG_IR);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_IR;}
+}
 
 	
 item (FEAT_BADGES, flag_IQ) {
@@ -1168,7 +1591,9 @@ item (FEAT_BADGES, flag_IQ) {
         label: "flag/IQ";
         name: string(STR_FLAG_IQ);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_IQ;}
+}
 
 	
 item (FEAT_BADGES, flag_IE) {
@@ -1176,7 +1601,9 @@ item (FEAT_BADGES, flag_IE) {
         label: "flag/IE";
         name: string(STR_FLAG_IE);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_IE;}
+}
 
 	
 item (FEAT_BADGES, flag_IM) {
@@ -1184,7 +1611,9 @@ item (FEAT_BADGES, flag_IM) {
         label: "flag/IM";
         name: string(STR_FLAG_IM);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_IM;}
+}
 
 	
 item (FEAT_BADGES, flag_IL) {
@@ -1192,7 +1621,9 @@ item (FEAT_BADGES, flag_IL) {
         label: "flag/IL";
         name: string(STR_FLAG_IL);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_IL;}
+}
 
 	
 item (FEAT_BADGES, flag_IT) {
@@ -1200,7 +1631,9 @@ item (FEAT_BADGES, flag_IT) {
         label: "flag/IT";
         name: string(STR_FLAG_IT);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_IT;}
+}
 
 	
 item (FEAT_BADGES, flag_JM) {
@@ -1208,7 +1641,9 @@ item (FEAT_BADGES, flag_JM) {
         label: "flag/JM";
         name: string(STR_FLAG_JM);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_JM;}
+}
 
 	
 item (FEAT_BADGES, flag_JP) {
@@ -1216,7 +1651,9 @@ item (FEAT_BADGES, flag_JP) {
         label: "flag/JP";
         name: string(STR_FLAG_JP);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_JP;}
+}
 
 	
 item (FEAT_BADGES, flag_JE) {
@@ -1224,7 +1661,9 @@ item (FEAT_BADGES, flag_JE) {
         label: "flag/JE";
         name: string(STR_FLAG_JE);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_JE;}
+}
 
 	
 item (FEAT_BADGES, flag_JO) {
@@ -1232,7 +1671,9 @@ item (FEAT_BADGES, flag_JO) {
         label: "flag/JO";
         name: string(STR_FLAG_JO);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_JO;}
+}
 
 	
 item (FEAT_BADGES, flag_KZ) {
@@ -1240,7 +1681,9 @@ item (FEAT_BADGES, flag_KZ) {
         label: "flag/KZ";
         name: string(STR_FLAG_KZ);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_KZ;}
+}
 
 	
 item (FEAT_BADGES, flag_KE) {
@@ -1248,7 +1691,9 @@ item (FEAT_BADGES, flag_KE) {
         label: "flag/KE";
         name: string(STR_FLAG_KE);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_KE;}
+}
 
 	
 item (FEAT_BADGES, flag_KI) {
@@ -1256,7 +1701,9 @@ item (FEAT_BADGES, flag_KI) {
         label: "flag/KI";
         name: string(STR_FLAG_KI);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_KI;}
+}
 
 	
 item (FEAT_BADGES, flag_KP) {
@@ -1264,7 +1711,9 @@ item (FEAT_BADGES, flag_KP) {
         label: "flag/KP";
         name: string(STR_FLAG_KP);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_KP;}
+}
 
 	
 item (FEAT_BADGES, flag_KR) {
@@ -1272,7 +1721,9 @@ item (FEAT_BADGES, flag_KR) {
         label: "flag/KR";
         name: string(STR_FLAG_KR);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_KR;}
+}
 
 	
 item (FEAT_BADGES, flag_KW) {
@@ -1280,7 +1731,9 @@ item (FEAT_BADGES, flag_KW) {
         label: "flag/KW";
         name: string(STR_FLAG_KW);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_KW;}
+}
 
 	
 item (FEAT_BADGES, flag_KG) {
@@ -1288,7 +1741,9 @@ item (FEAT_BADGES, flag_KG) {
         label: "flag/KG";
         name: string(STR_FLAG_KG);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_KG;}
+}
 
 	
 item (FEAT_BADGES, flag_LA) {
@@ -1296,7 +1751,9 @@ item (FEAT_BADGES, flag_LA) {
         label: "flag/LA";
         name: string(STR_FLAG_LA);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_LA;}
+}
 
 	
 item (FEAT_BADGES, flag_LV) {
@@ -1304,7 +1761,9 @@ item (FEAT_BADGES, flag_LV) {
         label: "flag/LV";
         name: string(STR_FLAG_LV);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_LV;}
+}
 
 	
 item (FEAT_BADGES, flag_LB) {
@@ -1312,7 +1771,9 @@ item (FEAT_BADGES, flag_LB) {
         label: "flag/LB";
         name: string(STR_FLAG_LB);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_LB;}
+}
 
 	
 item (FEAT_BADGES, flag_LS) {
@@ -1320,7 +1781,9 @@ item (FEAT_BADGES, flag_LS) {
         label: "flag/LS";
         name: string(STR_FLAG_LS);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_LS;}
+}
 
 	
 item (FEAT_BADGES, flag_LR) {
@@ -1328,7 +1791,9 @@ item (FEAT_BADGES, flag_LR) {
         label: "flag/LR";
         name: string(STR_FLAG_LR);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_LR;}
+}
 
 	
 item (FEAT_BADGES, flag_LY) {
@@ -1336,7 +1801,9 @@ item (FEAT_BADGES, flag_LY) {
         label: "flag/LY";
         name: string(STR_FLAG_LY);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_LY;}
+}
 
 	
 item (FEAT_BADGES, flag_LI) {
@@ -1344,7 +1811,9 @@ item (FEAT_BADGES, flag_LI) {
         label: "flag/LI";
         name: string(STR_FLAG_LI);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_LI;}
+}
 
 	
 item (FEAT_BADGES, flag_LT) {
@@ -1352,7 +1821,9 @@ item (FEAT_BADGES, flag_LT) {
         label: "flag/LT";
         name: string(STR_FLAG_LT);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_LT;}
+}
 
 	
 item (FEAT_BADGES, flag_LU) {
@@ -1360,7 +1831,9 @@ item (FEAT_BADGES, flag_LU) {
         label: "flag/LU";
         name: string(STR_FLAG_LU);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_LU;}
+}
 
 	
 item (FEAT_BADGES, flag_MO) {
@@ -1368,7 +1841,9 @@ item (FEAT_BADGES, flag_MO) {
         label: "flag/MO";
         name: string(STR_FLAG_MO);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_MO;}
+}
 
 	
 item (FEAT_BADGES, flag_MK) {
@@ -1376,7 +1851,9 @@ item (FEAT_BADGES, flag_MK) {
         label: "flag/MK";
         name: string(STR_FLAG_MK);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_MK;}
+}
 
 	
 item (FEAT_BADGES, flag_MG) {
@@ -1384,7 +1861,9 @@ item (FEAT_BADGES, flag_MG) {
         label: "flag/MG";
         name: string(STR_FLAG_MG);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_MG;}
+}
 
 	
 item (FEAT_BADGES, flag_MW) {
@@ -1392,7 +1871,9 @@ item (FEAT_BADGES, flag_MW) {
         label: "flag/MW";
         name: string(STR_FLAG_MW);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_MW;}
+}
 
 	
 item (FEAT_BADGES, flag_MY) {
@@ -1400,7 +1881,9 @@ item (FEAT_BADGES, flag_MY) {
         label: "flag/MY";
         name: string(STR_FLAG_MY);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_MY;}
+}
 
 	
 item (FEAT_BADGES, flag_MV) {
@@ -1408,7 +1891,9 @@ item (FEAT_BADGES, flag_MV) {
         label: "flag/MV";
         name: string(STR_FLAG_MV);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_MV;}
+}
 
 	
 item (FEAT_BADGES, flag_ML) {
@@ -1416,7 +1901,9 @@ item (FEAT_BADGES, flag_ML) {
         label: "flag/ML";
         name: string(STR_FLAG_ML);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_ML;}
+}
 
 	
 item (FEAT_BADGES, flag_MT) {
@@ -1424,7 +1911,9 @@ item (FEAT_BADGES, flag_MT) {
         label: "flag/MT";
         name: string(STR_FLAG_MT);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_MT;}
+}
 
 	
 item (FEAT_BADGES, flag_MH) {
@@ -1432,7 +1921,9 @@ item (FEAT_BADGES, flag_MH) {
         label: "flag/MH";
         name: string(STR_FLAG_MH);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_MH;}
+}
 
 	
 item (FEAT_BADGES, flag_MQ) {
@@ -1440,7 +1931,9 @@ item (FEAT_BADGES, flag_MQ) {
         label: "flag/MQ";
         name: string(STR_FLAG_MQ);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_MQ;}
+}
 
 	
 item (FEAT_BADGES, flag_MR) {
@@ -1448,7 +1941,9 @@ item (FEAT_BADGES, flag_MR) {
         label: "flag/MR";
         name: string(STR_FLAG_MR);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_MR;}
+}
 
 	
 item (FEAT_BADGES, flag_MU) {
@@ -1456,7 +1951,9 @@ item (FEAT_BADGES, flag_MU) {
         label: "flag/MU";
         name: string(STR_FLAG_MU);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_MU;}
+}
 
 	
 item (FEAT_BADGES, flag_YT) {
@@ -1464,7 +1961,9 @@ item (FEAT_BADGES, flag_YT) {
         label: "flag/YT";
         name: string(STR_FLAG_YT);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_YT;}
+}
 
 	
 item (FEAT_BADGES, flag_MX) {
@@ -1472,7 +1971,9 @@ item (FEAT_BADGES, flag_MX) {
         label: "flag/MX";
         name: string(STR_FLAG_MX);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_MX;}
+}
 
 	
 item (FEAT_BADGES, flag_FM) {
@@ -1480,7 +1981,9 @@ item (FEAT_BADGES, flag_FM) {
         label: "flag/FM";
         name: string(STR_FLAG_FM);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_FM;}
+}
 
 	
 item (FEAT_BADGES, flag_MD) {
@@ -1488,7 +1991,9 @@ item (FEAT_BADGES, flag_MD) {
         label: "flag/MD";
         name: string(STR_FLAG_MD);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_MD;}
+}
 
 	
 item (FEAT_BADGES, flag_MC) {
@@ -1496,7 +2001,9 @@ item (FEAT_BADGES, flag_MC) {
         label: "flag/MC";
         name: string(STR_FLAG_MC);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_MC;}
+}
 
 	
 item (FEAT_BADGES, flag_MN) {
@@ -1504,7 +2011,9 @@ item (FEAT_BADGES, flag_MN) {
         label: "flag/MN";
         name: string(STR_FLAG_MN);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_MN;}
+}
 
 	
 item (FEAT_BADGES, flag_ME) {
@@ -1512,7 +2021,9 @@ item (FEAT_BADGES, flag_ME) {
         label: "flag/ME";
         name: string(STR_FLAG_ME);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_ME;}
+}
 
 	
 item (FEAT_BADGES, flag_MS) {
@@ -1520,7 +2031,9 @@ item (FEAT_BADGES, flag_MS) {
         label: "flag/MS";
         name: string(STR_FLAG_MS);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_MS;}
+}
 
 	
 item (FEAT_BADGES, flag_MA) {
@@ -1528,7 +2041,9 @@ item (FEAT_BADGES, flag_MA) {
         label: "flag/MA";
         name: string(STR_FLAG_MA);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_MA;}
+}
 
 	
 item (FEAT_BADGES, flag_MZ) {
@@ -1536,7 +2051,9 @@ item (FEAT_BADGES, flag_MZ) {
         label: "flag/MZ";
         name: string(STR_FLAG_MZ);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_MZ;}
+}
 
 	
 item (FEAT_BADGES, flag_MM) {
@@ -1544,7 +2061,9 @@ item (FEAT_BADGES, flag_MM) {
         label: "flag/MM";
         name: string(STR_FLAG_MM);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_MM;}
+}
 
 	
 item (FEAT_BADGES, flag_NA) {
@@ -1552,7 +2071,9 @@ item (FEAT_BADGES, flag_NA) {
         label: "flag/NA";
         name: string(STR_FLAG_NA);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_NA;}
+}
 
 	
 item (FEAT_BADGES, flag_NR) {
@@ -1560,7 +2081,9 @@ item (FEAT_BADGES, flag_NR) {
         label: "flag/NR";
         name: string(STR_FLAG_NR);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_NR;}
+}
 
 	
 item (FEAT_BADGES, flag_NP) {
@@ -1568,7 +2091,9 @@ item (FEAT_BADGES, flag_NP) {
         label: "flag/NP";
         name: string(STR_FLAG_NP);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_NP;}
+}
 
 	
 item (FEAT_BADGES, flag_NL) {
@@ -1576,7 +2101,9 @@ item (FEAT_BADGES, flag_NL) {
         label: "flag/NL";
         name: string(STR_FLAG_NL);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_NL;}
+}
 
 	
 item (FEAT_BADGES, flag_NC) {
@@ -1584,7 +2111,9 @@ item (FEAT_BADGES, flag_NC) {
         label: "flag/NC";
         name: string(STR_FLAG_NC);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_NC;}
+}
 
 	
 item (FEAT_BADGES, flag_NZ) {
@@ -1592,7 +2121,9 @@ item (FEAT_BADGES, flag_NZ) {
         label: "flag/NZ";
         name: string(STR_FLAG_NZ);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_NZ;}
+}
 
 	
 item (FEAT_BADGES, flag_NI) {
@@ -1600,7 +2131,9 @@ item (FEAT_BADGES, flag_NI) {
         label: "flag/NI";
         name: string(STR_FLAG_NI);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_NI;}
+}
 
 	
 item (FEAT_BADGES, flag_NE) {
@@ -1608,7 +2141,9 @@ item (FEAT_BADGES, flag_NE) {
         label: "flag/NE";
         name: string(STR_FLAG_NE);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_NE;}
+}
 
 	
 item (FEAT_BADGES, flag_NG) {
@@ -1616,7 +2151,9 @@ item (FEAT_BADGES, flag_NG) {
         label: "flag/NG";
         name: string(STR_FLAG_NG);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_NG;}
+}
 
 	
 item (FEAT_BADGES, flag_NU) {
@@ -1624,7 +2161,9 @@ item (FEAT_BADGES, flag_NU) {
         label: "flag/NU";
         name: string(STR_FLAG_NU);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_NU;}
+}
 
 	
 item (FEAT_BADGES, flag_NF) {
@@ -1632,7 +2171,9 @@ item (FEAT_BADGES, flag_NF) {
         label: "flag/NF";
         name: string(STR_FLAG_NF);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_NF;}
+}
 
 	
 item (FEAT_BADGES, flag_MP) {
@@ -1640,7 +2181,9 @@ item (FEAT_BADGES, flag_MP) {
         label: "flag/MP";
         name: string(STR_FLAG_MP);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_MP;}
+}
 
 	
 item (FEAT_BADGES, flag_NO) {
@@ -1648,7 +2191,9 @@ item (FEAT_BADGES, flag_NO) {
         label: "flag/NO";
         name: string(STR_FLAG_NO);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_NO;}
+}
 
 	
 item (FEAT_BADGES, flag_OM) {
@@ -1656,7 +2201,9 @@ item (FEAT_BADGES, flag_OM) {
         label: "flag/OM";
         name: string(STR_FLAG_OM);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_OM;}
+}
 
 	
 item (FEAT_BADGES, flag_PK) {
@@ -1664,7 +2211,9 @@ item (FEAT_BADGES, flag_PK) {
         label: "flag/PK";
         name: string(STR_FLAG_PK);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_PK;}
+}
 
 	
 item (FEAT_BADGES, flag_PW) {
@@ -1672,7 +2221,9 @@ item (FEAT_BADGES, flag_PW) {
         label: "flag/PW";
         name: string(STR_FLAG_PW);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_PW;}
+}
 
 	
 item (FEAT_BADGES, flag_PS) {
@@ -1680,7 +2231,9 @@ item (FEAT_BADGES, flag_PS) {
         label: "flag/PS";
         name: string(STR_FLAG_PS);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_PS;}
+}
 
 	
 item (FEAT_BADGES, flag_PA) {
@@ -1688,7 +2241,9 @@ item (FEAT_BADGES, flag_PA) {
         label: "flag/PA";
         name: string(STR_FLAG_PA);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_PA;}
+}
 
 	
 item (FEAT_BADGES, flag_PG) {
@@ -1696,7 +2251,9 @@ item (FEAT_BADGES, flag_PG) {
         label: "flag/PG";
         name: string(STR_FLAG_PG);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_PG;}
+}
 
 	
 item (FEAT_BADGES, flag_PY) {
@@ -1704,7 +2261,9 @@ item (FEAT_BADGES, flag_PY) {
         label: "flag/PY";
         name: string(STR_FLAG_PY);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_PY;}
+}
 
 	
 item (FEAT_BADGES, flag_PE) {
@@ -1712,7 +2271,9 @@ item (FEAT_BADGES, flag_PE) {
         label: "flag/PE";
         name: string(STR_FLAG_PE);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_PE;}
+}
 
 	
 item (FEAT_BADGES, flag_PH) {
@@ -1720,7 +2281,9 @@ item (FEAT_BADGES, flag_PH) {
         label: "flag/PH";
         name: string(STR_FLAG_PH);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_PH;}
+}
 
 	
 item (FEAT_BADGES, flag_PN) {
@@ -1728,7 +2291,9 @@ item (FEAT_BADGES, flag_PN) {
         label: "flag/PN";
         name: string(STR_FLAG_PN);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_PN;}
+}
 
 	
 item (FEAT_BADGES, flag_PL) {
@@ -1736,7 +2301,9 @@ item (FEAT_BADGES, flag_PL) {
         label: "flag/PL";
         name: string(STR_FLAG_PL);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_PL;}
+}
 
 	
 item (FEAT_BADGES, flag_PT) {
@@ -1744,7 +2311,9 @@ item (FEAT_BADGES, flag_PT) {
         label: "flag/PT";
         name: string(STR_FLAG_PT);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_PT;}
+}
 
 	
 item (FEAT_BADGES, flag_PR) {
@@ -1752,7 +2321,9 @@ item (FEAT_BADGES, flag_PR) {
         label: "flag/PR";
         name: string(STR_FLAG_PR);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_PR;}
+}
 
 	
 item (FEAT_BADGES, flag_QA) {
@@ -1760,7 +2331,9 @@ item (FEAT_BADGES, flag_QA) {
         label: "flag/QA";
         name: string(STR_FLAG_QA);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_QA;}
+}
 
 	
 item (FEAT_BADGES, flag_RE) {
@@ -1768,7 +2341,9 @@ item (FEAT_BADGES, flag_RE) {
         label: "flag/RE";
         name: string(STR_FLAG_RE);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_RE;}
+}
 
 	
 item (FEAT_BADGES, flag_RO) {
@@ -1776,7 +2351,9 @@ item (FEAT_BADGES, flag_RO) {
         label: "flag/RO";
         name: string(STR_FLAG_RO);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_RO;}
+}
 
 	
 item (FEAT_BADGES, flag_RU) {
@@ -1784,7 +2361,9 @@ item (FEAT_BADGES, flag_RU) {
         label: "flag/RU";
         name: string(STR_FLAG_RU);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_RU;}
+}
 
 	
 item (FEAT_BADGES, flag_RW) {
@@ -1792,7 +2371,9 @@ item (FEAT_BADGES, flag_RW) {
         label: "flag/RW";
         name: string(STR_FLAG_RW);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_RW;}
+}
 
 	
 item (FEAT_BADGES, flag_BL) {
@@ -1800,7 +2381,9 @@ item (FEAT_BADGES, flag_BL) {
         label: "flag/BL";
         name: string(STR_FLAG_BL);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_BL;}
+}
 
 	
 item (FEAT_BADGES, flag_SH) {
@@ -1808,7 +2391,9 @@ item (FEAT_BADGES, flag_SH) {
         label: "flag/SH";
         name: string(STR_FLAG_SH);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_SH;}
+}
 
 	
 item (FEAT_BADGES, flag_KN) {
@@ -1816,7 +2401,9 @@ item (FEAT_BADGES, flag_KN) {
         label: "flag/KN";
         name: string(STR_FLAG_KN);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_KN;}
+}
 
 	
 item (FEAT_BADGES, flag_LC) {
@@ -1824,7 +2411,9 @@ item (FEAT_BADGES, flag_LC) {
         label: "flag/LC";
         name: string(STR_FLAG_LC);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_LC;}
+}
 
 	
 item (FEAT_BADGES, flag_MF) {
@@ -1832,7 +2421,9 @@ item (FEAT_BADGES, flag_MF) {
         label: "flag/MF";
         name: string(STR_FLAG_MF);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_MF;}
+}
 
 	
 item (FEAT_BADGES, flag_PM) {
@@ -1840,7 +2431,9 @@ item (FEAT_BADGES, flag_PM) {
         label: "flag/PM";
         name: string(STR_FLAG_PM);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_PM;}
+}
 
 	
 item (FEAT_BADGES, flag_VC) {
@@ -1848,7 +2441,9 @@ item (FEAT_BADGES, flag_VC) {
         label: "flag/VC";
         name: string(STR_FLAG_VC);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_VC;}
+}
 
 	
 item (FEAT_BADGES, flag_WS) {
@@ -1856,7 +2451,9 @@ item (FEAT_BADGES, flag_WS) {
         label: "flag/WS";
         name: string(STR_FLAG_WS);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_WS;}
+}
 
 	
 item (FEAT_BADGES, flag_SM) {
@@ -1864,7 +2461,9 @@ item (FEAT_BADGES, flag_SM) {
         label: "flag/SM";
         name: string(STR_FLAG_SM);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_SM;}
+}
 
 	
 item (FEAT_BADGES, flag_ST) {
@@ -1872,7 +2471,9 @@ item (FEAT_BADGES, flag_ST) {
         label: "flag/ST";
         name: string(STR_FLAG_ST);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_ST;}
+}
 
 	
 item (FEAT_BADGES, flag_SA) {
@@ -1880,7 +2481,9 @@ item (FEAT_BADGES, flag_SA) {
         label: "flag/SA";
         name: string(STR_FLAG_SA);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_SA;}
+}
 
 	
 item (FEAT_BADGES, flag_SN) {
@@ -1888,7 +2491,9 @@ item (FEAT_BADGES, flag_SN) {
         label: "flag/SN";
         name: string(STR_FLAG_SN);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_SN;}
+}
 
 	
 item (FEAT_BADGES, flag_RS) {
@@ -1896,7 +2501,9 @@ item (FEAT_BADGES, flag_RS) {
         label: "flag/RS";
         name: string(STR_FLAG_RS);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_RS;}
+}
 
 	
 item (FEAT_BADGES, flag_SC) {
@@ -1904,7 +2511,9 @@ item (FEAT_BADGES, flag_SC) {
         label: "flag/SC";
         name: string(STR_FLAG_SC);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_SC;}
+}
 
 	
 item (FEAT_BADGES, flag_SL) {
@@ -1912,7 +2521,9 @@ item (FEAT_BADGES, flag_SL) {
         label: "flag/SL";
         name: string(STR_FLAG_SL);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_SL;}
+}
 
 	
 item (FEAT_BADGES, flag_SG) {
@@ -1920,7 +2531,9 @@ item (FEAT_BADGES, flag_SG) {
         label: "flag/SG";
         name: string(STR_FLAG_SG);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_SG;}
+}
 
 	
 item (FEAT_BADGES, flag_SX) {
@@ -1928,7 +2541,9 @@ item (FEAT_BADGES, flag_SX) {
         label: "flag/SX";
         name: string(STR_FLAG_SX);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_SX;}
+}
 
 	
 item (FEAT_BADGES, flag_SK) {
@@ -1936,7 +2551,9 @@ item (FEAT_BADGES, flag_SK) {
         label: "flag/SK";
         name: string(STR_FLAG_SK);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_SK;}
+}
 
 	
 item (FEAT_BADGES, flag_SI) {
@@ -1944,7 +2561,9 @@ item (FEAT_BADGES, flag_SI) {
         label: "flag/SI";
         name: string(STR_FLAG_SI);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_SI;}
+}
 
 	
 item (FEAT_BADGES, flag_SB) {
@@ -1952,7 +2571,9 @@ item (FEAT_BADGES, flag_SB) {
         label: "flag/SB";
         name: string(STR_FLAG_SB);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_SB;}
+}
 
 	
 item (FEAT_BADGES, flag_SO) {
@@ -1960,7 +2581,9 @@ item (FEAT_BADGES, flag_SO) {
         label: "flag/SO";
         name: string(STR_FLAG_SO);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_SO;}
+}
 
 	
 item (FEAT_BADGES, flag_ZA) {
@@ -1968,7 +2591,9 @@ item (FEAT_BADGES, flag_ZA) {
         label: "flag/ZA";
         name: string(STR_FLAG_ZA);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_ZA;}
+}
 
 	
 item (FEAT_BADGES, flag_GS) {
@@ -1976,7 +2601,9 @@ item (FEAT_BADGES, flag_GS) {
         label: "flag/GS";
         name: string(STR_FLAG_GS);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_GS;}
+}
 
 	
 item (FEAT_BADGES, flag_SS) {
@@ -1984,7 +2611,9 @@ item (FEAT_BADGES, flag_SS) {
         label: "flag/SS";
         name: string(STR_FLAG_SS);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_SS;}
+}
 
 	
 item (FEAT_BADGES, flag_ES) {
@@ -1992,7 +2621,9 @@ item (FEAT_BADGES, flag_ES) {
         label: "flag/ES";
         name: string(STR_FLAG_ES);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_ES;}
+}
 
 	
 item (FEAT_BADGES, flag_LK) {
@@ -2000,7 +2631,9 @@ item (FEAT_BADGES, flag_LK) {
         label: "flag/LK";
         name: string(STR_FLAG_LK);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_LK;}
+}
 
 	
 item (FEAT_BADGES, flag_SD) {
@@ -2008,7 +2641,9 @@ item (FEAT_BADGES, flag_SD) {
         label: "flag/SD";
         name: string(STR_FLAG_SD);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_SD;}
+}
 
 	
 item (FEAT_BADGES, flag_SR) {
@@ -2016,7 +2651,9 @@ item (FEAT_BADGES, flag_SR) {
         label: "flag/SR";
         name: string(STR_FLAG_SR);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_SR;}
+}
 
 	
 item (FEAT_BADGES, flag_SJ) {
@@ -2024,7 +2661,9 @@ item (FEAT_BADGES, flag_SJ) {
         label: "flag/SJ";
         name: string(STR_FLAG_SJ);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_SJ;}
+}
 
 	
 item (FEAT_BADGES, flag_SZ) {
@@ -2032,7 +2671,9 @@ item (FEAT_BADGES, flag_SZ) {
         label: "flag/SZ";
         name: string(STR_FLAG_SZ);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_SZ;}
+}
 
 	
 item (FEAT_BADGES, flag_SE) {
@@ -2040,7 +2681,9 @@ item (FEAT_BADGES, flag_SE) {
         label: "flag/SE";
         name: string(STR_FLAG_SE);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_SE;}
+}
 
 	
 item (FEAT_BADGES, flag_CH) {
@@ -2048,7 +2691,9 @@ item (FEAT_BADGES, flag_CH) {
         label: "flag/CH";
         name: string(STR_FLAG_CH);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_CH;}
+}
 
 	
 item (FEAT_BADGES, flag_SY) {
@@ -2056,7 +2701,9 @@ item (FEAT_BADGES, flag_SY) {
         label: "flag/SY";
         name: string(STR_FLAG_SY);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_SY;}
+}
 
 	
 item (FEAT_BADGES, flag_TW) {
@@ -2064,7 +2711,9 @@ item (FEAT_BADGES, flag_TW) {
         label: "flag/TW";
         name: string(STR_FLAG_TW);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_TW;}
+}
 
 	
 item (FEAT_BADGES, flag_TJ) {
@@ -2072,7 +2721,9 @@ item (FEAT_BADGES, flag_TJ) {
         label: "flag/TJ";
         name: string(STR_FLAG_TJ);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_TJ;}
+}
 
 	
 item (FEAT_BADGES, flag_TZ) {
@@ -2080,7 +2731,9 @@ item (FEAT_BADGES, flag_TZ) {
         label: "flag/TZ";
         name: string(STR_FLAG_TZ);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_TZ;}
+}
 
 	
 item (FEAT_BADGES, flag_TH) {
@@ -2088,7 +2741,9 @@ item (FEAT_BADGES, flag_TH) {
         label: "flag/TH";
         name: string(STR_FLAG_TH);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_TH;}
+}
 
 	
 item (FEAT_BADGES, flag_TL) {
@@ -2096,7 +2751,9 @@ item (FEAT_BADGES, flag_TL) {
         label: "flag/TL";
         name: string(STR_FLAG_TL);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_TL;}
+}
 
 	
 item (FEAT_BADGES, flag_TG) {
@@ -2104,7 +2761,9 @@ item (FEAT_BADGES, flag_TG) {
         label: "flag/TG";
         name: string(STR_FLAG_TG);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_TG;}
+}
 
 	
 item (FEAT_BADGES, flag_TK) {
@@ -2112,7 +2771,9 @@ item (FEAT_BADGES, flag_TK) {
         label: "flag/TK";
         name: string(STR_FLAG_TK);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_TK;}
+}
 
 	
 item (FEAT_BADGES, flag_TO) {
@@ -2120,7 +2781,9 @@ item (FEAT_BADGES, flag_TO) {
         label: "flag/TO";
         name: string(STR_FLAG_TO);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_TO;}
+}
 
 	
 item (FEAT_BADGES, flag_TT) {
@@ -2128,7 +2791,9 @@ item (FEAT_BADGES, flag_TT) {
         label: "flag/TT";
         name: string(STR_FLAG_TT);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_TT;}
+}
 
 	
 item (FEAT_BADGES, flag_TN) {
@@ -2136,7 +2801,9 @@ item (FEAT_BADGES, flag_TN) {
         label: "flag/TN";
         name: string(STR_FLAG_TN);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_TN;}
+}
 
 	
 item (FEAT_BADGES, flag_TR) {
@@ -2144,7 +2811,9 @@ item (FEAT_BADGES, flag_TR) {
         label: "flag/TR";
         name: string(STR_FLAG_TR);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_TR;}
+}
 
 	
 item (FEAT_BADGES, flag_TM) {
@@ -2152,7 +2821,9 @@ item (FEAT_BADGES, flag_TM) {
         label: "flag/TM";
         name: string(STR_FLAG_TM);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_TM;}
+}
 
 	
 item (FEAT_BADGES, flag_TC) {
@@ -2160,7 +2831,9 @@ item (FEAT_BADGES, flag_TC) {
         label: "flag/TC";
         name: string(STR_FLAG_TC);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_TC;}
+}
 
 	
 item (FEAT_BADGES, flag_TV) {
@@ -2168,7 +2841,9 @@ item (FEAT_BADGES, flag_TV) {
         label: "flag/TV";
         name: string(STR_FLAG_TV);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_TV;}
+}
 
 	
 item (FEAT_BADGES, flag_UG) {
@@ -2176,7 +2851,9 @@ item (FEAT_BADGES, flag_UG) {
         label: "flag/UG";
         name: string(STR_FLAG_UG);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_UG;}
+}
 
 	
 item (FEAT_BADGES, flag_UA) {
@@ -2184,7 +2861,9 @@ item (FEAT_BADGES, flag_UA) {
         label: "flag/UA";
         name: string(STR_FLAG_UA);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_UA;}
+}
 
 	
 item (FEAT_BADGES, flag_AE) {
@@ -2192,7 +2871,9 @@ item (FEAT_BADGES, flag_AE) {
         label: "flag/AE";
         name: string(STR_FLAG_AE);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_AE;}
+}
 
 	
 item (FEAT_BADGES, flag_GB) {
@@ -2200,7 +2881,9 @@ item (FEAT_BADGES, flag_GB) {
         label: "flag/GB";
         name: string(STR_FLAG_GB);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_GB;}
+}
 
 	
 item (FEAT_BADGES, flag_US) {
@@ -2208,7 +2891,9 @@ item (FEAT_BADGES, flag_US) {
         label: "flag/US";
         name: string(STR_FLAG_US);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_US;}
+}
 
 	
 item (FEAT_BADGES, flag_UM) {
@@ -2216,7 +2901,9 @@ item (FEAT_BADGES, flag_UM) {
         label: "flag/UM";
         name: string(STR_FLAG_UM);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_UM;}
+}
 
 	
 item (FEAT_BADGES, flag_UY) {
@@ -2224,7 +2911,9 @@ item (FEAT_BADGES, flag_UY) {
         label: "flag/UY";
         name: string(STR_FLAG_UY);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_UY;}
+}
 
 	
 item (FEAT_BADGES, flag_UZ) {
@@ -2232,7 +2921,9 @@ item (FEAT_BADGES, flag_UZ) {
         label: "flag/UZ";
         name: string(STR_FLAG_UZ);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_UZ;}
+}
 
 	
 item (FEAT_BADGES, flag_VU) {
@@ -2240,7 +2931,9 @@ item (FEAT_BADGES, flag_VU) {
         label: "flag/VU";
         name: string(STR_FLAG_VU);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_VU;}
+}
 
 	
 item (FEAT_BADGES, flag_VE) {
@@ -2248,7 +2941,9 @@ item (FEAT_BADGES, flag_VE) {
         label: "flag/VE";
         name: string(STR_FLAG_VE);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_VE;}
+}
 
 	
 item (FEAT_BADGES, flag_VN) {
@@ -2256,7 +2951,9 @@ item (FEAT_BADGES, flag_VN) {
         label: "flag/VN";
         name: string(STR_FLAG_VN);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_VN;}
+}
 
 	
 item (FEAT_BADGES, flag_VG) {
@@ -2264,7 +2961,9 @@ item (FEAT_BADGES, flag_VG) {
         label: "flag/VG";
         name: string(STR_FLAG_VG);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_VG;}
+}
 
 	
 item (FEAT_BADGES, flag_VI) {
@@ -2272,7 +2971,9 @@ item (FEAT_BADGES, flag_VI) {
         label: "flag/VI";
         name: string(STR_FLAG_VI);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_VI;}
+}
 
 	
 item (FEAT_BADGES, flag_WF) {
@@ -2280,7 +2981,9 @@ item (FEAT_BADGES, flag_WF) {
         label: "flag/WF";
         name: string(STR_FLAG_WF);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_WF;}
+}
 
 	
 item (FEAT_BADGES, flag_EH) {
@@ -2288,7 +2991,9 @@ item (FEAT_BADGES, flag_EH) {
         label: "flag/EH";
         name: string(STR_FLAG_EH);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_EH;}
+}
 
 	
 item (FEAT_BADGES, flag_YE) {
@@ -2296,7 +3001,9 @@ item (FEAT_BADGES, flag_YE) {
         label: "flag/YE";
         name: string(STR_FLAG_YE);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_YE;}
+}
 
 	
 item (FEAT_BADGES, flag_ZM) {
@@ -2304,7 +3011,9 @@ item (FEAT_BADGES, flag_ZM) {
         label: "flag/ZM";
         name: string(STR_FLAG_ZM);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_ZM;}
+}
 
 	
 item (FEAT_BADGES, flag_ZW) {
@@ -2312,15 +3021,19 @@ item (FEAT_BADGES, flag_ZW) {
         label: "flag/ZW";
         name: string(STR_FLAG_ZW);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_ZW;}
+}
 
 	
-item (FEAT_BADGES, flag_europe) {
+item (FEAT_BADGES, flag_EU) {
     property {
-        label: "flag/europe";
-        name: string(STR_FLAG_EUROPE);
+        label: "flag/EU";
+        name: string(STR_FLAG_EU);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
-	}}
+	}
+	graphics {default: sprite_flag_EU;}
+}
 
 
 // Powers
@@ -2332,13 +3045,23 @@ item (FEAT_BADGES, power) {
 	}}
 
 	
+item (FEAT_BADGES, power_battery) {
+    property {
+        label: "power/battery";
+        name: string(STR_POWER_BATTERY);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}
+	graphics {default: sprite_power_battery;}
+}
+
+	
 item (FEAT_BADGES, power_diesel) {
     property {
         label: "power/diesel";
         name: string(STR_POWER_DIESEL);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
 	}
-	graphics {default: sprite_diesel;}
+	graphics {default: sprite_power_diesel;}
 }
 
 	
@@ -2348,7 +3071,7 @@ item (FEAT_BADGES, power_electric) {
         name: string(STR_POWER_ELECTRIC);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
 	}
-	graphics {default: sprite_electric;}
+	graphics {default: sprite_power_electric;}
 }
 
 	
@@ -2358,7 +3081,7 @@ item (FEAT_BADGES, power_electric_ac) {
         name: string(STR_POWER_ELECTRIC_AC);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
 	}
-	graphics {default: sprite_electric_ac;}
+	graphics {default: sprite_power_electric_ac;}
 }
 
 	
@@ -2368,7 +3091,7 @@ item (FEAT_BADGES, power_electric_dc) {
         name: string(STR_POWER_ELECTRIC_DC);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
 	}
-	graphics {default: sprite_electric_dc;}
+	graphics {default: sprite_power_electric_dc;}
 }
 
 	
@@ -2378,7 +3101,7 @@ item (FEAT_BADGES, power_steam) {
         name: string(STR_POWER_STEAM);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
 	}
-	graphics {default: sprite_steam;}
+	graphics {default: sprite_power_steam;}
 }
 
 	
@@ -2388,6 +3111,16 @@ item (FEAT_BADGES, power_turbine) {
         name: string(STR_POWER_TURBINE);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
 	}
-	graphics {default: sprite_turbine;}
+	graphics {default: sprite_power_turbine;}
+}
+
+	
+item (FEAT_BADGES, power_maglev) {
+    property {
+        label: "power/maglev";
+        name: string(STR_POWER_MAGLEV);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}
+	graphics {default: sprite_power_maglev;}
 }
 

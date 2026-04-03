@@ -39,6 +39,9 @@ item(FEAT_TRAINS, item_diesel_australia_queensland_railways_dl_class) {
         length: 5;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+
+badges: ["power/diesel", "flag/AU"];
+
     }
     graphics {
         purchase: spriteset_diesel_australia_queensland_railways_dl_class_purchase;

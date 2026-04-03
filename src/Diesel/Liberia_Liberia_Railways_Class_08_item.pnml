@@ -39,6 +39,9 @@ item(FEAT_TRAINS, item_diesel_liberia_liberia_railways_class_08) {
         length: 5;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+
+badges: ["power/diesel", "flag/LR"];
+
     }
     graphics {
         purchase: spriteset_diesel_liberia_liberia_railways_class_08_purchase;

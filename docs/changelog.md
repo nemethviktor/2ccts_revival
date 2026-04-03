@@ -1,12 +1,36 @@
 ### 2cc TrainsInNML (Revival) changelog
 
-**3.3-beta2 [20260xxx]**
+**3.3-beta2 [20260403]**
 - CODE CHANGES:
-	- TBA
+	- Badges! #1 -- need testing ofc but tentatively works.
 - VEHICLES CHANGES:
 	- Added `Alsthom AD30B` (Standard/Diesel)
 	- Added `Katanga Mikado 2-8-2` (Narrow/Steam)
 	- Reclassified `FS ALn 668` as template `TPL_01B`
+	- Ref items raised in #3:
+		-	Steam locomotive named China Railways H does not exist, it's actually a Russian class Kh assigned to the Chinese Eastern Railway so it should be renamed Chinese Eastern Railway Kh
+		-	Queensland Rail 400 does not exist, it's actually a South Australian Railways 400 'Redhen' so it should be renamed
+		-	The flags for Eritrea is upside down in the two purchase info, it should look like this:  (you can use that one I made it myself, just CC-BY me)
+		-	The ONCFM ZAB1000 should just be named ONCF ZAB1000 (because all the other ONCF trains just have ONCF designation, there is no point in having the "M" at the end).
+		-	The South West African 2-8-0 is assigned to Angola, but it was actually a Namibian train: flag here  (CC-BY me)
+		-	German trains are all over the place, some of them have the old designation, some of them the new one with the old one as the "nickname". I'd suggest using the designation at the time they were delivered to keep consistent with the rest, which entails to:
+			-	Renaming the DB 19.0 "Saxon XX HV" to simply Saxon XX HV
+			-	Renaming the DB 99.51-60 "Saxon IV K" to simply Saxon IV K
+		-	South African trains don't have the proper operator:
+		-	The SAR 20E have been made after the restructuring of South African Railways into Transnet, and it's nicknamed "China Doll" so it should be renamed TFR 20E 'China Doll'
+		-	The SAR Afro 4000 is similarly operated by PRASA, so should be named PRASA Afro 4000
+		-	The SAR E38 is similarly operated by Amcoal, so should be named Amcoal E38.
+		-	SAR 25 is nicknamed 'Condenser' so it should be renamed SAR 25 'Condenser'
+		-	The Camrail ZE 500 (which is an export version of CP 9600) has incorrect properties: power should be 281 kW / 376 hp, and tractive effort coefficient should be 0.12.
+		-	The EFE Buscarril has serial number SB-56 so it should be renamed EFE SB-56 'Buscarril'
+		-	South African trains have properties that don't match their real counterparts:
+		-	The SAR 5M2 EMU have a head capacity of 56, not 52 (the wagons still have a capacity of 52); their introduction year is 1958, not 1954; their tractive effort coefficient is 0.27, not 0.26; and their power is 2480hp not 1240hp (since each motor coach has 1240hp)
+		-	The SAR 20E have a power of 4000hp, not 4155hp, and a tractive effort coefficient of 0.38, not 0.45.
+		-	The SAR 5E1 (with a date of 1965 it would be a Series 4) has a power of 1953hp, not 1456hp, and a tractive effort coefficient of 0.15, not 0.29.
+		-	The SAR 6E has a power of 3020hp, not 3300hp, a speed of 113km/h, not 115km/h, a tractive effort coefficient of 0.22, not 0.36.
+		-	The SAR 7E has a tractive effort coefficient of 0.25 not 0.24.
+		-	The SAR ES has a power of 1202hp not 1200hp, and a tractive effort coefficient of 0.11 not 0.26.
+		-	The CSAR railmotor has a weight of 48t not 35t and a tractive effort coefficient of 0.08 not 0.33.
 	
 
 **3.3-beta1 [20260401]**

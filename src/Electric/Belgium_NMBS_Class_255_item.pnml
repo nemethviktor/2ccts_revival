@@ -39,6 +39,9 @@ item(FEAT_TRAINS, item_electric_belgium_nmbs_class_255) {
         length: 8;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+
+badges: ["power/electric", "flag/BE"];
+
     }
     graphics {
         purchase: spriteset_electric_belgium_nmbs_class_255_purchase;

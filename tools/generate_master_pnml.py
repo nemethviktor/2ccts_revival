@@ -51,7 +51,7 @@ def generate_master_pnml():
         ("// Can (not) attach vehcile", 'src/wagon_attach.pnml'),
         ("// Capacities", 'src/capacities.pnml'),
         ("// Rail types", 'src/railtypetable.pnml'),
-        # ("// Badges", 'src/badgetable.pnml'),
+        ("// Badges", 'src/badgetable.pnml'),
         ("// Purchase text switch", 'src/purchasetext.pnml'),
         ("// Cleanup", 'src/undefine_properties.pnml')
     ]

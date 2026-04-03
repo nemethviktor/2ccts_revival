@@ -39,6 +39,9 @@ item(FEAT_TRAINS, item_electric_usa_prr_e44) {
         length: 8;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+
+badges: ["power/electric", "flag/US"];
+
     }
     graphics {
         purchase: spriteset_electric_usa_prr_e44_purchase;

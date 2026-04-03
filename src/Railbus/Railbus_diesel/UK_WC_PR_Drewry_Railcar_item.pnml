@@ -54,6 +54,9 @@ item(FEAT_TRAINS, item_rbd_uk_wc_pr_drewry_railcar) {
         length: 4;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+
+badges: ["power/diesel", "flag/GB"];
+
     }
     graphics {
         purchase: spriteset_rbd_uk_wc_pr_drewry_railcar_purchase;

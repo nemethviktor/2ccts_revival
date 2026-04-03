@@ -39,6 +39,9 @@ item(FEAT_TRAINS, item_electric_india_indian_railways_wcg_1) {
         length: 8;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+
+badges: ["power/electric", "flag/IN"];
+
     }
     graphics {
         purchase: spriteset_electric_india_indian_railways_wcg_1_purchase;

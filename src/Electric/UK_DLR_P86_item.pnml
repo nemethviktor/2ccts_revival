@@ -39,6 +39,9 @@ item(FEAT_TRAINS, item_mtro_uk_dlr_p86) {
         length: 6;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+
+badges: ["power/maglev", "flag/GB"];
+
     }
     graphics {
         purchase: spriteset_mtro_uk_dlr_p86_purchase;

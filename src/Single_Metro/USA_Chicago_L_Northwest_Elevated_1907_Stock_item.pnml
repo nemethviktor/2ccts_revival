@@ -54,6 +54,9 @@ item(FEAT_TRAINS, item_singlemtro_usa_chicago_l_northwest_elevated_1907_stock) {
         length: 8;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+
+badges: ["power/maglev", "flag/US"];
+
     }
     graphics {
         purchase: spriteset_singlemtro_usa_chicago_l_northwest_elevated_1907_stock_purchase;

@@ -39,6 +39,9 @@ item(FEAT_TRAINS, item_diesel_belarus_bch_2te10m) {
         length: 8;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+
+badges: ["power/diesel", "flag/BY"];
+
     }
     graphics {
         purchase: spriteset_diesel_belarus_bch_2te10m_purchase;

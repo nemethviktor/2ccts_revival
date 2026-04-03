@@ -54,6 +54,9 @@ item(FEAT_TRAINS, item_emu_australia_sydney_trains_a_set_waratah) {
         length: 8;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+
+badges: ["power/electric", "flag/AU"];
+
     }
     graphics {
         purchase: spriteset_emu_australia_sydney_trains_a_set_waratah_purchase;

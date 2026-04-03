@@ -54,6 +54,9 @@ item(FEAT_TRAINS, item_rbd_australia_nswgr_class_400) {
         length: 7;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+
+badges: ["power/diesel", "flag/AU"];
+
     }
     graphics {
         purchase: spriteset_rbd_australia_nswgr_class_400_purchase;

@@ -34,13 +34,13 @@ item(FEAT_TRAINS, item_rbs_south_africa_csar_railmotor) {
         vehicle_life: 15;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 17.53047;
+        cost_factor: 18.83047;
         running_cost_factor: 13.69474;
         speed: 60 km/h;
         power: 86 hp;
         cargo_capacity: 50;
-        weight: 35 ton;
-        tractive_effort_coefficient: 0.33;
+        weight: 48 ton;
+        tractive_effort_coefficient: 0.08;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -59,6 +59,9 @@ item(FEAT_TRAINS, item_rbs_south_africa_csar_railmotor) {
         length: 8;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+
+badges: ["power/steam", "flag/ZA"];
+
     }
     graphics {
         cargo_capacity: switch_rbs_south_africa_csar_railmotor_capacity_position;

@@ -54,6 +54,9 @@ item(FEAT_TRAINS, item_emu_europe_sureot) {
         length: 8;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+
+badges: ["power/electric", "flag/EU"];
+
     }
     graphics {
         purchase: spriteset_emu_europe_sureot_purchase;

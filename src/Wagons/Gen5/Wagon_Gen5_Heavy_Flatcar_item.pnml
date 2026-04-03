@@ -54,6 +54,9 @@ item(FEAT_TRAINS, item_mu_wagon_gen5_heavy_flatcar) {
         length: 8;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+
+badges: ["power/diesel"];
+
     }
     graphics {
         purchase: spriteset_mu_wagon_gen5_heavy_flatcar_purchase;

@@ -39,6 +39,9 @@ item(FEAT_TRAINS, item_electric_brasil_rffsa_ge_c_c_4400) {
         length: 7;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+
+badges: ["power/electric", "flag/BR"];
+
     }
     graphics {
         purchase: spriteset_electric_brasil_rffsa_ge_c_c_4400_purchase;

@@ -54,6 +54,9 @@ item(FEAT_TRAINS, item_dmu_germany_db_612_regio_swinger) {
         length: 8;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+
+badges: ["power/diesel", "flag/DE"];
+
     }
     graphics {
         purchase: spriteset_dmu_germany_db_612_regio_swinger_purchase;

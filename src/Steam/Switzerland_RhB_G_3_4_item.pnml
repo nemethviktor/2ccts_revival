@@ -39,6 +39,9 @@ item(FEAT_TRAINS, item_steam_switzerland_rhb_g_3_4) {
         length: 6;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+
+badges: ["power/steam", "flag/CH"];
+
     }
     graphics {
         purchase: spriteset_steam_switzerland_rhb_g_3_4_purchase;

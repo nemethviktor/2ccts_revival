@@ -54,6 +54,9 @@ item(FEAT_TRAINS, item_mglv_wagon_gen7m_gondola) {
         length: 8;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+
+badges: ["power/maglev"];
+
     }
     graphics {
         purchase: spriteset_mglv_wagon_gen7m_gondola_purchase;

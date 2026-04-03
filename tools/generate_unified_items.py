@@ -14,23 +14,41 @@ def load_master_data(excel_path):
     print("--- Loading and Merging Excel Sheets ---")
     sheets = pd.read_excel(excel_path, sheet_name=None)
 
-    # 1. Start with the 'control' sheet as the base (defines what to generate)
+    # 1. Start with the 'control' sheet as the base
     df_master = sheets['control']
 
-    # 2. List of sheets that provide extra vehicle properties (keyed by VEHIDCODE)
+    # 2. List of sheets that provide extra vehicle properties
     data_sheets = [
         'properties', 'constants', 'flags', 'track_types',
         'regions', 'graphics_properties'
     ]
 
+    # Define which columns MUST be treated as strings to avoid the float/NaN trap
+    text_columns = ['COUNTRY', 'COUNTRY_CODE',
+                    'ITEM', 'NAME', 'VEHIDCODE', 'CARGODEF']
+
     for sheet_name in data_sheets:
         if sheet_name in sheets:
-            # Merge on VEHIDCODE. 'left' join ensures we keep only what's in 'control'
+            current_sheet = sheets[sheet_name]
+
+            # 1. Only convert specific columns to string if they exist in this sheet
+            cols_to_fix = [
+                c for c in text_columns if c in current_sheet.columns]
+            for col in cols_to_fix:
+                current_sheet[col] = current_sheet[col].astype(
+                    str).replace('nan', '')
+
+            # 2. Find columns in the new sheet that already exist in the master
+            # (But don't include our merge key 'VEHIDCODE')
+            overlapping_cols = [c for c in current_sheet.columns
+                                if c in df_master.columns and c != 'VEHIDCODE']
+
+            # 3. Drop the old/empty versions from the master
+            df_master = df_master.drop(columns=overlapping_cols)
+
+            # 4. Merge. The 'current_sheet' now has the correct types for text and numbers.
             df_master = pd.merge(
-                df_master, sheets[sheet_name], on='VEHIDCODE', how='left', suffixes=('', '_dup'))
-            # Drop any duplicate columns created by the merge
-            df_master = df_master.loc[:, ~
-                                      df_master.columns.str.endswith('_dup')]
+                df_master, current_sheet, on='VEHIDCODE', how='left')
 
     # 3. Load the Lookups and Copyright (Global data)
     df_cost_lookup = sheets['cost_lookup'].set_index('COST_CAT').fillna(0)
@@ -56,10 +74,16 @@ def get_badges(row: pd.Series) -> str:
     # example: badges: ["type/bus", "power/diesel", "flag/flag_CC", "usage/city"];
     # ok that's from a bus-nml but docu is s.it and can't find a better one.
     power = row['ENGINE_CLASS'].lower()
-    if power == 'maglev':
-        power = 'electric'
-    return f"""
-        badges: ["power/{power}"];\n"""
+    flag = row['COUNTRY_CODE'].upper()
+    badges = []
+    if power != "":
+        badges.append(f"power/{power}")
+    if flag != "":
+        badges.append(f"flag/{flag}")
+
+    badge_string = '", "'.join(badges)
+
+    return f"""\nbadges: ["{badge_string}"];\n"""
 
 
 # --- Newton-Raphson Emulation (Matches NML SQRT) ---
@@ -610,7 +634,7 @@ def generate_unified_items():
             f"        bitmask_vehicle_info: {row['BITMASK_VEHICLE_INFO']};\n")
 
         # Badges (ignore for now)
-        # content.append(f"{get_badges(row)}\n")
+        content.append(f"{get_badges(row)}\n")
         content.append("    }\n")
         # Graphics selection/overrides
         content.append("    graphics {\n")

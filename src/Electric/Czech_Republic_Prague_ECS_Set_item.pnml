@@ -39,6 +39,9 @@ item(FEAT_TRAINS, item_mtro_czech_republic_prague_ecs_set) {
         length: 8;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+
+badges: ["power/maglev", "flag/CZ"];
+
     }
     graphics {
         purchase: spriteset_mtro_czech_republic_prague_ecs_set_purchase;

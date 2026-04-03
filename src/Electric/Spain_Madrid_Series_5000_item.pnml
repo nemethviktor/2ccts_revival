@@ -39,6 +39,9 @@ item(FEAT_TRAINS, item_mtro_spain_madrid_series_5000) {
         length: 8;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+
+badges: ["power/maglev", "flag/ES"];
+
     }
     graphics {
         purchase: spriteset_mtro_spain_madrid_series_5000_purchase;

@@ -54,6 +54,9 @@ item(FEAT_TRAINS, item_emu_czech_republic_cd_680_pendolino) {
         length: 8;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+
+badges: ["power/electric", "flag/CZ"];
+
     }
     graphics {
         purchase: spriteset_emu_czech_republic_cd_680_pendolino_purchase;

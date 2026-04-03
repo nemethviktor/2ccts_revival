@@ -39,6 +39,9 @@ item(FEAT_TRAINS, item_electric_uk_ner_es1) {
         length: 6;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+
+badges: ["power/electric", "flag/GB"];
+
     }
     graphics {
         purchase: spriteset_electric_uk_ner_es1_purchase;

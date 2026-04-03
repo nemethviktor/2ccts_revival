@@ -39,6 +39,9 @@ item(FEAT_TRAINS, item_diesel_egypt_enr_te114e) {
         length: 7;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+
+badges: ["power/diesel", "flag/EG"];
+
     }
     graphics {
         purchase: spriteset_diesel_egypt_enr_te114e_purchase;

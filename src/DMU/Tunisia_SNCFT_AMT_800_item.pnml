@@ -54,6 +54,9 @@ item(FEAT_TRAINS, item_dmu_tunisia_sncft_amt_800) {
         length: 8;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+
+badges: ["power/diesel", "flag/TN"];
+
     }
     graphics {
         purchase: spriteset_dmu_tunisia_sncft_amt_800_purchase;

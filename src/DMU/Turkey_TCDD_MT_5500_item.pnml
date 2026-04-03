@@ -54,6 +54,9 @@ item(FEAT_TRAINS, item_dmu_turkey_tcdd_mt_5500) {
         length: 8;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+
+badges: ["power/diesel"];
+
     }
     graphics {
         purchase: spriteset_dmu_turkey_tcdd_mt_5500_purchase;

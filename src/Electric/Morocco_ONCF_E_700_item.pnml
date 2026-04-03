@@ -39,6 +39,9 @@ item(FEAT_TRAINS, item_electric_morocco_oncf_e_700) {
         length: 6;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+
+badges: ["power/electric", "flag/MA"];
+
     }
     graphics {
         purchase: spriteset_electric_morocco_oncf_e_700_purchase;

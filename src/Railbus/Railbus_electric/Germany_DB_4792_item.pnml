@@ -54,6 +54,9 @@ item(FEAT_TRAINS, item_rbe_germany_db_4792) {
         length: 5;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+
+badges: ["power/electric", "flag/DE"];
+
     }
     graphics {
         purchase: spriteset_rbe_germany_db_4792_purchase;

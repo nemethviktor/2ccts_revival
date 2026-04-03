@@ -54,6 +54,9 @@ item(FEAT_TRAINS, item_emu_austria_westbahn_4010_kiss) {
         length: 8;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+
+badges: ["power/electric", "flag/AT"];
+
     }
     graphics {
         purchase: spriteset_emu_austria_westbahn_4010_kiss_purchase;

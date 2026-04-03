@@ -39,6 +39,9 @@ item(FEAT_TRAINS, item_diesel_germany_db_kof_ii) {
         length: 4;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+
+badges: ["power/diesel", "flag/DE"];
+
     }
     graphics {
         purchase: spriteset_diesel_germany_db_kof_ii_purchase;

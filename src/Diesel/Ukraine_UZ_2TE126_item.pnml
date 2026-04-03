@@ -39,6 +39,9 @@ item(FEAT_TRAINS, item_diesel_ukraine_uz_2te126) {
         length: 8;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+
+badges: ["power/diesel", "flag/UA"];
+
     }
     graphics {
         purchase: spriteset_diesel_ukraine_uz_2te126_purchase;

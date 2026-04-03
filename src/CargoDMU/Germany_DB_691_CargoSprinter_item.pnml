@@ -39,6 +39,9 @@ item(FEAT_TRAINS, item_cargodmu_germany_db_691_cargosprinter) {
         length: 8;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+
+badges: ["power/diesel", "flag/DE"];
+
     }
     graphics {
         purchase: spriteset_cargodmu_germany_db_691_cargosprinter_purchase;

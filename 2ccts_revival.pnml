@@ -27,6 +27,8 @@
 #include "src/capacities.pnml"
 // Rail types
 #include "src/railtypetable.pnml"
+// Badges
+#include "src/badgetable.pnml"
 // Purchase text switch
 #include "src/purchasetext.pnml"
 // Cleanup

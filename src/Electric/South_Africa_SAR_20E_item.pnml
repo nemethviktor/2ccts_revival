@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_electric_south_africa_sar_20e) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 73.57714;
-        running_cost_factor: 64.56406;
+        cost_factor: 72.36302;
+        running_cost_factor: 63.34995;
         speed: 100 km/h;
-        power: 4155 hp;
+        power: 4000 hp;
         cargo_capacity: 0;
         weight: 86 ton;
-        tractive_effort_coefficient: 0.45;
+        tractive_effort_coefficient: 0.32;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -39,6 +39,9 @@ item(FEAT_TRAINS, item_electric_south_africa_sar_20e) {
         length: 7;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+
+badges: ["power/electric"];
+
     }
     graphics {
         purchase: spriteset_electric_south_africa_sar_20e_purchase;

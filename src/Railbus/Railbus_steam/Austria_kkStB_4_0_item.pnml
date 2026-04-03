@@ -54,6 +54,9 @@ item(FEAT_TRAINS, item_rbs_austria_kkstb_4_0) {
         length: 5;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+
+badges: ["power/steam", "flag/AT"];
+
     }
     graphics {
         purchase: spriteset_rbs_austria_kkstb_4_0_purchase;
