@@ -476,6 +476,7 @@ STR_FLAG__YU                                                    :Yugoslavia
 STR_FLAG_GDR                                                    :East Germany
 STR_FLAG__SU                                                    :USSR
 STR_FLAG_EUROPE                                                 :Europe
+STR_FLAG_WRLD                                                   :World
 
 # Power types
 STR_POWER                                                       :Power

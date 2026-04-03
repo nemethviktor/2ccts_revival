@@ -261,7 +261,8 @@ spriteset (sprite_flag_EH) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/eh.png"]}
 spriteset (sprite_flag_YE) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/ye.png"]}
 spriteset (sprite_flag_ZM) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/zm.png"]}
 spriteset (sprite_flag_ZW) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/zw.png"]}
-spriteset (sprite_flag_EU) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/eu.png"]}badgetable {
+spriteset (sprite_flag_EU) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/eu.png"]}
+spriteset (sprite_flag_WRLD) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/wrld.png"]}badgetable {
 // Flags
 	"flag",
 	"flag/AF",
@@ -514,6 +515,7 @@ spriteset (sprite_flag_EU) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/eu.png"]}badge
 	"flag/ZM",
 	"flag/ZW",
 	"flag/EU",
+	"flag/WRLD",
 
 // Powers
 	"power",
@@ -3033,6 +3035,16 @@ item (FEAT_BADGES, flag_EU) {
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
 	}
 	graphics {default: sprite_flag_EU;}
+}
+
+	
+item (FEAT_BADGES, flag_WRLD) {
+    property {
+        label: "flag/WRLD";
+        name: string(STR_FLAG_WRLD);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}
+	graphics {default: sprite_flag_WRLD;}
 }
 
 

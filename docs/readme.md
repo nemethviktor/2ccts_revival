@@ -4,7 +4,7 @@ This project aims to capitalise on the work of Transportman, EmperorJake, Voyage
 
 That said, I've not worked on NML files before and my gfx skills are zero so if people will desire extra amendments that involve say new params or new graphics, they'll need to help out with them.
 
-In version `3.3-alpha1` I've added support for various track types and voltages. Need thorough testing though.
+There is now added support for various track types and voltages as well as badges. Need thorough testing though.
 
 
 ## Availability
@@ -16,7 +16,7 @@ The grf file is available on Github under [Releases](https://github.com/nemethvi
 
 You'll likely need [nmlc 0.8.1+](https://github.com/OpenTTD/nml/tree/master) to run the build and that seems to be around for Windows only. Get MinGW from [here](https://sourceforge.net/projects/mingw-w64/files/latest/download), install (you'll need the base and some compilers), then add the resulting folder's `bin` subfolder to `PATH` (ie `c:\MinGW\bin\`)
 
-You'll also need `python 3.13+`... with `pandas openpyxl`, which you get via `pip install pandas openpyxl`
+You'll also need `python 3.13+`... with `pandas openpyxl`, which you get via `pip install pandas openpyxl`. I think there may be a few more requirements now but they are all easy to find and pip will complain about them anyway.
 
 Run the `pybuild.bat`.
 
@@ -24,7 +24,7 @@ Run the `pybuild.bat`.
 
 I forked the original project because I was unsatisfied with the availability of items past Gen5 wagons and so the original aim was to extend that. However of course I'm hoping to keep the project running and extend it where possible. Not only a fair bit of time has passed since the mid 2010s when this was active (and a lot of new real vehicles have come out) but I think there'd be significant scope for extending _concept_ vehicles for future purposes because I personally find it boring that there are almost no new vehicles in any NewGRF past ~2020
 
-Please use github to submit requests of any kind, _don't use the OTTD forums_ - I'm not active there. Also preferably don't use Reddit, I'm a reader there but Github is easier to manage. You can also find me on Discord if you know where to look. 
+Please use github to submit requests of any kind, _don't use the OTTD forums_ - I'm not active there. Also preferably don't use Reddit, I'm a reader there but Github is easier to manage. You can also find me on Discord if you know where to look. You can find me on [Discord](https://discord.com/channels/142724111502802944/1483827768163827864) -- pls note I don't really react to DMs unless I have a vague idea as to who is contacting me but the link above takes to the relevant development channel, which is public.  
 
 ### Changes in logic vs the old code. (Purchase and maintenance costs)
 
