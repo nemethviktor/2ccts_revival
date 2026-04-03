@@ -16,23 +16,33 @@ def parse_gpl(gpl_path):
 
 
 def svg_to_pil_rgba(svg_path, width, height):
-    """Renders SVG using a hard-coded destination rect to force visibility."""
+    """Renders SVG by stretching its internal content to the 18x12 canvas."""
     with open(svg_path, 'rb') as f:
         svg_data = f.read()
 
     stream = skia.MemoryStream(svg_data)
     dom = skia.SVGDOM.MakeFromStream(stream)
 
-    # Use N32 (standard RGBA/BGRA) with Premultiplied Alpha
     surface = skia.Surface(width, height)
 
     with surface as canvas:
         canvas.clear(skia.ColorTRANSPARENT)
         if dom:
-            # Force the SVG to draw into the exact 18x12 box
-            # This bypasses scaling math that might be failing
-            dom.setContainerSize(skia.Size(width, height))
-            dom.render(canvas)
+            # 1. Get whatever size the SVG thinks it is
+            c_size = dom.containerSize()
+            svg_w, svg_h = c_size.width(), c_size.height()
+
+            # 2. If it has no size, try to look at the viewBox
+            # (Skia-python doesn't always expose getRoot, so we check containerSize first)
+            if svg_w <= 0 or svg_h <= 0:
+                # Fallback: Assume it's a unitless viewBox and force it to our target
+                dom.setContainerSize(skia.Size(width, height))
+                dom.render(canvas)
+            else:
+                # 3. If it HAS a size (the 'normal' flags), we MUST scale the canvas
+                # to map that size down to 18x12, otherwise it renders off-screen.
+                canvas.scale(width / svg_w, height / svg_h)
+                dom.render(canvas)
         else:
             print(f"FAILED TO LOAD SVG: {svg_path}")
 
@@ -40,8 +50,7 @@ def svg_to_pil_rgba(svg_path, width, height):
     if not image:
         return Image.new("RGBA", (width, height), (0, 0, 0, 0))
 
-    # Convert Skia surface to a PIL Image
-    # We use frombuffer with BGRA because that's Skia's default raster order
+    # Skia (BGRA) -> Pillow (RGBA)
     return Image.frombuffer("RGBA", (width, height), image.toarray(), "raw", "BGRA", 0, 1)
 
 
@@ -74,15 +83,21 @@ def process_flags_final_attempt(svg_folder, output_folder, gloss_path, gpl_path)
             # 1. Render SVG
             flag_rgba = svg_to_pil_rgba(svg_path, 18, 12)
 
-            # --- DEBUG: Verify if the flag is actually rendered ---
-            # If you still get blue files, uncomment the next line to see if the raw SVG is empty
-            # flag_rgba.save("debug_raw_" + file + ".png")
-
-            # 2. Layer Gloss
+            # 2. Layer Gloss (Only on the flag pixels)
             if gloss_img:
-                flag_rgba = Image.alpha_composite(flag_rgba, gloss_img)
+                # Create a blank transparent canvas the same size as the flag
+                gloss_layer = Image.new("RGBA", (18, 12), (0, 0, 0, 0))
+
+                # Use the flag's alpha channel as a mask to apply gloss ONLY to the flag
+                # This prevents gloss from bleeding into the 'Transparent Blue' area
+                flag_mask = flag_rgba.split()[3]
+                gloss_layer.paste(gloss_img, (0, 0), mask=flag_mask)
+
+                # Composite the masked gloss over the flag
+                flag_rgba = Image.alpha_composite(flag_rgba, gloss_layer)
 
             # 3. Flatten onto Index 0 Blue
+            # Now, the pixels at (0,0) are guaranteed to be exactly bg_color
             final_img = Image.new("RGB", (18, 12), bg_color)
             final_img.paste(flag_rgba, (0, 0), flag_rgba)
 
