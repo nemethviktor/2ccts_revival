@@ -475,6 +475,7 @@ def generate_unified_items():
         elif TEMPLATE_ID_FULL in [
             'TPL_03A',
             'TPL_03D',
+            'TPL_03G',
             'TPL_16A',
             'TPL_17A',
             'TPL_17B',
@@ -506,6 +507,7 @@ def generate_unified_items():
         graphics_switch_articulated_part = f"articulated_part: switch_{VEHIDCODE_lcase}_articulated;" if TEMPLATE_ID_FULL in [
             'TPL_03A',
             'TPL_03D',
+            'TPL_03G',
             'TPL_16A',
             'TPL_16A',
             'TPL_16B',
@@ -521,6 +523,7 @@ def generate_unified_items():
         graphics_switch_length = f"length: switch_{VEHIDCODE_lcase}_length;" if TEMPLATE_ID_FULL in [
             'TPL_03A',
             'TPL_03D',
+            'TPL_03G',
             'TPL_16A',
             'TPL_16B',
             'TPL_17C',
@@ -680,6 +683,7 @@ def generate_unified_items():
             'TPL_03A',
             'TPL_03D',
             'TPL_03F',
+            'TPL_03G',
             'TPL_16A',
             'TPL_16B',
             'TPL_17A',
@@ -698,6 +702,7 @@ def generate_unified_items():
             'TPL_03B',
             'TPL_03C',
             'TPL_03E',
+            'TPL_03G',
             'TPL_32B',
             'TPL_32C',
         ]:

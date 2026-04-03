@@ -1,5 +1,13 @@
 ### 2cc TrainsInNML (Revival) changelog
 
+
+**3.3-beta3 [202604xx]**
+- CODE CHANGES:
+	- Added template `TPL_03G` (12-len steam w tender)
+- VEHICLES CHANGES:
+	- Reclassified `USA_UP_4000_Big_Boy` as template `TPL_03G`
+
+
 **3.3-beta2 [20260403]**
 - CODE CHANGES:
 	- Badges! #1 -- need testing ofc but tentatively works.

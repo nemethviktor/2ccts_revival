@@ -214,6 +214,7 @@ def get_switch_length(*, vid: str, row,
                       first_deduct_from_position_in_vehid_chain_location: int = 1,
                       second_position_in_vehid_chain: Optional[int] = None,
                       second_deduct_from_position_in_vehid_chain_location: Optional[int] = None,
+                      second_deduct_from_legnth_location: Optional[int] = None,
                       fallback_length_defined: int = None) -> str:
     nml_code = []
 
@@ -224,8 +225,11 @@ def get_switch_length(*, vid: str, row,
 switch(FEAT_TRAINS, SELF, switch_{vid}_length, position_in_vehid_chain % {first_position_in_vehid_chain}) {{
     {0 if first_position_in_vehid_chain == 2 else first_position_in_vehid_chain-first_deduct_from_position_in_vehid_chain_location}: {row['LENGTH']};""")
     if second_deduct_from_position_in_vehid_chain_location:
+        length_to_use = row['LENGTH'] - \
+            second_deduct_from_legnth_location if second_deduct_from_legnth_location else row[
+                'LENGTH']
         nml_code.append(
-            f"\t{0 if second_position_in_vehid_chain == 2 else second_position_in_vehid_chain-second_deduct_from_position_in_vehid_chain_location}: {row['LENGTH']};""")
+            f"\t{0 if second_position_in_vehid_chain == 2 else second_position_in_vehid_chain-second_deduct_from_position_in_vehid_chain_location}: {length_to_use};""")
     nml_code.append(f"\t{fallback_length};\n}}")
 
     return "\n".join(nml_code)
@@ -937,6 +941,7 @@ def get_tpl_03(vid, gfx_path, row, template_amendment_code):
         D -> Non-Steam w / Tender
         E -> Same as A but no Visual Effect
         F -> Same as B but no Visual effect
+        G -> Same as A but 12 length
     """
 
     nml_code = []
@@ -944,6 +949,8 @@ def get_tpl_03(vid, gfx_path, row, template_amendment_code):
         purchase_coord_y = 96
     elif template_amendment_code in ['B', 'D', 'F']:
         purchase_coord_y = 64
+    elif template_amendment_code in ['G']:
+        purchase_coord_y = 192
 
     nml_code.append(get_purchase(vid=vid, gfx_path=gfx_path, purchase_x=1,
                                  purchase_y=purchase_coord_y, template_suffix=None))
@@ -965,12 +972,29 @@ def get_tpl_03(vid, gfx_path, row, template_amendment_code):
             vehicle_x=1, vehicle_y=1,
             template_suffix="2cc_engines_general",
             use_comment_as_spritename_suffix=True))
+    elif template_amendment_code in ['G']:
+        nml_code.append(get_vehicle(
+            vid=vid, gfx_path=gfx_path, title_comment='engine1',
+            vehicle_x=1, vehicle_y=1,
+            template_suffix="2cc_L12",
+            use_comment_as_spritename_suffix=True))
+        nml_code.append(get_vehicle(
+            vid=vid, gfx_path=gfx_path, title_comment='engine2',
+            vehicle_x=1, vehicle_y=64,
+            template_suffix="2cc_L12",
+            use_comment_as_spritename_suffix=True, dont_show_main_comment=True))
 
     if template_amendment_code in ['A', 'E']:
         nml_code.append(get_vehicle(
             vid=vid, gfx_path=gfx_path, title_comment='tender',
             vehicle_x=1, vehicle_y=64,
             template_suffix="2cc_engines_general",
+            use_comment_as_spritename_suffix=True, dont_show_main_comment=True))
+    elif template_amendment_code in ['G']:
+        nml_code.append(get_vehicle(
+            vid=vid, gfx_path=gfx_path, title_comment='tender',
+            vehicle_x=1, vehicle_y=128,
+            template_suffix="2cc_L12",
             use_comment_as_spritename_suffix=True, dont_show_main_comment=True))
     elif template_amendment_code in ['D', 'F']:
         if template_amendment_code == 'D':
@@ -991,7 +1015,7 @@ def get_tpl_03(vid, gfx_path, row, template_amendment_code):
                                             first_item_task="spriteset", second_item_task="spriteset",
                                             ))
 
-    if template_amendment_code in ['A', 'B', 'C', 'E']:
+    if template_amendment_code in ['A', 'B', 'C', 'E', 'G']:
         nml_code.append(get_motion_counter(
             vid=vid, switch_name_suffix="animation", state_0="engine1", state_default="engine2"))
 
@@ -1004,12 +1028,12 @@ def get_tpl_03(vid, gfx_path, row, template_amendment_code):
             f"{get_articulated_return(vid=vid, endvalue=1)}"
         )
 
-    if template_amendment_code == 'A':
+    if template_amendment_code in ['A']:
         nml_code.append(get_switch_position(vid=vid, position_in_vehid_chain=2,
                                             first_item_word='animation', second_item_word='tender',
                                             main_task="switch",
                                             first_item_location=0, second_item_location=None,
-                                            first_item_task="switch", second_item_task="spriteset",))
+                                            first_item_task="switch", second_item_task="spriteset"))
 
         nml_code.append(
             get_visual_effect_on_odd_even_position(vid=vid, position_in_vehid_chain=2))
@@ -1017,6 +1041,29 @@ def get_tpl_03(vid, gfx_path, row, template_amendment_code):
             get_switch_length(vid=vid, row=row, first_deduct_from_position_in_vehid_chain_location=2, first_position_in_vehid_chain=2))
         nml_code.append(
             get_articulated_return(vid=vid, endvalue=1))
+
+    elif template_amendment_code in ['G']:
+        nml_code.append(get_switch_position(vid=vid, position_in_vehid_chain=3,
+                                            first_item_word='animation', second_item_word='tender',
+                                            main_task="switch",
+                                            first_item_location=0, second_item_location=2,
+                                            first_item_task="switch", second_item_task="spriteset",
+                                            third_item_task="empty"))
+
+        nml_code.append(
+            get_visual_effect_on_odd_even_position(vid=vid, position_in_vehid_chain=3, deduct_from_position_for_first_return=3))
+        nml_code.append(
+            get_switch_length(vid=vid, row=row,
+                              first_position_in_vehid_chain=3,
+                              first_deduct_from_position_in_vehid_chain_location=3,
+                              second_position_in_vehid_chain=3,
+                              second_deduct_from_position_in_vehid_chain_location=1,
+                              second_deduct_from_legnth_location=1,
+                              fallback_length_defined=2,
+
+                              ))
+        nml_code.append(
+            get_articulated_return(vid=vid, endvalue=2))
     return '\n'.join(nml_code)
 
 
