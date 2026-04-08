@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A
+// Template: TPL_01A. Data from: https://en.wikipedia.org/wiki/Meitetsu_DeKi_400
 
 item(FEAT_TRAINS, item_electric_japan_aichi_railroad_deki_400) {
     property {
@@ -20,7 +20,7 @@ item(FEAT_TRAINS, item_electric_japan_aichi_railroad_deki_400) {
         power: 482 hp;
         cargo_capacity: 0;
         weight: 40 ton;
-        tractive_effort_coefficient: 0.12;
+        tractive_effort_coefficient: 0.199;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

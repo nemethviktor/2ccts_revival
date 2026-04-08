@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A
+// Template: TPL_01A. Data from: https://en.wikipedia.org/wiki/CI%C3%89_113_Class
 
 item(FEAT_TRAINS, item_diesel_ireland_cie_113) {
     property {
@@ -20,7 +20,7 @@ item(FEAT_TRAINS, item_diesel_ireland_cie_113) {
         power: 915 hp;
         cargo_capacity: 0;
         weight: 81 ton;
-        tractive_effort_coefficient: 0.25;
+        tractive_effort_coefficient: 0.258;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -29,7 +29,7 @@ item(FEAT_TRAINS, item_diesel_ireland_cie_113) {
         misc_flags: bitmask(TRAIN_FLAG_2CC);
         refit_cost: 0;
         ai_special_flag: AI_FLAG_CARGO;
-        track_type: [STANDARD_GAUGE_RAILTYPE_NONE];
+        track_type: [BROAD_GAUGE_RAILTYPE_NONE];
         running_cost_base: RUNNING_COST_DIESEL;
         engine_class: ENGINE_CLASS_DIESEL;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 0, DISABLE_WAGON_POWER);

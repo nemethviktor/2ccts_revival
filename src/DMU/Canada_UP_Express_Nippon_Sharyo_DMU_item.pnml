@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A
+// Template: TPL_02A. Data from: https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E8%BB%8A%E8%BC%8C%E8%A3%BD%E9%80%A0%E8%A3%BD%E5%8C%97%E3%82%A2%E3%83%A1%E3%83%AA%E3%82%AB%E5%90%91%E3%81%91%E6%B0%97%E5%8B%95%E8%BB%8A
 
 // Cargo capacity
 
@@ -29,13 +29,13 @@ item(FEAT_TRAINS, item_dmu_canada_up_express_nippon_sharyo_dmu) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 51.95283;
-        running_cost_factor: 44.09178;
+        cost_factor: 51.11083;
+        running_cost_factor: 43.89978;
         speed: 128 km/h;
         power: 1520 hp;
         cargo_capacity: 80;
-        weight: 74 ton;
-        tractive_effort_coefficient: 0.29;
+        weight: 67 ton;
+        tractive_effort_coefficient: 0.098;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -73,18 +73,18 @@ badges: ["power/diesel", "flag/CA"];
     livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: int(128/10);
-        weight: int(74*1/2);
+        weight: int(67*1/2);
         cargo_capacity: 80;
         length: 8;
         default: switch_dmu_canada_up_express_nippon_sharyo_dmu_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(38.1587177400286));
+        running_cost_factor: (round(23.3137177400286));
         power: int(1520*1/2);
-        weight: int(74*3/4);
+        weight: int(67*3/4);
         cargo_capacity: 80;
-        tractive_effort_coefficient: int(0.29*10*74);
+        tractive_effort_coefficient: int(0.098*10*67);
         length: 8;
         default: switch_dmu_canada_up_express_nippon_sharyo_dmu_cargo_selection;
     }

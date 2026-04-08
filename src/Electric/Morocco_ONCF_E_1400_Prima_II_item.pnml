@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A
+// Template: TPL_01A. Data from: https://de.wikipedia.org/wiki/Alstom_Prima#Export_nach_Marokko
 
 item(FEAT_TRAINS, item_electric_morocco_oncf_e_1400_prima_ii) {
     property {
@@ -14,10 +14,10 @@ item(FEAT_TRAINS, item_electric_morocco_oncf_e_1400_prima_ii) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 97.62998;
-        running_cost_factor: 87.96118;
-        speed: 200 km/h;
-        power: 7700 hp;
+        cost_factor: 102.59371;
+        running_cost_factor: 92.98239;
+        speed: 160 km/h;
+        power: 8600 hp;
         cargo_capacity: 0;
         weight: 91 ton;
         tractive_effort_coefficient: 0.35;
@@ -29,7 +29,7 @@ item(FEAT_TRAINS, item_electric_morocco_oncf_e_1400_prima_ii) {
         misc_flags: bitmask(TRAIN_FLAG_2CC);
         refit_cost: 0;
         ai_special_flag: AI_FLAG_PASSENGER;
-        track_type: [STANDARD_GAUGE_RAILTYPE_25KV];
+        track_type: [STANDARD_GAUGE_RAILTYPE_3KV];
         running_cost_base: RUNNING_COST_ELECTRIC;
         engine_class: ENGINE_CLASS_ELECTRIC;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);

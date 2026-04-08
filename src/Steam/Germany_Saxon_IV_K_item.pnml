@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03C
+// Template: TPL_03C. Data from: https://de.wikipedia.org/wiki/S%C3%A4chsische_IV_K
 
 item(FEAT_TRAINS, item_steam_germany_saxon_iv_k) {
     property {
@@ -20,7 +20,7 @@ item(FEAT_TRAINS, item_steam_germany_saxon_iv_k) {
         power: 206 hp;
         cargo_capacity: 0;
         weight: 27 ton;
-        tractive_effort_coefficient: 0.14;
+        tractive_effort_coefficient: 0.159;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -29,7 +29,7 @@ item(FEAT_TRAINS, item_steam_germany_saxon_iv_k) {
         misc_flags: bitmask(TRAIN_FLAG_2CC);
         refit_cost: 0;
         ai_special_flag: AI_FLAG_PASSENGER;
-        track_type: [STANDARD_GAUGE_RAILTYPE_NONE];
+        track_type: [NARROW_GAUGE_RAILTYPE_NONE];
         running_cost_base: RUNNING_COST_STEAM;
         engine_class: ENGINE_CLASS_STEAM;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_STEAM, 0, DISABLE_WAGON_POWER);

@@ -3,24 +3,24 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02C
+// Template: TPL_02C. Data from: https://en.wikipedia.org/wiki/P86_stock
 
 item(FEAT_TRAINS, item_mtro_uk_dlr_p86) {
     property {
         name: string(str_mtro_uk_dlr_p86);
         climates_available: ((param_region_northern_europe || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
-        introduction_date: date(1987,1,1);
+        introduction_date: date(1986,1,1);
         model_life: 45;
         vehicle_life: 60;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 34.25308;
-        running_cost_factor: 29.87714;
+        cost_factor: 35.36339;
+        running_cost_factor: 31.68744;
         speed: 80 km/h;
-        power: 500 hp;
-        cargo_capacity: 200;
-        weight: 40 ton;
-        tractive_effort_coefficient: 0.31;
+        power: 640 hp;
+        cargo_capacity: 142;
+        weight: 33 ton;
+        tractive_effort_coefficient: 0.25;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -40,7 +40,7 @@ item(FEAT_TRAINS, item_mtro_uk_dlr_p86) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/maglev", "flag/GB"];
+badges: ["power/metro", "flag/GB"];
 
     }
     graphics {
@@ -57,18 +57,18 @@ badges: ["power/maglev", "flag/GB"];
     livery_override (item_mtro_metro_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
         running_cost_factor: int(80/10);
-        weight: int(40*1/2);
+        weight: int(33*1/2);
         cargo_capacity: 200;
         length: 6;
         default: spriteset_mtro_uk_dlr_p86_middle;
     }
     livery_override (item_mtro_metro_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        running_cost_factor: (round(22.636313276997157));
-        power: int(500*1/2);
-        weight: int(40*3/4);
+        running_cost_factor: (round(18.779881842567512));
+        power: int(640*1/2);
+        weight: int(33*3/4);
         cargo_capacity: 200;
-        tractive_effort_coefficient: int(0.31*10*40);
+        tractive_effort_coefficient: int(0.25*10*33);
         length: 6;
         default: spriteset_mtro_uk_dlr_p86_middle;
     }

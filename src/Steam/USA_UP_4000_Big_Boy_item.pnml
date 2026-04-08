@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03G
+// Template: TPL_03G. Data from: https://en.wikipedia.org/wiki/Union_Pacific_Big_Boy
 
 item(FEAT_TRAINS, item_steam_usa_up_4000_big_boy) {
     property {

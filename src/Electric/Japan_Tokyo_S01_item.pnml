@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02C
+// Template: TPL_02C. Data from: https://en.wikipedia.org/wiki/Tokyo_Metro_01_series
 
 item(FEAT_TRAINS, item_mtro_japan_tokyo_s01) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_mtro_japan_tokyo_s01) {
         vehicle_life: 60;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 37.06449;
-        running_cost_factor: 33.11673;
-        speed: 120 km/h;
-        power: 700 hp;
-        cargo_capacity: 120;
-        weight: 35 ton;
-        tractive_effort_coefficient: 0.95;
+        cost_factor: 33.56216;
+        running_cost_factor: 30.83622;
+        speed: 80 km/h;
+        power: 640 hp;
+        cargo_capacity: 100;
+        weight: 23 ton;
+        tractive_effort_coefficient: 0.28;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -40,7 +40,7 @@ item(FEAT_TRAINS, item_mtro_japan_tokyo_s01) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/maglev", "flag/JP"];
+badges: ["power/metro", "flag/JP"];
 
     }
     graphics {
@@ -56,19 +56,19 @@ badges: ["power/maglev", "flag/JP"];
     }
     livery_override (item_mtro_metro_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        running_cost_factor: int(120/10);
-        weight: int(35*1/2);
+        running_cost_factor: int(80/10);
+        weight: int(23*1/2);
         cargo_capacity: 120;
         length: 8;
         default: spriteset_mtro_japan_tokyo_s01_middle;
     }
     livery_override (item_mtro_metro_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        running_cost_factor: (round(47.895784907340314));
-        power: int(700*1/2);
-        weight: int(35*3/4);
+        running_cost_factor: (round(17.10988184256751));
+        power: int(640*1/2);
+        weight: int(23*3/4);
         cargo_capacity: 120;
-        tractive_effort_coefficient: int(0.95*10*35);
+        tractive_effort_coefficient: int(0.28*10*23);
         length: 8;
         default: spriteset_mtro_japan_tokyo_s01_middle;
     }

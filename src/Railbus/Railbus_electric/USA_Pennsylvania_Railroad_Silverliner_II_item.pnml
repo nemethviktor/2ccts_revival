@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01B
+// Template: TPL_01B. Data from: https://en.wikipedia.org/wiki/Budd_Silverliner
 
 // Cargo capacity
 
@@ -29,9 +29,9 @@ item(FEAT_TRAINS, item_rbe_usa_pennsylvania_railroad_silverliner_ii) {
         vehicle_life: 15;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 34.37316;
-        running_cost_factor: 29.26184;
-        speed: 160 km/h;
+        cost_factor: 34.32854;
+        running_cost_factor: 29.25292;
+        speed: 137 km/h;
         power: 550 hp;
         cargo_capacity: 124;
         weight: 46 ton;

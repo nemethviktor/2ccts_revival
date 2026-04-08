@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A
+// Template: TPL_01A. Data from: https://en.wikipedia.org/wiki/FS_Class_E.428
 
 item(FEAT_TRAINS, item_electric_italy_fs_e428) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_electric_italy_fs_e428) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 75.31831;
-        running_cost_factor: 61.354;
+        cost_factor: 75.22528;
+        running_cost_factor: 61.76097;
         speed: 130 km/h;
-        power: 3750 hp;
+        power: 3800 hp;
         cargo_capacity: 0;
-        weight: 135 ton;
-        tractive_effort_coefficient: 0.1;
+        weight: 130 ton;
+        tractive_effort_coefficient: 0.141;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

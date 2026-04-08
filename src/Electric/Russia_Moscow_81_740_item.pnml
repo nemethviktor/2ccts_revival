@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02C
+// Template: TPL_02C. Data from: https://ru.wikipedia.org/wiki/%D0%A0%D1%83%D1%81%D0%B8%D1%87_(%D0%B2%D0%B0%D0%B3%D0%BE%D0%BD_%D0%BC%D0%B5%D1%82%D1%80%D0%BE)
 
 item(FEAT_TRAINS, item_mtro_russia_moscow_81_740) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_mtro_russia_moscow_81_740) {
         vehicle_life: 60;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 40.47634;
-        running_cost_factor: 35.38149;
+        cost_factor: 49.52427;
+        running_cost_factor: 44.42942;
         speed: 90 km/h;
-        power: 860 hp;
-        cargo_capacity: 120;
+        power: 1400 hp;
+        cargo_capacity: 172;
         weight: 47 ton;
-        tractive_effort_coefficient: 0.36;
+        tractive_effort_coefficient: 0.3;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -40,7 +40,7 @@ item(FEAT_TRAINS, item_mtro_russia_moscow_81_740) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/maglev", "flag/RU"];
+badges: ["power/metro", "flag/RU"];
 
     }
     graphics {
@@ -64,11 +64,11 @@ badges: ["power/maglev", "flag/RU"];
     }
     livery_override (item_mtro_metro_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        running_cost_factor: (round(28.85258347570986));
-        power: int(860*1/2);
+        running_cost_factor: (round(26.841657412349043));
+        power: int(1400*1/2);
         weight: int(47*3/4);
         cargo_capacity: 120;
-        tractive_effort_coefficient: int(0.36*10*47);
+        tractive_effort_coefficient: int(0.3*10*47);
         length: 6;
         default: spriteset_mtro_russia_moscow_81_740_middle;
     }

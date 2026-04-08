@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02C
+// Template: TPL_02C. Data from: https://locomotive.fandom.com/wiki/ATAC_S/300
 
 item(FEAT_TRAINS, item_mtro_italy_rome_s_300) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_mtro_italy_rome_s_300) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 54.81273;
-        running_cost_factor: 51.41788;
-        speed: 90 km/h;
-        power: 1876 hp;
-        cargo_capacity: 194;
-        weight: 30 ton;
-        tractive_effort_coefficient: 1.0;
+        cost_factor: 51.82;
+        running_cost_factor: 48.29405;
+        speed: 80 km/h;
+        power: 1650 hp;
+        cargo_capacity: 210;
+        weight: 31 ton;
+        tractive_effort_coefficient: 0.3;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -40,7 +40,7 @@ item(FEAT_TRAINS, item_mtro_italy_rome_s_300) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/maglev", "flag/IT"];
+badges: ["power/metro", "flag/IT"];
 
     }
     graphics {
@@ -56,19 +56,19 @@ badges: ["power/maglev", "flag/IT"];
     }
     livery_override (item_mtro_metro_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: int(90/10);
-        weight: int(30*1/2);
+        running_cost_factor: int(80/10);
+        weight: int(31*1/2);
         cargo_capacity: 194;
         length: 8;
         default: spriteset_mtro_italy_rome_s_300_middle;
     }
     livery_override (item_mtro_metro_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(43.331281610678026));
-        power: int(1876*1/2);
-        weight: int(30*3/4);
+        running_cost_factor: (round(21.512019203205778));
+        power: int(1650*1/2);
+        weight: int(31*3/4);
         cargo_capacity: 194;
-        tractive_effort_coefficient: int(1.0*10*30);
+        tractive_effort_coefficient: int(0.3*10*31);
         length: 8;
         default: spriteset_mtro_italy_rome_s_300_middle;
     }

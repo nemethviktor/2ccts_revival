@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03E
+// Template: TPL_03E. Data from: https://en.wikipedia.org/wiki/Fairy_Queen_(locomotive)
 
 item(FEAT_TRAINS, item_steam_india_fairy_queen) {
     property {
@@ -20,7 +20,7 @@ item(FEAT_TRAINS, item_steam_india_fairy_queen) {
         power: 130 hp;
         cargo_capacity: 0;
         weight: 28 ton;
-        tractive_effort_coefficient: 0.16;
+        tractive_effort_coefficient: 0.073;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

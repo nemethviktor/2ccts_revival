@@ -3,14 +3,14 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01B
+// Template: TPL_01B. Data from: https://sv.wikipedia.org/wiki/Y6-generationen
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_rbe_sweden_sj_x16_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 55/2; \
-        bitmask(CC_ARMOURED): 55/4; \
-        55; \
+        bitmask(CC_MAIL): 90/2; \
+        bitmask(CC_ARMOURED): 90/4; \
+        90; \
     }
 
 
@@ -29,13 +29,13 @@ item(FEAT_TRAINS, item_rbe_sweden_sj_x16) {
         vehicle_life: 15;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 21.92045;
-        running_cost_factor: 19.38976;
+        cost_factor: 22.79262;
+        running_cost_factor: 20.26193;
         speed: 110 km/h;
         power: 230 hp;
-        cargo_capacity: 55;
+        cargo_capacity: 90;
         weight: 21 ton;
-        tractive_effort_coefficient: 0.34;
+        tractive_effort_coefficient: 0.073;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

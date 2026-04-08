@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A
+// Template: TPL_01A. Data from: https://en.wikipedia.org/wiki/SNCF_Class_BB_25500
 
 item(FEAT_TRAINS, item_electric_france_sncf_bb_25500) {
     property {
@@ -20,7 +20,7 @@ item(FEAT_TRAINS, item_electric_france_sncf_bb_25500) {
         power: 3940 hp;
         cargo_capacity: 0;
         weight: 79 ton;
-        tractive_effort_coefficient: 0.42;
+        tractive_effort_coefficient: 0.426;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

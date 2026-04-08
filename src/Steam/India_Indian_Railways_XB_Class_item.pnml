@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03A
+// Template: TPL_03A. Data from: https://en.wikipedia.org/wiki/Indian_locomotive_class_XB
 
 item(FEAT_TRAINS, item_steam_india_indian_railways_xb_class) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_steam_india_indian_railways_xb_class) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 53.60996;
-        running_cost_factor: 38.96897;
-        speed: 116 km/h;
-        power: 1510 hp;
+        cost_factor: 63.15646;
+        running_cost_factor: 46.47577;
+        speed: 110 km/h;
+        power: 2150 hp;
         cargo_capacity: 0;
-        weight: 142 ton;
-        tractive_effort_coefficient: 0.08;
+        weight: 162 ton;
+        tractive_effort_coefficient: 0.075;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

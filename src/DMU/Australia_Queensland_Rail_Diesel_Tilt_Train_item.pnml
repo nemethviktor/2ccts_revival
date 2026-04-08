@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A
+// Template: TPL_02A. Data from: https://www.railtram.com.au/diesel-tilt-train
 
 // Cargo capacity
 
@@ -15,9 +15,9 @@
 
 
     switch(FEAT_TRAINS, SELF, switch_dmu_australia_queensland_rail_diesel_tilt_train_capacity_wagon, cargo_classes) { \
-        bitmask(CC_MAIL): 56/2; \
-        bitmask(CC_ARMOURED): 56/4; \
-        56; \
+        bitmask(CC_MAIL): 39/2; \
+        bitmask(CC_ARMOURED): 39/4; \
+        39; \
     }
 
 item(FEAT_TRAINS, item_dmu_australia_queensland_rail_diesel_tilt_train) {
@@ -29,13 +29,13 @@ item(FEAT_TRAINS, item_dmu_australia_queensland_rail_diesel_tilt_train) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 91.98795;
-        running_cost_factor: 85.47663;
+        cost_factor: 91.93495;
+        running_cost_factor: 85.42363;
         speed: 160 km/h;
         power: 7240 hp;
         cargo_capacity: 0;
         weight: 60 ton;
-        tractive_effort_coefficient: 0.21;
+        tractive_effort_coefficient: 0.157;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -74,17 +74,17 @@ badges: ["power/diesel", "flag/AU"];
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: int(160/10);
         weight: int(60*1/2);
-        cargo_capacity: 56;
+        cargo_capacity: 39;
         length: 8;
         default: switch_dmu_australia_queensland_rail_diesel_tilt_train_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(37.11387972861181));
+        running_cost_factor: (round(33.933879728611814));
         power: int(7240*1/2);
         weight: int(60*3/4);
-        cargo_capacity: 56;
-        tractive_effort_coefficient: int(0.21*10*60);
+        cargo_capacity: 39;
+        tractive_effort_coefficient: int(0.157*10*60);
         length: 8;
         default: switch_dmu_australia_queensland_rail_diesel_tilt_train_cargo_selection;
     }

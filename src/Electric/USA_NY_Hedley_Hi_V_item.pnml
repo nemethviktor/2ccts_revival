@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02C
+// Template: TPL_02C. Data from: https://en.wikipedia.org/wiki/Hedley_Hi-V_(New_York_City_Subway_car)
 
 item(FEAT_TRAINS, item_mtro_usa_ny_hedley_hi_v) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_mtro_usa_ny_hedley_hi_v) {
         vehicle_life: 60;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 30.06375;
-        running_cost_factor: 26.06891;
-        speed: 90 km/h;
+        cost_factor: 29.65095;
+        running_cost_factor: 25.44066;
+        speed: 72 km/h;
         power: 400 hp;
-        cargo_capacity: 128;
-        weight: 36 ton;
-        tractive_effort_coefficient: 0.2;
+        cargo_capacity: 100;
+        weight: 38 ton;
+        tractive_effort_coefficient: 0.18;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -40,7 +40,7 @@ item(FEAT_TRAINS, item_mtro_usa_ny_hedley_hi_v) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/maglev", "flag/US"];
+badges: ["power/metro", "flag/US"];
 
     }
     graphics {
@@ -56,19 +56,19 @@ badges: ["power/maglev", "flag/US"];
     }
     livery_override (item_mtro_metro_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        running_cost_factor: int(90/10);
-        weight: int(36*1/2);
+        running_cost_factor: int(72/10);
+        weight: int(38*1/2);
         cargo_capacity: 128;
         length: 8;
         default: spriteset_mtro_usa_ny_hedley_hi_v_middle;
     }
     livery_override (item_mtro_metro_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        running_cost_factor: (round(18.200718154932407));
+        running_cost_factor: (round(16.130718154932406));
         power: int(400*1/2);
-        weight: int(36*3/4);
+        weight: int(38*3/4);
         cargo_capacity: 128;
-        tractive_effort_coefficient: int(0.2*10*36);
+        tractive_effort_coefficient: int(0.18*10*38);
         length: 8;
         default: spriteset_mtro_usa_ny_hedley_hi_v_middle;
     }

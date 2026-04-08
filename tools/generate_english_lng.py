@@ -472,9 +472,9 @@ STR_FLAG_ZM                                                     :Zambia
 STR_FLAG_ZW                                                     :Zimbabwe
 
 # Historical flags                                          
-STR_FLAG__YU                                                    :Yugoslavia
+STR_FLAG_YU                                                     :Yugoslavia
 STR_FLAG_GDR                                                    :East Germany
-STR_FLAG__SU                                                    :USSR
+STR_FLAG_SU                                                     :USSR
 STR_FLAG_EUROPE                                                 :Europe
 STR_FLAG_WRLD                                                   :World
 
@@ -497,6 +497,7 @@ STR_POWER_ELECTRIC_DC_3000                                      :Electric (DC 3k
 STR_POWER_TURBINE                                               :Gas Turbine
 STR_POWER_BATTERY                                               :Battery
 STR_POWER_MAGLEV                                                :Maglev
+STR_POWER_METRO                                                 :Metro
 
 # Colours
 STR_LIVERY_COMPANY_2CC                                          :Dual company colour (2CC)
@@ -516,10 +517,11 @@ def generate_english_lng():
 
     # Load Data
     sheets = pd.read_excel(excel_path, sheet_name=None)
-    df_items = sheets['english_items']
+    df_items = sheets['control']
 
     # We need track_types and properties to determine the full suffix
-    df_props = sheets['properties'][['VEHIDCODE', 'COST_CAT', 'ENGINE_CLASS']]
+    df_props = sheets['properties'][['VEHIDCODE',
+                                     'COST_CAT', 'ENGINE_CLASS', 'IS_TURBINE']]
     df_tracks = sheets['track_types']
 
     # Merge everything
@@ -560,10 +562,12 @@ def generate_english_lng():
 
         for _, row in cat_df.iterrows():
             vehid = str(row['VEHIDCODE']).lower()
-            base_name = row['English_Name']
+            base_name = row['ENGLISH']
 
             # 1. Get Base Type Suffix
             suffix = base_suffixes.get(row['COST_CAT'], f"({row['COST_CAT']})")
+            if is_true(row['IS_TURBINE']):
+                suffix = "(Gas Turbine)"
 
             # 2. Add Voltage Specifics if it is Electric
             if row['ENGINE_CLASS'] == 'ELECTRIC' or cat == 'METRO':
@@ -572,10 +576,10 @@ def generate_english_lng():
                     # e.g. (Electric) -> (Electric, 25kV AC)
                     suffix = suffix.replace(')', f", {v_suffix})")
             # For these two we just wipe the previous suffix element because it too verbose otherwise
-            elif vehid.endswith('powered'):
-                suffix = "(Powered)"
-            elif vehid.endswith('unpowered'):
+            if vehid.lower().endswith('unpowered'):
                 suffix = "(Unpowered)"
+            elif vehid.lower().endswith('powered'):
+                suffix = "(Powered)"
 
             label = f"str_{vehid}"
             line = f"{label:<70}:{base_name} {suffix}\n"

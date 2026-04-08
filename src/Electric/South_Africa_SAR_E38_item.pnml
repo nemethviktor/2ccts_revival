@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A
+// Template: TPL_01A. Data from: https://en.wikipedia.org/wiki/South_African_Class_E38
 
 item(FEAT_TRAINS, item_electric_south_africa_sar_e38) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_electric_south_africa_sar_e38) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 52.94966;
-        running_cost_factor: 45.13659;
+        cost_factor: 52.6377;
+        running_cost_factor: 44.82463;
         speed: 100 km/h;
-        power: 2028 hp;
+        power: 2000 hp;
         cargo_capacity: 0;
         weight: 74 ton;
-        tractive_effort_coefficient: 0.24;
+        tractive_effort_coefficient: 0.358;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

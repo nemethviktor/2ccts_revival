@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A
+// Template: TPL_01A. Data from: https://en.wikipedia.org/wiki/China_Railways_HXD3
 
 item(FEAT_TRAINS, item_electric_china_china_railways_hxd3) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_electric_china_china_railways_hxd3) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 129.31767;
-        running_cost_factor: 113.86992;
+        cost_factor: 114.25193;
+        running_cost_factor: 98.80418;
         speed: 120 km/h;
-        power: 12800 hp;
+        power: 9700 hp;
         cargo_capacity: 0;
         weight: 150 ton;
-        tractive_effort_coefficient: 0.27;
+        tractive_effort_coefficient: 0.353;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

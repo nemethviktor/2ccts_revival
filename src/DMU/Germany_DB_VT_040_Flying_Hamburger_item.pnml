@@ -3,21 +3,21 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A
+// Template: TPL_02A. Data from: https://de.wikipedia.org/wiki/DR_137_153_%E2%80%A6_234
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_dmu_germany_db_vt_040_flying_hamburger_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 50/2; \
-        bitmask(CC_ARMOURED): 50/4; \
-        50; \
+        bitmask(CC_MAIL): 55/2; \
+        bitmask(CC_ARMOURED): 55/4; \
+        55; \
     }
 
 
     switch(FEAT_TRAINS, SELF, switch_dmu_germany_db_vt_040_flying_hamburger_capacity_wagon, cargo_classes) { \
-        bitmask(CC_MAIL): 50/2; \
-        bitmask(CC_ARMOURED): 50/4; \
-        50; \
+        bitmask(CC_MAIL): 69/2; \
+        bitmask(CC_ARMOURED): 69/4; \
+        69; \
     }
 
 item(FEAT_TRAINS, item_dmu_germany_db_vt_040_flying_hamburger) {
@@ -29,13 +29,13 @@ item(FEAT_TRAINS, item_dmu_germany_db_vt_040_flying_hamburger) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 28.6628;
-        running_cost_factor: 24.25148;
+        cost_factor: 37.4772;
+        running_cost_factor: 32.71588;
         speed: 160 km/h;
-        power: 400 hp;
-        cargo_capacity: 50;
-        weight: 39 ton;
-        tractive_effort_coefficient: 0.19;
+        power: 810 hp;
+        cargo_capacity: 55;
+        weight: 42 ton;
+        tractive_effort_coefficient: 0.064;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -73,18 +73,18 @@ badges: ["power/diesel", "flag/DE"];
     livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
         running_cost_factor: int(160/10);
-        weight: int(39*1/2);
-        cargo_capacity: 50;
+        weight: int(42*1/2);
+        cargo_capacity: 69;
         length: 8;
         default: switch_dmu_germany_db_vt_040_flying_hamburger_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        running_cost_factor: (round(25.410718154932407));
-        power: int(400*1/2);
-        weight: int(39*3/4);
-        cargo_capacity: 50;
-        tractive_effort_coefficient: int(0.19*10*39);
+        running_cost_factor: (round(21.566062103728065));
+        power: int(810*1/2);
+        weight: int(42*3/4);
+        cargo_capacity: 69;
+        tractive_effort_coefficient: int(0.064*10*42);
         length: 8;
         default: switch_dmu_germany_db_vt_040_flying_hamburger_cargo_selection;
     }

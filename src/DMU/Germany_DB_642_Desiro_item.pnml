@@ -3,21 +3,21 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A
+// Template: TPL_02A. Data from: https://de.wikipedia.org/wiki/DB-Baureihe_642
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_dmu_germany_db_642_desiro_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 55/2; \
-        bitmask(CC_ARMOURED): 55/4; \
-        55; \
+        bitmask(CC_MAIL): 104/2; \
+        bitmask(CC_ARMOURED): 104/4; \
+        104; \
     }
 
 
     switch(FEAT_TRAINS, SELF, switch_dmu_germany_db_642_desiro_capacity_wagon, cargo_classes) { \
-        bitmask(CC_MAIL): 55/2; \
-        bitmask(CC_ARMOURED): 55/4; \
-        55; \
+        bitmask(CC_MAIL): 104/2; \
+        bitmask(CC_ARMOURED): 104/4; \
+        104; \
     }
 
 item(FEAT_TRAINS, item_dmu_germany_db_642_desiro) {
@@ -29,13 +29,13 @@ item(FEAT_TRAINS, item_dmu_germany_db_642_desiro) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 29.99671;
-        running_cost_factor: 23.54896;
+        cost_factor: 41.61504;
+        running_cost_factor: 36.76729;
         speed: 120 km/h;
-        power: 368 hp;
-        cargo_capacity: 55;
-        weight: 60 ton;
-        tractive_effort_coefficient: 0.18;
+        power: 980 hp;
+        cargo_capacity: 104;
+        weight: 44 ton;
+        tractive_effort_coefficient: 0.098;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -73,18 +73,18 @@ badges: ["power/diesel", "flag/DE"];
     livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: int(120/10);
-        weight: int(60*1/2);
-        cargo_capacity: 55;
+        weight: int(44*1/2);
+        cargo_capacity: 104;
         length: 8;
         default: switch_dmu_germany_db_642_desiro_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(24.71935878690331));
-        power: int(368*1/2);
-        weight: int(60*3/4);
-        cargo_capacity: 55;
-        tractive_effort_coefficient: int(0.18*10*60);
+        running_cost_factor: (round(19.442497879290524));
+        power: int(980*1/2);
+        weight: int(44*3/4);
+        cargo_capacity: 104;
+        tractive_effort_coefficient: int(0.098*10*44);
         length: 8;
         default: switch_dmu_germany_db_642_desiro_cargo_selection;
     }

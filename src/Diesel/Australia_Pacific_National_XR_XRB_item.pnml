@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_17B
+// Template: TPL_17B. Data from: https://en.wikipedia.org/wiki/Pacific_National_XRB_class
 
 item(FEAT_TRAINS, item_diesel_australia_pacific_national_xr_xrb) {
     property {
@@ -20,7 +20,7 @@ item(FEAT_TRAINS, item_diesel_australia_pacific_national_xr_xrb) {
         power: 3300 hp;
         cargo_capacity: 0;
         weight: 124 ton;
-        tractive_effort_coefficient: 0.34;
+        tractive_effort_coefficient: 0.316;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

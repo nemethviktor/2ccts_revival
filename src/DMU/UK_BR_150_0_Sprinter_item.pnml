@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A
+// Template: TPL_02A. Data from: https://en.wikipedia.org/wiki/British_Rail_Class_150
 
 // Cargo capacity
 
@@ -29,13 +29,13 @@ item(FEAT_TRAINS, item_dmu_uk_br_150_0_sprinter) {
         vehicle_life: 20;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 28.85233;
-        running_cost_factor: 24.8029;
+        cost_factor: 28.68433;
+        running_cost_factor: 24.6349;
         speed: 121 km/h;
         power: 389 hp;
         cargo_capacity: 80;
         weight: 36 ton;
-        tractive_effort_coefficient: 0.26;
+        tractive_effort_coefficient: 0.092;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -80,11 +80,11 @@ badges: ["power/diesel", "flag/GB"];
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(23.43311954631342));
+        running_cost_factor: (round(17.38511954631342));
         power: int(389*1/2);
         weight: int(36*3/4);
         cargo_capacity: 80;
-        tractive_effort_coefficient: int(0.26*10*36);
+        tractive_effort_coefficient: int(0.092*10*36);
         length: 7;
         default: switch_dmu_uk_br_150_0_sprinter_cargo_selection;
     }

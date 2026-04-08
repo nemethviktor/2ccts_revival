@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03C
+// Template: TPL_03C. Data from: nan
 
 item(FEAT_TRAINS, item_steam_switzerland_rhb_g_3_4) {
     property {

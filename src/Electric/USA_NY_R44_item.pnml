@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02C
+// Template: TPL_02C. Data from: https://en.wikipedia.org/wiki/R44_(New_York_City_Subway_car)
 
 item(FEAT_TRAINS, item_mtro_usa_ny_r44) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_mtro_usa_ny_r44) {
         vehicle_life: 60;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 32.69397;
-        running_cost_factor: 28.29912;
-        speed: 90 km/h;
-        power: 460 hp;
-        cargo_capacity: 162;
-        weight: 40 ton;
-        tractive_effort_coefficient: 0.32;
+        cost_factor: 41.03071;
+        running_cost_factor: 36.90002;
+        speed: 110 km/h;
+        power: 920 hp;
+        cargo_capacity: 150;
+        weight: 37 ton;
+        tractive_effort_coefficient: 0.26;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -40,7 +40,7 @@ item(FEAT_TRAINS, item_mtro_usa_ny_r44) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/maglev", "flag/US"];
+badges: ["power/metro", "flag/US"];
 
     }
     graphics {
@@ -56,19 +56,19 @@ badges: ["power/maglev", "flag/US"];
     }
     livery_override (item_mtro_metro_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        running_cost_factor: int(90/10);
-        weight: int(40*1/2);
+        running_cost_factor: int(110/10);
+        weight: int(37*1/2);
         cargo_capacity: 162;
         length: 8;
         default: spriteset_mtro_usa_ny_r44_middle;
     }
     livery_override (item_mtro_metro_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        running_cost_factor: (round(23.945135411551725));
-        power: int(460*1/2);
-        weight: int(40*3/4);
+        running_cost_factor: (round(23.653154781228782));
+        power: int(920*1/2);
+        weight: int(37*3/4);
         cargo_capacity: 162;
-        tractive_effort_coefficient: int(0.32*10*40);
+        tractive_effort_coefficient: int(0.26*10*37);
         length: 8;
         default: spriteset_mtro_usa_ny_r44_middle;
     }

@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03A
+// Template: TPL_03A. Data from: https://en.wikipedia.org/wiki/TR_DL_class
 
 item(FEAT_TRAINS, item_steam_kenya_east_african_railway_23) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_steam_kenya_east_african_railway_23) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 26.77158;
-        running_cost_factor: 18.5153;
-        speed: 70 km/h;
-        power: 339 hp;
+        cost_factor: 44.42403;
+        running_cost_factor: 33.25781;
+        speed: 75 km/h;
+        power: 1100 hp;
         cargo_capacity: 0;
-        weight: 79 ton;
-        tractive_effort_coefficient: 0.14;
+        weight: 108 ton;
+        tractive_effort_coefficient: 0.102;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -29,7 +29,7 @@ item(FEAT_TRAINS, item_steam_kenya_east_african_railway_23) {
         misc_flags: bitmask(TRAIN_FLAG_2CC);
         refit_cost: 0;
         ai_special_flag: AI_FLAG_PASSENGER;
-        track_type: [STANDARD_GAUGE_RAILTYPE_NONE];
+        track_type: [NARROW_GAUGE_RAILTYPE_NONE];
         running_cost_base: RUNNING_COST_STEAM;
         engine_class: ENGINE_CLASS_STEAM;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_STEAM, 0, DISABLE_WAGON_POWER);

@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03E
+// Template: TPL_03E. Data from: https://en.wikipedia.org/wiki/USATC_S160_Class
 
 item(FEAT_TRAINS, item_steam_albania_hsh_01) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_steam_albania_hsh_01) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 40.82759;
-        running_cost_factor: 32.65164;
+        cost_factor: 47.46095;
+        running_cost_factor: 34.73501;
         speed: 80 km/h;
-        power: 1060 hp;
+        power: 1200 hp;
         cargo_capacity: 0;
-        weight: 78 ton;
-        tractive_effort_coefficient: 0.14;
+        weight: 123 ton;
+        tractive_effort_coefficient: 0.114;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -40,7 +40,7 @@ item(FEAT_TRAINS, item_steam_albania_hsh_01) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/steam", "flag/AL"];
+badges: ["power/steam", "flag/YU"];
 
     }
     graphics {

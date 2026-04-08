@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03B
+// Template: TPL_03B. Data from: https://it.wikipedia.org/wiki/Automotrice_FS_86
 
 // Cargo capacity
 
@@ -29,10 +29,10 @@ item(FEAT_TRAINS, item_rbs_italy_fs_86) {
         vehicle_life: 15;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 21.65105;
-        running_cost_factor: 16.61532;
-        speed: 60 km/h;
-        power: 132 hp;
+        cost_factor: 23.10347;
+        running_cost_factor: 18.07839;
+        speed: 55 km/h;
+        power: 170 hp;
         cargo_capacity: 86;
         weight: 47 ton;
         tractive_effort_coefficient: 0.08;

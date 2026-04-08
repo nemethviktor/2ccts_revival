@@ -3,21 +3,21 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A
+// Template: TPL_02A. Data from: https://pt.wikipedia.org/wiki/S%C3%A9rie_0400_da_CP
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_dmu_portugal_cp_0400_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 82/2; \
-        bitmask(CC_ARMOURED): 82/4; \
-        82; \
+        bitmask(CC_MAIL): 92/2; \
+        bitmask(CC_ARMOURED): 92/4; \
+        92; \
     }
 
 
     switch(FEAT_TRAINS, SELF, switch_dmu_portugal_cp_0400_capacity_wagon, cargo_classes) { \
-        bitmask(CC_MAIL): 82/2; \
-        bitmask(CC_ARMOURED): 82/4; \
-        82; \
+        bitmask(CC_MAIL): 92/2; \
+        bitmask(CC_ARMOURED): 92/4; \
+        92; \
     }
 
 item(FEAT_TRAINS, item_dmu_portugal_cp_0400) {
@@ -29,13 +29,13 @@ item(FEAT_TRAINS, item_dmu_portugal_cp_0400) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 46.66882;
-        running_cost_factor: 41.32107;
-        speed: 120 km/h;
-        power: 1320 hp;
-        cargo_capacity: 82;
+        cost_factor: 42.73822;
+        running_cost_factor: 37.40753;
+        speed: 110 km/h;
+        power: 1040 hp;
+        cargo_capacity: 92;
         weight: 49 ton;
-        tractive_effort_coefficient: 0.13;
+        tractive_effort_coefficient: 0.069;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -44,7 +44,7 @@ item(FEAT_TRAINS, item_dmu_portugal_cp_0400) {
         misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
         refit_cost: 0;
         ai_special_flag: AI_FLAG_PASSENGER;
-        track_type: [STANDARD_GAUGE_RAILTYPE_NONE];
+        track_type: [BROAD_GAUGE_RAILTYPE_NONE];
         running_cost_base: RUNNING_COST_DIESEL;
         engine_class: ENGINE_CLASS_DIESEL;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 0, DISABLE_WAGON_POWER);
@@ -72,19 +72,19 @@ badges: ["power/diesel", "flag/PT"];
     }
     livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: int(120/10);
+        running_cost_factor: int(110/10);
         weight: int(49*1/2);
-        cargo_capacity: 82;
+        cargo_capacity: 92;
         length: 8;
         default: switch_dmu_portugal_cp_0400_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(22.003180505915406));
-        power: int(1320*1/2);
+        running_cost_factor: (round(17.605904681397647));
+        power: int(1040*1/2);
         weight: int(49*3/4);
-        cargo_capacity: 82;
-        tractive_effort_coefficient: int(0.13*10*49);
+        cargo_capacity: 92;
+        tractive_effort_coefficient: int(0.069*10*49);
         length: 8;
         default: switch_dmu_portugal_cp_0400_cargo_selection;
     }

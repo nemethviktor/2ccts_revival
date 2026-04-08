@@ -3,24 +3,24 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03A
+// Template: TPL_03A. Data from: https://es.wikipedia.org/wiki/Ferrocarril_Nordeste_Argentino
 
 item(FEAT_TRAINS, item_steam_argentina_fcnea_11b_2_8_0) {
     property {
         name: string(str_steam_argentina_fcnea_11b_2_8_0);
         climates_available: ((param_region_south_america || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
-        introduction_date: date(1920,1,1);
+        introduction_date: date(1910,1,1);
         model_life: 45;
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 40.62603;
-        running_cost_factor: 30.58196;
+        cost_factor: 38.78493;
+        running_cost_factor: 29.24086;
         speed: 64 km/h;
-        power: 930 hp;
+        power: 850 hp;
         cargo_capacity: 0;
-        weight: 97 ton;
-        tractive_effort_coefficient: 0.11;
+        weight: 92 ton;
+        tractive_effort_coefficient: 0.22;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

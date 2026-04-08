@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A
+// Template: TPL_01A. Data from: https://hu.wikipedia.org/wiki/M%C3%81V_M44_sorozat
 
 item(FEAT_TRAINS, item_diesel_hungary_mav_m44) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_diesel_hungary_mav_m44) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 30.26083;
+        cost_factor: 30.96083;
         running_cost_factor: 24.38488;
         speed: 80 km/h;
         power: 590 hp;
         cargo_capacity: 0;
-        weight: 55 ton;
-        tractive_effort_coefficient: 0.3;
+        weight: 62 ton;
+        tractive_effort_coefficient: 0.274;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01F
+// Template: TPL_01F. Data from: nan
 
 item(FEAT_TRAINS, item_mtro_metro_wagon_powered) {
     property {
@@ -40,7 +40,7 @@ item(FEAT_TRAINS, item_mtro_metro_wagon_powered) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/maglev"];
+badges: ["power/metro"];
 
     }
     graphics {

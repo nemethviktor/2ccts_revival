@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03E
+// Template: TPL_03E. Data from: https://en.wikipedia.org/wiki/CGR_0-4-0ST_1873
 
 item(FEAT_TRAINS, item_steam_south_africa_harbour_board_el_0_4_0) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_steam_south_africa_harbour_board_el_0_4_0) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 6.48688;
-        running_cost_factor: 5.5629;
+        cost_factor: 8.95807;
+        running_cost_factor: 7.3341;
         speed: 16 km/h;
-        power: 15 hp;
+        power: 40 hp;
         cargo_capacity: 0;
-        weight: 7 ton;
-        tractive_effort_coefficient: 0.06;
+        weight: 14 ton;
+        tractive_effort_coefficient: 0.106;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -29,7 +29,7 @@ item(FEAT_TRAINS, item_steam_south_africa_harbour_board_el_0_4_0) {
         misc_flags: bitmask(TRAIN_FLAG_2CC);
         refit_cost: 0;
         ai_special_flag: AI_FLAG_PASSENGER;
-        track_type: [STANDARD_GAUGE_RAILTYPE_NONE];
+        track_type: [NARROW_GAUGE_RAILTYPE_NONE];
         running_cost_base: RUNNING_COST_STEAM;
         engine_class: ENGINE_CLASS_STEAM;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_STEAM, 0, DISABLE_WAGON_POWER);

@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01B
+// Template: TPL_01B. Data from: https://cs.wikipedia.org/wiki/Motorov%C3%BD_v%C5%AFz_M_120.4
 
 // Cargo capacity
 
@@ -35,7 +35,7 @@ item(FEAT_TRAINS, item_rbd_czech_republic_cd_m120) {
         power: 120 hp;
         cargo_capacity: 38;
         weight: 13 ton;
-        tractive_effort_coefficient: 0.35;
+        tractive_effort_coefficient: 0.15;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

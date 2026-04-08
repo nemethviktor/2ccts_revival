@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A
+// Template: TPL_01A. Data from: https://ru.wikipedia.org/wiki/%D0%A2%D0%AD114
 
 item(FEAT_TRAINS, item_diesel_egypt_enr_te114e) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_diesel_egypt_enr_te114e) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 63.54992;
-        running_cost_factor: 51.10216;
+        cost_factor: 65.47478;
+        running_cost_factor: 53.02702;
         speed: 120 km/h;
-        power: 2600 hp;
+        power: 2800 hp;
         cargo_capacity: 0;
         weight: 120 ton;
-        tractive_effort_coefficient: 0.17;
+        tractive_effort_coefficient: 0.31;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

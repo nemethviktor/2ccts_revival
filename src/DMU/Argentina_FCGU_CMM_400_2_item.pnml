@@ -3,21 +3,21 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A
+// Template: TPL_02A. Data from: https://en.wikipedia.org/wiki/Materfer_CMM_400-2
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_dmu_argentina_fcgu_cmm_400_2_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 88/2; \
-        bitmask(CC_ARMOURED): 88/4; \
-        88; \
+        bitmask(CC_MAIL): 70/2; \
+        bitmask(CC_ARMOURED): 70/4; \
+        70; \
     }
 
 
     switch(FEAT_TRAINS, SELF, switch_dmu_argentina_fcgu_cmm_400_2_capacity_wagon, cargo_classes) { \
-        bitmask(CC_MAIL): 88/2; \
-        bitmask(CC_ARMOURED): 88/4; \
-        88; \
+        bitmask(CC_MAIL): 70/2; \
+        bitmask(CC_ARMOURED): 70/4; \
+        70; \
     }
 
 item(FEAT_TRAINS, item_dmu_argentina_fcgu_cmm_400_2) {
@@ -29,13 +29,13 @@ item(FEAT_TRAINS, item_dmu_argentina_fcgu_cmm_400_2) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 39.00261;
-        running_cost_factor: 33.69129;
-        speed: 160 km/h;
+        cost_factor: 38.18764;
+        running_cost_factor: 32.93989;
+        speed: 120 km/h;
         power: 800 hp;
-        cargo_capacity: 88;
+        cargo_capacity: 70;
         weight: 48 ton;
-        tractive_effort_coefficient: 0.39;
+        tractive_effort_coefficient: 0.09;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -44,7 +44,7 @@ item(FEAT_TRAINS, item_dmu_argentina_fcgu_cmm_400_2) {
         misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
         refit_cost: 0;
         ai_special_flag: AI_FLAG_PASSENGER;
-        track_type: [STANDARD_GAUGE_RAILTYPE_NONE];
+        track_type: [STANDARD_GAUGE_RAILTYPE_NONE, NARROW_GAUGE_RAILTYPE_NONE, BROAD_GAUGE_RAILTYPE_NONE];
         running_cost_base: RUNNING_COST_DIESEL;
         engine_class: ENGINE_CLASS_DIESEL;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 0, DISABLE_WAGON_POWER);
@@ -72,19 +72,19 @@ badges: ["power/diesel", "flag/AR"];
     }
     livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: int(160/10);
+        running_cost_factor: int(120/10);
         weight: int(48*1/2);
-        cargo_capacity: 88;
+        cargo_capacity: 70;
         length: 8;
         default: switch_dmu_argentina_fcgu_cmm_400_2_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(37.54844048511424));
+        running_cost_factor: (round(19.148440485114243));
         power: int(800*1/2);
         weight: int(48*3/4);
-        cargo_capacity: 88;
-        tractive_effort_coefficient: int(0.39*10*48);
+        cargo_capacity: 70;
+        tractive_effort_coefficient: int(0.09*10*48);
         length: 8;
         default: switch_dmu_argentina_fcgu_cmm_400_2_cargo_selection;
     }

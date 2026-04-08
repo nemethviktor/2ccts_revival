@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03A
+// Template: TPL_03A. Data from: https://pl.wikipedia.org/wiki/Ol49
 
 item(FEAT_TRAINS, item_steam_poland_pkp_oi49) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_steam_poland_pkp_oi49) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 48.93291;
+        cost_factor: 50.92291;
         running_cost_factor: 36.01984;
         speed: 100 km/h;
         power: 1290 hp;
         cargo_capacity: 0;
-        weight: 125 ton;
-        tractive_effort_coefficient: 0.1;
+        weight: 144 ton;
+        tractive_effort_coefficient: 0.088;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

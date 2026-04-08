@@ -3,21 +3,21 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A
+// Template: TPL_02A. Data from: https://en.wikipedia.org/wiki/Norske_Tog_Class_93
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_dmu_norway_nsb_bm_93_talent_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 55/2; \
-        bitmask(CC_ARMOURED): 55/4; \
-        55; \
+        bitmask(CC_MAIL): 38/2; \
+        bitmask(CC_ARMOURED): 38/4; \
+        38; \
     }
 
 
     switch(FEAT_TRAINS, SELF, switch_dmu_norway_nsb_bm_93_talent_capacity_wagon, cargo_classes) { \
-        bitmask(CC_MAIL): 55/2; \
-        bitmask(CC_ARMOURED): 55/4; \
-        55; \
+        bitmask(CC_MAIL): 38/2; \
+        bitmask(CC_ARMOURED): 38/4; \
+        38; \
     }
 
 item(FEAT_TRAINS, item_dmu_norway_nsb_bm_93_talent) {
@@ -29,13 +29,13 @@ item(FEAT_TRAINS, item_dmu_norway_nsb_bm_93_talent) {
         vehicle_life: 20;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 28.02883;
-        running_cost_factor: 24.64842;
+        cost_factor: 36.62207;
+        running_cost_factor: 32.29166;
         speed: 140 km/h;
-        power: 410 hp;
-        cargo_capacity: 55;
-        weight: 29 ton;
-        tractive_effort_coefficient: 0.21;
+        power: 810 hp;
+        cargo_capacity: 38;
+        weight: 38 ton;
+        tractive_effort_coefficient: 0.132;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -73,18 +73,18 @@ badges: ["power/diesel", "flag/NO"];
     livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: int(140/10);
-        weight: int(29*1/2);
-        cargo_capacity: 55;
+        weight: int(38*1/2);
+        cargo_capacity: 38;
         length: 8;
         default: switch_dmu_norway_nsb_bm_93_talent_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(22.11548894053464));
-        power: int(410*1/2);
-        weight: int(29*3/4);
-        cargo_capacity: 55;
-        tractive_effort_coefficient: int(0.21*10*29);
+        running_cost_factor: (round(21.928062103728067));
+        power: int(810*1/2);
+        weight: int(38*3/4);
+        cargo_capacity: 38;
+        tractive_effort_coefficient: int(0.132*10*38);
         length: 8;
         default: switch_dmu_norway_nsb_bm_93_talent_cargo_selection;
     }

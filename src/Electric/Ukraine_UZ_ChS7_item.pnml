@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_17A
+// Template: TPL_17A. Data from: nan
 
 item(FEAT_TRAINS, item_electric_ukraine_uz_chs7) {
     property {

@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A
+// Template: TPL_01A. Data from: https://en.wikipedia.org/wiki/Baldwin_DRS-6-4-1000
 
 item(FEAT_TRAINS, item_diesel_algeria_sntf_baldwin_drs6_4_1000) {
     property {

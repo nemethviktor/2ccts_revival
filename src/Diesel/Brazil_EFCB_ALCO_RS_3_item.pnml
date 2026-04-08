@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A
+// Template: TPL_01A. Data from: https://en.wikipedia.org/wiki/ALCO_RS-3
 
 item(FEAT_TRAINS, item_diesel_brazil_efcb_alco_rs_3) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_diesel_brazil_efcb_alco_rs_3) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 50.82524;
-        running_cost_factor: 40.10505;
-        speed: 104 km/h;
+        cost_factor: 51.79453;
+        running_cost_factor: 40.11891;
+        speed: 137 km/h;
         power: 1600 hp;
         cargo_capacity: 0;
-        weight: 103 ton;
-        tractive_effort_coefficient: 0.1;
+        weight: 112 ton;
+        tractive_effort_coefficient: 0.25;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

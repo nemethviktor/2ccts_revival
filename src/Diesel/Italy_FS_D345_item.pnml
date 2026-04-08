@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A
+// Template: TPL_01A. Data from: https://en.wikipedia.org/wiki/FS_Class_D.345
 
 item(FEAT_TRAINS, item_diesel_italy_fs_d345) {
     property {

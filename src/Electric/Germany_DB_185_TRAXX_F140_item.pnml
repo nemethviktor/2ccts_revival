@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A
+// Template: TPL_01A. Data from: https://de.wikipedia.org/wiki/Bombardier_Traxx
 
 item(FEAT_TRAINS, item_electric_germany_db_185_traxx_f140) {
     property {

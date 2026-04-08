@@ -3,21 +3,21 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A
+// Template: TPL_02A. Data from: http://www.railfaneurope.net/list/algeria_sntf.html
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_dmu_algeria_sntf_zz_2200_autorail_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 66/2; \
-        bitmask(CC_ARMOURED): 66/4; \
-        66; \
+        bitmask(CC_MAIL): 99/2; \
+        bitmask(CC_ARMOURED): 99/4; \
+        99; \
     }
 
 
     switch(FEAT_TRAINS, SELF, switch_dmu_algeria_sntf_zz_2200_autorail_capacity_wagon, cargo_classes) { \
-        bitmask(CC_MAIL): 66/2; \
-        bitmask(CC_ARMOURED): 66/4; \
-        66; \
+        bitmask(CC_MAIL): 99/2; \
+        bitmask(CC_ARMOURED): 99/4; \
+        99; \
     }
 
 item(FEAT_TRAINS, item_dmu_algeria_sntf_zz_2200_autorail) {
@@ -29,13 +29,13 @@ item(FEAT_TRAINS, item_dmu_algeria_sntf_zz_2200_autorail) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 53.20548;
-        running_cost_factor: 47.39416;
+        cost_factor: 48.17969;
+        running_cost_factor: 42.16837;
         speed: 160 km/h;
-        power: 1810 hp;
-        cargo_capacity: 66;
-        weight: 53 ton;
-        tractive_effort_coefficient: 0.37;
+        power: 1352 hp;
+        cargo_capacity: 99;
+        weight: 55 ton;
+        tractive_effort_coefficient: 0.13;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -73,18 +73,18 @@ badges: ["power/diesel", "flag/DZ"];
     livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: int(160/10);
-        weight: int(53*1/2);
-        cargo_capacity: 66;
+        weight: int(55*1/2);
+        cargo_capacity: 99;
         length: 8;
         default: switch_dmu_algeria_sntf_zz_2200_autorail_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(39.86440949845811));
-        power: int(1810*1/2);
-        weight: int(53*3/4);
-        cargo_capacity: 66;
-        tractive_effort_coefficient: int(0.37*10*53);
+        running_cost_factor: (round(26.826955314618907));
+        power: int(1352*1/2);
+        weight: int(55*3/4);
+        cargo_capacity: 99;
+        tractive_effort_coefficient: int(0.13*10*55);
         length: 8;
         default: switch_dmu_algeria_sntf_zz_2200_autorail_cargo_selection;
     }

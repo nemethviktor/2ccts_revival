@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_04A
+// Template: TPL_04A. Data from: nan
 
 item(FEAT_TRAINS, item_mu_coach_gen3_mk1_intercity_coach) {
     property {

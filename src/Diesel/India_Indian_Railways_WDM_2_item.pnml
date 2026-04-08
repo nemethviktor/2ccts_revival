@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A
+// Template: TPL_01A. Data from: https://en.wikipedia.org/wiki/Indian_locomotive_class_WDM-2
 
 item(FEAT_TRAINS, item_diesel_india_indian_railways_wdm_2) {
     property {
@@ -20,7 +20,7 @@ item(FEAT_TRAINS, item_diesel_india_indian_railways_wdm_2) {
         power: 2400 hp;
         cargo_capacity: 0;
         weight: 113 ton;
-        tractive_effort_coefficient: 0.27;
+        tractive_effort_coefficient: 0.271;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

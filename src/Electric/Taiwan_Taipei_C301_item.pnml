@@ -3,22 +3,22 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02C
+// Template: TPL_02C. Data from: https://en.wikipedia.org/wiki/Taipei_Metro_C301
 
 item(FEAT_TRAINS, item_mtro_taiwan_taipei_c301) {
     property {
         name: string(str_mtro_taiwan_taipei_c301);
         climates_available: ((param_region_asia || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
-        introduction_date: date(1996,1,1);
+        introduction_date: date(1992,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 60;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 26.83988;
-        running_cost_factor: 22.54503;
-        speed: 90 km/h;
-        power: 200 hp;
-        cargo_capacity: 250;
+        cost_factor: 50.38673;
+        running_cost_factor: 46.06078;
+        speed: 80 km/h;
+        power: 1550 hp;
+        cargo_capacity: 155;
         weight: 39 ton;
         tractive_effort_coefficient: 0.3;
         air_drag_coefficient: 0;
@@ -40,7 +40,7 @@ item(FEAT_TRAINS, item_mtro_taiwan_taipei_c301) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/maglev", "flag/TW"];
+badges: ["power/metro", "flag/TW"];
 
     }
     graphics {
@@ -56,7 +56,7 @@ badges: ["power/maglev", "flag/TW"];
     }
     livery_override (item_mtro_metro_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        running_cost_factor: int(90/10);
+        running_cost_factor: int(80/10);
         weight: int(39*1/2);
         cargo_capacity: 250;
         length: 8;
@@ -64,8 +64,8 @@ badges: ["power/maglev", "flag/TW"];
     }
     livery_override (item_mtro_metro_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        running_cost_factor: (round(22.12200311106765));
-        power: int(200*1/2);
+        running_cost_factor: (round(23.787003937702146));
+        power: int(1550*1/2);
         weight: int(39*3/4);
         cargo_capacity: 250;
         tractive_effort_coefficient: int(0.3*10*39);

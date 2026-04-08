@@ -3,14 +3,14 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01B
+// Template: TPL_01B. Data from: https://en.wikipedia.org/wiki/GWR_railcars
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_rbd_united_kingdom_gwr_aec_railcar_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 70/2; \
-        bitmask(CC_ARMOURED): 70/4; \
-        70; \
+        bitmask(CC_MAIL): 69/2; \
+        bitmask(CC_ARMOURED): 69/4; \
+        69; \
     }
 
 
@@ -24,17 +24,17 @@ item(FEAT_TRAINS, item_rbd_united_kingdom_gwr_aec_railcar) {
     property {
         name: string(str_rbd_united_kingdom_gwr_aec_railcar);
         climates_available: ((param_region_northern_europe || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
-        introduction_date: date(1933,1,1);
+        introduction_date: date(1934,1,1);
         model_life: 45;
         vehicle_life: 15;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 20.76108;
-        running_cost_factor: 17.88513;
-        speed: 80 km/h;
-        power: 175 hp;
-        cargo_capacity: 70;
-        weight: 25 ton;
+        cost_factor: 18.95482;
+        running_cost_factor: 16.13996;
+        speed: 101 km/h;
+        power: 130 hp;
+        cargo_capacity: 69;
+        weight: 24 ton;
         tractive_effort_coefficient: 0.27;
         air_drag_coefficient: 0;
 

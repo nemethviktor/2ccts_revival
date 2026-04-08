@@ -3,24 +3,24 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02C
+// Template: TPL_02C. Data from: https://de.wikipedia.org/wiki/MVG-Baureihe_A
 
 item(FEAT_TRAINS, item_mtro_germany_munchen_mvg_a2) {
     property {
         name: string(str_mtro_germany_munchen_mvg_a2);
         climates_available: ((param_region_western_europe || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
-        introduction_date: date(1967,1,1);
+        introduction_date: date(1971,1,1);
         model_life: 45;
         vehicle_life: 60;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 32.38559;
-        running_cost_factor: 29.40964;
+        cost_factor: 40.478;
+        running_cost_factor: 37.52206;
         speed: 80 km/h;
-        power: 480 hp;
-        cargo_capacity: 195;
-        weight: 26 ton;
-        tractive_effort_coefficient: 0.38;
+        power: 965 hp;
+        cargo_capacity: 145;
+        weight: 25 ton;
+        tractive_effort_coefficient: 0.26;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -40,7 +40,7 @@ item(FEAT_TRAINS, item_mtro_germany_munchen_mvg_a2) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/maglev", "flag/DE"];
+badges: ["power/metro", "flag/GDR"];
 
     }
     graphics {
@@ -57,18 +57,18 @@ badges: ["power/maglev", "flag/DE"];
     livery_override (item_mtro_metro_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
         running_cost_factor: int(80/10);
-        weight: int(26*1/2);
+        weight: int(25*1/2);
         cargo_capacity: 195;
         length: 8;
         default: spriteset_mtro_germany_munchen_mvg_a2_middle;
     }
     livery_override (item_mtro_metro_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        running_cost_factor: (round(20.071192926907713));
-        power: int(480*1/2);
-        weight: int(26*3/4);
+        running_cost_factor: (round(17.814448009408196));
+        power: int(965*1/2);
+        weight: int(25*3/4);
         cargo_capacity: 195;
-        tractive_effort_coefficient: int(0.38*10*26);
+        tractive_effort_coefficient: int(0.26*10*25);
         length: 8;
         default: spriteset_mtro_germany_munchen_mvg_a2_middle;
     }

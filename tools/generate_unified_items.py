@@ -25,7 +25,7 @@ def load_master_data(excel_path):
 
     # Define which columns MUST be treated as strings to avoid the float/NaN trap
     text_columns = ['COUNTRY', 'COUNTRY_CODE',
-                    'ITEM', 'NAME', 'VEHIDCODE', 'CARGODEF']
+                    'ITEM', 'NAME', 'VEHIDCODE', 'CARGODEF', 'WEB']
 
     for sheet_name in data_sheets:
         if sheet_name in sheets:
@@ -74,8 +74,12 @@ def get_badges(row: pd.Series) -> str:
     # example: badges: ["type/bus", "power/diesel", "flag/flag_CC", "usage/city"];
     # ok that's from a bus-nml but docu is s.it and can't find a better one.
     power = row['ENGINE_CLASS'].lower()
+    if (is_true(row['IS_TURBINE'])):
+        power = "turbine"
     flag = row['COUNTRY_CODE'].upper()
     badges = []
+    if row['VEHIDCODE'].lower().startswith('mtro') or row['VEHIDCODE'].lower().startswith('singlemtro'):
+        power = 'metro'
     if power != "":
         badges.append(f"power/{power}")
     if flag != "":
@@ -576,7 +580,8 @@ def generate_unified_items():
 
         content = []
         content.append(f"\n{copyright_text}\n\n")
-        content.append(f"\n// Template: {TEMPLATE_ID_FULL}\n\n")
+        content.append(
+            f"\n// Template: {TEMPLATE_ID_FULL}. Data from: {row['WEB']}\n\n")
         # We need to port some of the random crap from _graphics here else it won't work because we are no longer defining HEAD_CAPACITY as a generic thing.
         if (category in ['DMU', 'EMU', 'WAGON', 'MAGLEVMU'] and row['VEHID_ID_CATEGORY'] != 'ID_RANGE_CARGODMU') or category.endswith('RAILBUS'):
             content.append("// Cargo capacity" + "\n")

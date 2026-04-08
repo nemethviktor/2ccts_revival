@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03A
+// Template: TPL_03A. Data from: https://en.wikipedia.org/wiki/SEK_Class_%CE%9B%CE%B2
 
 item(FEAT_TRAINS, item_steam_greece_sek_lb) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_steam_greece_sek_lb) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 49.388;
-        running_cost_factor: 35.44187;
-        speed: 65 km/h;
-        power: 1250 hp;
+        cost_factor: 54.30777;
+        running_cost_factor: 40.09155;
+        speed: 75 km/h;
+        power: 1600 hp;
         cargo_capacity: 0;
-        weight: 136 ton;
-        tractive_effort_coefficient: 0.11;
+        weight: 138 ton;
+        tractive_effort_coefficient: 0.112;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

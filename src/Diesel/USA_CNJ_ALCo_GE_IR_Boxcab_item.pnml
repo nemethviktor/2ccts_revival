@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A
+// Template: TPL_01A. Data from: https://en.wikipedia.org/wiki/ALCO_boxcab
 
 item(FEAT_TRAINS, item_diesel_usa_cnj_alco_ge_ir_boxcab) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_diesel_usa_cnj_alco_ge_ir_boxcab) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 23.95934;
-        running_cost_factor: 17.44626;
-        speed: 100 km/h;
-        power: 300 hp;
+        cost_factor: 33.97213;
+        running_cost_factor: 24.57705;
+        speed: 55 km/h;
+        power: 600 hp;
         cargo_capacity: 0;
-        weight: 61 ton;
-        tractive_effort_coefficient: 0.11;
+        weight: 90 ton;
+        tractive_effort_coefficient: 0.281;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

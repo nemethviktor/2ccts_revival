@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02C
+// Template: TPL_02C. Data from: https://en.wikipedia.org/wiki/Red_Line_(MBTA)#Stainless_steel%E2%80%93bodied_cars
 
 item(FEAT_TRAINS, item_mtro_usa_boston_01800) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_mtro_usa_boston_01800) {
         vehicle_life: 60;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 36.73859;
-        running_cost_factor: 33.26264;
+        cost_factor: 40.84295;
+        running_cost_factor: 36.817;
         speed: 80 km/h;
-        power: 700 hp;
-        cargo_capacity: 150;
-        weight: 31 ton;
-        tractive_effort_coefficient: 0.51;
+        power: 910 hp;
+        cargo_capacity: 155;
+        weight: 36 ton;
+        tractive_effort_coefficient: 0.26;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -40,7 +40,7 @@ item(FEAT_TRAINS, item_mtro_usa_boston_01800) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/maglev", "flag/US"];
+badges: ["power/metro", "flag/US"];
 
     }
     graphics {
@@ -57,18 +57,18 @@ badges: ["power/maglev", "flag/US"];
     livery_override (item_mtro_metro_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
         running_cost_factor: int(80/10);
-        weight: int(31*1/2);
+        weight: int(36*1/2);
         cargo_capacity: 150;
         length: 8;
         default: spriteset_mtro_usa_boston_01800_middle;
     }
     livery_override (item_mtro_metro_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        running_cost_factor: (round(26.45578490734031));
-        power: int(700*1/2);
-        weight: int(31*3/4);
+        running_cost_factor: (round(20.506625653031314));
+        power: int(910*1/2);
+        weight: int(36*3/4);
         cargo_capacity: 150;
-        tractive_effort_coefficient: int(0.51*10*31);
+        tractive_effort_coefficient: int(0.26*10*36);
         length: 8;
         default: spriteset_mtro_usa_boston_01800_middle;
     }

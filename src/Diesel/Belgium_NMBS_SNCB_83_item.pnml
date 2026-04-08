@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03B
+// Template: TPL_03B. Data from: https://fr.wikipedia.org/wiki/S%C3%A9rie_83_SNCB
 
 item(FEAT_TRAINS, item_diesel_belgium_nmbs_sncb_83) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_diesel_belgium_nmbs_sncb_83) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 25.37346;
+        cost_factor: 27.07346;
         running_cost_factor: 21.05935;
         speed: 50 km/h;
         power: 440 hp;
         cargo_capacity: 0;
-        weight: 40 ton;
-        tractive_effort_coefficient: 0.39;
+        weight: 57 ton;
+        tractive_effort_coefficient: 0.351;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

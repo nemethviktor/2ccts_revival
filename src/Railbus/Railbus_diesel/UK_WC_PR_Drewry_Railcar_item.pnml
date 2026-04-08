@@ -3,14 +3,14 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01B
+// Template: TPL_01B. Data from: https://www.wcpr.org.uk/Railcars.html
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_rbd_uk_wc_pr_drewry_railcar_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 30/2; \
-        bitmask(CC_ARMOURED): 30/4; \
-        30; \
+        bitmask(CC_MAIL): 42/2; \
+        bitmask(CC_ARMOURED): 42/4; \
+        42; \
     }
 
 
@@ -29,11 +29,11 @@ item(FEAT_TRAINS, item_rbd_uk_wc_pr_drewry_railcar) {
         vehicle_life: 15;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 11.66399;
-        running_cost_factor: 10.37287;
+        cost_factor: 12.03558;
+        running_cost_factor: 10.74446;
         speed: 40 km/h;
         power: 35 hp;
-        cargo_capacity: 30;
+        cargo_capacity: 42;
         weight: 10 ton;
         tractive_effort_coefficient: 0.21;
         air_drag_coefficient: 0;

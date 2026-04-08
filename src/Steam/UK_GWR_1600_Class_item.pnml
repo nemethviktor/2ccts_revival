@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03C
+// Template: TPL_03C. Data from: https://en.wikipedia.org/wiki/GWR_1600_Class
 
 item(FEAT_TRAINS, item_steam_uk_gwr_1600_class) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_steam_uk_gwr_1600_class) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 30.93816;
-        running_cost_factor: 26.36221;
-        speed: 80 km/h;
-        power: 690 hp;
+        cost_factor: 26.95579;
+        running_cost_factor: 22.44967;
+        speed: 65 km/h;
+        power: 500 hp;
         cargo_capacity: 0;
-        weight: 42 ton;
-        tractive_effort_coefficient: 0.2;
+        weight: 41 ton;
+        tractive_effort_coefficient: 0.202;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

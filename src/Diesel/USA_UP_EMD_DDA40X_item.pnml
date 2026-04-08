@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_16A
+// Template: TPL_16A. Data from: https://en.wikipedia.org/wiki/EMD_DDA40X
 
 item(FEAT_TRAINS, item_diesel_usa_up_emd_dda40x) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_diesel_usa_up_emd_dda40x) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 107.97955;
+        cost_factor: 106.57955;
         running_cost_factor: 81.39284;
         speed: 144 km/h;
         power: 6600 hp;
         cargo_capacity: 0;
-        weight: 261 ton;
-        tractive_effort_coefficient: 0.19;
+        weight: 247 ton;
+        tractive_effort_coefficient: 0.209;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

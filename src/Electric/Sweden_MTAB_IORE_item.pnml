@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03D
+// Template: TPL_03D. Data from: https://en.wikipedia.org/wiki/Iore
 
 item(FEAT_TRAINS, item_electric_sweden_mtab_iore) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_electric_sweden_mtab_iore) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 157.76184;
-        running_cost_factor: 121.38589;
+        cost_factor: 157.41921;
+        running_cost_factor: 121.04326;
         speed: 80 km/h;
-        power: 14478 hp;
+        power: 14400 hp;
         cargo_capacity: 0;
         weight: 360 ton;
-        tractive_effort_coefficient: 0.39;
+        tractive_effort_coefficient: 0.34;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A
+// Template: TPL_01A. Data from: https://en.wikipedia.org/wiki/Voith_Maxima
 
 item(FEAT_TRAINS, item_diesel_germany_hvle_v490) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_diesel_germany_hvle_v490) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 83.60544;
+        cost_factor: 84.10544;
         running_cost_factor: 70.12503;
         speed: 140 km/h;
         power: 4900 hp;
         cargo_capacity: 0;
-        weight: 130 ton;
-        tractive_effort_coefficient: 0.35;
+        weight: 135 ton;
+        tractive_effort_coefficient: 0.308;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

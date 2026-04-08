@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03F
+// Template: TPL_03F. Data from: https://en.wikipedia.org/wiki/EMD_SDP40F
 
 item(FEAT_TRAINS, item_diesel_usa_amtrak_sdp_40f) {
     property {
@@ -20,7 +20,7 @@ item(FEAT_TRAINS, item_diesel_usa_amtrak_sdp_40f) {
         power: 3000 hp;
         cargo_capacity: 0;
         weight: 131 ton;
-        tractive_effort_coefficient: 0.15;
+        tractive_effort_coefficient: 0.225;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

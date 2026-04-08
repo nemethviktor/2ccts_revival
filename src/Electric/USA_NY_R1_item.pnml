@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02C
+// Template: TPL_02C. Data from: https://en.wikipedia.org/wiki/R1_(New_York_City_Subway_car)
 
 item(FEAT_TRAINS, item_mtro_usa_ny_r1) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_mtro_usa_ny_r1) {
         vehicle_life: 60;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 30.43192;
-        running_cost_factor: 26.23707;
+        cost_factor: 37.77627;
+        running_cost_factor: 33.18142;
         speed: 90 km/h;
-        power: 380 hp;
-        cargo_capacity: 156;
-        weight: 38 ton;
-        tractive_effort_coefficient: 0.32;
+        power: 760 hp;
+        cargo_capacity: 105;
+        weight: 42 ton;
+        tractive_effort_coefficient: 0.24;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -40,7 +40,7 @@ item(FEAT_TRAINS, item_mtro_usa_ny_r1) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/maglev", "flag/US"];
+badges: ["power/metro", "flag/US"];
 
     }
     graphics {
@@ -57,18 +57,18 @@ badges: ["power/maglev", "flag/US"];
     livery_override (item_mtro_metro_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
         running_cost_factor: int(90/10);
-        weight: int(38*1/2);
+        weight: int(42*1/2);
         cargo_capacity: 156;
         length: 8;
         default: spriteset_mtro_usa_ny_r1_middle;
     }
     livery_override (item_mtro_metro_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        running_cost_factor: (round(23.110255750157286));
-        power: int(380*1/2);
-        weight: int(38*3/4);
+        running_cost_factor: (round(21.83682897445874));
+        power: int(760*1/2);
+        weight: int(42*3/4);
         cargo_capacity: 156;
-        tractive_effort_coefficient: int(0.32*10*38);
+        tractive_effort_coefficient: int(0.24*10*42);
         length: 8;
         default: spriteset_mtro_usa_ny_r1_middle;
     }

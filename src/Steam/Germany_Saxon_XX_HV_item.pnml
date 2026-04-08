@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03A
+// Template: TPL_03A. Data from: https://de.wikipedia.org/wiki/S%C3%A4chsische_XX_HV
 
 item(FEAT_TRAINS, item_steam_germany_saxon_xx_hv) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_steam_germany_saxon_xx_hv) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 52.0861;
-        running_cost_factor: 42.53835;
-        speed: 120 km/h;
-        power: 1800 hp;
+        cost_factor: 59.00916;
+        running_cost_factor: 42.29987;
+        speed: 115 km/h;
+        power: 1780 hp;
         cargo_capacity: 0;
-        weight: 91 ton;
-        tractive_effort_coefficient: 0.23;
+        weight: 162 ton;
+        tractive_effort_coefficient: 0.07;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

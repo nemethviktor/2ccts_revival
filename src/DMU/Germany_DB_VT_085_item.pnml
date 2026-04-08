@@ -3,21 +3,21 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A
+// Template: TPL_02A. Data from: https://de.wikipedia.org/wiki/DB-Baureihe_VT_08
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_dmu_germany_db_vt_085_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 45/2; \
-        bitmask(CC_ARMOURED): 45/4; \
-        45; \
+        bitmask(CC_MAIL): 54/2; \
+        bitmask(CC_ARMOURED): 54/4; \
+        54; \
     }
 
 
     switch(FEAT_TRAINS, SELF, switch_dmu_germany_db_vt_085_capacity_wagon, cargo_classes) { \
-        bitmask(CC_MAIL): 45/2; \
-        bitmask(CC_ARMOURED): 45/4; \
-        45; \
+        bitmask(CC_MAIL): 36/2; \
+        bitmask(CC_ARMOURED): 36/4; \
+        36; \
     }
 
 item(FEAT_TRAINS, item_dmu_germany_db_vt_085) {
@@ -29,13 +29,13 @@ item(FEAT_TRAINS, item_dmu_germany_db_vt_085) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 40.41643;
-        running_cost_factor: 35.73602;
+        cost_factor: 40.20385;
+        running_cost_factor: 35.69011;
         speed: 140 km/h;
         power: 986 hp;
-        cargo_capacity: 45;
-        weight: 42 ton;
-        tractive_effort_coefficient: 0.43;
+        cargo_capacity: 54;
+        weight: 40 ton;
+        tractive_effort_coefficient: 0.133;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -55,7 +55,7 @@ item(FEAT_TRAINS, item_dmu_germany_db_vt_085) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/diesel", "flag/DE"];
+badges: ["power/diesel", "flag/GDR"];
 
     }
     graphics {
@@ -73,18 +73,18 @@ badges: ["power/diesel", "flag/DE"];
     livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
         running_cost_factor: int(140/10);
-        weight: int(42*1/2);
-        cargo_capacity: 45;
+        weight: int(40*1/2);
+        cargo_capacity: 36;
         length: 8;
         default: switch_dmu_germany_db_vt_085_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        running_cost_factor: (round(35.20006626372373));
+        running_cost_factor: (round(22.504399597057066));
         power: int(986*1/2);
-        weight: int(42*3/4);
-        cargo_capacity: 45;
-        tractive_effort_coefficient: int(0.43*10*42);
+        weight: int(40*3/4);
+        cargo_capacity: 36;
+        tractive_effort_coefficient: int(0.133*10*40);
         length: 8;
         default: switch_dmu_germany_db_vt_085_cargo_selection;
     }

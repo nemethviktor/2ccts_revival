@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_42A
+// Template: TPL_42A. Data from: nan
 
 item(FEAT_TRAINS, item_cargodmu_germany_db_691_cargosprinter) {
     property {

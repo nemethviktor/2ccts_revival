@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A
+// Template: TPL_02A. Data from: https://en.wikipedia.org/wiki/DSB_Class_MF#Y2
 
 // Cargo capacity
 
@@ -29,13 +29,13 @@ item(FEAT_TRAINS, item_dmu_sweden_sj_y2) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 32.87222;
-        running_cost_factor: 29.13149;
+        cost_factor: 66.03716;
+        running_cost_factor: 60.69644;
         speed: 180 km/h;
-        power: 600 hp;
+        power: 3200 hp;
         cargo_capacity: 48;
-        weight: 32 ton;
-        tractive_effort_coefficient: 0.63;
+        weight: 48 ton;
+        tractive_effort_coefficient: 0.122;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -73,18 +73,18 @@ badges: ["power/diesel", "flag/SE"];
     livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
         running_cost_factor: int(180/10);
-        weight: int(32*1/2);
+        weight: int(48*1/2);
         cargo_capacity: 48;
         length: 8;
         default: switch_dmu_sweden_sj_y2_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        running_cost_factor: (round(40.609578240496596));
-        power: int(600*1/2);
-        weight: int(32*3/4);
+        running_cost_factor: (round(29.512872306380572));
+        power: int(3200*1/2);
+        weight: int(48*3/4);
         cargo_capacity: 48;
-        tractive_effort_coefficient: int(0.63*10*32);
+        tractive_effort_coefficient: int(0.122*10*48);
         length: 8;
         default: switch_dmu_sweden_sj_y2_cargo_selection;
     }

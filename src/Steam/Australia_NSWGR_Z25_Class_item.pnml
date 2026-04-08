@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03A
+// Template: TPL_03A. Data from: https://en.wikipedia.org/wiki/New_South_Wales_Z25_class_locomotive
 
 item(FEAT_TRAINS, item_steam_australia_nswgr_z25_class) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_steam_australia_nswgr_z25_class) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 30.26557;
+        cost_factor: 33.46557;
         running_cost_factor: 25.58963;
         speed: 80 km/h;
         power: 650 hp;
         cargo_capacity: 0;
-        weight: 43 ton;
-        tractive_effort_coefficient: 0.23;
+        weight: 75 ton;
+        tractive_effort_coefficient: 0.133;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

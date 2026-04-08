@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03C
+// Template: TPL_03C. Data from: https://de.wikipedia.org/wiki/SCB_Ec_2/5
 
 item(FEAT_TRAINS, item_steam_switzerland_sbb_ec_2_5) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_steam_switzerland_sbb_ec_2_5) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 25.02685;
+        cost_factor: 24.92685;
         running_cost_factor: 20.09112;
         speed: 60 km/h;
         power: 400 hp;
         cargo_capacity: 0;
-        weight: 46 ton;
-        tractive_effort_coefficient: 0.1;
+        weight: 45 ton;
+        tractive_effort_coefficient: 0.2;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

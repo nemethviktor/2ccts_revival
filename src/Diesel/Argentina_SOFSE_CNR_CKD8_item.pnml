@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A
+// Template: TPL_01A. Data from: https://es.wikipedia.org/wiki/Locomotora_CNR_CKD8
 
 item(FEAT_TRAINS, item_diesel_argentina_sofse_cnr_ckd8) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_diesel_argentina_sofse_cnr_ckd8) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 66.95314;
-        running_cost_factor: 54.44182;
-        speed: 160 km/h;
+        cost_factor: 66.87369;
+        running_cost_factor: 54.42593;
+        speed: 120 km/h;
         power: 2950 hp;
         cargo_capacity: 0;
         weight: 120 ton;
-        tractive_effort_coefficient: 0.32;
+        tractive_effort_coefficient: 0.326;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -29,7 +29,7 @@ item(FEAT_TRAINS, item_diesel_argentina_sofse_cnr_ckd8) {
         misc_flags: bitmask(TRAIN_FLAG_2CC);
         refit_cost: 0;
         ai_special_flag: AI_FLAG_PASSENGER;
-        track_type: [STANDARD_GAUGE_RAILTYPE_NONE];
+        track_type: [BROAD_GAUGE_RAILTYPE_NONE];
         running_cost_base: RUNNING_COST_DIESEL;
         engine_class: ENGINE_CLASS_DIESEL;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 0, DISABLE_WAGON_POWER);

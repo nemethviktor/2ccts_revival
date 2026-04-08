@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03A
+// Template: TPL_03A. Data from: https://es.wikipedia.org/wiki/Locomotora_a_vapor_PS11
 
 item(FEAT_TRAINS, item_steam_argentina_fcca_ps11) {
     property {
@@ -29,7 +29,7 @@ item(FEAT_TRAINS, item_steam_argentina_fcca_ps11) {
         misc_flags: bitmask(TRAIN_FLAG_2CC);
         refit_cost: 0;
         ai_special_flag: AI_FLAG_PASSENGER;
-        track_type: [STANDARD_GAUGE_RAILTYPE_NONE];
+        track_type: [BROAD_GAUGE_RAILTYPE_NONE];
         running_cost_base: RUNNING_COST_STEAM;
         engine_class: ENGINE_CLASS_STEAM;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_STEAM, 0, DISABLE_WAGON_POWER);

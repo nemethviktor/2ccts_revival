@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01B
+// Template: TPL_01B. Data from: https://en.wikipedia.org/wiki/FS_Class_ALn_668
 
 // Cargo capacity
 
@@ -29,12 +29,12 @@ item(FEAT_TRAINS, item_rbd_italy_fs_aln_668) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 26.45943;
-        running_cost_factor: 22.82874;
-        speed: 110 km/h;
+        cost_factor: 26.90146;
+        running_cost_factor: 22.83714;
+        speed: 130 km/h;
         power: 335 hp;
         cargo_capacity: 68;
-        weight: 32 ton;
+        weight: 36 ton;
         tractive_effort_coefficient: 0.23;
         air_drag_coefficient: 0;
 

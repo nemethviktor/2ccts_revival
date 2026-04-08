@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A
+// Template: TPL_01A. Data from: https://cs.wikipedia.org/wiki/Lokomotiva_720
 
 item(FEAT_TRAINS, item_diesel_czech_republic_cd_720_chme2) {
     property {
@@ -20,7 +20,7 @@ item(FEAT_TRAINS, item_diesel_czech_republic_cd_720_chme2) {
         power: 740 hp;
         cargo_capacity: 0;
         weight: 61 ton;
-        tractive_effort_coefficient: 0.28;
+        tractive_effort_coefficient: 0.267;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

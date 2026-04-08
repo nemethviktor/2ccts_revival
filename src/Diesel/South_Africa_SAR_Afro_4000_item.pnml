@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A
+// Template: TPL_01A. Data from: https://en.wikipedia.org/wiki/South_African_Class_Afro_4000
 
 item(FEAT_TRAINS, item_diesel_south_africa_sar_afro_4000) {
     property {

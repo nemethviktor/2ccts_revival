@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02C
+// Template: TPL_02C. Data from: https://en.wikipedia.org/wiki/Breda_A650
 
 item(FEAT_TRAINS, item_mtro_usa_la_a650) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_mtro_usa_la_a650) {
         vehicle_life: 60;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 34.31369;
-        running_cost_factor: 30.17954;
-        speed: 112 km/h;
-        power: 530 hp;
-        cargo_capacity: 170;
-        weight: 37 ton;
-        tractive_effort_coefficient: 0.47;
+        cost_factor: 45.9315;
+        running_cost_factor: 41.92522;
+        speed: 70 km/h;
+        power: 1250 hp;
+        cargo_capacity: 150;
+        weight: 36 ton;
+        tractive_effort_coefficient: 0.28;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -40,7 +40,7 @@ item(FEAT_TRAINS, item_mtro_usa_la_a650) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/maglev", "flag/US"];
+badges: ["power/metro", "flag/US"];
 
     }
     graphics {
@@ -56,19 +56,19 @@ badges: ["power/maglev", "flag/US"];
     }
     livery_override (item_mtro_metro_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        running_cost_factor: int(112/10);
-        weight: int(37*1/2);
+        running_cost_factor: int(70/10);
+        weight: int(36*1/2);
         cargo_capacity: 170;
         length: 8;
         default: spriteset_mtro_usa_la_a650_middle;
     }
     livery_override (item_mtro_metro_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        running_cost_factor: (round(30.892352559924202));
-        power: int(530*1/2);
-        weight: int(37*3/4);
+        running_cost_factor: (round(20.755534097034825));
+        power: int(1250*1/2);
+        weight: int(36*3/4);
         cargo_capacity: 170;
-        tractive_effort_coefficient: int(0.47*10*37);
+        tractive_effort_coefficient: int(0.28*10*36);
         length: 8;
         default: spriteset_mtro_usa_la_a650_middle;
     }

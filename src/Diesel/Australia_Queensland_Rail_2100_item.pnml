@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A
+// Template: TPL_01A. Data from: https://en.wikipedia.org/wiki/Queensland_Railways_2100_class
 
 item(FEAT_TRAINS, item_diesel_australia_queensland_rail_2100) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_diesel_australia_queensland_rail_2100) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 54.42874;
-        running_cost_factor: 44.25279;
+        cost_factor: 54.9913;
+        running_cost_factor: 44.81535;
         speed: 80 km/h;
-        power: 1950 hp;
+        power: 2000 hp;
         cargo_capacity: 0;
         weight: 98 ton;
-        tractive_effort_coefficient: 0.29;
+        tractive_effort_coefficient: 0.297;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

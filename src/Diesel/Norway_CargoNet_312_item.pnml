@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A
+// Template: TPL_01A. Data from: https://no.wikipedia.org/wiki/Euro_4000
 
 item(FEAT_TRAINS, item_diesel_norway_cargonet_312) {
     property {
@@ -20,7 +20,7 @@ item(FEAT_TRAINS, item_diesel_norway_cargonet_312) {
         power: 4262 hp;
         cargo_capacity: 0;
         weight: 123 ton;
-        tractive_effort_coefficient: 0.33;
+        tractive_effort_coefficient: 0.332;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

@@ -3,14 +3,14 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A
+// Template: TPL_02A. Data from: https://en.wikipedia.org/wiki/New_South_Wales_Xplorer
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_dmu_australia_nswgr_xplorer_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 66/2; \
-        bitmask(CC_ARMOURED): 66/4; \
-        66; \
+        bitmask(CC_MAIL): 38/2; \
+        bitmask(CC_ARMOURED): 38/4; \
+        38; \
     }
 
 
@@ -29,13 +29,13 @@ item(FEAT_TRAINS, item_dmu_australia_nswgr_xplorer) {
         vehicle_life: 20;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 33.49507;
-        running_cost_factor: 27.28375;
-        speed: 160 km/h;
-        power: 514 hp;
-        cargo_capacity: 66;
+        cost_factor: 42.06375;
+        running_cost_factor: 35.87547;
+        speed: 145 km/h;
+        power: 1028 hp;
+        cargo_capacity: 38;
         weight: 57 ton;
-        tractive_effort_coefficient: 0.13;
+        tractive_effort_coefficient: 0.112;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -72,7 +72,7 @@ badges: ["power/diesel", "flag/AU"];
     }
     livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: int(160/10);
+        running_cost_factor: int(145/10);
         weight: int(57*1/2);
         cargo_capacity: 66;
         length: 8;
@@ -80,11 +80,11 @@ badges: ["power/diesel", "flag/AU"];
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(25.677368810890325));
-        power: int(514*1/2);
+        running_cost_factor: (round(24.090245672428065));
+        power: int(1028*1/2);
         weight: int(57*3/4);
         cargo_capacity: 66;
-        tractive_effort_coefficient: int(0.13*10*57);
+        tractive_effort_coefficient: int(0.112*10*57);
         length: 8;
         default: switch_dmu_australia_nswgr_xplorer_cargo_selection;
     }

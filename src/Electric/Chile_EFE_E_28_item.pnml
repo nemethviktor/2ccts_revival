@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A
+// Template: TPL_01A. Data from: nan
 
 item(FEAT_TRAINS, item_electric_chile_efe_e_28) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_electric_chile_efe_e_28) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 59.47253;
-        running_cost_factor: 47.54184;
-        speed: 110 km/h;
-        power: 2250 hp;
+        cost_factor: 57.96743;
+        running_cost_factor: 49.59148;
+        speed: 80 km/h;
+        power: 2450 hp;
         cargo_capacity: 0;
-        weight: 115 ton;
-        tractive_effort_coefficient: 0.19;
+        weight: 80 ton;
+        tractive_effort_coefficient: 0.255;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

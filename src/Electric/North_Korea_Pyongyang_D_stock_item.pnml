@@ -3,24 +3,24 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02C
+// Template: TPL_02C. Data from: https://en.wikipedia.org/wiki/Pyongyang_Metro#Rolling_stock
 
 item(FEAT_TRAINS, item_mtro_north_korea_pyongyang_d_stock) {
     property {
         name: string(str_mtro_north_korea_pyongyang_d_stock);
         climates_available: ((param_region_asia || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
-        introduction_date: date(1975,1,1);
+        introduction_date: date(1999,1,1);
         model_life: 45;
         vehicle_life: 60;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 30.37626;
-        running_cost_factor: 25.96319;
-        speed: 100 km/h;
-        power: 350 hp;
-        cargo_capacity: 180;
-        weight: 40 ton;
-        tractive_effort_coefficient: 0.38;
+        cost_factor: 38.20125;
+        running_cost_factor: 34.99497;
+        speed: 70 km/h;
+        power: 800 hp;
+        cargo_capacity: 160;
+        weight: 28 ton;
+        tractive_effort_coefficient: 0.23;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -40,7 +40,7 @@ item(FEAT_TRAINS, item_mtro_north_korea_pyongyang_d_stock) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/maglev", "flag/KP"];
+badges: ["power/metro", "flag/KP"];
 
     }
     graphics {
@@ -56,19 +56,19 @@ badges: ["power/maglev", "flag/KP"];
     }
     livery_override (item_mtro_metro_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        running_cost_factor: int(100/10);
-        weight: int(40*1/2);
+        running_cost_factor: int(70/10);
+        weight: int(28*1/2);
         cargo_capacity: 180;
         length: 8;
         default: spriteset_mtro_north_korea_pyongyang_d_stock_middle;
     }
     livery_override (item_mtro_metro_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        running_cost_factor: (round(27.07208708003319));
-        power: int(350*1/2);
-        weight: int(40*3/4);
+        running_cost_factor: (round(16.383440485114242));
+        power: int(800*1/2);
+        weight: int(28*3/4);
         cargo_capacity: 180;
-        tractive_effort_coefficient: int(0.38*10*40);
+        tractive_effort_coefficient: int(0.23*10*28);
         length: 8;
         default: spriteset_mtro_north_korea_pyongyang_d_stock_middle;
     }

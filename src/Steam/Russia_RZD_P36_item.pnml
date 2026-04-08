@@ -3,24 +3,24 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03A
+// Template: TPL_03A. Data from: https://ru.wikipedia.org/wiki/%D0%9F36
 
 item(FEAT_TRAINS, item_steam_russia_rzd_p36) {
     property {
         name: string(str_steam_russia_rzd_p36);
         climates_available: ((param_region_asia || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
-        introduction_date: date(1953,1,1);
+        introduction_date: date(1954,1,1);
         model_life: 45;
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 80.97197;
-        running_cost_factor: 56.01587;
+        cost_factor: 80.74248;
+        running_cost_factor: 54.88638;
         speed: 125 km/h;
-        power: 3125 hp;
+        power: 3000 hp;
         cargo_capacity: 0;
-        weight: 245 ton;
-        tractive_effort_coefficient: 0.06;
+        weight: 254 ton;
+        tractive_effort_coefficient: 0.071;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -40,7 +40,7 @@ item(FEAT_TRAINS, item_steam_russia_rzd_p36) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/steam", "flag/RU"];
+badges: ["power/steam", "flag/SU"];
 
     }
     graphics {

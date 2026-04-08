@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A
+// Template: TPL_01A. Data from: https://en.wikipedia.org/wiki/EMD_SD70_series
 
 item(FEAT_TRAINS, item_diesel_saudi_arabia_saudi_railways_4000_emd_sd70acs) {
     property {
@@ -20,7 +20,7 @@ item(FEAT_TRAINS, item_diesel_saudi_arabia_saudi_railways_4000_emd_sd70acs) {
         power: 4500 hp;
         cargo_capacity: 0;
         weight: 170 ton;
-        tractive_effort_coefficient: 0.5;
+        tractive_effort_coefficient: 0.51;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -29,7 +29,7 @@ item(FEAT_TRAINS, item_diesel_saudi_arabia_saudi_railways_4000_emd_sd70acs) {
         misc_flags: bitmask(TRAIN_FLAG_2CC);
         refit_cost: 0;
         ai_special_flag: AI_FLAG_PASSENGER;
-        track_type: [STANDARD_GAUGE_RAILTYPE_NONE];
+        track_type: [BROAD_GAUGE_RAILTYPE_NONE];
         running_cost_base: RUNNING_COST_DIESEL;
         engine_class: ENGINE_CLASS_DIESEL;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 0, DISABLE_WAGON_POWER);

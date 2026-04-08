@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A
+// Template: TPL_01A. Data from: https://de.wikipedia.org/wiki/DR-Kleinlokomotive_Leistungsgruppe_II
 
 item(FEAT_TRAINS, item_diesel_germany_db_kof_ii) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_diesel_germany_db_kof_ii) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 12.23367;
-        running_cost_factor: 10.16754;
+        cost_factor: 10.22602;
+        running_cost_factor: 8.45989;
         speed: 30 km/h;
-        power: 95 hp;
+        power: 60 hp;
         cargo_capacity: 0;
-        weight: 18 ton;
-        tractive_effort_coefficient: 0.39;
+        weight: 15 ton;
+        tractive_effort_coefficient: 0.204;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

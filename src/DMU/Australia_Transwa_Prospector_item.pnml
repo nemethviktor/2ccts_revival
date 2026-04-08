@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A
+// Template: TPL_02A. Data from: https://en.wikipedia.org/wiki/Transwa_WDA/WDB/WDC_class
 
 // Cargo capacity
 
@@ -29,13 +29,13 @@ item(FEAT_TRAINS, item_dmu_australia_transwa_prospector) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 31.54962;
-        running_cost_factor: 27.68082;
+        cost_factor: 40.91016;
+        running_cost_factor: 37.04136;
         speed: 200 km/h;
-        power: 520 hp;
+        power: 1040 hp;
         cargo_capacity: 68;
         weight: 33 ton;
-        tractive_effort_coefficient: 0.33;
+        tractive_effort_coefficient: 0.247;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -80,11 +80,11 @@ badges: ["power/diesel", "flag/AU"];
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        running_cost_factor: (round(33.170550065962736));
-        power: int(520*1/2);
+        running_cost_factor: (round(31.375904681397646));
+        power: int(1040*1/2);
         weight: int(33*3/4);
         cargo_capacity: 68;
-        tractive_effort_coefficient: int(0.33*10*33);
+        tractive_effort_coefficient: int(0.247*10*33);
         length: 8;
         default: switch_dmu_australia_transwa_prospector_cargo_selection;
     }

@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A
+// Template: TPL_01A. Data from: https://en.wikipedia.org/wiki/EMD_F59PH
 
 item(FEAT_TRAINS, item_diesel_usa_metrolink_emd_f59ph) {
     property {
@@ -14,10 +14,10 @@ item(FEAT_TRAINS, item_diesel_usa_metrolink_emd_f59ph) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 70.23923;
-        running_cost_factor: 56.70282;
+        cost_factor: 68.44286;
+        running_cost_factor: 54.90646;
         speed: 177 km/h;
-        power: 3200 hp;
+        power: 3000 hp;
         cargo_capacity: 0;
         weight: 130 ton;
         tractive_effort_coefficient: 0.22;

@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02C
+// Template: TPL_02C. Data from: https://en.wikipedia.org/wiki/Kawasaki_Heavy_Industries_%26_CSR_Qingdao_Sifang_C151A
 
 item(FEAT_TRAINS, item_mtro_singapore_singapore_c151a) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_mtro_singapore_singapore_c151a) {
         vehicle_life: 60;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 39.56294;
-        running_cost_factor: 35.66809;
+        cost_factor: 50.47183;
+        running_cost_factor: 46.57698;
         speed: 90 km/h;
-        power: 720 hp;
-        cargo_capacity: 250;
+        power: 1580 hp;
+        cargo_capacity: 162;
         weight: 35 ton;
-        tractive_effort_coefficient: 0.81;
+        tractive_effort_coefficient: 0.3;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -40,7 +40,7 @@ item(FEAT_TRAINS, item_mtro_singapore_singapore_c151a) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/maglev", "flag/SG"];
+badges: ["power/metro", "flag/SG"];
 
     }
     graphics {
@@ -64,11 +64,11 @@ badges: ["power/maglev", "flag/SG"];
     }
     livery_override (item_mtro_metro_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        running_cost_factor: (round(40.033309414757056));
-        power: int(720*1/2);
+        running_cost_factor: (round(23.474921382944906));
+        power: int(1580*1/2);
         weight: int(35*3/4);
         cargo_capacity: 250;
-        tractive_effort_coefficient: int(0.81*10*35);
+        tractive_effort_coefficient: int(0.3*10*35);
         length: 8;
         default: spriteset_mtro_singapore_singapore_c151a_middle;
     }

@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A
+// Template: TPL_01A. Data from: https://en.wikipedia.org/wiki/CP_Class_1500
 
 item(FEAT_TRAINS, item_diesel_portugal_cp_1500) {
     property {
@@ -14,10 +14,10 @@ item(FEAT_TRAINS, item_diesel_portugal_cp_1500) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 52.89075;
-        running_cost_factor: 41.343;
+        cost_factor: 50.38953;
+        running_cost_factor: 38.84177;
         speed: 120 km/h;
-        power: 1700 hp;
+        power: 1500 hp;
         cargo_capacity: 0;
         weight: 111 ton;
         tractive_effort_coefficient: 0.15;
@@ -29,7 +29,7 @@ item(FEAT_TRAINS, item_diesel_portugal_cp_1500) {
         misc_flags: bitmask(TRAIN_FLAG_2CC);
         refit_cost: 0;
         ai_special_flag: AI_FLAG_PASSENGER;
-        track_type: [STANDARD_GAUGE_RAILTYPE_NONE];
+        track_type: [BROAD_GAUGE_RAILTYPE_NONE];
         running_cost_base: RUNNING_COST_DIESEL;
         engine_class: ENGINE_CLASS_DIESEL;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 0, DISABLE_WAGON_POWER);

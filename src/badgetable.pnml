@@ -12,6 +12,7 @@ spriteset (sprite_power_electric_dc) {[0, 0, 16, 12, 0, 0, "gfx/Badges/power/pow
 spriteset (sprite_power_steam) {[0, 0, 16, 12, 0, 0, "gfx/Badges/power/power_steam.png"]}
 spriteset (sprite_power_turbine) {[0, 0, 16, 12, 0, 0, "gfx/Badges/power/power_turbine.png"]}
 spriteset (sprite_power_maglev) {[0, 0, 16, 12, 0, 0, "gfx/Badges/power/power_maglev.png"]}
+spriteset (sprite_power_metro) {[0, 0, 16, 12, 0, 0, "gfx/Badges/power/power_metro.png"]}
 spriteset (sprite_flag_AF) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/af.png"]}
 spriteset (sprite_flag_AX) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/ax.png"]}
 spriteset (sprite_flag_AL) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/al.png"]}
@@ -95,6 +96,7 @@ spriteset (sprite_flag_GA) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/ga.png"]}
 spriteset (sprite_flag_GM) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/gm.png"]}
 spriteset (sprite_flag_GE) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/ge.png"]}
 spriteset (sprite_flag_DE) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/de.png"]}
+spriteset (sprite_flag_GDR) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/gdr.png"]}
 spriteset (sprite_flag_GH) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/gh.png"]}
 spriteset (sprite_flag_GI) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/gi.png"]}
 spriteset (sprite_flag_GR) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/gr.png"]}
@@ -155,6 +157,7 @@ spriteset (sprite_flag_MQ) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/mq.png"]}
 spriteset (sprite_flag_MR) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/mr.png"]}
 spriteset (sprite_flag_MU) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/mu.png"]}
 spriteset (sprite_flag_YT) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/yt.png"]}
+spriteset (sprite_flag_YU) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/yu.png"]}
 spriteset (sprite_flag_MX) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/mx.png"]}
 spriteset (sprite_flag_FM) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/fm.png"]}
 spriteset (sprite_flag_MD) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/md.png"]}
@@ -195,6 +198,7 @@ spriteset (sprite_flag_QA) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/qa.png"]}
 spriteset (sprite_flag_RE) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/re.png"]}
 spriteset (sprite_flag_RO) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/ro.png"]}
 spriteset (sprite_flag_RU) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/ru.png"]}
+spriteset (sprite_flag_SU) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/su.png"]}
 spriteset (sprite_flag_RW) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/rw.png"]}
 spriteset (sprite_flag_BL) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/bl.png"]}
 spriteset (sprite_flag_SH) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/sh.png"]}
@@ -348,6 +352,7 @@ spriteset (sprite_flag_WRLD) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/wrld.png"]}b
 	"flag/GM",
 	"flag/GE",
 	"flag/DE",
+	"flag/GDR",
 	"flag/GH",
 	"flag/GI",
 	"flag/GR",
@@ -408,6 +413,7 @@ spriteset (sprite_flag_WRLD) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/wrld.png"]}b
 	"flag/MR",
 	"flag/MU",
 	"flag/YT",
+	"flag/YU",
 	"flag/MX",
 	"flag/FM",
 	"flag/MD",
@@ -448,6 +454,7 @@ spriteset (sprite_flag_WRLD) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/wrld.png"]}b
 	"flag/RE",
 	"flag/RO",
 	"flag/RU",
+	"flag/SU",
 	"flag/RW",
 	"flag/BL",
 	"flag/SH",
@@ -527,6 +534,7 @@ spriteset (sprite_flag_WRLD) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/wrld.png"]}b
 	"power/steam",
 	"power/turbine",
 	"power/maglev",
+	"power/metro",
 }
 
 // Flag Items
@@ -1368,6 +1376,16 @@ item (FEAT_BADGES, flag_DE) {
 }
 
 	
+item (FEAT_BADGES, flag_GDR) {
+    property {
+        label: "flag/GDR";
+        name: string(STR_FLAG_GDR);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}
+	graphics {default: sprite_flag_GDR;}
+}
+
+	
 item (FEAT_BADGES, flag_GH) {
     property {
         label: "flag/GH";
@@ -1968,6 +1986,16 @@ item (FEAT_BADGES, flag_YT) {
 }
 
 	
+item (FEAT_BADGES, flag_YU) {
+    property {
+        label: "flag/YU";
+        name: string(STR_FLAG_YU);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}
+	graphics {default: sprite_flag_YU;}
+}
+
+	
 item (FEAT_BADGES, flag_MX) {
     property {
         label: "flag/MX";
@@ -2365,6 +2393,16 @@ item (FEAT_BADGES, flag_RU) {
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
 	}
 	graphics {default: sprite_flag_RU;}
+}
+
+	
+item (FEAT_BADGES, flag_SU) {
+    property {
+        label: "flag/SU";
+        name: string(STR_FLAG_SU);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}
+	graphics {default: sprite_flag_SU;}
 }
 
 	
@@ -3134,5 +3172,15 @@ item (FEAT_BADGES, power_maglev) {
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
 	}
 	graphics {default: sprite_power_maglev;}
+}
+
+	
+item (FEAT_BADGES, power_metro) {
+    property {
+        label: "power/metro";
+        name: string(STR_POWER_METRO);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}
+	graphics {default: sprite_power_metro;}
 }
 

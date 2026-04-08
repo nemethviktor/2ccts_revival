@@ -3,24 +3,24 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03A
+// Template: TPL_03A. Data from: https://en.wikipedia.org/wiki/DHR_B_Class
 
 item(FEAT_TRAINS, item_steam_india_dhr_b) {
     property {
         name: string(str_steam_india_dhr_b);
         climates_available: ((param_region_asia || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1889,1,1);
-        model_life: 45;
+        model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 15.33993;
-        running_cost_factor: 13.04408;
-        speed: 42 km/h;
-        power: 165 hp;
+        cost_factor: 12.06239;
+        running_cost_factor: 10.38994;
+        speed: 25 km/h;
+        power: 100 hp;
         cargo_capacity: 0;
-        weight: 20 ton;
-        tractive_effort_coefficient: 0.18;
+        weight: 14 ton;
+        tractive_effort_coefficient: 0.247;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

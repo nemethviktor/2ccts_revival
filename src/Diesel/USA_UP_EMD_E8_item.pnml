@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_17B
+// Template: TPL_17B. Data from: https://en.wikipedia.org/wiki/EMD_E8
 
 item(FEAT_TRAINS, item_diesel_usa_up_emd_e8) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_diesel_usa_up_emd_e8) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 63.5581;
-        running_cost_factor: 47.55896;
-        speed: 152 km/h;
+        cost_factor: 62.4243;
+        running_cost_factor: 47.5722;
+        speed: 188 km/h;
         power: 2250 hp;
         cargo_capacity: 0;
-        weight: 155 ton;
-        tractive_effort_coefficient: 0.13;
+        weight: 143 ton;
+        tractive_effort_coefficient: 0.179;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

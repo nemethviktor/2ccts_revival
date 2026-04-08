@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02C
+// Template: TPL_02C. Data from: https://it.wikipedia.org/wiki/Elettromotrici_STEFER_MR_100_e_MR_200
 
 item(FEAT_TRAINS, item_mtro_italy_rome_mr_100) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_mtro_italy_rome_mr_100) {
         vehicle_life: 60;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 26.42538;
-        running_cost_factor: 22.01231;
+        cost_factor: 39.54124;
+        running_cost_factor: 35.12816;
         speed: 100 km/h;
-        power: 237 hp;
-        cargo_capacity: 156;
+        power: 830 hp;
+        cargo_capacity: 140;
         weight: 40 ton;
-        tractive_effort_coefficient: 0.15;
+        tractive_effort_coefficient: 0.21;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -40,7 +40,7 @@ item(FEAT_TRAINS, item_mtro_italy_rome_mr_100) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/maglev", "flag/IT"];
+badges: ["power/metro", "flag/IT"];
 
     }
     graphics {
@@ -64,11 +64,11 @@ badges: ["power/maglev", "flag/IT"];
     }
     livery_override (item_mtro_metro_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        running_cost_factor: (round(17.544323771480435));
-        power: int(237*1/2);
+        running_cost_factor: (round(21.28098226452495));
+        power: int(830*1/2);
         weight: int(40*3/4);
         cargo_capacity: 156;
-        tractive_effort_coefficient: int(0.15*10*40);
+        tractive_effort_coefficient: int(0.21*10*40);
         length: 7;
         default: spriteset_mtro_italy_rome_mr_100_middle;
     }

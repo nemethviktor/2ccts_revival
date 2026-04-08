@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03B
+// Template: TPL_03B. Data from: https://en.wikipedia.org/wiki/Kerr_Stuart_steam_railmotor
 
 // Cargo capacity
 
@@ -35,7 +35,7 @@ item(FEAT_TRAINS, item_rbs_australia_victorian_railways_motor_car_3) {
         power: 91 hp;
         cargo_capacity: 32;
         weight: 42 ton;
-        tractive_effort_coefficient: 0.34;
+        tractive_effort_coefficient: 0.14;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -44,7 +44,7 @@ item(FEAT_TRAINS, item_rbs_australia_victorian_railways_motor_car_3) {
         misc_flags: bitmask(TRAIN_FLAG_2CC);
         refit_cost: 0;
         ai_special_flag: AI_FLAG_PASSENGER;
-        track_type: [STANDARD_GAUGE_RAILTYPE_NONE];
+        track_type: [BROAD_GAUGE_RAILTYPE_NONE];
         running_cost_base: RUNNING_COST_STEAM;
         engine_class: ENGINE_CLASS_STEAM;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_STEAM, 0, DISABLE_WAGON_POWER);

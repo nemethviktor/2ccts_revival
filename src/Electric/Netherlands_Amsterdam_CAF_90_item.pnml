@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02C
+// Template: TPL_02C. Data from: https://en.wikipedia.org/wiki/S3/M4_(Amsterdam_Metro)
 
 item(FEAT_TRAINS, item_mtro_netherlands_amsterdam_caf_90) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_mtro_netherlands_amsterdam_caf_90) {
         vehicle_life: 60;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 39.78949;
-        running_cost_factor: 34.7332;
+        cost_factor: 40.76401;
+        running_cost_factor: 38.00772;
         speed: 70 km/h;
-        power: 700 hp;
-        cargo_capacity: 250;
-        weight: 47 ton;
-        tractive_effort_coefficient: 0.26;
+        power: 1020 hp;
+        cargo_capacity: 125;
+        weight: 24 ton;
+        tractive_effort_coefficient: 0.28;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -29,7 +29,7 @@ item(FEAT_TRAINS, item_mtro_netherlands_amsterdam_caf_90) {
         misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
         refit_cost: 0;
         ai_special_flag: AI_FLAG_PASSENGER;
-        track_type: [STANDARD_GAUGE_RAILTYPE_3RD];
+        track_type: [STANDARD_GAUGE_RAILTYPE_DUAL];
         running_cost_base: RUNNING_COST_ELECTRIC;
         engine_class: ENGINE_CLASS_MAGLEV;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
@@ -40,7 +40,7 @@ item(FEAT_TRAINS, item_mtro_netherlands_amsterdam_caf_90) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/maglev", "flag/NL"];
+badges: ["power/metro", "flag/NL"];
 
     }
     graphics {
@@ -57,18 +57,18 @@ badges: ["power/maglev", "flag/NL"];
     livery_override (item_mtro_metro_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
         running_cost_factor: int(70/10);
-        weight: int(47*1/2);
+        weight: int(24*1/2);
         cargo_capacity: 250;
         length: 8;
         default: spriteset_mtro_netherlands_amsterdam_caf_90_middle;
     }
     livery_override (item_mtro_metro_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        running_cost_factor: (round(21.865784907340313));
-        power: int(700*1/2);
-        weight: int(47*3/4);
+        running_cost_factor: (round(16.913745780673196));
+        power: int(1020*1/2);
+        weight: int(24*3/4);
         cargo_capacity: 250;
-        tractive_effort_coefficient: int(0.26*10*47);
+        tractive_effort_coefficient: int(0.28*10*24);
         length: 8;
         default: spriteset_mtro_netherlands_amsterdam_caf_90_middle;
     }

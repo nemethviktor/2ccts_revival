@@ -3,14 +3,14 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01B
+// Template: TPL_01B. Data from: https://cs.wikipedia.org/wiki/Motorov%C3%BD_v%C5%AFz_809
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_rbd_czech_republic_cd_809_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 55/2; \
-        bitmask(CC_ARMOURED): 55/4; \
-        55; \
+        bitmask(CC_MAIL): 95/2; \
+        bitmask(CC_ARMOURED): 95/4; \
+        95; \
     }
 
 
@@ -29,11 +29,11 @@ item(FEAT_TRAINS, item_rbd_czech_republic_cd_809) {
         vehicle_life: 15;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 21.0931;
-        running_cost_factor: 18.71715;
+        cost_factor: 22.08018;
+        running_cost_factor: 19.70423;
         speed: 80 km/h;
         power: 210 hp;
-        cargo_capacity: 55;
+        cargo_capacity: 95;
         weight: 20 ton;
         tractive_effort_coefficient: 0.15;
         air_drag_coefficient: 0;

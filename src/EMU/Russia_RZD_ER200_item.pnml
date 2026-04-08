@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02D
+// Template: TPL_02D. Data from: nan
 
 // Cargo capacity
 
@@ -55,7 +55,7 @@ item(FEAT_TRAINS, item_emu_russia_rzd_er200) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/RU"];
+badges: ["power/electric", "flag/SU"];
 
     }
     graphics {

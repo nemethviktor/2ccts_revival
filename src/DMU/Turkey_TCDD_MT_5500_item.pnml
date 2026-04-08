@@ -3,21 +3,21 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A
+// Template: TPL_02A. Data from: https://en.wikipedia.org/wiki/TCDD_MT5500
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_dmu_turkey_tcdd_mt_5500_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 76/2; \
-        bitmask(CC_ARMOURED): 76/4; \
-        76; \
+        bitmask(CC_MAIL): 66/2; \
+        bitmask(CC_ARMOURED): 66/4; \
+        66; \
     }
 
 
     switch(FEAT_TRAINS, SELF, switch_dmu_turkey_tcdd_mt_5500_capacity_wagon, cargo_classes) { \
-        bitmask(CC_MAIL): 76/2; \
-        bitmask(CC_ARMOURED): 76/4; \
-        76; \
+        bitmask(CC_MAIL): 66/2; \
+        bitmask(CC_ARMOURED): 66/4; \
+        66; \
     }
 
 item(FEAT_TRAINS, item_dmu_turkey_tcdd_mt_5500) {
@@ -29,13 +29,13 @@ item(FEAT_TRAINS, item_dmu_turkey_tcdd_mt_5500) {
         vehicle_life: 20;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 28.58225;
-        running_cost_factor: 24.6874;
+        cost_factor: 36.7972;
+        running_cost_factor: 32.90235;
         speed: 90 km/h;
-        power: 390 hp;
-        cargo_capacity: 76;
+        power: 800 hp;
+        cargo_capacity: 66;
         weight: 35 ton;
-        tractive_effort_coefficient: 0.23;
+        tractive_effort_coefficient: 0.167;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -74,17 +74,17 @@ badges: ["power/diesel", "flag/TR"];
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: int(90/10);
         weight: int(35*1/2);
-        cargo_capacity: 76;
+        cargo_capacity: 66;
         length: 8;
         default: switch_dmu_turkey_tcdd_mt_5500_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(19.025644052686275));
-        power: int(390*1/2);
+        running_cost_factor: (round(17.67344048511424));
+        power: int(800*1/2);
         weight: int(35*3/4);
-        cargo_capacity: 76;
-        tractive_effort_coefficient: int(0.23*10*35);
+        cargo_capacity: 66;
+        tractive_effort_coefficient: int(0.167*10*35);
         length: 8;
         default: switch_dmu_turkey_tcdd_mt_5500_cargo_selection;
     }

@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A
+// Template: TPL_01A. Data from: https://de.wikipedia.org/wiki/BLS_Ce_4/6
 
 item(FEAT_TRAINS, item_electric_switzerland_bls_ce_4_4) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_electric_switzerland_bls_ce_4_4) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 38.57127;
-        running_cost_factor: 31.72514;
+        cost_factor: 39.05546;
+        running_cost_factor: 31.70933;
         speed: 65 km/h;
-        power: 1001 hp;
+        power: 1000 hp;
         cargo_capacity: 0;
-        weight: 65 ton;
-        tractive_effort_coefficient: 0.17;
+        weight: 70 ton;
+        tractive_effort_coefficient: 0.108;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

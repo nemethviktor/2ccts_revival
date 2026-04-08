@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_32C
+// Template: TPL_32C. Data from: https://en.wikipedia.org/wiki/Pennsylvania_Railroad_class_FF1
 
 item(FEAT_TRAINS, item_electric_usa_pennsylvania_railroad_ff_1) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_electric_usa_pennsylvania_railroad_ff_1) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 93.05022;
-        running_cost_factor: 69.3591;
-        speed: 40 km/h;
-        power: 4800 hp;
+        cost_factor: 91.56886;
+        running_cost_factor: 67.89496;
+        speed: 33 km/h;
+        power: 4600 hp;
         cargo_capacity: 0;
         weight: 234 ton;
-        tractive_effort_coefficient: 0.17;
+        tractive_effort_coefficient: 0.27;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

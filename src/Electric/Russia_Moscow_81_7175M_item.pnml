@@ -3,24 +3,24 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02C
+// Template: TPL_02C. Data from: https://ru.wikipedia.org/wiki/81-717/714
 
 item(FEAT_TRAINS, item_mtro_russia_moscow_81_7175m) {
     property {
         name: string(str_mtro_russia_moscow_81_7175m);
         climates_available: ((param_region_asia || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
-        introduction_date: date(1987,1,1);
+        introduction_date: date(1993,1,1);
         model_life: 45;
         vehicle_life: 60;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 33.73835;
-        running_cost_factor: 31.5624;
-        speed: 80 km/h;
-        power: 600 hp;
-        cargo_capacity: 147;
-        weight: 18 ton;
-        tractive_effort_coefficient: 0.83;
+        cost_factor: 44.59868;
+        running_cost_factor: 40.80384;
+        speed: 90 km/h;
+        power: 1180 hp;
+        cargo_capacity: 144;
+        weight: 34 ton;
+        tractive_effort_coefficient: 0.27;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -40,7 +40,7 @@ item(FEAT_TRAINS, item_mtro_russia_moscow_81_7175m) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/maglev", "flag/RU"];
+badges: ["power/metro", "flag/RU"];
 
     }
     graphics {
@@ -56,19 +56,19 @@ badges: ["power/maglev", "flag/RU"];
     }
     livery_override (item_mtro_metro_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        running_cost_factor: int(80/10);
-        weight: int(18*1/2);
+        running_cost_factor: int(90/10);
+        weight: int(34*1/2);
         cargo_capacity: 147;
         length: 8;
         default: spriteset_mtro_russia_moscow_81_7175m_middle;
     }
     livery_override (item_mtro_metro_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        running_cost_factor: (round(25.389578240496597));
-        power: int(600*1/2);
-        weight: int(18*3/4);
+        running_cost_factor: (round(21.61511321754326));
+        power: int(1180*1/2);
+        weight: int(34*3/4);
         cargo_capacity: 147;
-        tractive_effort_coefficient: int(0.83*10*18);
+        tractive_effort_coefficient: int(0.27*10*34);
         length: 8;
         default: spriteset_mtro_russia_moscow_81_7175m_middle;
     }

@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A
+// Template: TPL_02A. Data from: https://ja.wikipedia.org/wiki/%E5%9B%BD%E9%89%84%E3%82%AD%E3%83%8F181%E7%B3%BB%E6%B0%97%E5%8B%95%E8%BB%8A#%E6%96%B0%E8%A3%BD%E8%BB%8A
 
 // Cargo capacity
 
@@ -15,9 +15,9 @@
 
 
     switch(FEAT_TRAINS, SELF, switch_dmu_japan_jnr_kiha_181_capacity_wagon, cargo_classes) { \
-        bitmask(CC_MAIL): 52/2; \
-        bitmask(CC_ARMOURED): 52/4; \
-        52; \
+        bitmask(CC_MAIL): 76/2; \
+        bitmask(CC_ARMOURED): 76/4; \
+        76; \
     }
 
 item(FEAT_TRAINS, item_dmu_japan_jnr_kiha_181) {
@@ -29,13 +29,13 @@ item(FEAT_TRAINS, item_dmu_japan_jnr_kiha_181) {
         vehicle_life: 20;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 31.64456;
-        running_cost_factor: 26.7968;
+        cost_factor: 31.42956;
+        running_cost_factor: 26.5818;
         speed: 120 km/h;
         power: 500 hp;
         cargo_capacity: 52;
         weight: 44 ton;
-        tractive_effort_coefficient: 0.34;
+        tractive_effort_coefficient: 0.125;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -74,17 +74,17 @@ badges: ["power/diesel", "flag/JP"];
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: int(120/10);
         weight: int(44*1/2);
-        cargo_capacity: 52;
+        cargo_capacity: 76;
         length: 8;
         default: switch_dmu_japan_jnr_kiha_181_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(29.196313276997156));
+        running_cost_factor: (round(19.736313276997155));
         power: int(500*1/2);
         weight: int(44*3/4);
-        cargo_capacity: 52;
-        tractive_effort_coefficient: int(0.34*10*44);
+        cargo_capacity: 76;
+        tractive_effort_coefficient: int(0.125*10*44);
         length: 8;
         default: switch_dmu_japan_jnr_kiha_181_cargo_selection;
     }

@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02C
+// Template: TPL_02C. Data from: https://es.wikipedia.org/wiki/AS-2002
 
 item(FEAT_TRAINS, item_mtro_chile_santiago_as_2002) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_mtro_chile_santiago_as_2002) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 51.40723;
-        running_cost_factor: 46.79416;
+        cost_factor: 50.03518;
+        running_cost_factor: 46.42211;
         speed: 100 km/h;
-        power: 1500 hp;
-        cargo_capacity: 196;
-        weight: 42 ton;
-        tractive_effort_coefficient: 0.92;
+        power: 1550 hp;
+        cargo_capacity: 175;
+        weight: 32 ton;
+        tractive_effort_coefficient: 0.28;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -40,7 +40,7 @@ item(FEAT_TRAINS, item_mtro_chile_santiago_as_2002) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/maglev", "flag/CL"];
+badges: ["power/metro", "flag/CL"];
 
     }
     graphics {
@@ -57,18 +57,18 @@ badges: ["power/maglev", "flag/CL"];
     livery_override (item_mtro_metro_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
         running_cost_factor: int(100/10);
-        weight: int(42*1/2);
+        weight: int(32*1/2);
         cargo_capacity: 196;
         length: 8;
         default: spriteset_mtro_chile_santiago_as_2002_middle;
     }
     livery_override (item_mtro_metro_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        running_cost_factor: (round(52.51298334985152));
-        power: int(1500*1/2);
-        weight: int(42*3/4);
+        running_cost_factor: (round(22.897003937702145));
+        power: int(1550*1/2);
+        weight: int(32*3/4);
         cargo_capacity: 196;
-        tractive_effort_coefficient: int(0.92*10*42);
+        tractive_effort_coefficient: int(0.28*10*32);
         length: 8;
         default: spriteset_mtro_chile_santiago_as_2002_middle;
     }

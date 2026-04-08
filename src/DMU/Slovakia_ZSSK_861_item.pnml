@@ -3,21 +3,21 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A
+// Template: TPL_02A. Data from: https://sk.wikipedia.org/wiki/Motorov%C3%A1_jednotka_861
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_dmu_slovakia_zssk_861_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 60/2; \
-        bitmask(CC_ARMOURED): 60/4; \
-        60; \
+        bitmask(CC_MAIL): 97/2; \
+        bitmask(CC_ARMOURED): 97/4; \
+        97; \
     }
 
 
     switch(FEAT_TRAINS, SELF, switch_dmu_slovakia_zssk_861_capacity_wagon, cargo_classes) { \
-        bitmask(CC_MAIL): 60/2; \
-        bitmask(CC_ARMOURED): 60/4; \
-        60; \
+        bitmask(CC_MAIL): 97/2; \
+        bitmask(CC_ARMOURED): 97/4; \
+        97; \
     }
 
 item(FEAT_TRAINS, item_dmu_slovakia_zssk_861) {
@@ -29,13 +29,13 @@ item(FEAT_TRAINS, item_dmu_slovakia_zssk_861) {
         vehicle_life: 20;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 49.3864;
-        running_cost_factor: 44.40599;
+        cost_factor: 51.55162;
+        running_cost_factor: 45.07122;
         speed: 140 km/h;
         power: 1580 hp;
-        cargo_capacity: 60;
-        weight: 45 ton;
-        tractive_effort_coefficient: 0.34;
+        cargo_capacity: 97;
+        weight: 60 ton;
+        tractive_effort_coefficient: 0.106;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -73,18 +73,18 @@ badges: ["power/diesel", "flag/SK"];
     livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: int(140/10);
-        weight: int(45*1/2);
-        cargo_capacity: 60;
+        weight: int(60*1/2);
+        cargo_capacity: 97;
         length: 7;
         default: switch_dmu_slovakia_zssk_861_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(33.27492138294491));
+        running_cost_factor: (round(24.334921382944906));
         power: int(1580*1/2);
-        weight: int(45*3/4);
-        cargo_capacity: 60;
-        tractive_effort_coefficient: int(0.34*10*45);
+        weight: int(60*3/4);
+        cargo_capacity: 97;
+        tractive_effort_coefficient: int(0.106*10*60);
         length: 7;
         default: switch_dmu_slovakia_zssk_861_cargo_selection;
     }

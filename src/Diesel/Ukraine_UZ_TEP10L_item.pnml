@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A
+// Template: TPL_01A. Data from: https://ru.wikipedia.org/wiki/%D0%A2%D0%AD%D0%9F10%D0%9B
 
 item(FEAT_TRAINS, item_diesel_ukraine_uz_tep10l) {
     property {
@@ -20,7 +20,7 @@ item(FEAT_TRAINS, item_diesel_ukraine_uz_tep10l) {
         power: 2290 hp;
         cargo_capacity: 0;
         weight: 129 ton;
-        tractive_effort_coefficient: 0.13;
+        tractive_effort_coefficient: 0.194;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

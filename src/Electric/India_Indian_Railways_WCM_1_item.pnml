@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A
+// Template: TPL_01A. Data from: https://en.wikipedia.org/wiki/Indian_locomotive_class_WCM-1
 
 item(FEAT_TRAINS, item_electric_india_indian_railways_wcm_1) {
     property {
@@ -20,7 +20,7 @@ item(FEAT_TRAINS, item_electric_india_indian_railways_wcm_1) {
         power: 3700 hp;
         cargo_capacity: 0;
         weight: 124 ton;
-        tractive_effort_coefficient: 0.25;
+        tractive_effort_coefficient: 0.247;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A
+// Template: TPL_01A. Data from: https://hu.wikipedia.org/wiki/SNCF_BB_61000_sorozat
 
 item(FEAT_TRAINS, item_diesel_france_sncf_461000) {
     property {
@@ -14,9 +14,9 @@ item(FEAT_TRAINS, item_diesel_france_sncf_461000) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 53.82567;
-        running_cost_factor: 44.91155;
-        speed: 50 km/h;
+        cost_factor: 53.94937;
+        running_cost_factor: 44.93629;
+        speed: 100 km/h;
         power: 2010 hp;
         cargo_capacity: 0;
         weight: 86 ton;

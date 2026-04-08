@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A
+// Template: TPL_02A. Data from: https://fr.wikipedia.org/wiki/AMG_800#Variantes
 
 // Cargo capacity
 
@@ -29,13 +29,13 @@ item(FEAT_TRAINS, item_dmu_tunisia_sncft_amt_800) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 43.76368;
-        running_cost_factor: 39.79937;
-        speed: 130 km/h;
+        cost_factor: 43.37663;
+        running_cost_factor: 39.46356;
+        speed: 100 km/h;
         power: 1232 hp;
         cargo_capacity: 55;
         weight: 35 ton;
-        tractive_effort_coefficient: 0.52;
+        tractive_effort_coefficient: 0.197;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -44,7 +44,7 @@ item(FEAT_TRAINS, item_dmu_tunisia_sncft_amt_800) {
         misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
         refit_cost: 0;
         ai_special_flag: AI_FLAG_PASSENGER;
-        track_type: [STANDARD_GAUGE_RAILTYPE_NONE];
+        track_type: [NARROW_GAUGE_RAILTYPE_NONE];
         running_cost_base: RUNNING_COST_DIESEL;
         engine_class: ENGINE_CLASS_DIESEL;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 0, DISABLE_WAGON_POWER);
@@ -72,7 +72,7 @@ badges: ["power/diesel", "flag/TN"];
     }
     livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: int(130/10);
+        running_cost_factor: int(100/10);
         weight: int(35*1/2);
         cargo_capacity: 55;
         length: 8;
@@ -80,11 +80,11 @@ badges: ["power/diesel", "flag/TN"];
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(34.70998598932941));
+        running_cost_factor: (round(20.404985989329415));
         power: int(1232*1/2);
         weight: int(35*3/4);
         cargo_capacity: 55;
-        tractive_effort_coefficient: int(0.52*10*35);
+        tractive_effort_coefficient: int(0.197*10*35);
         length: 8;
         default: switch_dmu_tunisia_sncft_amt_800_cargo_selection;
     }

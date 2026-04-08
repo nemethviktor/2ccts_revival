@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A
+// Template: TPL_01A. Data from: https://zh.wikipedia.org/wiki/%E7%91%9E%E5%A3%AB%E8%81%94%E9%82%A6%E9%93%81%E8%B7%AFRe460%E5%9E%8B%E7%94%B5%E5%8A%9B%E6%9C%BA%E8%BD%A6#%E7%91%9E%E5%A3%AB
 
 item(FEAT_TRAINS, item_electric_switzerland_sbb_re460_lok_2000) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_electric_switzerland_sbb_re460_lok_2000) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 99.66411;
-        running_cost_factor: 90.65537;
+        cost_factor: 95.8823;
+        running_cost_factor: 86.87356;
         speed: 230 km/h;
-        power: 8174 hp;
+        power: 7510 hp;
         cargo_capacity: 0;
         weight: 84 ton;
-        tractive_effort_coefficient: 0.36;
+        tractive_effort_coefficient: 0.364;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

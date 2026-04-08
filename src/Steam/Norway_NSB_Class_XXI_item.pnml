@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03C
+// Template: TPL_03C. Data from: https://no.wikipedia.org/wiki/NSB_type_21
 
 item(FEAT_TRAINS, item_steam_norway_nsb_class_xxi) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_steam_norway_nsb_class_xxi) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 12.50087;
-        running_cost_factor: 10.30974;
-        speed: 40 km/h;
-        power: 98 hp;
+        cost_factor: 34.63752;
+        running_cost_factor: 26.54178;
+        speed: 60 km/h;
+        power: 700 hp;
         cargo_capacity: 0;
-        weight: 19 ton;
-        tractive_effort_coefficient: 0.17;
+        weight: 77 ton;
+        tractive_effort_coefficient: 0.108;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

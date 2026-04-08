@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03A
+// Template: TPL_03A. Data from: https://fr.wikipedia.org/wiki/150_P
 
 item(FEAT_TRAINS, item_steam_france_sncf_150b) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_steam_france_sncf_150b) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 59.96691;
-        running_cost_factor: 47.64495;
+        cost_factor: 51.15728;
+        running_cost_factor: 38.83532;
         speed: 105 km/h;
-        power: 2260 hp;
+        power: 1500 hp;
         cargo_capacity: 0;
         weight: 119 ton;
-        tractive_effort_coefficient: 0.22;
+        tractive_effort_coefficient: 0.217;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

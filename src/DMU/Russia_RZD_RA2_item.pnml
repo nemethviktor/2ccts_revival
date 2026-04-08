@@ -3,21 +3,21 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A
+// Template: TPL_02A. Data from: https://ru.wikipedia.org/wiki/%D0%A0%D0%902
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_dmu_russia_rzd_ra2_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 74/2; \
-        bitmask(CC_ARMOURED): 74/4; \
-        74; \
+        bitmask(CC_MAIL): 68/2; \
+        bitmask(CC_ARMOURED): 68/4; \
+        68; \
     }
 
 
     switch(FEAT_TRAINS, SELF, switch_dmu_russia_rzd_ra2_capacity_wagon, cargo_classes) { \
-        bitmask(CC_MAIL): 74/2; \
-        bitmask(CC_ARMOURED): 74/4; \
-        74; \
+        bitmask(CC_MAIL): 86/2; \
+        bitmask(CC_ARMOURED): 86/4; \
+        86; \
     }
 
 item(FEAT_TRAINS, item_dmu_russia_rzd_ra2) {
@@ -29,13 +29,13 @@ item(FEAT_TRAINS, item_dmu_russia_rzd_ra2) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 38.73228;
-        running_cost_factor: 33.91921;
+        cost_factor: 38.4243;
+        running_cost_factor: 33.61123;
         speed: 100 km/h;
         power: 840 hp;
-        cargo_capacity: 74;
+        cargo_capacity: 68;
         weight: 44 ton;
-        tractive_effort_coefficient: 0.28;
+        tractive_effort_coefficient: 0.122;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -74,17 +74,17 @@ badges: ["power/diesel", "flag/RU"];
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: int(100/10);
         weight: int(44*1/2);
-        cargo_capacity: 74;
+        cargo_capacity: 86;
         length: 8;
         default: switch_dmu_russia_rzd_ra2_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(25.218284684745257));
+        running_cost_factor: (round(18.266284684745255));
         power: int(840*1/2);
         weight: int(44*3/4);
-        cargo_capacity: 74;
-        tractive_effort_coefficient: int(0.28*10*44);
+        cargo_capacity: 86;
+        tractive_effort_coefficient: int(0.122*10*44);
         length: 8;
         default: switch_dmu_russia_rzd_ra2_cargo_selection;
     }

@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03B
+// Template: TPL_03B. Data from: https://de.wikipedia.org/wiki/Preu%C3%9Fische_ES_6
 
 item(FEAT_TRAINS, item_electric_germany_prussian_es_6) {
     property {
@@ -20,7 +20,7 @@ item(FEAT_TRAINS, item_electric_germany_prussian_es_6) {
         power: 1186 hp;
         cargo_capacity: 0;
         weight: 81 ton;
-        tractive_effort_coefficient: 0.1;
+        tractive_effort_coefficient: 0.102;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

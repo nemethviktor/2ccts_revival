@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03A
+// Template: TPL_03A. Data from: https://en.wikipedia.org/wiki/Russian_locomotive_class_U
 
 item(FEAT_TRAINS, item_steam_russia_rzd_u) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_steam_russia_rzd_u) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 36.38486;
-        running_cost_factor: 28.74558;
+        cost_factor: 47.84013;
+        running_cost_factor: 34.75084;
         speed: 115 km/h;
-        power: 820 hp;
+        power: 1200 hp;
         cargo_capacity: 0;
-        weight: 72 ton;
-        tractive_effort_coefficient: 0.13;
+        weight: 126 ton;
+        tractive_effort_coefficient: 0.07;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

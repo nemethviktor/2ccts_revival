@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A
+// Template: TPL_02A. Data from: https://en.wikipedia.org/wiki/IC4
 
 // Cargo capacity
 
@@ -29,13 +29,13 @@ item(FEAT_TRAINS, item_dmu_denmark_dsb_ic4) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 36.29907;
-        running_cost_factor: 32.13027;
-        speed: 200 km/h;
+        cost_factor: 35.78597;
+        running_cost_factor: 31.64525;
+        speed: 180 km/h;
         power: 750 hp;
         cargo_capacity: 52;
         weight: 36 ton;
-        tractive_effort_coefficient: 0.62;
+        tractive_effort_coefficient: 0.142;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -72,7 +72,7 @@ badges: ["power/diesel", "flag/DK"];
     }
     livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        running_cost_factor: int(200/10);
+        running_cost_factor: int(180/10);
         weight: int(36*1/2);
         cargo_capacity: 52;
         length: 8;
@@ -80,11 +80,11 @@ badges: ["power/diesel", "flag/DK"];
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        running_cost_factor: (round(45.058633863002555));
+        running_cost_factor: (round(25.850633863002557));
         power: int(750*1/2);
         weight: int(36*3/4);
         cargo_capacity: 52;
-        tractive_effort_coefficient: int(0.62*10*36);
+        tractive_effort_coefficient: int(0.142*10*36);
         length: 8;
         default: switch_dmu_denmark_dsb_ic4_cargo_selection;
     }

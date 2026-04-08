@@ -3,14 +3,14 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A
+// Template: TPL_02A. Data from: https://hr.wikipedia.org/wiki/H%C5%BD_serija_7022
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_dmu_croatia_hz_7022_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 66/2; \
-        bitmask(CC_ARMOURED): 66/4; \
-        66; \
+        bitmask(CC_MAIL): 136/2; \
+        bitmask(CC_ARMOURED): 136/4; \
+        136; \
     }
 
 
@@ -29,13 +29,13 @@ item(FEAT_TRAINS, item_dmu_croatia_hz_7022) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 46.06373;
-        running_cost_factor: 41.75241;
+        cost_factor: 34.01194;
+        running_cost_factor: 29.00062;
         speed: 160 km/h;
-        power: 1350 hp;
-        cargo_capacity: 66;
-        weight: 38 ton;
-        tractive_effort_coefficient: 0.53;
+        power: 520 hp;
+        cargo_capacity: 136;
+        weight: 45 ton;
+        tractive_effort_coefficient: 0.142;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -73,18 +73,18 @@ badges: ["power/diesel", "flag/HR"];
     livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
         running_cost_factor: int(160/10);
-        weight: int(38*1/2);
+        weight: int(45*1/2);
         cargo_capacity: 66;
         length: 8;
         default: switch_dmu_croatia_hz_7022_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        running_cost_factor: (round(39.81423466811774));
-        power: int(1350*1/2);
-        weight: int(38*3/4);
+        running_cost_factor: (round(24.670550065962736));
+        power: int(520*1/2);
+        weight: int(45*3/4);
         cargo_capacity: 66;
-        tractive_effort_coefficient: int(0.53*10*38);
+        tractive_effort_coefficient: int(0.142*10*45);
         length: 8;
         default: switch_dmu_croatia_hz_7022_cargo_selection;
     }

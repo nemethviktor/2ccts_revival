@@ -3,14 +3,14 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A
+// Template: TPL_02A. Data from: https://en.wikipedia.org/wiki/Blue_Pullmans
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_dmu_uk_br_251_blue_pullman_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 42/2; \
-        bitmask(CC_ARMOURED): 42/4; \
-        42; \
+        bitmask(CC_MAIL): 27/2; \
+        bitmask(CC_ARMOURED): 27/4; \
+        27; \
     }
 
 
@@ -29,13 +29,13 @@ item(FEAT_TRAINS, item_dmu_uk_br_251_blue_pullman) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 29.50583;
-        running_cost_factor: 24.01755;
+        cost_factor: 55.35235;
+        running_cost_factor: 48.16406;
         speed: 145 km/h;
-        power: 398 hp;
-        cargo_capacity: 42;
-        weight: 50 ton;
-        tractive_effort_coefficient: 0.24;
+        power: 2000 hp;
+        cargo_capacity: 27;
+        weight: 67 ton;
+        tractive_effort_coefficient: 0.095;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -73,18 +73,18 @@ badges: ["power/diesel", "flag/GB"];
     livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: int(145/10);
-        weight: int(50*1/2);
+        weight: int(67*1/2);
         cargo_capacity: 42;
         length: 7;
         default: switch_dmu_uk_br_251_blue_pullman_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(28.49572793941867));
-        power: int(398*1/2);
-        weight: int(50*3/4);
+        running_cost_factor: (round(25.337136091482165));
+        power: int(2000*1/2);
+        weight: int(67*3/4);
         cargo_capacity: 42;
-        tractive_effort_coefficient: int(0.24*10*50);
+        tractive_effort_coefficient: int(0.095*10*67);
         length: 7;
         default: switch_dmu_uk_br_251_blue_pullman_cargo_selection;
     }

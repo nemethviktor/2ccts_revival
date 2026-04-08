@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A
+// Template: TPL_01A. Data from: https://en.wikipedia.org/wiki/Bombardier%E2%80%93Alstom_HHP-8
 
 item(FEAT_TRAINS, item_electric_usa_amtrak_hhp_8) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_electric_usa_amtrak_hhp_8) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 100.16616;
+        cost_factor: 100.36616;
         running_cost_factor: 89.67443;
         speed: 217 km/h;
         power: 8000 hp;
         cargo_capacity: 0;
-        weight: 99 ton;
-        tractive_effort_coefficient: 0.25;
+        weight: 101 ton;
+        tractive_effort_coefficient: 0.32;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

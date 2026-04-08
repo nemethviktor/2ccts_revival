@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03A
+// Template: TPL_03A. Data from: https://en.wikipedia.org/wiki/4-4-0
 
 item(FEAT_TRAINS, item_steam_usa_4_4_0_american) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_steam_usa_4_4_0_american) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 32.00296;
+        cost_factor: 30.50296;
         running_cost_factor: 25.5971;
         speed: 96 km/h;
         power: 650 hp;
         cargo_capacity: 0;
-        weight: 60 ton;
-        tractive_effort_coefficient: 0.07;
+        weight: 45 ton;
+        tractive_effort_coefficient: 0.18;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

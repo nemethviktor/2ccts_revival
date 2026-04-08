@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_32A
+// Template: TPL_32A. Data from: https://zh.wikipedia.org/wiki/2TE116%E5%9E%8B%E6%9F%B4%E6%B2%B9%E6%9C%BA%E8%BD%A6
 
 item(FEAT_TRAINS, item_diesel_ukraine_uz_2te126) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_diesel_ukraine_uz_2te126) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 156.54721;
-        running_cost_factor: 110.13414;
+        cost_factor: 105.42006;
+        running_cost_factor: 77.80698;
         speed: 100 km/h;
-        power: 12000 hp;
+        power: 6035 hp;
         cargo_capacity: 0;
-        weight: 460 ton;
-        tractive_effort_coefficient: 0.2;
+        weight: 272 ton;
+        tractive_effort_coefficient: 0.191;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

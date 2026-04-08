@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03A
+// Template: TPL_03A. Data from: https://it.wikipedia.org/wiki/Locomotiva_FS_480
 
 item(FEAT_TRAINS, item_steam_italy_fs_480) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_steam_italy_fs_480) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 52.57519;
+        cost_factor: 52.05519;
         running_cost_factor: 38.8189;
         speed: 70 km/h;
         power: 1500 hp;
         cargo_capacity: 0;
-        weight: 134 ton;
-        tractive_effort_coefficient: 0.13;
+        weight: 128 ton;
+        tractive_effort_coefficient: 0.14;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

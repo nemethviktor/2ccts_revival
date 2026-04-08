@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02C
+// Template: TPL_02C. Data from: https://no.wikipedia.org/wiki/T1000-serien
 
 item(FEAT_TRAINS, item_mtro_norway_oslo_t1000) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_mtro_norway_oslo_t1000) {
         vehicle_life: 60;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 22.203;
-        running_cost_factor: 19.04672;
+        cost_factor: 41.97427;
+        running_cost_factor: 38.64799;
         speed: 70 km/h;
-        power: 131 hp;
-        cargo_capacity: 180;
-        weight: 28 ton;
-        tractive_effort_coefficient: 0.55;
+        power: 1050 hp;
+        cargo_capacity: 135;
+        weight: 29 ton;
+        tractive_effort_coefficient: 0.25;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -40,7 +40,7 @@ item(FEAT_TRAINS, item_mtro_norway_oslo_t1000) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/maglev", "flag/NO"];
+badges: ["power/metro", "flag/NO"];
 
     }
     graphics {
@@ -57,18 +57,18 @@ badges: ["power/maglev", "flag/NO"];
     livery_override (item_mtro_metro_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
         running_cost_factor: int(70/10);
-        weight: int(28*1/2);
+        weight: int(29*1/2);
         cargo_capacity: 180;
         length: 7;
         default: spriteset_mtro_norway_oslo_t1000_middle;
     }
     livery_override (item_mtro_metro_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        running_cost_factor: (round(23.56485935818429));
-        power: int(131*1/2);
-        weight: int(28*3/4);
+        running_cost_factor: (round(17.665371793236726));
+        power: int(1050*1/2);
+        weight: int(29*3/4);
         cargo_capacity: 180;
-        tractive_effort_coefficient: int(0.55*10*28);
+        tractive_effort_coefficient: int(0.25*10*29);
         length: 7;
         default: spriteset_mtro_norway_oslo_t1000_middle;
     }

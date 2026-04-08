@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03C
+// Template: TPL_03C. Data from: nan
 
 item(FEAT_TRAINS, item_steam_egypt_enr_1100) {
     property {
@@ -20,7 +20,7 @@ item(FEAT_TRAINS, item_steam_egypt_enr_1100) {
         power: 560 hp;
         cargo_capacity: 0;
         weight: 46 ton;
-        tractive_effort_coefficient: 0.21;
+        tractive_effort_coefficient: 0.205;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

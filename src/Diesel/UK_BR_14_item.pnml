@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03B
+// Template: TPL_03B. Data from: https://en.wikipedia.org/wiki/British_Rail_Class_14
 
 item(FEAT_TRAINS, item_diesel_uk_br_14) {
     property {
@@ -20,7 +20,7 @@ item(FEAT_TRAINS, item_diesel_uk_br_14) {
         power: 650 hp;
         cargo_capacity: 0;
         weight: 49 ton;
-        tractive_effort_coefficient: 0.28;
+        tractive_effort_coefficient: 0.286;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

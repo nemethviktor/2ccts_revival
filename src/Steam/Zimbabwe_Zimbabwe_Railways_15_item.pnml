@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_17C
+// Template: TPL_17C. Data from: https://en.wikipedia.org/wiki/Rhodesia_Railways_15th_class
 
 item(FEAT_TRAINS, item_steam_zimbabwe_zimbabwe_railways_15) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_steam_zimbabwe_zimbabwe_railways_15) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 52.65701;
-        running_cost_factor: 34.00073;
-        speed: 70 km/h;
-        power: 1150 hp;
+        cost_factor: 58.46634;
+        running_cost_factor: 40.10327;
+        speed: 100 km/h;
+        power: 1600 hp;
         cargo_capacity: 0;
-        weight: 183 ton;
-        tractive_effort_coefficient: 0.1;
+        weight: 179 ton;
+        tractive_effort_coefficient: 0.108;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

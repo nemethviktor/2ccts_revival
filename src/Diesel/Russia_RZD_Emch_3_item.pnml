@@ -3,24 +3,24 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03B
+// Template: TPL_03B. Data from: https://en.wikipedia.org/wiki/ChME3
 
 item(FEAT_TRAINS, item_diesel_russia_rzd_emch_3) {
     property {
         name: string(str_diesel_russia_rzd_emch_3);
         climates_available: ((param_region_asia || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
-        introduction_date: date(1926,1,1);
+        introduction_date: date(1963,1,1);
         model_life: 45;
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 47.54736;
-        running_cost_factor: 34.72229;
-        speed: 55 km/h;
-        power: 1200 hp;
+        cost_factor: 49.06056;
+        running_cost_factor: 36.15652;
+        speed: 95 km/h;
+        power: 1300 hp;
         cargo_capacity: 0;
         weight: 125 ton;
-        tractive_effort_coefficient: 0.12;
+        tractive_effort_coefficient: 0.216;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -40,7 +40,7 @@ item(FEAT_TRAINS, item_diesel_russia_rzd_emch_3) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/diesel", "flag/RU"];
+badges: ["power/diesel", "flag/SU"];
 
     }
     graphics {

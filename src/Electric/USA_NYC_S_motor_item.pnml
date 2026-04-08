@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A
+// Template: TPL_01A. Data from: https://en.wikipedia.org/wiki/New_York_Central_S-Motor
 
 item(FEAT_TRAINS, item_electric_usa_nyc_s_motor) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_electric_usa_nyc_s_motor) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 46.36237;
-        running_cost_factor: 35.6547;
+        cost_factor: 57.71375;
+        running_cost_factor: 47.00608;
         speed: 97 km/h;
-        power: 1264 hp;
+        power: 2200 hp;
         cargo_capacity: 0;
         weight: 103 ton;
-        tractive_effort_coefficient: 0.16;
+        tractive_effort_coefficient: 0.158;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -29,7 +29,7 @@ item(FEAT_TRAINS, item_electric_usa_nyc_s_motor) {
         misc_flags: bitmask(TRAIN_FLAG_2CC);
         refit_cost: 0;
         ai_special_flag: AI_FLAG_PASSENGER;
-        track_type: [STANDARD_GAUGE_RAILTYPE_1500V];
+        track_type: [STANDARD_GAUGE_RAILTYPE_3RD];
         running_cost_base: RUNNING_COST_ELECTRIC;
         engine_class: ENGINE_CLASS_ELECTRIC;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);

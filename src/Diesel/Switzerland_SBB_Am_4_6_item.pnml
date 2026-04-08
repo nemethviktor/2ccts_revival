@@ -3,13 +3,13 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A
+// Template: TPL_01A. Data from: https://de.wikipedia.org/wiki/SBB_Am_4/6
 
 item(FEAT_TRAINS, item_diesel_switzerland_sbb_am_4_6) {
     property {
         name: string(str_diesel_switzerland_sbb_am_4_6);
         climates_available: ((param_region_western_europe || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
-        introduction_date: date(1938,1,1);
+        introduction_date: date(1941,1,1);
         model_life: 45;
         vehicle_life: 40;
         retire_early: 20;
@@ -20,7 +20,7 @@ item(FEAT_TRAINS, item_diesel_switzerland_sbb_am_4_6) {
         power: 2170 hp;
         cargo_capacity: 0;
         weight: 92 ton;
-        tractive_effort_coefficient: 0.14;
+        tractive_effort_coefficient: 0.141;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

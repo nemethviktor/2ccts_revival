@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03A
+// Template: TPL_03A. Data from: https://en.wikipedia.org/wiki/South_Australian_Railways_520_class
 
 item(FEAT_TRAINS, item_steam_australia_south_australian_railways_520) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_steam_australia_south_australian_railways_520) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 71.96241;
-        running_cost_factor: 51.10466;
-        speed: 126 km/h;
+        cost_factor: 71.53291;
+        running_cost_factor: 51.09876;
+        speed: 112 km/h;
         power: 2600 hp;
         cargo_capacity: 0;
-        weight: 204 ton;
-        tractive_effort_coefficient: 0.07;
+        weight: 200 ton;
+        tractive_effort_coefficient: 0.074;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -29,7 +29,7 @@ item(FEAT_TRAINS, item_steam_australia_south_australian_railways_520) {
         misc_flags: bitmask(TRAIN_FLAG_2CC);
         refit_cost: 0;
         ai_special_flag: AI_FLAG_PASSENGER;
-        track_type: [STANDARD_GAUGE_RAILTYPE_NONE];
+        track_type: [BROAD_GAUGE_RAILTYPE_NONE];
         running_cost_base: RUNNING_COST_STEAM;
         engine_class: ENGINE_CLASS_STEAM;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_STEAM, 0, DISABLE_WAGON_POWER);

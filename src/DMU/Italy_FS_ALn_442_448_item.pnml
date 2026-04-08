@@ -3,21 +3,21 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A
+// Template: TPL_02A. Data from: https://it.wikipedia.org/wiki/Automotrici_FS_ALn_442-448
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_dmu_italy_fs_aln_442_448_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 48/2; \
-        bitmask(CC_ARMOURED): 48/4; \
-        48; \
+        bitmask(CC_MAIL): 60/2; \
+        bitmask(CC_ARMOURED): 60/4; \
+        60; \
     }
 
 
     switch(FEAT_TRAINS, SELF, switch_dmu_italy_fs_aln_442_448_capacity_wagon, cargo_classes) { \
-        bitmask(CC_MAIL): 48/2; \
-        bitmask(CC_ARMOURED): 48/4; \
-        48; \
+        bitmask(CC_MAIL): 60/2; \
+        bitmask(CC_ARMOURED): 60/4; \
+        60; \
     }
 
 item(FEAT_TRAINS, item_dmu_italy_fs_aln_442_448) {
@@ -29,13 +29,13 @@ item(FEAT_TRAINS, item_dmu_italy_fs_aln_442_448) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 41.10602;
-        running_cost_factor: 35.42561;
+        cost_factor: 45.44853;
+        running_cost_factor: 39.76812;
         speed: 140 km/h;
-        power: 980 hp;
-        cargo_capacity: 48;
+        power: 1250 hp;
+        cargo_capacity: 60;
         weight: 52 ton;
-        tractive_effort_coefficient: 0.13;
+        tractive_effort_coefficient: 0.096;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -74,17 +74,17 @@ badges: ["power/diesel", "flag/IT"];
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: int(140/10);
         weight: int(52*1/2);
-        cargo_capacity: 48;
+        cargo_capacity: 60;
         length: 8;
         default: switch_dmu_italy_fs_aln_442_448_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(23.89049787929052));
-        power: int(980*1/2);
+        running_cost_factor: (round(22.527534097034824));
+        power: int(1250*1/2);
         weight: int(52*3/4);
-        cargo_capacity: 48;
-        tractive_effort_coefficient: int(0.13*10*52);
+        cargo_capacity: 60;
+        tractive_effort_coefficient: int(0.096*10*52);
         length: 8;
         default: switch_dmu_italy_fs_aln_442_448_cargo_selection;
     }

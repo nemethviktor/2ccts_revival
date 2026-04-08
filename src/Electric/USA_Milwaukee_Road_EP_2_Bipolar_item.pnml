@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_16A
+// Template: TPL_16A. Data from: https://en.wikipedia.org/wiki/Milwaukee_Road_class_EP-2
 
 item(FEAT_TRAINS, item_electric_usa_milwaukee_road_ep_2_bipolar) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_electric_usa_milwaukee_road_ep_2_bipolar) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 90.9432;
-        running_cost_factor: 66.45648;
-        speed: 144 km/h;
-        power: 4400 hp;
+        cost_factor: 91.18062;
+        running_cost_factor: 66.74476;
+        speed: 113 km/h;
+        power: 4440 hp;
         cargo_capacity: 0;
         weight: 240 ton;
-        tractive_effort_coefficient: 0.17;
+        tractive_effort_coefficient: 0.219;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

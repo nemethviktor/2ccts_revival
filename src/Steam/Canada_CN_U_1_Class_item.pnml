@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03A
+// Template: TPL_03A. Data from: https://en.wikipedia.org/wiki/CN_U-1-a_and_U-1-b
 
 item(FEAT_TRAINS, item_steam_canada_cn_u_1_class) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_steam_canada_cn_u_1_class) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 75.31456;
-        running_cost_factor: 47.55025;
+        cost_factor: 84.44912;
+        running_cost_factor: 56.6848;
         speed: 130 km/h;
-        power: 2250 hp;
+        power: 3200 hp;
         cargo_capacity: 0;
         weight: 273 ton;
-        tractive_effort_coefficient: 0.08;
+        tractive_effort_coefficient: 0.082;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

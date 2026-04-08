@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A
+// Template: TPL_01A. Data from: https://fr.wikipedia.org/wiki/ONCF_E_700
 
 item(FEAT_TRAINS, item_electric_morocco_oncf_e_700) {
     property {
@@ -14,12 +14,12 @@ item(FEAT_TRAINS, item_electric_morocco_oncf_e_700) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 51.10126;
-        running_cost_factor: 41.46197;
-        speed: 115 km/h;
+        cost_factor: 50.62208;
+        running_cost_factor: 41.44613;
+        speed: 80 km/h;
         power: 1710 hp;
         cargo_capacity: 0;
-        weight: 92 ton;
+        weight: 88 ton;
         tractive_effort_coefficient: 0.17;
         air_drag_coefficient: 0;
 

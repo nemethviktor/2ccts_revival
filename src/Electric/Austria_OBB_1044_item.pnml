@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A
+// Template: TPL_01A. Data from: https://en.wikipedia.org/wiki/%C3%96BB_Class_1044
 
 item(FEAT_TRAINS, item_electric_austria_obb_1044) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_electric_austria_obb_1044) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 92.74752;
-        running_cost_factor: 83.8362;
+        cost_factor: 92.56708;
+        running_cost_factor: 83.65576;
         speed: 160 km/h;
-        power: 7000 hp;
+        power: 6970 hp;
         cargo_capacity: 0;
         weight: 84 ton;
-        tractive_effort_coefficient: 0.39;
+        tractive_effort_coefficient: 0.414;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

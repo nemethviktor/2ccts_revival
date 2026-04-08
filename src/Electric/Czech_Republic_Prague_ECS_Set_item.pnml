@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02C
+// Template: TPL_02C. Data from: https://cs.wikipedia.org/wiki/Souprava_metra_E%C4%8Ds
 
 item(FEAT_TRAINS, item_mtro_czech_republic_prague_ecs_set) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_mtro_czech_republic_prague_ecs_set) {
         vehicle_life: 60;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 24.07373;
-        running_cost_factor: 20.39778;
+        cost_factor: 39.96049;
+        running_cost_factor: 36.33454;
         speed: 80 km/h;
-        power: 192 hp;
-        cargo_capacity: 150;
-        weight: 33 ton;
-        tractive_effort_coefficient: 0.16;
+        power: 910 hp;
+        cargo_capacity: 131;
+        weight: 32 ton;
+        tractive_effort_coefficient: 0.25;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -40,7 +40,7 @@ item(FEAT_TRAINS, item_mtro_czech_republic_prague_ecs_set) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/maglev", "flag/CZ"];
+badges: ["power/metro", "flag/CZ"];
 
     }
     graphics {
@@ -57,18 +57,18 @@ badges: ["power/maglev", "flag/CZ"];
     livery_override (item_mtro_metro_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
         running_cost_factor: int(80/10);
-        weight: int(33*1/2);
+        weight: int(32*1/2);
         cargo_capacity: 150;
         length: 8;
         default: spriteset_mtro_czech_republic_prague_ecs_set_middle;
     }
     livery_override (item_mtro_metro_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        running_cost_factor: (round(14.674298967271373));
-        power: int(192*1/2);
-        weight: int(33*3/4);
+        running_cost_factor: (round(19.141625653031312));
+        power: int(910*1/2);
+        weight: int(32*3/4);
         cargo_capacity: 150;
-        tractive_effort_coefficient: int(0.16*10*33);
+        tractive_effort_coefficient: int(0.25*10*32);
         length: 8;
         default: spriteset_mtro_czech_republic_prague_ecs_set_middle;
     }

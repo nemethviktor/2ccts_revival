@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_17E
+// Template: TPL_17E. Data from: https://sv.wikipedia.org/wiki/Oa_och_Ob_(lok)
 
 item(FEAT_TRAINS, item_electric_sweden_sj_o_class) {
     property {
@@ -20,7 +20,7 @@ item(FEAT_TRAINS, item_electric_sweden_sj_o_class) {
         power: 1600 hp;
         cargo_capacity: 0;
         weight: 125 ton;
-        tractive_effort_coefficient: 0.2;
+        tractive_effort_coefficient: 0.202;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03A
+// Template: TPL_03A. Data from: https://en.wikipedia.org/wiki/South_African_Class_MD_2-6-6-2
 
 item(FEAT_TRAINS, item_steam_south_africa_sar_md_class) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_steam_south_africa_sar_md_class) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 47.51084;
-        running_cost_factor: 36.96471;
-        speed: 65 km/h;
-        power: 1360 hp;
+        cost_factor: 51.02367;
+        running_cost_factor: 34.71955;
+        speed: 50 km/h;
+        power: 1200 hp;
         cargo_capacity: 0;
-        weight: 102 ton;
-        tractive_effort_coefficient: 0.2;
+        weight: 159 ton;
+        tractive_effort_coefficient: 0.13;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

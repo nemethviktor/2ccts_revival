@@ -3,24 +3,24 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02C
+// Template: TPL_02C. Data from: https://hu.wikipedia.org/wiki/Ev3
 
 item(FEAT_TRAINS, item_mtro_hungary_budapest_ev3_200) {
     property {
         name: string(str_mtro_hungary_budapest_ev3_200);
         climates_available: ((param_region_eastern_europe || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
-        introduction_date: date(1960,1,1);
+        introduction_date: date(1975,1,1);
         model_life: 45;
         vehicle_life: 60;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 33.80028;
-        running_cost_factor: 28.8872;
-        speed: 100 km/h;
-        power: 500 hp;
-        cargo_capacity: 150;
-        weight: 45 ton;
-        tractive_effort_coefficient: 0.22;
+        cost_factor: 37.58722;
+        running_cost_factor: 33.94237;
+        speed: 90 km/h;
+        power: 770 hp;
+        cargo_capacity: 132;
+        weight: 32 ton;
+        tractive_effort_coefficient: 0.25;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -40,7 +40,7 @@ item(FEAT_TRAINS, item_mtro_hungary_budapest_ev3_200) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/maglev", "flag/HU"];
+badges: ["power/metro", "flag/HU"];
 
     }
     graphics {
@@ -56,19 +56,19 @@ badges: ["power/maglev", "flag/HU"];
     }
     livery_override (item_mtro_metro_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        running_cost_factor: int(100/10);
-        weight: int(45*1/2);
+        running_cost_factor: int(90/10);
+        weight: int(32*1/2);
         cargo_capacity: 150;
         length: 8;
         default: spriteset_mtro_hungary_budapest_ev3_200_middle;
     }
     livery_override (item_mtro_metro_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        running_cost_factor: (round(22.136313276997157));
-        power: int(500*1/2);
-        weight: int(45*3/4);
+        running_cost_factor: (round(19.899904927513507));
+        power: int(770*1/2);
+        weight: int(32*3/4);
         cargo_capacity: 150;
-        tractive_effort_coefficient: int(0.22*10*45);
+        tractive_effort_coefficient: int(0.25*10*32);
         length: 8;
         default: spriteset_mtro_hungary_budapest_ev3_200_middle;
     }

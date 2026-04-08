@@ -3,21 +3,21 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A
+// Template: TPL_02A. Data from: https://es.wikipedia.org/wiki/Serie_594_de_Renfe
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_dmu_spain_renfe_594_trd_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 63/2; \
-        bitmask(CC_ARMOURED): 63/4; \
-        63; \
+        bitmask(CC_MAIL): 42/2; \
+        bitmask(CC_ARMOURED): 42/4; \
+        42; \
     }
 
 
     switch(FEAT_TRAINS, SELF, switch_dmu_spain_renfe_594_trd_capacity_wagon, cargo_classes) { \
-        bitmask(CC_MAIL): 63/2; \
-        bitmask(CC_ARMOURED): 63/4; \
-        63; \
+        bitmask(CC_MAIL): 42/2; \
+        bitmask(CC_ARMOURED): 42/4; \
+        42; \
     }
 
 item(FEAT_TRAINS, item_dmu_spain_renfe_594_trd) {
@@ -29,13 +29,13 @@ item(FEAT_TRAINS, item_dmu_spain_renfe_594_trd) {
         vehicle_life: 20;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 38.40919;
-        running_cost_factor: 32.99787;
+        cost_factor: 65.93107;
+        running_cost_factor: 60.51975;
         speed: 160 km/h;
-        power: 804 hp;
-        cargo_capacity: 63;
+        power: 3200 hp;
+        cargo_capacity: 42;
         weight: 49 ton;
-        tractive_effort_coefficient: 0.24;
+        tractive_effort_coefficient: 0.125;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -44,7 +44,7 @@ item(FEAT_TRAINS, item_dmu_spain_renfe_594_trd) {
         misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
         refit_cost: 0;
         ai_special_flag: AI_FLAG_PASSENGER;
-        track_type: [STANDARD_GAUGE_RAILTYPE_NONE];
+        track_type: [BROAD_GAUGE_RAILTYPE_NONE];
         running_cost_base: RUNNING_COST_DIESEL;
         engine_class: ENGINE_CLASS_DIESEL;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 0, DISABLE_WAGON_POWER);
@@ -74,17 +74,17 @@ badges: ["power/diesel", "flag/ES"];
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: int(160/10);
         weight: int(49*1/2);
-        cargo_capacity: 63;
+        cargo_capacity: 42;
         length: 8;
         default: switch_dmu_spain_renfe_594_trd_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(30.595502262818925));
-        power: int(804*1/2);
+        running_cost_factor: (round(27.78187230638057));
+        power: int(3200*1/2);
         weight: int(49*3/4);
-        cargo_capacity: 63;
-        tractive_effort_coefficient: int(0.24*10*49);
+        cargo_capacity: 42;
+        tractive_effort_coefficient: int(0.125*10*49);
         length: 8;
         default: switch_dmu_spain_renfe_594_trd_cargo_selection;
     }

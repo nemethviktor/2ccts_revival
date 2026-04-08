@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A
+// Template: TPL_01A. Data from: https://en.wikipedia.org/wiki/SNCF_CC_40100
 
 item(FEAT_TRAINS, item_electric_france_sncf_cc_40100) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_electric_france_sncf_cc_40100) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 89.25443;
-        running_cost_factor: 77.63288;
+        cost_factor: 80.62471;
+        running_cost_factor: 70.30317;
         speed: 240 km/h;
-        power: 6000 hp;
+        power: 4920 hp;
         cargo_capacity: 0;
-        weight: 110 ton;
-        tractive_effort_coefficient: 0.21;
+        weight: 97 ton;
+        tractive_effort_coefficient: 0.221;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -29,7 +29,7 @@ item(FEAT_TRAINS, item_electric_france_sncf_cc_40100) {
         misc_flags: bitmask(TRAIN_FLAG_2CC);
         refit_cost: 0;
         ai_special_flag: AI_FLAG_PASSENGER;
-        track_type: [STANDARD_GAUGE_RAILTYPE_OHLE, STANDARD_GAUGE_RAILTYPE_DUAL];
+        track_type: [STANDARD_GAUGE_RAILTYPE_OHLE];
         running_cost_base: RUNNING_COST_ELECTRIC;
         engine_class: ENGINE_CLASS_ELECTRIC;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, -3, DISABLE_WAGON_POWER);

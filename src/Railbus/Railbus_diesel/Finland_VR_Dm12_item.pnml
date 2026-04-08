@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01B
+// Template: TPL_01B. Data from: https://en.wikipedia.org/wiki/VR_Class_Dm12
 
 // Cargo capacity
 
@@ -29,10 +29,10 @@ item(FEAT_TRAINS, item_rbd_finland_vr_dm12) {
         vehicle_life: 15;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 36.28084;
-        running_cost_factor: 31.03308;
+        cost_factor: 29.74133;
+        running_cost_factor: 24.49358;
         speed: 120 km/h;
-        power: 710 hp;
+        power: 404 hp;
         cargo_capacity: 63;
         weight: 48 ton;
         tractive_effort_coefficient: 0.35;

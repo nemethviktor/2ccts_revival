@@ -3,14 +3,14 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01B
+// Template: TPL_01B. Data from: https://de.wikipedia.org/wiki/DR_137_136_bis_148#Montafonerbahn_ET_10.103_und_104
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_rbe_austria_mbs_et_10109_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 56/2; \
-        bitmask(CC_ARMOURED): 56/4; \
-        56; \
+        bitmask(CC_MAIL): 150/2; \
+        bitmask(CC_ARMOURED): 150/4; \
+        150; \
     }
 
 
@@ -29,12 +29,12 @@ item(FEAT_TRAINS, item_rbe_austria_mbs_et_10109) {
         vehicle_life: 15;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 41.542;
-        running_cost_factor: 38.5616;
-        speed: 140 km/h;
-        power: 1180 hp;
-        cargo_capacity: 56;
-        weight: 25 ton;
+        cost_factor: 50.30009;
+        running_cost_factor: 44.70524;
+        speed: 90 km/h;
+        power: 1475 hp;
+        cargo_capacity: 150;
+        weight: 52 ton;
         tractive_effort_coefficient: 0.29;
         air_drag_coefficient: 0;
 

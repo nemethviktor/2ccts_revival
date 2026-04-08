@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A
+// Template: TPL_02A. Data from: https://en.wikipedia.org/wiki/SNCF_Class_T_2000
 
 // Cargo capacity
 
@@ -15,9 +15,9 @@
 
 
     switch(FEAT_TRAINS, SELF, switch_dmu_france_sncf_t_2000_capacity_wagon, cargo_classes) { \
-        bitmask(CC_MAIL): 60/2; \
-        bitmask(CC_ARMOURED): 60/4; \
-        60; \
+        bitmask(CC_MAIL): 80/2; \
+        bitmask(CC_ARMOURED): 80/4; \
+        80; \
     }
 
 item(FEAT_TRAINS, item_dmu_france_sncf_t_2000) {
@@ -29,13 +29,13 @@ item(FEAT_TRAINS, item_dmu_france_sncf_t_2000) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 42.3028;
-        running_cost_factor: 36.89148;
+        cost_factor: 48.3138;
+        running_cost_factor: 36.55248;
         speed: 160 km/h;
         power: 1036 hp;
         cargo_capacity: 60;
-        weight: 49 ton;
-        tractive_effort_coefficient: 0.38;
+        weight: 112 ton;
+        tractive_effort_coefficient: 0.041;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -55,7 +55,7 @@ item(FEAT_TRAINS, item_dmu_france_sncf_t_2000) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/diesel", "flag/FR"];
+badges: ["power/turbine", "flag/FR"];
 
     }
     graphics {
@@ -73,18 +73,18 @@ badges: ["power/diesel", "flag/FR"];
     livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: int(160/10);
-        weight: int(49*1/2);
-        cargo_capacity: 60;
+        weight: int(112*1/2);
+        cargo_capacity: 80;
         length: 8;
         default: switch_dmu_france_sncf_t_2000_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(37.83869702856501));
+        running_cost_factor: (round(23.831197028565008));
         power: int(1036*1/2);
-        weight: int(49*3/4);
-        cargo_capacity: 60;
-        tractive_effort_coefficient: int(0.38*10*49);
+        weight: int(112*3/4);
+        cargo_capacity: 80;
+        tractive_effort_coefficient: int(0.041*10*112);
         length: 8;
         default: switch_dmu_france_sncf_t_2000_cargo_selection;
     }

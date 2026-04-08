@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03D
+// Template: TPL_03D. Data from: http://www.trainweb.org/oldtimetrains/photos/cnr_diesel/early.htm
 
 item(FEAT_TRAINS, item_diesel_canada_cnr_9000) {
     property {
@@ -20,7 +20,7 @@ item(FEAT_TRAINS, item_diesel_canada_cnr_9000) {
         power: 2660 hp;
         cargo_capacity: 0;
         weight: 335 ton;
-        tractive_effort_coefficient: 0.11;
+        tractive_effort_coefficient: 0.065;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

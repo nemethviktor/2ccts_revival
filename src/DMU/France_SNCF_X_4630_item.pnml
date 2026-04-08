@@ -3,21 +3,21 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A
+// Template: TPL_02A. Data from: https://fr.wikipedia.org/wiki/X_4630
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_dmu_france_sncf_x_4630_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 72/2; \
-        bitmask(CC_ARMOURED): 72/4; \
-        72; \
+        bitmask(CC_MAIL): 133/2; \
+        bitmask(CC_ARMOURED): 133/4; \
+        133; \
     }
 
 
     switch(FEAT_TRAINS, SELF, switch_dmu_france_sncf_x_4630_capacity_wagon, cargo_classes) { \
-        bitmask(CC_MAIL): 72/2; \
-        bitmask(CC_ARMOURED): 72/4; \
-        72; \
+        bitmask(CC_MAIL): 133/2; \
+        bitmask(CC_ARMOURED): 133/4; \
+        133; \
     }
 
 item(FEAT_TRAINS, item_dmu_france_sncf_x_4630) {
@@ -29,13 +29,13 @@ item(FEAT_TRAINS, item_dmu_france_sncf_x_4630) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 31.37048;
-        running_cost_factor: 24.72273;
+        cost_factor: 29.57181;
+        running_cost_factor: 26.02406;
         speed: 120 km/h;
         power: 396 hp;
-        cargo_capacity: 72;
-        weight: 62 ton;
-        tractive_effort_coefficient: 0.2;
+        cargo_capacity: 133;
+        weight: 31 ton;
+        tractive_effort_coefficient: 0.14;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -73,18 +73,18 @@ badges: ["power/diesel", "flag/FR"];
     livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: int(120/10);
-        weight: int(62*1/2);
-        cargo_capacity: 72;
+        weight: int(31*1/2);
+        cargo_capacity: 133;
         length: 8;
         default: switch_dmu_france_sncf_x_4630_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(26.39072550798457));
+        running_cost_factor: (round(18.33072550798457));
         power: int(396*1/2);
-        weight: int(62*3/4);
-        cargo_capacity: 72;
-        tractive_effort_coefficient: int(0.2*10*62);
+        weight: int(31*3/4);
+        cargo_capacity: 133;
+        tractive_effort_coefficient: int(0.14*10*31);
         length: 8;
         default: switch_dmu_france_sncf_x_4630_cargo_selection;
     }

@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A
+// Template: TPL_01A. Data from: https://en.wikipedia.org/wiki/%C4%8CD_Class_380
 
 item(FEAT_TRAINS, item_electric_czech_republic_cd_380) {
     property {
@@ -20,7 +20,7 @@ item(FEAT_TRAINS, item_electric_czech_republic_cd_380) {
         power: 8583 hp;
         cargo_capacity: 0;
         weight: 88 ton;
-        tractive_effort_coefficient: 0.34;
+        tractive_effort_coefficient: 0.348;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

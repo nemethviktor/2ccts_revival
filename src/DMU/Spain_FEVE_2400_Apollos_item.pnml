@@ -3,21 +3,21 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A
+// Template: TPL_02A. Data from: https://es.wikipedia.org/wiki/Serie_524_de_Renfe
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_dmu_spain_feve_2400_apollos_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 50/2; \
-        bitmask(CC_ARMOURED): 50/4; \
-        50; \
+        bitmask(CC_MAIL): 116/2; \
+        bitmask(CC_ARMOURED): 116/4; \
+        116; \
     }
 
 
     switch(FEAT_TRAINS, SELF, switch_dmu_spain_feve_2400_apollos_capacity_wagon, cargo_classes) { \
-        bitmask(CC_MAIL): 50/2; \
-        bitmask(CC_ARMOURED): 50/4; \
-        50; \
+        bitmask(CC_MAIL): 116/2; \
+        bitmask(CC_ARMOURED): 116/4; \
+        116; \
     }
 
 item(FEAT_TRAINS, item_dmu_spain_feve_2400_apollos) {
@@ -29,11 +29,11 @@ item(FEAT_TRAINS, item_dmu_spain_feve_2400_apollos) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 35.8759;
-        running_cost_factor: 31.06283;
+        cost_factor: 37.46184;
+        running_cost_factor: 32.64877;
         speed: 100 km/h;
         power: 720 hp;
-        cargo_capacity: 50;
+        cargo_capacity: 116;
         weight: 44 ton;
         tractive_effort_coefficient: 0.2;
         air_drag_coefficient: 0;
@@ -44,7 +44,7 @@ item(FEAT_TRAINS, item_dmu_spain_feve_2400_apollos) {
         misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
         refit_cost: 0;
         ai_special_flag: AI_FLAG_PASSENGER;
-        track_type: [STANDARD_GAUGE_RAILTYPE_NONE];
+        track_type: [BROAD_GAUGE_RAILTYPE_NONE];
         running_cost_base: RUNNING_COST_DIESEL;
         engine_class: ENGINE_CLASS_DIESEL;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 0, DISABLE_WAGON_POWER);
@@ -74,7 +74,7 @@ badges: ["power/diesel", "flag/ES"];
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: int(100/10);
         weight: int(44*1/2);
-        cargo_capacity: 50;
+        cargo_capacity: 116;
         length: 7;
         default: switch_dmu_spain_feve_2400_apollos_cargo_selection;
     }
@@ -83,7 +83,7 @@ badges: ["power/diesel", "flag/ES"];
         running_cost_factor: (round(21.48330941475706));
         power: int(720*1/2);
         weight: int(44*3/4);
-        cargo_capacity: 50;
+        cargo_capacity: 116;
         tractive_effort_coefficient: int(0.2*10*44);
         length: 7;
         default: switch_dmu_spain_feve_2400_apollos_cargo_selection;

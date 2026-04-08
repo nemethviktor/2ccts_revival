@@ -3,21 +3,21 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A
+// Template: TPL_02A. Data from: https://es.wikipedia.org/wiki/Serie_593_de_Renfe
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_dmu_chile_efe_tld_500_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 84/2; \
-        bitmask(CC_ARMOURED): 84/4; \
-        84; \
+        bitmask(CC_MAIL): 72/2; \
+        bitmask(CC_ARMOURED): 72/4; \
+        72; \
     }
 
 
     switch(FEAT_TRAINS, SELF, switch_dmu_chile_efe_tld_500_capacity_wagon, cargo_classes) { \
-        bitmask(CC_MAIL): 84/2; \
-        bitmask(CC_ARMOURED): 84/4; \
-        84; \
+        bitmask(CC_MAIL): 72/2; \
+        bitmask(CC_ARMOURED): 72/4; \
+        72; \
     }
 
 item(FEAT_TRAINS, item_dmu_chile_efe_tld_500) {
@@ -29,13 +29,13 @@ item(FEAT_TRAINS, item_dmu_chile_efe_tld_500) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 27.17711;
-        running_cost_factor: 19.92935;
+        cost_factor: 42.26178;
+        running_cost_factor: 35.01402;
         speed: 120 km/h;
-        power: 220 hp;
-        cargo_capacity: 84;
+        power: 920 hp;
+        cargo_capacity: 72;
         weight: 68 ton;
-        tractive_effort_coefficient: 0.13;
+        tractive_effort_coefficient: 0.067;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -44,7 +44,7 @@ item(FEAT_TRAINS, item_dmu_chile_efe_tld_500) {
         misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
         refit_cost: 0;
         ai_special_flag: AI_FLAG_PASSENGER;
-        track_type: [NARROW_GAUGE_RAILTYPE_NONE];
+        track_type: [BROAD_GAUGE_RAILTYPE_NONE];
         running_cost_base: RUNNING_COST_DIESEL;
         engine_class: ENGINE_CLASS_DIESEL;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 0, DISABLE_WAGON_POWER);
@@ -74,17 +74,17 @@ badges: ["power/diesel", "flag/CL"];
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: int(120/10);
         weight: int(68*1/2);
-        cargo_capacity: 84;
+        cargo_capacity: 72;
         length: 8;
         default: switch_dmu_chile_efe_tld_500_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(22.32924882521396));
-        power: int(220*1/2);
+        running_cost_factor: (round(19.589154781228782));
+        power: int(920*1/2);
         weight: int(68*3/4);
-        cargo_capacity: 84;
-        tractive_effort_coefficient: int(0.13*10*68);
+        cargo_capacity: 72;
+        tractive_effort_coefficient: int(0.067*10*68);
         length: 8;
         default: switch_dmu_chile_efe_tld_500_cargo_selection;
     }

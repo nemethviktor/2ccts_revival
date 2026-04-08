@@ -3,24 +3,24 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A
+// Template: TPL_01A. Data from: https://da.wikipedia.org/wiki/Litra_MH
 
 item(FEAT_TRAINS, item_diesel_denmark_dsb_mak_100) {
     property {
         name: string(str_diesel_denmark_dsb_mak_100);
         climates_available: ((param_region_northern_europe || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
-        introduction_date: date(1962,1,1);
+        introduction_date: date(1960,1,1);
         model_life: 45;
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 30.45341;
-        running_cost_factor: 25.58719;
-        speed: 75 km/h;
-        power: 650 hp;
+        cost_factor: 23.21045;
+        running_cost_factor: 18.37472;
+        speed: 60 km/h;
+        power: 334 hp;
         cargo_capacity: 0;
         weight: 45 ton;
-        tractive_effort_coefficient: 0.21;
+        tractive_effort_coefficient: 0.249;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

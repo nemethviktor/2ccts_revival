@@ -3,21 +3,21 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A
+// Template: TPL_02A. Data from: https://cs.wikipedia.org/wiki/Motorov%C3%A1_jednotka_814
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_dmu_czech_republic_cd_814_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 42/2; \
-        bitmask(CC_ARMOURED): 42/4; \
-        42; \
+        bitmask(CC_MAIL): 95/2; \
+        bitmask(CC_ARMOURED): 95/4; \
+        95; \
     }
 
 
     switch(FEAT_TRAINS, SELF, switch_dmu_czech_republic_cd_814_capacity_wagon, cargo_classes) { \
-        bitmask(CC_MAIL): 42/2; \
-        bitmask(CC_ARMOURED): 42/4; \
-        42; \
+        bitmask(CC_MAIL): 95/2; \
+        bitmask(CC_ARMOURED): 95/4; \
+        95; \
     }
 
 item(FEAT_TRAINS, item_dmu_czech_republic_cd_814) {
@@ -29,13 +29,13 @@ item(FEAT_TRAINS, item_dmu_czech_republic_cd_814) {
         vehicle_life: 20;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 24.66266;
-        running_cost_factor: 22.08671;
+        cost_factor: 25.88997;
+        running_cost_factor: 23.31402;
         speed: 80 km/h;
         power: 325 hp;
-        cargo_capacity: 42;
+        cargo_capacity: 95;
         weight: 22 ton;
-        tractive_effort_coefficient: 0.25;
+        tractive_effort_coefficient: 0.125;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -74,17 +74,17 @@ badges: ["power/diesel", "flag/CZ"];
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: int(80/10);
         weight: int(22*1/2);
-        cargo_capacity: 42;
+        cargo_capacity: 95;
         length: 6;
         default: switch_dmu_czech_republic_cd_814_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(15.30445326474844));
+        running_cost_factor: (round(12.55445326474844));
         power: int(325*1/2);
         weight: int(22*3/4);
-        cargo_capacity: 42;
-        tractive_effort_coefficient: int(0.25*10*22);
+        cargo_capacity: 95;
+        tractive_effort_coefficient: int(0.125*10*22);
         length: 6;
         default: switch_dmu_czech_republic_cd_814_cargo_selection;
     }

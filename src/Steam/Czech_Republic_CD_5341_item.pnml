@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03A
+// Template: TPL_03A. Data from: https://cs.wikipedia.org/wiki/Lokomotiva_534.0
 
 item(FEAT_TRAINS, item_steam_czech_republic_cd_5341) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_steam_czech_republic_cd_5341) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 44.28592;
-        running_cost_factor: 33.25019;
+        cost_factor: 51.03624;
+        running_cost_factor: 37.50051;
         speed: 60 km/h;
-        power: 1100 hp;
+        power: 1400 hp;
         cargo_capacity: 0;
-        weight: 107 ton;
-        tractive_effort_coefficient: 0.31;
+        weight: 132 ton;
+        tractive_effort_coefficient: 0.151;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

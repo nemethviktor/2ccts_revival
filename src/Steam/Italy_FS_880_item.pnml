@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03C
+// Template: TPL_03C. Data from: https://it.wikipedia.org/wiki/Locomotiva_FS_880
 
 item(FEAT_TRAINS, item_steam_italy_fs_880) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_steam_italy_fs_880) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 37.2209;
-        running_cost_factor: 22.45469;
+        cost_factor: 32.89729;
+        running_cost_factor: 23.33108;
         speed: 75 km/h;
-        power: 500 hp;
+        power: 540 hp;
         cargo_capacity: 0;
-        weight: 144 ton;
-        tractive_effort_coefficient: 0.1;
+        weight: 92 ton;
+        tractive_effort_coefficient: 0.2;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

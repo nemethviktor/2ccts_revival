@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A
+// Template: TPL_01A. Data from: https://hu.wikipedia.org/wiki/M%C3%81V_V43_sorozat
 
 item(FEAT_TRAINS, item_electric_hungary_mav_class_v43) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_electric_hungary_mav_class_v43) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 62.87369;
-        running_cost_factor: 54.42593;
+        cost_factor: 63.33205;
+        running_cost_factor: 54.8843;
         speed: 120 km/h;
-        power: 2950 hp;
+        power: 3000 hp;
         cargo_capacity: 0;
         weight: 80 ton;
-        tractive_effort_coefficient: 0.34;
+        tractive_effort_coefficient: 0.344;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

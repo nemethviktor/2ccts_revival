@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03A
+// Template: TPL_03A. Data from: https://en.wikipedia.org/wiki/Royal_Hudson
 
 item(FEAT_TRAINS, item_steam_canada_cpr_royal_hudson) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_steam_canada_cpr_royal_hudson) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 97.09316;
-        running_cost_factor: 67.20644;
+        cost_factor: 84.88618;
+        running_cost_factor: 55.79946;
         speed: 144 km/h;
-        power: 4500 hp;
+        power: 3100 hp;
         cargo_capacity: 0;
-        weight: 294 ton;
-        tractive_effort_coefficient: 0.06;
+        weight: 286 ton;
+        tractive_effort_coefficient: 0.07;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

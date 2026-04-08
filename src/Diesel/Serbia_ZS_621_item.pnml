@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A
+// Template: TPL_01A. Data from: https://en.wikipedia.org/wiki/%C5%BDS_series_621
 
 item(FEAT_TRAINS, item_diesel_serbia_zs_621) {
     property {
@@ -20,7 +20,7 @@ item(FEAT_TRAINS, item_diesel_serbia_zs_621) {
         power: 530 hp;
         cargo_capacity: 0;
         weight: 36 ton;
-        tractive_effort_coefficient: 0.3;
+        tractive_effort_coefficient: 0.306;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -40,7 +40,7 @@ item(FEAT_TRAINS, item_diesel_serbia_zs_621) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/diesel", "flag/RS"];
+badges: ["power/diesel", "flag/YU"];
 
     }
     graphics {

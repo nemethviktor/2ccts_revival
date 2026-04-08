@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03A
+// Template: TPL_03A. Data from: https://loco-info.com/view.aspx?id=17945&t=Country&cookies=decline
 
 item(FEAT_TRAINS, item_steam_south_africa_katanga_mikado_2_8_2) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_steam_south_africa_katanga_mikado_2_8_2) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 38.12845;
+        cost_factor: 37.92845;
         running_cost_factor: 30.90337;
         speed: 55 km/h;
         power: 950 hp;
         cargo_capacity: 0;
-        weight: 69 ton;
-        tractive_effort_coefficient: 0.12;
+        weight: 67 ton;
+        tractive_effort_coefficient: 0.218;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

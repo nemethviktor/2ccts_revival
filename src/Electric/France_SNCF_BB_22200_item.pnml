@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A
+// Template: TPL_01A. Data from: https://en.wikipedia.org/wiki/SNCF_Class_BB_22200
 
 item(FEAT_TRAINS, item_electric_france_sncf_bb_22200) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_electric_france_sncf_bb_22200) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 86.08733;
-        running_cost_factor: 76.57601;
+        cost_factor: 86.13977;
+        running_cost_factor: 76.62846;
         speed: 160 km/h;
-        power: 5842 hp;
+        power: 5850 hp;
         cargo_capacity: 0;
         weight: 90 ton;
-        tractive_effort_coefficient: 0.33;
+        tractive_effort_coefficient: 0.333;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

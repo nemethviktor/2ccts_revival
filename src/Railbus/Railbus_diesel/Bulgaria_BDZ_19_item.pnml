@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01B
+// Template: TPL_01B. Data from: https://bg.wikipedia.org/wiki/%D0%94%D0%B8%D0%B7%D0%B5%D0%BB%D0%BE%D0%B2%D0%B0_%D0%BC%D0%BE%D1%82%D1%80%D0%B8%D1%81%D0%B0_%D0%91%D0%94%D0%96_29-01
 
 // Cargo capacity
 
@@ -29,12 +29,12 @@ item(FEAT_TRAINS, item_rbd_bulgaria_bdz_19) {
         vehicle_life: 15;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 32.77215;
-        running_cost_factor: 27.11606;
+        cost_factor: 32.44213;
+        running_cost_factor: 26.68604;
         speed: 125 km/h;
-        power: 550 hp;
+        power: 530 hp;
         cargo_capacity: 37;
-        weight: 52 ton;
+        weight: 53 ton;
         tractive_effort_coefficient: 0.2;
         air_drag_coefficient: 0;
 

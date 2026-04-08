@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02C
+// Template: TPL_02C. Data from: https://es.wikipedia.org/wiki/Serie_5000
 
 item(FEAT_TRAINS, item_mtro_spain_madrid_series_5000) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_mtro_spain_madrid_series_5000) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 35.02496;
-        running_cost_factor: 30.54901;
+        cost_factor: 43.46769;
+        running_cost_factor: 39.89174;
         speed: 80 km/h;
-        power: 530 hp;
-        cargo_capacity: 192;
-        weight: 41 ton;
-        tractive_effort_coefficient: 0.46;
+        power: 1100 hp;
+        cargo_capacity: 160;
+        weight: 32 ton;
+        tractive_effort_coefficient: 0.24;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -40,7 +40,7 @@ item(FEAT_TRAINS, item_mtro_spain_madrid_series_5000) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/maglev", "flag/ES"];
+badges: ["power/metro", "flag/ES"];
 
     }
     graphics {
@@ -57,18 +57,18 @@ badges: ["power/maglev", "flag/ES"];
     livery_override (item_mtro_metro_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: int(80/10);
-        weight: int(41*1/2);
+        weight: int(32*1/2);
         cargo_capacity: 192;
         length: 8;
         default: spriteset_mtro_spain_madrid_series_5000_middle;
     }
     livery_override (item_mtro_metro_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(29.1623525599242));
-        power: int(530*1/2);
-        weight: int(41*3/4);
+        running_cost_factor: (round(18.996625696382157));
+        power: int(1100*1/2);
+        weight: int(32*3/4);
         cargo_capacity: 192;
-        tractive_effort_coefficient: int(0.46*10*41);
+        tractive_effort_coefficient: int(0.24*10*32);
         length: 8;
         default: spriteset_mtro_spain_madrid_series_5000_middle;
     }

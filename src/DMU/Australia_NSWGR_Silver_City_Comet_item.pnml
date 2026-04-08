@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A
+// Template: TPL_02A. Data from: https://en.wikipedia.org/wiki/Silver_City_Comet
 
 // Cargo capacity
 
@@ -15,9 +15,9 @@
 
 
     switch(FEAT_TRAINS, SELF, switch_dmu_australia_nswgr_silver_city_comet_capacity_wagon, cargo_classes) { \
-        bitmask(CC_MAIL): 45/2; \
-        bitmask(CC_ARMOURED): 45/4; \
-        45; \
+        bitmask(CC_MAIL): 60/2; \
+        bitmask(CC_ARMOURED): 60/4; \
+        60; \
     }
 
 item(FEAT_TRAINS, item_dmu_australia_nswgr_silver_city_comet) {
@@ -29,13 +29,13 @@ item(FEAT_TRAINS, item_dmu_australia_nswgr_silver_city_comet) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 32.03011;
-        running_cost_factor: 26.01879;
+        cost_factor: 29.66511;
+        running_cost_factor: 25.95379;
         speed: 160 km/h;
         power: 660 hp;
         cargo_capacity: 0;
-        weight: 55 ton;
-        tractive_effort_coefficient: 0.2;
+        weight: 32 ton;
+        tractive_effort_coefficient: 0.135;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -74,18 +74,18 @@ badges: ["power/diesel", "flag/AU"];
     livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
         running_cost_factor: int(160/10);
-        weight: int(55*1/2);
-        cargo_capacity: 45;
+        weight: int(32*1/2);
+        cargo_capacity: 60;
         length: 7;
         default: switch_dmu_australia_nswgr_silver_city_comet_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        running_cost_factor: (round(29.569095715520575));
+        running_cost_factor: (round(22.889095715520575));
         power: int(660*1/2);
-        weight: int(55*3/4);
-        cargo_capacity: 45;
-        tractive_effort_coefficient: int(0.2*10*55);
+        weight: int(32*3/4);
+        cargo_capacity: 60;
+        tractive_effort_coefficient: int(0.135*10*32);
         length: 7;
         default: switch_dmu_australia_nswgr_silver_city_comet_cargo_selection;
     }

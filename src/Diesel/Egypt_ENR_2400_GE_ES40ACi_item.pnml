@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A
+// Template: TPL_01A. Data from: https://en.wikipedia.org/wiki/GE_Evolution_Series
 
 item(FEAT_TRAINS, item_diesel_egypt_enr_2400_ge_es40aci) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_diesel_egypt_enr_2400_ge_es40aci) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 77.60637;
-        running_cost_factor: 63.35862;
-        speed: 120 km/h;
-        power: 4000 hp;
+        cost_factor: 79.7556;
+        running_cost_factor: 65.30617;
+        speed: 121 km/h;
+        power: 4250 hp;
         cargo_capacity: 0;
-        weight: 138 ton;
-        tractive_effort_coefficient: 0.53;
+        weight: 140 ton;
+        tractive_effort_coefficient: 0.59;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

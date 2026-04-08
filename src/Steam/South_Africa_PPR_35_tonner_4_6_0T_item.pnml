@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03C
+// Template: TPL_03C. Data from: https://en.wikipedia.org/wiki/PPR_35_Tonner_4-6-0T_Portuguese
 
 item(FEAT_TRAINS, item_steam_south_africa_ppr_35_tonner_4_6_0t) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_steam_south_africa_ppr_35_tonner_4_6_0t) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 13.79778;
-        running_cost_factor: 9.86205;
+        cost_factor: 18.91216;
+        running_cost_factor: 14.97642;
         speed: 60 km/h;
-        power: 88 hp;
+        power: 220 hp;
         cargo_capacity: 0;
         weight: 36 ton;
-        tractive_effort_coefficient: 0.12;
+        tractive_effort_coefficient: 0.118;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -29,7 +29,7 @@ item(FEAT_TRAINS, item_steam_south_africa_ppr_35_tonner_4_6_0t) {
         misc_flags: bitmask(TRAIN_FLAG_2CC);
         refit_cost: 0;
         ai_special_flag: AI_FLAG_PASSENGER;
-        track_type: [STANDARD_GAUGE_RAILTYPE_NONE];
+        track_type: [NARROW_GAUGE_RAILTYPE_NONE];
         running_cost_base: RUNNING_COST_STEAM;
         engine_class: ENGINE_CLASS_STEAM;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_STEAM, 0, DISABLE_WAGON_POWER);

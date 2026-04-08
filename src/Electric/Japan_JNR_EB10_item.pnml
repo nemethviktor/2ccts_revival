@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A
+// Template: TPL_01A. Data from: https://ja.wikipedia.org/wiki/%E5%9B%BD%E9%89%84EB10%E5%BD%A2%E9%9B%BB%E6%B0%97%E6%A9%9F%E9%96%A2%E8%BB%8A
 
 item(FEAT_TRAINS, item_electric_japan_jnr_eb10) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_electric_japan_jnr_eb10) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 16.08201;
-        running_cost_factor: 13.59089;
-        speed: 40 km/h;
-        power: 180 hp;
+        cost_factor: 21.54174;
+        running_cost_factor: 19.04347;
+        speed: 19 km/h;
+        power: 360 hp;
         cargo_capacity: 0;
         weight: 22 ton;
-        tractive_effort_coefficient: 0.3;
+        tractive_effort_coefficient: 0.171;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

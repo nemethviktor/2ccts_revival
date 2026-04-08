@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A
+// Template: TPL_01A. Data from: https://en.wikipedia.org/wiki/SBB_Eem_923
 
 item(FEAT_TRAINS, item_electric_switzerland_sbb_eem_923) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_electric_switzerland_sbb_eem_923) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 36.63914;
-        running_cost_factor: 31.72607;
-        speed: 100 km/h;
-        power: 1000 hp;
+        cost_factor: 49.91502;
+        running_cost_factor: 44.96726;
+        speed: 120 km/h;
+        power: 2012 hp;
         cargo_capacity: 0;
         weight: 45 ton;
-        tractive_effort_coefficient: 0.27;
+        tractive_effort_coefficient: 0.34;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -29,7 +29,7 @@ item(FEAT_TRAINS, item_electric_switzerland_sbb_eem_923) {
         misc_flags: bitmask(TRAIN_FLAG_2CC);
         refit_cost: 0;
         ai_special_flag: AI_FLAG_PASSENGER;
-        track_type: [STANDARD_GAUGE_RAILTYPE_15KV];
+        track_type: [STANDARD_GAUGE_RAILTYPE_OHLE];
         running_cost_base: RUNNING_COST_ELECTRIC;
         engine_class: ENGINE_CLASS_ELECTRIC;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, -3, DISABLE_WAGON_POWER);

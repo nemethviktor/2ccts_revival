@@ -3,14 +3,14 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01B
+// Template: TPL_01B. Data from: https://trainspo.com/model/3411/
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_rbd_lithuania_lithuanian_railways_ar2_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 73/2; \
-        bitmask(CC_ARMOURED): 73/4; \
-        73; \
+        bitmask(CC_MAIL): 76/2; \
+        bitmask(CC_ARMOURED): 76/4; \
+        76; \
     }
 
 
@@ -29,11 +29,11 @@ item(FEAT_TRAINS, item_rbd_lithuania_lithuanian_railways_ar2) {
         vehicle_life: 15;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 28.29524;
-        running_cost_factor: 24.64749;
+        cost_factor: 28.36912;
+        running_cost_factor: 24.72137;
         speed: 120 km/h;
         power: 400 hp;
-        cargo_capacity: 73;
+        cargo_capacity: 76;
         weight: 32 ton;
         tractive_effort_coefficient: 0.12;
         air_drag_coefficient: 0;
@@ -44,7 +44,7 @@ item(FEAT_TRAINS, item_rbd_lithuania_lithuanian_railways_ar2) {
         misc_flags: bitmask(TRAIN_FLAG_2CC);
         refit_cost: 0;
         ai_special_flag: AI_FLAG_PASSENGER;
-        track_type: [STANDARD_GAUGE_RAILTYPE_NONE];
+        track_type: [BROAD_GAUGE_RAILTYPE_NONE];
         running_cost_base: RUNNING_COST_DIESEL;
         engine_class: ENGINE_CLASS_DIESEL;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, -3, DISABLE_WAGON_POWER);

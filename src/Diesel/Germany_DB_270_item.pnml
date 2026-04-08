@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03B
+// Template: TPL_03B. Data from: https://de.wikipedia.org/wiki/Wehrmachtslokomotive_WR_200_B_14
 
 item(FEAT_TRAINS, item_diesel_germany_db_270) {
     property {
@@ -20,7 +20,7 @@ item(FEAT_TRAINS, item_diesel_germany_db_270) {
         power: 200 hp;
         cargo_capacity: 0;
         weight: 26 ton;
-        tractive_effort_coefficient: 0.31;
+        tractive_effort_coefficient: 0.267;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

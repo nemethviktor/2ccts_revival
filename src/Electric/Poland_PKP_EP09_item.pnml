@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A
+// Template: TPL_01A. Data from: https://en.wikipedia.org/wiki/PKP_class_EP09
 
 item(FEAT_TRAINS, item_electric_poland_pkp_ep09) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_electric_poland_pkp_ep09) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 75.76497;
-        running_cost_factor: 66.85365;
+        cost_factor: 71.56806;
+        running_cost_factor: 62.70674;
         speed: 160 km/h;
-        power: 4452 hp;
+        power: 3916 hp;
         cargo_capacity: 0;
-        weight: 84 ton;
-        tractive_effort_coefficient: 0.23;
+        weight: 83 ton;
+        tractive_effort_coefficient: 0.238;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

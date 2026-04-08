@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A
+// Template: TPL_01A. Data from: https://en.wikipedia.org/wiki/British_Rail_Class_68
 
 item(FEAT_TRAINS, item_diesel_uk_br_68) {
     property {
@@ -20,7 +20,7 @@ item(FEAT_TRAINS, item_diesel_uk_br_68) {
         power: 3800 hp;
         cargo_capacity: 0;
         weight: 85 ton;
-        tractive_effort_coefficient: 0.37;
+        tractive_effort_coefficient: 0.38;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

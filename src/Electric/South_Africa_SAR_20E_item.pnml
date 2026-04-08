@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A
+// Template: TPL_01A. Data from: https://en.wikipedia.org/wiki/South_African_Class_20E
 
 item(FEAT_TRAINS, item_electric_south_africa_sar_20e) {
     property {
@@ -20,7 +20,7 @@ item(FEAT_TRAINS, item_electric_south_africa_sar_20e) {
         power: 4000 hp;
         cargo_capacity: 0;
         weight: 86 ton;
-        tractive_effort_coefficient: 0.32;
+        tractive_effort_coefficient: 0.379;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

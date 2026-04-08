@@ -3,14 +3,14 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01B
+// Template: TPL_01B. Data from: https://de.wikipedia.org/wiki/%C3%96BB_4855
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_rbe_austria_obb_4855_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 64/2; \
-        bitmask(CC_ARMOURED): 64/4; \
-        64; \
+        bitmask(CC_MAIL): 126/2; \
+        bitmask(CC_ARMOURED): 126/4; \
+        126; \
     }
 
 
@@ -29,11 +29,11 @@ item(FEAT_TRAINS, item_rbe_austria_obb_4855) {
         vehicle_life: 15;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 34.41859;
-        running_cost_factor: 29.77084;
+        cost_factor: 35.83958;
+        running_cost_factor: 31.19182;
         speed: 120 km/h;
         power: 643 hp;
-        cargo_capacity: 64;
+        cargo_capacity: 126;
         weight: 42 ton;
         tractive_effort_coefficient: 0.21;
         air_drag_coefficient: 0;

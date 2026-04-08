@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_16A
+// Template: TPL_16A. Data from: https://en.wikipedia.org/wiki/Great_Northern_W-1
 
 item(FEAT_TRAINS, item_electric_usa_gn_w_1) {
     property {
@@ -20,7 +20,7 @@ item(FEAT_TRAINS, item_electric_usa_gn_w_1) {
         power: 5000 hp;
         cargo_capacity: 0;
         weight: 330 ton;
-        tractive_effort_coefficient: 0.16;
+        tractive_effort_coefficient: 0.164;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

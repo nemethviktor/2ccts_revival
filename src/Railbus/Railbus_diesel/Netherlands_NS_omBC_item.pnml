@@ -3,14 +3,14 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01B
+// Template: TPL_01B. Data from: https://nl.wikipedia.org/wiki/OmBC_(stroomlijnmotorrijtuig)
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_rbd_netherlands_ns_ombc_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 63/2; \
-        bitmask(CC_ARMOURED): 63/4; \
-        63; \
+        bitmask(CC_MAIL): 87/2; \
+        bitmask(CC_ARMOURED): 87/4; \
+        87; \
     }
 
 
@@ -29,11 +29,11 @@ item(FEAT_TRAINS, item_rbd_netherlands_ns_ombc) {
         vehicle_life: 15;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 27.27303;
-        running_cost_factor: 21.55108;
+        cost_factor: 27.86367;
+        running_cost_factor: 22.14172;
         speed: 105 km/h;
         power: 294 hp;
-        cargo_capacity: 63;
+        cargo_capacity: 87;
         weight: 53 ton;
         tractive_effort_coefficient: 0.34;
         air_drag_coefficient: 0;

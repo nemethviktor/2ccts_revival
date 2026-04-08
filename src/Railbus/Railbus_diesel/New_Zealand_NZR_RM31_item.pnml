@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01B
+// Template: TPL_01B. Data from: https://en.wikipedia.org/wiki/NZR_RM_class_(Standard)
 
 // Cargo capacity
 
@@ -29,12 +29,12 @@ item(FEAT_TRAINS, item_rbd_new_zealand_nzr_rm31) {
         vehicle_life: 15;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 24.03873;
-        running_cost_factor: 19.89098;
-        speed: 120 km/h;
-        power: 250 hp;
+        cost_factor: 22.59674;
+        running_cost_factor: 19.18367;
+        speed: 100 km/h;
+        power: 228 hp;
         cargo_capacity: 50;
-        weight: 37 ton;
+        weight: 30 ton;
         tractive_effort_coefficient: 0.2;
         air_drag_coefficient: 0;
 

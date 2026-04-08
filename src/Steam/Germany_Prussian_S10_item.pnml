@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03A
+// Template: TPL_03A. Data from: https://de.wikipedia.org/wiki/Preu%C3%9Fische_S_10
 
 item(FEAT_TRAINS, item_steam_germany_prussian_s10) {
     property {
@@ -14,12 +14,12 @@ item(FEAT_TRAINS, item_steam_germany_prussian_s10) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 42.22366;
-        running_cost_factor: 34.09297;
+        cost_factor: 53.2682;
+        running_cost_factor: 38.83751;
         speed: 110 km/h;
-        power: 1155 hp;
+        power: 1500 hp;
         cargo_capacity: 0;
-        weight: 77 ton;
+        weight: 140 ton;
         tractive_effort_coefficient: 0.1;
         air_drag_coefficient: 0;
 

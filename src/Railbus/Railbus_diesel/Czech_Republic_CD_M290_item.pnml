@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01B
+// Template: TPL_01B. Data from: https://cs.wikipedia.org/wiki/Motorov%C3%BD_v%C5%AFz_M_290.0
 
 // Cargo capacity
 
@@ -29,9 +29,9 @@ item(FEAT_TRAINS, item_rbd_czech_republic_cd_m290) {
         vehicle_life: 15;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 26.90148;
-        running_cost_factor: 22.80851;
-        speed: 148 km/h;
+        cost_factor: 26.86566;
+        running_cost_factor: 22.80135;
+        speed: 130 km/h;
         power: 330 hp;
         cargo_capacity: 72;
         weight: 36 ton;

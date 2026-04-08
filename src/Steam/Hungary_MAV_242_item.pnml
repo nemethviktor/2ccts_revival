@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03E
+// Template: TPL_03E. Data from: https://hu.wikipedia.org/wiki/M%C3%81V_242_sorozat
 
 item(FEAT_TRAINS, item_steam_hungary_mav_242) {
     property {
@@ -20,7 +20,7 @@ item(FEAT_TRAINS, item_steam_hungary_mav_242) {
         power: 618 hp;
         cargo_capacity: 0;
         weight: 85 ton;
-        tractive_effort_coefficient: 0.08;
+        tractive_effort_coefficient: 0.078;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

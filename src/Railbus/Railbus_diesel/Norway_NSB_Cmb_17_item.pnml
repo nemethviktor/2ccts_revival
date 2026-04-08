@@ -3,14 +3,14 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01B
+// Template: TPL_01B. Data from: https://en.wikipedia.org/wiki/NSB_Cmb_Class_17
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_rbd_norway_nsb_cmb_17_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 45/2; \
-        bitmask(CC_ARMOURED): 45/4; \
-        45; \
+        bitmask(CC_MAIL): 40/2; \
+        bitmask(CC_ARMOURED): 40/4; \
+        40; \
     }
 
 
@@ -29,11 +29,11 @@ item(FEAT_TRAINS, item_rbd_norway_nsb_cmb_17) {
         vehicle_life: 15;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 16.49549;
-        running_cost_factor: 15.08241;
+        cost_factor: 16.34928;
+        running_cost_factor: 14.9362;
         speed: 100 km/h;
         power: 120 hp;
-        cargo_capacity: 45;
+        cargo_capacity: 40;
         weight: 10 ton;
         tractive_effort_coefficient: 0.41;
         air_drag_coefficient: 0;

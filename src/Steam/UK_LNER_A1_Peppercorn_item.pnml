@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03A
+// Template: TPL_03A. Data from: https://en.wikipedia.org/wiki/LNER_Peppercorn_Class_A1
 
 item(FEAT_TRAINS, item_steam_uk_lner_a1_peppercorn) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_steam_uk_lner_a1_peppercorn) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 69.2079;
-        running_cost_factor: 51.89658;
+        cost_factor: 65.82896;
+        running_cost_factor: 49.11764;
         speed: 160 km/h;
-        power: 2680 hp;
+        power: 2400 hp;
         cargo_capacity: 0;
-        weight: 168 ton;
-        tractive_effort_coefficient: 0.1;
+        weight: 162 ton;
+        tractive_effort_coefficient: 0.11;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

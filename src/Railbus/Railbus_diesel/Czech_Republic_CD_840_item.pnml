@@ -3,14 +3,14 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01B
+// Template: TPL_01B. Data from: https://en.wikipedia.org/wiki/%C4%8CD_Class_840_and_841
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_rbd_czech_republic_cd_840_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 71/2; \
-        bitmask(CC_ARMOURED): 71/4; \
-        71; \
+        bitmask(CC_MAIL): 140/2; \
+        bitmask(CC_ARMOURED): 140/4; \
+        140; \
     }
 
 
@@ -29,13 +29,13 @@ item(FEAT_TRAINS, item_rbd_czech_republic_cd_840) {
         vehicle_life: 15;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 35.98442;
-        running_cost_factor: 31.23666;
+        cost_factor: 37.2109;
+        running_cost_factor: 32.76314;
         speed: 120 km/h;
         power: 710 hp;
-        cargo_capacity: 71;
-        weight: 43 ton;
-        tractive_effort_coefficient: 0.37;
+        cargo_capacity: 140;
+        weight: 40 ton;
+        tractive_effort_coefficient: 0.255;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

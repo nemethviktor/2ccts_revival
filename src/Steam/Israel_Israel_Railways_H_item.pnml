@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03A
+// Template: TPL_03A. Data from: https://en.wikipedia.org/wiki/Palestine_Railways_H_class
 
 item(FEAT_TRAINS, item_steam_israel_israel_railways_h) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_steam_israel_israel_railways_h) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 36.258;
-        running_cost_factor: 24.00576;
-        speed: 68 km/h;
-        power: 572 hp;
+        cost_factor: 44.78558;
+        running_cost_factor: 32.50009;
+        speed: 85 km/h;
+        power: 1050 hp;
         cargo_capacity: 0;
         weight: 119 ton;
-        tractive_effort_coefficient: 0.09;
+        tractive_effort_coefficient: 0.093;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A
+// Template: TPL_01A. Data from: https://en.wikipedia.org/wiki/FS_Class_E.444
 
 item(FEAT_TRAINS, item_electric_italy_fs_e444) {
     property {
@@ -20,7 +20,7 @@ item(FEAT_TRAINS, item_electric_italy_fs_e444) {
         power: 5729 hp;
         cargo_capacity: 0;
         weight: 83 ton;
-        tractive_effort_coefficient: 0.24;
+        tractive_effort_coefficient: 0.247;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

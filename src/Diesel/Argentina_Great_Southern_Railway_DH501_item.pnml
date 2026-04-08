@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A
+// Template: TPL_01A. Data from: https://es.wikipedia.org/wiki/Ferrocarril_del_Sud
 
 item(FEAT_TRAINS, item_diesel_argentina_great_southern_railway_dh501) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_diesel_argentina_great_southern_railway_dh501) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 31.91053;
-        running_cost_factor: 24.40771;
-        speed: 45 km/h;
-        power: 592 hp;
+        cost_factor: 49.92288;
+        running_cost_factor: 34.73739;
+        speed: 85 km/h;
+        power: 1200 hp;
         cargo_capacity: 0;
-        weight: 72 ton;
-        tractive_effort_coefficient: 0.15;
+        weight: 148 ton;
+        tractive_effort_coefficient: 0.138;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -29,7 +29,7 @@ item(FEAT_TRAINS, item_diesel_argentina_great_southern_railway_dh501) {
         misc_flags: bitmask(TRAIN_FLAG_2CC);
         refit_cost: 0;
         ai_special_flag: AI_FLAG_PASSENGER;
-        track_type: [STANDARD_GAUGE_RAILTYPE_NONE];
+        track_type: [BROAD_GAUGE_RAILTYPE_NONE];
         running_cost_base: RUNNING_COST_DIESEL;
         engine_class: ENGINE_CLASS_DIESEL;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 0, DISABLE_WAGON_POWER);

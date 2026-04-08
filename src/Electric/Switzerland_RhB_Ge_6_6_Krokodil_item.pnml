@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03B
+// Template: TPL_03B. Data from: nan
 
 item(FEAT_TRAINS, item_electric_switzerland_rhb_ge_6_6_krokodil) {
     property {

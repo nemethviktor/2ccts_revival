@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02C
+// Template: TPL_02C. Data from: https://pt.wikipedia.org/wiki/TUE_S%C3%A9rie_5500_(Fepasa)
 
 item(FEAT_TRAINS, item_mtro_brazil_sao_paulo_serie_5500) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_mtro_brazil_sao_paulo_serie_5500) {
         vehicle_life: 60;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 28.03546;
-        running_cost_factor: 23.94061;
-        speed: 90 km/h;
-        power: 250 hp;
-        cargo_capacity: 230;
-        weight: 37 ton;
-        tractive_effort_coefficient: 0.38;
+        cost_factor: 51.47305;
+        running_cost_factor: 45.85998;
+        speed: 100 km/h;
+        power: 1530 hp;
+        cargo_capacity: 160;
+        weight: 52 ton;
+        tractive_effort_coefficient: 0.25;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -29,7 +29,7 @@ item(FEAT_TRAINS, item_mtro_brazil_sao_paulo_serie_5500) {
         misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
         refit_cost: 0;
         ai_special_flag: AI_FLAG_PASSENGER;
-        track_type: [STANDARD_GAUGE_RAILTYPE_3RD];
+        track_type: [BROAD_GAUGE_RAILTYPE_3RD];
         running_cost_base: RUNNING_COST_ELECTRIC;
         engine_class: ENGINE_CLASS_MAGLEV;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
@@ -40,7 +40,7 @@ item(FEAT_TRAINS, item_mtro_brazil_sao_paulo_serie_5500) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/maglev", "flag/BR"];
+badges: ["power/metro", "flag/BR"];
 
     }
     graphics {
@@ -56,19 +56,19 @@ badges: ["power/maglev", "flag/BR"];
     }
     livery_override (item_mtro_metro_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        running_cost_factor: int(90/10);
-        weight: int(37*1/2);
+        running_cost_factor: int(100/10);
+        weight: int(52*1/2);
         cargo_capacity: 230;
         length: 8;
         default: spriteset_mtro_brazil_sao_paulo_serie_5500_middle;
     }
     livery_override (item_mtro_metro_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        running_cost_factor: (round(24.645256964788636));
-        power: int(250*1/2);
-        weight: int(37*3/4);
+        running_cost_factor: (round(26.91152144465189));
+        power: int(1530*1/2);
+        weight: int(52*3/4);
         cargo_capacity: 230;
-        tractive_effort_coefficient: int(0.38*10*37);
+        tractive_effort_coefficient: int(0.25*10*52);
         length: 8;
         default: spriteset_mtro_brazil_sao_paulo_serie_5500_middle;
     }

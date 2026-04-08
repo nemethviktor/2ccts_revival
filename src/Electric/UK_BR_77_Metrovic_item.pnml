@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A
+// Template: TPL_01A. Data from: https://en.wikipedia.org/wiki/British_Rail_Class_77
 
 item(FEAT_TRAINS, item_electric_uk_br_77_metrovic) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_electric_uk_br_77_metrovic) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 60.71028;
+        cost_factor: 60.91028;
         running_cost_factor: 50.02199;
         speed: 145 km/h;
         power: 2490 hp;
         cargo_capacity: 0;
-        weight: 102 ton;
-        tractive_effort_coefficient: 0.2;
+        weight: 104 ton;
+        tractive_effort_coefficient: 0.196;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

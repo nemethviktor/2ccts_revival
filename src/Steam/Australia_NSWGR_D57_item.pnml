@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03A
+// Template: TPL_03A. Data from: https://en.wikipedia.org/wiki/New_South_Wales_D57_class_locomotive
 
 item(FEAT_TRAINS, item_steam_australia_nswgr_d57) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_steam_australia_nswgr_d57) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 67.72874;
-        running_cost_factor: 44.25279;
+        cost_factor: 76.48502;
+        running_cost_factor: 53.00907;
         speed: 80 km/h;
-        power: 1950 hp;
+        power: 2800 hp;
         cargo_capacity: 0;
         weight: 231 ton;
-        tractive_effort_coefficient: 0.12;
+        tractive_effort_coefficient: 0.128;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

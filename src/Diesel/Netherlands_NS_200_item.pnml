@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A
+// Template: TPL_01A. Data from: https://nl.wikipedia.org/wiki/NS_200
 
 item(FEAT_TRAINS, item_diesel_netherlands_ns_200) {
     property {
@@ -20,7 +20,7 @@ item(FEAT_TRAINS, item_diesel_netherlands_ns_200) {
         power: 72 hp;
         cargo_capacity: 0;
         weight: 21 ton;
-        tractive_effort_coefficient: 0.19;
+        tractive_effort_coefficient: 0.218;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

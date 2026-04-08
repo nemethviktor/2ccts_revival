@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A
+// Template: TPL_02A. Data from: https://en.wikipedia.org/wiki/LRC_(train)
 
 // Cargo capacity
 
@@ -15,9 +15,9 @@
 
 
     switch(FEAT_TRAINS, SELF, switch_dmu_canada_via_rail_lrc_capacity_wagon, cargo_classes) { \
-        bitmask(CC_MAIL): 55/2; \
-        bitmask(CC_ARMOURED): 55/4; \
-        55; \
+        bitmask(CC_MAIL): 68/2; \
+        bitmask(CC_ARMOURED): 68/4; \
+        68; \
     }
 
 item(FEAT_TRAINS, item_dmu_canada_via_rail_lrc) {
@@ -29,13 +29,13 @@ item(FEAT_TRAINS, item_dmu_canada_via_rail_lrc) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 81.20994;
-        running_cost_factor: 74.16922;
-        speed: 180 km/h;
+        cost_factor: 79.99089;
+        running_cost_factor: 73.84021;
+        speed: 153 km/h;
         power: 5400 hp;
         cargo_capacity: 0;
-        weight: 65 ton;
-        tractive_effort_coefficient: 0.54;
+        weight: 56 ton;
+        tractive_effort_coefficient: 0.221;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -73,19 +73,19 @@ badges: ["power/diesel", "flag/CA"];
     }
     livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        running_cost_factor: int(180/10);
-        weight: int(65*1/2);
-        cargo_capacity: 55;
+        running_cost_factor: int(153/10);
+        weight: int(56*1/2);
+        cargo_capacity: 68;
         length: 8;
         default: switch_dmu_canada_via_rail_lrc_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        running_cost_factor: (round(60.4494037772337));
+        running_cost_factor: (round(35.1359037772337));
         power: int(5400*1/2);
-        weight: int(65*3/4);
-        cargo_capacity: 55;
-        tractive_effort_coefficient: int(0.54*10*65);
+        weight: int(56*3/4);
+        cargo_capacity: 68;
+        tractive_effort_coefficient: int(0.221*10*56);
         length: 8;
         default: switch_dmu_canada_via_rail_lrc_cargo_selection;
     }

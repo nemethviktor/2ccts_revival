@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01B
+// Template: TPL_01B. Data from: https://de.wikipedia.org/wiki/BB%C3%96_VT_42
 
 // Cargo capacity
 
@@ -29,13 +29,13 @@ item(FEAT_TRAINS, item_rbd_austria_obb_5042) {
         vehicle_life: 15;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 31.34424;
-        running_cost_factor: 25.01355;
+        cost_factor: 25.64909;
+        running_cost_factor: 19.3184;
         speed: 110 km/h;
-        power: 410 hp;
+        power: 210 hp;
         cargo_capacity: 78;
         weight: 59 ton;
-        tractive_effort_coefficient: 0.08;
+        tractive_effort_coefficient: 0.086;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

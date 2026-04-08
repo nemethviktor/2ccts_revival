@@ -3,14 +3,14 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A
+// Template: TPL_02A. Data from: https://en.wikipedia.org/wiki/3000_class_railcar
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_dmu_australia_transadelaide_3100_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 53/2; \
-        bitmask(CC_ARMOURED): 53/4; \
-        53; \
+        bitmask(CC_MAIL): 46/2; \
+        bitmask(CC_ARMOURED): 46/4; \
+        46; \
     }
 
 
@@ -29,13 +29,13 @@ item(FEAT_TRAINS, item_dmu_australia_transadelaide_3100) {
         vehicle_life: 20;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 31.32036;
-        running_cost_factor: 26.12552;
+        cost_factor: 54.96282;
+        running_cost_factor: 49.76797;
         speed: 90 km/h;
-        power: 475 hp;
-        cargo_capacity: 53;
+        power: 2092 hp;
+        cargo_capacity: 46;
         weight: 48 ton;
-        tractive_effort_coefficient: 0.22;
+        tractive_effort_coefficient: 0.117;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -80,11 +80,11 @@ badges: ["power/diesel", "flag/AU"];
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(21.73976861451189));
-        power: int(475*1/2);
+        running_cost_factor: (round(19.189838911654775));
+        power: int(2092*1/2);
         weight: int(48*3/4);
         cargo_capacity: 53;
-        tractive_effort_coefficient: int(0.22*10*48);
+        tractive_effort_coefficient: int(0.117*10*48);
         length: 7;
         default: switch_dmu_australia_transadelaide_3100_cargo_selection;
     }

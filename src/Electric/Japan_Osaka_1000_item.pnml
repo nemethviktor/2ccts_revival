@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02C
+// Template: TPL_02C. Data from: https://ja.wikipedia.org/wiki/%E5%A4%A7%E9%98%AA%E5%B8%82%E9%9B%BB%E6%B0%97%E5%B1%80100%E5%BD%A2%E9%9B%BB%E8%BB%8A
 
 item(FEAT_TRAINS, item_mtro_japan_osaka_1000) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_mtro_japan_osaka_1000) {
         vehicle_life: 60;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 24.49628;
-        running_cost_factor: 20.65015;
+        cost_factor: 35.02956;
+        running_cost_factor: 30.68343;
         speed: 65 km/h;
-        power: 200 hp;
-        cargo_capacity: 145;
-        weight: 35 ton;
-        tractive_effort_coefficient: 0.24;
+        power: 615 hp;
+        cargo_capacity: 120;
+        weight: 40 ton;
+        tractive_effort_coefficient: 0.2;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -40,7 +40,7 @@ item(FEAT_TRAINS, item_mtro_japan_osaka_1000) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/maglev", "flag/JP"];
+badges: ["power/metro", "flag/JP"];
 
     }
     graphics {
@@ -57,18 +57,18 @@ badges: ["power/maglev", "flag/JP"];
     livery_override (item_mtro_metro_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
         running_cost_factor: int(65/10);
-        weight: int(35*1/2);
+        weight: int(40*1/2);
         cargo_capacity: 145;
         length: 7;
         default: spriteset_mtro_japan_osaka_1000_middle;
     }
     livery_override (item_mtro_metro_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        running_cost_factor: (round(16.322003111067648));
-        power: int(200*1/2);
-        weight: int(35*3/4);
+        running_cost_factor: (round(16.979995640403533));
+        power: int(615*1/2);
+        weight: int(40*3/4);
         cargo_capacity: 145;
-        tractive_effort_coefficient: int(0.24*10*35);
+        tractive_effort_coefficient: int(0.2*10*40);
         length: 7;
         default: spriteset_mtro_japan_osaka_1000_middle;
     }

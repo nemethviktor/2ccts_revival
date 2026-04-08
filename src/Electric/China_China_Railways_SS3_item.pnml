@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A
+// Template: TPL_01A. Data from: https://zh.wikipedia.org/wiki/%E9%9F%B6%E5%B1%B13%E5%9E%8B%E9%9B%BB%E5%8A%9B%E6%A9%9F%E8%BB%8A
 
 item(FEAT_TRAINS, item_electric_china_china_railways_ss3) {
     property {
@@ -20,7 +20,7 @@ item(FEAT_TRAINS, item_electric_china_china_railways_ss3) {
         power: 5793 hp;
         cargo_capacity: 0;
         weight: 138 ton;
-        tractive_effort_coefficient: 0.34;
+        tractive_effort_coefficient: 0.347;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03B
+// Template: TPL_03B. Data from: https://en.wikipedia.org/wiki/Queensland_Railways_DL_class
 
 item(FEAT_TRAINS, item_diesel_australia_queensland_railways_dl_class) {
     property {
@@ -20,7 +20,7 @@ item(FEAT_TRAINS, item_diesel_australia_queensland_railways_dl_class) {
         power: 150 hp;
         cargo_capacity: 0;
         weight: 18 ton;
-        tractive_effort_coefficient: 0.17;
+        tractive_effort_coefficient: 0.176;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

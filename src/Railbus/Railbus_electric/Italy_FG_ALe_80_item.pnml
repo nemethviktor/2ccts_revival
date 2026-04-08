@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01B
+// Template: TPL_01B. Data from: https://it.wikipedia.org/wiki/Automotrice_FG_ALe_80
 
 // Cargo capacity
 
@@ -29,10 +29,10 @@ item(FEAT_TRAINS, item_rbe_italy_fg_ale_80) {
         vehicle_life: 15;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 36.99214;
-        running_cost_factor: 31.64438;
-        speed: 120 km/h;
-        power: 720 hp;
+        cost_factor: 37.88676;
+        running_cost_factor: 32.55607;
+        speed: 110 km/h;
+        power: 770 hp;
         cargo_capacity: 80;
         weight: 49 ton;
         tractive_effort_coefficient: 0.17;
@@ -44,7 +44,7 @@ item(FEAT_TRAINS, item_rbe_italy_fg_ale_80) {
         misc_flags: bitmask(TRAIN_FLAG_2CC);
         refit_cost: 0;
         ai_special_flag: AI_FLAG_PASSENGER;
-        track_type: [STANDARD_GAUGE_RAILTYPE_OHLE];
+        track_type: [STANDARD_GAUGE_RAILTYPE_3KV];
         running_cost_base: RUNNING_COST_ELECTRIC;
         engine_class: ENGINE_CLASS_ELECTRIC;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);

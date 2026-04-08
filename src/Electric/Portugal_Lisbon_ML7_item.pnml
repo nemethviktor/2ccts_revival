@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02C
+// Template: TPL_02C. Data from: https://pt.wikipedia.org/wiki/Material_circulante_do_Metropolitano_de_Lisboa#ML7
 
 item(FEAT_TRAINS, item_mtro_portugal_lisbon_ml7) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_mtro_portugal_lisbon_ml7) {
         vehicle_life: 60;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 33.92294;
-        running_cost_factor: 30.0872;
+        cost_factor: 28.11987;
+        running_cost_factor: 25.88414;
         speed: 60 km/h;
-        power: 535 hp;
-        cargo_capacity: 160;
-        weight: 35 ton;
-        tractive_effort_coefficient: 0.48;
+        power: 430 hp;
+        cargo_capacity: 85;
+        weight: 19 ton;
+        tractive_effort_coefficient: 0.24;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -40,7 +40,7 @@ item(FEAT_TRAINS, item_mtro_portugal_lisbon_ml7) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/maglev", "flag/PT"];
+badges: ["power/metro", "flag/PT"];
 
     }
     graphics {
@@ -57,18 +57,18 @@ badges: ["power/maglev", "flag/PT"];
     livery_override (item_mtro_metro_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
         running_cost_factor: int(60/10);
-        weight: int(35*1/2);
+        weight: int(19*1/2);
         cargo_capacity: 160;
         length: 8;
         default: spriteset_mtro_portugal_lisbon_ml7_middle;
     }
     livery_override (item_mtro_metro_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        running_cost_factor: (round(25.113177368094103));
-        power: int(535*1/2);
-        weight: int(35*3/4);
+        running_cost_factor: (round(12.634161220634184));
+        power: int(430*1/2);
+        weight: int(19*3/4);
         cargo_capacity: 160;
-        tractive_effort_coefficient: int(0.48*10*35);
+        tractive_effort_coefficient: int(0.24*10*19);
         length: 8;
         default: spriteset_mtro_portugal_lisbon_ml7_middle;
     }

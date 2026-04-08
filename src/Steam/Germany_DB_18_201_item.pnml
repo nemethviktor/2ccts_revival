@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03A
+// Template: TPL_03A. Data from: https://de.wikipedia.org/wiki/DR_18_201
 
 item(FEAT_TRAINS, item_steam_germany_db_18_201) {
     property {
@@ -14,9 +14,9 @@ item(FEAT_TRAINS, item_steam_germany_db_18_201) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 63.91937;
-        running_cost_factor: 46.17864;
-        speed: 180 km/h;
+        cost_factor: 63.92295;
+        running_cost_factor: 46.17936;
+        speed: 182 km/h;
         power: 2120 hp;
         cargo_capacity: 0;
         weight: 172 ton;
@@ -40,7 +40,7 @@ item(FEAT_TRAINS, item_steam_germany_db_18_201) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/steam", "flag/DE"];
+badges: ["power/steam", "flag/GDR"];
 
     }
     graphics {

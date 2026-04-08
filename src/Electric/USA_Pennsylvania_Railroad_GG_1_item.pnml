@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_16A
+// Template: TPL_16A. Data from: https://en.wikipedia.org/wiki/Pennsylvania_Railroad_class_GG1
 
 item(FEAT_TRAINS, item_electric_usa_pennsylvania_railroad_gg_1) {
     property {
@@ -20,7 +20,7 @@ item(FEAT_TRAINS, item_electric_usa_pennsylvania_railroad_gg_1) {
         power: 4620 hp;
         cargo_capacity: 0;
         weight: 215 ton;
-        tractive_effort_coefficient: 0.15;
+        tractive_effort_coefficient: 0.138;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -29,7 +29,7 @@ item(FEAT_TRAINS, item_electric_usa_pennsylvania_railroad_gg_1) {
         misc_flags: bitmask(TRAIN_FLAG_2CC);
         refit_cost: 0;
         ai_special_flag: AI_FLAG_PASSENGER;
-        track_type: [STANDARD_GAUGE_RAILTYPE_15KV];
+        track_type: [STANDARD_GAUGE_RAILTYPE_OHLE];
         running_cost_base: RUNNING_COST_ELECTRIC;
         engine_class: ENGINE_CLASS_ELECTRIC;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);

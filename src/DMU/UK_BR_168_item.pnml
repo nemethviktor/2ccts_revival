@@ -3,21 +3,21 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A
+// Template: TPL_02A. Data from: https://en.wikipedia.org/wiki/British_Rail_Class_168
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_dmu_uk_br_168_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 42/2; \
-        bitmask(CC_ARMOURED): 42/4; \
-        42; \
+        bitmask(CC_MAIL): 68/2; \
+        bitmask(CC_ARMOURED): 68/4; \
+        68; \
     }
 
 
     switch(FEAT_TRAINS, SELF, switch_dmu_uk_br_168_capacity_wagon, cargo_classes) { \
-        bitmask(CC_MAIL): 42/2; \
-        bitmask(CC_ARMOURED): 42/4; \
-        42; \
+        bitmask(CC_MAIL): 68/2; \
+        bitmask(CC_ARMOURED): 68/4; \
+        68; \
     }
 
 item(FEAT_TRAINS, item_dmu_uk_br_168) {
@@ -29,13 +29,13 @@ item(FEAT_TRAINS, item_dmu_uk_br_168) {
         vehicle_life: 20;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 45.78286;
-        running_cost_factor: 40.27154;
+        cost_factor: 39.20803;
+        running_cost_factor: 33.69671;
         speed: 160 km/h;
-        power: 1300 hp;
-        cargo_capacity: 42;
+        power: 844 hp;
+        cargo_capacity: 68;
         weight: 50 ton;
-        tractive_effort_coefficient: 0.39;
+        tractive_effort_coefficient: 0.114;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -75,17 +75,17 @@ badges: ["power/diesel", "flag/GB"];
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: int(160/10);
         weight: int(50*1/2);
-        cargo_capacity: 42;
+        cargo_capacity: 68;
         length: 8;
         default: switch_dmu_uk_br_168_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(39.105551380198236));
-        power: int(1300*1/2);
+        running_cost_factor: (round(24.605176818247827));
+        power: int(844*1/2);
         weight: int(50*3/4);
-        cargo_capacity: 42;
-        tractive_effort_coefficient: int(0.39*10*50);
+        cargo_capacity: 68;
+        tractive_effort_coefficient: int(0.114*10*50);
         length: 8;
         default: switch_dmu_uk_br_168_cargo_selection;
     }

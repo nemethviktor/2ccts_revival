@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03A
+// Template: TPL_03A. Data from: https://en.wikipedia.org/wiki/Sentetsu_Sorii-class_locomotives
 
 item(FEAT_TRAINS, item_steam_china_china_railways_h) {
     property {
@@ -14,13 +14,13 @@ item(FEAT_TRAINS, item_steam_china_china_railways_h) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 33.02574;
-        running_cost_factor: 26.91162;
-        speed: 50 km/h;
-        power: 720 hp;
+        cost_factor: 39.8502;
+        running_cost_factor: 29.24392;
+        speed: 70 km/h;
+        power: 850 hp;
         cargo_capacity: 0;
-        weight: 58 ton;
-        tractive_effort_coefficient: 0.16;
+        weight: 102 ton;
+        tractive_effort_coefficient: 0.129;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
