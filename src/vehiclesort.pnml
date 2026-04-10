@@ -845,6 +845,9 @@ item_mglv_wagon_gen7m_car_transporter, /*Year: 2020*/ \
 item_mglv_wagon_gen7m_silo_type2, /*Year: 2020*/ \
 item_mglv_wagon_gen7m_hopper_type2, /*Year: 2020*/
 
+#define SORTING_CARGOEMU \
+item_cargoemu_japan_jr_freight_m250, /*Year: 2003*/
+
 // Combine all categories into the final sort list
 sort(FEAT_TRAINS, [
     SORTING_RBS 
@@ -869,5 +872,6 @@ sort(FEAT_TRAINS, [
     SORTING_SINGLEMAGLEV 
     SORTING_CARGODMU 
     SORTING_RBM 
-    SORTING_WAGONS_MGLV
+    SORTING_WAGONS_MGLV 
+    SORTING_CARGOEMU
 ]);

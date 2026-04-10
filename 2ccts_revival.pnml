@@ -40,6 +40,11 @@
 #include "src/CargoDMU/Germany_DB_691_CargoSprinter_item.pnml"
 
 
+//// CARGOEMU
+#include "src/CargoEMU/Japan_JR_Freight_M250_graphics.pnml"
+#include "src/CargoEMU/Japan_JR_Freight_M250_item.pnml"
+
+
 //// COACHES - GEN1
 #include "src/Coaches/Gen1/Coach_Gen1_Wooden_2_axle_Compartment_Coach_graphics.pnml"
 #include "src/Coaches/Gen1/Coach_Gen1_Wooden_2_axle_Compartment_Coach_item.pnml"

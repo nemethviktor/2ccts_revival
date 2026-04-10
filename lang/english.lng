@@ -1021,7 +1021,6 @@ str_mu_mu_cargo_wagon_powered                                         :Multiple 
 str_mu_mu_cargo_wagon_unpowered                                       :Multiple Unit Cargo Wagon (Unpowered)
 str_mu_mu_wagon_powered                                               :Multiple Unit Wagon (Powered)
 str_mu_mu_wagon_unpowered                                             :Multiple Unit Wagon (Unpowered)
-str_cargoemu_japan_freight_m250                                       :JR Freight M250 (DMU, 1500V DC)
 
 # EMU
 str_emu_australia_sydney_trains_a_set_waratah                         :Sydney Trains A Set 'Waratah' (EMU, 1500V DC)
@@ -1096,6 +1095,7 @@ str_emu_russia_rzd_er200                                              :RZD ER200
 str_emu_russia_rzd_s                                                  :RZD S (EMU, 3kV DC)
 str_emu_croatia_hz_6112                                               :HZ 6112 (EMU, 25kV AC)
 str_emu_russia_rzd_es1_lastochka                                      :RZD ES1 'Lastochka' (EMU, OHLE [Multi-V])
+str_cargoemu_japan_jr_freight_m250                                    :JR Freight M250 (EMU, 1500V DC)
 
 # METRORAILBUS
 str_singlemtro_usa_brooklyn_union_gate_car                            :Brooklyn Union Gate Car (Single Unit Metro)

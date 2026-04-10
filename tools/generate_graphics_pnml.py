@@ -2027,6 +2027,10 @@ def get_tpl_32(vid, gfx_path, row, template_amendment_code):
 def get_tpl_42(vid, gfx_path, row, template_amendment_code):
     """
     This is for the CargoDMU
+
+    :param template_amendment_code:
+    -> A: CargoDMU
+    -> B: Test
     """
     nml_code = []
 
@@ -2040,84 +2044,155 @@ def get_tpl_42(vid, gfx_path, row, template_amendment_code):
             'Back': 64,   # Block 2 starts at 64
             'Middle': 128  # Block 3 starts at 128
         }
+    elif template_amendment_code in ['B']:
+        position_strings = {
+            'Front E1': 0,    # Block 1 starts at 0 (we add 1 later)
+            'Front E2': 64,   # Block 2 starts at 64
+            'Back E1': 0,
+            'Back E2': 64,
+            'Trailer': 128  # Block 3 starts at 128
+        }
 
     # 2. State X-offsets (Horizontal)
     states = {1: 1, 2: 178, 3: 356}
 
-    for position_string, position_base_y in position_strings.items():
-        position_string_is_dummy = True if position_string == 'dummy' else False
-        has_loading_states = True
-        created_sprites = []
+    if template_amendment_code == 'A':
+        for position_string, position_base_y in position_strings.items():
+            position_string_is_dummy = True if position_string == 'dummy' else False
+            has_loading_states = True
+            created_sprites = []
 
-        nml_code.append(f"\n// {position_string}")
+            nml_code.append(f"\n// {position_string}")
 
-        # We use (livery_num - 1) * 32 to get 0 for L1 and 32 for L2
-        for livery_num in [1, 2]:
-            livery_offset = (livery_num - 1) * 32
+            # We use (livery_num - 1) * 32 to get 0 for L1 and 32 for L2
+            for livery_num in [1, 2]:
+                livery_offset = (livery_num - 1) * 32
 
-            for state_num, x_coord in states.items():
-                calculated_y = position_base_y + \
-                    livery_offset
+                for state_num, x_coord in states.items():
+                    calculated_y = position_base_y + \
+                        livery_offset
 
-                final_y = position_base_y + livery_offset
-                if final_y == 0:
-                    final_y = 1  # Force 1 for the very first row
+                    final_y = position_base_y + livery_offset
+                    if final_y == 0:
+                        final_y = 1  # Force 1 for the very first row
 
-                s_suffix = ""
-                s_suffix += f"{position_string}" if not position_string_is_dummy else ""
-                s_suffix += f"{'_' if not position_string_is_dummy else ''}L{livery_num}"
-                s_suffix += f"_s{state_num}" if has_loading_states else ""
-                s_suffix = s_suffix.lower()
+                    s_suffix = ""
+                    s_suffix += f"{position_string}" if not position_string_is_dummy else ""
+                    s_suffix += f"{'_' if not position_string_is_dummy else ''}L{livery_num}"
+                    s_suffix += f"_s{state_num}" if has_loading_states else ""
+                    s_suffix = s_suffix.lower()
 
-                comment = ""
-                comment += f"{position_string.upper()}" if not position_string_is_dummy else "N/A"
-                comment += f" - Livery {livery_num}"
-                comment += f" - Loading State {state_num}" if has_loading_states else ""
+                    comment = ""
+                    comment += f"{position_string.upper()}" if not position_string_is_dummy else "N/A"
+                    comment += f" - Livery {livery_num}"
+                    comment += f" - Loading State {state_num}" if has_loading_states else ""
 
+                    nml_code.append(get_spriteset(
+                        vid=vid,
+                        gfx_path=gfx_path,
+                        comment_type=comment,
+                        template_name_amendment="2cc_engines_general",
+                        template_x=x_coord,
+                        template_y=calculated_y,
+                        spritename_suffix=s_suffix
+                    ))
+
+                    sprite_name = f"spriteset_{vid}_{s_suffix}"
+                    created_sprites.append(sprite_name.lower())
+
+                # Spritegroups
+                group_block = get_spritegroup_with_loading_states(
+                    vid=vid,
+                    livery_num=livery_num,
+                    created_sprites=created_sprites,
+                    cargo_string=position_string,
+                    cargo_string_is_dummy=position_string_is_dummy,
+                    has_loading_states=has_loading_states,
+                    has_driving_states=False,
+                    cargo_with_driving_state=[]
+                )
+                nml_code.append(group_block)
+
+            # 3. Livery Selector (Random Switch)
+            selector_name = f"switch_{vid}_livery" if position_string_is_dummy else f"switch_{vid}_{position_string}_livery"
+            nml_code.append(get_random_livery_selector(
+                vid=vid, cargo_string=position_string,
+                selector_name=selector_name,
+                list_length=2,
+                cargo_string_is_dummy=position_string_is_dummy,
+                has_loading_states=has_loading_states,
+                first_chance=5))
+
+        nml_code.append(get_switch_reversed(vid=vid,
+                                            front_switch="Back_livery",
+                                            front_task="switch",
+                                            back_switch="Back_livery",
+                                            back_task="switch",
+                                            fallback_switch="Front_livery",
+                                            fallback_task="switch"
+                                            ))
+
+    elif template_amendment_code == 'B':
+        # 1. Define vertical blocks
+        # Row 1: E1 Front, Row 2: E2 Front
+        # Row 3: E1 Back, Row 4: E2 Back
+        # Row 5: Trailer
+        pos_offsets = {
+            'engine1': 1,      # Row 1
+            'engine2': 32,     # Row 2
+            'engine1_rev': 64,  # Row 3
+            'engine2_rev': 96,  # Row 4
+            'trailer': 128     # Row 5
+        }
+
+        # 3. Create Spritegroups for each component
+        for p_name, y_offset in pos_offsets.items():
+            created_sprites = []
+            for s_idx, x_offset in states.items():
+                suffix = f"{p_name}_s{s_idx}"
                 nml_code.append(get_spriteset(
                     vid=vid,
                     gfx_path=gfx_path,
-                    comment_type=comment,
+                    comment_type=f"{p_name} State {s_idx}",
+                    template_x=x_offset,
+                    template_y=y_offset,
                     template_name_amendment="2cc_engines_general",
-                    template_x=x_coord,
-                    template_y=calculated_y,
-                    spritename_suffix=s_suffix
+                    spritename_suffix=suffix
                 ))
+                created_sprites.append(f"spriteset_{vid}_{suffix}")
 
-                sprite_name = f"spriteset_{vid}_{s_suffix}"
-                created_sprites.append(sprite_name.lower())
-
-            # Spritegroups
-            group_block = get_spritegroup_with_loading_states(
+            # unique cargo_string avoids "already defined" errors
+            nml_code.append(get_spritegroup_with_loading_states(
                 vid=vid,
-                livery_num=livery_num,
+                livery_num=1,
                 created_sprites=created_sprites,
-                cargo_string=position_string,
-                cargo_string_is_dummy=position_string_is_dummy,
-                has_loading_states=has_loading_states,
-                has_driving_states=False,
-                cargo_with_driving_state=[]
-            )
-            nml_code.append(group_block)
+                cargo_string=p_name,
+                cargo_string_is_dummy=False,
+                has_loading_states=True,
+                has_driving_states=False))
 
-        # 3. Livery Selector (Random Switch)
-        selector_name = f"switch_{vid}_livery" if position_string_is_dummy else f"switch_{vid}_{position_string}_livery"
-        nml_code.append(get_random_livery_selector(
-            vid=vid, cargo_string=position_string,
-            selector_name=selector_name,
-            list_length=2,
-            cargo_string_is_dummy=position_string_is_dummy,
-            has_loading_states=has_loading_states,
-            first_chance=5))
+        # 4. Consist Logic
+        # We use 'position_in_consist' for the front and 'from_end' for the tail.
+        # Note: 'engine1_rev_l1' etc. are the groups created by the loop above.
+        nml_code.append(f"""
+// 1. Rear-facing Wagon Logic (The "Reversed" Look)
+// This handles the tail of the sandwich using Row 3 and Row 4 sprites.
+switch(FEAT_TRAINS, SELF, switch_{vid}_check_back, position_in_consist_from_end) {{
+    0: spritegroup_{vid}_engine1_rev_l1; // The actual tail cab (Pointing Backwards)
+    1: spritegroup_{vid}_engine2_rev_l1; // The panto-car before the tail (Pointing Backwards)
+    default: spritegroup_{vid}_trailer_l1;
+}}
 
-    nml_code.append(get_switch_reversed(vid=vid,
-                                        front_switch="Back_livery",
-                                        front_task="switch",
-                                        back_switch="Back_livery",
-                                        back_task="switch",
-                                        fallback_switch="Front_livery",
-                                        fallback_task="switch"
-                                        ))
+// 2. Front-facing Wagon Logic
+// This handles the units immediately following the lead engine.
+switch(FEAT_TRAINS, SELF, switch_{vid}_wagon_logic, position_in_consist) {{
+    1: spritegroup_{vid}_engine2_l1; // Unit after front cab (Forward)
+    default: switch_{vid}_check_back;
+}}
+""")
+
+        # Add the articulated callback return
+        nml_code.append(f"{get_articulated_return(vid=vid, endvalue=2)}")
 
     nml_code.append(get_xmu_power_switch_position_based(vid=vid))
 
