@@ -3,7 +3,12 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A. Data from: nan
+// Template: TPL_02A.
+// Data from: https://en.wikipedia.org/wiki/%C4%8CD_Class_680
+
+// Notes:
+//// TE_STARTING_KN: 50 -- 50 per head unit
+
 
 // Cargo capacity
 
@@ -29,13 +34,13 @@ item(FEAT_TRAINS, item_emu_czech_republic_cd_680_pendolino) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 38.15957;
-        running_cost_factor: 32.05082;
-        speed: 230 km/h;
-        power: 750 hp;
+        cost_factor: 46.45057;
+        running_cost_factor: 40.38177;
+        speed: 200 km/h;
+        power: 1318 hp;
         cargo_capacity: 47;
         weight: 55 ton;
-        tractive_effort_coefficient: 0.67;
+        tractive_effort_coefficient: 0.093;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -55,7 +60,7 @@ item(FEAT_TRAINS, item_emu_czech_republic_cd_680_pendolino) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/CZ"];
+	badges: ["power/electric", "flag/CZ"];
 
     }
     graphics {
@@ -72,7 +77,7 @@ badges: ["power/electric", "flag/CZ"];
     }
     livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        running_cost_factor: int(230/10);
+        running_cost_factor: int(200/10);
         weight: int(55*1/2);
         cargo_capacity: 47;
         length: 8;
@@ -80,11 +85,11 @@ badges: ["power/electric", "flag/CZ"];
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        running_cost_factor: (round(62.588633863002556));
-        power: int(750*1/2);
+        running_cost_factor: (round(28.74542705528075));
+        power: int(1318*1/2);
         weight: int(55*3/4);
         cargo_capacity: 47;
-        tractive_effort_coefficient: int(0.67*10*55);
+        tractive_effort_coefficient: int(0.093*10*55);
         length: 8;
         default: switch_emu_czech_republic_cd_680_pendolino_cargo_selection;
     }

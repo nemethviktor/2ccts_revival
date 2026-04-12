@@ -3,7 +3,12 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A. Data from: nan
+// Template: TPL_01A.
+// Data from: https://en.wikipedia.org/wiki/South_African_Class_5E1,_Series_1
+
+// Notes:
+//// TE_STARTING_KN: 250 -- Wiki
+
 
 item(FEAT_TRAINS, item_electric_south_africa_sar_5e1) {
     property {
@@ -20,7 +25,7 @@ item(FEAT_TRAINS, item_electric_south_africa_sar_5e1) {
         power: 1953 hp;
         cargo_capacity: 0;
         weight: 86 ton;
-        tractive_effort_coefficient: 0.15;
+        tractive_effort_coefficient: 0.296;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -40,7 +45,7 @@ item(FEAT_TRAINS, item_electric_south_africa_sar_5e1) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/ZA"];
+	badges: ["power/electric", "flag/ZA"];
 
     }
     graphics {

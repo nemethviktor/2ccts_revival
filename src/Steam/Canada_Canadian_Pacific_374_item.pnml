@@ -3,7 +3,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03A. Data from: https://en.wikipedia.org/wiki/Canadian_Pacific_374
+// Template: TPL_03A.
+// Data from: https://en.wikipedia.org/wiki/Canadian_Pacific_374
 
 item(FEAT_TRAINS, item_steam_canada_canadian_pacific_374) {
     property {
@@ -40,7 +41,7 @@ item(FEAT_TRAINS, item_steam_canada_canadian_pacific_374) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/steam", "flag/CA"];
+	badges: ["power/steam", "flag/CA"];
 
     }
     graphics {

@@ -3,7 +3,12 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A. Data from: https://en.wikipedia.org/wiki/FS_Class_E.632
+// Template: TPL_01A.
+// Data from: https://en.wikipedia.org/wiki/FS_Class_E.632
+
+// Notes:
+//// WEB: https://en.wikipedia.org/wiki/FS_Class_E.632 -- Redirects to 632 from 633
+
 
 item(FEAT_TRAINS, item_electric_italy_fs_e633) {
     property {
@@ -40,7 +45,7 @@ item(FEAT_TRAINS, item_electric_italy_fs_e633) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/IT"];
+	badges: ["power/electric", "flag/IT"];
 
     }
     graphics {

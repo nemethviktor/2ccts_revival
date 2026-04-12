@@ -3,21 +3,26 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02D. Data from: nan
+// Template: TPL_02D.
+// Data from: https://en.wikipedia.org/wiki/700_Series_Shinkansen
+
+// Notes:
+//// TE_STARTING_KN: 60 -- 60kN each
+
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_emu_japan_jr_shinkansen_series_700_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 83/2; \
-        bitmask(CC_ARMOURED): 83/4; \
-        83; \
+        bitmask(CC_MAIL): 65/2; \
+        bitmask(CC_ARMOURED): 65/4; \
+        65; \
     }
 
 
     switch(FEAT_TRAINS, SELF, switch_emu_japan_jr_shinkansen_series_700_capacity_wagon, cargo_classes) { \
-        bitmask(CC_MAIL): 83/2; \
-        bitmask(CC_ARMOURED): 83/4; \
-        83; \
+        bitmask(CC_MAIL): 100/2; \
+        bitmask(CC_ARMOURED): 100/4; \
+        100; \
     }
 
 item(FEAT_TRAINS, item_emu_japan_jr_shinkansen_series_700) {
@@ -29,13 +34,13 @@ item(FEAT_TRAINS, item_emu_japan_jr_shinkansen_series_700) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 48.61487;
-        running_cost_factor: 43.45631;
+        cost_factor: 52.3299;
+        running_cost_factor: 47.17135;
         speed: 270 km/h;
-        power: 1441 hp;
-        cargo_capacity: 83;
+        power: 1810 hp;
+        cargo_capacity: 65;
         weight: 45 ton;
-        tractive_effort_coefficient: 0.56;
+        tractive_effort_coefficient: 0.136;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -55,7 +60,7 @@ item(FEAT_TRAINS, item_emu_japan_jr_shinkansen_series_700) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/JP"];
+	badges: ["power/electric", "flag/JP"];
 
     }
     graphics {
@@ -75,18 +80,18 @@ badges: ["power/electric", "flag/JP"];
         running_cost_factor: int(270/10);
         weight: int(45*1/2);
         visual_effect_and_powered: switch_emu_japan_jr_shinkansen_series_700_visual_effect_and_powered_position;
-        cargo_capacity: 83;
+        cargo_capacity: 100;
         length: 8;
         default: switch_emu_japan_jr_shinkansen_series_700_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        running_cost_factor: (round(55.996050591931656));
-        power: int(1441*1/2);
+        running_cost_factor: (round(37.37440949845811));
+        power: int(1810*1/2);
         weight: int(45*3/4);
         visual_effect_and_powered: switch_emu_japan_jr_shinkansen_series_700_visual_effect_and_powered_position;
-        cargo_capacity: 83;
-        tractive_effort_coefficient: int(0.56*10*45);
+        cargo_capacity: 100;
+        tractive_effort_coefficient: int(0.136*10*45);
         length: 8;
         default: switch_emu_japan_jr_shinkansen_series_700_cargo_selection;
     }

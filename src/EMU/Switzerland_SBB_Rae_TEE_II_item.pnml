@@ -3,21 +3,26 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02D. Data from: nan
+// Template: TPL_02D.
+// Data from: https://de.wikipedia.org/wiki/SBB_RAe_TEE_II
+
+// Notes:
+//// POWER: 3100 -- Reporting for the dedicated power car (the Re unit). In this formation, only the center power car provides traction; the cab cars are unpowered driving trailers. [Gemini ++ Wiki]
+
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_emu_switzerland_sbb_rae_tee_ii_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 60/2; \
-        bitmask(CC_ARMOURED): 60/4; \
-        60; \
+        bitmask(CC_MAIL): 58/2; \
+        bitmask(CC_ARMOURED): 58/4; \
+        58; \
     }
 
 
     switch(FEAT_TRAINS, SELF, switch_emu_switzerland_sbb_rae_tee_ii_capacity_wagon, cargo_classes) { \
-        bitmask(CC_MAIL): 60/2; \
-        bitmask(CC_ARMOURED): 60/4; \
-        60; \
+        bitmask(CC_MAIL): 58/2; \
+        bitmask(CC_ARMOURED): 58/4; \
+        58; \
     }
 
 item(FEAT_TRAINS, item_emu_switzerland_sbb_rae_tee_ii) {
@@ -29,13 +34,13 @@ item(FEAT_TRAINS, item_emu_switzerland_sbb_rae_tee_ii) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 30.41682;
-        running_cost_factor: 25.2055;
+        cost_factor: 65.58806;
+        running_cost_factor: 60.14341;
         speed: 160 km/h;
-        power: 425 hp;
-        cargo_capacity: 60;
-        weight: 47 ton;
-        tractive_effort_coefficient: 0.26;
+        power: 3100 hp;
+        cargo_capacity: 58;
+        weight: 49 ton;
+        tractive_effort_coefficient: 0.194;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -55,7 +60,7 @@ item(FEAT_TRAINS, item_emu_switzerland_sbb_rae_tee_ii) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/CH"];
+	badges: ["power/electric", "flag/CH"];
 
     }
     graphics {
@@ -73,20 +78,20 @@ badges: ["power/electric", "flag/CH"];
     livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
         running_cost_factor: int(160/10);
-        weight: int(47*1/2);
+        weight: int(49*1/2);
         visual_effect_and_powered: switch_emu_switzerland_sbb_rae_tee_ii_visual_effect_and_powered_position;
-        cargo_capacity: 60;
+        cargo_capacity: 58;
         length: 8;
         default: switch_emu_switzerland_sbb_rae_tee_ii_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        running_cost_factor: (round(30.282098782781446));
-        power: int(425*1/2);
-        weight: int(47*3/4);
+        running_cost_factor: (round(31.138444757647413));
+        power: int(3100*1/2);
+        weight: int(49*3/4);
         visual_effect_and_powered: switch_emu_switzerland_sbb_rae_tee_ii_visual_effect_and_powered_position;
-        cargo_capacity: 60;
-        tractive_effort_coefficient: int(0.26*10*47);
+        cargo_capacity: 58;
+        tractive_effort_coefficient: int(0.194*10*49);
         length: 8;
         default: switch_emu_switzerland_sbb_rae_tee_ii_cargo_selection;
     }

@@ -3,7 +3,12 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A. Data from: https://zh.wikipedia.org/wiki/SD18%E5%9E%8B%E6%9F%B4%E6%B2%B9%E6%9C%BA%E8%BD%A6
+// Template: TPL_01A.
+// Data from: https://zh.wikipedia.org/wiki/SD18%E5%9E%8B%E6%9F%B4%E6%B2%B9%E6%9C%BA%E8%BD%A6
+
+// Notes:
+//// TE_STARTING_KN: 433 -- CN wikipedia
+
 
 item(FEAT_TRAINS, item_diesel_south_korea_korail_6000_emd_sd18) {
     property {
@@ -40,7 +45,7 @@ item(FEAT_TRAINS, item_diesel_south_korea_korail_6000_emd_sd18) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/diesel", "flag/KR"];
+	badges: ["power/diesel", "flag/KR"];
 
     }
     graphics {

@@ -3,7 +3,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03A. Data from: https://en.wikipedia.org/wiki/China_Railways_QJ
+// Template: TPL_03A.
+// Data from: https://en.wikipedia.org/wiki/China_Railways_QJ
 
 item(FEAT_TRAINS, item_steam_china_railways_qj) {
     property {
@@ -40,7 +41,7 @@ item(FEAT_TRAINS, item_steam_china_railways_qj) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/steam", "flag/CN"];
+	badges: ["power/steam", "flag/CN"];
 
     }
     graphics {

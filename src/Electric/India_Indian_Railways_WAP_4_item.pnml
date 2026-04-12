@@ -3,7 +3,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A. Data from: nan
+// Template: TPL_01A.
+// Data from: https://en.wikipedia.org/wiki/Indian_locomotive_class_WAP-4
 
 item(FEAT_TRAINS, item_electric_india_indian_railways_wap_4) {
     property {
@@ -20,7 +21,7 @@ item(FEAT_TRAINS, item_electric_india_indian_railways_wap_4) {
         power: 5350 hp;
         cargo_capacity: 0;
         weight: 113 ton;
-        tractive_effort_coefficient: 0.28;
+        tractive_effort_coefficient: 0.272;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -40,7 +41,7 @@ item(FEAT_TRAINS, item_electric_india_indian_railways_wap_4) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/IN"];
+	badges: ["power/electric", "flag/IN"];
 
     }
     graphics {

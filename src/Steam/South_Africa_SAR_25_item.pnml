@@ -3,7 +3,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03A. Data from: https://en.wikipedia.org/wiki/South_African_Class_25_4-8-4
+// Template: TPL_03A.
+// Data from: https://en.wikipedia.org/wiki/South_African_Class_25_4-8-4
 
 item(FEAT_TRAINS, item_steam_south_africa_sar_25) {
     property {
@@ -40,7 +41,7 @@ item(FEAT_TRAINS, item_steam_south_africa_sar_25) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/steam", "flag/ZA"];
+	badges: ["power/steam", "flag/ZA"];
 
     }
     graphics {

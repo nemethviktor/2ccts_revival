@@ -3,7 +3,12 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A. Data from: https://en.wikipedia.org/wiki/Renfe_Class_319_(later_versions)
+// Template: TPL_01A.
+// Data from: https://en.wikipedia.org/wiki/Renfe_Class_319_(later_versions)
+
+// Notes:
+//// TE_STARTING_KN: 302 -- Gemini -- wikipedia only has cont. TE, not starting TE
+
 
 item(FEAT_TRAINS, item_diesel_argentina_sofse_3193) {
     property {
@@ -40,7 +45,7 @@ item(FEAT_TRAINS, item_diesel_argentina_sofse_3193) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/diesel", "flag/AR"];
+	badges: ["power/diesel", "flag/AR"];
 
     }
     graphics {

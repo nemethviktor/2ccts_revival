@@ -3,21 +3,22 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A. Data from: nan
+// Template: TPL_02A.
+// Data from: https://de.wikipedia.org/wiki/%C3%96BB_4030
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_emu_austria_obb_4030_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 54/2; \
-        bitmask(CC_ARMOURED): 54/4; \
-        54; \
+        bitmask(CC_MAIL): 72/2; \
+        bitmask(CC_ARMOURED): 72/4; \
+        72; \
     }
 
 
     switch(FEAT_TRAINS, SELF, switch_emu_austria_obb_4030_capacity_wagon, cargo_classes) { \
-        bitmask(CC_MAIL): 54/2; \
-        bitmask(CC_ARMOURED): 54/4; \
-        54; \
+        bitmask(CC_MAIL): 72/2; \
+        bitmask(CC_ARMOURED): 72/4; \
+        72; \
     }
 
 item(FEAT_TRAINS, item_emu_austria_obb_4030) {
@@ -29,13 +30,13 @@ item(FEAT_TRAINS, item_emu_austria_obb_4030) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 46.29275;
-        running_cost_factor: 41.02844;
-        speed: 130 km/h;
-        power: 1340 hp;
-        cargo_capacity: 54;
-        weight: 48 ton;
-        tractive_effort_coefficient: 0.27;
+        cost_factor: 46.15454;
+        running_cost_factor: 41.34147;
+        speed: 100 km/h;
+        power: 1341 hp;
+        cargo_capacity: 72;
+        weight: 44 ton;
+        tractive_effort_coefficient: 0.115;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -55,7 +56,7 @@ item(FEAT_TRAINS, item_emu_austria_obb_4030) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/AT"];
+	badges: ["power/electric", "flag/AT"];
 
     }
     graphics {
@@ -72,19 +73,19 @@ badges: ["power/electric", "flag/AT"];
     }
     livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: int(130/10);
-        weight: int(48*1/2);
-        cargo_capacity: 54;
+        running_cost_factor: int(100/10);
+        weight: int(44*1/2);
+        cargo_capacity: 72;
         length: 7;
         default: switch_emu_austria_obb_4030_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(29.620601105501894));
-        power: int(1340*1/2);
-        weight: int(48*3/4);
-        cargo_capacity: 54;
-        tractive_effort_coefficient: int(0.27*10*48);
+        running_cost_factor: (round(18.72196674583372));
+        power: int(1341*1/2);
+        weight: int(44*3/4);
+        cargo_capacity: 72;
+        tractive_effort_coefficient: int(0.115*10*44);
         length: 7;
         default: switch_emu_austria_obb_4030_cargo_selection;
     }

@@ -3,21 +3,28 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A. Data from: nan
+// Template: TPL_02A.
+// Data from: https://en.wikipedia.org/wiki/VR_Class_Sm2
+
+// Notes:
+//// WEIGHT: =(46.5+76)/2 -- Technically it's 1 MU + 1 DT and this is their combined avg
+//// POWER: 818 -- Wiki says 208, railfaneurope says 818…go figure.
+//// TE_STARTING_KN: =85/2 -- //www.railfaneurope.net/list/finland_vr.html
+
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_emu_finland_vr_sm2_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 70/2; \
-        bitmask(CC_ARMOURED): 70/4; \
-        70; \
+        bitmask(CC_MAIL): 100/2; \
+        bitmask(CC_ARMOURED): 100/4; \
+        100; \
     }
 
 
     switch(FEAT_TRAINS, SELF, switch_emu_finland_vr_sm2_capacity_wagon, cargo_classes) { \
-        bitmask(CC_MAIL): 70/2; \
-        bitmask(CC_ARMOURED): 70/4; \
-        70; \
+        bitmask(CC_MAIL): 100/2; \
+        bitmask(CC_ARMOURED): 100/4; \
+        100; \
     }
 
 item(FEAT_TRAINS, item_emu_finland_vr_sm2) {
@@ -29,13 +36,13 @@ item(FEAT_TRAINS, item_emu_finland_vr_sm2) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 37.86041;
-        running_cost_factor: 33.61266;
+        cost_factor: 40.51992;
+        running_cost_factor: 33.94716;
         speed: 120 km/h;
-        power: 831 hp;
-        cargo_capacity: 70;
-        weight: 38 ton;
-        tractive_effort_coefficient: 0.22;
+        power: 818 hp;
+        cargo_capacity: 100;
+        weight: 61 ton;
+        tractive_effort_coefficient: 0.071;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -55,7 +62,7 @@ item(FEAT_TRAINS, item_emu_finland_vr_sm2) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/FI"];
+	badges: ["power/electric", "flag/FI"];
 
     }
     graphics {
@@ -73,18 +80,18 @@ badges: ["power/electric", "flag/FI"];
     livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: int(120/10);
-        weight: int(38*1/2);
-        cargo_capacity: 70;
+        weight: int(61*1/2);
+        cargo_capacity: 100;
         length: 8;
         default: switch_emu_finland_vr_sm2_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(23.242717176687));
-        power: int(831*1/2);
-        weight: int(38*3/4);
-        cargo_capacity: 70;
-        tractive_effort_coefficient: int(0.22*10*38);
+        running_cost_factor: (round(19.208831292565826));
+        power: int(818*1/2);
+        weight: int(61*3/4);
+        cargo_capacity: 100;
+        tractive_effort_coefficient: int(0.071*10*61);
         length: 8;
         default: switch_emu_finland_vr_sm2_cargo_selection;
     }

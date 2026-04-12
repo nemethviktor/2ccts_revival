@@ -3,7 +3,13 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A. Data from: https://en.wikipedia.org/wiki/DSB_Class_MF
+// Template: TPL_02A.
+// Data from: https://en.wikipedia.org/wiki/DSB_Class_MF
+
+// Notes:
+//// WEB: https://en.wikipedia.org/wiki/DSB_Class_MF -- same as DMF
+//// TE_COEFFICIENT_MANUAL: 0.25 -- No data found but .63 is way too high
+
 
 // Cargo capacity
 
@@ -55,7 +61,7 @@ item(FEAT_TRAINS, item_dmu_israel_israel_railways_ic3) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/diesel", "flag/IL"];
+	badges: ["power/diesel", "flag/IL"];
 
     }
     graphics {

@@ -3,7 +3,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A. Data from: https://en.wikipedia.org/wiki/Indian_locomotive_class_WCM-1
+// Template: TPL_01A.
+// Data from: https://en.wikipedia.org/wiki/Indian_locomotive_class_WCM-1
 
 item(FEAT_TRAINS, item_electric_india_indian_railways_wcm_1) {
     property {
@@ -40,7 +41,7 @@ item(FEAT_TRAINS, item_electric_india_indian_railways_wcm_1) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/IN"];
+	badges: ["power/electric", "flag/IN"];
 
     }
     graphics {

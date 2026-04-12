@@ -3,7 +3,12 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A. Data from: nan
+// Template: TPL_02A.
+// Data from: https://fr.wikipedia.org/wiki/CFL_s%C3%A9rie_2200
+
+// Notes:
+//// TE_STARTING_KN: =240/2 -- 240 total
+
 
 // Cargo capacity
 
@@ -29,13 +34,13 @@ item(FEAT_TRAINS, item_emu_luxembourg_cfl_2200_coradia_duplex) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 44.00813;
-        running_cost_factor: 38.19681;
+        cost_factor: 71.03093;
+        running_cost_factor: 64.11961;
         speed: 160 km/h;
-        power: 1050 hp;
+        power: 3410 hp;
         cargo_capacity: 111;
-        weight: 53 ton;
-        tractive_effort_coefficient: 0.26;
+        weight: 64 ton;
+        tractive_effort_coefficient: 0.191;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -44,7 +49,7 @@ item(FEAT_TRAINS, item_emu_luxembourg_cfl_2200_coradia_duplex) {
         misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
         refit_cost: 0;
         ai_special_flag: AI_FLAG_PASSENGER;
-        track_type: [STANDARD_GAUGE_RAILTYPE_25KV];
+        track_type: [STANDARD_GAUGE_RAILTYPE_OHLE];
         running_cost_base: RUNNING_COST_ELECTRIC;
         engine_class: ENGINE_CLASS_ELECTRIC;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
@@ -55,7 +60,7 @@ item(FEAT_TRAINS, item_emu_luxembourg_cfl_2200_coradia_duplex) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/LU"];
+	badges: ["power/electric", "flag/LU"];
 
     }
     graphics {
@@ -73,18 +78,18 @@ badges: ["power/electric", "flag/LU"];
     livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: int(160/10);
-        weight: int(53*1/2);
+        weight: int(64*1/2);
         cargo_capacity: 111;
         length: 8;
         default: switch_emu_luxembourg_cfl_2200_coradia_duplex_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(33.02037179323673));
-        power: int(1050*1/2);
-        weight: int(53*3/4);
+        running_cost_factor: (round(34.06355150603149));
+        power: int(3410*1/2);
+        weight: int(64*3/4);
         cargo_capacity: 111;
-        tractive_effort_coefficient: int(0.26*10*53);
+        tractive_effort_coefficient: int(0.191*10*64);
         length: 8;
         default: switch_emu_luxembourg_cfl_2200_coradia_duplex_cargo_selection;
     }

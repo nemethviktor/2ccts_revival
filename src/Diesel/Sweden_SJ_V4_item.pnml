@@ -3,7 +3,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A. Data from: https://trainspo.com/model/1896/
+// Template: TPL_01A.
+// Data from: https://trainspo.com/model/1896/
 
 item(FEAT_TRAINS, item_diesel_sweden_sj_v4) {
     property {
@@ -40,7 +41,7 @@ item(FEAT_TRAINS, item_diesel_sweden_sj_v4) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/diesel", "flag/SE"];
+	badges: ["power/diesel", "flag/SE"];
 
     }
     graphics {

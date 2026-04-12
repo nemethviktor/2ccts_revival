@@ -3,7 +3,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01B. Data from: https://cs.wikipedia.org/wiki/Motorov%C3%BD_v%C5%AFz_M_120.4
+// Template: TPL_01B.
+// Data from: https://cs.wikipedia.org/wiki/Motorov%C3%BD_v%C5%AFz_M_120.4
 
 // Cargo capacity
 
@@ -55,7 +56,7 @@ item(FEAT_TRAINS, item_rbd_czech_republic_cd_m120) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/diesel", "flag/CZ"];
+	badges: ["power/diesel", "flag/CZ"];
 
     }
     graphics {

@@ -3,7 +3,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A. Data from: nan
+// Template: TPL_02A.
+// Data from: https://fr.wikipedia.org/wiki/ONCF_ZMC
 
 // Cargo capacity
 
@@ -29,13 +30,13 @@ item(FEAT_TRAINS, item_emu_morocco_oncf_zmc) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 54.17374;
-        running_cost_factor: 48.86242;
+        cost_factor: 54.07174;
+        running_cost_factor: 48.76042;
         speed: 160 km/h;
         power: 1900 hp;
         cargo_capacity: 90;
         weight: 48 ton;
-        tractive_effort_coefficient: 0.21;
+        tractive_effort_coefficient: 0.108;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -55,7 +56,7 @@ item(FEAT_TRAINS, item_emu_morocco_oncf_zmc) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/MA"];
+	badges: ["power/electric", "flag/MA"];
 
     }
     graphics {
@@ -80,11 +81,11 @@ badges: ["power/electric", "flag/MA"];
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(30.43889900098415));
+        running_cost_factor: (round(25.542899000984153));
         power: int(1900*1/2);
         weight: int(48*3/4);
         cargo_capacity: 90;
-        tractive_effort_coefficient: int(0.21*10*48);
+        tractive_effort_coefficient: int(0.108*10*48);
         length: 8;
         default: switch_emu_morocco_oncf_zmc_cargo_selection;
     }

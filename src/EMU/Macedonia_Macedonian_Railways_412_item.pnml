@@ -3,7 +3,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A. Data from: nan
+// Template: TPL_02A.
+// Data from: https://en.wikipedia.org/wiki/%C5%BDS_series_412
 
 // Cargo capacity
 
@@ -29,12 +30,12 @@ item(FEAT_TRAINS, item_emu_macedonia_macedonian_railways_412) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 29.56601;
+        cost_factor: 29.06601;
         running_cost_factor: 23.11825;
         speed: 120 km/h;
         power: 340 hp;
         cargo_capacity: 68;
-        weight: 60 ton;
+        weight: 55 ton;
         tractive_effort_coefficient: 0.15;
         air_drag_coefficient: 0;
 
@@ -55,7 +56,7 @@ item(FEAT_TRAINS, item_emu_macedonia_macedonian_railways_412) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/MK"];
+	badges: ["power/electric", "flag/MK"];
 
     }
     graphics {
@@ -73,18 +74,18 @@ badges: ["power/electric", "flag/MK"];
     livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: int(120/10);
-        weight: int(60*1/2);
+        weight: int(55*1/2);
         cargo_capacity: 68;
         length: 8;
         default: switch_emu_macedonia_macedonian_railways_412_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(22.845319805399026));
+        running_cost_factor: (round(22.095319805399026));
         power: int(340*1/2);
-        weight: int(60*3/4);
+        weight: int(55*3/4);
         cargo_capacity: 68;
-        tractive_effort_coefficient: int(0.15*10*60);
+        tractive_effort_coefficient: int(0.15*10*55);
         length: 8;
         default: switch_emu_macedonia_macedonian_railways_412_cargo_selection;
     }

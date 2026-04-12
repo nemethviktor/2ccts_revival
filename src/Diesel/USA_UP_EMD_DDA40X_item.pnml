@@ -3,7 +3,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_16A. Data from: https://en.wikipedia.org/wiki/EMD_DDA40X
+// Template: TPL_16A.
+// Data from: https://en.wikipedia.org/wiki/EMD_DDA40X
 
 item(FEAT_TRAINS, item_diesel_usa_up_emd_dda40x) {
     property {
@@ -40,7 +41,7 @@ item(FEAT_TRAINS, item_diesel_usa_up_emd_dda40x) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/diesel", "flag/US"];
+	badges: ["power/diesel", "flag/US"];
 
     }
     graphics {

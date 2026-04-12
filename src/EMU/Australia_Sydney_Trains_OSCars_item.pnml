@@ -3,7 +3,12 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A. Data from: nan
+// Template: TPL_02A.
+// Data from: https://en.wikipedia.org/wiki/New_South_Wales_H_set
+
+// Notes:
+//// TE_STARTING_KN: 110 -- 110 ea
+
 
 // Cargo capacity
 
@@ -29,13 +34,13 @@ item(FEAT_TRAINS, item_emu_australia_sydney_trains_oscars) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 42.10944;
-        running_cost_factor: 36.94513;
+        cost_factor: 58.37769;
+        running_cost_factor: 52.21337;
         speed: 130 km/h;
-        power: 950 hp;
+        power: 2144 hp;
         cargo_capacity: 120;
-        weight: 47 ton;
-        tractive_effort_coefficient: 0.41;
+        weight: 57 ton;
+        tractive_effort_coefficient: 0.197;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -55,7 +60,7 @@ item(FEAT_TRAINS, item_emu_australia_sydney_trains_oscars) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/AU"];
+	badges: ["power/electric", "flag/AU"];
 
     }
     graphics {
@@ -73,18 +78,18 @@ badges: ["power/electric", "flag/AU"];
     livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: int(130/10);
-        weight: int(47*1/2);
+        weight: int(57*1/2);
         cargo_capacity: 120;
         length: 8;
         default: switch_emu_australia_sydney_trains_oscars_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(35.352210536011384));
-        power: int(950*1/2);
-        weight: int(47*3/4);
+        running_cost_factor: (round(28.85933512149756));
+        power: int(2144*1/2);
+        weight: int(57*3/4);
         cargo_capacity: 120;
-        tractive_effort_coefficient: int(0.41*10*47);
+        tractive_effort_coefficient: int(0.197*10*57);
         length: 8;
         default: switch_emu_australia_sydney_trains_oscars_cargo_selection;
     }

@@ -3,7 +3,12 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01B. Data from: nan
+// Template: TPL_01B.
+// Data from: https://en.wikipedia.org/wiki/VR_Class_Dm7
+
+// Notes:
+//// TE_STARTING_KN: 29 -- Gemini
+
 
 // Cargo capacity
 
@@ -35,7 +40,7 @@ item(FEAT_TRAINS, item_rbd_finland_vr_dm7) {
         power: 180 hp;
         cargo_capacity: 64;
         weight: 18 ton;
-        tractive_effort_coefficient: 0.33;
+        tractive_effort_coefficient: 0.164;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -55,7 +60,7 @@ item(FEAT_TRAINS, item_rbd_finland_vr_dm7) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/diesel", "flag/FI"];
+	badges: ["power/diesel", "flag/FI"];
 
     }
     graphics {

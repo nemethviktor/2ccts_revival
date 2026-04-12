@@ -3,7 +3,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03A. Data from: https://fr.wikipedia.org/wiki/Type_7_SNCB
+// Template: TPL_03A.
+// Data from: https://fr.wikipedia.org/wiki/Type_7_SNCB
 
 item(FEAT_TRAINS, item_steam_belgium_nmbs_type_7) {
     property {
@@ -40,7 +41,7 @@ item(FEAT_TRAINS, item_steam_belgium_nmbs_type_7) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/steam", "flag/BE"];
+	badges: ["power/steam", "flag/BE"];
 
     }
     graphics {

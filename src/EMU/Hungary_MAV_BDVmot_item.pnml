@@ -3,21 +3,22 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A. Data from: nan
+// Template: TPL_02A.
+// Data from: https://hu.wikipedia.org/wiki/BDVmot
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_emu_hungary_mav_bdvmot_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 75/2; \
-        bitmask(CC_ARMOURED): 75/4; \
-        75; \
+        bitmask(CC_MAIL): 86/2; \
+        bitmask(CC_ARMOURED): 86/4; \
+        86; \
     }
 
 
     switch(FEAT_TRAINS, SELF, switch_emu_hungary_mav_bdvmot_capacity_wagon, cargo_classes) { \
-        bitmask(CC_MAIL): 75/2; \
-        bitmask(CC_ARMOURED): 75/4; \
-        75; \
+        bitmask(CC_MAIL): 86/2; \
+        bitmask(CC_ARMOURED): 86/4; \
+        86; \
     }
 
 item(FEAT_TRAINS, item_emu_hungary_mav_bdvmot) {
@@ -29,11 +30,11 @@ item(FEAT_TRAINS, item_emu_hungary_mav_bdvmot) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 57.01378;
-        running_cost_factor: 49.96602;
+        cost_factor: 57.27822;
+        running_cost_factor: 50.23047;
         speed: 120 km/h;
         power: 2040 hp;
-        cargo_capacity: 75;
+        cargo_capacity: 86;
         weight: 66 ton;
         tractive_effort_coefficient: 0.11;
         air_drag_coefficient: 0;
@@ -55,7 +56,7 @@ item(FEAT_TRAINS, item_emu_hungary_mav_bdvmot) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/HU"];
+	badges: ["power/electric", "flag/HU"];
 
     }
     graphics {
@@ -74,7 +75,7 @@ badges: ["power/electric", "flag/HU"];
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: int(120/10);
         weight: int(66*1/2);
-        cargo_capacity: 75;
+        cargo_capacity: 86;
         length: 8;
         default: switch_emu_hungary_mav_bdvmot_cargo_selection;
     }
@@ -83,7 +84,7 @@ badges: ["power/electric", "flag/HU"];
         running_cost_factor: (round(23.776636099846428));
         power: int(2040*1/2);
         weight: int(66*3/4);
-        cargo_capacity: 75;
+        cargo_capacity: 86;
         tractive_effort_coefficient: int(0.11*10*66);
         length: 8;
         default: switch_emu_hungary_mav_bdvmot_cargo_selection;

@@ -3,21 +3,22 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02D. Data from: nan
+// Template: TPL_02D.
+// Data from: https://ja.wikipedia.org/wiki/%E5%B0%8F%E7%94%B0%E6%80%A53100%E5%BD%A2%E9%9B%BB%E8%BB%8A#%E7%B7%A8%E6%88%90%E8%A1%A8
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_emu_japan_odakyu_3100_series_romance_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 40/2; \
-        bitmask(CC_ARMOURED): 40/4; \
-        40; \
+        bitmask(CC_MAIL): 48/2; \
+        bitmask(CC_ARMOURED): 48/4; \
+        48; \
     }
 
 
     switch(FEAT_TRAINS, SELF, switch_emu_japan_odakyu_3100_series_romance_capacity_wagon, cargo_classes) { \
-        bitmask(CC_MAIL): 40/2; \
-        bitmask(CC_ARMOURED): 40/4; \
-        40; \
+        bitmask(CC_MAIL): 42/2; \
+        bitmask(CC_ARMOURED): 42/4; \
+        42; \
     }
 
 item(FEAT_TRAINS, item_emu_japan_odakyu_3100_series_romance) {
@@ -29,13 +30,13 @@ item(FEAT_TRAINS, item_emu_japan_odakyu_3100_series_romance) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 24.36607;
-        running_cost_factor: 19.23538;
+        cost_factor: 40.11632;
+        running_cost_factor: 36.84563;
         speed: 110 km/h;
-        power: 230 hp;
-        cargo_capacity: 40;
-        weight: 47 ton;
-        tractive_effort_coefficient: 0.27;
+        power: 1072 hp;
+        cargo_capacity: 48;
+        weight: 28 ton;
+        tractive_effort_coefficient: 0.126;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -55,7 +56,7 @@ item(FEAT_TRAINS, item_emu_japan_odakyu_3100_series_romance) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/JP"];
+	badges: ["power/electric", "flag/JP"];
 
     }
     graphics {
@@ -73,20 +74,20 @@ badges: ["power/electric", "flag/JP"];
     livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: int(110/10);
-        weight: int(47*1/2);
+        weight: int(28*1/2);
         visual_effect_and_powered: switch_emu_japan_odakyu_3100_series_romance_visual_effect_and_powered_position;
-        cargo_capacity: 40;
+        cargo_capacity: 42;
         length: 8;
         default: switch_emu_japan_odakyu_3100_series_romance_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(25.211865532264927));
-        power: int(230*1/2);
-        weight: int(47*3/4);
+        running_cost_factor: (round(17.852542287544413));
+        power: int(1072*1/2);
+        weight: int(28*3/4);
         visual_effect_and_powered: switch_emu_japan_odakyu_3100_series_romance_visual_effect_and_powered_position;
-        cargo_capacity: 40;
-        tractive_effort_coefficient: int(0.27*10*47);
+        cargo_capacity: 42;
+        tractive_effort_coefficient: int(0.126*10*28);
         length: 8;
         default: switch_emu_japan_odakyu_3100_series_romance_cargo_selection;
     }

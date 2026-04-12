@@ -3,21 +3,22 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A. Data from: nan
+// Template: TPL_02A.
+// Data from: https://pl.wikipedia.org/wiki/EW90
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_emu_poland_pkp_ew90_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 65/2; \
-        bitmask(CC_ARMOURED): 65/4; \
-        65; \
+        bitmask(CC_MAIL): 59/2; \
+        bitmask(CC_ARMOURED): 59/4; \
+        59; \
     }
 
 
     switch(FEAT_TRAINS, SELF, switch_emu_poland_pkp_ew90_capacity_wagon, cargo_classes) { \
-        bitmask(CC_MAIL): 65/2; \
-        bitmask(CC_ARMOURED): 65/4; \
-        65; \
+        bitmask(CC_MAIL): 59/2; \
+        bitmask(CC_ARMOURED): 59/4; \
+        59; \
     }
 
 item(FEAT_TRAINS, item_emu_poland_pkp_ew90) {
@@ -29,13 +30,13 @@ item(FEAT_TRAINS, item_emu_poland_pkp_ew90) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 29.03517;
-        running_cost_factor: 24.85923;
+        cost_factor: 28.87587;
+        running_cost_factor: 24.69992;
         speed: 80 km/h;
         power: 413 hp;
-        cargo_capacity: 65;
+        cargo_capacity: 59;
         weight: 38 ton;
-        tractive_effort_coefficient: 0.11;
+        tractive_effort_coefficient: 0.107;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -55,7 +56,7 @@ item(FEAT_TRAINS, item_emu_poland_pkp_ew90) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/PL"];
+	badges: ["power/electric", "flag/PL"];
 
     }
     graphics {
@@ -74,17 +75,17 @@ badges: ["power/electric", "flag/PL"];
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: int(80/10);
         weight: int(38*1/2);
-        cargo_capacity: 65;
+        cargo_capacity: 59;
         length: 8;
         default: switch_emu_poland_pkp_ew90_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(14.212862583900232));
+        running_cost_factor: (round(14.098862583900232));
         power: int(413*1/2);
         weight: int(38*3/4);
-        cargo_capacity: 65;
-        tractive_effort_coefficient: int(0.11*10*38);
+        cargo_capacity: 59;
+        tractive_effort_coefficient: int(0.107*10*38);
         length: 8;
         default: switch_emu_poland_pkp_ew90_cargo_selection;
     }

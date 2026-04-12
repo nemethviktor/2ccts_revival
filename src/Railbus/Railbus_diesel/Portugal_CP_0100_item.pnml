@@ -3,7 +3,12 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01B. Data from: https://en.wikipedia.org/wiki/CP_Class_0100
+// Template: TPL_01B.
+// Data from: https://en.wikipedia.org/wiki/CP_Class_0100
+
+// Notes:
+//// POWER: 350 -- The EN/ES/PT wiki all give differing values but at 1948 that'd be a refurb'd value at 350hp
+
 
 // Cargo capacity
 
@@ -55,7 +60,7 @@ item(FEAT_TRAINS, item_rbd_portugal_cp_0100) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/diesel", "flag/PT"];
+	badges: ["power/diesel", "flag/PT"];
 
     }
     graphics {

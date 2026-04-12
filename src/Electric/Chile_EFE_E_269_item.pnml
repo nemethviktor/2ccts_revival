@@ -3,7 +3,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A. Data from: https://en.wikipedia.org/wiki/Renfe_Class_269
+// Template: TPL_01A.
+// Data from: https://en.wikipedia.org/wiki/Renfe_Class_269
 
 item(FEAT_TRAINS, item_electric_chile_efe_e_269) {
     property {
@@ -40,7 +41,7 @@ item(FEAT_TRAINS, item_electric_chile_efe_e_269) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/CL"];
+	badges: ["power/electric", "flag/CL"];
 
     }
     graphics {

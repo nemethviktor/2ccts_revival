@@ -3,7 +3,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02D. Data from: nan
+// Template: TPL_02D.
+// Data from: https://da.wikipedia.org/wiki/S-tog_(2._generation)
 
 // Cargo capacity
 
@@ -15,9 +16,9 @@
 
 
     switch(FEAT_TRAINS, SELF, switch_emu_denmark_dsb_s_tog_ii_capacity_wagon, cargo_classes) { \
-        bitmask(CC_MAIL): 42/2; \
-        bitmask(CC_ARMOURED): 42/4; \
-        42; \
+        bitmask(CC_MAIL): 56/2; \
+        bitmask(CC_ARMOURED): 56/4; \
+        56; \
     }
 
 item(FEAT_TRAINS, item_emu_denmark_dsb_s_tog_ii) {
@@ -29,13 +30,13 @@ item(FEAT_TRAINS, item_emu_denmark_dsb_s_tog_ii) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 23.46673;
-        running_cost_factor: 18.55366;
+        cost_factor: 28.98489;
+        running_cost_factor: 24.27181;
         speed: 100 km/h;
-        power: 200 hp;
+        power: 400 hp;
         cargo_capacity: 56;
-        weight: 45 ton;
-        tractive_effort_coefficient: 0.14;
+        weight: 43 ton;
+        tractive_effort_coefficient: 0.071;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -55,7 +56,7 @@ item(FEAT_TRAINS, item_emu_denmark_dsb_s_tog_ii) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/DK"];
+	badges: ["power/electric", "flag/DK"];
 
     }
     graphics {
@@ -73,20 +74,20 @@ badges: ["power/electric", "flag/DK"];
     livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: int(100/10);
-        weight: int(45*1/2);
+        weight: int(43*1/2);
         visual_effect_and_powered: switch_emu_denmark_dsb_s_tog_ii_visual_effect_and_powered_position;
-        cargo_capacity: 42;
+        cargo_capacity: 56;
         length: 8;
         default: switch_emu_denmark_dsb_s_tog_ii_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(17.72200311106765));
-        power: int(200*1/2);
-        weight: int(45*3/4);
+        running_cost_factor: (round(15.053718154932408));
+        power: int(400*1/2);
+        weight: int(43*3/4);
         visual_effect_and_powered: switch_emu_denmark_dsb_s_tog_ii_visual_effect_and_powered_position;
-        cargo_capacity: 42;
-        tractive_effort_coefficient: int(0.14*10*45);
+        cargo_capacity: 56;
+        tractive_effort_coefficient: int(0.071*10*43);
         length: 8;
         default: switch_emu_denmark_dsb_s_tog_ii_cargo_selection;
     }

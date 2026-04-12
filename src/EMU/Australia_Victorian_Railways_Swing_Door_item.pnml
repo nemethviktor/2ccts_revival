@@ -3,7 +3,12 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A. Data from: nan
+// Template: TPL_02A.
+// Data from: https://en.wikipedia.org/wiki/Swing_Door_(train)
+
+// Notes:
+//// INTRODUCTION_YEAR: 1917 -- Legacy data had this as 1917, I'll leave it so but wiki says 1887
+
 
 // Cargo capacity
 
@@ -15,9 +20,9 @@
 
 
     switch(FEAT_TRAINS, SELF, switch_emu_australia_victorian_railways_swing_door_capacity_wagon, cargo_classes) { \
-        bitmask(CC_MAIL): 48/2; \
-        bitmask(CC_ARMOURED): 48/4; \
-        48; \
+        bitmask(CC_MAIL): 75/2; \
+        bitmask(CC_ARMOURED): 75/4; \
+        75; \
     }
 
 item(FEAT_TRAINS, item_emu_australia_victorian_railways_swing_door) {
@@ -29,13 +34,13 @@ item(FEAT_TRAINS, item_emu_australia_victorian_railways_swing_door) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 26.7694;
-        running_cost_factor: 20.8877;
+        cost_factor: 32.89555;
+        running_cost_factor: 27.81386;
         speed: 83 km/h;
-        power: 280 hp;
+        power: 563 hp;
         cargo_capacity: 48;
-        weight: 55 ton;
-        tractive_effort_coefficient: 0.16;
+        weight: 47 ton;
+        tractive_effort_coefficient: 0.119;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -44,7 +49,7 @@ item(FEAT_TRAINS, item_emu_australia_victorian_railways_swing_door) {
         misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
         refit_cost: 0;
         ai_special_flag: AI_FLAG_PASSENGER;
-        track_type: [NARROW_GAUGE_RAILTYPE_1500V];
+        track_type: [BROAD_GAUGE_RAILTYPE_1500V];
         running_cost_base: RUNNING_COST_ELECTRIC;
         engine_class: ENGINE_CLASS_ELECTRIC;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
@@ -55,7 +60,7 @@ item(FEAT_TRAINS, item_emu_australia_victorian_railways_swing_door) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/AU"];
+	badges: ["power/electric", "flag/AU"];
 
     }
     graphics {
@@ -73,18 +78,18 @@ badges: ["power/electric", "flag/AU"];
     livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: int(83/10);
-        weight: int(55*1/2);
-        cargo_capacity: 48;
+        weight: int(47*1/2);
+        cargo_capacity: 75;
         length: 8;
         default: switch_emu_australia_victorian_railways_swing_door_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(18.77617504086857));
-        power: int(280*1/2);
-        weight: int(55*3/4);
-        cargo_capacity: 48;
-        tractive_effort_coefficient: int(0.16*10*55);
+        running_cost_factor: (round(16.26589037337113));
+        power: int(563*1/2);
+        weight: int(47*3/4);
+        cargo_capacity: 75;
+        tractive_effort_coefficient: int(0.119*10*47);
         length: 8;
         default: switch_emu_australia_victorian_railways_swing_door_cargo_selection;
     }

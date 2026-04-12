@@ -3,7 +3,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A. Data from: https://en.wikipedia.org/wiki/Belgian_Railways_Class_13
+// Template: TPL_01A.
+// Data from: https://en.wikipedia.org/wiki/Belgian_Railways_Class_13
 
 item(FEAT_TRAINS, item_electric_belgium_nmbs_sncb_13_hle) {
     property {
@@ -40,7 +41,7 @@ item(FEAT_TRAINS, item_electric_belgium_nmbs_sncb_13_hle) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/BE"];
+	badges: ["power/electric", "flag/BE"];
 
     }
     graphics {

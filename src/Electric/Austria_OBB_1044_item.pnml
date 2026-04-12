@@ -3,7 +3,12 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A. Data from: https://en.wikipedia.org/wiki/%C3%96BB_Class_1044
+// Template: TPL_01A.
+// Data from: https://en.wikipedia.org/wiki/%C3%96BB_Class_1044
+
+// Notes:
+//// TE_STARTING_KN: 341 -- DE wikipedia
+
 
 item(FEAT_TRAINS, item_electric_austria_obb_1044) {
     property {
@@ -40,7 +45,7 @@ item(FEAT_TRAINS, item_electric_austria_obb_1044) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/AT"];
+	badges: ["power/electric", "flag/AT"];
 
     }
     graphics {

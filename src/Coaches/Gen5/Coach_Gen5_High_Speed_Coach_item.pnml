@@ -3,7 +3,12 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_04A. Data from: nan
+// Template: TPL_04A.
+// Data from: nan
+
+// Notes:
+//// HEAD_CAPACITY: 80 -- Gemini - Modern ergonomic "Open Plan" (2+2 or 2+1).
+
 
 item(FEAT_TRAINS, item_mu_coach_gen5_high_speed_coach) {
     property {
@@ -14,12 +19,12 @@ item(FEAT_TRAINS, item_mu_coach_gen5_high_speed_coach) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 37.73047;
-        running_cost_factor: 35.07609;
-        speed: 230 km/h;
+        cost_factor: 42.99631;
+        running_cost_factor: 40.07926;
+        speed: 250 km/h;
         power: 0 hp;
-        cargo_capacity: 70;
-        weight: 47 ton;
+        cargo_capacity: 80;
+        weight: 52 ton;
         tractive_effort_coefficient: 0.3;
         air_drag_coefficient: 0;
 
@@ -40,7 +45,7 @@ item(FEAT_TRAINS, item_mu_coach_gen5_high_speed_coach) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/diesel"];
+	badges: ["power/diesel"];
 
     }
     graphics {

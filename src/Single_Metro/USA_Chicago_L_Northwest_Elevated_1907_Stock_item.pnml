@@ -3,7 +3,12 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01E. Data from: nan
+// Template: TPL_01E.
+// Data from: https://www.chicago-l.org/trains/roster/woods.html
+
+// Notes:
+//// TE_STARTING_KN: 38 -- Gemini
+
 
 // Cargo capacity
 
@@ -29,13 +34,13 @@ item(FEAT_TRAINS, item_singlemtro_usa_chicago_l_northwest_elevated_1907_stock) {
         vehicle_life: 60;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 27.10185;
+        cost_factor: 25.25185;
         running_cost_factor: 21.74557;
         speed: 70 km/h;
         power: 250 hp;
         cargo_capacity: 130;
-        weight: 50 ton;
-        tractive_effort_coefficient: 0.1;
+        weight: 31 ton;
+        tractive_effort_coefficient: 0.123;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -55,7 +60,7 @@ item(FEAT_TRAINS, item_singlemtro_usa_chicago_l_northwest_elevated_1907_stock) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/metro", "flag/US"];
+	badges: ["power/metro", "flag/US"];
 
     }
     graphics {

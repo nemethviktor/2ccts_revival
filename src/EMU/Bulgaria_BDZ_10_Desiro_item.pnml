@@ -3,21 +3,26 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A. Data from: nan
+// Template: TPL_02A.
+// Data from: https://en.wikipedia.org/wiki/Siemens_Desiro#Bulgaria
+
+// Notes:
+//// POWER: 1740 -- The _BUL_ version according to the HUN wikipedia.
+
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_emu_bulgaria_bdz_10_desiro_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 62/2; \
-        bitmask(CC_ARMOURED): 62/4; \
-        62; \
+        bitmask(CC_MAIL): 95/2; \
+        bitmask(CC_ARMOURED): 95/4; \
+        95; \
     }
 
 
     switch(FEAT_TRAINS, SELF, switch_emu_bulgaria_bdz_10_desiro_capacity_wagon, cargo_classes) { \
-        bitmask(CC_MAIL): 62/2; \
-        bitmask(CC_ARMOURED): 62/4; \
-        62; \
+        bitmask(CC_MAIL): 95/2; \
+        bitmask(CC_ARMOURED): 95/4; \
+        95; \
     }
 
 item(FEAT_TRAINS, item_emu_bulgaria_bdz_10_desiro) {
@@ -29,12 +34,12 @@ item(FEAT_TRAINS, item_emu_bulgaria_bdz_10_desiro) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 34.21308;
-        running_cost_factor: 28.03267;
-        speed: 140 km/h;
-        power: 550 hp;
-        cargo_capacity: 62;
-        weight: 57 ton;
+        cost_factor: 51.93351;
+        running_cost_factor: 47.08575;
+        speed: 120 km/h;
+        power: 1740 hp;
+        cargo_capacity: 95;
+        weight: 44 ton;
         tractive_effort_coefficient: 0.21;
         air_drag_coefficient: 0;
 
@@ -55,7 +60,7 @@ item(FEAT_TRAINS, item_emu_bulgaria_bdz_10_desiro) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/BG"];
+	badges: ["power/electric", "flag/BG"];
 
     }
     graphics {
@@ -72,19 +77,19 @@ badges: ["power/electric", "flag/BG"];
     }
     livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: int(140/10);
-        weight: int(57*1/2);
-        cargo_capacity: 62;
+        running_cost_factor: int(120/10);
+        weight: int(44*1/2);
+        cargo_capacity: 95;
         length: 8;
         default: switch_emu_bulgaria_bdz_10_desiro_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(28.31535426172489));
-        power: int(550*1/2);
-        weight: int(57*3/4);
-        cargo_capacity: 62;
-        tractive_effort_coefficient: int(0.21*10*57);
+        running_cost_factor: (round(25.411330730614885));
+        power: int(1740*1/2);
+        weight: int(44*3/4);
+        cargo_capacity: 95;
+        tractive_effort_coefficient: int(0.21*10*44);
         length: 8;
         default: switch_emu_bulgaria_bdz_10_desiro_cargo_selection;
     }

@@ -3,21 +3,27 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02D. Data from: nan
+// Template: TPL_02D.
+// Data from: https://no.wikipedia.org/wiki/Type_73_(motorvognsett)
+
+// Notes:
+//// POWER: =1166*2 -- 2 head cars
+//// TE_STARTING_KN: =117/2 -- Wikipedia
+
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_emu_norway_nsb_bm73_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 40/2; \
-        bitmask(CC_ARMOURED): 40/4; \
-        40; \
+        bitmask(CC_MAIL): 54/2; \
+        bitmask(CC_ARMOURED): 54/4; \
+        54; \
     }
 
 
     switch(FEAT_TRAINS, SELF, switch_emu_norway_nsb_bm73_capacity_wagon, cargo_classes) { \
-        bitmask(CC_MAIL): 40/2; \
-        bitmask(CC_ARMOURED): 40/4; \
-        40; \
+        bitmask(CC_MAIL): 54/2; \
+        bitmask(CC_ARMOURED): 54/4; \
+        54; \
     }
 
 item(FEAT_TRAINS, item_emu_norway_nsb_bm73) {
@@ -29,13 +35,13 @@ item(FEAT_TRAINS, item_emu_norway_nsb_bm73) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 45.11469;
-        running_cost_factor: 39.119;
-        speed: 220 km/h;
-        power: 1200 hp;
-        cargo_capacity: 40;
+        cost_factor: 58.56513;
+        running_cost_factor: 52.58274;
+        speed: 210 km/h;
+        power: 2332 hp;
+        cargo_capacity: 54;
         weight: 54 ton;
-        tractive_effort_coefficient: 0.69;
+        tractive_effort_coefficient: 0.11;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -55,7 +61,7 @@ item(FEAT_TRAINS, item_emu_norway_nsb_bm73) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/NO"];
+	badges: ["power/electric", "flag/NO"];
 
     }
     graphics {
@@ -72,21 +78,21 @@ badges: ["power/electric", "flag/NO"];
     }
     livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        running_cost_factor: int(220/10);
+        running_cost_factor: int(210/10);
         weight: int(54*1/2);
         visual_effect_and_powered: switch_emu_norway_nsb_bm73_visual_effect_and_powered_position;
-        cargo_capacity: 40;
+        cargo_capacity: 54;
         length: 8;
         default: switch_emu_norway_nsb_bm73_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        running_cost_factor: (round(62.72410194744431));
-        power: int(1200*1/2);
+        running_cost_factor: (round(31.76907954320171));
+        power: int(2332*1/2);
         weight: int(54*3/4);
         visual_effect_and_powered: switch_emu_norway_nsb_bm73_visual_effect_and_powered_position;
-        cargo_capacity: 40;
-        tractive_effort_coefficient: int(0.69*10*54);
+        cargo_capacity: 54;
+        tractive_effort_coefficient: int(0.11*10*54);
         length: 8;
         default: switch_emu_norway_nsb_bm73_cargo_selection;
     }

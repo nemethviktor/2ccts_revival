@@ -3,7 +3,12 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A. Data from: https://en.wikipedia.org/wiki/SNCF_BB_9003-9004
+// Template: TPL_01A.
+// Data from: https://en.wikipedia.org/wiki/SNCF_BB_9003-9004
+
+// Notes:
+//// TE_STARTING_KN: 235 -- Gemini -- no other info available
+
 
 item(FEAT_TRAINS, item_electric_france_sncf_bb_9004) {
     property {
@@ -40,7 +45,7 @@ item(FEAT_TRAINS, item_electric_france_sncf_bb_9004) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/FR"];
+	badges: ["power/electric", "flag/FR"];
 
     }
     graphics {

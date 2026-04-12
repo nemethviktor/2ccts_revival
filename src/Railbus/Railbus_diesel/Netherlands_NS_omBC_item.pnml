@@ -3,7 +3,12 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01B. Data from: https://nl.wikipedia.org/wiki/OmBC_(stroomlijnmotorrijtuig)
+// Template: TPL_01B.
+// Data from: https://nl.wikipedia.org/wiki/OmBC_(stroomlijnmotorrijtuig)
+
+// Notes:
+//// HEAD_CAPACITY: =15+56+8+8 -- across 2nd/3rd class seating and standing
+
 
 // Cargo capacity
 
@@ -55,7 +60,7 @@ item(FEAT_TRAINS, item_rbd_netherlands_ns_ombc) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/diesel", "flag/NL"];
+	badges: ["power/diesel", "flag/NL"];
 
     }
     graphics {

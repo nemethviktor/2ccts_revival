@@ -3,14 +3,19 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02D. Data from: nan
+// Template: TPL_02D.
+// Data from: https://en.wikipedia.org/wiki/Lastochka
+
+// Notes:
+//// TE_STARTING_KN: 90 -- 90 each
+
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_emu_russia_rzd_es1_lastochka_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 88/2; \
-        bitmask(CC_ARMOURED): 88/4; \
-        88; \
+        bitmask(CC_MAIL): 67/2; \
+        bitmask(CC_ARMOURED): 67/4; \
+        67; \
     }
 
 
@@ -29,13 +34,13 @@ item(FEAT_TRAINS, item_emu_russia_rzd_es1_lastochka) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 69.97803;
-        running_cost_factor: 63.86671;
+        cost_factor: 62.74244;
+        running_cost_factor: 56.63113;
         speed: 160 km/h;
-        power: 3400 hp;
-        cargo_capacity: 88;
+        power: 2700 hp;
+        cargo_capacity: 67;
         weight: 56 ton;
-        tractive_effort_coefficient: 0.54;
+        tractive_effort_coefficient: 0.164;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -55,7 +60,7 @@ item(FEAT_TRAINS, item_emu_russia_rzd_es1_lastochka) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/RU"];
+	badges: ["power/electric", "flag/RU"];
 
     }
     graphics {
@@ -81,12 +86,12 @@ badges: ["power/electric", "flag/RU"];
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(52.07098211812666));
-        power: int(3400*1/2);
+        running_cost_factor: (round(30.380156438726996));
+        power: int(2700*1/2);
         weight: int(56*3/4);
         visual_effect_and_powered: switch_emu_russia_rzd_es1_lastochka_visual_effect_and_powered_position;
         cargo_capacity: 88;
-        tractive_effort_coefficient: int(0.54*10*56);
+        tractive_effort_coefficient: int(0.164*10*56);
         length: 8;
         default: switch_emu_russia_rzd_es1_lastochka_cargo_selection;
     }

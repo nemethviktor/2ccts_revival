@@ -3,7 +3,14 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A. Data from: https://en.wikipedia.org/wiki/LRC_(train)
+// Template: TPL_02A.
+// Data from: https://en.wikipedia.org/wiki/LRC_(train)
+
+// Notes:
+//// TE_STARTING_KN: =245/2 -- Gemini
+//// TE_COEFFICIENT_MANUAL: 0.2 -- Can't find any info but .54 is way too high
+//// WAGON_CAPACITY: 68 -- //corpo.viarail.ca/en/projects-infrastructure/train-fleet/lrc-coach
+
 
 // Cargo capacity
 
@@ -55,7 +62,7 @@ item(FEAT_TRAINS, item_dmu_canada_via_rail_lrc) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/diesel", "flag/CA"];
+	badges: ["power/diesel", "flag/CA"];
 
     }
     graphics {

@@ -3,7 +3,12 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01B. Data from: https://de.wikipedia.org/wiki/Triebwagen_der_Oberwei%C3%9Fbacher_Bergbahn#%E2%80%9ERekonstruktionen%E2%80%9C_von_1982/84
+// Template: TPL_01B.
+// Data from: https://de.wikipedia.org/wiki/Triebwagen_der_Oberwei%C3%9Fbacher_Bergbahn#%E2%80%9ERekonstruktionen%E2%80%9C_von_1982/84
+
+// Notes:
+//// HEAD_CAPACITY: =(24+84)/2 -- standing/seated BUT this was supposed to be 2 units so half of that per unit
+
 
 // Cargo capacity
 
@@ -55,7 +60,7 @@ item(FEAT_TRAINS, item_rbe_germany_db_4792) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/GDR"];
+	badges: ["power/electric", "flag/GDR"];
 
     }
     graphics {

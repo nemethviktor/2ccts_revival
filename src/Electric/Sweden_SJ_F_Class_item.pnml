@@ -3,7 +3,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A. Data from: https://sv.wikipedia.org/wiki/F-lok_(el)
+// Template: TPL_01A.
+// Data from: https://sv.wikipedia.org/wiki/F-lok_(el)
 
 item(FEAT_TRAINS, item_electric_sweden_sj_f_class) {
     property {
@@ -40,7 +41,7 @@ item(FEAT_TRAINS, item_electric_sweden_sj_f_class) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/SE"];
+	badges: ["power/electric", "flag/SE"];
 
     }
     graphics {

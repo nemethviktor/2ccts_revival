@@ -3,7 +3,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02C. Data from: https://ru.wikipedia.org/wiki/%D0%A0%D1%83%D1%81%D0%B8%D1%87_(%D0%B2%D0%B0%D0%B3%D0%BE%D0%BD_%D0%BC%D0%B5%D1%82%D1%80%D0%BE)
+// Template: TPL_02C.
+// Data from: https://ru.wikipedia.org/wiki/%D0%A0%D1%83%D1%81%D0%B8%D1%87_(%D0%B2%D0%B0%D0%B3%D0%BE%D0%BD_%D0%BC%D0%B5%D1%82%D1%80%D0%BE)
 
 item(FEAT_TRAINS, item_mtro_russia_moscow_81_740) {
     property {
@@ -40,7 +41,7 @@ item(FEAT_TRAINS, item_mtro_russia_moscow_81_740) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/metro", "flag/RU"];
+	badges: ["power/metro", "flag/RU"];
 
     }
     graphics {

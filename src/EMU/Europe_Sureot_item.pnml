@@ -3,7 +3,12 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02F. Data from: nan
+// Template: TPL_02F.
+// Data from: nan
+
+// Notes:
+//// WEB: NA -- This is a concept vehicle
+
 
 // Cargo capacity
 
@@ -55,7 +60,7 @@ item(FEAT_TRAINS, item_emu_europe_sureot) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/EU"];
+	badges: ["power/electric", "flag/EU"];
 
     }
     graphics {

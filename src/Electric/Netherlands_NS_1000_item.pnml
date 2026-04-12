@@ -3,7 +3,12 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A. Data from: https://en.wikipedia.org/wiki/NS_Class_1000
+// Template: TPL_01A.
+// Data from: https://en.wikipedia.org/wiki/NS_Class_1000
+
+// Notes:
+//// SPEED: 100 -- "Limited maximum" - wiki
+
 
 item(FEAT_TRAINS, item_electric_netherlands_ns_1000) {
     property {
@@ -40,7 +45,7 @@ item(FEAT_TRAINS, item_electric_netherlands_ns_1000) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/NL"];
+	badges: ["power/electric", "flag/NL"];
 
     }
     graphics {

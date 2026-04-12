@@ -3,7 +3,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A. Data from: https://en.wikipedia.org/wiki/Pennsylvania_Railroad_class_B1_(electric)
+// Template: TPL_01A.
+// Data from: https://en.wikipedia.org/wiki/Pennsylvania_Railroad_class_B1_(electric)
 
 item(FEAT_TRAINS, item_electric_usa_prr_b1) {
     property {
@@ -40,7 +41,7 @@ item(FEAT_TRAINS, item_electric_usa_prr_b1) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/US"];
+	badges: ["power/electric", "flag/US"];
 
     }
     graphics {

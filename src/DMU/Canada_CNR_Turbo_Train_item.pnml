@@ -3,7 +3,14 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A. Data from: https://en.wikipedia.org/wiki/UAC_TurboTrain
+// Template: TPL_02A.
+// Data from: https://en.wikipedia.org/wiki/UAC_TurboTrain
+
+// Notes:
+//// WEIGHT: =INT(165/7) -- 165t over 7 cars
+//// TE_STARTING_KN: =80/2 -- "Turbines are terrible at starting torque; high speed is where they live"
+//// WAGON_CAPACITY: =INT((322-(PROPERTIES[[#This Row],[HEAD_CAPACITY]]*2))/5) -- 322 total over 7 cars so that's exc head cars. Wiki
+
 
 // Cargo capacity
 
@@ -55,7 +62,7 @@ item(FEAT_TRAINS, item_dmu_canada_cnr_turbo_train) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/turbine", "flag/CA"];
+	badges: ["power/turbine", "flag/CA"];
 
     }
     graphics {

@@ -3,7 +3,13 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A. Data from: nan
+// Template: TPL_02A.
+// Data from: https://en.wikipedia.org/wiki/New_South_Wales_S_set
+
+// Notes:
+//// POWER: 1600 -- 800 ea
+//// TE_STARTING_KN: 110 -- 110 ea
+
 
 // Cargo capacity
 
@@ -15,9 +21,9 @@
 
 
     switch(FEAT_TRAINS, SELF, switch_emu_australia_sydney_trains_s_set_capacity_wagon, cargo_classes) { \
-        bitmask(CC_MAIL): 112/2; \
-        bitmask(CC_ARMOURED): 112/4; \
-        112; \
+        bitmask(CC_MAIL): 130/2; \
+        bitmask(CC_ARMOURED): 130/4; \
+        130; \
     }
 
 item(FEAT_TRAINS, item_emu_australia_sydney_trains_s_set) {
@@ -29,13 +35,13 @@ item(FEAT_TRAINS, item_emu_australia_sydney_trains_s_set) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 41.37034;
-        running_cost_factor: 34.13105;
+        cost_factor: 50.91494;
+        running_cost_factor: 45.77565;
         speed: 115 km/h;
-        power: 800 hp;
+        power: 1600 hp;
         cargo_capacity: 112;
-        weight: 68 ton;
-        tractive_effort_coefficient: 0.31;
+        weight: 47 ton;
+        tractive_effort_coefficient: 0.239;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -55,7 +61,7 @@ item(FEAT_TRAINS, item_emu_australia_sydney_trains_s_set) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/AU"];
+	badges: ["power/electric", "flag/AU"];
 
     }
     graphics {
@@ -73,18 +79,18 @@ badges: ["power/electric", "flag/AU"];
     livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: int(115/10);
-        weight: int(68*1/2);
-        cargo_capacity: 112;
+        weight: int(47*1/2);
+        cargo_capacity: 130;
         length: 8;
         default: switch_emu_australia_sydney_trains_s_set_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(35.40844048511424));
-        power: int(800*1/2);
-        weight: int(68*3/4);
-        cargo_capacity: 112;
-        tractive_effort_coefficient: int(0.31*10*68);
+        running_cost_factor: (round(26.732999999999997));
+        power: int(1600*1/2);
+        weight: int(47*3/4);
+        cargo_capacity: 130;
+        tractive_effort_coefficient: int(0.239*10*47);
         length: 8;
         default: switch_emu_australia_sydney_trains_s_set_cargo_selection;
     }

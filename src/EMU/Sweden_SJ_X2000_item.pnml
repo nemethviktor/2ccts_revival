@@ -3,7 +3,14 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A. Data from: nan
+// Template: TPL_02A.
+// Data from: https://sv.wikipedia.org/wiki/X2_(t%C3%A5g)
+
+// Notes:
+//// WEIGHT: 73 -- 73t for power cars, each [wiki]
+//// TE_STARTING_KN: =160/2 -- Wikipedia
+//// WAGON_CAPACITY: 72 -- 2nd class. [wiki]
+
 
 // Cargo capacity
 
@@ -15,9 +22,9 @@
 
 
     switch(FEAT_TRAINS, SELF, switch_emu_sweden_sj_x2000_capacity_wagon, cargo_classes) { \
-        bitmask(CC_MAIL): 42/2; \
-        bitmask(CC_ARMOURED): 42/4; \
-        42; \
+        bitmask(CC_MAIL): 72/2; \
+        bitmask(CC_ARMOURED): 72/4; \
+        72; \
     }
 
 item(FEAT_TRAINS, item_emu_sweden_sj_x2000) {
@@ -29,13 +36,13 @@ item(FEAT_TRAINS, item_emu_sweden_sj_x2000) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 72.55279;
-        running_cost_factor: 66.9704;
-        speed: 210 km/h;
+        cost_factor: 74.45781;
+        running_cost_factor: 66.58901;
+        speed: 200 km/h;
         power: 4400 hp;
         cargo_capacity: 0;
-        weight: 50 ton;
-        tractive_effort_coefficient: 0.49;
+        weight: 73 ton;
+        tractive_effort_coefficient: 0.112;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -44,7 +51,7 @@ item(FEAT_TRAINS, item_emu_sweden_sj_x2000) {
         misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
         refit_cost: 0;
         ai_special_flag: AI_FLAG_PASSENGER;
-        track_type: [STANDARD_GAUGE_RAILTYPE_15KV];
+        track_type: [STANDARD_GAUGE_RAILTYPE_OHLE];
         running_cost_base: RUNNING_COST_ELECTRIC;
         engine_class: ENGINE_CLASS_ELECTRIC;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
@@ -55,7 +62,7 @@ item(FEAT_TRAINS, item_emu_sweden_sj_x2000) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/SE"];
+	badges: ["power/electric", "flag/SE"];
 
     }
     graphics {
@@ -72,19 +79,19 @@ badges: ["power/electric", "flag/SE"];
     }
     livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        running_cost_factor: int(210/10);
-        weight: int(50*1/2);
-        cargo_capacity: 42;
+        running_cost_factor: int(200/10);
+        weight: int(73*1/2);
+        cargo_capacity: 72;
         length: 8;
         default: switch_emu_sweden_sj_x2000_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        running_cost_factor: (round(52.13348046975556));
+        running_cost_factor: (round(34.80948046975556));
         power: int(4400*1/2);
-        weight: int(50*3/4);
-        cargo_capacity: 42;
-        tractive_effort_coefficient: int(0.49*10*50);
+        weight: int(73*3/4);
+        cargo_capacity: 72;
+        tractive_effort_coefficient: int(0.112*10*73);
         length: 8;
         default: switch_emu_sweden_sj_x2000_cargo_selection;
     }

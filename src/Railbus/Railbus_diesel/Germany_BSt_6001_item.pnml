@@ -3,7 +3,12 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01B. Data from: https://de.wikipedia.org/wiki/BSt_6001_bis_6003#Triebwagen_6001_und_6002
+// Template: TPL_01B.
+// Data from: https://de.wikipedia.org/wiki/BSt_6001_bis_6003#Triebwagen_6001_und_6002
+
+// Notes:
+//// HEAD_CAPACITY: 38 -- 18+20
+
 
 // Cargo capacity
 
@@ -55,7 +60,7 @@ item(FEAT_TRAINS, item_rbd_germany_bst_6001) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/diesel", "flag/DE"];
+	badges: ["power/diesel", "flag/DE"];
 
     }
     graphics {

@@ -3,7 +3,12 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A. Data from: https://en.wikipedia.org/wiki/CP_Class_2600
+// Template: TPL_01A.
+// Data from: https://en.wikipedia.org/wiki/CP_Class_2600
+
+// Notes:
+//// TE_STARTING_KN: 245 -- ZN wiki
+
 
 item(FEAT_TRAINS, item_electric_portugal_cp_2600) {
     property {
@@ -40,7 +45,7 @@ item(FEAT_TRAINS, item_electric_portugal_cp_2600) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/PT"];
+	badges: ["power/electric", "flag/PT"];
 
     }
     graphics {

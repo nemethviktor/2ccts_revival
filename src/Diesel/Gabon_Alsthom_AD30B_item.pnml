@@ -3,7 +3,14 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A. Data from: nan
+// Template: TPL_01A.
+// Data from: nan
+
+// Notes:
+//// WEB: NA -- Besides the factual existence, can't find much info on this
+//// SPEED: 80 -- Restricted for heavy weights
+//// TE_STARTING_KN: 320 -- Gemini
+
 
 item(FEAT_TRAINS, item_diesel_gabon_alsthom_ad30b) {
     property {
@@ -14,13 +21,13 @@ item(FEAT_TRAINS, item_diesel_gabon_alsthom_ad30b) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 64.4998;
-        running_cost_factor: 54.87785;
-        speed: 105 km/h;
+        cost_factor: 66.24229;
+        running_cost_factor: 54.86635;
+        speed: 80 km/h;
         power: 3000 hp;
         cargo_capacity: 0;
-        weight: 92 ton;
-        tractive_effort_coefficient: 0.25;
+        weight: 110 ton;
+        tractive_effort_coefficient: 0.297;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -40,7 +47,7 @@ item(FEAT_TRAINS, item_diesel_gabon_alsthom_ad30b) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/diesel", "flag/GA"];
+	badges: ["power/diesel", "flag/GA"];
 
     }
     graphics {

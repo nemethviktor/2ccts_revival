@@ -3,21 +3,27 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A. Data from: nan
+// Template: TPL_02A.
+// Data from: https://ru.wikipedia.org/wiki/%D0%A1_(%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BF%D0%BE%D0%B5%D0%B7%D0%B4)
+
+// Notes:
+//// POWER: =805*2 -- Technically just 805 because they ran as M+T setup, not M+M but alas.
+//// TE_STARTING_KN: 145 -- 145 per motor car
+
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_emu_russia_rzd_s_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 50/2; \
-        bitmask(CC_ARMOURED): 50/4; \
-        50; \
+        bitmask(CC_MAIL): 110/2; \
+        bitmask(CC_ARMOURED): 110/4; \
+        110; \
     }
 
 
     switch(FEAT_TRAINS, SELF, switch_emu_russia_rzd_s_capacity_wagon, cargo_classes) { \
-        bitmask(CC_MAIL): 50/2; \
-        bitmask(CC_ARMOURED): 50/4; \
-        50; \
+        bitmask(CC_MAIL): 110/2; \
+        bitmask(CC_ARMOURED): 110/4; \
+        110; \
     }
 
 item(FEAT_TRAINS, item_emu_russia_rzd_s) {
@@ -29,13 +35,13 @@ item(FEAT_TRAINS, item_emu_russia_rzd_s) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 37.44335;
-        running_cost_factor: 32.45786;
+        cost_factor: 52.13129;
+        running_cost_factor: 45.85581;
         speed: 85 km/h;
-        power: 804 hp;
-        cargo_capacity: 50;
-        weight: 46 ton;
-        tractive_effort_coefficient: 0.08;
+        power: 1610 hp;
+        cargo_capacity: 110;
+        weight: 58 ton;
+        tractive_effort_coefficient: 0.251;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -55,7 +61,7 @@ item(FEAT_TRAINS, item_emu_russia_rzd_s) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/SU"];
+	badges: ["power/electric", "flag/SU"];
 
     }
     graphics {
@@ -73,18 +79,18 @@ badges: ["power/electric", "flag/SU"];
     livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: int(85/10);
-        weight: int(46*1/2);
-        cargo_capacity: 50;
+        weight: int(58*1/2);
+        cargo_capacity: 110;
         length: 7;
         default: switch_emu_russia_rzd_s_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(15.015502262818925));
-        power: int(804*1/2);
-        weight: int(46*3/4);
-        cargo_capacity: 50;
-        tractive_effort_coefficient: int(0.08*10*46);
+        running_cost_factor: (round(27.296380529602146));
+        power: int(1610*1/2);
+        weight: int(58*3/4);
+        cargo_capacity: 110;
+        tractive_effort_coefficient: int(0.251*10*58);
         length: 7;
         default: switch_emu_russia_rzd_s_cargo_selection;
     }

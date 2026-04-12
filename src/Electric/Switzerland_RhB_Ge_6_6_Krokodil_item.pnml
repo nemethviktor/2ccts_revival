@@ -3,7 +3,12 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03B. Data from: nan
+// Template: TPL_03B.
+// Data from: https://de.wikipedia.org/wiki/RhB_Ge_6/6_I
+
+// Notes:
+//// TE_STARTING_KN: 131 -- Gemini
+
 
 item(FEAT_TRAINS, item_electric_switzerland_rhb_ge_6_6_krokodil) {
     property {
@@ -20,7 +25,7 @@ item(FEAT_TRAINS, item_electric_switzerland_rhb_ge_6_6_krokodil) {
         power: 1260 hp;
         cargo_capacity: 0;
         weight: 66 ton;
-        tractive_effort_coefficient: 0.26;
+        tractive_effort_coefficient: 0.202;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -40,7 +45,7 @@ item(FEAT_TRAINS, item_electric_switzerland_rhb_ge_6_6_krokodil) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/CH"];
+	badges: ["power/electric", "flag/CH"];
 
     }
     graphics {

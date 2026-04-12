@@ -3,7 +3,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A. Data from: nan
+// Template: TPL_02A.
+// Data from: https://es.wikipedia.org/wiki/Serie_120_de_Renfe
 
 // Cargo capacity
 
@@ -29,13 +30,13 @@ item(FEAT_TRAINS, item_emu_spain_renfe_120) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 47.55532;
-        running_cost_factor: 41.32121;
+        cost_factor: 62.93806;
+        running_cost_factor: 56.20396;
         speed: 250 km/h;
-        power: 1340 hp;
+        power: 2680 hp;
         cargo_capacity: 60;
-        weight: 56 ton;
-        tractive_effort_coefficient: 0.36;
+        weight: 61 ton;
+        tractive_effort_coefficient: 0.08;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -44,7 +45,7 @@ item(FEAT_TRAINS, item_emu_spain_renfe_120) {
         misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
         refit_cost: 0;
         ai_special_flag: AI_FLAG_PASSENGER;
-        track_type: [STANDARD_GAUGE_RAILTYPE_OHLE];
+        track_type: [STANDARD_GAUGE_RAILTYPE_OHLE, BROAD_GAUGE_RAILTYPE_OHLE];
         running_cost_base: RUNNING_COST_ELECTRIC;
         engine_class: ENGINE_CLASS_ELECTRIC;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
@@ -55,7 +56,7 @@ item(FEAT_TRAINS, item_emu_spain_renfe_120) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/ES"];
+	badges: ["power/electric", "flag/ES"];
 
     }
     graphics {
@@ -73,18 +74,18 @@ badges: ["power/electric", "flag/ES"];
     livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: int(250/10);
-        weight: int(56*1/2);
+        weight: int(61*1/2);
         cargo_capacity: 60;
         length: 8;
         default: switch_emu_spain_renfe_120_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(48.82060110550189));
-        power: int(1340*1/2);
-        weight: int(56*3/4);
+        running_cost_factor: (round(35.05687539284588));
+        power: int(2680*1/2);
+        weight: int(61*3/4);
         cargo_capacity: 60;
-        tractive_effort_coefficient: int(0.36*10*56);
+        tractive_effort_coefficient: int(0.08*10*61);
         length: 8;
         default: switch_emu_spain_renfe_120_cargo_selection;
     }

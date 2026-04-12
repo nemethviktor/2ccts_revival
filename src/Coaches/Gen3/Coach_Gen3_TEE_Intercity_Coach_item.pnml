@@ -3,7 +3,12 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_04A. Data from: nan
+// Template: TPL_04A.
+// Data from: nan
+
+// Notes:
+//// HEAD_CAPACITY: 48 -- Gemini - Ultra-spacious 1st Class seating (2+1 layout).
+
 
 item(FEAT_TRAINS, item_mu_coach_gen3_tee_intercity_coach) {
     property {
@@ -14,12 +19,12 @@ item(FEAT_TRAINS, item_mu_coach_gen3_tee_intercity_coach) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 26.63846;
-        running_cost_factor: 24.07769;
-        speed: 240 km/h;
+        cost_factor: 26.71957;
+        running_cost_factor: 24.06391;
+        speed: 160 km/h;
         power: 0 hp;
         cargo_capacity: 48;
-        weight: 45 ton;
+        weight: 48 ton;
         tractive_effort_coefficient: 0.3;
         air_drag_coefficient: 0;
 
@@ -40,7 +45,7 @@ item(FEAT_TRAINS, item_mu_coach_gen3_tee_intercity_coach) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/diesel"];
+	badges: ["power/diesel"];
 
     }
     graphics {

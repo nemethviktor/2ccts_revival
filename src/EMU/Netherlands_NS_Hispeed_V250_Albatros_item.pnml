@@ -3,7 +3,13 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A. Data from: nan
+// Template: TPL_02A.
+// Data from: https://nl.wikipedia.org/wiki/V250
+
+// Notes:
+//// POWER: =1810*2 -- 1810hp each
+//// TE_STARTING_KN: =300/2 -- This is from wikipedia. Gemini says half of this.
+
 
 // Cargo capacity
 
@@ -29,13 +35,13 @@ item(FEAT_TRAINS, item_emu_netherlands_ns_hispeed_v250_albatros) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 54.6044;
-        running_cost_factor: 48.16906;
+        cost_factor: 71.79072;
+        running_cost_factor: 65.05537;
         speed: 251 km/h;
-        power: 1850 hp;
+        power: 3620 hp;
         cargo_capacity: 71;
-        weight: 58 ton;
-        tractive_effort_coefficient: 0.52;
+        weight: 61 ton;
+        tractive_effort_coefficient: 0.251;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -55,7 +61,7 @@ item(FEAT_TRAINS, item_emu_netherlands_ns_hispeed_v250_albatros) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/NL"];
+	badges: ["power/electric", "flag/NL"];
 
     }
     graphics {
@@ -73,18 +79,18 @@ badges: ["power/electric", "flag/NL"];
     livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: int(251/10);
-        weight: int(58*1/2);
+        weight: int(61*1/2);
         cargo_capacity: 71;
         length: 8;
         default: switch_emu_netherlands_ns_hispeed_v250_albatros_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(59.56116266764515));
-        power: int(1850*1/2);
-        weight: int(58*3/4);
+        running_cost_factor: (round(46.4276944102772));
+        power: int(3620*1/2);
+        weight: int(61*3/4);
         cargo_capacity: 71;
-        tractive_effort_coefficient: int(0.52*10*58);
+        tractive_effort_coefficient: int(0.251*10*61);
         length: 8;
         default: switch_emu_netherlands_ns_hispeed_v250_albatros_cargo_selection;
     }

@@ -3,7 +3,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02C. Data from: https://pt.wikipedia.org/wiki/Material_circulante_do_Metropolitano_de_Lisboa#ML7
+// Template: TPL_02C.
+// Data from: https://pt.wikipedia.org/wiki/Material_circulante_do_Metropolitano_de_Lisboa#ML7
 
 item(FEAT_TRAINS, item_mtro_portugal_lisbon_ml7) {
     property {
@@ -40,7 +41,7 @@ item(FEAT_TRAINS, item_mtro_portugal_lisbon_ml7) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/metro", "flag/PT"];
+	badges: ["power/metro", "flag/PT"];
 
     }
     graphics {

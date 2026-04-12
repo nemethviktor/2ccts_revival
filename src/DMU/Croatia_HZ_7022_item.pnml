@@ -3,7 +3,13 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A. Data from: https://hr.wikipedia.org/wiki/H%C5%BD_serija_7022
+// Template: TPL_02A.
+// Data from: https://hr.wikipedia.org/wiki/H%C5%BD_serija_7022
+
+// Notes:
+//// HEAD_CAPACITY: =INT(410/3) -- 410 in 3 cars total, inc standing
+//// TE_STARTING_KN: =125/2 -- Wiki
+
 
 // Cargo capacity
 
@@ -55,7 +61,7 @@ item(FEAT_TRAINS, item_dmu_croatia_hz_7022) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/diesel", "flag/HR"];
+	badges: ["power/diesel", "flag/HR"];
 
     }
     graphics {

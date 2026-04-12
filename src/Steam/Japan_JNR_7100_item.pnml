@@ -3,7 +3,12 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03A. Data from: nan
+// Template: TPL_03A.
+// Data from: https://en.wikipedia.org/wiki/JGR_Class_7100
+
+// Notes:
+//// TE_STARTING_KN: 22 -- Gemini
+
 
 item(FEAT_TRAINS, item_steam_japan_jnr_7100) {
     property {
@@ -20,7 +25,7 @@ item(FEAT_TRAINS, item_steam_japan_jnr_7100) {
         power: 200 hp;
         cargo_capacity: 0;
         weight: 31 ton;
-        tractive_effort_coefficient: 0.07;
+        tractive_effort_coefficient: 0.072;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -40,7 +45,7 @@ item(FEAT_TRAINS, item_steam_japan_jnr_7100) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/steam", "flag/JP"];
+	badges: ["power/steam", "flag/JP"];
 
     }
     graphics {

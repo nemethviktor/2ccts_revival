@@ -3,7 +3,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02C. Data from: https://hu.wikipedia.org/wiki/Ev3
+// Template: TPL_02C.
+// Data from: https://hu.wikipedia.org/wiki/Ev3
 
 item(FEAT_TRAINS, item_mtro_hungary_budapest_ev3_200) {
     property {
@@ -40,7 +41,7 @@ item(FEAT_TRAINS, item_mtro_hungary_budapest_ev3_200) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/metro", "flag/HU"];
+	badges: ["power/metro", "flag/HU"];
 
     }
     graphics {

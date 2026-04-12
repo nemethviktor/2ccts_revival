@@ -3,14 +3,20 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01B. Data from: nan
+// Template: TPL_01B.
+// Data from: https://en.wikipedia.org/wiki/JR_Shikoku_1000_series
+
+// Notes:
+//// HEAD_CAPACITY: 151 -- Standing + seating
+//// TE_STARTING_KN: 65 -- Gemini
+
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_rbd_japan_jr_shikoku_1000_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 70/2; \
-        bitmask(CC_ARMOURED): 70/4; \
-        70; \
+        bitmask(CC_MAIL): 151/2; \
+        bitmask(CC_ARMOURED): 151/4; \
+        151; \
     }
 
 
@@ -29,13 +35,13 @@ item(FEAT_TRAINS, item_rbd_japan_jr_shikoku_1000) {
         vehicle_life: 15;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 28.19909;
-        running_cost_factor: 24.5684;
+        cost_factor: 29.96564;
+        running_cost_factor: 26.33495;
         speed: 110 km/h;
         power: 400 hp;
-        cargo_capacity: 70;
+        cargo_capacity: 151;
         weight: 32 ton;
-        tractive_effort_coefficient: 0.34;
+        tractive_effort_coefficient: 0.207;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -55,7 +61,7 @@ item(FEAT_TRAINS, item_rbd_japan_jr_shikoku_1000) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/diesel", "flag/JP"];
+	badges: ["power/diesel", "flag/JP"];
 
     }
     graphics {

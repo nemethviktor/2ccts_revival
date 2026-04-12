@@ -3,7 +3,12 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A. Data from: nan
+// Template: TPL_01A.
+// Data from: https://de.wikipedia.org/wiki/BB_Fe_2/2
+
+// Notes:
+//// TE_STARTING_KN: 24.5 -- Wiki
+
 
 item(FEAT_TRAINS, item_electric_switzerland_rhb_de_2_2) {
     property {
@@ -20,7 +25,7 @@ item(FEAT_TRAINS, item_electric_switzerland_rhb_de_2_2) {
         power: 200 hp;
         cargo_capacity: 0;
         weight: 16 ton;
-        tractive_effort_coefficient: 0.3;
+        tractive_effort_coefficient: 0.156;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -40,7 +45,7 @@ item(FEAT_TRAINS, item_electric_switzerland_rhb_de_2_2) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/CH"];
+	badges: ["power/electric", "flag/CH"];
 
     }
     graphics {

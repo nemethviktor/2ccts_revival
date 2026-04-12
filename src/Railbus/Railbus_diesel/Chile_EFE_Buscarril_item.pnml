@@ -3,14 +3,19 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01B. Data from: nan
+// Template: TPL_01B.
+// Data from: nan
+
+// Notes:
+//// TE_STARTING_KN: 22 -- Gemini
+
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_rbd_chile_efe_buscarril_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 80/2; \
-        bitmask(CC_ARMOURED): 80/4; \
-        80; \
+        bitmask(CC_MAIL): 40/2; \
+        bitmask(CC_ARMOURED): 40/4; \
+        40; \
     }
 
 
@@ -29,13 +34,13 @@ item(FEAT_TRAINS, item_rbd_chile_efe_buscarril) {
         vehicle_life: 15;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 21.63712;
-        running_cost_factor: 18.30139;
+        cost_factor: 19.57682;
+        running_cost_factor: 17.24109;
         speed: 60 km/h;
         power: 180 hp;
-        cargo_capacity: 80;
-        weight: 30 ton;
-        tractive_effort_coefficient: 0.22;
+        cargo_capacity: 40;
+        weight: 20 ton;
+        tractive_effort_coefficient: 0.112;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -55,7 +60,7 @@ item(FEAT_TRAINS, item_rbd_chile_efe_buscarril) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/diesel", "flag/CL"];
+	badges: ["power/diesel", "flag/CL"];
 
     }
     graphics {

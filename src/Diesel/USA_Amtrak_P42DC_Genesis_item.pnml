@@ -3,7 +3,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03F. Data from: https://en.wikipedia.org/wiki/GE_Genesis
+// Template: TPL_03F.
+// Data from: https://en.wikipedia.org/wiki/GE_Genesis
 
 item(FEAT_TRAINS, item_diesel_usa_amtrak_p42dc_genesis) {
     property {
@@ -40,7 +41,7 @@ item(FEAT_TRAINS, item_diesel_usa_amtrak_p42dc_genesis) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/diesel", "flag/US"];
+	badges: ["power/diesel", "flag/US"];
 
     }
     graphics {

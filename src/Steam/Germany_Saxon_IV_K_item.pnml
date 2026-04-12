@@ -3,7 +3,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03C. Data from: https://de.wikipedia.org/wiki/S%C3%A4chsische_IV_K
+// Template: TPL_03C.
+// Data from: https://de.wikipedia.org/wiki/S%C3%A4chsische_IV_K
 
 item(FEAT_TRAINS, item_steam_germany_saxon_iv_k) {
     property {
@@ -40,7 +41,7 @@ item(FEAT_TRAINS, item_steam_germany_saxon_iv_k) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/steam", "flag/DE"];
+	badges: ["power/steam", "flag/DE"];
 
     }
     graphics {

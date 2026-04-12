@@ -3,7 +3,12 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A. Data from: https://ja.wikipedia.org/wiki/%E5%9B%BD%E9%89%84%E3%82%AD%E3%83%8F181%E7%B3%BB%E6%B0%97%E5%8B%95%E8%BB%8A#%E6%96%B0%E8%A3%BD%E8%BB%8A
+// Template: TPL_02A.
+// Data from: https://ja.wikipedia.org/wiki/%E5%9B%BD%E9%89%84%E3%82%AD%E3%83%8F181%E7%B3%BB%E6%B0%97%E5%8B%95%E8%BB%8A#%E6%96%B0%E8%A3%BD%E8%BB%8A
+
+// Notes:
+//// WAGON_CAPACITY: 76 -- JP wiki
+
 
 // Cargo capacity
 
@@ -55,7 +60,7 @@ item(FEAT_TRAINS, item_dmu_japan_jnr_kiha_181) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/diesel", "flag/JP"];
+	badges: ["power/diesel", "flag/JP"];
 
     }
     graphics {

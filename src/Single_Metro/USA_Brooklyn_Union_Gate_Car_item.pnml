@@ -3,14 +3,19 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01D. Data from: nan
+// Template: TPL_01D.
+// Data from: https://en.wikipedia.org/wiki/BU_cars_(New_York_City_Subway_car)
+
+// Notes:
+//// TE_STARTING_KN: 25 -- Gemini
+
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_singlemtro_usa_brooklyn_union_gate_car_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 60/2; \
-        bitmask(CC_ARMOURED): 60/4; \
-        60; \
+        bitmask(CC_MAIL): 48/2; \
+        bitmask(CC_ARMOURED): 48/4; \
+        48; \
     }
 
 
@@ -29,13 +34,13 @@ item(FEAT_TRAINS, item_singlemtro_usa_brooklyn_union_gate_car) {
         vehicle_life: 60;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 20.83638;
-        running_cost_factor: 18.50064;
+        cost_factor: 21.31023;
+        running_cost_factor: 18.1745;
         speed: 60 km/h;
         power: 200 hp;
-        cargo_capacity: 60;
-        weight: 20 ton;
-        tractive_effort_coefficient: 0.5;
+        cargo_capacity: 48;
+        weight: 28 ton;
+        tractive_effort_coefficient: 0.091;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -55,7 +60,7 @@ item(FEAT_TRAINS, item_singlemtro_usa_brooklyn_union_gate_car) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/metro", "flag/US"];
+	badges: ["power/metro", "flag/US"];
 
     }
     graphics {

@@ -3,21 +3,27 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02E. Data from: nan
+// Template: TPL_02E.
+// Data from: https://en.wikipedia.org/wiki/Avelia_Horizon
+
+// Notes:
+//// POWER: =INT(9000*1.38/8)*2 -- All units are powered but heads only account for this much - this data is from wikipedia but Gemini disagrees. I picked wiki.
+//// TE_STARTING_KN: 200 -- DE wiki say 225 total but that's cont.; so this is gemini for starting (game doubles it.)
+
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_emu_italy_ntv_agv_duplex_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 67/2; \
-        bitmask(CC_ARMOURED): 67/4; \
-        67; \
+        bitmask(CC_MAIL): 80/2; \
+        bitmask(CC_ARMOURED): 80/4; \
+        80; \
     }
 
 
     switch(FEAT_TRAINS, SELF, switch_emu_italy_ntv_agv_duplex_capacity_wagon, cargo_classes) { \
-        bitmask(CC_MAIL): 67/2; \
-        bitmask(CC_ARMOURED): 67/4; \
-        67; \
+        bitmask(CC_MAIL): 100/2; \
+        bitmask(CC_ARMOURED): 100/4; \
+        100; \
     }
 
 item(FEAT_TRAINS, item_emu_italy_ntv_agv_duplex) {
@@ -29,13 +35,13 @@ item(FEAT_TRAINS, item_emu_italy_ntv_agv_duplex) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 52.38998;
-        running_cost_factor: 47.23058;
+        cost_factor: 66.22528;
+        running_cost_factor: 61.06589;
         speed: 360 km/h;
-        power: 1750 hp;
-        cargo_capacity: 67;
+        power: 3104 hp;
+        cargo_capacity: 80;
         weight: 44 ton;
-        tractive_effort_coefficient: 0.83;
+        tractive_effort_coefficient: 0.463;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -55,7 +61,7 @@ item(FEAT_TRAINS, item_emu_italy_ntv_agv_duplex) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/IT"];
+	badges: ["power/electric", "flag/IT"];
 
     }
     graphics {
@@ -74,17 +80,17 @@ badges: ["power/electric", "flag/IT"];
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
         running_cost_factor: int(360/10);
         weight: int(44*1/2);
-        cargo_capacity: 67;
+        cargo_capacity: 100;
         length: 7;
         default: switch_emu_italy_ntv_agv_duplex_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        running_cost_factor: (round(76.70330014173481));
-        power: int(1750*1/2);
+        running_cost_factor: (round(61.943369193467475));
+        power: int(3104*1/2);
         weight: int(44*3/4);
-        cargo_capacity: 67;
-        tractive_effort_coefficient: int(0.83*10*44);
+        cargo_capacity: 100;
+        tractive_effort_coefficient: int(0.463*10*44);
         length: 7;
         default: switch_emu_italy_ntv_agv_duplex_cargo_selection;
     }

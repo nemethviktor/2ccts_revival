@@ -1,6 +1,7 @@
 from typing import Literal
 
 import pandas as pd
+import openpyxl
 import os
 import math
 import warnings
@@ -11,11 +12,50 @@ warnings.filterwarnings("ignore", category=UserWarning, module="openpyxl")
 
 
 def load_master_data(excel_path):
-    print("--- Loading and Merging Excel Sheets ---")
+    print("--- Loading and Merging Excel Sheets with Note Extraction ---")
+    # Load raw data for pandas
     sheets = pd.read_excel(excel_path, sheet_name=None)
+
+    # Load workbook for openpyxl (to get notes/comments)
+    wb = openpyxl.load_workbook(excel_path)
+
+    # This will store notes as: notes_lookup[VEHIDCODE][COLUMN_NAME] = "Note Text"
+    notes_lookup = {}
+
+    def extract_notes(sheet_name, dataframe):
+        if sheet_name not in wb.sheetnames:
+            return
+        ws = wb[sheet_name]
+
+        # Identify where 'VEHIDCODE' is in this specific sheet
+        try:
+            vehid_col_idx = list(dataframe.columns).index('VEHIDCODE')
+        except ValueError:
+            return  # Skip sheets without the ID key
+
+        # Iterate Excel rows (skip header)
+        for r_idx, row in enumerate(ws.iter_rows(min_row=2), start=0):
+            # Get the VEHIDCODE for this row to use as the primary key
+            # openpyxl is 1-indexed, so c_idx+1
+            veh_id = ws.cell(row=r_idx+2, column=vehid_col_idx+1).value
+            if veh_id is None:
+                continue
+
+            veh_id = veh_id.lower()
+
+            if veh_id not in notes_lookup:
+                notes_lookup[veh_id] = {}
+
+            for c_idx, cell in enumerate(row):
+                if cell.comment:
+                    col_name = dataframe.columns[c_idx]
+                    # Clean the note text (removing Excel's 'Author:' prefix if present)
+                    clean_note = cell.comment.text.split(':')[-1].strip()
+                    notes_lookup[veh_id][col_name] = f"{cell.value} -- {clean_note}"
 
     # 1. Start with the 'control' sheet as the base
     df_master = sheets['control']
+    extract_notes('control', sheets['control'])
 
     # 2. List of sheets that provide extra vehicle properties
     data_sheets = [
@@ -23,46 +63,41 @@ def load_master_data(excel_path):
         'regions', 'graphics_properties'
     ]
 
-    # Define which columns MUST be treated as strings to avoid the float/NaN trap
-    text_columns = ['COUNTRY', 'COUNTRY_CODE',
-                    'ITEM', 'NAME', 'VEHIDCODE', 'CARGODEF', 'WEB']
+    text_columns = ['COUNTRY', 'COUNTRY_CODE', 'ITEM',
+                    'NAME', 'VEHIDCODE', 'CARGODEF', 'WEB']
 
     for sheet_name in data_sheets:
         if sheet_name in sheets:
             current_sheet = sheets[sheet_name]
 
-            # 1. Only convert specific columns to string if they exist in this sheet
+            # Extract notes from this sheet before merging
+            extract_notes(sheet_name, current_sheet)
+
+            # --- Your existing merge logic ---
             cols_to_fix = [
                 c for c in text_columns if c in current_sheet.columns]
             for col in cols_to_fix:
                 current_sheet[col] = current_sheet[col].astype(
                     str).replace('nan', '')
 
-            # 2. Find columns in the new sheet that already exist in the master
-            # (But don't include our merge key 'VEHIDCODE')
             overlapping_cols = [c for c in current_sheet.columns
                                 if c in df_master.columns and c != 'VEHIDCODE']
 
-            # 3. Drop the old/empty versions from the master
             df_master = df_master.drop(columns=overlapping_cols)
+            df_master = pd.merge(df_master, current_sheet,
+                                 on='VEHIDCODE', how='left')
 
-            # 4. Merge. The 'current_sheet' now has the correct types for text and numbers.
-            df_master = pd.merge(
-                df_master, current_sheet, on='VEHIDCODE', how='left')
-
-    # 3. Load the Lookups and Copyright (Global data)
+    # 3. Load the Lookups and Copyright
     df_cost_lookup = sheets['cost_lookup'].set_index('COST_CAT').fillna(0)
 
-    # Safer Copyright Extraction
     df_copyright = sheets['copyright_text']
+    copyright_txt = ""
     if not df_copyright.empty:
-        # If there is a row of data, take the first cell
         copyright_txt = str(df_copyright.iloc[0, 0])
     elif len(df_copyright.columns) > 0 and "Unnamed" not in str(df_copyright.columns[0]):
-        # If the data is empty but the header contains the text
         copyright_txt = str(df_copyright.columns[0])
 
-    return df_master, df_cost_lookup, copyright_txt
+    return df_master, df_cost_lookup, copyright_txt, notes_lookup
 
 
 def is_true(val) -> bool:
@@ -87,12 +122,10 @@ def get_badges(row: pd.Series) -> str:
 
     badge_string = '", "'.join(badges)
 
-    return f"""\nbadges: ["{badge_string}"];\n"""
+    return f"""\n\tbadges: ["{badge_string}"];\n"""
 
 
 # --- Newton-Raphson Emulation (Matches NML SQRT) ---
-
-
 def nml_sqrt(value) -> float:
     """
     Emulates the NML 'SQRTESTIMATE' macro using the Newton-Raphson method.
@@ -421,6 +454,7 @@ def get_expanded_wagon_capacity_switch(row: pd.Series) -> str:
         {cap}; \\
     }}\n\n"""
 
+
 # --- Main Generation Function ---
 
 
@@ -431,12 +465,13 @@ def generate_unified_items():
     excel_path = os.path.join(script_dir, 'vehicle_report.xlsx')
 
     # 1. Load Data
-    df_master, df_cost_lookup, copyright_text = load_master_data(excel_path)
-
+    df_master, df_cost_lookup, copyright_text, notes_lookup = load_master_data(
+        excel_path=excel_path)
     for _, row in df_master.iterrows():
         if pd.isna(row['VEHIDCODE']):
             continue
         VEHIDCODE_lcase = row['VEHIDCODE'].lower()
+        veh_notes: dict = notes_lookup.get(VEHIDCODE_lcase, {})
         TEMPLATE_ID = row['TEMPLATE_ID']
         TEMPLATE_AMENDMENT_CODE = row['TEMPLATE_AMENDMENT_CODE']
 
@@ -521,7 +556,13 @@ def generate_unified_items():
         content = []
         content.append(f"\n{copyright_text}\n\n")
         content.append(
-            f"\n// Template: {TEMPLATE_ID_FULL}. Data from: {row['WEB']}\n\n")
+            f"\n// Template: {TEMPLATE_ID_FULL}.\n// Data from: {row['WEB']}\n\n")
+        if veh_notes:
+            content.append("// Notes:\n")
+            for k, v in veh_notes.items():
+                content.append(f"//// {k}: {v}\n")
+            content.append("\n\n")
+
         # We need to port some of the random crap from _graphics here else it won't work because we are no longer defining HEAD_CAPACITY as a generic thing.
         if (category in ['DMU', 'EMU', 'WAGON', 'MAGLEVMU'] and row['VEHID_ID_CATEGORY'] not in ['ID_RANGE_CARGOEMU', 'ID_RANGE_CARGODMU']) or category.endswith('RAILBUS'):
             content.append("// Cargo capacity" + "\n")

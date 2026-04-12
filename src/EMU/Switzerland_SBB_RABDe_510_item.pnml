@@ -3,7 +3,13 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02D. Data from: nan
+// Template: TPL_02D.
+// Data from: https://de.wikipedia.org/wiki/SBB_RABDe_12/12
+
+// Notes:
+//// POWER: =INT(3277*2/3) -- 3 car set is 3277 all-powered
+//// TE_STARTING_KN: =239/2 -- Wiki
+
 
 // Cargo capacity
 
@@ -15,9 +21,9 @@
 
 
     switch(FEAT_TRAINS, SELF, switch_emu_switzerland_sbb_rabde_510_capacity_wagon, cargo_classes) { \
-        bitmask(CC_MAIL): 56/2; \
-        bitmask(CC_ARMOURED): 56/4; \
-        56; \
+        bitmask(CC_MAIL): 66/2; \
+        bitmask(CC_ARMOURED): 66/4; \
+        66; \
     }
 
 item(FEAT_TRAINS, item_emu_switzerland_sbb_rabde_510) {
@@ -29,13 +35,13 @@ item(FEAT_TRAINS, item_emu_switzerland_sbb_rabde_510) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 43.70564;
-        running_cost_factor: 37.64954;
+        cost_factor: 58.17877;
+        running_cost_factor: 51.12268;
         speed: 125 km/h;
-        power: 1090 hp;
+        power: 2184 hp;
         cargo_capacity: 56;
-        weight: 56 ton;
-        tractive_effort_coefficient: 0.43;
+        weight: 66 ton;
+        tractive_effort_coefficient: 0.185;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -55,7 +61,7 @@ item(FEAT_TRAINS, item_emu_switzerland_sbb_rabde_510) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/CH"];
+	badges: ["power/electric", "flag/CH"];
 
     }
     graphics {
@@ -73,20 +79,20 @@ badges: ["power/electric", "flag/CH"];
     livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: int(125/10);
-        weight: int(56*1/2);
+        weight: int(66*1/2);
         visual_effect_and_powered: switch_emu_switzerland_sbb_rabde_510_visual_effect_and_powered_position;
-        cargo_capacity: 56;
+        cargo_capacity: 66;
         length: 8;
         default: switch_emu_switzerland_sbb_rabde_510_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(39.88151579985052));
-        power: int(1090*1/2);
-        weight: int(56*3/4);
+        running_cost_factor: (round(29.383329031643548));
+        power: int(2184*1/2);
+        weight: int(66*3/4);
         visual_effect_and_powered: switch_emu_switzerland_sbb_rabde_510_visual_effect_and_powered_position;
-        cargo_capacity: 56;
-        tractive_effort_coefficient: int(0.43*10*56);
+        cargo_capacity: 66;
+        tractive_effort_coefficient: int(0.185*10*66);
         length: 8;
         default: switch_emu_switzerland_sbb_rabde_510_cargo_selection;
     }

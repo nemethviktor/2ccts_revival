@@ -3,21 +3,22 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A. Data from: nan
+// Template: TPL_02A.
+// Data from: https://en.wikipedia.org/wiki/Gautrain
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_emu_south_africa_gautrain_electrostar_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 52/2; \
-        bitmask(CC_ARMOURED): 52/4; \
-        52; \
+        bitmask(CC_MAIL): 64/2; \
+        bitmask(CC_ARMOURED): 64/4; \
+        64; \
     }
 
 
     switch(FEAT_TRAINS, SELF, switch_emu_south_africa_gautrain_electrostar_capacity_wagon, cargo_classes) { \
-        bitmask(CC_MAIL): 52/2; \
-        bitmask(CC_ARMOURED): 52/4; \
-        52; \
+        bitmask(CC_MAIL): 64/2; \
+        bitmask(CC_ARMOURED): 64/4; \
+        64; \
     }
 
 item(FEAT_TRAINS, item_emu_south_africa_gautrain_electrostar) {
@@ -29,13 +30,13 @@ item(FEAT_TRAINS, item_emu_south_africa_gautrain_electrostar) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 32.63825;
-        running_cost_factor: 27.92693;
+        cost_factor: 56.78781;
+        running_cost_factor: 52.07649;
         speed: 160 km/h;
-        power: 553 hp;
-        cargo_capacity: 52;
+        power: 2253 hp;
+        cargo_capacity: 64;
         weight: 42 ton;
-        tractive_effort_coefficient: 0.3;
+        tractive_effort_coefficient: 0.182;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -55,7 +56,7 @@ item(FEAT_TRAINS, item_emu_south_africa_gautrain_electrostar) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/ZA"];
+	badges: ["power/electric", "flag/ZA"];
 
     }
     graphics {
@@ -74,17 +75,17 @@ badges: ["power/electric", "flag/ZA"];
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
         running_cost_factor: int(160/10);
         weight: int(42*1/2);
-        cargo_capacity: 52;
+        cargo_capacity: 64;
         length: 8;
         default: switch_emu_south_africa_gautrain_electrostar_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        running_cost_factor: (round(30.951737179547244));
-        power: int(553*1/2);
+        running_cost_factor: (round(28.390578368218172));
+        power: int(2253*1/2);
         weight: int(42*3/4);
-        cargo_capacity: 52;
-        tractive_effort_coefficient: int(0.3*10*42);
+        cargo_capacity: 64;
+        tractive_effort_coefficient: int(0.182*10*42);
         length: 8;
         default: switch_emu_south_africa_gautrain_electrostar_cargo_selection;
     }

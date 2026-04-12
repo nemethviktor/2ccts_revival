@@ -3,21 +3,29 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A. Data from: nan
+// Template: TPL_02A.
+// Data from: https://en.wikipedia.org/wiki/Budd_Metroliner
+
+// Notes:
+//// HEAD_CAPACITY: 76 -- coaches had 76 seats
+//// WEIGHT: 75 -- 75t each
+//// TE_STARTING_KN: =200/2 -- Gemini
+//// WAGON_CAPACITY: 76 -- coaches had 76 seats
+
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_emu_usa_amtrak_budd_metroliner_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 40/2; \
-        bitmask(CC_ARMOURED): 40/4; \
-        40; \
+        bitmask(CC_MAIL): 76/2; \
+        bitmask(CC_ARMOURED): 76/4; \
+        76; \
     }
 
 
     switch(FEAT_TRAINS, SELF, switch_emu_usa_amtrak_budd_metroliner_capacity_wagon, cargo_classes) { \
-        bitmask(CC_MAIL): 40/2; \
-        bitmask(CC_ARMOURED): 40/4; \
-        40; \
+        bitmask(CC_MAIL): 76/2; \
+        bitmask(CC_ARMOURED): 76/4; \
+        76; \
     }
 
 item(FEAT_TRAINS, item_emu_usa_amtrak_budd_metroliner) {
@@ -29,13 +37,13 @@ item(FEAT_TRAINS, item_emu_usa_amtrak_budd_metroliner) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 60.99158;
-        running_cost_factor: 52.9214;
-        speed: 201 km/h;
+        cost_factor: 61.9217;
+        running_cost_factor: 53.86678;
+        speed: 190 km/h;
         power: 2400 hp;
-        cargo_capacity: 40;
+        cargo_capacity: 76;
         weight: 75 ton;
-        tractive_effort_coefficient: 0.15;
+        tractive_effort_coefficient: 0.136;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -55,7 +63,7 @@ item(FEAT_TRAINS, item_emu_usa_amtrak_budd_metroliner) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/US"];
+	badges: ["power/electric", "flag/US"];
 
     }
     graphics {
@@ -72,19 +80,19 @@ badges: ["power/electric", "flag/US"];
     }
     livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: int(201/10);
+        running_cost_factor: int(190/10);
         weight: int(75*1/2);
-        cargo_capacity: 40;
+        cargo_capacity: 76;
         length: 8;
         default: switch_emu_usa_amtrak_budd_metroliner_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(36.24898077750403));
+        running_cost_factor: (round(34.09898077750403));
         power: int(2400*1/2);
         weight: int(75*3/4);
-        cargo_capacity: 40;
-        tractive_effort_coefficient: int(0.15*10*75);
+        cargo_capacity: 76;
+        tractive_effort_coefficient: int(0.136*10*75);
         length: 8;
         default: switch_emu_usa_amtrak_budd_metroliner_cargo_selection;
     }

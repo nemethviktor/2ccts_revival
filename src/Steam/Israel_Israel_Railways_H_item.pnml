@@ -3,7 +3,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03A. Data from: https://en.wikipedia.org/wiki/Palestine_Railways_H_class
+// Template: TPL_03A.
+// Data from: https://en.wikipedia.org/wiki/Palestine_Railways_H_class
 
 item(FEAT_TRAINS, item_steam_israel_israel_railways_h) {
     property {
@@ -40,7 +41,7 @@ item(FEAT_TRAINS, item_steam_israel_israel_railways_h) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/steam", "flag/IL"];
+	badges: ["power/steam", "flag/IL"];
 
     }
     graphics {

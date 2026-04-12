@@ -3,7 +3,14 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A. Data from: https://en.wikipedia.org/wiki/Norske_Tog_Class_93
+// Template: TPL_02A.
+// Data from: https://en.wikipedia.org/wiki/Norske_Tog_Class_93
+
+// Notes:
+//// POWER: 810 -- NOR wiki
+//// TE_STARTING_KN: =100/2 -- Gemini
+//// WAGON_CAPACITY: =76/2 -- Again, none, really, this doesn't take trailers IRL
+
 
 // Cargo capacity
 
@@ -55,7 +62,7 @@ item(FEAT_TRAINS, item_dmu_norway_nsb_bm_93_talent) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/diesel", "flag/NO"];
+	badges: ["power/diesel", "flag/NO"];
 
     }
     graphics {

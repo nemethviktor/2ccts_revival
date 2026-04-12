@@ -3,7 +3,13 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02E. Data from: nan
+// Template: TPL_02E.
+// Data from: https://en.wikipedia.org/wiki/AGV_(train)
+
+// Notes:
+//// POWER: =1020*2 -- All units are powered but heads only account for this much
+//// TE_STARTING_KN: 30 -- 30 each
+
 
 // Cargo capacity
 
@@ -29,13 +35,13 @@ item(FEAT_TRAINS, item_emu_italy_ntv_agv) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 42.45909;
-        running_cost_factor: 38.6997;
+        cost_factor: 53.77851;
+        running_cost_factor: 49.1334;
         speed: 360 km/h;
-        power: 1150 hp;
+        power: 2040 hp;
         cargo_capacity: 42;
-        weight: 30 ton;
-        tractive_effort_coefficient: 0.9;
+        weight: 38 ton;
+        tractive_effort_coefficient: 0.079;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -55,7 +61,7 @@ item(FEAT_TRAINS, item_emu_italy_ntv_agv) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/IT"];
+	badges: ["power/electric", "flag/IT"];
 
     }
     graphics {
@@ -73,18 +79,18 @@ badges: ["power/electric", "flag/IT"];
     livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
         running_cost_factor: int(360/10);
-        weight: int(30*1/2);
+        weight: int(38*1/2);
         cargo_capacity: 42;
         length: 7;
         default: switch_emu_italy_ntv_agv_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        running_cost_factor: (round(66.3911655481804));
-        power: int(1150*1/2);
-        weight: int(30*3/4);
+        running_cost_factor: (round(43.58635038556071));
+        power: int(2040*1/2);
+        weight: int(38*3/4);
         cargo_capacity: 42;
-        tractive_effort_coefficient: int(0.9*10*30);
+        tractive_effort_coefficient: int(0.079*10*38);
         length: 7;
         default: switch_emu_italy_ntv_agv_cargo_selection;
     }

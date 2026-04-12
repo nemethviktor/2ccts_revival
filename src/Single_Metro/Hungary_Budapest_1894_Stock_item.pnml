@@ -3,14 +3,19 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01D. Data from: nan
+// Template: TPL_01D.
+// Data from: https://hu.wikipedia.org/wiki/Siemens_&_Halske_motorkocsi
+
+// Notes:
+//// TE_STARTING_KN: 18 -- Gemini
+
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_singlemtro_hungary_budapest_1894_stock_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 100/2; \
-        bitmask(CC_ARMOURED): 100/4; \
-        100; \
+        bitmask(CC_MAIL): 46/2; \
+        bitmask(CC_ARMOURED): 46/4; \
+        46; \
     }
 
 
@@ -29,13 +34,13 @@ item(FEAT_TRAINS, item_singlemtro_hungary_budapest_1894_stock) {
         vehicle_life: 60;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 22.30311;
-        running_cost_factor: 19.46738;
+        cost_factor: 20.10357;
+        running_cost_factor: 18.11784;
         speed: 60 km/h;
         power: 200 hp;
-        cargo_capacity: 100;
-        weight: 25 ton;
-        tractive_effort_coefficient: 0.32;
+        cargo_capacity: 46;
+        weight: 16 ton;
+        tractive_effort_coefficient: 0.111;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -55,7 +60,7 @@ item(FEAT_TRAINS, item_singlemtro_hungary_budapest_1894_stock) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/metro", "flag/HU"];
+	badges: ["power/metro", "flag/HU"];
 
     }
     graphics {

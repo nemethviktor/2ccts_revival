@@ -3,14 +3,19 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01B. Data from: nan
+// Template: TPL_01B.
+// Data from: https://de.wikipedia.org/wiki/AG_CFe_3/3
+
+// Notes:
+//// TE_STARTING_KN: 78 -- Gemini
+
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_rbe_switzerland_ab_cfe_3_3_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 24/2; \
-        bitmask(CC_ARMOURED): 24/4; \
-        24; \
+        bitmask(CC_MAIL): 32/2; \
+        bitmask(CC_ARMOURED): 32/4; \
+        32; \
     }
 
 
@@ -29,13 +34,13 @@ item(FEAT_TRAINS, item_rbe_switzerland_ab_cfe_3_3) {
         vehicle_life: 15;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 19.91595;
-        running_cost_factor: 17.23701;
+        cost_factor: 25.59362;
+        running_cost_factor: 21.91468;
         speed: 35 km/h;
-        power: 195 hp;
-        cargo_capacity: 24;
-        weight: 24 ton;
-        tractive_effort_coefficient: 0.15;
+        power: 340 hp;
+        cargo_capacity: 32;
+        weight: 34 ton;
+        tractive_effort_coefficient: 0.234;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -55,7 +60,7 @@ item(FEAT_TRAINS, item_rbe_switzerland_ab_cfe_3_3) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/CH"];
+	badges: ["power/electric", "flag/CH"];
 
     }
     graphics {

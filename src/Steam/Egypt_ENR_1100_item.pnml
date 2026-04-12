@@ -3,7 +3,14 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03C. Data from: nan
+// Template: TPL_03C.
+// Data from: nan
+
+// Notes:
+//// WEB: NA -- I cannot find anything on this actually ever existing.
+//// VEHIDCODE: steam_Egypt_ENR_1100 -- Possibly ex-GWR/War Department "LMS Fowler Class 3F" but can't verify
+//// TE_STARTING_KN: 92.68 -- Assuming this is a LMS Fowler Class 3F
+
 
 item(FEAT_TRAINS, item_steam_egypt_enr_1100) {
     property {
@@ -40,7 +47,7 @@ item(FEAT_TRAINS, item_steam_egypt_enr_1100) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/steam", "flag/EG"];
+	badges: ["power/steam", "flag/EG"];
 
     }
     graphics {

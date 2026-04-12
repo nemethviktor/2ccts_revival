@@ -3,7 +3,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A. Data from: https://en.wikipedia.org/wiki/FM_H-10-44
+// Template: TPL_01A.
+// Data from: https://en.wikipedia.org/wiki/FM_H-10-44
 
 item(FEAT_TRAINS, item_diesel_usa_prr_fm_h_10_44) {
     property {
@@ -40,7 +41,7 @@ item(FEAT_TRAINS, item_diesel_usa_prr_fm_h_10_44) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/diesel", "flag/US"];
+	badges: ["power/diesel", "flag/US"];
 
     }
     graphics {

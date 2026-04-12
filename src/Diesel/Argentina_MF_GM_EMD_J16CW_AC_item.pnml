@@ -3,7 +3,12 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A. Data from: https://en.wikipedia.org/wiki/EMD_G16
+// Template: TPL_01A.
+// Data from: https://en.wikipedia.org/wiki/EMD_G16
+
+// Notes:
+//// ENGLISH: MF GM-EMD-G16 -- If this was in the 1960s as the legacy data says then it's not a J-class but a G-class
+
 
 item(FEAT_TRAINS, item_diesel_argentina_mf_gm_emd_j16cw_ac) {
     property {
@@ -40,7 +45,7 @@ item(FEAT_TRAINS, item_diesel_argentina_mf_gm_emd_j16cw_ac) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/diesel", "flag/AR"];
+	badges: ["power/diesel", "flag/AR"];
 
     }
     graphics {

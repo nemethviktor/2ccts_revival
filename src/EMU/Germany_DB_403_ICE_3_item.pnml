@@ -3,21 +3,26 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02D. Data from: nan
+// Template: TPL_02D.
+// Data from: https://en.wikipedia.org/wiki/ICE_3
+
+// Notes:
+//// TE_STARTING_KN: =300/2 -- EN wiki
+
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_emu_germany_db_403_ice_3_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 45/2; \
-        bitmask(CC_ARMOURED): 45/4; \
-        45; \
+        bitmask(CC_MAIL): 55/2; \
+        bitmask(CC_ARMOURED): 55/4; \
+        55; \
     }
 
 
     switch(FEAT_TRAINS, SELF, switch_emu_germany_db_403_ice_3_capacity_wagon, cargo_classes) { \
-        bitmask(CC_MAIL): 45/2; \
-        bitmask(CC_ARMOURED): 45/4; \
-        45; \
+        bitmask(CC_MAIL): 55/2; \
+        bitmask(CC_ARMOURED): 55/4; \
+        55; \
     }
 
 item(FEAT_TRAINS, item_emu_germany_db_403_ice_3) {
@@ -29,13 +34,13 @@ item(FEAT_TRAINS, item_emu_germany_db_403_ice_3) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 48.18818;
-        running_cost_factor: 42.3631;
+        cost_factor: 114.26894;
+        running_cost_factor: 108.43136;
         speed: 328 km/h;
-        power: 1400 hp;
-        cargo_capacity: 45;
+        power: 10728 hp;
+        cargo_capacity: 55;
         weight: 51 ton;
-        tractive_effort_coefficient: 0.98;
+        tractive_effort_coefficient: 0.299;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -55,7 +60,7 @@ item(FEAT_TRAINS, item_emu_germany_db_403_ice_3) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/DE"];
+	badges: ["power/electric", "flag/DE"];
 
     }
     graphics {
@@ -75,18 +80,18 @@ badges: ["power/electric", "flag/DE"];
         running_cost_factor: int(328/10);
         weight: int(51*1/2);
         visual_effect_and_powered: switch_emu_germany_db_403_ice_3_visual_effect_and_powered_position;
-        cargo_capacity: 45;
+        cargo_capacity: 55;
         length: 8;
         default: switch_emu_germany_db_403_ice_3_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        running_cost_factor: (round(86.52165741234904));
-        power: int(1400*1/2);
+        running_cost_factor: (round(58.47514112884971));
+        power: int(10728*1/2);
         weight: int(51*3/4);
         visual_effect_and_powered: switch_emu_germany_db_403_ice_3_visual_effect_and_powered_position;
-        cargo_capacity: 45;
-        tractive_effort_coefficient: int(0.98*10*51);
+        cargo_capacity: 55;
+        tractive_effort_coefficient: int(0.299*10*51);
         length: 8;
         default: switch_emu_germany_db_403_ice_3_cargo_selection;
     }

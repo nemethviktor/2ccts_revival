@@ -3,7 +3,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02C. Data from: https://ja.wikipedia.org/wiki/%E5%A4%A7%E9%98%AA%E5%B8%82%E4%BA%A4%E9%80%9A%E5%B1%8030000%E7%B3%BB%E9%9B%BB%E8%BB%8A
+// Template: TPL_02C.
+// Data from: https://ja.wikipedia.org/wiki/%E5%A4%A7%E9%98%AA%E5%B8%82%E4%BA%A4%E9%80%9A%E5%B1%8030000%E7%B3%BB%E9%9B%BB%E8%BB%8A
 
 item(FEAT_TRAINS, item_mtro_japan_osaka_30000) {
     property {
@@ -40,7 +41,7 @@ item(FEAT_TRAINS, item_mtro_japan_osaka_30000) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/metro", "flag/JP"];
+	badges: ["power/metro", "flag/JP"];
 
     }
     graphics {

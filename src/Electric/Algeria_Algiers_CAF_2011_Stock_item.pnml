@@ -3,7 +3,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02C. Data from: https://fr.wikipedia.org/wiki/M%C3%A9tro_d%27Alger
+// Template: TPL_02C.
+// Data from: https://fr.wikipedia.org/wiki/M%C3%A9tro_d%27Alger
 
 item(FEAT_TRAINS, item_mtro_algeria_algiers_caf_2011_stock) {
     property {
@@ -40,7 +41,7 @@ item(FEAT_TRAINS, item_mtro_algeria_algiers_caf_2011_stock) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/metro", "flag/DZ"];
+	badges: ["power/metro", "flag/DZ"];
 
     }
     graphics {

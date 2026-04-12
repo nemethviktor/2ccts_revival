@@ -3,7 +3,12 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A. Data from: nan
+// Template: TPL_01A.
+// Data from: https://en.wikipedia.org/wiki/JNR_Class_EF64
+
+// Notes:
+//// TE_STARTING_KN: 196 -- Gemini
+
 
 item(FEAT_TRAINS, item_electric_japan_jnr_ef64) {
     property {
@@ -20,7 +25,7 @@ item(FEAT_TRAINS, item_electric_japan_jnr_ef64) {
         power: 3420 hp;
         cargo_capacity: 0;
         weight: 96 ton;
-        tractive_effort_coefficient: 0.3;
+        tractive_effort_coefficient: 0.208;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -40,7 +45,7 @@ item(FEAT_TRAINS, item_electric_japan_jnr_ef64) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/JP"];
+	badges: ["power/electric", "flag/JP"];
 
     }
     graphics {

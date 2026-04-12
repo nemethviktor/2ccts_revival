@@ -3,21 +3,26 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A. Data from: nan
+// Template: TPL_02A.
+// Data from: https://fr.wikipedia.org/wiki/Z_6100
+
+// Notes:
+//// TE_STARTING_KN: 73.5 -- Wikipedia
+
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_emu_romania_cfr_58_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 100/2; \
-        bitmask(CC_ARMOURED): 100/4; \
-        100; \
+        bitmask(CC_MAIL): 68/2; \
+        bitmask(CC_ARMOURED): 68/4; \
+        68; \
     }
 
 
     switch(FEAT_TRAINS, SELF, switch_emu_romania_cfr_58_capacity_wagon, cargo_classes) { \
-        bitmask(CC_MAIL): 100/2; \
-        bitmask(CC_ARMOURED): 100/4; \
-        100; \
+        bitmask(CC_MAIL): 68/2; \
+        bitmask(CC_ARMOURED): 68/4; \
+        68; \
     }
 
 item(FEAT_TRAINS, item_emu_romania_cfr_58) {
@@ -29,13 +34,13 @@ item(FEAT_TRAINS, item_emu_romania_cfr_58) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 38.34861;
-        running_cost_factor: 34.40086;
+        cost_factor: 37.38232;
+        running_cost_factor: 33.43456;
         speed: 120 km/h;
         power: 824 hp;
-        cargo_capacity: 100;
+        cargo_capacity: 68;
         weight: 35 ton;
-        tractive_effort_coefficient: 0.42;
+        tractive_effort_coefficient: 0.214;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -55,7 +60,7 @@ item(FEAT_TRAINS, item_emu_romania_cfr_58) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/RO"];
+	badges: ["power/electric", "flag/RO"];
 
     }
     graphics {
@@ -74,17 +79,17 @@ badges: ["power/electric", "flag/RO"];
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: int(120/10);
         weight: int(35*1/2);
-        cargo_capacity: 100;
+        cargo_capacity: 68;
         length: 8;
         default: switch_emu_romania_cfr_58_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(29.570550787647463));
+        running_cost_factor: (round(22.360550787647462));
         power: int(824*1/2);
         weight: int(35*3/4);
-        cargo_capacity: 100;
-        tractive_effort_coefficient: int(0.42*10*35);
+        cargo_capacity: 68;
+        tractive_effort_coefficient: int(0.214*10*35);
         length: 8;
         default: switch_emu_romania_cfr_58_cargo_selection;
     }

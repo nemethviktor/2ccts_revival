@@ -3,7 +3,12 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03D. Data from: nan
+// Template: TPL_03D.
+// Data from: https://ru.wikipedia.org/wiki/%D0%92%D0%9B85
+
+// Notes:
+//// TE_STARTING_KN: 932 -- Dual unit
+
 
 item(FEAT_TRAINS, item_electric_russia_rzd_vl85) {
     property {
@@ -14,13 +19,13 @@ item(FEAT_TRAINS, item_electric_russia_rzd_vl85) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
-        cost_factor: 141.70993;
-        running_cost_factor: 112.47924;
+        cost_factor: 146.003;
+        running_cost_factor: 116.77231;
         speed: 110 km/h;
-        power: 12500 hp;
+        power: 13438 hp;
         cargo_capacity: 0;
         weight: 288 ton;
-        tractive_effort_coefficient: 0.25;
+        tractive_effort_coefficient: 0.33;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -40,7 +45,7 @@ item(FEAT_TRAINS, item_electric_russia_rzd_vl85) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/SU"];
+	badges: ["power/electric", "flag/SU"];
 
     }
     graphics {

@@ -3,7 +3,12 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A. Data from: https://nl.wikipedia.org/wiki/Plan_U
+// Template: TPL_02A.
+// Data from: https://nl.wikipedia.org/wiki/Plan_U
+
+// Notes:
+//// WAGON_CAPACITY: =INT((168+24)/2) -- 1st + 2nd class ; wiki
+
 
 // Cargo capacity
 
@@ -55,7 +60,7 @@ item(FEAT_TRAINS, item_dmu_netherlands_ns_plan_u_de_iii) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/diesel", "flag/NL"];
+	badges: ["power/diesel", "flag/NL"];
 
     }
     graphics {

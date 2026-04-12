@@ -3,7 +3,13 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_04A. Data from: nan
+// Template: TPL_04A.
+// Data from: nan
+
+// Notes:
+//// HEAD_CAPACITY: 150 -- Gemini
+//// VEHIDCODE: mu_Coach_Gen4_Russian_Mail_Coach -- Should be broad gauge only
+
 
 item(FEAT_TRAINS, item_mu_coach_gen4_russian_mail_coach) {
     property {
@@ -14,12 +20,12 @@ item(FEAT_TRAINS, item_mu_coach_gen4_russian_mail_coach) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 15/2 : (param_loadingspeed == 2) ? 15*2 : 15;
-        cost_factor: 42.61957;
-        running_cost_factor: 40.06391;
+        cost_factor: 77.91957;
+        running_cost_factor: 75.06391;
         speed: 160 km/h;
         power: 0 hp;
-        cargo_capacity: 80;
-        weight: 46 ton;
+        cargo_capacity: 150;
+        weight: 52 ton;
         tractive_effort_coefficient: 0.3;
         air_drag_coefficient: 0;
 
@@ -29,7 +35,7 @@ item(FEAT_TRAINS, item_mu_coach_gen4_russian_mail_coach) {
         misc_flags: bitmask(TRAIN_FLAG_2CC);
         refit_cost: 0;
         ai_special_flag: AI_FLAG_PASSENGER;
-        track_type: [STANDARD_GAUGE_RAILTYPE_NONE, NARROW_GAUGE_RAILTYPE_NONE, BROAD_GAUGE_RAILTYPE_NONE];
+        track_type: [BROAD_GAUGE_RAILTYPE_NONE];
         running_cost_base: RUNNING_COST_DIESEL;
         engine_class: ENGINE_CLASS_DIESEL;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
@@ -40,7 +46,7 @@ item(FEAT_TRAINS, item_mu_coach_gen4_russian_mail_coach) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/diesel"];
+	badges: ["power/diesel"];
 
     }
     graphics {

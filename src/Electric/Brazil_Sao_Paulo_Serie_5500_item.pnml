@@ -3,7 +3,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02C. Data from: https://pt.wikipedia.org/wiki/TUE_S%C3%A9rie_5500_(Fepasa)
+// Template: TPL_02C.
+// Data from: https://pt.wikipedia.org/wiki/TUE_S%C3%A9rie_5500_(Fepasa)
 
 item(FEAT_TRAINS, item_mtro_brazil_sao_paulo_serie_5500) {
     property {
@@ -40,7 +41,7 @@ item(FEAT_TRAINS, item_mtro_brazil_sao_paulo_serie_5500) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/metro", "flag/BR"];
+	badges: ["power/metro", "flag/BR"];
 
     }
     graphics {

@@ -3,7 +3,12 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A. Data from: https://en.wikipedia.org/wiki/New_South_Wales_Hunter_railcar
+// Template: TPL_02A.
+// Data from: https://en.wikipedia.org/wiki/New_South_Wales_Hunter_railcar
+
+// Notes:
+//// WAGON_CAPACITY: 70 -- Again, none, really, this doesn't take trailers IRL
+
 
 // Cargo capacity
 
@@ -55,7 +60,7 @@ item(FEAT_TRAINS, item_dmu_australia_cityrail_hunter_railcar) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/diesel", "flag/AU"];
+	badges: ["power/diesel", "flag/AU"];
 
     }
     graphics {

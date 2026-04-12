@@ -3,7 +3,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_04A. Data from: nan
+// Template: TPL_04A.
+// Data from: nan
 
 item(FEAT_TRAINS, item_mu_coach_gen1_wooden_2_axle_compartment_coach) {
     property {
@@ -14,9 +15,9 @@ item(FEAT_TRAINS, item_mu_coach_gen1_wooden_2_axle_compartment_coach) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 10.44632;
-        running_cost_factor: 10.03926;
-        speed: 50 km/h;
+        cost_factor: 10.43195;
+        running_cost_factor: 10.03639;
+        speed: 40 km/h;
         power: 0 hp;
         cargo_capacity: 20;
         weight: 5 ton;
@@ -40,7 +41,7 @@ item(FEAT_TRAINS, item_mu_coach_gen1_wooden_2_axle_compartment_coach) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/diesel"];
+	badges: ["power/diesel"];
 
     }
     graphics {

@@ -3,7 +3,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03A. Data from: https://es.wikipedia.org/wiki/Administraci%C3%B3n_de_Ferrocarriles_del_Estado
+// Template: TPL_03A.
+// Data from: https://es.wikipedia.org/wiki/Administraci%C3%B3n_de_Ferrocarriles_del_Estado
 
 item(FEAT_TRAINS, item_steam_uruguay_afe_n1_2_6_0) {
     property {
@@ -40,7 +41,7 @@ item(FEAT_TRAINS, item_steam_uruguay_afe_n1_2_6_0) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/steam", "flag/UY"];
+	badges: ["power/steam", "flag/UY"];
 
     }
     graphics {

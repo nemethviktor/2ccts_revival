@@ -3,7 +3,13 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02E. Data from: nan
+// Template: TPL_02E.
+// Data from: https://en.wikipedia.org/wiki/PBKA
+
+// Notes:
+//// WEIGHT: 68 -- Not 38t; that's a simplified 380 total/10 cars division, but unlikely
+//// TE_STARTING_KN: =210/2 -- Gemini says 210 for the total set but unclear otherwise. "optimized for the 3.5% ramps of the LGV"
+
 
 // Cargo capacity
 
@@ -29,13 +35,13 @@ item(FEAT_TRAINS, item_emu_france_thalys_pbka) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 115.84802;
-        running_cost_factor: 111.0543;
+        cost_factor: 116.9077;
+        running_cost_factor: 109.41398;
         speed: 300 km/h;
-        power: 12000 hp;
+        power: 11800 hp;
         cargo_capacity: 0;
-        weight: 41 ton;
-        tractive_effort_coefficient: 0.85;
+        weight: 68 ton;
+        tractive_effort_coefficient: 0.157;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -55,7 +61,7 @@ item(FEAT_TRAINS, item_emu_france_thalys_pbka) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/FR"];
+	badges: ["power/electric", "flag/FR"];
 
     }
     graphics {
@@ -73,18 +79,18 @@ badges: ["power/electric", "flag/FR"];
     livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
         running_cost_factor: int(300/10);
-        weight: int(41*1/2);
+        weight: int(68*1/2);
         cargo_capacity: 47;
         length: 6;
         default: switch_emu_france_thalys_pbka_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        running_cost_factor: (round(75.85308734714287));
-        power: int(12000*1/2);
-        weight: int(41*3/4);
+        running_cost_factor: (round(51.58435484285022));
+        power: int(11800*1/2);
+        weight: int(68*3/4);
         cargo_capacity: 47;
-        tractive_effort_coefficient: int(0.85*10*41);
+        tractive_effort_coefficient: int(0.157*10*68);
         length: 6;
         default: switch_emu_france_thalys_pbka_cargo_selection;
     }

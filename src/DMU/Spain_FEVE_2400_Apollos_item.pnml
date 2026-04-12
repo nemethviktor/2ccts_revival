@@ -3,7 +3,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A. Data from: https://es.wikipedia.org/wiki/Serie_524_de_Renfe
+// Template: TPL_02A.
+// Data from: https://es.wikipedia.org/wiki/Serie_524_de_Renfe
 
 // Cargo capacity
 
@@ -55,7 +56,7 @@ item(FEAT_TRAINS, item_dmu_spain_feve_2400_apollos) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/diesel", "flag/ES"];
+	badges: ["power/diesel", "flag/ES"];
 
     }
     graphics {

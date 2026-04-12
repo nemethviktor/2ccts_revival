@@ -3,7 +3,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_32B. Data from: https://en.wikipedia.org/wiki/CSAR_Railmotor
+// Template: TPL_32B.
+// Data from: https://en.wikipedia.org/wiki/CSAR_Railmotor
 
 // Cargo capacity
 
@@ -60,7 +61,7 @@ item(FEAT_TRAINS, item_rbs_south_africa_csar_railmotor) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/steam", "flag/ZA"];
+	badges: ["power/steam", "flag/ZA"];
 
     }
     graphics {

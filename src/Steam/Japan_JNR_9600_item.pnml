@@ -3,7 +3,12 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03A. Data from: nan
+// Template: TPL_03A.
+// Data from: https://en.wikipedia.org/wiki/JNR_Class_9600
+
+// Notes:
+//// TE_STARTING_KN: 139 -- Wiki
+
 
 item(FEAT_TRAINS, item_steam_japan_jnr_9600) {
     property {
@@ -20,7 +25,7 @@ item(FEAT_TRAINS, item_steam_japan_jnr_9600) {
         power: 870 hp;
         cargo_capacity: 0;
         weight: 95 ton;
-        tractive_effort_coefficient: 0.15;
+        tractive_effort_coefficient: 0.149;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -40,7 +45,7 @@ item(FEAT_TRAINS, item_steam_japan_jnr_9600) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/steam", "flag/JP"];
+	badges: ["power/steam", "flag/JP"];
 
     }
     graphics {

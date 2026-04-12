@@ -3,7 +3,12 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A. Data from: nan
+// Template: TPL_02A.
+// Data from: https://de.wikipedia.org/wiki/Stadler_Flirt
+
+// Notes:
+//// TE_STARTING_KN: =200/2 -- DE wiki
+
 
 // Cargo capacity
 
@@ -29,13 +34,13 @@ item(FEAT_TRAINS, item_emu_switzerland_sbb_rabe_523_flirt) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 34.20042;
-        running_cost_factor: 30.5891;
+        cost_factor: 59.78269;
+        running_cost_factor: 56.17137;
         speed: 160 km/h;
-        power: 670 hp;
+        power: 2682 hp;
         cargo_capacity: 50;
         weight: 31 ton;
-        tractive_effort_coefficient: 0.65;
+        tractive_effort_coefficient: 0.329;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -55,7 +60,7 @@ item(FEAT_TRAINS, item_emu_switzerland_sbb_rabe_523_flirt) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/CH"];
+	badges: ["power/electric", "flag/CH"];
 
     }
     graphics {
@@ -80,11 +85,11 @@ badges: ["power/electric", "flag/CH"];
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(38.738480512939375));
-        power: int(670*1/2);
+        running_cost_factor: (round(31.3778067269874));
+        power: int(2682*1/2);
         weight: int(31*3/4);
         cargo_capacity: 50;
-        tractive_effort_coefficient: int(0.65*10*31);
+        tractive_effort_coefficient: int(0.329*10*31);
         length: 7;
         default: switch_emu_switzerland_sbb_rabe_523_flirt_cargo_selection;
     }

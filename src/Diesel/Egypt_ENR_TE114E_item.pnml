@@ -3,7 +3,12 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A. Data from: https://ru.wikipedia.org/wiki/%D0%A2%D0%AD114
+// Template: TPL_01A.
+// Data from: https://ru.wikipedia.org/wiki/%D0%A2%D0%AD114
+
+// Notes:
+//// TE_STARTING_KN: 365 -- Gemini
+
 
 item(FEAT_TRAINS, item_diesel_egypt_enr_te114e) {
     property {
@@ -40,7 +45,7 @@ item(FEAT_TRAINS, item_diesel_egypt_enr_te114e) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/diesel", "flag/EG"];
+	badges: ["power/diesel", "flag/EG"];
 
     }
     graphics {

@@ -3,7 +3,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A. Data from: nan
+// Template: TPL_02A.
+// Data from: https://en.wikipedia.org/wiki/New_Zealand_EM_class_electric_multiple_unit
 
 // Cargo capacity
 
@@ -29,13 +30,13 @@ item(FEAT_TRAINS, item_emu_new_zealand_nzr_em_et_class) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 32.29098;
-        running_cost_factor: 28.16029;
-        speed: 110 km/h;
+        cost_factor: 32.19367;
+        running_cost_factor: 28.02963;
+        speed: 95 km/h;
         power: 540 hp;
         cargo_capacity: 74;
         weight: 37 ton;
-        tractive_effort_coefficient: 0.26;
+        tractive_effort_coefficient: 0.136;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -55,7 +56,7 @@ item(FEAT_TRAINS, item_emu_new_zealand_nzr_em_et_class) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/NZ"];
+	badges: ["power/electric", "flag/NZ"];
 
     }
     graphics {
@@ -72,7 +73,7 @@ badges: ["power/electric", "flag/NZ"];
     }
     livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: int(110/10);
+        running_cost_factor: int(95/10);
         weight: int(37*1/2);
         cargo_capacity: 74;
         length: 8;
@@ -80,11 +81,11 @@ badges: ["power/electric", "flag/NZ"];
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(22.943952140860134));
+        running_cost_factor: (round(16.937552140860134));
         power: int(540*1/2);
         weight: int(37*3/4);
         cargo_capacity: 74;
-        tractive_effort_coefficient: int(0.26*10*37);
+        tractive_effort_coefficient: int(0.136*10*37);
         length: 8;
         default: switch_emu_new_zealand_nzr_em_et_class_cargo_selection;
     }

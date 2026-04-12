@@ -3,14 +3,15 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A. Data from: nan
+// Template: TPL_02A.
+// Data from: https://it.wikipedia.org/wiki/Automotrici_FS_ALe_801_e_ALe_940
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_emu_italy_fs_ale_801_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 108/2; \
-        bitmask(CC_ARMOURED): 108/4; \
-        108; \
+        bitmask(CC_MAIL): 80/2; \
+        bitmask(CC_ARMOURED): 80/4; \
+        80; \
     }
 
 
@@ -29,13 +30,13 @@ item(FEAT_TRAINS, item_emu_italy_fs_ale_801) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 39.60585;
-        running_cost_factor: 32.10979;
+        cost_factor: 38.89504;
+        running_cost_factor: 31.39898;
         speed: 150 km/h;
         power: 702 hp;
-        cargo_capacity: 108;
+        cargo_capacity: 80;
         weight: 70 ton;
-        tractive_effort_coefficient: 0.15;
+        tractive_effort_coefficient: 0.08;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -55,7 +56,7 @@ item(FEAT_TRAINS, item_emu_italy_fs_ale_801) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/IT"];
+	badges: ["power/electric", "flag/IT"];
 
     }
     graphics {
@@ -80,11 +81,11 @@ badges: ["power/electric", "flag/IT"];
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(28.149561228095155));
+        running_cost_factor: (round(23.249561228095157));
         power: int(702*1/2);
         weight: int(70*3/4);
         cargo_capacity: 108;
-        tractive_effort_coefficient: int(0.15*10*70);
+        tractive_effort_coefficient: int(0.08*10*70);
         length: 7;
         default: switch_emu_italy_fs_ale_801_cargo_selection;
     }

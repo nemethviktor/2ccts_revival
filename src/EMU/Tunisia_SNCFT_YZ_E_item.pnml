@@ -3,21 +3,27 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02D. Data from: nan
+// Template: TPL_02D.
+// Data from: nan
+
+// Notes:
+//// WEB: NA -- Can't find much on this
+//// TE_STARTING_KN: 125 -- 125 ea
+
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_emu_tunisia_sncft_yz_e_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 48/2; \
-        bitmask(CC_ARMOURED): 48/4; \
-        48; \
+        bitmask(CC_MAIL): 150/2; \
+        bitmask(CC_ARMOURED): 150/4; \
+        150; \
     }
 
 
     switch(FEAT_TRAINS, SELF, switch_emu_tunisia_sncft_yz_e_capacity_wagon, cargo_classes) { \
-        bitmask(CC_MAIL): 54/2; \
-        bitmask(CC_ARMOURED): 54/4; \
-        54; \
+        bitmask(CC_MAIL): 150/2; \
+        bitmask(CC_ARMOURED): 150/4; \
+        150; \
     }
 
 item(FEAT_TRAINS, item_emu_tunisia_sncft_yz_e) {
@@ -29,13 +35,13 @@ item(FEAT_TRAINS, item_emu_tunisia_sncft_yz_e) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 57.98245;
-        running_cost_factor: 52.55176;
-        speed: 110 km/h;
-        power: 2340 hp;
-        cargo_capacity: 48;
+        cost_factor: 56.84852;
+        running_cost_factor: 51.40077;
+        speed: 120 km/h;
+        power: 2010 hp;
+        cargo_capacity: 150;
         weight: 50 ton;
-        tractive_effort_coefficient: 0.2;
+        tractive_effort_coefficient: 0.255;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -55,7 +61,7 @@ item(FEAT_TRAINS, item_emu_tunisia_sncft_yz_e) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/TN"];
+	badges: ["power/electric", "flag/TN"];
 
     }
     graphics {
@@ -72,21 +78,21 @@ badges: ["power/electric", "flag/TN"];
     }
     livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: int(110/10);
+        running_cost_factor: int(120/10);
         weight: int(50*1/2);
         visual_effect_and_powered: switch_emu_tunisia_sncft_yz_e_visual_effect_and_powered_position;
-        cargo_capacity: 54;
+        cargo_capacity: 150;
         length: 8;
         default: switch_emu_tunisia_sncft_yz_e_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(25.837355640728752));
-        power: int(2340*1/2);
+        running_cost_factor: (round(29.23330250161105));
+        power: int(2010*1/2);
         weight: int(50*3/4);
         visual_effect_and_powered: switch_emu_tunisia_sncft_yz_e_visual_effect_and_powered_position;
-        cargo_capacity: 54;
-        tractive_effort_coefficient: int(0.2*10*50);
+        cargo_capacity: 150;
+        tractive_effort_coefficient: int(0.255*10*50);
         length: 8;
         default: switch_emu_tunisia_sncft_yz_e_cargo_selection;
     }

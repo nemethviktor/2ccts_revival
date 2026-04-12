@@ -3,7 +3,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02C. Data from: https://en.wikipedia.org/wiki/Rotterdam_Metro
+// Template: TPL_02C.
+// Data from: https://en.wikipedia.org/wiki/Rotterdam_Metro
 
 item(FEAT_TRAINS, item_mtro_netherlands_rotterdam_mg2_type_m) {
     property {
@@ -40,7 +41,7 @@ item(FEAT_TRAINS, item_mtro_netherlands_rotterdam_mg2_type_m) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/metro", "flag/NL"];
+	badges: ["power/metro", "flag/NL"];
 
     }
     graphics {

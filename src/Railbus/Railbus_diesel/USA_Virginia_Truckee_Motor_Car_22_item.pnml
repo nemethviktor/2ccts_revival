@@ -3,7 +3,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01B. Data from: https://en.wikipedia.org/wiki/Virginia_and_Truckee_Railway_Motor_Car_22
+// Template: TPL_01B.
+// Data from: https://en.wikipedia.org/wiki/Virginia_and_Truckee_Railway_Motor_Car_22
 
 // Cargo capacity
 
@@ -55,7 +56,7 @@ item(FEAT_TRAINS, item_rbd_usa_virginia_truckee_motor_car_22) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/diesel", "flag/US"];
+	badges: ["power/diesel", "flag/US"];
 
     }
     graphics {

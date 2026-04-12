@@ -3,7 +3,12 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_04A. Data from: nan
+// Template: TPL_04A.
+// Data from: nan
+
+// Notes:
+//// HEAD_CAPACITY: 255 -- Gemini (speculative concept)  - Dynamic mix of 120 seats + 160 standing - Game caps at 255.
+
 
 item(FEAT_TRAINS, item_mu_coach_gen6_grand_regio_coach) {
     property {
@@ -14,12 +19,12 @@ item(FEAT_TRAINS, item_mu_coach_gen6_grand_regio_coach) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 52.2555;
-        running_cost_factor: 50.0711;
-        speed: 200 km/h;
+        cost_factor: 129.68047;
+        running_cost_factor: 127.57609;
+        speed: 230 km/h;
         power: 0 hp;
-        cargo_capacity: 100;
-        weight: 38 ton;
+        cargo_capacity: 255;
+        weight: 36 ton;
         tractive_effort_coefficient: 0.3;
         air_drag_coefficient: 0;
 
@@ -40,7 +45,7 @@ item(FEAT_TRAINS, item_mu_coach_gen6_grand_regio_coach) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/diesel"];
+	badges: ["power/diesel"];
 
     }
     graphics {

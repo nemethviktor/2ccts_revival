@@ -3,7 +3,12 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A. Data from: https://ja.wikipedia.org/wiki/%E5%9B%BD%E9%89%84EB10%E5%BD%A2%E9%9B%BB%E6%B0%97%E6%A9%9F%E9%96%A2%E8%BB%8A
+// Template: TPL_01A.
+// Data from: https://ja.wikipedia.org/wiki/%E5%9B%BD%E9%89%84EB10%E5%BD%A2%E9%9B%BB%E6%B0%97%E6%A9%9F%E9%96%A2%E8%BB%8A
+
+// Notes:
+//// SPEED: 19 -- Max 40 but rated at 19
+
 
 item(FEAT_TRAINS, item_electric_japan_jnr_eb10) {
     property {
@@ -40,7 +45,7 @@ item(FEAT_TRAINS, item_electric_japan_jnr_eb10) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/JP"];
+	badges: ["power/electric", "flag/JP"];
 
     }
     graphics {

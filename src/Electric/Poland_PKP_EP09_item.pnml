@@ -3,7 +3,12 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A. Data from: https://en.wikipedia.org/wiki/PKP_class_EP09
+// Template: TPL_01A.
+// Data from: https://en.wikipedia.org/wiki/PKP_class_EP09
+
+// Notes:
+//// TE_STARTING_KN: 195 -- PL wiki
+
 
 item(FEAT_TRAINS, item_electric_poland_pkp_ep09) {
     property {
@@ -40,7 +45,7 @@ item(FEAT_TRAINS, item_electric_poland_pkp_ep09) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/PL"];
+	badges: ["power/electric", "flag/PL"];
 
     }
     graphics {

@@ -3,7 +3,13 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A. Data from: nan
+// Template: TPL_02A.
+// Data from: https://en.wikipedia.org/wiki/Shanghai_maglev_train
+
+// Notes:
+//// POWER: 13450 -- Gemini. Maglev doesn't have a comparable effect but this is to fake it
+//// TE_STARTING_KN: 450 -- Gemini. Maglev does not have a TE per se but this is to fake the effect.
+
 
 // Cargo capacity
 
@@ -29,13 +35,13 @@ item(FEAT_TRAINS, item_mglv_china_transrapid) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 53.30047;
-        running_cost_factor: 49.46793;
+        cost_factor: 127.85194;
+        running_cost_factor: 121.7194;
         speed: 433 km/h;
-        power: 2028 hp;
+        power: 13450 hp;
         cargo_capacity: 50;
-        weight: 30 ton;
-        tractive_effort_coefficient: 0.3;
+        weight: 53 ton;
+        tractive_effort_coefficient: 0.866;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -55,7 +61,7 @@ item(FEAT_TRAINS, item_mglv_china_transrapid) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/maglev", "flag/CN"];
+	badges: ["power/maglev", "flag/CN"];
 
     }
     graphics {
@@ -73,18 +79,18 @@ badges: ["power/maglev", "flag/CN"];
     livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
         running_cost_factor: int(433/10);
-        weight: int(30*1/2);
+        weight: int(53*1/2);
         cargo_capacity: 55;
         length: 8;
         default: switch_mglv_china_transrapid_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        running_cost_factor: (round(56.803332268063286));
-        power: int(2028*1/2);
-        weight: int(30*3/4);
+        running_cost_factor: (round(100.86987915878063));
+        power: int(13450*1/2);
+        weight: int(53*3/4);
         cargo_capacity: 55;
-        tractive_effort_coefficient: int(0.3*10*30);
+        tractive_effort_coefficient: int(0.866*10*53);
         length: 8;
         default: switch_mglv_china_transrapid_cargo_selection;
     }

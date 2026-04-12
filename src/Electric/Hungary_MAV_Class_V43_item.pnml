@@ -3,7 +3,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A. Data from: https://hu.wikipedia.org/wiki/M%C3%81V_V43_sorozat
+// Template: TPL_01A.
+// Data from: https://hu.wikipedia.org/wiki/M%C3%81V_V43_sorozat
 
 item(FEAT_TRAINS, item_electric_hungary_mav_class_v43) {
     property {
@@ -40,7 +41,7 @@ item(FEAT_TRAINS, item_electric_hungary_mav_class_v43) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/HU"];
+	badges: ["power/electric", "flag/HU"];
 
     }
     graphics {

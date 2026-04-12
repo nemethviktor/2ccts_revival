@@ -3,7 +3,12 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A. Data from: nan
+// Template: TPL_02A.
+// Data from: https://en.wikipedia.org/wiki/Acela_Express_(trainset)
+
+// Notes:
+//// TE_STARTING_KN: 220.2 -- 220kn each, as per wikipedia explicitly stating so
+
 
 // Cargo capacity
 
@@ -29,13 +34,13 @@ item(FEAT_TRAINS, item_emu_usa_amtrak_acela_express) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 122.26365;
-        running_cost_factor: 112.30992;
-        speed: 266 km/h;
-        power: 12400 hp;
+        cost_factor: 89.07961;
+        running_cost_factor: 79.15806;
+        speed: 240 km/h;
+        power: 6200 hp;
         cargo_capacity: 0;
         weight: 93 ton;
-        tractive_effort_coefficient: 0.24;
+        tractive_effort_coefficient: 0.241;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -55,7 +60,7 @@ item(FEAT_TRAINS, item_emu_usa_amtrak_acela_express) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/US"];
+	badges: ["power/electric", "flag/US"];
 
     }
     graphics {
@@ -72,7 +77,7 @@ badges: ["power/electric", "flag/US"];
     }
     livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: int(266/10);
+        running_cost_factor: int(240/10);
         weight: int(93*1/2);
         cargo_capacity: 50;
         length: 8;
@@ -80,11 +85,11 @@ badges: ["power/electric", "flag/US"];
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(60.1106487199895));
-        power: int(12400*1/2);
+        running_cost_factor: (round(54.289167819934136));
+        power: int(6200*1/2);
         weight: int(93*3/4);
         cargo_capacity: 50;
-        tractive_effort_coefficient: int(0.24*10*93);
+        tractive_effort_coefficient: int(0.241*10*93);
         length: 8;
         default: switch_emu_usa_amtrak_acela_express_cargo_selection;
     }

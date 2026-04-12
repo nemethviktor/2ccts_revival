@@ -3,7 +3,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02C. Data from: https://no.wikipedia.org/wiki/MX3000
+// Template: TPL_02C.
+// Data from: https://no.wikipedia.org/wiki/MX3000
 
 item(FEAT_TRAINS, item_mtro_norway_oslo_mx3000) {
     property {
@@ -40,7 +41,7 @@ item(FEAT_TRAINS, item_mtro_norway_oslo_mx3000) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/metro", "flag/NO"];
+	badges: ["power/metro", "flag/NO"];
 
     }
     graphics {

@@ -3,7 +3,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A. Data from: https://sk.wikipedia.org/wiki/Elektrick%C3%BD_ru%C5%A1e%C5%88_162
+// Template: TPL_01A.
+// Data from: https://sk.wikipedia.org/wiki/Elektrick%C3%BD_ru%C5%A1e%C5%88_162
 
 item(FEAT_TRAINS, item_electric_slovakia_zssk_162) {
     property {
@@ -40,7 +41,7 @@ item(FEAT_TRAINS, item_electric_slovakia_zssk_162) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/SK"];
+	badges: ["power/electric", "flag/SK"];
 
     }
     graphics {

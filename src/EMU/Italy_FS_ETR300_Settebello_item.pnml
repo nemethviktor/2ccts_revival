@@ -3,21 +3,26 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02D. Data from: nan
+// Template: TPL_02D.
+// Data from: https://en.wikipedia.org/wiki/FS_Class_ETR_300
+
+// Notes:
+//// POWER: 1020 -- Cont. rating for 2 head units
+
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_emu_italy_fs_etr300_settebello_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 28/2; \
-        bitmask(CC_ARMOURED): 28/4; \
-        28; \
+        bitmask(CC_MAIL): 27/2; \
+        bitmask(CC_ARMOURED): 27/4; \
+        27; \
     }
 
 
     switch(FEAT_TRAINS, SELF, switch_emu_italy_fs_etr300_settebello_capacity_wagon, cargo_classes) { \
-        bitmask(CC_MAIL): 28/2; \
-        bitmask(CC_ARMOURED): 28/4; \
-        28; \
+        bitmask(CC_MAIL): 27/2; \
+        bitmask(CC_ARMOURED): 27/4; \
+        27; \
     }
 
 item(FEAT_TRAINS, item_emu_italy_fs_etr300_settebello) {
@@ -29,13 +34,13 @@ item(FEAT_TRAINS, item_emu_italy_fs_etr300_settebello) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 31.8939;
-        running_cost_factor: 26.1251;
+        cost_factor: 40.39694;
+        running_cost_factor: 35.38529;
         speed: 200 km/h;
-        power: 500 hp;
-        cargo_capacity: 28;
-        weight: 52 ton;
-        tractive_effort_coefficient: 0.36;
+        power: 1020 hp;
+        cargo_capacity: 27;
+        weight: 44 ton;
+        tractive_effort_coefficient: 0.08;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -55,7 +60,7 @@ item(FEAT_TRAINS, item_emu_italy_fs_etr300_settebello) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/IT"];
+	badges: ["power/electric", "flag/IT"];
 
     }
     graphics {
@@ -73,20 +78,20 @@ badges: ["power/electric", "flag/IT"];
     livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
         running_cost_factor: int(200/10);
-        weight: int(52*1/2);
+        weight: int(44*1/2);
         visual_effect_and_powered: switch_emu_italy_fs_etr300_settebello_visual_effect_and_powered_position;
-        cargo_capacity: 28;
+        cargo_capacity: 27;
         length: 8;
         default: switch_emu_italy_fs_etr300_settebello_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        running_cost_factor: (round(40.95631327699715));
-        power: int(500*1/2);
-        weight: int(52*3/4);
+        running_cost_factor: (round(26.74803149495891));
+        power: int(1020*1/2);
+        weight: int(44*3/4);
         visual_effect_and_powered: switch_emu_italy_fs_etr300_settebello_visual_effect_and_powered_position;
-        cargo_capacity: 28;
-        tractive_effort_coefficient: int(0.36*10*52);
+        cargo_capacity: 27;
+        tractive_effort_coefficient: int(0.08*10*44);
         length: 8;
         default: switch_emu_italy_fs_etr300_settebello_cargo_selection;
     }

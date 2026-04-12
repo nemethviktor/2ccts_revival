@@ -3,7 +3,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A. Data from: nan
+// Template: TPL_02A.
+// Data from: https://en.wikipedia.org/wiki/Sydney_Trains_A_and_B_sets
 
 // Cargo capacity
 
@@ -29,13 +30,13 @@ item(FEAT_TRAINS, item_emu_australia_sydney_trains_a_set_waratah) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 44.78043;
-        running_cost_factor: 39.21612;
+        cost_factor: 73.78489;
+        running_cost_factor: 68.22057;
         speed: 130 km/h;
-        power: 1120 hp;
+        power: 3920 hp;
         cargo_capacity: 110;
         weight: 51 ton;
-        tractive_effort_coefficient: 0.25;
+        tractive_effort_coefficient: 0.11;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -55,7 +56,7 @@ item(FEAT_TRAINS, item_emu_australia_sydney_trains_a_set_waratah) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/AU"];
+	badges: ["power/electric", "flag/AU"];
 
     }
     graphics {
@@ -80,11 +81,11 @@ badges: ["power/electric", "flag/AU"];
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(29.09664085392604));
-        power: int(1120*1/2);
+        running_cost_factor: (round(24.871086537532655));
+        power: int(3920*1/2);
         weight: int(51*3/4);
         cargo_capacity: 110;
-        tractive_effort_coefficient: int(0.25*10*51);
+        tractive_effort_coefficient: int(0.11*10*51);
         length: 8;
         default: switch_emu_australia_sydney_trains_a_set_waratah_cargo_selection;
     }

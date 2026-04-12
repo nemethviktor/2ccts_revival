@@ -3,7 +3,12 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A. Data from: nan
+// Template: TPL_01A.
+// Data from: https://en.wikipedia.org/wiki/EP20
+
+// Notes:
+//// TE_STARTING_KN: 450 -- Gemini
+
 
 item(FEAT_TRAINS, item_electric_russia_rzd_ep20) {
     property {
@@ -20,7 +25,7 @@ item(FEAT_TRAINS, item_electric_russia_rzd_ep20) {
         power: 9655 hp;
         cargo_capacity: 0;
         weight: 135 ton;
-        tractive_effort_coefficient: 0.26;
+        tractive_effort_coefficient: 0.34;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -40,7 +45,7 @@ item(FEAT_TRAINS, item_electric_russia_rzd_ep20) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/RU"];
+	badges: ["power/electric", "flag/RU"];
 
     }
     graphics {

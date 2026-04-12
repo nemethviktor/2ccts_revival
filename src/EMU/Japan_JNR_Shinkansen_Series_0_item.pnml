@@ -3,21 +3,26 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02D. Data from: nan
+// Template: TPL_02D.
+// Data from: https://en.wikipedia.org/wiki/0_Series_Shinkansen
+
+// Notes:
+//// TE_STARTING_KN: 65 -- 65kN each
+
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_emu_japan_jnr_shinkansen_series_0_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 50/2; \
-        bitmask(CC_ARMOURED): 50/4; \
-        50; \
+        bitmask(CC_MAIL): 75/2; \
+        bitmask(CC_ARMOURED): 75/4; \
+        75; \
     }
 
 
     switch(FEAT_TRAINS, SELF, switch_emu_japan_jnr_shinkansen_series_0_capacity_wagon, cargo_classes) { \
-        bitmask(CC_MAIL): 50/2; \
-        bitmask(CC_ARMOURED): 50/4; \
-        50; \
+        bitmask(CC_MAIL): 100/2; \
+        bitmask(CC_ARMOURED): 100/4; \
+        100; \
     }
 
 item(FEAT_TRAINS, item_emu_japan_jnr_shinkansen_series_0) {
@@ -29,13 +34,13 @@ item(FEAT_TRAINS, item_emu_japan_jnr_shinkansen_series_0) {
         vehicle_life: 44;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 41.97726;
-        running_cost_factor: 35.99487;
+        cost_factor: 55.85982;
+        running_cost_factor: 49.37744;
         speed: 210 km/h;
-        power: 1000 hp;
-        cargo_capacity: 50;
-        weight: 54 ton;
-        tractive_effort_coefficient: 0.3;
+        power: 1984 hp;
+        cargo_capacity: 75;
+        weight: 59 ton;
+        tractive_effort_coefficient: 0.112;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -55,7 +60,7 @@ item(FEAT_TRAINS, item_emu_japan_jnr_shinkansen_series_0) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/JP"];
+	badges: ["power/electric", "flag/JP"];
 
     }
     graphics {
@@ -73,20 +78,20 @@ badges: ["power/electric", "flag/JP"];
     livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
         running_cost_factor: int(210/10);
-        weight: int(54*1/2);
+        weight: int(59*1/2);
         visual_effect_and_powered: switch_emu_japan_jnr_shinkansen_series_0_visual_effect_and_powered_position;
-        cargo_capacity: 50;
+        cargo_capacity: 100;
         length: 8;
         default: switch_emu_japan_jnr_shinkansen_series_0_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        running_cost_factor: (round(40.36227992884419));
-        power: int(1000*1/2);
-        weight: int(54*3/4);
+        running_cost_factor: (round(32.06221161063252));
+        power: int(1984*1/2);
+        weight: int(59*3/4);
         visual_effect_and_powered: switch_emu_japan_jnr_shinkansen_series_0_visual_effect_and_powered_position;
-        cargo_capacity: 50;
-        tractive_effort_coefficient: int(0.3*10*54);
+        cargo_capacity: 100;
+        tractive_effort_coefficient: int(0.112*10*59);
         length: 8;
         default: switch_emu_japan_jnr_shinkansen_series_0_cargo_selection;
     }

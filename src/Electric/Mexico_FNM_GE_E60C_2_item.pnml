@@ -3,7 +3,12 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A. Data from: https://en.wikipedia.org/wiki/GE_E60#Ferrocarriles_Nacionales_de_M%C3%A9xico
+// Template: TPL_01A.
+// Data from: https://en.wikipedia.org/wiki/GE_E60#Ferrocarriles_Nacionales_de_M%C3%A9xico
+
+// Notes:
+//// TE_STARTING_KN: 520 -- This whole set is a right mess but the 'design' part of wikipedia explains it pretty well, just have to read, not tabular text.
+
 
 item(FEAT_TRAINS, item_electric_mexico_fnm_ge_e60c_2) {
     property {
@@ -40,7 +45,7 @@ item(FEAT_TRAINS, item_electric_mexico_fnm_ge_e60c_2) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/MX"];
+	badges: ["power/electric", "flag/MX"];
 
     }
     graphics {

@@ -3,7 +3,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01B. Data from: https://fr.wikipedia.org/wiki/CP_s%C3%A9rie_9050
+// Template: TPL_01B.
+// Data from: https://fr.wikipedia.org/wiki/CP_s%C3%A9rie_9050
 
 // Cargo capacity
 
@@ -55,7 +56,7 @@ item(FEAT_TRAINS, item_rbd_portugal_cp_usd_9050) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/diesel", "flag/PT"];
+	badges: ["power/diesel", "flag/PT"];
 
     }
     graphics {

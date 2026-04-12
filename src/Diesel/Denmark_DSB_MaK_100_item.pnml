@@ -3,7 +3,12 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A. Data from: https://da.wikipedia.org/wiki/Litra_MH
+// Template: TPL_01A.
+// Data from: https://da.wikipedia.org/wiki/Litra_MH
+
+// Notes:
+//// TE_STARTING_KN: 110 -- Gemini
+
 
 item(FEAT_TRAINS, item_diesel_denmark_dsb_mak_100) {
     property {
@@ -40,7 +45,7 @@ item(FEAT_TRAINS, item_diesel_denmark_dsb_mak_100) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/diesel", "flag/DK"];
+	badges: ["power/diesel", "flag/DK"];
 
     }
     graphics {

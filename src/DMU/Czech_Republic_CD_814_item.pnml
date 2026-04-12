@@ -3,7 +3,14 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A. Data from: https://cs.wikipedia.org/wiki/Motorov%C3%A1_jednotka_814
+// Template: TPL_02A.
+// Data from: https://cs.wikipedia.org/wiki/Motorov%C3%A1_jednotka_814
+
+// Notes:
+//// HEAD_CAPACITY: =INT((135+151)/3) -- DE wiki, standing+seating
+//// TE_STARTING_KN: =54/2 -- DE wiki
+//// WAGON_CAPACITY: =INT((135+151)/3) -- DE wiki, standing+seating
+
 
 // Cargo capacity
 
@@ -55,7 +62,7 @@ item(FEAT_TRAINS, item_dmu_czech_republic_cd_814) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/diesel", "flag/CZ"];
+	badges: ["power/diesel", "flag/CZ"];
 
     }
     graphics {

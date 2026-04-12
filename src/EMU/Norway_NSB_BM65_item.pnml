@@ -3,7 +3,13 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A. Data from: nan
+// Template: TPL_02A.
+// Data from: https://no.wikipedia.org/wiki/Type_65_(motorvognsett)
+
+// Notes:
+//// WEIGHT: =(47+30)/2 -- EN wiki -> motor car 47t, 3rd [end] car 30t
+//// TE_STARTING_KN: =85/2 -- Gemini
+
 
 // Cargo capacity
 
@@ -29,13 +35,13 @@ item(FEAT_TRAINS, item_emu_norway_nsb_bm65) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 33.54208;
-        running_cost_factor: 29.3858;
+        cost_factor: 33.27546;
+        running_cost_factor: 29.06918;
         speed: 70 km/h;
-        power: 632 hp;
+        power: 622 hp;
         cargo_capacity: 50;
         weight: 38 ton;
-        tractive_effort_coefficient: 0.23;
+        tractive_effort_coefficient: 0.113;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -55,7 +61,7 @@ item(FEAT_TRAINS, item_emu_norway_nsb_bm65) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/NO"];
+	badges: ["power/electric", "flag/NO"];
 
     }
     graphics {
@@ -80,11 +86,11 @@ badges: ["power/electric", "flag/NO"];
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(18.25402557880777));
-        power: int(632*1/2);
+        running_cost_factor: (round(13.84456399052715));
+        power: int(622*1/2);
         weight: int(38*3/4);
         cargo_capacity: 50;
-        tractive_effort_coefficient: int(0.23*10*38);
+        tractive_effort_coefficient: int(0.113*10*38);
         length: 7;
         default: switch_emu_norway_nsb_bm65_cargo_selection;
     }

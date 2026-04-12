@@ -3,7 +3,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02C. Data from: https://cs.wikipedia.org/wiki/Souprava_metra_E%C4%8Ds
+// Template: TPL_02C.
+// Data from: https://cs.wikipedia.org/wiki/Souprava_metra_E%C4%8Ds
 
 item(FEAT_TRAINS, item_mtro_czech_republic_prague_ecs_set) {
     property {
@@ -40,7 +41,7 @@ item(FEAT_TRAINS, item_mtro_czech_republic_prague_ecs_set) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/metro", "flag/CZ"];
+	badges: ["power/metro", "flag/CZ"];
 
     }
     graphics {

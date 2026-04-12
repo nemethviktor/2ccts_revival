@@ -3,7 +3,13 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A. Data from: nan
+// Template: TPL_02A.
+// Data from: https://en.wikipedia.org/wiki/AES_Railcar
+
+// Notes:
+//// POWER: =805*2 -- Technically just 805 because they ran as M+T setup, not M+M but alas.
+//// TE_STARTING_KN: 85 -- 85 each
+
 
 // Cargo capacity
 
@@ -29,13 +35,13 @@ item(FEAT_TRAINS, item_emu_chile_efe_aes_railcar) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 50.50928;
-        running_cost_factor: 43.94497;
+        cost_factor: 50.96126;
+        running_cost_factor: 45.29694;
         speed: 130 km/h;
-        power: 1500 hp;
+        power: 1610 hp;
         cargo_capacity: 88;
-        weight: 61 ton;
-        tractive_effort_coefficient: 0.21;
+        weight: 52 ton;
+        tractive_effort_coefficient: 0.167;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -55,7 +61,7 @@ item(FEAT_TRAINS, item_emu_chile_efe_aes_railcar) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/CL"];
+	badges: ["power/electric", "flag/CL"];
 
     }
     graphics {
@@ -73,18 +79,18 @@ badges: ["power/electric", "flag/CL"];
     livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: int(130/10);
-        weight: int(61*1/2);
+        weight: int(52*1/2);
         cargo_capacity: 92;
         length: 7;
         default: switch_emu_chile_efe_aes_railcar_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(29.682983349851515));
-        power: int(1500*1/2);
-        weight: int(61*3/4);
+        running_cost_factor: (round(25.696480529602145));
+        power: int(1610*1/2);
+        weight: int(52*3/4);
         cargo_capacity: 92;
-        tractive_effort_coefficient: int(0.21*10*61);
+        tractive_effort_coefficient: int(0.167*10*52);
         length: 7;
         default: switch_emu_chile_efe_aes_railcar_cargo_selection;
     }

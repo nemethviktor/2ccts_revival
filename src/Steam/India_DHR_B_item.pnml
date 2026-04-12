@@ -3,7 +3,12 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03A. Data from: https://en.wikipedia.org/wiki/DHR_B_Class
+// Template: TPL_03A.
+// Data from: https://en.wikipedia.org/wiki/DHR_B_Class
+
+// Notes:
+//// MODEL_LIFE: VEHICLE_NEVER_EXPIRES -- Still in active servie
+
 
 item(FEAT_TRAINS, item_steam_india_dhr_b) {
     property {
@@ -40,7 +45,7 @@ item(FEAT_TRAINS, item_steam_india_dhr_b) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/steam", "flag/IN"];
+	badges: ["power/steam", "flag/IN"];
 
     }
     graphics {

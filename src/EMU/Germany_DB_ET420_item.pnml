@@ -3,21 +3,28 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02D. Data from: nan
+// Template: TPL_02D.
+// Data from: https://de.wikipedia.org/wiki/DB-Baureihe_420
+
+// Notes:
+//// HEAD_CAPACITY: =INT((192+266)/3) -- Seated + standing [DE wiki]
+//// TE_STARTING_KN: 63 -- 63 per head unit
+//// WAGON_CAPACITY: =INT((192+266)/3) -- Seated + standing [DE wiki]
+
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_emu_germany_db_et420_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 76/2; \
-        bitmask(CC_ARMOURED): 76/4; \
-        76; \
+        bitmask(CC_MAIL): 152/2; \
+        bitmask(CC_ARMOURED): 152/4; \
+        152; \
     }
 
 
     switch(FEAT_TRAINS, SELF, switch_emu_germany_db_et420_capacity_wagon, cargo_classes) { \
-        bitmask(CC_MAIL): 76/2; \
-        bitmask(CC_ARMOURED): 76/4; \
-        76; \
+        bitmask(CC_MAIL): 152/2; \
+        bitmask(CC_ARMOURED): 152/4; \
+        152; \
     }
 
 item(FEAT_TRAINS, item_emu_germany_db_et420) {
@@ -29,13 +36,13 @@ item(FEAT_TRAINS, item_emu_germany_db_et420) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 41.70516;
-        running_cost_factor: 36.64907;
+        cost_factor: 57.8528;
+        running_cost_factor: 52.79671;
         speed: 125 km/h;
-        power: 1000 hp;
-        cargo_capacity: 76;
+        power: 2144 hp;
+        cargo_capacity: 152;
         weight: 46 ton;
-        tractive_effort_coefficient: 0.31;
+        tractive_effort_coefficient: 0.14;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -55,7 +62,7 @@ item(FEAT_TRAINS, item_emu_germany_db_et420) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/GDR"];
+	badges: ["power/electric", "flag/GDR"];
 
     }
     graphics {
@@ -75,18 +82,18 @@ badges: ["power/electric", "flag/GDR"];
         running_cost_factor: int(125/10);
         weight: int(46*1/2);
         visual_effect_and_powered: switch_emu_germany_db_et420_visual_effect_and_powered_position;
-        cargo_capacity: 76;
+        cargo_capacity: 152;
         length: 8;
         default: switch_emu_germany_db_et420_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(29.922279928844183));
-        power: int(1000*1/2);
+        running_cost_factor: (round(23.570335121497557));
+        power: int(2144*1/2);
         weight: int(46*3/4);
         visual_effect_and_powered: switch_emu_germany_db_et420_visual_effect_and_powered_position;
-        cargo_capacity: 76;
-        tractive_effort_coefficient: int(0.31*10*46);
+        cargo_capacity: 152;
+        tractive_effort_coefficient: int(0.14*10*46);
         length: 8;
         default: switch_emu_germany_db_et420_cargo_selection;
     }

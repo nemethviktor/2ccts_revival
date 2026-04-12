@@ -3,7 +3,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A. Data from: https://www.mainlinediesels.net/index.php?nav=1000909&lang=en
+// Template: TPL_01A.
+// Data from: https://www.mainlinediesels.net/index.php?nav=1000909&lang=en
 
 item(FEAT_TRAINS, item_diesel_iran_rai_de43ca_prima) {
     property {
@@ -40,7 +41,7 @@ item(FEAT_TRAINS, item_diesel_iran_rai_de43ca_prima) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/diesel", "flag/IR"];
+	badges: ["power/diesel", "flag/IR"];
 
     }
     graphics {

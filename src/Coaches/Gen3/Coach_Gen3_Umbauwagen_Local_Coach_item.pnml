@@ -3,7 +3,12 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_04A. Data from: nan
+// Template: TPL_04A.
+// Data from: nan
+
+// Notes:
+//// HEAD_CAPACITY: 72 -- Gemini
+
 
 item(FEAT_TRAINS, item_mu_coach_gen3_umbauwagen_local_coach) {
     property {
@@ -14,12 +19,12 @@ item(FEAT_TRAINS, item_mu_coach_gen3_umbauwagen_local_coach) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 36.72985;
-        running_cost_factor: 35.05597;
-        speed: 120 km/h;
+        cost_factor: 37.75817;
+        running_cost_factor: 36.05163;
+        speed: 100 km/h;
         power: 0 hp;
-        cargo_capacity: 70;
-        weight: 29 ton;
+        cargo_capacity: 72;
+        weight: 30 ton;
         tractive_effort_coefficient: 0.3;
         air_drag_coefficient: 0;
 
@@ -40,7 +45,7 @@ item(FEAT_TRAINS, item_mu_coach_gen3_umbauwagen_local_coach) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/diesel"];
+	badges: ["power/diesel"];
 
     }
     graphics {

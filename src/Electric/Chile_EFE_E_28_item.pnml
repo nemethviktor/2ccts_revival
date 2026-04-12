@@ -3,7 +3,12 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A. Data from: nan
+// Template: TPL_01A.
+// Data from: nan
+
+// Notes:
+//// TE_STARTING_KN: 200 -- All data Gemini bcs there doesn't appear to be anything else.
+
 
 item(FEAT_TRAINS, item_electric_chile_efe_e_28) {
     property {
@@ -40,7 +45,7 @@ item(FEAT_TRAINS, item_electric_chile_efe_e_28) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/CL"];
+	badges: ["power/electric", "flag/CL"];
 
     }
     graphics {

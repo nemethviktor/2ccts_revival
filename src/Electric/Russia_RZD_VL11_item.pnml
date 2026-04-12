@@ -3,7 +3,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03D. Data from: nan
+// Template: TPL_03D.
+// Data from: https://ru.wikipedia.org/wiki/%D0%92%D0%9B11
 
 item(FEAT_TRAINS, item_electric_russia_rzd_vl11) {
     property {
@@ -20,7 +21,7 @@ item(FEAT_TRAINS, item_electric_russia_rzd_vl11) {
         power: 7190 hp;
         cargo_capacity: 0;
         weight: 184 ton;
-        tractive_effort_coefficient: 0.33;
+        tractive_effort_coefficient: 0.271;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -40,7 +41,7 @@ item(FEAT_TRAINS, item_electric_russia_rzd_vl11) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/SU"];
+	badges: ["power/electric", "flag/SU"];
 
     }
     graphics {

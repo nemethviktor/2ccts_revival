@@ -3,7 +3,12 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_04A. Data from: nan
+// Template: TPL_04A.
+// Data from: nan
+
+// Notes:
+//// HEAD_CAPACITY: 60 -- Gemini - Limited by the shorter car length (~13m)
+
 
 item(FEAT_TRAINS, item_mu_coach_gen5_talgo_pendular_mail) {
     property {
@@ -14,12 +19,12 @@ item(FEAT_TRAINS, item_mu_coach_gen5_talgo_pendular_mail) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 15/2 : (param_loadingspeed == 2) ? 15*2 : 15;
-        cost_factor: 21.14631;
-        running_cost_factor: 20.07926;
-        speed: 250 km/h;
+        cost_factor: 31.2555;
+        running_cost_factor: 30.0711;
+        speed: 200 km/h;
         power: 0 hp;
-        cargo_capacity: 40;
-        weight: 15 ton;
+        cargo_capacity: 60;
+        weight: 18 ton;
         tractive_effort_coefficient: 0.3;
         air_drag_coefficient: 0;
 
@@ -40,7 +45,7 @@ item(FEAT_TRAINS, item_mu_coach_gen5_talgo_pendular_mail) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/diesel"];
+	badges: ["power/diesel"];
 
     }
     graphics {

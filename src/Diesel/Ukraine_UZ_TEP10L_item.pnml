@@ -3,7 +3,12 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A. Data from: https://ru.wikipedia.org/wiki/%D0%A2%D0%AD%D0%9F10%D0%9B
+// Template: TPL_01A.
+// Data from: https://ru.wikipedia.org/wiki/%D0%A2%D0%AD%D0%9F10%D0%9B
+
+// Notes:
+//// TE_STARTING_KN: 245 -- Gemini
+
 
 item(FEAT_TRAINS, item_diesel_ukraine_uz_tep10l) {
     property {
@@ -40,7 +45,7 @@ item(FEAT_TRAINS, item_diesel_ukraine_uz_tep10l) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/diesel", "flag/UA"];
+	badges: ["power/diesel", "flag/UA"];
 
     }
     graphics {

@@ -3,21 +3,27 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A. Data from: nan
+// Template: TPL_02A.
+// Data from: https://en.wikipedia.org/wiki/Stadler_KISS
+
+// Notes:
+//// WEIGHT: 78 -- 78t each
+//// TE_STARTING_KN: =200/2 -- Again, assuming 2 cars bcs EMU, which these were not.
+
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_emu_austria_westbahn_4010_kiss_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 84/2; \
-        bitmask(CC_ARMOURED): 84/4; \
-        84; \
+        bitmask(CC_MAIL): 60/2; \
+        bitmask(CC_ARMOURED): 60/4; \
+        60; \
     }
 
 
     switch(FEAT_TRAINS, SELF, switch_emu_austria_westbahn_4010_kiss_capacity_wagon, cargo_classes) { \
-        bitmask(CC_MAIL): 84/2; \
-        bitmask(CC_ARMOURED): 84/4; \
-        84; \
+        bitmask(CC_MAIL): 140/2; \
+        bitmask(CC_ARMOURED): 140/4; \
+        140; \
     }
 
 item(FEAT_TRAINS, item_emu_austria_westbahn_4010_kiss) {
@@ -29,13 +35,13 @@ item(FEAT_TRAINS, item_emu_austria_westbahn_4010_kiss) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 84.40993;
-        running_cost_factor: 78.64113;
+        cost_factor: 85.92269;
+        running_cost_factor: 77.55388;
         speed: 200 km/h;
         power: 5340 hp;
-        cargo_capacity: 84;
-        weight: 52 ton;
-        tractive_effort_coefficient: 0.62;
+        cargo_capacity: 60;
+        weight: 78 ton;
+        tractive_effort_coefficient: 0.131;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -44,7 +50,7 @@ item(FEAT_TRAINS, item_emu_austria_westbahn_4010_kiss) {
         misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
         refit_cost: 0;
         ai_special_flag: AI_FLAG_PASSENGER;
-        track_type: [STANDARD_GAUGE_RAILTYPE_15KV];
+        track_type: [STANDARD_GAUGE_RAILTYPE_OHLE];
         running_cost_base: RUNNING_COST_ELECTRIC;
         engine_class: ENGINE_CLASS_ELECTRIC;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
@@ -55,7 +61,7 @@ item(FEAT_TRAINS, item_emu_austria_westbahn_4010_kiss) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/AT"];
+	badges: ["power/electric", "flag/AT"];
 
     }
     graphics {
@@ -73,18 +79,18 @@ badges: ["power/electric", "flag/AT"];
     livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: int(200/10);
-        weight: int(52*1/2);
-        cargo_capacity: 84;
+        weight: int(78*1/2);
+        cargo_capacity: 140;
         length: 8;
         default: switch_emu_austria_westbahn_4010_kiss_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(59.54840058532809));
+        running_cost_factor: (round(37.52640058532809));
         power: int(5340*1/2);
-        weight: int(52*3/4);
-        cargo_capacity: 84;
-        tractive_effort_coefficient: int(0.62*10*52);
+        weight: int(78*3/4);
+        cargo_capacity: 140;
+        tractive_effort_coefficient: int(0.131*10*78);
         length: 8;
         default: switch_emu_austria_westbahn_4010_kiss_cargo_selection;
     }

@@ -3,7 +3,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A. Data from: nan
+// Template: TPL_02A.
+// Data from: https://en.wikipedia.org/wiki/FS_Class_ETR_500
 
 // Cargo capacity
 
@@ -15,9 +16,9 @@
 
 
     switch(FEAT_TRAINS, SELF, switch_emu_italy_fs_etr500_capacity_wagon, cargo_classes) { \
-        bitmask(CC_MAIL): 60/2; \
-        bitmask(CC_ARMOURED): 60/4; \
-        60; \
+        bitmask(CC_MAIL): 68/2; \
+        bitmask(CC_ARMOURED): 68/4; \
+        68; \
     }
 
 item(FEAT_TRAINS, item_emu_italy_fs_etr500) {
@@ -29,13 +30,13 @@ item(FEAT_TRAINS, item_emu_italy_fs_etr500) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 115.73618;
-        running_cost_factor: 109.70207;
+        cost_factor: 115.65418;
+        running_cost_factor: 109.62007;
         speed: 250 km/h;
         power: 11800 hp;
         cargo_capacity: 0;
         weight: 54 ton;
-        tractive_effort_coefficient: 0.46;
+        tractive_effort_coefficient: 0.378;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -55,7 +56,7 @@ item(FEAT_TRAINS, item_emu_italy_fs_etr500) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/IT"];
+	badges: ["power/electric", "flag/IT"];
 
     }
     graphics {
@@ -74,17 +75,17 @@ badges: ["power/electric", "flag/IT"];
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
         running_cost_factor: int(250/10);
         weight: int(54*1/2);
-        cargo_capacity: 60;
+        cargo_capacity: 68;
         length: 8;
         default: switch_emu_italy_fs_etr500_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        running_cost_factor: (round(60.74835484285022));
+        running_cost_factor: (round(56.320354842850215));
         power: int(11800*1/2);
         weight: int(54*3/4);
-        cargo_capacity: 60;
-        tractive_effort_coefficient: int(0.46*10*54);
+        cargo_capacity: 68;
+        tractive_effort_coefficient: int(0.378*10*54);
         length: 8;
         default: switch_emu_italy_fs_etr500_cargo_selection;
     }

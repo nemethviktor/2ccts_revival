@@ -3,7 +3,12 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A. Data from: https://fr.wikipedia.org/wiki/Camrail
+// Template: TPL_02A.
+// Data from: https://fr.wikipedia.org/wiki/Camrail
+
+// Notes:
+//// WEB: https://fr.wikipedia.org/wiki/Camrail -- Pretty useless
+
 
 // Cargo capacity
 
@@ -55,7 +60,7 @@ item(FEAT_TRAINS, item_dmu_cameroon_camrail_ze_500) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/diesel", "flag/CM"];
+	badges: ["power/diesel", "flag/CM"];
 
     }
     graphics {

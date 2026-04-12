@@ -3,7 +3,12 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_04A. Data from: nan
+// Template: TPL_04A.
+// Data from: nan
+
+// Notes:
+//// HEAD_CAPACITY: 62 -- Gemini - Lower density for long-haul comfort
+
 
 item(FEAT_TRAINS, item_mu_coach_gen4_amfleet_intercity_coach) {
     property {
@@ -14,12 +19,12 @@ item(FEAT_TRAINS, item_mu_coach_gen4_amfleet_intercity_coach) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 32.8555;
-        running_cost_factor: 30.0711;
+        cost_factor: 33.8055;
+        running_cost_factor: 31.0711;
         speed: 200 km/h;
         power: 0 hp;
-        cargo_capacity: 60;
-        weight: 50 ton;
+        cargo_capacity: 62;
+        weight: 49 ton;
         tractive_effort_coefficient: 0.3;
         air_drag_coefficient: 0;
 
@@ -40,7 +45,7 @@ item(FEAT_TRAINS, item_mu_coach_gen4_amfleet_intercity_coach) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/diesel"];
+	badges: ["power/diesel"];
 
     }
     graphics {

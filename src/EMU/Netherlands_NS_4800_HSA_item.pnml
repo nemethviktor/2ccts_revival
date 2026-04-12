@@ -3,7 +3,14 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02E. Data from: nan
+// Template: TPL_02E.
+// Data from: nan
+
+// Notes:
+//// WEB: NA -- Actually, Gemini is adamant that this is the same as above (the V250 that is.) - more precisely it was a concept train that never really came to exist, then it became the v250 and failed altogether.
+//// POWER: =2213*2 -- Guesstimate. Train is concept unit.
+//// TE_STARTING_KN: 150 -- So this was a concept train that never existed, thus the value is pure guess.
+
 
 // Cargo capacity
 
@@ -29,13 +36,13 @@ item(FEAT_TRAINS, item_emu_netherlands_ns_4800_hsa) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 40.48814;
-        running_cost_factor: 36.29442;
+        cost_factor: 76.58994;
+        running_cost_factor: 70.69622;
         speed: 300 km/h;
-        power: 1000 hp;
+        power: 4426 hp;
         cargo_capacity: 42;
-        weight: 35 ton;
-        tractive_effort_coefficient: 0.8;
+        weight: 52 ton;
+        tractive_effort_coefficient: 0.294;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -55,7 +62,7 @@ item(FEAT_TRAINS, item_emu_netherlands_ns_4800_hsa) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/NL"];
+	badges: ["power/electric", "flag/NL"];
 
     }
     graphics {
@@ -73,18 +80,18 @@ badges: ["power/electric", "flag/NL"];
     livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
         running_cost_factor: int(300/10);
-        weight: int(35*1/2);
+        weight: int(52*1/2);
         cargo_capacity: 42;
         length: 8;
         default: switch_emu_netherlands_ns_4800_hsa_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        running_cost_factor: (round(61.162279928844185));
-        power: int(1000*1/2);
-        weight: int(35*3/4);
+        running_cost_factor: (round(51.94105997971073));
+        power: int(4426*1/2);
+        weight: int(52*3/4);
         cargo_capacity: 42;
-        tractive_effort_coefficient: int(0.8*10*35);
+        tractive_effort_coefficient: int(0.294*10*52);
         length: 8;
         default: switch_emu_netherlands_ns_4800_hsa_cargo_selection;
     }

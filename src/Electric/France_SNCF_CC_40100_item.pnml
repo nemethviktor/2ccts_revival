@@ -3,7 +3,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A. Data from: https://en.wikipedia.org/wiki/SNCF_CC_40100
+// Template: TPL_01A.
+// Data from: https://en.wikipedia.org/wiki/SNCF_CC_40100
 
 item(FEAT_TRAINS, item_electric_france_sncf_cc_40100) {
     property {
@@ -40,7 +41,7 @@ item(FEAT_TRAINS, item_electric_france_sncf_cc_40100) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/FR"];
+	badges: ["power/electric", "flag/FR"];
 
     }
     graphics {

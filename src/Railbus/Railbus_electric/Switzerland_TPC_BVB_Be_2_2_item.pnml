@@ -3,7 +3,12 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01B. Data from: nan
+// Template: TPL_01B.
+// Data from: nan
+
+// Notes:
+//// TE_STARTING_KN: 45 -- Gemini
+
 
 // Cargo capacity
 
@@ -29,13 +34,13 @@ item(FEAT_TRAINS, item_rbe_switzerland_tpc_bvb_be_2_2) {
         vehicle_life: 15;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 16.99142;
-        running_cost_factor: 15.20754;
-        speed: 37 km/h;
-        power: 144 hp;
+        cost_factor: 22.69048;
+        running_cost_factor: 20.93802;
+        speed: 25 km/h;
+        power: 320 hp;
         cargo_capacity: 20;
         weight: 15 ton;
-        tractive_effort_coefficient: 0.33;
+        tractive_effort_coefficient: 0.306;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -55,7 +60,7 @@ item(FEAT_TRAINS, item_rbe_switzerland_tpc_bvb_be_2_2) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/CH"];
+	badges: ["power/electric", "flag/CH"];
 
     }
     graphics {

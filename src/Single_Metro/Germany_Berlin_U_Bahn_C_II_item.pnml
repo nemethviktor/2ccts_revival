@@ -3,7 +3,12 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01D. Data from: nan
+// Template: TPL_01D.
+// Data from: https://de.wikipedia.org/wiki/BVG-Baureihe_C
+
+// Notes:
+//// TE_STARTING_KN: 42 -- Gemini
+
 
 // Cargo capacity
 
@@ -29,13 +34,13 @@ item(FEAT_TRAINS, item_singlemtro_germany_berlin_u_bahn_c_ii) {
         vehicle_life: 60;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 31.12887;
+        cost_factor: 30.64887;
         running_cost_factor: 25.79313;
         speed: 60 km/h;
         power: 375 hp;
         cargo_capacity: 157;
-        weight: 50 ton;
-        tractive_effort_coefficient: 0.07;
+        weight: 45 ton;
+        tractive_effort_coefficient: 0.095;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -55,7 +60,7 @@ item(FEAT_TRAINS, item_singlemtro_germany_berlin_u_bahn_c_ii) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/metro", "flag/DE"];
+	badges: ["power/metro", "flag/DE"];
 
     }
     graphics {

@@ -3,7 +3,12 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_04A. Data from: nan
+// Template: TPL_04A.
+// Data from: nan
+
+// Notes:
+//// HEAD_CAPACITY: 62 -- Gemini - 6-8 compartments, 8 seats each
+
 
 item(FEAT_TRAINS, item_mu_coach_gen2_steel_3_axle_compartment_coach) {
     property {
@@ -14,12 +19,12 @@ item(FEAT_TRAINS, item_mu_coach_gen2_steel_3_axle_compartment_coach) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 21.31918;
-        running_cost_factor: 20.05384;
-        speed: 110 km/h;
+        cost_factor: 32.59678;
+        running_cost_factor: 31.04936;
+        speed: 90 km/h;
         power: 0 hp;
-        cargo_capacity: 40;
-        weight: 21 ton;
+        cargo_capacity: 62;
+        weight: 27 ton;
         tractive_effort_coefficient: 0.3;
         air_drag_coefficient: 0;
 
@@ -40,7 +45,7 @@ item(FEAT_TRAINS, item_mu_coach_gen2_steel_3_axle_compartment_coach) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/diesel"];
+	badges: ["power/diesel"];
 
     }
     graphics {

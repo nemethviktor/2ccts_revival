@@ -3,7 +3,13 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03F. Data from: https://en.wikipedia.org/wiki/EMD_F40PH
+// Template: TPL_03F.
+// Data from: https://en.wikipedia.org/wiki/EMD_F40PH
+
+// Notes:
+//// INTRODUCTION_YEAR: 2001 -- Original 1976; PCRC service 2001
+//// TE_STARTING_KN: 289 -- Chinese wiki….
+
 
 item(FEAT_TRAINS, item_diesel_panama_panama_canal_railway_emd_f40ph) {
     property {
@@ -40,7 +46,7 @@ item(FEAT_TRAINS, item_diesel_panama_panama_canal_railway_emd_f40ph) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/diesel", "flag/PA"];
+	badges: ["power/diesel", "flag/PA"];
 
     }
     graphics {

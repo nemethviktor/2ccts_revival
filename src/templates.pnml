@@ -34,7 +34,7 @@ template template_purchase_wagon(x, y) {
 //Unit wagons
 template template_purchase_wagon_special(x, y) {
     //[left_x   ,  upper_y  , width , height, offset_x  , offset_y  , file]
-    [x          , y         ,  43   , 12    , -25       , -8]
+    [x          , y         ,  53   , 12    , -25       , -8]
 }
 
 template template_wagon_special(x,y) {

@@ -3,21 +3,22 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_02A. Data from: nan
+// Template: TPL_02A.
+// Data from: https://nl.wikipedia.org/wiki/Stadsgewestelijk_Materieel
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_emu_netherlands_ns_plan_y_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 66/2; \
-        bitmask(CC_ARMOURED): 66/4; \
-        66; \
+        bitmask(CC_MAIL): 77/2; \
+        bitmask(CC_ARMOURED): 77/4; \
+        77; \
     }
 
 
     switch(FEAT_TRAINS, SELF, switch_emu_netherlands_ns_plan_y_capacity_wagon, cargo_classes) { \
-        bitmask(CC_MAIL): 66/2; \
-        bitmask(CC_ARMOURED): 66/4; \
-        66; \
+        bitmask(CC_MAIL): 77/2; \
+        bitmask(CC_ARMOURED): 77/4; \
+        77; \
     }
 
 item(FEAT_TRAINS, item_emu_netherlands_ns_plan_y) {
@@ -29,13 +30,13 @@ item(FEAT_TRAINS, item_emu_netherlands_ns_plan_y) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 34.33004;
-        running_cost_factor: 28.57395;
+        cost_factor: 52.12367;
+        running_cost_factor: 46.36757;
         speed: 125 km/h;
-        power: 572 hp;
-        cargo_capacity: 66;
+        power: 1720 hp;
+        cargo_capacity: 77;
         weight: 53 ton;
-        tractive_effort_coefficient: 0.19;
+        tractive_effort_coefficient: 0.154;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -55,7 +56,7 @@ item(FEAT_TRAINS, item_emu_netherlands_ns_plan_y) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/electric", "flag/NL"];
+	badges: ["power/electric", "flag/NL"];
 
     }
     graphics {
@@ -74,17 +75,17 @@ badges: ["power/electric", "flag/NL"];
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: int(125/10);
         weight: int(53*1/2);
-        cargo_capacity: 66;
+        cargo_capacity: 77;
         length: 8;
         default: switch_emu_netherlands_ns_plan_y_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(24.961769269499797));
-        power: int(572*1/2);
+        running_cost_factor: (round(24.809288276056446));
+        power: int(1720*1/2);
         weight: int(53*3/4);
-        cargo_capacity: 66;
-        tractive_effort_coefficient: int(0.19*10*53);
+        cargo_capacity: 77;
+        tractive_effort_coefficient: int(0.154*10*53);
         length: 8;
         default: switch_emu_netherlands_ns_plan_y_cargo_selection;
     }

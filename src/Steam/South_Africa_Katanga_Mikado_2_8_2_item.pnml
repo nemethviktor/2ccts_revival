@@ -3,7 +3,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03A. Data from: https://loco-info.com/view.aspx?id=17945&t=Country&cookies=decline
+// Template: TPL_03A.
+// Data from: https://loco-info.com/view.aspx?id=17945&t=Country&cookies=decline
 
 item(FEAT_TRAINS, item_steam_south_africa_katanga_mikado_2_8_2) {
     property {
@@ -40,7 +41,7 @@ item(FEAT_TRAINS, item_steam_south_africa_katanga_mikado_2_8_2) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/steam", "flag/ZA"];
+	badges: ["power/steam", "flag/ZA"];
 
     }
     graphics {

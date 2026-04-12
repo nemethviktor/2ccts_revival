@@ -3,14 +3,19 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01B. Data from: nan
+// Template: TPL_01B.
+// Data from: https://it.wikipedia.org/wiki/Automotrice_FS_ALn_56
+
+// Notes:
+//// TE_STARTING_KN: 32 -- Gemini
+
 
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_rbd_eritrea_eritrean_railway_a62_70_littorina_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 32/2; \
-        bitmask(CC_ARMOURED): 32/4; \
-        32; \
+        bitmask(CC_MAIL): 62/2; \
+        bitmask(CC_ARMOURED): 62/4; \
+        62; \
     }
 
 
@@ -29,13 +34,13 @@ item(FEAT_TRAINS, item_rbd_eritrea_eritrean_railway_a62_70_littorina) {
         vehicle_life: 15;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 20.75354;
-        running_cost_factor: 18.60129;
-        speed: 68 km/h;
-        power: 227 hp;
-        cargo_capacity: 32;
-        weight: 18 ton;
-        tractive_effort_coefficient: 0.26;
+        cost_factor: 24.17368;
+        running_cost_factor: 21.39773;
+        speed: 80 km/h;
+        power: 290 hp;
+        cargo_capacity: 62;
+        weight: 24 ton;
+        tractive_effort_coefficient: 0.136;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -51,11 +56,11 @@ item(FEAT_TRAINS, item_rbd_eritrea_eritrean_railway_a62_70_littorina) {
 
         sprite_id: SPRITE_ID_NEW_TRAIN;
         dual_headed: 0;
-        length: 5;
+        length: 7;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-badges: ["power/diesel", "flag/ER"];
+	badges: ["power/diesel", "flag/ER"];
 
     }
     graphics {
