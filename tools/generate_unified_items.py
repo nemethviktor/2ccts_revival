@@ -59,8 +59,8 @@ def load_master_data(excel_path):
 
     # 2. List of sheets that provide extra vehicle properties
     data_sheets = [
-        'properties', 'constants', 'flags', 'track_types',
-        'regions', 'graphics_properties'
+        'properties', 'flags', 'track_types',
+        'graphics_properties'
     ]
 
     text_columns = ['COUNTRY', 'COUNTRY_CODE', 'ITEM',
@@ -463,6 +463,14 @@ def generate_unified_items():
     script_dir = os.path.dirname(os.path.abspath(__file__))
     project_root = os.path.dirname(script_dir)
     excel_path = os.path.join(script_dir, 'vehicle_report.xlsx')
+    AIR_DRAG_COEFFICIENT = 0
+    BITMASK_VEHICLE_INFO = 0
+    CARGO_AGE_PERIOD = 185
+    POWER_PER_WAGON = 0
+    REFIT_COST = 0
+    RELIABILITY_DECAY = 20
+    RETIRE_EARLY = 20
+    SPRITE_ID = "SPRITE_ID_NEW_TRAIN"
 
     # 1. Load Data
     df_master, df_cost_lookup, copyright_text, notes_lookup = load_master_data(
@@ -476,6 +484,8 @@ def generate_unified_items():
         TEMPLATE_AMENDMENT_CODE = row['TEMPLATE_AMENDMENT_CODE']
 
         TEMPLATE_ID_FULL = f"{TEMPLATE_ID}{TEMPLATE_AMENDMENT_CODE}"
+
+        RUNNING_COST_BASE = f"RUNNING_COST_{'ELECTRIC' if row['ENGINE_CLASS'] == 'MAGLEV' else row['ENGINE_CLASS']}"
 
         # Fetch Multipliers
         category = str(row['COST_CAT']).strip()
@@ -585,7 +595,7 @@ def generate_unified_items():
         content.append(
             f"        model_life: {"VEHICLE_NEVER_EXPIRES" if row['MODEL_LIFE'] == "VEHICLE_NEVER_EXPIRES" else int(row['MODEL_LIFE'])};\n")
         content.append(f"        vehicle_life: {int(row['VEHICLE_LIFE'])};\n")
-        content.append(f"        retire_early: {int(row['RETIRE_EARLY'])};\n")
+        content.append(f"        retire_early: {RETIRE_EARLY};\n")
         content.append(f"        loading_speed: {ls_logic};\n")
         content.append(f"        cost_factor: {p_cost};\n")
         content.append(f"        running_cost_factor: {r_cost};\n")
@@ -597,30 +607,30 @@ def generate_unified_items():
         content.append(
             f"        tractive_effort_coefficient: {row['TE_COEFFICIENT']};\n")
         content.append(
-            f"        air_drag_coefficient: {int(row['AIR_DRAG_COEFFICIENT'])};\n\n")
+            f"        air_drag_coefficient: {AIR_DRAG_COEFFICIENT};\n\n")
         content.append(
-            f"        reliability_decay: {row['RELIABILITY_DECAY']};\n")
+            f"        reliability_decay: {RELIABILITY_DECAY};\n")
         content.append(f"        {get_cargo_definitions(row)}\n")
         content.append(
-            f"        cargo_age_period: {row['CARGO_AGE_PERIOD']};\n")
+            f"        cargo_age_period: {CARGO_AGE_PERIOD};\n")
         content.append(f"        misc_flags: {misc_logic};\n")
-        content.append(f"        refit_cost: {row['REFIT_COST']};\n")
+        content.append(f"        refit_cost: {REFIT_COST};\n")
         content.append(
             f"        ai_special_flag: {"AI_FLAG_PASSENGER" if is_true(row['PASSENGER']) else "AI_FLAG_CARGO"};\n")
         content.append(f"        track_type: {track_logic};\n")
         content.append(
-            f"        running_cost_base: {row['RUNNING_COST_BASE']};\n")
+            f"        running_cost_base: {RUNNING_COST_BASE};\n")
         content.append(
             f"        engine_class: {'ENGINE_CLASS_' + row['ENGINE_CLASS']};\n")
         content.append(
             f"        visual_effect_and_powered: visual_effect_and_powered({v1}, {row['VISUAL_EFFECT_2']}, {row['VISUAL_EFFECT_3']});\n\n")
-        content.append(f"        sprite_id: {row['SPRITE_ID']};\n")
+        content.append(f"        sprite_id: {SPRITE_ID};\n")
         content.append(f"        dual_headed: {int(row['DUAL_HEADED'])};\n")
         content.append(f"        length: {int(row['LENGTH'])};\n")
         content.append(
-            f"        extra_power_per_wagon: {int(row['POWER_PER_WAGON'])};\n")
+            f"        extra_power_per_wagon: {POWER_PER_WAGON};\n")
         content.append(
-            f"        bitmask_vehicle_info: {row['BITMASK_VEHICLE_INFO']};\n")
+            f"        bitmask_vehicle_info: {BITMASK_VEHICLE_INFO};\n")
 
         # Badges (ignore for now)
         content.append(f"{get_badges(row)}\n")

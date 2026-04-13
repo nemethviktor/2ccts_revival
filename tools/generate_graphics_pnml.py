@@ -3,8 +3,10 @@ from typing import Literal, Optional
 import pandas as pd
 import os
 from functools import wraps
-
+import warnings
 from pandas.api.types import is_number
+
+warnings.filterwarnings("ignore", category=UserWarning, module="openpyxl")
 
 # --- TEMPLATE GENERATORS ---
 
