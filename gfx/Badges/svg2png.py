@@ -67,12 +67,12 @@ def process_flags_final_attempt(svg_folder, output_folder, gloss_path, gpl_path)
 
     # Prep Gloss
     gloss_img = None
-    if os.path.exists(gloss_path):
-        gloss_img = Image.open(gloss_path).convert(
-            "RGBA").resize((18, 12), Image.Resampling.LANCZOS)
-        r, g, b, a = gloss_img.split()
-        gloss_img = Image.merge(
-            "RGBA", (r, g, b, a.point(lambda i: int(i * 0.30))))
+    # if os.path.exists(gloss_path):
+    #    gloss_img = Image.open(gloss_path).convert(
+    #        "RGBA").resize((18, 12), Image.Resampling.LANCZOS)
+    #    r, g, b, a = gloss_img.split()
+    #    gloss_img = Image.merge(
+    #        "RGBA", (r, g, b, a.point(lambda i: int(i * 0.30))))
 
     for file in os.listdir(svg_folder):
         if file.lower().endswith(".svg"):

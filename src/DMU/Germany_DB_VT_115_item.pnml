@@ -63,7 +63,7 @@ item(FEAT_TRAINS, item_dmu_germany_db_vt_115) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["power/diesel", "flag/GDR"];
+	badges: ["power/diesel", "flag/DE"];
 
     }
     graphics {

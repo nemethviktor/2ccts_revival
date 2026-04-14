@@ -136,7 +136,7 @@ STR_ZONE_LEISURE                                                :Leisure
 STR_ZONE_OTHER                                                  :Other
 
 # Country flags
-STR_FLAG                                                        :Flag
+STR_FLAG                                                        :Country
 STR_FLAG_AD                                                     :Andorra
 STR_FLAG_AE                                                     :United Arab Emirates
 STR_FLAG_AF                                                     :Afghanistan
