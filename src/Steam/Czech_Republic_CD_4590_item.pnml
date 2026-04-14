@@ -4,7 +4,7 @@
 
 
 // Template: TPL_03A.
-// Data from: nan
+// Data from: https://de.wikipedia.org/wiki/Klasse_1%E2%80%99D_Liberation
 
 item(FEAT_TRAINS, item_steam_czech_republic_cd_4590) {
     property {

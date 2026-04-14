@@ -11,9 +11,11 @@
 
 #define SORTING_RBS \
 item_rbs_austria_kkstb_4_0, /*Year: 1880*/ \
+item_rbs_gemany_hessian_ludwig_railway_type_thomas, /*Year: 1880*/ \
 item_rbs_australia_victorian_railways_rowan_railmotor, /*Year: 1883*/ \
 item_rbs_switzerland_uebb_czm_1_2, /*Year: 1902*/ \
 item_rbs_austria_nolb_1, /*Year: 1903*/ \
+item_rbs_austria_nolb_30_33, /*Year: 1905*/ \
 item_rbs_italy_fs_86, /*Year: 1906*/ \
 item_rbs_germany_bavarian_mcci, /*Year: 1906*/ \
 item_rbs_south_africa_csar_railmotor, /*Year: 1906*/ \
@@ -159,6 +161,7 @@ item_steam_italy_fs_480, /*Year: 1923*/ \
 item_steam_new_zealand_nzr_wab, /*Year: 1923*/ \
 item_steam_poland_pkp_ok22, /*Year: 1923*/ \
 item_steam_japan_jnr_d50, /*Year: 1923*/ \
+item_steam_mozambique_mozambique_railways_no_101, /*Year: 1923*/ \
 item_steam_croatia_hz_11, /*Year: 1924*/ \
 item_steam_india_indian_railways_xb_class, /*Year: 1927*/ \
 item_steam_uk_gwr_4900, /*Year: 1928*/ \
@@ -169,6 +172,7 @@ item_steam_australia_nswgr_d57, /*Year: 1929*/ \
 item_steam_netherlands_ns_6300, /*Year: 1930*/ \
 item_steam_usa_at_sf_5000, /*Year: 1930*/ \
 item_steam_argentina_fcca_ps11, /*Year: 1930*/ \
+item_steam_ivory_coast_golwe_2_6_0_0_6_2t, /*Year: 1930*/ \
 item_steam_france_sncf_150b, /*Year: 1934*/ \
 item_steam_uk_lms_5mt_black_five, /*Year: 1934*/ \
 item_steam_poland_pkp_okz32, /*Year: 1934*/ \
@@ -256,6 +260,7 @@ item_diesel_czech_republic_cd_720_chme2, /*Year: 1958*/ \
 item_diesel_finland_vr_dr12, /*Year: 1959*/ \
 item_diesel_romania_cfr_060_da, /*Year: 1959*/ \
 item_diesel_zimbabwe_zimbabwe_railways_dh_1, /*Year: 1959*/ \
+item_diesel_ghana_railway_corporation_class_tt12, /*Year: 1959*/ \
 item_diesel_brazil_bf_emd_gl8, /*Year: 1960*/ \
 item_diesel_brazil_efvm_ml4000, /*Year: 1960*/ \
 item_diesel_russia_rzd_tep60, /*Year: 1960*/ \
@@ -264,6 +269,7 @@ item_diesel_south_korea_korail_6000_emd_sd18, /*Year: 1960*/ \
 item_diesel_tunisia_sncft_040_df, /*Year: 1960*/ \
 item_diesel_belgium_nmbs_sncb_62, /*Year: 1961*/ \
 item_diesel_chile_efe_ge_u5b, /*Year: 1961*/ \
+item_diesel_sierra_leone_lamco_301_series, /*Year: 1962*/ \
 item_diesel_india_indian_railways_wdm_2, /*Year: 1963*/ \
 item_diesel_russia_rzd_emch_3, /*Year: 1963*/ \
 item_diesel_uk_br_14, /*Year: 1964*/ \
@@ -398,6 +404,7 @@ item_electric_poland_pkp_eu06, /*Year: 1962*/ \
 item_electric_brasil_rffsa_ge_c_c_4400, /*Year: 1962*/ \
 item_electric_russia_rzd_vl41, /*Year: 1963*/ \
 item_electric_hungary_mav_class_v43, /*Year: 1963*/ \
+item_electric_congo_type_2450_acec_charleroi_zaire_electric, /*Year: 1963*/ \
 item_electric_japan_jnr_ef64, /*Year: 1964*/ \
 item_electric_france_sncf_cc_40100, /*Year: 1964*/ \
 item_electric_france_sncf_bb_25500, /*Year: 1964*/ \

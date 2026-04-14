@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_rbs_germany_bavarian_mcci, 1004) {}
 item(FEAT_TRAINS, item_rbs_south_africa_csar_railmotor, 1005) {}
 item(FEAT_TRAINS, item_rbs_australia_victorian_railways_motor_car_3, 1006) {}
 item(FEAT_TRAINS, item_rbs_austria_kkstb_4_0, 1007) {}
-// 1008 free
-// 1009 free
+item(FEAT_TRAINS, item_rbs_gemany_hessian_ludwig_railway_type_thomas, 1008) {}
+item(FEAT_TRAINS, item_rbs_austria_nolb_30_33, 1009) {}
 // 1010 free
 // 1011 free
 // 1012 free
@@ -1634,8 +1634,8 @@ item(FEAT_TRAINS, item_steam_belgium_nmbs_sncb_type_29, 4114) {}
 item(FEAT_TRAINS, item_steam_chile_fcab_4_8_2, 4115) {}
 item(FEAT_TRAINS, item_steam_china_railways_qj, 4116) {}
 item(FEAT_TRAINS, item_steam_south_africa_katanga_mikado_2_8_2, 4117) {}
-// 4118 free
-// 4119 free
+item(FEAT_TRAINS, item_steam_mozambique_mozambique_railways_no_101, 4118) {}
+item(FEAT_TRAINS, item_steam_ivory_coast_golwe_2_6_0_0_6_2t, 4119) {}
 // 4120 free
 // 4121 free
 // 4122 free
@@ -2654,8 +2654,8 @@ item(FEAT_TRAINS, item_diesel_uk_br_68, 5131) {}
 item(FEAT_TRAINS, item_diesel_south_africa_sar_afro_4000, 5132) {}
 item(FEAT_TRAINS, item_diesel_usa_amtrak_charger, 5133) {}
 item(FEAT_TRAINS, item_diesel_gabon_alsthom_ad30b, 5134) {}
-// 5135 free
-// 5136 free
+item(FEAT_TRAINS, item_diesel_ghana_railway_corporation_class_tt12, 5135) {}
+item(FEAT_TRAINS, item_diesel_sierra_leone_lamco_301_series, 5136) {}
 // 5137 free
 // 5138 free
 // 5139 free
@@ -3658,7 +3658,7 @@ item(FEAT_TRAINS, item_electric_usa_amtrak_hhp_8, 6132) {}
 item(FEAT_TRAINS, item_electric_brasil_mrs_he_4_4, 6133) {}
 item(FEAT_TRAINS, item_electric_russia_rzd_vl11, 6134) {}
 item(FEAT_TRAINS, item_electric_germany_prussian_es_6, 6135) {}
-// 6136 free
+item(FEAT_TRAINS, item_electric_congo_type_2450_acec_charleroi_zaire_electric, 6136) {}
 // 6137 free
 // 6138 free
 // 6139 free

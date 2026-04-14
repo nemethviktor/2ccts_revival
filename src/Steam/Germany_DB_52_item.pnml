@@ -4,7 +4,7 @@
 
 
 // Template: TPL_03A.
-// Data from: https://de.wikipedia.org/wiki/DR-Baureihe_52
+// Data from: https://en.wikipedia.org/wiki/DRB_Class_52
 
 item(FEAT_TRAINS, item_steam_germany_db_52) {
     property {

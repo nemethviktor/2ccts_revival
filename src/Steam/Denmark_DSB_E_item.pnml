@@ -4,7 +4,7 @@
 
 
 // Template: TPL_03A.
-// Data from: https://da.wikipedia.org/wiki/Litra_E
+// Data from: https://en.wikipedia.org/wiki/SJ_F_(steam_locomotive)
 
 item(FEAT_TRAINS, item_steam_denmark_dsb_e) {
     property {

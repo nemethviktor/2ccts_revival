@@ -4,7 +4,7 @@
 
 
 // Template: TPL_03A.
-// Data from: https://fr.wikipedia.org/wiki/140-101_%C3%A0_370_%C3%89tat_ou_140_C_SNCF
+// Data from: https://en.wikipedia.org/wiki/%C3%89tat_140-101_to_140-370
 
 item(FEAT_TRAINS, item_steam_france_sncf_140c) {
     property {

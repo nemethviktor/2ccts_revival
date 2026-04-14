@@ -1619,7 +1619,7 @@ switch(FEAT_TRAINS, SELF, switch_{vid}_cargo_selection, cargo_type_in_veh) {{
 def get_tpl_16(vid, gfx_path, row, template_amendment_code):
     """
     12-Length Vehicles(TPL_16): param template_amendment_code:
-        A -> Generic 12L
+        A -> Generic 12L (articulated)
         B -> Turbobus only
     """
 
@@ -1664,12 +1664,14 @@ def get_tpl_16(vid, gfx_path, row, template_amendment_code):
 
 def get_tpl_17(vid, gfx_path, row, template_amendment_code):
     """
-    Normal length vehicles with front and back parts(TPL_17): param template_amendment_code:
-        A -> Normal Front/Back
-        B -> A/B Front/Back
-        C -> Front 1/2; Middle, Back 1/2
-        D -> Front 1/2; Middle 1/2, Back 1/2
-        E -> Front 1/2; No Middle, Back 1/2
+    Normal length vehicles with front and back parts(TPL_17)
+
+    :param template_amendment_code:
+        A -> Normal Front/Back (articulated)
+        B -> A/B Front/Back (not articulated?)
+        C -> Front 1/2; Middle, Back 1/2 (articulated)
+        D -> Front 1/2; Middle 1/2, Back 1/2 (articulated)
+        E -> Front 1/2; No Middle, Back 1/2 (articulated)
 
     """
     nml_code = []
@@ -1841,7 +1843,7 @@ def get_tpl_25(vid, gfx_path, row, template_amendment_code):
     :param vid: The vehicle id
     :param gfx_path: The png path
     :param row: The row
-    :param template_amendment_code: A-> Superheavy Wagon; no others atm.
+    :param template_amendment_code: A-> Superheavy Wagon (articulated); no others atm.
     """
 
     nml_code = []

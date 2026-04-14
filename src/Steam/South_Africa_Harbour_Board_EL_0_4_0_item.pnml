@@ -19,13 +19,13 @@ item(FEAT_TRAINS, item_steam_south_africa_harbour_board_el_0_4_0) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 8.95807;
+        cost_factor: 8.35807;
         running_cost_factor: 7.3341;
         speed: 16 km/h;
         power: 40 hp;
         cargo_capacity: 0;
-        weight: 14 ton;
-        tractive_effort_coefficient: 0.106;
+        weight: 8 ton;
+        tractive_effort_coefficient: 0.186;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

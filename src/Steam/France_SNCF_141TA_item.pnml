@@ -4,7 +4,7 @@
 
 
 // Template: TPL_03C.
-// Data from: https://fr.wikipedia.org/wiki/T14_AL_et_ex-Prusse
+// Data from: https://en.wikipedia.org/wiki/Prussian_T_14
 
 item(FEAT_TRAINS, item_steam_france_sncf_141ta) {
     property {
