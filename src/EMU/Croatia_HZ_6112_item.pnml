@@ -60,7 +60,7 @@ item(FEAT_TRAINS, item_emu_croatia_hz_6112) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["power/electric", "flag/HR"];
+	badges: ["power/electric/ac", "flag/HR"];
 
     }
     graphics {

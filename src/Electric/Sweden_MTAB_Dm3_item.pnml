@@ -45,7 +45,7 @@ item(FEAT_TRAINS, item_electric_sweden_mtab_dm3) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["power/electric", "flag/SE"];
+	badges: ["power/electric/ac", "flag/SE"];
 
     }
     graphics {

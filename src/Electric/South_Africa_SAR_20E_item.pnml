@@ -41,7 +41,7 @@ item(FEAT_TRAINS, item_electric_south_africa_sar_20e) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["power/electric", "flag/ZA"];
+	badges: ["power/electric/ac", "flag/ZA"];
 
     }
     graphics {

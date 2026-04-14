@@ -116,6 +116,26 @@ def get_badges(row: pd.Series) -> str:
     if row['VEHIDCODE'].lower().startswith('mtro') or row['VEHIDCODE'].lower().startswith('singlemtro'):
         power = 'metro'
     if power != "":
+        if power == 'electric':
+            if \
+                    is_true(row['TRACK_TYPE_STANDARD_GAUGE_RAILTYPE_25KV']) or \
+                    is_true(row['TRACK_TYPE_STANDARD_GAUGE_RAILTYPE_15KV']) or \
+                    is_true(row['TRACK_TYPE_NARROW_GAUGE_RAILTYPE_25KV']) or \
+                    is_true(row['TRACK_TYPE_NARROW_GAUGE_RAILTYPE_15KV']) or \
+                    is_true(row['TRACK_TYPE_BROAD_GAUGE_RAILTYPE_25KV']) or \
+                    is_true(row['TRACK_TYPE_BROAD_GAUGE_RAILTYPE_15KV']):
+                power = 'electric/ac'
+            elif \
+                    is_true(row['TRACK_TYPE_STANDARD_GAUGE_RAILTYPE_3KV']) or \
+                    is_true(row['TRACK_TYPE_STANDARD_GAUGE_RAILTYPE_1500V']) or \
+                    is_true(row['TRACK_TYPE_NARROW_GAUGE_RAILTYPE_3KV']) or \
+                    is_true(row['TRACK_TYPE_NARROW_GAUGE_RAILTYPE_1500V']) or \
+                    is_true(row['TRACK_TYPE_BROAD_GAUGE_RAILTYPE_3KV']) or \
+                    is_true(row['TRACK_TYPE_BROAD_GAUGE_RAILTYPE_1500V']):
+                power = 'electric/dc'
+            else:
+                power = 'electric'
+
         badges.append(f"power/{power}")
     if flag != "":
         badges.append(f"flag/{flag}")

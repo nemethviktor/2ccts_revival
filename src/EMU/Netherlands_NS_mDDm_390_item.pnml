@@ -56,7 +56,7 @@ item(FEAT_TRAINS, item_emu_netherlands_ns_mddm_390) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["power/electric", "flag/NL"];
+	badges: ["power/electric/dc", "flag/NL"];
 
     }
     graphics {

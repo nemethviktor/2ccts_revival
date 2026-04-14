@@ -41,7 +41,7 @@ item(FEAT_TRAINS, item_electric_spain_renfe_250) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["power/electric", "flag/ES"];
+	badges: ["power/electric/dc", "flag/ES"];
 
     }
     graphics {
