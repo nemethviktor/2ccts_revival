@@ -449,7 +449,7 @@ str_mglv_china_transrapid                                             :Shanghai 
 str_mglv_japan_mlx01_901                                              :JR MLX01-901 (MMU)
 
 # STEAMRAILBUS
-str_rbs_austria_nolb_1                                                :NOLB 1 (Steam Railbus)
+str_rbs_austria_nolb_1                                                :NÖLB 1 (Steam Railbus)
 str_rbs_italy_fs_86                                                   :FS 86 (Steam Railbus)
 str_rbs_australia_victorian_railways_rowan_railmotor                  :Victorian Railways Rowan Railmotor (Steam Railbus)
 str_rbs_switzerland_uebb_czm_1_2                                      :UeBB Czm 1/2 (Steam Railbus)
@@ -457,6 +457,8 @@ str_rbs_germany_bavarian_mcci                                         :K.Bay.Sts
 str_rbs_south_africa_csar_railmotor                                   :CSAR Railmotor (Steam Railbus)
 str_rbs_australia_victorian_railways_motor_car_3                      :Victorian Railways Motor Car 3 (Steam Railbus)
 str_rbs_austria_kkstb_4_0                                             :kkStB 4.0 (Steam Railbus)
+str_rbs_gemany_hessian_ludwig_railway_type_thomas                     :Hessian Ludwig Rwy 'Thomas' (Steam Railbus)
+str_rbs_austria_nolb_30_33                                            :NÖLB 30-33 (Steam Railbus)
 
 # DIESELRAILBUS
 str_rbd_australia_victorian_railways_aec_rm1                          :Victorian Railways AEC RM1 (Diesel Railbus)
@@ -557,7 +559,7 @@ str_steam_russia_rzd_9p                                               :RZD 9P (S
 str_steam_uk_lner_a4_gresley                                          :LNER A4 'Gresley' (Steam)
 str_steam_canada_cpr_royal_hudson                                     :CPR 'Royal Hudson' (Steam)
 str_steam_denmark_dsb_e                                               :DSB E (Steam)
-str_steam_germany_db_52                                               :DB 52 (Steam)
+str_steam_germany_db_52                                               :DRB Class 52 (Steam)
 str_steam_uk_lner_a1_peppercorn                                       :LNER A1 'Peppercorn' (Steam)
 str_steam_south_africa_sar_25                                         :SAR 25 'Condenser' (Steam)
 str_steam_russia_rzd_p36                                              :RZD P36 (Steam)
@@ -566,7 +568,7 @@ str_steam_italy_fs_895                                                :FS 895 (S
 str_steam_poland_pkp_okz32                                            :PKP OKz32 (Steam)
 str_steam_switzerland_sbb_c_5_6                                       :SBB C 5/6 'Elephant' (Steam)
 str_steam_usa_up_4000_big_boy                                         :UP 4000 'Big Boy' (Steam)
-str_steam_netherlands_nrs_11                                          :NRS 11 (Steam)
+str_steam_netherlands_nrs_11                                          :NRS 11/NS 1600 (Steam)
 str_steam_uk_gwr_iron_duke_class                                      :GWR Iron Duke (Steam)
 str_steam_australia_sidney_railway_locomotive_no1                     :Sydney Railway Locomotive No.1 (Steam)
 str_steam_usa_central_pacific_4_2_2                                   :Central Pacific 4-2-2 (Steam)
@@ -588,14 +590,14 @@ str_steam_germany_saxon_xx_hv                                         :Saxon XX 
 str_steam_belgium_nmbs_type_7                                         :NMBS Type 7 (Steam)
 str_steam_ireland_dser_15                                             :DSER 15 (Steam)
 str_steam_usa_sierra_railroad_28                                      :Sierra Railroad 28 (Steam)
-str_steam_canada_cn_u_1_class                                         :CN U-1 (Steam)
+str_steam_canada_cn_u_1_class                                         :Canadian National U-1-a  (Steam)
 str_steam_india_indian_railways_xb_class                              :Indian Railways XB (Steam)
 str_steam_iraq_iraqi_state_railways_pc_class                          :Iraqi State Railways PC (Steam)
 str_steam_egypt_enr_1100                                              :ENR 1100 (LMS Fowler 3F / WD 0-6-0T) (Steam)
 str_steam_uk_gwr_1600_class                                           :GWR 1600 (Steam)
 str_steam_australia_victorian_railways_r_class                        :Victorian Railways R (Steam)
 str_steam_germany_db_9977_79                                          :DB 99.77-79 (Steam)
-str_steam_germany_db_18_201                                           :DB 18 201 (Steam)
+str_steam_germany_db_18_201                                           :DR 18 201 (Steam)
 str_steam_new_zealand_nzr_wab                                         :NZR WAB (Steam)
 str_steam_australia_nswgr_d57                                         :NSWGR D57 (Steam)
 str_steam_australia_south_australian_railways_520                     :South Australian Railways 520 (Steam)
@@ -610,7 +612,7 @@ str_steam_kenya_east_african_railway_21                               :East Afri
 str_steam_zimbabwe_zimbabwe_railways_15                               :Zimbabwe Railways 15 (Steam)
 str_steam_south_africa_sar_gma_4_8_2_2_8_4                            :SAR GMA 4-8-2+2-8-4 (Steam)
 str_steam_kenya_east_african_railway_31                               :East African Railway 31 (Steam)
-str_steam_india_fairy_queen                                           :Fairy Queen (Steam)
+str_steam_india_fairy_queen                                           :East Indian Rly 22 'Fairy Queen' (Steam)
 str_steam_india_dhr_b                                                 :DHR B (Steam)
 str_steam_china_china_railways_h                                      :Chinese Eastern Railway Kh (Steam)
 str_steam_russia_rzd_u                                                :RZD U (Steam)
@@ -631,7 +633,7 @@ str_steam_austria_kkstb_310                                           :KKStB 310
 str_steam_usa_southern_pacific_gs_4_daylight                          :Southern Pacific GS-4 'Daylight' (Steam)
 str_steam_ireland_gs_wr_101                                           :GS&WR 101 (Steam)
 str_steam_usa_nyc_h_6a_light_mikado                                   :NYC H-6A 'Light Mikado' (Steam)
-str_steam_argentina_fcgr_315                                          :FCGR 315 (Steam)
+str_steam_argentina_fcgr_315                                          :FCGR (BAGS) No. 315 2-4-0T (Steam)
 str_steam_australia_nswgr_c35                                         :NSWGR C35 (Steam)
 str_steam_belgium_nmbs_sncb_type_29                                   :NMBS/SNCB Type 29 (Steam)
 str_steam_chile_fcab_4_8_2                                            :FCAB 4-8-2 Vulcan 'Mountain' (Steam)
@@ -643,6 +645,8 @@ str_steam_japan_jnr_860                                               :JNR 860 (
 str_steam_japan_jnr_9600                                              :JNR 9600 (Steam)
 str_steam_japan_jnr_d50                                               :JNR D50 (Steam)
 str_steam_south_africa_katanga_mikado_2_8_2                           :Katanga Mikado 2-8-2 (Steam)
+str_steam_mozambique_mozambique_railways_no_101                       :Mozambique Rwy 101 (Steam)
+str_steam_ivory_coast_golwe_2_6_0_0_6_2t                              :Haine-Saint-Pierre Golwé (Steam)
 
 # DIESELENGINE
 str_diesel_germany_db_kof_ii                                          :DB Kof II / DB 322 (Diesel)
@@ -776,6 +780,8 @@ str_diesel_uk_br_68                                                   :BR 68 (Di
 str_diesel_usa_amtrak_charger                                         :Amtrak Charger (Diesel)
 str_diesel_japan_jnr_df50                                             :JNR DF50 (Diesel)
 str_diesel_gabon_alsthom_ad30b                                        :Alsthom AD30B (Diesel)
+str_diesel_ghana_railway_corporation_class_tt12                       :Ghana Rwy Corp Class TT12 (Diesel)
+str_diesel_sierra_leone_lamco_301_series                              :LAMCO. Series 301-310 (Diesel)
 
 # METRO
 str_mtro_argentina_le_brugeoise                                       :Buenos Aires 'Le Brugeoise' (Metro, 3rd Rail)
@@ -962,6 +968,7 @@ str_electric_finland_vr_sr1                                           :VR Sr1 (E
 str_electric_kazakhstan_ktz_kz4a                                      :KTZ KZ4A (Electric, 25kV AC)
 str_electric_kazakhstan_ktz_kz8a                                      :KTZ KZ8A (Electric, 25kV AC)
 str_electric_russia_rzd_ep20                                          :RZD EP20 (Electric, OHLE [Multi-V])
+str_electric_congo_type_2450_acec_charleroi_zaire_electric            :Zaire Electric Type 2450 (Electric, 25kV AC)
 
 # DMU
 str_dmu_germany_db_vt_040_flying_hamburger                            :DB VT 04.0 'Flying Hamburger' (DMU)

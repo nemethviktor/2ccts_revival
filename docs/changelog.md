@@ -1,6 +1,18 @@
 ### 2cc TrainsInNML (Revival) changelog
 
+**3.3-RC2 [20260xxx]**
+- CODE CHANGES:
+	- TBA
+- VEHICLES CHANGES:
+	- Added `Hessian Ludwig Rlw Thomas` using `Victorian Railways Rowan Railmotor` graphics but different/relevant specs
+	- Added `NÖLB 30-33` using `NÖLB 1` graphics but different/relevant specs
+	- Changed `Harbour Board EL 0-4-0 'Little Bess'` properties to be lighter
+	- Added `Mozambique Railways No. 101 to 104` using modified `4-4-0 'American'` graphics and different/relevant specs
+	- Added `Haine-Saint-Pierre Golwé` (Ivory Coast) - it's a bit of a mix of graphics, don't complain. It seems to work.
+	- Added `Ghana Rwy Corp Class TT12` using the `EMD G22W` somewhat modified graphics, again, don't complain, do a better one if you can. Otherwise works.
 
+	
+	
 **3.3-RC1 [20260412]**
 - CODE CHANGES:
 	- Added template `TPL_03G` (12-len steam w tender)

@@ -822,6 +822,12 @@
 #include "src/Diesel/Gabon_Alsthom_AD30B_graphics.pnml"
 #include "src/Diesel/Gabon_Alsthom_AD30B_item.pnml"
 
+#include "src/Diesel/Ghana_Railway_Corporation_Class_TT12_graphics.pnml"
+#include "src/Diesel/Ghana_Railway_Corporation_Class_TT12_item.pnml"
+
+#include "src/Diesel/Sierra_Leone_LAMCO_301_Series_graphics.pnml"
+#include "src/Diesel/Sierra_Leone_LAMCO_301_Series_item.pnml"
+
 
 //// EMU
 #include "src/EMU/Netherlands_NS_Mat24_graphics.pnml"
@@ -1429,6 +1435,9 @@
 #include "src/Electric/Germany_Prussian_ES_6_graphics.pnml"
 #include "src/Electric/Germany_Prussian_ES_6_item.pnml"
 
+#include "src/Electric/Congo_Type_2450_Acec_Charleroi_Zaire_Electric_graphics.pnml"
+#include "src/Electric/Congo_Type_2450_Acec_Charleroi_Zaire_Electric_item.pnml"
+
 #include "src/Electric/UK_London_1903_Stock_graphics.pnml"
 #include "src/Electric/UK_London_1903_Stock_item.pnml"
 
@@ -1829,6 +1838,12 @@
 #include "src/Railbus/Railbus_steam/Austria_kkStB_4_0_graphics.pnml"
 #include "src/Railbus/Railbus_steam/Austria_kkStB_4_0_item.pnml"
 
+#include "src/Railbus/Railbus_steam/Gemany_Hessian_Ludwig_Railway_Type_Thomas_graphics.pnml"
+#include "src/Railbus/Railbus_steam/Gemany_Hessian_Ludwig_Railway_Type_Thomas_item.pnml"
+
+#include "src/Railbus/Railbus_steam/Austria_NOLB_30_33_graphics.pnml"
+#include "src/Railbus/Railbus_steam/Austria_NOLB_30_33_item.pnml"
+
 
 //// SINGLE_METRO
 #include "src/Single_Metro/USA_Brooklyn_Union_Gate_Car_graphics.pnml"
@@ -2209,6 +2224,12 @@
 
 #include "src/Steam/South_Africa_Katanga_Mikado_2_8_2_graphics.pnml"
 #include "src/Steam/South_Africa_Katanga_Mikado_2_8_2_item.pnml"
+
+#include "src/Steam/Mozambique_Mozambique_Railways_No_101_graphics.pnml"
+#include "src/Steam/Mozambique_Mozambique_Railways_No_101_item.pnml"
+
+#include "src/Steam/Ivory_Coast_Golwe_2_6_0_0_6_2T_graphics.pnml"
+#include "src/Steam/Ivory_Coast_Golwe_2_6_0_0_6_2T_item.pnml"
 
 
 //// WAGONS - GEN1
