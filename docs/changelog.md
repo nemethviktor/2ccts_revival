@@ -10,7 +10,8 @@
 	- Added `Mozambique Railways No. 101 to 104` using modified `4-4-0 'American'` graphics and different/relevant specs
 	- Added `Haine-Saint-Pierre Golwé` (Ivory Coast) - it's a bit of a mix of graphics, don't complain. It seems to work.
 	- Added `Ghana Rwy Corp Class TT12` using the `EMD G22W` somewhat modified graphics, again, don't complain, do a better one if you can. Otherwise works.
-
+	- Undid the "powered requiring electricity" logic introduced in RC1
+	
 	
 	
 **3.3-RC1 [20260412]**
