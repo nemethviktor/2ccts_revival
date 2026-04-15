@@ -12,6 +12,7 @@
 	- Added `Haine-Saint-Pierre Golwé` (Ivory Coast) - it's a bit of a mix of graphics, don't complain. It seems to work.
 	- Added `Ghana Rwy Corp Class TT12` using the `EMD G22W` somewhat modified graphics, again, don't complain, do a better one if you can. Otherwise works.
 	- Undid the "powered requiring electricity" logic introduced in RC1
+	- Added `Alsthom BB-BB` (Diesel) using modified `Alsthom AD30B` graphics.
 	
 	
 	

@@ -2656,7 +2656,7 @@ item(FEAT_TRAINS, item_diesel_usa_amtrak_charger, 5133) {}
 item(FEAT_TRAINS, item_diesel_gabon_alsthom_ad30b, 5134) {}
 item(FEAT_TRAINS, item_diesel_ghana_railway_corporation_class_tt12, 5135) {}
 item(FEAT_TRAINS, item_diesel_sierra_leone_lamco_301_series, 5136) {}
-// 5137 free
+item(FEAT_TRAINS, item_diesel_congo_alstom_bb_bb, 5137) {}
 // 5138 free
 // 5139 free
 // 5140 free

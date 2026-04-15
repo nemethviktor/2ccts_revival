@@ -828,6 +828,9 @@
 #include "src/Diesel/Sierra_Leone_LAMCO_301_Series_graphics.pnml"
 #include "src/Diesel/Sierra_Leone_LAMCO_301_Series_item.pnml"
 
+#include "src/Diesel/Congo_Alstom_BB_BB_graphics.pnml"
+#include "src/Diesel/Congo_Alstom_BB_BB_item.pnml"
+
 
 //// EMU
 #include "src/EMU/Netherlands_NS_Mat24_graphics.pnml"
