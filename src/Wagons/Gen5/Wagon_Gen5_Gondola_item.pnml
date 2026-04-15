@@ -41,7 +41,7 @@ item(FEAT_TRAINS, item_mu_wagon_gen5_gondola) {
 
         reliability_decay: 20;
         // cargodeftype: GONDOLA;
-        refittable_cargo_classes: bitmask(CC_BULK);
+        refittable_cargo_classes: bitmask(CC_OPEN_BULK, CC_COVERED_BULK);
         non_refittable_cargo_classes: 0;
         cargo_allow_refit: [COAL, GRAI, WOOD, IORE, WHEA, MAIZ, CORE, SUGR, TOFF, CTCD, AORE, CERE, CLAY, CMNT, GRVL, LIME, POTA, SAND, SCMT, WDPR];
         cargo_disallow_refit: [PASS, MAIL, TOUR, OIL_, LVST, GOOD, STEL, VALU, PAPR, FOOD, GOLD, RUBR, FRUT, WATR, DIAM, TOYS, BATT, SWET, COLA, BUBL, PLST, FZDR, BEER, BDMT, BRCK, CERA, COPR, DYES, ENSP, FERT, FICR, FISH, FMSP, GLAS, JAVA, MILK, MNSP, OLSD, PETR, PLAS, RCYC, RFPR, SGBT, SGCN, SULP, VEHI, VPTS, WOOL, URAN, YETI, YETY];
@@ -60,9 +60,6 @@ item(FEAT_TRAINS, item_mu_wagon_gen5_gondola) {
         length: 8;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
-
-	badges: ["power/diesel"];
-
     }
     graphics {
         purchase: spriteset_mu_wagon_gen5_gondola_purchase;

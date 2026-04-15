@@ -47,9 +47,6 @@ item(FEAT_TRAINS, item_mu_coach_gen2_steel_3_axle_compartment_coach) {
         length: 6;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
-
-	badges: ["power/diesel"];
-
     }
     graphics {
         purchase: spriteset_mu_coach_gen2_steel_3_axle_compartment_coach_purchase;

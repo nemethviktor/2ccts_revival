@@ -41,7 +41,7 @@ item(FEAT_TRAINS, item_mu_wagon_gen4_tanker) {
 
         reliability_decay: 20;
         // cargodeftype: TANKER;
-        refittable_cargo_classes: bitmask(CC_LIQUID);
+        refittable_cargo_classes: bitmask(CC_LIQUID_BULK, CC_GAS_BULK);
         non_refittable_cargo_classes: 0;
         cargo_allow_refit: [OIL_, GOOD, RUBR, WATR, COLA, PLST, BEER, DYES, MILK, PETR, PLAS, RFPR];
         cargo_disallow_refit: [PASS, MAIL, TOUR, COAL, LVST, GRAI, WOOD, IORE, STEL, VALU, PAPR, WHEA, FOOD, GOLD, FRUT, MAIZ, CORE, DIAM, SUGR, TOYS, BATT, SWET, TOFF, CTCD, BUBL, FZDR, AORE, BDMT, BRCK, CERA, CERE, CLAY, CMNT, COPR, ENSP, FERT, FICR, FISH, FMSP, GLAS, GRVL, JAVA, LIME, MNSP, OLSD, POTA, RCYC, SAND, SCMT, SGBT, SGCN, SULP, VEHI, VPTS, WDPR, WOOL, URAN, YETI, YETY];
@@ -60,9 +60,6 @@ item(FEAT_TRAINS, item_mu_wagon_gen4_tanker) {
         length: 7;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
-
-	badges: ["power/diesel"];
-
     }
     graphics {
         purchase: spriteset_mu_wagon_gen4_tanker_purchase;

@@ -41,7 +41,7 @@ item(FEAT_TRAINS, item_mu_wagon_gen1_open_wagon) {
 
         reliability_decay: 20;
         // cargodeftype: OPEN_WAGON;
-        refittable_cargo_classes: bitmask(CC_BULK);
+        refittable_cargo_classes: bitmask(CC_OPEN_BULK);
         non_refittable_cargo_classes: 0;
         cargo_allow_refit: [COAL, GRAI, WOOD, IORE, WHEA, FRUT, MAIZ, CORE, SUGR, TOFF, CTCD, BUBL, AORE, CERE, CLAY, CMNT, GRVL, LIME, OLSD, POTA, SAND, SCMT];
         cargo_disallow_refit: [PASS, MAIL, TOUR, OIL_, LVST, GOOD, STEL, VALU, PAPR, FOOD, GOLD, RUBR, WATR, DIAM, TOYS, BATT, SWET, COLA, PLST, FZDR, BEER, BDMT, BRCK, CERA, COPR, DYES, ENSP, FERT, FICR, FISH, FMSP, GLAS, JAVA, MILK, MNSP, PETR, PLAS, RCYC, RFPR, SGBT, SGCN, SULP, VEHI, VPTS, WDPR, WOOL, URAN, YETI, YETY];
@@ -60,9 +60,6 @@ item(FEAT_TRAINS, item_mu_wagon_gen1_open_wagon) {
         length: 4;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
-
-	badges: ["power/diesel"];
-
     }
     graphics {
         purchase: spriteset_mu_wagon_gen1_open_wagon_purchase;

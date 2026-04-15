@@ -41,7 +41,7 @@ item(FEAT_TRAINS, item_mu_wagon_gen6_heavy_flatcar) {
 
         reliability_decay: 20;
         // cargodeftype: HEAVYFLAT;
-        refittable_cargo_classes: bitmask(CC_PIECE_GOODS, CC_OVERSIZED);
+        refittable_cargo_classes: bitmask(CC_PIECE_GOODS, CC_FLATBED);
         non_refittable_cargo_classes: 0;
         cargo_allow_refit: [GOOD, STEL, TOYS, BATT, SWET, BUBL, FZDR, BDMT, BRCK, CERA, COPR, ENSP, FMSP, GLAS, JAVA, MNSP, VEHI, VPTS, YETI, YETY];
         cargo_disallow_refit: [PASS, MAIL, TOUR, COAL, OIL_, LVST, GRAI, WOOD, IORE, VALU, PAPR, WHEA, FOOD, GOLD, RUBR, FRUT, MAIZ, CORE, WATR, DIAM, SUGR, TOFF, COLA, CTCD, PLST, AORE, BEER, CERE, CLAY, CMNT, DYES, FERT, FICR, FISH, GRVL, LIME, MILK, OLSD, PETR, PLAS, POTA, RCYC, RFPR, SAND, SCMT, SGBT, SGCN, SULP, WDPR, WOOL, URAN];
@@ -60,9 +60,6 @@ item(FEAT_TRAINS, item_mu_wagon_gen6_heavy_flatcar) {
         length: 8;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
-
-	badges: ["power/diesel"];
-
     }
     graphics {
         purchase: spriteset_mu_wagon_gen6_heavy_flatcar_purchase;

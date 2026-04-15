@@ -47,9 +47,6 @@ item(FEAT_TRAINS, item_mu_coach_gen2_heavyweight_mail_coach) {
         length: 8;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
-
-	badges: ["power/diesel"];
-
     }
     graphics {
         purchase: spriteset_mu_coach_gen2_heavyweight_mail_coach_purchase;
