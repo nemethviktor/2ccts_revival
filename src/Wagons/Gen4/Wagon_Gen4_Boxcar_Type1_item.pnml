@@ -40,7 +40,12 @@ item(FEAT_TRAINS, item_mu_wagon_gen4_boxcar_type1) {
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
-        refittable_cargo_classes: bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_ARMOURED);non_refittable_cargo_classes: 0;cargo_allow_refit: [LVST, GOOD, GRAI, VALU, PAPR, WHEA, FOOD, GOLD, FRUT, MAIZ, DIAM, SUGR, TOYS, BATT, SWET, BUBL, FZDR, BEER, BDMT, BRCK, CERA, CERE, COPR, ENSP, FERT, FISH, FMSP, GLAS, JAVA, MNSP, OLSD, POTA, RCYC, SGBT, SGCN, SULP, VEHI, VPTS, WOOL, URAN];cargo_disallow_refit: [PASS, MAIL, TOUR, COAL, OIL_, WOOD, IORE, STEL, RUBR, CORE, WATR, TOFF, COLA, CTCD, PLST, AORE, CLAY, CMNT, DYES, FICR, GRVL, LIME, MILK, PETR, PLAS, RFPR, SAND, SCMT, WDPR, YETI, YETY];
+        // cargodeftype: BOXCAR;
+        refittable_cargo_classes: bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_ARMOURED);
+        non_refittable_cargo_classes: 0;
+        cargo_allow_refit: [LVST, GOOD, GRAI, VALU, PAPR, WHEA, FOOD, GOLD, FRUT, MAIZ, DIAM, SUGR, TOYS, BATT, SWET, BUBL, FZDR, BEER, BDMT, BRCK, CERA, CERE, COPR, ENSP, FERT, FISH, FMSP, GLAS, JAVA, MNSP, OLSD, POTA, RCYC, SGBT, SGCN, SULP, VEHI, VPTS, WOOL, URAN];
+        cargo_disallow_refit: [PASS, MAIL, TOUR, COAL, OIL_, WOOD, IORE, STEL, RUBR, CORE, WATR, TOFF, COLA, CTCD, PLST, AORE, CLAY, CMNT, DYES, FICR, GRVL, LIME, MILK, PETR, PLAS, RFPR, SAND, SCMT, WDPR, YETI, YETY];
+        
         cargo_age_period: 185;
         misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_AUTOREFIT);
         refit_cost: 0;

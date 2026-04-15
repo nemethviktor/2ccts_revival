@@ -25,7 +25,10 @@ item(FEAT_TRAINS, item_mtro_taiwan_taipei_c301) {
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
-        refittable_cargo_classes: bitmask(CC_PASSENGERS);non_refittable_cargo_classes: 0;
+        // cargodeftype: PASSENGERS_ONLY;
+        refittable_cargo_classes: bitmask(CC_PASSENGERS);
+        non_refittable_cargo_classes: 0;
+        
         cargo_age_period: 185;
         misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
         refit_cost: 0;

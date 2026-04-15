@@ -29,7 +29,10 @@ item(FEAT_TRAINS, item_mu_coach_gen1_wooden_3_axle_regional_coach) {
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
-        refittable_cargo_classes: bitmask(CC_PASSENGERS);non_refittable_cargo_classes: 0;
+        // cargodeftype: PASSENGERS_ONLY;
+        refittable_cargo_classes: bitmask(CC_PASSENGERS);
+        non_refittable_cargo_classes: 0;
+        
         cargo_age_period: 185;
         misc_flags: bitmask(TRAIN_FLAG_2CC);
         refit_cost: 0;

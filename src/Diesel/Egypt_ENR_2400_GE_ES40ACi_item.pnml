@@ -29,7 +29,9 @@ item(FEAT_TRAINS, item_diesel_egypt_enr_2400_ge_es40aci) {
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
+        // cargodeftype: NONE;
         refittable_cargo_classes: bitmask(NO_CARGO_CLASS);
+        
         cargo_age_period: 185;
         misc_flags: bitmask(TRAIN_FLAG_2CC);
         refit_cost: 0;

@@ -5,7 +5,19 @@
 
 */
 
-//cargo translation table
+// Cargo translation table
+
+// Ref -> https://www.grf.farm/polar-fox/1.4.0/vehicle_frax.html
+// extra NML constants for Polar Fox 2024 cargo class names
+// these replace legacy NML cargo class names
+// add these near the top of your NML file, before using any cargo classes
+const CC_OPEN_BULK = 4; // remaps legacy NML class: CC_BULK
+const CC_COVERED_BULK = 9; // remaps legacy NML class: CC_COVERED
+const CC_POWDER_BULK = 11; // remaps legacy NML class: CC_POWDERIZED
+const CC_LIQUID_BULK = 6; // remaps legacy NML class: CC_LIQUID
+const CC_GAS_BULK = 8; // remaps legacy NML class: CC_HAZARDOUS
+const CC_FLATBED = 10; // remaps legacy NML class: CC_OVERSIZED
+const CC_WEIRD = 12; // remaps legacy NML class: CC_NON_POURABLE
 
 cargotable {
 	PASS, COAL, MAIL, OIL_, LVST, GOOD, GRAI, WOOD, IORE, STEL, VALU, PAPR, WHEA, FOOD, GOLD, RUBR, FRUT, MAIZ, CORE, WATR, DIAM, SUGR, TOYS, BATT, SWET, TOFF, COLA, CTCD, BUBL, PLST, FZDR, AORE, BEER, BDMT, BRCK, CERA, CERE, CLAY, CMNT, COPR, DYES, ENSP, FERT, FICR, FISH, FMSP, FRVG, GLAS, GRVL, JAVA, LIME, MILK, MNSP, OLSD, PETR, PLAS, POTA, RCYC, RFPR, SAND, SCMT, SGBT, SGCN, SULP, TOUR, VEHI, VPTS, WDPR, WOOL, URAN, YETI, YETY

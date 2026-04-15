@@ -40,7 +40,9 @@ item(FEAT_TRAINS, item_mu_wagon_service_car_type1) {
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
+        // cargodeftype: NONE;
         refittable_cargo_classes: bitmask(NO_CARGO_CLASS);
+        
         cargo_age_period: 185;
         misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_AUTOREFIT);
         refit_cost: 0;

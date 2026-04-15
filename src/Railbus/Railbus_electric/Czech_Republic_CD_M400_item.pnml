@@ -40,7 +40,9 @@ item(FEAT_TRAINS, item_rbe_czech_republic_cd_m400) {
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
-        refittable_cargo_classes: bitmask(CC_PASSENGERS, CC_MAIL, CC_ARMOURED);non_refittable_cargo_classes: 0;
+        // cargodeftype: PASSENGERS;
+        refittable_cargo_classes: bitmask(CC_PASSENGERS, CC_MAIL, CC_ARMOURED);
+        non_refittable_cargo_classes: 0;
         cargo_age_period: 185;
         misc_flags: bitmask(TRAIN_FLAG_2CC);
         refit_cost: 0;
