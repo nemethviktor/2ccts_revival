@@ -1,9 +1,16 @@
 import os
 import skia
-from PIL import Image
+import re
+from PIL import Image, ImageChops
+
+# Exclusion ranges: D9-E2 (217-226), E3-E7 (227-231), E8-EE (232-238), EF-F0 (239-240), F1-F4 (241-244)
+# Combined Decimal Range: 217 to 244
+EXCLUSION_START = 217
+EXCLUSION_END = 244
 
 
 def parse_gpl(gpl_path):
+    """Extracts RGB values from a GIMP .gpl file and pads to 256 colors."""
     colors = []
     with open(gpl_path, 'r') as f:
         for line in f:
@@ -15,101 +22,135 @@ def parse_gpl(gpl_path):
     return colors[:768]
 
 
+def get_svg_viewbox(svg_path):
+    """Extracts the true coordinate bounds from the SVG file."""
+    try:
+        with open(svg_path, 'r', encoding='utf-8', errors='ignore') as f:
+            content = f.read(4000)  # Only need the header
+            # Find viewBox="x y w h"
+            vb_match = re.search(
+                r'viewBox=["\'](-?[\d.]+)[ ,]+(-?[\d.]+)[ ,]+([\d.]+)[ ,]+([\d.]+)["\']', content)
+            if vb_match:
+                return [float(x) for x in vb_match.groups()]
+            # Fallback to width/height attributes
+            w_match = re.search(r'width=["\']([\d.]+)["\']', content)
+            h_match = re.search(r'height=["\']([\d.]+)["\']', content)
+            if w_match and h_match:
+                return [0.0, 0.0, float(w_match.group(1)), float(h_match.group(1))]
+    except:
+        pass
+    return None
+
+
 def svg_to_pil_rgba(svg_path, width, height):
-    """Renders SVG by stretching its internal content to the 18x12 canvas."""
+    """Renders SVG by stretching its content to fill the exact target bounds."""
     with open(svg_path, 'rb') as f:
         svg_data = f.read()
 
     stream = skia.MemoryStream(svg_data)
     dom = skia.SVGDOM.MakeFromStream(stream)
-
     surface = skia.Surface(width, height)
+
+    vb = get_svg_viewbox(svg_path)
 
     with surface as canvas:
         canvas.clear(skia.ColorTRANSPARENT)
         if dom:
-            # 1. Get whatever size the SVG thinks it is
-            c_size = dom.containerSize()
-            svg_w, svg_h = c_size.width(), c_size.height()
-
-            # 2. If it has no size, try to look at the viewBox
-            # (Skia-python doesn't always expose getRoot, so we check containerSize first)
-            if svg_w <= 0 or svg_h <= 0:
-                # Fallback: Assume it's a unitless viewBox and force it to our target
-                dom.setContainerSize(skia.Size(width, height))
+            if vb:
+                vx, vy, vw, vh = vb
+                # Force DOM to internal content size
+                dom.setContainerSize(skia.Size(vw, vh))
+                # Map that content exactly to our 18x12 canvas (Forced Stretch)
+                canvas.scale(width / vw, height / vh)
+                canvas.translate(-vx, -vy)
                 dom.render(canvas)
             else:
-                # 3. If it HAS a size (the 'normal' flags), we MUST scale the canvas
-                # to map that size down to 18x12, otherwise it renders off-screen.
-                canvas.scale(width / svg_w, height / svg_h)
+                # Last resort: Skia's internal guess
+                dom.setContainerSize(skia.Size(width, height))
                 dom.render(canvas)
-        else:
-            print(f"FAILED TO LOAD SVG: {svg_path}")
 
     image = surface.makeImageSnapshot()
-    if not image:
-        return Image.new("RGBA", (width, height), (0, 0, 0, 0))
+    pil_img = Image.frombuffer(
+        "RGBA", (width, height), image.toarray(), "raw", "BGRA", 0, 1)
 
-    # Skia (BGRA) -> Pillow (RGBA)
-    return Image.frombuffer("RGBA", (width, height), image.toarray(), "raw", "BGRA", 0, 1)
+    # "Crunchy Alpha": Set alpha to 0 or 255. This prevents semi-transparent
+    # 'halo' pixels from corrupting the Index 0 Blue background.
+    r, g, b, a = pil_img.split()
+    a = a.point(lambda p: 255 if p > 128 else 0)
+    return Image.merge("RGBA", (r, g, b, a))
 
 
-def process_flags_final_attempt(svg_folder, output_folder, gloss_path, gpl_path):
+def process_flags_color_safe(svg_folder, output_folder, gloss_path, gpl_path):
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
 
     raw_palette = parse_gpl(gpl_path)
-    # Get the "Transparent Blue" from Index 0
-    bg_color = (raw_palette[0], raw_palette[1], raw_palette[2])
+    bg_r, bg_g, bg_b = raw_palette[0], raw_palette[1], raw_palette[2]
+    bg_color = (bg_r, bg_g, bg_b)
+
+    # Prepare Quantization Template (Mask forbidden hex ranges)
+    quant_palette = list(raw_palette)
+    # Range: D9 to F4 (Decimal 217 to 244)
+    for i in range(217, 245):
+        quant_palette[i*3: i*3+3] = [bg_r, bg_g, bg_b]
 
     palette_template = Image.new('P', (1, 1))
-    palette_template.putpalette(raw_palette)
+    palette_template.putpalette(quant_palette)
 
-    # Prep Gloss
+    # 1. Prep Gloss - We use Luminance now
     gloss_img = None
-    # if os.path.exists(gloss_path):
-    #    gloss_img = Image.open(gloss_path).convert(
-    #        "RGBA").resize((18, 12), Image.Resampling.LANCZOS)
-    #    r, g, b, a = gloss_img.split()
-    #    gloss_img = Image.merge(
-    #        "RGBA", (r, g, b, a.point(lambda i: int(i * 0.30))))
+    if os.path.exists(gloss_path):
+        # We convert gloss to grayscale to ensure it doesn't "re-color" the flag
+        gloss_img = Image.open(gloss_path).convert(
+            "L").resize((18, 12), Image.Resampling.LANCZOS)
 
     for file in os.listdir(svg_folder):
-        if file.lower().endswith(".svg"):
-            svg_path = os.path.join(svg_folder, file)
-            save_path = os.path.join(
-                output_folder, os.path.splitext(file)[0] + ".png")
+        if not file.lower().endswith(".svg"):
+            continue
 
-            # 1. Render SVG
-            flag_rgba = svg_to_pil_rgba(svg_path, 18, 12)
+        svg_path = os.path.join(svg_folder, file)
+        save_path = os.path.join(
+            output_folder, os.path.splitext(file)[0] + ".png")
 
-            # 2. Layer Gloss (Only on the flag pixels)
-            if gloss_img:
-                # Create a blank transparent canvas the same size as the flag
-                gloss_layer = Image.new("RGBA", (18, 12), (0, 0, 0, 0))
+        # Render SVG
+        flag_rgba = svg_to_pil_rgba(svg_path, 18, 12)
 
-                # Use the flag's alpha channel as a mask to apply gloss ONLY to the flag
-                # This prevents gloss from bleeding into the 'Transparent Blue' area
-                flag_mask = flag_rgba.split()[3]
-                gloss_layer.paste(gloss_img, (0, 0), mask=flag_mask)
+        # 2. APPLY GLOSS WITHOUT MUDDYING
+        if gloss_img:
+            # Split flag into RGB and Alpha
+            r, g, b, a = flag_rgba.split()
+            rgb_flag = Image.merge("RGB", (r, g, b))
 
-                # Composite the masked gloss over the flag
-                flag_rgba = Image.alpha_composite(flag_rgba, gloss_layer)
+            # Grayscale highlights from the gloss
+            highlights = Image.eval(gloss_img, lambda x: x if x > 128 else 0)
+            highlight_rgb = Image.merge(
+                "RGB", (highlights, highlights, highlights))
 
-            # 3. Flatten onto Index 0 Blue
-            # Now, the pixels at (0,0) are guaranteed to be exactly bg_color
-            final_img = Image.new("RGB", (18, 12), bg_color)
-            final_img.paste(flag_rgba, (0, 0), flag_rgba)
+            glossed_rgb = ImageChops.screen(rgb_flag, highlight_rgb)
+            flag_rgb = Image.blend(rgb_flag, glossed_rgb, 0.35)
 
-            # 4. Map to Palette & Lock Table
-            indexed = final_img.quantize(palette=palette_template, dither=0)
-            indexed.putpalette(raw_palette)
+            # Re-merge with original alpha
+            flag_rgba = Image.merge("RGBA", (
+                flag_rgb.split()[0],
+                flag_rgb.split()[1],
+                flag_rgb.split()[2],
+                a
+            ))
 
-            # 5. Save with 256-color table forced
-            indexed.save(save_path, format="PNG", optimize=False)
-            print(f"Generated: {file}")
+        # 3. Flatten onto 'Magic Blue'
+        final_img = Image.new("RGB", (18, 12), bg_color)
+        final_img.paste(flag_rgba, (0, 0), flag_rgba)
+
+        # 4. Quantize
+        # method=0 (Median Cut) can sometimes be better for keeping 'Pure' colors
+        # than the default if you're seeing brown.
+        indexed = final_img.quantize(palette=palette_template, dither=0)
+
+        indexed.putpalette(raw_palette)
+        indexed.save(save_path, format="PNG", optimize=False)
+        print(f"Color-Safe Export: {file}")
 
 
 if __name__ == "__main__":
-    process_flags_final_attempt(
-        'flag_svg', 'flag', 'flag-overlay-1x-18x12.png', 'palette.gpl')
+    process_flags_color_safe('flag_svg', 'flag',
+                             'flag-overlay-1x-18x12.png', 'palette.gpl')

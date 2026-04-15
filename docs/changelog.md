@@ -2,7 +2,7 @@
 
 **3.3-RC2 [20260xxx]**
 - CODE CHANGES:
-	- Changed some of the flag creation logic. There should be fewer animated-looking flags now (sorry Ireland...)
+	- Changed some of the flag creation logic. There should be fewer animated-looking flags now
 	- Added AC/DC split for Electric badges
 - VEHICLES CHANGES:
 	- Added `Hessian Ludwig Rlw Thomas` using `Victorian Railways Rowan Railmotor` graphics but different/relevant specs
