@@ -475,7 +475,8 @@ item_electric_china_china_railways_hxd1d, /*Year: 2012*/ \
 item_electric_usa_amtrak_acs_64, /*Year: 2012*/ \
 item_electric_brasil_mrs_he_4_4, /*Year: 2012*/ \
 item_electric_south_africa_sar_20e, /*Year: 2013*/ \
-item_electric_kazakhstan_ktz_kz8a, /*Year: 2014*/
+item_electric_kazakhstan_ktz_kz8a, /*Year: 2014*/ \
+item_electric_tanzania_trc_e6800, /*Year: 2024*/
 
 #define SORTING_DMU \
 item_dmu_germany_db_vt_040_flying_hamburger, /*Year: 1932*/ \

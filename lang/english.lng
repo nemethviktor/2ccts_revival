@@ -785,6 +785,7 @@ str_diesel_sierra_leone_lamco_301_series                              :LAMCO. Se
 str_diesel_congo_alstom_bb_bb                                         :Alsthom BB-BB (Diesel)
 str_diesel_zimbabwe_sorefame_de8                                      :Sorefame DE8 (Diesel)
 str_diesel_ivory_coast_gmd_gt22lc2                                    :GMD GT22LC-2 (Diesel)
+str_electric_tanzania_trc_e6800                                       :Hyundai Rotem/Skoda TRC E6800 (Diesel, 25kV AC)
 
 # METRO
 str_mtro_argentina_le_brugeoise                                       :Buenos Aires 'Le Brugeoise' (Metro, 3rd Rail)

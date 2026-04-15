@@ -3659,7 +3659,7 @@ item(FEAT_TRAINS, item_electric_brasil_mrs_he_4_4, 6133) {}
 item(FEAT_TRAINS, item_electric_russia_rzd_vl11, 6134) {}
 item(FEAT_TRAINS, item_electric_germany_prussian_es_6, 6135) {}
 item(FEAT_TRAINS, item_electric_congo_type_2450_acec_charleroi_zaire_electric, 6136) {}
-// 6137 free
+item(FEAT_TRAINS, item_electric_tanzania_trc_e6800, 6137) {}
 // 6138 free
 // 6139 free
 // 6140 free

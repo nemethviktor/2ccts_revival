@@ -1447,6 +1447,9 @@
 #include "src/Electric/Congo_Type_2450_Acec_Charleroi_Zaire_Electric_graphics.pnml"
 #include "src/Electric/Congo_Type_2450_Acec_Charleroi_Zaire_Electric_item.pnml"
 
+#include "src/Electric/Tanzania_TRC_E6800_graphics.pnml"
+#include "src/Electric/Tanzania_TRC_E6800_item.pnml"
+
 #include "src/Electric/UK_London_1903_Stock_graphics.pnml"
 #include "src/Electric/UK_London_1903_Stock_item.pnml"
 
