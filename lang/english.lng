@@ -842,6 +842,7 @@ str_mtro_uk_london_1903_stock                                         :London 19
 str_mtro_uk_london_1938_stock                                         :London 1938 Stock (Metro, 4th Rail)
 str_mtro_metro_wagon_powered                                          :Metro Unit Wagon (Powered)
 str_mtro_metro_wagon_unpowered                                        :Metro Unit Wagon (Unpowered)
+str_mtro_usa_brooklyn_union_gate_car                                  :Brooklyn Union Gate Elevated (Metro, 3rd Rail)
 
 # ELECTRICENGINE
 str_electric_uk_ner_ef1                                               :NER EF1 (Electric, 1500V DC)
@@ -1109,7 +1110,7 @@ str_emu_russia_rzd_es1_lastochka                                      :RZD ES1 '
 str_cargoemu_japan_jr_freight_m250                                    :JR Freight M250 (EMU, 1500V DC)
 
 # METRORAILBUS
-str_singlemtro_usa_brooklyn_union_gate_car                            :Brooklyn Union Gate Car (Single Unit Metro)
+str_singlemtro_usa_brooklyn_union_gate_car                            :Brooklyn Union Gate 1300 (Single Unit Metro)
 str_singlemtro_hungary_budapest_1894_stock                            :Budapest 1894 Stock (Single Unit Metro)
 str_singlemtro_usa_chicago_l_northwest_elevated_1907_stock            :Chicago L Northwest Elevated 1907 Stock (Single Unit Metro)
 str_singlemtro_germany_berlin_u_bahn_c_ii                             :Berlin U-Bahn C II (Single Unit Metro)

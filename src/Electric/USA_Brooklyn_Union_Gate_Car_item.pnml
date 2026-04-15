@@ -3,40 +3,25 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01D.
+// Template: TPL_02C.
 // Data from: https://en.wikipedia.org/wiki/BU_cars_(New_York_City_Subway_car)
 
 // Notes:
 //// TE_STARTING_KN: 25 -- Gemini
 
 
-// Cargo capacity
-
-    switch(FEAT_TRAINS, SELF, switch_singlemtro_usa_brooklyn_union_gate_car_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 48/2; \
-        bitmask(CC_ARMOURED): 48/4; \
-        48; \
-    }
-
-
-    switch(FEAT_TRAINS, SELF, switch_singlemtro_usa_brooklyn_union_gate_car_capacity_wagon, cargo_classes) { \
-        bitmask(CC_MAIL): 0/2; \
-        bitmask(CC_ARMOURED): 0/4; \
-        0; \
-    }
-
-item(FEAT_TRAINS, item_singlemtro_usa_brooklyn_union_gate_car) {
+item(FEAT_TRAINS, item_mtro_usa_brooklyn_union_gate_car) {
     property {
-        name: string(str_singlemtro_usa_brooklyn_union_gate_car);
+        name: string(str_mtro_usa_brooklyn_union_gate_car);
         climates_available: ((param_region_north_america || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1880,1,1);
         model_life: 45;
         vehicle_life: 60;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 21.28321;
-        running_cost_factor: 18.16909;
-        speed: 50 km/h;
+        cost_factor: 21.40123;
+        running_cost_factor: 18.2655;
+        speed: 60 km/h;
         power: 200 hp;
         cargo_capacity: 48;
         weight: 28 ton;
@@ -49,16 +34,16 @@ item(FEAT_TRAINS, item_singlemtro_usa_brooklyn_union_gate_car) {
         non_refittable_cargo_classes: 0;
         
         cargo_age_period: 185;
-        misc_flags: bitmask(TRAIN_FLAG_2CC);
+        misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
         refit_cost: 0;
         ai_special_flag: AI_FLAG_PASSENGER;
-        track_type: [STANDARD_GAUGE_RAILTYPE_DUAL];
+        track_type: [STANDARD_GAUGE_RAILTYPE_3RD];
         running_cost_base: RUNNING_COST_ELECTRIC;
         engine_class: ENGINE_CLASS_MAGLEV;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 
         sprite_id: SPRITE_ID_NEW_TRAIN;
-        dual_headed: 0;
+        dual_headed: 1;
         length: 7;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
@@ -67,8 +52,7 @@ item(FEAT_TRAINS, item_singlemtro_usa_brooklyn_union_gate_car) {
 
     }
     graphics {
-        purchase: spriteset_singlemtro_usa_brooklyn_union_gate_car_purchase;
-        cargo_capacity: switch_singlemtro_usa_brooklyn_union_gate_car_capacity_engine;
+        purchase: spriteset_mtro_usa_brooklyn_union_gate_car_purchase;
         // no 'visual_effect' or 'visual_effect_and_powered'
         // no 'length'
         // no 'articulated_part'
@@ -76,6 +60,24 @@ item(FEAT_TRAINS, item_singlemtro_usa_brooklyn_union_gate_car) {
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
         // PURCHASETEXT_SWITCH_CALL // this is actually blank
-        default: spriteset_singlemtro_usa_brooklyn_union_gate_car;
+        default: switch_mtro_usa_brooklyn_union_gate_car_reversed;
+    }
+    livery_override (item_mtro_metro_wagon_unpowered) {
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
+        running_cost_factor: int(60/10);
+        weight: int(28*1/2);
+        cargo_capacity: 48;
+        length: 7;
+        default: spriteset_mtro_usa_brooklyn_union_gate_car_middle;
+    }
+    livery_override (item_mtro_metro_wagon_powered) {
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
+        running_cost_factor: (round(9.970003111067648));
+        power: int(200*1/2);
+        weight: int(28*3/4);
+        cargo_capacity: 48;
+        tractive_effort_coefficient: int(0.091*10*28);
+        length: 7;
+        default: spriteset_mtro_usa_brooklyn_union_gate_car_middle;
     }
 }

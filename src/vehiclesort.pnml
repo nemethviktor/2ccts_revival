@@ -608,6 +608,7 @@ item_emu_croatia_hz_6112, /*Year: 2015*/ \
 item_emu_europe_sureot, /*Year: 2030*/
 
 #define SORTING_MULTIMETRO \
+item_mtro_usa_brooklyn_union_gate_car, /*Year: 1880*/ \
 item_mtro_germany_berlin_u_bahn_a_i, /*Year: 1901*/ \
 item_mtro_uk_london_1903_stock, /*Year: 1903*/ \
 item_mtro_usa_ny_hedley_hi_v, /*Year: 1910*/ \
@@ -824,7 +825,7 @@ item_mu_mu_cargo_wagon_powered, /*Year: 1992*/
 
 #define SORTING_SINGLEMETRO \
 item_singlemtro_usa_brooklyn_union_gate_car, /*Year: 1880*/ \
-item_singlemtro_hungary_budapest_1894_stock, /*Year: 1894*/ \
+item_singlemtro_hungary_budapest_1894_stock, /*Year: 1903*/ \
 item_singlemtro_usa_chicago_l_northwest_elevated_1907_stock, /*Year: 1907*/ \
 item_singlemtro_germany_berlin_u_bahn_c_ii, /*Year: 1929*/
 

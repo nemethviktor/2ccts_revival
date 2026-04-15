@@ -6587,7 +6587,7 @@ item(FEAT_TRAINS, item_mtro_italy_rome_s_300, 9052) {}
 item(FEAT_TRAINS, item_mtro_algeria_algiers_caf_2011_stock, 9053) {}
 item(FEAT_TRAINS, item_mtro_germany_berlin_u_bahn_ik, 9054) {}
 item(FEAT_TRAINS, item_mtro_usa_chicago_l_6000, 9055) {}
-// 9056 free
+item(FEAT_TRAINS, item_mtro_usa_brooklyn_union_gate_car, 9056) {}
 // 9057 free
 // 9058 free
 // 9059 free

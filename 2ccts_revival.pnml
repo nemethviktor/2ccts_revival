@@ -1606,6 +1606,9 @@
 #include "src/Electric/USA_Chicago_L_6000_graphics.pnml"
 #include "src/Electric/USA_Chicago_L_6000_item.pnml"
 
+#include "src/Electric/USA_Brooklyn_Union_Gate_Car_graphics.pnml"
+#include "src/Electric/USA_Brooklyn_Union_Gate_Car_item.pnml"
+
 
 //// MAGLEV
 #include "src/Maglev/China_Transrapid_graphics.pnml"

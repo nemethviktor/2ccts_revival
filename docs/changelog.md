@@ -16,7 +16,7 @@
 	- Added `Sorefame DE8` (Diesel) also using modified `Alsthom AD30B` graphics.
 	- Added `GMD GT22LC-2` (Diesel) using modified `Korail 6000 EMD SD18` graphics.
 	- Added `Hyundai Rotem/Skoda TRC E6800` (Electric) using modified `CSD 380` graphics.
-
+	- Cloned `Brooklyn Union Gate Car` from Single-Metro to normal Metro - there was a `1300` series, which was the Single-Metro and an `Elevated`, which was the "normal". 
 	
 **3.3-RC1 [20260412]**
 - CODE CHANGES:
