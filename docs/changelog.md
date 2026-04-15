@@ -13,7 +13,7 @@
 	- Added `Ghana Rwy Corp Class TT12` using the `EMD G22W` somewhat modified graphics, again, don't complain, do a better one if you can. Otherwise works.
 	- Undid the "powered requiring electricity" logic introduced in RC1
 	- Added `Alsthom BB-BB` (Diesel) using modified `Alsthom AD30B` graphics.
-	
+	- Added `Sorefame DE8` (Diesel) also using modified `Alsthom AD30B` graphics.
 	
 	
 **3.3-RC1 [20260412]**
@@ -23,7 +23,7 @@
 - VEHICLES CHANGES:
 	- Reclassified `USA_UP_4000_Big_Boy` as template `TPL_03G`
 	- Added `JR Freight M250` (basically a CargoEMU)
-	- Moved all "powered" generic coaches to be actually electric. They can't run on non-electrified tracks anymore.
+	- ~~Moved all "powered" generic coaches to be actually electric. They can't run on non-electrified tracks anymore.~~
 	- Indian and Russian coaches have been moved to broad-gauge _only_. Eventually I will do something about the chaos in the coach-dept but for now it's as-is.
 	- Re-validated all the vehicles in the set. In practice this means that when I was able to find a Wikipedia article, I took information from there, otherwise I asked Gemini (yes I use AI, such is life.). In some cases, espc wrt TE/Coefficient in steam powered vehicles, as well as the weight of them may not fully line up with the old values; this partially has to do with the fact that I think originally the loco weights were loco-only whereas now they are loco+tender where applicable. I also reworked the pax capacity where applicable. The speeds of steam engines have been oftentimes reduced from top speeds to sustainable service speeds with some extra overhead so that they don't feel too slow either (in fact some have been increased because they had been defined as slow as 15kmh [10mph], which was useless as well as unlikely).
 		- For **metros and xMUs** the following logic now applies: in Excel the TE-C has been halved. If taking a real life example of the `Moscow 81-720` the legacy set had `0.69` TE-C, from which the game calculated a TE of some `440kN` or so, which is unrealistic, even if we use powered cars. Half of that is realistic though.

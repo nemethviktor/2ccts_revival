@@ -831,6 +831,9 @@
 #include "src/Diesel/Congo_Alstom_BB_BB_graphics.pnml"
 #include "src/Diesel/Congo_Alstom_BB_BB_item.pnml"
 
+#include "src/Diesel/Zimbabwe_Sorefame_DE8_graphics.pnml"
+#include "src/Diesel/Zimbabwe_Sorefame_DE8_item.pnml"
+
 
 //// EMU
 #include "src/EMU/Netherlands_NS_Mat24_graphics.pnml"
