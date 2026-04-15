@@ -834,6 +834,9 @@
 #include "src/Diesel/Zimbabwe_Sorefame_DE8_graphics.pnml"
 #include "src/Diesel/Zimbabwe_Sorefame_DE8_item.pnml"
 
+#include "src/Diesel/Ivory_Coast_GMD_GT22LC2_graphics.pnml"
+#include "src/Diesel/Ivory_Coast_GMD_GT22LC2_item.pnml"
+
 
 //// EMU
 #include "src/EMU/Netherlands_NS_Mat24_graphics.pnml"

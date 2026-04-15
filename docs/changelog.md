@@ -8,13 +8,14 @@
 	- Added `Hessian Ludwig Rlw Thomas` using `Victorian Railways Rowan Railmotor` graphics but different/relevant specs
 	- Added `NÖLB 30-33` using `NÖLB 1` graphics but different/relevant specs
 	- Changed `Harbour Board EL 0-4-0 'Little Bess'` properties to be lighter
-	- Added `Mozambique Railways No. 101 to 104` using modified `4-4-0 'American'` graphics and different/relevant specs
-	- Added `Haine-Saint-Pierre Golwé` (Ivory Coast) - it's a bit of a mix of graphics, don't complain. It seems to work.
-	- Added `Ghana Rwy Corp Class TT12` using the `EMD G22W` somewhat modified graphics, again, don't complain, do a better one if you can. Otherwise works.
+	- Added `Mozambique Railways No. 101 to 104` (Steam) using modified `4-4-0 'American'` graphics and different/relevant specs
+	- Added `Haine-Saint-Pierre Golwé` (Steam) - it's a bit of a mix of graphics, don't complain. It seems to work.
+	- Added `Ghana Rwy Corp Class TT12` (Diesel) using the `EMD G22W` somewhat modified graphics, again, don't complain, do a better one if you can. Otherwise works.
 	- Undid the "powered requiring electricity" logic introduced in RC1
 	- Added `Alsthom BB-BB` (Diesel) using modified `Alsthom AD30B` graphics.
 	- Added `Sorefame DE8` (Diesel) also using modified `Alsthom AD30B` graphics.
-	
+	- Added `GMD GT22LC-2` (Diesel) using modified `Korail 6000 EMD SD18` graphics.
+
 	
 **3.3-RC1 [20260412]**
 - CODE CHANGES:

@@ -784,6 +784,7 @@ str_diesel_ghana_railway_corporation_class_tt12                       :Ghana Rwy
 str_diesel_sierra_leone_lamco_301_series                              :LAMCO. Series 301-310 (Diesel)
 str_diesel_congo_alstom_bb_bb                                         :Alsthom BB-BB (Diesel)
 str_diesel_zimbabwe_sorefame_de8                                      :Sorefame DE8 (Diesel)
+str_diesel_ivory_coast_gmd_gt22lc2                                    :GMD GT22LC-2 (Diesel)
 
 # METRO
 str_mtro_argentina_le_brugeoise                                       :Buenos Aires 'Le Brugeoise' (Metro, 3rd Rail)
