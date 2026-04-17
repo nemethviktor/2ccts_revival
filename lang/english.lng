@@ -525,7 +525,7 @@ str_diesel_brazil_efcb_alco_rs_3                                  :EFCB ALCO RS-
 str_diesel_netherlands_ns_600                                     :NS 600 'Bakkie' (Diesel)
 str_diesel_uruguay_afe_1500                                       :AFE 1500 (Diesel)
 str_diesel_canada_cpr_trainmaster                                 :CPR CLC H-24-66 'Trainmaster' (Diesel)
-str_diesel_liberia_liberia_railways_class_08                      :Liberia "Class 08" (Diesel)
+str_diesel_liberia_liberia_railways_class_08                      :Liberia "Class 08" [Ex-BR] (Diesel)
 str_diesel_austria_obb_2060                                       :ÖBB 2060 (Diesel)
 str_diesel_canada_cnr_sw1200                                      :CNR SW1200 (Diesel)
 str_diesel_canada_via_rail_fp9                                    :VIA Rail FP9 (Diesel)
@@ -682,7 +682,7 @@ str_rbd_netherlands_ns_ombc                                       :NS omBC 2901 
 str_rbd_australia_nswgr_class_400                                 :NSWGR 400 (Diesel Railbus)
 str_rbd_portugal_cp_usd_9050                                      :CP USD 9050 (Diesel Railbus)
 str_rbd_belgium_sncb_class_42                                     :NMBS/SNCB 42/43 (Diesel Railbus)
-str_rbd_bulgaria_bdz_19                                           :BDZ 19,001.7 (Diesel Railbus)
+str_rbd_bulgaria_bdz_19                                           :BDZ 19,001.7 [29-01] (Diesel Railbus)
 str_rbd_greece_ose_aa71                                           :OSE AA.71 (Diesel Railbus)
 str_rbd_tunisia_sncft_z431                                        :SNCFT Z-431 (Diesel Railbus)
 str_rbd_usa_amtrak_spv_200                                        :Amtrak Budd SPV-2000 (Diesel Railbus)
@@ -881,7 +881,7 @@ str_electric_norway_nsb_el17                                      :NSB EL17 (Ele
 str_electric_south_africa_sar_11e                                 :SAR 11E (Electric, 25kV AC)
 str_electric_south_africa_sar_e38                                 :Amcoal E38 (Electric, 3kV DC)
 str_electric_usa_amtrak_hhp_8                                     :Amtrak HHP-8 (Electric, OHLE)
-str_electric_brasil_mrs_he_4_4                                    :MRS "He 4/4" (Electric, 3kV DC)
+str_electric_brasil_mrs_he_4_4                                    :MRS "He 4/4" [900 Series] (Electric, 3kV DC)
 str_electric_russia_rzd_vl11                                      :RZD VL11 (Electric, 3kV DC)
 str_electric_germany_prussian_es_6                                :K.P.St.E. ES 6 (Electric, 15kV AC)
 str_electric_congo_type_2450_acec_charleroi_zaire_electric        :Zaire Electric Type 2450 (Electric, 25kV AC)
@@ -892,10 +892,10 @@ str_rbe_switzerland_ab_cfe_3_3                                    :AB CFe 3/3 (E
 str_rbe_morocco_oncfm_zab1000                                     :ONCF ZAB1000 (Electric Railbus, 3kV DC)
 str_rbe_germany_db_et_85                                          :DB ET 85 / DB 485 (Electric Railbus, 15kV AC)
 str_rbe_italy_fs_ale_840                                          :FS ALe 840 (Electric Railbus, 3kV DC)
-str_rbe_czech_republic_cd_m400                                    :ČD M400 (Electric Railbus, 1500V DC)
+str_rbe_czech_republic_cd_m400                                    :ČD M400 [kkStB 40.0] (Electric Railbus, 1500V DC)
 str_rbe_switzerland_tpc_bvb_be_2_2                                :TPC BVB Be 2/2 (Electric Railbus, 1500V DC)
 str_rbe_spain_ferrocarril_de_soller_1_3                           :Ferrocarril de Soller 1-3 (Electric Railbus, 1500V DC)
-str_rbe_slovakia_zssk_490                                         :ZSSK 49.0 (Electric Railbus, 1500V DC)
+str_rbe_slovakia_zssk_490                                         :ZSSK 49.0 [CSD EMU 49.0] (Electric Railbus, 1500V DC)
 str_rbe_italy_fs_e623                                             :FS E.623 (Electric Railbus, 3kV DC)
 str_rbe_sweden_sj_x16                                             :SJ X16 (Electric Railbus, 15kV AC)
 str_rbe_japan_choshi_deha_1000                                    :Choshi DeHa 1000 (Electric Railbus, 1500V DC)
@@ -1074,7 +1074,7 @@ str_steam_austria_kkstb_299                                       :KkStB 299 (St
 str_steam_new_zealand_nzr_x_class                                 :NZR X (Steam)
 str_steam_italy_fs_895                                            :FS 895 (Steam)
 str_steam_switzerland_sbb_c_5_6                                   :SBB C 5/6 'Elephant' (Steam)
-str_steam_croatia_hz_51                                           :HZ 51 (Steam)
+str_steam_croatia_hz_51                                           :HZ 51 [MÁV 375] (Steam)
 str_steam_italy_fs_880                                            :FS 880 (Steam)
 str_steam_argentina_fcnea_11b_2_8_0                               :FCNEA 11B 2-8-0 (Steam)
 str_steam_france_sncf_140c                                        :SNCF 140C (Steam)
@@ -1123,7 +1123,7 @@ str_steam_usa_sierra_railroad_28                                  :Sierra Railro
 str_steam_canada_cn_u_1_class                                     :Canadian National U-1-a (Steam)
 str_steam_india_indian_railways_xb_class                          :Indian Railways XB (Steam)
 str_steam_iraq_iraqi_state_railways_pc_class                      :Iraqi State Railways PC (Steam)
-str_steam_egypt_enr_1100                                          :ENR 1100 (Steam)
+str_steam_egypt_enr_1100                                          :ENR 1100 [LMS Fowler 3F / WD 0-6-0T] (Steam)
 str_steam_japan_jnr_class_e10                                     :JNR E10 (Steam)
 str_steam_uk_gwr_1600_class                                       :GWR 1600 (Steam)
 str_steam_australia_victorian_railways_r_class                    :Victorian Railways R (Steam)
@@ -1169,7 +1169,7 @@ str_steam_spain_renfe_242f                                        :RENFE 242F (S
 str_steam_ireland_gs_wr_101                                       :GS&WR 101 (Steam)
 str_steam_usa_nyc_h_6a_light_mikado                               :NYC H-6A 'Light Mikado' (Steam)
 str_steam_japan_jnr_d50                                           :JNR D50 (Steam)
-str_steam_argentina_fcgr_315                                      :FCGR (BAGS) No. 315 2-4-0T (Steam)
+str_steam_argentina_fcgr_315                                      :FCGR [BAGS] No. 315 2-4-0T (Steam)
 str_steam_australia_nswgr_c35                                     :NSWGR C35 (Steam)
 str_steam_belgium_nmbs_sncb_type_29                               :NMBS/SNCB Type 29 (Steam)
 str_steam_chile_fcab_4_8_2                                        :FCAB 4-8-2 Vulcan 'Mountain' (Steam)
@@ -1236,8 +1236,8 @@ str_mu_wagon_gen4_hopper_type2                                    :4th Gen Self-
 str_mu_wagon_gen5_boxcar_type2                                    :5th Gen Boxcar [Non-Food]
 str_mu_wagon_gen5_silo_type2                                      :5th Gen Silo [Non-Food]
 str_mu_wagon_gen5_hopper_type2                                    :5th Gen Self-discharging Hopper [Non-Food]
-str_mu_wagon_service_car_type1                                    :Service Car [Food]
-str_mu_wagon_service_car_type2                                    :Service Car [Non-Food]
+str_mu_wagon_service_car_type1                                    :Service Car Type 1
+str_mu_wagon_service_car_type2                                    :Service Car Type 2
 str_mu_wagon_gen3_boxcar_type2                                    :3rd Gen Wooden Boxcar [Non-Food]
 str_mu_wagon_gen4_boxcar_type2                                    :4th Gen Boxcar [Non-Food]
 str_mu_wagon_gen6_flatcar                                         :6th Gen Flatcar

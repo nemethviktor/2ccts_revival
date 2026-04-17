@@ -28,7 +28,7 @@ def load_excel_data():
     df_props = pd.read_excel(excel_path, sheet_name='properties')
     df_tracks = pd.read_excel(excel_path, sheet_name='track_types')
 
-    # We include INTRO_DATE to ensure stable sorting in the .lng files
+    # We include VEHID_ID to ensure stable sorting in the .lng files()
     df = df_control[['VEHIDCODE', 'NAME', 'ENGLISH', 'IS_POWERED_UNPOWERED_SUNDRY', 'VEHID_ID']].merge(
         df_props[['VEHIDCODE', 'ENGINE_CLASS', 'COST_CAT',
                   'DUAL_HEADED', 'IS_TURBINE']],

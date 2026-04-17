@@ -467,7 +467,7 @@ str_rbd_netherlands_ns_ombc,NS omBC 2901
 str_rbd_australia_nswgr_class_400,NSWGR 400
 str_rbd_portugal_cp_usd_9050,CP USD 9050
 str_rbd_belgium_sncb_class_42,NMBS/SNCB 42/43
-str_rbd_bulgaria_bdz_19,"BDZ 19,001.7 (29-01)"
+str_rbd_bulgaria_bdz_19,"BDZ 19,001.7 [29-01]"
 str_rbd_greece_ose_aa71,OSE AA.71
 str_rbd_tunisia_sncft_z431,SNCFT Z-431
 str_rbd_usa_amtrak_spv_200,Amtrak Budd SPV-2000
@@ -481,11 +481,11 @@ str_rbd_argentina_fcpba_m_railcar,FCPBA M Railcar
 str_rbd_eritrea_eritrean_railway_a62_70_littorina,Eritrean Railway A.62-70 'Littorina'
 str_rbd_finland_vr_dm7,VR Dm7
 str_rbd_russia_rzd_ach2,RZD ACh2
-str_rbe_czech_republic_cd_m400,ČD M400 (kkStB 40.0)
+str_rbe_czech_republic_cd_m400,ČD M400 [kkStB 40.0]
 str_rbe_france_sncf_z_7100,SNCF Z 7100
 str_rbe_germany_buckower_kleinbahn_nr_1_3,Buckower Kleinbahn Nr. 1-3
 str_rbe_germany_db_4792,DB 479.201
-str_rbe_slovakia_zssk_490,ZSSK 49.0 (CSD EMU 49.0)
+str_rbe_slovakia_zssk_490,ZSSK 49.0 [CSD EMU 49.0]
 str_rbe_italy_fs_ale_840,FS ALe 840
 str_rbe_italy_fg_ale_80,FG ALe 80
 str_rbe_italy_fs_e623,FS E.623
@@ -515,7 +515,7 @@ str_steam_switzerland_sbb_a_3_5,SBB A 3/5
 str_steam_switzerland_sbb_e_3_3,SBB E 3/3
 str_steam_austria_kkstb_299,KkStB 299
 str_steam_new_zealand_nzr_x_class,NZR X
-str_steam_croatia_hz_51,HZ 51 (MÁV 375)
+str_steam_croatia_hz_51,HZ 51 [MÁV 375]
 str_steam_italy_fs_880,FS 880
 str_steam_argentina_fcnea_11b_2_8_0,FCNEA 11B 2-8-0
 str_steam_france_sncf_140c,SNCF 140C
@@ -564,7 +564,7 @@ str_steam_usa_sierra_railroad_28,Sierra Railroad 28
 str_steam_canada_cn_u_1_class,Canadian National U-1-a
 str_steam_india_indian_railways_xb_class,Indian Railways XB
 str_steam_iraq_iraqi_state_railways_pc_class,Iraqi State Railways PC
-str_steam_egypt_enr_1100,ENR 1100 (LMS Fowler 3F / WD 0-6-0T)
+str_steam_egypt_enr_1100,ENR 1100 [LMS Fowler 3F / WD 0-6-0T]
 str_steam_uk_gwr_1600_class,GWR 1600
 str_steam_australia_victorian_railways_r_class,Victorian Railways R
 str_steam_germany_db_9977_79,DB 99.77-79
@@ -604,7 +604,7 @@ str_steam_austria_kkstb_310,KKStB 310
 str_steam_usa_southern_pacific_gs_4_daylight,Southern Pacific GS-4 'Daylight'
 str_steam_ireland_gs_wr_101,GS&WR 101
 str_steam_usa_nyc_h_6a_light_mikado,NYC H-6A 'Light Mikado'
-str_steam_argentina_fcgr_315,FCGR (BAGS) No. 315 2-4-0T
+str_steam_argentina_fcgr_315,FCGR [BAGS] No. 315 2-4-0T
 str_steam_australia_nswgr_c35,NSWGR C35
 str_steam_belgium_nmbs_sncb_type_29,NMBS/SNCB Type 29
 str_steam_chile_fcab_4_8_2,FCAB 4-8-2 Vulcan 'Mountain'
@@ -632,7 +632,7 @@ str_diesel_netherlands_ns_600,NS 600 'Bakkie'
 str_diesel_usa_pennsylvania_railroad_rf_16_sharknose,PRR RF-16 'Sharknose'
 str_diesel_uruguay_afe_1500,AFE 1500
 str_diesel_canada_cpr_trainmaster,CPR CLC H-24-66 'Trainmaster'
-str_diesel_liberia_liberia_railways_class_08,"Liberia ""Class 08"" (Ex-BR)"
+str_diesel_liberia_liberia_railways_class_08,"Liberia ""Class 08"" [Ex-BR]"
 str_diesel_austria_obb_2060,ÖBB 2060
 str_diesel_canada_cnr_sw1200,CNR SW1200
 str_diesel_canada_via_rail_fp9,VIA Rail FP9
@@ -920,7 +920,7 @@ str_electric_south_africa_sar_5e1,SAR 5E1
 str_electric_south_africa_sar_6e,SAR 6E
 str_electric_switzerland_rhb_ge_4_4_i,RhB Ge 4/4 I
 str_electric_switzerland_rhb_ge_6_6_krokodil,RhB Ge 6/6 'Krokodil'
-str_electric_brasil_mrs_he_4_4,"MRS ""He 4/4"" (900 Series)"
+str_electric_brasil_mrs_he_4_4,"MRS ""He 4/4"" [900 Series]"
 str_electric_south_africa_sar_7e,SAR 7E
 str_electric_south_africa_sar_11e,SAR 11E
 str_electric_new_zealand_tranzrail_ef,TranzRail EF
@@ -1152,8 +1152,8 @@ str_mu_wagon_gen6_container_carrier,6th Gen Container Carrier
 str_mu_wagon_gen6_centerbeam,6th Gen Centerbeam Flatcar
 str_mu_wagon_gen6_container_doublestack,6th Gen Container Doublestack
 str_mu_wagon_gen6_superheavy_flatcar,6th Gen Superheavy Flatcar
-str_mu_wagon_service_car_type1,Service Car [Food]
-str_mu_wagon_service_car_type2,Service Car [Non-Food]
+str_mu_wagon_service_car_type1,Service Car Type 1
+str_mu_wagon_service_car_type2,Service Car Type 2
 str_mu_coach_gen1_wooden_2_axle_compartment_coach,Wooden 2-axle Compartment Coach
 str_mu_coach_gen1_wooden_2_axle_regional_coach,Wooden 2-axle Regional Coach
 str_mu_coach_gen1_wooden_2_axle_mail_coach,Wooden 2-axle Mail Coach

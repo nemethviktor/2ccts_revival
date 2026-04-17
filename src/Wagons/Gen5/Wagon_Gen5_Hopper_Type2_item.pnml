@@ -40,11 +40,11 @@ item(FEAT_TRAINS, item_mu_wagon_gen5_hopper_type2) {
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
-        // cargodeftype: HOPPER;
+        // cargodeftype: HOPPER_TYPE2;
         refittable_cargo_classes: bitmask(CC_OPEN_BULK, CC_COVERED_BULK);
-        non_refittable_cargo_classes: bitmask(CC_WEIRD);
-        cargo_allow_refit: [COAL, IORE, CORE, AORE, CLAY, CMNT, GRVL, LIME, SAND, SGBT];
-        cargo_disallow_refit: [PASS, MAIL, TOUR, OIL_, LVST, GOOD, GRAI, WOOD, STEL, VALU, PAPR, WHEA, FOOD, GOLD, RUBR, FRUT, MAIZ, WATR, DIAM, SUGR, TOYS, BATT, SWET, TOFF, COLA, CTCD, BUBL, PLST, FZDR, BEER, BDMT, BRCK, CERA, CERE, COPR, DYES, ENSP, FERT, FICR, FISH, FMSP, GLAS, JAVA, MILK, MNSP, OLSD, PETR, PLAS, POTA, RCYC, RFPR, SCMT, SGCN, SULP, VEHI, VPTS, WDPR, WOOL, URAN, YETI, YETY];
+        non_refittable_cargo_classes: bitmask(CC_POTABLE);
+        cargo_allow_refit: [];
+        cargo_disallow_refit: [];
         
         cargo_age_period: 185;
         misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_AUTOREFIT);
