@@ -1,144 +1,1273 @@
 ##grflangid 0x00
 ##plural 0
 
-#Main grf title and description
-STR_GRF_NAME                    :{TITLE}
-STR_GRF_DESCRIPTION             :{SILVER}2cc Trains of the World in NML{}{}(c)2ccts{}License:GPLv2 or higher.{}See readme for details.
-STR_GRF_URL             :https://github.com/nemethviktor/2ccts_revival
+# Hardcoded Strings
+STR_GRF_NAME                                                      :{TITLE}
+# STR_GRF_DESCRIPTION                                               : not translated
+STR_GRF_URL                                                       :https://github.com/nemethviktor/2ccts_revival
+# STR_USED_WITH_DYNAMIC_ENGINES                                     : not translated
+# STR_ERROR_REGION                                                  : not translated
+# STR_PARAM_PURCHASE_COST                                           : not translated
+# STR_PARAM_PURCHASE_COST_DESC                                      : not translated
+# STR_PARAM_RUNNING_COST                                            : not translated
+# STR_PARAM_RUNNING_COST_DESC                                       : not translated
+# STR_WORD_NORMAL                                                   : not translated
+# STR_SUFFIX_STEAMENGINE                                            : not translated
+# STR_SUFFIX_DIESELENGINE                                           : not translated
+# STR_SUFFIX_ELECTRICENGINE                                         : not translated
+# STR_SUFFIX_MAGLEVSU                                               : not translated
+# STR_SUFFIX_STEAMRAILBUS                                           : not translated
+# STR_SUFFIX_DIESELRAILBUS                                          : not translated
+# STR_SUFFIX_ELECTRICRAILBUS                                        : not translated
+# STR_SUFFIX_METRORAILBUS                                           : not translated
+# STR_SUFFIX_MAGLEVRAILBUS                                          : not translated
+# STR_SUFFIX_DMU                                                    : not translated
+# STR_SUFFIX_EMU                                                    : not translated
+# STR_SUFFIX_MAGLEVMU                                               : not translated
+# STR_SUFFIX_COACH                                                  : not translated
+# STR_SUFFIX_WAGON                                                  : not translated
+# STR_SUFFIX_METRO                                                  : not translated
+# STR_SUFFIX_UNPOWERED                                              : not translated
+# STR_SUFFIX_POWERED                                                : not translated
+# STR_SUFFIX_STEAM                                                  : not translated
+# STR_SUFFIX_DIESEL                                                 : not translated
+# STR_SUFFIX_ELECTRIC                                               : not translated
+# STR_SUFFIX_MAGLEV                                                 : not translated
+# STR_SUFFIX_GAS_TURBINE                                            : not translated
+# STR_SUFFIX_1500V                                                  : not translated
+# STR_SUFFIX_3KV                                                    : not translated
+# STR_SUFFIX_15KV                                                   : not translated
+# STR_SUFFIX_25KV                                                   : not translated
+# STR_SUFFIX_OHLE                                                   : not translated
+# STR_SUFFIX_3RD                                                    : not translated
+# STR_SUFFIX_4TH                                                    : not translated
+# STR_SUFFIX_DUAL                                                   : not translated
+# STR_UNIT_WAGON_PASSENGER                                          : not translated
+# STR_UNIT_WAGON_CARGO                                              : not translated
+# STR_CANNOT_ATTACH_WAGON_TO_MU                                     : not translated
+# STR_CANNOT_ATTACH_WAGON_TO_UNIT_WAGON                             : not translated
+# STR_CANNOT_ATTACH_UNIT_WAGON_TO_ENGINE                            : not translated
+# STR_CANNOT_ATTACH_UNIT_WAGON_TO_WAGON                             : not translated
+# STR_CANNOT_ATTACH_UNIT_WAGON_CARGO_TO_PASSENGER                   : not translated
+# STR_CANNOT_ATTACH_UNIT_WAGON_PASSENGER_TO_CARGO                   : not translated
+# STR_PARAM_CONCEPT                                                 : not translated
+# STR_PARAM_CONCEPT_DESC                                            : not translated
+# STR_PARAM_REGION_AFRICA                                           : not translated
+# STR_PARAM_REGION_AFRICA_DESC                                      : not translated
+# STR_PARAM_REGION_NORTH_AMERICA                                    : not translated
+# STR_PARAM_REGION_NORTH_AMERICA_DESC                               : not translated
+# STR_PARAM_REGION_SOUTH_AMERICA                                    : not translated
+# STR_PARAM_REGION_SOUTH_AMERICA_DESC                               : not translated
+# STR_PARAM_REGION_ASIA                                             : not translated
+# STR_PARAM_REGION_ASIA_DESC                                        : not translated
+# STR_PARAM_REGION_NORTHERN_EUROPE                                  : not translated
+# STR_PARAM_REGION_NORTHERN_EUROPE_DESC                             : not translated
+# STR_PARAM_REGION_EASTERN_EUROPE                                   : not translated
+# STR_PARAM_REGION_EASTERN_EUROPE_DESC                              : not translated
+# STR_PARAM_REGION_SOUTHERN_EUROPE                                  : not translated
+# STR_PARAM_REGION_SOUTHERN_EUROPE_DESC                             : not translated
+# STR_PARAM_REGION_WESTERN_EUROPE                                   : not translated
+# STR_PARAM_REGION_WESTERN_EUROPE_DESC                              : not translated
+# STR_PARAM_REGION_OCEANIA                                          : not translated
+# STR_PARAM_REGION_OCEANIA_DESC                                     : not translated
+# STR_PARAM_LOADINGSPEED                                            : not translated
+# STR_PARAM_LOADINGSPEED_DESC                                       : not translated
+# STR_PARAM_LOADINGSPEED_SLOW                                       : not translated
+# STR_PARAM_LOADINGSPEED_NORMAL                                     : not translated
+# STR_PARAM_LOADINGSPEED_FAST                                       : not translated
+# STR_PARAM_LOADINGSPEED_ULTRA                                      : not translated
+# STR_CLASS_FLAG                                                    : not translated
+# STR_CLASS_ROLE                                                    : not translated
+# STR_CLASS_OPERATOR                                                : not translated
+# STR_CLASS_PROPULSION                                              : not translated
+# STR_CLASS_LIVERY                                                  : not translated
+# STR_CLASS_REGION                                                  : not translated
+# STR_CLASS_ZONE                                                    : not translated
+# STR_ROLE_PASSENGER                                                : not translated
+# STR_ROLE_FREIGHT                                                  : not translated
+# STR_ROLE_MIXED                                                    : not translated
+# STR_ROLE_EXPRESS_PASSENGER                                        : not translated
+# STR_ROLE_EXPRESS_FREIGHT                                          : not translated
+# STR_ROLE_HEAVY_FREIGHT                                            : not translated
+# STR_ROLE_LIGHT_FREIGHT                                            : not translated
+# STR_ROLE_MAIL                                                     : not translated
+# STR_ROLE_RESTAURANT_CAR                                           : not translated
+# STR_ROLE_SHUNTING                                                 : not translated
+# STR_ROLE_BANKING                                                  : not translated
+# STR_ROLE_SNOWPLOUGH                                               : not translated
+# STR_ROLE_UTILITY                                                  : not translated
+# STR_ROLE_PROTOTYPE                                                : not translated
+# STR_REGION_AMERICA                                                : not translated
+# STR_REGION_AMERICA_NORTHERN                                       : not translated
+# STR_REGION_AMERICA_CENTRAL                                        : not translated
+# STR_REGION_AMERICA_SOUTH                                          : not translated
+# STR_REGION_AMERICA_CARIBBEAN                                      : not translated
+# STR_REGION_EUROPE                                                 : not translated
+# STR_REGION_EUROPE_NORTHERN                                        : not translated
+# STR_REGION_EUROPE_WESTERN                                         : not translated
+# STR_REGION_EUROPE_SOUTHERN                                        : not translated
+# STR_REGION_EUROPE_EASTERN                                         : not translated
+# STR_REGION_AFRICA                                                 : not translated
+# STR_REGION_AFRICA_NORTHERN                                        : not translated
+# STR_REGION_AFRICA_WESTERN                                         : not translated
+# STR_REGION_AFRICA_MIDDLE                                          : not translated
+# STR_REGION_AFRICA_EASTERN                                         : not translated
+# STR_REGION_AFRICA_SOUTHERN                                        : not translated
+# STR_REGION_ASIA                                                   : not translated
+# STR_REGION_ASIA_WESTERN                                           : not translated
+# STR_REGION_ASIA_CENTRAL                                           : not translated
+# STR_REGION_ASIA_EASTERN                                           : not translated
+# STR_REGION_ASIA_SOUTHERN                                          : not translated
+# STR_REGION_ASIA_SOUTHEASTERN                                      : not translated
+# STR_REGION_OCEANIA                                                : not translated
+# STR_REGION_OCEANIA_MICRONESIA                                     : not translated
+# STR_REGION_OCEANIA_MELANESIA                                      : not translated
+# STR_REGION_OCEANIA_POLYNESIA                                      : not translated
+# STR_REGION_OCEANIA_AUSTRALIA_AND_NEW_ZEALAND                      : not translated
+# STR_ZONE_RESIDENTIAL                                              : not translated
+# STR_ZONE_RESIDENTIAL_LOW_DENSITY                                  : not translated
+# STR_ZONE_RESIDENTIAL_MEDIUM_DENSITY                               : not translated
+# STR_ZONE_RESIDENTIAL_HIGH_DENSITY                                 : not translated
+# STR_ZONE_COMMERCIAL                                               : not translated
+# STR_ZONE_COMMERCIAL_LOW_DENSITY                                   : not translated
+# STR_ZONE_COMMERCIAL_MEDIUM_DENSITY                                : not translated
+# STR_ZONE_COMMERCIAL_HIGH_DENSITY                                  : not translated
+# STR_ZONE_INDUSTRIAL                                               : not translated
+# STR_ZONE_INDUSTRIAL_LOW_DENSITY                                   : not translated
+# STR_ZONE_INDUSTRIAL_MEDIUM_DENSITY                                : not translated
+# STR_ZONE_INDUSTRIAL_HIGH_DENSITY                                  : not translated
+# STR_ZONE_MIXED                                                    : not translated
+# STR_ZONE_MIXED_LOW_DENSITY                                        : not translated
+# STR_ZONE_MIXED_MEDIUM_DENSITY                                     : not translated
+# STR_ZONE_MIXED_HIGH_DENSITY                                       : not translated
+# STR_ZONE_AGRICULTURAL                                             : not translated
+# STR_ZONE_FORESTRY                                                 : not translated
+# STR_ZONE_PUBLIC                                                   : not translated
+# STR_ZONE_TRANSPORT                                                : not translated
+# STR_ZONE_GENERAL                                                  : not translated
+# STR_ZONE_LEISURE                                                  : not translated
+# STR_ZONE_OTHER                                                    : not translated
+# STR_FLAG                                                          : not translated
+# STR_FLAG_AD                                                       : not translated
+# STR_FLAG_AE                                                       : not translated
+# STR_FLAG_AF                                                       : not translated
+# STR_FLAG_AG                                                       : not translated
+# STR_FLAG_AI                                                       : not translated
+# STR_FLAG_AL                                                       : not translated
+# STR_FLAG_AM                                                       : not translated
+# STR_FLAG_AO                                                       : not translated
+# STR_FLAG_AQ                                                       : not translated
+# STR_FLAG_AR                                                       : not translated
+# STR_FLAG_AS                                                       : not translated
+# STR_FLAG_AT                                                       : not translated
+# STR_FLAG_AU                                                       : not translated
+# STR_FLAG_AW                                                       : not translated
+# STR_FLAG_AX                                                       : not translated
+# STR_FLAG_AZ                                                       : not translated
+# STR_FLAG_BA                                                       : not translated
+# STR_FLAG_BB                                                       : not translated
+# STR_FLAG_BD                                                       : not translated
+# STR_FLAG_BE                                                       : not translated
+# STR_FLAG_BF                                                       : not translated
+# STR_FLAG_BG                                                       : not translated
+# STR_FLAG_BH                                                       : not translated
+# STR_FLAG_BI                                                       : not translated
+# STR_FLAG_BJ                                                       : not translated
+# STR_FLAG_BL                                                       : not translated
+# STR_FLAG_BM                                                       : not translated
+# STR_FLAG_BN                                                       : not translated
+# STR_FLAG_BO                                                       : not translated
+# STR_FLAG_BQ                                                       : not translated
+# STR_FLAG_BR                                                       : not translated
+# STR_FLAG_BS                                                       : not translated
+# STR_FLAG_BT                                                       : not translated
+# STR_FLAG_BV                                                       : not translated
+# STR_FLAG_BW                                                       : not translated
+# STR_FLAG_BY                                                       : not translated
+# STR_FLAG_BZ                                                       : not translated
+# STR_FLAG_CA                                                       : not translated
+# STR_FLAG_CC                                                       : not translated
+# STR_FLAG_CD                                                       : not translated
+# STR_FLAG_CF                                                       : not translated
+# STR_FLAG_CG                                                       : not translated
+# STR_FLAG_CH                                                       : not translated
+# STR_FLAG_CI                                                       : not translated
+# STR_FLAG_CK                                                       : not translated
+# STR_FLAG_CL                                                       : not translated
+# STR_FLAG_CM                                                       : not translated
+# STR_FLAG_CN                                                       : not translated
+# STR_FLAG_CO                                                       : not translated
+# STR_FLAG_CR                                                       : not translated
+# STR_FLAG_CU                                                       : not translated
+# STR_FLAG_CV                                                       : not translated
+# STR_FLAG_CW                                                       : not translated
+# STR_FLAG_CX                                                       : not translated
+# STR_FLAG_CY                                                       : not translated
+# STR_FLAG_CZ                                                       : not translated
+# STR_FLAG_DE                                                       : not translated
+# STR_FLAG_DJ                                                       : not translated
+# STR_FLAG_DK                                                       : not translated
+# STR_FLAG_DM                                                       : not translated
+# STR_FLAG_DO                                                       : not translated
+# STR_FLAG_DZ                                                       : not translated
+# STR_FLAG_EC                                                       : not translated
+# STR_FLAG_EE                                                       : not translated
+# STR_FLAG_EG                                                       : not translated
+# STR_FLAG_EH                                                       : not translated
+# STR_FLAG_ER                                                       : not translated
+# STR_FLAG_ES                                                       : not translated
+# STR_FLAG_ET                                                       : not translated
+# STR_FLAG_EU                                                       : not translated
+# STR_FLAG_FI                                                       : not translated
+# STR_FLAG_FJ                                                       : not translated
+# STR_FLAG_FK                                                       : not translated
+# STR_FLAG_FM                                                       : not translated
+# STR_FLAG_FO                                                       : not translated
+# STR_FLAG_FR                                                       : not translated
+# STR_FLAG_GA                                                       : not translated
+# STR_FLAG_GB                                                       : not translated
+# STR_FLAG_GD                                                       : not translated
+# STR_FLAG_GE                                                       : not translated
+# STR_FLAG_GF                                                       : not translated
+# STR_FLAG_GG                                                       : not translated
+# STR_FLAG_GH                                                       : not translated
+# STR_FLAG_GI                                                       : not translated
+# STR_FLAG_GL                                                       : not translated
+# STR_FLAG_GM                                                       : not translated
+# STR_FLAG_GN                                                       : not translated
+# STR_FLAG_GP                                                       : not translated
+# STR_FLAG_GQ                                                       : not translated
+# STR_FLAG_GR                                                       : not translated
+# STR_FLAG_GS                                                       : not translated
+# STR_FLAG_GT                                                       : not translated
+# STR_FLAG_GU                                                       : not translated
+# STR_FLAG_GW                                                       : not translated
+# STR_FLAG_GY                                                       : not translated
+# STR_FLAG_HK                                                       : not translated
+# STR_FLAG_HM                                                       : not translated
+# STR_FLAG_HN                                                       : not translated
+# STR_FLAG_HR                                                       : not translated
+# STR_FLAG_HT                                                       : not translated
+# STR_FLAG_HU                                                       : not translated
+# STR_FLAG_ID                                                       : not translated
+# STR_FLAG_IE                                                       : not translated
+# STR_FLAG_IL                                                       : not translated
+# STR_FLAG_IM                                                       : not translated
+# STR_FLAG_IN                                                       : not translated
+# STR_FLAG_IO                                                       : not translated
+# STR_FLAG_IQ                                                       : not translated
+# STR_FLAG_IR                                                       : not translated
+# STR_FLAG_IS                                                       : not translated
+# STR_FLAG_IT                                                       : not translated
+# STR_FLAG_JE                                                       : not translated
+# STR_FLAG_JM                                                       : not translated
+# STR_FLAG_JO                                                       : not translated
+# STR_FLAG_JP                                                       : not translated
+# STR_FLAG_KE                                                       : not translated
+# STR_FLAG_KG                                                       : not translated
+# STR_FLAG_KH                                                       : not translated
+# STR_FLAG_KI                                                       : not translated
+# STR_FLAG_KM                                                       : not translated
+# STR_FLAG_KN                                                       : not translated
+# STR_FLAG_KP                                                       : not translated
+# STR_FLAG_KR                                                       : not translated
+# STR_FLAG_KW                                                       : not translated
+# STR_FLAG_KY                                                       : not translated
+# STR_FLAG_KZ                                                       : not translated
+# STR_FLAG_LA                                                       : not translated
+# STR_FLAG_LB                                                       : not translated
+# STR_FLAG_LC                                                       : not translated
+# STR_FLAG_LI                                                       : not translated
+# STR_FLAG_LK                                                       : not translated
+# STR_FLAG_LR                                                       : not translated
+# STR_FLAG_LS                                                       : not translated
+# STR_FLAG_LT                                                       : not translated
+# STR_FLAG_LU                                                       : not translated
+# STR_FLAG_LV                                                       : not translated
+# STR_FLAG_LY                                                       : not translated
+# STR_FLAG_MA                                                       : not translated
+# STR_FLAG_MC                                                       : not translated
+# STR_FLAG_MD                                                       : not translated
+# STR_FLAG_ME                                                       : not translated
+# STR_FLAG_MF                                                       : not translated
+# STR_FLAG_MG                                                       : not translated
+# STR_FLAG_MH                                                       : not translated
+# STR_FLAG_MK                                                       : not translated
+# STR_FLAG_ML                                                       : not translated
+# STR_FLAG_MM                                                       : not translated
+# STR_FLAG_MN                                                       : not translated
+# STR_FLAG_MO                                                       : not translated
+# STR_FLAG_MP                                                       : not translated
+# STR_FLAG_MQ                                                       : not translated
+# STR_FLAG_MR                                                       : not translated
+# STR_FLAG_MS                                                       : not translated
+# STR_FLAG_MT                                                       : not translated
+# STR_FLAG_MU                                                       : not translated
+# STR_FLAG_MV                                                       : not translated
+# STR_FLAG_MW                                                       : not translated
+# STR_FLAG_MX                                                       : not translated
+# STR_FLAG_MY                                                       : not translated
+# STR_FLAG_MZ                                                       : not translated
+# STR_FLAG_NA                                                       : not translated
+# STR_FLAG_NC                                                       : not translated
+# STR_FLAG_NE                                                       : not translated
+# STR_FLAG_NF                                                       : not translated
+# STR_FLAG_NG                                                       : not translated
+# STR_FLAG_NI                                                       : not translated
+# STR_FLAG_NL                                                       : not translated
+# STR_FLAG_NO                                                       : not translated
+# STR_FLAG_NP                                                       : not translated
+# STR_FLAG_NR                                                       : not translated
+# STR_FLAG_NU                                                       : not translated
+# STR_FLAG_NZ                                                       : not translated
+# STR_FLAG_OM                                                       : not translated
+# STR_FLAG_PA                                                       : not translated
+# STR_FLAG_PE                                                       : not translated
+# STR_FLAG_PF                                                       : not translated
+# STR_FLAG_PG                                                       : not translated
+# STR_FLAG_PH                                                       : not translated
+# STR_FLAG_PK                                                       : not translated
+# STR_FLAG_PL                                                       : not translated
+# STR_FLAG_PM                                                       : not translated
+# STR_FLAG_PN                                                       : not translated
+# STR_FLAG_PR                                                       : not translated
+# STR_FLAG_PS                                                       : not translated
+# STR_FLAG_PT                                                       : not translated
+# STR_FLAG_PW                                                       : not translated
+# STR_FLAG_PY                                                       : not translated
+# STR_FLAG_QA                                                       : not translated
+# STR_FLAG_RE                                                       : not translated
+# STR_FLAG_RO                                                       : not translated
+# STR_FLAG_RS                                                       : not translated
+# STR_FLAG_RU                                                       : not translated
+# STR_FLAG_RW                                                       : not translated
+# STR_FLAG_SA                                                       : not translated
+# STR_FLAG_SB                                                       : not translated
+# STR_FLAG_SC                                                       : not translated
+# STR_FLAG_SD                                                       : not translated
+# STR_FLAG_SE                                                       : not translated
+# STR_FLAG_SG                                                       : not translated
+# STR_FLAG_SH                                                       : not translated
+# STR_FLAG_SI                                                       : not translated
+# STR_FLAG_SJ                                                       : not translated
+# STR_FLAG_SK                                                       : not translated
+# STR_FLAG_SL                                                       : not translated
+# STR_FLAG_SM                                                       : not translated
+# STR_FLAG_SN                                                       : not translated
+# STR_FLAG_SO                                                       : not translated
+# STR_FLAG_SR                                                       : not translated
+# STR_FLAG_SS                                                       : not translated
+# STR_FLAG_ST                                                       : not translated
+# STR_FLAG_SV                                                       : not translated
+# STR_FLAG_SX                                                       : not translated
+# STR_FLAG_SY                                                       : not translated
+# STR_FLAG_SZ                                                       : not translated
+# STR_FLAG_TC                                                       : not translated
+# STR_FLAG_TD                                                       : not translated
+# STR_FLAG_TF                                                       : not translated
+# STR_FLAG_TG                                                       : not translated
+# STR_FLAG_TH                                                       : not translated
+# STR_FLAG_TJ                                                       : not translated
+# STR_FLAG_TK                                                       : not translated
+# STR_FLAG_TL                                                       : not translated
+# STR_FLAG_TM                                                       : not translated
+# STR_FLAG_TN                                                       : not translated
+# STR_FLAG_TO                                                       : not translated
+# STR_FLAG_TR                                                       : not translated
+# STR_FLAG_TT                                                       : not translated
+# STR_FLAG_TV                                                       : not translated
+# STR_FLAG_TW                                                       : not translated
+# STR_FLAG_TZ                                                       : not translated
+# STR_FLAG_UA                                                       : not translated
+# STR_FLAG_UG                                                       : not translated
+# STR_FLAG_UM                                                       : not translated
+# STR_FLAG_US                                                       : not translated
+# STR_FLAG_UY                                                       : not translated
+# STR_FLAG_UZ                                                       : not translated
+# STR_FLAG_VA                                                       : not translated
+# STR_FLAG_VC                                                       : not translated
+# STR_FLAG_VE                                                       : not translated
+# STR_FLAG_VG                                                       : not translated
+# STR_FLAG_VI                                                       : not translated
+# STR_FLAG_VN                                                       : not translated
+# STR_FLAG_VU                                                       : not translated
+# STR_FLAG_WF                                                       : not translated
+# STR_FLAG_WS                                                       : not translated
+# STR_FLAG_YE                                                       : not translated
+# STR_FLAG_YT                                                       : not translated
+# STR_FLAG_ZA                                                       : not translated
+# STR_FLAG_ZM                                                       : not translated
+# STR_FLAG_ZW                                                       : not translated
+# STR_FLAG_YU                                                       : not translated
+# STR_FLAG_GDR                                                      : not translated
+# STR_FLAG_SU                                                       : not translated
+# STR_FLAG_EUROPE                                                   : not translated
+# STR_FLAG_WRLD                                                     : not translated
+# STR_POWER                                                         : not translated
+# STR_POWER_STEAM                                                   : not translated
+# STR_POWER_DIESEL                                                  : not translated
+# STR_POWER_DIESEL_ELECTRIC                                         : not translated
+# STR_POWER_DIESEL_HYDRAULIC                                        : not translated
+# STR_POWER_ELECTRIC                                                : not translated
+# STR_POWER_ELECTRIC_AC                                             : not translated
+# STR_POWER_ELECTRIC_AC_15                                          : not translated
+# STR_POWER_ELECTRIC_AC_25                                          : not translated
+# STR_POWER_ELECTRIC_DC                                             : not translated
+# STR_POWER_ELECTRIC_DC_600                                         : not translated
+# STR_POWER_ELECTRIC_DC_750                                         : not translated
+# STR_POWER_ELECTRIC_DC_1200                                        : not translated
+# STR_POWER_ELECTRIC_DC_1500                                        : not translated
+# STR_POWER_ELECTRIC_DC_3000                                        : not translated
+# STR_POWER_TURBINE                                                 : not translated
+# STR_POWER_BATTERY                                                 : not translated
+# STR_POWER_MAGLEV                                                  : not translated
+# STR_POWER_METRO                                                   : not translated
+# STR_LIVERY_COMPANY_2CC                                            : not translated
+# STR_LIVERY_COMPANY_RANDOM_1CC                                     : not translated
+# STR_LIVERY_COMPANY_RANDOM_2CC                                     : not translated
 
-#General error messages
+# Parameters
+STR_PARAM_DIVIDE_16                                               :1/16
+STR_PARAM_DIVIDE_8                                                :1/8
+STR_PARAM_DIVIDE_4                                                :1/4
+STR_PARAM_DIVIDE_2                                                :1/2
+STR_PARAM_NORMAL                                                  :1 (default)
+STR_PARAM_TIMES_2                                                 :2
+STR_PARAM_TIMES_4                                                 :4
+STR_PARAM_TIMES_8                                                 :8
+STR_PARAM_TIMES_16                                                :16
 
-#parameter strings
-#cost parameters
+# Vehicles
 
+# Coach
+# str_mu_coach_gen1_wooden_2_axle_compartment_coach                 : not translated
+# str_mu_coach_gen1_wooden_2_axle_regional_coach                    : not translated
+# str_mu_coach_gen1_wooden_2_axle_mail_coach                        : not translated
+# str_mu_coach_gen1_clerestory_compartment_coach                    : not translated
+# str_mu_coach_gen1_clerestory_regional_coach                       : not translated
+# str_mu_coach_gen1_clerestory_mail_coach                           : not translated
+# str_mu_coach_gen1_wooden_3_axle_compartment_coach                 : not translated
+# str_mu_coach_gen1_wooden_3_axle_regional_coach                    : not translated
+# str_mu_coach_gen1_wooden_3_axle_mail_coach                        : not translated
+# str_mu_coach_gen2_heavyweight_intercity_coach                     : not translated
+# str_mu_coach_gen2_heavyweight_mail_coach                          : not translated
+# str_mu_coach_gen2_steel_intercity_coach                           : not translated
+# str_mu_coach_gen2_steel_compartment_coach                         : not translated
+# str_mu_coach_gen2_steel_regional_coach                            : not translated
+# str_mu_coach_gen2_steel_mail_coach                                : not translated
+# str_mu_coach_gen2_steel_2_axle_compartment_coach                  : not translated
+# str_mu_coach_gen2_steel_2_axle_regional_coach                     : not translated
+# str_mu_coach_gen2_steel_2_axle_mail_coach                         : not translated
+# str_mu_coach_gen2_steel_3_axle_compartment_coach                  : not translated
+# str_mu_coach_gen2_steel_3_axle_regional_coach                     : not translated
+# str_mu_coach_gen2_steel_3_axle_mail_coach                         : not translated
+# str_mu_coach_gen3_steel_lightweight_intercity_coach               : not translated
+# str_mu_coach_gen3_steel_lightweight_regional_coach                : not translated
+# str_mu_coach_gen3_steel_lightweight_mail_coach                    : not translated
+# str_mu_coach_gen3_aluminium_lightweight_intercity_coach           : not translated
+# str_mu_coach_gen3_aluminium_lightweight_regional_coach            : not translated
+# str_mu_coach_gen3_aluminium_lightweight_mail_coach                : not translated
+# str_mu_coach_gen3_gallery_car                                     : not translated
+# str_mu_coach_gen3_mk1_intercity_coach                             : not translated
+# str_mu_coach_gen3_mk1_regional_coach                              : not translated
+# str_mu_coach_gen3_mk1_mail_coach                                  : not translated
+# str_mu_coach_gen3_uic_x_intercity_coach                           : not translated
+# str_mu_coach_gen3_tee_intercity_coach                             : not translated
+# str_mu_coach_gen3_uic_x_regional_coach                            : not translated
+# str_mu_coach_gen3_umbauwagen_local_coach                          : not translated
+# str_mu_coach_gen3_doppelstockwagen_local_coach                    : not translated
+# str_mu_coach_gen3_uic_x_mail_coach                                : not translated
+# str_mu_coach_gen3_indian_intercity_coach                          : not translated
+# str_mu_coach_gen3_indian_local_coach                              : not translated
+# str_mu_coach_gen3_indian_regional_coach                           : not translated
+# str_mu_coach_gen3_indian_mail_coach                               : not translated
+# str_mu_coach_gen4_eurofima_intercity_coach                        : not translated
+# str_mu_coach_gen4_interregio_coach                                : not translated
+# str_mu_coach_gen4_silberling_commuter_coach                       : not translated
+# str_mu_coach_gen4_eurofima_mail_coach                             : not translated
+# str_mu_coach_gen4_double_decker_coach                             : not translated
+# str_mu_coach_gen4_russian_intercity_coach                         : not translated
+# str_mu_coach_gen4_russian_regional_coach                          : not translated
+# str_mu_coach_gen4_russian_mail_coach                              : not translated
+# str_mu_coach_gen4_superliner_coach                                : not translated
+# str_mu_coach_gen4_superliner_california                           : not translated
+# str_mu_coach_gen4_amfleet_regional_coach                          : not translated
+# str_mu_coach_gen4_amfleet_intercity_coach                         : not translated
+# str_mu_coach_gen4_comet_commuter_coach                            : not translated
+# str_mu_coach_gen4_horizon_regional_coach                          : not translated
+# str_mu_coach_gen4_horizon_baggage_coach                           : not translated
+# str_mu_coach_gen4_bombardier_bi_level                             : not translated
+# str_mu_coach_gen5_high_speed_coach                                : not translated
+# str_mu_coach_gen5_modern_regional_coach                           : not translated
+# str_mu_coach_gen5_modern_commuter_coach                           : not translated
+# str_mu_coach_gen5_modern_double_decker_coach                      : not translated
+# str_mu_coach_gen5_high_speed_double_decker_ic2000                 : not translated
+# str_mu_coach_gen5_high_speed_mail_coach                           : not translated
+# str_mu_coach_gen5_talgo_pendular                                  : not translated
+# str_mu_coach_gen5_talgo_pendular_mail                             : not translated
+# str_mu_coach_gen6_grand_voyager_coach                             : not translated
+# str_mu_coach_gen6_grand_regio_coach                               : not translated
+# str_mu_coach_gen6_metropolis_coach                                : not translated
+# str_mu_coach_gen6_speedmail_coach                                 : not translated
+# str_mu_coach_gen6_super_regio_coach                               : not translated
+# str_mu_coach_gen6_super_voyager_coach                             : not translated
 
-#region parameters
+# Dieselengine
+# str_diesel_germany_db_kof_ii                                      : not translated
+# str_diesel_usa_cnj_alco_ge_ir_boxcab                              : not translated
+# str_diesel_netherlands_ns_200                                     : not translated
+# str_diesel_germany_db_270                                         : not translated
+# str_diesel_switzerland_sbb_am_4_6                                 : not translated
+# str_diesel_australia_nswgr_79                                     : not translated
+# str_diesel_usa_western_pacific_alco_s_2                           : not translated
+# str_diesel_usa_at_sf_emd_f3                                       : not translated
+# str_diesel_usa_up_emd_e8                                          : not translated
+# str_diesel_brazil_efcb_alco_rs_3                                  : not translated
+# str_diesel_netherlands_ns_600                                     : not translated
+# str_diesel_uruguay_afe_1500                                       : not translated
+# str_diesel_canada_cpr_trainmaster                                 : not translated
+# str_diesel_liberia_liberia_railways_class_08                      : not translated
+# str_diesel_austria_obb_2060                                       : not translated
+# str_diesel_canada_cnr_sw1200                                      : not translated
+# str_diesel_canada_via_rail_fp9                                    : not translated
+# str_diesel_hungary_mav_m44                                        : not translated
+# str_diesel_hungary_mav_m28                                        : not translated
+# str_diesel_belgium_nmbs_sncb_83                                   : not translated
+# str_diesel_germany_db_220                                         : not translated
+# str_diesel_usa_amtrak_fl9                                         : not translated
+# str_diesel_czech_republic_cd_720_chme2                            : not translated
+# str_diesel_finland_vr_dr12                                        : not translated
+# str_diesel_romania_cfr_060_da                                     : not translated
+# str_diesel_brazil_bf_emd_gl8                                      : not translated
+# str_diesel_brazil_efvm_ml4000                                     : not translated
+# str_diesel_russia_rzd_tep60                                       : not translated
+# str_diesel_belgium_nmbs_sncb_62                                   : not translated
+# str_diesel_denmark_dsb_mak_100                                    : not translated
+# str_diesel_india_indian_railways_wdm_2                            : not translated
+# str_diesel_uk_br_14                                               : not translated
+# str_diesel_russia_rzd_chme3                                       : not translated
+# str_diesel_argentina_mf_gm_emd_j16cw_ac                           : not translated
+# str_diesel_russia_rzd_m62                                         : not translated
+# str_diesel_australia_nswgr_422                                    : not translated
+# str_diesel_egypt_enr_g22w                                         : not translated
+# str_diesel_australia_queensland_rail_2100                         : not translated
+# str_diesel_croatia_hz_2062                                        : not translated
+# str_diesel_sweden_sj_v4                                           : not translated
+# str_diesel_canada_cnr_mlw_m420w                                   : not translated
+# str_diesel_usa_amtrak_sdp_40f                                     : not translated
+# str_diesel_china_china_railways_dfh3                              : not translated
+# str_diesel_panama_panama_canal_railway_emd_f40ph                  : not translated
+# str_diesel_portugal_cp_1900                                       : not translated
+# str_diesel_finland_vr_dr16                                        : not translated
+# str_diesel_russia_rzd_tep80                                       : not translated
+# str_diesel_australia_australian_national_an                       : not translated
+# str_diesel_usa_amtrak_p42dc_genesis                               : not translated
+# str_diesel_turkey_tcdd_dh7000                                     : not translated
+# str_diesel_argentina_mf_ge_u20c                                   : not translated
+# str_diesel_belgium_nmbs_sncb_7800                                 : not translated
+# str_diesel_uk_br_66                                               : not translated
+# str_diesel_uk_br_67                                               : not translated
+# str_diesel_iran_rai_de43ca_prima                                  : not translated
+# str_diesel_china_mtr_8000                                         : not translated
+# str_diesel_ukraine_uz_tep150                                      : not translated
+# str_diesel_china_china_railways_hxn5                              : not translated
+# str_diesel_germany_db_261_gravita_10bb                            : not translated
+# str_diesel_germany_hvle_v490                                      : not translated
+# str_diesel_russia_rzd_gt1                                         : not translated
+# str_diesel_usa_up_emd_dda40x                                      : not translated
+# str_diesel_russia_rzd_emch_3                                      : not translated
+# str_diesel_canada_cnr_9000                                        : not translated
+# str_diesel_uk_lms_7051_diesel_shunter                             : not translated
+# str_diesel_usa_rock_island_emc_ta                                 : not translated
+# str_diesel_usa_nyc_baldwin_vo_660                                 : not translated
+# str_diesel_uk_br_class_d3_7                                       : not translated
+# str_diesel_australia_queensland_railways_dl_class                 : not translated
+# str_diesel_usa_prr_fm_h_10_44                                     : not translated
+# str_diesel_algeria_sntf_baldwin_drs6_4_1000                       : not translated
+# str_diesel_ireland_cie_113                                        : not translated
+# str_diesel_brazil_efc_3300_baldwin_as_616                         : not translated
+# str_diesel_mexico_chp_500_fm_h_16_44                              : not translated
+# str_diesel_australia_south_australian_railways_900                : not translated
+# str_diesel_sri_lanka_sri_lanka_railways_m2                        : not translated
+# str_diesel_ireland_cie_001                                        : not translated
+# str_diesel_italy_fs_d341                                          : not translated
+# str_diesel_japan_jnr_df50                                         : not translated
+# str_diesel_australia_nswgr_44                                     : not translated
+# str_diesel_zimbabwe_zimbabwe_railways_dh_1                        : not translated
+# str_diesel_south_korea_korail_6000_emd_sd18                       : not translated
+# str_diesel_italy_fs_d345                                          : not translated
+# str_diesel_norway_nsb_di4                                         : not translated
+# str_diesel_china_china_railways_df8                               : not translated
+# str_diesel_australia_pacific_national_g_class                     : not translated
+# str_diesel_uk_br_60                                               : not translated
+# str_diesel_australia_westrail_p_class                             : not translated
+# str_diesel_saudi_arabia_saudi_railways_4000_emd_sd70acs           : not translated
+# str_diesel_ireland_ie_201                                         : not translated
+# str_diesel_usa_metrolink_emd_f59ph                                : not translated
+# str_diesel_france_sncf_461000                                     : not translated
+# str_diesel_italy_act_d_200                                        : not translated
+# str_diesel_canada_go_transit_mp40ph_3c                            : not translated
+# str_diesel_spain_renfe_class_334                                  : not translated
+# str_diesel_indonesia_indonesia_railways_cc300                     : not translated
+# str_diesel_usa_pennsylvania_railroad_rf_16_sharknose              : not translated
+# str_diesel_argentina_great_southern_railway_dh501                 : not translated
+# str_diesel_brazil_ee_vfflb                                        : not translated
+# str_diesel_south_africa_sar_ds                                    : not translated
+# str_diesel_algeria_sntf_040_dg                                    : not translated
+# str_diesel_tunisia_sncft_040_df                                   : not translated
+# str_diesel_chile_efe_ge_u5b                                       : not translated
+# str_diesel_ukraine_uz_tep10l                                      : not translated
+# str_diesel_peru_ferrocarril_central_andino_alco_rsd_39            : not translated
+# str_diesel_brazil_efvm_emd_ddm45                                  : not translated
+# str_diesel_egypt_enr_te114e                                       : not translated
+# str_diesel_tunisia_sncft_040_dj                                   : not translated
+# str_diesel_belarus_bch_2te10m                                     : not translated
+# str_diesel_peru_ferrocarril_central_andino_ge_c39_8               : not translated
+# str_diesel_poland_pkp_sp32                                        : not translated
+# str_diesel_ukraine_uz_2te126                                      : not translated
+# str_diesel_morocco_oncf_df_100                                    : not translated
+# str_diesel_ukraine_uz_2te10ut                                     : not translated
+# str_diesel_argentina_sofse_3193                                   : not translated
+# str_diesel_serbia_zs_621                                          : not translated
+# str_diesel_argentina_sofse_cnr_ckd8                               : not translated
+# str_diesel_italy_fs_207                                           : not translated
+# str_diesel_russia_rzd_db                                          : not translated
+# str_diesel_portugal_cp_1500                                       : not translated
+# str_diesel_spain_renfe_308                                        : not translated
+# str_diesel_france_sncf_bb_67400                                   : not translated
+# str_diesel_netherlands_ns_6400                                    : not translated
+# str_diesel_australia_pacific_national_xr_xrb                      : not translated
+# str_diesel_norway_cargonet_312                                    : not translated
+# str_diesel_australia_pacific_national_92                          : not translated
+# str_diesel_egypt_enr_2400_ge_es40aci                              : not translated
+# str_diesel_uk_br_68                                               : not translated
+# str_diesel_south_africa_sar_afro_4000                             : not translated
+# str_diesel_usa_amtrak_charger                                     : not translated
+# str_diesel_gabon_alsthom_ad30b                                    : not translated
+# str_diesel_ghana_railway_corporation_class_tt12                   : not translated
+# str_diesel_sierra_leone_lamco_301_series                          : not translated
+# str_diesel_congo_alstom_bb_bb                                     : not translated
+# str_diesel_zimbabwe_sorefame_de8                                  : not translated
+# str_diesel_ivory_coast_gmd_gt22lc2                                : not translated
 
-#loading speed parameter
+# Dieselrailbus
+str_rbd_australia_victorian_railways_aec_rm1                      :Victorian Railways AEC RM1 (Diesel Railbus)
+# str_rbd_germany_db_vt_133                                         : not translated
+str_rbd_united_kingdom_gwr_aec_railcar                            :GWR AEC Railcar (Diesel Railbus)
+# str_rbd_austria_obb_5042                                          : not translated
+str_rbd_new_zealand_nzr_rm31                                      :NZR RM31 (Diesel Railbus)
+str_rbd_portugal_cp_0100                                          :CP 0100 (Diesel Railbus)
+str_rbd_usa_amtrak_budd_rdc                                       :Amtrak Budd RDC (Diesel Railbus)
+str_rbd_germany_ohe_520_gdt                                       :OHE 520 GDT (Diesel Railbus)
+str_rbd_netherlands_ns_20_kameel                                  :NS 20 'Kameel' (Diesel Railbus)
+str_rbd_finland_vr_dm7                                            :VR Dm7 (Diesel Railbus)
+# str_rbd_russia_rzd_ach2                                           : not translated
+str_rbd_netherlands_ns_dh1                                        :NS DH1 (Diesel Railbus)
+str_rbd_austria_obb_5047                                          :OBB 5047 (Diesel Railbus)
+str_rbd_united_kingdom_br_153_super_sprinter                      :BR 153 'Super Sprinter' (Diesel Railbus)
+str_rbd_czech_republic_cd_809                                     :CD 809 (Diesel Railbus)
+str_rbd_germany_db_670                                            :DB 670 (Diesel Railbus)
+str_rbd_lithuania_lithuanian_railways_ar2                         :Lithuanian Railways AR2 (Diesel Railbus)
+# str_rbd_austria_kkstb_19                                          : not translated
+# str_rbd_usa_virginia_truckee_motor_car_22                         : not translated
+# str_rbd_germany_saxon_det_1_2                                     : not translated
+# str_rbd_uk_wc_pr_drewry_railcar                                   : not translated
+# str_rbd_germany_bst_6001                                          : not translated
+# str_rbd_australia_victorian_railways_derm                         : not translated
+# str_rbd_czech_republic_cd_m120                                    : not translated
+# str_rbd_germany_schienenzeppelin                                  : not translated
+# str_rbd_denmark_dsb_mo                                            : not translated
+# str_rbd_norway_nsb_cmb_17                                         : not translated
+# str_rbd_czech_republic_cd_m290                                    : not translated
+# str_rbd_netherlands_ns_ombc                                       : not translated
+# str_rbd_australia_nswgr_class_400                                 : not translated
+# str_rbd_portugal_cp_usd_9050                                      : not translated
+# str_rbd_belgium_sncb_class_42                                     : not translated
+# str_rbd_bulgaria_bdz_19                                           : not translated
+# str_rbd_greece_ose_aa71                                           : not translated
+# str_rbd_tunisia_sncft_z431                                        : not translated
+# str_rbd_usa_amtrak_spv_200                                        : not translated
+# str_rbd_japan_jr_shikoku_1000                                     : not translated
+# str_rbd_finland_vr_dm12                                           : not translated
+# str_rbd_japan_jr_kiha_e120                                        : not translated
+# str_rbd_czech_republic_cd_840                                     : not translated
+# str_rbd_chile_efe_buscarril                                       : not translated
+# str_rbd_argentina_fcpba_m_railcar                                 : not translated
+# str_rbd_germany_db_vt_989                                         : not translated
+# str_rbd_eritrea_eritrean_railway_a62_70_littorina                 : not translated
+# str_rbd_italy_fs_aln_668                                          : not translated
 
-#vehicle names
-#railbus-steam
-str_rbs_austria_nolb_1          :NOLB 1 (Steam Railbus)
-str_rbs_italy_fs_86                     :FS 86 (Steam Railbus)
+# Dmu
+# str_dmu_denmark_dsb_ic4                                           : not translated
+# str_dmu_croatia_hz_7022                                           : not translated
+# str_dmu_germany_db_vt_040_flying_hamburger                        : not translated
+# str_dmu_australia_nswgr_silver_city_comet                         : not translated
+# str_dmu_czech_republic_cd_m131                                    : not translated
+# str_dmu_germany_db_vt_085                                         : not translated
+# str_dmu_australia_queensland_rail_400                             : not translated
+# str_dmu_germany_db_vt_115                                         : not translated
+# str_dmu_netherlands_ns_plan_u_de_iii                              : not translated
+# str_dmu_canada_cnr_turbo_train                                    : not translated
+# str_dmu_serbia_zs_811                                             : not translated
+# str_dmu_uk_br_43_ic125                                            : not translated
+# str_dmu_canada_via_rail_lrc                                       : not translated
+# str_dmu_sweden_sj_y2                                              : not translated
+# str_dmu_spain_renfe_594_trd                                       : not translated
+# str_dmu_uk_br_168                                                 : not translated
+# str_dmu_germany_db_612_regio_swinger                              : not translated
+# str_dmu_germany_db_642_desiro                                     : not translated
+# str_dmu_denmark_arriva_lint_41                                    : not translated
+# str_dmu_norway_nsb_bm_93_talent                                   : not translated
+# str_dmu_australia_transwa_prospector                              : not translated
+# str_dmu_australia_cityrail_hunter_railcar                         : not translated
+# str_dmu_russia_rzd_ra2                                            : not translated
+# str_dmu_turkey_tcdd_mt_5500                                       : not translated
+# str_dmu_japan_jnr_kiha_181                                        : not translated
+# str_dmu_czech_republic_cd_814                                     : not translated
+# str_dmu_uk_br_150_0_sprinter                                      : not translated
+# str_dmu_iran_rai_141_pacer                                        : not translated
+# str_dmu_israel_israel_railways_ic3                                : not translated
+# str_dmu_australia_transadelaide_3100                              : not translated
+# str_dmu_australia_nswgr_xplorer                                   : not translated
+# str_dmu_japan_jr_kiha_189                                         : not translated
+# str_dmu_sri_lanka_sri_lanka_railways_s11                          : not translated
+# str_dmu_slovakia_zssk_861                                         : not translated
+# str_dmu_chile_efe_tld_500                                         : not translated
+# str_dmu_cameroon_camrail_ze_500                                   : not translated
+# str_dmu_italy_fs_aln_442_448                                      : not translated
+# str_dmu_uk_br_251_blue_pullman                                    : not translated
+# str_dmu_portugal_cp_0400                                          : not translated
+# str_dmu_australia_wagr_adk_adb                                    : not translated
+# str_dmu_france_sncf_x_4630                                        : not translated
+# str_dmu_france_sncf_t_2000                                        : not translated
+# str_dmu_portugal_cp_0600                                          : not translated
+# str_dmu_netherlands_ns_dh2                                        : not translated
+# str_dmu_spain_feve_2400_apollos                                   : not translated
+# str_dmu_germany_db_6282                                           : not translated
+# str_dmu_algeria_sntf_zz_2200_autorail                             : not translated
+# str_dmu_tunisia_sncft_amt_800                                     : not translated
+# str_dmu_ghana_ghana_railways_demu                                 : not translated
+# str_dmu_australia_queensland_rail_diesel_tilt_train               : not translated
+# str_dmu_canada_up_express_nippon_sharyo_dmu                       : not translated
+# str_dmu_argentina_fcgu_cmm_400_2                                  : not translated
+# str_mu_mu_wagon_unpowered                                         : not translated
+# str_mu_mu_wagon_powered                                           : not translated
+# str_mu_mu_cargo_wagon_unpowered                                   : not translated
+# str_mu_mu_cargo_wagon_powered                                     : not translated
+# str_cargodmu_germany_db_691_cargosprinter                         : not translated
 
-#railbus-diesel
-str_rbd_australia_victorian_railways_aec_rm1    :Victorian Railways AEC RM1 (Diesel Railbus)
-str_rbd_united_kingdom_gwr_aec_railcar                  :GWR AEC Railcar (Diesel Railbus)
-str_rbd_new_zealand_nzr_rm31                                    :NZR RM31 (Diesel Railbus)
-str_rbd_portugal_cp_0100                                                :CP 0100 (Diesel Railbus)
-str_rbd_usa_amtrak_budd_rdc                                     :Amtrak Budd RDC (Diesel Railbus)
-str_rbd_germany_ohe_520_gdt                                     :OHE 520 GDT (Diesel Railbus)
-str_rbd_netherlands_ns_20_kameel                                :NS 20 'Kameel' (Diesel Railbus)
-str_rbd_finland_vr_dm7                                                  :VR Dm7 (Diesel Railbus)
-str_rbd_netherlands_ns_dh1                                              :NS DH1 (Diesel Railbus)
-str_rbd_austria_obb_5047                                                :OBB 5047 (Diesel Railbus)
-str_rbd_united_kingdom_br_153_super_sprinter    :BR 153 'Super Sprinter' (Diesel Railbus)
-str_rbd_czech_republic_cd_809                                   :CD 809 (Diesel Railbus)
-str_rbd_germany_db_670                                                  :DB 670 (Diesel Railbus)
-str_rbd_lithuania_lithuanian_railways_ar2               :Lithuanian Railways AR2 (Diesel Railbus)
+# Electricengine
+# str_electric_switzerland_rhb_de_2_2                               : not translated
+# str_electric_norway_nsb_el7                                       : not translated
+# str_electric_uk_ner_ef1                                           : not translated
+# str_electric_usa_milwaukee_road_es_2                              : not translated
+# str_electric_chile_efe_e_28                                       : not translated
+# str_electric_austria_obb_1161                                     : not translated
+# str_electric_india_indian_railways_wcg_1                          : not translated
+# str_electric_germany_db_169                                       : not translated
+# str_electric_japan_jnr_eb10                                       : not translated
+# str_electric_norway_nsb_el10                                      : not translated
+# str_electric_germany_db_104                                       : not translated
+# str_electric_italy_fs_e428                                        : not translated
+# str_electric_japan_jnr_ef55                                       : not translated
+# str_electric_south_africa_sar_es_class                            : not translated
+# str_electric_austria_obb_1020_crocodile                           : not translated
+# str_electric_russia_rzd_vl22m                                     : not translated
+# str_electric_netherlands_ns_1000                                  : not translated
+# str_electric_sweden_mtab_dm3                                      : not translated
+# str_electric_uk_br_77_metrovic                                    : not translated
+# str_electric_france_sncf_bb_9004                                  : not translated
+# str_electric_switzerland_bls_ce_4_4                               : not translated
+# str_electric_switzerland_sbb_ae_6_6                               : not translated
+# str_electric_portugal_cp_2500                                     : not translated
+# str_electric_india_indian_railways_wcm_1                          : not translated
+# str_electric_italy_fs_e646                                        : not translated
+# str_electric_russia_rzd_vl41                                      : not translated
+# str_electric_japan_jnr_ef64                                       : not translated
+# str_electric_france_sncf_cc_40100                                 : not translated
+# str_electric_croatia_hz_1141                                      : not translated
+# str_electric_germany_db_1031                                      : not translated
+# str_electric_south_africa_sar_6e                                  : not translated
+# str_electric_finland_vr_sr1                                       : not translated
+# str_electric_austria_obb_1044                                     : not translated
+# str_electric_france_sncf_bb_22200                                 : not translated
+# str_electric_poland_pkp_et41                                      : not translated
+# str_electric_netherlands_ns_1600                                  : not translated
+# str_electric_austria_obb_1063                                     : not translated
+# str_electric_russia_rzd_vl85                                      : not translated
+# str_electric_russia_rzd_vl15                                      : not translated
+# str_electric_china_china_railways_6k                              : not translated
+# str_electric_france_sncf_bb_26000                                 : not translated
+# str_electric_china_china_railways_ss6                             : not translated
+# str_electric_switzerland_sbb_re460_lok_2000                       : not translated
+# str_electric_spain_renfe_252                                      : not translated
+# str_electric_uk_br_92                                             : not translated
+# str_electric_india_indian_railways_wap_4                          : not translated
+# str_electric_germany_db_185_traxx_f140                            : not translated
+# str_electric_belgium_nmbs_sncb_13_hle                             : not translated
+# str_electric_japan_jr_eh500                                       : not translated
+# str_electric_germany_db_182_es64u_taurus                          : not translated
+# str_electric_sweden_mtab_iore                                     : not translated
+# str_electric_south_korea_korail_8200                              : not translated
+# str_electric_ukraine_uz_ds3                                       : not translated
+# str_electric_kazakhstan_ktz_kz4a                                  : not translated
+# str_electric_china_china_railways_hxd3                            : not translated
+# str_electric_switzerland_sbb_eem_923                              : not translated
+# str_electric_usa_pennsylvania_railroad_ff_1                       : not translated
+# str_electric_usa_milwaukee_road_ep_2_bipolar                      : not translated
+# str_electric_usa_pennsylvania_railroad_gg_1                       : not translated
+# str_electric_usa_nyc_s_motor                                      : not translated
+# str_electric_uk_ner_es1                                           : not translated
+# str_electric_italy_fs_e550                                        : not translated
+# str_electric_sweden_sj_o_class                                    : not translated
+# str_electric_switzerland_rhb_ge_6_6_krokodil                      : not translated
+# str_electric_uk_ner_ee1                                           : not translated
+# str_electric_australia_victorian_railways_e_class                 : not translated
+# str_electric_new_zealand_nzr_eo_class                             : not translated
+# str_electric_germany_db_e_919                                     : not translated
+# str_electric_japan_aichi_railroad_deki_400                        : not translated
+# str_electric_sweden_sj_f_class                                    : not translated
+# str_electric_italy_fs_e424                                        : not translated
+# str_electric_switzerland_rhb_ge_4_4_i                             : not translated
+# str_electric_australia_nswgr_71                                   : not translated
+# str_electric_south_africa_sar_4e                                  : not translated
+# str_electric_japan_jnr_eh10                                       : not translated
+# str_electric_belgium_nmbs_class_255                               : not translated
+# str_electric_russia_rzd_chs3                                      : not translated
+# str_electric_poland_pkp_eu06                                      : not translated
+# str_electric_hungary_mav_class_v43                                : not translated
+# str_electric_france_sncf_bb_25500                                 : not translated
+# str_electric_south_africa_sar_5e1                                 : not translated
+# str_electric_czech_republic_cd_s499                               : not translated
+# str_electric_italy_fs_e444                                        : not translated
+# str_electric_czech_republic_cd_380                                : not translated
+# str_electric_russia_rzd_ep20                                      : not translated
+# str_electric_china_china_railways_hxd1d                           : not translated
+# str_electric_south_africa_sar_20e                                 : not translated
+# str_electric_kazakhstan_ktz_kz8a                                  : not translated
+# str_electric_indonesia_ess_3200                                   : not translated
+# str_electric_usa_gn_w_1                                           : not translated
+# str_electric_usa_virginian_railway_el_2b                          : not translated
+# str_electric_morocco_oncf_e_700                                   : not translated
+# str_electric_chile_efe_e_29                                       : not translated
+# str_electric_usa_prr_e44                                          : not translated
+# str_electric_new_zealand_nzr_ea                                   : not translated
+# str_electric_portugal_cp_2600                                     : not translated
+# str_electric_usa_amtrak_emd_aem_7                                 : not translated
+# str_electric_macedonia_macedonian_railways_462                    : not translated
+# str_electric_italy_fs_e633                                        : not translated
+# str_electric_chile_efe_e_269                                      : not translated
+# str_electric_czech_republic_cd_363                                : not translated
+# str_electric_mexico_fnm_ge_e60c_2                                 : not translated
+# str_electric_spain_renfe_250                                      : not translated
+# str_electric_canada_bc_rail_gf6c                                  : not translated
+# str_electric_ukraine_uz_chs7                                      : not translated
+# str_electric_new_zealand_tranzrail_ef                             : not translated
+# str_electric_poland_pkp_ep09                                      : not translated
+# str_electric_italy_fs_e491                                        : not translated
+# str_electric_slovakia_zssk_162                                    : not translated
+# str_electric_ukraine_uz_de1                                       : not translated
+# str_electric_australia_aurizon_e40_ag_v1                          : not translated
+# str_electric_morocco_oncf_e_1400_prima_ii                         : not translated
+# str_electric_usa_amtrak_acs_64                                    : not translated
+# str_electric_usa_prr_b1                                           : not translated
+# str_electric_morocco_oncfm_e_500                                  : not translated
+# str_electric_uk_br_85                                             : not translated
+# str_electric_brasil_rffsa_ge_c_c_4400                             : not translated
+# str_electric_japan_jnr_ef81                                       : not translated
+# str_electric_chile_efe_e_17                                       : not translated
+# str_electric_china_china_railways_ss3                             : not translated
+# str_electric_south_africa_sar_7e                                  : not translated
+# str_electric_norway_nsb_el17                                      : not translated
+# str_electric_south_africa_sar_11e                                 : not translated
+# str_electric_south_africa_sar_e38                                 : not translated
+# str_electric_usa_amtrak_hhp_8                                     : not translated
+# str_electric_brasil_mrs_he_4_4                                    : not translated
+# str_electric_russia_rzd_vl11                                      : not translated
+# str_electric_germany_prussian_es_6                                : not translated
+# str_electric_congo_type_2450_acec_charleroi_zaire_electric        : not translated
+# str_electric_tanzania_trc_e6800                                   : not translated
 
-#railbus-electric
-str_rbe_switzerland_ab_cfe_3_3          :AB CFe 3/3 (Electric Railbus)
-str_rbe_morocco_oncfm_zab1000           :ONCFM ZAB1000 (Electric Railbus)
-str_rbe_italy_fs_ale_840                        :FS ALe 840 (Electric Railbus)
+# Electricrailbus
+str_rbe_switzerland_ab_cfe_3_3                                    :AB CFe 3/3 (Electric Railbus, 1500V DC)
+str_rbe_morocco_oncfm_zab1000                                     :ONCFM ZAB1000 (Electric Railbus, 3kV DC)
+# str_rbe_germany_db_et_85                                          : not translated
+str_rbe_italy_fs_ale_840                                          :FS ALe 840 (Electric Railbus, 3kV DC)
+# str_rbe_czech_republic_cd_m400                                    : not translated
+# str_rbe_switzerland_tpc_bvb_be_2_2                                : not translated
+# str_rbe_spain_ferrocarril_de_soller_1_3                           : not translated
+# str_rbe_slovakia_zssk_490                                         : not translated
+# str_rbe_italy_fs_e623                                             : not translated
+# str_rbe_sweden_sj_x16                                             : not translated
+# str_rbe_japan_choshi_deha_1000                                    : not translated
+# str_rbe_france_sncf_z_7100                                        : not translated
+# str_rbe_usa_pennsylvania_railroad_silverliner_ii                  : not translated
+# str_rbe_italy_fg_ale_80                                           : not translated
+# str_rbe_austria_obb_4855                                          : not translated
+# str_rbe_switzerland_mvr_beh_2_4                                   : not translated
+# str_rbe_austria_mbs_et_10109                                      : not translated
+# str_rbe_poland_pkp_en81                                           : not translated
+# str_rbe_usa_septa_silverliner_v                                   : not translated
+# str_rbe_germany_db_4792                                           : not translated
+# str_rbe_germany_buckower_kleinbahn_nr_1_3                         : not translated
+# str_emu_usa_prr_mp54                                              : not translated
 
-#steam
-str_steam_belgium_le_belge                      :Le Belge (Steam)
-str_steam_usa_4_4_0_american            :4-4-0 'American' (Steam)
-str_steam_switzerland_sbb_ec_2_5        :SBB Ec 2/5 (Steam)
-str_steam_usa_4_6_0_ten_wheeler         :4-6-0 'Ten-wheeler' (Steam)
-str_steam_usa_2_8_0_consolidation       :2-8-0 'Consolidation' (Steam)
-str_steam_hungary_mav_377                       :MAV 377 (Steam)
-str_steam_austria_kkstb_99                      :KkStB 99 (Steam)
-str_steam_uk_caledonian_railway_439     :Caledonian Railway 439 (Steam)
-str_steam_switzerland_sbb_a_3_5         :SBB A 3/5 (Steam)
-str_steam_switzerland_sbb_e_3_3         :SBB E 3/3 (Steam)
-str_steam_austria_kkstb_299             :KkStB 299 (Steam)
-str_steam_new_zealand_nzr_x_class       :NZR X Class (Steam)
-str_steam_croatia_hz_51                         :HZ 51 (Steam)
-str_steam_italy_fs_880                          :FS 880 (Steam)
-str_steam_france_sncf_140c                      :SNCF 140C (Steam)
-str_steam_france_sncf_141ta             :SNCF 141TA (Steam)
-str_steam_uk_gwr_4900                           :GWR 4900 (Steam)
-str_steam_uk_gwr_5700                           :GWR 5700 (Steam)
-str_steam_netherlands_ns_6300           :NS 6300 (Steam)
-str_steam_usa_at_sf_5000                        :AT&SF 5000 (Steam)
-str_steam_germany_prussian_s10          :Prussian S.10 (Steam)
-str_steam_uk_lms_5mt_black_five         :LMS 5MT 'Black Five' (Steam)
-str_steam_uk_lner_a4_gresley            :LNER A4 'Gresley' (Steam)
-str_steam_canada_cpr_royal_hudson       :CPR Royal Hudson (Steam)
-str_steam_denmark_dsb_e                         :DSB E (Steam)
-str_steam_germany_db_52                         :DB 52 (Steam)
-str_steam_uk_lner_a1_peppercorn         :LNER A1 'Peppercorn' (Steam)
-str_steam_south_africa_sar_25           :SAR 25 (Steam)
+# Emu
+# str_emu_netherlands_ns_mat24                                      : not translated
+# str_emu_austria_obb_4041                                          : not translated
+# str_emu_italy_atac_ecd_21_30                                      : not translated
+# str_emu_netherlands_ns_mat36                                      : not translated
+# str_emu_italy_fs_etr200                                           : not translated
+# str_emu_norway_nsb_bm65                                           : not translated
+# str_emu_italy_fs_etr300_settebello                                : not translated
+# str_emu_netherlands_ns_mat54                                      : not translated
+# str_emu_turkey_tcdd_e8000                                         : not translated
+# str_emu_switzerland_sbb_rae_tee_ii                                : not translated
+# str_emu_japan_odakyu_3100_series_romance                          : not translated
+# str_emu_japan_jnr_shinkansen_series_0                             : not translated
+# str_emu_switzerland_sbb_rabde_510                                 : not translated
+# str_emu_denmark_dsb_s_tog_ii                                      : not translated
+# str_emu_germany_db_et420                                          : not translated
+# str_emu_australia_sydney_trains_s_set                             : not translated
+# str_emu_finland_vr_sm2                                            : not translated
+# str_emu_netherlands_ns_plan_y                                     : not translated
+# str_emu_netherlands_ns_icm_4000                                   : not translated
+# str_emu_france_sncf_tgv_sud_est                                   : not translated
+# str_emu_switzerland_sbb_rbde_560                                  : not translated
+# str_emu_japan_odakyu_10000_series_romance                         : not translated
+# str_emu_hungary_mav_bdvmot                                        : not translated
+# str_emu_sweden_sj_x2000                                           : not translated
+# str_emu_italy_fs_etr500                                           : not translated
+# str_emu_netherlands_ns_dd_irm_virm                                : not translated
+# str_emu_france_sncf_tgv_duplex                                    : not translated
+# str_emu_france_thalys_pbka                                        : not translated
+# str_emu_denmark_dsb_s_tog_iv                                      : not translated
+# str_emu_italy_fs_ale426                                           : not translated
+# str_emu_japan_jr_shinkansen_series_700                            : not translated
+# str_emu_netherlands_ns_mddm_390                                   : not translated
+# str_emu_norway_nsb_bm73                                           : not translated
+# str_emu_czech_republic_cd_680_pendolino                           : not translated
+# str_emu_finland_vr_sm4                                            : not translated
+# str_emu_luxembourg_cfl_2200_coradia_duplex                        : not translated
+# str_emu_germany_db_403_ice_3                                      : not translated
+# str_emu_spain_renfe_120                                           : not translated
+# str_emu_switzerland_sbb_rabe_523_flirt                            : not translated
+# str_emu_bulgaria_bdz_10_desiro                                    : not translated
+# str_emu_australia_sydney_trains_oscars                            : not translated
+# str_emu_south_africa_gautrain_electrostar                         : not translated
+# str_emu_italy_ntv_agv                                             : not translated
+# str_emu_netherlands_ns_4800_hsa                                   : not translated
+# str_emu_italy_ntv_agv_duplex                                      : not translated
+# str_emu_australia_victorian_railways_swing_door                   : not translated
+# str_emu_poland_pkp_ew90                                           : not translated
+# str_emu_usa_erie_lackawanna_mu_cars                               : not translated
+# str_emu_south_africa_sar_5m2                                      : not translated
+# str_emu_austria_obb_4030                                          : not translated
+# str_emu_italy_fs_ale_801                                          : not translated
+# str_emu_new_zealand_nzr_em_et_class                               : not translated
+# str_emu_macedonia_macedonian_railways_412                         : not translated
+# str_emu_australia_sydney_trains_a_set_waratah                     : not translated
+# str_emu_netherlands_ns_hispeed_v250_albatros                      : not translated
+# str_emu_chile_efe_aes_railcar                                     : not translated
+# str_emu_chile_efe_xtrapolis_100                                   : not translated
+# str_emu_tunisia_sncft_yz_e                                        : not translated
+# str_emu_russia_rzd_s                                              : not translated
+# str_emu_poland_pkp_ew54                                           : not translated
+# str_emu_romania_cfr_58                                            : not translated
+# str_emu_usa_amtrak_budd_metroliner                                : not translated
+# str_emu_russia_rzd_er200                                          : not translated
+# str_emu_morocco_oncf_zmc                                          : not translated
+# str_emu_japan_jr_shinkansen_series_e1_max                         : not translated
+# str_emu_australia_queensland_rail_tilt_train                      : not translated
+# str_emu_usa_amtrak_acela_express                                  : not translated
+# str_emu_russia_rzd_es1_lastochka                                  : not translated
+# str_emu_austria_westbahn_4010_kiss                                : not translated
+# str_emu_croatia_hz_6112                                           : not translated
+# str_emu_china_railways_chr380a                                    : not translated
+# str_emu_europe_sureot                                             : not translated
+# str_cargoemu_japan_jr_freight_m250                                : not translated
 
-#diesel
+# Maglevmu
+str_mglv_china_transrapid                                         :Shanghai Transrapid (MMU)
+str_mglv_japan_mlx01_901                                          :JR MLX01-901 (MMU)
+str_mglv_maglev_wagon_unpowered                                   :Maglev Unit Wagon (Unpowered)
+str_mglv_maglev_wagon_powered                                     :Maglev Unit Wagon (Powered)
 
-#electric
+# Maglevrailbus
+# str_rbm_world_turbobus                                            : not translated
 
-#dmu
+# Maglevsu
+# str_mglv_germany_db_182_es64um_mutus                              : not translated
 
-#cargodmu
+# Metro
+str_mtro_uk_london_1903_stock                                     :London 1903 Stock (Metro, Electric 4th Rail)
+str_mtro_argentina_le_brugeoise                                   :Buenos Aires 'Le Brugeoise' (Metro, Electric 3rd Rail)
+str_mtro_usa_ny_r1                                                :New York R1 (Metro, Electric 3rd Rail)
+str_mtro_uk_london_1938_stock                                     :London 1938 Stock (Metro, Electric 4th Rail)
+# str_mtro_germany_db_et_171                                        : not translated
+str_mtro_france_paris_m2_840                                      :Paris M2 840 (Metro, Electric 3rd Rail)
+str_mtro_portugal_lisbon_ml7                                      :Lisbon ML7 (Metro, Electric 3rd Rail)
+str_mtro_hungary_budapest_ev3_200                                 :Budapest Ev3-200 (Metro, Electric 3rd Rail)
+str_mtro_norway_oslo_t1000                                        :Oslo T1000 (Metro, Electric 3rd Rail)
+str_mtro_canada_toronto_h_series                                  :Toronto H-series (Metro, Electric 3rd Rail)
+str_mtro_germany_munchen_mvg_a2                                   :Munchen MVG A2 (Metro, Electric 3rd Rail)
+str_mtro_usa_ny_r44                                               :New York R44 (Metro, Electric 3rd Rail)
+str_mtro_netherlands_amsterdam_type_m1                            :Amsterdam M1 (Metro, Electric 3rd Rail)
+str_mtro_sweden_stockholm_c8                                      :Stockholm C8 (Metro, Electric 3rd Rail)
+str_mtro_north_korea_pyongyang_d_stock                            :Pyongyang D stock (Metro, Electric 3rd Rail)
+str_mtro_finland_helsinki_m100                                    :Helsinki M100 (Metro, Electric 3rd Rail)
+# str_mtro_brazil_sao_paulo_serie_5500                              : not translated
+# str_mtro_russia_moscow_81_720                                     : not translated
+str_mtro_japan_tokyo_s01                                          :Tokyo S01 (Metro, Electric 3rd Rail)
+str_mtro_egypt_cairo_1987_stock                                   :Cairo 1987 stock (Metro, Electric 3rd Rail)
+str_mtro_uk_dlr_p86                                               :DLR P86 (Metro, Electric 3rd Rail)
+# str_mtro_russia_moscow_81_7175m                                   : not translated
+str_mtro_usa_boston_01800                                         :Boston 01800 (Metro, Electric 3rd Rail)
+str_mtro_usa_la_a650                                              :LA A650 (Metro, Electric 3rd Rail)
+str_mtro_taiwan_taipei_c301                                       :Taipei C301 (Metro, Electric 3rd Rail)
+str_mtro_france_paris_mp89                                        :Paris MP89 (Metro, Electric 3rd Rail)
+str_mtro_netherlands_amsterdam_caf_90                             :Amsterdam CAF 90 (Metro, Electric Dual-Pickup)
+str_mtro_russia_moscow_81_740                                     :Moscow 81-740 (Metro, Electric 3rd Rail)
+str_mtro_singapore_singapore_c830_metropolis                      :Singapore C830 'Metropolis' (Metro, Electric 3rd Rail)
+str_mtro_norway_oslo_mx3000                                       :Oslo MX3000 (Metro, Electric 3rd Rail)
+str_mtro_japan_osaka_30000                                        :Osaka 30000 (Metro, Electric 3rd Rail)
+str_mtro_singapore_singapore_c151a                                :Singapore C151A (Metro, Electric 3rd Rail)
+str_mtro_usa_washington_7000                                      :Washington 7000 (Metro, Electric 3rd Rail)
+str_mtro_greece_thessaloniki_2014                                 :Thessaloniki 2014 (Metro, Electric 3rd Rail)
+# str_mtro_germany_berlin_u_bahn_a_i                                : not translated
+# str_mtro_usa_ny_hedley_hi_v                                       : not translated
+# str_mtro_japan_osaka_1000                                         : not translated
+# str_mtro_russia_moscow_type_a                                     : not translated
+# str_mtro_usa_ny_r10                                               : not translated
+# str_mtro_italy_rome_mr_100                                        : not translated
+# str_mtro_russia_moscow_type_d                                     : not translated
+# str_mtro_netherlands_rotterdam_mg2_type_m                         : not translated
+# str_mtro_czech_republic_prague_ecs_set                            : not translated
+# str_mtro_argentina_buenos_aires_serie_1200                        : not translated
+# str_mtro_chile_santiago_ns_93                                     : not translated
+# str_mtro_chile_santiago_as_2002                                   : not translated
+# str_mtro_brazil_recife_vlt_mobile_3                               : not translated
+# str_mtro_spain_madrid_series_5000                                 : not translated
+# str_mtro_italy_rome_s_300                                         : not translated
+# str_mtro_algeria_algiers_caf_2011_stock                           : not translated
+# str_mtro_germany_berlin_u_bahn_ik                                 : not translated
+# str_mtro_usa_chicago_l_6000                                       : not translated
+# str_mtro_usa_brooklyn_union_gate_car                              : not translated
+str_mtro_metro_wagon_unpowered                                    :Metro Unit Wagon (Unpowered)
+str_mtro_metro_wagon_powered                                      :Metro Unit Wagon (Powered)
 
-#emu
+# Metrorailbus
+str_singlemtro_usa_brooklyn_union_gate_car                        :Brooklyn Union Gate Car (Single Unit Metro, Electric Dual-Pickup)
+str_singlemtro_hungary_budapest_1894_stock                        :Budapest 1894 Stock (Single Unit Metro, Electric 3rd Rail)
+str_singlemtro_usa_chicago_l_northwest_elevated_1907_stock        :Chicago L Northwest Elevated 1907 Stock (Single Unit Metro, Electric 3rd Rail)
+str_singlemtro_germany_berlin_u_bahn_c_ii                         :Berlin U-Bahn C II (Single Unit Metro, Electric 3rd Rail)
 
-#single unit metro
-str_singlemtro_usa_brooklyn_union_gate_car                                      :Brooklyn Union Gate Car (Single Unit Metro)
-str_singlemtro_hungary_budapest_1894_stock                                      :Budapest 1894 Stock (Single Unit Metro)
-str_singlemtro_usa_chicago_l_northwest_elevated_1907_stock      :Chicago L Northwest Elevated 1907 Stock (Single Unit Metro)
-str_singlemtro_germany_berlin_u_bahn_c_ii                                               :Berlin U-Bahn C II (Single Unit Metro)
+# Steamengine
+str_steam_belgium_le_belge                                        :Le Belge (Steam)
+str_steam_switzerland_sbb_ec_2_5                                  :SBB Ec 2/5 (Steam)
+str_steam_usa_2_8_0_consolidation                                 :2-8-0 'Consolidation' (Steam)
+str_steam_hungary_mav_377                                         :MAV 377 (Steam)
+str_steam_austria_kkstb_99                                        :KkStB 99 (Steam)
+str_steam_uk_caledonian_railway_439                               :Caledonian Railway 439 (Steam)
+str_steam_switzerland_sbb_a_3_5                                   :SBB A 3/5 (Steam)
+str_steam_switzerland_sbb_e_3_3                                   :SBB E 3/3 (Steam)
+str_steam_austria_kkstb_299                                       :KkStB 299 (Steam)
+str_steam_new_zealand_nzr_x_class                                 :NZR X Class (Steam)
+# str_steam_italy_fs_895                                            : not translated
+# str_steam_switzerland_sbb_c_5_6                                   : not translated
+str_steam_croatia_hz_51                                           :HZ 51 (Steam)
+str_steam_italy_fs_880                                            :FS 880 (Steam)
+# str_steam_argentina_fcnea_11b_2_8_0                               : not translated
+str_steam_france_sncf_140c                                        :SNCF 140C (Steam)
+str_steam_france_sncf_141ta                                       :SNCF 141TA (Steam)
+str_steam_uk_gwr_4900                                             :GWR 4900 (Steam)
+str_steam_uk_gwr_5700                                             :GWR 5700 (Steam)
+str_steam_netherlands_ns_6300                                     :NS 6300 (Steam)
+str_steam_usa_at_sf_5000                                          :AT&SF 5000 (Steam)
+# str_steam_france_sncf_150b                                        : not translated
+str_steam_germany_prussian_s10                                    :Prussian S.10 (Steam)
+str_steam_uk_lms_5mt_black_five                                   :LMS 5MT 'Black Five' (Steam)
+# str_steam_russia_rzd_9p                                           : not translated
+# str_steam_poland_pkp_okz32                                        : not translated
+str_steam_uk_lner_a4_gresley                                      :LNER A4 'Gresley' (Steam)
+str_steam_canada_cpr_royal_hudson                                 :CPR Royal Hudson (Steam)
+str_steam_germany_db_52                                           :DB 52 (Steam)
+str_steam_uk_lner_a1_peppercorn                                   :LNER A1 'Peppercorn' (Steam)
+str_steam_south_africa_sar_25                                     :SAR 25 (Steam)
+# str_steam_russia_rzd_p36                                          : not translated
+str_steam_usa_4_4_0_american                                      :4-4-0 'American' (Steam)
+str_steam_usa_4_6_0_ten_wheeler                                   :4-6-0 'Ten-wheeler' (Steam)
+str_steam_denmark_dsb_e                                           :DSB E (Steam)
+# str_steam_usa_up_4000_big_boy                                     : not translated
+# str_steam_netherlands_nrs_11                                      : not translated
+# str_steam_uk_gwr_iron_duke_class                                  : not translated
+# str_steam_australia_sidney_railway_locomotive_no1                 : not translated
+# str_steam_usa_central_pacific_4_2_2                               : not translated
+# str_steam_netherlands_ns_700                                      : not translated
+# str_steam_south_africa_natal_government_railways_2_6_0t           : not translated
+# str_steam_australia_nswgr_z25_class                               : not translated
+# str_steam_canada_canadian_pacific_374                             : not translated
+# str_steam_switzerland_rhb_g_3_4                                   : not translated
+# str_steam_spain_renfe_class_040                                   : not translated
+# str_steam_germany_saxon_iv_k                                      : not translated
+# str_steam_germany_prussian_s_3                                    : not translated
+# str_steam_norway_nsb_class_xxi                                    : not translated
+# str_steam_usa_prr_d16                                             : not translated
+# str_steam_netherlands_ns_8100                                     : not translated
+# str_steam_south_africa_sar_md_class                               : not translated
+# str_steam_angola_south_west_african_2_8_0                         : not translated
+# str_steam_uk_lner_n7                                              : not translated
+# str_steam_germany_saxon_xx_hv                                     : not translated
+# str_steam_belgium_nmbs_type_7                                     : not translated
+# str_steam_ireland_dser_15                                         : not translated
+# str_steam_usa_sierra_railroad_28                                  : not translated
+# str_steam_canada_cn_u_1_class                                     : not translated
+# str_steam_india_indian_railways_xb_class                          : not translated
+# str_steam_iraq_iraqi_state_railways_pc_class                      : not translated
+# str_steam_egypt_enr_1100                                          : not translated
+# str_steam_japan_jnr_class_e10                                     : not translated
+# str_steam_uk_gwr_1600_class                                       : not translated
+# str_steam_australia_victorian_railways_r_class                    : not translated
+# str_steam_germany_db_9977_79                                      : not translated
+# str_steam_germany_db_18_201                                       : not translated
+# str_steam_south_africa_ppr_35_tonner_4_6_0t                       : not translated
+# str_steam_india_fairy_queen                                       : not translated
+# str_steam_south_africa_harbour_board_el_0_4_0                     : not translated
+# str_steam_japan_jnr_7100                                          : not translated
+# str_steam_india_dhr_b                                             : not translated
+# str_steam_japan_jnr_860                                           : not translated
+# str_steam_mozambique_beira_railway_br6_f2_falcon                  : not translated
+# str_steam_china_china_railways_h                                  : not translated
+# str_steam_russia_rzd_u                                            : not translated
+# str_steam_uruguay_afe_n1_2_6_0                                    : not translated
+# str_steam_czech_republic_cd_5341                                  : not translated
+# str_steam_eritrea_eritrean_railway_r440                           : not translated
+# str_steam_austria_kkstb_310                                       : not translated
+# str_steam_russia_rzd_e                                            : not translated
+# str_steam_japan_jnr_9600                                          : not translated
+# str_steam_israel_israel_railways_h                                : not translated
+# str_steam_kenya_east_african_railway_23                           : not translated
+# str_steam_italy_fs_480                                            : not translated
+# str_steam_new_zealand_nzr_wab                                     : not translated
+# str_steam_poland_pkp_ok22                                         : not translated
+# str_steam_croatia_hz_11                                           : not translated
+# str_steam_kenya_east_african_railway_21                           : not translated
+# str_steam_italy_fs_691                                            : not translated
+# str_steam_australia_nswgr_d57                                     : not translated
+# str_steam_argentina_fcca_ps11                                     : not translated
+# str_steam_hungary_mav_242                                         : not translated
+# str_steam_zimbabwe_zimbabwe_railways_15                           : not translated
+# str_steam_usa_southern_pacific_gs_4_daylight                      : not translated
+# str_steam_greece_sek_lb                                           : not translated
+# str_steam_australia_south_australian_railways_520                 : not translated
+# str_steam_czech_republic_cd_4590                                  : not translated
+# str_steam_albania_hsh_01                                          : not translated
+# str_steam_poland_pkp_oi49                                         : not translated
+# str_steam_australia_nswgr_ad60                                    : not translated
+# str_steam_south_africa_sar_gma_4_8_2_2_8_4                        : not translated
+# str_steam_kenya_east_african_railway_31                           : not translated
+# str_steam_spain_renfe_242f                                        : not translated
+# str_steam_ireland_gs_wr_101                                       : not translated
+# str_steam_usa_nyc_h_6a_light_mikado                               : not translated
+# str_steam_japan_jnr_d50                                           : not translated
+# str_steam_argentina_fcgr_315                                      : not translated
+# str_steam_australia_nswgr_c35                                     : not translated
+# str_steam_belgium_nmbs_sncb_type_29                               : not translated
+# str_steam_chile_fcab_4_8_2                                        : not translated
+# str_steam_china_railways_qj                                       : not translated
+# str_steam_south_africa_katanga_mikado_2_8_2                       : not translated
+# str_steam_mozambique_mozambique_railways_no_101                   : not translated
+# str_steam_ivory_coast_golwe_2_6_0_0_6_2t                          : not translated
 
-#multiple unit metro
-str_mtro_uk_london_1903_stock                                   :London 1903 Stock (Metro)
-str_mtro_argentina_le_brugeoise                                 :Buenos Aires 'Le Brugeoise' (Metro)
-str_mtro_usa_ny_r1                                                              :New York R1 (Metro)
-str_mtro_uk_london_1938_stock                                   :London 1938 Stock (Metro)
-str_mtro_france_paris_m2_840                                    :Paris M2 840 (Metro)
-str_mtro_portugal_lisbon_ml7                                    :Lisbon ML7 (Metro)
-str_mtro_hungary_budapest_ev3_200                               :Budapest Ev3-200 (Metro)
-str_mtro_norway_oslo_t1000                                              :Oslo T1000 (Metro)
-str_mtro_canada_toronto_h_series                                :Toronto H-series (Metro)
-str_mtro_germany_munchen_mvg_a2                                 :Munchen MVG A2 (Metro)
-str_mtro_usa_ny_r44                                                     :New York R44 (Metro)
-str_mtro_netherlands_amsterdam_type_m1                  :Amsterdam M1 (Metro)
-str_mtro_sweden_stockholm_c8                                    :Stockholm C8 (Metro)
-str_mtro_north_korea_pyongyang_d_stock                  :Pyongyang D stock (Metro)
-str_mtro_finland_helsinki_m100                                  :Helsinki M100 (Metro)
-str_mtro_japan_tokyo_s01                                                :Tokyo S01 (Metro)
-str_mtro_egypt_cairo_1987_stock                                 :Cairo 1987 stock (Metro)
-str_mtro_uk_dlr_p86                                                     :DLR P86 (Metro)
-str_mtro_usa_boston_01800                                               :Boston 01800 (Metro)
-str_mtro_usa_la_a650                                                    :LA A650 (Metro)
-str_mtro_taiwan_taipei_c301                                     :Taipei C301 (Metro)
-str_mtro_netherlands_amsterdam_caf_90                   :Amsterdam CAF 90 (Metro)
-str_mtro_france_paris_mp89                                              :Paris MP89 (Metro)
-str_mtro_russia_moscow_81_740                                   :Moscow 81-740 (Metro)
-str_mtro_singapore_singapore_c830_metropolis    :Singapore C830 'Metropolis' (Metro)
-str_mtro_norway_oslo_mx3000                                     :Oslo MX3000 (Metro)
-str_mtro_japan_osaka_30000                                              :Osaka 30000 (Metro)
-str_mtro_singapore_singapore_c151a                              :Singapore C151A (Metro)
-str_mtro_usa_washington_7000                                    :Washington 7000 (Metro)
-str_mtro_greece_thessaloniki_2014                               :Thessaloniki 2014 (Metro)
+# Steamrailbus
+str_rbs_austria_nolb_1                                            :NOLB 1 (Steam Railbus)
+str_rbs_italy_fs_86                                               :FS 86 (Steam Railbus)
+# str_rbs_australia_victorian_railways_rowan_railmotor              : not translated
+# str_rbs_switzerland_uebb_czm_1_2                                  : not translated
+# str_rbs_germany_bavarian_mcci                                     : not translated
+# str_rbs_south_africa_csar_railmotor                               : not translated
+# str_rbs_australia_victorian_railways_motor_car_3                  : not translated
+# str_rbs_austria_kkstb_4_0                                         : not translated
+# str_rbs_gemany_hessian_ludwig_railway_type_thomas                 : not translated
+# str_rbs_austria_nolb_30_33                                        : not translated
 
-#maglev railbus
-
-#maglev
-str_mglv_china_transrapid       :Shanghai Transrapid (Maglev)
-str_mglv_japan_mlx01_901        :JR MLX01-901 (Maglev)
-
-#wagons
-
-
-#coaches
-
-#special wagons
-str_mtro_metro_wagon_unpowered                :Metro Unit Wagon (Unpowered)
-str_mglv_maglev_wagon_unpowered                :Maglev Unit Wagon (Unpowered)
-str_mtro_metro_wagon_powered                  :Metro Unit Wagon (Powered)
-str_mglv_maglev_wagon_powered                  :Maglev Unit Wagon (Powered)
-
-#Obsolete vehicles
-
-#PURCHASE MENU TEXTS
-
-#Can attach vehicle texts
+# Wagon
+# str_mu_wagon_gen1_flat_wagon                                      : not translated
+# str_mu_wagon_gen1_boxcar                                          : not translated
+# str_mu_wagon_gen1_tanker                                          : not translated
+# str_mu_wagon_gen1_open_wagon                                      : not translated
+# str_mu_wagon_gen2_flat_wagon                                      : not translated
+# str_mu_wagon_gen2_boxcar_type1                                    : not translated
+# str_mu_wagon_gen2_tanker                                          : not translated
+# str_mu_wagon_gen2_open_wagon                                      : not translated
+# str_mu_wagon_gen2_silo                                            : not translated
+# str_mu_wagon_gen2_hopper                                          : not translated
+# str_mu_wagon_gen3_flat_wagon                                      : not translated
+# str_mu_wagon_gen3_boxcar_type1                                    : not translated
+# str_mu_wagon_gen3_tanker                                          : not translated
+# str_mu_wagon_gen3_open_wagon                                      : not translated
+# str_mu_wagon_gen3_silo_type1                                      : not translated
+# str_mu_wagon_gen3_hopper                                          : not translated
+# str_mu_wagon_gen4_flatcar                                         : not translated
+# str_mu_wagon_gen4_heavy_flatcar                                   : not translated
+# str_mu_wagon_gen4_boxcar_type1                                    : not translated
+# str_mu_wagon_gen4_tanker                                          : not translated
+# str_mu_wagon_gen4_gondola                                         : not translated
+# str_mu_wagon_gen4_silo_type1                                      : not translated
+# str_mu_wagon_gen4_hopper_type1                                    : not translated
+# str_mu_wagon_gen4_car_transporter                                 : not translated
+# str_mu_wagon_gen4_container_carrier                               : not translated
+# str_mu_wagon_gen4_centerbeam                                      : not translated
+# str_mu_wagon_gen5_flatcar                                         : not translated
+# str_mu_wagon_gen5_heavy_flatcar                                   : not translated
+# str_mu_wagon_gen5_boxcar_type1                                    : not translated
+# str_mu_wagon_gen5_tanker                                          : not translated
+# str_mu_wagon_gen5_gondola                                         : not translated
+# str_mu_wagon_gen5_silo_type1                                      : not translated
+# str_mu_wagon_gen5_hopper_type1                                    : not translated
+# str_mu_wagon_gen5_car_transporter                                 : not translated
+# str_mu_wagon_gen5_container_carrier                               : not translated
+# str_mu_wagon_gen5_centerbeam                                      : not translated
+# str_mu_wagon_gen5_container_doublestack                           : not translated
+# str_mu_wagon_gen5_superheavy_flatcar                              : not translated
+# str_mu_wagon_gen2_boxcar_type2                                    : not translated
+# str_mu_wagon_gen3_silo_type2                                      : not translated
+# str_mu_wagon_gen4_silo_type2                                      : not translated
+# str_mu_wagon_gen4_hopper_type2                                    : not translated
+# str_mu_wagon_gen5_boxcar_type2                                    : not translated
+# str_mu_wagon_gen5_silo_type2                                      : not translated
+# str_mu_wagon_gen5_hopper_type2                                    : not translated
+# str_mu_wagon_service_car_type1                                    : not translated
+# str_mu_wagon_service_car_type2                                    : not translated
+# str_mu_wagon_gen3_boxcar_type2                                    : not translated
+# str_mu_wagon_gen4_boxcar_type2                                    : not translated
+# str_mu_wagon_gen6_flatcar                                         : not translated
+# str_mu_wagon_gen6_heavy_flatcar                                   : not translated
+# str_mu_wagon_gen6_boxcar_type1                                    : not translated
+# str_mu_wagon_gen6_tanker                                          : not translated
+# str_mu_wagon_gen6_gondola                                         : not translated
+# str_mu_wagon_gen6_silo_type1                                      : not translated
+# str_mu_wagon_gen6_hopper_type1                                    : not translated
+# str_mu_wagon_gen6_car_transporter                                 : not translated
+# str_mu_wagon_gen6_container_carrier                               : not translated
+# str_mu_wagon_gen6_centerbeam                                      : not translated
+# str_mu_wagon_gen6_container_doublestack                           : not translated
+# str_mu_wagon_gen6_superheavy_flatcar                              : not translated
+# str_mu_wagon_gen6_boxcar_type2                                    : not translated
+# str_mu_wagon_gen6_silo_type2                                      : not translated
+# str_mu_wagon_gen6_hopper_type2                                    : not translated
+# str_mglv_wagon_gen7m_flatcar                                      : not translated
+# str_mglv_wagon_gen7m_heavy_flatcar                                : not translated
+# str_mglv_wagon_gen7m_boxcar_type1                                 : not translated
+# str_mglv_wagon_gen7m_tanker                                       : not translated
+# str_mglv_wagon_gen7m_gondola                                      : not translated
+# str_mglv_wagon_gen7m_silo_type1                                   : not translated
+# str_mglv_wagon_gen7m_hopper_type1                                 : not translated
+# str_mglv_wagon_gen7m_car_transporter                              : not translated
+# str_mglv_wagon_gen7m_container_carrier                            : not translated
+# str_mglv_wagon_gen7m_centerbeam                                   : not translated
+# str_mglv_wagon_gen7m_container_doublestack                        : not translated
+# str_mglv_wagon_gen7m_superheavy_flatcar                           : not translated
+# str_mglv_wagon_gen7m_boxcar_type2                                 : not translated
+# str_mglv_wagon_gen7m_silo_type2                                   : not translated
+# str_mglv_wagon_gen7m_hopper_type2                                 : not translated

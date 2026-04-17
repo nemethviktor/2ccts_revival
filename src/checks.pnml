@@ -21,12 +21,12 @@ else {
 //check if dynamic_engines is enabled
 if (dynamic_engines == 0) {
 	//Required dynamic_engines to load all vehicles
-	error(FATAL, USED_WITH, string(str_used_with_dynamic_engines));
+	error(FATAL, USED_WITH, string(STR_USED_WITH_DYNAMIC_ENGINES));
 }
 
 //check if at least one region is set to available
 if (ALL_REGION == 0) {
 	//No region = no vehicles
 	//Continue loading to allow changing parameters to fix problem
-	error(FATAL, string(str_error_region));
+	error(FATAL, string(STR_ERROR_REGION));
 }

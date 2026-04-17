@@ -9,7 +9,7 @@
 #define PURCHASETEXT_SWITCH_CALL
 #define PURCHASETEXT_SWITCH
 
-#define PURCHASETEXTMUWAGONPASSENGERUNPOWERED additional_text: string(str_unit_wagon_passenger);
-#define PURCHASETEXTMUWAGONCARGOUNPOWERED additional_text: string(str_unit_wagon_cargo);
-#define PURCHASETEXTMUWAGONPASSENGERPOWERED additional_text: string(str_unit_wagon_passenger);
-#define PURCHASETEXTMUWAGONCARGOPOWERED additional_text: string(str_unit_wagon_cargo);
+#define PURCHASETEXTMUWAGONPASSENGERUNPOWERED additional_text: string(STR_UNIT_WAGON_PASSENGER);
+#define PURCHASETEXTMUWAGONCARGOUNPOWERED additional_text: string(STR_UNIT_WAGON_CARGO);
+#define PURCHASETEXTMUWAGONPASSENGERPOWERED additional_text: string(STR_UNIT_WAGON_PASSENGER);
+#define PURCHASETEXTMUWAGONCARGOPOWERED additional_text: string(STR_UNIT_WAGON_CARGO);
