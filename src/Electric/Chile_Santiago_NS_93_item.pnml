@@ -44,7 +44,7 @@ item(FEAT_TRAINS, item_mtro_chile_santiago_ns_93) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["power/metro", "flag/CL"];
+	badges: ["region/america/south", "flag/CL", "power/metro"];
 
     }
     graphics {

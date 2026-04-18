@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_diesel_australia_queensland_railways_dl_class) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["power/diesel", "flag/AU"];
+	badges: ["region/oceania", "flag/AU", "power/diesel"];
 
     }
     graphics {

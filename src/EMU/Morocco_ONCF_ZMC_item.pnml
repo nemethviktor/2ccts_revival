@@ -58,7 +58,7 @@ item(FEAT_TRAINS, item_emu_morocco_oncf_zmc) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["power/electric/dc", "flag/MA"];
+	badges: ["region/africa", "flag/MA", "power/electric/dc"];
 
     }
     graphics {

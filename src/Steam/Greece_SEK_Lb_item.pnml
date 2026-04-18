@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_steam_greece_sek_lb) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["power/steam", "flag/GR"];
+	badges: ["region/europe/southern", "flag/GR", "power/steam"];
 
     }
     graphics {

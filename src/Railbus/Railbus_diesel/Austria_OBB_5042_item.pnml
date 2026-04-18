@@ -58,7 +58,7 @@ item(FEAT_TRAINS, item_rbd_austria_obb_5042) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["power/diesel", "flag/AT"];
+	badges: ["region/europe/western", "flag/AT", "power/diesel"];
 
     }
     graphics {

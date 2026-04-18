@@ -47,7 +47,7 @@ item(FEAT_TRAINS, item_electric_switzerland_rhb_de_2_2) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["power/electric/dc", "flag/CH"];
+	badges: ["region/europe/western", "flag/CH", "power/electric/dc"];
 
     }
     graphics {

@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_electric_indonesia_ess_3200) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["power/electric/dc", "flag/ID"];
+	badges: ["region/oceania", "flag/ID", "power/electric/dc"];
 
     }
     graphics {

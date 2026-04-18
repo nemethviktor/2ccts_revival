@@ -47,7 +47,7 @@ item(FEAT_TRAINS, item_diesel_saudi_arabia_saudi_railways_4000_emd_sd70acs) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["power/diesel", "flag/SA"];
+	badges: ["region/asia", "flag/SA", "power/diesel"];
 
     }
     graphics {

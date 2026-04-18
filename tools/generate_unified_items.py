@@ -33,15 +33,23 @@ def load_master_data(excel_path):
         except ValueError:
             return  # Skip sheets without the ID key
 
-        # Iterate Excel rows (skip header)
         for r_idx, row in enumerate(ws.iter_rows(min_row=2), start=0):
-            # Get the VEHIDCODE for this row to use as the primary key
-            # openpyxl is 1-indexed, so c_idx+1
-            veh_id = ws.cell(row=r_idx+2, column=vehid_col_idx+1).value
+            # Get the cell object instead of just the value first
+            veh_id_cell = ws.cell(row=r_idx+2, column=vehid_col_idx+1)
+            veh_id = veh_id_cell.value
+
             if veh_id is None:
                 continue
 
-            veh_id = veh_id.lower()
+            # --- NEW LOGIC TO HANDLE ARRAY FORMULAS ---
+            # If the cell is an ArrayFormula object, get its text representation
+            if hasattr(veh_id, 'ref'):  # This is how openpyxl identifies ArrayFormulas
+                # We can't evaluate the formula here, but we can take its string value
+                veh_id = str(veh_id)
+
+            # Ensure it's a string before calling .lower()
+            veh_id = str(veh_id).lower().strip()
+            # ------------------------------------------
 
             if veh_id not in notes_lookup:
                 notes_lookup[veh_id] = {}
@@ -60,7 +68,7 @@ def load_master_data(excel_path):
     # 2. List of sheets that provide extra vehicle properties
     data_sheets = [
         'properties', 'flags', 'track_types',
-        'graphics_properties'
+        'graphics_properties', 'roster'
     ]
 
     text_columns = ['COUNTRY', 'COUNTRY_CODE', 'ITEM',
@@ -114,7 +122,37 @@ def get_badges(row: pd.Series) -> str:
         power = "turbine"
     flag = row['COUNTRY_CODE'].upper()
     badges = []
+    regions = []
 
+    # Region/s
+    if is_true(row['AFRICA']):
+        regions.append("africa")
+    if is_true(row['ASIA']):
+        regions.append("asia")
+    # f..k me sideways that one is 'ern' but the other is not...
+    if is_true(row['NORTH_AMERICA']):
+        regions.append("america/northern")
+    if is_true(row['SOUTH_AMERICA']):
+        regions.append("america/south")
+    if is_true(row['SOUTHERN_EUROPE']):
+        regions.append("europe/southern")
+    if is_true(row['WESTERN_EUROPE']):
+        regions.append("europe/western")
+    if is_true(row['EASTERN_EUROPE']):
+        regions.append("europe/eastern")
+    if is_true(row['NORTHERN_EUROPE']):
+        regions.append("europe/northern")
+    if is_true(row['OCEANIA']):
+        regions.append("oceania")
+
+    for region in regions:
+        badges.append(f"region/{region}")
+
+    # Flags
+    if flag != "":
+        badges.append(f"flag/{flag}")
+
+    # Power
     if vehidcode.startswith('mtro') or vehidcode.startswith('singlemtro'):
         power = 'metro'
 
@@ -140,8 +178,6 @@ def get_badges(row: pd.Series) -> str:
                 power = 'electric'
 
         badges.append(f"power/{power}")
-    if flag != "":
-        badges.append(f"flag/{flag}")
 
     badge_string = '", "'.join(badges) if badges else ""
 

@@ -47,7 +47,7 @@ item(FEAT_TRAINS, item_electric_russia_rzd_vl22m) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["power/electric/dc", "flag/RU"];
+	badges: ["region/asia", "flag/RU", "power/electric/dc"];
 
     }
     graphics {

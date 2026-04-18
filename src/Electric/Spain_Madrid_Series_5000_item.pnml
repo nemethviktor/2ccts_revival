@@ -44,7 +44,7 @@ item(FEAT_TRAINS, item_mtro_spain_madrid_series_5000) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["power/metro", "flag/ES"];
+	badges: ["region/europe/southern", "flag/ES", "power/metro"];
 
     }
     graphics {

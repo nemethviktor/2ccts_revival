@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_steam_zimbabwe_zimbabwe_railways_15) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["power/steam", "flag/ZW"];
+	badges: ["region/africa", "flag/ZW", "power/steam"];
 
     }
     graphics {

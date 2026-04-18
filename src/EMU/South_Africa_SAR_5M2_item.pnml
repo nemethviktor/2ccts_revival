@@ -63,7 +63,7 @@ item(FEAT_TRAINS, item_emu_south_africa_sar_5m2) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["power/electric/dc", "flag/ZA"];
+	badges: ["region/africa", "flag/ZA", "power/electric/dc"];
 
     }
     graphics {

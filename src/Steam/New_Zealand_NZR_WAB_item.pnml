@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_steam_new_zealand_nzr_wab) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["power/steam", "flag/NZ"];
+	badges: ["region/oceania", "flag/NZ", "power/steam"];
 
     }
     graphics {

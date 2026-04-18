@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_electric_czech_republic_cd_363) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["power/electric", "flag/CZ"];
+	badges: ["region/europe/eastern", "flag/CZ", "power/electric"];
 
     }
     graphics {

@@ -47,7 +47,7 @@ item(FEAT_TRAINS, item_electric_morocco_oncfm_e_500) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["power/electric/ac", "flag/MA"];
+	badges: ["region/africa", "flag/MA", "power/electric/ac"];
 
     }
     graphics {

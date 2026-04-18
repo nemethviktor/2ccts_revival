@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_steam_russia_rzd_p36) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["power/steam", "flag/RU"];
+	badges: ["region/asia", "flag/RU", "power/steam"];
 
     }
     graphics {

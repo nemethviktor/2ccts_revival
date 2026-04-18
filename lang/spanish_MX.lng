@@ -98,6 +98,7 @@ STR_PARAM_LOADINGSPEED_ULTRA                                      :La más veloz
 # STR_ROLE_SNOWPLOUGH                                               : not translated
 # STR_ROLE_UTILITY                                                  : not translated
 # STR_ROLE_PROTOTYPE                                                : not translated
+# STR_REGION                                                        : not translated
 # STR_REGION_AMERICA                                                : not translated
 # STR_REGION_AMERICA_NORTHERN                                       : not translated
 # STR_REGION_AMERICA_CENTRAL                                        : not translated
@@ -1023,7 +1024,7 @@ str_mtro_japan_tokyo_s01                                          :S01 (Metro, E
 str_mtro_egypt_cairo_1987_stock                                   :Coches de 1987 (Metro, Eléctrica 3rd Rail)
 str_mtro_uk_dlr_p86                                               :DLR P86 (Metro, Eléctrica 3rd Rail)
 str_mtro_russia_moscow_81_7175m                                   :81-717.5M (Metro, Eléctrica 3rd Rail)
-str_mtro_usa_boston_01800                                         :01800 (Metro, Eléctrica 3rd Rail)
+str_mtro_usa_boston_01800                                         :1800 (Metro, Eléctrica 3rd Rail)
 str_mtro_usa_la_a650                                              :A650 (Metro, Eléctrica 3rd Rail)
 str_mtro_taiwan_taipei_c301                                       :C301 (Metro, Eléctrica 3rd Rail)
 str_mtro_france_paris_mp89                                        :MP89 (Metro, Eléctrica 3rd Rail)

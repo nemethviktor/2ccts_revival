@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_electric_new_zealand_nzr_ea) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["power/electric/dc", "flag/NZ"];
+	badges: ["region/oceania", "flag/NZ", "power/electric/dc"];
 
     }
     graphics {

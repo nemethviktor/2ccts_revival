@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_diesel_croatia_hz_2062) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["power/diesel", "flag/HR"];
+	badges: ["region/europe/eastern", "flag/HR", "power/diesel"];
 
     }
     graphics {

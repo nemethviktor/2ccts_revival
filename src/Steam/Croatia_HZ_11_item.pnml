@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_steam_croatia_hz_11) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["power/steam", "flag/HR"];
+	badges: ["region/europe/eastern", "flag/HR", "power/steam"];
 
     }
     graphics {

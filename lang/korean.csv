@@ -1,1287 +1,1287 @@
-﻿##grflangid 0x3a
-##plural 11
-##gender m f
-
-
-STR_GRF_NAME,"{TITLE}"
-STR_GRF_DESCRIPTION,""
-STR_GRF_URL,"https://github.com/nemethviktor/2ccts_revival"
-
-
-STR_USED_WITH_DYNAMIC_ENGINES,""
-STR_ERROR_REGION,""
-
-
-STR_PARAM_PURCHASE_COST,"구입 가격 배수"
-STR_PARAM_PURCHASE_COST_DESC,"이 NewGRF에 포함된 차량의 구입 비용을 증가시키거나 감소시키려면 이 설정을 변경하십시오. 이 설정은 기본 차량과 비교했을 때 차량의 구입 비용을 지나치게 불균형하게 만들 수 있음을 염두에 두십시오."
-STR_PARAM_RUNNING_COST,"유지비 조정 배수"
-STR_PARAM_RUNNING_COST_DESC,"이 NewGRF에 포함된 차량의 유지 비용을 증가시키거나 감소시키려면 이 설정을 변경하십시오."
-
-STR_WORD_NORMAL,"기본"
-
-STR_SUFFIX_STEAMENGINE,""
-STR_SUFFIX_DIESELENGINE,""
-STR_SUFFIX_ELECTRICENGINE,""
-STR_SUFFIX_MAGLEVSU,""
-
-STR_SUFFIX_STEAMRAILBUS,""
-STR_SUFFIX_DIESELRAILBUS,""
-STR_SUFFIX_ELECTRICRAILBUS,""
-STR_SUFFIX_METRORAILBUS,""
-STR_SUFFIX_MAGLEVRAILBUS,""
-
-STR_SUFFIX_DMU,""
-STR_SUFFIX_EMU,""
-STR_SUFFIX_MAGLEVMU,""
-STR_SUFFIX_COACH,""
-STR_SUFFIX_WAGON,""
-STR_SUFFIX_METRO,""
-
-STR_SUFFIX_UNPOWERED,"동력 없음"
-STR_SUFFIX_POWERED,"동력 있음"
-
-STR_SUFFIX_STEAM,""
-STR_SUFFIX_DIESEL,""
-STR_SUFFIX_ELECTRIC,""
-STR_SUFFIX_MAGLEV,""
-STR_SUFFIX_GAS_TURBINE,""
-
-STR_SUFFIX_1500V,""
-STR_SUFFIX_3KV,""
-STR_SUFFIX_15KV,""
-STR_SUFFIX_25KV,""
-STR_SUFFIX_OHLE,""
-STR_SUFFIX_3RD,""
-STR_SUFFIX_4TH,""
-STR_SUFFIX_DUAL,""
-
-
-STR_UNIT_WAGON_PASSENGER,"이 화물차를 사용해서 한 대의 열차를 구성하려면 정해진 길이만큼 객차를 연결해서 사용해야만 합니다."
-STR_UNIT_WAGON_CARGO,"이 화물차를 사용해서 한 대의 열차를 구성하려면 정해진 길이만큼 화물차를 연결해서 사용해야만 합니다."
-
-STR_CANNOT_ATTACH_WAGON_TO_MU,"동력 분산식 기관차에 일반 화물차를 연결할 수 없습니다"
-STR_CANNOT_ATTACH_WAGON_TO_UNIT_WAGON,"일반 화물차를 조성용 화물차에 연결할 수 없습니다"
-STR_CANNOT_ATTACH_UNIT_WAGON_TO_ENGINE,"조성용 화물차를 일반 기관차에 연결할 수 없습니다"
-STR_CANNOT_ATTACH_UNIT_WAGON_TO_WAGON,"조성용 화물차를 일반 화물차에 연결할 수 없습니다"
-STR_CANNOT_ATTACH_UNIT_WAGON_CARGO_TO_PASSENGER,"화물차를 객차에 연결할 수 없습니다"
-STR_CANNOT_ATTACH_UNIT_WAGON_PASSENGER_TO_CARGO,"조성용 객차를 화물용 동력 분산식 기관차에 연결할 수 없습니다"
-
-STR_PARAM_CONCEPT,"콘셉트 차량"
-STR_PARAM_CONCEPT_DESC,"콘셉트 차량을 사용합니다."
-STR_PARAM_REGION_AFRICA,"아프리카"
-STR_PARAM_REGION_AFRICA_DESC,"아프리카 차량을 사용합니다."
-STR_PARAM_REGION_NORTH_AMERICA,"북아메리카"
-STR_PARAM_REGION_NORTH_AMERICA_DESC,"북아메리카 차량을 사용합니다."
-STR_PARAM_REGION_SOUTH_AMERICA,"남아메리카"
-STR_PARAM_REGION_SOUTH_AMERICA_DESC,"남아메리카 차량을 사용합니다."
-STR_PARAM_REGION_ASIA,"아시아"
-STR_PARAM_REGION_ASIA_DESC,"아시아 차량을 사용합니다."
-STR_PARAM_REGION_NORTHERN_EUROPE,"북유럽"
-STR_PARAM_REGION_NORTHERN_EUROPE_DESC,"북유럽 차량을 사용합니다."
-STR_PARAM_REGION_EASTERN_EUROPE,"동유럽"
-STR_PARAM_REGION_EASTERN_EUROPE_DESC,"동유럽 차량을 사용합니다."
-STR_PARAM_REGION_SOUTHERN_EUROPE,"남유럽"
-STR_PARAM_REGION_SOUTHERN_EUROPE_DESC,"남유럽 차량을 사용합니다."
-STR_PARAM_REGION_WESTERN_EUROPE,"서유럽"
-STR_PARAM_REGION_WESTERN_EUROPE_DESC,"서유럽 차량을 사용합니다."
-STR_PARAM_REGION_OCEANIA,"오세아니아"
-STR_PARAM_REGION_OCEANIA_DESC,"오세아니아 차량을 사용합니다."
-
-
-STR_PARAM_LOADINGSPEED,"적재 속도"
-STR_PARAM_LOADINGSPEED_DESC,"이 세트의 적재 속도를 설정합니다."
-STR_PARAM_LOADINGSPEED_SLOW,"느리게"
-STR_PARAM_LOADINGSPEED_NORMAL,"보통 (기본)"
-STR_PARAM_LOADINGSPEED_FAST,"빠름"
-STR_PARAM_LOADINGSPEED_ULTRA,"가능한 한 빠르게"
-
-STR_CLASS_FLAG,""
-STR_CLASS_ROLE,""
-STR_CLASS_OPERATOR,""
-STR_CLASS_PROPULSION,""
-STR_CLASS_LIVERY,""
-STR_CLASS_REGION,""
-STR_CLASS_ZONE,""
-
-
-STR_ROLE_PASSENGER,""
-STR_ROLE_FREIGHT,""
-STR_ROLE_MIXED,""
-STR_ROLE_EXPRESS_PASSENGER,""
-STR_ROLE_EXPRESS_FREIGHT,""
-STR_ROLE_HEAVY_FREIGHT,""
-STR_ROLE_LIGHT_FREIGHT,""
-STR_ROLE_MAIL,""
-STR_ROLE_RESTAURANT_CAR,""
-STR_ROLE_SHUNTING,""
-STR_ROLE_BANKING,""
-STR_ROLE_SNOWPLOUGH,""
-STR_ROLE_UTILITY,""
-STR_ROLE_PROTOTYPE,""
-
-
-STR_REGION_AMERICA,""
-STR_REGION_AMERICA_NORTHERN,""
-STR_REGION_AMERICA_CENTRAL,""
-STR_REGION_AMERICA_SOUTH,""
-STR_REGION_AMERICA_CARIBBEAN,""
-STR_REGION_EUROPE,""
-STR_REGION_EUROPE_NORTHERN,""
-STR_REGION_EUROPE_WESTERN,""
-STR_REGION_EUROPE_SOUTHERN,""
-STR_REGION_EUROPE_EASTERN,""
-STR_REGION_AFRICA,""
-STR_REGION_AFRICA_NORTHERN,""
-STR_REGION_AFRICA_WESTERN,""
-STR_REGION_AFRICA_MIDDLE,""
-STR_REGION_AFRICA_EASTERN,""
-STR_REGION_AFRICA_SOUTHERN,""
-STR_REGION_ASIA,""
-STR_REGION_ASIA_WESTERN,""
-STR_REGION_ASIA_CENTRAL,""
-STR_REGION_ASIA_EASTERN,""
-STR_REGION_ASIA_SOUTHERN,""
-STR_REGION_ASIA_SOUTHEASTERN,""
-STR_REGION_OCEANIA,""
-STR_REGION_OCEANIA_MICRONESIA,""
-STR_REGION_OCEANIA_MELANESIA,""
-STR_REGION_OCEANIA_POLYNESIA,""
-STR_REGION_OCEANIA_AUSTRALIA_AND_NEW_ZEALAND,""
-
-
-STR_ZONE_RESIDENTIAL,""
-STR_ZONE_RESIDENTIAL_LOW_DENSITY,""
-STR_ZONE_RESIDENTIAL_MEDIUM_DENSITY,""
-STR_ZONE_RESIDENTIAL_HIGH_DENSITY,""
-STR_ZONE_COMMERCIAL,""
-STR_ZONE_COMMERCIAL_LOW_DENSITY,""
-STR_ZONE_COMMERCIAL_MEDIUM_DENSITY,""
-STR_ZONE_COMMERCIAL_HIGH_DENSITY,""
-STR_ZONE_INDUSTRIAL,""
-STR_ZONE_INDUSTRIAL_LOW_DENSITY,""
-STR_ZONE_INDUSTRIAL_MEDIUM_DENSITY,""
-STR_ZONE_INDUSTRIAL_HIGH_DENSITY,""
-STR_ZONE_MIXED,""
-STR_ZONE_MIXED_LOW_DENSITY,""
-STR_ZONE_MIXED_MEDIUM_DENSITY,""
-STR_ZONE_MIXED_HIGH_DENSITY,""
-STR_ZONE_AGRICULTURAL,""
-STR_ZONE_FORESTRY,""
-STR_ZONE_PUBLIC,""
-STR_ZONE_TRANSPORT,""
-STR_ZONE_GENERAL,""
-STR_ZONE_LEISURE,""
-STR_ZONE_OTHER,""
-
-
-STR_FLAG,""
-STR_FLAG_AD,""
-STR_FLAG_AE,""
-STR_FLAG_AF,""
-STR_FLAG_AG,""
-STR_FLAG_AI,""
-STR_FLAG_AL,""
-STR_FLAG_AM,""
-STR_FLAG_AO,""
-STR_FLAG_AQ,""
-STR_FLAG_AR,""
-STR_FLAG_AS,""
-STR_FLAG_AT,""
-STR_FLAG_AU,""
-STR_FLAG_AW,""
-STR_FLAG_AX,""
-STR_FLAG_AZ,""
-STR_FLAG_BA,""
-STR_FLAG_BB,""
-STR_FLAG_BD,""
-STR_FLAG_BE,""
-STR_FLAG_BF,""
-STR_FLAG_BG,""
-STR_FLAG_BH,""
-STR_FLAG_BI,""
-STR_FLAG_BJ,""
-STR_FLAG_BL,""
-STR_FLAG_BM,""
-STR_FLAG_BN,""
-STR_FLAG_BO,""
-STR_FLAG_BQ,""
-STR_FLAG_BR,""
-STR_FLAG_BS,""
-STR_FLAG_BT,""
-STR_FLAG_BV,""
-STR_FLAG_BW,""
-STR_FLAG_BY,""
-STR_FLAG_BZ,""
-STR_FLAG_CA,""
-STR_FLAG_CC,""
-STR_FLAG_CD,""
-
-STR_FLAG_CF,""
-STR_FLAG_CG,""
-STR_FLAG_CH,""
-STR_FLAG_CI,""
-STR_FLAG_CK,""
-STR_FLAG_CL,""
-STR_FLAG_CM,""
-STR_FLAG_CN,""
-STR_FLAG_CO,""
-STR_FLAG_CR,""
-STR_FLAG_CU,""
-STR_FLAG_CV,""
-STR_FLAG_CW,""
-STR_FLAG_CX,""
-STR_FLAG_CY,""
-STR_FLAG_CZ,""
-STR_FLAG_DE,""
-STR_FLAG_DJ,""
-STR_FLAG_DK,""
-STR_FLAG_DM,""
-STR_FLAG_DO,""
-STR_FLAG_DZ,""
-STR_FLAG_EC,""
-STR_FLAG_EE,""
-STR_FLAG_EG,""
-STR_FLAG_EH,""
-STR_FLAG_ER,""
-STR_FLAG_ES,""
-STR_FLAG_ET,""
-STR_FLAG_EU,""
-STR_FLAG_FI,""
-STR_FLAG_FJ,""
-STR_FLAG_FK,""
-STR_FLAG_FM,""
-STR_FLAG_FO,""
-STR_FLAG_FR,""
-STR_FLAG_GA,""
-STR_FLAG_GB,""
-STR_FLAG_GD,""
-STR_FLAG_GE,""
-STR_FLAG_GF,""
-STR_FLAG_GG,""
-STR_FLAG_GH,""
-STR_FLAG_GI,""
-STR_FLAG_GL,""
-STR_FLAG_GM,""
-STR_FLAG_GN,""
-STR_FLAG_GP,""
-STR_FLAG_GQ,""
-STR_FLAG_GR,""
-STR_FLAG_GS,""
-STR_FLAG_GT,""
-STR_FLAG_GU,""
-STR_FLAG_GW,""
-STR_FLAG_GY,""
-STR_FLAG_HK,""
-STR_FLAG_HM,""
-STR_FLAG_HN,""
-STR_FLAG_HR,""
-STR_FLAG_HT,""
-STR_FLAG_HU,""
-STR_FLAG_ID,""
-STR_FLAG_IE,""
-STR_FLAG_IL,""
-STR_FLAG_IM,""
-STR_FLAG_IN,""
-STR_FLAG_IO,""
-STR_FLAG_IQ,""
-STR_FLAG_IR,""
-STR_FLAG_IS,""
-STR_FLAG_IT,""
-STR_FLAG_JE,""
-STR_FLAG_JM,""
-STR_FLAG_JO,""
-STR_FLAG_JP,""
-STR_FLAG_KE,""
-STR_FLAG_KG,""
-STR_FLAG_KH,""
-STR_FLAG_KI,""
-STR_FLAG_KM,""
-STR_FLAG_KN,""
-STR_FLAG_KP,""
-STR_FLAG_KR,""
-STR_FLAG_KW,""
-STR_FLAG_KY,""
-STR_FLAG_KZ,""
-STR_FLAG_LA,""
-STR_FLAG_LB,""
-STR_FLAG_LC,""
-STR_FLAG_LI,""
-STR_FLAG_LK,""
-STR_FLAG_LR,""
-STR_FLAG_LS,""
-STR_FLAG_LT,""
-STR_FLAG_LU,""
-STR_FLAG_LV,""
-STR_FLAG_LY,""
-STR_FLAG_MA,""
-STR_FLAG_MC,""
-STR_FLAG_MD,""
-STR_FLAG_ME,""
-STR_FLAG_MF,""
-STR_FLAG_MG,""
-STR_FLAG_MH,""
-STR_FLAG_MK,""
-STR_FLAG_ML,""
-STR_FLAG_MM,""
-STR_FLAG_MN,""
-STR_FLAG_MO,""
-STR_FLAG_MP,""
-STR_FLAG_MQ,""
-STR_FLAG_MR,""
-STR_FLAG_MS,""
-STR_FLAG_MT,""
-STR_FLAG_MU,""
-STR_FLAG_MV,""
-STR_FLAG_MW,""
-STR_FLAG_MX,""
-STR_FLAG_MY,""
-STR_FLAG_MZ,""
-STR_FLAG_NA,""
-STR_FLAG_NC,""
-STR_FLAG_NE,""
-STR_FLAG_NF,""
-STR_FLAG_NG,""
-STR_FLAG_NI,""
-STR_FLAG_NL,""
-STR_FLAG_NO,""
-STR_FLAG_NP,""
-STR_FLAG_NR,""
-STR_FLAG_NU,""
-STR_FLAG_NZ,""
-STR_FLAG_OM,""
-STR_FLAG_PA,""
-STR_FLAG_PE,""
-STR_FLAG_PF,""
-STR_FLAG_PG,""
-STR_FLAG_PH,""
-STR_FLAG_PK,""
-STR_FLAG_PL,""
-STR_FLAG_PM,""
-STR_FLAG_PN,""
-STR_FLAG_PR,""
-STR_FLAG_PS,""
-STR_FLAG_PT,""
-STR_FLAG_PW,""
-STR_FLAG_PY,""
-STR_FLAG_QA,""
-STR_FLAG_RE,""
-STR_FLAG_RO,""
-STR_FLAG_RS,""
-STR_FLAG_RU,""
-STR_FLAG_RW,""
-STR_FLAG_SA,""
-STR_FLAG_SB,""
-STR_FLAG_SC,""
-STR_FLAG_SD,""
-STR_FLAG_SE,""
-STR_FLAG_SG,""
-STR_FLAG_SH,""
-STR_FLAG_SI,""
-STR_FLAG_SJ,""
-STR_FLAG_SK,""
-STR_FLAG_SL,""
-STR_FLAG_SM,""
-STR_FLAG_SN,""
-STR_FLAG_SO,""
-STR_FLAG_SR,""
-STR_FLAG_SS,""
-STR_FLAG_ST,""
-STR_FLAG_SV,""
-STR_FLAG_SX,""
-STR_FLAG_SY,""
-STR_FLAG_SZ,""
-STR_FLAG_TC,""
-STR_FLAG_TD,""
-STR_FLAG_TF,""
-STR_FLAG_TG,""
-STR_FLAG_TH,""
-STR_FLAG_TJ,""
-STR_FLAG_TK,""
-STR_FLAG_TL,""
-STR_FLAG_TM,""
-STR_FLAG_TN,""
-STR_FLAG_TO,""
-STR_FLAG_TR,""
-STR_FLAG_TT,""
-STR_FLAG_TV,""
-STR_FLAG_TW,""
-STR_FLAG_TZ,""
-STR_FLAG_UA,""
-STR_FLAG_UG,""
-STR_FLAG_UM,""
-STR_FLAG_US,""
-STR_FLAG_UY,""
-STR_FLAG_UZ,""
-STR_FLAG_VA,""
-STR_FLAG_VC,""
-STR_FLAG_VE,""
-STR_FLAG_VG,""
-STR_FLAG_VI,""
-STR_FLAG_VN,""
-STR_FLAG_VU,""
-STR_FLAG_WF,""
-STR_FLAG_WS,""
-STR_FLAG_YE,""
-STR_FLAG_YT,""
-STR_FLAG_ZA,""
-STR_FLAG_ZM,""
-STR_FLAG_ZW,""
-STR_FLAG_YU,""
-STR_FLAG_GDR,""
-STR_FLAG_SU,""
-STR_FLAG_EUROPE,""
-STR_FLAG_WRLD,""
-STR_POWER,""
-STR_POWER_STEAM,""
-STR_POWER_DIESEL,""
-STR_POWER_DIESEL_ELECTRIC,""
-STR_POWER_DIESEL_HYDRAULIC,""
-STR_POWER_ELECTRIC,""
-STR_POWER_ELECTRIC_AC,""
-STR_POWER_ELECTRIC_AC_15,""
-STR_POWER_ELECTRIC_AC_25,""
-STR_POWER_ELECTRIC_DC,""
-STR_POWER_ELECTRIC_DC_600,""
-STR_POWER_ELECTRIC_DC_750,""
-STR_POWER_ELECTRIC_DC_1200,""
-STR_POWER_ELECTRIC_DC_1500,""
-STR_POWER_ELECTRIC_DC_3000,""
-STR_POWER_TURBINE,""
-STR_POWER_BATTERY,""
-STR_POWER_MAGLEV,""
-STR_POWER_METRO,""
-STR_LIVERY_COMPANY_2CC,""
-STR_LIVERY_COMPANY_RANDOM_1CC,""
-STR_LIVERY_COMPANY_RANDOM_2CC,""
-
-
-str_mglv_maglev_wagon_powered,"자기부상 기본 객차"
-str_mglv_maglev_wagon_unpowered,"자기부상 기본 객차"
-str_mglv_china_transrapid,"상하이 트랜스래피드"
-str_mglv_japan_mlx01_901,"JR MLX01-901"
-
-str_rbs_austria_nolb_1,"NOLB 1"
-str_rbs_italy_fs_86,"FS 86"
-str_rbs_australia_victorian_railways_rowan_railmotor,"Victorian Railways Rowan Railmotor"
-str_rbs_switzerland_uebb_czm_1_2,"UeBB Czm 1/2"
-str_rbs_germany_bavarian_mcci,"K.Bay.Sts.B. MCCi"
-str_rbs_south_africa_csar_railmotor,"CSAR Railmotor"
-str_rbs_australia_victorian_railways_motor_car_3,"Victorian Railways Motor Car 3"
-str_rbs_austria_kkstb_4_0,"kkStB 4.0"
-str_rbs_gemany_hessian_ludwig_railway_type_thomas,""
-str_rbs_austria_nolb_30_33,""
-
-
-str_rbd_australia_victorian_railways_aec_rm1,"Victorian Railways AEC RM1"
-str_rbd_germany_db_vt_133,"DB VT 133 'Wismar railbus'"
-str_rbd_united_kingdom_gwr_aec_railcar,"GWR AEC Railcar"
-str_rbd_austria_obb_5042,"OBB 5042"
-str_rbd_new_zealand_nzr_rm31,"NZR RM31"
-str_rbd_portugal_cp_0100,"CP 0100"
-str_rbd_usa_amtrak_budd_rdc,"Amtrak Budd RDC"
-str_rbd_germany_db_vt_989,"DB VT 98.9 / DB 798 'Uerdingen railbus'"
-str_rbd_germany_ohe_520_gdt,"OHE 520 GDT"
-str_rbd_netherlands_ns_20_kameel,"NS 20 'Kameel'"
-str_rbd_netherlands_ns_dh1,"NS DH1"
-str_rbd_austria_obb_5047,"OBB 5047"
-str_rbd_united_kingdom_br_153_super_sprinter,"BR 153 'Super Sprinter'"
-str_rbd_czech_republic_cd_809,"CD 809"
-str_rbd_germany_db_670,"DB 670"
-str_rbd_lithuania_lithuanian_railways_ar2,"리투아니아 철도 AR2"
-str_rbd_austria_kkstb_19,"KkStB 19"
-str_rbd_usa_virginia_truckee_motor_car_22,"Virginia & Truckee Motor Car 22"
-str_rbd_germany_saxon_det_1_2,"Saxon DET 1-2"
-str_rbd_uk_wc_pr_drewry_railcar,"WC&PR Drewry Railcar"
-str_rbd_germany_bst_6001,"BSt 6001"
-str_rbd_australia_victorian_railways_derm,"Victorian Railways DERM"
-str_rbd_czech_republic_cd_m120,"CD M120"
-str_rbd_germany_schienenzeppelin,"Schienenzeppelin"
-str_rbd_denmark_dsb_mo,"DSB MO"
-str_rbd_norway_nsb_cmb_17,"NSB Cmb 17"
-str_rbd_czech_republic_cd_m290,"CD M290"
-str_rbd_netherlands_ns_ombc,"NS omBC 2900"
-str_rbd_australia_nswgr_class_400,"NSWGR 400"
-str_rbd_portugal_cp_usd_9050,"CP USD 9050"
-str_rbd_belgium_sncb_class_42,"NMBS/SNCB 42"
-str_rbd_bulgaria_bdz_19,"BDZ 19"
-str_rbd_greece_ose_aa71,"OSE AA.71"
-str_rbd_tunisia_sncft_z431,"SNCFT Z431"
-str_rbd_usa_amtrak_spv_200,"Amtrak SPV-200"
-str_rbd_finland_vr_dm12,"VR Dm12"
-str_rbd_czech_republic_cd_840,"CD 840"
-str_rbd_italy_fs_aln_668,"FS ALn 668"
-str_rbd_japan_jr_shikoku_1000,"JR 시코쿠 1000"
-str_rbd_japan_jr_kiha_e120,"JR KiHa E120"
-str_rbd_chile_efe_buscarril,"EFE Buscarril"
-str_rbd_argentina_fcpba_m_railcar,"FCPBA M Railcar"
-str_rbd_eritrea_eritrean_railway_a62_70_littorina,"Eritrean Railway A.62-70 'Littorina'"
-str_rbd_finland_vr_dm7,"VR Dm7"
-str_rbd_russia_rzd_ach2,"RZD ACh2"
-
-
-str_rbe_czech_republic_cd_m400,"CD M400"
-str_rbe_france_sncf_z_7100,"SNCF Z 7100"
-str_rbe_germany_buckower_kleinbahn_nr_1_3,"Buckower Kleinbahn Nr. 1-3"
-str_rbe_germany_db_4792,"DB 479.2"
-str_rbe_slovakia_zssk_490,"ZSSK 49.0"
-str_rbe_italy_fs_ale_840,"FS ALe 840"
-str_rbe_italy_fg_ale_80,"FG ALe 80"
-str_rbe_italy_fs_e623,"FS E.623"
-str_rbe_morocco_oncfm_zab1000,"ONCFM ZAB1000"
-str_rbe_poland_pkp_en81,"PKP EN81"
-str_rbe_austria_obb_4855,"OBB 4855"
-str_rbe_austria_mbs_et_10109,"MBS ET 10.109"
-str_rbe_germany_db_et_85,"DB ET 85 / DB 485"
-str_rbe_sweden_sj_x16,"SJ X16"
-str_rbe_usa_pennsylvania_railroad_silverliner_ii,"PRR Silverliner II"
-str_rbe_usa_septa_silverliner_v,"SEPTA Silverliner V"
-str_emu_usa_prr_mp54,"PRR MP54"
-str_rbe_switzerland_ab_cfe_3_3,"AB CFe 3/3"
-str_rbe_switzerland_tpc_bvb_be_2_2,"TPC BVB Be 2/2"
-str_rbe_switzerland_mvr_beh_2_4,"MVR Beh 2/4"
-str_rbe_spain_ferrocarril_de_soller_1_3,"Ferrocarril de Soller 1-3"
-str_rbe_japan_choshi_deha_1000,"Choshi DeHa 1000"
-
-
-str_steam_belgium_le_belge,"Le Belge"
-str_steam_usa_4_4_0_american,"4-4-0 'American'"
-str_steam_switzerland_sbb_ec_2_5,"SBB Ec 2/5"
-str_steam_usa_4_6_0_ten_wheeler,"4-6-0 'Ten-wheeler'"
-str_steam_usa_2_8_0_consolidation,"2-8-0 'Consolidation'"
-str_steam_hungary_mav_377,"MAV 377"
-str_steam_austria_kkstb_99,"KkStB 99"
-str_steam_uk_caledonian_railway_439,"칼레도니아 철도 439"
-str_steam_switzerland_sbb_a_3_5,"SBB A 3/5"
-str_steam_switzerland_sbb_e_3_3,"SBB E 3/3"
-str_steam_austria_kkstb_299,"KkStB 299"
-str_steam_new_zealand_nzr_x_class,"NZR X"
-str_steam_croatia_hz_51,"HZ 51"
-str_steam_italy_fs_880,"FS 880"
-str_steam_argentina_fcnea_11b_2_8_0,"FCNEA 11B 2-8-0"
-str_steam_france_sncf_140c,"SNCF 140C"
-str_steam_france_sncf_141ta,"SNCF 141TA"
-str_steam_uk_gwr_4900,"GWR 4900"
-str_steam_uk_gwr_5700,"GWR 5700"
-str_steam_netherlands_ns_6300,"NS 6300"
-str_steam_usa_at_sf_5000,"AT&amp;SF 5000"
-str_steam_germany_prussian_s10,"DB 17.0-1 'Prussian S 10'"
-str_steam_uk_lms_5mt_black_five,"LMS 5MT 'Black Five'"
-str_steam_russia_rzd_9p,"RZD 9P"
-str_steam_uk_lner_a4_gresley,"LNER A4 'Gresley'"
-str_steam_canada_cpr_royal_hudson,"CPR 'Royal Hudson'"
-str_steam_denmark_dsb_e,"DSB E"
-str_steam_germany_db_52,"DB 52"
-str_steam_uk_lner_a1_peppercorn,"LNER A1 'Peppercorn'"
-str_steam_south_africa_sar_25,"SAR 25"
-str_steam_russia_rzd_p36,"RZD P36"
-str_steam_france_sncf_150b,"SNCF 150B"
-str_steam_italy_fs_895,"FS 895"
-str_steam_poland_pkp_okz32,"PKP OKz32"
-str_steam_switzerland_sbb_c_5_6,"SBB C 5/6"
-str_steam_usa_up_4000_big_boy,"UP 4000 'Big Boy'"
-str_steam_netherlands_nrs_11,"NRS 11"
-str_steam_uk_gwr_iron_duke_class,"GWR Iron Duke"
-str_steam_australia_sidney_railway_locomotive_no1,"시드니 철도 Locomotive No.1"
-str_steam_usa_central_pacific_4_2_2,"Central Pacific 4-2-2"
-str_steam_netherlands_ns_700,"NS 700"
-str_steam_south_africa_natal_government_railways_2_6_0t,"Natal Government Railways 2-6-0T"
-str_steam_australia_nswgr_z25_class,"NSWGR Z25"
-str_steam_canada_canadian_pacific_374,"Canadian Pacific 374"
-str_steam_south_africa_ppr_35_tonner_4_6_0t,"PPR 35-tonner 4-6-0T"
-str_steam_spain_renfe_class_040,"RENFE 040"
-str_steam_germany_saxon_iv_k,"DB 99.51-60 'Saxon IV K'"
-str_steam_germany_prussian_s_3,"K.P.St.E. S 3"
-str_steam_norway_nsb_class_xxi,"NSB XXI"
-str_steam_usa_prr_d16,"PRR D16"
-str_steam_netherlands_ns_8100,"NS 8100"
-str_steam_south_africa_sar_md_class,"SAR MD"
-str_steam_angola_south_west_african_2_8_0,"South West African 2-8-0"
-str_steam_uk_lner_n7,"LNER N7"
-str_steam_germany_saxon_xx_hv,"DB 19.0 'Saxon XX HV'"
-str_steam_belgium_nmbs_type_7,"NMBS Type 7"
-str_steam_ireland_dser_15,"DSER 15"
-str_steam_usa_sierra_railroad_28,"Sierra Railroad 28"
-str_steam_canada_cn_u_1_class,"CN U-1"
-str_steam_india_indian_railways_xb_class,"인도 국철 XB"
-str_steam_iraq_iraqi_state_railways_pc_class,"이라크 State Railways PC"
-str_steam_egypt_enr_1100,"ENR 1100"
-str_steam_uk_gwr_1600_class,"GWR 1600"
-str_steam_australia_victorian_railways_r_class,"Victorian Railways R"
-str_steam_germany_db_9977_79,"DB 99.77-79"
-str_steam_germany_db_18_201,"DB 18 201"
-str_steam_new_zealand_nzr_wab,"NZR WAB"
-str_steam_australia_nswgr_d57,"NSWGR D57"
-str_steam_australia_south_australian_railways_520,"남오스트레일리아 국철 520"
-str_steam_australia_nswgr_ad60,"NSWGR AD60"
-str_steam_uruguay_afe_n1_2_6_0,"AFE N1 2-6-0"
-str_steam_argentina_fcca_ps11,"FCCA PS11"
-str_steam_south_africa_harbour_board_el_0_4_0,"Harbour Board EL 0-4-0"
-str_steam_mozambique_beira_railway_br6_f2_falcon,"Beira Railway BR6 F2 'Falcon'"
-str_steam_eritrea_eritrean_railway_r440,"Eritrean Railway R.440"
-str_steam_kenya_east_african_railway_23,"동아프리카 철도 23"
-str_steam_kenya_east_african_railway_21,"동아프리카 철도 21"
-str_steam_zimbabwe_zimbabwe_railways_15,"짐바브웨 국유철도 15"
-str_steam_south_africa_sar_gma_4_8_2_2_8_4,"SAR GMA 4-8-2+2-8-4"
-str_steam_kenya_east_african_railway_31,"동아프리카 철도 31"
-str_steam_india_fairy_queen,"Fairy Queen"
-str_steam_india_dhr_b,"DHR B"
-str_steam_china_china_railways_h,"중국 철도공사 H"
-str_steam_russia_rzd_u,"RZD U"
-str_steam_russia_rzd_e,"RZD E"
-str_steam_israel_israel_railways_h,"이스라엘 국철 H"
-str_steam_italy_fs_480,"FS 480"
-str_steam_italy_fs_691,"FS 691"
-str_steam_greece_sek_lb,"SEK Lb"
-str_steam_albania_hsh_01,"HSH 01"
-str_steam_spain_renfe_242f,"RENFE 242F"
-str_steam_czech_republic_cd_5341,"CD 534.1"
-str_steam_poland_pkp_ok22,"PKP Ok22"
-str_steam_croatia_hz_11,"HZ 11"
-str_steam_hungary_mav_242,"MAV 242"
-str_steam_czech_republic_cd_4590,"CD 459.0"
-str_steam_poland_pkp_oi49,"PKP OI49"
-str_steam_austria_kkstb_310,"KKStB 310"
-str_steam_usa_southern_pacific_gs_4_daylight,"Southern Pacific GS-4 'Daylight'"
-str_steam_ireland_gs_wr_101,"GS&WR 101"
-str_steam_usa_nyc_h_6a_light_mikado,"NYC H-6A 'Light Mikado'"
-str_steam_argentina_fcgr_315,"FCGR 315"
-str_steam_australia_nswgr_c35,"NSWGR C35"
-str_steam_belgium_nmbs_sncb_type_29,"NMBS/SNCB Type 29"
-str_steam_chile_fcab_4_8_2,"FCAB 4-8-2"
-str_steam_china_railways_qj,"중국 철도공사 QJ"
-str_steam_switzerland_rhb_g_3_4,"RhB G 3/4"
-str_steam_japan_jnr_class_e10,"JNR E10"
-str_steam_japan_jnr_7100,"JNR 7100"
-str_steam_japan_jnr_860,"JNR 860"
-str_steam_japan_jnr_9600,"JNR 9600"
-str_steam_japan_jnr_d50,"JNR D50"
-str_steam_south_africa_katanga_mikado_2_8_2,""
-str_steam_mozambique_mozambique_railways_no_101,""
-str_steam_ivory_coast_golwe_2_6_0_0_6_2t,""
-
-
-str_diesel_germany_db_kof_ii,"DB Kof II / DB 322"
-str_diesel_usa_cnj_alco_ge_ir_boxcab,"CNJ ALCo-GE-IR Boxcab"
-str_diesel_netherlands_ns_200,"NS 200 'Sik'"
-str_diesel_germany_db_270,"DB V 20 / DB 270 'WR 200 B 14'"
-str_diesel_switzerland_sbb_am_4_6,"SBB Am 4/6"
-str_diesel_australia_nswgr_79,"NSWGR 79"
-str_diesel_usa_western_pacific_alco_s_2,"Western Pacific ALCO S-2"
-str_diesel_usa_at_sf_emd_f3,"AT&SF EMD F3"
-str_diesel_usa_up_emd_e8,"UP EMD E8"
-str_diesel_brazil_efcb_alco_rs_3,"EFCB ALCO RS-3"
-str_diesel_netherlands_ns_600,"NS 600 'Bakkie'"
-str_diesel_usa_pennsylvania_railroad_rf_16_sharknose,"PRR RF-16 'Sharknose'"
-str_diesel_uruguay_afe_1500,"AFE 1500"
-str_diesel_canada_cpr_trainmaster,"CPR 'Trainmaster'"
-str_diesel_liberia_liberia_railways_class_08,"라이베리아 철도 08"
-str_diesel_austria_obb_2060,"OBB 2060"
-str_diesel_canada_cnr_sw1200,"CNR SW1200"
-str_diesel_canada_via_rail_fp9,"VIA Rail FP9"
-str_diesel_hungary_mav_m44,"MAV M44"
-str_diesel_hungary_mav_m28,"MAV M28"
-str_diesel_belgium_nmbs_sncb_83,"NMBS/SNCB 83"
-str_diesel_germany_db_220,"DB V200.0 / DB 220"
-str_diesel_usa_amtrak_fl9,"Amtrak FL9"
-str_diesel_czech_republic_cd_720_chme2,"CD 720 ChME2"
-str_diesel_finland_vr_dr12,"VR Dr12"
-str_diesel_romania_cfr_060_da,"CFR 060-DA"
-str_diesel_brazil_bf_emd_gl8,"BF EMD GL8"
-str_diesel_brazil_efvm_ml4000,"EFVM ML4000"
-str_diesel_russia_rzd_tep60,"RZD TEP60"
-str_diesel_belgium_nmbs_sncb_62,"NMBS/SNCB 62"
-str_diesel_denmark_dsb_mak_100,"DSB MaK 100"
-str_diesel_india_indian_railways_wdm_2,"인도 국철 WDM-2"
-str_diesel_uk_br_14,"BR 14"
-str_diesel_russia_rzd_chme3,"RZD ChME3"
-str_diesel_argentina_mf_gm_emd_j16cw_ac,"MF GM-EMD-J16CW-AC"
-str_diesel_russia_rzd_m62,"RZD M62"
-str_diesel_australia_nswgr_422,"NSWGR 422"
-str_diesel_egypt_enr_g22w,"ENR G22W"
-str_diesel_usa_up_emd_dda40x,"UP EMD DDA40X"
-str_diesel_australia_queensland_rail_2100,"퀸즈랜드 철도 2100"
-str_diesel_croatia_hz_2062,"HZ 2062"
-str_diesel_sweden_sj_v4,"SJ V4"
-str_diesel_canada_cnr_mlw_m420w,"CNR MLW M420W"
-str_diesel_usa_amtrak_sdp_40f,"Amtrak SDP-40F"
-str_diesel_china_china_railways_dfh3,"중국 철도공사 DFH3"
-str_diesel_panama_panama_canal_railway_emd_f40ph,"파나마 해협 철도 EMD F40PH"
-str_diesel_portugal_cp_1900,"CP 1900"
-str_diesel_finland_vr_dr16,"VR Dr16"
-str_diesel_russia_rzd_tep80,"RZD TEP80"
-str_diesel_australia_australian_national_an,"오스트레일리아 국영 AN"
-str_diesel_usa_amtrak_p42dc_genesis,"Amtrak P42DC 'Genesis'"
-str_diesel_turkey_tcdd_dh7000,"TCDD DH7000"
-str_diesel_argentina_mf_ge_u20c,"MF GE U20C"
-str_diesel_belgium_nmbs_sncb_7800,"NMBS/SNCB 7800"
-str_diesel_uk_br_66,"BR 66"
-str_diesel_uk_br_67,"BR 67"
-str_diesel_iran_rai_de43ca_prima,"RAI DE43CA 'Prima'"
-str_diesel_ukraine_uz_tep150,"UZ TEP150"
-str_diesel_china_china_railways_hxn5,"중국 철도공사 HXN5"
-str_diesel_germany_db_261_gravita_10bb,"DB 261 'Gravita 10BB'"
-str_diesel_russia_rzd_gt1,"RZD GT1"
-str_diesel_china_mtr_8000,"MTR 8000"
-str_diesel_germany_hvle_v490,"HVLE V490 'Maxima 40CC'"
-str_diesel_russia_rzd_emch_3,"RZD Emch-3"
-str_diesel_canada_cnr_9000,"CNR 9000"
-str_diesel_uk_lms_7051_diesel_shunter,"LMS 7051 Diesel Shunter"
-str_diesel_usa_rock_island_emc_ta,"Rock Island EMC TA"
-str_diesel_usa_nyc_baldwin_vo_660,"NYC Baldwin VO-660"
-str_diesel_uk_br_class_d3_7,"BR D3/7"
-str_diesel_australia_queensland_railways_dl_class,"퀸즈랜드 철도 DL"
-str_diesel_usa_prr_fm_h_10_44,"PRR FM H-10-44"
-str_diesel_algeria_sntf_baldwin_drs6_4_1000,"SNTF Baldwin DRS6-4-1000"
-str_diesel_ireland_cie_113,"CIE 113"
-str_diesel_brazil_efc_3300_baldwin_as_616,"EFC 3300 Baldwin AS-616"
-str_diesel_mexico_chp_500_fm_h_16_44,"CHP 500 FM H-16-44"
-str_diesel_australia_south_australian_railways_900,"남오스트레일리아 국철 900"
-str_diesel_sri_lanka_sri_lanka_railways_m2,"스리랑카 국유철도 M2"
-str_diesel_ireland_cie_001,"CIE 001"
-str_diesel_italy_fs_d341,"FS D.341"
-str_diesel_australia_nswgr_44,"NSWGR 44"
-str_diesel_zimbabwe_zimbabwe_railways_dh_1,"짐바브웨 국유철도 DH-1"
-str_diesel_south_korea_korail_6000_emd_sd18,"코레일 6000 EMD SD18"
-str_diesel_italy_fs_d345,"FS D.345"
-str_diesel_norway_nsb_di4,"NSB Di4"
-str_diesel_china_china_railways_df8,"중국 철도공사 DF8"
-str_diesel_australia_pacific_national_g_class,"Pacific National G"
-str_diesel_uk_br_60,"BR 60"
-str_diesel_australia_westrail_p_class,"Westrail P"
-str_diesel_saudi_arabia_saudi_railways_4000_emd_sd70acs,"사우디 국철 4000 EMD SD70ACS"
-str_diesel_ireland_ie_201,"IE 201"
-str_diesel_usa_metrolink_emd_f59ph,"Metrolink EMD F59PH"
-str_diesel_france_sncf_461000,"SNCF BB 461000"
-str_diesel_italy_act_d_200,"ACT D 200"
-str_diesel_canada_go_transit_mp40ph_3c,"GO Transit MP40PH-3C"
-str_diesel_spain_renfe_class_334,"RENFE 334"
-str_diesel_indonesia_indonesia_railways_cc300,"인도네시아 국유철도 CC300"
-str_diesel_argentina_great_southern_railway_dh501,"Great Southern Railway DH501"
-str_diesel_brazil_ee_vfflb,"EE VFFLB"
-str_diesel_chile_efe_ge_u5b,"EFE GE U5B"
-str_diesel_peru_ferrocarril_central_andino_alco_rsd_39,"Ferrocarril Central Andino Alco RSD-39"
-str_diesel_brazil_efvm_emd_ddm45,"EFVM EMD DDM45"
-str_diesel_peru_ferrocarril_central_andino_ge_c39_8,"Ferrocarril Central Andino GE C39-8"
-str_diesel_argentina_sofse_3193,"SOFSE 319.3"
-str_diesel_argentina_sofse_cnr_ckd8,"SOFSE CNR CKD8"
-str_diesel_south_africa_sar_ds,"SAR DS"
-str_diesel_algeria_sntf_040_dg,"SNTF 040 DG"
-str_diesel_tunisia_sncft_040_df,"SNCFT 040 DF"
-str_diesel_egypt_enr_te114e,"ENR TE114E"
-str_diesel_tunisia_sncft_040_dj,"SNCFT 040 DJ"
-str_diesel_morocco_oncf_df_100,"ONCF DF 100"
-str_diesel_ukraine_uz_tep10l,"UZ TEP10L"
-str_diesel_belarus_bch_2te10m,"BCh 2TE10M"
-str_diesel_poland_pkp_sp32,"PKP SP32"
-str_diesel_ukraine_uz_2te126,"UZ 2TE126"
-str_diesel_ukraine_uz_2te10ut,"UZ 2TE10Ut"
-str_diesel_serbia_zs_621,"ZS 621"
-str_diesel_italy_fs_207,"FS 207"
-str_diesel_russia_rzd_db,"RZD Db"
-str_diesel_portugal_cp_1500,"CP 1500"
-str_diesel_france_sncf_bb_67400,"SNCF BB 67400"
-str_diesel_netherlands_ns_6400,"NS 6400"
-str_diesel_egypt_enr_2400_ge_es40aci,"ENR 2400 GE ES40ACi"
-str_diesel_south_africa_sar_afro_4000,"SAR Afro 4000"
-str_diesel_spain_renfe_308,"RENFE 308"
-str_diesel_australia_pacific_national_xr_xrb,"Pacific National XR/XRB"
-str_diesel_norway_cargonet_312,"CargoNet 312"
-str_diesel_australia_pacific_national_92,"Pacific National 92"
-str_diesel_uk_br_68,"BR 68"
-str_diesel_usa_amtrak_charger,"Amtrak Charger"
-str_diesel_japan_jnr_df50,"JNR DF50"
-str_diesel_gabon_alsthom_ad30b,""
-str_diesel_ghana_railway_corporation_class_tt12,""
-str_diesel_sierra_leone_lamco_301_series,""
-str_diesel_congo_alstom_bb_bb,""
-str_diesel_zimbabwe_sorefame_de8,""
-str_diesel_ivory_coast_gmd_gt22lc2,""
-str_electric_tanzania_trc_e6800,""
-
-
-str_mtro_argentina_le_brugeoise,"부에노스아이레스 'Le Brugeoise'"
-str_mtro_usa_ny_r1,"뉴욕 R1"
-str_mtro_germany_db_et_171,"DB ET 171 / DB 471"
-str_mtro_france_paris_m2_840,"파리 M2 840"
-str_mtro_portugal_lisbon_ml7,"리스본 ML7"
-str_mtro_hungary_budapest_ev3_200,"부다페스트 Ev3-200"
-str_mtro_norway_oslo_t1000,"오슬로 T1000"
-str_mtro_canada_toronto_h_series,"토론토 H계"
-str_mtro_germany_munchen_mvg_a2,"뮌헨 MVG A2"
-str_mtro_usa_ny_r44,"뉴욕 R44"
-str_mtro_netherlands_amsterdam_type_m1,"암스테르담 M1"
-str_mtro_sweden_stockholm_c8,"스톡홀름 C8"
-str_mtro_north_korea_pyongyang_d_stock,"평양 D stock"
-str_mtro_finland_helsinki_m100,"헬싱키 M100"
-str_mtro_brazil_sao_paulo_serie_5500,"상파울루 5500계"
-str_mtro_russia_moscow_81_720,"모스크바 81-720"
-str_mtro_japan_tokyo_s01,"도쿄 S01"
-str_mtro_egypt_cairo_1987_stock,"카이로 1987 Stock"
-str_mtro_uk_dlr_p86,"DLR P86"
-str_mtro_russia_moscow_81_7175m,"모스크바 81-717.5M"
-str_mtro_usa_boston_01800,"보스턴 01800"
-str_mtro_usa_la_a650,"LA A650"
-str_mtro_taiwan_taipei_c301,"타이페이 C301"
-str_mtro_netherlands_amsterdam_caf_90,"암스테르담 CAF 90"
-str_mtro_france_paris_mp89,"파리 MP89"
-str_mtro_russia_moscow_81_740,"모스크바 81-740"
-str_mtro_singapore_singapore_c830_metropolis,"싱가포르 C830 'Metropolis'"
-str_mtro_norway_oslo_mx3000,"오슬로 MX3000"
-str_mtro_japan_osaka_30000,"오사카 30000"
-str_mtro_singapore_singapore_c151a,"싱가포르 C151A"
-str_mtro_usa_washington_7000,"워싱턴7000"
-str_mtro_greece_thessaloniki_2014,"테살로니키 2014"
-str_mtro_germany_berlin_u_bahn_a_i,"베를린 U-반 A I"
-str_mtro_usa_ny_hedley_hi_v,"뉴욕 Hedley Hi-V"
-str_mtro_japan_osaka_1000,"오사카 1000"
-str_mtro_russia_moscow_type_a,"모스크바 A형"
-str_mtro_usa_ny_r10,"뉴욕 R10"
-str_mtro_italy_rome_mr_100,"로마 MR 100"
-str_mtro_russia_moscow_type_d,"모스크바 D형"
-str_mtro_netherlands_rotterdam_mg2_type_m,"로테르담 MG2 M형"
-str_mtro_czech_republic_prague_ecs_set,"프라하 ECS Set"
-str_mtro_argentina_buenos_aires_serie_1200,"부에노스아이레스 1200계"
-str_mtro_chile_santiago_ns_93,"산티아고 NS-93"
-str_mtro_chile_santiago_as_2002,"산티아고 AS-2002"
-str_mtro_brazil_recife_vlt_mobile_3,"레시페 VLT Mobile 3"
-str_mtro_spain_madrid_series_5000,"마드리드 5000계"
-str_mtro_italy_rome_s_300,"로마 S/300"
-str_mtro_algeria_algiers_caf_2011_stock,"알제 CAF 2011 Stock"
-str_mtro_germany_berlin_u_bahn_ik,"베를린 U-반 IK"
-str_mtro_usa_chicago_l_6000,"시카고 L 6000계"
-str_mtro_uk_london_1903_stock,"런던 1903 Stock"
-str_mtro_uk_london_1938_stock,"런던 1938 Stock"
-str_mtro_metro_wagon_powered,"지하철 기본 객차"
-str_mtro_metro_wagon_unpowered,"지하철 기본 객차"
-str_mtro_usa_brooklyn_union_gate_car,""
-
-
-str_electric_uk_ner_ef1,"NER EF1"
-str_electric_japan_jnr_eb10,"JNR EB10"
-str_electric_japan_jnr_ef55,"JNR EF55"
-str_electric_netherlands_ns_1000,"NS 1000"
-str_electric_netherlands_ns_1600,"NS 1600"
-str_electric_australia_victorian_railways_e_class,"Victorian Railways E"
-str_electric_uk_ner_es1,"NER ES1"
-str_electric_usa_nyc_s_motor,"NYC S-motor"
-str_electric_japan_aichi_railroad_deki_400,"Aichi Railroad DeKi 400"
-str_electric_india_indian_railways_wcg_1,"인도 국철 WCG-1"
-str_electric_france_sncf_bb_9004,"SNCF BB 9004"
-str_electric_indonesia_ess_3200,"ESS 3200"
-str_electric_uk_br_77_metrovic,"BR 77 'Metrovic'"
-str_electric_uk_ner_ee1,"NER EE1"
-str_electric_usa_milwaukee_road_es_2,"Milwaukee Road ES-2"
-str_electric_usa_milwaukee_road_ep_2_bipolar,"밀워키 Road EP-2 Bipolar"
-str_electric_chile_efe_e_28,"EFE E-28"
-str_electric_italy_fs_e428,"FS E.428"
-str_electric_south_africa_sar_es_class,"SAR ES"
-str_electric_poland_pkp_eu06,"PKP EU06"
-str_electric_poland_pkp_et41,"PKP ET41"
-str_electric_poland_pkp_ep09,"PKP EP09"
-str_electric_slovakia_zssk_162,"ZSSK 162"
-str_electric_italy_fs_e646,"FS E.646"
-str_electric_italy_fs_e424,"FS E.424"
-str_electric_italy_fs_e444,"FS E.444"
-str_electric_italy_fs_e633,"FS E.633"
-str_electric_belgium_nmbs_class_255,"NMBS/SNCB 25.5"
-str_electric_spain_renfe_250,"RENFE 250"
-str_electric_chile_efe_e_29,"EFE E-29"
-str_electric_chile_efe_e_17,"EFE E-17"
-str_electric_morocco_oncf_e_700,"ONCF E 700"
-str_electric_india_indian_railways_wcm_1,"인도 국철 WCM-1"
-str_electric_south_africa_sar_e38,"SAR E38"
-str_electric_chile_efe_e_269,"EFE E-269"
-str_electric_czech_republic_cd_363,"CD 363"
-str_electric_norway_nsb_el7,"NSB EL7"
-str_electric_usa_pennsylvania_railroad_ff_1,"PRR FF-1"
-str_electric_austria_obb_1161,"OBB 1161"
-str_electric_germany_db_169,"DB E 69 05 / DB 169 005"
-str_electric_norway_nsb_el10,"NSB EL10"
-str_electric_germany_db_104,"DB E 04 / DB 104"
-str_electric_usa_pennsylvania_railroad_gg_1,"PRR GG-1"
-str_electric_austria_obb_1020_crocodile,"OBB 1020 'Crocodile'"
-str_electric_germany_db_1031,"DB 103.1"
-str_electric_germany_db_e_919,"DB E 91.9 / DB 191.9"
-str_electric_switzerland_bls_ce_4_4,"BLS Ce 4/4"
-str_electric_switzerland_sbb_ae_6_6,"SBB Ae 6/6"
-str_electric_switzerland_sbb_re460_lok_2000,"SBB Re460 'Lok 2000'"
-str_electric_switzerland_sbb_eem_923,"SBB Eem 923"
-str_electric_austria_obb_1044,"OBB 1044"
-str_electric_austria_obb_1063,"OBB 1063"
-str_electric_sweden_mtab_dm3,"MTAB Dm3"
-str_electric_sweden_mtab_iore,"MTAB IORE"
-str_electric_sweden_sj_o_class,"SJ O"
-str_electric_sweden_sj_f_class,"SJ F"
-str_electric_norway_nsb_el17,"NSB EL17"
-str_electric_germany_prussian_es_6,"K.P.St.E. ES 6"
-str_electric_usa_virginian_railway_el_2b,"Virginian Railway EL-2B"
-str_electric_usa_gn_w_1,"GN W-1"
-str_electric_usa_prr_b1,"PRR B1"
-str_electric_australia_aurizon_e40_ag_v1,"Aurizon E40 AG-V1"
-str_electric_china_china_railways_ss6,"중국 철도공사 SS6"
-str_electric_china_china_railways_ss3,"중국 철도공사 SS3"
-str_electric_china_china_railways_hxd3,"중국 철도공사 HXD3"
-str_electric_china_china_railways_hxd1d,"중국 철도공사 HXD1D"
-str_electric_china_china_railways_6k,"중국 철도공사 6K"
-str_electric_usa_prr_e44,"PRR E44"
-str_electric_croatia_hz_1141,"HZ 1141"
-str_electric_hungary_mav_class_v43,"MAV V43"
-str_electric_portugal_cp_2500,"CP 2500"
-str_electric_portugal_cp_2600,"CP 2600"
-str_electric_south_africa_sar_20e,"SAR 20E"
-str_electric_south_korea_korail_8200,"코레일 8200"
-str_electric_ukraine_uz_ds3,"UZ DS3"
-str_electric_czech_republic_cd_s499,"CD S499"
-str_electric_italy_fs_e491,"FS E.491"
-str_electric_macedonia_macedonian_railways_462,"마케도니아 국철 462"
-str_electric_morocco_oncfm_e_500,"ONCFM E 500"
-str_electric_uk_br_85,"BR 85"
-str_electric_mexico_fnm_ge_e60c_2,"FNM GE E60C-2"
-str_electric_morocco_oncf_e_1400_prima_ii,"ONCF E 1400 'Prima II'"
-str_electric_new_zealand_nzr_ea,"NZR EA"
-str_electric_canada_bc_rail_gf6c,"BC Rail GF6C"
-str_electric_france_sncf_bb_22200,"SNCF BB 22200"
-str_electric_france_sncf_bb_26000,"SNCF BB 26000"
-str_electric_france_sncf_bb_25500,"SNCF BB 25500"
-str_electric_germany_db_182_es64u_taurus,"DB 182 ES64U 'Taurus'"
-str_electric_japan_jr_eh500,"JR EH500"
-str_electric_usa_amtrak_emd_aem_7,"Amtrak EMD AEM-7"
-str_electric_usa_amtrak_hhp_8,"Amtrak HHP-8"
-str_electric_czech_republic_cd_380,"CD 380"
-str_electric_spain_renfe_252,"RENFE 252"
-str_electric_germany_db_185_traxx_f140,"DB 185 TRAXX F140"
-str_electric_italy_fs_e550,"FS E.550"
-str_electric_japan_jnr_ef81,"JNR EF81"
-str_electric_uk_br_92,"BR 92"
-str_electric_usa_amtrak_acs_64,"Amtrak ACS-64"
-str_electric_france_sncf_cc_40100,"SNCF CC 40100"
-str_electric_belgium_nmbs_sncb_13_hle,"NMBS/SNCB 13 HLE"
-str_electric_switzerland_rhb_de_2_2,"RhB De 2/2"
-str_electric_japan_jnr_eh10,"JNR EH10"
-str_electric_japan_jnr_ef64,"JNR EF64"
-str_electric_new_zealand_nzr_eo_class,"NZR EO"
-str_electric_australia_nswgr_71,"NSWGR 71"
-str_electric_south_africa_sar_4e,"SAR 4E"
-str_electric_south_africa_sar_5e1,"SAR 5E1"
-str_electric_south_africa_sar_6e,"SAR 6E"
-str_electric_switzerland_rhb_ge_4_4_i,"RhB Ge 4/4 I"
-str_electric_switzerland_rhb_ge_6_6_krokodil,"RhB Ge 6/6 'Krokodil'"
-str_electric_brasil_mrs_he_4_4,"MRS He 4/4"
-str_electric_south_africa_sar_7e,"SAR 7E"
-str_electric_south_africa_sar_11e,"SAR 11E"
-str_electric_new_zealand_tranzrail_ef,"TranzRail EF"
-str_electric_russia_rzd_vl15,"RZD VL15"
-str_electric_russia_rzd_vl11,"RZD VL11"
-str_electric_russia_rzd_vl22m,"RZD VL22M"
-str_electric_ukraine_uz_de1,"UZ DE1"
-str_electric_russia_rzd_chs3,"RZD ChS3"
-str_electric_ukraine_uz_chs7,"UZ ChS7"
-str_electric_brasil_rffsa_ge_c_c_4400,"RFFSA GE C-C 4400"
-str_electric_russia_rzd_vl85,"RZD VL85"
-str_electric_russia_rzd_vl41,"RZD VL41"
-str_electric_india_indian_railways_wap_4,"인도 국철 WAP-4"
-str_electric_finland_vr_sr1,"VR Sr1"
-str_electric_kazakhstan_ktz_kz4a,"KTZ KZ4A"
-str_electric_kazakhstan_ktz_kz8a,"KTZ KZ8A"
-str_electric_russia_rzd_ep20,"RZD EP20"
-str_electric_congo_type_2450_acec_charleroi_zaire_electric,""
-
-
-str_dmu_germany_db_vt_040_flying_hamburger,"DB VT 04.0 'Flying Hamburger'"
-str_dmu_australia_nswgr_silver_city_comet,"NSWGR 'Silver City Comet'"
-str_dmu_czech_republic_cd_m131,"CD M131"
-str_dmu_germany_db_vt_085,"DB VT 08.5"
-str_dmu_australia_queensland_rail_400,"퀸즈랜드 철도 400"
-str_dmu_germany_db_vt_115,"DB VT11.5 / DB 601 'TEE'"
-str_dmu_netherlands_ns_plan_u_de_iii,"NS Plan U DE-III"
-str_dmu_canada_cnr_turbo_train,"CNR 'Turbo Train'"
-str_dmu_serbia_zs_811,"ZS 811"
-str_dmu_uk_br_43_ic125,"BR 43 IC125"
-str_dmu_canada_via_rail_lrc,"VIA Rail LRC"
-str_dmu_sweden_sj_y2,"SJ Y2"
-str_dmu_spain_renfe_594_trd,"RENFE 594 TRD"
-str_dmu_uk_br_168,"BR 168"
-str_dmu_germany_db_612_regio_swinger,"DB 612 'Regio Swinger'"
-str_dmu_germany_db_642_desiro,"DB 642 'Desiro'"
-str_dmu_denmark_arriva_lint_41,"Arriva Lint 41"
-str_dmu_norway_nsb_bm_93_talent,"NSB BM 93 'Talent'"
-str_dmu_australia_transwa_prospector,"Transwa WD 'Prospector'"
-str_dmu_australia_cityrail_hunter_railcar,"TrainLink Hunter Railcar"
-str_dmu_russia_rzd_ra2,"RZD RA2"
-str_dmu_denmark_dsb_ic4,"DSB IC4"
-str_dmu_croatia_hz_7022,"HZ 7022"
-str_dmu_turkey_tcdd_mt_5500,"TCDD MT 5500"
-str_dmu_japan_jnr_kiha_181,"JNR KiHa 181"
-str_dmu_czech_republic_cd_814,"CD 814"
-str_dmu_uk_br_150_0_sprinter,"BR 150/0 'Sprinter'"
-str_dmu_iran_rai_141_pacer,"RAI 141 'Pacer'"
-str_dmu_israel_israel_railways_ic3,"이스라엘 국철 IC3"
-str_dmu_australia_transadelaide_3100,"TransAdelaide 3100"
-str_dmu_australia_nswgr_xplorer,"TrainLink Xplorer"
-str_dmu_japan_jr_kiha_189,"JR KiHa 189"
-str_dmu_sri_lanka_sri_lanka_railways_s11,"스리랑카 국유철도 S11"
-str_dmu_slovakia_zssk_861,"ZSSK 861"
-str_dmu_chile_efe_tld_500,"EFE TLD-500"
-str_dmu_cameroon_camrail_ze_500,"Camrail ZE 500"
-str_dmu_uk_br_251_blue_pullman,"BR 251 'Blue Pullman'"
-str_dmu_australia_wagr_adk_adb,"WAGR ADK/ADB"
-str_dmu_france_sncf_x_4630,"SNCF X 4630"
-str_dmu_france_sncf_t_2000,"SNCF T 2000"
-str_dmu_netherlands_ns_dh2,"NS DH2"
-str_dmu_germany_db_6282,"DB 628.2"
-str_dmu_algeria_sntf_zz_2200_autorail,"SNTF ZZ 2200 Autorail"
-str_dmu_tunisia_sncft_amt_800,"SNCFT AMT 800"
-str_dmu_ghana_ghana_railways_demu,"가나 국철 DEMU"
-str_dmu_australia_queensland_rail_diesel_tilt_train,"퀸즈랜드 Rail Diesel Tilt Train"
-str_dmu_canada_up_express_nippon_sharyo_dmu,"UP Express Nippon Sharyo DMU"
-str_dmu_argentina_fcgu_cmm_400_2,"FCGU CMM 400-2"
-str_dmu_italy_fs_aln_442_448,"FS ALn 442-448"
-str_dmu_portugal_cp_0400,"CP 0400"
-str_dmu_portugal_cp_0600,"CP 0600"
-str_dmu_spain_feve_2400_apollos,"FEVE 2400 'Apollos'"
-str_cargodmu_germany_db_691_cargosprinter,"DB 691 'CargoSprinter'"
-str_mu_mu_cargo_wagon_powered,"다중 유닛 화물차"
-str_mu_mu_cargo_wagon_unpowered,"다중 기본 화물차"
-str_mu_mu_wagon_powered,"다중 기본 객차"
-str_mu_mu_wagon_unpowered,"다중 기본 객차"
-
-
-str_emu_australia_sydney_trains_a_set_waratah,"시드니 철도 A Set 'Waratah'"
-str_emu_denmark_dsb_s_tog_ii,"DSB S-Tog II"
-str_emu_denmark_dsb_s_tog_iv,"DSB S-Tog IV"
-str_emu_italy_atac_ecd_21_30,"ATAC ECD 21-30"
-str_emu_netherlands_ns_mat24,"NS Mat'24"
-str_emu_netherlands_ns_mat36,"NS Mat'36"
-str_emu_netherlands_ns_mat54,"NS Mat'54"
-str_emu_netherlands_ns_plan_y,"NS Plan Y"
-str_emu_netherlands_ns_icm_4000,"NS ICM 4000"
-str_emu_netherlands_ns_dd_irm_virm,"NS DD-IRM 'VIRM'"
-str_emu_netherlands_ns_mddm_390,"NS mDDm 390"
-str_emu_poland_pkp_ew90,"PKP EW90"
-str_emu_italy_fs_etr200,"FS ETR.200"
-str_emu_italy_fs_etr300_settebello,"FS ETR.300 'Settebello'"
-str_emu_italy_fs_etr500,"FS ETR.500 'Frecciarossa'"
-str_emu_italy_fs_ale426,"FS ALe 426"
-str_emu_morocco_oncf_zmc,"ONCF ZMC"
-str_emu_poland_pkp_ew54,"PKP EW54"
-str_emu_italy_fs_ale_801,"FS ALe 801"
-str_emu_austria_obb_4030,"OBB 4030"
-str_emu_austria_obb_4041,"OBB 4041"
-str_emu_austria_westbahn_4010_kiss,"WESTbahn 4010 'KISS'"
-str_emu_germany_db_et420,"DB 420"
-str_emu_norway_nsb_bm73,"NSB BM73"
-str_emu_norway_nsb_bm65,"NSB BM65"
-str_emu_sweden_sj_x2000,"SJ X2000"
-str_emu_switzerland_sbb_rabde_510,"SBB RABDe 510"
-str_emu_switzerland_sbb_rbde_560,"SBB RBDe 560"
-str_emu_switzerland_sbb_rabe_523_flirt,"SBB RABe 523 'Flirt'"
-str_emu_usa_amtrak_budd_metroliner,"Amtrak Budd Metroliner"
-str_emu_germany_db_403_ice_3,"DB 403 'ICE3'"
-str_emu_bulgaria_bdz_10_desiro,"BDZ 10 'Desiro'"
-str_emu_finland_vr_sm2,"VR Sm2"
-str_emu_finland_vr_sm4,"VR Sm4"
-str_emu_hungary_mav_bdvmot,"MAV BDVmot"
-str_emu_europe_sureot,"Sureot"
-str_emu_japan_jnr_shinkansen_series_0,"JNR 신칸센 0계"
-str_emu_japan_jr_shinkansen_series_700,"JR 신칸센 700계"
-str_emu_japan_jr_shinkansen_series_e1_max,"JR 신칸센 E1계 Max"
-str_emu_luxembourg_cfl_2200_coradia_duplex,"CFL 2200 'Coradia Duplex'"
-str_emu_macedonia_macedonian_railways_412,"마케도니아 국철 412"
-str_emu_romania_cfr_58,"CFR 58"
-str_emu_south_africa_gautrain_electrostar,"Gautrain 일렉트로스타"
-str_emu_turkey_tcdd_e8000,"TCDD E8000"
-str_emu_china_railways_chr380a,"중국 철도공사 CHR380A"
-str_emu_italy_ntv_agv,"NTV AGV"
-str_emu_italy_ntv_agv_duplex,"NTV AGV Duplex"
-str_emu_netherlands_ns_hispeed_v250_albatros,"NS Hispeed V250 'Albatros'"
-str_emu_netherlands_ns_4800_hsa,"NS 4800 HSA"
-str_emu_switzerland_sbb_rae_tee_ii,"SBB Rae TEE II"
-str_emu_usa_erie_lackawanna_mu_cars,"Erie Lackawanna MU Cars"
-str_emu_france_sncf_tgv_sud_est,"SNCF TGV Sud-Est"
-str_emu_france_sncf_tgv_duplex,"SNCF TGV Duplex"
-str_emu_france_thalys_pbka,"Thalys PBKA"
-str_emu_czech_republic_cd_680_pendolino,"CD 680 'Pendolino'"
-str_emu_spain_renfe_120,"RENFE 120"
-str_emu_usa_amtrak_acela_express,"Amtrak Acela Express"
-str_emu_japan_odakyu_3100_series_romance,"오다큐 3100계 '로망스'"
-str_emu_japan_odakyu_10000_series_romance,"오다큐 10000계 '로망스'"
-str_emu_australia_sydney_trains_s_set,"시드니 철도 S-set"
-str_emu_australia_sydney_trains_oscars,"시드니 철도 OSCars"
-str_emu_australia_victorian_railways_swing_door,"Victorian Railways 'Swing Door'"
-str_emu_new_zealand_nzr_em_et_class,"NZR EM/ET"
-str_emu_south_africa_sar_5m2,"SAR 5M2"
-str_emu_chile_efe_xtrapolis_100,"EFE X'Trapolis 100"
-str_emu_chile_efe_aes_railcar,"EFE AES Railcar"
-str_emu_tunisia_sncft_yz_e,"SNCFT YZ-E"
-str_emu_australia_queensland_rail_tilt_train,"퀸즈랜드 Rail Tilt Train"
-str_emu_russia_rzd_er200,"RZD ER200"
-str_emu_russia_rzd_s,"RZD S"
-str_emu_croatia_hz_6112,"HZ 6112"
-str_emu_russia_rzd_es1_lastochka,"RZD ES1 'Lastochka'"
-str_cargoemu_japan_jr_freight_m250,""
-
-
-str_singlemtro_usa_brooklyn_union_gate_car,"Brooklyn Union Gate Car"
-str_singlemtro_hungary_budapest_1894_stock,"부다페스트 1894 Stock"
-str_singlemtro_usa_chicago_l_northwest_elevated_1907_stock,"시카고 L 북서 고가 1907 Stock"
-str_singlemtro_germany_berlin_u_bahn_c_ii,"베를린 U-반 C II"
-
-
-str_rbm_world_turbobus,"Turbobus"
-
-
-str_mglv_germany_db_182_es64um_mutus,""
-
-
-str_mglv_wagon_gen7m_boxcar_type1,""
-str_mglv_wagon_gen7m_boxcar_type2,""
-str_mglv_wagon_gen7m_car_transporter,""
-str_mglv_wagon_gen7m_centerbeam,""
-str_mglv_wagon_gen7m_container_carrier,""
-str_mglv_wagon_gen7m_container_doublestack,""
-str_mglv_wagon_gen7m_flatcar,""
-str_mglv_wagon_gen7m_gondola,""
-str_mglv_wagon_gen7m_heavy_flatcar,""
-str_mglv_wagon_gen7m_hopper_type1,""
-str_mglv_wagon_gen7m_hopper_type2,""
-str_mglv_wagon_gen7m_silo_type1,""
-str_mglv_wagon_gen7m_silo_type2,""
-str_mglv_wagon_gen7m_superheavy_flatcar,""
-str_mglv_wagon_gen7m_tanker,""
-str_mu_wagon_gen1_flat_wagon,"1세대 평판화차"
-str_mu_wagon_gen1_boxcar,"1세대 목제 유개화차"
-str_mu_wagon_gen1_tanker,"1세대 유조차"
-str_mu_wagon_gen1_open_wagon,"1세대 목제 무개화차"
-str_mu_wagon_gen2_flat_wagon,"2세대 평판화차"
-str_mu_wagon_gen2_boxcar_type1,"2세대 나무 유개화차"
-str_mu_wagon_gen2_boxcar_type2,"2세대 나무 유개화차"
-str_mu_wagon_gen2_tanker,"2세대 유조차"
-str_mu_wagon_gen2_open_wagon,"2세대 목재 무개화차"
-str_mu_wagon_gen2_silo,"2세대 곡물화차"
-str_mu_wagon_gen2_hopper,"2세대 목재 호퍼차"
-str_mu_wagon_gen3_flat_wagon,"3세대 평판화차"
-str_mu_wagon_gen3_boxcar_type1,"3세대 나무 유개화차"
-str_mu_wagon_gen3_boxcar_type2,"3세대 나무 유개화차"
-str_mu_wagon_gen3_tanker,"3세대 유조차"
-str_mu_wagon_gen3_open_wagon,"3세대 무개화차"
-str_mu_wagon_gen3_silo_type1,"3세대 사일로 화차"
-str_mu_wagon_gen3_silo_type2,"3세대 사일로 화차"
-str_mu_wagon_gen3_hopper,"3세대 호퍼차"
-str_mu_wagon_gen4_flatcar,"4세대 평판화차"
-str_mu_wagon_gen4_heavy_flatcar,"4세대 중량 평판화차"
-str_mu_wagon_gen4_boxcar_type1,"4세대 유개화차"
-str_mu_wagon_gen4_boxcar_type2,"4세대 유개화차"
-str_mu_wagon_gen4_tanker,"4세대 유조차"
-str_mu_wagon_gen4_gondola,"4세대 곤돌라"
-str_mu_wagon_gen4_silo_type1,"4세대 사일로 화차"
-str_mu_wagon_gen4_silo_type2,"4세대 사일로 화차"
-str_mu_wagon_gen4_hopper_type1,"4세대 자동 적하 호퍼차"
-str_mu_wagon_gen4_hopper_type2,"4세대 자동 적하 호퍼차"
-str_mu_wagon_gen4_car_transporter,"4세대 자동차 수송차량"
-str_mu_wagon_gen4_container_carrier,"4세대 컨테이너 화차"
-str_mu_wagon_gen4_centerbeam,"4세대 구획평판화차"
-str_mu_wagon_gen5_flatcar,"5세대 평판화차"
-str_mu_wagon_gen5_heavy_flatcar,"5세대 중량 평판화차"
-str_mu_wagon_gen5_boxcar_type1,"5세대 유개화차"
-str_mu_wagon_gen5_boxcar_type2,"5세대 유개화차"
-str_mu_wagon_gen5_tanker,"5세대 유조차"
-str_mu_wagon_gen5_gondola,"5세대 무개화차"
-str_mu_wagon_gen5_silo_type1,"5세대 사일로 화차"
-str_mu_wagon_gen5_silo_type2,"5세대 사일로 화차"
-str_mu_wagon_gen5_hopper_type1,"5세대 자동 적하 호퍼차"
-str_mu_wagon_gen5_hopper_type2,"5세대 자동 적하 호퍼차"
-str_mu_wagon_gen5_car_transporter,"5세대 차량수송화차"
-str_mu_wagon_gen5_container_carrier,"5세대 컨테이너 화차"
-str_mu_wagon_gen5_centerbeam,"5세대 구획평판화차"
-str_mu_wagon_gen5_container_doublestack,"5세대 컨테이너 복화차"
-str_mu_wagon_gen5_superheavy_flatcar,"5세대 초중량 평판화차"
-str_mu_wagon_gen6_flatcar,""
-str_mu_wagon_gen6_heavy_flatcar,""
-str_mu_wagon_gen6_boxcar_type1,""
-str_mu_wagon_gen6_boxcar_type2,""
-str_mu_wagon_gen6_tanker,""
-str_mu_wagon_gen6_gondola,""
-str_mu_wagon_gen6_silo_type1,""
-str_mu_wagon_gen6_silo_type2,""
-str_mu_wagon_gen6_hopper_type1,""
-str_mu_wagon_gen6_hopper_type2,""
-str_mu_wagon_gen6_car_transporter,""
-str_mu_wagon_gen6_container_carrier,""
-str_mu_wagon_gen6_centerbeam,""
-str_mu_wagon_gen6_container_doublestack,""
-str_mu_wagon_gen6_superheavy_flatcar,""
-str_mu_wagon_service_car_type1,"업무차"
-str_mu_wagon_service_car_type2,"업무차"
-
-
-str_mu_coach_gen1_wooden_2_axle_compartment_coach,"목제 2차축 객차"
-str_mu_coach_gen1_wooden_2_axle_regional_coach,"목제 2차축 지역간 객차"
-str_mu_coach_gen1_wooden_2_axle_mail_coach,"목제 2차축 우편차"
-str_mu_coach_gen1_clerestory_compartment_coach,"통풍 컴파트먼트 객차"
-str_mu_coach_gen1_clerestory_regional_coach,"채광창이 있는 지역간 객차"
-str_mu_coach_gen1_clerestory_mail_coach,"고측창 우편차"
-str_mu_coach_gen1_wooden_3_axle_compartment_coach,"목재 3차축 객차"
-str_mu_coach_gen1_wooden_3_axle_regional_coach,"목제 3차축 지역간 객차"
-str_mu_coach_gen1_wooden_3_axle_mail_coach,"목재 3차축 우편차"
-str_mu_coach_gen2_heavyweight_intercity_coach,"중량 도시간 객차"
-str_mu_coach_gen2_heavyweight_mail_coach,"중량 우편차"
-str_mu_coach_gen2_steel_intercity_coach,"철제 도시간 객차"
-str_mu_coach_gen2_steel_compartment_coach,"철제 컴파트먼트 객차"
-str_mu_coach_gen2_steel_regional_coach,"철제 지역간 객차"
-str_mu_coach_gen2_steel_mail_coach,"철제 우편차"
-str_mu_coach_gen2_steel_2_axle_compartment_coach,"철제 2차축 객차"
-str_mu_coach_gen2_steel_2_axle_regional_coach,"철제 2차축 지역간 객차"
-str_mu_coach_gen2_steel_2_axle_mail_coach,"철제 2차축 우편차"
-str_mu_coach_gen2_steel_3_axle_compartment_coach,"철제 3차축 객차"
-str_mu_coach_gen2_steel_3_axle_regional_coach,"철제 3차축 지역간 객차"
-str_mu_coach_gen2_steel_3_axle_mail_coach,"철제 3차축 우편차"
-str_mu_coach_gen3_steel_lightweight_intercity_coach,"철제 경량 도시간 객차"
-str_mu_coach_gen3_steel_lightweight_regional_coach,"철제 경량 지역간 객차"
-str_mu_coach_gen3_steel_lightweight_mail_coach,"철제 경량 우편차"
-str_mu_coach_gen3_aluminium_lightweight_intercity_coach,"알루미늄제 경량 도시간 객차"
-str_mu_coach_gen3_aluminium_lightweight_regional_coach,"알루미늄제 경량화 객차"
-str_mu_coach_gen3_aluminium_lightweight_mail_coach,"알루미늄제 경량화 우편차"
-str_mu_coach_gen3_gallery_car,"전망칸"
-str_mu_coach_gen3_mk1_intercity_coach,"Mk1 도시간 객차"
-str_mu_coach_gen3_mk1_regional_coach,"Mk1 지역간 객차"
-str_mu_coach_gen3_mk1_mail_coach,"Mk1 우편차"
-str_mu_coach_gen3_uic_x_intercity_coach,"UIC-X 도시간 객차"
-str_mu_coach_gen3_tee_intercity_coach,"TEE 도시간 객차"
-str_mu_coach_gen3_uic_x_regional_coach,"UIC-X 지역간 객차"
-str_mu_coach_gen3_umbauwagen_local_coach,"'움바우바겐' 지역 객차"
-str_mu_coach_gen3_doppelstockwagen_local_coach,"2층객차"
-str_mu_coach_gen3_uic_x_mail_coach,"UIC-X 우편차"
-str_mu_coach_gen3_indian_intercity_coach,"인도 도시간 객차"
-str_mu_coach_gen3_indian_local_coach,"인도 지역 객차"
-str_mu_coach_gen3_indian_regional_coach,"인도 지역간 객차"
-str_mu_coach_gen3_indian_mail_coach,"인도 우편차"
-str_mu_coach_gen4_eurofima_intercity_coach,"유럽 표준 객차"
-str_mu_coach_gen4_interregio_coach,"Regio간 객차"
-str_mu_coach_gen4_silberling_commuter_coach,"'실버링' 통근 객차"
-str_mu_coach_gen4_eurofima_mail_coach,"유럽 표준 우편차"
-str_mu_coach_gen4_double_decker_coach,"2층 객차"
-str_mu_coach_gen4_russian_intercity_coach,"러시아 도시간 객차"
-str_mu_coach_gen4_russian_regional_coach,"러시아 지역간 객차"
-str_mu_coach_gen4_russian_mail_coach,"러시아 우편차"
-str_mu_coach_gen4_superliner_coach,"수퍼라이너 객차"
-str_mu_coach_gen4_superliner_california,"수퍼라이너 캘리포니아"
-str_mu_coach_gen4_amfleet_regional_coach,"암플리트 지역간 객차"
-str_mu_coach_gen4_amfleet_intercity_coach,"암플릿트 도시간 객차"
-str_mu_coach_gen4_comet_commuter_coach,"코멧 통근 객차"
-str_mu_coach_gen4_horizon_regional_coach,"호라이즌 지역간 객차"
-str_mu_coach_gen4_horizon_baggage_coach,"호라이즌 수화물 객차"
-str_mu_coach_gen4_bombardier_bi_level,"2단식 설상차"
-str_mu_coach_gen5_high_speed_coach,"고속형 객차"
-str_mu_coach_gen5_modern_regional_coach,"현대식 지역간 객차"
-str_mu_coach_gen5_modern_commuter_coach,"현대식 통근 객차"
-str_mu_coach_gen5_modern_double_decker_coach,"현대식 2층객차"
-str_mu_coach_gen5_high_speed_double_decker_ic2000,"고속형 복층객차"
-str_mu_coach_gen5_high_speed_mail_coach,"고속형 우편차"
-str_mu_coach_gen5_talgo_pendular,"탈고 펜듈러"
-str_mu_coach_gen5_talgo_pendular_mail,"Talgo Pendular 우편화차"
-str_mu_coach_gen6_grand_voyager_coach,"대형 여객차"
-str_mu_coach_gen6_grand_regio_coach,"대형 Regio 객차"
-str_mu_coach_gen6_metropolis_coach,"Metropolis Coach"
-str_mu_coach_gen6_speedmail_coach,"특급우편 수송차"
-str_mu_coach_gen6_super_regio_coach,"중형 Regio 객차"
-str_mu_coach_gen6_super_voyager_coach,"중형 여객차"
+﻿##grflangid 0x3a,
+##plural 11,
+##gender m f,
+,
+,
+STR_GRF_NAME,{TITLE}
+STR_GRF_DESCRIPTION,
+STR_GRF_URL,https://github.com/nemethviktor/2ccts_revival
+,
+,
+STR_USED_WITH_DYNAMIC_ENGINES,
+STR_ERROR_REGION,
+,
+,
+STR_PARAM_PURCHASE_COST,구입 가격 배수
+STR_PARAM_PURCHASE_COST_DESC,이 NewGRF에 포함된 차량의 구입 비용을 증가시키거나 감소시키려면 이 설정을 변경하십시오. 이 설정은 기본 차량과 비교했을 때 차량의 구입 비용을 지나치게 불균형하게 만들 수 있음을 염두에 두십시오.
+STR_PARAM_RUNNING_COST,유지비 조정 배수
+STR_PARAM_RUNNING_COST_DESC,이 NewGRF에 포함된 차량의 유지 비용을 증가시키거나 감소시키려면 이 설정을 변경하십시오.
+,
+STR_WORD_NORMAL,기본
+,
+STR_SUFFIX_STEAMENGINE,
+STR_SUFFIX_DIESELENGINE,
+STR_SUFFIX_ELECTRICENGINE,
+STR_SUFFIX_MAGLEVSU,
+,
+STR_SUFFIX_STEAMRAILBUS,
+STR_SUFFIX_DIESELRAILBUS,
+STR_SUFFIX_ELECTRICRAILBUS,
+STR_SUFFIX_METRORAILBUS,
+STR_SUFFIX_MAGLEVRAILBUS,
+,
+STR_SUFFIX_DMU,
+STR_SUFFIX_EMU,
+STR_SUFFIX_MAGLEVMU,
+STR_SUFFIX_COACH,
+STR_SUFFIX_WAGON,
+STR_SUFFIX_METRO,
+,
+STR_SUFFIX_UNPOWERED,동력 없음
+STR_SUFFIX_POWERED,동력 있음
+,
+STR_SUFFIX_STEAM,
+STR_SUFFIX_DIESEL,
+STR_SUFFIX_ELECTRIC,
+STR_SUFFIX_MAGLEV,
+STR_SUFFIX_GAS_TURBINE,
+,
+STR_SUFFIX_1500V,
+STR_SUFFIX_3KV,
+STR_SUFFIX_15KV,
+STR_SUFFIX_25KV,
+STR_SUFFIX_OHLE,
+STR_SUFFIX_3RD,
+STR_SUFFIX_4TH,
+STR_SUFFIX_DUAL,
+,
+,
+STR_UNIT_WAGON_PASSENGER,이 화물차를 사용해서 한 대의 열차를 구성하려면 정해진 길이만큼 객차를 연결해서 사용해야만 합니다.
+STR_UNIT_WAGON_CARGO,이 화물차를 사용해서 한 대의 열차를 구성하려면 정해진 길이만큼 화물차를 연결해서 사용해야만 합니다.
+,
+STR_CANNOT_ATTACH_WAGON_TO_MU,동력 분산식 기관차에 일반 화물차를 연결할 수 없습니다
+STR_CANNOT_ATTACH_WAGON_TO_UNIT_WAGON,일반 화물차를 조성용 화물차에 연결할 수 없습니다
+STR_CANNOT_ATTACH_UNIT_WAGON_TO_ENGINE,조성용 화물차를 일반 기관차에 연결할 수 없습니다
+STR_CANNOT_ATTACH_UNIT_WAGON_TO_WAGON,조성용 화물차를 일반 화물차에 연결할 수 없습니다
+STR_CANNOT_ATTACH_UNIT_WAGON_CARGO_TO_PASSENGER,화물차를 객차에 연결할 수 없습니다
+STR_CANNOT_ATTACH_UNIT_WAGON_PASSENGER_TO_CARGO,조성용 객차를 화물용 동력 분산식 기관차에 연결할 수 없습니다
+,
+STR_PARAM_CONCEPT,콘셉트 차량
+STR_PARAM_CONCEPT_DESC,콘셉트 차량을 사용합니다.
+STR_PARAM_REGION_AFRICA,아프리카
+STR_PARAM_REGION_AFRICA_DESC,아프리카 차량을 사용합니다.
+STR_PARAM_REGION_NORTH_AMERICA,북아메리카
+STR_PARAM_REGION_NORTH_AMERICA_DESC,북아메리카 차량을 사용합니다.
+STR_PARAM_REGION_SOUTH_AMERICA,남아메리카
+STR_PARAM_REGION_SOUTH_AMERICA_DESC,남아메리카 차량을 사용합니다.
+STR_PARAM_REGION_ASIA,아시아
+STR_PARAM_REGION_ASIA_DESC,아시아 차량을 사용합니다.
+STR_PARAM_REGION_NORTHERN_EUROPE,북유럽
+STR_PARAM_REGION_NORTHERN_EUROPE_DESC,북유럽 차량을 사용합니다.
+STR_PARAM_REGION_EASTERN_EUROPE,동유럽
+STR_PARAM_REGION_EASTERN_EUROPE_DESC,동유럽 차량을 사용합니다.
+STR_PARAM_REGION_SOUTHERN_EUROPE,남유럽
+STR_PARAM_REGION_SOUTHERN_EUROPE_DESC,남유럽 차량을 사용합니다.
+STR_PARAM_REGION_WESTERN_EUROPE,서유럽
+STR_PARAM_REGION_WESTERN_EUROPE_DESC,서유럽 차량을 사용합니다.
+STR_PARAM_REGION_OCEANIA,오세아니아
+STR_PARAM_REGION_OCEANIA_DESC,오세아니아 차량을 사용합니다.
+,
+,
+STR_PARAM_LOADINGSPEED,적재 속도
+STR_PARAM_LOADINGSPEED_DESC,이 세트의 적재 속도를 설정합니다.
+STR_PARAM_LOADINGSPEED_SLOW,느리게
+STR_PARAM_LOADINGSPEED_NORMAL,보통 (기본)
+STR_PARAM_LOADINGSPEED_FAST,빠름
+STR_PARAM_LOADINGSPEED_ULTRA,가능한 한 빠르게
+,
+STR_CLASS_FLAG,
+STR_CLASS_ROLE,
+STR_CLASS_OPERATOR,
+STR_CLASS_PROPULSION,
+STR_CLASS_LIVERY,
+STR_CLASS_REGION,
+STR_CLASS_ZONE,
+,
+,
+STR_ROLE_PASSENGER,
+STR_ROLE_FREIGHT,
+STR_ROLE_MIXED,
+STR_ROLE_EXPRESS_PASSENGER,
+STR_ROLE_EXPRESS_FREIGHT,
+STR_ROLE_HEAVY_FREIGHT,
+STR_ROLE_LIGHT_FREIGHT,
+STR_ROLE_MAIL,
+STR_ROLE_RESTAURANT_CAR,
+STR_ROLE_SHUNTING,
+STR_ROLE_BANKING,
+STR_ROLE_SNOWPLOUGH,
+STR_ROLE_UTILITY,
+STR_ROLE_PROTOTYPE,
+,
+STR_REGION,
+STR_REGION_AMERICA,
+STR_REGION_AMERICA_NORTHERN,
+STR_REGION_AMERICA_CENTRAL,
+STR_REGION_AMERICA_SOUTH,
+STR_REGION_AMERICA_CARIBBEAN,
+STR_REGION_EUROPE,
+STR_REGION_EUROPE_NORTHERN,
+STR_REGION_EUROPE_WESTERN,
+STR_REGION_EUROPE_SOUTHERN,
+STR_REGION_EUROPE_EASTERN,
+STR_REGION_AFRICA,
+STR_REGION_AFRICA_NORTHERN,
+STR_REGION_AFRICA_WESTERN,
+STR_REGION_AFRICA_MIDDLE,
+STR_REGION_AFRICA_EASTERN,
+STR_REGION_AFRICA_SOUTHERN,
+STR_REGION_ASIA,
+STR_REGION_ASIA_WESTERN,
+STR_REGION_ASIA_CENTRAL,
+STR_REGION_ASIA_EASTERN,
+STR_REGION_ASIA_SOUTHERN,
+STR_REGION_ASIA_SOUTHEASTERN,
+STR_REGION_OCEANIA,
+STR_REGION_OCEANIA_MICRONESIA,
+STR_REGION_OCEANIA_MELANESIA,
+STR_REGION_OCEANIA_POLYNESIA,
+STR_REGION_OCEANIA_AUSTRALIA_AND_NEW_ZEALAND,
+,
+,
+STR_ZONE_RESIDENTIAL,
+STR_ZONE_RESIDENTIAL_LOW_DENSITY,
+STR_ZONE_RESIDENTIAL_MEDIUM_DENSITY,
+STR_ZONE_RESIDENTIAL_HIGH_DENSITY,
+STR_ZONE_COMMERCIAL,
+STR_ZONE_COMMERCIAL_LOW_DENSITY,
+STR_ZONE_COMMERCIAL_MEDIUM_DENSITY,
+STR_ZONE_COMMERCIAL_HIGH_DENSITY,
+STR_ZONE_INDUSTRIAL,
+STR_ZONE_INDUSTRIAL_LOW_DENSITY,
+STR_ZONE_INDUSTRIAL_MEDIUM_DENSITY,
+STR_ZONE_INDUSTRIAL_HIGH_DENSITY,
+STR_ZONE_MIXED,
+STR_ZONE_MIXED_LOW_DENSITY,
+STR_ZONE_MIXED_MEDIUM_DENSITY,
+STR_ZONE_MIXED_HIGH_DENSITY,
+STR_ZONE_AGRICULTURAL,
+STR_ZONE_FORESTRY,
+STR_ZONE_PUBLIC,
+STR_ZONE_TRANSPORT,
+STR_ZONE_GENERAL,
+STR_ZONE_LEISURE,
+STR_ZONE_OTHER,
+,
+,
+STR_FLAG,
+STR_FLAG_AD,
+STR_FLAG_AE,
+STR_FLAG_AF,
+STR_FLAG_AG,
+STR_FLAG_AI,
+STR_FLAG_AL,
+STR_FLAG_AM,
+STR_FLAG_AO,
+STR_FLAG_AQ,
+STR_FLAG_AR,
+STR_FLAG_AS,
+STR_FLAG_AT,
+STR_FLAG_AU,
+STR_FLAG_AW,
+STR_FLAG_AX,
+STR_FLAG_AZ,
+STR_FLAG_BA,
+STR_FLAG_BB,
+STR_FLAG_BD,
+STR_FLAG_BE,
+STR_FLAG_BF,
+STR_FLAG_BG,
+STR_FLAG_BH,
+STR_FLAG_BI,
+STR_FLAG_BJ,
+STR_FLAG_BL,
+STR_FLAG_BM,
+STR_FLAG_BN,
+STR_FLAG_BO,
+STR_FLAG_BQ,
+STR_FLAG_BR,
+STR_FLAG_BS,
+STR_FLAG_BT,
+STR_FLAG_BV,
+STR_FLAG_BW,
+STR_FLAG_BY,
+STR_FLAG_BZ,
+STR_FLAG_CA,
+STR_FLAG_CC,
+STR_FLAG_CD,
+,
+STR_FLAG_CF,
+STR_FLAG_CG,
+STR_FLAG_CH,
+STR_FLAG_CI,
+STR_FLAG_CK,
+STR_FLAG_CL,
+STR_FLAG_CM,
+STR_FLAG_CN,
+STR_FLAG_CO,
+STR_FLAG_CR,
+STR_FLAG_CU,
+STR_FLAG_CV,
+STR_FLAG_CW,
+STR_FLAG_CX,
+STR_FLAG_CY,
+STR_FLAG_CZ,
+STR_FLAG_DE,
+STR_FLAG_DJ,
+STR_FLAG_DK,
+STR_FLAG_DM,
+STR_FLAG_DO,
+STR_FLAG_DZ,
+STR_FLAG_EC,
+STR_FLAG_EE,
+STR_FLAG_EG,
+STR_FLAG_EH,
+STR_FLAG_ER,
+STR_FLAG_ES,
+STR_FLAG_ET,
+STR_FLAG_EU,
+STR_FLAG_FI,
+STR_FLAG_FJ,
+STR_FLAG_FK,
+STR_FLAG_FM,
+STR_FLAG_FO,
+STR_FLAG_FR,
+STR_FLAG_GA,
+STR_FLAG_GB,
+STR_FLAG_GD,
+STR_FLAG_GE,
+STR_FLAG_GF,
+STR_FLAG_GG,
+STR_FLAG_GH,
+STR_FLAG_GI,
+STR_FLAG_GL,
+STR_FLAG_GM,
+STR_FLAG_GN,
+STR_FLAG_GP,
+STR_FLAG_GQ,
+STR_FLAG_GR,
+STR_FLAG_GS,
+STR_FLAG_GT,
+STR_FLAG_GU,
+STR_FLAG_GW,
+STR_FLAG_GY,
+STR_FLAG_HK,
+STR_FLAG_HM,
+STR_FLAG_HN,
+STR_FLAG_HR,
+STR_FLAG_HT,
+STR_FLAG_HU,
+STR_FLAG_ID,
+STR_FLAG_IE,
+STR_FLAG_IL,
+STR_FLAG_IM,
+STR_FLAG_IN,
+STR_FLAG_IO,
+STR_FLAG_IQ,
+STR_FLAG_IR,
+STR_FLAG_IS,
+STR_FLAG_IT,
+STR_FLAG_JE,
+STR_FLAG_JM,
+STR_FLAG_JO,
+STR_FLAG_JP,
+STR_FLAG_KE,
+STR_FLAG_KG,
+STR_FLAG_KH,
+STR_FLAG_KI,
+STR_FLAG_KM,
+STR_FLAG_KN,
+STR_FLAG_KP,
+STR_FLAG_KR,
+STR_FLAG_KW,
+STR_FLAG_KY,
+STR_FLAG_KZ,
+STR_FLAG_LA,
+STR_FLAG_LB,
+STR_FLAG_LC,
+STR_FLAG_LI,
+STR_FLAG_LK,
+STR_FLAG_LR,
+STR_FLAG_LS,
+STR_FLAG_LT,
+STR_FLAG_LU,
+STR_FLAG_LV,
+STR_FLAG_LY,
+STR_FLAG_MA,
+STR_FLAG_MC,
+STR_FLAG_MD,
+STR_FLAG_ME,
+STR_FLAG_MF,
+STR_FLAG_MG,
+STR_FLAG_MH,
+STR_FLAG_MK,
+STR_FLAG_ML,
+STR_FLAG_MM,
+STR_FLAG_MN,
+STR_FLAG_MO,
+STR_FLAG_MP,
+STR_FLAG_MQ,
+STR_FLAG_MR,
+STR_FLAG_MS,
+STR_FLAG_MT,
+STR_FLAG_MU,
+STR_FLAG_MV,
+STR_FLAG_MW,
+STR_FLAG_MX,
+STR_FLAG_MY,
+STR_FLAG_MZ,
+STR_FLAG_NA,
+STR_FLAG_NC,
+STR_FLAG_NE,
+STR_FLAG_NF,
+STR_FLAG_NG,
+STR_FLAG_NI,
+STR_FLAG_NL,
+STR_FLAG_NO,
+STR_FLAG_NP,
+STR_FLAG_NR,
+STR_FLAG_NU,
+STR_FLAG_NZ,
+STR_FLAG_OM,
+STR_FLAG_PA,
+STR_FLAG_PE,
+STR_FLAG_PF,
+STR_FLAG_PG,
+STR_FLAG_PH,
+STR_FLAG_PK,
+STR_FLAG_PL,
+STR_FLAG_PM,
+STR_FLAG_PN,
+STR_FLAG_PR,
+STR_FLAG_PS,
+STR_FLAG_PT,
+STR_FLAG_PW,
+STR_FLAG_PY,
+STR_FLAG_QA,
+STR_FLAG_RE,
+STR_FLAG_RO,
+STR_FLAG_RS,
+STR_FLAG_RU,
+STR_FLAG_RW,
+STR_FLAG_SA,
+STR_FLAG_SB,
+STR_FLAG_SC,
+STR_FLAG_SD,
+STR_FLAG_SE,
+STR_FLAG_SG,
+STR_FLAG_SH,
+STR_FLAG_SI,
+STR_FLAG_SJ,
+STR_FLAG_SK,
+STR_FLAG_SL,
+STR_FLAG_SM,
+STR_FLAG_SN,
+STR_FLAG_SO,
+STR_FLAG_SR,
+STR_FLAG_SS,
+STR_FLAG_ST,
+STR_FLAG_SV,
+STR_FLAG_SX,
+STR_FLAG_SY,
+STR_FLAG_SZ,
+STR_FLAG_TC,
+STR_FLAG_TD,
+STR_FLAG_TF,
+STR_FLAG_TG,
+STR_FLAG_TH,
+STR_FLAG_TJ,
+STR_FLAG_TK,
+STR_FLAG_TL,
+STR_FLAG_TM,
+STR_FLAG_TN,
+STR_FLAG_TO,
+STR_FLAG_TR,
+STR_FLAG_TT,
+STR_FLAG_TV,
+STR_FLAG_TW,
+STR_FLAG_TZ,
+STR_FLAG_UA,
+STR_FLAG_UG,
+STR_FLAG_UM,
+STR_FLAG_US,
+STR_FLAG_UY,
+STR_FLAG_UZ,
+STR_FLAG_VA,
+STR_FLAG_VC,
+STR_FLAG_VE,
+STR_FLAG_VG,
+STR_FLAG_VI,
+STR_FLAG_VN,
+STR_FLAG_VU,
+STR_FLAG_WF,
+STR_FLAG_WS,
+STR_FLAG_YE,
+STR_FLAG_YT,
+STR_FLAG_ZA,
+STR_FLAG_ZM,
+STR_FLAG_ZW,
+STR_FLAG_YU,
+STR_FLAG_GDR,
+STR_FLAG_SU,
+STR_FLAG_EUROPE,
+STR_FLAG_WRLD,
+STR_POWER,
+STR_POWER_STEAM,
+STR_POWER_DIESEL,
+STR_POWER_DIESEL_ELECTRIC,
+STR_POWER_DIESEL_HYDRAULIC,
+STR_POWER_ELECTRIC,
+STR_POWER_ELECTRIC_AC,
+STR_POWER_ELECTRIC_AC_15,
+STR_POWER_ELECTRIC_AC_25,
+STR_POWER_ELECTRIC_DC,
+STR_POWER_ELECTRIC_DC_600,
+STR_POWER_ELECTRIC_DC_750,
+STR_POWER_ELECTRIC_DC_1200,
+STR_POWER_ELECTRIC_DC_1500,
+STR_POWER_ELECTRIC_DC_3000,
+STR_POWER_TURBINE,
+STR_POWER_BATTERY,
+STR_POWER_MAGLEV,
+STR_POWER_METRO,
+STR_LIVERY_COMPANY_2CC,
+STR_LIVERY_COMPANY_RANDOM_1CC,
+STR_LIVERY_COMPANY_RANDOM_2CC,
+,
+,
+str_mglv_maglev_wagon_powered,자기부상 기본 객차
+str_mglv_maglev_wagon_unpowered,자기부상 기본 객차
+str_mglv_china_transrapid,상하이 트랜스래피드
+str_mglv_japan_mlx01_901,JR MLX01-901
+,
+str_rbs_austria_nolb_1,NOLB 1
+str_rbs_italy_fs_86,FS 86
+str_rbs_australia_victorian_railways_rowan_railmotor,Victorian Railways Rowan Railmotor
+str_rbs_switzerland_uebb_czm_1_2,UeBB Czm 1/2
+str_rbs_germany_bavarian_mcci,K.Bay.Sts.B. MCCi
+str_rbs_south_africa_csar_railmotor,CSAR Railmotor
+str_rbs_australia_victorian_railways_motor_car_3,Victorian Railways Motor Car 3
+str_rbs_austria_kkstb_4_0,kkStB 4.0
+str_rbs_gemany_hessian_ludwig_railway_type_thomas,
+str_rbs_austria_nolb_30_33,
+,
+,
+str_rbd_australia_victorian_railways_aec_rm1,Victorian Railways AEC RM1
+str_rbd_germany_db_vt_133,DB VT 133 'Wismar railbus'
+str_rbd_united_kingdom_gwr_aec_railcar,GWR AEC Railcar
+str_rbd_austria_obb_5042,OBB 5042
+str_rbd_new_zealand_nzr_rm31,NZR RM31
+str_rbd_portugal_cp_0100,CP 0100
+str_rbd_usa_amtrak_budd_rdc,Amtrak Budd RDC
+str_rbd_germany_db_vt_989,DB VT 98.9 / DB 798 'Uerdingen railbus'
+str_rbd_germany_ohe_520_gdt,OHE 520 GDT
+str_rbd_netherlands_ns_20_kameel,NS 20 'Kameel'
+str_rbd_netherlands_ns_dh1,NS DH1
+str_rbd_austria_obb_5047,OBB 5047
+str_rbd_united_kingdom_br_153_super_sprinter,BR 153 'Super Sprinter'
+str_rbd_czech_republic_cd_809,CD 809
+str_rbd_germany_db_670,DB 670
+str_rbd_lithuania_lithuanian_railways_ar2,리투아니아 철도 AR2
+str_rbd_austria_kkstb_19,KkStB 19
+str_rbd_usa_virginia_truckee_motor_car_22,Virginia & Truckee Motor Car 22
+str_rbd_germany_saxon_det_1_2,Saxon DET 1-2
+str_rbd_uk_wc_pr_drewry_railcar,WC&PR Drewry Railcar
+str_rbd_germany_bst_6001,BSt 6001
+str_rbd_australia_victorian_railways_derm,Victorian Railways DERM
+str_rbd_czech_republic_cd_m120,CD M120
+str_rbd_germany_schienenzeppelin,Schienenzeppelin
+str_rbd_denmark_dsb_mo,DSB MO
+str_rbd_norway_nsb_cmb_17,NSB Cmb 17
+str_rbd_czech_republic_cd_m290,CD M290
+str_rbd_netherlands_ns_ombc,NS omBC 2900
+str_rbd_australia_nswgr_class_400,NSWGR 400
+str_rbd_portugal_cp_usd_9050,CP USD 9050
+str_rbd_belgium_sncb_class_42,NMBS/SNCB 42
+str_rbd_bulgaria_bdz_19,BDZ 19
+str_rbd_greece_ose_aa71,OSE AA.71
+str_rbd_tunisia_sncft_z431,SNCFT Z431
+str_rbd_usa_amtrak_spv_200,Amtrak SPV-200
+str_rbd_finland_vr_dm12,VR Dm12
+str_rbd_czech_republic_cd_840,CD 840
+str_rbd_italy_fs_aln_668,FS ALn 668
+str_rbd_japan_jr_shikoku_1000,JR 시코쿠 1000
+str_rbd_japan_jr_kiha_e120,JR KiHa E120
+str_rbd_chile_efe_buscarril,EFE Buscarril
+str_rbd_argentina_fcpba_m_railcar,FCPBA M Railcar
+str_rbd_eritrea_eritrean_railway_a62_70_littorina,Eritrean Railway A.62-70 'Littorina'
+str_rbd_finland_vr_dm7,VR Dm7
+str_rbd_russia_rzd_ach2,RZD ACh2
+,
+,
+str_rbe_czech_republic_cd_m400,CD M400
+str_rbe_france_sncf_z_7100,SNCF Z 7100
+str_rbe_germany_buckower_kleinbahn_nr_1_3,Buckower Kleinbahn Nr. 1-3
+str_rbe_germany_db_4792,DB 479.2
+str_rbe_slovakia_zssk_490,ZSSK 49.0
+str_rbe_italy_fs_ale_840,FS ALe 840
+str_rbe_italy_fg_ale_80,FG ALe 80
+str_rbe_italy_fs_e623,FS E.623
+str_rbe_morocco_oncfm_zab1000,ONCFM ZAB1000
+str_rbe_poland_pkp_en81,PKP EN81
+str_rbe_austria_obb_4855,OBB 4855
+str_rbe_austria_mbs_et_10109,MBS ET 10.109
+str_rbe_germany_db_et_85,DB ET 85 / DB 485
+str_rbe_sweden_sj_x16,SJ X16
+str_rbe_usa_pennsylvania_railroad_silverliner_ii,PRR Silverliner II
+str_rbe_usa_septa_silverliner_v,SEPTA Silverliner V
+str_emu_usa_prr_mp54,PRR MP54
+str_rbe_switzerland_ab_cfe_3_3,AB CFe 3/3
+str_rbe_switzerland_tpc_bvb_be_2_2,TPC BVB Be 2/2
+str_rbe_switzerland_mvr_beh_2_4,MVR Beh 2/4
+str_rbe_spain_ferrocarril_de_soller_1_3,Ferrocarril de Soller 1-3
+str_rbe_japan_choshi_deha_1000,Choshi DeHa 1000
+,
+,
+str_steam_belgium_le_belge,Le Belge
+str_steam_usa_4_4_0_american,4-4-0 'American'
+str_steam_switzerland_sbb_ec_2_5,SBB Ec 2/5
+str_steam_usa_4_6_0_ten_wheeler,4-6-0 'Ten-wheeler'
+str_steam_usa_2_8_0_consolidation,2-8-0 'Consolidation'
+str_steam_hungary_mav_377,MAV 377
+str_steam_austria_kkstb_99,KkStB 99
+str_steam_uk_caledonian_railway_439,칼레도니아 철도 439
+str_steam_switzerland_sbb_a_3_5,SBB A 3/5
+str_steam_switzerland_sbb_e_3_3,SBB E 3/3
+str_steam_austria_kkstb_299,KkStB 299
+str_steam_new_zealand_nzr_x_class,NZR X
+str_steam_croatia_hz_51,HZ 51
+str_steam_italy_fs_880,FS 880
+str_steam_argentina_fcnea_11b_2_8_0,FCNEA 11B 2-8-0
+str_steam_france_sncf_140c,SNCF 140C
+str_steam_france_sncf_141ta,SNCF 141TA
+str_steam_uk_gwr_4900,GWR 4900
+str_steam_uk_gwr_5700,GWR 5700
+str_steam_netherlands_ns_6300,NS 6300
+str_steam_usa_at_sf_5000,AT&amp;SF 5000
+str_steam_germany_prussian_s10,DB 17.0-1 'Prussian S 10'
+str_steam_uk_lms_5mt_black_five,LMS 5MT 'Black Five'
+str_steam_russia_rzd_9p,RZD 9P
+str_steam_uk_lner_a4_gresley,LNER A4 'Gresley'
+str_steam_canada_cpr_royal_hudson,CPR 'Royal Hudson'
+str_steam_denmark_dsb_e,DSB E
+str_steam_germany_db_52,DB 52
+str_steam_uk_lner_a1_peppercorn,LNER A1 'Peppercorn'
+str_steam_south_africa_sar_25,SAR 25
+str_steam_russia_rzd_p36,RZD P36
+str_steam_france_sncf_150b,SNCF 150B
+str_steam_italy_fs_895,FS 895
+str_steam_poland_pkp_okz32,PKP OKz32
+str_steam_switzerland_sbb_c_5_6,SBB C 5/6
+str_steam_usa_up_4000_big_boy,UP 4000 'Big Boy'
+str_steam_netherlands_nrs_11,NRS 11
+str_steam_uk_gwr_iron_duke_class,GWR Iron Duke
+str_steam_australia_sidney_railway_locomotive_no1,시드니 철도 Locomotive No.1
+str_steam_usa_central_pacific_4_2_2,Central Pacific 4-2-2
+str_steam_netherlands_ns_700,NS 700
+str_steam_south_africa_natal_government_railways_2_6_0t,Natal Government Railways 2-6-0T
+str_steam_australia_nswgr_z25_class,NSWGR Z25
+str_steam_canada_canadian_pacific_374,Canadian Pacific 374
+str_steam_south_africa_ppr_35_tonner_4_6_0t,PPR 35-tonner 4-6-0T
+str_steam_spain_renfe_class_040,RENFE 040
+str_steam_germany_saxon_iv_k,DB 99.51-60 'Saxon IV K'
+str_steam_germany_prussian_s_3,K.P.St.E. S 3
+str_steam_norway_nsb_class_xxi,NSB XXI
+str_steam_usa_prr_d16,PRR D16
+str_steam_netherlands_ns_8100,NS 8100
+str_steam_south_africa_sar_md_class,SAR MD
+str_steam_angola_south_west_african_2_8_0,South West African 2-8-0
+str_steam_uk_lner_n7,LNER N7
+str_steam_germany_saxon_xx_hv,DB 19.0 'Saxon XX HV'
+str_steam_belgium_nmbs_type_7,NMBS Type 7
+str_steam_ireland_dser_15,DSER 15
+str_steam_usa_sierra_railroad_28,Sierra Railroad 28
+str_steam_canada_cn_u_1_class,CN U-1
+str_steam_india_indian_railways_xb_class,인도 국철 XB
+str_steam_iraq_iraqi_state_railways_pc_class,이라크 State Railways PC
+str_steam_egypt_enr_1100,ENR 1100
+str_steam_uk_gwr_1600_class,GWR 1600
+str_steam_australia_victorian_railways_r_class,Victorian Railways R
+str_steam_germany_db_9977_79,DB 99.77-79
+str_steam_germany_db_18_201,DB 18 201
+str_steam_new_zealand_nzr_wab,NZR WAB
+str_steam_australia_nswgr_d57,NSWGR D57
+str_steam_australia_south_australian_railways_520,남오스트레일리아 국철 520
+str_steam_australia_nswgr_ad60,NSWGR AD60
+str_steam_uruguay_afe_n1_2_6_0,AFE N1 2-6-0
+str_steam_argentina_fcca_ps11,FCCA PS11
+str_steam_south_africa_harbour_board_el_0_4_0,Harbour Board EL 0-4-0
+str_steam_mozambique_beira_railway_br6_f2_falcon,Beira Railway BR6 F2 'Falcon'
+str_steam_eritrea_eritrean_railway_r440,Eritrean Railway R.440
+str_steam_kenya_east_african_railway_23,동아프리카 철도 23
+str_steam_kenya_east_african_railway_21,동아프리카 철도 21
+str_steam_zimbabwe_zimbabwe_railways_15,짐바브웨 국유철도 15
+str_steam_south_africa_sar_gma_4_8_2_2_8_4,SAR GMA 4-8-2+2-8-4
+str_steam_kenya_east_african_railway_31,동아프리카 철도 31
+str_steam_india_fairy_queen,Fairy Queen
+str_steam_india_dhr_b,DHR B
+str_steam_china_china_railways_h,중국 철도공사 H
+str_steam_russia_rzd_u,RZD U
+str_steam_russia_rzd_e,RZD E
+str_steam_israel_israel_railways_h,이스라엘 국철 H
+str_steam_italy_fs_480,FS 480
+str_steam_italy_fs_691,FS 691
+str_steam_greece_sek_lb,SEK Lb
+str_steam_albania_hsh_01,HSH 01
+str_steam_spain_renfe_242f,RENFE 242F
+str_steam_czech_republic_cd_5341,CD 534.1
+str_steam_poland_pkp_ok22,PKP Ok22
+str_steam_croatia_hz_11,HZ 11
+str_steam_hungary_mav_242,MAV 242
+str_steam_czech_republic_cd_4590,CD 459.0
+str_steam_poland_pkp_oi49,PKP OI49
+str_steam_austria_kkstb_310,KKStB 310
+str_steam_usa_southern_pacific_gs_4_daylight,Southern Pacific GS-4 'Daylight'
+str_steam_ireland_gs_wr_101,GS&WR 101
+str_steam_usa_nyc_h_6a_light_mikado,NYC H-6A 'Light Mikado'
+str_steam_argentina_fcgr_315,FCGR 315
+str_steam_australia_nswgr_c35,NSWGR C35
+str_steam_belgium_nmbs_sncb_type_29,NMBS/SNCB Type 29
+str_steam_chile_fcab_4_8_2,FCAB 4-8-2
+str_steam_china_railways_qj,중국 철도공사 QJ
+str_steam_switzerland_rhb_g_3_4,RhB G 3/4
+str_steam_japan_jnr_class_e10,JNR E10
+str_steam_japan_jnr_7100,JNR 7100
+str_steam_japan_jnr_860,JNR 860
+str_steam_japan_jnr_9600,JNR 9600
+str_steam_japan_jnr_d50,JNR D50
+str_steam_south_africa_katanga_mikado_2_8_2,
+str_steam_mozambique_mozambique_railways_no_101,
+str_steam_ivory_coast_golwe_2_6_0_0_6_2t,
+,
+,
+str_diesel_germany_db_kof_ii,DB Kof II / DB 322
+str_diesel_usa_cnj_alco_ge_ir_boxcab,CNJ ALCo-GE-IR Boxcab
+str_diesel_netherlands_ns_200,NS 200 'Sik'
+str_diesel_germany_db_270,DB V 20 / DB 270 'WR 200 B 14'
+str_diesel_switzerland_sbb_am_4_6,SBB Am 4/6
+str_diesel_australia_nswgr_79,NSWGR 79
+str_diesel_usa_western_pacific_alco_s_2,Western Pacific ALCO S-2
+str_diesel_usa_at_sf_emd_f3,AT&SF EMD F3
+str_diesel_usa_up_emd_e8,UP EMD E8
+str_diesel_brazil_efcb_alco_rs_3,EFCB ALCO RS-3
+str_diesel_netherlands_ns_600,NS 600 'Bakkie'
+str_diesel_usa_pennsylvania_railroad_rf_16_sharknose,PRR RF-16 'Sharknose'
+str_diesel_uruguay_afe_1500,AFE 1500
+str_diesel_canada_cpr_trainmaster,CPR 'Trainmaster'
+str_diesel_liberia_liberia_railways_class_08,라이베리아 철도 08
+str_diesel_austria_obb_2060,OBB 2060
+str_diesel_canada_cnr_sw1200,CNR SW1200
+str_diesel_canada_via_rail_fp9,VIA Rail FP9
+str_diesel_hungary_mav_m44,MAV M44
+str_diesel_hungary_mav_m28,MAV M28
+str_diesel_belgium_nmbs_sncb_83,NMBS/SNCB 83
+str_diesel_germany_db_220,DB V200.0 / DB 220
+str_diesel_usa_amtrak_fl9,Amtrak FL9
+str_diesel_czech_republic_cd_720_chme2,CD 720 ChME2
+str_diesel_finland_vr_dr12,VR Dr12
+str_diesel_romania_cfr_060_da,CFR 060-DA
+str_diesel_brazil_bf_emd_gl8,BF EMD GL8
+str_diesel_brazil_efvm_ml4000,EFVM ML4000
+str_diesel_russia_rzd_tep60,RZD TEP60
+str_diesel_belgium_nmbs_sncb_62,NMBS/SNCB 62
+str_diesel_denmark_dsb_mak_100,DSB MaK 100
+str_diesel_india_indian_railways_wdm_2,인도 국철 WDM-2
+str_diesel_uk_br_14,BR 14
+str_diesel_russia_rzd_chme3,RZD ChME3
+str_diesel_argentina_mf_gm_emd_j16cw_ac,MF GM-EMD-J16CW-AC
+str_diesel_russia_rzd_m62,RZD M62
+str_diesel_australia_nswgr_422,NSWGR 422
+str_diesel_egypt_enr_g22w,ENR G22W
+str_diesel_usa_up_emd_dda40x,UP EMD DDA40X
+str_diesel_australia_queensland_rail_2100,퀸즈랜드 철도 2100
+str_diesel_croatia_hz_2062,HZ 2062
+str_diesel_sweden_sj_v4,SJ V4
+str_diesel_canada_cnr_mlw_m420w,CNR MLW M420W
+str_diesel_usa_amtrak_sdp_40f,Amtrak SDP-40F
+str_diesel_china_china_railways_dfh3,중국 철도공사 DFH3
+str_diesel_panama_panama_canal_railway_emd_f40ph,파나마 해협 철도 EMD F40PH
+str_diesel_portugal_cp_1900,CP 1900
+str_diesel_finland_vr_dr16,VR Dr16
+str_diesel_russia_rzd_tep80,RZD TEP80
+str_diesel_australia_australian_national_an,오스트레일리아 국영 AN
+str_diesel_usa_amtrak_p42dc_genesis,Amtrak P42DC 'Genesis'
+str_diesel_turkey_tcdd_dh7000,TCDD DH7000
+str_diesel_argentina_mf_ge_u20c,MF GE U20C
+str_diesel_belgium_nmbs_sncb_7800,NMBS/SNCB 7800
+str_diesel_uk_br_66,BR 66
+str_diesel_uk_br_67,BR 67
+str_diesel_iran_rai_de43ca_prima,RAI DE43CA 'Prima'
+str_diesel_ukraine_uz_tep150,UZ TEP150
+str_diesel_china_china_railways_hxn5,중국 철도공사 HXN5
+str_diesel_germany_db_261_gravita_10bb,DB 261 'Gravita 10BB'
+str_diesel_russia_rzd_gt1,RZD GT1
+str_diesel_china_mtr_8000,MTR 8000
+str_diesel_germany_hvle_v490,HVLE V490 'Maxima 40CC'
+str_diesel_russia_rzd_emch_3,RZD Emch-3
+str_diesel_canada_cnr_9000,CNR 9000
+str_diesel_uk_lms_7051_diesel_shunter,LMS 7051 Diesel Shunter
+str_diesel_usa_rock_island_emc_ta,Rock Island EMC TA
+str_diesel_usa_nyc_baldwin_vo_660,NYC Baldwin VO-660
+str_diesel_uk_br_class_d3_7,BR D3/7
+str_diesel_australia_queensland_railways_dl_class,퀸즈랜드 철도 DL
+str_diesel_usa_prr_fm_h_10_44,PRR FM H-10-44
+str_diesel_algeria_sntf_baldwin_drs6_4_1000,SNTF Baldwin DRS6-4-1000
+str_diesel_ireland_cie_113,CIE 113
+str_diesel_brazil_efc_3300_baldwin_as_616,EFC 3300 Baldwin AS-616
+str_diesel_mexico_chp_500_fm_h_16_44,CHP 500 FM H-16-44
+str_diesel_australia_south_australian_railways_900,남오스트레일리아 국철 900
+str_diesel_sri_lanka_sri_lanka_railways_m2,스리랑카 국유철도 M2
+str_diesel_ireland_cie_001,CIE 001
+str_diesel_italy_fs_d341,FS D.341
+str_diesel_australia_nswgr_44,NSWGR 44
+str_diesel_zimbabwe_zimbabwe_railways_dh_1,짐바브웨 국유철도 DH-1
+str_diesel_south_korea_korail_6000_emd_sd18,코레일 6000 EMD SD18
+str_diesel_italy_fs_d345,FS D.345
+str_diesel_norway_nsb_di4,NSB Di4
+str_diesel_china_china_railways_df8,중국 철도공사 DF8
+str_diesel_australia_pacific_national_g_class,Pacific National G
+str_diesel_uk_br_60,BR 60
+str_diesel_australia_westrail_p_class,Westrail P
+str_diesel_saudi_arabia_saudi_railways_4000_emd_sd70acs,사우디 국철 4000 EMD SD70ACS
+str_diesel_ireland_ie_201,IE 201
+str_diesel_usa_metrolink_emd_f59ph,Metrolink EMD F59PH
+str_diesel_france_sncf_461000,SNCF BB 461000
+str_diesel_italy_act_d_200,ACT D 200
+str_diesel_canada_go_transit_mp40ph_3c,GO Transit MP40PH-3C
+str_diesel_spain_renfe_class_334,RENFE 334
+str_diesel_indonesia_indonesia_railways_cc300,인도네시아 국유철도 CC300
+str_diesel_argentina_great_southern_railway_dh501,Great Southern Railway DH501
+str_diesel_brazil_ee_vfflb,EE VFFLB
+str_diesel_chile_efe_ge_u5b,EFE GE U5B
+str_diesel_peru_ferrocarril_central_andino_alco_rsd_39,Ferrocarril Central Andino Alco RSD-39
+str_diesel_brazil_efvm_emd_ddm45,EFVM EMD DDM45
+str_diesel_peru_ferrocarril_central_andino_ge_c39_8,Ferrocarril Central Andino GE C39-8
+str_diesel_argentina_sofse_3193,SOFSE 319.3
+str_diesel_argentina_sofse_cnr_ckd8,SOFSE CNR CKD8
+str_diesel_south_africa_sar_ds,SAR DS
+str_diesel_algeria_sntf_040_dg,SNTF 040 DG
+str_diesel_tunisia_sncft_040_df,SNCFT 040 DF
+str_diesel_egypt_enr_te114e,ENR TE114E
+str_diesel_tunisia_sncft_040_dj,SNCFT 040 DJ
+str_diesel_morocco_oncf_df_100,ONCF DF 100
+str_diesel_ukraine_uz_tep10l,UZ TEP10L
+str_diesel_belarus_bch_2te10m,BCh 2TE10M
+str_diesel_poland_pkp_sp32,PKP SP32
+str_diesel_ukraine_uz_2te126,UZ 2TE126
+str_diesel_ukraine_uz_2te10ut,UZ 2TE10Ut
+str_diesel_serbia_zs_621,ZS 621
+str_diesel_italy_fs_207,FS 207
+str_diesel_russia_rzd_db,RZD Db
+str_diesel_portugal_cp_1500,CP 1500
+str_diesel_france_sncf_bb_67400,SNCF BB 67400
+str_diesel_netherlands_ns_6400,NS 6400
+str_diesel_egypt_enr_2400_ge_es40aci,ENR 2400 GE ES40ACi
+str_diesel_south_africa_sar_afro_4000,SAR Afro 4000
+str_diesel_spain_renfe_308,RENFE 308
+str_diesel_australia_pacific_national_xr_xrb,Pacific National XR/XRB
+str_diesel_norway_cargonet_312,CargoNet 312
+str_diesel_australia_pacific_national_92,Pacific National 92
+str_diesel_uk_br_68,BR 68
+str_diesel_usa_amtrak_charger,Amtrak Charger
+str_diesel_japan_jnr_df50,JNR DF50
+str_diesel_gabon_alsthom_ad30b,
+str_diesel_ghana_railway_corporation_class_tt12,
+str_diesel_sierra_leone_lamco_301_series,
+str_diesel_congo_alstom_bb_bb,
+str_diesel_zimbabwe_sorefame_de8,
+str_diesel_ivory_coast_gmd_gt22lc2,
+str_electric_tanzania_trc_e6800,
+,
+,
+str_mtro_argentina_le_brugeoise,부에노스아이레스 'Le Brugeoise'
+str_mtro_usa_ny_r1,뉴욕 R1
+str_mtro_germany_db_et_171,DB ET 171 / DB 471
+str_mtro_france_paris_m2_840,파리 M2 840
+str_mtro_portugal_lisbon_ml7,리스본 ML7
+str_mtro_hungary_budapest_ev3_200,부다페스트 Ev3-200
+str_mtro_norway_oslo_t1000,오슬로 T1000
+str_mtro_canada_toronto_h_series,토론토 H계
+str_mtro_germany_munchen_mvg_a2,뮌헨 MVG A2
+str_mtro_usa_ny_r44,뉴욕 R44
+str_mtro_netherlands_amsterdam_type_m1,암스테르담 M1
+str_mtro_sweden_stockholm_c8,스톡홀름 C8
+str_mtro_north_korea_pyongyang_d_stock,평양 D stock
+str_mtro_finland_helsinki_m100,헬싱키 M100
+str_mtro_brazil_sao_paulo_serie_5500,상파울루 5500계
+str_mtro_russia_moscow_81_720,모스크바 81-720
+str_mtro_japan_tokyo_s01,도쿄 S01
+str_mtro_egypt_cairo_1987_stock,카이로 1987 Stock
+str_mtro_uk_dlr_p86,DLR P86
+str_mtro_russia_moscow_81_7175m,모스크바 81-717.5M
+str_mtro_usa_boston_01800,보스턴 01800
+str_mtro_usa_la_a650,LA A650
+str_mtro_taiwan_taipei_c301,타이페이 C301
+str_mtro_netherlands_amsterdam_caf_90,암스테르담 CAF 90
+str_mtro_france_paris_mp89,파리 MP89
+str_mtro_russia_moscow_81_740,모스크바 81-740
+str_mtro_singapore_singapore_c830_metropolis,싱가포르 C830 'Metropolis'
+str_mtro_norway_oslo_mx3000,오슬로 MX3000
+str_mtro_japan_osaka_30000,오사카 30000
+str_mtro_singapore_singapore_c151a,싱가포르 C151A
+str_mtro_usa_washington_7000,워싱턴7000
+str_mtro_greece_thessaloniki_2014,테살로니키 2014
+str_mtro_germany_berlin_u_bahn_a_i,베를린 U-반 A I
+str_mtro_usa_ny_hedley_hi_v,뉴욕 Hedley Hi-V
+str_mtro_japan_osaka_1000,오사카 1000
+str_mtro_russia_moscow_type_a,모스크바 A형
+str_mtro_usa_ny_r10,뉴욕 R10
+str_mtro_italy_rome_mr_100,로마 MR 100
+str_mtro_russia_moscow_type_d,모스크바 D형
+str_mtro_netherlands_rotterdam_mg2_type_m,로테르담 MG2 M형
+str_mtro_czech_republic_prague_ecs_set,프라하 ECS Set
+str_mtro_argentina_buenos_aires_serie_1200,부에노스아이레스 1200계
+str_mtro_chile_santiago_ns_93,산티아고 NS-93
+str_mtro_chile_santiago_as_2002,산티아고 AS-2002
+str_mtro_brazil_recife_vlt_mobile_3,레시페 VLT Mobile 3
+str_mtro_spain_madrid_series_5000,마드리드 5000계
+str_mtro_italy_rome_s_300,로마 S/300
+str_mtro_algeria_algiers_caf_2011_stock,알제 CAF 2011 Stock
+str_mtro_germany_berlin_u_bahn_ik,베를린 U-반 IK
+str_mtro_usa_chicago_l_6000,시카고 L 6000계
+str_mtro_uk_london_1903_stock,런던 1903 Stock
+str_mtro_uk_london_1938_stock,런던 1938 Stock
+str_mtro_metro_wagon_powered,지하철 기본 객차
+str_mtro_metro_wagon_unpowered,지하철 기본 객차
+str_mtro_usa_brooklyn_union_gate_car,
+,
+,
+str_electric_uk_ner_ef1,NER EF1
+str_electric_japan_jnr_eb10,JNR EB10
+str_electric_japan_jnr_ef55,JNR EF55
+str_electric_netherlands_ns_1000,NS 1000
+str_electric_netherlands_ns_1600,NS 1600
+str_electric_australia_victorian_railways_e_class,Victorian Railways E
+str_electric_uk_ner_es1,NER ES1
+str_electric_usa_nyc_s_motor,NYC S-motor
+str_electric_japan_aichi_railroad_deki_400,Aichi Railroad DeKi 400
+str_electric_india_indian_railways_wcg_1,인도 국철 WCG-1
+str_electric_france_sncf_bb_9004,SNCF BB 9004
+str_electric_indonesia_ess_3200,ESS 3200
+str_electric_uk_br_77_metrovic,BR 77 'Metrovic'
+str_electric_uk_ner_ee1,NER EE1
+str_electric_usa_milwaukee_road_es_2,Milwaukee Road ES-2
+str_electric_usa_milwaukee_road_ep_2_bipolar,밀워키 Road EP-2 Bipolar
+str_electric_chile_efe_e_28,EFE E-28
+str_electric_italy_fs_e428,FS E.428
+str_electric_south_africa_sar_es_class,SAR ES
+str_electric_poland_pkp_eu06,PKP EU06
+str_electric_poland_pkp_et41,PKP ET41
+str_electric_poland_pkp_ep09,PKP EP09
+str_electric_slovakia_zssk_162,ZSSK 162
+str_electric_italy_fs_e646,FS E.646
+str_electric_italy_fs_e424,FS E.424
+str_electric_italy_fs_e444,FS E.444
+str_electric_italy_fs_e633,FS E.633
+str_electric_belgium_nmbs_class_255,NMBS/SNCB 25.5
+str_electric_spain_renfe_250,RENFE 250
+str_electric_chile_efe_e_29,EFE E-29
+str_electric_chile_efe_e_17,EFE E-17
+str_electric_morocco_oncf_e_700,ONCF E 700
+str_electric_india_indian_railways_wcm_1,인도 국철 WCM-1
+str_electric_south_africa_sar_e38,SAR E38
+str_electric_chile_efe_e_269,EFE E-269
+str_electric_czech_republic_cd_363,CD 363
+str_electric_norway_nsb_el7,NSB EL7
+str_electric_usa_pennsylvania_railroad_ff_1,PRR FF-1
+str_electric_austria_obb_1161,OBB 1161
+str_electric_germany_db_169,DB E 69 05 / DB 169 005
+str_electric_norway_nsb_el10,NSB EL10
+str_electric_germany_db_104,DB E 04 / DB 104
+str_electric_usa_pennsylvania_railroad_gg_1,PRR GG-1
+str_electric_austria_obb_1020_crocodile,OBB 1020 'Crocodile'
+str_electric_germany_db_1031,DB 103.1
+str_electric_germany_db_e_919,DB E 91.9 / DB 191.9
+str_electric_switzerland_bls_ce_4_4,BLS Ce 4/4
+str_electric_switzerland_sbb_ae_6_6,SBB Ae 6/6
+str_electric_switzerland_sbb_re460_lok_2000,SBB Re460 'Lok 2000'
+str_electric_switzerland_sbb_eem_923,SBB Eem 923
+str_electric_austria_obb_1044,OBB 1044
+str_electric_austria_obb_1063,OBB 1063
+str_electric_sweden_mtab_dm3,MTAB Dm3
+str_electric_sweden_mtab_iore,MTAB IORE
+str_electric_sweden_sj_o_class,SJ O
+str_electric_sweden_sj_f_class,SJ F
+str_electric_norway_nsb_el17,NSB EL17
+str_electric_germany_prussian_es_6,K.P.St.E. ES 6
+str_electric_usa_virginian_railway_el_2b,Virginian Railway EL-2B
+str_electric_usa_gn_w_1,GN W-1
+str_electric_usa_prr_b1,PRR B1
+str_electric_australia_aurizon_e40_ag_v1,Aurizon E40 AG-V1
+str_electric_china_china_railways_ss6,중국 철도공사 SS6
+str_electric_china_china_railways_ss3,중국 철도공사 SS3
+str_electric_china_china_railways_hxd3,중국 철도공사 HXD3
+str_electric_china_china_railways_hxd1d,중국 철도공사 HXD1D
+str_electric_china_china_railways_6k,중국 철도공사 6K
+str_electric_usa_prr_e44,PRR E44
+str_electric_croatia_hz_1141,HZ 1141
+str_electric_hungary_mav_class_v43,MAV V43
+str_electric_portugal_cp_2500,CP 2500
+str_electric_portugal_cp_2600,CP 2600
+str_electric_south_africa_sar_20e,SAR 20E
+str_electric_south_korea_korail_8200,코레일 8200
+str_electric_ukraine_uz_ds3,UZ DS3
+str_electric_czech_republic_cd_s499,CD S499
+str_electric_italy_fs_e491,FS E.491
+str_electric_macedonia_macedonian_railways_462,마케도니아 국철 462
+str_electric_morocco_oncfm_e_500,ONCFM E 500
+str_electric_uk_br_85,BR 85
+str_electric_mexico_fnm_ge_e60c_2,FNM GE E60C-2
+str_electric_morocco_oncf_e_1400_prima_ii,ONCF E 1400 'Prima II'
+str_electric_new_zealand_nzr_ea,NZR EA
+str_electric_canada_bc_rail_gf6c,BC Rail GF6C
+str_electric_france_sncf_bb_22200,SNCF BB 22200
+str_electric_france_sncf_bb_26000,SNCF BB 26000
+str_electric_france_sncf_bb_25500,SNCF BB 25500
+str_electric_germany_db_182_es64u_taurus,DB 182 ES64U 'Taurus'
+str_electric_japan_jr_eh500,JR EH500
+str_electric_usa_amtrak_emd_aem_7,Amtrak EMD AEM-7
+str_electric_usa_amtrak_hhp_8,Amtrak HHP-8
+str_electric_czech_republic_cd_380,CD 380
+str_electric_spain_renfe_252,RENFE 252
+str_electric_germany_db_185_traxx_f140,DB 185 TRAXX F140
+str_electric_italy_fs_e550,FS E.550
+str_electric_japan_jnr_ef81,JNR EF81
+str_electric_uk_br_92,BR 92
+str_electric_usa_amtrak_acs_64,Amtrak ACS-64
+str_electric_france_sncf_cc_40100,SNCF CC 40100
+str_electric_belgium_nmbs_sncb_13_hle,NMBS/SNCB 13 HLE
+str_electric_switzerland_rhb_de_2_2,RhB De 2/2
+str_electric_japan_jnr_eh10,JNR EH10
+str_electric_japan_jnr_ef64,JNR EF64
+str_electric_new_zealand_nzr_eo_class,NZR EO
+str_electric_australia_nswgr_71,NSWGR 71
+str_electric_south_africa_sar_4e,SAR 4E
+str_electric_south_africa_sar_5e1,SAR 5E1
+str_electric_south_africa_sar_6e,SAR 6E
+str_electric_switzerland_rhb_ge_4_4_i,RhB Ge 4/4 I
+str_electric_switzerland_rhb_ge_6_6_krokodil,RhB Ge 6/6 'Krokodil'
+str_electric_brasil_mrs_he_4_4,MRS He 4/4
+str_electric_south_africa_sar_7e,SAR 7E
+str_electric_south_africa_sar_11e,SAR 11E
+str_electric_new_zealand_tranzrail_ef,TranzRail EF
+str_electric_russia_rzd_vl15,RZD VL15
+str_electric_russia_rzd_vl11,RZD VL11
+str_electric_russia_rzd_vl22m,RZD VL22M
+str_electric_ukraine_uz_de1,UZ DE1
+str_electric_russia_rzd_chs3,RZD ChS3
+str_electric_ukraine_uz_chs7,UZ ChS7
+str_electric_brasil_rffsa_ge_c_c_4400,RFFSA GE C-C 4400
+str_electric_russia_rzd_vl85,RZD VL85
+str_electric_russia_rzd_vl41,RZD VL41
+str_electric_india_indian_railways_wap_4,인도 국철 WAP-4
+str_electric_finland_vr_sr1,VR Sr1
+str_electric_kazakhstan_ktz_kz4a,KTZ KZ4A
+str_electric_kazakhstan_ktz_kz8a,KTZ KZ8A
+str_electric_russia_rzd_ep20,RZD EP20
+str_electric_congo_type_2450_acec_charleroi_zaire_electric,
+,
+,
+str_dmu_germany_db_vt_040_flying_hamburger,DB VT 04.0 'Flying Hamburger'
+str_dmu_australia_nswgr_silver_city_comet,NSWGR 'Silver City Comet'
+str_dmu_czech_republic_cd_m131,CD M131
+str_dmu_germany_db_vt_085,DB VT 08.5
+str_dmu_australia_queensland_rail_400,퀸즈랜드 철도 400
+str_dmu_germany_db_vt_115,DB VT11.5 / DB 601 'TEE'
+str_dmu_netherlands_ns_plan_u_de_iii,NS Plan U DE-III
+str_dmu_canada_cnr_turbo_train,CNR 'Turbo Train'
+str_dmu_serbia_zs_811,ZS 811
+str_dmu_uk_br_43_ic125,BR 43 IC125
+str_dmu_canada_via_rail_lrc,VIA Rail LRC
+str_dmu_sweden_sj_y2,SJ Y2
+str_dmu_spain_renfe_594_trd,RENFE 594 TRD
+str_dmu_uk_br_168,BR 168
+str_dmu_germany_db_612_regio_swinger,DB 612 'Regio Swinger'
+str_dmu_germany_db_642_desiro,DB 642 'Desiro'
+str_dmu_denmark_arriva_lint_41,Arriva Lint 41
+str_dmu_norway_nsb_bm_93_talent,NSB BM 93 'Talent'
+str_dmu_australia_transwa_prospector,Transwa WD 'Prospector'
+str_dmu_australia_cityrail_hunter_railcar,TrainLink Hunter Railcar
+str_dmu_russia_rzd_ra2,RZD RA2
+str_dmu_denmark_dsb_ic4,DSB IC4
+str_dmu_croatia_hz_7022,HZ 7022
+str_dmu_turkey_tcdd_mt_5500,TCDD MT 5500
+str_dmu_japan_jnr_kiha_181,JNR KiHa 181
+str_dmu_czech_republic_cd_814,CD 814
+str_dmu_uk_br_150_0_sprinter,BR 150/0 'Sprinter'
+str_dmu_iran_rai_141_pacer,RAI 141 'Pacer'
+str_dmu_israel_israel_railways_ic3,이스라엘 국철 IC3
+str_dmu_australia_transadelaide_3100,TransAdelaide 3100
+str_dmu_australia_nswgr_xplorer,TrainLink Xplorer
+str_dmu_japan_jr_kiha_189,JR KiHa 189
+str_dmu_sri_lanka_sri_lanka_railways_s11,스리랑카 국유철도 S11
+str_dmu_slovakia_zssk_861,ZSSK 861
+str_dmu_chile_efe_tld_500,EFE TLD-500
+str_dmu_cameroon_camrail_ze_500,Camrail ZE 500
+str_dmu_uk_br_251_blue_pullman,BR 251 'Blue Pullman'
+str_dmu_australia_wagr_adk_adb,WAGR ADK/ADB
+str_dmu_france_sncf_x_4630,SNCF X 4630
+str_dmu_france_sncf_t_2000,SNCF T 2000
+str_dmu_netherlands_ns_dh2,NS DH2
+str_dmu_germany_db_6282,DB 628.2
+str_dmu_algeria_sntf_zz_2200_autorail,SNTF ZZ 2200 Autorail
+str_dmu_tunisia_sncft_amt_800,SNCFT AMT 800
+str_dmu_ghana_ghana_railways_demu,가나 국철 DEMU
+str_dmu_australia_queensland_rail_diesel_tilt_train,퀸즈랜드 Rail Diesel Tilt Train
+str_dmu_canada_up_express_nippon_sharyo_dmu,UP Express Nippon Sharyo DMU
+str_dmu_argentina_fcgu_cmm_400_2,FCGU CMM 400-2
+str_dmu_italy_fs_aln_442_448,FS ALn 442-448
+str_dmu_portugal_cp_0400,CP 0400
+str_dmu_portugal_cp_0600,CP 0600
+str_dmu_spain_feve_2400_apollos,FEVE 2400 'Apollos'
+str_cargodmu_germany_db_691_cargosprinter,DB 691 'CargoSprinter'
+str_mu_mu_cargo_wagon_powered,다중 유닛 화물차
+str_mu_mu_cargo_wagon_unpowered,다중 기본 화물차
+str_mu_mu_wagon_powered,다중 기본 객차
+str_mu_mu_wagon_unpowered,다중 기본 객차
+,
+,
+str_emu_australia_sydney_trains_a_set_waratah,시드니 철도 A Set 'Waratah'
+str_emu_denmark_dsb_s_tog_ii,DSB S-Tog II
+str_emu_denmark_dsb_s_tog_iv,DSB S-Tog IV
+str_emu_italy_atac_ecd_21_30,ATAC ECD 21-30
+str_emu_netherlands_ns_mat24,NS Mat'24
+str_emu_netherlands_ns_mat36,NS Mat'36
+str_emu_netherlands_ns_mat54,NS Mat'54
+str_emu_netherlands_ns_plan_y,NS Plan Y
+str_emu_netherlands_ns_icm_4000,NS ICM 4000
+str_emu_netherlands_ns_dd_irm_virm,NS DD-IRM 'VIRM'
+str_emu_netherlands_ns_mddm_390,NS mDDm 390
+str_emu_poland_pkp_ew90,PKP EW90
+str_emu_italy_fs_etr200,FS ETR.200
+str_emu_italy_fs_etr300_settebello,FS ETR.300 'Settebello'
+str_emu_italy_fs_etr500,FS ETR.500 'Frecciarossa'
+str_emu_italy_fs_ale426,FS ALe 426
+str_emu_morocco_oncf_zmc,ONCF ZMC
+str_emu_poland_pkp_ew54,PKP EW54
+str_emu_italy_fs_ale_801,FS ALe 801
+str_emu_austria_obb_4030,OBB 4030
+str_emu_austria_obb_4041,OBB 4041
+str_emu_austria_westbahn_4010_kiss,WESTbahn 4010 'KISS'
+str_emu_germany_db_et420,DB 420
+str_emu_norway_nsb_bm73,NSB BM73
+str_emu_norway_nsb_bm65,NSB BM65
+str_emu_sweden_sj_x2000,SJ X2000
+str_emu_switzerland_sbb_rabde_510,SBB RABDe 510
+str_emu_switzerland_sbb_rbde_560,SBB RBDe 560
+str_emu_switzerland_sbb_rabe_523_flirt,SBB RABe 523 'Flirt'
+str_emu_usa_amtrak_budd_metroliner,Amtrak Budd Metroliner
+str_emu_germany_db_403_ice_3,DB 403 'ICE3'
+str_emu_bulgaria_bdz_10_desiro,BDZ 10 'Desiro'
+str_emu_finland_vr_sm2,VR Sm2
+str_emu_finland_vr_sm4,VR Sm4
+str_emu_hungary_mav_bdvmot,MAV BDVmot
+str_emu_europe_sureot,Sureot
+str_emu_japan_jnr_shinkansen_series_0,JNR 신칸센 0계
+str_emu_japan_jr_shinkansen_series_700,JR 신칸센 700계
+str_emu_japan_jr_shinkansen_series_e1_max,JR 신칸센 E1계 Max
+str_emu_luxembourg_cfl_2200_coradia_duplex,CFL 2200 'Coradia Duplex'
+str_emu_macedonia_macedonian_railways_412,마케도니아 국철 412
+str_emu_romania_cfr_58,CFR 58
+str_emu_south_africa_gautrain_electrostar,Gautrain 일렉트로스타
+str_emu_turkey_tcdd_e8000,TCDD E8000
+str_emu_china_railways_chr380a,중국 철도공사 CHR380A
+str_emu_italy_ntv_agv,NTV AGV
+str_emu_italy_ntv_agv_duplex,NTV AGV Duplex
+str_emu_netherlands_ns_hispeed_v250_albatros,NS Hispeed V250 'Albatros'
+str_emu_netherlands_ns_4800_hsa,NS 4800 HSA
+str_emu_switzerland_sbb_rae_tee_ii,SBB Rae TEE II
+str_emu_usa_erie_lackawanna_mu_cars,Erie Lackawanna MU Cars
+str_emu_france_sncf_tgv_sud_est,SNCF TGV Sud-Est
+str_emu_france_sncf_tgv_duplex,SNCF TGV Duplex
+str_emu_france_thalys_pbka,Thalys PBKA
+str_emu_czech_republic_cd_680_pendolino,CD 680 'Pendolino'
+str_emu_spain_renfe_120,RENFE 120
+str_emu_usa_amtrak_acela_express,Amtrak Acela Express
+str_emu_japan_odakyu_3100_series_romance,오다큐 3100계 '로망스'
+str_emu_japan_odakyu_10000_series_romance,오다큐 10000계 '로망스'
+str_emu_australia_sydney_trains_s_set,시드니 철도 S-set
+str_emu_australia_sydney_trains_oscars,시드니 철도 OSCars
+str_emu_australia_victorian_railways_swing_door,Victorian Railways 'Swing Door'
+str_emu_new_zealand_nzr_em_et_class,NZR EM/ET
+str_emu_south_africa_sar_5m2,SAR 5M2
+str_emu_chile_efe_xtrapolis_100,EFE X'Trapolis 100
+str_emu_chile_efe_aes_railcar,EFE AES Railcar
+str_emu_tunisia_sncft_yz_e,SNCFT YZ-E
+str_emu_australia_queensland_rail_tilt_train,퀸즈랜드 Rail Tilt Train
+str_emu_russia_rzd_er200,RZD ER200
+str_emu_russia_rzd_s,RZD S
+str_emu_croatia_hz_6112,HZ 6112
+str_emu_russia_rzd_es1_lastochka,RZD ES1 'Lastochka'
+str_cargoemu_japan_jr_freight_m250,
+,
+,
+str_singlemtro_usa_brooklyn_union_gate_car,Brooklyn Union Gate Car
+str_singlemtro_hungary_budapest_1894_stock,부다페스트 1894 Stock
+str_singlemtro_usa_chicago_l_northwest_elevated_1907_stock,시카고 L 북서 고가 1907 Stock
+str_singlemtro_germany_berlin_u_bahn_c_ii,베를린 U-반 C II
+,
+,
+str_rbm_world_turbobus,Turbobus
+,
+,
+str_mglv_germany_db_182_es64um_mutus,
+,
+,
+str_mglv_wagon_gen7m_boxcar_type1,
+str_mglv_wagon_gen7m_boxcar_type2,
+str_mglv_wagon_gen7m_car_transporter,
+str_mglv_wagon_gen7m_centerbeam,
+str_mglv_wagon_gen7m_container_carrier,
+str_mglv_wagon_gen7m_container_doublestack,
+str_mglv_wagon_gen7m_flatcar,
+str_mglv_wagon_gen7m_gondola,
+str_mglv_wagon_gen7m_heavy_flatcar,
+str_mglv_wagon_gen7m_hopper_type1,
+str_mglv_wagon_gen7m_hopper_type2,
+str_mglv_wagon_gen7m_silo_type1,
+str_mglv_wagon_gen7m_silo_type2,
+str_mglv_wagon_gen7m_superheavy_flatcar,
+str_mglv_wagon_gen7m_tanker,
+str_mu_wagon_gen1_flat_wagon,1세대 평판화차
+str_mu_wagon_gen1_boxcar,1세대 목제 유개화차
+str_mu_wagon_gen1_tanker,1세대 유조차
+str_mu_wagon_gen1_open_wagon,1세대 목제 무개화차
+str_mu_wagon_gen2_flat_wagon,2세대 평판화차
+str_mu_wagon_gen2_boxcar_type1,2세대 나무 유개화차
+str_mu_wagon_gen2_boxcar_type2,2세대 나무 유개화차
+str_mu_wagon_gen2_tanker,2세대 유조차
+str_mu_wagon_gen2_open_wagon,2세대 목재 무개화차
+str_mu_wagon_gen2_silo,2세대 곡물화차
+str_mu_wagon_gen2_hopper,2세대 목재 호퍼차
+str_mu_wagon_gen3_flat_wagon,3세대 평판화차
+str_mu_wagon_gen3_boxcar_type1,3세대 나무 유개화차
+str_mu_wagon_gen3_boxcar_type2,3세대 나무 유개화차
+str_mu_wagon_gen3_tanker,3세대 유조차
+str_mu_wagon_gen3_open_wagon,3세대 무개화차
+str_mu_wagon_gen3_silo_type1,3세대 사일로 화차
+str_mu_wagon_gen3_silo_type2,3세대 사일로 화차
+str_mu_wagon_gen3_hopper,3세대 호퍼차
+str_mu_wagon_gen4_flatcar,4세대 평판화차
+str_mu_wagon_gen4_heavy_flatcar,4세대 중량 평판화차
+str_mu_wagon_gen4_boxcar_type1,4세대 유개화차
+str_mu_wagon_gen4_boxcar_type2,4세대 유개화차
+str_mu_wagon_gen4_tanker,4세대 유조차
+str_mu_wagon_gen4_gondola,4세대 곤돌라
+str_mu_wagon_gen4_silo_type1,4세대 사일로 화차
+str_mu_wagon_gen4_silo_type2,4세대 사일로 화차
+str_mu_wagon_gen4_hopper_type1,4세대 자동 적하 호퍼차
+str_mu_wagon_gen4_hopper_type2,4세대 자동 적하 호퍼차
+str_mu_wagon_gen4_car_transporter,4세대 자동차 수송차량
+str_mu_wagon_gen4_container_carrier,4세대 컨테이너 화차
+str_mu_wagon_gen4_centerbeam,4세대 구획평판화차
+str_mu_wagon_gen5_flatcar,5세대 평판화차
+str_mu_wagon_gen5_heavy_flatcar,5세대 중량 평판화차
+str_mu_wagon_gen5_boxcar_type1,5세대 유개화차
+str_mu_wagon_gen5_boxcar_type2,5세대 유개화차
+str_mu_wagon_gen5_tanker,5세대 유조차
+str_mu_wagon_gen5_gondola,5세대 무개화차
+str_mu_wagon_gen5_silo_type1,5세대 사일로 화차
+str_mu_wagon_gen5_silo_type2,5세대 사일로 화차
+str_mu_wagon_gen5_hopper_type1,5세대 자동 적하 호퍼차
+str_mu_wagon_gen5_hopper_type2,5세대 자동 적하 호퍼차
+str_mu_wagon_gen5_car_transporter,5세대 차량수송화차
+str_mu_wagon_gen5_container_carrier,5세대 컨테이너 화차
+str_mu_wagon_gen5_centerbeam,5세대 구획평판화차
+str_mu_wagon_gen5_container_doublestack,5세대 컨테이너 복화차
+str_mu_wagon_gen5_superheavy_flatcar,5세대 초중량 평판화차
+str_mu_wagon_gen6_flatcar,
+str_mu_wagon_gen6_heavy_flatcar,
+str_mu_wagon_gen6_boxcar_type1,
+str_mu_wagon_gen6_boxcar_type2,
+str_mu_wagon_gen6_tanker,
+str_mu_wagon_gen6_gondola,
+str_mu_wagon_gen6_silo_type1,
+str_mu_wagon_gen6_silo_type2,
+str_mu_wagon_gen6_hopper_type1,
+str_mu_wagon_gen6_hopper_type2,
+str_mu_wagon_gen6_car_transporter,
+str_mu_wagon_gen6_container_carrier,
+str_mu_wagon_gen6_centerbeam,
+str_mu_wagon_gen6_container_doublestack,
+str_mu_wagon_gen6_superheavy_flatcar,
+str_mu_wagon_service_car_type1,업무차
+str_mu_wagon_service_car_type2,업무차
+,
+,
+str_mu_coach_gen1_wooden_2_axle_compartment_coach,목제 2차축 객차
+str_mu_coach_gen1_wooden_2_axle_regional_coach,목제 2차축 지역간 객차
+str_mu_coach_gen1_wooden_2_axle_mail_coach,목제 2차축 우편차
+str_mu_coach_gen1_clerestory_compartment_coach,통풍 컴파트먼트 객차
+str_mu_coach_gen1_clerestory_regional_coach,채광창이 있는 지역간 객차
+str_mu_coach_gen1_clerestory_mail_coach,고측창 우편차
+str_mu_coach_gen1_wooden_3_axle_compartment_coach,목재 3차축 객차
+str_mu_coach_gen1_wooden_3_axle_regional_coach,목제 3차축 지역간 객차
+str_mu_coach_gen1_wooden_3_axle_mail_coach,목재 3차축 우편차
+str_mu_coach_gen2_heavyweight_intercity_coach,중량 도시간 객차
+str_mu_coach_gen2_heavyweight_mail_coach,중량 우편차
+str_mu_coach_gen2_steel_intercity_coach,철제 도시간 객차
+str_mu_coach_gen2_steel_compartment_coach,철제 컴파트먼트 객차
+str_mu_coach_gen2_steel_regional_coach,철제 지역간 객차
+str_mu_coach_gen2_steel_mail_coach,철제 우편차
+str_mu_coach_gen2_steel_2_axle_compartment_coach,철제 2차축 객차
+str_mu_coach_gen2_steel_2_axle_regional_coach,철제 2차축 지역간 객차
+str_mu_coach_gen2_steel_2_axle_mail_coach,철제 2차축 우편차
+str_mu_coach_gen2_steel_3_axle_compartment_coach,철제 3차축 객차
+str_mu_coach_gen2_steel_3_axle_regional_coach,철제 3차축 지역간 객차
+str_mu_coach_gen2_steel_3_axle_mail_coach,철제 3차축 우편차
+str_mu_coach_gen3_steel_lightweight_intercity_coach,철제 경량 도시간 객차
+str_mu_coach_gen3_steel_lightweight_regional_coach,철제 경량 지역간 객차
+str_mu_coach_gen3_steel_lightweight_mail_coach,철제 경량 우편차
+str_mu_coach_gen3_aluminium_lightweight_intercity_coach,알루미늄제 경량 도시간 객차
+str_mu_coach_gen3_aluminium_lightweight_regional_coach,알루미늄제 경량화 객차
+str_mu_coach_gen3_aluminium_lightweight_mail_coach,알루미늄제 경량화 우편차
+str_mu_coach_gen3_gallery_car,전망칸
+str_mu_coach_gen3_mk1_intercity_coach,Mk1 도시간 객차
+str_mu_coach_gen3_mk1_regional_coach,Mk1 지역간 객차
+str_mu_coach_gen3_mk1_mail_coach,Mk1 우편차
+str_mu_coach_gen3_uic_x_intercity_coach,UIC-X 도시간 객차
+str_mu_coach_gen3_tee_intercity_coach,TEE 도시간 객차
+str_mu_coach_gen3_uic_x_regional_coach,UIC-X 지역간 객차
+str_mu_coach_gen3_umbauwagen_local_coach,'움바우바겐' 지역 객차
+str_mu_coach_gen3_doppelstockwagen_local_coach,2층객차
+str_mu_coach_gen3_uic_x_mail_coach,UIC-X 우편차
+str_mu_coach_gen3_indian_intercity_coach,인도 도시간 객차
+str_mu_coach_gen3_indian_local_coach,인도 지역 객차
+str_mu_coach_gen3_indian_regional_coach,인도 지역간 객차
+str_mu_coach_gen3_indian_mail_coach,인도 우편차
+str_mu_coach_gen4_eurofima_intercity_coach,유럽 표준 객차
+str_mu_coach_gen4_interregio_coach,Regio간 객차
+str_mu_coach_gen4_silberling_commuter_coach,'실버링' 통근 객차
+str_mu_coach_gen4_eurofima_mail_coach,유럽 표준 우편차
+str_mu_coach_gen4_double_decker_coach,2층 객차
+str_mu_coach_gen4_russian_intercity_coach,러시아 도시간 객차
+str_mu_coach_gen4_russian_regional_coach,러시아 지역간 객차
+str_mu_coach_gen4_russian_mail_coach,러시아 우편차
+str_mu_coach_gen4_superliner_coach,수퍼라이너 객차
+str_mu_coach_gen4_superliner_california,수퍼라이너 캘리포니아
+str_mu_coach_gen4_amfleet_regional_coach,암플리트 지역간 객차
+str_mu_coach_gen4_amfleet_intercity_coach,암플릿트 도시간 객차
+str_mu_coach_gen4_comet_commuter_coach,코멧 통근 객차
+str_mu_coach_gen4_horizon_regional_coach,호라이즌 지역간 객차
+str_mu_coach_gen4_horizon_baggage_coach,호라이즌 수화물 객차
+str_mu_coach_gen4_bombardier_bi_level,2단식 설상차
+str_mu_coach_gen5_high_speed_coach,고속형 객차
+str_mu_coach_gen5_modern_regional_coach,현대식 지역간 객차
+str_mu_coach_gen5_modern_commuter_coach,현대식 통근 객차
+str_mu_coach_gen5_modern_double_decker_coach,현대식 2층객차
+str_mu_coach_gen5_high_speed_double_decker_ic2000,고속형 복층객차
+str_mu_coach_gen5_high_speed_mail_coach,고속형 우편차
+str_mu_coach_gen5_talgo_pendular,탈고 펜듈러
+str_mu_coach_gen5_talgo_pendular_mail,Talgo Pendular 우편화차
+str_mu_coach_gen6_grand_voyager_coach,대형 여객차
+str_mu_coach_gen6_grand_regio_coach,대형 Regio 객차
+str_mu_coach_gen6_metropolis_coach,Metropolis Coach
+str_mu_coach_gen6_speedmail_coach,특급우편 수송차
+str_mu_coach_gen6_super_regio_coach,중형 Regio 객차
+str_mu_coach_gen6_super_voyager_coach,중형 여객차

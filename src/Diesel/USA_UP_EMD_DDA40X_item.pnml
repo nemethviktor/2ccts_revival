@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_diesel_usa_up_emd_dda40x) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["power/diesel", "flag/US"];
+	badges: ["region/america/northern", "flag/US", "power/diesel"];
 
     }
     graphics {

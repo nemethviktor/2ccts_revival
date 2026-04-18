@@ -62,7 +62,7 @@ item(FEAT_TRAINS, item_dmu_france_sncf_t_2000) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["power/turbine", "flag/FR"];
+	badges: ["region/europe/western", "flag/FR", "power/turbine"];
 
     }
     graphics {

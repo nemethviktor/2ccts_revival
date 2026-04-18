@@ -62,7 +62,7 @@ item(FEAT_TRAINS, item_emu_romania_cfr_58) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["power/electric/ac", "flag/RO"];
+	badges: ["region/europe/eastern", "flag/RO", "power/electric/ac"];
 
     }
     graphics {

@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_electric_chile_efe_e_17) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["power/electric/dc", "flag/CL"];
+	badges: ["region/america/south", "flag/CL", "power/electric/dc"];
 
     }
     graphics {

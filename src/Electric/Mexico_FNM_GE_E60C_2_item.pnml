@@ -47,7 +47,7 @@ item(FEAT_TRAINS, item_electric_mexico_fnm_ge_e60c_2) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["power/electric", "flag/MX"];
+	badges: ["region/america/northern", "flag/MX", "power/electric"];
 
     }
     graphics {

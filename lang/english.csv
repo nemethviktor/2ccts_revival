@@ -1,4 +1,4 @@
-﻿##grflangid 0x01
+﻿##grflangid 0x01,
 STR_GRF_NAME,{TITLE}
 STR_GRF_DESCRIPTION,{SILVER}2cc Trains of the World in NML {}{}(c)2ccts Revival {}License GPLv2 or higher. {}See readme for details.
 STR_GRF_URL,https://github.com/nemethviktor/2ccts_revival
@@ -94,6 +94,7 @@ STR_ROLE_BANKING,Banking
 STR_ROLE_SNOWPLOUGH,Snowplough
 STR_ROLE_UTILITY,Utility
 STR_ROLE_PROTOTYPE,Prototype
+STR_REGION,Region
 STR_REGION_AMERICA,Americas
 STR_REGION_AMERICA_NORTHERN,Northern America
 STR_REGION_AMERICA_CENTRAL,Central America

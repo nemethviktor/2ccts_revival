@@ -58,7 +58,7 @@ item(FEAT_TRAINS, item_emu_hungary_mav_bdvmot) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["power/electric/ac", "flag/HU"];
+	badges: ["region/europe/eastern", "flag/HU", "power/electric/ac"];
 
     }
     graphics {

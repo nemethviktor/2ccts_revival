@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_steam_czech_republic_cd_4590) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["power/steam", "flag/CZ"];
+	badges: ["region/europe/eastern", "flag/CZ", "power/steam"];
 
     }
     graphics {

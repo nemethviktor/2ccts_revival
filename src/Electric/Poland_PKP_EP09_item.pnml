@@ -47,7 +47,7 @@ item(FEAT_TRAINS, item_electric_poland_pkp_ep09) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["power/electric/dc", "flag/PL"];
+	badges: ["region/europe/eastern", "flag/PL", "power/electric/dc"];
 
     }
     graphics {

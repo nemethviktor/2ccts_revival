@@ -62,7 +62,7 @@ item(FEAT_TRAINS, item_rbd_chile_efe_buscarril) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["power/diesel", "flag/CL"];
+	badges: ["region/america/south", "flag/CL", "power/diesel"];
 
     }
     graphics {

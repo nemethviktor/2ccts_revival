@@ -58,7 +58,7 @@ item(FEAT_TRAINS, item_emu_turkey_tcdd_e8000) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["power/electric/ac", "flag/TR"];
+	badges: ["region/asia", "flag/TR", "power/electric/ac"];
 
     }
     graphics {

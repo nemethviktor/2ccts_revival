@@ -82,9 +82,9 @@ def generate_vehicle_id_pnml():
     for power in powers:
         content.append(f"""\t"{power}",\n""")
 
-    # content.append("\n// Regions\n")
-    # for region in regions:
-    #    content.append(f"""\t"{region}",\n""")
+    content.append("\n// Regions\n")
+    for region in regions:
+        content.append(f"""\t"{region}",\n""")
 
     # content.append("\n// Roles\n")
     # for role in roles:
@@ -128,6 +128,22 @@ item (FEAT_BADGES, {power_underlined}) {{
         if '_' in power_underlined:
             content.append(
                 f"""\n\tgraphics {{default: sprite_{power_underlined};}}\n""")
+        content.append(f"}}\n")
+
+    content.append("\n")
+
+    content.append("\n// Regions")
+    for region in regions:
+        region_underlined = region.replace('/', '_')
+        content.append(f"""\n\t
+item (FEAT_BADGES, {region_underlined}) {{
+    property {{
+        label: "{region}";
+        name: string(STR_{region_underlined.upper()});""")
+        if '_' in region_underlined:
+            content.append(f"""
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);""")
+        content.append(f"\n\t}}")
         content.append(f"}}\n")
 
     content.append("\n")

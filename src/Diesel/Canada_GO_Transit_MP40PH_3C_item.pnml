@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_diesel_canada_go_transit_mp40ph_3c) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["power/diesel", "flag/CA"];
+	badges: ["region/america/northern", "flag/CA", "power/diesel"];
 
     }
     graphics {

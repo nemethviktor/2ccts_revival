@@ -64,7 +64,7 @@ item(FEAT_TRAINS, item_mglv_japan_mlx01_901) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["power/maglev", "flag/JP"];
+	badges: ["region/asia", "flag/JP", "power/maglev"];
 
     }
     graphics {

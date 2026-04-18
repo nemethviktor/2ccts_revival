@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_electric_usa_amtrak_hhp_8) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["power/electric", "flag/US"];
+	badges: ["region/america/northern", "flag/US", "power/electric"];
 
     }
     graphics {

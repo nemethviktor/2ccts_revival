@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_steam_france_sncf_150b) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["power/steam", "flag/FR"];
+	badges: ["region/europe/western", "flag/FR", "power/steam"];
 
     }
     graphics {

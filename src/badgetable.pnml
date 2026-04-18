@@ -535,6 +535,36 @@ spriteset (sprite_flag_WRLD) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/wrld.png"]}b
 	"power/turbine",
 	"power/maglev",
 	"power/metro",
+
+// Regions
+	"region",
+	"region/africa",
+	"region/africa/eastern",
+	"region/africa/middle",
+	"region/africa/northern",
+	"region/africa/southern",
+	"region/africa/western",
+	"region/america",
+	"region/america/caribbean",
+	"region/america/central",
+	"region/america/northern",
+	"region/america/south",
+	"region/asia",
+	"region/asia/central",
+	"region/asia/eastern",
+	"region/asia/southeastern",
+	"region/asia/southern",
+	"region/asia/western",
+	"region/europe",
+	"region/europe/eastern",
+	"region/europe/northern",
+	"region/europe/southern",
+	"region/europe/western",
+	"region/oceania",
+	"region/oceania/australia_and_new_zealand",
+	"region/oceania/melanesia",
+	"region/oceania/micronesia",
+	"region/oceania/polynesia",
 }
 
 // Flag Items
@@ -3183,4 +3213,229 @@ item (FEAT_BADGES, power_metro) {
 	}
 	graphics {default: sprite_power_metro;}
 }
+
+
+// Regions
+	
+item (FEAT_BADGES, region) {
+    property {
+        label: "region";
+        name: string(STR_REGION);
+	}}
+
+	
+item (FEAT_BADGES, region_africa) {
+    property {
+        label: "region/africa";
+        name: string(STR_REGION_AFRICA);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, region_africa_eastern) {
+    property {
+        label: "region/africa/eastern";
+        name: string(STR_REGION_AFRICA_EASTERN);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, region_africa_middle) {
+    property {
+        label: "region/africa/middle";
+        name: string(STR_REGION_AFRICA_MIDDLE);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, region_africa_northern) {
+    property {
+        label: "region/africa/northern";
+        name: string(STR_REGION_AFRICA_NORTHERN);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, region_africa_southern) {
+    property {
+        label: "region/africa/southern";
+        name: string(STR_REGION_AFRICA_SOUTHERN);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, region_africa_western) {
+    property {
+        label: "region/africa/western";
+        name: string(STR_REGION_AFRICA_WESTERN);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, region_america) {
+    property {
+        label: "region/america";
+        name: string(STR_REGION_AMERICA);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, region_america_caribbean) {
+    property {
+        label: "region/america/caribbean";
+        name: string(STR_REGION_AMERICA_CARIBBEAN);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, region_america_central) {
+    property {
+        label: "region/america/central";
+        name: string(STR_REGION_AMERICA_CENTRAL);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, region_america_northern) {
+    property {
+        label: "region/america/northern";
+        name: string(STR_REGION_AMERICA_NORTHERN);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, region_america_south) {
+    property {
+        label: "region/america/south";
+        name: string(STR_REGION_AMERICA_SOUTH);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, region_asia) {
+    property {
+        label: "region/asia";
+        name: string(STR_REGION_ASIA);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, region_asia_central) {
+    property {
+        label: "region/asia/central";
+        name: string(STR_REGION_ASIA_CENTRAL);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, region_asia_eastern) {
+    property {
+        label: "region/asia/eastern";
+        name: string(STR_REGION_ASIA_EASTERN);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, region_asia_southeastern) {
+    property {
+        label: "region/asia/southeastern";
+        name: string(STR_REGION_ASIA_SOUTHEASTERN);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, region_asia_southern) {
+    property {
+        label: "region/asia/southern";
+        name: string(STR_REGION_ASIA_SOUTHERN);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, region_asia_western) {
+    property {
+        label: "region/asia/western";
+        name: string(STR_REGION_ASIA_WESTERN);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, region_europe) {
+    property {
+        label: "region/europe";
+        name: string(STR_REGION_EUROPE);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, region_europe_eastern) {
+    property {
+        label: "region/europe/eastern";
+        name: string(STR_REGION_EUROPE_EASTERN);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, region_europe_northern) {
+    property {
+        label: "region/europe/northern";
+        name: string(STR_REGION_EUROPE_NORTHERN);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, region_europe_southern) {
+    property {
+        label: "region/europe/southern";
+        name: string(STR_REGION_EUROPE_SOUTHERN);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, region_europe_western) {
+    property {
+        label: "region/europe/western";
+        name: string(STR_REGION_EUROPE_WESTERN);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, region_oceania) {
+    property {
+        label: "region/oceania";
+        name: string(STR_REGION_OCEANIA);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, region_oceania_australia_and_new_zealand) {
+    property {
+        label: "region/oceania/australia_and_new_zealand";
+        name: string(STR_REGION_OCEANIA_AUSTRALIA_AND_NEW_ZEALAND);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, region_oceania_melanesia) {
+    property {
+        label: "region/oceania/melanesia";
+        name: string(STR_REGION_OCEANIA_MELANESIA);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, region_oceania_micronesia) {
+    property {
+        label: "region/oceania/micronesia";
+        name: string(STR_REGION_OCEANIA_MICRONESIA);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, region_oceania_polynesia) {
+    property {
+        label: "region/oceania/polynesia";
+        name: string(STR_REGION_OCEANIA_POLYNESIA);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
 

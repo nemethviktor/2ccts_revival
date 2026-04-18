@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_electric_hungary_mav_class_v43) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["power/electric/ac", "flag/HU"];
+	badges: ["region/europe/eastern", "flag/HU", "power/electric/ac"];
 
     }
     graphics {

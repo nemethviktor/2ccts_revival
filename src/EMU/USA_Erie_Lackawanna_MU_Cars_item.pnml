@@ -62,7 +62,7 @@ item(FEAT_TRAINS, item_emu_usa_erie_lackawanna_mu_cars) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["power/electric/dc", "flag/US"];
+	badges: ["region/america/northern", "flag/US", "power/electric/dc"];
 
     }
     graphics {

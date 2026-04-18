@@ -44,7 +44,7 @@ item(FEAT_TRAINS, item_mtro_uk_dlr_p86) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["power/metro", "flag/GB"];
+	badges: ["region/europe/northern", "flag/GB", "power/metro"];
 
     }
     graphics {

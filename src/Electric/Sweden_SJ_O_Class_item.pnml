@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_electric_sweden_sj_o_class) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["power/electric/ac", "flag/SE"];
+	badges: ["region/europe/northern", "flag/SE", "power/electric/ac"];
 
     }
     graphics {

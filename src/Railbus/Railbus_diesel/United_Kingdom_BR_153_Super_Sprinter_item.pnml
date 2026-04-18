@@ -58,7 +58,7 @@ item(FEAT_TRAINS, item_rbd_united_kingdom_br_153_super_sprinter) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["power/diesel", "flag/GB"];
+	badges: ["region/europe/northern", "flag/GB", "power/diesel"];
 
     }
     graphics {

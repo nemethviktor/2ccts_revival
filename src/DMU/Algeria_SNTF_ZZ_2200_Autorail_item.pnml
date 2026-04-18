@@ -58,7 +58,7 @@ item(FEAT_TRAINS, item_dmu_algeria_sntf_zz_2200_autorail) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["power/diesel", "flag/DZ"];
+	badges: ["region/africa", "flag/DZ", "power/diesel"];
 
     }
     graphics {

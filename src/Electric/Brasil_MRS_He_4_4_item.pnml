@@ -47,7 +47,7 @@ item(FEAT_TRAINS, item_electric_brasil_mrs_he_4_4) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["power/electric/dc", "flag/BR"];
+	badges: ["region/america/south", "flag/BR", "power/electric/dc"];
 
     }
     graphics {

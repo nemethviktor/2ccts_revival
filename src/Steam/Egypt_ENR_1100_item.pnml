@@ -49,7 +49,7 @@ item(FEAT_TRAINS, item_steam_egypt_enr_1100) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["power/steam", "flag/EG"];
+	badges: ["region/africa", "flag/EG", "power/steam"];
 
     }
     graphics {

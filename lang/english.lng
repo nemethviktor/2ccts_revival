@@ -96,6 +96,7 @@ STR_ROLE_BANKING                                                  :Banking
 STR_ROLE_SNOWPLOUGH                                               :Snowplough
 STR_ROLE_UTILITY                                                  :Utility
 STR_ROLE_PROTOTYPE                                                :Prototype
+STR_REGION                                                        :Region
 STR_REGION_AMERICA                                                :Americas
 STR_REGION_AMERICA_NORTHERN                                       :Northern America
 STR_REGION_AMERICA_CENTRAL                                        :Central America

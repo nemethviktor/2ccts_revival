@@ -44,7 +44,7 @@ item(FEAT_TRAINS, item_mtro_germany_db_et_171) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["power/metro", "flag/DE"];
+	badges: ["region/europe/western", "flag/DE", "power/metro"];
 
     }
     graphics {

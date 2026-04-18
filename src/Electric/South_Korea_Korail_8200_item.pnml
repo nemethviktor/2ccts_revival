@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_electric_south_korea_korail_8200) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["power/electric/ac", "flag/KR"];
+	badges: ["region/asia", "flag/KR", "power/electric/ac"];
 
     }
     graphics {

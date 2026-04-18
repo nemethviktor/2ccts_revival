@@ -58,7 +58,7 @@ item(FEAT_TRAINS, item_rbd_italy_fs_aln_668) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["power/diesel", "flag/IT"];
+	badges: ["region/europe/southern", "flag/IT", "power/diesel"];
 
     }
     graphics {

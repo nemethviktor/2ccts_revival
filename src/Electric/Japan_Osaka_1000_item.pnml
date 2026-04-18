@@ -44,7 +44,7 @@ item(FEAT_TRAINS, item_mtro_japan_osaka_1000) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["power/metro", "flag/JP"];
+	badges: ["region/asia", "flag/JP", "power/metro"];
 
     }
     graphics {

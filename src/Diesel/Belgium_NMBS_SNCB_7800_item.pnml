@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_diesel_belgium_nmbs_sncb_7800) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["power/diesel", "flag/BE"];
+	badges: ["region/europe/western", "flag/BE", "power/diesel"];
 
     }
     graphics {

@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_steam_kenya_east_african_railway_31) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["power/steam", "flag/KE"];
+	badges: ["region/africa", "flag/KE", "power/steam"];
 
     }
     graphics {

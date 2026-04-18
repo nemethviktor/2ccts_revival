@@ -62,7 +62,7 @@ item(FEAT_TRAINS, item_rbe_japan_choshi_deha_1000) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["power/electric/dc", "flag/JP"];
+	badges: ["region/asia", "flag/JP", "power/electric/dc"];
 
     }
     graphics {

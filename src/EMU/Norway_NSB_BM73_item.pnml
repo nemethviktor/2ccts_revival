@@ -63,7 +63,7 @@ item(FEAT_TRAINS, item_emu_norway_nsb_bm73) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["power/electric/ac", "flag/NO"];
+	badges: ["region/europe/northern", "flag/NO", "power/electric/ac"];
 
     }
     graphics {
