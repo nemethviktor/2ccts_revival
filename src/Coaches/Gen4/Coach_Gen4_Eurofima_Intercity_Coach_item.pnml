@@ -58,5 +58,7 @@ item(FEAT_TRAINS, item_mu_coach_gen4_eurofima_intercity_coach) {
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
         // PURCHASETEXT_SWITCH_CALL // this is actually blank
         default: switch_mu_coach_gen4_eurofima_intercity_coach_livery;
+        // Random flip for variety
+        reverse_build_probability: return 50;
     }
 }

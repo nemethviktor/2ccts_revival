@@ -6,7 +6,8 @@
 	- Added AC/DC split for Electric badges
 	- Automated language creation
 	- Added roles and region badges
-	- Added support for Driving Cabs via new template `TPL_04S`
+	- Added support for Driving Cabs (sometimes referred to as DC or DT, just to keep things confusing) via new template `TPL_04S`
+	- Added random flip to coaches that are non-DT
 - VEHICLES CHANGES:
 	- Added `Hessian Ludwig Rlw Thomas` using `Victorian Railways Rowan Railmotor` graphics but different/relevant specs
 	- Added `NÖLB 30-33` using `NÖLB 1` graphics but different/relevant specs
@@ -21,7 +22,7 @@
 	- Added `Hyundai Rotem/Skoda TRC E6800` (Electric) using modified `CSD 380` graphics.
 	- Cloned `Brooklyn Union Gate Car` from Single-Metro to normal Metro - there was a `1300` series, which was the Single-Metro and an `Elevated`, which was the "normal". 
 	- Added `"Trans Euro Night" Sleeper` and `"CityNightLine" Sleeper` ref #4
-
+	- Changed some coaches to be DT-compatible #5
 
 **3.3-RC1 [20260412]**
 - CODE CHANGES:

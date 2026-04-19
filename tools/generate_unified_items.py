@@ -849,19 +849,25 @@ def generate_unified_items():
             ]:
                 content.append(
                     f"        default: switch_{VEHIDCODE_lcase}_livery;\n")
-            elif TEMPLATE_ID_FULL in [
-                'TPL_04S',
-            ]:
+            elif TEMPLATE_ID_FULL in ['TPL_04S']:
                 content.append(
                     f"        default: switch_{VEHIDCODE_lcase}_position;\n")
 
-                content.append(
-                    f"        // Always flip because DT has to face backwards\n")
-                content.append(
-                    f"        reverse_build_probability: return 100;\n")
             else:
                 # I've lost track of this sh.t by now.
                 content.append(f"        default: switch_{VEHIDCODE_lcase};\n")
+
+            if row['COST_CAT'] == 'COACH':
+                if TEMPLATE_ID_FULL in ['TPL_04S']:
+                    content.append(
+                        f"        // Always flip because DT has to face backwards\n")
+                    content.append(
+                        f"        reverse_build_probability: return 100;\n")
+                else:
+                    content.append(
+                        f"        // Random flip for variety\n")
+                    content.append(
+                        f"        reverse_build_probability: return 50;\n")
         elif category in ['DMU', 'EMU', 'METRO', 'MAGLEVMU']:
             content.append(
                 f"        default: switch_{VEHIDCODE_lcase}_reversed;\n")

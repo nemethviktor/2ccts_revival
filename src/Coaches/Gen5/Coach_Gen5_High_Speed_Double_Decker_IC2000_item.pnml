@@ -58,5 +58,7 @@ item(FEAT_TRAINS, item_mu_coach_gen5_high_speed_double_decker_ic2000) {
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
         // PURCHASETEXT_SWITCH_CALL // this is actually blank
         default: switch_mu_coach_gen5_high_speed_double_decker_ic2000_livery;
+        // Random flip for variety
+        reverse_build_probability: return 50;
     }
 }
