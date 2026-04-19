@@ -85,20 +85,26 @@ STR_PARAM_LOADINGSPEED_ULTRA                                      :Prawie natych
 # STR_CLASS_LIVERY                                                  : not translated
 # STR_CLASS_REGION                                                  : not translated
 # STR_CLASS_ZONE                                                    : not translated
-# STR_ROLE_PASSENGER                                                : not translated
-# STR_ROLE_FREIGHT                                                  : not translated
-# STR_ROLE_MIXED                                                    : not translated
-# STR_ROLE_EXPRESS_PASSENGER                                        : not translated
-# STR_ROLE_EXPRESS_FREIGHT                                          : not translated
+# STR_ROLE                                                          : not translated
+# STR_ROLE_COACH__COMMUTER_                                         : not translated
+# STR_ROLE_COACH__EXPRESS_                                          : not translated
+# STR_ROLE_COACH__HS_                                               : not translated
+# STR_ROLE_COACH__MAIL_                                             : not translated
+# STR_ROLE_COACH__REGIONAL__                                        : not translated
+# STR_ROLE_COMMUTER___URBAN                                         : not translated
+# STR_ROLE_EXPRESS__PASSENGER_                                      : not translated
+# STR_ROLE_EXPRESS__UNIVERSAL_                                      : not translated
+# STR_ROLE_GENERAL_PURPOSE                                          : not translated
 # STR_ROLE_HEAVY_FREIGHT                                            : not translated
 # STR_ROLE_LIGHT_FREIGHT                                            : not translated
-# STR_ROLE_MAIL                                                     : not translated
-# STR_ROLE_RESTAURANT_CAR                                           : not translated
-# STR_ROLE_SHUNTING                                                 : not translated
-# STR_ROLE_BANKING                                                  : not translated
-# STR_ROLE_SNOWPLOUGH                                               : not translated
-# STR_ROLE_UTILITY                                                  : not translated
-# STR_ROLE_PROTOTYPE                                                : not translated
+# STR_ROLE_METRO_RAPID_TRANSIT                                      : not translated
+# STR_ROLE_POWERED_UNPOWERED_SUNDRY                                 : not translated
+# STR_ROLE_REGIONAL_PASSENGER                                       : not translated
+# STR_ROLE_SHUNTER                                                  : not translated
+# STR_ROLE_STANDARD_FREIGHT                                         : not translated
+# STR_ROLE_ULTRA_HIGH_SPEED__PAX_                                   : not translated
+# STR_ROLE_ULTRA_HIGH_SPEED__UNIVERSAL_                             : not translated
+# STR_ROLE_WAGON                                                    : not translated
 # STR_REGION                                                        : not translated
 # STR_REGION_AMERICA                                                : not translated
 # STR_REGION_AMERICA_NORTHERN                                       : not translated
@@ -514,6 +520,8 @@ str_mu_coach_gen5_talgo_pendular_mail                             :Wagon pocztow
 # str_mu_coach_gen6_speedmail_coach                                 : not translated
 # str_mu_coach_gen6_super_regio_coach                               : not translated
 # str_mu_coach_gen6_super_voyager_coach                             : not translated
+# str_mu_coach_gen6_citynightline_sleeper                           : not translated
+# str_mu_coach_gen6_trans_euro_night_sleeper                        : not translated
 
 # Dieselengine
 str_diesel_germany_db_kof_ii                                      :Kof II / DB 322 (Diesel)

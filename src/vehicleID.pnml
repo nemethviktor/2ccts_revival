@@ -8108,8 +8108,8 @@ item(FEAT_TRAINS, item_mu_coach_gen6_metropolis_coach, 11067) {}
 item(FEAT_TRAINS, item_mu_coach_gen6_speedmail_coach, 11068) {}
 item(FEAT_TRAINS, item_mu_coach_gen6_super_regio_coach, 11069) {}
 item(FEAT_TRAINS, item_mu_coach_gen6_super_voyager_coach, 11070) {}
-// 11071 free
-// 11072 free
+item(FEAT_TRAINS, item_mu_coach_gen6_citynightline_sleeper, 11071) {}
+item(FEAT_TRAINS, item_mu_coach_gen6_trans_euro_night_sleeper, 11072) {}
 // 11073 free
 // 11074 free
 // 11075 free

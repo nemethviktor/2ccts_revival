@@ -269,6 +269,12 @@
 #include "src/Coaches/Gen6/Coach_Gen6_Super_Voyager_Coach_graphics.pnml"
 #include "src/Coaches/Gen6/Coach_Gen6_Super_Voyager_Coach_item.pnml"
 
+#include "src/Coaches/Gen6/Coach_Gen6_CityNightLine_Sleeper_graphics.pnml"
+#include "src/Coaches/Gen6/Coach_Gen6_CityNightLine_Sleeper_item.pnml"
+
+#include "src/Coaches/Gen6/Coach_Gen6_Trans_Euro_Night_Sleeper_graphics.pnml"
+#include "src/Coaches/Gen6/Coach_Gen6_Trans_Euro_Night_Sleeper_item.pnml"
+
 
 //// DMU
 #include "src/DMU/Denmark_DSB_IC4_graphics.pnml"
