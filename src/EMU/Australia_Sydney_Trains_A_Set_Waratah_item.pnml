@@ -58,7 +58,7 @@ item(FEAT_TRAINS, item_emu_australia_sydney_trains_a_set_waratah) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/oceania", "flag/AU", "power/electric/dc"];
+	badges: ["region/oceania", "flag/AU", "power/electric/dc", "role/commuter___urban"];
 
     }
     graphics {

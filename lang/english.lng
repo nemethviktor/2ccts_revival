@@ -82,20 +82,26 @@ STR_CLASS_PROPULSION                                              :Propulsion
 STR_CLASS_LIVERY                                                  :Livery
 STR_CLASS_REGION                                                  :Region
 STR_CLASS_ZONE                                                    :Zone
-STR_ROLE_PASSENGER                                                :Passenger
-STR_ROLE_FREIGHT                                                  :Freight
-STR_ROLE_MIXED                                                    :Mixed
-STR_ROLE_EXPRESS_PASSENGER                                        :Express passenger
-STR_ROLE_EXPRESS_FREIGHT                                          :Express freight
-STR_ROLE_HEAVY_FREIGHT                                            :Heavy freight
-STR_ROLE_LIGHT_FREIGHT                                            :Light freight
-STR_ROLE_MAIL                                                     :Mail
-STR_ROLE_RESTAURANT_CAR                                           :Restaurant car
-STR_ROLE_SHUNTING                                                 :Shunting
-STR_ROLE_BANKING                                                  :Banking
-STR_ROLE_SNOWPLOUGH                                               :Snowplough
-STR_ROLE_UTILITY                                                  :Utility
-STR_ROLE_PROTOTYPE                                                :Prototype
+STR_ROLE                                                          :Role
+STR_ROLE_COACH__COMMUTER_                                         :Coach (Commuter)
+STR_ROLE_COACH__EXPRESS_                                          :Coach (Express)
+STR_ROLE_COACH__HS_                                               :Coach (HS)
+STR_ROLE_COACH__MAIL_                                             :Coach (Mail)
+STR_ROLE_COACH__REGIONAL__                                        :Coach (Regional))
+STR_ROLE_COMMUTER___URBAN                                         :Commuter / Urban
+STR_ROLE_EXPRESS__PASSENGER_                                      :Express (Passenger)
+STR_ROLE_EXPRESS__UNIVERSAL_                                      :Express (Universal)
+STR_ROLE_GENERAL_PURPOSE                                          :General Purpose
+STR_ROLE_HEAVY_FREIGHT                                            :Heavy Freight
+STR_ROLE_LIGHT_FREIGHT                                            :Light Freight
+STR_ROLE_METRO_RAPID_TRANSIT                                      :Metro/Rapid Transit
+STR_ROLE_POWERED_UNPOWERED_SUNDRY                                 :Powered/Unpowered Sundry
+STR_ROLE_REGIONAL_PASSENGER                                       :Regional Passenger
+STR_ROLE_SHUNTER                                                  :Shunter
+STR_ROLE_STANDARD_FREIGHT                                         :Standard Freight
+STR_ROLE_ULTRA_HIGH_SPEED__PAX_                                   :Ultra-High-Speed (Pax)
+STR_ROLE_ULTRA_HIGH_SPEED__UNIVERSAL_                             :Ultra-High-Speed (Universal)
+STR_ROLE_WAGON                                                    :Wagon
 STR_REGION                                                        :Region
 STR_REGION_AMERICA                                                :Americas
 STR_REGION_AMERICA_NORTHERN                                       :Northern America

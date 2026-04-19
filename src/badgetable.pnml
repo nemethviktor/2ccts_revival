@@ -565,6 +565,28 @@ spriteset (sprite_flag_WRLD) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/wrld.png"]}b
 	"region/oceania/melanesia",
 	"region/oceania/micronesia",
 	"region/oceania/polynesia",
+
+// Roles
+	"role",
+	"role/coach__commuter_",
+	"role/coach__express_",
+	"role/coach__hs_",
+	"role/coach__mail_",
+	"role/coach__regional__",
+	"role/commuter___urban",
+	"role/express__passenger_",
+	"role/express__universal_",
+	"role/general_purpose",
+	"role/heavy_freight",
+	"role/light_freight",
+	"role/metro_rapid_transit",
+	"role/powered_unpowered_sundry",
+	"role/regional_passenger",
+	"role/shunter",
+	"role/standard_freight",
+	"role/ultra_high_speed__pax_",
+	"role/ultra_high_speed__universal_",
+	"role/wagon",
 }
 
 // Flag Items
@@ -3436,6 +3458,167 @@ item (FEAT_BADGES, region_oceania_polynesia) {
     property {
         label: "region/oceania/polynesia";
         name: string(STR_REGION_OCEANIA_POLYNESIA);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+
+// Roles
+	
+item (FEAT_BADGES, role) {
+    property {
+        label: "role";
+        name: string(STR_ROLE);
+	}}
+
+	
+item (FEAT_BADGES, role_coach__commuter_) {
+    property {
+        label: "role/coach__commuter_";
+        name: string(STR_ROLE_COACH__COMMUTER_);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, role_coach__express_) {
+    property {
+        label: "role/coach__express_";
+        name: string(STR_ROLE_COACH__EXPRESS_);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, role_coach__hs_) {
+    property {
+        label: "role/coach__hs_";
+        name: string(STR_ROLE_COACH__HS_);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, role_coach__mail_) {
+    property {
+        label: "role/coach__mail_";
+        name: string(STR_ROLE_COACH__MAIL_);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, role_coach__regional__) {
+    property {
+        label: "role/coach__regional__";
+        name: string(STR_ROLE_COACH__REGIONAL__);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, role_commuter___urban) {
+    property {
+        label: "role/commuter___urban";
+        name: string(STR_ROLE_COMMUTER___URBAN);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, role_express__passenger_) {
+    property {
+        label: "role/express__passenger_";
+        name: string(STR_ROLE_EXPRESS__PASSENGER_);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, role_express__universal_) {
+    property {
+        label: "role/express__universal_";
+        name: string(STR_ROLE_EXPRESS__UNIVERSAL_);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, role_general_purpose) {
+    property {
+        label: "role/general_purpose";
+        name: string(STR_ROLE_GENERAL_PURPOSE);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, role_heavy_freight) {
+    property {
+        label: "role/heavy_freight";
+        name: string(STR_ROLE_HEAVY_FREIGHT);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, role_light_freight) {
+    property {
+        label: "role/light_freight";
+        name: string(STR_ROLE_LIGHT_FREIGHT);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, role_metro_rapid_transit) {
+    property {
+        label: "role/metro_rapid_transit";
+        name: string(STR_ROLE_METRO_RAPID_TRANSIT);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, role_powered_unpowered_sundry) {
+    property {
+        label: "role/powered_unpowered_sundry";
+        name: string(STR_ROLE_POWERED_UNPOWERED_SUNDRY);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, role_regional_passenger) {
+    property {
+        label: "role/regional_passenger";
+        name: string(STR_ROLE_REGIONAL_PASSENGER);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, role_shunter) {
+    property {
+        label: "role/shunter";
+        name: string(STR_ROLE_SHUNTER);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, role_standard_freight) {
+    property {
+        label: "role/standard_freight";
+        name: string(STR_ROLE_STANDARD_FREIGHT);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, role_ultra_high_speed__pax_) {
+    property {
+        label: "role/ultra_high_speed__pax_";
+        name: string(STR_ROLE_ULTRA_HIGH_SPEED__PAX_);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, role_ultra_high_speed__universal_) {
+    property {
+        label: "role/ultra_high_speed__universal_";
+        name: string(STR_ROLE_ULTRA_HIGH_SPEED__UNIVERSAL_);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}}
+
+	
+item (FEAT_BADGES, role_wagon) {
+    property {
+        label: "role/wagon";
+        name: string(STR_ROLE_WAGON);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
 	}}
 

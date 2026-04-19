@@ -64,7 +64,7 @@ item(FEAT_TRAINS, item_dmu_canada_cnr_turbo_train) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/america/northern", "flag/CA", "power/turbine"];
+	badges: ["region/america/northern", "flag/CA", "power/turbine", "role/express__passenger_"];
 
     }
     graphics {

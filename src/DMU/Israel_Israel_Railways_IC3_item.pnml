@@ -63,7 +63,7 @@ item(FEAT_TRAINS, item_dmu_israel_israel_railways_ic3) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/asia", "flag/IL", "power/diesel"];
+	badges: ["region/asia", "flag/IL", "power/diesel", "role/express__passenger_"];
 
     }
     graphics {

@@ -47,7 +47,7 @@ item(FEAT_TRAINS, item_steam_argentina_fcgr_315) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/america/south", "flag/AR", "power/steam"];
+	badges: ["region/america/south", "flag/AR", "power/steam", "role/shunter"];
 
     }
     graphics {

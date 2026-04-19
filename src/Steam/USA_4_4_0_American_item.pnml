@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_steam_usa_4_4_0_american) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/america/northern", "flag/US", "power/steam"];
+	badges: ["region/america/northern", "flag/US", "power/steam", "role/general_purpose"];
 
     }
     graphics {

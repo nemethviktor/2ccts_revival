@@ -44,7 +44,7 @@ item(FEAT_TRAINS, item_mtro_taiwan_taipei_c301) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/asia", "flag/TW", "power/metro"];
+	badges: ["region/asia", "flag/TW", "power/metro", "role/metro_rapid_transit"];
 
     }
     graphics {

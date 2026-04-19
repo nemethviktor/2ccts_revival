@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_electric_austria_obb_1161) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/europe/western", "flag/AT", "power/electric/ac"];
+	badges: ["region/europe/western", "flag/AT", "power/electric/ac", "role/shunter"];
 
     }
     graphics {

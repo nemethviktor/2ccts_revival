@@ -58,7 +58,7 @@ item(FEAT_TRAINS, item_dmu_iran_rai_141_pacer) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/asia", "flag/IR", "power/diesel"];
+	badges: ["region/asia", "flag/IR", "power/diesel", "role/commuter___urban"];
 
     }
     graphics {

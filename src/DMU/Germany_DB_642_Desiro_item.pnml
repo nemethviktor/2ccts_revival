@@ -63,7 +63,7 @@ item(FEAT_TRAINS, item_dmu_germany_db_642_desiro) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/europe/western", "flag/DE", "power/diesel"];
+	badges: ["region/europe/western", "flag/DE", "power/diesel", "role/commuter___urban"];
 
     }
     graphics {

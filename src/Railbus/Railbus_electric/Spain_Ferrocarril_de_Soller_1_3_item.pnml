@@ -62,7 +62,7 @@ item(FEAT_TRAINS, item_rbe_spain_ferrocarril_de_soller_1_3) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/europe/southern", "flag/ES", "power/electric/dc"];
+	badges: ["region/europe/southern", "flag/ES", "power/electric/dc", "role/commuter___urban"];
 
     }
     graphics {

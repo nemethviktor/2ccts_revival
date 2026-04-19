@@ -58,7 +58,7 @@ item(FEAT_TRAINS, item_rbe_france_sncf_z_7100) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/europe/western", "flag/FR", "power/electric/dc"];
+	badges: ["region/europe/western", "flag/FR", "power/electric/dc", "role/commuter___urban"];
 
     }
     graphics {

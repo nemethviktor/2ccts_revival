@@ -47,7 +47,7 @@ item(FEAT_TRAINS, item_steam_south_africa_sar_gma_4_8_2_2_8_4) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/africa", "flag/ZA", "power/steam"];
+	badges: ["region/africa", "flag/ZA", "power/steam", "role/heavy_freight"];
 
     }
     graphics {

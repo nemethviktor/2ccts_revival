@@ -62,7 +62,7 @@ item(FEAT_TRAINS, item_dmu_cameroon_camrail_ze_500) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/africa", "flag/CM", "power/diesel"];
+	badges: ["region/africa", "flag/CM", "power/diesel", "role/commuter___urban"];
 
     }
     graphics {

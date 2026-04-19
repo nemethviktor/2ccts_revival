@@ -47,7 +47,7 @@ item(FEAT_TRAINS, item_steam_switzerland_rhb_g_3_4) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/europe/western", "flag/CH", "power/steam"];
+	badges: ["region/europe/western", "flag/CH", "power/steam", "role/shunter"];
 
     }
     graphics {

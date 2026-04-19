@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_steam_south_africa_katanga_mikado_2_8_2) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/africa", "flag/CD", "power/steam"];
+	badges: ["region/africa", "flag/CD", "power/steam", "role/shunter"];
 
     }
     graphics {

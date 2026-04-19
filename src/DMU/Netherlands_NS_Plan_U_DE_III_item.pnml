@@ -62,7 +62,7 @@ item(FEAT_TRAINS, item_dmu_netherlands_ns_plan_u_de_iii) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/europe/western", "flag/NL", "power/diesel"];
+	badges: ["region/europe/western", "flag/NL", "power/diesel", "role/commuter___urban"];
 
     }
     graphics {

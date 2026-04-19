@@ -47,7 +47,7 @@ item(FEAT_TRAINS, item_diesel_india_indian_railways_wdm_2) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/asia", "flag/IN", "power/diesel"];
+	badges: ["region/asia", "flag/IN", "power/diesel", "role/general_purpose"];
 
     }
     graphics {

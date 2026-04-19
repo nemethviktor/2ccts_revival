@@ -58,7 +58,7 @@ item(FEAT_TRAINS, item_rbd_tunisia_sncft_z431) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/africa", "flag/TN", "power/diesel"];
+	badges: ["region/africa", "flag/TN", "power/diesel", "role/commuter___urban"];
 
     }
     graphics {

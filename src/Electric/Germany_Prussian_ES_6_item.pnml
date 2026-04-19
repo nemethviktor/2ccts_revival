@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_electric_germany_prussian_es_6) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/europe/western", "flag/DE", "power/electric/ac"];
+	badges: ["region/europe/western", "flag/DE", "power/electric/ac", "role/general_purpose"];
 
     }
     graphics {

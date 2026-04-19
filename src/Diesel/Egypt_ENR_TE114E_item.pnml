@@ -47,7 +47,7 @@ item(FEAT_TRAINS, item_diesel_egypt_enr_te114e) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/africa", "flag/EG", "power/diesel"];
+	badges: ["region/africa", "flag/EG", "power/diesel", "role/general_purpose"];
 
     }
     graphics {

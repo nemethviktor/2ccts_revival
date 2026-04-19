@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_diesel_zimbabwe_zimbabwe_railways_dh_1) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/africa", "flag/ZW", "power/diesel"];
+	badges: ["region/africa", "flag/ZW", "power/diesel", "role/general_purpose"];
 
     }
     graphics {

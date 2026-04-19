@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_steam_ivory_coast_golwe_2_6_0_0_6_2t) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/africa", "flag/CI", "power/steam"];
+	badges: ["region/africa", "flag/CI", "power/steam", "role/shunter"];
 
     }
     graphics {

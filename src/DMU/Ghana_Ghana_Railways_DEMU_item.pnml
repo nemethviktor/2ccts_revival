@@ -58,7 +58,7 @@ item(FEAT_TRAINS, item_dmu_ghana_ghana_railways_demu) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/africa", "flag/GH", "power/diesel"];
+	badges: ["region/africa", "flag/GH", "power/diesel", "role/commuter___urban"];
 
     }
     graphics {

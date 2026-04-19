@@ -44,7 +44,7 @@ item(FEAT_TRAINS, item_mtro_finland_helsinki_m100) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/europe/northern", "flag/FI", "power/metro"];
+	badges: ["region/europe/northern", "flag/FI", "power/metro", "role/metro_rapid_transit"];
 
     }
     graphics {

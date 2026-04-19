@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_diesel_algeria_sntf_baldwin_drs6_4_1000) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/africa", "flag/DZ", "power/diesel"];
+	badges: ["region/africa", "flag/DZ", "power/diesel", "role/general_purpose"];
 
     }
     graphics {

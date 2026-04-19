@@ -44,7 +44,7 @@ item(FEAT_TRAINS, item_mtro_argentina_buenos_aires_serie_1200) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/america/south", "flag/AR", "power/metro"];
+	badges: ["region/america/south", "flag/AR", "power/metro", "role/metro_rapid_transit"];
 
     }
     graphics {

@@ -62,7 +62,7 @@ item(FEAT_TRAINS, item_rbe_switzerland_tpc_bvb_be_2_2) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/europe/western", "flag/CH", "power/electric/dc"];
+	badges: ["region/europe/western", "flag/CH", "power/electric/dc", "role/commuter___urban"];
 
     }
     graphics {

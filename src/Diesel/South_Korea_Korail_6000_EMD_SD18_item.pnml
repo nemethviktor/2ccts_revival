@@ -47,7 +47,7 @@ item(FEAT_TRAINS, item_diesel_south_korea_korail_6000_emd_sd18) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/asia", "flag/KR", "power/diesel"];
+	badges: ["region/asia", "flag/KR", "power/diesel", "role/heavy_freight"];
 
     }
     graphics {

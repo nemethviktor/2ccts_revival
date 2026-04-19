@@ -179,6 +179,11 @@ def get_badges(row: pd.Series) -> str:
 
         badges.append(f"power/{power}")
 
+    role = row['ROLE'].lower().replace(' ', '_').replace('/',
+                                                         '_').replace('-', '_').replace('(', '_').replace(')', '_')
+
+    badges.append(f"role/{role}")
+
     badge_string = '", "'.join(badges) if badges else ""
 
     return f"""\n\tbadges: ["{badge_string}"];\n"""

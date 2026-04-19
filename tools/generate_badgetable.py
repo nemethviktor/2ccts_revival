@@ -55,8 +55,8 @@ def generate_vehicle_id_pnml():
                ]
 
     # currently unusued
-    roles = ["role", "role/banking", "role/express_freight", "role/express_passenger", "role/freight", "role/heavy_freight", "role/light_freight", "role/mail", "role/mixed", "role/passenger", "role/prototype", "role/restaurant_car", "role/shunting", "role/snowplough", "role/utility"
-             ]
+    roles = ["role", "role/coach__commuter_", "role/coach__express_", "role/coach__hs_", "role/coach__mail_", "role/coach__regional__", "role/commuter___urban", "role/express__passenger_", "role/express__universal_", "role/general_purpose",
+             "role/heavy_freight", "role/light_freight", "role/metro_rapid_transit", "role/powered_unpowered_sundry", "role/regional_passenger", "role/shunter", "role/standard_freight", "role/ultra_high_speed__pax_", "role/ultra_high_speed__universal_", "role/wagon"]
 
     for power in powers:
         power_underlined = power.replace('/', '_')
@@ -86,9 +86,9 @@ def generate_vehicle_id_pnml():
     for region in regions:
         content.append(f"""\t"{region}",\n""")
 
-    # content.append("\n// Roles\n")
-    # for role in roles:
-    #    content.append(f"""\t"{role}",\n""")
+    content.append("\n// Roles\n")
+    for role in roles:
+        content.append(f"""\t"{role}",\n""")
 
     content.append("}\n")
 
@@ -141,6 +141,22 @@ item (FEAT_BADGES, {region_underlined}) {{
         label: "{region}";
         name: string(STR_{region_underlined.upper()});""")
         if '_' in region_underlined:
+            content.append(f"""
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);""")
+        content.append(f"\n\t}}")
+        content.append(f"}}\n")
+
+    content.append("\n")
+
+    content.append("\n// Roles")
+    for role in roles:
+        role_underlined = role.replace('/', '_')
+        content.append(f"""\n\t
+item (FEAT_BADGES, {role_underlined}) {{
+    property {{
+        label: "{role}";
+        name: string(STR_{role_underlined.upper()});""")
+        if '_' in role_underlined:
             content.append(f"""
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);""")
         content.append(f"\n\t}}")

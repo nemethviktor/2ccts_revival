@@ -47,7 +47,7 @@ item(FEAT_TRAINS, item_diesel_romania_cfr_060_da) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/europe/eastern", "flag/RO", "power/diesel"];
+	badges: ["region/europe/eastern", "flag/RO", "power/diesel", "role/general_purpose"];
 
     }
     graphics {

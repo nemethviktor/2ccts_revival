@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_diesel_canada_cpr_trainmaster) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/america/northern", "flag/CA", "power/diesel"];
+	badges: ["region/america/northern", "flag/CA", "power/diesel", "role/heavy_freight"];
 
     }
     graphics {

@@ -63,7 +63,7 @@ item(FEAT_TRAINS, item_emu_italy_ntv_agv) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/europe/southern", "flag/IT", "power/electric"];
+	badges: ["region/europe/southern", "flag/IT", "power/electric", "role/ultra_high_speed__pax_"];
 
     }
     graphics {

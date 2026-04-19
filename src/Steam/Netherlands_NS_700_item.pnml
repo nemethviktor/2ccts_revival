@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_steam_netherlands_ns_700) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/europe/western", "flag/NL", "power/steam"];
+	badges: ["region/europe/western", "flag/NL", "power/steam", "role/general_purpose"];
 
     }
     graphics {

@@ -58,7 +58,7 @@ item(FEAT_TRAINS, item_rbd_usa_virginia_truckee_motor_car_22) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/america/northern", "flag/US", "power/diesel"];
+	badges: ["region/america/northern", "flag/US", "power/diesel", "role/commuter___urban"];
 
     }
     graphics {

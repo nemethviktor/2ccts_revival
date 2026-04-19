@@ -58,7 +58,7 @@ item(FEAT_TRAINS, item_dmu_sri_lanka_sri_lanka_railways_s11) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/asia", "flag/LK", "power/diesel"];
+	badges: ["region/asia", "flag/LK", "power/diesel", "role/commuter___urban"];
 
     }
     graphics {

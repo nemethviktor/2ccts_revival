@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_steam_mozambique_beira_railway_br6_f2_falcon) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/africa", "flag/MZ", "power/steam"];
+	badges: ["region/africa", "flag/MZ", "power/steam", "role/shunter"];
 
     }
     graphics {

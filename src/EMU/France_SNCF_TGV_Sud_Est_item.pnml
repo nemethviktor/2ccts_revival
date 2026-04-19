@@ -63,7 +63,7 @@ item(FEAT_TRAINS, item_emu_france_sncf_tgv_sud_est) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/europe/western", "flag/FR", "power/electric"];
+	badges: ["region/europe/western", "flag/FR", "power/electric", "role/ultra_high_speed__universal_"];
 
     }
     graphics {

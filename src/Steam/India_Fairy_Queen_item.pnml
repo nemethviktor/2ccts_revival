@@ -47,7 +47,7 @@ item(FEAT_TRAINS, item_steam_india_fairy_queen) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/asia", "flag/IN", "power/steam"];
+	badges: ["region/asia", "flag/IN", "power/steam", "role/shunter"];
 
     }
     graphics {

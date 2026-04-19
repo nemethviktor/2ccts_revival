@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_diesel_peru_ferrocarril_central_andino_alco_rsd_39) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/america/south", "flag/PE", "power/diesel"];
+	badges: ["region/america/south", "flag/PE", "power/diesel", "role/general_purpose"];
 
     }
     graphics {

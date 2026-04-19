@@ -62,7 +62,7 @@ item(FEAT_TRAINS, item_dmu_australia_cityrail_hunter_railcar) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/oceania", "flag/AU", "power/diesel"];
+	badges: ["region/oceania", "flag/AU", "power/diesel", "role/express__passenger_"];
 
     }
     graphics {

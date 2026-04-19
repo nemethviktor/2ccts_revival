@@ -47,7 +47,7 @@ item(FEAT_TRAINS, item_diesel_brazil_efvm_ml4000) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/america/south", "flag/BR", "power/diesel"];
+	badges: ["region/america/south", "flag/BR", "power/diesel", "role/heavy_freight"];
 
     }
     graphics {

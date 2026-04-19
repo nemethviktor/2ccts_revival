@@ -48,7 +48,7 @@ item(FEAT_TRAINS, item_diesel_panama_panama_canal_railway_emd_f40ph) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/america/northern", "flag/PA", "power/diesel"];
+	badges: ["region/america/northern", "flag/PA", "power/diesel", "role/express__universal_"];
 
     }
     graphics {

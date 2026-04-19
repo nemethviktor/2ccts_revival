@@ -58,7 +58,7 @@ item(FEAT_TRAINS, item_emu_macedonia_macedonian_railways_412) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/europe/southern", "flag/MK", "power/electric/ac"];
+	badges: ["region/europe/southern", "flag/MK", "power/electric/ac", "role/commuter___urban"];
 
     }
     graphics {

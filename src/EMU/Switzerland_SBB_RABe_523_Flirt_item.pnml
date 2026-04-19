@@ -62,7 +62,7 @@ item(FEAT_TRAINS, item_emu_switzerland_sbb_rabe_523_flirt) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/europe/western", "flag/CH", "power/electric/ac"];
+	badges: ["region/europe/western", "flag/CH", "power/electric/ac", "role/express__passenger_"];
 
     }
     graphics {

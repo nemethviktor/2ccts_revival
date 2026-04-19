@@ -5,6 +5,7 @@
 	- Changed some of the flag creation logic. There should be fewer animated-looking flags now
 	- Added AC/DC split for Electric badges
 	- Automated language creation
+	- Added roles and region badges
 - VEHICLES CHANGES:
 	- Added `Hessian Ludwig Rlw Thomas` using `Victorian Railways Rowan Railmotor` graphics but different/relevant specs
 	- Added `NÖLB 30-33` using `NÖLB 1` graphics but different/relevant specs

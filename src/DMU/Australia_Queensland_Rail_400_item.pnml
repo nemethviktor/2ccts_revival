@@ -64,7 +64,7 @@ item(FEAT_TRAINS, item_dmu_australia_queensland_rail_400) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/oceania", "flag/AU", "power/diesel"];
+	badges: ["region/oceania", "flag/AU", "power/diesel", "role/commuter___urban"];
 
     }
     graphics {
