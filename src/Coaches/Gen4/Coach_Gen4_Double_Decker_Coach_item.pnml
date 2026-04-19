@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_04A.
+// Template: TPL_04S.
 // Data from: nan
 
 // Notes:
@@ -35,6 +35,7 @@ item(FEAT_TRAINS, item_mu_coach_gen4_double_decker_coach) {
         
         cargo_age_period: 185;
         misc_flags: bitmask(TRAIN_FLAG_2CC);
+        extra_flags: bitmask(VEHICLE_FLAG_TRAIN_HAS_CAB);
         refit_cost: 0;
         ai_special_flag: AI_FLAG_PASSENGER;
         track_type: [STANDARD_GAUGE_RAILTYPE_NONE, NARROW_GAUGE_RAILTYPE_NONE, BROAD_GAUGE_RAILTYPE_NONE];
@@ -57,8 +58,8 @@ item(FEAT_TRAINS, item_mu_coach_gen4_double_decker_coach) {
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
         // PURCHASETEXT_SWITCH_CALL // this is actually blank
-        default: switch_mu_coach_gen4_double_decker_coach_livery;
-        // Random flip for variety
-        reverse_build_probability: return 50;
+        default: switch_mu_coach_gen4_double_decker_coach_position;
+        // Always flip because DT has to face backwards
+        reverse_build_probability: return 100;
     }
 }
