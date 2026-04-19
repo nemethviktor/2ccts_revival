@@ -1,7 +1,7 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
-// Template: TPL_04A
+// Template: TPL_04S
 
 // PURCHASE
 spriteset(spriteset_mu_coach_gen4_comet_commuter_coach_purchase, "gfx/coaches/gen4/coach_gen4_comet_commuter_coach_purchase.png") {template_purchase_wagon(1, 1)}
@@ -9,30 +9,90 @@ spriteset(spriteset_mu_coach_gen4_comet_commuter_coach_purchase, "gfx/coaches/ge
 
 // VEHICLE
 
-/// LIVERY 1
-spriteset(spriteset_mu_coach_gen4_comet_commuter_coach_l1, "gfx/coaches/gen4/coach_gen4_comet_commuter_coach.png") {template_2cc_wagons(1, 1)}
+/// LIVERY 1   NORMAL
+spriteset(spriteset_mu_coach_gen4_comet_commuter_coach_l1_dt_normal, "gfx/coaches/gen4/coach_gen4_comet_commuter_coach.png") {template_2cc_wagons(1, 1)}
+
+
+/// LIVERY 1   FORWARD
+spriteset(spriteset_mu_coach_gen4_comet_commuter_coach_l1_dt_forward, "gfx/coaches/gen4/coach_gen4_comet_commuter_coach.png") {template_2cc_wagons(1, 32)}
+
+
+/// LIVERY 1   REVERSE
+spriteset(spriteset_mu_coach_gen4_comet_commuter_coach_l1_dt_reverse, "gfx/coaches/gen4/coach_gen4_comet_commuter_coach.png") {template_2cc_wagons(1, 64)}
 
 
 
-/// LIVERY 2
-spriteset(spriteset_mu_coach_gen4_comet_commuter_coach_l2, "gfx/coaches/gen4/coach_gen4_comet_commuter_coach.png") {template_2cc_wagons(179, 1)}
+/// LIVERY 2   NORMAL
+spriteset(spriteset_mu_coach_gen4_comet_commuter_coach_l2_dt_normal, "gfx/coaches/gen4/coach_gen4_comet_commuter_coach.png") {template_2cc_wagons(179, 1)}
+
+
+/// LIVERY 2   FORWARD
+spriteset(spriteset_mu_coach_gen4_comet_commuter_coach_l2_dt_forward, "gfx/coaches/gen4/coach_gen4_comet_commuter_coach.png") {template_2cc_wagons(179, 32)}
+
+
+/// LIVERY 2   REVERSE
+spriteset(spriteset_mu_coach_gen4_comet_commuter_coach_l2_dt_reverse, "gfx/coaches/gen4/coach_gen4_comet_commuter_coach.png") {template_2cc_wagons(179, 64)}
 
 
 
-/// LIVERY 3
-spriteset(spriteset_mu_coach_gen4_comet_commuter_coach_l3, "gfx/coaches/gen4/coach_gen4_comet_commuter_coach.png") {template_2cc_wagons(357, 1)}
+/// LIVERY 3   NORMAL
+spriteset(spriteset_mu_coach_gen4_comet_commuter_coach_l3_dt_normal, "gfx/coaches/gen4/coach_gen4_comet_commuter_coach.png") {template_2cc_wagons(357, 1)}
+
+
+/// LIVERY 3   FORWARD
+spriteset(spriteset_mu_coach_gen4_comet_commuter_coach_l3_dt_forward, "gfx/coaches/gen4/coach_gen4_comet_commuter_coach.png") {template_2cc_wagons(357, 32)}
+
+
+/// LIVERY 3   REVERSE
+spriteset(spriteset_mu_coach_gen4_comet_commuter_coach_l3_dt_reverse, "gfx/coaches/gen4/coach_gen4_comet_commuter_coach.png") {template_2cc_wagons(357, 64)}
 
 
 
-/// LIVERY 4
-spriteset(spriteset_mu_coach_gen4_comet_commuter_coach_l4, "gfx/coaches/gen4/coach_gen4_comet_commuter_coach.png") {template_2cc_wagons(535, 1)}
+/// LIVERY 4   NORMAL
+spriteset(spriteset_mu_coach_gen4_comet_commuter_coach_l4_dt_normal, "gfx/coaches/gen4/coach_gen4_comet_commuter_coach.png") {template_2cc_wagons(535, 1)}
+
+
+/// LIVERY 4   FORWARD
+spriteset(spriteset_mu_coach_gen4_comet_commuter_coach_l4_dt_forward, "gfx/coaches/gen4/coach_gen4_comet_commuter_coach.png") {template_2cc_wagons(535, 32)}
+
+
+/// LIVERY 4   REVERSE
+spriteset(spriteset_mu_coach_gen4_comet_commuter_coach_l4_dt_reverse, "gfx/coaches/gen4/coach_gen4_comet_commuter_coach.png") {template_2cc_wagons(535, 64)}
 
 
 
-// Random Livery Selector
-random_switch(FEAT_TRAINS, SELF, switch_mu_coach_gen4_comet_commuter_coach_livery) {
-	7: spriteset_mu_coach_gen4_comet_commuter_coach_l1;
-	1: spriteset_mu_coach_gen4_comet_commuter_coach_l2;
-	1: spriteset_mu_coach_gen4_comet_commuter_coach_l3;
-	1: spriteset_mu_coach_gen4_comet_commuter_coach_l4;
+// Random Livery Selector dt_normal
+random_switch(FEAT_TRAINS, SELF, switch_mu_coach_gen4_comet_commuter_coach_livery_dt_normal) {
+	7: spriteset_mu_coach_gen4_comet_commuter_coach_l1_dt_normal;
+	1: spriteset_mu_coach_gen4_comet_commuter_coach_l2_dt_normal;
+	1: spriteset_mu_coach_gen4_comet_commuter_coach_l3_dt_normal;
+	1: spriteset_mu_coach_gen4_comet_commuter_coach_l4_dt_normal;
+}
+
+// Random Livery Selector dt_forward
+random_switch(FEAT_TRAINS, SELF, switch_mu_coach_gen4_comet_commuter_coach_livery_dt_forward) {
+	7: spriteset_mu_coach_gen4_comet_commuter_coach_l1_dt_forward;
+	1: spriteset_mu_coach_gen4_comet_commuter_coach_l2_dt_forward;
+	1: spriteset_mu_coach_gen4_comet_commuter_coach_l3_dt_forward;
+	1: spriteset_mu_coach_gen4_comet_commuter_coach_l4_dt_forward;
+}
+
+// Random Livery Selector dt_reverse
+random_switch(FEAT_TRAINS, SELF, switch_mu_coach_gen4_comet_commuter_coach_livery_dt_reverse) {
+	7: spriteset_mu_coach_gen4_comet_commuter_coach_l1_dt_reverse;
+	1: spriteset_mu_coach_gen4_comet_commuter_coach_l2_dt_reverse;
+	1: spriteset_mu_coach_gen4_comet_commuter_coach_l3_dt_reverse;
+	1: spriteset_mu_coach_gen4_comet_commuter_coach_l4_dt_reverse;
+}
+
+// Driving backwards switch
+switch(FEAT_TRAINS, PARENT, switch_mu_coach_gen4_comet_commuter_coach_direction, train_is_driving_backwards) {
+    1: switch_mu_coach_gen4_comet_commuter_coach_livery_dt_forward;
+    switch_mu_coach_gen4_comet_commuter_coach_livery_dt_reverse;
+}
+
+// Consist position switch
+switch(FEAT_TRAINS, SELF, switch_mu_coach_gen4_comet_commuter_coach_position, position_in_consist_from_end) {
+    0: switch_mu_coach_gen4_comet_commuter_coach_direction;
+    switch_mu_coach_gen4_comet_commuter_coach_livery_dt_normal;
 }

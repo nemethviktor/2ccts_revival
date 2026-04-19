@@ -6,6 +6,7 @@
 	- Added AC/DC split for Electric badges
 	- Automated language creation
 	- Added roles and region badges
+	- Added support for Driving Cabs via new template `TPL_04S`
 - VEHICLES CHANGES:
 	- Added `Hessian Ludwig Rlw Thomas` using `Victorian Railways Rowan Railmotor` graphics but different/relevant specs
 	- Added `NÖLB 30-33` using `NÖLB 1` graphics but different/relevant specs

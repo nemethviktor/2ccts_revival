@@ -620,7 +620,7 @@ def generate_unified_items():
                   if col.startswith('TRACK_TYPE_') and (is_true(row[col]))]
         track_logic = f"[{', '.join(tracks)}]"
 
-        # 3. Logic: Misc Flags
+        # 3. Logic: Misc Flags exc driving cab logic
         flags = [col.replace('MISC_FLAGS_', '') for col in df_master.columns
                  if col.startswith('MISC_FLAGS_') and (is_true(row[col]))]
         misc_logic = f"bitmask({', '.join(flags)})"
@@ -734,6 +734,11 @@ def generate_unified_items():
         content.append(
             f"        cargo_age_period: {CARGO_AGE_PERIOD};\n")
         content.append(f"        misc_flags: {misc_logic};\n")
+
+        # Push-pull DC (DT) logic where applicable
+        if TEMPLATE_ID_FULL in ['TPL_04S']:
+            content.append(
+                f"        extra_flags: bitmask(VEHICLE_FLAG_TRAIN_HAS_CAB);\n")
         content.append(f"        refit_cost: {REFIT_COST};\n")
         content.append(
             f"        ai_special_flag: {"AI_FLAG_PASSENGER" if is_true(row['PASSENGER']) else "AI_FLAG_CARGO"};\n")
@@ -844,6 +849,16 @@ def generate_unified_items():
             ]:
                 content.append(
                     f"        default: switch_{VEHIDCODE_lcase}_livery;\n")
+            elif TEMPLATE_ID_FULL in [
+                'TPL_04S',
+            ]:
+                content.append(
+                    f"        default: switch_{VEHIDCODE_lcase}_position;\n")
+
+                content.append(
+                    f"        // Always flip because DT has to face backwards\n")
+                content.append(
+                    f"        reverse_build_probability: return 100;\n")
             else:
                 # I've lost track of this sh.t by now.
                 content.append(f"        default: switch_{VEHIDCODE_lcase};\n")
@@ -852,6 +867,7 @@ def generate_unified_items():
                 f"        default: switch_{VEHIDCODE_lcase}_reversed;\n")
         else:
             pass
+
         content.append("    }\n")
 
         # Livery Overrides for MUs - but not actual wagons.

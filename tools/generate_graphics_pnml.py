@@ -249,7 +249,7 @@ def get_switch_reversed(*, vid: str,
                         fallback_task: Optional[Literal["spriteset",
                                                         "spritegroup", "switch", "empty"]]) -> str:
     """
-    Gets the reversed switch 
+    Gets the reversed switch
 
     :param front_switch: Used in 0xFE: spriteset_{vid}_{front_switch}
     :param back_switch: Used in 0xFE: spriteset_{vid}_{back_switch}
@@ -514,7 +514,14 @@ def get_vehicle(*, vid: str,
 
 
 @scrub_nml_data
-def get_spriteset(*, vid: str, gfx_path: str, comment_type: str, template_x: int, template_y: int, template_name_amendment: str, spritename_suffix: str = None) -> str:
+def get_spriteset(*,
+                  vid: str,
+                  gfx_path: str,
+                  comment_type: str,
+                  template_x: int,
+                  template_y: int,
+                  template_name_amendment: str,
+                  spritename_suffix: str = None) -> str:
     sprite_suffix = f"_{spritename_suffix}" if spritename_suffix else ''
     if template_name_amendment[0] != "_":
         template_name_amendment = "_" + template_name_amendment
@@ -597,7 +604,16 @@ spritegroup {group_name} {{
 
 
 @scrub_nml_data
-def get_random_livery_selector(*, vid: str, selector_name: str, cargo_string: str, list_length: int, cargo_string_is_dummy: bool, has_loading_states: bool, first_chance: int = 7) -> str:
+def get_random_livery_selector(*,
+                               vid: str,
+                               selector_name: str,
+                               cargo_string: str,
+                               list_length: int,
+                               cargo_string_is_dummy: bool,
+                               has_loading_states: bool,
+                               first_chance: int = 7,
+                               manual_suffix: str = None
+                               ) -> str:
     """
     Gets the random livery selector
 
@@ -607,7 +623,7 @@ def get_random_livery_selector(*, vid: str, selector_name: str, cargo_string: st
     :param cargo_string_is_dummy: if cargo=='dummy' (ie there isn't one)
     :param has_loading_states: whether we are using loading states
     """
-    nml_code = f"\n// Random Livery Selector"
+    nml_code = f"\n// Random Livery Selector{' ' + manual_suffix if manual_suffix else ''}"
     nml_code += f" for {cargo_string}" if not cargo_string_is_dummy else ""
     nml_code += f"\nrandom_switch(FEAT_TRAINS, SELF, {selector_name}) {{"
 
@@ -615,7 +631,7 @@ def get_random_livery_selector(*, vid: str, selector_name: str, cargo_string: st
         weight = first_chance if num == 1 else int(
             (10-first_chance)/(list_length-1))
         if cargo_string_is_dummy:
-            target = f"spritegroup_{vid}_l{num}" if has_loading_states else f"spriteset_{vid}_l{num}"
+            target = f"spritegroup_{vid}_l{num}" if has_loading_states else f"spriteset_{vid}_l{num}{'_' + manual_suffix if manual_suffix else ''}"
         else:
             target = f"spritegroup_{vid}_{cargo_string}_l{num}" if has_loading_states else f"spriteset_{vid}_{cargo_string}_l{num}"
 
@@ -1090,6 +1106,7 @@ def get_tpl_04(vid, gfx_path, row, template_amendment_code):
     Box Car Gen2 Type 2 -> `TPL_04P`
     Open Wagon Gen1 -> `TPL_04Q`
     Service Cars -> `TPL_04R`
+    DC/Push-Pull -> `TPL_04S`
     """
     gfx_purchase_amendment = "_Purchase"
     nml_code = []
@@ -1103,6 +1120,7 @@ def get_tpl_04(vid, gfx_path, row, template_amendment_code):
     # Constants for offsets
     liveries = {1: 1, 2: 179, 3: 357, 4: 535}
 
+    # region templates for cargoes
     cargo_strings = ['Dummy']
     if template_amendment_code == 'C':
         cargo_strings = [
@@ -1210,13 +1228,18 @@ def get_tpl_04(vid, gfx_path, row, template_amendment_code):
             'Fruit'
         ]
 
+    # endregion
+
     has_loading_states = template_amendment_code in [
         'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q']
     has_driving_states = template_amendment_code in ['L', 'N', 'Q']
+    has_reverse_state = template_amendment_code in ['S']
+
     cargo_with_driving_state = ['grain']
     states = {1: 1}
-    if has_loading_states:
+    if has_loading_states or has_reverse_state:
         states = {1: 1, 2: 32, 3: 64}
+        direction_states = {1: "Normal", 2: "Forward", 3: "Reverse"}
         # This is a total clusterf.k - so basically some of the wagons have a 'Driving State' (S4)...
         # BUT ONLY for GRAIN
         if has_driving_states:
@@ -1242,12 +1265,14 @@ def get_tpl_04(vid, gfx_path, row, template_amendment_code):
                 s_suffix += f"{cargo_string}" if not cargo_string_is_dummy else ""
                 s_suffix += f"{'_' if not cargo_string_is_dummy else ''}L{livery_num}"
                 s_suffix += f"_s{state_num}" if has_loading_states else ""
+                s_suffix += f"_dt_{direction_states.get(state_num, '')}" if has_reverse_state else ""
 
                 comment = f"Livery {livery_num}"
                 comment += f" - Loading State {state_num}" if has_loading_states else ""
+                comment += f" - {direction_states.get(state_num, '')}" if has_reverse_state else ""
                 comment += f" - {cargo_string}" if not cargo_string_is_dummy else ""
 
-                if cargo_string_is_dummy:
+                if cargo_string_is_dummy or has_reverse_state:
                     nml_code.append(get_spriteset(vid=vid,
                                                   gfx_path=gfx_path,
                                                   comment_type=comment,
@@ -1282,12 +1307,13 @@ def get_tpl_04(vid, gfx_path, row, template_amendment_code):
             nml_code.append(group_block)
 
         # 3. Livery Selector (Random Switch)
-        selector_name = f"switch_{vid}_livery" if cargo_string_is_dummy else f"switch_{vid}_{cargo_string}_livery"
-        nml_code.append(get_random_livery_selector(
-            vid=vid, cargo_string=cargo_string,
-            selector_name=selector_name,
-            list_length=4,
-            cargo_string_is_dummy=cargo_string_is_dummy, has_loading_states=has_loading_states))
+        if template_amendment_code != 'S':
+            selector_name = f"switch_{vid}_livery" if cargo_string_is_dummy else f"switch_{vid}_{cargo_string}_livery"
+            nml_code.append(get_random_livery_selector(
+                vid=vid, cargo_string=cargo_string,
+                selector_name=selector_name,
+                list_length=4,
+                cargo_string_is_dummy=cargo_string_is_dummy, has_loading_states=has_loading_states))
 
     if template_amendment_code == 'C':
         # 3. Livery Selector (Random Switch) - always 'Goods'
@@ -1610,6 +1636,34 @@ switch(FEAT_TRAINS, SELF, switch_{vid}_cargo_selection, cargo_type_in_veh) {{
 	SCMT: switch_{vid}_gray_livery;
     // GRAI, MAIZ, TOFF
 	switch_{vid}_grain_livery;
+}}
+""")
+
+    elif template_amendment_code == 'S':
+        selector_name = f"switch_{vid}_livery" if cargo_string_is_dummy else f"switch_{vid}_{cargo_string}_livery"
+
+        for _, direction_state in direction_states.items():
+            nml_code.append(get_random_livery_selector(
+                vid=vid,
+                cargo_string=direction_state,
+                selector_name=f"{selector_name}_dt_{direction_state}",
+                list_length=4,
+                cargo_string_is_dummy=cargo_string_is_dummy,
+                has_loading_states=has_loading_states,
+                manual_suffix=f"dt_{direction_state}"
+            ))
+
+        nml_code.append(f"""
+// Driving backwards switch
+switch(FEAT_TRAINS, PARENT, switch_{vid}_direction, train_is_driving_backwards) {{
+    1: switch_{vid}_livery_dt_forward;
+    switch_{vid}_livery_dt_reverse;
+}}
+
+// Consist position switch
+switch(FEAT_TRAINS, SELF, switch_{vid}_position, position_in_consist_from_end) {{
+    0: switch_{vid}_direction;
+    switch_{vid}_livery_dt_normal;
 }}
 """)
 

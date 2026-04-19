@@ -126,9 +126,10 @@ A: With MUs you buy both heads, and then you can use the Unit Wagons to make the
 
 New graphics for this set:
 - Voyager One
+- Emperor Jake
+- SosMakaroni
 
 Graphics from the original 2cc Trainset:
-- Emperor Jake
 - Purno
 - Voyager One
 - DanMacK
