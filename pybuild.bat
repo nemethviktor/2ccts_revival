@@ -12,3 +12,4 @@ echo --- Build Start ---
 gcc -E -x c -o 2ccts_revival.nml ./2ccts_revival.pnml
 nmlc -c --quiet 2ccts_revival.nml -o "2ccts_revival.grf" -t custom_tags.txt -n 
 echo --- Build Finished ---
+if exist copygrftogoogledriveshare.bat copygrftogoogledriveshare.bat

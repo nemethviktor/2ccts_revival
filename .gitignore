@@ -37,3 +37,4 @@ Makefile.dep
 /2ccts_revival*
 *.gsheet
 tools/~$vehicle_report.xlsx
+copygrftogoogledriveshare.bat
