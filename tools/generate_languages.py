@@ -28,7 +28,6 @@ def load_excel_data():
     df_props = pd.read_excel(excel_path, sheet_name='properties')
     df_tracks = pd.read_excel(excel_path, sheet_name='track_types')
 
-    # We include VEHID_ID to ensure stable sorting in the .lng files
     df = df_control[['VEHIDCODE', 'NAME', 'ENGLISH', 'IS_POWERED_UNPOWERED_SUNDRY', 'VEHID_ID']].merge(
         df_props[['VEHIDCODE', 'ENGINE_CLASS', 'COST_CAT',
                   'DUAL_HEADED', 'IS_TURBINE']],
@@ -36,6 +35,54 @@ def load_excel_data():
     )
     df = df.merge(df_tracks, on='VEHIDCODE', how='left')
     return df
+
+
+def sync_csv_with_excel(df_vehicles):
+    """
+    Updates CSV files with changes from Excel.
+    - Updates English names in english.csv.
+    - Adds missing keys to other languages as blank (not-translated).
+    """
+    excel_map = {str(row['NAME']).strip().lower(): str(row['ENGLISH']).strip()
+                 for _, row in df_vehicles.iterrows()}
+
+    for csv_file in glob.glob(os.path.join(lang_dir, "*.csv")):
+        lang_filename = os.path.basename(csv_file).lower()
+        is_english = (lang_filename == 'english.csv')
+        rows = []
+        existing_keys = set()
+        file_changed = False
+
+        if os.path.exists(csv_file):
+            with open(csv_file, 'r', encoding='utf-8-sig') as f:
+                reader = csv.reader(f)
+                for row in reader:
+                    if not row:
+                        continue
+                    key = row[0].strip().lower()
+                    existing_keys.add(key)
+
+                    if key in excel_map:
+                        new_excel_val = excel_map[key]
+                        # Update English file if Excel changed
+                        if is_english and row[1] != new_excel_val:
+                            row[1] = new_excel_val
+                            file_changed = True
+                    rows.append(row)
+
+        # Add entirely new vehicle IDs found in Excel
+        for v_id, v_eng in excel_map.items():
+            if v_id not in existing_keys:
+                # English gets the name, others get an empty string (not-translated)
+                new_val = v_eng if is_english else ""
+                rows.append([v_id, new_val])
+                file_changed = True
+
+        if file_changed:
+            with open(csv_file, 'w', encoding='utf-8-sig', newline='') as f:
+                writer = csv.writer(f, quoting=csv.QUOTE_MINIMAL)
+                writer.writerows(rows)
+            print(f"Synced changes into {os.path.basename(csv_file)}.")
 
 
 def get_tech_suffixes(row, lang_map, english_map):
@@ -48,7 +95,6 @@ def get_tech_suffixes(row, lang_map, english_map):
     e_class = str(row.get('ENGINE_CLASS', '')).upper().strip()
 
     def get_val(key):
-        # We always want technical suffixes to fall back to English if missing in local lang
         return lang_map.get(key) or english_map.get(key.lower(), "")
 
     def add_to_list(val):
@@ -56,7 +102,7 @@ def get_tech_suffixes(row, lang_map, english_map):
             suffixes_list.append(val)
             suffixes_set.add(val)
 
-    # 1. Generic Wagon Rule
+    # Generic Wagon Rule
     if "wagon" in v_id and (v_id.endswith("_powered") or v_id.endswith("_unpowered")):
         p_key = "STR_SUFFIX_UNPOWERED" if "_unpowered" in v_id else "STR_SUFFIX_POWERED"
         add_to_list(get_val(p_key))
@@ -65,7 +111,7 @@ def get_tech_suffixes(row, lang_map, english_map):
     if c_cat in BLACKLIST or e_class in BLACKLIST:
         return ""
 
-    # 2. Primary Noun
+    # Primary Noun
     class_map = {
         "STEAMENGINE": "STR_SUFFIX_STEAMENGINE", "DIESELENGINE": "STR_SUFFIX_DIESELENGINE",
         "ELECTRICENGINE": "STR_SUFFIX_ELECTRICENGINE", "STEAMRAILBUS": "STR_SUFFIX_STEAMRAILBUS",
@@ -78,13 +124,12 @@ def get_tech_suffixes(row, lang_map, english_map):
     primary_noun = get_val(class_map.get(target_class, ""))
     add_to_list(primary_noun)
 
-    # 3. Adjective Logic
+    # Adjective Logic
     adj_map = {
         "STEAM": "STR_SUFFIX_STEAM", "DIESEL": "STR_SUFFIX_DIESEL",
         "ELECTRIC": "STR_SUFFIX_ELECTRIC", "MAGLEV": "STR_SUFFIX_MAGLEV",
         "DMU": "STR_SUFFIX_DIESEL", "EMU": "STR_SUFFIX_ELECTRIC", "METRO": "STR_SUFFIX_ELECTRIC"
     }
-
     effective_e_class = e_class
     if "METRO" in c_cat:
         effective_e_class = "ELECTRIC"
@@ -96,7 +141,7 @@ def get_tech_suffixes(row, lang_map, english_map):
         if adj_l in noun_l or (adj_l == "electric" and "emu" in noun_l) or (adj_l == "diesel" and "dmu" in noun_l):
             adjective = ""
 
-    # 4. Tech Suffixes
+    # Tech Suffixes
     if is_true(row.get('IS_POWERED_UNPOWERED_SUNDRY')):
         p_key = "STR_SUFFIX_UNPOWERED" if "UNPOWERED" in str(
             row.get('VEHIDCODE', '')).upper() else "STR_SUFFIX_POWERED"
@@ -128,19 +173,21 @@ def get_tech_suffixes(row, lang_map, english_map):
 def generate_languages():
     df_vehicles = load_excel_data()
 
+    # 1. Sync Excel names to CSVs
+    sync_csv_with_excel(df_vehicles)
+
+    # Reload English map for generation fallback
     english_csv = os.path.join(lang_dir, 'english.csv')
     english_map = {}
-    master_keys = []  # To preserve the order of hardcoded strings from English
-
+    master_keys = []
     if os.path.exists(english_csv):
         with open(english_csv, 'r', encoding='utf-8-sig') as f:
             for r in csv.reader(f):
                 if r:
-                    key = r[0].strip()
-                    val = r[1].strip()
-                    english_map[key.lower()] = val
-                    if key.isupper():
-                        master_keys.append(key)
+                    k = r[0].strip()
+                    english_map[k.lower()] = r[1].strip()
+                    if k.isupper():
+                        master_keys.append(k)
 
     for csv_file in glob.glob(os.path.join(lang_dir, "*.csv")):
         lang_id = os.path.splitext(os.path.basename(csv_file))[0]
@@ -163,16 +210,13 @@ def generate_languages():
         output = metadata + [""]
         output.append("# Hardcoded Strings")
 
-        # FIX 1: Ensure all master hardcoded strings appear in non-English files
         for k in master_keys:
             v = hardcoded.get(k, "")
-            # If not English and value is empty, it's not translated
             if not is_english_lang and not v:
                 output.append(f"# {k.ljust(65)} : not translated")
             else:
-                # Fallback to English ONLY if we are processing the English file itself
-                final_val = v if v or not is_english_lang else english_map.get(
-                    k.lower(), "")
+                final_val = v if (
+                    v or not is_english_lang) else english_map.get(k.lower(), "")
                 output.append(f"{k.ljust(65)} :{final_val}")
 
         normal_word = hardcoded.get("STR_WORD_NORMAL") or (
@@ -198,13 +242,14 @@ def generate_languages():
             v_id = str(v_row['NAME']).strip().lower()
             v_eng_base = str(v_row['ENGLISH']).strip()
 
-            # FIX 2: Correct logic for vehicle translation fallback
+            # Logic: If item is in local CSV and NOT empty, use it.
+            # Otherwise, English file falls back to Excel, non-English file marks "not translated".
             if v_id in existing_vehicles and existing_vehicles[v_id]:
                 v_base_name = existing_vehicles[v_id]
             elif is_english_lang:
                 v_base_name = v_eng_base
             else:
-                v_base_name = ""  # Force "not translated" for non-English
+                v_base_name = ""
 
             v_base_name = re.sub(r'\s*\([^)]*\)$', '', v_base_name).strip()
             suffix = get_tech_suffixes(v_row, hardcoded, english_map)

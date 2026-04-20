@@ -433,20 +433,20 @@ str_mglv_maglev_wagon_powered,Maglev Unit Wagon
 str_mglv_maglev_wagon_unpowered,Maglev Unit Wagon
 str_mglv_china_transrapid,Shanghai Transrapid
 str_mglv_japan_mlx01_901,JR MLX01-901
-str_rbs_austria_nolb_1,NÖLB 1
+str_rbs_austria_nolb_1,NOLB 1
 str_rbs_italy_fs_86,FS 86
 str_rbs_australia_victorian_railways_rowan_railmotor,Victorian Railways Rowan Railmotor
 str_rbs_switzerland_uebb_czm_1_2,UeBB Czm 1/2
 str_rbs_germany_bavarian_mcci,K.Bay.Sts.B. MCCi
 str_rbs_south_africa_csar_railmotor,CSAR Railmotor
 str_rbs_australia_victorian_railways_motor_car_3,Victorian Railways Motor Car 3
-str_rbs_austria_kkstb_4_0,kkStB 4.0
+str_rbs_austria_kkstb_4_0,KkStB 4.0
 str_rbs_gemany_hessian_ludwig_railway_type_thomas,Hessian Ludwig Rwy 'Thomas'
-str_rbs_austria_nolb_30_33,NÖLB 30-33
+str_rbs_austria_nolb_30_33,NOLB 30-33
 str_rbd_australia_victorian_railways_aec_rm1,Victorian Railways AEC RM1
 str_rbd_germany_db_vt_133,DB VT 133 'Wismar railbus'
 str_rbd_united_kingdom_gwr_aec_railcar,GWR AEC Railcar
-str_rbd_austria_obb_5042,ÖBB 5042
+str_rbd_austria_obb_5042,OBB 5042
 str_rbd_new_zealand_nzr_rm31,NZR RM31
 str_rbd_portugal_cp_0100,CP 0100
 str_rbd_usa_amtrak_budd_rdc,Amtrak Budd RDC
@@ -454,9 +454,9 @@ str_rbd_germany_db_vt_989,DB VT 98.9 / DB 798 'Uerdingen railbus'
 str_rbd_germany_ohe_520_gdt,OHE MAK 520 GDT
 str_rbd_netherlands_ns_20_kameel,NS 20 'Kameel'
 str_rbd_netherlands_ns_dh1,NS DH1
-str_rbd_austria_obb_5047,ÖBB 5047
+str_rbd_austria_obb_5047,OBB 5047
 str_rbd_united_kingdom_br_153_super_sprinter,BR 153 'Super Sprinter'
-str_rbd_czech_republic_cd_809,ČD 809
+str_rbd_czech_republic_cd_809,CD 809
 str_rbd_germany_db_670,DB 670
 str_rbd_lithuania_lithuanian_railways_ar2,Lithuanian Railways AR2
 str_rbd_austria_kkstb_19,KkStB 19
@@ -465,11 +465,11 @@ str_rbd_germany_saxon_det_1_2,Saxon DET 1-2 Sächsischer
 str_rbd_uk_wc_pr_drewry_railcar,WC&PR Drewry Railcar
 str_rbd_germany_bst_6001,BSt 6001
 str_rbd_australia_victorian_railways_derm,Victorian Railways DERM
-str_rbd_czech_republic_cd_m120,ČSD Class M 120.4
+str_rbd_czech_republic_cd_m120,CSD Class M 120.4
 str_rbd_germany_schienenzeppelin,Schienenzeppelin
 str_rbd_denmark_dsb_mo,DSB MO Serie 1
 str_rbd_norway_nsb_cmb_17,NSB Cmb 17
-str_rbd_czech_republic_cd_m290,ČD M290
+str_rbd_czech_republic_cd_m290,CD M290
 str_rbd_netherlands_ns_ombc,NS omBC 2901
 str_rbd_australia_nswgr_class_400,NSWGR 400
 str_rbd_portugal_cp_usd_9050,CP USD 9050
@@ -479,7 +479,7 @@ str_rbd_greece_ose_aa71,OSE AA.71
 str_rbd_tunisia_sncft_z431,SNCFT Z-431
 str_rbd_usa_amtrak_spv_200,Amtrak Budd SPV-2000
 str_rbd_finland_vr_dm12,VR Dm12
-str_rbd_czech_republic_cd_840,ČD 840
+str_rbd_czech_republic_cd_840,CD 840
 str_rbd_italy_fs_aln_668,FS ALn 668.1400
 str_rbd_japan_jr_shikoku_1000,JR Shikoku 1000
 str_rbd_japan_jr_kiha_e120,JR KiHa E120
@@ -488,7 +488,7 @@ str_rbd_argentina_fcpba_m_railcar,FCPBA M Railcar
 str_rbd_eritrea_eritrean_railway_a62_70_littorina,Eritrean Railway A.62-70 'Littorina'
 str_rbd_finland_vr_dm7,VR Dm7
 str_rbd_russia_rzd_ach2,RZD ACh2
-str_rbe_czech_republic_cd_m400,ČD M400 [kkStB 40.0]
+str_rbe_czech_republic_cd_m400,CD M400 [kkStB 40.0]
 str_rbe_france_sncf_z_7100,SNCF Z 7100
 str_rbe_germany_buckower_kleinbahn_nr_1_3,Buckower Kleinbahn Nr. 1-3
 str_rbe_germany_db_4792,DB 479.201
@@ -498,7 +498,7 @@ str_rbe_italy_fg_ale_80,FG ALe 80
 str_rbe_italy_fs_e623,FS E.623
 str_rbe_morocco_oncfm_zab1000,ONCF ZAB1000
 str_rbe_poland_pkp_en81,PKP EN81
-str_rbe_austria_obb_4855,ÖBB 4855
+str_rbe_austria_obb_4855,OBB 4855
 str_rbe_austria_mbs_et_10109,MBS ET 10.109
 str_rbe_germany_db_et_85,DB ET 85 / DB 485
 str_rbe_sweden_sj_x16,SJ X16
@@ -515,14 +515,14 @@ str_steam_usa_4_4_0_american,4-4-0 'American'
 str_steam_switzerland_sbb_ec_2_5,SBB Ec 2/5
 str_steam_usa_4_6_0_ten_wheeler,4-6-0 'Ten-wheeler'
 str_steam_usa_2_8_0_consolidation,2-8-0 'Consolidation'
-str_steam_hungary_mav_377,MÁV 377
+str_steam_hungary_mav_377,MAV 377
 str_steam_austria_kkstb_99,KkStB 99
 str_steam_uk_caledonian_railway_439,Caledonian Railway 439
 str_steam_switzerland_sbb_a_3_5,SBB A 3/5
 str_steam_switzerland_sbb_e_3_3,SBB E 3/3
 str_steam_austria_kkstb_299,KkStB 299
 str_steam_new_zealand_nzr_x_class,NZR X
-str_steam_croatia_hz_51,HZ 51 [MÁV 375]
+str_steam_croatia_hz_51,HZ 51 [MAV 375]
 str_steam_italy_fs_880,FS 880
 str_steam_argentina_fcnea_11b_2_8_0,FCNEA 11B 2-8-0
 str_steam_france_sncf_140c,SNCF 140C
@@ -601,13 +601,13 @@ str_steam_italy_fs_691,FS 691
 str_steam_greece_sek_lb,SEK Lb
 str_steam_albania_hsh_01,HSH 01
 str_steam_spain_renfe_242f,RENFE 242F
-str_steam_czech_republic_cd_5341,ČD 534.1
+str_steam_czech_republic_cd_5341,CD 534.1
 str_steam_poland_pkp_ok22,PKP Ok22
-str_steam_croatia_hz_11,HZ 11/MÁV 424
-str_steam_hungary_mav_242,MÁV 242
-str_steam_czech_republic_cd_4590,ČD 459.0
+str_steam_croatia_hz_11,HZ 11/MAV 424
+str_steam_hungary_mav_242,MAV 242
+str_steam_czech_republic_cd_4590,CD 459.0
 str_steam_poland_pkp_oi49,PKP OI49
-str_steam_austria_kkstb_310,KKStB 310
+str_steam_austria_kkstb_310,KkStB 310
 str_steam_usa_southern_pacific_gs_4_daylight,Southern Pacific GS-4 'Daylight'
 str_steam_ireland_gs_wr_101,GS&WR 101
 str_steam_usa_nyc_h_6a_light_mikado,NYC H-6A 'Light Mikado'
@@ -624,7 +624,7 @@ str_steam_japan_jnr_9600,JNR 9600
 str_steam_japan_jnr_d50,JNR D50
 str_steam_south_africa_katanga_mikado_2_8_2,Katanga Mikado 2-8-2
 str_steam_mozambique_mozambique_railways_no_101,Mozambique Rwy 101
-str_steam_ivory_coast_golwe_2_6_0_0_6_2t,Haine-Saint-Pierre Golwé
+str_steam_ivory_coast_golwe_2_6_0_0_6_2t,Haine-Saint-Pierre Golwe
 str_diesel_germany_db_kof_ii,DB Kof II / DB 322
 str_diesel_usa_cnj_alco_ge_ir_boxcab,CNJ ALCo-GE-IR Boxcab 100T
 str_diesel_netherlands_ns_200,NS 200 'Sik'
@@ -640,15 +640,15 @@ str_diesel_usa_pennsylvania_railroad_rf_16_sharknose,PRR RF-16 'Sharknose'
 str_diesel_uruguay_afe_1500,AFE 1500
 str_diesel_canada_cpr_trainmaster,CPR CLC H-24-66 'Trainmaster'
 str_diesel_liberia_liberia_railways_class_08,"Liberia ""Class 08"" [Ex-BR]"
-str_diesel_austria_obb_2060,ÖBB 2060
+str_diesel_austria_obb_2060,OBB 2060
 str_diesel_canada_cnr_sw1200,CNR SW1200
 str_diesel_canada_via_rail_fp9,VIA Rail FP9
-str_diesel_hungary_mav_m44,MÁV M44
-str_diesel_hungary_mav_m28,MÁV M28
+str_diesel_hungary_mav_m44,MAV M44
+str_diesel_hungary_mav_m28,MAV M28
 str_diesel_belgium_nmbs_sncb_83,NMBS/SNCB 83
 str_diesel_germany_db_220,DB V200.0 / DB 220
 str_diesel_usa_amtrak_fl9,Amtrak FL9
-str_diesel_czech_republic_cd_720_chme2,ČD 720 ChME2
+str_diesel_czech_republic_cd_720_chme2,CD 720 ChME2
 str_diesel_finland_vr_dr12,VR Dr12
 str_diesel_romania_cfr_060_da,CFR 060-DA
 str_diesel_brazil_bf_emd_gl8,BF EMD GL8
@@ -676,7 +676,7 @@ str_diesel_finland_vr_dr16,VR Dr16
 str_diesel_russia_rzd_tep80,RZD TEP80
 str_diesel_australia_australian_national_an,Australian National AN
 str_diesel_usa_amtrak_p42dc_genesis,Amtrak P42DC 'Genesis'
-str_diesel_turkey_tcdd_dh7000,TČDD DH7000
+str_diesel_turkey_tcdd_dh7000,TCDD DH7000
 str_diesel_argentina_mf_ge_u20c,MF GE U20C
 str_diesel_belgium_nmbs_sncb_7800,NMBS/SNCB 7800
 str_diesel_uk_br_66,BR 66
@@ -697,12 +697,12 @@ str_diesel_uk_br_class_d3_7,BR D3/7
 str_diesel_australia_queensland_railways_dl_class,Queensland Railways DL
 str_diesel_usa_prr_fm_h_10_44,PRR FM H-10-44
 str_diesel_algeria_sntf_baldwin_drs6_4_1000,SNTF Baldwin DRS6-4-1000
-str_diesel_ireland_cie_113,CIÉ 113
+str_diesel_ireland_cie_113,CIE 113
 str_diesel_brazil_efc_3300_baldwin_as_616,EFC 3300 Baldwin AS-616
 str_diesel_mexico_chp_500_fm_h_16_44,CHP 500 FM H-16-44
 str_diesel_australia_south_australian_railways_900,South Australian Railways 900
 str_diesel_sri_lanka_sri_lanka_railways_m2,Sri Lanka Railways M2
-str_diesel_ireland_cie_001,CIÉ 001
+str_diesel_ireland_cie_001,CIE 001
 str_diesel_italy_fs_d341,FS D.341
 str_diesel_australia_nswgr_44,NSWGR 44
 str_diesel_zimbabwe_zimbabwe_railways_dh_1,Zimbabwe Railways DH-1
@@ -714,7 +714,7 @@ str_diesel_australia_pacific_national_g_class,Pacific National G
 str_diesel_uk_br_60,BR 60
 str_diesel_australia_westrail_p_class,Westrail P
 str_diesel_saudi_arabia_saudi_railways_4000_emd_sd70acs,Saudi Railways 4000 EMD SD70ACS
-str_diesel_ireland_ie_201,IÉ 201
+str_diesel_ireland_ie_201,IE 201
 str_diesel_usa_metrolink_emd_f59ph,Metrolink EMD F59PH
 str_diesel_france_sncf_461000,SNCF BB 461000
 str_diesel_italy_act_d_200,ACT D 200
@@ -852,23 +852,23 @@ str_electric_morocco_oncf_e_700,ONCF E 700
 str_electric_india_indian_railways_wcm_1,Indian Railways WCM-1
 str_electric_south_africa_sar_e38,Amcoal E38
 str_electric_chile_efe_e_269,EFE E-269
-str_electric_czech_republic_cd_363,ČD ES 499.1/363
+str_electric_czech_republic_cd_363,CD ES 499.1/363
 str_electric_norway_nsb_el7,NSB EL7
 str_electric_usa_pennsylvania_railroad_ff_1,PRR FF-1
-str_electric_austria_obb_1161,ÖBB 1161
+str_electric_austria_obb_1161,OBB 1161
 str_electric_germany_db_169,DB E 69 05 / DB 169 005
 str_electric_norway_nsb_el10,NSB EL10
 str_electric_germany_db_104,DB E 04 / DB 104
 str_electric_usa_pennsylvania_railroad_gg_1,PRR GG-1
-str_electric_austria_obb_1020_crocodile,ÖBB 1020 'Krokodil'
+str_electric_austria_obb_1020_crocodile,OBB 1020 'Krokodil'
 str_electric_germany_db_1031,DB 103.1
 str_electric_germany_db_e_919,DB E 91.9 / DB 191.9
 str_electric_switzerland_bls_ce_4_4,BLS Ce 4/4
 str_electric_switzerland_sbb_ae_6_6,SBB Ae 6/6
 str_electric_switzerland_sbb_re460_lok_2000,SBB Re460 'Lok 2000'
 str_electric_switzerland_sbb_eem_923,SBB Eem 923
-str_electric_austria_obb_1044,ÖBB 1044
-str_electric_austria_obb_1063,ÖBB 1063
+str_electric_austria_obb_1044,OBB 1044
+str_electric_austria_obb_1063,OBB 1063
 str_electric_sweden_mtab_dm3,MTAB Dm3
 str_electric_sweden_mtab_iore,MTAB IORE
 str_electric_sweden_sj_o_class,SJ O
@@ -886,13 +886,13 @@ str_electric_china_china_railways_hxd1d,China Railways HXD1D
 str_electric_china_china_railways_6k,China Railways 6K
 str_electric_usa_prr_e44,PRR E44
 str_electric_croatia_hz_1141,HZ 1141
-str_electric_hungary_mav_class_v43,MÁV V43
+str_electric_hungary_mav_class_v43,MAV V43
 str_electric_portugal_cp_2500,CP 2500
 str_electric_portugal_cp_2600,CP 2600
 str_electric_south_africa_sar_20e,TFR 20E 'China Doll'
 str_electric_south_korea_korail_8200,Korail 8200
 str_electric_ukraine_uz_ds3,UZ DS3
-str_electric_czech_republic_cd_s499,ČD S499
+str_electric_czech_republic_cd_s499,CD S499
 str_electric_italy_fs_e491,FS E.491
 str_electric_macedonia_macedonian_railways_462,Macedonian Railways 462
 str_electric_morocco_oncfm_e_500,ONCFM E 500
@@ -908,7 +908,7 @@ str_electric_germany_db_182_es64u_taurus,DB 182 ES64U 'Taurus'
 str_electric_japan_jr_eh500,JR EH500
 str_electric_usa_amtrak_emd_aem_7,Amtrak EMD AEM-7
 str_electric_usa_amtrak_hhp_8,Amtrak HHP-8
-str_electric_czech_republic_cd_380,ČD 380
+str_electric_czech_republic_cd_380,CD 380
 str_electric_spain_renfe_252,RENFE 252
 str_electric_germany_db_185_traxx_f140,DB 185 TRAXX F140
 str_electric_italy_fs_e550,FS E.550
@@ -948,7 +948,7 @@ str_electric_russia_rzd_ep20,RZD EP20
 str_electric_congo_type_2450_acec_charleroi_zaire_electric,Zaire Electric Type 2450
 str_dmu_germany_db_vt_040_flying_hamburger,DB VT 04.0 'Flying Hamburger'
 str_dmu_australia_nswgr_silver_city_comet,NSWGR 'Silver City Comet'
-str_dmu_czech_republic_cd_m131,ČD M131
+str_dmu_czech_republic_cd_m131,CD M131
 str_dmu_germany_db_vt_085,DB VT 08.5
 str_dmu_australia_queensland_rail_400,South Australian Railways 400 'Redhen'
 str_dmu_germany_db_vt_115,DB VT11.5 / DB 601 'TEE'
@@ -969,9 +969,9 @@ str_dmu_australia_cityrail_hunter_railcar,TrainLink Hunter Railcar
 str_dmu_russia_rzd_ra2,RZD RA2
 str_dmu_denmark_dsb_ic4,DSB IC4
 str_dmu_croatia_hz_7022,HZ 7022
-str_dmu_turkey_tcdd_mt_5500,TČDD MT 5500
+str_dmu_turkey_tcdd_mt_5500,TCDD MT 5500
 str_dmu_japan_jnr_kiha_181,JNR KiHa 181
-str_dmu_czech_republic_cd_814,ČD 814
+str_dmu_czech_republic_cd_814,CD 814
 str_dmu_uk_br_150_0_sprinter,BR 150/0 'Sprinter'
 str_dmu_iran_rai_141_pacer,RAI 141 'Pacer'
 str_dmu_israel_israel_railways_ic3,Israel Railways IC3
@@ -1022,8 +1022,8 @@ str_emu_italy_fs_ale426,FS ALe 426
 str_emu_morocco_oncf_zmc,ONCF ZMC
 str_emu_poland_pkp_ew54,PKP EW54
 str_emu_italy_fs_ale_801,FS ALe 801
-str_emu_austria_obb_4030,ÖBB 4030
-str_emu_austria_obb_4041,ÖBB 4041
+str_emu_austria_obb_4030,OBB 4030
+str_emu_austria_obb_4041,OBB 4041
 str_emu_austria_westbahn_4010_kiss,WESTbahn 4010 'KISS'
 str_emu_germany_db_et420,DB 420
 str_emu_norway_nsb_bm73,NSB BM73
@@ -1037,7 +1037,7 @@ str_emu_germany_db_403_ice_3,DB 403 'ICE3'
 str_emu_bulgaria_bdz_10_desiro,BDZ 10 'Desiro'
 str_emu_finland_vr_sm2,VR Sm2
 str_emu_finland_vr_sm4,VR Sm4
-str_emu_hungary_mav_bdvmot,MÁV BDVmot
+str_emu_hungary_mav_bdvmot,MAV BDVmot
 str_emu_europe_sureot,Sureot
 str_emu_japan_jnr_shinkansen_series_0,JNR Shinkansen Series 0
 str_emu_japan_jr_shinkansen_series_700,JR Shinkansen Series 700
@@ -1057,7 +1057,7 @@ str_emu_usa_erie_lackawanna_mu_cars,Erie Lackawanna MU Cars
 str_emu_france_sncf_tgv_sud_est,SNCF TGV Sud-Est
 str_emu_france_sncf_tgv_duplex,SNCF TGV Duplex
 str_emu_france_thalys_pbka,Thalys PBKA
-str_emu_czech_republic_cd_680_pendolino,ČD 680 'Pendolino'
+str_emu_czech_republic_cd_680_pendolino,CD 680 'Pendolino'
 str_emu_spain_renfe_120,RENFE 120
 str_emu_usa_amtrak_acela_express,Amtrak Acela Express
 str_emu_japan_odakyu_3100_series_romance,Odakyu 3100 Series 'Romance'
@@ -1232,3 +1232,5 @@ str_mu_coach_gen6_metropolis_coach,Metropolis Coach
 str_mu_coach_gen6_speedmail_coach,Speedmail Coach
 str_mu_coach_gen6_super_regio_coach,Super Regio Coach
 str_mu_coach_gen6_super_voyager_coach,Super Voyager Coach
+str_mu_coach_gen6_citynightline_sleeper,"""CityNightLine"" Sleeper"
+str_mu_coach_gen6_trans_euro_night_sleeper,"""Trans Euro Night"" Sleeper"
