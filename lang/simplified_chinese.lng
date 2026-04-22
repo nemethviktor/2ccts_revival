@@ -15,7 +15,7 @@ STR_WORD_NORMAL                                                   :默认
 # STR_SUFFIX_STEAMENGINE                                            : not translated
 # STR_SUFFIX_DIESELENGINE                                           : not translated
 # STR_SUFFIX_ELECTRICENGINE                                         : not translated
-# STR_SUFFIX_MAGLEVSU                                               : not translated
+# STR_SUFFIX_MAGLEVENGINE                                           : not translated
 STR_SUFFIX_STEAMRAILBUS                                           :蒸汽铁路巴士
 STR_SUFFIX_DIESELRAILBUS                                          :内燃铁路巴士
 STR_SUFFIX_ELECTRICRAILBUS                                        :电力铁路巴士
@@ -996,6 +996,9 @@ str_emu_china_railways_chr380a                                    :中铁CR CRH3
 str_emu_europe_sureot                                             :Sureot (电力动车, 25kV AC)
 # str_cargoemu_japan_jr_freight_m250                                : not translated
 
+# Maglevengine
+# str_mglv_germany_db_182_es64um_mutus                              : not translated
+
 # Maglevmu
 str_mglv_china_transrapid                                         :上海磁浮 (MMU)
 str_mglv_japan_mlx01_901                                          :日铁MLX01-901 (MMU)
@@ -1004,9 +1007,6 @@ str_mglv_maglev_wagon_unpowered                                   :磁浮车厢 
 
 # Maglevrailbus
 str_rbm_world_turbobus                                            :涡轮巴士 (Maglev Railbus)
-
-# Maglevsu
-# str_mglv_germany_db_182_es64um_mutus                              : not translated
 
 # Metro
 str_mtro_uk_london_1903_stock                                     :伦敦 1903 Stock (城轨, 电力 4th Rail)

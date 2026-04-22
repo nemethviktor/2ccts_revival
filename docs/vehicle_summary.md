@@ -571,6 +571,12 @@
 | ![NTV AGV Duplex](vehicle_graphics/str_emu_italy_ntv_agv_duplex.png) | NTV AGV Duplex | 2015 | 360 | 3104 | Ultra-High-Speed (Pax) | 160 | Southern Europe |
 | ![Sureot](vehicle_graphics/str_emu_europe_sureot.png) | Sureot | 2030 | 300 | 16000 | Ultra-High-Speed (Pax) | 170 | Southern Europe, Eastern Europe, Western Europe, Northern Europe |
 
+## MAGLEVENGINE
+
+| Graphics | Name | Intro | Speed | Power | Role | Cap | Regions |
+| :---: | :--- | :---: | :---: | :---: | :--- | :---: | :--- |
+| ![DB 182 ES64UM 'Mutus'](vehicle_graphics/str_mglv_germany_db_182_es64um_mutus.png) | DB 182 ES64UM 'Mutus' | 2005 | 250 | 18875 | Ultra-High-Speed (Universal) | 0 | Western Europe |
+
 ## MAGLEVMU
 
 | Graphics | Name | Intro | Speed | Power | Role | Cap | Regions |
@@ -585,12 +591,6 @@
 | Graphics | Name | Intro | Speed | Power | Role | Cap | Regions |
 | :---: | :--- | :---: | :---: | :---: | :--- | :---: | :--- |
 | ![Turbobus](vehicle_graphics/str_rbm_world_turbobus.png) | Turbobus | 2040 | 753 | 5070 | Ultra-High-Speed (Pax) | 45 | Africa, Asia, Southern Europe, Eastern Europe, Western Europe, Northern Europe, North America, South America, Oceania |
-
-## MAGLEVSU
-
-| Graphics | Name | Intro | Speed | Power | Role | Cap | Regions |
-| :---: | :--- | :---: | :---: | :---: | :--- | :---: | :--- |
-| ![DB 182 ES64UM 'Mutus'](vehicle_graphics/str_mglv_germany_db_182_es64um_mutus.png) | DB 182 ES64UM 'Mutus' | 2005 | 250 | 18875 | Ultra-High-Speed (Universal) | 0 | Western Europe |
 
 ## METRO
 

@@ -815,7 +815,7 @@ def generate_unified_items():
                                   ]:
             content.append(
                 f"        default: switch_{VEHIDCODE_lcase}_animation;\n")
-        elif category in ['DIESELENGINE', 'ELECTRICENGINE', 'MAGLEVSU', 'STEAMENGINE'] \
+        elif category in ['DIESELENGINE', 'ELECTRICENGINE', 'MAGLEVENGINE', 'STEAMENGINE'] \
                 or category.endswith('RAILBUS') \
                 or is_true(row['IS_POWERED_UNPOWERED_SUNDRY']):
             if TEMPLATE_ID_FULL in ['TPL_02A', 'TPL_02C', 'TPL_02D', 'TPL_02E', 'TPL_02F', 'TPL_42A', 'TPL_42B',

@@ -16,7 +16,7 @@ STR_WORD_NORMAL                                                   :standard
 # STR_SUFFIX_STEAMENGINE                                            : not translated
 # STR_SUFFIX_DIESELENGINE                                           : not translated
 # STR_SUFFIX_ELECTRICENGINE                                         : not translated
-# STR_SUFFIX_MAGLEVSU                                               : not translated
+# STR_SUFFIX_MAGLEVENGINE                                           : not translated
 STR_SUFFIX_STEAMRAILBUS                                           :Dampf-Schienenbus
 STR_SUFFIX_DIESELRAILBUS                                          :Diesel-Schienenbus
 # STR_SUFFIX_ELECTRICRAILBUS                                        : not translated
@@ -997,6 +997,9 @@ str_electric_germany_db_185_traxx_f140                            :DB 145 TRAXX 
 # str_emu_europe_sureot                                             : not translated
 # str_cargoemu_japan_jr_freight_m250                                : not translated
 
+# Maglevengine
+# str_mglv_germany_db_182_es64um_mutus                              : not translated
+
 # Maglevmu
 # str_mglv_china_transrapid                                         : not translated
 # str_mglv_japan_mlx01_901                                          : not translated
@@ -1005,9 +1008,6 @@ str_electric_germany_db_185_traxx_f140                            :DB 145 TRAXX 
 
 # Maglevrailbus
 # str_rbm_world_turbobus                                            : not translated
-
-# Maglevsu
-# str_mglv_germany_db_182_es64um_mutus                              : not translated
 
 # Metro
 str_mtro_uk_london_1903_stock                                     :London 1903-er Baureihe (U-Bahn, Elektrisch 4th Rail)

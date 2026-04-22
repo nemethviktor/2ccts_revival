@@ -16,7 +16,7 @@ STR_WORD_NORMAL                                                   :verstek
 STR_SUFFIX_STEAMENGINE                                            :Stoom
 STR_SUFFIX_DIESELENGINE                                           :Diesel
 STR_SUFFIX_ELECTRICENGINE                                         :Elektries
-STR_SUFFIX_MAGLEVSU                                               :Maglev
+STR_SUFFIX_MAGLEVENGINE                                           :Maglev
 STR_SUFFIX_STEAMRAILBUS                                           :Stoom Goedere Spoorbus
 STR_SUFFIX_DIESELRAILBUS                                          :Diesel Spoorbus
 STR_SUFFIX_ELECTRICRAILBUS                                        :Elektries Spoorbus
@@ -997,6 +997,9 @@ str_emu_tunisia_sncft_yz_e                                        :SNCFT YZ-E (E
 # str_emu_europe_sureot                                             : not translated
 # str_cargoemu_japan_jr_freight_m250                                : not translated
 
+# Maglevengine
+# str_mglv_germany_db_182_es64um_mutus                              : not translated
+
 # Maglevmu
 str_mglv_china_transrapid                                         :Sjanghai Transrapid (MMU)
 str_mglv_japan_mlx01_901                                          :JR MLX01-901 (MMU)
@@ -1005,9 +1008,6 @@ str_mglv_maglev_wagon_powered                                     :Maglev-eenhei
 
 # Maglevrailbus
 # str_rbm_world_turbobus                                            : not translated
-
-# Maglevsu
-# str_mglv_germany_db_182_es64um_mutus                              : not translated
 
 # Metro
 str_mtro_uk_london_1903_stock                                     :London 1903 Trein (Metro, Elektries 4th Rail)

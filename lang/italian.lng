@@ -17,7 +17,7 @@ STR_WORD_NORMAL                                                   :impostazione 
 STR_SUFFIX_STEAMENGINE                                            :locomotiva a vapore
 STR_SUFFIX_DIESELENGINE                                           :locomotiva diesel
 STR_SUFFIX_ELECTRICENGINE                                         :locomotiva elettrica
-# STR_SUFFIX_MAGLEVSU                                               : not translated
+# STR_SUFFIX_MAGLEVENGINE                                           : not translated
 STR_SUFFIX_STEAMRAILBUS                                           :automotrice a vapore
 STR_SUFFIX_DIESELRAILBUS                                          :automotrice diesel
 STR_SUFFIX_ELECTRICRAILBUS                                        :automotrice elettrica
@@ -998,6 +998,9 @@ str_emu_china_railways_chr380a                                    :Ferrovie Cine
 str_emu_europe_sureot                                             :Sureot (elettrotreno, Electric 25kV AC)
 # str_cargoemu_japan_jr_freight_m250                                : not translated
 
+# Maglevengine
+# str_mglv_germany_db_182_es64um_mutus                              : not translated
+
 # Maglevmu
 # str_mglv_china_transrapid                                         : not translated
 # str_mglv_japan_mlx01_901                                          : not translated
@@ -1006,9 +1009,6 @@ str_emu_europe_sureot                                             :Sureot (elett
 
 # Maglevrailbus
 str_rbm_world_turbobus                                            :Turbobus (Maglev Railbus)
-
-# Maglevsu
-# str_mglv_germany_db_182_es64um_mutus                              : not translated
 
 # Metro
 str_mtro_uk_london_1903_stock                                     :Londra Materiale del 1903 (Metro, Electric 4th Rail)

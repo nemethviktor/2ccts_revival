@@ -11570,8 +11570,8 @@ item(FEAT_TRAINS, item_singlemtro_germany_berlin_u_bahn_c_ii, 14003) {}
 // 14998 free
 // 14999 free
 
-// Maglev (Single Engine), available ID range: 15000-15499 (hex 0x3A98..0x3C8B)
-#define ID_RANGE_SINGLEMAGLEV 0x3A98..0x3C8B
+// Maglev, available ID range: 15000-15499 (hex 0x3A98..0x3C8B)
+#define ID_RANGE_MAGLEV 0x3A98..0x3C8B
 // 15000 free
 item(FEAT_TRAINS, item_mglv_germany_db_182_es64um_mutus, 15001) {}
 // 15002 free

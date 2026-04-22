@@ -14,7 +14,7 @@ STR_WORD_NORMAL                                                   :default
 STR_SUFFIX_STEAMENGINE                                            :Steam
 STR_SUFFIX_DIESELENGINE                                           :Diesel
 STR_SUFFIX_ELECTRICENGINE                                         :Electric
-STR_SUFFIX_MAGLEVSU                                               :Maglev
+STR_SUFFIX_MAGLEVENGINE                                           :Maglev
 STR_SUFFIX_STEAMRAILBUS                                           :Steam Railbus
 STR_SUFFIX_DIESELRAILBUS                                          :Diesel Railbus
 STR_SUFFIX_ELECTRICRAILBUS                                        :Electric Railbus
@@ -995,6 +995,9 @@ str_emu_china_railways_chr380a                                    :China Railway
 str_emu_europe_sureot                                             :Sureot (EMU, 25kV AC)
 str_cargoemu_japan_jr_freight_m250                                :JR Freight M250 (EMU, 1500V DC)
 
+# Maglevengine
+str_mglv_germany_db_182_es64um_mutus                              :DB 182 ES64UM 'Mutus' (Maglev)
+
 # Maglevmu
 str_mglv_china_transrapid                                         :Shanghai Transrapid (MMU)
 str_mglv_japan_mlx01_901                                          :JR MLX01-901 (MMU)
@@ -1003,9 +1006,6 @@ str_mglv_maglev_wagon_powered                                     :Maglev Unit W
 
 # Maglevrailbus
 str_rbm_world_turbobus                                            :Turbobus (Maglev Railbus)
-
-# Maglevsu
-str_mglv_germany_db_182_es64um_mutus                              :DB 182 ES64UM 'Mutus' (Maglev)
 
 # Metro
 str_mtro_uk_london_1903_stock                                     :London 1903 Stock (Metro, Electric 4th Rail)

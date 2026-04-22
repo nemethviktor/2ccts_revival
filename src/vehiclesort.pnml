@@ -833,7 +833,7 @@ item_singlemtro_germany_berlin_u_bahn_c_ii, /*Year: 1929*/
 
 #define SORTING_SMU \
 
-#define SORTING_SINGLEMAGLEV \
+#define SORTING_MAGLEV \
 item_mglv_germany_db_182_es64um_mutus, /*Year: 2005*/
 
 #define SORTING_CARGODMU \
@@ -883,7 +883,7 @@ sort(FEAT_TRAINS, [
     SORTING_UNIT_WAGONS_RAIL_CARGO 
     SORTING_SINGLEMETRO 
     SORTING_SMU 
-    SORTING_SINGLEMAGLEV 
+    SORTING_MAGLEV 
     SORTING_CARGODMU 
     SORTING_RBM 
     SORTING_WAGONS_MGLV 

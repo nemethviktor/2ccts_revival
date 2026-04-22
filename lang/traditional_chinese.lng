@@ -15,7 +15,7 @@ STR_GRF_URL                                                       :https://githu
 STR_SUFFIX_STEAMENGINE                                            :蒸汽
 STR_SUFFIX_DIESELENGINE                                           :柴油
 STR_SUFFIX_ELECTRICENGINE                                         :電力
-STR_SUFFIX_MAGLEVSU                                               :磁浮
+STR_SUFFIX_MAGLEVENGINE                                           :磁浮
 STR_SUFFIX_STEAMRAILBUS                                           :蒸汽輕軌車廂
 STR_SUFFIX_DIESELRAILBUS                                          :柴油輕軌車廂
 # STR_SUFFIX_ELECTRICRAILBUS                                        : not translated
@@ -996,6 +996,9 @@ str_electric_ukraine_uz_ds3                                       :烏克蘭鐵�
 # str_emu_europe_sureot                                             : not translated
 # str_cargoemu_japan_jr_freight_m250                                : not translated
 
+# Maglevengine
+# str_mglv_germany_db_182_es64um_mutus                              : not translated
+
 # Maglevmu
 str_mglv_china_transrapid                                         :上海 Transrapid (MMU)
 # str_mglv_japan_mlx01_901                                          : not translated
@@ -1004,9 +1007,6 @@ str_mglv_maglev_wagon_powered                                     :磁浮車廂 
 
 # Maglevrailbus
 # str_rbm_world_turbobus                                            : not translated
-
-# Maglevsu
-# str_mglv_germany_db_182_es64um_mutus                              : not translated
 
 # Metro
 str_mtro_uk_london_1903_stock                                     :倫敦地鐵 1903 型 (捷運, 電力 4th Rail)

@@ -15,7 +15,7 @@ STR_WORD_NORMAL                                                   :standaard
 # STR_SUFFIX_STEAMENGINE                                            : not translated
 # STR_SUFFIX_DIESELENGINE                                           : not translated
 # STR_SUFFIX_ELECTRICENGINE                                         : not translated
-# STR_SUFFIX_MAGLEVSU                                               : not translated
+# STR_SUFFIX_MAGLEVENGINE                                           : not translated
 STR_SUFFIX_STEAMRAILBUS                                           :Stoom Railbus
 STR_SUFFIX_DIESELRAILBUS                                          :Dieselrailbus
 STR_SUFFIX_ELECTRICRAILBUS                                        :Elektrische Railbus
@@ -996,6 +996,9 @@ str_emu_tunisia_sncft_yz_e                                        :SNCFT YZ-E (E
 # str_emu_europe_sureot                                             : not translated
 # str_cargoemu_japan_jr_freight_m250                                : not translated
 
+# Maglevengine
+# str_mglv_germany_db_182_es64um_mutus                              : not translated
+
 # Maglevmu
 str_mglv_china_transrapid                                         :Shanghai Transrapid (MMU)
 str_mglv_japan_mlx01_901                                          :JR MLX01-901 (MMU)
@@ -1004,9 +1007,6 @@ str_mglv_japan_mlx01_901                                          :JR MLX01-901 
 
 # Maglevrailbus
 # str_rbm_world_turbobus                                            : not translated
-
-# Maglevsu
-# str_mglv_germany_db_182_es64um_mutus                              : not translated
 
 # Metro
 str_mtro_uk_london_1903_stock                                     :London 1903 Stock (Metro, Elektrisch 4th Rail)

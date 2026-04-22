@@ -15,7 +15,7 @@ STR_WORD_NORMAL                                                   :oletus
 # STR_SUFFIX_STEAMENGINE                                            : not translated
 # STR_SUFFIX_DIESELENGINE                                           : not translated
 # STR_SUFFIX_ELECTRICENGINE                                         : not translated
-# STR_SUFFIX_MAGLEVSU                                               : not translated
+# STR_SUFFIX_MAGLEVENGINE                                           : not translated
 STR_SUFFIX_STEAMRAILBUS                                           :Höyrykiskobussi
 STR_SUFFIX_DIESELRAILBUS                                          :Dieselkiskobussi
 STR_SUFFIX_ELECTRICRAILBUS                                        :Sähkökiskobussi
@@ -996,6 +996,9 @@ str_rbe_italy_fs_ale_840                                          :FS ALe 840 (S
 # str_emu_europe_sureot                                             : not translated
 # str_cargoemu_japan_jr_freight_m250                                : not translated
 
+# Maglevengine
+# str_mglv_germany_db_182_es64um_mutus                              : not translated
+
 # Maglevmu
 # str_mglv_china_transrapid                                         : not translated
 # str_mglv_japan_mlx01_901                                          : not translated
@@ -1004,9 +1007,6 @@ str_rbe_italy_fs_ale_840                                          :FS ALe 840 (S
 
 # Maglevrailbus
 # str_rbm_world_turbobus                                            : not translated
-
-# Maglevsu
-# str_mglv_germany_db_182_es64um_mutus                              : not translated
 
 # Metro
 # str_mtro_uk_london_1903_stock                                     : not translated
