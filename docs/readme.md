@@ -8,6 +8,7 @@ What I currently need help with is for people to use the badge filters to see wh
 ## Availability
 
 The grf file is available on Github under [Releases](https://github.com/nemethviktor/2ccts_revival/releases/latest) for the time being (scroll down to Assets and it should be there). If there is ample interest from people, I'll figure a way to push the files into the game's ecosystem.
+
 There is a nightly of sorts on my [Google Drive](https://drive.google.com/file/d/15M6hdWmnYQWlgP0Xh-UZbEimmLge4TZk/view?usp=drive_link) - whenever I compile the file locally on my laptop it gets copied there but it may or may not be buggy.
 
 ## Vehicle Roster
@@ -33,6 +34,7 @@ Please use github to submit requests of any kind, _don't use the OTTD forums_ - 
 As part of the porting process I've automated the creation of the individual item files. This, considering that there was limited documentation (read: almost none) available as to why certain things had been the way inevitably caused some differences in the outcomes. There had been some inconsistencies in the graphics override allocations that were most likely down to simple human errors. A particular consistent element in differences are the running cost and purchase cost calculations. These changes are very minor but I wanted to include a note on them. 
 
 I have also re-validated all the vehicles in the set. In practice this means that when I was able to find a Wikipedia article, I took information from there, otherwise I asked Gemini (yes I use AI, such is life; there are a number of notes/comments inside the Excel file that have also been auto-copied into the various item.pnml files, please check these if you have queries.). 
+
 In some cases, espc wrt TE/Coefficient in steam powered vehicles, as well as the weight of them may not fully line up with the old values; this partially has to do with the fact that I think originally the loco weights were loco-only whereas now they are loco+tender where applicable. I also reworked the pax capacity where applicable. The speeds of steam engines have been oftentimes reduced from top speeds to sustainable service speeds with some extra overhead so that they don't feel too slow either (in fact some have been increased because they had been defined as slow as 15kmh [10mph], which was useless as well as unlikely).
 
 For **metros and xMUs** the following logic now applies: in Excel the TE-C has been halved. If taking a real life example of the `Moscow 81-720` the legacy set had `0.69` TE-C, from which the game calculated a TE of some `440kN` or so, which is unrealistic, even if we use powered cars. Half of that is realistic though.
@@ -78,7 +80,6 @@ Furthermore, I'm terrible at math and Newton-Raphson calculations (which is what
 As I wrote above my GFX skills are zero so I'd like to ask people with graphics skills to chip in with the designs, either for new/concept vehicles or just changes to existing ones. 
 
 Please **do stick to one of the template files** or, while beggars can't be choosers I _will_ reject the design. You may ofc put your logo or text or palette on the file(s) but don't move the template boxes. There are/were over 50 (!!!) various combinations in the legacy files and I'd rather die than to decipher any more random ones. (Main) Template logic cna be found in another readme inside the `gfx` folder and there are templates of existing files as well there. Furthermore each pnml file has the template designation inside it so if you would like to add more designs, pick one from the existing ones.
-
 
 
 ## Ye Olde Readme [by Transportman, pre-2026 with minor modifications as indicated]

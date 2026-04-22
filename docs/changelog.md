@@ -23,6 +23,8 @@
 	- Cloned `Brooklyn Union Gate Car` from Single-Metro to normal Metro - there was a `1300` series, which was the Single-Metro and an `Elevated`, which was the "normal". 
 	- Added `"Trans Euro Night" Sleeper` and `"CityNightLine" Sleeper` ref #4
 	- Changed some coaches to be DT-compatible #5
+	- Added/Extracted a livestock _only_ set of wagons, now separate from Boxcars.
+	
 
 **3.3-RC1 [20260412]**
 - CODE CHANGES:

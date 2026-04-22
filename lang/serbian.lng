@@ -1267,6 +1267,12 @@ str_mu_wagon_gen4_boxcar_type2                                    :Zatvoreni vag
 # str_mu_wagon_gen6_boxcar_type2                                    : not translated
 # str_mu_wagon_gen6_silo_type2                                      : not translated
 # str_mu_wagon_gen6_hopper_type2                                    : not translated
+# str_mu_wagon_gen1_livestock_van                                   : not translated
+# str_mu_wagon_gen2_livestock_van                                   : not translated
+# str_mu_wagon_gen3_livestock_van                                   : not translated
+# str_mu_wagon_gen4_livestock_van                                   : not translated
+# str_mu_wagon_gen5_livestock_van                                   : not translated
+# str_mu_wagon_gen6_livestock_van                                   : not translated
 # str_mglv_wagon_gen7m_flatcar                                      : not translated
 # str_mglv_wagon_gen7m_heavy_flatcar                                : not translated
 # str_mglv_wagon_gen7m_boxcar_type1                                 : not translated
@@ -1282,3 +1288,4 @@ str_mu_wagon_gen4_boxcar_type2                                    :Zatvoreni vag
 # str_mglv_wagon_gen7m_boxcar_type2                                 : not translated
 # str_mglv_wagon_gen7m_silo_type2                                   : not translated
 # str_mglv_wagon_gen7m_hopper_type2                                 : not translated
+# str_mu_wagon_gen7m_livestock_van                                  : not translated

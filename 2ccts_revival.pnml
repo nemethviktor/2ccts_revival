@@ -2266,6 +2266,9 @@
 #include "src/Wagons/Gen1/Wagon_Gen1_Open_Wagon_graphics.pnml"
 #include "src/Wagons/Gen1/Wagon_Gen1_Open_Wagon_item.pnml"
 
+#include "src/Wagons/Gen1/Wagon_Gen1_Livestock_Van_graphics.pnml"
+#include "src/Wagons/Gen1/Wagon_Gen1_Livestock_Van_item.pnml"
+
 
 //// WAGONS - GEN2
 #include "src/Wagons/Gen2/Wagon_Gen2_Flat_Wagon_graphics.pnml"
@@ -2288,6 +2291,9 @@
 
 #include "src/Wagons/Gen2/Wagon_Gen2_Boxcar_Type2_graphics.pnml"
 #include "src/Wagons/Gen2/Wagon_Gen2_Boxcar_Type2_item.pnml"
+
+#include "src/Wagons/Gen2/Wagon_Gen2_Livestock_Van_graphics.pnml"
+#include "src/Wagons/Gen2/Wagon_Gen2_Livestock_Van_item.pnml"
 
 
 //// WAGONS - GEN3
@@ -2314,6 +2320,9 @@
 
 #include "src/Wagons/Gen3/Wagon_Gen3_Boxcar_Type2_graphics.pnml"
 #include "src/Wagons/Gen3/Wagon_Gen3_Boxcar_Type2_item.pnml"
+
+#include "src/Wagons/Gen3/Wagon_Gen3_Livestock_Van_graphics.pnml"
+#include "src/Wagons/Gen3/Wagon_Gen3_Livestock_Van_item.pnml"
 
 
 //// WAGONS - GEN4
@@ -2355,6 +2364,9 @@
 
 #include "src/Wagons/Gen4/Wagon_Gen4_Boxcar_Type2_graphics.pnml"
 #include "src/Wagons/Gen4/Wagon_Gen4_Boxcar_Type2_item.pnml"
+
+#include "src/Wagons/Gen4/Wagon_Gen4_Livestock_Van_graphics.pnml"
+#include "src/Wagons/Gen4/Wagon_Gen4_Livestock_Van_item.pnml"
 
 
 //// WAGONS - GEN5
@@ -2403,6 +2415,9 @@
 #include "src/Wagons/Gen5/Wagon_Gen5_Hopper_Type2_graphics.pnml"
 #include "src/Wagons/Gen5/Wagon_Gen5_Hopper_Type2_item.pnml"
 
+#include "src/Wagons/Gen5/Wagon_Gen5_Livestock_Van_graphics.pnml"
+#include "src/Wagons/Gen5/Wagon_Gen5_Livestock_Van_item.pnml"
+
 
 //// WAGONS - GEN6
 #include "src/Wagons/Gen6/Wagon_Gen6_Flatcar_graphics.pnml"
@@ -2449,6 +2464,9 @@
 
 #include "src/Wagons/Gen6/Wagon_Gen6_Hopper_Type2_graphics.pnml"
 #include "src/Wagons/Gen6/Wagon_Gen6_Hopper_Type2_item.pnml"
+
+#include "src/Wagons/Gen6/Wagon_Gen6_Livestock_Van_graphics.pnml"
+#include "src/Wagons/Gen6/Wagon_Gen6_Livestock_Van_item.pnml"
 
 
 //// WAGONS - SERVICE_CAR
@@ -2504,6 +2522,9 @@
 
 #include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Hopper_Type2_graphics.pnml"
 #include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Hopper_Type2_item.pnml"
+
+#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Livestock_Van_graphics.pnml"
+#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Livestock_Van_item.pnml"
 
 // Sort vehicles in purchase list
 #include "src/vehiclesort.pnml"

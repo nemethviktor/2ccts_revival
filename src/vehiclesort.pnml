@@ -748,10 +748,12 @@ item_mu_wagon_gen1_flat_wagon, /*Year: 1830*/ \
 item_mu_wagon_gen1_boxcar, /*Year: 1830*/ \
 item_mu_wagon_gen1_tanker, /*Year: 1830*/ \
 item_mu_wagon_gen1_open_wagon, /*Year: 1830*/ \
+item_mu_wagon_gen1_livestock_van, /*Year: 1830*/ \
 item_mu_wagon_gen2_boxcar_type1, /*Year: 1890*/ \
 item_mu_wagon_gen2_open_wagon, /*Year: 1890*/ \
 item_mu_wagon_gen2_hopper, /*Year: 1890*/ \
 item_mu_wagon_gen2_boxcar_type2, /*Year: 1890*/ \
+item_mu_wagon_gen2_livestock_van, /*Year: 1890*/ \
 item_mu_wagon_gen2_flat_wagon, /*Year: 1900*/ \
 item_mu_wagon_gen2_tanker, /*Year: 1900*/ \
 item_mu_wagon_gen2_silo, /*Year: 1900*/ \
@@ -759,6 +761,7 @@ item_mu_wagon_gen3_boxcar_type1, /*Year: 1920*/ \
 item_mu_wagon_gen3_open_wagon, /*Year: 1920*/ \
 item_mu_wagon_gen3_hopper, /*Year: 1920*/ \
 item_mu_wagon_gen3_boxcar_type2, /*Year: 1920*/ \
+item_mu_wagon_gen3_livestock_van, /*Year: 1920*/ \
 item_mu_wagon_gen3_flat_wagon, /*Year: 1930*/ \
 item_mu_wagon_gen3_tanker, /*Year: 1930*/ \
 item_mu_wagon_gen3_silo_type1, /*Year: 1930*/ \
@@ -770,6 +773,7 @@ item_mu_wagon_gen4_silo_type1, /*Year: 1950*/ \
 item_mu_wagon_gen4_centerbeam, /*Year: 1950*/ \
 item_mu_wagon_gen4_silo_type2, /*Year: 1950*/ \
 item_mu_wagon_gen4_boxcar_type2, /*Year: 1950*/ \
+item_mu_wagon_gen4_livestock_van, /*Year: 1950*/ \
 item_mu_wagon_gen4_flatcar, /*Year: 1960*/ \
 item_mu_wagon_gen4_heavy_flatcar, /*Year: 1960*/ \
 item_mu_wagon_gen4_hopper_type1, /*Year: 1960*/ \
@@ -784,6 +788,7 @@ item_mu_wagon_gen5_container_carrier, /*Year: 1990*/ \
 item_mu_wagon_gen5_centerbeam, /*Year: 1990*/ \
 item_mu_wagon_gen5_superheavy_flatcar, /*Year: 1990*/ \
 item_mu_wagon_gen5_boxcar_type2, /*Year: 1990*/ \
+item_mu_wagon_gen5_livestock_van, /*Year: 1990*/ \
 item_mu_wagon_gen5_heavy_flatcar, /*Year: 2000*/ \
 item_mu_wagon_gen5_tanker, /*Year: 2000*/ \
 item_mu_wagon_gen5_silo_type1, /*Year: 2000*/ \
@@ -799,6 +804,7 @@ item_mu_wagon_gen6_container_carrier, /*Year: 2010*/ \
 item_mu_wagon_gen6_centerbeam, /*Year: 2010*/ \
 item_mu_wagon_gen6_superheavy_flatcar, /*Year: 2010*/ \
 item_mu_wagon_gen6_boxcar_type2, /*Year: 2010*/ \
+item_mu_wagon_gen6_livestock_van, /*Year: 2010*/ \
 item_mu_wagon_gen6_heavy_flatcar, /*Year: 2020*/ \
 item_mu_wagon_gen6_tanker, /*Year: 2020*/ \
 item_mu_wagon_gen6_silo_type1, /*Year: 2020*/ \
@@ -851,6 +857,7 @@ item_mglv_wagon_gen7m_container_carrier, /*Year: 2010*/ \
 item_mglv_wagon_gen7m_centerbeam, /*Year: 2010*/ \
 item_mglv_wagon_gen7m_superheavy_flatcar, /*Year: 2010*/ \
 item_mglv_wagon_gen7m_boxcar_type2, /*Year: 2010*/ \
+item_mu_wagon_gen7m_livestock_van, /*Year: 2010*/ \
 item_mglv_wagon_gen7m_heavy_flatcar, /*Year: 2020*/ \
 item_mglv_wagon_gen7m_tanker, /*Year: 2020*/ \
 item_mglv_wagon_gen7m_silo_type1, /*Year: 2020*/ \

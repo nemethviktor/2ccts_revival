@@ -468,6 +468,13 @@ def get_cargo_definitions(row: pd.Series) -> str:
             f"cargo_allow_refit: [];\n{" "*8}"
             f"cargo_disallow_refit: [];\n{" "*8}"
         ),
+        "LIVESTOCK": (
+            f"// cargodeftype: LIVESTOCK;\n{" "*8}"
+            f"refittable_cargo_classes: 0;\n{" "*8}"
+            f"{NO_NONREFITTABLE}\n{" "*8}"
+            f"cargo_allow_refit: [LVST];\n{" "*8}"
+            f"cargo_disallow_refit: [];\n{" "*8}"
+        ),
         "OPEN_WAGON": (
             f"// cargodeftype: OPEN_WAGON;\n{" "*8}"
             f"refittable_cargo_classes: bitmask(CC_PIECE_GOODS,CC_OPEN_BULK,CC_COVERED_BULK,CC_POWDER_BULK,CC_LIQUID_BULK,CC_GAS_BULK,CC_FLATBED,CC_EXPRESS,CC_WEIRD);\n{" "*8}"
@@ -667,8 +674,12 @@ def generate_unified_items():
             'TPL_25A', 'TPL_42A',] else None
         graphics_switch_back_livery = f"switch_{VEHIDCODE_lcase}_back_livery" if TEMPLATE_ID_FULL in [
             'TPL_42A'] else None
-        graphics_switch_cargo_selection = f"switch_{VEHIDCODE_lcase}_cargo_selection" if TEMPLATE_ID_FULL in ['TPL_02A', 'TPL_02D', 'TPL_02E', 'TPL_02F', 'TPL_02F', 'TPL_04C', 'TPL_04E', 'TPL_04F', 'TPL_04G', 'TPL_04H', 'TPL_04I', 'TPL_04J', 'TPL_04K', 'TPL_04L', 'TPL_04M', 'TPL_04N', 'TPL_04O', 'TPL_04P', 'TPL_04Q',
-                                                                                                              ] else None
+        graphics_switch_cargo_selection = f"switch_{VEHIDCODE_lcase}_cargo_selection" if TEMPLATE_ID_FULL in [
+            'TPL_02A', 'TPL_02D', 'TPL_02E', 'TPL_02F', 'TPL_02F', 'TPL_04C', 'TPL_04E', 'TPL_04F',
+            'TPL_04G', 'TPL_04H', 'TPL_04I', 'TPL_04J', 'TPL_04K', 'TPL_04L', 'TPL_04M', 'TPL_04N',
+            'TPL_04O', 'TPL_04P', 'TPL_04Q',
+        ] \
+            else None
 
         # This middle is not the middle above...[we ignore the 3-4 'steam' types that also actually have this because in legacy code i checked and it's not being applied.]
         graphics_spriteset_middle = f"spriteset_{VEHIDCODE_lcase}_middle" if is_true(
@@ -826,7 +837,9 @@ def generate_unified_items():
                 content.append(
                     f"        default: spriteset_{VEHIDCODE_lcase};\n")
         elif category in ['COACH', 'WAGON']:
-            if TEMPLATE_ID_FULL in ['TPL_02A', 'TPL_02D', 'TPL_02E', 'TPL_02F', 'TPL_04C', 'TPL_04E', 'TPL_04F', 'TPL_04G', 'TPL_04H', 'TPL_04I', 'TPL_04J', 'TPL_04K', 'TPL_04L', 'TPL_04M', 'TPL_04N', 'TPL_04O', 'TPL_04P', 'TPL_04Q',
+            if TEMPLATE_ID_FULL in ['TPL_02A', 'TPL_02D', 'TPL_02E', 'TPL_02F', 'TPL_04C', 'TPL_04E', 'TPL_04F', 'TPL_04G',
+                                    'TPL_04H', 'TPL_04I', 'TPL_04J', 'TPL_04K', 'TPL_04L', 'TPL_04M', 'TPL_04N', 'TPL_04O',
+                                    'TPL_04P', 'TPL_04Q',
                                     ]:
                 content.append(
                     f"        default: switch_{VEHIDCODE_lcase}_cargo_selection;\n")
@@ -836,11 +849,16 @@ def generate_unified_items():
                 'TPL_04J',
                 'TPL_04M',
                 'TPL_04P',
+
             ]:
                 # Total cluserf.k but box-cars and some tanker-wagons have so-called standard liveries
                 # ....with a capital 'S'!
                 content.append(
                     f"        default: switch_{VEHIDCODE_lcase}_standard_livery;\n")
+            elif TEMPLATE_ID_FULL in [
+                    'TPL_04T']:
+                content.append(
+                    f"        default: switch_{VEHIDCODE_lcase}_livestock_livery;\n")
             elif TEMPLATE_ID_FULL in [
                 'TPL_02F',
                 'TPL_04A',

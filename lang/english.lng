@@ -1264,6 +1264,12 @@ str_mu_wagon_gen6_superheavy_flatcar                              :6th Gen Super
 str_mu_wagon_gen6_boxcar_type2                                    :6th Gen Boxcar [Non-Food]
 str_mu_wagon_gen6_silo_type2                                      :6th Gen Silo [Non-Food]
 str_mu_wagon_gen6_hopper_type2                                    :6th Gen Self-discharging Hopper [Non-Food]
+str_mu_wagon_gen1_livestock_van                                   :1st Gen Livestock Van
+str_mu_wagon_gen2_livestock_van                                   :2nd Gen Livestock Van
+str_mu_wagon_gen3_livestock_van                                   :3rd Gen Livestock Van
+str_mu_wagon_gen4_livestock_van                                   :4th Gen Livestock Van
+str_mu_wagon_gen5_livestock_van                                   :5th Gen Livestock Van
+str_mu_wagon_gen6_livestock_van                                   :6th Gen Livestock Van
 str_mglv_wagon_gen7m_flatcar                                      :7th Gen Flatcar
 str_mglv_wagon_gen7m_heavy_flatcar                                :7th Gen Heavy Flatcar
 str_mglv_wagon_gen7m_boxcar_type1                                 :7th Gen Boxcar [Food]
@@ -1279,3 +1285,4 @@ str_mglv_wagon_gen7m_superheavy_flatcar                           :7th Gen Super
 str_mglv_wagon_gen7m_boxcar_type2                                 :7th Gen Boxcar [Non-Food]
 str_mglv_wagon_gen7m_silo_type2                                   :7th Gen Silo [Non-Food]
 str_mglv_wagon_gen7m_hopper_type2                                 :7th Gen Self-discharging Hopper [Non-Food]
+str_mu_wagon_gen7m_livestock_van                                  :7th Gen Livestock Van

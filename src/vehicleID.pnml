@@ -9104,12 +9104,12 @@ item(FEAT_TRAINS, item_mu_wagon_gen6_superheavy_flatcar, 12060) {}
 item(FEAT_TRAINS, item_mu_wagon_gen6_boxcar_type2, 12061) {}
 item(FEAT_TRAINS, item_mu_wagon_gen6_silo_type2, 12062) {}
 item(FEAT_TRAINS, item_mu_wagon_gen6_hopper_type2, 12063) {}
-// 12064 free
-// 12065 free
-// 12066 free
-// 12067 free
-// 12068 free
-// 12069 free
+item(FEAT_TRAINS, item_mu_wagon_gen1_livestock_van, 12064) {}
+item(FEAT_TRAINS, item_mu_wagon_gen2_livestock_van, 12065) {}
+item(FEAT_TRAINS, item_mu_wagon_gen3_livestock_van, 12066) {}
+item(FEAT_TRAINS, item_mu_wagon_gen4_livestock_van, 12067) {}
+item(FEAT_TRAINS, item_mu_wagon_gen5_livestock_van, 12068) {}
+item(FEAT_TRAINS, item_mu_wagon_gen6_livestock_van, 12069) {}
 // 12070 free
 // 12071 free
 // 12072 free
@@ -13097,7 +13097,7 @@ item(FEAT_TRAINS, item_mglv_wagon_gen7m_superheavy_flatcar, 18012) {}
 item(FEAT_TRAINS, item_mglv_wagon_gen7m_boxcar_type2, 18013) {}
 item(FEAT_TRAINS, item_mglv_wagon_gen7m_silo_type2, 18014) {}
 item(FEAT_TRAINS, item_mglv_wagon_gen7m_hopper_type2, 18015) {}
-// 18016 free
+item(FEAT_TRAINS, item_mu_wagon_gen7m_livestock_van, 18016) {}
 // 18017 free
 // 18018 free
 // 18019 free

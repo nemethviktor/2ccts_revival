@@ -1107,6 +1107,7 @@ def get_tpl_04(vid, gfx_path, row, template_amendment_code):
     Open Wagon Gen1 -> `TPL_04Q`
     Service Cars -> `TPL_04R`
     DC/Push-Pull -> `TPL_04S`
+    Livestock Van -> `TPL_04T`
     """
     gfx_purchase_amendment = "_Purchase"
     nml_code = []
@@ -1125,7 +1126,6 @@ def get_tpl_04(vid, gfx_path, row, template_amendment_code):
     if template_amendment_code == 'C':
         cargo_strings = [
             'Armoured',
-            'Livestock',
             'Reefer',
             'Standard',
         ]
@@ -1190,7 +1190,6 @@ def get_tpl_04(vid, gfx_path, row, template_amendment_code):
         ]
     elif template_amendment_code == 'M':
         cargo_strings = [
-            'Livestock',
             'Reefer',
             'Standard',
         ]
@@ -1213,7 +1212,6 @@ def get_tpl_04(vid, gfx_path, row, template_amendment_code):
         ]
     elif template_amendment_code == 'P':
         cargo_strings = [
-            'Livestock',
             'Reefer',
             'Standard',
         ]
@@ -1227,11 +1225,15 @@ def get_tpl_04(vid, gfx_path, row, template_amendment_code):
             'Sand',
             'Fruit'
         ]
+    elif template_amendment_code == 'T':
+        cargo_strings = [
+            'Livestock'
+        ]
 
     # endregion
 
     has_loading_states = template_amendment_code in [
-        'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q']
+        'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'T']
     has_driving_states = template_amendment_code in ['L', 'N', 'Q']
     has_reverse_state = template_amendment_code in ['S']
 
@@ -1327,7 +1329,6 @@ def get_tpl_04(vid, gfx_path, row, template_amendment_code):
         nml_code.append(f"\n// Random Goods Livery Selector")
         nml_code.append(f"""
         switch(FEAT_TRAINS, SELF, switch_{vid}_cargo_selection, cargo_type_in_veh) {{
-        LVST: switch_{vid}_livestock_livery;
         GOOD: switch_{vid}_goods_livery;
         VALU: switch_{vid}_armoured_livery;
         FOOD: switch_{vid}_reefer_livery;
@@ -1527,7 +1528,6 @@ random_switch(FEAT_TRAINS, SELF, switch_{vid}_goods_livery) {{
 }}
 
 switch(FEAT_TRAINS, SELF, switch_{vid}_cargo_selection, cargo_type_in_veh) {{
-	LVST: switch_{vid}_livestock_livery;
 	GOOD: switch_{vid}_goods_livery;
 	VALU: switch_{vid}_goods_livery;
 	FOOD: switch_{vid}_reefer_livery;
@@ -1599,7 +1599,6 @@ random_switch(FEAT_TRAINS, SELF, switch_{vid}_goods_livery) {{
 }}
 
 switch(FEAT_TRAINS, SELF, switch_{vid}_cargo_selection, cargo_type_in_veh) {{
-	LVST: switch_{vid}_livestock_livery;
 	GOOD: switch_{vid}_goods_livery;
 	VALU: switch_{vid}_goods_livery;
 	FOOD: switch_{vid}_reefer_livery;
