@@ -4,6 +4,8 @@ This project aims to capitalise on the work of Transportman, EmperorJake, Voyage
 
 There is now added support for various track types and voltages as well as badges. There is also support for push-pull and a small number of vehicles have been added. 
 What I currently need help with is for people to use the badge filters to see where we have gaps (mostly plenty of said gaps outside Europe) and suggest specific vehicles to add and preferably either provide the sprites or tell me what existing sprite they look similar to so I can clone. I'm extremely bad at drawing and have zero sense of spatial perspective.
+There is now added support for various track types and voltages as well as badges. There is also support for push-pull and a small number of vehicles have been added. 
+What I currently need help with is for people to use the badge filters to see where we have gaps (mostly plenty of said gaps outside Europe) and suggest specific vehicles to add and preferably either provide the sprites or tell me what existing sprite they look similar to so I can clone. I'm extremely bad at drawing and have zero sense of spatial perspective.
 
 ## Availability
 
