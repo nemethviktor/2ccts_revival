@@ -44,7 +44,7 @@ item(FEAT_TRAINS, item_mu_wagon_gen5_superheavy_flatcar) {
         refittable_cargo_classes: bitmask(CC_PIECE_GOODS, CC_FLATBED);
         non_refittable_cargo_classes: 0;
         cargo_allow_refit: [GOOD, VEHI];
-        cargo_disallow_refit: [PASS, MAIL, TOUR, COAL, OIL_, LVST, GRAI, WOOD, IORE, STEL, VALU, PAPR, WHEA, FOOD, GOLD, RUBR, FRUT, MAIZ, CORE, WATR, DIAM, SUGR, TOYS, BATT, SWET, TOFF, COLA, CTCD, BUBL, PLST, FZDR, AORE, BEER, BDMT, BRCK, CERA, CERE, CLAY, CMNT, COPR, DYES, ENSP, FERT, FICR, FISH, FMSP, GLAS, GRVL, JAVA, LIME, MILK, MNSP, OLSD, PETR, PLAS, POTA, RCYC, RFPR, SAND, SCMT, SGBT, SGCN, SULP, VPTS, WDPR, WOOL, URAN, YETI, YETY];
+        cargo_disallow_refit: [];
         
         cargo_age_period: 185;
         misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_AUTOREFIT);

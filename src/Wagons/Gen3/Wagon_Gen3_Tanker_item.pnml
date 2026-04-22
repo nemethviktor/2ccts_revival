@@ -43,8 +43,8 @@ item(FEAT_TRAINS, item_mu_wagon_gen3_tanker) {
         // cargodeftype: TANKER;
         refittable_cargo_classes: bitmask(CC_LIQUID_BULK, CC_GAS_BULK);
         non_refittable_cargo_classes: 0;
-        cargo_allow_refit: [OIL_, GOOD, RUBR, WATR, COLA, PLST, BEER, DYES, MILK, PETR, PLAS, RFPR];
-        cargo_disallow_refit: [PASS, MAIL, TOUR, COAL, LVST, GRAI, WOOD, IORE, STEL, VALU, PAPR, WHEA, FOOD, GOLD, FRUT, MAIZ, CORE, DIAM, SUGR, TOYS, BATT, SWET, TOFF, CTCD, BUBL, FZDR, AORE, BDMT, BRCK, CERA, CERE, CLAY, CMNT, COPR, ENSP, FERT, FICR, FISH, FMSP, GLAS, GRVL, JAVA, LIME, MNSP, OLSD, POTA, RCYC, SAND, SCMT, SGBT, SGCN, SULP, VEHI, VPTS, WDPR, WOOL, URAN, YETI, YETY];
+        cargo_allow_refit: [];
+        cargo_disallow_refit: [];
         
         cargo_age_period: 185;
         misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_AUTOREFIT);

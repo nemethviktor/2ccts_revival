@@ -374,8 +374,8 @@ def get_cargo_definitions(row: pd.Series) -> str:
             f"// cargodeftype: BOXCAR;\n{" "*8}"
             f"refittable_cargo_classes: bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_ARMOURED);\n{" "*8}"
             f"{NO_NONREFITTABLE}\n{" "*8}"
-            f"cargo_allow_refit: [LVST, GOOD, GRAI, VALU, PAPR, WHEA, FOOD, GOLD, FRUT, MAIZ, DIAM, SUGR, TOYS, BATT, SWET, BUBL, FZDR, BEER, BDMT, BRCK, CERA, CERE, COPR, ENSP, FERT, FISH, FMSP, GLAS, JAVA, MNSP, OLSD, POTA, RCYC, SGBT, SGCN, SULP, VEHI, VPTS, WOOL, URAN];\n{" "*8}"
-            f"cargo_disallow_refit: [PASS, MAIL, TOUR, COAL, OIL_, WOOD, IORE, STEL, RUBR, CORE, WATR, TOFF, COLA, CTCD, PLST, AORE, CLAY, CMNT, DYES, FICR, GRVL, LIME, MILK, PETR, PLAS, RFPR, SAND, SCMT, WDPR, YETI, YETY];\n{" "*8}"
+            f"cargo_allow_refit: [];\n{" "*8}"
+            f"cargo_disallow_refit: [];\n{" "*8}"
         ),
         "BOXCAR_TYPE1": (
             f"// cargodeftype: BOXCAR_TYPE1;\n{" "*8}"
@@ -402,8 +402,8 @@ def get_cargo_definitions(row: pd.Series) -> str:
             f"// cargodeftype: CENTERBEAM;\n{" "*8}"
             f"refittable_cargo_classes: bitmask(CC_PIECE_GOODS, CC_EXPRESS);\n{" "*8}"
             f"{NO_NONREFITTABLE}\n{" "*8}"
-            f"cargo_allow_refit: [GOOD, STEL, PAPR, TOYS, BATT, SWET, BUBL, FZDR, BDMT, BRCK, CERA, COPR, ENSP, FERT, FMSP, GLAS, JAVA, MNSP, RCYC, VPTS, WDPR, WOOL, URAN];\n{" "*8}"
-            f"cargo_disallow_refit: [PASS, MAIL, TOUR, COAL, OIL_, LVST, GRAI, WOOD, IORE, VALU, WHEA, FOOD, GOLD, RUBR, FRUT, MAIZ, CORE, WATR, DIAM, SUGR, TOFF, COLA, CTCD, PLST, AORE, BEER, CERE, CLAY, CMNT, DYES, FICR, FISH, GRVL, LIME, MILK, OLSD, PETR, PLAS, POTA, RFPR, SAND, SCMT, SGBT, SGCN, SULP, VEHI, YETI, YETY];\n{" "*8}"
+            f"cargo_allow_refit: [];\n{" "*8}"
+            f"cargo_disallow_refit: [];\n{" "*8}"
         ),
         "CONTAINER": (
             f"// cargodeftype: CONTAINER;\n{" "*8}"
@@ -416,43 +416,43 @@ def get_cargo_definitions(row: pd.Series) -> str:
             f"// cargodeftype: DOUBLECONTAINER;\n{" "*8}"
             f"refittable_cargo_classes: bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_REFRIGERATED);\n{" "*8}"
             f"{NO_NONREFITTABLE}\n{" "*8}"
-            f"cargo_allow_refit: [GOOD, PAPR, FOOD, FRUT, TOYS, BATT, SWET, BUBL, FZDR, BDMT, BRCK, CERA, CERE, COPR, ENSP, FERT, FICR, FISH, FMSP, GLAS, JAVA, MNSP, RCYC, VPTS, WDPR, WOOL, URAN];\n{" "*8}"
-            f"cargo_disallow_refit: [PASS, MAIL, TOUR, COAL, OIL_, LVST, GRAI, WOOD, IORE, STEL, VALU, WHEA, GOLD, RUBR, MAIZ, CORE, WATR, DIAM, SUGR, TOFF, COLA, CTCD, PLST, AORE, BEER, CLAY, CMNT, DYES, GRVL, LIME, MILK, OLSD, PETR, PLAS, POTA, RFPR, SAND, SCMT, SGBT, SGCN, SULP, VEHI, YETI, YETY];\n{" "*8}"
+            f"cargo_allow_refit: [];\n{" "*8}"
+            f"cargo_disallow_refit: [];\n{" "*8}"
         ),
         "FLAT_WAGON": (
             f"// cargodeftype: FLAT_WAGON;\n{" "*8}"
-            f"refittable_cargo_classes: bitmask(CC_PIECE_GOODS);\n{" "*8}"
-            f"non_refittable_cargo_classes: bitmask(CC_FLATBED);\n{" "*8}"
-            f"cargo_allow_refit: [GOOD, WOOD, STEL, TOYS, BATT, SWET, BUBL, FZDR, BDMT, BRCK, CERA, COPR, ENSP, FICR, FMSP, JAVA, MNSP, VPTS, WDPR, YETI, YETY];\n{" "*8}"
-            f"cargo_disallow_refit: [PASS, MAIL, TOUR, COAL, OIL_, LVST, GRAI, IORE, VALU, PAPR, WHEA, FOOD, GOLD, RUBR, FRUT, MAIZ, CORE, WATR, DIAM, SUGR, TOFF, COLA, CTCD, PLST, AORE, BEER, CERE, CLAY, CMNT, DYES, FERT, FISH, GLAS, GRVL, LIME, MILK, OLSD, PETR, PLAS, POTA, RCYC, RFPR, SAND, SCMT, SGBT, SGCN, SULP, VEHI, WOOL, URAN];\n{" "*8}"
+            f"refittable_cargo_classes: bitmask(CC_FLATBED);\n{" "*8}"
+            f"{NO_NONREFITTABLE}\n{" "*8}"
+            f"cargo_allow_refit: [];\n{" "*8}"
+            f"cargo_disallow_refit: [];\n{" "*8}"
         ),
         "GONDOLA": (
             f"// cargodeftype: GONDOLA;\n{" "*8}"
             f"refittable_cargo_classes: bitmask(CC_OPEN_BULK, CC_COVERED_BULK);\n{" "*8}"
             f"{NO_NONREFITTABLE}\n{" "*8}"
-            f"cargo_allow_refit: [COAL, GRAI, WOOD, IORE, WHEA, MAIZ, CORE, SUGR, TOFF, CTCD, AORE, CERE, CLAY, CMNT, GRVL, LIME, POTA, SAND, SCMT, WDPR];\n{" "*8}"
-            f"cargo_disallow_refit: [PASS, MAIL, TOUR, OIL_, LVST, GOOD, STEL, VALU, PAPR, FOOD, GOLD, RUBR, FRUT, WATR, DIAM, TOYS, BATT, SWET, COLA, BUBL, PLST, FZDR, BEER, BDMT, BRCK, CERA, COPR, DYES, ENSP, FERT, FICR, FISH, FMSP, GLAS, JAVA, MILK, MNSP, OLSD, PETR, PLAS, RCYC, RFPR, SGBT, SGCN, SULP, VEHI, VPTS, WOOL, URAN, YETI, YETY];\n{" "*8}"
+            f"cargo_allow_refit: [];\n{" "*8}"
+            f"cargo_disallow_refit: [];\n{" "*8}"
         ),
         "GOODS_RAILBUS": (
             f"// cargodeftype: GOODS_RAILBUS;\n{" "*8}"
             f"refittable_cargo_classes: bitmask({EXPRESS_REF});\n{" "*8}"
             f"{NO_NONREFITTABLE}\n{" "*8}"
-            f"cargo_allow_refit:[MAIL, GOOD, VALU, GOLD, DIAM];\n{" "*8}"
-            f"cargo_disallow_refit: [PASS, TOUR, COAL, OIL_, LVST, GRAI, WOOD, IORE, STEL, PAPR, WHEA, FOOD, RUBR, FRUT, MAIZ, CORE, WATR, SUGR, TOYS, BATT, SWET, TOFF, COLA, CTCD, BUBL, PLST, FZDR, AORE, BEER, BDMT, BRCK, CERA, CERE, CLAY, CMNT, COPR, DYES, ENSP, FERT, FICR, FISH, FMSP, GLAS, GRVL, JAVA, LIME, MILK, MNSP, OLSD, PETR, PLAS, POTA, RCYC, RFPR, SAND, SCMT, SGBT, SGCN, SULP, VEHI, VPTS, WDPR, WOOL, URAN, YETI, YETY];\n{" "*8}"
+            f"cargo_allow_refit:[];\n{" "*8}"
+            f"cargo_disallow_refit: [];\n{" "*8}"
         ),
         "HEAVYFLAT": (
             f"// cargodeftype: HEAVYFLAT;\n{" "*8}"
             f"refittable_cargo_classes: bitmask(CC_PIECE_GOODS, CC_FLATBED);\n{" "*8}"
             f"{NO_NONREFITTABLE}\n{" "*8}"
-            f"cargo_allow_refit: [GOOD, STEL, TOYS, BATT, SWET, BUBL, FZDR, BDMT, BRCK, CERA, COPR, ENSP, FMSP, GLAS, JAVA, MNSP, VEHI, VPTS, YETI, YETY];\n{" "*8}"
-            f"cargo_disallow_refit: [PASS, MAIL, TOUR, COAL, OIL_, LVST, GRAI, WOOD, IORE, VALU, PAPR, WHEA, FOOD, GOLD, RUBR, FRUT, MAIZ, CORE, WATR, DIAM, SUGR, TOFF, COLA, CTCD, PLST, AORE, BEER, CERE, CLAY, CMNT, DYES, FERT, FICR, FISH, GRVL, LIME, MILK, OLSD, PETR, PLAS, POTA, RCYC, RFPR, SAND, SCMT, SGBT, SGCN, SULP, WDPR, WOOL, URAN];\n{" "*8}"
+            f"cargo_allow_refit: [];\n{" "*8}"
+            f"cargo_disallow_refit: [];\n{" "*8}"
         ),
         "HOPPER": (
             f"// cargodeftype: HOPPER;\n{" "*8}"
             f"refittable_cargo_classes: bitmask(CC_OPEN_BULK, CC_COVERED_BULK);\n{" "*8}"
             f"non_refittable_cargo_classes: bitmask(CC_WEIRD);\n{" "*8}"
-            f"cargo_allow_refit: [COAL, IORE, CORE, AORE, CLAY, CMNT, GRVL, LIME, SAND, SGBT];\n{" "*8}"
-            f"cargo_disallow_refit: [PASS, MAIL, TOUR, OIL_, LVST, GOOD, GRAI, WOOD, STEL, VALU, PAPR, WHEA, FOOD, GOLD, RUBR, FRUT, MAIZ, WATR, DIAM, SUGR, TOYS, BATT, SWET, TOFF, COLA, CTCD, BUBL, PLST, FZDR, BEER, BDMT, BRCK, CERA, CERE, COPR, DYES, ENSP, FERT, FICR, FISH, FMSP, GLAS, JAVA, MILK, MNSP, OLSD, PETR, PLAS, POTA, RCYC, RFPR, SCMT, SGCN, SULP, VEHI, VPTS, WDPR, WOOL, URAN, YETI, YETY];\n{" "*8}"
+            f"cargo_allow_refit: [];\n{" "*8}"
+            f"cargo_disallow_refit: [];\n{" "*8}"
         ),
         "HOPPER_TYPE1": (
             f"// cargodeftype: HOPPER_TYPE1;\n{" "*8}"
@@ -470,24 +470,24 @@ def get_cargo_definitions(row: pd.Series) -> str:
         ),
         "OPEN_WAGON": (
             f"// cargodeftype: OPEN_WAGON;\n{" "*8}"
-            f"refittable_cargo_classes: bitmask(CC_OPEN_BULK);\n{" "*8}"
+            f"refittable_cargo_classes: bitmask(CC_PIECE_GOODS,CC_OPEN_BULK,CC_COVERED_BULK,CC_POWDER_BULK,CC_LIQUID_BULK,CC_GAS_BULK,CC_FLATBED,CC_EXPRESS,CC_WEIRD);\n{" "*8}"
             f"{NO_NONREFITTABLE}\n{" "*8}"
-            f"cargo_allow_refit: [COAL, GRAI, WOOD, IORE, WHEA, FRUT, MAIZ, CORE, SUGR, TOFF, CTCD, BUBL, AORE, CERE, CLAY, CMNT, GRVL, LIME, OLSD, POTA, SAND, SCMT];\n{" "*8}"
-            f"cargo_disallow_refit: [PASS, MAIL, TOUR, OIL_, LVST, GOOD, STEL, VALU, PAPR, FOOD, GOLD, RUBR, WATR, DIAM, TOYS, BATT, SWET, COLA, PLST, FZDR, BEER, BDMT, BRCK, CERA, COPR, DYES, ENSP, FERT, FICR, FISH, FMSP, GLAS, JAVA, MILK, MNSP, PETR, PLAS, RCYC, RFPR, SGBT, SGCN, SULP, VEHI, VPTS, WDPR, WOOL, URAN, YETI, YETY];\n{" "*8}"
+            f"cargo_allow_refit: [];\n{" "*8}"
+            f"cargo_disallow_refit: [];\n{" "*8}"
         ),
         "SUPERHEAVY": (
             f"// cargodeftype: SUPERHEAVY;\n{" "*8}"
             f"refittable_cargo_classes: bitmask(CC_PIECE_GOODS, CC_FLATBED);\n{" "*8}"
             f"{NO_NONREFITTABLE}\n{" "*8}"
             f"cargo_allow_refit: [GOOD, VEHI];\n{" "*8}"
-            f"cargo_disallow_refit: [PASS, MAIL, TOUR, COAL, OIL_, LVST, GRAI, WOOD, IORE, STEL, VALU, PAPR, WHEA, FOOD, GOLD, RUBR, FRUT, MAIZ, CORE, WATR, DIAM, SUGR, TOYS, BATT, SWET, TOFF, COLA, CTCD, BUBL, PLST, FZDR, AORE, BEER, BDMT, BRCK, CERA, CERE, CLAY, CMNT, COPR, DYES, ENSP, FERT, FICR, FISH, FMSP, GLAS, GRVL, JAVA, LIME, MILK, MNSP, OLSD, PETR, PLAS, POTA, RCYC, RFPR, SAND, SCMT, SGBT, SGCN, SULP, VPTS, WDPR, WOOL, URAN, YETI, YETY];\n{" "*8}"
+            f"cargo_disallow_refit: [];\n{" "*8}"
         ),
         "SILO": (
             f"// cargodeftype: SILO;\n{" "*8}"
             f"refittable_cargo_classes: bitmask(CC_POWDER_BULK);\n{" "*8}"
             f"{NO_NONREFITTABLE}\n{" "*8}"
-            f"cargo_allow_refit: [GRAI, WHEA, MAIZ, SUGR, CERE, OLSD, POTA, SULP, URAN];\n{" "*8}"
-            f"cargo_disallow_refit: [PASS, MAIL, TOUR, COAL, OIL_, LVST, GOOD, WOOD, IORE, STEL, VALU, PAPR, FOOD, GOLD, RUBR, FRUT, CORE, WATR, DIAM, TOYS, BATT, SWET, TOFF, COLA, CTCD, BUBL, PLST, FZDR, AORE, BEER, BDMT, BRCK, CERA, CLAY, CMNT, COPR, DYES, ENSP, FERT, FICR, FISH, FMSP, GLAS, GRVL, JAVA, LIME, MILK, MNSP, PETR, PLAS, RCYC, RFPR, SAND, SCMT, SGBT, SGCN, VEHI, VPTS, WDPR, WOOL, YETI, YETY];\n{" "*8}"
+            f"cargo_allow_refit: [];\n{" "*8}"
+            f"cargo_disallow_refit: [];\n{" "*8}"
         ),
         "SILO_TYPE1": (
             f"// cargodeftype: SILO_TYPE1;\n{" "*8}"
@@ -507,8 +507,8 @@ def get_cargo_definitions(row: pd.Series) -> str:
             f"// cargodeftype: TANKER;\n{" "*8}"
             f"refittable_cargo_classes: bitmask(CC_LIQUID_BULK, CC_GAS_BULK);\n{" "*8}"
             f"{NO_NONREFITTABLE}\n{" "*8}"
-            f"cargo_allow_refit: [OIL_, GOOD, RUBR, WATR, COLA, PLST, BEER, DYES, MILK, PETR, PLAS, RFPR];\n{" "*8}"
-            f"cargo_disallow_refit: [PASS, MAIL, TOUR, COAL, LVST, GRAI, WOOD, IORE, STEL, VALU, PAPR, WHEA, FOOD, GOLD, FRUT, MAIZ, CORE, DIAM, SUGR, TOYS, BATT, SWET, TOFF, CTCD, BUBL, FZDR, AORE, BDMT, BRCK, CERA, CERE, CLAY, CMNT, COPR, ENSP, FERT, FICR, FISH, FMSP, GLAS, GRVL, JAVA, LIME, MNSP, OLSD, POTA, RCYC, SAND, SCMT, SGBT, SGCN, SULP, VEHI, VPTS, WDPR, WOOL, URAN, YETI, YETY];\n{" "*8}"
+            f"cargo_allow_refit: [];\n{" "*8}"
+            f"cargo_disallow_refit: [];\n{" "*8}"
         ),
 
     }

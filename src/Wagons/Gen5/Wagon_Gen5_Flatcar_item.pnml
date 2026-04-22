@@ -41,10 +41,10 @@ item(FEAT_TRAINS, item_mu_wagon_gen5_flatcar) {
 
         reliability_decay: 20;
         // cargodeftype: FLAT_WAGON;
-        refittable_cargo_classes: bitmask(CC_PIECE_GOODS);
-        non_refittable_cargo_classes: bitmask(CC_FLATBED);
-        cargo_allow_refit: [GOOD, WOOD, STEL, TOYS, BATT, SWET, BUBL, FZDR, BDMT, BRCK, CERA, COPR, ENSP, FICR, FMSP, JAVA, MNSP, VPTS, WDPR, YETI, YETY];
-        cargo_disallow_refit: [PASS, MAIL, TOUR, COAL, OIL_, LVST, GRAI, IORE, VALU, PAPR, WHEA, FOOD, GOLD, RUBR, FRUT, MAIZ, CORE, WATR, DIAM, SUGR, TOFF, COLA, CTCD, PLST, AORE, BEER, CERE, CLAY, CMNT, DYES, FERT, FISH, GLAS, GRVL, LIME, MILK, OLSD, PETR, PLAS, POTA, RCYC, RFPR, SAND, SCMT, SGBT, SGCN, SULP, VEHI, WOOL, URAN];
+        refittable_cargo_classes: bitmask(CC_FLATBED);
+        non_refittable_cargo_classes: 0;
+        cargo_allow_refit: [];
+        cargo_disallow_refit: [];
         
         cargo_age_period: 185;
         misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_AUTOREFIT);

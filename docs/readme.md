@@ -4,13 +4,11 @@ This project aims to capitalise on the work of Transportman, EmperorJake, Voyage
 
 There is now added support for various track types and voltages as well as badges. There is also support for push-pull and a small number of vehicles have been added. 
 What I currently need help with is for people to use the badge filters to see where we have gaps (mostly plenty of said gaps outside Europe) and suggest specific vehicles to add and preferably either provide the sprites or tell me what existing sprite they look similar to so I can clone. I'm extremely bad at drawing and have zero sense of spatial perspective.
-There is now added support for various track types and voltages as well as badges. There is also support for push-pull and a small number of vehicles have been added. 
-What I currently need help with is for people to use the badge filters to see where we have gaps (mostly plenty of said gaps outside Europe) and suggest specific vehicles to add and preferably either provide the sprites or tell me what existing sprite they look similar to so I can clone. I'm extremely bad at drawing and have zero sense of spatial perspective.
 
 ## Availability
 
 The grf file is available on Github under [Releases](https://github.com/nemethviktor/2ccts_revival/releases/latest) for the time being (scroll down to Assets and it should be there). If there is ample interest from people, I'll figure a way to push the files into the game's ecosystem.
-
+There is a nightly of sorts on my [Google Drive](https://drive.google.com/file/d/15M6hdWmnYQWlgP0Xh-UZbEimmLge4TZk/view?usp=drive_link) - whenever I compile the file locally on my laptop it gets copied there but it may or may not be buggy.
 
 ## Vehicle Roster
 
