@@ -947,10 +947,10 @@ def generate_unified_items():
             f.writelines(content)
 
     # Save as CSV - this takes quite a few seconds.
-    print("---- Saving CSV File ----")
-    df_master.to_csv(os.path.join(
-        script_dir, 'vehicle_report.csv'), index=False)
-    print("---- Saving CSV File Complete ----")
+    # print("---- Saving CSV File ----")
+    # df_master.to_csv(os.path.join(
+    #     script_dir, 'vehicle_report.csv'), index=False)
+    # print("---- Saving CSV File Complete ----")
 
 
 if __name__ == "__main__":

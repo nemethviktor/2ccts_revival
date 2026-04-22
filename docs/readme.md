@@ -2,19 +2,21 @@
 
 This project aims to capitalise on the work of Transportman, EmperorJake, VoyagerOne and the others mentioned further down in the original readme and better document, as well as extend the last "official" release, which was around 2020.
 
-That said, I've not worked on NML files before and my gfx skills are zero so if people will desire extra amendments that involve say new params or new graphics, they'll need to help out with them.
-
-There is now added support for various track types and voltages as well as badges. Need thorough testing though.
-
+There is now added support for various track types and voltages as well as badges. There is also support for push-pull and a small number of vehicles have been added. 
+What I currently need help with is for people to use the badge filters to see where we have gaps (mostly plenty of said gaps outside Europe) and suggest specific vehicles to add and preferably either provide the sprites or tell me what existing sprite they look similar to so I can clone. I'm extremely bad at drawing and have zero sense of spatial perspective.
 
 ## Availability
 
 The grf file is available on Github under [Releases](https://github.com/nemethviktor/2ccts_revival/releases/latest) for the time being (scroll down to Assets and it should be there). If there is ample interest from people, I'll figure a way to push the files into the game's ecosystem.
 
 
+## Vehicle Roster
+
+The roster is auto-saved into a markdown file and can be accessed on github, [here](https://github.com/nemethviktor/2ccts_revival/docs/vehicle_summary.md).
+
 ## Build
 
-You'll likely need [nmlc 0.8.1+](https://github.com/OpenTTD/nml/tree/master) to run the build and that seems to be around for Windows only. Get MinGW from [here](https://sourceforge.net/projects/mingw-w64/files/latest/download), install (you'll need the base and some compilers), then add the resulting folder's `bin` subfolder to `PATH` (ie `c:\MinGW\bin\`)
+You'll likely need [nmlc 0.9.0+](https://github.com/OpenTTD/nml/tree/master) (older versions won't work because of the push-pull and badges capabilities) to run the build and that seems to be around for Windows only. Get MinGW from [here](https://sourceforge.net/projects/mingw-w64/files/latest/download), install (you'll need the base and some compilers), then add the resulting folder's `bin` subfolder to `PATH` (ie `c:\MinGW\bin\`)
 
 You'll also need `python 3.13+`... with `pandas openpyxl`, which you get via `pip install pandas openpyxl`. I think there may be a few more requirements now but they are all easy to find and pip will complain about them anyway.
 
@@ -22,15 +24,15 @@ Run the `pybuild.bat`.
 
 ## "Under new management" (project directions, bug reports/feature requests)
 
-I forked the original project because I was unsatisfied with the availability of items past Gen5 wagons and so the original aim was to extend that. However of course I'm hoping to keep the project running and extend it where possible. Not only a fair bit of time has passed since the mid 2010s when this was active (and a lot of new real vehicles have come out) but I think there'd be significant scope for extending _concept_ vehicles for future purposes because I personally find it boring that there are almost no new vehicles in any NewGRF past ~2020
+I forked the original project because I was unsatisfied with the availability of items past Gen5 wagons and so the original aim was to extend that. It has since become obvious that there's great scope for extending the package well beyond this. Not only a fair bit of time has passed since the mid 2010s when this was active (and a lot of new real vehicles have come out) but also that there is a distinct lack of vehicles outside the EU region in 2cc, so that'd need working on and to a smaller extent I think there'd be significant scope for extending _concept_ vehicles for future purposes because I personally find it boring that there are almost no new vehicles in any NewGRF past ~2020.
 
-Please use github to submit requests of any kind, _don't use the OTTD forums_ - I'm not active there. Also preferably don't use Reddit, I'm a reader there but Github is easier to manage. You can also find me on Discord if you know where to look. You can find me on [Discord](https://discord.com/channels/142724111502802944/1483827768163827864) -- pls note I don't really react to DMs unless I have a vague idea as to who is contacting me but the link above takes to the relevant development channel, which is public.  
+Please use github to submit requests of any kind, _don't use the OTTD forums_ - I'm not really active there. Also preferably don't use Reddit, I'm a reader there but Github is easier to manage. You can also find me on Discord if you know where to look. You can find me on [Discord](https://discord.com/channels/142724111502802944/1483827768163827864) -- pls note I don't really react to DMs unless I have a vague idea as to who is contacting me but the link above takes to the relevant development channel, which is public. (I'm an introvert :D)
 
 ### Changes in logic vs the old code. (Purchase and maintenance costs)
 
 As part of the porting process I've automated the creation of the individual item files. This, considering that there was limited documentation (read: almost none) available as to why certain things had been the way inevitably caused some differences in the outcomes. There had been some inconsistencies in the graphics override allocations that were most likely down to simple human errors. A particular consistent element in differences are the running cost and purchase cost calculations. These changes are very minor but I wanted to include a note on them. 
 
-I have also re-validated all the vehicles in the set. In practice this means that when I was able to find a Wikipedia article, I took information from there, otherwise I asked Gemini (yes I use AI, such is life; there are a number of notes/comments inside the Excel file that aren't necessarily visible elsewhere, please check the file if you have queries.). 
+I have also re-validated all the vehicles in the set. In practice this means that when I was able to find a Wikipedia article, I took information from there, otherwise I asked Gemini (yes I use AI, such is life; there are a number of notes/comments inside the Excel file that have also been auto-copied into the various item.pnml files, please check these if you have queries.). 
 In some cases, espc wrt TE/Coefficient in steam powered vehicles, as well as the weight of them may not fully line up with the old values; this partially has to do with the fact that I think originally the loco weights were loco-only whereas now they are loco+tender where applicable. I also reworked the pax capacity where applicable. The speeds of steam engines have been oftentimes reduced from top speeds to sustainable service speeds with some extra overhead so that they don't feel too slow either (in fact some have been increased because they had been defined as slow as 15kmh [10mph], which was useless as well as unlikely).
 
 For **metros and xMUs** the following logic now applies: in Excel the TE-C has been halved. If taking a real life example of the `Moscow 81-720` the legacy set had `0.69` TE-C, from which the game calculated a TE of some `440kN` or so, which is unrealistic, even if we use powered cars. Half of that is realistic though.
