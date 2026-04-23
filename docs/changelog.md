@@ -24,7 +24,8 @@
 	- Added `"Trans Euro Night" Sleeper` and `"CityNightLine" Sleeper` ref #4
 	- Changed some coaches to be DT-compatible #5
 	- Added/Extracted a livestock _only_ set of wagons, now separate from Boxcars.
-	
+	- Added `MAV Class V63` using an obscure mix of `V43` and `FF1` as template and then a lot of tweaks.
+
 
 **3.3-RC1 [20260412]**
 - CODE CHANGES:

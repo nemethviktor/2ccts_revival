@@ -897,6 +897,7 @@ str_electric_russia_rzd_vl11                                      :RZD VL11 (Ele
 str_electric_germany_prussian_es_6                                :K.P.St.E. ES 6 (Electric, Eléctrica 15kV AC)
 # str_electric_congo_type_2450_acec_charleroi_zaire_electric        : not translated
 # str_electric_tanzania_trc_e6800                                   : not translated
+# str_electric_hungary_mav_class_v63                                : not translated
 
 # Electricrailbus
 str_rbe_switzerland_ab_cfe_3_3                                    :AB CFe 3/3 (ferrobús eléctrico, Eléctrica 1500V DC)

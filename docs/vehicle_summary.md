@@ -411,44 +411,45 @@
 | ![RZD VL11](vehicle_graphics/str_electric_russia_rzd_vl11.png) | RZD VL11 | 1974 | 100 | 7190 | Heavy Freight | 0 | Asia |
 | ![OBB 1044](vehicle_graphics/str_electric_austria_obb_1044.png) | OBB 1044 | 1974 | 160 | 6970 | Express (Universal) | 0 | Western Europe |
 | ![EFE E-17](vehicle_graphics/str_electric_chile_efe_e_17.png) | EFE E-17 | 1974 | 90 | 1640 | Light Freight | 0 | South America |
+| ![MAV Class V63](vehicle_graphics/str_electric_hungary_mav_class_v63.png) | MAV Class V63 | 1974 | 130 | 4800 | General Purpose | 0 | Eastern Europe |
 | ![CP 2600](vehicle_graphics/str_electric_portugal_cp_2600.png) | CP 2600 | 1974 | 100 | 4020 | General Purpose | 0 | Southern Europe |
 | ![SNCF BB 22200](vehicle_graphics/str_electric_france_sncf_bb_22200.png) | SNCF BB 22200 | 1976 | 160 | 5850 | Express (Universal) | 0 | Western Europe |
 | ![PKP ET41](vehicle_graphics/str_electric_poland_pkp_et41.png) | PKP ET41 | 1977 | 125 | 5400 | Heavy Freight | 0 | Eastern Europe |
-| ![Amtrak EMD AEM-7](vehicle_graphics/str_electric_usa_amtrak_emd_aem_7.png) | Amtrak EMD AEM-7 | 1978 | 201 | 7000 | Express (Universal) | 0 | North America |
 | ![SAR 7E](vehicle_graphics/str_electric_south_africa_sar_7e.png) | SAR 7E | 1978 | 100 | 4000 | Light Freight | 0 | Africa |
 | ![Macedonian Railways 462](vehicle_graphics/str_electric_macedonia_macedonian_railways_462.png) | Macedonian Railways 462 | 1978 | 120 | 6834 | General Purpose | 0 | Southern Europe |
+| ![Amtrak EMD AEM-7](vehicle_graphics/str_electric_usa_amtrak_emd_aem_7.png) | Amtrak EMD AEM-7 | 1978 | 201 | 7000 | Express (Universal) | 0 | North America |
 | ![China Railways SS3](vehicle_graphics/str_electric_china_china_railways_ss3.png) | China Railways SS3 | 1978 | 100 | 5793 | Light Freight | 0 | Asia |
 | ![FS E.633](vehicle_graphics/str_electric_italy_fs_e633.png) | FS E.633 | 1979 | 130 | 5600 | General Purpose | 0 | Southern Europe |
-| ![NS 1600](vehicle_graphics/str_electric_netherlands_ns_1600.png) | NS 1600 | 1980 | 160 | 6200 | Express (Universal) | 0 | Western Europe |
 | ![CD ES 499.1/363](vehicle_graphics/str_electric_czech_republic_cd_363.png) | CD ES 499.1/363 | 1980 | 120 | 4667 | General Purpose | 0 | Eastern Europe |
+| ![NS 1600](vehicle_graphics/str_electric_netherlands_ns_1600.png) | NS 1600 | 1980 | 160 | 6200 | Express (Universal) | 0 | Western Europe |
 | ![EFE E-269](vehicle_graphics/str_electric_chile_efe_e_269.png) | EFE E-269 | 1980 | 160 | 4340 | Express (Universal) | 0 | South America |
-| ![OBB 1063](vehicle_graphics/str_electric_austria_obb_1063.png) | OBB 1063 | 1982 | 100 | 2680 | General Purpose | 0 | Western Europe |
 | ![NSB EL17](vehicle_graphics/str_electric_norway_nsb_el17.png) | NSB EL17 | 1982 | 150 | 4000 | Light Freight | 0 | Northern Europe |
 | ![RENFE 250](vehicle_graphics/str_electric_spain_renfe_250.png) | RENFE 250 | 1982 | 160 | 6440 | Express (Universal) | 0 | Southern Europe |
+| ![OBB 1063](vehicle_graphics/str_electric_austria_obb_1063.png) | OBB 1063 | 1982 | 100 | 2680 | General Purpose | 0 | Western Europe |
 | ![FNM GE E60C-2](vehicle_graphics/str_electric_mexico_fnm_ge_e60c_2.png) | FNM GE E60C-2 | 1982 | 110 | 6000 | Heavy Freight | 0 | North America |
-| ![RZD VL85](vehicle_graphics/str_electric_russia_rzd_vl85.png) | RZD VL85 | 1983 | 110 | 13438 | Heavy Freight | 0 | Asia |
 | ![BC Rail GF6C](vehicle_graphics/str_electric_canada_bc_rail_gf6c.png) | BC Rail GF6C | 1983 | 90 | 6000 | Heavy Freight | 0 | North America |
 | ![UZ ChS7](vehicle_graphics/str_electric_ukraine_uz_chs7.png) | UZ ChS7 | 1983 | 160 | 8624 | Express (Universal) | 0 | Eastern Europe |
+| ![RZD VL85](vehicle_graphics/str_electric_russia_rzd_vl85.png) | RZD VL85 | 1983 | 110 | 13438 | Heavy Freight | 0 | Asia |
 | ![RZD VL15](vehicle_graphics/str_electric_russia_rzd_vl15.png) | RZD VL15 | 1984 | 100 | 12070 | Heavy Freight | 0 | Asia |
 | ![SAR 11E](vehicle_graphics/str_electric_south_africa_sar_11e.png) | SAR 11E | 1985 | 90 | 5200 | Heavy Freight | 0 | Africa |
-| ![China Railways 6K](vehicle_graphics/str_electric_china_china_railways_6k.png) | China Railways 6K | 1986 | 100 | 6400 | General Purpose | 0 | Asia |
 | ![TranzRail EF](vehicle_graphics/str_electric_new_zealand_tranzrail_ef.png) | TranzRail EF | 1986 | 105 | 4000 | General Purpose | 0 | Oceania |
+| ![China Railways 6K](vehicle_graphics/str_electric_china_china_railways_6k.png) | China Railways 6K | 1986 | 100 | 6400 | General Purpose | 0 | Asia |
 | ![PKP EP09](vehicle_graphics/str_electric_poland_pkp_ep09.png) | PKP EP09 | 1986 | 160 | 3916 | Express (Universal) | 0 | Eastern Europe |
 | ![FS E.491](vehicle_graphics/str_electric_italy_fs_e491.png) | FS E.491 | 1988 | 140 | 4600 | General Purpose | 0 | Southern Europe |
 | ![SNCF BB 26000](vehicle_graphics/str_electric_france_sncf_bb_26000.png) | SNCF BB 26000 | 1989 | 200 | 7504 | Express (Universal) | 0 | Western Europe |
 | ![SBB Re460 'Lok 2000'](vehicle_graphics/str_electric_switzerland_sbb_re460_lok_2000.png) | SBB Re460 'Lok 2000' | 1991 | 230 | 7510 | Ultra-High-Speed (Universal) | 0 | Western Europe |
-| ![ZSSK 162](vehicle_graphics/str_electric_slovakia_zssk_162.png) | ZSSK 162 | 1991 | 140 | 4872 | General Purpose | 0 | Eastern Europe |
 | ![China Railways SS6](vehicle_graphics/str_electric_china_china_railways_ss6.png) | China Railways SS6 | 1991 | 100 | 6400 | General Purpose | 0 | Asia |
-| ![RENFE 252](vehicle_graphics/str_electric_spain_renfe_252.png) | RENFE 252 | 1992 | 200 | 7500 | Express (Universal) | 0 | Southern Europe |
+| ![ZSSK 162](vehicle_graphics/str_electric_slovakia_zssk_162.png) | ZSSK 162 | 1991 | 140 | 4872 | General Purpose | 0 | Eastern Europe |
 | ![Amcoal E38](vehicle_graphics/str_electric_south_africa_sar_e38.png) | Amcoal E38 | 1992 | 100 | 2000 | Light Freight | 0 | Africa |
+| ![RENFE 252](vehicle_graphics/str_electric_spain_renfe_252.png) | RENFE 252 | 1992 | 200 | 7500 | Express (Universal) | 0 | Southern Europe |
 | ![BR 92](vehicle_graphics/str_electric_uk_br_92.png) | BR 92 | 1993 | 140 | 6760 | General Purpose | 0 | Northern Europe |
 | ![Indian Railways WAP-4](vehicle_graphics/str_electric_india_indian_railways_wap_4.png) | Indian Railways WAP-4 | 1994 | 140 | 5350 | General Purpose | 0 | Asia |
 | ![UZ DE1](vehicle_graphics/str_electric_ukraine_uz_de1.png) | UZ DE1 | 1995 | 100 | 8750 | Heavy Freight | 0 | Eastern Europe |
 | ![NMBS/SNCB 13 HLE](vehicle_graphics/str_electric_belgium_nmbs_sncb_13_hle.png) | NMBS/SNCB 13 HLE | 1997 | 200 | 6968 | Express (Universal) | 0 | Western Europe |
 | ![JR EH500](vehicle_graphics/str_electric_japan_jr_eh500.png) | JR EH500 | 1997 | 110 | 5400 | General Purpose | 0 | Asia |
 | ![Amtrak HHP-8](vehicle_graphics/str_electric_usa_amtrak_hhp_8.png) | Amtrak HHP-8 | 1999 | 217 | 8000 | Express (Universal) | 0 | North America |
-| ![DB 185 TRAXX F140](vehicle_graphics/str_electric_germany_db_185_traxx_f140.png) | DB 185 TRAXX F140 | 2000 | 140 | 5600 | General Purpose | 0 | Western Europe |
 | ![DB 182 ES64U 'Taurus'](vehicle_graphics/str_electric_germany_db_182_es64u_taurus.png) | DB 182 ES64U 'Taurus' | 2000 | 230 | 11266 | Ultra-High-Speed (Universal) | 0 | Western Europe |
+| ![DB 185 TRAXX F140](vehicle_graphics/str_electric_germany_db_185_traxx_f140.png) | DB 185 TRAXX F140 | 2000 | 140 | 5600 | General Purpose | 0 | Western Europe |
 | ![MTAB IORE](vehicle_graphics/str_electric_sweden_mtab_iore.png) | MTAB IORE | 2000 | 80 | 14400 | Heavy Freight | 0 | Northern Europe |
 | ![Korail 8200](vehicle_graphics/str_electric_south_korea_korail_8200.png) | Korail 8200 | 2003 | 150 | 7000 | General Purpose | 0 | Asia |
 | ![UZ DS3](vehicle_graphics/str_electric_ukraine_uz_ds3.png) | UZ DS3 | 2003 | 160 | 6450 | Express (Universal) | 0 | Eastern Europe |
@@ -458,9 +459,9 @@
 | ![Aurizon E40 AG-V1](vehicle_graphics/str_electric_australia_aurizon_e40_ag_v1.png) | Aurizon E40 AG-V1 | 2008 | 80 | 5360 | General Purpose | 0 | Oceania |
 | ![ONCF E 1400 'Prima II'](vehicle_graphics/str_electric_morocco_oncf_e_1400_prima_ii.png) | ONCF E 1400 'Prima II' | 2010 | 160 | 8600 | Express (Universal) | 0 | Africa |
 | ![RZD EP20](vehicle_graphics/str_electric_russia_rzd_ep20.png) | RZD EP20 | 2011 | 200 | 9655 | Express (Universal) | 0 | Asia |
-| ![SBB Eem 923](vehicle_graphics/str_electric_switzerland_sbb_eem_923.png) | SBB Eem 923 | 2012 | 120 | 2012 | General Purpose | 0 | Western Europe |
 | ![MRS "He 4/4" [900 Series]](vehicle_graphics/str_electric_brasil_mrs_he_4_4.png) | MRS "He 4/4" [900 Series] | 2012 | 60 | 6710 | Light Freight | 0 | South America |
 | ![Amtrak ACS-64](vehicle_graphics/str_electric_usa_amtrak_acs_64.png) | Amtrak ACS-64 | 2012 | 201 | 6700 | Express (Universal) | 0 | North America |
+| ![SBB Eem 923](vehicle_graphics/str_electric_switzerland_sbb_eem_923.png) | SBB Eem 923 | 2012 | 120 | 2012 | General Purpose | 0 | Western Europe |
 | ![China Railways HXD1D](vehicle_graphics/str_electric_china_china_railways_hxd1d.png) | China Railways HXD1D | 2012 | 160 | 9700 | Express (Universal) | 0 | Asia |
 | ![TFR 20E 'China Doll'](vehicle_graphics/str_electric_south_africa_sar_20e.png) | TFR 20E 'China Doll' | 2013 | 100 | 4000 | General Purpose | 0 | Africa |
 | ![KTZ KZ8A](vehicle_graphics/str_electric_kazakhstan_ktz_kz8a.png) | KTZ KZ8A | 2014 | 120 | 11800 | Heavy Freight | 0 | Asia |

@@ -1456,6 +1456,9 @@
 #include "src/Electric/Tanzania_TRC_E6800_graphics.pnml"
 #include "src/Electric/Tanzania_TRC_E6800_item.pnml"
 
+#include "src/Electric/Hungary_MAV_Class_V63_graphics.pnml"
+#include "src/Electric/Hungary_MAV_Class_V63_item.pnml"
+
 #include "src/Electric/UK_London_1903_Stock_graphics.pnml"
 #include "src/Electric/UK_London_1903_Stock_item.pnml"
 
