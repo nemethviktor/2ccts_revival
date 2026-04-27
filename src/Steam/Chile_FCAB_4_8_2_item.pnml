@@ -8,6 +8,7 @@
 
 // Notes:
 //// WEB: https://en.wikipedia.org/wiki/Ferrocarril_de_Antofagasta_a_Bolivia -- Generic link
+//// LENGTH: 7 -- Really, the png is 7.5 len...
 
 
 item(FEAT_TRAINS, item_steam_chile_fcab_4_8_2) {

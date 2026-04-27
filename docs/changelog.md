@@ -8,6 +8,7 @@
 	- Added roles and region badges
 	- Added support for Driving Cabs (sometimes referred to as DC or DT, just to keep things confusing) via new template `TPL_04S`
 	- Added random flip to coaches that are non-DT
+	- Fixed template `TPL_17B` (Sharknose etc with A/B units) not being articulated. This was a legacy bug.
 - VEHICLES CHANGES:
 	- Added `Hessian Ludwig Rlw Thomas` using `Victorian Railways Rowan Railmotor` graphics but different/relevant specs
 	- Added `NÖLB 30-33` using `NÖLB 1` graphics but different/relevant specs
@@ -15,7 +16,7 @@
 	- Added `Mozambique Railways No. 101 to 104` (Steam) using modified `4-4-0 'American'` graphics and different/relevant specs
 	- Added `Haine-Saint-Pierre Golwé` (Steam) - it's a bit of a mix of graphics, don't complain. It seems to work.
 	- Added `Ghana Rwy Corp Class TT12` (Diesel) using the `EMD G22W` somewhat modified graphics, again, don't complain, do a better one if you can. Otherwise works.
-	- Undid the "powered requiring electricity" logic introduced in RC1
+	- Undid the "powered requiring electricity" logic introduced in 3.3 RC1
 	- Added `Alsthom BB-BB` (Diesel) using modified `Alsthom AD30B` graphics.
 	- Added `Sorefame DE8` (Diesel) also using modified `Alsthom AD30B` graphics.
 	- Added `GMD GT22LC-2` (Diesel) using modified `Korail 6000 EMD SD18` graphics.
@@ -25,6 +26,7 @@
 	- Changed some coaches to be DT-compatible #5
 	- Added/Extracted a livestock _only_ set of wagons, now separate from Boxcars.
 	- Added `MAV Class V63` using an obscure mix of `V43` and `FF1` as template and then a lot of tweaks.
+	- Checked all the lengths for every vehicle and amended many. That said some DMU/EMUs are still a pixel off but I didn't change all.
 
 
 **3.3-RC1 [20260412]**

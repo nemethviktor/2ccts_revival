@@ -660,7 +660,7 @@ def generate_unified_items():
             graphics_switch_visual_effect_and_powered = "// no 'visual_effect' or 'visual_effect_and_powered'"
 
         graphics_switch_articulated_part = f"articulated_part: switch_{VEHIDCODE_lcase}_articulated;" if TEMPLATE_ID_FULL in [
-            'TPL_03A', 'TPL_03D', 'TPL_03G', 'TPL_16A', 'TPL_16A', 'TPL_16B', 'TPL_17A', 'TPL_17C', 'TPL_17D', 'TPL_17E', 'TPL_25A', 'TPL_32A', 'TPL_32B', 'TPL_32C',] else "// no 'articulated_part'"
+            'TPL_03A', 'TPL_03D', 'TPL_03G', 'TPL_16A', 'TPL_16A', 'TPL_16B', 'TPL_17A', 'TPL_17B', 'TPL_17C', 'TPL_17D', 'TPL_17E', 'TPL_25A', 'TPL_32A', 'TPL_32B', 'TPL_32C',] else "// no 'articulated_part'"
         graphics_switch_length = f"length: switch_{VEHIDCODE_lcase}_length;" if TEMPLATE_ID_FULL in [
             'TPL_03A', 'TPL_03D', 'TPL_03G', 'TPL_16A', 'TPL_16B', 'TPL_17C', 'TPL_17D', 'TPL_17E', 'TPL_32A', 'TPL_32B', 'TPL_32C',] else "// no 'length'"
 

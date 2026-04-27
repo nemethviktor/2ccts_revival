@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03F.
+// Template: TPL_17A.
 // Data from: https://en.wikipedia.org/wiki/EMD_F40PH
 
 // Notes:
@@ -53,9 +53,9 @@ item(FEAT_TRAINS, item_diesel_panama_panama_canal_railway_emd_f40ph) {
     }
     graphics {
         purchase: spriteset_diesel_panama_panama_canal_railway_emd_f40ph_purchase;
-        // no 'visual_effect' or 'visual_effect_and_powered'
+        visual_effect_and_powered: switch_diesel_panama_panama_canal_railway_emd_f40ph_visual_effect;
         // no 'length'
-        // no 'articulated_part'
+        articulated_part: switch_diesel_panama_panama_canal_railway_emd_f40ph_articulated;
         can_attach_wagon: switch_can_attach_vehicle;
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank

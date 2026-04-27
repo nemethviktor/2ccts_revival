@@ -51,7 +51,7 @@ item(FEAT_TRAINS, item_diesel_canada_via_rail_fp9) {
         purchase_cargo_capacity: 55;
         visual_effect_and_powered: switch_diesel_canada_via_rail_fp9_visual_effect;
         // no 'length'
-        // no 'articulated_part'
+        articulated_part: switch_diesel_canada_via_rail_fp9_articulated;
         can_attach_wagon: switch_can_attach_vehicle;
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank

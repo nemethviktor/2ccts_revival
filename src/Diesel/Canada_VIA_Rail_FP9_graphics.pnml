@@ -34,3 +34,10 @@ switch(FEAT_TRAINS, SELF, switch_diesel_canada_via_rail_fp9_visual_effect, posit
 	2..3: visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 	visual_effect_and_powered(VISUAL_EFFECT_DIESEL, -3, DISABLE_WAGON_POWER);
 }
+
+/// Articulated Return
+/// extra_callback_info1 is the index of the part being added.
+switch(FEAT_TRAINS, SELF, switch_diesel_canada_via_rail_fp9_articulated, extra_callback_info1) {
+    1: return item_diesel_canada_via_rail_fp9;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}

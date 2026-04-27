@@ -214,6 +214,7 @@ switch(FEAT_TRAINS, SELF, switch_{vid}_cargo_selection, cargo_classes){{
 def get_switch_length(*, vid: str, row,
                       first_position_in_vehid_chain: int = 2,
                       first_deduct_from_position_in_vehid_chain_location: int = 1,
+                      first_force_location: int = None,
                       second_position_in_vehid_chain: Optional[int] = None,
                       second_deduct_from_position_in_vehid_chain_location: Optional[int] = None,
                       second_deduct_from_legnth_location: Optional[int] = None,
@@ -225,7 +226,7 @@ def get_switch_length(*, vid: str, row,
     nml_code.append(f"""
 /// Length
 switch(FEAT_TRAINS, SELF, switch_{vid}_length, position_in_vehid_chain % {first_position_in_vehid_chain}) {{
-    {0 if first_position_in_vehid_chain == 2 else first_position_in_vehid_chain-first_deduct_from_position_in_vehid_chain_location}: {row['LENGTH']};""")
+    {0 if first_position_in_vehid_chain == 2 else first_position_in_vehid_chain-first_deduct_from_position_in_vehid_chain_location}: {first_force_location if first_force_location else row['LENGTH']};""")
     if second_deduct_from_position_in_vehid_chain_location:
         length_to_use = row['LENGTH'] - \
             second_deduct_from_legnth_location if second_deduct_from_legnth_location else row[
@@ -1721,9 +1722,9 @@ def get_tpl_17(vid, gfx_path, row, template_amendment_code):
 
     :param template_amendment_code:
         A -> Normal Front/Back (articulated)
-        B -> A/B Front/Back (not articulated?)
+        B -> A/B Front/Back (articulated)
         C -> Front 1/2; Middle, Back 1/2 (articulated)
-        D -> Front 1/2; Middle 1/2, Back 1/2 (articulated)
+        D -> Front 1/2; Middle 1/2, Back 1/2 (articulated, basically just the mtab dm3)
         E -> Front 1/2; No Middle, Back 1/2 (articulated)
 
     """
@@ -1742,7 +1743,7 @@ def get_tpl_17(vid, gfx_path, row, template_amendment_code):
                                  purchase_x=1, purchase_y=purchase_y_coord))
 
     # 2. Coordinate Mapping
-    if template_amendment_code == "A":
+    if template_amendment_code in ["A"]:
         all_sprites = {
             "front": (1, 1),
             "back": (1, 32),
@@ -1790,22 +1791,26 @@ def get_tpl_17(vid, gfx_path, row, template_amendment_code):
                                     template_suffix="2cc_engines_general",
                                     vehicle_x=coords[0], vehicle_y=coords[1]))
 
-    if template_amendment_code == "A":
+    if template_amendment_code in ["A"]:
         nml_code.append(get_switch_position(
-            vid=vid, position_in_vehid_chain=2,
+            vid=vid,
+            position_in_vehid_chain=2,
             first_item_task="spriteset",
             second_item_task="spriteset",
             first_item_word="front",
             second_item_word="back"))
 
         nml_code.append(get_visual_effect_on_odd_even_position(
-            vid=vid, position_in_vehid_chain=2))
+            vid=vid,
+            position_in_vehid_chain=2
+        ))
 
         nml_code.append(get_articulated_return(vid=vid, endvalue=1))
 
     elif template_amendment_code == "B":
         # Yes the order of things here is a little odd.
-        nml_code.append(get_switch_position(vid=vid, position_in_vehid_chain=4,
+        nml_code.append(get_switch_position(vid=vid,
+                                            position_in_vehid_chain=4,
                                             first_item_location=1,
                                             second_item_location=2,
                                             third_item_location=3,
@@ -1821,7 +1826,14 @@ def get_tpl_17(vid, gfx_path, row, template_amendment_code):
                                             ))
 
         nml_code.append(get_visual_effect_on_odd_even_position_with_range(
-            vid=vid, range_start=2, range_end=3, reverse=True, position_in_vehid_chain=4))
+            vid=vid,
+            range_start=2,
+            range_end=3,
+            reverse=True,
+            position_in_vehid_chain=4
+        ))
+
+        nml_code.append(get_articulated_return(vid=vid, endvalue=1))
 
     elif template_amendment_code in ["C", "D", "E"]:
         nml_code.append(get_motion_counter(
@@ -1829,6 +1841,7 @@ def get_tpl_17(vid, gfx_path, row, template_amendment_code):
             state_0="front1" if template_amendment_code != "E" else "front_1",  # underline!
             state_default="front2"if template_amendment_code != "E" else "front_2",  # underline!
         ))
+
         if template_amendment_code == "D":
             nml_code.append(get_motion_counter(
                 vid=vid,
@@ -1836,6 +1849,7 @@ def get_tpl_17(vid, gfx_path, row, template_amendment_code):
                 state_0="middle1",
                 state_default="middle2",
             ))
+
         nml_code.append(get_motion_counter(
             vid=vid,
             switch_name_suffix="animation_back",
@@ -1876,7 +1890,7 @@ def get_tpl_17(vid, gfx_path, row, template_amendment_code):
             nml_code.append(
                 get_visual_effect_on_odd_even_position(vid=vid, position_in_vehid_chain=3, deduct_from_position_for_first_return=3))
             nml_code.append(
-                get_switch_length(vid=vid, row=row, first_deduct_from_position_in_vehid_chain_location=2, first_position_in_vehid_chain=3))
+                get_switch_length(vid=vid, row=row, first_deduct_from_position_in_vehid_chain_location=2, first_position_in_vehid_chain=3, first_force_location=6))
             nml_code.append(get_articulated_return(vid=vid, endvalue=2))
         elif template_amendment_code == "E":
             nml_code.append(
@@ -2126,8 +2140,7 @@ def get_tpl_42(vid, gfx_path, row, template_amendment_code):
                 livery_offset = (livery_num - 1) * 32
 
                 for state_num, x_coord in states.items():
-                    calculated_y = position_base_y + \
-                        livery_offset
+                    calculated_y = position_base_y + livery_offset
 
                     final_y = position_base_y + livery_offset
                     if final_y == 0:

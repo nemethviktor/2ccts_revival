@@ -23,6 +23,10 @@ You'll also need `python 3.13+`... with `pandas openpyxl`, which you get via `pi
 
 Run the `pybuild.bat`.
 
+## Known Issues
+
+NA
+
 ## "Under new management" (project directions, bug reports/feature requests)
 
 I forked the original project because I was unsatisfied with the availability of items past Gen5 wagons and so the original aim was to extend that. It has since become obvious that there's great scope for extending the package well beyond this. Not only a fair bit of time has passed since the mid 2010s when this was active (and a lot of new real vehicles have come out) but also that there is a distinct lack of vehicles outside the EU region in 2cc, so that'd need working on and to a smaller extent I think there'd be significant scope for extending _concept_ vehicles for future purposes because I personally find it boring that there are almost no new vehicles in any NewGRF past ~2020.

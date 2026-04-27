@@ -62,7 +62,7 @@ switch(FEAT_TRAINS, SELF, switch_electric_sweden_mtab_dm3_visual_effect, positio
 
 /// Length
 switch(FEAT_TRAINS, SELF, switch_electric_sweden_mtab_dm3_length, position_in_vehid_chain % 3) {
-    1: 7;
+    1: 6;
 	7;
 }
 
