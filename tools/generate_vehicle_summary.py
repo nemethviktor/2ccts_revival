@@ -27,14 +27,12 @@ def parse_templates(file_path):
     with open(file_path, 'r', encoding='utf-8') as f:
         content = f.read()
 
-    # FIXED: Removed the stray backslash that caused the PatternError
     pattern = r'template\s+(template_purchase\w*)\s*\([^)]*\)\s*\{([\s\S]*?)\}'
     matches = re.finditer(pattern, content)
 
     for match in matches:
         name = match.group(1)
         body = match.group(2)
-        # Find coordinate lines [x, y, w, h, ...]
         coords = re.findall(
             r'\[\s*(?:x\+?)?(\d+)?\s*,\s*(?:y\+?)?(\d+)?\s*,\s*(\d+)\s*,\s*(\d+)', body)
         for c in coords:
@@ -52,7 +50,6 @@ def process_and_save_image(v_id, pnml_path, excel_png_path, templates):
     save_path = os.path.join(gfx_output_dir, filename)
     rel_md_path = f"vehicle_graphics/{filename}"
 
-    # GOOGLE DRIVE SYNC PROTECTION: Skip processing if file already exists
     if os.path.exists(save_path):
         return rel_md_path
 
@@ -63,7 +60,6 @@ def process_and_save_image(v_id, pnml_path, excel_png_path, templates):
         with open(pnml_path, 'r', encoding='utf-8') as f:
             content = f.read()
 
-        # Capture template name and coordinates
         pattern = r'spriteset\s*\(\s*[^,]+_purchase\s*,\s*"([^"]+)"\s*\)\s*\{\s*(\w+)\s*\(\s*(\d+)\s*,\s*(\d+)\s*\)\s*\}'
         match = re.search(pattern, content)
         if not match:
@@ -78,7 +74,6 @@ def process_and_save_image(v_id, pnml_path, excel_png_path, templates):
             return ""
         w, h = templates[tpl_name]
 
-        # Resolve PNG path
         if "_purchase.png" in pnml_png_rel_path:
             pnml_dir = os.path.dirname(pnml_path)
             png_filename = os.path.basename(pnml_png_rel_path)
@@ -93,7 +88,6 @@ def process_and_save_image(v_id, pnml_path, excel_png_path, templates):
         img = Image.open(png_path).convert("RGBA")
         crop = img.crop((x_start, y_start, x_start + w, y_start + h))
 
-        # Replace OpenTTD Blue (0,0,255) with 0-alpha transparency
         pixdata = crop.load()
         for y in range(crop.size[1]):
             for x in range(crop.size[0]):
@@ -112,21 +106,29 @@ def generate_markdown():
     df_control = sheets['control']
     df_props = sheets['properties']
     df_roster = sheets['roster']
+    df_tracks = sheets['track_types']
 
+    # Merge core data
     df = df_control.merge(df_props, on='VEHIDCODE', how='inner')
     df = df.merge(df_roster, on='VEHIDCODE',
                   how='inner', suffixes=('', '_roster'))
+    df = df.merge(df_tracks, on='VEHIDCODE',
+                  how='inner', suffixes=('', '_tracks'))
 
     templates = parse_templates(templates_pnml_path)
     region_cols = ['AFRICA', 'ASIA', 'SOUTHERN_EUROPE', 'EASTERN_EUROPE',
                    'WESTERN_EUROPE', 'NORTHERN_EUROPE', 'NORTH_AMERICA', 'SOUTH_AMERICA', 'OCEANIA']
 
+    # Identify track columns: Ignore VEHIDCODE and the very last column CHECK_ANY_TT
+    track_cols = [c for c in df_tracks.columns if c !=
+                  'VEHIDCODE' and c != 'CHECK_ANY_TT']
+
     markdown = "# Vehicle Summary\n\n"
 
     for cat in sorted(df['COST_CAT'].unique()):
         markdown += f"## {cat}\n\n"
-        markdown += "| Graphics | Name | Intro | Speed | Power | Role | Cap | Regions |\n"
-        markdown += "| :---: | :--- | :---: | :---: | :---: | :--- | :---: | :--- |\n"
+        markdown += "| Graphics | Name | Intro | Speed | Power | Role | Cap | Track Types | Regions |\n"
+        markdown += "| :---: | :--- | :---: | :---: | :---: | :--- | :---: | :--- | :--- |\n"
 
         cat_df = df[df['COST_CAT'] == cat].sort_values('INTRODUCTION_YEAR')
         for _, row in cat_df.iterrows():
@@ -144,7 +146,16 @@ def generate_markdown():
                 v_id, pnml_p, png_p, templates)
             img_tag = f"![{row['ENGLISH']}]({img_rel_path})" if img_rel_path else " "
 
-            # HEAD_CAPACITY logic: Total for Dual Units / Metro
+            # Track Type extraction & cleaning
+            active_tracks = []
+            for tc in track_cols:
+                if row.get(tc) == True or str(row.get(tc)).upper() == 'TRUE':
+                    cleaned_name = tc.replace(
+                        'TRACK_TYPE_', '').replace('_GAUGE_RAILTYPE', '')
+                    active_tracks.append(cleaned_name)
+            track_str = ", ".join(active_tracks)
+
+            # Capacity logic
             cap = int(row['HEAD_CAPACITY']) if pd.notnull(
                 row['HEAD_CAPACITY']) else 0
             if cat == 'METRO' or int(row.get('DUAL_HEADED', 0)) == 1:
@@ -153,7 +164,7 @@ def generate_markdown():
             regions = [c.replace('_', ' ').title() for c in region_cols if str(
                 row.get(c)).upper() == 'TRUE']
 
-            markdown += f"| {img_tag} | {row['ENGLISH']} | {row['INTRODUCTION_YEAR']} | {row['SPEED']} | {row['POWER']} | {row['ROLE']} | {cap} | {', '.join(regions)} |\n"
+            markdown += f"| {img_tag} | {row['ENGLISH']} | {row['INTRODUCTION_YEAR']} | {row['SPEED']} | {row['POWER']} | {row['ROLE']} | {cap} | {track_str} | {', '.join(regions)} |\n"
         markdown += "\n"
 
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
@@ -164,4 +175,3 @@ def generate_markdown():
 
 if __name__ == "__main__":
     generate_markdown()
-    print("--- Vehicle Summary (Markdown) Generation Complete ---")

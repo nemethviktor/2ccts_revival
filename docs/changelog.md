@@ -1,6 +1,6 @@
 ### 2cc TrainsInNML (Revival) changelog
 
-**3.3-RC2 [20260xxx]**
+**3.3-RC2 [20260427]**
 - CODE CHANGES:
 	- Changed some of the flag creation logic. There should be fewer animated-looking flags now
 	- Added AC/DC split for Electric badges
