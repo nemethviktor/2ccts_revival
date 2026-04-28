@@ -1064,6 +1064,7 @@ str_mtro_algeria_algiers_caf_2011_stock                           :Algiers CAF 2
 str_mtro_germany_berlin_u_bahn_ik                                 :Berlin U-Bahn IK (Metro, Eléctrico 3rd Rail)
 str_mtro_usa_chicago_l_6000                                       :Chicago L 6000 Series (Metro, Eléctrico 3rd Rail)
 # str_mtro_usa_brooklyn_union_gate_car                              : not translated
+# str_mtro_uk_london_1992_stock                                     : not translated
 str_mtro_metro_wagon_unpowered                                    :Vagón de metro (Sin motorización)
 str_mtro_metro_wagon_powered                                      :Vagón de metro (Motorizado)
 

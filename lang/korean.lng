@@ -1064,6 +1064,7 @@ str_mtro_algeria_algiers_caf_2011_stock                           :알제 CAF 20
 str_mtro_germany_berlin_u_bahn_ik                                 :베를린 U-반 IK (Metro, Electric 3rd Rail)
 str_mtro_usa_chicago_l_6000                                       :시카고 L 6000계 (Metro, Electric 3rd Rail)
 # str_mtro_usa_brooklyn_union_gate_car                              : not translated
+# str_mtro_uk_london_1992_stock                                     : not translated
 str_mtro_metro_wagon_unpowered                                    :지하철 기본 객차 (동력 없음)
 str_mtro_metro_wagon_powered                                      :지하철 기본 객차 (동력 있음)
 

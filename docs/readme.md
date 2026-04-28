@@ -43,13 +43,27 @@ The roster is auto-saved into a markdown file and can be accessed on github, [he
 
 You'll likely need [nmlc 0.9.0+](https://github.com/OpenTTD/nml/tree/master) (older versions won't work because of the push-pull and badges capabilities) to run the build and that seems to be around for Windows only. Get MinGW from [here](https://sourceforge.net/projects/mingw-w64/files/latest/download), install (you'll need the base and some compilers), then add the resulting folder's `bin` subfolder to `PATH` (ie `c:\MinGW\bin\`)
 
-You'll also need `python 3.13+`... with `pandas openpyxl`, which you get via `pip install pandas openpyxl`. I think there may be a few more requirements now but they are all easy to find and pip will complain about them anyway.
+You'll also need `python 3.13+` and there's now a `requirements.txt` in the `tools` folder, it should do the trick for getting the various req'd libraries.
 
 Run the `pybuild.bat`.
 
 ## Known Issues
 
 NA
+
+
+## Help wanted/Contributing
+
+As I wrote above my GFX skills are zero so I'd like to ask people with graphics skills to chip in with the designs, either for new/concept vehicles or just changes to existing ones. 
+
+Please **do stick to one of the template files** or, while beggars can't be choosers I _will_ reject the design. You may ofc put your logo or text or palette on the file(s) but don't move the template boxes. There are/were over 50 (!!!) various combinations in the legacy files and I'd rather die than to decipher any more random ones. (Main) Template logic cna be found in another readme inside the `gfx` folder and there are templates of existing files as well there. Furthermore each pnml file has the template designation inside it so if you would like to add more designs, pick one from the existing ones.
+
+
+## Q&As
+
+Q: How do Unit Wagons work?
+
+A: With MUs you buy both heads, and then you can use the Unit Wagons to make the consist longer.
 
 ## "Under new management" (project directions, bug reports/feature requests)
 
@@ -103,19 +117,7 @@ Furthermore, I'm terrible at math and Newton-Raphson calculations (which is what
 > Otherwise, I’d leave it as is. The "drift" is a sign of a better tool, not a broken one.
 
 
-### Help wanted/Contributing
-
-As I wrote above my GFX skills are zero so I'd like to ask people with graphics skills to chip in with the designs, either for new/concept vehicles or just changes to existing ones. 
-
-Please **do stick to one of the template files** or, while beggars can't be choosers I _will_ reject the design. You may ofc put your logo or text or palette on the file(s) but don't move the template boxes. There are/were over 50 (!!!) various combinations in the legacy files and I'd rather die than to decipher any more random ones. (Main) Template logic cna be found in another readme inside the `gfx` folder and there are templates of existing files as well there. Furthermore each pnml file has the template designation inside it so if you would like to add more designs, pick one from the existing ones.
-
-
-### Q&As
-
-Q: How do Unit Wagons work?
-A: With MUs you buy both heads, and then you can use the Unit Wagons to make the consist longer.
-
-### Credits
+## Credits
 
 Graphics for this set:
 - Voyager One
@@ -143,8 +145,8 @@ Special thanks to:
 - All translators
 - #openttdcoop for their work on the DevZone
 
-### Contact information
-#### Bug reports
+## Contact information
+### Bug reports
 
 Please report any bugs you find at the  
  - bug tracker: https://github.com/nemethviktor/2ccts_revival/issues  (2026 onwards -- please don't use OTTD forums!)
@@ -162,10 +164,11 @@ If you're using a patched version of the game, please try to reproduce
 the bug on an official game build. If you can't reproduce the bug, then
 don't report it here but in the forum topic of the patch(pack) instead.
 
-#### Contributing
+### Contributing
+
 PRs are most welcome but please try to test. 
 
-### License
+## License
 
 2cc Trains In NML
 Copyright (C) 2014, 2026 2cc Trains In NML team
