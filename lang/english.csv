@@ -228,7 +228,7 @@ STR_FLAG_FK,Falkland Islands
 STR_FLAG_FM,Micronesia
 STR_FLAG_FO,Faroe Islands
 STR_FLAG_FR,France
-STR_FLAG_GA,Andorra
+STR_FLAG_GA,Gabon
 STR_FLAG_GB,United Kingdom
 STR_FLAG_GD,Grenada
 STR_FLAG_GE,Georgia
@@ -441,7 +441,7 @@ str_rbs_germany_bavarian_mcci,K.Bay.Sts.B. MCCi
 str_rbs_south_africa_csar_railmotor,CSAR Railmotor
 str_rbs_australia_victorian_railways_motor_car_3,Victorian Railways Motor Car 3
 str_rbs_austria_kkstb_4_0,KkStB 4.0
-str_rbs_gemany_hessian_ludwig_railway_type_thomas,Hessian Ludwig Rwy 'Thomas'
+str_rbs_gemany_hessian_ludwig_railway_type_thomas,Hessian Ludwig 'Thomas'
 str_rbs_austria_nolb_30_33,NOLB 30-33
 str_rbd_australia_victorian_railways_aec_rm1,Victorian Railways AEC RM1
 str_rbd_germany_db_vt_133,DB VT 133 'Wismar railbus'
@@ -562,7 +562,7 @@ str_steam_norway_nsb_class_xxi,NSB XXI
 str_steam_usa_prr_d16,PRR D16
 str_steam_netherlands_ns_8100,NS 8100
 str_steam_south_africa_sar_md_class,SAR MD 2-6-6-2
-str_steam_angola_south_west_african_2_8_0,SWA 2-8-0 '8-Tender'
+str_steam_angola_south_west_african_2_8_0,GSWA 2-8-0 '8-Tender'
 str_steam_uk_lner_n7,LNER N7
 str_steam_germany_saxon_xx_hv,Saxon XX HV
 str_steam_belgium_nmbs_type_7,NMBS Type 7
@@ -623,8 +623,8 @@ str_steam_japan_jnr_860,JNR 860
 str_steam_japan_jnr_9600,JNR 9600
 str_steam_japan_jnr_d50,JNR D50
 str_steam_south_africa_katanga_mikado_2_8_2,Katanga Mikado 2-8-2
-str_steam_mozambique_mozambique_railways_no_101,Mozambique Rwy 101
-str_steam_ivory_coast_golwe_2_6_0_0_6_2t,Haine-Saint-Pierre Golwe
+str_steam_mozambique_mozambique_railways_no_101,Mozambique Railway 101-104
+str_steam_ivory_coast_golwe_2_6_0_0_6_2t,French West African Golwé
 str_diesel_germany_db_kof_ii,DB Kof II / DB 322
 str_diesel_usa_cnj_alco_ge_ir_boxcab,CNJ ALCo-GE-IR Boxcab 100T
 str_diesel_netherlands_ns_200,NS 200 'Sik'
@@ -639,7 +639,7 @@ str_diesel_netherlands_ns_600,NS 600 'Bakkie'
 str_diesel_usa_pennsylvania_railroad_rf_16_sharknose,PRR RF-16 'Sharknose'
 str_diesel_uruguay_afe_1500,AFE 1500
 str_diesel_canada_cpr_trainmaster,CPR CLC H-24-66 'Trainmaster'
-str_diesel_liberia_liberia_railways_class_08,"Liberia ""Class 08"" [Ex-BR]"
+str_diesel_liberia_liberia_railways_class_08,Liberia 'Class 08' [Ex-BR]
 str_diesel_austria_obb_2060,OBB 2060
 str_diesel_canada_cnr_sw1200,CNR SW1200
 str_diesel_canada_via_rail_fp9,VIA Rail FP9
@@ -659,7 +659,7 @@ str_diesel_denmark_dsb_mak_100,DSB MaK 100
 str_diesel_india_indian_railways_wdm_2,Indian Railways WDM-2
 str_diesel_uk_br_14,BR 14
 str_diesel_russia_rzd_chme3,RZD ChME3
-str_diesel_argentina_mf_gm_emd_j16cw_ac,MF GM-EMD-G16
+str_diesel_argentina_mf_gm_emd_j16cw_ac,UGOFE GM-EMD J16CW/AC
 str_diesel_russia_rzd_m62,RZD M62
 str_diesel_australia_nswgr_422,NSWGR 422
 str_diesel_egypt_enr_g22w,ENR G22W
@@ -755,13 +755,13 @@ str_diesel_australia_pacific_national_92,Pacific National 92
 str_diesel_uk_br_68,BR 68
 str_diesel_usa_amtrak_charger,Amtrak Charger
 str_diesel_japan_jnr_df50,JNR DF50
-str_diesel_gabon_alsthom_ad30b,Alsthom AD30B
+str_diesel_gabon_alsthom_ad30b,OCTRA 101-106
 str_diesel_ghana_railway_corporation_class_tt12,Ghana Rwy Corp Class TT12
 str_diesel_sierra_leone_lamco_301_series,LAMCO. Series 301-310
-str_diesel_congo_alstom_bb_bb,Alsthom BB-BB
+str_diesel_congo_alstom_bb_bb,Congo-Ocean BB-BB 300
 str_diesel_zimbabwe_sorefame_de8,Sorefame DE8
-str_diesel_ivory_coast_gmd_gt22lc2,GMD GT22LC-2
-str_electric_tanzania_trc_e6800,Hyundai Rotem/Skoda TRC E6800
+str_diesel_ivory_coast_gmd_gt22lc2,Abidjan-Niger GMD GT22LC-2
+str_electric_tanzania_trc_e6800,TRC E6800
 str_mtro_argentina_le_brugeoise,Buenos Aires 'Le Brugeoise'
 str_mtro_usa_ny_r1,New York R1
 str_mtro_germany_db_et_171,DB ET 171 / DB 471
@@ -927,7 +927,7 @@ str_electric_south_africa_sar_5e1,SAR 5E1
 str_electric_south_africa_sar_6e,SAR 6E
 str_electric_switzerland_rhb_ge_4_4_i,RhB Ge 4/4 I
 str_electric_switzerland_rhb_ge_6_6_krokodil,RhB Ge 6/6 'Krokodil'
-str_electric_brasil_mrs_he_4_4,"MRS ""He 4/4"" [900 Series]"
+str_electric_brasil_mrs_he_4_4,MRS 'He 4/4' [900 Series]
 str_electric_south_africa_sar_7e,SAR 7E
 str_electric_south_africa_sar_11e,SAR 11E
 str_electric_new_zealand_tranzrail_ef,TranzRail EF
@@ -1232,8 +1232,8 @@ str_mu_coach_gen6_metropolis_coach,Metropolis Coach
 str_mu_coach_gen6_speedmail_coach,Speedmail Coach
 str_mu_coach_gen6_super_regio_coach,Super Regio Coach
 str_mu_coach_gen6_super_voyager_coach,Super Voyager Coach
-str_mu_coach_gen6_citynightline_sleeper,"""CityNightLine"" Sleeper"
-str_mu_coach_gen6_trans_euro_night_sleeper,"""Trans Euro Night"" Sleeper"
+str_mu_coach_gen6_citynightline_sleeper,'CityNightLine' Sleeper
+str_mu_coach_gen6_trans_euro_night_sleeper,'Trans Euro Night' Sleeper
 str_mu_wagon_gen1_livestock_van,1st Gen Livestock Van
 str_mu_wagon_gen2_livestock_van,2nd Gen Livestock Van
 str_mu_wagon_gen3_livestock_van,3rd Gen Livestock Van
@@ -1241,4 +1241,4 @@ str_mu_wagon_gen4_livestock_van,4th Gen Livestock Van
 str_mu_wagon_gen5_livestock_van,5th Gen Livestock Van
 str_mu_wagon_gen6_livestock_van,6th Gen Livestock Van
 str_mu_wagon_gen7m_livestock_van,7th Gen Livestock Van
-str_electric_hungary_mav_class_v63,MAV Class V63
+str_electric_hungary_mav_class_v63,MAV V63

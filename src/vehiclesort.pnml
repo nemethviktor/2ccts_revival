@@ -275,7 +275,6 @@ item_diesel_russia_rzd_emch_3, /*Year: 1963*/ \
 item_diesel_uk_br_14, /*Year: 1964*/ \
 item_diesel_russia_rzd_chme3, /*Year: 1964*/ \
 item_diesel_ukraine_uz_tep10l, /*Year: 1964*/ \
-item_diesel_argentina_mf_gm_emd_j16cw_ac, /*Year: 1965*/ \
 item_diesel_russia_rzd_m62, /*Year: 1965*/ \
 item_diesel_peru_ferrocarril_central_andino_alco_rsd_39, /*Year: 1965*/ \
 item_diesel_spain_renfe_308, /*Year: 1966*/ \
@@ -300,6 +299,7 @@ item_diesel_norway_nsb_di4, /*Year: 1980*/ \
 item_diesel_portugal_cp_1900, /*Year: 1981*/ \
 item_diesel_belarus_bch_2te10m, /*Year: 1981*/ \
 item_diesel_ivory_coast_gmd_gt22lc2, /*Year: 1981*/ \
+item_diesel_argentina_mf_gm_emd_j16cw_ac, /*Year: 1984*/ \
 item_diesel_china_china_railways_df8, /*Year: 1984*/ \
 item_diesel_australia_pacific_national_g_class, /*Year: 1984*/ \
 item_diesel_peru_ferrocarril_central_andino_ge_c39_8, /*Year: 1984*/ \

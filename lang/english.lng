@@ -230,7 +230,7 @@ STR_FLAG_FK                                                       :Falkland Isla
 STR_FLAG_FM                                                       :Micronesia
 STR_FLAG_FO                                                       :Faroe Islands
 STR_FLAG_FR                                                       :France
-STR_FLAG_GA                                                       :Andorra
+STR_FLAG_GA                                                       :Gabon
 STR_FLAG_GB                                                       :United Kingdom
 STR_FLAG_GD                                                       :Grenada
 STR_FLAG_GE                                                       :Georgia
@@ -517,8 +517,8 @@ str_mu_coach_gen6_metropolis_coach                                :Metropolis Co
 str_mu_coach_gen6_speedmail_coach                                 :Speedmail Coach
 str_mu_coach_gen6_super_regio_coach                               :Super Regio Coach
 str_mu_coach_gen6_super_voyager_coach                             :Super Voyager Coach
-str_mu_coach_gen6_citynightline_sleeper                           :"CityNightLine" Sleeper
-str_mu_coach_gen6_trans_euro_night_sleeper                        :"Trans Euro Night" Sleeper
+str_mu_coach_gen6_citynightline_sleeper                           :'CityNightLine' Sleeper
+str_mu_coach_gen6_trans_euro_night_sleeper                        :'Trans Euro Night' Sleeper
 
 # Dieselengine
 str_diesel_germany_db_kof_ii                                      :DB Kof II / DB 322 (Diesel)
@@ -534,7 +534,7 @@ str_diesel_brazil_efcb_alco_rs_3                                  :EFCB ALCO RS-
 str_diesel_netherlands_ns_600                                     :NS 600 'Bakkie' (Diesel)
 str_diesel_uruguay_afe_1500                                       :AFE 1500 (Diesel)
 str_diesel_canada_cpr_trainmaster                                 :CPR CLC H-24-66 'Trainmaster' (Diesel)
-str_diesel_liberia_liberia_railways_class_08                      :Liberia "Class 08" [Ex-BR] (Diesel)
+str_diesel_liberia_liberia_railways_class_08                      :Liberia 'Class 08' [Ex-BR] (Diesel)
 str_diesel_austria_obb_2060                                       :OBB 2060 (Diesel)
 str_diesel_canada_cnr_sw1200                                      :CNR SW1200 (Diesel)
 str_diesel_canada_via_rail_fp9                                    :VIA Rail FP9 (Diesel)
@@ -554,7 +554,7 @@ str_diesel_denmark_dsb_mak_100                                    :DSB MaK 100 (
 str_diesel_india_indian_railways_wdm_2                            :Indian Railways WDM-2 (Diesel)
 str_diesel_uk_br_14                                               :BR 14 (Diesel)
 str_diesel_russia_rzd_chme3                                       :RZD ChME3 (Diesel)
-str_diesel_argentina_mf_gm_emd_j16cw_ac                           :MF GM-EMD-G16 (Diesel)
+str_diesel_argentina_mf_gm_emd_j16cw_ac                           :UGOFE GM-EMD J16CW/AC (Diesel)
 str_diesel_russia_rzd_m62                                         :RZD M62 (Diesel)
 str_diesel_australia_nswgr_422                                    :NSWGR 422 (Diesel)
 str_diesel_egypt_enr_g22w                                         :ENR G22W (Diesel)
@@ -651,12 +651,12 @@ str_diesel_egypt_enr_2400_ge_es40aci                              :ENR 2400 GE E
 str_diesel_uk_br_68                                               :BR 68 (Diesel)
 str_diesel_south_africa_sar_afro_4000                             :PRASA Afro 4000 (Diesel)
 str_diesel_usa_amtrak_charger                                     :Amtrak Charger (Diesel)
-str_diesel_gabon_alsthom_ad30b                                    :Alsthom AD30B (Diesel)
+str_diesel_gabon_alsthom_ad30b                                    :OCTRA 101-106 (Diesel)
 str_diesel_ghana_railway_corporation_class_tt12                   :Ghana Rwy Corp Class TT12 (Diesel)
 str_diesel_sierra_leone_lamco_301_series                          :LAMCO. Series 301-310 (Diesel)
-str_diesel_congo_alstom_bb_bb                                     :Alsthom BB-BB (Diesel)
+str_diesel_congo_alstom_bb_bb                                     :Congo-Ocean BB-BB 300 (Diesel)
 str_diesel_zimbabwe_sorefame_de8                                  :Sorefame DE8 (Diesel)
-str_diesel_ivory_coast_gmd_gt22lc2                                :GMD GT22LC-2 (Diesel)
+str_diesel_ivory_coast_gmd_gt22lc2                                :Abidjan-Niger GMD GT22LC-2 (Diesel)
 
 # Dieselrailbus
 str_rbd_australia_victorian_railways_aec_rm1                      :Victorian Railways AEC RM1 (Diesel Railbus)
@@ -890,12 +890,12 @@ str_electric_norway_nsb_el17                                      :NSB EL17 (Ele
 str_electric_south_africa_sar_11e                                 :SAR 11E (Electric, 25kV AC)
 str_electric_south_africa_sar_e38                                 :Amcoal E38 (Electric, 3kV DC)
 str_electric_usa_amtrak_hhp_8                                     :Amtrak HHP-8 (Electric, OHLE)
-str_electric_brasil_mrs_he_4_4                                    :MRS "He 4/4" [900 Series] (Electric, 3kV DC)
+str_electric_brasil_mrs_he_4_4                                    :MRS 'He 4/4' [900 Series] (Electric, 3kV DC)
 str_electric_russia_rzd_vl11                                      :RZD VL11 (Electric, 3kV DC)
 str_electric_germany_prussian_es_6                                :K.P.St.E. ES 6 (Electric, 15kV AC)
 str_electric_congo_type_2450_acec_charleroi_zaire_electric        :Zaire Electric Type 2450 (Electric, 25kV AC)
-str_electric_tanzania_trc_e6800                                   :Hyundai Rotem/Skoda TRC E6800 (Electric, 25kV AC)
-str_electric_hungary_mav_class_v63                                :MAV Class V63 (Electric, 25kV AC)
+str_electric_tanzania_trc_e6800                                   :TRC E6800 (Electric, 25kV AC)
+str_electric_hungary_mav_class_v63                                :MAV V63 (Electric, 25kV AC)
 
 # Electricrailbus
 str_rbe_switzerland_ab_cfe_3_3                                    :AB CFe 3/3 (Electric Railbus, 1500V DC)
@@ -1124,7 +1124,7 @@ str_steam_norway_nsb_class_xxi                                    :NSB XXI (Stea
 str_steam_usa_prr_d16                                             :PRR D16 (Steam)
 str_steam_netherlands_ns_8100                                     :NS 8100 (Steam)
 str_steam_south_africa_sar_md_class                               :SAR MD 2-6-6-2 (Steam)
-str_steam_angola_south_west_african_2_8_0                         :SWA 2-8-0 '8-Tender' (Steam)
+str_steam_angola_south_west_african_2_8_0                         :GSWA 2-8-0 '8-Tender' (Steam)
 str_steam_uk_lner_n7                                              :LNER N7 (Steam)
 str_steam_germany_saxon_xx_hv                                     :Saxon XX HV (Steam)
 str_steam_belgium_nmbs_type_7                                     :NMBS Type 7 (Steam)
@@ -1185,8 +1185,8 @@ str_steam_belgium_nmbs_sncb_type_29                               :NMBS/SNCB Typ
 str_steam_chile_fcab_4_8_2                                        :FCAB 4-8-2 Vulcan 'Mountain' (Steam)
 str_steam_china_railways_qj                                       :China Railways QJ (Steam)
 str_steam_south_africa_katanga_mikado_2_8_2                       :Katanga Mikado 2-8-2 (Steam)
-str_steam_mozambique_mozambique_railways_no_101                   :Mozambique Rwy 101 (Steam)
-str_steam_ivory_coast_golwe_2_6_0_0_6_2t                          :Haine-Saint-Pierre Golwe (Steam)
+str_steam_mozambique_mozambique_railways_no_101                   :Mozambique Railway 101-104 (Steam)
+str_steam_ivory_coast_golwe_2_6_0_0_6_2t                          :French West African Golwé (Steam)
 
 # Steamrailbus
 str_rbs_austria_nolb_1                                            :NOLB 1 (Steam Railbus)
@@ -1197,7 +1197,7 @@ str_rbs_germany_bavarian_mcci                                     :K.Bay.Sts.B. 
 str_rbs_south_africa_csar_railmotor                               :CSAR Railmotor (Steam Railbus)
 str_rbs_australia_victorian_railways_motor_car_3                  :Victorian Railways Motor Car 3 (Steam Railbus)
 str_rbs_austria_kkstb_4_0                                         :KkStB 4.0 (Steam Railbus)
-str_rbs_gemany_hessian_ludwig_railway_type_thomas                 :Hessian Ludwig Rwy 'Thomas' (Steam Railbus)
+str_rbs_gemany_hessian_ludwig_railway_type_thomas                 :Hessian Ludwig 'Thomas' (Steam Railbus)
 str_rbs_austria_nolb_30_33                                        :NOLB 30-33 (Steam Railbus)
 
 # Wagon

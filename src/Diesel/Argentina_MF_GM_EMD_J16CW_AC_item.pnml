@@ -6,15 +6,11 @@
 // Template: TPL_01A.
 // Data from: https://en.wikipedia.org/wiki/EMD_G16
 
-// Notes:
-//// ENGLISH: MF GM-EMD-G16 -- If this was in the 1960s as the legacy data says then it's not a J-class but a G-class
-
-
 item(FEAT_TRAINS, item_diesel_argentina_mf_gm_emd_j16cw_ac) {
     property {
         name: string(str_diesel_argentina_mf_gm_emd_j16cw_ac);
         climates_available: ((param_region_south_america || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
-        introduction_date: date(1965,1,1);
+        introduction_date: date(1984,1,1);
         model_life: 45;
         vehicle_life: 40;
         retire_early: 20;

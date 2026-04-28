@@ -63,6 +63,13 @@ def load_master_data(excel_path):
 
     # 1. Start with the 'control' sheet as the base
     df_master = sheets['control']
+
+    # FIX: Restore Namibia 'NA' specifically for the COUNTRY_CODE column
+    # We replace actual NaN values with the string 'NA' ONLY in the properties sheet
+    # This is to handle the country code 'NA' for Namibia
+    if 'properties' in sheets:
+        sheets['properties']['COUNTRY_CODE'] = sheets['properties']['COUNTRY_CODE'].fillna(
+            'NA')
     extract_notes('control', sheets['control'])
 
     # 2. List of sheets that provide extra vehicle properties
@@ -104,6 +111,9 @@ def load_master_data(excel_path):
         copyright_txt = str(df_copyright.iloc[0, 0])
     elif len(df_copyright.columns) > 0 and "Unnamed" not in str(df_copyright.columns[0]):
         copyright_txt = str(df_copyright.columns[0])
+
+    # Final safety check before returning from load_master_data
+    df_master['COUNTRY_CODE'] = df_master['COUNTRY_CODE'].fillna('NA')
 
     return df_master, df_cost_lookup, copyright_txt, notes_lookup
 

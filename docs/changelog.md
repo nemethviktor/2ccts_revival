@@ -1,5 +1,13 @@
 ### 2cc TrainsInNML (Revival) changelog
 
+**3.3 [20260xxxx]**
+- CODE CHANGES:
+	- Added the track types to the vehicle info export
+	- Changed Andorra/Gabon confusion wrt country names
+- VEHICLES CHANGES:
+	- Renamed various items (see relevant commit messages)
+	- Fixed a the sprite for `DB 17.0-1 'Prussian S 10'` that I broke the last time
+
 **3.3-RC2 [20260427]**
 - CODE CHANGES:
 	- Changed some of the flag creation logic. There should be fewer animated-looking flags now
