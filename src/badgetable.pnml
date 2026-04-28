@@ -572,7 +572,7 @@ spriteset (sprite_flag_WRLD) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/wrld.png"]}b
 	"role/coach__express_",
 	"role/coach__hs_",
 	"role/coach__mail_",
-	"role/coach__regional__",
+	"role/coach__regional_",
 	"role/commuter___urban",
 	"role/express__passenger_",
 	"role/express__universal_",
@@ -3503,10 +3503,10 @@ item (FEAT_BADGES, role_coach__mail_) {
 	}}
 
 	
-item (FEAT_BADGES, role_coach__regional__) {
+item (FEAT_BADGES, role_coach__regional_) {
     property {
-        label: "role/coach__regional__";
-        name: string(STR_ROLE_COACH__REGIONAL__);
+        label: "role/coach__regional_";
+        name: string(STR_ROLE_COACH__REGIONAL_);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
 	}}
 

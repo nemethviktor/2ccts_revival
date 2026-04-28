@@ -55,7 +55,7 @@ def generate_vehicle_id_pnml():
                ]
 
     # currently unusued
-    roles = ["role", "role/coach__commuter_", "role/coach__express_", "role/coach__hs_", "role/coach__mail_", "role/coach__regional__", "role/commuter___urban", "role/express__passenger_", "role/express__universal_", "role/general_purpose",
+    roles = ["role", "role/coach__commuter_", "role/coach__express_", "role/coach__hs_", "role/coach__mail_", "role/coach__regional_", "role/commuter___urban", "role/express__passenger_", "role/express__universal_", "role/general_purpose",
              "role/heavy_freight", "role/light_freight", "role/metro_rapid_transit", "role/powered_unpowered_sundry", "role/regional_passenger", "role/shunter", "role/standard_freight", "role/ultra_high_speed__pax_", "role/ultra_high_speed__universal_", "role/wagon"]
 
     for power in powers:

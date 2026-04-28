@@ -87,7 +87,7 @@ STR_ROLE_COACH__COMMUTER_                                         :Coach (Commut
 STR_ROLE_COACH__EXPRESS_                                          :Coach (Express)
 STR_ROLE_COACH__HS_                                               :Coach (HS)
 STR_ROLE_COACH__MAIL_                                             :Coach (Mail)
-STR_ROLE_COACH__REGIONAL__                                        :Coach (Regional))
+STR_ROLE_COACH__REGIONAL_                                         :Coach (Regional)
 STR_ROLE_COMMUTER___URBAN                                         :Commuter / Urban
 STR_ROLE_EXPRESS__PASSENGER_                                      :Express (Passenger)
 STR_ROLE_EXPRESS__UNIVERSAL_                                      :Express (Universal)
