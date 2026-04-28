@@ -723,12 +723,12 @@ item_mu_coach_gen4_comet_commuter_coach, /*Year: 1970*/ \
 item_mu_coach_gen4_horizon_regional_coach, /*Year: 1970*/ \
 item_mu_coach_gen4_horizon_baggage_coach, /*Year: 1970*/ \
 item_mu_coach_gen4_bombardier_bi_level, /*Year: 1970*/ \
-item_mu_coach_gen6_trans_euro_night_sleeper, /*Year: 1970*/ \
+item_mu_coach_gen4_trans_euro_night_sleeper, /*Year: 1970*/ \
 item_mu_coach_gen4_superliner_coach, /*Year: 1980*/ \
 item_mu_coach_gen5_talgo_pendular, /*Year: 1980*/ \
 item_mu_coach_gen5_talgo_pendular_mail, /*Year: 1980*/ \
 item_mu_coach_gen4_superliner_california, /*Year: 1990*/ \
-item_mu_coach_gen6_citynightline_sleeper, /*Year: 1995*/ \
+item_mu_coach_gen5_citynightline_sleeper, /*Year: 1995*/ \
 item_mu_coach_gen5_high_speed_coach, /*Year: 2000*/ \
 item_mu_coach_gen5_modern_regional_coach, /*Year: 2000*/ \
 item_mu_coach_gen5_modern_commuter_coach, /*Year: 2000*/ \

@@ -6,9 +6,9 @@
 // Template: TPL_04A.
 // Data from: nan
 
-item(FEAT_TRAINS, item_mu_coach_gen6_trans_euro_night_sleeper) {
+item(FEAT_TRAINS, item_mu_coach_gen4_trans_euro_night_sleeper) {
     property {
-        name: string(str_mu_coach_gen6_trans_euro_night_sleeper);
+        name: string(str_mu_coach_gen4_trans_euro_night_sleeper);
         climates_available: (((param_region_africa || (param_region_north_america || param_region_south_america) || param_region_asia || (param_region_northern_europe || param_region_eastern_europe || param_region_southern_europe || param_region_western_europe) || param_region_oceania) || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1970,1,1);
         model_life: 45;
@@ -45,7 +45,7 @@ item(FEAT_TRAINS, item_mu_coach_gen6_trans_euro_night_sleeper) {
         bitmask_vehicle_info: 0;
     }
     graphics {
-        purchase: spriteset_mu_coach_gen6_trans_euro_night_sleeper_purchase;
+        purchase: spriteset_mu_coach_gen4_trans_euro_night_sleeper_purchase;
         // no 'visual_effect' or 'visual_effect_and_powered'
         // no 'length'
         // no 'articulated_part'
@@ -53,7 +53,7 @@ item(FEAT_TRAINS, item_mu_coach_gen6_trans_euro_night_sleeper) {
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
         // PURCHASETEXT_SWITCH_CALL // this is actually blank
-        default: switch_mu_coach_gen6_trans_euro_night_sleeper_livery;
+        default: switch_mu_coach_gen4_trans_euro_night_sleeper_livery;
         // Random flip for variety
         reverse_build_probability: return 50;
     }

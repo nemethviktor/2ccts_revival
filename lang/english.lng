@@ -517,8 +517,8 @@ str_mu_coach_gen6_metropolis_coach                                :Metropolis Co
 str_mu_coach_gen6_speedmail_coach                                 :Speedmail Coach
 str_mu_coach_gen6_super_regio_coach                               :Super Regio Coach
 str_mu_coach_gen6_super_voyager_coach                             :Super Voyager Coach
-str_mu_coach_gen6_citynightline_sleeper                           :'CityNightLine' Sleeper
-str_mu_coach_gen6_trans_euro_night_sleeper                        :'Trans Euro Night' Sleeper
+str_mu_coach_gen5_citynightline_sleeper                           :'CityNightLine' Sleeper
+str_mu_coach_gen4_trans_euro_night_sleeper                        :'Trans Euro Night' Sleeper
 
 # Dieselengine
 str_diesel_germany_db_kof_ii                                      :DB Kof II / DB 322 (Diesel)

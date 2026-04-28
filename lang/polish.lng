@@ -520,8 +520,8 @@ str_mu_coach_gen5_talgo_pendular_mail                             :Wagon pocztow
 # str_mu_coach_gen6_speedmail_coach                                 : not translated
 # str_mu_coach_gen6_super_regio_coach                               : not translated
 # str_mu_coach_gen6_super_voyager_coach                             : not translated
-# str_mu_coach_gen6_citynightline_sleeper                           : not translated
-# str_mu_coach_gen6_trans_euro_night_sleeper                        : not translated
+# str_mu_coach_gen5_citynightline_sleeper                           : not translated
+# str_mu_coach_gen4_trans_euro_night_sleeper                        : not translated
 
 # Dieselengine
 str_diesel_germany_db_kof_ii                                      :Kof II / DB 322 (Diesel)

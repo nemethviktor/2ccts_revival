@@ -520,8 +520,8 @@ str_mu_coach_gen6_metropolis_coach                                :Carrozza Metr
 str_mu_coach_gen6_speedmail_coach                                 :Carrozza postale Speedmail
 str_mu_coach_gen6_super_regio_coach                               :Carrozza tipo 'Super Regio'
 str_mu_coach_gen6_super_voyager_coach                             :Carrozza tipo 'Super Voyager'
-# str_mu_coach_gen6_citynightline_sleeper                           : not translated
-# str_mu_coach_gen6_trans_euro_night_sleeper                        : not translated
+# str_mu_coach_gen5_citynightline_sleeper                           : not translated
+# str_mu_coach_gen4_trans_euro_night_sleeper                        : not translated
 
 # Dieselengine
 str_diesel_germany_db_kof_ii                                      :DB Kof II / DB 322 (locomotiva diesel)

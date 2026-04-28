@@ -518,8 +518,8 @@ str_mu_coach_gen6_metropolis_coach                                :大都会城�
 str_mu_coach_gen6_speedmail_coach                                 :快邮邮车
 str_mu_coach_gen6_super_regio_coach                               :超级区域客车
 str_mu_coach_gen6_super_voyager_coach                             :超级航海家客车
-# str_mu_coach_gen6_citynightline_sleeper                           : not translated
-# str_mu_coach_gen6_trans_euro_night_sleeper                        : not translated
+# str_mu_coach_gen5_citynightline_sleeper                           : not translated
+# str_mu_coach_gen4_trans_euro_night_sleeper                        : not translated
 
 # Dieselengine
 str_diesel_germany_db_kof_ii                                      :德铁 Kof II/322 (Diesel)
