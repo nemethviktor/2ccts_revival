@@ -29,7 +29,7 @@ item(FEAT_TRAINS, item_mu_coach_gen5_citynightline_sleeper) {
         refittable_cargo_classes: bitmask(CC_PASSENGERS);
         non_refittable_cargo_classes: 0;
         
-        cargo_age_period: 185;
+        cargo_age_period: 296;
         misc_flags: bitmask(TRAIN_FLAG_2CC);
         refit_cost: 0;
         ai_special_flag: AI_FLAG_PASSENGER;

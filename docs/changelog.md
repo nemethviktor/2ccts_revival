@@ -4,6 +4,7 @@
 - CODE CHANGES:
 	- Added the track types to the vehicle info export
 	- Changed Andorra/Gabon confusion wrt country names
+	- Changed sleeper coaches to have cargo ageing of 4 days instead of the normal 2.5 days
 - VEHICLES CHANGES:
 	- Renamed various items (see relevant commit messages)
 	- Fixed a the sprite for `DB 17.0-1 'Prussian S 10'` that I broke the last time

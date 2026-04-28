@@ -602,7 +602,8 @@ def generate_unified_items():
     excel_path = os.path.join(script_dir, 'vehicle_report.xlsx')
     AIR_DRAG_COEFFICIENT = 0
     BITMASK_VEHICLE_INFO = 0
-    CARGO_AGE_PERIOD = 185
+    CARGO_AGE_PERIOD_NORMAL = 185  # 2.5 days
+    CARGO_AGE_PERIOD_SLEEPER = 296  # 4 days
     POWER_PER_WAGON = 0
     REFIT_COST = 0
     RELIABILITY_DECAY = 20
@@ -753,7 +754,7 @@ def generate_unified_items():
             f"        reliability_decay: {RELIABILITY_DECAY};\n")
         content.append(f"        {get_cargo_definitions(row)}\n")
         content.append(
-            f"        cargo_age_period: {CARGO_AGE_PERIOD};\n")
+            f"        cargo_age_period: {CARGO_AGE_PERIOD_SLEEPER if is_true('sleeper' in VEHIDCODE_lcase) else CARGO_AGE_PERIOD_NORMAL};\n")
         content.append(f"        misc_flags: {misc_logic};\n")
 
         # Push-pull DC (DT) logic where applicable

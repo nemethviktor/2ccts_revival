@@ -11,6 +11,30 @@ The grf file is available on Github under [Releases](https://github.com/nemethvi
 
 There is a nightly of sorts on my [Google Drive](https://drive.google.com/file/d/15M6hdWmnYQWlgP0Xh-UZbEimmLge4TZk/view?usp=drive_link) - whenever I compile the file locally on my laptop it gets copied there but it may or may not be buggy.
 
+## General information
+
+### Requirements
+
+- OpenTTD 1.2.0-RC1 or nightly r23971, or higher
+- Not compatible with TTDPatch
+- Badges require OpenTTD v15
+- Driving Trailers require nightly as of 20260410 or thereabouts (or v16 if you're on release versions).
+
+	
+### Parameter settings
+ 
+ - *Cost Parameters*: With the cost parameters you can set purchase and running costs. You can set the costs to the following values:
+	1/16x, 1/8x, 1/4x, 1/2x, 1x (default), 2x, 4x, 8x, 16x
+ - *Concept Parameter*: This parameter allows you to disable conceptual	vehicles. By default the conceptual vehicles are enabled.
+ - *Regional Parameters*: These parameters allow you to enable/disable vehicles from certain regions. The European subregions follow the EuroVOC subregions. By default, all regions are enabled. Disabling all regions will completely disable this NewGRF.
+	
+### Usage
+ 
+ - *Starting date*: You can start as early as 1835.
+ - *Metro vehicles* If there is no Metro track available, the Metro vehicles will use monorail as replacement, as this set does not define other vehicles for monorail.
+ - *Multiple units*: With MUs you buy the front and back as dual headed train, and use Unit Wagons to get the consist length you want. You can chose between unpowered and powered unit wagons. The unpowered wagon weighs 50% of the engine, the	powered wagon weighs 75% of the engine and costs 50% more than the unpowered wagon.
+ - *Sleeper coaches*: These have a slower cargo ageing (4 days instead of 2.5 days)
+
 ## Vehicle Roster
 
 The roster is auto-saved into a markdown file and can be accessed on github, [here](https://github.com/nemethviktor/2ccts_revival/blob/master/docs/vehicle_summary.md).
@@ -86,52 +110,14 @@ As I wrote above my GFX skills are zero so I'd like to ask people with graphics 
 Please **do stick to one of the template files** or, while beggars can't be choosers I _will_ reject the design. You may ofc put your logo or text or palette on the file(s) but don't move the template boxes. There are/were over 50 (!!!) various combinations in the legacy files and I'd rather die than to decipher any more random ones. (Main) Template logic cna be found in another readme inside the `gfx` folder and there are templates of existing files as well there. Furthermore each pnml file has the template designation inside it so if you would like to add more designs, pick one from the existing ones.
 
 
-## Ye Olde Readme [by Transportman, pre-2026 with minor modifications as indicated]
-### 1 About
-
-2cc Trains In NML for OpenTTD. The set gives you trains from all over the world in 2cc.
-
-### 2 General information
-
-#### 2.1 Requirements
-
-- OpenTTD 1.2.0-RC1 or nightly r23971, or higher
-- Not compatible with TTDPatch
-
-#### 2.2 Installation
-
-OpenTTD: see https://wiki.openttd.org/en/Community/NewGRF/
-
-Releases will be available from the ingame Online Content
-	~~Nightlies/Push builds can be downloaded from http://bundles.openttdcoop.org/2ccts/~~ (Site dead as of 2026; use github)
-	
-#### 2.3 Parameter settings
- 
- - *Cost Parameters*: With the cost parameters you can set purchase and running costs. You can set the costs to the following values:
-	1/16x, 1/8x, 1/4x, 1/2x, 1x (default), 2x, 4x, 8x, 16x
- - *Concept Parameter*: This parameter allows you to disable conceptual	vehicles. By default the conceptual vehicles are enabled.
- - *Regional Parameters*: These parameters allow you to enable/disable vehicles from certain regions. The European subregions follow the EuroVOC subregions. By default, all regions are enabled. Disabling all regions will completely disable this NewGRF.
-	
-#### 2.4 Usage
- 
- - *Starting date*: You can start as early as 1835.
- - *Metro vehicles* If there is no Metro track available, the Metro vehicles will use monorail as replacement, as this set does not define other vehicles for monorail.
- - *Multiple units*: With MUs you buy the front and back as dual headed train, and use Unit Wagons to get the consist length you want. You can chose between unpowered and powered unit wagons. The unpowered wagon weighs 50% of the engine, the	powered wagon weighs 75% of the engine and costs 50% more than the unpowered wagon.
-    
-### 3 Known issues
-
-### 4 Background information
-
-- This set is a recode to NML of the original 2cc TrainSet. Future versions will include new features.
-
-### 5 Frequently Asked Questions
+### Q&As
 
 Q: How do Unit Wagons work?
 A: With MUs you buy both heads, and then you can use the Unit Wagons to make the consist longer.
 
-### 6 Credits
+### Credits
 
-New graphics for this set:
+Graphics for this set:
 - Voyager One
 - Emperor Jake
 - SosMakaroni
@@ -157,8 +143,8 @@ Special thanks to:
 - All translators
 - #openttdcoop for their work on the DevZone
 
-### 7 Contact information
-#### 7.1 Bug reports
+### Contact information
+#### Bug reports
 
 Please report any bugs you find at the  
  - bug tracker: https://github.com/nemethviktor/2ccts_revival/issues  (2026 onwards -- please don't use OTTD forums!)
@@ -176,10 +162,10 @@ If you're using a patched version of the game, please try to reproduce
 the bug on an official game build. If you can't reproduce the bug, then
 don't report it here but in the forum topic of the patch(pack) instead.
 
-#### 7.2 Contributing
+#### Contributing
 PRs are most welcome but please try to test. 
 
-### 8 License
+### License
 
 2cc Trains In NML
 Copyright (C) 2014, 2026 2cc Trains In NML team
