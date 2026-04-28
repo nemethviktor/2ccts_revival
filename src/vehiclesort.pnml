@@ -814,11 +814,9 @@ item_mu_wagon_gen6_car_transporter, /*Year: 2020*/ \
 item_mu_wagon_gen6_silo_type2, /*Year: 2020*/ \
 item_mu_wagon_gen6_hopper_type2, /*Year: 2020*/
 
-#define SORTING_UNIT_WAGONS \
+#define SORTING_UNIT_WAGONS_RAIL \
 item_mu_mu_wagon_unpowered, /*Year: 1908*/ \
 item_mu_mu_wagon_powered, /*Year: 1908*/
-
-#define SORTING_UNIT_WAGONS_RAIL \
 
 #define SORTING_UNIT_WAGONS_MTRO \
 item_mtro_metro_wagon_unpowered, /*Year: 1900*/ \
@@ -884,7 +882,6 @@ sort(FEAT_TRAINS, [
     SORTING_MULTIMAGLEV 
     SORTING_COACHES 
     SORTING_WAGONS 
-    SORTING_UNIT_WAGONS 
     SORTING_UNIT_WAGONS_RAIL 
     SORTING_UNIT_WAGONS_MTRO 
     SORTING_UNIT_WAGONS_MGLV 

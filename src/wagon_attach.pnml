@@ -33,10 +33,11 @@ switch(FEAT_TRAINS, PARENT, switch_can_attach_wagon, [STORE_TEMP(position_in_con
 	ID_RANGE_COACHES: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // Coaches, allow if relevant railtype
 	ID_RANGE_WAGONS: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // Wagons, allow if relevant railtype
 	ID_RANGE_WAGONS_MGLV: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // Maglev Wagons, allow if relevant railtype
-	ID_RANGE_UNIT_WAGONS: string(STR_CANNOT_ATTACH_WAGON_TO_UNIT_WAGON); // Unit Wagons, disallow
+	ID_RANGE_UNIT_WAGONS_RAIL: string(STR_CANNOT_ATTACH_WAGON_TO_UNIT_WAGON); // Unit Wagons, disallow
 	ID_RANGE_SINGLEMETRO: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // Single Unit Metro, allow if relevant railtype
 	ID_RANGE_SMU: string(STR_CANNOT_ATTACH_WAGON_TO_MU); // SMU, disallow
 	ID_RANGE_CARGODMU: string(STR_CANNOT_ATTACH_WAGON_TO_MU); // CargoDMU, disallow
+	ID_RANGE_CARGOEMU: string(STR_CANNOT_ATTACH_WAGON_TO_MU); // CargoEMU, disallow
 	ID_RANGE_MAGLEV: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // Maglev (Engines), allow if relevant railtype
 	ID_RANGE_RBM: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // Maglev Railbus, allow if relevant railtype
 	CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
@@ -69,6 +70,7 @@ switch(FEAT_TRAINS, PARENT, switch_can_attach_unit_rail, [STORE_TEMP(position_in
 	ID_RANGE_SINGLEMETRO: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_ENGINE); // Single Unit Metro, disallow
 	ID_RANGE_SMU: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // SMU, allow if relevant railtype
 	ID_RANGE_CARGODMU: string(STR_CANNOT_ATTACH_UNIT_WAGON_PASSENGER_TO_CARGO); // CargoDMU, disallow
+	ID_RANGE_CARGOEMU: string(STR_CANNOT_ATTACH_UNIT_WAGON_PASSENGER_TO_CARGO); // CargoEMU, disallow
 	ID_RANGE_MAGLEV: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_ENGINE); // Maglev (Engines), disallow
 	ID_RANGE_RBM: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_ENGINE); // Maglev Railbus, disallow
 	CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
@@ -99,6 +101,7 @@ switch(FEAT_TRAINS, PARENT, switch_can_attach_unit_mtro, [STORE_TEMP(position_in
 	ID_RANGE_SINGLEMETRO: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_ENGINE); // Single Unit Metro, disallow
 	ID_RANGE_SMU: CB_RESULT_ATTACH_DISALLOW; // SMU, disallow
 	ID_RANGE_CARGODMU: string(STR_CANNOT_ATTACH_UNIT_WAGON_PASSENGER_TO_CARGO); // CargoDMU, disallow
+	ID_RANGE_CARGOEMU: string(STR_CANNOT_ATTACH_UNIT_WAGON_PASSENGER_TO_CARGO); // CargoEMU, disallow
 	ID_RANGE_MAGLEV: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_ENGINE); // Maglev (Engines), disallow
 	ID_RANGE_RBM: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_ENGINE); // Maglev Railbus, disallow
 	CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
@@ -129,6 +132,7 @@ switch(FEAT_TRAINS, PARENT, switch_can_attach_unit_mglv, [STORE_TEMP(position_in
 	ID_RANGE_SINGLEMETRO: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_ENGINE); // Single Unit Metro, disallow
 	ID_RANGE_SMU: CB_RESULT_ATTACH_DISALLOW; // SMU, disallow
 	ID_RANGE_CARGODMU: string(STR_CANNOT_ATTACH_UNIT_WAGON_PASSENGER_TO_CARGO); // CargoDMU, disallow
+	ID_RANGE_CARGOEMU: string(STR_CANNOT_ATTACH_UNIT_WAGON_PASSENGER_TO_CARGO); // CargoEMU, disallow
 	ID_RANGE_MAGLEV: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_ENGINE); // Maglev (Engines), disallow
 	ID_RANGE_RBM: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_ENGINE); // Maglev Railbus, disallow
 	CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
@@ -159,10 +163,12 @@ switch(FEAT_TRAINS, PARENT, switch_can_attach_unit_rail_cargo, [STORE_TEMP(posit
 	ID_RANGE_SINGLEMETRO: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_ENGINE); // Single Unit Metro, disallow
 	ID_RANGE_SMU: string(STR_CANNOT_ATTACH_UNIT_WAGON_CARGO_TO_PASSENGER); // SMU, disallow
 	ID_RANGE_CARGODMU: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // CargoDMU, allow if relevant railtype
+	ID_RANGE_CARGOEMU: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // CargoEMU, allow if relevant railtype
 	ID_RANGE_MAGLEV: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_ENGINE); // Maglev (Engines), disallow
 	ID_RANGE_RBM: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_ENGINE); // Maglev Railbus, disallow
 	CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
 }	
+
 	
 /*	Check vehicle ID to determine which case we have. 
  *	Engines are always allowed

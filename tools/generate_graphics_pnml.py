@@ -22,6 +22,11 @@ warnings.filterwarnings("ignore", category=UserWarning, module="openpyxl")
 # Default (no hex code): Every vehicle that isn't the first or the last.
 
 
+def is_true(val) -> bool:
+    """ Checks if a value evals to true (ie is a string that says so, or 1, or just True)"""
+    return (val == True or str(val).upper() == 'TRUE') or (val == 1)
+
+
 def scrub_nml_data(func):
     @wraps(func)
     def wrapper(*args, **kwargs):
@@ -358,12 +363,12 @@ switch(FEAT_TRAINS, SELF, switch_{vid}_{switch_what}, [STORE_TEMP({store_value},
 
 
 @scrub_nml_data
-def get_visual_effects_and_power_with_store(*, vid: str, store_value: int) -> str:
+def get_visual_effects_and_power_with_store(*, vid: str, store_value: int, id_range: str) -> str:
     visual_effect_type = get_visual_effect_and_powered(vid=vid)
 
     nml_code = f"""
 switch(FEAT_TRAINS, SELF, switch_{vid}_visual_effect_and_powered_position, [STORE_TEMP({store_value}, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {{
-	ID_RANGE_UNIT_WAGONS: switch_{vid}_visual_effect_and_powered;
+	{id_range.upper()}: switch_{vid}_visual_effect_and_powered;
 	visual_effect_and_powered(VISUAL_EFFECT_{visual_effect_type}, -3, DISABLE_WAGON_POWER);
 }}"""
 
@@ -732,7 +737,16 @@ def get_tpl_02(vid, gfx_path, row, template_amendment_code):
         D -> EMU(Long)
         E -> EMU(Even Longer): return:
     """
-    visual_effect_type = get_visual_effect_and_powered(vid=vid)
+
+    VEHID_ID_CATEGORY = 'ID_RANGE_UNIT_WAGONS_RAIL'
+
+    if is_true(row['TRACK_TYPE_STANDARD_GAUGE_RAILTYPE_3RD']) or is_true(row['TRACK_TYPE_STANDARD_GAUGE_RAILTYPE_4TH']) \
+            or is_true(row['TRACK_TYPE_NARROW_GAUGE_RAILTYPE_3RD']) or is_true(row['TRACK_TYPE_NARROW_GAUGE_RAILTYPE_4TH']) \
+            or is_true(row['TRACK_TYPE_BROAD_GAUGE_RAILTYPE_3RD']) or is_true(row['TRACK_TYPE_BROAD_GAUGE_RAILTYPE_4TH']) \
+            or is_true(row['TRACK_TYPE_MONO']) or is_true(row['TRACK_TYPE_MTRO']):
+        VEHID_ID_CATEGORY = 'ID_RANGE_UNIT_WAGONS_MTRO'
+    elif is_true(row['TRACK_TYPE_MGLV']):
+        VEHID_ID_CATEGORY = 'ID_RANGE_UNIT_WAGONS_MGLV'
 
     nml_code = []
     if template_amendment_code in ['A', 'D', 'F']:
@@ -849,7 +863,7 @@ def get_tpl_02(vid, gfx_path, row, template_amendment_code):
             nml_code.append(get_switch_with_store(vid=vid,
                                                   store_value=1,
                                                   switch_what=f"middle{item}_position_back",
-                                                  id_range="ID_RANGE_UNIT_WAGONS",
+                                                  id_range=VEHID_ID_CATEGORY,
                                                   first_item_task="spriteset",
                                                   second_item_task="spriteset",
                                                   first_item_suffix=f"middle{item}_part_2_regular",
@@ -858,7 +872,7 @@ def get_tpl_02(vid, gfx_path, row, template_amendment_code):
             nml_code.append(get_switch_with_store(vid=vid,
                                                   store_value=1,
                                                   switch_what=f"middle{item}_position_front",
-                                                  id_range="ID_RANGE_UNIT_WAGONS",
+                                                  id_range=VEHID_ID_CATEGORY,
                                                   first_item_task="spriteset",
                                                   second_item_task="spriteset",
                                                   first_item_suffix=f"middle{item}_part_2_front",
@@ -867,7 +881,7 @@ def get_tpl_02(vid, gfx_path, row, template_amendment_code):
             nml_code.append(get_switch_with_store(vid=vid,
                                                   store_value=-1,  # minus 1
                                                   switch_what=f"middle{item}_length",
-                                                  id_range="ID_RANGE_UNIT_WAGONS",
+                                                  id_range=VEHID_ID_CATEGORY,
                                                   first_item_task="switch",  # switch, not spriteset
                                                   second_item_task="switch",  # switch, not spriteset
                                                   first_item_suffix=f"middle{item}_position_back",
@@ -900,7 +914,7 @@ def get_tpl_02(vid, gfx_path, row, template_amendment_code):
             vid=vid, first_chance=9, second_chance=1))
 
         nml_code.append(
-            get_visual_effects_and_power_with_store(vid=vid, store_value=-1))
+            get_visual_effects_and_power_with_store(vid=vid, store_value=-1, id_range=VEHID_ID_CATEGORY))
 
         nml_code.append(get_random_switch_visual_effect_w_dependent(
             vid=vid,
@@ -923,7 +937,7 @@ def get_tpl_02(vid, gfx_path, row, template_amendment_code):
             nml_code.append(get_switch_with_store(vid=vid,
                                                   store_value=-1,  # minus 1
                                                   switch_what=f"middle{item}_position",
-                                                  id_range="ID_RANGE_UNIT_WAGONS",
+                                                  id_range=VEHID_ID_CATEGORY,
                                                   first_item_task="switch",  # switch, not spriteset
                                                   second_item_task="spriteset",  # spriteset!
                                                   first_item_suffix=f"middle{item}_livery",
@@ -2280,14 +2294,41 @@ def generate_graphics_pnml():
     df_properties = pd.read_excel(excel_path, sheet_name='properties')
     df_gfx_props = pd.read_excel(excel_path, sheet_name='graphics_properties')
     df_copyright = pd.read_excel(excel_path, sheet_name='copyright_text')
+    df_track_types = pd.read_excel(excel_path, sheet_name='track_types')
 
     # 2. Merge data to get a full view of each vehicle's needs
     # Join control (paths) with gfx_props (template IDs)
-    df_master = (
-        df_control[['VEHIDCODE', 'FILENAMES_EXPECTED', 'SAVE_TO']]
-        .merge(df_properties[['VEHIDCODE', 'LENGTH', 'WAGON_LENGTH']], on='VEHIDCODE')
-        .merge(df_gfx_props[['VEHIDCODE', 'PANTOGRAPH_POSITION', 'TEMPLATE_ID', 'TEMPLATE_AMENDMENT_CODE']], on='VEHIDCODE')
-    )
+# Load all sheets
+    sheets = pd.read_excel(excel_path, sheet_name=None)
+
+    df_control = sheets['control']
+    df_props = sheets['properties']
+    df_roster = sheets['roster']
+    df_tracks = sheets['track_types']
+    df_gfx_props = sheets['graphics_properties']
+
+    # CRITICAL: Clean VEHIDCODE in all sheets to prevent "Not Found" errors
+    for df in [df_control, df_props, df_roster, df_tracks, df_gfx_props]:
+        if 'VEHIDCODE' in df.columns:
+            df['VEHIDCODE'] = df['VEHIDCODE'].astype(str).str.strip()
+
+    # 1. Merge core data
+    df_master = df_control.merge(df_props, on='VEHIDCODE', how='left')
+
+    # 2. Merge roster and track_types
+    # We use suffixes=('', '_dup') to handle any overlapping columns gracefully
+    df_master = df_master.merge(
+        df_roster, on='VEHIDCODE', how='left', suffixes=('', '_roster'))
+    df_master = df_master.merge(
+        df_tracks, on='VEHIDCODE', how='left', suffixes=('', '_tracks'))
+
+    # 3. Merge graphics properties
+    df_master = df_master.merge(
+        df_gfx_props, on='VEHIDCODE', how='left', suffixes=('', '_gfx'))
+
+    # Final cleanup: Replace NaN in track columns with False
+    track_cols = [c for c in df_master.columns if c.startswith('TRACK_TYPE_')]
+    df_master[track_cols] = df_master[track_cols].fillna(False)
 
     min_templateID = 1
     max_templateID = 42

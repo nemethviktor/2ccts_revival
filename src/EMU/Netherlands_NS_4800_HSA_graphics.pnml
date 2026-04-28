@@ -50,32 +50,32 @@ spriteset(spriteset_emu_netherlands_ns_4800_hsa_middlemail_double, "gfx/emu/neth
 
 
 switch(FEAT_TRAINS, SELF, switch_emu_netherlands_ns_4800_hsa_middlepass_position_back, [STORE_TEMP(1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
-	ID_RANGE_UNIT_WAGONS: spriteset_emu_netherlands_ns_4800_hsa_middlepass_part_2_regular;
+	ID_RANGE_UNIT_WAGONS_RAIL: spriteset_emu_netherlands_ns_4800_hsa_middlepass_part_2_regular;
 	spriteset_emu_netherlands_ns_4800_hsa_middlepass_part_2_back;
 }
 
 switch(FEAT_TRAINS, SELF, switch_emu_netherlands_ns_4800_hsa_middlepass_position_front, [STORE_TEMP(1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
-	ID_RANGE_UNIT_WAGONS: spriteset_emu_netherlands_ns_4800_hsa_middlepass_part_2_front;
+	ID_RANGE_UNIT_WAGONS_RAIL: spriteset_emu_netherlands_ns_4800_hsa_middlepass_part_2_front;
 	spriteset_emu_netherlands_ns_4800_hsa_middlepass_double;
 }
 
 switch(FEAT_TRAINS, SELF, switch_emu_netherlands_ns_4800_hsa_middlepass_length, [STORE_TEMP(-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
-	ID_RANGE_UNIT_WAGONS: switch_emu_netherlands_ns_4800_hsa_middlepass_position_back;
+	ID_RANGE_UNIT_WAGONS_RAIL: switch_emu_netherlands_ns_4800_hsa_middlepass_position_back;
 	switch_emu_netherlands_ns_4800_hsa_middlepass_position_front;
 }
 
 switch(FEAT_TRAINS, SELF, switch_emu_netherlands_ns_4800_hsa_middlemail_position_back, [STORE_TEMP(1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
-	ID_RANGE_UNIT_WAGONS: spriteset_emu_netherlands_ns_4800_hsa_middlemail_part_2_regular;
+	ID_RANGE_UNIT_WAGONS_RAIL: spriteset_emu_netherlands_ns_4800_hsa_middlemail_part_2_regular;
 	spriteset_emu_netherlands_ns_4800_hsa_middlemail_part_2_back;
 }
 
 switch(FEAT_TRAINS, SELF, switch_emu_netherlands_ns_4800_hsa_middlemail_position_front, [STORE_TEMP(1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
-	ID_RANGE_UNIT_WAGONS: spriteset_emu_netherlands_ns_4800_hsa_middlemail_part_2_front;
+	ID_RANGE_UNIT_WAGONS_RAIL: spriteset_emu_netherlands_ns_4800_hsa_middlemail_part_2_front;
 	spriteset_emu_netherlands_ns_4800_hsa_middlemail_double;
 }
 
 switch(FEAT_TRAINS, SELF, switch_emu_netherlands_ns_4800_hsa_middlemail_length, [STORE_TEMP(-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
-	ID_RANGE_UNIT_WAGONS: switch_emu_netherlands_ns_4800_hsa_middlemail_position_back;
+	ID_RANGE_UNIT_WAGONS_RAIL: switch_emu_netherlands_ns_4800_hsa_middlemail_position_back;
 	switch_emu_netherlands_ns_4800_hsa_middlemail_position_front;
 }
 

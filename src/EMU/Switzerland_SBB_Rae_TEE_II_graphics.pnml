@@ -50,7 +50,7 @@ random_switch(FEAT_TRAINS, SELF, switch_emu_switzerland_sbb_rae_tee_ii_visual_ef
 }
 
 switch(FEAT_TRAINS, SELF, switch_emu_switzerland_sbb_rae_tee_ii_visual_effect_and_powered_position, [STORE_TEMP(-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
-	ID_RANGE_UNIT_WAGONS: switch_emu_switzerland_sbb_rae_tee_ii_visual_effect_and_powered;
+	ID_RANGE_UNIT_WAGONS_RAIL: switch_emu_switzerland_sbb_rae_tee_ii_visual_effect_and_powered;
 	visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, -3, DISABLE_WAGON_POWER);
 }
 
@@ -69,12 +69,12 @@ random_switch(FEAT_TRAINS, SELF, switch_emu_switzerland_sbb_rae_tee_ii_middlemai
 }
 
 switch(FEAT_TRAINS, SELF, switch_emu_switzerland_sbb_rae_tee_ii_middlepass_position, [STORE_TEMP(-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
-	ID_RANGE_UNIT_WAGONS: switch_emu_switzerland_sbb_rae_tee_ii_middlepass_livery;
+	ID_RANGE_UNIT_WAGONS_RAIL: switch_emu_switzerland_sbb_rae_tee_ii_middlepass_livery;
 	spriteset_emu_switzerland_sbb_rae_tee_ii_middlepass_l2;
 }
 
 switch(FEAT_TRAINS, SELF, switch_emu_switzerland_sbb_rae_tee_ii_middlemail_position, [STORE_TEMP(-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
-	ID_RANGE_UNIT_WAGONS: switch_emu_switzerland_sbb_rae_tee_ii_middlemail_livery;
+	ID_RANGE_UNIT_WAGONS_RAIL: switch_emu_switzerland_sbb_rae_tee_ii_middlemail_livery;
 	spriteset_emu_switzerland_sbb_rae_tee_ii_middlemail_l2;
 }
 
