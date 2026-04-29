@@ -615,11 +615,12 @@
 | ![Moscow Type D](vehicle_graphics/str_mtro_russia_moscow_type_d.png) | Moscow Type D | 1955 | 75 | 760 | Metro/Rapid Transit | 280 | BROAD_3RD | Asia |
 | ![Paris M2 840](vehicle_graphics/str_mtro_france_paris_m2_840.png) | Paris M2 840 | 1957 | 45 | 140 | Metro/Rapid Transit | 130 | STANDARD_3RD | Western Europe |
 | ![Lisbon ML7](vehicle_graphics/str_mtro_portugal_lisbon_ml7.png) | Lisbon ML7 | 1959 | 60 | 430 | Metro/Rapid Transit | 170 | STANDARD_3RD | Southern Europe |
+| ![London 1959 Stock](vehicle_graphics/str_mtro_uk_london_1959_stock.png) | London 1959 Stock | 1959 | 72 | 700 | Metro/Rapid Transit | 210 | STANDARD_4TH | Northern Europe |
 | ![Oslo T1000](vehicle_graphics/str_mtro_norway_oslo_t1000.png) | Oslo T1000 | 1964 | 70 | 1050 | Metro/Rapid Transit | 270 | STANDARD_3RD | Northern Europe |
 | ![Toronto H1](vehicle_graphics/str_mtro_canada_toronto_h_series.png) | Toronto H1 | 1965 | 80 | 960 | Metro/Rapid Transit | 300 | STANDARD_3RD | North America |
 | ![Rotterdam MG2 Type M](vehicle_graphics/str_mtro_netherlands_rotterdam_mg2_type_m.png) | Rotterdam MG2 Type M | 1968 | 80 | 630 | Metro/Rapid Transit | 280 | STANDARD_3RD | Western Europe |
-| ![Munchen MVG A2](vehicle_graphics/str_mtro_germany_munchen_mvg_a2.png) | Munchen MVG A2 | 1971 | 80 | 965 | Metro/Rapid Transit | 290 | STANDARD_3RD | Western Europe |
 | ![New York R44](vehicle_graphics/str_mtro_usa_ny_r44.png) | New York R44 | 1971 | 110 | 920 | Metro/Rapid Transit | 300 | STANDARD_3RD | North America |
+| ![Munchen MVG A2](vehicle_graphics/str_mtro_germany_munchen_mvg_a2.png) | Munchen MVG A2 | 1971 | 80 | 965 | Metro/Rapid Transit | 290 | STANDARD_3RD | Western Europe |
 | ![Prague ECS Set](vehicle_graphics/str_mtro_czech_republic_prague_ecs_set.png) | Prague ECS Set | 1972 | 80 | 910 | Metro/Rapid Transit | 262 | STANDARD_3RD | Eastern Europe |
 | ![London 1972 Stock](vehicle_graphics/str_mtro_uk_london_1972_stock.png) | London 1972 Stock | 1972 | 72 | 1400 | Metro/Rapid Transit | 242 | STANDARD_4TH | Northern Europe |
 | ![Amsterdam M1](vehicle_graphics/str_mtro_netherlands_amsterdam_type_m1.png) | Amsterdam M1 | 1973 | 80 | 1050 | Metro/Rapid Transit | 300 | STANDARD_3RD | Western Europe |
@@ -635,11 +636,11 @@
 | ![London 1992 Stock](vehicle_graphics/str_mtro_uk_london_1992_stock.png) | London 1992 Stock | 1992 | 100 | 1700 | Metro/Rapid Transit | 260 | STANDARD_4TH | Northern Europe |
 | ![Taipei C301](vehicle_graphics/str_mtro_taiwan_taipei_c301.png) | Taipei C301 | 1992 | 80 | 1550 | Metro/Rapid Transit | 310 | STANDARD_3RD | Asia |
 | ![Moscow 81-717.5M](vehicle_graphics/str_mtro_russia_moscow_81_7175m.png) | Moscow 81-717.5M | 1993 | 90 | 1180 | Metro/Rapid Transit | 288 | BROAD_3RD | Asia |
-| ![Boston 01800](vehicle_graphics/str_mtro_usa_boston_01800.png) | Boston 01800 | 1993 | 80 | 910 | Metro/Rapid Transit | 310 | STANDARD_3RD | North America |
 | ![LA A650](vehicle_graphics/str_mtro_usa_la_a650.png) | LA A650 | 1993 | 70 | 1250 | Metro/Rapid Transit | 300 | STANDARD_3RD | North America |
+| ![Boston 01800](vehicle_graphics/str_mtro_usa_boston_01800.png) | Boston 01800 | 1993 | 80 | 910 | Metro/Rapid Transit | 310 | STANDARD_3RD | North America |
 | ![Santiago NS-93](vehicle_graphics/str_mtro_chile_santiago_ns_93.png) | Santiago NS-93 | 1996 | 100 | 2400 | Metro/Rapid Transit | 320 | STANDARD_3RD | South America |
-| ![Paris MP89](vehicle_graphics/str_mtro_france_paris_mp89.png) | Paris MP89 | 1997 | 80 | 2680 | Metro/Rapid Transit | 240 | STANDARD_3RD | Western Europe |
 | ![Amsterdam S3 CAF 90](vehicle_graphics/str_mtro_netherlands_amsterdam_caf_90.png) | Amsterdam S3 CAF 90 | 1997 | 70 | 1020 | Metro/Rapid Transit | 250 | STANDARD_DUAL | Western Europe |
+| ![Paris MP89](vehicle_graphics/str_mtro_france_paris_mp89.png) | Paris MP89 | 1997 | 80 | 2680 | Metro/Rapid Transit | 240 | STANDARD_3RD | Western Europe |
 | ![Buenos Aires Serie 1200](vehicle_graphics/str_mtro_argentina_buenos_aires_serie_1200.png) | Buenos Aires Serie 1200 | 1999 | 75 | 640 | Metro/Rapid Transit | 230 | STANDARD_3RD | South America |
 | ![Rome S/300](vehicle_graphics/str_mtro_italy_rome_s_300.png) | Rome S/300 | 1999 | 80 | 1650 | Metro/Rapid Transit | 420 | STANDARD_3RD | Southern Europe |
 | ![Pyongyang D stock](vehicle_graphics/str_mtro_north_korea_pyongyang_d_stock.png) | Pyongyang D stock | 1999 | 70 | 800 | Metro/Rapid Transit | 320 | STANDARD_3RD | Asia |

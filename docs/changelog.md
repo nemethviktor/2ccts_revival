@@ -9,6 +9,8 @@
 - VEHICLES CHANGES:
 	- Renamed various items (see relevant commit messages)
 	- Fixed a the sprite for `DB 17.0-1 'Prussian S 10'` that I broke the last time
+	- Redesigned `London Underground 1938 Stock`
+	- Added `London Underground 1959 Stock`
 	- Added `London Underground 1972 Stock`
 	- Added `London Underground 1992 Stock`
 	- Added `London Underground S Stock`
