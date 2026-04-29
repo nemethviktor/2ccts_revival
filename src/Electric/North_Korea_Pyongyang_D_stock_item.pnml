@@ -44,7 +44,7 @@ item(FEAT_TRAINS, item_mtro_north_korea_pyongyang_d_stock) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/asia", "flag/KP", "power/metro", "role/metro_rapid_transit"];
+	badges: ["region/asia", "flag/KP", "power/metro", "role/metro"];
 
     }
     graphics {

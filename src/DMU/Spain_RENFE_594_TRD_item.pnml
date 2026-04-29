@@ -58,7 +58,7 @@ item(FEAT_TRAINS, item_dmu_spain_renfe_594_trd) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/europe/southern", "flag/ES", "power/diesel", "role/express__passenger_"];
+	badges: ["region/europe/southern", "flag/ES", "power/diesel", "role/express_passenger"];
 
     }
     graphics {

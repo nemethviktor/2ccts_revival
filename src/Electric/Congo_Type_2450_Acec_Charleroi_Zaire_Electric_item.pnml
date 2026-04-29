@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_electric_congo_type_2450_acec_charleroi_zaire_electric) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/africa", "flag/CD", "power/electric/ac", "role/general_purpose"];
+	badges: ["region/africa", "flag/CD", "power/electric/ac", "role/universal"];
 
     }
     graphics {

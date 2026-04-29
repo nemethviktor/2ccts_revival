@@ -47,7 +47,7 @@ item(FEAT_TRAINS, item_steam_japan_jnr_d50) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/asia", "flag/JP", "power/steam", "role/general_purpose"];
+	badges: ["region/asia", "flag/JP", "power/steam", "role/universal"];
 
     }
     graphics {

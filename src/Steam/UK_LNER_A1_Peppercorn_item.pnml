@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_steam_uk_lner_a1_peppercorn) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/europe/northern", "flag/GB", "power/steam", "role/express__universal_"];
+	badges: ["region/europe/northern", "flag/GB", "power/steam", "role/express"];
 
     }
     graphics {

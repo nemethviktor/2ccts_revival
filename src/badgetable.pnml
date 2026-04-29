@@ -573,17 +573,17 @@ spriteset (sprite_flag_WRLD) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/wrld.png"]}b
 	"role/coach__hs_",
 	"role/coach__mail_",
 	"role/coach__regional_",
-	"role/commuter___urban",
-	"role/express__passenger_",
-	"role/express__universal_",
-	"role/general_purpose",
+	"role/commuter_urban",
+	"role/express_passenger",
+	"role/express",
+	"role/universal",
 	"role/heavy_freight",
 	"role/light_freight",
-	"role/metro_rapid_transit",
+	"role/metro",
 	"role/powered_unpowered_sundry",
 	"role/regional_passenger",
-	"role/shunter",
-	"role/standard_freight",
+	"role/shunting",
+	"role/freight",
 	"role/ultra_high_speed__pax_",
 	"role/ultra_high_speed__universal_",
 	"role/wagon",
@@ -3511,34 +3511,34 @@ item (FEAT_BADGES, role_coach__regional_) {
 	}}
 
 	
-item (FEAT_BADGES, role_commuter___urban) {
+item (FEAT_BADGES, role_commuter_urban) {
     property {
-        label: "role/commuter___urban";
-        name: string(STR_ROLE_COMMUTER___URBAN);
+        label: "role/commuter_urban";
+        name: string(STR_ROLE_COMMUTER_URBAN);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
 	}}
 
 	
-item (FEAT_BADGES, role_express__passenger_) {
+item (FEAT_BADGES, role_express_passenger) {
     property {
-        label: "role/express__passenger_";
-        name: string(STR_ROLE_EXPRESS__PASSENGER_);
+        label: "role/express_passenger";
+        name: string(STR_ROLE_EXPRESS_PASSENGER);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
 	}}
 
 	
-item (FEAT_BADGES, role_express__universal_) {
+item (FEAT_BADGES, role_express) {
     property {
-        label: "role/express__universal_";
-        name: string(STR_ROLE_EXPRESS__UNIVERSAL_);
+        label: "role/express";
+        name: string(STR_ROLE_EXPRESS);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
 	}}
 
 	
-item (FEAT_BADGES, role_general_purpose) {
+item (FEAT_BADGES, role_universal) {
     property {
-        label: "role/general_purpose";
-        name: string(STR_ROLE_GENERAL_PURPOSE);
+        label: "role/universal";
+        name: string(STR_ROLE_UNIVERSAL);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
 	}}
 
@@ -3559,10 +3559,10 @@ item (FEAT_BADGES, role_light_freight) {
 	}}
 
 	
-item (FEAT_BADGES, role_metro_rapid_transit) {
+item (FEAT_BADGES, role_metro) {
     property {
-        label: "role/metro_rapid_transit";
-        name: string(STR_ROLE_METRO_RAPID_TRANSIT);
+        label: "role/metro";
+        name: string(STR_ROLE_METRO);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
 	}}
 
@@ -3583,18 +3583,18 @@ item (FEAT_BADGES, role_regional_passenger) {
 	}}
 
 	
-item (FEAT_BADGES, role_shunter) {
+item (FEAT_BADGES, role_shunting) {
     property {
-        label: "role/shunter";
-        name: string(STR_ROLE_SHUNTER);
+        label: "role/shunting";
+        name: string(STR_ROLE_SHUNTING);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
 	}}
 
 	
-item (FEAT_BADGES, role_standard_freight) {
+item (FEAT_BADGES, role_freight) {
     property {
-        label: "role/standard_freight";
-        name: string(STR_ROLE_STANDARD_FREIGHT);
+        label: "role/freight";
+        name: string(STR_ROLE_FREIGHT);
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
 	}}
 

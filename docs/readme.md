@@ -18,8 +18,8 @@ There is a nightly of sorts on my [Google Drive](https://drive.google.com/file/d
 - OpenTTD 1.2.0-RC1 or nightly r23971, or higher
 - Not compatible with TTDPatch
 - Badges require OpenTTD v15
-- Driving Trailers require nightly as of 20260410 or thereabouts (or v16 if you're on release versions).
-
+- Driving Trailers require nightly as of 20260410 or thereabouts (or v16 if you're on release versions)
+- Please note that the 'revival' newgrf is not backwards compatible with the original 2cc trains newgrf so you can't hot-swap it in savegames
 	
 ### Parameter settings
  

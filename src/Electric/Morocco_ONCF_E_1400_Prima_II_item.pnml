@@ -47,7 +47,7 @@ item(FEAT_TRAINS, item_electric_morocco_oncf_e_1400_prima_ii) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/africa", "flag/MA", "power/electric/dc", "role/express__universal_"];
+	badges: ["region/africa", "flag/MA", "power/electric/dc", "role/express"];
 
     }
     graphics {

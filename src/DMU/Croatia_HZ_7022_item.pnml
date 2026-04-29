@@ -63,7 +63,7 @@ item(FEAT_TRAINS, item_dmu_croatia_hz_7022) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/europe/eastern", "flag/HR", "power/diesel", "role/express__passenger_"];
+	badges: ["region/europe/eastern", "flag/HR", "power/diesel", "role/express_passenger"];
 
     }
     graphics {

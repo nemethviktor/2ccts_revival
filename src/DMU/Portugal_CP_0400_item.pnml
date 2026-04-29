@@ -62,7 +62,7 @@ item(FEAT_TRAINS, item_dmu_portugal_cp_0400) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/europe/southern", "flag/PT", "power/diesel", "role/commuter___urban"];
+	badges: ["region/europe/southern", "flag/PT", "power/diesel", "role/commuter_urban"];
 
     }
     graphics {

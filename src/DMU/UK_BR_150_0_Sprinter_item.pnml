@@ -62,7 +62,7 @@ item(FEAT_TRAINS, item_dmu_uk_br_150_0_sprinter) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/europe/northern", "flag/GB", "power/diesel", "role/commuter___urban"];
+	badges: ["region/europe/northern", "flag/GB", "power/diesel", "role/commuter_urban"];
 
     }
     graphics {

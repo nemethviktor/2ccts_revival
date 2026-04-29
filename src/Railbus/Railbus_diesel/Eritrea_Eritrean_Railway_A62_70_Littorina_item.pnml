@@ -62,7 +62,7 @@ item(FEAT_TRAINS, item_rbd_eritrea_eritrean_railway_a62_70_littorina) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/africa", "flag/ER", "power/diesel", "role/commuter___urban"];
+	badges: ["region/africa", "flag/ER", "power/diesel", "role/commuter_urban"];
 
     }
     graphics {

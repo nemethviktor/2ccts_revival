@@ -62,7 +62,7 @@ item(FEAT_TRAINS, item_dmu_argentina_fcgu_cmm_400_2) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/america/south", "flag/AR", "power/diesel", "role/commuter___urban"];
+	badges: ["region/america/south", "flag/AR", "power/diesel", "role/commuter_urban"];
 
     }
     graphics {

@@ -47,7 +47,7 @@ item(FEAT_TRAINS, item_diesel_argentina_mf_ge_u20c) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/america/south", "flag/AR", "power/diesel", "role/general_purpose"];
+	badges: ["region/america/south", "flag/AR", "power/diesel", "role/universal"];
 
     }
     graphics {

@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_diesel_mexico_chp_500_fm_h_16_44) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/america/northern", "flag/MX", "power/diesel", "role/general_purpose"];
+	badges: ["region/america/northern", "flag/MX", "power/diesel", "role/universal"];
 
     }
     graphics {

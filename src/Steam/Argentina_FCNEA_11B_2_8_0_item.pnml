@@ -47,7 +47,7 @@ item(FEAT_TRAINS, item_steam_argentina_fcnea_11b_2_8_0) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/america/south", "flag/AR", "power/steam", "role/general_purpose"];
+	badges: ["region/america/south", "flag/AR", "power/steam", "role/universal"];
 
     }
     graphics {

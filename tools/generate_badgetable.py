@@ -44,19 +44,54 @@ def generate_vehicle_id_pnml():
     content.append(f"\n{raw_copyright}\n\n\n")
 
     flags = [
-        "flag", "flag/AF", "flag/AX", "flag/AL", "flag/DZ", "flag/AS", "flag/AD", "flag/AO", "flag/AI", "flag/AQ", "flag/AG", "flag/AR", "flag/AM", "flag/AW", "flag/AU", "flag/AT", "flag/AZ", "flag/BS", "flag/BH", "flag/BD", "flag/BB", "flag/BY", "flag/BE", "flag/BZ", "flag/BJ", "flag/BM", "flag/BT", "flag/BO", "flag/BQ", "flag/BA", "flag/BW", "flag/BV", "flag/BR", "flag/IO", "flag/BN", "flag/BG", "flag/BF", "flag/BI", "flag/KH", "flag/CM", "flag/CA", "flag/CV", "flag/KY", "flag/CF", "flag/TD", "flag/CL", "flag/CN", "flag/CX", "flag/CC", "flag/CO", "flag/KM", "flag/CG", "flag/CD", "flag/CK", "flag/CR", "flag/CI", "flag/HR", "flag/CU", "flag/CW", "flag/CY", "flag/CZ", "flag/DK", "flag/DJ", "flag/DM", "flag/DO", "flag/EC", "flag/EG", "flag/SV", "flag/GQ", "flag/ER", "flag/EE", "flag/ET", "flag/FK", "flag/FO", "flag/FJ", "flag/FI", "flag/FR", "flag/GF", "flag/PF", "flag/TF", "flag/GA", "flag/GM", "flag/GE", "flag/DE", "flag/GDR", "flag/GH", "flag/GI", "flag/GR", "flag/GL", "flag/GD", "flag/GP", "flag/GU", "flag/GT", "flag/GG", "flag/GN", "flag/GW", "flag/GY", "flag/HT", "flag/HM", "flag/VA", "flag/HN", "flag/HK", "flag/HU", "flag/IS", "flag/IN", "flag/ID", "flag/IR", "flag/IQ", "flag/IE", "flag/IM", "flag/IL", "flag/IT", "flag/JM", "flag/JP", "flag/JE", "flag/JO", "flag/KZ", "flag/KE", "flag/KI", "flag/KP", "flag/KR", "flag/KW", "flag/KG", "flag/LA", "flag/LV", "flag/LB", "flag/LS", "flag/LR", "flag/LY", "flag/LI", "flag/LT", "flag/LU", "flag/MO", "flag/MK", "flag/MG", "flag/MW", "flag/MY", "flag/MV", "flag/ML", "flag/MT", "flag/MH", "flag/MQ", "flag/MR", "flag/MU", "flag/YT", "flag/YU", "flag/MX", "flag/FM", "flag/MD", "flag/MC", "flag/MN", "flag/ME", "flag/MS", "flag/MA", "flag/MZ", "flag/MM", "flag/NA", "flag/NR", "flag/NP", "flag/NL", "flag/NC", "flag/NZ", "flag/NI", "flag/NE", "flag/NG", "flag/NU", "flag/NF", "flag/MP", "flag/NO", "flag/OM", "flag/PK", "flag/PW", "flag/PS", "flag/PA", "flag/PG", "flag/PY", "flag/PE", "flag/PH", "flag/PN", "flag/PL", "flag/PT", "flag/PR", "flag/QA", "flag/RE", "flag/RO", "flag/RU", "flag/SU", "flag/RW", "flag/BL", "flag/SH", "flag/KN", "flag/LC", "flag/MF", "flag/PM", "flag/VC", "flag/WS", "flag/SM", "flag/ST", "flag/SA", "flag/SN", "flag/RS", "flag/SC", "flag/SL", "flag/SG", "flag/SX", "flag/SK", "flag/SI", "flag/SB", "flag/SO", "flag/ZA", "flag/GS", "flag/SS", "flag/ES", "flag/LK", "flag/SD", "flag/SR", "flag/SJ", "flag/SZ", "flag/SE", "flag/CH", "flag/SY", "flag/TW", "flag/TJ", "flag/TZ", "flag/TH", "flag/TL", "flag/TG", "flag/TK", "flag/TO", "flag/TT", "flag/TN", "flag/TR", "flag/TM", "flag/TC", "flag/TV", "flag/UG", "flag/UA", "flag/AE", "flag/GB", "flag/US", "flag/UM", "flag/UY", "flag/UZ", "flag/VU", "flag/VE", "flag/VN", "flag/VG", "flag/VI", "flag/WF", "flag/EH", "flag/YE", "flag/ZM", "flag/ZW", "flag/EU", "flag/WRLD"
+        "flag", "flag/AF", "flag/AX", "flag/AL", "flag/DZ", "flag/AS", "flag/AD", "flag/AO", "flag/AI", "flag/AQ", "flag/AG", "flag/AR",
+        "flag/AM", "flag/AW", "flag/AU", "flag/AT", "flag/AZ", "flag/BS", "flag/BH", "flag/BD", "flag/BB", "flag/BY", "flag/BE", "flag/BZ",
+        "flag/BJ", "flag/BM", "flag/BT", "flag/BO", "flag/BQ", "flag/BA", "flag/BW", "flag/BV", "flag/BR", "flag/IO", "flag/BN", "flag/BG",
+        "flag/BF", "flag/BI", "flag/KH", "flag/CM", "flag/CA", "flag/CV", "flag/KY", "flag/CF", "flag/TD", "flag/CL", "flag/CN", "flag/CX",
+        "flag/CC", "flag/CO", "flag/KM", "flag/CG", "flag/CD", "flag/CK", "flag/CR", "flag/CI", "flag/HR", "flag/CU", "flag/CW", "flag/CY",
+        "flag/CZ", "flag/DK", "flag/DJ", "flag/DM", "flag/DO", "flag/EC", "flag/EG", "flag/SV", "flag/GQ", "flag/ER", "flag/EE", "flag/ET",
+        "flag/FK", "flag/FO", "flag/FJ", "flag/FI", "flag/FR", "flag/GF", "flag/PF", "flag/TF", "flag/GA", "flag/GM", "flag/GE", "flag/DE",
+        "flag/GDR", "flag/GH", "flag/GI", "flag/GR", "flag/GL", "flag/GD", "flag/GP", "flag/GU", "flag/GT", "flag/GG", "flag/GN", "flag/GW",
+        "flag/GY", "flag/HT", "flag/HM", "flag/VA", "flag/HN", "flag/HK", "flag/HU", "flag/IS", "flag/IN", "flag/ID", "flag/IR", "flag/IQ",
+        "flag/IE", "flag/IM", "flag/IL", "flag/IT", "flag/JM", "flag/JP", "flag/JE", "flag/JO", "flag/KZ", "flag/KE", "flag/KI", "flag/KP",
+        "flag/KR", "flag/KW", "flag/KG", "flag/LA", "flag/LV", "flag/LB", "flag/LS", "flag/LR", "flag/LY", "flag/LI", "flag/LT", "flag/LU",
+        "flag/MO", "flag/MK", "flag/MG", "flag/MW", "flag/MY", "flag/MV", "flag/ML", "flag/MT", "flag/MH", "flag/MQ", "flag/MR", "flag/MU",
+        "flag/YT", "flag/YU", "flag/MX", "flag/FM", "flag/MD", "flag/MC", "flag/MN", "flag/ME", "flag/MS", "flag/MA", "flag/MZ", "flag/MM",
+        "flag/NA", "flag/NR", "flag/NP", "flag/NL", "flag/NC", "flag/NZ", "flag/NI", "flag/NE", "flag/NG", "flag/NU", "flag/NF", "flag/MP",
+        "flag/NO", "flag/OM", "flag/PK", "flag/PW", "flag/PS", "flag/PA", "flag/PG", "flag/PY", "flag/PE", "flag/PH", "flag/PN", "flag/PL",
+        "flag/PT", "flag/PR", "flag/QA", "flag/RE", "flag/RO", "flag/RU", "flag/SU", "flag/RW", "flag/BL", "flag/SH", "flag/KN", "flag/LC",
+        "flag/MF", "flag/PM", "flag/VC", "flag/WS", "flag/SM", "flag/ST", "flag/SA", "flag/SN", "flag/RS", "flag/SC", "flag/SL", "flag/SG",
+        "flag/SX", "flag/SK", "flag/SI", "flag/SB", "flag/SO", "flag/ZA", "flag/GS", "flag/SS", "flag/ES", "flag/LK", "flag/SD", "flag/SR",
+        "flag/SJ", "flag/SZ", "flag/SE", "flag/CH", "flag/SY", "flag/TW", "flag/TJ", "flag/TZ", "flag/TH", "flag/TL", "flag/TG", "flag/TK",
+        "flag/TO", "flag/TT", "flag/TN", "flag/TR", "flag/TM", "flag/TC", "flag/TV", "flag/UG", "flag/UA", "flag/AE", "flag/GB", "flag/US",
+        "flag/UM", "flag/UY", "flag/UZ", "flag/VU", "flag/VE", "flag/VN", "flag/VG", "flag/VI", "flag/WF", "flag/EH", "flag/YE", "flag/ZM",
+        "flag/ZW", "flag/EU", "flag/WRLD"
     ]
 
-    powers = ["power",  "power/battery", "power/diesel", "power/electric", "power/electric/ac", "power/electric/dc", "power/steam", "power/turbine", "power/maglev", "power/metro"
+    powers = ["power",  "power/battery", "power/diesel", "power/electric", "power/electric/ac", "power/electric/dc",
+              "power/steam", "power/turbine", "power/maglev", "power/metro"
               ]
 
     # currently unusued
-    regions = ["region", "region/africa", "region/africa/eastern", "region/africa/middle", "region/africa/northern", "region/africa/southern", "region/africa/western", "region/america", "region/america/caribbean", "region/america/central", "region/america/northern", "region/america/south", "region/asia", "region/asia/central", "region/asia/eastern", "region/asia/southeastern", "region/asia/southern", "region/asia/western", "region/europe", "region/europe/eastern", "region/europe/northern", "region/europe/southern", "region/europe/western", "region/oceania", "region/oceania/australia_and_new_zealand", "region/oceania/melanesia", "region/oceania/micronesia", "region/oceania/polynesia"
+    regions = ["region", "region/africa", "region/africa/eastern", "region/africa/middle", "region/africa/northern",
+               "region/africa/southern", "region/africa/western", "region/america", "region/america/caribbean", "region/america/central",
+               "region/america/northern", "region/america/south", "region/asia", "region/asia/central", "region/asia/eastern",
+               "region/asia/southeastern", "region/asia/southern", "region/asia/western", "region/europe", "region/europe/eastern",
+               "region/europe/northern", "region/europe/southern", "region/europe/western", "region/oceania",
+               "region/oceania/australia_and_new_zealand", "region/oceania/melanesia", "region/oceania/micronesia", "region/oceania/polynesia"
                ]
 
     # currently unusued
-    roles = ["role", "role/coach__commuter_", "role/coach__express_", "role/coach__hs_", "role/coach__mail_", "role/coach__regional_", "role/commuter___urban", "role/express__passenger_", "role/express__universal_", "role/general_purpose",
-             "role/heavy_freight", "role/light_freight", "role/metro_rapid_transit", "role/powered_unpowered_sundry", "role/regional_passenger", "role/shunter", "role/standard_freight", "role/ultra_high_speed__pax_", "role/ultra_high_speed__universal_", "role/wagon"]
+    roles = ["role",
+             "role/coach__commuter_", "role/coach__express_", "role/coach__hs_",
+             "role/coach__mail_", "role/coach__regional_",
+             "role/commuter_urban", "role/express_passenger",
+             "role/express", "role/universal",
+             "role/heavy_freight", "role/light_freight", "role/metro",
+             # why not shunter (noun) is beyond my comprehension.
+             "role/powered_unpowered_sundry", "role/regional_passenger", "role/shunting",
+             "role/freight", "role/ultra_high_speed__pax_", "role/ultra_high_speed__universal_", "role/wagon"
+             ]
 
     for power in powers:
         power_underlined = power.replace('/', '_')

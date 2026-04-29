@@ -44,7 +44,7 @@ item(FEAT_TRAINS, item_mtro_russia_moscow_81_720) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/asia", "flag/RU", "power/metro", "role/metro_rapid_transit"];
+	badges: ["region/asia", "flag/RU", "power/metro", "role/metro"];
 
     }
     graphics {

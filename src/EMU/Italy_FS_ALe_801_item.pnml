@@ -58,7 +58,7 @@ item(FEAT_TRAINS, item_emu_italy_fs_ale_801) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/europe/southern", "flag/IT", "power/electric/dc", "role/commuter___urban"];
+	badges: ["region/europe/southern", "flag/IT", "power/electric/dc", "role/commuter_urban"];
 
     }
     graphics {

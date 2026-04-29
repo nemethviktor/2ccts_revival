@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_steam_belgium_le_belge) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/europe/western", "flag/BE", "power/steam", "role/shunter"];
+	badges: ["region/europe/western", "flag/BE", "power/steam", "role/shunting"];
 
     }
     graphics {

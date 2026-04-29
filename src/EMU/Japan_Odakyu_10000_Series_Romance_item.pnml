@@ -58,7 +58,7 @@ item(FEAT_TRAINS, item_emu_japan_odakyu_10000_series_romance) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/asia", "flag/JP", "power/electric/dc", "role/commuter___urban"];
+	badges: ["region/asia", "flag/JP", "power/electric/dc", "role/commuter_urban"];
 
     }
     graphics {

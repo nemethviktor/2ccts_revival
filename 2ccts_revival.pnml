@@ -627,8 +627,8 @@
 #include "src/Diesel/Canada_CNR_9000_graphics.pnml"
 #include "src/Diesel/Canada_CNR_9000_item.pnml"
 
-#include "src/Diesel/UK_LMS_7051_Diesel_Shunter_graphics.pnml"
-#include "src/Diesel/UK_LMS_7051_Diesel_Shunter_item.pnml"
+#include "src/Diesel/UK_LMS_7051_diesel_shunter_graphics.pnml"
+#include "src/Diesel/UK_LMS_7051_diesel_shunter_item.pnml"
 
 #include "src/Diesel/USA_Rock_Island_EMC_TA_graphics.pnml"
 #include "src/Diesel/USA_Rock_Island_EMC_TA_item.pnml"

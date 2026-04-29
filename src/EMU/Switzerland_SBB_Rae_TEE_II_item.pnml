@@ -62,7 +62,7 @@ item(FEAT_TRAINS, item_emu_switzerland_sbb_rae_tee_ii) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/europe/western", "flag/CH", "power/electric", "role/express__passenger_"];
+	badges: ["region/europe/western", "flag/CH", "power/electric", "role/express_passenger"];
 
     }
     graphics {
