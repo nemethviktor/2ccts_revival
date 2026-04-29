@@ -6589,7 +6589,7 @@ item(FEAT_TRAINS, item_mtro_germany_berlin_u_bahn_ik, 9054) {}
 item(FEAT_TRAINS, item_mtro_usa_chicago_l_6000, 9055) {}
 item(FEAT_TRAINS, item_mtro_usa_brooklyn_union_gate_car, 9056) {}
 item(FEAT_TRAINS, item_mtro_uk_london_1992_stock, 9057) {}
-// 9058 free
+item(FEAT_TRAINS, item_mtro_uk_london_s_stock, 9058) {}
 // 9059 free
 // 9060 free
 // 9061 free

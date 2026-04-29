@@ -1065,6 +1065,7 @@ str_mtro_brazil_recife_vlt_mobile_3                               :Recife VLT Mo
 # str_mtro_usa_chicago_l_6000                                       : not translated
 # str_mtro_usa_brooklyn_union_gate_car                              : not translated
 # str_mtro_uk_london_1992_stock                                     : not translated
+# str_mtro_uk_london_s_stock                                        : not translated
 str_mtro_metro_wagon_unpowered                                    :Unitat de Vagó de Metro (Sense alimentació)
 str_mtro_metro_wagon_powered                                      :Unitat de Vagó de Metro (Alimentat)
 

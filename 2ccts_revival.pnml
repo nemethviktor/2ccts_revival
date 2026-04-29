@@ -1621,6 +1621,9 @@
 #include "src/Electric/UK_London_1992_Stock_graphics.pnml"
 #include "src/Electric/UK_London_1992_Stock_item.pnml"
 
+#include "src/Electric/UK_London_S_Stock_graphics.pnml"
+#include "src/Electric/UK_London_S_Stock_item.pnml"
+
 
 //// MAGLEV
 #include "src/Maglev/China_Transrapid_graphics.pnml"

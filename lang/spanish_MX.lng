@@ -1065,6 +1065,7 @@ str_mtro_germany_berlin_u_bahn_ik                                 :U-Bahn IK (Me
 str_mtro_usa_chicago_l_6000                                       :Serie L 6000 (Metro, Eléctrica 3rd Rail)
 # str_mtro_usa_brooklyn_union_gate_car                              : not translated
 # str_mtro_uk_london_1992_stock                                     : not translated
+# str_mtro_uk_london_s_stock                                        : not translated
 str_mtro_metro_wagon_unpowered                                    :Coche de metro (remolque)
 str_mtro_metro_wagon_powered                                      :Coche de metro (motriz)
 

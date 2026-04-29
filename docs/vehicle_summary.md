@@ -631,7 +631,7 @@
 | ![Tokyo S01](vehicle_graphics/str_mtro_japan_tokyo_s01.png) | Tokyo S01 | 1985 | 80 | 640 | Metro/Rapid Transit | 200 | STANDARD_3RD | Asia |
 | ![London DLR P86](vehicle_graphics/str_mtro_uk_dlr_p86.png) | London DLR P86 | 1986 | 80 | 640 | Metro/Rapid Transit | 284 | STANDARD_3RD | Northern Europe |
 | ![Cairo Kinki Sharyo](vehicle_graphics/str_mtro_egypt_cairo_1987_stock.png) | Cairo Kinki Sharyo | 1987 | 100 | 1450 | Metro/Rapid Transit | 330 | STANDARD_3RD | Africa |
-| ![London 1992 Stock](vehicle_graphics/str_mtro_uk_london_1992_stock.png) | London 1992 Stock | 1992 | 100 | 2317 | Metro/Rapid Transit | 260 | STANDARD_4TH | Northern Europe |
+| ![London 1992 Stock](vehicle_graphics/str_mtro_uk_london_1992_stock.png) | London 1992 Stock | 1992 | 100 | 1700 | Metro/Rapid Transit | 260 | STANDARD_4TH | Northern Europe |
 | ![Taipei C301](vehicle_graphics/str_mtro_taiwan_taipei_c301.png) | Taipei C301 | 1992 | 80 | 1550 | Metro/Rapid Transit | 310 | STANDARD_3RD | Asia |
 | ![Moscow 81-717.5M](vehicle_graphics/str_mtro_russia_moscow_81_7175m.png) | Moscow 81-717.5M | 1993 | 90 | 1180 | Metro/Rapid Transit | 288 | BROAD_3RD | Asia |
 | ![LA A650](vehicle_graphics/str_mtro_usa_la_a650.png) | LA A650 | 1993 | 70 | 1250 | Metro/Rapid Transit | 300 | STANDARD_3RD | North America |
@@ -648,6 +648,7 @@
 | ![Oslo MX3000](vehicle_graphics/str_mtro_norway_oslo_mx3000.png) | Oslo MX3000 | 2007 | 80 | 1500 | Metro/Rapid Transit | 328 | STANDARD_3RD | Northern Europe |
 | ![Recife VLT Mobile 3](vehicle_graphics/str_mtro_brazil_recife_vlt_mobile_3.png) | Recife VLT Mobile 3 | 2008 | 80 | 1000 | Metro/Rapid Transit | 300 | STANDARD_3RD | South America |
 | ![Osaka 30000](vehicle_graphics/str_mtro_japan_osaka_30000.png) | Osaka 30000 | 2009 | 70 | 1820 | Metro/Rapid Transit | 280 | STANDARD_3RD | Asia |
+| ![London S Stock](vehicle_graphics/str_mtro_uk_london_s_stock.png) | London S Stock | 2010 | 100 | 2000 | Metro/Rapid Transit | 336 | STANDARD_4TH | Northern Europe |
 | ![Algiers CAF 2011 Stock](vehicle_graphics/str_mtro_algeria_algiers_caf_2011_stock.png) | Algiers CAF 2011 Stock | 2011 | 80 | 1450 | Metro/Rapid Transit | 330 | STANDARD_3RD | Africa |
 | ![Singapore C151A](vehicle_graphics/str_mtro_singapore_singapore_c151a.png) | Singapore C151A | 2012 | 90 | 1580 | Metro/Rapid Transit | 324 | STANDARD_3RD | Asia |
 | ![Washington 7000](vehicle_graphics/str_mtro_usa_washington_7000.png) | Washington 7000 | 2013 | 90 | 1520 | Metro/Rapid Transit | 350 | STANDARD_3RD | North America |
