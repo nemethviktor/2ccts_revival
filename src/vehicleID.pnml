@@ -12594,7 +12594,7 @@ item(FEAT_TRAINS, item_mglv_wagon_gen7m_superheavy_flatcar, 18012) {}
 item(FEAT_TRAINS, item_mglv_wagon_gen7m_boxcar_type2, 18013) {}
 item(FEAT_TRAINS, item_mglv_wagon_gen7m_silo_type2, 18014) {}
 item(FEAT_TRAINS, item_mglv_wagon_gen7m_hopper_type2, 18015) {}
-item(FEAT_TRAINS, item_mu_wagon_gen7m_livestock_van, 18016) {}
+item(FEAT_TRAINS, item_mglv_wagon_gen7m_livestock_van, 18016) {}
 // 18017 free
 // 18018 free
 // 18019 free

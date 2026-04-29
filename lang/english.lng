@@ -1288,4 +1288,4 @@ str_mglv_wagon_gen7m_superheavy_flatcar                           :7th Gen Super
 str_mglv_wagon_gen7m_boxcar_type2                                 :7th Gen Boxcar [Non-Food]
 str_mglv_wagon_gen7m_silo_type2                                   :7th Gen Silo [Non-Food]
 str_mglv_wagon_gen7m_hopper_type2                                 :7th Gen Self-discharging Hopper [Non-Food]
-str_mu_wagon_gen7m_livestock_van                                  :7th Gen Livestock Van
+str_mglv_wagon_gen7m_livestock_van                                :7th Gen Livestock Van
