@@ -621,9 +621,10 @@
 | ![Munchen MVG A2](vehicle_graphics/str_mtro_germany_munchen_mvg_a2.png) | Munchen MVG A2 | 1971 | 80 | 965 | Metro/Rapid Transit | 290 | STANDARD_3RD | Western Europe |
 | ![New York R44](vehicle_graphics/str_mtro_usa_ny_r44.png) | New York R44 | 1971 | 110 | 920 | Metro/Rapid Transit | 300 | STANDARD_3RD | North America |
 | ![Prague ECS Set](vehicle_graphics/str_mtro_czech_republic_prague_ecs_set.png) | Prague ECS Set | 1972 | 80 | 910 | Metro/Rapid Transit | 262 | STANDARD_3RD | Eastern Europe |
+| ![London 1972 Stock](vehicle_graphics/str_mtro_uk_london_1972_stock.png) | London 1972 Stock | 1972 | 72 | 1400 | Metro/Rapid Transit | 242 | STANDARD_4TH | Northern Europe |
 | ![Amsterdam M1](vehicle_graphics/str_mtro_netherlands_amsterdam_type_m1.png) | Amsterdam M1 | 1973 | 80 | 1050 | Metro/Rapid Transit | 300 | STANDARD_3RD | Western Europe |
-| ![Madrid Series 5000](vehicle_graphics/str_mtro_spain_madrid_series_5000.png) | Madrid Series 5000 | 1974 | 80 | 1100 | Metro/Rapid Transit | 320 | STANDARD_3RD | Southern Europe |
 | ![Stockholm C8](vehicle_graphics/str_mtro_sweden_stockholm_c8.png) | Stockholm C8 | 1974 | 90 | 860 | Metro/Rapid Transit | 300 | STANDARD_3RD | Northern Europe |
+| ![Madrid Series 5000](vehicle_graphics/str_mtro_spain_madrid_series_5000.png) | Madrid Series 5000 | 1974 | 80 | 1100 | Metro/Rapid Transit | 320 | STANDARD_3RD | Southern Europe |
 | ![Budapest Ev3](vehicle_graphics/str_mtro_hungary_budapest_ev3_200.png) | Budapest Ev3 | 1975 | 90 | 770 | Metro/Rapid Transit | 264 | STANDARD_3RD | Eastern Europe |
 | ![Helsinki M100](vehicle_graphics/str_mtro_finland_helsinki_m100.png) | Helsinki M100 | 1977 | 90 | 1340 | Metro/Rapid Transit | 288 | STANDARD_3RD | Northern Europe |
 | ![Sao Paulo Serie 5500](vehicle_graphics/str_mtro_brazil_sao_paulo_serie_5500.png) | Sao Paulo Serie 5500 | 1979 | 100 | 1530 | Metro/Rapid Transit | 320 | BROAD_3RD | South America |
@@ -634,11 +635,11 @@
 | ![London 1992 Stock](vehicle_graphics/str_mtro_uk_london_1992_stock.png) | London 1992 Stock | 1992 | 100 | 1700 | Metro/Rapid Transit | 260 | STANDARD_4TH | Northern Europe |
 | ![Taipei C301](vehicle_graphics/str_mtro_taiwan_taipei_c301.png) | Taipei C301 | 1992 | 80 | 1550 | Metro/Rapid Transit | 310 | STANDARD_3RD | Asia |
 | ![Moscow 81-717.5M](vehicle_graphics/str_mtro_russia_moscow_81_7175m.png) | Moscow 81-717.5M | 1993 | 90 | 1180 | Metro/Rapid Transit | 288 | BROAD_3RD | Asia |
-| ![LA A650](vehicle_graphics/str_mtro_usa_la_a650.png) | LA A650 | 1993 | 70 | 1250 | Metro/Rapid Transit | 300 | STANDARD_3RD | North America |
 | ![Boston 01800](vehicle_graphics/str_mtro_usa_boston_01800.png) | Boston 01800 | 1993 | 80 | 910 | Metro/Rapid Transit | 310 | STANDARD_3RD | North America |
+| ![LA A650](vehicle_graphics/str_mtro_usa_la_a650.png) | LA A650 | 1993 | 70 | 1250 | Metro/Rapid Transit | 300 | STANDARD_3RD | North America |
 | ![Santiago NS-93](vehicle_graphics/str_mtro_chile_santiago_ns_93.png) | Santiago NS-93 | 1996 | 100 | 2400 | Metro/Rapid Transit | 320 | STANDARD_3RD | South America |
-| ![Amsterdam S3 CAF 90](vehicle_graphics/str_mtro_netherlands_amsterdam_caf_90.png) | Amsterdam S3 CAF 90 | 1997 | 70 | 1020 | Metro/Rapid Transit | 250 | STANDARD_DUAL | Western Europe |
 | ![Paris MP89](vehicle_graphics/str_mtro_france_paris_mp89.png) | Paris MP89 | 1997 | 80 | 2680 | Metro/Rapid Transit | 240 | STANDARD_3RD | Western Europe |
+| ![Amsterdam S3 CAF 90](vehicle_graphics/str_mtro_netherlands_amsterdam_caf_90.png) | Amsterdam S3 CAF 90 | 1997 | 70 | 1020 | Metro/Rapid Transit | 250 | STANDARD_DUAL | Western Europe |
 | ![Buenos Aires Serie 1200](vehicle_graphics/str_mtro_argentina_buenos_aires_serie_1200.png) | Buenos Aires Serie 1200 | 1999 | 75 | 640 | Metro/Rapid Transit | 230 | STANDARD_3RD | South America |
 | ![Rome S/300](vehicle_graphics/str_mtro_italy_rome_s_300.png) | Rome S/300 | 1999 | 80 | 1650 | Metro/Rapid Transit | 420 | STANDARD_3RD | Southern Europe |
 | ![Pyongyang D stock](vehicle_graphics/str_mtro_north_korea_pyongyang_d_stock.png) | Pyongyang D stock | 1999 | 70 | 800 | Metro/Rapid Transit | 320 | STANDARD_3RD | Asia |

@@ -1067,6 +1067,7 @@ str_mtro_usa_chicago_l_6000                                       :Chicago L 600
 # str_mtro_usa_brooklyn_union_gate_car                              : not translated
 # str_mtro_uk_london_1992_stock                                     : not translated
 # str_mtro_uk_london_s_stock                                        : not translated
+# str_mtro_uk_london_1972_stock                                     : not translated
 str_mtro_metro_wagon_unpowered                                    :Carrozza della metropolitana (non motorizzata)
 str_mtro_metro_wagon_powered                                      :Carrozza della metropolitana (motorizzata)
 

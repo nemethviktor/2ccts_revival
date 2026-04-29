@@ -9,6 +9,7 @@
 - VEHICLES CHANGES:
 	- Renamed various items (see relevant commit messages)
 	- Fixed a the sprite for `DB 17.0-1 'Prussian S 10'` that I broke the last time
+	- Added `London Underground 1972 Stock`
 	- Added `London Underground 1992 Stock`
 	- Added `London Underground S Stock`
 	- Changed cargo wagons to be all-region. Having split boxcars and silos into food/nonfood the regional splits weren't viable any longer.

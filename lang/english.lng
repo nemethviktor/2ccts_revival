@@ -1064,6 +1064,7 @@ str_mtro_usa_chicago_l_6000                                       :Chicago L 600
 str_mtro_usa_brooklyn_union_gate_car                              :Brooklyn Union Gate Elevated (Metro, Electric 3rd Rail)
 str_mtro_uk_london_1992_stock                                     :London 1992 Stock (Metro, Electric 4th Rail)
 str_mtro_uk_london_s_stock                                        :London S Stock (Metro, Electric 4th Rail)
+str_mtro_uk_london_1972_stock                                     :London 1972 Stock (Metro, Electric 4th Rail)
 str_mtro_metro_wagon_unpowered                                    :Metro Unit Wagon (Unpowered)
 str_mtro_metro_wagon_powered                                      :Metro Unit Wagon (Powered)
 
