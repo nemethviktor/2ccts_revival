@@ -531,27 +531,28 @@
 | ![NZR EM/ET](vehicle_graphics/str_emu_new_zealand_nzr_em_et_class.png) | NZR EM/ET | 1979 | 95 | 540 | Commuter/Urban | 148 | NARROW_1500V, IS_NARROW | Oceania |
 | ![NS ICM 4000](vehicle_graphics/str_emu_netherlands_ns_icm_4000.png) | NS ICM 4000 | 1979 | 140 | 1720 | Commuter/Urban | 204 | STANDARD_1500V, IS_STANDARD | Western Europe |
 | ![Macedonian Railways 412](vehicle_graphics/str_emu_macedonia_macedonian_railways_412.png) | Macedonian Railways 412 | 1980 | 120 | 340 | Commuter/Urban | 136 | STANDARD_25KV, IS_STANDARD | Southern Europe |
+| ![Comeng EMU](vehicle_graphics/str_emu_australia_comeng_emu.png) | Comeng EMU | 1981 | 115 | 885 | Commuter/Urban | 254 | BROAD_1500V, IS_BROAD | Oceania |
 | ![SNCF TGV Sud-Est](vehicle_graphics/str_emu_france_sncf_tgv_sud_est.png) | SNCF TGV Sud-Est | 1981 | 240 | 9119 | Express | 0 | STANDARD_OHLE, IS_STANDARD | Western Europe |
+| ![SNCFT YZ-E](vehicle_graphics/str_emu_tunisia_sncft_yz_e.png) | SNCFT YZ-E | 1984 | 120 | 2010 | Express Passenger | 300 | NARROW_25KV, IS_NARROW | Africa |
 | ![SBB RBDe 560](vehicle_graphics/str_emu_switzerland_sbb_rbde_560.png) | SBB RBDe 560 | 1984 | 140 | 2210 | Commuter/Urban | 112 | STANDARD_15KV, IS_STANDARD | Western Europe |
 | ![ONCF ZMC](vehicle_graphics/str_emu_morocco_oncf_zmc.png) | ONCF ZMC | 1984 | 160 | 1900 | Express Passenger | 180 | STANDARD_3KV, IS_STANDARD | Africa |
-| ![SNCFT YZ-E](vehicle_graphics/str_emu_tunisia_sncft_yz_e.png) | SNCFT YZ-E | 1984 | 120 | 2010 | Express Passenger | 300 | NARROW_25KV, IS_NARROW | Africa |
 | ![Odakyu 10000 Series 'Romance'](vehicle_graphics/str_emu_japan_odakyu_10000_series_romance.png) | Odakyu 10000 Series 'Romance' | 1986 | 110 | 1550 | Express Passenger | 92 | NARROW_1500V, IS_NARROW | Asia |
 | ![MAV BDVmot](vehicle_graphics/str_emu_hungary_mav_bdvmot.png) | MAV BDVmot | 1988 | 120 | 2040 | Commuter/Urban | 172 | STANDARD_25KV, IS_STANDARD | Eastern Europe |
 | ![SJ X2000](vehicle_graphics/str_emu_sweden_sj_x2000.png) | SJ X2000 | 1990 | 200 | 4400 | Express | 0 | STANDARD_OHLE, IS_STANDARD | Northern Europe |
 | ![FS ETR.500 'Frecciarossa'](vehicle_graphics/str_emu_italy_fs_etr500.png) | FS ETR.500 'Frecciarossa' | 1993 | 250 | 11800 | Express | 0 | STANDARD_3KV, IS_STANDARD | Southern Europe |
-| ![NS DD-IRM 'VIRM' 8xxx](vehicle_graphics/str_emu_netherlands_ns_dd_irm_virm.png) | NS DD-IRM 'VIRM' 8xxx | 1994 | 140 | 1720 | Commuter/Urban | 190 | STANDARD_1500V, IS_STANDARD | Western Europe |
 | ![JR Shinkansen Series E1 Max](vehicle_graphics/str_emu_japan_jr_shinkansen_series_e1_max.png) | JR Shinkansen Series E1 Max | 1994 | 240 | 2790 | Express Passenger | 160 | STANDARD_25KV, IS_STANDARD | Asia |
-| ![Thalys PBKA](vehicle_graphics/str_emu_france_thalys_pbka.png) | Thalys PBKA | 1995 | 300 | 11800 | Ultra-High-Speed (Universal) | 0 | STANDARD_OHLE, IS_STANDARD | Western Europe |
+| ![NS DD-IRM 'VIRM' 8xxx](vehicle_graphics/str_emu_netherlands_ns_dd_irm_virm.png) | NS DD-IRM 'VIRM' 8xxx | 1994 | 140 | 1720 | Commuter/Urban | 190 | STANDARD_1500V, IS_STANDARD | Western Europe |
 | ![SNCF TGV Duplex](vehicle_graphics/str_emu_france_sncf_tgv_duplex.png) | SNCF TGV Duplex | 1995 | 320 | 11800 | Ultra-High-Speed (Universal) | 0 | STANDARD_OHLE, IS_STANDARD | Western Europe |
-| ![FS ALe 426](vehicle_graphics/str_emu_italy_fs_ale426.png) | FS ALe 426 | 1996 | 140 | 2508 | Commuter/Urban | 204 | STANDARD_3KV, IS_STANDARD | Southern Europe |
+| ![Thalys PBKA](vehicle_graphics/str_emu_france_thalys_pbka.png) | Thalys PBKA | 1995 | 300 | 11800 | Ultra-High-Speed (Universal) | 0 | STANDARD_OHLE, IS_STANDARD | Western Europe |
 | ![DSB S-Tog IV](vehicle_graphics/str_emu_denmark_dsb_s_tog_iv.png) | DSB S-Tog IV | 1996 | 120 | 1150 | Commuter/Urban | 180 | STANDARD_1500V, IS_STANDARD | Northern Europe |
-| ![JR Shinkansen Series 700](vehicle_graphics/str_emu_japan_jr_shinkansen_series_700.png) | JR Shinkansen Series 700 | 1997 | 270 | 1810 | Express Passenger | 130 | STANDARD_25KV, IS_STANDARD | Asia |
+| ![FS ALe 426](vehicle_graphics/str_emu_italy_fs_ale426.png) | FS ALe 426 | 1996 | 140 | 2508 | Commuter/Urban | 204 | STANDARD_3KV, IS_STANDARD | Southern Europe |
 | ![NS mDDm 390](vehicle_graphics/str_emu_netherlands_ns_mddm_390.png) | NS mDDm 390 | 1997 | 160 | 3219 | Express Passenger | 128 | STANDARD_1500V, IS_STANDARD | Western Europe |
+| ![JR Shinkansen Series 700](vehicle_graphics/str_emu_japan_jr_shinkansen_series_700.png) | JR Shinkansen Series 700 | 1997 | 270 | 1810 | Express Passenger | 130 | STANDARD_25KV, IS_STANDARD | Asia |
 | ![Queensland Rail Tilt Train](vehicle_graphics/str_emu_australia_queensland_rail_tilt_train.png) | Queensland Rail Tilt Train | 1997 | 160 | 1820 | Ultra-High-Speed (Pax) | 94 | NARROW_25KV, IS_NARROW | Oceania |
 | ![NSB BM73](vehicle_graphics/str_emu_norway_nsb_bm73.png) | NSB BM73 | 1998 | 210 | 2332 | Express Passenger | 108 | STANDARD_15KV, IS_STANDARD | Northern Europe |
-| ![Amtrak Acela Express](vehicle_graphics/str_emu_usa_amtrak_acela_express.png) | Amtrak Acela Express | 1999 | 240 | 6200 | Express | 0 | STANDARD_OHLE, IS_STANDARD | North America |
 | ![CFL 2200 'Coradia Duplex'](vehicle_graphics/str_emu_luxembourg_cfl_2200_coradia_duplex.png) | CFL 2200 'Coradia Duplex' | 1999 | 160 | 3410 | Express Passenger | 222 | STANDARD_OHLE, IS_STANDARD | Western Europe |
 | ![VR Sm4](vehicle_graphics/str_emu_finland_vr_sm4.png) | VR Sm4 | 1999 | 160 | 1636 | Ultra-High-Speed (Pax) | 184 | NARROW_25KV, IS_NARROW | Northern Europe |
+| ![Amtrak Acela Express](vehicle_graphics/str_emu_usa_amtrak_acela_express.png) | Amtrak Acela Express | 1999 | 240 | 6200 | Express | 0 | STANDARD_OHLE, IS_STANDARD | North America |
 | ![CD 680 'Pendolino'](vehicle_graphics/str_emu_czech_republic_cd_680_pendolino.png) | CD 680 'Pendolino' | 1999 | 200 | 1318 | Express Passenger | 94 | STANDARD_OHLE, IS_STANDARD | Eastern Europe |
 | ![DB 403 'ICE3'](vehicle_graphics/str_emu_germany_db_403_ice_3.png) | DB 403 'ICE3' | 2000 | 328 | 10728 | Ultra-High-Speed (Pax) | 110 | STANDARD_15KV, IS_STANDARD | Western Europe |
 | ![RENFE 120](vehicle_graphics/str_emu_spain_renfe_120.png) | RENFE 120 | 2001 | 250 | 2680 | Express Passenger | 120 | STANDARD_OHLE, BROAD_OHLE, IS_STANDARD, IS_BROAD | Southern Europe |
@@ -560,16 +561,16 @@
 | ![EFE X'Trapolis 100](vehicle_graphics/str_emu_chile_efe_xtrapolis_100.png) | EFE X'Trapolis 100 | 2005 | 130 | 1930 | Commuter/Urban | 144 | BROAD_1500V, IS_BROAD | South America |
 | ![BDZ 10 'Desiro'](vehicle_graphics/str_emu_bulgaria_bdz_10_desiro.png) | BDZ 10 'Desiro' | 2005 | 120 | 1740 | Commuter/Urban | 190 | STANDARD_25KV, IS_STANDARD | Eastern Europe |
 | ![Sydney Trains OSCars](vehicle_graphics/str_emu_australia_sydney_trains_oscars.png) | Sydney Trains OSCars | 2007 | 130 | 2144 | Commuter/Urban | 240 | STANDARD_1500V, IS_STANDARD | Oceania |
-| ![Gautrain Electrostar](vehicle_graphics/str_emu_south_africa_gautrain_electrostar.png) | Gautrain Electrostar | 2010 | 160 | 2253 | Express Passenger | 128 | STANDARD_25KV, IS_STANDARD | Africa |
 | ![China Railways CHR380A](vehicle_graphics/str_emu_china_railways_chr380a.png) | China Railways CHR380A | 2010 | 350 | 3210 | Ultra-High-Speed (Pax) | 140 | STANDARD_25KV, IS_STANDARD | Asia |
-| ![NTV AGV](vehicle_graphics/str_emu_italy_ntv_agv.png) | NTV AGV | 2011 | 360 | 2040 | Ultra-High-Speed (Pax) | 84 | STANDARD_OHLE, IS_STANDARD | Southern Europe |
-| ![WESTbahn 4010 'KISS'](vehicle_graphics/str_emu_austria_westbahn_4010_kiss.png) | WESTbahn 4010 'KISS' | 2011 | 200 | 5340 | Express Passenger | 120 | STANDARD_OHLE, IS_STANDARD | Western Europe |
-| ![Sydney Trains A Set 'Waratah'](vehicle_graphics/str_emu_australia_sydney_trains_a_set_waratah.png) | Sydney Trains A Set 'Waratah' | 2011 | 130 | 3920 | Commuter/Urban | 220 | STANDARD_1500V, IS_STANDARD | Oceania |
+| ![Gautrain Electrostar](vehicle_graphics/str_emu_south_africa_gautrain_electrostar.png) | Gautrain Electrostar | 2010 | 160 | 2253 | Express Passenger | 128 | STANDARD_25KV, IS_STANDARD | Africa |
 | ![RZD ES1 'Lastochka'](vehicle_graphics/str_emu_russia_rzd_es1_lastochka.png) | RZD ES1 'Lastochka' | 2011 | 160 | 2700 | Express Passenger | 134 | BROAD_OHLE, IS_BROAD | Asia |
-| ![NS 4800 HSA 'Fyra'](vehicle_graphics/str_emu_netherlands_ns_4800_hsa.png) | NS 4800 HSA 'Fyra' | 2012 | 300 | 4426 | Ultra-High-Speed (Pax) | 84 | STANDARD_OHLE, IS_STANDARD | Western Europe |
+| ![Sydney Trains A Set 'Waratah'](vehicle_graphics/str_emu_australia_sydney_trains_a_set_waratah.png) | Sydney Trains A Set 'Waratah' | 2011 | 130 | 3920 | Commuter/Urban | 220 | STANDARD_1500V, IS_STANDARD | Oceania |
+| ![WESTbahn 4010 'KISS'](vehicle_graphics/str_emu_austria_westbahn_4010_kiss.png) | WESTbahn 4010 'KISS' | 2011 | 200 | 5340 | Express Passenger | 120 | STANDARD_OHLE, IS_STANDARD | Western Europe |
+| ![NTV AGV](vehicle_graphics/str_emu_italy_ntv_agv.png) | NTV AGV | 2011 | 360 | 2040 | Ultra-High-Speed (Pax) | 84 | STANDARD_OHLE, IS_STANDARD | Southern Europe |
 | ![NS Hispeed V250 'Albatros'](vehicle_graphics/str_emu_netherlands_ns_hispeed_v250_albatros.png) | NS Hispeed V250 'Albatros' | 2012 | 251 | 3620 | Express Passenger | 142 | STANDARD_OHLE, IS_STANDARD | Western Europe |
-| ![HZ 6112](vehicle_graphics/str_emu_croatia_hz_6112.png) | HZ 6112 | 2015 | 160 | 2700 | Express Passenger | 120 | BROAD_25KV, IS_BROAD | Eastern Europe |
+| ![NS 4800 HSA 'Fyra'](vehicle_graphics/str_emu_netherlands_ns_4800_hsa.png) | NS 4800 HSA 'Fyra' | 2012 | 300 | 4426 | Ultra-High-Speed (Pax) | 84 | STANDARD_OHLE, IS_STANDARD | Western Europe |
 | ![NTV AGV Duplex](vehicle_graphics/str_emu_italy_ntv_agv_duplex.png) | NTV AGV Duplex | 2015 | 360 | 3104 | Ultra-High-Speed (Pax) | 160 | STANDARD_OHLE, IS_STANDARD | Southern Europe |
+| ![HZ 6112](vehicle_graphics/str_emu_croatia_hz_6112.png) | HZ 6112 | 2015 | 160 | 2700 | Express Passenger | 120 | BROAD_25KV, IS_BROAD | Eastern Europe |
 | ![Sureot](vehicle_graphics/str_emu_europe_sureot.png) | Sureot | 2030 | 300 | 16000 | Ultra-High-Speed (Pax) | 170 | STANDARD_25KV, IS_STANDARD | Southern Europe, Eastern Europe, Western Europe, Northern Europe |
 
 ## MAGLEVENGINE

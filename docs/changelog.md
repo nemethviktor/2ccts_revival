@@ -21,7 +21,8 @@
 	- Added and recoloured a number of vehicles from Ragan's set (with permission)
 		- `Singapore C151`
 		- `Singapore C751B`
-		- `Comeng Light Metro Prototype` (Concept)
+		- `Comeng Light Metro Prototype` (Concept, 3rd Rail)
+		- `Comeng EMU` (1500V DC)
 
 
 **3.3-RC2 [20260427]**

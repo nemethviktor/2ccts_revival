@@ -1064,6 +1064,9 @@
 #include "src/EMU/Europe_Sureot_graphics.pnml"
 #include "src/EMU/Europe_Sureot_item.pnml"
 
+#include "src/EMU/Australia_Comeng_EMU_graphics.pnml"
+#include "src/EMU/Australia_Comeng_EMU_item.pnml"
+
 
 //// ELECTRIC
 #include "src/Electric/Switzerland_RhB_DE_2_2_graphics.pnml"

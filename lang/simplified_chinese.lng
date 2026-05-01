@@ -995,6 +995,7 @@ str_emu_austria_westbahn_4010_kiss                                :西部铁路 
 str_emu_croatia_hz_6112                                           :克铁HZ 6112 (电力动车, 25kV AC)
 str_emu_china_railways_chr380a                                    :中铁CR CRH380A (电力动车, 25kV AC)
 str_emu_europe_sureot                                             :Sureot (电力动车, 25kV AC)
+# str_emu_australia_comeng_emu                                      : not translated
 # str_cargoemu_japan_jr_freight_m250                                : not translated
 
 # Maglevengine
