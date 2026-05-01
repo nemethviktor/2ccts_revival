@@ -17,6 +17,7 @@
 	- Changed cargo wagons to be all-region. Having split boxcars and silos into food/nonfood the regional splits weren't viable any longer.
 	- Standardised some of the vehicle roles
 	- Renamed `Amtrak Charger` to `Amtrak Charger ALC-42`
+	- Changed the graphics of `Ghana Railways 1400 EMD TT12` (+ rename)
 
 
 **3.3-RC2 [20260427]**

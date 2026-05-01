@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A.
+// Template: TPL_16A.
 // Data from: https://rixke.tassignon.be/spip.php?article814
 
 item(FEAT_TRAINS, item_diesel_ghana_railway_corporation_class_tt12) {
@@ -48,13 +48,13 @@ item(FEAT_TRAINS, item_diesel_ghana_railway_corporation_class_tt12) {
     }
     graphics {
         purchase: spriteset_diesel_ghana_railway_corporation_class_tt12_purchase;
-        // no 'visual_effect' or 'visual_effect_and_powered'
-        // no 'length'
-        // no 'articulated_part'
+        visual_effect_and_powered: switch_diesel_ghana_railway_corporation_class_tt12_visual_effect;
+        length: switch_diesel_ghana_railway_corporation_class_tt12_length;
+        articulated_part: switch_diesel_ghana_railway_corporation_class_tt12_articulated;
         can_attach_wagon: switch_can_attach_vehicle;
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
         // PURCHASETEXT_SWITCH_CALL // this is actually blank
-        default: spriteset_diesel_ghana_railway_corporation_class_tt12;
+        default: switch_diesel_ghana_railway_corporation_class_tt12_position;
     }
 }

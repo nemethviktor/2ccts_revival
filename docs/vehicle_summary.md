@@ -132,7 +132,7 @@
 | ![CD 720 ChME2](vehicle_graphics/str_diesel_czech_republic_cd_720_chme2.png) | CD 720 ChME2 | 1958 | 80 | 740 | Universal | 0 | STANDARD_NONE, IS_STANDARD | Eastern Europe |
 | ![VR Dr12](vehicle_graphics/str_diesel_finland_vr_dr12.png) | VR Dr12 | 1959 | 120 | 1900 | Universal | 0 | BROAD_NONE, IS_BROAD | Northern Europe |
 | ![CFR 060-DA](vehicle_graphics/str_diesel_romania_cfr_060_da.png) | CFR 060-DA | 1959 | 100 | 2070 | Universal | 0 | STANDARD_NONE, IS_STANDARD | Eastern Europe |
-| ![Ghana Rwy Corp Class TT12](vehicle_graphics/str_diesel_ghana_railway_corporation_class_tt12.png) | Ghana Rwy Corp Class TT12 | 1959 | 100 | 1425 | Express | 0 | NARROW_NONE, IS_NARROW | Africa |
+| ![Ghana Railways 1400 EMD TT12](vehicle_graphics/str_diesel_ghana_railway_corporation_class_tt12.png) | Ghana Railways 1400 EMD TT12 | 1959 | 100 | 1425 | Express | 0 | NARROW_NONE, IS_NARROW | Africa |
 | ![Zimbabwe Railways DH-1](vehicle_graphics/str_diesel_zimbabwe_zimbabwe_railways_dh_1.png) | Zimbabwe Railways DH-1 | 1959 | 89 | 1316 | Universal | 0 | NARROW_NONE, IS_NARROW | Africa |
 | ![RZD TEP60](vehicle_graphics/str_diesel_russia_rzd_tep60.png) | RZD TEP60 | 1960 | 160 | 2960 | Express | 0 | BROAD_NONE, IS_BROAD | Asia |
 | ![DSB MaK 100](vehicle_graphics/str_diesel_denmark_dsb_mak_100.png) | DSB MaK 100 | 1960 | 60 | 334 | Shunting | 0 | STANDARD_NONE, IS_STANDARD | Northern Europe |
