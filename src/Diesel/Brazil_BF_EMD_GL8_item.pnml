@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_diesel_brazil_bf_emd_gl8) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/america/south", "flag/BR", "power/diesel", "role/universal"];
+	badges: ["region/america/south", "flag/BR", "power/diesel", "role/express"];
 
     }
     graphics {

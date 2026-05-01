@@ -47,7 +47,7 @@ item(FEAT_TRAINS, item_diesel_ivory_coast_gmd_gt22lc2) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/africa", "flag/CI", "power/diesel", "role/universal"];
+	badges: ["region/africa", "flag/CI", "power/diesel", "role/express"];
 
     }
     graphics {
