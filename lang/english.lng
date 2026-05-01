@@ -657,6 +657,7 @@ str_diesel_sierra_leone_lamco_301_series                          :LAMCO. Series
 str_diesel_congo_alstom_bb_bb                                     :Congo-Ocean BB-BB 300 (Diesel)
 str_diesel_zimbabwe_sorefame_de8                                  :Sorefame DE8 (Diesel)
 str_diesel_ivory_coast_gmd_gt22lc2                                :Abidjan-Niger GMD GT22LC-2 (Diesel)
+str_diesel_germany_dr_130_dbag_230                                :DR 130/DBAG 230 (Diesel)
 
 # Dieselrailbus
 str_rbd_australia_victorian_railways_aec_rm1                      :Victorian Railways AEC RM1 (Diesel Railbus)

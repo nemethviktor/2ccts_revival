@@ -14,6 +14,7 @@
 	- Added `London Underground 1972 Stock`
 	- Added `London Underground 1992 Stock`
 	- Added `London Underground S Stock`
+	- Added `DR 130/DBAG 230`
 	- Changed cargo wagons to be all-region. Having split boxcars and silos into food/nonfood the regional splits weren't viable any longer.
 	- Standardised some of the vehicle roles
 	- Renamed `Amtrak Charger` to `Amtrak Charger ALC-42`

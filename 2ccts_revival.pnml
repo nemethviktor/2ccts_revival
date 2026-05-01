@@ -843,6 +843,9 @@
 #include "src/Diesel/Ivory_Coast_GMD_GT22LC2_graphics.pnml"
 #include "src/Diesel/Ivory_Coast_GMD_GT22LC2_item.pnml"
 
+#include "src/Diesel/Germany_DR_130_DBAG_230_graphics.pnml"
+#include "src/Diesel/Germany_DR_130_DBAG_230_item.pnml"
+
 
 //// EMU
 #include "src/EMU/Netherlands_NS_Mat24_graphics.pnml"

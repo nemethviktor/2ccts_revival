@@ -163,33 +163,34 @@
 | ![HZ 2062](vehicle_graphics/str_diesel_croatia_hz_2062.png) | HZ 2062 | 1972 | 124 | 2200 | Universal | 0 | STANDARD_NONE | Eastern Europe |
 | ![Amtrak SDP-40F](vehicle_graphics/str_diesel_usa_amtrak_sdp_40f.png) | Amtrak SDP-40F | 1973 | 153 | 3000 | Universal | 0 | STANDARD_NONE | North America |
 | ![CNR MLW M420W](vehicle_graphics/str_diesel_canada_cnr_mlw_m420w.png) | CNR MLW M420W | 1973 | 108 | 2000 | Universal | 0 | STANDARD_NONE | North America |
-| ![ENR TE114E](vehicle_graphics/str_diesel_egypt_enr_te114e.png) | ENR TE114E | 1974 | 120 | 2800 | Universal | 0 | STANDARD_NONE | Africa |
+| ![DR 130/DBAG 230](vehicle_graphics/str_diesel_germany_dr_130_dbag_230.png) | DR 130/DBAG 230 | 1973 | 120 | 2867 | Universal | 0 | STANDARD_NONE | Western Europe |
 | ![Sorefame DE8](vehicle_graphics/str_diesel_zimbabwe_sorefame_de8.png) | Sorefame DE8 | 1974 | 100 | 2321 | Express | 0 | NARROW_NONE | Africa |
+| ![ENR TE114E](vehicle_graphics/str_diesel_egypt_enr_te114e.png) | ENR TE114E | 1974 | 120 | 2800 | Universal | 0 | STANDARD_NONE | Africa |
 | ![China Railways DFH3](vehicle_graphics/str_diesel_china_china_railways_dfh3.png) | China Railways DFH3 | 1976 | 120 | 2200 | Universal | 0 | STANDARD_NONE | Asia |
 | ![SNCFT 040 DJ](vehicle_graphics/str_diesel_tunisia_sncft_040_dj.png) | SNCFT 040 DJ | 1977 | 75 | 700 | Universal | 0 | STANDARD_NONE, NARROW_NONE | Africa |
 | ![OCTRA 101-106](vehicle_graphics/str_diesel_gabon_alsthom_ad30b.png) | OCTRA 101-106 | 1978 | 80 | 3000 | Universal | 0 | STANDARD_NONE | Africa |
 | ![NSB Di4](vehicle_graphics/str_diesel_norway_nsb_di4.png) | NSB Di4 | 1980 | 140 | 3290 | Universal | 0 | STANDARD_NONE | Northern Europe |
+| ![Abidjan-Niger GMD GT22LC-2](vehicle_graphics/str_diesel_ivory_coast_gmd_gt22lc2.png) | Abidjan-Niger GMD GT22LC-2 | 1981 | 105 | 2250 | Express | 0 | NARROW_NONE | Africa |
 | ![BCh 2TE10M](vehicle_graphics/str_diesel_belarus_bch_2te10m.png) | BCh 2TE10M | 1981 | 100 | 6160 | Heavy Freight | 0 | BROAD_NONE | Eastern Europe |
 | ![CP 1900](vehicle_graphics/str_diesel_portugal_cp_1900.png) | CP 1900 | 1981 | 100 | 2260 | Universal | 0 | BROAD_NONE | Southern Europe |
-| ![Abidjan-Niger GMD GT22LC-2](vehicle_graphics/str_diesel_ivory_coast_gmd_gt22lc2.png) | Abidjan-Niger GMD GT22LC-2 | 1981 | 105 | 2250 | Express | 0 | NARROW_NONE | Africa |
-| ![Pacific National G](vehicle_graphics/str_diesel_australia_pacific_national_g_class.png) | Pacific National G | 1984 | 114 | 3000 | Universal | 0 | STANDARD_NONE | Oceania |
 | ![UGOFE GM-EMD J16CW/AC](vehicle_graphics/str_diesel_argentina_mf_gm_emd_j16cw_ac.png) | UGOFE GM-EMD J16CW/AC | 1984 | 120 | 1870 | Express | 0 | NARROW_NONE | South America |
-| ![China Railways DF8](vehicle_graphics/str_diesel_china_china_railways_df8.png) | China Railways DF8 | 1984 | 100 | 4930 | Heavy Freight | 0 | STANDARD_NONE | Asia |
+| ![Pacific National G](vehicle_graphics/str_diesel_australia_pacific_national_g_class.png) | Pacific National G | 1984 | 114 | 3000 | Universal | 0 | STANDARD_NONE | Oceania |
 | ![Ferrocarril Central Andino GE C39-8](vehicle_graphics/str_diesel_peru_ferrocarril_central_andino_ge_c39_8.png) | Ferrocarril Central Andino GE C39-8 | 1984 | 110 | 3900 | Heavy Freight | 0 | STANDARD_NONE | South America |
-| ![PKP SP32](vehicle_graphics/str_diesel_poland_pkp_sp32.png) | PKP SP32 | 1985 | 100 | 1015 | Universal | 0 | STANDARD_NONE | Eastern Europe |
+| ![China Railways DF8](vehicle_graphics/str_diesel_china_china_railways_df8.png) | China Railways DF8 | 1984 | 100 | 4930 | Heavy Freight | 0 | STANDARD_NONE | Asia |
 | ![VR Dr16](vehicle_graphics/str_diesel_finland_vr_dr16.png) | VR Dr16 | 1985 | 140 | 2250 | Universal | 0 | BROAD_NONE | Northern Europe |
+| ![PKP SP32](vehicle_graphics/str_diesel_poland_pkp_sp32.png) | PKP SP32 | 1985 | 100 | 1015 | Universal | 0 | STANDARD_NONE | Eastern Europe |
 | ![UZ 2TE126](vehicle_graphics/str_diesel_ukraine_uz_2te126.png) | UZ 2TE126 | 1987 | 100 | 6035 | Heavy Freight | 0 | BROAD_NONE | Eastern Europe |
-| ![RZD TEP80](vehicle_graphics/str_diesel_russia_rzd_tep80.png) | RZD TEP80 | 1988 | 160 | 6000 | Express | 0 | BROAD_NONE | Asia |
 | ![NS 6400](vehicle_graphics/str_diesel_netherlands_ns_6400.png) | NS 6400 | 1988 | 120 | 1580 | Universal | 0 | STANDARD_NONE | Western Europe |
 | ![Metrolink EMD F59PH](vehicle_graphics/str_diesel_usa_metrolink_emd_f59ph.png) | Metrolink EMD F59PH | 1988 | 177 | 3000 | Express | 0 | STANDARD_NONE | North America |
-| ![Westrail P](vehicle_graphics/str_diesel_australia_westrail_p_class.png) | Westrail P | 1989 | 90 | 2450 | Universal | 0 | NARROW_NONE | Oceania |
+| ![RZD TEP80](vehicle_graphics/str_diesel_russia_rzd_tep80.png) | RZD TEP80 | 1988 | 160 | 6000 | Express | 0 | BROAD_NONE | Asia |
 | ![BR 60](vehicle_graphics/str_diesel_uk_br_60.png) | BR 60 | 1989 | 97 | 3100 | Universal | 0 | STANDARD_NONE | Northern Europe |
 | ![ONCF DF 100](vehicle_graphics/str_diesel_morocco_oncf_df_100.png) | ONCF DF 100 | 1989 | 135 | 3400 | Universal | 0 | STANDARD_NONE | Africa |
 | ![UZ 2TE10Ut](vehicle_graphics/str_diesel_ukraine_uz_2te10ut.png) | UZ 2TE10Ut | 1989 | 120 | 4560 | Heavy Freight | 0 | BROAD_NONE | Eastern Europe |
+| ![Westrail P](vehicle_graphics/str_diesel_australia_westrail_p_class.png) | Westrail P | 1989 | 90 | 2450 | Universal | 0 | NARROW_NONE | Oceania |
 | ![SOFSE 319.3](vehicle_graphics/str_diesel_argentina_sofse_3193.png) | SOFSE 319.3 | 1991 | 140 | 1876 | Universal | 0 | BROAD_NONE | South America |
-| ![Amtrak P42DC 'Genesis'](vehicle_graphics/str_diesel_usa_amtrak_p42dc_genesis.png) | Amtrak P42DC 'Genesis' | 1992 | 177 | 4250 | Express | 0 | STANDARD_NONE | North America |
 | ![Saudi Railways 4000 EMD SD70ACS](vehicle_graphics/str_diesel_saudi_arabia_saudi_railways_4000_emd_sd70acs.png) | Saudi Railways 4000 EMD SD70ACS | 1992 | 110 | 4500 | Heavy Freight | 0 | BROAD_NONE | Asia |
 | ![ZS 621](vehicle_graphics/str_diesel_serbia_zs_621.png) | ZS 621 | 1992 | 80 | 530 | Universal | 0 | STANDARD_NONE | Eastern Europe |
+| ![Amtrak P42DC 'Genesis'](vehicle_graphics/str_diesel_usa_amtrak_p42dc_genesis.png) | Amtrak P42DC 'Genesis' | 1992 | 177 | 4250 | Express | 0 | STANDARD_NONE | North America |
 | ![Australian National AN](vehicle_graphics/str_diesel_australia_australian_national_an.png) | Australian National AN | 1992 | 150 | 4063 | Universal | 0 | STANDARD_NONE | Oceania |
 | ![TCDD DH7000](vehicle_graphics/str_diesel_turkey_tcdd_dh7000.png) | TCDD DH7000 | 1994 | 40 | 700 | Shunting | 0 | STANDARD_NONE | Asia |
 | ![IE 201](vehicle_graphics/str_diesel_ireland_ie_201.png) | IE 201 | 1994 | 164 | 3200 | Express | 0 | STANDARD_NONE | Northern Europe |
@@ -198,14 +199,14 @@
 | ![NMBS/SNCB 7800](vehicle_graphics/str_diesel_belgium_nmbs_sncb_7800.png) | NMBS/SNCB 7800 | 1999 | 100 | 1500 | Universal | 0 | STANDARD_NONE | Western Europe |
 | ![BR 67](vehicle_graphics/str_diesel_uk_br_67.png) | BR 67 | 1999 | 200 | 3200 | Express | 0 | STANDARD_NONE | Northern Europe |
 | ![Panama Canal Railway EMD F40PH](vehicle_graphics/str_diesel_panama_panama_canal_railway_emd_f40ph.png) | Panama Canal Railway EMD F40PH | 2001 | 165 | 3000 | Express | 0 | STANDARD_NONE | North America |
-| ![RAI DE43CA 'Prima'](vehicle_graphics/str_diesel_iran_rai_de43ca_prima.png) | RAI DE43CA 'Prima' | 2002 | 160 | 4300 | Express | 0 | STANDARD_NONE | Asia |
 | ![SNCF BB 461000](vehicle_graphics/str_diesel_france_sncf_461000.png) | SNCF BB 461000 | 2002 | 100 | 2010 | Universal | 0 | STANDARD_NONE | Western Europe |
+| ![RAI DE43CA 'Prima'](vehicle_graphics/str_diesel_iran_rai_de43ca_prima.png) | RAI DE43CA 'Prima' | 2002 | 160 | 4300 | Express | 0 | STANDARD_NONE | Asia |
 | ![Pacific National XR/XRB](vehicle_graphics/str_diesel_australia_pacific_national_xr_xrb.png) | Pacific National XR/XRB | 2002 | 115 | 3300 | Light Freight | 0 | STANDARD_NONE | Oceania |
 | ![GO Transit MP40PH-3C](vehicle_graphics/str_diesel_canada_go_transit_mp40ph_3c.png) | GO Transit MP40PH-3C | 2003 | 150 | 4000 | Universal | 0 | STANDARD_NONE | North America |
-| ![ACT D 200](vehicle_graphics/str_diesel_italy_act_d_200.png) | ACT D 200 | 2003 | 120 | 3000 | Universal | 0 | STANDARD_NONE | Southern Europe |
 | ![MTR 8000](vehicle_graphics/str_diesel_china_mtr_8000.png) | MTR 8000 | 2003 | 140 | 2680 | Universal | 0 | STANDARD_NONE | Asia |
-| ![UZ TEP150](vehicle_graphics/str_diesel_ukraine_uz_tep150.png) | UZ TEP150 | 2006 | 160 | 4216 | Express | 0 | BROAD_NONE | Eastern Europe |
+| ![ACT D 200](vehicle_graphics/str_diesel_italy_act_d_200.png) | ACT D 200 | 2003 | 120 | 3000 | Universal | 0 | STANDARD_NONE | Southern Europe |
 | ![CargoNet 312](vehicle_graphics/str_diesel_norway_cargonet_312.png) | CargoNet 312 | 2006 | 120 | 4262 | Universal | 0 | STANDARD_NONE | Northern Europe |
+| ![UZ TEP150](vehicle_graphics/str_diesel_ukraine_uz_tep150.png) | UZ TEP150 | 2006 | 160 | 4216 | Express | 0 | BROAD_NONE | Eastern Europe |
 | ![RENFE 334](vehicle_graphics/str_diesel_spain_renfe_class_334.png) | RENFE 334 | 2006 | 200 | 3300 | Express | 0 | BROAD_NONE | Southern Europe |
 | ![Pacific National 92](vehicle_graphics/str_diesel_australia_pacific_national_92.png) | Pacific National 92 | 2008 | 115 | 4520 | Light Freight | 0 | STANDARD_NONE | Oceania |
 | ![China Railways HXN5](vehicle_graphics/str_diesel_china_china_railways_hxn5.png) | China Railways HXN5 | 2008 | 120 | 6250 | Heavy Freight | 0 | STANDARD_NONE | Asia |
@@ -215,8 +216,8 @@
 | ![RZD GT1](vehicle_graphics/str_diesel_russia_rzd_gt1.png) | RZD GT1 | 2011 | 100 | 11130 | Heavy Freight | 0 | BROAD_NONE | Asia |
 | ![Indonesia Railways CC300](vehicle_graphics/str_diesel_indonesia_indonesia_railways_cc300.png) | Indonesia Railways CC300 | 2011 | 120 | 2500 | Express | 0 | NARROW_NONE | Oceania |
 | ![SOFSE CNR CKD8G](vehicle_graphics/str_diesel_argentina_sofse_cnr_ckd8.png) | SOFSE CNR CKD8G | 2013 | 120 | 2950 | Universal | 0 | BROAD_NONE | South America |
-| ![PRASA Afro 4000](vehicle_graphics/str_diesel_south_africa_sar_afro_4000.png) | PRASA Afro 4000 | 2014 | 130 | 4262 | Express | 0 | NARROW_NONE | Africa |
 | ![BR 68](vehicle_graphics/str_diesel_uk_br_68.png) | BR 68 | 2014 | 160 | 3800 | Express | 0 | STANDARD_NONE | Northern Europe |
+| ![PRASA Afro 4000](vehicle_graphics/str_diesel_south_africa_sar_afro_4000.png) | PRASA Afro 4000 | 2014 | 130 | 4262 | Express | 0 | NARROW_NONE | Africa |
 | ![Amtrak Charger ALC-42](vehicle_graphics/str_diesel_usa_amtrak_charger.png) | Amtrak Charger ALC-42 | 2015 | 201 | 4200 | Express | 0 | STANDARD_NONE | North America |
 
 ## DIESELRAILBUS
