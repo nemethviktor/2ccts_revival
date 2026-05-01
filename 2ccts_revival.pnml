@@ -1630,6 +1630,9 @@
 #include "src/Electric/UK_London_1959_Stock_graphics.pnml"
 #include "src/Electric/UK_London_1959_Stock_item.pnml"
 
+#include "src/Electric/Singapore_Kawasaki_Heavy_Industries_C151_graphics.pnml"
+#include "src/Electric/Singapore_Kawasaki_Heavy_Industries_C151_item.pnml"
+
 
 //// MAGLEV
 #include "src/Maglev/China_Transrapid_graphics.pnml"
