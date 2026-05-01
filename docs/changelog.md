@@ -18,7 +18,10 @@
 	- Standardised some of the vehicle roles
 	- Renamed `Amtrak Charger` to `Amtrak Charger ALC-42`
 	- Changed the graphics of `Ghana Railways 1400 EMD TT12` (+ rename)
-	- Added `Singapore C151`, `Singapore C751B`
+	- Added and recoloured a number of vehicles from Ragan's set (with permission)
+		- `Singapore C151`
+		- `Singapore C751B`
+		- `Comeng Light Metro Prototype` (Concept)
 
 
 **3.3-RC2 [20260427]**

@@ -6594,7 +6594,7 @@ item(FEAT_TRAINS, item_mtro_uk_london_1972_stock, 9059) {}
 item(FEAT_TRAINS, item_mtro_uk_london_1959_stock, 9060) {}
 item(FEAT_TRAINS, item_mtro_singapore_kawasaki_heavy_industries_c151, 9061) {}
 item(FEAT_TRAINS, item_mtro_singapore_kawasaki_heavy_industries_c751b, 9062) {}
-// 9063 free
+item(FEAT_TRAINS, item_mtro_australia_comeng_light_metro_mk1, 9063) {}
 // 9064 free
 // 9065 free
 // 9066 free

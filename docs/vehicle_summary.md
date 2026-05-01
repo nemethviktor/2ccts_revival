@@ -618,11 +618,12 @@
 | ![London 1959 Stock](vehicle_graphics/str_mtro_uk_london_1959_stock.png) | London 1959 Stock | 1959 | 72 | 700 | Metro | 210 | STANDARD_4TH, IS_STANDARD | Northern Europe |
 | ![Oslo T1000](vehicle_graphics/str_mtro_norway_oslo_t1000.png) | Oslo T1000 | 1964 | 70 | 1050 | Metro | 270 | STANDARD_3RD, IS_STANDARD | Northern Europe |
 | ![Toronto H1](vehicle_graphics/str_mtro_canada_toronto_h_series.png) | Toronto H1 | 1965 | 80 | 960 | Metro | 300 | STANDARD_3RD, IS_STANDARD | North America |
+| ![Comeng Light Metro Prototype](vehicle_graphics/str_mtro_australia_comeng_light_metro_mk1.png) | Comeng Light Metro Prototype | 1965 | 100 | 500 | Metro | 200 | BROAD_3RD, IS_BROAD | Oceania |
 | ![Rotterdam MG2 Type M](vehicle_graphics/str_mtro_netherlands_rotterdam_mg2_type_m.png) | Rotterdam MG2 Type M | 1968 | 80 | 630 | Metro | 280 | STANDARD_3RD, IS_STANDARD | Western Europe |
-| ![New York R44](vehicle_graphics/str_mtro_usa_ny_r44.png) | New York R44 | 1971 | 110 | 920 | Metro | 300 | STANDARD_3RD, IS_STANDARD | North America |
 | ![Munchen MVG A2](vehicle_graphics/str_mtro_germany_munchen_mvg_a2.png) | Munchen MVG A2 | 1971 | 80 | 965 | Metro | 290 | STANDARD_3RD, IS_STANDARD | Western Europe |
-| ![Prague ECS Set](vehicle_graphics/str_mtro_czech_republic_prague_ecs_set.png) | Prague ECS Set | 1972 | 80 | 910 | Metro | 262 | STANDARD_3RD, IS_STANDARD | Eastern Europe |
+| ![New York R44](vehicle_graphics/str_mtro_usa_ny_r44.png) | New York R44 | 1971 | 110 | 920 | Metro | 300 | STANDARD_3RD, IS_STANDARD | North America |
 | ![London 1972 Stock](vehicle_graphics/str_mtro_uk_london_1972_stock.png) | London 1972 Stock | 1972 | 72 | 1400 | Metro | 242 | STANDARD_4TH, IS_STANDARD | Northern Europe |
+| ![Prague ECS Set](vehicle_graphics/str_mtro_czech_republic_prague_ecs_set.png) | Prague ECS Set | 1972 | 80 | 910 | Metro | 262 | STANDARD_3RD, IS_STANDARD | Eastern Europe |
 | ![Amsterdam M1](vehicle_graphics/str_mtro_netherlands_amsterdam_type_m1.png) | Amsterdam M1 | 1973 | 80 | 1050 | Metro | 300 | STANDARD_3RD, IS_STANDARD | Western Europe |
 | ![Stockholm C8](vehicle_graphics/str_mtro_sweden_stockholm_c8.png) | Stockholm C8 | 1974 | 90 | 860 | Metro | 300 | STANDARD_3RD, IS_STANDARD | Northern Europe |
 | ![Madrid Series 5000](vehicle_graphics/str_mtro_spain_madrid_series_5000.png) | Madrid Series 5000 | 1974 | 80 | 1100 | Metro | 320 | STANDARD_3RD, IS_STANDARD | Southern Europe |
@@ -632,19 +633,19 @@
 | ![Moscow 81-720](vehicle_graphics/str_mtro_russia_moscow_81_720.png) | Moscow 81-720 | 1981 | 100 | 1115 | Metro | 288 | BROAD_3RD, IS_BROAD | Asia |
 | ![Tokyo S01](vehicle_graphics/str_mtro_japan_tokyo_s01.png) | Tokyo S01 | 1985 | 80 | 640 | Metro | 200 | STANDARD_3RD, IS_STANDARD | Asia |
 | ![London DLR P86](vehicle_graphics/str_mtro_uk_dlr_p86.png) | London DLR P86 | 1986 | 80 | 640 | Metro | 284 | STANDARD_3RD, IS_STANDARD | Northern Europe |
-| ![Singapore C151](vehicle_graphics/str_mtro_singapore_kawasaki_heavy_industries_c151.png) | Singapore C151 | 1987 | 90 | 1000 | Metro | 320 | STANDARD_3RD, IS_STANDARD | Asia |
 | ![Cairo Kinki Sharyo](vehicle_graphics/str_mtro_egypt_cairo_1987_stock.png) | Cairo Kinki Sharyo | 1987 | 100 | 1450 | Metro | 330 | STANDARD_3RD, IS_STANDARD | Africa |
-| ![Taipei C301](vehicle_graphics/str_mtro_taiwan_taipei_c301.png) | Taipei C301 | 1992 | 80 | 1550 | Metro | 310 | STANDARD_3RD, IS_STANDARD | Asia |
+| ![Singapore C151](vehicle_graphics/str_mtro_singapore_kawasaki_heavy_industries_c151.png) | Singapore C151 | 1987 | 90 | 1000 | Metro | 320 | STANDARD_3RD, IS_STANDARD | Asia |
 | ![London 1992 Stock](vehicle_graphics/str_mtro_uk_london_1992_stock.png) | London 1992 Stock | 1992 | 100 | 1700 | Metro | 260 | STANDARD_4TH, IS_STANDARD | Northern Europe |
+| ![Taipei C301](vehicle_graphics/str_mtro_taiwan_taipei_c301.png) | Taipei C301 | 1992 | 80 | 1550 | Metro | 310 | STANDARD_3RD, IS_STANDARD | Asia |
 | ![Moscow 81-717.5M](vehicle_graphics/str_mtro_russia_moscow_81_7175m.png) | Moscow 81-717.5M | 1993 | 90 | 1180 | Metro | 288 | BROAD_3RD, IS_BROAD | Asia |
-| ![Boston 01800](vehicle_graphics/str_mtro_usa_boston_01800.png) | Boston 01800 | 1993 | 80 | 910 | Metro | 310 | STANDARD_3RD, IS_STANDARD | North America |
 | ![LA A650](vehicle_graphics/str_mtro_usa_la_a650.png) | LA A650 | 1993 | 70 | 1250 | Metro | 300 | STANDARD_3RD, IS_STANDARD | North America |
+| ![Boston 01800](vehicle_graphics/str_mtro_usa_boston_01800.png) | Boston 01800 | 1993 | 80 | 910 | Metro | 310 | STANDARD_3RD, IS_STANDARD | North America |
 | ![Santiago NS-93](vehicle_graphics/str_mtro_chile_santiago_ns_93.png) | Santiago NS-93 | 1996 | 100 | 2400 | Metro | 320 | STANDARD_3RD, IS_STANDARD | South America |
-| ![Paris MP89](vehicle_graphics/str_mtro_france_paris_mp89.png) | Paris MP89 | 1997 | 80 | 2680 | Metro | 240 | STANDARD_3RD, IS_STANDARD | Western Europe |
 | ![Amsterdam S3 CAF 90](vehicle_graphics/str_mtro_netherlands_amsterdam_caf_90.png) | Amsterdam S3 CAF 90 | 1997 | 70 | 1020 | Metro | 250 | STANDARD_DUAL, IS_STANDARD | Western Europe |
+| ![Paris MP89](vehicle_graphics/str_mtro_france_paris_mp89.png) | Paris MP89 | 1997 | 80 | 2680 | Metro | 240 | STANDARD_3RD, IS_STANDARD | Western Europe |
 | ![Buenos Aires Serie 1200](vehicle_graphics/str_mtro_argentina_buenos_aires_serie_1200.png) | Buenos Aires Serie 1200 | 1999 | 75 | 640 | Metro | 230 | STANDARD_3RD, IS_STANDARD | South America |
-| ![Rome S/300](vehicle_graphics/str_mtro_italy_rome_s_300.png) | Rome S/300 | 1999 | 80 | 1650 | Metro | 420 | STANDARD_3RD, IS_STANDARD | Southern Europe |
 | ![Pyongyang D stock](vehicle_graphics/str_mtro_north_korea_pyongyang_d_stock.png) | Pyongyang D stock | 1999 | 70 | 800 | Metro | 320 | STANDARD_3RD, IS_STANDARD | Asia |
+| ![Rome S/300](vehicle_graphics/str_mtro_italy_rome_s_300.png) | Rome S/300 | 1999 | 80 | 1650 | Metro | 420 | STANDARD_3RD, IS_STANDARD | Southern Europe |
 | ![Singapore C751B](vehicle_graphics/str_mtro_singapore_kawasaki_heavy_industries_c751b.png) | Singapore C751B | 2000 | 90 | 1000 | Metro | 320 | STANDARD_3RD, IS_STANDARD | Asia |
 | ![Moscow 81-740](vehicle_graphics/str_mtro_russia_moscow_81_740.png) | Moscow 81-740 | 2003 | 90 | 1400 | Metro | 344 | BROAD_3RD, IS_BROAD | Asia |
 | ![Singapore C830 'Metropolis'](vehicle_graphics/str_mtro_singapore_singapore_c830_metropolis.png) | Singapore C830 'Metropolis' | 2003 | 90 | 1500 | Metro | 300 | STANDARD_3RD, IS_STANDARD | Asia |
