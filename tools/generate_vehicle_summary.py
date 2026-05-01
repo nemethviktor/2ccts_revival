@@ -119,9 +119,9 @@ def generate_markdown():
     region_cols = ['AFRICA', 'ASIA', 'SOUTHERN_EUROPE', 'EASTERN_EUROPE',
                    'WESTERN_EUROPE', 'NORTHERN_EUROPE', 'NORTH_AMERICA', 'SOUTH_AMERICA', 'OCEANIA']
 
-    # Identify track columns: Ignore VEHIDCODE and the very last column CHECK_ANY_TT
+    # Identify track columns: Ignore VEHIDCODE and sundry columns
     track_cols = [c for c in df_tracks.columns if c !=
-                  'VEHIDCODE' and c != 'CHECK_ANY_TT']
+                  'VEHIDCODE' and c not in ['CHECK_ANY_TT', 'IS_STANDARD', 'IS_NARROW', 'IS_BROAD']]
 
     markdown = "# Vehicle Summary\n\n"
 

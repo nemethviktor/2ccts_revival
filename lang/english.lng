@@ -995,6 +995,7 @@ str_emu_croatia_hz_6112                                           :HZ 6112 (EMU,
 str_emu_china_railways_chr380a                                    :China Railways CHR380A (EMU, 25kV AC)
 str_emu_europe_sureot                                             :Sureot (EMU, 25kV AC)
 str_emu_australia_comeng_emu                                      :Comeng EMU (EMU, 1500V DC)
+str_emu_australia_melbourne_hcmt_munnel                           :Melbourne HCMT Munnel (EMU, 1500V DC)
 str_cargoemu_japan_jr_freight_m250                                :JR Freight M250 (EMU, 1500V DC)
 
 # Maglevengine

@@ -5602,7 +5602,7 @@ item(FEAT_TRAINS, item_emu_croatia_hz_6112, 8070) {}
 item(FEAT_TRAINS, item_emu_china_railways_chr380a, 8071) {}
 item(FEAT_TRAINS, item_emu_europe_sureot, 8072) {}
 item(FEAT_TRAINS, item_emu_australia_comeng_emu, 8073) {}
-// 8074 free
+item(FEAT_TRAINS, item_emu_australia_melbourne_hcmt_munnel, 8074) {}
 // 8075 free
 // 8076 free
 // 8077 free

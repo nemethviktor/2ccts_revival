@@ -607,6 +607,7 @@ item_emu_netherlands_ns_4800_hsa, /*Year: 2012*/ \
 item_emu_netherlands_ns_hispeed_v250_albatros, /*Year: 2012*/ \
 item_emu_italy_ntv_agv_duplex, /*Year: 2015*/ \
 item_emu_croatia_hz_6112, /*Year: 2015*/ \
+item_emu_australia_melbourne_hcmt_munnel, /*Year: 2020*/ \
 item_emu_europe_sureot, /*Year: 2030*/
 
 #define SORTING_MULTIMETRO \
