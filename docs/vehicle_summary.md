@@ -195,6 +195,8 @@
 | ![TCDD DH7000](vehicle_graphics/str_diesel_turkey_tcdd_dh7000.png) | TCDD DH7000 | 1994 | 40 | 700 | Shunting | 0 | STANDARD_NONE | Asia |
 | ![IE 201](vehicle_graphics/str_diesel_ireland_ie_201.png) | IE 201 | 1994 | 164 | 3200 | Express | 0 | STANDARD_NONE | Northern Europe |
 | ![MF GE U20C](vehicle_graphics/str_diesel_argentina_mf_ge_u20c.png) | MF GE U20C | 1995 | 104 | 2150 | Express | 0 | NARROW_NONE | South America |
+| ![BHP 6071 GE AC6000CW ](vehicle_graphics/str_diesel_australia_bhp_6071_ge_ac6000cw.png) | BHP 6071 GE AC6000CW  | 1995 | 120 | 6000 | Heavy Freight | 0 | STANDARD_NONE | Oceania |
+| ![UP 7391 GE AC6044CW](vehicle_graphics/str_diesel_usa_up_7000_ge_ac6000cw.png) | UP 7391 GE AC6044CW | 1995 | 120 | 6000 | Heavy Freight | 0 | STANDARD_NONE | North America |
 | ![BR 66](vehicle_graphics/str_diesel_uk_br_66.png) | BR 66 | 1998 | 120 | 3200 | Universal | 0 | STANDARD_NONE | Northern Europe |
 | ![NMBS/SNCB 7800](vehicle_graphics/str_diesel_belgium_nmbs_sncb_7800.png) | NMBS/SNCB 7800 | 1999 | 100 | 1500 | Universal | 0 | STANDARD_NONE | Western Europe |
 | ![BR 67](vehicle_graphics/str_diesel_uk_br_67.png) | BR 67 | 1999 | 200 | 3200 | Express | 0 | STANDARD_NONE | Northern Europe |
@@ -205,11 +207,11 @@
 | ![GO Transit MP40PH-3C](vehicle_graphics/str_diesel_canada_go_transit_mp40ph_3c.png) | GO Transit MP40PH-3C | 2003 | 150 | 4000 | Universal | 0 | STANDARD_NONE | North America |
 | ![MTR 8000](vehicle_graphics/str_diesel_china_mtr_8000.png) | MTR 8000 | 2003 | 140 | 2680 | Universal | 0 | STANDARD_NONE | Asia |
 | ![ACT D 200](vehicle_graphics/str_diesel_italy_act_d_200.png) | ACT D 200 | 2003 | 120 | 3000 | Universal | 0 | STANDARD_NONE | Southern Europe |
-| ![CargoNet 312](vehicle_graphics/str_diesel_norway_cargonet_312.png) | CargoNet 312 | 2006 | 120 | 4262 | Universal | 0 | STANDARD_NONE | Northern Europe |
-| ![UZ TEP150](vehicle_graphics/str_diesel_ukraine_uz_tep150.png) | UZ TEP150 | 2006 | 160 | 4216 | Express | 0 | BROAD_NONE | Eastern Europe |
 | ![RENFE 334](vehicle_graphics/str_diesel_spain_renfe_class_334.png) | RENFE 334 | 2006 | 200 | 3300 | Express | 0 | BROAD_NONE | Southern Europe |
-| ![Pacific National 92](vehicle_graphics/str_diesel_australia_pacific_national_92.png) | Pacific National 92 | 2008 | 115 | 4520 | Light Freight | 0 | STANDARD_NONE | Oceania |
+| ![UZ TEP150](vehicle_graphics/str_diesel_ukraine_uz_tep150.png) | UZ TEP150 | 2006 | 160 | 4216 | Express | 0 | BROAD_NONE | Eastern Europe |
+| ![CargoNet 312](vehicle_graphics/str_diesel_norway_cargonet_312.png) | CargoNet 312 | 2006 | 120 | 4262 | Universal | 0 | STANDARD_NONE | Northern Europe |
 | ![China Railways HXN5](vehicle_graphics/str_diesel_china_china_railways_hxn5.png) | China Railways HXN5 | 2008 | 120 | 6250 | Heavy Freight | 0 | STANDARD_NONE | Asia |
+| ![Pacific National 92](vehicle_graphics/str_diesel_australia_pacific_national_92.png) | Pacific National 92 | 2008 | 115 | 4520 | Light Freight | 0 | STANDARD_NONE | Oceania |
 | ![ENR 2400 GE ES40ACi](vehicle_graphics/str_diesel_egypt_enr_2400_ge_es40aci.png) | ENR 2400 GE ES40ACi | 2009 | 121 | 4250 | Universal | 0 | STANDARD_NONE | Africa |
 | ![DB 261 'Gravita 10BB'](vehicle_graphics/str_diesel_germany_db_261_gravita_10bb.png) | DB 261 'Gravita 10BB' | 2010 | 100 | 1600 | Universal | 0 | STANDARD_NONE | Western Europe |
 | ![HVLE V490 'Maxima 40CC'](vehicle_graphics/str_diesel_germany_hvle_v490.png) | HVLE V490 'Maxima 40CC' | 2010 | 140 | 4900 | Universal | 0 | STANDARD_NONE | Western Europe |

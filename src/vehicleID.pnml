@@ -2660,8 +2660,8 @@ item(FEAT_TRAINS, item_diesel_congo_alstom_bb_bb, 5137) {}
 item(FEAT_TRAINS, item_diesel_zimbabwe_sorefame_de8, 5138) {}
 item(FEAT_TRAINS, item_diesel_ivory_coast_gmd_gt22lc2, 5139) {}
 item(FEAT_TRAINS, item_diesel_germany_dr_130_dbag_230, 5140) {}
-// 5141 free
-// 5142 free
+item(FEAT_TRAINS, item_diesel_usa_up_7000_ge_ac6000cw, 5141) {}
+item(FEAT_TRAINS, item_diesel_australia_bhp_6071_ge_ac6000cw, 5142) {}
 // 5143 free
 // 5144 free
 // 5145 free

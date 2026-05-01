@@ -846,6 +846,12 @@
 #include "src/Diesel/Germany_DR_130_DBAG_230_graphics.pnml"
 #include "src/Diesel/Germany_DR_130_DBAG_230_item.pnml"
 
+#include "src/Diesel/USA_UP_7000_GE_AC6000CW_graphics.pnml"
+#include "src/Diesel/USA_UP_7000_GE_AC6000CW_item.pnml"
+
+#include "src/Diesel/Australia_BHP_6071_GE_AC6000CW_graphics.pnml"
+#include "src/Diesel/Australia_BHP_6071_GE_AC6000CW_item.pnml"
+
 
 //// EMU
 #include "src/EMU/Netherlands_NS_Mat24_graphics.pnml"
