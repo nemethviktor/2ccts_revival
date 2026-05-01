@@ -645,6 +645,7 @@
 | ![Buenos Aires Serie 1200](vehicle_graphics/str_mtro_argentina_buenos_aires_serie_1200.png) | Buenos Aires Serie 1200 | 1999 | 75 | 640 | Metro | 230 | STANDARD_3RD, IS_STANDARD | South America |
 | ![Rome S/300](vehicle_graphics/str_mtro_italy_rome_s_300.png) | Rome S/300 | 1999 | 80 | 1650 | Metro | 420 | STANDARD_3RD, IS_STANDARD | Southern Europe |
 | ![Pyongyang D stock](vehicle_graphics/str_mtro_north_korea_pyongyang_d_stock.png) | Pyongyang D stock | 1999 | 70 | 800 | Metro | 320 | STANDARD_3RD, IS_STANDARD | Asia |
+| ![Singapore C751B](vehicle_graphics/str_mtro_singapore_kawasaki_heavy_industries_c751b.png) | Singapore C751B | 2000 | 90 | 1000 | Metro | 320 | STANDARD_3RD, IS_STANDARD | Asia |
 | ![Moscow 81-740](vehicle_graphics/str_mtro_russia_moscow_81_740.png) | Moscow 81-740 | 2003 | 90 | 1400 | Metro | 344 | BROAD_3RD, IS_BROAD | Asia |
 | ![Singapore C830 'Metropolis'](vehicle_graphics/str_mtro_singapore_singapore_c830_metropolis.png) | Singapore C830 'Metropolis' | 2003 | 90 | 1500 | Metro | 300 | STANDARD_3RD, IS_STANDARD | Asia |
 | ![Santiago AS-2002](vehicle_graphics/str_mtro_chile_santiago_as_2002.png) | Santiago AS-2002 | 2004 | 100 | 1550 | Metro | 350 | STANDARD_3RD, IS_STANDARD | South America |

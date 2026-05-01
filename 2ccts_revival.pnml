@@ -1633,6 +1633,9 @@
 #include "src/Electric/Singapore_Kawasaki_Heavy_Industries_C151_graphics.pnml"
 #include "src/Electric/Singapore_Kawasaki_Heavy_Industries_C151_item.pnml"
 
+#include "src/Electric/Singapore_Kawasaki_Heavy_Industries_C751B_graphics.pnml"
+#include "src/Electric/Singapore_Kawasaki_Heavy_Industries_C751B_item.pnml"
+
 
 //// MAGLEV
 #include "src/Maglev/China_Transrapid_graphics.pnml"

@@ -4,17 +4,13 @@
 
 
 // Template: TPL_02C.
-// Data from: https://en.wikipedia.org/wiki/Kawasaki_Heavy_Industries_C151
+// Data from: https://en.wikipedia.org/wiki/Kawasaki_Heavy_Industries_%26_Nippon_Sharyo_C751B
 
-// Notes:
-//// VEHIDCODE: mtro_Singapore_Kawasaki_Heavy_Industries_C151 -- This is not the same as the C151A model.
-
-
-item(FEAT_TRAINS, item_mtro_singapore_kawasaki_heavy_industries_c151) {
+item(FEAT_TRAINS, item_mtro_singapore_kawasaki_heavy_industries_c751b) {
     property {
-        name: string(str_mtro_singapore_kawasaki_heavy_industries_c151);
+        name: string(str_mtro_singapore_kawasaki_heavy_industries_c751b);
         climates_available: ((param_region_asia || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
-        introduction_date: date(1987,1,1);
+        introduction_date: date(2000,1,1);
         model_life: 45;
         vehicle_life: 60;
         retire_early: 20;
@@ -52,7 +48,7 @@ item(FEAT_TRAINS, item_mtro_singapore_kawasaki_heavy_industries_c151) {
 
     }
     graphics {
-        purchase: spriteset_mtro_singapore_kawasaki_heavy_industries_c151_purchase;
+        purchase: spriteset_mtro_singapore_kawasaki_heavy_industries_c751b_purchase;
         // no 'visual_effect' or 'visual_effect_and_powered'
         // no 'length'
         // no 'articulated_part'
@@ -60,7 +56,7 @@ item(FEAT_TRAINS, item_mtro_singapore_kawasaki_heavy_industries_c151) {
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
         // PURCHASETEXT_SWITCH_CALL // this is actually blank
-        default: switch_mtro_singapore_kawasaki_heavy_industries_c151_reversed;
+        default: switch_mtro_singapore_kawasaki_heavy_industries_c751b_reversed;
     }
     livery_override (item_mtro_metro_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
@@ -68,7 +64,7 @@ item(FEAT_TRAINS, item_mtro_singapore_kawasaki_heavy_industries_c151) {
         weight: int(35*1/2);
         cargo_capacity: 160;
         length: 8;
-        default: spriteset_mtro_singapore_kawasaki_heavy_industries_c151_middle;
+        default: spriteset_mtro_singapore_kawasaki_heavy_industries_c751b_middle;
     }
     livery_override (item_mtro_metro_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
@@ -78,6 +74,6 @@ item(FEAT_TRAINS, item_mtro_singapore_kawasaki_heavy_industries_c151) {
         cargo_capacity: 160;
         tractive_effort_coefficient: int(0.3*10*35);
         length: 8;
-        default: spriteset_mtro_singapore_kawasaki_heavy_industries_c151_middle;
+        default: spriteset_mtro_singapore_kawasaki_heavy_industries_c751b_middle;
     }
 }
