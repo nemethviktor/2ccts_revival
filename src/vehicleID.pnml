@@ -1637,17 +1637,17 @@ item(FEAT_TRAINS, item_steam_south_africa_katanga_mikado_2_8_2, 4117) {}
 item(FEAT_TRAINS, item_steam_mozambique_mozambique_railways_no_101, 4118) {}
 item(FEAT_TRAINS, item_steam_ivory_coast_golwe_2_6_0_0_6_2t, 4119) {}
 item(FEAT_TRAINS, item_steam_egypt_stephenson_class_192, 4120) {}
-// 4121 free
-// 4122 free
-// 4123 free
-// 4124 free
-// 4125 free
-// 4126 free
-// 4127 free
-// 4128 free
-// 4129 free
-// 4130 free
-// 4131 free
+item(FEAT_TRAINS, item_steam_australia_nsw_n67_0_6_0t_terrier, 4121) {}
+item(FEAT_TRAINS, item_steam_australia_nsw_c30, 4122) {}
+item(FEAT_TRAINS, item_steam_australia_nsw_c32, 4123) {}
+item(FEAT_TRAINS, item_steam_australia_nsw_d50, 4124) {}
+item(FEAT_TRAINS, item_steam_australia_nsw_z12, 4125) {}
+item(FEAT_TRAINS, item_steam_australia_nsw_z19, 4126) {}
+item(FEAT_TRAINS, item_steam_australia_nsw_z26, 4127) {}
+item(FEAT_TRAINS, item_steam_australia_ja_brown_rod_280, 4128) {}
+item(FEAT_TRAINS, item_steam_australia_sar_600, 4129) {}
+item(FEAT_TRAINS, item_steam_australia_smr_10, 4130) {}
+item(FEAT_TRAINS, item_steam_australia_vr_h, 4131) {}
 // 4132 free
 // 4133 free
 // 4134 free

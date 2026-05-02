@@ -1208,6 +1208,17 @@ str_steam_spain_renfe_242f                                        :RENFE 242F (S
 # str_steam_mozambique_mozambique_railways_no_101                   : not translated
 # str_steam_ivory_coast_golwe_2_6_0_0_6_2t                          : not translated
 # str_steam_egypt_stephenson_class_192                              : not translated
+# str_steam_australia_nsw_n67_0_6_0t_terrier                        : not translated
+# str_steam_australia_nsw_c30                                       : not translated
+# str_steam_australia_nsw_c32                                       : not translated
+# str_steam_australia_nsw_d50                                       : not translated
+# str_steam_australia_nsw_z12                                       : not translated
+# str_steam_australia_nsw_z19                                       : not translated
+# str_steam_australia_nsw_z26                                       : not translated
+# str_steam_australia_ja_brown_rod_280                              : not translated
+# str_steam_australia_sar_600                                       : not translated
+# str_steam_australia_smr_10                                        : not translated
+# str_steam_australia_vr_h                                          : not translated
 
 # Steamrailbus
 str_rbs_austria_nolb_1                                            :NOLB 1 (Stoom Goedere Spoorbus)

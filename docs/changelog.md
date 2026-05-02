@@ -23,9 +23,9 @@
 	- Standardised some of the vehicle roles
 	- Renamed `Amtrak Charger` to `Amtrak Charger ALC-42`
 	- Changed the graphics of `Ghana Railways 1400 EMD TT12` (+ rename)
-	- Added and recoloured a number of vehicles from Ragan's set (with permission)
-		- `Singapore C151`
-		- `Singapore C751B`
+	- Added and recoloured a number of vehicles from Ragin's set (with permission)
+		- `Singapore C151` (Metro)
+		- `Singapore C751B` (Metro)
 		- `Comeng Light Metro Prototype` (Concept, 3rd Rail)
 		- `Comeng EMU` (1500V DC)
 		- `Melbourne HCMT Munnel` (1500V DC)
@@ -33,6 +33,19 @@
 		- `Melbourne Harris Trains [2-door]` (1500V DC)
 		- `Melbourne Siemens Nexas` (1500V DC)
 		- `Melbourne Tait Trains` (1500V DC) -- these have been simplified to fit the standard EMU template
+		- `NSWGR N67 Terrier` (Steam Engine)
+		- `NSWGR C30` (Steam Engine)
+		- `NSWGR C32` (Steam Engine)
+		- `NSWGR D50` (Steam Engine)
+		- `NSWGR Z12` (Steam Engine)
+		- `NSWGR Z19` (Steam Engine)
+		- `NSWGR Z26` (Steam Engine)
+		- `J & A Brown ROD 2-8-0` (Steam Engine)
+		- `South Australian Railways 600` (Steam Engine)
+		- `South Maitland Railways 10` (Steam Engine)
+		- `Victorian Railways H` (Steam Engine)
+
+		
 
 **3.3-RC2 [20260427]**
 - CODE CHANGES:

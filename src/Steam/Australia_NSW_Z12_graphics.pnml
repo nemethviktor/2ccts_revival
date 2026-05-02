@@ -1,0 +1,50 @@
+//  Copyright (C) 2017 Transportman // V. Nemeth 2026+
+//  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
+
+// Template: TPL_03A
+
+// PURCHASE
+spriteset(spriteset_steam_australia_nsw_z12_purchase, "gfx/steam/australia_nsw_z12.png") {template_purchase(1, 96)}
+
+
+// VEHICLE
+/// Engine1
+spriteset(spriteset_steam_australia_nsw_z12_engine1, "gfx/steam/australia_nsw_z12.png") {template_2cc_engines_general(1, 1)}
+
+
+/// Engine2
+spriteset(spriteset_steam_australia_nsw_z12_engine2, "gfx/steam/australia_nsw_z12.png") {template_2cc_engines_general(1, 32)}
+
+
+/// Tender
+spriteset(spriteset_steam_australia_nsw_z12_tender, "gfx/steam/australia_nsw_z12.png") {template_2cc_engines_general(1, 64)}
+
+
+/// Animation states (animation)
+switch(FEAT_TRAINS, SELF, switch_steam_australia_nsw_z12_animation, motion_counter % 2){
+	0: spriteset_steam_australia_nsw_z12_engine1;
+	spriteset_steam_australia_nsw_z12_engine2;
+}
+switch(FEAT_TRAINS, SELF, switch_steam_australia_nsw_z12_position, position_in_vehid_chain % 2) {
+	0: switch_steam_australia_nsw_z12_animation;
+	spriteset_steam_australia_nsw_z12_tender;
+}
+
+/// Visual Effect
+switch(FEAT_TRAINS, SELF, switch_steam_australia_nsw_z12_visual_effect, position_in_vehid_chain % 2) {
+	0: return visual_effect_and_powered(VISUAL_EFFECT_STEAM, -3, DISABLE_WAGON_POWER);
+	return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+/// Length
+switch(FEAT_TRAINS, SELF, switch_steam_australia_nsw_z12_length, position_in_vehid_chain % 2) {
+    0: 5;
+	3;
+}
+
+/// Articulated Return
+/// extra_callback_info1 is the index of the part being added.
+switch(FEAT_TRAINS, SELF, switch_steam_australia_nsw_z12_articulated, extra_callback_info1) {
+    1: return item_steam_australia_nsw_z12;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}

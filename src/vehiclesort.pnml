@@ -107,7 +107,10 @@ item_steam_usa_4_6_0_ten_wheeler, /*Year: 1869*/ \
 item_steam_argentina_fcgr_315, /*Year: 1871*/ \
 item_steam_south_africa_harbour_board_el_0_4_0, /*Year: 1873*/ \
 item_steam_usa_2_8_0_consolidation, /*Year: 1875*/ \
+item_steam_australia_nsw_n67_0_6_0t_terrier, /*Year: 1875*/ \
 item_steam_south_africa_natal_government_railways_2_6_0t, /*Year: 1876*/ \
+item_steam_australia_nsw_z12, /*Year: 1877*/ \
+item_steam_australia_nsw_z19, /*Year: 1877*/ \
 item_steam_japan_jnr_7100, /*Year: 1880*/ \
 item_steam_australia_nswgr_z25_class, /*Year: 1881*/ \
 item_steam_hungary_mav_377, /*Year: 1885*/ \
@@ -117,17 +120,21 @@ item_steam_switzerland_rhb_g_3_4, /*Year: 1889*/ \
 item_steam_india_dhr_b, /*Year: 1889*/ \
 item_steam_spain_renfe_class_040, /*Year: 1891*/ \
 item_steam_germany_saxon_iv_k, /*Year: 1892*/ \
+item_steam_australia_nsw_c32, /*Year: 1892*/ \
+item_steam_australia_nsw_z26, /*Year: 1892*/ \
 item_steam_germany_prussian_s_3, /*Year: 1893*/ \
 item_steam_japan_jnr_860, /*Year: 1893*/ \
 item_steam_norway_nsb_class_xxi, /*Year: 1894*/ \
 item_steam_usa_prr_d16, /*Year: 1895*/ \
 item_steam_mozambique_beira_railway_br6_f2_falcon, /*Year: 1895*/ \
 item_steam_china_china_railways_h, /*Year: 1895*/ \
+item_steam_australia_nsw_d50, /*Year: 1896*/ \
 item_steam_austria_kkstb_99, /*Year: 1897*/ \
 item_steam_uk_caledonian_railway_439, /*Year: 1900*/ \
 item_steam_netherlands_ns_8100, /*Year: 1901*/ \
 item_steam_switzerland_sbb_a_3_5, /*Year: 1902*/ \
 item_steam_switzerland_sbb_e_3_3, /*Year: 1902*/ \
+item_steam_australia_nsw_c30, /*Year: 1903*/ \
 item_steam_russia_rzd_u, /*Year: 1906*/ \
 item_steam_new_zealand_nzr_x_class, /*Year: 1908*/ \
 item_steam_italy_fs_895, /*Year: 1908*/ \
@@ -141,6 +148,7 @@ item_steam_france_sncf_141ta, /*Year: 1911*/ \
 item_steam_angola_south_west_african_2_8_0, /*Year: 1911*/ \
 item_steam_eritrea_eritrean_railway_r440, /*Year: 1911*/ \
 item_steam_austria_kkstb_310, /*Year: 1911*/ \
+item_steam_australia_smr_10, /*Year: 1911*/ \
 item_steam_switzerland_sbb_c_5_6, /*Year: 1913*/ \
 item_steam_france_sncf_140c, /*Year: 1913*/ \
 item_steam_japan_jnr_9600, /*Year: 1913*/ \
@@ -164,6 +172,8 @@ item_steam_poland_pkp_ok22, /*Year: 1923*/ \
 item_steam_japan_jnr_d50, /*Year: 1923*/ \
 item_steam_mozambique_mozambique_railways_no_101, /*Year: 1923*/ \
 item_steam_croatia_hz_11, /*Year: 1924*/ \
+item_steam_australia_sar_600, /*Year: 1925*/ \
+item_steam_australia_ja_brown_rod_280, /*Year: 1926*/ \
 item_steam_india_indian_railways_xb_class, /*Year: 1927*/ \
 item_steam_uk_gwr_4900, /*Year: 1928*/ \
 item_steam_kenya_east_african_railway_21, /*Year: 1928*/ \
@@ -187,6 +197,7 @@ item_steam_iraq_iraqi_state_railways_pc_class, /*Year: 1940*/ \
 item_steam_zimbabwe_zimbabwe_railways_15, /*Year: 1940*/ \
 item_steam_usa_up_4000_big_boy, /*Year: 1941*/ \
 item_steam_usa_southern_pacific_gs_4_daylight, /*Year: 1941*/ \
+item_steam_australia_vr_h, /*Year: 1941*/ \
 item_steam_egypt_enr_1100, /*Year: 1942*/ \
 item_steam_greece_sek_lb, /*Year: 1943*/ \
 item_steam_australia_south_australian_railways_520, /*Year: 1943*/ \

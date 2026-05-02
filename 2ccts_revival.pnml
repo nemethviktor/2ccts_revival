@@ -2312,6 +2312,39 @@
 #include "src/Steam/Egypt_Stephenson_Class_192_graphics.pnml"
 #include "src/Steam/Egypt_Stephenson_Class_192_item.pnml"
 
+#include "src/Steam/Australia_NSW_N67_0_6_0T_Terrier_graphics.pnml"
+#include "src/Steam/Australia_NSW_N67_0_6_0T_Terrier_item.pnml"
+
+#include "src/Steam/Australia_NSW_C30_graphics.pnml"
+#include "src/Steam/Australia_NSW_C30_item.pnml"
+
+#include "src/Steam/Australia_NSW_C32_graphics.pnml"
+#include "src/Steam/Australia_NSW_C32_item.pnml"
+
+#include "src/Steam/Australia_NSW_D50_graphics.pnml"
+#include "src/Steam/Australia_NSW_D50_item.pnml"
+
+#include "src/Steam/Australia_NSW_Z12_graphics.pnml"
+#include "src/Steam/Australia_NSW_Z12_item.pnml"
+
+#include "src/Steam/Australia_NSW_Z19_graphics.pnml"
+#include "src/Steam/Australia_NSW_Z19_item.pnml"
+
+#include "src/Steam/Australia_NSW_Z26_graphics.pnml"
+#include "src/Steam/Australia_NSW_Z26_item.pnml"
+
+#include "src/Steam/Australia_JA_Brown_ROD_280_graphics.pnml"
+#include "src/Steam/Australia_JA_Brown_ROD_280_item.pnml"
+
+#include "src/Steam/Australia_SAR_600_graphics.pnml"
+#include "src/Steam/Australia_SAR_600_item.pnml"
+
+#include "src/Steam/Australia_SMR_10_graphics.pnml"
+#include "src/Steam/Australia_SMR_10_item.pnml"
+
+#include "src/Steam/Australia_VR_H_graphics.pnml"
+#include "src/Steam/Australia_VR_H_item.pnml"
+
 
 //// WAGONS - GEN1
 #include "src/Wagons/Gen1/Wagon_Gen1_Flat_Wagon_graphics.pnml"
