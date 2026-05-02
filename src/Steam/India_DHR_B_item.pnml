@@ -6,17 +6,13 @@
 // Template: TPL_03A.
 // Data from: https://en.wikipedia.org/wiki/DHR_B_Class
 
-// Notes:
-//// MODEL_LIFE: VEHICLE_NEVER_EXPIRES -- Still in active servie
-
-
 item(FEAT_TRAINS, item_steam_india_dhr_b) {
     property {
         name: string(str_steam_india_dhr_b);
         climates_available: ((param_region_asia || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1889,1,1);
-        model_life: VEHICLE_NEVER_EXPIRES;
-        vehicle_life: 40;
+        model_life: 45;
+        vehicle_life: 15;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         cost_factor: 12.06239;

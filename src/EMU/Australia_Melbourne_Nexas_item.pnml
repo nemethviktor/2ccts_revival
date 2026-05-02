@@ -27,7 +27,7 @@ item(FEAT_TRAINS, item_emu_australia_melbourne_nexas) {
         climates_available: ((param_region_oceania || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(2023,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
-        vehicle_life: 40;
+        vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         cost_factor: 46.81584;

@@ -31,7 +31,7 @@ item(FEAT_TRAINS, item_singlemtro_germany_berlin_u_bahn_c_ii) {
         climates_available: ((param_region_western_europe || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1929,1,1);
         model_life: 45;
-        vehicle_life: 60;
+        vehicle_life: 50;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
         cost_factor: 30.64887;

@@ -32,7 +32,7 @@ item(FEAT_TRAINS, item_dmu_germany_db_vt_040_flying_hamburger) {
         climates_available: ((param_region_western_europe || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1932,1,1);
         model_life: 45;
-        vehicle_life: 25;
+        vehicle_life: 30;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
         cost_factor: 37.4772;

@@ -12,7 +12,7 @@ item(FEAT_TRAINS, item_steam_india_indian_railways_xb_class) {
         climates_available: ((param_region_asia || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1927,1,1);
         model_life: 45;
-        vehicle_life: 40;
+        vehicle_life: 30;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
         cost_factor: 63.15646;

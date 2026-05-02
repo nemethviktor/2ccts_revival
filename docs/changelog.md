@@ -6,6 +6,7 @@
 	- Changed Andorra/Gabon confusion wrt country names
 	- Changed sleeper coaches to have cargo ageing of 4 days instead of the normal 2.5 days
 	- Fixed mislabelled role `Commuter (Regional))'` [double ')']
+	- Revamped the logic regarding model life and vehicle life. It's now systematic. Added details about this in the readme.
 - VEHICLES CHANGES:
 	- Renamed various items (see relevant commit messages)
 	- Fixed a the sprite for `DB 17.0-1 'Prussian S 10'` that I broke the last time

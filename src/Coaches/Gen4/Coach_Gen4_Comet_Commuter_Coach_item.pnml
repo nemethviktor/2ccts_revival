@@ -15,7 +15,7 @@ item(FEAT_TRAINS, item_mu_coach_gen4_comet_commuter_coach) {
         name: string(str_mu_coach_gen4_comet_commuter_coach);
         climates_available: (((param_region_north_america || param_region_south_america) || param_region_oceania) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1970,1,1);
-        model_life: 60;
+        model_life: 70;
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;

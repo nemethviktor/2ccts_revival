@@ -31,7 +31,7 @@ item(FEAT_TRAINS, item_emu_europe_sureot) {
         climates_available: (((param_region_northern_europe || param_region_eastern_europe || param_region_southern_europe || param_region_western_europe) || 0) && param_concept) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(2030,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
-        vehicle_life: 25;
+        vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
         cost_factor: 138.75535;

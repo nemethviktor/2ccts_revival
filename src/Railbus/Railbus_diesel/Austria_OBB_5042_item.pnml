@@ -27,7 +27,7 @@ item(FEAT_TRAINS, item_rbd_austria_obb_5042) {
         climates_available: ((param_region_western_europe || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1935,1,1);
         model_life: 45;
-        vehicle_life: 15;
+        vehicle_life: 30;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         cost_factor: 25.64909;

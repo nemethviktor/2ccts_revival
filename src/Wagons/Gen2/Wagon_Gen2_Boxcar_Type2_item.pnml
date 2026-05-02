@@ -26,7 +26,7 @@ item(FEAT_TRAINS, item_mu_wagon_gen2_boxcar_type2) {
         name: string(str_mu_wagon_gen2_boxcar_type2);
         climates_available: (((param_region_africa || (param_region_north_america || param_region_south_america) || param_region_asia || (param_region_northern_europe || param_region_eastern_europe || param_region_southern_europe || param_region_western_europe) || param_region_oceania) || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1890,1,1);
-        model_life: 60;
+        model_life: 70;
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;

@@ -12,7 +12,7 @@ item(FEAT_TRAINS, item_mtro_hungary_budapest_ev3_200) {
         climates_available: ((param_region_eastern_europe || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1975,1,1);
         model_life: 45;
-        vehicle_life: 60;
+        vehicle_life: 50;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
         cost_factor: 37.58722;
