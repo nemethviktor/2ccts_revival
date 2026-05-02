@@ -1,0 +1,64 @@
+
+//  Copyright (C) 2017 Transportman // V. Nemeth 2026+
+//  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
+
+
+// Template: TPL_01A.
+// Data from: https://en.wikipedia.org/wiki/New_South_Wales_85_class_locomotive
+
+// Notes:
+//// TE_STARTING_KN: 341 -- Guess
+
+
+item(FEAT_TRAINS, item_electric_australia_nsw_85) {
+    property {
+        name: string(str_electric_australia_nsw_85);
+        climates_available: ((param_region_oceania || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
+        introduction_date: date(1979,1,1);
+        model_life: 45;
+        vehicle_life: 40;
+        retire_early: 20;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
+        cost_factor: 75.01014;
+        running_cost_factor: 62.24583;
+        speed: 130 km/h;
+        power: 3860 hp;
+        cargo_capacity: 0;
+        weight: 123 ton;
+        tractive_effort_coefficient: 0.283;
+        air_drag_coefficient: 0;
+
+        reliability_decay: 20;
+        // cargodeftype: NONE;
+        refittable_cargo_classes: bitmask(NO_CARGO_CLASS);
+        
+        cargo_age_period: 185;
+        misc_flags: bitmask(TRAIN_FLAG_2CC);
+        refit_cost: 0;
+        ai_special_flag: AI_FLAG_PASSENGER;
+        track_type: [STANDARD_GAUGE_RAILTYPE_1500V];
+        running_cost_base: RUNNING_COST_ELECTRIC;
+        engine_class: ENGINE_CLASS_ELECTRIC;
+        visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
+
+        sprite_id: SPRITE_ID_NEW_TRAIN;
+        dual_headed: 0;
+        length: 8;
+        extra_power_per_wagon: 0;
+        bitmask_vehicle_info: 0;
+
+	badges: ["region/oceania", "flag/AU", "power/electric/dc", "role/universal"];
+
+    }
+    graphics {
+        purchase: spriteset_electric_australia_nsw_85_purchase;
+        // no 'visual_effect' or 'visual_effect_and_powered'
+        // no 'length'
+        // no 'articulated_part'
+        can_attach_wagon: switch_can_attach_vehicle;
+        // Add calls to defined switches below
+        // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
+        // PURCHASETEXT_SWITCH_CALL // this is actually blank
+        default: spriteset_electric_australia_nsw_85;
+    }
+}

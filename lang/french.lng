@@ -662,6 +662,28 @@ str_diesel_usa_amtrak_charger                                     :Amtrak Charge
 # str_diesel_germany_dr_130_dbag_230                                : not translated
 # str_diesel_usa_up_7000_ge_ac6000cw                                : not translated
 # str_diesel_australia_bhp_6071_ge_ac6000cw                         : not translated
+# str_diesel_australia_nsw_41                                       : not translated
+# str_diesel_australia_nsw_48                                       : not translated
+# str_diesel_australia_sar_930                                      : not translated
+# str_diesel_australia_commonwealth_gm                              : not translated
+# str_diesel_australia_v_line_a                                     : not translated
+# str_diesel_australia_nsw_42                                       : not translated
+# str_diesel_australia_an_d                                         : not translated
+# str_diesel_australia_nsw_90                                       : not translated
+# str_diesel_australia_emd_nr_class                                 : not translated
+# str_diesel_australia_nsw_ptc_73                                   : not translated
+# str_diesel_australia_v_line_n                                     : not translated
+# str_diesel_australia_nsw_81                                       : not translated
+# str_diesel_australia_v_line_g                                     : not translated
+# str_diesel_australia_nsw_82                                       : not translated
+# str_diesel_australia_gml_10                                       : not translated
+# str_diesel_australia_westrail_s                                   : not translated
+# str_diesel_australia_vr_b                                         : not translated
+# str_diesel_australia_victoria_x1                                  : not translated
+# str_diesel_australia_victoria_x2                                  : not translated
+# str_diesel_australia_victoria_x3                                  : not translated
+# str_diesel_australia_nsw_80                                       : not translated
+# str_diesel_australia_ira_dsb_mz_iii                               : not translated
 
 # Dieselrailbus
 str_rbd_australia_victorian_railways_aec_rm1                      :Victorian Railways AEC RM1 (Autorail Diesel)
@@ -901,6 +923,9 @@ str_electric_germany_prussian_es_6                                :K.P.St.E. ES 
 # str_electric_congo_type_2450_acec_charleroi_zaire_electric        : not translated
 # str_electric_tanzania_trc_e6800                                   : not translated
 # str_electric_hungary_mav_class_v63                                : not translated
+# str_electric_australia_qr_3500                                    : not translated
+# str_electric_australia_nsw_85                                     : not translated
+# str_electric_australia_sra_8650                                   : not translated
 
 # Electricrailbus
 str_rbe_switzerland_ab_cfe_3_3                                    :AB CFe 3/3 (Autorail Électrique, 1500V DC)

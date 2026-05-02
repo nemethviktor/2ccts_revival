@@ -2662,28 +2662,28 @@ item(FEAT_TRAINS, item_diesel_ivory_coast_gmd_gt22lc2, 5139) {}
 item(FEAT_TRAINS, item_diesel_germany_dr_130_dbag_230, 5140) {}
 item(FEAT_TRAINS, item_diesel_usa_up_7000_ge_ac6000cw, 5141) {}
 item(FEAT_TRAINS, item_diesel_australia_bhp_6071_ge_ac6000cw, 5142) {}
-// 5143 free
-// 5144 free
-// 5145 free
-// 5146 free
-// 5147 free
-// 5148 free
-// 5149 free
-// 5150 free
-// 5151 free
-// 5152 free
-// 5153 free
-// 5154 free
-// 5155 free
-// 5156 free
-// 5157 free
-// 5158 free
-// 5159 free
-// 5160 free
-// 5161 free
-// 5162 free
-// 5163 free
-// 5164 free
+item(FEAT_TRAINS, item_diesel_australia_nsw_41, 5143) {}
+item(FEAT_TRAINS, item_diesel_australia_nsw_48, 5144) {}
+item(FEAT_TRAINS, item_diesel_australia_sar_930, 5145) {}
+item(FEAT_TRAINS, item_diesel_australia_commonwealth_gm, 5146) {}
+item(FEAT_TRAINS, item_diesel_australia_v_line_a, 5147) {}
+item(FEAT_TRAINS, item_diesel_australia_nsw_42, 5148) {}
+item(FEAT_TRAINS, item_diesel_australia_an_d, 5149) {}
+item(FEAT_TRAINS, item_diesel_australia_nsw_90, 5150) {}
+item(FEAT_TRAINS, item_diesel_australia_emd_nr_class, 5151) {}
+item(FEAT_TRAINS, item_diesel_australia_nsw_ptc_73, 5152) {}
+item(FEAT_TRAINS, item_diesel_australia_v_line_n, 5153) {}
+item(FEAT_TRAINS, item_diesel_australia_nsw_81, 5154) {}
+item(FEAT_TRAINS, item_diesel_australia_v_line_g, 5155) {}
+item(FEAT_TRAINS, item_diesel_australia_nsw_82, 5156) {}
+item(FEAT_TRAINS, item_diesel_australia_gml_10, 5157) {}
+item(FEAT_TRAINS, item_diesel_australia_westrail_s, 5158) {}
+item(FEAT_TRAINS, item_diesel_australia_vr_b, 5159) {}
+item(FEAT_TRAINS, item_diesel_australia_victoria_x1, 5160) {}
+item(FEAT_TRAINS, item_diesel_australia_victoria_x2, 5161) {}
+item(FEAT_TRAINS, item_diesel_australia_victoria_x3, 5162) {}
+item(FEAT_TRAINS, item_diesel_australia_nsw_80, 5163) {}
+item(FEAT_TRAINS, item_diesel_australia_ira_dsb_mz_iii, 5164) {}
 // 5165 free
 // 5166 free
 // 5167 free
@@ -3661,9 +3661,9 @@ item(FEAT_TRAINS, item_electric_germany_prussian_es_6, 6135) {}
 item(FEAT_TRAINS, item_electric_congo_type_2450_acec_charleroi_zaire_electric, 6136) {}
 item(FEAT_TRAINS, item_electric_tanzania_trc_e6800, 6137) {}
 item(FEAT_TRAINS, item_electric_hungary_mav_class_v63, 6138) {}
-// 6139 free
-// 6140 free
-// 6141 free
+item(FEAT_TRAINS, item_electric_australia_qr_3500, 6139) {}
+item(FEAT_TRAINS, item_electric_australia_nsw_85, 6140) {}
+item(FEAT_TRAINS, item_electric_australia_sra_8650, 6141) {}
 // 6142 free
 // 6143 free
 // 6144 free

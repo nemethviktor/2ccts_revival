@@ -852,6 +852,72 @@
 #include "src/Diesel/Australia_BHP_6071_GE_AC6000CW_graphics.pnml"
 #include "src/Diesel/Australia_BHP_6071_GE_AC6000CW_item.pnml"
 
+#include "src/Diesel/Australia_NSW_41_graphics.pnml"
+#include "src/Diesel/Australia_NSW_41_item.pnml"
+
+#include "src/Diesel/Australia_NSW_48_graphics.pnml"
+#include "src/Diesel/Australia_NSW_48_item.pnml"
+
+#include "src/Diesel/Australia_SAR_930_graphics.pnml"
+#include "src/Diesel/Australia_SAR_930_item.pnml"
+
+#include "src/Diesel/Australia_Commonwealth_GM_graphics.pnml"
+#include "src/Diesel/Australia_Commonwealth_GM_item.pnml"
+
+#include "src/Diesel/Australia_V_Line_A_graphics.pnml"
+#include "src/Diesel/Australia_V_Line_A_item.pnml"
+
+#include "src/Diesel/Australia_NSW_42_graphics.pnml"
+#include "src/Diesel/Australia_NSW_42_item.pnml"
+
+#include "src/Diesel/Australia_AN_D_graphics.pnml"
+#include "src/Diesel/Australia_AN_D_item.pnml"
+
+#include "src/Diesel/Australia_NSW_90_graphics.pnml"
+#include "src/Diesel/Australia_NSW_90_item.pnml"
+
+#include "src/Diesel/Australia_EMD_NR_Class_graphics.pnml"
+#include "src/Diesel/Australia_EMD_NR_Class_item.pnml"
+
+#include "src/Diesel/Australia_NSW_PTC_73_graphics.pnml"
+#include "src/Diesel/Australia_NSW_PTC_73_item.pnml"
+
+#include "src/Diesel/Australia_V_Line_N_graphics.pnml"
+#include "src/Diesel/Australia_V_Line_N_item.pnml"
+
+#include "src/Diesel/Australia_NSW_81_graphics.pnml"
+#include "src/Diesel/Australia_NSW_81_item.pnml"
+
+#include "src/Diesel/Australia_V_Line_G_graphics.pnml"
+#include "src/Diesel/Australia_V_Line_G_item.pnml"
+
+#include "src/Diesel/Australia_NSW_82_graphics.pnml"
+#include "src/Diesel/Australia_NSW_82_item.pnml"
+
+#include "src/Diesel/Australia_GML_10_graphics.pnml"
+#include "src/Diesel/Australia_GML_10_item.pnml"
+
+#include "src/Diesel/Australia_Westrail_S_graphics.pnml"
+#include "src/Diesel/Australia_Westrail_S_item.pnml"
+
+#include "src/Diesel/Australia_VR_B_graphics.pnml"
+#include "src/Diesel/Australia_VR_B_item.pnml"
+
+#include "src/Diesel/Australia_Victoria_X1_graphics.pnml"
+#include "src/Diesel/Australia_Victoria_X1_item.pnml"
+
+#include "src/Diesel/Australia_Victoria_X2_graphics.pnml"
+#include "src/Diesel/Australia_Victoria_X2_item.pnml"
+
+#include "src/Diesel/Australia_Victoria_X3_graphics.pnml"
+#include "src/Diesel/Australia_Victoria_X3_item.pnml"
+
+#include "src/Diesel/Australia_NSW_80_graphics.pnml"
+#include "src/Diesel/Australia_NSW_80_item.pnml"
+
+#include "src/Diesel/Australia_IRA_DSB_MZ_III_graphics.pnml"
+#include "src/Diesel/Australia_IRA_DSB_MZ_III_item.pnml"
+
 
 //// EMU
 #include "src/EMU/Netherlands_NS_Mat24_graphics.pnml"
@@ -1485,6 +1551,15 @@
 
 #include "src/Electric/Hungary_MAV_Class_V63_graphics.pnml"
 #include "src/Electric/Hungary_MAV_Class_V63_item.pnml"
+
+#include "src/Electric/Australia_QR_3500_graphics.pnml"
+#include "src/Electric/Australia_QR_3500_item.pnml"
+
+#include "src/Electric/Australia_NSW_85_graphics.pnml"
+#include "src/Electric/Australia_NSW_85_item.pnml"
+
+#include "src/Electric/Australia_SRA_8650_graphics.pnml"
+#include "src/Electric/Australia_SRA_8650_item.pnml"
 
 #include "src/Electric/UK_London_1903_Stock_graphics.pnml"
 #include "src/Electric/UK_London_1903_Stock_item.pnml"

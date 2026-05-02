@@ -44,8 +44,32 @@
 		- `South Australian Railways 600` (Steam Engine)
 		- `South Maitland Railways 10` (Steam Engine)
 		- `Victorian Railways H` (Steam Engine)
+		- `NSWGR 41` (Diesel Engine)
+		- `NSWGR 48` (Diesel Engine)
+		- `South Australian Railways 930` (Diesel Engine)
+		- `Commonwealth Railways GM` (Diesel Engine)
+		- `V/Line A class` (Diesel Engine)
+		- `NSWGR 42` (Diesel Engine)
+		- `Australian National DL` (Diesel Engine)
+		- `Queensland Railways 3500/3600` (Electric Engine)
+		- `NSWGR 90` (Diesel Engine)
+		- `EMD NR Class Concept` (Diesel Engine)
+		- `NSW PTC 73 Class Concept` (Diesel Engine)
+		- `V/Line N class` (Diesel Engine)
+		- `NSWGR 81` (Diesel Engine)
+		- `V/Line G class` (Diesel Engine)
+		- `NSWGR 82` (Diesel Engine)
+		- `Goldsworthy Mining Limited No. 10` (Diesel Engine)
+		- `Westrail S Class` (Diesel Engine)
+		- `Victorian Railways B` (Diesel Engine)
+		- `Victorian Railways X1` (Diesel Engine)
+		- `Victorian Railways X2` (Diesel Engine)
+		- `Victorian Railways X3` (Diesel Engine)
+		- `NSWGR 80` (Diesel Engine)
+		- `NSWGR 85` (Electric Engine)
+		- `Maldon-Dombarton '8650'` (Electric Engine)
+		- `IRA DSB MZ III` (Diesel Engine)
 
-		
 
 **3.3-RC2 [20260427]**
 - CODE CHANGES:
