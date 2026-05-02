@@ -577,6 +577,7 @@
 | ![NTV AGV Duplex](vehicle_graphics/str_emu_italy_ntv_agv_duplex.png) | NTV AGV Duplex | 2015 | 360 | 3104 | Ultra-High-Speed (Pax) | 160 | STANDARD_OHLE | Southern Europe |
 | ![HZ 6112](vehicle_graphics/str_emu_croatia_hz_6112.png) | HZ 6112 | 2015 | 160 | 2700 | Express Passenger | 120 | BROAD_25KV | Eastern Europe |
 | ![Melbourne HCMT Munnel](vehicle_graphics/str_emu_australia_melbourne_hcmt_munnel.png) | Melbourne HCMT Munnel | 2020 | 130 | 1500 | Commuter/Urban | 320 | BROAD_1500V | Oceania |
+| ![Melbourne Siemens Nexas](vehicle_graphics/str_emu_australia_melbourne_nexas.png) | Melbourne Siemens Nexas | 2023 | 145 | 1286 | Commuter/Urban | 284 | BROAD_1500V | Oceania |
 | ![Sureot](vehicle_graphics/str_emu_europe_sureot.png) | Sureot | 2030 | 300 | 16000 | Ultra-High-Speed (Pax) | 170 | STANDARD_25KV | Southern Europe, Eastern Europe, Western Europe, Northern Europe |
 
 ## MAGLEVENGINE
