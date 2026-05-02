@@ -1080,6 +1080,8 @@ str_mtro_usa_chicago_l_6000                                       :시카고 L 6
 # str_mtro_singapore_kawasaki_heavy_industries_c151                 : not translated
 # str_mtro_singapore_kawasaki_heavy_industries_c751b                : not translated
 # str_mtro_australia_comeng_light_metro_mk1                         : not translated
+# str_mtro_germany_berlin_bvg_f                                     : not translated
+# str_mtro_germany_berlin_bvg_h                                     : not translated
 str_mtro_metro_wagon_unpowered                                    :지하철 기본 객차 (동력 없음)
 str_mtro_metro_wagon_powered                                      :지하철 기본 객차 (동력 있음)
 

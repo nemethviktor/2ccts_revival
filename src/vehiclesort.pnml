@@ -645,6 +645,7 @@ item_mtro_usa_ny_r44, /*Year: 1971*/ \
 item_mtro_czech_republic_prague_ecs_set, /*Year: 1972*/ \
 item_mtro_uk_london_1972_stock, /*Year: 1972*/ \
 item_mtro_netherlands_amsterdam_type_m1, /*Year: 1973*/ \
+item_mtro_germany_berlin_bvg_f, /*Year: 1973*/ \
 item_mtro_sweden_stockholm_c8, /*Year: 1974*/ \
 item_mtro_spain_madrid_series_5000, /*Year: 1974*/ \
 item_mtro_hungary_budapest_ev3_200, /*Year: 1975*/ \
@@ -661,6 +662,7 @@ item_mtro_russia_moscow_81_7175m, /*Year: 1993*/ \
 item_mtro_usa_boston_01800, /*Year: 1993*/ \
 item_mtro_usa_la_a650, /*Year: 1993*/ \
 item_mtro_chile_santiago_ns_93, /*Year: 1996*/ \
+item_mtro_germany_berlin_bvg_h, /*Year: 1996*/ \
 item_mtro_france_paris_mp89, /*Year: 1997*/ \
 item_mtro_netherlands_amsterdam_caf_90, /*Year: 1997*/ \
 item_mtro_north_korea_pyongyang_d_stock, /*Year: 1999*/ \

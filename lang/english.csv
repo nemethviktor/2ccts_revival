@@ -1260,3 +1260,5 @@ str_emu_australia_melbourne_hitachi,Melbourne Hitachi Trains
 str_emu_australia_melbourne_harris,Melbourne Harris Trains [2-door]
 str_emu_australia_melbourne_nexas,Melbourne Siemens Nexas
 str_emu_australia_melbourne_tait,Melbourne Tait Trains
+str_mtro_germany_berlin_bvg_f,Berlin BVG F74
+str_mtro_germany_berlin_bvg_h,Berlin BVG H

@@ -1666,6 +1666,12 @@
 #include "src/Electric/Australia_Comeng_Light_Metro_MK1_graphics.pnml"
 #include "src/Electric/Australia_Comeng_Light_Metro_MK1_item.pnml"
 
+#include "src/Electric/Germany_Berlin_BVG_F_graphics.pnml"
+#include "src/Electric/Germany_Berlin_BVG_F_item.pnml"
+
+#include "src/Electric/Germany_Berlin_BVG_H_graphics.pnml"
+#include "src/Electric/Germany_Berlin_BVG_H_item.pnml"
+
 
 //// MAGLEV
 #include "src/Maglev/China_Transrapid_graphics.pnml"
