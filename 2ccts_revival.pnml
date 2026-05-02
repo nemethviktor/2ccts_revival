@@ -1082,6 +1082,9 @@
 #include "src/EMU/Australia_Melbourne_Hitachi_graphics.pnml"
 #include "src/EMU/Australia_Melbourne_Hitachi_item.pnml"
 
+#include "src/EMU/Australia_Melbourne_Harris_graphics.pnml"
+#include "src/EMU/Australia_Melbourne_Harris_item.pnml"
+
 
 //// ELECTRIC
 #include "src/Electric/Switzerland_RhB_DE_2_2_graphics.pnml"

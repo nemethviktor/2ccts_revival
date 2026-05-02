@@ -554,6 +554,7 @@ item_emu_italy_fs_etr300_settebello, /*Year: 1952*/ \
 item_emu_netherlands_ns_mat54, /*Year: 1954*/ \
 item_emu_turkey_tcdd_e8000, /*Year: 1955*/ \
 item_emu_austria_obb_4030, /*Year: 1956*/ \
+item_emu_australia_melbourne_harris, /*Year: 1956*/ \
 item_emu_south_africa_sar_5m2, /*Year: 1958*/ \
 item_emu_switzerland_sbb_rae_tee_ii, /*Year: 1961*/ \
 item_emu_japan_odakyu_3100_series_romance, /*Year: 1962*/ \
