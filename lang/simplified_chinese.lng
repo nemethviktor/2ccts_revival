@@ -1000,6 +1000,7 @@ str_emu_china_railways_chr380a                                    :中铁CR CRH3
 str_emu_europe_sureot                                             :Sureot (电力动车, 25kV AC)
 # str_emu_australia_comeng_emu                                      : not translated
 # str_emu_australia_melbourne_hcmt_munnel                           : not translated
+# str_emu_australia_melbourne_hitachi                               : not translated
 # str_cargoemu_japan_jr_freight_m250                                : not translated
 
 # Maglevengine

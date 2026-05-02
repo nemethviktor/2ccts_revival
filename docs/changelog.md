@@ -27,7 +27,7 @@
 		- `Comeng Light Metro Prototype` (Concept, 3rd Rail)
 		- `Comeng EMU` (1500V DC)
 		- `Melbourne HCMT Munnel` (1500V DC)
-
+		- `Melbourne Hitachi Trains` (1500V DC)
 
 **3.3-RC2 [20260427]**
 - CODE CHANGES:
