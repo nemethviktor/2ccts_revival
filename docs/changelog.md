@@ -16,7 +16,7 @@
 	- Added `London Underground S Stock`
 	- Added `DR 130/DBAG 230`
 	- Added identical vehicles `UP 7391 GE AC6044CW` and `BHP 6071 GE AC6000CW` with differing regions. I had to draw reasonable parts of them so they're fugly.
-	
+	- Added `Robert Stephenson and Co 192` (early-ish steam, Egypt) based on the `Le Belge` gfx.
 	- Changed cargo wagons to be all-region. Having split boxcars and silos into food/nonfood the regional splits weren't viable any longer.
 	- Standardised some of the vehicle roles
 	- Renamed `Amtrak Charger` to `Amtrak Charger ALC-42`

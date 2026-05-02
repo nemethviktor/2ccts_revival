@@ -2291,6 +2291,9 @@
 #include "src/Steam/Ivory_Coast_Golwe_2_6_0_0_6_2T_graphics.pnml"
 #include "src/Steam/Ivory_Coast_Golwe_2_6_0_0_6_2T_item.pnml"
 
+#include "src/Steam/Egypt_Stephenson_Class_192_graphics.pnml"
+#include "src/Steam/Egypt_Stephenson_Class_192_item.pnml"
+
 
 //// WAGONS - GEN1
 #include "src/Wagons/Gen1/Wagon_Gen1_Flat_Wagon_graphics.pnml"

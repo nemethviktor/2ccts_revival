@@ -1636,7 +1636,7 @@ item(FEAT_TRAINS, item_steam_china_railways_qj, 4116) {}
 item(FEAT_TRAINS, item_steam_south_africa_katanga_mikado_2_8_2, 4117) {}
 item(FEAT_TRAINS, item_steam_mozambique_mozambique_railways_no_101, 4118) {}
 item(FEAT_TRAINS, item_steam_ivory_coast_golwe_2_6_0_0_6_2t, 4119) {}
-// 4120 free
+item(FEAT_TRAINS, item_steam_egypt_stephenson_class_192, 4120) {}
 // 4121 free
 // 4122 free
 // 4123 free

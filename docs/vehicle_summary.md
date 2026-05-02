@@ -688,6 +688,7 @@
 | ![Central Pacific 4-2-2](vehicle_graphics/str_steam_usa_central_pacific_4_2_2.png) | Central Pacific 4-2-2 | 1863 | 65 | 126 | Universal | 0 | STANDARD_NONE | North America |
 | ![NS 700](vehicle_graphics/str_steam_netherlands_ns_700.png) | NS 700 | 1865 | 90 | 320 | Universal | 0 | STANDARD_NONE | Western Europe |
 | ![GS&WR 101](vehicle_graphics/str_steam_ireland_gs_wr_101.png) | GS&WR 101 | 1866 | 60 | 650 | Shunting | 0 | BROAD_NONE | Northern Europe |
+| ![Robert Stephenson and Co 192](vehicle_graphics/str_steam_egypt_stephenson_class_192.png) | Robert Stephenson and Co 192 | 1867 | 95 | 495 | Universal | 0 | STANDARD_NONE | Africa |
 | ![4-6-0 'Ten-wheeler'](vehicle_graphics/str_steam_usa_4_6_0_ten_wheeler.png) | 4-6-0 'Ten-wheeler' | 1869 | 110 | 1200 | Universal | 0 | STANDARD_NONE | North America |
 | ![FCGR [BAGS] No. 315 2-4-0T](vehicle_graphics/str_steam_argentina_fcgr_315.png) | FCGR [BAGS] No. 315 2-4-0T | 1871 | 45 | 145 | Shunting | 0 | BROAD_NONE | South America |
 | ![Harbour Board EL 0-4-0 'Little Bess'](vehicle_graphics/str_steam_south_africa_harbour_board_el_0_4_0.png) | Harbour Board EL 0-4-0 'Little Bess' | 1873 | 16 | 40 | Shunting | 0 | NARROW_NONE | Africa |
@@ -698,55 +699,55 @@
 | ![MAV 377](vehicle_graphics/str_steam_hungary_mav_377.png) | MAV 377 | 1885 | 45 | 170 | Shunting | 0 | STANDARD_NONE | Eastern Europe |
 | ![Canadian Pacific 374](vehicle_graphics/str_steam_canada_canadian_pacific_374.png) | Canadian Pacific 374 | 1886 | 80 | 380 | Universal | 0 | STANDARD_NONE | North America |
 | ![PPR 35-tonner 4-6-0T](vehicle_graphics/str_steam_south_africa_ppr_35_tonner_4_6_0t.png) | PPR 35-tonner 4-6-0T | 1887 | 60 | 220 | Shunting | 0 | NARROW_NONE | Africa |
-| ![RhB G 3/4](vehicle_graphics/str_steam_switzerland_rhb_g_3_4.png) | RhB G 3/4 | 1889 | 45 | 247 | Shunting | 0 | NARROW_NONE | Western Europe |
 | ![DHR B](vehicle_graphics/str_steam_india_dhr_b.png) | DHR B | 1889 | 25 | 100 | Shunting | 0 | NARROW_NONE | Asia |
+| ![RhB G 3/4](vehicle_graphics/str_steam_switzerland_rhb_g_3_4.png) | RhB G 3/4 | 1889 | 45 | 247 | Shunting | 0 | NARROW_NONE | Western Europe |
 | ![RENFE 040](vehicle_graphics/str_steam_spain_renfe_class_040.png) | RENFE 040 | 1891 | 55 | 750 | Shunting | 0 | BROAD_NONE | Southern Europe |
 | ![Saxon IV K](vehicle_graphics/str_steam_germany_saxon_iv_k.png) | Saxon IV K | 1892 | 30 | 206 | Shunting | 0 | NARROW_NONE | Western Europe |
-| ![JNR 860](vehicle_graphics/str_steam_japan_jnr_860.png) | JNR 860 | 1893 | 48 | 186 | Shunting | 0 | NARROW_NONE | Asia |
 | ![K.P.St.E. S 3](vehicle_graphics/str_steam_germany_prussian_s_3.png) | K.P.St.E. S 3 | 1893 | 100 | 580 | Universal | 0 | STANDARD_NONE | Western Europe |
+| ![JNR 860](vehicle_graphics/str_steam_japan_jnr_860.png) | JNR 860 | 1893 | 48 | 186 | Shunting | 0 | NARROW_NONE | Asia |
 | ![NSB XXI](vehicle_graphics/str_steam_norway_nsb_class_xxi.png) | NSB XXI | 1894 | 60 | 700 | Shunting | 0 | STANDARD_NONE | Northern Europe |
-| ![PRR D16](vehicle_graphics/str_steam_usa_prr_d16.png) | PRR D16 | 1895 | 128 | 850 | Express | 0 | STANDARD_NONE | North America |
 | ![Beira Railway BR6 F2 'Falcon'](vehicle_graphics/str_steam_mozambique_beira_railway_br6_f2_falcon.png) | Beira Railway BR6 F2 'Falcon' | 1895 | 30 | 120 | Shunting | 0 | NARROW_NONE | Africa |
 | ![Chinese Eastern Railway Kh](vehicle_graphics/str_steam_china_china_railways_h.png) | Chinese Eastern Railway Kh | 1895 | 70 | 850 | Light Freight | 0 | STANDARD_NONE | Asia |
+| ![PRR D16](vehicle_graphics/str_steam_usa_prr_d16.png) | PRR D16 | 1895 | 128 | 850 | Express | 0 | STANDARD_NONE | North America |
 | ![KkStB 99](vehicle_graphics/str_steam_austria_kkstb_99.png) | KkStB 99 | 1897 | 50 | 320 | Shunting | 0 | STANDARD_NONE | Western Europe |
 | ![Caledonian Railway 439](vehicle_graphics/str_steam_uk_caledonian_railway_439.png) | Caledonian Railway 439 | 1900 | 80 | 540 | Universal | 0 | STANDARD_NONE | Northern Europe |
 | ![NS 8100](vehicle_graphics/str_steam_netherlands_ns_8100.png) | NS 8100 | 1901 | 45 | 290 | Shunting | 0 | STANDARD_NONE | Western Europe |
-| ![SBB A 3/5](vehicle_graphics/str_steam_switzerland_sbb_a_3_5.png) | SBB A 3/5 | 1902 | 100 | 1340 | Universal | 0 | STANDARD_NONE | Western Europe |
 | ![SBB E 3/3](vehicle_graphics/str_steam_switzerland_sbb_e_3_3.png) | SBB E 3/3 | 1902 | 45 | 493 | Shunting | 0 | STANDARD_NONE | Western Europe |
+| ![SBB A 3/5](vehicle_graphics/str_steam_switzerland_sbb_a_3_5.png) | SBB A 3/5 | 1902 | 100 | 1340 | Universal | 0 | STANDARD_NONE | Western Europe |
 | ![RZD U](vehicle_graphics/str_steam_russia_rzd_u.png) | RZD U | 1906 | 115 | 1200 | Light Freight | 0 | BROAD_NONE | Asia |
-| ![NZR X](vehicle_graphics/str_steam_new_zealand_nzr_x_class.png) | NZR X | 1908 | 48 | 850 | Shunting | 0 | NARROW_NONE | Oceania |
 | ![FS 895](vehicle_graphics/str_steam_italy_fs_895.png) | FS 895 | 1908 | 40 | 500 | Shunting | 0 | STANDARD_NONE | Southern Europe |
+| ![NZR X](vehicle_graphics/str_steam_new_zealand_nzr_x_class.png) | NZR X | 1908 | 48 | 850 | Shunting | 0 | NARROW_NONE | Oceania |
 | ![AFE N1 2-6-0](vehicle_graphics/str_steam_uruguay_afe_n1_2_6_0.png) | AFE N1 2-6-0 | 1910 | 75 | 650 | Light Freight | 0 | STANDARD_NONE | South America |
-| ![CD 534.1](vehicle_graphics/str_steam_czech_republic_cd_5341.png) | CD 534.1 | 1910 | 60 | 1400 | Light Freight | 0 | STANDARD_NONE | Eastern Europe |
 | ![FCNEA 11B 2-8-0](vehicle_graphics/str_steam_argentina_fcnea_11b_2_8_0.png) | FCNEA 11B 2-8-0 | 1910 | 64 | 850 | Universal | 0 | STANDARD_NONE | South America |
 | ![DB 17.0-1 'Prussian S 10'](vehicle_graphics/str_steam_germany_prussian_s10.png) | DB 17.0-1 'Prussian S 10' | 1910 | 110 | 1500 | Universal | 0 | STANDARD_NONE | Western Europe |
-| ![SAR MD 2-6-6-2](vehicle_graphics/str_steam_south_africa_sar_md_class.png) | SAR MD 2-6-6-2 | 1910 | 50 | 1200 | Heavy Freight | 0 | NARROW_NONE | Africa |
+| ![CD 534.1](vehicle_graphics/str_steam_czech_republic_cd_5341.png) | CD 534.1 | 1910 | 60 | 1400 | Light Freight | 0 | STANDARD_NONE | Eastern Europe |
 | ![KkStB 299](vehicle_graphics/str_steam_austria_kkstb_299.png) | KkStB 299 | 1910 | 60 | 480 | Shunting | 0 | STANDARD_NONE | Western Europe |
-| ![GSWA 2-8-0 '8-Tender'](vehicle_graphics/str_steam_angola_south_west_african_2_8_0.png) | GSWA 2-8-0 '8-Tender' | 1911 | 60 | 750 | Shunting | 0 | NARROW_NONE | Africa |
-| ![KkStB 310](vehicle_graphics/str_steam_austria_kkstb_310.png) | KkStB 310 | 1911 | 100 | 1885 | Light Freight | 0 | STANDARD_NONE | Western Europe |
+| ![SAR MD 2-6-6-2](vehicle_graphics/str_steam_south_africa_sar_md_class.png) | SAR MD 2-6-6-2 | 1910 | 50 | 1200 | Heavy Freight | 0 | NARROW_NONE | Africa |
 | ![Eritrean Railway R.440](vehicle_graphics/str_steam_eritrea_eritrean_railway_r440.png) | Eritrean Railway R.440 | 1911 | 40 | 250 | Shunting | 0 | NARROW_NONE | Africa |
+| ![GSWA 2-8-0 '8-Tender'](vehicle_graphics/str_steam_angola_south_west_african_2_8_0.png) | GSWA 2-8-0 '8-Tender' | 1911 | 60 | 750 | Shunting | 0 | NARROW_NONE | Africa |
 | ![SNCF 141TA](vehicle_graphics/str_steam_france_sncf_141ta.png) | SNCF 141TA | 1911 | 70 | 1360 | Universal | 0 | STANDARD_NONE | Western Europe |
-| ![JNR 9600](vehicle_graphics/str_steam_japan_jnr_9600.png) | JNR 9600 | 1913 | 65 | 870 | Light Freight | 0 | NARROW_NONE | Asia |
+| ![KkStB 310](vehicle_graphics/str_steam_austria_kkstb_310.png) | KkStB 310 | 1911 | 100 | 1885 | Light Freight | 0 | STANDARD_NONE | Western Europe |
 | ![SNCF 140C](vehicle_graphics/str_steam_france_sncf_140c.png) | SNCF 140C | 1913 | 80 | 1500 | Universal | 0 | STANDARD_NONE | Western Europe |
 | ![SBB C 5/6 'Elephant'](vehicle_graphics/str_steam_switzerland_sbb_c_5_6.png) | SBB C 5/6 'Elephant' | 1913 | 65 | 1620 | Heavy Freight | 0 | STANDARD_NONE | Western Europe |
-| ![HZ 51 [MAV 375]](vehicle_graphics/str_steam_croatia_hz_51.png) | HZ 51 [MAV 375] | 1914 | 60 | 330 | Shunting | 0 | STANDARD_NONE | Eastern Europe |
+| ![JNR 9600](vehicle_graphics/str_steam_japan_jnr_9600.png) | JNR 9600 | 1913 | 65 | 870 | Light Freight | 0 | NARROW_NONE | Asia |
 | ![NSWGR C35](vehicle_graphics/str_steam_australia_nswgr_c35.png) | NSWGR C35 | 1914 | 80 | 1400 | Universal | 0 | STANDARD_NONE | Oceania |
 | ![NYC H-6A 'Light Mikado'](vehicle_graphics/str_steam_usa_nyc_h_6a_light_mikado.png) | NYC H-6A 'Light Mikado' | 1914 | 96 | 2990 | Heavy Freight | 0 | STANDARD_NONE | North America |
+| ![HZ 51 [MAV 375]](vehicle_graphics/str_steam_croatia_hz_51.png) | HZ 51 [MAV 375] | 1914 | 60 | 330 | Shunting | 0 | STANDARD_NONE | Eastern Europe |
 | ![LNER N7](vehicle_graphics/str_steam_uk_lner_n7.png) | LNER N7 | 1915 | 75 | 850 | Universal | 0 | STANDARD_NONE | Northern Europe |
 | ![RZD E](vehicle_graphics/str_steam_russia_rzd_e.png) | RZD E | 1915 | 89 | 1600 | Heavy Freight | 0 | BROAD_NONE | Asia |
 | ![FS 880](vehicle_graphics/str_steam_italy_fs_880.png) | FS 880 | 1916 | 75 | 540 | Universal | 0 | STANDARD_NONE | Southern Europe |
 | ![Katanga Mikado 2-8-2](vehicle_graphics/str_steam_south_africa_katanga_mikado_2_8_2.png) | Katanga Mikado 2-8-2 | 1917 | 55 | 950 | Shunting | 0 | NARROW_NONE | Africa |
-| ![Saxon XX HV](vehicle_graphics/str_steam_germany_saxon_xx_hv.png) | Saxon XX HV | 1918 | 115 | 1780 | Heavy Freight | 0 | STANDARD_NONE | Western Europe |
 | ![Israel/Palestine Railways H](vehicle_graphics/str_steam_israel_israel_railways_h.png) | Israel/Palestine Railways H | 1918 | 85 | 1050 | Light Freight | 0 | STANDARD_NONE | Asia |
+| ![Saxon XX HV](vehicle_graphics/str_steam_germany_saxon_xx_hv.png) | Saxon XX HV | 1918 | 115 | 1780 | Heavy Freight | 0 | STANDARD_NONE | Western Europe |
 | ![NMBS Type 7](vehicle_graphics/str_steam_belgium_nmbs_type_7.png) | NMBS Type 7 | 1921 | 110 | 1600 | Universal | 0 | STANDARD_NONE | Western Europe |
 | ![DSER 15](vehicle_graphics/str_steam_ireland_dser_15.png) | DSER 15 | 1922 | 120 | 550 | Express | 0 | BROAD_NONE | Northern Europe |
 | ![Sierra Railroad 28](vehicle_graphics/str_steam_usa_sierra_railroad_28.png) | Sierra Railroad 28 | 1922 | 65 | 850 | Universal | 0 | STANDARD_NONE | North America |
-| ![Canadian National U-1-a ](vehicle_graphics/str_steam_canada_cn_u_1_class.png) | Canadian National U-1-a  | 1923 | 130 | 3200 | Heavy Freight | 0 | STANDARD_NONE | North America |
 | ![East African Railway 23](vehicle_graphics/str_steam_kenya_east_african_railway_23.png) | East African Railway 23 | 1923 | 75 | 1100 | Light Freight | 0 | NARROW_NONE | Africa |
 | ![NZR WAB](vehicle_graphics/str_steam_new_zealand_nzr_wab.png) | NZR WAB | 1923 | 97 | 1000 | Light Freight | 0 | NARROW_NONE | Oceania |
 | ![PKP Ok22](vehicle_graphics/str_steam_poland_pkp_ok22.png) | PKP Ok22 | 1923 | 100 | 980 | Light Freight | 0 | STANDARD_NONE | Eastern Europe |
 | ![FS 480](vehicle_graphics/str_steam_italy_fs_480.png) | FS 480 | 1923 | 70 | 1500 | Light Freight | 0 | STANDARD_NONE | Southern Europe |
 | ![JNR D50](vehicle_graphics/str_steam_japan_jnr_d50.png) | JNR D50 | 1923 | 70 | 1280 | Universal | 0 | NARROW_NONE | Asia |
+| ![Canadian National U-1-a ](vehicle_graphics/str_steam_canada_cn_u_1_class.png) | Canadian National U-1-a  | 1923 | 130 | 3200 | Heavy Freight | 0 | STANDARD_NONE | North America |
 | ![Mozambique Railway 101-104](vehicle_graphics/str_steam_mozambique_mozambique_railways_no_101.png) | Mozambique Railway 101-104 | 1923 | 96 | 1207 | Universal | 0 | NARROW_NONE | Africa |
 | ![HZ 11/MAV 424](vehicle_graphics/str_steam_croatia_hz_11.png) | HZ 11/MAV 424 | 1924 | 90 | 1350 | Heavy Freight | 0 | STANDARD_NONE | Eastern Europe |
 | ![Indian Railways XB](vehicle_graphics/str_steam_india_indian_railways_xb_class.png) | Indian Railways XB | 1927 | 110 | 2150 | Heavy Freight | 0 | BROAD_NONE | Asia |
@@ -755,38 +756,38 @@
 | ![GWR 4900 'Hall'](vehicle_graphics/str_steam_uk_gwr_4900.png) | GWR 4900 'Hall' | 1928 | 130 | 1450 | Express | 0 | STANDARD_NONE | Northern Europe |
 | ![GWR 5700 'Pannier'](vehicle_graphics/str_steam_uk_gwr_5700.png) | GWR 5700 'Pannier' | 1929 | 72 | 700 | Universal | 0 | STANDARD_NONE | Northern Europe |
 | ![NSWGR D57](vehicle_graphics/str_steam_australia_nswgr_d57.png) | NSWGR D57 | 1929 | 80 | 2800 | Heavy Freight | 0 | STANDARD_NONE | Oceania |
-| ![AT&SF 5000 'Madame Queen'](vehicle_graphics/str_steam_usa_at_sf_5000.png) | AT&SF 5000 'Madame Queen' | 1930 | 110 | 5000 | Heavy Freight | 0 | STANDARD_NONE | North America |
-| ![French West African Golwé](vehicle_graphics/str_steam_ivory_coast_golwe_2_6_0_0_6_2t.png) | French West African Golwé | 1930 | 40 | 939 | Shunting | 0 | NARROW_NONE | Africa |
 | ![FCCA PS11](vehicle_graphics/str_steam_argentina_fcca_ps11.png) | FCCA PS11 | 1930 | 160 | 1500 | Express | 0 | BROAD_NONE | South America |
+| ![French West African Golwé](vehicle_graphics/str_steam_ivory_coast_golwe_2_6_0_0_6_2t.png) | French West African Golwé | 1930 | 40 | 939 | Shunting | 0 | NARROW_NONE | Africa |
 | ![NS 6300 'De Beul'](vehicle_graphics/str_steam_netherlands_ns_6300.png) | NS 6300 'De Beul' | 1930 | 90 | 1609 | Universal | 0 | STANDARD_NONE | Western Europe |
-| ![PKP OKz32](vehicle_graphics/str_steam_poland_pkp_okz32.png) | PKP OKz32 | 1934 | 75 | 1868 | Universal | 0 | STANDARD_NONE | Eastern Europe |
+| ![AT&SF 5000 'Madame Queen'](vehicle_graphics/str_steam_usa_at_sf_5000.png) | AT&SF 5000 'Madame Queen' | 1930 | 110 | 5000 | Heavy Freight | 0 | STANDARD_NONE | North America |
 | ![LMS 5MT 'Black Five'](vehicle_graphics/str_steam_uk_lms_5mt_black_five.png) | LMS 5MT 'Black Five' | 1934 | 145 | 1600 | Express | 0 | STANDARD_NONE | Northern Europe |
 | ![SNCF 150B](vehicle_graphics/str_steam_france_sncf_150b.png) | SNCF 150B | 1934 | 105 | 1500 | Universal | 0 | STANDARD_NONE | Western Europe |
+| ![PKP OKz32](vehicle_graphics/str_steam_poland_pkp_okz32.png) | PKP OKz32 | 1934 | 75 | 1868 | Universal | 0 | STANDARD_NONE | Eastern Europe |
 | ![RZD 9P](vehicle_graphics/str_steam_russia_rzd_9p.png) | RZD 9P | 1935 | 35 | 450 | Shunting | 0 | BROAD_NONE | Asia |
 | ![LNER A4 'Gresley'](vehicle_graphics/str_steam_uk_lner_a4_gresley.png) | LNER A4 'Gresley' | 1935 | 140 | 2200 | Express | 0 | STANDARD_NONE | Northern Europe |
 | ![MAV 242](vehicle_graphics/str_steam_hungary_mav_242.png) | MAV 242 | 1936 | 120 | 618 | Express | 0 | STANDARD_NONE | Eastern Europe |
-| ![DSB E](vehicle_graphics/str_steam_denmark_dsb_e.png) | DSB E | 1937 | 110 | 1600 | Universal | 0 | STANDARD_NONE | Northern Europe |
 | ![DRB Class 52](vehicle_graphics/str_steam_germany_db_52.png) | DRB Class 52 | 1937 | 80 | 1600 | Heavy Freight | 0 | STANDARD_NONE | Western Europe |
 | ![CPR 'Royal Hudson'](vehicle_graphics/str_steam_canada_cpr_royal_hudson.png) | CPR 'Royal Hudson' | 1937 | 144 | 3100 | Express | 0 | STANDARD_NONE | North America |
+| ![DSB E](vehicle_graphics/str_steam_denmark_dsb_e.png) | DSB E | 1937 | 110 | 1600 | Universal | 0 | STANDARD_NONE | Northern Europe |
 | ![Zimbabwe Railways 15](vehicle_graphics/str_steam_zimbabwe_zimbabwe_railways_15.png) | Zimbabwe Railways 15 | 1940 | 100 | 1600 | Heavy Freight | 0 | NARROW_NONE | Africa |
 | ![Iraqi State Railways PC](vehicle_graphics/str_steam_iraq_iraqi_state_railways_pc_class.png) | Iraqi State Railways PC | 1940 | 110 | 1640 | Heavy Freight | 0 | STANDARD_NONE | Asia |
-| ![UP 4000 'Big Boy'](vehicle_graphics/str_steam_usa_up_4000_big_boy.png) | UP 4000 'Big Boy' | 1941 | 128 | 6290 | Heavy Freight | 0 | STANDARD_NONE | North America |
 | ![Southern Pacific GS-4 'Daylight'](vehicle_graphics/str_steam_usa_southern_pacific_gs_4_daylight.png) | Southern Pacific GS-4 'Daylight' | 1941 | 177 | 5500 | Express | 0 | STANDARD_NONE | North America |
+| ![UP 4000 'Big Boy'](vehicle_graphics/str_steam_usa_up_4000_big_boy.png) | UP 4000 'Big Boy' | 1941 | 128 | 6290 | Heavy Freight | 0 | STANDARD_NONE | North America |
 | ![ENR 1100 [LMS Fowler 3F / WD 0-6-0T]](vehicle_graphics/str_steam_egypt_enr_1100.png) | ENR 1100 [LMS Fowler 3F / WD 0-6-0T] | 1942 | 65 | 560 | Universal | 0 | STANDARD_NONE | Africa |
 | ![South Australian Railways 520](vehicle_graphics/str_steam_australia_south_australian_railways_520.png) | South Australian Railways 520 | 1943 | 112 | 2600 | Heavy Freight | 0 | BROAD_NONE | Oceania |
 | ![SEK Lb](vehicle_graphics/str_steam_greece_sek_lb.png) | SEK Lb | 1943 | 75 | 1600 | Light Freight | 0 | STANDARD_NONE | Southern Europe |
 | ![NMBS/SNCB Type 29](vehicle_graphics/str_steam_belgium_nmbs_sncb_type_29.png) | NMBS/SNCB Type 29 | 1945 | 96 | 1970 | Universal | 0 | STANDARD_NONE | Western Europe |
 | ![CD 459.0](vehicle_graphics/str_steam_czech_republic_cd_4590.png) | CD 459.0 | 1946 | 80 | 1857 | Heavy Freight | 0 | STANDARD_NONE | Eastern Europe |
-| ![JNR E10](vehicle_graphics/str_steam_japan_jnr_class_e10.png) | JNR E10 | 1948 | 65 | 1340 | Universal | 0 | NARROW_NONE | Asia |
 | ![LNER A1 'Peppercorn'](vehicle_graphics/str_steam_uk_lner_a1_peppercorn.png) | LNER A1 'Peppercorn' | 1948 | 160 | 2400 | Express | 0 | STANDARD_NONE | Northern Europe |
+| ![JNR E10](vehicle_graphics/str_steam_japan_jnr_class_e10.png) | JNR E10 | 1948 | 65 | 1340 | Universal | 0 | NARROW_NONE | Asia |
 | ![GWR 1600](vehicle_graphics/str_steam_uk_gwr_1600_class.png) | GWR 1600 | 1949 | 65 | 500 | Universal | 0 | STANDARD_NONE | Northern Europe |
 | ![Victorian Railways R](vehicle_graphics/str_steam_australia_victorian_railways_r_class.png) | Victorian Railways R | 1951 | 130 | 2400 | Heavy Freight | 0 | BROAD_NONE | Oceania |
-| ![PKP OI49](vehicle_graphics/str_steam_poland_pkp_oi49.png) | PKP OI49 | 1951 | 100 | 1290 | Heavy Freight | 0 | STANDARD_NONE | Eastern Europe |
 | ![HSH 01](vehicle_graphics/str_steam_albania_hsh_01.png) | HSH 01 | 1951 | 80 | 1200 | Light Freight | 0 | STANDARD_NONE | Southern Europe |
-| ![DB 99.77-79](vehicle_graphics/str_steam_germany_db_9977_79.png) | DB 99.77-79 | 1952 | 30 | 592 | Shunting | 0 | NARROW_NONE | Western Europe |
+| ![PKP OI49](vehicle_graphics/str_steam_poland_pkp_oi49.png) | PKP OI49 | 1951 | 100 | 1290 | Heavy Freight | 0 | STANDARD_NONE | Eastern Europe |
 | ![NSWGR AD60](vehicle_graphics/str_steam_australia_nswgr_ad60.png) | NSWGR AD60 | 1952 | 95 | 3500 | Heavy Freight | 0 | STANDARD_NONE | Oceania |
-| ![SAR 25 'Condenser'](vehicle_graphics/str_steam_south_africa_sar_25.png) | SAR 25 'Condenser' | 1953 | 100 | 3000 | Heavy Freight | 0 | NARROW_NONE | Africa |
+| ![DB 99.77-79](vehicle_graphics/str_steam_germany_db_9977_79.png) | DB 99.77-79 | 1952 | 30 | 592 | Shunting | 0 | NARROW_NONE | Western Europe |
 | ![SAR GMA 4-8-2+2-8-4](vehicle_graphics/str_steam_south_africa_sar_gma_4_8_2_2_8_4.png) | SAR GMA 4-8-2+2-8-4 | 1953 | 85 | 2500 | Heavy Freight | 0 | NARROW_NONE | Africa |
+| ![SAR 25 'Condenser'](vehicle_graphics/str_steam_south_africa_sar_25.png) | SAR 25 'Condenser' | 1953 | 100 | 3000 | Heavy Freight | 0 | NARROW_NONE | Africa |
 | ![RZD P36](vehicle_graphics/str_steam_russia_rzd_p36.png) | RZD P36 | 1954 | 125 | 3000 | Heavy Freight | 0 | BROAD_NONE | Asia |
 | ![FCAB 4-8-2 Vulcan 'Mountain'](vehicle_graphics/str_steam_chile_fcab_4_8_2.png) | FCAB 4-8-2 Vulcan 'Mountain' | 1954 | 85 | 1457 | Heavy Freight | 0 | NARROW_NONE | South America |
 | ![East African Railway 31](vehicle_graphics/str_steam_kenya_east_african_railway_31.png) | East African Railway 31 | 1955 | 95 | 1650 | Light Freight | 0 | NARROW_NONE | Africa |
