@@ -5606,7 +5606,7 @@ item(FEAT_TRAINS, item_emu_australia_melbourne_hcmt_munnel, 8074) {}
 item(FEAT_TRAINS, item_emu_australia_melbourne_hitachi, 8075) {}
 item(FEAT_TRAINS, item_emu_australia_melbourne_harris, 8076) {}
 item(FEAT_TRAINS, item_emu_australia_melbourne_nexas, 8077) {}
-// 8078 free
+item(FEAT_TRAINS, item_emu_australia_melbourne_tait, 8078) {}
 // 8079 free
 // 8080 free
 // 8081 free

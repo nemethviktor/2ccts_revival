@@ -1088,6 +1088,9 @@
 #include "src/EMU/Australia_Melbourne_Nexas_graphics.pnml"
 #include "src/EMU/Australia_Melbourne_Nexas_item.pnml"
 
+#include "src/EMU/Australia_Melbourne_Tait_graphics.pnml"
+#include "src/EMU/Australia_Melbourne_Tait_item.pnml"
+
 
 //// ELECTRIC
 #include "src/Electric/Switzerland_RhB_DE_2_2_graphics.pnml"

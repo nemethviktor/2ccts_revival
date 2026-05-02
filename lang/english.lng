@@ -1002,6 +1002,7 @@ str_emu_australia_melbourne_hcmt_munnel                           :Melbourne HCM
 str_emu_australia_melbourne_hitachi                               :Melbourne Hitachi Trains (EMU, 1500V DC)
 str_emu_australia_melbourne_harris                                :Melbourne Harris Trains [2-door] (EMU, 1500V DC)
 str_emu_australia_melbourne_nexas                                 :Melbourne Siemens Nexas (EMU, 1500V DC)
+str_emu_australia_melbourne_tait                                  :Melbourne Tait Trains (EMU, 1500V DC)
 str_cargoemu_japan_jr_freight_m250                                :JR Freight M250 (EMU, 1500V DC)
 
 # Maglevengine

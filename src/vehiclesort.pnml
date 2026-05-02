@@ -540,6 +540,7 @@ item_dmu_argentina_fcgu_cmm_400_2, /*Year: 2015*/
 #define SORTING_EMU \
 item_emu_usa_prr_mp54, /*Year: 1908*/ \
 item_emu_australia_victorian_railways_swing_door, /*Year: 1917*/ \
+item_emu_australia_melbourne_tait, /*Year: 1919*/ \
 item_emu_netherlands_ns_mat24, /*Year: 1924*/ \
 item_emu_poland_pkp_ew90, /*Year: 1924*/ \
 item_emu_austria_obb_4041, /*Year: 1929*/ \

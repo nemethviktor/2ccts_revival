@@ -31,6 +31,7 @@
 		- `Melbourne Hitachi Trains` (1500V DC)
 		- `Melbourne Harris Trains [2-door]` (1500V DC)
 		- `Melbourne Siemens Nexas` (1500V DC)
+		- `Melbourne Tait Trains` (1500V DC) -- these have been simplified to fit the standard EMU template
 
 **3.3-RC2 [20260427]**
 - CODE CHANGES:
