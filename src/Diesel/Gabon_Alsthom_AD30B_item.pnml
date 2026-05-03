@@ -20,7 +20,7 @@ item(FEAT_TRAINS, item_diesel_gabon_alsthom_ad30b) {
         model_life: 45;
         vehicle_life: 40;
         retire_early: 20;
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
         cost_factor: 66.24229;
         running_cost_factor: 54.86635;
         speed: 80 km/h;
@@ -37,7 +37,7 @@ item(FEAT_TRAINS, item_diesel_gabon_alsthom_ad30b) {
         cargo_age_period: 185;
         misc_flags: bitmask(TRAIN_FLAG_2CC);
         refit_cost: 0;
-        ai_special_flag: AI_FLAG_PASSENGER;
+        ai_special_flag: AI_FLAG_PASSENGER | AI_FLAG_CARGO;
         track_type: [STANDARD_GAUGE_RAILTYPE_NONE];
         running_cost_base: RUNNING_COST_DIESEL;
         engine_class: ENGINE_CLASS_DIESEL;

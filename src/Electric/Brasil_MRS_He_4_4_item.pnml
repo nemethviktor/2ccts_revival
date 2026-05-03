@@ -18,7 +18,7 @@ item(FEAT_TRAINS, item_electric_brasil_mrs_he_4_4) {
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 45;
         retire_early: 20;
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
         cost_factor: 94.46796;
         running_cost_factor: 82.03223;
         speed: 60 km/h;
@@ -35,7 +35,7 @@ item(FEAT_TRAINS, item_electric_brasil_mrs_he_4_4) {
         cargo_age_period: 185;
         misc_flags: bitmask(TRAIN_FLAG_2CC);
         refit_cost: 0;
-        ai_special_flag: AI_FLAG_PASSENGER;
+        ai_special_flag: AI_FLAG_PASSENGER | AI_FLAG_CARGO;
         track_type: [BROAD_GAUGE_RAILTYPE_3KV];
         running_cost_base: RUNNING_COST_ELECTRIC;
         engine_class: ENGINE_CLASS_ELECTRIC;
@@ -47,7 +47,7 @@ item(FEAT_TRAINS, item_electric_brasil_mrs_he_4_4) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/america/south", "flag/BR", "power/electric/dc", "role/light_freight"];
+	badges: ["region/america/south", "flag/BR", "power/electric/dc", "role/universal"];
 
     }
     graphics {

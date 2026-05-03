@@ -582,7 +582,7 @@ str_steam_australia_south_australian_railways_520,South Australian Railways 520
 str_steam_australia_nswgr_ad60,NSWGR AD60
 str_steam_uruguay_afe_n1_2_6_0,AFE N1 2-6-0
 str_steam_argentina_fcca_ps11,FCCA PS11
-str_steam_south_africa_harbour_board_el_0_4_0,Harbour Board EL 0-4-0 'Little Bess'
+str_steam_south_africa_harbour_board_el_0_4_0,East London Harbour 0-4-0VB
 str_steam_mozambique_beira_railway_br6_f2_falcon,Beira Railway BR6 F2 'Falcon'
 str_steam_eritrea_eritrean_railway_r440,Eritrean Railway R.440
 str_steam_kenya_east_african_railway_23,East African Railway 23
@@ -1309,3 +1309,17 @@ str_diesel_australia_nsw_49,NSWGR 49
 str_diesel_new_zealand_da_class,NZR DA
 str_diesel_new_zealand_db_class,NZR DB
 str_diesel_australia_nsw_47,NSWGR 47
+str_steam_brazil_baroneza,Baroneza
+str_steam_argentina_la_portena,La Portena
+str_steam_brazil_dom_pedro_segundo_119,Dom Pedro Segundo 119
+str_steam_peru_no8_monsefu,No8 'Monsefu'
+str_steam_paraguay_fccp_q_class,FCCP Q Class
+str_steam_argentina_fcca_ps10_class,FCCA PS10 Class
+str_steam_chile_anglo_chilean_nitrate_no_97,Anglo-Chilean Nitrate No. 97 to 102
+str_electric_brazil_slm_winterthur_bbc_1d1,SLM-Winterthur-BBC 1-D-1
+str_electric_brazil_ge_2cc2,GE 2-C+C-2
+str_steam_chile_la_copiapo,La Copiapo
+str_electric_costa_rica_aeg_pacific_a1a_a1a,AEG A1A+A1A
+str_dmu_argentina_ganz_arpad_bariloche,Ganz 'Arpad' Bariloche DMU
+str_steam_brazil_sao_paulo_railway_13,Sao Paulo Railway No. 13 and 14
+str_dmu_argentina_ganz_arpad_cmu_4701_transandino,Ganz 'Arpad' CMU 4701 Transandino

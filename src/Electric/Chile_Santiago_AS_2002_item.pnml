@@ -32,7 +32,7 @@ item(FEAT_TRAINS, item_mtro_chile_santiago_as_2002) {
         cargo_age_period: 185;
         misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
         refit_cost: 0;
-        ai_special_flag: AI_FLAG_PASSENGER;
+        ai_special_flag: AI_FLAG_PASSENGER | AI_FLAG_CARGO;
         track_type: [STANDARD_GAUGE_RAILTYPE_3RD];
         running_cost_base: RUNNING_COST_ELECTRIC;
         engine_class: ENGINE_CLASS_MAGLEV;

@@ -747,6 +747,7 @@ str_rbd_italy_fs_aln_668                                          :FS ALn 668 (a
 str_dmu_denmark_dsb_ic4                                           :DSB IC4 (automotrice diesel)
 str_dmu_croatia_hz_7022                                           :HZ 7022 (automotrice diesel)
 str_dmu_germany_db_vt_040_flying_hamburger                        :DB VT 04.0 'Amburghese Volante' (automotrice diesel)
+# str_dmu_argentina_ganz_arpad_bariloche                            : not translated
 str_dmu_australia_nswgr_silver_city_comet                         :NSWGR 'Silver City Comet' (automotrice diesel)
 str_dmu_czech_republic_cd_m131                                    :CD M131 (automotrice diesel)
 str_dmu_germany_db_vt_085                                         :DB VT 08.5 (automotrice diesel)
@@ -796,6 +797,7 @@ str_dmu_ghana_ghana_railways_demu                                 :Ghana Railway
 str_dmu_australia_queensland_rail_diesel_tilt_train               :Ferrovie di Queensland pendolino diesel (automotrice diesel)
 str_dmu_canada_up_express_nippon_sharyo_dmu                       :UP Express Nippon Sharyo DMU (automotrice diesel)
 str_dmu_argentina_fcgu_cmm_400_2                                  :FCGU CMM 400-2 (automotrice diesel)
+# str_dmu_argentina_ganz_arpad_cmu_4701_transandino                 : not translated
 str_mu_mu_wagon_unpowered                                         :Carrozza per treno articolato (non motorizzata)
 str_mu_mu_wagon_powered                                           :Carrozza per treno articolato (motorizzata)
 str_mu_mu_cargo_wagon_unpowered                                   :Carrozza per treno merci articolato (non motorizzata)
@@ -938,6 +940,9 @@ str_electric_germany_prussian_es_6                                :K.P.St.E. ES 
 # str_electric_australia_nsw_85                                     : not translated
 # str_electric_australia_sra_8650                                   : not translated
 # str_electric_australia_nsw_46                                     : not translated
+# str_electric_brazil_slm_winterthur_bbc_1d1                        : not translated
+# str_electric_brazil_ge_2cc2                                       : not translated
+# str_electric_costa_rica_aeg_pacific_a1a_a1a                       : not translated
 
 # Electricrailbus
 str_rbe_switzerland_ab_cfe_3_3                                    :AB CFe 3/3 (automotrice elettrica, Electric 1500V DC)
@@ -961,7 +966,6 @@ str_rbe_poland_pkp_en81                                           :PKP EN81 (aut
 str_rbe_usa_septa_silverliner_v                                   :SEPTA Silverliner V (automotrice elettrica, Electric OHLE)
 str_rbe_germany_db_4792                                           :DB 479.2 (automotrice elettrica, Electric 1500V DC)
 str_rbe_germany_buckower_kleinbahn_nr_1_3                         :Buckower Kleinbahn Nr. 1-3 (automotrice elettrica, Electric 1500V DC)
-str_emu_usa_prr_mp54                                              :PRR MP54 (automotrice elettrica, Electric Dual-Pickup)
 
 # Emu
 str_emu_netherlands_ns_mat24                                      :NS Mat'24 (elettrotreno, Electric 1500V DC)
@@ -1009,6 +1013,7 @@ str_emu_south_africa_gautrain_electrostar                         :Gautrain Elec
 str_emu_italy_ntv_agv                                             :NTV AGV (elettrotreno, Electric OHLE)
 str_emu_netherlands_ns_4800_hsa                                   :NS 4800 HSA (elettrotreno, Electric OHLE)
 str_emu_italy_ntv_agv_duplex                                      :NTV AGV Duplex (elettrotreno, Electric OHLE)
+str_emu_usa_prr_mp54                                              :PRR MP54 (elettrotreno, Electric Dual-Pickup)
 str_emu_australia_victorian_railways_swing_door                   :Ferrovie Vittoriane 'Swing Door' (elettrotreno, Electric 1500V DC)
 str_emu_poland_pkp_ew90                                           :PKP EW90 (elettrotreno, Electric 1500V DC)
 str_emu_usa_erie_lackawanna_mu_cars                               :Erie Lackawanna Carrozze dell'Unità Multiple (elettrotreno, Electric 3kV DC)
@@ -1256,6 +1261,15 @@ str_steam_china_railways_qj                                       :Ferrovie Cine
 # str_steam_australia_sar_600                                       : not translated
 # str_steam_australia_smr_10                                        : not translated
 # str_steam_australia_vr_h                                          : not translated
+# str_steam_brazil_baroneza                                         : not translated
+# str_steam_argentina_la_portena                                    : not translated
+# str_steam_brazil_dom_pedro_segundo_119                            : not translated
+# str_steam_peru_no8_monsefu                                        : not translated
+# str_steam_paraguay_fccp_q_class                                   : not translated
+# str_steam_argentina_fcca_ps10_class                               : not translated
+# str_steam_chile_anglo_chilean_nitrate_no_97                       : not translated
+# str_steam_chile_la_copiapo                                        : not translated
+# str_steam_brazil_sao_paulo_railway_13                             : not translated
 
 # Steamrailbus
 str_rbs_austria_nolb_1                                            :NOLB 1 (automotrice a vapore)

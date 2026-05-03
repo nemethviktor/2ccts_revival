@@ -46,7 +46,7 @@ item(FEAT_TRAINS, item_dmu_ghana_ghana_railways_demu) {
         cargo_age_period: 185;
         misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
         refit_cost: 0;
-        ai_special_flag: AI_FLAG_PASSENGER;
+        ai_special_flag: AI_FLAG_PASSENGER | AI_FLAG_CARGO;
         track_type: [NARROW_GAUGE_RAILTYPE_NONE];
         running_cost_base: RUNNING_COST_DIESEL;
         engine_class: ENGINE_CLASS_DIESEL;

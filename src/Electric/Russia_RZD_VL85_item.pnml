@@ -18,7 +18,7 @@ item(FEAT_TRAINS, item_electric_russia_rzd_vl85) {
         model_life: 45;
         vehicle_life: 40;
         retire_early: 20;
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
         cost_factor: 146.003;
         running_cost_factor: 116.77231;
         speed: 110 km/h;
@@ -35,7 +35,7 @@ item(FEAT_TRAINS, item_electric_russia_rzd_vl85) {
         cargo_age_period: 185;
         misc_flags: bitmask(TRAIN_FLAG_2CC);
         refit_cost: 0;
-        ai_special_flag: AI_FLAG_PASSENGER;
+        ai_special_flag: AI_FLAG_PASSENGER | AI_FLAG_CARGO;
         track_type: [BROAD_GAUGE_RAILTYPE_25KV];
         running_cost_base: RUNNING_COST_ELECTRIC;
         engine_class: ENGINE_CLASS_ELECTRIC;

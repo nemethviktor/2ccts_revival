@@ -34,7 +34,7 @@ item(FEAT_TRAINS, item_emu_austria_westbahn_4010_kiss) {
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 45;
         retire_early: 20;
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
         cost_factor: 85.92269;
         running_cost_factor: 77.55388;
         speed: 200 km/h;
@@ -51,7 +51,7 @@ item(FEAT_TRAINS, item_emu_austria_westbahn_4010_kiss) {
         cargo_age_period: 185;
         misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
         refit_cost: 0;
-        ai_special_flag: AI_FLAG_PASSENGER;
+        ai_special_flag: AI_FLAG_PASSENGER | AI_FLAG_CARGO;
         track_type: [STANDARD_GAUGE_RAILTYPE_OHLE];
         running_cost_base: RUNNING_COST_ELECTRIC;
         engine_class: ENGINE_CLASS_ELECTRIC;
@@ -79,7 +79,7 @@ item(FEAT_TRAINS, item_emu_austria_westbahn_4010_kiss) {
         default: switch_emu_austria_westbahn_4010_kiss_reversed;
     }
     livery_override (item_mu_mu_wagon_unpowered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
         running_cost_factor: int(200/10);
         weight: int(78*1/2);
         cargo_capacity: 140;
@@ -87,7 +87,7 @@ item(FEAT_TRAINS, item_emu_austria_westbahn_4010_kiss) {
         default: switch_emu_austria_westbahn_4010_kiss_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
         running_cost_factor: (round(37.52640058532809));
         power: int(5340*1/2);
         weight: int(78*3/4);

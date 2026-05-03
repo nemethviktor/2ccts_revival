@@ -7,7 +7,7 @@
 // Data from: https://en.wikipedia.org/wiki/Materfer_CMM_400-2
 
 // Notes:
-//// VEHIDCODE: dmu_Argentina_FCGU_CMM_400_2 -- //en.wikipedia.org/wiki/Materfer_CMM_400-2
+//// VEHIDCODE: dmu_Argentina_FCGU_CMM_400_2 -- //en.wikipedia.org/wiki/General_Urquiza_Railway]per wiki[/url]. It shouldn't have both gauges otherwise it can run on both at the same time which suggests it's a variable gauge train when it's not
 
 
 // Cargo capacity
@@ -50,8 +50,8 @@ item(FEAT_TRAINS, item_dmu_argentina_fcgu_cmm_400_2) {
         cargo_age_period: 185;
         misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
         refit_cost: 0;
-        ai_special_flag: AI_FLAG_PASSENGER;
-        track_type: [STANDARD_GAUGE_RAILTYPE_NONE, NARROW_GAUGE_RAILTYPE_NONE, BROAD_GAUGE_RAILTYPE_NONE];
+        ai_special_flag: AI_FLAG_PASSENGER | AI_FLAG_CARGO;
+        track_type: [STANDARD_GAUGE_RAILTYPE_NONE];
         running_cost_base: RUNNING_COST_DIESEL;
         engine_class: ENGINE_CLASS_DIESEL;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 0, DISABLE_WAGON_POWER);

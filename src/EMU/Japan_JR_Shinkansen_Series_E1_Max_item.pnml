@@ -33,7 +33,7 @@ item(FEAT_TRAINS, item_emu_japan_jr_shinkansen_series_e1_max) {
         model_life: 45;
         vehicle_life: 40;
         retire_early: 20;
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
         cost_factor: 64.35478;
         running_cost_factor: 57.81324;
         speed: 240 km/h;
@@ -50,7 +50,7 @@ item(FEAT_TRAINS, item_emu_japan_jr_shinkansen_series_e1_max) {
         cargo_age_period: 185;
         misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
         refit_cost: 0;
-        ai_special_flag: AI_FLAG_PASSENGER;
+        ai_special_flag: AI_FLAG_PASSENGER | AI_FLAG_CARGO;
         track_type: [STANDARD_GAUGE_RAILTYPE_25KV];
         running_cost_base: RUNNING_COST_ELECTRIC;
         engine_class: ENGINE_CLASS_ELECTRIC;
@@ -78,7 +78,7 @@ item(FEAT_TRAINS, item_emu_japan_jr_shinkansen_series_e1_max) {
         default: switch_emu_japan_jr_shinkansen_series_e1_max_reversed;
     }
     livery_override (item_mu_mu_wagon_unpowered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
         running_cost_factor: int(240/10);
         weight: int(59*1/2);
         visual_effect_and_powered: switch_emu_japan_jr_shinkansen_series_e1_max_visual_effect_and_powered_position;
@@ -87,7 +87,7 @@ item(FEAT_TRAINS, item_emu_japan_jr_shinkansen_series_e1_max) {
         default: switch_emu_japan_jr_shinkansen_series_e1_max_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
         running_cost_factor: (round(37.451650469652236));
         power: int(2790*1/2);
         weight: int(59*3/4);

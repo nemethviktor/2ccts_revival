@@ -744,6 +744,7 @@ str_rbd_italy_fs_aln_668                                          :FS ALn 668.14
 str_dmu_denmark_dsb_ic4                                           :DSB IC4 (DMU)
 str_dmu_croatia_hz_7022                                           :HZ 7022 (DMU)
 str_dmu_germany_db_vt_040_flying_hamburger                        :DB VT 04.0 'Flying Hamburger' (DMU)
+str_dmu_argentina_ganz_arpad_bariloche                            :Ganz 'Arpad' Bariloche DMU (DMU)
 str_dmu_australia_nswgr_silver_city_comet                         :NSWGR 'Silver City Comet' (DMU)
 str_dmu_czech_republic_cd_m131                                    :CD M131 (DMU)
 str_dmu_germany_db_vt_085                                         :DB VT 08.5 (DMU)
@@ -793,6 +794,7 @@ str_dmu_ghana_ghana_railways_demu                                 :Ghana Railway
 str_dmu_australia_queensland_rail_diesel_tilt_train               :Queensland Railways Diesel Tilt Train (DMU)
 str_dmu_canada_up_express_nippon_sharyo_dmu                       :UP Express Nippon Sharyo DMU (DMU)
 str_dmu_argentina_fcgu_cmm_400_2                                  :FCGU CMM 400-2 (DMU)
+str_dmu_argentina_ganz_arpad_cmu_4701_transandino                 :Ganz 'Arpad' CMU 4701 Transandino (DMU)
 str_mu_mu_wagon_unpowered                                         :Multiple Unit Wagon (Unpowered)
 str_mu_mu_wagon_powered                                           :Multiple Unit Wagon (Powered)
 str_mu_mu_cargo_wagon_unpowered                                   :Multiple Unit Cargo Wagon (Unpowered)
@@ -935,6 +937,9 @@ str_electric_australia_qr_3500                                    :Queensland Ra
 str_electric_australia_nsw_85                                     :NSWGR 85 (Electric, 1500V DC)
 str_electric_australia_sra_8650                                   :Maldon-Dombarton '8650' (Electric, 25kV AC)
 str_electric_australia_nsw_46                                     :NSWGR 46 (Electric, 25kV AC)
+str_electric_brazil_slm_winterthur_bbc_1d1                        :SLM-Winterthur-BBC 1-D-1 (Electric, 3kV DC)
+str_electric_brazil_ge_2cc2                                       :GE 2-C+C-2 (Electric, 3kV DC)
+str_electric_costa_rica_aeg_pacific_a1a_a1a                       :AEG A1A+A1A (Electric, 25kV AC)
 
 # Electricrailbus
 str_rbe_switzerland_ab_cfe_3_3                                    :AB CFe 3/3 (Electric Railbus, 1500V DC)
@@ -958,7 +963,6 @@ str_rbe_poland_pkp_en81                                           :PKP EN81 (Ele
 str_rbe_usa_septa_silverliner_v                                   :SEPTA Silverliner V (Electric Railbus, OHLE)
 str_rbe_germany_db_4792                                           :DB 479.201 (Electric Railbus, 1500V DC)
 str_rbe_germany_buckower_kleinbahn_nr_1_3                         :Buckower Kleinbahn Nr. 1-3 (Electric Railbus, 1500V DC)
-str_emu_usa_prr_mp54                                              :PRR MP54 (Electric Railbus, Dual-Pickup)
 
 # Emu
 str_emu_netherlands_ns_mat24                                      :NS Mat'24 (EMU, 1500V DC)
@@ -1006,6 +1010,7 @@ str_emu_south_africa_gautrain_electrostar                         :Gautrain Elec
 str_emu_italy_ntv_agv                                             :NTV AGV (EMU, OHLE)
 str_emu_netherlands_ns_4800_hsa                                   :NS 4800 HSA 'Fyra' (EMU, OHLE)
 str_emu_italy_ntv_agv_duplex                                      :NTV AGV Duplex (EMU, OHLE)
+str_emu_usa_prr_mp54                                              :PRR MP54 (EMU, Dual-Pickup)
 str_emu_australia_victorian_railways_swing_door                   :Victorian Railways 'Swing Door' (EMU, 1500V DC)
 str_emu_poland_pkp_ew90                                           :PKP EW90 (EMU, 1500V DC)
 str_emu_usa_erie_lackawanna_mu_cars                               :Erie Lackawanna MU Cars (EMU, 3kV DC)
@@ -1195,7 +1200,7 @@ str_steam_germany_db_9977_79                                      :DB 99.77-79 (
 str_steam_germany_db_18_201                                       :DR 18 201 (Steam)
 str_steam_south_africa_ppr_35_tonner_4_6_0t                       :PPR 35-tonner 4-6-0T (Steam)
 str_steam_india_fairy_queen                                       :East Indian Rly 22 'Fairy Queen' (Steam)
-str_steam_south_africa_harbour_board_el_0_4_0                     :Harbour Board EL 0-4-0 'Little Bess' (Steam)
+str_steam_south_africa_harbour_board_el_0_4_0                     :East London Harbour 0-4-0VB (Steam)
 str_steam_japan_jnr_7100                                          :JNR 7100 (Steam)
 str_steam_india_dhr_b                                             :DHR B (Steam)
 str_steam_japan_jnr_860                                           :JNR 860 (Steam)
@@ -1253,6 +1258,15 @@ str_steam_australia_ja_brown_rod_280                              :J & A Brown R
 str_steam_australia_sar_600                                       :South Australian Railways 600 (Steam)
 str_steam_australia_smr_10                                        :South Maitland Railways 10 (Steam)
 str_steam_australia_vr_h                                          :Victorian Railways H (Steam)
+str_steam_brazil_baroneza                                         :Baroneza (Steam)
+str_steam_argentina_la_portena                                    :La Portena (Steam)
+str_steam_brazil_dom_pedro_segundo_119                            :Dom Pedro Segundo 119 (Steam)
+str_steam_peru_no8_monsefu                                        :No8 'Monsefu' (Steam)
+str_steam_paraguay_fccp_q_class                                   :FCCP Q Class (Steam)
+str_steam_argentina_fcca_ps10_class                               :FCCA PS10 Class (Steam)
+str_steam_chile_anglo_chilean_nitrate_no_97                       :Anglo-Chilean Nitrate No. 97 to 102 (Steam)
+str_steam_chile_la_copiapo                                        :La Copiapo (Steam)
+str_steam_brazil_sao_paulo_railway_13                             :Sao Paulo Railway No. 13 and 14 (Steam)
 
 # Steamrailbus
 str_rbs_austria_nolb_1                                            :NOLB 1 (Steam Railbus)

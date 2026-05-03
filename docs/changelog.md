@@ -1,29 +1,47 @@
 ### 2cc TrainsInNML (Revival) changelog
 
-**3.3 [20260xxxx]**
+**3.3 RC3 [202605xx]**
 - CODE CHANGES:
 	- Added the track types to the vehicle info export
 	- Changed Andorra/Gabon confusion wrt country names
 	- Changed sleeper coaches to have cargo ageing of 4 days instead of the normal 2.5 days
 	- Fixed mislabelled role `Commuter (Regional))'` [double ')']
 	- Revamped the logic regarding model life and vehicle life. It's now systematic. Added details about this in the readme.
+	- Changed the ai_special_flag to be `AI_FLAG_PASSENGER | AI_FLAG_CARGO` everywhere. I don't want to restrict the AI on random whims.
+	- Changed the loading speed to be logic-based because it was all over the place.
+	- Changed the cost allocation from manual to automatic. This only affected one vehicle, which was wrongly classified but it's now two fewer things to manually account for so it's a win anyhow.
 - VEHICLES CHANGES:
+	- Changed cargo wagons to be all-region. Having split boxcars and silos into food/nonfood the regional splits weren't viable any longer.
 	- Renamed various items (see relevant commit messages)
+	- Standardised some of the vehicle roles
 	- Fixed a the sprite for `DB 17.0-1 'Prussian S 10'` that I broke the last time
 	- Redesigned `London Underground 1938 Stock`
-	- Added `London Underground 1959 Stock`
-	- Added `London Underground 1972 Stock`
-	- Added `London Underground 1992 Stock`
-	- Added `London Underground S Stock`
-	- Added `DR 130/DBAG 230`
-	- Added `Berlin BVG F` and `Berlin BVG H` 
-	- Added identical vehicles `UP 7391 GE AC6044CW` and `BHP 6071 GE AC6000CW` with differing regions. I had to draw reasonable parts of them so they're fugly.
-	- Added `Robert Stephenson and Co 192` (early-ish steam, Egypt) based on the `Le Belge` gfx.
-	- Changed cargo wagons to be all-region. Having split boxcars and silos into food/nonfood the regional splits weren't viable any longer.
-	- Standardised some of the vehicle roles
 	- Renamed `Amtrak Charger` to `Amtrak Charger ALC-42`
 	- Changed the graphics of `Ghana Railways 1400 EMD TT12` (+ rename)
-	- Added and recoloured a number of vehicles from Ragin's set (with permission)
+	- Adds:
+		- `Robert Stephenson and Co 192` (early-ish steam, Egypt) based on the `Le Belge` gfx.
+		- `London Underground 1959 Stock`
+		- `London Underground 1972 Stock`
+		- `London Underground 1992 Stock`
+		- `London Underground S Stock`
+		- `DR 130/DBAG 230`
+		- `Berlin BVG F` and `Berlin BVG H` 
+		- `Baroneza` (early-ish steam, Brazil) based on the `Le Belge` gfx.
+		- `La Portena` (early-ish steam, Argentina) based on the `DHR B` gfx.
+		- `Dom Pedro Segundo 119` (early-ish steam, Brazil) based on the `SNCF 150` + `CD-5341` gfx.
+		- `No8 'Monsefu'` (Steam, Peru) based on the `PRR D16` gfx.
+		- `FCCP Q Class` (Steam, Paraguay) based on `Uruguay_AFE_N1_2_6_0` gfx.
+		- `Argentina_FCCA_PS10_Class` (Steam, Argentina) based on `FS 691` gfx.
+		- `Anglo-Chilean Nitrate No. 97 to 102` (Steam, Chile) based on `NZR X Class` gfx.
+		- `SLM-Winterthur-BBC 1-D-1` (Steam, Brazil) based on a somewhat modified version of the `Aichi DeKi 400` gfx.
+		- `UP 7391 GE AC6044CW` and `BHP 6071 GE AC6000CW` with differing regions but identical gfx. I had to draw reasonable parts of them so they're fugly.
+		- `La Copiapo` (Steam, Chile) using `NSWGR Z12` gfx from below (Ragin's).
+		- `AEG A1A+A1A` (Electric, Costa Rica) using modified `ONCFM E500` gfx.
+		- `Ganz 'Arpad' Bariloche DMU` (DMU, Argentina) using modified `DR 137 153 … 234 (vt04)` gfx.
+		- `Ganz 'Arpad' CMU 4701 Transandino` (DMU, Argentina) using further modified `DR 137 153 … 234 (vt04)` gfx.
+		- `Sao Paulo Railway No. 13 and 14` (Steam, Brazil), also using the `DHR B` gfx although I changed it a little.
+
+	- Added (and partially recoloured) a number of vehicles from Ragin's set (with permission)
 		- `Singapore C151` (Metro)
 		- `Singapore C751B` (Metro)
 		- `Comeng Light Metro Prototype` (Concept, 3rd Rail)

@@ -34,7 +34,7 @@ item(FEAT_TRAINS, item_dmu_germany_db_vt_040_flying_hamburger) {
         model_life: 45;
         vehicle_life: 30;
         retire_early: 20;
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         cost_factor: 37.4772;
         running_cost_factor: 32.71588;
         speed: 160 km/h;
@@ -51,7 +51,7 @@ item(FEAT_TRAINS, item_dmu_germany_db_vt_040_flying_hamburger) {
         cargo_age_period: 185;
         misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
         refit_cost: 0;
-        ai_special_flag: AI_FLAG_PASSENGER;
+        ai_special_flag: AI_FLAG_PASSENGER | AI_FLAG_CARGO;
         track_type: [STANDARD_GAUGE_RAILTYPE_NONE];
         running_cost_base: RUNNING_COST_DIESEL;
         engine_class: ENGINE_CLASS_DIESEL;
@@ -79,7 +79,7 @@ item(FEAT_TRAINS, item_dmu_germany_db_vt_040_flying_hamburger) {
         default: switch_dmu_germany_db_vt_040_flying_hamburger_reversed;
     }
     livery_override (item_mu_mu_wagon_unpowered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: int(160/10);
         weight: int(42*1/2);
         cargo_capacity: 69;
@@ -87,7 +87,7 @@ item(FEAT_TRAINS, item_dmu_germany_db_vt_040_flying_hamburger) {
         default: switch_dmu_germany_db_vt_040_flying_hamburger_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: (round(21.566062103728065));
         power: int(810*1/2);
         weight: int(42*3/4);

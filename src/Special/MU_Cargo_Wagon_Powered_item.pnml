@@ -29,7 +29,7 @@ item(FEAT_TRAINS, item_mu_mu_cargo_wagon_powered) {
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 25;
         retire_early: 20;
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 0/2 : (param_loadingspeed == 2) ? 0*2 : 0;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         cost_factor: 1.24459;
         running_cost_factor: 1.24459;
         speed: 0 km/h;
@@ -49,7 +49,7 @@ item(FEAT_TRAINS, item_mu_mu_cargo_wagon_powered) {
         cargo_age_period: 185;
         misc_flags: bitmask(TRAIN_FLAG_2CC);
         refit_cost: 0;
-        ai_special_flag: AI_FLAG_CARGO;
+        ai_special_flag: AI_FLAG_PASSENGER | AI_FLAG_CARGO;
         track_type: [STANDARD_GAUGE_RAILTYPE_NONE, NARROW_GAUGE_RAILTYPE_NONE, BROAD_GAUGE_RAILTYPE_NONE];
         running_cost_base: RUNNING_COST_ELECTRIC;
         engine_class: ENGINE_CLASS_ELECTRIC;

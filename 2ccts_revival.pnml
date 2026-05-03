@@ -286,6 +286,9 @@
 #include "src/DMU/Germany_DB_VT_040_Flying_Hamburger_graphics.pnml"
 #include "src/DMU/Germany_DB_VT_040_Flying_Hamburger_item.pnml"
 
+#include "src/DMU/Argentina_Ganz_Arpad_Bariloche_graphics.pnml"
+#include "src/DMU/Argentina_Ganz_Arpad_Bariloche_item.pnml"
+
 #include "src/DMU/Australia_NSWGR_Silver_City_Comet_graphics.pnml"
 #include "src/DMU/Australia_NSWGR_Silver_City_Comet_item.pnml"
 
@@ -432,6 +435,9 @@
 
 #include "src/DMU/Argentina_FCGU_CMM_400_2_graphics.pnml"
 #include "src/DMU/Argentina_FCGU_CMM_400_2_item.pnml"
+
+#include "src/DMU/Argentina_Ganz_Arpad_CMU_4701_Transandino_graphics.pnml"
+#include "src/DMU/Argentina_Ganz_Arpad_CMU_4701_Transandino_item.pnml"
 
 
 //// DIESEL
@@ -1594,6 +1600,15 @@
 #include "src/Electric/Australia_NSW_46_graphics.pnml"
 #include "src/Electric/Australia_NSW_46_item.pnml"
 
+#include "src/Electric/Brazil_SLM_Winterthur_BBC_1D1_graphics.pnml"
+#include "src/Electric/Brazil_SLM_Winterthur_BBC_1D1_item.pnml"
+
+#include "src/Electric/Brazil_GE_2CC2_graphics.pnml"
+#include "src/Electric/Brazil_GE_2CC2_item.pnml"
+
+#include "src/Electric/Costa_Rica_AEG_Pacific_A1A_A1A_graphics.pnml"
+#include "src/Electric/Costa_Rica_AEG_Pacific_A1A_A1A_item.pnml"
+
 #include "src/Electric/UK_London_1903_Stock_graphics.pnml"
 #include "src/Electric/UK_London_1903_Stock_item.pnml"
 
@@ -2452,6 +2467,33 @@
 
 #include "src/Steam/Australia_VR_H_graphics.pnml"
 #include "src/Steam/Australia_VR_H_item.pnml"
+
+#include "src/Steam/Brazil_Baroneza_graphics.pnml"
+#include "src/Steam/Brazil_Baroneza_item.pnml"
+
+#include "src/Steam/Argentina_La_Portena_graphics.pnml"
+#include "src/Steam/Argentina_La_Portena_item.pnml"
+
+#include "src/Steam/Brazil_Dom_Pedro_Segundo_119_graphics.pnml"
+#include "src/Steam/Brazil_Dom_Pedro_Segundo_119_item.pnml"
+
+#include "src/Steam/Peru_No8_Monsefu_graphics.pnml"
+#include "src/Steam/Peru_No8_Monsefu_item.pnml"
+
+#include "src/Steam/Paraguay_FCCP_Q_Class_graphics.pnml"
+#include "src/Steam/Paraguay_FCCP_Q_Class_item.pnml"
+
+#include "src/Steam/Argentina_FCCA_PS10_Class_graphics.pnml"
+#include "src/Steam/Argentina_FCCA_PS10_Class_item.pnml"
+
+#include "src/Steam/Chile_Anglo_Chilean_Nitrate_No_97_graphics.pnml"
+#include "src/Steam/Chile_Anglo_Chilean_Nitrate_No_97_item.pnml"
+
+#include "src/Steam/Chile_La_Copiapo_graphics.pnml"
+#include "src/Steam/Chile_La_Copiapo_item.pnml"
+
+#include "src/Steam/Brazil_Sao_Paulo_Railway_13_graphics.pnml"
+#include "src/Steam/Brazil_Sao_Paulo_Railway_13_item.pnml"
 
 
 //// WAGONS - GEN1

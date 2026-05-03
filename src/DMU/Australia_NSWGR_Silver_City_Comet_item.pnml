@@ -35,7 +35,7 @@ item(FEAT_TRAINS, item_dmu_australia_nswgr_silver_city_comet) {
         model_life: 45;
         vehicle_life: 30;
         retire_early: 20;
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         cost_factor: 29.66511;
         running_cost_factor: 25.95379;
         speed: 160 km/h;
@@ -52,7 +52,7 @@ item(FEAT_TRAINS, item_dmu_australia_nswgr_silver_city_comet) {
         cargo_age_period: 185;
         misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
         refit_cost: 0;
-        ai_special_flag: AI_FLAG_PASSENGER;
+        ai_special_flag: AI_FLAG_PASSENGER | AI_FLAG_CARGO;
         track_type: [STANDARD_GAUGE_RAILTYPE_NONE];
         running_cost_base: RUNNING_COST_DIESEL;
         engine_class: ENGINE_CLASS_DIESEL;
@@ -81,7 +81,7 @@ item(FEAT_TRAINS, item_dmu_australia_nswgr_silver_city_comet) {
         default: switch_dmu_australia_nswgr_silver_city_comet_reversed;
     }
     livery_override (item_mu_mu_wagon_unpowered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: int(160/10);
         weight: int(32*1/2);
         cargo_capacity: 60;
@@ -89,7 +89,7 @@ item(FEAT_TRAINS, item_dmu_australia_nswgr_silver_city_comet) {
         default: switch_dmu_australia_nswgr_silver_city_comet_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: (round(22.889095715520575));
         power: int(660*1/2);
         weight: int(32*3/4);

@@ -745,6 +745,7 @@ str_rbd_germany_db_670                                            :德鐵670型 
 # str_dmu_denmark_dsb_ic4                                           : not translated
 # str_dmu_croatia_hz_7022                                           : not translated
 # str_dmu_germany_db_vt_040_flying_hamburger                        : not translated
+# str_dmu_argentina_ganz_arpad_bariloche                            : not translated
 # str_dmu_australia_nswgr_silver_city_comet                         : not translated
 # str_dmu_czech_republic_cd_m131                                    : not translated
 # str_dmu_germany_db_vt_085                                         : not translated
@@ -794,6 +795,7 @@ str_rbd_germany_db_670                                            :德鐵670型 
 # str_dmu_australia_queensland_rail_diesel_tilt_train               : not translated
 # str_dmu_canada_up_express_nippon_sharyo_dmu                       : not translated
 # str_dmu_argentina_fcgu_cmm_400_2                                  : not translated
+# str_dmu_argentina_ganz_arpad_cmu_4701_transandino                 : not translated
 # str_mu_mu_wagon_unpowered                                         : not translated
 # str_mu_mu_wagon_powered                                           : not translated
 # str_mu_mu_cargo_wagon_unpowered                                   : not translated
@@ -936,6 +938,9 @@ str_electric_ukraine_uz_ds3                                       :烏克蘭鐵�
 # str_electric_australia_nsw_85                                     : not translated
 # str_electric_australia_sra_8650                                   : not translated
 # str_electric_australia_nsw_46                                     : not translated
+# str_electric_brazil_slm_winterthur_bbc_1d1                        : not translated
+# str_electric_brazil_ge_2cc2                                       : not translated
+# str_electric_costa_rica_aeg_pacific_a1a_a1a                       : not translated
 
 # Electricrailbus
 # str_rbe_switzerland_ab_cfe_3_3                                    : not translated
@@ -959,7 +964,6 @@ str_electric_ukraine_uz_ds3                                       :烏克蘭鐵�
 # str_rbe_usa_septa_silverliner_v                                   : not translated
 # str_rbe_germany_db_4792                                           : not translated
 # str_rbe_germany_buckower_kleinbahn_nr_1_3                         : not translated
-# str_emu_usa_prr_mp54                                              : not translated
 
 # Emu
 # str_emu_netherlands_ns_mat24                                      : not translated
@@ -1007,6 +1011,7 @@ str_electric_ukraine_uz_ds3                                       :烏克蘭鐵�
 # str_emu_italy_ntv_agv                                             : not translated
 # str_emu_netherlands_ns_4800_hsa                                   : not translated
 # str_emu_italy_ntv_agv_duplex                                      : not translated
+# str_emu_usa_prr_mp54                                              : not translated
 # str_emu_australia_victorian_railways_swing_door                   : not translated
 # str_emu_poland_pkp_ew90                                           : not translated
 # str_emu_usa_erie_lackawanna_mu_cars                               : not translated
@@ -1254,6 +1259,15 @@ str_steam_denmark_dsb_e                                           :丹麥鐵路E
 # str_steam_australia_sar_600                                       : not translated
 # str_steam_australia_smr_10                                        : not translated
 # str_steam_australia_vr_h                                          : not translated
+# str_steam_brazil_baroneza                                         : not translated
+# str_steam_argentina_la_portena                                    : not translated
+# str_steam_brazil_dom_pedro_segundo_119                            : not translated
+# str_steam_peru_no8_monsefu                                        : not translated
+# str_steam_paraguay_fccp_q_class                                   : not translated
+# str_steam_argentina_fcca_ps10_class                               : not translated
+# str_steam_chile_anglo_chilean_nitrate_no_97                       : not translated
+# str_steam_chile_la_copiapo                                        : not translated
+# str_steam_brazil_sao_paulo_railway_13                             : not translated
 
 # Steamrailbus
 str_rbs_austria_nolb_1                                            :下奧地利國家鐵路1型 (蒸汽輕軌車廂)

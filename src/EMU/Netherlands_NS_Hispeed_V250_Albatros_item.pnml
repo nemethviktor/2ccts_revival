@@ -34,7 +34,7 @@ item(FEAT_TRAINS, item_emu_netherlands_ns_hispeed_v250_albatros) {
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 45;
         retire_early: 20;
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
         cost_factor: 71.79072;
         running_cost_factor: 65.05537;
         speed: 251 km/h;
@@ -51,7 +51,7 @@ item(FEAT_TRAINS, item_emu_netherlands_ns_hispeed_v250_albatros) {
         cargo_age_period: 185;
         misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
         refit_cost: 0;
-        ai_special_flag: AI_FLAG_PASSENGER;
+        ai_special_flag: AI_FLAG_PASSENGER | AI_FLAG_CARGO;
         track_type: [STANDARD_GAUGE_RAILTYPE_OHLE];
         running_cost_base: RUNNING_COST_ELECTRIC;
         engine_class: ENGINE_CLASS_ELECTRIC;
@@ -79,7 +79,7 @@ item(FEAT_TRAINS, item_emu_netherlands_ns_hispeed_v250_albatros) {
         default: switch_emu_netherlands_ns_hispeed_v250_albatros_reversed;
     }
     livery_override (item_mu_mu_wagon_unpowered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
         running_cost_factor: int(251/10);
         weight: int(61*1/2);
         cargo_capacity: 71;
@@ -87,7 +87,7 @@ item(FEAT_TRAINS, item_emu_netherlands_ns_hispeed_v250_albatros) {
         default: switch_emu_netherlands_ns_hispeed_v250_albatros_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
         running_cost_factor: (round(46.4276944102772));
         power: int(3620*1/2);
         weight: int(61*3/4);

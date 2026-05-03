@@ -4,7 +4,7 @@
 
 
 // Template: TPL_03E.
-// Data from: https://en.wikipedia.org/wiki/CGR_0-4-0ST_1873
+// Data from: https://en.wikipedia.org/wiki/East_London_Harbour_0-4-0VB
 
 // Notes:
 //// POWER: 40 -- No wiki info but this is back-calculated from the 14.6kN there
@@ -18,7 +18,7 @@ item(FEAT_TRAINS, item_steam_south_africa_harbour_board_el_0_4_0) {
         model_life: 45;
         vehicle_life: 15;
         retire_early: 20;
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
         cost_factor: 8.35807;
         running_cost_factor: 7.3341;
         speed: 16 km/h;
@@ -35,8 +35,8 @@ item(FEAT_TRAINS, item_steam_south_africa_harbour_board_el_0_4_0) {
         cargo_age_period: 185;
         misc_flags: bitmask(TRAIN_FLAG_2CC);
         refit_cost: 0;
-        ai_special_flag: AI_FLAG_PASSENGER;
-        track_type: [NARROW_GAUGE_RAILTYPE_NONE];
+        ai_special_flag: AI_FLAG_PASSENGER | AI_FLAG_CARGO;
+        track_type: [BROAD_GAUGE_RAILTYPE_NONE];
         running_cost_base: RUNNING_COST_STEAM;
         engine_class: ENGINE_CLASS_STEAM;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_STEAM, 0, DISABLE_WAGON_POWER);

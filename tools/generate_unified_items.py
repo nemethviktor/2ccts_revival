@@ -763,7 +763,7 @@ def generate_unified_items():
                 f"        extra_flags: bitmask(VEHICLE_FLAG_TRAIN_HAS_CAB);\n")
         content.append(f"        refit_cost: {REFIT_COST};\n")
         content.append(
-            f"        ai_special_flag: {"AI_FLAG_PASSENGER" if is_true(row['PASSENGER']) else "AI_FLAG_CARGO"};\n")
+            f"        ai_special_flag: AI_FLAG_PASSENGER | AI_FLAG_CARGO;\n")
         content.append(f"        track_type: {track_logic};\n")
         content.append(
             f"        running_cost_base: {RUNNING_COST_BASE};\n")

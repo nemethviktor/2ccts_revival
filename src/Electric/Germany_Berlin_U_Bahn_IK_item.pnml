@@ -14,7 +14,7 @@ item(FEAT_TRAINS, item_mtro_germany_berlin_u_bahn_ik) {
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 50;
         retire_early: 20;
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
         cost_factor: 29.52195;
         running_cost_factor: 26.996;
         speed: 80 km/h;
@@ -32,7 +32,7 @@ item(FEAT_TRAINS, item_mtro_germany_berlin_u_bahn_ik) {
         cargo_age_period: 185;
         misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
         refit_cost: 0;
-        ai_special_flag: AI_FLAG_PASSENGER;
+        ai_special_flag: AI_FLAG_PASSENGER | AI_FLAG_CARGO;
         track_type: [STANDARD_GAUGE_RAILTYPE_3RD];
         running_cost_base: RUNNING_COST_ELECTRIC;
         engine_class: ENGINE_CLASS_MAGLEV;
@@ -59,7 +59,7 @@ item(FEAT_TRAINS, item_mtro_germany_berlin_u_bahn_ik) {
         default: switch_mtro_germany_berlin_u_bahn_ik_reversed;
     }
     livery_override (item_mtro_metro_wagon_unpowered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
         running_cost_factor: int(80/10);
         weight: int(21*1/2);
         cargo_capacity: 145;
@@ -67,7 +67,7 @@ item(FEAT_TRAINS, item_mtro_germany_berlin_u_bahn_ik) {
         default: spriteset_mtro_germany_berlin_u_bahn_ik_middle;
     }
     livery_override (item_mtro_metro_wagon_powered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
         running_cost_factor: (round(14.828081726106308));
         power: int(440*1/2);
         weight: int(21*3/4);
