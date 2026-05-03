@@ -685,6 +685,15 @@ str_diesel_argentina_sofse_cnr_ckd8                               :SOFSE CNR CKD
 # str_diesel_australia_nsw_80                                       : not translated
 # str_diesel_australia_ira_dsb_mz_iii                               : not translated
 # str_diesel_australia_commonwealth_twin_16_645                     : not translated
+# str_diesel_australia_qr_2170                                      : not translated
+# str_diesel_australia_tgr_z                                        : not translated
+# str_diesel_australia_qr_2350                                      : not translated
+# str_diesel_new_zealand_dx_class                                   : not translated
+# str_diesel_australia_nsw_40                                       : not translated
+# str_diesel_australia_nsw_49                                       : not translated
+# str_diesel_new_zealand_da_class                                   : not translated
+# str_diesel_new_zealand_db_class                                   : not translated
+# str_diesel_australia_nsw_47                                       : not translated
 
 # Dieselrailbus
 str_rbd_australia_victorian_railways_aec_rm1                      :Victoriaanse Spoorweë AEC RM1 (Diesel Spoorbus)
@@ -927,6 +936,7 @@ str_electric_usa_amtrak_acs_64                                    :Amtrak ACS-64
 # str_electric_australia_qr_3500                                    : not translated
 # str_electric_australia_nsw_85                                     : not translated
 # str_electric_australia_sra_8650                                   : not translated
+# str_electric_australia_nsw_46                                     : not translated
 
 # Electricrailbus
 str_rbe_switzerland_ab_cfe_3_3                                    :AB CFe 3/3 (Elektries Spoorbus, 1500V DC)

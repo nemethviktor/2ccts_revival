@@ -2685,15 +2685,15 @@ item(FEAT_TRAINS, item_diesel_australia_victoria_x3, 5162) {}
 item(FEAT_TRAINS, item_diesel_australia_nsw_80, 5163) {}
 item(FEAT_TRAINS, item_diesel_australia_ira_dsb_mz_iii, 5164) {}
 item(FEAT_TRAINS, item_diesel_australia_commonwealth_twin_16_645, 5165) {}
-// 5166 free
-// 5167 free
-// 5168 free
-// 5169 free
-// 5170 free
-// 5171 free
-// 5172 free
-// 5173 free
-// 5174 free
+item(FEAT_TRAINS, item_diesel_australia_qr_2170, 5166) {}
+item(FEAT_TRAINS, item_diesel_australia_tgr_z, 5167) {}
+item(FEAT_TRAINS, item_diesel_australia_qr_2350, 5168) {}
+item(FEAT_TRAINS, item_diesel_new_zealand_dx_class, 5169) {}
+item(FEAT_TRAINS, item_diesel_australia_nsw_40, 5170) {}
+item(FEAT_TRAINS, item_diesel_australia_nsw_49, 5171) {}
+item(FEAT_TRAINS, item_diesel_new_zealand_da_class, 5172) {}
+item(FEAT_TRAINS, item_diesel_new_zealand_db_class, 5173) {}
+item(FEAT_TRAINS, item_diesel_australia_nsw_47, 5174) {}
 // 5175 free
 // 5176 free
 // 5177 free
@@ -3664,7 +3664,7 @@ item(FEAT_TRAINS, item_electric_hungary_mav_class_v63, 6138) {}
 item(FEAT_TRAINS, item_electric_australia_qr_3500, 6139) {}
 item(FEAT_TRAINS, item_electric_australia_nsw_85, 6140) {}
 item(FEAT_TRAINS, item_electric_australia_sra_8650, 6141) {}
-// 6142 free
+item(FEAT_TRAINS, item_electric_australia_nsw_46, 6142) {}
 // 6143 free
 // 6144 free
 // 6145 free

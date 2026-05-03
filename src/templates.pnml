@@ -2,19 +2,41 @@
  *  Copyright (C) 2017 Transportman // V. Nemeth 2026
  *  This file is part of the 2cc Trains In NML
  *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
-
+ *  
+ *  An explanation of the values you need to provide:
+ *  
+ *    left_x: horizontal distance in pixels from the top left of the image file to the top left of the sprite;
+ *    upper_y: vertical distance in pixels from the top left of the image file to the top left of the sprite;
+ *    width: width of the sprite in pixels;
+ *    height: height of the sprite in pixels;
+ *    offset_x: horizontal offset in pixels from the center of the bounding box (see below);
+ *    offset_y: vertical offset in pixels from the center of the bounding box (see below);
+ *    filename: path and file name of the graphics file this sprite is in, if it is different than the one defined in the spriteset itself.
+ * 
+ * The offsets you set in a spriteset define where the sprite is drawn inside this bounding box.
+ *  
+ * For vehicles this is relative to the middle of the bounding box. 
+ * So both offsets set to zero will put the top left corner of the sprite in the middle of the bounding box. 
+ * A general rule of thumb here is to take half the width/height (rounded down) and then the negative of that for the x/y offset. 
+ * This places the vehicle roughly in the middle of its bounding box.
+ * 
 */
 
 //Purchase templates
 //Engines
 template template_purchase(x, y) {
     //[left_x   ,  upper_y  , width , height, offset_x  , offset_y  , file]
+    //                                          more negative to shift left
+    //                                                      more negative to shift up
+
     [x          ,  y        , 53    , 12    , -25       ,  -8       ]
 }
 
 //Dualheaded Engines
 template template_purchase_dualheaded(x,y) {
     //[left_x   ,  upper_y  , width , height, offset_x  , offset_y  , file]
+    //                                          more negative to shift left
+    //                                                      more negative to shift up
 	[1          ,  1        ,  1    ,  1    ,   0       ,   0       , "gfx/Empty.png"]
     [1          ,  1        ,  1    ,  1    ,   0       ,   0       , "gfx/Empty.png"]
     [1 	        ,  1        ,  1    ,  1    ,   0       ,   0       , "gfx/Empty.png"]
@@ -28,17 +50,23 @@ template template_purchase_dualheaded(x,y) {
 //Wagons+coaches
 template template_purchase_wagon(x, y) {
     //[left_x   ,  upper_y  , width , height, offset_x  , offset_y  , file]
+    //                                          more negative to shift left
+    //                                                      more negative to shift up
     [x          , y         ,  43   , 12    , -15       , -8]
 }
 
 //Unit wagons
 template template_purchase_wagon_special(x, y) {
     //[left_x   ,  upper_y  , width , height, offset_x  , offset_y  , file]
+    //                                          more negative to shift left
+    //                                                      more negative to shift up
     [x          , y         ,  53   , 12    , -25       , -8]
 }
 
 template template_wagon_special(x,y) {
     //[left_x   ,  upper_y  , width , height, offset_x  , offset_y  , file]
+    //                                          more negative to shift left
+    //                                                      more negative to shift up
 	[1          ,  1        ,  1    ,  1    ,   0       ,   0       , "gfx/Empty.png"]
     [1          ,  1        ,  1    ,  1    ,   0       ,   0       , "gfx/Empty.png"]
     [1 	        ,  1        ,  1    ,  1    ,   0       ,   0       , "gfx/Empty.png"]
@@ -56,6 +84,8 @@ template template_wagon_special(x,y) {
 //MU back
 template template_2cc_engines_back(x, y) {
     //[left_x   ,  upper_y  , width , height, offset_x  , offset_y  , file]
+    //                                          more negative to shift left
+    //                                                      more negative to shift up
     [x+88       , y         ,  8    , 24    ,  -3       , -12]
     [x+97       , y         , 22    , 20    , -14       , -12]
     [x+120      , y         , 32    , 16    , -16       , -12]
@@ -69,6 +99,8 @@ template template_2cc_engines_back(x, y) {
 //All engines and front+middle parts of MUs
 template template_2cc_engines_general(x, y) {
     //[left_x   ,  upper_y  , width , height, offset_x  , offset_y  , file]
+    //                                          more negative to shift left
+    //                                                      more negative to shift up
     [x          , y         ,  8    , 24    ,  -3       , -12]
     [x+9        , y         , 22    , 20    , -14       , -12]
     [x+32       , y         , 32    , 16    , -16       , -12]
@@ -82,6 +114,8 @@ template template_2cc_engines_general(x, y) {
 //Wagons+Coaches
 template template_2cc_wagons(x, y) {
     //[left_x   ,  upper_y  , width , height, offset_x  , offset_y  , file]
+    //                                          more negative to shift left
+    //                                                      more negative to shift up
     [x          , y         ,  8    , 24    ,  -3       , -12]
     [x+9        , y         , 22    , 20    , -14       , -12]
     [x+32       , y         , 32    , 16    , -16       , -12]
@@ -95,6 +129,8 @@ template template_2cc_wagons(x, y) {
 //railbus and single unit metros
 template template_2cc_railbus_general(x, y) {
     //[left_x   ,  upper_y  , width , height, offset_x  , offset_y  , file]
+    //                                          more negative to shift left
+    //                                                      more negative to shift up
 	[x          , y         ,  8    , 24    ,  -3       , -12]
     [x+9        , y         , 22    , 20    , -14       , -12]
     [x+32       , y         , 32    , 16    , -16       , -10]
@@ -108,6 +144,8 @@ template template_2cc_railbus_general(x, y) {
 //Special template for vehicles with length 12
 template template_2cc_l12(x, y) {
     //[left_x   ,  upper_y  , width , height, offset_x  , offset_y  , file]
+    //                                          more negative to shift left
+    //                                                      more negative to shift up
     [x          , y         ,  8    , 36    ,  -3       , -15]
     [x+9        , y         , 30    , 26    , -22       , -14]
     [x+40       , y         , 48    , 16    , -33       , -12]
@@ -121,6 +159,8 @@ template template_2cc_l12(x, y) {
 //Special template for empty spritesets (vehicles with length 10 use this)
 template template_empty_spriteset() {
     //[left_x   ,  upper_y  , width , height, offset_x  , offset_y  , file]
+    //                                          more negative to shift left
+    //                                                      more negative to shift up
 	[1          ,  1        ,  1    ,  1    ,   0       ,   0       , "gfx/Empty.png"]
     [1          ,  1        ,  1    ,  1    ,   0       ,   0       , "gfx/Empty.png"]
     [1 	        ,  1        ,  1    ,  1    ,   0       ,   0       , "gfx/Empty.png"]

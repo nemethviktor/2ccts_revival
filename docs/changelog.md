@@ -69,6 +69,17 @@
 		- `NSWGR 85` (Electric Engine)
 		- `Maldon-Dombarton '8650'` (Electric Engine)
 		- `IRA DSB MZ III` (Diesel Engine)
+		- `Commonwealth Railways 'Twin 16-645'` (Diesel Engine)
+		- `Queensland Railways 2170` (Diesel Engine)
+		- `TGR Z Class` (Diesel Engine)
+		- `Queensland Railways 2350` (Diesel Engine)
+		- `NZR DX` (Diesel Engine)
+		- `NSWGR 46` (Electric Engine)
+		- `NSWGR 40` (Diesel Engine)
+		- `NSWGR 49` (Diesel Engine)
+		- `NZR DA` (Diesel Engine)
+		- `NZR DB` (Diesel Engine)
+		- `NSWGR 47` (Diesel Engine)
 
 
 **3.3-RC2 [20260427]**

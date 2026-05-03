@@ -253,6 +253,7 @@ item_diesel_usa_pennsylvania_railroad_rf_16_sharknose, /*Year: 1950*/ \
 item_diesel_algeria_sntf_040_dg, /*Year: 1950*/ \
 item_diesel_australia_south_australian_railways_900, /*Year: 1951*/ \
 item_diesel_australia_commonwealth_gm, /*Year: 1951*/ \
+item_diesel_australia_nsw_40, /*Year: 1951*/ \
 item_diesel_uruguay_afe_1500, /*Year: 1952*/ \
 item_diesel_australia_vr_b, /*Year: 1952*/ \
 item_diesel_canada_cpr_trainmaster, /*Year: 1953*/ \
@@ -267,6 +268,7 @@ item_diesel_hungary_mav_m28, /*Year: 1955*/ \
 item_diesel_ireland_cie_001, /*Year: 1955*/ \
 item_diesel_australia_sar_930, /*Year: 1955*/ \
 item_diesel_australia_nsw_42, /*Year: 1955*/ \
+item_diesel_new_zealand_da_class, /*Year: 1955*/ \
 item_diesel_belgium_nmbs_sncb_83, /*Year: 1956*/ \
 item_diesel_germany_db_220, /*Year: 1956*/ \
 item_diesel_usa_amtrak_fl9, /*Year: 1956*/ \
@@ -285,6 +287,7 @@ item_diesel_russia_rzd_tep60, /*Year: 1960*/ \
 item_diesel_denmark_dsb_mak_100, /*Year: 1960*/ \
 item_diesel_south_korea_korail_6000_emd_sd18, /*Year: 1960*/ \
 item_diesel_tunisia_sncft_040_df, /*Year: 1960*/ \
+item_diesel_australia_nsw_49, /*Year: 1960*/ \
 item_diesel_belgium_nmbs_sncb_62, /*Year: 1961*/ \
 item_diesel_chile_efe_ge_u5b, /*Year: 1961*/ \
 item_diesel_sierra_leone_lamco_301_series, /*Year: 1962*/ \
@@ -295,6 +298,7 @@ item_diesel_russia_rzd_chme3, /*Year: 1964*/ \
 item_diesel_ukraine_uz_tep10l, /*Year: 1964*/ \
 item_diesel_russia_rzd_m62, /*Year: 1965*/ \
 item_diesel_peru_ferrocarril_central_andino_alco_rsd_39, /*Year: 1965*/ \
+item_diesel_new_zealand_db_class, /*Year: 1965*/ \
 item_diesel_spain_renfe_308, /*Year: 1966*/ \
 item_diesel_australia_victoria_x1, /*Year: 1966*/ \
 item_diesel_australia_nswgr_422, /*Year: 1969*/ \
@@ -309,9 +313,13 @@ item_diesel_australia_commonwealth_twin_16_645, /*Year: 1970*/ \
 item_diesel_italy_fs_d345, /*Year: 1971*/ \
 item_diesel_croatia_hz_2062, /*Year: 1972*/ \
 item_diesel_sweden_sj_v4, /*Year: 1972*/ \
+item_diesel_new_zealand_dx_class, /*Year: 1972*/ \
+item_diesel_australia_nsw_47, /*Year: 1972*/ \
 item_diesel_canada_cnr_mlw_m420w, /*Year: 1973*/ \
 item_diesel_usa_amtrak_sdp_40f, /*Year: 1973*/ \
 item_diesel_germany_dr_130_dbag_230, /*Year: 1973*/ \
+item_diesel_australia_tgr_z, /*Year: 1973*/ \
+item_diesel_australia_qr_2350, /*Year: 1973*/ \
 item_diesel_egypt_enr_te114e, /*Year: 1974*/ \
 item_diesel_zimbabwe_sorefame_de8, /*Year: 1974*/ \
 item_diesel_australia_victoria_x3, /*Year: 1975*/ \
@@ -326,6 +334,7 @@ item_diesel_belarus_bch_2te10m, /*Year: 1981*/ \
 item_diesel_ivory_coast_gmd_gt22lc2, /*Year: 1981*/ \
 item_diesel_australia_nsw_81, /*Year: 1982*/ \
 item_diesel_australia_nsw_82, /*Year: 1982*/ \
+item_diesel_australia_qr_2170, /*Year: 1982*/ \
 item_diesel_argentina_mf_gm_emd_j16cw_ac, /*Year: 1984*/ \
 item_diesel_china_china_railways_df8, /*Year: 1984*/ \
 item_diesel_australia_pacific_national_g_class, /*Year: 1984*/ \
@@ -435,6 +444,7 @@ item_electric_switzerland_bls_ce_4_4, /*Year: 1954*/ \
 item_electric_japan_jnr_eh10, /*Year: 1954*/ \
 item_electric_switzerland_sbb_ae_6_6, /*Year: 1955*/ \
 item_electric_portugal_cp_2500, /*Year: 1956*/ \
+item_electric_australia_nsw_46, /*Year: 1956*/ \
 item_electric_india_indian_railways_wcm_1, /*Year: 1958*/ \
 item_electric_belgium_nmbs_class_255, /*Year: 1960*/ \
 item_electric_usa_prr_e44, /*Year: 1960*/ \

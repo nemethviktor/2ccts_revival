@@ -921,6 +921,33 @@
 #include "src/Diesel/Australia_Commonwealth_Twin_16_645_graphics.pnml"
 #include "src/Diesel/Australia_Commonwealth_Twin_16_645_item.pnml"
 
+#include "src/Diesel/Australia_QR_2170_graphics.pnml"
+#include "src/Diesel/Australia_QR_2170_item.pnml"
+
+#include "src/Diesel/Australia_TGR_Z_graphics.pnml"
+#include "src/Diesel/Australia_TGR_Z_item.pnml"
+
+#include "src/Diesel/Australia_QR_2350_graphics.pnml"
+#include "src/Diesel/Australia_QR_2350_item.pnml"
+
+#include "src/Diesel/New_Zealand_DX_Class_graphics.pnml"
+#include "src/Diesel/New_Zealand_DX_Class_item.pnml"
+
+#include "src/Diesel/Australia_NSW_40_graphics.pnml"
+#include "src/Diesel/Australia_NSW_40_item.pnml"
+
+#include "src/Diesel/Australia_NSW_49_graphics.pnml"
+#include "src/Diesel/Australia_NSW_49_item.pnml"
+
+#include "src/Diesel/New_Zealand_DA_Class_graphics.pnml"
+#include "src/Diesel/New_Zealand_DA_Class_item.pnml"
+
+#include "src/Diesel/New_Zealand_DB_Class_graphics.pnml"
+#include "src/Diesel/New_Zealand_DB_Class_item.pnml"
+
+#include "src/Diesel/Australia_NSW_47_graphics.pnml"
+#include "src/Diesel/Australia_NSW_47_item.pnml"
+
 
 //// EMU
 #include "src/EMU/Netherlands_NS_Mat24_graphics.pnml"
@@ -1563,6 +1590,9 @@
 
 #include "src/Electric/Australia_SRA_8650_graphics.pnml"
 #include "src/Electric/Australia_SRA_8650_item.pnml"
+
+#include "src/Electric/Australia_NSW_46_graphics.pnml"
+#include "src/Electric/Australia_NSW_46_item.pnml"
 
 #include "src/Electric/UK_London_1903_Stock_graphics.pnml"
 #include "src/Electric/UK_London_1903_Stock_item.pnml"
