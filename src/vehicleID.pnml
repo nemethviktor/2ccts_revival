@@ -2684,7 +2684,7 @@ item(FEAT_TRAINS, item_diesel_australia_victoria_x2, 5161) {}
 item(FEAT_TRAINS, item_diesel_australia_victoria_x3, 5162) {}
 item(FEAT_TRAINS, item_diesel_australia_nsw_80, 5163) {}
 item(FEAT_TRAINS, item_diesel_australia_ira_dsb_mz_iii, 5164) {}
-// 5165 free
+item(FEAT_TRAINS, item_diesel_australia_commonwealth_twin_16_645, 5165) {}
 // 5166 free
 // 5167 free
 // 5168 free

@@ -682,6 +682,7 @@ str_diesel_australia_victoria_x2                                  :Victorian Rai
 str_diesel_australia_victoria_x3                                  :Victorian Railways X3 (Diesel)
 str_diesel_australia_nsw_80                                       :NSWGR 80 (Diesel)
 str_diesel_australia_ira_dsb_mz_iii                               :IRA DSB MZ III (Diesel)
+str_diesel_australia_commonwealth_twin_16_645                     :Commonwealth Railways 'Twin 16-645' (Diesel)
 
 # Dieselrailbus
 str_rbd_australia_victorian_railways_aec_rm1                      :Victorian Railways AEC RM1 (Diesel Railbus)

@@ -918,6 +918,9 @@
 #include "src/Diesel/Australia_IRA_DSB_MZ_III_graphics.pnml"
 #include "src/Diesel/Australia_IRA_DSB_MZ_III_item.pnml"
 
+#include "src/Diesel/Australia_Commonwealth_Twin_16_645_graphics.pnml"
+#include "src/Diesel/Australia_Commonwealth_Twin_16_645_item.pnml"
+
 
 //// EMU
 #include "src/EMU/Netherlands_NS_Mat24_graphics.pnml"
