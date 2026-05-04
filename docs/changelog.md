@@ -11,12 +11,13 @@
 	- Changed the loading speed to be logic-based because it was all over the place.
 	- Changed the cost allocation from manual to automatic. This only affected one vehicle, which was wrongly classified but it's now two fewer things to manually account for so it's a win anyhow.
 - VEHICLES CHANGES:
-	- Changed cargo wagons to be all-region. Having split boxcars and silos into food/nonfood the regional splits weren't viable any longer.
+	- Changed cargo wagons to be all-region. Having split boxcars and silos into food/nonfood the regional splits weren't viable any longer
 	- Renamed various items (see relevant commit messages)
 	- Standardised some of the vehicle roles
 	- Fixed a the sprite for `DB 17.0-1 'Prussian S 10'` that I broke the last time
 	- Redesigned `London Underground 1938 Stock`
 	- Renamed `Amtrak Charger` to `Amtrak Charger ALC-42`
+	- Fixed the country of `LAMCO 301-310 Series` to Liberia 
 	- Changed the graphics of `Ghana Railways 1400 EMD TT12` (+ rename)
 	- Adds:
 		- `Robert Stephenson and Co 192` (early-ish steam, Egypt) based on the `Le Belge` gfx.
@@ -40,6 +41,8 @@
 		- `Ganz 'Arpad' Bariloche DMU` (DMU, Argentina) using modified `DR 137 153 … 234 (vt04)` gfx.
 		- `Ganz 'Arpad' CMU 4701 Transandino` (DMU, Argentina) using further modified `DR 137 153 … 234 (vt04)` gfx.
 		- `Sao Paulo Railway No. 13 and 14` (Steam, Brazil), also using the `DHR B` gfx although I changed it a little.
+		- `Chile AEZ Railcar` (EMU, Chile) using modified `ONCF ZMC` gfx and questionable stats (as I didn't manage to find anything reliable)
+
 
 	- Added (and partially recoloured) a number of vehicles from Ragin's set (with permission)
 		- `Singapore C151` (Metro)

@@ -745,7 +745,6 @@ str_rbd_czech_republic_cd_840                                     :CD 840 (Diese
 str_dmu_denmark_dsb_ic4                                           :DSB IC4 (Dieseltreinstel)
 str_dmu_croatia_hz_7022                                           :HZ 7022 (Dieseltreinstel)
 # str_dmu_germany_db_vt_040_flying_hamburger                        : not translated
-# str_dmu_argentina_ganz_arpad_bariloche                            : not translated
 str_dmu_australia_nswgr_silver_city_comet                         :NSWGR 'Silver City Comet' (Dieseltreinstel)
 str_dmu_czech_republic_cd_m131                                    :CD M131 (Dieseltreinstel)
 # str_dmu_germany_db_vt_085                                         : not translated
@@ -795,6 +794,7 @@ str_dmu_cameroon_camrail_ze_500                                   :Camrail ZE 50
 # str_dmu_australia_queensland_rail_diesel_tilt_train               : not translated
 # str_dmu_canada_up_express_nippon_sharyo_dmu                       : not translated
 # str_dmu_argentina_fcgu_cmm_400_2                                  : not translated
+# str_dmu_argentina_ganz_arpad_bariloche                            : not translated
 # str_dmu_argentina_ganz_arpad_cmu_4701_transandino                 : not translated
 # str_mu_mu_wagon_unpowered                                         : not translated
 # str_mu_mu_wagon_powered                                           : not translated
@@ -1045,6 +1045,7 @@ str_emu_tunisia_sncft_yz_e                                        :SNCFT YZ-E (E
 # str_emu_australia_melbourne_harris                                : not translated
 # str_emu_australia_melbourne_nexas                                 : not translated
 # str_emu_australia_melbourne_tait                                  : not translated
+# str_emu_chile_efe_aez_railcar                                     : not translated
 # str_cargoemu_japan_jr_freight_m250                                : not translated
 
 # Maglevengine

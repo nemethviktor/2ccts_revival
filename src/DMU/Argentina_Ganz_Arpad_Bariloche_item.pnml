@@ -49,7 +49,7 @@ item(FEAT_TRAINS, item_dmu_argentina_ganz_arpad_bariloche) {
         refittable_cargo_classes: bitmask(CC_PASSENGERS, CC_MAIL, CC_ARMOURED);
         non_refittable_cargo_classes: 0;
         cargo_age_period: 185;
-        misc_flags: bitmask(TRAIN_FLAG_2CC);
+        misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
         refit_cost: 0;
         ai_special_flag: AI_FLAG_PASSENGER | AI_FLAG_CARGO;
         track_type: [BROAD_GAUGE_RAILTYPE_NONE];

@@ -4527,7 +4527,7 @@ item(FEAT_TRAINS, item_electric_costa_rica_aeg_pacific_a1a_a1a, 6145) {}
 #define ID_RANGE_DMU 0x1B58..0x1F3F
 item(FEAT_TRAINS, item_dmu_denmark_dsb_ic4, 7000) {}
 item(FEAT_TRAINS, item_dmu_croatia_hz_7022, 7001) {}
-item(FEAT_TRAINS, item_dmu_argentina_ganz_arpad_bariloche, 7002) {}
+item(FEAT_TRAINS, item_dmu_germany_db_vt_040_flying_hamburger, 7002) {}
 item(FEAT_TRAINS, item_dmu_australia_nswgr_silver_city_comet, 7003) {}
 item(FEAT_TRAINS, item_dmu_czech_republic_cd_m131, 7004) {}
 item(FEAT_TRAINS, item_dmu_germany_db_vt_085, 7005) {}
@@ -4579,8 +4579,8 @@ item(FEAT_TRAINS, item_dmu_ghana_ghana_railways_demu, 7050) {}
 item(FEAT_TRAINS, item_dmu_australia_queensland_rail_diesel_tilt_train, 7051) {}
 item(FEAT_TRAINS, item_dmu_canada_up_express_nippon_sharyo_dmu, 7052) {}
 item(FEAT_TRAINS, item_dmu_argentina_fcgu_cmm_400_2, 7053) {}
-item(FEAT_TRAINS, item_dmu_argentina_ganz_arpad_cmu_4701_transandino, 7054) {}
-// 7055 free
+item(FEAT_TRAINS, item_dmu_argentina_ganz_arpad_bariloche, 7054) {}
+item(FEAT_TRAINS, item_dmu_argentina_ganz_arpad_cmu_4701_transandino, 7055) {}
 // 7056 free
 // 7057 free
 // 7058 free
@@ -5607,7 +5607,7 @@ item(FEAT_TRAINS, item_emu_australia_melbourne_hitachi, 8075) {}
 item(FEAT_TRAINS, item_emu_australia_melbourne_harris, 8076) {}
 item(FEAT_TRAINS, item_emu_australia_melbourne_nexas, 8077) {}
 item(FEAT_TRAINS, item_emu_australia_melbourne_tait, 8078) {}
-// 8079 free
+item(FEAT_TRAINS, item_emu_chile_efe_aez_railcar, 8079) {}
 // 8080 free
 // 8081 free
 // 8082 free

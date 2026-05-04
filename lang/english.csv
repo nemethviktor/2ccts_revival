@@ -757,7 +757,7 @@ str_diesel_usa_amtrak_charger,Amtrak Charger ALC-42
 str_diesel_japan_jnr_df50,JNR DF50
 str_diesel_gabon_alsthom_ad30b,OCTRA 101-106
 str_diesel_ghana_railway_corporation_class_tt12,Ghana Railways 1400 EMD TT12
-str_diesel_sierra_leone_lamco_301_series,LAMCO. Series 301-310
+str_diesel_sierra_leone_lamco_301_series,LAMCO 301-310 Series
 str_diesel_congo_alstom_bb_bb,Congo-Ocean BB-BB 300
 str_diesel_zimbabwe_sorefame_de8,Sorefame DE8
 str_diesel_ivory_coast_gmd_gt22lc2,Abidjan-Niger GMD GT22LC-2
@@ -1323,3 +1323,4 @@ str_electric_costa_rica_aeg_pacific_a1a_a1a,AEG A1A+A1A
 str_dmu_argentina_ganz_arpad_bariloche,Ganz 'Arpad' Bariloche DMU
 str_steam_brazil_sao_paulo_railway_13,Sao Paulo Railway No. 13 and 14
 str_dmu_argentina_ganz_arpad_cmu_4701_transandino,Ganz 'Arpad' CMU 4701 Transandino
+str_emu_chile_efe_aez_railcar,EFE AEZ Railcar

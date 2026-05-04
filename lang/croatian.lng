@@ -746,7 +746,6 @@ str_rbd_italy_fs_aln_668                                          :FS ALn 668 (d
 str_dmu_denmark_dsb_ic4                                           :DSB IC4 (DMV)
 str_dmu_croatia_hz_7022                                           :HZ 7022 (DMV)
 str_dmu_germany_db_vt_040_flying_hamburger                        :DB VT 04.0 'Flying Hamburger' (DMV)
-# str_dmu_argentina_ganz_arpad_bariloche                            : not translated
 str_dmu_australia_nswgr_silver_city_comet                         :NSWGR 'Silver City Comet' (DMV)
 str_dmu_czech_republic_cd_m131                                    :CD M131 (DMV)
 str_dmu_germany_db_vt_085                                         :DB VT 08.5 (DMV)
@@ -796,6 +795,7 @@ str_dmu_ghana_ghana_railways_demu                                 :Ghana Railway
 str_dmu_australia_queensland_rail_diesel_tilt_train               :Queensland Rail Diesel Tilt Train (DMV)
 str_dmu_canada_up_express_nippon_sharyo_dmu                       :UP Express Nippon Sharyo DMU (DMV)
 str_dmu_argentina_fcgu_cmm_400_2                                  :FCGU CMM 400-2 (DMV)
+# str_dmu_argentina_ganz_arpad_bariloche                            : not translated
 # str_dmu_argentina_ganz_arpad_cmu_4701_transandino                 : not translated
 # str_mu_mu_wagon_unpowered                                         : not translated
 # str_mu_mu_wagon_powered                                           : not translated
@@ -1046,6 +1046,7 @@ str_emu_europe_sureot                                             :Sureot (EMV, 
 # str_emu_australia_melbourne_harris                                : not translated
 # str_emu_australia_melbourne_nexas                                 : not translated
 # str_emu_australia_melbourne_tait                                  : not translated
+# str_emu_chile_efe_aez_railcar                                     : not translated
 # str_cargoemu_japan_jr_freight_m250                                : not translated
 
 # Maglevengine

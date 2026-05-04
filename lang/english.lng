@@ -653,7 +653,7 @@ str_diesel_south_africa_sar_afro_4000                             :PRASA Afro 40
 str_diesel_usa_amtrak_charger                                     :Amtrak Charger ALC-42 (Diesel)
 str_diesel_gabon_alsthom_ad30b                                    :OCTRA 101-106 (Diesel)
 str_diesel_ghana_railway_corporation_class_tt12                   :Ghana Railways 1400 EMD TT12 (Diesel)
-str_diesel_sierra_leone_lamco_301_series                          :LAMCO. Series 301-310 (Diesel)
+str_diesel_sierra_leone_lamco_301_series                          :LAMCO 301-310 Series (Diesel)
 str_diesel_congo_alstom_bb_bb                                     :Congo-Ocean BB-BB 300 (Diesel)
 str_diesel_zimbabwe_sorefame_de8                                  :Sorefame DE8 (Diesel)
 str_diesel_ivory_coast_gmd_gt22lc2                                :Abidjan-Niger GMD GT22LC-2 (Diesel)
@@ -744,7 +744,6 @@ str_rbd_italy_fs_aln_668                                          :FS ALn 668.14
 str_dmu_denmark_dsb_ic4                                           :DSB IC4 (DMU)
 str_dmu_croatia_hz_7022                                           :HZ 7022 (DMU)
 str_dmu_germany_db_vt_040_flying_hamburger                        :DB VT 04.0 'Flying Hamburger' (DMU)
-str_dmu_argentina_ganz_arpad_bariloche                            :Ganz 'Arpad' Bariloche DMU (DMU)
 str_dmu_australia_nswgr_silver_city_comet                         :NSWGR 'Silver City Comet' (DMU)
 str_dmu_czech_republic_cd_m131                                    :CD M131 (DMU)
 str_dmu_germany_db_vt_085                                         :DB VT 08.5 (DMU)
@@ -794,6 +793,7 @@ str_dmu_ghana_ghana_railways_demu                                 :Ghana Railway
 str_dmu_australia_queensland_rail_diesel_tilt_train               :Queensland Railways Diesel Tilt Train (DMU)
 str_dmu_canada_up_express_nippon_sharyo_dmu                       :UP Express Nippon Sharyo DMU (DMU)
 str_dmu_argentina_fcgu_cmm_400_2                                  :FCGU CMM 400-2 (DMU)
+str_dmu_argentina_ganz_arpad_bariloche                            :Ganz 'Arpad' Bariloche DMU (DMU)
 str_dmu_argentina_ganz_arpad_cmu_4701_transandino                 :Ganz 'Arpad' CMU 4701 Transandino (DMU)
 str_mu_mu_wagon_unpowered                                         :Multiple Unit Wagon (Unpowered)
 str_mu_mu_wagon_powered                                           :Multiple Unit Wagon (Powered)
@@ -1044,6 +1044,7 @@ str_emu_australia_melbourne_hitachi                               :Melbourne Hit
 str_emu_australia_melbourne_harris                                :Melbourne Harris Trains [2-door] (EMU, 1500V DC)
 str_emu_australia_melbourne_nexas                                 :Melbourne Siemens Nexas (EMU, 1500V DC)
 str_emu_australia_melbourne_tait                                  :Melbourne Tait Trains (EMU, 1500V DC)
+str_emu_chile_efe_aez_railcar                                     :EFE AEZ Railcar (EMU, 3kV DC)
 str_cargoemu_japan_jr_freight_m250                                :JR Freight M250 (EMU, 1500V DC)
 
 # Maglevengine

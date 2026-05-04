@@ -745,7 +745,6 @@ str_rbd_italy_fs_aln_668                                          :意铁FS ALn 
 str_dmu_denmark_dsb_ic4                                           :丹铁DSB IC4 (内燃动车)
 str_dmu_croatia_hz_7022                                           :克铁HZ 7022 (内燃动车)
 str_dmu_germany_db_vt_040_flying_hamburger                        :德铁 VT 04.0 '飞天汉堡' (内燃动车)
-# str_dmu_argentina_ganz_arpad_bariloche                            : not translated
 str_dmu_australia_nswgr_silver_city_comet                         :新南威尔士铁路 (内燃动车)
 str_dmu_czech_republic_cd_m131                                    :捷克铁路CD M131 (内燃动车)
 str_dmu_germany_db_vt_085                                         :德铁DB VT 08.5 (内燃动车)
@@ -795,6 +794,7 @@ str_dmu_ghana_ghana_railways_demu                                 :加纳铁路 
 str_dmu_australia_queensland_rail_diesel_tilt_train               :昆士兰铁路 (内燃动车)
 str_dmu_canada_up_express_nippon_sharyo_dmu                       :联合太平洋铁路 (内燃动车)
 # str_dmu_argentina_fcgu_cmm_400_2                                  : not translated
+# str_dmu_argentina_ganz_arpad_bariloche                            : not translated
 # str_dmu_argentina_ganz_arpad_cmu_4701_transandino                 : not translated
 str_mu_mu_wagon_unpowered                                         :动车车厢 (无动力)
 str_mu_mu_wagon_powered                                           :动车车厢 (有动力)
@@ -1045,6 +1045,7 @@ str_emu_europe_sureot                                             :Sureot (电�
 # str_emu_australia_melbourne_harris                                : not translated
 # str_emu_australia_melbourne_nexas                                 : not translated
 # str_emu_australia_melbourne_tait                                  : not translated
+# str_emu_chile_efe_aez_railcar                                     : not translated
 # str_cargoemu_japan_jr_freight_m250                                : not translated
 
 # Maglevengine

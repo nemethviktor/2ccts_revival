@@ -6,6 +6,10 @@
 // Template: TPL_16A.
 // Data from: https://rixke.tassignon.be/spip.php?article795
 
+// Notes:
+//// COUNTRY: Liberia -- Initially Sierra Leone, hence the mis-named itemID
+
+
 item(FEAT_TRAINS, item_diesel_sierra_leone_lamco_301_series) {
     property {
         name: string(str_diesel_sierra_leone_lamco_301_series);
@@ -43,7 +47,7 @@ item(FEAT_TRAINS, item_diesel_sierra_leone_lamco_301_series) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/africa", "flag/SL", "power/diesel", "role/heavy_freight"];
+	badges: ["region/africa", "flag/LR", "power/diesel", "role/heavy_freight"];
 
     }
     graphics {

@@ -286,9 +286,6 @@
 #include "src/DMU/Germany_DB_VT_040_Flying_Hamburger_graphics.pnml"
 #include "src/DMU/Germany_DB_VT_040_Flying_Hamburger_item.pnml"
 
-#include "src/DMU/Argentina_Ganz_Arpad_Bariloche_graphics.pnml"
-#include "src/DMU/Argentina_Ganz_Arpad_Bariloche_item.pnml"
-
 #include "src/DMU/Australia_NSWGR_Silver_City_Comet_graphics.pnml"
 #include "src/DMU/Australia_NSWGR_Silver_City_Comet_item.pnml"
 
@@ -435,6 +432,9 @@
 
 #include "src/DMU/Argentina_FCGU_CMM_400_2_graphics.pnml"
 #include "src/DMU/Argentina_FCGU_CMM_400_2_item.pnml"
+
+#include "src/DMU/Argentina_Ganz_Arpad_Bariloche_graphics.pnml"
+#include "src/DMU/Argentina_Ganz_Arpad_Bariloche_item.pnml"
 
 #include "src/DMU/Argentina_Ganz_Arpad_CMU_4701_Transandino_graphics.pnml"
 #include "src/DMU/Argentina_Ganz_Arpad_CMU_4701_Transandino_item.pnml"
@@ -1192,6 +1192,9 @@
 
 #include "src/EMU/Australia_Melbourne_Tait_graphics.pnml"
 #include "src/EMU/Australia_Melbourne_Tait_item.pnml"
+
+#include "src/EMU/Chile_EFE_AEZ_Railcar_graphics.pnml"
+#include "src/EMU/Chile_EFE_AEZ_Railcar_item.pnml"
 
 
 //// ELECTRIC
