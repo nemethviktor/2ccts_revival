@@ -280,11 +280,18 @@ def calculate_nml_cost(row: pd.Series, m, is_running_cost=False) -> float:
         # Standard Engine/MU Logic (Power & Capacity use SQRT)
         sqrt_C = nml_sqrt(C)
         if not is_running_cost:
+            multipler = 1
+            if row['IS_POWERED_UNPOWERED_SUNDRY']:
+                if '_powered' in row['VEHIDCODE'].lower():
+                    multipler = 160
+                elif '_unpowered' in row['VEHIDCODE'].lower():
+                    multipler = 80
+
             base = (m.P2 * W) + (m.P3 * sqrt_S) + \
                 (m.P4 * sqrt_P) + (m.P5 * sqrt_C) + (m.P7 * TE)
             if row['COST_CAT'] in ['DMU', 'EMU', 'METRO', 'MMU']:
                 base += (m.P6 * nml_sqrt(row.get('WAGON_POWER', 0)))
-            return round(m.P1 * base, 5)
+            return round(m.P1 * base, 5) * multipler
         else:
             base = (m.R2 * sqrt_S) + (m.R3 * sqrt_P) + \
                 (m.R4 * sqrt_C) + (m.R6 * TE)

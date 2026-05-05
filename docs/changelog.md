@@ -14,6 +14,7 @@
   - Changed the `MULTIMAGLEV` ID type to `MMU`. This may well break any game that was started in a previous prerelease but I don't think it will affect too many people. Sorry.
   - Fixed incorrect attachment rule whereby a Maglev Powered/Unpowered could have been attached to a Gen7 Wagon
   - Fixed incorrect logic whereby Maglev Powered/Unpowered attached to MMU heads didn't call the relevant sprites
+  - Fixed incorrect purchase price logic for Powered/Unpowered items. Needed to multiply by 160 and 80 respectively, to match the old logic.
 - VEHICLES CHANGES:
   - Changed cargo wagons to be all-region. Having split boxcars and silos into food/nonfood the regional splits weren't viable any longer
   - Renamed various items (see relevant commit messages)

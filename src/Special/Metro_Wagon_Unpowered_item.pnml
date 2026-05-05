@@ -15,7 +15,7 @@ item(FEAT_TRAINS, item_mtro_metro_wagon_unpowered) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 1.24459;
+        cost_factor: 99.56720000000001;
         running_cost_factor: 1.24459;
         speed: 0 km/h;
         power: 0 hp;
