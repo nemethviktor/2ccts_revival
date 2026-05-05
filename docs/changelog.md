@@ -1,225 +1,242 @@
-### 2cc TrainsInNML (Revival) changelog
+# 2cc TrainsInNML (Revival) changelog
 
 **3.3 RC3 [202605xx]**
+
 - CODE CHANGES:
-	- Added the track types to the vehicle info export
-	- Changed Andorra/Gabon confusion wrt country names
-	- Changed sleeper coaches to have cargo ageing of 4 days instead of the normal 2.5 days
-	- Fixed mislabelled role `Commuter (Regional))'` [double ')']
-	- Revamped the logic regarding model life and vehicle life. It's now systematic. Added details about this in the readme.
-	- Changed the ai_special_flag to be `AI_FLAG_PASSENGER | AI_FLAG_CARGO` everywhere. I don't want to restrict the AI on random whims.
-	- Changed the loading speed to be logic-based because it was all over the place.
-	- Changed the cost allocation from manual to automatic. This only affected one vehicle, which was wrongly classified but it's now two fewer things to manually account for so it's a win anyhow.
+  - Added the track types to the vehicle info export
+  - Changed Andorra/Gabon confusion wrt country names
+  - Changed sleeper coaches to have cargo ageing of 4 days instead of the normal 2.5 days
+  - Fixed mislabelled role `Commuter (Regional))'` [double ')']
+  - Revamped the logic regarding model life and vehicle life. It's now systematic. Added details about this in the readme.
+  - Changed the ai_special_flag to be `AI_FLAG_PASSENGER | AI_FLAG_CARGO` everywhere. I don't want to restrict the AI on random whims.
+  - Changed the loading speed to be logic-based because it was all over the place.
+  - Changed the cost allocation from manual to automatic. This only affected one vehicle, which was wrongly classified but it's now two fewer things to manually account for so it's a win anyhow.
+  - Changed the `MULTIMAGLEV` ID type to `MMU`. This may well break any game that was started in a previous prerelease but I don't think it will affect too many people. Sorry.
+  - Fixed incorrect attachment rule whereby a Maglev Powered/Unpowered could have been attached to a Gen7 Wagon
+  - Fixed incorrect logic whereby Maglev Powered/Unpowered attached to MMU heads didn't call the relevant sprites
 - VEHICLES CHANGES:
-	- Changed cargo wagons to be all-region. Having split boxcars and silos into food/nonfood the regional splits weren't viable any longer
-	- Renamed various items (see relevant commit messages)
-	- Standardised some of the vehicle roles
-	- Fixed a the sprite for `DB 17.0-1 'Prussian S 10'` that I broke the last time
-	- Redesigned `London Underground 1938 Stock`
-	- Renamed `Amtrak Charger` to `Amtrak Charger ALC-42`
-	- Fixed the country of `LAMCO 301-310 Series` to Liberia 
-	- Changed the graphics of `Ghana Railways 1400 EMD TT12` (+ rename)
-	- Adds:
-		- `Robert Stephenson and Co 192` (early-ish steam, Egypt) based on the `Le Belge` gfx.
-		- `London Underground 1959 Stock`
-		- `London Underground 1972 Stock`
-		- `London Underground 1992 Stock`
-		- `London Underground S Stock`
-		- `DR 130/DBAG 230`
-		- `Berlin BVG F` and `Berlin BVG H` 
-		- `Baroneza` (early-ish steam, Brazil) based on the `Le Belge` gfx.
-		- `La Portena` (early-ish steam, Argentina) based on the `DHR B` gfx.
-		- `Dom Pedro Segundo 119` (early-ish steam, Brazil) based on the `SNCF 150` + `CD-5341` gfx.
-		- `No8 'Monsefu'` (Steam, Peru) based on the `PRR D16` gfx.
-		- `FCCP Q Class` (Steam, Paraguay) based on `Uruguay_AFE_N1_2_6_0` gfx.
-		- `Argentina_FCCA_PS10_Class` (Steam, Argentina) based on `FS 691` gfx.
-		- `Anglo-Chilean Nitrate No. 97 to 102` (Steam, Chile) based on `NZR X Class` gfx.
-		- `SLM-Winterthur-BBC 1-D-1` (Steam, Brazil) based on a somewhat modified version of the `Aichi DeKi 400` gfx.
-		- `UP 7391 GE AC6044CW` and `BHP 6071 GE AC6000CW` with differing regions but identical gfx. I had to draw reasonable parts of them so they're fugly.
-		- `La Copiapo` (Steam, Chile) using `NSWGR Z12` gfx from below (Ragin's).
-		- `AEG A1A+A1A` (Electric, Costa Rica) using modified `ONCFM E500` gfx.
-		- `Ganz 'Arpad' Bariloche DMU` (DMU, Argentina) using modified `DR 137 153 … 234 (vt04)` gfx.
-		- `Ganz 'Arpad' CMU 4701 Transandino` (DMU, Argentina) using further modified `DR 137 153 … 234 (vt04)` gfx.
-		- `Sao Paulo Railway No. 13 and 14` (Steam, Brazil), also using the `DHR B` gfx although I changed it a little.
-		- `Chile AEZ Railcar` (EMU, Chile) using modified `ONCF ZMC` gfx and questionable stats (as I didn't manage to find anything reliable)
+  - Changed cargo wagons to be all-region. Having split boxcars and silos into food/nonfood the regional splits weren't viable any longer
+  - Renamed various items (see relevant commit messages)
+  - Standardised some of the vehicle roles
+  - Fixed a the sprite for `DB 17.0-1 'Prussian S 10'` that I broke the last time
+  - Redesigned `London Underground 1938 Stock`
+  - Renamed `Amtrak Charger` to `Amtrak Charger ALC-42`
+  - Fixed the country of `LAMCO 301-310 Series` to Liberia
+  - Changed the graphics of `Ghana Railways 1400 EMD TT12` (+ rename)
+  - Adds:
+    - `Robert Stephenson and Co 192` (early-ish steam, Egypt) based on the `Le Belge` gfx.
+    - `London Underground 1959 Stock`
+    - `London Underground 1972 Stock`
+    - `London Underground 1992 Stock`
+    - `London Underground S Stock`
+    - `DR 130/DBAG 230`
+    - `Berlin BVG F` and `Berlin BVG H`
+    - `Baroneza` (early-ish steam, Brazil) based on the `Le Belge` gfx.
+    - `La Portena` (early-ish steam, Argentina) based on the `DHR B` gfx.
+    - `Dom Pedro Segundo 119` (early-ish steam, Brazil) based on the `SNCF 150` + `CD-5341` gfx.
+    - `No8 'Monsefu'` (Steam, Peru) based on the `PRR D16` gfx.
+    - `FCCP Q Class` (Steam, Paraguay) based on `Uruguay_AFE_N1_2_6_0` gfx.
+    - `Argentina_FCCA_PS10_Class` (Steam, Argentina) based on `FS 691` gfx.
+    - `Anglo-Chilean Nitrate No. 97 to 102` (Steam, Chile) based on `NZR X Class` gfx.
+    - `SLM-Winterthur-BBC 1-D-1` (Steam, Brazil) based on a somewhat modified version of the `Aichi DeKi 400` gfx.
+    - `UP 7391 GE AC6044CW` and `BHP 6071 GE AC6000CW` with differing regions but identical gfx. I had to draw reasonable parts of them so they're fugly.
+    - `La Copiapo` (Steam, Chile) using `NSWGR Z12` gfx from below (Ragin's).
+    - `AEG A1A+A1A` (Electric, Costa Rica) using modified `ONCFM E500` gfx.
+    - `Ganz 'Arpad' Bariloche DMU` (DMU, Argentina) using modified `DR 137 153 … 234 (vt04)` gfx.
+    - `Ganz 'Arpad' CMU 4701 Transandino` (DMU, Argentina) using further modified `DR 137 153 … 234 (vt04)` gfx.
+    - `Sao Paulo Railway No. 13 and 14` (Steam, Brazil), also using the `DHR B` gfx although I changed it a little.
+    - `Chile AEZ Railcar` (EMU, Chile) using modified `ONCF ZMC` gfx and questionable stats (as I didn't manage to find anything reliable)
 
-
-	- Added (and partially recoloured) a number of vehicles from Ragin's set (with permission)
-		- `Singapore C151` (Metro)
-		- `Singapore C751B` (Metro)
-		- `Comeng Light Metro Prototype` (Concept, 3rd Rail)
-		- `Comeng EMU` (1500V DC)
-		- `Melbourne HCMT Munnel` (1500V DC)
-		- `Melbourne Hitachi Trains` (1500V DC)
-		- `Melbourne Harris Trains [2-door]` (1500V DC)
-		- `Melbourne Siemens Nexas` (1500V DC)
-		- `Melbourne Tait Trains` (1500V DC) -- these have been simplified to fit the standard EMU template
-		- `NSWGR N67 Terrier` (Steam Engine)
-		- `NSWGR C30` (Steam Engine)
-		- `NSWGR C32` (Steam Engine)
-		- `NSWGR D50` (Steam Engine)
-		- `NSWGR Z12` (Steam Engine)
-		- `NSWGR Z19` (Steam Engine)
-		- `NSWGR Z26` (Steam Engine)
-		- `J & A Brown ROD 2-8-0` (Steam Engine)
-		- `South Australian Railways 600` (Steam Engine)
-		- `South Maitland Railways 10` (Steam Engine)
-		- `Victorian Railways H` (Steam Engine)
-		- `NSWGR 41` (Diesel Engine)
-		- `NSWGR 48` (Diesel Engine)
-		- `South Australian Railways 930` (Diesel Engine)
-		- `Commonwealth Railways GM` (Diesel Engine)
-		- `V/Line A class` (Diesel Engine)
-		- `NSWGR 42` (Diesel Engine)
-		- `Australian National DL` (Diesel Engine)
-		- `Queensland Railways 3500/3600` (Electric Engine)
-		- `NSWGR 90` (Diesel Engine)
-		- `EMD NR Class Concept` (Diesel Engine)
-		- `NSW PTC 73 Class Concept` (Diesel Engine)
-		- `V/Line N class` (Diesel Engine)
-		- `NSWGR 81` (Diesel Engine)
-		- `V/Line G class` (Diesel Engine)
-		- `NSWGR 82` (Diesel Engine)
-		- `Goldsworthy Mining Limited No. 10` (Diesel Engine)
-		- `Westrail S Class` (Diesel Engine)
-		- `Victorian Railways B` (Diesel Engine)
-		- `Victorian Railways X1` (Diesel Engine)
-		- `Victorian Railways X2` (Diesel Engine)
-		- `Victorian Railways X3` (Diesel Engine)
-		- `NSWGR 80` (Diesel Engine)
-		- `NSWGR 85` (Electric Engine)
-		- `Maldon-Dombarton '8650'` (Electric Engine)
-		- `IRA DSB MZ III` (Diesel Engine)
-		- `Commonwealth Railways 'Twin 16-645'` (Diesel Engine)
-		- `Queensland Railways 2170` (Diesel Engine)
-		- `TGR Z Class` (Diesel Engine)
-		- `Queensland Railways 2350` (Diesel Engine)
-		- `NZR DX` (Diesel Engine)
-		- `NSWGR 46` (Electric Engine)
-		- `NSWGR 40` (Diesel Engine)
-		- `NSWGR 49` (Diesel Engine)
-		- `NZR DA` (Diesel Engine)
-		- `NZR DB` (Diesel Engine)
-		- `NSWGR 47` (Diesel Engine)
-
+  - Added (and partially recoloured) a number of vehicles from Ragin's set (with permission)
+    - `Singapore C151` (Metro)
+    - `Singapore C751B` (Metro)
+    - `Comeng Light Metro Prototype` (Concept, 3rd Rail)
+    - `Comeng EMU` (1500V DC)
+    - `Melbourne HCMT Munnel` (1500V DC)
+    - `Melbourne Hitachi Trains` (1500V DC)
+    - `Melbourne Harris Trains [2-door]` (1500V DC)
+    - `Melbourne Siemens Nexas` (1500V DC)
+    - `Melbourne Tait Trains` (1500V DC) -- these have been simplified to fit the standard EMU template
+    - `NSWGR N67 Terrier` (Steam Engine)
+    - `NSWGR C30` (Steam Engine)
+    - `NSWGR C32` (Steam Engine)
+    - `NSWGR D50` (Steam Engine)
+    - `NSWGR Z12` (Steam Engine)
+    - `NSWGR Z19` (Steam Engine)
+    - `NSWGR Z26` (Steam Engine)
+    - `J & A Brown ROD 2-8-0` (Steam Engine)
+    - `South Australian Railways 600` (Steam Engine)
+    - `South Maitland Railways 10` (Steam Engine)
+    - `Victorian Railways H` (Steam Engine)
+    - `NSWGR 41` (Diesel Engine)
+    - `NSWGR 48` (Diesel Engine)
+    - `South Australian Railways 930` (Diesel Engine)
+    - `Commonwealth Railways GM` (Diesel Engine)
+    - `V/Line A class` (Diesel Engine)
+    - `NSWGR 42` (Diesel Engine)
+    - `Australian National DL` (Diesel Engine)
+    - `Queensland Railways 3500/3600` (Electric Engine)
+    - `NSWGR 90` (Diesel Engine)
+    - `EMD NR Class Concept` (Diesel Engine)
+    - `NSW PTC 73 Class Concept` (Diesel Engine)
+    - `V/Line N class` (Diesel Engine)
+    - `NSWGR 81` (Diesel Engine)
+    - `V/Line G class` (Diesel Engine)
+    - `NSWGR 82` (Diesel Engine)
+    - `Goldsworthy Mining Limited No. 10` (Diesel Engine)
+    - `Westrail S Class` (Diesel Engine)
+    - `Victorian Railways B` (Diesel Engine)
+    - `Victorian Railways X1` (Diesel Engine)
+    - `Victorian Railways X2` (Diesel Engine)
+    - `Victorian Railways X3` (Diesel Engine)
+    - `NSWGR 80` (Diesel Engine)
+    - `NSWGR 85` (Electric Engine)
+    - `Maldon-Dombarton '8650'` (Electric Engine)
+    - `IRA DSB MZ III` (Diesel Engine)
+    - `Commonwealth Railways 'Twin 16-645'` (Diesel Engine)
+    - `Queensland Railways 2170` (Diesel Engine)
+    - `TGR Z Class` (Diesel Engine)
+    - `Queensland Railways 2350` (Diesel Engine)
+    - `NZR DX` (Diesel Engine)
+    - `NSWGR 46` (Electric Engine)
+    - `NSWGR 40` (Diesel Engine)
+    - `NSWGR 49` (Diesel Engine)
+    - `NZR DA` (Diesel Engine)
+    - `NZR DB` (Diesel Engine)
+    - `NSWGR 47` (Diesel Engine)
+    - `BREL GEC Auckland ART Concept` (EMU)
+    - `NSWGR 1100 Railcar` (DMU)
+    - `Thai Comeng XPT Concept` (DMU)
+    - `New South Wales XPT` (DMU) -- the gfx for the two XPTs has been interchanged, I think they look more relistic like so.
+    - `Tangara V-Set Hybrid Concept` (EMU)
+    - `NSWGR 800/900 'DEB'` (DMU)
+    - `Melbourne 4D Prototype` (EMU)
+    - `Sydney T-Set 'Tangara'` (EMU)
+    - `NSWGR 600/700` (DMU)
+    - `NZR RM 'Silver Fern'` (DMU)
+    - `NSWGR W 'Sputnik'` (EMU)
+    - `NSWGR 'Standard' EMU` (EMU)
+    - `NSWGR 'Tulloch' EMU` (EMU)
+    - `Melbourne X'Trapolis 100` (EMU)
 
 **3.3-RC2 [20260427]**
-- CODE CHANGES:
-	- Changed some of the flag creation logic. There should be fewer animated-looking flags now
-	- Added AC/DC split for Electric badges
-	- Automated language creation
-	- Added roles and region badges
-	- Added support for Driving Cabs (sometimes referred to as DC or DT, just to keep things confusing) via new template `TPL_04S`
-	- Added random flip to coaches that are non-DT
-	- Fixed template `TPL_17B` (Sharknose etc with A/B units) not being articulated. This was a legacy bug.
-- VEHICLES CHANGES:
-	- Added `Hessian Ludwig Rlw Thomas` using `Victorian Railways Rowan Railmotor` graphics but different/relevant specs
-	- Added `NÖLB 30-33` using `NÖLB 1` graphics but different/relevant specs
-	- Changed `Harbour Board EL 0-4-0 'Little Bess'` properties to be lighter
-	- Added `Mozambique Railways No. 101 to 104` (Steam) using modified `4-4-0 'American'` graphics and different/relevant specs
-	- Added `Haine-Saint-Pierre Golwé` (Steam) - it's a bit of a mix of graphics, don't complain. It seems to work.
-	- Added `Ghana Rwy Corp Class TT12` (Diesel) using the `EMD G22W` somewhat modified graphics, again, don't complain, do a better one if you can. Otherwise works.
-	- Undid the "powered requiring electricity" logic introduced in 3.3 RC1
-	- Added `Alsthom BB-BB` (Diesel) using modified `Alsthom AD30B` graphics.
-	- Added `Sorefame DE8` (Diesel) also using modified `Alsthom AD30B` graphics.
-	- Added `GMD GT22LC-2` (Diesel) using modified `Korail 6000 EMD SD18` graphics.
-	- Added `Hyundai Rotem/Skoda TRC E6800` (Electric) using modified `CSD 380` graphics.
-	- Cloned `Brooklyn Union Gate Car` from Single-Metro to normal Metro - there was a `1300` series, which was the Single-Metro and an `Elevated`, which was the "normal". 
-	- Added `"Trans Euro Night" Sleeper` and `"CityNightLine" Sleeper` ref #4
-	- Changed some coaches to be DT-compatible #5
-	- Added/Extracted a livestock _only_ set of wagons, now separate from Boxcars.
-	- Added `MAV Class V63` using an obscure mix of `V43` and `FF1` as template and then a lot of tweaks.
-	- Checked all the lengths for every vehicle and amended many. That said some DMU/EMUs are still a pixel off but I didn't change all.
 
+- CODE CHANGES:
+  - Changed some of the flag creation logic. There should be fewer animated-looking flags now
+  - Added AC/DC split for Electric badges
+  - Automated language creation
+  - Added roles and region badges
+  - Added support for Driving Cabs (sometimes referred to as DC or DT, just to keep things confusing) via new template `TPL_04S`
+  - Added random flip to coaches that are non-DT
+  - Fixed template `TPL_17B` (Sharknose etc with A/B units) not being articulated. This was a legacy bug.
+- VEHICLES CHANGES:
+  - Added `Hessian Ludwig Rlw Thomas` using `Victorian Railways Rowan Railmotor` graphics but different/relevant specs
+  - Added `NÖLB 30-33` using `NÖLB 1` graphics but different/relevant specs
+  - Changed `Harbour Board EL 0-4-0 'Little Bess'` properties to be lighter
+  - Added `Mozambique Railways No. 101 to 104` (Steam) using modified `4-4-0 'American'` graphics and different/relevant specs
+  - Added `Haine-Saint-Pierre Golwé` (Steam) - it's a bit of a mix of graphics, don't complain. It seems to work.
+  - Added `Ghana Rwy Corp Class TT12` (Diesel) using the `EMD G22W` somewhat modified graphics, again, don't complain, do a better one if you can. Otherwise works.
+  - Undid the "powered requiring electricity" logic introduced in 3.3 RC1
+  - Added `Alsthom BB-BB` (Diesel) using modified `Alsthom AD30B` graphics.
+  - Added `Sorefame DE8` (Diesel) also using modified `Alsthom AD30B` graphics.
+  - Added `GMD GT22LC-2` (Diesel) using modified `Korail 6000 EMD SD18` graphics.
+  - Added `Hyundai Rotem/Skoda TRC E6800` (Electric) using modified `CSD 380` graphics.
+  - Cloned `Brooklyn Union Gate Car` from Single-Metro to normal Metro - there was a `1300` series, which was the Single-Metro and an `Elevated`, which was the "normal".
+  - Added `"Trans Euro Night" Sleeper` and `"CityNightLine" Sleeper` ref #4
+  - Changed some coaches to be DT-compatible #5
+  - Added/Extracted a livestock _only_ set of wagons, now separate from Boxcars.
+  - Added `MAV Class V63` using an obscure mix of `V43` and `FF1` as template and then a lot of tweaks.
+  - Checked all the lengths for every vehicle and amended many. That said some DMU/EMUs are still a pixel off but I didn't change all.
 
 **3.3-RC1 [20260412]**
-- CODE CHANGES:
-	- Added template `TPL_03G` (12-len steam w tender)
-	- Fix "Driving State S4" logic not working correctly
-- VEHICLES CHANGES:
-	- Reclassified `USA_UP_4000_Big_Boy` as template `TPL_03G`
-	- Added `JR Freight M250` (basically a CargoEMU)
-	- ~~Moved all "powered" generic coaches to be actually electric. They can't run on non-electrified tracks anymore.~~
-	- Indian and Russian coaches have been moved to broad-gauge _only_. Eventually I will do something about the chaos in the coach-dept but for now it's as-is.
-	- Re-validated all the vehicles in the set. In practice this means that when I was able to find a Wikipedia article, I took information from there, otherwise I asked Gemini (yes I use AI, such is life.). In some cases, espc wrt TE/Coefficient in steam powered vehicles, as well as the weight of them may not fully line up with the old values; this partially has to do with the fact that I think originally the loco weights were loco-only whereas now they are loco+tender where applicable. I also reworked the pax capacity where applicable. The speeds of steam engines have been oftentimes reduced from top speeds to sustainable service speeds with some extra overhead so that they don't feel too slow either (in fact some have been increased because they had been defined as slow as 15kmh [10mph], which was useless as well as unlikely).
-		- For **metros and xMUs** the following logic now applies: in Excel the TE-C has been halved. If taking a real life example of the `Moscow 81-720` the legacy set had `0.69` TE-C, from which the game calculated a TE of some `440kN` or so, which is unrealistic, even if we use powered cars. Half of that is realistic though.
 
+- CODE CHANGES:
+  - Added template `TPL_03G` (12-len steam w tender)
+  - Fix "Driving State S4" logic not working correctly
+- VEHICLES CHANGES:
+  - Reclassified `USA_UP_4000_Big_Boy` as template `TPL_03G`
+  - Added `JR Freight M250` (basically a CargoEMU)
+  - ~~Moved all "powered" generic coaches to be actually electric. They can't run on non-electrified tracks anymore.~~
+  - Indian and Russian coaches have been moved to broad-gauge _only_. Eventually I will do something about the chaos in the coach-dept but for now it's as-is.
+  - Re-validated all the vehicles in the set. In practice this means that when I was able to find a Wikipedia article, I took information from there, otherwise I asked Gemini (yes I use AI, such is life.). In some cases, espc wrt TE/Coefficient in steam powered vehicles, as well as the weight of them may not fully line up with the old values; this partially has to do with the fact that I think originally the loco weights were loco-only whereas now they are loco+tender where applicable. I also reworked the pax capacity where applicable. The speeds of steam engines have been oftentimes reduced from top speeds to sustainable service speeds with some extra overhead so that they don't feel too slow either (in fact some have been increased because they had been defined as slow as 15kmh [10mph], which was useless as well as unlikely).
+    - For **metros and xMUs** the following logic now applies: in Excel the TE-C has been halved. If taking a real life example of the `Moscow 81-720` the legacy set had `0.69` TE-C, from which the game calculated a TE of some `440kN` or so, which is unrealistic, even if we use powered cars. Half of that is realistic though.
 
 **3.3-beta2 [20260403]**
+
 - CODE CHANGES:
-	- Badges! #1 -- need testing ofc but tentatively works.
+  - Badges! #1 -- need testing ofc but tentatively works.
 - VEHICLES CHANGES:
-	- Added `Alsthom AD30B` (Standard/Diesel)
-	- Added `Katanga Mikado 2-8-2` (Narrow/Steam)
-	- Reclassified `FS ALn 668` as template `TPL_01B`
-	- Ref items raised in #3:
-		-	Steam locomotive named China Railways H does not exist, it's actually a Russian class Kh assigned to the Chinese Eastern Railway so it should be renamed Chinese Eastern Railway Kh
-		-	Queensland Rail 400 does not exist, it's actually a South Australian Railways 400 'Redhen' so it should be renamed
-		-	The flags for Eritrea is upside down in the two purchase info, it should look like this:  (you can use that one I made it myself, just CC-BY me)
-		-	The ONCFM ZAB1000 should just be named ONCF ZAB1000 (because all the other ONCF trains just have ONCF designation, there is no point in having the "M" at the end).
-		-	The South West African 2-8-0 is assigned to Angola, but it was actually a Namibian train: flag here  (CC-BY me)
-		-	German trains are all over the place, some of them have the old designation, some of them the new one with the old one as the "nickname". I'd suggest using the designation at the time they were delivered to keep consistent with the rest, which entails to:
-			-	Renaming the DB 19.0 "Saxon XX HV" to simply Saxon XX HV
-			-	Renaming the DB 99.51-60 "Saxon IV K" to simply Saxon IV K
-		-	South African trains don't have the proper operator:
-		-	The SAR 20E have been made after the restructuring of South African Railways into Transnet, and it's nicknamed "China Doll" so it should be renamed TFR 20E 'China Doll'
-		-	The SAR Afro 4000 is similarly operated by PRASA, so should be named PRASA Afro 4000
-		-	The SAR E38 is similarly operated by Amcoal, so should be named Amcoal E38.
-		-	SAR 25 is nicknamed 'Condenser' so it should be renamed SAR 25 'Condenser'
-		-	The Camrail ZE 500 (which is an export version of CP 9600) has incorrect properties: power should be 281 kW / 376 hp, and tractive effort coefficient should be 0.12.
-		-	The EFE Buscarril has serial number SB-56 so it should be renamed EFE SB-56 'Buscarril'
-		-	South African trains have properties that don't match their real counterparts:
-		-	The SAR 5M2 EMU have a head capacity of 56, not 52 (the wagons still have a capacity of 52); their introduction year is 1958, not 1954; their tractive effort coefficient is 0.27, not 0.26; and their power is 2480hp not 1240hp (since each motor coach has 1240hp)
-		-	The SAR 20E have a power of 4000hp, not 4155hp, and a tractive effort coefficient of 0.38, not 0.45.
-		-	The SAR 5E1 (with a date of 1965 it would be a Series 4) has a power of 1953hp, not 1456hp, and a tractive effort coefficient of 0.15, not 0.29.
-		-	The SAR 6E has a power of 3020hp, not 3300hp, a speed of 113km/h, not 115km/h, a tractive effort coefficient of 0.22, not 0.36.
-		-	The SAR 7E has a tractive effort coefficient of 0.25 not 0.24.
-		-	The SAR ES has a power of 1202hp not 1200hp, and a tractive effort coefficient of 0.11 not 0.26.
-		-	The CSAR railmotor has a weight of 48t not 35t and a tractive effort coefficient of 0.08 not 0.33.
-	
+  - Added `Alsthom AD30B` (Standard/Diesel)
+  - Added `Katanga Mikado 2-8-2` (Narrow/Steam)
+  - Reclassified `FS ALn 668` as template `TPL_01B`
+  - Ref items raised in #3:
+    - Steam locomotive named China Railways H does not exist, it's actually a Russian class Kh assigned to the Chinese Eastern Railway so it should be renamed Chinese Eastern Railway Kh
+    - Queensland Rail 400 does not exist, it's actually a South Australian Railways 400 'Redhen' so it should be renamed
+    - The flags for Eritrea is upside down in the two purchase info, it should look like this:  (you can use that one I made it myself, just CC-BY me)
+    - The ONCFM ZAB1000 should just be named ONCF ZAB1000 (because all the other ONCF trains just have ONCF designation, there is no point in having the "M" at the end).
+    - The South West African 2-8-0 is assigned to Angola, but it was actually a Namibian train: flag here  (CC-BY me)
+    - German trains are all over the place, some of them have the old designation, some of them the new one with the old one as the "nickname". I'd suggest using the designation at the time they were delivered to keep consistent with the rest, which entails to:
+      - Renaming the DB 19.0 "Saxon XX HV" to simply Saxon XX HV
+      - Renaming the DB 99.51-60 "Saxon IV K" to simply Saxon IV K
+    - South African trains don't have the proper operator:
+    - The SAR 20E have been made after the restructuring of South African Railways into Transnet, and it's nicknamed "China Doll" so it should be renamed TFR 20E 'China Doll'
+    - The SAR Afro 4000 is similarly operated by PRASA, so should be named PRASA Afro 4000
+    - The SAR E38 is similarly operated by Amcoal, so should be named Amcoal E38.
+    - SAR 25 is nicknamed 'Condenser' so it should be renamed SAR 25 'Condenser'
+    - The Camrail ZE 500 (which is an export version of CP 9600) has incorrect properties: power should be 281 kW / 376 hp, and tractive effort coefficient should be 0.12.
+    - The EFE Buscarril has serial number SB-56 so it should be renamed EFE SB-56 'Buscarril'
+    - South African trains have properties that don't match their real counterparts:
+    - The SAR 5M2 EMU have a head capacity of 56, not 52 (the wagons still have a capacity of 52); their introduction year is 1958, not 1954; their tractive effort coefficient is 0.27, not 0.26; and their power is 2480hp not 1240hp (since each motor coach has 1240hp)
+    - The SAR 20E have a power of 4000hp, not 4155hp, and a tractive effort coefficient of 0.38, not 0.45.
+    - The SAR 5E1 (with a date of 1965 it would be a Series 4) has a power of 1953hp, not 1456hp, and a tractive effort coefficient of 0.15, not 0.29.
+    - The SAR 6E has a power of 3020hp, not 3300hp, a speed of 113km/h, not 115km/h, a tractive effort coefficient of 0.22, not 0.36.
+    - The SAR 7E has a tractive effort coefficient of 0.25 not 0.24.
+    - The SAR ES has a power of 1202hp not 1200hp, and a tractive effort coefficient of 0.11 not 0.26.
+    - The CSAR railmotor has a weight of 48t not 35t and a tractive effort coefficient of 0.08 not 0.33.
 
 **3.3-beta1 [20260401]**
-- CODE CHANGES:
-	- Automated English Language file creation
-	- Automated the whole graphics and templating. This is likely to result in some bugs, please test.
-- VEHICLES CHANGES:
-	- Chile_EFE_XTrapolis_100 -> Modified to 1500V voltage, was None, incorrectly.
-	- Corrected a number of wrong string values for voltage categorisation (ref above automation)
 
+- CODE CHANGES:
+  - Automated English Language file creation
+  - Automated the whole graphics and templating. This is likely to result in some bugs, please test.
+- VEHICLES CHANGES:
+  - Chile_EFE_XTrapolis_100 -> Modified to 1500V voltage, was None, incorrectly.
+  - Corrected a number of wrong string values for voltage categorisation (ref above automation)
 
 **3.3-alpha1 [20260327]**
-- CODE CHANGES:
-	- Added a py script to export all vehicle info on `gcc` running. Moved away from `make`.
-	- Separated out the various railtypes and voltages. This is very "beta" at the moment.
-	- Did some superficial testing against popular tracktype newgrfs, again, needs testing.
-	- ~~Automated the 'property' file creation via Excel/Python~~
-	- Automated the 'item' file creation and integrated the 'property' details into that.
-		- Automated the puchase costs and running costs calcs. I've done several spot checks and apart from rounding differences, they all checked out.
-- VEHICLES CHANGES:
-	- Reiterating from above, separated out the various railtypes and voltages.
-	- Turned the visual for DMUs to _DIESEL_ (was _DISABLE_)
 
+- CODE CHANGES:
+  - Added a py script to export all vehicle info on `gcc` running. Moved away from `make`.
+  - Separated out the various railtypes and voltages. This is very "beta" at the moment.
+  - Did some superficial testing against popular tracktype newgrfs, again, needs testing.
+  - ~~Automated the 'property' file creation via Excel/Python~~
+  - Automated the 'item' file creation and integrated the 'property' details into that.
+    - Automated the puchase costs and running costs calcs. I've done several spot checks and apart from rounding differences, they all checked out.
+- VEHICLES CHANGES:
+  - Reiterating from above, separated out the various railtypes and voltages.
+  - Turned the visual for DMUs to _DIESEL_ (was _DISABLE_)
 
 **3.3-alpha0 [20260316]**
+
 - CODE CHANGES:
-	- Cloned to new GitHub location
-	- Turned off extraneous warnings in the makefile config
-	- Fixed some tags being incorrectly named as reported on the [OTTD Forums in 2020](https://www.tt-forums.net/viewtopic.php?p=1231342#p1231342)
-	- Fixed template_2cc_L12 temple 2nd/4th sprite being off as reported on the [OTTD Forums in 2020](https://www.tt-forums.net/viewtopic.php?p=1239539#p1239539)
+  - Cloned to new GitHub location
+  - Turned off extraneous warnings in the makefile config
+  - Fixed some tags being incorrectly named as reported on the [OTTD Forums in 2020](https://www.tt-forums.net/viewtopic.php?p=1231342#p1231342)
+  - Fixed template_2cc_L12 temple 2nd/4th sprite being off as reported on the [OTTD Forums in 2020](https://www.tt-forums.net/viewtopic.php?p=1239539#p1239539)
 - VEHICLES CHANGES:
-	- Added Cargo Gen6 Wagons (using Gen5 graphics) - **NO_CONCEPT**
-		- These are a little faster and about 10% more capacity than G5s and are introduced around 2005-2020
-	- Added Single Unit Maglev (_DB 182 ES64UM 'Mutus' (Maglev)_) + Cargo Gen7M Wagons - **IS_CONCEPT**
-		- This is using the Taurus graphics without the pantograph. Properties otherwise identical to Taurus.
-	- Changed Steel_3_axle_Compartment_Coach INTRODUCTION_YEAR to 1920 and MODEL_LIFE to 60 ref [OTTD Forums post](https://www.tt-forums.net/viewtopic.php?p=1231507#p1231507)
+  - Added Cargo Gen6 Wagons (using Gen5 graphics) - **NO_CONCEPT**
+    - These are a little faster and about 10% more capacity than G5s and are introduced around 2005-2020
+  - Added Single Unit Maglev (_DB 182 ES64UM 'Mutus' (Maglev)_) + Cargo Gen7M Wagons - **IS_CONCEPT**
+    - This is using the Taurus graphics without the pantograph. Properties otherwise identical to Taurus.
+  - Changed Steel_3_axle_Compartment_Coach INTRODUCTION_YEAR to 1920 and MODEL_LIFE to 60 ref [OTTD Forums post](https://www.tt-forums.net/viewtopic.php?p=1231507#p1231507)
 - OTHER:
-	- Revamped the readme file a little
-	- Updated licence to GNU v3
+  - Revamped the readme file a little
+  - Updated licence to GNU v3
 
-
-#### Old/Original Changelog Below:
+#### Old/Original Changelog Below
 
 **3.0-alpha3 (23/12/2018)**
+
 - Fix #8561: Cargo wagon capacities fixed
 - Fix #8562: Wagon capacity was 0 for some MU's
 - Fix #8564: MU wagon capacity switch used the HEAD_CAPACITY instead of WAGON_CAPACITY
@@ -231,10 +248,12 @@
 - Update: Translations
 
 **3.0-alpha2 (29/07/2018)**
+
 - Fix #8562: Wagon capacity was 0 for some MU's
 - Fix #8564: MU wagon capacity switch used the HEAD_CAPACITY instead of WAGON_CAPACITY
 
 **3.0-alpha1 (08/07/2018)**
+
 - Change minimum version as a result of r847
 - Change: Move the MU wagons to separate folders
 - Change r872: Move MU wagon purchase texts to separate file
@@ -306,6 +325,7 @@
 - Update: Update licenses to 2017
 
 **2.0-alpha1 (19/04/2016)**
+
 - Add: Simplified Chinese translation by dirace (closes #7529)
 - Change #7750: Long vehicle template changed
 - Change: Ignore the NML cache files
@@ -391,6 +411,7 @@
 - Update: Translations from webtranslator
 
 **1.0 (14/02/2015)**
+
 - Doc: Dates are really difficult for changelogs
 - Doc: Update to readme
 - Fix #7461: HZ 1141 properties
@@ -403,6 +424,7 @@
 - Update: Translations from webtranslator
 
 **1.0-RC2 (07/02/2015)**
+
 - Change: DB 145 changed to DB 185 TRAXX (closes #7375)
 - Doc: Someone deserves a thank you
 - Feature: Further refinements of coach properties (issues #7359 and #7373)
@@ -414,6 +436,7 @@
 - Update: Translations from webtranslator
 
 **1.0-RC1 (06/12/2014)**
+
 - Change: File rename and Generation 1 Open Wagon with gray cargo (closes #7253)
 - Change: Vehicles with length 10 are now defined as 8-2 instead of 3-4-3, as there were graphical issues in depots (closes #7206)
 - Codechange: Add SAB3 railtype label to Metro railtypetable-entry (closes #7262)
@@ -438,6 +461,7 @@
 - Update: Translations from webtranslator
 
 **1.0-beta5 (26/09/2014)**
+
 - Codechange: Also disable all wagons when no region is selected (closes #7159)
 - Codechange: Prepare for inclusion of regional and concept parameter
 - Codechange: Rename some things in preparation of issue #7133
@@ -480,6 +504,7 @@
 - Update: Translations from webtranslator
 
 **1.0-beta4 (09/09/2014)**
+
 - Codechange: ID ranges are now #defined in one file
 - Feature #7054: Vehicles redrawn as 10/8 (Graphics by Voyager One and Emperor Jake)
 - Feature/Fix #7057: Prohibit coupling of Unit Wagons to engines and regular wagons to MUs
@@ -496,6 +521,7 @@
 - Update: Translations from webtranslator
 
 **1.0-beta3 (30/08/2014)**
+
 - Feature: Purchase menu text for unit wagons (issue #7057)
 - Fix #7055: FS 895 flag used company color
 - Fix r278: DMU vehicle IDs (issue #7052)
@@ -505,10 +531,12 @@
 - Update: Translations from webtranslator
 
 **1.0-beta2 (28/08/2014)**
+
 - Fix #7046: Vehicle sort order and IDs due to wrong names
 - Fix #7047: Cargo wagon properties
 
 **1.0-beta1 (28/08/2014)**
+
 - Add: Base .pnml file
 - Add: Code for graphics templates (from the original 2cc Trainset)
 - Add: Code for MU Wagons (not yet active)

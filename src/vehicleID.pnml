@@ -4581,12 +4581,12 @@ item(FEAT_TRAINS, item_dmu_canada_up_express_nippon_sharyo_dmu, 7052) {}
 item(FEAT_TRAINS, item_dmu_argentina_fcgu_cmm_400_2, 7053) {}
 item(FEAT_TRAINS, item_dmu_argentina_ganz_arpad_bariloche, 7054) {}
 item(FEAT_TRAINS, item_dmu_argentina_ganz_arpad_cmu_4701_transandino, 7055) {}
-// 7056 free
-// 7057 free
-// 7058 free
-// 7059 free
-// 7060 free
-// 7061 free
+item(FEAT_TRAINS, item_dmu_australia_nsw_1100, 7056) {}
+item(FEAT_TRAINS, item_dmu_thailand_comeng_xpt_concept, 7057) {}
+item(FEAT_TRAINS, item_dmu_australia_comeng_xpt, 7058) {}
+item(FEAT_TRAINS, item_dmu_australia_nsw_900, 7059) {}
+item(FEAT_TRAINS, item_dmu_australia_nsw_600, 7060) {}
+item(FEAT_TRAINS, item_dmu_new_zealand_silver_fern, 7061) {}
 // 7062 free
 // 7063 free
 // 7064 free
@@ -5608,14 +5608,14 @@ item(FEAT_TRAINS, item_emu_australia_melbourne_harris, 8076) {}
 item(FEAT_TRAINS, item_emu_australia_melbourne_nexas, 8077) {}
 item(FEAT_TRAINS, item_emu_australia_melbourne_tait, 8078) {}
 item(FEAT_TRAINS, item_emu_chile_efe_aez_railcar, 8079) {}
-// 8080 free
-// 8081 free
-// 8082 free
-// 8083 free
-// 8084 free
-// 8085 free
-// 8086 free
-// 8087 free
+item(FEAT_TRAINS, item_emu_new_zealand_brel_gec_auckland_art_concept, 8080) {}
+item(FEAT_TRAINS, item_emu_australia_tangara_v_set_hybrid, 8081) {}
+item(FEAT_TRAINS, item_emu_australia_4d_train, 8082) {}
+item(FEAT_TRAINS, item_emu_australia_sydney_tangara, 8083) {}
+item(FEAT_TRAINS, item_emu_australia_nsw_w, 8084) {}
+item(FEAT_TRAINS, item_emu_australia_nsw_standard, 8085) {}
+item(FEAT_TRAINS, item_emu_australia_nsw_tulloch, 8086) {}
+item(FEAT_TRAINS, item_emu_australia_melbourne_xtrapolis_100, 8087) {}
 // 8088 free
 // 8089 free
 // 8090 free
@@ -7533,9 +7533,9 @@ item(FEAT_TRAINS, item_mtro_germany_berlin_bvg_h, 9065) {}
 // 9999 free
 
 // Multi Unit Maglev, available ID range: 10000-10499 (hex 0x2710..0x2903)
-#define ID_RANGE_MULTIMAGLEV 0x2710..0x2903
-item(FEAT_TRAINS, item_mglv_china_transrapid, 10000) {}
-item(FEAT_TRAINS, item_mglv_japan_mlx01_901, 10001) {}
+#define ID_RANGE_MMU 0x2710..0x2903
+item(FEAT_TRAINS, item_mmu_china_transrapid, 10000) {}
+item(FEAT_TRAINS, item_mmu_japan_mlx01_901, 10001) {}
 // 10002 free
 // 10003 free
 // 10004 free

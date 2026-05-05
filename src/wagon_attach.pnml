@@ -29,11 +29,12 @@ switch(FEAT_TRAINS, PARENT, switch_can_attach_wagon, [STORE_TEMP(position_in_con
 	ID_RANGE_DMU: string(STR_CANNOT_ATTACH_WAGON_TO_MU); // DMU, disallow
 	ID_RANGE_EMU: string(STR_CANNOT_ATTACH_WAGON_TO_MU); // EMU, disallow
 	ID_RANGE_MULTIMETRO: string(STR_CANNOT_ATTACH_WAGON_TO_MU); // Multi Unit Metro, disallow
-	ID_RANGE_MULTIMAGLEV: string(STR_CANNOT_ATTACH_WAGON_TO_MU); // Multi Unit Maglev, disallow
+	ID_RANGE_MMU: string(STR_CANNOT_ATTACH_WAGON_TO_MU); // Multi Unit Maglev, disallow
 	ID_RANGE_COACHES: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // Coaches, allow if relevant railtype
 	ID_RANGE_WAGONS: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // Wagons, allow if relevant railtype
 	ID_RANGE_WAGONS_MGLV: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // Maglev Wagons, allow if relevant railtype
 	ID_RANGE_UNIT_WAGONS_RAIL: string(STR_CANNOT_ATTACH_WAGON_TO_UNIT_WAGON); // Unit Wagons, disallow
+	ID_RANGE_UNIT_WAGONS_MGLV: string(STR_CANNOT_ATTACH_WAGON_TO_UNIT_WAGON); // Unit Wagons, disallow
 	ID_RANGE_SINGLEMETRO: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // Single Unit Metro, allow if relevant railtype
 	ID_RANGE_SMU: string(STR_CANNOT_ATTACH_WAGON_TO_MU); // SMU, disallow
 	ID_RANGE_CARGODMU: string(STR_CANNOT_ATTACH_WAGON_TO_MU); // CargoDMU, disallow
@@ -59,7 +60,7 @@ switch(FEAT_TRAINS, PARENT, switch_can_attach_unit_rail, [STORE_TEMP(position_in
 	ID_RANGE_DMU: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // DMU, allow if relevant railtype
 	ID_RANGE_EMU: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // EMU, allow if relevant railtype
 	ID_RANGE_MULTIMETRO: CB_RESULT_ATTACH_DISALLOW; // Multi Unit Metro, disallow
-	ID_RANGE_MULTIMAGLEV: CB_RESULT_ATTACH_DISALLOW; // Multi Unit Maglev, disallow
+	ID_RANGE_MMU: CB_RESULT_ATTACH_DISALLOW; // Multi Unit Maglev, disallow
 	ID_RANGE_COACHES: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_WAGON); // Coaches, disallow
 	ID_RANGE_WAGONS: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_WAGON); // Wagons, disallow
 	ID_RANGE_WAGONS_MGLV: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_WAGON); // Maglev Wagons, disallow
@@ -90,7 +91,7 @@ switch(FEAT_TRAINS, PARENT, switch_can_attach_unit_mtro, [STORE_TEMP(position_in
 	ID_RANGE_DMU: CB_RESULT_ATTACH_DISALLOW; // DMU, disallow
 	ID_RANGE_EMU: CB_RESULT_ATTACH_DISALLOW; // EMU, disallow
 	ID_RANGE_MULTIMETRO: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // Multi Unit Metro, allow if relevant railtype
-	ID_RANGE_MULTIMAGLEV: CB_RESULT_ATTACH_DISALLOW; // Multi Unit Maglev, disallow
+	ID_RANGE_MMU: CB_RESULT_ATTACH_DISALLOW; // Multi Unit Maglev, disallow
 	ID_RANGE_COACHES: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_WAGON); // Coaches, disallow
 	ID_RANGE_WAGONS: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_WAGON); // Wagons, disallow
 	ID_RANGE_WAGONS_MGLV: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_WAGON); // Maglev Wagons, disallow
@@ -121,10 +122,10 @@ switch(FEAT_TRAINS, PARENT, switch_can_attach_unit_mglv, [STORE_TEMP(position_in
 	ID_RANGE_DMU: CB_RESULT_ATTACH_DISALLOW; // DMU, disallow
 	ID_RANGE_EMU: CB_RESULT_ATTACH_DISALLOW; // EMU, disallow
 	ID_RANGE_MULTIMETRO: CB_RESULT_ATTACH_DISALLOW; // Multi Unit Metro, disallow
-	ID_RANGE_MULTIMAGLEV: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // Multi Unit Maglev, allow if relevant railtype
+	ID_RANGE_MMU: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // Multi Unit Maglev, allow if relevant railtype
 	ID_RANGE_COACHES: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_WAGON); // Coaches, disallow
 	ID_RANGE_WAGONS: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_WAGON); // Wagons, disallow
-	ID_RANGE_WAGONS_MGLV: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // Maglev Wagons, allow if relevant railtype
+	ID_RANGE_WAGONS_MGLV: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_WAGON); // Maglev Wagons, allow if relevant railtype
 	ID_RANGE_UNIT_WAGONS_RAIL: CB_RESULT_ATTACH_DISALLOW; // Different type, disallow
 	ID_RANGE_UNIT_WAGONS_MTRO: CB_RESULT_ATTACH_DISALLOW; // Different type, disallow
 	ID_RANGE_UNIT_WAGONS_MGLV: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // Same railtype, allow if relevant railtype
@@ -152,7 +153,7 @@ switch(FEAT_TRAINS, PARENT, switch_can_attach_unit_rail_cargo, [STORE_TEMP(posit
 	ID_RANGE_DMU: string(STR_CANNOT_ATTACH_UNIT_WAGON_CARGO_TO_PASSENGER); // DMU, disallow
 	ID_RANGE_EMU: string(STR_CANNOT_ATTACH_UNIT_WAGON_CARGO_TO_PASSENGER); // EMU, disallow
 	ID_RANGE_MULTIMETRO: CB_RESULT_ATTACH_DISALLOW; // Multi Unit Metro, disallow
-	ID_RANGE_MULTIMAGLEV: CB_RESULT_ATTACH_DISALLOW; // Multi Unit Maglev, disallow
+	ID_RANGE_MMU: CB_RESULT_ATTACH_DISALLOW; // Multi Unit Maglev, disallow
 	ID_RANGE_COACHES: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_WAGON); // Coaches, disallow
 	ID_RANGE_WAGONS: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_WAGON); // Wagons, disallow
 	ID_RANGE_WAGONS_MGLV: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_WAGON); // Maglev Wagons, disallow
@@ -184,7 +185,7 @@ switch(FEAT_TRAINS, SELF, switch_can_attach_vehicle, vehicle_type_id) {
 	ID_RANGE_DMU: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // DMU, always allow if relevant railtype
 	ID_RANGE_EMU: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // EMU, always allow if relevant railtype
 	ID_RANGE_MULTIMETRO: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // Multi Unit Metro, always allow if relevant railtype
-	ID_RANGE_MULTIMAGLEV: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // Multi Unit Maglev, always allow if relevant railtype
+	ID_RANGE_MMU: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // Multi Unit Maglev, always allow if relevant railtype
 	ID_RANGE_COACHES: switch_can_attach_wagon; // Coaches, go to Regular-switch
 	ID_RANGE_WAGONS: switch_can_attach_wagon; // Wagons, go to Regular-switch
 	ID_RANGE_WAGONS_MGLV: switch_can_attach_wagon; // Maglev Wagons, go to Regular-switch

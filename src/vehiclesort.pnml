@@ -547,6 +547,8 @@ item_dmu_germany_db_vt_040_flying_hamburger, /*Year: 1932*/ \
 item_dmu_australia_nswgr_silver_city_comet, /*Year: 1937*/ \
 item_dmu_argentina_ganz_arpad_bariloche, /*Year: 1938*/ \
 item_dmu_czech_republic_cd_m131, /*Year: 1948*/ \
+item_dmu_australia_nsw_600, /*Year: 1949*/ \
+item_dmu_australia_nsw_900, /*Year: 1951*/ \
 item_dmu_germany_db_vt_085, /*Year: 1952*/ \
 item_dmu_australia_queensland_rail_400, /*Year: 1955*/ \
 item_dmu_italy_fs_aln_442_448, /*Year: 1955*/ \
@@ -555,6 +557,7 @@ item_dmu_netherlands_ns_plan_u_de_iii, /*Year: 1960*/ \
 item_dmu_uk_br_251_blue_pullman, /*Year: 1960*/ \
 item_dmu_argentina_ganz_arpad_cmu_4701_transandino, /*Year: 1960*/ \
 item_dmu_turkey_tcdd_mt_5500, /*Year: 1961*/ \
+item_dmu_australia_nsw_1100, /*Year: 1961*/ \
 item_dmu_portugal_cp_0400, /*Year: 1965*/ \
 item_dmu_canada_cnr_turbo_train, /*Year: 1967*/ \
 item_dmu_australia_wagr_adk_adb, /*Year: 1967*/ \
@@ -562,6 +565,7 @@ item_dmu_japan_jnr_kiha_181, /*Year: 1968*/ \
 item_dmu_france_sncf_x_4630, /*Year: 1971*/ \
 item_dmu_france_sncf_t_2000, /*Year: 1972*/ \
 item_dmu_czech_republic_cd_814, /*Year: 1973*/ \
+item_dmu_new_zealand_silver_fern, /*Year: 1973*/ \
 item_dmu_serbia_zs_811, /*Year: 1974*/ \
 item_dmu_uk_br_43_ic125, /*Year: 1976*/ \
 item_dmu_cameroon_camrail_ze_500, /*Year: 1976*/ \
@@ -569,9 +573,11 @@ item_dmu_portugal_cp_0600, /*Year: 1979*/ \
 item_dmu_canada_via_rail_lrc, /*Year: 1980*/ \
 item_dmu_netherlands_ns_dh2, /*Year: 1981*/ \
 item_dmu_chile_efe_tld_500, /*Year: 1982*/ \
+item_dmu_australia_comeng_xpt, /*Year: 1982*/ \
 item_dmu_spain_feve_2400_apollos, /*Year: 1983*/ \
 item_dmu_uk_br_150_0_sprinter, /*Year: 1984*/ \
 item_dmu_iran_rai_141_pacer, /*Year: 1984*/ \
+item_dmu_thailand_comeng_xpt_concept, /*Year: 1985*/ \
 item_dmu_israel_israel_railways_ic3, /*Year: 1986*/ \
 item_dmu_germany_db_6282, /*Year: 1986*/ \
 item_dmu_australia_transadelaide_3100, /*Year: 1987*/ \
@@ -604,12 +610,14 @@ item_emu_australia_victorian_railways_swing_door, /*Year: 1917*/ \
 item_emu_australia_melbourne_tait, /*Year: 1919*/ \
 item_emu_netherlands_ns_mat24, /*Year: 1924*/ \
 item_emu_poland_pkp_ew90, /*Year: 1924*/ \
+item_emu_australia_nsw_standard, /*Year: 1925*/ \
 item_emu_austria_obb_4041, /*Year: 1929*/ \
 item_emu_russia_rzd_s, /*Year: 1929*/ \
 item_emu_usa_erie_lackawanna_mu_cars, /*Year: 1930*/ \
 item_emu_italy_atac_ecd_21_30, /*Year: 1932*/ \
 item_emu_netherlands_ns_mat36, /*Year: 1936*/ \
 item_emu_italy_fs_etr200, /*Year: 1937*/ \
+item_emu_australia_nsw_tulloch, /*Year: 1940*/ \
 item_emu_norway_nsb_bm65, /*Year: 1942*/ \
 item_emu_poland_pkp_ew54, /*Year: 1950*/ \
 item_emu_italy_fs_etr300_settebello, /*Year: 1952*/ \
@@ -617,6 +625,7 @@ item_emu_netherlands_ns_mat54, /*Year: 1954*/ \
 item_emu_turkey_tcdd_e8000, /*Year: 1955*/ \
 item_emu_austria_obb_4030, /*Year: 1956*/ \
 item_emu_australia_melbourne_harris, /*Year: 1956*/ \
+item_emu_australia_nsw_w, /*Year: 1957*/ \
 item_emu_south_africa_sar_5m2, /*Year: 1958*/ \
 item_emu_switzerland_sbb_rae_tee_ii, /*Year: 1961*/ \
 item_emu_japan_odakyu_3100_series_romance, /*Year: 1962*/ \
@@ -634,6 +643,7 @@ item_emu_finland_vr_sm2, /*Year: 1975*/ \
 item_emu_netherlands_ns_plan_y, /*Year: 1975*/ \
 item_emu_italy_fs_ale_801, /*Year: 1975*/ \
 item_emu_chile_efe_aes_railcar, /*Year: 1976*/ \
+item_emu_new_zealand_brel_gec_auckland_art_concept, /*Year: 1977*/ \
 item_emu_netherlands_ns_icm_4000, /*Year: 1979*/ \
 item_emu_new_zealand_nzr_em_et_class, /*Year: 1979*/ \
 item_emu_macedonia_macedonian_railways_412, /*Year: 1980*/ \
@@ -644,7 +654,10 @@ item_emu_tunisia_sncft_yz_e, /*Year: 1984*/ \
 item_emu_morocco_oncf_zmc, /*Year: 1984*/ \
 item_emu_japan_odakyu_10000_series_romance, /*Year: 1986*/ \
 item_emu_hungary_mav_bdvmot, /*Year: 1988*/ \
+item_emu_australia_tangara_v_set_hybrid, /*Year: 1988*/ \
+item_emu_australia_sydney_tangara, /*Year: 1988*/ \
 item_emu_sweden_sj_x2000, /*Year: 1990*/ \
+item_emu_australia_4d_train, /*Year: 1992*/ \
 item_emu_italy_fs_etr500, /*Year: 1993*/ \
 item_emu_netherlands_ns_dd_irm_virm, /*Year: 1994*/ \
 item_emu_japan_jr_shinkansen_series_e1_max, /*Year: 1994*/ \
@@ -662,6 +675,7 @@ item_emu_luxembourg_cfl_2200_coradia_duplex, /*Year: 1999*/ \
 item_emu_usa_amtrak_acela_express, /*Year: 1999*/ \
 item_emu_germany_db_403_ice_3, /*Year: 2000*/ \
 item_emu_spain_renfe_120, /*Year: 2001*/ \
+item_emu_australia_melbourne_xtrapolis_100, /*Year: 2003*/ \
 item_emu_switzerland_sbb_rabe_523_flirt, /*Year: 2004*/ \
 item_emu_bulgaria_bdz_10_desiro, /*Year: 2005*/ \
 item_emu_chile_efe_xtrapolis_100, /*Year: 2005*/ \
@@ -744,9 +758,9 @@ item_mtro_usa_washington_7000, /*Year: 2013*/ \
 item_mtro_germany_berlin_u_bahn_ik, /*Year: 2015*/ \
 item_mtro_greece_thessaloniki_2014, /*Year: 2024*/
 
-#define SORTING_MULTIMAGLEV \
-item_mglv_china_transrapid, /*Year: 2004*/ \
-item_mglv_japan_mlx01_901, /*Year: 2025*/
+#define SORTING_MMU \
+item_mmu_china_transrapid, /*Year: 2004*/ \
+item_mmu_japan_mlx01_901, /*Year: 2025*/
 
 #define SORTING_COACHES \
 item_mu_coach_gen1_wooden_2_axle_compartment_coach, /*Year: 1830*/ \
@@ -960,7 +974,7 @@ sort(FEAT_TRAINS, [
     SORTING_DMU 
     SORTING_EMU 
     SORTING_MULTIMETRO 
-    SORTING_MULTIMAGLEV 
+    SORTING_MMU 
     SORTING_COACHES 
     SORTING_WAGONS 
     SORTING_UNIT_WAGONS_RAIL 

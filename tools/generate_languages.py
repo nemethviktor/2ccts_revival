@@ -118,7 +118,7 @@ def get_tech_suffixes(row, lang_map, english_map):
         "DIESELRAILBUS": "STR_SUFFIX_DIESELRAILBUS", "ELECTRICRAILBUS": "STR_SUFFIX_ELECTRICRAILBUS",
         "METRORAILBUS": "STR_SUFFIX_METRORAILBUS", "MAGLEVRAILBUS": "STR_SUFFIX_MAGLEVRAILBUS",
         "DMU": "STR_SUFFIX_DMU", "EMU": "STR_SUFFIX_EMU", "METRO": "STR_SUFFIX_METRO",
-        "MAGLEVMU": "STR_SUFFIX_MAGLEVMU", "MAGLEV": "STR_SUFFIX_MAGLEVENGINE"
+        "MMU": "STR_SUFFIX_MMU", "MAGLEV": "STR_SUFFIX_MAGLEVENGINE"
     }
     target_class = c_cat if c_cat in class_map else e_class
     primary_noun = get_val(class_map.get(target_class, ""))

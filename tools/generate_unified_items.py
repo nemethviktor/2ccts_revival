@@ -282,13 +282,13 @@ def calculate_nml_cost(row: pd.Series, m, is_running_cost=False) -> float:
         if not is_running_cost:
             base = (m.P2 * W) + (m.P3 * sqrt_S) + \
                 (m.P4 * sqrt_P) + (m.P5 * sqrt_C) + (m.P7 * TE)
-            if row['COST_CAT'] in ['DMU', 'EMU', 'METRO', 'MAGLEVMU']:
+            if row['COST_CAT'] in ['DMU', 'EMU', 'METRO', 'MMU']:
                 base += (m.P6 * nml_sqrt(row.get('WAGON_POWER', 0)))
             return round(m.P1 * base, 5)
         else:
             base = (m.R2 * sqrt_S) + (m.R3 * sqrt_P) + \
                 (m.R4 * sqrt_C) + (m.R6 * TE)
-            if row['COST_CAT'] in ['DMU', 'EMU', 'METRO', 'MAGLEVMU']:
+            if row['COST_CAT'] in ['DMU', 'EMU', 'METRO', 'MMU']:
                 base += (m.R5 * nml_sqrt(row.get('WAGON_POWER', 0)))
             return round(max(m.R1 * base, 1.0), 5)
 
@@ -716,7 +716,7 @@ def generate_unified_items():
             content.append("\n\n")
 
         # We need to port some of the random crap from _graphics here else it won't work because we are no longer defining HEAD_CAPACITY as a generic thing.
-        if (category in ['DMU', 'EMU', 'WAGON', 'MAGLEVMU'] and row['VEHID_ID_CATEGORY'] not in ['ID_RANGE_CARGOEMU', 'ID_RANGE_CARGODMU']) or category.endswith('RAILBUS'):
+        if (category in ['DMU', 'EMU', 'WAGON', 'MMU'] and row['VEHID_ID_CATEGORY'] not in ['ID_RANGE_CARGOEMU', 'ID_RANGE_CARGODMU']) or category.endswith('RAILBUS'):
             content.append("// Cargo capacity" + "\n")
             content.append(get_expanded_engine_capacity_switch(row))
             content.append(get_expanded_wagon_capacity_switch(row))
@@ -803,7 +803,7 @@ def generate_unified_items():
                 'unpowered') else "POWERED"
             content.append(
                 f"        {purchasetext}MUWAGON{cargodef}{powered_state}\n")
-        elif (category in ['DMU', 'EMU', 'WAGON', 'MAGLEVMU'] and row['VEHID_ID_CATEGORY'] not in ['ID_RANGE_CARGODMU', 'ID_RANGE_CARGOEMU']) or category.endswith('RAILBUS'):
+        elif (category in ['DMU', 'EMU', 'WAGON', 'MMU'] and row['VEHID_ID_CATEGORY'] not in ['ID_RANGE_CARGODMU', 'ID_RANGE_CARGOEMU']) or category.endswith('RAILBUS'):
             if not cargo_capacity_defined:
                 content.append(
                     f"        cargo_capacity: switch_{VEHIDCODE_lcase}_capacity_engine;\n")
@@ -897,7 +897,7 @@ def generate_unified_items():
                         f"        // Random flip for variety\n")
                     content.append(
                         f"        reverse_build_probability: return 50;\n")
-        elif category in ['DMU', 'EMU', 'METRO', 'MAGLEVMU']:
+        elif category in ['DMU', 'EMU', 'METRO', 'MMU']:
             content.append(
                 f"        default: switch_{VEHIDCODE_lcase}_reversed;\n")
         else:
@@ -907,19 +907,22 @@ def generate_unified_items():
 
         # Livery Overrides for MUs - but not actual wagons.
         # TBH I have no idea why powered/unpowered wagons are generally classified as *MUs, rather than COACHes/WAGONs but I'll leave it as-is.
-        if (category in ['DMU', 'EMU', 'METRO', 'MAGLEVMU'] and not is_true(row['IS_POWERED_UNPOWERED_SUNDRY'])):
+        if (category in ['DMU', 'EMU', 'METRO', 'MMU'] and not is_true(row['IS_POWERED_UNPOWERED_SUNDRY'])):
 
             # At the moment there's just 1 CARGOxMU..
             overrideType = "cargo_" if row['LOADINGSPEED'] == "CARGO" and is_true(
                 row['MISC_FLAGS_TRAIN_FLAG_MU']) else ""
 
-            # Unpowered Wagon
             if category in ['METRO']:
-                content.append(
-                    f"    livery_override (item_mtro_metro_{overrideType}wagon_unpowered) {{\n")
+                overrideCategory = 'mtro_metro'
+            elif category in ['MMU']:
+                overrideCategory = 'mglv_maglev'
             else:
-                content.append(
-                    f"    livery_override (item_mu_mu_{overrideType}wagon_unpowered) {{\n")
+                overrideCategory = 'mu_mu'
+
+            # Unpowered Wagon
+            content.append(
+                f"    livery_override (item_{overrideCategory}_{overrideType}wagon_unpowered) {{\n")
             content.append(f"        loading_speed: {ls_logic};\n")
             content.append(
                 f"        running_cost_factor: int({int(row['SPEED'])}/10);\n")
@@ -941,12 +944,8 @@ def generate_unified_items():
             rc_powered = (int(row['SPEED'])/10) + (p_sqrt/10) + \
                 (row['TE_COEFFICIENT'] * row['WEIGHT'])
 
-            if category in ['METRO']:
-                content.append(
-                    f"    livery_override (item_mtro_metro_{overrideType}wagon_powered) {{\n")
-            else:
-                content.append(
-                    f"    livery_override (item_mu_mu_{overrideType}wagon_powered) {{\n")
+            content.append(
+                f"    livery_override (item_{overrideCategory}_{overrideType}wagon_powered) {{\n")
             content.append(f"        loading_speed: {ls_logic};\n")
             content.append(
                 f"        running_cost_factor: (round({rc_powered}));\n")

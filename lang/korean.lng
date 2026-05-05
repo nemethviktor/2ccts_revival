@@ -24,7 +24,7 @@ STR_WORD_NORMAL                                                   :기본
 # STR_SUFFIX_MAGLEVRAILBUS                                          : not translated
 # STR_SUFFIX_DMU                                                    : not translated
 # STR_SUFFIX_EMU                                                    : not translated
-# STR_SUFFIX_MAGLEVMU                                               : not translated
+# STR_SUFFIX_MMU                                                    : not translated
 # STR_SUFFIX_COACH                                                  : not translated
 # STR_SUFFIX_WAGON                                                  : not translated
 # STR_SUFFIX_METRO                                                  : not translated
@@ -797,6 +797,12 @@ str_dmu_canada_up_express_nippon_sharyo_dmu                       :UP Express Ni
 str_dmu_argentina_fcgu_cmm_400_2                                  :FCGU CMM 400-2 (DMU)
 # str_dmu_argentina_ganz_arpad_bariloche                            : not translated
 # str_dmu_argentina_ganz_arpad_cmu_4701_transandino                 : not translated
+# str_dmu_australia_nsw_1100                                        : not translated
+# str_dmu_thailand_comeng_xpt_concept                               : not translated
+# str_dmu_australia_comeng_xpt                                      : not translated
+# str_dmu_australia_nsw_900                                         : not translated
+# str_dmu_australia_nsw_600                                         : not translated
+# str_dmu_new_zealand_silver_fern                                   : not translated
 str_mu_mu_wagon_unpowered                                         :다중 기본 객차 (동력 없음)
 str_mu_mu_wagon_powered                                           :다중 기본 객차 (동력 있음)
 str_mu_mu_cargo_wagon_unpowered                                   :다중 기본 화물차 (동력 없음)
@@ -1047,16 +1053,18 @@ str_emu_europe_sureot                                             :Sureot (EMU, 
 # str_emu_australia_melbourne_nexas                                 : not translated
 # str_emu_australia_melbourne_tait                                  : not translated
 # str_emu_chile_efe_aez_railcar                                     : not translated
+# str_emu_new_zealand_brel_gec_auckland_art_concept                 : not translated
+# str_emu_australia_tangara_v_set_hybrid                            : not translated
+# str_emu_australia_4d_train                                        : not translated
+# str_emu_australia_sydney_tangara                                  : not translated
+# str_emu_australia_nsw_w                                           : not translated
+# str_emu_australia_nsw_standard                                    : not translated
+# str_emu_australia_nsw_tulloch                                     : not translated
+# str_emu_australia_melbourne_xtrapolis_100                         : not translated
 # str_cargoemu_japan_jr_freight_m250                                : not translated
 
 # Maglevengine
 # str_mglv_germany_db_182_es64um_mutus                              : not translated
-
-# Maglevmu
-str_mglv_china_transrapid                                         :상하이 트랜스래피드 (MMU)
-str_mglv_japan_mlx01_901                                          :JR MLX01-901 (MMU)
-str_mglv_maglev_wagon_unpowered                                   :자기부상 기본 객차 (동력 없음)
-str_mglv_maglev_wagon_powered                                     :자기부상 기본 객차 (동력 있음)
 
 # Maglevrailbus
 str_rbm_world_turbobus                                            :Turbobus (Maglev Railbus)
@@ -1132,6 +1140,12 @@ str_singlemtro_usa_brooklyn_union_gate_car                        :Brooklyn Unio
 str_singlemtro_hungary_budapest_1894_stock                        :부다페스트 1894 Stock (Single Unit Metro, Electric 3rd Rail)
 str_singlemtro_usa_chicago_l_northwest_elevated_1907_stock        :시카고 L 북서 고가 1907 Stock (Single Unit Metro, Electric 3rd Rail)
 str_singlemtro_germany_berlin_u_bahn_c_ii                         :베를린 U-반 C II (Single Unit Metro, Electric 3rd Rail)
+
+# Mmu
+str_mmu_china_transrapid                                          :상하이 트랜스래피드 (MMU)
+str_mmu_japan_mlx01_901                                           :JR MLX01-901 (MMU)
+str_mglv_maglev_wagon_unpowered                                   :자기부상 기본 객차 (동력 없음)
+str_mglv_maglev_wagon_powered                                     :자기부상 기본 객차 (동력 있음)
 
 # Steamengine
 str_steam_belgium_le_belge                                        :Le Belge (Steam)

@@ -32,7 +32,7 @@ STR_SUFFIX_MAGLEVRAILBUS,
 ,
 STR_SUFFIX_DMU,
 STR_SUFFIX_EMU,
-STR_SUFFIX_MAGLEVMU,
+STR_SUFFIX_MMU,
 STR_SUFFIX_COACH,
 STR_SUFFIX_WAGON,
 STR_SUFFIX_METRO,捷運
@@ -463,8 +463,8 @@ STR_LIVERY_COMPANY_RANDOM_2CC,
 ,
 str_mglv_maglev_wagon_powered,磁浮車廂 (有動力)
 str_mglv_maglev_wagon_unpowered,磁浮車廂 (無動力)
-str_mglv_china_transrapid,上海 Transrapid
-str_mglv_japan_mlx01_901,
+str_mmu_china_transrapid,上海 Transrapid
+str_mmu_japan_mlx01_901,
 ,
 str_rbs_austria_nolb_1,下奧地利國家鐵路1型
 str_rbs_italy_fs_86,意鐵86型
@@ -1383,3 +1383,17 @@ str_dmu_argentina_ganz_arpad_bariloche,
 str_steam_brazil_sao_paulo_railway_13,
 str_dmu_argentina_ganz_arpad_cmu_4701_transandino,
 str_emu_chile_efe_aez_railcar,
+str_emu_new_zealand_brel_gec_auckland_art_concept,
+str_dmu_australia_nsw_1100,
+str_dmu_thailand_comeng_xpt_concept,
+str_dmu_australia_comeng_xpt,
+str_emu_australia_tangara_v_set_hybrid,
+str_dmu_australia_nsw_900,
+str_emu_australia_4d_train,
+str_emu_australia_sydney_tangara,
+str_dmu_australia_nsw_600,
+str_dmu_new_zealand_silver_fern,
+str_emu_australia_nsw_w,
+str_emu_australia_nsw_standard,
+str_emu_australia_nsw_tulloch,
+str_emu_australia_melbourne_xtrapolis_100,
