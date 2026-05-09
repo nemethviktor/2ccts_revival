@@ -73,6 +73,27 @@
 #include "src/Coaches/Gen1/Coach_Gen1_Wooden_3_axle_Mail_Coach_graphics.pnml"
 #include "src/Coaches/Gen1/Coach_Gen1_Wooden_3_axle_Mail_Coach_item.pnml"
 
+#include "src/Coaches/Gen1/Coach_Gen1_American_Style_NZAUS_Coach_graphics.pnml"
+#include "src/Coaches/Gen1/Coach_Gen1_American_Style_NZAUS_Coach_item.pnml"
+
+#include "src/Coaches/Gen1/Coach_Gen1_American_Style_NZAUS_Mail_Coach_graphics.pnml"
+#include "src/Coaches/Gen1/Coach_Gen1_American_Style_NZAUS_Mail_Coach_item.pnml"
+
+#include "src/Coaches/Gen1/Coach_Gen1_2_Axle_NZAUS_Coach_graphics.pnml"
+#include "src/Coaches/Gen1/Coach_Gen1_2_Axle_NZAUS_Coach_item.pnml"
+
+#include "src/Coaches/Gen1/Coach_Gen1_2_Axle_NZAUS_Mail_Coach_graphics.pnml"
+#include "src/Coaches/Gen1/Coach_Gen1_2_Axle_NZAUS_Mail_Coach_item.pnml"
+
+#include "src/Coaches/Gen1/Coach_Gen1_End_Platform_2_Axle_NZAUS_Coach_graphics.pnml"
+#include "src/Coaches/Gen1/Coach_Gen1_End_Platform_2_Axle_NZAUS_Coach_item.pnml"
+
+#include "src/Coaches/Gen1/Coach_Gen1_Suburban_2_Axle_NZAUS_Coach_graphics.pnml"
+#include "src/Coaches/Gen1/Coach_Gen1_Suburban_2_Axle_NZAUS_Coach_item.pnml"
+
+#include "src/Coaches/Gen1/Coach_Gen1_NSW_KA_Tram_Car_graphics.pnml"
+#include "src/Coaches/Gen1/Coach_Gen1_NSW_KA_Tram_Car_item.pnml"
+
 
 //// COACHES - GEN2
 #include "src/Coaches/Gen2/Coach_Gen2_Heavyweight_Intercity_Coach_graphics.pnml"
@@ -110,6 +131,12 @@
 
 #include "src/Coaches/Gen2/Coach_Gen2_Steel_3_axle_Mail_Coach_graphics.pnml"
 #include "src/Coaches/Gen2/Coach_Gen2_Steel_3_axle_Mail_Coach_item.pnml"
+
+#include "src/Coaches/Gen2/Coach_Gen2_NZR_50ft_Coach_graphics.pnml"
+#include "src/Coaches/Gen2/Coach_Gen2_NZR_50ft_Coach_item.pnml"
+
+#include "src/Coaches/Gen2/Coach_Gen2_NZR_50ft_Mail_Coach_graphics.pnml"
+#include "src/Coaches/Gen2/Coach_Gen2_NZR_50ft_Mail_Coach_item.pnml"
 
 
 //// COACHES - GEN3
@@ -173,6 +200,33 @@
 #include "src/Coaches/Gen3/Coach_Gen3_Indian_Mail_Coach_graphics.pnml"
 #include "src/Coaches/Gen3/Coach_Gen3_Indian_Mail_Coach_item.pnml"
 
+#include "src/Coaches/Gen3/Coach_Gen3_Hitachi_Nippon_Sharyo_Silver_Star_Coach_graphics.pnml"
+#include "src/Coaches/Gen3/Coach_Gen3_Hitachi_Nippon_Sharyo_Silver_Star_Coach_item.pnml"
+
+#include "src/Coaches/Gen3/Coach_Gen3_Hitachi_Nippon_Sharyo_Silver_Star_Mail_Coach_graphics.pnml"
+#include "src/Coaches/Gen3/Coach_Gen3_Hitachi_Nippon_Sharyo_Silver_Star_Mail_Coach_item.pnml"
+
+#include "src/Coaches/Gen3/Coach_Gen3_Comeng_High_Speed_Coach_graphics.pnml"
+#include "src/Coaches/Gen3/Coach_Gen3_Comeng_High_Speed_Coach_item.pnml"
+
+#include "src/Coaches/Gen3/Coach_Gen3_Comeng_High_Speed_Mail_Coach_graphics.pnml"
+#include "src/Coaches/Gen3/Coach_Gen3_Comeng_High_Speed_Mail_Coach_item.pnml"
+
+#include "src/Coaches/Gen3/Coach_Gen3_NSW_Tulloch_RUB_Stock_Coach_graphics.pnml"
+#include "src/Coaches/Gen3/Coach_Gen3_NSW_Tulloch_RUB_Stock_Coach_item.pnml"
+
+#include "src/Coaches/Gen3/Coach_Gen3_NSW_Tulloch_RUB_Stock_Mail_Coach_graphics.pnml"
+#include "src/Coaches/Gen3/Coach_Gen3_NSW_Tulloch_RUB_Stock_Mail_Coach_item.pnml"
+
+#include "src/Coaches/Gen3/Coach_Gen3_WAGR_AY_Suburban_Coach_graphics.pnml"
+#include "src/Coaches/Gen3/Coach_Gen3_WAGR_AY_Suburban_Coach_item.pnml"
+
+#include "src/Coaches/Gen3/Coach_Gen3_NZR_56ft_Coach_graphics.pnml"
+#include "src/Coaches/Gen3/Coach_Gen3_NZR_56ft_Coach_item.pnml"
+
+#include "src/Coaches/Gen3/Coach_Gen3_NZR_56ft_Mail_Coach_graphics.pnml"
+#include "src/Coaches/Gen3/Coach_Gen3_NZR_56ft_Mail_Coach_item.pnml"
+
 
 //// COACHES - GEN4
 #include "src/Coaches/Gen4/Coach_Gen4_Eurofima_Intercity_Coach_graphics.pnml"
@@ -225,6 +279,24 @@
 
 #include "src/Coaches/Gen4/Coach_Gen4_Trans_Euro_Night_Sleeper_graphics.pnml"
 #include "src/Coaches/Gen4/Coach_Gen4_Trans_Euro_Night_Sleeper_item.pnml"
+
+#include "src/Coaches/Gen4/Coach_Gen4_BREL_Mk3_Coach_graphics.pnml"
+#include "src/Coaches/Gen4/Coach_Gen4_BREL_Mk3_Coach_item.pnml"
+
+#include "src/Coaches/Gen4/Coach_Gen4_BREL_Mk3_Mail_Coach_graphics.pnml"
+#include "src/Coaches/Gen4/Coach_Gen4_BREL_Mk3_Mail_Coach_item.pnml"
+
+#include "src/Coaches/Gen4/Coach_Gen4_Comeng_Suburban_Double_Deck_SA2000_graphics.pnml"
+#include "src/Coaches/Gen4/Coach_Gen4_Comeng_Suburban_Double_Deck_SA2000_item.pnml"
+
+#include "src/Coaches/Gen4/Coach_Gen4_Gonian_4D_Concept_graphics.pnml"
+#include "src/Coaches/Gen4/Coach_Gen4_Gonian_4D_Concept_item.pnml"
+
+#include "src/Coaches/Gen4/Coach_Gen4_Gonian_Tangara_Concept_graphics.pnml"
+#include "src/Coaches/Gen4/Coach_Gen4_Gonian_Tangara_Concept_item.pnml"
+
+#include "src/Coaches/Gen4/Coach_Gen4_Comeng_HType_Suburban_Coach_graphics.pnml"
+#include "src/Coaches/Gen4/Coach_Gen4_Comeng_HType_Suburban_Coach_item.pnml"
 
 
 //// COACHES - GEN5
@@ -888,9 +960,6 @@
 #include "src/Diesel/Australia_Commonwealth_GM_graphics.pnml"
 #include "src/Diesel/Australia_Commonwealth_GM_item.pnml"
 
-#include "src/Diesel/Australia_V_Line_A_graphics.pnml"
-#include "src/Diesel/Australia_V_Line_A_item.pnml"
-
 #include "src/Diesel/Australia_NSW_42_graphics.pnml"
 #include "src/Diesel/Australia_NSW_42_item.pnml"
 
@@ -909,9 +978,6 @@
 #include "src/Diesel/Australia_V_Line_N_graphics.pnml"
 #include "src/Diesel/Australia_V_Line_N_item.pnml"
 
-#include "src/Diesel/Australia_NSW_81_graphics.pnml"
-#include "src/Diesel/Australia_NSW_81_item.pnml"
-
 #include "src/Diesel/Australia_V_Line_G_graphics.pnml"
 #include "src/Diesel/Australia_V_Line_G_item.pnml"
 
@@ -929,12 +995,6 @@
 
 #include "src/Diesel/Australia_Victoria_X1_graphics.pnml"
 #include "src/Diesel/Australia_Victoria_X1_item.pnml"
-
-#include "src/Diesel/Australia_Victoria_X2_graphics.pnml"
-#include "src/Diesel/Australia_Victoria_X2_item.pnml"
-
-#include "src/Diesel/Australia_Victoria_X3_graphics.pnml"
-#include "src/Diesel/Australia_Victoria_X3_item.pnml"
 
 #include "src/Diesel/Australia_NSW_80_graphics.pnml"
 #include "src/Diesel/Australia_NSW_80_item.pnml"
@@ -957,9 +1017,6 @@
 #include "src/Diesel/New_Zealand_DX_Class_graphics.pnml"
 #include "src/Diesel/New_Zealand_DX_Class_item.pnml"
 
-#include "src/Diesel/Australia_NSW_40_graphics.pnml"
-#include "src/Diesel/Australia_NSW_40_item.pnml"
-
 #include "src/Diesel/Australia_NSW_49_graphics.pnml"
 #include "src/Diesel/Australia_NSW_49_item.pnml"
 
@@ -971,6 +1028,9 @@
 
 #include "src/Diesel/Australia_NSW_47_graphics.pnml"
 #include "src/Diesel/Australia_NSW_47_item.pnml"
+
+#include "src/Diesel/Australia_Commonwealth_NSU_graphics.pnml"
+#include "src/Diesel/Australia_Commonwealth_NSU_item.pnml"
 
 
 //// EMU
@@ -1237,6 +1297,15 @@
 
 #include "src/EMU/Australia_Melbourne_Xtrapolis_100_graphics.pnml"
 #include "src/EMU/Australia_Melbourne_Xtrapolis_100_item.pnml"
+
+#include "src/EMU/New_Zealand_EM_Ganz_Mavag_graphics.pnml"
+#include "src/EMU/New_Zealand_EM_Ganz_Mavag_item.pnml"
+
+#include "src/EMU/New_Zealand_DM_graphics.pnml"
+#include "src/EMU/New_Zealand_DM_item.pnml"
+
+#include "src/EMU/New_Zealand_FPFT_Matangi_graphics.pnml"
+#include "src/EMU/New_Zealand_FPFT_Matangi_item.pnml"
 
 
 //// ELECTRIC
@@ -1654,6 +1723,9 @@
 #include "src/Electric/Costa_Rica_AEG_Pacific_A1A_A1A_graphics.pnml"
 #include "src/Electric/Costa_Rica_AEG_Pacific_A1A_A1A_item.pnml"
 
+#include "src/Electric/Australia_NSW_86_graphics.pnml"
+#include "src/Electric/Australia_NSW_86_item.pnml"
+
 #include "src/Electric/UK_London_1903_Stock_graphics.pnml"
 #include "src/Electric/UK_London_1903_Stock_item.pnml"
 
@@ -1839,6 +1911,9 @@
 
 #include "src/Electric/Germany_Berlin_BVG_H_graphics.pnml"
 #include "src/Electric/Germany_Berlin_BVG_H_item.pnml"
+
+#include "src/Electric/Hungary_Budapest_Ganz_Hunslet_G2_graphics.pnml"
+#include "src/Electric/Hungary_Budapest_Ganz_Hunslet_G2_item.pnml"
 
 
 //// MMU

@@ -6,10 +6,14 @@
 // Template: TPL_03C.
 // Data from: https://de.wikipedia.org/wiki/LB%26SCR-Klasse_A1
 
+// Notes:
+//// COUNTRY: United Kingdom -- Originally coded as Australian but later modified to be the original UK hence the odd name
+
+
 item(FEAT_TRAINS, item_steam_australia_nsw_n67_0_6_0t_terrier) {
     property {
         name: string(str_steam_australia_nsw_n67_0_6_0t_terrier);
-        climates_available: ((param_region_oceania || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
+        climates_available: ((param_region_northern_europe || param_region_oceania) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1875,1,1);
         model_life: 45;
         vehicle_life: 15;
@@ -43,7 +47,7 @@ item(FEAT_TRAINS, item_steam_australia_nsw_n67_0_6_0t_terrier) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/oceania", "flag/AU", "power/steam", "role/universal"];
+	badges: ["region/europe/northern", "region/oceania", "flag/GB", "power/steam", "role/universal"];
 
     }
     graphics {

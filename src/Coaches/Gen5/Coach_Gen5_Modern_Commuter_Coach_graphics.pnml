@@ -1,7 +1,7 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
-// Template: TPL_04S
+// Template: TPL_04A
 
 // PURCHASE
 spriteset(spriteset_mu_coach_gen5_modern_commuter_coach_purchase, "gfx/coaches/gen5/coach_gen5_modern_commuter_coach_purchase.png") {template_purchase_wagon(1, 1)}

@@ -1103,7 +1103,7 @@ def get_tpl_03(vid, gfx_path, row, template_amendment_code):
 def get_tpl_04(vid, gfx_path, row, template_amendment_code):
     """
     Coaches & Wagons w / Cargo/Liveries
-    Standard -> `TPL_04A` // technically it's just 'A' but I'm lazy. All of the params here are the same, 1 letter only.
+    Standard -> `TPL_04A` with or witout DT // technically it's just 'A' but I'm lazy. All of the params here are the same, 1 letter only.
     Loading States w / Cargo -> `TPL_04B`
     Box Car Type 1 -> `TPL_04C` (but not Gen 3/4 Type 2)
     Box Car Type 2 -> `TPL_04D` (but not Gen 3/4 Type 2)
@@ -1121,8 +1121,9 @@ def get_tpl_04(vid, gfx_path, row, template_amendment_code):
     Box Car Gen2 Type 2 -> `TPL_04P`
     Open Wagon Gen1 -> `TPL_04Q`
     Service Cars -> `TPL_04R`
-    DC/Push-Pull -> `TPL_04S`
+    `TPL_04S` -- UNUSED
     Livestock Van -> `TPL_04T`
+    Coaches without liveries or subtypes ('A' w/o extra columns) -> `TPL_04U` with or witout DT
     """
     gfx_purchase_amendment = "_Purchase"
     nml_code = []
@@ -1134,7 +1135,10 @@ def get_tpl_04(vid, gfx_path, row, template_amendment_code):
 // VEHICLE""")
 
     # Constants for offsets
-    liveries = {1: 1, 2: 179, 3: 357, 4: 535}
+    if template_amendment_code in ['U']:
+        liveries = {1: 1}
+    else:
+        liveries = {1: 1, 2: 179, 3: 357, 4: 535}
 
     # region templates for cargoes
     cargo_strings = ['Dummy']
@@ -1250,7 +1254,8 @@ def get_tpl_04(vid, gfx_path, row, template_amendment_code):
     has_loading_states = template_amendment_code in [
         'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'T']
     has_driving_states = template_amendment_code in ['L', 'N', 'Q']
-    has_reverse_state = template_amendment_code in ['S']
+    has_reverse_state = template_amendment_code in [
+        'A', 'U'] and is_true(row['VEHICLE_FLAG_TRAIN_HAS_CAB'])
 
     cargo_with_driving_state = ['grain']
     states = {1: 1}
@@ -1324,7 +1329,7 @@ def get_tpl_04(vid, gfx_path, row, template_amendment_code):
             nml_code.append(group_block)
 
         # 3. Livery Selector (Random Switch)
-        if template_amendment_code != 'S':
+        if not is_true(row['VEHICLE_FLAG_TRAIN_HAS_CAB']) and template_amendment_code not in ['U']:
             selector_name = f"switch_{vid}_livery" if cargo_string_is_dummy else f"switch_{vid}_{cargo_string}_livery"
             nml_code.append(get_random_livery_selector(
                 vid=vid, cargo_string=cargo_string,
@@ -1332,6 +1337,7 @@ def get_tpl_04(vid, gfx_path, row, template_amendment_code):
                 list_length=4,
                 cargo_string_is_dummy=cargo_string_is_dummy, has_loading_states=has_loading_states))
 
+# region Wagon cargo design allocations
     if template_amendment_code == 'C':
         # 3. Livery Selector (Random Switch) - always 'Goods'
         nml_code.append(f"\n// Goods have multiple liveries")
@@ -1653,21 +1659,22 @@ switch(FEAT_TRAINS, SELF, switch_{vid}_cargo_selection, cargo_type_in_veh) {{
 }}
 """)
 
-    elif template_amendment_code == 'S':
-        selector_name = f"switch_{vid}_livery" if cargo_string_is_dummy else f"switch_{vid}_{cargo_string}_livery"
+    elif has_reverse_state:
+        if template_amendment_code in ['A']:
+            selector_name = f"switch_{vid}_livery" if cargo_string_is_dummy else f"switch_{vid}_{cargo_string}_livery"
 
-        for _, direction_state in direction_states.items():
-            nml_code.append(get_random_livery_selector(
-                vid=vid,
-                cargo_string=direction_state,
-                selector_name=f"{selector_name}_dt_{direction_state}",
-                list_length=4,
-                cargo_string_is_dummy=cargo_string_is_dummy,
-                has_loading_states=has_loading_states,
-                manual_suffix=f"dt_{direction_state}"
-            ))
+            for _, direction_state in direction_states.items():
+                nml_code.append(get_random_livery_selector(
+                    vid=vid,
+                    cargo_string=direction_state,
+                    selector_name=f"{selector_name}_dt_{direction_state}",
+                    list_length=4,
+                    cargo_string_is_dummy=cargo_string_is_dummy,
+                    has_loading_states=has_loading_states,
+                    manual_suffix=f"dt_{direction_state}"
+                ))
 
-        nml_code.append(f"""
+            nml_code.append(f"""
 // Driving backwards switch
 switch(FEAT_TRAINS, PARENT, switch_{vid}_direction, train_is_driving_backwards) {{
     1: switch_{vid}_livery_dt_forward;
@@ -1680,14 +1687,31 @@ switch(FEAT_TRAINS, SELF, switch_{vid}_position, position_in_consist_from_end) {
     switch_{vid}_livery_dt_normal;
 }}
 """)
+        elif template_amendment_code in ['U']:
 
+            selector_name = f"switch_{vid}_livery" if cargo_string_is_dummy else f"switch_{vid}_{cargo_string}_livery"
+
+            nml_code.append(f"""            
+// Driving backwards switch
+switch(FEAT_TRAINS, PARENT, switch_{vid}_direction, train_is_driving_backwards) {{
+    1: spriteset_{vid}_l1_dt_forward;
+    spriteset_{vid}_l1_dt_reverse;
+}}
+
+// Consist position switch
+switch(FEAT_TRAINS, SELF, switch_{vid}_position, position_in_consist_from_end) {{
+    0: switch_{vid}_direction;
+    spriteset_{vid}_l1_dt_normal;
+}}"""
+            )
+# endregion
     return "\n".join(nml_code)
 
 
 def get_tpl_16(vid, gfx_path, row, template_amendment_code):
     """
     12-Length Vehicles(TPL_16): param template_amendment_code:
-        A -> Generic 12L (articulated)
+        A -> Generic 12L(articulated)
         B -> Turbobus only
     """
 
@@ -1699,9 +1723,9 @@ def get_tpl_16(vid, gfx_path, row, template_amendment_code):
     engine_amendment = "engine"
 
     extra_comment = """
-//// This vehicle uses the template for length 12.
-//// The vehicle is built with 3 pieces of length 8+4
-//// The middle part gets the graphics, the other parts are left blank
+// // This vehicle uses the template for length 12.
+// // The vehicle is built with 3 pieces of length 8+4
+// // The middle part gets the graphics, the other parts are left blank
 """
     nml_code = []
     nml_code.append(get_purchase(vid=vid, gfx_path=gfx_path,
@@ -1732,11 +1756,9 @@ def get_tpl_16(vid, gfx_path, row, template_amendment_code):
 
 def get_tpl_17(vid, gfx_path, row, template_amendment_code):
     """
-    Normal length vehicles with front and back parts(TPL_17)
-
-    :param template_amendment_code:
-        A -> Normal Front/Back (articulated)
-        B -> A/B Front/Back (articulated)
+    Normal length vehicles with front and back parts(TPL_17): param template_amendment_code:
+        A -> Normal Front/Back(articulated)
+        B -> A/B Front/Back(articulated)
         C -> Front 1/2; Middle, Back 1/2 (articulated)
         D -> Front 1/2; Middle 1/2, Back 1/2 (articulated, basically just the mtab dm3)
         E -> Front 1/2; No Middle, Back 1/2 (articulated)
@@ -1919,12 +1941,7 @@ def get_tpl_17(vid, gfx_path, row, template_amendment_code):
 def get_tpl_25(vid, gfx_path, row, template_amendment_code):
     """
     Automation for the Superheavy Wagon(TPL_25).
-    Handles static Front/Back/Empty parts and 4 liveried middle sections.
-
-    :param vid: The vehicle id
-    :param gfx_path: The png path
-    :param row: The row
-    :param template_amendment_code: A-> Superheavy Wagon (articulated); no others atm.
+    Handles static Front/Back/Empty parts and 4 liveried middle sections.: param vid: The vehicle id: param gfx_path: The png path: param row: The row: param template_amendment_code: A -> Superheavy Wagon(articulated); no others atm.
     """
 
     nml_code = []
@@ -2032,9 +2049,9 @@ def get_tpl_32(vid, gfx_path, row, template_amendment_code):
                                  purchase_x=1, purchase_y=purchase_y))
 
     extra_comment = f"""
-//// This vehicle uses the template for length 10.
-//// The vehicle is built with 3 pieces of length 3+4+3
-//// The middle part gets the graphics, the other parts are left blank
+// // This vehicle uses the template for length 10.
+// // The vehicle is built with 3 pieces of length 3+4+3
+// // The middle part gets the graphics, the other parts are left blank
 """
 
     vehicles = {"engine1": (1, 1), "engine2": (1, 64)}
@@ -2111,9 +2128,7 @@ def get_tpl_32(vid, gfx_path, row, template_amendment_code):
 
 def get_tpl_42(vid, gfx_path, row, template_amendment_code):
     """
-    This is for the CargoDMU
-
-    :param template_amendment_code:
+    This is for the CargoDMU: param template_amendment_code:
     -> A: CargoDMU
     -> B: Test
     """
@@ -2259,18 +2274,18 @@ def get_tpl_42(vid, gfx_path, row, template_amendment_code):
         # We use 'position_in_consist' for the front and 'from_end' for the tail.
         # Note: 'engine1_rev_l1' etc. are the groups created by the loop above.
         nml_code.append(f"""
-// 1. Rear-facing Wagon Logic (The "Reversed" Look)
+// 1. Rear-facing Wagon Logic(The "Reversed" Look)
 // This handles the tail of the sandwich using Row 3 and Row 4 sprites.
 switch(FEAT_TRAINS, SELF, switch_{vid}_check_back, position_in_consist_from_end) {{
-    0: spritegroup_{vid}_engine1_rev_l1; // The actual tail cab (Pointing Backwards)
-    1: spritegroup_{vid}_engine2_rev_l1; // The panto-car before the tail (Pointing Backwards)
+    0: spritegroup_{vid}_engine1_rev_l1; // The actual tail cab(Pointing Backwards)
+    1: spritegroup_{vid}_engine2_rev_l1; // The panto-car before the tail(Pointing Backwards)
     default: spritegroup_{vid}_trailer_l1;
 }}
 
 // 2. Front-facing Wagon Logic
 // This handles the units immediately following the lead engine.
 switch(FEAT_TRAINS, SELF, switch_{vid}_wagon_logic, position_in_consist) {{
-    1: spritegroup_{vid}_engine2_l1; // Unit after front cab (Forward)
+    1: spritegroup_{vid}_engine2_l1; // Unit after front cab(Forward)
     default: switch_{vid}_check_back;
 }}
 """)
@@ -2306,9 +2321,10 @@ def generate_graphics_pnml():
     df_roster = sheets['roster']
     df_tracks = sheets['track_types']
     df_gfx_props = sheets['graphics_properties']
+    df_flags = sheets['flags']
 
     # CRITICAL: Clean VEHIDCODE in all sheets to prevent "Not Found" errors
-    for df in [df_control, df_props, df_roster, df_tracks, df_gfx_props]:
+    for df in [df_control, df_props, df_roster, df_tracks, df_gfx_props, df_flags]:
         if 'VEHIDCODE' in df.columns:
             df['VEHIDCODE'] = df['VEHIDCODE'].astype(str).str.strip()
 
@@ -2321,6 +2337,8 @@ def generate_graphics_pnml():
         df_roster, on='VEHIDCODE', how='left', suffixes=('', '_roster'))
     df_master = df_master.merge(
         df_tracks, on='VEHIDCODE', how='left', suffixes=('', '_tracks'))
+    df_master = df_master.merge(
+        df_flags, on='VEHIDCODE', how='left', suffixes=('', '_flags'))
 
     # 3. Merge graphics properties
     df_master = df_master.merge(

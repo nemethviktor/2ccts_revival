@@ -47,6 +47,9 @@ item(FEAT_TRAINS, item_mu_coach_gen4_horizon_baggage_coach) {
         length: 8;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+
+	badges: ["region/america/northern", "region/america/south", "region/oceania", "role/coach__mail_"];
+
     }
     graphics {
         purchase: spriteset_mu_coach_gen4_horizon_baggage_coach_purchase;

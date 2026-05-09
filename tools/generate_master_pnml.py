@@ -8,6 +8,11 @@ import shutil
 warnings.filterwarnings("ignore", category=UserWarning, module="openpyxl")
 
 
+def is_true(val) -> bool:
+    """ Checks if a value evals to true (ie is a string that says so, or 1, or just True)"""
+    return (val == True or str(val).upper() == 'TRUE') or (val == 1)
+
+
 def generate_master_pnml():
     print("--- Starting Master PNML Generation ---")
 
@@ -70,6 +75,9 @@ def generate_master_pnml():
     current_group = None
 
     for _, row in df_control.iterrows():
+        if (is_true(row['EXCLUDE_READONLY'])):
+            continue
+
         folder_path = str(row['SAVE_TO']).replace('\\', '/')
 
         # Logic to insert section headers based on folder path

@@ -6,6 +6,11 @@ import warnings
 warnings.filterwarnings("ignore", category=UserWarning, module="openpyxl")
 
 
+def is_true(val) -> bool:
+    """ Checks if a value evals to true (ie is a string that says so, or 1, or just True)"""
+    return (val == True or str(val).upper() == 'TRUE') or (val == 1)
+
+
 def generate_vehicle_id_pnml():
     print("--- Starting Vehicle ID File Generation (with Free ID Comments) ---")
 
@@ -53,15 +58,20 @@ def generate_vehicle_id_pnml():
         df_control['VEHID_ID'], errors='coerce')
 
     # Drop NaNs, lowercase the ITEM column, and map it
-    id_map = df_control.dropna(subset=['VEHID_ID']).set_index(
-        'VEHID_ID')['ITEM'].str.lower().to_dict()
+    id_map = {
+        int(row['VEHID_ID']): {
+            'name': row['ITEM'],
+            'exclude': is_true(row.get('EXCLUDE_READONLY', False))
+        }
+        for _, row in df_control.iterrows() if pd.notnull(row['VEHID_ID'])
+    }
 
     # 4. Process Category Blocks
-    for _, r_row in df_ranges.iterrows():
-        cat_id = str(r_row['ID Type']).strip()
-        eng_title = r_row['English Title']
-        r_start = int(r_row['Range Start'])
-        r_end = int(r_row['Range End'])
+    for _, row in df_ranges.iterrows():
+        cat_id = str(row['ID Type']).strip()
+        eng_title = row['English Title']
+        r_start = int(row['Range Start'])
+        r_end = int(row['Range End'])
 
         hex_range = f"0x{r_start:04X}..0x{r_end:04X}"
 
@@ -72,11 +82,14 @@ def generate_vehicle_id_pnml():
         # Iterate through EVERY number in the range
         for current_id in range(r_start, r_end + 1):
             if current_id in id_map:
-                item_name = id_map[current_id]
-                content.append(
-                    f"item(FEAT_TRAINS, {item_name}, {current_id}) {{}}\n")
-            else:
-                content.append(f"// {current_id} free\n")
+                veh_info = id_map[current_id]
+                # Check the exclusion status from the vehicle data, not the range data
+                if veh_info['exclude']:
+                    content.append(
+                        f"// item(FEAT_TRAINS, {veh_info['name']}, {current_id}) {{}} // vehicle is excluded\n")
+                else:
+                    content.append(
+                        f"item(FEAT_TRAINS, {veh_info['name']}, {current_id}) {{}}\n")
 
         content.append("\n")
 

@@ -6,6 +6,11 @@ import warnings
 warnings.filterwarnings("ignore", category=UserWarning, module="openpyxl")
 
 
+def is_true(val) -> bool:
+    """ Checks if a value evals to true (ie is a string that says so, or 1, or just True)"""
+    return (val == True or str(val).upper() == 'TRUE') or (val == 1)
+
+
 def generate_vehiclesort_pnml():
     print("--- Starting Vehicle Sort File Generation ---")
 
@@ -35,6 +40,10 @@ def generate_vehiclesort_pnml():
                 # Drop any duplicate columns created by the merge
                 df_master = df_master.loc[:, ~
                                           df_master.columns.str.endswith('_dup')]
+                df_master = df_master[~(df_master.get(
+                    'EXCLUDE', False).apply(is_true))]
+
+        df_ranges = sheets['vehicle_id_ranges']
 
         df_ranges = sheets['vehicle_id_ranges']
         df_copyright = sheets['copyright_text']

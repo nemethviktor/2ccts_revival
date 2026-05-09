@@ -15,6 +15,10 @@
   - Fixed incorrect attachment rule whereby a Maglev Powered/Unpowered could have been attached to a Gen7 Wagon
   - Fixed incorrect logic whereby Maglev Powered/Unpowered attached to MMU heads didn't call the relevant sprites
   - Fixed incorrect purchase price logic for Powered/Unpowered items. Needed to multiply by 160 and 80 respectively, to match the old logic.
+  - Simplified the template logic for push-pull/DT coaches. There is now only the standard `TPL_04A` and the flag and the rest is handled by the code.
+  - Complicated the template logic for coaches and push-pull/DT because I've added `TPL_04U` for items that have no fancy liveries e.g. dining cars or first classes but it does support push-pull.
+  - Added `Push-Pull` badge capability.
+
 - VEHICLES CHANGES:
   - Changed cargo wagons to be all-region. Having split boxcars and silos into food/nonfood the regional splits weren't viable any longer
   - Renamed various items (see relevant commit messages)
@@ -47,6 +51,7 @@
     - `Ganz 'Arpad' CMU 4701 Transandino` (DMU, Argentina) using further modified `DR 137 153 … 234 (vt04)` gfx.
     - `Sao Paulo Railway No. 13 and 14` (Steam, Brazil), also using the `DHR B` gfx although I changed it a little.
     - `Chile AEZ Railcar` (EMU, Chile) using modified `ONCF ZMC` gfx and questionable stats (as I didn't manage to find anything reliable)
+    - `Budapest Ganz Hunslet G2` (Metro)
 
   - Added (and partially recoloured) a number of vehicles from Ragin's set (with permission)
     - `Singapore C151` (Metro)
@@ -73,7 +78,6 @@
     - `NSWGR 48` (Diesel Engine)
     - `South Australian Railways 930` (Diesel Engine)
     - `Commonwealth Railways GM` (Diesel Engine)
-    - `V/Line A class` (Diesel Engine)
     - `NSWGR 42` (Diesel Engine)
     - `Australian National DL` (Diesel Engine)
     - `Queensland Railways 3500/3600` (Electric Engine)
@@ -81,17 +85,15 @@
     - `EMD NR Class Concept` (Diesel Engine)
     - `NSW PTC 73 Class Concept` (Diesel Engine)
     - `V/Line N class` (Diesel Engine)
-    - `NSWGR 81` (Diesel Engine)
     - `V/Line G class` (Diesel Engine)
     - `NSWGR 82` (Diesel Engine)
     - `Goldsworthy Mining Limited No. 10` (Diesel Engine)
     - `Westrail S Class` (Diesel Engine)
     - `Victorian Railways B` (Diesel Engine)
     - `Victorian Railways X1` (Diesel Engine)
-    - `Victorian Railways X2` (Diesel Engine)
-    - `Victorian Railways X3` (Diesel Engine)
     - `NSWGR 80` (Diesel Engine)
     - `NSWGR 85` (Electric Engine)
+    - `NSWGR 86` (Electric Engine)
     - `Maldon-Dombarton '8650'` (Electric Engine)
     - `IRA DSB MZ III` (Diesel Engine)
     - `Commonwealth Railways 'Twin 16-645'` (Diesel Engine)
@@ -100,7 +102,6 @@
     - `Queensland Railways 2350` (Diesel Engine)
     - `NZR DX` (Diesel Engine)
     - `NSWGR 46` (Electric Engine)
-    - `NSWGR 40` (Diesel Engine)
     - `NSWGR 49` (Diesel Engine)
     - `NZR DA` (Diesel Engine)
     - `NZR DB` (Diesel Engine)
@@ -119,6 +120,32 @@
     - `NSWGR 'Standard' EMU` (EMU)
     - `NSWGR 'Tulloch' EMU` (EMU)
     - `Melbourne X'Trapolis 100` (EMU)
+    - `NZR EM 'Ganz Mavag'` (EMU)
+    - `NZR DM EMU` (EMU)
+    - `Early American End-Platform Coach`
+    - `Early American End-Platform Mail Coach`
+    - `Early 2-axle Compartment Coach`
+    - `Early 2-axle Mail Coach`
+    - `Early 2-axle End-Platform Coach`
+    - `Early 2-axle Suburban Coach`
+    - `Mk3 Coach`
+    - `Mk3 Mail Coach`
+    - `Comeng SA2000 SDD Concept`
+    - `Melbourne/Gonian 4D Coach Concept`
+    - `Tangara V-Set Hybrid Coach Concept`
+    - `NZR Silver Star Coach`
+    - `NZR Silver Star Mail Coach`
+    - `Comeng High Speed Coach`
+    - `Comeng High Speed Mail Coach`
+    - `Comeng-M&K H-Type Suburban Coach`
+    - `NSWGR 'Tulloch' RUB Coach`
+    - `NSWGR 'Tulloch' RUB Mail Coach`
+    - `WAGR AY Suburban Coaches`
+    - `NZR 56ft Coach`
+    - `NZR 56ft Mail Coach`
+    - `NZR 50ft Coach`
+    - `NZR 50ft Mail Coach`
+    - `KA Type Tram Car`
 
 **3.3-RC2 [20260427]**
 

@@ -100,6 +100,11 @@ def process_and_save_image(v_id, pnml_path, excel_png_path, templates):
         return ""
 
 
+def is_true(val) -> bool:
+    """ Checks if a value evals to true (ie is a string that says so, or 1, or just True)"""
+    return (val == True or str(val).upper() == 'TRUE') or (val == 1)
+
+
 def generate_markdown():
     print("--- Generating Vehicle Summary (Markdown) ---")
     sheets = pd.read_excel(excel_path, sheet_name=None)
@@ -132,6 +137,9 @@ def generate_markdown():
 
         cat_df = df[df['COST_CAT'] == cat].sort_values('INTRODUCTION_YEAR')
         for _, row in cat_df.iterrows():
+            if is_true(row['EXCLUDE']):
+                continue
+
             v_id = str(row['NAME']).strip().lower()
             save_to = str(row['SAVE_TO']).replace('\\', '/')
             base_fn = str(row['FILENAMES_EXPECTED'])

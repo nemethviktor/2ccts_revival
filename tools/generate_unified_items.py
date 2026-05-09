@@ -133,6 +133,7 @@ def get_badges(row: pd.Series) -> str:
     flag = row['COUNTRY_CODE'].upper()
     badges = []
     regions = []
+    # attributes = [] # there's only one for now
 
     # Region/s
     if is_true(row['AFRICA']):
@@ -159,7 +160,7 @@ def get_badges(row: pd.Series) -> str:
         badges.append(f"region/{region}")
 
     # Flags
-    if flag != "":
+    if flag != "" and not is_true(row['IS_WAGON_OR_COACH']):
         badges.append(f"flag/{flag}")
 
     # Power
@@ -187,10 +188,13 @@ def get_badges(row: pd.Series) -> str:
             else:
                 power = 'electric'
 
-        badges.append(f"power/{power}")
+        if not is_true(row['IS_WAGON_OR_COACH']):
+            badges.append(f"power/{power}")
 
     role = row['ROLE'].lower().replace(' ', '_').replace('/',
                                                          '_').replace('-', '_').replace('(', '_').replace(')', '_')
+    if is_true(row['VEHICLE_FLAG_TRAIN_HAS_CAB']):
+        badges.append("attribute/push_pull")
 
     badges.append(f"role/{role}")
 
@@ -765,7 +769,7 @@ def generate_unified_items():
         content.append(f"        misc_flags: {misc_logic};\n")
 
         # Push-pull DC (DT) logic where applicable
-        if TEMPLATE_ID_FULL in ['TPL_04S']:
+        if TEMPLATE_ID_FULL in ['TPL_04A', 'TPL_04U'] and is_true(row['VEHICLE_FLAG_TRAIN_HAS_CAB']):
             content.append(
                 f"        extra_flags: bitmask(VEHICLE_FLAG_TRAIN_HAS_CAB);\n")
         content.append(f"        refit_cost: {REFIT_COST};\n")
@@ -786,10 +790,7 @@ def generate_unified_items():
         content.append(
             f"        bitmask_vehicle_info: {BITMASK_VEHICLE_INFO};\n")
 
-        if is_true(row['IS_WAGON_OR_COACH']):
-            pass
-        else:
-            content.append(f"{get_badges(row)}\n")
+        content.append(f"{get_badges(row)}\n")
         content.append("    }\n")
         # Graphics selection/overrides
         content.append("    graphics {\n")
@@ -867,7 +868,6 @@ def generate_unified_items():
                 'TPL_04J',
                 'TPL_04M',
                 'TPL_04P',
-
             ]:
                 # Total cluserf.k but box-cars and some tanker-wagons have so-called standard liveries
                 # ....with a capital 'S'!
@@ -877,15 +877,20 @@ def generate_unified_items():
                     'TPL_04T']:
                 content.append(
                     f"        default: switch_{VEHIDCODE_lcase}_livestock_livery;\n")
-            elif TEMPLATE_ID_FULL in [
+            elif (TEMPLATE_ID_FULL in [
                 'TPL_02F',
                 'TPL_04A',
                 'TPL_04B',
                 'TPL_04R',
-            ]:
+            ] and not is_true(row['VEHICLE_FLAG_TRAIN_HAS_CAB'])):
                 content.append(
                     f"        default: switch_{VEHIDCODE_lcase}_livery;\n")
-            elif TEMPLATE_ID_FULL in ['TPL_04S']:
+            elif TEMPLATE_ID_FULL in [
+                'TPL_04U',
+            ] and not is_true(row['VEHICLE_FLAG_TRAIN_HAS_CAB']):
+                content.append(
+                    f"        default: spriteset_{VEHIDCODE_lcase}_l1;\n")
+            elif TEMPLATE_ID_FULL in ['TPL_04A', 'TPL_04U'] and is_true(row['VEHICLE_FLAG_TRAIN_HAS_CAB']):
                 content.append(
                     f"        default: switch_{VEHIDCODE_lcase}_position;\n")
 
@@ -894,7 +899,7 @@ def generate_unified_items():
                 content.append(f"        default: switch_{VEHIDCODE_lcase};\n")
 
             if row['COST_CAT'] == 'COACH':
-                if TEMPLATE_ID_FULL in ['TPL_04S']:
+                if TEMPLATE_ID_FULL in ['TPL_04A', 'TPL_04U'] and is_true(row['VEHICLE_FLAG_TRAIN_HAS_CAB']):
                     content.append(
                         f"        // Always flip because DT has to face backwards\n")
                     content.append(

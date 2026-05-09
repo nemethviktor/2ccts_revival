@@ -1,0 +1,14 @@
+//  Copyright (C) 2017 Transportman // V. Nemeth 2026+
+//  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
+
+// Template: TPL_04U
+
+// PURCHASE
+spriteset(spriteset_mu_coach_gen1_american_style_nzaus_coach_purchase, "gfx/coaches/gen1/coach_gen1_american_style_nzaus_coach_purchase.png") {template_purchase_wagon(1, 1)}
+
+
+// VEHICLE
+
+/// LIVERY 1
+spriteset(spriteset_mu_coach_gen1_american_style_nzaus_coach_l1, "gfx/coaches/gen1/coach_gen1_american_style_nzaus_coach.png") {template_2cc_wagons(1, 1)}
+

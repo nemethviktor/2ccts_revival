@@ -81,7 +81,10 @@ def generate_vehicle_id_pnml():
                "region/oceania/australia_and_new_zealand", "region/oceania/melanesia", "region/oceania/micronesia", "region/oceania/polynesia"
                ]
 
-    # currently unusued
+    attributes = ["attribute",
+                  "attribute/push_pull"
+                  ]
+
     roles = ["role",
              "role/coach__commuter_", "role/coach__express_", "role/coach__hs_",
              "role/coach__mail_", "role/coach__regional_",
@@ -98,6 +101,12 @@ def generate_vehicle_id_pnml():
         if '_' in power_underlined:
             content.append(
                 f"""\nspriteset (sprite_{power_underlined}) {{[0, 0, 16, 12, 0, 0, "gfx/Badges/power/{power_underlined}.png"]}}""")
+
+    for attribute in attributes:
+        attribute_underlined = attribute.replace('/', '_')
+        if '_' in attribute_underlined:
+            content.append(
+                f"""\nspriteset (sprite_{attribute_underlined}) {{[0, 0, 16, 12, 0, 0, "gfx/Badges/attributes/{attribute_underlined}.png"]}}""")
 
     for flag in flags:
         flag_underlined = flag.replace('/', '_')
@@ -124,6 +133,10 @@ def generate_vehicle_id_pnml():
     content.append("\n// Roles\n")
     for role in roles:
         content.append(f"""\t"{role}",\n""")
+
+    content.append("\n// Attributes\n")
+    for attribute in attributes:
+        content.append(f"""\t"{attribute}",\n""")
 
     content.append("}\n")
 
@@ -163,6 +176,25 @@ item (FEAT_BADGES, {power_underlined}) {{
         if '_' in power_underlined:
             content.append(
                 f"""\n\tgraphics {{default: sprite_{power_underlined};}}\n""")
+        content.append(f"}}\n")
+
+    content.append("\n")
+
+    content.append("\n// Attributes")
+    for attribute in attributes:
+        attribute_underlined = attribute.replace('/', '_')
+        content.append(f"""\n\t
+item (FEAT_BADGES, {attribute_underlined}) {{
+    property {{
+        label: "{attribute}";
+        name: string(STR_{attribute_underlined.upper()});""")
+        if '_' in attribute_underlined:
+            content.append(f"""
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);""")
+        content.append(f"\n\t}}")
+        if '_' in attribute_underlined:
+            content.append(
+                f"""\n\tgraphics {{default: sprite_{attribute_underlined};}}\n""")
         content.append(f"}}\n")
 
     content.append("\n")

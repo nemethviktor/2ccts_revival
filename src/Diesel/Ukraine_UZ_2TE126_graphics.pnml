@@ -9,9 +9,9 @@ spriteset(spriteset_diesel_ukraine_uz_2te126_purchase, "gfx/diesel/ukraine_uz_2t
 
 // VEHICLE
 
-//// This vehicle uses the template for length 10.
-//// The vehicle is built with 3 pieces of length 3+4+3
-//// The middle part gets the graphics, the other parts are left blank
+// // This vehicle uses the template for length 10.
+// // The vehicle is built with 3 pieces of length 3+4+3
+// // The middle part gets the graphics, the other parts are left blank
 
 /// Engine1
 spriteset(spriteset_diesel_ukraine_uz_2te126_engine1, "gfx/diesel/ukraine_uz_2te126.png") {template_2cc_l12(1, 1)}

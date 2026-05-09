@@ -97,18 +97,18 @@ spritegroup spritegroup_cargoemu_japan_jr_freight_m250_trailer_l1 {
     loaded: [spriteset_cargoemu_japan_jr_freight_m250_trailer_s1, spriteset_cargoemu_japan_jr_freight_m250_trailer_s2, spriteset_cargoemu_japan_jr_freight_m250_trailer_s3];
 }
 
-// 1. Rear-facing Wagon Logic (The "Reversed" Look)
+// 1. Rear-facing Wagon Logic(The "Reversed" Look)
 // This handles the tail of the sandwich using Row 3 and Row 4 sprites.
 switch(FEAT_TRAINS, SELF, switch_cargoemu_japan_jr_freight_m250_check_back, position_in_consist_from_end) {
-    0: spritegroup_cargoemu_japan_jr_freight_m250_engine1_rev_l1; // The actual tail cab (Pointing Backwards)
-    1: spritegroup_cargoemu_japan_jr_freight_m250_engine2_rev_l1; // The panto-car before the tail (Pointing Backwards)
+    0: spritegroup_cargoemu_japan_jr_freight_m250_engine1_rev_l1; // The actual tail cab(Pointing Backwards)
+    1: spritegroup_cargoemu_japan_jr_freight_m250_engine2_rev_l1; // The panto-car before the tail(Pointing Backwards)
     default: spritegroup_cargoemu_japan_jr_freight_m250_trailer_l1;
 }
 
 // 2. Front-facing Wagon Logic
 // This handles the units immediately following the lead engine.
 switch(FEAT_TRAINS, SELF, switch_cargoemu_japan_jr_freight_m250_wagon_logic, position_in_consist) {
-    1: spritegroup_cargoemu_japan_jr_freight_m250_engine2_l1; // Unit after front cab (Forward)
+    1: spritegroup_cargoemu_japan_jr_freight_m250_engine2_l1; // Unit after front cab(Forward)
     default: switch_cargoemu_japan_jr_freight_m250_check_back;
 }
 

@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_04S.
+// Template: TPL_04A.
 // Data from: nan
 
 // Notes:
@@ -48,6 +48,9 @@ item(FEAT_TRAINS, item_mu_coach_gen3_gallery_car) {
         length: 8;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+
+	badges: ["region/america/northern", "region/america/south", "region/oceania", "attribute/push_pull", "role/coach__commuter_"];
+
     }
     graphics {
         purchase: spriteset_mu_coach_gen3_gallery_car_purchase;

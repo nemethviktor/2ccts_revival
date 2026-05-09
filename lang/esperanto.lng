@@ -132,6 +132,8 @@ STR_PARAM_REGION_EASTERN_EUROPE_DESC                              :Uzu veturiloj
 # STR_REGION_OCEANIA_MELANESIA                                      : not translated
 # STR_REGION_OCEANIA_POLYNESIA                                      : not translated
 # STR_REGION_OCEANIA_AUSTRALIA_AND_NEW_ZEALAND                      : not translated
+# STR_ATTRIBUTE                                                     : not translated
+# STR_ATTRIBUTE_PUSH_PULL                                           : not translated
 # STR_ZONE_RESIDENTIAL                                              : not translated
 # STR_ZONE_RESIDENTIAL_LOW_DENSITY                                  : not translated
 # STR_ZONE_RESIDENTIAL_MEDIUM_DENSITY                               : not translated
@@ -521,6 +523,30 @@ STR_PARAM_TIMES_16                                                :16
 # str_mu_coach_gen6_super_voyager_coach                             : not translated
 # str_mu_coach_gen5_citynightline_sleeper                           : not translated
 # str_mu_coach_gen4_trans_euro_night_sleeper                        : not translated
+# str_mu_coach_gen1_american_style_nzaus_coach                      : not translated
+# str_mu_coach_gen1_american_style_nzaus_mail_coach                 : not translated
+# str_mu_coach_gen1_2_axle_nzaus_coach                              : not translated
+# str_mu_coach_gen1_2_axle_nzaus_mail_coach                         : not translated
+# str_mu_coach_gen1_end_platform_2_axle_nzaus_coach                 : not translated
+# str_mu_coach_gen1_suburban_2_axle_nzaus_coach                     : not translated
+# str_mu_coach_gen4_brel_mk3_coach                                  : not translated
+# str_mu_coach_gen4_brel_mk3_mail_coach                             : not translated
+# str_mu_coach_gen4_comeng_suburban_double_deck_sa2000              : not translated
+# str_mu_coach_gen4_gonian_4d_concept                               : not translated
+# str_mu_coach_gen4_gonian_tangara_concept                          : not translated
+# str_mu_coach_gen3_hitachi_nippon_sharyo_silver_star_coach         : not translated
+# str_mu_coach_gen3_hitachi_nippon_sharyo_silver_star_mail_coach    : not translated
+# str_mu_coach_gen3_comeng_high_speed_coach                         : not translated
+# str_mu_coach_gen3_comeng_high_speed_mail_coach                    : not translated
+# str_mu_coach_gen4_comeng_htype_suburban_coach                     : not translated
+# str_mu_coach_gen3_nsw_tulloch_rub_stock_coach                     : not translated
+# str_mu_coach_gen3_nsw_tulloch_rub_stock_mail_coach                : not translated
+# str_mu_coach_gen3_wagr_ay_suburban_coach                          : not translated
+# str_mu_coach_gen3_nzr_56ft_coach                                  : not translated
+# str_mu_coach_gen3_nzr_56ft_mail_coach                             : not translated
+# str_mu_coach_gen2_nzr_50ft_coach                                  : not translated
+# str_mu_coach_gen2_nzr_50ft_mail_coach                             : not translated
+# str_mu_coach_gen1_nsw_ka_tram_car                                 : not translated
 
 # Dieselengine
 # str_diesel_germany_db_kof_ii                                      : not translated
@@ -694,6 +720,7 @@ str_diesel_spain_renfe_class_334                                  :RENFE 334 (Di
 # str_diesel_new_zealand_da_class                                   : not translated
 # str_diesel_new_zealand_db_class                                   : not translated
 # str_diesel_australia_nsw_47                                       : not translated
+# str_diesel_australia_commonwealth_nsu                             : not translated
 
 # Dieselrailbus
 str_rbd_australia_victorian_railways_aec_rm1                      :Viktoria Fervojoj AEC RM1 (Dizelo Relobuso)
@@ -948,6 +975,7 @@ str_electric_kazakhstan_ktz_kz8a                                  :KTZ KZ8A (Ele
 # str_electric_brazil_slm_winterthur_bbc_1d1                        : not translated
 # str_electric_brazil_ge_2cc2                                       : not translated
 # str_electric_costa_rica_aeg_pacific_a1a_a1a                       : not translated
+# str_electric_australia_nsw_86                                     : not translated
 
 # Electricrailbus
 # str_rbe_switzerland_ab_cfe_3_3                                    : not translated
@@ -1061,6 +1089,9 @@ str_emu_austria_obb_4030                                          :OBB 4030 (EMU
 # str_emu_australia_nsw_standard                                    : not translated
 # str_emu_australia_nsw_tulloch                                     : not translated
 # str_emu_australia_melbourne_xtrapolis_100                         : not translated
+# str_emu_new_zealand_em_ganz_mavag                                 : not translated
+# str_emu_new_zealand_dm                                            : not translated
+# str_emu_new_zealand_fpft_matangi                                  : not translated
 # str_cargoemu_japan_jr_freight_m250                                : not translated
 
 # Maglevengine
@@ -1132,6 +1163,7 @@ str_mtro_japan_tokyo_s01                                          :Tokio S01 (Me
 # str_mtro_australia_comeng_light_metro_mk1                         : not translated
 # str_mtro_germany_berlin_bvg_f                                     : not translated
 # str_mtro_germany_berlin_bvg_h                                     : not translated
+# str_mtro_hungary_budapest_ganz_hunslet_g2                         : not translated
 # str_mtro_metro_wagon_unpowered                                    : not translated
 # str_mtro_metro_wagon_powered                                      : not translated
 

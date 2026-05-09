@@ -130,6 +130,8 @@ STR_REGION_OCEANIA_MICRONESIA                                     :Micronesia
 STR_REGION_OCEANIA_MELANESIA                                      :Melanesia
 STR_REGION_OCEANIA_POLYNESIA                                      :Polynesia
 STR_REGION_OCEANIA_AUSTRALIA_AND_NEW_ZEALAND                      :Australia and New Zealand
+STR_ATTRIBUTE                                                     :Attribute
+STR_ATTRIBUTE_PUSH_PULL                                           :Push-Pull
 STR_ZONE_RESIDENTIAL                                              :Residential
 STR_ZONE_RESIDENTIAL_LOW_DENSITY                                  :Low density residential
 STR_ZONE_RESIDENTIAL_MEDIUM_DENSITY                               :Medium density residential
@@ -519,6 +521,30 @@ str_mu_coach_gen6_super_regio_coach                               :Super Regio C
 str_mu_coach_gen6_super_voyager_coach                             :Super Voyager Coach
 str_mu_coach_gen5_citynightline_sleeper                           :'CityNightLine' Sleeper
 str_mu_coach_gen4_trans_euro_night_sleeper                        :'Trans Euro Night' Sleeper
+str_mu_coach_gen1_american_style_nzaus_coach                      :Early American End-Platform Coach
+str_mu_coach_gen1_american_style_nzaus_mail_coach                 :Early American End-Platform Mail Coach
+str_mu_coach_gen1_2_axle_nzaus_coach                              :Early 2-axle Compartment Coach
+str_mu_coach_gen1_2_axle_nzaus_mail_coach                         :Early 2-axle Mail Coach
+str_mu_coach_gen1_end_platform_2_axle_nzaus_coach                 :Early 2-axle End-Platform Coach
+str_mu_coach_gen1_suburban_2_axle_nzaus_coach                     :Early 2-axle Suburban Coach
+str_mu_coach_gen4_brel_mk3_coach                                  :Mk3 Coach
+str_mu_coach_gen4_brel_mk3_mail_coach                             :Mk3 Mail Coach
+str_mu_coach_gen4_comeng_suburban_double_deck_sa2000              :Comeng SA2000 SDD Concept
+str_mu_coach_gen4_gonian_4d_concept                               :Melbourne/Gonian 4D Coach Concept
+str_mu_coach_gen4_gonian_tangara_concept                          :Tangara V-Set Hybrid Coach Concept
+str_mu_coach_gen3_hitachi_nippon_sharyo_silver_star_coach         :NZR Silver Star Coach
+str_mu_coach_gen3_hitachi_nippon_sharyo_silver_star_mail_coach    :NZR Silver Star Mail Coach
+str_mu_coach_gen3_comeng_high_speed_coach                         :Comeng High Speed Coach
+str_mu_coach_gen3_comeng_high_speed_mail_coach                    :Comeng High Speed Mail Coach
+str_mu_coach_gen4_comeng_htype_suburban_coach                     :Comeng-M&K H-Type Suburban Coach
+str_mu_coach_gen3_nsw_tulloch_rub_stock_coach                     :NSWGR 'Tulloch' RUB Coach
+str_mu_coach_gen3_nsw_tulloch_rub_stock_mail_coach                :NSWGR 'Tulloch' RUB Mail Coach
+str_mu_coach_gen3_wagr_ay_suburban_coach                          :WAGR AY Suburban Coaches
+str_mu_coach_gen3_nzr_56ft_coach                                  :NZR 56ft Coach
+str_mu_coach_gen3_nzr_56ft_mail_coach                             :NZR 56ft Mail Coach
+str_mu_coach_gen2_nzr_50ft_coach                                  :NZR 50ft Coach
+str_mu_coach_gen2_nzr_50ft_mail_coach                             :NZR 50ft Mail Coach
+str_mu_coach_gen1_nsw_ka_tram_car                                 :KA Type Tram Car
 
 # Dieselengine
 str_diesel_germany_db_kof_ii                                      :DB Kof II / DB 322 (Diesel)
@@ -692,6 +718,7 @@ str_diesel_australia_nsw_49                                       :NSWGR 49 (Die
 str_diesel_new_zealand_da_class                                   :NZR DA (Diesel)
 str_diesel_new_zealand_db_class                                   :NZR DB (Diesel)
 str_diesel_australia_nsw_47                                       :NSWGR 47 (Diesel)
+str_diesel_australia_commonwealth_nsu                             :Commonwealth Railways NSU (Diesel)
 
 # Dieselrailbus
 str_rbd_australia_victorian_railways_aec_rm1                      :Victorian Railways AEC RM1 (Diesel Railbus)
@@ -946,6 +973,7 @@ str_electric_australia_nsw_46                                     :NSWGR 46 (Ele
 str_electric_brazil_slm_winterthur_bbc_1d1                        :SLM-Winterthur-BBC 1-D-1 (Electric, 3kV DC)
 str_electric_brazil_ge_2cc2                                       :GE 2-C+C-2 (Electric, 3kV DC)
 str_electric_costa_rica_aeg_pacific_a1a_a1a                       :AEG A1A+A1A (Electric, 25kV AC)
+str_electric_australia_nsw_86                                     :NSWGR 86 (Electric, 1500V DC)
 
 # Electricrailbus
 str_rbe_switzerland_ab_cfe_3_3                                    :AB CFe 3/3 (Electric Railbus, 1500V DC)
@@ -1047,7 +1075,7 @@ str_emu_europe_sureot                                             :Sureot (EMU, 
 str_emu_australia_comeng_emu                                      :Comeng EMU (EMU, 1500V DC)
 str_emu_australia_melbourne_hcmt_munnel                           :Melbourne HCMT Munnel (EMU, 1500V DC)
 str_emu_australia_melbourne_hitachi                               :Melbourne Hitachi Trains (EMU, 1500V DC)
-str_emu_australia_melbourne_harris                                :Melbourne Harris Trains [2-door] (EMU, 1500V DC)
+str_emu_australia_melbourne_harris                                :Melbourne Harris Trains (EMU, 1500V DC)
 str_emu_australia_melbourne_nexas                                 :Melbourne Siemens Nexas (EMU, 1500V DC)
 str_emu_australia_melbourne_tait                                  :Melbourne Tait Trains (EMU, 1500V DC)
 str_emu_chile_efe_aez_railcar                                     :EFE AEZ Railcar (EMU, 3kV DC)
@@ -1059,6 +1087,9 @@ str_emu_australia_nsw_w                                           :NSWGR W 'Sput
 str_emu_australia_nsw_standard                                    :NSWGR 'Standard' EMU (EMU, 1500V DC)
 str_emu_australia_nsw_tulloch                                     :NSWGR 'Tulloch' EMU (EMU, 1500V DC)
 str_emu_australia_melbourne_xtrapolis_100                         :Melbourne X'Trapolis 100 (EMU, 1500V DC)
+str_emu_new_zealand_em_ganz_mavag                                 :NZR EM 'Ganz Mavag' (EMU, 1500V DC)
+str_emu_new_zealand_dm                                            :NZR DM EMU (EMU, 1500V DC)
+str_emu_new_zealand_fpft_matangi                                  :NZR FP/FT 'Matangi' (EMU, 1500V DC)
 str_cargoemu_japan_jr_freight_m250                                :JR Freight M250 (EMU, 1500V DC)
 
 # Maglevengine
@@ -1130,6 +1161,7 @@ str_mtro_singapore_kawasaki_heavy_industries_c751b                :Singapore C75
 str_mtro_australia_comeng_light_metro_mk1                         :Comeng Light Metro Prototype (Metro, Electric 3rd Rail)
 str_mtro_germany_berlin_bvg_f                                     :Berlin BVG F74 (Metro, Electric 3rd Rail)
 str_mtro_germany_berlin_bvg_h                                     :Berlin BVG H (Metro, Electric 3rd Rail)
+str_mtro_hungary_budapest_ganz_hunslet_g2                         :Budapest Ganz Hunslet G2 (Metro, Electric 3rd Rail)
 str_mtro_metro_wagon_unpowered                                    :Metro Unit Wagon (Unpowered)
 str_mtro_metro_wagon_powered                                      :Metro Unit Wagon (Powered)
 
@@ -1262,14 +1294,14 @@ str_steam_south_africa_katanga_mikado_2_8_2                       :Katanga Mikad
 str_steam_mozambique_mozambique_railways_no_101                   :Mozambique Railway 101-104 (Steam)
 str_steam_ivory_coast_golwe_2_6_0_0_6_2t                          :French West African Golwé (Steam)
 str_steam_egypt_stephenson_class_192                              :Robert Stephenson and Co 192 (Steam)
-str_steam_australia_nsw_n67_0_6_0t_terrier                        :NSWGR N67 Terrier (Steam)
+str_steam_australia_nsw_n67_0_6_0t_terrier                        :LB&SCR A1 / NSWGR N67 Terrier (Steam)
 str_steam_australia_nsw_c30                                       :NSWGR C30 (Steam)
 str_steam_australia_nsw_c32                                       :NSWGR C32 (Steam)
 str_steam_australia_nsw_d50                                       :NSWGR D50 (Steam)
 str_steam_australia_nsw_z12                                       :NSWGR Z12 (Steam)
 str_steam_australia_nsw_z19                                       :NSWGR Z19 (Steam)
 str_steam_australia_nsw_z26                                       :NSWGR Z26 (Steam)
-str_steam_australia_ja_brown_rod_280                              :J & A Brown ROD 2-8-0 (Steam)
+str_steam_australia_ja_brown_rod_280                              :ROD 2-8-0 (Steam)
 str_steam_australia_sar_600                                       :South Australian Railways 600 (Steam)
 str_steam_australia_smr_10                                        :South Maitland Railways 10 (Steam)
 str_steam_australia_vr_h                                          :Victorian Railways H (Steam)

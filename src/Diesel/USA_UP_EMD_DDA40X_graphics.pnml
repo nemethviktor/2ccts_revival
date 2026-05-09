@@ -9,9 +9,9 @@ spriteset(spriteset_diesel_usa_up_emd_dda40x_purchase, "gfx/diesel/usa_up_emd_dd
 
 // VEHICLE
 
-//// This vehicle uses the template for length 12.
-//// The vehicle is built with 3 pieces of length 8+4
-//// The middle part gets the graphics, the other parts are left blank
+// // This vehicle uses the template for length 12.
+// // The vehicle is built with 3 pieces of length 8+4
+// // The middle part gets the graphics, the other parts are left blank
 
 /// Engine
 spriteset(spriteset_diesel_usa_up_emd_dda40x_engine, "gfx/diesel/usa_up_emd_dda40x.png") {template_2cc_l12(1, 1)}

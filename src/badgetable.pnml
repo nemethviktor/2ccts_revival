@@ -13,6 +13,7 @@ spriteset (sprite_power_steam) {[0, 0, 16, 12, 0, 0, "gfx/Badges/power/power_ste
 spriteset (sprite_power_turbine) {[0, 0, 16, 12, 0, 0, "gfx/Badges/power/power_turbine.png"]}
 spriteset (sprite_power_maglev) {[0, 0, 16, 12, 0, 0, "gfx/Badges/power/power_maglev.png"]}
 spriteset (sprite_power_metro) {[0, 0, 16, 12, 0, 0, "gfx/Badges/power/power_metro.png"]}
+spriteset (sprite_attribute_push_pull) {[0, 0, 16, 12, 0, 0, "gfx/Badges/attributes/attribute_push_pull.png"]}
 spriteset (sprite_flag_AF) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/af.png"]}
 spriteset (sprite_flag_AX) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/ax.png"]}
 spriteset (sprite_flag_AL) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/al.png"]}
@@ -587,6 +588,10 @@ spriteset (sprite_flag_WRLD) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/wrld.png"]}b
 	"role/ultra_high_speed__pax_",
 	"role/ultra_high_speed__universal_",
 	"role/wagon",
+
+// Attributes
+	"attribute",
+	"attribute/push_pull",
 }
 
 // Flag Items
@@ -3234,6 +3239,25 @@ item (FEAT_BADGES, power_metro) {
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
 	}
 	graphics {default: sprite_power_metro;}
+}
+
+
+// Attributes
+	
+item (FEAT_BADGES, attribute) {
+    property {
+        label: "attribute";
+        name: string(STR_ATTRIBUTE);
+	}}
+
+	
+item (FEAT_BADGES, attribute_push_pull) {
+    property {
+        label: "attribute/push_pull";
+        name: string(STR_ATTRIBUTE_PUSH_PULL);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}
+	graphics {default: sprite_attribute_push_pull;}
 }
 
 

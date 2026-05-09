@@ -10,6 +10,7 @@
 //// WEIGHT: 73 -- 73t for power cars, each [wiki]
 //// TE_STARTING_KN: =160/2 -- Wikipedia
 //// WAGON_CAPACITY: 72 -- 2nd class. [wiki]
+//// REGION2: OCEANIA -- Exported to AUS
 
 
 // Cargo capacity
@@ -30,7 +31,7 @@
 item(FEAT_TRAINS, item_emu_sweden_sj_x2000) {
     property {
         name: string(str_emu_sweden_sj_x2000);
-        climates_available: ((param_region_northern_europe || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
+        climates_available: ((param_region_northern_europe || param_region_oceania) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1990,1,1);
         model_life: 45;
         vehicle_life: 40;
@@ -64,7 +65,7 @@ item(FEAT_TRAINS, item_emu_sweden_sj_x2000) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/europe/northern", "flag/SE", "power/electric", "role/express"];
+	badges: ["region/europe/northern", "region/oceania", "flag/SE", "power/electric", "role/express"];
 
     }
     graphics {

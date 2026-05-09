@@ -60,6 +60,9 @@ item(FEAT_TRAINS, item_mu_wagon_gen5_hopper_type2) {
         length: 8;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
+
+	badges: ["region/africa", "region/asia", "region/america/northern", "region/america/south", "region/europe/southern", "region/europe/western", "region/europe/eastern", "region/europe/northern", "region/oceania", "role/wagon"];
+
     }
     graphics {
         purchase: spriteset_mu_wagon_gen5_hopper_type2_purchase;
