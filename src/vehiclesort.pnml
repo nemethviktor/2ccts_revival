@@ -227,6 +227,8 @@ item_steam_chile_fcab_4_8_2, /*Year: 1954*/ \
 item_steam_kenya_east_african_railway_31, /*Year: 1955*/ \
 item_steam_spain_renfe_242f, /*Year: 1955*/ \
 item_steam_china_railways_qj, /*Year: 1956*/ \
+item_steam_china_china_railways_js, /*Year: 1957*/ \
+item_steam_china_china_railways_rm, /*Year: 1958*/ \
 item_steam_germany_db_18_201, /*Year: 1961*/
 
 #define SORTING_DIESEL \
@@ -331,6 +333,7 @@ item_diesel_australia_qr_2350, /*Year: 1973*/ \
 item_diesel_egypt_enr_te114e, /*Year: 1974*/ \
 item_diesel_zimbabwe_sorefame_de8, /*Year: 1974*/ \
 item_diesel_china_china_railways_dfh3, /*Year: 1976*/ \
+item_diesel_china_china_railways_df5, /*Year: 1976*/ \
 item_diesel_tunisia_sncft_040_dj, /*Year: 1977*/ \
 item_diesel_australia_nsw_ptc_73, /*Year: 1977*/ \
 item_diesel_gabon_alsthom_ad30b, /*Year: 1978*/ \
@@ -346,6 +349,7 @@ item_diesel_china_china_railways_df8, /*Year: 1984*/ \
 item_diesel_australia_pacific_national_g_class, /*Year: 1984*/ \
 item_diesel_peru_ferrocarril_central_andino_ge_c39_8, /*Year: 1984*/ \
 item_diesel_australia_v_line_g, /*Year: 1984*/ \
+item_diesel_china_china_railways_df4, /*Year: 1984*/ \
 item_diesel_finland_vr_dr16, /*Year: 1985*/ \
 item_diesel_poland_pkp_sp32, /*Year: 1985*/ \
 item_diesel_australia_v_line_n, /*Year: 1985*/ \
@@ -364,6 +368,7 @@ item_diesel_australia_australian_national_an, /*Year: 1992*/ \
 item_diesel_usa_amtrak_p42dc_genesis, /*Year: 1992*/ \
 item_diesel_saudi_arabia_saudi_railways_4000_emd_sd70acs, /*Year: 1992*/ \
 item_diesel_serbia_zs_621, /*Year: 1992*/ \
+item_diesel_china_china_railways_df11, /*Year: 1992*/ \
 item_diesel_turkey_tcdd_dh7000, /*Year: 1994*/ \
 item_diesel_ireland_ie_201, /*Year: 1994*/ \
 item_diesel_australia_nsw_90, /*Year: 1994*/ \
@@ -516,6 +521,7 @@ item_electric_spain_renfe_252, /*Year: 1992*/ \
 item_electric_south_africa_sar_e38, /*Year: 1992*/ \
 item_electric_uk_br_92, /*Year: 1993*/ \
 item_electric_india_indian_railways_wap_4, /*Year: 1994*/ \
+item_electric_china_china_railways_ss8, /*Year: 1994*/ \
 item_electric_ukraine_uz_de1, /*Year: 1995*/ \
 item_electric_belgium_nmbs_sncb_13_hle, /*Year: 1997*/ \
 item_electric_japan_jr_eh500, /*Year: 1997*/ \
@@ -527,6 +533,8 @@ item_electric_south_korea_korail_8200, /*Year: 2003*/ \
 item_electric_ukraine_uz_ds3, /*Year: 2003*/ \
 item_electric_kazakhstan_ktz_kz4a, /*Year: 2004*/ \
 item_electric_china_china_railways_hxd3, /*Year: 2006*/ \
+item_electric_china_china_railways_hxd2, /*Year: 2007*/ \
+item_electric_china_china_railways_hxd2b, /*Year: 2007*/ \
 item_electric_czech_republic_cd_380, /*Year: 2008*/ \
 item_electric_australia_aurizon_e40_ag_v1, /*Year: 2008*/ \
 item_electric_morocco_oncf_e_1400_prima_ii, /*Year: 2010*/ \
@@ -535,6 +543,7 @@ item_electric_switzerland_sbb_eem_923, /*Year: 2012*/ \
 item_electric_china_china_railways_hxd1d, /*Year: 2012*/ \
 item_electric_usa_amtrak_acs_64, /*Year: 2012*/ \
 item_electric_brasil_mrs_he_4_4, /*Year: 2012*/ \
+item_electric_china_china_railways_hxd3d, /*Year: 2012*/ \
 item_electric_south_africa_sar_20e, /*Year: 2013*/ \
 item_electric_kazakhstan_ktz_kz8a, /*Year: 2014*/ \
 item_electric_tanzania_trc_e6800, /*Year: 2024*/
@@ -674,6 +683,7 @@ item_emu_luxembourg_cfl_2200_coradia_duplex, /*Year: 1999*/ \
 item_emu_usa_amtrak_acela_express, /*Year: 1999*/ \
 item_emu_germany_db_403_ice_3, /*Year: 2000*/ \
 item_emu_spain_renfe_120, /*Year: 2001*/ \
+item_emu_hong_kong_mtr_sp1900, /*Year: 2001*/ \
 item_emu_australia_melbourne_xtrapolis_100, /*Year: 2003*/ \
 item_emu_switzerland_sbb_rabe_523_flirt, /*Year: 2004*/ \
 item_emu_bulgaria_bdz_10_desiro, /*Year: 2005*/ \

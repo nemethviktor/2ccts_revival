@@ -228,6 +228,8 @@ item(FEAT_TRAINS, item_steam_Argentina_FCCA_PS10_Class, 4137) {}
 item(FEAT_TRAINS, item_steam_Chile_Anglo_Chilean_Nitrate_No_97, 4138) {}
 item(FEAT_TRAINS, item_steam_Chile_La_Copiapo, 4139) {}
 item(FEAT_TRAINS, item_steam_Brazil_Sao_Paulo_Railway_13, 4140) {}
+item(FEAT_TRAINS, item_steam_China_China_Railways_JS, 4141) {}
+item(FEAT_TRAINS, item_steam_China_China_Railways_RM, 4142) {}
 
 // Diesel, available ID range: 5000-5999 (hex 0x1388..0x176F)
 #define ID_RANGE_DIESEL 0x1388..0x176F
@@ -403,6 +405,9 @@ item(FEAT_TRAINS, item_diesel_New_Zealand_DA_Class, 5172) {}
 item(FEAT_TRAINS, item_diesel_New_Zealand_DB_Class, 5173) {}
 item(FEAT_TRAINS, item_diesel_Australia_NSW_47, 5174) {}
 item(FEAT_TRAINS, item_diesel_Australia_Commonwealth_NSU, 5175) {}
+item(FEAT_TRAINS, item_diesel_China_China_Railways_DF11, 5176) {}
+item(FEAT_TRAINS, item_diesel_China_China_Railways_DF4, 5177) {}
+item(FEAT_TRAINS, item_diesel_China_China_Railways_DF5, 5178) {}
 
 // Electric, available ID range: 6000-6999 (hex 0x1770..0x1B57)
 #define ID_RANGE_ELECTRIC 0x1770..0x1B57
@@ -545,6 +550,10 @@ item(FEAT_TRAINS, item_electric_Brazil_SLM_Winterthur_BBC_1D1, 6143) {}
 item(FEAT_TRAINS, item_electric_Brazil_GE_2CC2, 6144) {}
 item(FEAT_TRAINS, item_electric_Costa_Rica_AEG_Pacific_A1A_A1A, 6145) {}
 item(FEAT_TRAINS, item_electric_Australia_NSW_86, 6146) {}
+item(FEAT_TRAINS, item_electric_China_China_Railways_HXD2, 6147) {}
+item(FEAT_TRAINS, item_electric_China_China_Railways_SS8, 6148) {}
+item(FEAT_TRAINS, item_electric_China_China_Railways_HXD2B, 6149) {}
+item(FEAT_TRAINS, item_electric_China_China_Railways_HXD3D, 6150) {}
 
 // DMU, available ID range: 7000-7999 (hex 0x1B58..0x1F3F)
 #define ID_RANGE_DMU 0x1B58..0x1F3F
@@ -702,6 +711,7 @@ item(FEAT_TRAINS, item_emu_Australia_Melbourne_Xtrapolis_100, 8087) {}
 item(FEAT_TRAINS, item_emu_New_Zealand_EM_Ganz_Mavag, 8088) {}
 item(FEAT_TRAINS, item_emu_New_Zealand_DM, 8089) {}
 item(FEAT_TRAINS, item_emu_New_Zealand_FPFT_Matangi, 8090) {}
+item(FEAT_TRAINS, item_emu_Hong_Kong_MTR_SP1900, 8091) {}
 
 // Multi Unit Metro, available ID range: 9000-9999 (hex 0x2328..0x270F)
 #define ID_RANGE_MULTIMETRO 0x2328..0x270F

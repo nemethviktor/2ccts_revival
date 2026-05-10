@@ -602,7 +602,7 @@ str_diesel_belgium_nmbs_sncb_7800                                 :NMBS/SNCB 780
 str_diesel_uk_br_66                                               :BR 66 (Diesel)
 str_diesel_uk_br_67                                               :BR 67 (Diesel)
 str_diesel_iran_rai_de43ca_prima                                  :RAI DE43CA 'Prima' (Diesel)
-str_diesel_china_mtr_8000                                         :MTR 8000 (Diesel)
+str_diesel_china_mtr_8000                                         :MTR Siemens ER20 (Diesel)
 str_diesel_ukraine_uz_tep150                                      :UZ TEP150 (Diesel)
 str_diesel_china_china_railways_hxn5                              :China Railways HXN5 (Diesel)
 str_diesel_germany_db_261_gravita_10bb                            :DB 261 'Gravita 10BB' (Diesel)
@@ -719,6 +719,9 @@ str_diesel_new_zealand_da_class                                   :NZR DA (Diese
 str_diesel_new_zealand_db_class                                   :NZR DB (Diesel)
 str_diesel_australia_nsw_47                                       :NSWGR 47 (Diesel)
 str_diesel_australia_commonwealth_nsu                             :Commonwealth Railways NSU (Diesel)
+str_diesel_china_china_railways_df11                              :China Railways DF11 (Diesel)
+str_diesel_china_china_railways_df4                               :China Railways DF4 (Diesel)
+str_diesel_china_china_railways_df5                               :China Railways DF5 (Diesel)
 
 # Dieselrailbus
 str_rbd_australia_victorian_railways_aec_rm1                      :Victorian Railways AEC RM1 (Diesel Railbus)
@@ -974,6 +977,10 @@ str_electric_brazil_slm_winterthur_bbc_1d1                        :SLM-Winterthu
 str_electric_brazil_ge_2cc2                                       :GE 2-C+C-2 (Electric, 3kV DC)
 str_electric_costa_rica_aeg_pacific_a1a_a1a                       :AEG A1A+A1A (Electric, 25kV AC)
 str_electric_australia_nsw_86                                     :NSWGR 86 (Electric, 1500V DC)
+str_electric_china_china_railways_hxd2                            :China Railways HXD2 (Electric, 25kV AC)
+str_electric_china_china_railways_ss8                             :China Railways SS8 (Electric, 25kV AC)
+str_electric_china_china_railways_hxd2b                           :China Railways HXD2B (Electric, 25kV AC)
+str_electric_china_china_railways_hxd3d                           :China Railways HXD3D (Electric, 25kV AC)
 
 # Electricrailbus
 str_rbe_switzerland_ab_cfe_3_3                                    :AB CFe 3/3 (Electric Railbus, 1500V DC)
@@ -1090,6 +1097,7 @@ str_emu_australia_melbourne_xtrapolis_100                         :Melbourne X'T
 str_emu_new_zealand_em_ganz_mavag                                 :NZR EM 'Ganz Mavag' (EMU, 1500V DC)
 str_emu_new_zealand_dm                                            :NZR DM EMU (EMU, 1500V DC)
 str_emu_new_zealand_fpft_matangi                                  :NZR FP/FT 'Matangi' (EMU, 1500V DC)
+str_emu_hong_kong_mtr_sp1900                                      :MTR SP1900 (EMU, 25kV AC)
 str_cargoemu_japan_jr_freight_m250                                :JR Freight M250 (EMU, 1500V DC)
 
 # Maglevengine
@@ -1314,6 +1322,8 @@ str_steam_argentina_fcca_ps10_class                               :FCCA PS10 Cla
 str_steam_chile_anglo_chilean_nitrate_no_97                       :Anglo-Chilean Nitrate No. 97 to 102 (Steam)
 str_steam_chile_la_copiapo                                        :La Copiapo (Steam)
 str_steam_brazil_sao_paulo_railway_13                             :Sao Paulo Railway No. 13 and 14 (Steam)
+str_steam_china_china_railways_js                                 :China Railways JS (Steam)
+str_steam_china_china_railways_rm                                 :China Railways RM (Steam)
 
 # Steamrailbus
 str_rbs_austria_nolb_1                                            :NOLB 1 (Steam Railbus)

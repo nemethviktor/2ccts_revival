@@ -1,5 +1,6 @@
 from typing import Literal
 
+import numpy
 import pandas as pd
 import openpyxl
 import os
@@ -656,6 +657,8 @@ def generate_unified_items():
         v1 = f"VISUAL_EFFECT_{row['VISUAL_EFFECT_1']}" if str(
             row['VISUAL_EFFECT_1']) != "0" else "0"
 
+        v2 = int(numpy.nan_to_num(row['VISUAL_EFFECT_2']))
+
         # Loading Speed
         ls_val = int(row['LOADINGSPEED_VALUE'])
         ls_logic = f"isUltraSpeed ? 255 : (param_loadingspeed == 0) ? {ls_val}/2 : (param_loadingspeed == 2) ? {ls_val}*2 : {ls_val}"
@@ -781,7 +784,7 @@ def generate_unified_items():
         content.append(
             f"        engine_class: {'ENGINE_CLASS_' + row['ENGINE_CLASS']};\n")
         content.append(
-            f"        visual_effect_and_powered: visual_effect_and_powered({v1}, {row['VISUAL_EFFECT_2']}, {row['VISUAL_EFFECT_3']});\n\n")
+            f"        visual_effect_and_powered: visual_effect_and_powered({v1}, {v2}, {row['VISUAL_EFFECT_3']});\n\n")
         content.append(f"        sprite_id: {SPRITE_ID};\n")
         content.append(f"        dual_headed: {int(row['DUAL_HEADED'])};\n")
         content.append(f"        length: {int(row['LENGTH'])};\n")

@@ -1032,6 +1032,15 @@
 #include "src/Diesel/Australia_Commonwealth_NSU_graphics.pnml"
 #include "src/Diesel/Australia_Commonwealth_NSU_item.pnml"
 
+#include "src/Diesel/China_China_Railways_DF11_graphics.pnml"
+#include "src/Diesel/China_China_Railways_DF11_item.pnml"
+
+#include "src/Diesel/China_China_Railways_DF4_graphics.pnml"
+#include "src/Diesel/China_China_Railways_DF4_item.pnml"
+
+#include "src/Diesel/China_China_Railways_DF5_graphics.pnml"
+#include "src/Diesel/China_China_Railways_DF5_item.pnml"
+
 
 //// EMU
 #include "src/EMU/Netherlands_NS_Mat24_graphics.pnml"
@@ -1306,6 +1315,9 @@
 
 #include "src/EMU/New_Zealand_FPFT_Matangi_graphics.pnml"
 #include "src/EMU/New_Zealand_FPFT_Matangi_item.pnml"
+
+#include "src/EMU/Hong_Kong_MTR_SP1900_graphics.pnml"
+#include "src/EMU/Hong_Kong_MTR_SP1900_item.pnml"
 
 
 //// ELECTRIC
@@ -1725,6 +1737,18 @@
 
 #include "src/Electric/Australia_NSW_86_graphics.pnml"
 #include "src/Electric/Australia_NSW_86_item.pnml"
+
+#include "src/Electric/China_China_Railways_HXD2_graphics.pnml"
+#include "src/Electric/China_China_Railways_HXD2_item.pnml"
+
+#include "src/Electric/China_China_Railways_SS8_graphics.pnml"
+#include "src/Electric/China_China_Railways_SS8_item.pnml"
+
+#include "src/Electric/China_China_Railways_HXD2B_graphics.pnml"
+#include "src/Electric/China_China_Railways_HXD2B_item.pnml"
+
+#include "src/Electric/China_China_Railways_HXD3D_graphics.pnml"
+#include "src/Electric/China_China_Railways_HXD3D_item.pnml"
 
 #include "src/Electric/UK_London_1903_Stock_graphics.pnml"
 #include "src/Electric/UK_London_1903_Stock_item.pnml"
@@ -2616,6 +2640,12 @@
 
 #include "src/Steam/Brazil_Sao_Paulo_Railway_13_graphics.pnml"
 #include "src/Steam/Brazil_Sao_Paulo_Railway_13_item.pnml"
+
+#include "src/Steam/China_China_Railways_JS_graphics.pnml"
+#include "src/Steam/China_China_Railways_JS_item.pnml"
+
+#include "src/Steam/China_China_Railways_RM_graphics.pnml"
+#include "src/Steam/China_China_Railways_RM_item.pnml"
 
 
 //// WAGONS_MAGLEV - GEN7M

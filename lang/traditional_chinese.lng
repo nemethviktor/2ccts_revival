@@ -720,6 +720,9 @@ str_diesel_usa_up_emd_dda40x                                      :聯合太平�
 # str_diesel_new_zealand_db_class                                   : not translated
 # str_diesel_australia_nsw_47                                       : not translated
 # str_diesel_australia_commonwealth_nsu                             : not translated
+# str_diesel_china_china_railways_df11                              : not translated
+# str_diesel_china_china_railways_df4                               : not translated
+# str_diesel_china_china_railways_df5                               : not translated
 
 # Dieselrailbus
 # str_rbd_australia_victorian_railways_aec_rm1                      : not translated
@@ -975,6 +978,10 @@ str_electric_ukraine_uz_ds3                                       :烏克蘭鐵�
 # str_electric_brazil_ge_2cc2                                       : not translated
 # str_electric_costa_rica_aeg_pacific_a1a_a1a                       : not translated
 # str_electric_australia_nsw_86                                     : not translated
+# str_electric_china_china_railways_hxd2                            : not translated
+# str_electric_china_china_railways_ss8                             : not translated
+# str_electric_china_china_railways_hxd2b                           : not translated
+# str_electric_china_china_railways_hxd3d                           : not translated
 
 # Electricrailbus
 # str_rbe_switzerland_ab_cfe_3_3                                    : not translated
@@ -1091,6 +1098,7 @@ str_electric_ukraine_uz_ds3                                       :烏克蘭鐵�
 # str_emu_new_zealand_em_ganz_mavag                                 : not translated
 # str_emu_new_zealand_dm                                            : not translated
 # str_emu_new_zealand_fpft_matangi                                  : not translated
+# str_emu_hong_kong_mtr_sp1900                                      : not translated
 # str_cargoemu_japan_jr_freight_m250                                : not translated
 
 # Maglevengine
@@ -1315,6 +1323,8 @@ str_steam_denmark_dsb_e                                           :丹麥鐵路E
 # str_steam_chile_anglo_chilean_nitrate_no_97                       : not translated
 # str_steam_chile_la_copiapo                                        : not translated
 # str_steam_brazil_sao_paulo_railway_13                             : not translated
+# str_steam_china_china_railways_js                                 : not translated
+# str_steam_china_china_railways_rm                                 : not translated
 
 # Steamrailbus
 str_rbs_austria_nolb_1                                            :下奧地利國家鐵路1型 (蒸汽輕軌車廂)

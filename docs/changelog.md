@@ -52,6 +52,16 @@
     - `Sao Paulo Railway No. 13 and 14` (Steam, Brazil), also using the `DHR B` gfx although I changed it a little.
     - `Chile AEZ Railcar` (EMU, Chile) using modified `ONCF ZMC` gfx and questionable stats (as I didn't manage to find anything reliable)
     - `Budapest Ganz Hunslet G2` (Metro)
+    - `MTR SP1900`
+    - `China Railways HXD2`
+    - `China Railways DF11`
+    - `China Railways SS8`
+    - `China Railways HXD2B`
+    - `China Railways HXD3D`
+    - `China Railways DF4`
+    - `China Railways DF5`
+    - `China Railways JS`
+    - `China Railways RM`
 
   - Added (and partially recoloured) a number of vehicles from Ragin's set (with permission)
     - `Singapore C151` (Metro)

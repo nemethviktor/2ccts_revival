@@ -688,7 +688,7 @@ str_diesel_ukraine_uz_tep150,UZ TEP150
 str_diesel_china_china_railways_hxn5,China Railways HXN5
 str_diesel_germany_db_261_gravita_10bb,DB 261 'Gravita 10BB'
 str_diesel_russia_rzd_gt1,RZD GT1
-str_diesel_china_mtr_8000,MTR 8000
+str_diesel_china_mtr_8000,MTR Siemens ER20
 str_diesel_germany_hvle_v490,HVLE V490 'Maxima 40CC'
 str_diesel_russia_rzd_emch_3,RZD Emch-3
 str_diesel_canada_cnr_9000,CNR 9000
@@ -1370,3 +1370,13 @@ str_emu_new_zealand_dm,NZR DM EMU
 str_emu_new_zealand_fpft_matangi,NZR FP/FT 'Matangi'
 str_mtro_hungary_budapest_ganz_hunslet_g2,Budapest Ganz Hunslet G2
 str_diesel_australia_commonwealth_nsu,Commonwealth Railways NSU
+str_emu_hong_kong_mtr_sp1900,MTR SP1900
+str_electric_china_china_railways_hxd2,China Railways HXD2
+str_diesel_china_china_railways_df11,China Railways DF11
+str_electric_china_china_railways_ss8,China Railways SS8
+str_electric_china_china_railways_hxd2b,China Railways HXD2B
+str_electric_china_china_railways_hxd3d,China Railways HXD3D
+str_diesel_china_china_railways_df4,China Railways DF4
+str_diesel_china_china_railways_df5,China Railways DF5
+str_steam_china_china_railways_js,China Railways JS
+str_steam_china_china_railways_rm,China Railways RM
