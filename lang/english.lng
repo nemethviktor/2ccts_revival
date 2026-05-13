@@ -769,6 +769,7 @@ str_rbd_argentina_fcpba_m_railcar                                 :FCPBA M Railc
 str_rbd_germany_db_vt_989                                         :DB VT 98.9 / DB 798 'Uerdingen railbus' (Diesel Railbus)
 str_rbd_eritrea_eritrean_railway_a62_70_littorina                 :Eritrean Railway A.62-70 'Littorina' (Diesel Railbus)
 str_rbd_italy_fs_aln_668                                          :FS ALn 668.1400 (Diesel Railbus)
+str_rbd_hungary_mav_ikarus_260                                    :MAV Ikarus 260 (Diesel Railbus)
 
 # Dmu
 str_dmu_denmark_dsb_ic4                                           :DSB IC4 (DMU)

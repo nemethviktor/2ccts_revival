@@ -770,6 +770,7 @@ str_rbd_argentina_fcpba_m_railcar                                 :布宜诺斯�
 str_rbd_germany_db_vt_989                                         :德铁 VT98.9/789 '乌丁根铁路巴士' (内燃铁路巴士)
 str_rbd_eritrea_eritrean_railway_a62_70_littorina                 :厄立特里亚铁路 A.62-70 '滨螺' (内燃铁路巴士)
 str_rbd_italy_fs_aln_668                                          :意铁FS ALn 668 (内燃铁路巴士)
+# str_rbd_hungary_mav_ikarus_260                                    : not translated
 
 # Dmu
 str_dmu_denmark_dsb_ic4                                           :丹铁DSB IC4 (内燃动车)

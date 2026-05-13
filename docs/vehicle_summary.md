@@ -317,6 +317,7 @@
 | ![Amtrak Budd SPV-2000](vehicle_graphics/str_rbd_usa_amtrak_spv_200.png) | Amtrak Budd SPV-2000 | 1979 | 130 | 360 | Commuter/Urban | 86 | STANDARD_NONE | North America |
 | ![RZD ACh2](vehicle_graphics/str_rbd_russia_rzd_ach2.png) | RZD ACh2 | 1984 | 120 | 990 | Commuter/Urban | 67 | BROAD_NONE | Asia |
 | ![NS DH1](vehicle_graphics/str_rbd_netherlands_ns_dh1.png) | NS DH1 | 1984 | 100 | 285 | Commuter/Urban | 56 | STANDARD_NONE | Western Europe |
+| ![MAV Ikarus 260](vehicle_graphics/str_rbd_hungary_mav_ikarus_260.png) | MAV Ikarus 260 | 1986 | 66 | 190 | Commuter/Urban | 100 | STANDARD_NONE | Eastern Europe |
 | ![OBB 5047](vehicle_graphics/str_rbd_austria_obb_5047.png) | OBB 5047 | 1987 | 120 | 562 | Commuter/Urban | 62 | STANDARD_NONE | Western Europe |
 | ![JR Shikoku 1000](vehicle_graphics/str_rbd_japan_jr_shikoku_1000.png) | JR Shikoku 1000 | 1990 | 110 | 400 | Express Passenger | 151 | NARROW_NONE | Asia |
 | ![BR 153 'Super Sprinter'](vehicle_graphics/str_rbd_united_kingdom_br_153_super_sprinter.png) | BR 153 'Super Sprinter' | 1991 | 120 | 285 | Commuter/Urban | 75 | STANDARD_NONE | Northern Europe |

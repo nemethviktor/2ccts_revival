@@ -2089,6 +2089,9 @@
 #include "src/Railbus/Railbus_Diesel/Italy_FS_ALn_668_graphics.pnml"
 #include "src/Railbus/Railbus_Diesel/Italy_FS_ALn_668_item.pnml"
 
+#include "src/Railbus/Railbus_Diesel/Hungary_MAV_Ikarus_260_graphics.pnml"
+#include "src/Railbus/Railbus_Diesel/Hungary_MAV_Ikarus_260_item.pnml"
+
 
 //// RAILBUS - RAILBUS_ELECTRIC
 #include "src/Railbus/Railbus_Electric/Switzerland_AB_CFe_3_3_graphics.pnml"

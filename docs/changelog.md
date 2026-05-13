@@ -1,6 +1,6 @@
 # 2cc TrainsInNML (Revival) changelog
 
-**3.3 RC3 [202605xx]**
+**3.3 RC3 [20260513]**
 
 - CODE CHANGES:
   - Added the track types to the vehicle info export
@@ -51,7 +51,7 @@
     - `Ganz 'Arpad' CMU 4701 Transandino` (DMU, Argentina) using further modified `DR 137 153 … 234 (vt04)` gfx.
     - `Sao Paulo Railway No. 13 and 14` (Steam, Brazil), also using the `DHR B` gfx although I changed it a little.
     - `Chile AEZ Railcar` (EMU, Chile) using modified `ONCF ZMC` gfx and questionable stats (as I didn't manage to find anything reliable)
-    - `Budapest Ganz Hunslet G2` (Metro)
+    - `Budapest Ganz Hunslet G2` (Metro, Hungary)
     - `MTR SP1900`
     - `China Railways HXD2`
     - `China Railways DF11`
@@ -62,6 +62,7 @@
     - `China Railways DF5`
     - `China Railways JS`
     - `China Railways RM`
+    - `MAV Ikarus 260` (RBD, Hungary)
 
   - Added (and partially recoloured) a number of vehicles from Ragin's set (with permission)
     - `Singapore C151` (Metro)
