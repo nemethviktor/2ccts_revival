@@ -52,8 +52,8 @@ switch(FEAT_TRAINS, SELF, switch_steam_south_africa_sar_gma_4_8_2_2_8_4_visual_e
 
 /// Length
 switch(FEAT_TRAINS, SELF, switch_steam_south_africa_sar_gma_4_8_2_2_8_4_length, position_in_vehid_chain % 3) {
-    2: 7;
-	7;
+    2: 5;
+	4;
 }
 
 /// Articulated Return

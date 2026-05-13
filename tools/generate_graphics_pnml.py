@@ -1757,8 +1757,8 @@ def get_tpl_16(vid, gfx_path, row, template_amendment_code):
 def get_tpl_17(vid, gfx_path, row, template_amendment_code):
     """
     Normal length vehicles with front and back parts(TPL_17): param template_amendment_code:
-        A -> Normal Front/Back(articulated)
-        B -> A/B Front/Back(articulated)
+        A -> Normal Front/Back (articulated)
+        B -> A/B Front/Back (non-articulated)
         C -> Front 1/2; Middle, Back 1/2 (articulated)
         D -> Front 1/2; Middle 1/2, Back 1/2 (articulated, basically just the mtab dm3)
         E -> Front 1/2; No Middle, Back 1/2 (articulated)
@@ -1869,7 +1869,7 @@ def get_tpl_17(vid, gfx_path, row, template_amendment_code):
             position_in_vehid_chain=4
         ))
 
-        nml_code.append(get_articulated_return(vid=vid, endvalue=1))
+        # nml_code.append(get_articulated_return(vid=vid, endvalue=1))
 
     elif template_amendment_code in ["C", "D", "E"]:
         nml_code.append(get_motion_counter(

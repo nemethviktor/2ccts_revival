@@ -1,5 +1,13 @@
 # 2cc TrainsInNML (Revival) changelog
 
+**3.3 [20260xx]**
+
+- CODE CHANGES:
+  - Template `TPL_17B` should not have been marked as articulated #8
+- VEHICLES CHANGES:
+  - Fixed a number of sprite misalignments #7
+  - Small fixes here and there
+
 **3.3 RC3 [20260513]**
 
 - CODE CHANGES:

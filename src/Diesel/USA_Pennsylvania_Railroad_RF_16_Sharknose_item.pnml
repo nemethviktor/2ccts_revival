@@ -50,7 +50,7 @@ item(FEAT_TRAINS, item_diesel_usa_pennsylvania_railroad_rf_16_sharknose) {
         purchase: spriteset_diesel_usa_pennsylvania_railroad_rf_16_sharknose_purchase;
         visual_effect_and_powered: switch_diesel_usa_pennsylvania_railroad_rf_16_sharknose_visual_effect;
         // no 'length'
-        articulated_part: switch_diesel_usa_pennsylvania_railroad_rf_16_sharknose_articulated;
+        // no 'articulated_part'
         can_attach_wagon: switch_can_attach_vehicle;
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
