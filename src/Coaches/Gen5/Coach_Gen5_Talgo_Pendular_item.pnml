@@ -34,7 +34,7 @@ item(FEAT_TRAINS, item_mu_coach_gen5_talgo_pendular) {
         non_refittable_cargo_classes: 0;
         
         cargo_age_period: 185;
-        misc_flags: bitmask(TRAIN_FLAG_2CC);
+        misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_TILT);
         refit_cost: 0;
         ai_special_flag: AI_FLAG_PASSENGER | AI_FLAG_CARGO;
         track_type: [STANDARD_GAUGE_RAILTYPE_NONE, NARROW_GAUGE_RAILTYPE_NONE, BROAD_GAUGE_RAILTYPE_NONE];
