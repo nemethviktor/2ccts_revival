@@ -135,7 +135,8 @@ def generate_markdown():
         markdown += "| Graphics | Name | Intro | Speed | Power | Role | Cap | Track Types | Regions |\n"
         markdown += "| :---: | :--- | :---: | :---: | :---: | :--- | :---: | :--- | :--- |\n"
 
-        cat_df = df[df['COST_CAT'] == cat].sort_values('INTRODUCTION_YEAR')
+        cat_df = df[df['COST_CAT'] == cat].sort_values(
+            ['INTRODUCTION_YEAR', 'ENGLISH'])
         for _, row in cat_df.iterrows():
             if is_true(row['EXCLUDE']):
                 continue
