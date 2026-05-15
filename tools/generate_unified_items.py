@@ -942,7 +942,7 @@ def generate_unified_items():
             content.append(
                 f"        running_cost_factor: int({int(row['SPEED'])}/10);\n")
             content.append(f"        weight: int({int(row['WEIGHT'])}*1/2);\n")
-            if graphics_switch_visual_effect_and_powered_position:
+            if graphics_switch_visual_effect_and_powered_position and TEMPLATE_ID_FULL not in ['TPL_02D']:
                 content.append(
                     f"        {graphics_switch_visual_effect_and_powered_position}\n")
             content.append(
@@ -966,7 +966,7 @@ def generate_unified_items():
                 f"        running_cost_factor: (round({rc_powered}));\n")
             content.append(f"        power: int({int(row['POWER'])}*1/2);\n")
             content.append(f"        weight: int({int(row['WEIGHT'])}*3/4);\n")
-            if graphics_switch_visual_effect_and_powered_position:
+            if graphics_switch_visual_effect_and_powered_position and TEMPLATE_ID_FULL not in ['TPL_02D']:
                 content.append(
                     f"        {graphics_switch_visual_effect_and_powered_position}\n")
             content.append(

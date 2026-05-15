@@ -82,7 +82,6 @@ item(FEAT_TRAINS, item_emu_norway_nsb_bm73) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
         running_cost_factor: int(210/10);
         weight: int(54*1/2);
-        visual_effect_and_powered: switch_emu_norway_nsb_bm73_visual_effect_and_powered_position;
         cargo_capacity: 54;
         length: 8;
         default: switch_emu_norway_nsb_bm73_cargo_selection;
@@ -92,7 +91,6 @@ item(FEAT_TRAINS, item_emu_norway_nsb_bm73) {
         running_cost_factor: (round(31.76907954320171));
         power: int(2332*1/2);
         weight: int(54*3/4);
-        visual_effect_and_powered: switch_emu_norway_nsb_bm73_visual_effect_and_powered_position;
         cargo_capacity: 54;
         tractive_effort_coefficient: int(0.11*10*54);
         length: 8;

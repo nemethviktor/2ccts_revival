@@ -81,7 +81,6 @@ item(FEAT_TRAINS, item_emu_germany_db_403_ice_3) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
         running_cost_factor: int(328/10);
         weight: int(51*1/2);
-        visual_effect_and_powered: switch_emu_germany_db_403_ice_3_visual_effect_and_powered_position;
         cargo_capacity: 55;
         length: 8;
         default: switch_emu_germany_db_403_ice_3_cargo_selection;
@@ -91,7 +90,6 @@ item(FEAT_TRAINS, item_emu_germany_db_403_ice_3) {
         running_cost_factor: (round(58.47514112884971));
         power: int(10728*1/2);
         weight: int(51*3/4);
-        visual_effect_and_powered: switch_emu_germany_db_403_ice_3_visual_effect_and_powered_position;
         cargo_capacity: 55;
         tractive_effort_coefficient: int(0.299*10*51);
         length: 8;

@@ -81,7 +81,6 @@ item(FEAT_TRAINS, item_emu_russia_rzd_es1_lastochka) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: int(160/10);
         weight: int(56*1/2);
-        visual_effect_and_powered: switch_emu_russia_rzd_es1_lastochka_visual_effect_and_powered_position;
         cargo_capacity: 88;
         length: 8;
         default: switch_emu_russia_rzd_es1_lastochka_cargo_selection;
@@ -91,7 +90,6 @@ item(FEAT_TRAINS, item_emu_russia_rzd_es1_lastochka) {
         running_cost_factor: (round(30.380156438726996));
         power: int(2700*1/2);
         weight: int(56*3/4);
-        visual_effect_and_powered: switch_emu_russia_rzd_es1_lastochka_visual_effect_and_powered_position;
         cargo_capacity: 88;
         tractive_effort_coefficient: int(0.164*10*56);
         length: 8;

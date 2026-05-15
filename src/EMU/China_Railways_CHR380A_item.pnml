@@ -82,7 +82,6 @@ item(FEAT_TRAINS, item_emu_china_railways_chr380a) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
         running_cost_factor: int(350/10);
         weight: int(48*1/2);
-        visual_effect_and_powered: switch_emu_china_railways_chr380a_visual_effect_and_powered_position;
         cargo_capacity: 70;
         length: 8;
         default: switch_emu_china_railways_chr380a_cargo_selection;
@@ -92,7 +91,6 @@ item(FEAT_TRAINS, item_emu_china_railways_chr380a) {
         running_cost_factor: (round(46.76170473667294));
         power: int(3210*1/2);
         weight: int(48*3/4);
-        visual_effect_and_powered: switch_emu_china_railways_chr380a_visual_effect_and_powered_position;
         cargo_capacity: 70;
         tractive_effort_coefficient: int(0.127*10*48);
         length: 8;

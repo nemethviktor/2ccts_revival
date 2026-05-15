@@ -81,7 +81,6 @@ item(FEAT_TRAINS, item_emu_australia_queensland_rail_tilt_train) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: int(160/10);
         weight: int(45*1/2);
-        visual_effect_and_powered: switch_emu_australia_queensland_rail_tilt_train_visual_effect_and_powered_position;
         cargo_capacity: 56;
         length: 8;
         default: switch_emu_australia_queensland_rail_tilt_train_cargo_selection;
@@ -91,7 +90,6 @@ item(FEAT_TRAINS, item_emu_australia_queensland_rail_tilt_train) {
         running_cost_factor: (round(30.97614582557415));
         power: int(1820*1/2);
         weight: int(45*3/4);
-        visual_effect_and_powered: switch_emu_australia_queensland_rail_tilt_train_visual_effect_and_powered_position;
         cargo_capacity: 56;
         tractive_effort_coefficient: int(0.238*10*45);
         length: 8;

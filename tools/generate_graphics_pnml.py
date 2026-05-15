@@ -197,6 +197,25 @@ def get_switch_vid(*, vid: str,
 
 
 @scrub_nml_data
+def get_switch_powered_unpowered_sundry(*, vid: str) -> str:
+    return f"""
+    /// Livery switch based on powered/unpowered status (pax)
+switch(FEAT_TRAINS, SELF, switch_{vid}_middlepass_livery, vehicle_type_id) {{
+    item_mu_mu_wagon_unpowered: spriteset_{vid}_middlepass_l1;
+    item_mu_mu_wagon_powered:   spriteset_{vid}_middlepass_l2;
+    spriteset_{vid}_middlepass_l1; // Default fallback
+}}
+
+/// Livery switch based on powered/unpowered status (mail)
+switch(FEAT_TRAINS, SELF, switch_{vid}_middlemail_livery, vehicle_type_id) {{
+    item_mu_mu_wagon_unpowered: spriteset_{vid}_middlemail_l1;
+    item_mu_mu_wagon_powered:   spriteset_{vid}_middlemail_l2;
+    spriteset_{vid}_middlemail_l1; // Default fallback
+}}
+"""
+
+
+@scrub_nml_data
 def get_switch_cargo_class(*, vid: str,
                            task: Optional[Literal["spriteset",
                                                   "spritegroup", "switch", "empty"]],
@@ -731,10 +750,10 @@ def get_tpl_01(vid, gfx_path, row, template_amendment_code):
 def get_tpl_02(vid, gfx_path, row, template_amendment_code):
     """
     Standard MU(Front/Back/Middle/Cargo) // EMU(Long) // Metro(Front/Back/Middle/No cargo, obvs.): param template_amendment_code:
-        A -> DMU/EMU/Maglev;
+        A -> DMU/EMU/Maglev, no un/powered distinction;
         B -> [this has been removed]
         C -> Metro
-        D -> EMU(Long)
+        D -> EMU(Long, with or without powered cars (ie both powered and unpowered are in the template))
         E -> EMU(Even Longer): return:
     """
 
@@ -910,44 +929,46 @@ def get_tpl_02(vid, gfx_path, row, template_amendment_code):
             spriteset_suffix="middlepass", spriteset_suffix_fallback="middlemail"))
 
     elif template_amendment_code == 'D':
-        nml_code.append(get_random_switch_visual_effect(
-            vid=vid, first_chance=9, second_chance=1))
-
-        nml_code.append(
-            get_visual_effects_and_power_with_store(vid=vid, store_value=-1, id_range=VEHID_ID_CATEGORY))
-
-        nml_code.append(get_random_switch_visual_effect_w_dependent(
-            vid=vid,
-            dependent_on_switch="visual_effect_and_powered",
-            switch_what="middlepass_livery",
-            first_chance=9, second_chance=1,
-            first_item_task="spriteset", second_item_task="spriteset",
-            first_item_suffix="middlepass_l1", second_item_suffix="middlepass_l2"))
-
-        nml_code.append(get_random_switch_visual_effect_w_dependent(
-            vid=vid,
-            dependent_on_switch="visual_effect_and_powered",
-            switch_what="middlemail_livery",
-            first_chance=9, second_chance=1,
-            first_item_task="spriteset", second_item_task="spriteset",
-            first_item_suffix="middlemail_l1", second_item_suffix="middlemail_l2"))
-
-        for item in ["pass", "mail"]:
-
-            nml_code.append(get_switch_with_store(vid=vid,
-                                                  store_value=-1,  # minus 1
-                                                  switch_what=f"middle{item}_position",
-                                                  id_range=VEHID_ID_CATEGORY,
-                                                  first_item_task="switch",  # switch, not spriteset
-                                                  second_item_task="spriteset",  # spriteset!
-                                                  first_item_suffix=f"middle{item}_livery",
-                                                  second_item_suffix=f"middle{item}_l2"))
+        # nml_code.append(get_random_switch_visual_effect(
+        #    vid=vid, first_chance=9, second_chance=1))
+        #
+        # nml_code.append(
+        #    get_visual_effects_and_power_with_store(vid=vid, store_value=-1, id_range=VEHID_ID_CATEGORY))
+        #
+        # nml_code.append(get_random_switch_visual_effect_w_dependent(
+        #    vid=vid,
+        #    dependent_on_switch="visual_effect_and_powered",
+        #    switch_what="middlepass_livery",
+        #    first_chance=9, second_chance=1,
+        #    first_item_task="spriteset", second_item_task="spriteset",
+        #    first_item_suffix="middlepass_l1", second_item_suffix="middlepass_l2"))
+        #
+        # nml_code.append(get_random_switch_visual_effect_w_dependent(
+        #    vid=vid,
+        #    dependent_on_switch="visual_effect_and_powered",
+        #    switch_what="middlemail_livery",
+        #    first_chance=9, second_chance=1,
+        #    first_item_task="spriteset", second_item_task="spriteset",
+        #    first_item_suffix="middlemail_l1", second_item_suffix="middlemail_l2"))
+        #
+        # for item in ["pass", "mail"]:
+        #
+        #    nml_code.append(get_switch_with_store(vid=vid,
+        #                                          store_value=-1,  # minus 1
+        #                                          switch_what=f"middle{item}_position",
+        #                                          id_range=VEHID_ID_CATEGORY,
+        #                                          first_item_task="switch",  # switch, not spriteset
+        #                                          second_item_task="spriteset",  # spriteset!
+        #                                          first_item_suffix=f"middle{item}_livery",
+        #                                          second_item_suffix=f"middle{item}_l2"))
+        #
+        nml_code.append(get_switch_powered_unpowered_sundry(vid=vid))
 
         nml_code.append(get_switch_cargo_class(vid=vid,
                                                task="switch", fallback_task="switch",
                                                bitmask_label="CC_PASSENGERS",
-                                               spriteset_suffix="middlepass_position",
-                                               spriteset_suffix_fallback="middlemail_position"))
+                                               spriteset_suffix="middlepass_livery",
+                                               spriteset_suffix_fallback="middlemail_livery"))
 
     elif template_amendment_code in ['E', 'F']:
         suffix = "_length" if template_amendment_code == 'E' else "_livery"

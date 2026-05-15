@@ -78,7 +78,6 @@ item(FEAT_TRAINS, item_emu_hong_kong_mtr_sp1900) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: int(130/10);
         weight: int(37*1/2);
-        visual_effect_and_powered: switch_emu_hong_kong_mtr_sp1900_visual_effect_and_powered_position;
         cargo_capacity: 250;
         length: 8;
         default: switch_emu_hong_kong_mtr_sp1900_cargo_selection;
@@ -88,7 +87,6 @@ item(FEAT_TRAINS, item_emu_hong_kong_mtr_sp1900) {
         running_cost_factor: (round(31.276340329208637));
         power: int(5149*1/2);
         weight: int(37*3/4);
-        visual_effect_and_powered: switch_emu_hong_kong_mtr_sp1900_visual_effect_and_powered_position;
         cargo_capacity: 250;
         tractive_effort_coefficient: int(0.3*10*37);
         length: 8;

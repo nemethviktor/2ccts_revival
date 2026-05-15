@@ -43,43 +43,23 @@ switch(FEAT_TRAINS, SELF, switch_emu_denmark_dsb_s_tog_ii_reversed, var[0xC8]) {
     spriteset_emu_denmark_dsb_s_tog_ii_front;
 }
 
-/// Visual effect, for EMU this is done on the part with the pantograph
-random_switch(FEAT_TRAINS, SELF, switch_emu_denmark_dsb_s_tog_ii_visual_effect_and_powered) {
-	9: visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
-	1: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, -3, DISABLE_WAGON_POWER);
+    /// Livery switch based on powered/unpowered status (pax)
+switch(FEAT_TRAINS, SELF, switch_emu_denmark_dsb_s_tog_ii_middlepass_livery, vehicle_type_id) {
+    item_mu_mu_wagon_unpowered: spriteset_emu_denmark_dsb_s_tog_ii_middlepass_l1;
+    item_mu_mu_wagon_powered:   spriteset_emu_denmark_dsb_s_tog_ii_middlepass_l2;
+    spriteset_emu_denmark_dsb_s_tog_ii_middlepass_l1; // Default fallback
 }
 
-switch(FEAT_TRAINS, SELF, switch_emu_denmark_dsb_s_tog_ii_visual_effect_and_powered_position, [STORE_TEMP(-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
-	ID_RANGE_UNIT_WAGONS_RAIL: switch_emu_denmark_dsb_s_tog_ii_visual_effect_and_powered;
-	visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, -3, DISABLE_WAGON_POWER);
+/// Livery switch based on powered/unpowered status (mail)
+switch(FEAT_TRAINS, SELF, switch_emu_denmark_dsb_s_tog_ii_middlemail_livery, vehicle_type_id) {
+    item_mu_mu_wagon_unpowered: spriteset_emu_denmark_dsb_s_tog_ii_middlemail_l1;
+    item_mu_mu_wagon_powered:   spriteset_emu_denmark_dsb_s_tog_ii_middlemail_l2;
+    spriteset_emu_denmark_dsb_s_tog_ii_middlemail_l1; // Default fallback
 }
 
-/// Visual effect random switch (middlepass_livery)
-random_switch(FEAT_TRAINS, SELF, switch_emu_denmark_dsb_s_tog_ii_middlepass_livery) {
-    dependent: switch_emu_denmark_dsb_s_tog_ii_visual_effect_and_powered;
-    9: spriteset_emu_denmark_dsb_s_tog_ii_middlepass_l1;
-    1: spriteset_emu_denmark_dsb_s_tog_ii_middlepass_l2;
-}
-
-/// Visual effect random switch (middlemail_livery)
-random_switch(FEAT_TRAINS, SELF, switch_emu_denmark_dsb_s_tog_ii_middlemail_livery) {
-    dependent: switch_emu_denmark_dsb_s_tog_ii_visual_effect_and_powered;
-    9: spriteset_emu_denmark_dsb_s_tog_ii_middlemail_l1;
-    1: spriteset_emu_denmark_dsb_s_tog_ii_middlemail_l2;
-}
-
-switch(FEAT_TRAINS, SELF, switch_emu_denmark_dsb_s_tog_ii_middlepass_position, [STORE_TEMP(-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
-	ID_RANGE_UNIT_WAGONS_RAIL: switch_emu_denmark_dsb_s_tog_ii_middlepass_livery;
-	spriteset_emu_denmark_dsb_s_tog_ii_middlepass_l2;
-}
-
-switch(FEAT_TRAINS, SELF, switch_emu_denmark_dsb_s_tog_ii_middlemail_position, [STORE_TEMP(-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
-	ID_RANGE_UNIT_WAGONS_RAIL: switch_emu_denmark_dsb_s_tog_ii_middlemail_livery;
-	spriteset_emu_denmark_dsb_s_tog_ii_middlemail_l2;
-}
 
 /// Graphics for the unit wagon based on cargo class
 switch(FEAT_TRAINS, SELF, switch_emu_denmark_dsb_s_tog_ii_cargo_selection, cargo_classes){
-	bitmask(CC_PASSENGERS): switch_emu_denmark_dsb_s_tog_ii_middlepass_position;
-	switch_emu_denmark_dsb_s_tog_ii_middlemail_position;
+	bitmask(CC_PASSENGERS): switch_emu_denmark_dsb_s_tog_ii_middlepass_livery;
+	switch_emu_denmark_dsb_s_tog_ii_middlemail_livery;
 }

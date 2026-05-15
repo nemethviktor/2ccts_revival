@@ -77,7 +77,6 @@ item(FEAT_TRAINS, item_emu_denmark_dsb_s_tog_iv) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: int(120/10);
         weight: int(31*1/2);
-        visual_effect_and_powered: switch_emu_denmark_dsb_s_tog_iv_visual_effect_and_powered_position;
         cargo_capacity: 90;
         length: 5;
         default: switch_emu_denmark_dsb_s_tog_iv_cargo_selection;
@@ -87,7 +86,6 @@ item(FEAT_TRAINS, item_emu_denmark_dsb_s_tog_iv) {
         running_cost_factor: (round(19.202665548180395));
         power: int(1150*1/2);
         weight: int(31*3/4);
-        visual_effect_and_powered: switch_emu_denmark_dsb_s_tog_iv_visual_effect_and_powered_position;
         cargo_capacity: 90;
         tractive_effort_coefficient: int(0.121*10*31);
         length: 5;

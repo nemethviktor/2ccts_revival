@@ -5,6 +5,7 @@
 - CODE CHANGES:
   - Template `TPL_17B` should not have been marked as articulated #8
   - Added `TRAIN_FLAG_TILT` where relevant
+  - Fix un/powered `TPL_02D` visual misrepresentation
 - VEHICLES CHANGES:
   - Fixed a number of sprite misalignments #7
   - Small fixes here and there

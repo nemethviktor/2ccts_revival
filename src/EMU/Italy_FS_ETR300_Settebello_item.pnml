@@ -81,7 +81,6 @@ item(FEAT_TRAINS, item_emu_italy_fs_etr300_settebello) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
         running_cost_factor: int(200/10);
         weight: int(44*1/2);
-        visual_effect_and_powered: switch_emu_italy_fs_etr300_settebello_visual_effect_and_powered_position;
         cargo_capacity: 27;
         length: 8;
         default: switch_emu_italy_fs_etr300_settebello_cargo_selection;
@@ -91,7 +90,6 @@ item(FEAT_TRAINS, item_emu_italy_fs_etr300_settebello) {
         running_cost_factor: (round(26.74803149495891));
         power: int(1020*1/2);
         weight: int(44*3/4);
-        visual_effect_and_powered: switch_emu_italy_fs_etr300_settebello_visual_effect_and_powered_position;
         cargo_capacity: 27;
         tractive_effort_coefficient: int(0.08*10*44);
         length: 8;

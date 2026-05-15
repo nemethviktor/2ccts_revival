@@ -82,7 +82,6 @@ item(FEAT_TRAINS, item_emu_switzerland_sbb_rabde_510) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: int(125/10);
         weight: int(66*1/2);
-        visual_effect_and_powered: switch_emu_switzerland_sbb_rabde_510_visual_effect_and_powered_position;
         cargo_capacity: 66;
         length: 8;
         default: switch_emu_switzerland_sbb_rabde_510_cargo_selection;
@@ -92,7 +91,6 @@ item(FEAT_TRAINS, item_emu_switzerland_sbb_rabde_510) {
         running_cost_factor: (round(29.383329031643548));
         power: int(2184*1/2);
         weight: int(66*3/4);
-        visual_effect_and_powered: switch_emu_switzerland_sbb_rabde_510_visual_effect_and_powered_position;
         cargo_capacity: 66;
         tractive_effort_coefficient: int(0.185*10*66);
         length: 8;

@@ -81,7 +81,6 @@ item(FEAT_TRAINS, item_emu_japan_jnr_shinkansen_series_0) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
         running_cost_factor: int(210/10);
         weight: int(59*1/2);
-        visual_effect_and_powered: switch_emu_japan_jnr_shinkansen_series_0_visual_effect_and_powered_position;
         cargo_capacity: 100;
         length: 8;
         default: switch_emu_japan_jnr_shinkansen_series_0_cargo_selection;
@@ -91,7 +90,6 @@ item(FEAT_TRAINS, item_emu_japan_jnr_shinkansen_series_0) {
         running_cost_factor: (round(32.06221161063252));
         power: int(1984*1/2);
         weight: int(59*3/4);
-        visual_effect_and_powered: switch_emu_japan_jnr_shinkansen_series_0_visual_effect_and_powered_position;
         cargo_capacity: 100;
         tractive_effort_coefficient: int(0.112*10*59);
         length: 8;
