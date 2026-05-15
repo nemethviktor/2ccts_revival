@@ -43,18 +43,24 @@ switch(FEAT_TRAINS, SELF, switch_emu_hong_kong_mtr_sp1900_reversed, var[0xC8]) {
     spriteset_emu_hong_kong_mtr_sp1900_front;
 }
 
-    /// Livery switch based on powered/unpowered status (pax)
-switch(FEAT_TRAINS, SELF, switch_emu_hong_kong_mtr_sp1900_middlepass_livery, vehicle_type_id) {
-    item_mu_mu_wagon_unpowered: spriteset_emu_hong_kong_mtr_sp1900_middlepass_l1;
-    item_mu_mu_wagon_powered:   spriteset_emu_hong_kong_mtr_sp1900_middlepass_l2;
-    spriteset_emu_hong_kong_mtr_sp1900_middlepass_l1; // Default fallback
+    /// Livery switch for Passengers (pax)
+switch(FEAT_TRAINS, SELF, switch_emu_hong_kong_mtr_sp1900_middlepass_livery, 
+    (vehicle_type_id == item_mu_mu_wagon_powered) || 
+    (position_in_consist == 1) || 
+    (position_in_consist == num_vehs_in_consist - 2)
+) {
+    1: spriteset_emu_hong_kong_mtr_sp1900_middlepass_l2; 
+    spriteset_emu_hong_kong_mtr_sp1900_middlepass_l1;
 }
 
-/// Livery switch based on powered/unpowered status (mail)
-switch(FEAT_TRAINS, SELF, switch_emu_hong_kong_mtr_sp1900_middlemail_livery, vehicle_type_id) {
-    item_mu_mu_wagon_unpowered: spriteset_emu_hong_kong_mtr_sp1900_middlemail_l1;
-    item_mu_mu_wagon_powered:   spriteset_emu_hong_kong_mtr_sp1900_middlemail_l2;
-    spriteset_emu_hong_kong_mtr_sp1900_middlemail_l1; // Default fallback
+/// Livery switch for Mail
+switch(FEAT_TRAINS, SELF, switch_emu_hong_kong_mtr_sp1900_middlemail_livery, 
+    (vehicle_type_id == item_mu_mu_wagon_powered) || 
+    (position_in_consist == 1) || 
+    (position_in_consist == num_vehs_in_consist - 2)
+) {
+    1: spriteset_emu_hong_kong_mtr_sp1900_middlemail_l2; 
+    spriteset_emu_hong_kong_mtr_sp1900_middlemail_l1;
 }
 
 

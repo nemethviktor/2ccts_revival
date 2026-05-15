@@ -41,7 +41,7 @@ item(FEAT_TRAINS, item_emu_australia_4d_train) {
 
         reliability_decay: 20;
         // cargodeftype: PASSENGERS;
-        refittable_cargo_classes: bitmask(CC_PASSENGERS, CC_MAIL, CC_ARMOURED);
+        refittable_cargo_classes: bitmask(CC_PASSENGERS, CC_MAIL);
         non_refittable_cargo_classes: 0;
         cargo_age_period: 185;
         misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU);

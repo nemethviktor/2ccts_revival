@@ -199,18 +199,24 @@ def get_switch_vid(*, vid: str,
 @scrub_nml_data
 def get_switch_powered_unpowered_sundry(*, vid: str) -> str:
     return f"""
-    /// Livery switch based on powered/unpowered status (pax)
-switch(FEAT_TRAINS, SELF, switch_{vid}_middlepass_livery, vehicle_type_id) {{
-    item_mu_mu_wagon_unpowered: spriteset_{vid}_middlepass_l1;
-    item_mu_mu_wagon_powered:   spriteset_{vid}_middlepass_l2;
-    spriteset_{vid}_middlepass_l1; // Default fallback
+    /// Livery switch for Passengers (pax)
+switch(FEAT_TRAINS, SELF, switch_{vid}_middlepass_livery, 
+    (vehicle_type_id == item_mu_mu_wagon_powered) || 
+    (position_in_consist == 1) || 
+    (position_in_consist == num_vehs_in_consist - 2)
+) {{
+    1: spriteset_{vid}_middlepass_l2; 
+    spriteset_{vid}_middlepass_l1;
 }}
 
-/// Livery switch based on powered/unpowered status (mail)
-switch(FEAT_TRAINS, SELF, switch_{vid}_middlemail_livery, vehicle_type_id) {{
-    item_mu_mu_wagon_unpowered: spriteset_{vid}_middlemail_l1;
-    item_mu_mu_wagon_powered:   spriteset_{vid}_middlemail_l2;
-    spriteset_{vid}_middlemail_l1; // Default fallback
+/// Livery switch for Mail
+switch(FEAT_TRAINS, SELF, switch_{vid}_middlemail_livery, 
+    (vehicle_type_id == item_mu_mu_wagon_powered) || 
+    (position_in_consist == 1) || 
+    (position_in_consist == num_vehs_in_consist - 2)
+) {{
+    1: spriteset_{vid}_middlemail_l2; 
+    spriteset_{vid}_middlemail_l1;
 }}
 """
 

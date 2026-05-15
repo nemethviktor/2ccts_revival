@@ -18,7 +18,7 @@ item(FEAT_TRAINS, item_steam_japan_jnr_class_e10) {
         model_life: 45;
         vehicle_life: 30;
         retire_early: 20;
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
         cost_factor: 47.23867;
         running_cost_factor: 36.69254;
         speed: 65 km/h;
@@ -29,9 +29,9 @@ item(FEAT_TRAINS, item_steam_japan_jnr_class_e10) {
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
-        // cargodeftype: PASSENGERS;
-        refittable_cargo_classes: bitmask(CC_PASSENGERS, CC_MAIL, CC_ARMOURED);
-        non_refittable_cargo_classes: 0;
+        // cargodeftype: NONE;
+        refittable_cargo_classes: bitmask(NO_CARGO_CLASS);
+        
         cargo_age_period: 185;
         misc_flags: bitmask(TRAIN_FLAG_2CC);
         refit_cost: 0;
@@ -47,7 +47,7 @@ item(FEAT_TRAINS, item_steam_japan_jnr_class_e10) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/asia", "flag/JP", "power/steam", "role/commuter_urban"];
+	badges: ["region/asia", "flag/JP", "power/steam", "role/universal"];
 
     }
     graphics {

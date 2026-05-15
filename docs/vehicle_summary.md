@@ -895,7 +895,7 @@
 | ![NMBS/SNCB Type 29](vehicle_graphics/str_steam_belgium_nmbs_sncb_type_29.png) | NMBS/SNCB Type 29 | 1945 | 96 | 1970 | Universal | 0 | STANDARD_NONE | Western Europe |
 | ![CD 459.0](vehicle_graphics/str_steam_czech_republic_cd_4590.png) | CD 459.0 | 1946 | 80 | 1857 | Heavy Freight | 0 | STANDARD_NONE | Eastern Europe |
 | ![LNER A1 'Peppercorn'](vehicle_graphics/str_steam_uk_lner_a1_peppercorn.png) | LNER A1 'Peppercorn' | 1948 | 160 | 2400 | Express | 0 | STANDARD_NONE | Northern Europe |
-| ![JNR E10](vehicle_graphics/str_steam_japan_jnr_class_e10.png) | JNR E10 | 1948 | 65 | 1340 | Commuter/Urban | 0 | NARROW_NONE | Asia |
+| ![JNR E10](vehicle_graphics/str_steam_japan_jnr_class_e10.png) | JNR E10 | 1948 | 65 | 1340 | Universal | 0 | NARROW_NONE | Asia |
 | ![GWR 1600](vehicle_graphics/str_steam_uk_gwr_1600_class.png) | GWR 1600 | 1949 | 65 | 500 | Universal | 0 | STANDARD_NONE | Northern Europe |
 | ![Victorian Railways R](vehicle_graphics/str_steam_australia_victorian_railways_r_class.png) | Victorian Railways R | 1951 | 130 | 2400 | Heavy Freight | 0 | BROAD_NONE | Oceania |
 | ![HSH 01](vehicle_graphics/str_steam_albania_hsh_01.png) | HSH 01 | 1951 | 80 | 1200 | Universal | 0 | STANDARD_NONE | Southern Europe |

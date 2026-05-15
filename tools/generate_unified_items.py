@@ -360,7 +360,7 @@ def get_cargo_definitions(row: pd.Series) -> str:
     """
 
     # Define common reusable lists to keep the dictionary clean
-    PASS_MAIL_VAL = "CC_PASSENGERS, CC_MAIL, CC_ARMOURED"
+    PASS_MAIL_ONLY = "CC_PASSENGERS, CC_MAIL"
     EXPRESS_REF = "CC_PIECE_GOODS, CC_EXPRESS, CC_REFRIGERATED"
 
     NO_NONREFITTABLE = "non_refittable_cargo_classes: 0;"
@@ -374,13 +374,13 @@ def get_cargo_definitions(row: pd.Series) -> str:
             f"// cargodeftype: NONE;\n{" "*8}"
             f"refittable_cargo_classes: bitmask(NO_CARGO_CLASS);\n{" "*8}"
         ),
-        # Pax & Mail
+        # Pax & Mail, NO Valuables
         "PASSENGERS": (
             f"// cargodeftype: PASSENGERS;\n{" "*8}"
-            f"refittable_cargo_classes: bitmask({PASS_MAIL_VAL});\n{" "*8}"
+            f"refittable_cargo_classes: bitmask({PASS_MAIL_ONLY});\n{" "*8}"
             f"{NO_NONREFITTABLE}"
         ),
-        # Metro does not allow it
+        # Metro does not allow MAIL
         "PASSENGERS_ONLY": (
             f"// cargodeftype: PASSENGERS_ONLY;\n{" "*8}"
             f"refittable_cargo_classes: bitmask(CC_PASSENGERS);\n{" "*8}"
