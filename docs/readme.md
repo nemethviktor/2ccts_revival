@@ -18,7 +18,7 @@ There is a nightly of sorts on my [Google Drive](https://drive.google.com/file/d
 - OpenTTD 1.2.0-RC1 or nightly r23971, or higher
 - Not compatible with TTDPatch
 - Badges require OpenTTD v15
-- Driving Trailers require nightly as of 20260410 or thereabouts (or v16 if you're on release versions)
+- Driving Trailers require nightly as of mid April 2026 or thereabouts (or v16 if you're on release versions)
 - Please note that the 'revival' newgrf is not backwards compatible with the original 2cc trains newgrf so you can't hot-swap it in savegames
 
 ### Parameter settings
@@ -54,7 +54,7 @@ The roster is auto-saved into a markdown file and can be accessed on github, [he
 
 ## Build
 
-You'll likely need [nmlc 0.9.0+](https://github.com/OpenTTD/nml/tree/master) (older versions won't work because of the push-pull and badges capabilities) to run the build and that seems to be around for Windows only. Get MinGW from [here](https://sourceforge.net/projects/mingw-w64/files/latest/download), install (you'll need the base and some compilers), then add the resulting folder's `bin` subfolder to `PATH` (ie `c:\MinGW\bin\`)
+You'll need [nmlc 0.9.0+](https://github.com/OpenTTD/nml/tree/master) (older versions won't work because of the push-pull and badges capabilities) to run the build and that seems to be around for Windows only. Get MinGW from [here](https://sourceforge.net/projects/mingw-w64/files/latest/download), install (you'll need the base and some compilers), then add the resulting folder's `bin` subfolder to `PATH` (ie `c:\MinGW\bin\`)
 
 You'll also need `python 3.13+` and there's now a `requirements.txt` in the `tools` folder, it should do the trick for getting the various req'd libraries.
 
@@ -68,7 +68,7 @@ NA
 
 As I wrote above my GFX skills are zero so I'd like to ask people with graphics skills to chip in with the designs, either for new/concept vehicles or just changes to existing ones.
 
-Please **do stick to one of the template files** or, while beggars can't be choosers I *will* reject the design. You may ofc put your logo or text or palette on the file(s) but don't move the template boxes. There are/were over 50 (!!!) various combinations in the legacy files and I'd rather die than to decipher any more random ones. (Main) Template logic cna be found in another readme inside the `gfx` folder and there are templates of existing files as well there. Furthermore each pnml file has the template designation inside it so if you would like to add more designs, pick one from the existing ones.
+Please **do stick to one of the template files** or, while beggars can't be choosers I *will* reject the design. You may ofc put your logo or text or palette on the file(s) but don't move the template boxes. There are/were over 50 (!!!) various combinations in the legacy files and I'd rather die than to decipher any more random ones. (Main) Template logic can be found in another readme inside the `gfx` folder and there are templates of existing files as well there. Furthermore each pnml file has the template designation inside it so if you would like to add more designs, pick one from the existing ones.
 
 ## Q&As
 
@@ -81,6 +81,17 @@ A: With MUs you buy both heads, and then you can use the Unit Wagons to make the
 I forked the original project because I was unsatisfied with the availability of items past Gen5 wagons and so the original aim was to extend that. It has since become obvious that there's great scope for extending the package well beyond this. Not only a fair bit of time has passed since the mid 2010s when this was active (and a lot of new real vehicles have come out) but also that there is a distinct lack of vehicles outside the EU region in 2cc, so that'd need working on and to a smaller extent I think there'd be significant scope for extending *concept* vehicles for future purposes because I personally find it boring that there are almost no new vehicles in any NewGRF past ~2020.
 
 Please use github to submit requests of any kind, *don't use the OTTD forums* - I'm not really active there. Also preferably don't use Reddit, I'm a reader there but Github is easier to manage. You can find me on [Discord](https://discord.com/channels/142724111502802944/1483827768163827864) -- pls note I don't really react to DMs unless I have a vague idea as to who is contacting me but the link above takes to the relevant development channel, which is public. (I'm an introvert :D)
+
+### Differences from the original 2cc set
+
+The below is a causal and incomplete blurb of some of the differences between the old and new set:
+
+- Most vehicles' data has been rechecked and adjusted, which also means their costs will have changed. Obviously new vehicles have been added.
+- MU wagons can no longer take `valuables`. It's illogical and is a cheat that the player can have valuables speeding around at 400kmh while the actual fastest wagon for it is limited to ~160kmh or so.
+- Livestock vans have been separated out and the various wagons' cargo defintions have been revamped.
+- Almost everything has been standardised in code and templates, this corrects a lot of generic bugs from the original setup that are too numerous to list individually.
+- Rail types have been added as well as voltages, badges, etc.
+- Maglev(s) for cargo purposes have been introduced. The semi-plural is because there's only one at the moment and the relevant graphics are a copypaste of `Taurus` and `gen5` but at least there is _something_.
 
 ## Credits
 

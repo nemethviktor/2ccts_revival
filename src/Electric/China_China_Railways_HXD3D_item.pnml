@@ -15,11 +15,11 @@ item(FEAT_TRAINS, item_electric_china_china_railways_hxd3d) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 118.63494;
-        running_cost_factor: 105.32362;
+        cost_factor: 113.96675;
+        running_cost_factor: 100.65543;
         speed: 160 km/h;
         power: 10058 hp;
-        cargo_capacity: 8;
+        cargo_capacity: 0;
         weight: 128 ton;
         tractive_effort_coefficient: 0.334;
         air_drag_coefficient: 0;
@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_electric_china_china_railways_hxd3d) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/asia", "flag/CN", "power/electric/ac", "role/freight"];
+	badges: ["region/asia", "flag/CN", "power/electric/ac", "role/express"];
 
     }
     graphics {

@@ -532,14 +532,14 @@
 | ![KTZ KZ4A](vehicle_graphics/str_electric_kazakhstan_ktz_kz4a.png) | KTZ KZ4A | 2004 | 210 | 6500 | Express | 0 | BROAD_25KV | Asia |
 | ![China Railways HXD3](vehicle_graphics/str_electric_china_china_railways_hxd3.png) | China Railways HXD3 | 2006 | 120 | 9700 | Heavy Freight | 0 | STANDARD_25KV | Asia |
 | ![China Railways HXD2](vehicle_graphics/str_electric_china_china_railways_hxd2.png) | China Railways HXD2 | 2007 | 120 | 13000 | Heavy Freight | 0 | STANDARD_25KV | Asia |
-| ![China Railways HXD2B](vehicle_graphics/str_electric_china_china_railways_hxd2b.png) | China Railways HXD2B | 2007 | 120 | 12900 | Freight | 8 | STANDARD_25KV | Asia |
+| ![China Railways HXD2B](vehicle_graphics/str_electric_china_china_railways_hxd2b.png) | China Railways HXD2B | 2007 | 120 | 12900 | Heavy Freight | 0 | STANDARD_25KV | Asia |
 | ![CD 380](vehicle_graphics/str_electric_czech_republic_cd_380.png) | CD 380 | 2008 | 200 | 8583 | Express | 0 | STANDARD_OHLE | Eastern Europe |
 | ![Aurizon E40 AG-V1](vehicle_graphics/str_electric_australia_aurizon_e40_ag_v1.png) | Aurizon E40 AG-V1 | 2008 | 80 | 5360 | Universal | 0 | NARROW_25KV | Oceania |
 | ![ONCF E 1400 'Prima II'](vehicle_graphics/str_electric_morocco_oncf_e_1400_prima_ii.png) | ONCF E 1400 'Prima II' | 2010 | 160 | 8600 | Express | 0 | STANDARD_3KV | Africa |
 | ![RZD EP20](vehicle_graphics/str_electric_russia_rzd_ep20.png) | RZD EP20 | 2011 | 200 | 9655 | Express | 0 | BROAD_OHLE | Asia |
 | ![SBB Eem 923](vehicle_graphics/str_electric_switzerland_sbb_eem_923.png) | SBB Eem 923 | 2012 | 120 | 2012 | Universal | 0 | STANDARD_OHLE | Western Europe |
 | ![China Railways HXD1D](vehicle_graphics/str_electric_china_china_railways_hxd1d.png) | China Railways HXD1D | 2012 | 160 | 9700 | Express | 0 | STANDARD_25KV | Asia |
-| ![China Railways HXD3D](vehicle_graphics/str_electric_china_china_railways_hxd3d.png) | China Railways HXD3D | 2012 | 160 | 10058 | Freight | 8 | STANDARD_25KV | Asia |
+| ![China Railways HXD3D](vehicle_graphics/str_electric_china_china_railways_hxd3d.png) | China Railways HXD3D | 2012 | 160 | 10058 | Express | 0 | STANDARD_25KV | Asia |
 | ![Amtrak ACS-64](vehicle_graphics/str_electric_usa_amtrak_acs_64.png) | Amtrak ACS-64 | 2012 | 201 | 6700 | Express | 0 | STANDARD_OHLE | North America |
 | ![MRS 'He 4/4' [900 Series]](vehicle_graphics/str_electric_brasil_mrs_he_4_4.png) | MRS 'He 4/4' [900 Series] | 2012 | 60 | 6710 | Universal | 0 | BROAD_3KV | South America |
 | ![TFR 20E 'China Doll'](vehicle_graphics/str_electric_south_africa_sar_20e.png) | TFR 20E 'China Doll' | 2013 | 100 | 4000 | Express | 0 | NARROW_25KV | Africa |
