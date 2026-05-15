@@ -48,7 +48,6 @@ item(FEAT_TRAINS, item_diesel_canada_via_rail_fp9) {
     }
     graphics {
         purchase: spriteset_diesel_canada_via_rail_fp9_purchase;
-        purchase_cargo_capacity: 55;
         visual_effect_and_powered: switch_diesel_canada_via_rail_fp9_visual_effect;
         // no 'length'
         // no 'articulated_part'

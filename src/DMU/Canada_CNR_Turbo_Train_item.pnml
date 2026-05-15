@@ -70,7 +70,6 @@ item(FEAT_TRAINS, item_dmu_canada_cnr_turbo_train) {
     graphics {
         purchase: spriteset_dmu_canada_cnr_turbo_train_purchase;
         cargo_capacity: switch_dmu_canada_cnr_turbo_train_capacity_engine;
-        purchase_cargo_capacity: 50;
         visual_effect_and_powered: switch_dmu_canada_cnr_turbo_train_visual_effect_and_powered;
         // no 'length'
         // no 'articulated_part'

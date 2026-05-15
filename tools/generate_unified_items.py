@@ -663,9 +663,6 @@ def generate_unified_items():
         ls_val = int(row['LOADINGSPEED_VALUE'])
         ls_logic = f"isUltraSpeed ? 255 : (param_loadingspeed == 0) ? {ls_val}/2 : (param_loadingspeed == 2) ? {ls_val}*2 : {ls_val}"
 
-        purchase_cargo_capacity = row['PURCHASE_CARGO_CAPACITY'] if is_number(
-            row['PURCHASE_CARGO_CAPACITY']) else None
-
         # Separate from the further below because this is for powered/unpowered livery overrides only
         graphics_switch_visual_effect_and_powered_position = f"visual_effect_and_powered: switch_{VEHIDCODE_lcase}_visual_effect_and_powered_position;" if TEMPLATE_ID_FULL in [
             'TPL_02D'] else None
@@ -818,9 +815,6 @@ def generate_unified_items():
             if not cargo_capacity_defined:
                 content.append(
                     f"        cargo_capacity: switch_{VEHIDCODE_lcase}_capacity_engine;\n")
-        if purchase_cargo_capacity and purchase_cargo_capacity > 0:
-            content.append(
-                f"        purchase_cargo_capacity: {int(purchase_cargo_capacity)};\n")
         content.append(
             f"        {graphics_switch_visual_effect_and_powered}\n")
         content.append(f"        {graphics_switch_length}\n")

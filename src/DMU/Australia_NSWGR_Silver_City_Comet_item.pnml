@@ -70,7 +70,6 @@ item(FEAT_TRAINS, item_dmu_australia_nswgr_silver_city_comet) {
     graphics {
         purchase: spriteset_dmu_australia_nswgr_silver_city_comet_purchase;
         cargo_capacity: switch_dmu_australia_nswgr_silver_city_comet_capacity_engine;
-        purchase_cargo_capacity: 45;
         visual_effect_and_powered: switch_dmu_australia_nswgr_silver_city_comet_visual_effect_and_powered;
         // no 'length'
         // no 'articulated_part'

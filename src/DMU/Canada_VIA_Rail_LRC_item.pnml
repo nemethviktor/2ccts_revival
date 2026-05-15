@@ -70,7 +70,6 @@ item(FEAT_TRAINS, item_dmu_canada_via_rail_lrc) {
     graphics {
         purchase: spriteset_dmu_canada_via_rail_lrc_purchase;
         cargo_capacity: switch_dmu_canada_via_rail_lrc_capacity_engine;
-        purchase_cargo_capacity: 55;
         visual_effect_and_powered: switch_dmu_canada_via_rail_lrc_visual_effect_and_powered;
         // no 'length'
         // no 'articulated_part'
