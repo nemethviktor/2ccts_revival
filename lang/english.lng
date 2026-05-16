@@ -722,6 +722,13 @@ str_diesel_australia_commonwealth_nsu                             :Commonwealth 
 str_diesel_china_china_railways_df11                              :China Railways DF11 (Diesel)
 str_diesel_china_china_railways_df4                               :China Railways DF4 (Diesel)
 str_diesel_china_china_railways_df5                               :China Railways DF5 (Diesel)
+str_diesel_usa_ge_es44                                            :GE Evo ES44 (Diesel)
+str_diesel_usa_emd_sd40                                           :EMD SD40 (Diesel)
+str_diesel_usa_emd_sd70                                           :EMD SD70 (Diesel)
+str_diesel_usa_ge_c30_7                                           :GE C30-7 (Diesel)
+str_diesel_usa_ge_dash_8_40c                                      :GE Dash 8-40C (Diesel)
+str_diesel_usa_ge_dash_9_44cw                                     :GE Dash 9-44CW (Diesel)
+str_diesel_usa_emd_gp40                                           :EMD GP40 (Diesel)
 
 # Dieselrailbus
 str_rbd_australia_victorian_railways_aec_rm1                      :Victorian Railways AEC RM1 (Diesel Railbus)

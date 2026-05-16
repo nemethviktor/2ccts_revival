@@ -409,6 +409,13 @@ item(FEAT_TRAINS, item_diesel_Australia_Commonwealth_NSU, 5175) {}
 item(FEAT_TRAINS, item_diesel_China_China_Railways_DF11, 5176) {}
 item(FEAT_TRAINS, item_diesel_China_China_Railways_DF4, 5177) {}
 item(FEAT_TRAINS, item_diesel_China_China_Railways_DF5, 5178) {}
+item(FEAT_TRAINS, item_diesel_USA_GE_ES44, 5179) {}
+item(FEAT_TRAINS, item_diesel_USA_EMD_SD40, 5180) {}
+item(FEAT_TRAINS, item_diesel_USA_EMD_SD70, 5181) {}
+item(FEAT_TRAINS, item_diesel_USA_GE_C30_7, 5182) {}
+item(FEAT_TRAINS, item_diesel_USA_GE_Dash_8_40C, 5183) {}
+item(FEAT_TRAINS, item_diesel_USA_GE_Dash_9_44CW, 5184) {}
+item(FEAT_TRAINS, item_diesel_USA_EMD_GP40, 5185) {}
 
 // Electric, available ID range: 6000-6999 (hex 0x1770..0x1B57)
 #define ID_RANGE_ELECTRIC 0x1770..0x1B57

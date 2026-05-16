@@ -313,6 +313,7 @@ item_diesel_peru_ferrocarril_central_andino_alco_rsd_39, /*Year: 1965*/ \
 item_diesel_new_zealand_db_class, /*Year: 1965*/ \
 item_diesel_spain_renfe_308, /*Year: 1966*/ \
 item_diesel_australia_victoria_x1, /*Year: 1966*/ \
+item_diesel_usa_emd_sd40, /*Year: 1966*/ \
 item_diesel_australia_nswgr_422, /*Year: 1969*/ \
 item_diesel_egypt_enr_g22w, /*Year: 1969*/ \
 item_diesel_usa_up_emd_dda40x, /*Year: 1969*/ \
@@ -322,6 +323,7 @@ item_diesel_brazil_efvm_emd_ddm45, /*Year: 1970*/ \
 item_diesel_congo_alstom_bb_bb, /*Year: 1970*/ \
 item_diesel_australia_commonwealth_twin_16_645, /*Year: 1970*/ \
 item_diesel_italy_fs_d345, /*Year: 1971*/ \
+item_diesel_usa_emd_gp40, /*Year: 1971*/ \
 item_diesel_croatia_hz_2062, /*Year: 1972*/ \
 item_diesel_sweden_sj_v4, /*Year: 1972*/ \
 item_diesel_new_zealand_dx_class, /*Year: 1972*/ \
@@ -335,6 +337,7 @@ item_diesel_egypt_enr_te114e, /*Year: 1974*/ \
 item_diesel_zimbabwe_sorefame_de8, /*Year: 1974*/ \
 item_diesel_china_china_railways_dfh3, /*Year: 1976*/ \
 item_diesel_china_china_railways_df5, /*Year: 1976*/ \
+item_diesel_usa_ge_c30_7, /*Year: 1976*/ \
 item_diesel_tunisia_sncft_040_dj, /*Year: 1977*/ \
 item_diesel_australia_nsw_ptc_73, /*Year: 1977*/ \
 item_diesel_gabon_alsthom_ad30b, /*Year: 1978*/ \
@@ -355,6 +358,7 @@ item_diesel_finland_vr_dr16, /*Year: 1985*/ \
 item_diesel_poland_pkp_sp32, /*Year: 1985*/ \
 item_diesel_australia_v_line_n, /*Year: 1985*/ \
 item_diesel_ukraine_uz_2te126, /*Year: 1987*/ \
+item_diesel_usa_ge_dash_8_40c, /*Year: 1987*/ \
 item_diesel_russia_rzd_tep80, /*Year: 1988*/ \
 item_diesel_usa_metrolink_emd_f59ph, /*Year: 1988*/ \
 item_diesel_netherlands_ns_6400, /*Year: 1988*/ \
@@ -370,6 +374,8 @@ item_diesel_usa_amtrak_p42dc_genesis, /*Year: 1992*/ \
 item_diesel_saudi_arabia_saudi_railways_4000_emd_sd70acs, /*Year: 1992*/ \
 item_diesel_serbia_zs_621, /*Year: 1992*/ \
 item_diesel_china_china_railways_df11, /*Year: 1992*/ \
+item_diesel_usa_emd_sd70, /*Year: 1992*/ \
+item_diesel_usa_ge_dash_9_44cw, /*Year: 1993*/ \
 item_diesel_turkey_tcdd_dh7000, /*Year: 1994*/ \
 item_diesel_ireland_ie_201, /*Year: 1994*/ \
 item_diesel_australia_nsw_90, /*Year: 1994*/ \
@@ -388,6 +394,7 @@ item_diesel_australia_pacific_national_xr_xrb, /*Year: 2002*/ \
 item_diesel_china_mtr_8000, /*Year: 2003*/ \
 item_diesel_italy_act_d_200, /*Year: 2003*/ \
 item_diesel_canada_go_transit_mp40ph_3c, /*Year: 2003*/ \
+item_diesel_usa_ge_es44, /*Year: 2003*/ \
 item_diesel_ukraine_uz_tep150, /*Year: 2006*/ \
 item_diesel_spain_renfe_class_334, /*Year: 2006*/ \
 item_diesel_norway_cargonet_312, /*Year: 2006*/ \

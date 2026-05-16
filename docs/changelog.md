@@ -11,7 +11,15 @@
 - VEHICLES CHANGES:
   - Fixed a number of sprite misalignments #7
   - Small fixes here and there
-
+  - Added the following from Ragin's North America set (all also available in S-Am as they were exported at some stage)
+    - `GE Evo ES44` (Diesel)
+    - `EMD SD40` (Diesel)
+    - `EMD SD70` (Diesel)
+    - `GE C30-7` (Diesel)
+    - `GE Dash 8-40C` (Diesel)
+    - `GE Dash 9-44CW` (Diesel)
+    - `EMD GP40` (Diesel)
+  
 **3.3 RC3 [20260513]**
 
 - CODE CHANGES:

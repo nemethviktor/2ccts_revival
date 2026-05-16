@@ -1041,6 +1041,27 @@
 #include "src/Diesel/China_China_Railways_DF5_graphics.pnml"
 #include "src/Diesel/China_China_Railways_DF5_item.pnml"
 
+#include "src/Diesel/USA_GE_ES44_graphics.pnml"
+#include "src/Diesel/USA_GE_ES44_item.pnml"
+
+#include "src/Diesel/USA_EMD_SD40_graphics.pnml"
+#include "src/Diesel/USA_EMD_SD40_item.pnml"
+
+#include "src/Diesel/USA_EMD_SD70_graphics.pnml"
+#include "src/Diesel/USA_EMD_SD70_item.pnml"
+
+#include "src/Diesel/USA_GE_C30_7_graphics.pnml"
+#include "src/Diesel/USA_GE_C30_7_item.pnml"
+
+#include "src/Diesel/USA_GE_Dash_8_40C_graphics.pnml"
+#include "src/Diesel/USA_GE_Dash_8_40C_item.pnml"
+
+#include "src/Diesel/USA_GE_Dash_9_44CW_graphics.pnml"
+#include "src/Diesel/USA_GE_Dash_9_44CW_item.pnml"
+
+#include "src/Diesel/USA_EMD_GP40_graphics.pnml"
+#include "src/Diesel/USA_EMD_GP40_item.pnml"
+
 
 //// EMU
 #include "src/EMU/Netherlands_NS_Mat24_graphics.pnml"

@@ -41,7 +41,7 @@ item(FEAT_TRAINS, item_mu_wagon_gen6_boxcar_type1) {
 
         reliability_decay: 20;
         // cargodeftype: BOXCAR_TYPE1;
-        refittable_cargo_classes: bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_ARMOURED);
+        refittable_cargo_classes: bitmask(CC_REFRIGERATED);
         non_refittable_cargo_classes: bitmask(CC_NON_POTABLE);
         cargo_allow_refit: [];
         cargo_disallow_refit: [];

@@ -401,7 +401,7 @@ def get_cargo_definitions(row: pd.Series) -> str:
         ),
         "BOXCAR_TYPE1": (
             f"// cargodeftype: BOXCAR_TYPE1;\n{" "*8}"
-            f"refittable_cargo_classes: bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_ARMOURED);\n{" "*8}"
+            f"refittable_cargo_classes: bitmask(CC_REFRIGERATED);\n{" "*8}"
             f"non_refittable_cargo_classes: bitmask(CC_NON_POTABLE);\n{" "*8}"
             f"cargo_allow_refit: [];\n{" "*8}"
             f"cargo_disallow_refit: [];\n{" "*8}"
