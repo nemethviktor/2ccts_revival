@@ -2671,6 +2671,15 @@
 #include "src/Steam/China_China_Railways_RM_graphics.pnml"
 #include "src/Steam/China_China_Railways_RM_item.pnml"
 
+#include "src/Steam/Egypt_Kitson_2_2_2_graphics.pnml"
+#include "src/Steam/Egypt_Kitson_2_2_2_item.pnml"
+
+#include "src/Steam/Egypt_Class_7_2_6_0_graphics.pnml"
+#include "src/Steam/Egypt_Class_7_2_6_0_item.pnml"
+
+#include "src/Steam/Egypt_Class_4_0_6_0_graphics.pnml"
+#include "src/Steam/Egypt_Class_4_0_6_0_item.pnml"
+
 
 //// WAGONS_MAGLEV - GEN7M
 #include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Flatcar_graphics.pnml"

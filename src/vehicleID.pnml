@@ -231,6 +231,9 @@ item(FEAT_TRAINS, item_steam_Chile_La_Copiapo, 4139) {}
 item(FEAT_TRAINS, item_steam_Brazil_Sao_Paulo_Railway_13, 4140) {}
 item(FEAT_TRAINS, item_steam_China_China_Railways_JS, 4141) {}
 item(FEAT_TRAINS, item_steam_China_China_Railways_RM, 4142) {}
+item(FEAT_TRAINS, item_steam_Egypt_Kitson_2_2_2, 4143) {}
+item(FEAT_TRAINS, item_steam_Egypt_Class_7_2_6_0, 4144) {}
+item(FEAT_TRAINS, item_steam_Egypt_Class_4_0_6_0, 4145) {}
 
 // Diesel, available ID range: 5000-5999 (hex 0x1388..0x176F)
 #define ID_RANGE_DIESEL 0x1388..0x176F

@@ -811,8 +811,10 @@
 | ![Canadian Pacific 374](vehicle_graphics/str_steam_canada_canadian_pacific_374.png) | Canadian Pacific 374 | 1886 | 80 | 380 | Universal | 0 | STANDARD_NONE | North America |
 | ![PPR 35-tonner 4-6-0T](vehicle_graphics/str_steam_south_africa_ppr_35_tonner_4_6_0t.png) | PPR 35-tonner 4-6-0T | 1887 | 60 | 220 | Shunting | 0 | NARROW_NONE | Africa |
 | ![DHR B](vehicle_graphics/str_steam_india_dhr_b.png) | DHR B | 1889 | 25 | 100 | Shunting | 0 | NARROW_NONE | Asia |
+| ![ESR Class 1 Kitson 2-2-2](vehicle_graphics/str_steam_egypt_kitson_2_2_2.png) | ESR Class 1 Kitson 2-2-2 | 1889 | 95 | 550 | Universal | 0 | STANDARD_NONE | Africa |
 | ![RhB G 3/4](vehicle_graphics/str_steam_switzerland_rhb_g_3_4.png) | RhB G 3/4 | 1889 | 45 | 247 | Shunting | 0 | NARROW_NONE | Western Europe |
 | ![RENFE 040](vehicle_graphics/str_steam_spain_renfe_class_040.png) | RENFE 040 | 1891 | 55 | 750 | Shunting | 0 | BROAD_NONE | Southern Europe |
+| ![ESR Class 4 0-6-0](vehicle_graphics/str_steam_egypt_class_4_0_6_0.png) | ESR Class 4 0-6-0 | 1892 | 60 | 650 | Shunting | 0 | STANDARD_NONE | Africa |
 | ![NSWGR C32](vehicle_graphics/str_steam_australia_nsw_c32.png) | NSWGR C32 | 1892 | 100 | 720 | Universal | 0 | STANDARD_NONE | Oceania |
 | ![NSWGR Z26](vehicle_graphics/str_steam_australia_nsw_z26.png) | NSWGR Z26 | 1892 | 65 | 900 | Universal | 0 | STANDARD_NONE | Oceania |
 | ![Saxon IV K](vehicle_graphics/str_steam_germany_saxon_iv_k.png) | Saxon IV K | 1892 | 30 | 206 | Shunting | 0 | NARROW_NONE | Western Europe |
@@ -824,6 +826,7 @@
 | ![PRR D16](vehicle_graphics/str_steam_usa_prr_d16.png) | PRR D16 | 1895 | 128 | 850 | Express | 0 | STANDARD_NONE | North America |
 | ![NSWGR D50](vehicle_graphics/str_steam_australia_nsw_d50.png) | NSWGR D50 | 1896 | 65 | 1050 | Universal | 0 | STANDARD_NONE | Oceania |
 | ![KkStB 99](vehicle_graphics/str_steam_austria_kkstb_99.png) | KkStB 99 | 1897 | 50 | 320 | Shunting | 0 | STANDARD_NONE | Western Europe |
+| ![ESR Class 7 2-6-0](vehicle_graphics/str_steam_egypt_class_7_2_6_0.png) | ESR Class 7 2-6-0 | 1898 | 75 | 650 | Universal | 0 | STANDARD_NONE | Africa |
 | ![Caledonian Railway 439](vehicle_graphics/str_steam_uk_caledonian_railway_439.png) | Caledonian Railway 439 | 1900 | 80 | 540 | Universal | 0 | STANDARD_NONE | Northern Europe |
 | ![NS 8100](vehicle_graphics/str_steam_netherlands_ns_8100.png) | NS 8100 | 1901 | 45 | 290 | Shunting | 0 | STANDARD_NONE | Western Europe |
 | ![SBB A 3/5](vehicle_graphics/str_steam_switzerland_sbb_a_3_5.png) | SBB A 3/5 | 1902 | 100 | 1340 | Universal | 0 | STANDARD_NONE | Western Europe |

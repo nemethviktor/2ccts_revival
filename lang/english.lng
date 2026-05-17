@@ -1332,6 +1332,9 @@ str_steam_chile_la_copiapo                                        :La Copiapo (S
 str_steam_brazil_sao_paulo_railway_13                             :Sao Paulo Railway No. 13 and 14 (Steam)
 str_steam_china_china_railways_js                                 :China Railways JS (Steam)
 str_steam_china_china_railways_rm                                 :China Railways RM (Steam)
+str_steam_egypt_kitson_2_2_2                                      :ESR Class 1 Kitson 2-2-2 (Steam)
+str_steam_egypt_class_7_2_6_0                                     :ESR Class 7 2-6-0 (Steam)
+str_steam_egypt_class_4_0_6_0                                     :ESR Class 4 0-6-0 (Steam)
 
 # Steamrailbus
 str_rbs_austria_nolb_1                                            :NOLB 1 (Steam Railbus)

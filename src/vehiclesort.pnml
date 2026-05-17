@@ -124,10 +124,12 @@ item_steam_canada_canadian_pacific_374, /*Year: 1886*/ \
 item_steam_south_africa_ppr_35_tonner_4_6_0t, /*Year: 1887*/ \
 item_steam_switzerland_rhb_g_3_4, /*Year: 1889*/ \
 item_steam_india_dhr_b, /*Year: 1889*/ \
+item_steam_egypt_kitson_2_2_2, /*Year: 1889*/ \
 item_steam_spain_renfe_class_040, /*Year: 1891*/ \
 item_steam_germany_saxon_iv_k, /*Year: 1892*/ \
 item_steam_australia_nsw_c32, /*Year: 1892*/ \
 item_steam_australia_nsw_z26, /*Year: 1892*/ \
+item_steam_egypt_class_4_0_6_0, /*Year: 1892*/ \
 item_steam_germany_prussian_s_3, /*Year: 1893*/ \
 item_steam_japan_jnr_860, /*Year: 1893*/ \
 item_steam_norway_nsb_class_xxi, /*Year: 1894*/ \
@@ -136,6 +138,7 @@ item_steam_mozambique_beira_railway_br6_f2_falcon, /*Year: 1895*/ \
 item_steam_china_china_railways_h, /*Year: 1895*/ \
 item_steam_australia_nsw_d50, /*Year: 1896*/ \
 item_steam_austria_kkstb_99, /*Year: 1897*/ \
+item_steam_egypt_class_7_2_6_0, /*Year: 1898*/ \
 item_steam_uk_caledonian_railway_439, /*Year: 1900*/ \
 item_steam_netherlands_ns_8100, /*Year: 1901*/ \
 item_steam_switzerland_sbb_a_3_5, /*Year: 1902*/ \

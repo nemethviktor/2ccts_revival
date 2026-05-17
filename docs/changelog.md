@@ -11,6 +11,11 @@
 - VEHICLES CHANGES:
   - Fixed a number of sprite misalignments #7
   - Small fixes here and there
+  - Adds:
+    - `ESR Class 1 Kitson 2-2-2` (Steam)
+    - `ESR Class 7 2-6-0` (Steam)
+    - `ESR Class 4 0-6-0` (Steam)
+  
   - Added the following from Ragin's North America set (all also available in S-Am as they were exported at some stage)
     - `GE Evo ES44` (Diesel)
     - `EMD SD40` (Diesel)
