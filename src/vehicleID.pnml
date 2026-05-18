@@ -996,9 +996,6 @@ item(FEAT_TRAINS, item_singlemtro_Hungary_Budapest_1894_Stock, 14001) {}
 item(FEAT_TRAINS, item_singlemtro_USA_Chicago_L_Northwest_Elevated_1907_Stock, 14002) {}
 item(FEAT_TRAINS, item_singlemtro_Germany_Berlin_U_Bahn_C_II, 14003) {}
 
-// Single Unit Maglev, available ID range: 14500-14999 (hex 0x38A4..0x3A97)
-#define ID_RANGE_SMU 0x38A4..0x3A97
-
 // Maglev, available ID range: 15000-15499 (hex 0x3A98..0x3C8B)
 #define ID_RANGE_MAGLEV 0x3A98..0x3C8B
 item(FEAT_TRAINS, item_mglv_Germany_DB_182_ES64UM_Mutus, 15001) {}

@@ -978,8 +978,6 @@ item_singlemtro_hungary_budapest_1894_stock, /*Year: 1903*/ \
 item_singlemtro_usa_chicago_l_northwest_elevated_1907_stock, /*Year: 1907*/ \
 item_singlemtro_germany_berlin_u_bahn_c_ii, /*Year: 1929*/
 
-#define SORTING_SMU \
-
 #define SORTING_MAGLEV \
 item_mglv_germany_db_182_es64um_mutus, /*Year: 2005*/ \
 item_mglv_world_pegasus, /*Year: 2010*/
@@ -1034,7 +1032,6 @@ sort(FEAT_TRAINS, [
     SORTING_UNIT_WAGONS_MGLV 
     SORTING_UNIT_WAGONS_RAIL_CARGO 
     SORTING_SINGLEMETRO 
-    SORTING_SMU 
     SORTING_MAGLEV 
     SORTING_CARGODMU 
     SORTING_RBM 

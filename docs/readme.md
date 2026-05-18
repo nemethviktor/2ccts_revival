@@ -62,7 +62,7 @@ Run the `pybuild.bat`.
 
 ## Known Issues
 
-NA
+Wagon attach rules don't work. Basically everything is allowed.
 
 ## Help wanted/Contributing
 

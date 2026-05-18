@@ -1,201 +1,103 @@
 /*
- *  Copyright (C) 2017 Transportman // V. Nemeth 2026
- *  This file is part of the 2cc Trains In NML
- *  This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
-
+ * Copyright (C) 2017 Transportman // V. Nemeth 2026+
+ * This file is part of the 2cc Trains In NML
+ * This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
 */
 
-/*	This file is used to determine which vehicles can be attached to which vehicles.
- *  First the ID of the attaching vehicle is detected:
- *  Engines will always be allowed to attach
- *  Regular wagons and coaches will only be attached to regular engines
- *	Unit wagons are only allowed behind other Unit wagons and the front heads of MUs
- *  Maglev wagons can only be attached to Maglev Cargo
-*/
+// =========================================================================
+// 1. SUB-SWITCHES: EVALUATING WHAT WAGON IS IN THE HAND (PARENT CONTEXT)
+// =========================================================================
 
-/*
-* Regular wagons/coaches (that includes non-standard rail types too.)
-*/
+/// Filter for what can attach to traditional Steam/Diesel/Electric Locomotives
+switch(FEAT_TRAINS, PARENT, switch_attach_to_traditional, [STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
+	ID_RANGE_STEAM: 					CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
+	ID_RANGE_DIESEL: 					CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
+	ID_RANGE_ELECTRIC: 					CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
+	ID_RANGE_MAGLEV: 					CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
+	ID_RANGE_COACHES:          			CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
+    ID_RANGE_WAGONS:           			CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
 
-// Check vehicle ID of the vehicle in front of the wagon being attached
-// The offset for var 61 is determined by position_in_consist_from_end, which results in the last wagon before the vehicle being attached
-switch(FEAT_TRAINS, PARENT, switch_can_attach_wagon, [STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {	
-	ID_RANGE_RBS: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // Steam Railbus, allow if relevant railtype
-	ID_RANGE_RBD: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // Diesel Railbus, allow if relevant railtype
-	ID_RANGE_RBE: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // Electric Railbus, allow if relevant railtype
-	ID_RANGE_STEAM: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // Steam, allow if relevant railtype
-	ID_RANGE_DIESEL: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // Diesel, allow if relevant railtype
-	ID_RANGE_ELECTRIC: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // Electric, allow if relevant railtype
-	ID_RANGE_DMU: string(STR_CANNOT_ATTACH_WAGON_TO_MU); // DMU, disallow
-	ID_RANGE_EMU: string(STR_CANNOT_ATTACH_WAGON_TO_MU); // EMU, disallow
-	ID_RANGE_MULTIMETRO: string(STR_CANNOT_ATTACH_WAGON_TO_MU); // Multi Unit Metro, disallow
-	ID_RANGE_MMU: string(STR_CANNOT_ATTACH_WAGON_TO_MU); // Multi Unit Maglev, disallow
-	ID_RANGE_COACHES: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // Coaches, allow if relevant railtype
-	ID_RANGE_WAGONS: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // Wagons, allow if relevant railtype
-	ID_RANGE_WAGONS_MGLV: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // Maglev Wagons, allow if relevant railtype
-	ID_RANGE_UNIT_WAGONS_RAIL: string(STR_CANNOT_ATTACH_WAGON_TO_UNIT_WAGON); // Unit Wagons, disallow
-	ID_RANGE_UNIT_WAGONS_MGLV: string(STR_CANNOT_ATTACH_WAGON_TO_UNIT_WAGON); // Unit Wagons, disallow
-	ID_RANGE_SINGLEMETRO: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // Single Unit Metro, allow if relevant railtype
-	ID_RANGE_SMU: string(STR_CANNOT_ATTACH_WAGON_TO_MU); // SMU, disallow
-	ID_RANGE_CARGODMU: string(STR_CANNOT_ATTACH_WAGON_TO_MU); // CargoDMU, disallow
-	ID_RANGE_CARGOEMU: string(STR_CANNOT_ATTACH_WAGON_TO_MU); // CargoEMU, disallow
-	ID_RANGE_MAGLEV: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // Maglev (Engines), allow if relevant railtype
-	ID_RANGE_RBM: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // Maglev Railbus, allow if relevant railtype
-	CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
-}	
-	
-/*	
-* Unit Wagon	
-*/	
-	
-// Check vehicle ID of the vehicle in front of the unit wagon being attached	
-// The offset for var 61 is determined by position_in_consist_from_end, which results in the last wagon before the vehicle being attached	
-switch(FEAT_TRAINS, PARENT, switch_can_attach_unit_rail, [STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {	
-	ID_RANGE_RBS: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_ENGINE); // Steam Railbus, disallow
-	ID_RANGE_RBD: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_ENGINE); // Diesel Railbus, disallow
-	ID_RANGE_RBE: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_ENGINE); // Electric Railbus, disallow
-	ID_RANGE_STEAM: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_ENGINE); // Steam, disallow
-	ID_RANGE_DIESEL: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_ENGINE); // Diesel, disallow
-	ID_RANGE_ELECTRIC: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_ENGINE); // Electric, disallow
-	ID_RANGE_DMU: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // DMU, allow if relevant railtype
-	ID_RANGE_EMU: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // EMU, allow if relevant railtype
-	ID_RANGE_MULTIMETRO: CB_RESULT_ATTACH_DISALLOW; // Multi Unit Metro, disallow
-	ID_RANGE_MMU: CB_RESULT_ATTACH_DISALLOW; // Multi Unit Maglev, disallow
-	ID_RANGE_COACHES: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_WAGON); // Coaches, disallow
-	ID_RANGE_WAGONS: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_WAGON); // Wagons, disallow
-	ID_RANGE_WAGONS_MGLV: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_WAGON); // Maglev Wagons, disallow
-	ID_RANGE_UNIT_WAGONS_RAIL: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // Same type, allow if relevant railtype
-	ID_RANGE_UNIT_WAGONS_MTRO: CB_RESULT_ATTACH_DISALLOW; // Different type, disallow
-	ID_RANGE_UNIT_WAGONS_MGLV: CB_RESULT_ATTACH_DISALLOW; // Different type, disallow
-	ID_RANGE_UNIT_WAGONS_RAIL_CARGO: CB_RESULT_ATTACH_DISALLOW; // Different type, disallow
-	ID_RANGE_SINGLEMETRO: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_ENGINE); // Single Unit Metro, disallow
-	ID_RANGE_SMU: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // SMU, allow if relevant railtype
-	ID_RANGE_CARGODMU: string(STR_CANNOT_ATTACH_UNIT_WAGON_PASSENGER_TO_CARGO); // CargoDMU, disallow
-	ID_RANGE_CARGOEMU: string(STR_CANNOT_ATTACH_UNIT_WAGON_PASSENGER_TO_CARGO); // CargoEMU, disallow
-	ID_RANGE_MAGLEV: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_ENGINE); // Maglev (Engines), disallow
-	ID_RANGE_RBM: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_ENGINE); // Maglev Railbus, disallow
-	CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
-}	
-	
-/* Metro */	
-	
-// Check vehicle ID of the vehicle in front of the unit wagon being attached	
-// The offset for var 61 is determined by position_in_consist_from_end, which results in the last wagon before the vehicle being attached	
-switch(FEAT_TRAINS, PARENT, switch_can_attach_unit_mtro, [STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {	
-	ID_RANGE_RBS: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_ENGINE); // Steam Railbus, disallow
-	ID_RANGE_RBD: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_ENGINE); // Diesel Railbus, disallow
-	ID_RANGE_RBE: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_ENGINE); // Electric Railbus, disallow
-	ID_RANGE_STEAM: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_ENGINE); // Steam, disallow
-	ID_RANGE_DIESEL: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_ENGINE); // Diesel, disallow
-	ID_RANGE_ELECTRIC: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_ENGINE); // Electric, disallow
-	ID_RANGE_DMU: CB_RESULT_ATTACH_DISALLOW; // DMU, disallow
-	ID_RANGE_EMU: CB_RESULT_ATTACH_DISALLOW; // EMU, disallow
-	ID_RANGE_MULTIMETRO: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // Multi Unit Metro, allow if relevant railtype
-	ID_RANGE_MMU: CB_RESULT_ATTACH_DISALLOW; // Multi Unit Maglev, disallow
-	ID_RANGE_COACHES: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_WAGON); // Coaches, disallow
-	ID_RANGE_WAGONS: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_WAGON); // Wagons, disallow
-	ID_RANGE_WAGONS_MGLV: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_WAGON); // Maglev Wagons, disallow
-	ID_RANGE_UNIT_WAGONS_RAIL: CB_RESULT_ATTACH_DISALLOW; // Different type, disallow
-	ID_RANGE_UNIT_WAGONS_MTRO: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // Same type, allow if relevant railtype
-	ID_RANGE_UNIT_WAGONS_MGLV: CB_RESULT_ATTACH_DISALLOW; // Different type, disallow
-	ID_RANGE_UNIT_WAGONS_RAIL_CARGO: CB_RESULT_ATTACH_DISALLOW; // Different type, disallow
-	ID_RANGE_SINGLEMETRO: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_ENGINE); // Single Unit Metro, disallow
-	ID_RANGE_SMU: CB_RESULT_ATTACH_DISALLOW; // SMU, disallow
-	ID_RANGE_CARGODMU: string(STR_CANNOT_ATTACH_UNIT_WAGON_PASSENGER_TO_CARGO); // CargoDMU, disallow
-	ID_RANGE_CARGOEMU: string(STR_CANNOT_ATTACH_UNIT_WAGON_PASSENGER_TO_CARGO); // CargoEMU, disallow
-	ID_RANGE_MAGLEV: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_ENGINE); // Maglev (Engines), disallow
-	ID_RANGE_RBM: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_ENGINE); // Maglev Railbus, disallow
-	CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
-}	
-	
-/* Maglev */	
-	
-// Check vehicle ID of the vehicle in front of the unit wagon being attached	
-// The offset for var 61 is determined by position_in_consist_from_end, which results in the last wagon before the vehicle being attached	
-switch(FEAT_TRAINS, PARENT, switch_can_attach_unit_mglv, [STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {	
-	ID_RANGE_RBS: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_ENGINE); // Steam Railbus, disallow
-	ID_RANGE_RBD: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_ENGINE); // Diesel Railbus, disallow
-	ID_RANGE_RBE: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_ENGINE); // Electric Railbus, disallow
-	ID_RANGE_STEAM: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_ENGINE); // Steam, disallow
-	ID_RANGE_DIESEL: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_ENGINE); // Diesel, disallow
-	ID_RANGE_ELECTRIC: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_ENGINE); // Electric, disallow
-	ID_RANGE_DMU: CB_RESULT_ATTACH_DISALLOW; // DMU, disallow
-	ID_RANGE_EMU: CB_RESULT_ATTACH_DISALLOW; // EMU, disallow
-	ID_RANGE_MULTIMETRO: CB_RESULT_ATTACH_DISALLOW; // Multi Unit Metro, disallow
-	ID_RANGE_MMU: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // Multi Unit Maglev, allow if relevant railtype
-	ID_RANGE_COACHES: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_WAGON); // Coaches, disallow
-	ID_RANGE_WAGONS: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_WAGON); // Wagons, disallow
-	ID_RANGE_WAGONS_MGLV: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_WAGON); // Maglev Wagons, allow if relevant railtype
-	ID_RANGE_UNIT_WAGONS_RAIL: CB_RESULT_ATTACH_DISALLOW; // Different type, disallow
-	ID_RANGE_UNIT_WAGONS_MTRO: CB_RESULT_ATTACH_DISALLOW; // Different type, disallow
-	ID_RANGE_UNIT_WAGONS_MGLV: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // Same railtype, allow if relevant railtype
-	ID_RANGE_UNIT_WAGONS_RAIL_CARGO: CB_RESULT_ATTACH_DISALLOW; // Different type, disallow
-	ID_RANGE_SINGLEMETRO: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_ENGINE); // Single Unit Metro, disallow
-	ID_RANGE_SMU: CB_RESULT_ATTACH_DISALLOW; // SMU, disallow
-	ID_RANGE_CARGODMU: string(STR_CANNOT_ATTACH_UNIT_WAGON_PASSENGER_TO_CARGO); // CargoDMU, disallow
-	ID_RANGE_CARGOEMU: string(STR_CANNOT_ATTACH_UNIT_WAGON_PASSENGER_TO_CARGO); // CargoEMU, disallow
-	ID_RANGE_MAGLEV: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_ENGINE); // Maglev (Engines), disallow
-	ID_RANGE_RBM: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_ENGINE); // Maglev Railbus, disallow
-	CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
-}	
-	
-/* Rail cargo motor units */	
-	
-// Check vehicle ID of the vehicle in front of the unit wagon being attached	
-// The offset for var 61 is determined by position_in_consist_from_end, which results in the last wagon before the vehicle being attached	
-switch(FEAT_TRAINS, PARENT, switch_can_attach_unit_rail_cargo, [STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {	
-	ID_RANGE_RBS: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_ENGINE); // Steam Railbus, disallow
-	ID_RANGE_RBD: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_ENGINE); // Diesel Railbus, disallow
-	ID_RANGE_RBE: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_ENGINE); // Electric Railbus, disallow
-	ID_RANGE_STEAM: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_ENGINE); // Steam, disallow
-	ID_RANGE_DIESEL: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_ENGINE); // Diesel, disallow
-	ID_RANGE_ELECTRIC: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_ENGINE); // Electric, disallow
-	ID_RANGE_DMU: string(STR_CANNOT_ATTACH_UNIT_WAGON_CARGO_TO_PASSENGER); // DMU, disallow
-	ID_RANGE_EMU: string(STR_CANNOT_ATTACH_UNIT_WAGON_CARGO_TO_PASSENGER); // EMU, disallow
-	ID_RANGE_MULTIMETRO: CB_RESULT_ATTACH_DISALLOW; // Multi Unit Metro, disallow
-	ID_RANGE_MMU: CB_RESULT_ATTACH_DISALLOW; // Multi Unit Maglev, disallow
-	ID_RANGE_COACHES: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_WAGON); // Coaches, disallow
-	ID_RANGE_WAGONS: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_WAGON); // Wagons, disallow
-	ID_RANGE_WAGONS_MGLV: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_WAGON); // Maglev Wagons, disallow
-	ID_RANGE_UNIT_WAGONS_RAIL: CB_RESULT_ATTACH_DISALLOW; // Differnt type, disallow
-	ID_RANGE_UNIT_WAGONS_MTRO: CB_RESULT_ATTACH_DISALLOW; // Different type, disallow
-	ID_RANGE_UNIT_WAGONS_MGLV: CB_RESULT_ATTACH_DISALLOW; // Different type, disallow
-	ID_RANGE_UNIT_WAGONS_RAIL_CARGO: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // Same type, allow if relevant railtype
-	ID_RANGE_SINGLEMETRO: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_ENGINE); // Single Unit Metro, disallow
-	ID_RANGE_SMU: string(STR_CANNOT_ATTACH_UNIT_WAGON_CARGO_TO_PASSENGER); // SMU, disallow
-	ID_RANGE_CARGODMU: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // CargoDMU, allow if relevant railtype
-	ID_RANGE_CARGOEMU: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // CargoEMU, allow if relevant railtype
-	ID_RANGE_MAGLEV: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_ENGINE); // Maglev (Engines), disallow
-	ID_RANGE_RBM: string(STR_CANNOT_ATTACH_UNIT_WAGON_TO_ENGINE); // Maglev Railbus, disallow
-	CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
-}	
+    CB_RESULT_ATTACH_DISALLOW; 
+}
 
-	
-/*	Check vehicle ID to determine which case we have. 
- *	Engines are always allowed
- *	Wagons depend on vehicle in front of it
-*/	
-switch(FEAT_TRAINS, SELF, switch_can_attach_vehicle, vehicle_type_id) {	
-	ID_RANGE_RBS: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // Steam Railbus, always allow if relevant railtype
-	ID_RANGE_RBD: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // Diesel Railbus, always allow if relevant railtype
-	ID_RANGE_RBE: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // Electric Railbus, always allow if relevant railtype
-	ID_RANGE_STEAM: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // Steam, always allow if relevant railtype
-	ID_RANGE_DIESEL: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // Diesel, always allow if relevant railtype
-	ID_RANGE_ELECTRIC: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // Electric, always allow if relevant railtype
-	ID_RANGE_DMU: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // DMU, always allow if relevant railtype
-	ID_RANGE_EMU: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // EMU, always allow if relevant railtype
-	ID_RANGE_MULTIMETRO: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // Multi Unit Metro, always allow if relevant railtype
-	ID_RANGE_MMU: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // Multi Unit Maglev, always allow if relevant railtype
-	ID_RANGE_COACHES: switch_can_attach_wagon; // Coaches, go to Regular-switch
-	ID_RANGE_WAGONS: switch_can_attach_wagon; // Wagons, go to Regular-switch
-	ID_RANGE_WAGONS_MGLV: switch_can_attach_wagon; // Maglev Wagons, go to Regular-switch
-	ID_RANGE_UNIT_WAGONS_RAIL: switch_can_attach_unit_rail; // Unit Wagons rail, go to Unit-switch rail
-	ID_RANGE_UNIT_WAGONS_MTRO: switch_can_attach_unit_mtro; // Unit Wagons metro, go to Unit-switch metro
-	ID_RANGE_UNIT_WAGONS_MGLV: switch_can_attach_unit_mglv; // Unit Wagons maglev, go to Unit-switch maglev
-	ID_RANGE_UNIT_WAGONS_RAIL_CARGO: switch_can_attach_unit_rail_cargo; // Unit Wagons rail cargo, go to Unit-switch rail cargo
-	ID_RANGE_SINGLEMETRO: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // Single Unit Metro, always allow if relevant railtype
-	ID_RANGE_SMU: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // SMU, always allow if relevant railtype
-	ID_RANGE_MAGLEV: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // Maglev (Engines), always allow if relevant railtype
-	ID_RANGE_RBM: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES; // Maglev Railbus, always allow if relevant railtype
-	CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
-}	
+/// Filter for what can attach behind passenger DMUs / EMUs
+switch(FEAT_TRAINS, PARENT, switch_attach_to_passenger_mu, [STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
+	ID_RANGE_UNIT_WAGONS_RAIL: 			CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
+
+    CB_RESULT_ATTACH_DISALLOW; 
+}
+
+/// Filter for what can attach behind Metro consists
+switch(FEAT_TRAINS, PARENT, switch_attach_to_metro, [STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
+	ID_RANGE_UNIT_WAGONS_MTRO: 			CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
+
+    CB_RESULT_ATTACH_DISALLOW; 
+}
+
+/// Filter for what can attach behind Maglev MU sets (e.g., Chimaera)
+switch(FEAT_TRAINS, PARENT, switch_attach_to_maglev_mu, [STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
+	ID_RANGE_UNIT_WAGONS_MGLV: 			CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
+
+    CB_RESULT_ATTACH_DISALLOW;
+}
+
+/// Filter for what can attach behind standard Maglev engines
+switch(FEAT_TRAINS, PARENT, switch_attach_to_maglev_loco, [STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
+    ID_RANGE_MAGLEV:           CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
+	ID_RANGE_COACHES_MGLV:     CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
+    ID_RANGE_WAGONS_MGLV:      CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
+    CB_RESULT_ATTACH_DISALLOW;
+}
+
+/// Filter for what can attach behind high-speed Freight MUs (CargoSprinter/M250)
+switch(FEAT_TRAINS, PARENT, switch_attach_to_cargo_mu, [STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
+    ID_RANGE_UNIT_WAGONS_RAIL_CARGO: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
+    CB_RESULT_ATTACH_DISALLOW;
+}
+
+
+// =========================================================================
+// 2. MASTER ENTRY SWITCH: EVALUATING THE TRAIN ON THE RAILS (SELF CONTEXT)
+// =========================================================================
+
+switch(FEAT_TRAINS, SELF, switch_can_attach_vehicle, vehicle_type_id) {
+    // If the trailing vehicle on the tracks is a standard locomotive or standard wagon:
+    ID_RANGE_STEAM:            switch_attach_to_traditional;
+    ID_RANGE_DIESEL:           switch_attach_to_traditional;
+    ID_RANGE_ELECTRIC:         switch_attach_to_traditional;
+    ID_RANGE_COACHES:          switch_attach_to_traditional;
+    ID_RANGE_WAGONS:           switch_attach_to_traditional;
+
+    // If the trailing vehicle on the tracks is a Passenger MU:
+    ID_RANGE_DMU:              switch_attach_to_passenger_mu;
+    ID_RANGE_EMU:              switch_attach_to_passenger_mu;
+    ID_RANGE_UNIT_WAGONS_RAIL: switch_attach_to_passenger_mu;
+
+    // If the trailing vehicle on the tracks is a Metro set:
+    ID_RANGE_MULTIMETRO:       switch_attach_to_metro;
+    ID_RANGE_UNIT_WAGONS_MTRO: switch_attach_to_metro;
+
+    // If the trailing vehicle on the tracks is a Maglev Engine or Maglev Coach/Wagon:
+    ID_RANGE_MAGLEV:           switch_attach_to_maglev_loco;
+    ID_RANGE_COACHES_MGLV:     switch_attach_to_maglev_loco;
+    ID_RANGE_WAGONS_MGLV:      switch_attach_to_maglev_loco;
+
+    // If the trailing vehicle on the tracks is a Maglev MU:
+    ID_RANGE_MMU:              switch_attach_to_maglev_mu;
+    ID_RANGE_UNIT_WAGONS_MGLV: switch_attach_to_maglev_mu;
+
+    // If the trailing vehicle on the tracks is a Cargo MU:
+    ID_RANGE_CARGODMU:               switch_attach_to_cargo_mu;
+    ID_RANGE_CARGOEMU:               switch_attach_to_cargo_mu;
+    ID_RANGE_UNIT_WAGONS_RAIL_CARGO: switch_attach_to_cargo_mu;
+
+    // Direct Locomotive Stacking Rules (If dropping a standalone engine onto another engine)
+    ID_RANGE_RBS:         CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
+    ID_RANGE_RBD:         CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
+    ID_RANGE_RBE:         CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
+    ID_RANGE_RBM:         CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
+    ID_RANGE_SINGLEMETRO: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
+
+    // Default fallback
+    CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
+}

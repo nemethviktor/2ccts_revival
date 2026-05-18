@@ -385,7 +385,7 @@
 | ![Multiple Unit Cargo Wagon](vehicle_graphics/str_mu_mu_cargo_wagon_powered.png) | Multiple Unit Cargo Wagon | 1992 | 0 | 0 | Powered/Unpowered Sundry | 1 | STANDARD_NONE, NARROW_NONE, BROAD_NONE | Africa, Asia, Southern Europe, Eastern Europe, Western Europe, Northern Europe, North America, South America, Oceania |
 | ![Multiple Unit Cargo Wagon](vehicle_graphics/str_mu_mu_cargo_wagon_unpowered.png) | Multiple Unit Cargo Wagon | 1992 | 0 | 0 | Powered/Unpowered Sundry | 1 | STANDARD_NONE, NARROW_OHLE, NARROW_NONE, BROAD_OHLE, BROAD_NONE | Africa, Asia, Southern Europe, Eastern Europe, Western Europe, Northern Europe, North America, South America, Oceania |
 | ![TrainLink Xplorer](vehicle_graphics/str_dmu_australia_nswgr_xplorer.png) | TrainLink Xplorer | 1993 | 145 | 1028 | Commuter/Urban | 76 | STANDARD_NONE | Oceania |
-| ![DB 691 'CargoSprinter'](vehicle_graphics/str_cargodmu_germany_db_691_cargosprinter.png) | DB 691 'CargoSprinter' | 1996 | 120 | 710 | Freight | 40 | STANDARD_NONE | Western Europe |
+| ![DB 691 'CargoSprinter'](vehicle_graphics/str_cargodmu_germany_db_691_cargosprinter.png) | DB 691 'CargoSprinter' | 1996 | 120 | 710 | Freight | 80 | STANDARD_NONE | Western Europe |
 | ![BR 168](vehicle_graphics/str_dmu_uk_br_168.png) | BR 168 | 1997 | 160 | 844 | Express Passenger | 136 | STANDARD_NONE | Northern Europe |
 | ![RENFE 594 TRD](vehicle_graphics/str_dmu_spain_renfe_594_trd.png) | RENFE 594 TRD | 1997 | 160 | 3200 | Express Passenger | 84 | BROAD_NONE | Southern Europe |
 | ![DB 612 'Regio Swinger'](vehicle_graphics/str_dmu_germany_db_612_regio_swinger.png) | DB 612 'Regio Swinger' | 1998 | 160 | 1520 | Express Passenger | 146 | STANDARD_NONE | Western Europe |
@@ -658,7 +658,7 @@
 | ![DB 403 'ICE3'](vehicle_graphics/str_emu_germany_db_403_ice_3.png) | DB 403 'ICE3' | 2000 | 328 | 10728 | Ultra-High-Speed (Pax) | 110 | STANDARD_15KV | Western Europe |
 | ![MTR SP1900](vehicle_graphics/str_emu_hong_kong_mtr_sp1900.png) | MTR SP1900 | 2001 | 130 | 5149 | Commuter/Urban | 500 | STANDARD_25KV | Asia |
 | ![RENFE 120](vehicle_graphics/str_emu_spain_renfe_120.png) | RENFE 120 | 2001 | 250 | 2680 | Express Passenger | 120 | STANDARD_OHLE, BROAD_OHLE | Southern Europe |
-| ![JR Freight M250](vehicle_graphics/str_cargoemu_japan_jr_freight_m250.png) | JR Freight M250 | 2003 | 140 | 2360 | Freight | 60 | NARROW_1500V | Asia |
+| ![JR Freight M250](vehicle_graphics/str_cargoemu_japan_jr_freight_m250.png) | JR Freight M250 | 2003 | 140 | 2360 | Freight | 120 | NARROW_1500V | Asia |
 | ![Melbourne X'Trapolis 100](vehicle_graphics/str_emu_australia_melbourne_xtrapolis_100.png) | Melbourne X'Trapolis 100 | 2003 | 130 | 1930 | Commuter/Urban | 144 | BROAD_1500V | Oceania |
 | ![SBB RABe 523 'Flirt'](vehicle_graphics/str_emu_switzerland_sbb_rabe_523_flirt.png) | SBB RABe 523 'Flirt' | 2004 | 160 | 2682 | Express Passenger | 100 | STANDARD_15KV | Western Europe |
 | ![BDZ 10 'Desiro'](vehicle_graphics/str_emu_bulgaria_bdz_10_desiro.png) | BDZ 10 'Desiro' | 2005 | 120 | 1740 | Commuter/Urban | 190 | STANDARD_25KV | Eastern Europe |
