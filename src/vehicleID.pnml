@@ -794,6 +794,7 @@ item(FEAT_TRAINS, item_mtro_Hungary_Budapest_Ganz_Hunslet_G2, 9066) {}
 #define ID_RANGE_MMU 0x2710..0x2903
 item(FEAT_TRAINS, item_mmu_China_Transrapid, 10000) {}
 item(FEAT_TRAINS, item_mmu_Japan_MLX01_901, 10001) {}
+item(FEAT_TRAINS, item_mmu_World_Chimaera, 10002) {}
 
 // Coaches, available ID range: 11000-11999 (hex 0x2AF8..0x2EDF)
 #define ID_RANGE_COACHES 0x2AF8..0x2EDF
@@ -1001,6 +1002,7 @@ item(FEAT_TRAINS, item_singlemtro_Germany_Berlin_U_Bahn_C_II, 14003) {}
 // Maglev, available ID range: 15000-15499 (hex 0x3A98..0x3C8B)
 #define ID_RANGE_MAGLEV 0x3A98..0x3C8B
 item(FEAT_TRAINS, item_mglv_Germany_DB_182_ES64UM_Mutus, 15001) {}
+item(FEAT_TRAINS, item_mglv_World_Pegasus, 15002) {}
 
 // Cargo DMU, available ID range: 15500-15999 (hex 0x3C8C..0x3E7F)
 #define ID_RANGE_CARGODMU 0x3C8C..0x3E7F
@@ -1029,7 +1031,12 @@ item(FEAT_TRAINS, item_mglv_Wagon_Gen7M_Silo_Type2, 18014) {}
 item(FEAT_TRAINS, item_mglv_Wagon_Gen7M_Hopper_Type2, 18015) {}
 item(FEAT_TRAINS, item_mglv_Wagon_Gen7M_Livestock_Van, 18016) {}
 
-// Cargo EMU, available ID range: 19000-19500 (hex 0x4A38..0x4C2C)
-#define ID_RANGE_CARGOEMU 0x4A38..0x4C2C
+// Cargo EMU, available ID range: 19000-19499 (hex 0x4A38..0x4C2B)
+#define ID_RANGE_CARGOEMU 0x4A38..0x4C2B
 item(FEAT_TRAINS, item_cargoemu_Japan_JR_Freight_M250, 19000) {}
+
+// Coaches (Maglev), available ID range: 19500-19999 (hex 0x4C2C..0x4E1F)
+#define ID_RANGE_COACHES_MGLV 0x4C2C..0x4E1F
+item(FEAT_TRAINS, item_mglv_coach_Gen7M_Chimaera_Passenger_Coach, 19500) {}
+item(FEAT_TRAINS, item_mglv_coach_Gen7M_Chimaera_Mail_Coach, 19501) {}
 

@@ -348,6 +348,14 @@
 #include "src/Coaches/Gen6/Coach_Gen6_Super_Voyager_Coach_item.pnml"
 
 
+//// COACHES_MAGLEV - GEN7M
+#include "src/Coaches_Maglev/Gen7M/coach_Gen7M_Chimaera_Passenger_Coach_graphics.pnml"
+#include "src/Coaches_Maglev/Gen7M/coach_Gen7M_Chimaera_Passenger_Coach_item.pnml"
+
+#include "src/Coaches_Maglev/Gen7M/coach_Gen7M_Chimaera_Mail_Coach_graphics.pnml"
+#include "src/Coaches_Maglev/Gen7M/coach_Gen7M_Chimaera_Mail_Coach_item.pnml"
+
+
 //// DMU
 #include "src/DMU/Denmark_DSB_IC4_graphics.pnml"
 #include "src/DMU/Denmark_DSB_IC4_item.pnml"
@@ -1968,10 +1976,16 @@
 #include "src/MMU/Japan_MLX01_901_graphics.pnml"
 #include "src/MMU/Japan_MLX01_901_item.pnml"
 
+#include "src/MMU/World_Chimaera_graphics.pnml"
+#include "src/MMU/World_Chimaera_item.pnml"
+
 
 //// MAGLEV
 #include "src/Maglev/Germany_DB_182_ES64UM_Mutus_graphics.pnml"
 #include "src/Maglev/Germany_DB_182_ES64UM_Mutus_item.pnml"
+
+#include "src/Maglev/World_Pegasus_graphics.pnml"
+#include "src/Maglev/World_Pegasus_item.pnml"
 
 
 //// RAILBUS - RAILBUS_DIESEL

@@ -43,6 +43,7 @@ For **Wagons**, it's a little chaotic because there are 'simple' (`TPL_01F`) one
 - Service Cars -> `TPL_04R`
 - ~DC/Push-Pull~ Unused -> `TPL_04S`
 - Livestock _only_ wagon -> `TPL_04T`
+- Basic Coach Push-Pull and also not Push-Pull -> `TPL_04U`
 
 Basically don't create new types of Wagons. At the moment Gen 6/7 uses G5 graphics, it'd be awesome if someone updated those but don't reinvent the wheel please.
 

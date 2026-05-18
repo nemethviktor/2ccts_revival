@@ -4,7 +4,7 @@
 
 
 // Template: TPL_03C.
-// Data from: nan
+// Data from: https://www.steamlocomotive.com/locobase.php?country=Egypt&wheel=0-6-0&railroad=es
 
 item(FEAT_TRAINS, item_steam_egypt_class_4_0_6_0) {
     property {

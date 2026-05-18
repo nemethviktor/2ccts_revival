@@ -95,6 +95,8 @@
 | ![Modern Commuter Coach](vehicle_graphics/str_mu_coach_gen5_modern_commuter_coach.png) | Modern Commuter Coach | 2000 | 200 | 0 | Coach (Express) | 220 | STANDARD_NONE, NARROW_NONE, BROAD_NONE | Africa, Asia, Southern Europe, Eastern Europe, Western Europe, Northern Europe, North America, South America, Oceania |
 | ![Modern Double Decker Coach ](vehicle_graphics/str_mu_coach_gen5_modern_double_decker_coach.png) | Modern Double Decker Coach  | 2000 | 160 | 0 | Coach (Express) | 255 | STANDARD_NONE, NARROW_NONE, BROAD_NONE | Africa, Asia, Southern Europe, Eastern Europe, Western Europe, Northern Europe, North America, South America, Oceania |
 | ![Modern Regional Coach](vehicle_graphics/str_mu_coach_gen5_modern_regional_coach.png) | Modern Regional Coach | 2000 | 200 | 0 | Coach (Express) | 160 | STANDARD_NONE, NARROW_NONE, BROAD_NONE | Africa, Asia, Southern Europe, Eastern Europe, Western Europe, Northern Europe, North America, South America, Oceania |
+| ![Chimaera Mail Coach](vehicle_graphics/str_mglv_coach_gen7m_chimaera_mail_coach.png) | Chimaera Mail Coach | 2010 | 643 | 0 | Coach (Mail) | 150 | MGLV | Africa, Asia, Southern Europe, Eastern Europe, Western Europe, Northern Europe, North America, South America, Oceania |
+| ![Chimaera Passenger Coach](vehicle_graphics/str_mglv_coach_gen7m_chimaera_passenger_coach.png) | Chimaera Passenger Coach | 2010 | 643 | 0 | Coach (HS) | 150 | MGLV | Africa, Asia, Southern Europe, Eastern Europe, Western Europe, Northern Europe, North America, South America, Oceania |
 | ![Grand Regio Coach](vehicle_graphics/str_mu_coach_gen6_grand_regio_coach.png) | Grand Regio Coach | 2030 | 230 | 0 | Coach (HS) | 255 | STANDARD_NONE, NARROW_NONE, BROAD_NONE | Africa, Asia, Southern Europe, Eastern Europe, Western Europe, Northern Europe, North America, South America, Oceania |
 | ![Grand Voyager Coach](vehicle_graphics/str_mu_coach_gen6_grand_voyager_coach.png) | Grand Voyager Coach | 2030 | 350 | 0 | Coach (HS) | 64 | STANDARD_NONE, NARROW_NONE, BROAD_NONE | Africa, Asia, Southern Europe, Eastern Europe, Western Europe, Northern Europe, North America, South America, Oceania |
 | ![Metropolis Coach](vehicle_graphics/str_mu_coach_gen6_metropolis_coach.png) | Metropolis Coach | 2030 | 140 | 0 | Coach (Commuter) | 255 | STANDARD_NONE, NARROW_NONE, BROAD_NONE | Africa, Asia, Southern Europe, Eastern Europe, Western Europe, Northern Europe, North America, South America, Oceania |
@@ -682,6 +684,7 @@
 | Graphics | Name | Intro | Speed | Power | Role | Cap | Track Types | Regions |
 | :---: | :--- | :---: | :---: | :---: | :--- | :---: | :--- | :--- |
 | ![DB 182 ES64UM 'Mutus'](vehicle_graphics/str_mglv_germany_db_182_es64um_mutus.png) | DB 182 ES64UM 'Mutus' | 2005 | 250 | 18875 | Express | 0 | MGLV | Western Europe |
+| ![Pegasus](vehicle_graphics/str_mglv_world_pegasus.png) | Pegasus | 2010 | 480 | 15000 | Ultra-High-Speed (Universal) | 0 | MGLV | Africa, Asia, Southern Europe, Eastern Europe, Western Europe, Northern Europe, North America, South America, Oceania |
 
 ## MAGLEVRAILBUS
 
@@ -776,6 +779,7 @@
 | ![Maglev Unit Wagon](vehicle_graphics/str_mglv_maglev_wagon_unpowered.png) | Maglev Unit Wagon | 2000 | 0 | 0 | Powered/Unpowered Sundry | 1 | MGLV | Africa, Asia, Southern Europe, Eastern Europe, Western Europe, Northern Europe, North America, South America, Oceania |
 | ![Shanghai Transrapid](vehicle_graphics/str_mmu_china_transrapid.png) | Shanghai Transrapid | 2004 | 433 | 13450 | Ultra-High-Speed (Pax) | 100 | MGLV | Asia |
 | ![JR MLX01-901](vehicle_graphics/str_mmu_japan_mlx01_901.png) | JR MLX01-901 | 2025 | 500 | 20115 | Ultra-High-Speed (Pax) | 38 | MGLV | Asia |
+| ![Chimaera](vehicle_graphics/str_mmu_world_chimaera.png) | Chimaera | 2030 | 643 | 20000 | Ultra-High-Speed (Pax) | 300 | MGLV | Africa, Asia, Southern Europe, Eastern Europe, Western Europe, Northern Europe, North America, South America, Oceania |
 
 ## STEAMENGINE
 

@@ -782,7 +782,8 @@ item_mtro_greece_thessaloniki_2014, /*Year: 2024*/
 
 #define SORTING_MMU \
 item_mmu_china_transrapid, /*Year: 2004*/ \
-item_mmu_japan_mlx01_901, /*Year: 2025*/
+item_mmu_japan_mlx01_901, /*Year: 2025*/ \
+item_mmu_world_chimaera, /*Year: 2030*/
 
 #define SORTING_COACHES \
 item_mu_coach_gen1_wooden_2_axle_compartment_coach, /*Year: 1830*/ \
@@ -980,7 +981,8 @@ item_singlemtro_germany_berlin_u_bahn_c_ii, /*Year: 1929*/
 #define SORTING_SMU \
 
 #define SORTING_MAGLEV \
-item_mglv_germany_db_182_es64um_mutus, /*Year: 2005*/
+item_mglv_germany_db_182_es64um_mutus, /*Year: 2005*/ \
+item_mglv_world_pegasus, /*Year: 2010*/
 
 #define SORTING_CARGODMU \
 item_cargodmu_germany_db_691_cargosprinter, /*Year: 1996*/
@@ -1009,6 +1011,10 @@ item_mglv_wagon_gen7m_hopper_type2, /*Year: 2020*/
 #define SORTING_CARGOEMU \
 item_cargoemu_japan_jr_freight_m250, /*Year: 2003*/
 
+#define SORTING_COACHES_MGLV \
+item_mglv_coach_gen7m_chimaera_passenger_coach, /*Year: 2010*/ \
+item_mglv_coach_gen7m_chimaera_mail_coach, /*Year: 2010*/
+
 // Combine all categories into the final sort list
 sort(FEAT_TRAINS, [
     SORTING_RBS 
@@ -1033,5 +1039,6 @@ sort(FEAT_TRAINS, [
     SORTING_CARGODMU 
     SORTING_RBM 
     SORTING_WAGONS_MGLV 
-    SORTING_CARGOEMU
+    SORTING_CARGOEMU 
+    SORTING_COACHES_MGLV
 ]);

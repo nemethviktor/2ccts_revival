@@ -546,6 +546,8 @@ str_mu_coach_gen6_super_voyager_coach                             :Super Reeswag
 # str_mu_coach_gen2_nzr_50ft_coach                                  : not translated
 # str_mu_coach_gen2_nzr_50ft_mail_coach                             : not translated
 # str_mu_coach_gen1_nsw_ka_tram_car                                 : not translated
+# str_mglv_coach_gen7m_chimaera_passenger_coach                     : not translated
+# str_mglv_coach_gen7m_chimaera_mail_coach                          : not translated
 
 # Dieselengine
 str_diesel_germany_db_kof_ii                                      :DB Kof II / DB 322 (Diesel)
@@ -1111,6 +1113,7 @@ str_emu_europe_sureot                                             :Sureot (EMU, 
 
 # Maglevengine
 # str_mglv_germany_db_182_es64um_mutus                              : not translated
+# str_mglv_world_pegasus                                            : not translated
 
 # Maglevrailbus
 str_rbm_world_turbobus                                            :Turbobus (Maglev Railbus)
@@ -1191,6 +1194,7 @@ str_singlemtro_germany_berlin_u_bahn_c_ii                         :Berlin U-Bahn
 # Mmu
 str_mmu_china_transrapid                                          :Shanghai Transrapid (MMU)
 str_mmu_japan_mlx01_901                                           :JR MLX01-901 (MMU)
+# str_mmu_world_chimaera                                            : not translated
 str_mglv_maglev_wagon_unpowered                                   :Maglev Waggon (Unpowered)
 str_mglv_maglev_wagon_powered                                     :Maglev Waggon (Powered)
 
