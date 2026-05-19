@@ -1,5 +1,6 @@
 @echo off
 cls
+del 2ccts_revival.grf
 python ./tools/custom_tags_generator.py
 python ./tools/generate_badgetable.py
 python ./tools/generate_languages.py

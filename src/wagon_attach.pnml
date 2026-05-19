@@ -22,21 +22,25 @@ switch(FEAT_TRAINS, PARENT, switch_attach_to_traditional, [STORE_TEMP(position_i
 
 /// Filter for what can attach behind passenger DMUs / EMUs
 switch(FEAT_TRAINS, PARENT, switch_attach_to_passenger_mu, [STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
-	ID_RANGE_UNIT_WAGONS_RAIL: 			CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
+	ID_RANGE_DMU: 		                CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
+    ID_RANGE_EMU: 		                CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
+    ID_RANGE_UNIT_WAGONS_RAIL: 			CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
 
     CB_RESULT_ATTACH_DISALLOW; 
 }
 
 /// Filter for what can attach behind Metro consists
 switch(FEAT_TRAINS, PARENT, switch_attach_to_metro, [STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
-	ID_RANGE_UNIT_WAGONS_MTRO: 			CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
+	ID_RANGE_MULTIMETRO: 				CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
+    ID_RANGE_UNIT_WAGONS_MTRO: 			CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
 
     CB_RESULT_ATTACH_DISALLOW; 
 }
 
 /// Filter for what can attach behind Maglev MU sets (e.g., Chimaera)
 switch(FEAT_TRAINS, PARENT, switch_attach_to_maglev_mu, [STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
-	ID_RANGE_UNIT_WAGONS_MGLV: 			CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
+	ID_RANGE_MMU: 						CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
+    ID_RANGE_UNIT_WAGONS_MGLV: 			CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
 
     CB_RESULT_ATTACH_DISALLOW;
 }

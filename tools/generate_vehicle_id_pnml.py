@@ -60,7 +60,7 @@ def generate_vehicle_id_pnml():
     # Drop NaNs, lowercase the ITEM column, and map it
     id_map = {
         int(row['VEHID_ID']): {
-            'name': row['ITEM'],
+            'name': row['ITEM'].lower(),
             'exclude': is_true(row.get('EXCLUDE_READONLY', False))
         }
         for _, row in df_control.iterrows() if pd.notnull(row['VEHID_ID'])
@@ -90,6 +90,8 @@ def generate_vehicle_id_pnml():
                 else:
                     content.append(
                         f"item(FEAT_TRAINS, {veh_info['name']}, {current_id}) {{}}\n")
+            else:
+                content.append(f"// {current_id} free\n")
 
         content.append("\n")
 
