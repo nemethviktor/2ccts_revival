@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03A.
+// Template: TPL_03C.
 // Data from: https://loco-info.com/view.aspx?id=17891&cookies=decline
 
 item(FEAT_TRAINS, item_steam_chile_anglo_chilean_nitrate_no_97) {
@@ -48,13 +48,13 @@ item(FEAT_TRAINS, item_steam_chile_anglo_chilean_nitrate_no_97) {
     }
     graphics {
         purchase: spriteset_steam_chile_anglo_chilean_nitrate_no_97_purchase;
-        visual_effect_and_powered: switch_steam_chile_anglo_chilean_nitrate_no_97_visual_effect;
-        length: switch_steam_chile_anglo_chilean_nitrate_no_97_length;
-        articulated_part: switch_steam_chile_anglo_chilean_nitrate_no_97_articulated;
+        // no 'visual_effect' or 'visual_effect_and_powered'
+        // no 'length'
+        // no 'articulated_part'
         can_attach_wagon: switch_can_attach_vehicle;
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
         // PURCHASETEXT_SWITCH_CALL // this is actually blank
-        default: switch_steam_chile_anglo_chilean_nitrate_no_97_position;
+        default: switch_steam_chile_anglo_chilean_nitrate_no_97_animation;
     }
 }
