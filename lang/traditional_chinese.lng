@@ -732,6 +732,7 @@ str_diesel_usa_up_emd_dda40x                                      :聯合太平�
 # str_diesel_usa_ge_dash_8_40c                                      : not translated
 # str_diesel_usa_ge_dash_9_44cw                                     : not translated
 # str_diesel_usa_emd_gp40                                           : not translated
+# str_diesel_poland_pkp_su160                                       : not translated
 
 # Dieselrailbus
 # str_rbd_australia_victorian_railways_aec_rm1                      : not translated
@@ -992,6 +993,7 @@ str_electric_ukraine_uz_ds3                                       :烏克蘭鐵�
 # str_electric_china_china_railways_ss8                             : not translated
 # str_electric_china_china_railways_hxd2b                           : not translated
 # str_electric_china_china_railways_hxd3d                           : not translated
+# str_electric_hungary_mav_class_v40                                : not translated
 
 # Electricrailbus
 # str_rbe_switzerland_ab_cfe_3_3                                    : not translated
@@ -1340,6 +1342,11 @@ str_steam_denmark_dsb_e                                           :丹麥鐵路E
 # str_steam_egypt_kitson_2_2_2                                      : not translated
 # str_steam_egypt_class_7_2_6_0                                     : not translated
 # str_steam_egypt_class_4_0_6_0                                     : not translated
+# str_steam_bulgaria_bdz_142_150                                    : not translated
+# str_steam_hungary_mav_class_203                                   : not translated
+# str_steam_hungary_mav_class_601                                   : not translated
+# str_steam_italy_lvci_class_1                                      : not translated
+# str_steam_spain_renfe_462                                         : not translated
 
 # Steamrailbus
 str_rbs_austria_nolb_1                                            :下奧地利國家鐵路1型 (蒸汽輕軌車廂)

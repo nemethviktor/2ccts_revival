@@ -733,6 +733,7 @@ str_diesel_argentina_sofse_cnr_ckd8                               :SOFSE CNR CKD
 # str_diesel_usa_ge_dash_8_40c                                      : not translated
 # str_diesel_usa_ge_dash_9_44cw                                     : not translated
 # str_diesel_usa_emd_gp40                                           : not translated
+# str_diesel_poland_pkp_su160                                       : not translated
 
 # Dieselrailbus
 str_rbd_australia_victorian_railways_aec_rm1                      :Ferrocarrils victorians - AEC RM1 (Ferrobús Dièsel)
@@ -993,6 +994,7 @@ str_electric_usa_amtrak_acs_64                                    :Amtrak ACS-64
 # str_electric_china_china_railways_ss8                             : not translated
 # str_electric_china_china_railways_hxd2b                           : not translated
 # str_electric_china_china_railways_hxd3d                           : not translated
+# str_electric_hungary_mav_class_v40                                : not translated
 
 # Electricrailbus
 str_rbe_switzerland_ab_cfe_3_3                                    :AB CFe 3/3 (Ferrobús Elèctric, Elèctrica 1500V DC)
@@ -1341,6 +1343,11 @@ str_steam_albania_hsh_01                                          :HSH 01 (Vapor
 # str_steam_egypt_kitson_2_2_2                                      : not translated
 # str_steam_egypt_class_7_2_6_0                                     : not translated
 # str_steam_egypt_class_4_0_6_0                                     : not translated
+# str_steam_bulgaria_bdz_142_150                                    : not translated
+# str_steam_hungary_mav_class_203                                   : not translated
+# str_steam_hungary_mav_class_601                                   : not translated
+# str_steam_italy_lvci_class_1                                      : not translated
+# str_steam_spain_renfe_462                                         : not translated
 
 # Steamrailbus
 str_rbs_austria_nolb_1                                            :NOLB 1 (Ferrobús a Vapor)

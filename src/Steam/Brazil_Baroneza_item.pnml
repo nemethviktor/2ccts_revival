@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03C.
+// Template: TPL_03A.
 // Data from: https://pt.wikipedia.org/wiki/Baroneza_%28locomotiva%29
 
 item(FEAT_TRAINS, item_steam_brazil_baroneza) {
@@ -39,7 +39,7 @@ item(FEAT_TRAINS, item_steam_brazil_baroneza) {
 
         sprite_id: SPRITE_ID_NEW_TRAIN;
         dual_headed: 0;
-        length: 7;
+        length: 4;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
@@ -48,13 +48,13 @@ item(FEAT_TRAINS, item_steam_brazil_baroneza) {
     }
     graphics {
         purchase: spriteset_steam_brazil_baroneza_purchase;
-        // no 'visual_effect' or 'visual_effect_and_powered'
-        // no 'length'
-        // no 'articulated_part'
+        visual_effect_and_powered: switch_steam_brazil_baroneza_visual_effect;
+        length: switch_steam_brazil_baroneza_length;
+        articulated_part: switch_steam_brazil_baroneza_articulated;
         can_attach_wagon: switch_can_attach_vehicle;
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
         // PURCHASETEXT_SWITCH_CALL // this is actually blank
-        default: switch_steam_brazil_baroneza_animation;
+        default: switch_steam_brazil_baroneza_position;
     }
 }

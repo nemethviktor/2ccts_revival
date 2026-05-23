@@ -624,7 +624,7 @@ str_steam_japan_jnr_7100,JNR 7100
 str_steam_japan_jnr_860,JNR 860
 str_steam_japan_jnr_9600,JNR 9600
 str_steam_japan_jnr_d50,JNR D50
-str_steam_south_africa_katanga_mikado_2_8_2,Katanga Mikado 2-8-2
+str_steam_south_africa_katanga_mikado_2_8_2,BCK Class 200 'Katanga Mikado'
 str_steam_mozambique_mozambique_railways_no_101,Mozambique Railway 101-104
 str_steam_ivory_coast_golwe_2_6_0_0_6_2t,French West African Golwé
 str_diesel_germany_db_kof_ii,DB Kof II / DB 322
@@ -761,7 +761,7 @@ str_diesel_gabon_alsthom_ad30b,OCTRA 101-106
 str_diesel_ghana_railway_corporation_class_tt12,Ghana Railways 1400 EMD TT12
 str_diesel_sierra_leone_lamco_301_series,LAMCO 301-310 Series
 str_diesel_congo_alstom_bb_bb,Congo-Ocean BB-BB 300
-str_diesel_zimbabwe_sorefame_de8,Sorefame DE8
+str_diesel_zimbabwe_sorefame_de8,Zimbabwe Railways DE8
 str_diesel_ivory_coast_gmd_gt22lc2,Abidjan-Niger GMD GT22LC-2
 str_electric_tanzania_trc_e6800,TRC E6800
 str_mtro_argentina_le_brugeoise,Buenos Aires 'Le Brugeoise'
@@ -947,7 +947,7 @@ str_electric_finland_vr_sr1,VR Sr1
 str_electric_kazakhstan_ktz_kz4a,KTZ KZ4A
 str_electric_kazakhstan_ktz_kz8a,KTZ KZ8A
 str_electric_russia_rzd_ep20,RZD EP20
-str_electric_congo_type_2450_acec_charleroi_zaire_electric,Zaire Electric Type 2450
+str_electric_congo_type_2450_acec_charleroi_zaire_electric,BCK Type 2450
 str_dmu_germany_db_vt_040_flying_hamburger,DB VT 04.0 'Flying Hamburger'
 str_dmu_australia_nswgr_silver_city_comet,NSWGR 'Silver City Comet'
 str_dmu_czech_republic_cd_m131,CD M131
@@ -1381,12 +1381,12 @@ str_diesel_china_china_railways_df5,China Railways DF5
 str_steam_china_china_railways_js,China Railways JS
 str_steam_china_china_railways_rm,China Railways RM
 str_rbd_hungary_mav_ikarus_260,MAV Ikarus 260
-str_diesel_usa_ge_es44,GE Evo ES44
-str_diesel_usa_emd_sd40,EMD SD40
+str_diesel_usa_ge_es44,PRFTC 9000 GE ES43ACi
+str_diesel_usa_emd_sd40,Atlantic Coast Line GP40
 str_diesel_usa_emd_sd70,EMD SD70
-str_diesel_usa_ge_c30_7,GE C30-7
-str_diesel_usa_ge_dash_8_40c,GE Dash 8-40C
-str_diesel_usa_ge_dash_9_44cw,GE Dash 9-44CW
+str_diesel_usa_ge_c30_7,FNM 6700 GE C30-7 'Dash 7'
+str_diesel_usa_ge_dash_8_40c,EFC 500 GE C40-8 'Dash-8'
+str_diesel_usa_ge_dash_9_44cw,CNR 2500 GE C44-9W 'Dash 9'
 str_diesel_usa_emd_gp40,EMD GP40
 str_steam_egypt_kitson_2_2_2,ESR Class 1 Kitson 2-2-2
 str_steam_egypt_class_7_2_6_0,ESR Class 7 2-6-0
@@ -1395,3 +1395,10 @@ str_mglv_world_pegasus,Pegasus
 str_mmu_world_chimaera,Chimaera
 str_mglv_coach_gen7m_chimaera_passenger_coach,Chimaera Passenger Coach
 str_mglv_coach_gen7m_chimaera_mail_coach,Chimaera Mail Coach
+str_steam_bulgaria_bdz_142_150,BDZ Class 279 142-150
+str_steam_hungary_mav_class_203,MAV Class 203
+str_steam_hungary_mav_class_601,MAV Class 601
+str_electric_hungary_mav_class_v40,MAV V40
+str_diesel_poland_pkp_su160,PKP SU160
+str_steam_italy_lvci_class_1,LVCI Class 1
+str_steam_spain_renfe_462,RENFE 462

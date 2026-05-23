@@ -1070,6 +1070,9 @@
 #include "src/Diesel/USA_EMD_GP40_graphics.pnml"
 #include "src/Diesel/USA_EMD_GP40_item.pnml"
 
+#include "src/Diesel/Poland_PKP_SU160_graphics.pnml"
+#include "src/Diesel/Poland_PKP_SU160_item.pnml"
+
 
 //// EMU
 #include "src/EMU/Netherlands_NS_Mat24_graphics.pnml"
@@ -1239,9 +1242,6 @@
 
 #include "src/EMU/Netherlands_NS_Hispeed_V250_Albatros_graphics.pnml"
 #include "src/EMU/Netherlands_NS_Hispeed_V250_Albatros_item.pnml"
-
-#include "src/EMU/Chile_EFE_AES_Railcar_graphics.pnml"
-#include "src/EMU/Chile_EFE_AES_Railcar_item.pnml"
 
 #include "src/EMU/Chile_EFE_XTrapolis_100_graphics.pnml"
 #include "src/EMU/Chile_EFE_XTrapolis_100_item.pnml"
@@ -1778,6 +1778,9 @@
 
 #include "src/Electric/China_China_Railways_HXD3D_graphics.pnml"
 #include "src/Electric/China_China_Railways_HXD3D_item.pnml"
+
+#include "src/Electric/Hungary_MAV_Class_V40_graphics.pnml"
+#include "src/Electric/Hungary_MAV_Class_V40_item.pnml"
 
 #include "src/Electric/UK_London_1903_Stock_graphics.pnml"
 #include "src/Electric/UK_London_1903_Stock_item.pnml"
@@ -2601,9 +2604,6 @@
 #include "src/Steam/Belgium_NMBS_SNCB_Type_29_graphics.pnml"
 #include "src/Steam/Belgium_NMBS_SNCB_Type_29_item.pnml"
 
-#include "src/Steam/Chile_FCAB_4_8_2_graphics.pnml"
-#include "src/Steam/Chile_FCAB_4_8_2_item.pnml"
-
 #include "src/Steam/China_Railways_QJ_graphics.pnml"
 #include "src/Steam/China_Railways_QJ_item.pnml"
 
@@ -2693,6 +2693,21 @@
 
 #include "src/Steam/Egypt_Class_4_0_6_0_graphics.pnml"
 #include "src/Steam/Egypt_Class_4_0_6_0_item.pnml"
+
+#include "src/Steam/Bulgaria_BDZ_142_150_graphics.pnml"
+#include "src/Steam/Bulgaria_BDZ_142_150_item.pnml"
+
+#include "src/Steam/Hungary_MAV_Class_203_graphics.pnml"
+#include "src/Steam/Hungary_MAV_Class_203_item.pnml"
+
+#include "src/Steam/Hungary_MAV_Class_601_graphics.pnml"
+#include "src/Steam/Hungary_MAV_Class_601_item.pnml"
+
+#include "src/Steam/Italy_LVCI_Class_1_graphics.pnml"
+#include "src/Steam/Italy_LVCI_Class_1_item.pnml"
+
+#include "src/Steam/Spain_RENFE_462_graphics.pnml"
+#include "src/Steam/Spain_RENFE_462_item.pnml"
 
 
 //// WAGONS_MAGLEV - GEN7M

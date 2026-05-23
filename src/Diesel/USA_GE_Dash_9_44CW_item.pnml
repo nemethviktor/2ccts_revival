@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_diesel_usa_ge_dash_9_44cw) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/america/northern", "region/america/south", "flag/US", "power/diesel", "role/heavy_freight"];
+	badges: ["region/america/northern", "region/america/south", "flag/CA", "power/diesel", "role/heavy_freight"];
 
     }
     graphics {

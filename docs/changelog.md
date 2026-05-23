@@ -16,16 +16,24 @@
     - `ESR Class 1 Kitson 2-2-2` (Steam)
     - `ESR Class 7 2-6-0` (Steam)
     - `ESR Class 4 0-6-0` (Steam)
+    - `BDZ Class 279 142-150` (Steam)
+    - `MAV Class 203` (Steam)
+    - `MAV Class 601` (Steam)
+    - `MAV V40` (Electric)
+    - `PKP SU160` (Diesel)
+    - `LVCI Class 1` (Steam)
+    - `RENFE 462` (Steam)
+    - `M62` has been added to E-EU
     - Added some of the maglevs from the original OpenTTD game.
   
-  - Added the following from Ragin's North America set (all also available in S-Am as they were exported at some stage)
-    - `GE Evo ES44` (Diesel)
-    - `EMD SD40` (Diesel)
-    - `EMD SD70` (Diesel)
-    - `GE C30-7` (Diesel)
-    - `GE Dash 8-40C` (Diesel)
-    - `GE Dash 9-44CW` (Diesel)
-    - `EMD GP40` (Diesel)
+  - Added the following from Ragin's North America set (all also available in S-Am as they were exported at some stage - tried to keep the naming unique. Yes there's one Pakistani in there too.)
+    - `PRFTC 9000 GE ES43ACi`
+    - `Atlantic Coast Line GP40`
+    - `EMD SD70`
+    - `FNM 6700 GE C30-7 'Dash 7'`
+    - `EFC 500 GE C40-8 'Dash-8'`
+    - `CNR 2500 GE C44-9W 'Dash 9'`
+    - `EMD GP40`
   
 **3.3 RC3 [20260513]**
 

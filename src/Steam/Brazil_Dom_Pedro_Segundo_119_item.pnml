@@ -6,10 +6,6 @@
 // Template: TPL_03A.
 // Data from: https://www.steamlocomotive.com/locobase.php?country=Brazil&wheel=2-10-0&railroad=dps
 
-// Notes:
-//// POWER: 1940 -- SNCF 150, similar build, wikipedia
-
-
 item(FEAT_TRAINS, item_steam_brazil_dom_pedro_segundo_119) {
     property {
         name: string(str_steam_brazil_dom_pedro_segundo_119);
@@ -19,13 +15,13 @@ item(FEAT_TRAINS, item_steam_brazil_dom_pedro_segundo_119) {
         vehicle_life: 15;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 54.77287;
-        running_cost_factor: 44.15092;
-        speed: 105 km/h;
-        power: 1940 hp;
+        cost_factor: 35.61332;
+        running_cost_factor: 25.09921;
+        speed: 50 km/h;
+        power: 626 hp;
         cargo_capacity: 0;
         weight: 102 ton;
-        tractive_effort_coefficient: 0.15;
+        tractive_effort_coefficient: 0.148;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -47,7 +43,7 @@ item(FEAT_TRAINS, item_steam_brazil_dom_pedro_segundo_119) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/america/south", "flag/BR", "power/steam", "role/universal"];
+	badges: ["region/america/south", "flag/BR", "power/steam", "role/shunting"];
 
     }
     graphics {
