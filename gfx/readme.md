@@ -7,9 +7,9 @@ The automated process tags the Template ID onto each pnml file just under the co
 
 The obviously chaotic naming logic is a derivative of attempt to categorise existing legacy images into templates and then ending up with 40+ of them and then grouping the vaguely similar ones.
 
-Most **Engines** _exc Steam_ will fall into `TPL_01`, whichever version of it. I'd suggest using `TPL_01A`; if your design is dual-headed, still use that, don't move any of the boxes.
+Most **Engines** _exc Steam_ will fall into `TPL_01`, whichever version of it assuming there is no animation involved. I'd suggest using `TPL_01A`; if your design is dual-headed, still use that, don't move any of the boxes, for those -> `TPL_03B`. 
 
-Most **xMUs** will be `TPL_02A` (There is no `TPL_02B` - it has been removed during testing). Some special **Long EMUs** go into `D` (long), `E` (very long), `F` (long and complex) but you'd better look up what you want at this point.
+Most **xMUs** will be `TPL_02A` if the middle cars are only different pax/mail. `TPL_02D` is for EMUs where the unpowered/powered cars are visually different. Other templates exist but I suggest not using them. There is no `TPL_02B` - it has been removed during testing.
 
 Most **Metros** will be `TPL_02C`.
 
@@ -18,9 +18,9 @@ Most **Metros** will be `TPL_02C`.
 - Steam w / Tender -> `TPL_03A`
 - Items w 2 engine animation states -> `TPL_03B`
 - Same as B but different 'purhchase' position -> `TPL_03C`
-- Non-Steam w / Tender -> `TPL_03D`
+- Non-Steam w / A-B unit -> `TPL_03D`
 - Same as A but no Visual Effect -> `TPL_03E`
-- Same as B but no Visual effect -> `TPL_03F`
+- Same as B but no Visual effect -> `TPL_03F`(possibly identical to D but I've given up)
 
 For **Wagons**, it's a little chaotic because there are 'simple' (`TPL_01F`) ones with no loading states, then ones with liveries (`TPL_04A`) + loading states (`TPL_04B`) and ones _with liveries + loading states + different sprites per cargo type_
 
@@ -45,7 +45,7 @@ For **Wagons**, it's a little chaotic because there are 'simple' (`TPL_01F`) one
 - Livestock _only_ wagon -> `TPL_04T`
 - Basic Coach Push-Pull and also not Push-Pull -> `TPL_04U`
 
-Basically don't create new types of Wagons. At the moment Gen 6/7 uses G5 graphics, it'd be awesome if someone updated those but don't reinvent the wheel please.
+Basically don't create new types of Wagons. At the moment Gen 6/7 use G5 graphics, it'd be awesome if someone updated those but don't reinvent the wheel please.
 
 **Coaches** are `TPL_04A`, with or without push-pull - Unless you want loading states like the Indian whichever coach that has people hanging on it when full - that's `TPL_04B`. If you are using a simple wagon with no alternatives (like dining coach, first class, that sorta stuff) it's `TPL_04U`, also supports push-pull.
 
@@ -63,4 +63,4 @@ Things with **front and back but no livery or loading states** use `TPL_017A`.
 
 I'd suggest not producing more of them though, it's a little too complex.
 
-You may ofc put your logo or text or palette on the file(s) but don't move the template boxes.
+You may ofc put your logo on the file(s) but don't move the template boxes. Any new additions will be merged into the existing template image standard.

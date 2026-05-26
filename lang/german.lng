@@ -555,7 +555,7 @@ STR_PARAM_TIMES_16                                                :16
 # str_diesel_usa_cnj_alco_ge_ir_boxcab                              : not translated
 # str_diesel_netherlands_ns_200                                     : not translated
 # str_diesel_germany_db_270                                         : not translated
-str_diesel_switzerland_sbb_am_4_6                                 :SBB Am 4/6 (Diesel)
+str_diesel_switzerland_sbb_am_4_6                                 :SBB Am 4/6 (Diesel, Gas Turbine)
 # str_diesel_australia_nswgr_79                                     : not translated
 # str_diesel_usa_western_pacific_alco_s_2                           : not translated
 # str_diesel_usa_at_sf_emd_f3                                       : not translated

@@ -554,7 +554,7 @@ str_diesel_germany_db_kof_ii                                      :德铁 Kof II
 str_diesel_usa_cnj_alco_ge_ir_boxcab                              :新泽西中央铁路CNJ ALCo-GE-IR Boxcab (Diesel)
 str_diesel_netherlands_ns_200                                     :荷铁NS 200 'Sik' (Diesel)
 str_diesel_germany_db_270                                         :德铁DB V 20 / DB 270 'WR 200 B 14' (Diesel)
-str_diesel_switzerland_sbb_am_4_6                                 :瑞铁SBB Am 4/6 (Diesel)
+str_diesel_switzerland_sbb_am_4_6                                 :瑞铁SBB Am 4/6 (Diesel, Gas Turbine)
 str_diesel_australia_nswgr_79                                     :新南威尔士铁路 (Diesel)
 str_diesel_usa_western_pacific_alco_s_2                           :西太平洋铁路 (Diesel)
 str_diesel_usa_at_sf_emd_f3                                       :大北方铁路 (Diesel)

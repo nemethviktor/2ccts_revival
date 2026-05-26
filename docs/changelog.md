@@ -9,6 +9,7 @@
   - Fix logic -> valuables should not be a refit options for MUs
   - Removed `PURCHASE_CARGO_CAPACITY` altogether
   - Fixed an issue relating to attachment rules intro'd someplace earlier
+  - Standardised all the visual templates in the set
 - VEHICLES CHANGES:
   - Fixed a number of sprite misalignments #7
   - Small fixes here and there

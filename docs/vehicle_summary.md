@@ -902,13 +902,13 @@
 | ![RZD 9P](vehicle_graphics/str_steam_russia_rzd_9p.png) | RZD 9P | 1935 | 35 | 450 | Shunting | 0 | BROAD_NONE | Asia |
 | ![MAV 242](vehicle_graphics/str_steam_hungary_mav_242.png) | MAV 242 | 1936 | 120 | 618 | Express | 0 | STANDARD_NONE | Eastern Europe |
 | ![CPR 'Royal Hudson'](vehicle_graphics/str_steam_canada_cpr_royal_hudson.png) | CPR 'Royal Hudson' | 1937 | 144 | 3100 | Express | 0 | STANDARD_NONE | North America |
-| ![DRB Class 52](vehicle_graphics/str_steam_germany_db_52.png) | DRB Class 52 | 1937 | 80 | 1600 | Heavy Freight | 0 | STANDARD_NONE | Western Europe |
 | ![DSB E](vehicle_graphics/str_steam_denmark_dsb_e.png) | DSB E | 1937 | 110 | 1600 | Universal | 0 | STANDARD_NONE | Northern Europe |
 | ![Iraqi State Railways PC](vehicle_graphics/str_steam_iraq_iraqi_state_railways_pc_class.png) | Iraqi State Railways PC | 1940 | 110 | 1640 | Heavy Freight | 0 | STANDARD_NONE | Asia |
 | ![Zimbabwe Railways 15](vehicle_graphics/str_steam_zimbabwe_zimbabwe_railways_15.png) | Zimbabwe Railways 15 | 1940 | 100 | 1600 | Heavy Freight | 0 | NARROW_NONE | Africa |
 | ![Southern Pacific GS-4 'Daylight'](vehicle_graphics/str_steam_usa_southern_pacific_gs_4_daylight.png) | Southern Pacific GS-4 'Daylight' | 1941 | 177 | 5500 | Express | 0 | STANDARD_NONE | North America |
 | ![UP 4000 'Big Boy'](vehicle_graphics/str_steam_usa_up_4000_big_boy.png) | UP 4000 'Big Boy' | 1941 | 128 | 6290 | Heavy Freight | 0 | STANDARD_NONE | North America |
 | ![Victorian Railways H](vehicle_graphics/str_steam_australia_vr_h.png) | Victorian Railways H | 1941 | 80 | 3600 | Heavy Freight | 0 | BROAD_NONE | Oceania |
+| ![DRB Class 52](vehicle_graphics/str_steam_germany_db_52.png) | DRB Class 52 | 1942 | 80 | 1600 | Heavy Freight | 0 | STANDARD_NONE | Western Europe |
 | ![ENR 1100 [LMS Fowler 3F / WD 0-6-0T]](vehicle_graphics/str_steam_egypt_enr_1100.png) | ENR 1100 [LMS Fowler 3F / WD 0-6-0T] | 1942 | 65 | 560 | Universal | 0 | STANDARD_NONE | Africa |
 | ![SEK Lb](vehicle_graphics/str_steam_greece_sek_lb.png) | SEK Lb | 1943 | 75 | 1600 | Universal | 0 | STANDARD_NONE | Southern Europe |
 | ![South Australian Railways 520](vehicle_graphics/str_steam_australia_south_australian_railways_520.png) | South Australian Railways 520 | 1943 | 112 | 2600 | Heavy Freight | 0 | BROAD_NONE | Oceania |

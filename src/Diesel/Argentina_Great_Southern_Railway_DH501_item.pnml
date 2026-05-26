@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_01A.
+// Template: TPL_03C.
 // Data from: https://es.wikipedia.org/wiki/Ferrocarril_del_Sud
 
 // Notes:
@@ -59,6 +59,6 @@ item(FEAT_TRAINS, item_diesel_argentina_great_southern_railway_dh501) {
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
         // PURCHASETEXT_SWITCH_CALL // this is actually blank
-        default: spriteset_diesel_argentina_great_southern_railway_dh501;
+        default: switch_diesel_argentina_great_southern_railway_dh501_animation;
     }
 }
