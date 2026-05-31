@@ -1062,10 +1062,10 @@ str_emu_france_thalys_pbka,Thalys PBKA
 str_emu_czech_republic_cd_680_pendolino,CD 680 'Pendolino'
 str_emu_spain_renfe_120,RENFE 120
 str_emu_usa_amtrak_acela_express,Amtrak Acela Express
-str_emu_japan_odakyu_3100_series_romance,Odakyu 3100 Series 'Romance'
-str_emu_japan_odakyu_10000_series_romance,Odakyu 10000 Series 'Romance'
+str_emu_japan_odakyu_3100_series_romance,Odakyu 3100 series NSE
+str_emu_japan_odakyu_10000_series_romance,Odakyu 10000 series HiSE
 str_emu_australia_sydney_trains_s_set,Sydney Trains S-set
-str_emu_australia_sydney_trains_oscars,Sydney Trains OSCars
+str_emu_australia_sydney_trains_oscars,Sydney Trains H-set
 str_emu_australia_victorian_railways_swing_door,Victorian Railways 'Swing Door'
 str_emu_new_zealand_nzr_em_et_class,NZR EM/ET
 str_emu_south_africa_sar_5m2,SAR 5M2

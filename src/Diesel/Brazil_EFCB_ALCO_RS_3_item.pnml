@@ -9,7 +9,7 @@
 item(FEAT_TRAINS, item_diesel_brazil_efcb_alco_rs_3) {
     property {
         name: string(str_diesel_brazil_efcb_alco_rs_3);
-        climates_available: ((param_region_south_america || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
+        climates_available: (((param_region_north_america || param_region_south_america) || param_region_southern_europe) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1950,1,1);
         model_life: 45;
         vehicle_life: 40;
@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_diesel_brazil_efcb_alco_rs_3) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/america/south", "flag/BR", "power/diesel", "role/universal"];
+	badges: ["region/america/northern", "region/america/south", "region/europe/southern", "flag/BR", "power/diesel", "role/universal"];
 
     }
     graphics {

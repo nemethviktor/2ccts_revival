@@ -1037,7 +1037,7 @@ str_emu_japan_jnr_shinkansen_series_0                             :JNR Shinkanse
 str_emu_denmark_dsb_s_tog_ii                                      :DSB S-Tog II (Электропоезд, 1500V DC)
 str_emu_germany_db_et420                                          :DB ET420 (Электропоезд, 15kV AC)
 # str_emu_australia_sydney_trains_s_set                             : not translated
-str_emu_finland_vr_sm2                                            :VR Sm2 (Электропоезд, 25kV AC)
+str_emu_finland_vr_sm2                                            :VR Sm2 (Электропоезд, OHLE)
 # str_emu_netherlands_ns_plan_y                                     : not translated
 # str_emu_netherlands_ns_icm_4000                                   : not translated
 # str_emu_france_sncf_tgv_sud_est                                   : not translated

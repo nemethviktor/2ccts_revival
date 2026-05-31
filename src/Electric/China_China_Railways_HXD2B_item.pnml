@@ -9,7 +9,7 @@
 item(FEAT_TRAINS, item_electric_china_china_railways_hxd2b) {
     property {
         name: string(str_electric_china_china_railways_hxd2b);
-        climates_available: ((param_region_asia || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
+        climates_available: ((0 || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(2007,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 45;
@@ -32,7 +32,7 @@ item(FEAT_TRAINS, item_electric_china_china_railways_hxd2b) {
         misc_flags: bitmask(TRAIN_FLAG_2CC);
         refit_cost: 0;
         ai_special_flag: AI_FLAG_PASSENGER | AI_FLAG_CARGO;
-        track_type: [STANDARD_GAUGE_RAILTYPE_25KV];
+        track_type: [STANDARD_GAUGE_RAILTYPE_25KV, BROAD_GAUGE_RAILTYPE_25KV];
         running_cost_base: RUNNING_COST_ELECTRIC;
         engine_class: ENGINE_CLASS_ELECTRIC;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_electric_china_china_railways_hxd2b) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/asia", "flag/CN", "power/electric/ac", "role/heavy_freight"];
+	badges: ["region/asia", "region/europe/eastern", "flag/CN", "power/electric/ac", "role/heavy_freight"];
 
     }
     graphics {

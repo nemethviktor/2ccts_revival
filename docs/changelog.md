@@ -83,7 +83,41 @@
   - RZD 9P - add eastern european region
   - ENR 1100 [LMS Fowler 3F / WD 0-6-0T] - add western european and maybe other euro regions
   - UP Express Nippon Sharyo DMU - maybe rename to UP Express 1000 series
-  
+  -UZ TEP10L - add asia region
+  - DR 130/DBAG 230 - add eastern europe region, add broad gauge, MAYBE delate western europe region
+  - DB VT 133 'Wismar railbus' - add narrow gauge
+  - EFE E-269 - add southern eruope region
+  - UZ ChS7 - add asian region becouse USSR. Maybe also add the ChS8 which looks the same, but is for 25kV AC
+  - RZD EP20 - add eastern europe region
+  - CFR 58 - this is secondhand Z 6100/Z260  from France and Luxembourhg - add western european region
+  - PKP OI49 - maybe add asian region, as a coupl eof these were exported to DPRK
+  - DR 18 201 - if we consider GDR eastern europe, add eastern europe region  
+  - DB V 20 / DB 270 'WR 200 B 14'- add eastern europe and broad gauge
+  - MAV M44 - was exported to USSR as series VME1 - add broad gauge and MEYBE asian region
+  -VIA Rail FP9  - add asian (?) region as some operated in Saudi Arabia
+  - Amtrak FL9 - IRL can work as an electric loco on 3rd rail tracks
+  - CD 720 ChME2 - add broad gauge!
+  - Odakyu 3100 Series 'Romance' - rename to Odakyu 3100 series NSE?
+  - Odakyu 10000 Series 'Romance' - rename to Odakyu 10000 series HiSE ?
+  - SJ X2000- operated also in China, add asian region
+  - DB 642 'Desiro' - some operate in the USA, on the "coaster" service, add northern america region?
+  - BR 66 - commonly used outside of UK (Poland, France, Netherlands, Germany, Sweden, Egypt), add other european regions maybe Africa
+  - IE 201 - Ireland uses broad gauge, not standard gauge, check also other irish locos and MUs
+  - NS 6400 - used in other euroepan countries too, eg Poland
+  - SBB Re460 'Lok 2000' should be able to operate both on 15kV and 25kV. There were versions for both these electric systems (for domestic version and norwegian version, 25kV for finnish and chinease version) while an multi system variant never existed, I think it is justified to just make it able to operate on both 15kV and 25kV ingame
+  - BR 92 - should be able to operate on 25kV AC and 3rd rail
+  - UZ DS3 - this is an broad gauge loco, not standard gauge
+  - China Railways HXD2B - add broad gauge and easten europe region, as this is also used in Belarus as series BKG2
+  - MAV V43 - add 15kv AC electric system
+  - DB 182 ES64U 'Taurus' and DB 185 TRAXX F140 - used all over the europe, add other european regions, make sure to be able to operate on 4 electric systems (1500V, 3000V, 15kV, 25kV)
+  - MÁV V40  - this is an 15kV loco, NOT an 25kV loco. Hungary switched it's electric system in the 60s
+  - DB 479.201 - maybe move to eastern europe as the reconstruction/modernisation was done in GDR?
+  - CD 680 'Pendolino' - due to other operators of units from the same family, move intro date to 1995?
+  - VR Sm4 - this is an broad gauge unit, not narrow gauge unit!
+  - Sydney Trains OSCars - rename to H set
+  - Shanghai Transrapid - add western european region
+  - EFCB ALCO RS-3 - add north emerican and souther neuropean (Spain) regions
+  - RZD E - add norhtern europe (Finland), Asia (China), add 1435mm gauge (China)
   - Added the following from Ragin's North America set (all also available in S-Am as they were exported at some stage - tried to keep the naming unique. Yes there's one Pakistani in there too.)
     - `PRFTC 9000 GE ES43ACi`
     - `Atlantic Coast Line GP40`

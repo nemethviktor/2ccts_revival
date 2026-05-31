@@ -48,13 +48,19 @@ There is a nightly of sorts on my [Google Drive](https://drive.google.com/file/d
   - Intro year < 2000: 40 years
   - Anything else: 45 years
 
-## Vehicle Roster
+## Vehicle Roster & Gap Analysis
 
-The roster is auto-saved into a markdown file and can be accessed on github, [here](https://github.com/nemethviktor/2ccts_revival/blob/master/docs/vehicle_summary.md).
+The roster is auto-saved into a markdown file and can be accessed [on github](https://github.com/nemethviktor/2ccts_revival/blob/master/docs/vehicle_summary.md).
+
+A visual gap analysis is below (representing the count of vehicles available per region per role...or the lack of them):
+
+![Gap Analysis](roster_gap_analysis.png)
+
+If so inclined to get a more readable version of the image above, poke the relevant py file and change the `target_categories` inside to what you are interested in..
 
 ## Build
 
-You'll need [nmlc 0.9.0+](https://github.com/OpenTTD/nml/tree/master) (older versions won't work because of the push-pull and badges capabilities) to run the build and that seems to be around for Windows only. Get MinGW from [here](https://sourceforge.net/projects/mingw-w64/files/latest/download), install (you'll need the base and some compilers), then add the resulting folder's `bin` subfolder to `PATH` (ie `c:\MinGW\bin\`)
+You'll need [nmlc 0.9.0+](https://github.com/OpenTTD/nml/tree/master) (older versions won't work because of the push-pull and badges capabilities) to run the build and that seems to be around for Windows only. Get MinGW from [sourceforge](https://sourceforge.net/projects/mingw-w64/files/latest/download), install (you'll need the base and some compilers), then add the resulting folder's `bin` subfolder to `PATH` (ie `c:\MinGW\bin\`)
 
 You'll also need `python 3.13+` and there's now a `requirements.txt` in the `tools` folder, it should do the trick for getting the various req'd libraries.
 

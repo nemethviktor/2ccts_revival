@@ -32,7 +32,7 @@ item(FEAT_TRAINS, item_electric_uk_br_92) {
         misc_flags: bitmask(TRAIN_FLAG_2CC);
         refit_cost: 0;
         ai_special_flag: AI_FLAG_PASSENGER | AI_FLAG_CARGO;
-        track_type: [STANDARD_GAUGE_RAILTYPE_OHLE, STANDARD_GAUGE_RAILTYPE_DUAL];
+        track_type: [STANDARD_GAUGE_RAILTYPE_DUAL];
         running_cost_base: RUNNING_COST_ELECTRIC;
         engine_class: ENGINE_CLASS_ELECTRIC;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, -3, DISABLE_WAGON_POWER);

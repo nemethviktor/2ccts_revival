@@ -894,7 +894,7 @@ str_electric_netherlands_ns_1600                                  :荷鐵 1600 �
 str_electric_china_china_railways_ss6                             :中國鐵路韶山6型 (電力, 25kV AC)
 # str_electric_switzerland_sbb_re460_lok_2000                       : not translated
 # str_electric_spain_renfe_252                                      : not translated
-str_electric_uk_br_92                                             :英鐵 92 型 (電力, OHLE, Dual-Pickup)
+str_electric_uk_br_92                                             :英鐵 92 型 (電力, Dual-Pickup)
 # str_electric_india_indian_railways_wap_4                          : not translated
 # str_electric_germany_db_185_traxx_f140                            : not translated
 # str_electric_belgium_nmbs_sncb_13_hle                             : not translated

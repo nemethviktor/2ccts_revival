@@ -895,7 +895,7 @@ str_electric_austria_obb_1063                                     :OBB 1063 (Ele
 # str_electric_china_china_railways_ss6                             : not translated
 # str_electric_switzerland_sbb_re460_lok_2000                       : not translated
 str_electric_spain_renfe_252                                      :RENFE 252 (Electric, Elektrisch OHLE)
-str_electric_uk_br_92                                             :BR 92 (Electric, Elektrisch OHLE, Dual-Pickup)
+str_electric_uk_br_92                                             :BR 92 (Electric, Elektrisch Dual-Pickup)
 # str_electric_india_indian_railways_wap_4                          : not translated
 str_electric_germany_db_185_traxx_f140                            :DB 145 TRAXX F140 (Electric, Elektrisch OHLE)
 # str_electric_belgium_nmbs_sncb_13_hle                             : not translated

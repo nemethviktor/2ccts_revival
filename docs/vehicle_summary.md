@@ -115,7 +115,7 @@
 | ![FS 207](vehicle_graphics/str_diesel_italy_fs_207.png) | FS 207 | 1931 | 30 / 18 | 75 / 55 | Shunting | 0 | STANDARD_NONE | Southern Europe | No |
 | ![LMS 7051 Diesel Shunter](vehicle_graphics/str_diesel_uk_lms_7051_diesel_shunter.png) | LMS 7051 Diesel Shunter | 1932 | 48 / 29 | 150 / 111 | Shunting | 0 | STANDARD_NONE | Northern Europe | No |
 | ![NS 200 'Sik'](vehicle_graphics/str_diesel_netherlands_ns_200.png) | NS 200 'Sik' | 1934 | 60 / 37 | 72 / 53 | Shunting | 0 | STANDARD_NONE | Western Europe | No |
-| ![DB V 20 / DB 270 'WR 200 B 14'](vehicle_graphics/str_diesel_germany_db_270.png) | DB V 20 / DB 270 'WR 200 B 14' | 1936 | 55 / 34 | 200 / 149 | Shunting | 0 | STANDARD_NONE | Western Europe | No |
+| ![DB V 20 / DB 270 'WR 200 B 14'](vehicle_graphics/str_diesel_germany_db_270.png) | DB V 20 / DB 270 'WR 200 B 14' | 1936 | 55 / 34 | 200 / 149 | Shunting | 0 | STANDARD_NONE, BROAD_NONE | Eastern Europe, Western Europe | No |
 | ![Rock Island EMC TA](vehicle_graphics/str_diesel_usa_rock_island_emc_ta.png) | Rock Island EMC TA | 1937 | 180 / 111 | 1200 / 894 | Express | 0 | STANDARD_NONE | North America | No |
 | ![EE VFFLB](vehicle_graphics/str_diesel_brazil_ee_vfflb.png) | EE VFFLB | 1938 | 76 / 47 | 450 / 335 | Universal | 0 | NARROW_NONE | South America | No |
 | ![BR D3/7](vehicle_graphics/str_diesel_uk_br_class_d3_7.png) | BR D3/7 | 1939 | 32 / 19 | 350 / 260 | Shunting | 0 | STANDARD_NONE | Northern Europe | No |
@@ -134,7 +134,7 @@
 | ![CHP 500 FM H-16-44](vehicle_graphics/str_diesel_mexico_chp_500_fm_h_16_44.png) | CHP 500 FM H-16-44 | 1950 | 105 / 65 | 1600 / 1192 | Universal | 0 | STANDARD_NONE | North America | No |
 | ![CIE 113](vehicle_graphics/str_diesel_ireland_cie_113.png) | CIE 113 | 1950 | 88 / 54 | 915 / 682 | Universal | 0 | BROAD_NONE | Northern Europe | No |
 | ![EFC 3300 Baldwin AS-616](vehicle_graphics/str_diesel_brazil_efc_3300_baldwin_as_616.png) | EFC 3300 Baldwin AS-616 | 1950 | 100 / 62 | 1600 / 1192 | Heavy Freight | 0 | STANDARD_NONE | South America | No |
-| ![EFCB ALCO RS-3](vehicle_graphics/str_diesel_brazil_efcb_alco_rs_3.png) | EFCB ALCO RS-3 | 1950 | 137 / 85 | 1600 / 1192 | Universal | 0 | STANDARD_NONE | South America | No |
+| ![EFCB ALCO RS-3](vehicle_graphics/str_diesel_brazil_efcb_alco_rs_3.png) | EFCB ALCO RS-3 | 1950 | 137 / 85 | 1600 / 1192 | Universal | 0 | STANDARD_NONE | Southern Europe, North America, South America | No |
 | ![NS 600 'Bakkie'](vehicle_graphics/str_diesel_netherlands_ns_600.png) | NS 600 'Bakkie' | 1950 | 30 / 18 | 400 / 298 | Shunting | 0 | STANDARD_NONE | Western Europe | No |
 | ![PRR RF-16 'Sharknose'](vehicle_graphics/str_diesel_usa_pennsylvania_railroad_rf_16_sharknose.png) | PRR RF-16 'Sharknose' | 1950 | 110 / 68 | 1600 / 1192 | Universal | 0 | STANDARD_NONE | North America | No |
 | ![SNTF 040 DG](vehicle_graphics/str_diesel_algeria_sntf_040_dg.png) | SNTF 040 DG | 1950 | 80 / 49 | 800 / 596 | Universal | 0 | STANDARD_NONE | Africa | No |
@@ -147,10 +147,10 @@
 | ![NSWGR 41](vehicle_graphics/str_diesel_australia_nsw_41.png) | NSWGR 41 | 1953 | 92 / 57 | 400 / 298 | Universal | 0 | STANDARD_NONE | Oceania | No |
 | ![CNR SW1200](vehicle_graphics/str_diesel_canada_cnr_sw1200.png) | CNR SW1200 | 1954 | 104 / 64 | 1200 / 894 | Universal | 0 | STANDARD_NONE | North America | No |
 | ![Commonwealth Railways NSU](vehicle_graphics/str_diesel_australia_commonwealth_nsu.png) | Commonwealth Railways NSU | 1954 | 80 / 49 | 840 / 626 | Universal | 0 | NARROW_NONE | Oceania | No |
-| ![MAV M44](vehicle_graphics/str_diesel_hungary_mav_m44.png) | MAV M44 | 1954 | 80 / 49 | 590 / 439 | Universal | 0 | STANDARD_NONE | Eastern Europe | No |
+| ![MAV M44](vehicle_graphics/str_diesel_hungary_mav_m44.png) | MAV M44 | 1954 | 80 / 49 | 590 / 439 | Universal | 0 | STANDARD_NONE, BROAD_NONE | Eastern Europe | No |
 | ![OBB 2060](vehicle_graphics/str_diesel_austria_obb_2060.png) | OBB 2060 | 1954 | 60 / 37 | 200 / 149 | Shunting | 0 | STANDARD_NONE | Western Europe | No |
 | ![Sri Lanka Railways M2](vehicle_graphics/str_diesel_sri_lanka_sri_lanka_railways_m2.png) | Sri Lanka Railways M2 | 1954 | 112 / 69 | 1425 / 1062 | Universal | 0 | BROAD_NONE | Asia | No |
-| ![VIA Rail FP9](vehicle_graphics/str_diesel_canada_via_rail_fp9.png) | VIA Rail FP9 | 1954 | 144 / 89 | 1800 / 1342 | Universal | 0 | STANDARD_NONE | North America | No |
+| ![VIA Rail FP9](vehicle_graphics/str_diesel_canada_via_rail_fp9.png) | VIA Rail FP9 | 1954 | 144 / 89 | 1800 / 1342 | Universal | 0 | STANDARD_NONE | Asia, North America | No |
 | ![CIE 001](vehicle_graphics/str_diesel_ireland_cie_001.png) | CIE 001 | 1955 | 120 / 74 | 1325 / 987 | Universal | 0 | BROAD_NONE | Northern Europe | No |
 | ![MAV M28](vehicle_graphics/str_diesel_hungary_mav_m28.png) | MAV M28 | 1955 | 50 / 31 | 135 / 100 | Shunting | 0 | STANDARD_NONE | Eastern Europe | No |
 | ![NSWGR 42](vehicle_graphics/str_diesel_australia_nsw_42.png) | NSWGR 42 | 1955 | 114 / 70 | 1750 / 1304 | Universal | 0 | STANDARD_NONE | Oceania | No |
@@ -162,7 +162,7 @@
 | ![FS D.341](vehicle_graphics/str_diesel_italy_fs_d341.png) | FS D.341 | 1957 | 110 / 68 | 1380 / 1028 | Universal | 0 | STANDARD_NONE | Southern Europe | No |
 | ![JNR DF50](vehicle_graphics/str_diesel_japan_jnr_df50.png) | JNR DF50 | 1957 | 90 / 55 | 1060 / 790 | Universal | 0 | NARROW_NONE | Asia | No |
 | ![NSWGR 44](vehicle_graphics/str_diesel_australia_nswgr_44.png) | NSWGR 44 | 1957 | 129 / 80 | 1950 / 1453 | Universal | 0 | STANDARD_NONE | Oceania | No |
-| ![CD 720 ChME2](vehicle_graphics/str_diesel_czech_republic_cd_720_chme2.png) | CD 720 ChME2 | 1958 | 80 / 49 | 740 / 551 | Universal | 0 | STANDARD_NONE | Asia, Eastern Europe | No |
+| ![CD 720 ChME2](vehicle_graphics/str_diesel_czech_republic_cd_720_chme2.png) | CD 720 ChME2 | 1958 | 80 / 49 | 740 / 551 | Universal | 0 | STANDARD_NONE, BROAD_NONE | Asia, Eastern Europe | No |
 | ![CFR 060-DA](vehicle_graphics/str_diesel_romania_cfr_060_da.png) | CFR 060-DA | 1959 | 100 / 62 | 2070 / 1543 | Universal | 0 | STANDARD_NONE | Asia, Eastern Europe | No |
 | ![Ghana Railways 1400 EMD TT12](vehicle_graphics/str_diesel_ghana_railway_corporation_class_tt12.png) | Ghana Railways 1400 EMD TT12 | 1959 | 100 / 62 | 1425 / 1062 | Express | 0 | NARROW_NONE | Africa | No |
 | ![NSWGR 48](vehicle_graphics/str_diesel_australia_nsw_48.png) | NSWGR 48 | 1959 | 100 / 62 | 1050 / 782 | Universal | 0 | STANDARD_NONE | Oceania | No |
@@ -182,7 +182,7 @@
 | ![RZD Emch-3](vehicle_graphics/str_diesel_russia_rzd_emch_3.png) | RZD Emch-3 | 1963 | 95 / 59 | 1300 / 969 | Universal | 0 | BROAD_NONE | Asia, Eastern Europe | No |
 | ![BR 14](vehicle_graphics/str_diesel_uk_br_14.png) | BR 14 | 1964 | 64 / 39 | 650 / 484 | Universal | 0 | STANDARD_NONE | Northern Europe | No |
 | ![RZD ChME3](vehicle_graphics/str_diesel_russia_rzd_chme3.png) | RZD ChME3 | 1964 | 95 / 59 | 1250 / 932 | Universal | 0 | BROAD_NONE | Asia, Eastern Europe | No |
-| ![UZ TEP10L](vehicle_graphics/str_diesel_ukraine_uz_tep10l.png) | UZ TEP10L | 1964 | 140 / 86 | 2290 / 1707 | Universal | 0 | BROAD_NONE | Eastern Europe | No |
+| ![UZ TEP10L](vehicle_graphics/str_diesel_ukraine_uz_tep10l.png) | UZ TEP10L | 1964 | 140 / 86 | 2290 / 1707 | Universal | 0 | BROAD_NONE | Asia, Eastern Europe | No |
 | ![Ferrocarril Central Andino Alco RSD-39](vehicle_graphics/str_diesel_peru_ferrocarril_central_andino_alco_rsd_39.png) | Ferrocarril Central Andino Alco RSD-39 | 1965 | 120 / 74 | 1350 / 1006 | Universal | 0 | BROAD_NONE | South America | No |
 | ![NZR DB](vehicle_graphics/str_diesel_new_zealand_db_class.png) | NZR DB | 1965 | 100 / 62 | 951 / 709 | Express | 0 | NARROW_NONE | Oceania | No |
 | ![RZD M62](vehicle_graphics/str_diesel_russia_rzd_m62.png) | RZD M62 | 1965 | 100 / 62 | 1970 / 1468 | Universal | 0 | STANDARD_NONE, BROAD_NONE | Asia, Eastern Europe | No |
@@ -205,7 +205,7 @@
 | ![SJ V4](vehicle_graphics/str_diesel_sweden_sj_v4.png) | SJ V4 | 1972 | 70 / 43 | 620 / 462 | Universal | 0 | STANDARD_NONE | Northern Europe | No |
 | ![Amtrak SDP-40F](vehicle_graphics/str_diesel_usa_amtrak_sdp_40f.png) | Amtrak SDP-40F | 1973 | 153 / 95 | 3000 / 2236 | Universal | 0 | STANDARD_NONE | North America | No |
 | ![CNR MLW M420W](vehicle_graphics/str_diesel_canada_cnr_mlw_m420w.png) | CNR MLW M420W | 1973 | 108 / 67 | 2000 / 1491 | Universal | 0 | STANDARD_NONE | North America | No |
-| ![DR 130/DBAG 230](vehicle_graphics/str_diesel_germany_dr_130_dbag_230.png) | DR 130/DBAG 230 | 1973 | 140 / 86 | 2867 / 2137 | Universal | 0 | STANDARD_NONE | Asia, Western Europe | No |
+| ![DR 130/DBAG 230](vehicle_graphics/str_diesel_germany_dr_130_dbag_230.png) | DR 130/DBAG 230 | 1973 | 140 / 86 | 2867 / 2137 | Universal | 0 | STANDARD_NONE, BROAD_NONE | Asia, Eastern Europe, Western Europe | No |
 | ![Queensland Railways 2350](vehicle_graphics/str_diesel_australia_qr_2350.png) | Queensland Railways 2350 | 1973 | 80 / 49 | 2550 / 1901 | Universal | 0 | NARROW_NONE | Oceania | No |
 | ![TGR Z Class](vehicle_graphics/str_diesel_australia_tgr_z.png) | TGR Z Class | 1973 | 97 / 60 | 2025 / 1509 | Universal | 0 | NARROW_NONE | Oceania | No |
 | ![ENR TE114E](vehicle_graphics/str_diesel_egypt_enr_te114e.png) | ENR TE114E | 1974 | 120 / 74 | 2800 / 2087 | Universal | 0 | STANDARD_NONE, BROAD_NONE | Africa, Eastern Europe, South America | No |
@@ -236,7 +236,7 @@
 | ![UZ 2TE126](vehicle_graphics/str_diesel_ukraine_uz_2te126.png) | UZ 2TE126 | 1987 | 100 / 62 | 6035 / 4499 | Heavy Freight | 0 | BROAD_NONE | Asia, Eastern Europe | No |
 | ![Australian National DL](vehicle_graphics/str_diesel_australia_an_d.png) | Australian National DL | 1988 | 153 / 95 | 3030 / 2259 | Universal | 0 | STANDARD_NONE | Oceania | No |
 | ![Metrolink EMD F59PH](vehicle_graphics/str_diesel_usa_metrolink_emd_f59ph.png) | Metrolink EMD F59PH | 1988 | 177 / 109 | 3000 / 2236 | Express | 0 | STANDARD_NONE | North America | No |
-| ![NS 6400](vehicle_graphics/str_diesel_netherlands_ns_6400.png) | NS 6400 | 1988 | 120 / 74 | 1580 / 1178 | Universal | 0 | STANDARD_NONE | Western Europe | No |
+| ![NS 6400](vehicle_graphics/str_diesel_netherlands_ns_6400.png) | NS 6400 | 1988 | 120 / 74 | 1580 / 1178 | Universal | 0 | STANDARD_NONE | Eastern Europe, Western Europe | No |
 | ![RZD TEP80](vehicle_graphics/str_diesel_russia_rzd_tep80.png) | RZD TEP80 | 1988 | 160 / 99 | 6000 / 4473 | Express | 0 | BROAD_NONE | Asia, Eastern Europe | No |
 | ![BR 60](vehicle_graphics/str_diesel_uk_br_60.png) | BR 60 | 1989 | 97 / 60 | 3100 / 2311 | Universal | 0 | STANDARD_NONE | Northern Europe | No |
 | ![ONCF DF 100](vehicle_graphics/str_diesel_morocco_oncf_df_100.png) | ONCF DF 100 | 1989 | 135 / 83 | 3400 / 2535 | Universal | 0 | STANDARD_NONE | Africa | No |
@@ -251,14 +251,14 @@
 | ![Saudi Railways 4000 EMD SD70ACS](vehicle_graphics/str_diesel_saudi_arabia_saudi_railways_4000_emd_sd70acs.png) | Saudi Railways 4000 EMD SD70ACS | 1992 | 110 / 68 | 4500 / 3355 | Heavy Freight | 0 | BROAD_NONE | Asia | No |
 | ![ZS 621](vehicle_graphics/str_diesel_serbia_zs_621.png) | ZS 621 | 1992 | 80 / 49 | 530 / 395 | Universal | 0 | STANDARD_NONE | Eastern Europe | No |
 | ![CNR 2500 GE C44-9W 'Dash 9'](vehicle_graphics/str_diesel_usa_ge_dash_9_44cw.png) | CNR 2500 GE C44-9W 'Dash 9' | 1993 | 119 / 73 | 4400 / 3280 | Heavy Freight | 0 | STANDARD_NONE, BROAD_NONE | North America, South America | No |
-| ![IE 201](vehicle_graphics/str_diesel_ireland_ie_201.png) | IE 201 | 1994 | 164 / 101 | 3200 / 2385 | Express | 0 | STANDARD_NONE | Northern Europe | No |
+| ![IE 201](vehicle_graphics/str_diesel_ireland_ie_201.png) | IE 201 | 1994 | 164 / 101 | 3200 / 2385 | Express | 0 | BROAD_NONE | Northern Europe | No |
 | ![NSWGR 90](vehicle_graphics/str_diesel_australia_nsw_90.png) | NSWGR 90 | 1994 | 115 / 71 | 4060 / 3027 | Heavy Freight | 0 | STANDARD_NONE | Oceania | No |
 | ![TCDD DH7000](vehicle_graphics/str_diesel_turkey_tcdd_dh7000.png) | TCDD DH7000 | 1994 | 40 / 24 | 700 / 521 | Shunting | 0 | STANDARD_NONE | Asia, Eastern Europe | No |
 | ![BHP 6071 GE AC6000CW ](vehicle_graphics/str_diesel_australia_bhp_6071_ge_ac6000cw.png) | BHP 6071 GE AC6000CW  | 1995 | 120 / 74 | 6000 / 4473 | Heavy Freight | 0 | STANDARD_NONE | Oceania | No |
 | ![MF GE U20C](vehicle_graphics/str_diesel_argentina_mf_ge_u20c.png) | MF GE U20C | 1995 | 104 / 64 | 2150 / 1603 | Express | 0 | NARROW_NONE | South America | No |
 | ![UP 7391 GE AC6044CW](vehicle_graphics/str_diesel_usa_up_7000_ge_ac6000cw.png) | UP 7391 GE AC6044CW | 1995 | 120 / 74 | 6000 / 4473 | Heavy Freight | 0 | STANDARD_NONE | North America | No |
 | ![EMD NR Class Concept](vehicle_graphics/str_diesel_australia_emd_nr_class.png) | EMD NR Class Concept | 1996 | 115 / 71 | 4000 / 2982 | Universal | 0 | STANDARD_NONE | Oceania | Yes |
-| ![BR 66](vehicle_graphics/str_diesel_uk_br_66.png) | BR 66 | 1998 | 120 / 74 | 3200 / 2385 | Universal | 0 | STANDARD_NONE | Northern Europe | No |
+| ![BR 66](vehicle_graphics/str_diesel_uk_br_66.png) | BR 66 | 1998 | 120 / 74 | 3200 / 2385 | Universal | 0 | STANDARD_NONE | Africa, Southern Europe, Eastern Europe, Western Europe, Northern Europe | No |
 | ![Westrail S Class](vehicle_graphics/str_diesel_australia_westrail_s.png) | Westrail S Class | 1998 | 115 / 71 | 3010 / 2244 | Express | 0 | NARROW_NONE | Oceania | No |
 | ![BR 67](vehicle_graphics/str_diesel_uk_br_67.png) | BR 67 | 1999 | 200 / 124 | 3200 / 2385 | Express | 0 | STANDARD_NONE | Northern Europe | No |
 | ![NMBS/SNCB 7800](vehicle_graphics/str_diesel_belgium_nmbs_sncb_7800.png) | NMBS/SNCB 7800 | 1999 | 100 / 62 | 1500 / 1118 | Universal | 0 | STANDARD_NONE | Western Europe | No |
@@ -300,7 +300,7 @@
 | ![Victorian Railways DERM](vehicle_graphics/str_rbd_australia_victorian_railways_derm.png) | Victorian Railways DERM | 1928 | 100 / 62 | 255 / 190 | Commuter/Urban | 40 | BROAD_NONE | Oceania | No |
 | ![CSD Class M 120.4](vehicle_graphics/str_rbd_czech_republic_cd_m120.png) | CSD Class M 120.4 | 1930 | 60 / 37 | 120 / 89 | Commuter/Urban | 38 | STANDARD_NONE | Eastern Europe | No |
 | ![Schienenzeppelin](vehicle_graphics/str_rbd_germany_schienenzeppelin.png) | Schienenzeppelin | 1930 | 230 / 142 | 600 / 447 | Express Passenger | 40 | STANDARD_NONE | Western Europe | No |
-| ![DB VT 133 'Wismar railbus'](vehicle_graphics/str_rbd_germany_db_vt_133.png) | DB VT 133 'Wismar railbus' | 1932 | 56 / 34 | 38 / 28 | Commuter/Urban | 24 | STANDARD_NONE | Western Europe | No |
+| ![DB VT 133 'Wismar railbus'](vehicle_graphics/str_rbd_germany_db_vt_133.png) | DB VT 133 'Wismar railbus' | 1932 | 56 / 34 | 38 / 28 | Commuter/Urban | 24 | STANDARD_NONE, NARROW_NONE | Western Europe | No |
 | ![GWR AEC Railcar](vehicle_graphics/str_rbd_united_kingdom_gwr_aec_railcar.png) | GWR AEC Railcar | 1934 | 101 / 62 | 130 / 96 | Commuter/Urban | 69 | STANDARD_NONE | Northern Europe | No |
 | ![DSB MO Serie 1](vehicle_graphics/str_rbd_denmark_dsb_mo.png) | DSB MO Serie 1 | 1935 | 120 / 74 | 500 / 372 | Commuter/Urban | 52 | STANDARD_NONE | Northern Europe | No |
 | ![FCPBA M Railcar](vehicle_graphics/str_rbd_argentina_fcpba_m_railcar.png) | FCPBA M Railcar | 1935 | 80 / 49 | 270 / 201 | Commuter/Urban | 40 | NARROW_NONE | South America | No |
@@ -390,7 +390,7 @@
 | ![BR 168](vehicle_graphics/str_dmu_uk_br_168.png) | BR 168 | 1997 | 160 / 99 | 844 / 629 | Express Passenger | 136 | STANDARD_NONE | Northern Europe | No |
 | ![RENFE 594 TRD](vehicle_graphics/str_dmu_spain_renfe_594_trd.png) | RENFE 594 TRD | 1997 | 160 / 99 | 3200 / 2385 | Express Passenger | 84 | STANDARD_NONE, BROAD_NONE | Africa, Southern Europe, Eastern Europe, Western Europe, Northern Europe | No |
 | ![DB 612 'Regio Swinger'](vehicle_graphics/str_dmu_germany_db_612_regio_swinger.png) | DB 612 'Regio Swinger' | 1998 | 160 / 99 | 1520 / 1133 | Express Passenger | 146 | STANDARD_NONE | Eastern Europe, Western Europe | No |
-| ![DB 642 'Desiro'](vehicle_graphics/str_dmu_germany_db_642_desiro.png) | DB 642 'Desiro' | 2000 | 120 / 74 | 980 / 730 | Commuter/Urban | 208 | STANDARD_NONE | Eastern Europe, Western Europe | No |
+| ![DB 642 'Desiro'](vehicle_graphics/str_dmu_germany_db_642_desiro.png) | DB 642 'Desiro' | 2000 | 120 / 74 | 980 / 730 | Commuter/Urban | 208 | STANDARD_NONE | Southern Europe, Eastern Europe, Western Europe, Northern Europe, North America | No |
 | ![Arriva Lint 41](vehicle_graphics/str_dmu_denmark_arriva_lint_41.png) | Arriva Lint 41 | 2001 | 120 / 74 | 422 / 314 | Commuter/Urban | 274 | STANDARD_NONE | Northern Europe | No |
 | ![NSB BM 93 'Talent'](vehicle_graphics/str_dmu_norway_nsb_bm_93_talent.png) | NSB BM 93 'Talent' | 2001 | 140 / 86 | 810 / 603 | Commuter/Urban | 76 | STANDARD_NONE | Northern Europe | No |
 | ![Queensland Railways Diesel Tilt Train](vehicle_graphics/str_dmu_australia_queensland_rail_diesel_tilt_train.png) | Queensland Railways Diesel Tilt Train | 2003 | 160 / 99 | 7240 / 5398 | Ultra-High-Speed (Universal) | 0 | NARROW_NONE | Oceania | No |
@@ -440,7 +440,7 @@
 | ![DB E 69 05 / DB 169 005](vehicle_graphics/str_electric_germany_db_169.png) | DB E 69 05 / DB 169 005 | 1930 | 50 / 31 | 810 / 603 | Shunting | 0 | STANDARD_15KV | Western Europe | No |
 | ![JNR EB10](vehicle_graphics/str_electric_japan_jnr_eb10.png) | JNR EB10 | 1931 | 19 / 11 | 360 / 268 | Shunting | 0 | NARROW_1500V | Asia | No |
 | ![NSB EL10](vehicle_graphics/str_electric_norway_nsb_el10.png) | NSB EL10 | 1931 | 45 / 27 | 700 / 521 | Shunting | 0 | STANDARD_15KV | Northern Europe | No |
-| ![MAV V40](vehicle_graphics/str_electric_hungary_mav_class_v40.png) | MAV V40 | 1932 | 100 / 62 | 2203 / 1642 | Universal | 0 | STANDARD_25KV | Eastern Europe | No |
+| ![MAV V40](vehicle_graphics/str_electric_hungary_mav_class_v40.png) | MAV V40 | 1932 | 100 / 62 | 2203 / 1642 | Universal | 0 | STANDARD_15KV | Eastern Europe | No |
 | ![DB E 04 / DB 104](vehicle_graphics/str_electric_germany_db_104.png) | DB E 04 / DB 104 | 1933 | 110 / 68 | 2935 / 2188 | Universal | 0 | STANDARD_15KV | Western Europe | No |
 | ![FS E.428](vehicle_graphics/str_electric_italy_fs_e428.png) | FS E.428 | 1934 | 130 / 80 | 3800 / 2833 | Universal | 0 | STANDARD_3KV | Southern Europe | No |
 | ![PRR GG-1](vehicle_graphics/str_electric_usa_pennsylvania_railroad_gg_1.png) | PRR GG-1 | 1935 | 160 / 99 | 4620 / 3444 | Express | 0 | STANDARD_OHLE | North America | No |
@@ -476,7 +476,7 @@
 | ![PKP EU06](vehicle_graphics/str_electric_poland_pkp_eu06.png) | PKP EU06 | 1962 | 126 / 78 | 1500 / 1118 | Universal | 0 | STANDARD_3KV | Eastern Europe | No |
 | ![RFFSA GE C-C 4400](vehicle_graphics/str_electric_brasil_rffsa_ge_c_c_4400.png) | RFFSA GE C-C 4400 | 1962 | 117 / 72 | 4400 / 3280 | Universal | 0 | BROAD_3KV | South America | No |
 | ![BCK Type 2450](vehicle_graphics/str_electric_congo_type_2450_acec_charleroi_zaire_electric.png) | BCK Type 2450 | 1963 | 70 / 43 | 2200 / 1640 | Universal | 0 | NARROW_25KV | Africa | No |
-| ![MAV V43](vehicle_graphics/str_electric_hungary_mav_class_v43.png) | MAV V43 | 1963 | 120 / 74 | 3000 / 2236 | Universal | 0 | STANDARD_25KV | Eastern Europe | No |
+| ![MAV V43](vehicle_graphics/str_electric_hungary_mav_class_v43.png) | MAV V43 | 1963 | 120 / 74 | 3000 / 2236 | Universal | 0 | STANDARD_25KV, STANDARD_15KV | Eastern Europe | No |
 | ![RZD VL41](vehicle_graphics/str_electric_russia_rzd_vl41.png) | RZD VL41 | 1963 | 70 / 43 | 2280 / 1699 | Universal | 0 | BROAD_25KV | Asia, Eastern Europe | No |
 | ![JNR EF64](vehicle_graphics/str_electric_japan_jnr_ef64.png) | JNR EF64 | 1964 | 100 / 62 | 3420 / 2549 | Express | 0 | NARROW_1500V | Asia | No |
 | ![SNCF BB 25500](vehicle_graphics/str_electric_france_sncf_bb_25500.png) | SNCF BB 25500 | 1964 | 100 / 62 | 3940 / 2937 | Universal | 0 | STANDARD_OHLE | Western Europe | No |
@@ -504,7 +504,7 @@
 | ![FS E.633](vehicle_graphics/str_electric_italy_fs_e633.png) | FS E.633 | 1979 | 130 / 80 | 5600 / 4175 | Universal | 0 | STANDARD_3KV | Southern Europe | No |
 | ![NSWGR 85](vehicle_graphics/str_electric_australia_nsw_85.png) | NSWGR 85 | 1979 | 130 / 80 | 3860 / 2878 | Universal | 0 | STANDARD_1500V | Oceania | No |
 | ![CD ES 499.1/363](vehicle_graphics/str_electric_czech_republic_cd_363.png) | CD ES 499.1/363 | 1980 | 120 / 74 | 4667 / 3479 | Universal | 0 | STANDARD_OHLE | Eastern Europe | No |
-| ![EFE E-269](vehicle_graphics/str_electric_chile_efe_e_269.png) | EFE E-269 | 1980 | 160 / 99 | 4340 / 3235 | Express | 0 | BROAD_3KV | South America | No |
+| ![EFE E-269](vehicle_graphics/str_electric_chile_efe_e_269.png) | EFE E-269 | 1980 | 160 / 99 | 4340 / 3235 | Express | 0 | BROAD_3KV | Southern Europe, South America | No |
 | ![NS 1600](vehicle_graphics/str_electric_netherlands_ns_1600.png) | NS 1600 | 1980 | 160 / 99 | 6200 / 4622 | Express | 0 | STANDARD_1500V | Western Europe | No |
 | ![FNM GE E60C-2](vehicle_graphics/str_electric_mexico_fnm_ge_e60c_2.png) | FNM GE E60C-2 | 1982 | 110 / 68 | 6000 / 4473 | Heavy Freight | 0 | STANDARD_OHLE | North America | No |
 | ![NSB EL17](vehicle_graphics/str_electric_norway_nsb_el17.png) | NSB EL17 | 1982 | 150 / 93 | 4000 / 2982 | Universal | 0 | STANDARD_15KV | Northern Europe | No |
@@ -513,7 +513,7 @@
 | ![BC Rail GF6C](vehicle_graphics/str_electric_canada_bc_rail_gf6c.png) | BC Rail GF6C | 1983 | 90 / 55 | 6000 / 4473 | Heavy Freight | 0 | STANDARD_25KV | North America | No |
 | ![NSWGR 86](vehicle_graphics/str_electric_australia_nsw_86.png) | NSWGR 86 | 1983 | 130 / 80 | 3860 / 2878 | Universal | 0 | STANDARD_1500V | Oceania | No |
 | ![RZD VL85](vehicle_graphics/str_electric_russia_rzd_vl85.png) | RZD VL85 | 1983 | 110 / 68 | 13438 / 10019 | Heavy Freight | 0 | BROAD_25KV | Asia, Eastern Europe | No |
-| ![UZ ChS7](vehicle_graphics/str_electric_ukraine_uz_chs7.png) | UZ ChS7 | 1983 | 160 / 99 | 8624 / 6430 | Express | 0 | BROAD_3KV | Eastern Europe | No |
+| ![UZ ChS7](vehicle_graphics/str_electric_ukraine_uz_chs7.png) | UZ ChS7 | 1983 | 160 / 99 | 8624 / 6430 | Express | 0 | BROAD_3KV | Asia, Eastern Europe | No |
 | ![RZD VL15](vehicle_graphics/str_electric_russia_rzd_vl15.png) | RZD VL15 | 1984 | 100 / 62 | 12070 / 8999 | Heavy Freight | 0 | BROAD_3KV | Asia, Eastern Europe | No |
 | ![SAR 11E](vehicle_graphics/str_electric_south_africa_sar_11e.png) | SAR 11E | 1985 | 90 / 55 | 5200 / 3877 | Heavy Freight | 0 | NARROW_25KV | Africa | No |
 | ![China Railways 6K](vehicle_graphics/str_electric_china_china_railways_6k.png) | China Railways 6K | 1986 | 100 / 62 | 6400 / 4771 | Universal | 0 | STANDARD_25KV | Asia | No |
@@ -524,30 +524,30 @@
 | ![FS E.491](vehicle_graphics/str_electric_italy_fs_e491.png) | FS E.491 | 1988 | 140 / 86 | 4600 / 3429 | Universal | 0 | STANDARD_25KV | Southern Europe | No |
 | ![SNCF BB 26000](vehicle_graphics/str_electric_france_sncf_bb_26000.png) | SNCF BB 26000 | 1989 | 200 / 124 | 7504 / 5594 | Express | 0 | STANDARD_OHLE | Western Europe | No |
 | ![China Railways SS6](vehicle_graphics/str_electric_china_china_railways_ss6.png) | China Railways SS6 | 1991 | 100 / 62 | 6400 / 4771 | Universal | 0 | STANDARD_25KV | Asia | No |
-| ![SBB Re460 'Lok 2000'](vehicle_graphics/str_electric_switzerland_sbb_re460_lok_2000.png) | SBB Re460 'Lok 2000' | 1991 | 230 / 142 | 7510 / 5599 | Express | 0 | STANDARD_15KV | Asia, Western Europe, Northern Europe | No |
+| ![SBB Re460 'Lok 2000'](vehicle_graphics/str_electric_switzerland_sbb_re460_lok_2000.png) | SBB Re460 'Lok 2000' | 1991 | 230 / 142 | 7510 / 5599 | Express | 0 | STANDARD_25KV, STANDARD_15KV | Asia, Western Europe, Northern Europe | No |
 | ![ZSSK 162](vehicle_graphics/str_electric_slovakia_zssk_162.png) | ZSSK 162 | 1991 | 140 / 86 | 4872 / 3632 | Universal | 0 | STANDARD_3KV | Eastern Europe | No |
 | ![Amcoal E38](vehicle_graphics/str_electric_south_africa_sar_e38.png) | Amcoal E38 | 1992 | 100 / 62 | 2000 / 1491 | Express | 0 | NARROW_3KV | Africa | No |
 | ![RENFE 252](vehicle_graphics/str_electric_spain_renfe_252.png) | RENFE 252 | 1992 | 200 / 124 | 7500 / 5592 | Express | 0 | STANDARD_OHLE, BROAD_OHLE | Southern Europe | No |
-| ![BR 92](vehicle_graphics/str_electric_uk_br_92.png) | BR 92 | 1993 | 140 / 86 | 6760 / 5040 | Universal | 0 | STANDARD_OHLE, STANDARD_DUAL | Northern Europe | No |
+| ![BR 92](vehicle_graphics/str_electric_uk_br_92.png) | BR 92 | 1993 | 140 / 86 | 6760 / 5040 | Universal | 0 | STANDARD_DUAL | Northern Europe | No |
 | ![China Railways SS8](vehicle_graphics/str_electric_china_china_railways_ss8.png) | China Railways SS8 | 1994 | 170 / 105 | 4830 / 3601 | Express | 0 | STANDARD_25KV | Asia | No |
 | ![Indian Railways WAP-4](vehicle_graphics/str_electric_india_indian_railways_wap_4.png) | Indian Railways WAP-4 | 1994 | 140 / 86 | 5350 / 3988 | Universal | 0 | BROAD_25KV | Asia | No |
 | ![UZ DE1](vehicle_graphics/str_electric_ukraine_uz_de1.png) | UZ DE1 | 1995 | 100 / 62 | 8750 / 6524 | Heavy Freight | 0 | BROAD_3KV | Eastern Europe | No |
 | ![JR EH500](vehicle_graphics/str_electric_japan_jr_eh500.png) | JR EH500 | 1997 | 110 / 68 | 5400 / 4026 | Express | 0 | NARROW_OHLE | Asia | No |
 | ![NMBS/SNCB 13 HLE](vehicle_graphics/str_electric_belgium_nmbs_sncb_13_hle.png) | NMBS/SNCB 13 HLE | 1997 | 200 / 124 | 6968 / 5195 | Express | 0 | STANDARD_OHLE | Western Europe | No |
 | ![Amtrak HHP-8](vehicle_graphics/str_electric_usa_amtrak_hhp_8.png) | Amtrak HHP-8 | 1999 | 217 / 134 | 8000 / 5964 | Express | 0 | STANDARD_OHLE | North America | No |
-| ![DB 182 ES64U 'Taurus'](vehicle_graphics/str_electric_germany_db_182_es64u_taurus.png) | DB 182 ES64U 'Taurus' | 2000 | 230 / 142 | 11266 / 8399 | Express | 0 | STANDARD_OHLE | Western Europe | No |
-| ![DB 185 TRAXX F140](vehicle_graphics/str_electric_germany_db_185_traxx_f140.png) | DB 185 TRAXX F140 | 2000 | 140 / 86 | 5600 / 4175 | Universal | 0 | STANDARD_OHLE | Western Europe | No |
+| ![DB 182 ES64U 'Taurus'](vehicle_graphics/str_electric_germany_db_182_es64u_taurus.png) | DB 182 ES64U 'Taurus' | 2000 | 230 / 142 | 11266 / 8399 | Express | 0 | STANDARD_OHLE | Southern Europe, Eastern Europe, Western Europe, Northern Europe | No |
+| ![DB 185 TRAXX F140](vehicle_graphics/str_electric_germany_db_185_traxx_f140.png) | DB 185 TRAXX F140 | 2000 | 140 / 86 | 5600 / 4175 | Universal | 0 | STANDARD_OHLE | Southern Europe, Eastern Europe, Western Europe, Northern Europe | No |
 | ![MTAB IORE](vehicle_graphics/str_electric_sweden_mtab_iore.png) | MTAB IORE | 2000 | 80 / 49 | 14400 / 10736 | Heavy Freight | 0 | STANDARD_15KV | Northern Europe | No |
 | ![Korail 8200](vehicle_graphics/str_electric_south_korea_korail_8200.png) | Korail 8200 | 2003 | 150 / 93 | 7000 / 5219 | Universal | 0 | STANDARD_25KV | Asia | No |
-| ![UZ DS3](vehicle_graphics/str_electric_ukraine_uz_ds3.png) | UZ DS3 | 2003 | 160 / 99 | 6450 / 4809 | Express | 0 | STANDARD_25KV | Eastern Europe | No |
+| ![UZ DS3](vehicle_graphics/str_electric_ukraine_uz_ds3.png) | UZ DS3 | 2003 | 160 / 99 | 6450 / 4809 | Express | 0 | BROAD_25KV | Eastern Europe | No |
 | ![KTZ KZ4A](vehicle_graphics/str_electric_kazakhstan_ktz_kz4a.png) | KTZ KZ4A | 2004 | 210 / 130 | 6500 / 4846 | Express | 0 | BROAD_25KV | Asia | No |
 | ![China Railways HXD3](vehicle_graphics/str_electric_china_china_railways_hxd3.png) | China Railways HXD3 | 2006 | 120 / 74 | 9700 / 7232 | Heavy Freight | 0 | STANDARD_25KV | Asia | No |
 | ![China Railways HXD2](vehicle_graphics/str_electric_china_china_railways_hxd2.png) | China Railways HXD2 | 2007 | 120 / 74 | 13000 / 9692 | Heavy Freight | 0 | STANDARD_25KV | Asia | No |
-| ![China Railways HXD2B](vehicle_graphics/str_electric_china_china_railways_hxd2b.png) | China Railways HXD2B | 2007 | 120 / 74 | 12900 / 9618 | Heavy Freight | 0 | STANDARD_25KV | Asia | No |
+| ![China Railways HXD2B](vehicle_graphics/str_electric_china_china_railways_hxd2b.png) | China Railways HXD2B | 2007 | 120 / 74 | 12900 / 9618 | Heavy Freight | 0 | STANDARD_25KV, BROAD_25KV | Asia, Eastern Europe | No |
 | ![Aurizon E40 AG-V1](vehicle_graphics/str_electric_australia_aurizon_e40_ag_v1.png) | Aurizon E40 AG-V1 | 2008 | 80 / 49 | 5360 / 3996 | Universal | 0 | NARROW_25KV | Oceania | No |
 | ![CD 380](vehicle_graphics/str_electric_czech_republic_cd_380.png) | CD 380 | 2008 | 200 / 124 | 8583 / 6399 | Express | 0 | STANDARD_OHLE | Eastern Europe | No |
 | ![ONCF E 1400 'Prima II'](vehicle_graphics/str_electric_morocco_oncf_e_1400_prima_ii.png) | ONCF E 1400 'Prima II' | 2010 | 160 / 99 | 8600 / 6412 | Express | 0 | STANDARD_3KV | Africa | No |
-| ![RZD EP20](vehicle_graphics/str_electric_russia_rzd_ep20.png) | RZD EP20 | 2011 | 200 / 124 | 9655 / 7198 | Express | 0 | BROAD_OHLE | Asia | No |
+| ![RZD EP20](vehicle_graphics/str_electric_russia_rzd_ep20.png) | RZD EP20 | 2011 | 200 / 124 | 9655 / 7198 | Express | 0 | BROAD_OHLE | Asia, Eastern Europe | No |
 | ![Amtrak ACS-64](vehicle_graphics/str_electric_usa_amtrak_acs_64.png) | Amtrak ACS-64 | 2012 | 201 / 124 | 6700 / 4995 | Express | 0 | STANDARD_OHLE | North America | No |
 | ![China Railways HXD1D](vehicle_graphics/str_electric_china_china_railways_hxd1d.png) | China Railways HXD1D | 2012 | 160 / 99 | 9700 / 7232 | Express | 0 | STANDARD_25KV | Asia | No |
 | ![China Railways HXD3D](vehicle_graphics/str_electric_china_china_railways_hxd3d.png) | China Railways HXD3D | 2012 | 160 / 99 | 10058 / 7499 | Express | 0 | STANDARD_25KV | Asia | No |
@@ -611,9 +611,9 @@
 | ![NSWGR W 'Sputnik'](vehicle_graphics/str_emu_australia_nsw_w.png) | NSWGR W 'Sputnik' | 1957 | 120 / 74 | 760 / 566 | Express Passenger | 118 | NARROW_1500V | Oceania | No |
 | ![SAR 5M2](vehicle_graphics/str_emu_south_africa_sar_5m2.png) | SAR 5M2 | 1958 | 100 / 62 | 2480 / 1849 | Express Passenger | 176 | NARROW_3KV | Africa | No |
 | ![SBB Rae TEE II](vehicle_graphics/str_emu_switzerland_sbb_rae_tee_ii.png) | SBB Rae TEE II | 1961 | 160 / 99 | 3100 / 2311 | Express Passenger | 116 | STANDARD_OHLE | Western Europe | No |
-| ![Odakyu 3100 Series 'Romance'](vehicle_graphics/str_emu_japan_odakyu_3100_series_romance.png) | Odakyu 3100 Series 'Romance' | 1962 | 110 / 68 | 1072 / 799 | Express Passenger | 96 | NARROW_1500V | Asia | No |
+| ![Odakyu 3100 series NSE](vehicle_graphics/str_emu_japan_odakyu_3100_series_romance.png) | Odakyu 3100 series NSE | 1962 | 110 / 68 | 1072 / 799 | Express Passenger | 96 | NARROW_1500V | Asia | No |
 | ![JNR Shinkansen Series 0](vehicle_graphics/str_emu_japan_jnr_shinkansen_series_0.png) | JNR Shinkansen Series 0 | 1964 | 210 / 130 | 1984 / 1479 | Express Passenger | 150 | STANDARD_25KV | Asia | No |
-| ![CFR 58](vehicle_graphics/str_emu_romania_cfr_58.png) | CFR 58 | 1965 | 120 / 74 | 824 / 614 | Commuter/Urban | 136 | STANDARD_25KV | Eastern Europe | No |
+| ![CFR 58](vehicle_graphics/str_emu_romania_cfr_58.png) | CFR 58 | 1965 | 120 / 74 | 824 / 614 | Commuter/Urban | 136 | STANDARD_25KV | Eastern Europe, Western Europe | No |
 | ![SBB RABDe 510](vehicle_graphics/str_emu_switzerland_sbb_rabde_510.png) | SBB RABDe 510 | 1965 | 125 / 77 | 2184 / 1628 | Commuter/Urban | 112 | STANDARD_15KV | Western Europe | No |
 | ![DSB S-Tog II](vehicle_graphics/str_emu_denmark_dsb_s_tog_ii.png) | DSB S-Tog II | 1966 | 100 / 62 | 400 / 298 | Commuter/Urban | 112 | STANDARD_1500V | Northern Europe | No |
 | ![DB 420](vehicle_graphics/str_emu_germany_db_et420.png) | DB 420 | 1969 | 125 / 77 | 2144 / 1598 | Commuter/Urban | 304 | STANDARD_15KV | Western Europe | No |
@@ -624,7 +624,7 @@
 | ![RZD ER200](vehicle_graphics/str_emu_russia_rzd_er200.png) | RZD ER200 | 1973 | 200 / 124 | 1280 / 954 | Express Passenger | 128 | BROAD_3KV, BROAD_1500V | Eastern Europe | No |
 | ![FS ALe 801](vehicle_graphics/str_emu_italy_fs_ale_801.png) | FS ALe 801 | 1975 | 150 / 93 | 702 / 523 | Commuter/Urban | 160 | STANDARD_3KV | Southern Europe | No |
 | ![NS Plan Y](vehicle_graphics/str_emu_netherlands_ns_plan_y.png) | NS Plan Y | 1975 | 125 / 77 | 1720 / 1282 | Commuter/Urban | 154 | STANDARD_1500V | Western Europe | No |
-| ![VR Sm2](vehicle_graphics/str_emu_finland_vr_sm2.png) | VR Sm2 | 1975 | 120 / 74 | 818 / 609 | Express Passenger | 200 | NARROW_25KV | Northern Europe | No |
+| ![VR Sm2](vehicle_graphics/str_emu_finland_vr_sm2.png) | VR Sm2 | 1975 | 120 / 74 | 818 / 609 | Commuter/Urban | 200 | BROAD_OHLE | Northern Europe | No |
 | ![BREL GEC Auckland ART Concept](vehicle_graphics/str_emu_new_zealand_brel_gec_auckland_art_concept.png) | BREL GEC Auckland ART Concept | 1977 | 120 / 74 | 1500 / 1118 | Express Passenger | 160 | NARROW_25KV | Oceania | Yes |
 | ![NS ICM 4000](vehicle_graphics/str_emu_netherlands_ns_icm_4000.png) | NS ICM 4000 | 1979 | 140 / 86 | 1720 / 1282 | Commuter/Urban | 204 | STANDARD_1500V | Western Europe | No |
 | ![NZR EM/ET](vehicle_graphics/str_emu_new_zealand_nzr_em_et_class.png) | NZR EM/ET | 1979 | 95 / 59 | 540 / 402 | Commuter/Urban | 148 | NARROW_1500V | Oceania | No |
@@ -635,15 +635,16 @@
 | ![ONCF ZMC](vehicle_graphics/str_emu_morocco_oncf_zmc.png) | ONCF ZMC | 1984 | 160 / 99 | 1900 / 1416 | Express Passenger | 180 | STANDARD_3KV | Africa | No |
 | ![SBB RBDe 560](vehicle_graphics/str_emu_switzerland_sbb_rbde_560.png) | SBB RBDe 560 | 1984 | 140 / 86 | 2210 / 1647 | Commuter/Urban | 112 | STANDARD_15KV | Western Europe | No |
 | ![SNCFT YZ-E](vehicle_graphics/str_emu_tunisia_sncft_yz_e.png) | SNCFT YZ-E | 1984 | 120 / 74 | 2010 / 1498 | Express Passenger | 300 | NARROW_25KV | Africa | No |
-| ![Odakyu 10000 Series 'Romance'](vehicle_graphics/str_emu_japan_odakyu_10000_series_romance.png) | Odakyu 10000 Series 'Romance' | 1986 | 110 / 68 | 1550 / 1155 | Express Passenger | 92 | NARROW_1500V | Asia | No |
+| ![Odakyu 10000 series HiSE](vehicle_graphics/str_emu_japan_odakyu_10000_series_romance.png) | Odakyu 10000 series HiSE | 1986 | 110 / 68 | 1550 / 1155 | Express Passenger | 92 | NARROW_1500V | Asia | No |
 | ![MAV BDVmot](vehicle_graphics/str_emu_hungary_mav_bdvmot.png) | MAV BDVmot | 1988 | 120 / 74 | 2040 / 1521 | Commuter/Urban | 172 | STANDARD_25KV | Eastern Europe | No |
 | ![Sydney T-Set 'Tangara'](vehicle_graphics/str_emu_australia_sydney_tangara.png) | Sydney T-Set 'Tangara' | 1988 | 115 / 71 | 1824 / 1359 | Commuter/Urban | 196 | STANDARD_1500V | Oceania | No |
 | ![Tangara V-Set Hybrid Concept](vehicle_graphics/str_emu_australia_tangara_v_set_hybrid.png) | Tangara V-Set Hybrid Concept | 1988 | 130 / 80 | 1600 / 1192 | Commuter/Urban | 200 | STANDARD_1500V | Oceania | Yes |
-| ![SJ X2000](vehicle_graphics/str_emu_sweden_sj_x2000.png) | SJ X2000 | 1990 | 200 / 124 | 4400 / 3280 | Express | 0 | STANDARD_OHLE | Northern Europe, Oceania | No |
+| ![SJ X2000](vehicle_graphics/str_emu_sweden_sj_x2000.png) | SJ X2000 | 1990 | 200 / 124 | 4400 / 3280 | Express | 0 | STANDARD_OHLE | Asia, Northern Europe, Oceania | No |
 | ![Melbourne 4D Prototype](vehicle_graphics/str_emu_australia_4d_train.png) | Melbourne 4D Prototype | 1992 | 130 / 80 | 1824 / 1359 | Commuter/Urban | 486 | STANDARD_1500V, BROAD_1500V | Oceania | No |
 | ![FS ETR.500 'Frecciarossa'](vehicle_graphics/str_emu_italy_fs_etr500.png) | FS ETR.500 'Frecciarossa' | 1993 | 250 / 155 | 11800 / 8798 | Express | 0 | STANDARD_3KV | Southern Europe | No |
 | ![JR Shinkansen Series E1 Max](vehicle_graphics/str_emu_japan_jr_shinkansen_series_e1_max.png) | JR Shinkansen Series E1 Max | 1994 | 240 / 149 | 2790 / 2080 | Express Passenger | 160 | STANDARD_25KV | Asia | No |
 | ![NS DD-IRM 'VIRM' 8000](vehicle_graphics/str_emu_netherlands_ns_dd_irm_virm.png) | NS DD-IRM 'VIRM' 8000 | 1994 | 140 / 86 | 1720 / 1282 | Commuter/Urban | 190 | STANDARD_1500V | Western Europe | No |
+| ![CD 680 'Pendolino'](vehicle_graphics/str_emu_czech_republic_cd_680_pendolino.png) | CD 680 'Pendolino' | 1995 | 200 / 124 | 1318 / 982 | Express Passenger | 94 | STANDARD_OHLE, BROAD_OHLE | Southern Europe, Eastern Europe, Western Europe, Northern Europe | No |
 | ![SNCF TGV Duplex](vehicle_graphics/str_emu_france_sncf_tgv_duplex.png) | SNCF TGV Duplex | 1995 | 320 / 198 | 11800 / 8798 | Ultra-High-Speed (Universal) | 0 | STANDARD_OHLE | Western Europe | No |
 | ![Thalys PBKA](vehicle_graphics/str_emu_france_thalys_pbka.png) | Thalys PBKA | 1995 | 300 / 186 | 11800 / 8798 | Ultra-High-Speed (Universal) | 0 | STANDARD_OHLE | Western Europe | No |
 | ![DSB S-Tog IV](vehicle_graphics/str_emu_denmark_dsb_s_tog_iv.png) | DSB S-Tog IV | 1996 | 120 / 74 | 1150 / 857 | Commuter/Urban | 180 | STANDARD_1500V | Northern Europe | No |
@@ -653,9 +654,8 @@
 | ![Queensland Railways Tilt Train](vehicle_graphics/str_emu_australia_queensland_rail_tilt_train.png) | Queensland Railways Tilt Train | 1997 | 160 / 99 | 1820 / 1356 | Ultra-High-Speed (Pax) | 94 | NARROW_25KV | Oceania | No |
 | ![NSB BM73](vehicle_graphics/str_emu_norway_nsb_bm73.png) | NSB BM73 | 1998 | 210 / 130 | 2332 / 1738 | Express Passenger | 108 | STANDARD_15KV | Northern Europe | No |
 | ![Amtrak Acela Express](vehicle_graphics/str_emu_usa_amtrak_acela_express.png) | Amtrak Acela Express | 1999 | 240 / 149 | 6200 / 4622 | Express | 0 | STANDARD_OHLE | North America | No |
-| ![CD 680 'Pendolino'](vehicle_graphics/str_emu_czech_republic_cd_680_pendolino.png) | CD 680 'Pendolino' | 1999 | 200 / 124 | 1318 / 982 | Express Passenger | 94 | STANDARD_OHLE, BROAD_OHLE | Southern Europe, Eastern Europe, Western Europe, Northern Europe | No |
 | ![CFL 2200 'Coradia Duplex'](vehicle_graphics/str_emu_luxembourg_cfl_2200_coradia_duplex.png) | CFL 2200 'Coradia Duplex' | 1999 | 160 / 99 | 3410 / 2542 | Express Passenger | 222 | STANDARD_OHLE | Western Europe | No |
-| ![VR Sm4](vehicle_graphics/str_emu_finland_vr_sm4.png) | VR Sm4 | 1999 | 160 / 99 | 1636 / 1219 | Ultra-High-Speed (Pax) | 184 | NARROW_25KV | Northern Europe | No |
+| ![VR Sm4](vehicle_graphics/str_emu_finland_vr_sm4.png) | VR Sm4 | 1999 | 160 / 99 | 1636 / 1219 | Express Passenger | 184 | BROAD_OHLE | Northern Europe | No |
 | ![DB 403 'ICE3'](vehicle_graphics/str_emu_germany_db_403_ice_3.png) | DB 403 'ICE3' | 2000 | 328 / 203 | 10728 / 7998 | Ultra-High-Speed (Pax) | 110 | STANDARD_15KV | Western Europe | No |
 | ![MTR SP1900](vehicle_graphics/str_emu_hong_kong_mtr_sp1900.png) | MTR SP1900 | 2001 | 130 / 80 | 5149 / 3839 | Commuter/Urban | 500 | STANDARD_25KV | Asia | No |
 | ![RENFE 120](vehicle_graphics/str_emu_spain_renfe_120.png) | RENFE 120 | 2001 | 250 / 155 | 2680 / 1998 | Express Passenger | 120 | STANDARD_OHLE, BROAD_OHLE | Southern Europe | No |
@@ -664,7 +664,7 @@
 | ![SBB RABe 523 'Flirt'](vehicle_graphics/str_emu_switzerland_sbb_rabe_523_flirt.png) | SBB RABe 523 'Flirt' | 2004 | 160 / 99 | 2682 / 1999 | Express Passenger | 100 | STANDARD_15KV, STANDARD_3KV, BROAD_25KV | Southern Europe, Eastern Europe, Western Europe, Northern Europe | No |
 | ![BDZ 10 'Desiro'](vehicle_graphics/str_emu_bulgaria_bdz_10_desiro.png) | BDZ 10 'Desiro' | 2005 | 120 / 74 | 1740 / 1297 | Commuter/Urban | 190 | STANDARD_25KV | Eastern Europe | No |
 | ![EFE X'Trapolis 100](vehicle_graphics/str_emu_chile_efe_xtrapolis_100.png) | EFE X'Trapolis 100 | 2005 | 130 / 80 | 1930 / 1439 | Commuter/Urban | 144 | BROAD_1500V | South America | No |
-| ![Sydney Trains OSCars](vehicle_graphics/str_emu_australia_sydney_trains_oscars.png) | Sydney Trains OSCars | 2007 | 130 / 80 | 2144 / 1598 | Commuter/Urban | 240 | STANDARD_1500V | Oceania | No |
+| ![Sydney Trains H-set](vehicle_graphics/str_emu_australia_sydney_trains_oscars.png) | Sydney Trains H-set | 2007 | 130 / 80 | 2144 / 1598 | Commuter/Urban | 240 | STANDARD_1500V | Oceania | No |
 | ![China Railways CHR380A](vehicle_graphics/str_emu_china_railways_chr380a.png) | China Railways CHR380A | 2010 | 350 / 217 | 3210 / 2393 | Ultra-High-Speed (Pax) | 140 | STANDARD_25KV | Asia | No |
 | ![Gautrain Electrostar](vehicle_graphics/str_emu_south_africa_gautrain_electrostar.png) | Gautrain Electrostar | 2010 | 160 / 99 | 2253 / 1679 | Express Passenger | 128 | STANDARD_25KV | Africa | No |
 | ![NZR FP/FT 'Matangi'](vehicle_graphics/str_emu_new_zealand_fpft_matangi.png) | NZR FP/FT 'Matangi' | 2010 | 120 / 74 | 910 / 678 | Express Passenger | 376 | NARROW_1500V | Oceania | No |
@@ -779,7 +779,7 @@
 | :---: | :--- | :---: | :---: | :---: | :--- | :---: | :--- | :--- | :--- |
 | ![Maglev Unit Wagon](vehicle_graphics/str_mglv_maglev_wagon_powered.png) | Maglev Unit Wagon | 2000 | 0 / 0 | 0 / 0 | Powered/Unpowered Sundry | 1 | MGLV | Africa, Asia, Southern Europe, Eastern Europe, Western Europe, Northern Europe, North America, South America, Oceania | No |
 | ![Maglev Unit Wagon](vehicle_graphics/str_mglv_maglev_wagon_unpowered.png) | Maglev Unit Wagon | 2000 | 0 / 0 | 0 / 0 | Powered/Unpowered Sundry | 1 | MGLV | Africa, Asia, Southern Europe, Eastern Europe, Western Europe, Northern Europe, North America, South America, Oceania | No |
-| ![Shanghai Transrapid](vehicle_graphics/str_mmu_china_transrapid.png) | Shanghai Transrapid | 2004 | 433 / 269 | 13450 / 10028 | Ultra-High-Speed (Pax) | 100 | MGLV | Asia | No |
+| ![Shanghai Transrapid](vehicle_graphics/str_mmu_china_transrapid.png) | Shanghai Transrapid | 2004 | 433 / 269 | 13450 / 10028 | Ultra-High-Speed (Pax) | 100 | MGLV | Asia, Western Europe | No |
 | ![JR MLX01-901](vehicle_graphics/str_mmu_japan_mlx01_901.png) | JR MLX01-901 | 2025 | 500 / 310 | 20115 / 14997 | Ultra-High-Speed (Pax) | 38 | MGLV | Asia | Yes |
 | ![Chimaera](vehicle_graphics/str_mmu_world_chimaera.png) | Chimaera | 2030 | 643 / 399 | 20000 / 14912 | Ultra-High-Speed (Pax) | 300 | MGLV | Africa, Asia, Southern Europe, Eastern Europe, Western Europe, Northern Europe, North America, South America, Oceania | Yes |
 
@@ -868,7 +868,7 @@
 | ![NSWGR C35](vehicle_graphics/str_steam_australia_nswgr_c35.png) | NSWGR C35 | 1914 | 80 / 49 | 1400 / 1043 | Universal | 0 | STANDARD_NONE | Oceania | No |
 | ![NYC H-6A 'Light Mikado'](vehicle_graphics/str_steam_usa_nyc_h_6a_light_mikado.png) | NYC H-6A 'Light Mikado' | 1914 | 96 / 59 | 2990 / 2229 | Heavy Freight | 0 | STANDARD_NONE | North America | No |
 | ![LNER N7](vehicle_graphics/str_steam_uk_lner_n7.png) | LNER N7 | 1915 | 75 / 46 | 850 / 633 | Universal | 0 | STANDARD_NONE | Northern Europe | No |
-| ![RZD E](vehicle_graphics/str_steam_russia_rzd_e.png) | RZD E | 1915 | 89 / 55 | 1600 / 1192 | Heavy Freight | 0 | BROAD_NONE | Asia, Eastern Europe | No |
+| ![RZD E](vehicle_graphics/str_steam_russia_rzd_e.png) | RZD E | 1915 | 89 / 55 | 1600 / 1192 | Heavy Freight | 0 | STANDARD_NONE, BROAD_NONE | Asia, Eastern Europe, Northern Europe | No |
 | ![FS 880](vehicle_graphics/str_steam_italy_fs_880.png) | FS 880 | 1916 | 75 / 46 | 540 / 402 | Universal | 0 | STANDARD_NONE | Southern Europe | No |
 | ![BCK Class 200 'Katanga Mikado'](vehicle_graphics/str_steam_south_africa_katanga_mikado_2_8_2.png) | BCK Class 200 'Katanga Mikado' | 1917 | 55 / 34 | 950 / 708 | Shunting | 0 | NARROW_NONE | Africa | No |
 | ![Israel/Palestine Railways H](vehicle_graphics/str_steam_israel_israel_railways_h.png) | Israel/Palestine Railways H | 1918 | 85 / 52 | 1050 / 782 | Universal | 0 | STANDARD_NONE | Asia | No |
@@ -921,7 +921,7 @@
 | ![LNER A1 'Peppercorn'](vehicle_graphics/str_steam_uk_lner_a1_peppercorn.png) | LNER A1 'Peppercorn' | 1948 | 160 / 99 | 2400 / 1789 | Express | 0 | STANDARD_NONE | Northern Europe | No |
 | ![GWR 1600](vehicle_graphics/str_steam_uk_gwr_1600_class.png) | GWR 1600 | 1949 | 65 / 40 | 500 / 372 | Universal | 0 | STANDARD_NONE | Northern Europe | No |
 | ![HSH 01](vehicle_graphics/str_steam_albania_hsh_01.png) | HSH 01 | 1951 | 80 / 49 | 1200 / 894 | Universal | 0 | STANDARD_NONE | Southern Europe | No |
-| ![PKP OI49](vehicle_graphics/str_steam_poland_pkp_oi49.png) | PKP OI49 | 1951 | 100 / 62 | 1290 / 961 | Heavy Freight | 0 | STANDARD_NONE | Eastern Europe | No |
+| ![PKP OI49](vehicle_graphics/str_steam_poland_pkp_oi49.png) | PKP OI49 | 1951 | 100 / 62 | 1290 / 961 | Heavy Freight | 0 | STANDARD_NONE | Asia, Eastern Europe | No |
 | ![Victorian Railways R](vehicle_graphics/str_steam_australia_victorian_railways_r_class.png) | Victorian Railways R | 1951 | 130 / 80 | 2400 / 1789 | Heavy Freight | 0 | BROAD_NONE | Oceania | No |
 | ![DB 99.77-79](vehicle_graphics/str_steam_germany_db_9977_79.png) | DB 99.77-79 | 1952 | 30 / 18 | 592 / 441 | Shunting | 0 | NARROW_NONE | Western Europe | No |
 | ![NSWGR AD60](vehicle_graphics/str_steam_australia_nswgr_ad60.png) | NSWGR AD60 | 1952 | 95 / 59 | 3500 / 2609 | Heavy Freight | 0 | STANDARD_NONE | Oceania | No |
