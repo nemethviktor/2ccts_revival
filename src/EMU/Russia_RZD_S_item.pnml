@@ -29,7 +29,7 @@
 item(FEAT_TRAINS, item_emu_russia_rzd_s) {
     property {
         name: string(str_emu_russia_rzd_s);
-        climates_available: ((param_region_asia || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
+        climates_available: ((0 || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1929,1,1);
         model_life: 45;
         vehicle_life: 83;
@@ -52,7 +52,7 @@ item(FEAT_TRAINS, item_emu_russia_rzd_s) {
         misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
         refit_cost: 0;
         ai_special_flag: AI_FLAG_PASSENGER | AI_FLAG_CARGO;
-        track_type: [BROAD_GAUGE_RAILTYPE_3KV];
+        track_type: [BROAD_GAUGE_RAILTYPE_3KV, BROAD_GAUGE_RAILTYPE_1500V];
         running_cost_base: RUNNING_COST_ELECTRIC;
         engine_class: ENGINE_CLASS_ELECTRIC;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
@@ -63,7 +63,7 @@ item(FEAT_TRAINS, item_emu_russia_rzd_s) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/asia", "flag/RU", "power/electric/dc", "role/commuter_urban"];
+	badges: ["region/asia", "region/europe/eastern", "flag/RU", "power/electric/dc", "role/commuter_urban"];
 
     }
     graphics {

@@ -9,7 +9,7 @@
 item(FEAT_TRAINS, item_diesel_ukraine_uz_2te10ut) {
     property {
         name: string(str_diesel_ukraine_uz_2te10ut);
-        climates_available: ((param_region_eastern_europe || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
+        climates_available: ((0 || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1989,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 40;
@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_diesel_ukraine_uz_2te10ut) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/europe/eastern", "flag/UA", "power/diesel", "role/heavy_freight"];
+	badges: ["region/asia", "region/europe/eastern", "flag/UA", "power/diesel", "role/heavy_freight"];
 
     }
     graphics {

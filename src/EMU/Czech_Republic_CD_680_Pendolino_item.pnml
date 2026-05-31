@@ -28,7 +28,7 @@
 item(FEAT_TRAINS, item_emu_czech_republic_cd_680_pendolino) {
     property {
         name: string(str_emu_czech_republic_cd_680_pendolino);
-        climates_available: ((param_region_eastern_europe || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
+        climates_available: (((param_region_northern_europe || param_region_eastern_europe || param_region_southern_europe || param_region_western_europe) || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1999,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 40;
@@ -51,7 +51,7 @@ item(FEAT_TRAINS, item_emu_czech_republic_cd_680_pendolino) {
         misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU, TRAIN_FLAG_TILT);
         refit_cost: 0;
         ai_special_flag: AI_FLAG_PASSENGER | AI_FLAG_CARGO;
-        track_type: [STANDARD_GAUGE_RAILTYPE_OHLE];
+        track_type: [STANDARD_GAUGE_RAILTYPE_OHLE, BROAD_GAUGE_RAILTYPE_OHLE];
         running_cost_base: RUNNING_COST_ELECTRIC;
         engine_class: ENGINE_CLASS_ELECTRIC;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
@@ -62,7 +62,7 @@ item(FEAT_TRAINS, item_emu_czech_republic_cd_680_pendolino) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/europe/eastern", "flag/CZ", "power/electric", "role/express_passenger"];
+	badges: ["region/europe/southern", "region/europe/western", "region/europe/eastern", "region/europe/northern", "flag/CZ", "power/electric", "role/express_passenger"];
 
     }
     graphics {

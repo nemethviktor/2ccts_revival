@@ -9,7 +9,7 @@
 item(FEAT_TRAINS, item_steam_russia_rzd_9p) {
     property {
         name: string(str_steam_russia_rzd_9p);
-        climates_available: ((param_region_asia || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
+        climates_available: ((0 || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1935,1,1);
         model_life: 45;
         vehicle_life: 30;
@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_steam_russia_rzd_9p) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/asia", "flag/RU", "power/steam", "role/shunting"];
+	badges: ["region/asia", "region/europe/eastern", "flag/RU", "power/steam", "role/shunting"];
 
     }
     graphics {

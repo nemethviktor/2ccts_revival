@@ -13,7 +13,7 @@
 item(FEAT_TRAINS, item_electric_russia_rzd_vl22m) {
     property {
         name: string(str_electric_russia_rzd_vl22m);
-        climates_available: ((param_region_asia || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
+        climates_available: ((0 || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1945,1,1);
         model_life: 45;
         vehicle_life: 32;
@@ -47,7 +47,7 @@ item(FEAT_TRAINS, item_electric_russia_rzd_vl22m) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/asia", "flag/RU", "power/electric/dc", "role/universal"];
+	badges: ["region/asia", "region/europe/eastern", "flag/RU", "power/electric/dc", "role/universal"];
 
     }
     graphics {

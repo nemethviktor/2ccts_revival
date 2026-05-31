@@ -1058,7 +1058,7 @@ str_emu_finland_vr_sm4                                            :VR Sm4 (EMU, 
 str_emu_luxembourg_cfl_2200_coradia_duplex                        :CFL 2200 'Coradia Duplex' (EMU, Elektries OHLE)
 str_emu_germany_db_403_ice_3                                      :DB 403 ICE-3 (EMU, Elektries 15kV AC)
 str_emu_spain_renfe_120                                           :RENFE 120 (EMU, Elektries OHLE)
-str_emu_switzerland_sbb_rabe_523_flirt                            :SBB RABe 523 'Flirt' (EMU, Elektries 15kV AC)
+str_emu_switzerland_sbb_rabe_523_flirt                            :SBB RABe 523 'Flirt' (EMU, Elektries 15kV AC, 3kV DC, 25kV AC)
 str_emu_bulgaria_bdz_10_desiro                                    :BDZ 10 'Desiro' (EMU, Elektries 25kV AC)
 str_emu_australia_sydney_trains_oscars                            :Sydney Trein OSCars (EMU, Elektries 1500V DC)
 str_emu_south_africa_gautrain_electrostar                         :Gautrein Electrostar (EMU, Elektries 25kV AC)

@@ -15,7 +15,7 @@
 item(FEAT_TRAINS, item_steam_egypt_enr_1100) {
     property {
         name: string(str_steam_egypt_enr_1100);
-        climates_available: ((param_region_africa || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
+        climates_available: ((param_region_africa || param_region_western_europe) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1942,1,1);
         model_life: 45;
         vehicle_life: 30;
@@ -49,7 +49,7 @@ item(FEAT_TRAINS, item_steam_egypt_enr_1100) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/africa", "flag/EG", "power/steam", "role/universal"];
+	badges: ["region/africa", "region/europe/western", "flag/EG", "power/steam", "role/universal"];
 
     }
     graphics {

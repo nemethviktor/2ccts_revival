@@ -641,7 +641,7 @@ str_diesel_netherlands_ns_600,NS 600 'Bakkie'
 str_diesel_usa_pennsylvania_railroad_rf_16_sharknose,PRR RF-16 'Sharknose'
 str_diesel_uruguay_afe_1500,AFE 1500
 str_diesel_canada_cpr_trainmaster,CPR CLC H-24-66 'Trainmaster'
-str_diesel_liberia_liberia_railways_class_08,Liberia 'Class 08' [Ex-BR]
+str_diesel_liberia_liberia_railways_class_08,BR Class 08
 str_diesel_austria_obb_2060,OBB 2060
 str_diesel_canada_cnr_sw1200,CNR SW1200
 str_diesel_canada_via_rail_fp9,VIA Rail FP9
@@ -862,7 +862,7 @@ str_electric_germany_db_169,DB E 69 05 / DB 169 005
 str_electric_norway_nsb_el10,NSB EL10
 str_electric_germany_db_104,DB E 04 / DB 104
 str_electric_usa_pennsylvania_railroad_gg_1,PRR GG-1
-str_electric_austria_obb_1020_crocodile,OBB 1020 'Krokodil'
+str_electric_austria_obb_1020_crocodile,DRG E94
 str_electric_germany_db_1031,DB 103.1
 str_electric_germany_db_e_919,DB E 91.9 / DB 191.9
 str_electric_switzerland_bls_ce_4_4,BLS Ce 4/4
@@ -994,7 +994,7 @@ str_dmu_algeria_sntf_zz_2200_autorail,SNTF ZZ 2200 Autorail
 str_dmu_tunisia_sncft_amt_800,SNCFT AMT 800
 str_dmu_ghana_ghana_railways_demu,Ghana Railways DEMU
 str_dmu_australia_queensland_rail_diesel_tilt_train,Queensland Railways Diesel Tilt Train
-str_dmu_canada_up_express_nippon_sharyo_dmu,UP Express Nippon Sharyo DMU
+str_dmu_canada_up_express_nippon_sharyo_dmu,UP Express 1000 Series
 str_dmu_argentina_fcgu_cmm_400_2,FCGU CMM 400-2
 str_dmu_italy_fs_aln_442_448,FS ALn 442-448
 str_dmu_portugal_cp_0400,CP 0400
@@ -1014,7 +1014,7 @@ str_emu_netherlands_ns_mat36,NS Mat'36
 str_emu_netherlands_ns_mat54,NS Mat'54
 str_emu_netherlands_ns_plan_y,NS Plan Y
 str_emu_netherlands_ns_icm_4000,NS ICM 4000
-str_emu_netherlands_ns_dd_irm_virm,NS DD-IRM 'VIRM' 8xxx
+str_emu_netherlands_ns_dd_irm_virm,NS DD-IRM 'VIRM' 8000
 str_emu_netherlands_ns_mddm_390,NS mDDm 390
 str_emu_poland_pkp_ew90,PKP EW90
 str_emu_italy_fs_etr200,FS ETR.200
@@ -1034,7 +1034,7 @@ str_emu_sweden_sj_x2000,SJ X2000
 str_emu_switzerland_sbb_rabde_510,SBB RABDe 510
 str_emu_switzerland_sbb_rbde_560,SBB RBDe 560
 str_emu_switzerland_sbb_rabe_523_flirt,SBB RABe 523 'Flirt'
-str_emu_usa_amtrak_budd_metroliner,Amtrak Budd Metroliner
+str_emu_usa_amtrak_budd_metroliner,PRR Budd Metroliner
 str_emu_germany_db_403_ice_3,DB 403 'ICE3'
 str_emu_bulgaria_bdz_10_desiro,BDZ 10 'Desiro'
 str_emu_finland_vr_sm2,VR Sm2
@@ -1209,7 +1209,7 @@ str_mu_coach_gen4_interregio_coach,InterRegio Coach
 str_mu_coach_gen4_silberling_commuter_coach,'Silberling' Commuter Coach
 str_mu_coach_gen4_eurofima_mail_coach,Eurofima Mail Coach
 str_mu_coach_gen4_double_decker_coach,Double Decker Coach
-str_mu_coach_gen4_russian_intercity_coach,Russian Intercity Coach
+str_mu_coach_gen4_russian_intercity_coach,Russian Intercity Sleeper Coach
 str_mu_coach_gen4_russian_regional_coach,Russian Regional Coach
 str_mu_coach_gen4_russian_mail_coach,Russian Mail Coach
 str_mu_coach_gen4_superliner_coach,Superliner Coach

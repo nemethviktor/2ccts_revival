@@ -9,7 +9,7 @@
 item(FEAT_TRAINS, item_diesel_russia_rzd_m62) {
     property {
         name: string(str_diesel_russia_rzd_m62);
-        climates_available: ((param_region_asia || param_region_eastern_europe) && 1) ? ALL_CLIMATES : NO_CLIMATE;
+        climates_available: ((0 || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1965,1,1);
         model_life: 45;
         vehicle_life: 40;

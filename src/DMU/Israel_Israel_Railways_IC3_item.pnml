@@ -29,7 +29,7 @@
 item(FEAT_TRAINS, item_dmu_israel_israel_railways_ic3) {
     property {
         name: string(str_dmu_israel_israel_railways_ic3);
-        climates_available: ((param_region_asia || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
+        climates_available: ((param_region_africa || (param_region_northern_europe || param_region_eastern_europe || param_region_southern_europe || param_region_western_europe)) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1986,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 40;
@@ -52,7 +52,7 @@ item(FEAT_TRAINS, item_dmu_israel_israel_railways_ic3) {
         misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
         refit_cost: 0;
         ai_special_flag: AI_FLAG_PASSENGER | AI_FLAG_CARGO;
-        track_type: [STANDARD_GAUGE_RAILTYPE_NONE];
+        track_type: [STANDARD_GAUGE_RAILTYPE_NONE, BROAD_GAUGE_RAILTYPE_NONE];
         running_cost_base: RUNNING_COST_DIESEL;
         engine_class: ENGINE_CLASS_DIESEL;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 0, DISABLE_WAGON_POWER);
@@ -63,7 +63,7 @@ item(FEAT_TRAINS, item_dmu_israel_israel_railways_ic3) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/asia", "flag/IL", "power/diesel", "role/express_passenger"];
+	badges: ["region/africa", "region/europe/southern", "region/europe/western", "region/europe/eastern", "region/europe/northern", "flag/IL", "power/diesel", "role/express_passenger"];
 
     }
     graphics {

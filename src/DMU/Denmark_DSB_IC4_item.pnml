@@ -28,7 +28,7 @@
 item(FEAT_TRAINS, item_dmu_denmark_dsb_ic4) {
     property {
         name: string(str_dmu_denmark_dsb_ic4);
-        climates_available: ((param_region_northern_europe || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
+        climates_available: ((param_region_northern_europe || param_region_africa) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(2007,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 45;
@@ -62,7 +62,7 @@ item(FEAT_TRAINS, item_dmu_denmark_dsb_ic4) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/europe/northern", "flag/DK", "power/diesel", "role/express_passenger"];
+	badges: ["region/africa", "region/europe/northern", "flag/DK", "power/diesel", "role/express_passenger"];
 
     }
     graphics {

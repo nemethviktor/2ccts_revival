@@ -13,7 +13,7 @@
 item(FEAT_TRAINS, item_electric_brazil_ge_2cc2) {
     property {
         name: string(str_electric_brazil_ge_2cc2);
-        climates_available: ((param_region_south_america || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
+        climates_available: (((param_region_north_america || param_region_south_america) || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1940,1,1);
         model_life: 45;
         vehicle_life: 58;
@@ -36,7 +36,7 @@ item(FEAT_TRAINS, item_electric_brazil_ge_2cc2) {
         misc_flags: bitmask(TRAIN_FLAG_2CC);
         refit_cost: 0;
         ai_special_flag: AI_FLAG_PASSENGER | AI_FLAG_CARGO;
-        track_type: [BROAD_GAUGE_RAILTYPE_3KV];
+        track_type: [STANDARD_GAUGE_RAILTYPE_3KV, BROAD_GAUGE_RAILTYPE_3KV];
         running_cost_base: RUNNING_COST_ELECTRIC;
         engine_class: ENGINE_CLASS_ELECTRIC;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
@@ -47,7 +47,7 @@ item(FEAT_TRAINS, item_electric_brazil_ge_2cc2) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/america/south", "flag/BR", "power/electric/dc", "role/universal"];
+	badges: ["region/asia", "region/america/northern", "region/america/south", "region/europe/eastern", "flag/BR", "power/electric/dc", "role/universal"];
 
     }
     graphics {

@@ -494,7 +494,7 @@ str_mu_coach_gen4_interregio_coach                                :InterRegio Co
 str_mu_coach_gen4_silberling_commuter_coach                       :'Silberling' Commuter Coach
 str_mu_coach_gen4_eurofima_mail_coach                             :Eurofima Mail Coach
 str_mu_coach_gen4_double_decker_coach                             :Double Decker Coach
-str_mu_coach_gen4_russian_intercity_coach                         :Russian Intercity Coach
+str_mu_coach_gen4_russian_intercity_coach                         :Russian Intercity Sleeper Coach
 str_mu_coach_gen4_russian_regional_coach                          :Russian Regional Coach
 str_mu_coach_gen4_russian_mail_coach                              :Russian Mail Coach
 str_mu_coach_gen4_superliner_coach                                :Superliner Coach
@@ -562,7 +562,7 @@ str_diesel_brazil_efcb_alco_rs_3                                  :EFCB ALCO RS-
 str_diesel_netherlands_ns_600                                     :NS 600 'Bakkie' (Diesel)
 str_diesel_uruguay_afe_1500                                       :AFE 1500 (Diesel)
 str_diesel_canada_cpr_trainmaster                                 :CPR CLC H-24-66 'Trainmaster' (Diesel)
-str_diesel_liberia_liberia_railways_class_08                      :Liberia 'Class 08' [Ex-BR] (Diesel)
+str_diesel_liberia_liberia_railways_class_08                      :BR Class 08 (Diesel)
 str_diesel_austria_obb_2060                                       :OBB 2060 (Diesel)
 str_diesel_canada_cnr_sw1200                                      :CNR SW1200 (Diesel)
 str_diesel_canada_via_rail_fp9                                    :VIA Rail FP9 (Diesel)
@@ -832,7 +832,7 @@ str_dmu_algeria_sntf_zz_2200_autorail                             :SNTF ZZ 2200 
 str_dmu_tunisia_sncft_amt_800                                     :SNCFT AMT 800 (DMU)
 str_dmu_ghana_ghana_railways_demu                                 :Ghana Railways DEMU (DMU)
 str_dmu_australia_queensland_rail_diesel_tilt_train               :Queensland Railways Diesel Tilt Train (DMU)
-str_dmu_canada_up_express_nippon_sharyo_dmu                       :UP Express Nippon Sharyo DMU (DMU)
+str_dmu_canada_up_express_nippon_sharyo_dmu                       :UP Express 1000 Series (DMU)
 str_dmu_argentina_fcgu_cmm_400_2                                  :FCGU CMM 400-2 (DMU)
 str_dmu_argentina_ganz_arpad_bariloche                            :Ganz 'Arpad' Bariloche DMU (DMU)
 str_dmu_argentina_ganz_arpad_cmu_4701_transandino                 :Ganz 'Arpad' CMU 4701 Transandino (DMU)
@@ -863,7 +863,7 @@ str_electric_germany_db_104                                       :DB E 04 / DB 
 str_electric_italy_fs_e428                                        :FS E.428 (Electric, 3kV DC)
 str_electric_japan_jnr_ef55                                       :JNR EF55 (Electric, 1500V DC)
 str_electric_south_africa_sar_es_class                            :SAR ES (Electric, 3kV DC)
-str_electric_austria_obb_1020_crocodile                           :OBB 1020 'Krokodil' (Electric, 15kV AC)
+str_electric_austria_obb_1020_crocodile                           :DRG E94 (Electric, 15kV AC)
 str_electric_russia_rzd_vl22m                                     :RZD VL22M (Electric, 3kV DC)
 str_electric_netherlands_ns_1000                                  :NS 1000 (Electric, 1500V DC)
 str_electric_sweden_mtab_dm3                                      :MTAB Dm3 (Electric, 15kV AC)
@@ -1043,7 +1043,7 @@ str_emu_japan_odakyu_10000_series_romance                         :Odakyu 10000 
 str_emu_hungary_mav_bdvmot                                        :MAV BDVmot (EMU, 25kV AC)
 str_emu_sweden_sj_x2000                                           :SJ X2000 (EMU, OHLE)
 str_emu_italy_fs_etr500                                           :FS ETR.500 'Frecciarossa' (EMU, 3kV DC)
-str_emu_netherlands_ns_dd_irm_virm                                :NS DD-IRM 'VIRM' 8xxx (EMU, 1500V DC)
+str_emu_netherlands_ns_dd_irm_virm                                :NS DD-IRM 'VIRM' 8000 (EMU, 1500V DC)
 str_emu_france_sncf_tgv_duplex                                    :SNCF TGV Duplex (EMU, OHLE)
 str_emu_france_thalys_pbka                                        :Thalys PBKA (EMU, OHLE)
 str_emu_denmark_dsb_s_tog_iv                                      :DSB S-Tog IV (EMU, 1500V DC)
@@ -1056,7 +1056,7 @@ str_emu_finland_vr_sm4                                            :VR Sm4 (EMU, 
 str_emu_luxembourg_cfl_2200_coradia_duplex                        :CFL 2200 'Coradia Duplex' (EMU, OHLE)
 str_emu_germany_db_403_ice_3                                      :DB 403 'ICE3' (EMU, 15kV AC)
 str_emu_spain_renfe_120                                           :RENFE 120 (EMU, OHLE)
-str_emu_switzerland_sbb_rabe_523_flirt                            :SBB RABe 523 'Flirt' (EMU, 15kV AC)
+str_emu_switzerland_sbb_rabe_523_flirt                            :SBB RABe 523 'Flirt' (EMU, 15kV AC, 3kV DC, 25kV AC)
 str_emu_bulgaria_bdz_10_desiro                                    :BDZ 10 'Desiro' (EMU, 25kV AC)
 str_emu_australia_sydney_trains_oscars                            :Sydney Trains OSCars (EMU, 1500V DC)
 str_emu_south_africa_gautrain_electrostar                         :Gautrain Electrostar (EMU, 25kV AC)
@@ -1077,10 +1077,10 @@ str_emu_netherlands_ns_hispeed_v250_albatros                      :NS Hispeed V2
 str_emu_chile_efe_aes_railcar                                     :EFE AES Railcar (EMU, 3kV DC)
 str_emu_chile_efe_xtrapolis_100                                   :EFE X'Trapolis 100 (EMU, 1500V DC)
 str_emu_tunisia_sncft_yz_e                                        :SNCFT YZ-E (EMU, 25kV AC)
-str_emu_russia_rzd_s                                              :RZD S (EMU, 3kV DC)
+str_emu_russia_rzd_s                                              :RZD S (EMU, 3kV DC, 1500V DC)
 str_emu_poland_pkp_ew54                                           :PKP EW54 (EMU, 3kV DC)
 str_emu_romania_cfr_58                                            :CFR 58 (EMU, 25kV AC)
-str_emu_usa_amtrak_budd_metroliner                                :Amtrak Budd Metroliner (EMU, 15kV AC)
+str_emu_usa_amtrak_budd_metroliner                                :PRR Budd Metroliner (EMU, 15kV AC)
 str_emu_russia_rzd_er200                                          :RZD ER200 (EMU, 3kV DC, 1500V DC)
 str_emu_morocco_oncf_zmc                                          :ONCF ZMC (EMU, 3kV DC)
 str_emu_japan_jr_shinkansen_series_e1_max                         :JR Shinkansen Series E1 Max (EMU, 25kV AC)

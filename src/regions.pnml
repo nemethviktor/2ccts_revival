@@ -5,9 +5,9 @@
 
 */
 
-//this file is used to define the region availability of vehicles.
+// This file is used to define the region availability of vehicles.
 
-//Define regions and their matching parameters
+// Define regions and their matching parameters
 #define AFRICA param_region_africa
 
 #define NORTH_AMERICA param_region_north_america
@@ -22,18 +22,22 @@
 
 #define OCEANIA param_region_oceania
 
-//Helper regions, which can be used as short hand notation for multiple regions
+// Helper regions, which can be used as short hand notation for multiple regions
 #define ALL_EUROPE ( NORTHERN_EUROPE || EASTERN_EUROPE || SOUTHERN_EUROPE || WESTERN_EUROPE )
 #define ALL_AMERICA ( NORTH_AMERICA || SOUTH_AMERICA )
 
 #define REGIONTYPE1 ( ALL_EUROPE || ASIA || AFRICA )
 #define REGIONTYPE2 ( ALL_AMERICA || ASIA || OCEANIA || AFRICA )
 #define REGIONTYPE3 ( ASIA || OCEANIA )
+#define REGIONTYPE4 ( ASIA || EASTERN_EUROPE) # EX-USSR
+#define REGIONTYPE5 ( ASIA || EASTERN_EUROPE || SOUTH_AMERICA) # EX-USSR + CUBA
+#define REGIONTYPE6 ( NORTHERN_EUROPE || WESTERN_EUROPE )
+
 
 #define NO_REGION 0
 #define ALL_REGION ( AFRICA || ALL_AMERICA || ASIA || ALL_EUROPE || OCEANIA )
 
-//Also allow to disable concept vehicles
+// Also allow to disable concept vehicles
 #define IS_CONCEPT param_concept
 
 #define NO_CONCEPT 1

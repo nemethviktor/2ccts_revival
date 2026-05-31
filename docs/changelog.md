@@ -1,6 +1,8 @@
 # 2cc TrainsInNML (Revival) changelog
 
-**3.3 [20260xxx]**
+## 3.3
+
+### 3.3 [20260xxx]
 
 - CODE CHANGES:
   - Template `TPL_17B` should not have been marked as articulated #8
@@ -13,7 +15,7 @@
   - Introduced some logic whereby if the real-life withdrawal of a train is known, we use that, subject to a generic minimal age being ensure, else we use the fallback value that's automatically generated.
 - VEHICLES CHANGES:
   - Fixed a number of sprite misalignments #7
-  - Small fixes here and there
+  - Many small fixes here and there
   - Adds:
     - `ESR Class 1 Kitson 2-2-2` (Steam)
     - `ESR Class 7 2-6-0` (Steam)
@@ -24,9 +26,63 @@
     - `MAV V40` (Electric)
     - `PKP SU160` (Diesel)
     - `LVCI Class 1` (Steam)
-    - `RENFE 462` (Steam)
-    - `M62` has been added to E-EU
+    - `RENFE 030`, `RENFE 240`, `RENFE 462` (Steam)
+    - `Chilean SFB-500 DEMU`
     - Added some of the maglevs from the original OpenTTD game.
+  Further changes from Discord discussion: [most of these have been amended but not 100%. the below is a copypaste of suggestions]
+  - American End-Platform Coaches - should be aviavable in the americas too
+  - Russian Intercity Coach - make it an sleeper coach
+  - Liberia 'Class 08' [Ex-BR] - maybe rename to BR class 08 and make it aviavable both in Africa and UK region
+  - DB V200.0 / DB 220 - make aviavable also in the Spain's region (export to spain as series 4020/340)
+  - CD 720 ChME2 - was used also thoughtly the USSR, add also to asian region
+  - CFR 060-DA - an export version for China existed, maybe add also to asian region
+  - RZD TEP60 - used mostly (only) in European parts of USSR add to eastern europe region alongside asian region
+  - RZD ChME3 - locos of this type are used also in various eastern european countries, add to eastern european region
+  - RZD M62 - add to Southern America region becouse these operated in Cuba too
+  - HZ 2062 - add to africa region becouse some sold to Israel
+  - DR 130/DBAG 230 - either change name to 131/231 or change top speed to 140km/h (X30 is variant for 140km/h, X31 is for 120km/h), add to asian and eastern european r egion  and to broad gauge track becouse thay operated in USSR too (mostly on industral railways) as series TE109.
+  - ENR TE114E - add also to southern america (these operated in Cuba), asia (USSR, Syria), eastern europe (USSR), add to broad gauge track
+  - BCh 2TE10M - add to asian region too, beocuse this type was used in entire USSR
+  - UZ 2TE126 - the same
+  - RZD TEP80 - used only in European parts of Russia (only prototype, serial production not started)
+  - UZ 2TE10Ut - add to asian region too Not sure about operations in Asia
+  - MTR Siemens ER20 - add to Europe too, a lot of ER20s operate in Europe
+  - Amtrak Budd RDC - add to asian, south american, oceanian region too, other gauges too. This railcar was used all over the world in various versions
+  - Amtrak Budd SPV-2000 - add to Africa region too
+  - NS DH1 - some exported to eastern eueope and south america
+  - RZD ACh2 - add to eastern Europe region too
+  - CD 840 - czech variant of the RS1 Regio Sprinter , maybe change country to germany and introduction to 1996
+  - NS DH2 - see NS DH1
+  - Israel Railways IC3 - change region to Africa, add european regions (Spain, Denmark Sweden), add broad gauge (Spain)
+  - SJ Y2 - the same as Israel IC3
+  - RENFE 594 - same as above
+  - DB 612 'Regio Swinger' - add eastern or southern europe region, used on Balkans
+  - DB 642 'Desiro' - add eastern europe, used also in Bulgaria
+  - RZD RA2 - add eastern european region
+  - DSB IC4 - add african region  (Lybia)
+  - GE 2-C+C-2 - add standard gauge (USA), north american region (USA), MAYBE add Eastern Europe and Asia as these ALMOST made thair way to USSR
+  - OBB 1020 'Krokodil' - rename to DRG E94 (Same loco, initial operator) Maybe move the intro date back, becouse previous class E93 was VERY similer
+  - NS 1000 - maybe move back intro date Loco ordered before war, delivered after it
+  - RZD ChS3 - in fact is an modernised version of ChS1. Replace with ChS1 Add Eastern Europe Region
+  - RZD VL41 - add eastern europe region
+  - RZD VL11 - used all over the USSR, add eastern eruopean region
+  - PKP ET41 - maybe add the single section version EU07
+  - EFE E-269 - add spanish region flag, these are secondhand RENFE Series 269
+  - RZD VL85 - add eastern european region, MAYBE add single section versions (VL65, EP1)
+  - SBB Re460 'Lok 2000'- add notheren european and asian regions becouse export versions
+  - DB 479.201 - isnt this an modernised version of the Buckower Kleinbahn Nr. 1-3
+  - RZD S - add eastern european region, add 3000V electric system (there were variants for both 1.5kV and 3kV)
+  - Amtrak Budd Metroliner - raname to PRR Budd metroliner becouse first operator
+  - RZD ER200 - move to eastern europe region, these opreated only in european regions of russia
+  - NS DD-IRM 'VIRM' 8xxx  - change 8xxx to 8000 series, looks better
+  - DB 403 'ICE3' - add chinease and russian versions
+  - SBB RABe 523 'Flirt' - add 3kV DC SG versions (Poland, Italy), and 25kV AC Broad gauge versions (Finland, Belarus, Estonia)
+  - DRB Class 52 - add to all european regions and asia region add broad gauge
+  - RZD P36 - add eastern european region
+  - DB 17.0-1 'Prussian S 10' - move to eastern european region becouse Prussia
+  - RZD 9P - add eastern european region
+  - ENR 1100 [LMS Fowler 3F / WD 0-6-0T] - add western european and maybe other euro regions
+  - UP Express Nippon Sharyo DMU - maybe rename to UP Express 1000 series
   
   - Added the following from Ragin's North America set (all also available in S-Am as they were exported at some stage - tried to keep the naming unique. Yes there's one Pakistani in there too.)
     - `PRFTC 9000 GE ES43ACi`
@@ -37,7 +93,7 @@
     - `CNR 2500 GE C44-9W 'Dash 9'`
     - `EMD GP40`
   
-**3.3 RC3 [20260513]**
+### 3.3 RC3 [20260513]
 
 - CODE CHANGES:
   - Added the track types to the vehicle info export
@@ -195,7 +251,7 @@
     - `NZR 50ft Mail Coach`
     - `KA Type Tram Car`
 
-**3.3-RC2 [20260427]**
+### 3.3-RC2 [20260427]
 
 - CODE CHANGES:
   - Changed some of the flag creation logic. There should be fewer animated-looking flags now
@@ -224,7 +280,7 @@
   - Added `MAV Class V63` using an obscure mix of `V43` and `FF1` as template and then a lot of tweaks.
   - Checked all the lengths for every vehicle and amended many. That said some DMU/EMUs are still a pixel off but I didn't change all.
 
-**3.3-RC1 [20260412]**
+### 3.3-RC1 [20260412]
 
 - CODE CHANGES:
   - Added template `TPL_03G` (12-len steam w tender)
@@ -237,7 +293,7 @@
   - Re-validated all the vehicles in the set. In practice this means that when I was able to find a Wikipedia article, I took information from there, otherwise I asked Gemini (yes I use AI, such is life.). In some cases, espc wrt TE/Coefficient in steam powered vehicles, as well as the weight of them may not fully line up with the old values; this partially has to do with the fact that I think originally the loco weights were loco-only whereas now they are loco+tender where applicable. I also reworked the pax capacity where applicable. The speeds of steam engines have been oftentimes reduced from top speeds to sustainable service speeds with some extra overhead so that they don't feel too slow either (in fact some have been increased because they had been defined as slow as 15kmh [10mph], which was useless as well as unlikely).
     - For **metros and xMUs** the following logic now applies: in Excel the TE-C has been halved. If taking a real life example of the `Moscow 81-720` the legacy set had `0.69` TE-C, from which the game calculated a TE of some `440kN` or so, which is unrealistic, even if we use powered cars. Half of that is realistic though.
 
-**3.3-beta2 [20260403]**
+### 3.3-beta2 [20260403]
 
 - CODE CHANGES:
   - Badges! #1 -- need testing ofc but tentatively works.
@@ -270,7 +326,7 @@
     - The SAR ES has a power of 1202hp not 1200hp, and a tractive effort coefficient of 0.11 not 0.26.
     - The CSAR railmotor has a weight of 48t not 35t and a tractive effort coefficient of 0.08 not 0.33.
 
-**3.3-beta1 [20260401]**
+### 3.3-beta1 [20260401]
 
 - CODE CHANGES:
   - Automated English Language file creation
@@ -279,7 +335,7 @@
   - Chile_EFE_XTrapolis_100 -> Modified to 1500V voltage, was None, incorrectly.
   - Corrected a number of wrong string values for voltage categorisation (ref above automation)
 
-**3.3-alpha1 [20260327]**
+### 3.3-alpha1 [20260327]
 
 - CODE CHANGES:
   - Added a py script to export all vehicle info on `gcc` running. Moved away from `make`.
@@ -292,7 +348,7 @@
   - Reiterating from above, separated out the various railtypes and voltages.
   - Turned the visual for DMUs to _DIESEL_ (was _DISABLE_)
 
-**3.3-alpha0 [20260316]**
+### 3.3-alpha0 [20260316]
 
 - CODE CHANGES:
   - Cloned to new GitHub location
@@ -309,9 +365,15 @@
   - Revamped the readme file a little
   - Updated licence to GNU v3
 
-#### Old/Original Changelog Below
+-----
 
-**3.0-alpha3 (23/12/2018)**
+Old/Original Changelog Below
+
+-----
+
+## 3.0
+
+### 3.0-alpha3 (23/12/2018)
 
 - Fix #8561: Cargo wagon capacities fixed
 - Fix #8562: Wagon capacity was 0 for some MU's
@@ -323,12 +385,12 @@
 - Merge: Translations
 - Update: Translations
 
-**3.0-alpha2 (29/07/2018)**
+### 3.0-alpha2 (29/07/2018)
 
 - Fix #8562: Wagon capacity was 0 for some MU's
 - Fix #8564: MU wagon capacity switch used the HEAD_CAPACITY instead of WAGON_CAPACITY
 
-**3.0-alpha1 (08/07/2018)**
+### 3.0-alpha1 (08/07/2018)
 
 - Change minimum version as a result of r847
 - Change: Move the MU wagons to separate folders
@@ -400,7 +462,9 @@
 - Update: Translations from webtranslator
 - Update: Update licenses to 2017
 
-**2.0-alpha1 (19/04/2016)**
+## 2.0
+
+### 2.0-alpha1 (19/04/2016)
 
 - Add: Simplified Chinese translation by dirace (closes #7529)
 - Change #7750: Long vehicle template changed
@@ -486,7 +550,9 @@
 - Update: Some naming changes
 - Update: Translations from webtranslator
 
-**1.0 (14/02/2015)**
+## 1.0
+
+### 1.0 (14/02/2015)
 
 - Doc: Dates are really difficult for changelogs
 - Doc: Update to readme
@@ -499,7 +565,7 @@
 - Merge: Some unpushed changes caused branching
 - Update: Translations from webtranslator
 
-**1.0-RC2 (07/02/2015)**
+### 1.0-RC2 (07/02/2015)
 
 - Change: DB 145 changed to DB 185 TRAXX (closes #7375)
 - Doc: Someone deserves a thank you
@@ -511,7 +577,7 @@
 - Fix: Speedmail coach carried passengers instead of mail
 - Update: Translations from webtranslator
 
-**1.0-RC1 (06/12/2014)**
+### 1.0-RC1 (06/12/2014)
 
 - Change: File rename and Generation 1 Open Wagon with gray cargo (closes #7253)
 - Change: Vehicles with length 10 are now defined as 8-2 instead of 3-4-3, as there were graphical issues in depots (closes #7206)
@@ -536,7 +602,7 @@
 - Fix: Vehicle ID for Gen1 Boxcar was not properly set
 - Update: Translations from webtranslator
 
-**1.0-beta5 (26/09/2014)**
+### 1.0-beta5 (26/09/2014)
 
 - Codechange: Also disable all wagons when no region is selected (closes #7159)
 - Codechange: Prepare for inclusion of regional and concept parameter
@@ -579,7 +645,7 @@
 - Fix: Various diesels were no longer available
 - Update: Translations from webtranslator
 
-**1.0-beta4 (09/09/2014)**
+### 1.0-beta4 (09/09/2014)
 
 - Codechange: ID ranges are now #defined in one file
 - Feature #7054: Vehicles redrawn as 10/8 (Graphics by Voyager One and Emperor Jake)
@@ -596,7 +662,7 @@
 - Fix r334: Make the old 4-6-0 Ten wheeler unavailable
 - Update: Translations from webtranslator
 
-**1.0-beta3 (30/08/2014)**
+### 1.0-beta3 (30/08/2014)
 
 - Feature: Purchase menu text for unit wagons (issue #7057)
 - Fix #7055: FS 895 flag used company color
@@ -606,12 +672,12 @@
 - Fix: Talgo purchase sprites
 - Update: Translations from webtranslator
 
-**1.0-beta2 (28/08/2014)**
+### 1.0-beta2 (28/08/2014)
 
 - Fix #7046: Vehicle sort order and IDs due to wrong names
 - Fix #7047: Cargo wagon properties
 
-**1.0-beta1 (28/08/2014)**
+### 1.0-beta1 (28/08/2014)
 
 - Add: Base .pnml file
 - Add: Code for graphics templates (from the original 2cc Trainset)

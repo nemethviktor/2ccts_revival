@@ -28,7 +28,7 @@
 item(FEAT_TRAINS, item_emu_russia_rzd_er200) {
     property {
         name: string(str_emu_russia_rzd_er200);
-        climates_available: ((param_region_asia || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
+        climates_available: ((param_region_eastern_europe || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1973,1,1);
         model_life: 45;
         vehicle_life: 40;
@@ -62,7 +62,7 @@ item(FEAT_TRAINS, item_emu_russia_rzd_er200) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/asia", "flag/RU", "power/electric/dc", "role/express_passenger"];
+	badges: ["region/europe/eastern", "flag/RU", "power/electric/dc", "role/express_passenger"];
 
     }
     graphics {

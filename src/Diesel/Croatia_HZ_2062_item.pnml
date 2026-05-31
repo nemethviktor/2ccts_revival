@@ -9,7 +9,7 @@
 item(FEAT_TRAINS, item_diesel_croatia_hz_2062) {
     property {
         name: string(str_diesel_croatia_hz_2062);
-        climates_available: ((param_region_eastern_europe || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
+        climates_available: ((param_region_eastern_europe || param_region_africa) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1972,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 58;
@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_diesel_croatia_hz_2062) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/europe/eastern", "flag/HR", "power/diesel", "role/universal"];
+	badges: ["region/africa", "region/europe/eastern", "flag/HR", "power/diesel", "role/universal"];
 
     }
     graphics {

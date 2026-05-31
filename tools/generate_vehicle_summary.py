@@ -132,8 +132,8 @@ def generate_markdown():
 
     for cat in sorted(df['COST_CAT'].unique()):
         markdown += f"## {cat}\n\n"
-        markdown += "| Graphics | Name | Intro | Speed | Power | Role | Cap | Track Types | Regions |\n"
-        markdown += "| :---: | :--- | :---: | :---: | :---: | :--- | :---: | :--- | :--- |\n"
+        markdown += "| Graphics | Name | Intro | Speed kmh / mph | Power hp/kW | Role | Cap | Track Types | Regions | Concept? |\n"
+        markdown += "| :---: | :--- | :---: | :---: | :---: | :--- | :---: | :--- | :--- | :--- |\n"
 
         cat_df = df[df['COST_CAT'] == cat].sort_values(
             ['INTRODUCTION_YEAR', 'ENGLISH'])
@@ -173,7 +173,17 @@ def generate_markdown():
             regions = [c.replace('_', ' ').title() for c in region_cols if str(
                 row.get(c)).upper() == 'TRUE']
 
-            markdown += f"| {img_tag} | {row['ENGLISH']} | {row['INTRODUCTION_YEAR']} | {row['SPEED']} | {row['POWER']} | {row['ROLE']} | {cap} | {track_str} | {', '.join(regions)} |\n"
+            speed_kmh = int(row['SPEED']) if pd.notnull(
+                row['SPEED']) else 0
+            speed_mph = int(speed_kmh * 0.621371)
+
+            power_hp = int(row['POWER']) if pd.notnull(
+                row['POWER']) else 0
+            power_kw = int(power_hp * 0.7456)
+
+            is_concept = row['REGION3'] == "IS_CONCEPT"
+
+            markdown += f"| {img_tag} | {row['ENGLISH']} | {row['INTRODUCTION_YEAR']} | {speed_kmh} / {speed_mph} | {power_hp} / {power_kw} | {row['ROLE']} | {cap} | {track_str} | {', '.join(regions)} | {"Yes" if is_concept else "No"} |\n"
         markdown += "\n"
 
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
