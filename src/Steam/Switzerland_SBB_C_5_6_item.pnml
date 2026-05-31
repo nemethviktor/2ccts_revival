@@ -12,7 +12,7 @@ item(FEAT_TRAINS, item_steam_switzerland_sbb_c_5_6) {
         climates_available: ((param_region_western_europe || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1913,1,1);
         model_life: 45;
-        vehicle_life: 30;
+        vehicle_life: 55;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
         cost_factor: 55.78188;

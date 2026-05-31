@@ -1348,6 +1348,9 @@
 #include "src/EMU/Hong_Kong_MTR_SP1900_graphics.pnml"
 #include "src/EMU/Hong_Kong_MTR_SP1900_item.pnml"
 
+#include "src/EMU/Chile_Chilean_SFB500_DEMU_graphics.pnml"
+#include "src/EMU/Chile_Chilean_SFB500_DEMU_item.pnml"
+
 
 //// ELECTRIC
 #include "src/Electric/Switzerland_RhB_DE_2_2_graphics.pnml"
@@ -2708,6 +2711,12 @@
 
 #include "src/Steam/Spain_RENFE_462_graphics.pnml"
 #include "src/Steam/Spain_RENFE_462_item.pnml"
+
+#include "src/Steam/Spain_RENFE_030_graphics.pnml"
+#include "src/Steam/Spain_RENFE_030_item.pnml"
+
+#include "src/Steam/Spain_RENFE_240_graphics.pnml"
+#include "src/Steam/Spain_RENFE_240_item.pnml"
 
 
 //// WAGONS_MAGLEV - GEN7M

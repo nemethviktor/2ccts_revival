@@ -1110,6 +1110,7 @@ str_emu_new_zealand_em_ganz_mavag                                 :NZR EM 'Ganz 
 str_emu_new_zealand_dm                                            :NZR DM EMU (EMU, 1500V DC)
 str_emu_new_zealand_fpft_matangi                                  :NZR FP/FT 'Matangi' (EMU, 1500V DC)
 str_emu_hong_kong_mtr_sp1900                                      :MTR SP1900 (EMU, 25kV AC)
+str_emu_chile_chilean_sfb500_demu                                 :Santiago y Chillán Sifang SFB-500 (EMU, 25kV AC)
 str_cargoemu_japan_jr_freight_m250                                :JR Freight M250 (EMU, 1500V DC)
 
 # Maglevengine
@@ -1346,6 +1347,8 @@ str_steam_hungary_mav_class_203                                   :MAV Class 203
 str_steam_hungary_mav_class_601                                   :MAV Class 601 (Steam)
 str_steam_italy_lvci_class_1                                      :LVCI Class 1 (Steam)
 str_steam_spain_renfe_462                                         :RENFE 462 (Steam)
+str_steam_spain_renfe_030                                         :RENFE 030 (Steam)
+str_steam_spain_renfe_240                                         :RENFE 240 (Steam)
 
 # Steamrailbus
 str_rbs_austria_nolb_1                                            :NOLB 1 (Steam Railbus)

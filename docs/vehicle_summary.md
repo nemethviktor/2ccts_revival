@@ -678,6 +678,7 @@
 | ![NTV AGV Duplex](vehicle_graphics/str_emu_italy_ntv_agv_duplex.png) | NTV AGV Duplex | 2015 | 360 | 3104 | Ultra-High-Speed (Pax) | 160 | STANDARD_OHLE | Southern Europe |
 | ![Melbourne HCMT Munnel](vehicle_graphics/str_emu_australia_melbourne_hcmt_munnel.png) | Melbourne HCMT Munnel | 2020 | 130 | 1500 | Commuter/Urban | 320 | BROAD_1500V | Oceania |
 | ![Melbourne Siemens Nexas](vehicle_graphics/str_emu_australia_melbourne_nexas.png) | Melbourne Siemens Nexas | 2023 | 145 | 1286 | Commuter/Urban | 284 | BROAD_1500V | Oceania |
+| ![Santiago y Chillán Sifang SFB-500](vehicle_graphics/str_emu_chile_chilean_sfb500_demu.png) | Santiago y Chillán Sifang SFB-500 | 2024 | 180 | 7510 | Express Passenger | 236 | BROAD_25KV | South America |
 | ![Sureot](vehicle_graphics/str_emu_europe_sureot.png) | Sureot | 2030 | 300 | 16000 | Ultra-High-Speed (Pax) | 170 | STANDARD_25KV | Southern Europe, Eastern Europe, Western Europe, Northern Europe |
 
 ## MAGLEVENGINE
@@ -804,6 +805,7 @@
 | ![Sao Paulo Railway No. 13 and 14](vehicle_graphics/str_steam_brazil_sao_paulo_railway_13.png) | Sao Paulo Railway No. 13 and 14 | 1867 | 25 | 275 | Shunting | 0 | BROAD_NONE | South America |
 | ![BDZ Class 279 142-150](vehicle_graphics/str_steam_bulgaria_bdz_142_150.png) | BDZ Class 279 142-150 | 1868 | 50 | 650 | Shunting | 0 | STANDARD_NONE | Eastern Europe |
 | ![4-6-0 'Ten-wheeler'](vehicle_graphics/str_steam_usa_4_6_0_ten_wheeler.png) | 4-6-0 'Ten-wheeler' | 1869 | 110 | 1200 | Universal | 0 | STANDARD_NONE | North America |
+| ![RENFE 030](vehicle_graphics/str_steam_spain_renfe_030.png) | RENFE 030 | 1870 | 60 | 375 | Shunting | 0 | BROAD_NONE | Southern Europe |
 | ![FCGR [BAGS] No. 315 2-4-0T](vehicle_graphics/str_steam_argentina_fcgr_315.png) | FCGR [BAGS] No. 315 2-4-0T | 1871 | 45 | 145 | Shunting | 0 | BROAD_NONE | South America |
 | ![East London Harbour 0-4-0VB](vehicle_graphics/str_steam_south_africa_harbour_board_el_0_4_0.png) | East London Harbour 0-4-0VB | 1873 | 16 | 40 | Shunting | 0 | BROAD_NONE | Africa |
 | ![2-8-0 'Consolidation'](vehicle_graphics/str_steam_usa_2_8_0_consolidation.png) | 2-8-0 'Consolidation' | 1875 | 60 | 1500 | Universal | 0 | STANDARD_NONE | North America |
@@ -856,6 +858,7 @@
 | ![SNCF 141TA](vehicle_graphics/str_steam_france_sncf_141ta.png) | SNCF 141TA | 1911 | 70 | 1360 | Universal | 0 | STANDARD_NONE | Western Europe |
 | ![South Maitland Railways 10](vehicle_graphics/str_steam_australia_smr_10.png) | South Maitland Railways 10 | 1911 | 80 | 875 | Universal | 0 | STANDARD_NONE | Oceania |
 | ![JNR 9600](vehicle_graphics/str_steam_japan_jnr_9600.png) | JNR 9600 | 1913 | 65 | 870 | Universal | 0 | NARROW_NONE | Asia |
+| ![RENFE 240](vehicle_graphics/str_steam_spain_renfe_240.png) | RENFE 240 | 1913 | 105 | 2022 | Heavy Freight | 0 | BROAD_NONE | Southern Europe |
 | ![SBB C 5/6 'Elephant'](vehicle_graphics/str_steam_switzerland_sbb_c_5_6.png) | SBB C 5/6 'Elephant' | 1913 | 65 | 1620 | Heavy Freight | 0 | STANDARD_NONE | Western Europe |
 | ![SNCF 140C](vehicle_graphics/str_steam_france_sncf_140c.png) | SNCF 140C | 1913 | 80 | 1500 | Universal | 0 | STANDARD_NONE | Western Europe |
 | ![FCCA PS10 Class](vehicle_graphics/str_steam_argentina_fcca_ps10_class.png) | FCCA PS10 Class | 1914 | 140 | 900 | Express | 0 | BROAD_NONE | South America |

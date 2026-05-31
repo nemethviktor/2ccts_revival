@@ -12,7 +12,7 @@ item(FEAT_TRAINS, item_electric_hungary_mav_class_v40) {
         climates_available: ((param_region_eastern_europe || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1932,1,1);
         model_life: 45;
-        vehicle_life: 30;
+        vehicle_life: 35;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
         cost_factor: 56.85247;

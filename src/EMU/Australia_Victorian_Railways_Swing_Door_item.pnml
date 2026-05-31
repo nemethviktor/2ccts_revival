@@ -31,7 +31,7 @@ item(FEAT_TRAINS, item_emu_australia_victorian_railways_swing_door) {
         climates_available: ((param_region_oceania || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1917,1,1);
         model_life: 45;
-        vehicle_life: 30;
+        vehicle_life: 47;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         cost_factor: 32.89555;

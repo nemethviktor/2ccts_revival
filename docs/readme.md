@@ -36,14 +36,14 @@ There is a nightly of sorts on my [Google Drive](https://drive.google.com/file/d
 - *Sleeper coaches*: These have a slower cargo ageing (4 days instead of 2.5 days)
 - *Model life*:
   - Powered/Unpowered (MU carriages): *never expire*
-  - Intro year >= 1995: *never expire*
+  - Intro year >= 1990: *never expire*
   - Wagons/Coaches: 70 years
   - Anything else: 45 years
 - *Vehicle life*:
   - Powered/Unpowered (MU carriages): 25 years
   - Wagons/Coaches: 25 years
+  - If real-life withdrawal known, use that subject to a minimum described below
   - Metro of any type: 50 years
-  - Intro year < 1900: 15 years
   - Intro year < 1950: 30 years
   - Intro year < 2000: 40 years
   - Anything else: 45 years

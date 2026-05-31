@@ -1112,6 +1112,7 @@ str_emu_austria_obb_4030                                          :OBB 4030 (EMU
 # str_emu_new_zealand_dm                                            : not translated
 # str_emu_new_zealand_fpft_matangi                                  : not translated
 # str_emu_hong_kong_mtr_sp1900                                      : not translated
+# str_emu_chile_chilean_sfb500_demu                                 : not translated
 # str_cargoemu_japan_jr_freight_m250                                : not translated
 
 # Maglevengine
@@ -1348,6 +1349,8 @@ str_steam_australia_victorian_railways_r_class                    :Viktoria Ferv
 # str_steam_hungary_mav_class_601                                   : not translated
 # str_steam_italy_lvci_class_1                                      : not translated
 # str_steam_spain_renfe_462                                         : not translated
+# str_steam_spain_renfe_030                                         : not translated
+# str_steam_spain_renfe_240                                         : not translated
 
 # Steamrailbus
 # str_rbs_austria_nolb_1                                            : not translated

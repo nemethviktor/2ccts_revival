@@ -26,8 +26,8 @@ item(FEAT_TRAINS, item_emu_morocco_oncf_zmc) {
         name: string(str_emu_morocco_oncf_zmc);
         climates_available: ((param_region_africa || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1984,1,1);
-        model_life: 45;
-        vehicle_life: 40;
+        model_life: VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 46;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         cost_factor: 54.07174;

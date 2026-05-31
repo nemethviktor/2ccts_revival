@@ -1667,8 +1667,8 @@ item(FEAT_TRAINS, item_steam_hungary_mav_class_203, 4147) {}
 item(FEAT_TRAINS, item_steam_hungary_mav_class_601, 4148) {}
 item(FEAT_TRAINS, item_steam_italy_lvci_class_1, 4149) {}
 item(FEAT_TRAINS, item_steam_spain_renfe_462, 4150) {}
-// 4151 free
-// 4152 free
+item(FEAT_TRAINS, item_steam_spain_renfe_030, 4151) {}
+item(FEAT_TRAINS, item_steam_spain_renfe_240, 4152) {}
 // 4153 free
 // 4154 free
 // 4155 free
@@ -5620,7 +5620,7 @@ item(FEAT_TRAINS, item_emu_new_zealand_em_ganz_mavag, 8088) {}
 item(FEAT_TRAINS, item_emu_new_zealand_dm, 8089) {}
 item(FEAT_TRAINS, item_emu_new_zealand_fpft_matangi, 8090) {}
 item(FEAT_TRAINS, item_emu_hong_kong_mtr_sp1900, 8091) {}
-// 8092 free
+item(FEAT_TRAINS, item_emu_chile_chilean_sfb500_demu, 8092) {}
 // 8093 free
 // 8094 free
 // 8095 free

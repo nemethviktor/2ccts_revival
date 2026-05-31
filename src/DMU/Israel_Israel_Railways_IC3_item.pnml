@@ -31,7 +31,7 @@ item(FEAT_TRAINS, item_dmu_israel_israel_railways_ic3) {
         name: string(str_dmu_israel_israel_railways_ic3);
         climates_available: ((param_region_asia || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1986,1,1);
-        model_life: 45;
+        model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;

@@ -11,7 +11,7 @@ item(FEAT_TRAINS, item_mu_coach_gen4_gonian_4d_concept) {
         name: string(str_mu_coach_gen4_gonian_4d_concept);
         climates_available: ((param_region_oceania || 0) && param_concept) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1992,1,1);
-        model_life: 70;
+        model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;

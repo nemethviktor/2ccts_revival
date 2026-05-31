@@ -15,7 +15,7 @@ item(FEAT_TRAINS, item_diesel_saudi_arabia_saudi_railways_4000_emd_sd70acs) {
         name: string(str_diesel_saudi_arabia_saudi_railways_4000_emd_sd70acs);
         climates_available: ((param_region_asia || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1992,1,1);
-        model_life: 45;
+        model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;

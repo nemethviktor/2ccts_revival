@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_mtro_uk_london_1972_stock) {
         name: string(str_mtro_uk_london_1972_stock);
         climates_available: ((param_region_northern_europe || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1972,1,1);
-        model_life: 45;
-        vehicle_life: 50;
+        model_life: VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 58;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
         cost_factor: 46.63484;

@@ -31,7 +31,7 @@ item(FEAT_TRAINS, item_emu_usa_erie_lackawanna_mu_cars) {
         climates_available: ((param_region_north_america || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1930,1,1);
         model_life: 45;
-        vehicle_life: 30;
+        vehicle_life: 54;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         cost_factor: 43.52936;

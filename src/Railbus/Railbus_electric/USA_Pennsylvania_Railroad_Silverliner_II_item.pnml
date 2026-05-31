@@ -27,7 +27,7 @@ item(FEAT_TRAINS, item_rbe_usa_pennsylvania_railroad_silverliner_ii) {
         climates_available: ((param_region_north_america || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1963,1,1);
         model_life: 45;
-        vehicle_life: 40;
+        vehicle_life: 49;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         cost_factor: 34.32854;

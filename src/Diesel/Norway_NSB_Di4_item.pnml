@@ -11,8 +11,8 @@ item(FEAT_TRAINS, item_diesel_norway_nsb_di4) {
         name: string(str_diesel_norway_nsb_di4);
         climates_available: ((param_region_northern_europe || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1980,1,1);
-        model_life: 45;
-        vehicle_life: 40;
+        model_life: VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 50;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
         cost_factor: 69.95926;

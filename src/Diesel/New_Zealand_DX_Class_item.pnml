@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_diesel_new_zealand_dx_class) {
         name: string(str_diesel_new_zealand_dx_class);
         climates_available: ((param_region_oceania || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1972,1,1);
-        model_life: 45;
-        vehicle_life: 40;
+        model_life: VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 53;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
         cost_factor: 62.71793;

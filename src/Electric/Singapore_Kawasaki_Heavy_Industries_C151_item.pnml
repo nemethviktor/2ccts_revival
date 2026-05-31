@@ -15,7 +15,7 @@ item(FEAT_TRAINS, item_mtro_singapore_kawasaki_heavy_industries_c151) {
         name: string(str_mtro_singapore_kawasaki_heavy_industries_c151);
         climates_available: ((param_region_asia || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1987,1,1);
-        model_life: 45;
+        model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 50;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;

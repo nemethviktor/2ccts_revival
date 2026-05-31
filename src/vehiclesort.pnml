@@ -111,6 +111,7 @@ item_steam_egypt_stephenson_class_192, /*Year: 1867*/ \
 item_steam_brazil_sao_paulo_railway_13, /*Year: 1867*/ \
 item_steam_bulgaria_bdz_142_150, /*Year: 1868*/ \
 item_steam_usa_4_6_0_ten_wheeler, /*Year: 1869*/ \
+item_steam_spain_renfe_030, /*Year: 1870*/ \
 item_steam_argentina_fcgr_315, /*Year: 1871*/ \
 item_steam_south_africa_harbour_board_el_0_4_0, /*Year: 1873*/ \
 item_steam_usa_2_8_0_consolidation, /*Year: 1875*/ \
@@ -165,6 +166,7 @@ item_steam_australia_smr_10, /*Year: 1911*/ \
 item_steam_switzerland_sbb_c_5_6, /*Year: 1913*/ \
 item_steam_france_sncf_140c, /*Year: 1913*/ \
 item_steam_japan_jnr_9600, /*Year: 1913*/ \
+item_steam_spain_renfe_240, /*Year: 1913*/ \
 item_steam_croatia_hz_51, /*Year: 1914*/ \
 item_steam_usa_nyc_h_6a_light_mikado, /*Year: 1914*/ \
 item_steam_australia_nswgr_c35, /*Year: 1914*/ \
@@ -718,6 +720,7 @@ item_emu_italy_ntv_agv_duplex, /*Year: 2015*/ \
 item_emu_croatia_hz_6112, /*Year: 2015*/ \
 item_emu_australia_melbourne_hcmt_munnel, /*Year: 2020*/ \
 item_emu_australia_melbourne_nexas, /*Year: 2023*/ \
+item_emu_chile_chilean_sfb500_demu, /*Year: 2024*/ \
 item_emu_europe_sureot, /*Year: 2030*/
 
 #define SORTING_MULTIMETRO \
