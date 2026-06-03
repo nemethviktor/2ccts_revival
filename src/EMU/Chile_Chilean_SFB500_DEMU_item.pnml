@@ -30,13 +30,13 @@ item(FEAT_TRAINS, item_emu_chile_chilean_sfb500_demu) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 98.60008;
-        running_cost_factor: 92.88435;
+        cost_factor: 98.36308;
+        running_cost_factor: 92.64735;
         speed: 180 km/h;
         power: 7510 hp;
         cargo_capacity: 118;
         weight: 51 ton;
-        tractive_effort_coefficient: 0.473;
+        tractive_effort_coefficient: 0.236;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -83,11 +83,11 @@ item(FEAT_TRAINS, item_emu_chile_chilean_sfb500_demu) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        running_cost_factor: (round(51.14988703164593));
+        running_cost_factor: (round(38.885137031645925));
         power: int(7510*1/2);
         weight: int(51*3/4);
         cargo_capacity: 118;
-        tractive_effort_coefficient: int(0.473*10*51);
+        tractive_effort_coefficient: int(0.236*10*51);
         length: 8;
         default: switch_emu_chile_chilean_sfb500_demu_cargo_selection;
     }

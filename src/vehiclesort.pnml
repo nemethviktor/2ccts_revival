@@ -730,6 +730,7 @@ item_emu_croatia_hz_6112, /*Year: 2015*/ \
 item_emu_australia_melbourne_hcmt_munnel, /*Year: 2020*/ \
 item_emu_australia_melbourne_nexas, /*Year: 2023*/ \
 item_emu_chile_chilean_sfb500_demu, /*Year: 2024*/ \
+item_emu_uk_br_class_895, /*Year: 2027*/ \
 item_emu_europe_sureot, /*Year: 2030*/
 
 #define SORTING_MULTIMETRO \

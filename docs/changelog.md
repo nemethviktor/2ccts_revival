@@ -39,6 +39,7 @@
     - `PESA 111MS`
     - `RZD VL19`
     - `DRG E18`
+    - `BR Class 895 'HS2'`
     - Added some of the maglevs from the original OpenTTD game.
   Further changes from Discord discussion: [most of these have been amended but not 100%. the below is a copypaste of suggestions]
   - American End-Platform Coaches - should be aviavable in the americas too

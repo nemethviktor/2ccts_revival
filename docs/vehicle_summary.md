@@ -688,6 +688,7 @@
 | ![Melbourne HCMT Munnel](vehicle_graphics/str_emu_australia_melbourne_hcmt_munnel.png) | Melbourne HCMT Munnel | 2020 | 130 / 80 | 1500 / 1118 | Commuter/Urban | 320 | BROAD_1500V | Oceania | No |
 | ![Melbourne Siemens Nexas](vehicle_graphics/str_emu_australia_melbourne_nexas.png) | Melbourne Siemens Nexas | 2023 | 145 / 90 | 1286 / 958 | Commuter/Urban | 284 | BROAD_1500V | Oceania | No |
 | ![Santiago y Chillán Sifang SFB-500](vehicle_graphics/str_emu_chile_chilean_sfb500_demu.png) | Santiago y Chillán Sifang SFB-500 | 2024 | 180 / 111 | 7510 / 5599 | Express Passenger | 236 | BROAD_25KV | South America | No |
+| ![BR Class 895 'HS2'](vehicle_graphics/str_emu_uk_br_class_895.png) | BR Class 895 'HS2' | 2027 | 360 / 223 | 13400 / 9991 | Ultra-High-Speed (Pax) | 144 | STANDARD_25KV | Northern Europe | No |
 | ![Sureot](vehicle_graphics/str_emu_europe_sureot.png) | Sureot | 2030 | 300 / 186 | 16000 / 11929 | Ultra-High-Speed (Pax) | 170 | STANDARD_25KV | Southern Europe, Eastern Europe, Western Europe, Northern Europe | Yes |
 
 ## MAGLEVENGINE

@@ -1121,6 +1121,7 @@ str_emu_new_zealand_fpft_matangi                                  :NZR FP/FT 'Ma
 str_emu_hong_kong_mtr_sp1900                                      :MTR SP1900 (EMU, 25kV AC)
 str_emu_chile_chilean_sfb500_demu                                 :Santiago y Chillán Sifang SFB-500 (EMU, 25kV AC)
 str_emu_japan_jnr_shinkansen_series_100                           :JNR Shinkansen Series 100 (EMU, 25kV AC)
+str_emu_uk_br_class_895                                           :BR Class 895 'HS2' (EMU, 25kV AC)
 str_cargoemu_japan_jr_freight_m250                                :JR Freight M250 (EMU, 1500V DC)
 
 # Maglevengine

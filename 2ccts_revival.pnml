@@ -1366,6 +1366,9 @@
 #include "src/EMU/Japan_JNR_Shinkansen_Series_100_graphics.pnml"
 #include "src/EMU/Japan_JNR_Shinkansen_Series_100_item.pnml"
 
+#include "src/EMU/UK_BR_Class_895_graphics.pnml"
+#include "src/EMU/UK_BR_Class_895_item.pnml"
+
 
 //// ELECTRIC
 #include "src/Electric/Switzerland_RhB_DE_2_2_graphics.pnml"
