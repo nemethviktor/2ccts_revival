@@ -734,6 +734,10 @@ str_diesel_usa_amtrak_charger                                     :Amtrak Charge
 # str_diesel_usa_ge_dash_9_44cw                                     : not translated
 # str_diesel_usa_emd_gp40                                           : not translated
 # str_diesel_poland_pkp_su160                                       : not translated
+# str_diesel_usa_emc_e3                                             : not translated
+# str_diesel_usa_emd_ft                                             : not translated
+# str_diesel_germany_dr_132_dbag_234                                : not translated
+# str_diesel_yugoslavia_jz_d66                                      : not translated
 
 # Dieselrailbus
 str_rbd_australia_victorian_railways_aec_rm1                      :Victorian Railways AEC RM1 (Railbus diésel)
@@ -844,6 +848,7 @@ str_dmu_argentina_fcgu_cmm_400_2                                  :FCGU CMM 400-
 # str_dmu_australia_nsw_900                                         : not translated
 # str_dmu_australia_nsw_600                                         : not translated
 # str_dmu_new_zealand_silver_fern                                   : not translated
+# str_dmu_hungary_mav_hargita_m440                                  : not translated
 str_mu_mu_wagon_unpowered                                         :MUW - Unidad de Vagón Múltiple (Sin motorización)
 str_mu_mu_wagon_powered                                           :MUW - Unidad de Vagón Múltiple (Motorizado)
 str_mu_mu_cargo_wagon_unpowered                                   :Vagón de carga de unidad múltiple (Sin motorización)
@@ -995,6 +1000,10 @@ str_electric_germany_prussian_es_6                                :K.P.St.E. ES 
 # str_electric_china_china_railways_hxd2b                           : not translated
 # str_electric_china_china_railways_hxd3d                           : not translated
 # str_electric_hungary_mav_class_v40                                : not translated
+# str_electric_germany_drg_e44                                      : not translated
+# str_electric_poland_pkp_pesa_111e                                 : not translated
+# str_electric_russia_rzd_vl19                                      : not translated
+# str_electric_germany_drg_e18                                      : not translated
 
 # Electricrailbus
 str_rbe_switzerland_ab_cfe_3_3                                    :AB CFe 3/3 (Railbus eléctrico, 1500V DC)
@@ -1113,6 +1122,7 @@ str_emu_europe_sureot                                             :Sureot (EMU, 
 # str_emu_new_zealand_fpft_matangi                                  : not translated
 # str_emu_hong_kong_mtr_sp1900                                      : not translated
 # str_emu_chile_chilean_sfb500_demu                                 : not translated
+# str_emu_japan_jnr_shinkansen_series_100                           : not translated
 # str_cargoemu_japan_jr_freight_m250                                : not translated
 
 # Maglevengine

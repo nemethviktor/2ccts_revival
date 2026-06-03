@@ -18,7 +18,7 @@ item(FEAT_TRAINS, item_mu_coach_gen4_russian_intercity_coach) {
         introduction_date: date(1960,1,1);
         model_life: 70;
         vehicle_life: 25;
-        retire_early: 20;
+        retire_early: 0;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         cost_factor: 30.17985;
         running_cost_factor: 27.05597;

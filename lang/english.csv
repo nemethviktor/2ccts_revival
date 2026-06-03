@@ -1276,8 +1276,8 @@ str_steam_australia_sar_600,South Australian Railways 600
 str_steam_australia_smr_10,South Maitland Railways 10
 str_steam_australia_vr_h,Victorian Railways H
 str_diesel_australia_nsw_41,NSWGR 41
-str_diesel_australia_nsw_48,NSWGR 48
-str_diesel_australia_sar_930,South Australian Railways 930
+str_diesel_australia_nsw_48,NSWGR 48 / ALCO DL531/532
+str_diesel_australia_sar_930,ALCO DL500
 str_diesel_australia_commonwealth_gm,Commonwealth Railways GM
 str_diesel_australia_v_line_a,V/Line A class
 str_diesel_australia_nsw_42,NSWGR 42
@@ -1399,9 +1399,20 @@ str_steam_bulgaria_bdz_142_150,BDZ Class 279 142-150
 str_steam_hungary_mav_class_203,MAV Class 203
 str_steam_hungary_mav_class_601,MAV Class 601
 str_electric_hungary_mav_class_v40,MAV V40
-str_diesel_poland_pkp_su160,PKP SU160
+str_diesel_poland_pkp_su160,PESA 111D // PKP SU160
 str_steam_italy_lvci_class_1,LVCI Class 1
 str_steam_spain_renfe_462,RENFE 462
 str_steam_spain_renfe_240,RENFE 240
 str_steam_spain_renfe_030,RENFE 030
 str_emu_chile_chilean_sfb500_demu,Santiago y Chillán Sifang SFB-500
+str_diesel_usa_emc_e3,EMC E3
+str_diesel_usa_emd_ft,EMD FT
+str_diesel_germany_dr_132_dbag_234,DR 132/DBAG 234
+str_emu_japan_jnr_shinkansen_series_100,JNR Shinkansen Series 100
+str_diesel_yugoslavia_jz_d66,JZ D66 Krauss-Maffei ML 2200
+str_dmu_hungary_mav_hargita_m440,MAV Hargita M440
+str_electric_germany_drg_e44,DRG E44
+str_diesel_australia_alco_dl531_dl532,ALCO DL531/532
+str_electric_poland_pkp_pesa_111e,PESA 111MS
+str_electric_russia_rzd_vl19,RZD VL19
+str_electric_germany_drg_e18,DRG E18

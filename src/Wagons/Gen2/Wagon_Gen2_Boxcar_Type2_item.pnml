@@ -28,7 +28,7 @@ item(FEAT_TRAINS, item_mu_wagon_gen2_boxcar_type2) {
         introduction_date: date(1890,1,1);
         model_life: 70;
         vehicle_life: 25;
-        retire_early: 20;
+        retire_early: 0;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
         cost_factor: 13.34678;
         running_cost_factor: 12.54936;

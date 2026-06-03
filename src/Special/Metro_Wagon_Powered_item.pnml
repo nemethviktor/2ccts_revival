@@ -13,7 +13,7 @@ item(FEAT_TRAINS, item_mtro_metro_wagon_powered) {
         introduction_date: date(1900,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 25;
-        retire_early: 20;
+        retire_early: 0;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
         cost_factor: 199.13440000000003;
         running_cost_factor: 1.24459;

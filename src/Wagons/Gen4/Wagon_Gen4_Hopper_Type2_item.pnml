@@ -28,7 +28,7 @@ item(FEAT_TRAINS, item_mu_wagon_gen4_hopper_type2) {
         introduction_date: date(1960,1,1);
         model_life: 70;
         vehicle_life: 25;
-        retire_early: 20;
+        retire_early: 0;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
         cost_factor: 29.00817;
         running_cost_factor: 27.55163;

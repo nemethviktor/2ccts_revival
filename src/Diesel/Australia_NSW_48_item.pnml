@@ -9,7 +9,7 @@
 item(FEAT_TRAINS, item_diesel_australia_nsw_48) {
     property {
         name: string(str_diesel_australia_nsw_48);
-        climates_available: ((param_region_oceania || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
+        climates_available: (((param_region_africa || (param_region_north_america || param_region_south_america) || param_region_asia || (param_region_northern_europe || param_region_eastern_europe || param_region_southern_europe || param_region_western_europe) || param_region_oceania) || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1959,1,1);
         model_life: 45;
         vehicle_life: 40;
@@ -32,7 +32,7 @@ item(FEAT_TRAINS, item_diesel_australia_nsw_48) {
         misc_flags: bitmask(TRAIN_FLAG_2CC);
         refit_cost: 0;
         ai_special_flag: AI_FLAG_PASSENGER | AI_FLAG_CARGO;
-        track_type: [STANDARD_GAUGE_RAILTYPE_NONE];
+        track_type: [STANDARD_GAUGE_RAILTYPE_NONE, NARROW_GAUGE_RAILTYPE_NONE, BROAD_GAUGE_RAILTYPE_NONE];
         running_cost_base: RUNNING_COST_DIESEL;
         engine_class: ENGINE_CLASS_DIESEL;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 0, DISABLE_WAGON_POWER);
@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_diesel_australia_nsw_48) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/oceania", "flag/AU", "power/diesel", "role/universal"];
+	badges: ["region/africa", "region/asia", "region/america/northern", "region/america/south", "region/europe/southern", "region/europe/western", "region/europe/eastern", "region/europe/northern", "region/oceania", "flag/AU", "power/diesel", "role/universal"];
 
     }
     graphics {

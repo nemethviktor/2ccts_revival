@@ -252,16 +252,19 @@ item_diesel_netherlands_ns_200, /*Year: 1934*/ \
 item_diesel_germany_db_270, /*Year: 1936*/ \
 item_diesel_usa_rock_island_emc_ta, /*Year: 1937*/ \
 item_diesel_brazil_ee_vfflb, /*Year: 1938*/ \
+item_diesel_usa_emc_e3, /*Year: 1938*/ \
 item_diesel_usa_nyc_baldwin_vo_660, /*Year: 1939*/ \
 item_diesel_uk_br_class_d3_7, /*Year: 1939*/ \
 item_diesel_australia_queensland_railways_dl_class, /*Year: 1939*/ \
 item_diesel_south_africa_sar_ds, /*Year: 1939*/ \
+item_diesel_usa_emd_ft, /*Year: 1939*/ \
 item_diesel_usa_western_pacific_alco_s_2, /*Year: 1940*/ \
 item_diesel_switzerland_sbb_am_4_6, /*Year: 1941*/ \
 item_diesel_australia_nswgr_79, /*Year: 1943*/ \
 item_diesel_usa_prr_fm_h_10_44, /*Year: 1944*/ \
 item_diesel_russia_rzd_db, /*Year: 1945*/ \
 item_diesel_usa_at_sf_emd_f3, /*Year: 1946*/ \
+item_diesel_australia_sar_930, /*Year: 1946*/ \
 item_diesel_algeria_sntf_baldwin_drs6_4_1000, /*Year: 1948*/ \
 item_diesel_portugal_cp_1500, /*Year: 1948*/ \
 item_diesel_usa_up_emd_e8, /*Year: 1949*/ \
@@ -287,7 +290,6 @@ item_diesel_sri_lanka_sri_lanka_railways_m2, /*Year: 1954*/ \
 item_diesel_australia_commonwealth_nsu, /*Year: 1954*/ \
 item_diesel_hungary_mav_m28, /*Year: 1955*/ \
 item_diesel_ireland_cie_001, /*Year: 1955*/ \
-item_diesel_australia_sar_930, /*Year: 1955*/ \
 item_diesel_australia_nsw_42, /*Year: 1955*/ \
 item_diesel_new_zealand_da_class, /*Year: 1955*/ \
 item_diesel_belgium_nmbs_sncb_83, /*Year: 1956*/ \
@@ -296,6 +298,7 @@ item_diesel_usa_amtrak_fl9, /*Year: 1956*/ \
 item_diesel_italy_fs_d341, /*Year: 1957*/ \
 item_diesel_japan_jnr_df50, /*Year: 1957*/ \
 item_diesel_australia_nswgr_44, /*Year: 1957*/ \
+item_diesel_yugoslavia_jz_d66, /*Year: 1957*/ \
 item_diesel_czech_republic_cd_720_chme2, /*Year: 1958*/ \
 item_diesel_finland_vr_dr12, /*Year: 1959*/ \
 item_diesel_romania_cfr_060_da, /*Year: 1959*/ \
@@ -339,9 +342,9 @@ item_diesel_new_zealand_dx_class, /*Year: 1972*/ \
 item_diesel_australia_nsw_47, /*Year: 1972*/ \
 item_diesel_canada_cnr_mlw_m420w, /*Year: 1973*/ \
 item_diesel_usa_amtrak_sdp_40f, /*Year: 1973*/ \
-item_diesel_germany_dr_130_dbag_230, /*Year: 1973*/ \
 item_diesel_australia_tgr_z, /*Year: 1973*/ \
 item_diesel_australia_qr_2350, /*Year: 1973*/ \
+item_diesel_germany_dr_132_dbag_234, /*Year: 1973*/ \
 item_diesel_egypt_enr_te114e, /*Year: 1974*/ \
 item_diesel_zimbabwe_sorefame_de8, /*Year: 1974*/ \
 item_diesel_china_china_railways_dfh3, /*Year: 1976*/ \
@@ -451,9 +454,12 @@ item_electric_costa_rica_aeg_pacific_a1a_a1a, /*Year: 1930*/ \
 item_electric_japan_jnr_eb10, /*Year: 1931*/ \
 item_electric_norway_nsb_el10, /*Year: 1931*/ \
 item_electric_hungary_mav_class_v40, /*Year: 1932*/ \
+item_electric_germany_drg_e44, /*Year: 1932*/ \
+item_electric_russia_rzd_vl19, /*Year: 1932*/ \
 item_electric_germany_db_104, /*Year: 1933*/ \
 item_electric_italy_fs_e428, /*Year: 1934*/ \
 item_electric_usa_pennsylvania_railroad_gg_1, /*Year: 1935*/ \
+item_electric_germany_drg_e18, /*Year: 1935*/ \
 item_electric_japan_jnr_ef55, /*Year: 1936*/ \
 item_electric_south_africa_sar_es_class, /*Year: 1936*/ \
 item_electric_austria_obb_1020_crocodile, /*Year: 1940*/ \
@@ -565,12 +571,14 @@ item_electric_brasil_mrs_he_4_4, /*Year: 2012*/ \
 item_electric_china_china_railways_hxd3d, /*Year: 2012*/ \
 item_electric_south_africa_sar_20e, /*Year: 2013*/ \
 item_electric_kazakhstan_ktz_kz8a, /*Year: 2014*/ \
+item_electric_poland_pkp_pesa_111e, /*Year: 2016*/ \
 item_electric_tanzania_trc_e6800, /*Year: 2024*/
 
 #define SORTING_DMU \
 item_dmu_germany_db_vt_040_flying_hamburger, /*Year: 1932*/ \
 item_dmu_australia_nswgr_silver_city_comet, /*Year: 1937*/ \
 item_dmu_argentina_ganz_arpad_bariloche, /*Year: 1938*/ \
+item_dmu_hungary_mav_hargita_m440, /*Year: 1944*/ \
 item_dmu_czech_republic_cd_m131, /*Year: 1948*/ \
 item_dmu_australia_nsw_600, /*Year: 1949*/ \
 item_dmu_australia_nsw_900, /*Year: 1951*/ \
@@ -678,6 +686,7 @@ item_emu_new_zealand_em_ganz_mavag, /*Year: 1982*/ \
 item_emu_switzerland_sbb_rbde_560, /*Year: 1984*/ \
 item_emu_tunisia_sncft_yz_e, /*Year: 1984*/ \
 item_emu_morocco_oncf_zmc, /*Year: 1984*/ \
+item_emu_japan_jnr_shinkansen_series_100, /*Year: 1985*/ \
 item_emu_japan_odakyu_10000_series_romance, /*Year: 1986*/ \
 item_emu_hungary_mav_bdvmot, /*Year: 1988*/ \
 item_emu_australia_tangara_v_set_hybrid, /*Year: 1988*/ \

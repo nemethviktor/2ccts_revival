@@ -689,8 +689,8 @@ str_diesel_germany_dr_130_dbag_230                                :DR 130/DBAG 2
 str_diesel_usa_up_7000_ge_ac6000cw                                :UP 7391 GE AC6044CW (Diesel)
 str_diesel_australia_bhp_6071_ge_ac6000cw                         :BHP 6071 GE AC6000CW (Diesel)
 str_diesel_australia_nsw_41                                       :NSWGR 41 (Diesel)
-str_diesel_australia_nsw_48                                       :NSWGR 48 (Diesel)
-str_diesel_australia_sar_930                                      :South Australian Railways 930 (Diesel)
+str_diesel_australia_nsw_48                                       :NSWGR 48 / ALCO DL531/532 (Diesel)
+str_diesel_australia_sar_930                                      :ALCO DL500 (Diesel)
 str_diesel_australia_commonwealth_gm                              :Commonwealth Railways GM (Diesel)
 str_diesel_australia_v_line_a                                     :V/Line A class (Diesel)
 str_diesel_australia_nsw_42                                       :NSWGR 42 (Diesel)
@@ -731,7 +731,11 @@ str_diesel_usa_ge_c30_7                                           :FNM 6700 GE C
 str_diesel_usa_ge_dash_8_40c                                      :EFC 500 GE C40-8 'Dash-8' (Diesel)
 str_diesel_usa_ge_dash_9_44cw                                     :CNR 2500 GE C44-9W 'Dash 9' (Diesel)
 str_diesel_usa_emd_gp40                                           :EMD GP40 (Diesel)
-str_diesel_poland_pkp_su160                                       :PKP SU160 (Diesel)
+str_diesel_poland_pkp_su160                                       :PESA 111D // PKP SU160 (Diesel)
+str_diesel_usa_emc_e3                                             :EMC E3 (Diesel)
+str_diesel_usa_emd_ft                                             :EMD FT (Diesel)
+str_diesel_germany_dr_132_dbag_234                                :DR 132/DBAG 234 (Diesel)
+str_diesel_yugoslavia_jz_d66                                      :JZ D66 Krauss-Maffei ML 2200 (Diesel)
 
 # Dieselrailbus
 str_rbd_australia_victorian_railways_aec_rm1                      :Victorian Railways AEC RM1 (Diesel Railbus)
@@ -842,6 +846,7 @@ str_dmu_australia_comeng_xpt                                      :New South Wal
 str_dmu_australia_nsw_900                                         :NSWGR 800/900 'DEB' (DMU)
 str_dmu_australia_nsw_600                                         :NSWGR 600/700 (DMU)
 str_dmu_new_zealand_silver_fern                                   :NZR RM 'Silver Fern' (DMU)
+str_dmu_hungary_mav_hargita_m440                                  :MAV Hargita M440 (DMU)
 str_mu_mu_wagon_unpowered                                         :Multiple Unit Wagon (Unpowered)
 str_mu_mu_wagon_powered                                           :Multiple Unit Wagon (Powered)
 str_mu_mu_cargo_wagon_unpowered                                   :Multiple Unit Cargo Wagon (Unpowered)
@@ -993,6 +998,10 @@ str_electric_china_china_railways_ss8                             :China Railway
 str_electric_china_china_railways_hxd2b                           :China Railways HXD2B (Electric, 25kV AC)
 str_electric_china_china_railways_hxd3d                           :China Railways HXD3D (Electric, 25kV AC)
 str_electric_hungary_mav_class_v40                                :MAV V40 (Electric, 15kV AC)
+str_electric_germany_drg_e44                                      :DRG E44 (Electric, 25kV AC, 15kV AC)
+str_electric_poland_pkp_pesa_111e                                 :PESA 111MS (Electric, OHLE)
+str_electric_russia_rzd_vl19                                      :RZD VL19 (Electric, 3kV DC, 1500V DC)
+str_electric_germany_drg_e18                                      :DRG E18 (Electric, 15kV AC)
 
 # Electricrailbus
 str_rbe_switzerland_ab_cfe_3_3                                    :AB CFe 3/3 (Electric Railbus, 1500V DC)
@@ -1111,6 +1120,7 @@ str_emu_new_zealand_dm                                            :NZR DM EMU (E
 str_emu_new_zealand_fpft_matangi                                  :NZR FP/FT 'Matangi' (EMU, 1500V DC)
 str_emu_hong_kong_mtr_sp1900                                      :MTR SP1900 (EMU, 25kV AC)
 str_emu_chile_chilean_sfb500_demu                                 :Santiago y Chillán Sifang SFB-500 (EMU, 25kV AC)
+str_emu_japan_jnr_shinkansen_series_100                           :JNR Shinkansen Series 100 (EMU, 25kV AC)
 str_cargoemu_japan_jr_freight_m250                                :JR Freight M250 (EMU, 1500V DC)
 
 # Maglevengine

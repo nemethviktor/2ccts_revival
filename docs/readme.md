@@ -52,9 +52,7 @@ There is a nightly of sorts on my [Google Drive](https://drive.google.com/file/d
 
 The roster is auto-saved into a markdown file and can be accessed [on github](https://github.com/nemethviktor/2ccts_revival/blob/master/docs/vehicle_summary.md).
 
-A visual gap analysis is below (representing the count of vehicles available per region per role...or the lack of them):
-
-![Gap Analysis](roster_gap_analysis.png)
+A visual gap analysis is also [on github](https://github.com/nemethviktor/2ccts_revival/blob/master/docs/vehicle_gap_analysis.md). (representing the count of vehicles available per region per role...or the lack of them)
 
 If so inclined to get a more readable version of the image above, poke the relevant py file and change the `target_categories` inside to what you are interested in..
 

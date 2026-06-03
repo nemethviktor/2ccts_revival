@@ -4,15 +4,20 @@
 
 
 // Template: TPL_01A.
-// Data from: https://en.wikipedia.org/wiki/South_Australian_Railways_930_class
+// Data from: https://en.wikipedia.org/wiki/ALCO_FA#ALCO_%22World_Locomotive%22
+
+// Notes:
+//// WITHDRAWAL_YEAR: 2030 -- Still in operation
+//// COUNTRY: United States -- Orignally AUS but reverted to the ALCO version and that's US/ALL REGION
+
 
 item(FEAT_TRAINS, item_diesel_australia_sar_930) {
     property {
         name: string(str_diesel_australia_sar_930);
-        climates_available: ((param_region_oceania || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
-        introduction_date: date(1955,1,1);
-        model_life: 45;
-        vehicle_life: 40;
+        climates_available: (((param_region_africa || (param_region_north_america || param_region_south_america) || param_region_asia || (param_region_northern_europe || param_region_eastern_europe || param_region_southern_europe || param_region_western_europe) || param_region_oceania) || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
+        introduction_date: date(1946,1,1);
+        model_life: VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 84;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
         cost_factor: 51.54483;
@@ -43,7 +48,7 @@ item(FEAT_TRAINS, item_diesel_australia_sar_930) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/oceania", "flag/AU", "power/diesel", "role/universal"];
+	badges: ["region/africa", "region/asia", "region/america/northern", "region/america/south", "region/europe/southern", "region/europe/western", "region/europe/eastern", "region/europe/northern", "region/oceania", "flag/US", "power/diesel", "role/universal"];
 
     }
     graphics {

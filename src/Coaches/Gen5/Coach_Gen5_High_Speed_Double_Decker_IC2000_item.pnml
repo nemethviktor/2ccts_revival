@@ -17,7 +17,7 @@ item(FEAT_TRAINS, item_mu_coach_gen5_high_speed_double_decker_ic2000) {
         introduction_date: date(2000,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 25;
-        retire_early: 20;
+        retire_early: 0;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
         cost_factor: 72.8555;
         running_cost_factor: 70.0711;

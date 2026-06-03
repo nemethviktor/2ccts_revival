@@ -537,6 +537,9 @@
 #include "src/DMU/New_Zealand_Silver_Fern_graphics.pnml"
 #include "src/DMU/New_Zealand_Silver_Fern_item.pnml"
 
+#include "src/DMU/Hungary_MAV_Hargita_M440_graphics.pnml"
+#include "src/DMU/Hungary_MAV_Hargita_M440_item.pnml"
+
 
 //// DIESEL
 #include "src/Diesel/Germany_DB_Kof_II_graphics.pnml"
@@ -947,9 +950,6 @@
 #include "src/Diesel/Ivory_Coast_GMD_GT22LC2_graphics.pnml"
 #include "src/Diesel/Ivory_Coast_GMD_GT22LC2_item.pnml"
 
-#include "src/Diesel/Germany_DR_130_DBAG_230_graphics.pnml"
-#include "src/Diesel/Germany_DR_130_DBAG_230_item.pnml"
-
 #include "src/Diesel/USA_UP_7000_GE_AC6000CW_graphics.pnml"
 #include "src/Diesel/USA_UP_7000_GE_AC6000CW_item.pnml"
 
@@ -1072,6 +1072,18 @@
 
 #include "src/Diesel/Poland_PKP_SU160_graphics.pnml"
 #include "src/Diesel/Poland_PKP_SU160_item.pnml"
+
+#include "src/Diesel/USA_EMC_E3_graphics.pnml"
+#include "src/Diesel/USA_EMC_E3_item.pnml"
+
+#include "src/Diesel/USA_EMD_FT_graphics.pnml"
+#include "src/Diesel/USA_EMD_FT_item.pnml"
+
+#include "src/Diesel/Germany_DR_132_DBAG_234_graphics.pnml"
+#include "src/Diesel/Germany_DR_132_DBAG_234_item.pnml"
+
+#include "src/Diesel/Yugoslavia_JZ_D66_graphics.pnml"
+#include "src/Diesel/Yugoslavia_JZ_D66_item.pnml"
 
 
 //// EMU
@@ -1350,6 +1362,9 @@
 
 #include "src/EMU/Chile_Chilean_SFB500_DEMU_graphics.pnml"
 #include "src/EMU/Chile_Chilean_SFB500_DEMU_item.pnml"
+
+#include "src/EMU/Japan_JNR_Shinkansen_Series_100_graphics.pnml"
+#include "src/EMU/Japan_JNR_Shinkansen_Series_100_item.pnml"
 
 
 //// ELECTRIC
@@ -1784,6 +1799,18 @@
 
 #include "src/Electric/Hungary_MAV_Class_V40_graphics.pnml"
 #include "src/Electric/Hungary_MAV_Class_V40_item.pnml"
+
+#include "src/Electric/Germany_DRG_E44_graphics.pnml"
+#include "src/Electric/Germany_DRG_E44_item.pnml"
+
+#include "src/Electric/Poland_PKP_PESA_111E_graphics.pnml"
+#include "src/Electric/Poland_PKP_PESA_111E_item.pnml"
+
+#include "src/Electric/Russia_RZD_VL19_graphics.pnml"
+#include "src/Electric/Russia_RZD_VL19_item.pnml"
+
+#include "src/Electric/Germany_DRG_E18_graphics.pnml"
+#include "src/Electric/Germany_DRG_E18_item.pnml"
 
 #include "src/Electric/UK_London_1903_Stock_graphics.pnml"
 #include "src/Electric/UK_London_1903_Stock_item.pnml"

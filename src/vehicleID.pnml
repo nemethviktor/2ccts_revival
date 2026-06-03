@@ -2659,7 +2659,7 @@ item(FEAT_TRAINS, item_diesel_sierra_leone_lamco_301_series, 5136) {}
 item(FEAT_TRAINS, item_diesel_congo_alstom_bb_bb, 5137) {}
 item(FEAT_TRAINS, item_diesel_zimbabwe_sorefame_de8, 5138) {}
 item(FEAT_TRAINS, item_diesel_ivory_coast_gmd_gt22lc2, 5139) {}
-item(FEAT_TRAINS, item_diesel_germany_dr_130_dbag_230, 5140) {}
+// item(FEAT_TRAINS, item_diesel_germany_dr_130_dbag_230, 5140) {} // vehicle is excluded
 item(FEAT_TRAINS, item_diesel_usa_up_7000_ge_ac6000cw, 5141) {}
 item(FEAT_TRAINS, item_diesel_australia_bhp_6071_ge_ac6000cw, 5142) {}
 item(FEAT_TRAINS, item_diesel_australia_nsw_41, 5143) {}
@@ -2706,10 +2706,10 @@ item(FEAT_TRAINS, item_diesel_usa_ge_dash_8_40c, 5183) {}
 item(FEAT_TRAINS, item_diesel_usa_ge_dash_9_44cw, 5184) {}
 item(FEAT_TRAINS, item_diesel_usa_emd_gp40, 5185) {}
 item(FEAT_TRAINS, item_diesel_poland_pkp_su160, 5186) {}
-// 5187 free
-// 5188 free
-// 5189 free
-// 5190 free
+item(FEAT_TRAINS, item_diesel_usa_emc_e3, 5187) {}
+item(FEAT_TRAINS, item_diesel_usa_emd_ft, 5188) {}
+item(FEAT_TRAINS, item_diesel_germany_dr_132_dbag_234, 5189) {}
+item(FEAT_TRAINS, item_diesel_yugoslavia_jz_d66, 5190) {}
 // 5191 free
 // 5192 free
 // 5193 free
@@ -3674,10 +3674,10 @@ item(FEAT_TRAINS, item_electric_china_china_railways_ss8, 6148) {}
 item(FEAT_TRAINS, item_electric_china_china_railways_hxd2b, 6149) {}
 item(FEAT_TRAINS, item_electric_china_china_railways_hxd3d, 6150) {}
 item(FEAT_TRAINS, item_electric_hungary_mav_class_v40, 6151) {}
-// 6152 free
-// 6153 free
-// 6154 free
-// 6155 free
+item(FEAT_TRAINS, item_electric_germany_drg_e44, 6152) {}
+item(FEAT_TRAINS, item_electric_poland_pkp_pesa_111e, 6153) {}
+item(FEAT_TRAINS, item_electric_russia_rzd_vl19, 6154) {}
+item(FEAT_TRAINS, item_electric_germany_drg_e18, 6155) {}
 // 6156 free
 // 6157 free
 // 6158 free
@@ -4587,7 +4587,7 @@ item(FEAT_TRAINS, item_dmu_australia_comeng_xpt, 7058) {}
 item(FEAT_TRAINS, item_dmu_australia_nsw_900, 7059) {}
 item(FEAT_TRAINS, item_dmu_australia_nsw_600, 7060) {}
 item(FEAT_TRAINS, item_dmu_new_zealand_silver_fern, 7061) {}
-// 7062 free
+item(FEAT_TRAINS, item_dmu_hungary_mav_hargita_m440, 7062) {}
 // 7063 free
 // 7064 free
 // 7065 free
@@ -5621,7 +5621,7 @@ item(FEAT_TRAINS, item_emu_new_zealand_dm, 8089) {}
 item(FEAT_TRAINS, item_emu_new_zealand_fpft_matangi, 8090) {}
 item(FEAT_TRAINS, item_emu_hong_kong_mtr_sp1900, 8091) {}
 item(FEAT_TRAINS, item_emu_chile_chilean_sfb500_demu, 8092) {}
-// 8093 free
+item(FEAT_TRAINS, item_emu_japan_jnr_shinkansen_series_100, 8093) {}
 // 8094 free
 // 8095 free
 // 8096 free

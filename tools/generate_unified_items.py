@@ -619,7 +619,6 @@ def generate_unified_items():
     POWER_PER_WAGON = 0
     REFIT_COST = 0
     RELIABILITY_DECAY = 20
-    RETIRE_EARLY = 20
     SPRITE_ID = "SPRITE_ID_NEW_TRAIN"
 
     # 1. Load Data
@@ -748,7 +747,8 @@ def generate_unified_items():
         content.append(
             f"        model_life: {"VEHICLE_NEVER_EXPIRES" if row['MODEL_LIFE'] == "VEHICLE_NEVER_EXPIRES" else int(row['MODEL_LIFE'])};\n")
         content.append(f"        vehicle_life: {int(row['VEHICLE_LIFE'])};\n")
-        content.append(f"        retire_early: {RETIRE_EARLY};\n")
+        content.append(
+            f"        retire_early: {0 if is_true(row['IS_WAGON_OR_COACH']) else 20};\n")
         content.append(f"        loading_speed: {ls_logic};\n")
         content.append(f"        cost_factor: {p_cost};\n")
         content.append(f"        running_cost_factor: {r_cost};\n")

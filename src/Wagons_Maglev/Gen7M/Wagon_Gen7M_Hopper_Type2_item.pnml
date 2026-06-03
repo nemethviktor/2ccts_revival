@@ -28,7 +28,7 @@ item(FEAT_TRAINS, item_mglv_wagon_gen7m_hopper_type2) {
         introduction_date: date(2020,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 25;
-        retire_early: 20;
+        retire_early: 0;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
         cost_factor: 39.11957;
         running_cost_factor: 37.56391;

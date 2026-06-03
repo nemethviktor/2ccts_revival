@@ -28,7 +28,7 @@ item(FEAT_TRAINS, item_mglv_maglev_wagon_unpowered) {
         introduction_date: date(2000,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 25;
-        retire_early: 20;
+        retire_early: 0;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         cost_factor: 99.56720000000001;
         running_cost_factor: 1.24459;

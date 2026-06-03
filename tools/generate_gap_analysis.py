@@ -15,6 +15,7 @@ from openpyxl import load_workbook
 from openpyxl.worksheet.worksheet import Worksheet
 from openpyxl.worksheet.table import Table
 import warnings
+import re
 
 # Silence openpyxl warnings
 warnings.filterwarnings("ignore", category=UserWarning, module="openpyxl")
@@ -69,14 +70,23 @@ def load_workbook_data(workbook_path: str) -> pd.DataFrame:
     df_rost: pd.DataFrame = pd.DataFrame(
         data=roster_values[1:], columns=roster_values[0])
 
+    # 2. Parse Control Sheet (Extracting via Table schema)
+    if "control" not in wb.sheetnames:
+        raise KeyError(
+            "Required worksheet 'control' missing from target workbook.")
+    df_control: pd.DataFrame = extract_excel_table(sheet=wb["control"])
+
     # Close workbook safely
     wb.close()
 
     # Clean padding spaces and filter empty tracking nodes
     df_prop = df_prop.dropna(subset=["VEHIDCODE"])
     df_rost = df_rost.dropna(subset=["VEHIDCODE"])
+    df_control = df_control.dropna(subset=["VEHIDCODE"])
+
     df_prop["VEHIDCODE"] = df_prop["VEHIDCODE"].astype(str).str.strip()
     df_rost["VEHIDCODE"] = df_rost["VEHIDCODE"].astype(str).str.strip()
+    df_control["VEHIDCODE"] = df_control["VEHIDCODE"].astype(str).str.strip()
 
     # Merge datasets, retaining separate source role contexts
     df_merged: pd.DataFrame = pd.merge(
@@ -84,6 +94,13 @@ def load_workbook_data(workbook_path: str) -> pd.DataFrame:
         right=df_rost,
         on="VEHIDCODE",
         suffixes=("_prop", "_rost")
+    )
+
+    df_merged: pd.DataFrame = pd.merge(
+        left=df_merged,
+        right=df_control,
+        on="VEHIDCODE",
+        suffixes=("", "_control")
     )
 
     return df_merged
@@ -114,14 +131,17 @@ def calculate_timeline(df_merged: pd.DataFrame) -> pd.DataFrame:
         intro_year: int = int(float(row["INTRODUCTION_YEAR"]))
         model_life_raw: str = str(object=row["MODEL_LIFE"]).strip()
 
-        # Determine decommissioning boundaries using your 25-year retire-early index
+        # Determine decommissioning boundaries using your 20-year retire-early index
+        retire_early = 0 if row.get(
+            "IS_WAGON_OR_COACH_control") == True else 20
         if model_life_raw == "VEHICLE_NEVER_EXPIRES" or model_life_raw == "0":
             expiry_year: int = end_year_limit
         else:
             try:
-                expiry_year = intro_year + int(float(model_life_raw)) - 25
+                expiry_year = intro_year + \
+                    int(float(model_life_raw)) - retire_early
             except ValueError:
-                expiry_year = intro_year + 45 - 25  # Structural layout fallback
+                expiry_year = intro_year + 45 - retire_early  # Structural layout fallback
 
         # Rely strictly on the role allocation from the roster sheet
         role_category: str = str(object=row["ROLE_rost"])
@@ -142,26 +162,20 @@ def calculate_timeline(df_merged: pd.DataFrame) -> pd.DataFrame:
 
 
 def generate_visualization_matrix(df_timeline: pd.DataFrame, output_path: str) -> None:
-    """ Computes dense availability counts and saves the grid tracking plot. """
+    """Generates independent, region-centric dashboard grid JPG files.
+
+    Summary: Creates a single 4x5 grid layout per region showing all 17 roles 
+             simultaneously, forces year labels across all sub-plots, and 
+             saves as optimized high-quality JPGs.
+    """
+    # 1. Compute dense tracking counts across all timeline nodes
     df_counts: pd.DataFrame = df_timeline.groupby(
         by=["Year", "Region", "Category"]
     ).size().reset_index(name="Available_Count")
 
-    # target_categories: list[str] = df_timeline["Category"].unique().tolist()
-    target_categories: List[str] = [
-        "Commuter/Urban",
-        "Express",
-        "Express Passenger",
-        "Freight",
-        "Heavy Freight",
-        "Light Freight",
-        "Metro",
-        "Powered/Unpowered Sundry",
-        "Shunting",
-        "Ultra-High-Speed (Pax)",
-        "Ultra-High-Speed (Universal)",
-        "Universal",
-    ]
+    # Dynamically extract all categories to capture all ~17 roles present in the data
+    target_categories: List[str] = sorted(
+        df_timeline["Category"].unique().tolist())
 
     region_columns: List[str] = [
         "AFRICA", "ASIA", "SOUTHERN_EUROPE", "EASTERN_EUROPE",
@@ -170,11 +184,24 @@ def generate_visualization_matrix(df_timeline: pd.DataFrame, output_path: str) -
     ]
 
     simulation_years: np.ndarray = np.arange(1840, 2041)
-    dense_grid: List[Dict[str, Any]] = []
 
-    # Enforce strict matrix structure to explicitly expose absolute zeroes/gaps
+    # 2. Iterate through each region individually to compile its master dashboard file
     for region in region_columns:
-        for category in target_categories:
+        # Sanitize filename: replace spaces, slashes, and characters for cross-platform safety
+        safe_region_name: str = re.sub(
+            pattern=r"[^a-zA-Z0-9_\-]", repl="_", string=region).lower()
+
+        # Initialize a massive high-resolution 4x5 panel arrangement (20 slots total for 17 roles)
+        fig, axes = plt.subplots(nrows=4, ncols=5, figsize=(
+            24, 18), sharex=True, sharey=False)
+        flat_axes = axes.flatten()
+
+        # 3. Populate the 4x5 grid slot-by-slot for each individual vehicle role
+        for index, category in enumerate(target_categories):
+            current_ax = flat_axes[index]
+
+            # Serialize the timeline for this specific coordinate block to capture absolute zeroes
+            dense_grid: List[Dict[str, Any]] = []
             for year in simulation_years:
                 match_slice: pd.DataFrame = df_counts[
                     (df_counts["Year"] == year) &
@@ -183,50 +210,59 @@ def generate_visualization_matrix(df_timeline: pd.DataFrame, output_path: str) -
                 ]
                 count_value: int = int(
                     match_slice["Available_Count"].values[0]) if not match_slice.empty else 0
-                dense_grid.append({
-                    "Year": year,
-                    "Region": region,
-                    "Category": category,
-                    "Available_Count": count_value
-                })
+                dense_grid.append(
+                    {"Year": year, "Available_Count": count_value})
 
-    df_dense_matrix: pd.DataFrame = pd.DataFrame(data=dense_grid)
+            df_series: pd.DataFrame = pd.DataFrame(data=dense_grid)
 
-    # Build a 3x3 dashboard grid layout
-    fig, axes = plt.subplots(nrows=3, ncols=3, figsize=(
-        24, 18), sharex=True, sharey=False)
-    flat_axes = axes.flatten()
-
-    for index, region in enumerate(region_columns):
-        current_ax = flat_axes[index]
-        df_region_sub: pd.DataFrame = df_dense_matrix[df_dense_matrix["Region"] == region]
-
-        for category in target_categories:
-            df_category_series: pd.DataFrame = df_region_sub[df_region_sub["Category"] == category]
+            # Plot the line for this region/category combo
             current_ax.plot(
-                df_category_series["Year"],
-                df_category_series["Available_Count"],
-                label=category,
-                linewidth=1.8
+                df_series["Year"],
+                df_series["Available_Count"],
+                color="#e31a1c",  # Deep high-contrast red for prominent gap tracking
+                linewidth=2.0
             )
 
+            # Sub-plot panel formatting adjustments
+            current_ax.set_title(
+                label=category, fontsize=10, fontweight="bold")
+            current_ax.grid(visible=True, linestyle=":", alpha=0.6)
+
+            # Force the year horizontal axis label on EVERY sub-chart panel
+            current_ax.tick_params(labelbottom=True)
+            current_ax.set_xlabel(xlabel="Year", fontsize=8)
+            current_ax.set_ylabel(ylabel="Models", fontsize=8)
+
+            if category == "Wagon":
+                ymax = 100
+            elif category.startswith("Coach"):
+                ymax = 30
+            else:
+                ymax = 25
+
+            current_ax.set_ylim([0, ymax])
+
+        # 4. Clean up any remaining empty grid boxes in the 4x5 grid layout (slots 18, 19, 20)
+        for empty_index in range(len(target_categories), len(flat_axes)):
+            fig.delaxes(ax=flat_axes[empty_index])
+
+        # Master overall dashboard annotation title layout
         clean_title: str = region.replace("_", " ").title()
-        current_ax.set_title(label=clean_title, fontsize=12, fontweight="bold")
-        current_ax.grid(visible=True, linestyle=":", alpha=0.6)
+        fig.suptitle(
+            t=f"Regional Availability Gap Matrix - {clean_title} (All Roles)\nPlease note that Y-axis maxima aren't identical within a region but they are identical across categories for other regions.", fontsize=20, fontweight="bold", y=0.98)
 
-        current_ax.tick_params(labelbottom=True)
-        current_ax.set_xlabel(xlabel="Year", fontsize=10)
+        # 5. Save file structure as high-quality, lightweight JPG format
+        filename: str = f"gap_analysis_region_{safe_region_name}.jpg"
 
-        if index == 0:
-            current_ax.legend(loc="upper left", fontsize=8)
-        if index >= 6:
-            current_ax.set_xlabel(xlabel="Year", fontsize=10)
-        if index % 3 == 0:
-            current_ax.set_ylabel(ylabel="Available Models", fontsize=10)
-
-    plt.tight_layout()
-    plt.savefig(fname=output_path, dpi=150)
-    print(f"---- Workbook gap matrix saved successfully to: {output_path}")
+        # pil_kwargs compressed file boundaries while keeping line charts crisp
+        plt.savefig(
+            fname=os.path.join(output_path, filename),
+            format="jpg",
+            dpi=72,
+            pil_kwargs={"quality": 92, "optimize": True}
+        )
+        plt.close(fig=fig)
+        print(f"---- Exported cross-platform validation asset: {filename}")
 
 
 def main() -> None:
@@ -236,7 +272,7 @@ def main() -> None:
     project_root = os.path.dirname(script_dir)
     excel_path = os.path.join(script_dir, 'vehicle_report.xlsx')
     output_path = os.path.normpath(os.path.join(
-        project_root, 'docs', 'roster_gap_analysis.png'))
+        project_root, 'docs', 'gap_analysis'))
 
     if not os.path.exists(path=excel_path):
         print(f"[Error] Target workbook '{excel_path}' not found.")

@@ -13,6 +13,7 @@
   - Fixed an issue relating to attachment rules intro'd someplace earlier
   - Standardised all the visual templates in the set
   - Introduced some logic whereby if the real-life withdrawal of a train is known, we use that, subject to a generic minimal age being ensure, else we use the fallback value that's automatically generated.
+  - Modified the "retire early" logic. Since coaches and wagons don't decay in reliability, they shouldn't be retired early.
 - VEHICLES CHANGES:
   - Fixed a number of sprite misalignments #7
   - Many small fixes here and there
@@ -28,6 +29,16 @@
     - `LVCI Class 1` (Steam)
     - `RENFE 030`, `RENFE 240`, `RENFE 462` (Steam)
     - `Chilean SFB-500 DEMU`
+    - `EMC E3` (from Ragin's trains)
+    - `EMD FT` (from Ragin's trains)
+    - `DR 132/DBAG 234` - this has replaced the DR 130 as a superior alternative.
+    - `JNR Shinkansen Series 100` using series 0 gfx.
+    - `JZ D66 Krauss-Maffei ML 2200` using V200 gfx. (really, the V200 should be set to 7 tiles so that this could be 8 but I'm lazy)
+    - `MAV Hargita M440`
+    - `DRG E44`
+    - `PESA 111MS`
+    - `RZD VL19`
+    - `DRG E18`
     - Added some of the maglevs from the original OpenTTD game.
   Further changes from Discord discussion: [most of these have been amended but not 100%. the below is a copypaste of suggestions]
   - American End-Platform Coaches - should be aviavable in the americas too
