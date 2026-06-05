@@ -1085,6 +1085,9 @@
 #include "src/Diesel/Yugoslavia_JZ_D66_graphics.pnml"
 #include "src/Diesel/Yugoslavia_JZ_D66_item.pnml"
 
+#include "src/Diesel/Ireland_CIE_071_graphics.pnml"
+#include "src/Diesel/Ireland_CIE_071_item.pnml"
+
 
 //// EMU
 #include "src/EMU/Netherlands_NS_Mat24_graphics.pnml"

@@ -208,11 +208,12 @@
 | ![SJ V4](vehicle_graphics/str_diesel_sweden_sj_v4.png) | SJ V4 | 1972 | 70 / 43 | 620 / 462 | Universal | 0 | STANDARD_NONE | Northern Europe | No |
 | ![Amtrak SDP-40F](vehicle_graphics/str_diesel_usa_amtrak_sdp_40f.png) | Amtrak SDP-40F | 1973 | 153 / 95 | 3000 / 2236 | Universal | 0 | STANDARD_NONE | North America | No |
 | ![CNR MLW M420W](vehicle_graphics/str_diesel_canada_cnr_mlw_m420w.png) | CNR MLW M420W | 1973 | 108 / 67 | 2000 / 1491 | Universal | 0 | STANDARD_NONE | North America | No |
-| ![DR 132/DBAG 234](vehicle_graphics/str_diesel_germany_dr_132_dbag_234.png) | DR 132/DBAG 234 | 1973 | 120 / 74 | 2958 / 2205 | Universal | 0 | STANDARD_NONE, BROAD_NONE | Asia, Eastern Europe, Western Europe | No |
+| ![DR 132/DBAG 232](vehicle_graphics/str_diesel_germany_dr_132_dbag_234.png) | DR 132/DBAG 232 | 1973 | 120 / 74 | 2958 / 2205 | Universal | 0 | STANDARD_NONE, BROAD_NONE | Asia, Eastern Europe, Western Europe | No |
 | ![Queensland Railways 2350](vehicle_graphics/str_diesel_australia_qr_2350.png) | Queensland Railways 2350 | 1973 | 80 / 49 | 2550 / 1901 | Universal | 0 | NARROW_NONE | Oceania | No |
 | ![TGR Z Class](vehicle_graphics/str_diesel_australia_tgr_z.png) | TGR Z Class | 1973 | 97 / 60 | 2025 / 1509 | Universal | 0 | NARROW_NONE | Oceania | No |
 | ![ENR TE114E](vehicle_graphics/str_diesel_egypt_enr_te114e.png) | ENR TE114E | 1974 | 120 / 74 | 2800 / 2087 | Universal | 0 | STANDARD_NONE, BROAD_NONE | Africa, Eastern Europe, South America | No |
 | ![Zimbabwe Railways DE8](vehicle_graphics/str_diesel_zimbabwe_sorefame_de8.png) | Zimbabwe Railways DE8 | 1974 | 100 / 62 | 2321 / 1730 | Express | 0 | NARROW_NONE | Africa | No |
+| ![CIE 071 / JZ666](vehicle_graphics/str_diesel_ireland_cie_071.png) | CIE 071 / JZ666 | 1976 | 145 / 90 | 2450 / 1826 | Universal | 0 | STANDARD_NONE, BROAD_NONE | Eastern Europe, Northern Europe | No |
 | ![China Railways DF5](vehicle_graphics/str_diesel_china_china_railways_df5.png) | China Railways DF5 | 1976 | 100 / 62 | 1320 / 984 | Universal | 0 | STANDARD_NONE | Asia | No |
 | ![China Railways DFH3](vehicle_graphics/str_diesel_china_china_railways_dfh3.png) | China Railways DFH3 | 1976 | 120 / 74 | 2200 / 1640 | Universal | 0 | STANDARD_NONE | Asia | No |
 | ![FNM 6700 GE C30-7 'Dash 7'](vehicle_graphics/str_diesel_usa_ge_c30_7.png) | FNM 6700 GE C30-7 'Dash 7' | 1976 | 113 / 70 | 3000 / 2236 | Heavy Freight | 0 | STANDARD_NONE | North America, South America | No |
@@ -383,7 +384,7 @@
 | ![BR 150/0 'Sprinter'](vehicle_graphics/str_dmu_uk_br_150_0_sprinter.png) | BR 150/0 'Sprinter' | 1984 | 121 / 75 | 389 / 290 | Commuter/Urban | 160 | STANDARD_NONE | Northern Europe | No |
 | ![RAI 141 'Pacer'](vehicle_graphics/str_dmu_iran_rai_141_pacer.png) | RAI 141 'Pacer' | 1984 | 121 / 75 | 200 / 149 | Commuter/Urban | 94 | STANDARD_NONE | Asia | No |
 | ![Thai Comeng XPT Concept](vehicle_graphics/str_dmu_thailand_comeng_xpt_concept.png) | Thai Comeng XPT Concept | 1985 | 160 / 99 | 4000 / 2982 | Ultra-High-Speed (Universal) | 0 | NARROW_NONE | Asia | Yes |
-| ![DB 628.2](vehicle_graphics/str_dmu_germany_db_6282.png) | DB 628.2 | 1986 | 120 / 74 | 650 / 484 | Commuter/Urban | 136 | STANDARD_NONE | Western Europe | No |
+| ![DB 628.2](vehicle_graphics/str_dmu_germany_db_6282.png) | DB 628.2 | 1986 | 120 / 74 | 650 / 484 | Commuter/Urban | 136 | STANDARD_NONE | Eastern Europe, Western Europe | No |
 | ![Israel Railways IC3](vehicle_graphics/str_dmu_israel_israel_railways_ic3.png) | Israel Railways IC3 | 1986 | 180 / 111 | 3200 / 2385 | Express Passenger | 96 | STANDARD_NONE, BROAD_NONE | Africa, Southern Europe, Eastern Europe, Western Europe, Northern Europe | No |
 | ![TransAdelaide 3100](vehicle_graphics/str_dmu_australia_transadelaide_3100.png) | TransAdelaide 3100 | 1987 | 90 / 55 | 2092 / 1559 | Commuter/Urban | 92 | STANDARD_NONE | Oceania | No |
 | ![SJ Y2](vehicle_graphics/str_dmu_sweden_sj_y2.png) | SJ Y2 | 1990 | 180 / 111 | 3200 / 2385 | Express Passenger | 96 | STANDARD_NONE, BROAD_NONE | Africa, Southern Europe, Eastern Europe, Western Europe, Northern Europe | No |

@@ -734,8 +734,9 @@ str_diesel_usa_emd_gp40                                           :EMD GP40 (Die
 str_diesel_poland_pkp_su160                                       :PESA 111D // PKP SU160 (Diesel)
 str_diesel_usa_emc_e3                                             :EMC E3 (Diesel)
 str_diesel_usa_emd_ft                                             :EMD FT (Diesel)
-str_diesel_germany_dr_132_dbag_234                                :DR 132/DBAG 234 (Diesel)
+str_diesel_germany_dr_132_dbag_234                                :DR 132/DBAG 232 (Diesel)
 str_diesel_yugoslavia_jz_d66                                      :JZ D66 Krauss-Maffei ML 2200 (Diesel)
+str_diesel_ireland_cie_071                                        :CIE 071 / JZ666 (Diesel)
 
 # Dieselrailbus
 str_rbd_australia_victorian_railways_aec_rm1                      :Victorian Railways AEC RM1 (Diesel Railbus)

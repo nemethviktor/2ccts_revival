@@ -2710,7 +2710,7 @@ item(FEAT_TRAINS, item_diesel_usa_emc_e3, 5187) {}
 item(FEAT_TRAINS, item_diesel_usa_emd_ft, 5188) {}
 item(FEAT_TRAINS, item_diesel_germany_dr_132_dbag_234, 5189) {}
 item(FEAT_TRAINS, item_diesel_yugoslavia_jz_d66, 5190) {}
-// 5191 free
+item(FEAT_TRAINS, item_diesel_ireland_cie_071, 5191) {}
 // 5192 free
 // 5193 free
 // 5194 free

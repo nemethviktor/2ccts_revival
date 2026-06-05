@@ -737,6 +737,7 @@ str_diesel_usa_amtrak_charger                                     :Amtrak Charge
 # str_diesel_usa_emd_ft                                             : not translated
 # str_diesel_germany_dr_132_dbag_234                                : not translated
 # str_diesel_yugoslavia_jz_d66                                      : not translated
+# str_diesel_ireland_cie_071                                        : not translated
 
 # Dieselrailbus
 str_rbd_australia_victorian_railways_aec_rm1                      :Victorian Railways AEC RM1 (Diesel Schinnebus)
