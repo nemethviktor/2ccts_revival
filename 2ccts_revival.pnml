@@ -540,6 +540,9 @@
 #include "src/DMU/Hungary_MAV_Hargita_M440_graphics.pnml"
 #include "src/DMU/Hungary_MAV_Hargita_M440_item.pnml"
 
+#include "src/DMU/Lithuania_RVR_DR1A_graphics.pnml"
+#include "src/DMU/Lithuania_RVR_DR1A_item.pnml"
+
 
 //// DIESEL
 #include "src/Diesel/Germany_DB_Kof_II_graphics.pnml"

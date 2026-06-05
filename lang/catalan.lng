@@ -850,6 +850,7 @@ str_dmu_chile_efe_tld_500                                         :EFE TLD-500 (
 # str_dmu_australia_nsw_600                                         : not translated
 # str_dmu_new_zealand_silver_fern                                   : not translated
 # str_dmu_hungary_mav_hargita_m440                                  : not translated
+# str_dmu_lithuania_rvr_dr1a                                        : not translated
 str_mu_mu_wagon_unpowered                                         :Unitat de Vagó Múltiple (Sense alimentació)
 str_mu_mu_wagon_powered                                           :Unitat de Vagó de Metro (Alimentat)
 # str_mu_mu_cargo_wagon_unpowered                                   : not translated

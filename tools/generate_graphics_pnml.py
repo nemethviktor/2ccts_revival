@@ -2340,7 +2340,7 @@ def generate_graphics_pnml():
 
     # 2. Merge data to get a full view of each vehicle's needs
     # Join control (paths) with gfx_props (template IDs)
-# Load all sheets
+    # Load all sheets
     sheets = pd.read_excel(excel_path, sheet_name=None)
 
     df_control = sheets['control']
@@ -2351,11 +2351,28 @@ def generate_graphics_pnml():
     df_flags = sheets['flags']
 
     # CRITICAL: Clean VEHIDCODE in all sheets to prevent "Not Found" errors
+    # Create a list of the variables to overwrite them in-place within the dictionary context if needed,
+    # or process them directly if they are independent dataframes:
+
+    cleaned_dfs = []
     for df in [df_control, df_props, df_roster, df_tracks, df_gfx_props, df_flags]:
         if 'VEHIDCODE' in df.columns:
+            # 1. Drop true Excel null rows first
+            df = df.dropna(subset=['VEHIDCODE'])
+
+            # 2. Convert to string and strip trailing whitespace properties
             df['VEHIDCODE'] = df['VEHIDCODE'].astype(str).str.strip()
 
-    # 1. Merge core data
+            # 3. Filter out rows where the code is an empty string or the text literal 'nan'
+            df = df[df['VEHIDCODE'] != '']
+            df = df[df['VEHIDCODE'] != 'nan']
+
+        cleaned_dfs.append(df)
+
+    # Re-assign the cleaned independent DataFrames back to their variables safely
+    df_control, df_props, df_roster, df_tracks, df_gfx_props, df_flags = cleaned_dfs
+
+    # 1. Merge core data (Now fully shielded from trailing empty rows)
     df_master = df_control.merge(df_props, on='VEHIDCODE', how='left')
 
     # 2. Merge roster and track_types

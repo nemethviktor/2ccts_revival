@@ -364,6 +364,7 @@
 | ![NS Plan U DE-III](vehicle_graphics/str_dmu_netherlands_ns_plan_u_de_iii.png) | NS Plan U DE-III | 1960 | 125 / 77 | 987 / 735 | Commuter/Urban | 128 | STANDARD_NONE | Western Europe | No |
 | ![NSWGR 1100 Railcar](vehicle_graphics/str_dmu_australia_nsw_1100.png) | NSWGR 1100 Railcar | 1961 | 115 / 71 | 600 / 447 | Commuter/Urban | 144 | STANDARD_NONE | Oceania | No |
 | ![TCDD MT 5500](vehicle_graphics/str_dmu_turkey_tcdd_mt_5500.png) | TCDD MT 5500 | 1961 | 90 / 55 | 800 / 596 | Commuter/Urban | 132 | STANDARD_NONE | Asia, Eastern Europe | No |
+| ![RVR DR1A](vehicle_graphics/str_dmu_lithuania_rvr_dr1a.png) | RVR DR1A | 1963 | 120 / 74 | 2000 / 1491 | Commuter/Urban | 136 | BROAD_NONE | Asia, Eastern Europe, South America | No |
 | ![CP 0400](vehicle_graphics/str_dmu_portugal_cp_0400.png) | CP 0400 | 1965 | 110 / 68 | 1040 / 775 | Commuter/Urban | 184 | BROAD_NONE | Southern Europe | No |
 | ![CNR 'Turbo Train'](vehicle_graphics/str_dmu_canada_cnr_turbo_train.png) | CNR 'Turbo Train' | 1967 | 193 / 119 | 2000 / 1491 | Express Passenger | 92 | STANDARD_NONE | North America | No |
 | ![WAGR ADK](vehicle_graphics/str_dmu_australia_wagr_adk_adb.png) | WAGR ADK | 1967 | 90 / 55 | 416 / 310 | Commuter/Urban | 148 | NARROW_NONE | Oceania | No |

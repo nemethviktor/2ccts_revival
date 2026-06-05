@@ -848,6 +848,7 @@ str_dmu_australia_nsw_900                                         :NSWGR 800/900
 str_dmu_australia_nsw_600                                         :NSWGR 600/700 (DMU)
 str_dmu_new_zealand_silver_fern                                   :NZR RM 'Silver Fern' (DMU)
 str_dmu_hungary_mav_hargita_m440                                  :MAV Hargita M440 (DMU)
+str_dmu_lithuania_rvr_dr1a                                        :RVR DR1A (DMU)
 str_mu_mu_wagon_unpowered                                         :Multiple Unit Wagon (Unpowered)
 str_mu_mu_wagon_powered                                           :Multiple Unit Wagon (Powered)
 str_mu_mu_cargo_wagon_unpowered                                   :Multiple Unit Cargo Wagon (Unpowered)
