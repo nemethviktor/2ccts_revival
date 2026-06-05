@@ -10,7 +10,7 @@
 //// WEIGHT: 73 -- 73t for power cars, each [wiki]
 //// TE_STARTING_KN: =160/2 -- Wikipedia
 //// WAGON_CAPACITY: 72 -- 2nd class. [wiki]
-//// REGION2: REGIONTYPE3 -- Exported to AUS & China
+//// REGION2: APAC -- Exported to AUS & China
 
 
 // Cargo capacity

@@ -326,13 +326,18 @@ def get_climates(row: pd.Series) -> str:
     # These reference the basic variables defined above
     ALL_EUROPE = f"({region_map['NORTHERN_EUROPE']} || {region_map['EASTERN_EUROPE']} || {region_map['SOUTHERN_EUROPE']} || {region_map['WESTERN_EUROPE']})"
     ALL_AMERICA = f"({region_map['NORTH_AMERICA']} || {region_map['SOUTH_AMERICA']})"
+    COMECON = f"({region_map['ASIA']} || {region_map['EASTERN_EUROPE']})"
 
     region_map.update({
         "ALL_EUROPE": ALL_EUROPE,
         "ALL_AMERICA": ALL_AMERICA,
-        "REGIONTYPE1": f"({ALL_EUROPE} || {region_map['ASIA']} || {region_map['AFRICA']})",
-        "REGIONTYPE2": f"({ALL_AMERICA} || {region_map['ASIA']} || {region_map['OCEANIA']} || {region_map['AFRICA']})",
-        "REGIONTYPE3": f"({region_map['ASIA']} || {region_map['OCEANIA']})",
+        "OLD_WORLD": f"({ALL_EUROPE} || {region_map['ASIA']} || {region_map['AFRICA']})",
+        "NON_EUROPEAN": f"({ALL_AMERICA} || {region_map['ASIA']} || {region_map['OCEANIA']} || {region_map['AFRICA']})",
+        "APAC": f"({region_map['ASIA']} || {region_map['OCEANIA']})",
+        "COMECON": COMECON,
+        "COMECON_EXTENDED": f"({COMECON} || {region_map['SOUTH_AMERICA']})",
+        "NORTH_WEST_EUROPE": f"({region_map['NORTHERN_EUROPE']} || {region_map['WESTERN_EUROPE']})",
+        "POST_SOVIET_BALTIC": f"({COMECON} || {region_map['NORTHERN_EUROPE']})",
         "ALL_REGION":  f"({region_map['AFRICA']} || {ALL_AMERICA} || {region_map['ASIA']} || {ALL_EUROPE} || {region_map['OCEANIA']})"
     })
 

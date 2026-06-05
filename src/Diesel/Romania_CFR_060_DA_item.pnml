@@ -13,7 +13,7 @@
 item(FEAT_TRAINS, item_diesel_romania_cfr_060_da) {
     property {
         name: string(str_diesel_romania_cfr_060_da);
-        climates_available: ((0 || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
+        climates_available: (((param_region_asia || param_region_eastern_europe) || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1959,1,1);
         model_life: 45;
         vehicle_life: 40;

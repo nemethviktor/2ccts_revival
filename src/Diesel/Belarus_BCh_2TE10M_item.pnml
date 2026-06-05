@@ -13,7 +13,7 @@
 item(FEAT_TRAINS, item_diesel_belarus_bch_2te10m) {
     property {
         name: string(str_diesel_belarus_bch_2te10m);
-        climates_available: ((0 || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
+        climates_available: ((((param_region_asia || param_region_eastern_europe) || param_region_northern_europe) || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1981,1,1);
         model_life: 45;
         vehicle_life: 40;
@@ -47,7 +47,7 @@ item(FEAT_TRAINS, item_diesel_belarus_bch_2te10m) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/asia", "region/europe/eastern", "flag/RU", "power/diesel", "role/heavy_freight"];
+	badges: ["region/asia", "region/europe/eastern", "region/europe/northern", "flag/RU", "power/diesel", "role/heavy_freight"];
 
     }
     graphics {

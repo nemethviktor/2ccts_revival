@@ -24,7 +24,7 @@
 item(FEAT_TRAINS, item_dmu_turkey_tcdd_mt_5500) {
     property {
         name: string(str_dmu_turkey_tcdd_mt_5500);
-        climates_available: ((0 || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
+        climates_available: (((param_region_asia || param_region_eastern_europe) || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1961,1,1);
         model_life: 45;
         vehicle_life: 57;
