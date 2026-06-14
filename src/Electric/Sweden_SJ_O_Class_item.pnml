@@ -15,13 +15,13 @@ item(FEAT_TRAINS, item_electric_sweden_sj_o_class) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 52.91967;
+        cost_factor: 54.09967;
         running_cost_factor: 40.08393;
         speed: 60 km/h;
         power: 1600 hp;
         cargo_capacity: 0;
-        weight: 125 ton;
-        tractive_effort_coefficient: 0.202;
+        weight: 136 ton;
+        tractive_effort_coefficient: 0.185;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

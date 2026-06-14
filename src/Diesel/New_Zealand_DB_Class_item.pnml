@@ -4,7 +4,7 @@
 
 
 // Template: TPL_01A.
-// Data from: https://en.wikipedia.org/wiki/New_Zealand_DA_class_locomotive
+// Data from: https://en.wikipedia.org/wiki/New_Zealand_DB_class_locomotive
 
 item(FEAT_TRAINS, item_diesel_new_zealand_db_class) {
     property {

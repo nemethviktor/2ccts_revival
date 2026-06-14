@@ -9,12 +9,13 @@
   - Added `TRAIN_FLAG_TILT` where relevant
   - Fix un/powered `TPL_02D` visual misrepresentation
   - Fix logic -> valuables should not be a refit options for MUs
-  - Removed `PURCHASE_CARGO_CAPACITY` altogether
   - Fixed an issue relating to attachment rules intro'd someplace earlier
   - Standardised all the visual templates in the set
   - Introduced some logic whereby if the real-life withdrawal of a train is known, we use that, subject to a generic minimal age being ensure, else we use the fallback value that's automatically generated.
   - Modified the "retire early" logic. Since coaches and wagons don't decay in reliability, they shouldn't be retired early.
 - VEHICLES CHANGES:
+  - Changed Wagon upkeep costs to 75% of the original. Given they are pretty slow in the long run, they are way too expensive to maintain.
+  - Changed `SuperHeavy` (wagon) to only allow Goods and Vehicles, otherwise it was a huge cheat.
   - Fixed a number of sprite misalignments #7
   - Many small fixes here and there
   - Adds:

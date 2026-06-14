@@ -31,7 +31,7 @@ item(FEAT_TRAINS, item_mu_wagon_gen6_superheavy_flatcar) {
         retire_early: 0;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
         cost_factor: 35.30025;
-        running_cost_factor: 32.56005;
+        running_cost_factor: 24.42004;
         speed: 140 km/h;
         power: 0 hp;
         cargo_capacity: 65;
@@ -41,7 +41,7 @@ item(FEAT_TRAINS, item_mu_wagon_gen6_superheavy_flatcar) {
 
         reliability_decay: 20;
         // cargodeftype: SUPERHEAVY;
-        refittable_cargo_classes: bitmask(CC_PIECE_GOODS, CC_FLATBED);
+        // refittable_cargo_classes: bitmask(CC_PIECE_GOODS, CC_FLATBED);
         non_refittable_cargo_classes: 0;
         cargo_allow_refit: [GOOD, VEHI];
         cargo_disallow_refit: [];

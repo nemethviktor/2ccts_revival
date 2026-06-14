@@ -4,7 +4,7 @@
 
 
 // Template: TPL_01A.
-// Data from: nan
+// Data from: https://en.wikipedia.org/wiki/New_South_Wales_86_class_locomotive
 
 item(FEAT_TRAINS, item_electric_australia_sra_8650) {
     property {

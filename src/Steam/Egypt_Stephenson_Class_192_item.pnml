@@ -4,7 +4,7 @@
 
 
 // Template: TPL_03A.
-// Data from: nan
+// Data from: https://www.steamlocomotive.com/locobase.php?country=Egypt&wheel=2-2-2&railroad=es#10456
 
 item(FEAT_TRAINS, item_steam_egypt_stephenson_class_192) {
     property {

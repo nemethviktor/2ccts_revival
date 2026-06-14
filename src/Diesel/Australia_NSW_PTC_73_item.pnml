@@ -6,10 +6,6 @@
 // Template: TPL_01A.
 // Data from: nan
 
-// Notes:
-//// ENGLISH: NSW PTC 73 Class Concept -- Clyde JE28C
-
-
 item(FEAT_TRAINS, item_diesel_australia_nsw_ptc_73) {
     property {
         name: string(str_diesel_australia_nsw_ptc_73);

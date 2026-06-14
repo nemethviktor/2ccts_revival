@@ -16,7 +16,7 @@ item(FEAT_TRAINS, item_mu_coach_gen1_2_axle_nzaus_mail_coach) {
         retire_early: 0;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 15/2 : (param_loadingspeed == 2) ? 15*2 : 15;
         cost_factor: 13.20983;
-        running_cost_factor: 12.54197;
+        running_cost_factor: 9.40648;
         speed: 60 km/h;
         power: 0 hp;
         cargo_capacity: 25;

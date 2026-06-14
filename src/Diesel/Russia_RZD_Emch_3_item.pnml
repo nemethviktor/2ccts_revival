@@ -4,24 +4,24 @@
 
 
 // Template: TPL_03B.
-// Data from: https://en.wikipedia.org/wiki/ChME3
+// Data from: https://ru.wikipedia.org/wiki/%D0%AD%D0%BC%D1%853
 
 item(FEAT_TRAINS, item_diesel_russia_rzd_emch_3) {
     property {
         name: string(str_diesel_russia_rzd_emch_3);
         climates_available: (((param_region_asia || param_region_eastern_europe) || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
-        introduction_date: date(1963,1,1);
+        introduction_date: date(1926,1,1);
         model_life: 45;
-        vehicle_life: 40;
+        vehicle_life: 30;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 49.06056;
-        running_cost_factor: 36.15652;
-        speed: 95 km/h;
-        power: 1300 hp;
+        cost_factor: 43.84736;
+        running_cost_factor: 34.72229;
+        speed: 55 km/h;
+        power: 1200 hp;
         cargo_capacity: 0;
-        weight: 125 ton;
-        tractive_effort_coefficient: 0.216;
+        weight: 88 ton;
+        tractive_effort_coefficient: 0.226;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

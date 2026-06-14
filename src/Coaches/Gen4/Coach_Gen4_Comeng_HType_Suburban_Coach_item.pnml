@@ -16,7 +16,7 @@ item(FEAT_TRAINS, item_mu_coach_gen4_comeng_htype_suburban_coach) {
         retire_early: 0;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         cost_factor: 58.92456;
-        running_cost_factor: 57.05491;
+        running_cost_factor: 42.79118;
         speed: 115 km/h;
         power: 0 hp;
         cargo_capacity: 114;

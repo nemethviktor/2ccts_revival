@@ -16,7 +16,7 @@ item(FEAT_TRAINS, item_mu_coach_gen3_wagr_ay_suburban_coach) {
         retire_early: 0;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         cost_factor: 40.53497;
-        running_cost_factor: 39.04699;
+        running_cost_factor: 29.28525;
         speed: 80 km/h;
         power: 0 hp;
         cargo_capacity: 78;

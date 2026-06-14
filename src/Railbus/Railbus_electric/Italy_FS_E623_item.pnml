@@ -6,6 +6,10 @@
 // Template: TPL_01B.
 // Data from: https://it.wikipedia.org/wiki/Automotrice_FS_E.623
 
+// Notes:
+//// ENGLISH: FS E.623 -- This was actually made by FS
+
+
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_rbe_italy_fs_e623_capacity_engine, cargo_classes) { \

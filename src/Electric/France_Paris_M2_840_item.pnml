@@ -4,7 +4,7 @@
 
 
 // Template: TPL_02C.
-// Data from: https://fr.wikipedia.org/wiki/M%C3%A9tro_de_Paris
+// Data from: https://en.wikipedia.org/wiki/MP_55
 
 item(FEAT_TRAINS, item_mtro_france_paris_m2_840) {
     property {

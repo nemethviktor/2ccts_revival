@@ -6,10 +6,6 @@
 // Template: TPL_01A.
 // Data from: nan
 
-// Notes:
-//// ENGLISH: EMD NR Class Concept -- Clyde-EMD GT46CW
-
-
 item(FEAT_TRAINS, item_diesel_australia_emd_nr_class) {
     property {
         name: string(str_diesel_australia_emd_nr_class);

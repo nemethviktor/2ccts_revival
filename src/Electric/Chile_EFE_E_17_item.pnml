@@ -6,6 +6,10 @@
 // Template: TPL_01A.
 // Data from: nan
 
+// Notes:
+//// WEB: NA -- Cannot validate, no info, all data Gemini
+
+
 item(FEAT_TRAINS, item_electric_chile_efe_e_17) {
     property {
         name: string(str_electric_chile_efe_e_17);

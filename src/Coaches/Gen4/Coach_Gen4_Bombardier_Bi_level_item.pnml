@@ -7,7 +7,7 @@
 // Data from: nan
 
 // Notes:
-//// HEAD_CAPACITY: 255 -- Gemini - ~160 seated + 200 standing (Maximum "Crush"). Game caps at 255.
+//// HEAD_CAPACITY: =160+200 -- Gemini - ~160 seated + 200 standing (Maximum "Crush"). Game caps at 255.
 
 
 item(FEAT_TRAINS, item_mu_coach_gen4_bombardier_bi_level) {
@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_mu_coach_gen4_bombardier_bi_level) {
         vehicle_life: 25;
         retire_early: 0;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 130.51957;
-        running_cost_factor: 127.56391;
+        cost_factor: 183.01957;
+        running_cost_factor: 135.04794;
         speed: 160 km/h;
         power: 0 hp;
         cargo_capacity: 255;
@@ -53,6 +53,7 @@ item(FEAT_TRAINS, item_mu_coach_gen4_bombardier_bi_level) {
 
     }
     graphics {
+        purchase_cargo_capacity: 360;
         purchase: spriteset_mu_coach_gen4_bombardier_bi_level_purchase;
         // no 'visual_effect' or 'visual_effect_and_powered'
         // no 'length'

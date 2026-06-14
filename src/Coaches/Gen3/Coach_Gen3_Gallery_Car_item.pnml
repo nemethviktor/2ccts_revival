@@ -20,7 +20,7 @@ item(FEAT_TRAINS, item_mu_coach_gen3_gallery_car) {
         retire_early: 0;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         cost_factor: 89.0402;
-        running_cost_factor: 85.05804;
+        running_cost_factor: 63.79353;
         speed: 130 km/h;
         power: 0 hp;
         cargo_capacity: 170;

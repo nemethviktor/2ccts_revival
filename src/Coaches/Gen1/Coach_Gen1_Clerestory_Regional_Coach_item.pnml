@@ -20,7 +20,7 @@ item(FEAT_TRAINS, item_mu_coach_gen1_clerestory_regional_coach) {
         retire_early: 0;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         cost_factor: 33.47268;
-        running_cost_factor: 32.54454;
+        running_cost_factor: 24.4084;
         speed: 70 km/h;
         power: 0 hp;
         cargo_capacity: 65;

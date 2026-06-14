@@ -857,8 +857,8 @@
 #include "src/Diesel/Ukraine_UZ_TEP10L_graphics.pnml"
 #include "src/Diesel/Ukraine_UZ_TEP10L_item.pnml"
 
-#include "src/Diesel/Peru_Ferrocarril_Central_Andino_Alco_RSD_39_graphics.pnml"
-#include "src/Diesel/Peru_Ferrocarril_Central_Andino_Alco_RSD_39_item.pnml"
+#include "src/Diesel/Peru_Ferrocarril_Central_Andino_ALCO_RSD_39_graphics.pnml"
+#include "src/Diesel/Peru_Ferrocarril_Central_Andino_ALCO_RSD_39_item.pnml"
 
 #include "src/Diesel/Brazil_EFVM_EMD_DDM45_graphics.pnml"
 #include "src/Diesel/Brazil_EFVM_EMD_DDM45_item.pnml"
@@ -1055,9 +1055,6 @@
 #include "src/Diesel/USA_GE_ES44_graphics.pnml"
 #include "src/Diesel/USA_GE_ES44_item.pnml"
 
-#include "src/Diesel/USA_EMD_SD40_graphics.pnml"
-#include "src/Diesel/USA_EMD_SD40_item.pnml"
-
 #include "src/Diesel/USA_EMD_SD70_graphics.pnml"
 #include "src/Diesel/USA_EMD_SD70_item.pnml"
 
@@ -1248,9 +1245,6 @@
 
 #include "src/EMU/Italy_FS_ALe_801_graphics.pnml"
 #include "src/EMU/Italy_FS_ALe_801_item.pnml"
-
-#include "src/EMU/New_Zealand_NZR_EM_ET_Class_graphics.pnml"
-#include "src/EMU/New_Zealand_NZR_EM_ET_Class_item.pnml"
 
 #include "src/EMU/Macedonia_Macedonian_Railways_412_graphics.pnml"
 #include "src/EMU/Macedonia_Macedonian_Railways_412_item.pnml"

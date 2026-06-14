@@ -15,8 +15,9 @@ gcc -E -x c -o 2ccts_revival.nml ./2ccts_revival.pnml
 nmlc -c --quiet 2ccts_revival.nml -o "2ccts_revival.grf" -t custom_tags.txt -n 
 echo --- Build Finished ---
 
-IF EXIST copygrftogoogledriveshare (
-copygrftogoogledriveshare
+IF EXIST copygrftogoogledriveshare.bat (
+    :: Added 'call' here so control returns to this script
+    call copygrftogoogledriveshare.bat
 )
 
 rem the below takes ages and so we run it after the build. no need to wait just to test if build works.

@@ -6,6 +6,10 @@
 // Template: TPL_03C.
 // Data from: https://www.steamlocomotive.com/locobase.php?country=Egypt&wheel=2-6-0&railroad=es
 
+// Notes:
+//// ENGLISH: Burnham 2-6-0 15857-15871 -- Class 7
+
+
 item(FEAT_TRAINS, item_steam_egypt_class_7_2_6_0) {
     property {
         name: string(str_steam_egypt_class_7_2_6_0);

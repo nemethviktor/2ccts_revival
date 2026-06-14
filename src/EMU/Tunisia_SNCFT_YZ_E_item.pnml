@@ -4,10 +4,10 @@
 
 
 // Template: TPL_02D.
-// Data from: nan
+// Data from: https://hu.wikipedia.org/wiki/H%C5%BD_6111_sorozat
 
 // Notes:
-//// WEB: NA -- Can't find much on this
+//// ENGLISH: Ganz-MAVAG YZ-E -- //www.railfaneurope.net/list/tunisia_sncft.html
 //// TE_STARTING_KN: 125 -- 125 ea
 
 
@@ -35,13 +35,13 @@ item(FEAT_TRAINS, item_emu_tunisia_sncft_yz_e) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 56.84852;
-        running_cost_factor: 51.40077;
+        cost_factor: 51.97017;
+        running_cost_factor: 46.68908;
         speed: 120 km/h;
-        power: 2010 hp;
+        power: 1609 hp;
         cargo_capacity: 150;
-        weight: 50 ton;
-        tractive_effort_coefficient: 0.255;
+        weight: 48 ton;
+        tractive_effort_coefficient: 0.264;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -81,18 +81,18 @@ item(FEAT_TRAINS, item_emu_tunisia_sncft_yz_e) {
     livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         running_cost_factor: int(120/10);
-        weight: int(50*1/2);
+        weight: int(48*1/2);
         cargo_capacity: 150;
         length: 8;
         default: switch_emu_tunisia_sncft_yz_e_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(29.23330250161105));
-        power: int(2010*1/2);
-        weight: int(50*3/4);
+        running_cost_factor: (round(28.771234224072554));
+        power: int(1609*1/2);
+        weight: int(48*3/4);
         cargo_capacity: 150;
-        tractive_effort_coefficient: int(0.255*10*50);
+        tractive_effort_coefficient: int(0.264*10*48);
         length: 8;
         default: switch_emu_tunisia_sncft_yz_e_cargo_selection;
     }

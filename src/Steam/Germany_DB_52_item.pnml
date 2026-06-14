@@ -6,6 +6,10 @@
 // Template: TPL_03A.
 // Data from: https://en.wikipedia.org/wiki/DRB_Class_52
 
+// Notes:
+//// ENGLISH: GGL/HAS 52 -- 'Community of Greater German Locomotive Manufacturers', Gemeinschaft Grossdeutscher Lokomotivhersteller (GGL), which was a subdivision of the 'Rail Vehicles Main Committee', Hauptausschuss Schienenfahrzeuge (HAS) founded in 1942
+
+
 item(FEAT_TRAINS, item_steam_germany_db_52) {
     property {
         name: string(str_steam_germany_db_52);

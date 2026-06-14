@@ -2699,7 +2699,7 @@ item(FEAT_TRAINS, item_diesel_china_china_railways_df11, 5176) {}
 item(FEAT_TRAINS, item_diesel_china_china_railways_df4, 5177) {}
 item(FEAT_TRAINS, item_diesel_china_china_railways_df5, 5178) {}
 item(FEAT_TRAINS, item_diesel_usa_ge_es44, 5179) {}
-item(FEAT_TRAINS, item_diesel_usa_emd_sd40, 5180) {}
+// item(FEAT_TRAINS, item_diesel_usa_emd_sd40, 5180) {} // vehicle is excluded
 item(FEAT_TRAINS, item_diesel_usa_emd_sd70, 5181) {}
 item(FEAT_TRAINS, item_diesel_usa_ge_c30_7, 5182) {}
 item(FEAT_TRAINS, item_diesel_usa_ge_dash_8_40c, 5183) {}
@@ -5580,7 +5580,7 @@ item(FEAT_TRAINS, item_emu_usa_erie_lackawanna_mu_cars, 8048) {}
 item(FEAT_TRAINS, item_emu_south_africa_sar_5m2, 8049) {}
 item(FEAT_TRAINS, item_emu_austria_obb_4030, 8050) {}
 item(FEAT_TRAINS, item_emu_italy_fs_ale_801, 8051) {}
-item(FEAT_TRAINS, item_emu_new_zealand_nzr_em_et_class, 8052) {}
+// item(FEAT_TRAINS, item_emu_new_zealand_nzr_em_et_class, 8052) {} // vehicle is excluded
 item(FEAT_TRAINS, item_emu_macedonia_macedonian_railways_412, 8053) {}
 item(FEAT_TRAINS, item_emu_australia_sydney_trains_a_set_waratah, 8054) {}
 item(FEAT_TRAINS, item_emu_netherlands_ns_hispeed_v250_albatros, 8055) {}

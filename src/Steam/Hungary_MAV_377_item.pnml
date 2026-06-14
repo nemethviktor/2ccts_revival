@@ -6,6 +6,10 @@
 // Template: TPL_03C.
 // Data from: https://hu.wikipedia.org/wiki/M%C3%81V_377_sorozat
 
+// Notes:
+//// ENGLISH: MAV 377 -- MÁV Gépgyár
+
+
 item(FEAT_TRAINS, item_steam_hungary_mav_377) {
     property {
         name: string(str_steam_hungary_mav_377);

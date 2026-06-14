@@ -251,19 +251,20 @@ def get_switch_length(*, vid: str, row,
                       fallback_length_defined: int = None) -> str:
     nml_code = []
 
+    row_length = int(float(row['LENGTH']))
     fallback_length = fallback_length_defined if fallback_length_defined else row['WAGON_LENGTH'] if first_position_in_vehid_chain == 2 else row[
         'WAGON_LENGTH'] if row['WAGON_LENGTH'] != 0 else row['LENGTH']
     nml_code.append(f"""
 /// Length
 switch(FEAT_TRAINS, SELF, switch_{vid}_length, position_in_vehid_chain % {first_position_in_vehid_chain}) {{
-    {0 if first_position_in_vehid_chain == 2 else first_position_in_vehid_chain-first_deduct_from_position_in_vehid_chain_location}: {first_force_location if first_force_location else row['LENGTH']};""")
+    {0 if first_position_in_vehid_chain == 2 else first_position_in_vehid_chain-first_deduct_from_position_in_vehid_chain_location}: {first_force_location if first_force_location else row_length};""")
     if second_deduct_from_position_in_vehid_chain_location:
         length_to_use = row['LENGTH'] - \
             second_deduct_from_legnth_location if second_deduct_from_legnth_location else row[
                 'LENGTH']
         nml_code.append(
-            f"\t{0 if second_position_in_vehid_chain == 2 else second_position_in_vehid_chain-second_deduct_from_position_in_vehid_chain_location}: {length_to_use};""")
-    nml_code.append(f"\t{fallback_length};\n}}")
+            f"\t{0 if second_position_in_vehid_chain == 2 else second_position_in_vehid_chain-second_deduct_from_position_in_vehid_chain_location}: {int(float(length_to_use))};""")
+    nml_code.append(f"\t{int(float(fallback_length))};\n}}")
 
     return "\n".join(nml_code)
 
@@ -2398,6 +2399,8 @@ def generate_graphics_pnml():
     print(f"Starting generation for {len(df_master)} vehicles...")
 
     for _, row in df_master.iterrows():
+        if row['VEHIDCODE'] == "" or  isinstance(row['TEMPLATE_ID'], float):
+            continue
         # Extract copyright header text
         copyright_header = df_copyright.columns[0] if not df_gfx_props.empty else ""
         template_id_int = int(row['TEMPLATE_ID'][-2:])

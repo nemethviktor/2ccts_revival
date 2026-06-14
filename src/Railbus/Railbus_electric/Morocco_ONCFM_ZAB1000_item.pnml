@@ -6,6 +6,10 @@
 // Template: TPL_01B.
 // Data from: http://www.railfaneurope.net/list/morocco_oncfm_del.html
 
+// Notes:
+//// ENGLISH: ONCF ZAB1000 -- Can't find manufacturer
+
+
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_rbe_morocco_oncfm_zab1000_capacity_engine, cargo_classes) { \

@@ -4,7 +4,7 @@
 
 
 // Template: TPL_16A.
-// Data from: nan
+// Data from: https://en.wikipedia.org/wiki/Commonwealth_Railways_CL_class
 
 item(FEAT_TRAINS, item_diesel_australia_commonwealth_twin_16_645) {
     property {

@@ -10,7 +10,7 @@ item(FEAT_TRAINS, item_steam_usa_nyc_h_6a_light_mikado) {
     property {
         name: string(str_steam_usa_nyc_h_6a_light_mikado);
         climates_available: ((param_region_north_america || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
-        introduction_date: date(1914,1,1);
+        introduction_date: date(1918,1,1);
         model_life: 45;
         vehicle_life: 30;
         retire_early: 20;

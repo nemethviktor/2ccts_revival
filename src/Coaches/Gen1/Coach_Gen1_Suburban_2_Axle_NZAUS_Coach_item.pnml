@@ -16,7 +16,7 @@ item(FEAT_TRAINS, item_mu_coach_gen1_suburban_2_axle_nzaus_coach) {
         retire_early: 0;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         cost_factor: 17.40983;
-        running_cost_factor: 16.54197;
+        running_cost_factor: 12.40648;
         speed: 60 km/h;
         power: 0 hp;
         cargo_capacity: 33;

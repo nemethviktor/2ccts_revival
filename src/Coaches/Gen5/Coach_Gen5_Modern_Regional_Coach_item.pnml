@@ -20,7 +20,7 @@ item(FEAT_TRAINS, item_mu_coach_gen5_modern_regional_coach) {
         retire_early: 0;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
         cost_factor: 82.8555;
-        running_cost_factor: 80.0711;
+        running_cost_factor: 60.05333;
         speed: 200 km/h;
         power: 0 hp;
         cargo_capacity: 160;

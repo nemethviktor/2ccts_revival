@@ -20,7 +20,7 @@ item(FEAT_TRAINS, item_mu_coach_gen5_talgo_pendular) {
         retire_early: 0;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
         cost_factor: 21.1055;
-        running_cost_factor: 20.0711;
+        running_cost_factor: 15.05333;
         speed: 200 km/h;
         power: 0 hp;
         cargo_capacity: 40;

@@ -6,6 +6,10 @@
 // Template: TPL_02A.
 // Data from: nan
 
+// Notes:
+//// WEB: NA -- JZ_811-104_Beograd.jpg - Apart from the fact that this existed, can't find any info
+
+
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_dmu_serbia_zs_811_capacity_engine, cargo_classes) { \

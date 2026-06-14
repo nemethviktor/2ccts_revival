@@ -31,7 +31,7 @@ item(FEAT_TRAINS, item_mu_wagon_gen4_boxcar_type2) {
         retire_early: 0;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
         cost_factor: 22.77985;
-        running_cost_factor: 21.05597;
+        running_cost_factor: 15.79198;
         speed: 120 km/h;
         power: 0 hp;
         cargo_capacity: 42;

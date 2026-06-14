@@ -189,7 +189,10 @@ def get_badges(row: pd.Series) -> str:
             else:
                 power = 'electric'
 
-        if not is_true(row['IS_WAGON_OR_COACH']):
+        # i want to tag maglev wagons, otherwise it can be confusing in the game.
+        if is_true(row['IS_WAGON_OR_COACH']) and not is_true(power == 'maglev'):
+            pass
+        else:
             badges.append(f"power/{power}")
 
     role = row['ROLE'].lower().replace(' ', '_').replace('/',
@@ -279,7 +282,8 @@ def calculate_nml_cost(row: pd.Series, m, is_running_cost=False) -> float:
             # Matches RUNNINGCOSTNONENGINEVALUE(SCALAR, SFACTOR, CAPFACTOR)
             # Logic: SCALAR * (SFACTOR * SQRT(SPEED) + CAPACITY)
             inner_math = (m.R2 * sqrt_S) + C
-            return round(m.R1 * inner_math, 5)
+            # 0.75 because from a gameplay perspective wagons are too expensive to keep up late game given their puny speeds.
+            return round((m.R1 * inner_math) * 0.75, 5)
 
     else:
         # Standard Engine/MU Logic (Power & Capacity use SQRT)
@@ -511,7 +515,7 @@ def get_cargo_definitions(row: pd.Series) -> str:
         ),
         "SUPERHEAVY": (
             f"// cargodeftype: SUPERHEAVY;\n{" "*8}"
-            f"refittable_cargo_classes: bitmask(CC_PIECE_GOODS, CC_FLATBED);\n{" "*8}"
+            f"// refittable_cargo_classes: bitmask(CC_PIECE_GOODS, CC_FLATBED);\n{" "*8}"
             f"{NO_NONREFITTABLE}\n{" "*8}"
             f"cargo_allow_refit: [GOOD, VEHI];\n{" "*8}"
             f"cargo_disallow_refit: [];\n{" "*8}"
@@ -584,7 +588,7 @@ def parse_cargo_definitions(pnml_path):
 def get_expanded_engine_capacity_switch(row: pd.Series) -> str:
     # We use \\ to produce a single literal \ in the output
     # We use {{ }} to produce literal { } in the NML code
-    cap = row['HEAD_CAPACITY']
+    cap = int(float(row['HEAD_CAPACITY']))
     vehid_lcase = row['VEHIDCODE'].lower()
 
     return f"""
@@ -630,7 +634,7 @@ def generate_unified_items():
     df_master, df_cost_lookup, copyright_text, notes_lookup = load_master_data(
         excel_path=excel_path)
     for _, row in df_master.iterrows():
-        if pd.isna(row['VEHIDCODE']):
+        if pd.isna(row['VEHIDCODE']) or is_true(row['EXCLUDE']):
             continue
         VEHIDCODE_lcase = row['VEHIDCODE'].lower()
         veh_notes: dict = notes_lookup.get(VEHIDCODE_lcase, {})
@@ -747,10 +751,8 @@ def generate_unified_items():
         content.append("    property {\n")
         content.append(f"        name: string({row['NAME'].lower()});\n")
         content.append(f"        {get_climates(row)}\n")
-        content.append(
-            f"        introduction_date: date({int(row['INTRODUCTION_YEAR'])},1,1);\n")
-        content.append(
-            f"        model_life: {"VEHICLE_NEVER_EXPIRES" if row['MODEL_LIFE'] == "VEHICLE_NEVER_EXPIRES" else int(row['MODEL_LIFE'])};\n")
+        content.append(f"        introduction_date: date({int(row['INTRODUCTION_YEAR'])},1,1);\n")
+        content.append(f"        model_life: {"VEHICLE_NEVER_EXPIRES" if row['MODEL_LIFE'] == "VEHICLE_NEVER_EXPIRES" else int(row['MODEL_LIFE'])};\n")
         content.append(f"        vehicle_life: {int(row['VEHICLE_LIFE'])};\n")
         content.append(
             f"        retire_early: {0 if is_true(row['IS_WAGON_OR_COACH']) else 20};\n")
@@ -759,18 +761,13 @@ def generate_unified_items():
         content.append(f"        running_cost_factor: {r_cost};\n")
         content.append(f"        speed: {int(row['SPEED'])} km/h;\n")
         content.append(f"        power: {int(row['POWER'])} hp;\n")
-        content.append(
-            f"        cargo_capacity: {int(row['HEAD_CAPACITY'])};\n")
+        content.append(f"        cargo_capacity: {255 if int(row['HEAD_CAPACITY']) > 255 else int(row['HEAD_CAPACITY'])};\n")
         content.append(f"        weight: {int(row['WEIGHT'])} ton;\n")
-        content.append(
-            f"        tractive_effort_coefficient: {row['TE_COEFFICIENT']};\n")
-        content.append(
-            f"        air_drag_coefficient: {AIR_DRAG_COEFFICIENT};\n\n")
-        content.append(
-            f"        reliability_decay: {RELIABILITY_DECAY};\n")
+        content.append(f"        tractive_effort_coefficient: {row['TE_COEFFICIENT']};\n")
+        content.append(f"        air_drag_coefficient: {AIR_DRAG_COEFFICIENT};\n\n")
+        content.append(f"        reliability_decay: {RELIABILITY_DECAY};\n")
         content.append(f"        {get_cargo_definitions(row)}\n")
-        content.append(
-            f"        cargo_age_period: {CARGO_AGE_PERIOD_SLEEPER if is_true('sleeper' in VEHIDCODE_lcase) else CARGO_AGE_PERIOD_NORMAL};\n")
+        content.append(f"        cargo_age_period: {CARGO_AGE_PERIOD_SLEEPER if is_true('sleeper' in VEHIDCODE_lcase) else CARGO_AGE_PERIOD_NORMAL};\n")
         content.append(f"        misc_flags: {misc_logic};\n")
 
         # Push-pull DC (DT) logic where applicable
@@ -778,15 +775,11 @@ def generate_unified_items():
             content.append(
                 f"        extra_flags: bitmask(VEHICLE_FLAG_TRAIN_HAS_CAB);\n")
         content.append(f"        refit_cost: {REFIT_COST};\n")
-        content.append(
-            f"        ai_special_flag: AI_FLAG_PASSENGER | AI_FLAG_CARGO;\n")
+        content.append(f"        ai_special_flag: AI_FLAG_PASSENGER | AI_FLAG_CARGO;\n")
         content.append(f"        track_type: {track_logic};\n")
-        content.append(
-            f"        running_cost_base: {RUNNING_COST_BASE};\n")
-        content.append(
-            f"        engine_class: {'ENGINE_CLASS_' + row['ENGINE_CLASS']};\n")
-        content.append(
-            f"        visual_effect_and_powered: visual_effect_and_powered({v1}, {v2}, {row['VISUAL_EFFECT_3']});\n\n")
+        content.append(f"        running_cost_base: {RUNNING_COST_BASE};\n")
+        content.append(f"        engine_class: {'ENGINE_CLASS_' + row['ENGINE_CLASS']};\n")
+        content.append(f"        visual_effect_and_powered: visual_effect_and_powered({v1}, {v2}, {row['VISUAL_EFFECT_3']});\n\n")
         content.append(f"        sprite_id: {SPRITE_ID};\n")
         content.append(f"        dual_headed: {int(row['DUAL_HEADED'])};\n")
         content.append(f"        length: {int(row['LENGTH'])};\n")
@@ -804,7 +797,9 @@ def generate_unified_items():
             content.append(
                 f"        cargo_capacity: switch_{VEHIDCODE_lcase}_capacity_position;\n")
             cargo_capacity_defined = True
-
+        purchase_cargo_cap = int(row['HEAD_CAPACITY'])
+        if purchase_cargo_cap > 255:
+            content.append(f"        purchase_cargo_capacity: {purchase_cargo_cap};\n")
         content.append(
             f"        purchase: spriteset_{VEHIDCODE_lcase}_purchase;\n")
         if is_true(row['IS_POWERED_UNPOWERED_SUNDRY']):

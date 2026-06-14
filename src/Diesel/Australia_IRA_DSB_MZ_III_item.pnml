@@ -9,10 +9,10 @@
 item(FEAT_TRAINS, item_diesel_australia_ira_dsb_mz_iii) {
     property {
         name: string(str_diesel_australia_ira_dsb_mz_iii);
-        climates_available: ((param_region_oceania || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
-        introduction_date: date(2006,1,1);
-        model_life: VEHICLE_NEVER_EXPIRES;
-        vehicle_life: 45;
+        climates_available: ((param_region_oceania || param_region_northern_europe) && 1) ? ALL_CLIMATES : NO_CLIMATE;
+        introduction_date: date(1972,1,1);
+        model_life: 45;
+        vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
         cost_factor: 74.7674;
@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_diesel_australia_ira_dsb_mz_iii) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/oceania", "flag/AU", "power/diesel", "role/express"];
+	badges: ["region/europe/northern", "region/oceania", "flag/AU", "power/diesel", "role/express"];
 
     }
     graphics {

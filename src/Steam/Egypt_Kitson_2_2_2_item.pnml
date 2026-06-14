@@ -6,6 +6,10 @@
 // Template: TPL_03A.
 // Data from: https://www.steamlocomotive.com/locobase.php?country=Egypt&wheel=2-2-2&railroad=es
 
+// Notes:
+//// ENGLISH: Kitson 2-2-2 3166-3171 -- Class 1
+
+
 item(FEAT_TRAINS, item_steam_egypt_kitson_2_2_2) {
     property {
         name: string(str_steam_egypt_kitson_2_2_2);

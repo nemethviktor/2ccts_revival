@@ -20,7 +20,7 @@ item(FEAT_TRAINS, item_mu_coach_gen5_modern_double_decker_coach) {
         retire_early: 0;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         cost_factor: 130.56957;
-        running_cost_factor: 127.56391;
+        running_cost_factor: 95.67294;
         speed: 160 km/h;
         power: 0 hp;
         cargo_capacity: 255;

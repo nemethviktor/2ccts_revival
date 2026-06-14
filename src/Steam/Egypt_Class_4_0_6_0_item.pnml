@@ -6,6 +6,10 @@
 // Template: TPL_03C.
 // Data from: https://www.steamlocomotive.com/locobase.php?country=Egypt&wheel=0-6-0&railroad=es
 
+// Notes:
+//// ENGLISH: SA Franco-Belge 0-6-0 'Class 4' -- Class 4
+
+
 item(FEAT_TRAINS, item_steam_egypt_class_4_0_6_0) {
     property {
         name: string(str_steam_egypt_class_4_0_6_0);

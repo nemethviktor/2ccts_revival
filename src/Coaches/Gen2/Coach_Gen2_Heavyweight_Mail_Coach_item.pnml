@@ -20,7 +20,7 @@ item(FEAT_TRAINS, item_mu_coach_gen2_heavyweight_mail_coach) {
         retire_early: 0;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 15/2 : (param_loadingspeed == 2) ? 15*2 : 15;
         cost_factor: 40.6902;
-        running_cost_factor: 37.55804;
+        running_cost_factor: 28.16853;
         speed: 130 km/h;
         power: 0 hp;
         cargo_capacity: 75;
