@@ -572,7 +572,9 @@ item_electric_china_china_railways_hxd3d, /*Year: 2012*/ \
 item_electric_south_africa_sar_20e, /*Year: 2013*/ \
 item_electric_kazakhstan_ktz_kz8a, /*Year: 2014*/ \
 item_electric_poland_pkp_pesa_111e, /*Year: 2016*/ \
-item_electric_tanzania_trc_e6800, /*Year: 2024*/
+item_electric_tanzania_trc_e6800, /*Year: 2024*/ \
+item_electric_netherlands_acme_hs001, /*Year: 2043*/ \
+item_electric_netherlands_acme_hs002, /*Year: 2051*/
 
 #define SORTING_DMU \
 item_dmu_germany_db_vt_040_flying_hamburger, /*Year: 1932*/ \
@@ -636,7 +638,8 @@ item_dmu_croatia_hz_7022, /*Year: 2011*/ \
 item_dmu_sri_lanka_sri_lanka_railways_s11, /*Year: 2011*/ \
 item_dmu_slovakia_zssk_861, /*Year: 2011*/ \
 item_dmu_canada_up_express_nippon_sharyo_dmu, /*Year: 2013*/ \
-item_dmu_argentina_fcgu_cmm_400_2, /*Year: 2015*/
+item_dmu_argentina_fcgu_cmm_400_2, /*Year: 2015*/ \
+item_dmu_netherlands_acme_v200d, /*Year: 2040*/
 
 #define SORTING_EMU \
 item_emu_usa_prr_mp54, /*Year: 1908*/ \
@@ -731,7 +734,8 @@ item_emu_australia_melbourne_hcmt_munnel, /*Year: 2020*/ \
 item_emu_australia_melbourne_nexas, /*Year: 2023*/ \
 item_emu_chile_chilean_sfb500_demu, /*Year: 2024*/ \
 item_emu_uk_br_class_895, /*Year: 2027*/ \
-item_emu_europe_sureot, /*Year: 2030*/
+item_emu_europe_sureot, /*Year: 2030*/ \
+item_emu_netherlands_acme_v200e, /*Year: 2045*/
 
 #define SORTING_MULTIMETRO \
 item_mtro_usa_brooklyn_union_gate_car, /*Year: 1880*/ \

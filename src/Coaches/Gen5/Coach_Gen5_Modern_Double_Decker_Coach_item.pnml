@@ -7,7 +7,7 @@
 // Data from: nan
 
 // Notes:
-//// HEAD_CAPACITY: 255 -- Gemini - ~120 seated + ~100-140 standing (Crush Load). Game caps at 255.
+//// HEAD_CAPACITY: =120+140 -- Gemini - ~120 seated + ~100-140 standing (Crush Load). Game caps at 255.
 
 
 item(FEAT_TRAINS, item_mu_coach_gen5_modern_double_decker_coach) {
@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_mu_coach_gen5_modern_double_decker_coach) {
         vehicle_life: 25;
         retire_early: 0;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 130.56957;
-        running_cost_factor: 95.67294;
+        cost_factor: 133.06957;
+        running_cost_factor: 97.54794;
         speed: 160 km/h;
         power: 0 hp;
         cargo_capacity: 255;
@@ -53,6 +53,7 @@ item(FEAT_TRAINS, item_mu_coach_gen5_modern_double_decker_coach) {
 
     }
     graphics {
+        purchase_cargo_capacity: 260;
         purchase: spriteset_mu_coach_gen5_modern_double_decker_coach_purchase;
         // no 'visual_effect' or 'visual_effect_and_powered'
         // no 'length'

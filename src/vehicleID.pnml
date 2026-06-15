@@ -3678,8 +3678,8 @@ item(FEAT_TRAINS, item_electric_germany_drg_e44, 6152) {}
 item(FEAT_TRAINS, item_electric_poland_pkp_pesa_111e, 6153) {}
 item(FEAT_TRAINS, item_electric_russia_rzd_vl19, 6154) {}
 item(FEAT_TRAINS, item_electric_germany_drg_e18, 6155) {}
-// 6156 free
-// 6157 free
+item(FEAT_TRAINS, item_electric_netherlands_acme_hs001, 6156) {}
+item(FEAT_TRAINS, item_electric_netherlands_acme_hs002, 6157) {}
 // 6158 free
 // 6159 free
 // 6160 free
@@ -4589,7 +4589,7 @@ item(FEAT_TRAINS, item_dmu_australia_nsw_600, 7060) {}
 item(FEAT_TRAINS, item_dmu_new_zealand_silver_fern, 7061) {}
 item(FEAT_TRAINS, item_dmu_hungary_mav_hargita_m440, 7062) {}
 item(FEAT_TRAINS, item_dmu_lithuania_rvr_dr1a, 7063) {}
-// 7064 free
+item(FEAT_TRAINS, item_dmu_netherlands_acme_v200d, 7064) {}
 // 7065 free
 // 7066 free
 // 7067 free
@@ -5623,7 +5623,7 @@ item(FEAT_TRAINS, item_emu_hong_kong_mtr_sp1900, 8091) {}
 item(FEAT_TRAINS, item_emu_chile_chilean_sfb500_demu, 8092) {}
 item(FEAT_TRAINS, item_emu_japan_jnr_shinkansen_series_100, 8093) {}
 item(FEAT_TRAINS, item_emu_uk_br_class_895, 8094) {}
-// 8095 free
+item(FEAT_TRAINS, item_emu_netherlands_acme_v200e, 8095) {}
 // 8096 free
 // 8097 free
 // 8098 free

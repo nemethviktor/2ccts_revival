@@ -543,6 +543,9 @@
 #include "src/DMU/Lithuania_RVR_DR1A_graphics.pnml"
 #include "src/DMU/Lithuania_RVR_DR1A_item.pnml"
 
+#include "src/DMU/Netherlands_ACME_V200D_graphics.pnml"
+#include "src/DMU/Netherlands_ACME_V200D_item.pnml"
+
 
 //// DIESEL
 #include "src/Diesel/Germany_DB_Kof_II_graphics.pnml"
@@ -1369,6 +1372,9 @@
 #include "src/EMU/UK_BR_Class_895_graphics.pnml"
 #include "src/EMU/UK_BR_Class_895_item.pnml"
 
+#include "src/EMU/Netherlands_ACME_V200E_graphics.pnml"
+#include "src/EMU/Netherlands_ACME_V200E_item.pnml"
+
 
 //// ELECTRIC
 #include "src/Electric/Switzerland_RhB_DE_2_2_graphics.pnml"
@@ -1814,6 +1820,12 @@
 
 #include "src/Electric/Germany_DRG_E18_graphics.pnml"
 #include "src/Electric/Germany_DRG_E18_item.pnml"
+
+#include "src/Electric/Netherlands_ACME_HS001_graphics.pnml"
+#include "src/Electric/Netherlands_ACME_HS001_item.pnml"
+
+#include "src/Electric/Netherlands_ACME_HS002_graphics.pnml"
+#include "src/Electric/Netherlands_ACME_HS002_item.pnml"
 
 #include "src/Electric/UK_London_1903_Stock_graphics.pnml"
 #include "src/Electric/UK_London_1903_Stock_item.pnml"

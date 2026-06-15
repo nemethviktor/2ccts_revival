@@ -93,15 +93,15 @@
 | ![High Speed Double Decker](vehicle_graphics/str_mu_coach_gen5_high_speed_double_decker_ic2000.png) | High Speed Double Decker | 2000 | 200 / 124 | 0 / 0 | Coach (Express) | 140 | STANDARD_NONE, NARROW_NONE, BROAD_NONE | Africa, Asia, Southern Europe, Eastern Europe, Western Europe, Northern Europe, North America, South America, Oceania | No |
 | ![High Speed Mail Coach](vehicle_graphics/str_mu_coach_gen5_high_speed_mail_coach.png) | High Speed Mail Coach | 2000 | 250 / 155 | 0 / 0 | Coach (Mail) | 180 | STANDARD_NONE, NARROW_NONE, BROAD_NONE | Africa, Asia, Southern Europe, Eastern Europe, Western Europe, Northern Europe, North America, South America, Oceania | No |
 | ![Modern Commuter Coach](vehicle_graphics/str_mu_coach_gen5_modern_commuter_coach.png) | Modern Commuter Coach | 2000 | 200 / 124 | 0 / 0 | Coach (Express) | 220 | STANDARD_NONE, NARROW_NONE, BROAD_NONE | Africa, Asia, Southern Europe, Eastern Europe, Western Europe, Northern Europe, North America, South America, Oceania | No |
-| ![Modern Double Decker Coach ](vehicle_graphics/str_mu_coach_gen5_modern_double_decker_coach.png) | Modern Double Decker Coach  | 2000 | 160 / 99 | 0 / 0 | Coach (Express) | 255 | STANDARD_NONE, NARROW_NONE, BROAD_NONE | Africa, Asia, Southern Europe, Eastern Europe, Western Europe, Northern Europe, North America, South America, Oceania | No |
+| ![Modern Double Decker Coach ](vehicle_graphics/str_mu_coach_gen5_modern_double_decker_coach.png) | Modern Double Decker Coach  | 2000 | 160 / 99 | 0 / 0 | Coach (Express) | 260 | STANDARD_NONE, NARROW_NONE, BROAD_NONE | Africa, Asia, Southern Europe, Eastern Europe, Western Europe, Northern Europe, North America, South America, Oceania | No |
 | ![Modern Regional Coach](vehicle_graphics/str_mu_coach_gen5_modern_regional_coach.png) | Modern Regional Coach | 2000 | 200 / 124 | 0 / 0 | Coach (Express) | 160 | STANDARD_NONE, NARROW_NONE, BROAD_NONE | Africa, Asia, Southern Europe, Eastern Europe, Western Europe, Northern Europe, North America, South America, Oceania | No |
 | ![ACME Corp. Chimaera Mail Coach](vehicle_graphics/str_mglv_coach_gen7m_chimaera_mail_coach.png) | ACME Corp. Chimaera Mail Coach | 2010 | 643 / 399 | 0 / 0 | Coach (Mail) | 150 | MGLV | Africa, Asia, Southern Europe, Eastern Europe, Western Europe, Northern Europe, North America, South America, Oceania | Yes |
 | ![ACME Corp. Chimaera Passenger Coach](vehicle_graphics/str_mglv_coach_gen7m_chimaera_passenger_coach.png) | ACME Corp. Chimaera Passenger Coach | 2010 | 643 / 399 | 0 / 0 | Coach (HS) | 150 | MGLV | Africa, Asia, Southern Europe, Eastern Europe, Western Europe, Northern Europe, North America, South America, Oceania | Yes |
-| ![Grand Regio Coach](vehicle_graphics/str_mu_coach_gen6_grand_regio_coach.png) | Grand Regio Coach | 2030 | 230 / 142 | 0 / 0 | Coach (HS) | 255 | STANDARD_NONE, NARROW_NONE, BROAD_NONE | Africa, Asia, Southern Europe, Eastern Europe, Western Europe, Northern Europe, North America, South America, Oceania | No |
+| ![Grand Regio Coach](vehicle_graphics/str_mu_coach_gen6_grand_regio_coach.png) | Grand Regio Coach | 2030 | 230 / 142 | 0 / 0 | Coach (HS) | 280 | STANDARD_NONE, NARROW_NONE, BROAD_NONE | Africa, Asia, Southern Europe, Eastern Europe, Western Europe, Northern Europe, North America, South America, Oceania | No |
 | ![Grand Voyager Coach](vehicle_graphics/str_mu_coach_gen6_grand_voyager_coach.png) | Grand Voyager Coach | 2030 | 350 / 217 | 0 / 0 | Coach (HS) | 64 | STANDARD_NONE, NARROW_NONE, BROAD_NONE | Africa, Asia, Southern Europe, Eastern Europe, Western Europe, Northern Europe, North America, South America, Oceania | No |
-| ![Metropolis Coach](vehicle_graphics/str_mu_coach_gen6_metropolis_coach.png) | Metropolis Coach | 2030 | 140 / 86 | 0 / 0 | Coach (Commuter) | 255 | STANDARD_NONE, NARROW_NONE, BROAD_NONE | Africa, Asia, Southern Europe, Eastern Europe, Western Europe, Northern Europe, North America, South America, Oceania | No |
+| ![Metropolis Coach](vehicle_graphics/str_mu_coach_gen6_metropolis_coach.png) | Metropolis Coach | 2030 | 140 / 86 | 0 / 0 | Coach (Commuter) | 350 | STANDARD_NONE, NARROW_NONE, BROAD_NONE | Africa, Asia, Southern Europe, Eastern Europe, Western Europe, Northern Europe, North America, South America, Oceania | No |
 | ![Speedmail Coach](vehicle_graphics/str_mu_coach_gen6_speedmail_coach.png) | Speedmail Coach | 2030 | 350 / 217 | 0 / 0 | Coach (Mail) | 255 | STANDARD_NONE, NARROW_NONE, BROAD_NONE | Africa, Asia, Southern Europe, Eastern Europe, Western Europe, Northern Europe, North America, South America, Oceania | No |
-| ![Super Regio Coach](vehicle_graphics/str_mu_coach_gen6_super_regio_coach.png) | Super Regio Coach | 2030 | 200 / 124 | 0 / 0 | Coach (Express) | 255 | STANDARD_NONE, NARROW_NONE, BROAD_NONE | Africa, Asia, Southern Europe, Eastern Europe, Western Europe, Northern Europe, North America, South America, Oceania | No |
+| ![Super Regio Coach](vehicle_graphics/str_mu_coach_gen6_super_regio_coach.png) | Super Regio Coach | 2030 | 200 / 124 | 0 / 0 | Coach (Express) | 400 | STANDARD_NONE, NARROW_NONE, BROAD_NONE | Africa, Asia, Southern Europe, Eastern Europe, Western Europe, Northern Europe, North America, South America, Oceania | No |
 | ![Super Voyager Coach](vehicle_graphics/str_mu_coach_gen6_super_voyager_coach.png) | Super Voyager Coach | 2030 | 350 / 217 | 0 / 0 | Coach (HS) | 120 | STANDARD_NONE, NARROW_NONE, BROAD_NONE | Africa, Asia, Southern Europe, Eastern Europe, Western Europe, Northern Europe, North America, South America, Oceania | No |
 
 ## DIESELENGINE
@@ -412,6 +412,7 @@
 | ![ZOS Vrutky 861](vehicle_graphics/str_dmu_slovakia_zssk_861.png) | ZOS Vrutky 861 | 2011 | 140 / 86 | 1580 / 1178 | Commuter/Urban | 194 | STANDARD_NONE | Eastern Europe | No |
 | ![Nippon-Sharyo 1000 Series](vehicle_graphics/str_dmu_canada_up_express_nippon_sharyo_dmu.png) | Nippon-Sharyo 1000 Series | 2013 | 128 / 79 | 1520 / 1133 | Commuter/Urban | 160 | STANDARD_NONE | North America | No |
 | ![Materfer CMM 400-2](vehicle_graphics/str_dmu_argentina_fcgu_cmm_400_2.png) | Materfer CMM 400-2 | 2015 | 120 / 74 | 800 / 596 | Commuter/Urban | 140 | STANDARD_NONE | South America | No |
+| ![ACME Corp. V200D DMU](vehicle_graphics/str_dmu_netherlands_acme_v200d.png) | ACME Corp. V200D DMU | 2040 | 200 / 124 | 1900 / 1416 | Express Passenger | 120 | STANDARD_NONE | Western Europe | Yes |
 
 ## ELECTRICENGINE
 
@@ -565,6 +566,8 @@
 | ![Alstom KZ8A](vehicle_graphics/str_electric_kazakhstan_ktz_kz8a.png) | Alstom KZ8A | 2014 | 120 / 74 | 11800 / 8798 | Heavy Freight | 0 | BROAD_25KV | Asia | No |
 | ![PESA 111MS](vehicle_graphics/str_electric_poland_pkp_pesa_111e.png) | PESA 111MS | 2016 | 200 / 124 | 8582 / 6398 | Express | 0 | STANDARD_OHLE | Eastern Europe | No |
 | ![TRC E6800](vehicle_graphics/str_electric_tanzania_trc_e6800.png) | TRC E6800 | 2024 | 160 / 99 | 6705 / 4999 | Express | 0 | STANDARD_25KV | Africa | No |
+| ![ACME Corp. HS001](vehicle_graphics/str_electric_netherlands_acme_hs001.png) | ACME Corp. HS001 | 2043 | 300 / 186 | 10000 / 7456 | Ultra-High-Speed (Universal) | 0 | STANDARD_25KV | Western Europe | Yes |
+| ![ACME Corp. HS002](vehicle_graphics/str_electric_netherlands_acme_hs002.png) | ACME Corp. HS002 | 2051 | 320 / 198 | 18000 / 13420 | Ultra-High-Speed (Universal) | 0 | STANDARD_25KV | Western Europe | Yes |
 
 ## ELECTRICRAILBUS
 
@@ -690,6 +693,7 @@
 | ![CRRC Sifang SFB-500](vehicle_graphics/str_emu_chile_chilean_sfb500_demu.png) | CRRC Sifang SFB-500 | 2024 | 180 / 111 | 7510 / 5599 | Express Passenger | 236 | BROAD_25KV | South America | No |
 | ![Hitachi-Alstom Zefiro Class 895 'HS2'](vehicle_graphics/str_emu_uk_br_class_895.png) | Hitachi-Alstom Zefiro Class 895 'HS2' | 2027 | 360 / 223 | 13400 / 9991 | Ultra-High-Speed (Pax) | 144 | STANDARD_25KV | Northern Europe | No |
 | ![Sureot](vehicle_graphics/str_emu_europe_sureot.png) | Sureot | 2030 | 300 / 186 | 16000 / 11929 | Ultra-High-Speed (Pax) | 170 | STANDARD_25KV | Southern Europe, Eastern Europe, Western Europe, Northern Europe | Yes |
+| ![ACME Corp. V200E EMU](vehicle_graphics/str_emu_netherlands_acme_v200e.png) | ACME Corp. V200E EMU | 2045 | 220 / 136 | 2250 / 1677 | Express Passenger | 120 | STANDARD_25KV | Western Europe | Yes |
 
 ## MAGLEVENGINE
 

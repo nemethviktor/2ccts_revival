@@ -7,7 +7,7 @@
 // Data from: nan
 
 // Notes:
-//// HEAD_CAPACITY: 255 -- Gemini (speculative concept)  - ~60 "Perch" seats + 260-290 standing - Game caps at 255.
+//// HEAD_CAPACITY: =60+290 -- Gemini (speculative concept)  - ~60 "Perch" seats + 260-290 standing - Game caps at 255.
 
 
 item(FEAT_TRAINS, item_mu_coach_gen6_metropolis_coach) {
@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_mu_coach_gen6_metropolis_coach) {
         vehicle_life: 25;
         retire_early: 0;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 129.45025;
-        running_cost_factor: 95.67004;
+        cost_factor: 176.95025;
+        running_cost_factor: 131.29504;
         speed: 140 km/h;
         power: 0 hp;
         cargo_capacity: 255;
@@ -52,6 +52,7 @@ item(FEAT_TRAINS, item_mu_coach_gen6_metropolis_coach) {
 
     }
     graphics {
+        purchase_cargo_capacity: 350;
         purchase: spriteset_mu_coach_gen6_metropolis_coach_purchase;
         // no 'visual_effect' or 'visual_effect_and_powered'
         // no 'length'

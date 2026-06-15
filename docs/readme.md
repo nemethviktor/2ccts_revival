@@ -92,6 +92,8 @@ The below is a causal and incomplete blurb of some of the differences between th
 
 - Most vehicles' data has been rechecked and adjusted, which also means their costs will have changed. Obviously new vehicles have been added.
 - MU wagons can no longer take `valuables`. It's illogical and is a cheat that the player can have valuables speeding around at 400kmh while the actual fastest wagon for it is limited to ~160kmh or so.
+- SuperHeavy is now restricted to Goods and Vehicles only.
+- Wagon upkeep costs have been slightly reduced.
 - Livestock vans have been separated out and the various wagons' cargo defintions have been revamped.
 - Almost everything has been standardised in code and templates, this corrects a lot of generic bugs from the original setup that are too numerous to list individually.
 - Rail types have been added as well as voltages, badges, etc.
@@ -130,6 +132,7 @@ Special thanks to:
 - Valle for help with the properties of coaches and wagons
 - All translators
 - #openttdcoop for their work on the DevZone
+- Pitagoras991 on Discord for their knowledge on various items
 
 ## Contact information
 

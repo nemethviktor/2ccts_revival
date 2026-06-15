@@ -762,6 +762,8 @@ def get_tpl_02(vid, gfx_path, row, template_amendment_code):
         C -> Metro
         D -> EMU(Long, with or without powered cars (ie both powered and unpowered are in the template))
         E -> EMU(Even Longer): return:
+        F -> ??
+        G -> Like A but no MAIL (PAX only)
     """
 
     VEHID_ID_CATEGORY = 'ID_RANGE_UNIT_WAGONS_RAIL'
@@ -775,7 +777,7 @@ def get_tpl_02(vid, gfx_path, row, template_amendment_code):
         VEHID_ID_CATEGORY = 'ID_RANGE_UNIT_WAGONS_MGLV'
 
     nml_code = []
-    if template_amendment_code in ['A', 'D', 'F']:
+    if template_amendment_code in ['A', 'D', 'F', 'G']:
         purchase_coord_y = 128
     elif template_amendment_code in ['C']:
         purchase_coord_y = 96
@@ -792,7 +794,8 @@ def get_tpl_02(vid, gfx_path, row, template_amendment_code):
     nml_code.append(get_vehicle(
         vid=vid, gfx_path=gfx_path, title_comment='back',  vehicle_x=1, vehicle_y=32, template_suffix="2cc_engines_general", use_comment_as_spritename_suffix=True))
 
-    if template_amendment_code in ['A', 'D', 'F']:
+    # A and G get L1 only later (L2 is discarded)
+    if template_amendment_code in ['A', 'D', 'F', 'G']:
         levels = {'L1': 1, 'L2': 178}
     elif template_amendment_code == 'E':
         levels = {
@@ -807,9 +810,9 @@ def get_tpl_02(vid, gfx_path, row, template_amendment_code):
     else:
         levels = {}
 
-    if template_amendment_code in ['A', 'D', 'E']:
-        # Standardize 'A' to use a single-item loop to avoid repeating code blocks
-        active_levels = {'': 1} if template_amendment_code == 'A' else levels
+    if template_amendment_code in ['A', 'D', 'E', 'G']:
+        # Standardize 'A/G' to use a single-item loop to avoid repeating code blocks
+        active_levels = {'': 1} if template_amendment_code in ['A', 'G'] else levels
 
         for level, val in active_levels.items():
             # Setup Dynamic Suffixes
@@ -820,8 +823,11 @@ def get_tpl_02(vid, gfx_path, row, template_amendment_code):
                 tx, ty_pass, ty_mail = val, 64, 96
             elif template_amendment_code == 'E':
                 tx, ty_pass, ty_mail = 1, val, val + 128
+            elif template_amendment_code == 'G':
+                tx, ty_pass, ty_mail = 1, 64, 0
             else:  # Default for 'A'
                 tx, ty_pass, ty_mail = 1, 64, 96
+            
 
             # Generate 'Middlepass' Spriteset
             nml_code.append(get_spriteset(
@@ -832,14 +838,15 @@ def get_tpl_02(vid, gfx_path, row, template_amendment_code):
                 template_x=tx, template_y=ty_pass
             ))
 
-            # Generate 'Middlemail' Spriteset
-            nml_code.append(get_spriteset(
-                vid=vid, gfx_path=gfx_path,
-                comment_type=f"middlemail{suffix}",
-                template_name_amendment="2cc_engines_general",
-                spritename_suffix=f"middlemail{suffix}",
-                template_x=tx, template_y=ty_mail
-            ))
+            if template_amendment_code not in ['G']:
+                # Generate 'Middlemail' Spriteset
+                nml_code.append(get_spriteset(
+                    vid=vid, gfx_path=gfx_path,
+                    comment_type=f"middlemail{suffix}",
+                    template_name_amendment="2cc_engines_general",
+                    spritename_suffix=f"middlemail{suffix}",
+                    template_x=tx, template_y=ty_mail
+                ))
 
     elif template_amendment_code in ['C']:
         nml_code.append(get_spriteset(
@@ -913,7 +920,7 @@ def get_tpl_02(vid, gfx_path, row, template_amendment_code):
                                                   first_item_suffix=f"middle{item}_position_back",
                                                   second_item_suffix=f"middle{item}_position_front"))
 
-    if template_amendment_code in ['A', 'C', 'D', 'E', 'F']:
+    if template_amendment_code in ['A', 'C', 'D', 'E', 'F', 'G']:
         nml_code.append(get_switch_reversed(
             # yes it's b/b/f not a typo
             vid=vid,
@@ -989,6 +996,17 @@ def get_tpl_02(vid, gfx_path, row, template_amendment_code):
                                                spriteset_suffix=f"middlepass{suffix}",
                                                spriteset_suffix_fallback=f"middlemail{suffix_fallback}")
                         )
+    
+    elif template_amendment_code in ['G']:
+        nml_code.append(get_xmu_power_switch_position_based(
+            vid=vid, force_maglev_to_electric=True))
+
+        # Unsure we really need this..and yes it's middlepass x2
+        nml_code.append(get_switch_cargo_class(
+            vid=vid,
+            task="spriteset", fallback_task="spriteset",
+            bitmask_label="CC_PASSENGERS",
+            spriteset_suffix="middlepass", spriteset_suffix_fallback="middlepass"))
 
     return '\n'.join(nml_code)
 

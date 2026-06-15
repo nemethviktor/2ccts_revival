@@ -680,10 +680,10 @@ def generate_unified_items():
             graphics_switch_visual_effect_and_powered = "// no 'visual_effect_and_powered' becuase while it does exist, _visual_effect_and_powered_position is set for livery overrides"
         elif TEMPLATE_ID_FULL in [
             'TPL_03A', 'TPL_03D', 'TPL_03G', 'TPL_16A', 'TPL_17A', 'TPL_17B', 'TPL_17C', 'TPL_17D', 'TPL_17E', 'TPL_32A', 'TPL_32B', 'TPL_32C',
-        ] and TEMPLATE_ID_FULL not in ['TPL_02A', 'TPL_02D', 'TPL_02E', 'TPL_02F', 'TPL_42A', 'TPL_42B',
+        ] and TEMPLATE_ID_FULL not in ['TPL_02A', 'TPL_02D', 'TPL_02E', 'TPL_02F', 'TPL_02G', 'TPL_42A', 'TPL_42B',
                                        ]:
             graphics_switch_visual_effect_and_powered = f"visual_effect_and_powered: switch_{VEHIDCODE_lcase}_visual_effect;"
-        elif TEMPLATE_ID_FULL in ['TPL_02A', 'TPL_02D', 'TPL_02E', 'TPL_02F', 'TPL_42A', 'TPL_42B',
+        elif TEMPLATE_ID_FULL in ['TPL_02A', 'TPL_02D', 'TPL_02E', 'TPL_02F', 'TPL_02G', 'TPL_42A', 'TPL_42B',
                                   ]:
             graphics_switch_visual_effect_and_powered = f"visual_effect_and_powered: switch_{VEHIDCODE_lcase}_visual_effect_and_powered;"
         else:
@@ -705,7 +705,7 @@ def generate_unified_items():
         graphics_switch_back_livery = f"switch_{VEHIDCODE_lcase}_back_livery" if TEMPLATE_ID_FULL in [
             'TPL_42A'] else None
         graphics_switch_cargo_selection = f"switch_{VEHIDCODE_lcase}_cargo_selection" if TEMPLATE_ID_FULL in [
-            'TPL_02A', 'TPL_02D', 'TPL_02E', 'TPL_02F', 'TPL_02F', 'TPL_04C', 'TPL_04E', 'TPL_04F',
+            'TPL_02A', 'TPL_02D', 'TPL_02E', 'TPL_02F', 'TPL_02F', 'TPL_02G', 'TPL_04C', 'TPL_04E', 'TPL_04F',
             'TPL_04G', 'TPL_04H', 'TPL_04I', 'TPL_04J', 'TPL_04K', 'TPL_04L', 'TPL_04M', 'TPL_04N',
             'TPL_04O', 'TPL_04P', 'TPL_04Q',
         ] \
@@ -845,7 +845,7 @@ def generate_unified_items():
         elif category in ['DIESELENGINE', 'ELECTRICENGINE', 'MAGLEVENGINE', 'STEAMENGINE'] \
                 or category.endswith('RAILBUS') \
                 or is_true(row['IS_POWERED_UNPOWERED_SUNDRY']):
-            if TEMPLATE_ID_FULL in ['TPL_02A', 'TPL_02C', 'TPL_02D', 'TPL_02E', 'TPL_02F', 'TPL_42A', 'TPL_42B',
+            if TEMPLATE_ID_FULL in ['TPL_02A', 'TPL_02C', 'TPL_02D', 'TPL_02E', 'TPL_02F', 'TPL_02G', 'TPL_42A', 'TPL_42B',
                                     ]:
                 content.append(
                     f"        default: switch_{VEHIDCODE_lcase}_reversed;\n")
@@ -853,7 +853,7 @@ def generate_unified_items():
                 content.append(
                     f"        default: spriteset_{VEHIDCODE_lcase};\n")
         elif category in ['COACH', 'WAGON']:
-            if TEMPLATE_ID_FULL in ['TPL_02A', 'TPL_02D', 'TPL_02E', 'TPL_02F', 'TPL_04C', 'TPL_04E', 'TPL_04F', 'TPL_04G',
+            if TEMPLATE_ID_FULL in ['TPL_02A', 'TPL_02D', 'TPL_02E', 'TPL_02F', 'TPL_02G', 'TPL_04C', 'TPL_04E', 'TPL_04F', 'TPL_04G',
                                     'TPL_04H', 'TPL_04I', 'TPL_04J', 'TPL_04K', 'TPL_04L', 'TPL_04M', 'TPL_04N', 'TPL_04O',
                                     'TPL_04P', 'TPL_04Q',
                                     ]:

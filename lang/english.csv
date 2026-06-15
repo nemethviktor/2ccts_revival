@@ -1419,3 +1419,7 @@ str_electric_germany_drg_e18,AEG/Krupp E18
 str_emu_uk_br_class_895,Hitachi-Alstom Zefiro Class 895 'HS2'
 str_diesel_ireland_cie_071,EMD JT22CW
 str_dmu_lithuania_rvr_dr1a,RVR DR1A
+str_electric_netherlands_acme_hs001,ACME Corp. HS001
+str_electric_netherlands_acme_hs002,ACME Corp. HS002
+str_dmu_netherlands_acme_v200d,ACME Corp. V200D DMU
+str_emu_netherlands_acme_v200e,ACME Corp. V200E EMU
