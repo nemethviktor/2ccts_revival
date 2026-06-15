@@ -20,6 +20,7 @@ There is a nightly of sorts on my [Google Drive](https://drive.google.com/file/d
 - Badges require OpenTTD v15
 - Driving Trailers require nightly as of mid April 2026 or thereabouts (or v16 if you're on release versions)
 - Please note that the 'revival' newgrf is not backwards compatible with the original 2cc trains newgrf so you can't hot-swap it in savegames
+  - Technically it is possible but it's a major PITA. You'd want to send all your trains to depot (otherwise they'll be stuck perma-unmovably on the tracks), preferably use JGRP and Template replacements, swap the grf, (re)define templates and then manually clone the vehicles to the new templates. It's doable, I tried it, but mightily unpractical.
 
 ### Parameter settings
 
@@ -30,7 +31,7 @@ There is a nightly of sorts on my [Google Drive](https://drive.google.com/file/d
 
 ### Usage
 
-- *Starting date*: You can start as early as 1835.
+- *Starting date*: You can start as early as 1835, subject to region.
 - *Metro vehicles* If there is no Metro track available, the Metro vehicles will use monorail as replacement, as this set does not define other vehicles for monorail.
 - *Multiple units*: With MUs you buy the front and back as dual headed train, and use Unit Wagons to get the consist length you want. You can chose between unpowered andpowered unit wagons. The unpowered wagon weighs 50% of the engine, the powered wagon weighs 75% of the engine and costs 50% more than the unpowered wagon.
 - *Sleeper coaches*: These have a slower cargo ageing (4 days instead of 2.5 days)

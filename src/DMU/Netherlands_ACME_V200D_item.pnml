@@ -20,9 +20,9 @@
 
 
     switch(FEAT_TRAINS, SELF, switch_dmu_netherlands_acme_v200d_capacity_wagon, cargo_classes) { \
-        bitmask(CC_MAIL): 60/2; \
-        bitmask(CC_ARMOURED): 60/4; \
-        60; \
+        bitmask(CC_MAIL): 240/2; \
+        bitmask(CC_ARMOURED): 240/4; \
+        240; \
     }
 
 item(FEAT_TRAINS, item_dmu_netherlands_acme_v200d) {
@@ -34,12 +34,12 @@ item(FEAT_TRAINS, item_dmu_netherlands_acme_v200d) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 58.69667;
+        cost_factor: 53.69667;
         running_cost_factor: 48.12787;
         speed: 200 km/h;
         power: 1900 hp;
         cargo_capacity: 60;
-        weight: 100 ton;
+        weight: 50 ton;
         tractive_effort_coefficient: 0.2;
         air_drag_coefficient: 0;
 
@@ -81,18 +81,18 @@ item(FEAT_TRAINS, item_dmu_netherlands_acme_v200d) {
     livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
         running_cost_factor: int(200/10);
-        weight: int(100*1/2);
-        cargo_capacity: 60;
+        weight: int(50*1/2);
+        cargo_capacity: 240;
         length: 8;
         default: switch_dmu_netherlands_acme_v200d_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        running_cost_factor: (round(44.35889900098415));
+        running_cost_factor: (round(34.35889900098415));
         power: int(1900*1/2);
-        weight: int(100*3/4);
-        cargo_capacity: 60;
-        tractive_effort_coefficient: int(0.2*10*100);
+        weight: int(50*3/4);
+        cargo_capacity: 240;
+        tractive_effort_coefficient: int(0.2*10*50);
         length: 8;
         default: switch_dmu_netherlands_acme_v200d_cargo_selection;
     }

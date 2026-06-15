@@ -14,6 +14,7 @@
   - Introduced some logic whereby if the real-life withdrawal of a train is known, we use that, subject to a generic minimal age being ensure, else we use the fallback value that's automatically generated.
   - Modified the "retire early" logic. Since coaches and wagons don't decay in reliability, they shouldn't be retired early.
 - VEHICLES CHANGES:
+  - Renamed almost everything to be more or less manufacturer naming rather than operator naming. The logic is that if we have idk NSW80 or whatever else in West Europe because it's idk an EMD something, with that operator name, it's silly. Also this way things are a lot less restrictive.
   - Changed Wagon upkeep costs to 75% of the original. Given they are pretty slow in the long run, they are way too expensive to maintain.
   - Changed `SuperHeavy` (wagon) to only allow Goods and Vehicles, otherwise it was a huge cheat.
   - Fixed a number of sprite misalignments #7
@@ -99,7 +100,7 @@
   - RZD 9P - add eastern european region
   - ENR 1100 [LMS Fowler 3F / WD 0-6-0T] - add western european and maybe other euro regions
   - UP Express Nippon Sharyo DMU - maybe rename to UP Express 1000 series
-  -UZ TEP10L - add asia region
+  - UZ TEP10L - add asia region
   - DR 130/DBAG 230 - add eastern europe region, add broad gauge, MAYBE delate western europe region
   - DB VT 133 'Wismar railbus' - add narrow gauge
   - EFE E-269 - add southern eruope region
@@ -110,7 +111,7 @@
   - DR 18 201 - if we consider GDR eastern europe, add eastern europe region  
   - DB V 20 / DB 270 'WR 200 B 14'- add eastern europe and broad gauge
   - MAV M44 - was exported to USSR as series VME1 - add broad gauge and MEYBE asian region
-  -VIA Rail FP9  - add asian (?) region as some operated in Saudi Arabia
+  - VIA Rail FP9  - add asian (?) region as some operated in Saudi Arabia
   - Amtrak FL9 - IRL can work as an electric loco on 3rd rail tracks
   - CD 720 ChME2 - add broad gauge!
   - Odakyu 3100 Series 'Romance' - rename to Odakyu 3100 series NSE?

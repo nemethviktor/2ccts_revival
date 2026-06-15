@@ -20,9 +20,9 @@
 
 
     switch(FEAT_TRAINS, SELF, switch_emu_netherlands_acme_v200e_capacity_wagon, cargo_classes) { \
-        bitmask(CC_MAIL): 60/2; \
-        bitmask(CC_ARMOURED): 60/4; \
-        60; \
+        bitmask(CC_MAIL): 120/2; \
+        bitmask(CC_ARMOURED): 120/4; \
+        120; \
     }
 
 item(FEAT_TRAINS, item_emu_netherlands_acme_v200e) {
@@ -34,13 +34,13 @@ item(FEAT_TRAINS, item_emu_netherlands_acme_v200e) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 67.67547;
-        running_cost_factor: 52.07977;
-        speed: 220 km/h;
+        cost_factor: 59.99185;
+        running_cost_factor: 51.92305;
+        speed: 200 km/h;
         power: 2250 hp;
         cargo_capacity: 60;
-        weight: 150 ton;
-        tractive_effort_coefficient: 0.3;
+        weight: 75 ton;
+        tractive_effort_coefficient: 0.15;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -52,7 +52,7 @@ item(FEAT_TRAINS, item_emu_netherlands_acme_v200e) {
         misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
         refit_cost: 0;
         ai_special_flag: AI_FLAG_PASSENGER | AI_FLAG_CARGO;
-        track_type: [STANDARD_GAUGE_RAILTYPE_25KV];
+        track_type: [STANDARD_GAUGE_RAILTYPE_OHLE];
         running_cost_base: RUNNING_COST_ELECTRIC;
         engine_class: ENGINE_CLASS_ELECTRIC;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
@@ -63,7 +63,7 @@ item(FEAT_TRAINS, item_emu_netherlands_acme_v200e) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/europe/western", "flag/NL", "power/electric/ac", "role/express_passenger"];
+	badges: ["region/europe/western", "flag/NL", "power/electric", "role/express_passenger"];
 
     }
     graphics {
@@ -80,19 +80,19 @@ item(FEAT_TRAINS, item_emu_netherlands_acme_v200e) {
     }
     livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        running_cost_factor: int(220/10);
-        weight: int(150*1/2);
-        cargo_capacity: 60;
+        running_cost_factor: int(200/10);
+        weight: int(75*1/2);
+        cargo_capacity: 120;
         length: 8;
         default: switch_emu_netherlands_acme_v200e_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        running_cost_factor: (round(71.74341713409088));
+        running_cost_factor: (round(35.993417134090876));
         power: int(2250*1/2);
-        weight: int(150*3/4);
-        cargo_capacity: 60;
-        tractive_effort_coefficient: int(0.3*10*150);
+        weight: int(75*3/4);
+        cargo_capacity: 120;
+        tractive_effort_coefficient: int(0.15*10*75);
         length: 8;
         default: switch_emu_netherlands_acme_v200e_cargo_selection;
     }

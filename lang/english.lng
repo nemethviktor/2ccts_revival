@@ -1005,8 +1005,8 @@ str_electric_germany_drg_e44                                      :SSW/Krauss E4
 str_electric_poland_pkp_pesa_111e                                 :PESA 111MS (Electric, OHLE)
 str_electric_russia_rzd_vl19                                      :Kolomna VL19 (Electric, 3kV DC, 1500V DC)
 str_electric_germany_drg_e18                                      :AEG/Krupp E18 (Electric, 15kV AC)
-str_electric_netherlands_acme_hs001                               :ACME Corp. HS001 (Electric, 25kV AC)
-str_electric_netherlands_acme_hs002                               :ACME Corp. HS002 (Electric, 25kV AC)
+str_electric_netherlands_acme_hs001                               :ACME Corp. HS001 (Electric, OHLE)
+str_electric_netherlands_acme_hs002                               :ACME Corp. HS002 (Electric, OHLE)
 
 # Electricrailbus
 str_rbe_switzerland_ab_cfe_3_3                                    :SLM CFe 3/3 (Electric Railbus, 1500V DC)
@@ -1127,7 +1127,7 @@ str_emu_hong_kong_mtr_sp1900                                      :Itochu/Kinki/
 str_emu_chile_chilean_sfb500_demu                                 :CRRC Sifang SFB-500 (EMU, 25kV AC)
 str_emu_japan_jnr_shinkansen_series_100                           :Hitachi/Kawasaki Shinkansen Series 100 (EMU, 25kV AC)
 str_emu_uk_br_class_895                                           :Hitachi-Alstom Zefiro Class 895 'HS2' (EMU, 25kV AC)
-str_emu_netherlands_acme_v200e                                    :ACME Corp. V200E EMU (EMU, 25kV AC)
+str_emu_netherlands_acme_v200e                                    :ACME Corp. V200E EMU (EMU, OHLE)
 str_cargoemu_japan_jr_freight_m250                                :Kawasaki/Nippon Sharyo/Toshiba M250 (EMU, 1500V DC)
 
 # Maglevengine
