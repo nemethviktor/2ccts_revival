@@ -2176,7 +2176,8 @@ def get_tpl_42(vid, gfx_path, row, template_amendment_code):
     """
     This is for the CargoDMU: param template_amendment_code:
     -> A: CargoDMU
-    -> B: Test
+    -> B: M250 CargoEMU
+    -> C: DD CargoEMU
     """
     nml_code = []
 
@@ -2184,7 +2185,7 @@ def get_tpl_42(vid, gfx_path, row, template_amendment_code):
                     purchase_x=1, purchase_y=192))
 
     # Position base offsets (The "Starting Y" for each section)
-    if template_amendment_code in ['A']:
+    if template_amendment_code in ['A', 'C']:
         position_strings = {
             'Front': 0,    # Block 1 starts at 0 (we add 1 later)
             'Back': 64,   # Block 2 starts at 64
@@ -2202,16 +2203,16 @@ def get_tpl_42(vid, gfx_path, row, template_amendment_code):
     # 2. State X-offsets (Horizontal)
     states = {1: 1, 2: 178, 3: 356}
 
-    if template_amendment_code == 'A':
+    if template_amendment_code in ['A', 'C']:
         for position_string, position_base_y in position_strings.items():
             position_string_is_dummy = True if position_string == 'dummy' else False
             has_loading_states = True
             created_sprites = []
 
             nml_code.append(f"\n// {position_string}")
-
+            livery_nums = [1, 2] if template_amendment_code == 'A' else [1]
             # We use (livery_num - 1) * 32 to get 0 for L1 and 32 for L2
-            for livery_num in [1, 2]:
+            for livery_num in livery_nums:
                 livery_offset = (livery_num - 1) * 32
 
                 for state_num, x_coord in states.items():
@@ -2238,7 +2239,7 @@ def get_tpl_42(vid, gfx_path, row, template_amendment_code):
                         comment_type=comment,
                         template_name_amendment="2cc_engines_general",
                         template_x=x_coord,
-                        template_y=calculated_y,
+                        template_y=calculated_y + (1 if final_y == 1 else 0),
                         spritename_suffix=s_suffix
                     ))
 
@@ -2263,10 +2264,10 @@ def get_tpl_42(vid, gfx_path, row, template_amendment_code):
             nml_code.append(get_random_livery_selector(
                 vid=vid, cargo_string=position_string,
                 selector_name=selector_name,
-                list_length=2,
+                list_length= 2 if template_amendment_code == 'A' else 1,
                 cargo_string_is_dummy=position_string_is_dummy,
                 has_loading_states=has_loading_states,
-                first_chance=5))
+                first_chance=5 if template_amendment_code == 'A' else 10))
 
         nml_code.append(get_switch_reversed(vid=vid,
                                             front_switch="Back_livery",

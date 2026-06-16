@@ -13079,7 +13079,7 @@ item(FEAT_TRAINS, item_mglv_wagon_gen7m_livestock_van, 18016) {}
 // Cargo EMU, available ID range: 19000-19499 (hex 0x4A38..0x4C2B)
 #define ID_RANGE_CARGOEMU 0x4A38..0x4C2B
 item(FEAT_TRAINS, item_cargoemu_japan_jr_freight_m250, 19000) {}
-// 19001 free
+item(FEAT_TRAINS, item_cargoemu_netherlands_acme_cargodd, 19001) {}
 // 19002 free
 // 19003 free
 // 19004 free

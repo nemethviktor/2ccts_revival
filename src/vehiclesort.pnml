@@ -1029,7 +1029,8 @@ item_mglv_wagon_gen7m_silo_type2, /*Year: 2020*/ \
 item_mglv_wagon_gen7m_hopper_type2, /*Year: 2020*/
 
 #define SORTING_CARGOEMU \
-item_cargoemu_japan_jr_freight_m250, /*Year: 2003*/
+item_cargoemu_japan_jr_freight_m250, /*Year: 2003*/ \
+item_cargoemu_netherlands_acme_cargodd, /*Year: 2045*/
 
 #define SORTING_COACHES_MGLV \
 item_mglv_coach_gen7m_chimaera_passenger_coach, /*Year: 2010*/ \

@@ -10,15 +10,15 @@ spriteset(spriteset_cargodmu_germany_db_691_cargosprinter_purchase, "gfx/cargodm
 // Front
 
 /// FRONT   LIVERY 1   LOADING STATE 1
-spriteset(spriteset_cargodmu_germany_db_691_cargosprinter_front_l1_s1, "gfx/cargodmu/germany_db_691_cargosprinter.png") {template_2cc_engines_general(1, 0)}
+spriteset(spriteset_cargodmu_germany_db_691_cargosprinter_front_l1_s1, "gfx/cargodmu/germany_db_691_cargosprinter.png") {template_2cc_engines_general(1, 1)}
 
 
 /// FRONT   LIVERY 1   LOADING STATE 2
-spriteset(spriteset_cargodmu_germany_db_691_cargosprinter_front_l1_s2, "gfx/cargodmu/germany_db_691_cargosprinter.png") {template_2cc_engines_general(178, 0)}
+spriteset(spriteset_cargodmu_germany_db_691_cargosprinter_front_l1_s2, "gfx/cargodmu/germany_db_691_cargosprinter.png") {template_2cc_engines_general(178, 1)}
 
 
 /// FRONT   LIVERY 1   LOADING STATE 3
-spriteset(spriteset_cargodmu_germany_db_691_cargosprinter_front_l1_s3, "gfx/cargodmu/germany_db_691_cargosprinter.png") {template_2cc_engines_general(356, 0)}
+spriteset(spriteset_cargodmu_germany_db_691_cargosprinter_front_l1_s3, "gfx/cargodmu/germany_db_691_cargosprinter.png") {template_2cc_engines_general(356, 1)}
 
 
 /// LIVERY 1 SPRITEGROUP - FRONT

@@ -566,7 +566,7 @@ str_diesel_liberia_liberia_railways_class_08                      :BR Class 08 0
 str_diesel_austria_obb_2060                                       :Jenbacher Werke 2060 (Diesel)
 str_diesel_canada_cnr_sw1200                                      :EMD SW1200 (Diesel)
 str_diesel_canada_via_rail_fp9                                    :EMD FP9 (Diesel)
-str_diesel_hungary_mav_m44                                        :Ganz-MAVAG M44 (Diesel)
+str_diesel_hungary_mav_m44                                        :Ganz-MAVAG DVM2 'M44' (Diesel)
 str_diesel_hungary_mav_m28                                        :Raba M28 'Nyünyüke' (Diesel)
 str_diesel_belgium_nmbs_sncb_83                                   :Cockerill-Sambre HLD série 83 (Diesel)
 str_diesel_germany_db_220                                         :Krauss-Maffei V200 (Diesel)
@@ -1129,6 +1129,7 @@ str_emu_japan_jnr_shinkansen_series_100                           :Hitachi/Kawas
 str_emu_uk_br_class_895                                           :Hitachi-Alstom Zefiro Class 895 'HS2' (EMU, 25kV AC)
 str_emu_netherlands_acme_v200e                                    :ACME Corp. V200E EMU (EMU, OHLE)
 str_cargoemu_japan_jr_freight_m250                                :Kawasaki/Nippon Sharyo/Toshiba M250 (EMU, 1500V DC)
+str_cargoemu_netherlands_acme_cargodd                             :ACME Corp. DD CargoEMU (EMU, OHLE)
 
 # Maglevengine
 str_mglv_germany_db_182_es64um_mutus                              :Siemens Eurosprinter ES64U4M (Maglev)

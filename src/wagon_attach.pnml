@@ -55,6 +55,8 @@ switch(FEAT_TRAINS, PARENT, switch_attach_to_maglev_loco, [STORE_TEMP(position_i
 
 /// Filter for what can attach behind high-speed Freight MUs (CargoSprinter/M250)
 switch(FEAT_TRAINS, PARENT, switch_attach_to_cargo_mu, [STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
+    ID_RANGE_CARGODMU: 		                CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
+    ID_RANGE_CARGOEMU: 		                CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
     ID_RANGE_UNIT_WAGONS_RAIL_CARGO: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
     CB_RESULT_ATTACH_DISALLOW;
 }

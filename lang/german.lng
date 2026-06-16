@@ -1131,6 +1131,7 @@ str_electric_germany_db_185_traxx_f140                            :DB 145 TRAXX 
 # str_emu_uk_br_class_895                                           : not translated
 # str_emu_netherlands_acme_v200e                                    : not translated
 # str_cargoemu_japan_jr_freight_m250                                : not translated
+# str_cargoemu_netherlands_acme_cargodd                             : not translated
 
 # Maglevengine
 # str_mglv_germany_db_182_es64um_mutus                              : not translated

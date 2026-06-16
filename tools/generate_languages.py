@@ -82,7 +82,7 @@ def sync_csv_with_excel(df_vehicles):
             with open(csv_file, 'w', encoding='utf-8-sig', newline='') as f:
                 writer = csv.writer(f, quoting=csv.QUOTE_MINIMAL)
                 writer.writerows(rows)
-            print(f"Synced changes into {os.path.basename(csv_file)}.")
+            # print(f"Synced changes into {os.path.basename(csv_file)}.")
 
 
 def get_tech_suffixes(row, lang_map, english_map):
@@ -262,7 +262,7 @@ def generate_languages():
         with open(lng_file, 'w', encoding='utf-8') as f:
             for line in output:
                 f.write(line + "\n")
-        print(f"Exported: {lng_file}")
+        # print(f"Exported: {lng_file}")
 
 
 if __name__ == "__main__":

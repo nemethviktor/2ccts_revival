@@ -153,7 +153,7 @@
 | ![EMD FP9](vehicle_graphics/str_diesel_canada_via_rail_fp9.png) | EMD FP9 | 1954 | 144 / 89 | 1800 / 1342 | Universal | 0 | STANDARD_NONE | Asia, North America | No |
 | ![EMD G12 A608-A609 'M2'](vehicle_graphics/str_diesel_sri_lanka_sri_lanka_railways_m2.png) | EMD G12 A608-A609 'M2' | 1954 | 112 / 69 | 1425 / 1062 | Universal | 0 | BROAD_NONE | Asia | No |
 | ![EMD SW1200](vehicle_graphics/str_diesel_canada_cnr_sw1200.png) | EMD SW1200 | 1954 | 104 / 64 | 1200 / 894 | Universal | 0 | STANDARD_NONE | North America | No |
-| ![Ganz-MAVAG M44](vehicle_graphics/str_diesel_hungary_mav_m44.png) | Ganz-MAVAG M44 | 1954 | 80 / 49 | 590 / 439 | Universal | 0 | STANDARD_NONE, BROAD_NONE | Eastern Europe | No |
+| ![Ganz-MAVAG DVM2 'M44'](vehicle_graphics/str_diesel_hungary_mav_m44.png) | Ganz-MAVAG DVM2 'M44' | 1954 | 80 / 49 | 590 / 439 | Universal | 0 | STANDARD_NONE, BROAD_NONE | Eastern Europe | No |
 | ![Jenbacher Werke 2060](vehicle_graphics/str_diesel_austria_obb_2060.png) | Jenbacher Werke 2060 | 1954 | 60 / 37 | 200 / 149 | Shunting | 0 | STANDARD_NONE | Western Europe | No |
 | ![EMD/Clyde A7](vehicle_graphics/str_diesel_australia_nsw_42.png) | EMD/Clyde A7 | 1955 | 114 / 70 | 1750 / 1304 | Universal | 0 | STANDARD_NONE | Oceania | No |
 | ![EMD/Clyde G12](vehicle_graphics/str_diesel_new_zealand_da_class.png) | EMD/Clyde G12 | 1955 | 100 / 62 | 1420 / 1058 | Express | 0 | NARROW_NONE | Oceania | No |
@@ -346,7 +346,7 @@
 | Graphics | Name | Intro | Speed kmh / mph | Power hp/kW | Role | Cap | Track Types | Regions | Concept? |
 | :---: | :--- | :---: | :---: | :---: | :--- | :---: | :--- | :--- | :--- |
 | ![Multiple Unit Wagon](vehicle_graphics/str_mu_mu_wagon_powered.png) | Multiple Unit Wagon | 1908 | 0 / 0 | 0 / 0 | Powered/Unpowered Sundry | 1 | STANDARD_NONE, NARROW_NONE, BROAD_NONE | Africa, Asia, Southern Europe, Eastern Europe, Western Europe, Northern Europe, North America, South America, Oceania | No |
-| ![Multiple Unit Wagon](vehicle_graphics/str_mu_mu_wagon_unpowered.png) | Multiple Unit Wagon | 1908 | 0 / 0 | 0 / 0 | Powered/Unpowered Sundry | 1 | STANDARD_NONE, NARROW_OHLE, NARROW_NONE, BROAD_OHLE, BROAD_NONE | Africa, Asia, Southern Europe, Eastern Europe, Western Europe, Northern Europe, North America, South America, Oceania | No |
+| ![Multiple Unit Wagon](vehicle_graphics/str_mu_mu_wagon_unpowered.png) | Multiple Unit Wagon | 1908 | 0 / 0 | 0 / 0 | Powered/Unpowered Sundry | 1 | STANDARD_NONE, NARROW_NONE, BROAD_NONE | Africa, Asia, Southern Europe, Eastern Europe, Western Europe, Northern Europe, North America, South America, Oceania | No |
 | ![LHB VT 04.0 'Flying Hamburger'](vehicle_graphics/str_dmu_germany_db_vt_040_flying_hamburger.png) | LHB VT 04.0 'Flying Hamburger' | 1932 | 160 / 99 | 810 / 603 | Express Passenger | 110 | STANDARD_NONE | Western Europe | No |
 | ![Harland & Wolf 'Silver City Comet'](vehicle_graphics/str_dmu_australia_nswgr_silver_city_comet.png) | Harland & Wolf 'Silver City Comet' | 1937 | 160 / 99 | 660 / 492 | Express | 0 | STANDARD_NONE | Oceania | No |
 | ![Ganz 'Arpad' Bariloche DMU](vehicle_graphics/str_dmu_argentina_ganz_arpad_bariloche.png) | Ganz 'Arpad' Bariloche DMU | 1938 | 110 / 68 | 640 / 477 | Commuter/Urban | 110 | BROAD_NONE | South America | No |
@@ -389,7 +389,7 @@
 | ![Comeng 3100](vehicle_graphics/str_dmu_australia_transadelaide_3100.png) | Comeng 3100 | 1987 | 90 / 55 | 2092 / 1559 | Commuter/Urban | 92 | STANDARD_NONE | Oceania | No |
 | ![ABB IC3 Y2](vehicle_graphics/str_dmu_sweden_sj_y2.png) | ABB IC3 Y2 | 1990 | 180 / 111 | 3200 / 2385 | Express Passenger | 96 | STANDARD_NONE, BROAD_NONE | Africa, Southern Europe, Eastern Europe, Western Europe, Northern Europe | No |
 | ![Multiple Unit Cargo Wagon](vehicle_graphics/str_mu_mu_cargo_wagon_powered.png) | Multiple Unit Cargo Wagon | 1992 | 0 / 0 | 0 / 0 | Powered/Unpowered Sundry | 1 | STANDARD_NONE, NARROW_NONE, BROAD_NONE | Africa, Asia, Southern Europe, Eastern Europe, Western Europe, Northern Europe, North America, South America, Oceania | No |
-| ![Multiple Unit Cargo Wagon](vehicle_graphics/str_mu_mu_cargo_wagon_unpowered.png) | Multiple Unit Cargo Wagon | 1992 | 0 / 0 | 0 / 0 | Powered/Unpowered Sundry | 1 | STANDARD_NONE, NARROW_OHLE, NARROW_NONE, BROAD_OHLE, BROAD_NONE | Africa, Asia, Southern Europe, Eastern Europe, Western Europe, Northern Europe, North America, South America, Oceania | No |
+| ![Multiple Unit Cargo Wagon](vehicle_graphics/str_mu_mu_cargo_wagon_unpowered.png) | Multiple Unit Cargo Wagon | 1992 | 0 / 0 | 0 / 0 | Powered/Unpowered Sundry | 1 | STANDARD_NONE, NARROW_NONE, BROAD_NONE | Africa, Asia, Southern Europe, Eastern Europe, Western Europe, Northern Europe, North America, South America, Oceania | No |
 | ![ABB Xplorer](vehicle_graphics/str_dmu_australia_nswgr_xplorer.png) | ABB Xplorer | 1993 | 145 / 90 | 1028 / 766 | Commuter/Urban | 76 | STANDARD_NONE | Oceania | No |
 | ![Windhoff CargoSprinter](vehicle_graphics/str_cargodmu_germany_db_691_cargosprinter.png) | Windhoff CargoSprinter | 1996 | 120 / 74 | 710 / 529 | Freight | 80 | STANDARD_NONE | Western Europe | No |
 | ![Adtranz Class 168 'Clubman'](vehicle_graphics/str_dmu_uk_br_168.png) | Adtranz Class 168 'Clubman' | 1997 | 160 / 99 | 844 / 629 | Express Passenger | 136 | STANDARD_NONE | Northern Europe | No |
@@ -693,6 +693,7 @@
 | ![CRRC Sifang SFB-500](vehicle_graphics/str_emu_chile_chilean_sfb500_demu.png) | CRRC Sifang SFB-500 | 2024 | 180 / 111 | 7510 / 5599 | Express Passenger | 236 | BROAD_25KV | South America | No |
 | ![Hitachi-Alstom Zefiro Class 895 'HS2'](vehicle_graphics/str_emu_uk_br_class_895.png) | Hitachi-Alstom Zefiro Class 895 'HS2' | 2027 | 360 / 223 | 13400 / 9991 | Ultra-High-Speed (Pax) | 144 | STANDARD_25KV | Northern Europe | No |
 | ![Sureot](vehicle_graphics/str_emu_europe_sureot.png) | Sureot | 2030 | 300 / 186 | 16000 / 11929 | Ultra-High-Speed (Pax) | 170 | STANDARD_25KV | Southern Europe, Eastern Europe, Western Europe, Northern Europe | Yes |
+| ![ACME Corp. DD CargoEMU](vehicle_graphics/str_cargoemu_netherlands_acme_cargodd.png) | ACME Corp. DD CargoEMU | 2045 | 300 / 186 | 7457 / 5559 | Freight | 120 | STANDARD_OHLE | Africa, Asia, Southern Europe, Eastern Europe, Western Europe, Northern Europe, North America, South America, Oceania | Yes |
 | ![ACME Corp. V200E EMU](vehicle_graphics/str_emu_netherlands_acme_v200e.png) | ACME Corp. V200E EMU | 2045 | 200 / 124 | 2250 / 1677 | Express Passenger | 120 | STANDARD_OHLE | Western Europe | Yes |
 
 ## MAGLEVENGINE
