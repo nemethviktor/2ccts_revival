@@ -738,6 +738,9 @@ str_diesel_usa_up_emd_dda40x                                      :聯合太平�
 # str_diesel_germany_dr_132_dbag_234                                : not translated
 # str_diesel_yugoslavia_jz_d66                                      : not translated
 # str_diesel_ireland_cie_071                                        : not translated
+# str_diesel_germany_lkm_v_180                                      : not translated
+# str_diesel_sweden_nohab_aa16                                      : not translated
+# str_diesel_germany_lew_v100                                       : not translated
 
 # Dieselrailbus
 # str_rbd_australia_victorian_railways_aec_rm1                      : not translated
@@ -1008,6 +1011,8 @@ str_electric_ukraine_uz_ds3                                       :烏克蘭鐵�
 # str_electric_germany_drg_e18                                      : not translated
 # str_electric_netherlands_acme_hs001                               : not translated
 # str_electric_netherlands_acme_hs002                               : not translated
+# str_electric_germany_lew_el2                                      : not translated
+# str_electric_poland_pafawag_201e                                  : not translated
 
 # Electricrailbus
 # str_rbe_switzerland_ab_cfe_3_3                                    : not translated
@@ -1129,6 +1134,7 @@ str_electric_ukraine_uz_ds3                                       :烏克蘭鐵�
 # str_emu_japan_jnr_shinkansen_series_100                           : not translated
 # str_emu_uk_br_class_895                                           : not translated
 # str_emu_netherlands_acme_v200e                                    : not translated
+# str_emu_poland_pesa_dart_43we                                     : not translated
 # str_cargoemu_japan_jr_freight_m250                                : not translated
 # str_cargoemu_netherlands_acme_cargodd                             : not translated
 

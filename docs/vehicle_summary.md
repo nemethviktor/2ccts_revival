@@ -155,6 +155,7 @@
 | ![EMD SW1200](vehicle_graphics/str_diesel_canada_cnr_sw1200.png) | EMD SW1200 | 1954 | 104 / 64 | 1200 / 894 | Universal | 0 | STANDARD_NONE | North America | No |
 | ![Ganz-MAVAG DVM2 'M44'](vehicle_graphics/str_diesel_hungary_mav_m44.png) | Ganz-MAVAG DVM2 'M44' | 1954 | 80 / 49 | 590 / 439 | Universal | 0 | STANDARD_NONE, BROAD_NONE | Eastern Europe | No |
 | ![Jenbacher Werke 2060](vehicle_graphics/str_diesel_austria_obb_2060.png) | Jenbacher Werke 2060 | 1954 | 60 / 37 | 200 / 149 | Shunting | 0 | STANDARD_NONE | Western Europe | No |
+| ![NOHAB AA16](vehicle_graphics/str_diesel_sweden_nohab_aa16.png) | NOHAB AA16 | 1954 | 140 / 86 | 1980 / 1476 | Universal | 0 | STANDARD_NONE | Africa, Asia, Southern Europe, Eastern Europe, Western Europe, Northern Europe, North America, South America, Oceania | No |
 | ![EMD/Clyde A7](vehicle_graphics/str_diesel_australia_nsw_42.png) | EMD/Clyde A7 | 1955 | 114 / 70 | 1750 / 1304 | Universal | 0 | STANDARD_NONE | Oceania | No |
 | ![EMD/Clyde G12](vehicle_graphics/str_diesel_new_zealand_da_class.png) | EMD/Clyde G12 | 1955 | 100 / 62 | 1420 / 1058 | Express | 0 | NARROW_NONE | Oceania | No |
 | ![Metropolitan-Vickers/CIE 001](vehicle_graphics/str_diesel_ireland_cie_001.png) | Metropolitan-Vickers/CIE 001 | 1955 | 120 / 74 | 1325 / 987 | Universal | 0 | BROAD_NONE | Northern Europe | No |
@@ -179,6 +180,7 @@
 | ![Kolomna TEP60](vehicle_graphics/str_diesel_russia_rzd_tep60.png) | Kolomna TEP60 | 1960 | 160 / 99 | 2960 / 2206 | Express | 0 | BROAD_NONE | Asia, Eastern Europe, Northern Europe | No |
 | ![Krauss-Maffei ML 4000](vehicle_graphics/str_diesel_brazil_efvm_ml4000.png) | Krauss-Maffei ML 4000 | 1960 | 110 / 68 | 3540 / 2639 | Heavy Freight | 0 | STANDARD_NONE, NARROW_NONE | North America, South America | No |
 | ![MaK 100](vehicle_graphics/str_diesel_denmark_dsb_mak_100.png) | MaK 100 | 1960 | 60 / 37 | 334 / 249 | Shunting | 0 | STANDARD_NONE | Northern Europe | No |
+| ![VEB LKM V180](vehicle_graphics/str_diesel_germany_lkm_v_180.png) | VEB LKM V180 | 1960 | 120 / 74 | 1970 / 1468 | Universal | 0 | STANDARD_NONE | Western Europe | No |
 | ![BN/ACEC 62](vehicle_graphics/str_diesel_belgium_nmbs_sncb_62.png) | BN/ACEC 62 | 1961 | 120 / 74 | 1380 / 1028 | Universal | 0 | STANDARD_NONE | Western Europe | No |
 | ![GE U5B](vehicle_graphics/str_diesel_chile_efe_ge_u5b.png) | GE U5B | 1961 | 64 / 39 | 600 / 447 | Universal | 0 | NARROW_NONE | South America | No |
 | ![Henschel GE G16](vehicle_graphics/str_diesel_sierra_leone_lamco_301_series.png) | Henschel GE G16 | 1962 | 105 / 65 | 1950 / 1453 | Heavy Freight | 0 | NARROW_NONE | Africa | No |
@@ -191,6 +193,7 @@
 | ![LTZ M62](vehicle_graphics/str_diesel_russia_rzd_m62.png) | LTZ M62 | 1965 | 100 / 62 | 1970 / 1468 | Universal | 0 | STANDARD_NONE, BROAD_NONE | Asia, Eastern Europe, Northern Europe | No |
 | ![EMD/Clyde G16C X1](vehicle_graphics/str_diesel_australia_victoria_x1.png) | EMD/Clyde G16C X1 | 1966 | 133 / 82 | 1810 / 1349 | Universal | 0 | STANDARD_NONE, BROAD_NONE | Oceania | No |
 | ![GE U10B](vehicle_graphics/str_diesel_spain_renfe_308.png) | GE U10B | 1966 | 120 / 74 | 710 / 529 | Universal | 0 | BROAD_NONE | Southern Europe | No |
+| ![LEW V100](vehicle_graphics/str_diesel_germany_lew_v100.png) | LEW V100 | 1966 | 100 / 62 | 987 / 735 | Universal | 0 | STANDARD_NONE | Asia, Eastern Europe | No |
 | ![Brissonneau and Lotz BB 67400](vehicle_graphics/str_diesel_france_sncf_bb_67400.png) | Brissonneau and Lotz BB 67400 | 1969 | 140 / 86 | 2367 / 1764 | Universal | 0 | STANDARD_NONE | Western Europe | No |
 | ![EMD DDA40X](vehicle_graphics/str_diesel_usa_up_emd_dda40x.png) | EMD DDA40X | 1969 | 144 / 89 | 6600 / 4920 | Universal | 0 | STANDARD_NONE | North America | No |
 | ![EMD/Clyde J26C 69-656](vehicle_graphics/str_diesel_australia_nswgr_422.png) | EMD/Clyde J26C 69-656 | 1969 | 124 / 77 | 2000 / 1491 | Universal | 0 | STANDARD_NONE | Oceania | No |
@@ -467,6 +470,7 @@
 | ![GE EL-2B](vehicle_graphics/str_electric_usa_virginian_railway_el_2b.png) | GE EL-2B | 1948 | 80 / 49 | 6800 / 5070 | Heavy Freight | 0 | STANDARD_15KV | North America | No |
 | ![EFE E-29](vehicle_graphics/str_electric_chile_efe_e_29.png) | EFE E-29 | 1949 | 100 / 62 | 3100 / 2311 | Universal | 0 | BROAD_3KV | South America | No |
 | ![GEC/NBLC SAR 4E ](vehicle_graphics/str_electric_south_africa_sar_4e.png) | GEC/NBLC SAR 4E  | 1952 | 97 / 60 | 2520 / 1878 | Heavy Freight | 0 | NARROW_3KV | Africa | No |
+| ![LEW EL2](vehicle_graphics/str_electric_germany_lew_el2.png) | LEW EL2 | 1952 | 65 / 40 | 1790 / 1334 | Universal | 0 | STANDARD_3KV, STANDARD_1500V, BROAD_3KV, BROAD_1500V | Asia, Eastern Europe | No |
 | ![Tulloch 0-6-0DM 'W' Class](vehicle_graphics/str_electric_australia_nswgr_71.png) | Tulloch 0-6-0DM 'W' Class | 1952 | 113 / 70 | 2700 / 2013 | Express | 0 | NARROW_1500V | Oceania | No |
 | ![ASEA Dm3](vehicle_graphics/str_electric_sweden_mtab_dm3.png) | ASEA Dm3 | 1953 | 75 / 46 | 9700 / 7232 | Heavy Freight | 0 | STANDARD_15KV | Northern Europe | No |
 | ![Metropolitan-Vicerks EM2](vehicle_graphics/str_electric_uk_br_77_metrovic.png) | Metropolitan-Vicerks EM2 | 1953 | 145 / 90 | 2490 / 1856 | Universal | 0 | STANDARD_1500V | Northern Europe | No |
@@ -498,6 +502,7 @@
 | ![Toshiba EA](vehicle_graphics/str_electric_new_zealand_nzr_ea.png) | Toshiba EA | 1968 | 72 / 44 | 1290 / 961 | Universal | 0 | NARROW_1500V | Oceania | No |
 | ![AEG/BBC/Henschel/Siemens E03](vehicle_graphics/str_electric_germany_db_1031.png) | AEG/BBC/Henschel/Siemens E03 | 1970 | 200 / 124 | 9980 / 7441 | Express | 0 | STANDARD_15KV | Western Europe | No |
 | ![UCW 6E](vehicle_graphics/str_electric_south_africa_sar_6e.png) | UCW 6E | 1970 | 113 / 70 | 3020 / 2251 | Express | 0 | NARROW_3KV | Africa | No |
+| ![Pafawag 201E](vehicle_graphics/str_electric_poland_pafawag_201e.png) | Pafawag 201E | 1971 | 125 / 77 | 4020 / 2997 | Universal | 0 | STANDARD_3KV | Africa, Eastern Europe | No |
 | ![NEVZ ES40](vehicle_graphics/str_electric_finland_vr_sr1.png) | NEVZ ES40 | 1973 | 140 / 86 | 4428 / 3301 | Universal | 0 | BROAD_25KV | Northern Europe | No |
 | ![Alsthom CP 2600](vehicle_graphics/str_electric_portugal_cp_2600.png) | Alsthom CP 2600 | 1974 | 100 / 62 | 4020 / 2997 | Universal | 0 | BROAD_25KV | Southern Europe | No |
 | ![EFE E-17](vehicle_graphics/str_electric_chile_efe_e_17.png) | EFE E-17 | 1974 | 90 / 55 | 1640 / 1222 | Universal | 0 | BROAD_3KV | South America | No |
@@ -686,13 +691,14 @@
 | ![Stadler 4010 'KISS'](vehicle_graphics/str_emu_austria_westbahn_4010_kiss.png) | Stadler 4010 'KISS' | 2011 | 200 / 124 | 5340 / 3981 | Express Passenger | 120 | STANDARD_OHLE | Western Europe | No |
 | ![AnsaldoBreda V250 'Albatros'](vehicle_graphics/str_emu_netherlands_ns_hispeed_v250_albatros.png) | AnsaldoBreda V250 'Albatros' | 2012 | 251 / 155 | 3620 / 2699 | Express Passenger | 142 | STANDARD_OHLE | Western Europe | No |
 | ![NS 4800 HSA 'Fyra'](vehicle_graphics/str_emu_netherlands_ns_4800_hsa.png) | NS 4800 HSA 'Fyra' | 2012 | 300 / 186 | 4426 / 3300 | Ultra-High-Speed (Pax) | 84 | STANDARD_OHLE | Western Europe | Yes |
+| ![PESA 43WE 'DART'](vehicle_graphics/str_emu_poland_pesa_dart_43we.png) | PESA 43WE 'DART' | 2014 | 160 / 99 | 3218 / 2399 | Express Passenger | 88 | STANDARD_3KV | Eastern Europe | No |
 | ![Alstom Avelia Horizon](vehicle_graphics/str_emu_italy_ntv_agv_duplex.png) | Alstom Avelia Horizon | 2015 | 360 / 223 | 3104 / 2314 | Ultra-High-Speed (Pax) | 160 | STANDARD_OHLE | Southern Europe | Yes |
 | ![Koncar 6112](vehicle_graphics/str_emu_croatia_hz_6112.png) | Koncar 6112 | 2015 | 160 / 99 | 2700 / 2013 | Express Passenger | 120 | BROAD_25KV | Eastern Europe | No |
 | ![Evolution Rail HCMT Munnel](vehicle_graphics/str_emu_australia_melbourne_hcmt_munnel.png) | Evolution Rail HCMT Munnel | 2020 | 130 / 80 | 1500 / 1118 | Commuter/Urban | 320 | BROAD_1500V | Oceania | No |
 | ![Siemens Nexas](vehicle_graphics/str_emu_australia_melbourne_nexas.png) | Siemens Nexas | 2023 | 145 / 90 | 1286 / 958 | Commuter/Urban | 284 | BROAD_1500V | Oceania | No |
 | ![CRRC Sifang SFB-500](vehicle_graphics/str_emu_chile_chilean_sfb500_demu.png) | CRRC Sifang SFB-500 | 2024 | 180 / 111 | 7510 / 5599 | Express Passenger | 236 | BROAD_25KV | South America | No |
 | ![Hitachi-Alstom Zefiro Class 895 'HS2'](vehicle_graphics/str_emu_uk_br_class_895.png) | Hitachi-Alstom Zefiro Class 895 'HS2' | 2027 | 360 / 223 | 13400 / 9991 | Ultra-High-Speed (Pax) | 144 | STANDARD_25KV | Northern Europe | No |
-| ![Sureot](vehicle_graphics/str_emu_europe_sureot.png) | Sureot | 2030 | 300 / 186 | 16000 / 11929 | Ultra-High-Speed (Pax) | 170 | STANDARD_25KV | Southern Europe, Eastern Europe, Western Europe, Northern Europe | Yes |
+| ![ACME Corp. Sureot](vehicle_graphics/str_emu_europe_sureot.png) | ACME Corp. Sureot | 2030 | 300 / 186 | 16000 / 11929 | Ultra-High-Speed (Pax) | 170 | STANDARD_25KV | Southern Europe, Eastern Europe, Western Europe, Northern Europe | Yes |
 | ![ACME Corp. DD CargoEMU](vehicle_graphics/str_cargoemu_netherlands_acme_cargodd.png) | ACME Corp. DD CargoEMU | 2045 | 300 / 186 | 7457 / 5559 | Freight | 120 | STANDARD_OHLE | Africa, Asia, Southern Europe, Eastern Europe, Western Europe, Northern Europe, North America, South America, Oceania | Yes |
 | ![ACME Corp. V200E EMU](vehicle_graphics/str_emu_netherlands_acme_v200e.png) | ACME Corp. V200E EMU | 2045 | 200 / 124 | 2250 / 1677 | Express Passenger | 120 | STANDARD_OHLE | Western Europe | Yes |
 

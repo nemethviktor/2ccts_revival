@@ -1040,7 +1040,7 @@ str_emu_bulgaria_bdz_10_desiro,Siemens Desiro BDZ
 str_emu_finland_vr_sm2,Valmet Sm2
 str_emu_finland_vr_sm4,Fiat/CAF Sm4
 str_emu_hungary_mav_bdvmot,Ganz-MAVAG BDVmot
-str_emu_europe_sureot,Sureot
+str_emu_europe_sureot,ACME Corp. Sureot
 str_emu_japan_jnr_shinkansen_series_0,Hitachi Shinkansen Series 0
 str_emu_japan_jr_shinkansen_series_700,Hitachi Shinkansen Series 700
 str_emu_japan_jr_shinkansen_series_e1_max,Hitachi/Kawasaki Shinkansen Series E1 Max
@@ -1424,3 +1424,9 @@ str_electric_netherlands_acme_hs002,ACME Corp. HS002
 str_dmu_netherlands_acme_v200d,ACME Corp. V200D DMU
 str_emu_netherlands_acme_v200e,ACME Corp. V200E EMU
 str_cargoemu_netherlands_acme_cargodd,ACME Corp. DD CargoEMU
+str_diesel_germany_lkm_v_180,VEB LKM V180
+str_emu_poland_pesa_dart_43we,PESA 43WE 'DART'
+str_electric_germany_lew_el2,LEW EL2
+str_electric_poland_pafawag_201e,Pafawag 201E
+str_diesel_sweden_nohab_aa16,NOHAB AA16
+str_diesel_germany_lew_v100,LEW V100

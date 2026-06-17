@@ -44,6 +44,14 @@
     - `BR Class 895 'HS2'`
     - `CIE 071 / JZ666`
     - `RVR DR1A`
+    - `ACME Corp. HS00`
+    - `ACME Corp. HS00`
+    - `ACME Corp. V200D DM`
+    - `ACME Corp. V200E EM`
+    - `ACME Corp. DD CargoEM`
+    - `VEB LKM V18`
+    - `PESA 43WE 'DART`
+    - `LEW EL2`    
     - Added some future trains from the Dutch Trainset.
     - Added some of the maglevs from the original OpenTTD game.
   Further changes from Discord discussion: [most of these have been amended but not 100%. the below is a copypaste of suggestions]

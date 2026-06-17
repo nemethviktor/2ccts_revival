@@ -289,6 +289,7 @@ item_diesel_canada_via_rail_fp9, /*Year: 1954*/ \
 item_diesel_hungary_mav_m44, /*Year: 1954*/ \
 item_diesel_sri_lanka_sri_lanka_railways_m2, /*Year: 1954*/ \
 item_diesel_australia_commonwealth_nsu, /*Year: 1954*/ \
+item_diesel_sweden_nohab_aa16, /*Year: 1954*/ \
 item_diesel_hungary_mav_m28, /*Year: 1955*/ \
 item_diesel_ireland_cie_001, /*Year: 1955*/ \
 item_diesel_australia_nsw_42, /*Year: 1955*/ \
@@ -313,6 +314,7 @@ item_diesel_denmark_dsb_mak_100, /*Year: 1960*/ \
 item_diesel_south_korea_korail_6000_emd_sd18, /*Year: 1960*/ \
 item_diesel_tunisia_sncft_040_df, /*Year: 1960*/ \
 item_diesel_australia_nsw_49, /*Year: 1960*/ \
+item_diesel_germany_lkm_v_180, /*Year: 1960*/ \
 item_diesel_belgium_nmbs_sncb_62, /*Year: 1961*/ \
 item_diesel_chile_efe_ge_u5b, /*Year: 1961*/ \
 item_diesel_sierra_leone_lamco_301_series, /*Year: 1962*/ \
@@ -325,6 +327,7 @@ item_diesel_peru_ferrocarril_central_andino_alco_rsd_39, /*Year: 1965*/ \
 item_diesel_new_zealand_db_class, /*Year: 1965*/ \
 item_diesel_spain_renfe_308, /*Year: 1966*/ \
 item_diesel_australia_victoria_x1, /*Year: 1966*/ \
+item_diesel_germany_lew_v100, /*Year: 1966*/ \
 item_diesel_australia_nswgr_422, /*Year: 1969*/ \
 item_diesel_egypt_enr_g22w, /*Year: 1969*/ \
 item_diesel_usa_up_emd_dda40x, /*Year: 1969*/ \
@@ -475,6 +478,7 @@ item_electric_morocco_oncf_e_700, /*Year: 1948*/ \
 item_electric_chile_efe_e_29, /*Year: 1949*/ \
 item_electric_australia_nswgr_71, /*Year: 1952*/ \
 item_electric_south_africa_sar_4e, /*Year: 1952*/ \
+item_electric_germany_lew_el2, /*Year: 1952*/ \
 item_electric_sweden_mtab_dm3, /*Year: 1953*/ \
 item_electric_uk_br_77_metrovic, /*Year: 1953*/ \
 item_electric_france_sncf_bb_9004, /*Year: 1954*/ \
@@ -505,6 +509,7 @@ item_electric_japan_jnr_ef81, /*Year: 1967*/ \
 item_electric_new_zealand_nzr_ea, /*Year: 1968*/ \
 item_electric_germany_db_1031, /*Year: 1970*/ \
 item_electric_south_africa_sar_6e, /*Year: 1970*/ \
+item_electric_poland_pafawag_201e, /*Year: 1971*/ \
 item_electric_finland_vr_sr1, /*Year: 1973*/ \
 item_electric_austria_obb_1044, /*Year: 1974*/ \
 item_electric_portugal_cp_2600, /*Year: 1974*/ \
@@ -728,6 +733,7 @@ item_emu_russia_rzd_es1_lastochka, /*Year: 2011*/ \
 item_emu_austria_westbahn_4010_kiss, /*Year: 2011*/ \
 item_emu_netherlands_ns_4800_hsa, /*Year: 2012*/ \
 item_emu_netherlands_ns_hispeed_v250_albatros, /*Year: 2012*/ \
+item_emu_poland_pesa_dart_43we, /*Year: 2014*/ \
 item_emu_italy_ntv_agv_duplex, /*Year: 2015*/ \
 item_emu_croatia_hz_6112, /*Year: 2015*/ \
 item_emu_australia_melbourne_hcmt_munnel, /*Year: 2020*/ \

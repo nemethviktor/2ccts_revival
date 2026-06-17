@@ -1094,6 +1094,15 @@
 #include "src/Diesel/Ireland_CIE_071_graphics.pnml"
 #include "src/Diesel/Ireland_CIE_071_item.pnml"
 
+#include "src/Diesel/Germany_LKM_V_180_graphics.pnml"
+#include "src/Diesel/Germany_LKM_V_180_item.pnml"
+
+#include "src/Diesel/Sweden_NOHAB_AA16_graphics.pnml"
+#include "src/Diesel/Sweden_NOHAB_AA16_item.pnml"
+
+#include "src/Diesel/Germany_LEW_V100_graphics.pnml"
+#include "src/Diesel/Germany_LEW_V100_item.pnml"
+
 
 //// EMU
 #include "src/EMU/Netherlands_NS_Mat24_graphics.pnml"
@@ -1377,6 +1386,9 @@
 
 #include "src/EMU/Netherlands_ACME_V200E_graphics.pnml"
 #include "src/EMU/Netherlands_ACME_V200E_item.pnml"
+
+#include "src/EMU/Poland_PESA_Dart_43WE_graphics.pnml"
+#include "src/EMU/Poland_PESA_Dart_43WE_item.pnml"
 
 
 //// ELECTRIC
@@ -1829,6 +1841,12 @@
 
 #include "src/Electric/Netherlands_ACME_HS002_graphics.pnml"
 #include "src/Electric/Netherlands_ACME_HS002_item.pnml"
+
+#include "src/Electric/Germany_LEW_EL2_graphics.pnml"
+#include "src/Electric/Germany_LEW_EL2_item.pnml"
+
+#include "src/Electric/Poland_Pafawag_201E_graphics.pnml"
+#include "src/Electric/Poland_Pafawag_201E_item.pnml"
 
 #include "src/Electric/UK_London_1903_Stock_graphics.pnml"
 #include "src/Electric/UK_London_1903_Stock_item.pnml"
