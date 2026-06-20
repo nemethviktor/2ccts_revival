@@ -741,6 +741,10 @@ str_diesel_usa_amtrak_charger                                     :美铁Amtrak 
 # str_diesel_germany_lkm_v_180                                      : not translated
 # str_diesel_sweden_nohab_aa16                                      : not translated
 # str_diesel_germany_lew_v100                                       : not translated
+# str_diesel_poland_fablok_6d                                       : not translated
+# str_diesel_poland_hcp_301d                                        : not translated
+# str_diesel_argentina_rf_615_e                                     : not translated
+# str_diesel_zimbabwe_ee_kerr_vulcan_de2                            : not translated
 
 # Dieselrailbus
 str_rbd_australia_victorian_railways_aec_rm1                      :维多利亚铁路 (内燃铁路巴士)
@@ -854,6 +858,7 @@ str_dmu_canada_up_express_nippon_sharyo_dmu                       :联合太平�
 # str_dmu_hungary_mav_hargita_m440                                  : not translated
 # str_dmu_lithuania_rvr_dr1a                                        : not translated
 # str_dmu_netherlands_acme_v200d                                    : not translated
+# str_dmu_switzerland_stadler_flirt                                 : not translated
 str_mu_mu_wagon_unpowered                                         :动车车厢 (无动力)
 str_mu_mu_wagon_powered                                           :动车车厢 (有动力)
 str_mu_mu_cargo_wagon_unpowered                                   :动车车厢 (无动力)
@@ -903,11 +908,11 @@ str_electric_russia_rzd_vl15                                      :俄铁RZD VL1
 str_electric_china_china_railways_6k                              :中铁CR 6K型 (Electric, 电力 25kV AC)
 str_electric_france_sncf_bb_26000                                 :法铁SNCF BB 26000 (Electric, 电力 OHLE)
 str_electric_china_china_railways_ss6                             :中铁CR 韶山6型SS6 (Electric, 电力 25kV AC)
-str_electric_switzerland_sbb_re460_lok_2000                       :瑞铁SBB Re460 'Lok 2000' (Electric, 电力 25kV AC, 15kV AC)
+str_electric_switzerland_sbb_re460_lok_2000                       :瑞铁SBB Re460 'Lok 2000' (Electric, 电力 25kV AC, 15kV AC, 3kV DC)
 str_electric_spain_renfe_252                                      :西铁RENFE 252 (Electric, 电力 OHLE)
 str_electric_uk_br_92                                             :英铁BR 92 (Electric, 电力 Dual-Pickup)
 str_electric_india_indian_railways_wap_4                          :印铁IR WAP-4 (Electric, 电力 25kV AC)
-str_electric_germany_db_185_traxx_f140                            :德铁DB 185 TRAXX F140 (Electric, 电力 OHLE)
+str_electric_germany_db_185_traxx_f140                            :德铁DB 185 TRAXX F140 (Electric, 电力 OHLE, 25kV AC)
 str_electric_belgium_nmbs_sncb_13_hle                             :比铁NMBS/SNCB 13 HLE (Electric, 电力 OHLE)
 str_electric_japan_jr_eh500                                       :日铁JR EH500 (Electric, 电力 OHLE)
 str_electric_germany_db_182_es64u_taurus                          :德铁DB 182 ES64U 'Taurus' (Electric, 电力 OHLE)
@@ -1013,6 +1018,13 @@ str_electric_russia_rzd_vl11                                      :俄铁RZD VL1
 # str_electric_netherlands_acme_hs002                               : not translated
 # str_electric_germany_lew_el2                                      : not translated
 # str_electric_poland_pafawag_201e                                  : not translated
+# str_electric_india_hitachi_wag6bc                                 : not translated
+# str_electric_south_africa_toshiba_10e                             : not translated
+# str_electric_south_africa_sar_9e_s1                               : not translated
+# str_electric_morocco_hitachi_e1100                                : not translated
+# str_electric_india_rdso_clw_wam4                                  : not translated
+# str_electric_india_groupement_50_hz_wam_1                         : not translated
+# str_electric_chile_ingeteam_euskotren_td2000                      : not translated
 
 # Electricrailbus
 str_rbe_switzerland_ab_cfe_3_3                                    :瑞铁AB CFe 3/3 (电力铁路巴士, 1500V DC)
@@ -1074,7 +1086,7 @@ str_emu_norway_nsb_bm73                                           :挪铁NSB BM7
 str_emu_czech_republic_cd_680_pendolino                           :捷克铁路CD 680 'Pendolino' (电力动车, OHLE)
 str_emu_finland_vr_sm4                                            :芬铁VR Sm4 (电力动车, OHLE)
 str_emu_luxembourg_cfl_2200_coradia_duplex                        :卢国铁CFL 2200 'Coradia Duplex' (电力动车, OHLE)
-str_emu_germany_db_403_ice_3                                      :德铁DB 403 ‘ICE3’ (电力动车, 15kV AC)
+str_emu_germany_db_403_ice_3                                      :德铁DB 403 ‘ICE3’ (电力动车, 25kV AC, 15kV AC, 3kV DC)
 str_emu_spain_renfe_120                                           :西铁RENFE 120 (电力动车, OHLE)
 str_emu_switzerland_sbb_rabe_523_flirt                            :瑞铁SBB RABe 523 'Flirt' (电力动车, 15kV AC, 3kV DC, 25kV AC)
 str_emu_bulgaria_bdz_10_desiro                                    :保加利亚铁路BDZ 10 'Desiro' (电力动车, 25kV AC)
@@ -1137,6 +1149,7 @@ str_emu_europe_sureot                                             :Sureot (电�
 # str_emu_poland_pesa_dart_43we                                     : not translated
 # str_cargoemu_japan_jr_freight_m250                                : not translated
 # str_cargoemu_netherlands_acme_cargodd                             : not translated
+# str_cargoemu_japan_jnr_tokaido_shinkansen_concept                 : not translated
 
 # Maglevengine
 # str_mglv_germany_db_182_es64um_mutus                              : not translated

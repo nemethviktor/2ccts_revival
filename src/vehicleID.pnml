@@ -2714,10 +2714,10 @@ item(FEAT_TRAINS, item_diesel_ireland_cie_071, 5191) {}
 item(FEAT_TRAINS, item_diesel_germany_lkm_v_180, 5192) {}
 item(FEAT_TRAINS, item_diesel_sweden_nohab_aa16, 5193) {}
 item(FEAT_TRAINS, item_diesel_germany_lew_v100, 5194) {}
-// 5195 free
-// 5196 free
-// 5197 free
-// 5198 free
+item(FEAT_TRAINS, item_diesel_poland_fablok_6d, 5195) {}
+item(FEAT_TRAINS, item_diesel_poland_hcp_301d, 5196) {}
+item(FEAT_TRAINS, item_diesel_argentina_rf_615_e, 5197) {}
+item(FEAT_TRAINS, item_diesel_zimbabwe_ee_kerr_vulcan_de2, 5198) {}
 // 5199 free
 // 5200 free
 // 5201 free
@@ -3682,13 +3682,13 @@ item(FEAT_TRAINS, item_electric_netherlands_acme_hs001, 6156) {}
 item(FEAT_TRAINS, item_electric_netherlands_acme_hs002, 6157) {}
 item(FEAT_TRAINS, item_electric_germany_lew_el2, 6158) {}
 item(FEAT_TRAINS, item_electric_poland_pafawag_201e, 6159) {}
-// 6160 free
-// 6161 free
-// 6162 free
-// 6163 free
-// 6164 free
-// 6165 free
-// 6166 free
+item(FEAT_TRAINS, item_electric_india_hitachi_wag6bc, 6160) {}
+item(FEAT_TRAINS, item_electric_south_africa_toshiba_10e, 6161) {}
+item(FEAT_TRAINS, item_electric_south_africa_sar_9e_s1, 6162) {}
+item(FEAT_TRAINS, item_electric_morocco_hitachi_e1100, 6163) {}
+item(FEAT_TRAINS, item_electric_india_rdso_clw_wam4, 6164) {}
+item(FEAT_TRAINS, item_electric_india_groupement_50_hz_wam_1, 6165) {}
+item(FEAT_TRAINS, item_electric_chile_ingeteam_euskotren_td2000, 6166) {}
 // 6167 free
 // 6168 free
 // 6169 free
@@ -4590,7 +4590,7 @@ item(FEAT_TRAINS, item_dmu_new_zealand_silver_fern, 7061) {}
 item(FEAT_TRAINS, item_dmu_hungary_mav_hargita_m440, 7062) {}
 item(FEAT_TRAINS, item_dmu_lithuania_rvr_dr1a, 7063) {}
 item(FEAT_TRAINS, item_dmu_netherlands_acme_v200d, 7064) {}
-// 7065 free
+item(FEAT_TRAINS, item_dmu_switzerland_stadler_flirt, 7065) {}
 // 7066 free
 // 7067 free
 // 7068 free
@@ -13080,7 +13080,7 @@ item(FEAT_TRAINS, item_mglv_wagon_gen7m_livestock_van, 18016) {}
 #define ID_RANGE_CARGOEMU 0x4A38..0x4C2B
 item(FEAT_TRAINS, item_cargoemu_japan_jr_freight_m250, 19000) {}
 item(FEAT_TRAINS, item_cargoemu_netherlands_acme_cargodd, 19001) {}
-// 19002 free
+item(FEAT_TRAINS, item_cargoemu_japan_jnr_tokaido_shinkansen_concept, 19002) {}
 // 19003 free
 // 19004 free
 // 19005 free

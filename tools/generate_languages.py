@@ -4,6 +4,8 @@ import glob
 import csv
 import warnings
 import re
+from datetime import datetime
+
 
 # Silence openpyxl warnings
 warnings.filterwarnings("ignore", category=UserWarning, module="openpyxl")
@@ -28,7 +30,7 @@ def load_excel_data():
     df_props = pd.read_excel(excel_path, sheet_name='properties')
     df_tracks = pd.read_excel(excel_path, sheet_name='track_types')
 
-    df = df_control[['VEHIDCODE', 'NAME', 'ENGLISH', 'IS_POWERED_UNPOWERED_SUNDRY', 'VEHID_ID']].merge(
+    df = df_control[['VEHIDCODE', 'NAME', 'ENGLISH', 'IS_POWERED_UNPOWERED_SUNDRY', 'VEHID_ID', 'WEB']].merge(
         df_props[['VEHIDCODE', 'ENGINE_CLASS', 'COST_CAT',
                   'DUAL_HEADED', 'IS_TURBINE']],
         on='VEHIDCODE', how='left'
@@ -215,9 +217,11 @@ def generate_languages():
             if not is_english_lang and not v:
                 output.append(f"# {k.ljust(65)} : not translated")
             else:
+                now = datetime.now()
+                build_string  = f"{{}}{{SILVER}}Build: {now.strftime("%Y-%m-%d-%H:%M:%S")}"
                 final_val = v if (
                     v or not is_english_lang) else english_map.get(k.lower(), "")
-                output.append(f"{k.ljust(65)} :{final_val}")
+                output.append(f"{k.ljust(65)} :{final_val}{build_string if k == 'STR_GRF_DESCRIPTION' else ''}")
 
         normal_word = hardcoded.get("STR_WORD_NORMAL") or (
             english_map.get("str_word_normal") if not is_english_lang else "default")
@@ -258,6 +262,18 @@ def generate_languages():
                 output.append(f"# {v_id.ljust(65)} : not translated")
             else:
                 output.append(f"{v_id.ljust(65)} :{v_base_name}{suffix}")
+
+            #if is_english_lang:
+            #    v_web_val = v_row.get('WEB')
+            #    url_token_name = f"{str(v_row['NAME']).strip().lower()}_url"
+            #    # If the cell is populated and isn't an Excel NaN/empty string
+            #    if pd.notna(v_web_val) and str(v_web_val).strip() != "" and str(v_web_val).strip().lower() != "nan":
+            #        clean_url_string = str(v_web_val).strip()
+            #        
+            #        # Append it directly to the output without running modification or change tracking checks
+            #        output.append(f"{url_token_name.ljust(65)} :{{BLACK}}Data: {{GOLD}}{clean_url_string}")
+            #    else:
+            #        output.append(f"{url_token_name.ljust(65)} :{{BLACK}}Data: NA")
 
         with open(lng_file, 'w', encoding='utf-8') as f:
             for line in output:

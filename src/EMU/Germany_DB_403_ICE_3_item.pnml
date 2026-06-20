@@ -8,6 +8,7 @@
 
 // Notes:
 //// TE_STARTING_KN: =300/2 -- EN wiki
+//// REGION2: COMECON -- Not the commie thing per se but it's in EE and Asia too
 
 
 // Cargo capacity
@@ -28,7 +29,7 @@
 item(FEAT_TRAINS, item_emu_germany_db_403_ice_3) {
     property {
         name: string(str_emu_germany_db_403_ice_3);
-        climates_available: ((param_region_western_europe || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
+        climates_available: (((param_region_northern_europe || param_region_western_europe) || (param_region_asia || param_region_eastern_europe)) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(2000,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 45;
@@ -51,7 +52,7 @@ item(FEAT_TRAINS, item_emu_germany_db_403_ice_3) {
         misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
         refit_cost: 0;
         ai_special_flag: AI_FLAG_PASSENGER | AI_FLAG_CARGO;
-        track_type: [STANDARD_GAUGE_RAILTYPE_15KV];
+        track_type: [STANDARD_GAUGE_RAILTYPE_25KV, STANDARD_GAUGE_RAILTYPE_15KV, BROAD_GAUGE_RAILTYPE_3KV];
         running_cost_base: RUNNING_COST_ELECTRIC;
         engine_class: ENGINE_CLASS_ELECTRIC;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
@@ -62,7 +63,7 @@ item(FEAT_TRAINS, item_emu_germany_db_403_ice_3) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/europe/western", "flag/DE", "power/electric/ac", "role/ultra_high_speed__pax_"];
+	badges: ["region/asia", "region/europe/western", "region/europe/eastern", "region/europe/northern", "flag/DE", "power/electric/ac", "role/ultra_high_speed__pax_"];
 
     }
     graphics {

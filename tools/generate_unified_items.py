@@ -734,6 +734,7 @@ def generate_unified_items():
                 content.append(f"//// {k}: {v}\n")
             content.append("\n\n")
 
+        
         # We need to port some of the random crap from _graphics here else it won't work because we are no longer defining HEAD_CAPACITY as a generic thing.
         if (category in ['DMU', 'EMU', 'WAGON', 'MMU'] and row['VEHID_ID_CATEGORY'] not in ['ID_RANGE_CARGOEMU', 'ID_RANGE_CARGODMU']) or category.endswith('RAILBUS'):
             content.append("// Cargo capacity" + "\n")
@@ -815,6 +816,8 @@ def generate_unified_items():
             if not cargo_capacity_defined:
                 content.append(
                     f"        cargo_capacity: switch_{VEHIDCODE_lcase}_capacity_engine;\n")
+        #if not is_true(row['IS_POWERED_UNPOWERED_SUNDRY']):
+        #    content.append(f"""        additional_text: string(str_{VEHIDCODE_lcase}_url);\n""")
         content.append(
             f"        {graphics_switch_visual_effect_and_powered}\n")
         content.append(f"        {graphics_switch_length}\n")

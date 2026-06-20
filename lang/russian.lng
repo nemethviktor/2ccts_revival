@@ -743,6 +743,10 @@ str_diesel_russia_rzd_gt1                                         :РЖД ГТ1 
 # str_diesel_germany_lkm_v_180                                      : not translated
 # str_diesel_sweden_nohab_aa16                                      : not translated
 # str_diesel_germany_lew_v100                                       : not translated
+# str_diesel_poland_fablok_6d                                       : not translated
+# str_diesel_poland_hcp_301d                                        : not translated
+# str_diesel_argentina_rf_615_e                                     : not translated
+# str_diesel_zimbabwe_ee_kerr_vulcan_de2                            : not translated
 
 # Dieselrailbus
 # str_rbd_australia_victorian_railways_aec_rm1                      : not translated
@@ -856,6 +860,7 @@ str_dmu_russia_rzd_ra2                                            :РЖД РA2 (
 # str_dmu_hungary_mav_hargita_m440                                  : not translated
 # str_dmu_lithuania_rvr_dr1a                                        : not translated
 # str_dmu_netherlands_acme_v200d                                    : not translated
+# str_dmu_switzerland_stadler_flirt                                 : not translated
 # str_mu_mu_wagon_unpowered                                         : not translated
 # str_mu_mu_wagon_powered                                           : not translated
 # str_mu_mu_cargo_wagon_unpowered                                   : not translated
@@ -1015,6 +1020,13 @@ str_electric_usa_pennsylvania_railroad_gg_1                       :Локомо�
 # str_electric_netherlands_acme_hs002                               : not translated
 # str_electric_germany_lew_el2                                      : not translated
 # str_electric_poland_pafawag_201e                                  : not translated
+# str_electric_india_hitachi_wag6bc                                 : not translated
+# str_electric_south_africa_toshiba_10e                             : not translated
+# str_electric_south_africa_sar_9e_s1                               : not translated
+# str_electric_morocco_hitachi_e1100                                : not translated
+# str_electric_india_rdso_clw_wam4                                  : not translated
+# str_electric_india_groupement_50_hz_wam_1                         : not translated
+# str_electric_chile_ingeteam_euskotren_td2000                      : not translated
 
 # Electricrailbus
 str_rbe_switzerland_ab_cfe_3_3                                    :AB CFe 3/3 (Электро-Моториса, 1500V DC)
@@ -1139,6 +1151,7 @@ str_emu_switzerland_sbb_rabe_523_flirt                            :SBB RABe 523 
 # str_emu_poland_pesa_dart_43we                                     : not translated
 # str_cargoemu_japan_jr_freight_m250                                : not translated
 # str_cargoemu_netherlands_acme_cargodd                             : not translated
+# str_cargoemu_japan_jnr_tokaido_shinkansen_concept                 : not translated
 
 # Maglevengine
 # str_mglv_germany_db_182_es64um_mutus                              : not translated

@@ -47,6 +47,9 @@
 #include "src/CargoEMU/Netherlands_ACME_CargoDD_graphics.pnml"
 #include "src/CargoEMU/Netherlands_ACME_CargoDD_item.pnml"
 
+#include "src/CargoEMU/Japan_JNR_Tokaido_Shinkansen_Concept_graphics.pnml"
+#include "src/CargoEMU/Japan_JNR_Tokaido_Shinkansen_Concept_item.pnml"
+
 
 //// COACHES - GEN1
 #include "src/Coaches/Gen1/Coach_Gen1_Wooden_2_axle_Compartment_Coach_graphics.pnml"
@@ -548,6 +551,9 @@
 
 #include "src/DMU/Netherlands_ACME_V200D_graphics.pnml"
 #include "src/DMU/Netherlands_ACME_V200D_item.pnml"
+
+#include "src/DMU/Switzerland_Stadler_Flirt_graphics.pnml"
+#include "src/DMU/Switzerland_Stadler_Flirt_item.pnml"
 
 
 //// DIESEL
@@ -1102,6 +1108,18 @@
 
 #include "src/Diesel/Germany_LEW_V100_graphics.pnml"
 #include "src/Diesel/Germany_LEW_V100_item.pnml"
+
+#include "src/Diesel/Poland_Fablok_6D_graphics.pnml"
+#include "src/Diesel/Poland_Fablok_6D_item.pnml"
+
+#include "src/Diesel/Poland_HCP_301D_graphics.pnml"
+#include "src/Diesel/Poland_HCP_301D_item.pnml"
+
+#include "src/Diesel/Argentina_RF_615_E_graphics.pnml"
+#include "src/Diesel/Argentina_RF_615_E_item.pnml"
+
+#include "src/Diesel/Zimbabwe_EE_Kerr_Vulcan_DE2_graphics.pnml"
+#include "src/Diesel/Zimbabwe_EE_Kerr_Vulcan_DE2_item.pnml"
 
 
 //// EMU
@@ -1847,6 +1865,27 @@
 
 #include "src/Electric/Poland_Pafawag_201E_graphics.pnml"
 #include "src/Electric/Poland_Pafawag_201E_item.pnml"
+
+#include "src/Electric/India_Hitachi_WAG6BC_graphics.pnml"
+#include "src/Electric/India_Hitachi_WAG6BC_item.pnml"
+
+#include "src/Electric/South_Africa_Toshiba_10E_graphics.pnml"
+#include "src/Electric/South_Africa_Toshiba_10E_item.pnml"
+
+#include "src/Electric/South_Africa_SAR_9E_S1_graphics.pnml"
+#include "src/Electric/South_Africa_SAR_9E_S1_item.pnml"
+
+#include "src/Electric/Morocco_Hitachi_E1100_graphics.pnml"
+#include "src/Electric/Morocco_Hitachi_E1100_item.pnml"
+
+#include "src/Electric/India_RDSO_CLW_WAM4_graphics.pnml"
+#include "src/Electric/India_RDSO_CLW_WAM4_item.pnml"
+
+#include "src/Electric/India_Groupement_50_Hz_WAM_1_graphics.pnml"
+#include "src/Electric/India_Groupement_50_Hz_WAM_1_item.pnml"
+
+#include "src/Electric/Chile_Ingeteam_Euskotren_TD2000_graphics.pnml"
+#include "src/Electric/Chile_Ingeteam_Euskotren_TD2000_item.pnml"
 
 #include "src/Electric/UK_London_1903_Stock_graphics.pnml"
 #include "src/Electric/UK_London_1903_Stock_item.pnml"

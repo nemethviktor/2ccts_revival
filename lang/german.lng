@@ -742,6 +742,10 @@ str_diesel_usa_up_emd_dda40x                                      :UP EMD DDA40X
 # str_diesel_germany_lkm_v_180                                      : not translated
 # str_diesel_sweden_nohab_aa16                                      : not translated
 # str_diesel_germany_lew_v100                                       : not translated
+# str_diesel_poland_fablok_6d                                       : not translated
+# str_diesel_poland_hcp_301d                                        : not translated
+# str_diesel_argentina_rf_615_e                                     : not translated
+# str_diesel_zimbabwe_ee_kerr_vulcan_de2                            : not translated
 
 # Dieselrailbus
 # str_rbd_australia_victorian_railways_aec_rm1                      : not translated
@@ -855,6 +859,7 @@ str_rbd_new_zealand_nzr_rm31                                      :NZR RM31 (Die
 # str_dmu_hungary_mav_hargita_m440                                  : not translated
 # str_dmu_lithuania_rvr_dr1a                                        : not translated
 # str_dmu_netherlands_acme_v200d                                    : not translated
+# str_dmu_switzerland_stadler_flirt                                 : not translated
 # str_mu_mu_wagon_unpowered                                         : not translated
 # str_mu_mu_wagon_powered                                           : not translated
 # str_mu_mu_cargo_wagon_unpowered                                   : not translated
@@ -908,7 +913,7 @@ str_electric_austria_obb_1063                                     :OBB 1063 (Ele
 str_electric_spain_renfe_252                                      :RENFE 252 (Electric, Elektrisch OHLE)
 str_electric_uk_br_92                                             :BR 92 (Electric, Elektrisch Dual-Pickup)
 # str_electric_india_indian_railways_wap_4                          : not translated
-str_electric_germany_db_185_traxx_f140                            :DB 145 TRAXX F140 (Electric, Elektrisch OHLE)
+str_electric_germany_db_185_traxx_f140                            :DB 145 TRAXX F140 (Electric, Elektrisch OHLE, 25kV AC)
 # str_electric_belgium_nmbs_sncb_13_hle                             : not translated
 # str_electric_japan_jr_eh500                                       : not translated
 # str_electric_germany_db_182_es64u_taurus                          : not translated
@@ -1014,6 +1019,13 @@ str_electric_germany_db_185_traxx_f140                            :DB 145 TRAXX 
 # str_electric_netherlands_acme_hs002                               : not translated
 # str_electric_germany_lew_el2                                      : not translated
 # str_electric_poland_pafawag_201e                                  : not translated
+# str_electric_india_hitachi_wag6bc                                 : not translated
+# str_electric_south_africa_toshiba_10e                             : not translated
+# str_electric_south_africa_sar_9e_s1                               : not translated
+# str_electric_morocco_hitachi_e1100                                : not translated
+# str_electric_india_rdso_clw_wam4                                  : not translated
+# str_electric_india_groupement_50_hz_wam_1                         : not translated
+# str_electric_chile_ingeteam_euskotren_td2000                      : not translated
 
 # Electricrailbus
 # str_rbe_switzerland_ab_cfe_3_3                                    : not translated
@@ -1138,6 +1150,7 @@ str_electric_germany_db_185_traxx_f140                            :DB 145 TRAXX 
 # str_emu_poland_pesa_dart_43we                                     : not translated
 # str_cargoemu_japan_jr_freight_m250                                : not translated
 # str_cargoemu_netherlands_acme_cargodd                             : not translated
+# str_cargoemu_japan_jnr_tokaido_shinkansen_concept                 : not translated
 
 # Maglevengine
 # str_mglv_germany_db_182_es64um_mutus                              : not translated

@@ -21,6 +21,7 @@ There is a nightly of sorts on my [Google Drive](https://drive.google.com/file/d
 - Driving Trailers require nightly as of mid April 2026 or thereabouts (or v16 if you're on release versions)
 - Please note that the 'revival' newgrf is not backwards compatible with the original 2cc trains newgrf so you can't hot-swap it in savegames
   - Technically it is possible but it's a major PITA. You'd want to send all your trains to depot (otherwise they'll be stuck perma-unmovably on the tracks), preferably use JGRP and Template replacements, swap the grf, (re)define templates and then manually clone the vehicles to the new templates. It's doable, I tried it, but mightily unpractical.
+  - If you are still interested, here's a video of one of my longplay map conversions -> https://youtu.be/Qijxcduf4as
 
 ### Parameter settings
 

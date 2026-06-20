@@ -51,7 +51,22 @@
     - `ACME Corp. DD CargoEM`
     - `VEB LKM V18`
     - `PESA 43WE 'DART`
-    - `LEW EL2`    
+    - `LEW EL2`
+    - `Pafawag 201E`
+    - `NOHAB AA16`
+    - `LEW V100`
+    - `Fablok 6D`
+    - `HCP 301D`
+    - `Stadler 'Flirt' PowerPack DMU`
+    - `JNR Container Bullet Train Concept`
+    - `Hitachi WAG-6B/C` (from the `Tropical Refurbishment Set`)
+    - `Toshiba 10E` (from the `Tropical Refurbishment Set`)
+    - `GEC 9E` (from the `Tropical Refurbishment Set`)
+    - `Hitachi E1100` (from the `Tropical Refurbishment Set`)
+    - `RDSO/CLW WAM-4` (from the `Tropical Refurbishment Set`)
+    - `Groupement 50 Hz WAM 1` (from the `Tropical Refurbishment Set`)
+    - `Baldwin-Lima-Hamilton RF-615-E` (from the `Tropical Refurbishment Set`)
+    - `EE/Dick, Kerr & Co/Vulcan Foundry DE2` (from the `Tropical Refurbishment Set`)    
     - Added some future trains from the Dutch Trainset.
     - Added some of the maglevs from the original OpenTTD game.
   Further changes from Discord discussion: [most of these have been amended but not 100%. the below is a copypaste of suggestions]

@@ -742,6 +742,10 @@ str_diesel_usa_amtrak_charger                                     :Amtrak Charge
 # str_diesel_germany_lkm_v_180                                      : not translated
 # str_diesel_sweden_nohab_aa16                                      : not translated
 # str_diesel_germany_lew_v100                                       : not translated
+# str_diesel_poland_fablok_6d                                       : not translated
+# str_diesel_poland_hcp_301d                                        : not translated
+# str_diesel_argentina_rf_615_e                                     : not translated
+# str_diesel_zimbabwe_ee_kerr_vulcan_de2                            : not translated
 
 # Dieselrailbus
 str_rbd_australia_victorian_railways_aec_rm1                      :VR AEC RM1 (ferrobús diésel)
@@ -855,6 +859,7 @@ str_dmu_argentina_fcgu_cmm_400_2                                  :FCGU CMM 400-
 # str_dmu_hungary_mav_hargita_m440                                  : not translated
 # str_dmu_lithuania_rvr_dr1a                                        : not translated
 # str_dmu_netherlands_acme_v200d                                    : not translated
+# str_dmu_switzerland_stadler_flirt                                 : not translated
 str_mu_mu_wagon_unpowered                                         :Coche de automotor (remolque)
 str_mu_mu_wagon_powered                                           :Coche de automotor (motriz)
 str_mu_mu_cargo_wagon_unpowered                                   :Vagón de carga de automotor (remolque)
@@ -904,11 +909,11 @@ str_electric_russia_rzd_vl15                                      :RZD VL15 (Ele
 str_electric_china_china_railways_6k                              :CR 6K (Electric, Eléctrica 25kV AC)
 str_electric_france_sncf_bb_26000                                 :SNCF BB 26000 (Electric, Eléctrica OHLE)
 str_electric_china_china_railways_ss6                             :CR SS6 (Electric, Eléctrica 25kV AC)
-str_electric_switzerland_sbb_re460_lok_2000                       :SBB Re460 'Lok 2000' (Electric, Eléctrica 25kV AC, 15kV AC)
+str_electric_switzerland_sbb_re460_lok_2000                       :SBB Re460 'Lok 2000' (Electric, Eléctrica 25kV AC, 15kV AC, 3kV DC)
 str_electric_spain_renfe_252                                      :RENFE 252 (Electric, Eléctrica OHLE)
 str_electric_uk_br_92                                             :BR 92 (Electric, Eléctrica Dual-Pickup)
 str_electric_india_indian_railways_wap_4                          :IR WAP-4 (Electric, Eléctrica 25kV AC)
-str_electric_germany_db_185_traxx_f140                            :DB 185 TRAXX F140 (Electric, Eléctrica OHLE)
+str_electric_germany_db_185_traxx_f140                            :DB 185 TRAXX F140 (Electric, Eléctrica OHLE, 25kV AC)
 str_electric_belgium_nmbs_sncb_13_hle                             :NMBS/SNCB 13 HLE (Electric, Eléctrica OHLE)
 str_electric_japan_jr_eh500                                       :JR EH500 (Electric, Eléctrica OHLE)
 str_electric_germany_db_182_es64u_taurus                          :DB 182 ES64U 'Taurus' (Electric, Eléctrica OHLE)
@@ -1014,6 +1019,13 @@ str_electric_germany_prussian_es_6                                :K.P.St.E. ES 
 # str_electric_netherlands_acme_hs002                               : not translated
 # str_electric_germany_lew_el2                                      : not translated
 # str_electric_poland_pafawag_201e                                  : not translated
+# str_electric_india_hitachi_wag6bc                                 : not translated
+# str_electric_south_africa_toshiba_10e                             : not translated
+# str_electric_south_africa_sar_9e_s1                               : not translated
+# str_electric_morocco_hitachi_e1100                                : not translated
+# str_electric_india_rdso_clw_wam4                                  : not translated
+# str_electric_india_groupement_50_hz_wam_1                         : not translated
+# str_electric_chile_ingeteam_euskotren_td2000                      : not translated
 
 # Electricrailbus
 str_rbe_switzerland_ab_cfe_3_3                                    :AB CFe 3/3 (ferrobús eléctrico, Eléctrica 1500V DC)
@@ -1075,7 +1087,7 @@ str_emu_norway_nsb_bm73                                           :NSB BM73 (aut
 str_emu_czech_republic_cd_680_pendolino                           :CD 680 'Pendolino' (automotor eléctrico, Eléctrica OHLE)
 str_emu_finland_vr_sm4                                            :VR Sm4 (automotor eléctrico, Eléctrica OHLE)
 str_emu_luxembourg_cfl_2200_coradia_duplex                        :CFL 2200 'Coradia Duplex' (automotor eléctrico, Eléctrica OHLE)
-str_emu_germany_db_403_ice_3                                      :DB 403 'ICE3' (automotor eléctrico, Eléctrica 15kV AC)
+str_emu_germany_db_403_ice_3                                      :DB 403 'ICE3' (automotor eléctrico, Eléctrica 25kV AC, 15kV AC, 3kV DC)
 str_emu_spain_renfe_120                                           :RENFE 120 (automotor eléctrico, Eléctrica OHLE)
 str_emu_switzerland_sbb_rabe_523_flirt                            :SBB RABe 523 'Flirt' (automotor eléctrico, Eléctrica 15kV AC, 3kV DC, 25kV AC)
 str_emu_bulgaria_bdz_10_desiro                                    :BDZ 10 'Desiro' (automotor eléctrico, Eléctrica 25kV AC)
@@ -1138,6 +1150,7 @@ str_emu_europe_sureot                                             :Sureot (autom
 # str_emu_poland_pesa_dart_43we                                     : not translated
 # str_cargoemu_japan_jr_freight_m250                                : not translated
 # str_cargoemu_netherlands_acme_cargodd                             : not translated
+# str_cargoemu_japan_jnr_tokaido_shinkansen_concept                 : not translated
 
 # Maglevengine
 # str_mglv_germany_db_182_es64um_mutus                              : not translated

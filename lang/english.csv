@@ -446,7 +446,7 @@ str_rbs_austria_kkstb_4_0,KkStB 4.0
 str_rbs_gemany_hessian_ludwig_railway_type_thomas,Esslingen/MAN/Hohenzollern 'Thomas'
 str_rbs_austria_nolb_30_33,Komarek NOLB 30-33
 str_rbd_australia_victorian_railways_aec_rm1,AEC railmotor RM1
-str_rbd_germany_db_vt_133,Wismar railbus
+str_rbd_germany_db_vt_133,VT133 Wismar Railcar
 str_rbd_united_kingdom_gwr_aec_railcar,AEC Railcar
 str_rbd_austria_obb_5042,Simmering VT42
 str_rbd_new_zealand_nzr_rm31,Hutt RM31
@@ -531,7 +531,7 @@ str_steam_france_sncf_140c,Schneider et Cie 140C
 str_steam_france_sncf_141ta,Union Gießerei 2-8-2T
 str_steam_uk_gwr_4900,GWR 4900 'Hall'
 str_steam_uk_gwr_5700,GWR 5700 'Pannier'
-str_steam_netherlands_ns_6300,Henschel & Sohn 6301-6322
+str_steam_netherlands_ns_6300,Henschel & Sohn series 6300
 str_steam_usa_at_sf_5000,Baldwin 5000 'Madame Queen'
 str_steam_germany_prussian_s10,Schwartzkopff S 10 'Prussian'
 str_steam_uk_lms_5mt_black_five,LMS 5MT 'Black Five'
@@ -544,10 +544,10 @@ str_steam_uk_lner_a1_peppercorn,Doncaster/Darlington 'Peppercorn'
 str_steam_south_africa_sar_25,Henschel & Son 'Condenser'
 str_steam_russia_rzd_p36,Kolomena P36
 str_steam_france_sncf_150b,ANF/DEL 150B
-str_steam_italy_fs_895,HenscheL 895
+str_steam_italy_fs_895,Henschel 895
 str_steam_poland_pkp_okz32,H. Cegielski OKz32
 str_steam_switzerland_sbb_c_5_6,SLM C 5/6 'Elephant'
-str_steam_usa_up_4000_big_boy,ALCO 4-8-8-4 'Big Boy'
+str_steam_usa_up_4000_big_boy,ALCO series 4000 4-8-8-4 'Big Boy'
 str_steam_netherlands_nrs_11,Sharp Stewart 3557-3565
 str_steam_uk_gwr_iron_duke_class,GWR Iron Duke
 str_steam_australia_sidney_railway_locomotive_no1,Stephenson 0-4-2 'Locomotive No.1'
@@ -632,7 +632,7 @@ str_diesel_usa_cnj_alco_ge_ir_boxcab,CNJ ALCo-GE-IR Boxcab 100T
 str_diesel_netherlands_ns_200,Werkspoor 200 'Sik'
 str_diesel_germany_db_270,BMAG 'WR 200 B 14'
 str_diesel_switzerland_sbb_am_4_6,BBC/SLM Am 4/6
-str_diesel_australia_nswgr_79,GE 44-ton switcher 17938
+str_diesel_australia_nswgr_79,GE 44-ton switcher
 str_diesel_usa_western_pacific_alco_s_2,ALCO S-2
 str_diesel_usa_at_sf_emd_f3,EMD F3
 str_diesel_usa_up_emd_e8,EMD E8
@@ -646,12 +646,12 @@ str_diesel_austria_obb_2060,Jenbacher Werke 2060
 str_diesel_canada_cnr_sw1200,EMD SW1200
 str_diesel_canada_via_rail_fp9,EMD FP9
 str_diesel_hungary_mav_m44,Ganz-MAVAG DVM2 'M44'
-str_diesel_hungary_mav_m28,Raba M28 'Nyünyüke'
+str_diesel_hungary_mav_m28,Raba M 030 'M28 Nyünyüke'
 str_diesel_belgium_nmbs_sncb_83,Cockerill-Sambre HLD série 83
 str_diesel_germany_db_220,Krauss-Maffei V200
 str_diesel_usa_amtrak_fl9,EMD FL9
 str_diesel_czech_republic_cd_720_chme2,CKD T 435.0
-str_diesel_finland_vr_dr12,Valmet / Lokomo 2200-2241 'Dr12'
+str_diesel_finland_vr_dr12,Valmet/Lokomo Dr12
 str_diesel_romania_cfr_060_da,Electroputre 060-DA
 str_diesel_brazil_bf_emd_gl8,EMD GL8
 str_diesel_brazil_efvm_ml4000,Krauss-Maffei ML 4000
@@ -663,10 +663,10 @@ str_diesel_uk_br_14,BR 14 0-6-0DH
 str_diesel_russia_rzd_chme3,CKD T-669
 str_diesel_argentina_mf_gm_emd_j16cw_ac,UGOFE GM-EMD J16CW/AC
 str_diesel_russia_rzd_m62,LTZ M62
-str_diesel_australia_nswgr_422,EMD/Clyde J26C 69-656
+str_diesel_australia_nswgr_422,EMD/Clyde J26C
 str_diesel_egypt_enr_g22w,GE G22W
 str_diesel_usa_up_emd_dda40x,EMD DDA40X
-str_diesel_australia_queensland_rail_2100,EMD/Clyde GL26C 70-711
+str_diesel_australia_queensland_rail_2100,EMD/Clyde GL26C
 str_diesel_croatia_hz_2062,EMD G26
 str_diesel_sweden_sj_v4,Henschel TGOJ V4
 str_diesel_canada_cnr_mlw_m420w,MLW M420W
@@ -676,7 +676,7 @@ str_diesel_panama_panama_canal_railway_emd_f40ph,EMD F40PH
 str_diesel_portugal_cp_1900,Sorefame/Alsthom 1900
 str_diesel_finland_vr_dr16,Valmet Oy Dr16
 str_diesel_russia_rzd_tep80,Kolomena TEP80
-str_diesel_australia_australian_national_an,EMD/Clyde JT46C 92-1297
+str_diesel_australia_australian_national_an,EMD/Clyde JT46C
 str_diesel_usa_amtrak_p42dc_genesis,GE P42DC 'Genesis'
 str_diesel_turkey_tcdd_dh7000,Tulomsas TCDD DH7000
 str_diesel_argentina_mf_ge_u20c,GE U20C
@@ -703,11 +703,11 @@ str_diesel_ireland_cie_113,CIE 113
 str_diesel_brazil_efc_3300_baldwin_as_616,Baldwin AS-616
 str_diesel_mexico_chp_500_fm_h_16_44,FM H-16-44
 str_diesel_australia_south_australian_railways_900,Islington Railway Workshops SAR 900
-str_diesel_sri_lanka_sri_lanka_railways_m2,EMD G12 A608-A609 'M2'
+str_diesel_sri_lanka_sri_lanka_railways_m2,EMD G12 A608 'M2'
 str_diesel_ireland_cie_001,Metropolitan-Vickers/CIE 001
 str_diesel_italy_fs_d341,Fiat Grandi Motori D.341
-str_diesel_australia_nswgr_44,ALCO DL-500B 82807
-str_diesel_zimbabwe_zimbabwe_railways_dh_1,Henschel DH-1420 29745-29751
+str_diesel_australia_nswgr_44,ALCO/AE Goodwin DL-500B
+str_diesel_zimbabwe_zimbabwe_railways_dh_1,Henschel DH-1420
 str_diesel_south_korea_korail_6000_emd_sd18,EMD SD18
 str_diesel_italy_fs_d345,Fiat Grandi Motori D.345
 str_diesel_norway_nsb_di4,Henschel Di4
@@ -875,7 +875,7 @@ str_electric_sweden_mtab_dm3,ASEA Dm3
 str_electric_sweden_mtab_iore,Bombardier Traxx H80 AC
 str_electric_sweden_sj_o_class,Siemens Oa
 str_electric_sweden_sj_f_class,ASEA F
-str_electric_norway_nsb_el17,Thyssen-Henschel EL17 H.32467-H.32472
+str_electric_norway_nsb_el17,Thyssen-Henschel EL17
 str_electric_germany_prussian_es_6,Borsig/SSW ES 6
 str_electric_usa_virginian_railway_el_2b,GE EL-2B
 str_electric_usa_gn_w_1,GE W-1
@@ -888,8 +888,8 @@ str_electric_china_china_railways_hxd1d,Toshiba/CRRC HXD1D
 str_electric_china_china_railways_6k,Kawasaki 6K
 str_electric_usa_prr_e44,GE E44
 str_electric_croatia_hz_1141,ASEA/Koncar Rb
-str_electric_hungary_mav_class_v43,Ganz-MAVAG V43
-str_electric_portugal_cp_2500,Alsthom CP2500
+str_electric_hungary_mav_class_v43,Ganz-MAVAG VM14 'V43'
+str_electric_portugal_cp_2500,Alsthom CP 2500
 str_electric_portugal_cp_2600,Alsthom CP 2600
 str_electric_south_africa_sar_20e,ZELC 20E 'China Doll'
 str_electric_south_korea_korail_8200,Siemens EuroSprinter ES64F
@@ -912,7 +912,7 @@ str_electric_usa_amtrak_emd_aem_7,ASEA-EMD AEM-7
 str_electric_usa_amtrak_hhp_8,Bombardier-Alstom HHP-8
 str_electric_czech_republic_cd_380,Skoda 109E
 str_electric_spain_renfe_252,CAF/Macosa 252
-str_electric_germany_db_185_traxx_f140,Bombardier Traxx F140 AC1
+str_electric_germany_db_185_traxx_f140,Bombardier Traxx F140 MS
 str_electric_italy_fs_e550,TIBB E.550
 str_electric_japan_jnr_ef81,Hitachi EF81
 str_electric_uk_br_92,ABB/Brush Class 92
@@ -1039,7 +1039,7 @@ str_emu_germany_db_403_ice_3,Siemens Velero
 str_emu_bulgaria_bdz_10_desiro,Siemens Desiro BDZ
 str_emu_finland_vr_sm2,Valmet Sm2
 str_emu_finland_vr_sm4,Fiat/CAF Sm4
-str_emu_hungary_mav_bdvmot,Ganz-MAVAG BDVmot
+str_emu_hungary_mav_bdvmot,Ganz-MAVAG VM17 'BDVmot'
 str_emu_europe_sureot,ACME Corp. Sureot
 str_emu_japan_jnr_shinkansen_series_0,Hitachi Shinkansen Series 0
 str_emu_japan_jr_shinkansen_series_700,Hitachi Shinkansen Series 700
@@ -1243,7 +1243,7 @@ str_mu_wagon_gen4_livestock_van,4th Gen Livestock Van
 str_mu_wagon_gen5_livestock_van,5th Gen Livestock Van
 str_mu_wagon_gen6_livestock_van,6th Gen Livestock Van
 str_mglv_Wagon_Gen7M_livestock_van,7th Gen Livestock Van
-str_electric_hungary_mav_class_v63,Ganz-MAVAG V63
+str_electric_hungary_mav_class_v63,Ganz-MAVAG VM15 'V63'
 str_mtro_uk_london_1992_stock,BREL/ABB London 1992 Stock
 str_mtro_uk_london_s_stock,Bombardier Movia London S Stock
 str_mu_wagon_gen7m_livestock_van,7th Gen Livestock Van
@@ -1302,11 +1302,11 @@ str_electric_australia_sra_8650,Comeng Maldon-Dombarton '8650'
 str_diesel_australia_ira_dsb_mz_iii,EMD/NOHAB J30C-2DSB MZ III
 str_diesel_australia_commonwealth_twin_16_645,EMD/Clyde AT26C 'Twin 16-645'
 str_diesel_australia_qr_2170,EMD/Clyde GL26C-2
-str_diesel_australia_tgr_z,EEC A.249 - A.252
-str_diesel_australia_qr_2350,EEC A.253 - A.258
-str_diesel_new_zealand_dx_class,GE U26C NZR DX
-str_electric_australia_nsw_46,Metrowick/BP 786-825
-str_diesel_australia_nsw_40,ALCO RSC-3 77732-77751
+str_diesel_australia_tgr_z,EEC A.249
+str_diesel_australia_qr_2350,EEC A.253
+str_diesel_new_zealand_dx_class,GE U26C
+str_electric_australia_nsw_46,Metrowick/BP 786
+str_diesel_australia_nsw_40,ALCO RSC-3 77732
 str_diesel_australia_nsw_49,EMD/Clyde G8C
 str_diesel_new_zealand_da_class,EMD/Clyde G12
 str_diesel_new_zealand_db_class,EMD/Clyde G8
@@ -1430,3 +1430,16 @@ str_electric_germany_lew_el2,LEW EL2
 str_electric_poland_pafawag_201e,Pafawag 201E
 str_diesel_sweden_nohab_aa16,NOHAB AA16
 str_diesel_germany_lew_v100,LEW V100
+str_diesel_poland_fablok_6d,Fablok 6D
+str_diesel_poland_hcp_301d,HCP 301D
+str_dmu_switzerland_stadler_flirt,Stadler 'Flirt' PowerPack DMU
+str_cargoemu_japan_jnr_tokaido_shinkansen_concept,JNR Container Bullet Train Concept
+str_electric_india_hitachi_wag6bc,Hitachi WAG-6B/C
+str_electric_south_africa_toshiba_10e,Toshiba 10E
+str_electric_south_africa_sar_9e_s1,GEC 9E
+str_electric_morocco_hitachi_e1100,Hitachi E1100
+str_electric_india_rdso_clw_wam4,RDSO/CLW WAM-4
+str_electric_india_groupement_50_hz_wam_1,Groupement 50 Hz WAM 1
+str_diesel_argentina_rf_615_e,Baldwin-Lima-Hamilton RF-615-E
+str_diesel_zimbabwe_ee_kerr_vulcan_de2,"EE/Dick, Kerr & Co/Vulcan Foundry DE2"
+str_electric_chile_ingeteam_euskotren_td2000,Ingeteam Euskotren TD2000 series
