@@ -1,0 +1,66 @@
+
+//  Copyright (C) 2017 Transportman // V. Nemeth 2026+
+//  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
+
+
+// Template: TPL_01A.
+// Data from: nan
+
+// Notes:
+//// POWER: 18875 -- ($14,000\text{ kW}$) Roughly double a standard Taurus. You need this to maintain $300\text{ km/h}$ with a heavy trailing load
+//// SPEED: 250 -- Rather than something higher to keep more or less within the realm of physics
+//// TE_STARTING_KN: 600 -- Since you have "infinite" magnetic grip, you can apply massive force to get heavy cars moving.
+
+
+item(FEAT_TRAINS, item_mglv_siemens_eurosprinter_es64u4m) {
+    property {
+        name: string(str_mglv_siemens_eurosprinter_es64u4m);
+        climates_available: ((param_region_western_europe || 0) && param_concept) ? ALL_CLIMATES : NO_CLIMATE;
+        introduction_date: date(2005,1,1);
+        model_life: VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 45;
+        retire_early: 20;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
+        cost_factor: 149.47717;
+        running_cost_factor: 139.84307;
+        speed: 250 km/h;
+        power: 18875 hp;
+        cargo_capacity: 0;
+        weight: 90 ton;
+        tractive_effort_coefficient: 0.68;
+        air_drag_coefficient: 0;
+
+        reliability_decay: 20;
+        // cargodeftype: NONE;
+        refittable_cargo_classes: bitmask(NO_CARGO_CLASS);
+        
+        cargo_age_period: 185;
+        misc_flags: bitmask(TRAIN_FLAG_2CC);
+        refit_cost: 0;
+        ai_special_flag: AI_FLAG_PASSENGER | AI_FLAG_CARGO;
+        track_type: [MGLV];
+        running_cost_base: RUNNING_COST_ELECTRIC;
+        engine_class: ENGINE_CLASS_MAGLEV;
+        visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+
+        sprite_id: SPRITE_ID_NEW_TRAIN;
+        dual_headed: 0;
+        length: 8;
+        extra_power_per_wagon: 0;
+        bitmask_vehicle_info: 0;
+
+	badges: ["region/europe/western", "power/maglev", "role/express"];
+
+    }
+    graphics {
+        purchase: spriteset_mglv_siemens_eurosprinter_es64u4m_purchase;
+        // no 'visual_effect' or 'visual_effect_and_powered'
+        // no 'length'
+        // no 'articulated_part'
+        can_attach_wagon: switch_can_attach_vehicle;
+        // Add calls to defined switches below
+        // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
+        // PURCHASETEXT_SWITCH_CALL // this is actually blank
+        default: spriteset_mglv_siemens_eurosprinter_es64u4m;
+    }
+}

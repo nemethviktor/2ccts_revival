@@ -1,0 +1,88 @@
+
+//  Copyright (C) 2017 Transportman // V. Nemeth 2026+
+//  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
+
+
+// Template: TPL_42B.
+// Data from: https://note.com/jnr_era/n/nc2246eb31f4b?hl=en
+
+// Notes:
+//// WEB: https://note.com/jnr_era/n/nc2246eb31f4b?hl=en -- No actual real details though
+//// WEIGHT: =51/2 -- Per car Mc unit // guess
+//// POWER: 1800 -- guess
+//// SPEED: 100 -- guess
+
+
+item(FEAT_TRAINS, item_cargoemu_jnr_container_bullet_train_concept) {
+    property {
+        name: string(str_cargoemu_jnr_container_bullet_train_concept);
+        climates_available: ((param_region_asia || 0) && param_concept) ? ALL_CLIMATES : NO_CLIMATE;
+        introduction_date: date(1960,1,1);
+        model_life: 45;
+        vehicle_life: 40;
+        retire_early: 20;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
+        cost_factor: 49.88543;
+        running_cost_factor: 46.92235;
+        speed: 100 km/h;
+        power: 1800 hp;
+        cargo_capacity: 60;
+        weight: 25 ton;
+        tractive_effort_coefficient: 0.196;
+        air_drag_coefficient: 0;
+
+        reliability_decay: 20;
+        // cargodeftype: CONTAINER;
+        refittable_cargo_classes: bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_REFRIGERATED, CC_POTABLE);
+        non_refittable_cargo_classes: 0;
+        cargo_allow_refit: [GOOD, PAPR, FOOD, RUBR, FRUT, WATR, TOYS, BATT, SWET, COLA, BUBL, PLST, FZDR, BEER, BDMT, BRCK, CERA, CERE, COPR, DYES, ENSP, FERT, FICR, FISH, FMSP, GLAS, JAVA, MILK, MNSP, PETR, PLAS, RCYC, RFPR, VPTS, WDPR, WOOL, URAN];
+        cargo_disallow_refit: [PASS, MAIL, TOUR, COAL, OIL_, LVST, GRAI, WOOD, IORE, STEL, VALU, WHEA, GOLD, MAIZ, CORE, DIAM, SUGR, TOFF, CTCD, AORE, CLAY, CMNT, GRVL, LIME, OLSD, POTA, SAND, SCMT, SGBT, SGCN, SULP, VEHI, YETI, YETY];
+        
+        cargo_age_period: 185;
+        misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
+        refit_cost: 0;
+        ai_special_flag: AI_FLAG_PASSENGER | AI_FLAG_CARGO;
+        track_type: [NARROW_GAUGE_RAILTYPE_1500V];
+        running_cost_base: RUNNING_COST_ELECTRIC;
+        engine_class: ENGINE_CLASS_ELECTRIC;
+        visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
+
+        sprite_id: SPRITE_ID_NEW_TRAIN;
+        dual_headed: 1;
+        length: 8;
+        extra_power_per_wagon: 0;
+        bitmask_vehicle_info: 0;
+
+	badges: ["region/asia", "power/electric/dc", "role/freight"];
+
+    }
+    graphics {
+        purchase: spriteset_cargoemu_jnr_container_bullet_train_concept_purchase;
+        visual_effect_and_powered: switch_cargoemu_jnr_container_bullet_train_concept_visual_effect_and_powered;
+        // no 'length'
+        // no 'articulated_part'
+        can_attach_wagon: switch_can_attach_vehicle;
+        // Add calls to defined switches below
+        // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
+        // PURCHASETEXT_SWITCH_CALL // this is actually blank
+        default: spritegroup_cargoemu_jnr_container_bullet_train_concept_engine1_l1;
+    }
+    livery_override (item_mu_mu_cargo_wagon_unpowered) {
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
+        running_cost_factor: int(100/10);
+        weight: int(25*1/2);
+        cargo_capacity: 60;
+        length: 8;
+        default: switch_cargoemu_jnr_container_bullet_train_concept_wagon_logic;
+    }
+    livery_override (item_mu_mu_cargo_wagon_powered) {
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
+        running_cost_factor: (round(19.240640705777896));
+        power: int(1800*1/2);
+        weight: int(25*3/4);
+        cargo_capacity: 60;
+        tractive_effort_coefficient: int(0.196*10*25);
+        length: 8;
+        default: switch_cargoemu_jnr_container_bullet_train_concept_wagon_logic;
+    }
+}

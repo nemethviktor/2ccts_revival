@@ -1,0 +1,53 @@
+//  Copyright (C) 2017 Transportman // V. Nemeth 2026+
+//  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
+
+// Template: TPL_02A
+
+// PURCHASE
+spriteset(spriteset_emu_tangara_v_set_hybrid_concept_purchase, "gfx/emu/tangara_v_set_hybrid_concept.png") {template_purchase_dualheaded(1, 128)}
+
+
+// VEHICLE
+/// Front
+spriteset(spriteset_emu_tangara_v_set_hybrid_concept_front, "gfx/emu/tangara_v_set_hybrid_concept.png") {template_2cc_engines_general(1, 1)}
+
+
+// VEHICLE
+/// Back
+spriteset(spriteset_emu_tangara_v_set_hybrid_concept_back, "gfx/emu/tangara_v_set_hybrid_concept.png") {template_2cc_engines_general(1, 32)}
+
+
+/// MIDDLEPASS
+spriteset(spriteset_emu_tangara_v_set_hybrid_concept_middlepass, "gfx/emu/tangara_v_set_hybrid_concept.png") {template_2cc_engines_general(1, 64)}
+
+
+/// MIDDLEMAIL
+spriteset(spriteset_emu_tangara_v_set_hybrid_concept_middlemail, "gfx/emu/tangara_v_set_hybrid_concept.png") {template_2cc_engines_general(1, 96)}
+
+
+/// Dualheaded (reverse switch)
+/// In the context of var[0xC8] (which is the variable for "position in consist"):
+/// 0xFE: The very first vehicle in the train (The Engine/Front).
+/// 0xFF: The very last vehicle in the train (The Caboose/End).
+switch(FEAT_TRAINS, SELF, switch_emu_tangara_v_set_hybrid_concept_reversed, var[0xC8]) {
+    0xFE: spriteset_emu_tangara_v_set_hybrid_concept_back;
+    0xFF: spriteset_emu_tangara_v_set_hybrid_concept_back;
+    spriteset_emu_tangara_v_set_hybrid_concept_front;
+}
+
+// Visual effect and power management
+// Position-based logic: ENDS
+/// In the context of var[0xC8] (which is the variable for "position in consist"):
+/// 0xFE: The very first vehicle in the train (The Engine/Front).
+/// 0xFF: The very last vehicle in the train (The Caboose/End).
+switch(FEAT_TRAINS, SELF, switch_emu_tangara_v_set_hybrid_concept_visual_effect_and_powered, var[0xC8]) {
+    0xFE: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, -3, DISABLE_WAGON_POWER);
+    0xFF: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, -3, DISABLE_WAGON_POWER);
+    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+/// Graphics for the unit wagon based on cargo class
+switch(FEAT_TRAINS, SELF, switch_emu_tangara_v_set_hybrid_concept_cargo_selection, cargo_classes){
+	bitmask(CC_PASSENGERS): spriteset_emu_tangara_v_set_hybrid_concept_middlepass;
+	spriteset_emu_tangara_v_set_hybrid_concept_middlemail;
+}

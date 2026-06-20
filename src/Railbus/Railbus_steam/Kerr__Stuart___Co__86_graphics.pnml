@@ -1,0 +1,23 @@
+//  Copyright (C) 2017 Transportman // V. Nemeth 2026+
+//  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
+
+// Template: TPL_03B
+
+// PURCHASE
+spriteset(spriteset_rbs_kerr__stuart___co__86_purchase, "gfx/railbus/railbus_steam/kerr__stuart___co__86.png") {template_purchase(1, 64)}
+
+
+// VEHICLE
+/// Engine1
+spriteset(spriteset_rbs_kerr__stuart___co__86_engine1, "gfx/railbus/railbus_steam/kerr__stuart___co__86.png") {template_2cc_engines_general(1, 1)}
+
+
+/// Engine2
+spriteset(spriteset_rbs_kerr__stuart___co__86_engine2, "gfx/railbus/railbus_steam/kerr__stuart___co__86.png") {template_2cc_engines_general(1, 32)}
+
+
+/// Animation states (animation)
+switch(FEAT_TRAINS, SELF, switch_rbs_kerr__stuart___co__86_animation, motion_counter % 2){
+	0: spriteset_rbs_kerr__stuart___co__86_engine1;
+	spriteset_rbs_kerr__stuart___co__86_engine2;
+}

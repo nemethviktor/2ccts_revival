@@ -1,0 +1,12 @@
+//  Copyright (C) 2017 Transportman // V. Nemeth 2026+
+//  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
+
+// Template: TPL_01E
+
+// PURCHASE
+spriteset(spriteset_singlemtro_chicago_l_northwest_elevated_1907_stock_purchase, "gfx/single_metro/chicago_l_northwest_elevated_1907_stock.png") {template_purchase(1, 128)}
+
+
+// VEHICLE
+/// Engine
+spriteset(spriteset_singlemtro_chicago_l_northwest_elevated_1907_stock, "gfx/single_metro/chicago_l_northwest_elevated_1907_stock.png") {template_2cc_railbus_general(1, 1)}

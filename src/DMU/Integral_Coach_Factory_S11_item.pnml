@@ -1,0 +1,94 @@
+
+//  Copyright (C) 2017 Transportman // V. Nemeth 2026+
+//  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
+
+
+// Template: TPL_02A.
+// Data from: https://en.wikipedia.org/wiki/Sri_Lanka_Railways_S11#Current_fleet_specifications
+
+// Cargo capacity
+
+    switch(FEAT_TRAINS, SELF, switch_dmu_integral_coach_factory_s11_capacity_engine, cargo_classes) { \
+        bitmask(CC_MAIL): 20/2; \
+        bitmask(CC_ARMOURED): 20/4; \
+        20; \
+    }
+
+
+    switch(FEAT_TRAINS, SELF, switch_dmu_integral_coach_factory_s11_capacity_wagon, cargo_classes) { \
+        bitmask(CC_MAIL): 71/2; \
+        bitmask(CC_ARMOURED): 71/4; \
+        71; \
+    }
+
+item(FEAT_TRAINS, item_dmu_integral_coach_factory_s11) {
+    property {
+        name: string(str_dmu_integral_coach_factory_s11);
+        climates_available: ((param_region_asia || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
+        introduction_date: date(2011,1,1);
+        model_life: VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 25;
+        retire_early: 0;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        cost_factor: 42.74213;
+        running_cost_factor: 40.31144;
+        speed: 110 km/h;
+        power: 1360 hp;
+        cargo_capacity: 20;
+        weight: 20 ton;
+        tractive_effort_coefficient: 0.357;
+        air_drag_coefficient: 0;
+
+        reliability_decay: 20;
+        // cargodeftype: PASSENGERS;
+        refittable_cargo_classes: bitmask(CC_PASSENGERS, CC_MAIL);
+        non_refittable_cargo_classes: 0;
+        cargo_age_period: 185;
+        misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
+        refit_cost: 0;
+        ai_special_flag: AI_FLAG_PASSENGER | AI_FLAG_CARGO;
+        track_type: [BROAD_GAUGE_RAILTYPE_NONE];
+        running_cost_base: RUNNING_COST_DIESEL;
+        engine_class: ENGINE_CLASS_DIESEL;
+        visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+
+        sprite_id: SPRITE_ID_NEW_TRAIN;
+        dual_headed: 1;
+        length: 8;
+        extra_power_per_wagon: 0;
+        bitmask_vehicle_info: 0;
+
+	badges: ["region/asia", "role/coach__commuter_"];
+
+    }
+    graphics {
+        purchase: spriteset_dmu_integral_coach_factory_s11_purchase;
+        cargo_capacity: switch_dmu_integral_coach_factory_s11_capacity_engine;
+        visual_effect_and_powered: switch_dmu_integral_coach_factory_s11_visual_effect_and_powered;
+        // no 'length'
+        // no 'articulated_part'
+        // no 'can_attach'
+        // Add calls to defined switches below
+        // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
+        // PURCHASETEXT_SWITCH_CALL // this is actually blank
+        default: switch_dmu_integral_coach_factory_s11_reversed;
+    }
+    livery_override (item_mu_mu_wagon_unpowered) {
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        running_cost_factor: int(110/10);
+        weight: int(20*1/2);
+        cargo_capacity: 71;
+        length: 8;
+        default: switch_dmu_integral_coach_factory_s11_cargo_selection;
+    }
+    livery_override (item_mu_mu_wagon_powered) {
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        running_cost_factor: (round(21.827817829729362));
+        power: int(1360*1/2);
+        weight: int(20*3/4);
+        cargo_capacity: 71;
+        tractive_effort_coefficient: int(0.357*10*20);
+        length: 8;
+        default: switch_dmu_integral_coach_factory_s11_cargo_selection;
+    }
+}

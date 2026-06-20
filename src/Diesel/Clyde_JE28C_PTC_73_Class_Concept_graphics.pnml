@@ -1,0 +1,12 @@
+//  Copyright (C) 2017 Transportman // V. Nemeth 2026+
+//  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
+
+// Template: TPL_01A
+
+// PURCHASE
+spriteset(spriteset_diesel_clyde_je28c_ptc_73_class_concept_purchase, "gfx/diesel/clyde_je28c_ptc_73_class_concept.png") {template_purchase(1, 64)}
+
+
+// VEHICLE
+/// Engine
+spriteset(spriteset_diesel_clyde_je28c_ptc_73_class_concept, "gfx/diesel/clyde_je28c_ptc_73_class_concept.png") {template_2cc_engines_general(1, 1)}

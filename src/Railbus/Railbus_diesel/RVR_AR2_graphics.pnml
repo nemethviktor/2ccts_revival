@@ -1,0 +1,12 @@
+//  Copyright (C) 2017 Transportman // V. Nemeth 2026+
+//  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
+
+// Template: TPL_01B
+
+// PURCHASE
+spriteset(spriteset_rbd_rvr_ar2_purchase, "gfx/railbus/railbus_diesel/rvr_ar2.png") {template_purchase(1, 32)}
+
+
+// VEHICLE
+/// Engine
+spriteset(spriteset_rbd_rvr_ar2, "gfx/railbus/railbus_diesel/rvr_ar2.png") {template_2cc_engines_general(1, 1)}

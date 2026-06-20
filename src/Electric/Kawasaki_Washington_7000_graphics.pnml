@@ -1,0 +1,32 @@
+//  Copyright (C) 2017 Transportman // V. Nemeth 2026+
+//  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
+
+// Template: TPL_02C
+
+// PURCHASE
+spriteset(spriteset_mtro_kawasaki_washington_7000_purchase, "gfx/electric/kawasaki_washington_7000.png") {template_purchase_dualheaded(1, 96)}
+
+
+// VEHICLE
+/// Front
+spriteset(spriteset_mtro_kawasaki_washington_7000_front, "gfx/electric/kawasaki_washington_7000.png") {template_2cc_engines_general(1, 1)}
+
+
+// VEHICLE
+/// Back
+spriteset(spriteset_mtro_kawasaki_washington_7000_back, "gfx/electric/kawasaki_washington_7000.png") {template_2cc_engines_general(1, 32)}
+
+
+/// MIDDLE
+spriteset(spriteset_mtro_kawasaki_washington_7000_middle, "gfx/electric/kawasaki_washington_7000.png") {template_2cc_engines_general(1, 64)}
+
+
+/// Dualheaded (reverse switch)
+/// In the context of var[0xC8] (which is the variable for "position in consist"):
+/// 0xFE: The very first vehicle in the train (The Engine/Front).
+/// 0xFF: The very last vehicle in the train (The Caboose/End).
+switch(FEAT_TRAINS, SELF, switch_mtro_kawasaki_washington_7000_reversed, var[0xC8]) {
+    0xFE: spriteset_mtro_kawasaki_washington_7000_back;
+    0xFF: spriteset_mtro_kawasaki_washington_7000_back;
+    spriteset_mtro_kawasaki_washington_7000_front;
+}

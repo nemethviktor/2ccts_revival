@@ -1,0 +1,32 @@
+//  Copyright (C) 2017 Transportman // V. Nemeth 2026+
+//  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
+
+// Template: TPL_02C
+
+// PURCHASE
+spriteset(spriteset_mtro_tudh_recife_vlt_mobile_3_purchase, "gfx/electric/tudh_recife_vlt_mobile_3.png") {template_purchase_dualheaded(1, 96)}
+
+
+// VEHICLE
+/// Front
+spriteset(spriteset_mtro_tudh_recife_vlt_mobile_3_front, "gfx/electric/tudh_recife_vlt_mobile_3.png") {template_2cc_engines_general(1, 1)}
+
+
+// VEHICLE
+/// Back
+spriteset(spriteset_mtro_tudh_recife_vlt_mobile_3_back, "gfx/electric/tudh_recife_vlt_mobile_3.png") {template_2cc_engines_general(1, 32)}
+
+
+/// MIDDLE
+spriteset(spriteset_mtro_tudh_recife_vlt_mobile_3_middle, "gfx/electric/tudh_recife_vlt_mobile_3.png") {template_2cc_engines_general(1, 64)}
+
+
+/// Dualheaded (reverse switch)
+/// In the context of var[0xC8] (which is the variable for "position in consist"):
+/// 0xFE: The very first vehicle in the train (The Engine/Front).
+/// 0xFF: The very last vehicle in the train (The Caboose/End).
+switch(FEAT_TRAINS, SELF, switch_mtro_tudh_recife_vlt_mobile_3_reversed, var[0xC8]) {
+    0xFE: spriteset_mtro_tudh_recife_vlt_mobile_3_back;
+    0xFF: spriteset_mtro_tudh_recife_vlt_mobile_3_back;
+    spriteset_mtro_tudh_recife_vlt_mobile_3_front;
+}

@@ -1,0 +1,12 @@
+//  Copyright (C) 2017 Transportman // V. Nemeth 2026+
+//  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
+
+// Template: TPL_01A
+
+// PURCHASE
+spriteset(spriteset_diesel_vossloh_g_2000_bb_purchase, "gfx/diesel/vossloh_g_2000_bb.png") {template_purchase(1, 64)}
+
+
+// VEHICLE
+/// Engine
+spriteset(spriteset_diesel_vossloh_g_2000_bb, "gfx/diesel/vossloh_g_2000_bb.png") {template_2cc_engines_general(1, 1)}

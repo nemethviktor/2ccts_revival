@@ -1,0 +1,101 @@
+
+//  Copyright (C) 2017 Transportman // V. Nemeth 2026+
+//  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
+
+
+// Template: TPL_02D.
+// Data from: https://en.wikipedia.org/wiki/British_Rail_Class_895
+
+// Notes:
+//// INTRODUCTION_YEAR: 2027 -- Per Wikipedia as of 2026/06
+//// WEIGHT: =500/8 -- ETR 1000
+//// POWER: 13400 -- ETR 1000
+//// TE_STARTING_KN: =370/2 -- ETR 1000
+
+
+// Cargo capacity
+
+    switch(FEAT_TRAINS, SELF, switch_emu_hitachi_alstom_zefiro_class_895_hs2_capacity_engine, cargo_classes) { \
+        bitmask(CC_MAIL): 72/2; \
+        bitmask(CC_ARMOURED): 72/4; \
+        72; \
+    }
+
+
+    switch(FEAT_TRAINS, SELF, switch_emu_hitachi_alstom_zefiro_class_895_hs2_capacity_wagon, cargo_classes) { \
+        bitmask(CC_MAIL): 75/2; \
+        bitmask(CC_ARMOURED): 75/4; \
+        75; \
+    }
+
+item(FEAT_TRAINS, item_emu_hitachi_alstom_zefiro_class_895_hs2) {
+    property {
+        name: string(str_emu_hitachi_alstom_zefiro_class_895_hs2);
+        climates_available: ((param_region_northern_europe || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
+        introduction_date: date(2027,1,1);
+        model_life: VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 45;
+        retire_early: 20;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
+        cost_factor: 128.49782;
+        running_cost_factor: 121.48842;
+        speed: 360 km/h;
+        power: 13400 hp;
+        cargo_capacity: 72;
+        weight: 62 ton;
+        tractive_effort_coefficient: 0.302;
+        air_drag_coefficient: 0;
+
+        reliability_decay: 20;
+        // cargodeftype: PASSENGERS;
+        refittable_cargo_classes: bitmask(CC_PASSENGERS, CC_MAIL);
+        non_refittable_cargo_classes: 0;
+        cargo_age_period: 185;
+        misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
+        refit_cost: 0;
+        ai_special_flag: AI_FLAG_PASSENGER | AI_FLAG_CARGO;
+        track_type: [STANDARD_GAUGE_RAILTYPE_25KV];
+        running_cost_base: RUNNING_COST_ELECTRIC;
+        engine_class: ENGINE_CLASS_ELECTRIC;
+        visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
+
+        sprite_id: SPRITE_ID_NEW_TRAIN;
+        dual_headed: 1;
+        length: 8;
+        extra_power_per_wagon: 0;
+        bitmask_vehicle_info: 0;
+
+	badges: ["region/europe/northern", "power/electric/ac", "role/ultra_high_speed__pax_"];
+
+    }
+    graphics {
+        purchase: spriteset_emu_hitachi_alstom_zefiro_class_895_hs2_purchase;
+        cargo_capacity: switch_emu_hitachi_alstom_zefiro_class_895_hs2_capacity_engine;
+        // no 'visual_effect_and_powered' becuase while it does exist, _visual_effect_and_powered_position is set for livery overrides
+        // no 'length'
+        // no 'articulated_part'
+        can_attach_wagon: switch_can_attach_vehicle;
+        // Add calls to defined switches below
+        // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
+        // PURCHASETEXT_SWITCH_CALL // this is actually blank
+        default: switch_emu_hitachi_alstom_zefiro_class_895_hs2_reversed;
+    }
+    livery_override (item_mu_mu_wagon_unpowered) {
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
+        running_cost_factor: int(360/10);
+        weight: int(62*1/2);
+        cargo_capacity: 75;
+        length: 8;
+        default: switch_emu_hitachi_alstom_zefiro_class_895_hs2_cargo_selection;
+    }
+    livery_override (item_mu_mu_wagon_powered) {
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
+        running_cost_factor: (round(66.52430398822449));
+        power: int(13400*1/2);
+        weight: int(62*3/4);
+        cargo_capacity: 75;
+        tractive_effort_coefficient: int(0.302*10*62);
+        length: 8;
+        default: switch_emu_hitachi_alstom_zefiro_class_895_hs2_cargo_selection;
+    }
+}

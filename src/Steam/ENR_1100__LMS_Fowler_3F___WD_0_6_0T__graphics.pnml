@@ -1,0 +1,23 @@
+//  Copyright (C) 2017 Transportman // V. Nemeth 2026+
+//  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
+
+// Template: TPL_03C
+
+// PURCHASE
+spriteset(spriteset_steam_enr_1100__lms_fowler_3f___wd_0_6_0t__purchase, "gfx/steam/enr_1100__lms_fowler_3f___wd_0_6_0t_.png") {template_purchase(1, 96)}
+
+
+// VEHICLE
+/// Engine1
+spriteset(spriteset_steam_enr_1100__lms_fowler_3f___wd_0_6_0t__engine1, "gfx/steam/enr_1100__lms_fowler_3f___wd_0_6_0t_.png") {template_2cc_engines_general(1, 1)}
+
+
+/// Engine2
+spriteset(spriteset_steam_enr_1100__lms_fowler_3f___wd_0_6_0t__engine2, "gfx/steam/enr_1100__lms_fowler_3f___wd_0_6_0t_.png") {template_2cc_engines_general(1, 32)}
+
+
+/// Animation states (animation)
+switch(FEAT_TRAINS, SELF, switch_steam_enr_1100__lms_fowler_3f___wd_0_6_0t__animation, motion_counter % 2){
+	0: spriteset_steam_enr_1100__lms_fowler_3f___wd_0_6_0t__engine1;
+	spriteset_steam_enr_1100__lms_fowler_3f___wd_0_6_0t__engine2;
+}

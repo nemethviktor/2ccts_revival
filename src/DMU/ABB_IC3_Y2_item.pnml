@@ -1,0 +1,98 @@
+
+//  Copyright (C) 2017 Transportman // V. Nemeth 2026+
+//  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
+
+
+// Template: TPL_02A.
+// Data from: https://en.wikipedia.org/wiki/DSB_Class_MF#Y2
+
+// Notes:
+//// TE_COEFFICIENT_MANUAL: 0.25 -- No data found but .63 is way too high
+
+
+// Cargo capacity
+
+    switch(FEAT_TRAINS, SELF, switch_dmu_abb_ic3_y2_capacity_engine, cargo_classes) { \
+        bitmask(CC_MAIL): 48/2; \
+        bitmask(CC_ARMOURED): 48/4; \
+        48; \
+    }
+
+
+    switch(FEAT_TRAINS, SELF, switch_dmu_abb_ic3_y2_capacity_wagon, cargo_classes) { \
+        bitmask(CC_MAIL): 48/2; \
+        bitmask(CC_ARMOURED): 48/4; \
+        48; \
+    }
+
+item(FEAT_TRAINS, item_dmu_abb_ic3_y2) {
+    property {
+        name: string(str_dmu_abb_ic3_y2);
+        climates_available: (((param_region_northern_europe || param_region_eastern_europe || param_region_southern_europe || param_region_western_europe) || param_region_africa) && 1) ? ALL_CLIMATES : NO_CLIMATE;
+        introduction_date: date(1990,1,1);
+        model_life: VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 40;
+        retire_early: 20;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
+        cost_factor: 66.03716;
+        running_cost_factor: 60.69644;
+        speed: 180 km/h;
+        power: 3200 hp;
+        cargo_capacity: 48;
+        weight: 48 ton;
+        tractive_effort_coefficient: 0.122;
+        air_drag_coefficient: 0;
+
+        reliability_decay: 20;
+        // cargodeftype: PASSENGERS;
+        refittable_cargo_classes: bitmask(CC_PASSENGERS, CC_MAIL);
+        non_refittable_cargo_classes: 0;
+        cargo_age_period: 185;
+        misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
+        refit_cost: 0;
+        ai_special_flag: AI_FLAG_PASSENGER | AI_FLAG_CARGO;
+        track_type: [STANDARD_GAUGE_RAILTYPE_NONE, BROAD_GAUGE_RAILTYPE_NONE];
+        running_cost_base: RUNNING_COST_DIESEL;
+        engine_class: ENGINE_CLASS_DIESEL;
+        visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 0, DISABLE_WAGON_POWER);
+
+        sprite_id: SPRITE_ID_NEW_TRAIN;
+        dual_headed: 1;
+        length: 8;
+        extra_power_per_wagon: 0;
+        bitmask_vehicle_info: 0;
+
+	badges: ["region/africa", "region/europe/southern", "region/europe/western", "region/europe/eastern", "region/europe/northern", "power/diesel", "role/express_passenger"];
+
+    }
+    graphics {
+        purchase: spriteset_dmu_abb_ic3_y2_purchase;
+        cargo_capacity: switch_dmu_abb_ic3_y2_capacity_engine;
+        visual_effect_and_powered: switch_dmu_abb_ic3_y2_visual_effect_and_powered;
+        // no 'length'
+        // no 'articulated_part'
+        can_attach_wagon: switch_can_attach_vehicle;
+        // Add calls to defined switches below
+        // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
+        // PURCHASETEXT_SWITCH_CALL // this is actually blank
+        default: switch_dmu_abb_ic3_y2_reversed;
+    }
+    livery_override (item_mu_mu_wagon_unpowered) {
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
+        running_cost_factor: int(180/10);
+        weight: int(48*1/2);
+        cargo_capacity: 48;
+        length: 8;
+        default: switch_dmu_abb_ic3_y2_cargo_selection;
+    }
+    livery_override (item_mu_mu_wagon_powered) {
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
+        running_cost_factor: (round(29.512872306380572));
+        power: int(3200*1/2);
+        weight: int(48*3/4);
+        cargo_capacity: 48;
+        tractive_effort_coefficient: int(0.122*10*48);
+        length: 8;
+        default: switch_dmu_abb_ic3_y2_cargo_selection;
+    }
+}

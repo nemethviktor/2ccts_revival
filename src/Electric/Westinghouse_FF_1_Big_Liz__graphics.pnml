@@ -1,0 +1,52 @@
+//  Copyright (C) 2017 Transportman // V. Nemeth 2026+
+//  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
+
+// Template: TPL_32C
+
+// PURCHASE
+spriteset(spriteset_electric_westinghouse_ff_1_big_liz__purchase, "gfx/electric/westinghouse_ff_1_big_liz_.png") {template_purchase(1, 128)}
+
+
+// VEHICLE
+
+// // This vehicle uses the template for length 10.
+// // The vehicle is built with 3 pieces of length 3+4+3
+// // The middle part gets the graphics, the other parts are left blank
+
+/// Engine1
+spriteset(spriteset_electric_westinghouse_ff_1_big_liz__engine1, "gfx/electric/westinghouse_ff_1_big_liz_.png") {template_2cc_l12(1, 1)}
+
+
+/// Engine2
+spriteset(spriteset_electric_westinghouse_ff_1_big_liz__engine2, "gfx/electric/westinghouse_ff_1_big_liz_.png") {template_2cc_l12(1, 64)}
+
+
+/// Animation states (animation)
+switch(FEAT_TRAINS, SELF, switch_electric_westinghouse_ff_1_big_liz__animation, motion_counter % 2){
+	0: spriteset_electric_westinghouse_ff_1_big_liz__engine1;
+	spriteset_electric_westinghouse_ff_1_big_liz__engine2;
+}
+switch(FEAT_TRAINS, SELF, switch_electric_westinghouse_ff_1_big_liz__position, position_in_vehid_chain % 2) {
+	0: switch_electric_westinghouse_ff_1_big_liz__animation;
+	EMPTY_SPRITESET
+}
+
+/// Visual Effect
+switch(FEAT_TRAINS, SELF, switch_electric_westinghouse_ff_1_big_liz__visual_effect, position_in_vehid_chain % 2) {
+	0: return visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, -3, DISABLE_WAGON_POWER);
+	return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+/// Length
+switch(FEAT_TRAINS, SELF, switch_electric_westinghouse_ff_1_big_liz__length, position_in_vehid_chain % 2) {
+    0: 8;
+	2;
+}
+
+/// Articulated Return
+/// extra_callback_info1 is the index of the part being added.
+switch(FEAT_TRAINS, SELF, switch_electric_westinghouse_ff_1_big_liz__articulated, extra_callback_info1) {
+    1: return item_electric_westinghouse_ff_1_big_liz_;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+

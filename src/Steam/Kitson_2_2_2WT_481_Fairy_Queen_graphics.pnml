@@ -1,0 +1,27 @@
+//  Copyright (C) 2017 Transportman // V. Nemeth 2026+
+//  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
+
+// Template: TPL_03E
+
+// PURCHASE
+spriteset(spriteset_steam_kitson_2_2_2wt_481_fairy_queen_purchase, "gfx/steam/kitson_2_2_2wt_481_fairy_queen.png") {template_purchase(1, 96)}
+
+
+// VEHICLE
+/// Engine1
+spriteset(spriteset_steam_kitson_2_2_2wt_481_fairy_queen_engine1, "gfx/steam/kitson_2_2_2wt_481_fairy_queen.png") {template_2cc_engines_general(1, 1)}
+
+
+/// Engine2
+spriteset(spriteset_steam_kitson_2_2_2wt_481_fairy_queen_engine2, "gfx/steam/kitson_2_2_2wt_481_fairy_queen.png") {template_2cc_engines_general(1, 32)}
+
+
+/// Tender
+spriteset(spriteset_steam_kitson_2_2_2wt_481_fairy_queen_tender, "gfx/steam/kitson_2_2_2wt_481_fairy_queen.png") {template_2cc_engines_general(1, 64)}
+
+
+/// Animation states (animation)
+switch(FEAT_TRAINS, SELF, switch_steam_kitson_2_2_2wt_481_fairy_queen_animation, motion_counter % 2){
+	0: spriteset_steam_kitson_2_2_2wt_481_fairy_queen_engine1;
+	spriteset_steam_kitson_2_2_2wt_481_fairy_queen_engine2;
+}

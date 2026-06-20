@@ -1,0 +1,100 @@
+
+//  Copyright (C) 2017 Transportman // V. Nemeth 2026+
+//  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
+
+
+// Template: TPL_02A.
+// Data from: https://en.wikipedia.org/wiki/L0_Series
+
+// Notes:
+//// POWER: 20115 -- ($15,000\text{ kW}$ total) Necessary to overcome massive air resistance at $500\text{ km/h}+$.
+//// SPEED: 500 -- Design speed higher, this is operational
+//// TE_STARTING_KN: 500 -- Higher than Transrapid to reflect the "launch" nature of EDS
+
+
+// Cargo capacity
+
+    switch(FEAT_TRAINS, SELF, switch_mmu_mistubishi_nippon_sharyo_mlx01_901_capacity_engine, cargo_classes) { \
+        bitmask(CC_MAIL): 19/2; \
+        bitmask(CC_ARMOURED): 19/4; \
+        19; \
+    }
+
+
+    switch(FEAT_TRAINS, SELF, switch_mmu_mistubishi_nippon_sharyo_mlx01_901_capacity_wagon, cargo_classes) { \
+        bitmask(CC_MAIL): 60/2; \
+        bitmask(CC_ARMOURED): 60/4; \
+        60; \
+    }
+
+item(FEAT_TRAINS, item_mmu_mistubishi_nippon_sharyo_mlx01_901) {
+    property {
+        name: string(str_mmu_mistubishi_nippon_sharyo_mlx01_901);
+        climates_available: ((param_region_asia || 0) && param_concept) ? ALL_CLIMATES : NO_CLIMATE;
+        introduction_date: date(2025,1,1);
+        model_life: VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 45;
+        retire_early: 20;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
+        cost_factor: 156.56548;
+        running_cost_factor: 148.47096;
+        speed: 500 km/h;
+        power: 20115 hp;
+        cargo_capacity: 19;
+        weight: 72 ton;
+        tractive_effort_coefficient: 0.708;
+        air_drag_coefficient: 0;
+
+        reliability_decay: 20;
+        // cargodeftype: PASSENGERS;
+        refittable_cargo_classes: bitmask(CC_PASSENGERS, CC_MAIL);
+        non_refittable_cargo_classes: 0;
+        cargo_age_period: 185;
+        misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
+        refit_cost: 0;
+        ai_special_flag: AI_FLAG_PASSENGER | AI_FLAG_CARGO;
+        track_type: [MGLV];
+        running_cost_base: RUNNING_COST_ELECTRIC;
+        engine_class: ENGINE_CLASS_MAGLEV;
+        visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+
+        sprite_id: SPRITE_ID_NEW_TRAIN;
+        dual_headed: 1;
+        length: 8;
+        extra_power_per_wagon: 0;
+        bitmask_vehicle_info: 0;
+
+	badges: ["region/asia", "power/maglev", "role/ultra_high_speed__pax_"];
+
+    }
+    graphics {
+        purchase: spriteset_mmu_mistubishi_nippon_sharyo_mlx01_901_purchase;
+        cargo_capacity: switch_mmu_mistubishi_nippon_sharyo_mlx01_901_capacity_engine;
+        visual_effect_and_powered: switch_mmu_mistubishi_nippon_sharyo_mlx01_901_visual_effect_and_powered;
+        // no 'length'
+        // no 'articulated_part'
+        can_attach_wagon: switch_can_attach_vehicle;
+        // Add calls to defined switches below
+        // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
+        // PURCHASETEXT_SWITCH_CALL // this is actually blank
+        default: switch_mmu_mistubishi_nippon_sharyo_mlx01_901_reversed;
+    }
+    livery_override (item_mglv_maglev_wagon_unpowered) {
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
+        running_cost_factor: int(500/10);
+        weight: int(72*1/2);
+        cargo_capacity: 60;
+        length: 8;
+        default: switch_mmu_mistubishi_nippon_sharyo_mlx01_901_cargo_selection;
+    }
+    livery_override (item_mglv_maglev_wagon_powered) {
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
+        running_cost_factor: (round(115.43709571774922));
+        power: int(20115*1/2);
+        weight: int(72*3/4);
+        cargo_capacity: 60;
+        tractive_effort_coefficient: int(0.708*10*72);
+        length: 8;
+        default: switch_mmu_mistubishi_nippon_sharyo_mlx01_901_cargo_selection;
+    }
+}

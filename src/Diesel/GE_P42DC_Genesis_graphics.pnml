@@ -1,0 +1,21 @@
+//  Copyright (C) 2017 Transportman // V. Nemeth 2026+
+//  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
+
+// Template: TPL_03F
+
+// PURCHASE
+spriteset(spriteset_diesel_ge_p42dc_genesis_purchase, "gfx/diesel/ge_p42dc_genesis.png") {template_purchase(1, 64)}
+
+
+// VEHICLE
+/// Engine
+spriteset(spriteset_diesel_ge_p42dc_genesis_engine, "gfx/diesel/ge_p42dc_genesis.png") {template_2cc_engines_general(1, 1)}
+
+
+/// B Unit
+spriteset(spriteset_diesel_ge_p42dc_genesis_b_unit, "gfx/diesel/ge_p42dc_genesis.png") {template_2cc_engines_general(1, 32)}
+
+switch(FEAT_TRAINS, SELF, switch_diesel_ge_p42dc_genesis_position, position_in_vehid_chain % 2) {
+	0: spriteset_diesel_ge_p42dc_genesis_engine;
+	spriteset_diesel_ge_p42dc_genesis_b_unit;
+}

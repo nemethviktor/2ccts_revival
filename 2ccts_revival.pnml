@@ -36,19 +36,19 @@
 
 
 //// CARGODMU
-#include "src/CargoDMU/Germany_DB_691_CargoSprinter_graphics.pnml"
-#include "src/CargoDMU/Germany_DB_691_CargoSprinter_item.pnml"
+#include "src/CargoDMU/Windhoff_CargoSprinter_graphics.pnml"
+#include "src/CargoDMU/Windhoff_CargoSprinter_item.pnml"
 
 
 //// CARGOEMU
-#include "src/CargoEMU/Japan_JR_Freight_M250_graphics.pnml"
-#include "src/CargoEMU/Japan_JR_Freight_M250_item.pnml"
+#include "src/CargoEMU/Kawasaki_Nippon_Sharyo_Toshiba_M250_graphics.pnml"
+#include "src/CargoEMU/Kawasaki_Nippon_Sharyo_Toshiba_M250_item.pnml"
 
-#include "src/CargoEMU/Netherlands_ACME_CargoDD_graphics.pnml"
-#include "src/CargoEMU/Netherlands_ACME_CargoDD_item.pnml"
+#include "src/CargoEMU/ACME_Corp__DD_CargoEMU_graphics.pnml"
+#include "src/CargoEMU/ACME_Corp__DD_CargoEMU_item.pnml"
 
-#include "src/CargoEMU/Japan_JNR_Tokaido_Shinkansen_Concept_graphics.pnml"
-#include "src/CargoEMU/Japan_JNR_Tokaido_Shinkansen_Concept_item.pnml"
+#include "src/CargoEMU/JNR_Container_Bullet_Train_Concept_graphics.pnml"
+#include "src/CargoEMU/JNR_Container_Bullet_Train_Concept_item.pnml"
 
 
 //// COACHES - GEN1
@@ -363,1993 +363,1990 @@
 
 
 //// DMU
-#include "src/DMU/Denmark_DSB_IC4_graphics.pnml"
-#include "src/DMU/Denmark_DSB_IC4_item.pnml"
+#include "src/DMU/AnsaldoBreda_IC4_graphics.pnml"
+#include "src/DMU/AnsaldoBreda_IC4_item.pnml"
 
-#include "src/DMU/Croatia_HZ_7022_graphics.pnml"
-#include "src/DMU/Croatia_HZ_7022_item.pnml"
+#include "src/DMU/TZV_Gredelj_7022_graphics.pnml"
+#include "src/DMU/TZV_Gredelj_7022_item.pnml"
 
-#include "src/DMU/Germany_DB_VT_040_Flying_Hamburger_graphics.pnml"
-#include "src/DMU/Germany_DB_VT_040_Flying_Hamburger_item.pnml"
+#include "src/DMU/LHB_VT_04_0_Flying_Hamburger_graphics.pnml"
+#include "src/DMU/LHB_VT_04_0_Flying_Hamburger_item.pnml"
 
-#include "src/DMU/Australia_NSWGR_Silver_City_Comet_graphics.pnml"
-#include "src/DMU/Australia_NSWGR_Silver_City_Comet_item.pnml"
+#include "src/DMU/Harland___Wolf_Silver_City_Comet_graphics.pnml"
+#include "src/DMU/Harland___Wolf_Silver_City_Comet_item.pnml"
 
-#include "src/DMU/Czech_Republic_CD_M131_graphics.pnml"
-#include "src/DMU/Czech_Republic_CD_M131_item.pnml"
+#include "src/DMU/Tatra_M131_graphics.pnml"
+#include "src/DMU/Tatra_M131_item.pnml"
 
-#include "src/DMU/Germany_DB_VT_085_graphics.pnml"
-#include "src/DMU/Germany_DB_VT_085_item.pnml"
+#include "src/DMU/MAN_VT_08_5_graphics.pnml"
+#include "src/DMU/MAN_VT_08_5_item.pnml"
 
-#include "src/DMU/Australia_Queensland_Rail_400_graphics.pnml"
-#include "src/DMU/Australia_Queensland_Rail_400_item.pnml"
+#include "src/DMU/South_Australian_Railways_400_Redhen_graphics.pnml"
+#include "src/DMU/South_Australian_Railways_400_Redhen_item.pnml"
 
-#include "src/DMU/Germany_DB_VT_115_graphics.pnml"
-#include "src/DMU/Germany_DB_VT_115_item.pnml"
+#include "src/DMU/MAN_LHB_VT11_5___DB_601_TEE_graphics.pnml"
+#include "src/DMU/MAN_LHB_VT11_5___DB_601_TEE_item.pnml"
 
-#include "src/DMU/Netherlands_NS_Plan_U_DE_III_graphics.pnml"
-#include "src/DMU/Netherlands_NS_Plan_U_DE_III_item.pnml"
+#include "src/DMU/Werkspoor_Plan_U_DE_III_graphics.pnml"
+#include "src/DMU/Werkspoor_Plan_U_DE_III_item.pnml"
 
-#include "src/DMU/Canada_CNR_Turbo_Train_graphics.pnml"
-#include "src/DMU/Canada_CNR_Turbo_Train_item.pnml"
+#include "src/DMU/UAC_Turbo_Train_graphics.pnml"
+#include "src/DMU/UAC_Turbo_Train_item.pnml"
 
-#include "src/DMU/Serbia_ZS_811_graphics.pnml"
-#include "src/DMU/Serbia_ZS_811_item.pnml"
+#include "src/DMU/JZ_811_graphics.pnml"
+#include "src/DMU/JZ_811_item.pnml"
 
-#include "src/DMU/UK_BR_43_IC125_graphics.pnml"
-#include "src/DMU/UK_BR_43_IC125_item.pnml"
+#include "src/DMU/BREL_43_IC125_graphics.pnml"
+#include "src/DMU/BREL_43_IC125_item.pnml"
 
-#include "src/DMU/Canada_VIA_Rail_LRC_graphics.pnml"
-#include "src/DMU/Canada_VIA_Rail_LRC_item.pnml"
+#include "src/DMU/Bombardier_M6109_graphics.pnml"
+#include "src/DMU/Bombardier_M6109_item.pnml"
 
-#include "src/DMU/Sweden_SJ_Y2_graphics.pnml"
-#include "src/DMU/Sweden_SJ_Y2_item.pnml"
+#include "src/DMU/ABB_IC3_Y2_graphics.pnml"
+#include "src/DMU/ABB_IC3_Y2_item.pnml"
 
-#include "src/DMU/Spain_RENFE_594_TRD_graphics.pnml"
-#include "src/DMU/Spain_RENFE_594_TRD_item.pnml"
+#include "src/DMU/CAF_594_TRD_graphics.pnml"
+#include "src/DMU/CAF_594_TRD_item.pnml"
 
-#include "src/DMU/UK_BR_168_graphics.pnml"
-#include "src/DMU/UK_BR_168_item.pnml"
+#include "src/DMU/Adtranz_Class_168_Clubman_graphics.pnml"
+#include "src/DMU/Adtranz_Class_168_Clubman_item.pnml"
 
-#include "src/DMU/Germany_DB_612_Regio_Swinger_graphics.pnml"
-#include "src/DMU/Germany_DB_612_Regio_Swinger_item.pnml"
+#include "src/DMU/Adtranz_Class_612_Regio_Swinger_graphics.pnml"
+#include "src/DMU/Adtranz_Class_612_Regio_Swinger_item.pnml"
 
-#include "src/DMU/Germany_DB_642_Desiro_graphics.pnml"
-#include "src/DMU/Germany_DB_642_Desiro_item.pnml"
+#include "src/DMU/Siemens_Desiro_graphics.pnml"
+#include "src/DMU/Siemens_Desiro_item.pnml"
 
-#include "src/DMU/Denmark_Arriva_Lint_41_graphics.pnml"
-#include "src/DMU/Denmark_Arriva_Lint_41_item.pnml"
+#include "src/DMU/Alstom_Coradia_LINT_graphics.pnml"
+#include "src/DMU/Alstom_Coradia_LINT_item.pnml"
 
-#include "src/DMU/Norway_NSB_BM_93_Talent_graphics.pnml"
-#include "src/DMU/Norway_NSB_BM_93_Talent_item.pnml"
+#include "src/DMU/Bombardier_Talent_NSB_BM_93_graphics.pnml"
+#include "src/DMU/Bombardier_Talent_NSB_BM_93_item.pnml"
 
-#include "src/DMU/Australia_Transwa_Prospector_graphics.pnml"
-#include "src/DMU/Australia_Transwa_Prospector_item.pnml"
+#include "src/DMU/UGL_WD_Prospector_graphics.pnml"
+#include "src/DMU/UGL_WD_Prospector_item.pnml"
 
-#include "src/DMU/Australia_CityRail_Hunter_Railcar_graphics.pnml"
-#include "src/DMU/Australia_CityRail_Hunter_Railcar_item.pnml"
+#include "src/DMU/UGL_Hunter_Railcar_graphics.pnml"
+#include "src/DMU/UGL_Hunter_Railcar_item.pnml"
 
-#include "src/DMU/Russia_RZD_RA2_graphics.pnml"
-#include "src/DMU/Russia_RZD_RA2_item.pnml"
+#include "src/DMU/MVM_RA2_graphics.pnml"
+#include "src/DMU/MVM_RA2_item.pnml"
 
-#include "src/DMU/Turkey_TCDD_MT_5500_graphics.pnml"
-#include "src/DMU/Turkey_TCDD_MT_5500_item.pnml"
+#include "src/DMU/Fiat_TCDD_MT_5500_graphics.pnml"
+#include "src/DMU/Fiat_TCDD_MT_5500_item.pnml"
 
-#include "src/DMU/Japan_JNR_KiHa_181_graphics.pnml"
-#include "src/DMU/Japan_JNR_KiHa_181_item.pnml"
+#include "src/DMU/Fuji_KiHa_181_graphics.pnml"
+#include "src/DMU/Fuji_KiHa_181_item.pnml"
 
-#include "src/DMU/Czech_Republic_CD_814_graphics.pnml"
-#include "src/DMU/Czech_Republic_CD_814_item.pnml"
+#include "src/DMU/Vagonka_Studenka_814_graphics.pnml"
+#include "src/DMU/Vagonka_Studenka_814_item.pnml"
 
-#include "src/DMU/UK_BR_150_0_Sprinter_graphics.pnml"
-#include "src/DMU/UK_BR_150_0_Sprinter_item.pnml"
+#include "src/DMU/BR_150_0_Sprinter_graphics.pnml"
+#include "src/DMU/BR_150_0_Sprinter_item.pnml"
 
-#include "src/DMU/Iran_RAI_141_Pacer_graphics.pnml"
-#include "src/DMU/Iran_RAI_141_Pacer_item.pnml"
+#include "src/DMU/BREL_141_Pacer_graphics.pnml"
+#include "src/DMU/BREL_141_Pacer_item.pnml"
 
-#include "src/DMU/Israel_Israel_Railways_IC3_graphics.pnml"
-#include "src/DMU/Israel_Israel_Railways_IC3_item.pnml"
+#include "src/DMU/ABB_IC3__Israel__graphics.pnml"
+#include "src/DMU/ABB_IC3__Israel__item.pnml"
 
-#include "src/DMU/Australia_TransAdelaide_3100_graphics.pnml"
-#include "src/DMU/Australia_TransAdelaide_3100_item.pnml"
+#include "src/DMU/Comeng_3100_graphics.pnml"
+#include "src/DMU/Comeng_3100_item.pnml"
 
-#include "src/DMU/Australia_NSWGR_Xplorer_graphics.pnml"
-#include "src/DMU/Australia_NSWGR_Xplorer_item.pnml"
+#include "src/DMU/ABB_Xplorer_graphics.pnml"
+#include "src/DMU/ABB_Xplorer_item.pnml"
 
-#include "src/DMU/Japan_JR_KiHa_189_graphics.pnml"
-#include "src/DMU/Japan_JR_KiHa_189_item.pnml"
+#include "src/DMU/Niigata_Transys_KiHa_189_graphics.pnml"
+#include "src/DMU/Niigata_Transys_KiHa_189_item.pnml"
 
-#include "src/DMU/Sri_Lanka_Sri_Lanka_Railways_S11_graphics.pnml"
-#include "src/DMU/Sri_Lanka_Sri_Lanka_Railways_S11_item.pnml"
+#include "src/DMU/Integral_Coach_Factory_S11_graphics.pnml"
+#include "src/DMU/Integral_Coach_Factory_S11_item.pnml"
 
-#include "src/DMU/Slovakia_ZSSK_861_graphics.pnml"
-#include "src/DMU/Slovakia_ZSSK_861_item.pnml"
+#include "src/DMU/ZOS_Vrutky_861_graphics.pnml"
+#include "src/DMU/ZOS_Vrutky_861_item.pnml"
 
-#include "src/DMU/Chile_EFE_TLD_500_graphics.pnml"
-#include "src/DMU/Chile_EFE_TLD_500_item.pnml"
+#include "src/DMU/CAF_TLD_500_graphics.pnml"
+#include "src/DMU/CAF_TLD_500_item.pnml"
 
-#include "src/DMU/Cameroon_Camrail_ZE_500_graphics.pnml"
-#include "src/DMU/Cameroon_Camrail_ZE_500_item.pnml"
+#include "src/DMU/Camrail_ZE_500_graphics.pnml"
+#include "src/DMU/Camrail_ZE_500_item.pnml"
 
-#include "src/DMU/Italy_FS_ALn_442_448_graphics.pnml"
-#include "src/DMU/Italy_FS_ALn_442_448_item.pnml"
+#include "src/DMU/Fiat_ALn_442_448_graphics.pnml"
+#include "src/DMU/Fiat_ALn_442_448_item.pnml"
 
-#include "src/DMU/UK_BR_251_Blue_Pullman_graphics.pnml"
-#include "src/DMU/UK_BR_251_Blue_Pullman_item.pnml"
+#include "src/DMU/Metro_Cammell_251_Blue_Pullman_graphics.pnml"
+#include "src/DMU/Metro_Cammell_251_Blue_Pullman_item.pnml"
 
-#include "src/DMU/Portugal_CP_0400_graphics.pnml"
-#include "src/DMU/Portugal_CP_0400_item.pnml"
+#include "src/DMU/Sorefame_CP_0400_graphics.pnml"
+#include "src/DMU/Sorefame_CP_0400_item.pnml"
 
-#include "src/DMU/Australia_WAGR_ADK_ADB_graphics.pnml"
-#include "src/DMU/Australia_WAGR_ADK_ADB_item.pnml"
+#include "src/DMU/Comeng_ADK_graphics.pnml"
+#include "src/DMU/Comeng_ADK_item.pnml"
 
-#include "src/DMU/France_SNCF_X_4630_graphics.pnml"
-#include "src/DMU/France_SNCF_X_4630_item.pnml"
+#include "src/DMU/ANF_X_4630_graphics.pnml"
+#include "src/DMU/ANF_X_4630_item.pnml"
 
-#include "src/DMU/France_SNCF_T_2000_graphics.pnml"
-#include "src/DMU/France_SNCF_T_2000_item.pnml"
+#include "src/DMU/ANF_T_2000_graphics.pnml"
+#include "src/DMU/ANF_T_2000_item.pnml"
 
-#include "src/DMU/Portugal_CP_0600_graphics.pnml"
-#include "src/DMU/Portugal_CP_0600_item.pnml"
+#include "src/DMU/Sorefame_CP_0600_graphics.pnml"
+#include "src/DMU/Sorefame_CP_0600_item.pnml"
 
-#include "src/DMU/Netherlands_NS_DH2_graphics.pnml"
-#include "src/DMU/Netherlands_NS_DH2_item.pnml"
+#include "src/DMU/Duwag_Wadloper_graphics.pnml"
+#include "src/DMU/Duwag_Wadloper_item.pnml"
 
-#include "src/DMU/Spain_FEVE_2400_Apollos_graphics.pnml"
-#include "src/DMU/Spain_FEVE_2400_Apollos_item.pnml"
+#include "src/DMU/MTM_2400_Apollos_graphics.pnml"
+#include "src/DMU/MTM_2400_Apollos_item.pnml"
 
-#include "src/DMU/Germany_DB_6282_graphics.pnml"
-#include "src/DMU/Germany_DB_6282_item.pnml"
+#include "src/DMU/Duwag_628_2_graphics.pnml"
+#include "src/DMU/Duwag_628_2_item.pnml"
 
-#include "src/DMU/Algeria_SNTF_ZZ_2200_Autorail_graphics.pnml"
-#include "src/DMU/Algeria_SNTF_ZZ_2200_Autorail_item.pnml"
+#include "src/DMU/CAF_ZZ_2200_Autorail_graphics.pnml"
+#include "src/DMU/CAF_ZZ_2200_Autorail_item.pnml"
 
-#include "src/DMU/Tunisia_SNCFT_AMT_800_graphics.pnml"
-#include "src/DMU/Tunisia_SNCFT_AMT_800_item.pnml"
+#include "src/DMU/CFD_AMT_800_graphics.pnml"
+#include "src/DMU/CFD_AMT_800_item.pnml"
 
-#include "src/DMU/Ghana_Ghana_Railways_DEMU_graphics.pnml"
-#include "src/DMU/Ghana_Ghana_Railways_DEMU_item.pnml"
+#include "src/DMU/CNR_Tangshan_Ghana_DEMU_graphics.pnml"
+#include "src/DMU/CNR_Tangshan_Ghana_DEMU_item.pnml"
 
-#include "src/DMU/Australia_Queensland_Rail_Diesel_Tilt_Train_graphics.pnml"
-#include "src/DMU/Australia_Queensland_Rail_Diesel_Tilt_Train_item.pnml"
+#include "src/DMU/Downer_EDI_Hitachi_Tilt_Train_graphics.pnml"
+#include "src/DMU/Downer_EDI_Hitachi_Tilt_Train_item.pnml"
 
-#include "src/DMU/Canada_UP_Express_Nippon_Sharyo_DMU_graphics.pnml"
-#include "src/DMU/Canada_UP_Express_Nippon_Sharyo_DMU_item.pnml"
+#include "src/DMU/Nippon_Sharyo_1000_Series_graphics.pnml"
+#include "src/DMU/Nippon_Sharyo_1000_Series_item.pnml"
 
-#include "src/DMU/Argentina_FCGU_CMM_400_2_graphics.pnml"
-#include "src/DMU/Argentina_FCGU_CMM_400_2_item.pnml"
+#include "src/DMU/Materfer_CMM_400_2_graphics.pnml"
+#include "src/DMU/Materfer_CMM_400_2_item.pnml"
 
-#include "src/DMU/Argentina_Ganz_Arpad_Bariloche_graphics.pnml"
-#include "src/DMU/Argentina_Ganz_Arpad_Bariloche_item.pnml"
+#include "src/DMU/Ganz_Arpad_Bariloche_DMU_graphics.pnml"
+#include "src/DMU/Ganz_Arpad_Bariloche_DMU_item.pnml"
 
-#include "src/DMU/Argentina_Ganz_Arpad_CMU_4701_Transandino_graphics.pnml"
-#include "src/DMU/Argentina_Ganz_Arpad_CMU_4701_Transandino_item.pnml"
+#include "src/DMU/Ganz_Arpad_CMU_4701_Transandino_graphics.pnml"
+#include "src/DMU/Ganz_Arpad_CMU_4701_Transandino_item.pnml"
 
-#include "src/DMU/Australia_NSW_1100_graphics.pnml"
-#include "src/DMU/Australia_NSW_1100_item.pnml"
+#include "src/DMU/Comeng_1100_Railcar_graphics.pnml"
+#include "src/DMU/Comeng_1100_Railcar_item.pnml"
 
-#include "src/DMU/Thailand_Comeng_XPT_Concept_graphics.pnml"
-#include "src/DMU/Thailand_Comeng_XPT_Concept_item.pnml"
+#include "src/DMU/Thai_Comeng_XPT_Concept_graphics.pnml"
+#include "src/DMU/Thai_Comeng_XPT_Concept_item.pnml"
 
-#include "src/DMU/Australia_Comeng_XPT_graphics.pnml"
-#include "src/DMU/Australia_Comeng_XPT_item.pnml"
+#include "src/DMU/Comeng_NSW_XPT_graphics.pnml"
+#include "src/DMU/Comeng_NSW_XPT_item.pnml"
 
-#include "src/DMU/Australia_NSW_900_graphics.pnml"
-#include "src/DMU/Australia_NSW_900_item.pnml"
+#include "src/DMU/NSWGR_800_900_DEB_graphics.pnml"
+#include "src/DMU/NSWGR_800_900_DEB_item.pnml"
 
-#include "src/DMU/Australia_NSW_600_graphics.pnml"
-#include "src/DMU/Australia_NSW_600_item.pnml"
+#include "src/DMU/NSWGR_600_700_graphics.pnml"
+#include "src/DMU/NSWGR_600_700_item.pnml"
 
-#include "src/DMU/New_Zealand_Silver_Fern_graphics.pnml"
-#include "src/DMU/New_Zealand_Silver_Fern_item.pnml"
+#include "src/DMU/Kawasaki_RM_Silver_Fern_graphics.pnml"
+#include "src/DMU/Kawasaki_RM_Silver_Fern_item.pnml"
 
-#include "src/DMU/Hungary_MAV_Hargita_M440_graphics.pnml"
-#include "src/DMU/Hungary_MAV_Hargita_M440_item.pnml"
+#include "src/DMU/Ganz_Hargita_M440_graphics.pnml"
+#include "src/DMU/Ganz_Hargita_M440_item.pnml"
 
-#include "src/DMU/Lithuania_RVR_DR1A_graphics.pnml"
-#include "src/DMU/Lithuania_RVR_DR1A_item.pnml"
+#include "src/DMU/RVR_DR1A_graphics.pnml"
+#include "src/DMU/RVR_DR1A_item.pnml"
 
-#include "src/DMU/Netherlands_ACME_V200D_graphics.pnml"
-#include "src/DMU/Netherlands_ACME_V200D_item.pnml"
+#include "src/DMU/ACME_Corp__V200D_DMU_graphics.pnml"
+#include "src/DMU/ACME_Corp__V200D_DMU_item.pnml"
 
-#include "src/DMU/Switzerland_Stadler_Flirt_graphics.pnml"
-#include "src/DMU/Switzerland_Stadler_Flirt_item.pnml"
+#include "src/DMU/Stadler_Flirt_PowerPack_DMU_graphics.pnml"
+#include "src/DMU/Stadler_Flirt_PowerPack_DMU_item.pnml"
 
 
 //// DIESEL
-#include "src/Diesel/Germany_DB_Kof_II_graphics.pnml"
-#include "src/Diesel/Germany_DB_Kof_II_item.pnml"
+#include "src/Diesel/DB_Kof_II___DB_322_graphics.pnml"
+#include "src/Diesel/DB_Kof_II___DB_322_item.pnml"
 
-#include "src/Diesel/USA_CNJ_ALCo_GE_IR_Boxcab_graphics.pnml"
-#include "src/Diesel/USA_CNJ_ALCo_GE_IR_Boxcab_item.pnml"
+#include "src/Diesel/CNJ_ALCo_GE_IR_Boxcab_100T_graphics.pnml"
+#include "src/Diesel/CNJ_ALCo_GE_IR_Boxcab_100T_item.pnml"
 
-#include "src/Diesel/Netherlands_NS_200_graphics.pnml"
-#include "src/Diesel/Netherlands_NS_200_item.pnml"
+#include "src/Diesel/Werkspoor_200_Sik_graphics.pnml"
+#include "src/Diesel/Werkspoor_200_Sik_item.pnml"
 
-#include "src/Diesel/Germany_DB_270_graphics.pnml"
-#include "src/Diesel/Germany_DB_270_item.pnml"
+#include "src/Diesel/BMAG_WR_200_B_14_graphics.pnml"
+#include "src/Diesel/BMAG_WR_200_B_14_item.pnml"
 
-#include "src/Diesel/Switzerland_SBB_Am_4_6_graphics.pnml"
-#include "src/Diesel/Switzerland_SBB_Am_4_6_item.pnml"
+#include "src/Diesel/BBC_SLM_Am_4_6_graphics.pnml"
+#include "src/Diesel/BBC_SLM_Am_4_6_item.pnml"
 
-#include "src/Diesel/Australia_NSWGR_79_graphics.pnml"
-#include "src/Diesel/Australia_NSWGR_79_item.pnml"
+#include "src/Diesel/GE_44_ton_switcher_graphics.pnml"
+#include "src/Diesel/GE_44_ton_switcher_item.pnml"
 
-#include "src/Diesel/USA_Western_Pacific_ALCO_S_2_graphics.pnml"
-#include "src/Diesel/USA_Western_Pacific_ALCO_S_2_item.pnml"
+#include "src/Diesel/ALCO_S_2_graphics.pnml"
+#include "src/Diesel/ALCO_S_2_item.pnml"
 
-#include "src/Diesel/USA_AT_SF_EMD_F3_graphics.pnml"
-#include "src/Diesel/USA_AT_SF_EMD_F3_item.pnml"
+#include "src/Diesel/EMD_F3_graphics.pnml"
+#include "src/Diesel/EMD_F3_item.pnml"
 
-#include "src/Diesel/USA_UP_EMD_E8_graphics.pnml"
-#include "src/Diesel/USA_UP_EMD_E8_item.pnml"
+#include "src/Diesel/EMD_E8_graphics.pnml"
+#include "src/Diesel/EMD_E8_item.pnml"
 
-#include "src/Diesel/Brazil_EFCB_ALCO_RS_3_graphics.pnml"
-#include "src/Diesel/Brazil_EFCB_ALCO_RS_3_item.pnml"
+#include "src/Diesel/EFCB_ALCO_RS_3_graphics.pnml"
+#include "src/Diesel/EFCB_ALCO_RS_3_item.pnml"
 
-#include "src/Diesel/Netherlands_NS_600_graphics.pnml"
-#include "src/Diesel/Netherlands_NS_600_item.pnml"
+#include "src/Diesel/English_Electric_Bakkie_graphics.pnml"
+#include "src/Diesel/English_Electric_Bakkie_item.pnml"
 
-#include "src/Diesel/Uruguay_AFE_1500_graphics.pnml"
-#include "src/Diesel/Uruguay_AFE_1500_item.pnml"
+#include "src/Diesel/AFE_1500_graphics.pnml"
+#include "src/Diesel/AFE_1500_item.pnml"
 
-#include "src/Diesel/Canada_CPR_Trainmaster_graphics.pnml"
-#include "src/Diesel/Canada_CPR_Trainmaster_item.pnml"
+#include "src/Diesel/FM_H_24_66_Trainmaster_graphics.pnml"
+#include "src/Diesel/FM_H_24_66_Trainmaster_item.pnml"
 
-#include "src/Diesel/Liberia_Liberia_Railways_Class_08_graphics.pnml"
-#include "src/Diesel/Liberia_Liberia_Railways_Class_08_item.pnml"
+#include "src/Diesel/BR_Class_08_0_6_0DE_graphics.pnml"
+#include "src/Diesel/BR_Class_08_0_6_0DE_item.pnml"
 
-#include "src/Diesel/Austria_OBB_2060_graphics.pnml"
-#include "src/Diesel/Austria_OBB_2060_item.pnml"
+#include "src/Diesel/Jenbacher_Werke_2060_graphics.pnml"
+#include "src/Diesel/Jenbacher_Werke_2060_item.pnml"
 
-#include "src/Diesel/Canada_CNR_SW1200_graphics.pnml"
-#include "src/Diesel/Canada_CNR_SW1200_item.pnml"
+#include "src/Diesel/EMD_SW1200_graphics.pnml"
+#include "src/Diesel/EMD_SW1200_item.pnml"
 
-#include "src/Diesel/Canada_VIA_Rail_FP9_graphics.pnml"
-#include "src/Diesel/Canada_VIA_Rail_FP9_item.pnml"
+#include "src/Diesel/EMD_FP9_graphics.pnml"
+#include "src/Diesel/EMD_FP9_item.pnml"
 
-#include "src/Diesel/Hungary_MAV_M44_graphics.pnml"
-#include "src/Diesel/Hungary_MAV_M44_item.pnml"
+#include "src/Diesel/Ganz_MAVAG_DVM2_M44_graphics.pnml"
+#include "src/Diesel/Ganz_MAVAG_DVM2_M44_item.pnml"
 
-#include "src/Diesel/Hungary_MAV_M28_graphics.pnml"
-#include "src/Diesel/Hungary_MAV_M28_item.pnml"
+#include "src/Diesel/Raba_M_030_M28_graphics.pnml"
+#include "src/Diesel/Raba_M_030_M28_item.pnml"
 
-#include "src/Diesel/Belgium_NMBS_SNCB_83_graphics.pnml"
-#include "src/Diesel/Belgium_NMBS_SNCB_83_item.pnml"
+#include "src/Diesel/Cockerill_Sambre_HLD_serie_83_graphics.pnml"
+#include "src/Diesel/Cockerill_Sambre_HLD_serie_83_item.pnml"
 
-#include "src/Diesel/Germany_DB_220_graphics.pnml"
-#include "src/Diesel/Germany_DB_220_item.pnml"
+#include "src/Diesel/Krauss_Maffei_V200_graphics.pnml"
+#include "src/Diesel/Krauss_Maffei_V200_item.pnml"
 
-#include "src/Diesel/USA_Amtrak_FL9_graphics.pnml"
-#include "src/Diesel/USA_Amtrak_FL9_item.pnml"
+#include "src/Diesel/EMD_FL9_graphics.pnml"
+#include "src/Diesel/EMD_FL9_item.pnml"
 
-#include "src/Diesel/Czech_Republic_CD_720_ChME2_graphics.pnml"
-#include "src/Diesel/Czech_Republic_CD_720_ChME2_item.pnml"
+#include "src/Diesel/CKD_T_435_0_graphics.pnml"
+#include "src/Diesel/CKD_T_435_0_item.pnml"
 
-#include "src/Diesel/Finland_VR_Dr12_graphics.pnml"
-#include "src/Diesel/Finland_VR_Dr12_item.pnml"
+#include "src/Diesel/Valmet_Lokomo_Dr12_graphics.pnml"
+#include "src/Diesel/Valmet_Lokomo_Dr12_item.pnml"
 
-#include "src/Diesel/Romania_CFR_060_DA_graphics.pnml"
-#include "src/Diesel/Romania_CFR_060_DA_item.pnml"
+#include "src/Diesel/Electroputre_060_DA_graphics.pnml"
+#include "src/Diesel/Electroputre_060_DA_item.pnml"
 
-#include "src/Diesel/Brazil_BF_EMD_GL8_graphics.pnml"
-#include "src/Diesel/Brazil_BF_EMD_GL8_item.pnml"
+#include "src/Diesel/EMD_GL8_graphics.pnml"
+#include "src/Diesel/EMD_GL8_item.pnml"
 
-#include "src/Diesel/Brazil_EFVM_ML4000_graphics.pnml"
-#include "src/Diesel/Brazil_EFVM_ML4000_item.pnml"
+#include "src/Diesel/Krauss_Maffei_ML_4000_graphics.pnml"
+#include "src/Diesel/Krauss_Maffei_ML_4000_item.pnml"
 
-#include "src/Diesel/Russia_RZD_TEP60_graphics.pnml"
-#include "src/Diesel/Russia_RZD_TEP60_item.pnml"
+#include "src/Diesel/Kolomna_TEP60_graphics.pnml"
+#include "src/Diesel/Kolomna_TEP60_item.pnml"
 
-#include "src/Diesel/Belgium_NMBS_SNCB_62_graphics.pnml"
-#include "src/Diesel/Belgium_NMBS_SNCB_62_item.pnml"
+#include "src/Diesel/BN_ACEC_62_graphics.pnml"
+#include "src/Diesel/BN_ACEC_62_item.pnml"
 
-#include "src/Diesel/Denmark_DSB_MaK_100_graphics.pnml"
-#include "src/Diesel/Denmark_DSB_MaK_100_item.pnml"
+#include "src/Diesel/MaK_100_graphics.pnml"
+#include "src/Diesel/MaK_100_item.pnml"
 
-#include "src/Diesel/India_Indian_Railways_WDM_2_graphics.pnml"
-#include "src/Diesel/India_Indian_Railways_WDM_2_item.pnml"
+#include "src/Diesel/ALCO_DL560C_WDM_2_graphics.pnml"
+#include "src/Diesel/ALCO_DL560C_WDM_2_item.pnml"
 
-#include "src/Diesel/UK_BR_14_graphics.pnml"
-#include "src/Diesel/UK_BR_14_item.pnml"
+#include "src/Diesel/BR_14_0_6_0DH_graphics.pnml"
+#include "src/Diesel/BR_14_0_6_0DH_item.pnml"
 
-#include "src/Diesel/Russia_RZD_ChME3_graphics.pnml"
-#include "src/Diesel/Russia_RZD_ChME3_item.pnml"
+#include "src/Diesel/CKD_T_669_graphics.pnml"
+#include "src/Diesel/CKD_T_669_item.pnml"
 
-#include "src/Diesel/Argentina_MF_GM_EMD_J16CW_AC_graphics.pnml"
-#include "src/Diesel/Argentina_MF_GM_EMD_J16CW_AC_item.pnml"
+#include "src/Diesel/UGOFE_GM_EMD_J16CW_AC_graphics.pnml"
+#include "src/Diesel/UGOFE_GM_EMD_J16CW_AC_item.pnml"
 
-#include "src/Diesel/Russia_RZD_M62_graphics.pnml"
-#include "src/Diesel/Russia_RZD_M62_item.pnml"
+#include "src/Diesel/LTZ_M62_graphics.pnml"
+#include "src/Diesel/LTZ_M62_item.pnml"
 
-#include "src/Diesel/Australia_NSWGR_422_graphics.pnml"
-#include "src/Diesel/Australia_NSWGR_422_item.pnml"
+#include "src/Diesel/EMD_Clyde_J26C_graphics.pnml"
+#include "src/Diesel/EMD_Clyde_J26C_item.pnml"
 
-#include "src/Diesel/Egypt_ENR_G22W_graphics.pnml"
-#include "src/Diesel/Egypt_ENR_G22W_item.pnml"
+#include "src/Diesel/GE_G22W_graphics.pnml"
+#include "src/Diesel/GE_G22W_item.pnml"
 
-#include "src/Diesel/Australia_Queensland_Rail_2100_graphics.pnml"
-#include "src/Diesel/Australia_Queensland_Rail_2100_item.pnml"
+#include "src/Diesel/EMD_Clyde_GL26C_graphics.pnml"
+#include "src/Diesel/EMD_Clyde_GL26C_item.pnml"
 
-#include "src/Diesel/Croatia_HZ_2062_graphics.pnml"
-#include "src/Diesel/Croatia_HZ_2062_item.pnml"
+#include "src/Diesel/EMD_G26_graphics.pnml"
+#include "src/Diesel/EMD_G26_item.pnml"
 
-#include "src/Diesel/Sweden_SJ_V4_graphics.pnml"
-#include "src/Diesel/Sweden_SJ_V4_item.pnml"
+#include "src/Diesel/Henschel_TGOJ_V4_graphics.pnml"
+#include "src/Diesel/Henschel_TGOJ_V4_item.pnml"
 
-#include "src/Diesel/Canada_CNR_MLW_M420W_graphics.pnml"
-#include "src/Diesel/Canada_CNR_MLW_M420W_item.pnml"
+#include "src/Diesel/MLW_M420W_graphics.pnml"
+#include "src/Diesel/MLW_M420W_item.pnml"
 
-#include "src/Diesel/USA_Amtrak_SDP_40F_graphics.pnml"
-#include "src/Diesel/USA_Amtrak_SDP_40F_item.pnml"
+#include "src/Diesel/EMD_SDP_40F_graphics.pnml"
+#include "src/Diesel/EMD_SDP_40F_item.pnml"
 
-#include "src/Diesel/China_China_Railways_DFH3_graphics.pnml"
-#include "src/Diesel/China_China_Railways_DFH3_item.pnml"
+#include "src/Diesel/Sifang_DFH3_graphics.pnml"
+#include "src/Diesel/Sifang_DFH3_item.pnml"
 
-#include "src/Diesel/Panama_Panama_Canal_Railway_EMD_F40PH_graphics.pnml"
-#include "src/Diesel/Panama_Panama_Canal_Railway_EMD_F40PH_item.pnml"
+#include "src/Diesel/EMD_F40PH_graphics.pnml"
+#include "src/Diesel/EMD_F40PH_item.pnml"
 
-#include "src/Diesel/Portugal_CP_1900_graphics.pnml"
-#include "src/Diesel/Portugal_CP_1900_item.pnml"
+#include "src/Diesel/Sorefame_Alsthom_1900_graphics.pnml"
+#include "src/Diesel/Sorefame_Alsthom_1900_item.pnml"
 
-#include "src/Diesel/Finland_VR_Dr16_graphics.pnml"
-#include "src/Diesel/Finland_VR_Dr16_item.pnml"
+#include "src/Diesel/Valmet_Oy_Dr16_graphics.pnml"
+#include "src/Diesel/Valmet_Oy_Dr16_item.pnml"
 
-#include "src/Diesel/Russia_RZD_TEP80_graphics.pnml"
-#include "src/Diesel/Russia_RZD_TEP80_item.pnml"
+#include "src/Diesel/Kolomena_TEP80_graphics.pnml"
+#include "src/Diesel/Kolomena_TEP80_item.pnml"
 
-#include "src/Diesel/Australia_Australian_National_AN_graphics.pnml"
-#include "src/Diesel/Australia_Australian_National_AN_item.pnml"
+#include "src/Diesel/EMD_Clyde_JT46C_graphics.pnml"
+#include "src/Diesel/EMD_Clyde_JT46C_item.pnml"
 
-#include "src/Diesel/USA_Amtrak_P42DC_Genesis_graphics.pnml"
-#include "src/Diesel/USA_Amtrak_P42DC_Genesis_item.pnml"
+#include "src/Diesel/GE_P42DC_Genesis_graphics.pnml"
+#include "src/Diesel/GE_P42DC_Genesis_item.pnml"
 
-#include "src/Diesel/Turkey_TCDD_DH7000_graphics.pnml"
-#include "src/Diesel/Turkey_TCDD_DH7000_item.pnml"
+#include "src/Diesel/Tulomsas_TCDD_DH7000_graphics.pnml"
+#include "src/Diesel/Tulomsas_TCDD_DH7000_item.pnml"
 
-#include "src/Diesel/Argentina_MF_GE_U20C_graphics.pnml"
-#include "src/Diesel/Argentina_MF_GE_U20C_item.pnml"
+#include "src/Diesel/GE_U20C_graphics.pnml"
+#include "src/Diesel/GE_U20C_item.pnml"
 
-#include "src/Diesel/Belgium_NMBS_SNCB_7800_graphics.pnml"
-#include "src/Diesel/Belgium_NMBS_SNCB_7800_item.pnml"
+#include "src/Diesel/Vossloh_Siemens_serie_77_78_graphics.pnml"
+#include "src/Diesel/Vossloh_Siemens_serie_77_78_item.pnml"
 
-#include "src/Diesel/UK_BR_66_graphics.pnml"
-#include "src/Diesel/UK_BR_66_item.pnml"
+#include "src/Diesel/EMD_JT42CWRM_graphics.pnml"
+#include "src/Diesel/EMD_JT42CWRM_item.pnml"
 
-#include "src/Diesel/UK_BR_67_graphics.pnml"
-#include "src/Diesel/UK_BR_67_item.pnml"
+#include "src/Diesel/EMD_JT42HW_HS_graphics.pnml"
+#include "src/Diesel/EMD_JT42HW_HS_item.pnml"
 
-#include "src/Diesel/Iran_RAI_DE43CA_Prima_graphics.pnml"
-#include "src/Diesel/Iran_RAI_DE43CA_Prima_item.pnml"
+#include "src/Diesel/Alstom_DE43CA_Prima_graphics.pnml"
+#include "src/Diesel/Alstom_DE43CA_Prima_item.pnml"
 
-#include "src/Diesel/China_MTR_8000_graphics.pnml"
-#include "src/Diesel/China_MTR_8000_item.pnml"
+#include "src/Diesel/Siemens_ER20_Eurorunner_graphics.pnml"
+#include "src/Diesel/Siemens_ER20_Eurorunner_item.pnml"
 
-#include "src/Diesel/Ukraine_UZ_TEP150_graphics.pnml"
-#include "src/Diesel/Ukraine_UZ_TEP150_item.pnml"
+#include "src/Diesel/LTZ_TEP150_graphics.pnml"
+#include "src/Diesel/LTZ_TEP150_item.pnml"
 
-#include "src/Diesel/China_China_Railways_HXN5_graphics.pnml"
-#include "src/Diesel/China_China_Railways_HXN5_item.pnml"
+#include "src/Diesel/GE_CRRC_Qishuyan_ES59ACi_graphics.pnml"
+#include "src/Diesel/GE_CRRC_Qishuyan_ES59ACi_item.pnml"
 
-#include "src/Diesel/Germany_DB_261_Gravita_10BB_graphics.pnml"
-#include "src/Diesel/Germany_DB_261_Gravita_10BB_item.pnml"
+#include "src/Diesel/Voith_Gravita_10_BB_graphics.pnml"
+#include "src/Diesel/Voith_Gravita_10_BB_item.pnml"
 
-#include "src/Diesel/Germany_HVLE_V490_graphics.pnml"
-#include "src/Diesel/Germany_HVLE_V490_item.pnml"
+#include "src/Diesel/Voith_Maxima_40_CC_graphics.pnml"
+#include "src/Diesel/Voith_Maxima_40_CC_item.pnml"
 
-#include "src/Diesel/Russia_RZD_GT1_graphics.pnml"
-#include "src/Diesel/Russia_RZD_GT1_item.pnml"
+#include "src/Diesel/Voronezh_VNIIZHT_GT1_graphics.pnml"
+#include "src/Diesel/Voronezh_VNIIZHT_GT1_item.pnml"
 
-#include "src/Diesel/USA_UP_EMD_DDA40X_graphics.pnml"
-#include "src/Diesel/USA_UP_EMD_DDA40X_item.pnml"
+#include "src/Diesel/EMD_DDA40X_graphics.pnml"
+#include "src/Diesel/EMD_DDA40X_item.pnml"
 
-#include "src/Diesel/Russia_RZD_Emch_3_graphics.pnml"
-#include "src/Diesel/Russia_RZD_Emch_3_item.pnml"
+#include "src/Diesel/Hohenzollern_Emch3_graphics.pnml"
+#include "src/Diesel/Hohenzollern_Emch3_item.pnml"
 
-#include "src/Diesel/Canada_CNR_9000_graphics.pnml"
-#include "src/Diesel/Canada_CNR_9000_item.pnml"
+#include "src/Diesel/Canadian_Locomotive_Company_V_1_graphics.pnml"
+#include "src/Diesel/Canadian_Locomotive_Company_V_1_item.pnml"
 
-#include "src/Diesel/UK_LMS_7051_diesel_shunter_graphics.pnml"
-#include "src/Diesel/UK_LMS_7051_diesel_shunter_item.pnml"
+#include "src/Diesel/LMS_7051_Diesel_Shunter_graphics.pnml"
+#include "src/Diesel/LMS_7051_Diesel_Shunter_item.pnml"
 
-#include "src/Diesel/USA_Rock_Island_EMC_TA_graphics.pnml"
-#include "src/Diesel/USA_Rock_Island_EMC_TA_item.pnml"
+#include "src/Diesel/EMC_TA_graphics.pnml"
+#include "src/Diesel/EMC_TA_item.pnml"
 
-#include "src/Diesel/USA_NYC_Baldwin_VO_660_graphics.pnml"
-#include "src/Diesel/USA_NYC_Baldwin_VO_660_item.pnml"
+#include "src/Diesel/Baldwin_VO_660_graphics.pnml"
+#include "src/Diesel/Baldwin_VO_660_item.pnml"
 
-#include "src/Diesel/UK_BR_Class_D3_7_graphics.pnml"
-#include "src/Diesel/UK_BR_Class_D3_7_item.pnml"
+#include "src/Diesel/LMS_No__7080_D3_7_graphics.pnml"
+#include "src/Diesel/LMS_No__7080_D3_7_item.pnml"
 
-#include "src/Diesel/Australia_Queensland_Railways_DL_Class_graphics.pnml"
-#include "src/Diesel/Australia_Queensland_Railways_DL_Class_item.pnml"
+#include "src/Diesel/Queensland_Railways_DL_graphics.pnml"
+#include "src/Diesel/Queensland_Railways_DL_item.pnml"
 
-#include "src/Diesel/USA_PRR_FM_H_10_44_graphics.pnml"
-#include "src/Diesel/USA_PRR_FM_H_10_44_item.pnml"
+#include "src/Diesel/FM_H_10_44_graphics.pnml"
+#include "src/Diesel/FM_H_10_44_item.pnml"
 
-#include "src/Diesel/Algeria_SNTF_Baldwin_DRS6_4_1000_graphics.pnml"
-#include "src/Diesel/Algeria_SNTF_Baldwin_DRS6_4_1000_item.pnml"
+#include "src/Diesel/Baldwin_DRS6_4_1000_graphics.pnml"
+#include "src/Diesel/Baldwin_DRS6_4_1000_item.pnml"
 
-#include "src/Diesel/Ireland_CIE_113_graphics.pnml"
-#include "src/Diesel/Ireland_CIE_113_item.pnml"
+#include "src/Diesel/CIE_113_graphics.pnml"
+#include "src/Diesel/CIE_113_item.pnml"
 
-#include "src/Diesel/Brazil_EFC_3300_Baldwin_AS_616_graphics.pnml"
-#include "src/Diesel/Brazil_EFC_3300_Baldwin_AS_616_item.pnml"
+#include "src/Diesel/Baldwin_AS_616_graphics.pnml"
+#include "src/Diesel/Baldwin_AS_616_item.pnml"
 
-#include "src/Diesel/Mexico_CHP_500_FM_H_16_44_graphics.pnml"
-#include "src/Diesel/Mexico_CHP_500_FM_H_16_44_item.pnml"
+#include "src/Diesel/FM_H_16_44_graphics.pnml"
+#include "src/Diesel/FM_H_16_44_item.pnml"
 
-#include "src/Diesel/Australia_South_Australian_Railways_900_graphics.pnml"
-#include "src/Diesel/Australia_South_Australian_Railways_900_item.pnml"
+#include "src/Diesel/Islington_Railway_Workshops_SAR_900_graphics.pnml"
+#include "src/Diesel/Islington_Railway_Workshops_SAR_900_item.pnml"
 
-#include "src/Diesel/Sri_Lanka_Sri_Lanka_Railways_M2_graphics.pnml"
-#include "src/Diesel/Sri_Lanka_Sri_Lanka_Railways_M2_item.pnml"
+#include "src/Diesel/EMD_G12_A608_M2_graphics.pnml"
+#include "src/Diesel/EMD_G12_A608_M2_item.pnml"
 
-#include "src/Diesel/Ireland_CIE_001_graphics.pnml"
-#include "src/Diesel/Ireland_CIE_001_item.pnml"
+#include "src/Diesel/Metropolitan_Vickers_CIE_001_graphics.pnml"
+#include "src/Diesel/Metropolitan_Vickers_CIE_001_item.pnml"
 
-#include "src/Diesel/Italy_FS_D341_graphics.pnml"
-#include "src/Diesel/Italy_FS_D341_item.pnml"
+#include "src/Diesel/Fiat_Grandi_Motori_D_341_graphics.pnml"
+#include "src/Diesel/Fiat_Grandi_Motori_D_341_item.pnml"
 
-#include "src/Diesel/Japan_JNR_DF50_graphics.pnml"
-#include "src/Diesel/Japan_JNR_DF50_item.pnml"
+#include "src/Diesel/Kisha_Mitsubishi_NS_DF50_graphics.pnml"
+#include "src/Diesel/Kisha_Mitsubishi_NS_DF50_item.pnml"
 
-#include "src/Diesel/Australia_NSWGR_44_graphics.pnml"
-#include "src/Diesel/Australia_NSWGR_44_item.pnml"
+#include "src/Diesel/ALCO_AE_Goodwin_DL_500B_graphics.pnml"
+#include "src/Diesel/ALCO_AE_Goodwin_DL_500B_item.pnml"
 
-#include "src/Diesel/Zimbabwe_Zimbabwe_Railways_DH_1_graphics.pnml"
-#include "src/Diesel/Zimbabwe_Zimbabwe_Railways_DH_1_item.pnml"
+#include "src/Diesel/Henschel_DH_1420_graphics.pnml"
+#include "src/Diesel/Henschel_DH_1420_item.pnml"
 
-#include "src/Diesel/South_Korea_Korail_6000_EMD_SD18_graphics.pnml"
-#include "src/Diesel/South_Korea_Korail_6000_EMD_SD18_item.pnml"
+#include "src/Diesel/EMD_SD18_graphics.pnml"
+#include "src/Diesel/EMD_SD18_item.pnml"
 
-#include "src/Diesel/Italy_FS_D345_graphics.pnml"
-#include "src/Diesel/Italy_FS_D345_item.pnml"
+#include "src/Diesel/Fiat_Grandi_Motori_D_345_graphics.pnml"
+#include "src/Diesel/Fiat_Grandi_Motori_D_345_item.pnml"
 
-#include "src/Diesel/Norway_NSB_Di4_graphics.pnml"
-#include "src/Diesel/Norway_NSB_Di4_item.pnml"
+#include "src/Diesel/Henschel_Di4_graphics.pnml"
+#include "src/Diesel/Henschel_Di4_item.pnml"
 
-#include "src/Diesel/China_China_Railways_DF8_graphics.pnml"
-#include "src/Diesel/China_China_Railways_DF8_item.pnml"
+#include "src/Diesel/Qishuyan_DF8_graphics.pnml"
+#include "src/Diesel/Qishuyan_DF8_item.pnml"
 
-#include "src/Diesel/Australia_Pacific_National_G_Class_graphics.pnml"
-#include "src/Diesel/Australia_Pacific_National_G_Class_item.pnml"
+#include "src/Diesel/EMD_Clyde_JT26C_2SS_graphics.pnml"
+#include "src/Diesel/EMD_Clyde_JT26C_2SS_item.pnml"
 
-#include "src/Diesel/UK_BR_60_graphics.pnml"
-#include "src/Diesel/UK_BR_60_item.pnml"
+#include "src/Diesel/Brush_Class_60_graphics.pnml"
+#include "src/Diesel/Brush_Class_60_item.pnml"
 
-#include "src/Diesel/Australia_Westrail_P_Class_graphics.pnml"
-#include "src/Diesel/Australia_Westrail_P_Class_item.pnml"
+#include "src/Diesel/GE_Goninan_CM25_8_graphics.pnml"
+#include "src/Diesel/GE_Goninan_CM25_8_item.pnml"
 
-#include "src/Diesel/Saudi_Arabia_Saudi_Railways_4000_EMD_SD70ACS_graphics.pnml"
-#include "src/Diesel/Saudi_Arabia_Saudi_Railways_4000_EMD_SD70ACS_item.pnml"
+#include "src/Diesel/EMD_SD70ACS_graphics.pnml"
+#include "src/Diesel/EMD_SD70ACS_item.pnml"
 
-#include "src/Diesel/Ireland_IE_201_graphics.pnml"
-#include "src/Diesel/Ireland_IE_201_item.pnml"
+#include "src/Diesel/GMD_JT42HCW_graphics.pnml"
+#include "src/Diesel/GMD_JT42HCW_item.pnml"
 
-#include "src/Diesel/USA_Metrolink_EMD_F59PH_graphics.pnml"
-#include "src/Diesel/USA_Metrolink_EMD_F59PH_item.pnml"
+#include "src/Diesel/EMD_F59PH_graphics.pnml"
+#include "src/Diesel/EMD_F59PH_item.pnml"
 
-#include "src/Diesel/France_SNCF_461000_graphics.pnml"
-#include "src/Diesel/France_SNCF_461000_item.pnml"
+#include "src/Diesel/MaK___Vossloh_G1206_graphics.pnml"
+#include "src/Diesel/MaK___Vossloh_G1206_item.pnml"
 
-#include "src/Diesel/Italy_ACT_D_200_graphics.pnml"
-#include "src/Diesel/Italy_ACT_D_200_item.pnml"
+#include "src/Diesel/Vossloh_G_2000_BB_graphics.pnml"
+#include "src/Diesel/Vossloh_G_2000_BB_item.pnml"
 
-#include "src/Diesel/Canada_GO_Transit_MP40PH_3C_graphics.pnml"
-#include "src/Diesel/Canada_GO_Transit_MP40PH_3C_item.pnml"
+#include "src/Diesel/MPI_MP40PH_3C_graphics.pnml"
+#include "src/Diesel/MPI_MP40PH_3C_item.pnml"
 
-#include "src/Diesel/Spain_RENFE_Class_334_graphics.pnml"
-#include "src/Diesel/Spain_RENFE_Class_334_item.pnml"
+#include "src/Diesel/Vossloh_Espana___EMD_334_graphics.pnml"
+#include "src/Diesel/Vossloh_Espana___EMD_334_item.pnml"
 
-#include "src/Diesel/Indonesia_Indonesia_Railways_CC300_graphics.pnml"
-#include "src/Diesel/Indonesia_Indonesia_Railways_CC300_item.pnml"
+#include "src/Diesel/INKA_CC300_graphics.pnml"
+#include "src/Diesel/INKA_CC300_item.pnml"
 
-#include "src/Diesel/USA_Pennsylvania_Railroad_RF_16_Sharknose_graphics.pnml"
-#include "src/Diesel/USA_Pennsylvania_Railroad_RF_16_Sharknose_item.pnml"
+#include "src/Diesel/Baldwin_RF_16_Sharknose_graphics.pnml"
+#include "src/Diesel/Baldwin_RF_16_Sharknose_item.pnml"
 
-#include "src/Diesel/Argentina_Great_Southern_Railway_DH501_graphics.pnml"
-#include "src/Diesel/Argentina_Great_Southern_Railway_DH501_item.pnml"
+#include "src/Diesel/Great_Southern_Railway_DH501_graphics.pnml"
+#include "src/Diesel/Great_Southern_Railway_DH501_item.pnml"
 
-#include "src/Diesel/Brazil_EE_VFFLB_graphics.pnml"
-#include "src/Diesel/Brazil_EE_VFFLB_item.pnml"
+#include "src/Diesel/EE_VFFLB_graphics.pnml"
+#include "src/Diesel/EE_VFFLB_item.pnml"
 
-#include "src/Diesel/South_Africa_SAR_DS_graphics.pnml"
-#include "src/Diesel/South_Africa_SAR_DS_item.pnml"
+#include "src/Diesel/AEG_SAR_DS_graphics.pnml"
+#include "src/Diesel/AEG_SAR_DS_item.pnml"
 
-#include "src/Diesel/Algeria_SNTF_040_DG_graphics.pnml"
-#include "src/Diesel/Algeria_SNTF_040_DG_item.pnml"
+#include "src/Diesel/GM_GT_26_W__040DG__graphics.pnml"
+#include "src/Diesel/GM_GT_26_W__040DG__item.pnml"
 
-#include "src/Diesel/Tunisia_SNCFT_040_DF_graphics.pnml"
-#include "src/Diesel/Tunisia_SNCFT_040_DF_item.pnml"
+#include "src/Diesel/EMD_GL8__040DF__graphics.pnml"
+#include "src/Diesel/EMD_GL8__040DF__item.pnml"
 
-#include "src/Diesel/Chile_EFE_GE_U5B_graphics.pnml"
-#include "src/Diesel/Chile_EFE_GE_U5B_item.pnml"
+#include "src/Diesel/GE_U5B_graphics.pnml"
+#include "src/Diesel/GE_U5B_item.pnml"
 
-#include "src/Diesel/Ukraine_UZ_TEP10L_graphics.pnml"
-#include "src/Diesel/Ukraine_UZ_TEP10L_item.pnml"
+#include "src/Diesel/LTZ_TEP10L_graphics.pnml"
+#include "src/Diesel/LTZ_TEP10L_item.pnml"
 
-#include "src/Diesel/Peru_Ferrocarril_Central_Andino_ALCO_RSD_39_graphics.pnml"
-#include "src/Diesel/Peru_Ferrocarril_Central_Andino_ALCO_RSD_39_item.pnml"
+#include "src/Diesel/ALCO_RSD_39_graphics.pnml"
+#include "src/Diesel/ALCO_RSD_39_item.pnml"
 
-#include "src/Diesel/Brazil_EFVM_EMD_DDM45_graphics.pnml"
-#include "src/Diesel/Brazil_EFVM_EMD_DDM45_item.pnml"
+#include "src/Diesel/EMD_DDM45_graphics.pnml"
+#include "src/Diesel/EMD_DDM45_item.pnml"
 
-#include "src/Diesel/Egypt_ENR_TE114E_graphics.pnml"
-#include "src/Diesel/Egypt_ENR_TE114E_item.pnml"
+#include "src/Diesel/LTZ_TE114E_graphics.pnml"
+#include "src/Diesel/LTZ_TE114E_item.pnml"
 
-#include "src/Diesel/Tunisia_SNCFT_040_DJ_graphics.pnml"
-#include "src/Diesel/Tunisia_SNCFT_040_DJ_item.pnml"
+#include "src/Diesel/GM_GL_18_B__040DJ__graphics.pnml"
+#include "src/Diesel/GM_GL_18_B__040DJ__item.pnml"
 
-#include "src/Diesel/Belarus_BCh_2TE10M_graphics.pnml"
-#include "src/Diesel/Belarus_BCh_2TE10M_item.pnml"
+#include "src/Diesel/LTZ_2TE10M_graphics.pnml"
+#include "src/Diesel/LTZ_2TE10M_item.pnml"
 
-#include "src/Diesel/Peru_Ferrocarril_Central_Andino_GE_C39_8_graphics.pnml"
-#include "src/Diesel/Peru_Ferrocarril_Central_Andino_GE_C39_8_item.pnml"
+#include "src/Diesel/GE_C39_8__FCCA__graphics.pnml"
+#include "src/Diesel/GE_C39_8__FCCA__item.pnml"
 
-#include "src/Diesel/Poland_PKP_SP32_graphics.pnml"
-#include "src/Diesel/Poland_PKP_SP32_item.pnml"
+#include "src/Diesel/FAUR_LDE1300_graphics.pnml"
+#include "src/Diesel/FAUR_LDE1300_item.pnml"
 
-#include "src/Diesel/Ukraine_UZ_2TE126_graphics.pnml"
-#include "src/Diesel/Ukraine_UZ_2TE126_item.pnml"
+#include "src/Diesel/LTZ_2TE126_graphics.pnml"
+#include "src/Diesel/LTZ_2TE126_item.pnml"
 
-#include "src/Diesel/Morocco_ONCF_DF_100_graphics.pnml"
-#include "src/Diesel/Morocco_ONCF_DF_100_item.pnml"
+#include "src/Diesel/Alsthom_CC_72000_graphics.pnml"
+#include "src/Diesel/Alsthom_CC_72000_item.pnml"
 
-#include "src/Diesel/Ukraine_UZ_2TE10Ut_graphics.pnml"
-#include "src/Diesel/Ukraine_UZ_2TE10Ut_item.pnml"
+#include "src/Diesel/LTZ_2TE10Ut_graphics.pnml"
+#include "src/Diesel/LTZ_2TE10Ut_item.pnml"
 
-#include "src/Diesel/Argentina_SOFSE_3193_graphics.pnml"
-#include "src/Diesel/Argentina_SOFSE_3193_item.pnml"
+#include "src/Diesel/SOFSE_319_3_graphics.pnml"
+#include "src/Diesel/SOFSE_319_3_item.pnml"
 
-#include "src/Diesel/Serbia_ZS_621_graphics.pnml"
-#include "src/Diesel/Serbia_ZS_621_item.pnml"
+#include "src/Diesel/CMKS_709_0_4_0DE_graphics.pnml"
+#include "src/Diesel/CMKS_709_0_4_0DE_item.pnml"
 
-#include "src/Diesel/Argentina_SOFSE_CNR_CKD8_graphics.pnml"
-#include "src/Diesel/Argentina_SOFSE_CNR_CKD8_item.pnml"
+#include "src/Diesel/CNR_CKD8G_graphics.pnml"
+#include "src/Diesel/CNR_CKD8G_item.pnml"
 
-#include "src/Diesel/Italy_FS_207_graphics.pnml"
-#include "src/Diesel/Italy_FS_207_item.pnml"
+#include "src/Diesel/Antonio_Badoni_Lecco_Sogliole_207_graphics.pnml"
+#include "src/Diesel/Antonio_Badoni_Lecco_Sogliole_207_item.pnml"
 
-#include "src/Diesel/Russia_RZD_Db_graphics.pnml"
-#include "src/Diesel/Russia_RZD_Db_item.pnml"
+#include "src/Diesel/Baldwin_0_6_6_0_1000_graphics.pnml"
+#include "src/Diesel/Baldwin_0_6_6_0_1000_item.pnml"
 
-#include "src/Diesel/Portugal_CP_1500_graphics.pnml"
-#include "src/Diesel/Portugal_CP_1500_item.pnml"
+#include "src/Diesel/ALCO_RSC_2_graphics.pnml"
+#include "src/Diesel/ALCO_RSC_2_item.pnml"
 
-#include "src/Diesel/Spain_RENFE_308_graphics.pnml"
-#include "src/Diesel/Spain_RENFE_308_item.pnml"
+#include "src/Diesel/GE_U10B_graphics.pnml"
+#include "src/Diesel/GE_U10B_item.pnml"
 
-#include "src/Diesel/France_SNCF_BB_67400_graphics.pnml"
-#include "src/Diesel/France_SNCF_BB_67400_item.pnml"
+#include "src/Diesel/Brissonneau_and_Lotz_BB_67400_graphics.pnml"
+#include "src/Diesel/Brissonneau_and_Lotz_BB_67400_item.pnml"
 
-#include "src/Diesel/Netherlands_NS_6400_graphics.pnml"
-#include "src/Diesel/Netherlands_NS_6400_item.pnml"
+#include "src/Diesel/MaK_DE_6400_graphics.pnml"
+#include "src/Diesel/MaK_DE_6400_item.pnml"
 
-#include "src/Diesel/Australia_Pacific_National_XR_XRB_graphics.pnml"
-#include "src/Diesel/Australia_Pacific_National_XR_XRB_item.pnml"
+#include "src/Diesel/EMD_Pacific_GT26C_3_graphics.pnml"
+#include "src/Diesel/EMD_Pacific_GT26C_3_item.pnml"
 
-#include "src/Diesel/Norway_CargoNet_312_graphics.pnml"
-#include "src/Diesel/Norway_CargoNet_312_item.pnml"
+#include "src/Diesel/CargoNet_312_graphics.pnml"
+#include "src/Diesel/CargoNet_312_item.pnml"
 
-#include "src/Diesel/Australia_Pacific_National_92_graphics.pnml"
-#include "src/Diesel/Australia_Pacific_National_92_item.pnml"
+#include "src/Diesel/GE_Pacific_C44ESACi_graphics.pnml"
+#include "src/Diesel/GE_Pacific_C44ESACi_item.pnml"
 
-#include "src/Diesel/Egypt_ENR_2400_GE_ES40ACi_graphics.pnml"
-#include "src/Diesel/Egypt_ENR_2400_GE_ES40ACi_item.pnml"
+#include "src/Diesel/GE_ES40ACi_graphics.pnml"
+#include "src/Diesel/GE_ES40ACi_item.pnml"
 
-#include "src/Diesel/UK_BR_68_graphics.pnml"
-#include "src/Diesel/UK_BR_68_item.pnml"
+#include "src/Diesel/Stadler_UKLight_graphics.pnml"
+#include "src/Diesel/Stadler_UKLight_item.pnml"
 
-#include "src/Diesel/South_Africa_SAR_Afro_4000_graphics.pnml"
-#include "src/Diesel/South_Africa_SAR_Afro_4000_item.pnml"
+#include "src/Diesel/Vossloh_Afro_4000_graphics.pnml"
+#include "src/Diesel/Vossloh_Afro_4000_item.pnml"
 
-#include "src/Diesel/USA_Amtrak_Charger_graphics.pnml"
-#include "src/Diesel/USA_Amtrak_Charger_item.pnml"
+#include "src/Diesel/Siemens_Charger_ALC_42_graphics.pnml"
+#include "src/Diesel/Siemens_Charger_ALC_42_item.pnml"
 
-#include "src/Diesel/Gabon_Alsthom_AD30B_graphics.pnml"
-#include "src/Diesel/Gabon_Alsthom_AD30B_item.pnml"
+#include "src/Diesel/Alsthom_AD30B_graphics.pnml"
+#include "src/Diesel/Alsthom_AD30B_item.pnml"
 
-#include "src/Diesel/Ghana_Railway_Corporation_Class_TT12_graphics.pnml"
-#include "src/Diesel/Ghana_Railway_Corporation_Class_TT12_item.pnml"
+#include "src/Diesel/Henschel_EMD_TT12_graphics.pnml"
+#include "src/Diesel/Henschel_EMD_TT12_item.pnml"
 
-#include "src/Diesel/Sierra_Leone_LAMCO_301_Series_graphics.pnml"
-#include "src/Diesel/Sierra_Leone_LAMCO_301_Series_item.pnml"
+#include "src/Diesel/Henschel_GE_G16_graphics.pnml"
+#include "src/Diesel/Henschel_GE_G16_item.pnml"
 
-#include "src/Diesel/Congo_Alstom_BB_BB_graphics.pnml"
-#include "src/Diesel/Congo_Alstom_BB_BB_item.pnml"
+#include "src/Diesel/Alsthom_BB_BB_300_graphics.pnml"
+#include "src/Diesel/Alsthom_BB_BB_300_item.pnml"
 
-#include "src/Diesel/Zimbabwe_Sorefame_DE8_graphics.pnml"
-#include "src/Diesel/Zimbabwe_Sorefame_DE8_item.pnml"
+#include "src/Diesel/Sorefame_DE8_graphics.pnml"
+#include "src/Diesel/Sorefame_DE8_item.pnml"
 
-#include "src/Diesel/Ivory_Coast_GMD_GT22LC2_graphics.pnml"
-#include "src/Diesel/Ivory_Coast_GMD_GT22LC2_item.pnml"
+#include "src/Diesel/GMD_GT22LC_2_graphics.pnml"
+#include "src/Diesel/GMD_GT22LC_2_item.pnml"
 
-#include "src/Diesel/USA_UP_7000_GE_AC6000CW_graphics.pnml"
-#include "src/Diesel/USA_UP_7000_GE_AC6000CW_item.pnml"
+#include "src/Diesel/GE_AC6044CW_graphics.pnml"
+#include "src/Diesel/GE_AC6044CW_item.pnml"
 
-#include "src/Diesel/Australia_BHP_6071_GE_AC6000CW_graphics.pnml"
-#include "src/Diesel/Australia_BHP_6071_GE_AC6000CW_item.pnml"
+#include "src/Diesel/GE_AC6000CW_BHP_6071_graphics.pnml"
+#include "src/Diesel/GE_AC6000CW_BHP_6071_item.pnml"
 
-#include "src/Diesel/Australia_NSW_41_graphics.pnml"
-#include "src/Diesel/Australia_NSW_41_item.pnml"
+#include "src/Diesel/BTH_41_Class_graphics.pnml"
+#include "src/Diesel/BTH_41_Class_item.pnml"
 
-#include "src/Diesel/Australia_NSW_48_graphics.pnml"
-#include "src/Diesel/Australia_NSW_48_item.pnml"
+#include "src/Diesel/ALCO_AE_Goodwin_DL531_532_graphics.pnml"
+#include "src/Diesel/ALCO_AE_Goodwin_DL531_532_item.pnml"
 
-#include "src/Diesel/Australia_SAR_930_graphics.pnml"
-#include "src/Diesel/Australia_SAR_930_item.pnml"
+#include "src/Diesel/ALCO_AE_Goodwin_DL500_graphics.pnml"
+#include "src/Diesel/ALCO_AE_Goodwin_DL500_item.pnml"
 
-#include "src/Diesel/Australia_Commonwealth_GM_graphics.pnml"
-#include "src/Diesel/Australia_Commonwealth_GM_item.pnml"
+#include "src/Diesel/EMD_Clyde_A16C_graphics.pnml"
+#include "src/Diesel/EMD_Clyde_A16C_item.pnml"
 
-#include "src/Diesel/Australia_NSW_42_graphics.pnml"
-#include "src/Diesel/Australia_NSW_42_item.pnml"
+#include "src/Diesel/EMD_Clyde_A7_graphics.pnml"
+#include "src/Diesel/EMD_Clyde_A7_item.pnml"
 
-#include "src/Diesel/Australia_AN_D_graphics.pnml"
-#include "src/Diesel/Australia_AN_D_item.pnml"
+#include "src/Diesel/EMD_Clyde_AT42C__graphics.pnml"
+#include "src/Diesel/EMD_Clyde_AT42C__item.pnml"
 
-#include "src/Diesel/Australia_NSW_90_graphics.pnml"
-#include "src/Diesel/Australia_NSW_90_item.pnml"
+#include "src/Diesel/EMD_GT46CWM_graphics.pnml"
+#include "src/Diesel/EMD_GT46CWM_item.pnml"
 
-#include "src/Diesel/Australia_EMD_NR_Class_graphics.pnml"
-#include "src/Diesel/Australia_EMD_NR_Class_item.pnml"
+#include "src/Diesel/Clyde_EMD_GT46CW_NR_Concept_graphics.pnml"
+#include "src/Diesel/Clyde_EMD_GT46CW_NR_Concept_item.pnml"
 
-#include "src/Diesel/Australia_NSW_PTC_73_graphics.pnml"
-#include "src/Diesel/Australia_NSW_PTC_73_item.pnml"
+#include "src/Diesel/Clyde_JE28C_PTC_73_Class_Concept_graphics.pnml"
+#include "src/Diesel/Clyde_JE28C_PTC_73_Class_Concept_item.pnml"
 
-#include "src/Diesel/Australia_V_Line_N_graphics.pnml"
-#include "src/Diesel/Australia_V_Line_N_item.pnml"
+#include "src/Diesel/EMD_Clyde_JT22HC_2_graphics.pnml"
+#include "src/Diesel/EMD_Clyde_JT22HC_2_item.pnml"
 
-#include "src/Diesel/Australia_V_Line_G_graphics.pnml"
-#include "src/Diesel/Australia_V_Line_G_item.pnml"
+#include "src/Diesel/EMD_Clyde_JT26C_2SS_V_line_G_graphics.pnml"
+#include "src/Diesel/EMD_Clyde_JT26C_2SS_V_line_G_item.pnml"
 
-#include "src/Diesel/Australia_NSW_82_graphics.pnml"
-#include "src/Diesel/Australia_NSW_82_item.pnml"
+#include "src/Diesel/EMD_Clyde_JT42C_NSW82_graphics.pnml"
+#include "src/Diesel/EMD_Clyde_JT42C_NSW82_item.pnml"
 
-#include "src/Diesel/Australia_GML_10_graphics.pnml"
-#include "src/Diesel/Australia_GML_10_item.pnml"
+#include "src/Diesel/EMD_JT42C_90_1277_graphics.pnml"
+#include "src/Diesel/EMD_JT42C_90_1277_item.pnml"
 
-#include "src/Diesel/Australia_Westrail_S_graphics.pnml"
-#include "src/Diesel/Australia_Westrail_S_item.pnml"
+#include "src/Diesel/EMD_Clyde_ML2_graphics.pnml"
+#include "src/Diesel/EMD_Clyde_ML2_item.pnml"
 
-#include "src/Diesel/Australia_VR_B_graphics.pnml"
-#include "src/Diesel/Australia_VR_B_item.pnml"
+#include "src/Diesel/EMD_Clyde_G16C_X1_graphics.pnml"
+#include "src/Diesel/EMD_Clyde_G16C_X1_item.pnml"
 
-#include "src/Diesel/Australia_Victoria_X1_graphics.pnml"
-#include "src/Diesel/Australia_Victoria_X1_item.pnml"
+#include "src/Diesel/ALCO_Comeng_CE615A_graphics.pnml"
+#include "src/Diesel/ALCO_Comeng_CE615A_item.pnml"
 
-#include "src/Diesel/Australia_NSW_80_graphics.pnml"
-#include "src/Diesel/Australia_NSW_80_item.pnml"
+#include "src/Diesel/EMD_NOHAB_J30C_2DSB_MZ_III_graphics.pnml"
+#include "src/Diesel/EMD_NOHAB_J30C_2DSB_MZ_III_item.pnml"
 
-#include "src/Diesel/Australia_IRA_DSB_MZ_III_graphics.pnml"
-#include "src/Diesel/Australia_IRA_DSB_MZ_III_item.pnml"
+#include "src/Diesel/EMD_Clyde_AT26C_Twin_16_645_graphics.pnml"
+#include "src/Diesel/EMD_Clyde_AT26C_Twin_16_645_item.pnml"
 
-#include "src/Diesel/Australia_Commonwealth_Twin_16_645_graphics.pnml"
-#include "src/Diesel/Australia_Commonwealth_Twin_16_645_item.pnml"
+#include "src/Diesel/EMD_Clyde_GL26C_2_graphics.pnml"
+#include "src/Diesel/EMD_Clyde_GL26C_2_item.pnml"
 
-#include "src/Diesel/Australia_QR_2170_graphics.pnml"
-#include "src/Diesel/Australia_QR_2170_item.pnml"
+#include "src/Diesel/EEC_A_249__graphics.pnml"
+#include "src/Diesel/EEC_A_249__item.pnml"
 
-#include "src/Diesel/Australia_TGR_Z_graphics.pnml"
-#include "src/Diesel/Australia_TGR_Z_item.pnml"
+#include "src/Diesel/EEC_A_253_graphics.pnml"
+#include "src/Diesel/EEC_A_253_item.pnml"
 
-#include "src/Diesel/Australia_QR_2350_graphics.pnml"
-#include "src/Diesel/Australia_QR_2350_item.pnml"
+#include "src/Diesel/GE_U26C_graphics.pnml"
+#include "src/Diesel/GE_U26C_item.pnml"
 
-#include "src/Diesel/New_Zealand_DX_Class_graphics.pnml"
-#include "src/Diesel/New_Zealand_DX_Class_item.pnml"
+#include "src/Diesel/EMD_Clyde_G8C_graphics.pnml"
+#include "src/Diesel/EMD_Clyde_G8C_item.pnml"
 
-#include "src/Diesel/Australia_NSW_49_graphics.pnml"
-#include "src/Diesel/Australia_NSW_49_item.pnml"
+#include "src/Diesel/EMD_Clyde_G12_graphics.pnml"
+#include "src/Diesel/EMD_Clyde_G12_item.pnml"
 
-#include "src/Diesel/New_Zealand_DA_Class_graphics.pnml"
-#include "src/Diesel/New_Zealand_DA_Class_item.pnml"
+#include "src/Diesel/EMD_Clyde_G8_graphics.pnml"
+#include "src/Diesel/EMD_Clyde_G8_item.pnml"
 
-#include "src/Diesel/New_Zealand_DB_Class_graphics.pnml"
-#include "src/Diesel/New_Zealand_DB_Class_item.pnml"
+#include "src/Diesel/Goninan_47_Class_graphics.pnml"
+#include "src/Diesel/Goninan_47_Class_item.pnml"
 
-#include "src/Diesel/Australia_NSW_47_graphics.pnml"
-#include "src/Diesel/Australia_NSW_47_item.pnml"
+#include "src/Diesel/BRC_W_NSU_Class_graphics.pnml"
+#include "src/Diesel/BRC_W_NSU_Class_item.pnml"
 
-#include "src/Diesel/Australia_Commonwealth_NSU_graphics.pnml"
-#include "src/Diesel/Australia_Commonwealth_NSU_item.pnml"
+#include "src/Diesel/CRRC_Qishuyan_DF11_graphics.pnml"
+#include "src/Diesel/CRRC_Qishuyan_DF11_item.pnml"
 
-#include "src/Diesel/China_China_Railways_DF11_graphics.pnml"
-#include "src/Diesel/China_China_Railways_DF11_item.pnml"
+#include "src/Diesel/CRRC_Dalian_DF4_graphics.pnml"
+#include "src/Diesel/CRRC_Dalian_DF4_item.pnml"
 
-#include "src/Diesel/China_China_Railways_DF4_graphics.pnml"
-#include "src/Diesel/China_China_Railways_DF4_item.pnml"
+#include "src/Diesel/Tangshan_Dalian_Sifang_DF5_graphics.pnml"
+#include "src/Diesel/Tangshan_Dalian_Sifang_DF5_item.pnml"
 
-#include "src/Diesel/China_China_Railways_DF5_graphics.pnml"
-#include "src/Diesel/China_China_Railways_DF5_item.pnml"
+#include "src/Diesel/GE_ES43ACi_graphics.pnml"
+#include "src/Diesel/GE_ES43ACi_item.pnml"
 
-#include "src/Diesel/USA_GE_ES44_graphics.pnml"
-#include "src/Diesel/USA_GE_ES44_item.pnml"
+#include "src/Diesel/EMD_GP40_graphics.pnml"
+#include "src/Diesel/EMD_GP40_item.pnml"
 
-#include "src/Diesel/USA_EMD_SD70_graphics.pnml"
-#include "src/Diesel/USA_EMD_SD70_item.pnml"
+#include "src/Diesel/EMD_SD70_graphics.pnml"
+#include "src/Diesel/EMD_SD70_item.pnml"
 
-#include "src/Diesel/USA_GE_C30_7_graphics.pnml"
-#include "src/Diesel/USA_GE_C30_7_item.pnml"
+#include "src/Diesel/GE_C30_7_Dash_7_graphics.pnml"
+#include "src/Diesel/GE_C30_7_Dash_7_item.pnml"
 
-#include "src/Diesel/USA_GE_Dash_8_40C_graphics.pnml"
-#include "src/Diesel/USA_GE_Dash_8_40C_item.pnml"
+#include "src/Diesel/GE_C40_8_Dash_8_graphics.pnml"
+#include "src/Diesel/GE_C40_8_Dash_8_item.pnml"
 
-#include "src/Diesel/USA_GE_Dash_9_44CW_graphics.pnml"
-#include "src/Diesel/USA_GE_Dash_9_44CW_item.pnml"
+#include "src/Diesel/GE_C44_9W_Dash_9_graphics.pnml"
+#include "src/Diesel/GE_C44_9W_Dash_9_item.pnml"
 
-#include "src/Diesel/USA_EMD_GP40_graphics.pnml"
-#include "src/Diesel/USA_EMD_GP40_item.pnml"
+#include "src/Diesel/PESA_111D_graphics.pnml"
+#include "src/Diesel/PESA_111D_item.pnml"
 
-#include "src/Diesel/Poland_PKP_SU160_graphics.pnml"
-#include "src/Diesel/Poland_PKP_SU160_item.pnml"
+#include "src/Diesel/EMC_E3_graphics.pnml"
+#include "src/Diesel/EMC_E3_item.pnml"
 
-#include "src/Diesel/USA_EMC_E3_graphics.pnml"
-#include "src/Diesel/USA_EMC_E3_item.pnml"
+#include "src/Diesel/EMD_FT_graphics.pnml"
+#include "src/Diesel/EMD_FT_item.pnml"
 
-#include "src/Diesel/USA_EMD_FT_graphics.pnml"
-#include "src/Diesel/USA_EMD_FT_item.pnml"
+#include "src/Diesel/LTZ_TE109_graphics.pnml"
+#include "src/Diesel/LTZ_TE109_item.pnml"
 
-#include "src/Diesel/Germany_DR_132_DBAG_234_graphics.pnml"
-#include "src/Diesel/Germany_DR_132_DBAG_234_item.pnml"
+#include "src/Diesel/Krauss_Maffei_ML_2200_graphics.pnml"
+#include "src/Diesel/Krauss_Maffei_ML_2200_item.pnml"
 
-#include "src/Diesel/Yugoslavia_JZ_D66_graphics.pnml"
-#include "src/Diesel/Yugoslavia_JZ_D66_item.pnml"
+#include "src/Diesel/EMD_JT22CW_graphics.pnml"
+#include "src/Diesel/EMD_JT22CW_item.pnml"
 
-#include "src/Diesel/Ireland_CIE_071_graphics.pnml"
-#include "src/Diesel/Ireland_CIE_071_item.pnml"
+#include "src/Diesel/VEB_LKM_V180_graphics.pnml"
+#include "src/Diesel/VEB_LKM_V180_item.pnml"
 
-#include "src/Diesel/Germany_LKM_V_180_graphics.pnml"
-#include "src/Diesel/Germany_LKM_V_180_item.pnml"
+#include "src/Diesel/NOHAB_AA16_graphics.pnml"
+#include "src/Diesel/NOHAB_AA16_item.pnml"
 
-#include "src/Diesel/Sweden_NOHAB_AA16_graphics.pnml"
-#include "src/Diesel/Sweden_NOHAB_AA16_item.pnml"
+#include "src/Diesel/LEW_V100_graphics.pnml"
+#include "src/Diesel/LEW_V100_item.pnml"
 
-#include "src/Diesel/Germany_LEW_V100_graphics.pnml"
-#include "src/Diesel/Germany_LEW_V100_item.pnml"
+#include "src/Diesel/Fablok_6D_graphics.pnml"
+#include "src/Diesel/Fablok_6D_item.pnml"
 
-#include "src/Diesel/Poland_Fablok_6D_graphics.pnml"
-#include "src/Diesel/Poland_Fablok_6D_item.pnml"
+#include "src/Diesel/HCP_301D_graphics.pnml"
+#include "src/Diesel/HCP_301D_item.pnml"
 
-#include "src/Diesel/Poland_HCP_301D_graphics.pnml"
-#include "src/Diesel/Poland_HCP_301D_item.pnml"
+#include "src/Diesel/Baldwin_Lima_Hamilton_RF_615_E_graphics.pnml"
+#include "src/Diesel/Baldwin_Lima_Hamilton_RF_615_E_item.pnml"
 
-#include "src/Diesel/Argentina_RF_615_E_graphics.pnml"
-#include "src/Diesel/Argentina_RF_615_E_item.pnml"
-
-#include "src/Diesel/Zimbabwe_EE_Kerr_Vulcan_DE2_graphics.pnml"
-#include "src/Diesel/Zimbabwe_EE_Kerr_Vulcan_DE2_item.pnml"
+#include "src/Diesel/EE_Dick__Kerr___Co_Vulcan_Foundry_DE2_graphics.pnml"
+#include "src/Diesel/EE_Dick__Kerr___Co_Vulcan_Foundry_DE2_item.pnml"
 
 
 //// EMU
-#include "src/EMU/Netherlands_NS_Mat24_graphics.pnml"
-#include "src/EMU/Netherlands_NS_Mat24_item.pnml"
+#include "src/EMU/Werkspoor_Mat24_graphics.pnml"
+#include "src/EMU/Werkspoor_Mat24_item.pnml"
 
-#include "src/EMU/Austria_OBB_4041_graphics.pnml"
-#include "src/EMU/Austria_OBB_4041_item.pnml"
+#include "src/EMU/ELIN_ET_10_graphics.pnml"
+#include "src/EMU/ELIN_ET_10_item.pnml"
 
-#include "src/EMU/Italy_ATAC_ECD_21_30_graphics.pnml"
-#include "src/EMU/Italy_ATAC_ECD_21_30_item.pnml"
+#include "src/EMU/TIBB_ECD_21_30_graphics.pnml"
+#include "src/EMU/TIBB_ECD_21_30_item.pnml"
 
-#include "src/EMU/Netherlands_NS_Mat36_graphics.pnml"
-#include "src/EMU/Netherlands_NS_Mat36_item.pnml"
+#include "src/EMU/Werkspoor_Mat36_graphics.pnml"
+#include "src/EMU/Werkspoor_Mat36_item.pnml"
 
-#include "src/EMU/Italy_FS_ETR200_graphics.pnml"
-#include "src/EMU/Italy_FS_ETR200_item.pnml"
+#include "src/EMU/Breda_ETR_200_graphics.pnml"
+#include "src/EMU/Breda_ETR_200_item.pnml"
 
-#include "src/EMU/Norway_NSB_BM65_graphics.pnml"
-#include "src/EMU/Norway_NSB_BM65_item.pnml"
+#include "src/EMU/NEBB_M65_graphics.pnml"
+#include "src/EMU/NEBB_M65_item.pnml"
 
-#include "src/EMU/Italy_FS_ETR300_Settebello_graphics.pnml"
-#include "src/EMU/Italy_FS_ETR300_Settebello_item.pnml"
+#include "src/EMU/Breda_ETR_300_Settebello_graphics.pnml"
+#include "src/EMU/Breda_ETR_300_Settebello_item.pnml"
 
-#include "src/EMU/Netherlands_NS_Mat54_graphics.pnml"
-#include "src/EMU/Netherlands_NS_Mat54_item.pnml"
+#include "src/EMU/Werkspoor_Mat54_graphics.pnml"
+#include "src/EMU/Werkspoor_Mat54_item.pnml"
 
-#include "src/EMU/Turkey_TCDD_E8000_graphics.pnml"
-#include "src/EMU/Turkey_TCDD_E8000_item.pnml"
+#include "src/EMU/Alsthom_Jeumont_TCDD_E8000_graphics.pnml"
+#include "src/EMU/Alsthom_Jeumont_TCDD_E8000_item.pnml"
 
-#include "src/EMU/Switzerland_SBB_Rae_TEE_II_graphics.pnml"
-#include "src/EMU/Switzerland_SBB_Rae_TEE_II_item.pnml"
+#include "src/EMU/SIG_Rae_TEE_II_graphics.pnml"
+#include "src/EMU/SIG_Rae_TEE_II_item.pnml"
 
-#include "src/EMU/Japan_Odakyu_3100_Series_Romance_graphics.pnml"
-#include "src/EMU/Japan_Odakyu_3100_Series_Romance_item.pnml"
+#include "src/EMU/Nippon_Sharyo_Odakyu_3100_series_NSE_graphics.pnml"
+#include "src/EMU/Nippon_Sharyo_Odakyu_3100_series_NSE_item.pnml"
 
-#include "src/EMU/Japan_JNR_Shinkansen_Series_0_graphics.pnml"
-#include "src/EMU/Japan_JNR_Shinkansen_Series_0_item.pnml"
+#include "src/EMU/Hitachi_Shinkansen_Series_0_graphics.pnml"
+#include "src/EMU/Hitachi_Shinkansen_Series_0_item.pnml"
 
-#include "src/EMU/Switzerland_SBB_RABDe_510_graphics.pnml"
-#include "src/EMU/Switzerland_SBB_RABDe_510_item.pnml"
+#include "src/EMU/SWP_RABDe_510_graphics.pnml"
+#include "src/EMU/SWP_RABDe_510_item.pnml"
 
-#include "src/EMU/Denmark_DSB_S_Tog_II_graphics.pnml"
-#include "src/EMU/Denmark_DSB_S_Tog_II_item.pnml"
+#include "src/EMU/Frichs___Scandia_S_Tog_II_graphics.pnml"
+#include "src/EMU/Frichs___Scandia_S_Tog_II_item.pnml"
 
-#include "src/EMU/Germany_DB_ET420_graphics.pnml"
-#include "src/EMU/Germany_DB_ET420_item.pnml"
+#include "src/EMU/LHB_420_graphics.pnml"
+#include "src/EMU/LHB_420_item.pnml"
 
-#include "src/EMU/Australia_Sydney_Trains_S_Set_graphics.pnml"
-#include "src/EMU/Australia_Sydney_Trains_S_Set_item.pnml"
+#include "src/EMU/Comeng_Goninan_S_set_graphics.pnml"
+#include "src/EMU/Comeng_Goninan_S_set_item.pnml"
 
-#include "src/EMU/Finland_VR_Sm2_graphics.pnml"
-#include "src/EMU/Finland_VR_Sm2_item.pnml"
+#include "src/EMU/Valmet_Sm2_graphics.pnml"
+#include "src/EMU/Valmet_Sm2_item.pnml"
 
-#include "src/EMU/Netherlands_NS_Plan_Y_graphics.pnml"
-#include "src/EMU/Netherlands_NS_Plan_Y_item.pnml"
+#include "src/EMU/Talbot_Plan_Y_graphics.pnml"
+#include "src/EMU/Talbot_Plan_Y_item.pnml"
 
-#include "src/EMU/Netherlands_NS_ICM_4000_graphics.pnml"
-#include "src/EMU/Netherlands_NS_ICM_4000_item.pnml"
+#include "src/EMU/Talbot_ICM_4000_graphics.pnml"
+#include "src/EMU/Talbot_ICM_4000_item.pnml"
 
-#include "src/EMU/France_SNCF_TGV_Sud_Est_graphics.pnml"
-#include "src/EMU/France_SNCF_TGV_Sud_Est_item.pnml"
+#include "src/EMU/Alsthom_TGV_23000_graphics.pnml"
+#include "src/EMU/Alsthom_TGV_23000_item.pnml"
 
-#include "src/EMU/Switzerland_SBB_RBDe_560_graphics.pnml"
-#include "src/EMU/Switzerland_SBB_RBDe_560_item.pnml"
+#include "src/EMU/Schindler_RBDe_560_graphics.pnml"
+#include "src/EMU/Schindler_RBDe_560_item.pnml"
 
-#include "src/EMU/Japan_Odakyu_10000_Series_Romance_graphics.pnml"
-#include "src/EMU/Japan_Odakyu_10000_Series_Romance_item.pnml"
+#include "src/EMU/Nippon_Sharyo_Odakyu_10000_series_HiSE_graphics.pnml"
+#include "src/EMU/Nippon_Sharyo_Odakyu_10000_series_HiSE_item.pnml"
 
-#include "src/EMU/Hungary_MAV_BDVmot_graphics.pnml"
-#include "src/EMU/Hungary_MAV_BDVmot_item.pnml"
+#include "src/EMU/Ganz_MAVAG_VM17_BDVmot_graphics.pnml"
+#include "src/EMU/Ganz_MAVAG_VM17_BDVmot_item.pnml"
 
-#include "src/EMU/Sweden_SJ_X2000_graphics.pnml"
-#include "src/EMU/Sweden_SJ_X2000_item.pnml"
+#include "src/EMU/ASEA_X2000_graphics.pnml"
+#include "src/EMU/ASEA_X2000_item.pnml"
 
-#include "src/EMU/Italy_FS_ETR500_graphics.pnml"
-#include "src/EMU/Italy_FS_ETR500_item.pnml"
+#include "src/EMU/TREVI_ETR_500_Frecciarossa_graphics.pnml"
+#include "src/EMU/TREVI_ETR_500_Frecciarossa_item.pnml"
 
-#include "src/EMU/Netherlands_NS_DD_IRM_VIRM_graphics.pnml"
-#include "src/EMU/Netherlands_NS_DD_IRM_VIRM_item.pnml"
+#include "src/EMU/Talbot_DD_IRM_VIRM_8000_graphics.pnml"
+#include "src/EMU/Talbot_DD_IRM_VIRM_8000_item.pnml"
 
-#include "src/EMU/France_SNCF_TGV_Duplex_graphics.pnml"
-#include "src/EMU/France_SNCF_TGV_Duplex_item.pnml"
+#include "src/EMU/Alsthom_TGV_Duplex_graphics.pnml"
+#include "src/EMU/Alsthom_TGV_Duplex_item.pnml"
 
-#include "src/EMU/France_Thalys_PBKA_graphics.pnml"
-#include "src/EMU/France_Thalys_PBKA_item.pnml"
+#include "src/EMU/GEC_Alsthom_Thalys_PBKA_graphics.pnml"
+#include "src/EMU/GEC_Alsthom_Thalys_PBKA_item.pnml"
 
-#include "src/EMU/Denmark_DSB_S_Tog_IV_graphics.pnml"
-#include "src/EMU/Denmark_DSB_S_Tog_IV_item.pnml"
+#include "src/EMU/Alsthom_S_Tog_IV_graphics.pnml"
+#include "src/EMU/Alsthom_S_Tog_IV_item.pnml"
 
-#include "src/EMU/Italy_FS_ALe426_graphics.pnml"
-#include "src/EMU/Italy_FS_ALe426_item.pnml"
+#include "src/EMU/AnsaldoBreda_ALe_426_graphics.pnml"
+#include "src/EMU/AnsaldoBreda_ALe_426_item.pnml"
 
-#include "src/EMU/Japan_JR_Shinkansen_Series_700_graphics.pnml"
-#include "src/EMU/Japan_JR_Shinkansen_Series_700_item.pnml"
+#include "src/EMU/Hitachi_Shinkansen_Series_700_graphics.pnml"
+#include "src/EMU/Hitachi_Shinkansen_Series_700_item.pnml"
 
-#include "src/EMU/Netherlands_NS_mDDm_390_graphics.pnml"
-#include "src/EMU/Netherlands_NS_mDDm_390_item.pnml"
+#include "src/EMU/De_Dietrich_Adtranz_mDDm_390_graphics.pnml"
+#include "src/EMU/De_Dietrich_Adtranz_mDDm_390_item.pnml"
 
-#include "src/EMU/Norway_NSB_BM73_graphics.pnml"
-#include "src/EMU/Norway_NSB_BM73_item.pnml"
+#include "src/EMU/Adtranz_BM73_graphics.pnml"
+#include "src/EMU/Adtranz_BM73_item.pnml"
 
-#include "src/EMU/Czech_Republic_CD_680_Pendolino_graphics.pnml"
-#include "src/EMU/Czech_Republic_CD_680_Pendolino_item.pnml"
+#include "src/EMU/Alsthom_Pendolino_680_graphics.pnml"
+#include "src/EMU/Alsthom_Pendolino_680_item.pnml"
 
-#include "src/EMU/Finland_VR_Sm4_graphics.pnml"
-#include "src/EMU/Finland_VR_Sm4_item.pnml"
+#include "src/EMU/Fiat_CAF_Sm4_graphics.pnml"
+#include "src/EMU/Fiat_CAF_Sm4_item.pnml"
 
-#include "src/EMU/Luxembourg_CFL_2200_Coradia_Duplex_graphics.pnml"
-#include "src/EMU/Luxembourg_CFL_2200_Coradia_Duplex_item.pnml"
+#include "src/EMU/Alstom_Coradia_Duplex_graphics.pnml"
+#include "src/EMU/Alstom_Coradia_Duplex_item.pnml"
 
-#include "src/EMU/Germany_DB_403_ICE_3_graphics.pnml"
-#include "src/EMU/Germany_DB_403_ICE_3_item.pnml"
+#include "src/EMU/Siemens_Velero_graphics.pnml"
+#include "src/EMU/Siemens_Velero_item.pnml"
 
-#include "src/EMU/Spain_RENFE_120_graphics.pnml"
-#include "src/EMU/Spain_RENFE_120_item.pnml"
+#include "src/EMU/CAF_Alstom_Class_120_graphics.pnml"
+#include "src/EMU/CAF_Alstom_Class_120_item.pnml"
 
-#include "src/EMU/Switzerland_SBB_RABe_523_Flirt_graphics.pnml"
-#include "src/EMU/Switzerland_SBB_RABe_523_Flirt_item.pnml"
+#include "src/EMU/Stadler_RABe_523_Flirt_graphics.pnml"
+#include "src/EMU/Stadler_RABe_523_Flirt_item.pnml"
 
-#include "src/EMU/Bulgaria_BDZ_10_Desiro_graphics.pnml"
-#include "src/EMU/Bulgaria_BDZ_10_Desiro_item.pnml"
+#include "src/EMU/Siemens_Desiro_BDZ_graphics.pnml"
+#include "src/EMU/Siemens_Desiro_BDZ_item.pnml"
 
-#include "src/EMU/Australia_Sydney_Trains_OSCars_graphics.pnml"
-#include "src/EMU/Australia_Sydney_Trains_OSCars_item.pnml"
+#include "src/EMU/UGL_Rail_H_set_OSCAR_graphics.pnml"
+#include "src/EMU/UGL_Rail_H_set_OSCAR_item.pnml"
 
-#include "src/EMU/South_Africa_Gautrain_Electrostar_graphics.pnml"
-#include "src/EMU/South_Africa_Gautrain_Electrostar_item.pnml"
+#include "src/EMU/Bombardier_UCW_Electrostar_Gautrain_graphics.pnml"
+#include "src/EMU/Bombardier_UCW_Electrostar_Gautrain_item.pnml"
 
-#include "src/EMU/Italy_NTV_AGV_graphics.pnml"
-#include "src/EMU/Italy_NTV_AGV_item.pnml"
+#include "src/EMU/Alstom_AGV_graphics.pnml"
+#include "src/EMU/Alstom_AGV_item.pnml"
 
-#include "src/EMU/Netherlands_NS_4800_HSA_graphics.pnml"
-#include "src/EMU/Netherlands_NS_4800_HSA_item.pnml"
+#include "src/EMU/NS_4800_HSA_Fyra_graphics.pnml"
+#include "src/EMU/NS_4800_HSA_Fyra_item.pnml"
 
-#include "src/EMU/Italy_NTV_AGV_Duplex_graphics.pnml"
-#include "src/EMU/Italy_NTV_AGV_Duplex_item.pnml"
+#include "src/EMU/Alstom_Avelia_Horizon_graphics.pnml"
+#include "src/EMU/Alstom_Avelia_Horizon_item.pnml"
 
-#include "src/EMU/USA_PRR_MP54_graphics.pnml"
-#include "src/EMU/USA_PRR_MP54_item.pnml"
+#include "src/EMU/PRR_MP54_graphics.pnml"
+#include "src/EMU/PRR_MP54_item.pnml"
 
-#include "src/EMU/Australia_Victorian_Railways_Swing_Door_graphics.pnml"
-#include "src/EMU/Australia_Victorian_Railways_Swing_Door_item.pnml"
+#include "src/EMU/Victorian_Railways_Swing_Door_graphics.pnml"
+#include "src/EMU/Victorian_Railways_Swing_Door_item.pnml"
 
-#include "src/EMU/Poland_PKP_EW90_graphics.pnml"
-#include "src/EMU/Poland_PKP_EW90_item.pnml"
+#include "src/EMU/AEG_EW90_graphics.pnml"
+#include "src/EMU/AEG_EW90_item.pnml"
 
-#include "src/EMU/USA_Erie_Lackawanna_MU_Cars_graphics.pnml"
-#include "src/EMU/USA_Erie_Lackawanna_MU_Cars_item.pnml"
+#include "src/EMU/Pullman_Erie_Lackawanna_2500_Series_graphics.pnml"
+#include "src/EMU/Pullman_Erie_Lackawanna_2500_Series_item.pnml"
 
-#include "src/EMU/South_Africa_SAR_5M2_graphics.pnml"
-#include "src/EMU/South_Africa_SAR_5M2_item.pnml"
+#include "src/EMU/Metro_Cammell_5M2_graphics.pnml"
+#include "src/EMU/Metro_Cammell_5M2_item.pnml"
 
-#include "src/EMU/Austria_OBB_4030_graphics.pnml"
-#include "src/EMU/Austria_OBB_4030_item.pnml"
+#include "src/EMU/SGP_AEG_BBC_4030_graphics.pnml"
+#include "src/EMU/SGP_AEG_BBC_4030_item.pnml"
 
-#include "src/EMU/Italy_FS_ALe_801_graphics.pnml"
-#include "src/EMU/Italy_FS_ALe_801_item.pnml"
+#include "src/EMU/Breda_ALe_801_graphics.pnml"
+#include "src/EMU/Breda_ALe_801_item.pnml"
 
-#include "src/EMU/Macedonia_Macedonian_Railways_412_graphics.pnml"
-#include "src/EMU/Macedonia_Macedonian_Railways_412_item.pnml"
+#include "src/EMU/RVR_ER31_graphics.pnml"
+#include "src/EMU/RVR_ER31_item.pnml"
 
-#include "src/EMU/Australia_Sydney_Trains_A_Set_Waratah_graphics.pnml"
-#include "src/EMU/Australia_Sydney_Trains_A_Set_Waratah_item.pnml"
+#include "src/EMU/Downer_CRRC_Hitachi_Waratah_graphics.pnml"
+#include "src/EMU/Downer_CRRC_Hitachi_Waratah_item.pnml"
 
-#include "src/EMU/Netherlands_NS_Hispeed_V250_Albatros_graphics.pnml"
-#include "src/EMU/Netherlands_NS_Hispeed_V250_Albatros_item.pnml"
+#include "src/EMU/AnsaldoBreda_V250_Albatros_graphics.pnml"
+#include "src/EMU/AnsaldoBreda_V250_Albatros_item.pnml"
 
-#include "src/EMU/Chile_EFE_XTrapolis_100_graphics.pnml"
-#include "src/EMU/Chile_EFE_XTrapolis_100_item.pnml"
+#include "src/EMU/Alstom_XTrapolis_100_graphics.pnml"
+#include "src/EMU/Alstom_XTrapolis_100_item.pnml"
 
-#include "src/EMU/Tunisia_SNCFT_YZ_E_graphics.pnml"
-#include "src/EMU/Tunisia_SNCFT_YZ_E_item.pnml"
+#include "src/EMU/Ganz_MAVAG_YZ_E_graphics.pnml"
+#include "src/EMU/Ganz_MAVAG_YZ_E_item.pnml"
 
-#include "src/EMU/Russia_RZD_S_graphics.pnml"
-#include "src/EMU/Russia_RZD_S_item.pnml"
+#include "src/EMU/MMZ_S_graphics.pnml"
+#include "src/EMU/MMZ_S_item.pnml"
 
-#include "src/EMU/Poland_PKP_EW54_graphics.pnml"
-#include "src/EMU/Poland_PKP_EW54_item.pnml"
+#include "src/EMU/ASEA_EW54_graphics.pnml"
+#include "src/EMU/ASEA_EW54_item.pnml"
 
-#include "src/EMU/Romania_CFR_58_graphics.pnml"
-#include "src/EMU/Romania_CFR_58_item.pnml"
+#include "src/EMU/Carel_et_Fouche_Alsthom_Z_6100_graphics.pnml"
+#include "src/EMU/Carel_et_Fouche_Alsthom_Z_6100_item.pnml"
 
-#include "src/EMU/USA_Amtrak_Budd_Metroliner_graphics.pnml"
-#include "src/EMU/USA_Amtrak_Budd_Metroliner_item.pnml"
+#include "src/EMU/Budd_Metroliner_graphics.pnml"
+#include "src/EMU/Budd_Metroliner_item.pnml"
 
-#include "src/EMU/Russia_RZD_ER200_graphics.pnml"
-#include "src/EMU/Russia_RZD_ER200_item.pnml"
+#include "src/EMU/RVR_ER200_graphics.pnml"
+#include "src/EMU/RVR_ER200_item.pnml"
 
-#include "src/EMU/Morocco_ONCF_ZMC_graphics.pnml"
-#include "src/EMU/Morocco_ONCF_ZMC_item.pnml"
+#include "src/EMU/BN_ACEC_ZMC_graphics.pnml"
+#include "src/EMU/BN_ACEC_ZMC_item.pnml"
 
-#include "src/EMU/Japan_JR_Shinkansen_Series_E1_Max_graphics.pnml"
-#include "src/EMU/Japan_JR_Shinkansen_Series_E1_Max_item.pnml"
+#include "src/EMU/Hitachi_Kawasaki_Shinkansen_Series_E1_Max_graphics.pnml"
+#include "src/EMU/Hitachi_Kawasaki_Shinkansen_Series_E1_Max_item.pnml"
 
-#include "src/EMU/Australia_Queensland_Rail_Tilt_Train_graphics.pnml"
-#include "src/EMU/Australia_Queensland_Rail_Tilt_Train_item.pnml"
+#include "src/EMU/Walkers_Tilt_Train_ETT_graphics.pnml"
+#include "src/EMU/Walkers_Tilt_Train_ETT_item.pnml"
 
-#include "src/EMU/USA_Amtrak_Acela_Express_graphics.pnml"
-#include "src/EMU/USA_Amtrak_Acela_Express_item.pnml"
+#include "src/EMU/Bombarier_Alstom_Acela_Express_graphics.pnml"
+#include "src/EMU/Bombarier_Alstom_Acela_Express_item.pnml"
 
-#include "src/EMU/Russia_RZD_ES1_Lastochka_graphics.pnml"
-#include "src/EMU/Russia_RZD_ES1_Lastochka_item.pnml"
+#include "src/EMU/Siemens_Desiro_ES1_Lastochka_graphics.pnml"
+#include "src/EMU/Siemens_Desiro_ES1_Lastochka_item.pnml"
 
-#include "src/EMU/Austria_WESTbahn_4010_KISS_graphics.pnml"
-#include "src/EMU/Austria_WESTbahn_4010_KISS_item.pnml"
+#include "src/EMU/Stadler_4010_KISS_graphics.pnml"
+#include "src/EMU/Stadler_4010_KISS_item.pnml"
 
-#include "src/EMU/Croatia_HZ_6112_graphics.pnml"
-#include "src/EMU/Croatia_HZ_6112_item.pnml"
+#include "src/EMU/Koncar_6112_graphics.pnml"
+#include "src/EMU/Koncar_6112_item.pnml"
 
-#include "src/EMU/China_Railways_CHR380A_graphics.pnml"
-#include "src/EMU/China_Railways_CHR380A_item.pnml"
+#include "src/EMU/CSR_Qingdao_CHR380A_graphics.pnml"
+#include "src/EMU/CSR_Qingdao_CHR380A_item.pnml"
 
-#include "src/EMU/Europe_Sureot_graphics.pnml"
-#include "src/EMU/Europe_Sureot_item.pnml"
+#include "src/EMU/ACME_Corp__Sureot_graphics.pnml"
+#include "src/EMU/ACME_Corp__Sureot_item.pnml"
 
-#include "src/EMU/Australia_Comeng_EMU_graphics.pnml"
-#include "src/EMU/Australia_Comeng_EMU_item.pnml"
+#include "src/EMU/Comeng_EMU_graphics.pnml"
+#include "src/EMU/Comeng_EMU_item.pnml"
 
-#include "src/EMU/Australia_Melbourne_HCMT_Munnel_graphics.pnml"
-#include "src/EMU/Australia_Melbourne_HCMT_Munnel_item.pnml"
+#include "src/EMU/Evolution_Rail_HCMT_Munnel_graphics.pnml"
+#include "src/EMU/Evolution_Rail_HCMT_Munnel_item.pnml"
 
-#include "src/EMU/Australia_Melbourne_Hitachi_graphics.pnml"
-#include "src/EMU/Australia_Melbourne_Hitachi_item.pnml"
+#include "src/EMU/Comeng_MK_Hitachi_Trains_graphics.pnml"
+#include "src/EMU/Comeng_MK_Hitachi_Trains_item.pnml"
 
-#include "src/EMU/Australia_Melbourne_Harris_graphics.pnml"
-#include "src/EMU/Australia_Melbourne_Harris_item.pnml"
+#include "src/EMU/GRC_W_Harris_Trains_graphics.pnml"
+#include "src/EMU/GRC_W_Harris_Trains_item.pnml"
 
-#include "src/EMU/Australia_Melbourne_Nexas_graphics.pnml"
-#include "src/EMU/Australia_Melbourne_Nexas_item.pnml"
+#include "src/EMU/Siemens_Nexas_graphics.pnml"
+#include "src/EMU/Siemens_Nexas_item.pnml"
 
-#include "src/EMU/Australia_Melbourne_Tait_graphics.pnml"
-#include "src/EMU/Australia_Melbourne_Tait_item.pnml"
+#include "src/EMU/Victorian_Railways_Tait_Trains_graphics.pnml"
+#include "src/EMU/Victorian_Railways_Tait_Trains_item.pnml"
 
-#include "src/EMU/Chile_EFE_AEZ_Railcar_graphics.pnml"
-#include "src/EMU/Chile_EFE_AEZ_Railcar_item.pnml"
+#include "src/EMU/Kawasaki_Hitachi_AEZ_Railcar_graphics.pnml"
+#include "src/EMU/Kawasaki_Hitachi_AEZ_Railcar_item.pnml"
 
-#include "src/EMU/New_Zealand_BREL_GEC_Auckland_ART_Concept_graphics.pnml"
-#include "src/EMU/New_Zealand_BREL_GEC_Auckland_ART_Concept_item.pnml"
+#include "src/EMU/BREL_GEC_Auckland_ART_Concept_graphics.pnml"
+#include "src/EMU/BREL_GEC_Auckland_ART_Concept_item.pnml"
 
-#include "src/EMU/Australia_Tangara_V_Set_Hybrid_graphics.pnml"
-#include "src/EMU/Australia_Tangara_V_Set_Hybrid_item.pnml"
+#include "src/EMU/Tangara_V_Set_Hybrid_Concept_graphics.pnml"
+#include "src/EMU/Tangara_V_Set_Hybrid_Concept_item.pnml"
 
-#include "src/EMU/Australia_4D_Train_graphics.pnml"
-#include "src/EMU/Australia_4D_Train_item.pnml"
+#include "src/EMU/Goninan_Tangara_4D_Prototype_graphics.pnml"
+#include "src/EMU/Goninan_Tangara_4D_Prototype_item.pnml"
 
-#include "src/EMU/Australia_Sydney_Tangara_graphics.pnml"
-#include "src/EMU/Australia_Sydney_Tangara_item.pnml"
+#include "src/EMU/Goninan_Tangara_T_Set_graphics.pnml"
+#include "src/EMU/Goninan_Tangara_T_Set_item.pnml"
 
-#include "src/EMU/Australia_NSW_W_graphics.pnml"
-#include "src/EMU/Australia_NSW_W_item.pnml"
+#include "src/EMU/Comeng_W_Class_Sputnik_graphics.pnml"
+#include "src/EMU/Comeng_W_Class_Sputnik_item.pnml"
 
-#include "src/EMU/Australia_NSW_Standard_graphics.pnml"
-#include "src/EMU/Australia_NSW_Standard_item.pnml"
+#include "src/EMU/Leeds_Clyde_Standard_EMU_graphics.pnml"
+#include "src/EMU/Leeds_Clyde_Standard_EMU_item.pnml"
 
-#include "src/EMU/Australia_NSW_Tulloch_graphics.pnml"
-#include "src/EMU/Australia_NSW_Tulloch_item.pnml"
+#include "src/EMU/NSWGR_Tulloch_EMU_graphics.pnml"
+#include "src/EMU/NSWGR_Tulloch_EMU_item.pnml"
 
-#include "src/EMU/Australia_Melbourne_Xtrapolis_100_graphics.pnml"
-#include "src/EMU/Australia_Melbourne_Xtrapolis_100_item.pnml"
+#include "src/EMU/Alstom_XTrapolis_100_Melbourne_graphics.pnml"
+#include "src/EMU/Alstom_XTrapolis_100_Melbourne_item.pnml"
 
-#include "src/EMU/New_Zealand_EM_Ganz_Mavag_graphics.pnml"
-#include "src/EMU/New_Zealand_EM_Ganz_Mavag_item.pnml"
+#include "src/EMU/Ganz_MAVAG_EM_ET_graphics.pnml"
+#include "src/EMU/Ganz_MAVAG_EM_ET_item.pnml"
 
-#include "src/EMU/New_Zealand_DM_graphics.pnml"
-#include "src/EMU/New_Zealand_DM_item.pnml"
+#include "src/EMU/EEC_DM_EMU_graphics.pnml"
+#include "src/EMU/EEC_DM_EMU_item.pnml"
 
-#include "src/EMU/New_Zealand_FPFT_Matangi_graphics.pnml"
-#include "src/EMU/New_Zealand_FPFT_Matangi_item.pnml"
+#include "src/EMU/Hyundai_Rotem__Mitsui_Matangi_graphics.pnml"
+#include "src/EMU/Hyundai_Rotem__Mitsui_Matangi_item.pnml"
 
-#include "src/EMU/Hong_Kong_MTR_SP1900_graphics.pnml"
-#include "src/EMU/Hong_Kong_MTR_SP1900_item.pnml"
+#include "src/EMU/Itochu_Kinki_Kawasaki_SP1900_graphics.pnml"
+#include "src/EMU/Itochu_Kinki_Kawasaki_SP1900_item.pnml"
 
-#include "src/EMU/Chile_Chilean_SFB500_DEMU_graphics.pnml"
-#include "src/EMU/Chile_Chilean_SFB500_DEMU_item.pnml"
+#include "src/EMU/CRRC_Sifang_SFB_500_graphics.pnml"
+#include "src/EMU/CRRC_Sifang_SFB_500_item.pnml"
 
-#include "src/EMU/Japan_JNR_Shinkansen_Series_100_graphics.pnml"
-#include "src/EMU/Japan_JNR_Shinkansen_Series_100_item.pnml"
+#include "src/EMU/Hitachi_Kawasaki_Shinkansen_Series_100_graphics.pnml"
+#include "src/EMU/Hitachi_Kawasaki_Shinkansen_Series_100_item.pnml"
 
-#include "src/EMU/UK_BR_Class_895_graphics.pnml"
-#include "src/EMU/UK_BR_Class_895_item.pnml"
+#include "src/EMU/Hitachi_Alstom_Zefiro_Class_895_HS2_graphics.pnml"
+#include "src/EMU/Hitachi_Alstom_Zefiro_Class_895_HS2_item.pnml"
 
-#include "src/EMU/Netherlands_ACME_V200E_graphics.pnml"
-#include "src/EMU/Netherlands_ACME_V200E_item.pnml"
+#include "src/EMU/ACME_Corp__V200E_EMU_graphics.pnml"
+#include "src/EMU/ACME_Corp__V200E_EMU_item.pnml"
 
-#include "src/EMU/Poland_PESA_Dart_43WE_graphics.pnml"
-#include "src/EMU/Poland_PESA_Dart_43WE_item.pnml"
+#include "src/EMU/PESA_43WE_DART_graphics.pnml"
+#include "src/EMU/PESA_43WE_DART_item.pnml"
 
 
 //// ELECTRIC
-#include "src/Electric/Switzerland_RhB_DE_2_2_graphics.pnml"
-#include "src/Electric/Switzerland_RhB_DE_2_2_item.pnml"
+#include "src/Electric/SIG_Alioth_De_2_2_graphics.pnml"
+#include "src/Electric/SIG_Alioth_De_2_2_item.pnml"
 
-#include "src/Electric/Norway_NSB_EL7_graphics.pnml"
-#include "src/Electric/Norway_NSB_EL7_item.pnml"
+#include "src/Electric/AEG_Skabo_EL7_graphics.pnml"
+#include "src/Electric/AEG_Skabo_EL7_item.pnml"
 
-#include "src/Electric/UK_NER_EF1_graphics.pnml"
-#include "src/Electric/UK_NER_EF1_item.pnml"
+#include "src/Electric/NER_EF1_graphics.pnml"
+#include "src/Electric/NER_EF1_item.pnml"
 
-#include "src/Electric/USA_Milwaukee_Road_ES_2_graphics.pnml"
-#include "src/Electric/USA_Milwaukee_Road_ES_2_item.pnml"
+#include "src/Electric/GE_ES_2_graphics.pnml"
+#include "src/Electric/GE_ES_2_item.pnml"
 
-#include "src/Electric/Chile_EFE_E_28_graphics.pnml"
-#include "src/Electric/Chile_EFE_E_28_item.pnml"
+#include "src/Electric/EFE_E_28_graphics.pnml"
+#include "src/Electric/EFE_E_28_item.pnml"
 
-#include "src/Electric/Austria_OBB_1161_graphics.pnml"
-#include "src/Electric/Austria_OBB_1161_item.pnml"
+#include "src/Electric/ELIN_Floridsdorf_1161_graphics.pnml"
+#include "src/Electric/ELIN_Floridsdorf_1161_item.pnml"
 
-#include "src/Electric/India_Indian_Railways_WCG_1_graphics.pnml"
-#include "src/Electric/India_Indian_Railways_WCG_1_item.pnml"
+#include "src/Electric/Vulcan_Foundry_SLM_EF_1_graphics.pnml"
+#include "src/Electric/Vulcan_Foundry_SLM_EF_1_item.pnml"
 
-#include "src/Electric/Germany_DB_169_graphics.pnml"
-#include "src/Electric/Germany_DB_169_item.pnml"
+#include "src/Electric/Maffei_SSW_Lok_5_Adolphine_graphics.pnml"
+#include "src/Electric/Maffei_SSW_Lok_5_Adolphine_item.pnml"
 
-#include "src/Electric/Japan_JNR_EB10_graphics.pnml"
-#include "src/Electric/Japan_JNR_EB10_item.pnml"
+#include "src/Electric/JNR_EB10_graphics.pnml"
+#include "src/Electric/JNR_EB10_item.pnml"
 
-#include "src/Electric/Norway_NSB_EL10_graphics.pnml"
-#include "src/Electric/Norway_NSB_EL10_item.pnml"
+#include "src/Electric/Thune_ASEA_EL10_graphics.pnml"
+#include "src/Electric/Thune_ASEA_EL10_item.pnml"
 
-#include "src/Electric/Germany_DB_104_graphics.pnml"
-#include "src/Electric/Germany_DB_104_item.pnml"
+#include "src/Electric/AEG_E_04_graphics.pnml"
+#include "src/Electric/AEG_E_04_item.pnml"
 
-#include "src/Electric/Italy_FS_E428_graphics.pnml"
-#include "src/Electric/Italy_FS_E428_item.pnml"
+#include "src/Electric/Breda_E_428_graphics.pnml"
+#include "src/Electric/Breda_E_428_item.pnml"
 
-#include "src/Electric/Japan_JNR_EF55_graphics.pnml"
-#include "src/Electric/Japan_JNR_EF55_item.pnml"
+#include "src/Electric/Hitachi_Kawasaki_EF55_graphics.pnml"
+#include "src/Electric/Hitachi_Kawasaki_EF55_item.pnml"
 
-#include "src/Electric/South_Africa_SAR_ES_Class_graphics.pnml"
-#include "src/Electric/South_Africa_SAR_ES_Class_item.pnml"
+#include "src/Electric/Werkspoor_SAR_ES_graphics.pnml"
+#include "src/Electric/Werkspoor_SAR_ES_item.pnml"
 
-#include "src/Electric/Austria_OBB_1020_Crocodile_graphics.pnml"
-#include "src/Electric/Austria_OBB_1020_Crocodile_item.pnml"
+#include "src/Electric/SLM_1100_Crocodile_graphics.pnml"
+#include "src/Electric/SLM_1100_Crocodile_item.pnml"
 
-#include "src/Electric/Russia_RZD_VL22M_graphics.pnml"
-#include "src/Electric/Russia_RZD_VL22M_item.pnml"
+#include "src/Electric/NEVZ_VL22M_graphics.pnml"
+#include "src/Electric/NEVZ_VL22M_item.pnml"
 
-#include "src/Electric/Netherlands_NS_1000_graphics.pnml"
-#include "src/Electric/Netherlands_NS_1000_item.pnml"
+#include "src/Electric/SLM_NS_1000_graphics.pnml"
+#include "src/Electric/SLM_NS_1000_item.pnml"
 
-#include "src/Electric/Sweden_MTAB_Dm3_graphics.pnml"
-#include "src/Electric/Sweden_MTAB_Dm3_item.pnml"
+#include "src/Electric/ASEA_Dm3_graphics.pnml"
+#include "src/Electric/ASEA_Dm3_item.pnml"
 
-#include "src/Electric/UK_BR_77_Metrovic_graphics.pnml"
-#include "src/Electric/UK_BR_77_Metrovic_item.pnml"
+#include "src/Electric/Metropolitan_Vicerks_EM2_graphics.pnml"
+#include "src/Electric/Metropolitan_Vicerks_EM2_item.pnml"
 
-#include "src/Electric/France_SNCF_BB_9004_graphics.pnml"
-#include "src/Electric/France_SNCF_BB_9004_item.pnml"
+#include "src/Electric/Jeumont_Schneider_BB_9004_graphics.pnml"
+#include "src/Electric/Jeumont_Schneider_BB_9004_item.pnml"
 
-#include "src/Electric/Switzerland_BLS_Ce_4_4_graphics.pnml"
-#include "src/Electric/Switzerland_BLS_Ce_4_4_item.pnml"
+#include "src/Electric/SLM_Ce_4_4_graphics.pnml"
+#include "src/Electric/SLM_Ce_4_4_item.pnml"
 
-#include "src/Electric/Switzerland_SBB_Ae_6_6_graphics.pnml"
-#include "src/Electric/Switzerland_SBB_Ae_6_6_item.pnml"
+#include "src/Electric/SLM_Ae_6_6_graphics.pnml"
+#include "src/Electric/SLM_Ae_6_6_item.pnml"
 
-#include "src/Electric/Portugal_CP_2500_graphics.pnml"
-#include "src/Electric/Portugal_CP_2500_item.pnml"
+#include "src/Electric/Alsthom_CP_2500_graphics.pnml"
+#include "src/Electric/Alsthom_CP_2500_item.pnml"
 
-#include "src/Electric/India_Indian_Railways_WCM_1_graphics.pnml"
-#include "src/Electric/India_Indian_Railways_WCM_1_item.pnml"
+#include "src/Electric/Vulcan_Foundry_EE_EM_1_graphics.pnml"
+#include "src/Electric/Vulcan_Foundry_EE_EM_1_item.pnml"
 
-#include "src/Electric/Italy_FS_E646_graphics.pnml"
-#include "src/Electric/Italy_FS_E646_item.pnml"
+#include "src/Electric/TIBB_E_646_graphics.pnml"
+#include "src/Electric/TIBB_E_646_item.pnml"
 
-#include "src/Electric/Russia_RZD_VL41_graphics.pnml"
-#include "src/Electric/Russia_RZD_VL41_item.pnml"
+#include "src/Electric/DEVZ_VL41_graphics.pnml"
+#include "src/Electric/DEVZ_VL41_item.pnml"
 
-#include "src/Electric/Japan_JNR_EF64_graphics.pnml"
-#include "src/Electric/Japan_JNR_EF64_item.pnml"
+#include "src/Electric/Kawasaki_Toshiba_EF64_graphics.pnml"
+#include "src/Electric/Kawasaki_Toshiba_EF64_item.pnml"
 
-#include "src/Electric/France_SNCF_CC_40100_graphics.pnml"
-#include "src/Electric/France_SNCF_CC_40100_item.pnml"
+#include "src/Electric/Alsthom_CC_40101_graphics.pnml"
+#include "src/Electric/Alsthom_CC_40101_item.pnml"
 
-#include "src/Electric/Croatia_HZ_1141_graphics.pnml"
-#include "src/Electric/Croatia_HZ_1141_item.pnml"
+#include "src/Electric/ASEA_Koncar_Rb_graphics.pnml"
+#include "src/Electric/ASEA_Koncar_Rb_item.pnml"
 
-#include "src/Electric/Germany_DB_1031_graphics.pnml"
-#include "src/Electric/Germany_DB_1031_item.pnml"
+#include "src/Electric/AEG_BBC_Henschel_Siemens_E03_graphics.pnml"
+#include "src/Electric/AEG_BBC_Henschel_Siemens_E03_item.pnml"
 
-#include "src/Electric/South_Africa_SAR_6E_graphics.pnml"
-#include "src/Electric/South_Africa_SAR_6E_item.pnml"
+#include "src/Electric/UCW_6E_graphics.pnml"
+#include "src/Electric/UCW_6E_item.pnml"
 
-#include "src/Electric/Finland_VR_Sr1_graphics.pnml"
-#include "src/Electric/Finland_VR_Sr1_item.pnml"
+#include "src/Electric/NEVZ_ES40_graphics.pnml"
+#include "src/Electric/NEVZ_ES40_item.pnml"
 
-#include "src/Electric/Austria_OBB_1044_graphics.pnml"
-#include "src/Electric/Austria_OBB_1044_item.pnml"
+#include "src/Electric/SGP_1044_graphics.pnml"
+#include "src/Electric/SGP_1044_item.pnml"
 
-#include "src/Electric/France_SNCF_BB_22200_graphics.pnml"
-#include "src/Electric/France_SNCF_BB_22200_item.pnml"
+#include "src/Electric/Alsthom_BB_22200_graphics.pnml"
+#include "src/Electric/Alsthom_BB_22200_item.pnml"
 
-#include "src/Electric/Poland_PKP_ET41_graphics.pnml"
-#include "src/Electric/Poland_PKP_ET41_item.pnml"
+#include "src/Electric/HCP_203E_graphics.pnml"
+#include "src/Electric/HCP_203E_item.pnml"
 
-#include "src/Electric/Netherlands_NS_1600_graphics.pnml"
-#include "src/Electric/Netherlands_NS_1600_item.pnml"
+#include "src/Electric/Alsthom_BB_7200_NS_1600_graphics.pnml"
+#include "src/Electric/Alsthom_BB_7200_NS_1600_item.pnml"
 
-#include "src/Electric/Austria_OBB_1063_graphics.pnml"
-#include "src/Electric/Austria_OBB_1063_item.pnml"
+#include "src/Electric/SGP_1063_graphics.pnml"
+#include "src/Electric/SGP_1063_item.pnml"
 
-#include "src/Electric/Russia_RZD_VL85_graphics.pnml"
-#include "src/Electric/Russia_RZD_VL85_item.pnml"
+#include "src/Electric/NEVZ_VL85_graphics.pnml"
+#include "src/Electric/NEVZ_VL85_item.pnml"
 
-#include "src/Electric/Russia_RZD_VL15_graphics.pnml"
-#include "src/Electric/Russia_RZD_VL15_item.pnml"
+#include "src/Electric/NEVZ_TEVZ_VL15_graphics.pnml"
+#include "src/Electric/NEVZ_TEVZ_VL15_item.pnml"
 
-#include "src/Electric/China_China_Railways_6K_graphics.pnml"
-#include "src/Electric/China_China_Railways_6K_item.pnml"
+#include "src/Electric/Kawasaki_6K_graphics.pnml"
+#include "src/Electric/Kawasaki_6K_item.pnml"
 
-#include "src/Electric/France_SNCF_BB_26000_graphics.pnml"
-#include "src/Electric/France_SNCF_BB_26000_item.pnml"
+#include "src/Electric/GEC_Alsthom_BB_26000_graphics.pnml"
+#include "src/Electric/GEC_Alsthom_BB_26000_item.pnml"
 
-#include "src/Electric/China_China_Railways_SS6_graphics.pnml"
-#include "src/Electric/China_China_Railways_SS6_item.pnml"
+#include "src/Electric/Zuzhou_SS6_graphics.pnml"
+#include "src/Electric/Zuzhou_SS6_item.pnml"
 
-#include "src/Electric/Switzerland_SBB_Re460_Lok_2000_graphics.pnml"
-#include "src/Electric/Switzerland_SBB_Re460_Lok_2000_item.pnml"
+#include "src/Electric/SLM_ABB_Lok_2000_graphics.pnml"
+#include "src/Electric/SLM_ABB_Lok_2000_item.pnml"
 
-#include "src/Electric/Spain_RENFE_252_graphics.pnml"
-#include "src/Electric/Spain_RENFE_252_item.pnml"
+#include "src/Electric/CAF_Macosa_252_graphics.pnml"
+#include "src/Electric/CAF_Macosa_252_item.pnml"
 
-#include "src/Electric/UK_BR_92_graphics.pnml"
-#include "src/Electric/UK_BR_92_item.pnml"
+#include "src/Electric/ABB_Brush_Class_92_graphics.pnml"
+#include "src/Electric/ABB_Brush_Class_92_item.pnml"
 
-#include "src/Electric/India_Indian_Railways_WAP_4_graphics.pnml"
-#include "src/Electric/India_Indian_Railways_WAP_4_item.pnml"
+#include "src/Electric/CLW_WAP_4_graphics.pnml"
+#include "src/Electric/CLW_WAP_4_item.pnml"
 
-#include "src/Electric/Germany_DB_185_TRAXX_F140_graphics.pnml"
-#include "src/Electric/Germany_DB_185_TRAXX_F140_item.pnml"
+#include "src/Electric/Bombardier_Traxx_F140_MS_graphics.pnml"
+#include "src/Electric/Bombardier_Traxx_F140_MS_item.pnml"
 
-#include "src/Electric/Belgium_NMBS_SNCB_13_HLE_graphics.pnml"
-#include "src/Electric/Belgium_NMBS_SNCB_13_HLE_item.pnml"
+#include "src/Electric/Alsthom_Class_13_HLE_graphics.pnml"
+#include "src/Electric/Alsthom_Class_13_HLE_item.pnml"
 
-#include "src/Electric/Japan_JR_EH500_graphics.pnml"
-#include "src/Electric/Japan_JR_EH500_item.pnml"
+#include "src/Electric/Toshiba_EH500_graphics.pnml"
+#include "src/Electric/Toshiba_EH500_item.pnml"
 
-#include "src/Electric/Germany_DB_182_ES64U_Taurus_graphics.pnml"
-#include "src/Electric/Germany_DB_182_ES64U_Taurus_item.pnml"
+#include "src/Electric/Siemens_Eurosprinter_ES64U4_graphics.pnml"
+#include "src/Electric/Siemens_Eurosprinter_ES64U4_item.pnml"
 
-#include "src/Electric/Sweden_MTAB_IORE_graphics.pnml"
-#include "src/Electric/Sweden_MTAB_IORE_item.pnml"
+#include "src/Electric/Bombardier_Traxx_H80_AC_graphics.pnml"
+#include "src/Electric/Bombardier_Traxx_H80_AC_item.pnml"
 
-#include "src/Electric/South_Korea_Korail_8200_graphics.pnml"
-#include "src/Electric/South_Korea_Korail_8200_item.pnml"
+#include "src/Electric/Siemens_EuroSprinter_ES64F_graphics.pnml"
+#include "src/Electric/Siemens_EuroSprinter_ES64F_item.pnml"
 
-#include "src/Electric/Ukraine_UZ_DS3_graphics.pnml"
-#include "src/Electric/Ukraine_UZ_DS3_item.pnml"
+#include "src/Electric/DEVZ_DS3_graphics.pnml"
+#include "src/Electric/DEVZ_DS3_item.pnml"
 
-#include "src/Electric/Kazakhstan_KTZ_KZ4A_graphics.pnml"
-#include "src/Electric/Kazakhstan_KTZ_KZ4A_item.pnml"
+#include "src/Electric/Zuzhou_KZ4A_graphics.pnml"
+#include "src/Electric/Zuzhou_KZ4A_item.pnml"
 
-#include "src/Electric/China_China_Railways_HXD3_graphics.pnml"
-#include "src/Electric/China_China_Railways_HXD3_item.pnml"
+#include "src/Electric/Toshiba_CNR_Dalian_HXD3_graphics.pnml"
+#include "src/Electric/Toshiba_CNR_Dalian_HXD3_item.pnml"
 
-#include "src/Electric/Switzerland_SBB_Eem_923_graphics.pnml"
-#include "src/Electric/Switzerland_SBB_Eem_923_item.pnml"
+#include "src/Electric/Stadler_Butler_Eem_923_graphics.pnml"
+#include "src/Electric/Stadler_Butler_Eem_923_item.pnml"
 
-#include "src/Electric/USA_Pennsylvania_Railroad_FF_1_graphics.pnml"
-#include "src/Electric/USA_Pennsylvania_Railroad_FF_1_item.pnml"
+#include "src/Electric/Westinghouse_FF_1_Big_Liz__graphics.pnml"
+#include "src/Electric/Westinghouse_FF_1_Big_Liz__item.pnml"
 
-#include "src/Electric/USA_Milwaukee_Road_EP_2_Bipolar_graphics.pnml"
-#include "src/Electric/USA_Milwaukee_Road_EP_2_Bipolar_item.pnml"
+#include "src/Electric/GE_2_4_8_0_0_8_4_2_EP2_graphics.pnml"
+#include "src/Electric/GE_2_4_8_0_0_8_4_2_EP2_item.pnml"
 
-#include "src/Electric/USA_Pennsylvania_Railroad_GG_1_graphics.pnml"
-#include "src/Electric/USA_Pennsylvania_Railroad_GG_1_item.pnml"
+#include "src/Electric/GE_4_6_0_0_6_4OE_GG_1_graphics.pnml"
+#include "src/Electric/GE_4_6_0_0_6_4OE_GG_1_item.pnml"
 
-#include "src/Electric/USA_NYC_S_motor_graphics.pnml"
-#include "src/Electric/USA_NYC_S_motor_item.pnml"
+#include "src/Electric/ALCO_GE_NYC_S_Motor_S1_graphics.pnml"
+#include "src/Electric/ALCO_GE_NYC_S_Motor_S1_item.pnml"
 
-#include "src/Electric/UK_NER_ES1_graphics.pnml"
-#include "src/Electric/UK_NER_ES1_item.pnml"
+#include "src/Electric/British_Thomson_Houston_ES1_graphics.pnml"
+#include "src/Electric/British_Thomson_Houston_ES1_item.pnml"
 
-#include "src/Electric/Italy_FS_E550_graphics.pnml"
-#include "src/Electric/Italy_FS_E550_item.pnml"
+#include "src/Electric/TIBB_E_550_graphics.pnml"
+#include "src/Electric/TIBB_E_550_item.pnml"
 
-#include "src/Electric/Sweden_SJ_O_Class_graphics.pnml"
-#include "src/Electric/Sweden_SJ_O_Class_item.pnml"
+#include "src/Electric/Siemens_Oa_graphics.pnml"
+#include "src/Electric/Siemens_Oa_item.pnml"
 
-#include "src/Electric/Switzerland_RhB_Ge_6_6_Krokodil_graphics.pnml"
-#include "src/Electric/Switzerland_RhB_Ge_6_6_Krokodil_item.pnml"
+#include "src/Electric/SLM_BBC_MFO_Ge_6_6_Krokodil_graphics.pnml"
+#include "src/Electric/SLM_BBC_MFO_Ge_6_6_Krokodil_item.pnml"
 
-#include "src/Electric/UK_NER_EE1_graphics.pnml"
-#include "src/Electric/UK_NER_EE1_item.pnml"
+#include "src/Electric/NER_EE1_graphics.pnml"
+#include "src/Electric/NER_EE1_item.pnml"
 
-#include "src/Electric/Australia_Victorian_Railways_E_Class_graphics.pnml"
-#include "src/Electric/Australia_Victorian_Railways_E_Class_item.pnml"
+#include "src/Electric/Victorian_Railways_E_graphics.pnml"
+#include "src/Electric/Victorian_Railways_E_item.pnml"
 
-#include "src/Electric/New_Zealand_NZR_EO_Class_graphics.pnml"
-#include "src/Electric/New_Zealand_NZR_EO_Class_item.pnml"
+#include "src/Electric/EEC_EO_Class_graphics.pnml"
+#include "src/Electric/EEC_EO_Class_item.pnml"
 
-#include "src/Electric/Germany_DB_E_919_graphics.pnml"
-#include "src/Electric/Germany_DB_E_919_item.pnml"
+#include "src/Electric/Krauss_WASSEG_E_91_9_graphics.pnml"
+#include "src/Electric/Krauss_WASSEG_E_91_9_item.pnml"
 
-#include "src/Electric/Japan_Aichi_Railroad_DeKi_400_graphics.pnml"
-#include "src/Electric/Japan_Aichi_Railroad_DeKi_400_item.pnml"
+#include "src/Electric/Nippon_Sharyo_DeKi_400_graphics.pnml"
+#include "src/Electric/Nippon_Sharyo_DeKi_400_item.pnml"
 
-#include "src/Electric/Sweden_SJ_F_Class_graphics.pnml"
-#include "src/Electric/Sweden_SJ_F_Class_item.pnml"
+#include "src/Electric/ASEA_F_graphics.pnml"
+#include "src/Electric/ASEA_F_item.pnml"
 
-#include "src/Electric/Italy_FS_E424_graphics.pnml"
-#include "src/Electric/Italy_FS_E424_item.pnml"
+#include "src/Electric/Breda_E_424_graphics.pnml"
+#include "src/Electric/Breda_E_424_item.pnml"
 
-#include "src/Electric/Switzerland_RhB_Ge_4_4_I_graphics.pnml"
-#include "src/Electric/Switzerland_RhB_Ge_4_4_I_item.pnml"
+#include "src/Electric/SLM_BBC_MFO_Ge_4_4_I_graphics.pnml"
+#include "src/Electric/SLM_BBC_MFO_Ge_4_4_I_item.pnml"
 
-#include "src/Electric/Australia_NSWGR_71_graphics.pnml"
-#include "src/Electric/Australia_NSWGR_71_item.pnml"
+#include "src/Electric/Tulloch_0_6_0DM_W_Class_graphics.pnml"
+#include "src/Electric/Tulloch_0_6_0DM_W_Class_item.pnml"
 
-#include "src/Electric/South_Africa_SAR_4E_graphics.pnml"
-#include "src/Electric/South_Africa_SAR_4E_item.pnml"
+#include "src/Electric/GEC_NBLC_SAR_4E__graphics.pnml"
+#include "src/Electric/GEC_NBLC_SAR_4E__item.pnml"
 
-#include "src/Electric/Japan_JNR_EH10_graphics.pnml"
-#include "src/Electric/Japan_JNR_EH10_item.pnml"
+#include "src/Electric/Toshiba_EH10_graphics.pnml"
+#include "src/Electric/Toshiba_EH10_item.pnml"
 
-#include "src/Electric/Belgium_NMBS_Class_255_graphics.pnml"
-#include "src/Electric/Belgium_NMBS_Class_255_item.pnml"
+#include "src/Electric/BN_ACEC_25_5_graphics.pnml"
+#include "src/Electric/BN_ACEC_25_5_item.pnml"
 
-#include "src/Electric/Russia_RZD_ChS3_graphics.pnml"
-#include "src/Electric/Russia_RZD_ChS3_item.pnml"
+#include "src/Electric/Skoda_29E_graphics.pnml"
+#include "src/Electric/Skoda_29E_item.pnml"
 
-#include "src/Electric/Poland_PKP_EU06_graphics.pnml"
-#include "src/Electric/Poland_PKP_EU06_item.pnml"
+#include "src/Electric/English_Electric_E__AEI_E__graphics.pnml"
+#include "src/Electric/English_Electric_E__AEI_E__item.pnml"
 
-#include "src/Electric/Hungary_MAV_Class_V43_graphics.pnml"
-#include "src/Electric/Hungary_MAV_Class_V43_item.pnml"
+#include "src/Electric/Ganz_MAVAG_VM14_V43_graphics.pnml"
+#include "src/Electric/Ganz_MAVAG_VM14_V43_item.pnml"
 
-#include "src/Electric/France_SNCF_BB_25500_graphics.pnml"
-#include "src/Electric/France_SNCF_BB_25500_item.pnml"
+#include "src/Electric/Alsthom_BB_25500_graphics.pnml"
+#include "src/Electric/Alsthom_BB_25500_item.pnml"
 
-#include "src/Electric/South_Africa_SAR_5E1_graphics.pnml"
-#include "src/Electric/South_Africa_SAR_5E1_item.pnml"
+#include "src/Electric/Metrowick_MV_5E1_graphics.pnml"
+#include "src/Electric/Metrowick_MV_5E1_item.pnml"
 
-#include "src/Electric/Czech_Republic_CD_S499_graphics.pnml"
-#include "src/Electric/Czech_Republic_CD_S499_item.pnml"
+#include "src/Electric/Skoda_47E_graphics.pnml"
+#include "src/Electric/Skoda_47E_item.pnml"
 
-#include "src/Electric/Italy_FS_E444_graphics.pnml"
-#include "src/Electric/Italy_FS_E444_item.pnml"
+#include "src/Electric/Savigliano_E_444_graphics.pnml"
+#include "src/Electric/Savigliano_E_444_item.pnml"
 
-#include "src/Electric/Czech_Republic_CD_380_graphics.pnml"
-#include "src/Electric/Czech_Republic_CD_380_item.pnml"
+#include "src/Electric/Skoda_109E_graphics.pnml"
+#include "src/Electric/Skoda_109E_item.pnml"
 
-#include "src/Electric/Russia_RZD_EP20_graphics.pnml"
-#include "src/Electric/Russia_RZD_EP20_item.pnml"
+#include "src/Electric/TRTrans_NEVZ_EP20_graphics.pnml"
+#include "src/Electric/TRTrans_NEVZ_EP20_item.pnml"
 
-#include "src/Electric/China_China_Railways_HXD1D_graphics.pnml"
-#include "src/Electric/China_China_Railways_HXD1D_item.pnml"
+#include "src/Electric/Toshiba_CRRC_HXD1D_graphics.pnml"
+#include "src/Electric/Toshiba_CRRC_HXD1D_item.pnml"
 
-#include "src/Electric/South_Africa_SAR_20E_graphics.pnml"
-#include "src/Electric/South_Africa_SAR_20E_item.pnml"
+#include "src/Electric/ZELC_20E_China_Doll_graphics.pnml"
+#include "src/Electric/ZELC_20E_China_Doll_item.pnml"
 
-#include "src/Electric/Kazakhstan_KTZ_KZ8A_graphics.pnml"
-#include "src/Electric/Kazakhstan_KTZ_KZ8A_item.pnml"
+#include "src/Electric/Alstom_KZ8A_graphics.pnml"
+#include "src/Electric/Alstom_KZ8A_item.pnml"
 
-#include "src/Electric/Indonesia_ESS_3200_graphics.pnml"
-#include "src/Electric/Indonesia_ESS_3200_item.pnml"
+#include "src/Electric/Werkspoor_ESS_3200_graphics.pnml"
+#include "src/Electric/Werkspoor_ESS_3200_item.pnml"
 
-#include "src/Electric/USA_GN_W_1_graphics.pnml"
-#include "src/Electric/USA_GN_W_1_item.pnml"
+#include "src/Electric/GE_W_1_graphics.pnml"
+#include "src/Electric/GE_W_1_item.pnml"
 
-#include "src/Electric/USA_Virginian_Railway_EL_2B_graphics.pnml"
-#include "src/Electric/USA_Virginian_Railway_EL_2B_item.pnml"
+#include "src/Electric/GE_EL_2B_graphics.pnml"
+#include "src/Electric/GE_EL_2B_item.pnml"
 
-#include "src/Electric/Morocco_ONCF_E_700_graphics.pnml"
-#include "src/Electric/Morocco_ONCF_E_700_item.pnml"
+#include "src/Electric/Alsthom_E_700_graphics.pnml"
+#include "src/Electric/Alsthom_E_700_item.pnml"
 
-#include "src/Electric/Chile_EFE_E_29_graphics.pnml"
-#include "src/Electric/Chile_EFE_E_29_item.pnml"
+#include "src/Electric/EFE_E_29_graphics.pnml"
+#include "src/Electric/EFE_E_29_item.pnml"
 
-#include "src/Electric/USA_PRR_E44_graphics.pnml"
-#include "src/Electric/USA_PRR_E44_item.pnml"
+#include "src/Electric/GE_E44_graphics.pnml"
+#include "src/Electric/GE_E44_item.pnml"
 
-#include "src/Electric/New_Zealand_NZR_EA_graphics.pnml"
-#include "src/Electric/New_Zealand_NZR_EA_item.pnml"
+#include "src/Electric/Toshiba_EA_graphics.pnml"
+#include "src/Electric/Toshiba_EA_item.pnml"
 
-#include "src/Electric/Portugal_CP_2600_graphics.pnml"
-#include "src/Electric/Portugal_CP_2600_item.pnml"
+#include "src/Electric/Alsthom_CP_2600_graphics.pnml"
+#include "src/Electric/Alsthom_CP_2600_item.pnml"
 
-#include "src/Electric/USA_Amtrak_EMD_AEM_7_graphics.pnml"
-#include "src/Electric/USA_Amtrak_EMD_AEM_7_item.pnml"
+#include "src/Electric/ASEA_EMD_AEM_7_graphics.pnml"
+#include "src/Electric/ASEA_EMD_AEM_7_item.pnml"
 
-#include "src/Electric/Macedonia_Macedonian_Railways_462_graphics.pnml"
-#include "src/Electric/Macedonia_Macedonian_Railways_462_item.pnml"
+#include "src/Electric/ASEA_Electroputere_Rb_graphics.pnml"
+#include "src/Electric/ASEA_Electroputere_Rb_item.pnml"
 
-#include "src/Electric/Italy_FS_E633_graphics.pnml"
-#include "src/Electric/Italy_FS_E633_item.pnml"
+#include "src/Electric/Fiat_E_633_graphics.pnml"
+#include "src/Electric/Fiat_E_633_item.pnml"
 
-#include "src/Electric/Chile_EFE_E_269_graphics.pnml"
-#include "src/Electric/Chile_EFE_E_269_item.pnml"
+#include "src/Electric/Mitsubishi_series_269_graphics.pnml"
+#include "src/Electric/Mitsubishi_series_269_item.pnml"
 
-#include "src/Electric/Czech_Republic_CD_363_graphics.pnml"
-#include "src/Electric/Czech_Republic_CD_363_item.pnml"
+#include "src/Electric/Skoda_69E_graphics.pnml"
+#include "src/Electric/Skoda_69E_item.pnml"
 
-#include "src/Electric/Mexico_FNM_GE_E60C_2_graphics.pnml"
-#include "src/Electric/Mexico_FNM_GE_E60C_2_item.pnml"
+#include "src/Electric/GE_E60C_2_graphics.pnml"
+#include "src/Electric/GE_E60C_2_item.pnml"
 
-#include "src/Electric/Spain_RENFE_250_graphics.pnml"
-#include "src/Electric/Spain_RENFE_250_item.pnml"
+#include "src/Electric/Krauss_Maffei_CAF_250_graphics.pnml"
+#include "src/Electric/Krauss_Maffei_CAF_250_item.pnml"
 
-#include "src/Electric/Canada_BC_Rail_GF6C_graphics.pnml"
-#include "src/Electric/Canada_BC_Rail_GF6C_item.pnml"
+#include "src/Electric/ASEA_GMD_GF6C_graphics.pnml"
+#include "src/Electric/ASEA_GMD_GF6C_item.pnml"
 
-#include "src/Electric/Ukraine_UZ_ChS7_graphics.pnml"
-#include "src/Electric/Ukraine_UZ_ChS7_item.pnml"
+#include "src/Electric/Skoda_82E_graphics.pnml"
+#include "src/Electric/Skoda_82E_item.pnml"
 
-#include "src/Electric/New_Zealand_TranzRail_EF_graphics.pnml"
-#include "src/Electric/New_Zealand_TranzRail_EF_item.pnml"
+#include "src/Electric/Brush_EF_Class_graphics.pnml"
+#include "src/Electric/Brush_EF_Class_item.pnml"
 
-#include "src/Electric/Poland_PKP_EP09_graphics.pnml"
-#include "src/Electric/Poland_PKP_EP09_item.pnml"
+#include "src/Electric/Pafawag_104E_graphics.pnml"
+#include "src/Electric/Pafawag_104E_item.pnml"
 
-#include "src/Electric/Italy_FS_E491_graphics.pnml"
-#include "src/Electric/Italy_FS_E491_item.pnml"
+#include "src/Electric/Ansaldo___Breda_C_F_E_491_graphics.pnml"
+#include "src/Electric/Ansaldo___Breda_C_F_E_491_item.pnml"
 
-#include "src/Electric/Slovakia_ZSSK_162_graphics.pnml"
-#include "src/Electric/Slovakia_ZSSK_162_item.pnml"
+#include "src/Electric/Skoda_98E_graphics.pnml"
+#include "src/Electric/Skoda_98E_item.pnml"
 
-#include "src/Electric/Ukraine_UZ_DE1_graphics.pnml"
-#include "src/Electric/Ukraine_UZ_DE1_item.pnml"
+#include "src/Electric/DEVZ_DE1_graphics.pnml"
+#include "src/Electric/DEVZ_DE1_item.pnml"
 
-#include "src/Electric/Australia_Aurizon_E40_AG_V1_graphics.pnml"
-#include "src/Electric/Australia_Aurizon_E40_AG_V1_item.pnml"
+#include "src/Electric/Siemens_E40_AG_V1_graphics.pnml"
+#include "src/Electric/Siemens_E40_AG_V1_item.pnml"
 
-#include "src/Electric/Morocco_ONCF_E_1400_Prima_II_graphics.pnml"
-#include "src/Electric/Morocco_ONCF_E_1400_Prima_II_item.pnml"
+#include "src/Electric/Alstom_Prima_II_graphics.pnml"
+#include "src/Electric/Alstom_Prima_II_item.pnml"
 
-#include "src/Electric/USA_Amtrak_ACS_64_graphics.pnml"
-#include "src/Electric/USA_Amtrak_ACS_64_item.pnml"
+#include "src/Electric/Siemens_ACS_64_graphics.pnml"
+#include "src/Electric/Siemens_ACS_64_item.pnml"
 
-#include "src/Electric/USA_PRR_B1_graphics.pnml"
-#include "src/Electric/USA_PRR_B1_item.pnml"
+#include "src/Electric/Westinghouse_6wOE_B1_graphics.pnml"
+#include "src/Electric/Westinghouse_6wOE_B1_item.pnml"
 
-#include "src/Electric/Morocco_ONCFM_E_500_graphics.pnml"
-#include "src/Electric/Morocco_ONCFM_E_500_item.pnml"
+#include "src/Electric/CEF_BB_1600_graphics.pnml"
+#include "src/Electric/CEF_BB_1600_item.pnml"
 
-#include "src/Electric/UK_BR_85_graphics.pnml"
-#include "src/Electric/UK_BR_85_item.pnml"
+#include "src/Electric/BR_85_graphics.pnml"
+#include "src/Electric/BR_85_item.pnml"
 
-#include "src/Electric/Brasil_RFFSA_GE_C_C_4400_graphics.pnml"
-#include "src/Electric/Brasil_RFFSA_GE_C_C_4400_item.pnml"
+#include "src/Electric/GE_C_C_4400_RFFSA_graphics.pnml"
+#include "src/Electric/GE_C_C_4400_RFFSA_item.pnml"
 
-#include "src/Electric/Japan_JNR_EF81_graphics.pnml"
-#include "src/Electric/Japan_JNR_EF81_item.pnml"
+#include "src/Electric/Hitachi_EF81_graphics.pnml"
+#include "src/Electric/Hitachi_EF81_item.pnml"
 
-#include "src/Electric/Chile_EFE_E_17_graphics.pnml"
-#include "src/Electric/Chile_EFE_E_17_item.pnml"
+#include "src/Electric/EFE_E_17_graphics.pnml"
+#include "src/Electric/EFE_E_17_item.pnml"
 
-#include "src/Electric/China_China_Railways_SS3_graphics.pnml"
-#include "src/Electric/China_China_Railways_SS3_item.pnml"
+#include "src/Electric/Zuzhou_SS3_graphics.pnml"
+#include "src/Electric/Zuzhou_SS3_item.pnml"
 
-#include "src/Electric/South_Africa_SAR_7E_graphics.pnml"
-#include "src/Electric/South_Africa_SAR_7E_item.pnml"
+#include "src/Electric/UCW_50_c_s_Group_7E_graphics.pnml"
+#include "src/Electric/UCW_50_c_s_Group_7E_item.pnml"
 
-#include "src/Electric/Norway_NSB_EL17_graphics.pnml"
-#include "src/Electric/Norway_NSB_EL17_item.pnml"
+#include "src/Electric/Thyssen_Henschel_EL17_graphics.pnml"
+#include "src/Electric/Thyssen_Henschel_EL17_item.pnml"
 
-#include "src/Electric/South_Africa_SAR_11E_graphics.pnml"
-#include "src/Electric/South_Africa_SAR_11E_item.pnml"
+#include "src/Electric/General_Motors_GM5FC_graphics.pnml"
+#include "src/Electric/General_Motors_GM5FC_item.pnml"
 
-#include "src/Electric/South_Africa_SAR_E38_graphics.pnml"
-#include "src/Electric/South_Africa_SAR_E38_item.pnml"
+#include "src/Electric/Union_Carriage___Wagon_E38_graphics.pnml"
+#include "src/Electric/Union_Carriage___Wagon_E38_item.pnml"
 
-#include "src/Electric/USA_Amtrak_HHP_8_graphics.pnml"
-#include "src/Electric/USA_Amtrak_HHP_8_item.pnml"
+#include "src/Electric/Bombardier_Alstom_HHP_8_graphics.pnml"
+#include "src/Electric/Bombardier_Alstom_HHP_8_item.pnml"
 
-#include "src/Electric/Brasil_MRS_He_4_4_graphics.pnml"
-#include "src/Electric/Brasil_MRS_He_4_4_item.pnml"
+#include "src/Electric/Stadler_He_4_4_graphics.pnml"
+#include "src/Electric/Stadler_He_4_4_item.pnml"
 
-#include "src/Electric/Russia_RZD_VL11_graphics.pnml"
-#include "src/Electric/Russia_RZD_VL11_item.pnml"
+#include "src/Electric/TEVZ_VL11_graphics.pnml"
+#include "src/Electric/TEVZ_VL11_item.pnml"
 
-#include "src/Electric/Germany_Prussian_ES_6_graphics.pnml"
-#include "src/Electric/Germany_Prussian_ES_6_item.pnml"
+#include "src/Electric/Borsig_SSW_ES_6_graphics.pnml"
+#include "src/Electric/Borsig_SSW_ES_6_item.pnml"
 
-#include "src/Electric/Congo_Type_2450_Acec_Charleroi_Zaire_Electric_graphics.pnml"
-#include "src/Electric/Congo_Type_2450_Acec_Charleroi_Zaire_Electric_item.pnml"
+#include "src/Electric/ACEC_BN_Type_2450_graphics.pnml"
+#include "src/Electric/ACEC_BN_Type_2450_item.pnml"
 
-#include "src/Electric/Tanzania_TRC_E6800_graphics.pnml"
-#include "src/Electric/Tanzania_TRC_E6800_item.pnml"
+#include "src/Electric/TRC_E6800_graphics.pnml"
+#include "src/Electric/TRC_E6800_item.pnml"
 
-#include "src/Electric/Hungary_MAV_Class_V63_graphics.pnml"
-#include "src/Electric/Hungary_MAV_Class_V63_item.pnml"
+#include "src/Electric/Ganz_MAVAG_VM15_V63_graphics.pnml"
+#include "src/Electric/Ganz_MAVAG_VM15_V63_item.pnml"
 
-#include "src/Electric/Australia_QR_3500_graphics.pnml"
-#include "src/Electric/Australia_QR_3500_item.pnml"
+#include "src/Electric/Clyde_ASEA_CF48_graphics.pnml"
+#include "src/Electric/Clyde_ASEA_CF48_item.pnml"
 
-#include "src/Electric/Australia_NSW_85_graphics.pnml"
-#include "src/Electric/Australia_NSW_85_item.pnml"
+#include "src/Electric/Comeng_Class_85_graphics.pnml"
+#include "src/Electric/Comeng_Class_85_item.pnml"
 
-#include "src/Electric/Australia_SRA_8650_graphics.pnml"
-#include "src/Electric/Australia_SRA_8650_item.pnml"
+#include "src/Electric/Comeng_Maldon_Dombarton_8650_graphics.pnml"
+#include "src/Electric/Comeng_Maldon_Dombarton_8650_item.pnml"
 
-#include "src/Electric/Australia_NSW_46_graphics.pnml"
-#include "src/Electric/Australia_NSW_46_item.pnml"
+#include "src/Electric/Metrowick_BP_786_graphics.pnml"
+#include "src/Electric/Metrowick_BP_786_item.pnml"
 
-#include "src/Electric/Brazil_SLM_Winterthur_BBC_1D1_graphics.pnml"
-#include "src/Electric/Brazil_SLM_Winterthur_BBC_1D1_item.pnml"
+#include "src/Electric/SLM_BBC_1_D_1_graphics.pnml"
+#include "src/Electric/SLM_BBC_1_D_1_item.pnml"
 
-#include "src/Electric/Brazil_GE_2CC2_graphics.pnml"
-#include "src/Electric/Brazil_GE_2CC2_item.pnml"
+#include "src/Electric/GE_2_C_C_2_graphics.pnml"
+#include "src/Electric/GE_2_C_C_2_item.pnml"
 
-#include "src/Electric/Costa_Rica_AEG_Pacific_A1A_A1A_graphics.pnml"
-#include "src/Electric/Costa_Rica_AEG_Pacific_A1A_A1A_item.pnml"
+#include "src/Electric/AEG_A1A_A1A_graphics.pnml"
+#include "src/Electric/AEG_A1A_A1A_item.pnml"
 
-#include "src/Electric/Australia_NSW_86_graphics.pnml"
-#include "src/Electric/Australia_NSW_86_item.pnml"
+#include "src/Electric/Comeng_86_Class_graphics.pnml"
+#include "src/Electric/Comeng_86_Class_item.pnml"
 
-#include "src/Electric/China_China_Railways_HXD2_graphics.pnml"
-#include "src/Electric/China_China_Railways_HXD2_item.pnml"
+#include "src/Electric/Alstom_CRRC_Datong_HXD2_graphics.pnml"
+#include "src/Electric/Alstom_CRRC_Datong_HXD2_item.pnml"
 
-#include "src/Electric/China_China_Railways_SS8_graphics.pnml"
-#include "src/Electric/China_China_Railways_SS8_item.pnml"
+#include "src/Electric/Zhuzhou_SS8_graphics.pnml"
+#include "src/Electric/Zhuzhou_SS8_item.pnml"
 
-#include "src/Electric/China_China_Railways_HXD2B_graphics.pnml"
-#include "src/Electric/China_China_Railways_HXD2B_item.pnml"
+#include "src/Electric/Alstom_CRRC_Datong_HXD2B_graphics.pnml"
+#include "src/Electric/Alstom_CRRC_Datong_HXD2B_item.pnml"
 
-#include "src/Electric/China_China_Railways_HXD3D_graphics.pnml"
-#include "src/Electric/China_China_Railways_HXD3D_item.pnml"
+#include "src/Electric/CRRC_Dalian_HXD3D_graphics.pnml"
+#include "src/Electric/CRRC_Dalian_HXD3D_item.pnml"
 
-#include "src/Electric/Hungary_MAV_Class_V40_graphics.pnml"
-#include "src/Electric/Hungary_MAV_Class_V40_item.pnml"
+#include "src/Electric/Ganz_MAVAG_VM7_V40_graphics.pnml"
+#include "src/Electric/Ganz_MAVAG_VM7_V40_item.pnml"
 
-#include "src/Electric/Germany_DRG_E44_graphics.pnml"
-#include "src/Electric/Germany_DRG_E44_item.pnml"
+#include "src/Electric/SSW_Krauss_E44_graphics.pnml"
+#include "src/Electric/SSW_Krauss_E44_item.pnml"
 
-#include "src/Electric/Poland_PKP_PESA_111E_graphics.pnml"
-#include "src/Electric/Poland_PKP_PESA_111E_item.pnml"
+#include "src/Electric/PESA_111MS_graphics.pnml"
+#include "src/Electric/PESA_111MS_item.pnml"
 
-#include "src/Electric/Russia_RZD_VL19_graphics.pnml"
-#include "src/Electric/Russia_RZD_VL19_item.pnml"
+#include "src/Electric/Kolomna_VL19_graphics.pnml"
+#include "src/Electric/Kolomna_VL19_item.pnml"
 
-#include "src/Electric/Germany_DRG_E18_graphics.pnml"
-#include "src/Electric/Germany_DRG_E18_item.pnml"
+#include "src/Electric/AEG_Krupp_E18_graphics.pnml"
+#include "src/Electric/AEG_Krupp_E18_item.pnml"
 
-#include "src/Electric/Netherlands_ACME_HS001_graphics.pnml"
-#include "src/Electric/Netherlands_ACME_HS001_item.pnml"
+#include "src/Electric/ACME_Corp__HS001_graphics.pnml"
+#include "src/Electric/ACME_Corp__HS001_item.pnml"
 
-#include "src/Electric/Netherlands_ACME_HS002_graphics.pnml"
-#include "src/Electric/Netherlands_ACME_HS002_item.pnml"
+#include "src/Electric/ACME_Corp__HS002_graphics.pnml"
+#include "src/Electric/ACME_Corp__HS002_item.pnml"
 
-#include "src/Electric/Germany_LEW_EL2_graphics.pnml"
-#include "src/Electric/Germany_LEW_EL2_item.pnml"
+#include "src/Electric/LEW_EL2_graphics.pnml"
+#include "src/Electric/LEW_EL2_item.pnml"
 
-#include "src/Electric/Poland_Pafawag_201E_graphics.pnml"
-#include "src/Electric/Poland_Pafawag_201E_item.pnml"
+#include "src/Electric/Pafawag_201E_graphics.pnml"
+#include "src/Electric/Pafawag_201E_item.pnml"
 
-#include "src/Electric/India_Hitachi_WAG6BC_graphics.pnml"
-#include "src/Electric/India_Hitachi_WAG6BC_item.pnml"
+#include "src/Electric/Hitachi_WAG_6B_C_graphics.pnml"
+#include "src/Electric/Hitachi_WAG_6B_C_item.pnml"
 
-#include "src/Electric/South_Africa_Toshiba_10E_graphics.pnml"
-#include "src/Electric/South_Africa_Toshiba_10E_item.pnml"
+#include "src/Electric/Toshiba_10E_graphics.pnml"
+#include "src/Electric/Toshiba_10E_item.pnml"
 
-#include "src/Electric/South_Africa_SAR_9E_S1_graphics.pnml"
-#include "src/Electric/South_Africa_SAR_9E_S1_item.pnml"
+#include "src/Electric/GEC_9E_graphics.pnml"
+#include "src/Electric/GEC_9E_item.pnml"
 
-#include "src/Electric/Morocco_Hitachi_E1100_graphics.pnml"
-#include "src/Electric/Morocco_Hitachi_E1100_item.pnml"
+#include "src/Electric/Hitachi_E1100_graphics.pnml"
+#include "src/Electric/Hitachi_E1100_item.pnml"
 
-#include "src/Electric/India_RDSO_CLW_WAM4_graphics.pnml"
-#include "src/Electric/India_RDSO_CLW_WAM4_item.pnml"
+#include "src/Electric/RDSO_CLW_WAM_4_graphics.pnml"
+#include "src/Electric/RDSO_CLW_WAM_4_item.pnml"
 
-#include "src/Electric/India_Groupement_50_Hz_WAM_1_graphics.pnml"
-#include "src/Electric/India_Groupement_50_Hz_WAM_1_item.pnml"
+#include "src/Electric/Groupement_50_Hz_WAM_1_graphics.pnml"
+#include "src/Electric/Groupement_50_Hz_WAM_1_item.pnml"
 
-#include "src/Electric/Chile_Ingeteam_Euskotren_TD2000_graphics.pnml"
-#include "src/Electric/Chile_Ingeteam_Euskotren_TD2000_item.pnml"
+#include "src/Electric/Ingeteam_TD2000_series_graphics.pnml"
+#include "src/Electric/Ingeteam_TD2000_series_item.pnml"
 
-#include "src/Electric/UK_London_1903_Stock_graphics.pnml"
-#include "src/Electric/UK_London_1903_Stock_item.pnml"
+#include "src/Electric/BRC_W_London_1903_Stock_graphics.pnml"
+#include "src/Electric/BRC_W_London_1903_Stock_item.pnml"
 
-#include "src/Electric/Argentina_Le_Brugeoise_graphics.pnml"
-#include "src/Electric/Argentina_Le_Brugeoise_item.pnml"
+#include "src/Electric/Buenos_Aires_Le_Brugeoise_graphics.pnml"
+#include "src/Electric/Buenos_Aires_Le_Brugeoise_item.pnml"
 
-#include "src/Electric/USA_NY_R1_graphics.pnml"
-#include "src/Electric/USA_NY_R1_item.pnml"
+#include "src/Electric/ACF_New_York_R1_graphics.pnml"
+#include "src/Electric/ACF_New_York_R1_item.pnml"
 
-#include "src/Electric/UK_London_1938_Stock_graphics.pnml"
-#include "src/Electric/UK_London_1938_Stock_item.pnml"
+#include "src/Electric/London_1938_Stock_graphics.pnml"
+#include "src/Electric/London_1938_Stock_item.pnml"
 
-#include "src/Electric/Germany_DB_ET_171_graphics.pnml"
-#include "src/Electric/Germany_DB_ET_171_item.pnml"
+#include "src/Electric/LHB_ET_171_graphics.pnml"
+#include "src/Electric/LHB_ET_171_item.pnml"
 
-#include "src/Electric/France_Paris_M2_840_graphics.pnml"
-#include "src/Electric/France_Paris_M2_840_item.pnml"
+#include "src/Electric/GEC_Alsthom_Paris_MP55_graphics.pnml"
+#include "src/Electric/GEC_Alsthom_Paris_MP55_item.pnml"
 
-#include "src/Electric/Portugal_Lisbon_ML7_graphics.pnml"
-#include "src/Electric/Portugal_Lisbon_ML7_item.pnml"
+#include "src/Electric/LHB_Lisbon_ML7_graphics.pnml"
+#include "src/Electric/LHB_Lisbon_ML7_item.pnml"
 
-#include "src/Electric/Hungary_Budapest_Ev3_200_graphics.pnml"
-#include "src/Electric/Hungary_Budapest_Ev3_200_item.pnml"
+#include "src/Electric/MMZ_Budapest_Ev3_graphics.pnml"
+#include "src/Electric/MMZ_Budapest_Ev3_item.pnml"
 
-#include "src/Electric/Norway_Oslo_T1000_graphics.pnml"
-#include "src/Electric/Norway_Oslo_T1000_item.pnml"
+#include "src/Electric/Strommens_Oslo_T1000_graphics.pnml"
+#include "src/Electric/Strommens_Oslo_T1000_item.pnml"
 
-#include "src/Electric/Canada_Toronto_H_series_graphics.pnml"
-#include "src/Electric/Canada_Toronto_H_series_item.pnml"
+#include "src/Electric/Hawker_Siddeley_Toronto_H1_graphics.pnml"
+#include "src/Electric/Hawker_Siddeley_Toronto_H1_item.pnml"
 
-#include "src/Electric/Germany_Munchen_MVG_A2_graphics.pnml"
-#include "src/Electric/Germany_Munchen_MVG_A2_item.pnml"
+#include "src/Electric/MAN_Munchen_MVG_A2_graphics.pnml"
+#include "src/Electric/MAN_Munchen_MVG_A2_item.pnml"
 
-#include "src/Electric/USA_NY_R44_graphics.pnml"
-#include "src/Electric/USA_NY_R44_item.pnml"
+#include "src/Electric/St__Louis_Car_Co_New_York_R44_graphics.pnml"
+#include "src/Electric/St__Louis_Car_Co_New_York_R44_item.pnml"
 
-#include "src/Electric/Netherlands_Amsterdam_Type_M1_graphics.pnml"
-#include "src/Electric/Netherlands_Amsterdam_Type_M1_item.pnml"
+#include "src/Electric/LHB_Amsterdam_M1_graphics.pnml"
+#include "src/Electric/LHB_Amsterdam_M1_item.pnml"
 
-#include "src/Electric/Sweden_Stockholm_C8_graphics.pnml"
-#include "src/Electric/Sweden_Stockholm_C8_item.pnml"
+#include "src/Electric/ASEA_Stockholm_C8_graphics.pnml"
+#include "src/Electric/ASEA_Stockholm_C8_item.pnml"
 
-#include "src/Electric/North_Korea_Pyongyang_D_stock_graphics.pnml"
-#include "src/Electric/North_Korea_Pyongyang_D_stock_item.pnml"
+#include "src/Electric/AEG_Pyongyang_D_graphics.pnml"
+#include "src/Electric/AEG_Pyongyang_D_item.pnml"
 
-#include "src/Electric/Finland_Helsinki_M100_graphics.pnml"
-#include "src/Electric/Finland_Helsinki_M100_item.pnml"
+#include "src/Electric/Valmet_Helsinki_M100_graphics.pnml"
+#include "src/Electric/Valmet_Helsinki_M100_item.pnml"
 
-#include "src/Electric/Brazil_Sao_Paulo_Serie_5500_graphics.pnml"
-#include "src/Electric/Brazil_Sao_Paulo_Serie_5500_item.pnml"
+#include "src/Electric/Sorefame_Sao_Paulo_Serie_5500_graphics.pnml"
+#include "src/Electric/Sorefame_Sao_Paulo_Serie_5500_item.pnml"
 
-#include "src/Electric/Russia_Moscow_81_720_graphics.pnml"
-#include "src/Electric/Russia_Moscow_81_720_item.pnml"
+#include "src/Electric/MMZ_Moscow_81_720_graphics.pnml"
+#include "src/Electric/MMZ_Moscow_81_720_item.pnml"
 
-#include "src/Electric/Japan_Tokyo_S01_graphics.pnml"
-#include "src/Electric/Japan_Tokyo_S01_item.pnml"
+#include "src/Electric/Kawasaki_Tokyo_S01_graphics.pnml"
+#include "src/Electric/Kawasaki_Tokyo_S01_item.pnml"
 
-#include "src/Electric/Egypt_Cairo_1987_Stock_graphics.pnml"
-#include "src/Electric/Egypt_Cairo_1987_Stock_item.pnml"
+#include "src/Electric/Kinki_Sharyo_Vcairo_graphics.pnml"
+#include "src/Electric/Kinki_Sharyo_Vcairo_item.pnml"
 
-#include "src/Electric/UK_DLR_P86_graphics.pnml"
-#include "src/Electric/UK_DLR_P86_item.pnml"
+#include "src/Electric/LHB_London_DLR_P86_graphics.pnml"
+#include "src/Electric/LHB_London_DLR_P86_item.pnml"
 
-#include "src/Electric/Russia_Moscow_81_7175M_graphics.pnml"
-#include "src/Electric/Russia_Moscow_81_7175M_item.pnml"
+#include "src/Electric/MMZ_Moscow_81_717_5M_graphics.pnml"
+#include "src/Electric/MMZ_Moscow_81_717_5M_item.pnml"
 
-#include "src/Electric/USA_Boston_01800_graphics.pnml"
-#include "src/Electric/USA_Boston_01800_item.pnml"
+#include "src/Electric/Bombardier_Boston_01800_graphics.pnml"
+#include "src/Electric/Bombardier_Boston_01800_item.pnml"
 
-#include "src/Electric/USA_LA_A650_graphics.pnml"
-#include "src/Electric/USA_LA_A650_item.pnml"
+#include "src/Electric/Breda_LA_A650_graphics.pnml"
+#include "src/Electric/Breda_LA_A650_item.pnml"
 
-#include "src/Electric/Taiwan_Taipei_C301_graphics.pnml"
-#include "src/Electric/Taiwan_Taipei_C301_item.pnml"
+#include "src/Electric/Kawasaki_Taipei_C301_graphics.pnml"
+#include "src/Electric/Kawasaki_Taipei_C301_item.pnml"
 
-#include "src/Electric/France_Paris_MP89_graphics.pnml"
-#include "src/Electric/France_Paris_MP89_item.pnml"
+#include "src/Electric/GEC_Alsthom_Paris_MP89_graphics.pnml"
+#include "src/Electric/GEC_Alsthom_Paris_MP89_item.pnml"
 
-#include "src/Electric/Netherlands_Amsterdam_CAF_90_graphics.pnml"
-#include "src/Electric/Netherlands_Amsterdam_CAF_90_item.pnml"
+#include "src/Electric/CAF_Amsterdam_S3_90_graphics.pnml"
+#include "src/Electric/CAF_Amsterdam_S3_90_item.pnml"
 
-#include "src/Electric/Russia_Moscow_81_740_graphics.pnml"
-#include "src/Electric/Russia_Moscow_81_740_item.pnml"
+#include "src/Electric/MMZ_Moscow_81_740_graphics.pnml"
+#include "src/Electric/MMZ_Moscow_81_740_item.pnml"
 
-#include "src/Electric/Singapore_Singapore_C830_Metropolis_graphics.pnml"
-#include "src/Electric/Singapore_Singapore_C830_Metropolis_item.pnml"
+#include "src/Electric/Alstom_Singapore_C830_Metropolis_graphics.pnml"
+#include "src/Electric/Alstom_Singapore_C830_Metropolis_item.pnml"
 
-#include "src/Electric/Norway_Oslo_MX3000_graphics.pnml"
-#include "src/Electric/Norway_Oslo_MX3000_item.pnml"
+#include "src/Electric/Siemens_Oslo_MX3000_graphics.pnml"
+#include "src/Electric/Siemens_Oslo_MX3000_item.pnml"
 
-#include "src/Electric/Japan_Osaka_30000_graphics.pnml"
-#include "src/Electric/Japan_Osaka_30000_item.pnml"
+#include "src/Electric/Kawasaki_Osaka_30000_graphics.pnml"
+#include "src/Electric/Kawasaki_Osaka_30000_item.pnml"
 
-#include "src/Electric/Singapore_Singapore_C151A_graphics.pnml"
-#include "src/Electric/Singapore_Singapore_C151A_item.pnml"
+#include "src/Electric/Kawasaki_Singapore_C151A_graphics.pnml"
+#include "src/Electric/Kawasaki_Singapore_C151A_item.pnml"
 
-#include "src/Electric/USA_Washington_7000_graphics.pnml"
-#include "src/Electric/USA_Washington_7000_item.pnml"
+#include "src/Electric/Kawasaki_Washington_7000_graphics.pnml"
+#include "src/Electric/Kawasaki_Washington_7000_item.pnml"
 
-#include "src/Electric/Greece_Thessaloniki_2014_graphics.pnml"
-#include "src/Electric/Greece_Thessaloniki_2014_item.pnml"
+#include "src/Electric/Hitachi_Thessaloniki_2014_graphics.pnml"
+#include "src/Electric/Hitachi_Thessaloniki_2014_item.pnml"
 
-#include "src/Electric/Germany_Berlin_U_Bahn_A_I_graphics.pnml"
-#include "src/Electric/Germany_Berlin_U_Bahn_A_I_item.pnml"
+#include "src/Electric/AEG_Berlin_U_Bahn_A_I_graphics.pnml"
+#include "src/Electric/AEG_Berlin_U_Bahn_A_I_item.pnml"
 
-#include "src/Electric/USA_NY_Hedley_Hi_V_graphics.pnml"
-#include "src/Electric/USA_NY_Hedley_Hi_V_item.pnml"
+#include "src/Electric/ACF_New_York_Hedley_Hi_V_graphics.pnml"
+#include "src/Electric/ACF_New_York_Hedley_Hi_V_item.pnml"
 
-#include "src/Electric/Japan_Osaka_1000_graphics.pnml"
-#include "src/Electric/Japan_Osaka_1000_item.pnml"
+#include "src/Electric/Kawasaki_Osaka_1000_graphics.pnml"
+#include "src/Electric/Kawasaki_Osaka_1000_item.pnml"
 
-#include "src/Electric/Russia_Moscow_Type_A_graphics.pnml"
-#include "src/Electric/Russia_Moscow_Type_A_item.pnml"
+#include "src/Electric/MMZ_Moscow_Type_A_graphics.pnml"
+#include "src/Electric/MMZ_Moscow_Type_A_item.pnml"
 
-#include "src/Electric/USA_NY_R10_graphics.pnml"
-#include "src/Electric/USA_NY_R10_item.pnml"
+#include "src/Electric/ACF_New_York_R10_graphics.pnml"
+#include "src/Electric/ACF_New_York_R10_item.pnml"
 
-#include "src/Electric/Italy_Rome_MR_100_graphics.pnml"
-#include "src/Electric/Italy_Rome_MR_100_item.pnml"
+#include "src/Electric/Stanga_Rome_MR_100_graphics.pnml"
+#include "src/Electric/Stanga_Rome_MR_100_item.pnml"
 
-#include "src/Electric/Russia_Moscow_Type_D_graphics.pnml"
-#include "src/Electric/Russia_Moscow_Type_D_item.pnml"
+#include "src/Electric/MMZ_Moscow_Type_D_graphics.pnml"
+#include "src/Electric/MMZ_Moscow_Type_D_item.pnml"
 
-#include "src/Electric/Netherlands_Rotterdam_MG2_Type_M_graphics.pnml"
-#include "src/Electric/Netherlands_Rotterdam_MG2_Type_M_item.pnml"
+#include "src/Electric/Werkspoor_Rotterdam_MG2_Type_M_graphics.pnml"
+#include "src/Electric/Werkspoor_Rotterdam_MG2_Type_M_item.pnml"
 
-#include "src/Electric/Czech_Republic_Prague_ECS_Set_graphics.pnml"
-#include "src/Electric/Czech_Republic_Prague_ECS_Set_item.pnml"
+#include "src/Electric/MMZ_Prague_ECS_Set_graphics.pnml"
+#include "src/Electric/MMZ_Prague_ECS_Set_item.pnml"
 
-#include "src/Electric/Argentina_Buenos_Aires_Serie_1200_graphics.pnml"
-#include "src/Electric/Argentina_Buenos_Aires_Serie_1200_item.pnml"
+#include "src/Electric/Hitachi_Buenos_Aires_Serie_1200_graphics.pnml"
+#include "src/Electric/Hitachi_Buenos_Aires_Serie_1200_item.pnml"
 
-#include "src/Electric/Chile_Santiago_NS_93_graphics.pnml"
-#include "src/Electric/Chile_Santiago_NS_93_item.pnml"
+#include "src/Electric/GEC_Alsthom_Santiago_NS_93_graphics.pnml"
+#include "src/Electric/GEC_Alsthom_Santiago_NS_93_item.pnml"
 
-#include "src/Electric/Chile_Santiago_AS_2002_graphics.pnml"
-#include "src/Electric/Chile_Santiago_AS_2002_item.pnml"
+#include "src/Electric/Alstom_Brasil_Santiago_AS_2002_graphics.pnml"
+#include "src/Electric/Alstom_Brasil_Santiago_AS_2002_item.pnml"
 
-#include "src/Electric/Brazil_Recife_VLT_Mobile_3_graphics.pnml"
-#include "src/Electric/Brazil_Recife_VLT_Mobile_3_item.pnml"
+#include "src/Electric/TUDH_Recife_VLT_Mobile_3_graphics.pnml"
+#include "src/Electric/TUDH_Recife_VLT_Mobile_3_item.pnml"
 
-#include "src/Electric/Spain_Madrid_Series_5000_graphics.pnml"
-#include "src/Electric/Spain_Madrid_Series_5000_item.pnml"
+#include "src/Electric/CAF_Madrid_Series_5000_graphics.pnml"
+#include "src/Electric/CAF_Madrid_Series_5000_item.pnml"
 
-#include "src/Electric/Italy_Rome_S_300_graphics.pnml"
-#include "src/Electric/Italy_Rome_S_300_item.pnml"
+#include "src/Electric/CAF_Rome_S_300_graphics.pnml"
+#include "src/Electric/CAF_Rome_S_300_item.pnml"
 
-#include "src/Electric/Algeria_Algiers_CAF_2011_Stock_graphics.pnml"
-#include "src/Electric/Algeria_Algiers_CAF_2011_Stock_item.pnml"
+#include "src/Electric/CAF_Algiers_2011_Stock_graphics.pnml"
+#include "src/Electric/CAF_Algiers_2011_Stock_item.pnml"
 
-#include "src/Electric/Germany_Berlin_U_Bahn_IK_graphics.pnml"
-#include "src/Electric/Germany_Berlin_U_Bahn_IK_item.pnml"
+#include "src/Electric/Stadler_Berlin_U_Bahn_IK_graphics.pnml"
+#include "src/Electric/Stadler_Berlin_U_Bahn_IK_item.pnml"
 
-#include "src/Electric/USA_Chicago_L_6000_graphics.pnml"
-#include "src/Electric/USA_Chicago_L_6000_item.pnml"
+#include "src/Electric/St__Louis_Car_Company_Chicago_L_6000_Series_graphics.pnml"
+#include "src/Electric/St__Louis_Car_Company_Chicago_L_6000_Series_item.pnml"
 
-#include "src/Electric/USA_Brooklyn_Union_Gate_Car_graphics.pnml"
-#include "src/Electric/USA_Brooklyn_Union_Gate_Car_item.pnml"
+#include "src/Electric/Brooklyn_Union_Gate_Elevated_graphics.pnml"
+#include "src/Electric/Brooklyn_Union_Gate_Elevated_item.pnml"
 
-#include "src/Electric/UK_London_1992_Stock_graphics.pnml"
-#include "src/Electric/UK_London_1992_Stock_item.pnml"
+#include "src/Electric/BREL_ABB_London_1992_Stock_graphics.pnml"
+#include "src/Electric/BREL_ABB_London_1992_Stock_item.pnml"
 
-#include "src/Electric/UK_London_S_Stock_graphics.pnml"
-#include "src/Electric/UK_London_S_Stock_item.pnml"
+#include "src/Electric/Bombardier_Movia_London_S_Stock_graphics.pnml"
+#include "src/Electric/Bombardier_Movia_London_S_Stock_item.pnml"
 
-#include "src/Electric/UK_London_1972_Stock_graphics.pnml"
-#include "src/Electric/UK_London_1972_Stock_item.pnml"
+#include "src/Electric/Metro_Cammell_London_1972_Stock_graphics.pnml"
+#include "src/Electric/Metro_Cammell_London_1972_Stock_item.pnml"
 
-#include "src/Electric/UK_London_1959_Stock_graphics.pnml"
-#include "src/Electric/UK_London_1959_Stock_item.pnml"
+#include "src/Electric/Metro_Cammell_London_1959_Stock_graphics.pnml"
+#include "src/Electric/Metro_Cammell_London_1959_Stock_item.pnml"
 
-#include "src/Electric/Singapore_Kawasaki_Heavy_Industries_C151_graphics.pnml"
-#include "src/Electric/Singapore_Kawasaki_Heavy_Industries_C151_item.pnml"
+#include "src/Electric/Kawasaki_HI_C151_graphics.pnml"
+#include "src/Electric/Kawasaki_HI_C151_item.pnml"
 
-#include "src/Electric/Singapore_Kawasaki_Heavy_Industries_C751B_graphics.pnml"
-#include "src/Electric/Singapore_Kawasaki_Heavy_Industries_C751B_item.pnml"
+#include "src/Electric/Kawasaki_HI___Nippon_Sharyo_C751B_graphics.pnml"
+#include "src/Electric/Kawasaki_HI___Nippon_Sharyo_C751B_item.pnml"
 
-#include "src/Electric/Australia_Comeng_Light_Metro_MK1_graphics.pnml"
-#include "src/Electric/Australia_Comeng_Light_Metro_MK1_item.pnml"
+#include "src/Electric/Comeng_Light_Metro_Prototype_graphics.pnml"
+#include "src/Electric/Comeng_Light_Metro_Prototype_item.pnml"
 
-#include "src/Electric/Germany_Berlin_BVG_F_graphics.pnml"
-#include "src/Electric/Germany_Berlin_BVG_F_item.pnml"
+#include "src/Electric/ABB_Henschel_Berlin_BVG_F74_graphics.pnml"
+#include "src/Electric/ABB_Henschel_Berlin_BVG_F74_item.pnml"
 
-#include "src/Electric/Germany_Berlin_BVG_H_graphics.pnml"
-#include "src/Electric/Germany_Berlin_BVG_H_item.pnml"
+#include "src/Electric/Adtranz_Berlin_BVG_H_graphics.pnml"
+#include "src/Electric/Adtranz_Berlin_BVG_H_item.pnml"
 
-#include "src/Electric/Hungary_Budapest_Ganz_Hunslet_G2_graphics.pnml"
-#include "src/Electric/Hungary_Budapest_Ganz_Hunslet_G2_item.pnml"
+#include "src/Electric/Ganz_Hunslet_Budapest_G2_graphics.pnml"
+#include "src/Electric/Ganz_Hunslet_Budapest_G2_item.pnml"
 
 
 //// MMU
-#include "src/MMU/China_Transrapid_graphics.pnml"
-#include "src/MMU/China_Transrapid_item.pnml"
+#include "src/MMU/Siemens_Thyssenkrupp_Transrapid_graphics.pnml"
+#include "src/MMU/Siemens_Thyssenkrupp_Transrapid_item.pnml"
 
-#include "src/MMU/Japan_MLX01_901_graphics.pnml"
-#include "src/MMU/Japan_MLX01_901_item.pnml"
+#include "src/MMU/Mistubishi_Nippon_Sharyo_MLX01_901_graphics.pnml"
+#include "src/MMU/Mistubishi_Nippon_Sharyo_MLX01_901_item.pnml"
 
-#include "src/MMU/World_Chimaera_graphics.pnml"
-#include "src/MMU/World_Chimaera_item.pnml"
+#include "src/MMU/ACME_Corp__Chimaera_graphics.pnml"
+#include "src/MMU/ACME_Corp__Chimaera_item.pnml"
 
 
 //// MAGLEV
-#include "src/Maglev/Germany_DB_182_ES64UM_Mutus_graphics.pnml"
-#include "src/Maglev/Germany_DB_182_ES64UM_Mutus_item.pnml"
+#include "src/Maglev/Siemens_Eurosprinter_ES64U4M_graphics.pnml"
+#include "src/Maglev/Siemens_Eurosprinter_ES64U4M_item.pnml"
 
-#include "src/Maglev/World_Pegasus_graphics.pnml"
-#include "src/Maglev/World_Pegasus_item.pnml"
+#include "src/Maglev/ACME_Corp__Pegasus_graphics.pnml"
+#include "src/Maglev/ACME_Corp__Pegasus_item.pnml"
 
 
 //// RAILBUS - RAILBUS_DIESEL
-#include "src/Railbus/Railbus_Diesel/Australia_Victorian_Railways_AEC_RM1_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Australia_Victorian_Railways_AEC_RM1_item.pnml"
+#include "src/Railbus/Railbus_Diesel/AEC_railmotor_RM1_graphics.pnml"
+#include "src/Railbus/Railbus_Diesel/AEC_railmotor_RM1_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Germany_DB_VT_133_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Germany_DB_VT_133_item.pnml"
+#include "src/Railbus/Railbus_Diesel/VT133_Wismar_Railcar_graphics.pnml"
+#include "src/Railbus/Railbus_Diesel/VT133_Wismar_Railcar_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/United_Kingdom_GWR_AEC_Railcar_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/United_Kingdom_GWR_AEC_Railcar_item.pnml"
+#include "src/Railbus/Railbus_Diesel/AEC_Railcar_graphics.pnml"
+#include "src/Railbus/Railbus_Diesel/AEC_Railcar_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Austria_OBB_5042_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Austria_OBB_5042_item.pnml"
+#include "src/Railbus/Railbus_Diesel/Simmering_VT42_graphics.pnml"
+#include "src/Railbus/Railbus_Diesel/Simmering_VT42_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/New_Zealand_NZR_RM31_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/New_Zealand_NZR_RM31_item.pnml"
+#include "src/Railbus/Railbus_Diesel/Hutt_RM31_graphics.pnml"
+#include "src/Railbus/Railbus_Diesel/Hutt_RM31_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Portugal_CP_0100_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Portugal_CP_0100_item.pnml"
+#include "src/Railbus/Railbus_Diesel/NOHAB_CP_0100_graphics.pnml"
+#include "src/Railbus/Railbus_Diesel/NOHAB_CP_0100_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/USA_Amtrak_Budd_RDC_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/USA_Amtrak_Budd_RDC_item.pnml"
+#include "src/Railbus/Railbus_Diesel/Budd_RDC_graphics.pnml"
+#include "src/Railbus/Railbus_Diesel/Budd_RDC_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Germany_OHE_520_GDT_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Germany_OHE_520_GDT_item.pnml"
+#include "src/Railbus/Railbus_Diesel/MaK_GDT_graphics.pnml"
+#include "src/Railbus/Railbus_Diesel/MaK_GDT_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Netherlands_NS_20_Kameel_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Netherlands_NS_20_Kameel_item.pnml"
+#include "src/Railbus/Railbus_Diesel/Allan_Kameel_graphics.pnml"
+#include "src/Railbus/Railbus_Diesel/Allan_Kameel_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Finland_VR_Dm7_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Finland_VR_Dm7_item.pnml"
+#include "src/Railbus/Railbus_Diesel/Valmet_Dm7_graphics.pnml"
+#include "src/Railbus/Railbus_Diesel/Valmet_Dm7_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Russia_RZD_ACh2_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Russia_RZD_ACh2_item.pnml"
+#include "src/Railbus/Railbus_Diesel/Vagonka_Studenka_91M0__graphics.pnml"
+#include "src/Railbus/Railbus_Diesel/Vagonka_Studenka_91M0__item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Netherlands_NS_DH1_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Netherlands_NS_DH1_item.pnml"
+#include "src/Railbus/Railbus_Diesel/NS_DH1_graphics.pnml"
+#include "src/Railbus/Railbus_Diesel/NS_DH1_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Austria_OBB_5047_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Austria_OBB_5047_item.pnml"
+#include "src/Railbus/Railbus_Diesel/Jenbacher_Werke_5047_graphics.pnml"
+#include "src/Railbus/Railbus_Diesel/Jenbacher_Werke_5047_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/United_Kingdom_BR_153_Super_Sprinter_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/United_Kingdom_BR_153_Super_Sprinter_item.pnml"
+#include "src/Railbus/Railbus_Diesel/Hunslet_Barclay_Super_Sprinter_graphics.pnml"
+#include "src/Railbus/Railbus_Diesel/Hunslet_Barclay_Super_Sprinter_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Czech_Republic_CD_809_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Czech_Republic_CD_809_item.pnml"
+#include "src/Railbus/Railbus_Diesel/Vagonka_Studenka_809_graphics.pnml"
+#include "src/Railbus/Railbus_Diesel/Vagonka_Studenka_809_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Germany_DB_670_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Germany_DB_670_item.pnml"
+#include "src/Railbus/Railbus_Diesel/DWA_670_graphics.pnml"
+#include "src/Railbus/Railbus_Diesel/DWA_670_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Lithuania_Lithuanian_Railways_AR2_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Lithuania_Lithuanian_Railways_AR2_item.pnml"
+#include "src/Railbus/Railbus_Diesel/RVR_AR2_graphics.pnml"
+#include "src/Railbus/Railbus_Diesel/RVR_AR2_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Austria_kkStB_19_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Austria_kkStB_19_item.pnml"
+#include "src/Railbus/Railbus_Diesel/Austro_Daimler_Z1_graphics.pnml"
+#include "src/Railbus/Railbus_Diesel/Austro_Daimler_Z1_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/USA_Virginia_Truckee_Motor_Car_22_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/USA_Virginia_Truckee_Motor_Car_22_item.pnml"
+#include "src/Railbus/Railbus_Diesel/McKeen_Motor_Car_70_graphics.pnml"
+#include "src/Railbus/Railbus_Diesel/McKeen_Motor_Car_70_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Germany_Saxon_DET_1_2_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Germany_Saxon_DET_1_2_item.pnml"
+#include "src/Railbus/Railbus_Diesel/BBC_DET_1_2_Sachsischer_graphics.pnml"
+#include "src/Railbus/Railbus_Diesel/BBC_DET_1_2_Sachsischer_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/UK_WC_PR_Drewry_Railcar_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/UK_WC_PR_Drewry_Railcar_item.pnml"
+#include "src/Railbus/Railbus_Diesel/WC_PR_Drewry_Railcar_graphics.pnml"
+#include "src/Railbus/Railbus_Diesel/WC_PR_Drewry_Railcar_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Germany_BSt_6001_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Germany_BSt_6001_item.pnml"
+#include "src/Railbus/Railbus_Diesel/LHW_BSt_6001_graphics.pnml"
+#include "src/Railbus/Railbus_Diesel/LHW_BSt_6001_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Australia_Victorian_Railways_DERM_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Australia_Victorian_Railways_DERM_item.pnml"
+#include "src/Railbus/Railbus_Diesel/EMC_DERM_graphics.pnml"
+#include "src/Railbus/Railbus_Diesel/EMC_DERM_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Czech_Republic_CD_M120_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Czech_Republic_CD_M120_item.pnml"
+#include "src/Railbus/Railbus_Diesel/Tatra_M120_4_graphics.pnml"
+#include "src/Railbus/Railbus_Diesel/Tatra_M120_4_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Germany_Schienenzeppelin_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Germany_Schienenzeppelin_item.pnml"
+#include "src/Railbus/Railbus_Diesel/Franz_Kruckenberg_Schienenzeppelin_graphics.pnml"
+#include "src/Railbus/Railbus_Diesel/Franz_Kruckenberg_Schienenzeppelin_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Denmark_DSB_MO_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Denmark_DSB_MO_item.pnml"
+#include "src/Railbus/Railbus_Diesel/DSB_MO_Serie_1_graphics.pnml"
+#include "src/Railbus/Railbus_Diesel/DSB_MO_Serie_1_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Norway_NSB_Cmb_17_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Norway_NSB_Cmb_17_item.pnml"
+#include "src/Railbus/Railbus_Diesel/Strommens_Kristine_Valdresdatter_graphics.pnml"
+#include "src/Railbus/Railbus_Diesel/Strommens_Kristine_Valdresdatter_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Czech_Republic_CD_M290_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Czech_Republic_CD_M290_item.pnml"
+#include "src/Railbus/Railbus_Diesel/Tatra_M290_graphics.pnml"
+#include "src/Railbus/Railbus_Diesel/Tatra_M290_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Netherlands_NS_omBC_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Netherlands_NS_omBC_item.pnml"
+#include "src/Railbus/Railbus_Diesel/Werkspoor_DM37_graphics.pnml"
+#include "src/Railbus/Railbus_Diesel/Werkspoor_DM37_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Australia_NSWGR_Class_400_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Australia_NSWGR_Class_400_item.pnml"
+#include "src/Railbus/Railbus_Diesel/Eveleigh_400_Class_graphics.pnml"
+#include "src/Railbus/Railbus_Diesel/Eveleigh_400_Class_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Portugal_CP_USD_9050_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Portugal_CP_USD_9050_item.pnml"
+#include "src/Railbus/Railbus_Diesel/Vale_do_Vouga_ME51_55_graphics.pnml"
+#include "src/Railbus/Railbus_Diesel/Vale_do_Vouga_ME51_55_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Belgium_SNCB_Class_42_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Belgium_SNCB_Class_42_item.pnml"
+#include "src/Railbus/Railbus_Diesel/Ateliers_Germain_42_43_graphics.pnml"
+#include "src/Railbus/Railbus_Diesel/Ateliers_Germain_42_43_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Bulgaria_BDZ_19_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Bulgaria_BDZ_19_item.pnml"
+#include "src/Railbus/Railbus_Diesel/SGP_77783_1960_graphics.pnml"
+#include "src/Railbus/Railbus_Diesel/SGP_77783_1960_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Greece_OSE_AA71_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Greece_OSE_AA71_item.pnml"
+#include "src/Railbus/Railbus_Diesel/Ferrostaal_Esslingen_AA_71_graphics.pnml"
+#include "src/Railbus/Railbus_Diesel/Ferrostaal_Esslingen_AA_71_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Tunisia_SNCFT_Z431_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Tunisia_SNCFT_Z431_item.pnml"
+#include "src/Railbus/Railbus_Diesel/Alsthom_Z_431_graphics.pnml"
+#include "src/Railbus/Railbus_Diesel/Alsthom_Z_431_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/USA_Amtrak_SPV_200_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/USA_Amtrak_SPV_200_item.pnml"
+#include "src/Railbus/Railbus_Diesel/Budd_SPV_2000_graphics.pnml"
+#include "src/Railbus/Railbus_Diesel/Budd_SPV_2000_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Japan_JR_Shikoku_1000_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Japan_JR_Shikoku_1000_item.pnml"
+#include "src/Railbus/Railbus_Diesel/Niigata_Transys_Shikoku_1000_graphics.pnml"
+#include "src/Railbus/Railbus_Diesel/Niigata_Transys_Shikoku_1000_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Finland_VR_Dm12_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Finland_VR_Dm12_item.pnml"
+#include "src/Railbus/Railbus_Diesel/CKD_Vagonka_Dm12_graphics.pnml"
+#include "src/Railbus/Railbus_Diesel/CKD_Vagonka_Dm12_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Japan_JR_KiHa_E120_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Japan_JR_KiHa_E120_item.pnml"
+#include "src/Railbus/Railbus_Diesel/Niigata_Transys_KiHa_E120_graphics.pnml"
+#include "src/Railbus/Railbus_Diesel/Niigata_Transys_KiHa_E120_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Czech_Republic_CD_840_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Czech_Republic_CD_840_item.pnml"
+#include "src/Railbus/Railbus_Diesel/Stadler_Regio_Shuttle_RS1_graphics.pnml"
+#include "src/Railbus/Railbus_Diesel/Stadler_Regio_Shuttle_RS1_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Chile_EFE_Buscarril_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Chile_EFE_Buscarril_item.pnml"
+#include "src/Railbus/Railbus_Diesel/EFE_SB_56_Buscarril_graphics.pnml"
+#include "src/Railbus/Railbus_Diesel/EFE_SB_56_Buscarril_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Argentina_FCPBA_M_Railcar_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Argentina_FCPBA_M_Railcar_item.pnml"
+#include "src/Railbus/Railbus_Diesel/Sulzer_M_Railcar_graphics.pnml"
+#include "src/Railbus/Railbus_Diesel/Sulzer_M_Railcar_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Germany_DB_VT_989_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Germany_DB_VT_989_item.pnml"
+#include "src/Railbus/Railbus_Diesel/Uerdingen_railbus_graphics.pnml"
+#include "src/Railbus/Railbus_Diesel/Uerdingen_railbus_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Eritrea_Eritrean_Railway_A62_70_Littorina_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Eritrea_Eritrean_Railway_A62_70_Littorina_item.pnml"
+#include "src/Railbus/Railbus_Diesel/Eritrean_Railway_A_62_70_Littorina_graphics.pnml"
+#include "src/Railbus/Railbus_Diesel/Eritrean_Railway_A_62_70_Littorina_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Italy_FS_ALn_668_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Italy_FS_ALn_668_item.pnml"
+#include "src/Railbus/Railbus_Diesel/Fiat_Ferroviaria_ALn_668_1400_graphics.pnml"
+#include "src/Railbus/Railbus_Diesel/Fiat_Ferroviaria_ALn_668_1400_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Hungary_MAV_Ikarus_260_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Hungary_MAV_Ikarus_260_item.pnml"
+#include "src/Railbus/Railbus_Diesel/MAV_Ikarus_260_graphics.pnml"
+#include "src/Railbus/Railbus_Diesel/MAV_Ikarus_260_item.pnml"
 
 
 //// RAILBUS - RAILBUS_ELECTRIC
-#include "src/Railbus/Railbus_Electric/Switzerland_AB_CFe_3_3_graphics.pnml"
-#include "src/Railbus/Railbus_Electric/Switzerland_AB_CFe_3_3_item.pnml"
+#include "src/Railbus/Railbus_Electric/SLM_CFe_3_3_graphics.pnml"
+#include "src/Railbus/Railbus_Electric/SLM_CFe_3_3_item.pnml"
 
-#include "src/Railbus/Railbus_Electric/Morocco_ONCFM_ZAB1000_graphics.pnml"
-#include "src/Railbus/Railbus_Electric/Morocco_ONCFM_ZAB1000_item.pnml"
+#include "src/Railbus/Railbus_Electric/ONCF_ZAB1000_graphics.pnml"
+#include "src/Railbus/Railbus_Electric/ONCF_ZAB1000_item.pnml"
 
-#include "src/Railbus/Railbus_Electric/Germany_DB_ET_85_graphics.pnml"
-#include "src/Railbus/Railbus_Electric/Germany_DB_ET_85_item.pnml"
+#include "src/Railbus/Railbus_Electric/Waggonfabrik_Fuchs_ET_85_graphics.pnml"
+#include "src/Railbus/Railbus_Electric/Waggonfabrik_Fuchs_ET_85_item.pnml"
 
-#include "src/Railbus/Railbus_Electric/Italy_FS_ALe_840_graphics.pnml"
-#include "src/Railbus/Railbus_Electric/Italy_FS_ALe_840_item.pnml"
+#include "src/Railbus/Railbus_Electric/Pozzuoli___OCREN_OM_ALe_840_graphics.pnml"
+#include "src/Railbus/Railbus_Electric/Pozzuoli___OCREN_OM_ALe_840_item.pnml"
 
-#include "src/Railbus/Railbus_Electric/Czech_Republic_CD_M400_graphics.pnml"
-#include "src/Railbus/Railbus_Electric/Czech_Republic_CD_M400_item.pnml"
+#include "src/Railbus/Railbus_Electric/Ringhoffer_40_001_graphics.pnml"
+#include "src/Railbus/Railbus_Electric/Ringhoffer_40_001_item.pnml"
 
-#include "src/Railbus/Railbus_Electric/Switzerland_TPC_BVB_Be_2_2_graphics.pnml"
-#include "src/Railbus/Railbus_Electric/Switzerland_TPC_BVB_Be_2_2_item.pnml"
+#include "src/Railbus/Railbus_Electric/TPC_BVB_Be_2_2_graphics.pnml"
+#include "src/Railbus/Railbus_Electric/TPC_BVB_Be_2_2_item.pnml"
 
-#include "src/Railbus/Railbus_Electric/Spain_Ferrocarril_de_Soller_1_3_graphics.pnml"
-#include "src/Railbus/Railbus_Electric/Spain_Ferrocarril_de_Soller_1_3_item.pnml"
+#include "src/Railbus/Railbus_Electric/Ferrocarril_de_Soller_1_3_graphics.pnml"
+#include "src/Railbus/Railbus_Electric/Ferrocarril_de_Soller_1_3_item.pnml"
 
-#include "src/Railbus/Railbus_Electric/Slovakia_ZSSK_490_graphics.pnml"
-#include "src/Railbus/Railbus_Electric/Slovakia_ZSSK_490_item.pnml"
+#include "src/Railbus/Railbus_Electric/Studenka_425_95_graphics.pnml"
+#include "src/Railbus/Railbus_Electric/Studenka_425_95_item.pnml"
 
-#include "src/Railbus/Railbus_Electric/Italy_FS_E623_graphics.pnml"
-#include "src/Railbus/Railbus_Electric/Italy_FS_E623_item.pnml"
+#include "src/Railbus/Railbus_Electric/FS_E_623_graphics.pnml"
+#include "src/Railbus/Railbus_Electric/FS_E_623_item.pnml"
 
-#include "src/Railbus/Railbus_Electric/Sweden_SJ_X16_graphics.pnml"
-#include "src/Railbus/Railbus_Electric/Sweden_SJ_X16_item.pnml"
+#include "src/Railbus/Railbus_Electric/ASJ_Y6_graphics.pnml"
+#include "src/Railbus/Railbus_Electric/ASJ_Y6_item.pnml"
 
-#include "src/Railbus/Railbus_Electric/Japan_Choshi_DeHa_1000_graphics.pnml"
-#include "src/Railbus/Railbus_Electric/Japan_Choshi_DeHa_1000_item.pnml"
+#include "src/Railbus/Railbus_Electric/Hitachi_Choshi_DeHa_1000_graphics.pnml"
+#include "src/Railbus/Railbus_Electric/Hitachi_Choshi_DeHa_1000_item.pnml"
 
-#include "src/Railbus/Railbus_Electric/France_SNCF_Z_7100_graphics.pnml"
-#include "src/Railbus/Railbus_Electric/France_SNCF_Z_7100_item.pnml"
+#include "src/Railbus/Railbus_Electric/Decauville_Z_7100_graphics.pnml"
+#include "src/Railbus/Railbus_Electric/Decauville_Z_7100_item.pnml"
 
-#include "src/Railbus/Railbus_Electric/USA_Pennsylvania_Railroad_Silverliner_II_graphics.pnml"
-#include "src/Railbus/Railbus_Electric/USA_Pennsylvania_Railroad_Silverliner_II_item.pnml"
+#include "src/Railbus/Railbus_Electric/Budd_Silverliner_II_graphics.pnml"
+#include "src/Railbus/Railbus_Electric/Budd_Silverliner_II_item.pnml"
 
-#include "src/Railbus/Railbus_Electric/Italy_FG_ALe_80_graphics.pnml"
-#include "src/Railbus/Railbus_Electric/Italy_FG_ALe_80_item.pnml"
+#include "src/Railbus/Railbus_Electric/Stanga_ALe_80_graphics.pnml"
+#include "src/Railbus/Railbus_Electric/Stanga_ALe_80_item.pnml"
 
-#include "src/Railbus/Railbus_Electric/Austria_OBB_4855_graphics.pnml"
-#include "src/Railbus/Railbus_Electric/Austria_OBB_4855_item.pnml"
+#include "src/Railbus/Railbus_Electric/Franz_Knotz_4855_graphics.pnml"
+#include "src/Railbus/Railbus_Electric/Franz_Knotz_4855_item.pnml"
 
-#include "src/Railbus/Railbus_Electric/Switzerland_MVR_Beh_2_4_graphics.pnml"
-#include "src/Railbus/Railbus_Electric/Switzerland_MVR_Beh_2_4_item.pnml"
+#include "src/Railbus/Railbus_Electric/MVR_Beh_2_4_graphics.pnml"
+#include "src/Railbus/Railbus_Electric/MVR_Beh_2_4_item.pnml"
 
-#include "src/Railbus/Railbus_Electric/Austria_MBS_ET_10109_graphics.pnml"
-#include "src/Railbus/Railbus_Electric/Austria_MBS_ET_10109_item.pnml"
+#include "src/Railbus/Railbus_Electric/Lindner_Talbot_ET_10_109_graphics.pnml"
+#include "src/Railbus/Railbus_Electric/Lindner_Talbot_ET_10_109_item.pnml"
 
-#include "src/Railbus/Railbus_Electric/Poland_PKP_EN81_graphics.pnml"
-#include "src/Railbus/Railbus_Electric/Poland_PKP_EN81_item.pnml"
+#include "src/Railbus/Railbus_Electric/Pesa_308B_graphics.pnml"
+#include "src/Railbus/Railbus_Electric/Pesa_308B_item.pnml"
 
-#include "src/Railbus/Railbus_Electric/USA_SEPTA_Silverliner_V_graphics.pnml"
-#include "src/Railbus/Railbus_Electric/USA_SEPTA_Silverliner_V_item.pnml"
+#include "src/Railbus/Railbus_Electric/Hyundai_Rotem_Silverliner_V_graphics.pnml"
+#include "src/Railbus/Railbus_Electric/Hyundai_Rotem_Silverliner_V_item.pnml"
 
-#include "src/Railbus/Railbus_Electric/Germany_DB_4792_graphics.pnml"
-#include "src/Railbus/Railbus_Electric/Germany_DB_4792_item.pnml"
+#include "src/Railbus/Railbus_Electric/Raw_Schoneweide_479_201_graphics.pnml"
+#include "src/Railbus/Railbus_Electric/Raw_Schoneweide_479_201_item.pnml"
 
-#include "src/Railbus/Railbus_Electric/Germany_Buckower_Kleinbahn_Nr_1_3_graphics.pnml"
-#include "src/Railbus/Railbus_Electric/Germany_Buckower_Kleinbahn_Nr_1_3_item.pnml"
+#include "src/Railbus/Railbus_Electric/HAWA_AEG_Kleinbahn_Nr__1_3_graphics.pnml"
+#include "src/Railbus/Railbus_Electric/HAWA_AEG_Kleinbahn_Nr__1_3_item.pnml"
 
 
 //// RAILBUS - RAILBUS_MAGLEV
-#include "src/Railbus/Railbus_Maglev/World_Turbobus_graphics.pnml"
-#include "src/Railbus/Railbus_Maglev/World_Turbobus_item.pnml"
+#include "src/Railbus/Railbus_Maglev/ACME_Corp__Turbobus_graphics.pnml"
+#include "src/Railbus/Railbus_Maglev/ACME_Corp__Turbobus_item.pnml"
 
 
 //// RAILBUS - RAILBUS_STEAM
-#include "src/Railbus/Railbus_Steam/Austria_NOLB_1_graphics.pnml"
-#include "src/Railbus/Railbus_Steam/Austria_NOLB_1_item.pnml"
+#include "src/Railbus/Railbus_Steam/Komarek_NOLB_1_graphics.pnml"
+#include "src/Railbus/Railbus_Steam/Komarek_NOLB_1_item.pnml"
 
-#include "src/Railbus/Railbus_Steam/Italy_FS_86_graphics.pnml"
-#include "src/Railbus/Railbus_Steam/Italy_FS_86_item.pnml"
+#include "src/Railbus/Railbus_Steam/Kerr__Stuart___Co__86_graphics.pnml"
+#include "src/Railbus/Railbus_Steam/Kerr__Stuart___Co__86_item.pnml"
 
-#include "src/Railbus/Railbus_Steam/Australia_Victorian_Railways_Rowan_Railmotor_graphics.pnml"
-#include "src/Railbus/Railbus_Steam/Australia_Victorian_Railways_Rowan_Railmotor_item.pnml"
+#include "src/Railbus/Railbus_Steam/Victorian_Railways_Rowan_Railmotor_graphics.pnml"
+#include "src/Railbus/Railbus_Steam/Victorian_Railways_Rowan_Railmotor_item.pnml"
 
-#include "src/Railbus/Railbus_Steam/Switzerland_UeBB_Czm_1_2_graphics.pnml"
-#include "src/Railbus/Railbus_Steam/Switzerland_UeBB_Czm_1_2_item.pnml"
+#include "src/Railbus/Railbus_Steam/Esslingen_Czm_1_2_graphics.pnml"
+#include "src/Railbus/Railbus_Steam/Esslingen_Czm_1_2_item.pnml"
 
-#include "src/Railbus/Railbus_Steam/Germany_Bavarian_MCCi_graphics.pnml"
-#include "src/Railbus/Railbus_Steam/Germany_Bavarian_MCCi_item.pnml"
+#include "src/Railbus/Railbus_Steam/Maffei_MCCi_graphics.pnml"
+#include "src/Railbus/Railbus_Steam/Maffei_MCCi_item.pnml"
 
-#include "src/Railbus/Railbus_Steam/South_Africa_CSAR_Railmotor_graphics.pnml"
-#include "src/Railbus/Railbus_Steam/South_Africa_CSAR_Railmotor_item.pnml"
+#include "src/Railbus/Railbus_Steam/Kitson___Co_CSAR_Railmotor_graphics.pnml"
+#include "src/Railbus/Railbus_Steam/Kitson___Co_CSAR_Railmotor_item.pnml"
 
-#include "src/Railbus/Railbus_Steam/Australia_Victorian_Railways_Motor_Car_3_graphics.pnml"
-#include "src/Railbus/Railbus_Steam/Australia_Victorian_Railways_Motor_Car_3_item.pnml"
+#include "src/Railbus/Railbus_Steam/Kerr_Stuart_steam_railmotor_graphics.pnml"
+#include "src/Railbus/Railbus_Steam/Kerr_Stuart_steam_railmotor_item.pnml"
 
-#include "src/Railbus/Railbus_Steam/Austria_kkStB_4_0_graphics.pnml"
-#include "src/Railbus/Railbus_Steam/Austria_kkStB_4_0_item.pnml"
+#include "src/Railbus/Railbus_Steam/KkStB_4_0_graphics.pnml"
+#include "src/Railbus/Railbus_Steam/KkStB_4_0_item.pnml"
 
-#include "src/Railbus/Railbus_Steam/Gemany_Hessian_Ludwig_Railway_Type_Thomas_graphics.pnml"
-#include "src/Railbus/Railbus_Steam/Gemany_Hessian_Ludwig_Railway_Type_Thomas_item.pnml"
+#include "src/Railbus/Railbus_Steam/Esslingen_MAN_Hohenzollern_Thomas_graphics.pnml"
+#include "src/Railbus/Railbus_Steam/Esslingen_MAN_Hohenzollern_Thomas_item.pnml"
 
-#include "src/Railbus/Railbus_Steam/Austria_NOLB_30_33_graphics.pnml"
-#include "src/Railbus/Railbus_Steam/Austria_NOLB_30_33_item.pnml"
+#include "src/Railbus/Railbus_Steam/Komarek_NOLB_30_33_graphics.pnml"
+#include "src/Railbus/Railbus_Steam/Komarek_NOLB_30_33_item.pnml"
 
 
 //// SINGLE_METRO
-#include "src/Single_Metro/USA_Brooklyn_Union_Gate_Car_graphics.pnml"
-#include "src/Single_Metro/USA_Brooklyn_Union_Gate_Car_item.pnml"
+#include "src/Single_Metro/Brooklyn_Union_Gate_1300_graphics.pnml"
+#include "src/Single_Metro/Brooklyn_Union_Gate_1300_item.pnml"
 
-#include "src/Single_Metro/Hungary_Budapest_1894_Stock_graphics.pnml"
-#include "src/Single_Metro/Hungary_Budapest_1894_Stock_item.pnml"
+#include "src/Single_Metro/Siemens___Halske_Budapest_1894_Stock_graphics.pnml"
+#include "src/Single_Metro/Siemens___Halske_Budapest_1894_Stock_item.pnml"
 
-#include "src/Single_Metro/USA_Chicago_L_Northwest_Elevated_1907_Stock_graphics.pnml"
-#include "src/Single_Metro/USA_Chicago_L_Northwest_Elevated_1907_Stock_item.pnml"
+#include "src/Single_Metro/Chicago_L_Northwest_Elevated_1907_Stock_graphics.pnml"
+#include "src/Single_Metro/Chicago_L_Northwest_Elevated_1907_Stock_item.pnml"
 
-#include "src/Single_Metro/Germany_Berlin_U_Bahn_C_II_graphics.pnml"
-#include "src/Single_Metro/Germany_Berlin_U_Bahn_C_II_item.pnml"
+#include "src/Single_Metro/Berlin_U_Bahn_C_II_graphics.pnml"
+#include "src/Single_Metro/Berlin_U_Bahn_C_II_item.pnml"
 
 
 //// SPECIAL
@@ -2379,446 +2376,446 @@
 
 
 //// STEAM
-#include "src/Steam/Belgium_Le_Belge_graphics.pnml"
-#include "src/Steam/Belgium_Le_Belge_item.pnml"
+#include "src/Steam/John_Cockerill___Cie__Le_Belge_graphics.pnml"
+#include "src/Steam/John_Cockerill___Cie__Le_Belge_item.pnml"
 
-#include "src/Steam/Switzerland_SBB_Ec_2_5_graphics.pnml"
-#include "src/Steam/Switzerland_SBB_Ec_2_5_item.pnml"
+#include "src/Steam/Esslingen_Ec_2_5_graphics.pnml"
+#include "src/Steam/Esslingen_Ec_2_5_item.pnml"
 
-#include "src/Steam/USA_2_8_0_Consolidation_graphics.pnml"
-#include "src/Steam/USA_2_8_0_Consolidation_item.pnml"
+#include "src/Steam/Baldwin_2_8_0_Consolidation_graphics.pnml"
+#include "src/Steam/Baldwin_2_8_0_Consolidation_item.pnml"
 
-#include "src/Steam/Hungary_MAV_377_graphics.pnml"
-#include "src/Steam/Hungary_MAV_377_item.pnml"
+#include "src/Steam/MAV_377_graphics.pnml"
+#include "src/Steam/MAV_377_item.pnml"
 
-#include "src/Steam/Austria_KkStB_99_graphics.pnml"
-#include "src/Steam/Austria_KkStB_99_item.pnml"
+#include "src/Steam/Krauss_KkStB_99_graphics.pnml"
+#include "src/Steam/Krauss_KkStB_99_item.pnml"
 
-#include "src/Steam/UK_Caledonian_Railway_439_graphics.pnml"
-#include "src/Steam/UK_Caledonian_Railway_439_item.pnml"
+#include "src/Steam/McIntosh__Caledonian_Railway__439_graphics.pnml"
+#include "src/Steam/McIntosh__Caledonian_Railway__439_item.pnml"
 
-#include "src/Steam/Switzerland_SBB_A_3_5_graphics.pnml"
-#include "src/Steam/Switzerland_SBB_A_3_5_item.pnml"
+#include "src/Steam/SLM_Winterthur_A_3_5_graphics.pnml"
+#include "src/Steam/SLM_Winterthur_A_3_5_item.pnml"
 
-#include "src/Steam/Switzerland_SBB_E_3_3_graphics.pnml"
-#include "src/Steam/Switzerland_SBB_E_3_3_item.pnml"
+#include "src/Steam/SLM_Winterthur_E_3_3_graphics.pnml"
+#include "src/Steam/SLM_Winterthur_E_3_3_item.pnml"
 
-#include "src/Steam/Austria_KkStB_299_graphics.pnml"
-#include "src/Steam/Austria_KkStB_299_item.pnml"
+#include "src/Steam/Krauss_299_graphics.pnml"
+#include "src/Steam/Krauss_299_item.pnml"
 
-#include "src/Steam/New_Zealand_NZR_X_Class_graphics.pnml"
-#include "src/Steam/New_Zealand_NZR_X_Class_item.pnml"
+#include "src/Steam/NZR_X_graphics.pnml"
+#include "src/Steam/NZR_X_item.pnml"
 
-#include "src/Steam/Italy_FS_895_graphics.pnml"
-#include "src/Steam/Italy_FS_895_item.pnml"
+#include "src/Steam/Henschel_895_graphics.pnml"
+#include "src/Steam/Henschel_895_item.pnml"
 
-#include "src/Steam/Switzerland_SBB_C_5_6_graphics.pnml"
-#include "src/Steam/Switzerland_SBB_C_5_6_item.pnml"
+#include "src/Steam/SLM_C_5_6_Elephant_graphics.pnml"
+#include "src/Steam/SLM_C_5_6_Elephant_item.pnml"
 
-#include "src/Steam/Croatia_HZ_51_graphics.pnml"
-#include "src/Steam/Croatia_HZ_51_item.pnml"
+#include "src/Steam/MaVAG_375_graphics.pnml"
+#include "src/Steam/MaVAG_375_item.pnml"
 
-#include "src/Steam/Italy_FS_880_graphics.pnml"
-#include "src/Steam/Italy_FS_880_item.pnml"
+#include "src/Steam/FS_880_graphics.pnml"
+#include "src/Steam/FS_880_item.pnml"
 
-#include "src/Steam/Argentina_FCNEA_11B_2_8_0_graphics.pnml"
-#include "src/Steam/Argentina_FCNEA_11B_2_8_0_item.pnml"
+#include "src/Steam/FCNEA_11B_2_8_0_graphics.pnml"
+#include "src/Steam/FCNEA_11B_2_8_0_item.pnml"
 
-#include "src/Steam/France_SNCF_140C_graphics.pnml"
-#include "src/Steam/France_SNCF_140C_item.pnml"
+#include "src/Steam/Schneider_et_Cie_140C_graphics.pnml"
+#include "src/Steam/Schneider_et_Cie_140C_item.pnml"
 
-#include "src/Steam/France_SNCF_141TA_graphics.pnml"
-#include "src/Steam/France_SNCF_141TA_item.pnml"
+#include "src/Steam/Union_Giesserei_2_8_2T_graphics.pnml"
+#include "src/Steam/Union_Giesserei_2_8_2T_item.pnml"
 
-#include "src/Steam/UK_GWR_4900_graphics.pnml"
-#include "src/Steam/UK_GWR_4900_item.pnml"
+#include "src/Steam/GWR_4900_Hall_graphics.pnml"
+#include "src/Steam/GWR_4900_Hall_item.pnml"
 
-#include "src/Steam/UK_GWR_5700_graphics.pnml"
-#include "src/Steam/UK_GWR_5700_item.pnml"
+#include "src/Steam/GWR_5700_Pannier_graphics.pnml"
+#include "src/Steam/GWR_5700_Pannier_item.pnml"
 
-#include "src/Steam/Netherlands_NS_6300_graphics.pnml"
-#include "src/Steam/Netherlands_NS_6300_item.pnml"
+#include "src/Steam/Henschel___Sohn_series_6300_graphics.pnml"
+#include "src/Steam/Henschel___Sohn_series_6300_item.pnml"
 
-#include "src/Steam/USA_AT_SF_5000_graphics.pnml"
-#include "src/Steam/USA_AT_SF_5000_item.pnml"
+#include "src/Steam/Baldwin_5000_Madame_Queen_graphics.pnml"
+#include "src/Steam/Baldwin_5000_Madame_Queen_item.pnml"
 
-#include "src/Steam/France_SNCF_150B_graphics.pnml"
-#include "src/Steam/France_SNCF_150B_item.pnml"
+#include "src/Steam/ANF_DEL_150B_graphics.pnml"
+#include "src/Steam/ANF_DEL_150B_item.pnml"
 
-#include "src/Steam/Germany_Prussian_S10_graphics.pnml"
-#include "src/Steam/Germany_Prussian_S10_item.pnml"
+#include "src/Steam/Schwartzkopff_S_10_Prussian_graphics.pnml"
+#include "src/Steam/Schwartzkopff_S_10_Prussian_item.pnml"
 
-#include "src/Steam/UK_LMS_5MT_Black_Five_graphics.pnml"
-#include "src/Steam/UK_LMS_5MT_Black_Five_item.pnml"
+#include "src/Steam/LMS_5MT_Black_Five_graphics.pnml"
+#include "src/Steam/LMS_5MT_Black_Five_item.pnml"
 
-#include "src/Steam/Russia_RZD_9P_graphics.pnml"
-#include "src/Steam/Russia_RZD_9P_item.pnml"
+#include "src/Steam/Kolomena_9P_graphics.pnml"
+#include "src/Steam/Kolomena_9P_item.pnml"
 
-#include "src/Steam/Poland_PKP_Okz32_graphics.pnml"
-#include "src/Steam/Poland_PKP_Okz32_item.pnml"
+#include "src/Steam/H__Cegielski_OKz32_graphics.pnml"
+#include "src/Steam/H__Cegielski_OKz32_item.pnml"
 
-#include "src/Steam/UK_LNER_A4_Gresley_graphics.pnml"
-#include "src/Steam/UK_LNER_A4_Gresley_item.pnml"
+#include "src/Steam/LNER_A4_Gresley_graphics.pnml"
+#include "src/Steam/LNER_A4_Gresley_item.pnml"
 
-#include "src/Steam/Canada_CPR_Royal_Hudson_graphics.pnml"
-#include "src/Steam/Canada_CPR_Royal_Hudson_item.pnml"
+#include "src/Steam/MLW_Royal_Hudson_graphics.pnml"
+#include "src/Steam/MLW_Royal_Hudson_item.pnml"
 
-#include "src/Steam/Germany_DB_52_graphics.pnml"
-#include "src/Steam/Germany_DB_52_item.pnml"
+#include "src/Steam/GGL_HAS_52_graphics.pnml"
+#include "src/Steam/GGL_HAS_52_item.pnml"
 
-#include "src/Steam/UK_LNER_A1_Peppercorn_graphics.pnml"
-#include "src/Steam/UK_LNER_A1_Peppercorn_item.pnml"
+#include "src/Steam/Doncaster_Darlington_Peppercorn_graphics.pnml"
+#include "src/Steam/Doncaster_Darlington_Peppercorn_item.pnml"
 
-#include "src/Steam/South_Africa_SAR_25_graphics.pnml"
-#include "src/Steam/South_Africa_SAR_25_item.pnml"
+#include "src/Steam/Henschel___Son_Condenser_graphics.pnml"
+#include "src/Steam/Henschel___Son_Condenser_item.pnml"
 
-#include "src/Steam/Russia_RZD_P36_graphics.pnml"
-#include "src/Steam/Russia_RZD_P36_item.pnml"
+#include "src/Steam/Kolomena_P36_graphics.pnml"
+#include "src/Steam/Kolomena_P36_item.pnml"
 
-#include "src/Steam/USA_4_4_0_American_graphics.pnml"
-#include "src/Steam/USA_4_4_0_American_item.pnml"
+#include "src/Steam/GWR_4_4_0_American_graphics.pnml"
+#include "src/Steam/GWR_4_4_0_American_item.pnml"
 
-#include "src/Steam/USA_4_6_0_Ten_wheeler_graphics.pnml"
-#include "src/Steam/USA_4_6_0_Ten_wheeler_item.pnml"
+#include "src/Steam/Norris_4_6_0_Ten_wheeler_graphics.pnml"
+#include "src/Steam/Norris_4_6_0_Ten_wheeler_item.pnml"
 
-#include "src/Steam/Denmark_DSB_E_graphics.pnml"
-#include "src/Steam/Denmark_DSB_E_item.pnml"
+#include "src/Steam/NOHAB_4_6_2_F_graphics.pnml"
+#include "src/Steam/NOHAB_4_6_2_F_item.pnml"
 
-#include "src/Steam/USA_UP_4000_Big_Boy_graphics.pnml"
-#include "src/Steam/USA_UP_4000_Big_Boy_item.pnml"
+#include "src/Steam/ALCO_series_4000_4_8_8_4_Big_Boy_graphics.pnml"
+#include "src/Steam/ALCO_series_4000_4_8_8_4_Big_Boy_item.pnml"
 
-#include "src/Steam/Netherlands_NRS_11_graphics.pnml"
-#include "src/Steam/Netherlands_NRS_11_item.pnml"
+#include "src/Steam/Sharp_Stewart_3557_3565_graphics.pnml"
+#include "src/Steam/Sharp_Stewart_3557_3565_item.pnml"
 
-#include "src/Steam/UK_GWR_Iron_DUKe_Class_graphics.pnml"
-#include "src/Steam/UK_GWR_Iron_DUKe_Class_item.pnml"
+#include "src/Steam/GWR_Iron_Duke_graphics.pnml"
+#include "src/Steam/GWR_Iron_Duke_item.pnml"
 
-#include "src/Steam/Australia_Sidney_Railway_Locomotive_No1_graphics.pnml"
-#include "src/Steam/Australia_Sidney_Railway_Locomotive_No1_item.pnml"
+#include "src/Steam/Stephenson_0_4_2_Locomotive_No_1_graphics.pnml"
+#include "src/Steam/Stephenson_0_4_2_Locomotive_No_1_item.pnml"
 
-#include "src/Steam/USA_Central_Pacific_4_2_2_graphics.pnml"
-#include "src/Steam/USA_Central_Pacific_4_2_2_item.pnml"
+#include "src/Steam/Cooke_4_2_2_T__D__Judah_graphics.pnml"
+#include "src/Steam/Cooke_4_2_2_T__D__Judah_item.pnml"
 
-#include "src/Steam/Netherlands_NS_700_graphics.pnml"
-#include "src/Steam/Netherlands_NS_700_item.pnml"
+#include "src/Steam/Beyer__P___Co_2_4_0_SS_9_16__21_78_graphics.pnml"
+#include "src/Steam/Beyer__P___Co_2_4_0_SS_9_16__21_78_item.pnml"
 
-#include "src/Steam/South_Africa_Natal_Government_Railways_2_6_0T_graphics.pnml"
-#include "src/Steam/South_Africa_Natal_Government_Railways_2_6_0T_item.pnml"
+#include "src/Steam/Beyer__P___Co_2_6_0T_1702_1706_graphics.pnml"
+#include "src/Steam/Beyer__P___Co_2_6_0T_1702_1706_item.pnml"
 
-#include "src/Steam/Australia_NSWGR_Z25_Class_graphics.pnml"
-#include "src/Steam/Australia_NSWGR_Z25_Class_item.pnml"
+#include "src/Steam/Beyer__P___Co_2_6_0_2073_2092_graphics.pnml"
+#include "src/Steam/Beyer__P___Co_2_6_0_2073_2092_item.pnml"
 
-#include "src/Steam/Canada_Canadian_Pacific_374_graphics.pnml"
-#include "src/Steam/Canada_Canadian_Pacific_374_item.pnml"
+#include "src/Steam/Canadian_Pacific_374_graphics.pnml"
+#include "src/Steam/Canadian_Pacific_374_item.pnml"
 
-#include "src/Steam/Switzerland_RhB_G_3_4_graphics.pnml"
-#include "src/Steam/Switzerland_RhB_G_3_4_item.pnml"
+#include "src/Steam/SLM_G_3_4_graphics.pnml"
+#include "src/Steam/SLM_G_3_4_item.pnml"
 
-#include "src/Steam/Spain_RENFE_Class_040_graphics.pnml"
-#include "src/Steam/Spain_RENFE_Class_040_item.pnml"
+#include "src/Steam/Schneider_RENFE_040_graphics.pnml"
+#include "src/Steam/Schneider_RENFE_040_item.pnml"
 
-#include "src/Steam/Germany_Saxon_IV_K_graphics.pnml"
-#include "src/Steam/Germany_Saxon_IV_K_item.pnml"
+#include "src/Steam/Sachsische_Maschinenfabrik_IV_K_graphics.pnml"
+#include "src/Steam/Sachsische_Maschinenfabrik_IV_K_item.pnml"
 
-#include "src/Steam/Germany_Prussian_S_3_graphics.pnml"
-#include "src/Steam/Germany_Prussian_S_3_item.pnml"
+#include "src/Steam/Hanomag_S_3_graphics.pnml"
+#include "src/Steam/Hanomag_S_3_item.pnml"
 
-#include "src/Steam/Norway_NSB_Class_XXI_graphics.pnml"
-#include "src/Steam/Norway_NSB_Class_XXI_item.pnml"
+#include "src/Steam/Thune_XXIa_graphics.pnml"
+#include "src/Steam/Thune_XXIa_item.pnml"
 
-#include "src/Steam/USA_PRR_D16_graphics.pnml"
-#include "src/Steam/USA_PRR_D16_item.pnml"
+#include "src/Steam/PRR_D16_graphics.pnml"
+#include "src/Steam/PRR_D16_item.pnml"
 
-#include "src/Steam/Netherlands_NS_8100_graphics.pnml"
-#include "src/Steam/Netherlands_NS_8100_item.pnml"
+#include "src/Steam/Machinefabriek_Breda_661_667_graphics.pnml"
+#include "src/Steam/Machinefabriek_Breda_661_667_item.pnml"
 
-#include "src/Steam/South_Africa_SAR_MD_Class_graphics.pnml"
-#include "src/Steam/South_Africa_SAR_MD_Class_item.pnml"
+#include "src/Steam/ALCO_46581_2_6_6_2_Mallet_graphics.pnml"
+#include "src/Steam/ALCO_46581_2_6_6_2_Mallet_item.pnml"
 
-#include "src/Steam/Angola_South_West_African_2_8_0_graphics.pnml"
-#include "src/Steam/Angola_South_West_African_2_8_0_item.pnml"
+#include "src/Steam/Orenstein___Koppel_2_8_0_8_Tender_graphics.pnml"
+#include "src/Steam/Orenstein___Koppel_2_8_0_8_Tender_item.pnml"
 
-#include "src/Steam/UK_LNER_N7_graphics.pnml"
-#include "src/Steam/UK_LNER_N7_item.pnml"
+#include "src/Steam/Stratford_Works_L77_LNER_N7_graphics.pnml"
+#include "src/Steam/Stratford_Works_L77_LNER_N7_item.pnml"
 
-#include "src/Steam/Germany_Saxon_XX_HV_graphics.pnml"
-#include "src/Steam/Germany_Saxon_XX_HV_item.pnml"
+#include "src/Steam/Sachsische_Maschinenfabrik_XX_HV_graphics.pnml"
+#include "src/Steam/Sachsische_Maschinenfabrik_XX_HV_item.pnml"
 
-#include "src/Steam/Belgium_NMBS_Type_7_graphics.pnml"
-#include "src/Steam/Belgium_NMBS_Type_7_item.pnml"
+#include "src/Steam/Beyer__P___Co_2_4_0_SS_9_16_graphics.pnml"
+#include "src/Steam/Beyer__P___Co_2_4_0_SS_9_16_item.pnml"
 
-#include "src/Steam/Ireland_DSER_15_graphics.pnml"
-#include "src/Steam/Ireland_DSER_15_item.pnml"
+#include "src/Steam/Beyer__P___Co_2_6_0_6112_6113_graphics.pnml"
+#include "src/Steam/Beyer__P___Co_2_6_0_6112_6113_item.pnml"
 
-#include "src/Steam/USA_Sierra_Railroad_28_graphics.pnml"
-#include "src/Steam/USA_Sierra_Railroad_28_item.pnml"
+#include "src/Steam/Baldwin_10_32_E_55246_graphics.pnml"
+#include "src/Steam/Baldwin_10_32_E_55246_item.pnml"
 
-#include "src/Steam/Canada_CN_U_1_Class_graphics.pnml"
-#include "src/Steam/Canada_CN_U_1_Class_item.pnml"
+#include "src/Steam/Canadian_National_U_1_a__graphics.pnml"
+#include "src/Steam/Canadian_National_U_1_a__item.pnml"
 
-#include "src/Steam/India_Indian_Railways_XB_Class_graphics.pnml"
-#include "src/Steam/India_Indian_Railways_XB_Class_item.pnml"
+#include "src/Steam/Vulcan_Foundry_2_6_4_Class_XB_graphics.pnml"
+#include "src/Steam/Vulcan_Foundry_2_6_4_Class_XB_item.pnml"
 
-#include "src/Steam/Iraq_Iraqi_State_Railways_PC_Class_graphics.pnml"
-#include "src/Steam/Iraq_Iraqi_State_Railways_PC_Class_item.pnml"
+#include "src/Steam/Robert_Stephenson_4_6_2_6982_6985_graphics.pnml"
+#include "src/Steam/Robert_Stephenson_4_6_2_6982_6985_item.pnml"
 
-#include "src/Steam/Egypt_ENR_1100_graphics.pnml"
-#include "src/Steam/Egypt_ENR_1100_item.pnml"
+#include "src/Steam/ENR_1100__LMS_Fowler_3F___WD_0_6_0T__graphics.pnml"
+#include "src/Steam/ENR_1100__LMS_Fowler_3F___WD_0_6_0T__item.pnml"
 
-#include "src/Steam/Japan_JNR_Class_E10_graphics.pnml"
-#include "src/Steam/Japan_JNR_Class_E10_item.pnml"
+#include "src/Steam/Kisha_Seizo_2_10_4T_E10_graphics.pnml"
+#include "src/Steam/Kisha_Seizo_2_10_4T_E10_item.pnml"
 
-#include "src/Steam/UK_GWR_1600_Class_graphics.pnml"
-#include "src/Steam/UK_GWR_1600_Class_item.pnml"
+#include "src/Steam/Swindon_Works_381_graphics.pnml"
+#include "src/Steam/Swindon_Works_381_item.pnml"
 
-#include "src/Steam/Australia_Victorian_Railways_R_Class_graphics.pnml"
-#include "src/Steam/Australia_Victorian_Railways_R_Class_item.pnml"
+#include "src/Steam/North_British_LC_R_4_6_4_Hudson_graphics.pnml"
+#include "src/Steam/North_British_LC_R_4_6_4_Hudson_item.pnml"
 
-#include "src/Steam/Germany_DB_9977_79_graphics.pnml"
-#include "src/Steam/Germany_DB_9977_79_item.pnml"
+#include "src/Steam/VEB_2_10_2T_99_77_79_graphics.pnml"
+#include "src/Steam/VEB_2_10_2T_99_77_79_item.pnml"
 
-#include "src/Steam/Germany_DB_18_201_graphics.pnml"
-#include "src/Steam/Germany_DB_18_201_item.pnml"
+#include "src/Steam/RAW_Meiningen_4_6_2_89__graphics.pnml"
+#include "src/Steam/RAW_Meiningen_4_6_2_89__item.pnml"
 
-#include "src/Steam/South_Africa_PPR_35_tonner_4_6_0T_graphics.pnml"
-#include "src/Steam/South_Africa_PPR_35_tonner_4_6_0T_item.pnml"
+#include "src/Steam/Nasmyth__Wilson___Co_35_tonner_4_6_0T_graphics.pnml"
+#include "src/Steam/Nasmyth__Wilson___Co_35_tonner_4_6_0T_item.pnml"
 
-#include "src/Steam/India_Fairy_Queen_graphics.pnml"
-#include "src/Steam/India_Fairy_Queen_item.pnml"
+#include "src/Steam/Kitson_2_2_2WT_481_Fairy_Queen_graphics.pnml"
+#include "src/Steam/Kitson_2_2_2WT_481_Fairy_Queen_item.pnml"
 
-#include "src/Steam/South_Africa_Harbour_Board_EL_0_4_0_graphics.pnml"
-#include "src/Steam/South_Africa_Harbour_Board_EL_0_4_0_item.pnml"
+#include "src/Steam/Alexander_Chaplin___Co__1584_0_4_0VB_graphics.pnml"
+#include "src/Steam/Alexander_Chaplin___Co__1584_0_4_0VB_item.pnml"
 
-#include "src/Steam/Japan_JNR_7100_graphics.pnml"
-#include "src/Steam/Japan_JNR_7100_item.pnml"
+#include "src/Steam/H__K__Porter__Inc_2_6_0_7100_graphics.pnml"
+#include "src/Steam/H__K__Porter__Inc_2_6_0_7100_item.pnml"
 
-#include "src/Steam/India_DHR_B_graphics.pnml"
-#include "src/Steam/India_DHR_B_item.pnml"
+#include "src/Steam/Sharp__Stewart___Co_0_4_0ST_DHR_B_graphics.pnml"
+#include "src/Steam/Sharp__Stewart___Co_0_4_0ST_DHR_B_item.pnml"
 
-#include "src/Steam/Japan_JNR_860_graphics.pnml"
-#include "src/Steam/Japan_JNR_860_item.pnml"
+#include "src/Steam/Richard_Francis_Trevithick_2_4_2T_860_graphics.pnml"
+#include "src/Steam/Richard_Francis_Trevithick_2_4_2T_860_item.pnml"
 
-#include "src/Steam/Mozambique_Beira_Railway_BR6_F2_Falcon_graphics.pnml"
-#include "src/Steam/Mozambique_Beira_Railway_BR6_F2_Falcon_item.pnml"
+#include "src/Steam/Falcon_Engine_and_Car_Works_F2_graphics.pnml"
+#include "src/Steam/Falcon_Engine_and_Car_Works_F2_item.pnml"
 
-#include "src/Steam/China_China_Railways_H_graphics.pnml"
-#include "src/Steam/China_China_Railways_H_item.pnml"
+#include "src/Steam/Baldwin_2_8_0_Sentetsu_Sorii_graphics.pnml"
+#include "src/Steam/Baldwin_2_8_0_Sentetsu_Sorii_item.pnml"
 
-#include "src/Steam/Russia_RZD_U_graphics.pnml"
-#include "src/Steam/Russia_RZD_U_item.pnml"
+#include "src/Steam/Putilov_4_6_0_U_graphics.pnml"
+#include "src/Steam/Putilov_4_6_0_U_item.pnml"
 
-#include "src/Steam/Uruguay_AFE_N1_2_6_0_graphics.pnml"
-#include "src/Steam/Uruguay_AFE_N1_2_6_0_item.pnml"
+#include "src/Steam/AFE_N1_2_6_0_graphics.pnml"
+#include "src/Steam/AFE_N1_2_6_0_item.pnml"
 
-#include "src/Steam/Czech_Republic_CD_5341_graphics.pnml"
-#include "src/Steam/Czech_Republic_CD_5341_item.pnml"
+#include "src/Steam/Skoda_6Lo_graphics.pnml"
+#include "src/Steam/Skoda_6Lo_item.pnml"
 
-#include "src/Steam/Eritrea_Eritrean_Railway_R440_graphics.pnml"
-#include "src/Steam/Eritrea_Eritrean_Railway_R440_item.pnml"
+#include "src/Steam/Ansaldo_R_440_Mallet_graphics.pnml"
+#include "src/Steam/Ansaldo_R_440_Mallet_item.pnml"
 
-#include "src/Steam/Austria_KKStB_310_graphics.pnml"
-#include "src/Steam/Austria_KKStB_310_item.pnml"
+#include "src/Steam/Floridsdorf_2_6_2_KkStB_310_graphics.pnml"
+#include "src/Steam/Floridsdorf_2_6_2_KkStB_310_item.pnml"
 
-#include "src/Steam/Russia_RZD_E_graphics.pnml"
-#include "src/Steam/Russia_RZD_E_item.pnml"
+#include "src/Steam/Baldwin_12_44_F_2_10_0_Ye_graphics.pnml"
+#include "src/Steam/Baldwin_12_44_F_2_10_0_Ye_item.pnml"
 
-#include "src/Steam/Japan_JNR_9600_graphics.pnml"
-#include "src/Steam/Japan_JNR_9600_item.pnml"
+#include "src/Steam/Kawasaki_2_8_0_9600_graphics.pnml"
+#include "src/Steam/Kawasaki_2_8_0_9600_item.pnml"
 
-#include "src/Steam/Israel_Israel_Railways_H_graphics.pnml"
-#include "src/Steam/Israel_Israel_Railways_H_item.pnml"
+#include "src/Steam/Baldwin_4_6_0_50201_graphics.pnml"
+#include "src/Steam/Baldwin_4_6_0_50201_item.pnml"
 
-#include "src/Steam/Kenya_East_African_Railway_23_graphics.pnml"
-#include "src/Steam/Kenya_East_African_Railway_23_item.pnml"
+#include "src/Steam/Beyer__P___Co__4_8_0_6128_6133_graphics.pnml"
+#include "src/Steam/Beyer__P___Co__4_8_0_6128_6133_item.pnml"
 
-#include "src/Steam/Italy_FS_480_graphics.pnml"
-#include "src/Steam/Italy_FS_480_item.pnml"
+#include "src/Steam/FS_480_graphics.pnml"
+#include "src/Steam/FS_480_item.pnml"
 
-#include "src/Steam/New_Zealand_NZR_WAB_graphics.pnml"
-#include "src/Steam/New_Zealand_NZR_WAB_item.pnml"
+#include "src/Steam/NZR_4_6_4T_WAB_graphics.pnml"
+#include "src/Steam/NZR_4_6_4T_WAB_item.pnml"
 
-#include "src/Steam/Poland_PKP_Ok22_graphics.pnml"
-#include "src/Steam/Poland_PKP_Ok22_item.pnml"
+#include "src/Steam/Hanomag_Fablok_4_6_0_Ok22_graphics.pnml"
+#include "src/Steam/Hanomag_Fablok_4_6_0_Ok22_item.pnml"
 
-#include "src/Steam/Croatia_HZ_11_graphics.pnml"
-#include "src/Steam/Croatia_HZ_11_item.pnml"
+#include "src/Steam/MAVAG_4_8_0_424_graphics.pnml"
+#include "src/Steam/MAVAG_4_8_0_424_item.pnml"
 
-#include "src/Steam/Kenya_East_African_Railway_21_graphics.pnml"
-#include "src/Steam/Kenya_East_African_Railway_21_item.pnml"
+#include "src/Steam/Vulcan_Foundry_4_8_2_4318_4320_graphics.pnml"
+#include "src/Steam/Vulcan_Foundry_4_8_2_4318_4320_item.pnml"
 
-#include "src/Steam/Italy_FS_691_graphics.pnml"
-#include "src/Steam/Italy_FS_691_item.pnml"
+#include "src/Steam/FS_691_graphics.pnml"
+#include "src/Steam/FS_691_item.pnml"
 
-#include "src/Steam/Australia_NSWGR_D57_graphics.pnml"
-#include "src/Steam/Australia_NSWGR_D57_item.pnml"
+#include "src/Steam/Clyde_4_8_2_D57_graphics.pnml"
+#include "src/Steam/Clyde_4_8_2_D57_item.pnml"
 
-#include "src/Steam/Argentina_FCCA_PS11_graphics.pnml"
-#include "src/Steam/Argentina_FCCA_PS11_item.pnml"
+#include "src/Steam/Sir_Armstrong_Whithworth___Co__PS11_graphics.pnml"
+#include "src/Steam/Sir_Armstrong_Whithworth___Co__PS11_item.pnml"
 
-#include "src/Steam/Hungary_MAV_242_graphics.pnml"
-#include "src/Steam/Hungary_MAV_242_item.pnml"
+#include "src/Steam/MAVAG_4_4_4T_242_graphics.pnml"
+#include "src/Steam/MAVAG_4_4_4T_242_item.pnml"
 
-#include "src/Steam/Zimbabwe_Zimbabwe_Railways_15_graphics.pnml"
-#include "src/Steam/Zimbabwe_Zimbabwe_Railways_15_item.pnml"
+#include "src/Steam/Beyer__P___Co__4_6_4_4_6_4_15th_graphics.pnml"
+#include "src/Steam/Beyer__P___Co__4_6_4_4_6_4_15th_item.pnml"
 
-#include "src/Steam/USA_Southern_Pacific_GS_4_Daylight_graphics.pnml"
-#include "src/Steam/USA_Southern_Pacific_GS_4_Daylight_item.pnml"
+#include "src/Steam/Lima__4_8_4_7798_7817_Daylight_graphics.pnml"
+#include "src/Steam/Lima__4_8_4_7798_7817_Daylight_item.pnml"
 
-#include "src/Steam/Greece_SEK_Lb_graphics.pnml"
-#include "src/Steam/Greece_SEK_Lb_item.pnml"
+#include "src/Steam/North_British_Lb_2_10_0_graphics.pnml"
+#include "src/Steam/North_British_Lb_2_10_0_item.pnml"
 
-#include "src/Steam/Australia_South_Australian_Railways_520_graphics.pnml"
-#include "src/Steam/Australia_South_Australian_Railways_520_item.pnml"
+#include "src/Steam/Islington_Railway_Workshops_81_92_520_graphics.pnml"
+#include "src/Steam/Islington_Railway_Workshops_81_92_520_item.pnml"
 
-#include "src/Steam/Czech_Republic_CD_4590_graphics.pnml"
-#include "src/Steam/Czech_Republic_CD_4590_item.pnml"
+#include "src/Steam/Vulcan_Foundry_2_8_0_Liberation_graphics.pnml"
+#include "src/Steam/Vulcan_Foundry_2_8_0_Liberation_item.pnml"
 
-#include "src/Steam/Albania_HSH_01_graphics.pnml"
-#include "src/Steam/Albania_HSH_01_item.pnml"
+#include "src/Steam/ALCO_Baldwin_2_8_0_USATC_S160_graphics.pnml"
+#include "src/Steam/ALCO_Baldwin_2_8_0_USATC_S160_item.pnml"
 
-#include "src/Steam/Poland_PKP_OI49_graphics.pnml"
-#include "src/Steam/Poland_PKP_OI49_item.pnml"
+#include "src/Steam/Fablok_2_6_2_OI49_graphics.pnml"
+#include "src/Steam/Fablok_2_6_2_OI49_item.pnml"
 
-#include "src/Steam/Australia_NSWGR_AD60_graphics.pnml"
-#include "src/Steam/Australia_NSWGR_AD60_item.pnml"
+#include "src/Steam/Beyer__P___Co_4_8_4_4_8_4_7473_7497_graphics.pnml"
+#include "src/Steam/Beyer__P___Co_4_8_4_4_8_4_7473_7497_item.pnml"
 
-#include "src/Steam/South_Africa_SAR_GMA_4_8_2_2_8_4_graphics.pnml"
-#include "src/Steam/South_Africa_SAR_GMA_4_8_2_2_8_4_item.pnml"
+#include "src/Steam/Beyer__P___Co__4_8_2_2_8_4_7550_7552_graphics.pnml"
+#include "src/Steam/Beyer__P___Co__4_8_2_2_8_4_7550_7552_item.pnml"
 
-#include "src/Steam/Kenya_East_African_Railway_31_graphics.pnml"
-#include "src/Steam/Kenya_East_African_Railway_31_item.pnml"
+#include "src/Steam/Vulcan_Foundry_2_8_4_6228_graphics.pnml"
+#include "src/Steam/Vulcan_Foundry_2_8_4_6228_item.pnml"
 
-#include "src/Steam/Spain_RENFE_242F_graphics.pnml"
-#include "src/Steam/Spain_RENFE_242F_item.pnml"
+#include "src/Steam/RENFE_4_8_4_242F_Confederacion_graphics.pnml"
+#include "src/Steam/RENFE_4_8_4_242F_Confederacion_item.pnml"
 
-#include "src/Steam/Ireland_GS_WR_101_graphics.pnml"
-#include "src/Steam/Ireland_GS_WR_101_item.pnml"
+#include "src/Steam/GS_WR_0_6_0_101_graphics.pnml"
+#include "src/Steam/GS_WR_0_6_0_101_item.pnml"
 
-#include "src/Steam/USA_NYC_H_6A_Light_Mikado_graphics.pnml"
-#include "src/Steam/USA_NYC_H_6A_Light_Mikado_item.pnml"
+#include "src/Steam/ALCO_2_8_2_5100_5194_Light_Mikado_graphics.pnml"
+#include "src/Steam/ALCO_2_8_2_5100_5194_Light_Mikado_item.pnml"
 
-#include "src/Steam/Japan_JNR_D50_graphics.pnml"
-#include "src/Steam/Japan_JNR_D50_item.pnml"
+#include "src/Steam/Kawasaki_2_8_2_D50_graphics.pnml"
+#include "src/Steam/Kawasaki_2_8_2_D50_item.pnml"
 
-#include "src/Steam/Argentina_FCGR_315_graphics.pnml"
-#include "src/Steam/Argentina_FCGR_315_item.pnml"
+#include "src/Steam/FCGR__BAGS__No__315_2_4_0T_graphics.pnml"
+#include "src/Steam/FCGR__BAGS__No__315_2_4_0T_item.pnml"
 
-#include "src/Steam/Australia_NSWGR_C35_graphics.pnml"
-#include "src/Steam/Australia_NSWGR_C35_item.pnml"
+#include "src/Steam/Eveleigh_4_6_0_C35_graphics.pnml"
+#include "src/Steam/Eveleigh_4_6_0_C35_item.pnml"
 
-#include "src/Steam/Belgium_NMBS_SNCB_Type_29_graphics.pnml"
-#include "src/Steam/Belgium_NMBS_SNCB_Type_29_item.pnml"
+#include "src/Steam/ALCO_2_8_0_74707_74785_Type_29_graphics.pnml"
+#include "src/Steam/ALCO_2_8_0_74707_74785_Type_29_item.pnml"
 
-#include "src/Steam/China_Railways_QJ_graphics.pnml"
-#include "src/Steam/China_Railways_QJ_item.pnml"
+#include "src/Steam/Datong_QJ_2_10_2_101_3602_graphics.pnml"
+#include "src/Steam/Datong_QJ_2_10_2_101_3602_item.pnml"
 
-#include "src/Steam/South_Africa_Katanga_Mikado_2_8_2_graphics.pnml"
-#include "src/Steam/South_Africa_Katanga_Mikado_2_8_2_item.pnml"
+#include "src/Steam/Porter_2_8_2_Class_200_Katanga_Mikado_graphics.pnml"
+#include "src/Steam/Porter_2_8_2_Class_200_Katanga_Mikado_item.pnml"
 
-#include "src/Steam/Mozambique_Mozambique_Railways_No_101_graphics.pnml"
-#include "src/Steam/Mozambique_Mozambique_Railways_No_101_item.pnml"
+#include "src/Steam/Henschel_4_4_2_19906_graphics.pnml"
+#include "src/Steam/Henschel_4_4_2_19906_item.pnml"
 
-#include "src/Steam/Ivory_Coast_Golwe_2_6_0_0_6_2T_graphics.pnml"
-#include "src/Steam/Ivory_Coast_Golwe_2_6_0_0_6_2T_item.pnml"
+#include "src/Steam/Haine_Saint_Pierre_2_6_0_0_6_2T_Golwe_graphics.pnml"
+#include "src/Steam/Haine_Saint_Pierre_2_6_0_0_6_2T_Golwe_item.pnml"
 
-#include "src/Steam/Egypt_Stephenson_Class_192_graphics.pnml"
-#include "src/Steam/Egypt_Stephenson_Class_192_item.pnml"
+#include "src/Steam/Robert_Stephenson_and_Co_2_2_2_192_graphics.pnml"
+#include "src/Steam/Robert_Stephenson_and_Co_2_2_2_192_item.pnml"
 
-#include "src/Steam/Australia_NSW_N67_0_6_0T_Terrier_graphics.pnml"
-#include "src/Steam/Australia_NSW_N67_0_6_0T_Terrier_item.pnml"
+#include "src/Steam/LB_SCR_BRW_0_6_0T_A1_graphics.pnml"
+#include "src/Steam/LB_SCR_BRW_0_6_0T_A1_item.pnml"
 
-#include "src/Steam/Australia_NSW_C30_graphics.pnml"
-#include "src/Steam/Australia_NSW_C30_item.pnml"
+#include "src/Steam/BP_4_6_4T_4444_4478_C30_graphics.pnml"
+#include "src/Steam/BP_4_6_4T_4444_4478_C30_item.pnml"
 
-#include "src/Steam/Australia_NSW_C32_graphics.pnml"
-#include "src/Steam/Australia_NSW_C32_item.pnml"
+#include "src/Steam/BP_Baldwin_Clyde_4_6_0_C32_graphics.pnml"
+#include "src/Steam/BP_Baldwin_Clyde_4_6_0_C32_item.pnml"
 
-#include "src/Steam/Australia_NSW_D50_graphics.pnml"
-#include "src/Steam/Australia_NSW_D50_item.pnml"
+#include "src/Steam/BP_NBLC_2_8_0_D50_graphics.pnml"
+#include "src/Steam/BP_NBLC_2_8_0_D50_item.pnml"
 
-#include "src/Steam/Australia_NSW_Z12_graphics.pnml"
-#include "src/Steam/Australia_NSW_Z12_item.pnml"
+#include "src/Steam/BP_Dubs_4_4_0_Z12_graphics.pnml"
+#include "src/Steam/BP_Dubs_4_4_0_Z12_item.pnml"
 
-#include "src/Steam/Australia_NSW_Z19_graphics.pnml"
-#include "src/Steam/Australia_NSW_Z19_item.pnml"
+#include "src/Steam/BP_0_6_0_Z19_graphics.pnml"
+#include "src/Steam/BP_0_6_0_Z19_item.pnml"
 
-#include "src/Steam/Australia_NSW_Z26_graphics.pnml"
-#include "src/Steam/Australia_NSW_Z26_item.pnml"
+#include "src/Steam/Dubs_2_6_2ST_Z26_graphics.pnml"
+#include "src/Steam/Dubs_2_6_2ST_Z26_item.pnml"
 
-#include "src/Steam/Australia_JA_Brown_ROD_280_graphics.pnml"
-#include "src/Steam/Australia_JA_Brown_ROD_280_item.pnml"
+#include "src/Steam/GCR_Kitson_NBLC_ROD_2_8_0_8K_graphics.pnml"
+#include "src/Steam/GCR_Kitson_NBLC_ROD_2_8_0_8K_item.pnml"
 
-#include "src/Steam/Australia_SAR_600_graphics.pnml"
-#include "src/Steam/Australia_SAR_600_item.pnml"
+#include "src/Steam/ALCO_4_6_2_SAR_600_graphics.pnml"
+#include "src/Steam/ALCO_4_6_2_SAR_600_item.pnml"
 
-#include "src/Steam/Australia_SMR_10_graphics.pnml"
-#include "src/Steam/Australia_SMR_10_item.pnml"
+#include "src/Steam/BP_2_8_2T_South_Maitland_10_graphics.pnml"
+#include "src/Steam/BP_2_8_2T_South_Maitland_10_item.pnml"
 
-#include "src/Steam/Australia_VR_H_graphics.pnml"
-#include "src/Steam/Australia_VR_H_item.pnml"
+#include "src/Steam/Victorian_Railways_H_graphics.pnml"
+#include "src/Steam/Victorian_Railways_H_item.pnml"
 
-#include "src/Steam/Brazil_Baroneza_graphics.pnml"
-#include "src/Steam/Brazil_Baroneza_item.pnml"
+#include "src/Steam/William_Fairbairn_2_2_2_Baroneza_graphics.pnml"
+#include "src/Steam/William_Fairbairn_2_2_2_Baroneza_item.pnml"
 
-#include "src/Steam/Argentina_La_Portena_graphics.pnml"
-#include "src/Steam/Argentina_La_Portena_item.pnml"
+#include "src/Steam/Hunslet_0_4_0ST_La_Portena_graphics.pnml"
+#include "src/Steam/Hunslet_0_4_0ST_La_Portena_item.pnml"
 
-#include "src/Steam/Brazil_Dom_Pedro_Segundo_119_graphics.pnml"
-#include "src/Steam/Brazil_Dom_Pedro_Segundo_119_item.pnml"
+#include "src/Steam/Burnham_2_10_0_Dom_Pedro_Segundo_119_graphics.pnml"
+#include "src/Steam/Burnham_2_10_0_Dom_Pedro_Segundo_119_item.pnml"
 
-#include "src/Steam/Peru_No8_Monsefu_graphics.pnml"
-#include "src/Steam/Peru_No8_Monsefu_item.pnml"
+#include "src/Steam/Baldwin_0_22C_No8_Monsefu_graphics.pnml"
+#include "src/Steam/Baldwin_0_22C_No8_Monsefu_item.pnml"
 
-#include "src/Steam/Paraguay_FCCP_Q_Class_graphics.pnml"
-#include "src/Steam/Paraguay_FCCP_Q_Class_item.pnml"
+#include "src/Steam/FCCP_Q_Class_graphics.pnml"
+#include "src/Steam/FCCP_Q_Class_item.pnml"
 
-#include "src/Steam/Argentina_FCCA_PS10_Class_graphics.pnml"
-#include "src/Steam/Argentina_FCCA_PS10_Class_item.pnml"
+#include "src/Steam/NBLC_4_6_2_PS10_Class_graphics.pnml"
+#include "src/Steam/NBLC_4_6_2_PS10_Class_item.pnml"
 
-#include "src/Steam/Chile_Anglo_Chilean_Nitrate_No_97_graphics.pnml"
-#include "src/Steam/Chile_Anglo_Chilean_Nitrate_No_97_item.pnml"
+#include "src/Steam/Yorkshire_Engine_Co__4_8_4T_Nitrate_101_graphics.pnml"
+#include "src/Steam/Yorkshire_Engine_Co__4_8_4T_Nitrate_101_item.pnml"
 
-#include "src/Steam/Chile_La_Copiapo_graphics.pnml"
-#include "src/Steam/Chile_La_Copiapo_item.pnml"
+#include "src/Steam/Norris___Brothers_4_4_0_La_Copiapo_graphics.pnml"
+#include "src/Steam/Norris___Brothers_4_4_0_La_Copiapo_item.pnml"
 
-#include "src/Steam/Brazil_Sao_Paulo_Railway_13_graphics.pnml"
-#include "src/Steam/Brazil_Sao_Paulo_Railway_13_item.pnml"
+#include "src/Steam/Avonside_0_6_0ST_Sao_Paulo_No__13___14_graphics.pnml"
+#include "src/Steam/Avonside_0_6_0ST_Sao_Paulo_No__13___14_item.pnml"
 
-#include "src/Steam/China_China_Railways_JS_graphics.pnml"
-#include "src/Steam/China_China_Railways_JS_item.pnml"
+#include "src/Steam/Dalian_2_8_2_JS_Class_graphics.pnml"
+#include "src/Steam/Dalian_2_8_2_JS_Class_item.pnml"
 
-#include "src/Steam/China_China_Railways_RM_graphics.pnml"
-#include "src/Steam/China_China_Railways_RM_item.pnml"
+#include "src/Steam/CSR_Sifang_4_6_2_RM_graphics.pnml"
+#include "src/Steam/CSR_Sifang_4_6_2_RM_item.pnml"
 
-#include "src/Steam/Egypt_Kitson_2_2_2_graphics.pnml"
-#include "src/Steam/Egypt_Kitson_2_2_2_item.pnml"
+#include "src/Steam/Kitson_2_2_2_3166_3171_graphics.pnml"
+#include "src/Steam/Kitson_2_2_2_3166_3171_item.pnml"
 
-#include "src/Steam/Egypt_Class_7_2_6_0_graphics.pnml"
-#include "src/Steam/Egypt_Class_7_2_6_0_item.pnml"
+#include "src/Steam/Burnham_2_6_0_15857_15871_graphics.pnml"
+#include "src/Steam/Burnham_2_6_0_15857_15871_item.pnml"
 
-#include "src/Steam/Egypt_Class_4_0_6_0_graphics.pnml"
-#include "src/Steam/Egypt_Class_4_0_6_0_item.pnml"
+#include "src/Steam/SA_Franco_Belge_0_6_0_Class_4_graphics.pnml"
+#include "src/Steam/SA_Franco_Belge_0_6_0_Class_4_item.pnml"
 
-#include "src/Steam/Bulgaria_BDZ_142_150_graphics.pnml"
-#include "src/Steam/Bulgaria_BDZ_142_150_item.pnml"
+#include "src/Steam/Sharp_BP_0_6_0_BDZ_142_150_graphics.pnml"
+#include "src/Steam/Sharp_BP_0_6_0_BDZ_142_150_item.pnml"
 
-#include "src/Steam/Hungary_MAV_Class_203_graphics.pnml"
-#include "src/Steam/Hungary_MAV_Class_203_item.pnml"
+#include "src/Steam/MAVAG_4_4_2_Class_203_graphics.pnml"
+#include "src/Steam/MAVAG_4_4_2_Class_203_item.pnml"
 
-#include "src/Steam/Hungary_MAV_Class_601_graphics.pnml"
-#include "src/Steam/Hungary_MAV_Class_601_item.pnml"
+#include "src/Steam/MAVAG_2_6_6_0_Class_601_graphics.pnml"
+#include "src/Steam/MAVAG_2_6_6_0_Class_601_item.pnml"
 
-#include "src/Steam/Italy_LVCI_Class_1_graphics.pnml"
-#include "src/Steam/Italy_LVCI_Class_1_item.pnml"
+#include "src/Steam/Stephenson_BP_2_2_2_LVCI_Class_1_graphics.pnml"
+#include "src/Steam/Stephenson_BP_2_2_2_LVCI_Class_1_item.pnml"
 
-#include "src/Steam/Spain_RENFE_462_graphics.pnml"
-#include "src/Steam/Spain_RENFE_462_item.pnml"
+#include "src/Steam/Babcock_4_6_2_2_6_4T_462_graphics.pnml"
+#include "src/Steam/Babcock_4_6_2_2_6_4T_462_item.pnml"
 
-#include "src/Steam/Spain_RENFE_030_graphics.pnml"
-#include "src/Steam/Spain_RENFE_030_item.pnml"
+#include "src/Steam/Koechlin_0_6_0_030_graphics.pnml"
+#include "src/Steam/Koechlin_0_6_0_030_item.pnml"
 
-#include "src/Steam/Spain_RENFE_240_graphics.pnml"
-#include "src/Steam/Spain_RENFE_240_item.pnml"
+#include "src/Steam/Hanomag_ALCO_4_8_0_240_graphics.pnml"
+#include "src/Steam/Hanomag_ALCO_4_8_0_240_item.pnml"
 
 
 //// WAGONS_MAGLEV - GEN7M

@@ -1,0 +1,101 @@
+
+//  Copyright (C) 2017 Transportman // V. Nemeth 2026+
+//  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
+
+
+// Template: TPL_02A.
+// Data from: https://ja.wikipedia.org/wiki/%E8%A5%BF%E3%83%89%E3%82%A4%E3%83%84%E5%9B%BD%E9%89%84VT11.5%E5%9E%8B%E6%B0%97%E5%8B%95%E8%BB%8A#VT11.5%E5%BD%A2_%E2%86%92_601%E5%BD%A2
+
+// Notes:
+//// WEB: https://ja.wikipedia.org/wiki/%E8%A5%BF%E3%83%89%E3%82%A4%E3%83%84%E5%9B%BD%E9%89%84VT11.5%E5%9E%8B%E6%B0%97%E5%8B%95%E8%BB%8A#VT11.5%E5%BD%A2_%E2%86%92_601%E5%BD%A2 -- the Japanese is better
+//// TE_STARTING_KN: =110/2 -- Gemini
+//// TE_COEFFICIENT_MANUAL: 0.18 -- Likely kN was 200ish but due to the fuckery with the dmu calc here I am just leaving it on 0.18 te-c
+//// WAGON_CAPACITY: 34 -- Japanese Wiki
+
+
+// Cargo capacity
+
+    switch(FEAT_TRAINS, SELF, switch_dmu_man_lhb_vt11_5___db_601_tee_capacity_engine, cargo_classes) { \
+        bitmask(CC_MAIL): 24/2; \
+        bitmask(CC_ARMOURED): 24/4; \
+        24; \
+    }
+
+
+    switch(FEAT_TRAINS, SELF, switch_dmu_man_lhb_vt11_5___db_601_tee_capacity_wagon, cargo_classes) { \
+        bitmask(CC_MAIL): 34/2; \
+        bitmask(CC_ARMOURED): 34/4; \
+        34; \
+    }
+
+item(FEAT_TRAINS, item_dmu_man_lhb_vt11_5___db_601_tee) {
+    property {
+        name: string(str_dmu_man_lhb_vt11_5___db_601_tee);
+        climates_available: ((param_region_western_europe || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
+        introduction_date: date(1957,1,1);
+        model_life: 45;
+        vehicle_life: 40;
+        retire_early: 20;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        cost_factor: 53.12714;
+        running_cost_factor: 50.40582;
+        speed: 160 km/h;
+        power: 2200 hp;
+        cargo_capacity: 24;
+        weight: 22 ton;
+        tractive_effort_coefficient: 0.254;
+        air_drag_coefficient: 0;
+
+        reliability_decay: 20;
+        // cargodeftype: PASSENGERS;
+        refittable_cargo_classes: bitmask(CC_PASSENGERS, CC_MAIL);
+        non_refittable_cargo_classes: 0;
+        cargo_age_period: 185;
+        misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
+        refit_cost: 0;
+        ai_special_flag: AI_FLAG_PASSENGER | AI_FLAG_CARGO;
+        track_type: [STANDARD_GAUGE_RAILTYPE_NONE];
+        running_cost_base: RUNNING_COST_DIESEL;
+        engine_class: ENGINE_CLASS_DIESEL;
+        visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 0, DISABLE_WAGON_POWER);
+
+        sprite_id: SPRITE_ID_NEW_TRAIN;
+        dual_headed: 1;
+        length: 8;
+        extra_power_per_wagon: 0;
+        bitmask_vehicle_info: 0;
+
+	badges: ["region/europe/western", "power/diesel", "role/express_passenger"];
+
+    }
+    graphics {
+        purchase: spriteset_dmu_man_lhb_vt11_5___db_601_tee_purchase;
+        cargo_capacity: switch_dmu_man_lhb_vt11_5___db_601_tee_capacity_engine;
+        visual_effect_and_powered: switch_dmu_man_lhb_vt11_5___db_601_tee_visual_effect_and_powered;
+        // no 'length'
+        // no 'articulated_part'
+        can_attach_wagon: switch_can_attach_vehicle;
+        // Add calls to defined switches below
+        // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
+        // PURCHASETEXT_SWITCH_CALL // this is actually blank
+        default: switch_dmu_man_lhb_vt11_5___db_601_tee_reversed;
+    }
+    livery_override (item_mu_mu_wagon_unpowered) {
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        running_cost_factor: int(160/10);
+        weight: int(22*1/2);
+        cargo_capacity: 34;
+        length: 8;
+        default: switch_dmu_man_lhb_vt11_5___db_601_tee_cargo_selection;
+    }
+    livery_override (item_mu_mu_wagon_powered) {
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        running_cost_factor: (round(26.303816254976432));
+        power: int(2200*1/2);
+        weight: int(22*3/4);
+        cargo_capacity: 34;
+        tractive_effort_coefficient: int(0.254*10*22);
+        length: 8;
+        default: switch_dmu_man_lhb_vt11_5___db_601_tee_cargo_selection;
+    }
+}

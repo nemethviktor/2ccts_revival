@@ -1,0 +1,100 @@
+
+//  Copyright (C) 2017 Transportman // V. Nemeth 2026+
+//  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
+
+
+// Template: TPL_02A.
+// Data from: https://en.wikipedia.org/wiki/Norske_Tog_Class_93
+
+// Notes:
+//// POWER: 810 -- NOR wiki
+//// TE_STARTING_KN: =100/2 -- Gemini
+//// WAGON_CAPACITY: =76/2 -- Again, none, really, this doesn't take trailers IRL
+
+
+// Cargo capacity
+
+    switch(FEAT_TRAINS, SELF, switch_dmu_bombardier_talent_nsb_bm_93_capacity_engine, cargo_classes) { \
+        bitmask(CC_MAIL): 38/2; \
+        bitmask(CC_ARMOURED): 38/4; \
+        38; \
+    }
+
+
+    switch(FEAT_TRAINS, SELF, switch_dmu_bombardier_talent_nsb_bm_93_capacity_wagon, cargo_classes) { \
+        bitmask(CC_MAIL): 38/2; \
+        bitmask(CC_ARMOURED): 38/4; \
+        38; \
+    }
+
+item(FEAT_TRAINS, item_dmu_bombardier_talent_nsb_bm_93) {
+    property {
+        name: string(str_dmu_bombardier_talent_nsb_bm_93);
+        climates_available: ((param_region_northern_europe || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
+        introduction_date: date(2001,1,1);
+        model_life: VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 45;
+        retire_early: 20;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        cost_factor: 36.62207;
+        running_cost_factor: 32.29166;
+        speed: 140 km/h;
+        power: 810 hp;
+        cargo_capacity: 38;
+        weight: 38 ton;
+        tractive_effort_coefficient: 0.132;
+        air_drag_coefficient: 0;
+
+        reliability_decay: 20;
+        // cargodeftype: PASSENGERS;
+        refittable_cargo_classes: bitmask(CC_PASSENGERS, CC_MAIL);
+        non_refittable_cargo_classes: 0;
+        cargo_age_period: 185;
+        misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
+        refit_cost: 0;
+        ai_special_flag: AI_FLAG_PASSENGER | AI_FLAG_CARGO;
+        track_type: [STANDARD_GAUGE_RAILTYPE_NONE];
+        running_cost_base: RUNNING_COST_DIESEL;
+        engine_class: ENGINE_CLASS_DIESEL;
+        visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 0, DISABLE_WAGON_POWER);
+
+        sprite_id: SPRITE_ID_NEW_TRAIN;
+        dual_headed: 1;
+        length: 8;
+        extra_power_per_wagon: 0;
+        bitmask_vehicle_info: 0;
+
+	badges: ["region/europe/northern", "power/diesel", "role/commuter_urban"];
+
+    }
+    graphics {
+        purchase: spriteset_dmu_bombardier_talent_nsb_bm_93_purchase;
+        cargo_capacity: switch_dmu_bombardier_talent_nsb_bm_93_capacity_engine;
+        visual_effect_and_powered: switch_dmu_bombardier_talent_nsb_bm_93_visual_effect_and_powered;
+        // no 'length'
+        // no 'articulated_part'
+        can_attach_wagon: switch_can_attach_vehicle;
+        // Add calls to defined switches below
+        // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
+        // PURCHASETEXT_SWITCH_CALL // this is actually blank
+        default: switch_dmu_bombardier_talent_nsb_bm_93_reversed;
+    }
+    livery_override (item_mu_mu_wagon_unpowered) {
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        running_cost_factor: int(140/10);
+        weight: int(38*1/2);
+        cargo_capacity: 38;
+        length: 8;
+        default: switch_dmu_bombardier_talent_nsb_bm_93_cargo_selection;
+    }
+    livery_override (item_mu_mu_wagon_powered) {
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        running_cost_factor: (round(21.928062103728067));
+        power: int(810*1/2);
+        weight: int(38*3/4);
+        cargo_capacity: 38;
+        tractive_effort_coefficient: int(0.132*10*38);
+        length: 8;
+        default: switch_dmu_bombardier_talent_nsb_bm_93_cargo_selection;
+    }
+}

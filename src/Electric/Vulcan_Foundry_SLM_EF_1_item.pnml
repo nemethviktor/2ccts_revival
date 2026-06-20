@@ -1,0 +1,64 @@
+
+//  Copyright (C) 2017 Transportman // V. Nemeth 2026+
+//  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
+
+
+// Template: TPL_03B.
+// Data from: https://en.wikipedia.org/wiki/Indian_locomotive_class_WCG-1
+
+// Notes:
+//// TE_STARTING_KN: 300 -- Wiki
+
+
+item(FEAT_TRAINS, item_electric_vulcan_foundry_slm_ef_1) {
+    property {
+        name: string(str_electric_vulcan_foundry_slm_ef_1);
+        climates_available: ((param_region_asia || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
+        introduction_date: date(1928,1,1);
+        model_life: 45;
+        vehicle_life: 72;
+        retire_early: 20;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
+        cost_factor: 63.76016;
+        running_cost_factor: 51.08421;
+        speed: 80 km/h;
+        power: 2600 hp;
+        cargo_capacity: 0;
+        weight: 123 ton;
+        tractive_effort_coefficient: 0.249;
+        air_drag_coefficient: 0;
+
+        reliability_decay: 20;
+        // cargodeftype: NONE;
+        refittable_cargo_classes: bitmask(NO_CARGO_CLASS);
+        
+        cargo_age_period: 185;
+        misc_flags: bitmask(TRAIN_FLAG_2CC);
+        refit_cost: 0;
+        ai_special_flag: AI_FLAG_PASSENGER | AI_FLAG_CARGO;
+        track_type: [BROAD_GAUGE_RAILTYPE_1500V];
+        running_cost_base: RUNNING_COST_ELECTRIC;
+        engine_class: ENGINE_CLASS_ELECTRIC;
+        visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, -3, DISABLE_WAGON_POWER);
+
+        sprite_id: SPRITE_ID_NEW_TRAIN;
+        dual_headed: 0;
+        length: 8;
+        extra_power_per_wagon: 0;
+        bitmask_vehicle_info: 0;
+
+	badges: ["region/asia", "power/electric/dc", "role/universal"];
+
+    }
+    graphics {
+        purchase: spriteset_electric_vulcan_foundry_slm_ef_1_purchase;
+        // no 'visual_effect' or 'visual_effect_and_powered'
+        // no 'length'
+        // no 'articulated_part'
+        can_attach_wagon: switch_can_attach_vehicle;
+        // Add calls to defined switches below
+        // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
+        // PURCHASETEXT_SWITCH_CALL // this is actually blank
+        default: switch_electric_vulcan_foundry_slm_ef_1_animation;
+    }
+}

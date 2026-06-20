@@ -1,0 +1,23 @@
+//  Copyright (C) 2017 Transportman // V. Nemeth 2026+
+//  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
+
+// Template: TPL_03C
+
+// PURCHASE
+spriteset(spriteset_steam_nasmyth__wilson___co_35_tonner_4_6_0t_purchase, "gfx/steam/nasmyth__wilson___co_35_tonner_4_6_0t.png") {template_purchase(1, 96)}
+
+
+// VEHICLE
+/// Engine1
+spriteset(spriteset_steam_nasmyth__wilson___co_35_tonner_4_6_0t_engine1, "gfx/steam/nasmyth__wilson___co_35_tonner_4_6_0t.png") {template_2cc_engines_general(1, 1)}
+
+
+/// Engine2
+spriteset(spriteset_steam_nasmyth__wilson___co_35_tonner_4_6_0t_engine2, "gfx/steam/nasmyth__wilson___co_35_tonner_4_6_0t.png") {template_2cc_engines_general(1, 32)}
+
+
+/// Animation states (animation)
+switch(FEAT_TRAINS, SELF, switch_steam_nasmyth__wilson___co_35_tonner_4_6_0t_animation, motion_counter % 2){
+	0: spriteset_steam_nasmyth__wilson___co_35_tonner_4_6_0t_engine1;
+	spriteset_steam_nasmyth__wilson___co_35_tonner_4_6_0t_engine2;
+}

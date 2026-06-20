@@ -1,0 +1,79 @@
+
+//  Copyright (C) 2017 Transportman // V. Nemeth 2026+
+//  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
+
+
+// Template: TPL_02C.
+// Data from: https://ru.wikipedia.org/wiki/%D0%A0%D1%83%D1%81%D0%B8%D1%87_(%D0%B2%D0%B0%D0%B3%D0%BE%D0%BD_%D0%BC%D0%B5%D1%82%D1%80%D0%BE)
+
+item(FEAT_TRAINS, item_mtro_mmz_moscow_81_740) {
+    property {
+        name: string(str_mtro_mmz_moscow_81_740);
+        climates_available: ((param_region_asia || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
+        introduction_date: date(2003,1,1);
+        model_life: VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 50;
+        retire_early: 20;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
+        cost_factor: 49.52427;
+        running_cost_factor: 44.42942;
+        speed: 90 km/h;
+        power: 1400 hp;
+        cargo_capacity: 172;
+        weight: 47 ton;
+        tractive_effort_coefficient: 0.3;
+        air_drag_coefficient: 0;
+
+        reliability_decay: 20;
+        // cargodeftype: PASSENGERS_ONLY;
+        refittable_cargo_classes: bitmask(CC_PASSENGERS);
+        non_refittable_cargo_classes: 0;
+        
+        cargo_age_period: 185;
+        misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
+        refit_cost: 0;
+        ai_special_flag: AI_FLAG_PASSENGER | AI_FLAG_CARGO;
+        track_type: [BROAD_GAUGE_RAILTYPE_3RD];
+        running_cost_base: RUNNING_COST_ELECTRIC;
+        engine_class: ENGINE_CLASS_MAGLEV;
+        visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+
+        sprite_id: SPRITE_ID_NEW_TRAIN;
+        dual_headed: 1;
+        length: 7;
+        extra_power_per_wagon: 0;
+        bitmask_vehicle_info: 0;
+
+	badges: ["region/asia", "power/metro", "role/metro"];
+
+    }
+    graphics {
+        purchase: spriteset_mtro_mmz_moscow_81_740_purchase;
+        // no 'visual_effect' or 'visual_effect_and_powered'
+        // no 'length'
+        // no 'articulated_part'
+        can_attach_wagon: switch_can_attach_vehicle;
+        // Add calls to defined switches below
+        // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
+        // PURCHASETEXT_SWITCH_CALL // this is actually blank
+        default: switch_mtro_mmz_moscow_81_740_reversed;
+    }
+    livery_override (item_mtro_metro_wagon_unpowered) {
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
+        running_cost_factor: int(90/10);
+        weight: int(47*1/2);
+        cargo_capacity: 120;
+        length: 6;
+        default: spriteset_mtro_mmz_moscow_81_740_middle;
+    }
+    livery_override (item_mtro_metro_wagon_powered) {
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
+        running_cost_factor: (round(26.841657412349043));
+        power: int(1400*1/2);
+        weight: int(47*3/4);
+        cargo_capacity: 120;
+        tractive_effort_coefficient: int(0.3*10*47);
+        length: 6;
+        default: spriteset_mtro_mmz_moscow_81_740_middle;
+    }
+}

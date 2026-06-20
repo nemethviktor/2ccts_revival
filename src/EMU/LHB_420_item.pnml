@@ -1,0 +1,100 @@
+
+//  Copyright (C) 2017 Transportman // V. Nemeth 2026+
+//  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
+
+
+// Template: TPL_02D.
+// Data from: https://de.wikipedia.org/wiki/DB-Baureihe_420
+
+// Notes:
+//// HEAD_CAPACITY: =INT((192+266)/3) -- Seated + standing [DE wiki]
+//// TE_STARTING_KN: 63 -- 63 per head unit
+//// WAGON_CAPACITY: =INT((192+266)/3) -- Seated + standing [DE wiki]
+
+
+// Cargo capacity
+
+    switch(FEAT_TRAINS, SELF, switch_emu_lhb_420_capacity_engine, cargo_classes) { \
+        bitmask(CC_MAIL): 152/2; \
+        bitmask(CC_ARMOURED): 152/4; \
+        152; \
+    }
+
+
+    switch(FEAT_TRAINS, SELF, switch_emu_lhb_420_capacity_wagon, cargo_classes) { \
+        bitmask(CC_MAIL): 152/2; \
+        bitmask(CC_ARMOURED): 152/4; \
+        152; \
+    }
+
+item(FEAT_TRAINS, item_emu_lhb_420) {
+    property {
+        name: string(str_emu_lhb_420);
+        climates_available: ((param_region_western_europe || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
+        introduction_date: date(1969,1,1);
+        model_life: 45;
+        vehicle_life: 40;
+        retire_early: 20;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        cost_factor: 57.8528;
+        running_cost_factor: 52.79671;
+        speed: 125 km/h;
+        power: 2144 hp;
+        cargo_capacity: 152;
+        weight: 46 ton;
+        tractive_effort_coefficient: 0.14;
+        air_drag_coefficient: 0;
+
+        reliability_decay: 20;
+        // cargodeftype: PASSENGERS;
+        refittable_cargo_classes: bitmask(CC_PASSENGERS, CC_MAIL);
+        non_refittable_cargo_classes: 0;
+        cargo_age_period: 185;
+        misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
+        refit_cost: 0;
+        ai_special_flag: AI_FLAG_PASSENGER | AI_FLAG_CARGO;
+        track_type: [STANDARD_GAUGE_RAILTYPE_15KV];
+        running_cost_base: RUNNING_COST_ELECTRIC;
+        engine_class: ENGINE_CLASS_ELECTRIC;
+        visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
+
+        sprite_id: SPRITE_ID_NEW_TRAIN;
+        dual_headed: 1;
+        length: 8;
+        extra_power_per_wagon: 0;
+        bitmask_vehicle_info: 0;
+
+	badges: ["region/europe/western", "power/electric/ac", "role/commuter_urban"];
+
+    }
+    graphics {
+        purchase: spriteset_emu_lhb_420_purchase;
+        cargo_capacity: switch_emu_lhb_420_capacity_engine;
+        // no 'visual_effect_and_powered' becuase while it does exist, _visual_effect_and_powered_position is set for livery overrides
+        // no 'length'
+        // no 'articulated_part'
+        can_attach_wagon: switch_can_attach_vehicle;
+        // Add calls to defined switches below
+        // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
+        // PURCHASETEXT_SWITCH_CALL // this is actually blank
+        default: switch_emu_lhb_420_reversed;
+    }
+    livery_override (item_mu_mu_wagon_unpowered) {
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        running_cost_factor: int(125/10);
+        weight: int(46*1/2);
+        cargo_capacity: 152;
+        length: 8;
+        default: switch_emu_lhb_420_cargo_selection;
+    }
+    livery_override (item_mu_mu_wagon_powered) {
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        running_cost_factor: (round(23.570335121497557));
+        power: int(2144*1/2);
+        weight: int(46*3/4);
+        cargo_capacity: 152;
+        tractive_effort_coefficient: int(0.14*10*46);
+        length: 8;
+        default: switch_emu_lhb_420_cargo_selection;
+    }
+}

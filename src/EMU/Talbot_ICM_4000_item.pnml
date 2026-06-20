@@ -1,0 +1,94 @@
+
+//  Copyright (C) 2017 Transportman // V. Nemeth 2026+
+//  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
+
+
+// Template: TPL_02A.
+// Data from: https://nl.wikipedia.org/wiki/Intercitymaterieel
+
+// Cargo capacity
+
+    switch(FEAT_TRAINS, SELF, switch_emu_talbot_icm_4000_capacity_engine, cargo_classes) { \
+        bitmask(CC_MAIL): 102/2; \
+        bitmask(CC_ARMOURED): 102/4; \
+        102; \
+    }
+
+
+    switch(FEAT_TRAINS, SELF, switch_emu_talbot_icm_4000_capacity_wagon, cargo_classes) { \
+        bitmask(CC_MAIL): 102/2; \
+        bitmask(CC_ARMOURED): 102/4; \
+        102; \
+    }
+
+item(FEAT_TRAINS, item_emu_talbot_icm_4000) {
+    property {
+        name: string(str_emu_talbot_icm_4000);
+        climates_available: ((param_region_western_europe || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
+        introduction_date: date(1979,1,1);
+        model_life: 45;
+        vehicle_life: 40;
+        retire_early: 20;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        cost_factor: 54.55243;
+        running_cost_factor: 46.87202;
+        speed: 140 km/h;
+        power: 1720 hp;
+        cargo_capacity: 102;
+        weight: 72 ton;
+        tractive_effort_coefficient: 0.071;
+        air_drag_coefficient: 0;
+
+        reliability_decay: 20;
+        // cargodeftype: PASSENGERS;
+        refittable_cargo_classes: bitmask(CC_PASSENGERS, CC_MAIL);
+        non_refittable_cargo_classes: 0;
+        cargo_age_period: 185;
+        misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
+        refit_cost: 0;
+        ai_special_flag: AI_FLAG_PASSENGER | AI_FLAG_CARGO;
+        track_type: [STANDARD_GAUGE_RAILTYPE_1500V];
+        running_cost_base: RUNNING_COST_ELECTRIC;
+        engine_class: ENGINE_CLASS_ELECTRIC;
+        visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
+
+        sprite_id: SPRITE_ID_NEW_TRAIN;
+        dual_headed: 1;
+        length: 8;
+        extra_power_per_wagon: 0;
+        bitmask_vehicle_info: 0;
+
+	badges: ["region/europe/western", "power/electric/dc", "role/commuter_urban"];
+
+    }
+    graphics {
+        purchase: spriteset_emu_talbot_icm_4000_purchase;
+        cargo_capacity: switch_emu_talbot_icm_4000_capacity_engine;
+        visual_effect_and_powered: switch_emu_talbot_icm_4000_visual_effect_and_powered;
+        // no 'length'
+        // no 'articulated_part'
+        can_attach_wagon: switch_can_attach_vehicle;
+        // Add calls to defined switches below
+        // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
+        // PURCHASETEXT_SWITCH_CALL // this is actually blank
+        default: switch_emu_talbot_icm_4000_reversed;
+    }
+    livery_override (item_mu_mu_wagon_unpowered) {
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        running_cost_factor: int(140/10);
+        weight: int(72*1/2);
+        cargo_capacity: 102;
+        length: 8;
+        default: switch_emu_talbot_icm_4000_cargo_selection;
+    }
+    livery_override (item_mu_mu_wagon_powered) {
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        running_cost_factor: (round(23.259288276056445));
+        power: int(1720*1/2);
+        weight: int(72*3/4);
+        cargo_capacity: 102;
+        tractive_effort_coefficient: int(0.071*10*72);
+        length: 8;
+        default: switch_emu_talbot_icm_4000_cargo_selection;
+    }
+}

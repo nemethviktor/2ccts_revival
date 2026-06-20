@@ -1,0 +1,99 @@
+
+//  Copyright (C) 2017 Transportman // V. Nemeth 2026+
+//  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
+
+
+// Template: TPL_02A.
+// Data from: https://en.wikipedia.org/wiki/Shanghai_maglev_train
+
+// Notes:
+//// POWER: 13450 -- Gemini. Maglev doesn't have a comparable effect but this is to fake it
+//// TE_STARTING_KN: 450 -- Gemini. Maglev does not have a TE per se but this is to fake the effect.
+
+
+// Cargo capacity
+
+    switch(FEAT_TRAINS, SELF, switch_mmu_siemens_thyssenkrupp_transrapid_capacity_engine, cargo_classes) { \
+        bitmask(CC_MAIL): 50/2; \
+        bitmask(CC_ARMOURED): 50/4; \
+        50; \
+    }
+
+
+    switch(FEAT_TRAINS, SELF, switch_mmu_siemens_thyssenkrupp_transrapid_capacity_wagon, cargo_classes) { \
+        bitmask(CC_MAIL): 55/2; \
+        bitmask(CC_ARMOURED): 55/4; \
+        55; \
+    }
+
+item(FEAT_TRAINS, item_mmu_siemens_thyssenkrupp_transrapid) {
+    property {
+        name: string(str_mmu_siemens_thyssenkrupp_transrapid);
+        climates_available: ((param_region_asia || param_region_western_europe) && 1) ? ALL_CLIMATES : NO_CLIMATE;
+        introduction_date: date(2004,1,1);
+        model_life: VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 45;
+        retire_early: 20;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
+        cost_factor: 127.85194;
+        running_cost_factor: 121.7194;
+        speed: 433 km/h;
+        power: 13450 hp;
+        cargo_capacity: 50;
+        weight: 53 ton;
+        tractive_effort_coefficient: 0.866;
+        air_drag_coefficient: 0;
+
+        reliability_decay: 20;
+        // cargodeftype: PASSENGERS;
+        refittable_cargo_classes: bitmask(CC_PASSENGERS, CC_MAIL);
+        non_refittable_cargo_classes: 0;
+        cargo_age_period: 185;
+        misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
+        refit_cost: 0;
+        ai_special_flag: AI_FLAG_PASSENGER | AI_FLAG_CARGO;
+        track_type: [MGLV];
+        running_cost_base: RUNNING_COST_ELECTRIC;
+        engine_class: ENGINE_CLASS_MAGLEV;
+        visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+
+        sprite_id: SPRITE_ID_NEW_TRAIN;
+        dual_headed: 1;
+        length: 8;
+        extra_power_per_wagon: 0;
+        bitmask_vehicle_info: 0;
+
+	badges: ["region/asia", "region/europe/western", "power/maglev", "role/ultra_high_speed__pax_"];
+
+    }
+    graphics {
+        purchase: spriteset_mmu_siemens_thyssenkrupp_transrapid_purchase;
+        cargo_capacity: switch_mmu_siemens_thyssenkrupp_transrapid_capacity_engine;
+        visual_effect_and_powered: switch_mmu_siemens_thyssenkrupp_transrapid_visual_effect_and_powered;
+        // no 'length'
+        // no 'articulated_part'
+        can_attach_wagon: switch_can_attach_vehicle;
+        // Add calls to defined switches below
+        // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
+        // PURCHASETEXT_SWITCH_CALL // this is actually blank
+        default: switch_mmu_siemens_thyssenkrupp_transrapid_reversed;
+    }
+    livery_override (item_mglv_maglev_wagon_unpowered) {
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
+        running_cost_factor: int(433/10);
+        weight: int(53*1/2);
+        cargo_capacity: 55;
+        length: 8;
+        default: switch_mmu_siemens_thyssenkrupp_transrapid_cargo_selection;
+    }
+    livery_override (item_mglv_maglev_wagon_powered) {
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
+        running_cost_factor: (round(100.86987915878063));
+        power: int(13450*1/2);
+        weight: int(53*3/4);
+        cargo_capacity: 55;
+        tractive_effort_coefficient: int(0.866*10*53);
+        length: 8;
+        default: switch_mmu_siemens_thyssenkrupp_transrapid_cargo_selection;
+    }
+}

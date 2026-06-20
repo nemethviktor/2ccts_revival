@@ -68,9 +68,9 @@ def load_master_data(excel_path):
     # FIX: Restore Namibia 'NA' specifically for the COUNTRY_CODE column
     # We replace actual NaN values with the string 'NA' ONLY in the properties sheet
     # This is to handle the country code 'NA' for Namibia
-    if 'properties' in sheets:
-        sheets['properties']['COUNTRY_CODE'] = sheets['properties']['COUNTRY_CODE'].fillna(
-            'NA')
+    # if 'properties' in sheets:
+    #     sheets['properties']['COUNTRY_CODE'] = sheets['properties']['COUNTRY_CODE'].fillna(
+    #         'NA')
     extract_notes('control', sheets['control'])
 
     # 2. List of sheets that provide extra vehicle properties
@@ -79,7 +79,7 @@ def load_master_data(excel_path):
         'graphics_properties', 'roster'
     ]
 
-    text_columns = ['COUNTRY', 'COUNTRY_CODE', 'ITEM',
+    text_columns = ['ITEM',
                     'NAME', 'VEHIDCODE', 'CARGODEF', 'WEB']
 
     for sheet_name in data_sheets:
@@ -114,7 +114,7 @@ def load_master_data(excel_path):
         copyright_txt = str(df_copyright.columns[0])
 
     # Final safety check before returning from load_master_data
-    df_master['COUNTRY_CODE'] = df_master['COUNTRY_CODE'].fillna('NA')
+    # df_master['COUNTRY_CODE'] = df_master['COUNTRY_CODE'].fillna('NA')
 
     return df_master, df_cost_lookup, copyright_txt, notes_lookup
 
@@ -131,7 +131,7 @@ def get_badges(row: pd.Series) -> str:
     power = row['ENGINE_CLASS'].lower()
     if (is_true(row['IS_TURBINE'])):
         power = "turbine"
-    flag = row['COUNTRY_CODE'].upper()
+    # flag = row['COUNTRY_CODE'].upper()
     badges = []
     regions = []
     # attributes = [] # there's only one for now
@@ -161,8 +161,8 @@ def get_badges(row: pd.Series) -> str:
         badges.append(f"region/{region}")
 
     # Flags
-    if flag != "" and not is_true(row['IS_WAGON_OR_COACH']):
-        badges.append(f"flag/{flag}")
+    # if flag != "" and not is_true(row['IS_WAGON_OR_COACH']):
+    #     badges.append(f"flag/{flag}")
 
     # Power
     if vehidcode.startswith('mtro') or vehidcode.startswith('singlemtro'):
@@ -636,6 +636,7 @@ def generate_unified_items():
     for _, row in df_master.iterrows():
         if pd.isna(row['VEHIDCODE']) or is_true(row['EXCLUDE']):
             continue
+        VEHID_ID_INT = int(row['VEHID_ID'])
         VEHIDCODE_lcase = row['VEHIDCODE'].lower()
         veh_notes: dict = notes_lookup.get(VEHIDCODE_lcase, {})
         TEMPLATE_ID = row['TEMPLATE_ID']
@@ -742,7 +743,7 @@ def generate_unified_items():
             content.append(get_expanded_wagon_capacity_switch(row))
 
         # I've wholly failed to figure out why these two are special in a logical way so i'm just hardcoding them
-        if VEHIDCODE_lcase in ['rbd_germany_saxon_det_1_2', 'rbs_south_africa_csar_railmotor']:
+        if VEHID_ID_INT in [2021, 1005]:
             content.append(f"""switch(FEAT_TRAINS, SELF, switch_{VEHIDCODE_lcase}_capacity_position, position_in_vehid_chain % 2) {{
                 0: switch_{VEHIDCODE_lcase}_capacity_engine;
                 0;
