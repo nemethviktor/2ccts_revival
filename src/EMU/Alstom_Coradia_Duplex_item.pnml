@@ -28,7 +28,7 @@
 item(FEAT_TRAINS, item_emu_alstom_coradia_duplex) {
     property {
         name: string(str_emu_alstom_coradia_duplex);
-        climates_available: ((param_region_western_europe || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
+        climates_available: (((param_region_northern_europe || param_region_western_europe) || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1999,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 40;
@@ -51,7 +51,7 @@ item(FEAT_TRAINS, item_emu_alstom_coradia_duplex) {
         misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
         refit_cost: 0;
         ai_special_flag: AI_FLAG_PASSENGER | AI_FLAG_CARGO;
-        track_type: [STANDARD_GAUGE_RAILTYPE_OHLE];
+        track_type: [STANDARD_GAUGE_RAILTYPE_25KV, STANDARD_GAUGE_RAILTYPE_15KV, STANDARD_GAUGE_RAILTYPE_1500V];
         running_cost_base: RUNNING_COST_ELECTRIC;
         engine_class: ENGINE_CLASS_ELECTRIC;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
@@ -62,7 +62,7 @@ item(FEAT_TRAINS, item_emu_alstom_coradia_duplex) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/europe/western", "power/electric", "role/express_passenger"];
+	badges: ["region/europe/western", "region/europe/northern", "power/electric/ac", "role/express_passenger"];
 
     }
     graphics {

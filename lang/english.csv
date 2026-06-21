@@ -855,21 +855,21 @@ str_electric_ganz_mavag_vm14_v43,Ganz-MAVAG VM14 'V43'
 str_electric_alsthom_cp_2500,Alsthom CP 2500
 str_electric_alsthom_cp_2600,Alsthom CP 2600
 str_electric_zelc_20e_china_doll,ZELC 20E 'China Doll'
-str_electric_siemens_eurosprinter_es64f,Siemens EuroSprinter ES64F
+str_electric_siemens_eurosprinter_es64f,Siemens EuroSprinter ES64F4
 str_electric_devz_ds3,DEVZ DS3
 str_electric_skoda_47e,Skoda 47E
 str_electric_ansaldo___breda_c_f_e_491,Ansaldo - Breda C.F E.491
-str_electric_asea_electroputere_rb,ASEA/Electroputere Rb
+str_electric_asea_electroputere_rb,ASEA/Electroputere LE5100
 str_electric_cef_bb_1600,CEF BB 1600
-str_electric_br_85,BR 85
+str_electric_br_85,Doncaster AL5
 str_electric_ge_e60c_2,GE E60C-2
-str_electric_alstom_prima_ii,Alstom Prima II
+str_electric_alstom_prima_ii,Alstom E 1400
 str_electric_toshiba_ea,Toshiba EA
 str_electric_asea_gmd_gf6c,ASEA-GMD GF6C
 str_electric_alsthom_bb_22200,Alsthom BB 22200
 str_electric_gec_alsthom_bb_26000,GEC-Alsthom BB 26000
 str_electric_alsthom_bb_25500,Alsthom BB 25500
-str_electric_siemens_eurosprinter_es64u4,Siemens Eurosprinter ES64U4
+str_electric_siemens_eurosprinter_es64u4,Siemens EuroSprinter ES64U4
 str_electric_toshiba_eh500,Toshiba EH500
 str_electric_asea_emd_aem_7,ASEA-EMD AEM-7
 str_electric_bombardier_alstom_hhp_8,Bombardier-Alstom HHP-8
@@ -880,7 +880,7 @@ str_electric_tibb_e_550,TIBB E.550
 str_electric_hitachi_ef81,Hitachi EF81
 str_electric_abb_brush_class_92,ABB/Brush Class 92
 str_electric_siemens_acs_64,Siemens ACS-64
-str_electric_alsthom_cc_40101,Alsthom CC 40101
+str_electric_alsthom_cc_40101,Alsthom CC 40100
 str_electric_alsthom_class_13_hle,Alsthom Class 13 HLE
 str_dmu_lhb_vt_04_0_flying_hamburger,LHB VT 04.0 'Flying Hamburger'
 str_dmu_harland___wolf_silver_city_comet,Harland & Wolf 'Silver City Comet'
@@ -946,7 +946,7 @@ str_emu_talbot_plan_y,Talbot Plan Y
 str_emu_talbot_icm_4000,Talbot ICM 4000
 str_emu_talbot_dd_irm_virm_8000,Talbot DD-IRM 'VIRM' 8000
 str_emu_de_dietrich_adtranz_mddm_390,De Dietrich/Adtranz mDDm 390
-str_emu_aeg_ew90,AEG EW90
+str_emu_aeg_ew90,ET 165
 str_emu_breda_etr_200,Breda ETR.200
 str_emu_breda_etr_300_settebello,Breda ETR.300 'Settebello'
 str_emu_trevi_etr_500_frecciarossa,TREVI ETR.500 'Frecciarossa'
@@ -956,7 +956,7 @@ str_emu_asea_ew54,ASEA EW54
 str_emu_breda_ale_801,Breda ALe 801
 str_emu_sgp_aeg_bbc_4030,SGP/AEG/BBC 4030
 str_emu_elin_et_10,ELIN ET 10
-str_emu_stadler_4010_kiss,Stadler 4010 'KISS'
+str_emu_stadler_4010_kiss,Stadler 'KISS'
 str_emu_lhb_420,LHB 420
 str_emu_adtranz_bm73,Adtranz BM73
 str_emu_nebb_m65,NEBB M65
@@ -998,7 +998,7 @@ str_singlemtro_siemens___halske_budapest_1894_stock,Siemens & Halske Budapest 18
 str_singlemtro_chicago_l_northwest_elevated_1907_stock,Chicago L Northwest Elevated 1907 Stock
 str_singlemtro_berlin_u_bahn_c_ii,Berlin U-Bahn C II
 str_rbm_acme_corp__turbobus,ACME Corp. Turbobus
-str_mglv_siemens_eurosprinter_es64u4m,Siemens Eurosprinter ES64U4M
+str_mglv_siemens_eurosprinter_es64u4m,Siemens EuroSprinter ES64U4M
 str_mmu_siemens_thyssenkrupp_transrapid,Siemens-Thyssenkrupp Transrapid
 str_mmu_mistubishi_nippon_sharyo_mlx01_901,Mistubishi/Nippon Sharyo MLX01-901
 str_mglv_wagon_gen7m_boxcar_type1,7th Gen Boxcar [Food]
@@ -1037,7 +1037,7 @@ str_electric_sig_alioth_de_2_2,SIG Alioth De 2/2
 str_electric_toshiba_eh10,Toshiba EH10
 str_electric_kawasaki_toshiba_ef64,Kawasaki/Toshiba EF64
 str_electric_eec_eo_class,EEC EO Class
-str_electric_tulloch_0_6_0dm_w_class,Tulloch 0-6-0DM 'W' Class
+str_electric_tulloch_0_6_0dm_w_class,Tulloch 0-6-0DM 'W' Class DNU WRONG
 str_electric_gec_nblc_sar_4e_,GEC/NBLC SAR 4E
 str_electric_metrowick_mv_5e1,Metrowick MV 5E1
 str_electric_ucw_6e,UCW 6E
@@ -1441,3 +1441,5 @@ str_electric_groupement_50_hz_wam_1,Groupement 50 Hz WAM 1
 str_diesel_baldwin_lima_hamilton_rf_615_e,Baldwin-Lima-Hamilton RF-615-E
 str_diesel_ee_dick__kerr___co_vulcan_foundry_de2,"EE/Dick, Kerr & Co/Vulcan Foundry DE2"
 str_electric_ingeteam_td2000_series,Ingeteam TD2000 series
+str_diesel_tulloch_0_6_0dm_w_class,Tulloch 0-6-0DM 'W' Class
+str_diesel_ingeteam_td2000_series,Ingeteam TD2000 series

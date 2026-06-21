@@ -9,6 +9,7 @@
 // Notes:
 //// WEIGHT: 68 -- Not 38t; that's a simplified 380 total/10 cars division, but unlikely
 //// TE_STARTING_KN: =220/2 -- Gemini says 220 for the total set but unclear otherwise. "optimized for the 3.5% ramps of the LGV"
+//// REGION2: AFRICA -- Morocco
 
 
 // Cargo capacity
@@ -29,7 +30,7 @@
 item(FEAT_TRAINS, item_emu_alsthom_tgv_duplex) {
     property {
         name: string(str_emu_alsthom_tgv_duplex);
-        climates_available: ((param_region_western_europe || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
+        climates_available: ((param_region_western_europe || param_region_africa) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1995,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 40;
@@ -52,7 +53,7 @@ item(FEAT_TRAINS, item_emu_alsthom_tgv_duplex) {
         misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
         refit_cost: 0;
         ai_special_flag: AI_FLAG_PASSENGER | AI_FLAG_CARGO;
-        track_type: [STANDARD_GAUGE_RAILTYPE_OHLE];
+        track_type: [STANDARD_GAUGE_RAILTYPE_25KV, STANDARD_GAUGE_RAILTYPE_1500V];
         running_cost_base: RUNNING_COST_ELECTRIC;
         engine_class: ENGINE_CLASS_ELECTRIC;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, -3, DISABLE_WAGON_POWER);
@@ -63,7 +64,7 @@ item(FEAT_TRAINS, item_emu_alsthom_tgv_duplex) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/europe/western", "power/electric", "role/ultra_high_speed__universal_"];
+	badges: ["region/africa", "region/europe/western", "power/electric/ac", "role/ultra_high_speed__universal_"];
 
     }
     graphics {

@@ -6,6 +6,10 @@
 // Template: TPL_02A.
 // Data from: https://fr.wikipedia.org/wiki/ONCF_ZMC
 
+// Notes:
+//// REGION2: WESTERN_EUROPE -- Belgium
+
+
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_emu_bn_acec_zmc_capacity_engine, cargo_classes) { \
@@ -24,7 +28,7 @@
 item(FEAT_TRAINS, item_emu_bn_acec_zmc) {
     property {
         name: string(str_emu_bn_acec_zmc);
-        climates_available: ((param_region_africa || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
+        climates_available: ((param_region_africa || param_region_western_europe) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1984,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 46;
@@ -58,7 +62,7 @@ item(FEAT_TRAINS, item_emu_bn_acec_zmc) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/africa", "power/electric/dc", "role/express_passenger"];
+	badges: ["region/africa", "region/europe/western", "power/electric/dc", "role/express_passenger"];
 
     }
     graphics {

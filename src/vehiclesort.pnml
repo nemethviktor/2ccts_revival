@@ -279,6 +279,7 @@ item_diesel_gm_gt_26_w__040dg_, /*Year: 1950*/ \
 item_diesel_islington_railway_workshops_sar_900, /*Year: 1951*/ \
 item_diesel_emd_clyde_a16c, /*Year: 1951*/ \
 item_diesel_afe_1500, /*Year: 1952*/ \
+item_diesel_tulloch_0_6_0dm_w_class, /*Year: 1952*/ \
 item_diesel_fm_h_24_66_trainmaster, /*Year: 1953*/ \
 item_diesel_br_class_08_0_6_0de, /*Year: 1953*/ \
 item_diesel_bth_41_class, /*Year: 1953*/ \
@@ -419,6 +420,7 @@ item_diesel_vossloh_espana___emd_334, /*Year: 2006*/ \
 item_diesel_cargonet_312, /*Year: 2006*/ \
 item_diesel_ge_crrc_qishuyan_es59aci, /*Year: 2008*/ \
 item_diesel_ge_pacific_c44esaci, /*Year: 2008*/ \
+item_diesel_ingeteam_td2000_series, /*Year: 2008*/ \
 item_diesel_ge_es40aci, /*Year: 2009*/ \
 item_diesel_voith_gravita_10_bb, /*Year: 2010*/ \
 item_diesel_voith_maxima_40_cc, /*Year: 2010*/ \
@@ -479,7 +481,6 @@ item_electric_ge_w_1, /*Year: 1947*/ \
 item_electric_ge_el_2b, /*Year: 1948*/ \
 item_electric_alsthom_e_700, /*Year: 1948*/ \
 item_electric_efe_e_29, /*Year: 1949*/ \
-item_electric_tulloch_0_6_0dm_w_class, /*Year: 1952*/ \
 item_electric_gec_nblc_sar_4e_, /*Year: 1952*/ \
 item_electric_lew_el2, /*Year: 1952*/ \
 item_electric_asea_dm3, /*Year: 1953*/ \
@@ -576,7 +577,6 @@ item_electric_alstom_crrc_datong_hxd2, /*Year: 2007*/ \
 item_electric_alstom_crrc_datong_hxd2b, /*Year: 2007*/ \
 item_electric_skoda_109e, /*Year: 2008*/ \
 item_electric_siemens_e40_ag_v1, /*Year: 2008*/ \
-item_electric_ingeteam_td2000_series, /*Year: 2008*/ \
 item_electric_alstom_prima_ii, /*Year: 2010*/ \
 item_electric_trtrans_nevz_ep20, /*Year: 2011*/ \
 item_electric_stadler_butler_eem_923, /*Year: 2012*/ \

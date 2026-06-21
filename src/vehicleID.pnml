@@ -2718,8 +2718,8 @@ item(FEAT_TRAINS, item_diesel_fablok_6d, 5195) {}
 item(FEAT_TRAINS, item_diesel_hcp_301d, 5196) {}
 item(FEAT_TRAINS, item_diesel_baldwin_lima_hamilton_rf_615_e, 5197) {}
 item(FEAT_TRAINS, item_diesel_ee_dick__kerr___co_vulcan_foundry_de2, 5198) {}
-// 5199 free
-// 5200 free
+item(FEAT_TRAINS, item_diesel_ingeteam_td2000_series, 5199) {}
+item(FEAT_TRAINS, item_diesel_tulloch_0_6_0dm_w_class, 5200) {}
 // 5201 free
 // 5202 free
 // 5203 free
@@ -3601,7 +3601,7 @@ item(FEAT_TRAINS, item_electric_nippon_sharyo_deki_400, 6075) {}
 item(FEAT_TRAINS, item_electric_asea_f, 6076) {}
 item(FEAT_TRAINS, item_electric_breda_e_424, 6077) {}
 item(FEAT_TRAINS, item_electric_slm_bbc_mfo_ge_4_4_i, 6078) {}
-item(FEAT_TRAINS, item_electric_tulloch_0_6_0dm_w_class, 6079) {}
+// item(FEAT_TRAINS, item_electric_tulloch_0_6_0dm_w_class, 6079) {} // vehicle is excluded
 item(FEAT_TRAINS, item_electric_gec_nblc_sar_4e_, 6080) {}
 item(FEAT_TRAINS, item_electric_toshiba_eh10, 6081) {}
 item(FEAT_TRAINS, item_electric_bn_acec_25_5, 6082) {}
@@ -3688,7 +3688,7 @@ item(FEAT_TRAINS, item_electric_gec_9e, 6162) {}
 item(FEAT_TRAINS, item_electric_hitachi_e1100, 6163) {}
 item(FEAT_TRAINS, item_electric_rdso_clw_wam_4, 6164) {}
 item(FEAT_TRAINS, item_electric_groupement_50_hz_wam_1, 6165) {}
-item(FEAT_TRAINS, item_electric_ingeteam_td2000_series, 6166) {}
+// 6166 free
 // 6167 free
 // 6168 free
 // 6169 free

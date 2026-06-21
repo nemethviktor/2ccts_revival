@@ -36,7 +36,7 @@ item(FEAT_TRAINS, item_electric_cef_bb_1600) {
         misc_flags: bitmask(TRAIN_FLAG_2CC);
         refit_cost: 0;
         ai_special_flag: AI_FLAG_PASSENGER | AI_FLAG_CARGO;
-        track_type: [STANDARD_GAUGE_RAILTYPE_25KV];
+        track_type: [STANDARD_GAUGE_RAILTYPE_1500V];
         running_cost_base: RUNNING_COST_ELECTRIC;
         engine_class: ENGINE_CLASS_ELECTRIC;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
@@ -47,7 +47,7 @@ item(FEAT_TRAINS, item_electric_cef_bb_1600) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/africa", "power/electric/ac", "role/universal"];
+	badges: ["region/africa", "power/electric/dc", "role/universal"];
 
     }
     graphics {

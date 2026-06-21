@@ -29,7 +29,7 @@
 item(FEAT_TRAINS, item_emu_alstom_avelia_horizon) {
     property {
         name: string(str_emu_alstom_avelia_horizon);
-        climates_available: ((param_region_southern_europe || 0) && param_concept) ? ALL_CLIMATES : NO_CLIMATE;
+        climates_available: ((param_region_southern_europe || param_region_africa) && param_concept) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(2015,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 45;
@@ -63,7 +63,7 @@ item(FEAT_TRAINS, item_emu_alstom_avelia_horizon) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/europe/southern", "power/electric", "role/ultra_high_speed__pax_"];
+	badges: ["region/africa", "region/europe/southern", "power/electric", "role/ultra_high_speed__pax_"];
 
     }
     graphics {

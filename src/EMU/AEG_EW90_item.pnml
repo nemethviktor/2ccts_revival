@@ -24,7 +24,7 @@
 item(FEAT_TRAINS, item_emu_aeg_ew90) {
     property {
         name: string(str_emu_aeg_ew90);
-        climates_available: ((param_region_eastern_europe || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
+        climates_available: (((param_region_asia || param_region_eastern_europe) || param_region_western_europe) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1924,1,1);
         model_life: 45;
         vehicle_life: 73;
@@ -47,7 +47,7 @@ item(FEAT_TRAINS, item_emu_aeg_ew90) {
         misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
         refit_cost: 0;
         ai_special_flag: AI_FLAG_PASSENGER | AI_FLAG_CARGO;
-        track_type: [STANDARD_GAUGE_RAILTYPE_1500V];
+        track_type: [STANDARD_GAUGE_RAILTYPE_1500V, STANDARD_GAUGE_RAILTYPE_3RD, BROAD_GAUGE_RAILTYPE_1500V, BROAD_GAUGE_RAILTYPE_3RD];
         running_cost_base: RUNNING_COST_ELECTRIC;
         engine_class: ENGINE_CLASS_ELECTRIC;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
@@ -58,7 +58,7 @@ item(FEAT_TRAINS, item_emu_aeg_ew90) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/europe/eastern", "power/electric/dc", "role/commuter_urban"];
+	badges: ["region/asia", "region/europe/western", "region/europe/eastern", "power/electric/dc", "role/commuter_urban"];
 
     }
     graphics {

@@ -1118,6 +1118,12 @@
 #include "src/Diesel/EE_Dick__Kerr___Co_Vulcan_Foundry_DE2_graphics.pnml"
 #include "src/Diesel/EE_Dick__Kerr___Co_Vulcan_Foundry_DE2_item.pnml"
 
+#include "src/Diesel/Ingeteam_TD2000_series_graphics.pnml"
+#include "src/Diesel/Ingeteam_TD2000_series_item.pnml"
+
+#include "src/Diesel/Tulloch_0_6_0DM_W_Class_graphics.pnml"
+#include "src/Diesel/Tulloch_0_6_0DM_W_Class_item.pnml"
+
 
 //// EMU
 #include "src/EMU/Werkspoor_Mat24_graphics.pnml"
@@ -1623,9 +1629,6 @@
 #include "src/Electric/SLM_BBC_MFO_Ge_4_4_I_graphics.pnml"
 #include "src/Electric/SLM_BBC_MFO_Ge_4_4_I_item.pnml"
 
-#include "src/Electric/Tulloch_0_6_0DM_W_Class_graphics.pnml"
-#include "src/Electric/Tulloch_0_6_0DM_W_Class_item.pnml"
-
 #include "src/Electric/GEC_NBLC_SAR_4E__graphics.pnml"
 #include "src/Electric/GEC_NBLC_SAR_4E__item.pnml"
 
@@ -1880,9 +1883,6 @@
 
 #include "src/Electric/Groupement_50_Hz_WAM_1_graphics.pnml"
 #include "src/Electric/Groupement_50_Hz_WAM_1_item.pnml"
-
-#include "src/Electric/Ingeteam_TD2000_series_graphics.pnml"
-#include "src/Electric/Ingeteam_TD2000_series_item.pnml"
 
 #include "src/Electric/BRC_W_London_1903_Stock_graphics.pnml"
 #include "src/Electric/BRC_W_London_1903_Stock_item.pnml"
