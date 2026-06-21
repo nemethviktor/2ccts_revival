@@ -3688,10 +3688,10 @@ item(FEAT_TRAINS, item_electric_gec_9e, 6162) {}
 item(FEAT_TRAINS, item_electric_hitachi_e1100, 6163) {}
 item(FEAT_TRAINS, item_electric_rdso_clw_wam_4, 6164) {}
 item(FEAT_TRAINS, item_electric_groupement_50_hz_wam_1, 6165) {}
-// 6166 free
-// 6167 free
-// 6168 free
-// 6169 free
+item(FEAT_TRAINS, item_electric_ge_289_boxcab, 6166) {}
+item(FEAT_TRAINS, item_electric_alsthom_ec_386, 6167) {}
+item(FEAT_TRAINS, item_electric_chesta_casagrande_e650, 6168) {}
+item(FEAT_TRAINS, item_electric_breda_marelli_e32, 6169) {}
 // 6170 free
 // 6171 free
 // 6172 free

@@ -2,7 +2,7 @@
 
 # Hardcoded Strings
 STR_GRF_NAME                                                      :{TITLE}
-STR_GRF_DESCRIPTION                                               :{SILVER}2cc Trains of the World in NML {}{}(c)2ccts Revival {}License GPLv2 or higher. {}See readme for details.{}{SILVER}Build: 2026-06-21-11:16:32
+STR_GRF_DESCRIPTION                                               :{SILVER}2cc Trains of the World in NML {}{}(c)2ccts Revival {}License GPLv2 or higher. {}See readme for details.{}{SILVER}Build: 2026-06-21-17:31:18
 STR_GRF_URL                                                       :https://github.com/nemethviktor/2ccts_revival
 STR_USED_WITH_DYNAMIC_ENGINES                                     :dynamic_engines = true (setting in openttd.cfg)
 STR_ERROR_REGION                                                  :No regions enabled, {STRING} has been disabled
@@ -1025,6 +1025,10 @@ str_electric_gec_9e                                               :GEC 9E (Elect
 str_electric_hitachi_e1100                                        :Hitachi E1100 (Electric, 3kV DC)
 str_electric_rdso_clw_wam_4                                       :RDSO/CLW WAM-4 (Electric, 25kV AC)
 str_electric_groupement_50_hz_wam_1                               :Groupement 50 Hz WAM 1 (Electric, 25kV AC)
+str_electric_ge_289_boxcab                                        :GE 289A Boxcab (Electric, 1500V DC)
+str_electric_alsthom_ec_386                                       :Alsthom EC 386 (Electric, 3kV DC)
+str_electric_chesta_casagrande_e650                               :Chesta Casagrande E650 (Electric, 1500V DC)
+str_electric_breda_marelli_e32                                    :Breda Marelli E32 (Electric, 3kV DC)
 
 # Electricrailbus
 str_rbe_slm_cfe_3_3                                               :SLM CFe 3/3 (Electric Railbus, 1500V DC)
@@ -1185,7 +1189,7 @@ str_mtro_bombardier_boston_01800                                  :Bombardier Bo
 str_mtro_breda_la_a650                                            :Breda LA A650 (Metro, Electric 3rd Rail)
 str_mtro_kawasaki_taipei_c301                                     :Kawasaki Taipei C301 (Metro, Electric 3rd Rail)
 str_mtro_gec_alsthom_paris_mp89                                   :GEC-Alsthom Paris MP89 (Metro, Electric 3rd Rail)
-str_mtro_caf_amsterdam_s3_90                                      :CAF Amsterdam S3 90 (Metro, Electric Dual-Pickup)
+str_mtro_caf_amsterdam_s3_90                                      :CAF Amsterdam S3 90 (Metro, Electric 1500V DC, 3rd Rail)
 str_mtro_mmz_moscow_81_740                                        :MMZ Moscow 81-740 (Metro, Electric 3rd Rail)
 str_mtro_alstom_singapore_c830_metropolis                         :Alstom Singapore C830 'Metropolis' (Metro, Electric 3rd Rail)
 str_mtro_siemens_oslo_mx3000                                      :Siemens Oslo MX3000 (Metro, Electric 3rd Rail)
@@ -1226,7 +1230,7 @@ str_mtro_metro_wagon_unpowered                                    :Metro Unit Wa
 str_mtro_metro_wagon_powered                                      :Metro Unit Wagon (Powered)
 
 # Metrorailbus
-str_singlemtro_brooklyn_union_gate_1300                           :Brooklyn Union Gate 1300 (Single Unit Metro, Electric Dual-Pickup)
+str_singlemtro_brooklyn_union_gate_1300                           :Brooklyn Union Gate 1300 (Single Unit Metro, Electric 15kV AC, 3rd Rail)
 str_singlemtro_siemens___halske_budapest_1894_stock               :Siemens & Halske Budapest 1894 Stock (Single Unit Metro, Electric 3rd Rail)
 str_singlemtro_chicago_l_northwest_elevated_1907_stock            :Chicago L Northwest Elevated 1907 Stock (Single Unit Metro, Electric 3rd Rail)
 str_singlemtro_berlin_u_bahn_c_ii                                 :Berlin U-Bahn C II (Single Unit Metro, Electric 3rd Rail)

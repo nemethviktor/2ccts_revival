@@ -453,6 +453,7 @@ item_electric_krauss_wasseg_e_91_9, /*Year: 1925*/ \
 item_electric_werkspoor_ess_3200, /*Year: 1925*/ \
 item_electric_westinghouse_6woe_b1, /*Year: 1926*/ \
 item_electric_cef_bb_1600, /*Year: 1926*/ \
+item_electric_ge_289_boxcab, /*Year: 1927*/ \
 item_electric_elin_floridsdorf_1161, /*Year: 1928*/ \
 item_electric_vulcan_foundry_slm_ef_1, /*Year: 1928*/ \
 item_electric_slm_bbc_1_d_1, /*Year: 1929*/ \
@@ -498,6 +499,7 @@ item_electric_groupement_50_hz_wam_1, /*Year: 1960*/ \
 item_electric_tibb_e_646, /*Year: 1961*/ \
 item_electric_skoda_29e, /*Year: 1961*/ \
 item_electric_br_85, /*Year: 1961*/ \
+item_electric_breda_marelli_e32, /*Year: 1961*/ \
 item_electric_english_electric_e__aei_e_, /*Year: 1962*/ \
 item_electric_ge_c_c_4400_rffsa, /*Year: 1962*/ \
 item_electric_devz_vl41, /*Year: 1963*/ \
@@ -544,6 +546,7 @@ item_electric_asea_gmd_gf6c, /*Year: 1983*/ \
 item_electric_skoda_82e, /*Year: 1983*/ \
 item_electric_comeng_86_class, /*Year: 1983*/ \
 item_electric_nevz_tevz_vl15, /*Year: 1984*/ \
+item_electric_alsthom_ec_386, /*Year: 1984*/ \
 item_electric_general_motors_gm5fc, /*Year: 1985*/ \
 item_electric_toshiba_10e, /*Year: 1985*/ \
 item_electric_kawasaki_6k, /*Year: 1986*/ \
@@ -577,6 +580,7 @@ item_electric_alstom_crrc_datong_hxd2, /*Year: 2007*/ \
 item_electric_alstom_crrc_datong_hxd2b, /*Year: 2007*/ \
 item_electric_skoda_109e, /*Year: 2008*/ \
 item_electric_siemens_e40_ag_v1, /*Year: 2008*/ \
+item_electric_chesta_casagrande_e650, /*Year: 2008*/ \
 item_electric_alstom_prima_ii, /*Year: 2010*/ \
 item_electric_trtrans_nevz_ep20, /*Year: 2011*/ \
 item_electric_stadler_butler_eem_923, /*Year: 2012*/ \

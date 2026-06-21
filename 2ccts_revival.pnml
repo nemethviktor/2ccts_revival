@@ -1884,6 +1884,18 @@
 #include "src/Electric/Groupement_50_Hz_WAM_1_graphics.pnml"
 #include "src/Electric/Groupement_50_Hz_WAM_1_item.pnml"
 
+#include "src/Electric/GE_289_Boxcab_graphics.pnml"
+#include "src/Electric/GE_289_Boxcab_item.pnml"
+
+#include "src/Electric/Alsthom_EC_386_graphics.pnml"
+#include "src/Electric/Alsthom_EC_386_item.pnml"
+
+#include "src/Electric/Chesta_Casagrande_E650_graphics.pnml"
+#include "src/Electric/Chesta_Casagrande_E650_item.pnml"
+
+#include "src/Electric/Breda_Marelli_E32_graphics.pnml"
+#include "src/Electric/Breda_Marelli_E32_item.pnml"
+
 #include "src/Electric/BRC_W_London_1903_Stock_graphics.pnml"
 #include "src/Electric/BRC_W_London_1903_Stock_item.pnml"
 

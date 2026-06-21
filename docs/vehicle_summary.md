@@ -447,6 +447,7 @@
 | ![Werkspoor ESS 3200](vehicle_graphics/str_electric_werkspoor_ess_3200.png) | Werkspoor ESS 3200 | 1925 | 120 / 74 | 1026 / 764 | Express | 0 | NARROW_1500V | Oceania | No |
 | ![CEF BB 1600](vehicle_graphics/str_electric_cef_bb_1600.png) | CEF BB 1600 | 1926 | 90 / 55 | 986 / 735 | Universal | 0 | STANDARD_1500V | Africa | No |
 | ![Westinghouse 6wOE B1](vehicle_graphics/str_electric_westinghouse_6woe_b1.png) | Westinghouse 6wOE B1 | 1926 | 40 / 24 | 700 / 521 | Shunting | 0 | STANDARD_15KV, STANDARD_3RD | North America | No |
+| ![GE 289A Boxcab](vehicle_graphics/str_electric_ge_289_boxcab.png) | GE 289A Boxcab | 1927 | 25 / 15 | 970 / 723 | Shunting | 0 | NARROW_1500V | South America | No |
 | ![ELIN/Floridsdorf 1161](vehicle_graphics/str_electric_elin_floridsdorf_1161.png) | ELIN/Floridsdorf 1161 | 1928 | 40 / 24 | 1000 / 745 | Shunting | 0 | STANDARD_15KV | Western Europe | No |
 | ![Vulcan Foundry-SLM EF/1](vehicle_graphics/str_electric_vulcan_foundry_slm_ef_1.png) | Vulcan Foundry-SLM EF/1 | 1928 | 80 / 49 | 2600 / 1938 | Universal | 0 | BROAD_1500V | Asia | No |
 | ![SLM-BBC 1-D-1](vehicle_graphics/str_electric_slm_bbc_1_d_1.png) | SLM-BBC 1-D-1 | 1929 | 105 / 65 | 2520 / 1878 | Universal | 0 | BROAD_3KV | South America | No |
@@ -489,6 +490,7 @@
 | ![BN/ACEC 25.5](vehicle_graphics/str_electric_bn_acec_25_5.png) | BN/ACEC 25.5 | 1960 | 130 / 80 | 2520 / 1878 | Universal | 0 | STANDARD_3KV, STANDARD_1500V | Western Europe | No |
 | ![GE E44](vehicle_graphics/str_electric_ge_e44.png) | GE E44 | 1960 | 113 / 70 | 4400 / 3280 | Heavy Freight | 0 | STANDARD_15KV | North America | No |
 | ![Groupement 50 Hz WAM 1](vehicle_graphics/str_electric_groupement_50_hz_wam_1.png) | Groupement 50 Hz WAM 1 | 1960 | 112 / 69 | 3010 / 2244 | Universal | 0 | BROAD_25KV | Asia | No |
+| ![Breda Marelli E32](vehicle_graphics/str_electric_breda_marelli_e32.png) | Breda Marelli E32 | 1961 | 130 / 80 | 3600 / 2684 | Universal | 0 | BROAD_3KV | South America | No |
 | ![Doncaster AL5](vehicle_graphics/str_electric_br_85.png) | Doncaster AL5 | 1961 | 160 / 99 | 3200 / 2385 | Express | 0 | STANDARD_25KV | Northern Europe | No |
 | ![Skoda 29E](vehicle_graphics/str_electric_skoda_29e.png) | Skoda 29E | 1961 | 120 / 74 | 3755 / 2799 | Universal | 0 | BROAD_3KV | Asia, Eastern Europe | No |
 | ![TIBB E.646](vehicle_graphics/str_electric_tibb_e_646.png) | TIBB E.646 | 1961 | 140 / 86 | 5070 / 3780 | Universal | 0 | STANDARD_3KV | Southern Europe | No |
@@ -537,6 +539,7 @@
 | ![Comeng 86 Class](vehicle_graphics/str_electric_comeng_86_class.png) | Comeng 86 Class | 1983 | 130 / 80 | 3860 / 2878 | Universal | 0 | STANDARD_1500V | Oceania | No |
 | ![NEVZ VL85](vehicle_graphics/str_electric_nevz_vl85.png) | NEVZ VL85 | 1983 | 110 / 68 | 13438 / 10019 | Heavy Freight | 0 | BROAD_25KV | Asia, Eastern Europe | No |
 | ![Skoda 82E](vehicle_graphics/str_electric_skoda_82e.png) | Skoda 82E | 1983 | 160 / 99 | 8624 / 6430 | Express | 0 | BROAD_3KV | Asia, Eastern Europe | No |
+| ![Alsthom EC 386](vehicle_graphics/str_electric_alsthom_ec_386.png) | Alsthom EC 386 | 1984 | 90 / 55 | 3406 / 2539 | Universal | 0 | STANDARD_3KV, NARROW_3KV, BROAD_3KV | South America | No |
 | ![NEVZ-TEVZ VL15](vehicle_graphics/str_electric_nevz_tevz_vl15.png) | NEVZ-TEVZ VL15 | 1984 | 100 / 62 | 12070 / 8999 | Heavy Freight | 0 | BROAD_3KV | Asia, Eastern Europe | No |
 | ![General Motors GM5FC](vehicle_graphics/str_electric_general_motors_gm5fc.png) | General Motors GM5FC | 1985 | 90 / 55 | 5200 / 3877 | Heavy Freight | 0 | NARROW_25KV | Africa | No |
 | ![Toshiba 10E](vehicle_graphics/str_electric_toshiba_10e.png) | Toshiba 10E | 1985 | 90 / 55 | 4340 / 3235 | Universal | 0 | NARROW_3KV | Africa | No |
@@ -569,6 +572,7 @@
 | ![Toshiba/CNR Dalian HXD3](vehicle_graphics/str_electric_toshiba_cnr_dalian_hxd3.png) | Toshiba/CNR Dalian HXD3 | 2006 | 120 / 74 | 9700 / 7232 | Heavy Freight | 0 | STANDARD_25KV | Asia | No |
 | ![Alstom/CRRC Datong HXD2](vehicle_graphics/str_electric_alstom_crrc_datong_hxd2.png) | Alstom/CRRC Datong HXD2 | 2007 | 120 / 74 | 13000 / 9692 | Heavy Freight | 0 | STANDARD_25KV | Asia | No |
 | ![Alstom/CRRC Datong HXD2B](vehicle_graphics/str_electric_alstom_crrc_datong_hxd2b.png) | Alstom/CRRC Datong HXD2B | 2007 | 120 / 74 | 12900 / 9618 | Heavy Freight | 0 | STANDARD_25KV, BROAD_25KV | Asia, Eastern Europe | No |
+| ![Chesta Casagrande E650](vehicle_graphics/str_electric_chesta_casagrande_e650.png) | Chesta Casagrande E650 | 2008 | 30 / 18 | 1140 / 849 | Shunting | 0 | NARROW_1500V | South America | No |
 | ![Siemens E40 AG-V1](vehicle_graphics/str_electric_siemens_e40_ag_v1.png) | Siemens E40 AG-V1 | 2008 | 80 / 49 | 5360 / 3996 | Universal | 0 | NARROW_25KV | Oceania | No |
 | ![Skoda 109E](vehicle_graphics/str_electric_skoda_109e.png) | Skoda 109E | 2008 | 200 / 124 | 8583 / 6399 | Express | 0 | STANDARD_25KV, STANDARD_3KV, STANDARD_1500V | Eastern Europe | No |
 | ![Alstom E 1400](vehicle_graphics/str_electric_alstom_prima_ii.png) | Alstom E 1400 | 2010 | 160 / 99 | 8600 / 6412 | Express | 0 | STANDARD_25KV, STANDARD_3KV | Africa | No |
@@ -778,7 +782,7 @@
 | ![MMZ Moscow 81-717.5M](vehicle_graphics/str_mtro_mmz_moscow_81_717_5m.png) | MMZ Moscow 81-717.5M | 1993 | 90 / 55 | 1180 / 879 | Metro | 288 | BROAD_3RD | Asia | No |
 | ![Adtranz Berlin BVG H](vehicle_graphics/str_mtro_adtranz_berlin_bvg_h.png) | Adtranz Berlin BVG H | 1996 | 80 / 49 | 2900 / 2162 | Metro | 248 | STANDARD_3RD | Western Europe | No |
 | ![GEC-Alsthom Santiago NS-93](vehicle_graphics/str_mtro_gec_alsthom_santiago_ns_93.png) | GEC-Alsthom Santiago NS-93 | 1996 | 100 / 62 | 2400 / 1789 | Metro | 320 | STANDARD_3RD | South America | No |
-| ![CAF Amsterdam S3 90](vehicle_graphics/str_mtro_caf_amsterdam_s3_90.png) | CAF Amsterdam S3 90 | 1997 | 70 / 43 | 1020 / 760 | Metro | 250 | STANDARD_DUAL | Western Europe | No |
+| ![CAF Amsterdam S3 90](vehicle_graphics/str_mtro_caf_amsterdam_s3_90.png) | CAF Amsterdam S3 90 | 1997 | 70 / 43 | 1020 / 760 | Metro | 250 | STANDARD_1500V, STANDARD_3RD | Western Europe | No |
 | ![GEC-Alsthom Paris MP89](vehicle_graphics/str_mtro_gec_alsthom_paris_mp89.png) | GEC-Alsthom Paris MP89 | 1997 | 80 / 49 | 2680 / 1998 | Metro | 240 | STANDARD_3RD | Western Europe | No |
 | ![AEG Pyongyang D](vehicle_graphics/str_mtro_aeg_pyongyang_d.png) | AEG Pyongyang D | 1999 | 70 / 43 | 800 / 596 | Metro | 320 | STANDARD_3RD | Asia | No |
 | ![CAF Rome S/300](vehicle_graphics/str_mtro_caf_rome_s_300.png) | CAF Rome S/300 | 1999 | 80 / 49 | 1650 / 1230 | Metro | 420 | STANDARD_3RD | Southern Europe | No |
@@ -801,7 +805,7 @@
 
 | Graphics | Name | Intro | Speed kmh / mph | Power hp/kW | Role | Cap | Track Types | Regions | Concept? |
 | :---: | :--- | :---: | :---: | :---: | :--- | :---: | :--- | :--- | :--- |
-| ![Brooklyn Union Gate 1300](vehicle_graphics/str_singlemtro_brooklyn_union_gate_1300.png) | Brooklyn Union Gate 1300 | 1880 | 50 / 31 | 200 / 149 | Metro | 48 | STANDARD_DUAL | North America | No |
+| ![Brooklyn Union Gate 1300](vehicle_graphics/str_singlemtro_brooklyn_union_gate_1300.png) | Brooklyn Union Gate 1300 | 1880 | 50 / 31 | 200 / 149 | Metro | 48 | STANDARD_15KV, STANDARD_3RD | North America | No |
 | ![Siemens & Halske Budapest 1894 Stock](vehicle_graphics/str_singlemtro_siemens___halske_budapest_1894_stock.png) | Siemens & Halske Budapest 1894 Stock | 1903 | 60 / 37 | 200 / 149 | Metro | 46 | STANDARD_3RD | Eastern Europe | No |
 | ![Chicago L Northwest Elevated 1907 Stock](vehicle_graphics/str_singlemtro_chicago_l_northwest_elevated_1907_stock.png) | Chicago L Northwest Elevated 1907 Stock | 1907 | 70 / 43 | 250 / 186 | Metro | 130 | STANDARD_3RD | North America | No |
 | ![Berlin U-Bahn C II](vehicle_graphics/str_singlemtro_berlin_u_bahn_c_ii.png) | Berlin U-Bahn C II | 1929 | 60 / 37 | 375 / 279 | Metro | 157 | STANDARD_3RD | Western Europe | No |

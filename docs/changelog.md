@@ -67,6 +67,10 @@
     - `Groupement 50 Hz WAM 1` (from the `Tropical Refurbishment Set`)
     - `Baldwin-Lima-Hamilton RF-615-E` (from the `Tropical Refurbishment Set`)
     - `EE/Dick, Kerr & Co/Vulcan Foundry DE2` (from the `Tropical Refurbishment Set`)    
+    - `GE 289A Boxcab`
+    - `Alsthom EC 386`
+    - `Chesta Casagrande E650`
+    - `Breda Marelli E32`    
     - Added some future trains from the Dutch Trainset.
     - Added some of the maglevs from the original OpenTTD game.
   Further changes from Discord discussion: [most of these have been amended but not 100%. the below is a copypaste of suggestions]
