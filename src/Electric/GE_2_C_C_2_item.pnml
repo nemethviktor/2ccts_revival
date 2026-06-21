@@ -13,7 +13,7 @@
 item(FEAT_TRAINS, item_electric_ge_2_c_c_2) {
     property {
         name: string(str_electric_ge_2_c_c_2);
-        climates_available: (((param_region_north_america || param_region_south_america) || (param_region_asia || param_region_eastern_europe)) && 1) ? ALL_CLIMATES : NO_CLIMATE;
+        climates_available: ((param_region_south_america || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1940,1,1);
         model_life: 45;
         vehicle_life: 58;
@@ -47,7 +47,7 @@ item(FEAT_TRAINS, item_electric_ge_2_c_c_2) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/asia", "region/america/northern", "region/america/south", "region/europe/eastern", "power/electric/dc", "role/universal"];
+	badges: ["region/america/south", "power/electric/dc", "role/freight"];
 
     }
     graphics {

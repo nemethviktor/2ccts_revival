@@ -2720,7 +2720,7 @@ item(FEAT_TRAINS, item_diesel_baldwin_lima_hamilton_rf_615_e, 5197) {}
 item(FEAT_TRAINS, item_diesel_ee_dick__kerr___co_vulcan_foundry_de2, 5198) {}
 item(FEAT_TRAINS, item_diesel_ingeteam_td2000_series, 5199) {}
 item(FEAT_TRAINS, item_diesel_tulloch_0_6_0dm_w_class, 5200) {}
-// 5201 free
+item(FEAT_TRAINS, item_diesel_ge_es58aci, 5201) {}
 // 5202 free
 // 5203 free
 // 5204 free

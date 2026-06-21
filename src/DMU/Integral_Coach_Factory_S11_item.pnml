@@ -28,7 +28,7 @@ item(FEAT_TRAINS, item_dmu_integral_coach_factory_s11) {
         introduction_date: date(2011,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 25;
-        retire_early: 0;
+        retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         cost_factor: 42.74213;
         running_cost_factor: 40.31144;
@@ -50,7 +50,7 @@ item(FEAT_TRAINS, item_dmu_integral_coach_factory_s11) {
         track_type: [BROAD_GAUGE_RAILTYPE_NONE];
         running_cost_base: RUNNING_COST_DIESEL;
         engine_class: ENGINE_CLASS_DIESEL;
-        visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+        visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 0, DISABLE_WAGON_POWER);
 
         sprite_id: SPRITE_ID_NEW_TRAIN;
         dual_headed: 1;
@@ -58,7 +58,7 @@ item(FEAT_TRAINS, item_dmu_integral_coach_factory_s11) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/asia", "role/coach__commuter_"];
+	badges: ["region/asia", "power/diesel", "role/commuter_urban"];
 
     }
     graphics {
@@ -67,7 +67,7 @@ item(FEAT_TRAINS, item_dmu_integral_coach_factory_s11) {
         visual_effect_and_powered: switch_dmu_integral_coach_factory_s11_visual_effect_and_powered;
         // no 'length'
         // no 'articulated_part'
-        // no 'can_attach'
+        can_attach_wagon: switch_can_attach_vehicle;
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
         // PURCHASETEXT_SWITCH_CALL // this is actually blank

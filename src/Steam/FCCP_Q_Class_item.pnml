@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_steam_fccp_q_class) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/america/south", "power/steam", "role/universal"];
+	badges: ["region/america/south", "power/steam", "role/light_freight"];
 
     }
     graphics {

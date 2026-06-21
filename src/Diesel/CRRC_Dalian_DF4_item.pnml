@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_diesel_crrc_dalian_df4) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/asia", "power/diesel", "role/universal"];
+	badges: ["region/asia", "power/diesel", "role/freight"];
 
     }
     graphics {

@@ -109,6 +109,8 @@ Graphics for this set:
 - Emperor Jake
 - SosMakaroni
 - Ragin
+- Pitagoras991
+- Some of the power badges are from the 8bit badge set (by Althonos)
 
 Graphics from the original 2cc Trainset:
 

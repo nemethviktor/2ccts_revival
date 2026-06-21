@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_steam_union_giesserei_2_8_2t) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/europe/western", "power/steam", "role/universal"];
+	badges: ["region/europe/western", "power/steam", "role/light_freight"];
 
     }
     graphics {

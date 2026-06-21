@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_diesel_alco_ae_goodwin_dl531_532) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/africa", "region/asia", "region/america/northern", "region/america/south", "region/europe/southern", "region/europe/western", "region/europe/eastern", "region/europe/northern", "region/oceania", "power/diesel", "role/universal"];
+	badges: ["region/africa", "region/asia", "region/america/northern", "region/america/south", "region/europe/southern", "region/europe/western", "region/europe/eastern", "region/europe/northern", "region/oceania", "power/diesel", "role/light_freight"];
 
     }
     graphics {

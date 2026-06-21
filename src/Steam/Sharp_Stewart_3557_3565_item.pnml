@@ -10,9 +10,9 @@ item(FEAT_TRAINS, item_steam_sharp_stewart_3557_3565) {
     property {
         name: string(str_steam_sharp_stewart_3557_3565);
         climates_available: ((param_region_western_europe || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
-        introduction_date: date(1844,1,1);
+        introduction_date: date(1889,1,1);
         model_life: 45;
-        vehicle_life: 91;
+        vehicle_life: 46;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
         cost_factor: 32.98934;
@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_steam_sharp_stewart_3557_3565) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/europe/western", "power/steam", "role/universal"];
+	badges: ["region/europe/western", "power/steam", "role/light_freight"];
 
     }
     graphics {

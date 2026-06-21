@@ -13,7 +13,7 @@ item(FEAT_TRAINS, item_electric_union_carriage___wagon_e38) {
         introduction_date: date(1992,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 25;
-        retire_early: 0;
+        retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
         cost_factor: 52.6377;
         running_cost_factor: 44.82463;
@@ -35,7 +35,7 @@ item(FEAT_TRAINS, item_electric_union_carriage___wagon_e38) {
         track_type: [NARROW_GAUGE_RAILTYPE_3KV];
         running_cost_base: RUNNING_COST_ELECTRIC;
         engine_class: ENGINE_CLASS_ELECTRIC;
-        visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+        visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
 
         sprite_id: SPRITE_ID_NEW_TRAIN;
         dual_headed: 0;
@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_electric_union_carriage___wagon_e38) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/africa", "role/wagon"];
+	badges: ["region/africa", "power/electric/dc", "role/express"];
 
     }
     graphics {
@@ -51,7 +51,7 @@ item(FEAT_TRAINS, item_electric_union_carriage___wagon_e38) {
         // no 'visual_effect' or 'visual_effect_and_powered'
         // no 'length'
         // no 'articulated_part'
-        // no 'can_attach'
+        can_attach_wagon: switch_can_attach_vehicle;
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
         // PURCHASETEXT_SWITCH_CALL // this is actually blank

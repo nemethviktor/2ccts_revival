@@ -1124,6 +1124,9 @@
 #include "src/Diesel/Tulloch_0_6_0DM_W_Class_graphics.pnml"
 #include "src/Diesel/Tulloch_0_6_0DM_W_Class_item.pnml"
 
+#include "src/Diesel/GE_ES58ACi_graphics.pnml"
+#include "src/Diesel/GE_ES58ACi_item.pnml"
+
 
 //// EMU
 #include "src/EMU/Werkspoor_Mat24_graphics.pnml"

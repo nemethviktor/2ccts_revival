@@ -94,14 +94,13 @@ item_rbe_hyundai_rotem_silverliner_v, /*Year: 2010*/
 
 #define SORTING_STEAM \
 item_steam_john_cockerill___cie__le_belge, /*Year: 1835*/ \
-item_steam_sharp_stewart_3557_3565, /*Year: 1844*/ \
 item_steam_gwr_iron_duke, /*Year: 1846*/ \
-item_steam_gwr_4_4_0_american, /*Year: 1848*/ \
 item_steam_norris___brothers_4_4_0_la_copiapo, /*Year: 1850*/ \
 item_steam_william_fairbairn_2_2_2_baroneza, /*Year: 1852*/ \
 item_steam_esslingen_ec_2_5, /*Year: 1854*/ \
 item_steam_stephenson_0_4_2_locomotive_no_1, /*Year: 1855*/ \
 item_steam_kitson_2_2_2wt_481_fairy_queen, /*Year: 1855*/ \
+item_steam_gwr_4_4_0_american, /*Year: 1857*/ \
 item_steam_hunslet_0_4_0st_la_portena, /*Year: 1857*/ \
 item_steam_stephenson_bp_2_2_2_lvci_class_1, /*Year: 1857*/ \
 item_steam_beyer__p___co_2_4_0_ss_9_16__21_78, /*Year: 1865*/ \
@@ -125,6 +124,7 @@ item_steam_mav_377, /*Year: 1885*/ \
 item_steam_burnham_2_10_0_dom_pedro_segundo_119, /*Year: 1885*/ \
 item_steam_canadian_pacific_374, /*Year: 1886*/ \
 item_steam_nasmyth__wilson___co_35_tonner_4_6_0t, /*Year: 1887*/ \
+item_steam_sharp_stewart_3557_3565, /*Year: 1889*/ \
 item_steam_slm_g_3_4, /*Year: 1889*/ \
 item_steam_sharp__stewart___co_0_4_0st_dhr_b, /*Year: 1889*/ \
 item_steam_kitson_2_2_2_3166_3171, /*Year: 1889*/ \
@@ -327,6 +327,7 @@ item_diesel_ltz_tep10l, /*Year: 1964*/ \
 item_diesel_fablok_6d, /*Year: 1964*/ \
 item_diesel_ltz_m62, /*Year: 1965*/ \
 item_diesel_alco_rsd_39, /*Year: 1965*/ \
+item_diesel_sorefame_de8, /*Year: 1965*/ \
 item_diesel_emd_clyde_g8, /*Year: 1965*/ \
 item_diesel_ge_u10b, /*Year: 1966*/ \
 item_diesel_emd_clyde_g16c_x1, /*Year: 1966*/ \
@@ -353,7 +354,6 @@ item_diesel_eec_a_249_, /*Year: 1973*/ \
 item_diesel_eec_a_253, /*Year: 1973*/ \
 item_diesel_ltz_te109, /*Year: 1973*/ \
 item_diesel_ltz_te114e, /*Year: 1974*/ \
-item_diesel_sorefame_de8, /*Year: 1974*/ \
 item_diesel_sifang_dfh3, /*Year: 1976*/ \
 item_diesel_tangshan_dalian_sifang_df5, /*Year: 1976*/ \
 item_diesel_ge_c30_7_dash_7, /*Year: 1976*/ \
@@ -426,6 +426,7 @@ item_diesel_voith_gravita_10_bb, /*Year: 2010*/ \
 item_diesel_voith_maxima_40_cc, /*Year: 2010*/ \
 item_diesel_voronezh_vniizht_gt1, /*Year: 2011*/ \
 item_diesel_inka_cc300, /*Year: 2011*/ \
+item_diesel_ge_es58aci, /*Year: 2011*/ \
 item_diesel_pesa_111d, /*Year: 2012*/ \
 item_diesel_cnr_ckd8g, /*Year: 2013*/ \
 item_diesel_stadler_uklight, /*Year: 2014*/ \

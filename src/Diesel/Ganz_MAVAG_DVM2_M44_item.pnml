@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_diesel_ganz_mavag_dvm2_m44) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/europe/eastern", "power/diesel", "role/universal"];
+	badges: ["region/europe/eastern", "power/diesel", "role/light_freight"];
 
     }
     graphics {

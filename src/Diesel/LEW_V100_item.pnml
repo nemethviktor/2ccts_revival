@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_diesel_lew_v100) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/asia", "region/europe/eastern", "power/diesel", "role/universal"];
+	badges: ["region/asia", "region/europe/eastern", "power/diesel", "role/light_freight"];
 
     }
     graphics {

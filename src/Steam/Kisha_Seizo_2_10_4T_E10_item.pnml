@@ -47,7 +47,7 @@ item(FEAT_TRAINS, item_steam_kisha_seizo_2_10_4t_e10) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/asia", "power/steam", "role/universal"];
+	badges: ["region/asia", "power/steam", "role/light_freight"];
 
     }
     graphics {

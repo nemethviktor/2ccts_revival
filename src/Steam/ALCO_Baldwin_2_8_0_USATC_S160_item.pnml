@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_steam_alco_baldwin_2_8_0_usatc_s160) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/europe/southern", "power/steam", "role/universal"];
+	badges: ["region/europe/southern", "power/steam", "role/light_freight"];
 
     }
     graphics {

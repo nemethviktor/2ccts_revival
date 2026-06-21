@@ -47,7 +47,7 @@ item(FEAT_TRAINS, item_steam_lb_scr_brw_0_6_0t_a1) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/europe/northern", "region/oceania", "power/steam", "role/universal"];
+	badges: ["region/europe/northern", "region/oceania", "power/steam", "role/light_freight"];
 
     }
     graphics {

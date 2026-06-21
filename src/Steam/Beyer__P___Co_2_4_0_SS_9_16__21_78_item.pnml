@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_steam_beyer__p___co_2_4_0_ss_9_16__21_78) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/europe/western", "power/steam", "role/universal"];
+	badges: ["region/europe/western", "power/steam", "role/light_freight"];
 
     }
     graphics {

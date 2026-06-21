@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_electric_skoda_98e) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/europe/eastern", "power/electric/dc", "role/universal"];
+	badges: ["region/europe/eastern", "power/electric/dc", "role/freight"];
 
     }
     graphics {

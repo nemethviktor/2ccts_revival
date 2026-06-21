@@ -4,7 +4,7 @@
 
 
 // Template: TPL_03A.
-// Data from: https://en.wikipedia.org/wiki/2-8-0
+// Data from: https://loco-info.com/view.aspx?id=16762
 
 item(FEAT_TRAINS, item_steam_baldwin_2_8_0_consolidation) {
     property {
@@ -15,13 +15,13 @@ item(FEAT_TRAINS, item_steam_baldwin_2_8_0_consolidation) {
         vehicle_life: 30;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 51.7495;
-        running_cost_factor: 38.81377;
-        speed: 60 km/h;
-        power: 1500 hp;
+        cost_factor: 29.30403;
+        running_cost_factor: 21.87895;
+        speed: 55 km/h;
+        power: 475 hp;
         cargo_capacity: 0;
-        weight: 126 ton;
-        tractive_effort_coefficient: 0.24;
+        weight: 71 ton;
+        tractive_effort_coefficient: 0.13;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_steam_baldwin_2_8_0_consolidation) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/america/northern", "power/steam", "role/universal"];
+	badges: ["region/america/northern", "power/steam", "role/shunting"];
 
     }
     graphics {

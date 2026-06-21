@@ -496,9 +496,9 @@ str_rbe_asj_y6,ASJ Y6
 str_rbe_budd_silverliner_ii,Budd Silverliner II
 str_rbe_hyundai_rotem_silverliner_v,Hyundai Rotem Silverliner V
 str_steam_john_cockerill___cie__le_belge,John Cockerill & Cie. Le Belge
-str_steam_gwr_4_4_0_american,GWR 4-4-0 'American'
+str_steam_gwr_4_4_0_american,"Breese, Kneeland & Co 4-4-0 'No 1'"
 str_steam_esslingen_ec_2_5,Esslingen Ec 2/5
-str_steam_norris_4_6_0_ten_wheeler,Norris 4-6-0 'Ten-wheeler'
+str_steam_norris_4_6_0_ten_wheeler,Baldwin Class D 4-6-0 'Ten-wheeler'
 str_steam_baldwin_2_8_0_consolidation,Baldwin 2-8-0 'Consolidation'
 str_steam_mav_377,MAV 377
 str_steam_krauss_kkstb_99,Krauss KkStB 99
@@ -518,14 +518,14 @@ str_steam_henschel___sohn_series_6300,Henschel & Sohn series 6300
 str_steam_baldwin_5000_madame_queen,Baldwin 5000 'Madame Queen'
 str_steam_schwartzkopff_s_10_prussian,Schwartzkopff S 10 'Prussian'
 str_steam_lms_5mt_black_five,LMS 5MT 'Black Five'
-str_steam_kolomena_9p,Kolomena 9P
+str_steam_kolomena_9p,Kolomna 9P
 str_steam_lner_a4_gresley,LNER A4 'Gresley'
 str_steam_mlw_royal_hudson,MLW 'Royal Hudson'
 str_steam_nohab_4_6_2_f,NOHAB 4-6-2 'F'
 str_steam_ggl_has_52,GGL/HAS 52
 str_steam_doncaster_darlington_peppercorn,Doncaster/Darlington 'Peppercorn'
 str_steam_henschel___son_condenser,Henschel & Son 'Condenser'
-str_steam_kolomena_p36,Kolomena P36
+str_steam_kolomena_p36,Kolomna P36
 str_steam_anf_del_150b,ANF/DEL 150B
 str_steam_henschel_895,Henschel 895
 str_steam_h__cegielski_okz32,H. Cegielski OKz32
@@ -649,7 +649,7 @@ str_diesel_sifang_dfh3,Sifang DFH3
 str_diesel_emd_f40ph,EMD F40PH
 str_diesel_sorefame_alsthom_1900,Sorefame/Alsthom 1900
 str_diesel_valmet_oy_dr16,Valmet Oy Dr16
-str_diesel_kolomena_tep80,Kolomena TEP80
+str_diesel_kolomena_tep80,Kolomna TEP80
 str_diesel_emd_clyde_jt46c,EMD/Clyde JT46C
 str_diesel_ge_p42dc_genesis,GE P42DC 'Genesis'
 str_diesel_tulomsas_tcdd_dh7000,Tulomsas TCDD DH7000
@@ -794,7 +794,7 @@ str_electric_nippon_sharyo_deki_400,Nippon Sharyo DeKi 400
 str_electric_vulcan_foundry_slm_ef_1,Vulcan Foundry-SLM EF/1
 str_electric_jeumont_schneider_bb_9004,Jeumont-Schneider BB 9004
 str_electric_werkspoor_ess_3200,Werkspoor ESS 3200
-str_electric_metropolitan_vicerks_em2,Metropolitan-Vicerks EM2
+str_electric_metropolitan_vicerks_em2,Metropolitan-Vickers EM2
 str_electric_ner_ee1,NER EE1
 str_electric_ge_es_2,GE ES-2
 str_electric_ge_2_4_8_0_0_8_4_2_ep2,GE 2-4-8-0+0-8-4-2 EP2
@@ -1230,7 +1230,7 @@ str_diesel_henschel_emd_tt12,Henschel EMD TT12
 str_diesel_henschel_ge_g16,Henschel GE G16
 str_electric_acec_bn_type_2450,ACEC/BN Type 2450
 str_diesel_alsthom_bb_bb_300,Alsthom BB-BB 300
-str_diesel_sorefame_de8,Sorefame DE8
+str_diesel_sorefame_de8,Alsthom CC 200
 str_diesel_gmd_gt22lc_2,GMD GT22LC-2
 str_electric_trc_e6800,TRC E6800
 str_mtro_brooklyn_union_gate_elevated,Brooklyn Union Gate Elevated
@@ -1447,3 +1447,4 @@ str_electric_ge_289_boxcab,GE 289A Boxcab
 str_electric_alsthom_ec_386,Alsthom EC 386
 str_electric_chesta_casagrande_e650,Chesta Casagrande E650
 str_electric_breda_marelli_e32,Breda Marelli E32
+str_diesel_ge_es58aci,GE ES58ACi

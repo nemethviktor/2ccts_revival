@@ -47,7 +47,7 @@ item(FEAT_TRAINS, item_electric_metrowick_bp_786) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/oceania", "power/electric/ac", "role/universal"];
+	badges: ["region/oceania", "power/electric/ac", "role/freight"];
 
     }
     graphics {

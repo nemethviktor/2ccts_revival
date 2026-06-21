@@ -27,7 +27,7 @@ item(FEAT_TRAINS, item_electric_chesta_casagrande_e650) {
         power: 1140 hp;
         cargo_capacity: 0;
         weight: 60 ton;
-        tractive_effort_coefficient: 0.0;
+        tractive_effort_coefficient: 0.25;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

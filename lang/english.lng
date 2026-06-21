@@ -2,7 +2,7 @@
 
 # Hardcoded Strings
 STR_GRF_NAME                                                      :{TITLE}
-STR_GRF_DESCRIPTION                                               :{SILVER}2cc Trains of the World in NML {}{}(c)2ccts Revival {}License GPLv2 or higher. {}See readme for details.{}{SILVER}Build: 2026-06-21-17:31:18
+STR_GRF_DESCRIPTION                                               :{SILVER}2cc Trains of the World in NML {}{}(c)2ccts Revival {}License GPLv2 or higher. {}See readme for details.{}{SILVER}Build: 2026-06-21-22:42:45
 STR_GRF_URL                                                       :https://github.com/nemethviktor/2ccts_revival
 STR_USED_WITH_DYNAMIC_ENGINES                                     :dynamic_engines = true (setting in openttd.cfg)
 STR_ERROR_REGION                                                  :No regions enabled, {STRING} has been disabled
@@ -595,7 +595,7 @@ str_diesel_sifang_dfh3                                            :Sifang DFH3 (
 str_diesel_emd_f40ph                                              :EMD F40PH (Diesel)
 str_diesel_sorefame_alsthom_1900                                  :Sorefame/Alsthom 1900 (Diesel)
 str_diesel_valmet_oy_dr16                                         :Valmet Oy Dr16 (Diesel)
-str_diesel_kolomena_tep80                                         :Kolomena TEP80 (Diesel)
+str_diesel_kolomena_tep80                                         :Kolomna TEP80 (Diesel)
 str_diesel_emd_clyde_jt46c                                        :EMD/Clyde JT46C (Diesel)
 str_diesel_ge_p42dc_genesis                                       :GE P42DC 'Genesis' (Diesel)
 str_diesel_tulomsas_tcdd_dh7000                                   :Tulomsas TCDD DH7000 (Diesel)
@@ -683,7 +683,7 @@ str_diesel_alsthom_ad30b                                          :Alsthom AD30B
 str_diesel_henschel_emd_tt12                                      :Henschel EMD TT12 (Diesel)
 str_diesel_henschel_ge_g16                                        :Henschel GE G16 (Diesel)
 str_diesel_alsthom_bb_bb_300                                      :Alsthom BB-BB 300 (Diesel)
-str_diesel_sorefame_de8                                           :Sorefame DE8 (Diesel)
+str_diesel_sorefame_de8                                           :Alsthom CC 200 (Diesel)
 str_diesel_gmd_gt22lc_2                                           :GMD GT22LC-2 (Diesel)
 str_diesel_ltz_dr_130                                             :LTZ DR 130 (Diesel)
 str_diesel_ge_ac6044cw                                            :GE AC6044CW (Diesel)
@@ -746,6 +746,7 @@ str_diesel_baldwin_lima_hamilton_rf_615_e                         :Baldwin-Lima-
 str_diesel_ee_dick__kerr___co_vulcan_foundry_de2                  :EE/Dick, Kerr & Co/Vulcan Foundry DE2 (Diesel)
 str_diesel_ingeteam_td2000_series                                 :Ingeteam TD2000 series (Diesel)
 str_diesel_tulloch_0_6_0dm_w_class                                :Tulloch 0-6-0DM 'W' Class (Diesel)
+str_diesel_ge_es58aci                                             :GE ES58ACi (Diesel)
 
 # Dieselrailbus
 str_rbd_aec_railmotor_rm1                                         :AEC railmotor RM1 (Diesel Railbus)
@@ -885,7 +886,7 @@ str_electric_slm_1100_crocodile                                   :SLM 1100 'Cro
 str_electric_nevz_vl22m                                           :NEVZ VL22M (Electric, 3kV DC)
 str_electric_slm_ns_1000                                          :SLM NS 1000 (Electric, 1500V DC)
 str_electric_asea_dm3                                             :ASEA Dm3 (Electric, 15kV AC)
-str_electric_metropolitan_vicerks_em2                             :Metropolitan-Vicerks EM2 (Electric, 1500V DC)
+str_electric_metropolitan_vicerks_em2                             :Metropolitan-Vickers EM2 (Electric, 1500V DC)
 str_electric_jeumont_schneider_bb_9004                            :Jeumont-Schneider BB 9004 (Electric, 1500V DC)
 str_electric_slm_ce_4_4                                           :SLM Ce 4/4 (Electric, 15kV AC)
 str_electric_slm_ae_6_6                                           :SLM Ae 6/6 (Electric, 15kV AC)
@@ -1267,16 +1268,16 @@ str_steam_baldwin_5000_madame_queen                               :Baldwin 5000 
 str_steam_anf_del_150b                                            :ANF/DEL 150B (Steam)
 str_steam_schwartzkopff_s_10_prussian                             :Schwartzkopff S 10 'Prussian' (Steam)
 str_steam_lms_5mt_black_five                                      :LMS 5MT 'Black Five' (Steam)
-str_steam_kolomena_9p                                             :Kolomena 9P (Steam)
+str_steam_kolomena_9p                                             :Kolomna 9P (Steam)
 str_steam_h__cegielski_okz32                                      :H. Cegielski OKz32 (Steam)
 str_steam_lner_a4_gresley                                         :LNER A4 'Gresley' (Steam)
 str_steam_mlw_royal_hudson                                        :MLW 'Royal Hudson' (Steam)
 str_steam_ggl_has_52                                              :GGL/HAS 52 (Steam)
 str_steam_doncaster_darlington_peppercorn                         :Doncaster/Darlington 'Peppercorn' (Steam)
 str_steam_henschel___son_condenser                                :Henschel & Son 'Condenser' (Steam)
-str_steam_kolomena_p36                                            :Kolomena P36 (Steam)
-str_steam_gwr_4_4_0_american                                      :GWR 4-4-0 'American' (Steam)
-str_steam_norris_4_6_0_ten_wheeler                                :Norris 4-6-0 'Ten-wheeler' (Steam)
+str_steam_kolomena_p36                                            :Kolomna P36 (Steam)
+str_steam_gwr_4_4_0_american                                      :Breese, Kneeland & Co 4-4-0 'No 1' (Steam)
+str_steam_norris_4_6_0_ten_wheeler                                :Baldwin Class D 4-6-0 'Ten-wheeler' (Steam)
 str_steam_nohab_4_6_2_f                                           :NOHAB 4-6-2 'F' (Steam)
 str_steam_alco_series_4000_4_8_8_4_big_boy                        :ALCO series 4000 4-8-8-4 'Big Boy' (Steam)
 str_steam_sharp_stewart_3557_3565                                 :Sharp Stewart 3557-3565 (Steam)

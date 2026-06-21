@@ -47,7 +47,7 @@ item(FEAT_TRAINS, item_electric_stadler_he_4_4) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/america/south", "power/electric/dc", "role/universal"];
+	badges: ["region/america/south", "power/electric/dc", "role/freight"];
 
     }
     graphics {
