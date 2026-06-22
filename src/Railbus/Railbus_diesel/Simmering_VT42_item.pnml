@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_rbd_simmering_vt42) {
         vehicle_life: 30;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 25.64909;
-        running_cost_factor: 19.3184;
+        cost_factor: 25.33166;
+        running_cost_factor: 19.01214;
         speed: 110 km/h;
         power: 210 hp;
         cargo_capacity: 78;

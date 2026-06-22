@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_mtro_mmz_budapest_ev3) {
         vehicle_life: 50;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 37.58722;
-        running_cost_factor: 33.94237;
+        cost_factor: 37.46778;
+        running_cost_factor: 33.8383;
         speed: 90 km/h;
         power: 770 hp;
         cargo_capacity: 132;
@@ -68,7 +68,7 @@ item(FEAT_TRAINS, item_mtro_mmz_budapest_ev3) {
     }
     livery_override (item_mtro_metro_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        running_cost_factor: (round(19.899904927513507));
+        running_cost_factor: round(19.89988738510232);
         power: int(770*1/2);
         weight: int(32*3/4);
         cargo_capacity: 150;

@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_rbd_dsb_mo_serie_1) {
         vehicle_life: 34;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 33.40456;
-        running_cost_factor: 26.4568;
+        cost_factor: 33.01395;
+        running_cost_factor: 26.07578;
         speed: 120 km/h;
         power: 500 hp;
         cargo_capacity: 52;

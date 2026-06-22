@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_emu_siemens_nexas) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 46.81584;
-        running_cost_factor: 42.32755;
+        cost_factor: 46.72111;
+        running_cost_factor: 42.23945;
         speed: 145 km/h;
         power: 1286 hp;
         cargo_capacity: 142;
@@ -84,7 +84,7 @@ item(FEAT_TRAINS, item_emu_siemens_nexas) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(30.086084340043342));
+        running_cost_factor: round(30.08608421540822);
         power: int(1286*1/2);
         weight: int(40*3/4);
         cargo_capacity: 140;

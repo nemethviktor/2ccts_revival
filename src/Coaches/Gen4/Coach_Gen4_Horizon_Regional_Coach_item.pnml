@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_mu_coach_gen4_horizon_regional_coach) {
         vehicle_life: 25;
         retire_early: 0;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 38.5055;
-        running_cost_factor: 27.05333;
+        cost_factor: 38.50355;
+        running_cost_factor: 27.05303;
         speed: 200 km/h;
         power: 0 hp;
         cargo_capacity: 72;

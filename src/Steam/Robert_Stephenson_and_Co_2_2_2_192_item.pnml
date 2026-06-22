@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_steam_robert_stephenson_and_co_2_2_2_192) {
         vehicle_life: 30;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 28.75623;
-        running_cost_factor: 22.35219;
+        cost_factor: 28.73594;
+        running_cost_factor: 22.34606;
         speed: 95 km/h;
         power: 495 hp;
         cargo_capacity: 0;

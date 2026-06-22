@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_mtro_asea_stockholm_c8) {
         vehicle_life: 50;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 38.6402;
-        running_cost_factor: 35.89535;
+        cost_factor: 38.54382;
+        running_cost_factor: 35.81435;
         speed: 90 km/h;
         power: 860 hp;
         cargo_capacity: 150;
@@ -68,7 +68,7 @@ item(FEAT_TRAINS, item_mtro_asea_stockholm_c8) {
     }
     livery_override (item_mtro_metro_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        running_cost_factor: (round(18.27758347570986));
+        running_cost_factor: round(18.277575659723034);
         power: int(860*1/2);
         weight: int(23*3/4);
         cargo_capacity: 158;

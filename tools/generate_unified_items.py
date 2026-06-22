@@ -207,34 +207,6 @@ def get_badges(row: pd.Series) -> str:
     return f"""\n\tbadges: ["{badge_string}"];\n"""
 
 
-# --- Newton-Raphson Emulation (Matches NML SQRT) ---
-def nml_sqrt(value) -> float:
-    """
-    Emulates the NML 'SQRTESTIMATE' macro using the Newton-Raphson method.
-
-    This function replicates the specific mathematical approximation used in
-    legacy NML property files. It performs 3 iterations to converge on a
-    square root value, matching the precision (or lack thereof) of the
-    original Newton-Raphson implementation in the game's compilation process.
-
-    Args:
-        value (float/int): The radicand to calculate the square root for.
-
-    Returns:
-        float: The approximated square root after 3 iterations.
-               Returns 0 if the input is less than or equal to 0.
-    """
-    val = float(value)
-    if val <= 0:
-        return 0
-    # Initial guess is VALUE/40 per your eval string
-    guess = val / 40
-    for _ in range(3):
-        # guess - ((guess^2 - val) / (0.1 + 2*guess))
-        guess = guess - ((guess**2) - val) / (0.1 + 2 * guess)
-    return guess
-
-
 def calculate_nml_cost(row: pd.Series, m, is_running_cost=False) -> float:
     """
     Universal cost calculator for Purchase and Running Cost properties.
@@ -247,7 +219,7 @@ def calculate_nml_cost(row: pd.Series, m, is_running_cost=False) -> float:
     1. COACH/WAGON: Uses 'PURCHASECOSTNONENGINEVALUE' logic where capacity
        is added linearly rather than using a square root complexity factor.
     2. ENGINES/MU: Uses a complexity-based formula where Power and Capacity
-       are processed through the nml_sqrt function.
+       are processed through the math.sqrt function.
 
     Args:
         row (pd.Series): A row from the merged 'master_df' containing vehicle specs.
@@ -267,8 +239,8 @@ def calculate_nml_cost(row: pd.Series, m, is_running_cost=False) -> float:
     C = float(row.get('HEAD_CAPACITY', 0))
 
     # Emulate the 3-iteration Newton SQRT
-    sqrt_S = nml_sqrt(S)
-    sqrt_P = nml_sqrt(P)
+    sqrt_S = math.sqrt(S)
+    sqrt_P = math.sqrt(P)
 
     # 2. Branch Logic based on your Macro Definitions
     if row['COST_CAT'] in ['COACH', 'WAGON']:
@@ -287,7 +259,7 @@ def calculate_nml_cost(row: pd.Series, m, is_running_cost=False) -> float:
 
     else:
         # Standard Engine/MU Logic (Power & Capacity use SQRT)
-        sqrt_C = nml_sqrt(C)
+        sqrt_C = math.sqrt(C)
         if not is_running_cost:
             multipler = 1
             if row['IS_POWERED_UNPOWERED_SUNDRY']:
@@ -299,13 +271,13 @@ def calculate_nml_cost(row: pd.Series, m, is_running_cost=False) -> float:
             base = (m.P2 * W) + (m.P3 * sqrt_S) + \
                 (m.P4 * sqrt_P) + (m.P5 * sqrt_C) + (m.P7 * TE)
             if row['COST_CAT'] in ['DMU', 'EMU', 'METRO', 'MMU']:
-                base += (m.P6 * nml_sqrt(row.get('WAGON_POWER', 0)))
+                base += (m.P6 * math.sqrt(row.get('WAGON_POWER', 0)))
             return round(m.P1 * base, 5) * multipler
         else:
             base = (m.R2 * sqrt_S) + (m.R3 * sqrt_P) + \
                 (m.R4 * sqrt_C) + (m.R6 * TE)
             if row['COST_CAT'] in ['DMU', 'EMU', 'METRO', 'MMU']:
-                base += (m.R5 * nml_sqrt(row.get('WAGON_POWER', 0)))
+                base += (m.R5 * math.sqrt(row.get('WAGON_POWER', 0)))
             return round(max(m.R1 * base, 1.0), 5)
 
 
@@ -953,7 +925,7 @@ def generate_unified_items():
             content.append(f"    }}\n")
 
             # Powered Wagon - Replicating complex RC eval
-            p_sqrt = nml_sqrt(row['POWER'])
+            p_sqrt = math.sqrt(row['POWER'])
             rc_powered = (int(row['SPEED'])/10) + (p_sqrt/10) + \
                 (row['TE_COEFFICIENT'] * row['WEIGHT'])
 
@@ -961,7 +933,7 @@ def generate_unified_items():
                 f"    livery_override (item_{overrideCategory}_{overrideType}wagon_powered) {{\n")
             content.append(f"        loading_speed: {ls_logic};\n")
             content.append(
-                f"        running_cost_factor: (round({rc_powered}));\n")
+                f"        running_cost_factor: round({rc_powered});\n")
             content.append(f"        power: int({int(row['POWER'])}*1/2);\n")
             content.append(f"        weight: int({int(row['WEIGHT'])}*3/4);\n")
             if graphics_switch_visual_effect_and_powered_position and TEMPLATE_ID_FULL not in ['TPL_02D']:

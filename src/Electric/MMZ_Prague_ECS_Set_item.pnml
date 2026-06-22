@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_mtro_mmz_prague_ecs_set) {
         vehicle_life: 50;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 39.96049;
-        running_cost_factor: 36.33454;
+        cost_factor: 39.83618;
+        running_cost_factor: 36.22841;
         speed: 80 km/h;
         power: 910 hp;
         cargo_capacity: 131;
@@ -68,7 +68,7 @@ item(FEAT_TRAINS, item_mtro_mmz_prague_ecs_set) {
     }
     livery_override (item_mtro_metro_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        running_cost_factor: (round(19.141625653031312));
+        running_cost_factor: round(19.14162062579967);
         power: int(910*1/2);
         weight: int(32*3/4);
         cargo_capacity: 150;

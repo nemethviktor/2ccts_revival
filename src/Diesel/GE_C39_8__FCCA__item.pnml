@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_diesel_ge_c39_8__fcca_) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 79.58927;
-        running_cost_factor: 62.55858;
+        cost_factor: 79.57438;
+        running_cost_factor: 62.55486;
         speed: 110 km/h;
         power: 3900 hp;
         cargo_capacity: 0;

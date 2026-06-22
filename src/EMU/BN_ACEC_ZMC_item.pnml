@@ -34,8 +34,8 @@ item(FEAT_TRAINS, item_emu_bn_acec_zmc) {
         vehicle_life: 46;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 54.07174;
-        running_cost_factor: 48.76042;
+        cost_factor: 53.87286;
+        running_cost_factor: 48.5669;
         speed: 160 km/h;
         power: 1900 hp;
         cargo_capacity: 90;
@@ -87,7 +87,7 @@ item(FEAT_TRAINS, item_emu_bn_acec_zmc) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(25.542899000984153));
+        running_cost_factor: round(25.542898943540674);
         power: int(1900*1/2);
         weight: int(48*3/4);
         cargo_capacity: 90;

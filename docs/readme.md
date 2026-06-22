@@ -93,13 +93,15 @@ Please use github to submit requests of any kind, *don't use the OTTD forums* - 
 The below is a causal and incomplete blurb of some of the differences between the old and new set:
 
 - Most vehicles' data has been rechecked and adjusted, which also means their costs will have changed. Obviously new vehicles have been added.
+- All vehicles have been renamed to manufacturers' designation(s), countries removed and regions extended. The idea is that for example what used to be `(China) MTR 8000` is in fact a `Siemens ER20`, which is widely avaialble. It'd thus be 'odd' to have the "MTR" avaialble in places thousands of miles away from Hong Kong.
+- Some mathematical formulae have been updated to use python libraries rather than extremely obscure calculations that generally yielded the same values (particular about square roots)
 - MU wagons can no longer take `valuables`. It's illogical and is a cheat that the player can have valuables speeding around at 400kmh while the actual fastest wagon for it is limited to ~160kmh or so.
-- SuperHeavy is now restricted to Goods and Vehicles only.
+- `SuperHeavy` is now restricted to `Goods` and `Vehicles` only.
 - Wagon upkeep costs have been slightly reduced.
 - Livestock vans have been separated out and the various wagons' cargo defintions have been revamped.
 - Almost everything has been standardised in code and templates, this corrects a lot of generic bugs from the original setup that are too numerous to list individually.
 - Rail types have been added as well as voltages, badges, etc.
-- Maglev(s) for cargo purposes have been introduced. The semi-plural is because there's only one at the moment and the relevant graphics are a copypaste of `Taurus` and `gen5` but at least there is _something_.
+- Maglev(s) for cargo purposes have been introduced.
 
 ## Credits
 
@@ -110,7 +112,7 @@ Graphics for this set:
 - SosMakaroni
 - Ragin
 - Pitagoras991
-- Some of the power badges are from the 8bit badge set (by Althonos)
+- Some of the power badges are from the `8bit badge set (by Althonos)`
 
 Graphics from the original 2cc Trainset:
 

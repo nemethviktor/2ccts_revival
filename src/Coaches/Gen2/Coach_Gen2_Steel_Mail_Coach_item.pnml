@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_mu_coach_gen2_steel_mail_coach) {
         vehicle_life: 25;
         retire_early: 0;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 15/2 : (param_loadingspeed == 2) ? 15*2 : 15;
-        cost_factor: 32.47985;
-        running_cost_factor: 22.54198;
+        cost_factor: 32.47386;
+        running_cost_factor: 22.54108;
         speed: 120 km/h;
         power: 0 hp;
         cargo_capacity: 60;

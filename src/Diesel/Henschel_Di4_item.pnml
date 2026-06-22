@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_diesel_henschel_di4) {
         vehicle_life: 50;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 69.95926;
-        running_cost_factor: 57.47885;
+        cost_factor: 69.95013;
+        running_cost_factor: 57.47684;
         speed: 140 km/h;
         power: 3290 hp;
         cargo_capacity: 0;

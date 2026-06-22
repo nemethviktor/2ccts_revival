@@ -13,6 +13,8 @@
   - Standardised all the visual templates in the set
   - Introduced some logic whereby if the real-life withdrawal of a train is known, we use that, subject to a generic minimal age being ensure, else we use the fallback value that's automatically generated.
   - Modified the "retire early" logic. Since coaches and wagons don't decay in reliability, they shouldn't be retired early.
+  - Replaced the obscure legacy sqrt calculation with the standard python libarary's method
+  - Re-jigged some of the Role rules affecting `universal`/`freight` and `shunting`/`light freight`
 - VEHICLES CHANGES:
   - Renamed almost everything to be more or less manufacturer naming rather than operator naming. The logic is that if we have idk NSW80 or whatever else in West Europe because it's idk an EMD something, with that operator name, it's silly. Also this way things are a lot less restrictive.
   - Changed Wagon upkeep costs to 75% of the original. Given they are pretty slow in the long run, they are way too expensive to maintain.
@@ -162,6 +164,7 @@
   - Shanghai Transrapid - add western european region
   - EFCB ALCO RS-3 - add north emerican and souther neuropean (Spain) regions
   - RZD E - add norhtern europe (Finland), Asia (China), add 1435mm gauge (China)
+  - Lots more over the course of time, not adding each.
   - Added the following from Ragin's North America set (all also available in S-Am as they were exported at some stage - tried to keep the naming unique. Yes there's one Pakistani in there too.)
     - `PRFTC 9000 GE ES43ACi`
     - `Atlantic Coast Line GP40`

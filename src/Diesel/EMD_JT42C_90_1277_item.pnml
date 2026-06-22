@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_diesel_emd_jt42c_90_1277) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 67.01268;
-        running_cost_factor: 54.9734;
+        cost_factor: 66.99966;
+        running_cost_factor: 54.9707;
         speed: 115 km/h;
         power: 3010 hp;
         cargo_capacity: 0;

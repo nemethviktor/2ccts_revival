@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_steam_burnham_2_10_0_dom_pedro_segundo_119) {
         vehicle_life: 30;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 35.61332;
-        running_cost_factor: 25.09921;
+        cost_factor: 35.57355;
+        running_cost_factor: 25.0907;
         speed: 50 km/h;
         power: 626 hp;
         cargo_capacity: 0;

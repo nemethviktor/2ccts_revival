@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_dmu_caf_zz_2200_autorail) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 48.17969;
-        running_cost_factor: 42.16837;
+        cost_factor: 48.00695;
+        running_cost_factor: 42.00098;
         speed: 160 km/h;
         power: 1352 hp;
         cargo_capacity: 99;
@@ -83,7 +83,7 @@ item(FEAT_TRAINS, item_dmu_caf_zz_2200_autorail) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(26.826955314618907));
+        running_cost_factor: round(26.826955262170046);
         power: int(1352*1/2);
         weight: int(55*3/4);
         cargo_capacity: 99;

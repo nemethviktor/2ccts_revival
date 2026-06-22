@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_electric_gec_nblc_sar_4e_) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 66.20921;
-        running_cost_factor: 50.30154;
+        cost_factor: 66.19204;
+        running_cost_factor: 50.29809;
         speed: 97 km/h;
         power: 2520 hp;
         cargo_capacity: 0;

@@ -34,8 +34,8 @@ item(FEAT_TRAINS, item_singlemtro_chicago_l_northwest_elevated_1907_stock) {
         vehicle_life: 50;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 25.25185;
-        running_cost_factor: 21.74557;
+        cost_factor: 25.0806;
+        running_cost_factor: 21.59593;
         speed: 70 km/h;
         power: 250 hp;
         cargo_capacity: 130;

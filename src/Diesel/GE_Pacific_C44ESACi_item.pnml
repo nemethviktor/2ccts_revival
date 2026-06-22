@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_diesel_ge_pacific_c44esaci) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 81.78286;
-        running_cost_factor: 67.34357;
+        cost_factor: 81.76714;
+        running_cost_factor: 67.33818;
         speed: 115 km/h;
         power: 4520 hp;
         cargo_capacity: 0;

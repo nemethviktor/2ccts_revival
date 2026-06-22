@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_diesel_ge_u10b) {
         vehicle_life: 64;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 33.60583;
-        running_cost_factor: 26.75807;
+        cost_factor: 33.59355;
+        running_cost_factor: 26.75537;
         speed: 120 km/h;
         power: 710 hp;
         cargo_capacity: 0;

@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_rbs_kerr_stuart_steam_railmotor) {
         vehicle_life: 30;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 17.91559;
-        running_cost_factor: 13.39051;
+        cost_factor: 16.93863;
+        running_cost_factor: 12.44198;
         speed: 55 km/h;
         power: 91 hp;
         cargo_capacity: 32;

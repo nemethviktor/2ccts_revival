@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_steam_mlw_royal_hudson) {
         vehicle_life: 30;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 84.88618;
-        running_cost_factor: 55.79946;
+        cost_factor: 84.87764;
+        running_cost_factor: 55.79764;
         speed: 144 km/h;
         power: 3100 hp;
         cargo_capacity: 0;

@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_diesel_emd_nohab_j30c_2dsb_mz_iii) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 74.7674;
-        running_cost_factor: 62.13859;
+        cost_factor: 74.76033;
+        running_cost_factor: 62.13652;
         speed: 165 km/h;
         power: 3845 hp;
         cargo_capacity: 0;

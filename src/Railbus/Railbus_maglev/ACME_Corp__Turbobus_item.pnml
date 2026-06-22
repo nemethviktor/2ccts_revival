@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_rbm_acme_corp__turbobus) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 79.36745;
-        running_cost_factor: 75.26981;
+        cost_factor: 78.93008;
+        running_cost_factor: 74.83244;
         speed: 753 km/h;
         power: 5070 hp;
         cargo_capacity: 45;

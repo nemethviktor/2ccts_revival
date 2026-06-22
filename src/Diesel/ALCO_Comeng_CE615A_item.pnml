@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_diesel_alco_comeng_ce615a) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 59.12779;
-        running_cost_factor: 46.48004;
+        cost_factor: 59.11582;
+        running_cost_factor: 46.47764;
         speed: 120 km/h;
         power: 2150 hp;
         cargo_capacity: 0;

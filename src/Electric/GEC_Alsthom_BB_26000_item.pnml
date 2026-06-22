@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_electric_gec_alsthom_bb_26000) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 96.3975;
-        running_cost_factor: 86.8287;
+        cost_factor: 96.33274;
+        running_cost_factor: 86.76705;
         speed: 200 km/h;
         power: 7504 hp;
         cargo_capacity: 0;

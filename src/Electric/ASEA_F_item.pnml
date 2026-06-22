@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_electric_asea_f) {
         vehicle_life: 36;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 69.61263;
-        running_cost_factor: 58.94022;
+        cost_factor: 69.60271;
+        running_cost_factor: 58.93795;
         speed: 135 km/h;
         power: 3460 hp;
         cargo_capacity: 0;

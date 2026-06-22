@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_dmu_nswgr_800_900_deb) {
         vehicle_life: 43;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 29.47147;
-        running_cost_factor: 25.83218;
+        cost_factor: 29.00681;
+        running_cost_factor: 25.37786;
         speed: 115 km/h;
         power: 480 hp;
         cargo_capacity: 43;
@@ -83,7 +83,7 @@ item(FEAT_TRAINS, item_dmu_nswgr_800_900_deb) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(16.34719292690771));
+        running_cost_factor: round(16.346890230020662);
         power: int(480*1/2);
         weight: int(32*3/4);
         cargo_capacity: 38;

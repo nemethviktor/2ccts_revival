@@ -34,8 +34,8 @@ item(FEAT_TRAINS, item_dmu_adtranz_class_168_clubman) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 39.20803;
-        running_cost_factor: 33.69671;
+        cost_factor: 38.92124;
+        running_cost_factor: 33.41527;
         speed: 160 km/h;
         power: 844 hp;
         cargo_capacity: 68;
@@ -87,7 +87,7 @@ item(FEAT_TRAINS, item_dmu_adtranz_class_168_clubman) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(24.605176818247827));
+        running_cost_factor: round(24.60516780926679);
         power: int(844*1/2);
         weight: int(50*3/4);
         cargo_capacity: 68;

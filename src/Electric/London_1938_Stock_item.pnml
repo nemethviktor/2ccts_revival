@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_mtro_london_1938_stock) {
         vehicle_life: 83;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 32.97056;
-        running_cost_factor: 30.06028;
+        cost_factor: 32.79264;
+        running_cost_factor: 29.90323;
         speed: 72 km/h;
         power: 600 hp;
         cargo_capacity: 105;
@@ -68,7 +68,7 @@ item(FEAT_TRAINS, item_mtro_london_1938_stock) {
     }
     livery_override (item_mtro_metro_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        running_cost_factor: (round(14.749578240496596));
+        running_cost_factor: round(14.74948974278318);
         power: int(600*1/2);
         weight: int(25*3/4);
         cargo_capacity: 120;

@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_steam_kawasaki_2_8_0_9600) {
         vehicle_life: 63;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 39.4285;
-        running_cost_factor: 29.58237;
+        cost_factor: 39.39888;
+        running_cost_factor: 29.57638;
         speed: 65 km/h;
         power: 870 hp;
         cargo_capacity: 0;

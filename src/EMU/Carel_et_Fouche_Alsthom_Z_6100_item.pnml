@@ -34,8 +34,8 @@ item(FEAT_TRAINS, item_emu_carel_et_fouche_alsthom_z_6100) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 37.38232;
-        running_cost_factor: 33.43456;
+        cost_factor: 37.09023;
+        running_cost_factor: 33.15205;
         speed: 120 km/h;
         power: 824 hp;
         cargo_capacity: 68;
@@ -87,7 +87,7 @@ item(FEAT_TRAINS, item_emu_carel_et_fouche_alsthom_z_6100) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(22.360550787647462));
+        running_cost_factor: round(22.360540018881466);
         power: int(824*1/2);
         weight: int(35*3/4);
         cargo_capacity: 68;

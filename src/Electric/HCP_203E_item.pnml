@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_electric_hcp_203e) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 90.76416;
-        running_cost_factor: 73.60806;
+        cost_factor: 90.74371;
+        running_cost_factor: 73.5965;
         speed: 125 km/h;
         power: 5400 hp;
         cargo_capacity: 0;

@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_steam_nasmyth__wilson___co_35_tonner_4_6_0t) {
         vehicle_life: 30;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 18.91216;
-        running_cost_factor: 14.97642;
+        cost_factor: 18.8197;
+        running_cost_factor: 14.90986;
         speed: 60 km/h;
         power: 220 hp;
         cargo_capacity: 0;

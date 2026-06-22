@@ -34,8 +34,8 @@ item(FEAT_TRAINS, item_dmu_br_150_0_sprinter) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 28.68433;
-        running_cost_factor: 24.6349;
+        cost_factor: 28.43722;
+        running_cost_factor: 24.39722;
         speed: 121 km/h;
         power: 389 hp;
         cargo_capacity: 80;
@@ -87,7 +87,7 @@ item(FEAT_TRAINS, item_dmu_br_150_0_sprinter) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(17.38511954631342));
+        running_cost_factor: round(17.384308292331603);
         power: int(389*1/2);
         weight: int(36*3/4);
         cargo_capacity: 80;

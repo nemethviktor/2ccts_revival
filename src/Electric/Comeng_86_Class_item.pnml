@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_electric_comeng_86_class) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 74.61014;
-        running_cost_factor: 62.24583;
+        cost_factor: 74.59899;
+        running_cost_factor: 62.24292;
         speed: 130 km/h;
         power: 3860 hp;
         cargo_capacity: 0;

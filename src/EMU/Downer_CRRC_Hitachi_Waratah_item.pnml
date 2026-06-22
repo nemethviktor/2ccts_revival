@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_emu_downer_crrc_hitachi_waratah) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 73.78489;
-        running_cost_factor: 68.22057;
+        cost_factor: 73.63404;
+        running_cost_factor: 68.07797;
         speed: 130 km/h;
         power: 3920 hp;
         cargo_capacity: 110;
@@ -83,7 +83,7 @@ item(FEAT_TRAINS, item_emu_downer_crrc_hitachi_waratah) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(24.871086537532655));
+        running_cost_factor: round(24.870990336999412);
         power: int(3920*1/2);
         weight: int(51*3/4);
         cargo_capacity: 110;

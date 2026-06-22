@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_steam_doncaster_darlington_peppercorn) {
         vehicle_life: 30;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 65.82896;
-        running_cost_factor: 49.11764;
+        cost_factor: 65.82225;
+        running_cost_factor: 49.11629;
         speed: 160 km/h;
         power: 2400 hp;
         cargo_capacity: 0;

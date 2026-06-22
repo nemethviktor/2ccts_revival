@@ -35,8 +35,8 @@ item(FEAT_TRAINS, item_dmu_rvr_dr1a) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 58.88417;
-        running_cost_factor: 49.43642;
+        cost_factor: 58.59219;
+        running_cost_factor: 49.15401;
         speed: 120 km/h;
         power: 2000 hp;
         cargo_capacity: 68;
@@ -88,7 +88,7 @@ item(FEAT_TRAINS, item_dmu_rvr_dr1a) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(34.47213609148217));
+        running_cost_factor: round(34.47213595499958);
         power: int(2000*1/2);
         weight: int(90*3/4);
         cargo_capacity: 124;

@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_steam_baldwin_5000_madame_queen) {
         vehicle_life: 30;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 112.75469;
-        running_cost_factor: 70.824;
+        cost_factor: 112.73508;
+        running_cost_factor: 70.81556;
         speed: 110 km/h;
         power: 5000 hp;
         cargo_capacity: 0;

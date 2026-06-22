@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_diesel_emd_sw1200) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 46.26626;
-        running_cost_factor: 34.74607;
+        cost_factor: 46.25092;
+        running_cost_factor: 34.743;
         speed: 104 km/h;
         power: 1200 hp;
         cargo_capacity: 0;

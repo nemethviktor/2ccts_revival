@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_steam_nzr_x) {
         vehicle_life: 60;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 38.9419;
-        running_cost_factor: 29.23226;
+        cost_factor: 38.90117;
+        running_cost_factor: 29.22404;
         speed: 48 km/h;
         power: 850 hp;
         cargo_capacity: 0;

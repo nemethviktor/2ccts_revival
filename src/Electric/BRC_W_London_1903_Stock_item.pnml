@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_mtro_brc_w_london_1903_stock) {
         vehicle_life: 50;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 28.47913;
-        running_cost_factor: 25.20405;
+        cost_factor: 28.24423;
+        running_cost_factor: 24.99758;
         speed: 55 km/h;
         power: 400 hp;
         cargo_capacity: 90;
@@ -68,7 +68,7 @@ item(FEAT_TRAINS, item_mtro_brc_w_london_1903_stock) {
     }
     livery_override (item_mtro_metro_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        running_cost_factor: (round(12.810718154932406));
+        running_cost_factor: round(12.809999999999999);
         power: int(400*1/2);
         weight: int(29*3/4);
         cargo_capacity: 125;

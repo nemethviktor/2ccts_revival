@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_electric_crrc_dalian_hxd3d) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 113.96675;
-        running_cost_factor: 100.65543;
+        cost_factor: 113.72204;
+        running_cost_factor: 100.41607;
         speed: 160 km/h;
         power: 10058 hp;
         cargo_capacity: 0;

@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_electric_brush_ef_class) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 74.47412;
-        running_cost_factor: 63.35217;
+        cost_factor: 74.4579;
+        running_cost_factor: 63.34802;
         speed: 105 km/h;
         power: 4000 hp;
         cargo_capacity: 0;

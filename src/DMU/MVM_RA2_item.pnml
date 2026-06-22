@@ -35,8 +35,8 @@ item(FEAT_TRAINS, item_dmu_mvm_ra2) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 38.4243;
-        running_cost_factor: 33.61123;
+        cost_factor: 38.12786;
+        running_cost_factor: 33.32786;
         speed: 100 km/h;
         power: 840 hp;
         cargo_capacity: 68;
@@ -88,7 +88,7 @@ item(FEAT_TRAINS, item_dmu_mvm_ra2) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(18.266284684745255));
+        running_cost_factor: round(18.266275349237887);
         power: int(840*1/2);
         weight: int(44*3/4);
         cargo_capacity: 86;

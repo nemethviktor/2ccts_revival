@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_diesel_ge_c44_9w_dash_9) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 86.1924;
-        running_cost_factor: 66.44632;
+        cost_factor: 86.17793;
+        running_cost_factor: 66.44158;
         speed: 119 km/h;
         power: 4400 hp;
         cargo_capacity: 0;

@@ -34,8 +34,8 @@ item(FEAT_TRAINS, item_dmu_ugl_hunter_railcar) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 35.71703;
-        running_cost_factor: 32.20571;
+        cost_factor: 35.43988;
+        running_cost_factor: 31.93392;
         speed: 160 km/h;
         power: 750 hp;
         cargo_capacity: 70;
@@ -87,7 +87,7 @@ item(FEAT_TRAINS, item_dmu_ugl_hunter_railcar) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(25.87863386300256));
+        running_cost_factor: round(25.87861278752583);
         power: int(750*1/2);
         weight: int(30*3/4);
         cargo_capacity: 70;

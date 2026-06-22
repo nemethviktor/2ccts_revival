@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_steam_porter_2_8_2_class_200_katanga_mikado) {
         vehicle_life: 38;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 37.92845;
-        running_cost_factor: 30.90337;
+        cost_factor: 37.89288;
+        running_cost_factor: 30.89623;
         speed: 55 km/h;
         power: 950 hp;
         cargo_capacity: 0;

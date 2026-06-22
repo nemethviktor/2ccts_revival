@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_mtro_caf_rome_s_300) {
         vehicle_life: 50;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 51.82;
-        running_cost_factor: 48.29405;
+        cost_factor: 51.76309;
+        running_cost_factor: 48.25532;
         speed: 80 km/h;
         power: 1650 hp;
         cargo_capacity: 210;
@@ -68,7 +68,7 @@ item(FEAT_TRAINS, item_mtro_caf_rome_s_300) {
     }
     livery_override (item_mtro_metro_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        running_cost_factor: (round(21.512019203205778));
+        running_cost_factor: round(21.51201920231798);
         power: int(1650*1/2);
         weight: int(31*3/4);
         cargo_capacity: 194;

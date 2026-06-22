@@ -35,8 +35,8 @@ item(FEAT_TRAINS, item_dmu_ganz_arpad_bariloche_dmu) {
         vehicle_life: 30;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 34.58461;
-        running_cost_factor: 29.55392;
+        cost_factor: 34.21472;
+        running_cost_factor: 29.1952;
         speed: 110 km/h;
         power: 640 hp;
         cargo_capacity: 55;
@@ -88,7 +88,7 @@ item(FEAT_TRAINS, item_dmu_ganz_arpad_bariloche_dmu) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(17.39388184256751));
+        running_cost_factor: round(17.393822128134705);
         power: int(640*1/2);
         weight: int(46*3/4);
         cargo_capacity: 55;

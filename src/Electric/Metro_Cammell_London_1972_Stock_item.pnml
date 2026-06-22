@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_mtro_metro_cammell_london_1972_stock) {
         vehicle_life: 58;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 46.63484;
-        running_cost_factor: 43.37456;
+        cost_factor: 46.49084;
+        running_cost_factor: 43.25143;
         speed: 72 km/h;
         power: 1400 hp;
         cargo_capacity: 121;
@@ -72,7 +72,7 @@ item(FEAT_TRAINS, item_mtro_metro_cammell_london_1972_stock) {
     }
     livery_override (item_mtro_metro_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        running_cost_factor: (round(18.19165741234904));
+        running_cost_factor: round(18.19165738677394);
         power: int(1400*1/2);
         weight: int(29*3/4);
         cargo_capacity: 120;

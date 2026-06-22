@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_dmu_kawasaki_rm_silver_fern) {
         vehicle_life: 46;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 37.6515;
-        running_cost_factor: 33.70374;
+        cost_factor: 37.07615;
+        running_cost_factor: 33.13797;
         speed: 120 km/h;
         power: 900 hp;
         cargo_capacity: 32;
@@ -83,7 +83,7 @@ item(FEAT_TRAINS, item_dmu_kawasaki_rm_silver_fern) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(22.00000549001284));
+        running_cost_factor: round(22.0);
         power: int(900*1/2);
         weight: int(35*3/4);
         cargo_capacity: 32;

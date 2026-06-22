@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_emu_hitachi_kawasaki_shinkansen_series_100) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 59.69096;
-        running_cost_factor: 53.80857;
+        cost_factor: 59.43994;
+        running_cost_factor: 53.56028;
         speed: 210 km/h;
         power: 2380 hp;
         cargo_capacity: 75;
@@ -83,7 +83,7 @@ item(FEAT_TRAINS, item_emu_hitachi_kawasaki_shinkansen_series_100) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        running_cost_factor: (round(41.77852555216714));
+        running_cost_factor: round(41.778524367060186);
         power: int(2380*1/2);
         weight: int(53*3/4);
         cargo_capacity: 100;

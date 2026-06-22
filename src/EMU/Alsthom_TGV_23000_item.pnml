@@ -35,8 +35,8 @@ item(FEAT_TRAINS, item_emu_alsthom_tgv_23000) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 103.38231;
-        running_cost_factor: 95.96077;
+        cost_factor: 103.22505;
+        running_cost_factor: 95.80537;
         speed: 240 km/h;
         power: 9119 hp;
         cargo_capacity: 0;
@@ -88,7 +88,7 @@ item(FEAT_TRAINS, item_emu_alsthom_tgv_23000) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        running_cost_factor: (round(44.24083832379323));
+        running_cost_factor: round(44.22534552731233);
         power: int(9119*1/2);
         weight: int(68*3/4);
         cargo_capacity: 43;

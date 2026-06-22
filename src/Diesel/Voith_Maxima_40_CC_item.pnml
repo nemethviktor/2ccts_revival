@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_diesel_voith_maxima_40_cc) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 84.10544;
-        running_cost_factor: 70.12503;
+        cost_factor: 84.09161;
+        running_cost_factor: 70.11832;
         speed: 140 km/h;
         power: 4900 hp;
         cargo_capacity: 0;

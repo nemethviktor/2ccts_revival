@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_electric_ssw_krauss_e44) {
         vehicle_life: 52;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 62.60755;
-        running_cost_factor: 54.4127;
+        cost_factor: 62.58824;
+        running_cost_factor: 54.40877;
         speed: 90 km/h;
         power: 2950 hp;
         cargo_capacity: 0;

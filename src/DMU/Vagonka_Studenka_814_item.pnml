@@ -36,8 +36,8 @@ item(FEAT_TRAINS, item_dmu_vagonka_studenka_814) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 25.88997;
-        running_cost_factor: 23.31402;
+        cost_factor: 25.67337;
+        running_cost_factor: 23.1156;
         speed: 80 km/h;
         power: 325 hp;
         cargo_capacity: 95;
@@ -89,7 +89,7 @@ item(FEAT_TRAINS, item_dmu_vagonka_studenka_814) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(12.55445326474844));
+        running_cost_factor: round(12.552775637731994);
         power: int(325*1/2);
         weight: int(22*3/4);
         cargo_capacity: 95;

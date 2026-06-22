@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_emu_leeds_clyde_standard_emu) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 28.89043;
-        running_cost_factor: 24.21449;
+        cost_factor: 28.6643;
+        running_cost_factor: 24.00653;
         speed: 80 km/h;
         power: 360 hp;
         cargo_capacity: 90;
@@ -83,7 +83,7 @@ item(FEAT_TRAINS, item_emu_leeds_clyde_standard_emu) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(18.498489819148617));
+        running_cost_factor: round(18.497366596101028);
         power: int(360*1/2);
         weight: int(43*3/4);
         cargo_capacity: 90;

@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_dmu_zos_vrutky_861) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 51.55162;
-        running_cost_factor: 45.07122;
+        cost_factor: 51.37125;
+        running_cost_factor: 44.89796;
         speed: 140 km/h;
         power: 1580 hp;
         cargo_capacity: 97;
@@ -83,7 +83,7 @@ item(FEAT_TRAINS, item_dmu_zos_vrutky_861) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(24.334921382944906));
+        running_cost_factor: round(24.33492138287036);
         power: int(1580*1/2);
         weight: int(60*3/4);
         cargo_capacity: 97;

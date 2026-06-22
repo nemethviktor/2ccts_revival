@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_emu_bombardier_ucw_electrostar_gautrain) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 56.78781;
-        running_cost_factor: 52.07649;
+        cost_factor: 56.48023;
+        running_cost_factor: 51.77427;
         speed: 160 km/h;
         power: 2253 hp;
         cargo_capacity: 64;
@@ -83,7 +83,7 @@ item(FEAT_TRAINS, item_emu_bombardier_ucw_electrostar_gautrain) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(28.390578368218172));
+        running_cost_factor: round(28.39057771452233);
         power: int(2253*1/2);
         weight: int(42*3/4);
         cargo_capacity: 64;

@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_electric_slm_abb_lok_2000) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 95.8823;
-        running_cost_factor: 86.87356;
+        cost_factor: 95.81854;
+        running_cost_factor: 86.81191;
         speed: 230 km/h;
         power: 7510 hp;
         cargo_capacity: 0;

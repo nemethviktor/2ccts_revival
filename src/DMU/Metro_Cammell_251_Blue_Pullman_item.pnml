@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_dmu_metro_cammell_251_blue_pullman) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 55.35235;
-        running_cost_factor: 48.16406;
+        cost_factor: 54.71652;
+        running_cost_factor: 47.53485;
         speed: 145 km/h;
         power: 2000 hp;
         cargo_capacity: 27;
@@ -83,7 +83,7 @@ item(FEAT_TRAINS, item_dmu_metro_cammell_251_blue_pullman) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(25.337136091482165));
+        running_cost_factor: round(25.33713595499958);
         power: int(2000*1/2);
         weight: int(67*3/4);
         cargo_capacity: 42;

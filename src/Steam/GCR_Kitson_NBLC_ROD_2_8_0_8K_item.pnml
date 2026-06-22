@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_steam_gcr_kitson_nblc_rod_2_8_0_8k) {
         vehicle_life: 32;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 41.78159;
-        running_cost_factor: 34.00564;
+        cost_factor: 41.75886;
+        running_cost_factor: 34.00109;
         speed: 80 km/h;
         power: 1150 hp;
         cargo_capacity: 0;

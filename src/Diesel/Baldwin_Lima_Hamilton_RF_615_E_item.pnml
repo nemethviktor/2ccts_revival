@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_diesel_baldwin_lima_hamilton_rf_615_e) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 49.78953;
-        running_cost_factor: 38.84177;
+        cost_factor: 49.77756;
+        running_cost_factor: 38.83938;
         speed: 120 km/h;
         power: 1500 hp;
         cargo_capacity: 0;

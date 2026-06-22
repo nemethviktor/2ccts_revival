@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_mtro_st__louis_car_company_chicago_l_6000_series) {
         vehicle_life: 50;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 29.52195;
-        running_cost_factor: 26.996;
+        cost_factor: 29.38356;
+        running_cost_factor: 26.87579;
         speed: 80 km/h;
         power: 440 hp;
         cargo_capacity: 125;
@@ -68,7 +68,7 @@ item(FEAT_TRAINS, item_mtro_st__louis_car_company_chicago_l_6000_series) {
     }
     livery_override (item_mtro_metro_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        running_cost_factor: (round(14.828081726106308));
+        running_cost_factor: round(14.827617696340305);
         power: int(440*1/2);
         weight: int(21*3/4);
         cargo_capacity: 130;

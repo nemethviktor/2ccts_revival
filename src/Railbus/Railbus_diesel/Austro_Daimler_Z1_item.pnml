@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_rbd_austro_daimler_z1) {
         vehicle_life: 30;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 12.57526;
-        running_cost_factor: 10.99632;
+        cost_factor: 11.012;
+        running_cost_factor: 9.47536;
         speed: 35 km/h;
         power: 55 hp;
         cargo_capacity: 16;

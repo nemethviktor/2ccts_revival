@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_dmu_anf_x_4630) {
         vehicle_life: 48;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 29.57181;
-        running_cost_factor: 26.02406;
+        cost_factor: 29.45375;
+        running_cost_factor: 25.91557;
         speed: 120 km/h;
         power: 396 hp;
         cargo_capacity: 133;
@@ -83,7 +83,7 @@ item(FEAT_TRAINS, item_dmu_anf_x_4630) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(18.33072550798457));
+        running_cost_factor: round(18.329974874213242);
         power: int(396*1/2);
         weight: int(31*3/4);
         cargo_capacity: 133;

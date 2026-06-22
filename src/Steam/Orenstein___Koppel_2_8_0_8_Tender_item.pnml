@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_steam_orenstein___koppel_2_8_0_8_tender) {
         vehicle_life: 30;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 34.51601;
-        running_cost_factor: 27.47027;
+        cost_factor: 34.48343;
+        running_cost_factor: 27.46359;
         speed: 60 km/h;
         power: 750 hp;
         cargo_capacity: 0;

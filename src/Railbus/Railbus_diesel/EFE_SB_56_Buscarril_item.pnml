@@ -34,8 +34,8 @@ item(FEAT_TRAINS, item_rbd_efe_sb_56_buscarril) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 19.57682;
-        running_cost_factor: 17.24109;
+        cost_factor: 18.96598;
+        running_cost_factor: 16.65615;
         speed: 60 km/h;
         power: 180 hp;
         cargo_capacity: 40;

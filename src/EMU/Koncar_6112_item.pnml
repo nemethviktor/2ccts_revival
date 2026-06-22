@@ -34,8 +34,8 @@ item(FEAT_TRAINS, item_emu_koncar_6112) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 61.33439;
-        running_cost_factor: 56.52307;
+        cost_factor: 61.00396;
+        running_cost_factor: 56.198;
         speed: 160 km/h;
         power: 2700 hp;
         cargo_capacity: 60;
@@ -87,7 +87,7 @@ item(FEAT_TRAINS, item_emu_koncar_6112) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(31.387156438726993));
+        running_cost_factor: round(31.38715242270663);
         power: int(2700*1/2);
         weight: int(43*3/4);
         cargo_capacity: 60;

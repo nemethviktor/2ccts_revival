@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_electric_slm_ae_6_6) {
         vehicle_life: 58;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 88.53432;
-        running_cost_factor: 76.08656;
+        cost_factor: 88.50824;
+        running_cost_factor: 76.07006;
         speed: 120 km/h;
         power: 5770 hp;
         cargo_capacity: 0;

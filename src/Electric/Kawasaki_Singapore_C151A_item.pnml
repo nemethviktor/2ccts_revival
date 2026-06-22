@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_mtro_kawasaki_singapore_c151a) {
         vehicle_life: 50;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 50.47183;
-        running_cost_factor: 46.57698;
+        cost_factor: 50.38752;
+        running_cost_factor: 46.50804;
         speed: 90 km/h;
         power: 1580 hp;
         cargo_capacity: 162;
@@ -68,7 +68,7 @@ item(FEAT_TRAINS, item_mtro_kawasaki_singapore_c151a) {
     }
     livery_override (item_mtro_metro_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        running_cost_factor: (round(23.474921382944906));
+        running_cost_factor: round(23.474921382870356);
         power: int(1580*1/2);
         weight: int(35*3/4);
         cargo_capacity: 250;

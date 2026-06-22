@@ -35,8 +35,8 @@ item(FEAT_TRAINS, item_dmu_abb_ic3__israel_) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 66.03716;
-        running_cost_factor: 60.69644;
+        cost_factor: 65.62546;
+        running_cost_factor: 60.28881;
         speed: 180 km/h;
         power: 3200 hp;
         cargo_capacity: 48;
@@ -88,7 +88,7 @@ item(FEAT_TRAINS, item_dmu_abb_ic3__israel_) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        running_cost_factor: (round(29.512872306380572));
+        running_cost_factor: round(29.512854249492378);
         power: int(3200*1/2);
         weight: int(48*3/4);
         cargo_capacity: 48;

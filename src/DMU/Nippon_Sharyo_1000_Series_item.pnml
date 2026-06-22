@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_dmu_nippon_sharyo_1000_series) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 51.11083;
-        running_cost_factor: 43.89978;
+        cost_factor: 50.873;
+        running_cost_factor: 43.67045;
         speed: 128 km/h;
         power: 1520 hp;
         cargo_capacity: 80;
@@ -83,7 +83,7 @@ item(FEAT_TRAINS, item_dmu_nippon_sharyo_1000_series) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(23.3137177400286));
+        running_cost_factor: round(23.31371773792359);
         power: int(1520*1/2);
         weight: int(67*3/4);
         cargo_capacity: 80;

@@ -34,8 +34,8 @@ item(FEAT_TRAINS, item_emu_victorian_railways_swing_door) {
         vehicle_life: 47;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 32.89555;
-        running_cost_factor: 27.81386;
+        cost_factor: 32.46624;
+        running_cost_factor: 27.40183;
         speed: 83 km/h;
         power: 563 hp;
         cargo_capacity: 48;
@@ -87,7 +87,7 @@ item(FEAT_TRAINS, item_emu_victorian_railways_swing_door) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(16.26589037337113));
+        running_cost_factor: round(16.265762103540936);
         power: int(563*1/2);
         weight: int(47*3/4);
         cargo_capacity: 75;

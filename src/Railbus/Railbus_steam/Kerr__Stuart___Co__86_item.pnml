@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_rbs_kerr__stuart___co__86) {
         vehicle_life: 30;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 23.10347;
-        running_cost_factor: 18.07839;
+        cost_factor: 22.74602;
+        running_cost_factor: 17.74938;
         speed: 55 km/h;
         power: 170 hp;
         cargo_capacity: 86;

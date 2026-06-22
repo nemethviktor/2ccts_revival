@@ -35,8 +35,8 @@ item(FEAT_TRAINS, item_emu_csr_qingdao_chr380a) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 66.97364;
-        running_cost_factor: 61.4248;
+        cost_factor: 66.70258;
+        running_cost_factor: 61.15424;
         speed: 350 km/h;
         power: 3210 hp;
         cargo_capacity: 70;
@@ -88,7 +88,7 @@ item(FEAT_TRAINS, item_emu_csr_qingdao_chr380a) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        running_cost_factor: (round(46.76170473667294));
+        running_cost_factor: round(46.76168618968612);
         power: int(3210*1/2);
         weight: int(48*3/4);
         cargo_capacity: 70;

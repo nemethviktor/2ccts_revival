@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_mtro_brel_abb_london_1992_stock) {
         vehicle_life: 50;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 50.10132;
-        running_cost_factor: 47.43825;
+        cost_factor: 49.98193;
+        running_cost_factor: 47.33193;
         speed: 100 km/h;
         power: 1700 hp;
         cargo_capacity: 130;
@@ -72,7 +72,7 @@ item(FEAT_TRAINS, item_mtro_brel_abb_london_1992_stock) {
     }
     livery_override (item_mtro_metro_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        running_cost_factor: (round(20.873105629222806));
+        running_cost_factor: round(20.87310562561766);
         power: int(1700*1/2);
         weight: int(22*3/4);
         cargo_capacity: 125;

@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_mtro_st__louis_car_co_new_york_r44) {
         vehicle_life: 50;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 41.03071;
-        running_cost_factor: 36.90002;
+        cost_factor: 40.93963;
+        running_cost_factor: 36.82011;
         speed: 110 km/h;
         power: 920 hp;
         cargo_capacity: 150;
@@ -68,7 +68,7 @@ item(FEAT_TRAINS, item_mtro_st__louis_car_co_new_york_r44) {
     }
     livery_override (item_mtro_metro_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        running_cost_factor: (round(23.653154781228782));
+        running_cost_factor: round(23.65315017762062);
         power: int(920*1/2);
         weight: int(37*3/4);
         cargo_capacity: 162;

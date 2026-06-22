@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_dmu_brel_141_pacer) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 21.30612;
-        running_cost_factor: 18.25668;
+        cost_factor: 20.80196;
+        running_cost_factor: 17.76196;
         speed: 121 km/h;
         power: 200 hp;
         cargo_capacity: 47;
@@ -83,7 +83,7 @@ item(FEAT_TRAINS, item_dmu_brel_141_pacer) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(15.654003111067649));
+        running_cost_factor: round(15.646213562373095);
         power: int(200*1/2);
         weight: int(26*3/4);
         cargo_capacity: 47;

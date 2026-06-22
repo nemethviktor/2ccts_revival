@@ -34,8 +34,8 @@ item(FEAT_TRAINS, item_emu_sig_rae_tee_ii) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 65.58806;
-        running_cost_factor: 60.14341;
+        cost_factor: 65.24532;
+        running_cost_factor: 59.80602;
         speed: 160 km/h;
         power: 3100 hp;
         cargo_capacity: 58;
@@ -87,7 +87,7 @@ item(FEAT_TRAINS, item_emu_sig_rae_tee_ii) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(31.138444757647413));
+        running_cost_factor: round(31.13843102949669);
         power: int(3100*1/2);
         weight: int(49*3/4);
         cargo_capacity: 58;

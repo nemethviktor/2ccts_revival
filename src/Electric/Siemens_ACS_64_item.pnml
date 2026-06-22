@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_electric_siemens_acs_64) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 92.39968;
-        running_cost_factor: 82.0295;
+        cost_factor: 92.3624;
+        running_cost_factor: 81.9953;
         speed: 201 km/h;
         power: 6700 hp;
         cargo_capacity: 0;

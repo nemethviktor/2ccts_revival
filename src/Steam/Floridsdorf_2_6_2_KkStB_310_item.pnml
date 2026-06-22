@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_steam_floridsdorf_2_6_2_kkstb_310) {
         vehicle_life: 39;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 57.73293;
-        running_cost_factor: 43.51986;
+        cost_factor: 57.71659;
+        running_cost_factor: 43.51659;
         speed: 100 km/h;
         power: 1885 hp;
         cargo_capacity: 0;

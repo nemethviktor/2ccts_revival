@@ -34,8 +34,8 @@ item(FEAT_TRAINS, item_emu_walkers_tilt_train_ett) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 51.8809;
-        running_cost_factor: 46.86958;
+        cost_factor: 51.45974;
+        running_cost_factor: 46.45378;
         speed: 160 km/h;
         power: 1820 hp;
         cargo_capacity: 47;
@@ -87,7 +87,7 @@ item(FEAT_TRAINS, item_emu_walkers_tilt_train_ett) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(30.97614582557415));
+        running_cost_factor: round(30.976145801540305);
         power: int(1820*1/2);
         weight: int(45*3/4);
         cargo_capacity: 56;

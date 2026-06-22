@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_mtro_werkspoor_rotterdam_mg2_type_m) {
         vehicle_life: 50;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 34.30547;
-        running_cost_factor: 31.42952;
+        cost_factor: 34.19309;
+        running_cost_factor: 31.33532;
         speed: 80 km/h;
         power: 630 hp;
         cargo_capacity: 140;
@@ -68,7 +68,7 @@ item(FEAT_TRAINS, item_mtro_werkspoor_rotterdam_mg2_type_m) {
     }
     livery_override (item_mtro_metro_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        running_cost_factor: (round(16.26004591557384));
+        running_cost_factor: round(16.259980079602226);
         power: int(630*1/2);
         weight: int(25*3/4);
         cargo_capacity: 235;

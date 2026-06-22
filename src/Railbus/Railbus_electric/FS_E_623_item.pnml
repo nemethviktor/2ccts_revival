@@ -34,8 +34,8 @@ item(FEAT_TRAINS, item_rbe_fs_e_623) {
         vehicle_life: 52;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 42.23919;
-        running_cost_factor: 35.2085;
+        cost_factor: 41.86309;
+        running_cost_factor: 34.84356;
         speed: 110 km/h;
         power: 965 hp;
         cargo_capacity: 54;

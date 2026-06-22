@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_electric_groupement_50_hz_wam_1) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 62.80626;
-        running_cost_factor: 54.97211;
+        cost_factor: 62.79262;
+        running_cost_factor: 54.9693;
         speed: 112 km/h;
         power: 3010 hp;
         cargo_capacity: 0;

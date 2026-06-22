@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_rbd_aec_railcar) {
         vehicle_life: 30;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 18.95482;
-        running_cost_factor: 16.13996;
+        cost_factor: 18.45756;
+        running_cost_factor: 15.65556;
         speed: 101 km/h;
         power: 130 hp;
         cargo_capacity: 69;

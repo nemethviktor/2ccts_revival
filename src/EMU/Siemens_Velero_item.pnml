@@ -35,8 +35,8 @@ item(FEAT_TRAINS, item_emu_siemens_velero) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 114.26894;
-        running_cost_factor: 108.43136;
+        cost_factor: 113.6012;
+        running_cost_factor: 107.76427;
         speed: 328 km/h;
         power: 10728 hp;
         cargo_capacity: 55;
@@ -88,7 +88,7 @@ item(FEAT_TRAINS, item_emu_siemens_velero) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        running_cost_factor: (round(58.47514112884971));
+        running_cost_factor: round(58.443980900979234);
         power: int(10728*1/2);
         weight: int(51*3/4);
         cargo_capacity: 55;

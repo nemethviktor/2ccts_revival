@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_rbs_maffei_mcci) {
         vehicle_life: 30;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 21.62182;
-        running_cost_factor: 18.1077;
+        cost_factor: 21.12334;
+        running_cost_factor: 17.6405;
         speed: 50 km/h;
         power: 195 hp;
         cargo_capacity: 52;

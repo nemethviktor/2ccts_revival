@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_electric_alsthom_cp_2500) {
         vehicle_life: 53;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 60.5802;
-        running_cost_factor: 52.93244;
+        cost_factor: 60.56817;
+        running_cost_factor: 52.93;
         speed: 120 km/h;
         power: 2790 hp;
         cargo_capacity: 0;

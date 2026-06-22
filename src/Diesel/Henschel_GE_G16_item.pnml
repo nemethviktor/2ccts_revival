@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_diesel_henschel_ge_g16) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 62.28625;
-        running_cost_factor: 44.26429;
+        cost_factor: 62.27115;
+        running_cost_factor: 44.26127;
         speed: 105 km/h;
         power: 1950 hp;
         cargo_capacity: 0;

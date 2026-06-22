@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_steam_nohab_4_6_2_f) {
         vehicle_life: 35;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 53.73836;
-        running_cost_factor: 40.10767;
+        cost_factor: 53.7244;
+        running_cost_factor: 40.10488;
         speed: 110 km/h;
         power: 1600 hp;
         cargo_capacity: 0;

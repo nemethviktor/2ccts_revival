@@ -36,8 +36,8 @@ item(FEAT_TRAINS, item_dmu_bombardier_talent_nsb_bm_93) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 36.62207;
-        running_cost_factor: 32.29166;
+        cost_factor: 36.11631;
+        running_cost_factor: 31.79303;
         speed: 140 km/h;
         power: 810 hp;
         cargo_capacity: 38;
@@ -89,7 +89,7 @@ item(FEAT_TRAINS, item_dmu_bombardier_talent_nsb_bm_93) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(21.928062103728067));
+        running_cost_factor: round(21.928049894151542);
         power: int(810*1/2);
         weight: int(38*3/4);
         cargo_capacity: 38;

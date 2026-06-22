@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_electric_siemens_e40_ag_v1) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 84.59087;
-        running_cost_factor: 73.31492;
+        cost_factor: 84.55923;
+        running_cost_factor: 73.30146;
         speed: 80 km/h;
         power: 5360 hp;
         cargo_capacity: 0;

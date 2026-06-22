@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_mtro_stanga_rome_mr_100) {
         vehicle_life: 56;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 39.54124;
-        running_cost_factor: 35.12816;
+        cost_factor: 39.4358;
+        running_cost_factor: 35.0358;
         speed: 100 km/h;
         power: 830 hp;
         cargo_capacity: 140;
@@ -68,7 +68,7 @@ item(FEAT_TRAINS, item_mtro_stanga_rome_mr_100) {
     }
     livery_override (item_mtro_metro_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        running_cost_factor: (round(21.28098226452495));
+        running_cost_factor: round(21.28097205817759);
         power: int(830*1/2);
         weight: int(40*3/4);
         cargo_capacity: 156;

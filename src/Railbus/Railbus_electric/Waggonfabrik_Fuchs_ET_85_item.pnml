@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_rbe_waggonfabrik_fuchs_et_85) {
         vehicle_life: 50;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 38.33867;
-        running_cost_factor: 31.87245;
+        cost_factor: 38.06608;
+        running_cost_factor: 31.61967;
         speed: 75 km/h;
         power: 740 hp;
         cargo_capacity: 75;

@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_electric_slm_bbc_mfo_ge_6_6_krokodil) {
         vehicle_life: 53;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 42.50282;
-        running_cost_factor: 35.57775;
+        cost_factor: 42.46729;
+        running_cost_factor: 35.57064;
         speed: 55 km/h;
         power: 1260 hp;
         cargo_capacity: 0;

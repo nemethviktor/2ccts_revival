@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_diesel_stadler_uklight) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 70.78404;
-        running_cost_factor: 61.77272;
+        cost_factor: 70.7766;
+        running_cost_factor: 61.77063;
         speed: 160 km/h;
         power: 3800 hp;
         cargo_capacity: 0;

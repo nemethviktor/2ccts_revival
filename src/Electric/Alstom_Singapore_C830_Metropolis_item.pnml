@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_mtro_alstom_singapore_c830_metropolis) {
         vehicle_life: 50;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 49.2242;
-        running_cost_factor: 45.32935;
+        cost_factor: 49.1279;
+        running_cost_factor: 45.24843;
         speed: 90 km/h;
         power: 1500 hp;
         cargo_capacity: 150;
@@ -68,7 +68,7 @@ item(FEAT_TRAINS, item_mtro_alstom_singapore_c830_metropolis) {
     }
     livery_override (item_mtro_metro_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        running_cost_factor: (round(23.372983349851516));
+        running_cost_factor: round(23.372983346207416);
         power: int(1500*1/2);
         weight: int(35*3/4);
         cargo_capacity: 250;

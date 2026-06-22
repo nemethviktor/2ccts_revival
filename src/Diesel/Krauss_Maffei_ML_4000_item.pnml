@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_diesel_krauss_maffei_ml_4000) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 75.63669;
-        running_cost_factor: 59.60599;
+        cost_factor: 75.6223;
+        running_cost_factor: 59.60278;
         speed: 110 km/h;
         power: 3540 hp;
         cargo_capacity: 0;

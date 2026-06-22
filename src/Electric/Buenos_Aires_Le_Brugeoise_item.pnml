@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_mtro_buenos_aires_le_brugeoise) {
         vehicle_life: 102;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 24.36438;
-        running_cost_factor: 22.70026;
+        cost_factor: 24.09295;
+        running_cost_factor: 22.4601;
         speed: 50 km/h;
         power: 310 hp;
         cargo_capacity: 84;
@@ -68,7 +68,7 @@ item(FEAT_TRAINS, item_mtro_buenos_aires_le_brugeoise) {
     }
     livery_override (item_mtro_metro_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        running_cost_factor: (round(9.46268033273092));
+        running_cost_factor: round(9.460681686165902);
         power: int(310*1/2);
         weight: int(13*3/4);
         cargo_capacity: 142;

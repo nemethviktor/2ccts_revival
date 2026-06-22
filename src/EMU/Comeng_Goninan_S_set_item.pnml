@@ -35,8 +35,8 @@ item(FEAT_TRAINS, item_emu_comeng_goninan_s_set) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 50.91494;
-        running_cost_factor: 45.77565;
+        cost_factor: 50.76669;
+        running_cost_factor: 45.63774;
         speed: 115 km/h;
         power: 1600 hp;
         cargo_capacity: 112;
@@ -88,7 +88,7 @@ item(FEAT_TRAINS, item_emu_comeng_goninan_s_set) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(26.732999999999997));
+        running_cost_factor: round(26.732999999999997);
         power: int(1600*1/2);
         weight: int(47*3/4);
         cargo_capacity: 130;

@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_diesel_bbc_slm_am_4_6) {
         vehicle_life: 37;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 56.32163;
-        running_cost_factor: 46.69094;
+        cost_factor: 56.30766;
+        running_cost_factor: 46.68814;
         speed: 110 km/h;
         power: 2170 hp;
         cargo_capacity: 0;

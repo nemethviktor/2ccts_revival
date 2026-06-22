@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_electric_bombardier_traxx_h80_ac) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 157.41921;
-        running_cost_factor: 121.04326;
+        cost_factor: 156.44721;
+        running_cost_factor: 120.08944;
         speed: 80 km/h;
         power: 14400 hp;
         cargo_capacity: 0;

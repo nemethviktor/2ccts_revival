@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_electric_alstom_crrc_datong_hxd2b) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 129.77695;
-        running_cost_factor: 114.32919;
+        cost_factor: 129.12589;
+        running_cost_factor: 113.68771;
         speed: 120 km/h;
         power: 12900 hp;
         cargo_capacity: 0;

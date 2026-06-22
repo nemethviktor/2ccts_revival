@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_mtro_brooklyn_union_gate_elevated) {
         vehicle_life: 50;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 21.40123;
-        running_cost_factor: 18.2655;
+        cost_factor: 20.88454;
+        running_cost_factor: 17.7747;
         speed: 60 km/h;
         power: 200 hp;
         cargo_capacity: 48;
@@ -72,7 +72,7 @@ item(FEAT_TRAINS, item_mtro_brooklyn_union_gate_elevated) {
     }
     livery_override (item_mtro_metro_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        running_cost_factor: (round(9.970003111067648));
+        running_cost_factor: round(9.962213562373094);
         power: int(200*1/2);
         weight: int(28*3/4);
         cargo_capacity: 48;

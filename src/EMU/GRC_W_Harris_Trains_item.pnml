@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_emu_grc_w_harris_trains) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 39.05606;
-        running_cost_factor: 34.02019;
+        cost_factor: 38.88179;
+        running_cost_factor: 33.85658;
         speed: 113 km/h;
         power: 808 hp;
         cargo_capacity: 101;
@@ -84,7 +84,7 @@ item(FEAT_TRAINS, item_emu_grc_w_harris_trains) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(27.942546511903082));
+        running_cost_factor: round(27.94253408071038);
         power: int(808*1/2);
         weight: int(46*3/4);
         cargo_capacity: 100;

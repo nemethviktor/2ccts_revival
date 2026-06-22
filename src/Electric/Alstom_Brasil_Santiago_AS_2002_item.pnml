@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_mtro_alstom_brasil_santiago_as_2002) {
         vehicle_life: 50;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 50.03518;
-        running_cost_factor: 46.42211;
+        cost_factor: 49.96442;
+        running_cost_factor: 46.36442;
         speed: 100 km/h;
         power: 1550 hp;
         cargo_capacity: 175;
@@ -68,7 +68,7 @@ item(FEAT_TRAINS, item_mtro_alstom_brasil_santiago_as_2002) {
     }
     livery_override (item_mtro_metro_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        running_cost_factor: (round(22.897003937702145));
+        running_cost_factor: round(22.897003937005906);
         power: int(1550*1/2);
         weight: int(32*3/4);
         cargo_capacity: 196;

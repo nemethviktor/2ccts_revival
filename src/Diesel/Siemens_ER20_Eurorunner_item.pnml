@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_diesel_siemens_er20_eurorunner) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 60.36926;
-        running_cost_factor: 51.88886;
+        cost_factor: 60.36032;
+        running_cost_factor: 51.88704;
         speed: 140 km/h;
         power: 2680 hp;
         cargo_capacity: 0;

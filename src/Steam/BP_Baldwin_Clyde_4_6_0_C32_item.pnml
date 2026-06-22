@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_steam_bp_baldwin_clyde_4_6_0_c32) {
         vehicle_life: 64;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 33.74944;
-        running_cost_factor: 26.93636;
+        cost_factor: 33.73282;
+        running_cost_factor: 26.93282;
         speed: 100 km/h;
         power: 720 hp;
         cargo_capacity: 0;

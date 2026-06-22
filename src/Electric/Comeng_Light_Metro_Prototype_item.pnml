@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_mtro_comeng_light_metro_prototype) {
         vehicle_life: 50;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 30.49289;
-        running_cost_factor: 27.87981;
+        cost_factor: 30.31068;
+        running_cost_factor: 27.71068;
         speed: 100 km/h;
         power: 500 hp;
         cargo_capacity: 100;
@@ -72,7 +72,7 @@ item(FEAT_TRAINS, item_mtro_comeng_light_metro_prototype) {
     }
     livery_override (item_mtro_metro_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        running_cost_factor: (round(17.736313276997155));
+        running_cost_factor: round(17.73606797749979);
         power: int(500*1/2);
         weight: int(22*3/4);
         cargo_capacity: 80;

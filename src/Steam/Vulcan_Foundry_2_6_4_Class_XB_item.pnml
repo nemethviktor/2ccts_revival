@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_steam_vulcan_foundry_2_6_4_class_xb) {
         vehicle_life: 56;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 63.15646;
-        running_cost_factor: 46.47577;
+        cost_factor: 63.1425;
+        running_cost_factor: 46.47297;
         speed: 110 km/h;
         power: 2150 hp;
         cargo_capacity: 0;

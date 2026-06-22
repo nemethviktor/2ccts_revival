@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_mtro_kawasaki_tokyo_s01) {
         vehicle_life: 50;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 33.56216;
-        running_cost_factor: 30.83622;
+        cost_factor: 33.37543;
+        running_cost_factor: 30.66766;
         speed: 80 km/h;
         power: 640 hp;
         cargo_capacity: 100;
@@ -68,7 +68,7 @@ item(FEAT_TRAINS, item_mtro_kawasaki_tokyo_s01) {
     }
     livery_override (item_mtro_metro_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        running_cost_factor: (round(17.10988184256751));
+        running_cost_factor: round(17.109822128134706);
         power: int(640*1/2);
         weight: int(23*3/4);
         cargo_capacity: 120;

@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_steam_krauss_299) {
         vehicle_life: 50;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 26.5316;
-        running_cost_factor: 21.99586;
+        cost_factor: 26.4962;
+        running_cost_factor: 21.98636;
         speed: 60 km/h;
         power: 480 hp;
         cargo_capacity: 0;

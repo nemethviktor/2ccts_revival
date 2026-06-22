@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_diesel_baldwin_drs6_4_1000) {
         vehicle_life: 30;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 41.29273;
-        running_cost_factor: 31.71679;
+        cost_factor: 41.26999;
+        running_cost_factor: 31.71222;
         speed: 80 km/h;
         power: 1000 hp;
         cargo_capacity: 0;

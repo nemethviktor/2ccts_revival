@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_rbd_sgp_77783_1960) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 32.44213;
-        running_cost_factor: 26.68604;
+        cost_factor: 31.92213;
+        running_cost_factor: 26.17491;
         speed: 125 km/h;
         power: 530 hp;
         cargo_capacity: 37;

@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_steam_eveleigh_4_6_0_c35) {
         vehicle_life: 53;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 50.48651;
-        running_cost_factor: 37.51056;
+        cost_factor: 50.46379;
+        running_cost_factor: 37.50602;
         speed: 80 km/h;
         power: 1400 hp;
         cargo_capacity: 0;

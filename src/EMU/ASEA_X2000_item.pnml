@@ -37,8 +37,8 @@ item(FEAT_TRAINS, item_emu_asea_x2000) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 74.45781;
-        running_cost_factor: 66.58901;
+        cost_factor: 74.4516;
+        running_cost_factor: 66.58592;
         speed: 200 km/h;
         power: 4400 hp;
         cargo_capacity: 0;
@@ -90,7 +90,7 @@ item(FEAT_TRAINS, item_emu_asea_x2000) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        running_cost_factor: (round(34.80948046975556));
+        running_cost_factor: round(34.8092495807108);
         power: int(4400*1/2);
         weight: int(73*3/4);
         cargo_capacity: 72;

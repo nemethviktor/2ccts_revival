@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_diesel_mak___vossloh_g1206) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 53.94937;
-        running_cost_factor: 44.93629;
+        cost_factor: 53.93302;
+        running_cost_factor: 44.93302;
         speed: 100 km/h;
         power: 2010 hp;
         cargo_capacity: 0;

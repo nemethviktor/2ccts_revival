@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_rbe_decauville_z_7100) {
         vehicle_life: 46;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 46.03042;
-        running_cost_factor: 40.0661;
+        cost_factor: 45.74987;
+        running_cost_factor: 39.7938;
         speed: 130 km/h;
         power: 1260 hp;
         cargo_capacity: 70;

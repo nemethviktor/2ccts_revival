@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_rbd_hutt_rm31) {
         vehicle_life: 30;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 22.59674;
-        running_cost_factor: 19.18367;
+        cost_factor: 22.1352;
+        running_cost_factor: 18.7352;
         speed: 100 km/h;
         power: 228 hp;
         cargo_capacity: 50;

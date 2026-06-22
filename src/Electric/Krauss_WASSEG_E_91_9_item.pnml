@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_electric_krauss_wasseg_e_91_9) {
         vehicle_life: 50;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 60.02922;
-        running_cost_factor: 47.30415;
+        cost_factor: 59.99369;
+        running_cost_factor: 47.29704;
         speed: 55 km/h;
         power: 2230 hp;
         cargo_capacity: 0;

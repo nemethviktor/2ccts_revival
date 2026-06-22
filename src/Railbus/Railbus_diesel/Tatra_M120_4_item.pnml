@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_rbd_tatra_m120_4) {
         vehicle_life: 30;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 16.49249;
-        running_cost_factor: 14.85676;
+        cost_factor: 15.72396;
+        running_cost_factor: 14.11412;
         speed: 60 km/h;
         power: 120 hp;
         cargo_capacity: 38;

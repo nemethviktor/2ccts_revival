@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_diesel_hcp_301d) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 52.5927;
-        running_cost_factor: 41.94494;
+        cost_factor: 52.58072;
+        running_cost_factor: 41.94255;
         speed: 120 km/h;
         power: 1750 hp;
         cargo_capacity: 0;

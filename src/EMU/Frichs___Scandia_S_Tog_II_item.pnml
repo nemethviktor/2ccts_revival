@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_emu_frichs___scandia_s_tog_ii) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 28.98489;
-        running_cost_factor: 24.27181;
+        cost_factor: 28.61266;
+        running_cost_factor: 23.91266;
         speed: 100 km/h;
         power: 400 hp;
         cargo_capacity: 56;
@@ -83,7 +83,7 @@ item(FEAT_TRAINS, item_emu_frichs___scandia_s_tog_ii) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(15.053718154932408));
+        running_cost_factor: round(15.053);
         power: int(400*1/2);
         weight: int(43*3/4);
         cargo_capacity: 56;

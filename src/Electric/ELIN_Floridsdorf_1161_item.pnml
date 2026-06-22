@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_electric_elin_floridsdorf_1161) {
         vehicle_life: 60;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 37.4867;
-        running_cost_factor: 31.69558;
+        cost_factor: 37.439;
+        running_cost_factor: 31.68602;
         speed: 40 km/h;
         power: 1000 hp;
         cargo_capacity: 0;

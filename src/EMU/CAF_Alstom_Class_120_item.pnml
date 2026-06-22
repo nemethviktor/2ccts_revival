@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_emu_caf_alstom_class_120) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 62.93806;
-        running_cost_factor: 56.20396;
+        cost_factor: 62.61227;
+        running_cost_factor: 55.87981;
         speed: 250 km/h;
         power: 2680 hp;
         cargo_capacity: 60;
@@ -83,7 +83,7 @@ item(FEAT_TRAINS, item_emu_caf_alstom_class_120) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        running_cost_factor: (round(35.05687539284588));
+        running_cost_factor: round(35.056871642217914);
         power: int(2680*1/2);
         weight: int(61*3/4);
         cargo_capacity: 60;

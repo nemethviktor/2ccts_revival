@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_mtro_man_munchen_mvg_a2) {
         vehicle_life: 55;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 40.478;
-        running_cost_factor: 37.52206;
+        cost_factor: 40.37246;
+        running_cost_factor: 37.43469;
         speed: 80 km/h;
         power: 965 hp;
         cargo_capacity: 145;
@@ -68,7 +68,7 @@ item(FEAT_TRAINS, item_mtro_man_munchen_mvg_a2) {
     }
     livery_override (item_mtro_metro_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        running_cost_factor: (round(17.814448009408196));
+        running_cost_factor: round(17.814444913401815);
         power: int(965*1/2);
         weight: int(25*3/4);
         cargo_capacity: 195;

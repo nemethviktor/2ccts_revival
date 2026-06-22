@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_emu_brel_gec_auckland_art_concept) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 48.08887;
-        running_cost_factor: 43.84112;
+        cost_factor: 47.84969;
+        running_cost_factor: 43.61151;
         speed: 120 km/h;
         power: 1500 hp;
         cargo_capacity: 80;
@@ -83,7 +83,7 @@ item(FEAT_TRAINS, item_emu_brel_gec_auckland_art_concept) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(27.272983349851515));
+        running_cost_factor: round(27.27298334620742);
         power: int(1500*1/2);
         weight: int(38*3/4);
         cargo_capacity: 80;

@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_steam_slm_winterthur_a_3_5) {
         vehicle_life: 31;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 47.72235;
-        running_cost_factor: 36.70928;
+        cost_factor: 47.70601;
+        running_cost_factor: 36.70601;
         speed: 100 km/h;
         power: 1340 hp;
         cargo_capacity: 0;

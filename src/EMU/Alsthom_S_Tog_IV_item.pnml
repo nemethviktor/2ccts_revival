@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_emu_alsthom_s_tog_iv) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 42.67795;
-        running_cost_factor: 39.0802;
+        cost_factor: 42.47379;
+        running_cost_factor: 38.88561;
         speed: 120 km/h;
         power: 1150 hp;
         cargo_capacity: 90;
@@ -83,7 +83,7 @@ item(FEAT_TRAINS, item_emu_alsthom_s_tog_iv) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(19.202665548180395));
+        running_cost_factor: round(19.202664991562635);
         power: int(1150*1/2);
         weight: int(31*3/4);
         cargo_capacity: 90;

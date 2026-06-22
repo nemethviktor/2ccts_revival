@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_emu_asea_ew54) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 36.65858;
-        running_cost_factor: 32.24551;
+        cost_factor: 36.58797;
+        running_cost_factor: 32.18797;
         speed: 100 km/h;
         power: 642 hp;
         cargo_capacity: 176;
@@ -83,7 +83,7 @@ item(FEAT_TRAINS, item_emu_asea_ew54) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(17.21383045558857));
+        running_cost_factor: round(17.213771891863985);
         power: int(642*1/2);
         weight: int(40*3/4);
         cargo_capacity: 176;

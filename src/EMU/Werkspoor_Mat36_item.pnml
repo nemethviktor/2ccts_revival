@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_emu_werkspoor_mat36) {
         vehicle_life: 34;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 41.55043;
-        running_cost_factor: 36.84433;
+        cost_factor: 41.27841;
+        running_cost_factor: 36.5812;
         speed: 125 km/h;
         power: 1032 hp;
         cargo_capacity: 72;
@@ -83,7 +83,7 @@ item(FEAT_TRAINS, item_emu_werkspoor_mat36) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(20.047477382154867));
+        running_cost_factor: round(20.047475680841803);
         power: int(1032*1/2);
         weight: int(42*3/4);
         cargo_capacity: 72;

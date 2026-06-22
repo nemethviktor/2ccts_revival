@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_mu_coach_gen5_citynightline_sleeper) {
         vehicle_life: 25;
         retire_early: 0;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 32.31957;
-        running_cost_factor: 22.54794;
+        cost_factor: 32.31623;
+        running_cost_factor: 22.54743;
         speed: 160 km/h;
         power: 0 hp;
         cargo_capacity: 60;

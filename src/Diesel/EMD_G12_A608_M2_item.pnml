@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_diesel_emd_g12_a608_m2) {
         vehicle_life: 76;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 46.19185;
-        running_cost_factor: 37.85771;
+        cost_factor: 46.17832;
+        running_cost_factor: 37.855;
         speed: 112 km/h;
         power: 1425 hp;
         cargo_capacity: 0;

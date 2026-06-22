@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_emu_comeng_mk_hitachi_trains) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 60.23254;
-        running_cost_factor: 55.79155;
+        cost_factor: 60.15287;
+        running_cost_factor: 55.72205;
         speed: 116 km/h;
         power: 2400 hp;
         cargo_capacity: 160;
@@ -84,7 +84,7 @@ item(FEAT_TRAINS, item_emu_comeng_mk_hitachi_trains) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(28.498980777504027));
+        running_cost_factor: round(28.498979485566355);
         power: int(2400*1/2);
         weight: int(40*3/4);
         cargo_capacity: 160;

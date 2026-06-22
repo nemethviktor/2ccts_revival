@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_diesel_electroputre_060_da) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 57.6136;
-        running_cost_factor: 45.60052;
+        cost_factor: 57.59725;
+        running_cost_factor: 45.59725;
         speed: 100 km/h;
         power: 2070 hp;
         cargo_capacity: 0;

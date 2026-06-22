@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_diesel_siemens_charger_alc_42) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 77.52176;
-        running_cost_factor: 64.95159;
+        cost_factor: 77.51628;
+        running_cost_factor: 64.94918;
         speed: 201 km/h;
         power: 4200 hp;
         cargo_capacity: 0;

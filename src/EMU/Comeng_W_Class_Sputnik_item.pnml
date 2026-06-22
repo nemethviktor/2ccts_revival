@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_emu_comeng_w_class_sputnik) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 37.64829;
-        running_cost_factor: 32.05053;
+        cost_factor: 37.30639;
+        running_cost_factor: 31.71821;
         speed: 120 km/h;
         power: 760 hp;
         cargo_capacity: 59;
@@ -83,7 +83,7 @@ item(FEAT_TRAINS, item_emu_comeng_w_class_sputnik) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(25.05682897445874));
+        running_cost_factor: round(25.056809750418047);
         power: int(760*1/2);
         weight: int(51*3/4);
         cargo_capacity: 70;

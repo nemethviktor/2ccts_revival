@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_emu_nswgr_tulloch_emu) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 28.97886;
-        running_cost_factor: 24.24817;
+        cost_factor: 28.76149;
+        running_cost_factor: 24.04196;
         speed: 110 km/h;
         power: 360 hp;
         cargo_capacity: 90;
@@ -83,7 +83,7 @@ item(FEAT_TRAINS, item_emu_nswgr_tulloch_emu) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(22.358489819148616));
+        running_cost_factor: round(22.35736659610103);
         power: int(360*1/2);
         weight: int(43*3/4);
         cargo_capacity: 90;

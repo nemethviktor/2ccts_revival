@@ -35,8 +35,8 @@ item(FEAT_TRAINS, item_dmu_tzv_gredelj_7022) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 34.01194;
-        running_cost_factor: 29.00062;
+        cost_factor: 33.90892;
+        running_cost_factor: 28.90295;
         speed: 160 km/h;
         power: 520 hp;
         cargo_capacity: 136;
@@ -88,7 +88,7 @@ item(FEAT_TRAINS, item_dmu_tzv_gredelj_7022) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(24.670550065962736));
+        running_cost_factor: round(24.670350850198275);
         power: int(520*1/2);
         weight: int(45*3/4);
         cargo_capacity: 66;

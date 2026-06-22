@@ -34,8 +34,8 @@ item(FEAT_TRAINS, item_dmu_fuji_kiha_181) {
         vehicle_life: 43;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 31.42956;
-        running_cost_factor: 26.5818;
+        cost_factor: 31.03895;
+        running_cost_factor: 26.20078;
         speed: 120 km/h;
         power: 500 hp;
         cargo_capacity: 52;
@@ -87,7 +87,7 @@ item(FEAT_TRAINS, item_dmu_fuji_kiha_181) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(19.736313276997155));
+        running_cost_factor: round(19.73606797749979);
         power: int(500*1/2);
         weight: int(44*3/4);
         cargo_capacity: 76;

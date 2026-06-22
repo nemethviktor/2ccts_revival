@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_diesel_werkspoor_200_sik) {
         vehicle_life: 74;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 11.52674;
-        running_cost_factor: 9.091;
+        cost_factor: 10.97258;
+        running_cost_factor: 8.56274;
         speed: 60 km/h;
         power: 72 hp;
         cargo_capacity: 0;

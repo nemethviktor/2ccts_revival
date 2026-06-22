@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_emu_fiat_caf_sm4) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 51.94846;
-        running_cost_factor: 45.73714;
+        cost_factor: 51.75578;
+        running_cost_factor: 45.54982;
         speed: 160 km/h;
         power: 1636 hp;
         cargo_capacity: 92;
@@ -83,7 +83,7 @@ item(FEAT_TRAINS, item_emu_fiat_caf_sm4) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(30.304749683710845));
+        running_cost_factor: round(30.304749683231336);
         power: int(1636*1/2);
         weight: int(57*3/4);
         cargo_capacity: 92;

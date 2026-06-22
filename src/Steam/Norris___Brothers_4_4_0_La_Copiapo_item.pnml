@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_steam_norris___brothers_4_4_0_la_copiapo) {
         vehicle_life: 79;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 24.33984;
-        running_cost_factor: 20.07371;
+        cost_factor: 24.27386;
+        running_cost_factor: 20.05477;
         speed: 30 km/h;
         power: 400 hp;
         cargo_capacity: 0;

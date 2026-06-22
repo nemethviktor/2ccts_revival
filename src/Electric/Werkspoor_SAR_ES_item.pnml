@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_electric_werkspoor_sar_es) {
         vehicle_life: 47;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 41.83378;
-        running_cost_factor: 34.74266;
+        cost_factor: 41.7861;
+        running_cost_factor: 34.73312;
         speed: 40 km/h;
         power: 1202 hp;
         cargo_capacity: 0;

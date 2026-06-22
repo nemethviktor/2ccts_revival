@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_mtro_siemens_oslo_mx3000) {
         vehicle_life: 50;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 49.1162;
-        running_cost_factor: 45.61026;
+        cost_factor: 49.03017;
+        running_cost_factor: 45.5424;
         speed: 80 km/h;
         power: 1500 hp;
         cargo_capacity: 164;
@@ -68,7 +68,7 @@ item(FEAT_TRAINS, item_mtro_siemens_oslo_mx3000) {
     }
     livery_override (item_mtro_metro_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        running_cost_factor: (round(21.888983349851515));
+        running_cost_factor: round(21.888983346207418);
         power: int(1500*1/2);
         weight: int(31*3/4);
         cargo_capacity: 164;

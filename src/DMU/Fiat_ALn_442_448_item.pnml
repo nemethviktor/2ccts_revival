@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_dmu_fiat_aln_442_448) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 45.44853;
-        running_cost_factor: 39.76812;
+        cost_factor: 45.11593;
+        running_cost_factor: 39.44264;
         speed: 140 km/h;
         power: 1250 hp;
         cargo_capacity: 60;
@@ -83,7 +83,7 @@ item(FEAT_TRAINS, item_dmu_fiat_aln_442_448) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(22.527534097034824));
+        running_cost_factor: round(22.52753390593274);
         power: int(1250*1/2);
         weight: int(52*3/4);
         cargo_capacity: 60;

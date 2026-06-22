@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_rbd_strommens_kristine_valdresdatter) {
         vehicle_life: 30;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 16.34928;
-        running_cost_factor: 14.9362;
+        cost_factor: 15.61673;
+        running_cost_factor: 14.21673;
         speed: 100 km/h;
         power: 120 hp;
         cargo_capacity: 40;

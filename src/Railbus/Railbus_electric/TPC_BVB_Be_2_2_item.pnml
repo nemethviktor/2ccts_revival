@@ -34,8 +34,8 @@ item(FEAT_TRAINS, item_rbe_tpc_bvb_be_2_2) {
         vehicle_life: 30;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 22.69048;
-        running_cost_factor: 20.93802;
+        cost_factor: 21.87461;
+        running_cost_factor: 20.17461;
         speed: 25 km/h;
         power: 320 hp;
         cargo_capacity: 20;

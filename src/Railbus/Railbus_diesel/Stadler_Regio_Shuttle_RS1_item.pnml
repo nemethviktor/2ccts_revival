@@ -34,8 +34,8 @@ item(FEAT_TRAINS, item_rbd_stadler_regio_shuttle_rs1) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 37.2109;
-        running_cost_factor: 32.76314;
+        cost_factor: 37.10963;
+        running_cost_factor: 32.67145;
         speed: 120 km/h;
         power: 710 hp;
         cargo_capacity: 140;

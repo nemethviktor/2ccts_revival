@@ -34,8 +34,8 @@ item(FEAT_TRAINS, item_rbe_oncf_zab1000) {
         vehicle_life: 30;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 30.15023;
-        running_cost_factor: 25.76475;
+        cost_factor: 29.6865;
+        running_cost_factor: 25.31772;
         speed: 85 km/h;
         power: 480 hp;
         cargo_capacity: 44;

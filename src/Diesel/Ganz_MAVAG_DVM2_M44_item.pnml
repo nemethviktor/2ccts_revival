@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_diesel_ganz_mavag_dvm2_m44) {
         vehicle_life: 76;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 30.96083;
-        running_cost_factor: 24.38488;
+        cost_factor: 30.93713;
+        running_cost_factor: 24.37936;
         speed: 80 km/h;
         power: 590 hp;
         cargo_capacity: 0;

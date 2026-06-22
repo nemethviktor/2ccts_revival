@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_mtro_tudh_recife_vlt_mobile_3) {
         vehicle_life: 50;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 41.33354;
-        running_cost_factor: 38.15759;
+        cost_factor: 41.23371;
+        running_cost_factor: 38.07594;
         speed: 80 km/h;
         power: 1000 hp;
         cargo_capacity: 150;
@@ -68,7 +68,7 @@ item(FEAT_TRAINS, item_mtro_tudh_recife_vlt_mobile_3) {
     }
     livery_override (item_mtro_metro_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        running_cost_factor: (round(17.882279928844184));
+        running_cost_factor: round(17.882277660168377);
         power: int(1000*1/2);
         weight: int(28*3/4);
         cargo_capacity: 182;

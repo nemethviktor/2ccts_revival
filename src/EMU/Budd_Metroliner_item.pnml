@@ -37,8 +37,8 @@ item(FEAT_TRAINS, item_emu_budd_metroliner) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 61.9217;
-        running_cost_factor: 53.86678;
+        cost_factor: 61.6739;
+        running_cost_factor: 53.62253;
         speed: 190 km/h;
         power: 2400 hp;
         cargo_capacity: 76;
@@ -90,7 +90,7 @@ item(FEAT_TRAINS, item_emu_budd_metroliner) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        running_cost_factor: (round(34.09898077750403));
+        running_cost_factor: round(34.09897948556636);
         power: int(2400*1/2);
         weight: int(75*3/4);
         cargo_capacity: 76;

@@ -34,8 +34,8 @@ item(FEAT_TRAINS, item_dmu_tatra_m131) {
         vehicle_life: 36;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 18.10301;
-        running_cost_factor: 16.93728;
+        cost_factor: 17.59711;
+        running_cost_factor: 16.45727;
         speed: 60 km/h;
         power: 152 hp;
         cargo_capacity: 60;
@@ -87,7 +87,7 @@ item(FEAT_TRAINS, item_dmu_tatra_m131) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(8.725266754209466));
+        running_cost_factor: round(8.710282800593795);
         power: int(152*1/2);
         weight: int(8*3/4);
         cargo_capacity: 69;

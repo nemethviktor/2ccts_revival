@@ -35,8 +35,8 @@ item(FEAT_TRAINS, item_emu_swp_rabde_510) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 58.17877;
-        running_cost_factor: 51.12268;
+        cost_factor: 57.81896;
+        running_cost_factor: 50.77175;
         speed: 125 km/h;
         power: 2184 hp;
         cargo_capacity: 56;
@@ -88,7 +88,7 @@ item(FEAT_TRAINS, item_emu_swp_rabde_510) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(29.383329031643548));
+        running_cost_factor: round(29.38332857821917);
         power: int(2184*1/2);
         weight: int(66*3/4);
         cargo_capacity: 66;

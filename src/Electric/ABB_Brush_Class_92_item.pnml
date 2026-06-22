@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_electric_abb_brush_class_92) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 95.45483;
-        running_cost_factor: 82.37442;
+        cost_factor: 95.41083;
+        running_cost_factor: 82.33754;
         speed: 140 km/h;
         power: 6760 hp;
         cargo_capacity: 0;

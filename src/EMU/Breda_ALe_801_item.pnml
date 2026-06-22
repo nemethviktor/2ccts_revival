@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_emu_breda_ale_801) {
         vehicle_life: 43;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 38.89504;
-        running_cost_factor: 31.39898;
+        cost_factor: 38.65979;
+        running_cost_factor: 31.16989;
         speed: 150 km/h;
         power: 702 hp;
         cargo_capacity: 80;
@@ -83,7 +83,7 @@ item(FEAT_TRAINS, item_emu_breda_ale_801) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(23.249561228095157));
+        running_cost_factor: round(23.249528259898355);
         power: int(702*1/2);
         weight: int(70*3/4);
         cargo_capacity: 108;

@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_steam_hanomag_alco_4_8_0_240) {
         vehicle_life: 51;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 59.5941;
-        running_cost_factor: 45.07214;
+        cost_factor: 59.579;
+        running_cost_factor: 45.06912;
         speed: 105 km/h;
         power: 2022 hp;
         cargo_capacity: 0;

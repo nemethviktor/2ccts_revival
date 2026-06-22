@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_emu_hyundai_rotem__mitsui_matangi) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 41.72727;
-        running_cost_factor: 37.47951;
+        cost_factor: 41.66958;
+        running_cost_factor: 37.43141;
         speed: 120 km/h;
         power: 910 hp;
         cargo_capacity: 188;
@@ -83,7 +83,7 @@ item(FEAT_TRAINS, item_emu_hyundai_rotem__mitsui_matangi) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(26.416625653031314));
+        running_cost_factor: round(26.416620625799673);
         power: int(910*1/2);
         weight: int(38*3/4);
         cargo_capacity: 188;

@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_mmu_acme_corp__chimaera) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 167.30665;
-        running_cost_factor: 151.29232;
+        cost_factor: 164.49295;
+        running_cost_factor: 148.47866;
         speed: 643 km/h;
         power: 20000 hp;
         cargo_capacity: 150;
@@ -84,7 +84,7 @@ item(FEAT_TRAINS, item_mmu_acme_corp__chimaera) {
     }
     livery_override (item_mglv_maglev_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        running_cost_factor: (round(180.7157940928426));
+        running_cost_factor: round(180.44213562373096);
         power: int(20000*1/2);
         weight: int(150*3/4);
         cargo_capacity: 150;

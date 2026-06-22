@@ -36,8 +36,8 @@ item(FEAT_TRAINS, item_dmu_brel_43_ic125) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 71.55647;
-        running_cost_factor: 67.4863;
+        cost_factor: 71.54991;
+        running_cost_factor: 67.48281;
         speed: 201 km/h;
         power: 4500 hp;
         cargo_capacity: 0;
@@ -89,7 +89,7 @@ item(FEAT_TRAINS, item_dmu_brel_43_ic125) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        running_cost_factor: (round(35.873475708951936));
+        running_cost_factor: round(35.87320393249937);
         power: int(4500*1/2);
         weight: int(35*3/4);
         cargo_capacity: 74;

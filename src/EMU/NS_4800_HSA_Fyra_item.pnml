@@ -36,8 +36,8 @@ item(FEAT_TRAINS, item_emu_ns_4800_hsa_fyra) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 76.58994;
-        running_cost_factor: 70.69622;
+        cost_factor: 76.12859;
+        running_cost_factor: 70.23576;
         speed: 300 km/h;
         power: 4426 hp;
         cargo_capacity: 42;
@@ -89,7 +89,7 @@ item(FEAT_TRAINS, item_emu_ns_4800_hsa_fyra) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        running_cost_factor: (round(51.94105997971073));
+        running_cost_factor: round(51.940818951391954);
         power: int(4426*1/2);
         weight: int(52*3/4);
         cargo_capacity: 42;

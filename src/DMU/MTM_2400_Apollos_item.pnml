@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_dmu_mtm_2400_apollos) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 37.46184;
-        running_cost_factor: 32.64877;
+        cost_factor: 37.31798;
+        running_cost_factor: 32.51798;
         speed: 100 km/h;
         power: 720 hp;
         cargo_capacity: 116;
@@ -83,7 +83,7 @@ item(FEAT_TRAINS, item_dmu_mtm_2400_apollos) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(21.48330941475706));
+        running_cost_factor: round(21.48328157299975);
         power: int(720*1/2);
         weight: int(44*3/4);
         cargo_capacity: 116;

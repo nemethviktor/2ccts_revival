@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_diesel_cie_113) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 38.83792;
-        running_cost_factor: 30.3468;
+        cost_factor: 38.81801;
+        running_cost_factor: 30.34278;
         speed: 88 km/h;
         power: 915 hp;
         cargo_capacity: 0;

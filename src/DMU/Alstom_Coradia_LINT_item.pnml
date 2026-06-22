@@ -35,8 +35,8 @@ item(FEAT_TRAINS, item_dmu_alstom_coradia_lint) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 30.27629;
-        running_cost_factor: 26.72853;
+        cost_factor: 30.16571;
+        running_cost_factor: 26.62753;
         speed: 120 km/h;
         power: 422 hp;
         cargo_capacity: 137;
@@ -88,7 +88,7 @@ item(FEAT_TRAINS, item_dmu_alstom_coradia_lint) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(17.867827969489966));
+        running_cost_factor: round(17.867263858417413);
         power: int(422*1/2);
         weight: int(31*3/4);
         cargo_capacity: 137;

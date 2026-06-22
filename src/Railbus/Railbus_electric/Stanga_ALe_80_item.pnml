@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_rbe_stanga_ale_80) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 37.88676;
-        running_cost_factor: 32.55607;
+        cost_factor: 37.64541;
+        running_cost_factor: 32.32589;
         speed: 110 km/h;
         power: 770 hp;
         cargo_capacity: 80;

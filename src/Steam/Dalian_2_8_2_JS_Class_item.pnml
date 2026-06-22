@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_steam_dalian_2_8_2_js_class) {
         vehicle_life: 67;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 66.72638;
-        running_cost_factor: 47.7409;
+        cost_factor: 66.70549;
+        running_cost_factor: 47.73671;
         speed: 85 km/h;
         power: 2270 hp;
         cargo_capacity: 0;

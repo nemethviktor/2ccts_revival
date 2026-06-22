@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_mtro_acf_new_york_r1) {
         vehicle_life: 50;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 37.77627;
-        running_cost_factor: 33.18142;
+        cost_factor: 37.60591;
+        running_cost_factor: 33.02644;
         speed: 90 km/h;
         power: 760 hp;
         cargo_capacity: 105;
@@ -68,7 +68,7 @@ item(FEAT_TRAINS, item_mtro_acf_new_york_r1) {
     }
     livery_override (item_mtro_metro_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        running_cost_factor: (round(21.83682897445874));
+        running_cost_factor: round(21.836809750418045);
         power: int(760*1/2);
         weight: int(42*3/4);
         cargo_capacity: 156;

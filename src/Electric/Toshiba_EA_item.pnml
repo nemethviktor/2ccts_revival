@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_electric_toshiba_ea) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 41.86692;
-        running_cost_factor: 36.00664;
+        cost_factor: 41.84083;
+        running_cost_factor: 36.00142;
         speed: 72 km/h;
         power: 1290 hp;
         cargo_capacity: 0;

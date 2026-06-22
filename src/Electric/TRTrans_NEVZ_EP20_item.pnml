@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_electric_trtrans_nevz_ep20) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 112.67044;
-        running_cost_factor: 98.60164;
+        cost_factor: 112.46697;
+        running_cost_factor: 98.40128;
         speed: 200 km/h;
         power: 9655 hp;
         cargo_capacity: 0;

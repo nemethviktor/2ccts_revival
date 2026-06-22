@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_emu_sgp_aeg_bbc_4030) {
         vehicle_life: 48;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 46.15454;
-        running_cost_factor: 41.34147;
+        cost_factor: 45.87731;
+        running_cost_factor: 41.07731;
         speed: 100 km/h;
         power: 1341 hp;
         cargo_capacity: 72;
@@ -83,7 +83,7 @@ item(FEAT_TRAINS, item_emu_sgp_aeg_bbc_4030) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(18.72196674583372));
+        running_cost_factor: round(18.721966684720112);
         power: int(1341*1/2);
         weight: int(44*3/4);
         cargo_capacity: 72;

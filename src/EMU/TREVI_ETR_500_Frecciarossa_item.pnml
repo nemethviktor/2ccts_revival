@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_emu_trevi_etr_500_frecciarossa) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 115.65418;
-        running_cost_factor: 109.62007;
+        cost_factor: 115.19637;
+        running_cost_factor: 109.16392;
         speed: 250 km/h;
         power: 11800 hp;
         cargo_capacity: 0;
@@ -83,7 +83,7 @@ item(FEAT_TRAINS, item_emu_trevi_etr_500_frecciarossa) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        running_cost_factor: (round(56.320354842850215));
+        running_cost_factor: round(56.27478049120021);
         power: int(11800*1/2);
         weight: int(54*3/4);
         cargo_capacity: 68;

@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_diesel_emd_f3) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 53.27648;
-        running_cost_factor: 38.85916;
+        cost_factor: 53.27015;
+        running_cost_factor: 38.8579;
         speed: 164 km/h;
         power: 1500 hp;
         cargo_capacity: 0;

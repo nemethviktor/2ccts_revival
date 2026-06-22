@@ -35,8 +35,8 @@ item(FEAT_TRAINS, item_dmu_lhb_vt_04_0_flying_hamburger) {
         vehicle_life: 51;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 37.4772;
-        running_cost_factor: 32.71588;
+        cost_factor: 37.11505;
+        running_cost_factor: 32.35909;
         speed: 160 km/h;
         power: 810 hp;
         cargo_capacity: 55;
@@ -88,7 +88,7 @@ item(FEAT_TRAINS, item_dmu_lhb_vt_04_0_flying_hamburger) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(21.566062103728065));
+        running_cost_factor: round(21.56604989415154);
         power: int(810*1/2);
         weight: int(42*3/4);
         cargo_capacity: 69;

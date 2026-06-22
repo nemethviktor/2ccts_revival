@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_emu_tibb_ecd_21_30) {
         vehicle_life: 30;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 33.1844;
-        running_cost_factor: 29.12412;
+        cost_factor: 32.61784;
+        running_cost_factor: 28.57843;
         speed: 72 km/h;
         power: 650 hp;
         cargo_capacity: 34;
@@ -83,7 +83,7 @@ item(FEAT_TRAINS, item_emu_tibb_ecd_21_30) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(12.82056394603974));
+        running_cost_factor: round(12.820509756796392);
         power: int(650*1/2);
         weight: int(37*3/4);
         cargo_capacity: 50;

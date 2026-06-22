@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_diesel_aeg_sar_ds) {
         vehicle_life: 30;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 27.47456;
-        running_cost_factor: 20.33882;
+        cost_factor: 27.43576;
+        running_cost_factor: 20.32592;
         speed: 60 km/h;
         power: 410 hp;
         cargo_capacity: 0;

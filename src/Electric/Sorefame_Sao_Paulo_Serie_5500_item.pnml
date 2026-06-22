@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_mtro_sorefame_sao_paulo_serie_5500) {
         vehicle_life: 50;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 51.47305;
-        running_cost_factor: 45.85998;
+        cost_factor: 51.38977;
+        running_cost_factor: 45.78977;
         speed: 100 km/h;
         power: 1530 hp;
         cargo_capacity: 160;
@@ -68,7 +68,7 @@ item(FEAT_TRAINS, item_mtro_sorefame_sao_paulo_serie_5500) {
     }
     livery_override (item_mtro_metro_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        running_cost_factor: (round(26.91152144465189));
+        running_cost_factor: round(26.91152144312159);
         power: int(1530*1/2);
         weight: int(52*3/4);
         cargo_capacity: 230;

@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_diesel_tulloch_0_6_0dm_w_class) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 63.5064;
-        running_cost_factor: 52.07053;
+        cost_factor: 63.49303;
+        running_cost_factor: 52.06783;
         speed: 113 km/h;
         power: 2700 hp;
         cargo_capacity: 0;

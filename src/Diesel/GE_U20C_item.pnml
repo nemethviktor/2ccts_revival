@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_diesel_ge_u20c) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 56.49333;
-        running_cost_factor: 46.47314;
+        cost_factor: 56.47799;
+        running_cost_factor: 46.47007;
         speed: 104 km/h;
         power: 2150 hp;
         cargo_capacity: 0;

@@ -37,8 +37,8 @@ item(FEAT_TRAINS, item_dmu_man_lhb_vt11_5___db_601_tee) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 53.12714;
-        running_cost_factor: 50.40582;
+        cost_factor: 52.4501;
+        running_cost_factor: 49.73414;
         speed: 160 km/h;
         power: 2200 hp;
         cargo_capacity: 24;
@@ -90,7 +90,7 @@ item(FEAT_TRAINS, item_dmu_man_lhb_vt11_5___db_601_tee) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(26.303816254976432));
+        running_cost_factor: round(26.30381575982343);
         power: int(2200*1/2);
         weight: int(22*3/4);
         cargo_capacity: 34;

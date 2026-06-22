@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_steam_datong_qj_2_10_2_101_3602) {
         vehicle_life: 54;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 75.37941;
-        running_cost_factor: 54.68346;
+        cost_factor: 75.35659;
+        running_cost_factor: 54.67882;
         speed: 80 km/h;
         power: 2980 hp;
         cargo_capacity: 0;

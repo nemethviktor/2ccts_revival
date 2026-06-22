@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_rbd_alsthom_z_431) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 42.94322;
-        running_cost_factor: 36.4789;
+        cost_factor: 42.57078;
+        running_cost_factor: 36.11471;
         speed: 130 km/h;
         power: 1045 hp;
         cargo_capacity: 54;

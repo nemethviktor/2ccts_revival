@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_diesel_ge_g22w) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 51.95855;
-        running_cost_factor: 40.72786;
+        cost_factor: 51.9446;
+        running_cost_factor: 40.72507;
         speed: 110 km/h;
         power: 1650 hp;
         cargo_capacity: 0;

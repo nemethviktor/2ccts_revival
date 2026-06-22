@@ -34,8 +34,8 @@ item(FEAT_TRAINS, item_dmu_materfer_cmm_400_2) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 38.18764;
-        running_cost_factor: 32.93989;
+        cost_factor: 37.90529;
+        running_cost_factor: 32.66712;
         speed: 120 km/h;
         power: 800 hp;
         cargo_capacity: 70;
@@ -87,7 +87,7 @@ item(FEAT_TRAINS, item_dmu_materfer_cmm_400_2) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(19.148440485114243));
+        running_cost_factor: round(19.148427124746192);
         power: int(800*1/2);
         weight: int(48*3/4);
         cargo_capacity: 70;

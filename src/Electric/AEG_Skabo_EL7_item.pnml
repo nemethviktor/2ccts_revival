@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_electric_aeg_skabo_el7) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 27.31719;
-        running_cost_factor: 22.21437;
+        cost_factor: 27.27135;
+        running_cost_factor: 22.20303;
         speed: 45 km/h;
         power: 490 hp;
         cargo_capacity: 0;

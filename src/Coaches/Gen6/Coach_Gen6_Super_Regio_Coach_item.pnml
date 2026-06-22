@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_mu_coach_gen6_super_regio_coach) {
         vehicle_life: 25;
         retire_early: 0;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 202.5555;
-        running_cost_factor: 150.05333;
+        cost_factor: 202.55355;
+        running_cost_factor: 150.05303;
         speed: 200 km/h;
         power: 0 hp;
         cargo_capacity: 255;

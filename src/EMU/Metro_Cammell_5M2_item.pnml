@@ -35,8 +35,8 @@ item(FEAT_TRAINS, item_emu_metro_cammell_5m2) {
         vehicle_life: 42;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 61.47701;
-        running_cost_factor: 55.06394;
+        cost_factor: 61.26201;
+        running_cost_factor: 54.86201;
         speed: 100 km/h;
         power: 2480 hp;
         cargo_capacity: 88;
@@ -88,7 +88,7 @@ item(FEAT_TRAINS, item_emu_metro_cammell_5m2) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(31.299961634834794));
+        running_cost_factor: round(31.299959839195495);
         power: int(2480*1/2);
         weight: int(60*3/4);
         cargo_capacity: 201;

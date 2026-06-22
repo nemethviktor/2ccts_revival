@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_rbs_komarek_nolb_1) {
         vehicle_life: 30;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 11.41284;
-        running_cost_factor: 10.3339;
+        cost_factor: 9.68601;
+        running_cost_factor: 8.64937;
         speed: 35 km/h;
         power: 39 hp;
         cargo_capacity: 22;

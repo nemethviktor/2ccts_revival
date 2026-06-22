@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_diesel_clyde_je28c_ptc_73_class_concept) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 58.78328;
-        running_cost_factor: 47.54399;
+        cost_factor: 58.77036;
+        running_cost_factor: 47.5414;
         speed: 115 km/h;
         power: 2250 hp;
         cargo_capacity: 0;

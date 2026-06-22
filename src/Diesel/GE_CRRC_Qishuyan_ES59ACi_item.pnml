@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_diesel_ge_crrc_qishuyan_es59aci) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 94.63926;
-        running_cost_factor: 79.1915;
+        cost_factor: 94.60466;
+        running_cost_factor: 79.16649;
         speed: 120 km/h;
         power: 6250 hp;
         cargo_capacity: 0;

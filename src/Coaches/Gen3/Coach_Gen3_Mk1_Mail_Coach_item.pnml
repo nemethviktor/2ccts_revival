@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_mu_coach_gen3_mk1_mail_coach) {
         vehicle_life: 25;
         retire_early: 0;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 15/2 : (param_loadingspeed == 2) ? 15*2 : 15;
-        cost_factor: 42.00518;
-        running_cost_factor: 30.04578;
+        cost_factor: 42.00104;
+        running_cost_factor: 30.04516;
         speed: 145 km/h;
         power: 0 hp;
         cargo_capacity: 80;

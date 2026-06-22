@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_steam_gwr_iron_duke) {
         vehicle_life: 30;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 28.29367;
-        running_cost_factor: 21.33263;
+        cost_factor: 28.27889;
+        running_cost_factor: 21.32634;
         speed: 128 km/h;
         power: 450 hp;
         cargo_capacity: 0;

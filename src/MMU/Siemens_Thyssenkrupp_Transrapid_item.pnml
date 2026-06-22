@@ -35,8 +35,8 @@ item(FEAT_TRAINS, item_mmu_siemens_thyssenkrupp_transrapid) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 127.85194;
-        running_cost_factor: 121.7194;
+        cost_factor: 126.7161;
+        running_cost_factor: 120.58376;
         speed: 433 km/h;
         power: 13450 hp;
         cargo_capacity: 50;
@@ -88,7 +88,7 @@ item(FEAT_TRAINS, item_mmu_siemens_thyssenkrupp_transrapid) {
     }
     livery_override (item_mglv_maglev_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        running_cost_factor: (round(100.86987915878063));
+        running_cost_factor: round(100.7954135047432);
         power: int(13450*1/2);
         weight: int(53*3/4);
         cargo_capacity: 55;

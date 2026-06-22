@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_cargodmu_windhoff_cargosprinter) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 36.56488;
-        running_cost_factor: 30.56712;
+        cost_factor: 36.07583;
+        running_cost_factor: 30.08765;
         speed: 120 km/h;
         power: 710 hp;
         cargo_capacity: 40;
@@ -70,7 +70,7 @@ item(FEAT_TRAINS, item_cargodmu_windhoff_cargosprinter) {
     }
     livery_override (item_mu_mu_cargo_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        running_cost_factor: (round(24.09961309576218));
+        running_cost_factor: round(24.09958251889485);
         power: int(710*1/2);
         weight: int(55*3/4);
         cargo_capacity: 40;

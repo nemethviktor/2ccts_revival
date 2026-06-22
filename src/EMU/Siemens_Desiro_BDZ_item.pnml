@@ -34,8 +34,8 @@ item(FEAT_TRAINS, item_emu_siemens_desiro_bdz) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 51.93351;
-        running_cost_factor: 47.08575;
+        cost_factor: 51.74443;
+        running_cost_factor: 46.90625;
         speed: 120 km/h;
         power: 1740 hp;
         cargo_capacity: 95;
@@ -87,7 +87,7 @@ item(FEAT_TRAINS, item_emu_siemens_desiro_bdz) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(25.411330730614885));
+        running_cost_factor: round(25.41133072292284);
         power: int(1740*1/2);
         weight: int(44*3/4);
         cargo_capacity: 95;

@@ -34,8 +34,8 @@ item(FEAT_TRAINS, item_dmu_adtranz_class_612_regio_swinger) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 50.08169;
-        running_cost_factor: 43.77037;
+        cost_factor: 49.81863;
+        running_cost_factor: 43.51267;
         speed: 160 km/h;
         power: 1520 hp;
         cargo_capacity: 73;
@@ -87,7 +87,7 @@ item(FEAT_TRAINS, item_dmu_adtranz_class_612_regio_swinger) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(27.2647177400286));
+        running_cost_factor: round(27.264717737923586);
         power: int(1520*1/2);
         weight: int(58*3/4);
         cargo_capacity: 73;

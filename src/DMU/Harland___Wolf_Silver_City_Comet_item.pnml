@@ -36,8 +36,8 @@ item(FEAT_TRAINS, item_dmu_harland___wolf_silver_city_comet) {
         vehicle_life: 52;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 29.66511;
-        running_cost_factor: 25.95379;
+        cost_factor: 29.65792;
+        running_cost_factor: 25.95196;
         speed: 160 km/h;
         power: 660 hp;
         cargo_capacity: 0;
@@ -89,7 +89,7 @@ item(FEAT_TRAINS, item_dmu_harland___wolf_silver_city_comet) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(22.889095715520575));
+        running_cost_factor: round(22.889046515733025);
         power: int(660*1/2);
         weight: int(32*3/4);
         cargo_capacity: 60;

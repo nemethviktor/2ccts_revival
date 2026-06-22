@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_mtro_mmz_moscow_81_740) {
         vehicle_life: 50;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 49.52427;
-        running_cost_factor: 44.42942;
+        cost_factor: 49.44835;
+        running_cost_factor: 44.36888;
         speed: 90 km/h;
         power: 1400 hp;
         cargo_capacity: 172;
@@ -68,7 +68,7 @@ item(FEAT_TRAINS, item_mtro_mmz_moscow_81_740) {
     }
     livery_override (item_mtro_metro_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        running_cost_factor: (round(26.841657412349043));
+        running_cost_factor: round(26.84165738677394);
         power: int(1400*1/2);
         weight: int(47*3/4);
         cargo_capacity: 120;

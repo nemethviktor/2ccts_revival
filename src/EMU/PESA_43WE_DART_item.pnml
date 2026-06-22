@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_emu_pesa_43we_dart) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 66.3607;
-        running_cost_factor: 60.91188;
+        cost_factor: 65.914;
+        running_cost_factor: 60.47053;
         speed: 160 km/h;
         power: 3218 hp;
         cargo_capacity: 44;
@@ -84,7 +84,7 @@ item(FEAT_TRAINS, item_emu_pesa_43we_dart) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(36.48526078857864));
+        running_cost_factor: round(36.48524184147313);
         power: int(3218*1/2);
         weight: int(49*3/4);
         cargo_capacity: 44;

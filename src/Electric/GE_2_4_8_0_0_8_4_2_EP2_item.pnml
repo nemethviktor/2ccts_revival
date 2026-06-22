@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_electric_ge_2_4_8_0_0_8_4_2_ep2) {
         vehicle_life: 43;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 91.18062;
-        running_cost_factor: 66.74476;
+        cost_factor: 91.16483;
+        running_cost_factor: 66.73963;
         speed: 113 km/h;
         power: 4440 hp;
         cargo_capacity: 0;

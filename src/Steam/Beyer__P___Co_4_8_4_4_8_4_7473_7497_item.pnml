@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_steam_beyer__p___co_4_8_4_4_8_4_7473_7497) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 85.56623;
-        running_cost_factor: 59.26219;
+        cost_factor: 85.54814;
+        running_cost_factor: 59.25827;
         speed: 95 km/h;
         power: 3500 hp;
         cargo_capacity: 0;

@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_steam_anf_del_150b) {
         vehicle_life: 34;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 51.15728;
-        running_cost_factor: 38.83532;
+        cost_factor: 51.14218;
+        running_cost_factor: 38.8323;
         speed: 105 km/h;
         power: 1500 hp;
         cargo_capacity: 0;

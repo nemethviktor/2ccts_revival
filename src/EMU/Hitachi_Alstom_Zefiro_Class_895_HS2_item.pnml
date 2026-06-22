@@ -37,8 +37,8 @@ item(FEAT_TRAINS, item_emu_hitachi_alstom_zefiro_class_895_hs2) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 128.49782;
-        running_cost_factor: 121.48842;
+        cost_factor: 127.50169;
+        running_cost_factor: 120.49275;
         speed: 360 km/h;
         power: 13400 hp;
         cargo_capacity: 72;
@@ -90,7 +90,7 @@ item(FEAT_TRAINS, item_emu_hitachi_alstom_zefiro_class_895_hs2) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        running_cost_factor: (round(66.52430398822449));
+        running_cost_factor: round(66.45083690279023);
         power: int(13400*1/2);
         weight: int(62*3/4);
         cargo_capacity: 75;

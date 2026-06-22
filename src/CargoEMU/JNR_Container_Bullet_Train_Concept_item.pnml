@@ -22,8 +22,8 @@ item(FEAT_TRAINS, item_cargoemu_jnr_container_bullet_train_concept) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 49.88543;
-        running_cost_factor: 46.92235;
+        cost_factor: 49.54539;
+        running_cost_factor: 46.59539;
         speed: 100 km/h;
         power: 1800 hp;
         cargo_capacity: 60;
@@ -77,7 +77,7 @@ item(FEAT_TRAINS, item_cargoemu_jnr_container_bullet_train_concept) {
     }
     livery_override (item_mu_mu_cargo_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        running_cost_factor: (round(19.240640705777896));
+        running_cost_factor: round(19.240640687119285);
         power: int(1800*1/2);
         weight: int(25*3/4);
         cargo_capacity: 60;

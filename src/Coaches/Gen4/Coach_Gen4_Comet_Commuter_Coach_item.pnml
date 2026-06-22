@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_mu_coach_gen4_comet_commuter_coach) {
         vehicle_life: 25;
         retire_early: 0;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 60.91957;
-        running_cost_factor: 43.92294;
+        cost_factor: 60.91623;
+        running_cost_factor: 43.92243;
         speed: 160 km/h;
         power: 0 hp;
         cargo_capacity: 117;

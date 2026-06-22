@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_electric_nevz_es40) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 75.54614;
-        running_cost_factor: 66.66574;
+        cost_factor: 75.53483;
+        running_cost_factor: 66.66154;
         speed: 140 km/h;
         power: 4428 hp;
         cargo_capacity: 0;

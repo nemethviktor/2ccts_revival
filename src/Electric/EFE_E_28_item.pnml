@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_electric_efe_e_28) {
         vehicle_life: 30;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 57.96743;
-        running_cost_factor: 49.59148;
+        cost_factor: 57.94469;
+        running_cost_factor: 49.58692;
         speed: 80 km/h;
         power: 2450 hp;
         cargo_capacity: 0;

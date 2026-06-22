@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_diesel_emd_clyde_a16c) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 53.84336;
-        running_cost_factor: 41.95507;
+        cost_factor: 53.83508;
+        running_cost_factor: 41.95342;
         speed: 145 km/h;
         power: 1750 hp;
         cargo_capacity: 0;

@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_mglv_acme_corp__pegasus) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 137.66328;
-        running_cost_factor: 123.7868;
+        cost_factor: 136.56993;
+        running_cost_factor: 122.69358;
         speed: 480 km/h;
         power: 15000 hp;
         cargo_capacity: 0;

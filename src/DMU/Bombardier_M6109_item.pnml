@@ -36,8 +36,8 @@ item(FEAT_TRAINS, item_dmu_bombardier_m6109) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 79.99089;
-        running_cost_factor: 73.84021;
+        cost_factor: 79.97416;
+        running_cost_factor: 73.82939;
         speed: 153 km/h;
         power: 5400 hp;
         cargo_capacity: 0;
@@ -89,7 +89,7 @@ item(FEAT_TRAINS, item_dmu_bombardier_m6109) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(35.1359037772337));
+        running_cost_factor: round(35.13496922834953);
         power: int(5400*1/2);
         weight: int(56*3/4);
         cargo_capacity: 68;

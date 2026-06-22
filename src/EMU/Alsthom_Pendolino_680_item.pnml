@@ -34,8 +34,8 @@ item(FEAT_TRAINS, item_emu_alsthom_pendolino_680) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 46.45057;
-        running_cost_factor: 40.38177;
+        cost_factor: 46.0322;
+        running_cost_factor: 39.96652;
         speed: 200 km/h;
         power: 1318 hp;
         cargo_capacity: 47;
@@ -87,7 +87,7 @@ item(FEAT_TRAINS, item_emu_alsthom_pendolino_680) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        running_cost_factor: (round(28.74542705528075));
+        running_cost_factor: round(28.74542697213427);
         power: int(1318*1/2);
         weight: int(55*3/4);
         cargo_capacity: 47;

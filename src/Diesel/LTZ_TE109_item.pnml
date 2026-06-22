@@ -21,8 +21,8 @@ item(FEAT_TRAINS, item_diesel_ltz_te109) {
         vehicle_life: 42;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 68.94728;
-        running_cost_factor: 54.49953;
+        cost_factor: 68.93522;
+        running_cost_factor: 54.49704;
         speed: 120 km/h;
         power: 2958 hp;
         cargo_capacity: 0;

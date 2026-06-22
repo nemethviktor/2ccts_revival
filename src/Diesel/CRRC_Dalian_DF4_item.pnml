@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_diesel_crrc_dalian_df4) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 73.942;
-        running_cost_factor: 59.69425;
+        cost_factor: 73.9296;
+        running_cost_factor: 59.69142;
         speed: 120 km/h;
         power: 3550 hp;
         cargo_capacity: 0;

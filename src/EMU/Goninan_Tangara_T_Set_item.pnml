@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_emu_goninan_tangara_t_set) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 53.62591;
-        running_cost_factor: 48.18662;
+        cost_factor: 53.44425;
+        running_cost_factor: 48.0153;
         speed: 115 km/h;
         power: 1824 hp;
         cargo_capacity: 98;
@@ -83,7 +83,7 @@ item(FEAT_TRAINS, item_emu_goninan_tangara_t_set) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(28.270831326044544));
+        running_cost_factor: round(28.270831300812524);
         power: int(1824*1/2);
         weight: int(50*3/4);
         cargo_capacity: 112;

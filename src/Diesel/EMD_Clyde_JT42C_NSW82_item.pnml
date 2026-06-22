@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_diesel_emd_clyde_jt42c_nsw82) {
         vehicle_life: 48;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 68.80734;
-        running_cost_factor: 55.15791;
+        cost_factor: 68.79544;
+        running_cost_factor: 55.15544;
         speed: 121 km/h;
         power: 3030 hp;
         cargo_capacity: 0;

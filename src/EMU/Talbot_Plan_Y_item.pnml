@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_emu_talbot_plan_y) {
         vehicle_life: 43;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 52.12367;
-        running_cost_factor: 46.36757;
+        cost_factor: 51.87338;
+        running_cost_factor: 46.12617;
         speed: 125 km/h;
         power: 1720 hp;
         cargo_capacity: 77;
@@ -83,7 +83,7 @@ item(FEAT_TRAINS, item_emu_talbot_plan_y) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(24.809288276056446));
+        running_cost_factor: round(24.809288270665544);
         power: int(1720*1/2);
         weight: int(53*3/4);
         cargo_capacity: 77;

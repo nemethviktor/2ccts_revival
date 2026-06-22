@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_mu_coach_gen3_nzr_56ft_coach) {
         vehicle_life: 25;
         retire_early: 0;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 29.43497;
-        running_cost_factor: 21.03525;
+        cost_factor: 29.42361;
+        running_cost_factor: 21.03354;
         speed: 80 km/h;
         power: 0 hp;
         cargo_capacity: 56;

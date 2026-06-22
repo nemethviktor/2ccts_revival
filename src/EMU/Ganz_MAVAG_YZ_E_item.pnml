@@ -35,8 +35,8 @@ item(FEAT_TRAINS, item_emu_ganz_mavag_yz_e) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 51.97017;
-        running_cost_factor: 46.68908;
+        cost_factor: 51.88112;
+        running_cost_factor: 46.60961;
         speed: 120 km/h;
         power: 1609 hp;
         cargo_capacity: 150;
@@ -88,7 +88,7 @@ item(FEAT_TRAINS, item_emu_ganz_mavag_yz_e) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        running_cost_factor: (round(28.771234224072554));
+        running_cost_factor: round(28.77123422402632);
         power: int(1609*1/2);
         weight: int(48*3/4);
         cargo_capacity: 150;
