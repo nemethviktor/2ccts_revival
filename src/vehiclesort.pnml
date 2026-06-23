@@ -275,7 +275,6 @@ item_diesel_cie_113, /*Year: 1950*/ \
 item_diesel_baldwin_as_616, /*Year: 1950*/ \
 item_diesel_fm_h_16_44, /*Year: 1950*/ \
 item_diesel_baldwin_rf_16_sharknose, /*Year: 1950*/ \
-item_diesel_gm_gt_26_w__040dg_, /*Year: 1950*/ \
 item_diesel_islington_railway_workshops_sar_900, /*Year: 1951*/ \
 item_diesel_emd_clyde_a16c, /*Year: 1951*/ \
 item_diesel_afe_1500, /*Year: 1952*/ \
@@ -294,7 +293,6 @@ item_diesel_nohab_aa16, /*Year: 1954*/ \
 item_diesel_raba_m_030_m28, /*Year: 1955*/ \
 item_diesel_metropolitan_vickers_cie_001, /*Year: 1955*/ \
 item_diesel_emd_clyde_a7, /*Year: 1955*/ \
-item_diesel_emd_clyde_g12, /*Year: 1955*/ \
 item_diesel_ee_dick__kerr___co_vulcan_foundry_de2, /*Year: 1955*/ \
 item_diesel_cockerill_sambre_hld_serie_83, /*Year: 1956*/ \
 item_diesel_krauss_maffei_v200, /*Year: 1956*/ \
@@ -314,7 +312,6 @@ item_diesel_krauss_maffei_ml_4000, /*Year: 1960*/ \
 item_diesel_kolomna_tep60, /*Year: 1960*/ \
 item_diesel_mak_100, /*Year: 1960*/ \
 item_diesel_emd_sd18, /*Year: 1960*/ \
-item_diesel_emd_gl8__040df_, /*Year: 1960*/ \
 item_diesel_emd_clyde_g8c, /*Year: 1960*/ \
 item_diesel_veb_lkm_v180, /*Year: 1960*/ \
 item_diesel_bn_acec_62, /*Year: 1961*/ \
@@ -333,6 +330,9 @@ item_diesel_ge_u10b, /*Year: 1966*/ \
 item_diesel_emd_clyde_g16c_x1, /*Year: 1966*/ \
 item_diesel_emd_gp40, /*Year: 1966*/ \
 item_diesel_lew_v100, /*Year: 1966*/ \
+item_diesel_gm_gt_26_w__040dg_, /*Year: 1967*/ \
+item_diesel_alsthom_cc_72000, /*Year: 1967*/ \
+item_diesel_gm_gl_18_b__040dj_, /*Year: 1968*/ \
 item_diesel_emd_clyde_j26c, /*Year: 1969*/ \
 item_diesel_ge_g22w, /*Year: 1969*/ \
 item_diesel_emd_dda40x, /*Year: 1969*/ \
@@ -345,6 +345,7 @@ item_diesel_hcp_301d, /*Year: 1970*/ \
 item_diesel_fiat_grandi_motori_d_345, /*Year: 1971*/ \
 item_diesel_emd_g26, /*Year: 1972*/ \
 item_diesel_henschel_tgoj_v4, /*Year: 1972*/ \
+item_diesel_emd_f40ph, /*Year: 1972*/ \
 item_diesel_emd_nohab_j30c_2dsb_mz_iii, /*Year: 1972*/ \
 item_diesel_ge_u26c, /*Year: 1972*/ \
 item_diesel_goninan_47_class, /*Year: 1972*/ \
@@ -358,7 +359,6 @@ item_diesel_sifang_dfh3, /*Year: 1976*/ \
 item_diesel_tangshan_dalian_sifang_df5, /*Year: 1976*/ \
 item_diesel_ge_c30_7_dash_7, /*Year: 1976*/ \
 item_diesel_emd_jt22cw, /*Year: 1976*/ \
-item_diesel_gm_gl_18_b__040dj_, /*Year: 1977*/ \
 item_diesel_clyde_je28c_ptc_73_class_concept, /*Year: 1977*/ \
 item_diesel_alsthom_ad30b, /*Year: 1978*/ \
 item_diesel_alco_comeng_ce615a, /*Year: 1978*/ \
@@ -385,13 +385,11 @@ item_diesel_mak_de_6400, /*Year: 1988*/ \
 item_diesel_emd_clyde_at42c_, /*Year: 1988*/ \
 item_diesel_brush_class_60, /*Year: 1989*/ \
 item_diesel_ge_goninan_cm25_8, /*Year: 1989*/ \
-item_diesel_alsthom_cc_72000, /*Year: 1989*/ \
 item_diesel_ltz_2te10ut, /*Year: 1989*/ \
 item_diesel_emd_clyde_ml2, /*Year: 1990*/ \
 item_diesel_sofse_319_3, /*Year: 1991*/ \
 item_diesel_emd_clyde_jt46c, /*Year: 1992*/ \
 item_diesel_ge_p42dc_genesis, /*Year: 1992*/ \
-item_diesel_emd_sd70acs, /*Year: 1992*/ \
 item_diesel_cmks_709_0_4_0de, /*Year: 1992*/ \
 item_diesel_crrc_qishuyan_df11, /*Year: 1992*/ \
 item_diesel_emd_sd70, /*Year: 1992*/ \
@@ -407,7 +405,6 @@ item_diesel_emd_jt42cwrm, /*Year: 1998*/ \
 item_diesel_emd_jt42c_90_1277, /*Year: 1998*/ \
 item_diesel_vossloh_siemens_serie_77_78, /*Year: 1999*/ \
 item_diesel_emd_jt42hw_hs, /*Year: 1999*/ \
-item_diesel_emd_f40ph, /*Year: 2001*/ \
 item_diesel_alstom_de43ca_prima, /*Year: 2002*/ \
 item_diesel_mak___vossloh_g1206, /*Year: 2002*/ \
 item_diesel_emd_pacific_gt26c_3, /*Year: 2002*/ \

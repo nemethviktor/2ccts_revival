@@ -321,8 +321,10 @@ def get_climates(row: pd.Series) -> str:
     # Adjust column names if they differ in your master_df
     r1_raw = str(row.get('REGION1', 'NO_REGION')).strip()
     r2_raw = str(row.get('REGION2', 'NO_REGION')).strip()
-    # Assuming CONCEPT is in Region3 column
-    c_raw = str(row.get('REGION3', 'NO_CONCEPT')).strip()
+    r3_raw = str(row.get('REGION3', 'NO_REGION')).strip()
+    r4_raw = str(row.get('REGION4', 'NO_REGION')).strip()
+    # Assuming CONCEPT is in IS_CONCEPT column
+    c_raw = str(row.get('IS_CONCEPT', 'NO_CONCEPT')).strip()
 
     # 4. Perform the "Magic" Lookup
     # .get(key, default) ensures that if Excel has a typo, it defaults to NO_REGION/NO_CONCEPT
@@ -330,8 +332,25 @@ def get_climates(row: pd.Series) -> str:
     region2 = region_map.get(r2_raw, "0")
     concept = region_map.get(c_raw, "1")
 
+    # Start with your historical base
+    region_clause = f"{region1} || {region2}"
+
+    # Only fetch and append region3 if r3_raw actually exists in your data
+    if r3_raw:
+        region3 = region_map.get(r3_raw, "0")
+        # Only append if it's a valid region AND not a duplicate of region2
+        if region3 != "0" and region3 != region2:
+            region_clause += f" || {region3}"
+
+    if r4_raw:
+        region4 = region_map.get(r4_raw, "0")
+        # Only append if it's a valid region AND not a duplicate of region2
+        if region4 != "0" and region4 != region3 and region4 != region2:
+            region_clause += f" || {region4}"
+
+
     # 5. Build the final string
-    return f"climates_available: (({region1} || {region2}) && {concept}) ? ALL_CLIMATES : NO_CLIMATE;"
+    return f"climates_available: (({region_clause}) && {concept}) ? ALL_CLIMATES : NO_CLIMATE;"
 
 
 def get_cargo_definitions(row: pd.Series) -> str:

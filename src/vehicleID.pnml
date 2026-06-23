@@ -2611,7 +2611,7 @@ item(FEAT_TRAINS, item_diesel_qishuyan_df8, 5088) {}
 item(FEAT_TRAINS, item_diesel_emd_clyde_jt26c_2ss, 5089) {}
 item(FEAT_TRAINS, item_diesel_brush_class_60, 5090) {}
 item(FEAT_TRAINS, item_diesel_ge_goninan_cm25_8, 5091) {}
-item(FEAT_TRAINS, item_diesel_emd_sd70acs, 5092) {}
+// item(FEAT_TRAINS, item_diesel_emd_sd70acs, 5092) {} // vehicle is excluded
 item(FEAT_TRAINS, item_diesel_gmd_jt42hcw, 5093) {}
 item(FEAT_TRAINS, item_diesel_emd_f59ph, 5094) {}
 item(FEAT_TRAINS, item_diesel_mak___vossloh_g1206, 5095) {}
@@ -2624,7 +2624,7 @@ item(FEAT_TRAINS, item_diesel_great_southern_railway_dh501, 5101) {}
 item(FEAT_TRAINS, item_diesel_ee_vfflb, 5102) {}
 item(FEAT_TRAINS, item_diesel_aeg_sar_ds, 5103) {}
 item(FEAT_TRAINS, item_diesel_gm_gt_26_w__040dg_, 5104) {}
-item(FEAT_TRAINS, item_diesel_emd_gl8__040df_, 5105) {}
+// item(FEAT_TRAINS, item_diesel_emd_gl8__040df_, 5105) {} // vehicle is excluded
 item(FEAT_TRAINS, item_diesel_ge_u5b, 5106) {}
 item(FEAT_TRAINS, item_diesel_ltz_tep10l, 5107) {}
 item(FEAT_TRAINS, item_diesel_alco_rsd_39, 5108) {}
@@ -2691,7 +2691,7 @@ item(FEAT_TRAINS, item_diesel_eec_a_253, 5168) {}
 item(FEAT_TRAINS, item_diesel_ge_u26c, 5169) {}
 // item(FEAT_TRAINS, item_diesel_alco_rsc_3_77732, 5170) {} // vehicle is excluded
 item(FEAT_TRAINS, item_diesel_emd_clyde_g8c, 5171) {}
-item(FEAT_TRAINS, item_diesel_emd_clyde_g12, 5172) {}
+// item(FEAT_TRAINS, item_diesel_emd_clyde_g12, 5172) {} // vehicle is excluded
 item(FEAT_TRAINS, item_diesel_emd_clyde_g8, 5173) {}
 item(FEAT_TRAINS, item_diesel_goninan_47_class, 5174) {}
 item(FEAT_TRAINS, item_diesel_brc_w_nsu_class, 5175) {}

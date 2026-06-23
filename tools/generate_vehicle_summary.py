@@ -181,7 +181,7 @@ def generate_markdown():
                 row['POWER']) else 0
             power_kw = int(power_hp * 0.7456)
 
-            is_concept = row['REGION3'] == "IS_CONCEPT"
+            is_concept = row['IS_CONCEPT'] == "IS_CONCEPT"
 
             markdown += f"| {img_tag} | {row['ENGLISH']} | {row['INTRODUCTION_YEAR']} | {speed_kmh} / {speed_mph} | {power_hp} / {power_kw} | {row['ROLE']} | {cap} | {track_str} | {', '.join(regions)} | {"Yes" if is_concept else "No"} |\n"
         markdown += "\n"

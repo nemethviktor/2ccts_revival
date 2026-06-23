@@ -821,9 +821,6 @@
 #include "src/Diesel/GE_Goninan_CM25_8_graphics.pnml"
 #include "src/Diesel/GE_Goninan_CM25_8_item.pnml"
 
-#include "src/Diesel/EMD_SD70ACS_graphics.pnml"
-#include "src/Diesel/EMD_SD70ACS_item.pnml"
-
 #include "src/Diesel/GMD_JT42HCW_graphics.pnml"
 #include "src/Diesel/GMD_JT42HCW_item.pnml"
 
@@ -859,9 +856,6 @@
 
 #include "src/Diesel/GM_GT_26_W__040DG__graphics.pnml"
 #include "src/Diesel/GM_GT_26_W__040DG__item.pnml"
-
-#include "src/Diesel/EMD_GL8__040DF__graphics.pnml"
-#include "src/Diesel/EMD_GL8__040DF__item.pnml"
 
 #include "src/Diesel/GE_U5B_graphics.pnml"
 #include "src/Diesel/GE_U5B_item.pnml"
@@ -1039,9 +1033,6 @@
 
 #include "src/Diesel/EMD_Clyde_G8C_graphics.pnml"
 #include "src/Diesel/EMD_Clyde_G8C_item.pnml"
-
-#include "src/Diesel/EMD_Clyde_G12_graphics.pnml"
-#include "src/Diesel/EMD_Clyde_G12_item.pnml"
 
 #include "src/Diesel/EMD_Clyde_G8_graphics.pnml"
 #include "src/Diesel/EMD_Clyde_G8_item.pnml"

@@ -9,7 +9,7 @@
 item(FEAT_TRAINS, item_diesel_ge_c30_7_dash_7) {
     property {
         name: string(str_diesel_ge_c30_7_dash_7);
-        climates_available: (((param_region_north_america || param_region_south_america) || param_region_northern_europe) && 1) ? ALL_CLIMATES : NO_CLIMATE;
+        climates_available: (((param_region_north_america || param_region_south_america) || param_region_northern_europe || param_region_asia) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1976,1,1);
         model_life: 45;
         vehicle_life: 40;
@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_diesel_ge_c30_7_dash_7) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/america/northern", "region/america/south", "region/europe/northern", "power/diesel", "role/heavy_freight"];
+	badges: ["region/asia", "region/america/northern", "region/america/south", "region/europe/northern", "power/diesel", "role/heavy_freight"];
 
     }
     graphics {

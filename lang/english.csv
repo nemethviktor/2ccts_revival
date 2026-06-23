@@ -610,7 +610,7 @@ str_diesel_ge_44_ton_switcher,GE 44-ton switcher
 str_diesel_alco_s_2,ALCO S-2
 str_diesel_emd_f3,EMD F3
 str_diesel_emd_e8,EMD E8
-str_diesel_efcb_alco_rs_3,EFCB ALCO RS-3
+str_diesel_efcb_alco_rs_3,ALCO RS-3
 str_diesel_english_electric_bakkie,English Electric 'Bakkie'
 str_diesel_baldwin_rf_16_sharknose,Baldwin RF-16 'Sharknose'
 str_diesel_afe_1500,AFE 1500
@@ -638,7 +638,7 @@ str_diesel_ckd_t_669,CKD T-669
 str_diesel_ugofe_gm_emd_j16cw_ac,UGOFE GM-EMD J16CW/AC
 str_diesel_ltz_m62,LTZ M62
 str_diesel_emd_clyde_j26c,EMD/Clyde J26C
-str_diesel_ge_g22w,GE G22W
+str_diesel_ge_g22w,GE G22
 str_diesel_emd_dda40x,EMD DDA40X
 str_diesel_emd_clyde_gl26c,EMD/Clyde GL26C
 str_diesel_emd_g26,EMD G26
@@ -677,7 +677,7 @@ str_diesel_cie_113,CIE 113
 str_diesel_baldwin_as_616,Baldwin AS-616
 str_diesel_fm_h_16_44,FM H-16-44
 str_diesel_islington_railway_workshops_sar_900,Islington Railway Workshops SAR 900
-str_diesel_emd_g12_a608_m2,EMD G12 A608 'M2'
+str_diesel_emd_g12_a608_m2,EMD G12
 str_diesel_metropolitan_vickers_cie_001,Metropolitan-Vickers/CIE 001
 str_diesel_fiat_grandi_motori_d_341,Fiat Grandi Motori D.341
 str_diesel_alco_ae_goodwin_dl_500b,ALCO/AE Goodwin DL-500B
@@ -702,14 +702,14 @@ str_diesel_ee_vfflb,EE VFFLB
 str_diesel_ge_u5b,GE U5B
 str_diesel_alco_rsd_39,ALCO RSD-39
 str_diesel_emd_ddm45,EMD DDM45
-str_diesel_ge_c39_8__fcca_,GE C39-8 [FCCA]
-str_diesel_sofse_319_3,SOFSE 319.3
+str_diesel_ge_c39_8__fcca_,GE C39-8
+str_diesel_sofse_319_3,Macosa-Meinfesa J26
 str_diesel_cnr_ckd8g,CNR CKD8G
 str_diesel_aeg_sar_ds,AEG SAR DS
-str_diesel_gm_gt_26_w__040dg_,GM GT 26 W [040DG]
+str_diesel_gm_gt_26_w__040dg_,GM GT26
 str_diesel_emd_gl8__040df_,EMD GL8 [040DF]
 str_diesel_ltz_te114e,LTZ TE114E
-str_diesel_gm_gl_18_b__040dj_,GM GL 18 B [040DJ]
+str_diesel_gm_gl_18_b__040dj_,GM G18
 str_diesel_alsthom_cc_72000,Alsthom CC 72000
 str_diesel_ltz_tep10l,LTZ TEP10L
 str_diesel_ltz_2te10m,LTZ 2TE10M
@@ -813,7 +813,7 @@ str_electric_bn_acec_25_5,BN/ACEC 25.5
 str_electric_krauss_maffei_caf_250,Krauss Maffei/CAF 250
 str_electric_efe_e_29,EFE E-29
 str_electric_efe_e_17,EFE E-17
-str_electric_alsthom_e_700,Alsthom E 700
+str_electric_alsthom_e_700,Alsthom BB 8100
 str_electric_vulcan_foundry_ee_em_1,Vulcan Foundry-EE EM/1
 str_electric_union_carriage___wagon_e38,Union Carriage & Wagon E38
 str_electric_mitsubishi_series_269,Mitsubishi series 269
@@ -1255,7 +1255,7 @@ str_emu_comeng_emu,Comeng EMU
 str_emu_evolution_rail_hcmt_munnel,Evolution Rail HCMT Munnel
 str_diesel_ltz_dr_130,LTZ DR 130
 str_diesel_ge_ac6044cw,GE AC6044CW
-str_diesel_ge_ac6000cw_bhp_6071,GE AC6000CW BHP 6071
+str_diesel_ge_ac6000cw_bhp_6071,GE AC6000CW
 str_steam_robert_stephenson_and_co_2_2_2_192,Robert Stephenson and Co 2-2-2 192
 str_emu_comeng_mk_hitachi_trains,Comeng/MK Hitachi Trains
 str_emu_grc_w_harris_trains,GRC&W Harris Trains

@@ -13,7 +13,7 @@
 item(FEAT_TRAINS, item_electric_cef_bb_1600) {
     property {
         name: string(str_electric_cef_bb_1600);
-        climates_available: ((param_region_africa || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
+        climates_available: ((param_region_western_europe || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1926,1,1);
         model_life: 45;
         vehicle_life: 58;
@@ -47,7 +47,7 @@ item(FEAT_TRAINS, item_electric_cef_bb_1600) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/africa", "power/electric/dc", "role/light_freight"];
+	badges: ["region/europe/western", "power/electric/dc", "role/light_freight"];
 
     }
     graphics {

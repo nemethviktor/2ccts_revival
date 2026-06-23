@@ -9,7 +9,7 @@
 item(FEAT_TRAINS, item_diesel_ge_44_ton_switcher) {
     property {
         name: string(str_diesel_ge_44_ton_switcher);
-        climates_available: ((param_region_oceania || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
+        climates_available: (((param_region_asia || param_region_oceania) || (param_region_north_america || param_region_south_america) || (param_region_northern_europe || param_region_western_europe)) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1943,1,1);
         model_life: 45;
         vehicle_life: 36;
@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_diesel_ge_44_ton_switcher) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/oceania", "power/diesel", "role/shunting"];
+	badges: ["region/asia", "region/america/northern", "region/america/south", "region/europe/western", "region/europe/northern", "region/oceania", "power/diesel", "role/shunting"];
 
     }
     graphics {

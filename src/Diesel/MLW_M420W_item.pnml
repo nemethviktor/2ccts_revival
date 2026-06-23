@@ -9,7 +9,7 @@
 item(FEAT_TRAINS, item_diesel_mlw_m420w) {
     property {
         name: string(str_diesel_mlw_m420w);
-        climates_available: ((param_region_north_america || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
+        climates_available: (((param_region_north_america || param_region_south_america) || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1973,1,1);
         model_life: 45;
         vehicle_life: 40;
@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_diesel_mlw_m420w) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/america/northern", "power/diesel", "role/universal"];
+	badges: ["region/america/northern", "region/america/south", "power/diesel", "role/universal"];
 
     }
     graphics {

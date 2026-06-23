@@ -4,18 +4,17 @@
 
 
 // Template: TPL_01A.
-// Data from: https://fr.wikipedia.org/wiki/Brissonneau_et_Lotz
+// Data from: https://en.wikipedia.org/wiki/EMD_G18
 
 // Notes:
-//// WEB: https://fr.wikipedia.org/wiki/Brissonneau_et_Lotz -- generic
 //// VEHIDCODE: diesel_GM_GL_18_B__040DJ_ -- Dual Standard + Narrow!
 
 
 item(FEAT_TRAINS, item_diesel_gm_gl_18_b__040dj_) {
     property {
         name: string(str_diesel_gm_gl_18_b__040dj_);
-        climates_available: ((param_region_africa || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
-        introduction_date: date(1977,1,1);
+        climates_available: ((param_region_africa || param_region_south_america || param_region_southern_europe || param_region_asia) && 1) ? ALL_CLIMATES : NO_CLIMATE;
+        introduction_date: date(1968,1,1);
         model_life: 45;
         vehicle_life: 40;
         retire_early: 20;
@@ -48,7 +47,7 @@ item(FEAT_TRAINS, item_diesel_gm_gl_18_b__040dj_) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/africa", "power/diesel", "role/light_freight"];
+	badges: ["region/africa", "region/asia", "region/america/south", "region/europe/southern", "power/diesel", "role/light_freight"];
 
     }
     graphics {
