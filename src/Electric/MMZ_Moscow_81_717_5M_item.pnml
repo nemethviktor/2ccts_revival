@@ -9,7 +9,7 @@
 item(FEAT_TRAINS, item_mtro_mmz_moscow_81_717_5m) {
     property {
         name: string(str_mtro_mmz_moscow_81_717_5m);
-        climates_available: ((param_region_asia || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
+        climates_available: (((param_region_asia || param_region_eastern_europe) || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1993,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 50;
@@ -33,7 +33,7 @@ item(FEAT_TRAINS, item_mtro_mmz_moscow_81_717_5m) {
         misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
         refit_cost: 0;
         ai_special_flag: AI_FLAG_PASSENGER | AI_FLAG_CARGO;
-        track_type: [BROAD_GAUGE_RAILTYPE_3RD];
+        track_type: [STANDARD_GAUGE_RAILTYPE_3RD, BROAD_GAUGE_RAILTYPE_3RD];
         running_cost_base: RUNNING_COST_ELECTRIC;
         engine_class: ENGINE_CLASS_MAGLEV;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
@@ -44,7 +44,7 @@ item(FEAT_TRAINS, item_mtro_mmz_moscow_81_717_5m) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/asia", "power/metro", "role/metro"];
+	badges: ["region/asia", "region/europe/eastern", "power/metro", "role/metro"];
 
     }
     graphics {

@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_04A.
+// Template: TPL_04S.
 // Data from: nan
 
 // Notes:
@@ -60,7 +60,7 @@ item(FEAT_TRAINS, item_mu_coach_gen5_talgo_pendular_mail) {
         // Add calls to defined switches below
         // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
         // PURCHASETEXT_SWITCH_CALL // this is actually blank
-        default: switch_mu_coach_gen5_talgo_pendular_mail_livery;
+        default: switch_mu_coach_gen5_talgo_pendular_mail_position_check;
         // Random flip for variety
         reverse_build_probability: return 50;
     }

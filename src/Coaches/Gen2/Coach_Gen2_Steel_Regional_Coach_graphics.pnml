@@ -4,7 +4,7 @@
 // Template: TPL_04A
 
 // PURCHASE
-spriteset(spriteset_mu_coach_gen2_steel_regional_coach_purchase, "gfx/coaches/gen2/coach_gen2_steel_regional_coach_purchase.png") {template_purchase_wagon(1, 1)}
+spriteset(spriteset_mu_coach_gen2_steel_regional_coach_purchase, "gfx/coaches/gen2/coach_gen2_steel_regional_coach.png") {template_purchase_coach(1, 107)}
 
 
 // VEHICLE

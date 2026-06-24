@@ -2,7 +2,7 @@
 
 # Hardcoded Strings
 STR_GRF_NAME                                                      :{TITLE}
-STR_GRF_DESCRIPTION                                               :{SILVER}2cc Trains of the World in NML {}{}(c)2ccts Revival {}License GPLv2 or higher. {}See readme for details.{}{SILVER}Build: 2026-06-23-10:51:28
+STR_GRF_DESCRIPTION                                               :{SILVER}2cc Trains of the World in NML {}{}(c)2ccts Revival {}License GPLv2 or higher. {}See readme for details.{}{SILVER}Build: 2026-06-28-21:29:08
 STR_GRF_URL                                                       :https://github.com/nemethviktor/2ccts_revival
 STR_USED_WITH_DYNAMIC_ENGINES                                     :dynamic_engines = true (setting in openttd.cfg)
 STR_ERROR_REGION                                                  :No regions enabled, {STRING} has been disabled
@@ -530,7 +530,7 @@ str_mu_coach_gen1_suburban_2_axle_nzaus_coach                     :Early 2-axle 
 str_mu_coach_gen4_brel_mk3_coach                                  :BREL Mk3 Coach
 str_mu_coach_gen4_brel_mk3_mail_coach                             :BREL Mk3 Mail Coach
 str_mu_coach_gen4_comeng_suburban_double_deck_sa2000              :Comeng SA2000 SDD Concept
-str_mu_coach_gen4_gonian_4d_concept                               :Melbourne/Gonian 4D Coach Concept
+str_mu_coach_gen4_gonian_4d_concept                               :Melbourne/Goninan 4D Coach Concept
 str_mu_coach_gen4_gonian_tangara_concept                          :Tangara V-Set Hybrid Coach Concept
 str_mu_coach_gen3_hitachi_nippon_sharyo_silver_star_coach         :NZR Silver Star Coach
 str_mu_coach_gen3_hitachi_nippon_sharyo_silver_star_mail_coach    :NZR Silver Star Mail Coach
@@ -549,7 +549,7 @@ str_mglv_coach_gen7m_chimaera_passenger_coach                     :ACME Corp. Ch
 str_mglv_coach_gen7m_chimaera_mail_coach                          :ACME Corp. Chimaera Mail Coach
 
 # Dieselengine
-str_diesel_db_kof_ii___db_322                                     :DB Kof II / DB 322 (Diesel)
+str_diesel_db_kof_ii___db_322                                     :DB Kof II/DB 322 (Diesel)
 str_diesel_cnj_alco_ge_ir_boxcab_100t                             :CNJ ALCo-GE-IR Boxcab 100T (Diesel)
 str_diesel_werkspoor_200_sik                                      :Werkspoor 200 'Sik' (Diesel)
 str_diesel_bmag_wr_200_b_14                                       :BMAG 'WR 200 B 14' (Diesel)
@@ -640,10 +640,10 @@ str_diesel_ge_goninan_cm25_8                                      :GE/Goninan CM
 str_diesel_emd_sd70acs                                            :EMD SD70ACS (Diesel)
 str_diesel_gmd_jt42hcw                                            :GMD JT42HCW (Diesel)
 str_diesel_emd_f59ph                                              :EMD F59PH (Diesel)
-str_diesel_mak___vossloh_g1206                                    :MaK / Vossloh G1206 (Diesel)
+str_diesel_mak___vossloh_g1206                                    :MaK/Vossloh G1206 (Diesel)
 str_diesel_vossloh_g_2000_bb                                      :Vossloh G 2000 BB (Diesel)
 str_diesel_mpi_mp40ph_3c                                          :MPI MP40PH-3C (Diesel)
-str_diesel_vossloh_espana___emd_334                               :Vossloh Espana / EMD 334 (Diesel)
+str_diesel_vossloh_espana___emd_334                               :Vossloh Espana/EMD 334 (Diesel)
 str_diesel_inka_cc300                                             :INKA CC300 (Diesel)
 str_diesel_baldwin_rf_16_sharknose                                :Baldwin RF-16 'Sharknose' (Diesel)
 str_diesel_great_southern_railway_dh501                           :Great Southern Railway DH501 (Diesel)
@@ -789,12 +789,13 @@ str_rbd_niigata_transys_shikoku_1000                              :Niigata Trans
 str_rbd_ckd_vagonka_dm12                                          :CKD Vagonka Dm12 (Diesel Railbus)
 str_rbd_niigata_transys_kiha_e120                                 :Niigata Transys KiHa E120 (Diesel Railbus)
 str_rbd_stadler_regio_shuttle_rs1                                 :Stadler Regio-Shuttle RS1 (Diesel Railbus)
-str_rbd_efe_sb_56_buscarril                                       :EFE SB-56 'Buscarril' (Diesel Railbus)
+str_rbd_efe_sb_56_buscarril                                       :Ferrostaal SB-56 (Diesel Railbus)
 str_rbd_sulzer_m_railcar                                          :Sulzer M Railcar (Diesel Railbus)
 str_rbd_uerdingen_railbus                                         :Uerdingen railbus (Diesel Railbus)
 str_rbd_eritrean_railway_a_62_70_littorina                        :Eritrean Railway A.62-70 'Littorina' (Diesel Railbus)
 str_rbd_fiat_ferroviaria_aln_668_1400                             :Fiat Ferroviaria ALn 668.1400 (Diesel Railbus)
 str_rbd_mav_ikarus_260                                            :MAV Ikarus 260 (Diesel Railbus)
+str_rbd_ganz_mavag_ikarus                                         :Ganz-MAVAG Ikarus 725.00 (Diesel Railbus)
 
 # Dmu
 str_dmu_ansaldobreda_ic4                                          :AnsaldoBreda IC4 (DMU)
@@ -804,10 +805,10 @@ str_dmu_harland___wolf_silver_city_comet                          :Harland & Wol
 str_dmu_tatra_m131                                                :Tatra M131 (DMU)
 str_dmu_man_vt_08_5                                               :MAN VT 08.5 (DMU)
 str_dmu_south_australian_railways_400_redhen                      :South Australian Railways 400 'Redhen' (DMU)
-str_dmu_man_lhb_vt11_5___db_601_tee                               :MAN/LHB VT11.5 / DB 601 'TEE' (DMU)
+str_dmu_man_lhb_vt11_5___db_601_tee                               :MAN/LHB VT11.5/DB 601 'TEE' (DMU)
 str_dmu_werkspoor_plan_u_de_iii                                   :Werkspoor Plan U DE-III (DMU)
 str_dmu_uac_turbo_train                                           :UAC 'Turbo Train' (DMU, Gas Turbine)
-str_dmu_jz_811                                                    :JZ 811 (DMU)
+str_dmu_jz_811                                                    :Ganz-MAVAG 811 (DMU)
 str_dmu_brel_43_ic125                                             :BREL 43 IC125 (DMU)
 str_dmu_bombardier_m6109                                          :Bombardier M6109 (DMU)
 str_dmu_abb_ic3_y2                                                :ABB IC3 Y2 (DMU)
@@ -872,7 +873,7 @@ str_electric_sig_alioth_de_2_2                                    :SIG Alioth De
 str_electric_aeg_skabo_el7                                        :AEG/Skabo EL7 (Electric, 15kV AC)
 str_electric_ner_ef1                                              :NER EF1 (Electric, 1500V DC)
 str_electric_ge_es_2                                              :GE ES-2 (Electric, 3kV DC)
-str_electric_efe_e_28                                             :EFE E-28 (Electric, 3kV DC)
+str_electric_efe_e_28                                             :Baldwin Westinghouse E-28 (Electric, 3kV DC)
 str_electric_elin_floridsdorf_1161                                :ELIN/Floridsdorf 1161 (Electric, 15kV AC)
 str_electric_vulcan_foundry_slm_ef_1                              :Vulcan Foundry-SLM EF/1 (Electric, 1500V DC)
 str_electric_maffei_ssw_lok_5_adolphine                           :Maffei/SSW Lok 5 'Adolphine' (Electric, 15kV AC)
@@ -960,7 +961,7 @@ str_electric_werkspoor_ess_3200                                   :Werkspoor ESS
 str_electric_ge_w_1                                               :GE W-1 (Electric, 15kV AC)
 str_electric_ge_el_2b                                             :GE EL-2B (Electric, 15kV AC)
 str_electric_alsthom_e_700                                        :Alsthom BB 8100 (Electric, 3kV DC, 1500V DC)
-str_electric_efe_e_29                                             :EFE E-29 (Electric, 3kV DC)
+str_electric_efe_e_29                                             :EF-E 29 GE 2-C+C-2 (Electric, 3kV DC)
 str_electric_ge_e44                                               :GE E44 (Electric, 15kV AC)
 str_electric_toshiba_ea                                           :Toshiba EA (Electric, 1500V DC)
 str_electric_alsthom_cp_2600                                      :Alsthom CP 2600 (Electric, 25kV AC)
@@ -986,7 +987,7 @@ str_electric_cef_bb_1600                                          :CEF BB 1600 (
 str_electric_br_85                                                :Doncaster AL5 (Electric, 25kV AC)
 str_electric_ge_c_c_4400_rffsa                                    :GE C-C 4400 RFFSA (Electric, 3kV DC)
 str_electric_hitachi_ef81                                         :Hitachi EF81 (Electric, 25kV AC, 1500V DC)
-str_electric_efe_e_17                                             :EFE E-17 (Electric, 3kV DC)
+str_electric_efe_e_17                                             :GAI/Breda E-17 (Electric, 3kV DC)
 str_electric_zuzhou_ss3                                           :Zuzhou SS3 (Electric, 25kV AC)
 str_electric_ucw_50_c_s_group_7e                                  :UCW 50 c/s Group 7E (Electric, 25kV AC)
 str_electric_thyssen_henschel_el17                                :Thyssen-Henschel EL17 (Electric, 15kV AC)
@@ -1145,7 +1146,7 @@ str_emu_nswgr_tulloch_emu                                         :NSWGR 'Tulloc
 str_emu_alstom_xtrapolis_100_melbourne                            :Alstom X'Trapolis 100 Melbourne (EMU, 1500V DC)
 str_emu_ganz_mavag_em_et                                          :Ganz-MAVAG EM/ET (EMU, 1500V DC)
 str_emu_eec_dm_emu                                                :EEC DM EMU (EMU, 1500V DC)
-str_emu_hyundai_rotem__mitsui_matangi                             :Hyundai Rotem/ Mitsui 'Matangi' (EMU, 1500V DC)
+str_emu_hyundai_rotem__mitsui_matangi                             :Hyundai Rotem/Mitsui 'Matangi' (EMU, 1500V DC)
 str_emu_itochu_kinki_kawasaki_sp1900                              :Itochu/Kinki/Kawasaki SP1900 (EMU, 25kV AC)
 str_emu_crrc_sifang_sfb_500                                       :CRRC Sifang SFB-500 (EMU, 25kV AC)
 str_emu_hitachi_kawasaki_shinkansen_series_100                    :Hitachi/Kawasaki Shinkansen Series 100 (EMU, 25kV AC)
@@ -1171,27 +1172,27 @@ str_mtro_london_1938_stock                                        :London 1938 S
 str_mtro_lhb_et_171                                               :LHB ET 171 (Metro, Electric 3rd Rail)
 str_mtro_gec_alsthom_paris_mp55                                   :GEC-Alsthom Paris MP55 (Metro, Electric 3rd Rail)
 str_mtro_lhb_lisbon_ml7                                           :LHB Lisbon ML7 (Metro, Electric 3rd Rail)
-str_mtro_mmz_budapest_ev3                                         :MMZ Budapest Ev3 (Metro, Electric 3rd Rail)
+str_mtro_mmz_budapest_ev3                                         :MMZ 81-707 Type Ezsh (Metro, Electric 3rd Rail)
 str_mtro_strommens_oslo_t1000                                     :Strommens Oslo T1000 (Metro, Electric 3rd Rail)
 str_mtro_hawker_siddeley_toronto_h1                               :Hawker Siddeley Toronto H1 (Metro, Electric 3rd Rail)
 str_mtro_man_munchen_mvg_a2                                       :MAN Munchen MVG A2 (Metro, Electric 3rd Rail)
 str_mtro_st__louis_car_co_new_york_r44                            :St. Louis Car Co New York R44 (Metro, Electric 3rd Rail)
 str_mtro_lhb_amsterdam_m1                                         :LHB Amsterdam M1 (Metro, Electric 3rd Rail)
 str_mtro_asea_stockholm_c8                                        :ASEA Stockholm C8 (Metro, Electric 3rd Rail)
-str_mtro_aeg_pyongyang_d                                          :AEG Pyongyang D (Metro, Electric 3rd Rail)
+str_mtro_aeg_pyongyang_d                                          :AEG D (Metro, Electric 3rd Rail)
 str_mtro_valmet_helsinki_m100                                     :Valmet Helsinki M100 (Metro, Electric 3rd Rail)
 str_mtro_sorefame_sao_paulo_serie_5500                            :Sorefame Sao Paulo Serie 5500 (Metro, Electric 3rd Rail)
-str_mtro_mmz_moscow_81_720                                        :MMZ Moscow 81-720 (Metro, Electric 3rd Rail)
+str_mtro_mmz_moscow_81_720                                        :MMZ 81-720 (Metro, Electric 3rd Rail)
 str_mtro_kawasaki_tokyo_s01                                       :Kawasaki Tokyo S01 (Metro, Electric 3rd Rail)
 str_mtro_kinki_sharyo_vcairo                                      :Kinki Sharyo Vcairo (Metro, Electric 3rd Rail)
 str_mtro_lhb_london_dlr_p86                                       :LHB London DLR P86 (Metro, Electric 3rd Rail)
-str_mtro_mmz_moscow_81_717_5m                                     :MMZ Moscow 81-717.5M (Metro, Electric 3rd Rail)
+str_mtro_mmz_moscow_81_717_5m                                     :MMZ 81-717.5M (Metro, Electric 3rd Rail)
 str_mtro_bombardier_boston_01800                                  :Bombardier Boston 01800 (Metro, Electric 3rd Rail)
 str_mtro_breda_la_a650                                            :Breda LA A650 (Metro, Electric 3rd Rail)
 str_mtro_kawasaki_taipei_c301                                     :Kawasaki Taipei C301 (Metro, Electric 3rd Rail)
 str_mtro_gec_alsthom_paris_mp89                                   :GEC-Alsthom Paris MP89 (Metro, Electric 3rd Rail)
 str_mtro_caf_amsterdam_s3_90                                      :CAF Amsterdam S3 90 (Metro, Electric 1500V DC, 3rd Rail)
-str_mtro_mmz_moscow_81_740                                        :MMZ Moscow 81-740 (Metro, Electric 3rd Rail)
+str_mtro_mmz_moscow_81_740                                        :MMZ 81-740 (Metro, Electric 3rd Rail)
 str_mtro_alstom_singapore_c830_metropolis                         :Alstom Singapore C830 'Metropolis' (Metro, Electric 3rd Rail)
 str_mtro_siemens_oslo_mx3000                                      :Siemens Oslo MX3000 (Metro, Electric 3rd Rail)
 str_mtro_kawasaki_osaka_30000                                     :Kawasaki Osaka 30000 (Metro, Electric 3rd Rail)
@@ -1201,12 +1202,12 @@ str_mtro_hitachi_thessaloniki_2014                                :Hitachi Thess
 str_mtro_aeg_berlin_u_bahn_a_i                                    :AEG Berlin U-Bahn A I (Metro, Electric 3rd Rail)
 str_mtro_acf_new_york_hedley_hi_v                                 :ACF New York Hedley Hi-V (Metro, Electric 3rd Rail)
 str_mtro_kawasaki_osaka_1000                                      :Kawasaki Osaka 1000 (Metro, Electric 3rd Rail)
-str_mtro_mmz_moscow_type_a                                        :MMZ Moscow Type A (Metro, Electric 3rd Rail)
+str_mtro_mmz_moscow_type_a                                        :MMZ Type A (Metro, Electric 3rd Rail)
 str_mtro_acf_new_york_r10                                         :ACF New York R10 (Metro, Electric 3rd Rail)
 str_mtro_stanga_rome_mr_100                                       :Stanga Rome MR 100 (Metro, Electric 3rd Rail)
-str_mtro_mmz_moscow_type_d                                        :MMZ Moscow Type D (Metro, Electric 3rd Rail)
+str_mtro_mmz_moscow_type_d                                        :MMZ 81-702 Type D (Metro, Electric 3rd Rail)
 str_mtro_werkspoor_rotterdam_mg2_type_m                           :Werkspoor Rotterdam MG2 Type M (Metro, Electric 3rd Rail)
-str_mtro_mmz_prague_ecs_set                                       :MMZ Prague ECS Set (Metro, Electric 3rd Rail)
+str_mtro_mmz_prague_ecs_set                                       :MMZ 81-709 ECS (Metro, Electric 3rd Rail)
 str_mtro_hitachi_buenos_aires_serie_1200                          :Hitachi Buenos Aires Serie 1200 (Metro, Electric 3rd Rail)
 str_mtro_gec_alsthom_santiago_ns_93                               :GEC-Alsthom Santiago NS-93 (Metro, Electric 3rd Rail)
 str_mtro_alstom_brasil_santiago_as_2002                           :Alstom Brasil Santiago AS-2002 (Metro, Electric 3rd Rail)
@@ -1227,6 +1228,7 @@ str_mtro_comeng_light_metro_prototype                             :Comeng Light 
 str_mtro_abb_henschel_berlin_bvg_f74                              :ABB Henschel Berlin BVG F74 (Metro, Electric 3rd Rail)
 str_mtro_adtranz_berlin_bvg_h                                     :Adtranz Berlin BVG H (Metro, Electric 3rd Rail)
 str_mtro_ganz_hunslet_budapest_g2                                 :Ganz Hunslet Budapest G2 (Metro, Electric 3rd Rail)
+str_mtro_alstom_metropolis                                        :Alstom Metropolis (Metro, Electric 25kV AC, 1500V DC, 3rd Rail, 3kV DC)
 str_mtro_metro_wagon_unpowered                                    :Metro Unit Wagon (Unpowered)
 str_mtro_metro_wagon_powered                                      :Metro Unit Wagon (Powered)
 
@@ -1256,7 +1258,7 @@ str_steam_krauss_299                                              :Krauss 299 (S
 str_steam_nzr_x                                                   :NZR X (Steam)
 str_steam_henschel_895                                            :Henschel 895 (Steam)
 str_steam_slm_c_5_6_elephant                                      :SLM C 5/6 'Elephant' (Steam)
-str_steam_mavag_375                                               :MaVAG 375 (Steam)
+str_steam_mavag_375                                               :MAVAG 375 (Steam)
 str_steam_fs_880                                                  :FS 880 (Steam)
 str_steam_fcnea_11b_2_8_0                                         :FCNEA 11B 2-8-0 (Steam)
 str_steam_schneider_et_cie_140c                                   :Schneider et Cie 140C (Steam)
@@ -1280,7 +1282,7 @@ str_steam_gwr_4_4_0_american                                      :Breese, Kneel
 str_steam_norris_4_6_0_ten_wheeler                                :Baldwin Class D 4-6-0 'Ten-wheeler' (Steam)
 str_steam_nohab_4_6_2_f                                           :NOHAB 4-6-2 'F' (Steam)
 str_steam_alco_series_4000_4_8_8_4_big_boy                        :ALCO series 4000 4-8-8-4 'Big Boy' (Steam)
-str_steam_sharp_stewart_3557_3565                                 :Sharp Stewart 3557-3565 (Steam)
+str_steam_sharp_stewart_3557_3565                                 :Sharp, Stewart & Co 4-4-0 3557-3565 (Steam)
 str_steam_gwr_iron_duke                                           :GWR Iron Duke (Steam)
 str_steam_stephenson_0_4_2_locomotive_no_1                        :Stephenson 0-4-2 'Locomotive No.1' (Steam)
 str_steam_cooke_4_2_2_t__d__judah                                 :Cooke 4-2-2 'T. D. Judah' (Steam)
@@ -1305,7 +1307,7 @@ str_steam_baldwin_10_32_e_55246                                   :Baldwin 10-32
 str_steam_canadian_national_u_1_a_                                :Canadian National U-1-a (Steam)
 str_steam_vulcan_foundry_2_6_4_class_xb                           :Vulcan Foundry 2-6-4 Class XB (Steam)
 str_steam_robert_stephenson_4_6_2_6982_6985                       :Robert Stephenson 4-6-2 6982-6985 (Steam)
-str_steam_enr_1100__lms_fowler_3f___wd_0_6_0t_                    :ENR 1100 [LMS Fowler 3F / WD 0-6-0T] (Steam)
+str_steam_enr_1100__lms_fowler_3f___wd_0_6_0t_                    :LMS Fowler 3F WD 0-6-0T (Steam)
 str_steam_kisha_seizo_2_10_4t_e10                                 :Kisha Seizo 2-10-4T E10 (Steam)
 str_steam_swindon_works_381                                       :Swindon Works 381 (Steam)
 str_steam_north_british_lc_r_4_6_4_hudson                         :North British LC R 4-6-4 Hudson (Steam)
@@ -1375,7 +1377,7 @@ str_steam_william_fairbairn_2_2_2_baroneza                        :William Fairb
 str_steam_hunslet_0_4_0st_la_portena                              :Hunslet 0-4-0ST 'La Portena' (Steam)
 str_steam_burnham_2_10_0_dom_pedro_segundo_119                    :Burnham 2-10-0 'Dom Pedro Segundo 119' (Steam)
 str_steam_baldwin_0_22c_no8_monsefu                               :Baldwin 0-22C No8 'Monsefu' (Steam)
-str_steam_fccp_q_class                                            :FCCP Q Class (Steam)
+str_steam_fccp_q_class                                            :North British 2-6-0 Q Class (Steam)
 str_steam_nblc_4_6_2_ps10_class                                   :NBLC 4-6-2 PS10 Class (Steam)
 str_steam_yorkshire_engine_co__4_8_4t_nitrate_101                 :Yorkshire Engine Co. 4-8-4T 'Nitrate 101' (Steam)
 str_steam_norris___brothers_4_4_0_la_copiapo                      :Norris & Brothers 4-4-0 'La Copiapo' (Steam)
@@ -1392,6 +1394,7 @@ str_steam_stephenson_bp_2_2_2_lvci_class_1                        :Stephenson/BP
 str_steam_babcock_4_6_2_2_6_4t_462                                :Babcock 4-6-2+2-6-4T '462' (Steam)
 str_steam_koechlin_0_6_0_030                                      :Koechlin 0-6-0 '030' (Steam)
 str_steam_hanomag_alco_4_8_0_240                                  :Hanomag/ALCO 4-8-0 '240' (Steam)
+str_steam_sharp_2_2_2_patriot                                     :Sharp Brothers 2-2-2 'Patriot' (Steam)
 
 # Steamrailbus
 str_rbs_komarek_nolb_1                                            :Komarek NOLB 1 (Steam Railbus)
@@ -1451,8 +1454,8 @@ str_mu_wagon_gen4_hopper_type2                                    :4th Gen Self-
 str_mu_wagon_gen5_boxcar_type2                                    :5th Gen Boxcar [Non-Food]
 str_mu_wagon_gen5_silo_type2                                      :5th Gen Silo [Non-Food]
 str_mu_wagon_gen5_hopper_type2                                    :5th Gen Self-discharging Hopper [Non-Food]
-str_mu_wagon_service_car_type1                                    :Service Car Type 1
-str_mu_wagon_service_car_type2                                    :Service Car Type 2
+str_mu_wagon_service_car_type1                                    :Service Car [European Style]
+str_mu_wagon_service_car_type2                                    :Service Car [American Style]
 str_mu_wagon_gen3_boxcar_type2                                    :3rd Gen Wooden Boxcar [Non-Food]
 str_mu_wagon_gen4_boxcar_type2                                    :4th Gen Boxcar [Non-Food]
 str_mu_wagon_gen6_flatcar                                         :6th Gen Flatcar

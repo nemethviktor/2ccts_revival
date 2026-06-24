@@ -508,7 +508,7 @@ item(FEAT_TRAINS, item_rbs_komarek_nolb_30_33, 1009) {}
 // 1498 free
 // 1499 free
 
-// Railbus (Diese), available ID range: 2000-2499 (hex 0x07D0..0x09C3)
+// Railbus (Diesel), available ID range: 2000-2499 (hex 0x07D0..0x09C3)
 #define ID_RANGE_RBD 0x07D0..0x09C3
 item(FEAT_TRAINS, item_rbd_aec_railmotor_rm1, 2000) {}
 item(FEAT_TRAINS, item_rbd_vt133_wismar_railcar, 2001) {}
@@ -558,7 +558,7 @@ item(FEAT_TRAINS, item_rbd_uerdingen_railbus, 2044) {}
 item(FEAT_TRAINS, item_rbd_eritrean_railway_a_62_70_littorina, 2045) {}
 item(FEAT_TRAINS, item_rbd_fiat_ferroviaria_aln_668_1400, 2046) {}
 item(FEAT_TRAINS, item_rbd_mav_ikarus_260, 2047) {}
-// 2048 free
+item(FEAT_TRAINS, item_rbd_ganz_mavag_ikarus, 2048) {}
 // 2049 free
 // 2050 free
 // 2051 free
@@ -1669,7 +1669,7 @@ item(FEAT_TRAINS, item_steam_stephenson_bp_2_2_2_lvci_class_1, 4149) {}
 item(FEAT_TRAINS, item_steam_babcock_4_6_2_2_6_4t_462, 4150) {}
 item(FEAT_TRAINS, item_steam_koechlin_0_6_0_030, 4151) {}
 item(FEAT_TRAINS, item_steam_hanomag_alco_4_8_0_240, 4152) {}
-// 4153 free
+item(FEAT_TRAINS, item_steam_sharp_2_2_2_patriot, 4153) {}
 // 4154 free
 // 4155 free
 // 4156 free
@@ -3622,7 +3622,7 @@ item(FEAT_TRAINS, item_electric_werkspoor_ess_3200, 6096) {}
 item(FEAT_TRAINS, item_electric_ge_w_1, 6097) {}
 item(FEAT_TRAINS, item_electric_ge_el_2b, 6098) {}
 item(FEAT_TRAINS, item_electric_alsthom_e_700, 6099) {}
-item(FEAT_TRAINS, item_electric_efe_e_29, 6100) {}
+// item(FEAT_TRAINS, item_electric_efe_e_29, 6100) {} // vehicle is excluded
 item(FEAT_TRAINS, item_electric_ge_e44, 6101) {}
 item(FEAT_TRAINS, item_electric_toshiba_ea, 6102) {}
 item(FEAT_TRAINS, item_electric_alsthom_cp_2600, 6103) {}
@@ -6563,7 +6563,7 @@ item(FEAT_TRAINS, item_mtro_kawasaki_taipei_c301, 9028) {}
 item(FEAT_TRAINS, item_mtro_gec_alsthom_paris_mp89, 9029) {}
 item(FEAT_TRAINS, item_mtro_caf_amsterdam_s3_90, 9030) {}
 item(FEAT_TRAINS, item_mtro_mmz_moscow_81_740, 9031) {}
-item(FEAT_TRAINS, item_mtro_alstom_singapore_c830_metropolis, 9032) {}
+// item(FEAT_TRAINS, item_mtro_alstom_singapore_c830_metropolis, 9032) {} // vehicle is excluded
 item(FEAT_TRAINS, item_mtro_siemens_oslo_mx3000, 9033) {}
 item(FEAT_TRAINS, item_mtro_kawasaki_osaka_30000, 9034) {}
 item(FEAT_TRAINS, item_mtro_kawasaki_singapore_c151a, 9035) {}
@@ -6577,10 +6577,10 @@ item(FEAT_TRAINS, item_mtro_acf_new_york_r10, 9042) {}
 item(FEAT_TRAINS, item_mtro_stanga_rome_mr_100, 9043) {}
 item(FEAT_TRAINS, item_mtro_mmz_moscow_type_d, 9044) {}
 item(FEAT_TRAINS, item_mtro_werkspoor_rotterdam_mg2_type_m, 9045) {}
-item(FEAT_TRAINS, item_mtro_mmz_prague_ecs_set, 9046) {}
+// item(FEAT_TRAINS, item_mtro_mmz_prague_ecs_set, 9046) {} // vehicle is excluded
 item(FEAT_TRAINS, item_mtro_hitachi_buenos_aires_serie_1200, 9047) {}
 item(FEAT_TRAINS, item_mtro_gec_alsthom_santiago_ns_93, 9048) {}
-item(FEAT_TRAINS, item_mtro_alstom_brasil_santiago_as_2002, 9049) {}
+// item(FEAT_TRAINS, item_mtro_alstom_brasil_santiago_as_2002, 9049) {} // vehicle is excluded
 item(FEAT_TRAINS, item_mtro_tudh_recife_vlt_mobile_3, 9050) {}
 item(FEAT_TRAINS, item_mtro_caf_madrid_series_5000, 9051) {}
 item(FEAT_TRAINS, item_mtro_caf_rome_s_300, 9052) {}
@@ -6598,7 +6598,7 @@ item(FEAT_TRAINS, item_mtro_comeng_light_metro_prototype, 9063) {}
 item(FEAT_TRAINS, item_mtro_abb_henschel_berlin_bvg_f74, 9064) {}
 item(FEAT_TRAINS, item_mtro_adtranz_berlin_bvg_h, 9065) {}
 item(FEAT_TRAINS, item_mtro_ganz_hunslet_budapest_g2, 9066) {}
-// 9067 free
+item(FEAT_TRAINS, item_mtro_alstom_metropolis, 9067) {}
 // 9068 free
 // 9069 free
 // 9070 free

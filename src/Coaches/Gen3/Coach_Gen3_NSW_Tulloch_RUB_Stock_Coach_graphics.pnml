@@ -4,7 +4,7 @@
 // Template: TPL_04U
 
 // PURCHASE
-spriteset(spriteset_mu_coach_gen3_nsw_tulloch_rub_stock_coach_purchase, "gfx/coaches/gen3/coach_gen3_nsw_tulloch_rub_stock_coach_purchase.png") {template_purchase_wagon(1, 1)}
+spriteset(spriteset_mu_coach_gen3_nsw_tulloch_rub_stock_coach_purchase, "gfx/coaches/gen3/coach_gen3_nsw_tulloch_rub_stock_coach.png") {template_purchase_coach(1, 107)}
 
 
 // VEHICLE

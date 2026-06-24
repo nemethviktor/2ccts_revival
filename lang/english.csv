@@ -507,7 +507,7 @@ str_steam_slm_winterthur_a_3_5,SLM Winterthur A 3/5
 str_steam_slm_winterthur_e_3_3,SLM Winterthur E 3/3
 str_steam_krauss_299,Krauss 299
 str_steam_nzr_x,NZR X
-str_steam_mavag_375,MaVAG 375
+str_steam_mavag_375,MAVAG 375
 str_steam_fs_880,FS 880
 str_steam_fcnea_11b_2_8_0,FCNEA 11B 2-8-0
 str_steam_schneider_et_cie_140c,Schneider et Cie 140C
@@ -531,7 +531,7 @@ str_steam_henschel_895,Henschel 895
 str_steam_h__cegielski_okz32,H. Cegielski OKz32
 str_steam_slm_c_5_6_elephant,SLM C 5/6 'Elephant'
 str_steam_alco_series_4000_4_8_8_4_big_boy,ALCO series 4000 4-8-8-4 'Big Boy'
-str_steam_sharp_stewart_3557_3565,Sharp Stewart 3557-3565
+str_steam_sharp_stewart_3557_3565,"Sharp, Stewart & Co 4-4-0 3557-3565"
 str_steam_gwr_iron_duke,GWR Iron Duke
 str_steam_stephenson_0_4_2_locomotive_no_1,Stephenson 0-4-2 'Locomotive No.1'
 str_steam_cooke_4_2_2_t__d__judah,Cooke 4-2-2 'T. D. Judah'
@@ -556,7 +556,7 @@ str_steam_baldwin_10_32_e_55246,Baldwin 10-32-E 55246
 str_steam_canadian_national_u_1_a_,Canadian National U-1-a
 str_steam_vulcan_foundry_2_6_4_class_xb,Vulcan Foundry 2-6-4 Class XB
 str_steam_robert_stephenson_4_6_2_6982_6985,Robert Stephenson 4-6-2 6982-6985
-str_steam_enr_1100__lms_fowler_3f___wd_0_6_0t_,ENR 1100 [LMS Fowler 3F / WD 0-6-0T]
+str_steam_enr_1100__lms_fowler_3f___wd_0_6_0t_,LMS Fowler 3F WD 0-6-0T
 str_steam_swindon_works_381,Swindon Works 381
 str_steam_north_british_lc_r_4_6_4_hudson,North British LC R 4-6-4 Hudson
 str_steam_veb_2_10_2t_99_77_79,VEB 2-10-2T 99.77-79
@@ -601,7 +601,7 @@ str_steam_eveleigh_4_6_0_c35,Eveleigh 4-6-0 'C35'
 str_steam_alco_2_8_0_74707_74785_type_29,ALCO 2-8-0 74707-74785 'Type 29'
 str_steam_fcab_4_8_2_vulcan_mountain,FCAB 4-8-2 Vulcan 'Mountain'
 str_steam_datong_qj_2_10_2_101_3602,Datong QJ 2-10-2 101-3602
-str_diesel_db_kof_ii___db_322,DB Kof II / DB 322
+str_diesel_db_kof_ii___db_322,DB Kof II/DB 322
 str_diesel_cnj_alco_ge_ir_boxcab_100t,CNJ ALCo-GE-IR Boxcab 100T
 str_diesel_werkspoor_200_sik,Werkspoor 200 'Sik'
 str_diesel_bmag_wr_200_b_14,BMAG 'WR 200 B 14'
@@ -692,10 +692,10 @@ str_diesel_ge_goninan_cm25_8,GE/Goninan CM25-8
 str_diesel_emd_sd70acs,EMD SD70ACS
 str_diesel_gmd_jt42hcw,GMD JT42HCW
 str_diesel_emd_f59ph,EMD F59PH
-str_diesel_mak___vossloh_g1206,MaK / Vossloh G1206
+str_diesel_mak___vossloh_g1206,MaK/Vossloh G1206
 str_diesel_vossloh_g_2000_bb,Vossloh G 2000 BB
 str_diesel_mpi_mp40ph_3c,MPI MP40PH-3C
-str_diesel_vossloh_espana___emd_334,Vossloh Espana / EMD 334
+str_diesel_vossloh_espana___emd_334,Vossloh Espana/EMD 334
 str_diesel_inka_cc300,INKA CC300
 str_diesel_great_southern_railway_dh501,Great Southern Railway DH501
 str_diesel_ee_vfflb,EE VFFLB
@@ -735,27 +735,27 @@ str_mtro_acf_new_york_r1,ACF New York R1
 str_mtro_lhb_et_171,LHB ET 171
 str_mtro_gec_alsthom_paris_mp55,GEC-Alsthom Paris MP55
 str_mtro_lhb_lisbon_ml7,LHB Lisbon ML7
-str_mtro_mmz_budapest_ev3,MMZ Budapest Ev3
+str_mtro_mmz_budapest_ev3,MMZ 81-707 Type Ezsh
 str_mtro_strommens_oslo_t1000,Strommens Oslo T1000
 str_mtro_hawker_siddeley_toronto_h1,Hawker Siddeley Toronto H1
 str_mtro_man_munchen_mvg_a2,MAN Munchen MVG A2
 str_mtro_st__louis_car_co_new_york_r44,St. Louis Car Co New York R44
 str_mtro_lhb_amsterdam_m1,LHB Amsterdam M1
 str_mtro_asea_stockholm_c8,ASEA Stockholm C8
-str_mtro_aeg_pyongyang_d,AEG Pyongyang D
+str_mtro_aeg_pyongyang_d,AEG D
 str_mtro_valmet_helsinki_m100,Valmet Helsinki M100
 str_mtro_sorefame_sao_paulo_serie_5500,Sorefame Sao Paulo Serie 5500
-str_mtro_mmz_moscow_81_720,MMZ Moscow 81-720
+str_mtro_mmz_moscow_81_720,MMZ 81-720
 str_mtro_kawasaki_tokyo_s01,Kawasaki Tokyo S01
 str_mtro_kinki_sharyo_vcairo,Kinki Sharyo Vcairo
 str_mtro_lhb_london_dlr_p86,LHB London DLR P86
-str_mtro_mmz_moscow_81_717_5m,MMZ Moscow 81-717.5M
+str_mtro_mmz_moscow_81_717_5m,MMZ 81-717.5M
 str_mtro_bombardier_boston_01800,Bombardier Boston 01800
 str_mtro_breda_la_a650,Breda LA A650
 str_mtro_kawasaki_taipei_c301,Kawasaki Taipei C301
 str_mtro_caf_amsterdam_s3_90,CAF Amsterdam S3 90
 str_mtro_gec_alsthom_paris_mp89,GEC-Alsthom Paris MP89
-str_mtro_mmz_moscow_81_740,MMZ Moscow 81-740
+str_mtro_mmz_moscow_81_740,MMZ 81-740
 str_mtro_alstom_singapore_c830_metropolis,Alstom Singapore C830 'Metropolis'
 str_mtro_siemens_oslo_mx3000,Siemens Oslo MX3000
 str_mtro_kawasaki_osaka_30000,Kawasaki Osaka 30000
@@ -765,12 +765,12 @@ str_mtro_hitachi_thessaloniki_2014,Hitachi Thessaloniki 2014
 str_mtro_aeg_berlin_u_bahn_a_i,AEG Berlin U-Bahn A I
 str_mtro_acf_new_york_hedley_hi_v,ACF New York Hedley Hi-V
 str_mtro_kawasaki_osaka_1000,Kawasaki Osaka 1000
-str_mtro_mmz_moscow_type_a,MMZ Moscow Type A
+str_mtro_mmz_moscow_type_a,MMZ Type A
 str_mtro_acf_new_york_r10,ACF New York R10
 str_mtro_stanga_rome_mr_100,Stanga Rome MR 100
-str_mtro_mmz_moscow_type_d,MMZ Moscow Type D
+str_mtro_mmz_moscow_type_d,MMZ 81-702 Type D
 str_mtro_werkspoor_rotterdam_mg2_type_m,Werkspoor Rotterdam MG2 Type M
-str_mtro_mmz_prague_ecs_set,MMZ Prague ECS Set
+str_mtro_mmz_prague_ecs_set,MMZ 81-709 ECS
 str_mtro_hitachi_buenos_aires_serie_1200,Hitachi Buenos Aires Serie 1200
 str_mtro_gec_alsthom_santiago_ns_93,GEC-Alsthom Santiago NS-93
 str_mtro_alstom_brasil_santiago_as_2002,Alstom Brasil Santiago AS-2002
@@ -798,7 +798,7 @@ str_electric_metropolitan_vicerks_em2,Metropolitan-Vickers EM2
 str_electric_ner_ee1,NER EE1
 str_electric_ge_es_2,GE ES-2
 str_electric_ge_2_4_8_0_0_8_4_2_ep2,GE 2-4-8-0+0-8-4-2 EP2
-str_electric_efe_e_28,EFE E-28
+str_electric_efe_e_28,Baldwin Westinghouse E-28
 str_electric_breda_e_428,Breda E.428
 str_electric_werkspoor_sar_es,Werkspoor SAR ES
 str_electric_english_electric_e__aei_e_,English Electric E [AEI E]
@@ -811,8 +811,8 @@ str_electric_savigliano_e_444,Savigliano E.444
 str_electric_fiat_e_633,Fiat E.633
 str_electric_bn_acec_25_5,BN/ACEC 25.5
 str_electric_krauss_maffei_caf_250,Krauss Maffei/CAF 250
-str_electric_efe_e_29,EFE E-29
-str_electric_efe_e_17,EFE E-17
+str_electric_efe_e_29,EF-E 29 GE 2-C+C-2
+str_electric_efe_e_17,GAI/Breda E-17
 str_electric_alsthom_e_700,Alsthom BB 8100
 str_electric_vulcan_foundry_ee_em_1,Vulcan Foundry-EE EM/1
 str_electric_union_carriage___wagon_e38,Union Carriage & Wagon E38
@@ -887,10 +887,10 @@ str_dmu_harland___wolf_silver_city_comet,Harland & Wolf 'Silver City Comet'
 str_dmu_tatra_m131,Tatra M131
 str_dmu_man_vt_08_5,MAN VT 08.5
 str_dmu_south_australian_railways_400_redhen,South Australian Railways 400 'Redhen'
-str_dmu_man_lhb_vt11_5___db_601_tee,MAN/LHB VT11.5 / DB 601 'TEE'
+str_dmu_man_lhb_vt11_5___db_601_tee,MAN/LHB VT11.5/DB 601 'TEE'
 str_dmu_werkspoor_plan_u_de_iii,Werkspoor Plan U DE-III
 str_dmu_uac_turbo_train,UAC 'Turbo Train'
-str_dmu_jz_811,JZ 811
+str_dmu_jz_811,Ganz-MAVAG 811
 str_dmu_brel_43_ic125,BREL 43 IC125
 str_dmu_bombardier_m6109,Bombardier M6109
 str_dmu_abb_ic3_y2,ABB IC3 Y2
@@ -1018,7 +1018,7 @@ str_mglv_wagon_gen7m_superheavy_flatcar,7th Gen Superheavy Flatcar
 str_mglv_wagon_gen7m_tanker,7th Gen Tanker
 str_rbd_niigata_transys_shikoku_1000,Niigata Transys Shikoku 1000
 str_rbd_niigata_transys_kiha_e120,Niigata Transys KiHa E120
-str_rbd_efe_sb_56_buscarril,EFE SB-56 'Buscarril'
+str_rbd_efe_sb_56_buscarril,Ferrostaal SB-56
 str_rbd_sulzer_m_railcar,Sulzer M Railcar
 str_rbd_eritrean_railway_a_62_70_littorina,Eritrean Railway A.62-70 'Littorina'
 str_rbe_slm_cfe_3_3,SLM CFe 3/3
@@ -1146,8 +1146,8 @@ str_mu_wagon_gen6_container_carrier,6th Gen Container Carrier
 str_mu_wagon_gen6_centerbeam,6th Gen Centerbeam Flatcar
 str_mu_wagon_gen6_container_doublestack,6th Gen Container Doublestack
 str_mu_wagon_gen6_superheavy_flatcar,6th Gen Superheavy Flatcar
-str_mu_wagon_service_car_type1,Service Car Type 1
-str_mu_wagon_service_car_type2,Service Car Type 2
+str_mu_wagon_service_car_type1,Service Car [European Style]
+str_mu_wagon_service_car_type2,Service Car [American Style]
 str_mu_coach_gen1_wooden_2_axle_compartment_coach,Wooden 2-axle Compartment Coach
 str_mu_coach_gen1_wooden_2_axle_regional_coach,Wooden 2-axle Regional Coach
 str_mu_coach_gen1_wooden_2_axle_mail_coach,Wooden 2-axle Mail Coach
@@ -1314,7 +1314,7 @@ str_steam_william_fairbairn_2_2_2_baroneza,William Fairbairn 2-2-2 'Baroneza'
 str_steam_hunslet_0_4_0st_la_portena,Hunslet 0-4-0ST 'La Portena'
 str_steam_burnham_2_10_0_dom_pedro_segundo_119,Burnham 2-10-0 'Dom Pedro Segundo 119'
 str_steam_baldwin_0_22c_no8_monsefu,Baldwin 0-22C No8 'Monsefu'
-str_steam_fccp_q_class,FCCP Q Class
+str_steam_fccp_q_class,North British 2-6-0 Q Class
 str_steam_nblc_4_6_2_ps10_class,NBLC 4-6-2 PS10 Class
 str_steam_yorkshire_engine_co__4_8_4t_nitrate_101,Yorkshire Engine Co. 4-8-4T 'Nitrate 101'
 str_electric_slm_bbc_1_d_1,SLM-BBC 1-D-1
@@ -1348,7 +1348,7 @@ str_mu_coach_gen1_suburban_2_axle_nzaus_coach,Early 2-axle Suburban Coach
 str_mu_coach_gen4_brel_mk3_coach,BREL Mk3 Coach
 str_mu_coach_gen4_brel_mk3_mail_coach,BREL Mk3 Mail Coach
 str_mu_coach_gen4_comeng_suburban_double_deck_sa2000,Comeng SA2000 SDD Concept
-str_mu_coach_gen4_gonian_4d_concept,Melbourne/Gonian 4D Coach Concept
+str_mu_coach_gen4_gonian_4d_concept,Melbourne/Goninan 4D Coach Concept
 str_mu_coach_gen4_gonian_tangara_concept,Tangara V-Set Hybrid Coach Concept
 str_mu_coach_gen3_hitachi_nippon_sharyo_silver_star_coach,NZR Silver Star Coach
 str_mu_coach_gen3_hitachi_nippon_sharyo_silver_star_mail_coach,NZR Silver Star Mail Coach
@@ -1366,7 +1366,7 @@ str_mu_coach_gen1_nsw_ka_tram_car,KA Type Tram Car
 str_electric_comeng_86_class,Comeng 86 Class
 str_emu_ganz_mavag_em_et,Ganz-MAVAG EM/ET
 str_emu_eec_dm_emu,EEC DM EMU
-str_emu_hyundai_rotem__mitsui_matangi,Hyundai Rotem/ Mitsui 'Matangi'
+str_emu_hyundai_rotem__mitsui_matangi,Hyundai Rotem/Mitsui 'Matangi'
 str_mtro_ganz_hunslet_budapest_g2,Ganz Hunslet Budapest G2
 str_diesel_brc_w_nsu_class,BRC&W NSU Class
 str_emu_itochu_kinki_kawasaki_sp1900,Itochu/Kinki/Kawasaki SP1900
@@ -1448,3 +1448,6 @@ str_electric_alsthom_ec_386,Alsthom EC 386
 str_electric_chesta_casagrande_e650,Chesta Casagrande E650
 str_electric_breda_marelli_e32,Breda Marelli E32
 str_diesel_ge_es58aci,GE ES58ACi
+str_rbd_ganz_mavag_ikarus,Ganz-MAVAG Ikarus 725.00
+str_mtro_alstom_metropolis,Alstom Metropolis
+str_steam_sharp_2_2_2_patriot,Sharp Brothers 2-2-2 'Patriot'

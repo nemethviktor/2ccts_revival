@@ -4,7 +4,7 @@
 // Template: TPL_04A
 
 // PURCHASE
-spriteset(spriteset_mu_coach_gen5_high_speed_double_decker_ic2000_purchase, "gfx/coaches/gen5/coach_gen5_high_speed_double_decker_ic2000_purchase.png") {template_purchase_wagon(1, 1)}
+spriteset(spriteset_mu_coach_gen5_high_speed_double_decker_ic2000_purchase, "gfx/coaches/gen5/coach_gen5_high_speed_double_decker_ic2000.png") {template_purchase_coach(1, 107)}
 
 
 // VEHICLE

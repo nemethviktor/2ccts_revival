@@ -56,6 +56,7 @@ item_rbd_efe_sb_56_buscarril, /*Year: 1961*/ \
 item_rbd_ferrostaal_esslingen_aa_71, /*Year: 1962*/ \
 item_rbd_alsthom_z_431, /*Year: 1975*/ \
 item_rbd_budd_spv_2000, /*Year: 1979*/ \
+item_rbd_ganz_mavag_ikarus, /*Year: 1983*/ \
 item_rbd_vagonka_studenka_91m0_, /*Year: 1984*/ \
 item_rbd_ns_dh1, /*Year: 1984*/ \
 item_rbd_mav_ikarus_260, /*Year: 1986*/ \
@@ -94,6 +95,7 @@ item_rbe_hyundai_rotem_silverliner_v, /*Year: 2010*/
 
 #define SORTING_STEAM \
 item_steam_john_cockerill___cie__le_belge, /*Year: 1835*/ \
+item_steam_sharp_2_2_2_patriot, /*Year: 1844*/ \
 item_steam_gwr_iron_duke, /*Year: 1846*/ \
 item_steam_norris___brothers_4_4_0_la_copiapo, /*Year: 1850*/ \
 item_steam_william_fairbairn_2_2_2_baroneza, /*Year: 1852*/ \
@@ -158,6 +160,7 @@ item_steam_alco_46581_2_6_6_2_mallet, /*Year: 1910*/ \
 item_steam_afe_n1_2_6_0, /*Year: 1910*/ \
 item_steam_skoda_6lo, /*Year: 1910*/ \
 item_steam_baldwin_0_22c_no8_monsefu, /*Year: 1910*/ \
+item_steam_fccp_q_class, /*Year: 1910*/ \
 item_steam_union_giesserei_2_8_2t, /*Year: 1911*/ \
 item_steam_orenstein___koppel_2_8_0_8_tender, /*Year: 1911*/ \
 item_steam_ansaldo_r_440_mallet, /*Year: 1911*/ \
@@ -169,7 +172,6 @@ item_steam_kawasaki_2_8_0_9600, /*Year: 1913*/ \
 item_steam_hanomag_alco_4_8_0_240, /*Year: 1913*/ \
 item_steam_mavag_375, /*Year: 1914*/ \
 item_steam_eveleigh_4_6_0_c35, /*Year: 1914*/ \
-item_steam_fccp_q_class, /*Year: 1914*/ \
 item_steam_nblc_4_6_2_ps10_class, /*Year: 1914*/ \
 item_steam_mavag_2_6_6_0_class_601, /*Year: 1914*/ \
 item_steam_stratford_works_l77_lner_n7, /*Year: 1915*/ \
@@ -189,6 +191,7 @@ item_steam_nzr_4_6_4t_wab, /*Year: 1923*/ \
 item_steam_hanomag_fablok_4_6_0_ok22, /*Year: 1923*/ \
 item_steam_kawasaki_2_8_2_d50, /*Year: 1923*/ \
 item_steam_henschel_4_4_2_19906, /*Year: 1923*/ \
+item_steam_enr_1100__lms_fowler_3f___wd_0_6_0t_, /*Year: 1924*/ \
 item_steam_mavag_4_8_0_424, /*Year: 1924*/ \
 item_steam_yorkshire_engine_co__4_8_4t_nitrate_101, /*Year: 1924*/ \
 item_steam_alco_4_6_2_sar_600, /*Year: 1925*/ \
@@ -218,7 +221,6 @@ item_steam_alco_series_4000_4_8_8_4_big_boy, /*Year: 1941*/ \
 item_steam_lima__4_8_4_7798_7817_daylight, /*Year: 1941*/ \
 item_steam_victorian_railways_h, /*Year: 1941*/ \
 item_steam_ggl_has_52, /*Year: 1942*/ \
-item_steam_enr_1100__lms_fowler_3f___wd_0_6_0t_, /*Year: 1942*/ \
 item_steam_north_british_lb_2_10_0, /*Year: 1943*/ \
 item_steam_islington_railway_workshops_81_92_520, /*Year: 1943*/ \
 item_steam_alco_2_8_0_74707_74785_type_29, /*Year: 1945*/ \
@@ -479,7 +481,6 @@ item_electric_slm_bbc_mfo_ge_4_4_i, /*Year: 1947*/ \
 item_electric_ge_w_1, /*Year: 1947*/ \
 item_electric_ge_el_2b, /*Year: 1948*/ \
 item_electric_alsthom_e_700, /*Year: 1948*/ \
-item_electric_efe_e_29, /*Year: 1949*/ \
 item_electric_gec_nblc_sar_4e_, /*Year: 1952*/ \
 item_electric_lew_el2, /*Year: 1952*/ \
 item_electric_asea_dm3, /*Year: 1953*/ \
@@ -769,6 +770,7 @@ item_mtro_london_1938_stock, /*Year: 1938*/ \
 item_mtro_lhb_et_171, /*Year: 1942*/ \
 item_mtro_acf_new_york_r10, /*Year: 1948*/ \
 item_mtro_st__louis_car_company_chicago_l_6000_series, /*Year: 1950*/ \
+item_mtro_aeg_pyongyang_d, /*Year: 1953*/ \
 item_mtro_stanga_rome_mr_100, /*Year: 1954*/ \
 item_mtro_mmz_moscow_type_d, /*Year: 1955*/ \
 item_mtro_gec_alsthom_paris_mp55, /*Year: 1957*/ \
@@ -778,15 +780,14 @@ item_mtro_strommens_oslo_t1000, /*Year: 1964*/ \
 item_mtro_hawker_siddeley_toronto_h1, /*Year: 1965*/ \
 item_mtro_comeng_light_metro_prototype, /*Year: 1965*/ \
 item_mtro_werkspoor_rotterdam_mg2_type_m, /*Year: 1968*/ \
+item_mtro_mmz_budapest_ev3, /*Year: 1970*/ \
 item_mtro_man_munchen_mvg_a2, /*Year: 1971*/ \
 item_mtro_st__louis_car_co_new_york_r44, /*Year: 1971*/ \
-item_mtro_mmz_prague_ecs_set, /*Year: 1972*/ \
 item_mtro_metro_cammell_london_1972_stock, /*Year: 1972*/ \
 item_mtro_lhb_amsterdam_m1, /*Year: 1973*/ \
 item_mtro_abb_henschel_berlin_bvg_f74, /*Year: 1973*/ \
 item_mtro_asea_stockholm_c8, /*Year: 1974*/ \
 item_mtro_caf_madrid_series_5000, /*Year: 1974*/ \
-item_mtro_mmz_budapest_ev3, /*Year: 1975*/ \
 item_mtro_valmet_helsinki_m100, /*Year: 1977*/ \
 item_mtro_sorefame_sao_paulo_serie_5500, /*Year: 1979*/ \
 item_mtro_mmz_moscow_81_720, /*Year: 1981*/ \
@@ -804,13 +805,11 @@ item_mtro_gec_alsthom_santiago_ns_93, /*Year: 1996*/ \
 item_mtro_adtranz_berlin_bvg_h, /*Year: 1996*/ \
 item_mtro_gec_alsthom_paris_mp89, /*Year: 1997*/ \
 item_mtro_caf_amsterdam_s3_90, /*Year: 1997*/ \
-item_mtro_aeg_pyongyang_d, /*Year: 1999*/ \
+item_mtro_alstom_metropolis, /*Year: 1998*/ \
 item_mtro_hitachi_buenos_aires_serie_1200, /*Year: 1999*/ \
 item_mtro_caf_rome_s_300, /*Year: 1999*/ \
 item_mtro_kawasaki_hi___nippon_sharyo_c751b, /*Year: 2000*/ \
 item_mtro_mmz_moscow_81_740, /*Year: 2003*/ \
-item_mtro_alstom_singapore_c830_metropolis, /*Year: 2003*/ \
-item_mtro_alstom_brasil_santiago_as_2002, /*Year: 2004*/ \
 item_mtro_siemens_oslo_mx3000, /*Year: 2007*/ \
 item_mtro_tudh_recife_vlt_mobile_3, /*Year: 2008*/ \
 item_mtro_kawasaki_osaka_30000, /*Year: 2009*/ \

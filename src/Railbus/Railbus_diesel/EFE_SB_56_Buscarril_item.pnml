@@ -4,7 +4,7 @@
 
 
 // Template: TPL_01B.
-// Data from: nan
+// Data from: https://es.wikipedia.org/wiki/Ramal_Talca-Constituci%C3%B3n
 
 // Notes:
 //// TE_STARTING_KN: 22 -- Gemini
@@ -34,13 +34,13 @@ item(FEAT_TRAINS, item_rbd_efe_sb_56_buscarril) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 18.96598;
-        running_cost_factor: 16.65615;
-        speed: 60 km/h;
+        cost_factor: 20.0559;
+        running_cost_factor: 16.66813;
+        speed: 80 km/h;
         power: 180 hp;
         cargo_capacity: 40;
-        weight: 20 ton;
-        tractive_effort_coefficient: 0.112;
+        weight: 30 ton;
+        tractive_effort_coefficient: 0.074;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

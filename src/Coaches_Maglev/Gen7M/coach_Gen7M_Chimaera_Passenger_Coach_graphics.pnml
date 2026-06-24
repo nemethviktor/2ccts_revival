@@ -4,7 +4,7 @@
 // Template: TPL_04U
 
 // PURCHASE
-spriteset(spriteset_mglv_coach_gen7m_chimaera_passenger_coach_purchase, "gfx/coaches_maglev/gen7m/coach_gen7m_chimaera_passenger_coach_purchase.png") {template_purchase_wagon(1, 1)}
+spriteset(spriteset_mglv_coach_gen7m_chimaera_passenger_coach_purchase, "gfx/coaches_maglev/gen7m/coach_gen7m_chimaera_passenger_coach.png") {template_purchase_coach(1, 107)}
 
 
 // VEHICLE

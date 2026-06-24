@@ -4,10 +4,10 @@
 
 
 // Template: TPL_03C.
-// Data from: nan
+// Data from: https://en.wikipedia.org/wiki/LMS_Fowler_Class_3F
 
 // Notes:
-//// WEB: NA -- I cannot find anything on this actually ever existing.
+//// WEB: https://en.wikipedia.org/wiki/LMS_Fowler_Class_3F -- …we (discord people) think this is the item in question but not 100%
 //// VEHIDCODE: steam_ENR_1100__LMS_Fowler_3F___WD_0_6_0T_ -- Possibly ex-GWR/War Department "LMS Fowler Class 3F" but can't verify
 //// TE_STARTING_KN: 92.68 -- Assuming this is a LMS Fowler Class 3F
 
@@ -15,8 +15,8 @@
 item(FEAT_TRAINS, item_steam_enr_1100__lms_fowler_3f___wd_0_6_0t_) {
     property {
         name: string(str_steam_enr_1100__lms_fowler_3f___wd_0_6_0t_);
-        climates_available: ((param_region_africa || param_region_western_europe) && 1) ? ALL_CLIMATES : NO_CLIMATE;
-        introduction_date: date(1942,1,1);
+        climates_available: ((param_region_africa || (param_region_northern_europe || param_region_western_europe)) && 1) ? ALL_CLIMATES : NO_CLIMATE;
+        introduction_date: date(1924,1,1);
         model_life: 45;
         vehicle_life: 30;
         retire_early: 20;
@@ -49,7 +49,7 @@ item(FEAT_TRAINS, item_steam_enr_1100__lms_fowler_3f___wd_0_6_0t_) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/africa", "region/europe/western", "power/steam", "role/light_freight"];
+	badges: ["region/africa", "region/europe/western", "region/europe/northern", "power/steam", "role/light_freight"];
 
     }
     graphics {

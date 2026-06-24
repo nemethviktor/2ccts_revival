@@ -30,13 +30,13 @@ def load_master_data(excel_path):
 
         # Identify where 'VEHIDCODE' is in this specific sheet
         try:
-            vehid_col_idx = list(dataframe.columns).index('VEHIDCODE')
+            vehid_col_idx = list(dataframe.columns).index("VEHIDCODE")
         except ValueError:
             return  # Skip sheets without the ID key
 
         for r_idx, row in enumerate(ws.iter_rows(min_row=2), start=0):
             # Get the cell object instead of just the value first
-            veh_id_cell = ws.cell(row=r_idx+2, column=vehid_col_idx+1)
+            veh_id_cell = ws.cell(row=r_idx + 2, column=vehid_col_idx + 1)
             veh_id = veh_id_cell.value
 
             if veh_id is None:
@@ -44,7 +44,7 @@ def load_master_data(excel_path):
 
             # --- NEW LOGIC TO HANDLE ARRAY FORMULAS ---
             # If the cell is an ArrayFormula object, get its text representation
-            if hasattr(veh_id, 'ref'):  # This is how openpyxl identifies ArrayFormulas
+            if hasattr(veh_id, "ref"):  # This is how openpyxl identifies ArrayFormulas
                 # We can't evaluate the formula here, but we can take its string value
                 veh_id = str(veh_id)
 
@@ -59,11 +59,11 @@ def load_master_data(excel_path):
                 if cell.comment:
                     col_name = dataframe.columns[c_idx]
                     # Clean the note text (removing Excel's 'Author:' prefix if present)
-                    clean_note = cell.comment.text.split(':')[-1].strip()
+                    clean_note = cell.comment.text.split(":")[-1].strip()
                     notes_lookup[veh_id][col_name] = f"{cell.value} -- {clean_note}"
 
     # 1. Start with the 'control' sheet as the base
-    df_master = sheets['control']
+    df_master = sheets["control"]
 
     # FIX: Restore Namibia 'NA' specifically for the COUNTRY_CODE column
     # We replace actual NaN values with the string 'NA' ONLY in the properties sheet
@@ -71,16 +71,18 @@ def load_master_data(excel_path):
     # if 'properties' in sheets:
     #     sheets['properties']['COUNTRY_CODE'] = sheets['properties']['COUNTRY_CODE'].fillna(
     #         'NA')
-    extract_notes('control', sheets['control'])
+    extract_notes("control", sheets["control"])
 
     # 2. List of sheets that provide extra vehicle properties
     data_sheets = [
-        'properties', 'flags', 'track_types',
-        'graphics_properties', 'roster'
+        "properties",
+        "flags",
+        "track_types",
+        "graphics_properties",
+        "roster",
     ]
 
-    text_columns = ['ITEM',
-                    'NAME', 'VEHIDCODE', 'CARGODEF', 'WEB']
+    text_columns = ["ITEM", "NAME", "VEHIDCODE", "CARGODEF", "WEB"]
 
     for sheet_name in data_sheets:
         if sheet_name in sheets:
@@ -90,27 +92,29 @@ def load_master_data(excel_path):
             extract_notes(sheet_name, current_sheet)
 
             # --- Your existing merge logic ---
-            cols_to_fix = [
-                c for c in text_columns if c in current_sheet.columns]
+            cols_to_fix = [c for c in text_columns if c in current_sheet.columns]
             for col in cols_to_fix:
-                current_sheet[col] = current_sheet[col].astype(
-                    str).replace('nan', '')
+                current_sheet[col] = current_sheet[col].astype(str).replace("nan", "")
 
-            overlapping_cols = [c for c in current_sheet.columns
-                                if c in df_master.columns and c != 'VEHIDCODE']
+            overlapping_cols = [
+                c
+                for c in current_sheet.columns
+                if c in df_master.columns and c != "VEHIDCODE"
+            ]
 
             df_master = df_master.drop(columns=overlapping_cols)
-            df_master = pd.merge(df_master, current_sheet,
-                                 on='VEHIDCODE', how='left')
+            df_master = pd.merge(df_master, current_sheet, on="VEHIDCODE", how="left")
 
     # 3. Load the Lookups and Copyright
-    df_cost_lookup = sheets['cost_lookup'].set_index('COST_CAT').fillna(0)
+    df_cost_lookup = sheets["cost_lookup"].set_index("COST_CAT").fillna(0)
 
-    df_copyright = sheets['copyright_text']
+    df_copyright = sheets["copyright_text"]
     copyright_txt = ""
     if not df_copyright.empty:
         copyright_txt = str(df_copyright.iloc[0, 0])
-    elif len(df_copyright.columns) > 0 and "Unnamed" not in str(df_copyright.columns[0]):
+    elif len(df_copyright.columns) > 0 and "Unnamed" not in str(
+        df_copyright.columns[0]
+    ):
         copyright_txt = str(df_copyright.columns[0])
 
     # Final safety check before returning from load_master_data
@@ -120,16 +124,16 @@ def load_master_data(excel_path):
 
 
 def is_true(val) -> bool:
-    """ Checks if a value evals to true (ie is a string that says so, or 1, or just True)"""
-    return (val == True or str(val).upper() == 'TRUE') or (val == 1)
+    """Checks if a value evals to true (ie is a string that says so, or 1, or just True)"""
+    return (val == True or str(val).upper() == "TRUE") or (val == 1)
 
 
 def get_badges(row: pd.Series) -> str:
     # example: badges: ["type/bus", "power/diesel", "flag/flag_CC", "usage/city"];
     # ok that's from a bus-nml but docu is s.it and can't find a better one.
-    vehidcode = row['VEHIDCODE'].lower()
-    power = row['ENGINE_CLASS'].lower()
-    if (is_true(row['IS_TURBINE'])):
+    vehidcode = row["VEHIDCODE"].lower()
+    power = row["ENGINE_CLASS"].lower()
+    if is_true(row["IS_TURBINE"]):
         power = "turbine"
     # flag = row['COUNTRY_CODE'].upper()
     badges = []
@@ -137,24 +141,24 @@ def get_badges(row: pd.Series) -> str:
     # attributes = [] # there's only one for now
 
     # Region/s
-    if is_true(row['AFRICA']):
+    if is_true(row["AFRICA"]):
         regions.append("africa")
-    if is_true(row['ASIA']):
+    if is_true(row["ASIA"]):
         regions.append("asia")
     # f..k me sideways that one is 'ern' but the other is not...
-    if is_true(row['NORTH_AMERICA']):
+    if is_true(row["NORTH_AMERICA"]):
         regions.append("america/northern")
-    if is_true(row['SOUTH_AMERICA']):
+    if is_true(row["SOUTH_AMERICA"]):
         regions.append("america/south")
-    if is_true(row['SOUTHERN_EUROPE']):
+    if is_true(row["SOUTHERN_EUROPE"]):
         regions.append("europe/southern")
-    if is_true(row['WESTERN_EUROPE']):
+    if is_true(row["WESTERN_EUROPE"]):
         regions.append("europe/western")
-    if is_true(row['EASTERN_EUROPE']):
+    if is_true(row["EASTERN_EUROPE"]):
         regions.append("europe/eastern")
-    if is_true(row['NORTHERN_EUROPE']):
+    if is_true(row["NORTHERN_EUROPE"]):
         regions.append("europe/northern")
-    if is_true(row['OCEANIA']):
+    if is_true(row["OCEANIA"]):
         regions.append("oceania")
 
     for region in regions:
@@ -165,39 +169,48 @@ def get_badges(row: pd.Series) -> str:
     #     badges.append(f"flag/{flag}")
 
     # Power
-    if vehidcode.startswith('mtro') or vehidcode.startswith('singlemtro'):
-        power = 'metro'
+    if vehidcode.startswith("mtro") or vehidcode.startswith("singlemtro"):
+        power = "metro"
 
     if power != "":
-        if power == 'electric':
-            if \
-                    is_true(row['TRACK_TYPE_STANDARD_GAUGE_RAILTYPE_25KV']) or \
-                    is_true(row['TRACK_TYPE_STANDARD_GAUGE_RAILTYPE_15KV']) or \
-                    is_true(row['TRACK_TYPE_NARROW_GAUGE_RAILTYPE_25KV']) or \
-                    is_true(row['TRACK_TYPE_NARROW_GAUGE_RAILTYPE_15KV']) or \
-                    is_true(row['TRACK_TYPE_BROAD_GAUGE_RAILTYPE_25KV']) or \
-                    is_true(row['TRACK_TYPE_BROAD_GAUGE_RAILTYPE_15KV']):
-                power = 'electric/ac'
-            elif \
-                    is_true(row['TRACK_TYPE_STANDARD_GAUGE_RAILTYPE_3KV']) or \
-                    is_true(row['TRACK_TYPE_STANDARD_GAUGE_RAILTYPE_1500V']) or \
-                    is_true(row['TRACK_TYPE_NARROW_GAUGE_RAILTYPE_3KV']) or \
-                    is_true(row['TRACK_TYPE_NARROW_GAUGE_RAILTYPE_1500V']) or \
-                    is_true(row['TRACK_TYPE_BROAD_GAUGE_RAILTYPE_3KV']) or \
-                    is_true(row['TRACK_TYPE_BROAD_GAUGE_RAILTYPE_1500V']):
-                power = 'electric/dc'
+        if power == "electric":
+            if (
+                is_true(row["TRACK_TYPE_STANDARD_GAUGE_RAILTYPE_25KV"])
+                or is_true(row["TRACK_TYPE_STANDARD_GAUGE_RAILTYPE_15KV"])
+                or is_true(row["TRACK_TYPE_NARROW_GAUGE_RAILTYPE_25KV"])
+                or is_true(row["TRACK_TYPE_NARROW_GAUGE_RAILTYPE_15KV"])
+                or is_true(row["TRACK_TYPE_BROAD_GAUGE_RAILTYPE_25KV"])
+                or is_true(row["TRACK_TYPE_BROAD_GAUGE_RAILTYPE_15KV"])
+            ):
+                power = "electric/ac"
+            elif (
+                is_true(row["TRACK_TYPE_STANDARD_GAUGE_RAILTYPE_3KV"])
+                or is_true(row["TRACK_TYPE_STANDARD_GAUGE_RAILTYPE_1500V"])
+                or is_true(row["TRACK_TYPE_NARROW_GAUGE_RAILTYPE_3KV"])
+                or is_true(row["TRACK_TYPE_NARROW_GAUGE_RAILTYPE_1500V"])
+                or is_true(row["TRACK_TYPE_BROAD_GAUGE_RAILTYPE_3KV"])
+                or is_true(row["TRACK_TYPE_BROAD_GAUGE_RAILTYPE_1500V"])
+            ):
+                power = "electric/dc"
             else:
-                power = 'electric'
+                power = "electric"
 
         # i want to tag maglev wagons, otherwise it can be confusing in the game.
-        if is_true(row['IS_WAGON_OR_COACH']) and not is_true(power == 'maglev'):
+        if is_true(row["IS_WAGON_OR_COACH"]) and not is_true(power == "maglev"):
             pass
         else:
             badges.append(f"power/{power}")
 
-    role = row['ROLE'].lower().replace(' ', '_').replace('/',
-                                                         '_').replace('-', '_').replace('(', '_').replace(')', '_')
-    if is_true(row['VEHICLE_FLAG_TRAIN_HAS_CAB']):
+    role = (
+        row["ROLE"]
+        .lower()
+        .replace(" ", "_")
+        .replace("/", "_")
+        .replace("-", "_")
+        .replace("(", "_")
+        .replace(")", "_")
+    )
+    if is_true(row["VEHICLE_FLAG_TRAIN_HAS_CAB"]):
         badges.append("attribute/push_pull")
 
     badges.append(f"role/{role}")
@@ -232,18 +245,18 @@ def calculate_nml_cost(row: pd.Series, m, is_running_cost=False) -> float:
     """
     # 1. Setup raw variables and handle empty cells (NaN)
     m = m.fillna(0)
-    W = float(row.get('WEIGHT', 0))
-    P = float(row.get('POWER', 0))
-    S = float(row.get('SPEED', 0))
-    TE = float(row.get('TE_COEFFICIENT', 0))
-    C = float(row.get('HEAD_CAPACITY', 0))
+    W = float(row.get("WEIGHT", 0))
+    P = float(row.get("POWER", 0))
+    S = float(row.get("SPEED", 0))
+    TE = float(row.get("TE_COEFFICIENT", 0))
+    C = float(row.get("HEAD_CAPACITY", 0))
 
     # Emulate the 3-iteration Newton SQRT
     sqrt_S = math.sqrt(S)
     sqrt_P = math.sqrt(P)
 
     # 2. Branch Logic based on your Macro Definitions
-    if row['COST_CAT'] in ['COACH', 'WAGON']:
+    if row["COST_CAT"] in ["COACH", "WAGON"]:
         if not is_running_cost:
             # Matches PURCHASECOSTNONENGINEVALUE(SCALAR, WFACTOR, SFACTOR, CAPFACTOR)
             # Logic: SCALAR * (WFACTOR * WEIGHT + SFACTOR * SQRT(SPEED) + CAPFACTOR * CAPACITY)
@@ -262,22 +275,26 @@ def calculate_nml_cost(row: pd.Series, m, is_running_cost=False) -> float:
         sqrt_C = math.sqrt(C)
         if not is_running_cost:
             multipler = 1
-            if row['IS_POWERED_UNPOWERED_SUNDRY']:
-                if '_powered' in row['VEHIDCODE'].lower():
+            if row["IS_POWERED_UNPOWERED_SUNDRY"]:
+                if "_powered" in row["VEHIDCODE"].lower():
                     multipler = 160
-                elif '_unpowered' in row['VEHIDCODE'].lower():
+                elif "_unpowered" in row["VEHIDCODE"].lower():
                     multipler = 80
 
-            base = (m.P2 * W) + (m.P3 * sqrt_S) + \
-                (m.P4 * sqrt_P) + (m.P5 * sqrt_C) + (m.P7 * TE)
-            if row['COST_CAT'] in ['DMU', 'EMU', 'METRO', 'MMU']:
-                base += (m.P6 * math.sqrt(row.get('WAGON_POWER', 0)))
+            base = (
+                (m.P2 * W)
+                + (m.P3 * sqrt_S)
+                + (m.P4 * sqrt_P)
+                + (m.P5 * sqrt_C)
+                + (m.P7 * TE)
+            )
+            if row["COST_CAT"] in ["DMU", "EMU", "METRO", "MMU"]:
+                base += m.P6 * math.sqrt(row.get("WAGON_POWER", 0))
             return round(m.P1 * base, 5) * multipler
         else:
-            base = (m.R2 * sqrt_S) + (m.R3 * sqrt_P) + \
-                (m.R4 * sqrt_C) + (m.R6 * TE)
-            if row['COST_CAT'] in ['DMU', 'EMU', 'METRO', 'MMU']:
-                base += (m.R5 * math.sqrt(row.get('WAGON_POWER', 0)))
+            base = (m.R2 * sqrt_S) + (m.R3 * sqrt_P) + (m.R4 * sqrt_C) + (m.R6 * TE)
+            if row["COST_CAT"] in ["DMU", "EMU", "METRO", "MMU"]:
+                base += m.R5 * math.sqrt(row.get("WAGON_POWER", 0))
             return round(max(m.R1 * base, 1.0), 5)
 
 
@@ -295,7 +312,7 @@ def get_climates(row: pd.Series) -> str:
         "OCEANIA": "param_region_oceania",
         "NO_REGION": "0",
         "NO_CONCEPT": "1",
-        "IS_CONCEPT": "param_concept"
+        "IS_CONCEPT": "param_concept",
     }
 
     # 2. Define Complex Macro Mapping
@@ -304,27 +321,29 @@ def get_climates(row: pd.Series) -> str:
     ALL_AMERICA = f"({region_map['NORTH_AMERICA']} || {region_map['SOUTH_AMERICA']})"
     COMECON = f"({region_map['ASIA']} || {region_map['EASTERN_EUROPE']})"
 
-    region_map.update({
-        "ALL_EUROPE": ALL_EUROPE,
-        "ALL_AMERICA": ALL_AMERICA,
-        "OLD_WORLD": f"({ALL_EUROPE} || {region_map['ASIA']} || {region_map['AFRICA']})",
-        "NON_EUROPEAN": f"({ALL_AMERICA} || {region_map['ASIA']} || {region_map['OCEANIA']} || {region_map['AFRICA']})",
-        "APAC": f"({region_map['ASIA']} || {region_map['OCEANIA']})",
-        "COMECON": COMECON,
-        "COMECON_EXTENDED": f"({COMECON} || {region_map['SOUTH_AMERICA']})",
-        "NORTH_WEST_EUROPE": f"({region_map['NORTHERN_EUROPE']} || {region_map['WESTERN_EUROPE']})",
-        "POST_SOVIET_BALTIC": f"({COMECON} || {region_map['NORTHERN_EUROPE']})",
-        "ALL_REGION":  f"({region_map['AFRICA']} || {ALL_AMERICA} || {region_map['ASIA']} || {ALL_EUROPE} || {region_map['OCEANIA']})"
-    })
+    region_map.update(
+        {
+            "ALL_EUROPE": ALL_EUROPE,
+            "ALL_AMERICA": ALL_AMERICA,
+            "OLD_WORLD": f"({ALL_EUROPE} || {region_map['ASIA']} || {region_map['AFRICA']})",
+            "NON_EUROPEAN": f"({ALL_AMERICA} || {region_map['ASIA']} || {region_map['OCEANIA']} || {region_map['AFRICA']})",
+            "APAC": f"({region_map['ASIA']} || {region_map['OCEANIA']})",
+            "COMECON": COMECON,
+            "COMECON_EXTENDED": f"({COMECON} || {region_map['SOUTH_AMERICA']})",
+            "NORTH_WEST_EUROPE": f"({region_map['NORTHERN_EUROPE']} || {region_map['WESTERN_EUROPE']})",
+            "POST_SOVIET_BALTIC": f"({COMECON} || {region_map['NORTHERN_EUROPE']})",
+            "ALL_REGION": f"({region_map['AFRICA']} || {ALL_AMERICA} || {region_map['ASIA']} || {ALL_EUROPE} || {region_map['OCEANIA']})",
+        }
+    )
 
     # 3. Extract values from Excel Row (stripping whitespace to be safe)
     # Adjust column names if they differ in your master_df
-    r1_raw = str(row.get('REGION1', 'NO_REGION')).strip()
-    r2_raw = str(row.get('REGION2', 'NO_REGION')).strip()
-    r3_raw = str(row.get('REGION3', 'NO_REGION')).strip()
-    r4_raw = str(row.get('REGION4', 'NO_REGION')).strip()
+    r1_raw = str(row.get("REGION1", "NO_REGION")).strip()
+    r2_raw = str(row.get("REGION2", "NO_REGION")).strip()
+    r3_raw = str(row.get("REGION3", "NO_REGION")).strip()
+    r4_raw = str(row.get("REGION4", "NO_REGION")).strip()
     # Assuming CONCEPT is in IS_CONCEPT column
-    c_raw = str(row.get('IS_CONCEPT', 'NO_CONCEPT')).strip()
+    c_raw = str(row.get("IS_CONCEPT", "NO_CONCEPT")).strip()
 
     # 4. Perform the "Magic" Lookup
     # .get(key, default) ensures that if Excel has a typo, it defaults to NO_REGION/NO_CONCEPT
@@ -347,7 +366,6 @@ def get_climates(row: pd.Series) -> str:
         # Only append if it's a valid region AND not a duplicate of region2
         if region4 != "0" and region4 != region3 and region4 != region2:
             region_clause += f" || {region4}"
-
 
     # 5. Build the final string
     return f"climates_available: (({region_clause}) && {concept}) ? ALL_CLIMATES : NO_CLIMATE;"
@@ -539,10 +557,9 @@ def get_cargo_definitions(row: pd.Series) -> str:
             f"cargo_allow_refit: [];\n{" "*8}"
             f"cargo_disallow_refit: [];\n{" "*8}"
         ),
-
     }
 
-    raw_val = str(row.get('CARGODEF', 'NONE')).strip().upper()
+    raw_val = str(row.get("CARGODEF", "NONE")).strip().upper()
 
     # Return the mapped string, or a fallback if the category is missing
     return cargo_map.get(raw_val, cargo_map["NONE"])
@@ -560,13 +577,14 @@ def parse_cargo_definitions(pnml_path):
 
     # Regex captures the macro name and the entire body until the next #define or EOF
     pattern = re.compile(
-        r'#define\s+(CARGODEF_[A-Z0-9_]+)\s+(.*?)(?=\s*#define|$)', re.DOTALL)
+        r"#define\s+(CARGODEF_[A-Z0-9_]+)\s+(.*?)(?=\s*#define|$)", re.DOTALL
+    )
 
-    with open(pnml_path, 'r', encoding='utf-8') as f:
+    with open(pnml_path, "r", encoding="utf-8") as f:
         content = f.read()
         # Strip comments to prevent matching commented-out definitions
-        content = re.sub(r'//.*', '', content)
-        content = re.sub(r'/\*.*?\*/', '', content, flags=re.DOTALL)
+        content = re.sub(r"//.*", "", content)
+        content = re.sub(r"/\*.*?\*/", "", content, flags=re.DOTALL)
 
         matches = pattern.findall(content)
         for name, body in matches:
@@ -579,8 +597,8 @@ def parse_cargo_definitions(pnml_path):
 def get_expanded_engine_capacity_switch(row: pd.Series) -> str:
     # We use \\ to produce a single literal \ in the output
     # We use {{ }} to produce literal { } in the NML code
-    cap = int(float(row['HEAD_CAPACITY']))
-    vehid_lcase = row['VEHIDCODE'].lower()
+    cap = int(float(row["HEAD_CAPACITY"]))
+    vehid_lcase = row["VEHIDCODE"].lower()
 
     return f"""
     switch(FEAT_TRAINS, SELF, switch_{vehid_lcase}_capacity_engine, cargo_classes) {{ \\
@@ -593,8 +611,8 @@ def get_expanded_engine_capacity_switch(row: pd.Series) -> str:
 def get_expanded_wagon_capacity_switch(row: pd.Series) -> str:
     # We use \\ to produce a single literal \ in the output
     # We use {{ }} to produce literal { } in the NML code
-    cap = row['WAGON_CAPACITY']
-    vehid_lcase = row['VEHIDCODE'].lower()
+    cap = row["WAGON_CAPACITY"]
+    vehid_lcase = row["VEHIDCODE"].lower()
 
     return f"""
     switch(FEAT_TRAINS, SELF, switch_{vehid_lcase}_capacity_wagon, cargo_classes) {{ \\
@@ -611,7 +629,7 @@ def generate_unified_items():
     print("--- Starting Unified Item Generation ---")
     script_dir = os.path.dirname(os.path.abspath(__file__))
     project_root = os.path.dirname(script_dir)
-    excel_path = os.path.join(script_dir, 'vehicle_report.xlsx')
+    excel_path = os.path.join(script_dir, "vehicle_report.xlsx")
     AIR_DRAG_COEFFICIENT = 0
     BITMASK_VEHICLE_INFO = 0
     CARGO_AGE_PERIOD_NORMAL = 185  # 2.5 days
@@ -623,22 +641,23 @@ def generate_unified_items():
 
     # 1. Load Data
     df_master, df_cost_lookup, copyright_text, notes_lookup = load_master_data(
-        excel_path=excel_path)
+        excel_path=excel_path
+    )
     for _, row in df_master.iterrows():
-        if pd.isna(row['VEHIDCODE']) or is_true(row['EXCLUDE']):
+        if pd.isna(row["VEHIDCODE"]) or is_true(row["EXCLUDE"]):
             continue
-        VEHID_ID_INT = int(row['VEHID_ID'])
-        VEHIDCODE_lcase = row['VEHIDCODE'].lower()
+        VEHID_ID_INT = int(row["VEHID_ID"])
+        VEHIDCODE_lcase = row["VEHIDCODE"].lower()
         veh_notes: dict = notes_lookup.get(VEHIDCODE_lcase, {})
-        TEMPLATE_ID = row['TEMPLATE_ID']
-        TEMPLATE_AMENDMENT_CODE = row['TEMPLATE_AMENDMENT_CODE']
+        TEMPLATE_ID = row["TEMPLATE_ID"]
+        TEMPLATE_AMENDMENT_CODE = row["TEMPLATE_AMENDMENT_CODE"]
 
         TEMPLATE_ID_FULL = f"{TEMPLATE_ID}{TEMPLATE_AMENDMENT_CODE}"
 
         RUNNING_COST_BASE = f"RUNNING_COST_{'ELECTRIC' if row['ENGINE_CLASS'] == 'MAGLEV' else row['ENGINE_CLASS']}"
 
         # Fetch Multipliers
-        category = str(row['COST_CAT']).strip()
+        category = str(row["COST_CAT"]).strip()
         m = df_cost_lookup.loc[category]
 
         # Calculate Costs for main item
@@ -646,264 +665,464 @@ def generate_unified_items():
         r_cost = calculate_nml_cost(row, m, is_running_cost=True)
 
         # 2. Tracks Logic
-        tracks = [col.replace('TRACK_TYPE_', '') for col in df_master.columns
-                  if col.startswith('TRACK_TYPE_') and (is_true(row[col]))]
+        tracks = [
+            col.replace("TRACK_TYPE_", "")
+            for col in df_master.columns
+            if col.startswith("TRACK_TYPE_") and (is_true(row[col]))
+        ]
         track_logic = f"[{', '.join(tracks)}]"
 
         # 3. Logic: Misc Flags exc driving cab logic
-        flags = [col.replace('MISC_FLAGS_', '') for col in df_master.columns
-                 if col.startswith('MISC_FLAGS_') and (is_true(row[col]))]
+        flags = [
+            col.replace("MISC_FLAGS_", "")
+            for col in df_master.columns
+            if col.startswith("MISC_FLAGS_") and (is_true(row[col]))
+        ]
         misc_logic = f"bitmask({', '.join(flags)})"
-        v1 = f"VISUAL_EFFECT_{row['VISUAL_EFFECT_1']}" if str(
-            row['VISUAL_EFFECT_1']) != "0" else "0"
+        v1 = (
+            f"VISUAL_EFFECT_{row['VISUAL_EFFECT_1']}"
+            if str(row["VISUAL_EFFECT_1"]) != "0"
+            else "0"
+        )
 
-        v2 = int(numpy.nan_to_num(row['VISUAL_EFFECT_2']))
+        v2 = int(numpy.nan_to_num(row["VISUAL_EFFECT_2"]))
 
         # Loading Speed
-        ls_val = int(row['LOADINGSPEED_VALUE'])
+        ls_val = int(row["LOADINGSPEED_VALUE"])
         ls_logic = f"isUltraSpeed ? 255 : (param_loadingspeed == 0) ? {ls_val}/2 : (param_loadingspeed == 2) ? {ls_val}*2 : {ls_val}"
 
         # Separate from the further below because this is for powered/unpowered livery overrides only
-        graphics_switch_visual_effect_and_powered_position = f"visual_effect_and_powered: switch_{VEHIDCODE_lcase}_visual_effect_and_powered_position;" if TEMPLATE_ID_FULL in [
-            'TPL_02D'] else None
+        graphics_switch_visual_effect_and_powered_position = (
+            f"visual_effect_and_powered: switch_{VEHIDCODE_lcase}_visual_effect_and_powered_position;"
+            if TEMPLATE_ID_FULL in ["TPL_02D"]
+            else None
+        )
 
         # Ie "below" is this...
         if graphics_switch_visual_effect_and_powered_position:
             graphics_switch_visual_effect_and_powered = "// no 'visual_effect_and_powered' becuase while it does exist, _visual_effect_and_powered_position is set for livery overrides"
         elif TEMPLATE_ID_FULL in [
-            'TPL_03A', 'TPL_03D', 'TPL_03G', 'TPL_16A', 'TPL_17A', 'TPL_17B', 'TPL_17C', 'TPL_17D', 'TPL_17E', 'TPL_32A', 'TPL_32B', 'TPL_32C',
-        ] and TEMPLATE_ID_FULL not in ['TPL_02A', 'TPL_02D', 'TPL_02E', 'TPL_02F', 'TPL_02G', 'TPL_42A', 'TPL_42B', 'TPL_42C',
-                                       ]:
-            graphics_switch_visual_effect_and_powered = f"visual_effect_and_powered: switch_{VEHIDCODE_lcase}_visual_effect;"
-        elif TEMPLATE_ID_FULL in ['TPL_02A', 'TPL_02D', 'TPL_02E', 'TPL_02F', 'TPL_02G', 'TPL_42A', 'TPL_42B', 'TPL_42C',
-                                  ]:
+            "TPL_03A",
+            "TPL_03D",
+            "TPL_03G",
+            "TPL_16A",
+            "TPL_17A",
+            "TPL_17B",
+            "TPL_17C",
+            "TPL_17D",
+            "TPL_17E",
+            "TPL_32A",
+            "TPL_32B",
+            "TPL_32C",
+        ] and TEMPLATE_ID_FULL not in [
+            "TPL_02A",
+            "TPL_02D",
+            "TPL_02E",
+            "TPL_02F",
+            "TPL_02G",
+            "TPL_42A",
+            "TPL_42B",
+            "TPL_42C",
+        ]:
+            graphics_switch_visual_effect_and_powered = (
+                f"visual_effect_and_powered: switch_{VEHIDCODE_lcase}_visual_effect;"
+            )
+        elif TEMPLATE_ID_FULL in [
+            "TPL_02A",
+            "TPL_02D",
+            "TPL_02E",
+            "TPL_02F",
+            "TPL_02G",
+            "TPL_42A",
+            "TPL_42B",
+            "TPL_42C",
+        ]:
             graphics_switch_visual_effect_and_powered = f"visual_effect_and_powered: switch_{VEHIDCODE_lcase}_visual_effect_and_powered;"
         else:
-            graphics_switch_visual_effect_and_powered = "// no 'visual_effect' or 'visual_effect_and_powered'"
+            graphics_switch_visual_effect_and_powered = (
+                "// no 'visual_effect' or 'visual_effect_and_powered'"
+            )
 
-        graphics_switch_articulated_part = f"articulated_part: switch_{VEHIDCODE_lcase}_articulated;" if TEMPLATE_ID_FULL in [
-            'TPL_03A', 'TPL_03D', 'TPL_03G', 'TPL_16A', 'TPL_16A', 'TPL_16B', 'TPL_17A', 'TPL_17C', 'TPL_17D', 'TPL_17E', 'TPL_25A', 'TPL_32A', 'TPL_32B', 'TPL_32C',] else "// no 'articulated_part'"
-        graphics_switch_length = f"length: switch_{VEHIDCODE_lcase}_length;" if TEMPLATE_ID_FULL in [
-            'TPL_03A', 'TPL_03D', 'TPL_03G', 'TPL_16A', 'TPL_16B', 'TPL_17C', 'TPL_17D', 'TPL_17E', 'TPL_32A', 'TPL_32B', 'TPL_32C',] else "// no 'length'"
+        graphics_switch_articulated_part = (
+            f"articulated_part: switch_{VEHIDCODE_lcase}_articulated;"
+            if TEMPLATE_ID_FULL
+            in [
+                "TPL_03A",
+                "TPL_03D",
+                "TPL_03G",
+                "TPL_16A",
+                "TPL_16A",
+                "TPL_16B",
+                "TPL_17A",
+                "TPL_17C",
+                "TPL_17D",
+                "TPL_17E",
+                "TPL_25A",
+                "TPL_32A",
+                "TPL_32B",
+                "TPL_32C",
+            ]
+            else "// no 'articulated_part'"
+        )
+        graphics_switch_length = (
+            f"length: switch_{VEHIDCODE_lcase}_length;"
+            if TEMPLATE_ID_FULL
+            in [
+                "TPL_03A",
+                "TPL_03D",
+                "TPL_03G",
+                "TPL_16A",
+                "TPL_16B",
+                "TPL_17C",
+                "TPL_17D",
+                "TPL_17E",
+                "TPL_32A",
+                "TPL_32B",
+                "TPL_32C",
+            ]
+            else "// no 'length'"
+        )
 
         # These are for livery overrides
         # Actually I think we only care about middle and cargo -> basically it's to say that if there is something between the two ends
         # ... then it should look like xy so even though 1 and only 1 item has front/back, it's never been called even in legacy code.
         # Also no ending ";" for these on purpose.
-        graphics_switch_front_livery = f"switch_{VEHIDCODE_lcase}_front_livery" if TEMPLATE_ID_FULL in [
-            'TPL_42A', 'TPL_42C'] else None
-        graphics_switch_middle_livery = f"switch_{VEHIDCODE_lcase}_middle_livery" if TEMPLATE_ID_FULL in [
-            'TPL_25A', 'TPL_42A', 'TPL_42C'] else None
-        graphics_switch_back_livery = f"switch_{VEHIDCODE_lcase}_back_livery" if TEMPLATE_ID_FULL in [
-            'TPL_42A', 'TPL_42C'] else None
-        graphics_switch_cargo_selection = f"switch_{VEHIDCODE_lcase}_cargo_selection" if TEMPLATE_ID_FULL in [
-            'TPL_02A', 'TPL_02D', 'TPL_02E', 'TPL_02F', 'TPL_02F', 'TPL_02G', 'TPL_04C', 'TPL_04E', 'TPL_04F',
-            'TPL_04G', 'TPL_04H', 'TPL_04I', 'TPL_04J', 'TPL_04K', 'TPL_04L', 'TPL_04M', 'TPL_04N',
-            'TPL_04O', 'TPL_04P', 'TPL_04Q',
-        ] \
+        graphics_switch_front_livery = (
+            f"switch_{VEHIDCODE_lcase}_front_livery"
+            if TEMPLATE_ID_FULL in ["TPL_42A", "TPL_42C"]
             else None
+        )
+        graphics_switch_middle_livery = (
+            f"switch_{VEHIDCODE_lcase}_middle_livery"
+            if TEMPLATE_ID_FULL in ["TPL_25A", "TPL_42A", "TPL_42C"]
+            else None
+        )
+        graphics_switch_back_livery = (
+            f"switch_{VEHIDCODE_lcase}_back_livery"
+            if TEMPLATE_ID_FULL in ["TPL_42A", "TPL_42C"]
+            else None
+        )
+        graphics_switch_cargo_selection = (
+            f"switch_{VEHIDCODE_lcase}_cargo_selection"
+            if TEMPLATE_ID_FULL
+            in [
+                "TPL_02A",
+                "TPL_02D",
+                "TPL_02E",
+                "TPL_02F",
+                "TPL_02F",
+                "TPL_02G",
+                "TPL_04C",
+                "TPL_04E",
+                "TPL_04F",
+                "TPL_04G",
+                "TPL_04H",
+                "TPL_04I",
+                "TPL_04J",
+                "TPL_04K",
+                "TPL_04L",
+                "TPL_04M",
+                "TPL_04N",
+                "TPL_04O",
+                "TPL_04P",
+                "TPL_04Q",
+            ]
+            else None
+        )
 
         # This middle is not the middle above...[we ignore the 3-4 'steam' types that also actually have this because in legacy code i checked and it's not being applied.]
-        graphics_spriteset_middle = f"spriteset_{VEHIDCODE_lcase}_middle" if is_true(
-            category == 'METRO') and not is_true(row['IS_WAGON_OR_COACH']) else None
+        graphics_spriteset_middle = (
+            f"spriteset_{VEHIDCODE_lcase}_middle"
+            if is_true(category == "METRO") and not is_true(row["IS_WAGON_OR_COACH"])
+            else None
+        )
 
-        graphics_switch_can_attach = f"can_attach_wagon: switch_can_attach_vehicle;" if not is_true(
-            row['IS_WAGON_OR_COACH']) else "// no 'can_attach'"
+        graphics_switch_can_attach = (
+            f"can_attach_wagon: switch_can_attach_vehicle;"
+            if not is_true(row["IS_WAGON_OR_COACH"])
+            else "// no 'can_attach'"
+        )
 
-        graphics_spritegroup_t42b_head_logic = f"spritegroup_{VEHIDCODE_lcase}_engine1_l1" if TEMPLATE_ID_FULL in [
-            'TPL_42B'] else None
+        graphics_spritegroup_t42b_head_logic = (
+            f"spritegroup_{VEHIDCODE_lcase}_engine1_l1"
+            if TEMPLATE_ID_FULL in ["TPL_42B"]
+            else None
+        )
 
-        graphics_switch_t42b_wagon_logic = f"switch_{VEHIDCODE_lcase}_wagon_logic" if TEMPLATE_ID_FULL in [
-            'TPL_42B'] else None
+        graphics_switch_t42b_wagon_logic = (
+            f"switch_{VEHIDCODE_lcase}_wagon_logic"
+            if TEMPLATE_ID_FULL in ["TPL_42B"]
+            else None
+        )
 
         content = []
         content.append(f"\n{copyright_text}\n\n")
         content.append(
-            f"\n// Template: {TEMPLATE_ID_FULL}.\n// Data from: {row['WEB']}\n\n")
+            f"\n// Template: {TEMPLATE_ID_FULL}.\n// Data from: {row['WEB']}\n\n"
+        )
         if veh_notes:
             content.append("// Notes:\n")
             for k, v in veh_notes.items():
                 content.append(f"//// {k}: {v}\n")
             content.append("\n\n")
 
-        
         # We need to port some of the random crap from _graphics here else it won't work because we are no longer defining HEAD_CAPACITY as a generic thing.
-        if (category in ['DMU', 'EMU', 'WAGON', 'MMU'] and row['VEHID_ID_CATEGORY'] not in ['ID_RANGE_CARGOEMU', 'ID_RANGE_CARGODMU']) or category.endswith('RAILBUS'):
+        if (
+            category in ["DMU", "EMU", "WAGON", "MMU"]
+            and row["VEHID_ID_CATEGORY"]
+            not in ["ID_RANGE_CARGOEMU", "ID_RANGE_CARGODMU"]
+        ) or category.endswith("RAILBUS"):
             content.append("// Cargo capacity" + "\n")
             content.append(get_expanded_engine_capacity_switch(row))
             content.append(get_expanded_wagon_capacity_switch(row))
 
         # I've wholly failed to figure out why these two are special in a logical way so i'm just hardcoding them
         if VEHID_ID_INT in [2021, 1005]:
-            content.append(f"""switch(FEAT_TRAINS, SELF, switch_{VEHIDCODE_lcase}_capacity_position, position_in_vehid_chain % 2) {{
+            content.append(
+                f"""switch(FEAT_TRAINS, SELF, switch_{VEHIDCODE_lcase}_capacity_position, position_in_vehid_chain % 2) {{
                 0: switch_{VEHIDCODE_lcase}_capacity_engine;
                 0;
-            }}\n\n""")
+            }}\n\n"""
+            )
 
         content.append(f"item(FEAT_TRAINS, {row['ITEM'].lower()}) {{\n")
         content.append("    property {\n")
         content.append(f"        name: string({row['NAME'].lower()});\n")
         content.append(f"        {get_climates(row)}\n")
-        content.append(f"        introduction_date: date({int(row['INTRODUCTION_YEAR'])},1,1);\n")
-        content.append(f"        model_life: {"VEHICLE_NEVER_EXPIRES" if row['MODEL_LIFE'] == "VEHICLE_NEVER_EXPIRES" else int(row['MODEL_LIFE'])};\n")
+        content.append(
+            f"        introduction_date: date({int(row['INTRODUCTION_YEAR'])},1,1);\n"
+        )
+        content.append(
+            f"        model_life: {"VEHICLE_NEVER_EXPIRES" if row['MODEL_LIFE'] == "VEHICLE_NEVER_EXPIRES" else int(row['MODEL_LIFE'])};\n"
+        )
         content.append(f"        vehicle_life: {int(row['VEHICLE_LIFE'])};\n")
         content.append(
-            f"        retire_early: {0 if is_true(row['IS_WAGON_OR_COACH']) else 20};\n")
+            f"        retire_early: {0 if is_true(row['IS_WAGON_OR_COACH']) else 20};\n"
+        )
         content.append(f"        loading_speed: {ls_logic};\n")
         content.append(f"        cost_factor: {p_cost};\n")
         content.append(f"        running_cost_factor: {r_cost};\n")
         content.append(f"        speed: {int(row['SPEED'])} km/h;\n")
         content.append(f"        power: {int(row['POWER'])} hp;\n")
-        content.append(f"        cargo_capacity: {255 if int(row['HEAD_CAPACITY']) > 255 else int(row['HEAD_CAPACITY'])};\n")
+        content.append(
+            f"        cargo_capacity: {255 if int(row['HEAD_CAPACITY']) > 255 else int(row['HEAD_CAPACITY'])};\n"
+        )
         content.append(f"        weight: {int(row['WEIGHT'])} ton;\n")
-        content.append(f"        tractive_effort_coefficient: {row['TE_COEFFICIENT']};\n")
+        content.append(
+            f"        tractive_effort_coefficient: {row['TE_COEFFICIENT']};\n"
+        )
         content.append(f"        air_drag_coefficient: {AIR_DRAG_COEFFICIENT};\n\n")
         content.append(f"        reliability_decay: {RELIABILITY_DECAY};\n")
         content.append(f"        {get_cargo_definitions(row)}\n")
-        content.append(f"        cargo_age_period: {CARGO_AGE_PERIOD_SLEEPER if is_true('sleeper' in VEHIDCODE_lcase) else CARGO_AGE_PERIOD_NORMAL};\n")
+        content.append(
+            f"        cargo_age_period: {CARGO_AGE_PERIOD_SLEEPER if is_true('sleeper' in VEHIDCODE_lcase) else CARGO_AGE_PERIOD_NORMAL};\n"
+        )
         content.append(f"        misc_flags: {misc_logic};\n")
 
         # Push-pull DC (DT) logic where applicable
-        if TEMPLATE_ID_FULL in ['TPL_04A', 'TPL_04U'] and is_true(row['VEHICLE_FLAG_TRAIN_HAS_CAB']):
+        if TEMPLATE_ID_FULL in ["TPL_04A", "TPL_04U"] and is_true(
+            row["VEHICLE_FLAG_TRAIN_HAS_CAB"]
+        ):
             content.append(
-                f"        extra_flags: bitmask(VEHICLE_FLAG_TRAIN_HAS_CAB);\n")
+                f"        extra_flags: bitmask(VEHICLE_FLAG_TRAIN_HAS_CAB);\n"
+            )
         content.append(f"        refit_cost: {REFIT_COST};\n")
         content.append(f"        ai_special_flag: AI_FLAG_PASSENGER | AI_FLAG_CARGO;\n")
         content.append(f"        track_type: {track_logic};\n")
         content.append(f"        running_cost_base: {RUNNING_COST_BASE};\n")
-        content.append(f"        engine_class: {'ENGINE_CLASS_' + row['ENGINE_CLASS']};\n")
-        content.append(f"        visual_effect_and_powered: visual_effect_and_powered({v1}, {v2}, {row['VISUAL_EFFECT_3']});\n\n")
+        content.append(
+            f"        engine_class: {'ENGINE_CLASS_' + row['ENGINE_CLASS']};\n"
+        )
+        content.append(
+            f"        visual_effect_and_powered: visual_effect_and_powered({v1}, {v2}, {row['VISUAL_EFFECT_3']});\n\n"
+        )
         content.append(f"        sprite_id: {SPRITE_ID};\n")
         content.append(f"        dual_headed: {int(row['DUAL_HEADED'])};\n")
         content.append(f"        length: {int(row['LENGTH'])};\n")
-        content.append(
-            f"        extra_power_per_wagon: {POWER_PER_WAGON};\n")
-        content.append(
-            f"        bitmask_vehicle_info: {BITMASK_VEHICLE_INFO};\n")
+        content.append(f"        extra_power_per_wagon: {POWER_PER_WAGON};\n")
+        content.append(f"        bitmask_vehicle_info: {BITMASK_VEHICLE_INFO};\n")
 
         content.append(f"{get_badges(row)}\n")
         content.append("    }\n")
         # Graphics selection/overrides
         content.append("    graphics {\n")
         cargo_capacity_defined = False
-        if TEMPLATE_ID_FULL in ['TPL_32B']:
+        if TEMPLATE_ID_FULL in ["TPL_32B"]:
             content.append(
-                f"        cargo_capacity: switch_{VEHIDCODE_lcase}_capacity_position;\n")
+                f"        cargo_capacity: switch_{VEHIDCODE_lcase}_capacity_position;\n"
+            )
             cargo_capacity_defined = True
-        purchase_cargo_cap = int(row['HEAD_CAPACITY'])
+        purchase_cargo_cap = int(row["HEAD_CAPACITY"])
         if purchase_cargo_cap > 255:
             content.append(f"        purchase_cargo_capacity: {purchase_cargo_cap};\n")
-        content.append(
-            f"        purchase: spriteset_{VEHIDCODE_lcase}_purchase;\n")
-        if is_true(row['IS_POWERED_UNPOWERED_SUNDRY']):
+        content.append(f"        purchase: spriteset_{VEHIDCODE_lcase}_purchase;\n")
+        if is_true(row["IS_POWERED_UNPOWERED_SUNDRY"]):
             # FML.
             purchasetext = "PURCHASETEXT"
-            cargodef = "PASSENGER" if is_true(
-                row['CARGODEF'].startswith('PASSENGER')) else "CARGO"
-            powered_state = "UNPOWERED" if VEHIDCODE_lcase.endswith(
-                'unpowered') else "POWERED"
-            content.append(
-                f"        {purchasetext}MUWAGON{cargodef}{powered_state}\n")
-        elif (category in ['DMU', 'EMU', 'WAGON', 'MMU'] and row['VEHID_ID_CATEGORY'] not in ['ID_RANGE_CARGODMU', 'ID_RANGE_CARGOEMU']) or category.endswith('RAILBUS'):
+            cargodef = (
+                "PASSENGER"
+                if is_true(row["CARGODEF"].startswith("PASSENGER"))
+                else "CARGO"
+            )
+            powered_state = (
+                "UNPOWERED" if VEHIDCODE_lcase.endswith("unpowered") else "POWERED"
+            )
+            content.append(f"        {purchasetext}MUWAGON{cargodef}{powered_state}\n")
+        elif (
+            category in ["DMU", "EMU", "WAGON", "MMU"]
+            and row["VEHID_ID_CATEGORY"]
+            not in ["ID_RANGE_CARGODMU", "ID_RANGE_CARGOEMU"]
+        ) or category.endswith("RAILBUS"):
             if not cargo_capacity_defined:
                 content.append(
-                    f"        cargo_capacity: switch_{VEHIDCODE_lcase}_capacity_engine;\n")
-        #if not is_true(row['IS_POWERED_UNPOWERED_SUNDRY']):
+                    f"        cargo_capacity: switch_{VEHIDCODE_lcase}_capacity_engine;\n"
+                )
+        # if not is_true(row['IS_POWERED_UNPOWERED_SUNDRY']):
         #    content.append(f"""        additional_text: string(str_{VEHIDCODE_lcase}_url);\n""")
-        content.append(
-            f"        {graphics_switch_visual_effect_and_powered}\n")
+        content.append(f"        {graphics_switch_visual_effect_and_powered}\n")
         content.append(f"        {graphics_switch_length}\n")
         content.append(f"        {graphics_switch_articulated_part}\n")
         content.append(f"        {graphics_switch_can_attach}\n")
 
-        if not is_true(row['IS_POWERED_UNPOWERED_SUNDRY']):
+        if not is_true(row["IS_POWERED_UNPOWERED_SUNDRY"]):
             content.append(f"        // Add calls to defined switches below\n")
             content.append(
-                f"        // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank\n")
+                f"        // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank\n"
+            )
             content.append(
-                f"        // PURCHASETEXT_SWITCH_CALL // this is actually blank\n")
+                f"        // PURCHASETEXT_SWITCH_CALL // this is actually blank\n"
+            )
             pass
 
-        if TEMPLATE_ID_FULL in ['TPL_03A', 'TPL_03D', 'TPL_03F', 'TPL_03G', 'TPL_16A', 'TPL_16B', 'TPL_17A', 'TPL_17B', 'TPL_17C', 'TPL_17D', 'TPL_17E', 'TPL_32A', 'TPL_32B', 'TPL_32C',
-                                ]:
-            content.append(
-                f"        default: switch_{VEHIDCODE_lcase}_position;\n")
-        elif TEMPLATE_ID_FULL in [
-            'TPL_42B'
+        if TEMPLATE_ID_FULL in [
+            "TPL_03A",
+            "TPL_03D",
+            "TPL_03F",
+            "TPL_03G",
+            "TPL_16A",
+            "TPL_16B",
+            "TPL_17A",
+            "TPL_17B",
+            "TPL_17C",
+            "TPL_17D",
+            "TPL_17E",
+            "TPL_32A",
+            "TPL_32B",
+            "TPL_32C",
         ]:
+            content.append(f"        default: switch_{VEHIDCODE_lcase}_position;\n")
+        elif TEMPLATE_ID_FULL in ["TPL_42B"]:
             content.append(
-                f"        default: {graphics_spritegroup_t42b_head_logic};\n")
-        elif TEMPLATE_ID_FULL in ['TPL_03A', 'TPL_03B', 'TPL_03C', 'TPL_03E', 'TPL_03G', 'TPL_32B', 'TPL_32C',
-                                  ]:
-            content.append(
-                f"        default: switch_{VEHIDCODE_lcase}_animation;\n")
-        elif category in ['DIESELENGINE', 'ELECTRICENGINE', 'MAGLEVENGINE', 'STEAMENGINE'] \
-                or category.endswith('RAILBUS') \
-                or is_true(row['IS_POWERED_UNPOWERED_SUNDRY']):
-            if TEMPLATE_ID_FULL in ['TPL_02A', 'TPL_02C', 'TPL_02D', 'TPL_02E', 'TPL_02F', 'TPL_02G', 'TPL_42A', 'TPL_42B', 'TPL_42C'
-                                    ]:
-                content.append(
-                    f"        default: switch_{VEHIDCODE_lcase}_reversed;\n")
+                f"        default: {graphics_spritegroup_t42b_head_logic};\n"
+            )
+        elif TEMPLATE_ID_FULL in [
+            "TPL_03A",
+            "TPL_03B",
+            "TPL_03C",
+            "TPL_03E",
+            "TPL_03G",
+            "TPL_32B",
+            "TPL_32C",
+        ]:
+            content.append(f"        default: switch_{VEHIDCODE_lcase}_animation;\n")
+        elif (
+            category
+            in ["DIESELENGINE", "ELECTRICENGINE", "MAGLEVENGINE", "STEAMENGINE"]
+            or category.endswith("RAILBUS")
+            or is_true(row["IS_POWERED_UNPOWERED_SUNDRY"])
+        ):
+            if TEMPLATE_ID_FULL in [
+                "TPL_02A",
+                "TPL_02C",
+                "TPL_02D",
+                "TPL_02E",
+                "TPL_02F",
+                "TPL_02G",
+                "TPL_42A",
+                "TPL_42B",
+                "TPL_42C",
+            ]:
+                content.append(f"        default: switch_{VEHIDCODE_lcase}_reversed;\n")
             else:
+                content.append(f"        default: spriteset_{VEHIDCODE_lcase};\n")
+        elif category in ["COACH", "WAGON"]:
+            if TEMPLATE_ID_FULL in [
+                "TPL_02A",
+                "TPL_02D",
+                "TPL_02E",
+                "TPL_02F",
+                "TPL_02G",
+                "TPL_04C",
+                "TPL_04E",
+                "TPL_04F",
+                "TPL_04G",
+                "TPL_04H",
+                "TPL_04I",
+                "TPL_04J",
+                "TPL_04K",
+                "TPL_04L",
+                "TPL_04M",
+                "TPL_04N",
+                "TPL_04O",
+                "TPL_04P",
+                "TPL_04Q",
+            ]:
                 content.append(
-                    f"        default: spriteset_{VEHIDCODE_lcase};\n")
-        elif category in ['COACH', 'WAGON']:
-            if TEMPLATE_ID_FULL in ['TPL_02A', 'TPL_02D', 'TPL_02E', 'TPL_02F', 'TPL_02G', 'TPL_04C', 'TPL_04E', 'TPL_04F', 'TPL_04G',
-                                    'TPL_04H', 'TPL_04I', 'TPL_04J', 'TPL_04K', 'TPL_04L', 'TPL_04M', 'TPL_04N', 'TPL_04O',
-                                    'TPL_04P', 'TPL_04Q',
-                                    ]:
-                content.append(
-                    f"        default: switch_{VEHIDCODE_lcase}_cargo_selection;\n")
+                    f"        default: switch_{VEHIDCODE_lcase}_cargo_selection;\n"
+                )
             elif TEMPLATE_ID_FULL in [
-                'TPL_04C',
-                'TPL_04D',
-                'TPL_04J',
-                'TPL_04M',
-                'TPL_04P',
+                "TPL_04C",
+                "TPL_04D",
+                "TPL_04J",
+                "TPL_04M",
+                "TPL_04P",
             ]:
                 # Total cluserf.k but box-cars and some tanker-wagons have so-called standard liveries
                 # ....with a capital 'S'!
                 content.append(
-                    f"        default: switch_{VEHIDCODE_lcase}_standard_livery;\n")
+                    f"        default: switch_{VEHIDCODE_lcase}_standard_livery;\n"
+                )
+            elif TEMPLATE_ID_FULL in ["TPL_04T"]:
+                content.append(
+                    f"        default: switch_{VEHIDCODE_lcase}_livestock_livery;\n"
+                )
             elif TEMPLATE_ID_FULL in [
-                    'TPL_04T']:
+                "TPL_02F",
+                "TPL_04A",
+                "TPL_04B",
+                "TPL_04R",
+            ] and not is_true(row["VEHICLE_FLAG_TRAIN_HAS_CAB"]):
+                content.append(f"        default: switch_{VEHIDCODE_lcase}_livery;\n")
+            elif TEMPLATE_ID_FULL in ["TPL_04S"]:
                 content.append(
-                    f"        default: switch_{VEHIDCODE_lcase}_livestock_livery;\n")
-            elif (TEMPLATE_ID_FULL in [
-                'TPL_02F',
-                'TPL_04A',
-                'TPL_04B',
-                'TPL_04R',
-            ] and not is_true(row['VEHICLE_FLAG_TRAIN_HAS_CAB'])):
-                content.append(
-                    f"        default: switch_{VEHIDCODE_lcase}_livery;\n")
+                    f"        default: switch_{VEHIDCODE_lcase}_position_check;\n"
+                )
             elif TEMPLATE_ID_FULL in [
-                'TPL_04U',
-            ] and not is_true(row['VEHICLE_FLAG_TRAIN_HAS_CAB']):
-                content.append(
-                    f"        default: spriteset_{VEHIDCODE_lcase}_l1;\n")
-            elif TEMPLATE_ID_FULL in ['TPL_04A', 'TPL_04U'] and is_true(row['VEHICLE_FLAG_TRAIN_HAS_CAB']):
-                content.append(
-                    f"        default: switch_{VEHIDCODE_lcase}_position;\n")
+                "TPL_04U",
+            ] and not is_true(row["VEHICLE_FLAG_TRAIN_HAS_CAB"]):
+                content.append(f"        default: spriteset_{VEHIDCODE_lcase}_l1;\n")
+            elif TEMPLATE_ID_FULL in ["TPL_04A", "TPL_04U"] and is_true(
+                row["VEHICLE_FLAG_TRAIN_HAS_CAB"]
+            ):
+                content.append(f"        default: switch_{VEHIDCODE_lcase}_position;\n")
 
             else:
                 # I've lost track of this sh.t by now.
                 content.append(f"        default: switch_{VEHIDCODE_lcase};\n")
 
-            if row['COST_CAT'] == 'COACH':
-                if TEMPLATE_ID_FULL in ['TPL_04A', 'TPL_04U'] and is_true(row['VEHICLE_FLAG_TRAIN_HAS_CAB']):
+            if row["COST_CAT"] == "COACH":
+                if TEMPLATE_ID_FULL in ["TPL_04A", "TPL_04U"] and is_true(
+                    row["VEHICLE_FLAG_TRAIN_HAS_CAB"]
+                ):
                     content.append(
-                        f"        // Always flip because DT has to face backwards\n")
-                    content.append(
-                        f"        reverse_build_probability: return 100;\n")
+                        f"        // Always flip because DT has to face backwards\n"
+                    )
+                    content.append(f"        reverse_build_probability: return 100;\n")
                 else:
-                    content.append(
-                        f"        // Random flip for variety\n")
-                    content.append(
-                        f"        reverse_build_probability: return 50;\n")
-        elif category in ['DMU', 'EMU', 'METRO', 'MMU']:
-            content.append(
-                f"        default: switch_{VEHIDCODE_lcase}_reversed;\n")
+                    content.append(f"        // Random flip for variety\n")
+                    content.append(f"        reverse_build_probability: return 50;\n")
+        elif category in ["DMU", "EMU", "METRO", "MMU"]:
+            content.append(f"        default: switch_{VEHIDCODE_lcase}_reversed;\n")
         else:
             pass
 
@@ -911,71 +1130,97 @@ def generate_unified_items():
 
         # Livery Overrides for MUs - but not actual wagons.
         # TBH I have no idea why powered/unpowered wagons are generally classified as *MUs, rather than COACHes/WAGONs but I'll leave it as-is.
-        if (category in ['DMU', 'EMU', 'METRO', 'MMU'] and not is_true(row['IS_POWERED_UNPOWERED_SUNDRY'])):
+        if category in ["DMU", "EMU", "METRO", "MMU"] and not is_true(
+            row["IS_POWERED_UNPOWERED_SUNDRY"]
+        ):
 
             # At the moment there's just 1 CARGOxMU..
-            overrideType = "cargo_" if row['LOADINGSPEED'] == "CARGO" and is_true(
-                row['MISC_FLAGS_TRAIN_FLAG_MU']) else ""
+            overrideType = (
+                "cargo_"
+                if row["LOADINGSPEED"] == "CARGO"
+                and is_true(row["MISC_FLAGS_TRAIN_FLAG_MU"])
+                else ""
+            )
 
-            if category in ['METRO']:
-                overrideCategory = 'mtro_metro'
-            elif category in ['MMU']:
-                overrideCategory = 'mglv_maglev'
+            if category in ["METRO"]:
+                overrideCategory = "mtro_metro"
+            elif category in ["MMU"]:
+                overrideCategory = "mglv_maglev"
             else:
-                overrideCategory = 'mu_mu'
+                overrideCategory = "mu_mu"
 
             # Unpowered Wagon
             content.append(
-                f"    livery_override (item_{overrideCategory}_{overrideType}wagon_unpowered) {{\n")
+                f"    livery_override (item_{overrideCategory}_{overrideType}wagon_unpowered) {{\n"
+            )
             content.append(f"        loading_speed: {ls_logic};\n")
             content.append(
-                f"        running_cost_factor: int({int(row['SPEED'])}/10);\n")
+                f"        running_cost_factor: int({int(row['SPEED'])}/10);\n"
+            )
             content.append(f"        weight: int({int(row['WEIGHT'])}*1/2);\n")
-            if graphics_switch_visual_effect_and_powered_position and TEMPLATE_ID_FULL not in ['TPL_02D']:
+            if (
+                graphics_switch_visual_effect_and_powered_position
+                and TEMPLATE_ID_FULL not in ["TPL_02D"]
+            ):
                 content.append(
-                    f"        {graphics_switch_visual_effect_and_powered_position}\n")
-            content.append(
-                f"        cargo_capacity: {int(row['WAGON_CAPACITY'])};\n")
+                    f"        {graphics_switch_visual_effect_and_powered_position}\n"
+                )
+            content.append(f"        cargo_capacity: {int(row['WAGON_CAPACITY'])};\n")
             content.append(f"        length: {int(row['WAGON_LENGTH'])};\n")
-            content.append(f"        default: {graphics_switch_middle_livery if graphics_switch_middle_livery
+            content.append(
+                f"        default: {graphics_switch_middle_livery if graphics_switch_middle_livery
                                                else graphics_switch_cargo_selection if graphics_switch_cargo_selection
                                                else graphics_spriteset_middle if graphics_spriteset_middle
-                                               else graphics_switch_t42b_wagon_logic if graphics_switch_t42b_wagon_logic else None};\n")
+                                               else graphics_switch_t42b_wagon_logic if graphics_switch_t42b_wagon_logic else None};\n"
+            )
             content.append(f"    }}\n")
 
             # Powered Wagon - Replicating complex RC eval
-            p_sqrt = math.sqrt(row['POWER'])
-            rc_powered = (int(row['SPEED'])/10) + (p_sqrt/10) + \
-                (row['TE_COEFFICIENT'] * row['WEIGHT'])
+            p_sqrt = math.sqrt(row["POWER"])
+            rc_powered = (
+                (int(row["SPEED"]) / 10)
+                + (p_sqrt / 10)
+                + (row["TE_COEFFICIENT"] * row["WEIGHT"])
+            )
 
             content.append(
-                f"    livery_override (item_{overrideCategory}_{overrideType}wagon_powered) {{\n")
+                f"    livery_override (item_{overrideCategory}_{overrideType}wagon_powered) {{\n"
+            )
             content.append(f"        loading_speed: {ls_logic};\n")
-            content.append(
-                f"        running_cost_factor: round({rc_powered});\n")
+            content.append(f"        running_cost_factor: round({rc_powered});\n")
             content.append(f"        power: int({int(row['POWER'])}*1/2);\n")
             content.append(f"        weight: int({int(row['WEIGHT'])}*3/4);\n")
-            if graphics_switch_visual_effect_and_powered_position and TEMPLATE_ID_FULL not in ['TPL_02D']:
+            if (
+                graphics_switch_visual_effect_and_powered_position
+                and TEMPLATE_ID_FULL not in ["TPL_02D"]
+            ):
                 content.append(
-                    f"        {graphics_switch_visual_effect_and_powered_position}\n")
+                    f"        {graphics_switch_visual_effect_and_powered_position}\n"
+                )
+            content.append(f"        cargo_capacity: {int(row['WAGON_CAPACITY'])};\n")
             content.append(
-                f"        cargo_capacity: {int(row['WAGON_CAPACITY'])};\n")
-            content.append(
-                f"        tractive_effort_coefficient: int({row['TE_COEFFICIENT']}*10*{int(row['WEIGHT'])});\n")
+                f"        tractive_effort_coefficient: int({row['TE_COEFFICIENT']}*10*{int(row['WEIGHT'])});\n"
+            )
             content.append(f"        length: {int(row['WAGON_LENGTH'])};\n")
-            content.append(f"        default: {graphics_switch_middle_livery if graphics_switch_middle_livery
+            content.append(
+                f"        default: {graphics_switch_middle_livery if graphics_switch_middle_livery
                                                else graphics_switch_cargo_selection if graphics_switch_cargo_selection
                                                else graphics_spriteset_middle if graphics_spriteset_middle
-                                               else graphics_switch_t42b_wagon_logic if graphics_switch_t42b_wagon_logic else None};\n")
+                                               else graphics_switch_t42b_wagon_logic if graphics_switch_t42b_wagon_logic else None};\n"
+            )
             content.append(f"    }}\n")
 
         content.append("}\n")
 
         # Save Logic
-        rel_folder = str(row['SAVE_TO']).replace('\\', '/')
+        rel_folder = str(row["SAVE_TO"]).replace("\\", "/")
         abs_folder = os.path.normpath(os.path.join(project_root, rel_folder))
         os.makedirs(abs_folder, exist_ok=True)
-        with open(os.path.join(abs_folder, f"{row['FILENAMES_EXPECTED']}_item.pnml"), 'w', encoding='utf-8') as f:
+        with open(
+            os.path.join(abs_folder, f"{row['FILENAMES_EXPECTED']}_item.pnml"),
+            "w",
+            encoding="utf-8",
+        ) as f:
             f.writelines(content)
 
     # Save as CSV - this takes quite a few seconds.

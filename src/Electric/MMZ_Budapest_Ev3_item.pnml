@@ -4,14 +4,14 @@
 
 
 // Template: TPL_02C.
-// Data from: https://hu.wikipedia.org/wiki/Ev3
+// Data from: https://ru.wikipedia.org/wiki/%D0%95%D0%B6_(%D0%B2%D0%B0%D0%B3%D0%BE%D0%BD_%D0%BC%D0%B5%D1%82%D1%80%D0%BE)
 
 item(FEAT_TRAINS, item_mtro_mmz_budapest_ev3) {
     property {
         name: string(str_mtro_mmz_budapest_ev3);
-        climates_available: ((param_region_eastern_europe || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
-        introduction_date: date(1975,1,1);
-        model_life: VEHICLE_NEVER_EXPIRES;
+        climates_available: (((param_region_asia || param_region_eastern_europe) || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
+        introduction_date: date(1970,1,1);
+        model_life: 45;
         vehicle_life: 50;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
@@ -44,7 +44,7 @@ item(FEAT_TRAINS, item_mtro_mmz_budapest_ev3) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/europe/eastern", "power/metro", "role/metro"];
+	badges: ["region/asia", "region/europe/eastern", "power/metro", "role/metro"];
 
     }
     graphics {

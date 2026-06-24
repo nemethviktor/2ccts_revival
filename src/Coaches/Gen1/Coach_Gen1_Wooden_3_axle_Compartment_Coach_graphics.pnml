@@ -4,7 +4,7 @@
 // Template: TPL_04A
 
 // PURCHASE
-spriteset(spriteset_mu_coach_gen1_wooden_3_axle_compartment_coach_purchase, "gfx/coaches/gen1/coach_gen1_wooden_3_axle_compartment_coach_purchase.png") {template_purchase_wagon(1, 1)}
+spriteset(spriteset_mu_coach_gen1_wooden_3_axle_compartment_coach_purchase, "gfx/coaches/gen1/coach_gen1_wooden_3_axle_compartment_coach.png") {template_purchase_coach(1, 107)}
 
 
 // VEHICLE

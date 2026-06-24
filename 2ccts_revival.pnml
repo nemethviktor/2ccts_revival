@@ -1680,9 +1680,6 @@
 #include "src/Electric/Alsthom_E_700_graphics.pnml"
 #include "src/Electric/Alsthom_E_700_item.pnml"
 
-#include "src/Electric/EFE_E_29_graphics.pnml"
-#include "src/Electric/EFE_E_29_item.pnml"
-
 #include "src/Electric/GE_E44_graphics.pnml"
 #include "src/Electric/GE_E44_item.pnml"
 
@@ -1974,9 +1971,6 @@
 #include "src/Electric/MMZ_Moscow_81_740_graphics.pnml"
 #include "src/Electric/MMZ_Moscow_81_740_item.pnml"
 
-#include "src/Electric/Alstom_Singapore_C830_Metropolis_graphics.pnml"
-#include "src/Electric/Alstom_Singapore_C830_Metropolis_item.pnml"
-
 #include "src/Electric/Siemens_Oslo_MX3000_graphics.pnml"
 #include "src/Electric/Siemens_Oslo_MX3000_item.pnml"
 
@@ -2016,17 +2010,11 @@
 #include "src/Electric/Werkspoor_Rotterdam_MG2_Type_M_graphics.pnml"
 #include "src/Electric/Werkspoor_Rotterdam_MG2_Type_M_item.pnml"
 
-#include "src/Electric/MMZ_Prague_ECS_Set_graphics.pnml"
-#include "src/Electric/MMZ_Prague_ECS_Set_item.pnml"
-
 #include "src/Electric/Hitachi_Buenos_Aires_Serie_1200_graphics.pnml"
 #include "src/Electric/Hitachi_Buenos_Aires_Serie_1200_item.pnml"
 
 #include "src/Electric/GEC_Alsthom_Santiago_NS_93_graphics.pnml"
 #include "src/Electric/GEC_Alsthom_Santiago_NS_93_item.pnml"
-
-#include "src/Electric/Alstom_Brasil_Santiago_AS_2002_graphics.pnml"
-#include "src/Electric/Alstom_Brasil_Santiago_AS_2002_item.pnml"
 
 #include "src/Electric/TUDH_Recife_VLT_Mobile_3_graphics.pnml"
 #include "src/Electric/TUDH_Recife_VLT_Mobile_3_item.pnml"
@@ -2078,6 +2066,9 @@
 
 #include "src/Electric/Ganz_Hunslet_Budapest_G2_graphics.pnml"
 #include "src/Electric/Ganz_Hunslet_Budapest_G2_item.pnml"
+
+#include "src/Electric/Alstom_Metropolis_graphics.pnml"
+#include "src/Electric/Alstom_Metropolis_item.pnml"
 
 
 //// MMU
@@ -2237,6 +2228,9 @@
 
 #include "src/Railbus/Railbus_Diesel/MAV_Ikarus_260_graphics.pnml"
 #include "src/Railbus/Railbus_Diesel/MAV_Ikarus_260_item.pnml"
+
+#include "src/Railbus/Railbus_Diesel/Ganz_MAVAG_Ikarus_graphics.pnml"
+#include "src/Railbus/Railbus_Diesel/Ganz_MAVAG_Ikarus_item.pnml"
 
 
 //// RAILBUS - RAILBUS_ELECTRIC
@@ -2822,6 +2816,9 @@
 
 #include "src/Steam/Hanomag_ALCO_4_8_0_240_graphics.pnml"
 #include "src/Steam/Hanomag_ALCO_4_8_0_240_item.pnml"
+
+#include "src/Steam/Sharp_2_2_2_Patriot_graphics.pnml"
+#include "src/Steam/Sharp_2_2_2_Patriot_item.pnml"
 
 
 //// WAGONS_MAGLEV - GEN7M

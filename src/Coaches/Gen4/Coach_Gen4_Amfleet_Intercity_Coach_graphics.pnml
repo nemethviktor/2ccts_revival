@@ -4,7 +4,7 @@
 // Template: TPL_04A
 
 // PURCHASE
-spriteset(spriteset_mu_coach_gen4_amfleet_intercity_coach_purchase, "gfx/coaches/gen4/coach_gen4_amfleet_intercity_coach_purchase.png") {template_purchase_wagon(1, 1)}
+spriteset(spriteset_mu_coach_gen4_amfleet_intercity_coach_purchase, "gfx/coaches/gen4/coach_gen4_amfleet_intercity_coach.png") {template_purchase_coach(1, 107)}
 
 
 // VEHICLE

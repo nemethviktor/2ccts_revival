@@ -73,6 +73,10 @@
     - `Alsthom EC 386`
     - `Chesta Casagrande E650`
     - `Breda Marelli E32`    
+    - `Ganz-MAVAG Ikarus 601`
+    - `Alstom Metropolis` (and removed various other versions of it. This is available in all settings to which it has been exported)
+    - `Sharp Brothers 2-2-2 'Patriot'`
+    - Did some changes to the MMZ (metro manufacturer) vehicles, namely merged some of them that were duplicates (ie Budapest and Prague sets are now just referred to as the Ezsh-type)
     - Added some future trains from the Dutch Trainset.
     - Added some of the maglevs from the original OpenTTD game.
   

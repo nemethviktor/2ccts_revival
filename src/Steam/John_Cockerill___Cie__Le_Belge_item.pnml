@@ -6,6 +6,10 @@
 // Template: TPL_03C.
 // Data from: https://en.wikipedia.org/wiki/Le_Belge_(locomotive)
 
+// Notes:
+//// WEIGHT: 60 -- Inc tender
+
+
 item(FEAT_TRAINS, item_steam_john_cockerill___cie__le_belge) {
     property {
         name: string(str_steam_john_cockerill___cie__le_belge);
@@ -15,12 +19,12 @@ item(FEAT_TRAINS, item_steam_john_cockerill___cie__le_belge) {
         vehicle_life: 34;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 8.96687;
+        cost_factor: 13.36687;
         running_cost_factor: 7.13023;
         speed: 35 km/h;
         power: 50 hp;
         cargo_capacity: 0;
-        weight: 16 ton;
+        weight: 60 ton;
         tractive_effort_coefficient: 0.09;
         air_drag_coefficient: 0;
 
