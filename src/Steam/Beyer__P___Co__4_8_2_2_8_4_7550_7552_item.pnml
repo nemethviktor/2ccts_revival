@@ -56,9 +56,6 @@ item(FEAT_TRAINS, item_steam_beyer__p___co__4_8_2_2_8_4_7550_7552) {
         length: switch_steam_beyer__p___co__4_8_2_2_8_4_7550_7552_length;
         articulated_part: switch_steam_beyer__p___co__4_8_2_2_8_4_7550_7552_articulated;
         can_attach_wagon: switch_can_attach_vehicle;
-        // Add calls to defined switches below
-        // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
-        // PURCHASETEXT_SWITCH_CALL // this is actually blank
         default: switch_steam_beyer__p___co__4_8_2_2_8_4_7550_7552_position;
     }
 }

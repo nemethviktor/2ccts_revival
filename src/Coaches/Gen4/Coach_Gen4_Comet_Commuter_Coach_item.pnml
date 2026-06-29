@@ -58,9 +58,6 @@ item(FEAT_TRAINS, item_mu_coach_gen4_comet_commuter_coach) {
         // no 'length'
         // no 'articulated_part'
         // no 'can_attach'
-        // Add calls to defined switches below
-        // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
-        // PURCHASETEXT_SWITCH_CALL // this is actually blank
         default: switch_mu_coach_gen4_comet_commuter_coach_position;
         // Always flip because DT has to face backwards
         reverse_build_probability: return 100;

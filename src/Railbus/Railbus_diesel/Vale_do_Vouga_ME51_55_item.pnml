@@ -68,9 +68,6 @@ item(FEAT_TRAINS, item_rbd_vale_do_vouga_me51_55) {
         // no 'length'
         // no 'articulated_part'
         can_attach_wagon: switch_can_attach_vehicle;
-        // Add calls to defined switches below
-        // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
-        // PURCHASETEXT_SWITCH_CALL // this is actually blank
         default: spriteset_rbd_vale_do_vouga_me51_55;
     }
 }

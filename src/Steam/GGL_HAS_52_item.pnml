@@ -56,9 +56,6 @@ item(FEAT_TRAINS, item_steam_ggl_has_52) {
         length: switch_steam_ggl_has_52_length;
         articulated_part: switch_steam_ggl_has_52_articulated;
         can_attach_wagon: switch_can_attach_vehicle;
-        // Add calls to defined switches below
-        // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
-        // PURCHASETEXT_SWITCH_CALL // this is actually blank
         default: switch_steam_ggl_has_52_position;
     }
 }

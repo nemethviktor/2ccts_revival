@@ -52,9 +52,6 @@ item(FEAT_TRAINS, item_steam_vulcan_foundry_2_8_0_liberation) {
         length: switch_steam_vulcan_foundry_2_8_0_liberation_length;
         articulated_part: switch_steam_vulcan_foundry_2_8_0_liberation_articulated;
         can_attach_wagon: switch_can_attach_vehicle;
-        // Add calls to defined switches below
-        // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
-        // PURCHASETEXT_SWITCH_CALL // this is actually blank
         default: switch_steam_vulcan_foundry_2_8_0_liberation_position;
     }
 }

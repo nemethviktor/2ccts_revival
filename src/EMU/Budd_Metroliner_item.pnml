@@ -75,9 +75,6 @@ item(FEAT_TRAINS, item_emu_budd_metroliner) {
         // no 'length'
         // no 'articulated_part'
         can_attach_wagon: switch_can_attach_vehicle;
-        // Add calls to defined switches below
-        // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
-        // PURCHASETEXT_SWITCH_CALL // this is actually blank
         default: switch_emu_budd_metroliner_reversed;
     }
     livery_override (item_mu_mu_wagon_unpowered) {

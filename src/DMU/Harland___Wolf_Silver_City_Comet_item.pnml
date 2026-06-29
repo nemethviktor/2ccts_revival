@@ -74,9 +74,6 @@ item(FEAT_TRAINS, item_dmu_harland___wolf_silver_city_comet) {
         // no 'length'
         // no 'articulated_part'
         can_attach_wagon: switch_can_attach_vehicle;
-        // Add calls to defined switches below
-        // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
-        // PURCHASETEXT_SWITCH_CALL // this is actually blank
         default: switch_dmu_harland___wolf_silver_city_comet_reversed;
     }
     livery_override (item_mu_mu_wagon_unpowered) {

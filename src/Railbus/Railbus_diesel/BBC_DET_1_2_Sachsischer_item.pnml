@@ -77,9 +77,6 @@ item(FEAT_TRAINS, item_rbd_bbc_det_1_2_sachsischer) {
         length: switch_rbd_bbc_det_1_2_sachsischer_length;
         articulated_part: switch_rbd_bbc_det_1_2_sachsischer_articulated;
         can_attach_wagon: switch_can_attach_vehicle;
-        // Add calls to defined switches below
-        // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
-        // PURCHASETEXT_SWITCH_CALL // this is actually blank
         default: switch_rbd_bbc_det_1_2_sachsischer_position;
     }
 }

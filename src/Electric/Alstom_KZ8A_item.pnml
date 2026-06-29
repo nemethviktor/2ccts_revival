@@ -56,9 +56,6 @@ item(FEAT_TRAINS, item_electric_alstom_kz8a) {
         length: switch_electric_alstom_kz8a_length;
         articulated_part: switch_electric_alstom_kz8a_articulated;
         can_attach_wagon: switch_can_attach_vehicle;
-        // Add calls to defined switches below
-        // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
-        // PURCHASETEXT_SWITCH_CALL // this is actually blank
         default: switch_electric_alstom_kz8a_position;
     }
 }

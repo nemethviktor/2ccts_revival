@@ -52,9 +52,6 @@ item(FEAT_TRAINS, item_diesel_baldwin_drs6_4_1000) {
         // no 'length'
         // no 'articulated_part'
         can_attach_wagon: switch_can_attach_vehicle;
-        // Add calls to defined switches below
-        // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
-        // PURCHASETEXT_SWITCH_CALL // this is actually blank
         default: spriteset_diesel_baldwin_drs6_4_1000;
     }
 }

@@ -56,9 +56,6 @@ item(FEAT_TRAINS, item_electric_alstom_crrc_datong_hxd2) {
         // no 'length'
         articulated_part: switch_electric_alstom_crrc_datong_hxd2_articulated;
         can_attach_wagon: switch_can_attach_vehicle;
-        // Add calls to defined switches below
-        // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
-        // PURCHASETEXT_SWITCH_CALL // this is actually blank
         default: switch_electric_alstom_crrc_datong_hxd2_position;
     }
 }

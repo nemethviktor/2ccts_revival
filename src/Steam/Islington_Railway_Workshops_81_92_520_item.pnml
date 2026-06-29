@@ -52,9 +52,6 @@ item(FEAT_TRAINS, item_steam_islington_railway_workshops_81_92_520) {
         length: switch_steam_islington_railway_workshops_81_92_520_length;
         articulated_part: switch_steam_islington_railway_workshops_81_92_520_articulated;
         can_attach_wagon: switch_can_attach_vehicle;
-        // Add calls to defined switches below
-        // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
-        // PURCHASETEXT_SWITCH_CALL // this is actually blank
         default: switch_steam_islington_railway_workshops_81_92_520_position;
     }
 }

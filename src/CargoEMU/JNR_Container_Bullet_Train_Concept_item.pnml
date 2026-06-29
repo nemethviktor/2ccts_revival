@@ -62,9 +62,6 @@ item(FEAT_TRAINS, item_cargoemu_jnr_container_bullet_train_concept) {
         // no 'length'
         // no 'articulated_part'
         can_attach_wagon: switch_can_attach_vehicle;
-        // Add calls to defined switches below
-        // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
-        // PURCHASETEXT_SWITCH_CALL // this is actually blank
         default: spritegroup_cargoemu_jnr_container_bullet_train_concept_engine1_l1;
     }
     livery_override (item_mu_mu_cargo_wagon_unpowered) {

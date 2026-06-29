@@ -984,16 +984,6 @@ def generate_unified_items():
         content.append(f"        {graphics_switch_articulated_part}\n")
         content.append(f"        {graphics_switch_can_attach}\n")
 
-        if not is_true(row["IS_POWERED_UNPOWERED_SUNDRY"]):
-            content.append(f"        // Add calls to defined switches below\n")
-            content.append(
-                f"        // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank\n"
-            )
-            content.append(
-                f"        // PURCHASETEXT_SWITCH_CALL // this is actually blank\n"
-            )
-            pass
-
         if TEMPLATE_ID_FULL in [
             "TPL_03A",
             "TPL_03D",
@@ -1118,6 +1108,8 @@ def generate_unified_items():
                         f"        // Always flip because DT has to face backwards\n"
                     )
                     content.append(f"        reverse_build_probability: return 100;\n")
+                elif TEMPLATE_ID_FULL in ["TPL_04S"]:
+                    pass
                 else:
                     content.append(f"        // Random flip for variety\n")
                     content.append(f"        reverse_build_probability: return 50;\n")

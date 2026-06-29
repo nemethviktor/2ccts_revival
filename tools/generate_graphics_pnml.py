@@ -1612,7 +1612,7 @@ def get_tpl_04(vid, gfx_path, row, template_amendment_code):
         "Q",
         "T",
     ]
-    has_last_carriage_state = template_amendment_code in ["S"]
+    has_first_or_last_carriage_state = template_amendment_code in ["S"]
     has_driving_states = template_amendment_code in ["L", "N", "Q"]
     has_reverse_state = template_amendment_code in ["A", "U"] and is_true(
         row["VEHICLE_FLAG_TRAIN_HAS_CAB"]
@@ -1620,10 +1620,10 @@ def get_tpl_04(vid, gfx_path, row, template_amendment_code):
 
     cargo_with_driving_state = ["grain"]
     states = {1: 1}
-    if has_last_carriage_state:
+    if has_first_or_last_carriage_state:
         if template_amendment_code == "S":
-            states = {1: 1, 2: 32}
-            direction_states = {1: "Normal", 2: "End"}
+            states = {1: 1, 2: 32, 3: 64}
+            direction_states = {1: "Normal", 2: "Last", 3: "First"}
 
     elif has_loading_states or has_reverse_state:
         states = {1: 1, 2: 32, 3: 64}
@@ -1654,7 +1654,7 @@ def get_tpl_04(vid, gfx_path, row, template_amendment_code):
                 s_suffix += f"{'_' if not cargo_string_is_dummy else ''}L{livery_num}"
                 s_suffix += (
                     f"_s{state_num}"
-                    if (has_loading_states or has_last_carriage_state)
+                    if (has_loading_states or has_first_or_last_carriage_state)
                     else ""
                 )
                 s_suffix += (
@@ -1671,7 +1671,7 @@ def get_tpl_04(vid, gfx_path, row, template_amendment_code):
                 comment += extracomment
                 comment += (
                     f" - {direction_states.get(state_num, '')}"
-                    if (has_reverse_state or has_last_carriage_state)
+                    if (has_reverse_state or has_first_or_last_carriage_state)
                     else ""
                 )
                 comment += f" - {cargo_string}" if not cargo_string_is_dummy else ""
@@ -1679,7 +1679,7 @@ def get_tpl_04(vid, gfx_path, row, template_amendment_code):
                 if (
                     cargo_string_is_dummy
                     or has_reverse_state
-                    or has_last_carriage_state
+                    or has_first_or_last_carriage_state
                 ):
                     nml_code.append(
                         get_spriteset(
@@ -2066,8 +2066,9 @@ switch(FEAT_TRAINS, SELF, switch_{vid}_cargo_selection, cargo_type_in_veh) {{
 	switch_{vid}_grain_livery;
 }}
 """)
+    # endregion
 
-    elif has_reverse_state or has_last_carriage_state:
+    elif has_reverse_state or has_first_or_last_carriage_state:
         if template_amendment_code in ["A"]:
             selector_name = (
                 f"switch_{vid}_livery"
@@ -2105,7 +2106,7 @@ switch(FEAT_TRAINS, SELF, switch_{vid}_position, position_in_consist_from_end) {
             # 4. Consist Logic
             # We use 'position_in_consist' for the front and 'from_end' for the tail.
             nml_code.append(f"""
-/// 1. RANDOM SWITCHES FOR REGULAR MIDDLE CARRIAGES (NORMAL VARIANTS)
+/// RANDOM SWITCHES FOR REGULAR MIDDLE CARRIAGES (NORMAL VARIANTS)
 random_switch(FEAT_TRAINS, SELF, switch_{vid}_middle_livery) {{
     1: spriteset_{vid}_l1_s1;
     1: spriteset_{vid}_l2_s1;
@@ -2113,7 +2114,7 @@ random_switch(FEAT_TRAINS, SELF, switch_{vid}_middle_livery) {{
     1: spriteset_{vid}_l4_s1;
 }}
 
-/// 2. RANDOM SWITCHES FOR THE TAIL CARRIAGE (LAST VARIANTS)
+/// RANDOM SWITCHES FOR THE TAIL CARRIAGE (LAST VARIANTS)
 /// Uses the explicit .last property references inside the spritegroup definitions
 random_switch(FEAT_TRAINS, SELF, switch_{vid}_tail_livery) {{
     1: spriteset_{vid}_l1_s2;
@@ -2122,12 +2123,26 @@ random_switch(FEAT_TRAINS, SELF, switch_{vid}_tail_livery) {{
     1: spriteset_{vid}_l4_s2;
 }}
 
-/// 3. MASTER POSITION INPUT EVALUATOR
-/// Checks if this vehicle is the final carriage sitting at the end of the consist
-switch(FEAT_TRAINS, SELF, switch_{vid}_position_check, position_in_consist_from_end) {{
-    0:       switch_{vid}_tail_livery; // Is the last car -> pull tail textures
-    default: switch_{vid}_middle_livery; // Intermediate car -> pull middle textures
+/// RANDOM SWITCHES FOR THE TAIL CARRIAGE (LAST VARIANTS)
+/// Uses the explicit .last property references inside the spritegroup definitions
+random_switch(FEAT_TRAINS, SELF, switch_{vid}_head_livery) {{
+    1: spriteset_{vid}_l1_s3;
+    1: spriteset_{vid}_l2_s3;
+    1: spriteset_{vid}_l3_s3;
+    1: spriteset_{vid}_l4_s3;
 }}
+
+// Logic via https://github.com/OpenTTD-JPplus/JPengines/blob/modular/src/pax/12_series.pnml
+switch(FEAT_TRAINS, SELF, switch_{vid}_end, position_in_vehid_chain_from_end) {{
+	0: switch_{vid}_tail_livery;
+	switch_{vid}_middle_livery;
+	}}
+	
+
+switch(FEAT_TRAINS, SELF, switch_{vid}_position_check, position_in_vehid_chain) {{
+	0: switch_{vid}_head_livery;
+	switch_{vid}_end;
+	}}
 """)
 
         elif template_amendment_code in ["U"]:
@@ -2150,7 +2165,7 @@ switch(FEAT_TRAINS, SELF, switch_{vid}_position, position_in_consist_from_end) {
     0: switch_{vid}_direction;
     spriteset_{vid}_l1_dt_normal;
 }}""")
-    # endregion
+
     return "\n".join(nml_code)
 
 

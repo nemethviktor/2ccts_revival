@@ -71,9 +71,6 @@ item(FEAT_TRAINS, item_mu_wagon_gen5_superheavy_flatcar) {
         // no 'length'
         articulated_part: switch_mu_wagon_gen5_superheavy_flatcar_articulated;
         // no 'can_attach'
-        // Add calls to defined switches below
-        // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
-        // PURCHASETEXT_SWITCH_CALL // this is actually blank
         default: switch_mu_wagon_gen5_superheavy_flatcar;
     }
 }

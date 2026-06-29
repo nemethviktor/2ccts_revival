@@ -71,9 +71,6 @@ item(FEAT_TRAINS, item_mglv_wagon_gen7m_superheavy_flatcar) {
         // no 'length'
         articulated_part: switch_mglv_wagon_gen7m_superheavy_flatcar_articulated;
         // no 'can_attach'
-        // Add calls to defined switches below
-        // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
-        // PURCHASETEXT_SWITCH_CALL // this is actually blank
         default: switch_mglv_wagon_gen7m_superheavy_flatcar;
     }
 }

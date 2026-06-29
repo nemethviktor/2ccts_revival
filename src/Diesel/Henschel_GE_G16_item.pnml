@@ -56,9 +56,6 @@ item(FEAT_TRAINS, item_diesel_henschel_ge_g16) {
         length: switch_diesel_henschel_ge_g16_length;
         articulated_part: switch_diesel_henschel_ge_g16_articulated;
         can_attach_wagon: switch_can_attach_vehicle;
-        // Add calls to defined switches below
-        // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
-        // PURCHASETEXT_SWITCH_CALL // this is actually blank
         default: switch_diesel_henschel_ge_g16_position;
     }
 }

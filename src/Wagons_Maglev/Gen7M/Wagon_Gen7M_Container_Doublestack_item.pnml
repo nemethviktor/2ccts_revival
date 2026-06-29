@@ -71,9 +71,6 @@ item(FEAT_TRAINS, item_mglv_wagon_gen7m_container_doublestack) {
         // no 'length'
         // no 'articulated_part'
         // no 'can_attach'
-        // Add calls to defined switches below
-        // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
-        // PURCHASETEXT_SWITCH_CALL // this is actually blank
         default: switch_mglv_wagon_gen7m_container_doublestack_cargo_selection;
     }
 }

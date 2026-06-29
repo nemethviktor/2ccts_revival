@@ -52,9 +52,6 @@ item(FEAT_TRAINS, item_electric_elin_floridsdorf_1161) {
         // no 'length'
         // no 'articulated_part'
         can_attach_wagon: switch_can_attach_vehicle;
-        // Add calls to defined switches below
-        // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
-        // PURCHASETEXT_SWITCH_CALL // this is actually blank
         default: switch_electric_elin_floridsdorf_1161_animation;
     }
 }

@@ -53,9 +53,6 @@ item(FEAT_TRAINS, item_mu_coach_gen3_wagr_ay_suburban_coach) {
         // no 'length'
         // no 'articulated_part'
         // no 'can_attach'
-        // Add calls to defined switches below
-        // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
-        // PURCHASETEXT_SWITCH_CALL // this is actually blank
         default: spriteset_mu_coach_gen3_wagr_ay_suburban_coach_l1;
         // Random flip for variety
         reverse_build_probability: return 50;

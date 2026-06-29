@@ -52,9 +52,6 @@ item(FEAT_TRAINS, item_diesel_ltz_2te10ut) {
         // no 'length'
         articulated_part: switch_diesel_ltz_2te10ut_articulated;
         can_attach_wagon: switch_can_attach_vehicle;
-        // Add calls to defined switches below
-        // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
-        // PURCHASETEXT_SWITCH_CALL // this is actually blank
         default: switch_diesel_ltz_2te10ut_position;
     }
 }

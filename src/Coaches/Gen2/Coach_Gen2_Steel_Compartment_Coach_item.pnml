@@ -57,9 +57,6 @@ item(FEAT_TRAINS, item_mu_coach_gen2_steel_compartment_coach) {
         // no 'length'
         // no 'articulated_part'
         // no 'can_attach'
-        // Add calls to defined switches below
-        // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
-        // PURCHASETEXT_SWITCH_CALL // this is actually blank
         default: switch_mu_coach_gen2_steel_compartment_coach_livery;
         // Random flip for variety
         reverse_build_probability: return 50;

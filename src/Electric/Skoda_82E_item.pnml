@@ -56,9 +56,6 @@ item(FEAT_TRAINS, item_electric_skoda_82e) {
         // no 'length'
         articulated_part: switch_electric_skoda_82e_articulated;
         can_attach_wagon: switch_can_attach_vehicle;
-        // Add calls to defined switches below
-        // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
-        // PURCHASETEXT_SWITCH_CALL // this is actually blank
         default: switch_electric_skoda_82e_position;
     }
 }

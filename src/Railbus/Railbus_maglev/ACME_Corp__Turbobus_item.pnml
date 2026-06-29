@@ -68,9 +68,6 @@ item(FEAT_TRAINS, item_rbm_acme_corp__turbobus) {
         length: switch_rbm_acme_corp__turbobus_length;
         articulated_part: switch_rbm_acme_corp__turbobus_articulated;
         can_attach_wagon: switch_can_attach_vehicle;
-        // Add calls to defined switches below
-        // RUNNINGCOST_ENGINE_SWITCH_CALL // this is actually blank
-        // PURCHASETEXT_SWITCH_CALL // this is actually blank
         default: switch_rbm_acme_corp__turbobus_position;
     }
 }
