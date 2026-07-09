@@ -2,7 +2,7 @@
 
 # Hardcoded Strings
 STR_GRF_NAME                                                      :{TITLE}
-STR_GRF_DESCRIPTION                                               :{SILVER}2cc Trains of the World in NML {}{}(c)2ccts Revival {}License GPLv2 or higher. {}See readme for details.{}{SILVER}Build: 2026-06-29-13:19:44
+STR_GRF_DESCRIPTION                                               :{SILVER}2cc Trains of the World in NML {}{}(c)2ccts Revival {}License GPLv2 or higher. {}See readme for details.{}{SILVER}Build: 2026-07-09-17:11:34
 STR_GRF_URL                                                       :https://github.com/nemethviktor/2ccts_revival
 STR_USED_WITH_DYNAMIC_ENGINES                                     :dynamic_engines = true (setting in openttd.cfg)
 STR_ERROR_REGION                                                  :No regions enabled, {STRING} has been disabled
@@ -469,12 +469,12 @@ str_mu_coach_gen2_steel_2_axle_mail_coach                         :Steel 2-axle 
 str_mu_coach_gen2_steel_3_axle_compartment_coach                  :Steel 3-axle Compartment Coach
 str_mu_coach_gen2_steel_3_axle_regional_coach                     :Steel 3-axle Regional Coach
 str_mu_coach_gen2_steel_3_axle_mail_coach                         :Steel 3-axle Mail Coach
-str_mu_coach_gen3_steel_lightweight_intercity_coach               :Steel Lightweight Intercity Coach
-str_mu_coach_gen3_steel_lightweight_regional_coach                :Steel Lightweight Regional Coach
-str_mu_coach_gen3_steel_lightweight_mail_coach                    :Steel Lightweight Mail Coach
-str_mu_coach_gen3_aluminium_lightweight_intercity_coach           :Aluminium Lightweight Intercity Coach
-str_mu_coach_gen3_aluminium_lightweight_regional_coach            :Aluminium Lightweight Regional Coach
-str_mu_coach_gen3_aluminium_lightweight_mail_coach                :Aluminium Lightweight Mail Coach
+str_mu_coach_gen3_steel_lightweight_intercity_coach               :Lightweight Intercity Coach
+str_mu_coach_gen3_steel_lightweight_regional_coach                :Lightweight Regional Coach
+str_mu_coach_gen3_steel_lightweight_mail_coach                    :Lightweight Mail Coach
+str_mu_coach_gen3_aluminium_lightweight_intercity_coach           :Streamlined Intercity Coach
+str_mu_coach_gen3_aluminium_lightweight_regional_coach            :Streamlined Regional Coach
+str_mu_coach_gen3_aluminium_lightweight_mail_coach                :Streamlined Mail Coach
 str_mu_coach_gen3_gallery_car                                     :Gallery Car
 str_mu_coach_gen3_mk1_intercity_coach                             :Mk1 Intercity Coach
 str_mu_coach_gen3_mk1_regional_coach                              :Mk1 Regional Coach
@@ -483,7 +483,7 @@ str_mu_coach_gen3_uic_x_intercity_coach                           :UIC-X Interci
 str_mu_coach_gen3_tee_intercity_coach                             :TEE Intercity Coach
 str_mu_coach_gen3_uic_x_regional_coach                            :UIC-X Regional Coach
 str_mu_coach_gen3_umbauwagen_local_coach                          :'Umbauwagen' Local Coach
-str_mu_coach_gen3_doppelstockwagen_local_coach                    :'Doppelstockwagen' Local Coach
+str_mu_coach_gen4_doppelstockwagen_local_coach                    :Goerlitz Double Decker Coach
 str_mu_coach_gen3_uic_x_mail_coach                                :UIC-X Mail Coach
 str_mu_coach_gen3_indian_intercity_coach                          :Indian Intercity Coach
 str_mu_coach_gen3_indian_local_coach                              :Indian Local Coach
@@ -521,8 +521,8 @@ str_mu_coach_gen6_super_regio_coach                               :Super Regio C
 str_mu_coach_gen6_super_voyager_coach                             :Super Voyager Coach
 str_mu_coach_gen5_citynightline_sleeper                           :'CityNightLine' Sleeper
 str_mu_coach_gen4_trans_euro_night_sleeper                        :'Trans Euro Night' Sleeper
-str_mu_coach_gen1_american_style_nzaus_coach                      :Early American End-Platform Coach
-str_mu_coach_gen1_american_style_nzaus_mail_coach                 :Early American End-Platform Mail Coach
+str_mu_coach_gen1_american_style_nzaus_coach                      :Early American End-Platform Coach [Smaller]
+str_mu_coach_gen1_american_style_nzaus_mail_coach                 :Early American End-Platform Mail Coach [Smaller]
 str_mu_coach_gen1_2_axle_nzaus_coach                              :Early 2-axle Compartment Coach
 str_mu_coach_gen1_2_axle_nzaus_mail_coach                         :Early 2-axle Mail Coach
 str_mu_coach_gen1_end_platform_2_axle_nzaus_coach                 :Early 2-axle End-Platform Coach
@@ -545,6 +545,14 @@ str_mu_coach_gen3_nzr_56ft_mail_coach                             :NZR 56ft Mail
 str_mu_coach_gen2_nzr_50ft_coach                                  :NZR 50ft Coach
 str_mu_coach_gen2_nzr_50ft_mail_coach                             :NZR 50ft Mail Coach
 str_mu_coach_gen1_nsw_ka_tram_car                                 :KA Type Tram Car
+str_mu_coach_gen2_heavyweight_regional_coach                      :Heavyweight Regional Coach
+str_mu_coach_gen1_american_style_coach                            :Early American End-Platform Coach [Larger]
+str_mu_coach_gen1_american_style_mail_coach                       :Early American End-Platform Mail Coach [Larger]
+str_mu_coach_gen3_steel_lightweight_commuter_coach                :Lightweight Commuter Coach
+str_mu_coach_gen3_goerlitz_doppelstockwagen_articulated_coach     :Goerlitz Articulated Double Decker Coach
+str_mu_coach_gen2_prr_mp54_commuter_coach                         :PRR P54 Commuter Coach
+str_mu_coach_gen2_prr_mp54_mail_coach                             :PRR P54 Mail Coach
+str_mu_coach_gen3_prr_p70_bilevel_coach                           :PRR P70 Bilevel Coach
 str_mglv_coach_gen7m_chimaera_passenger_coach                     :ACME Corp. Chimaera Passenger Coach
 str_mglv_coach_gen7m_chimaera_mail_coach                          :ACME Corp. Chimaera Mail Coach
 
@@ -663,7 +671,7 @@ str_diesel_faur_lde1300                                           :FAUR LDE1300 
 str_diesel_ltz_2te126                                             :LTZ 2TE126 (Diesel)
 str_diesel_alsthom_cc_72000                                       :Alsthom CC 72000 (Diesel)
 str_diesel_ltz_2te10ut                                            :LTZ 2TE10Ut (Diesel)
-str_diesel_sofse_319_3                                            :Macosa-Meinfesa J26 (Diesel)
+str_diesel_sofse_319_3                                            :Macosa-Meinfesa 319.3 J26 CW/HEP (Diesel)
 str_diesel_cmks_709_0_4_0de                                       :CMKS 709 0-4-0DE (Diesel)
 str_diesel_cnr_ckd8g                                              :CNR CKD8G (Diesel)
 str_diesel_antonio_badoni_lecco_sogliole_207                      :Antonio Badoni Lecco 'Sogliole' 207 (Diesel)
@@ -687,7 +695,7 @@ str_diesel_sorefame_de8                                           :Alsthom CC 20
 str_diesel_gmd_gt22lc_2                                           :GMD GT22LC-2 (Diesel)
 str_diesel_ltz_dr_130                                             :LTZ DR 130 (Diesel)
 str_diesel_ge_ac6044cw                                            :GE AC6044CW (Diesel)
-str_diesel_ge_ac6000cw_bhp_6071                                   :GE AC6000CW (Diesel)
+str_diesel_ge_ac6000cw                                            :GE AC6000CW (Diesel)
 str_diesel_bth_41_class                                           :BTH 41 Class (Diesel)
 str_diesel_alco_ae_goodwin_dl531_532                              :ALCO/AE Goodwin DL531/532 (Diesel)
 str_diesel_alco_ae_goodwin_dl500                                  :ALCO/AE Goodwin DL500 (Diesel)
@@ -737,7 +745,7 @@ str_diesel_emd_ft                                                 :EMD FT (Diese
 str_diesel_ltz_te109                                              :LTZ TE109 (Diesel)
 str_diesel_krauss_maffei_ml_2200                                  :Krauss-Maffei ML 2200 (Diesel)
 str_diesel_emd_jt22cw                                             :EMD JT22CW (Diesel)
-str_diesel_veb_lkm_v180                                           :VEB LKM V180 (Diesel)
+str_diesel_veb_lkm_v180                                           :VEB LKM V180 B'B' (Diesel)
 str_diesel_nohab_aa16                                             :NOHAB AA16 (Diesel)
 str_diesel_lew_v100                                               :LEW V100 (Diesel)
 str_diesel_fablok_6d                                              :Fablok 6D (Diesel)
@@ -747,6 +755,9 @@ str_diesel_ee_dick__kerr___co_vulcan_foundry_de2                  :EE/Dick, Kerr
 str_diesel_ingeteam_td2000_series                                 :Ingeteam TD2000 series (Diesel)
 str_diesel_tulloch_0_6_0dm_w_class                                :Tulloch 0-6-0DM 'W' Class (Diesel)
 str_diesel_ge_es58aci                                             :GE ES58ACi (Diesel)
+str_diesel_ltz_te10m                                              :LTZ TE10M (Diesel)
+str_diesel_ltz_te126                                              :LTZ TE126 (Diesel)
+str_diesel_ltz_te10ut                                             :LTZ TE10Ut (Diesel)
 
 # Dieselrailbus
 str_rbd_aec_railmotor_rm1                                         :AEC railmotor RM1 (Diesel Railbus)
@@ -1031,6 +1042,8 @@ str_electric_ge_289_boxcab                                        :GE 289A Boxca
 str_electric_alsthom_ec_386                                       :Alsthom EC 386 (Electric, 3kV DC)
 str_electric_chesta_casagrande_e650                               :Chesta Casagrande E650 (Electric, 1500V DC)
 str_electric_breda_marelli_e32                                    :Breda Marelli E32 (Electric, 3kV DC)
+str_electric_alco_ge_t_motor                                      :ALCO-GE T-Motor (Electric, 3rd Rail)
+str_electric_altoona_works_dd1                                    :Altoona Works Pennsylvania Railroad DD1 (Electric, 3rd Rail)
 
 # Electricrailbus
 str_rbe_slm_cfe_3_3                                               :SLM CFe 3/3 (Electric Railbus, 1500V DC)
@@ -1153,6 +1166,10 @@ str_emu_hitachi_kawasaki_shinkansen_series_100                    :Hitachi/Kawas
 str_emu_hitachi_alstom_zefiro_class_895_hs2                       :Hitachi-Alstom Zefiro Class 895 'HS2' (EMU, 25kV AC)
 str_emu_acme_corp__v200e_emu                                      :ACME Corp. V200E EMU (EMU, OHLE)
 str_emu_pesa_43we_dart                                            :PESA 43WE 'DART' (EMU, 3kV DC)
+str_emu_prr_mp_70                                                 :PRR MP70 (EMU, 3rd Rail)
+str_emu_pullman_standard_lirr_mp75                                :Pullman Standard LIRR MP75 ACMU (EMU, 3rd Rail)
+str_emu_prr_mp54_3rl                                              :PRR MP54 (EMU, 3rd Rail)
+str_emu_prr_mp54_ohle                                             :PRR MP54 (EMU, 15kV AC)
 str_cargoemu_kawasaki_nippon_sharyo_toshiba_m250                  :Kawasaki/Nippon Sharyo/Toshiba M250 (EMU, 1500V DC)
 str_cargoemu_acme_corp__dd_cargoemu                               :ACME Corp. DD CargoEMU (EMU, OHLE)
 str_cargoemu_jnr_container_bullet_train_concept                   :JNR Container Bullet Train Concept (EMU, 25kV AC)
@@ -1237,6 +1254,7 @@ str_singlemtro_brooklyn_union_gate_1300                           :Brooklyn Unio
 str_singlemtro_siemens___halske_budapest_1894_stock               :Siemens & Halske Budapest 1894 Stock (Single Unit Metro, Electric 3rd Rail)
 str_singlemtro_chicago_l_northwest_elevated_1907_stock            :Chicago L Northwest Elevated 1907 Stock (Single Unit Metro, Electric 3rd Rail)
 str_singlemtro_berlin_u_bahn_c_ii                                 :Berlin U-Bahn C II (Single Unit Metro, Electric 3rd Rail)
+str_singlemtro_acf_nycc_heavyweight                               :ACF New York Central Heavyweight MU (Single Unit Metro, Electric 3rd Rail)
 
 # Mmu
 str_mmu_siemens_thyssenkrupp_transrapid                           :Siemens-Thyssenkrupp Transrapid (MMU)

@@ -703,7 +703,7 @@ str_diesel_ge_u5b,GE U5B
 str_diesel_alco_rsd_39,ALCO RSD-39
 str_diesel_emd_ddm45,EMD DDM45
 str_diesel_ge_c39_8__fcca_,GE C39-8
-str_diesel_sofse_319_3,Macosa-Meinfesa J26
+str_diesel_sofse_319_3,Macosa-Meinfesa 319.3 J26 CW/HEP
 str_diesel_cnr_ckd8g,CNR CKD8G
 str_diesel_aeg_sar_ds,AEG SAR DS
 str_diesel_gm_gt_26_w__040dg_,GM GT26
@@ -1169,12 +1169,12 @@ str_mu_coach_gen2_steel_2_axle_mail_coach,Steel 2-axle Mail Coach
 str_mu_coach_gen2_steel_3_axle_compartment_coach,Steel 3-axle Compartment Coach
 str_mu_coach_gen2_steel_3_axle_regional_coach,Steel 3-axle Regional Coach
 str_mu_coach_gen2_steel_3_axle_mail_coach,Steel 3-axle Mail Coach
-str_mu_coach_gen3_steel_lightweight_intercity_coach,Steel Lightweight Intercity Coach
-str_mu_coach_gen3_steel_lightweight_regional_coach,Steel Lightweight Regional Coach
-str_mu_coach_gen3_steel_lightweight_mail_coach,Steel Lightweight Mail Coach
-str_mu_coach_gen3_aluminium_lightweight_intercity_coach,Aluminium Lightweight Intercity Coach
-str_mu_coach_gen3_aluminium_lightweight_regional_coach,Aluminium Lightweight Regional Coach
-str_mu_coach_gen3_aluminium_lightweight_mail_coach,Aluminium Lightweight Mail Coach
+str_mu_coach_gen3_steel_lightweight_intercity_coach,Lightweight Intercity Coach
+str_mu_coach_gen3_steel_lightweight_regional_coach,Lightweight Regional Coach
+str_mu_coach_gen3_steel_lightweight_mail_coach,Lightweight Mail Coach
+str_mu_coach_gen3_aluminium_lightweight_intercity_coach,Streamlined Intercity Coach
+str_mu_coach_gen3_aluminium_lightweight_regional_coach,Streamlined Regional Coach
+str_mu_coach_gen3_aluminium_lightweight_mail_coach,Streamlined Mail Coach
 str_mu_coach_gen3_gallery_car,Gallery Car
 str_mu_coach_gen3_mk1_intercity_coach,Mk1 Intercity Coach
 str_mu_coach_gen3_mk1_regional_coach,Mk1 Regional Coach
@@ -1339,8 +1339,8 @@ str_emu_comeng_w_class_sputnik,Comeng W Class 'Sputnik'
 str_emu_leeds_clyde_standard_emu,Leeds/Clyde 'Standard' EMU
 str_emu_nswgr_tulloch_emu,NSWGR 'Tulloch' EMU
 str_emu_alstom_xtrapolis_100_melbourne,Alstom X'Trapolis 100 Melbourne
-str_mu_coach_gen1_american_style_nzaus_coach,Early American End-Platform Coach
-str_mu_coach_gen1_american_style_nzaus_mail_coach,Early American End-Platform Mail Coach
+str_mu_coach_gen1_american_style_nzaus_coach,Early American End-Platform Coach [Smaller]
+str_mu_coach_gen1_american_style_nzaus_mail_coach,Early American End-Platform Mail Coach [Smaller]
 str_mu_coach_gen1_2_axle_nzaus_coach,Early 2-axle Compartment Coach
 str_mu_coach_gen1_2_axle_nzaus_mail_coach,Early 2-axle Mail Coach
 str_mu_coach_gen1_end_platform_2_axle_nzaus_coach,Early 2-axle End-Platform Coach
@@ -1422,7 +1422,7 @@ str_electric_acme_corp__hs002,ACME Corp. HS002
 str_dmu_acme_corp__v200d_dmu,ACME Corp. V200D DMU
 str_emu_acme_corp__v200e_emu,ACME Corp. V200E EMU
 str_cargoemu_acme_corp__dd_cargoemu,ACME Corp. DD CargoEMU
-str_diesel_veb_lkm_v180,VEB LKM V180
+str_diesel_veb_lkm_v180,VEB LKM V180 B'B'
 str_emu_pesa_43we_dart,PESA 43WE 'DART'
 str_electric_lew_el2,LEW EL2
 str_electric_pafawag_201e,Pafawag 201E
@@ -1451,3 +1451,23 @@ str_diesel_ge_es58aci,GE ES58ACi
 str_rbd_ganz_mavag_ikarus,Ganz-MAVAG Ikarus 725.00
 str_mtro_alstom_metropolis,Alstom Metropolis
 str_steam_sharp_2_2_2_patriot,Sharp Brothers 2-2-2 'Patriot'
+str_mu_coach_gen4_doppelstockwagen_local_coach,Goerlitz Double Decker Coach
+str_diesel_ge_ac6000cw,GE AC6000CW
+str_mu_coach_gen2_heavyweight_regional_coach,Heavyweight Regional Coach
+str_mu_coach_gen1_american_style_coach,Early American End-Platform Coach [Larger]
+str_mu_coach_gen1_american_style_mail_coach,Early American End-Platform Mail Coach [Larger]
+str_mu_coach_gen3_steel_lightweight_commuter_coach,Lightweight Commuter Coach
+str_electric_alco_ge_t_motor,ALCO-GE T-Motor
+str_electric_altoona_works_dd1,Altoona Works Pennsylvania Railroad DD1
+str_emu_prr_mp_70,PRR MP70
+str_emu_pullman_standard_lirr_mp75,Pullman Standard LIRR MP75 ACMU
+str_singlemtro_acf_nycc_heavyweight,ACF New York Central Heavyweight MU
+str_mu_coach_gen3_goerlitz_doppelstockwagen_articulated_coach,Goerlitz Articulated Double Decker Coach
+str_emu_prr_mp54_3rl,PRR MP54
+str_emu_prr_mp54_ohle,PRR MP54
+str_mu_coach_gen2_prr_mp54_commuter_coach,PRR P54 Commuter Coach
+str_mu_coach_gen2_prr_mp54_mail_coach,PRR P54 Mail Coach
+str_mu_coach_gen3_prr_p70_bilevel_coach,PRR P70 Bilevel Coach
+str_diesel_ltz_te10m,LTZ TE10M
+str_diesel_ltz_te126,LTZ TE126
+str_diesel_ltz_te10ut,LTZ TE10Ut

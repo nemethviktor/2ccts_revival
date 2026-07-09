@@ -7,13 +7,13 @@
 // Data from: nan
 
 // Notes:
-//// ENGLISH: Early American End-Platform Coach -- This is end-platform, so no doors.
+//// ENGLISH: Early American End-Platform Coach [Smaller] -- This is end-platform, so no doors.
 
 
 item(FEAT_TRAINS, item_mu_coach_gen1_american_style_nzaus_coach) {
     property {
         name: string(str_mu_coach_gen1_american_style_nzaus_coach);
-        climates_available: ((param_region_oceania || (param_region_north_america || param_region_south_america)) && 1) ? ALL_CLIMATES : NO_CLIMATE;
+        climates_available: ((param_region_oceania || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1877,1,1);
         model_life: 70;
         vehicle_life: 25;
@@ -48,7 +48,7 @@ item(FEAT_TRAINS, item_mu_coach_gen1_american_style_nzaus_coach) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/america/northern", "region/america/south", "region/oceania", "role/coach__commuter_"];
+	badges: ["region/oceania", "role/coach__commuter_"];
 
     }
     graphics {

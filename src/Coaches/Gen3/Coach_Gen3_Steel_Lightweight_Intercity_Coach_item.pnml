@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_04A.
+// Template: TPL_04S.
 // Data from: nan
 
 // Notes:
@@ -19,9 +19,9 @@ item(FEAT_TRAINS, item_mu_coach_gen3_steel_lightweight_intercity_coach) {
         vehicle_life: 25;
         retire_early: 0;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 37.00104;
-        running_cost_factor: 26.29516;
-        speed: 145 km/h;
+        cost_factor: 37.01623;
+        running_cost_factor: 26.29743;
+        speed: 160 km/h;
         power: 0 hp;
         cargo_capacity: 70;
         weight: 34 ton;
@@ -48,7 +48,7 @@ item(FEAT_TRAINS, item_mu_coach_gen3_steel_lightweight_intercity_coach) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/asia", "region/america/northern", "region/america/south", "region/oceania", "role/coach__commuter_"];
+	badges: ["region/asia", "region/america/northern", "region/america/south", "region/oceania", "role/coach__express_"];
 
     }
     graphics {
@@ -57,8 +57,6 @@ item(FEAT_TRAINS, item_mu_coach_gen3_steel_lightweight_intercity_coach) {
         // no 'length'
         // no 'articulated_part'
         // no 'can_attach'
-        default: switch_mu_coach_gen3_steel_lightweight_intercity_coach_livery;
-        // Random flip for variety
-        reverse_build_probability: return 50;
+        default: switch_mu_coach_gen3_steel_lightweight_intercity_coach_position_check;
     }
 }

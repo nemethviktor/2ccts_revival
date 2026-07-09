@@ -8,7 +8,7 @@
 
 // Notes:
 //// TE_STARTING_KN: =245/2 -- Gemini
-//// TE_COEFFICIENT_MANUAL: 0.2 -- Can't find any info but .54 is way too high
+//// TE_COEFFICIENT_MANUAL: 0 -- Can't find any info but .54 is way too high
 //// WAGON_CAPACITY: 68 -- //corpo.viarail.ca/en/projects-infrastructure/train-fleet/lrc-coach
 
 

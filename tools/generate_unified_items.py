@@ -999,6 +999,7 @@ def generate_unified_items():
             "TPL_32A",
             "TPL_32B",
             "TPL_32C",
+            "TPL_32D",
         ]:
             content.append(f"        default: switch_{VEHIDCODE_lcase}_position;\n")
         elif TEMPLATE_ID_FULL in ["TPL_42B"]:

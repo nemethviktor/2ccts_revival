@@ -6,10 +6,6 @@
 // Template: TPL_04A.
 // Data from: nan
 
-// Notes:
-//// HEAD_CAPACITY: 135 -- Gemini - ~90 seated + 30-55 standing (improved layout).
-
-
 item(FEAT_TRAINS, item_mu_coach_gen3_steel_lightweight_regional_coach) {
     property {
         name: string(str_mu_coach_gen3_steel_lightweight_regional_coach);
@@ -19,11 +15,11 @@ item(FEAT_TRAINS, item_mu_coach_gen3_steel_lightweight_regional_coach) {
         vehicle_life: 25;
         retire_early: 0;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 69.37386;
-        running_cost_factor: 50.66608;
-        speed: 120 km/h;
+        cost_factor: 49.41623;
+        running_cost_factor: 35.67243;
+        speed: 160 km/h;
         power: 0 hp;
-        cargo_capacity: 135;
+        cargo_capacity: 95;
         weight: 32 ton;
         tractive_effort_coefficient: 0.3;
         air_drag_coefficient: 0;
@@ -48,7 +44,7 @@ item(FEAT_TRAINS, item_mu_coach_gen3_steel_lightweight_regional_coach) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/asia", "region/america/northern", "region/america/south", "region/oceania", "role/coach__commuter_"];
+	badges: ["region/asia", "region/america/northern", "region/america/south", "region/oceania", "role/coach__express_"];
 
     }
     graphics {

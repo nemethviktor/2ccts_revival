@@ -1207,13 +1207,13 @@ def get_tpl_02(vid, gfx_path, row, template_amendment_code):
 def get_tpl_03(vid, gfx_path, row, template_amendment_code):
     """
     Articulated(Engine + Tender) OR Items with 2 engine animation states.: param template_amendment_code:
-        A -> Steam w / Tender
-        B -> Items w 2 engine animation states
-        C -> Same as B but different 'purhchase' position
-        D -> Non-Steam w / Tender
-        E -> Same as A but no Visual Effect
-        F -> Same as B but no Visual effect
-        G -> Same as A but 12 length
+        03A -> Steam w / Tender
+        03B -> Items w 2 engine animation states
+        03C -> Same as B but different 'purhchase' position
+        03D -> Non-Steam w / Tender (A/B Articulated)
+        03E -> Same as A but no Visual Effect
+        03F -> Same as B but no Visual effect (A/B NOT articulated)
+        03G -> Same as A but 12 length
     """
 
     nml_code = []
@@ -2172,7 +2172,7 @@ switch(FEAT_TRAINS, SELF, switch_{vid}_position, position_in_consist_from_end) {
 def get_tpl_16(vid, gfx_path, row, template_amendment_code):
     """
     12-Length Vehicles(TPL_16): param template_amendment_code:
-        A -> Generic 12L(articulated)
+        A -> Generic 12L (articulated)
         B -> Turbobus only
     """
 
@@ -2238,7 +2238,7 @@ def get_tpl_17(vid, gfx_path, row, template_amendment_code):
     """
     Normal length vehicles with front and back parts(TPL_17): param template_amendment_code:
         A -> Normal Front/Back (articulated)
-        B -> A/B Front/Back (non-articulated)
+        B -> A/B Front/Back (non-articulated, normal length)
         C -> Front 1/2; Middle, Back 1/2 (articulated)
         D -> Front 1/2; Middle 1/2, Back 1/2 (articulated, basically just the mtab dm3)
         E -> Front 1/2; No Middle, Back 1/2 (articulated)
@@ -2637,9 +2637,10 @@ def get_tpl_25(vid, gfx_path, row, template_amendment_code):
 def get_tpl_32(vid, gfx_path, row, template_amendment_code):
     """
     10-Length Vehicles(TPL_32): param template_amendment_code:
-        A -> No animation
+        A -> No animation (A/B unit, articulated)
         B -> With animation
         C -> B + Length
+        D -> Same as A, thus A/B unit, NOT articulated
     """
 
     purchase_y = 128
@@ -2650,24 +2651,25 @@ def get_tpl_32(vid, gfx_path, row, template_amendment_code):
     )
 
     extra_comment = f"""
-// // This vehicle uses the template for length 10.
-// // The vehicle is built with 3 pieces of length 3+4+3
-// // The middle part gets the graphics, the other parts are left blank
+//// This vehicle uses the template for length 10.
+//// The vehicle is built with 3 pieces of length 3+4+3
+//// The middle part gets the graphics, the other parts are left blank
 """
-
-    vehicles = {"engine1": (1, 1), "engine2": (1, 64)}
+    name_a = "a_unit" if template_amendment_code in ["A", "D"] else "engine1"
+    name_b = "b_unit" if template_amendment_code in ["A", "D"] else "engine2"
+    vehicles = {name_a: (1, 1), name_b: (1, 64)}
     for name, coords in vehicles.items():
         nml_code.append(
             get_vehicle(
                 vid=vid,
                 gfx_path=gfx_path,
                 title_comment=name,
-                dont_show_main_comment=name != "engine1",
+                dont_show_main_comment=name.lower() != name_a,
                 template_suffix="_2cc_L12",
                 use_comment_as_spritename_suffix=True,
                 vehicle_x=coords[0],
                 vehicle_y=coords[1],
-                extra_comment=extra_comment if name == "engine1" else "",
+                extra_comment=extra_comment if name.lower() == "engine1" else "",
             )
         )
 
@@ -2676,23 +2678,23 @@ def get_tpl_32(vid, gfx_path, row, template_amendment_code):
             get_motion_counter(
                 vid=vid,
                 switch_name_suffix="animation",
-                state_0="engine1",
-                state_default="engine2",
+                state_0=name_a,
+                state_default=name_b,
             )
         )
 
-    if template_amendment_code == "A":
+    if template_amendment_code in ["A", "D"]:
         nml_code.append(
             get_switch_position(
                 vid=vid,
                 position_in_vehid_chain=4,
                 first_item_task="spriteset",
-                first_item_word="engine1",
+                first_item_word=name_a,
                 first_item_location=0,
                 second_item_task="spriteset",
-                second_item_word="engine2",
-                second_item_location=2,
-                third_item_task="empty",
+                second_item_word=name_b,
+                second_item_location=2 if template_amendment_code == "A" else None,
+                third_item_task="empty" if template_amendment_code == "A" else None,
             )
         )
 
@@ -2709,21 +2711,25 @@ def get_tpl_32(vid, gfx_path, row, template_amendment_code):
             )
         )
 
-    if template_amendment_code == "A":
-        position_in_vehid_chain = 4
-        deduct_from_position_for_first_return = 4
+    if template_amendment_code in ["A", "D"]:
+        position_in_vehid_chain = 4 if template_amendment_code == "A" else 2
+        deduct_from_position_for_first_return = (
+            4 if template_amendment_code == "A" else 2
+        )
         deduct_from_position_for_second_return = 2
     elif template_amendment_code in ["B", "C"]:
         position_in_vehid_chain = 2
         deduct_from_position_for_first_return = 2
 
-    nml_code.append(
-        get_visual_effect_on_odd_even_position(
-            vid=vid,
-            position_in_vehid_chain=position_in_vehid_chain,
-            deduct_from_position_for_first_return=deduct_from_position_for_first_return,
+    if template_amendment_code in ["A", "B", "C"]:  # no 'D'
+        nml_code.append(
+            get_visual_effect_on_odd_even_position(
+                vid=vid,
+                position_in_vehid_chain=position_in_vehid_chain,
+                deduct_from_position_for_first_return=deduct_from_position_for_first_return,
+            )
         )
-    )
+
     if template_amendment_code in ["B", "C"]:
         nml_code.append(
             get_switch_length(
@@ -2734,7 +2740,7 @@ def get_tpl_32(vid, gfx_path, row, template_amendment_code):
             )
         )
 
-    if template_amendment_code == "A":
+    if template_amendment_code in ["A"]:  # no 'D'
         nml_code.append(
             get_switch_length(
                 vid=vid,
@@ -2747,8 +2753,9 @@ def get_tpl_32(vid, gfx_path, row, template_amendment_code):
             )
         )
 
-    nml_code.append(f"""{get_articulated_return(
-        vid=vid, endvalue=3 if template_amendment_code == 'A' else 1)}
+    if template_amendment_code in ["A", "B", "C"]:  # no 'D'
+        nml_code.append(f"""{get_articulated_return(
+            vid=vid, endvalue=3 if template_amendment_code == 'A' else 1)}
 """)
 
     return "\n".join(nml_code)

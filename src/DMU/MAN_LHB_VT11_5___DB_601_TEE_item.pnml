@@ -9,7 +9,7 @@
 // Notes:
 //// WEB: https://ja.wikipedia.org/wiki/%E8%A5%BF%E3%83%89%E3%82%A4%E3%83%84%E5%9B%BD%E9%89%84VT11.5%E5%9E%8B%E6%B0%97%E5%8B%95%E8%BB%8A#VT11.5%E5%BD%A2_%E2%86%92_601%E5%BD%A2 -- the Japanese is better
 //// TE_STARTING_KN: =110/2 -- Gemini
-//// TE_COEFFICIENT_MANUAL: 0.18 -- Likely kN was 200ish but due to the fuckery with the dmu calc here I am just leaving it on 0.18 te-c
+//// TE_COEFFICIENT_MANUAL: 0 -- Likely kN was 200ish but due to the fuckery with the dmu calc here I am just leaving it on 0.18 te-c
 //// WAGON_CAPACITY: 34 -- Japanese Wiki
 
 

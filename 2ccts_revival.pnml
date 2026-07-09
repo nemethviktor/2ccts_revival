@@ -100,6 +100,12 @@
 #include "src/Coaches/Gen1/Coach_Gen1_NSW_KA_Tram_Car_graphics.pnml"
 #include "src/Coaches/Gen1/Coach_Gen1_NSW_KA_Tram_Car_item.pnml"
 
+#include "src/Coaches/Gen1/Coach_Gen1_American_Style_Coach_graphics.pnml"
+#include "src/Coaches/Gen1/Coach_Gen1_American_Style_Coach_item.pnml"
+
+#include "src/Coaches/Gen1/Coach_Gen1_American_Style_Mail_Coach_graphics.pnml"
+#include "src/Coaches/Gen1/Coach_Gen1_American_Style_Mail_Coach_item.pnml"
+
 
 //// COACHES - GEN2
 #include "src/Coaches/Gen2/Coach_Gen2_Heavyweight_Intercity_Coach_graphics.pnml"
@@ -143,6 +149,15 @@
 
 #include "src/Coaches/Gen2/Coach_Gen2_NZR_50ft_Mail_Coach_graphics.pnml"
 #include "src/Coaches/Gen2/Coach_Gen2_NZR_50ft_Mail_Coach_item.pnml"
+
+#include "src/Coaches/Gen2/Coach_Gen2_Heavyweight_Regional_Coach_graphics.pnml"
+#include "src/Coaches/Gen2/Coach_Gen2_Heavyweight_Regional_Coach_item.pnml"
+
+#include "src/Coaches/Gen2/Coach_Gen2_PRR_MP54_Commuter_Coach_graphics.pnml"
+#include "src/Coaches/Gen2/Coach_Gen2_PRR_MP54_Commuter_Coach_item.pnml"
+
+#include "src/Coaches/Gen2/Coach_Gen2_PRR_MP54_Mail_Coach_graphics.pnml"
+#include "src/Coaches/Gen2/Coach_Gen2_PRR_MP54_Mail_Coach_item.pnml"
 
 
 //// COACHES - GEN3
@@ -188,9 +203,6 @@
 #include "src/Coaches/Gen3/Coach_Gen3_Umbauwagen_Local_Coach_graphics.pnml"
 #include "src/Coaches/Gen3/Coach_Gen3_Umbauwagen_Local_Coach_item.pnml"
 
-#include "src/Coaches/Gen3/Coach_Gen3_Doppelstockwagen_Local_Coach_graphics.pnml"
-#include "src/Coaches/Gen3/Coach_Gen3_Doppelstockwagen_Local_Coach_item.pnml"
-
 #include "src/Coaches/Gen3/Coach_Gen3_UIC_X_Mail_Coach_graphics.pnml"
 #include "src/Coaches/Gen3/Coach_Gen3_UIC_X_Mail_Coach_item.pnml"
 
@@ -233,8 +245,20 @@
 #include "src/Coaches/Gen3/Coach_Gen3_NZR_56ft_Mail_Coach_graphics.pnml"
 #include "src/Coaches/Gen3/Coach_Gen3_NZR_56ft_Mail_Coach_item.pnml"
 
+#include "src/Coaches/Gen3/Coach_Gen3_Steel_Lightweight_Commuter_Coach_graphics.pnml"
+#include "src/Coaches/Gen3/Coach_Gen3_Steel_Lightweight_Commuter_Coach_item.pnml"
+
+#include "src/Coaches/Gen3/Coach_Gen3_Goerlitz_Doppelstockwagen_Articulated_Coach_graphics.pnml"
+#include "src/Coaches/Gen3/Coach_Gen3_Goerlitz_Doppelstockwagen_Articulated_Coach_item.pnml"
+
+#include "src/Coaches/Gen3/Coach_Gen3_PRR_P70_Bilevel_Coach_graphics.pnml"
+#include "src/Coaches/Gen3/Coach_Gen3_PRR_P70_Bilevel_Coach_item.pnml"
+
 
 //// COACHES - GEN4
+#include "src/Coaches/Gen4/Coach_Gen4_Doppelstockwagen_Local_Coach_graphics.pnml"
+#include "src/Coaches/Gen4/Coach_Gen4_Doppelstockwagen_Local_Coach_item.pnml"
+
 #include "src/Coaches/Gen4/Coach_Gen4_Eurofima_Intercity_Coach_graphics.pnml"
 #include "src/Coaches/Gen4/Coach_Gen4_Eurofima_Intercity_Coach_item.pnml"
 
@@ -794,9 +818,6 @@
 #include "src/Diesel/Kisha_Mitsubishi_NS_DF50_graphics.pnml"
 #include "src/Diesel/Kisha_Mitsubishi_NS_DF50_item.pnml"
 
-#include "src/Diesel/ALCO_AE_Goodwin_DL_500B_graphics.pnml"
-#include "src/Diesel/ALCO_AE_Goodwin_DL_500B_item.pnml"
-
 #include "src/Diesel/Henschel_DH_1420_graphics.pnml"
 #include "src/Diesel/Henschel_DH_1420_item.pnml"
 
@@ -875,23 +896,14 @@
 #include "src/Diesel/GM_GL_18_B__040DJ__graphics.pnml"
 #include "src/Diesel/GM_GL_18_B__040DJ__item.pnml"
 
-#include "src/Diesel/LTZ_2TE10M_graphics.pnml"
-#include "src/Diesel/LTZ_2TE10M_item.pnml"
-
 #include "src/Diesel/GE_C39_8__FCCA__graphics.pnml"
 #include "src/Diesel/GE_C39_8__FCCA__item.pnml"
 
 #include "src/Diesel/FAUR_LDE1300_graphics.pnml"
 #include "src/Diesel/FAUR_LDE1300_item.pnml"
 
-#include "src/Diesel/LTZ_2TE126_graphics.pnml"
-#include "src/Diesel/LTZ_2TE126_item.pnml"
-
 #include "src/Diesel/Alsthom_CC_72000_graphics.pnml"
 #include "src/Diesel/Alsthom_CC_72000_item.pnml"
-
-#include "src/Diesel/LTZ_2TE10Ut_graphics.pnml"
-#include "src/Diesel/LTZ_2TE10Ut_item.pnml"
 
 #include "src/Diesel/SOFSE_319_3_graphics.pnml"
 #include "src/Diesel/SOFSE_319_3_item.pnml"
@@ -959,11 +971,8 @@
 #include "src/Diesel/GMD_GT22LC_2_graphics.pnml"
 #include "src/Diesel/GMD_GT22LC_2_item.pnml"
 
-#include "src/Diesel/GE_AC6044CW_graphics.pnml"
-#include "src/Diesel/GE_AC6044CW_item.pnml"
-
-#include "src/Diesel/GE_AC6000CW_BHP_6071_graphics.pnml"
-#include "src/Diesel/GE_AC6000CW_BHP_6071_item.pnml"
+#include "src/Diesel/GE_AC6000CW_graphics.pnml"
+#include "src/Diesel/GE_AC6000CW_item.pnml"
 
 #include "src/Diesel/BTH_41_Class_graphics.pnml"
 #include "src/Diesel/BTH_41_Class_item.pnml"
@@ -1118,6 +1127,15 @@
 #include "src/Diesel/GE_ES58ACi_graphics.pnml"
 #include "src/Diesel/GE_ES58ACi_item.pnml"
 
+#include "src/Diesel/LTZ_TE10M_graphics.pnml"
+#include "src/Diesel/LTZ_TE10M_item.pnml"
+
+#include "src/Diesel/LTZ_TE126_graphics.pnml"
+#include "src/Diesel/LTZ_TE126_item.pnml"
+
+#include "src/Diesel/LTZ_TE10Ut_graphics.pnml"
+#include "src/Diesel/LTZ_TE10Ut_item.pnml"
+
 
 //// EMU
 #include "src/EMU/Werkspoor_Mat24_graphics.pnml"
@@ -1254,9 +1272,6 @@
 
 #include "src/EMU/Alstom_Avelia_Horizon_graphics.pnml"
 #include "src/EMU/Alstom_Avelia_Horizon_item.pnml"
-
-#include "src/EMU/PRR_MP54_graphics.pnml"
-#include "src/EMU/PRR_MP54_item.pnml"
 
 #include "src/EMU/Victorian_Railways_Swing_Door_graphics.pnml"
 #include "src/EMU/Victorian_Railways_Swing_Door_item.pnml"
@@ -1404,6 +1419,18 @@
 
 #include "src/EMU/PESA_43WE_DART_graphics.pnml"
 #include "src/EMU/PESA_43WE_DART_item.pnml"
+
+#include "src/EMU/PRR_MP_70_graphics.pnml"
+#include "src/EMU/PRR_MP_70_item.pnml"
+
+#include "src/EMU/Pullman_Standard_LIRR_MP75_graphics.pnml"
+#include "src/EMU/Pullman_Standard_LIRR_MP75_item.pnml"
+
+#include "src/EMU/PRR_MP54_3RL_graphics.pnml"
+#include "src/EMU/PRR_MP54_3RL_item.pnml"
+
+#include "src/EMU/PRR_MP54_OHLE_graphics.pnml"
+#include "src/EMU/PRR_MP54_OHLE_item.pnml"
 
 
 //// ELECTRIC
@@ -1887,6 +1914,12 @@
 #include "src/Electric/Breda_Marelli_E32_graphics.pnml"
 #include "src/Electric/Breda_Marelli_E32_item.pnml"
 
+#include "src/Electric/ALCO_GE_T_Motor_graphics.pnml"
+#include "src/Electric/ALCO_GE_T_Motor_item.pnml"
+
+#include "src/Electric/Altoona_Works_DD1_graphics.pnml"
+#include "src/Electric/Altoona_Works_DD1_item.pnml"
+
 #include "src/Electric/BRC_W_London_1903_Stock_graphics.pnml"
 #include "src/Electric/BRC_W_London_1903_Stock_item.pnml"
 
@@ -2347,6 +2380,9 @@
 
 #include "src/Single_Metro/Berlin_U_Bahn_C_II_graphics.pnml"
 #include "src/Single_Metro/Berlin_U_Bahn_C_II_item.pnml"
+
+#include "src/Single_Metro/ACF_NYCC_Heavyweight_graphics.pnml"
+#include "src/Single_Metro/ACF_NYCC_Heavyweight_item.pnml"
 
 
 //// SPECIAL

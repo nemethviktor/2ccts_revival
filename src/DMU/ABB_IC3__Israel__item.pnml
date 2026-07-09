@@ -8,7 +8,7 @@
 
 // Notes:
 //// WEB: https://en.wikipedia.org/wiki/DSB_Class_MF -- same as DMF
-//// TE_COEFFICIENT_MANUAL: 0.25 -- No data found but .63 is way too high
+//// TE_COEFFICIENT_MANUAL: 0 -- No data found but .63 is way too high
 
 
 // Cargo capacity

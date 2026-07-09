@@ -25,7 +25,7 @@ item(FEAT_TRAINS, item_steam_john_cockerill___cie__le_belge) {
         power: 50 hp;
         cargo_capacity: 0;
         weight: 60 ton;
-        tractive_effort_coefficient: 0.09;
+        tractive_effort_coefficient: 0.021;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;

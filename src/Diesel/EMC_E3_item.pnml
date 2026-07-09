@@ -3,7 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_03D.
+// Template: TPL_03F.
 // Data from: https://en.wikipedia.org/wiki/EMC_E3
 
 item(FEAT_TRAINS, item_diesel_emc_e3) {
@@ -48,9 +48,9 @@ item(FEAT_TRAINS, item_diesel_emc_e3) {
     }
     graphics {
         purchase: spriteset_diesel_emc_e3_purchase;
-        visual_effect_and_powered: switch_diesel_emc_e3_visual_effect;
-        length: switch_diesel_emc_e3_length;
-        articulated_part: switch_diesel_emc_e3_articulated;
+        // no 'visual_effect' or 'visual_effect_and_powered'
+        // no 'length'
+        // no 'articulated_part'
         can_attach_wagon: switch_can_attach_vehicle;
         default: switch_diesel_emc_e3_position;
     }

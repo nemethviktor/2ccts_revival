@@ -30,7 +30,7 @@ switch(FEAT_TRAINS, SELF, switch_diesel_ge_ac6000cw_bhp_6071_visual_effect, posi
 /// Length
 switch(FEAT_TRAINS, SELF, switch_diesel_ge_ac6000cw_bhp_6071_length, position_in_vehid_chain % 2) {
     0: 8;
-	2;
+	1;
 }
 
 /// Articulated Return

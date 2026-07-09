@@ -1,0 +1,21 @@
+//  Copyright (C) 2017 Transportman // V. Nemeth 2026+
+//  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
+
+// Template: TPL_32D
+
+// PURCHASE
+spriteset(spriteset_diesel_ltz_te126_purchase, "gfx/diesel/ltz_te126.png") {template_purchase(1, 128)}
+
+
+// VEHICLE
+/// A Unit
+spriteset(spriteset_diesel_ltz_te126_a_unit, "gfx/diesel/ltz_te126.png") {template_2cc_l12(1, 1)}
+
+
+/// B Unit
+spriteset(spriteset_diesel_ltz_te126_b_unit, "gfx/diesel/ltz_te126.png") {template_2cc_l12(1, 64)}
+
+switch(FEAT_TRAINS, SELF, switch_diesel_ltz_te126_position, position_in_vehid_chain % 4) {
+	0: spriteset_diesel_ltz_te126_a_unit;
+	spriteset_diesel_ltz_te126_b_unit;
+}

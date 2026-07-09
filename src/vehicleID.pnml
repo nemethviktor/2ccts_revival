@@ -2602,7 +2602,7 @@ item(FEAT_TRAINS, item_diesel_emd_g12_a608_m2, 5079) {}
 item(FEAT_TRAINS, item_diesel_metropolitan_vickers_cie_001, 5080) {}
 item(FEAT_TRAINS, item_diesel_fiat_grandi_motori_d_341, 5081) {}
 item(FEAT_TRAINS, item_diesel_kisha_mitsubishi_ns_df50, 5082) {}
-item(FEAT_TRAINS, item_diesel_alco_ae_goodwin_dl_500b, 5083) {}
+// item(FEAT_TRAINS, item_diesel_alco_ae_goodwin_dl_500b, 5083) {} // vehicle is excluded
 item(FEAT_TRAINS, item_diesel_henschel_dh_1420, 5084) {}
 item(FEAT_TRAINS, item_diesel_emd_sd18, 5085) {}
 item(FEAT_TRAINS, item_diesel_fiat_grandi_motori_d_345, 5086) {}
@@ -2631,12 +2631,12 @@ item(FEAT_TRAINS, item_diesel_alco_rsd_39, 5108) {}
 item(FEAT_TRAINS, item_diesel_emd_ddm45, 5109) {}
 item(FEAT_TRAINS, item_diesel_ltz_te114e, 5110) {}
 item(FEAT_TRAINS, item_diesel_gm_gl_18_b__040dj_, 5111) {}
-item(FEAT_TRAINS, item_diesel_ltz_2te10m, 5112) {}
+// item(FEAT_TRAINS, item_diesel_ltz_2te10m, 5112) {} // vehicle is excluded
 item(FEAT_TRAINS, item_diesel_ge_c39_8__fcca_, 5113) {}
 item(FEAT_TRAINS, item_diesel_faur_lde1300, 5114) {}
-item(FEAT_TRAINS, item_diesel_ltz_2te126, 5115) {}
+// item(FEAT_TRAINS, item_diesel_ltz_2te126, 5115) {} // vehicle is excluded
 item(FEAT_TRAINS, item_diesel_alsthom_cc_72000, 5116) {}
-item(FEAT_TRAINS, item_diesel_ltz_2te10ut, 5117) {}
+// item(FEAT_TRAINS, item_diesel_ltz_2te10ut, 5117) {} // vehicle is excluded
 item(FEAT_TRAINS, item_diesel_sofse_319_3, 5118) {}
 item(FEAT_TRAINS, item_diesel_cmks_709_0_4_0de, 5119) {}
 item(FEAT_TRAINS, item_diesel_cnr_ckd8g, 5120) {}
@@ -2660,8 +2660,8 @@ item(FEAT_TRAINS, item_diesel_alsthom_bb_bb_300, 5137) {}
 item(FEAT_TRAINS, item_diesel_sorefame_de8, 5138) {}
 item(FEAT_TRAINS, item_diesel_gmd_gt22lc_2, 5139) {}
 // item(FEAT_TRAINS, item_diesel_ltz_dr_130, 5140) {} // vehicle is excluded
-item(FEAT_TRAINS, item_diesel_ge_ac6044cw, 5141) {}
-item(FEAT_TRAINS, item_diesel_ge_ac6000cw_bhp_6071, 5142) {}
+// item(FEAT_TRAINS, item_diesel_ge_ac6044cw, 5141) {} // vehicle is excluded
+item(FEAT_TRAINS, item_diesel_ge_ac6000cw, 5142) {}
 item(FEAT_TRAINS, item_diesel_bth_41_class, 5143) {}
 item(FEAT_TRAINS, item_diesel_alco_ae_goodwin_dl531_532, 5144) {}
 item(FEAT_TRAINS, item_diesel_alco_ae_goodwin_dl500, 5145) {}
@@ -2721,9 +2721,9 @@ item(FEAT_TRAINS, item_diesel_ee_dick__kerr___co_vulcan_foundry_de2, 5198) {}
 item(FEAT_TRAINS, item_diesel_ingeteam_td2000_series, 5199) {}
 item(FEAT_TRAINS, item_diesel_tulloch_0_6_0dm_w_class, 5200) {}
 item(FEAT_TRAINS, item_diesel_ge_es58aci, 5201) {}
-// 5202 free
-// 5203 free
-// 5204 free
+item(FEAT_TRAINS, item_diesel_ltz_te10m, 5202) {}
+item(FEAT_TRAINS, item_diesel_ltz_te126, 5203) {}
+item(FEAT_TRAINS, item_diesel_ltz_te10ut, 5204) {}
 // 5205 free
 // 5206 free
 // 5207 free
@@ -3692,8 +3692,8 @@ item(FEAT_TRAINS, item_electric_ge_289_boxcab, 6166) {}
 item(FEAT_TRAINS, item_electric_alsthom_ec_386, 6167) {}
 item(FEAT_TRAINS, item_electric_chesta_casagrande_e650, 6168) {}
 item(FEAT_TRAINS, item_electric_breda_marelli_e32, 6169) {}
-// 6170 free
-// 6171 free
+item(FEAT_TRAINS, item_electric_alco_ge_t_motor, 6170) {}
+item(FEAT_TRAINS, item_electric_altoona_works_dd1, 6171) {}
 // 6172 free
 // 6173 free
 // 6174 free
@@ -5573,7 +5573,7 @@ item(FEAT_TRAINS, item_emu_bombardier_ucw_electrostar_gautrain, 8041) {}
 item(FEAT_TRAINS, item_emu_alstom_agv, 8042) {}
 item(FEAT_TRAINS, item_emu_ns_4800_hsa_fyra, 8043) {}
 item(FEAT_TRAINS, item_emu_alstom_avelia_horizon, 8044) {}
-item(FEAT_TRAINS, item_emu_prr_mp54, 8045) {}
+// item(FEAT_TRAINS, item_emu_prr_mp54, 8045) {} // vehicle is excluded
 item(FEAT_TRAINS, item_emu_victorian_railways_swing_door, 8046) {}
 item(FEAT_TRAINS, item_emu_aeg_ew90, 8047) {}
 item(FEAT_TRAINS, item_emu_pullman_erie_lackawanna_2500_series, 8048) {}
@@ -5625,10 +5625,10 @@ item(FEAT_TRAINS, item_emu_hitachi_kawasaki_shinkansen_series_100, 8093) {}
 item(FEAT_TRAINS, item_emu_hitachi_alstom_zefiro_class_895_hs2, 8094) {}
 item(FEAT_TRAINS, item_emu_acme_corp__v200e_emu, 8095) {}
 item(FEAT_TRAINS, item_emu_pesa_43we_dart, 8096) {}
-// 8097 free
-// 8098 free
-// 8099 free
-// 8100 free
+item(FEAT_TRAINS, item_emu_prr_mp_70, 8097) {}
+item(FEAT_TRAINS, item_emu_pullman_standard_lirr_mp75, 8098) {}
+item(FEAT_TRAINS, item_emu_prr_mp54_3rl, 8099) {}
+item(FEAT_TRAINS, item_emu_prr_mp54_ohle, 8100) {}
 // 8101 free
 // 8102 free
 // 8103 free
@@ -8072,7 +8072,7 @@ item(FEAT_TRAINS, item_mu_coach_gen3_uic_x_intercity_coach, 11031) {}
 item(FEAT_TRAINS, item_mu_coach_gen3_tee_intercity_coach, 11032) {}
 item(FEAT_TRAINS, item_mu_coach_gen3_uic_x_regional_coach, 11033) {}
 item(FEAT_TRAINS, item_mu_coach_gen3_umbauwagen_local_coach, 11034) {}
-item(FEAT_TRAINS, item_mu_coach_gen3_doppelstockwagen_local_coach, 11035) {}
+item(FEAT_TRAINS, item_mu_coach_gen4_doppelstockwagen_local_coach, 11035) {}
 item(FEAT_TRAINS, item_mu_coach_gen3_uic_x_mail_coach, 11036) {}
 item(FEAT_TRAINS, item_mu_coach_gen3_indian_intercity_coach, 11037) {}
 item(FEAT_TRAINS, item_mu_coach_gen3_indian_local_coach, 11038) {}
@@ -8134,14 +8134,14 @@ item(FEAT_TRAINS, item_mu_coach_gen3_nzr_56ft_mail_coach, 11093) {}
 item(FEAT_TRAINS, item_mu_coach_gen2_nzr_50ft_coach, 11094) {}
 item(FEAT_TRAINS, item_mu_coach_gen2_nzr_50ft_mail_coach, 11095) {}
 item(FEAT_TRAINS, item_mu_coach_gen1_nsw_ka_tram_car, 11096) {}
-// 11097 free
-// 11098 free
-// 11099 free
-// 11100 free
-// 11101 free
-// 11102 free
-// 11103 free
-// 11104 free
+item(FEAT_TRAINS, item_mu_coach_gen2_heavyweight_regional_coach, 11097) {}
+item(FEAT_TRAINS, item_mu_coach_gen1_american_style_coach, 11098) {}
+item(FEAT_TRAINS, item_mu_coach_gen1_american_style_mail_coach, 11099) {}
+item(FEAT_TRAINS, item_mu_coach_gen3_steel_lightweight_commuter_coach, 11100) {}
+item(FEAT_TRAINS, item_mu_coach_gen3_goerlitz_doppelstockwagen_articulated_coach, 11101) {}
+item(FEAT_TRAINS, item_mu_coach_gen2_prr_mp54_commuter_coach, 11102) {}
+item(FEAT_TRAINS, item_mu_coach_gen2_prr_mp54_mail_coach, 11103) {}
+item(FEAT_TRAINS, item_mu_coach_gen3_prr_p70_bilevel_coach, 11104) {}
 // 11105 free
 // 11106 free
 // 11107 free
@@ -10067,7 +10067,7 @@ item(FEAT_TRAINS, item_singlemtro_brooklyn_union_gate_1300, 14000) {}
 item(FEAT_TRAINS, item_singlemtro_siemens___halske_budapest_1894_stock, 14001) {}
 item(FEAT_TRAINS, item_singlemtro_chicago_l_northwest_elevated_1907_stock, 14002) {}
 item(FEAT_TRAINS, item_singlemtro_berlin_u_bahn_c_ii, 14003) {}
-// 14004 free
+item(FEAT_TRAINS, item_singlemtro_acf_nycc_heavyweight, 14004) {}
 // 14005 free
 // 14006 free
 // 14007 free

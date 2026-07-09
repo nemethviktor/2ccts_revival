@@ -301,7 +301,6 @@ item_diesel_krauss_maffei_v200, /*Year: 1956*/ \
 item_diesel_emd_fl9, /*Year: 1956*/ \
 item_diesel_fiat_grandi_motori_d_341, /*Year: 1957*/ \
 item_diesel_kisha_mitsubishi_ns_df50, /*Year: 1957*/ \
-item_diesel_alco_ae_goodwin_dl_500b, /*Year: 1957*/ \
 item_diesel_krauss_maffei_ml_2200, /*Year: 1957*/ \
 item_diesel_ckd_t_435_0, /*Year: 1958*/ \
 item_diesel_valmet_lokomo_dr12, /*Year: 1959*/ \
@@ -366,8 +365,8 @@ item_diesel_alsthom_ad30b, /*Year: 1978*/ \
 item_diesel_alco_comeng_ce615a, /*Year: 1978*/ \
 item_diesel_henschel_di4, /*Year: 1980*/ \
 item_diesel_sorefame_alsthom_1900, /*Year: 1981*/ \
-item_diesel_ltz_2te10m, /*Year: 1981*/ \
 item_diesel_gmd_gt22lc_2, /*Year: 1981*/ \
+item_diesel_ltz_te10m, /*Year: 1981*/ \
 item_diesel_emd_clyde_jt42c_nsw82, /*Year: 1982*/ \
 item_diesel_emd_clyde_gl26c_2, /*Year: 1982*/ \
 item_diesel_ugofe_gm_emd_j16cw_ac, /*Year: 1984*/ \
@@ -379,15 +378,15 @@ item_diesel_crrc_dalian_df4, /*Year: 1984*/ \
 item_diesel_valmet_oy_dr16, /*Year: 1985*/ \
 item_diesel_faur_lde1300, /*Year: 1985*/ \
 item_diesel_emd_clyde_jt22hc_2, /*Year: 1985*/ \
-item_diesel_ltz_2te126, /*Year: 1987*/ \
 item_diesel_ge_c40_8_dash_8, /*Year: 1987*/ \
+item_diesel_ltz_te126, /*Year: 1987*/ \
 item_diesel_kolomena_tep80, /*Year: 1988*/ \
 item_diesel_emd_f59ph, /*Year: 1988*/ \
 item_diesel_mak_de_6400, /*Year: 1988*/ \
 item_diesel_emd_clyde_at42c_, /*Year: 1988*/ \
 item_diesel_brush_class_60, /*Year: 1989*/ \
 item_diesel_ge_goninan_cm25_8, /*Year: 1989*/ \
-item_diesel_ltz_2te10ut, /*Year: 1989*/ \
+item_diesel_ltz_te10ut, /*Year: 1989*/ \
 item_diesel_emd_clyde_ml2, /*Year: 1990*/ \
 item_diesel_sofse_319_3, /*Year: 1991*/ \
 item_diesel_emd_clyde_jt46c, /*Year: 1992*/ \
@@ -400,8 +399,7 @@ item_diesel_tulomsas_tcdd_dh7000, /*Year: 1994*/ \
 item_diesel_gmd_jt42hcw, /*Year: 1994*/ \
 item_diesel_emd_gt46cwm, /*Year: 1994*/ \
 item_diesel_ge_u20c, /*Year: 1995*/ \
-item_diesel_ge_ac6044cw, /*Year: 1995*/ \
-item_diesel_ge_ac6000cw_bhp_6071, /*Year: 1995*/ \
+item_diesel_ge_ac6000cw, /*Year: 1995*/ \
 item_diesel_clyde_emd_gt46cw_nr_concept, /*Year: 1996*/ \
 item_diesel_emd_jt42cwrm, /*Year: 1998*/ \
 item_diesel_emd_jt42c_90_1277, /*Year: 1998*/ \
@@ -437,7 +435,9 @@ item_electric_alco_ge_nyc_s_motor_s1, /*Year: 1903*/ \
 item_electric_british_thomson_houston_es1, /*Year: 1903*/ \
 item_electric_tibb_e_550, /*Year: 1908*/ \
 item_electric_sig_alioth_de_2_2, /*Year: 1909*/ \
+item_electric_altoona_works_dd1, /*Year: 1910*/ \
 item_electric_aeg_skabo_el7, /*Year: 1911*/ \
+item_electric_alco_ge_t_motor, /*Year: 1913*/ \
 item_electric_ner_ef1, /*Year: 1914*/ \
 item_electric_siemens_oa, /*Year: 1914*/ \
 item_electric_borsig_ssw_es_6, /*Year: 1914*/ \
@@ -661,7 +661,8 @@ item_dmu_materfer_cmm_400_2, /*Year: 2015*/ \
 item_dmu_acme_corp__v200d_dmu, /*Year: 2040*/
 
 #define SORTING_EMU \
-item_emu_prr_mp54, /*Year: 1908*/ \
+item_emu_prr_mp54_3rl, /*Year: 1908*/ \
+item_emu_prr_mp54_ohle, /*Year: 1915*/ \
 item_emu_victorian_railways_swing_door, /*Year: 1917*/ \
 item_emu_victorian_railways_tait_trains, /*Year: 1919*/ \
 item_emu_werkspoor_mat24, /*Year: 1924*/ \
@@ -671,6 +672,7 @@ item_emu_elin_et_10, /*Year: 1929*/ \
 item_emu_mmz_s, /*Year: 1929*/ \
 item_emu_pullman_erie_lackawanna_2500_series, /*Year: 1930*/ \
 item_emu_tibb_ecd_21_30, /*Year: 1932*/ \
+item_emu_prr_mp_70, /*Year: 1932*/ \
 item_emu_werkspoor_mat36, /*Year: 1936*/ \
 item_emu_breda_etr_200, /*Year: 1937*/ \
 item_emu_eec_dm_emu, /*Year: 1938*/ \
@@ -686,6 +688,7 @@ item_emu_comeng_w_class_sputnik, /*Year: 1957*/ \
 item_emu_metro_cammell_5m2, /*Year: 1958*/ \
 item_emu_sig_rae_tee_ii, /*Year: 1961*/ \
 item_emu_nippon_sharyo_odakyu_3100_series_nse, /*Year: 1962*/ \
+item_emu_pullman_standard_lirr_mp75, /*Year: 1963*/ \
 item_emu_hitachi_shinkansen_series_0, /*Year: 1964*/ \
 item_emu_swp_rabde_510, /*Year: 1965*/ \
 item_emu_carel_et_fouche_alsthom_z_6100, /*Year: 1965*/ \
@@ -838,14 +841,19 @@ item_mu_coach_gen1_wooden_3_axle_mail_coach, /*Year: 1850*/ \
 item_mu_coach_gen1_2_axle_nzaus_coach, /*Year: 1854*/ \
 item_mu_coach_gen1_2_axle_nzaus_mail_coach, /*Year: 1854*/ \
 item_mu_coach_gen1_suburban_2_axle_nzaus_coach, /*Year: 1865*/ \
+item_mu_coach_gen1_american_style_coach, /*Year: 1870*/ \
+item_mu_coach_gen1_american_style_mail_coach, /*Year: 1870*/ \
 item_mu_coach_gen1_american_style_nzaus_coach, /*Year: 1877*/ \
 item_mu_coach_gen1_american_style_nzaus_mail_coach, /*Year: 1877*/ \
 item_mu_coach_gen1_end_platform_2_axle_nzaus_coach, /*Year: 1877*/ \
 item_mu_coach_gen1_nsw_ka_tram_car, /*Year: 1877*/ \
 item_mu_coach_gen2_heavyweight_intercity_coach, /*Year: 1900*/ \
 item_mu_coach_gen2_heavyweight_mail_coach, /*Year: 1900*/ \
+item_mu_coach_gen2_heavyweight_regional_coach, /*Year: 1900*/ \
 item_mu_coach_gen2_nzr_50ft_coach, /*Year: 1902*/ \
 item_mu_coach_gen2_nzr_50ft_mail_coach, /*Year: 1902*/ \
+item_mu_coach_gen2_prr_mp54_commuter_coach, /*Year: 1908*/ \
+item_mu_coach_gen2_prr_mp54_mail_coach, /*Year: 1908*/ \
 item_mu_coach_gen2_steel_intercity_coach, /*Year: 1910*/ \
 item_mu_coach_gen2_steel_compartment_coach, /*Year: 1910*/ \
 item_mu_coach_gen2_steel_regional_coach, /*Year: 1910*/ \
@@ -860,6 +868,7 @@ item_mu_coach_gen3_wagr_ay_suburban_coach, /*Year: 1924*/ \
 item_mu_coach_gen3_steel_lightweight_intercity_coach, /*Year: 1930*/ \
 item_mu_coach_gen3_steel_lightweight_regional_coach, /*Year: 1930*/ \
 item_mu_coach_gen3_steel_lightweight_mail_coach, /*Year: 1930*/ \
+item_mu_coach_gen3_prr_p70_bilevel_coach, /*Year: 1932*/ \
 item_mu_coach_gen3_nzr_56ft_coach, /*Year: 1937*/ \
 item_mu_coach_gen3_nzr_56ft_mail_coach, /*Year: 1937*/ \
 item_mu_coach_gen3_aluminium_lightweight_intercity_coach, /*Year: 1940*/ \
@@ -875,12 +884,13 @@ item_mu_coach_gen3_uic_x_intercity_coach, /*Year: 1950*/ \
 item_mu_coach_gen3_tee_intercity_coach, /*Year: 1950*/ \
 item_mu_coach_gen3_uic_x_regional_coach, /*Year: 1950*/ \
 item_mu_coach_gen3_umbauwagen_local_coach, /*Year: 1950*/ \
-item_mu_coach_gen3_doppelstockwagen_local_coach, /*Year: 1950*/ \
 item_mu_coach_gen3_uic_x_mail_coach, /*Year: 1950*/ \
 item_mu_coach_gen3_indian_intercity_coach, /*Year: 1950*/ \
 item_mu_coach_gen3_indian_local_coach, /*Year: 1950*/ \
 item_mu_coach_gen3_indian_regional_coach, /*Year: 1950*/ \
 item_mu_coach_gen3_indian_mail_coach, /*Year: 1950*/ \
+item_mu_coach_gen3_steel_lightweight_commuter_coach, /*Year: 1950*/ \
+item_mu_coach_gen3_goerlitz_doppelstockwagen_articulated_coach, /*Year: 1952*/ \
 item_mu_coach_gen4_silberling_commuter_coach, /*Year: 1960*/ \
 item_mu_coach_gen4_russian_intercity_coach, /*Year: 1960*/ \
 item_mu_coach_gen4_russian_regional_coach, /*Year: 1960*/ \
@@ -900,6 +910,7 @@ item_mu_coach_gen3_hitachi_nippon_sharyo_silver_star_coach, /*Year: 1971*/ \
 item_mu_coach_gen3_hitachi_nippon_sharyo_silver_star_mail_coach, /*Year: 1971*/ \
 item_mu_coach_gen4_brel_mk3_coach, /*Year: 1972*/ \
 item_mu_coach_gen4_brel_mk3_mail_coach, /*Year: 1972*/ \
+item_mu_coach_gen4_doppelstockwagen_local_coach, /*Year: 1974*/ \
 item_mu_coach_gen4_superliner_coach, /*Year: 1980*/ \
 item_mu_coach_gen5_talgo_pendular, /*Year: 1980*/ \
 item_mu_coach_gen5_talgo_pendular_mail, /*Year: 1980*/ \
@@ -1015,6 +1026,7 @@ item_mu_mu_cargo_wagon_powered, /*Year: 1992*/
 #define SORTING_SINGLEMETRO \
 item_singlemtro_brooklyn_union_gate_1300, /*Year: 1880*/ \
 item_singlemtro_siemens___halske_budapest_1894_stock, /*Year: 1903*/ \
+item_singlemtro_acf_nycc_heavyweight, /*Year: 1906*/ \
 item_singlemtro_chicago_l_northwest_elevated_1907_stock, /*Year: 1907*/ \
 item_singlemtro_berlin_u_bahn_c_ii, /*Year: 1929*/
 

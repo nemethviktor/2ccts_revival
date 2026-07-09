@@ -9,7 +9,7 @@
 item(FEAT_TRAINS, item_electric_abb_brush_class_92) {
     property {
         name: string(str_electric_abb_brush_class_92);
-        climates_available: ((param_region_northern_europe || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
+        climates_available: ((param_region_northern_europe || param_region_western_europe || param_region_eastern_europe) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1993,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 40;
@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_electric_abb_brush_class_92) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/europe/northern", "power/electric/ac", "role/freight"];
+	badges: ["region/europe/western", "region/europe/eastern", "region/europe/northern", "power/electric/ac", "role/freight"];
 
     }
     graphics {
