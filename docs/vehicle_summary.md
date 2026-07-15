@@ -237,7 +237,7 @@
 | ![Alsthom AD30B](vehicle_graphics/str_diesel_alsthom_ad30b.png) | Alsthom AD30B | 1978 | 80 / 49 | 3000 / 2236 | Freight | 0 | STANDARD_NONE | Africa | No |
 | ![Henschel Di4](vehicle_graphics/str_diesel_henschel_di4.png) | Henschel Di4 | 1980 | 140 / 86 | 3290 / 2453 | Freight | 0 | STANDARD_NONE | Northern Europe | No |
 | ![GMD GT22LC-2](vehicle_graphics/str_diesel_gmd_gt22lc_2.png) | GMD GT22LC-2 | 1981 | 105 / 65 | 2250 / 1677 | Express | 0 | NARROW_NONE | Africa | No |
-| ![LTZ TE10M](vehicle_graphics/str_diesel_ltz_te10m.png) | LTZ TE10M | 1981 | 100 / 62 | 3080 / 2296 | Freight | 0 | BROAD_NONE | Asia, Northern Europe, Eastern Europe | No |
+| ![LTZ 2TE10M](vehicle_graphics/str_diesel_ltz_te10m.png) | LTZ 2TE10M | 1981 | 100 / 62 | 3080 / 2296 | Freight | 0 | BROAD_NONE | Asia, Northern Europe, Eastern Europe | No |
 | ![Sorefame/Alsthom 1900](vehicle_graphics/str_diesel_sorefame_alsthom_1900.png) | Sorefame/Alsthom 1900 | 1981 | 100 / 62 | 2260 / 1685 | Universal | 0 | BROAD_NONE | Southern Europe | No |
 | ![EMD/Clyde GL26C-2](vehicle_graphics/str_diesel_emd_clyde_gl26c_2.png) | EMD/Clyde GL26C-2 | 1982 | 100 / 62 | 2201 / 1641 | Express | 0 | NARROW_NONE | Oceania | No |
 | ![EMD/Clyde JT42C](vehicle_graphics/str_diesel_emd_clyde_jt42c_nsw82.png) | EMD/Clyde JT42C | 1982 | 121 / 75 | 3030 / 2259 | Freight | 0 | STANDARD_NONE | Oceania | No |
@@ -251,14 +251,14 @@
 | ![FAUR LDE1300](vehicle_graphics/str_diesel_faur_lde1300.png) | FAUR LDE1300 | 1985 | 100 / 62 | 1015 / 756 | Light Freight | 0 | STANDARD_NONE | Eastern Europe | No |
 | ![Valmet Oy Dr16](vehicle_graphics/str_diesel_valmet_oy_dr16.png) | Valmet Oy Dr16 | 1985 | 140 / 86 | 2250 / 1677 | Universal | 0 | BROAD_NONE | Northern Europe | No |
 | ![GE C40-8 'Dash-8'](vehicle_graphics/str_diesel_ge_c40_8_dash_8.png) | GE C40-8 'Dash-8' | 1987 | 113 / 70 | 4000 / 2982 | Heavy Freight | 0 | STANDARD_NONE, BROAD_NONE | North America, South America | No |
-| ![LTZ TE126](vehicle_graphics/str_diesel_ltz_te126.png) | LTZ TE126 | 1987 | 100 / 62 | 3017 / 2249 | Freight | 0 | BROAD_NONE | Asia, Eastern Europe | No |
+| ![LTZ 2TE126](vehicle_graphics/str_diesel_ltz_te126.png) | LTZ 2TE126 | 1987 | 100 / 62 | 3017 / 2249 | Freight | 0 | BROAD_NONE | Asia, Eastern Europe | No |
 | ![EMD F59PH](vehicle_graphics/str_diesel_emd_f59ph.png) | EMD F59PH | 1988 | 177 / 109 | 3000 / 2236 | Express | 0 | STANDARD_NONE | North America | No |
 | ![EMD/Clyde AT42C ](vehicle_graphics/str_diesel_emd_clyde_at42c_.png) | EMD/Clyde AT42C  | 1988 | 153 / 95 | 3030 / 2259 | Freight | 0 | STANDARD_NONE | Oceania | No |
 | ![Kolomna TEP80](vehicle_graphics/str_diesel_kolomena_tep80.png) | Kolomna TEP80 | 1988 | 160 / 99 | 6000 / 4473 | Express | 0 | BROAD_NONE | Asia, Eastern Europe | No |
 | ![MaK DE 6400](vehicle_graphics/str_diesel_mak_de_6400.png) | MaK DE 6400 | 1988 | 120 / 74 | 1580 / 1178 | Universal | 0 | STANDARD_NONE | Eastern Europe, Western Europe | No |
 | ![Brush Class 60](vehicle_graphics/str_diesel_brush_class_60.png) | Brush Class 60 | 1989 | 97 / 60 | 3100 / 2311 | Freight | 0 | STANDARD_NONE | Northern Europe | No |
 | ![GE/Goninan CM25-8](vehicle_graphics/str_diesel_ge_goninan_cm25_8.png) | GE/Goninan CM25-8 | 1989 | 90 / 55 | 2450 / 1826 | Universal | 0 | NARROW_NONE | Oceania | No |
-| ![LTZ TE10Ut](vehicle_graphics/str_diesel_ltz_te10ut.png) | LTZ TE10Ut | 1989 | 120 / 74 | 2280 / 1699 | Universal | 0 | BROAD_NONE | Asia, Eastern Europe | No |
+| ![LTZ 2TE10Ut](vehicle_graphics/str_diesel_ltz_te10ut.png) | LTZ 2TE10Ut | 1989 | 120 / 74 | 2280 / 1699 | Universal | 0 | BROAD_NONE | Asia, Eastern Europe | No |
 | ![EMD/Clyde ML2](vehicle_graphics/str_diesel_emd_clyde_ml2.png) | EMD/Clyde ML2 | 1990 | 121 / 75 | 3030 / 2259 | Freight | 0 | STANDARD_NONE | Oceania | No |
 | ![Macosa-Meinfesa 319.3 J26 CW/HEP](vehicle_graphics/str_diesel_sofse_319_3.png) | Macosa-Meinfesa 319.3 J26 CW/HEP | 1991 | 140 / 86 | 2027 / 1511 | Universal | 0 | BROAD_NONE | South America, Asia | No |
 | ![CMKS 709 0-4-0DE](vehicle_graphics/str_diesel_cmks_709_0_4_0de.png) | CMKS 709 0-4-0DE | 1992 | 80 / 49 | 530 / 395 | Light Freight | 0 | STANDARD_NONE | Eastern Europe | No |
@@ -461,7 +461,7 @@
 | ![AEG A1A+A1A](vehicle_graphics/str_electric_aeg_a1a_a1a.png) | AEG A1A+A1A | 1930 | 50 / 31 | 650 / 484 | Shunting | 0 | NARROW_25KV | North America | No |
 | ![Maffei/SSW Lok 5 'Adolphine'](vehicle_graphics/str_electric_maffei_ssw_lok_5_adolphine.png) | Maffei/SSW Lok 5 'Adolphine' | 1930 | 50 / 31 | 810 / 603 | Shunting | 0 | STANDARD_15KV | Western Europe | No |
 | ![Nippon Sharyo DeKi 400](vehicle_graphics/str_electric_nippon_sharyo_deki_400.png) | Nippon Sharyo DeKi 400 | 1930 | 28 / 17 | 482 / 359 | Shunting | 0 | NARROW_1500V | Asia | No |
-| ![JNR EB10](vehicle_graphics/str_electric_jnr_eb10.png) | JNR EB10 | 1931 | 19 / 11 | 360 / 268 | Shunting | 0 | NARROW_1500V | Asia | No |
+| ![JNR EB10](vehicle_graphics/str_electric_jnr_eb10.png) | JNR EB10 | 1931 | 40 / 24 | 360 / 268 | Shunting | 0 | NARROW_1500V | Asia | No |
 | ![Thune/ASEA EL10](vehicle_graphics/str_electric_thune_asea_el10.png) | Thune/ASEA EL10 | 1931 | 45 / 27 | 700 / 521 | Shunting | 0 | STANDARD_15KV | Northern Europe | No |
 | ![Ganz-MAVAG VM7 'V40'](vehicle_graphics/str_electric_ganz_mavag_vm7_v40.png) | Ganz-MAVAG VM7 'V40' | 1932 | 100 / 62 | 2203 / 1642 | Universal | 0 | STANDARD_15KV | Eastern Europe | No |
 | ![Kolomna VL19](vehicle_graphics/str_electric_kolomna_vl19.png) | Kolomna VL19 | 1932 | 85 / 52 | 2760 / 2057 | Freight | 0 | BROAD_3KV, BROAD_1500V | Asia, Eastern Europe | No |
@@ -470,7 +470,7 @@
 | ![Breda E.428](vehicle_graphics/str_electric_breda_e_428.png) | Breda E.428 | 1934 | 130 / 80 | 3800 / 2833 | Freight | 0 | STANDARD_3KV | Southern Europe | No |
 | ![AEG/Krupp E18](vehicle_graphics/str_electric_aeg_krupp_e18.png) | AEG/Krupp E18 | 1935 | 150 / 93 | 3810 / 2840 | Freight | 0 | STANDARD_15KV | Western Europe | No |
 | ![GE 4-6-0+0-6-4OE GG-1](vehicle_graphics/str_electric_ge_4_6_0_0_6_4oe_gg_1.png) | GE 4-6-0+0-6-4OE GG-1 | 1935 | 160 / 99 | 4620 / 3444 | Express | 0 | STANDARD_15KV | North America | No |
-| ![Hitachi/Kawasaki EF55](vehicle_graphics/str_electric_hitachi_kawasaki_ef55.png) | Hitachi/Kawasaki EF55 | 1936 | 75 / 46 | 1810 / 1349 | Universal | 0 | STANDARD_1500V | Asia | No |
+| ![Hitachi/Kawasaki EF55](vehicle_graphics/str_electric_hitachi_kawasaki_ef55.png) | Hitachi/Kawasaki EF55 | 1936 | 95 / 59 | 1810 / 1349 | Universal | 0 | NARROW_1500V | Asia | No |
 | ![Werkspoor SAR ES](vehicle_graphics/str_electric_werkspoor_sar_es.png) | Werkspoor SAR ES | 1936 | 40 / 24 | 1202 / 896 | Light Freight | 0 | NARROW_3KV | Africa | No |
 | ![GE 2-C+C-2](vehicle_graphics/str_electric_ge_2_c_c_2.png) | GE 2-C+C-2 | 1940 | 145 / 90 | 3870 / 2885 | Freight | 0 | STANDARD_3KV, BROAD_3KV | South America | No |
 | ![SLM 1100 'Crocodile'](vehicle_graphics/str_electric_slm_1100_crocodile.png) | SLM 1100 'Crocodile' | 1940 | 75 / 46 | 3648 / 2719 | Freight | 0 | STANDARD_15KV | Western Europe | No |

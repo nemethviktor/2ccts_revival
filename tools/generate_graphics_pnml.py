@@ -1206,14 +1206,15 @@ def get_tpl_02(vid, gfx_path, row, template_amendment_code):
 
 def get_tpl_03(vid, gfx_path, row, template_amendment_code):
     """
-    Articulated(Engine + Tender) OR Items with 2 engine animation states.: param template_amendment_code:
-        03A -> Steam w / Tender
-        03B -> Items w 2 engine animation states
-        03C -> Same as B but different 'purhchase' position
-        03D -> Non-Steam w / Tender (A/B Articulated)
-        03E -> Same as A but no Visual Effect
-        03F -> Same as B but no Visual effect (A/B NOT articulated)
-        03G -> Same as A but 12 length
+    Articulated(Engine + Tender) OR Items with 2 engine animation states...OR items that auto-reverse if there's a 2nd instance of them.
+    :param str template_amendment_code:
+        - '03A' -> Steam w/ Tender
+        - '03B' -> Items w/ 2 engine animation states
+        - '03C' -> Same as B but different 'purhchase' position
+        - '03D' -> Non-animated articulated engines (2nd item will flip/reverse)
+        - '03E' -> Same as A but no Visual Effect
+        - '03F' -> Asymmetrical single-unit engines NOT A/B, Single NOT articulated (2nd item will flip/reverse)
+        - '03G' -> Same as A but 12 length
     """
 
     nml_code = []
@@ -2172,8 +2173,8 @@ switch(FEAT_TRAINS, SELF, switch_{vid}_position, position_in_consist_from_end) {
 def get_tpl_16(vid, gfx_path, row, template_amendment_code):
     """
     12-Length Vehicles(TPL_16): param template_amendment_code:
-        A -> Generic 12L (articulated)
-        B -> Turbobus only
+        A -> Generic 12L
+        B -> Turbobus only, do not use.
     """
 
     if template_amendment_code == "A":
@@ -2637,10 +2638,10 @@ def get_tpl_25(vid, gfx_path, row, template_amendment_code):
 def get_tpl_32(vid, gfx_path, row, template_amendment_code):
     """
     10-Length Vehicles(TPL_32): param template_amendment_code:
-        A -> No animation (A/B unit, articulated)
-        B -> With animation
-        C -> B + Length
-        D -> Same as A, thus A/B unit, NOT articulated
+    - `32A` for no animation (articulated) NOT A/B
+    - `32B` for with animation.
+    - `32C` is the same as `B` but has `length` added to the visualisation switch.
+    - `32D` is same as A but no articulation
     """
 
     purchase_y = 128

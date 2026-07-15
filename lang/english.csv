@@ -1468,6 +1468,6 @@ str_emu_prr_mp54_ohle,PRR MP54
 str_mu_coach_gen2_prr_mp54_commuter_coach,PRR P54 Commuter Coach
 str_mu_coach_gen2_prr_mp54_mail_coach,PRR P54 Mail Coach
 str_mu_coach_gen3_prr_p70_bilevel_coach,PRR P70 Bilevel Coach
-str_diesel_ltz_te10m,LTZ TE10M
-str_diesel_ltz_te126,LTZ TE126
-str_diesel_ltz_te10ut,LTZ TE10Ut
+str_diesel_ltz_te10m,LTZ 2TE10M
+str_diesel_ltz_te126,LTZ 2TE126
+str_diesel_ltz_te10ut,LTZ 2TE10Ut

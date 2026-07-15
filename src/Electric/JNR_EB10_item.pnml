@@ -6,10 +6,6 @@
 // Template: TPL_01A.
 // Data from: https://ja.wikipedia.org/wiki/%E5%9B%BD%E9%89%84EB10%E5%BD%A2%E9%9B%BB%E6%B0%97%E6%A9%9F%E9%96%A2%E8%BB%8A
 
-// Notes:
-//// SPEED: 19 -- Max 40 but rated at 19
-
-
 item(FEAT_TRAINS, item_electric_jnr_eb10) {
     property {
         name: string(str_electric_jnr_eb10);
@@ -19,9 +15,9 @@ item(FEAT_TRAINS, item_electric_jnr_eb10) {
         vehicle_life: 41;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 21.45561;
-        running_cost_factor: 19.01725;
-        speed: 19 km/h;
+        cost_factor: 21.55389;
+        running_cost_factor: 19.03691;
+        speed: 40 km/h;
         power: 360 hp;
         cargo_capacity: 0;
         weight: 22 ton;
@@ -43,7 +39,7 @@ item(FEAT_TRAINS, item_electric_jnr_eb10) {
 
         sprite_id: SPRITE_ID_NEW_TRAIN;
         dual_headed: 0;
-        length: 5;
+        length: 4;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 

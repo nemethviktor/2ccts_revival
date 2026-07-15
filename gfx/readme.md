@@ -7,20 +7,21 @@ The automated process tags the Template ID onto each pnml file just under the co
 
 The obviously chaotic naming logic is a derivative of attempt to categorise existing legacy images into templates and then ending up with 40+ of them and then grouping the vaguely similar ones.
 
-Most **Engines** _exc Steam_ will fall into `TPL_01`, whichever version of it assuming there is no animation involved. I'd suggest using `TPL_01A`; if your design is dual-headed, still use that, don't move any of the boxes, for those -> `TPL_03B`. 
+Most **Engines** _exc Steam_ will fall into `TPL_01`, whichever version of it assuming there is no animation involved. I'd suggest using `TPL_01A`;
+If your design is dual-headed, still use that, don't move any of the boxes, for those -> `TPL_03B`. 
 
 Most **xMUs** will be `TPL_02A` if the middle cars are only different pax/mail. `TPL_02D` is for EMUs where the unpowered/powered cars are visually different. Other templates exist but I suggest not using them. There is no `TPL_02B` - it has been removed during testing.
 
 Most **Metros** will be `TPL_02C`.
 
-**Things with Tenders [exc chickens]** are usually `TPL_03x`:
-
-- Steam w / Tender -> `TPL_03A`
-- Items w 2 engine animation states -> `TPL_03B`
-- Same as B but different 'purhchase' position -> `TPL_03C`
-- Non-Steam w / A-B unit -> `TPL_03D`
-- Same as A but no Visual Effect -> `TPL_03E`
-- Same as B but no Visual effect -> `TPL_03F`(possibly identical to D but I've given up)
+**Things with secondary items** are usually `TPL_03x`:
+- `03A` -> Steam w/ Tender
+- `03B` -> Items w/ 2 engine animation states
+- `03C` -> Same as B but different 'purhchase' position (2nd item will flip/reverse)
+- `03D` -> Non-animated articulated engines (2nd item will flip/reverse)
+- `03E` -> Same as A but no Visual Effect
+- `03F` -> Asymmetrical single-unit engines NOT A/B, Single NOT articulated (2nd item will flip/reverse)
+- `03G` -> Same as A but 12 length
 
 For **Wagons**, it's a little chaotic because there are 'simple' (`TPL_01F`) ones with no loading states, then ones with liveries (`TPL_04A`) + loading states (`TPL_04B`) and ones _with liveries + loading states + different sprites per cargo type_
 
@@ -50,7 +51,11 @@ Basically don't create new types of Wagons. At the moment Gen 6/7 use G5 graphic
 **Coaches** are `TPL_04A`, with or without push-pull - Unless you want loading states like the Indian whichever coach that has people hanging on it when full - that's `TPL_04B`. If you are using a simple wagon with no alternatives (like dining coach, first class, that sorta stuff) it's `TPL_04U`, also supports push-pull.
 
 Vehicles with **12 length** use `TPL_016`.
-Vehicles with **10 length** use `TPL_032` - use `A` for no animation and `B` for with animation. `C` is the same as `B` but has `length` added to the visualisation switch.
+Vehicles with **10 length** use `TPL_032` 
+- `32A` for no animation (articulated) and 
+- `32B` for with animation. 
+- `32C` is the same as `B` but has `length` added to the visualisation switch. 
+- `32D` is same as A but no articulation
 
 Things with **front and back but no livery or loading states** use `TPL_017A`.
 
@@ -59,7 +64,10 @@ Things with **front and back but no livery or loading states** use `TPL_017A`.
 - For **Front 1, Front 2, Middle 1, Middle 2, Back 1, Back 2** it's `TPL_017D`.
 - For **Front 1, Front 2, Back 1, Back 2** it's `TPL_017E`.
 
-**CargoDMU** is `TPL_042A` - that's the only vehicle there.
+`TPL_042` are for special vehicles
+- `042A`: CargoDMU
+- `042B`: M250 CargoEMU
+- `042C`: DD CargoEMU
 
 I'd suggest not producing more of them though, it's a little too complex.
 

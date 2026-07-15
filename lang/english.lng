@@ -2,7 +2,7 @@
 
 # Hardcoded Strings
 STR_GRF_NAME                                                      :{TITLE}
-STR_GRF_DESCRIPTION                                               :{SILVER}2cc Trains of the World in NML {}{}(c)2ccts Revival {}License GPLv2 or higher. {}See readme for details.{}{SILVER}Build: 2026-07-09-17:11:34
+STR_GRF_DESCRIPTION                                               :{SILVER}2cc Trains of the World in NML {}{}(c)2ccts Revival {}License GPLv2 or higher. {}See readme for details.{}{SILVER}Build: 2026-07-15-08:29:59
 STR_GRF_URL                                                       :https://github.com/nemethviktor/2ccts_revival
 STR_USED_WITH_DYNAMIC_ENGINES                                     :dynamic_engines = true (setting in openttd.cfg)
 STR_ERROR_REGION                                                  :No regions enabled, {STRING} has been disabled
@@ -755,9 +755,9 @@ str_diesel_ee_dick__kerr___co_vulcan_foundry_de2                  :EE/Dick, Kerr
 str_diesel_ingeteam_td2000_series                                 :Ingeteam TD2000 series (Diesel)
 str_diesel_tulloch_0_6_0dm_w_class                                :Tulloch 0-6-0DM 'W' Class (Diesel)
 str_diesel_ge_es58aci                                             :GE ES58ACi (Diesel)
-str_diesel_ltz_te10m                                              :LTZ TE10M (Diesel)
-str_diesel_ltz_te126                                              :LTZ TE126 (Diesel)
-str_diesel_ltz_te10ut                                             :LTZ TE10Ut (Diesel)
+str_diesel_ltz_te10m                                              :LTZ 2TE10M (Diesel)
+str_diesel_ltz_te126                                              :LTZ 2TE126 (Diesel)
+str_diesel_ltz_te10ut                                             :LTZ 2TE10Ut (Diesel)
 
 # Dieselrailbus
 str_rbd_aec_railmotor_rm1                                         :AEC railmotor RM1 (Diesel Railbus)
