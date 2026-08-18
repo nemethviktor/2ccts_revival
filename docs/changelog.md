@@ -1,10 +1,11 @@
 # 2cc TrainsInNML (Revival) changelog
 
-## 3.3
+## 4.0
 
-### 3.3 [20260xxx]
+### 4.0 [20260xxx]
 - CODE CHANGES:
-  - TBA
+  - Removed railbus coupling rules
+  - Updated AI rules relating to special flags esp wrt railbuses.
 - VEHICLES CHANGES:
   - Adds:
     - `Faur A20D-P` + Trailer
@@ -16,7 +17,7 @@
 
 
 
-### 3.3 RC4 [20260715]
+### 4.0 RC4 [20260715]
 
 - CODE CHANGES:
   - Template `TPL_17B` should not have been marked as articulated #8
@@ -103,7 +104,7 @@
     - `CNR 2500 GE C44-9W 'Dash 9'`
     - `EMD GP40`
   
-### 3.3 RC3 [20260513]
+### 4.0 RC3 [20260513]
 
 - CODE CHANGES:
   - Added the track types to the vehicle info export
@@ -261,7 +262,7 @@
     - `NZR 50ft Mail Coach`
     - `KA Type Tram Car`
 
-### 3.3-RC2 [20260427]
+### 4.0-RC2 [20260427]
 
 - CODE CHANGES:
   - Changed some of the flag creation logic. There should be fewer animated-looking flags now
@@ -278,7 +279,7 @@
   - Added `Mozambique Railways No. 101 to 104` (Steam) using modified `4-4-0 'American'` graphics and different/relevant specs
   - Added `Haine-Saint-Pierre Golwé` (Steam) - it's a bit of a mix of graphics, don't complain. It seems to work.
   - Added `Ghana Rwy Corp Class TT12` (Diesel) using the `EMD G22W` somewhat modified graphics, again, don't complain, do a better one if you can. Otherwise works.
-  - Undid the "powered requiring electricity" logic introduced in 3.3 RC1
+  - Undid the "powered requiring electricity" logic introduced in 4.0 RC1
   - Added `Alsthom BB-BB` (Diesel) using modified `Alsthom AD30B` graphics.
   - Added `Sorefame DE8` (Diesel) also using modified `Alsthom AD30B` graphics.
   - Added `GMD GT22LC-2` (Diesel) using modified `Korail 6000 EMD SD18` graphics.
@@ -290,7 +291,7 @@
   - Added `MAV Class V63` using an obscure mix of `V43` and `FF1` as template and then a lot of tweaks.
   - Checked all the lengths for every vehicle and amended many. That said some DMU/EMUs are still a pixel off but I didn't change all.
 
-### 3.3-RC1 [20260412]
+### 4.0-RC1 [20260412]
 
 - CODE CHANGES:
   - Added template `TPL_03G` (12-len steam w tender)
@@ -303,7 +304,7 @@
   - Re-validated all the vehicles in the set. In practice this means that when I was able to find a Wikipedia article, I took information from there, otherwise I asked Gemini (yes I use AI, such is life.). In some cases, espc wrt TE/Coefficient in steam powered vehicles, as well as the weight of them may not fully line up with the old values; this partially has to do with the fact that I think originally the loco weights were loco-only whereas now they are loco+tender where applicable. I also reworked the pax capacity where applicable. The speeds of steam engines have been oftentimes reduced from top speeds to sustainable service speeds with some extra overhead so that they don't feel too slow either (in fact some have been increased because they had been defined as slow as 15kmh [10mph], which was useless as well as unlikely).
     - For **metros and xMUs** the following logic now applies: in Excel the TE-C has been halved. If taking a real life example of the `Moscow 81-720` the legacy set had `0.69` TE-C, from which the game calculated a TE of some `440kN` or so, which is unrealistic, even if we use powered cars. Half of that is realistic though.
 
-### 3.3-beta2 [20260403]
+### 4.0-beta2 [20260403]
 
 - CODE CHANGES:
   - Badges! #1 -- need testing ofc but tentatively works.
@@ -336,7 +337,7 @@
     - The SAR ES has a power of 1202hp not 1200hp, and a tractive effort coefficient of 0.11 not 0.26.
     - The CSAR railmotor has a weight of 48t not 35t and a tractive effort coefficient of 0.08 not 0.33.
 
-### 3.3-beta1 [20260401]
+### 4.0-beta1 [20260401]
 
 - CODE CHANGES:
   - Automated English Language file creation
@@ -345,7 +346,7 @@
   - Chile_EFE_XTrapolis_100 -> Modified to 1500V voltage, was None, incorrectly.
   - Corrected a number of wrong string values for voltage categorisation (ref above automation)
 
-### 3.3-alpha1 [20260327]
+### 4.0-alpha1 [20260327]
 
 - CODE CHANGES:
   - Added a py script to export all vehicle info on `gcc` running. Moved away from `make`.
@@ -358,7 +359,7 @@
   - Reiterating from above, separated out the various railtypes and voltages.
   - Turned the visual for DMUs to _DIESEL_ (was _DISABLE_)
 
-### 3.3-alpha0 [20260316]
+### 4.0-alpha0 [20260316]
 
 - CODE CHANGES:
   - Cloned to new GitHub location

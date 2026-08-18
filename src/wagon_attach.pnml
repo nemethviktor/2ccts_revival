@@ -16,6 +16,20 @@ switch(FEAT_TRAINS, PARENT, switch_attach_to_traditional, [STORE_TEMP(position_i
 	ID_RANGE_MAGLEV: 					CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
 	ID_RANGE_COACHES:          			CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
     ID_RANGE_WAGONS:           			CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
+	ID_RANGE_RBS:                       CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
+    ID_RANGE_RBD:                       CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
+    ID_RANGE_RBE:                       CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
+    ID_RANGE_RBM:                       CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
+
+    CB_RESULT_ATTACH_DISALLOW; 
+}
+
+/// Filter for what can attach behind passenger Railbuses
+switch(FEAT_TRAINS, PARENT, switch_attach_to_railbuses, [STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
+    ID_RANGE_RBS:                       CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
+    ID_RANGE_RBD:                       CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
+    ID_RANGE_RBE:                       CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
+    ID_RANGE_RBM:                       CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
 
     CB_RESULT_ATTACH_DISALLOW; 
 }
@@ -98,10 +112,10 @@ switch(FEAT_TRAINS, SELF, switch_can_attach_vehicle, vehicle_type_id) {
     ID_RANGE_UNIT_WAGONS_RAIL_CARGO: switch_attach_to_cargo_mu;
 
     // Direct Locomotive Stacking Rules (If dropping a standalone engine onto another engine)
-    ID_RANGE_RBS:         CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
-    ID_RANGE_RBD:         CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
-    ID_RANGE_RBE:         CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
-    ID_RANGE_RBM:         CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
+    ID_RANGE_RBS:         switch_attach_to_railbuses;
+    ID_RANGE_RBD:         switch_attach_to_railbuses;
+    ID_RANGE_RBE:         switch_attach_to_railbuses;
+    ID_RANGE_RBM:         switch_attach_to_railbuses;
     ID_RANGE_SINGLEMETRO: CB_RESULT_ATTACH_ALLOW_IF_RAILTYPES;
 
     // Default fallback

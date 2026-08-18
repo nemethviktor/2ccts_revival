@@ -656,6 +656,8 @@ def generate_unified_items():
 
         RUNNING_COST_BASE = f"RUNNING_COST_{'ELECTRIC' if row['ENGINE_CLASS'] == 'MAGLEV' else row['ENGINE_CLASS']}"
 
+        VEHID_CATEGORY = row["VEHID_ID_CATEGORY"].replace("ID_RANGE_", "")
+
         # Fetch Multipliers
         category = str(row["COST_CAT"]).strip()
         m = df_cost_lookup.loc[category]
@@ -869,8 +871,7 @@ def generate_unified_items():
         # We need to port some of the random crap from _graphics here else it won't work because we are no longer defining HEAD_CAPACITY as a generic thing.
         if (
             category in ["DMU", "EMU", "WAGON", "MMU"]
-            and row["VEHID_ID_CATEGORY"]
-            not in ["ID_RANGE_CARGOEMU", "ID_RANGE_CARGODMU"]
+            and VEHID_CATEGORY not in ["CARGOEMU", "CARGODMU"]
         ) or category.endswith("RAILBUS"):
             content.append("// Cargo capacity" + "\n")
             content.append(get_expanded_engine_capacity_switch(row))
@@ -927,7 +928,25 @@ def generate_unified_items():
                 f"        extra_flags: bitmask(VEHICLE_FLAG_TRAIN_HAS_CAB);\n"
             )
         content.append(f"        refit_cost: {REFIT_COST};\n")
-        content.append(f"        ai_special_flag: AI_FLAG_PASSENGER | AI_FLAG_CARGO;\n")
+        ai_special_flag = "AI_FLAG_PASSENGER | AI_FLAG_CARGO"
+        if VEHID_CATEGORY in (
+            [
+                "RBS",
+                "RBD",
+                "RBE",
+                "RBM",
+                "DMU",
+                "EMU",
+                "MULTIMETRO",
+                "SINGLEMETRO",
+                "MMU",
+            ]
+        ):
+            ai_special_flag = "AI_FLAG_PASSENGER"
+        elif VEHID_CATEGORY in (["CARGODMU", "CARGOEMU"]):
+            ai_special_flag = "AI_FLAG_CARGO"
+
+        content.append(f"        ai_special_flag: " + ai_special_flag + ";\n")
         content.append(f"        track_type: {track_logic};\n")
         content.append(f"        running_cost_base: {RUNNING_COST_BASE};\n")
         content.append(
@@ -970,8 +989,7 @@ def generate_unified_items():
             content.append(f"        {purchasetext}MUWAGON{cargodef}{powered_state}\n")
         elif (
             category in ["DMU", "EMU", "WAGON", "MMU"]
-            and row["VEHID_ID_CATEGORY"]
-            not in ["ID_RANGE_CARGODMU", "ID_RANGE_CARGOEMU"]
+            and VEHID_CATEGORY not in ["CARGODMU", "CARGOEMU"]
         ) or category.endswith("RAILBUS"):
             if not cargo_capacity_defined:
                 content.append(

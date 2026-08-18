@@ -50,7 +50,7 @@ item(FEAT_TRAINS, item_rbe_ferrocarril_de_soller_1_3) {
         cargo_age_period: 185;
         misc_flags: bitmask(TRAIN_FLAG_2CC);
         refit_cost: 0;
-        ai_special_flag: AI_FLAG_PASSENGER | AI_FLAG_CARGO;
+        ai_special_flag: AI_FLAG_PASSENGER;
         track_type: [NARROW_GAUGE_RAILTYPE_1500V];
         running_cost_base: RUNNING_COST_ELECTRIC;
         engine_class: ENGINE_CLASS_ELECTRIC;
