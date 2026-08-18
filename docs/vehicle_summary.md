@@ -66,6 +66,7 @@
 | ![UIC-X Mail Coach](vehicle_graphics/str_mu_coach_gen3_uic_x_mail_coach.png) | UIC-X Mail Coach | 1950 | 160 / 99 | 0 / 0 | Coach (Mail) | 120 | STANDARD_NONE, NARROW_NONE, BROAD_NONE | Africa, Asia, Northern Europe, Eastern Europe, Western Europe, Southern Europe | No |
 | ![UIC-X Regional Coach](vehicle_graphics/str_mu_coach_gen3_uic_x_regional_coach.png) | UIC-X Regional Coach | 1950 | 140 / 86 | 0 / 0 | Coach (Commuter) | 175 | STANDARD_NONE, NARROW_NONE, BROAD_NONE | Africa, Asia, Northern Europe, Eastern Europe, Western Europe, Southern Europe | No |
 | ![Goerlitz Articulated Double Decker Coach](vehicle_graphics/str_mu_coach_gen3_goerlitz_doppelstockwagen_articulated_coach.png) | Goerlitz Articulated Double Decker Coach | 1952 | 120 / 74 | 0 / 0 | Coach (Commuter) | 231 | STANDARD_NONE, NARROW_NONE, BROAD_NONE | Africa, Asia, Northern Europe, Eastern Europe, Western Europe, Southern Europe | No |
+| ![Pafawag 3Aw](vehicle_graphics/str_mu_coach_gen3_pafawag_3aw.png) | Pafawag 3Aw | 1954 | 60 / 37 | 0 / 0 | Coach (Commuter) | 39 | NARROW_NONE | Asia, Eastern Europe | No |
 | !['Silberling' Commuter Coach](vehicle_graphics/str_mu_coach_gen4_silberling_commuter_coach.png) | 'Silberling' Commuter Coach | 1960 | 140 / 86 | 0 / 0 | Coach (Commuter) | 190 | STANDARD_NONE, NARROW_NONE, BROAD_NONE | Africa, Asia, Northern Europe, Eastern Europe, Western Europe, Southern Europe | No |
 | ![Russian Intercity Sleeper Coach](vehicle_graphics/str_mu_coach_gen4_russian_intercity_coach.png) | Russian Intercity Sleeper Coach | 1960 | 120 / 74 | 0 / 0 | Coach (Commuter) | 54 | BROAD_NONE | Asia, Northern Europe, Eastern Europe, Western Europe, Southern Europe | No |
 | ![Russian Mail Coach](vehicle_graphics/str_mu_coach_gen4_russian_mail_coach.png) | Russian Mail Coach | 1960 | 160 / 99 | 0 / 0 | Coach (Mail) | 150 | BROAD_NONE | Asia, Northern Europe, Eastern Europe, Western Europe, Southern Europe | No |
@@ -93,6 +94,7 @@
 | ![Comeng High Speed Mail Coach](vehicle_graphics/str_mu_coach_gen3_comeng_high_speed_mail_coach.png) | Comeng High Speed Mail Coach | 1981 | 160 / 99 | 0 / 0 | Coach (Mail) | 91 | STANDARD_NONE, BROAD_NONE | Oceania | No |
 | ![Comeng SA2000 SDD Concept](vehicle_graphics/str_mu_coach_gen4_comeng_suburban_double_deck_sa2000.png) | Comeng SA2000 SDD Concept | 1984 | 115 / 71 | 0 / 0 | Coach (Commuter) | 170 | BROAD_NONE | Oceania | Yes |
 | ![Comeng-M&K H-Type Suburban Coach](vehicle_graphics/str_mu_coach_gen4_comeng_htype_suburban_coach.png) | Comeng-M&K H-Type Suburban Coach | 1984 | 115 / 71 | 0 / 0 | Coach (Commuter) | 114 | STANDARD_NONE, BROAD_NONE | Oceania | No |
+| ![Faur A20D-P Trailer](vehicle_graphics/str_mu_coach_gen4_faur_ad20dp_trailer.png) | Faur A20D-P Trailer | 1984 | 60 / 37 | 0 / 0 | Coach (Commuter) | 45 | NARROW_NONE | Eastern Europe | No |
 | ![Tangara V-Set Hybrid Coach Concept](vehicle_graphics/str_mu_coach_gen4_gonian_tangara_concept.png) | Tangara V-Set Hybrid Coach Concept | 1989 | 115 / 71 | 0 / 0 | Coach (Commuter) | 173 | STANDARD_NONE | Oceania | Yes |
 | ![Superliner California](vehicle_graphics/str_mu_coach_gen4_superliner_california.png) | Superliner California | 1990 | 160 / 99 | 0 / 0 | Coach (Express) | 94 | STANDARD_NONE, NARROW_NONE, BROAD_NONE | North America, South America, Oceania | No |
 | ![Melbourne/Goninan 4D Coach Concept](vehicle_graphics/str_mu_coach_gen4_gonian_4d_concept.png) | Melbourne/Goninan 4D Coach Concept | 1992 | 115 / 71 | 0 / 0 | Coach (Commuter) | 175 | STANDARD_NONE, BROAD_NONE | Oceania | Yes |
@@ -194,6 +196,7 @@
 | ![BR 14 0-6-0DH](vehicle_graphics/str_diesel_br_14_0_6_0dh.png) | BR 14 0-6-0DH | 1964 | 64 / 39 | 650 / 484 | Light Freight | 0 | STANDARD_NONE | Northern Europe | No |
 | ![CKD T-669](vehicle_graphics/str_diesel_ckd_t_669.png) | CKD T-669 | 1964 | 95 / 59 | 1250 / 932 | Light Freight | 0 | STANDARD_NONE, BROAD_NONE | Asia, Northern Europe, Eastern Europe | No |
 | ![Fablok 6D](vehicle_graphics/str_diesel_fablok_6d.png) | Fablok 6D | 1964 | 90 / 55 | 800 / 596 | Light Freight | 0 | STANDARD_NONE | Africa, Eastern Europe | No |
+| ![Faur L45H](vehicle_graphics/str_diesel_faur_l45h.png) | Faur L45H | 1964 | 40 / 24 | 450 / 335 | Shunting | 0 | NARROW_NONE | Africa, Asia, Eastern Europe, Western Europe | No |
 | ![LTZ TEP10L](vehicle_graphics/str_diesel_ltz_tep10l.png) | LTZ TEP10L | 1964 | 140 / 86 | 2290 / 1707 | Universal | 0 | BROAD_NONE | Asia, Eastern Europe | No |
 | ![ALCO RSD-39](vehicle_graphics/str_diesel_alco_rsd_39.png) | ALCO RSD-39 | 1965 | 120 / 74 | 1350 / 1006 | Universal | 0 | STANDARD_NONE, NARROW_NONE, BROAD_NONE | South America, Southern Europe | No |
 | ![Alsthom CC 200](vehicle_graphics/str_diesel_sorefame_de8.png) | Alsthom CC 200 | 1965 | 100 / 62 | 2321 / 1730 | Express | 0 | NARROW_NONE | Africa | No |
@@ -216,6 +219,7 @@
 | ![EMD/Clyde GL26C](vehicle_graphics/str_diesel_emd_clyde_gl26c.png) | EMD/Clyde GL26C | 1970 | 80 / 49 | 2000 / 1491 | Universal | 0 | NARROW_NONE | Oceania | No |
 | ![HCP 301D](vehicle_graphics/str_diesel_hcp_301d.png) | HCP 301D | 1970 | 120 / 74 | 1750 / 1304 | Universal | 0 | STANDARD_NONE | Africa, Eastern Europe | No |
 | ![Fiat Grandi Motori D.345](vehicle_graphics/str_diesel_fiat_grandi_motori_d_345.png) | Fiat Grandi Motori D.345 | 1971 | 130 / 80 | 1010 / 753 | Universal | 0 | STANDARD_NONE | Southern Europe | No |
+| ![KMZ TU7/TGM40](vehicle_graphics/str_diesel_kmz_tu7_tgm40.png) | KMZ TU7/TGM40 | 1971 | 40 / 24 | 400 / 298 | Shunting | 0 | STANDARD_NONE, NARROW_NONE, BROAD_NONE | Asia, Northern Europe, Eastern Europe, Western Europe, Southern Europe | No |
 | ![EMD F40PH](vehicle_graphics/str_diesel_emd_f40ph.png) | EMD F40PH | 1972 | 165 / 102 | 3000 / 2236 | Express | 0 | STANDARD_NONE | North America, South America | No |
 | ![EMD G26](vehicle_graphics/str_diesel_emd_g26.png) | EMD G26 | 1972 | 124 / 77 | 2200 / 1640 | Universal | 0 | STANDARD_NONE, NARROW_NONE | Africa, Asia, Eastern Europe, Oceania | No |
 | ![EMD/NOHAB J30C-2DSB MZ III](vehicle_graphics/str_diesel_emd_nohab_j30c_2dsb_mz_iii.png) | EMD/NOHAB J30C-2DSB MZ III | 1972 | 165 / 102 | 3845 / 2866 | Express | 0 | STANDARD_NONE | Northern Europe, Oceania | No |
@@ -244,6 +248,7 @@
 | ![CRRC Dalian DF4](vehicle_graphics/str_diesel_crrc_dalian_df4.png) | CRRC Dalian DF4 | 1984 | 120 / 74 | 3550 / 2646 | Freight | 0 | STANDARD_NONE | Asia | No |
 | ![EMD/Clyde JT26C-2SS](vehicle_graphics/str_diesel_emd_clyde_jt26c_2ss.png) | EMD/Clyde JT26C-2SS | 1984 | 114 / 70 | 3000 / 2236 | Freight | 0 | STANDARD_NONE | Oceania | No |
 | ![EMD/Clyde JT26C-2SS V-line G](vehicle_graphics/str_diesel_emd_clyde_jt26c_2ss_v_line_g.png) | EMD/Clyde JT26C-2SS V-line G | 1984 | 115 / 71 | 3000 / 2236 | Freight | 0 | STANDARD_NONE | Oceania | No |
+| ![Faur A20D-P](vehicle_graphics/str_diesel_faur_a20dp.png) | Faur A20D-P | 1984 | 60 / 37 | 189 / 140 | Commuter/Urban | 39 | NARROW_NONE | Eastern Europe | No |
 | ![GE C39-8](vehicle_graphics/str_diesel_ge_c39_8__fcca_.png) | GE C39-8 | 1984 | 110 / 68 | 3900 / 2907 | Heavy Freight | 0 | STANDARD_NONE | North America, South America | No |
 | ![Qishuyan DF8](vehicle_graphics/str_diesel_qishuyan_df8.png) | Qishuyan DF8 | 1984 | 100 / 62 | 4930 / 3675 | Heavy Freight | 0 | STANDARD_NONE | Asia | No |
 | ![UGOFE GM-EMD J16CW/AC](vehicle_graphics/str_diesel_ugofe_gm_emd_j16cw_ac.png) | UGOFE GM-EMD J16CW/AC | 1984 | 120 / 74 | 1870 / 1394 | Universal | 0 | BROAD_NONE | South America | No |
@@ -482,6 +487,7 @@
 | ![SLM/BBC/MFO Ge 4/4 I](vehicle_graphics/str_electric_slm_bbc_mfo_ge_4_4_i.png) | SLM/BBC/MFO Ge 4/4 I | 1947 | 80 / 49 | 1590 / 1185 | Light Freight | 0 | NARROW_1500V | Western Europe | No |
 | ![Alsthom BB 8100](vehicle_graphics/str_electric_alsthom_e_700.png) | Alsthom BB 8100 | 1948 | 80 / 49 | 1710 / 1274 | Light Freight | 0 | STANDARD_3KV, STANDARD_1500V | Africa, Western Europe | No |
 | ![GE EL-2B](vehicle_graphics/str_electric_ge_el_2b.png) | GE EL-2B | 1948 | 80 / 49 | 6800 / 5070 | Heavy Freight | 0 | STANDARD_15KV | North America | No |
+| ![Alsthom CC 7100](vehicle_graphics/str_electric_alsthom_cc_7100.png) | Alsthom CC 7100 | 1952 | 130 / 80 | 4680 / 3489 | Freight | 0 | STANDARD_3KV, STANDARD_1500V, BROAD_3KV, BROAD_1500V | Africa, Western Europe, Southern Europe | No |
 | ![GEC/NBLC SAR 4E ](vehicle_graphics/str_electric_gec_nblc_sar_4e_.png) | GEC/NBLC SAR 4E  | 1952 | 97 / 60 | 2520 / 1878 | Heavy Freight | 0 | NARROW_3KV | Africa | No |
 | ![LEW EL2](vehicle_graphics/str_electric_lew_el2.png) | LEW EL2 | 1952 | 65 / 40 | 1790 / 1334 | Light Freight | 0 | STANDARD_3KV, STANDARD_1500V, BROAD_3KV, BROAD_1500V | Asia, Eastern Europe | No |
 | ![ASEA Dm3](vehicle_graphics/str_electric_asea_dm3.png) | ASEA Dm3 | 1953 | 75 / 46 | 9700 / 7232 | Heavy Freight | 0 | STANDARD_15KV | Northern Europe | No |
@@ -493,6 +499,7 @@
 | ![Alsthom CP 2500](vehicle_graphics/str_electric_alsthom_cp_2500.png) | Alsthom CP 2500 | 1956 | 120 / 74 | 2790 / 2080 | Freight | 0 | BROAD_25KV | Southern Europe | No |
 | ![Metrowick/BP 786](vehicle_graphics/str_electric_metrowick_bp_786.png) | Metrowick/BP 786 | 1956 | 113 / 70 | 3400 / 2535 | Freight | 0 | STANDARD_25KV | Oceania | Yes |
 | ![Vulcan Foundry-EE EM/1](vehicle_graphics/str_electric_vulcan_foundry_ee_em_1.png) | Vulcan Foundry-EE EM/1 | 1958 | 104 / 64 | 3700 / 2758 | Freight | 0 | BROAD_1500V | Asia | No |
+| ![Alsthom F Series](vehicle_graphics/str_electric_alsthom_f_series.png) | Alsthom F Series | 1959 | 160 / 99 | 6356 / 4739 | Express | 0 | STANDARD_25KV, BROAD_25KV | Asia, Eastern Europe | No |
 | ![BN/ACEC 25.5](vehicle_graphics/str_electric_bn_acec_25_5.png) | BN/ACEC 25.5 | 1960 | 130 / 80 | 2520 / 1878 | Freight | 0 | STANDARD_3KV, STANDARD_1500V | Western Europe | No |
 | ![GE E44](vehicle_graphics/str_electric_ge_e44.png) | GE E44 | 1960 | 113 / 70 | 4400 / 3280 | Heavy Freight | 0 | STANDARD_15KV | North America | No |
 | ![Groupement 50 Hz WAM 1](vehicle_graphics/str_electric_groupement_50_hz_wam_1.png) | Groupement 50 Hz WAM 1 | 1960 | 112 / 69 | 3010 / 2244 | Freight | 0 | BROAD_25KV | Asia | No |

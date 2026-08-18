@@ -254,6 +254,9 @@
 #include "src/Coaches/Gen3/Coach_Gen3_PRR_P70_Bilevel_Coach_graphics.pnml"
 #include "src/Coaches/Gen3/Coach_Gen3_PRR_P70_Bilevel_Coach_item.pnml"
 
+#include "src/Coaches/Gen3/Coach_Gen3_Pafawag_3Aw_graphics.pnml"
+#include "src/Coaches/Gen3/Coach_Gen3_Pafawag_3Aw_item.pnml"
+
 
 //// COACHES - GEN4
 #include "src/Coaches/Gen4/Coach_Gen4_Doppelstockwagen_Local_Coach_graphics.pnml"
@@ -327,6 +330,9 @@
 
 #include "src/Coaches/Gen4/Coach_Gen4_Comeng_HType_Suburban_Coach_graphics.pnml"
 #include "src/Coaches/Gen4/Coach_Gen4_Comeng_HType_Suburban_Coach_item.pnml"
+
+#include "src/Coaches/Gen4/Coach_Gen4_Faur_AD20DP_Trailer_graphics.pnml"
+#include "src/Coaches/Gen4/Coach_Gen4_Faur_AD20DP_Trailer_item.pnml"
 
 
 //// COACHES - GEN5
@@ -1136,6 +1142,15 @@
 #include "src/Diesel/LTZ_TE10Ut_graphics.pnml"
 #include "src/Diesel/LTZ_TE10Ut_item.pnml"
 
+#include "src/Diesel/Faur_A20DP_graphics.pnml"
+#include "src/Diesel/Faur_A20DP_item.pnml"
+
+#include "src/Diesel/Faur_L45H_graphics.pnml"
+#include "src/Diesel/Faur_L45H_item.pnml"
+
+#include "src/Diesel/KMZ_TU7_TGM40_graphics.pnml"
+#include "src/Diesel/KMZ_TU7_TGM40_item.pnml"
+
 
 //// EMU
 #include "src/EMU/Werkspoor_Mat24_graphics.pnml"
@@ -1919,6 +1934,12 @@
 
 #include "src/Electric/Altoona_Works_DD1_graphics.pnml"
 #include "src/Electric/Altoona_Works_DD1_item.pnml"
+
+#include "src/Electric/Alsthom_CC_7100_graphics.pnml"
+#include "src/Electric/Alsthom_CC_7100_item.pnml"
+
+#include "src/Electric/Alsthom_F_Series_graphics.pnml"
+#include "src/Electric/Alsthom_F_Series_item.pnml"
 
 #include "src/Electric/BRC_W_London_1903_Stock_graphics.pnml"
 #include "src/Electric/BRC_W_London_1903_Stock_item.pnml"

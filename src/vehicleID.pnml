@@ -2724,9 +2724,9 @@ item(FEAT_TRAINS, item_diesel_ge_es58aci, 5201) {}
 item(FEAT_TRAINS, item_diesel_ltz_te10m, 5202) {}
 item(FEAT_TRAINS, item_diesel_ltz_te126, 5203) {}
 item(FEAT_TRAINS, item_diesel_ltz_te10ut, 5204) {}
-// 5205 free
-// 5206 free
-// 5207 free
+item(FEAT_TRAINS, item_diesel_faur_a20dp, 5205) {}
+item(FEAT_TRAINS, item_diesel_faur_l45h, 5206) {}
+item(FEAT_TRAINS, item_diesel_kmz_tu7_tgm40, 5207) {}
 // 5208 free
 // 5209 free
 // 5210 free
@@ -3694,8 +3694,8 @@ item(FEAT_TRAINS, item_electric_chesta_casagrande_e650, 6168) {}
 item(FEAT_TRAINS, item_electric_breda_marelli_e32, 6169) {}
 item(FEAT_TRAINS, item_electric_alco_ge_t_motor, 6170) {}
 item(FEAT_TRAINS, item_electric_altoona_works_dd1, 6171) {}
-// 6172 free
-// 6173 free
+item(FEAT_TRAINS, item_electric_alsthom_cc_7100, 6172) {}
+item(FEAT_TRAINS, item_electric_alsthom_f_series, 6173) {}
 // 6174 free
 // 6175 free
 // 6176 free
@@ -8142,8 +8142,8 @@ item(FEAT_TRAINS, item_mu_coach_gen3_goerlitz_doppelstockwagen_articulated_coach
 item(FEAT_TRAINS, item_mu_coach_gen2_prr_mp54_commuter_coach, 11102) {}
 item(FEAT_TRAINS, item_mu_coach_gen2_prr_mp54_mail_coach, 11103) {}
 item(FEAT_TRAINS, item_mu_coach_gen3_prr_p70_bilevel_coach, 11104) {}
-// 11105 free
-// 11106 free
+item(FEAT_TRAINS, item_mu_coach_gen4_faur_ad20dp_trailer, 11105) {}
+item(FEAT_TRAINS, item_mu_coach_gen3_pafawag_3aw, 11106) {}
 // 11107 free
 // 11108 free
 // 11109 free

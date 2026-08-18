@@ -3,6 +3,20 @@
 ## 3.3
 
 ### 3.3 [20260xxx]
+- CODE CHANGES:
+  - TBA
+- VEHICLES CHANGES:
+  - Adds:
+    - `Faur A20D-P` + Trailer
+    - 'Pafawag 3Aw'
+    - 'Faur L45H'
+    - 'KMZ TU7/TGM40'
+    - 'Alsthom CC 7100'
+    - 'Alsthom F Series'
+
+
+
+### 3.3 RC4 [20260715]
 
 - CODE CHANGES:
   - Template `TPL_17B` should not have been marked as articulated #8

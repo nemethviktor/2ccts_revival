@@ -7,6 +7,155 @@ The automated process tags the Template ID onto each pnml file just under the co
 
 The obviously chaotic naming logic is a derivative of attempt to categorise existing legacy images into templates and then ending up with 40+ of them and then grouping the vaguely similar ones.
 
+Here's a flowchart attempt (cue Gemini) if that helps, else try to make sense of the text below.
+
+
+
+```mermaid
+flowchart TD
+    Start["What kind of vehicle is it?"]
+    
+    EngineType{"Engine Type?"}
+    TPL_01A["TPL_01A"]
+    TPL_03B["TPL_03B"]
+    TPL_03A["TPL_03A"]
+    TPL_03E["TPL_03E"]
+    TPL_03G["TPL_03G"]
+    TPL_03C["TPL_03C"]
+    TPL_03D["TPL_03D"]
+    TPL_03F["TPL_03F"]
+    EngNoAnim{"Dual-Headed?"}
+    SteamType{"Steam Details?"}
+    SecType{"Secondary Config?"}
+
+    MuType{"MU or Metro?"}
+    TPL_02C["TPL_02C"]
+    xMuType{"xMU Config?"}
+    TPL_02A["TPL_02A"]
+    TPL_02D["TPL_02D"]
+
+    WagonType{"Wagon Subtype?"}
+    TPL_01F["TPL_01F"]
+    TPL_25["TPL_25"]
+    TPL_04R["TPL_04R"]
+    TPL_04T["TPL_04T"]
+    CargoWagon{"Specific Cargo or Gen?"}
+    TPL_04C["TPL_04C"]
+    TPL_04D["TPL_04D"]
+    TPL_04E["TPL_04E"]
+    TPL_04F["TPL_04F"]
+    TPL_04G["TPL_04G"]
+    TPL_04H["TPL_04H"]
+    TPL_04I["TPL_04I"]
+    TPL_04J["TPL_04J"]
+    TPL_04K["TPL_04K"]
+    TPL_04L["TPL_04L"]
+    TPL_04M["TPL_04M"]
+    TPL_04N["TPL_04N"]
+    TPL_04O["TPL_04O"]
+    TPL_04P["TPL_04P"]
+    TPL_04Q["TPL_04Q"]
+
+    CoachType{"Coach Setup?"}
+    TPL_04U["TPL_04U"]
+    TPL_04A["TPL_04A"]
+    TPL_04B["TPL_04B"]
+
+    LenType{"Length?"}
+    TPL_016["TPL_016"]
+    Len10Type{"10 Length Config?"}
+    TPL_32A["TPL_32A"]
+    TPL_32D["TPL_32D"]
+    TPL_32B["TPL_32B"]
+    TPL_32C["TPL_32C"]
+    FbOnly["TPL_017A"]
+
+    MultiUnit{"Unit Configuration?"}
+    TPL_017B["TPL_017B"]
+    TPL_017C["TPL_017C"]
+    TPL_017D["TPL_017D"]
+    TPL_017E["TPL_017E"]
+
+    SpecialType{"Special Vehicle?"}
+    TPL_042A["TPL_042A"]
+    TPL_042B["TPL_042B"]
+    TPL_042C["TPL_042C"]
+
+    Start --> EngineType
+    Start --> MuType
+    Start --> WagonType
+    Start --> CoachType
+    Start --> LenType
+    Start --> FbOnly
+    Start --> SpecialType
+    Start --> MultiUnit
+
+    EngineType --> SteamType
+    EngineType --> EngNoAnim
+    EngineType --> SecType
+
+    EngNoAnim --> TPL_01A
+    EngNoAnim --> TPL_03B
+
+    SteamType --> TPL_03A
+    SteamType --> TPL_03E
+    SteamType --> TPL_03G
+
+    SecType --> TPL_03B
+    SecType --> TPL_03C
+    SecType --> TPL_03D
+    SecType --> TPL_03F
+
+    MuType --> TPL_02C
+    MuType --> xMuType
+    
+    xMuType --> TPL_02A
+    xMuType --> TPL_02D
+
+    WagonType --> TPL_01F
+    WagonType --> TPL_25
+    WagonType --> TPL_04R
+    WagonType --> TPL_04T
+    WagonType --> CargoWagon
+
+    CargoWagon --> TPL_04C
+    CargoWagon --> TPL_04D
+    CargoWagon --> TPL_04E
+    CargoWagon --> TPL_04F
+    CargoWagon --> TPL_04G
+    CargoWagon --> TPL_04H
+    CargoWagon --> TPL_04I
+    CargoWagon --> TPL_04J
+    CargoWagon --> TPL_04K
+    CargoWagon --> TPL_04L
+    CargoWagon --> TPL_04M
+    CargoWagon --> TPL_04N
+    CargoWagon --> TPL_04O
+    CargoWagon --> TPL_04P
+    CargoWagon --> TPL_04Q
+
+    CoachType --> TPL_04U
+    CoachType --> TPL_04A
+    CoachType --> TPL_04B
+
+    LenType --> TPL_016
+    LenType --> Len10Type
+    
+    Len10Type --> TPL_32A
+    Len10Type --> TPL_32D
+    Len10Type --> TPL_32B
+    Len10Type --> TPL_32C
+
+    MultiUnit --> TPL_017B
+    MultiUnit --> TPL_017C
+    MultiUnit --> TPL_017D
+    MultiUnit --> TPL_017E
+
+    SpecialType --> TPL_042A
+    SpecialType --> TPL_042B
+    SpecialType --> TPL_042C
+```
+
 Most **Engines** _exc Steam_ will fall into `TPL_01`, whichever version of it assuming there is no animation involved. I'd suggest using `TPL_01A`;
 If your design is dual-headed, still use that, don't move any of the boxes, for those -> `TPL_03B`. 
 
@@ -17,7 +166,7 @@ Most **Metros** will be `TPL_02C`.
 **Things with secondary items** are usually `TPL_03x`:
 - `03A` -> Steam w/ Tender
 - `03B` -> Items w/ 2 engine animation states
-- `03C` -> Same as B but different 'purhchase' position (2nd item will flip/reverse)
+- `03C` -> Same as B but different 'purchase' position (2nd item will flip/reverse)
 - `03D` -> Non-animated articulated engines (2nd item will flip/reverse)
 - `03E` -> Same as A but no Visual Effect
 - `03F` -> Asymmetrical single-unit engines NOT A/B, Single NOT articulated (2nd item will flip/reverse)

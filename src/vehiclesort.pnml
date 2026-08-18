@@ -323,6 +323,7 @@ item_diesel_br_14_0_6_0dh, /*Year: 1964*/ \
 item_diesel_ckd_t_669, /*Year: 1964*/ \
 item_diesel_ltz_tep10l, /*Year: 1964*/ \
 item_diesel_fablok_6d, /*Year: 1964*/ \
+item_diesel_faur_l45h, /*Year: 1964*/ \
 item_diesel_ltz_m62, /*Year: 1965*/ \
 item_diesel_alco_rsd_39, /*Year: 1965*/ \
 item_diesel_sorefame_de8, /*Year: 1965*/ \
@@ -344,6 +345,7 @@ item_diesel_alsthom_bb_bb_300, /*Year: 1970*/ \
 item_diesel_emd_clyde_at26c_twin_16_645, /*Year: 1970*/ \
 item_diesel_hcp_301d, /*Year: 1970*/ \
 item_diesel_fiat_grandi_motori_d_345, /*Year: 1971*/ \
+item_diesel_kmz_tu7_tgm40, /*Year: 1971*/ \
 item_diesel_emd_g26, /*Year: 1972*/ \
 item_diesel_henschel_tgoj_v4, /*Year: 1972*/ \
 item_diesel_emd_f40ph, /*Year: 1972*/ \
@@ -375,6 +377,7 @@ item_diesel_emd_clyde_jt26c_2ss, /*Year: 1984*/ \
 item_diesel_ge_c39_8__fcca_, /*Year: 1984*/ \
 item_diesel_emd_clyde_jt26c_2ss_v_line_g, /*Year: 1984*/ \
 item_diesel_crrc_dalian_df4, /*Year: 1984*/ \
+item_diesel_faur_a20dp, /*Year: 1984*/ \
 item_diesel_valmet_oy_dr16, /*Year: 1985*/ \
 item_diesel_faur_lde1300, /*Year: 1985*/ \
 item_diesel_emd_clyde_jt22hc_2, /*Year: 1985*/ \
@@ -483,6 +486,7 @@ item_electric_ge_el_2b, /*Year: 1948*/ \
 item_electric_alsthom_e_700, /*Year: 1948*/ \
 item_electric_gec_nblc_sar_4e_, /*Year: 1952*/ \
 item_electric_lew_el2, /*Year: 1952*/ \
+item_electric_alsthom_cc_7100, /*Year: 1952*/ \
 item_electric_asea_dm3, /*Year: 1953*/ \
 item_electric_metropolitan_vicerks_em2, /*Year: 1953*/ \
 item_electric_jeumont_schneider_bb_9004, /*Year: 1954*/ \
@@ -492,6 +496,7 @@ item_electric_slm_ae_6_6, /*Year: 1955*/ \
 item_electric_alsthom_cp_2500, /*Year: 1956*/ \
 item_electric_metrowick_bp_786, /*Year: 1956*/ \
 item_electric_vulcan_foundry_ee_em_1, /*Year: 1958*/ \
+item_electric_alsthom_f_series, /*Year: 1959*/ \
 item_electric_bn_acec_25_5, /*Year: 1960*/ \
 item_electric_ge_e44, /*Year: 1960*/ \
 item_electric_groupement_50_hz_wam_1, /*Year: 1960*/ \
@@ -891,6 +896,7 @@ item_mu_coach_gen3_indian_regional_coach, /*Year: 1950*/ \
 item_mu_coach_gen3_indian_mail_coach, /*Year: 1950*/ \
 item_mu_coach_gen3_steel_lightweight_commuter_coach, /*Year: 1950*/ \
 item_mu_coach_gen3_goerlitz_doppelstockwagen_articulated_coach, /*Year: 1952*/ \
+item_mu_coach_gen3_pafawag_3aw, /*Year: 1954*/ \
 item_mu_coach_gen4_silberling_commuter_coach, /*Year: 1960*/ \
 item_mu_coach_gen4_russian_intercity_coach, /*Year: 1960*/ \
 item_mu_coach_gen4_russian_regional_coach, /*Year: 1960*/ \
@@ -918,6 +924,7 @@ item_mu_coach_gen3_comeng_high_speed_coach, /*Year: 1981*/ \
 item_mu_coach_gen3_comeng_high_speed_mail_coach, /*Year: 1981*/ \
 item_mu_coach_gen4_comeng_suburban_double_deck_sa2000, /*Year: 1984*/ \
 item_mu_coach_gen4_comeng_htype_suburban_coach, /*Year: 1984*/ \
+item_mu_coach_gen4_faur_ad20dp_trailer, /*Year: 1984*/ \
 item_mu_coach_gen4_gonian_tangara_concept, /*Year: 1989*/ \
 item_mu_coach_gen4_superliner_california, /*Year: 1990*/ \
 item_mu_coach_gen4_gonian_4d_concept, /*Year: 1992*/ \

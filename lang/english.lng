@@ -2,7 +2,7 @@
 
 # Hardcoded Strings
 STR_GRF_NAME                                                      :{TITLE}
-STR_GRF_DESCRIPTION                                               :{SILVER}2cc Trains of the World in NML {}{}(c)2ccts Revival {}License GPLv2 or higher. {}See readme for details.{}{SILVER}Build: 2026-07-15-08:29:59
+STR_GRF_DESCRIPTION                                               :{SILVER}2cc Trains of the World in NML {}{}(c)2ccts Revival {}License GPLv2 or higher. {}See readme for details.{}{SILVER}Build: 2026-08-18-07:49:37
 STR_GRF_URL                                                       :https://github.com/nemethviktor/2ccts_revival
 STR_USED_WITH_DYNAMIC_ENGINES                                     :dynamic_engines = true (setting in openttd.cfg)
 STR_ERROR_REGION                                                  :No regions enabled, {STRING} has been disabled
@@ -553,6 +553,8 @@ str_mu_coach_gen3_goerlitz_doppelstockwagen_articulated_coach     :Goerlitz Arti
 str_mu_coach_gen2_prr_mp54_commuter_coach                         :PRR P54 Commuter Coach
 str_mu_coach_gen2_prr_mp54_mail_coach                             :PRR P54 Mail Coach
 str_mu_coach_gen3_prr_p70_bilevel_coach                           :PRR P70 Bilevel Coach
+str_mu_coach_gen4_faur_ad20dp_trailer                             :Faur A20D-P Trailer
+str_mu_coach_gen3_pafawag_3aw                                     :Pafawag 3Aw
 str_mglv_coach_gen7m_chimaera_passenger_coach                     :ACME Corp. Chimaera Passenger Coach
 str_mglv_coach_gen7m_chimaera_mail_coach                          :ACME Corp. Chimaera Mail Coach
 
@@ -758,6 +760,9 @@ str_diesel_ge_es58aci                                             :GE ES58ACi (D
 str_diesel_ltz_te10m                                              :LTZ 2TE10M (Diesel)
 str_diesel_ltz_te126                                              :LTZ 2TE126 (Diesel)
 str_diesel_ltz_te10ut                                             :LTZ 2TE10Ut (Diesel)
+str_diesel_faur_a20dp                                             :Faur A20D-P (Diesel)
+str_diesel_faur_l45h                                              :Faur L45H (Diesel)
+str_diesel_kmz_tu7_tgm40                                          :KMZ TU7/TGM40 (Diesel)
 
 # Dieselrailbus
 str_rbd_aec_railmotor_rm1                                         :AEC railmotor RM1 (Diesel Railbus)
@@ -1044,6 +1049,8 @@ str_electric_chesta_casagrande_e650                               :Chesta Casagr
 str_electric_breda_marelli_e32                                    :Breda Marelli E32 (Electric, 3kV DC)
 str_electric_alco_ge_t_motor                                      :ALCO-GE T-Motor (Electric, 3rd Rail)
 str_electric_altoona_works_dd1                                    :Altoona Works Pennsylvania Railroad DD1 (Electric, 3rd Rail)
+str_electric_alsthom_cc_7100                                      :Alsthom CC 7100 (Electric, 3kV DC, 1500V DC)
+str_electric_alsthom_f_series                                     :Alsthom F Series (Electric, 25kV AC)
 
 # Electricrailbus
 str_rbe_slm_cfe_3_3                                               :SLM CFe 3/3 (Electric Railbus, 1500V DC)

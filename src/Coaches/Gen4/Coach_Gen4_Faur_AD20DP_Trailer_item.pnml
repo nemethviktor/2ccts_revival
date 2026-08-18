@@ -1,0 +1,60 @@
+
+//  Copyright (C) 2017 Transportman // V. Nemeth 2026+
+//  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
+
+
+// Template: TPL_04U.
+// Data from: https://en.wikipedia.org/wiki/PKP_class_MBxd2
+
+item(FEAT_TRAINS, item_mu_coach_gen4_faur_ad20dp_trailer) {
+    property {
+        name: string(str_mu_coach_gen4_faur_ad20dp_trailer);
+        climates_available: ((param_region_eastern_europe || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
+        introduction_date: date(1984,1,1);
+        model_life: 70;
+        vehicle_life: 25;
+        retire_early: 0;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        cost_factor: 23.64365;
+        running_cost_factor: 16.90405;
+        speed: 60 km/h;
+        power: 0 hp;
+        cargo_capacity: 45;
+        weight: 19 ton;
+        tractive_effort_coefficient: 0.3;
+        air_drag_coefficient: 0;
+
+        reliability_decay: 20;
+        // cargodeftype: PASSENGERS_ONLY;
+        refittable_cargo_classes: bitmask(CC_PASSENGERS);
+        non_refittable_cargo_classes: 0;
+        
+        cargo_age_period: 185;
+        misc_flags: bitmask(TRAIN_FLAG_2CC);
+        refit_cost: 0;
+        ai_special_flag: AI_FLAG_PASSENGER | AI_FLAG_CARGO;
+        track_type: [NARROW_GAUGE_RAILTYPE_NONE];
+        running_cost_base: RUNNING_COST_DIESEL;
+        engine_class: ENGINE_CLASS_DIESEL;
+        visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+
+        sprite_id: SPRITE_ID_NEW_TRAIN;
+        dual_headed: 0;
+        length: 8;
+        extra_power_per_wagon: 0;
+        bitmask_vehicle_info: 0;
+
+	badges: ["region/europe/eastern", "role/coach__commuter_"];
+
+    }
+    graphics {
+        purchase: spriteset_mu_coach_gen4_faur_ad20dp_trailer_purchase;
+        // no 'visual_effect' or 'visual_effect_and_powered'
+        // no 'length'
+        // no 'articulated_part'
+        // no 'can_attach'
+        default: spriteset_mu_coach_gen4_faur_ad20dp_trailer_l1;
+        // Random flip for variety
+        reverse_build_probability: return 50;
+    }
+}
