@@ -1,13 +1,14 @@
-# Welcome to 2cc NML (Revival)
+# Welcome to 2cc Trains In NML (Revival)
 
 This project aims to capitalise on the work of Transportman, EmperorJake, VoyagerOne and the others mentioned further down in the original readme and better document, as well as extend the last "official" release, which was around 2020.
 
-There is now added support for various track types and voltages as well as badges. There is also support for push-pull and a small number of vehicles have been added.
-What I currently need help with is for people to use the badge filters to see where we have gaps (mostly plenty of said gaps outside Europe) and suggest specific vehicles to add and preferably either provide the sprites or tell me what existing sprite they look similar to so I can clone. I'm extremely bad at drawing and have zero sense of spatial perspective.
+There is now added support for various track types and voltages as well as badges. There is also support for push-pull and for the initial release, some 200+ vehicles have been added. See further below for more on this.
+
+We now have maglev cargo capability but the Gen7 wagons use the Gen5 designs. (There's also Gen6, which are visually also identical to G5 but are ... better).
 
 ## Availability
 
-The grf file is available on Github under [Releases](https://github.com/nemethviktor/2ccts_revival/releases/latest) for the time being (scroll down to Assets and it should be there). If there is ample interest from people, I'll figure a way to push the files into the game's ecosystem.
+The grf file is now available [Bananas](https://bananas.openttd.org/package/newgrf/564e0101) as well as on Github under [Releases](https://github.com/nemethviktor/2ccts_revival/releases/latest) (scroll down to Assets and it should be there). 
 
 There is a nightly of sorts on my [Google Drive](https://drive.google.com/file/d/15M6hdWmnYQWlgP0Xh-UZbEimmLge4TZk/view?usp=drive_link) - whenever I compile the file locally on my laptop it gets copied there but it may or may not be buggy.
 
@@ -18,9 +19,9 @@ There is a nightly of sorts on my [Google Drive](https://drive.google.com/file/d
 - OpenTTD 1.2.0-RC1 or nightly r23971, or higher
 - Not compatible with TTDPatch
 - Badges require OpenTTD v15
-- Driving Trailers require nightly as of mid April 2026 or thereabouts (or v16 if you're on release versions)
+- Driving Trailers require v16 (at least beta thereof)
 - Please note that the 'revival' newgrf is not backwards compatible with the original 2cc trains newgrf so you can't hot-swap it in savegames
-  - Technically it is possible but it's a major PITA. You'd want to send all your trains to depot (otherwise they'll be stuck perma-unmovably on the tracks), preferably use JGRP and Template replacements, swap the grf, (re)define templates and then manually clone the vehicles to the new templates. It's doable, I tried it, but mightily unpractical.
+  - Technically it is possible but it's a major PITA. You'd want to send all your trains to depot (otherwise they'll be stuck perma-unmovably on the tracks), preferably use JGRPP and Template replacements, swap the grf, (re)define templates and then manually clone the vehicles to the new templates. It's doable, I tried it, but mightily unpractical.
   - If you are still interested, here's a video of one of my longplay map conversions -> https://youtu.be/Qijxcduf4as
 
 ### Parameter settings
@@ -72,7 +73,7 @@ NA
 
 ## Help wanted/Contributing
 
-As I wrote above my GFX skills are zero so I'd like to ask people with graphics skills to chip in with the designs, either for new/concept vehicles or just changes to existing ones.
+My GFX skills are zero so I'd like to ask people with graphics skills to chip in with the designs, either for new real and concept vehicles or just changes to existing ones. Using the badges filters or just the charts referenced above are great ways to figure what regions and roles are lacking.
 
 Please **do stick to one of the template files** or, while beggars can't be choosers I *will* reject the design. You may ofc put your logo or text or palette on the file(s) but don't move the template boxes. There are/were over 50 (!!!) various combinations in the legacy files and I'd rather die than to decipher any more random ones. (Main) Template logic can be found in another readme inside the `gfx` folder and there are templates of existing files as well there. Furthermore each pnml file has the template designation inside it so if you would like to add more designs, pick one from the existing ones.
 
@@ -125,7 +126,7 @@ Graphics from the original 2cc Trainset:
 
 Code:
 
-- Transportman
+- Transportman (original 2cc)
 - V Nemeth (2026 onwards)
 
 Makefile system:
@@ -149,39 +150,25 @@ Please report any bugs you find at the
 - bug tracker: <https://github.com/nemethviktor/2ccts_revival/issues>  (2026 onwards -- please don't use OTTD forums!)
 - or discussions: <https://github.com/nemethviktor/2ccts_revival/discussions>  (2026 onwards -- please don't use OTTD forums!)
 
-Always included a detailed description of the bug, preferably with
-screenshot and savegame. Also state the exact game version you're using,
-as well as the version of this NewGRF.
+Always included a detailed description of the bug, preferably with screenshot and savegame. Also state the exact game version you're using, as well as the version of this NewGRF.
 
-If you have a savegame that includes NewGRFs not available on OpenTTD's
-Online Content, then please try to reproduce the bug in a new game
-which has all NewGRFs easily accessible.
+If you have a savegame that includes NewGRFs not available on OpenTTD's Online Content, then please try to reproduce the bug in a new game which has all NewGRFs easily accessible.
 
-If you're using a patched version of the game, please try to reproduce
-the bug on an official game build. If you can't reproduce the bug, then
-don't report it here but in the forum topic of the patch(pack) instead.
+If you're using a patched version of the game, please try to reproduce the bug on an official game build. If you can't reproduce the bug, then don't report it here but in the forum topic of the patch(pack) instead.
 
 ### Contributing
 
-PRs are most welcome but please try to test.
+Since the database for the vehicles is stored in an Excel file that has a fair bit of complexity I'd ask people not to do a PR but instead ping me somewhere (open a ticket on Github, find me on Discord) and we can discuss ideas.
 
 ## License
 
-2cc Trains In NML
-Copyright (C) 2014, 2026 2cc Trains In NML team
+2cc Trains In NML (Revival)
+Copyright (C) 2014, 2026 2cc Trains In NML (Revival) team
 
-This program is free software; you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation; either version 3 of the License, or
-(at your option) any later version.
+This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
-You should have received a copy of the GNU General Public License along
-with this program; if not, write to the Free Software Foundation, Inc.,
-51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
 As an amendment, some graphics are CC-BY-NC-SA; these are indicated accordingly.

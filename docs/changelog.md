@@ -1,8 +1,8 @@
-# 2cc TrainsInNML (Revival) changelog
+# 2cc Trains In NML (Revival) changelog
 
 ## 4.0
 
-### 4.0 [20260xxx]
+### 4.0 [20260822]
 - CODE CHANGES:
   - Removed railbus coupling rules
   - Updated AI rules relating to special flags esp wrt railbuses.
@@ -15,7 +15,6 @@
     - 'KMZ TU7/TGM40'
     - 'Alsthom CC 7100'
     - 'Alsthom F Series'
-
 
 
 ### 4.0 RC4 [20260715]
