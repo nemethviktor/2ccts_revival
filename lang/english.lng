@@ -2,7 +2,7 @@
 
 # Hardcoded Strings
 STR_GRF_NAME                                                      :{TITLE}
-STR_GRF_DESCRIPTION                                               :{SILVER}2cc Trains of the World in NML {}{}(c)2ccts Revival {}License GPLv2 or higher. {}See readme for details.{}{SILVER}Build: 2026-08-18-20:48:27
+STR_GRF_DESCRIPTION                                               :{SILVER}2cc Trains of the World in NML {}{}(c)2ccts Revival {}License GPLv2 or higher. {}See readme for details.{}{SILVER}Build: 2026-08-19-08:53:47
 STR_GRF_URL                                                       :https://github.com/nemethviktor/2ccts_revival
 STR_USED_WITH_DYNAMIC_ENGINES                                     :dynamic_engines = true (setting in openttd.cfg)
 STR_ERROR_REGION                                                  :No regions enabled, {STRING} has been disabled
@@ -961,7 +961,7 @@ str_electric_tulloch_0_6_0dm_w_class                              :Tulloch 0-6-0
 str_electric_gec_nblc_sar_4e_                                     :GEC/NBLC SAR 4E (Electric, 3kV DC)
 str_electric_toshiba_eh10                                         :Toshiba EH10 (Electric, 1500V DC)
 str_electric_bn_acec_25_5                                         :BN/ACEC 25.5 (Electric, 3kV DC, 1500V DC)
-str_electric_skoda_29e                                            :Skoda 29E (Electric, 3kV DC)
+str_electric_skoda_29e                                            :Skoda 12E (Electric, 3kV DC)
 str_electric_english_electric_e__aei_e_                           :English Electric E [AEI E] (Electric, 3kV DC)
 str_electric_ganz_mavag_vm14_v43                                  :Ganz-MAVAG VM14 'V43' (Electric, 25kV AC, 15kV AC)
 str_electric_alsthom_bb_25500                                     :Alsthom BB 25500 (Electric, 25kV AC, 1500V DC)

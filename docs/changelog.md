@@ -7,6 +7,7 @@
   - Removed railbus coupling rules
   - Updated AI rules relating to special flags esp wrt railbuses.
 - VEHICLES CHANGES:
+  - Further small changes here and there
   - Adds:
     - `Faur A20D-P` + Trailer
     - 'Pafawag 3Aw'

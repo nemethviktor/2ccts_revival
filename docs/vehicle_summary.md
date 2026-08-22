@@ -492,6 +492,7 @@
 | ![LEW EL2](vehicle_graphics/str_electric_lew_el2.png) | LEW EL2 | 1952 | 65 / 40 | 1790 / 1334 | Light Freight | 0 | STANDARD_3KV, STANDARD_1500V, BROAD_3KV, BROAD_1500V | Asia, Eastern Europe | No |
 | ![ASEA Dm3](vehicle_graphics/str_electric_asea_dm3.png) | ASEA Dm3 | 1953 | 75 / 46 | 9700 / 7232 | Heavy Freight | 0 | STANDARD_15KV | Northern Europe | No |
 | ![Metropolitan-Vickers EM2](vehicle_graphics/str_electric_metropolitan_vicerks_em2.png) | Metropolitan-Vickers EM2 | 1953 | 145 / 90 | 2490 / 1856 | Universal | 0 | STANDARD_1500V | Northern Europe | No |
+| ![Skoda 12E](vehicle_graphics/str_electric_skoda_29e.png) | Skoda 12E | 1953 | 120 / 74 | 3755 / 2799 | Freight | 0 | STANDARD_3KV, BROAD_3KV | Asia, Eastern Europe | No |
 | ![Jeumont-Schneider BB 9004](vehicle_graphics/str_electric_jeumont_schneider_bb_9004.png) | Jeumont-Schneider BB 9004 | 1954 | 140 / 86 | 4260 / 3176 | Freight | 0 | STANDARD_1500V | Western Europe | No |
 | ![SLM Ce 4/4](vehicle_graphics/str_electric_slm_ce_4_4.png) | SLM Ce 4/4 | 1954 | 65 / 40 | 1000 / 745 | Light Freight | 0 | STANDARD_15KV | Western Europe | No |
 | ![Toshiba EH10](vehicle_graphics/str_electric_toshiba_eh10.png) | Toshiba EH10 | 1954 | 110 / 68 | 3390 / 2527 | Express | 0 | NARROW_1500V | Asia | No |
@@ -505,7 +506,6 @@
 | ![Groupement 50 Hz WAM 1](vehicle_graphics/str_electric_groupement_50_hz_wam_1.png) | Groupement 50 Hz WAM 1 | 1960 | 112 / 69 | 3010 / 2244 | Freight | 0 | BROAD_25KV | Asia | No |
 | ![Breda Marelli E32](vehicle_graphics/str_electric_breda_marelli_e32.png) | Breda Marelli E32 | 1961 | 130 / 80 | 3600 / 2684 | Freight | 0 | BROAD_3KV | South America | No |
 | ![Doncaster AL5](vehicle_graphics/str_electric_br_85.png) | Doncaster AL5 | 1961 | 160 / 99 | 3200 / 2385 | Express | 0 | STANDARD_25KV | Northern Europe | No |
-| ![Skoda 29E](vehicle_graphics/str_electric_skoda_29e.png) | Skoda 29E | 1961 | 120 / 74 | 3755 / 2799 | Freight | 0 | BROAD_3KV | Asia, Eastern Europe | No |
 | ![TIBB E.646](vehicle_graphics/str_electric_tibb_e_646.png) | TIBB E.646 | 1961 | 140 / 86 | 5070 / 3780 | Freight | 0 | STANDARD_3KV | Southern Europe | No |
 | ![English Electric E [AEI E]](vehicle_graphics/str_electric_english_electric_e__aei_e_.png) | English Electric E [AEI E] | 1962 | 126 / 78 | 1500 / 1118 | Universal | 0 | STANDARD_3KV | Eastern Europe | No |
 | ![GE C-C 4400 RFFSA](vehicle_graphics/str_electric_ge_c_c_4400_rffsa.png) | GE C-C 4400 RFFSA | 1962 | 117 / 72 | 4400 / 3280 | Freight | 0 | BROAD_3KV | South America | No |

@@ -489,6 +489,7 @@ item_electric_lew_el2, /*Year: 1952*/ \
 item_electric_alsthom_cc_7100, /*Year: 1952*/ \
 item_electric_asea_dm3, /*Year: 1953*/ \
 item_electric_metropolitan_vicerks_em2, /*Year: 1953*/ \
+item_electric_skoda_29e, /*Year: 1953*/ \
 item_electric_jeumont_schneider_bb_9004, /*Year: 1954*/ \
 item_electric_slm_ce_4_4, /*Year: 1954*/ \
 item_electric_toshiba_eh10, /*Year: 1954*/ \
@@ -501,7 +502,6 @@ item_electric_bn_acec_25_5, /*Year: 1960*/ \
 item_electric_ge_e44, /*Year: 1960*/ \
 item_electric_groupement_50_hz_wam_1, /*Year: 1960*/ \
 item_electric_tibb_e_646, /*Year: 1961*/ \
-item_electric_skoda_29e, /*Year: 1961*/ \
 item_electric_br_85, /*Year: 1961*/ \
 item_electric_breda_marelli_e32, /*Year: 1961*/ \
 item_electric_english_electric_e__aei_e_, /*Year: 1962*/ \
