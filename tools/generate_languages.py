@@ -6,36 +6,46 @@ import warnings
 import re
 from datetime import datetime
 
-
 # Silence openpyxl warnings
 warnings.filterwarnings("ignore", category=UserWarning, module="openpyxl")
 
 # Paths
 script_dir = os.path.dirname(os.path.abspath(__file__))
 project_root = os.path.dirname(script_dir)
-excel_path = os.path.join(script_dir, 'vehicle_report.xlsx')
-lang_dir = os.path.join(project_root, 'lang')
+excel_path = os.path.join(script_dir, "vehicle_report.xlsx")
+lang_dir = os.path.join(project_root, "lang")
 
 # BLACKLIST: Categories that should have NO technical tags at all
-BLACKLIST = ['COACH', 'WAGON']
+BLACKLIST = ["COACH", "WAGON"]
 
 
 def is_true(val):
-    return (val == True or str(val).upper() == 'TRUE') or (val == 1)
+    return (val == True or str(val).upper() == "TRUE") or (val == 1)
 
 
 def load_excel_data():
     """Loads vehicle IDs and technical data from Excel sheets."""
-    df_control = pd.read_excel(excel_path, sheet_name='control')
-    df_props = pd.read_excel(excel_path, sheet_name='properties')
-    df_tracks = pd.read_excel(excel_path, sheet_name='track_types')
+    df_control = pd.read_excel(excel_path, sheet_name="control")
+    df_props = pd.read_excel(excel_path, sheet_name="properties")
+    df_tracks = pd.read_excel(excel_path, sheet_name="track_types")
 
-    df = df_control[['VEHIDCODE', 'NAME', 'ENGLISH', 'IS_POWERED_UNPOWERED_SUNDRY', 'VEHID_ID', 'WEB']].merge(
-        df_props[['VEHIDCODE', 'ENGINE_CLASS', 'COST_CAT',
-                  'DUAL_HEADED', 'IS_TURBINE']],
-        on='VEHIDCODE', how='left'
+    df = df_control[
+        [
+            "VEHIDCODE",
+            "NAME",
+            "ENGLISH",
+            "IS_POWERED_UNPOWERED_SUNDRY",
+            "VEHID_ID",
+            "WEB",
+        ]
+    ].merge(
+        df_props[
+            ["VEHIDCODE", "ENGINE_CLASS", "COST_CAT", "DUAL_HEADED", "POWER_SPECIAL"]
+        ],
+        on="VEHIDCODE",
+        how="left",
     )
-    df = df.merge(df_tracks, on='VEHIDCODE', how='left')
+    df = df.merge(df_tracks, on="VEHIDCODE", how="left")
     return df
 
 
@@ -45,18 +55,20 @@ def sync_csv_with_excel(df_vehicles):
     - Updates English names in english.csv.
     - Adds missing keys to other languages as blank (not-translated).
     """
-    excel_map = {str(row['NAME']).strip().lower(): str(row['ENGLISH']).strip()
-                 for _, row in df_vehicles.iterrows()}
+    excel_map = {
+        str(row["NAME"]).strip().lower(): str(row["ENGLISH"]).strip()
+        for _, row in df_vehicles.iterrows()
+    }
 
     for csv_file in glob.glob(os.path.join(lang_dir, "*.csv")):
         lang_filename = os.path.basename(csv_file).lower()
-        is_english = (lang_filename == 'english.csv')
+        is_english = lang_filename == "english.csv"
         rows = []
         existing_keys = set()
         file_changed = False
 
         if os.path.exists(csv_file):
-            with open(csv_file, 'r', encoding='utf-8-sig') as f:
+            with open(csv_file, "r", encoding="utf-8-sig") as f:
                 reader = csv.reader(f)
                 for row in reader:
                     if not row:
@@ -81,7 +93,7 @@ def sync_csv_with_excel(df_vehicles):
                 file_changed = True
 
         if file_changed:
-            with open(csv_file, 'w', encoding='utf-8-sig', newline='') as f:
+            with open(csv_file, "w", encoding="utf-8-sig", newline="") as f:
                 writer = csv.writer(f, quoting=csv.QUOTE_MINIMAL)
                 writer.writerows(rows)
             # print(f"Synced changes into {os.path.basename(csv_file)}.")
@@ -92,9 +104,9 @@ def get_tech_suffixes(row, lang_map, english_map):
     suffixes_list = []
     suffixes_set = set()
 
-    v_id = str(row.get('NAME', '')).lower()
-    c_cat = str(row.get('COST_CAT', '')).upper().strip()
-    e_class = str(row.get('ENGINE_CLASS', '')).upper().strip()
+    v_id = str(row.get("NAME", "")).lower()
+    c_cat = str(row.get("COST_CAT", "")).upper().strip()
+    e_class = str(row.get("ENGINE_CLASS", "")).upper().strip()
 
     def get_val(key):
         return lang_map.get(key) or english_map.get(key.lower(), "")
@@ -103,6 +115,12 @@ def get_tech_suffixes(row, lang_map, english_map):
         if val and val not in suffixes_set:
             suffixes_list.append(val)
             suffixes_set.add(val)
+
+    def remove_from_list(val):
+        if val in suffixes_list:
+            suffixes_list.remove(val)
+        if val in suffixes_set:
+            suffixes_set.remove(val)
 
     # Generic Wagon Rule
     if "wagon" in v_id and (v_id.endswith("_powered") or v_id.endswith("_unpowered")):
@@ -115,12 +133,19 @@ def get_tech_suffixes(row, lang_map, english_map):
 
     # Primary Noun
     class_map = {
-        "STEAMENGINE": "STR_SUFFIX_STEAMENGINE", "DIESELENGINE": "STR_SUFFIX_DIESELENGINE",
-        "ELECTRICENGINE": "STR_SUFFIX_ELECTRICENGINE", "STEAMRAILBUS": "STR_SUFFIX_STEAMRAILBUS",
-        "DIESELRAILBUS": "STR_SUFFIX_DIESELRAILBUS", "ELECTRICRAILBUS": "STR_SUFFIX_ELECTRICRAILBUS",
-        "METRORAILBUS": "STR_SUFFIX_METRORAILBUS", "MAGLEVRAILBUS": "STR_SUFFIX_MAGLEVRAILBUS",
-        "DMU": "STR_SUFFIX_DMU", "EMU": "STR_SUFFIX_EMU", "METRO": "STR_SUFFIX_METRO",
-        "MMU": "STR_SUFFIX_MMU", "MAGLEV": "STR_SUFFIX_MAGLEVENGINE"
+        "STEAMENGINE": "STR_SUFFIX_STEAMENGINE",
+        "DIESELENGINE": "STR_SUFFIX_DIESELENGINE",
+        "ELECTRICENGINE": "STR_SUFFIX_ELECTRICENGINE",
+        "STEAMRAILBUS": "STR_SUFFIX_STEAMRAILBUS",
+        "DIESELRAILBUS": "STR_SUFFIX_DIESELRAILBUS",
+        "ELECTRICRAILBUS": "STR_SUFFIX_ELECTRICRAILBUS",
+        "METRORAILBUS": "STR_SUFFIX_METRORAILBUS",
+        "MAGLEVRAILBUS": "STR_SUFFIX_MAGLEVRAILBUS",
+        "DMU": "STR_SUFFIX_DMU",
+        "EMU": "STR_SUFFIX_EMU",
+        "METRO": "STR_SUFFIX_METRO",
+        "MMU": "STR_SUFFIX_MMU",
+        "MAGLEV": "STR_SUFFIX_MAGLEVENGINE",
     }
     target_class = c_cat if c_cat in class_map else e_class
     primary_noun = get_val(class_map.get(target_class, ""))
@@ -128,9 +153,13 @@ def get_tech_suffixes(row, lang_map, english_map):
 
     # Adjective Logic
     adj_map = {
-        "STEAM": "STR_SUFFIX_STEAM", "DIESEL": "STR_SUFFIX_DIESEL",
-        "ELECTRIC": "STR_SUFFIX_ELECTRIC", "MAGLEV": "STR_SUFFIX_MAGLEV",
-        "DMU": "STR_SUFFIX_DIESEL", "EMU": "STR_SUFFIX_ELECTRIC", "METRO": "STR_SUFFIX_ELECTRIC"
+        "STEAM": "STR_SUFFIX_STEAM",
+        "DIESEL": "STR_SUFFIX_DIESEL",
+        "ELECTRIC": "STR_SUFFIX_ELECTRIC",
+        "MAGLEV": "STR_SUFFIX_MAGLEV",
+        "DMU": "STR_SUFFIX_DIESEL",
+        "EMU": "STR_SUFFIX_ELECTRIC",
+        "METRO": "STR_SUFFIX_ELECTRIC",
     }
     effective_e_class = e_class
     if "METRO" in c_cat:
@@ -140,20 +169,36 @@ def get_tech_suffixes(row, lang_map, english_map):
 
     if adjective and primary_noun:
         adj_l, noun_l = adjective.lower(), primary_noun.lower()
-        if adj_l in noun_l or (adj_l == "electric" and "emu" in noun_l) or (adj_l == "diesel" and "dmu" in noun_l):
+        if (
+            adj_l in noun_l
+            or (adj_l == "electric" and "emu" in noun_l)
+            or (adj_l == "diesel" and "dmu" in noun_l)
+        ):
             adjective = ""
 
-    # Tech Suffixes
-    if is_true(row.get('IS_POWERED_UNPOWERED_SUNDRY')):
-        p_key = "STR_SUFFIX_UNPOWERED" if "UNPOWERED" in str(
-            row.get('VEHIDCODE', '')).upper() else "STR_SUFFIX_POWERED"
+    # Powered/Unpowered Suffixes
+    if is_true(row.get("IS_POWERED_UNPOWERED_SUNDRY")):
+        p_key = (
+            "STR_SUFFIX_UNPOWERED"
+            if "UNPOWERED" in str(row.get("VEHIDCODE", "")).upper()
+            else "STR_SUFFIX_POWERED"
+        )
         add_to_list(get_val(p_key))
 
-    if is_true(row.get('IS_TURBINE')):
+    # If it's "special" then we don't actually want the above at all so we overwrite.
+    power_special = row.get("POWER_SPECIAL", None)
+    if power_special == "GAS_TURBINE":
         add_to_list(get_val("STR_SUFFIX_GAS_TURBINE"))
+        remove_from_list(get_val("STR_SUFFIX_DIESEL"))
+        remove_from_list(get_val("STR_SUFFIX_ELECTRIC"))  # prob not relevant here
+    elif power_special == "DUAL":
+        add_to_list(get_val("STR_SUFFIX_DUAL"))
+        remove_from_list(get_val("STR_SUFFIX_DIESEL"))  # prob not relevant here
+        remove_from_list(get_val("STR_SUFFIX_ELECTRIC"))
 
-    track_cols = [c for c in row.index if str(
-        c).startswith('TRACK_TYPE_') and is_true(row[c])]
+    track_cols = [
+        c for c in row.index if str(c).startswith("TRACK_TYPE_") and is_true(row[c])
+    ]
     if track_cols:
         v_vals = []
         for col in track_cols:
@@ -166,7 +211,7 @@ def get_tech_suffixes(row, lang_map, english_map):
             for vv in v_vals:
                 add_to_list(vv)
 
-    if is_true(row.get('DUAL_HEADED')):
+    if is_true(row.get("DUAL_HEADED")):
         add_to_list(get_val("STR_SUFFIX_DUAL_UNIT"))
 
     return f" ({', '.join(suffixes_list)})" if suffixes_list else ""
@@ -179,11 +224,11 @@ def generate_languages():
     sync_csv_with_excel(df_vehicles)
 
     # Reload English map for generation fallback
-    english_csv = os.path.join(lang_dir, 'english.csv')
+    english_csv = os.path.join(lang_dir, "english.csv")
     english_map = {}
     master_keys = []
     if os.path.exists(english_csv):
-        with open(english_csv, 'r', encoding='utf-8-sig') as f:
+        with open(english_csv, "r", encoding="utf-8-sig") as f:
             for r in csv.reader(f):
                 if r:
                     k = r[0].strip()
@@ -193,11 +238,11 @@ def generate_languages():
 
     for csv_file in glob.glob(os.path.join(lang_dir, "*.csv")):
         lang_id = os.path.splitext(os.path.basename(csv_file))[0]
-        is_english_lang = (lang_id.lower() == 'english')
+        is_english_lang = lang_id.lower() == "english"
         lng_file = os.path.join(lang_dir, f"{lang_id}.lng")
 
         metadata, hardcoded, existing_vehicles = [], {}, {}
-        with open(csv_file, 'r', encoding='utf-8-sig') as f:
+        with open(csv_file, "r", encoding="utf-8-sig") as f:
             for r in csv.reader(f):
                 if not r:
                     continue
@@ -218,13 +263,19 @@ def generate_languages():
                 output.append(f"# {k.ljust(65)} : not translated")
             else:
                 now = datetime.now()
-                build_string  = f"{{}}{{SILVER}}Build: {now.strftime("%Y-%m-%d-%H:%M:%S")}"
-                final_val = v if (
-                    v or not is_english_lang) else english_map.get(k.lower(), "")
-                output.append(f"{k.ljust(65)} :{final_val}{build_string if k == 'STR_GRF_DESCRIPTION' else ''}")
+                build_string = (
+                    f"{{}}{{SILVER}}Build: {now.strftime("%Y-%m-%d-%H:%M:%S")}"
+                )
+                final_val = (
+                    v if (v or not is_english_lang) else english_map.get(k.lower(), "")
+                )
+                output.append(
+                    f"{k.ljust(65)} :{final_val}{build_string if k == 'STR_GRF_DESCRIPTION' else ''}"
+                )
 
         normal_word = hardcoded.get("STR_WORD_NORMAL") or (
-            english_map.get("str_word_normal") if not is_english_lang else "default")
+            english_map.get("str_word_normal") if not is_english_lang else "default"
+        )
         output.append("\n# Parameters")
         for d in ["16", "8", "4", "2"]:
             output.append(f"{f'STR_PARAM_DIVIDE_{d}'.ljust(65)} :1/{d}")
@@ -234,17 +285,18 @@ def generate_languages():
 
         output.append("\n# Vehicles")
         df_sorted = df_vehicles.sort_values(
-            by=['COST_CAT', 'VEHID_ID'], na_position='last')
+            by=["COST_CAT", "VEHID_ID"], na_position="last"
+        )
         last_header = None
 
         for _, v_row in df_sorted.iterrows():
-            curr_header = str(v_row['COST_CAT']).capitalize()
+            curr_header = str(v_row["COST_CAT"]).capitalize()
             if curr_header != last_header:
                 output.append(f"\n# {curr_header}")
                 last_header = curr_header
 
-            v_id = str(v_row['NAME']).strip().lower()
-            v_eng_base = str(v_row['ENGLISH']).strip()
+            v_id = str(v_row["NAME"]).strip().lower()
+            v_eng_base = str(v_row["ENGLISH"]).strip()
 
             # Logic: If item is in local CSV and NOT empty, use it.
             # Otherwise, English file falls back to Excel, non-English file marks "not translated".
@@ -255,7 +307,7 @@ def generate_languages():
             else:
                 v_base_name = ""
 
-            v_base_name = re.sub(r'\s*\([^)]*\)$', '', v_base_name).strip()
+            v_base_name = re.sub(r"\s*\([^)]*\)$", "", v_base_name).strip()
             suffix = get_tech_suffixes(v_row, hardcoded, english_map)
 
             if not v_base_name:
@@ -263,19 +315,19 @@ def generate_languages():
             else:
                 output.append(f"{v_id.ljust(65)} :{v_base_name}{suffix}")
 
-            #if is_english_lang:
+            # if is_english_lang:
             #    v_web_val = v_row.get('WEB')
             #    url_token_name = f"{str(v_row['NAME']).strip().lower()}_url"
             #    # If the cell is populated and isn't an Excel NaN/empty string
             #    if pd.notna(v_web_val) and str(v_web_val).strip() != "" and str(v_web_val).strip().lower() != "nan":
             #        clean_url_string = str(v_web_val).strip()
-            #        
+            #
             #        # Append it directly to the output without running modification or change tracking checks
             #        output.append(f"{url_token_name.ljust(65)} :{{BLACK}}Data: {{GOLD}}{clean_url_string}")
             #    else:
             #        output.append(f"{url_token_name.ljust(65)} :{{BLACK}}Data: NA")
 
-        with open(lng_file, 'w', encoding='utf-8') as f:
+        with open(lng_file, "w", encoding="utf-8") as f:
             for line in output:
                 f.write(line + "\n")
         # print(f"Exported: {lng_file}")

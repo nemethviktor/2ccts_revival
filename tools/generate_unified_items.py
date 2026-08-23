@@ -133,8 +133,12 @@ def get_badges(row: pd.Series) -> str:
     # ok that's from a bus-nml but docu is s.it and can't find a better one.
     vehidcode = row["VEHIDCODE"].lower()
     power = row["ENGINE_CLASS"].lower()
-    if is_true(row["IS_TURBINE"]):
+    power_special = row.get("POWER_SPECIAL", None)
+    if power_special == "GAS_TURBINE":
         power = "turbine"
+    elif power_special == "DUAL":
+        power = "dual"
+
     # flag = row['COUNTRY_CODE'].upper()
     badges = []
     regions = []
@@ -886,6 +890,14 @@ def generate_unified_items():
             }}\n\n"""
             )
 
+        if v1 == "VISUAL_EFFECT_DUAL":
+            content.append(f"""
+// Dual-mode vehicle -> Check if the tile the vehicle is currently on provides power to this rail vehicle
+switch (FEAT_TRAINS, SELF, sw_loco_visual_effect_{VEHIDCODE_lcase}, tile_powers_railtype("ELRL")) {{
+    1: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
+    visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 0, DISABLE_WAGON_POWER);
+}}\n\n""")
+
         content.append(f"item(FEAT_TRAINS, {row['ITEM'].lower()}) {{\n")
         content.append("    property {\n")
         content.append(f"        name: string({row['NAME'].lower()});\n")
@@ -952,9 +964,12 @@ def generate_unified_items():
         content.append(
             f"        engine_class: {'ENGINE_CLASS_' + row['ENGINE_CLASS']};\n"
         )
-        content.append(
-            f"        visual_effect_and_powered: visual_effect_and_powered({v1}, {v2}, {row['VISUAL_EFFECT_3']});\n\n"
-        )
+        if v1 == "VISUAL_EFFECT_DUAL":
+            pass
+        else:
+            content.append(
+                f"        visual_effect_and_powered: visual_effect_and_powered({v1}, {v2}, {row['VISUAL_EFFECT_3']});\n\n"
+            )
         content.append(f"        sprite_id: {SPRITE_ID};\n")
         content.append(f"        dual_headed: {int(row['DUAL_HEADED'])};\n")
         content.append(f"        length: {int(row['LENGTH'])};\n")
@@ -965,6 +980,10 @@ def generate_unified_items():
         content.append("    }\n")
         # Graphics selection/overrides
         content.append("    graphics {\n")
+        if v1 == "VISUAL_EFFECT_DUAL":
+            content.append(
+                f"        visual_effect_and_powered: sw_loco_visual_effect_{VEHIDCODE_lcase};\n"
+            )
         cargo_capacity_defined = False
         if TEMPLATE_ID_FULL in ["TPL_32B"]:
             content.append(
