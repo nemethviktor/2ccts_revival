@@ -1616,7 +1616,7 @@ def get_tpl_04(vid, gfx_path, row, template_amendment_code):
     has_first_or_last_carriage_state = template_amendment_code in ["S"]
     has_driving_states = template_amendment_code in ["L", "N", "Q"]
     has_reverse_state = template_amendment_code in ["A", "U"] and is_true(
-        row["VEHICLE_FLAG_TRAIN_HAS_CAB"]
+        row["HAS_CAB"]
     )
 
     cargo_with_driving_state = ["grain"]
@@ -1724,7 +1724,7 @@ def get_tpl_04(vid, gfx_path, row, template_amendment_code):
             nml_code.append(group_block)
 
         # 3. Livery Selector (Random Switch)
-        if not is_true(row["VEHICLE_FLAG_TRAIN_HAS_CAB"]):
+        if not is_true(row["HAS_CAB"]):
             if template_amendment_code in ["U"]:
                 pass
             elif template_amendment_code in ["S"]:
@@ -2993,14 +2993,13 @@ def generate_graphics_pnml():
     df_roster = sheets["roster"]
     df_tracks = sheets["track_types"]
     df_gfx_props = sheets["graphics_properties"]
-    df_flags = sheets["flags"]
 
     # CRITICAL: Clean VEHIDCODE in all sheets to prevent "Not Found" errors
     # Create a list of the variables to overwrite them in-place within the dictionary context if needed,
     # or process them directly if they are independent dataframes:
 
     cleaned_dfs = []
-    for df in [df_control, df_props, df_roster, df_tracks, df_gfx_props, df_flags]:
+    for df in [df_control, df_props, df_roster, df_tracks, df_gfx_props]:
         if "VEHIDCODE" in df.columns:
             # 1. Drop true Excel null rows first
             df = df.dropna(subset=["VEHIDCODE"])
@@ -3015,7 +3014,7 @@ def generate_graphics_pnml():
         cleaned_dfs.append(df)
 
     # Re-assign the cleaned independent DataFrames back to their variables safely
-    df_control, df_props, df_roster, df_tracks, df_gfx_props, df_flags = cleaned_dfs
+    df_control, df_props, df_roster, df_tracks, df_gfx_props = cleaned_dfs
 
     # 1. Merge core data (Now fully shielded from trailing empty rows)
     df_master = df_control.merge(df_props, on="VEHIDCODE", how="left")
@@ -3027,9 +3026,6 @@ def generate_graphics_pnml():
     )
     df_master = df_master.merge(
         df_tracks, on="VEHIDCODE", how="left", suffixes=("", "_tracks")
-    )
-    df_master = df_master.merge(
-        df_flags, on="VEHIDCODE", how="left", suffixes=("", "_flags")
     )
 
     # 3. Merge graphics properties

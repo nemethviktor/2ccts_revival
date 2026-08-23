@@ -76,7 +76,6 @@ def load_master_data(excel_path):
     # 2. List of sheets that provide extra vehicle properties
     data_sheets = [
         "properties",
-        "flags",
         "track_types",
         "graphics_properties",
         "roster",
@@ -214,7 +213,7 @@ def get_badges(row: pd.Series) -> str:
         .replace("(", "_")
         .replace(")", "_")
     )
-    if is_true(row["VEHICLE_FLAG_TRAIN_HAS_CAB"]):
+    if is_true(row["HAS_CAB"]):
         badges.append("attribute/push_pull")
 
     badges.append(f"role/{role}")
@@ -651,7 +650,7 @@ def generate_unified_items():
         if pd.isna(row["VEHIDCODE"]) or is_true(row["EXCLUDE"]):
             continue
         VEHID_ID_INT = int(row["VEHID_ID"])
-        VEHIDCODE_lcase = row["VEHIDCODE"].lower()
+        VEHIDCODE_lcase: str = row["VEHIDCODE"].lower()
         veh_notes: dict = notes_lookup.get(VEHIDCODE_lcase, {})
         TEMPLATE_ID = row["TEMPLATE_ID"]
         TEMPLATE_AMENDMENT_CODE = row["TEMPLATE_AMENDMENT_CODE"]
@@ -661,6 +660,19 @@ def generate_unified_items():
         RUNNING_COST_BASE = f"RUNNING_COST_{'ELECTRIC' if row['ENGINE_CLASS'] == 'MAGLEV' else row['ENGINE_CLASS']}"
 
         VEHID_CATEGORY = row["VEHID_ID_CATEGORY"].replace("ID_RANGE_", "")
+
+        IS_DUAL_HEADED = is_true(row["DUAL_HEADED"])
+        HAS_MU_FLAG = (
+            (
+                VEHIDCODE_lcase.startswith("mtro_")
+                or VEHIDCODE_lcase.startswith("emu_")
+                or VEHIDCODE_lcase.startswith("dmu_")
+                or VEHIDCODE_lcase.startswith("mmu_")
+                or IS_DUAL_HEADED
+            )
+            and "_powered" not in VEHIDCODE_lcase
+            and "_unpowered" not in VEHIDCODE_lcase
+        )
 
         # Fetch Multipliers
         category = str(row["COST_CAT"]).strip()
@@ -679,19 +691,26 @@ def generate_unified_items():
         track_logic = f"[{', '.join(tracks)}]"
 
         # 3. Logic: Misc Flags exc driving cab logic
-        flags = [
-            col.replace("MISC_FLAGS_", "")
-            for col in df_master.columns
-            if col.startswith("MISC_FLAGS_") and (is_true(row[col]))
-        ]
-        misc_logic = f"bitmask({', '.join(flags)})"
-        v1 = (
-            f"VISUAL_EFFECT_{row['VISUAL_EFFECT_1']}"
-            if str(row["VISUAL_EFFECT_1"]) != "0"
-            else "0"
-        )
+        flags = ["TRAIN_FLAG_2CC"]
+        if HAS_MU_FLAG:
+            flags.append("TRAIN_FLAG_MU")
+        if ("_wagon_gen") in VEHIDCODE_lcase:
+            flags.append("TRAIN_FLAG_AUTOREFIT")
+        if is_true(row["IS_TILT"]):
+            flags.append("TRAIN_FLAG_TILT")
 
-        v2 = int(numpy.nan_to_num(row["VISUAL_EFFECT_2"]))
+        misc_logic = f"bitmask({', '.join(flags)})"
+        visual_effect_flag_1 = "DISABLE"
+        if is_true(row["IS_WAGON_OR_COACH"]):
+            pass
+        elif (row["POWER_SPECIAL"]) == "DUAL":
+            visual_effect_flag_1 = "DUAL"
+        elif row["ENGINE_CLASS"] in (["ELECTRIC", "DIESEL", "STEAM"]):
+            visual_effect_flag_1 = row["ENGINE_CLASS"]
+        visual_effect_flag_1 = "VISUAL_EFFECT_" + visual_effect_flag_1
+
+        visual_effect_flag_2 = int(numpy.nan_to_num(row["VISUAL_EFFECT_2"]))
+        visual_effect_flag_3 = "DISABLE_WAGON_POWER"
 
         # Loading Speed
         ls_val = int(row["LOADINGSPEED_VALUE"])
@@ -890,7 +909,7 @@ def generate_unified_items():
             }}\n\n"""
             )
 
-        if v1 == "VISUAL_EFFECT_DUAL":
+        if visual_effect_flag_1 == "VISUAL_EFFECT_DUAL":
             content.append(f"""
 // Dual-mode vehicle -> Check if the tile the vehicle is currently on provides power to this rail vehicle
 switch (FEAT_TRAINS, SELF, sw_loco_visual_effect_{VEHIDCODE_lcase}, tile_powers_railtype("ELRL")) {{
@@ -933,9 +952,7 @@ switch (FEAT_TRAINS, SELF, sw_loco_visual_effect_{VEHIDCODE_lcase}, tile_powers_
         content.append(f"        misc_flags: {misc_logic};\n")
 
         # Push-pull DC (DT) logic where applicable
-        if TEMPLATE_ID_FULL in ["TPL_04A", "TPL_04U"] and is_true(
-            row["VEHICLE_FLAG_TRAIN_HAS_CAB"]
-        ):
+        if TEMPLATE_ID_FULL in ["TPL_04A", "TPL_04U"] and is_true(row["HAS_CAB"]):
             content.append(
                 f"        extra_flags: bitmask(VEHICLE_FLAG_TRAIN_HAS_CAB);\n"
             )
@@ -964,11 +981,11 @@ switch (FEAT_TRAINS, SELF, sw_loco_visual_effect_{VEHIDCODE_lcase}, tile_powers_
         content.append(
             f"        engine_class: {'ENGINE_CLASS_' + row['ENGINE_CLASS']};\n"
         )
-        if v1 == "VISUAL_EFFECT_DUAL":
+        if visual_effect_flag_1 == "VISUAL_EFFECT_DUAL":
             pass
         else:
             content.append(
-                f"        visual_effect_and_powered: visual_effect_and_powered({v1}, {v2}, {row['VISUAL_EFFECT_3']});\n\n"
+                f"        visual_effect_and_powered: visual_effect_and_powered({visual_effect_flag_1}, {visual_effect_flag_2}, {visual_effect_flag_3});\n\n"
             )
         content.append(f"        sprite_id: {SPRITE_ID};\n")
         content.append(f"        dual_headed: {int(row['DUAL_HEADED'])};\n")
@@ -980,7 +997,7 @@ switch (FEAT_TRAINS, SELF, sw_loco_visual_effect_{VEHIDCODE_lcase}, tile_powers_
         content.append("    }\n")
         # Graphics selection/overrides
         content.append("    graphics {\n")
-        if v1 == "VISUAL_EFFECT_DUAL":
+        if visual_effect_flag_1 == "VISUAL_EFFECT_DUAL":
             content.append(
                 f"        visual_effect_and_powered: sw_loco_visual_effect_{VEHIDCODE_lcase};\n"
             )
@@ -1119,7 +1136,7 @@ switch (FEAT_TRAINS, SELF, sw_loco_visual_effect_{VEHIDCODE_lcase}, tile_powers_
                 "TPL_04A",
                 "TPL_04B",
                 "TPL_04R",
-            ] and not is_true(row["VEHICLE_FLAG_TRAIN_HAS_CAB"]):
+            ] and not is_true(row["HAS_CAB"]):
                 content.append(f"        default: switch_{VEHIDCODE_lcase}_livery;\n")
             elif TEMPLATE_ID_FULL in ["TPL_04S"]:
                 content.append(
@@ -1127,11 +1144,9 @@ switch (FEAT_TRAINS, SELF, sw_loco_visual_effect_{VEHIDCODE_lcase}, tile_powers_
                 )
             elif TEMPLATE_ID_FULL in [
                 "TPL_04U",
-            ] and not is_true(row["VEHICLE_FLAG_TRAIN_HAS_CAB"]):
+            ] and not is_true(row["HAS_CAB"]):
                 content.append(f"        default: spriteset_{VEHIDCODE_lcase}_l1;\n")
-            elif TEMPLATE_ID_FULL in ["TPL_04A", "TPL_04U"] and is_true(
-                row["VEHICLE_FLAG_TRAIN_HAS_CAB"]
-            ):
+            elif TEMPLATE_ID_FULL in ["TPL_04A", "TPL_04U"] and is_true(row["HAS_CAB"]):
                 content.append(f"        default: switch_{VEHIDCODE_lcase}_position;\n")
 
             else:
@@ -1140,7 +1155,7 @@ switch (FEAT_TRAINS, SELF, sw_loco_visual_effect_{VEHIDCODE_lcase}, tile_powers_
 
             if row["COST_CAT"] == "COACH":
                 if TEMPLATE_ID_FULL in ["TPL_04A", "TPL_04U"] and is_true(
-                    row["VEHICLE_FLAG_TRAIN_HAS_CAB"]
+                    row["HAS_CAB"]
                 ):
                     content.append(
                         f"        // Always flip because DT has to face backwards\n"
@@ -1166,10 +1181,7 @@ switch (FEAT_TRAINS, SELF, sw_loco_visual_effect_{VEHIDCODE_lcase}, tile_powers_
 
             # At the moment there's just 1 CARGOxMU..
             overrideType = (
-                "cargo_"
-                if row["LOADINGSPEED"] == "CARGO"
-                and is_true(row["MISC_FLAGS_TRAIN_FLAG_MU"])
-                else ""
+                "cargo_" if row["LOADINGSPEED"] == "CARGO" and HAS_MU_FLAG else ""
             )
 
             if category in ["METRO"]:

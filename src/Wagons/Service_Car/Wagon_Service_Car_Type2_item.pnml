@@ -44,7 +44,7 @@ item(FEAT_TRAINS, item_mu_wagon_service_car_type2) {
         refittable_cargo_classes: bitmask(NO_CARGO_CLASS);
         
         cargo_age_period: 185;
-        misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_AUTOREFIT);
+        misc_flags: bitmask(TRAIN_FLAG_2CC);
         refit_cost: 0;
         ai_special_flag: AI_FLAG_PASSENGER | AI_FLAG_CARGO;
         track_type: [STANDARD_GAUGE_RAILTYPE_NONE, NARROW_GAUGE_RAILTYPE_NONE, BROAD_GAUGE_RAILTYPE_NONE];
