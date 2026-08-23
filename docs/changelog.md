@@ -1,5 +1,24 @@
 # 2cc Trains In NML (Revival) changelog
 
+## 4.0.1
+
+### 4.0.1 [2026xxxx]
+- CODE CHANGES:
+  - `Dual mode` badges are now available. Also changed some naming logic whereby special power types (dual mode, gas turbine) would no longer be doubled as "Diesel, Gas Turbine" or "Electric, Dual Mode".
+- VEHICLES ADDS:
+  - `Siemens Vectron MS`
+  - `Siemens Vectron DE`
+  - `Siemens Vectron Dual Mode`  
+- VEHICLES CHANGES:
+  - Various visual only sprite changes.
+  - `Comeng XPT` is now 7 long, not 8.
+  - `Comeng W Class 'Sputnik'` is now standard gauge as it should be
+  - `Bombardier-Alstom HHP-8` speed reduced to 201 km/h
+  - `LNER A4 'Gresley'` speed increased to 160 km/h
+  - `De Dietrich/Adtranz mDDm 390` speed decreased to 140 km/h
+  - `North British LC R 4-6-4 Hudson` speed decreased to 115 km/h
+  - `Zuzhou KZ4A` speed decreased to 200 km/h
+
 ## 4.0
 
 ### 4.0 [20260822]

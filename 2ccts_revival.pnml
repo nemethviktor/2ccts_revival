@@ -1151,6 +1151,9 @@
 #include "src/Diesel/KMZ_TU7_TGM40_graphics.pnml"
 #include "src/Diesel/KMZ_TU7_TGM40_item.pnml"
 
+#include "src/Diesel/Siemens_Vectron_DE_graphics.pnml"
+#include "src/Diesel/Siemens_Vectron_DE_item.pnml"
+
 
 //// EMU
 #include "src/EMU/Werkspoor_Mat24_graphics.pnml"
@@ -1940,6 +1943,12 @@
 
 #include "src/Electric/Alsthom_F_Series_graphics.pnml"
 #include "src/Electric/Alsthom_F_Series_item.pnml"
+
+#include "src/Electric/Siemens_Vectron_graphics.pnml"
+#include "src/Electric/Siemens_Vectron_item.pnml"
+
+#include "src/Electric/Siemens_Vectron_Dual_Mode_graphics.pnml"
+#include "src/Electric/Siemens_Vectron_Dual_Mode_item.pnml"
 
 #include "src/Electric/BRC_W_London_1903_Stock_graphics.pnml"
 #include "src/Electric/BRC_W_London_1903_Stock_item.pnml"

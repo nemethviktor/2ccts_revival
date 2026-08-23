@@ -306,6 +306,7 @@
 | ![Stadler UKLight](vehicle_graphics/str_diesel_stadler_uklight.png) | Stadler UKLight | 2014 | 160 / 99 | 3800 / 2833 | Express | 0 | STANDARD_NONE | Northern Europe | No |
 | ![Vossloh Afro 4000](vehicle_graphics/str_diesel_vossloh_afro_4000.png) | Vossloh Afro 4000 | 2014 | 130 / 80 | 4262 / 3177 | Express | 0 | NARROW_NONE | Africa | No |
 | ![Siemens Charger ALC-42](vehicle_graphics/str_diesel_siemens_charger_alc_42.png) | Siemens Charger ALC-42 | 2015 | 201 / 124 | 4200 / 3131 | Express | 0 | STANDARD_NONE | North America | No |
+| ![Siemens Vectron DE](vehicle_graphics/str_diesel_siemens_vectron_de.png) | Siemens Vectron DE | 2016 | 160 / 99 | 3620 / 2699 | Express | 0 | STANDARD_NONE | Northern Europe, Eastern Europe, Western Europe, Southern Europe | No |
 
 ## DIESELRAILBUS
 
@@ -575,13 +576,13 @@
 | ![Alsthom Class 13 HLE](vehicle_graphics/str_electric_alsthom_class_13_hle.png) | Alsthom Class 13 HLE | 1997 | 200 / 124 | 6968 / 5195 | Express | 0 | STANDARD_25KV, STANDARD_3KV, STANDARD_1500V | Western Europe | No |
 | ![Toshiba EH500](vehicle_graphics/str_electric_toshiba_eh500.png) | Toshiba EH500 | 1997 | 110 / 68 | 5400 / 4026 | Express | 0 | NARROW_25KV, NARROW_1500V | Asia | No |
 | ![Hitachi WAG-6B/C](vehicle_graphics/str_electric_hitachi_wag_6b_c.png) | Hitachi WAG-6B/C | 1998 | 100 / 62 | 6110 / 4555 | Freight | 0 | BROAD_25KV | Asia | No |
-| ![Bombardier-Alstom HHP-8](vehicle_graphics/str_electric_bombardier_alstom_hhp_8.png) | Bombardier-Alstom HHP-8 | 1999 | 217 / 134 | 8000 / 5964 | Express | 0 | STANDARD_25KV, STANDARD_15KV | North America | No |
+| ![Bombardier-Alstom HHP-8](vehicle_graphics/str_electric_bombardier_alstom_hhp_8.png) | Bombardier-Alstom HHP-8 | 1999 | 201 / 124 | 8000 / 5964 | Express | 0 | STANDARD_25KV, STANDARD_15KV | North America | No |
 | ![Bombardier Traxx F140 MS](vehicle_graphics/str_electric_bombardier_traxx_f140_ms.png) | Bombardier Traxx F140 MS | 2000 | 140 / 86 | 5600 / 4175 | Freight | 0 | STANDARD_OHLE, BROAD_OHLE | Northern Europe, Eastern Europe, Western Europe, Southern Europe | No |
 | ![Bombardier Traxx H80 AC](vehicle_graphics/str_electric_bombardier_traxx_h80_ac.png) | Bombardier Traxx H80 AC | 2000 | 80 / 49 | 14400 / 10736 | Heavy Freight | 0 | STANDARD_15KV | Northern Europe | No |
 | ![Siemens EuroSprinter ES64U4](vehicle_graphics/str_electric_siemens_eurosprinter_es64u4.png) | Siemens EuroSprinter ES64U4 | 2000 | 230 / 142 | 11266 / 8399 | Express | 0 | STANDARD_OHLE | Northern Europe, Eastern Europe, Western Europe, Southern Europe | No |
 | ![DEVZ DS3](vehicle_graphics/str_electric_devz_ds3.png) | DEVZ DS3 | 2003 | 160 / 99 | 6450 / 4809 | Express | 0 | BROAD_25KV | Eastern Europe | No |
 | ![Siemens EuroSprinter ES64F4](vehicle_graphics/str_electric_siemens_eurosprinter_es64f.png) | Siemens EuroSprinter ES64F4 | 2003 | 140 / 86 | 7000 / 5219 | Freight | 0 | STANDARD_OHLE | Asia, Northern Europe, Eastern Europe, Western Europe, Southern Europe | No |
-| ![Zuzhou KZ4A](vehicle_graphics/str_electric_zuzhou_kz4a.png) | Zuzhou KZ4A | 2004 | 210 / 130 | 6500 / 4846 | Express | 0 | BROAD_25KV | Asia | No |
+| ![Zuzhou KZ4A](vehicle_graphics/str_electric_zuzhou_kz4a.png) | Zuzhou KZ4A | 2004 | 200 / 124 | 6500 / 4846 | Express | 0 | BROAD_25KV | Asia | No |
 | ![Toshiba/CNR Dalian HXD3](vehicle_graphics/str_electric_toshiba_cnr_dalian_hxd3.png) | Toshiba/CNR Dalian HXD3 | 2006 | 120 / 74 | 9700 / 7232 | Heavy Freight | 0 | STANDARD_25KV | Asia | No |
 | ![Alstom/CRRC Datong HXD2](vehicle_graphics/str_electric_alstom_crrc_datong_hxd2.png) | Alstom/CRRC Datong HXD2 | 2007 | 120 / 74 | 13000 / 9692 | Heavy Freight | 0 | STANDARD_25KV | Asia | No |
 | ![Alstom/CRRC Datong HXD2B](vehicle_graphics/str_electric_alstom_crrc_datong_hxd2b.png) | Alstom/CRRC Datong HXD2B | 2007 | 120 / 74 | 12900 / 9618 | Heavy Freight | 0 | STANDARD_25KV, BROAD_25KV | Asia, Eastern Europe | No |
@@ -597,8 +598,10 @@
 | ![Toshiba/CRRC HXD1D](vehicle_graphics/str_electric_toshiba_crrc_hxd1d.png) | Toshiba/CRRC HXD1D | 2012 | 160 / 99 | 9700 / 7232 | Express | 0 | STANDARD_25KV | Asia | No |
 | ![ZELC 20E 'China Doll'](vehicle_graphics/str_electric_zelc_20e_china_doll.png) | ZELC 20E 'China Doll' | 2013 | 100 / 62 | 4000 / 2982 | Express | 0 | NARROW_25KV | Africa | No |
 | ![Alstom KZ8A](vehicle_graphics/str_electric_alstom_kz8a.png) | Alstom KZ8A | 2014 | 120 / 74 | 11800 / 8798 | Heavy Freight | 0 | BROAD_25KV | Asia | No |
+| ![Siemens Vectron MS](vehicle_graphics/str_electric_siemens_vectron.png) | Siemens Vectron MS | 2015 | 160 / 99 | 8582 / 6398 | Express | 0 | STANDARD_OHLE, BROAD_25KV | Northern Europe, Eastern Europe, Western Europe, Southern Europe | No |
 | ![PESA 111MS](vehicle_graphics/str_electric_pesa_111ms.png) | PESA 111MS | 2016 | 200 / 124 | 8582 / 6398 | Express | 0 | STANDARD_OHLE | Eastern Europe | No |
 | ![TRC E6800](vehicle_graphics/str_electric_trc_e6800.png) | TRC E6800 | 2024 | 160 / 99 | 6705 / 4999 | Express | 0 | STANDARD_25KV | Africa | No |
+| ![Siemens Vectron Dual Mode](vehicle_graphics/str_electric_siemens_vectron_dual_mode.png) | Siemens Vectron Dual Mode | 2026 | 160 / 99 | 2682 / 1999 | Express | 0 | STANDARD_15KV, STANDARD_NONE | Western Europe | No |
 | ![ACME Corp. HS001](vehicle_graphics/str_electric_acme_corp__hs001.png) | ACME Corp. HS001 | 2043 | 300 / 186 | 10000 / 7456 | Ultra-High-Speed (Universal) | 0 | STANDARD_OHLE, BROAD_OHLE | Western Europe | Yes |
 | ![ACME Corp. HS002](vehicle_graphics/str_electric_acme_corp__hs002.png) | ACME Corp. HS002 | 2051 | 320 / 198 | 18000 / 13420 | Ultra-High-Speed (Universal) | 0 | STANDARD_OHLE, BROAD_OHLE | Western Europe | Yes |
 
@@ -655,7 +658,7 @@
 | ![Alsthom/Jeumont TCDD E8000](vehicle_graphics/str_emu_alsthom_jeumont_tcdd_e8000.png) | Alsthom/Jeumont TCDD E8000 | 1955 | 90 / 55 | 1100 / 820 | Commuter/Urban | 162 | STANDARD_25KV | Asia, Eastern Europe | No |
 | ![GRC&W Harris Trains](vehicle_graphics/str_emu_grc_w_harris_trains.png) | GRC&W Harris Trains | 1956 | 113 / 70 | 808 / 602 | Commuter/Urban | 202 | BROAD_1500V | Oceania | No |
 | ![SGP/AEG/BBC 4030](vehicle_graphics/str_emu_sgp_aeg_bbc_4030.png) | SGP/AEG/BBC 4030 | 1956 | 100 / 62 | 1341 / 999 | Commuter/Urban | 144 | STANDARD_15KV | Western Europe | No |
-| ![Comeng W Class 'Sputnik'](vehicle_graphics/str_emu_comeng_w_class_sputnik.png) | Comeng W Class 'Sputnik' | 1957 | 120 / 74 | 760 / 566 | Express Passenger | 118 | NARROW_1500V | Oceania | No |
+| ![Comeng W Class 'Sputnik'](vehicle_graphics/str_emu_comeng_w_class_sputnik.png) | Comeng W Class 'Sputnik' | 1957 | 120 / 74 | 760 / 566 | Commuter/Urban | 118 | STANDARD_1500V | Oceania | No |
 | ![Metro-Cammell 5M2](vehicle_graphics/str_emu_metro_cammell_5m2.png) | Metro-Cammell 5M2 | 1958 | 100 / 62 | 2480 / 1849 | Express Passenger | 176 | NARROW_3KV | Africa | No |
 | ![JNR Container Bullet Train Concept](vehicle_graphics/str_cargoemu_jnr_container_bullet_train_concept.png) | JNR Container Bullet Train Concept | 1960 | 160 / 99 | 1800 / 1342 | Freight | 120 | STANDARD_25KV | Asia | Yes |
 | ![SIG Rae TEE II](vehicle_graphics/str_emu_sig_rae_tee_ii.png) | SIG Rae TEE II | 1961 | 160 / 99 | 3100 / 2311 | Express Passenger | 116 | STANDARD_OHLE | Western Europe | No |
@@ -698,7 +701,7 @@
 | ![GEC-Alsthom Thalys PBKA](vehicle_graphics/str_emu_gec_alsthom_thalys_pbka.png) | GEC-Alsthom Thalys PBKA | 1995 | 300 / 186 | 11800 / 8798 | Ultra-High-Speed (Universal) | 0 | STANDARD_OHLE | Western Europe | No |
 | ![Alsthom S-Tog IV](vehicle_graphics/str_emu_alsthom_s_tog_iv.png) | Alsthom S-Tog IV | 1996 | 120 / 74 | 1150 / 857 | Commuter/Urban | 180 | STANDARD_1500V | Northern Europe | No |
 | ![AnsaldoBreda ALe 426](vehicle_graphics/str_emu_ansaldobreda_ale_426.png) | AnsaldoBreda ALe 426 | 1996 | 140 / 86 | 2508 / 1869 | Commuter/Urban | 204 | STANDARD_3KV | Southern Europe | No |
-| ![De Dietrich/Adtranz mDDm 390](vehicle_graphics/str_emu_de_dietrich_adtranz_mddm_390.png) | De Dietrich/Adtranz mDDm 390 | 1997 | 160 / 99 | 3219 / 2400 | Express Passenger | 128 | STANDARD_1500V | Western Europe | No |
+| ![De Dietrich/Adtranz mDDm 390](vehicle_graphics/str_emu_de_dietrich_adtranz_mddm_390.png) | De Dietrich/Adtranz mDDm 390 | 1997 | 140 / 86 | 3219 / 2400 | Commuter/Urban | 128 | STANDARD_1500V | Western Europe | No |
 | ![Hitachi Shinkansen Series 700](vehicle_graphics/str_emu_hitachi_shinkansen_series_700.png) | Hitachi Shinkansen Series 700 | 1997 | 270 / 167 | 1810 / 1349 | Express Passenger | 130 | STANDARD_25KV | Asia | No |
 | ![Walkers Tilt Train 'ETT'](vehicle_graphics/str_emu_walkers_tilt_train_ett.png) | Walkers Tilt Train 'ETT' | 1997 | 160 / 99 | 1820 / 1356 | Ultra-High-Speed (Pax) | 94 | NARROW_25KV | Oceania | No |
 | ![Adtranz BM73](vehicle_graphics/str_emu_adtranz_bm73.png) | Adtranz BM73 | 1998 | 210 / 130 | 2332 / 1738 | Express Passenger | 108 | STANDARD_15KV | Northern Europe | No |
@@ -941,7 +944,7 @@
 | ![Yorkshire Engine Co. 4-8-4T 'Nitrate 101'](vehicle_graphics/str_steam_yorkshire_engine_co__4_8_4t_nitrate_101.png) | Yorkshire Engine Co. 4-8-4T 'Nitrate 101' | 1924 | 61 / 37 | 1300 / 969 | Light Freight | 0 | STANDARD_NONE | South America | No |
 | ![ALCO 4-6-2 SAR 600](vehicle_graphics/str_steam_alco_4_6_2_sar_600.png) | ALCO 4-6-2 SAR 600 | 1925 | 115 / 71 | 2300 / 1714 | Heavy Freight | 0 | BROAD_NONE | Oceania | No |
 | ![GCR/Kitson/NBLC ROD 2-8-0 '8K'](vehicle_graphics/str_steam_gcr_kitson_nblc_rod_2_8_0_8k.png) | GCR/Kitson/NBLC ROD 2-8-0 '8K' | 1926 | 80 / 49 | 1150 / 857 | Light Freight | 0 | STANDARD_NONE | Northern Europe, Oceania | No |
-| ![Vulcan Foundry 2-6-4 Class XB](vehicle_graphics/str_steam_vulcan_foundry_2_6_4_class_xb.png) | Vulcan Foundry 2-6-4 Class XB | 1927 | 110 / 68 | 2150 / 1603 | Heavy Freight | 0 | BROAD_NONE | Asia | No |
+| ![Vulcan Foundry 4-6-2 Class XB](vehicle_graphics/str_steam_vulcan_foundry_2_6_4_class_xb.png) | Vulcan Foundry 4-6-2 Class XB | 1927 | 110 / 68 | 2150 / 1603 | Heavy Freight | 0 | BROAD_NONE | Asia | No |
 | ![FS 691](vehicle_graphics/str_steam_fs_691.png) | FS 691 | 1928 | 130 / 80 | 1750 / 1304 | Heavy Freight | 0 | STANDARD_NONE | Southern Europe | No |
 | ![GWR 4900 'Hall'](vehicle_graphics/str_steam_gwr_4900_hall.png) | GWR 4900 'Hall' | 1928 | 130 / 80 | 1450 / 1081 | Express | 0 | STANDARD_NONE | Northern Europe | No |
 | ![Vulcan Foundry 4-8-2 4318-4320](vehicle_graphics/str_steam_vulcan_foundry_4_8_2_4318_4320.png) | Vulcan Foundry 4-8-2 4318-4320 | 1928 | 65 / 40 | 900 / 671 | Light Freight | 0 | NARROW_NONE | Africa | No |
@@ -956,7 +959,7 @@
 | ![H. Cegielski OKz32](vehicle_graphics/str_steam_h__cegielski_okz32.png) | H. Cegielski OKz32 | 1934 | 75 / 46 | 1868 / 1392 | Universal | 0 | STANDARD_NONE | Eastern Europe | No |
 | ![LMS 5MT 'Black Five'](vehicle_graphics/str_steam_lms_5mt_black_five.png) | LMS 5MT 'Black Five' | 1934 | 145 / 90 | 1600 / 1192 | Express | 0 | STANDARD_NONE | Northern Europe | No |
 | ![Kolomna 9P](vehicle_graphics/str_steam_kolomena_9p.png) | Kolomna 9P | 1935 | 35 / 21 | 450 / 335 | Shunting | 0 | BROAD_NONE | Asia, Northern Europe, Eastern Europe | No |
-| ![LNER A4 'Gresley'](vehicle_graphics/str_steam_lner_a4_gresley.png) | LNER A4 'Gresley' | 1935 | 140 / 86 | 2200 / 1640 | Express | 0 | STANDARD_NONE | Northern Europe | No |
+| ![LNER A4 'Gresley'](vehicle_graphics/str_steam_lner_a4_gresley.png) | LNER A4 'Gresley' | 1935 | 160 / 99 | 2200 / 1640 | Express | 0 | STANDARD_NONE | Northern Europe | No |
 | ![MAVAG 4-4-4T 242](vehicle_graphics/str_steam_mavag_4_4_4t_242.png) | MAVAG 4-4-4T 242 | 1936 | 120 / 74 | 618 / 460 | Express | 0 | STANDARD_NONE | Eastern Europe | No |
 | ![MLW 'Royal Hudson'](vehicle_graphics/str_steam_mlw_royal_hudson.png) | MLW 'Royal Hudson' | 1937 | 144 / 89 | 3100 / 2311 | Express | 0 | STANDARD_NONE | North America | No |
 | ![NOHAB 4-6-2 'F'](vehicle_graphics/str_steam_nohab_4_6_2_f.png) | NOHAB 4-6-2 'F' | 1937 | 110 / 68 | 1600 / 1192 | Universal | 0 | STANDARD_NONE | Northern Europe | No |
@@ -975,7 +978,7 @@
 | ![Swindon Works 381](vehicle_graphics/str_steam_swindon_works_381.png) | Swindon Works 381 | 1949 | 65 / 40 | 500 / 372 | Light Freight | 0 | STANDARD_NONE | Northern Europe | No |
 | ![ALCO/Baldwin 2-8-0 'USATC S160'](vehicle_graphics/str_steam_alco_baldwin_2_8_0_usatc_s160.png) | ALCO/Baldwin 2-8-0 'USATC S160' | 1951 | 80 / 49 | 1200 / 894 | Light Freight | 0 | STANDARD_NONE | Southern Europe | No |
 | ![Fablok 2-6-2 OI49](vehicle_graphics/str_steam_fablok_2_6_2_oi49.png) | Fablok 2-6-2 OI49 | 1951 | 100 / 62 | 1290 / 961 | Heavy Freight | 0 | STANDARD_NONE | Asia, Eastern Europe | No |
-| ![North British LC R 4-6-4 Hudson](vehicle_graphics/str_steam_north_british_lc_r_4_6_4_hudson.png) | North British LC R 4-6-4 Hudson | 1951 | 130 / 80 | 2400 / 1789 | Heavy Freight | 0 | BROAD_NONE | Oceania | No |
+| ![North British LC R 4-6-4 Hudson](vehicle_graphics/str_steam_north_british_lc_r_4_6_4_hudson.png) | North British LC R 4-6-4 Hudson | 1951 | 115 / 71 | 2400 / 1789 | Heavy Freight | 0 | BROAD_NONE | Oceania | No |
 | ![Beyer, P & Co 4-8-4+4-8-4 7473-7497](vehicle_graphics/str_steam_beyer__p___co_4_8_4_4_8_4_7473_7497.png) | Beyer, P & Co 4-8-4+4-8-4 7473-7497 | 1952 | 95 / 59 | 3500 / 2609 | Heavy Freight | 0 | STANDARD_NONE | Oceania | No |
 | ![VEB 2-10-2T 99.77-79](vehicle_graphics/str_steam_veb_2_10_2t_99_77_79.png) | VEB 2-10-2T 99.77-79 | 1952 | 30 / 18 | 592 / 441 | Shunting | 0 | NARROW_NONE | Western Europe | No |
 | ![Beyer, P & Co. 4-8-2+2-8-4 7550-7552](vehicle_graphics/str_steam_beyer__p___co__4_8_2_2_8_4_7550_7552.png) | Beyer, P & Co. 4-8-2+2-8-4 7550-7552 | 1953 | 85 / 52 | 2500 / 1864 | Heavy Freight | 0 | NARROW_NONE | Africa | No |

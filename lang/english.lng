@@ -2,7 +2,7 @@
 
 # Hardcoded Strings
 STR_GRF_NAME                                                      :{TITLE}
-STR_GRF_DESCRIPTION                                               :{SILVER}2cc Trains of the World in NML {}{}(c)2ccts Revival {}License GPLv2 or higher. {}See readme for details.{}{SILVER}Build: 2026-08-22-10:39:10
+STR_GRF_DESCRIPTION                                               :{SILVER}2cc Trains of the World in NML {}{}(c)2ccts Revival {}License GPLv2 or higher. {}See readme for details.{}{SILVER}Build: 2026-08-23-11:07:24
 STR_GRF_URL                                                       :https://github.com/nemethviktor/2ccts_revival
 STR_USED_WITH_DYNAMIC_ENGINES                                     :dynamic_engines = true (setting in openttd.cfg)
 STR_ERROR_REGION                                                  :No regions enabled, {STRING} has been disabled
@@ -40,7 +40,7 @@ STR_SUFFIX_25KV                                                   :25kV AC
 STR_SUFFIX_OHLE                                                   :OHLE
 STR_SUFFIX_3RD                                                    :3rd Rail
 STR_SUFFIX_4TH                                                    :4th Rail
-STR_SUFFIX_DUAL                                                   :Dual-Pickup
+STR_SUFFIX_DUAL                                                   :Dual Mode
 STR_UNIT_WAGON_PASSENGER                                          :This generic wagon can ONLY be used with passenger MUs to create trains of the desired length
 STR_UNIT_WAGON_CARGO                                              :This generic wagon can ONLY be used with cargo MUs to create trains of the desired length
 STR_CANNOT_ATTACH_WAGON_TO_MU                                     :Cannot attach wagon to Multiple Unit engine
@@ -430,6 +430,7 @@ STR_POWER_TURBINE                                                 :Gas Turbine
 STR_POWER_BATTERY                                                 :Battery
 STR_POWER_MAGLEV                                                  :Maglev
 STR_POWER_METRO                                                   :Metro
+STR_POWER_DUAL                                                    :Dual Mode
 STR_LIVERY_COMPANY_2CC                                            :Dual company colour (2CC)
 STR_LIVERY_COMPANY_RANDOM_1CC                                     :Random based on first company colour
 STR_LIVERY_COMPANY_RANDOM_2CC                                     :Random based on second company colour
@@ -563,7 +564,7 @@ str_diesel_db_kof_ii___db_322                                     :DB Kof II/DB 
 str_diesel_cnj_alco_ge_ir_boxcab_100t                             :CNJ ALCo-GE-IR Boxcab 100T (Diesel)
 str_diesel_werkspoor_200_sik                                      :Werkspoor 200 'Sik' (Diesel)
 str_diesel_bmag_wr_200_b_14                                       :BMAG 'WR 200 B 14' (Diesel)
-str_diesel_bbc_slm_am_4_6                                         :BBC/SLM Am 4/6 (Diesel, Gas Turbine)
+str_diesel_bbc_slm_am_4_6                                         :BBC/SLM Am 4/6 (Gas Turbine)
 str_diesel_ge_44_ton_switcher                                     :GE 44-ton switcher (Diesel)
 str_diesel_alco_s_2                                               :ALCO S-2 (Diesel)
 str_diesel_emd_f3                                                 :EMD F3 (Diesel)
@@ -619,7 +620,7 @@ str_diesel_ltz_tep150                                             :LTZ TEP150 (D
 str_diesel_ge_crrc_qishuyan_es59aci                               :GE/CRRC Qishuyan ES59ACi (Diesel)
 str_diesel_voith_gravita_10_bb                                    :Voith Gravita 10 BB (Diesel)
 str_diesel_voith_maxima_40_cc                                     :Voith Maxima 40 CC (Diesel)
-str_diesel_voronezh_vniizht_gt1                                   :Voronezh/VNIIZHT GT1 (Diesel, Gas Turbine)
+str_diesel_voronezh_vniizht_gt1                                   :Voronezh/VNIIZHT GT1 (Gas Turbine)
 str_diesel_emd_dda40x                                             :EMD DDA40X (Diesel)
 str_diesel_hohenzollern_emch3                                     :Hohenzollern Emch3 (Diesel)
 str_diesel_canadian_locomotive_company_v_1                        :Canadian Locomotive Company V-1 (Diesel)
@@ -763,6 +764,7 @@ str_diesel_ltz_te10ut                                             :LTZ 2TE10Ut (
 str_diesel_faur_a20dp                                             :Faur A20D-P (Diesel)
 str_diesel_faur_l45h                                              :Faur L45H (Diesel)
 str_diesel_kmz_tu7_tgm40                                          :KMZ TU7/TGM40 (Diesel)
+str_diesel_siemens_vectron_de                                     :Siemens Vectron DE (Diesel)
 
 # Dieselrailbus
 str_rbd_aec_railmotor_rm1                                         :AEC railmotor RM1 (Diesel Railbus)
@@ -1051,6 +1053,8 @@ str_electric_alco_ge_t_motor                                      :ALCO-GE T-Mot
 str_electric_altoona_works_dd1                                    :Altoona Works Pennsylvania Railroad DD1 (Electric, 3rd Rail)
 str_electric_alsthom_cc_7100                                      :Alsthom CC 7100 (Electric, 3kV DC, 1500V DC)
 str_electric_alsthom_f_series                                     :Alsthom F Series (Electric, 25kV AC)
+str_electric_siemens_vectron                                      :Siemens Vectron MS (Electric, OHLE, 25kV AC)
+str_electric_siemens_vectron_dual_mode                            :Siemens Vectron Dual Mode (Dual Mode, 15kV AC)
 
 # Electricrailbus
 str_rbe_slm_cfe_3_3                                               :SLM CFe 3/3 (Electric Railbus, 1500V DC)
@@ -1330,7 +1334,7 @@ str_steam_beyer__p___co_2_4_0_ss_9_16                             :Beyer, P & Co
 str_steam_beyer__p___co_2_6_0_6112_6113                           :Beyer, P & Co 2-6-0 6112-6113 (Steam)
 str_steam_baldwin_10_32_e_55246                                   :Baldwin 10-32-E 55246 (Steam)
 str_steam_canadian_national_u_1_a_                                :Canadian National U-1-a (Steam)
-str_steam_vulcan_foundry_2_6_4_class_xb                           :Vulcan Foundry 2-6-4 Class XB (Steam)
+str_steam_vulcan_foundry_2_6_4_class_xb                           :Vulcan Foundry 4-6-2 Class XB (Steam)
 str_steam_robert_stephenson_4_6_2_6982_6985                       :Robert Stephenson 4-6-2 6982-6985 (Steam)
 str_steam_enr_1100__lms_fowler_3f___wd_0_6_0t_                    :LMS Fowler 3F WD 0-6-0T (Steam)
 str_steam_kisha_seizo_2_10_4t_e10                                 :Kisha Seizo 2-10-4T E10 (Steam)

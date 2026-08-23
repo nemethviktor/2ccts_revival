@@ -38,7 +38,7 @@ STR_SUFFIX_25KV,25kV AC
 STR_SUFFIX_OHLE,OHLE
 STR_SUFFIX_3RD,3rd Rail
 STR_SUFFIX_4TH,4th Rail
-STR_SUFFIX_DUAL,Dual-Pickup
+STR_SUFFIX_DUAL,Dual Mode
 STR_UNIT_WAGON_PASSENGER,This generic wagon can ONLY be used with passenger MUs to create trains of the desired length
 STR_UNIT_WAGON_CARGO,This generic wagon can ONLY be used with cargo MUs to create trains of the desired length
 STR_CANNOT_ATTACH_WAGON_TO_MU,Cannot attach wagon to Multiple Unit engine
@@ -428,6 +428,7 @@ STR_POWER_TURBINE,Gas Turbine
 STR_POWER_BATTERY,Battery
 STR_POWER_MAGLEV,Maglev
 STR_POWER_METRO,Metro
+STR_POWER_DUAL,Dual Mode
 STR_LIVERY_COMPANY_2CC,Dual company colour (2CC)
 STR_LIVERY_COMPANY_RANDOM_1CC,Random based on first company colour
 STR_LIVERY_COMPANY_RANDOM_2CC,Random based on second company colour
@@ -554,7 +555,7 @@ str_steam_beyer__p___co_2_4_0_ss_9_16,"Beyer, P & Co 2-4-0 SS 9-16"
 str_steam_beyer__p___co_2_6_0_6112_6113,"Beyer, P & Co 2-6-0 6112-6113"
 str_steam_baldwin_10_32_e_55246,Baldwin 10-32-E 55246
 str_steam_canadian_national_u_1_a_,Canadian National U-1-a
-str_steam_vulcan_foundry_2_6_4_class_xb,Vulcan Foundry 2-6-4 Class XB
+str_steam_vulcan_foundry_2_6_4_class_xb,Vulcan Foundry 4-6-2 Class XB
 str_steam_robert_stephenson_4_6_2_6982_6985,Robert Stephenson 4-6-2 6982-6985
 str_steam_enr_1100__lms_fowler_3f___wd_0_6_0t_,LMS Fowler 3F WD 0-6-0T
 str_steam_swindon_works_381,Swindon Works 381
@@ -1478,3 +1479,6 @@ str_mu_coach_gen3_pafawag_3aw,Pafawag 3Aw
 str_diesel_kmz_tu7_tgm40,KMZ TU7/TGM40
 str_electric_alsthom_cc_7100,Alsthom CC 7100
 str_electric_alsthom_f_series,Alsthom F Series
+str_electric_siemens_vectron,Siemens Vectron MS
+str_diesel_siemens_vectron_de,Siemens Vectron DE
+str_electric_siemens_vectron_dual_mode,Siemens Vectron Dual Mode

@@ -145,20 +145,13 @@ Special thanks to:
 
 ### Bug reports
 
-Please report any bugs you find at the  
-
-- bug tracker: <https://github.com/nemethviktor/2ccts_revival/issues>  (2026 onwards -- please don't use OTTD forums!)
-- or discussions: <https://github.com/nemethviktor/2ccts_revival/discussions>  (2026 onwards -- please don't use OTTD forums!)
-
-Always included a detailed description of the bug, preferably with screenshot and savegame. Also state the exact game version you're using, as well as the version of this NewGRF.
-
-If you have a savegame that includes NewGRFs not available on OpenTTD's Online Content, then please try to reproduce the bug in a new game which has all NewGRFs easily accessible.
-
-If you're using a patched version of the game, please try to reproduce the bug on an official game build. If you can't reproduce the bug, then don't report it here but in the forum topic of the patch(pack) instead.
+Please report any bugs you find at the [bug tracker](https://github.com/nemethviktor/2ccts_revival/issues) or poke me on Discord.
 
 ### Contributing
 
 Since the database for the vehicles is stored in an Excel file that has a fair bit of complexity I'd ask people not to do a PR but instead ping me somewhere (open a ticket on Github, find me on Discord) and we can discuss ideas.
+
+If you're designing graphics for new vehicles please use one of the templates, all of which can be found in the gfx/templates folder. Futhermore there is a flowchart and explanation [here](https://github.com/nemethviktor/2ccts_revival/tree/master/gfx) as to what template applies to what vehicle type.
 
 ## License
 

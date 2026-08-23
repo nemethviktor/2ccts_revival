@@ -2727,7 +2727,7 @@ item(FEAT_TRAINS, item_diesel_ltz_te10ut, 5204) {}
 item(FEAT_TRAINS, item_diesel_faur_a20dp, 5205) {}
 item(FEAT_TRAINS, item_diesel_faur_l45h, 5206) {}
 item(FEAT_TRAINS, item_diesel_kmz_tu7_tgm40, 5207) {}
-// 5208 free
+item(FEAT_TRAINS, item_diesel_siemens_vectron_de, 5208) {}
 // 5209 free
 // 5210 free
 // 5211 free
@@ -3696,8 +3696,8 @@ item(FEAT_TRAINS, item_electric_alco_ge_t_motor, 6170) {}
 item(FEAT_TRAINS, item_electric_altoona_works_dd1, 6171) {}
 item(FEAT_TRAINS, item_electric_alsthom_cc_7100, 6172) {}
 item(FEAT_TRAINS, item_electric_alsthom_f_series, 6173) {}
-// 6174 free
-// 6175 free
+item(FEAT_TRAINS, item_electric_siemens_vectron, 6174) {}
+item(FEAT_TRAINS, item_electric_siemens_vectron_dual_mode, 6175) {}
 // 6176 free
 // 6177 free
 // 6178 free

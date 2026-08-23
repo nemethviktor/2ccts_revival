@@ -13,6 +13,7 @@ spriteset (sprite_power_steam) {[0, 0, 16, 12, 0, 0, "gfx/Badges/power/power_ste
 spriteset (sprite_power_turbine) {[0, 0, 16, 12, 0, 0, "gfx/Badges/power/power_turbine.png"]}
 spriteset (sprite_power_maglev) {[0, 0, 16, 12, 0, 0, "gfx/Badges/power/power_maglev.png"]}
 spriteset (sprite_power_metro) {[0, 0, 16, 12, 0, 0, "gfx/Badges/power/power_metro.png"]}
+spriteset (sprite_power_dual) {[0, 0, 16, 12, 0, 0, "gfx/Badges/power/power_dual.png"]}
 spriteset (sprite_attribute_push_pull) {[0, 0, 16, 12, 0, 0, "gfx/Badges/attributes/attribute_push_pull.png"]}
 spriteset (sprite_flag_AF) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/af.png"]}
 spriteset (sprite_flag_AX) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/ax.png"]}
@@ -536,6 +537,7 @@ spriteset (sprite_flag_WRLD) {[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/wrld.png"]}b
 	"power/turbine",
 	"power/maglev",
 	"power/metro",
+	"power/dual",
 
 // Regions
 	"region",
@@ -3239,6 +3241,16 @@ item (FEAT_BADGES, power_metro) {
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
 	}
 	graphics {default: sprite_power_metro;}
+}
+
+	
+item (FEAT_BADGES, power_dual) {
+    property {
+        label: "power/dual";
+        name: string(STR_POWER_DUAL);
+        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);
+	}
+	graphics {default: sprite_power_dual;}
 }
 
 
