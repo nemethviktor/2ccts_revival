@@ -4,6 +4,7 @@ import pandas as pd
 import os
 from functools import wraps
 import warnings
+from pathlib import Path
 from pandas.api.types import is_number
 
 warnings.filterwarnings("ignore", category=UserWarning, module="openpyxl")
@@ -3045,27 +3046,29 @@ def generate_graphics_pnml():
     for _, row in df_master.iterrows():
         if row["VEHIDCODE"] == "" or isinstance(row["TEMPLATE_ID"], float):
             continue
-        # Extract copyright header text
+
         copyright_header = df_copyright.columns[0] if not df_gfx_props.empty else ""
         template_id_int = int(row["TEMPLATE_ID"][-2:])
 
         if min_templateID <= template_id_int <= max_templateID:
-            save_path = row["SAVE_TO"]
-            expected_fn = row["FILENAMES_EXPECTED"]
-
+            # Prepare file path and content
+            file_path = (
+                Path(project_root)
+                / row["SAVE_TO"]
+                / f"{row['FILENAMES_EXPECTED']}_graphics.pnml"
+            )
             nml_code = get_tpl_controller(row, copyright_header)
+            new_content = "".join(nml_code) if isinstance(nml_code, list) else nml_code
 
-            # 5. Save the file
-            # ensure directories exist (e.g., src/Coaches/Gen1)
-            full_output_dir = os.path.join(project_root, save_path)
-            if not os.path.exists(full_output_dir):
-                os.makedirs(full_output_dir)
+            # Create directory only if needed
+            file_path.parent.mkdir(parents=True, exist_ok=True)
 
-            pnml_filename = f"{expected_fn}_graphics.pnml"
-            with open(
-                os.path.join(full_output_dir, pnml_filename), "w", encoding="utf-8"
-            ) as f:
-                f.writelines(nml_code)
+            # Overwrite only if file doesn't exist or content has changed
+            if (
+                not file_path.exists()
+                or file_path.read_text(encoding="utf-8") != new_content
+            ):
+                file_path.write_text(new_content, encoding="utf-8")
 
     print("Success: PNML graphics files generated based on Excel tables.")
 

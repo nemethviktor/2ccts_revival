@@ -6,6 +6,7 @@ import openpyxl
 import os
 import math
 import warnings
+from pathlib import Path
 from pandas.api.types import is_number
 import re
 
@@ -1258,12 +1259,18 @@ switch (FEAT_TRAINS, SELF, sw_loco_visual_effect_{VEHIDCODE_lcase}, tile_powers_
         rel_folder = str(row["SAVE_TO"]).replace("\\", "/")
         abs_folder = os.path.normpath(os.path.join(project_root, rel_folder))
         os.makedirs(abs_folder, exist_ok=True)
-        with open(
-            os.path.join(abs_folder, f"{row['FILENAMES_EXPECTED']}_item.pnml"),
-            "w",
-            encoding="utf-8",
-        ) as f:
-            f.writelines(content)
+        file_path = Path(abs_folder) / f"{row['FILENAMES_EXPECTED']}_item.pnml"
+        file_path.parent.mkdir(parents=True, exist_ok=True)
+
+        # Prepare string content (f.writelines expects an iterable/list of strings)
+        new_content = "".join(content) if isinstance(content, list) else content
+
+        # Check existing content and write only if modified
+        if (
+            not file_path.exists()
+            or file_path.read_text(encoding="utf-8") != new_content
+        ):
+            file_path.write_text(new_content, encoding="utf-8")
 
     # Save as CSV - this takes quite a few seconds.
     # print("---- Saving CSV File ----")

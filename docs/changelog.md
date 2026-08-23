@@ -5,6 +5,7 @@
 ### 4.0.1 [2026xxxx]
 - CODE CHANGES:
   - `Dual mode` badges are now available. Also changed some naming logic whereby special power types (dual mode, gas turbine) would no longer be doubled as "Diesel, Gas Turbine" or "Electric, Dual Mode".
+  - Various changes to make build run more efficiently
 - VEHICLES ADDS:
   - `Siemens Vectron MS`
   - `Siemens Vectron DE`
