@@ -585,6 +585,7 @@ def get_purchase(
     purchase_y: int,
     template_suffix: str = None,
     dont_show_main_comment: bool = False,
+    is_dual_mode: bool = False,
 ) -> str:
     if template_suffix and template_suffix[0] != "_":
         template_suffix = "_" + template_suffix
@@ -592,7 +593,7 @@ def get_purchase(
         template_suffix = ""
     main_comment = "\n// PURCHASE" if not dont_show_main_comment else ""
     return f"""{main_comment}
-spriteset(spriteset_{vid}_purchase, "{gfx_path}") {{template_purchase{template_suffix}({purchase_x}, {purchase_y})}}
+spriteset(spriteset_{vid}_purchase, "{(gfx_path.replace('.png', '') + "_panto_up.png" if is_dual_mode else gfx_path)}") {{template_purchase{template_suffix}({purchase_x}, {purchase_y})}}
 """
 
 
@@ -608,6 +609,7 @@ def get_vehicle(
     use_comment_as_spritename_suffix: bool = False,
     dont_show_main_comment: bool = False,
     extra_comment: str = None,
+    is_dual_mode: bool = False,
 ) -> str:
     """
     Gets the vehicle related code
@@ -625,7 +627,22 @@ def get_vehicle(
     if extra_comment:
         vehicle_str += "\n" + extra_comment
     vehicle_str += "\n/// " + title_comment.replace("_", " ").title() + "\n"
-    vehicle_str += f"""spriteset(spriteset_{vid}{sprite_suffix}, "{gfx_path}") {{template{template_suffix}({vehicle_x}, {vehicle_y})}}\n"""
+    if is_dual_mode:
+        vehicle_str += f"""
+spriteset(spriteset_{vid}_panto_up, "{gfx_path.replace('.png', '')}_panto_up.png") {{
+    template{template_suffix}({vehicle_x}, {vehicle_y})
+}}
+
+spriteset(spriteset_{vid}_panto_down, "{gfx_path.replace('.png', '')}_panto_down.png") {{
+    template{template_suffix}({vehicle_x}, {vehicle_y})
+}}
+
+switch (FEAT_TRAINS, SELF, sw_{vid}_dual_mode_sprites, tile_powers_railtype("ELRL")) {{
+    1: spriteset_{vid}_panto_up;
+    spriteset_{vid}_panto_down;
+}}\n"""
+    else:
+        vehicle_str += f"""spriteset(spriteset_{vid}{sprite_suffix}, "{gfx_path}") {{template{template_suffix}({vehicle_x}, {vehicle_y})}}\n"""
     return vehicle_str
 
 
@@ -868,6 +885,7 @@ def get_tpl_01(vid, gfx_path, row, template_amendment_code):
             purchase_x=1,
             purchase_y=purchase_y,
             template_suffix=purchase_amendment,
+            is_dual_mode=row["POWER_SPECIAL"] == "DUAL",
         )
     )
     nml_code.append(
@@ -878,6 +896,7 @@ def get_tpl_01(vid, gfx_path, row, template_amendment_code):
             vehicle_x=engine_x,
             vehicle_y=1,
             template_suffix=engine_amendment,
+            is_dual_mode=row["POWER_SPECIAL"] == "DUAL",
         )
     )
 

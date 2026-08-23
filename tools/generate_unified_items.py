@@ -663,6 +663,9 @@ def generate_unified_items():
         VEHID_CATEGORY = row["VEHID_ID_CATEGORY"].replace("ID_RANGE_", "")
 
         IS_DUAL_HEADED = is_true(row["DUAL_HEADED"])
+
+        IS_DUAL_POWERED = row["POWER_SPECIAL"] == "DUAL"
+
         HAS_MU_FLAG = (
             (
                 VEHIDCODE_lcase.startswith("mtro_")
@@ -676,7 +679,7 @@ def generate_unified_items():
         )
 
         # Fetch Multipliers
-        category = str(row["COST_CAT"]).strip()
+        category = str(row["COST_CAT"]).strip() if not IS_DUAL_POWERED else "DUALENGINE"
         m = df_cost_lookup.loc[category]
 
         # Calculate Costs for main item
@@ -704,7 +707,7 @@ def generate_unified_items():
         visual_effect_flag_1 = "DISABLE"
         if is_true(row["IS_WAGON_OR_COACH"]):
             pass
-        elif (row["POWER_SPECIAL"]) == "DUAL":
+        elif IS_DUAL_POWERED:
             visual_effect_flag_1 = "DUAL"
         elif row["ENGINE_CLASS"] in (["ELECTRIC", "DIESEL", "STEAM"]):
             visual_effect_flag_1 = row["ENGINE_CLASS"]
@@ -916,6 +919,11 @@ def generate_unified_items():
 switch (FEAT_TRAINS, SELF, sw_loco_visual_effect_{VEHIDCODE_lcase}, tile_powers_railtype("ELRL")) {{
     1: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
     visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 0, DISABLE_WAGON_POWER);
+}}
+
+switch (FEAT_TRAINS, SELF, sw_loco_power_{VEHIDCODE_lcase}, tile_powers_railtype("ELRL")) {{
+    1: return {row['POWER']};
+    return {row['POWER_DM_DIESEL']};
 }}\n\n""")
 
         content.append(f"item(FEAT_TRAINS, {row['ITEM'].lower()}) {{\n")
@@ -936,7 +944,12 @@ switch (FEAT_TRAINS, SELF, sw_loco_visual_effect_{VEHIDCODE_lcase}, tile_powers_
         content.append(f"        cost_factor: {p_cost};\n")
         content.append(f"        running_cost_factor: {r_cost};\n")
         content.append(f"        speed: {int(row['SPEED'])} km/h;\n")
-        content.append(f"        power: {int(row['POWER'])} hp;\n")
+        power_comment = (
+            " // this needs to be here even though it's redefined in graphics further down"
+            if IS_DUAL_POWERED
+            else ""
+        )
+        content.append(f"        power: {int(row['POWER'])} hp;{power_comment}\n")
         content.append(
             f"        cargo_capacity: {255 if int(row['HEAD_CAPACITY']) > 255 else int(row['HEAD_CAPACITY'])};\n"
         )
@@ -982,8 +995,10 @@ switch (FEAT_TRAINS, SELF, sw_loco_visual_effect_{VEHIDCODE_lcase}, tile_powers_
         content.append(
             f"        engine_class: {'ENGINE_CLASS_' + row['ENGINE_CLASS']};\n"
         )
-        if visual_effect_flag_1 == "VISUAL_EFFECT_DUAL":
-            pass
+        if IS_DUAL_POWERED:
+            content.append(
+                f"        // visual_effect_and_powered: defined in graphics\n"
+            )
         else:
             content.append(
                 f"        visual_effect_and_powered: visual_effect_and_powered({visual_effect_flag_1}, {visual_effect_flag_2}, {visual_effect_flag_3});\n\n"
@@ -998,7 +1013,16 @@ switch (FEAT_TRAINS, SELF, sw_loco_visual_effect_{VEHIDCODE_lcase}, tile_powers_
         content.append("    }\n")
         # Graphics selection/overrides
         content.append("    graphics {\n")
-        if visual_effect_flag_1 == "VISUAL_EFFECT_DUAL":
+        if IS_DUAL_POWERED:
+            content.append(f"        power: sw_loco_power_{VEHIDCODE_lcase};\n")
+            content.append(
+                f"        additional_text: string("
+                f"STR_ADDITIONAL_DUAL_POWER_INFO, "
+                f"string(STR_POWER), "
+                f"{row['POWER']}, "
+                f"{row['POWER_DM_DIESEL']}"
+                f");\n"
+            )
             content.append(
                 f"        visual_effect_and_powered: sw_loco_visual_effect_{VEHIDCODE_lcase};\n"
             )
@@ -1073,7 +1097,13 @@ switch (FEAT_TRAINS, SELF, sw_loco_visual_effect_{VEHIDCODE_lcase}, tile_powers_
             content.append(f"        default: switch_{VEHIDCODE_lcase}_animation;\n")
         elif (
             category
-            in ["DIESELENGINE", "ELECTRICENGINE", "MAGLEVENGINE", "STEAMENGINE"]
+            in [
+                "DIESELENGINE",
+                "ELECTRICENGINE",
+                "MAGLEVENGINE",
+                "STEAMENGINE",
+                "DUALENGINE",
+            ]
             or category.endswith("RAILBUS")
             or is_true(row["IS_POWERED_UNPOWERED_SUNDRY"])
         ):
@@ -1089,6 +1119,10 @@ switch (FEAT_TRAINS, SELF, sw_loco_visual_effect_{VEHIDCODE_lcase}, tile_powers_
                 "TPL_42C",
             ]:
                 content.append(f"        default: switch_{VEHIDCODE_lcase}_reversed;\n")
+            elif IS_DUAL_POWERED:
+                content.append(
+                    f"        default: sw_{VEHIDCODE_lcase}_dual_mode_sprites;\n"
+                )
             else:
                 content.append(f"        default: spriteset_{VEHIDCODE_lcase};\n")
         elif category in ["COACH", "WAGON"]:

@@ -2,7 +2,7 @@
 
 # Hardcoded Strings
 STR_GRF_NAME                                                      :{TITLE}
-STR_GRF_DESCRIPTION                                               :{SILVER}2cc Trains of the World in NML {}{}(c)2ccts Revival {}License GPLv2 or higher. {}See readme for details.{}{SILVER}Build: 2026-08-23-12:55:08
+STR_GRF_DESCRIPTION                                               :{SILVER}2cc Trains of the World in NML {}{}(c)2ccts Revival {}License GPLv2 or higher. {}See readme for details.{}{SILVER}Build: 2026-08-23-21:43:22
 STR_GRF_URL                                                       :https://github.com/nemethviktor/2ccts_revival
 STR_USED_WITH_DYNAMIC_ENGINES                                     :dynamic_engines = true (setting in openttd.cfg)
 STR_ERROR_REGION                                                  :No regions enabled, {STRING} has been disabled
@@ -431,6 +431,7 @@ STR_POWER_BATTERY                                                 :Battery
 STR_POWER_MAGLEV                                                  :Maglev
 STR_POWER_METRO                                                   :Metro
 STR_POWER_DUAL                                                    :Dual Mode
+STR_ADDITIONAL_DUAL_POWER_INFO                                    :{BLACK}{STRING}: {SILVER}AC/DC: {GOLD}{COMMA} hp, {SILVER}Diesel: {GOLD}{COMMA} hp
 STR_LIVERY_COMPANY_2CC                                            :Dual company colour (2CC)
 STR_LIVERY_COMPANY_RANDOM_1CC                                     :Random based on first company colour
 STR_LIVERY_COMPANY_RANDOM_2CC                                     :Random based on second company colour

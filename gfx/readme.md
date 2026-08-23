@@ -158,6 +158,7 @@ flowchart TD
 
 Most **Engines** _exc Steam_ will fall into `TPL_01`, whichever version of it assuming there is no animation involved. I'd suggest using `TPL_01A`;
 If your design is dual-headed, still use that, don't move any of the boxes, for those -> `TPL_03B`. 
+If the item in question is dual-mode (ie diesel and electric) then the filenaming is a bit different. You'll need 2 almost identical files, one with the panto up and the other with panto down. Check out the `Siemens Vectron Dual Mode` (`Siemens_Vectron_Dual_Mode_panto_up.png` and `Siemens_Vectron_Dual_Mode_panto_down.png` in the `Electric` folder if not clear.
 
 Most **xMUs** will be `TPL_02A` if the middle cars are only different pax/mail. `TPL_02D` is for EMUs where the unpowered/powered cars are visually different. Other templates exist but I suggest not using them. There is no `TPL_02B` - it has been removed during testing.
 

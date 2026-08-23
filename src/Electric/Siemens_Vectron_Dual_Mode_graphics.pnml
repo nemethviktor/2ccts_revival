@@ -4,9 +4,21 @@
 // Template: TPL_01A
 
 // PURCHASE
-spriteset(spriteset_electric_siemens_vectron_dual_mode_purchase, "gfx/electric/siemens_vectron_dual_mode.png") {template_purchase(1, 64)}
+spriteset(spriteset_electric_siemens_vectron_dual_mode_purchase, "gfx/electric/siemens_vectron_dual_mode_panto_up.png") {template_purchase(1, 64)}
 
 
 // VEHICLE
 /// Engine
-spriteset(spriteset_electric_siemens_vectron_dual_mode, "gfx/electric/siemens_vectron_dual_mode.png") {template_2cc_engines_general(1, 1)}
+
+spriteset(spriteset_electric_siemens_vectron_dual_mode_panto_up, "gfx/electric/siemens_vectron_dual_mode_panto_up.png") {
+    template_2cc_engines_general(1, 1)
+}
+
+spriteset(spriteset_electric_siemens_vectron_dual_mode_panto_down, "gfx/electric/siemens_vectron_dual_mode_panto_down.png") {
+    template_2cc_engines_general(1, 1)
+}
+
+switch (FEAT_TRAINS, SELF, sw_electric_siemens_vectron_dual_mode_dual_mode_sprites, tile_powers_railtype("ELRL")) {
+    1: spriteset_electric_siemens_vectron_dual_mode_panto_up;
+    spriteset_electric_siemens_vectron_dual_mode_panto_down;
+}

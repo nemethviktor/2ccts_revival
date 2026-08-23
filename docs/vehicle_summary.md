@@ -601,7 +601,7 @@
 | ![Siemens Vectron MS](vehicle_graphics/str_electric_siemens_vectron.png) | Siemens Vectron MS | 2015 | 160 / 99 | 8582 / 6398 | Express | 0 | STANDARD_OHLE, BROAD_25KV | Northern Europe, Eastern Europe, Western Europe, Southern Europe | No |
 | ![PESA 111MS](vehicle_graphics/str_electric_pesa_111ms.png) | PESA 111MS | 2016 | 200 / 124 | 8582 / 6398 | Express | 0 | STANDARD_OHLE | Eastern Europe | No |
 | ![TRC E6800](vehicle_graphics/str_electric_trc_e6800.png) | TRC E6800 | 2024 | 160 / 99 | 6705 / 4999 | Express | 0 | STANDARD_25KV | Africa | No |
-| ![Siemens Vectron Dual Mode](vehicle_graphics/str_electric_siemens_vectron_dual_mode.png) | Siemens Vectron Dual Mode | 2026 | 160 / 99 | 2682 / 1999 | Express | 0 | STANDARD_15KV, STANDARD_NONE | Western Europe | No |
+| ![Siemens Vectron Dual Mode](vehicle_graphics/str_electric_siemens_vectron_dual_mode.png) | Siemens Vectron Dual Mode | 2026 | 160 / 99 | 3218 / 2399 | Express | 0 | STANDARD_15KV, STANDARD_NONE | Western Europe | No |
 | ![ACME Corp. HS001](vehicle_graphics/str_electric_acme_corp__hs001.png) | ACME Corp. HS001 | 2043 | 300 / 186 | 10000 / 7456 | Ultra-High-Speed (Universal) | 0 | STANDARD_OHLE, BROAD_OHLE | Western Europe | Yes |
 | ![ACME Corp. HS002](vehicle_graphics/str_electric_acme_corp__hs002.png) | ACME Corp. HS002 | 2051 | 320 / 198 | 18000 / 13420 | Ultra-High-Speed (Universal) | 0 | STANDARD_OHLE, BROAD_OHLE | Western Europe | Yes |
 

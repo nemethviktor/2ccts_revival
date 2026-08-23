@@ -13,6 +13,11 @@ switch (FEAT_TRAINS, SELF, sw_loco_visual_effect_electric_siemens_vectron_dual_m
     visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 0, DISABLE_WAGON_POWER);
 }
 
+switch (FEAT_TRAINS, SELF, sw_loco_power_electric_siemens_vectron_dual_mode, tile_powers_railtype("ELRL")) {
+    1: return 3218;
+    return 2682;
+}
+
 item(FEAT_TRAINS, item_electric_siemens_vectron_dual_mode) {
     property {
         name: string(str_electric_siemens_vectron_dual_mode);
@@ -22,10 +27,10 @@ item(FEAT_TRAINS, item_electric_siemens_vectron_dual_mode) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 61.02049;
-        running_cost_factor: 51.91452;
+        cost_factor: 66.2761;
+        running_cost_factor: 73.9923;
         speed: 160 km/h;
-        power: 2682 hp;
+        power: 3218 hp; // this needs to be here even though it's redefined in graphics further down
         cargo_capacity: 0;
         weight: 86 ton;
         tractive_effort_coefficient: 0.356;
@@ -42,6 +47,7 @@ item(FEAT_TRAINS, item_electric_siemens_vectron_dual_mode) {
         track_type: [STANDARD_GAUGE_RAILTYPE_15KV, STANDARD_GAUGE_RAILTYPE_NONE];
         running_cost_base: RUNNING_COST_ELECTRIC;
         engine_class: ENGINE_CLASS_ELECTRIC;
+        // visual_effect_and_powered: defined in graphics
         sprite_id: SPRITE_ID_NEW_TRAIN;
         dual_headed: 0;
         length: 8;
@@ -52,12 +58,14 @@ item(FEAT_TRAINS, item_electric_siemens_vectron_dual_mode) {
 
     }
     graphics {
+        power: sw_loco_power_electric_siemens_vectron_dual_mode;
+        additional_text: string(STR_ADDITIONAL_DUAL_POWER_INFO, string(STR_POWER), 3218, 2682);
         visual_effect_and_powered: sw_loco_visual_effect_electric_siemens_vectron_dual_mode;
         purchase: spriteset_electric_siemens_vectron_dual_mode_purchase;
         // no 'visual_effect' or 'visual_effect_and_powered'
         // no 'length'
         // no 'articulated_part'
         can_attach_wagon: switch_can_attach_vehicle;
-        default: spriteset_electric_siemens_vectron_dual_mode;
+        default: sw_electric_siemens_vectron_dual_mode_dual_mode_sprites;
     }
 }
