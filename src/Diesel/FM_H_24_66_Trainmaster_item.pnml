@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_diesel_fm_h_24_66_trainmaster) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 66.50214;
-        running_cost_factor: 49.09226;
+        cost_factor: 66.5;
+        running_cost_factor: 56.08;
         speed: 105 km/h;
         power: 2400 hp;
         cargo_capacity: 0;

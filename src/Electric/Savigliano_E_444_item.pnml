@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_electric_savigliano_e_444) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 84.69726;
-        running_cost_factor: 75.83158;
+        cost_factor: 84.7;
+        running_cost_factor: 87.72;
         speed: 200 km/h;
         power: 5729 hp;
         cargo_capacity: 0;

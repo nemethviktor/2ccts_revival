@@ -35,8 +35,8 @@ item(FEAT_TRAINS, item_dmu_lhb_vt_04_0_flying_hamburger) {
         vehicle_life: 51;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 37.11505;
-        running_cost_factor: 32.35909;
+        cost_factor: 37.12;
+        running_cost_factor: 42.15;
         speed: 160 km/h;
         power: 810 hp;
         cargo_capacity: 55;

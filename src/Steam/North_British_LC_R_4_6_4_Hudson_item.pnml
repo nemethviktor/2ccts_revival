@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_steam_north_british_lc_r_4_6_4_hudson) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 68.35599;
-        running_cost_factor: 49.09703;
+        cost_factor: 68.36;
+        running_cost_factor: 53.48;
         speed: 115 km/h;
         power: 2400 hp;
         cargo_capacity: 0;

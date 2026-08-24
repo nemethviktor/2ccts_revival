@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_diesel_ge_goninan_cm25_8) {
         vehicle_life: 41;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 59.87182;
-        running_cost_factor: 49.59234;
+        cost_factor: 59.87;
+        running_cost_factor: 55.7;
         speed: 90 km/h;
         power: 2450 hp;
         cargo_capacity: 0;

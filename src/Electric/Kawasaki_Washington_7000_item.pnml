@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_mtro_kawasaki_washington_7000) {
         vehicle_life: 50;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 50.0259;
-        running_cost_factor: 45.99642;
+        cost_factor: 50.03;
+        running_cost_factor: 51.55;
         speed: 90 km/h;
         power: 1520 hp;
         cargo_capacity: 175;

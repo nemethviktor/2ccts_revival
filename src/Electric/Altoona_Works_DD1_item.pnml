@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_electric_altoona_works_dd1) {
         vehicle_life: 39;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 70.99697;
-        running_cost_factor: 56.3305;
+        cost_factor: 71.0;
+        running_cost_factor: 67.39;
         speed: 136 km/h;
         power: 3160 hp;
         cargo_capacity: 0;

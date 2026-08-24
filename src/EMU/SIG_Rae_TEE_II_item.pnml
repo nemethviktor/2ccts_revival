@@ -34,8 +34,8 @@ item(FEAT_TRAINS, item_emu_sig_rae_tee_ii) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 65.24532;
-        running_cost_factor: 59.80602;
+        cost_factor: 65.25;
+        running_cost_factor: 70.06;
         speed: 160 km/h;
         power: 3100 hp;
         cargo_capacity: 58;

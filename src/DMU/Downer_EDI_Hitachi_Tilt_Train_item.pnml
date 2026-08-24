@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_dmu_downer_edi_hitachi_tilt_train) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 91.87765;
-        running_cost_factor: 85.37168;
+        cost_factor: 91.88;
+        running_cost_factor: 91.61;
         speed: 160 km/h;
         power: 7240 hp;
         cargo_capacity: 0;

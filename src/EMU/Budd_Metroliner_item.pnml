@@ -37,8 +37,8 @@ item(FEAT_TRAINS, item_emu_budd_metroliner) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 61.6739;
-        running_cost_factor: 53.62253;
+        cost_factor: 61.67;
+        running_cost_factor: 67.06;
         speed: 190 km/h;
         power: 2400 hp;
         cargo_capacity: 76;

@@ -35,8 +35,8 @@ item(FEAT_TRAINS, item_emu_swp_rabde_510) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 57.81896;
-        running_cost_factor: 50.77175;
+        cost_factor: 57.82;
+        running_cost_factor: 60.07;
         speed: 125 km/h;
         power: 2184 hp;
         cargo_capacity: 56;

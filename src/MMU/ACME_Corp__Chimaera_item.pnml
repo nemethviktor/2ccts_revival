@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_mmu_acme_corp__chimaera) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 164.49295;
-        running_cost_factor: 148.47866;
+        cost_factor: 164.49;
+        running_cost_factor: 133.54;
         speed: 643 km/h;
         power: 20000 hp;
         cargo_capacity: 150;

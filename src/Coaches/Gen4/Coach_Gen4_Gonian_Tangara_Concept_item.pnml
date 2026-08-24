@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_mu_coach_gen4_gonian_tangara_concept) {
         vehicle_life: 25;
         retire_early: 0;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 89.0681;
-        running_cost_factor: 64.91521;
+        cost_factor: 89.07;
+        running_cost_factor: 35.14;
         speed: 115 km/h;
         power: 0 hp;
         cargo_capacity: 173;

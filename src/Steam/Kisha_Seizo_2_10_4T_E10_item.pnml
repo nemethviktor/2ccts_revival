@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_steam_kisha_seizo_2_10_4t_e10) {
         vehicle_life: 30;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 47.20912;
-        running_cost_factor: 36.68663;
+        cost_factor: 47.21;
+        running_cost_factor: 40.03;
         speed: 65 km/h;
         power: 1340 hp;
         cargo_capacity: 0;

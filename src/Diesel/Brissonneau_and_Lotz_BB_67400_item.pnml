@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_diesel_brissonneau_and_lotz_bb_67400) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 57.54343;
-        running_cost_factor: 48.77015;
+        cost_factor: 57.54;
+        running_cost_factor: 57.55;
         speed: 140 km/h;
         power: 2367 hp;
         cargo_capacity: 0;

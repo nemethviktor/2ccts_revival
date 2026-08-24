@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_electric_alsthom_bb_22200) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 86.11775;
-        running_cost_factor: 76.61178;
+        cost_factor: 86.12;
+        running_cost_factor: 85.5;
         speed: 160 km/h;
         power: 5850 hp;
         cargo_capacity: 0;

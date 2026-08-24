@@ -34,8 +34,8 @@ item(FEAT_TRAINS, item_emu_acme_corp__sureot) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 137.1869;
-        running_cost_factor: 131.49408;
+        cost_factor: 137.19;
+        running_cost_factor: 135.94;
         speed: 300 km/h;
         power: 16000 hp;
         cargo_capacity: 85;

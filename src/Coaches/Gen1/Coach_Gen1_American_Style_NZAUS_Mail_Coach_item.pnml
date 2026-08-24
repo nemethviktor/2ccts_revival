@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_mu_coach_gen1_american_style_nzaus_mail_coach) {
         vehicle_life: 25;
         retire_early: 0;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 15/2 : (param_loadingspeed == 2) ? 15*2 : 15;
-        cost_factor: 22.52361;
-        running_cost_factor: 15.78354;
+        cost_factor: 22.52;
+        running_cost_factor: 8.85;
         speed: 80 km/h;
         power: 0 hp;
         cargo_capacity: 42;

@@ -35,8 +35,8 @@ item(FEAT_TRAINS, item_rbd_niigata_transys_shikoku_1000) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 29.86851;
-        running_cost_factor: 26.24898;
+        cost_factor: 29.87;
+        running_cost_factor: 33.4;
         speed: 110 km/h;
         power: 400 hp;
         cargo_capacity: 151;

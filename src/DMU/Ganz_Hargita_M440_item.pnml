@@ -36,8 +36,8 @@ item(FEAT_TRAINS, item_dmu_ganz_hargita_m440) {
         vehicle_life: 31;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 39.61996;
-        running_cost_factor: 33.85678;
+        cost_factor: 39.62;
+        running_cost_factor: 41.63;
         speed: 120 km/h;
         power: 900 hp;
         cargo_capacity: 54;

@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_diesel_alco_ae_goodwin_dl531_532) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 40.4237;
-        running_cost_factor: 32.5037;
+        cost_factor: 40.42;
+        running_cost_factor: 40.71;
         speed: 100 km/h;
         power: 1050 hp;
         cargo_capacity: 0;

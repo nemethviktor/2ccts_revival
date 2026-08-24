@@ -36,8 +36,8 @@ item(FEAT_TRAINS, item_dmu_south_australian_railways_400_redhen) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 21.95357;
-        running_cost_factor: 19.54334;
+        cost_factor: 21.95;
+        running_cost_factor: 26.52;
         speed: 88 km/h;
         power: 220 hp;
         cargo_capacity: 80;

@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_emu_breda_ale_801) {
         vehicle_life: 43;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 38.65979;
-        running_cost_factor: 31.16989;
+        cost_factor: 38.66;
+        running_cost_factor: 46.15;
         speed: 150 km/h;
         power: 702 hp;
         cargo_capacity: 80;

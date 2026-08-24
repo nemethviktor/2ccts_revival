@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_mglv_wagon_gen7m_container_doublestack) {
         vehicle_life: 25;
         retire_early: 0;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 39.08541;
-        running_cost_factor: 28.17531;
+        cost_factor: 39.09;
+        running_cost_factor: 9.64;
         speed: 180 km/h;
         power: 0 hp;
         cargo_capacity: 75;

@@ -83,6 +83,11 @@ Q: How do Unit Wagons work?
 
 A: With MUs you buy both heads, and then you can use the Unit Wagons to make the consist longer.
 
+Q: Can I haz ~~cheeseburger~~ multisystem locos whose power and speed details depend on what voltage-track they are on?
+
+A: No. While MS locos do exist in the set and their tracktypes are defined properly, each speed/power output setting would require individual `switch` (aka if-then) statments in code. We have some 15 partially overlapping railtypes defined and each of those would require a separate `switch` statement in the nml code. There are around 15-20 vehicles in the set where this would be applicable and only a handful of those would have values differing enough to make real difference in speed or performances when running on DC power. With "OHLE" being a generic "any" track type compatibility flag generating these `switch`es in a reliable way would be a major pain in the backside even when using AI (which is not that great at this stuff) so, sorry, nope.
+For Dual-Mode locos the functionality exists and works because there's only one `switch` that depends whether the current track is a fallback to `ELRL` or not, that simple.
+
 ## "Under new management" (project directions, bug reports/feature requests)
 
 I forked the original project because I was unsatisfied with the availability of items past Gen5 wagons and so the original aim was to extend that. It has since become obvious that there's great scope for extending the package well beyond this. Not only a fair bit of time has passed since the mid 2010s when this was active (and a lot of new real vehicles have come out) but also that there is a distinct lack of vehicles outside the EU region in 2cc, so that'd need working on and to a smaller extent I think there'd be significant scope for extending *concept* vehicles for future purposes because I personally find it boring that there are almost no new vehicles in any NewGRF past ~2020.
@@ -98,11 +103,29 @@ The below is a causal and incomplete blurb of some of the differences between th
 - Some mathematical formulae have been updated to use python libraries rather than extremely obscure calculations that generally yielded the same values (particular about square roots)
 - MU wagons can no longer take `valuables`. It's illogical and is a cheat that the player can have valuables speeding around at 400kmh while the actual fastest wagon for it is limited to ~160kmh or so.
 - `SuperHeavy` is now restricted to `Goods` and `Vehicles` only.
-- Wagon upkeep costs have been slightly reduced.
 - Livestock vans have been separated out and the various wagons' cargo defintions have been revamped.
 - Almost everything has been standardised in code and templates, this corrects a lot of generic bugs from the original setup that are too numerous to list individually.
 - Rail types have been added as well as voltages, badges, etc.
 - Maglev(s) for cargo purposes have been introduced.
+- Dual-mode locos are avaiable.
+
+#### Running Cost Changes (V4.1 onwards)
+
+Running costs of any item in the set is made up of a complex mathematical formula that was part of the original legacy release. It has 6 components and are affected by a base scale value that's different by category and also by weight, speed, power and an arbitrary complexity value. 
+
+In the legacy set the running costs variables were identical for both steam, diesel and electric, which was silly because IRL they aren't the same to run, steam is a lot more complex/expensive etc. There was also a huge logical flaw wrt the running costs the so-called "powered/unpowered multi-unit" items that need to be attached to xMUs, which have now been corrected. As such the following balancing on running costs has been affected:
+- `Steam engines & railbuses`: a lot more expensive
+- `Diesel engines & railbuses`: somewhat more expensive
+- `Electric engines & railbuses`: somewhat more expensive
+- `Maglev engines & railbuses`: somewhat more expensive
+- `Dual-powered (diesel & electric)`: are dependent on the type of rail they are running on at any given moment.
+- `Multiple unit heads`: same as their type above except maglev, where the 'base scale' has been reduced because IRL the attached carriages are similar power than the heads; see below.
+- `Coaches`: somewhat cheaper
+- `Wagons`: a lot cheaper - IRL their running costs are negligible compared to that of a loco whereas in the legacy set they were comparable in costs.
+- `Powered/unpowered multi unit wagon/coach`: use a different calculation logic but have been made very significatly cheaper than before, except Maglev, which are a bit less cheap than the rest.
+
+There are still the overall parameter switches you can change to apply a multiplier to the whole set should you want to.
+The overall effect is a reduction of running costs, but obviously the more wagons/carriages you have the more pronounced this will be.
 
 ## Credits
 

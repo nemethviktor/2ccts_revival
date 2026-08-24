@@ -21,8 +21,8 @@ item(FEAT_TRAINS, item_steam_enr_1100__lms_fowler_3f___wd_0_6_0t_) {
         vehicle_life: 30;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 28.66743;
-        running_cost_factor: 23.74494;
+        cost_factor: 28.67;
+        running_cost_factor: 27.6;
         speed: 65 km/h;
         power: 560 hp;
         cargo_capacity: 0;

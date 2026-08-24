@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_steam_richard_francis_trevithick_2_4_2t_860) {
         vehicle_life: 36;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 17.18459;
-        running_cost_factor: 13.70746;
+        cost_factor: 17.18;
+        running_cost_factor: 17.29;
         speed: 48 km/h;
         power: 186 hp;
         cargo_capacity: 0;

@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_emu_brel_gec_auckland_art_concept) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 47.84969;
-        running_cost_factor: 43.61151;
+        cost_factor: 47.85;
+        running_cost_factor: 53.47;
         speed: 120 km/h;
         power: 1500 hp;
         cargo_capacity: 80;

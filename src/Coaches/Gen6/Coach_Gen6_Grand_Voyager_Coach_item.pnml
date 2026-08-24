@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_mu_coach_gen6_grand_voyager_coach) {
         vehicle_life: 25;
         retire_early: 0;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 33.96771;
-        running_cost_factor: 24.07016;
+        cost_factor: 33.97;
+        running_cost_factor: 13.74;
         speed: 350 km/h;
         power: 0 hp;
         cargo_capacity: 64;

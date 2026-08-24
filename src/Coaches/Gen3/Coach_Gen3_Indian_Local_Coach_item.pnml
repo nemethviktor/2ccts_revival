@@ -20,8 +20,8 @@ item(FEAT_TRAINS, item_mu_coach_gen3_indian_local_coach) {
         vehicle_life: 25;
         retire_early: 0;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 107.2122;
-        running_cost_factor: 78.78933;
+        cost_factor: 107.21;
+        running_cost_factor: 42.52;
         speed: 110 km/h;
         power: 0 hp;
         cargo_capacity: 210;

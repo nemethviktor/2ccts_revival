@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_dmu_comeng_3100) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 54.52089;
-        running_cost_factor: 49.34142;
+        cost_factor: 54.52;
+        running_cost_factor: 54.16;
         speed: 90 km/h;
         power: 2092 hp;
         cargo_capacity: 46;

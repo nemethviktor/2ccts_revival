@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_steam_kitson_2_2_2wt_481_fairy_queen) {
         vehicle_life: 54;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 14.51798;
-        running_cost_factor: 11.465;
+        cost_factor: 14.52;
+        running_cost_factor: 14.76;
         speed: 40 km/h;
         power: 130 hp;
         cargo_capacity: 0;

@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_emu_ganz_mavag_vm17_bdvmot) {
         vehicle_life: 42;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 57.06089;
-        running_cost_factor: 50.02271;
+        cost_factor: 57.06;
+        running_cost_factor: 58.66;
         speed: 120 km/h;
         power: 2040 hp;
         cargo_capacity: 86;

@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_mu_coach_gen4_silberling_commuter_coach) {
         vehicle_life: 25;
         retire_early: 0;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 96.8458;
-        running_cost_factor: 71.29437;
+        cost_factor: 96.85;
+        running_cost_factor: 38.59;
         speed: 140 km/h;
         power: 0 hp;
         cargo_capacity: 190;

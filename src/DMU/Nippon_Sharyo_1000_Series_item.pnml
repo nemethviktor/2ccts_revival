@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_dmu_nippon_sharyo_1000_series) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 50.873;
-        running_cost_factor: 43.67045;
+        cost_factor: 50.87;
+        running_cost_factor: 50.66;
         speed: 128 km/h;
         power: 1520 hp;
         cargo_capacity: 80;

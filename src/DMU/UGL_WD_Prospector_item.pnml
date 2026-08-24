@@ -35,8 +35,8 @@ item(FEAT_TRAINS, item_dmu_ugl_wd_prospector) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 40.62624;
-        running_cost_factor: 36.76056;
+        cost_factor: 40.63;
+        running_cost_factor: 47.52;
         speed: 200 km/h;
         power: 1040 hp;
         cargo_capacity: 68;

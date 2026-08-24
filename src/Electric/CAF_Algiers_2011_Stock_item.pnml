@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_mtro_caf_algiers_2011_stock) {
         vehicle_life: 50;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 47.7987;
-        running_cost_factor: 44.89092;
+        cost_factor: 47.8;
+        running_cost_factor: 49.72;
         speed: 80 km/h;
         power: 1450 hp;
         cargo_capacity: 165;

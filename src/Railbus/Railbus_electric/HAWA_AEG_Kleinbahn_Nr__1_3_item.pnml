@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_rbe_hawa_aeg_kleinbahn_nr__1_3) {
         vehicle_life: 50;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 19.41784;
-        running_cost_factor: 16.835;
+        cost_factor: 19.42;
+        running_cost_factor: 25.3;
         speed: 50 km/h;
         power: 175 hp;
         cargo_capacity: 50;

@@ -16,7 +16,7 @@ item(FEAT_TRAINS, item_diesel_voith_gravita_10_bb) {
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
         cost_factor: 48.5;
-        running_cost_factor: 40.1;
+        running_cost_factor: 47.63;
         speed: 100 km/h;
         power: 1600 hp;
         cargo_capacity: 0;

@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_emu_breda_etr_200) {
         vehicle_life: 30;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 38.82313;
-        running_cost_factor: 34.42383;
+        cost_factor: 38.82;
+        running_cost_factor: 49.95;
         speed: 160 km/h;
         power: 938 hp;
         cargo_capacity: 52;

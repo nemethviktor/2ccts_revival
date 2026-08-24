@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_diesel_mak_100) {
         vehicle_life: 41;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 23.16297;
-        running_cost_factor: 18.35313;
+        cost_factor: 23.16;
+        running_cost_factor: 25.33;
         speed: 60 km/h;
         power: 334 hp;
         cargo_capacity: 0;

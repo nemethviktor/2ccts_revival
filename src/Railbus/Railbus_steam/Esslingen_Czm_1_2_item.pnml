@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_rbs_esslingen_czm_1_2) {
         vehicle_life: 30;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 15.1239;
-        running_cost_factor: 12.75557;
+        cost_factor: 15.12;
+        running_cost_factor: 16.94;
         speed: 45 km/h;
         power: 99 hp;
         cargo_capacity: 30;

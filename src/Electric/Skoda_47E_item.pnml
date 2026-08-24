@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_electric_skoda_47e) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 76.87102;
-        running_cost_factor: 67.93284;
+        cost_factor: 76.87;
+        running_cost_factor: 75.31;
         speed: 120 km/h;
         power: 4600 hp;
         cargo_capacity: 0;

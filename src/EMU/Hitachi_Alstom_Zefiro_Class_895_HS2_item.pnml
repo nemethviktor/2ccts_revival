@@ -37,8 +37,8 @@ item(FEAT_TRAINS, item_emu_hitachi_alstom_zefiro_class_895_hs2) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 127.50169;
-        running_cost_factor: 120.49275;
+        cost_factor: 127.5;
+        running_cost_factor: 130.42;
         speed: 360 km/h;
         power: 13400 hp;
         cargo_capacity: 72;

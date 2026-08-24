@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_diesel_alco_rsd_39) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 45.59007;
-        running_cost_factor: 36.85189;
+        cost_factor: 45.59;
+        running_cost_factor: 45.72;
         speed: 120 km/h;
         power: 1350 hp;
         cargo_capacity: 0;

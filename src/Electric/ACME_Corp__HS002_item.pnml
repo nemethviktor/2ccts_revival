@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_electric_acme_corp__hs002) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 155.05851;
-        running_cost_factor: 134.34296;
+        cost_factor: 155.06;
+        running_cost_factor: 141.71;
         speed: 320 km/h;
         power: 18000 hp;
         cargo_capacity: 0;

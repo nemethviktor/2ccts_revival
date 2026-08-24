@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_emu_pesa_43we_dart) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 65.914;
-        running_cost_factor: 60.47053;
+        cost_factor: 65.91;
+        running_cost_factor: 70.75;
         speed: 160 km/h;
         power: 3218 hp;
         cargo_capacity: 44;

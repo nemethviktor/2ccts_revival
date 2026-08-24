@@ -34,8 +34,8 @@ item(FEAT_TRAINS, item_singlemtro_brooklyn_union_gate_1300) {
         vehicle_life: 50;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 20.75979;
-        running_cost_factor: 17.67695;
+        cost_factor: 20.76;
+        running_cost_factor: 26.01;
         speed: 50 km/h;
         power: 200 hp;
         cargo_capacity: 48;

@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_diesel_emd_clyde_gl26c_2) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 57.16482;
-        running_cost_factor: 47.01482;
+        cost_factor: 57.16;
+        running_cost_factor: 53.92;
         speed: 100 km/h;
         power: 2201 hp;
         cargo_capacity: 0;

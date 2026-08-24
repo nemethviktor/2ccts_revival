@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_emu_aeg_ew90) {
         vehicle_life: 73;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 28.51719;
-        running_cost_factor: 24.35942;
+        cost_factor: 28.52;
+        running_cost_factor: 34.67;
         speed: 80 km/h;
         power: 413 hp;
         cargo_capacity: 59;

@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_mu_coach_gen3_hitachi_nippon_sharyo_silver_star_coach) {
         vehicle_life: 25;
         retire_early: 0;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 45.6681;
-        running_cost_factor: 32.66521;
+        cost_factor: 45.67;
+        running_cost_factor: 17.94;
         speed: 115 km/h;
         power: 0 hp;
         cargo_capacity: 87;

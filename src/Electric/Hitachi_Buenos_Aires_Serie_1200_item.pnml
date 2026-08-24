@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_mtro_hitachi_buenos_aires_serie_1200) {
         vehicle_life: 50;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 33.67314;
-        running_cost_factor: 30.97673;
+        cost_factor: 33.67;
+        running_cost_factor: 38.6;
         speed: 75 km/h;
         power: 640 hp;
         cargo_capacity: 115;

@@ -35,8 +35,8 @@ item(FEAT_TRAINS, item_emu_comeng_goninan_s_set) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 50.76669;
-        running_cost_factor: 45.63774;
+        cost_factor: 50.77;
+        running_cost_factor: 54.3;
         speed: 115 km/h;
         power: 1600 hp;
         cargo_capacity: 112;

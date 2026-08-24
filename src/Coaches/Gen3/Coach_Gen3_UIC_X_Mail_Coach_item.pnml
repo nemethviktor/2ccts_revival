@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_mu_coach_gen3_uic_x_mail_coach) {
         vehicle_life: 25;
         retire_early: 0;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 15/2 : (param_loadingspeed == 2) ? 15*2 : 15;
-        cost_factor: 62.31623;
-        running_cost_factor: 45.04743;
+        cost_factor: 62.32;
+        running_cost_factor: 24.63;
         speed: 160 km/h;
         power: 0 hp;
         cargo_capacity: 120;

@@ -34,8 +34,8 @@ item(FEAT_TRAINS, item_emu_rvr_er200) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 45.45819;
-        running_cost_factor: 39.99251;
+        cost_factor: 45.46;
+        running_cost_factor: 57.06;
         speed: 200 km/h;
         power: 1280 hp;
         cargo_capacity: 64;

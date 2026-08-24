@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_steam_raw_meiningen_4_6_2_89_) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 63.91799;
-        running_cost_factor: 46.17837;
+        cost_factor: 63.92;
+        running_cost_factor: 52.31;
         speed: 182 km/h;
         power: 2120 hp;
         cargo_capacity: 0;

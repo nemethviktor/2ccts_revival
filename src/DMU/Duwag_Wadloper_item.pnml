@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_dmu_duwag_wadloper) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 32.18317;
-        running_cost_factor: 28.38117;
+        cost_factor: 32.18;
+        running_cost_factor: 35.34;
         speed: 101 km/h;
         power: 562 hp;
         cargo_capacity: 80;

@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_steam_kitson_2_2_2_3166_3171) {
         vehicle_life: 30;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 30.38942;
-        running_cost_factor: 23.54955;
+        cost_factor: 30.39;
+        running_cost_factor: 28.38;
         speed: 95 km/h;
         power: 550 hp;
         cargo_capacity: 0;

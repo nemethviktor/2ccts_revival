@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_diesel_alsthom_cc_72000) {
         vehicle_life: 51;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 69.69047;
-        running_cost_factor: 58.42571;
+        cost_factor: 69.69;
+        running_cost_factor: 66.1;
         speed: 135 km/h;
         power: 3400 hp;
         cargo_capacity: 0;

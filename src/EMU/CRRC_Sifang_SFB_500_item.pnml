@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_emu_crrc_sifang_sfb_500) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 98.17347;
-        running_cost_factor: 92.46181;
+        cost_factor: 98.17;
+        running_cost_factor: 96.84;
         speed: 180 km/h;
         power: 7510 hp;
         cargo_capacity: 118;

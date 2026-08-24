@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_diesel_nohab_aa16) {
         vehicle_life: 76;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 55.9888;
-        running_cost_factor: 44.61551;
+        cost_factor: 55.99;
+        running_cost_factor: 53.77;
         speed: 140 km/h;
         power: 1980 hp;
         cargo_capacity: 0;

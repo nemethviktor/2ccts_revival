@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_mu_wagon_gen3_hopper) {
         vehicle_life: 25;
         retire_early: 0;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 21.52361;
-        running_cost_factor: 15.03354;
+        cost_factor: 21.52;
+        running_cost_factor: 5.23;
         speed: 80 km/h;
         power: 0 hp;
         cargo_capacity: 40;

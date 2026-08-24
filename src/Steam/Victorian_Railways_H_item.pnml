@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_steam_victorian_railways_h) {
         vehicle_life: 30;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 86.44721;
-        running_cost_factor: 60.08944;
+        cost_factor: 86.45;
+        running_cost_factor: 62.99;
         speed: 80 km/h;
         power: 3600 hp;
         cargo_capacity: 0;

@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_mtro_strommens_oslo_t1000) {
         vehicle_life: 50;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 41.85151;
-        running_cost_factor: 38.54684;
+        cost_factor: 41.85;
+        running_cost_factor: 43.87;
         speed: 70 km/h;
         power: 1050 hp;
         cargo_capacity: 135;

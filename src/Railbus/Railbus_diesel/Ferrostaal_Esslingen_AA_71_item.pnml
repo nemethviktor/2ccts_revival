@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_rbd_ferrostaal_esslingen_aa_71) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 37.54239;
-        running_cost_factor: 32.33251;
+        cost_factor: 37.54;
+        running_cost_factor: 39.38;
         speed: 105 km/h;
         power: 790 hp;
         cargo_capacity: 68;

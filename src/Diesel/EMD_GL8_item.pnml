@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_diesel_emd_gl8) {
         vehicle_life: 70;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 36.53718;
-        running_cost_factor: 29.69175;
+        cost_factor: 36.54;
+        running_cost_factor: 39.41;
         speed: 124 km/h;
         power: 875 hp;
         cargo_capacity: 0;

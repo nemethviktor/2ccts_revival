@@ -15,10 +15,10 @@ item(FEAT_TRAINS, item_electric_siemens_eurosprinter_es64f) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 92.25761;
-        running_cost_factor: 83.78432;
+        cost_factor: 101.23;
+        running_cost_factor: 96.86;
         speed: 140 km/h;
-        power: 7000 hp;
+        power: 8582 hp;
         cargo_capacity: 0;
         weight: 80 ton;
         tractive_effort_coefficient: 0.42;

@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_dmu_duwag_628_2) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 34.48093;
-        running_cost_factor: 29.84275;
+        cost_factor: 34.48;
+        running_cost_factor: 37.79;
         speed: 120 km/h;
         power: 650 hp;
         cargo_capacity: 68;

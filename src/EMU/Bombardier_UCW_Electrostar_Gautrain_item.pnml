@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_emu_bombardier_ucw_electrostar_gautrain) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 56.48023;
-        running_cost_factor: 51.77427;
+        cost_factor: 56.48;
+        running_cost_factor: 63.55;
         speed: 160 km/h;
         power: 2253 hp;
         cargo_capacity: 64;

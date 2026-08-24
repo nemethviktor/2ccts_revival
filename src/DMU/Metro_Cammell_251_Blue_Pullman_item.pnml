@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_dmu_metro_cammell_251_blue_pullman) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 54.71652;
-        running_cost_factor: 47.53485;
+        cost_factor: 54.72;
+        running_cost_factor: 55.65;
         speed: 145 km/h;
         power: 2000 hp;
         cargo_capacity: 27;

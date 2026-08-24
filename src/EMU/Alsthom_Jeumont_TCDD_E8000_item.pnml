@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_emu_alsthom_jeumont_tcdd_e8000) {
         vehicle_life: 56;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 42.31859;
-        running_cost_factor: 37.93912;
+        cost_factor: 42.32;
+        running_cost_factor: 46.2;
         speed: 90 km/h;
         power: 1100 hp;
         cargo_capacity: 81;

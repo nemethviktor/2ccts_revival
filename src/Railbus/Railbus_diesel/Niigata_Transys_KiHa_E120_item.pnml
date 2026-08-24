@@ -35,8 +35,8 @@ item(FEAT_TRAINS, item_rbd_niigata_transys_kiha_e120) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 30.80985;
-        running_cost_factor: 26.50985;
+        cost_factor: 30.81;
+        running_cost_factor: 33.38;
         speed: 100 km/h;
         power: 444 hp;
         cargo_capacity: 114;

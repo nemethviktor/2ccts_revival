@@ -34,8 +34,8 @@ item(FEAT_TRAINS, item_dmu_ugl_hunter_railcar) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 35.43988;
-        running_cost_factor: 31.93392;
+        cost_factor: 35.44;
+        running_cost_factor: 41.45;
         speed: 160 km/h;
         power: 750 hp;
         cargo_capacity: 70;

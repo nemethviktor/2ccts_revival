@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_mu_coach_gen1_american_style_coach) {
         vehicle_life: 25;
         retire_early: 0;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 37.7622;
-        running_cost_factor: 26.28933;
+        cost_factor: 37.76;
+        running_cost_factor: 14.52;
         speed: 110 km/h;
         power: 0 hp;
         cargo_capacity: 70;

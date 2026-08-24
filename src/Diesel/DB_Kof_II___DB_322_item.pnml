@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_diesel_db_kof_ii___db_322) {
         vehicle_life: 37;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 9.51983;
-        running_cost_factor: 7.80074;
+        cost_factor: 9.52;
+        running_cost_factor: 13.2;
         speed: 30 km/h;
         power: 60 hp;
         cargo_capacity: 0;

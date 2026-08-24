@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_emu_itochu_kinki_kawasaki_sp1900) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 84.23231;
-        running_cost_factor: 80.07624;
+        cost_factor: 84.23;
+        running_cost_factor: 81.85;
         speed: 130 km/h;
         power: 5149 hp;
         cargo_capacity: 250;

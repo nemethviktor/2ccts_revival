@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_mu_coach_gen3_steel_lightweight_commuter_coach) {
         vehicle_life: 25;
         retire_early: 0;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 66.99047;
-        running_cost_factor: 48.79357;
+        cost_factor: 66.99;
+        running_cost_factor: 26.58;
         speed: 135 km/h;
         power: 0 hp;
         cargo_capacity: 130;

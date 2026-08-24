@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_mtro_acf_new_york_r1) {
         vehicle_life: 50;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 37.60591;
-        running_cost_factor: 33.02644;
+        cost_factor: 37.61;
+        running_cost_factor: 41.93;
         speed: 90 km/h;
         power: 760 hp;
         cargo_capacity: 105;

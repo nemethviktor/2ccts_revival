@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_emu_hyundai_rotem__mitsui_matangi) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 41.66958;
-        running_cost_factor: 37.43141;
+        cost_factor: 41.67;
+        running_cost_factor: 47.38;
         speed: 120 km/h;
         power: 910 hp;
         cargo_capacity: 188;

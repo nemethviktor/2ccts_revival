@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_diesel_faur_a20dp) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 26.62002;
-        running_cost_factor: 20.07018;
+        cost_factor: 26.62;
+        running_cost_factor: 24.7;
         speed: 60 km/h;
         power: 189 hp;
         cargo_capacity: 39;

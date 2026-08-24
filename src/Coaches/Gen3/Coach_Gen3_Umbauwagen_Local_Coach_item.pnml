@@ -20,7 +20,7 @@ item(FEAT_TRAINS, item_mu_coach_gen3_umbauwagen_local_coach) {
         retire_early: 0;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         cost_factor: 37.75;
-        running_cost_factor: 27.0375;
+        running_cost_factor: 14.9;
         speed: 100 km/h;
         power: 0 hp;
         cargo_capacity: 72;

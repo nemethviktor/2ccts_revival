@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_diesel_tangshan_dalian_sifang_df5) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 50.6318;
-        running_cost_factor: 36.4318;
+        cost_factor: 50.63;
+        running_cost_factor: 44.29;
         speed: 100 km/h;
         power: 1320 hp;
         cargo_capacity: 0;

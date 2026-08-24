@@ -34,8 +34,8 @@ item(FEAT_TRAINS, item_emu_koncar_6112) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 61.00396;
-        running_cost_factor: 56.198;
+        cost_factor: 61.0;
+        running_cost_factor: 67.11;
         speed: 160 km/h;
         power: 2700 hp;
         cargo_capacity: 60;

@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_diesel_lms_no__7080_d3_7) {
         vehicle_life: 30;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 24.49113;
-        running_cost_factor: 18.76486;
+        cost_factor: 24.49;
+        running_cost_factor: 23.39;
         speed: 32 km/h;
         power: 350 hp;
         cargo_capacity: 0;

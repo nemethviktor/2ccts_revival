@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_dmu_abb_xplorer) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 41.55873;
-        running_cost_factor: 35.37706;
+        cost_factor: 41.56;
+        running_cost_factor: 44.4;
         speed: 145 km/h;
         power: 1028 hp;
         cargo_capacity: 38;

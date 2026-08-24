@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_rbs_victorian_railways_rowan_railmotor) {
         vehicle_life: 30;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 11.41134;
-        running_cost_factor: 9.63421;
+        cost_factor: 11.41;
+        running_cost_factor: 14.14;
         speed: 48 km/h;
         power: 40 hp;
         cargo_capacity: 42;

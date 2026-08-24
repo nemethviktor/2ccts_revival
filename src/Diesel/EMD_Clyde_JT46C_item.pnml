@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_diesel_emd_clyde_jt46c) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 77.15404;
-        running_cost_factor: 63.86414;
+        cost_factor: 77.15;
+        running_cost_factor: 71.74;
         speed: 150 km/h;
         power: 4063 hp;
         cargo_capacity: 0;

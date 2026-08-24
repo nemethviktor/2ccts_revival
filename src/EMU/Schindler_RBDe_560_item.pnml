@@ -34,8 +34,8 @@ item(FEAT_TRAINS, item_emu_schindler_rbde_560) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 55.1089;
-        running_cost_factor: 51.13562;
+        cost_factor: 55.11;
+        running_cost_factor: 61.54;
         speed: 140 km/h;
         power: 2210 hp;
         cargo_capacity: 56;

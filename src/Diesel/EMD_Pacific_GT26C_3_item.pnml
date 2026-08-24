@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_diesel_emd_pacific_gt26c_3) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 70.38182;
-        running_cost_factor: 57.55286;
+        cost_factor: 70.38;
+        running_cost_factor: 64.31;
         speed: 115 km/h;
         power: 3300 hp;
         cargo_capacity: 0;

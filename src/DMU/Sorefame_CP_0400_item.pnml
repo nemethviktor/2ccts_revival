@@ -34,8 +34,8 @@ item(FEAT_TRAINS, item_dmu_sorefame_cp_0400) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 42.53827;
-        running_cost_factor: 37.21874;
+        cost_factor: 42.54;
+        running_cost_factor: 43.78;
         speed: 110 km/h;
         power: 1040 hp;
         cargo_capacity: 92;

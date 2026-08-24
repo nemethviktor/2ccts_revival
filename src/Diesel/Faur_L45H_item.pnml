@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_diesel_faur_l45h) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 24.72943;
-        running_cost_factor: 21.27645;
+        cost_factor: 24.73;
+        running_cost_factor: 26.4;
         speed: 40 km/h;
         power: 450 hp;
         cargo_capacity: 0;

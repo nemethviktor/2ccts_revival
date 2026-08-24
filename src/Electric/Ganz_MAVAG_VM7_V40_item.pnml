@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_electric_ganz_mavag_vm7_v40) {
         vehicle_life: 35;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 56.83613;
-        running_cost_factor: 47.03613;
+        cost_factor: 56.84;
+        running_cost_factor: 56.77;
         speed: 100 km/h;
         power: 2203 hp;
         cargo_capacity: 0;

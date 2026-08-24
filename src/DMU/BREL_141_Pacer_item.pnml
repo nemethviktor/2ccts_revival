@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_dmu_brel_141_pacer) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 20.80196;
-        running_cost_factor: 17.76196;
+        cost_factor: 20.8;
+        running_cost_factor: 27.12;
         speed: 121 km/h;
         power: 200 hp;
         cargo_capacity: 47;

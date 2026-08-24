@@ -36,8 +36,8 @@ item(FEAT_TRAINS, item_emu_valmet_sm2) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 40.34442;
-        running_cost_factor: 33.78124;
+        cost_factor: 40.34;
+        running_cost_factor: 45.52;
         speed: 120 km/h;
         power: 818 hp;
         cargo_capacity: 100;

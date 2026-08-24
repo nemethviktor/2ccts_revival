@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_steam_fs_880) {
         vehicle_life: 62;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 32.87091;
-        running_cost_factor: 23.3245;
+        cost_factor: 32.87;
+        running_cost_factor: 27.55;
         speed: 75 km/h;
         power: 540 hp;
         cargo_capacity: 0;

@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_mtro_caf_madrid_series_5000) {
         vehicle_life: 50;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 43.37802;
-        running_cost_factor: 39.82025;
+        cost_factor: 43.38;
+        running_cost_factor: 45.75;
         speed: 80 km/h;
         power: 1100 hp;
         cargo_capacity: 160;

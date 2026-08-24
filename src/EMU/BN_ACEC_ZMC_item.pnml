@@ -34,8 +34,8 @@ item(FEAT_TRAINS, item_emu_bn_acec_zmc) {
         vehicle_life: 46;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 53.87286;
-        running_cost_factor: 48.5669;
+        cost_factor: 53.87;
+        running_cost_factor: 60.68;
         speed: 160 km/h;
         power: 1900 hp;
         cargo_capacity: 90;

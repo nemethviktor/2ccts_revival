@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_mtro_buenos_aires_le_brugeoise) {
         vehicle_life: 102;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 24.09295;
-        running_cost_factor: 22.4601;
+        cost_factor: 24.09;
+        running_cost_factor: 29.14;
         speed: 50 km/h;
         power: 310 hp;
         cargo_capacity: 84;

@@ -34,8 +34,8 @@ item(FEAT_TRAINS, item_emu_pullman_erie_lackawanna_2500_series) {
         vehicle_life: 54;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 43.29363;
-        running_cost_factor: 36.79163;
+        cost_factor: 43.29;
+        running_cost_factor: 46.31;
         speed: 101 km/h;
         power: 1020 hp;
         cargo_capacity: 82;

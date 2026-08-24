@@ -35,8 +35,8 @@ item(FEAT_TRAINS, item_mmu_siemens_thyssenkrupp_transrapid) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 126.7161;
-        running_cost_factor: 120.58376;
+        cost_factor: 126.72;
+        running_cost_factor: 109.3;
         speed: 433 km/h;
         power: 13450 hp;
         cargo_capacity: 50;

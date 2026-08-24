@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_electric_sgp_1044) {
         vehicle_life: 44;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 92.51898;
-        running_cost_factor: 83.61302;
+        cost_factor: 92.52;
+        running_cost_factor: 91.11;
         speed: 160 km/h;
         power: 6970 hp;
         cargo_capacity: 0;

@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_dmu_mtm_2400_apollos) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 37.31798;
-        running_cost_factor: 32.51798;
+        cost_factor: 37.32;
+        running_cost_factor: 38.65;
         speed: 100 km/h;
         power: 720 hp;
         cargo_capacity: 116;

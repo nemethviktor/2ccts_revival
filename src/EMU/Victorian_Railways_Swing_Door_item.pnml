@@ -34,8 +34,8 @@ item(FEAT_TRAINS, item_emu_victorian_railways_swing_door) {
         vehicle_life: 47;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 32.46624;
-        running_cost_factor: 27.40183;
+        cost_factor: 32.47;
+        running_cost_factor: 37.59;
         speed: 83 km/h;
         power: 563 hp;
         cargo_capacity: 48;

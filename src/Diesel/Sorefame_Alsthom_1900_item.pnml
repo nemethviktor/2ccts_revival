@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_diesel_sorefame_alsthom_1900) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 59.53946;
-        running_cost_factor: 47.63946;
+        cost_factor: 59.54;
+        running_cost_factor: 54.49;
         speed: 100 km/h;
         power: 2260 hp;
         cargo_capacity: 0;

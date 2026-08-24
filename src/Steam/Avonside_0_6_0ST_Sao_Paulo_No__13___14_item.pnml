@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_steam_avonside_0_6_0st_sao_paulo_no__13___14) {
         vehicle_life: 30;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 19.83312;
-        running_cost_factor: 16.63312;
+        cost_factor: 19.83;
+        running_cost_factor: 18.97;
         speed: 25 km/h;
         power: 275 hp;
         cargo_capacity: 0;

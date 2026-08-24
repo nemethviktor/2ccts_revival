@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_dmu_integral_coach_factory_s11) {
         vehicle_life: 25;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 41.99565;
-        running_cost_factor: 39.57613;
+        cost_factor: 42.0;
+        running_cost_factor: 46.59;
         speed: 110 km/h;
         power: 1360 hp;
         cargo_capacity: 20;

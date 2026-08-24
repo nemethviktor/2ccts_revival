@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_electric_tibb_e_646) {
         vehicle_life: 48;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 82.79554;
-        running_cost_factor: 71.32225;
+        cost_factor: 82.8;
+        running_cost_factor: 79.7;
         speed: 140 km/h;
         power: 5070 hp;
         cargo_capacity: 0;

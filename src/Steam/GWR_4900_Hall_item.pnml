@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_steam_gwr_4900_hall) {
         vehicle_life: 31;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 50.84895;
-        running_cost_factor: 38.19288;
+        cost_factor: 50.85;
+        running_cost_factor: 43.42;
         speed: 130 km/h;
         power: 1450 hp;
         cargo_capacity: 0;

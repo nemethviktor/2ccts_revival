@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_electric_aeg_a1a_a1a) {
         vehicle_life: 48;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 31.52865;
-        running_cost_factor: 25.56581;
+        cost_factor: 31.53;
+        running_cost_factor: 33.98;
         speed: 50 km/h;
         power: 650 hp;
         cargo_capacity: 0;

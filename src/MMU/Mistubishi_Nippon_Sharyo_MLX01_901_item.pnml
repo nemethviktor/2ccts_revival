@@ -36,8 +36,8 @@ item(FEAT_TRAINS, item_mmu_mistubishi_nippon_sharyo_mlx01_901) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 153.03284;
-        running_cost_factor: 144.93842;
+        cost_factor: 153.03;
+        running_cost_factor: 125.94;
         speed: 500 km/h;
         power: 20115 hp;
         cargo_capacity: 19;

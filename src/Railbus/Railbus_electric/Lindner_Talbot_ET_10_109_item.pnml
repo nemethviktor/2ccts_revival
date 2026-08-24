@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_rbe_lindner_talbot_et_10_109) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 50.20379;
-        running_cost_factor: 44.62432;
+        cost_factor: 50.2;
+        running_cost_factor: 50.92;
         speed: 90 km/h;
         power: 1475 hp;
         cargo_capacity: 150;

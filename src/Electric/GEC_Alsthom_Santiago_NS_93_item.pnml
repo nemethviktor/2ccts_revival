@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_mtro_gec_alsthom_santiago_ns_93) {
         vehicle_life: 50;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 58.61435;
-        running_cost_factor: 55.76435;
+        cost_factor: 58.61;
+        running_cost_factor: 60.44;
         speed: 100 km/h;
         power: 2400 hp;
         cargo_capacity: 160;

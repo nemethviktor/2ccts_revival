@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_mtro_acf_new_york_r10) {
         vehicle_life: 50;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 38.63411;
-        running_cost_factor: 34.60888;
+        cost_factor: 38.63;
+        running_cost_factor: 42.58;
         speed: 88 km/h;
         power: 800 hp;
         cargo_capacity: 145;

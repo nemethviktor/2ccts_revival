@@ -34,8 +34,8 @@ item(FEAT_TRAINS, item_emu_ugl_rail_h_set_oscar) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 58.24766;
-        running_cost_factor: 52.09159;
+        cost_factor: 58.25;
+        running_cost_factor: 60.7;
         speed: 130 km/h;
         power: 2144 hp;
         cargo_capacity: 120;

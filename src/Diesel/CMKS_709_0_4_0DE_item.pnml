@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_diesel_cmks_709_0_4_0de) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 27.06894;
-        running_cost_factor: 23.11117;
+        cost_factor: 27.07;
+        running_cost_factor: 30.99;
         speed: 80 km/h;
         power: 530 hp;
         cargo_capacity: 0;

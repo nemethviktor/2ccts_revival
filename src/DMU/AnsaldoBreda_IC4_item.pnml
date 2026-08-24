@@ -34,8 +34,8 @@ item(FEAT_TRAINS, item_dmu_ansaldobreda_ic4) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 35.4045;
-        running_cost_factor: 31.26784;
+        cost_factor: 35.4;
+        running_cost_factor: 41.98;
         speed: 180 km/h;
         power: 750 hp;
         cargo_capacity: 52;

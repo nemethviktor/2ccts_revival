@@ -35,8 +35,8 @@ item(FEAT_TRAINS, item_emu_adtranz_bm73) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 58.19959;
-        running_cost_factor: 52.21993;
+        cost_factor: 58.2;
+        running_cost_factor: 67.64;
         speed: 210 km/h;
         power: 2332 hp;
         cargo_capacity: 54;

@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_electric_trc_e6800) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 91.11652;
-        running_cost_factor: 82.01056;
+        cost_factor: 91.12;
+        running_cost_factor: 89.82;
         speed: 160 km/h;
         power: 6705 hp;
         cargo_capacity: 0;

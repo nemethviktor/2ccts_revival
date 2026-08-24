@@ -37,8 +37,8 @@ item(FEAT_TRAINS, item_emu_asea_x2000) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 74.4516;
-        running_cost_factor: 66.58592;
+        cost_factor: 74.45;
+        running_cost_factor: 80.23;
         speed: 200 km/h;
         power: 4400 hp;
         cargo_capacity: 0;

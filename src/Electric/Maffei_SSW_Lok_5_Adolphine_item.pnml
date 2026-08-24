@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_electric_maffei_ssw_lok_5_adolphine) {
         vehicle_life: 51;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 32.01405;
-        running_cost_factor: 28.53121;
+        cost_factor: 32.01;
+        running_cost_factor: 36.37;
         speed: 50 km/h;
         power: 810 hp;
         cargo_capacity: 0;

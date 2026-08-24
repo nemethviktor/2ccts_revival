@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_dmu_niigata_transys_kiha_189) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 39.32575;
-        running_cost_factor: 33.96967;
+        cost_factor: 39.33;
+        running_cost_factor: 42.17;
         speed: 130 km/h;
         power: 900 hp;
         cargo_capacity: 56;

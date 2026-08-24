@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_electric_werkspoor_ess_3200) {
         vehicle_life: 51;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 39.47896;
-        running_cost_factor: 32.14078;
+        cost_factor: 39.48;
+        running_cost_factor: 46.68;
         speed: 120 km/h;
         power: 1026 hp;
         cargo_capacity: 0;

@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_diesel_ltz_tep150) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 79.06319;
-        running_cost_factor: 65.05722;
+        cost_factor: 79.06;
+        running_cost_factor: 73.27;
         speed: 160 km/h;
         power: 4216 hp;
         cargo_capacity: 0;

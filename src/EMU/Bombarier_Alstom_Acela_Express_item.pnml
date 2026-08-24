@@ -34,8 +34,8 @@ item(FEAT_TRAINS, item_emu_bombarier_alstom_acela_express) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 89.05568;
-        running_cost_factor: 79.136;
+        cost_factor: 89.06;
+        running_cost_factor: 92.76;
         speed: 240 km/h;
         power: 6200 hp;
         cargo_capacity: 0;

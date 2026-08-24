@@ -34,8 +34,8 @@ item(FEAT_TRAINS, item_rbe_ferrocarril_de_soller_1_3) {
         vehicle_life: 30;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 25.3437;
-        running_cost_factor: 21.77537;
+        cost_factor: 25.34;
+        running_cost_factor: 28.82;
         speed: 45 km/h;
         power: 350 hp;
         cargo_capacity: 36;

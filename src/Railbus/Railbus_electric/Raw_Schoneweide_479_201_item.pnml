@@ -34,8 +34,8 @@ item(FEAT_TRAINS, item_rbe_raw_schoneweide_479_201) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 23.70973;
-        running_cost_factor: 20.62689;
+        cost_factor: 23.71;
+        running_cost_factor: 28.28;
         speed: 50 km/h;
         power: 285 hp;
         cargo_capacity: 54;

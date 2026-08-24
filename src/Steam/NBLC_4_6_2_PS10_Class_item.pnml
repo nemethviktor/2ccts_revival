@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_steam_nblc_4_6_2_ps10_class) {
         vehicle_life: 54;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 45.59161;
-        running_cost_factor: 30.11832;
+        cost_factor: 45.59;
+        running_cost_factor: 35.92;
         speed: 140 km/h;
         power: 900 hp;
         cargo_capacity: 0;

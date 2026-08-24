@@ -34,8 +34,8 @@ item(FEAT_TRAINS, item_emu_alstom_coradia_duplex) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 70.88649;
-        running_cost_factor: 63.98052;
+        cost_factor: 70.89;
+        running_cost_factor: 72.7;
         speed: 160 km/h;
         power: 3410 hp;
         cargo_capacity: 111;

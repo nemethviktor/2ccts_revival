@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_rbe_studenka_425_95) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 23.77226;
-        running_cost_factor: 19.01928;
+        cost_factor: 23.77;
+        running_cost_factor: 25.66;
         speed: 40 km/h;
         power: 240 hp;
         cargo_capacity: 48;

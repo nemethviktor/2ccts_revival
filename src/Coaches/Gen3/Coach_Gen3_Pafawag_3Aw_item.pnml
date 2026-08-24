@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_mu_coach_gen3_pafawag_3aw) {
         vehicle_life: 25;
         retire_early: 0;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 20.52865;
-        running_cost_factor: 14.65405;
+        cost_factor: 20.53;
+        running_cost_factor: 8.19;
         speed: 60 km/h;
         power: 0 hp;
         cargo_capacity: 39;

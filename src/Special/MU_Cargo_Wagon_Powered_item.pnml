@@ -31,7 +31,7 @@ item(FEAT_TRAINS, item_mu_mu_cargo_wagon_powered) {
         retire_early: 0;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
         cost_factor: 128.0;
-        running_cost_factor: 1.0;
+        running_cost_factor: 0.31;
         speed: 0 km/h;
         power: 0 hp;
         cargo_capacity: 1;

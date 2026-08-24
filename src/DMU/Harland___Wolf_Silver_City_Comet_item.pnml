@@ -36,8 +36,8 @@ item(FEAT_TRAINS, item_dmu_harland___wolf_silver_city_comet) {
         vehicle_life: 52;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 29.65792;
-        running_cost_factor: 25.95196;
+        cost_factor: 29.66;
+        running_cost_factor: 37.56;
         speed: 160 km/h;
         power: 660 hp;
         cargo_capacity: 0;

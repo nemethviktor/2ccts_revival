@@ -34,8 +34,8 @@ item(FEAT_TRAINS, item_singlemtro_berlin_u_bahn_c_ii) {
         vehicle_life: 50;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 30.5372;
-        running_cost_factor: 25.70736;
+        cost_factor: 30.54;
+        running_cost_factor: 32.38;
         speed: 60 km/h;
         power: 375 hp;
         cargo_capacity: 157;

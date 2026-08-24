@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_diesel_ltz_te126) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 69.02722;
-        running_cost_factor: 55.02722;
+        cost_factor: 69.03;
+        running_cost_factor: 61.2;
         speed: 100 km/h;
         power: 3017 hp;
         cargo_capacity: 0;

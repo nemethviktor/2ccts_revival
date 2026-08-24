@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_steam_bp_4_6_4t_4444_4478_c30) {
         vehicle_life: 54;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 31.20473;
-        running_cost_factor: 26.54696;
+        cost_factor: 31.2;
+        running_cost_factor: 30.82;
         speed: 80 km/h;
         power: 700 hp;
         cargo_capacity: 0;

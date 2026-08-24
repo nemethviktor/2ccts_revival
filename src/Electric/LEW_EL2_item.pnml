@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_electric_lew_el2) {
         vehicle_life: 78;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 52.7115;
-        running_cost_factor: 42.38901;
+        cost_factor: 52.71;
+        running_cost_factor: 49.35;
         speed: 65 km/h;
         power: 1790 hp;
         cargo_capacity: 0;

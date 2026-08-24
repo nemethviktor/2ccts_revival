@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_rbe_hyundai_rotem_silverliner_v) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 38.59167;
-        running_cost_factor: 31.45502;
+        cost_factor: 38.59;
+        running_cost_factor: 48.31;
         speed: 180 km/h;
         power: 680 hp;
         cargo_capacity: 110;

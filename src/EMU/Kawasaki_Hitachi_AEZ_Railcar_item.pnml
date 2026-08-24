@@ -35,8 +35,8 @@ item(FEAT_TRAINS, item_emu_kawasaki_hitachi_aez_railcar) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 50.81468;
-        running_cost_factor: 45.10871;
+        cost_factor: 50.81;
+        running_cost_factor: 57.9;
         speed: 160 km/h;
         power: 1610 hp;
         cargo_capacity: 88;

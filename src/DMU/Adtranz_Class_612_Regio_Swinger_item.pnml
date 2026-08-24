@@ -34,8 +34,8 @@ item(FEAT_TRAINS, item_dmu_adtranz_class_612_regio_swinger) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 49.81863;
-        running_cost_factor: 43.51267;
+        cost_factor: 49.82;
+        running_cost_factor: 52.05;
         speed: 160 km/h;
         power: 1520 hp;
         cargo_capacity: 73;

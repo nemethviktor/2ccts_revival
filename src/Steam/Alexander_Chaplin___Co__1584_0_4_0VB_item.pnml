@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_steam_alexander_chaplin___co__1584_0_4_0vb) {
         vehicle_life: 36;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 7.32456;
-        running_cost_factor: 6.36456;
+        cost_factor: 7.32;
+        running_cost_factor: 8.52;
         speed: 16 km/h;
         power: 40 hp;
         cargo_capacity: 0;

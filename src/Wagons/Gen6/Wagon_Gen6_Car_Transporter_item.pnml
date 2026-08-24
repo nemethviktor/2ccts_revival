@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_mu_wagon_gen6_car_transporter) {
         vehicle_life: 25;
         retire_early: 0;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 11.71623;
-        running_cost_factor: 7.54743;
+        cost_factor: 11.72;
+        running_cost_factor: 3.01;
         speed: 160 km/h;
         power: 0 hp;
         cargo_capacity: 20;

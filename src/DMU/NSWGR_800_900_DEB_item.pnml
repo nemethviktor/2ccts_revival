@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_dmu_nswgr_800_900_deb) {
         vehicle_life: 43;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 29.00681;
-        running_cost_factor: 25.37786;
+        cost_factor: 29.01;
+        running_cost_factor: 33.79;
         speed: 115 km/h;
         power: 480 hp;
         cargo_capacity: 43;

@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_electric_metrowick_mv_5e1) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 53.2852;
-        running_cost_factor: 44.29125;
+        cost_factor: 53.29;
+        running_cost_factor: 54.29;
         speed: 97 km/h;
         power: 1953 hp;
         cargo_capacity: 0;

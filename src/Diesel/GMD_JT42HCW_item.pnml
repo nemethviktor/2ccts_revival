@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_diesel_gmd_jt42hcw) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 68.40885;
-        running_cost_factor: 56.6966;
+        cost_factor: 68.41;
+        running_cost_factor: 65.83;
         speed: 164 km/h;
         power: 3200 hp;
         cargo_capacity: 0;

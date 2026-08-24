@@ -36,8 +36,8 @@ item(FEAT_TRAINS, item_dmu_brel_43_ic125) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 71.54991;
-        running_cost_factor: 67.48281;
+        cost_factor: 71.55;
+        running_cost_factor: 76.95;
         speed: 201 km/h;
         power: 4500 hp;
         cargo_capacity: 0;

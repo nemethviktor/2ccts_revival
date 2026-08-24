@@ -1,17 +1,19 @@
 # 2cc Trains In NML (Revival) changelog
 
-## 4.0.1
+## 4.1
 
-### 4.0.1 [2026xxxx]
+### 4.1 [2026xxxx]
 - CODE CHANGES:
-  - `Dual mode` badges are now available. Also changed some naming logic whereby special power types (dual mode, gas turbine) would no longer be doubled as "Diesel, Gas Turbine" or "Electric, Dual Mode".
-  - Various changes to make build run more efficiently
+  - `Dual mode` badges and functionality are now available. "Current" Running cost, power and speed values are take from real values for the various operating modes. (ie "is it running on ELRL right now or not?")
+  - Also changed some naming logic whereby special power types (dual mode, gas turbine) would no longer be doubled as "Diesel, Gas Turbine" or "Electric, Dual Mode".
+  - Various changes to make build run more efficiently.
 - VEHICLES ADDS:
   - `Siemens Vectron MS`
   - `Siemens Vectron DE`
   - `Siemens Vectron Dual Mode`  
 - VEHICLES CHANGES:
-  - Various visual only sprite changes.
+  - Various visual-only sprite changes.
+  - Vehicle running costs have been re-balanced. Generally wagons and coaches have been a lot less expensive than before but as a counterbalance locos are now more expensive to run based on actual performance values specific to propulsion type.
   - `Comeng XPT` is now 7 long, not 8.
   - `Comeng W Class 'Sputnik'` is now standard gauge as it should be
   - `Bombardier-Alstom HHP-8` speed reduced to 201 km/h
@@ -19,6 +21,12 @@
   - `De Dietrich/Adtranz mDDm 390` speed decreased to 140 km/h
   - `North British LC R 4-6-4 Hudson` speed decreased to 115 km/h
   - `Zuzhou KZ4A` speed decreased to 200 km/h
+  - `Alsthom_Class_13_HLE` HP increased to 7000
+  - `Siemens_EuroSprinter_ES64F` HP increased to 8582
+  - `Siemens_Eurosprinter_ES64U4` HP decreased to 8582 (both are marked as 6400kW on German Wikipedia)
+  - `Stadler_Butler_Eem_923` is now Dual-Mode as it should be
+  - `Alsthom_Pendolino_680` HP increased to 5260
+  - `CAF_Alstom_Class_120` HP increased to 5400
 
 ## 4.0
 

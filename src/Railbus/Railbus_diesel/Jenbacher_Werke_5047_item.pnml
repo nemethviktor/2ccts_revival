@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_rbd_jenbacher_werke_5047) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 32.59127;
-        running_cost_factor: 27.75309;
+        cost_factor: 32.59;
+        running_cost_factor: 36.06;
         speed: 120 km/h;
         power: 562 hp;
         cargo_capacity: 62;

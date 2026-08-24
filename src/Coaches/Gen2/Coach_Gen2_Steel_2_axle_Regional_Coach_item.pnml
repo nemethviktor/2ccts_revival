@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_mu_coach_gen2_steel_2_axle_regional_coach) {
         vehicle_life: 25;
         retire_early: 0;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 46.33717;
-        running_cost_factor: 33.78558;
+        cost_factor: 46.34;
+        running_cost_factor: 18.47;
         speed: 90 km/h;
         power: 0 hp;
         cargo_capacity: 90;

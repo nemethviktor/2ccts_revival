@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_electric_pafawag_104e) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 71.56041;
-        running_cost_factor: 62.70444;
+        cost_factor: 71.56;
+        running_cost_factor: 74.37;
         speed: 160 km/h;
         power: 3916 hp;
         cargo_capacity: 0;

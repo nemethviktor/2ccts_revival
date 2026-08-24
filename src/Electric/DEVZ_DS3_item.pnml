@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_electric_devz_ds3) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 89.94435;
-        running_cost_factor: 80.43838;
+        cost_factor: 89.94;
+        running_cost_factor: 88.56;
         speed: 160 km/h;
         power: 6450 hp;
         cargo_capacity: 0;

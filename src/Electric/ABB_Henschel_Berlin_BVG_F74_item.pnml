@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_mtro_abb_henschel_berlin_bvg_f74) {
         vehicle_life: 50;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 36.37787;
-        running_cost_factor: 32.23846;
+        cost_factor: 36.38;
+        running_cost_factor: 39.24;
         speed: 72 km/h;
         power: 702 hp;
         cargo_capacity: 117;

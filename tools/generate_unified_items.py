@@ -105,8 +105,7 @@ def load_master_data(excel_path):
             df_master = df_master.drop(columns=overlapping_cols)
             df_master = pd.merge(df_master, current_sheet, on="VEHIDCODE", how="left")
 
-    # 3. Load the Lookups and Copyright
-    df_cost_lookup = sheets["cost_lookup"].set_index("COST_CAT").fillna(0)
+    # 3. Load Copyright
 
     df_copyright = sheets["copyright_text"]
     copyright_txt = ""
@@ -120,7 +119,7 @@ def load_master_data(excel_path):
     # Final safety check before returning from load_master_data
     # df_master['COUNTRY_CODE'] = df_master['COUNTRY_CODE'].fillna('NA')
 
-    return df_master, df_cost_lookup, copyright_txt, notes_lookup
+    return df_master, copyright_txt, notes_lookup
 
 
 def is_true(val) -> bool:
@@ -224,6 +223,290 @@ def get_badges(row: pd.Series) -> str:
     return f"""\n\tbadges: ["{badge_string}"];\n"""
 
 
+def get_costs(cost_type) -> dict:
+    # I'm moving these here and in such a form so that they are easier to track espc vs legacy.
+    # P/R1 (Base Scale): Think of this as the "Luxury Tax." For an engine, it's 1. For a simple wagon, it's 0.1 (10% of the price).
+    # P/R2 (Weight Impact): How much the raw tons of steel cost.
+    # P/R3 (The Complexity Factor): This multiplies the Square Root of Power. We use a Square Root because doubling the horsepower of an engine doesn't double the price (it's hard to make a 100hp engine, but only slightly harder to make it 200hp).
+    # P/R4-6 (Power/Speed/Wagon Power): The cost of making the components survive high speeds or adding extra motors to the middle wagons. (note just below)
+    ## Also R5 ref wagon_power is no use because for xMUs the powered/unpowered multi trailers have their own rc logic. R5 has now been removed.
+
+    # Powered/unpowered sundry running costs are calculated differently and elsewhere.
+
+    ## Gemini ref Running Costs
+    ## Parameter	Steam	Diesel	Electric	Maglev	Target Attribute Weighting
+    ## R_1 (Base Multiplier)	1.20	1.40	1.60	1.70	Main scale modifier per technology tier.
+    ## R_2 (\sqrt{\text{speed}})	0.50	0.80	1.20	1.40	Speed weight (progressively higher for faster tech).
+    ## R_3 (\sqrt{\text{power}})	0.80	0.65	0.50	0.30	Power weight (scaled down for high-HP late tech to avoid over-costing).
+    ## R_4 (\sqrt{\text{capacity}})	1.00	0.40	0.20	0.10	Capacity weight (tenders/tanks penalty).
+    ## R_6 (\text{TE})	0.20	0.06	0.05	0.02	Unsquared TE weight (dampened so high kN heavy haulers stay under control).
+
+    ## Type	R1​ (Base Scale)	R2​ (Speed​)	Target Behavior & Design Rationale
+    ## Coach (Passengers)	0.20	0.25	Capacity-driven: R_1 is set to keep per-passenger maintenance reasonable while letting speed act as a mild luxury tax.
+    ## Wagon (Items/Cargo)	0.12	0.40	Speed-wear-driven: Lower base scale (cargo requires less care than people), but higher speed multiplier to penalize hauling heavy bulk goods at high speeds.
+
+    cost_cat_lookup = {
+        "STEAMENGINE": {
+            "P1": 1.00,  # legacy: 1.00
+            "P2": 0.10,  # legacy: 0.10
+            "P3": 0.05,  # legacy: 0.05
+            "P4": 1.00,  # legacy: 1.00
+            "P5": 1.00,  # legacy: 1.00
+            "P6": 0.00,  # legacy: 0.00
+            "P7": 0.00,  # legacy: 0.00
+            # --
+            "R1": 1.20,  # legacy: 1.00
+            "R2": 0.50,  # legacy: 0.01
+            "R3": 0.80,  # legacy: 1.00
+            "R4": 1.00,  # legacy: 1.00
+            # R5 removed
+            "R6": 0.20,  # legacy: 0.00
+        },
+        "DIESELENGINE": {
+            "P1": 1.00,  # legacy: 1.00
+            "P2": 0.10,  # legacy: 0.10
+            "P3": 0.05,  # legacy: 0.05
+            "P4": 1.00,  # legacy: 1.00
+            "P5": 1.00,  # legacy: 1.00
+            "P6": 0.00,  # legacy: 0.00
+            "P7": 0.00,  # legacy: 0.00
+            # --
+            "R1": 1.40,  # legacy: 1.00
+            "R2": 0.80,  # legacy: 0.01
+            "R3": 0.65,  # legacy: 1.00
+            "R4": 0.40,  # legacy: 1.00
+            # R5 removed
+            "R6": 0.06,  # legacy: 0.00
+        },
+        "ELECTRICENGINE": {
+            "P1": 1.00,  # legacy: 1.00
+            "P2": 0.10,  # legacy: 0.10
+            "P3": 0.05,  # legacy: 0.05
+            "P4": 1.00,  # legacy: 1.00
+            "P5": 1.00,  # legacy: 1.00
+            "P6": 0.00,  # legacy: 0.00
+            "P7": 0.00,  # legacy: 0.00
+            # --
+            "R1": 1.60,  # legacy: 1.00
+            "R2": 1.20,  # legacy: 0.01
+            "R3": 0.50,  # legacy: 1.00
+            "R4": 0.20,  # legacy: 1.00
+            # R5 removed
+            "R6": 0.05,  # legacy: 0.00
+        },
+        "MAGLEVENGINE": {
+            "P1": 1.00,  # legacy: 1.00
+            "P2": 0.10,  # legacy: 0.10
+            "P3": 0.05,  # legacy: 0.05
+            "P4": 1.00,  # legacy: 1.00
+            "P5": 0.50,  # legacy: 1.00
+            "P6": 0.00,  # legacy: 0.00
+            "P7": 0.00,  # legacy: 0.00
+            # --
+            "R1": 1.70,  # legacy: 1.00
+            "R2": 1.40,  # legacy: 0.01
+            "R3": 0.30,  # legacy: 1.00
+            "R4": 0.10,  # legacy: 1.00
+            # R5 removed
+            "R6": 0.02,  # legacy: 0.00
+        },
+        "DUALENGINE": {
+            "P1": 1.00,  # legacy: NA
+            "P2": 0.10,  # legacy: NA
+            "P3": 0.05,  # legacy: NA
+            "P4": 1.00,  # legacy: NA
+            "P5": 1.00,  # legacy: NA
+            "P6": 0.00,  # legacy: NA
+            "P7": 0.00,  # legacy: NA
+            # -- Irrelevant -> DE running cost is based on what tile the item is at any given moment
+            "R1": 1.60,  # legacy: 1.00
+            "R2": 1.20,  # legacy: 0.01
+            "R3": 0.50,  # legacy: 1.00
+            "R4": 0.20,  # legacy: 1.00
+            # R5 removed
+            "R6": 0.05,  # legacy: 0.00
+        },
+        "DMU": {
+            "P1": 1.00,  # legacy: 1.00
+            "P2": 0.10,  # legacy: 0.10
+            "P3": 0.05,  # legacy: 0.05
+            "P4": 1.00,  # legacy: 1.00
+            "P5": 0.50,  # legacy: 0.50
+            "P6": 0.50,  # legacy: 0.50
+            "P7": 1.00,  # legacy: 1.00
+            # --
+            "R1": 1.40,  # legacy: 1.00
+            "R2": 0.80,  # legacy: 0.01
+            "R3": 0.65,  # legacy: 1.00
+            "R4": 0.20,  # legacy: 0.50
+            # R5 removed
+            "R6": 0.06,  # legacy: 0.00
+        },
+        "EMU": {
+            "P1": 1.00,  # legacy: 1.00
+            "P2": 0.10,  # legacy: 0.10
+            "P3": 0.05,  # legacy: 0.05
+            "P4": 1.00,  # legacy: 1.00
+            "P5": 0.50,  # legacy: 0.50
+            "P6": 0.50,  # legacy: 0.50
+            "P7": 1.00,  # legacy: 1.00
+            # --
+            "R1": 1.60,  # legacy: 1.00
+            "R2": 1.20,  # legacy: 0.01
+            "R3": 0.50,  # legacy: 1.00
+            "R4": 0.10,  # legacy: 0.50
+            # R5 removed
+            "R6": 0.05,  # legacy: 0.00
+        },
+        "MMU": {
+            "P1": 1.00,  # legacy: 1.00
+            "P2": 0.10,  # legacy: 0.10
+            "P3": 0.05,  # legacy: 0.05
+            "P4": 1.00,  # legacy: 1.00
+            "P5": 0.50,  # legacy: 0.50
+            "P6": 0.50,  # legacy: 0.50
+            "P7": 1.00,  # legacy: 1.00
+            # --
+            "R1": 1.70,  # legacy: 1.00
+            "R2": 1.40,  # legacy: 0.01
+            "R3": 0.30,  # legacy: 1.00
+            "R4": 0.05,  # legacy: 0.50
+            # R5 removed
+            "R6": 0.02,  # legacy: 0.00
+        },
+        "METRO": {
+            "P1": 1.00,  # legacy: 1.00
+            "P2": 0.10,  # legacy: 0.10
+            "P3": 0.05,  # legacy: 0.05
+            "P4": 1.00,  # legacy: 1.00
+            "P5": 0.50,  # legacy: 0.50
+            "P6": 0.50,  # legacy: 0.50
+            "P7": 1.00,  # legacy: 1.00
+            # --
+            "R1": 1.60,  # legacy: 1.00
+            "R2": 1.20,  # legacy: 0.01
+            "R3": 0.50,  # legacy: 1.00
+            "R4": 0.10,  # legacy: 0.50
+            # R5 removed
+            "R6": 0.05,  # legacy: 0.00
+        },
+        "STEAMRAILBUS": {
+            "P1": 1.00,  # legacy: 1.00
+            "P2": 0.10,  # legacy: 0.10
+            "P3": 0.05,  # legacy: 0.05
+            "P4": 1.00,  # legacy: 1.00
+            "P5": 0.50,  # legacy: 1.00
+            "P6": 0.00,  # legacy: 0.00
+            "P7": 0.00,  # legacy: 0.00
+            # --
+            "R1": 1.20,  # legacy: 1.00
+            "R2": 0.50,  # legacy: 0.01
+            "R3": 0.80,  # legacy: 1.00
+            "R4": 0.50,  # legacy: 0.50
+            # R5 removed
+            "R6": 0.20,  # legacy: 0.00
+        },
+        "DIESELRAILBUS": {
+            "P1": 1.00,  # legacy: 1.00
+            "P2": 0.10,  # legacy: 0.10
+            "P3": 0.05,  # legacy: 0.05
+            "P4": 1.00,  # legacy: 1.00
+            "P5": 0.50,  # legacy: 1.00
+            "P6": 0.00,  # legacy: 0.00
+            "P7": 0.00,  # legacy: 0.00
+            # --
+            "R1": 1.40,  # legacy: 1.00
+            "R2": 0.80,  # legacy: 0.01
+            "R3": 0.65,  # legacy: 1.00
+            "R4": 0.20,  # legacy: 0.50
+            # R5 removed
+            "R6": 0.06,  # legacy: 0.00
+        },
+        "ELECTRICRAILBUS": {
+            "P1": 1.00,  # legacy: 1.00
+            "P2": 0.10,  # legacy: 0.10
+            "P3": 0.05,  # legacy: 0.05
+            "P4": 1.00,  # legacy: 1.00
+            "P5": 0.50,  # legacy: 1.00
+            "P6": 0.00,  # legacy: 0.00
+            "P7": 0.00,  # legacy: 0.00
+            # --
+            "R1": 1.60,  # legacy: 1.00
+            "R2": 1.20,  # legacy: 0.01
+            "R3": 0.50,  # legacy: 1.00
+            "R4": 0.10,  # legacy: 0.50
+            # R5 removed
+            "R6": 0.05,  # legacy: 0.00
+        },
+        "METRORAILBUS": {
+            "P1": 1.00,  # legacy: 1.00
+            "P2": 0.10,  # legacy: 0.10
+            "P3": 0.05,  # legacy: 0.05
+            "P4": 1.00,  # legacy: 1.00
+            "P5": 0.50,  # legacy: 1.00
+            "P6": 0.00,  # legacy: 0.00
+            "P7": 0.00,  # legacy: 0.00
+            # --
+            "R1": 1.60,  # legacy: 1.00
+            "R2": 1.20,  # legacy: 0.01
+            "R3": 0.50,  # legacy: 1.00
+            "R4": 0.10,  # legacy: 0.50
+            # R5 removed
+            "R6": 0.05,  # legacy: 0.00
+        },
+        "MAGLEVRAILBUS": {
+            "P1": 1.00,  # legacy: 1.00
+            "P2": 0.10,  # legacy: 0.10
+            "P3": 0.05,  # legacy: 0.05
+            "P4": 1.00,  # legacy: 1.00
+            "P5": 0.50,  # legacy: 1.00
+            "P6": 0.00,  # legacy: 0.00
+            "P7": 0.00,  # legacy: 0.00
+            # --
+            "R1": 1.70,  # legacy: 1.00
+            "R2": 1.40,  # legacy: 0.01
+            "R3": 0.30,  # legacy: 1.00
+            "R4": 0.05,  # legacy: 0.50
+            # R5 removed
+            "R6": 0.02,  # legacy: 0.00
+        },
+        "WAGON": {
+            "P1": 0.50,  # legacy: 0.50
+            "P2": 0.10,  # legacy: 0.10
+            "P3": 0.05,  # legacy: 0.05
+            "P4": 0.00,  # legacy: 0.00
+            "P5": 1.00,  # legacy: 1.00
+            "P6": 0.00,  # legacy: 0.00
+            "P7": 0.00,  # legacy: 0.00
+            # --
+            "R1": 0.12,  # legacy: 0.50
+            "R2": 0.40,  # legacy: 0.50
+            # R3 not applicable here
+            # R4 not applicable here
+            # R5 not applicable here
+            # R6 not applicable here
+        },
+        "COACH": {
+            "P1": 0.50,  # legacy: 0.50
+            "P2": 0.10,  # legacy: 0.10
+            "P3": 0.05,  # legacy: 0.05
+            "P4": 0.00,  # legacy: 0.00
+            "P5": 1.00,  # legacy: 1.00
+            "P6": 0.00,  # legacy: 0.00
+            "P7": 0.00,  # legacy: 0.00
+            # --
+            "R1": 0.20,  # legacy: 0.50
+            "R2": 0.25,  # legacy: 0.50
+            # R3 not applicable here
+            # R4 not applicable here
+            # R5 not applicable here
+            # R6 not applicable here
+        },
+    }
+
+    return cost_cat_lookup.get(cost_type, {})
+
+
 def calculate_nml_cost(row: pd.Series, m, is_running_cost=False) -> float:
     """
     Universal cost calculator for Purchase and Running Cost properties.
@@ -240,7 +523,7 @@ def calculate_nml_cost(row: pd.Series, m, is_running_cost=False) -> float:
 
     Args:
         row (pd.Series): A row from the merged 'master_df' containing vehicle specs.
-        m (pd.Series): The row from 'cost_lookup' corresponding to the vehicle category.
+        m (dict): The row from 'cost_lookup' corresponding to the vehicle category.
         is_running_cost (bool): If True, calculates 'running_cost_factor'.
                                 If False, calculates 'cost_factor'.
 
@@ -248,7 +531,6 @@ def calculate_nml_cost(row: pd.Series, m, is_running_cost=False) -> float:
         float: The final cost factor rounded to 5 decimal places.
     """
     # 1. Setup raw variables and handle empty cells (NaN)
-    m = m.fillna(0)
     W = float(row.get("WEIGHT", 0))
     P = float(row.get("POWER", 0))
     S = float(row.get("SPEED", 0))
@@ -256,28 +538,49 @@ def calculate_nml_cost(row: pd.Series, m, is_running_cost=False) -> float:
     C = float(row.get("HEAD_CAPACITY", 0))
 
     # Emulate the 3-iteration Newton SQRT
-    sqrt_S = math.sqrt(S)
-    sqrt_P = math.sqrt(P)
+    sqrt_speed = math.sqrt(S)
+    sqrt_power = math.sqrt(P)
 
     # 2. Branch Logic based on your Macro Definitions
     if row["COST_CAT"] in ["COACH", "WAGON"]:
-        if not is_running_cost:
-            # Matches PURCHASECOSTNONENGINEVALUE(SCALAR, WFACTOR, SFACTOR, CAPFACTOR)
-            # Logic: SCALAR * (WFACTOR * WEIGHT + SFACTOR * SQRT(SPEED) + CAPFACTOR * CAPACITY)
-            # For Coach: 0.5 * (0.1 * 28 + 0.05 * 8.94 + 1 * 60)
-            inner_math = (m.P2 * W) + (m.P3 * sqrt_S) + (m.P5 * C)
-            return round(m.P1 * inner_math, 5)
-        else:
+        if is_running_cost:
             # Matches RUNNINGCOSTNONENGINEVALUE(SCALAR, SFACTOR, CAPFACTOR)
             # Logic: SCALAR * (SFACTOR * SQRT(SPEED) + CAPACITY)
-            inner_math = (m.R2 * sqrt_S) + C
-            # 0.75 because from a gameplay perspective wagons are too expensive to keep up late game given their puny speeds.
-            return round((m.R1 * inner_math) * 0.75, 5)
+            inner_math = (m.get("R2") * sqrt_speed) + C
+            return round((m.get("R1") * inner_math), 2)
+        else:
+            # Matches PURCHASECOSTNONENGINEVALUE(SCALAR, WFACTOR, SFACTOR, CAPFACTOR)
+            # Logic: SCALAR * (WFACTOR * WEIGHT + SFACTOR * SQRT(SPEED) + CAPFACTOR * CAPACITY)
+            inner_math = (
+                (m.get("P2") * W) + (m.get("P3") * sqrt_speed) + (m.get("P5") * C)
+            )
+            return round(m.get("P1") * inner_math, 2)
 
     else:
         # Standard Engine/MU Logic (Power & Capacity use SQRT)
-        sqrt_C = math.sqrt(C)
-        if not is_running_cost:
+        sqrt_capacity = math.sqrt(C)
+        if is_running_cost:
+            base = (
+                (m.get("R2") * sqrt_speed)
+                + (m.get("R3") * sqrt_power)
+                + (m.get("R4") * sqrt_capacity)
+                + (m.get("R6") * TE)
+            )
+            multipler = 1.0
+            if row["IS_POWERED_UNPOWERED_SUNDRY"]:
+                if "_powered" in row["VEHIDCODE"].lower():
+                    if row["VEHIDCODE"].startswith("mglv_"):
+                        multipler = 0.5
+                    else:
+                        multipler = 0.25
+                elif "_unpowered" in row["VEHIDCODE"].lower():
+                    # these should not even exist. There is no such thing.
+                    if row["VEHIDCODE"].startswith("mglv_"):
+                        multipler = 0.3
+                    else:
+                        multipler = 0.15
+            return min(round(max((m.get("R1") * base), multipler), 2), 255)
+        else:
             multipler = 1
             if row["IS_POWERED_UNPOWERED_SUNDRY"]:
                 if "_powered" in row["VEHIDCODE"].lower():
@@ -286,20 +589,15 @@ def calculate_nml_cost(row: pd.Series, m, is_running_cost=False) -> float:
                     multipler = 80
 
             base = (
-                (m.P2 * W)
-                + (m.P3 * sqrt_S)
-                + (m.P4 * sqrt_P)
-                + (m.P5 * sqrt_C)
-                + (m.P7 * TE)
+                (m.get("P2") * W)
+                + (m.get("P3") * sqrt_speed)
+                + (m.get("P4") * sqrt_power)
+                + (m.get("P5") * sqrt_capacity)
+                + (m.get("P7") * TE)
             )
             if row["COST_CAT"] in ["DMU", "EMU", "METRO", "MMU"]:
-                base += m.P6 * math.sqrt(row.get("WAGON_POWER", 0))
-            return round(m.P1 * base, 5) * multipler
-        else:
-            base = (m.R2 * sqrt_S) + (m.R3 * sqrt_P) + (m.R4 * sqrt_C) + (m.R6 * TE)
-            if row["COST_CAT"] in ["DMU", "EMU", "METRO", "MMU"]:
-                base += m.R5 * math.sqrt(row.get("WAGON_POWER", 0))
-            return round(max(m.R1 * base, 1.0), 5)
+                base += m.get("P6") * math.sqrt(row.get("WAGON_POWER", 0))
+            return min(round(m.get("P1") * base, 2) * multipler, 255)
 
 
 def get_climates(row: pd.Series) -> str:
@@ -644,9 +942,7 @@ def generate_unified_items():
     SPRITE_ID = "SPRITE_ID_NEW_TRAIN"
 
     # 1. Load Data
-    df_master, df_cost_lookup, copyright_text, notes_lookup = load_master_data(
-        excel_path=excel_path
-    )
+    df_master, copyright_text, notes_lookup = load_master_data(excel_path=excel_path)
     for _, row in df_master.iterrows():
         if pd.isna(row["VEHIDCODE"]) or is_true(row["EXCLUDE"]):
             continue
@@ -680,11 +976,19 @@ def generate_unified_items():
 
         # Fetch Multipliers
         category = str(row["COST_CAT"]).strip() if not IS_DUAL_POWERED else "DUALENGINE"
-        m = df_cost_lookup.loc[category]
+        m = get_costs(category)
 
         # Calculate Costs for main item
         p_cost = calculate_nml_cost(row, m, is_running_cost=False)
         r_cost = calculate_nml_cost(row, m, is_running_cost=True)
+
+        if IS_DUAL_POWERED:
+            r_cost_diesel = calculate_nml_cost(
+                row, get_costs("DIESELENGINE"), is_running_cost=True
+            )
+            r_cost_electric = calculate_nml_cost(
+                row, get_costs("ELECTRICENGINE"), is_running_cost=True
+            )
 
         # 2. Tracks Logic
         tracks = [
@@ -924,7 +1228,18 @@ switch (FEAT_TRAINS, SELF, sw_loco_visual_effect_{VEHIDCODE_lcase}, tile_powers_
 switch (FEAT_TRAINS, SELF, sw_loco_power_{VEHIDCODE_lcase}, tile_powers_railtype("ELRL")) {{
     1: return {row['POWER']};
     return {row['POWER_DM_DIESEL']};
-}}\n\n""")
+}}
+
+switch (FEAT_TRAINS, SELF, sw_loco_speed_{VEHIDCODE_lcase}, tile_powers_railtype("ELRL")) {{
+    1: return {row['SPEED']};
+    return {row['SPEED_DM_DIESEL']};
+}}
+
+switch (FEAT_TRAINS, SELF, sw_loco_runningcost_{VEHIDCODE_lcase}, tile_powers_railtype("ELRL")) {{
+    1: return int({r_cost_electric});
+    return int({r_cost_diesel});
+}}
+\n\n""")
 
         content.append(f"item(FEAT_TRAINS, {row['ITEM'].lower()}) {{\n")
         content.append("    property {\n")
@@ -943,13 +1258,13 @@ switch (FEAT_TRAINS, SELF, sw_loco_power_{VEHIDCODE_lcase}, tile_powers_railtype
         content.append(f"        loading_speed: {ls_logic};\n")
         content.append(f"        cost_factor: {p_cost};\n")
         content.append(f"        running_cost_factor: {r_cost};\n")
-        content.append(f"        speed: {int(row['SPEED'])} km/h;\n")
-        power_comment = (
+        dual_mode_comment = (
             " // this needs to be here even though it's redefined in graphics further down"
             if IS_DUAL_POWERED
             else ""
         )
-        content.append(f"        power: {int(row['POWER'])} hp;{power_comment}\n")
+        content.append(f"        speed: {int(row['SPEED'])} km/h;{dual_mode_comment}\n")
+        content.append(f"        power: {int(row['POWER'])} hp;{dual_mode_comment}\n")
         content.append(
             f"        cargo_capacity: {255 if int(row['HEAD_CAPACITY']) > 255 else int(row['HEAD_CAPACITY'])};\n"
         )
@@ -1015,13 +1330,25 @@ switch (FEAT_TRAINS, SELF, sw_loco_power_{VEHIDCODE_lcase}, tile_powers_railtype
         content.append("    graphics {\n")
         if IS_DUAL_POWERED:
             content.append(f"        power: sw_loco_power_{VEHIDCODE_lcase};\n")
+            content.append(f"        speed: sw_loco_speed_{VEHIDCODE_lcase};\n")
             content.append(
-                f"        additional_text: string("
-                f"STR_ADDITIONAL_DUAL_POWER_INFO, "
-                f"string(STR_POWER), "
-                f"{row['POWER']}, "
-                f"{row['POWER_DM_DIESEL']}"
-                f");\n"
+                f"        running_cost_factor: sw_loco_runningcost_{VEHIDCODE_lcase};\n"
+            )
+
+            content.append(
+                f"        additional_text: string(\n"
+                f"            STR_ADDITIONAL_DUAL_POWER_INFO,\n"
+                f"            string(STR_RATED_POWER),\n"
+                f"            string(STR_POWER_ELECTRIC),\n"
+                f"            {row['POWER']},\n"
+                f"            string(STR_POWER_DIESEL),\n"
+                f"            {row['POWER_DM_DIESEL']},\n"
+                f"            string(STR_SPEED),\n"
+                f"            string(STR_POWER_ELECTRIC),\n"
+                f"            {row['SPEED']},\n"
+                f"            string(STR_POWER_DIESEL),\n"
+                f"            {row['SPEED_DM_DIESEL']}\n"
+                f"        );\n"
             )
             content.append(
                 f"        visual_effect_and_powered: sw_loco_visual_effect_{VEHIDCODE_lcase};\n"

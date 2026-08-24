@@ -20,8 +20,8 @@ item(FEAT_TRAINS, item_cargoemu_acme_corp__dd_cargoemu) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 106.16793;
-        running_cost_factor: 90.47511;
+        cost_factor: 106.17;
+        running_cost_factor: 103.58;
         speed: 300 km/h;
         power: 7457 hp;
         cargo_capacity: 60;

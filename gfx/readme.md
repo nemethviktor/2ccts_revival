@@ -264,7 +264,6 @@ Note: "b/o" = "based on"
 - Ganz_MAVAG_VM7_V40 b/o ONCF E700
 - Ganz_MAVAG_VM15_V63 b/o MAV V43 + FF1
 - GE_2_C_C_2 b/o GE EP4
-- GE_289_Boxcab b/o DEKI 400
 - Kolomna_VL19 b/o VL22M
 - LEW_EL2 b/o VL41
 - SLM_BBC_1_D_1 b/o DEKI 400

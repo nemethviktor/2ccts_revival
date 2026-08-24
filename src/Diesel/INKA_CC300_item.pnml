@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_diesel_inka_cc300) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 58.14772;
-        running_cost_factor: 50.10954;
+        cost_factor: 58.15;
+        running_cost_factor: 57.8;
         speed: 120 km/h;
         power: 2500 hp;
         cargo_capacity: 0;

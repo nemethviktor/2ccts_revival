@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_mtro_adtranz_berlin_bvg_h) {
         vehicle_life: 50;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 63.96663;
-        running_cost_factor: 59.80886;
+        cost_factor: 63.97;
+        running_cost_factor: 62.06;
         speed: 80 km/h;
         power: 2900 hp;
         cargo_capacity: 124;

@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_steam_lner_a4_gresley) {
         vehicle_life: 30;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 64.53661;
-        running_cost_factor: 47.03065;
+        cost_factor: 64.54;
+        running_cost_factor: 52.64;
         speed: 160 km/h;
         power: 2200 hp;
         cargo_capacity: 0;

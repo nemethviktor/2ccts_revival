@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_mu_coach_gen4_eurofima_mail_coach) {
         vehicle_life: 25;
         retire_early: 0;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 15/2 : (param_loadingspeed == 2) ? 15*2 : 15;
-        cost_factor: 67.35355;
-        running_cost_factor: 48.80303;
+        cost_factor: 67.35;
+        running_cost_factor: 26.71;
         speed: 200 km/h;
         power: 0 hp;
         cargo_capacity: 130;

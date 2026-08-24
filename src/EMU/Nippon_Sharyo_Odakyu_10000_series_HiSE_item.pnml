@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_emu_nippon_sharyo_odakyu_10000_series_hise) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 46.68661;
-        running_cost_factor: 42.99709;
+        cost_factor: 46.69;
+        running_cost_factor: 52.73;
         speed: 110 km/h;
         power: 1550 hp;
         cargo_capacity: 46;

@@ -15,10 +15,10 @@ item(FEAT_TRAINS, item_electric_alsthom_class_13_hle) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 93.18165;
-        running_cost_factor: 83.61597;
+        cost_factor: 93.37;
+        running_cost_factor: 94.11;
         speed: 200 km/h;
-        power: 6968 hp;
+        power: 7000 hp;
         cargo_capacity: 0;
         weight: 90 ton;
         tractive_effort_coefficient: 0.326;

@@ -34,8 +34,8 @@ item(FEAT_TRAINS, item_emu_carel_et_fouche_alsthom_z_6100) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 37.09023;
-        running_cost_factor: 33.15205;
+        cost_factor: 37.09;
+        running_cost_factor: 45.33;
         speed: 120 km/h;
         power: 824 hp;
         cargo_capacity: 68;

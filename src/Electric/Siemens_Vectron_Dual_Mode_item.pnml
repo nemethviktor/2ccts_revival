@@ -18,6 +18,17 @@ switch (FEAT_TRAINS, SELF, sw_loco_power_electric_siemens_vectron_dual_mode, til
     return 2682;
 }
 
+switch (FEAT_TRAINS, SELF, sw_loco_speed_electric_siemens_vectron_dual_mode, tile_powers_railtype("ELRL")) {
+    1: return 160;
+    return 160;
+}
+
+switch (FEAT_TRAINS, SELF, sw_loco_runningcost_electric_siemens_vectron_dual_mode, tile_powers_railtype("ELRL")) {
+    1: return int(69.7);
+    return int(65.82);
+}
+
+
 item(FEAT_TRAINS, item_electric_siemens_vectron_dual_mode) {
     property {
         name: string(str_electric_siemens_vectron_dual_mode);
@@ -27,9 +38,9 @@ item(FEAT_TRAINS, item_electric_siemens_vectron_dual_mode) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 66.2761;
-        running_cost_factor: 73.9923;
-        speed: 160 km/h;
+        cost_factor: 65.96;
+        running_cost_factor: 69.7;
+        speed: 160 km/h; // this needs to be here even though it's redefined in graphics further down
         power: 3218 hp; // this needs to be here even though it's redefined in graphics further down
         cargo_capacity: 0;
         weight: 86 ton;
@@ -59,7 +70,21 @@ item(FEAT_TRAINS, item_electric_siemens_vectron_dual_mode) {
     }
     graphics {
         power: sw_loco_power_electric_siemens_vectron_dual_mode;
-        additional_text: string(STR_ADDITIONAL_DUAL_POWER_INFO, string(STR_POWER), 3218, 2682);
+        speed: sw_loco_speed_electric_siemens_vectron_dual_mode;
+        running_cost_factor: sw_loco_runningcost_electric_siemens_vectron_dual_mode;
+        additional_text: string(
+            STR_ADDITIONAL_DUAL_POWER_INFO,
+            string(STR_RATED_POWER),
+            string(STR_POWER_ELECTRIC),
+            3218,
+            string(STR_POWER_DIESEL),
+            2682,
+            string(STR_SPEED),
+            string(STR_POWER_ELECTRIC),
+            160,
+            string(STR_POWER_DIESEL),
+            160
+        );
         visual_effect_and_powered: sw_loco_visual_effect_electric_siemens_vectron_dual_mode;
         purchase: spriteset_electric_siemens_vectron_dual_mode_purchase;
         // no 'visual_effect' or 'visual_effect_and_powered'

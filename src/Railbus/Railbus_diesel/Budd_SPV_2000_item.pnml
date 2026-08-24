@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_rbd_budd_spv_2000) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 29.98056;
-        running_cost_factor: 23.72449;
+        cost_factor: 29.98;
+        running_cost_factor: 32.65;
         speed: 130 km/h;
         power: 360 hp;
         cargo_capacity: 86;

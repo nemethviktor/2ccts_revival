@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_mu_coach_gen3_nsw_tulloch_rub_stock_coach) {
         vehicle_life: 27;
         retire_early: 0;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 41.5181;
-        running_cost_factor: 29.66521;
+        cost_factor: 41.52;
+        running_cost_factor: 16.34;
         speed: 115 km/h;
         power: 0 hp;
         cargo_capacity: 79;

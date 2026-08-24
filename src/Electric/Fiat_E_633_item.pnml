@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_electric_fiat_e_633) {
         vehicle_life: 51;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 85.70324;
-        running_cost_factor: 74.94717;
+        cost_factor: 85.7;
+        running_cost_factor: 81.78;
         speed: 130 km/h;
         power: 5600 hp;
         cargo_capacity: 0;

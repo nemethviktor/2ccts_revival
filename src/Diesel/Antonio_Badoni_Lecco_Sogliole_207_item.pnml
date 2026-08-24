@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_diesel_antonio_badoni_lecco_sogliole_207) {
         vehicle_life: 53;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 9.53412;
-        running_cost_factor: 8.71503;
+        cost_factor: 9.53;
+        running_cost_factor: 14.03;
         speed: 30 km/h;
         power: 75 hp;
         cargo_capacity: 0;

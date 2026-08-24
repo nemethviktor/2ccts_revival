@@ -34,8 +34,8 @@ item(FEAT_TRAINS, item_rbe_slm_cfe_3_3) {
         vehicle_life: 69;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 24.96332;
-        running_cost_factor: 21.32668;
+        cost_factor: 24.96;
+        running_cost_factor: 27.03;
         speed: 35 km/h;
         power: 340 hp;
         cargo_capacity: 32;

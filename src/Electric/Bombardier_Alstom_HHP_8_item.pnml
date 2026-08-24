@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_electric_bombardier_alstom_hhp_8) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 100.25159;
-        running_cost_factor: 89.58449;
+        cost_factor: 100.25;
+        running_cost_factor: 98.8;
         speed: 201 km/h;
         power: 8000 hp;
         cargo_capacity: 0;

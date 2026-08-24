@@ -34,8 +34,8 @@ item(FEAT_TRAINS, item_rbd_eritrean_railway_a_62_70_littorina) {
         vehicle_life: 33;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 23.8136;
-        running_cost_factor: 21.05583;
+        cost_factor: 23.81;
+        running_cost_factor: 27.73;
         speed: 80 km/h;
         power: 290 hp;
         cargo_capacity: 62;

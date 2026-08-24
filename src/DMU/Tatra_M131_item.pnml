@@ -34,8 +34,8 @@ item(FEAT_TRAINS, item_dmu_tatra_m131) {
         vehicle_life: 36;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 17.59711;
-        running_cost_factor: 16.45727;
+        cost_factor: 17.6;
+        running_cost_factor: 22.08;
         speed: 60 km/h;
         power: 152 hp;
         cargo_capacity: 60;

@@ -35,8 +35,8 @@ item(FEAT_TRAINS, item_rbs_kitson___co_csar_railmotor) {
         vehicle_life: 30;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 15.0065;
-        running_cost_factor: 9.92937;
+        cost_factor: 15.01;
+        running_cost_factor: 14.49;
         speed: 48 km/h;
         power: 40 hp;
         cargo_capacity: 50;

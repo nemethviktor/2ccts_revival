@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_electric_zuzhou_ss3) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 90.41176;
-        running_cost_factor: 76.21176;
+        cost_factor: 90.41;
+        running_cost_factor: 80.12;
         speed: 100 km/h;
         power: 5793 hp;
         cargo_capacity: 0;

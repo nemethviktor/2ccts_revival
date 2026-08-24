@@ -37,8 +37,8 @@ item(FEAT_TRAINS, item_dmu_man_lhb_vt11_5___db_601_tee) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 52.4501;
-        running_cost_factor: 49.73414;
+        cost_factor: 52.45;
+        running_cost_factor: 58.24;
         speed: 160 km/h;
         power: 2200 hp;
         cargo_capacity: 24;

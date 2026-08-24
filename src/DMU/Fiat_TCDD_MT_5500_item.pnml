@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_dmu_fiat_tcdd_mt_5500) {
         vehicle_life: 57;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 36.48763;
-        running_cost_factor: 32.60816;
+        cost_factor: 36.49;
+        running_cost_factor: 38.65;
         speed: 90 km/h;
         power: 800 hp;
         cargo_capacity: 66;

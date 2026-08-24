@@ -35,8 +35,8 @@ item(FEAT_TRAINS, item_dmu_rvr_dr1a) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 58.59219;
-        running_cost_factor: 49.15401;
+        cost_factor: 58.59;
+        running_cost_factor: 55.29;
         speed: 120 km/h;
         power: 2000 hp;
         cargo_capacity: 68;

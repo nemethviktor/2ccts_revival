@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_diesel_krauss_maffei_v200) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 55.26413;
-        running_cost_factor: 46.69085;
+        cost_factor: 55.26;
+        running_cost_factor: 55.66;
         speed: 140 km/h;
         power: 2169 hp;
         cargo_capacity: 0;

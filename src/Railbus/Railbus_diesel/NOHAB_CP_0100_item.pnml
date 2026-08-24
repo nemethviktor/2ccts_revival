@@ -34,8 +34,8 @@ item(FEAT_TRAINS, item_rbd_nohab_cp_0100) {
         vehicle_life: 30;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 26.79159;
-        running_cost_factor: 22.99159;
+        cost_factor: 26.79;
+        running_cost_factor: 30.58;
         speed: 100 km/h;
         power: 350 hp;
         cargo_capacity: 70;

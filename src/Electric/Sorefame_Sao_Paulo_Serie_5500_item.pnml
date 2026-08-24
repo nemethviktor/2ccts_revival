@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_mtro_sorefame_sao_paulo_serie_5500) {
         vehicle_life: 50;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 51.38977;
-        running_cost_factor: 45.78977;
+        cost_factor: 51.39;
+        running_cost_factor: 52.54;
         speed: 100 km/h;
         power: 1530 hp;
         cargo_capacity: 160;

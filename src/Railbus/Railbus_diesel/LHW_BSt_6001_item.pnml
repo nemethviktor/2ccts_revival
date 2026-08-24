@@ -34,8 +34,8 @@ item(FEAT_TRAINS, item_rbd_lhw_bst_6001) {
         vehicle_life: 33;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 13.15869;
-        running_cost_factor: 11.80571;
+        cost_factor: 13.16;
+        running_cost_factor: 16.72;
         speed: 40 km/h;
         power: 75 hp;
         cargo_capacity: 38;

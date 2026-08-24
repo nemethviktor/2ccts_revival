@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_steam_yorkshire_engine_co__4_8_4t_nitrate_101) {
         vehicle_life: 30;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 47.64603;
-        running_cost_factor: 36.13362;
+        cost_factor: 47.65;
+        running_cost_factor: 39.33;
         speed: 61 km/h;
         power: 1300 hp;
         cargo_capacity: 0;

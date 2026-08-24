@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_emu_tibb_ecd_21_30) {
         vehicle_life: 30;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 32.61784;
-        running_cost_factor: 28.57843;
+        cost_factor: 32.62;
+        running_cost_factor: 37.63;
         speed: 72 km/h;
         power: 650 hp;
         cargo_capacity: 34;

@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_diesel_canadian_locomotive_company_v_1) {
         vehicle_life: 30;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 85.60434;
-        running_cost_factor: 51.68102;
+        cost_factor: 85.6;
+        running_cost_factor: 58.79;
         speed: 112 km/h;
         power: 2660 hp;
         cargo_capacity: 0;

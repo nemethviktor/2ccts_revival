@@ -21,8 +21,8 @@ item(FEAT_TRAINS, item_mglv_siemens_eurosprinter_es64u4m) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 147.17689;
-        running_cost_factor: 137.54443;
+        cost_factor: 147.18;
+        running_cost_factor: 107.72;
         speed: 250 km/h;
         power: 18875 hp;
         cargo_capacity: 0;

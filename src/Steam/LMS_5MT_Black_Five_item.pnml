@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_steam_lms_5mt_black_five) {
         vehicle_life: 30;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 53.10208;
-        running_cost_factor: 40.12042;
+        cost_factor: 53.1;
+        running_cost_factor: 45.65;
         speed: 145 km/h;
         power: 1600 hp;
         cargo_capacity: 0;

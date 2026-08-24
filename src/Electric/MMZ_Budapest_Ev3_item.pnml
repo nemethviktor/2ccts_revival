@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_mtro_mmz_budapest_ev3) {
         vehicle_life: 50;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 37.46778;
-        running_cost_factor: 33.8383;
+        cost_factor: 37.47;
+        running_cost_factor: 42.27;
         speed: 90 km/h;
         power: 770 hp;
         cargo_capacity: 132;

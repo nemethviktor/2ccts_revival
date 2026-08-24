@@ -34,8 +34,8 @@ item(FEAT_TRAINS, item_emu_hitachi_kawasaki_shinkansen_series_e1_max) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 64.12518;
-        running_cost_factor: 57.58551;
+        cost_factor: 64.13;
+        running_cost_factor: 73.44;
         speed: 240 km/h;
         power: 2790 hp;
         cargo_capacity: 80;

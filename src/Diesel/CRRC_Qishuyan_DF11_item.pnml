@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_diesel_crrc_qishuyan_df11) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 84.02203;
-        running_cost_factor: 69.70049;
+        cost_factor: 84.02;
+        running_cost_factor: 77.93;
         speed: 170 km/h;
         power: 4840 hp;
         cargo_capacity: 0;

@@ -35,8 +35,8 @@ item(FEAT_TRAINS, item_emu_alstom_avelia_horizon) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 65.99737;
-        running_cost_factor: 60.83843;
+        cost_factor: 66.0;
+        running_cost_factor: 82.47;
         speed: 360 km/h;
         power: 3104 hp;
         cargo_capacity: 80;

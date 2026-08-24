@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_diesel_br_class_08_0_6_0de) {
         vehicle_life: 77;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 23.95324;
-        running_cost_factor: 18.75728;
+        cost_factor: 23.95;
+        running_cost_factor: 22.54;
         speed: 24 km/h;
         power: 350 hp;
         cargo_capacity: 0;

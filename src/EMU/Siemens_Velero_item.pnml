@@ -35,8 +35,8 @@ item(FEAT_TRAINS, item_emu_siemens_velero) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 113.6012;
-        running_cost_factor: 107.76427;
+        cost_factor: 113.6;
+        running_cost_factor: 118.84;
         speed: 328 km/h;
         power: 10728 hp;
         cargo_capacity: 55;

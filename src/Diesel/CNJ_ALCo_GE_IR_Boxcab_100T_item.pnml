@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_diesel_cnj_alco_ge_ir_boxcab_100t) {
         vehicle_life: 30;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 33.93571;
-        running_cost_factor: 24.56906;
+        cost_factor: 33.94;
+        running_cost_factor: 30.62;
         speed: 55 km/h;
         power: 600 hp;
         cargo_capacity: 0;

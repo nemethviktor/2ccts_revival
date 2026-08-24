@@ -35,8 +35,8 @@ item(FEAT_TRAINS, item_emu_gec_alsthom_thalys_pbka) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 116.45083;
-        running_cost_factor: 108.95801;
+        cost_factor: 116.45;
+        running_cost_factor: 120.17;
         speed: 300 km/h;
         power: 11800 hp;
         cargo_capacity: 0;

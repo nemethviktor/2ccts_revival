@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_mu_coach_gen1_wooden_2_axle_compartment_coach) {
         vehicle_life: 25;
         retire_early: 0;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 10.40811;
-        running_cost_factor: 7.52372;
+        cost_factor: 10.41;
+        running_cost_factor: 4.32;
         speed: 40 km/h;
         power: 0 hp;
         cargo_capacity: 20;

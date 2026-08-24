@@ -34,8 +34,8 @@ item(FEAT_TRAINS, item_dmu_materfer_cmm_400_2) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 37.90529;
-        running_cost_factor: 32.66712;
+        cost_factor: 37.91;
+        running_cost_factor: 40.36;
         speed: 120 km/h;
         power: 800 hp;
         cargo_capacity: 70;

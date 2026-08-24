@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_mtro_aeg_pyongyang_d) {
         vehicle_life: 62;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 38.10716;
-        running_cost_factor: 34.92249;
+        cost_factor: 38.11;
+        running_cost_factor: 40.73;
         speed: 70 km/h;
         power: 800 hp;
         cargo_capacity: 160;

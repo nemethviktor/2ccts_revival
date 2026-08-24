@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_steam_h__cegielski_okz32) {
         vehicle_life: 30;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 55.45338;
-        running_cost_factor: 43.30697;
+        cost_factor: 55.45;
+        running_cost_factor: 46.71;
         speed: 75 km/h;
         power: 1868 hp;
         cargo_capacity: 0;

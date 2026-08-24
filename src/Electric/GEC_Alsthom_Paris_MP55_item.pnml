@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_mtro_gec_alsthom_paris_mp55) {
         vehicle_life: 50;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 17.3787;
-        running_cost_factor: 16.11037;
+        cost_factor: 17.38;
+        running_cost_factor: 23.65;
         speed: 45 km/h;
         power: 140 hp;
         cargo_capacity: 65;

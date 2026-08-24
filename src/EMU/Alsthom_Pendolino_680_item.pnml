@@ -7,6 +7,7 @@
 // Data from: https://en.wikipedia.org/wiki/%C4%8CD_Class_680
 
 // Notes:
+//// POWER_DC: 5260 -- Identical to AC according to wikipedia
 //// TE_STARTING_KN: 50 -- 50 per head unit
 
 
@@ -34,10 +35,10 @@ item(FEAT_TRAINS, item_emu_alsthom_pendolino_680) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 46.0322;
-        running_cost_factor: 39.96652;
+        cost_factor: 82.25;
+        running_cost_factor: 86.28;
         speed: 200 km/h;
-        power: 1318 hp;
+        power: 5260 hp;
         cargo_capacity: 47;
         weight: 55 ton;
         tractive_effort_coefficient: 0.093;
@@ -84,8 +85,8 @@ item(FEAT_TRAINS, item_emu_alsthom_pendolino_680) {
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        running_cost_factor: round(28.74542697213427);
-        power: int(1318*1/2);
+        running_cost_factor: round(32.3675857457875);
+        power: int(5260*1/2);
         weight: int(55*3/4);
         cargo_capacity: 47;
         tractive_effort_coefficient: int(0.093*10*55);

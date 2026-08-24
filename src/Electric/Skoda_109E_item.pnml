@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_electric_skoda_109e) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 102.15159;
-        running_cost_factor: 92.7859;
+        cost_factor: 102.15;
+        running_cost_factor: 101.3;
         speed: 200 km/h;
         power: 8583 hp;
         cargo_capacity: 0;

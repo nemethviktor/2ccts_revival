@@ -36,8 +36,8 @@ item(FEAT_TRAINS, item_emu_ns_4800_hsa_fyra) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 76.12859;
-        running_cost_factor: 70.23576;
+        cost_factor: 76.13;
+        running_cost_factor: 87.54;
         speed: 300 km/h;
         power: 4426 hp;
         cargo_capacity: 42;

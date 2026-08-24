@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_diesel_faur_lde1300) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 39.75906;
-        running_cost_factor: 31.95906;
+        cost_factor: 39.76;
+        running_cost_factor: 40.21;
         speed: 100 km/h;
         power: 1015 hp;
         cargo_capacity: 0;

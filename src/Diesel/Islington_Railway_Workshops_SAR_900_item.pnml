@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_diesel_islington_railway_workshops_sar_900) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 52.5248;
-        running_cost_factor: 39.9848;
+        cost_factor: 52.52;
+        running_cost_factor: 48.62;
         speed: 121 km/h;
         power: 1590 hp;
         cargo_capacity: 0;

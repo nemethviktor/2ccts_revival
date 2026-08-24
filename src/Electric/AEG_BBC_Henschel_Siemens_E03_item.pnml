@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_electric_aeg_bbc_henschel_siemens_e03) {
         vehicle_life: 47;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 112.00706;
-        running_cost_factor: 100.04137;
+        cost_factor: 112.01;
+        running_cost_factor: 107.1;
         speed: 200 km/h;
         power: 9980 hp;
         cargo_capacity: 0;

@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_mtro_london_1938_stock) {
         vehicle_life: 83;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 32.79264;
-        running_cost_factor: 29.90323;
+        cost_factor: 32.79;
+        running_cost_factor: 37.54;
         speed: 72 km/h;
         power: 600 hp;
         cargo_capacity: 105;

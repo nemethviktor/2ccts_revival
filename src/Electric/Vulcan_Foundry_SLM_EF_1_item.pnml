@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_electric_vulcan_foundry_slm_ef_1) {
         vehicle_life: 72;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 63.73741;
-        running_cost_factor: 51.07964;
+        cost_factor: 63.74;
+        running_cost_factor: 57.99;
         speed: 80 km/h;
         power: 2600 hp;
         cargo_capacity: 0;

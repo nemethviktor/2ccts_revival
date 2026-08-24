@@ -20,8 +20,8 @@ item(FEAT_TRAINS, item_mu_coach_gen4_russian_intercity_coach) {
         vehicle_life: 25;
         retire_early: 0;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 30.17386;
-        running_cost_factor: 20.29108;
+        cost_factor: 30.17;
+        running_cost_factor: 11.35;
         speed: 120 km/h;
         power: 0 hp;
         cargo_capacity: 54;

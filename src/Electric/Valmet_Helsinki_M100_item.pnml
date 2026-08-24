@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_mtro_valmet_helsinki_m100) {
         vehicle_life: 50;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 46.46035;
-        running_cost_factor: 43.00088;
+        cost_factor: 46.46;
+        running_cost_factor: 49.44;
         speed: 90 km/h;
         power: 1340 hp;
         cargo_capacity: 144;

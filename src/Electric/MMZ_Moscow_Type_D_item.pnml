@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_mtro_mmz_moscow_type_d) {
         vehicle_life: 50;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 37.74719;
-        running_cost_factor: 33.78078;
+        cost_factor: 37.75;
+        running_cost_factor: 40.59;
         speed: 75 km/h;
         power: 760 hp;
         cargo_capacity: 140;

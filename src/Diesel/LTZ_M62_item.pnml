@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_diesel_ltz_m62) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 56.48468;
-        running_cost_factor: 44.48468;
+        cost_factor: 56.48;
+        running_cost_factor: 51.61;
         speed: 100 km/h;
         power: 1970 hp;
         cargo_capacity: 0;

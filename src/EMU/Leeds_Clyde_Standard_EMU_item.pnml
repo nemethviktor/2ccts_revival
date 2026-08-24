@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_emu_leeds_clyde_standard_emu) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 28.6643;
-        running_cost_factor: 24.00653;
+        cost_factor: 28.66;
+        running_cost_factor: 33.89;
         speed: 80 km/h;
         power: 360 hp;
         cargo_capacity: 90;

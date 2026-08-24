@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_dmu_caf_594_trd) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 65.46637;
-        running_cost_factor: 60.0604;
+        cost_factor: 65.47;
+        running_cost_factor: 67.47;
         speed: 160 km/h;
         power: 3200 hp;
         cargo_capacity: 42;

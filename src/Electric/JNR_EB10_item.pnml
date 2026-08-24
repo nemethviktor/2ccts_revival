@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_electric_jnr_eb10) {
         vehicle_life: 41;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 21.55389;
-        running_cost_factor: 19.03691;
+        cost_factor: 21.55;
+        running_cost_factor: 27.34;
         speed: 40 km/h;
         power: 360 hp;
         cargo_capacity: 0;

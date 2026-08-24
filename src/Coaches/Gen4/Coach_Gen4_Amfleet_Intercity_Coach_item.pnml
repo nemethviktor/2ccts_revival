@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_mu_coach_gen4_amfleet_intercity_coach) {
         vehicle_life: 25;
         retire_early: 0;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 33.80355;
-        running_cost_factor: 23.30303;
+        cost_factor: 33.8;
+        running_cost_factor: 13.11;
         speed: 200 km/h;
         power: 0 hp;
         cargo_capacity: 62;

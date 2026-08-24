@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_steam_machinefabriek_breda_661_667) {
         vehicle_life: 35;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 20.8648;
-        running_cost_factor: 17.09647;
+        cost_factor: 20.86;
+        running_cost_factor: 20.42;
         speed: 45 km/h;
         power: 290 hp;
         cargo_capacity: 0;

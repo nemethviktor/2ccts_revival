@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_rbd_mckeen_motor_car_70) {
         vehicle_life: 30;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 22.08527;
-        running_cost_factor: 18.79682;
+        cost_factor: 22.09;
+        running_cost_factor: 23.54;
         speed: 52 km/h;
         power: 200 hp;
         cargo_capacity: 84;

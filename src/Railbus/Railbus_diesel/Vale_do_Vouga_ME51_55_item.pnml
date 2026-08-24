@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_rbd_vale_do_vouga_me51_55) {
         vehicle_life: 39;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 13.25853;
-        running_cost_factor: 12.08117;
+        cost_factor: 13.26;
+        running_cost_factor: 20.62;
         speed: 89 km/h;
         power: 90 hp;
         cargo_capacity: 25;

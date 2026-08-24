@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_steam_schwartzkopff_s_10_prussian) {
         vehicle_life: 44;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 53.25424;
-        running_cost_factor: 38.83471;
+        cost_factor: 53.25;
+        running_cost_factor: 43.5;
         speed: 110 km/h;
         power: 1500 hp;
         cargo_capacity: 0;

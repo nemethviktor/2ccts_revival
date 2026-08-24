@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_electric_slm_1100_crocodile) {
         vehicle_life: 30;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 73.63169;
-        running_cost_factor: 60.48528;
+        cost_factor: 73.63;
+        running_cost_factor: 64.97;
         speed: 75 km/h;
         power: 3648 hp;
         cargo_capacity: 0;

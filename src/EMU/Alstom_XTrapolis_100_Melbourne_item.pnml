@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_emu_alstom_xtrapolis_100_melbourne) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 53.26949;
-        running_cost_factor: 48.51342;
+        cost_factor: 53.27;
+        running_cost_factor: 58.41;
         speed: 130 km/h;
         power: 1930 hp;
         cargo_capacity: 72;

@@ -16,7 +16,7 @@ item(FEAT_TRAINS, item_steam_hunslet_0_4_0st_la_portena) {
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
         cost_factor: 11.77;
-        running_cost_factor: 10.05;
+        running_cost_factor: 12.64;
         speed: 25 km/h;
         power: 100 hp;
         cargo_capacity: 0;

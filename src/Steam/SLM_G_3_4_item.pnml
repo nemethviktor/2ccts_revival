@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_steam_slm_g_3_4) {
         vehicle_life: 36;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 19.05164;
-        running_cost_factor: 15.78332;
+        cost_factor: 19.05;
+        running_cost_factor: 19.14;
         speed: 45 km/h;
         power: 247 hp;
         cargo_capacity: 0;

@@ -34,8 +34,8 @@ item(FEAT_TRAINS, item_rbd_ganz_mavag_ikarus) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 22.79011;
-        running_cost_factor: 19.19011;
+        cost_factor: 22.79;
+        running_cost_factor: 27.44;
         speed: 100 km/h;
         power: 250 hp;
         cargo_capacity: 43;

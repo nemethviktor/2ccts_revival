@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_diesel_eec_a_253) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 60.08474;
-        running_cost_factor: 50.58697;
+        cost_factor: 60.08;
+        running_cost_factor: 55.99;
         speed: 80 km/h;
         power: 2550 hp;
         cargo_capacity: 0;

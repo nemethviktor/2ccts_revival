@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_electric_hitachi_e1100) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 74.32233;
-        running_cost_factor: 61.92233;
+        cost_factor: 74.32;
+        running_cost_factor: 68.68;
         speed: 100 km/h;
         power: 3822 hp;
         cargo_capacity: 0;

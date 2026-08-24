@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_electric_alsthom_ec_386) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 68.63529;
-        running_cost_factor: 58.45581;
+        cost_factor: 68.64;
+        running_cost_factor: 64.92;
         speed: 90 km/h;
         power: 3406 hp;
         cargo_capacity: 0;

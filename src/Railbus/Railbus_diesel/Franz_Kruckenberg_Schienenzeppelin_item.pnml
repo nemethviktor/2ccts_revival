@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_rbd_franz_kruckenberg_schienenzeppelin) {
         vehicle_life: 30;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 30.41546;
-        running_cost_factor: 27.80883;
+        cost_factor: 30.42;
+        running_cost_factor: 41.08;
         speed: 230 km/h;
         power: 600 hp;
         cargo_capacity: 40;

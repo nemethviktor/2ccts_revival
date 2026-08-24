@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_electric_english_electric_e__aei_e_) {
         vehicle_life: 42;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 47.39108;
-        running_cost_factor: 38.84208;
+        cost_factor: 47.39;
+        running_cost_factor: 52.56;
         speed: 126 km/h;
         power: 1500 hp;
         cargo_capacity: 0;

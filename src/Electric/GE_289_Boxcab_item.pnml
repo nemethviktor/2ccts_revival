@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_electric_ge_289_boxcab) {
         vehicle_life: 88;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 38.09482;
-        running_cost_factor: 31.19482;
+        cost_factor: 38.09;
+        running_cost_factor: 34.55;
         speed: 25 km/h;
         power: 970 hp;
         cargo_capacity: 0;

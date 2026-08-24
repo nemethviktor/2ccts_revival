@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_diesel_eec_a_249_) {
         vehicle_life: 41;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 55.09244;
-        running_cost_factor: 45.09849;
+        cost_factor: 55.09;
+        running_cost_factor: 52.01;
         speed: 97 km/h;
         power: 2025 hp;
         cargo_capacity: 0;

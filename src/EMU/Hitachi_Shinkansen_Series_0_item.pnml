@@ -34,8 +34,8 @@ item(FEAT_TRAINS, item_emu_hitachi_shinkansen_series_0) {
         vehicle_life: 44;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 55.60881;
-        running_cost_factor: 49.12916;
+        cost_factor: 55.61;
+        running_cost_factor: 64.85;
         speed: 210 km/h;
         power: 1984 hp;
         cargo_capacity: 75;

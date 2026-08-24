@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_diesel_valmet_lokomo_dr12) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 56.33671;
-        running_cost_factor: 43.69853;
+        cost_factor: 56.34;
+        running_cost_factor: 51.95;
         speed: 120 km/h;
         power: 1900 hp;
         cargo_capacity: 0;

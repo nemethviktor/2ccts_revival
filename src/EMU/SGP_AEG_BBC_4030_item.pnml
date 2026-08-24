@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_emu_sgp_aeg_bbc_4030) {
         vehicle_life: 48;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 45.87731;
-        running_cost_factor: 41.07731;
+        cost_factor: 45.88;
+        running_cost_factor: 49.86;
         speed: 100 km/h;
         power: 1341 hp;
         cargo_capacity: 72;

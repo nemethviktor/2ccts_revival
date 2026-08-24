@@ -36,8 +36,8 @@ item(FEAT_TRAINS, item_emu_alsthom_tgv_duplex) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 116.48723;
-        running_cost_factor: 108.97169;
+        cost_factor: 116.49;
+        running_cost_factor: 121.26;
         speed: 320 km/h;
         power: 11800 hp;
         cargo_capacity: 0;

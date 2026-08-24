@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_diesel_gm_gl_18_b__040dj_) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 32.19053;
-        running_cost_factor: 26.54412;
+        cost_factor: 32.19;
+        running_cost_factor: 33.8;
         speed: 75 km/h;
         power: 700 hp;
         cargo_capacity: 0;

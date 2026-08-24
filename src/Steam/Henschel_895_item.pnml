@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_steam_henschel_895) {
         vehicle_life: 64;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 28.17691;
-        running_cost_factor: 22.42393;
+        cost_factor: 28.18;
+        running_cost_factor: 25.31;
         speed: 40 km/h;
         power: 500 hp;
         cargo_capacity: 0;

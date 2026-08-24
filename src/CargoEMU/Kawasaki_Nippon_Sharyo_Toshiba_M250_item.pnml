@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_cargoemu_kawasaki_nippon_sharyo_toshiba_m250) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 55.79042;
-        running_cost_factor: 52.76714;
+        cost_factor: 55.79;
+        running_cost_factor: 62.84;
         speed: 140 km/h;
         power: 2360 hp;
         cargo_capacity: 60;

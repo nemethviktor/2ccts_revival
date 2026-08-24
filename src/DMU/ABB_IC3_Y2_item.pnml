@@ -34,8 +34,8 @@ item(FEAT_TRAINS, item_dmu_abb_ic3_y2) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 65.62546;
-        running_cost_factor: 60.28881;
+        cost_factor: 65.63;
+        running_cost_factor: 68.45;
         speed: 180 km/h;
         power: 3200 hp;
         cargo_capacity: 48;

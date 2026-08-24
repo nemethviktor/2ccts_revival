@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_steam_baldwin_2_8_0_consolidation) {
         vehicle_life: 30;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 29.2653;
-        running_cost_factor: 21.86866;
+        cost_factor: 29.27;
+        running_cost_factor: 25.4;
         speed: 55 km/h;
         power: 475 hp;
         cargo_capacity: 0;

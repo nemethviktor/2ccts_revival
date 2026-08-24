@@ -35,8 +35,8 @@ item(FEAT_TRAINS, item_emu_alstom_agv) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 53.32013;
-        running_cost_factor: 48.67547;
+        cost_factor: 53.32;
+        running_cost_factor: 73.61;
         speed: 360 km/h;
         power: 2040 hp;
         cargo_capacity: 42;

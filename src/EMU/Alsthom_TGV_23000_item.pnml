@@ -35,8 +35,8 @@ item(FEAT_TRAINS, item_emu_alsthom_tgv_23000) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
-        cost_factor: 103.22505;
-        running_cost_factor: 95.80537;
+        cost_factor: 103.23;
+        running_cost_factor: 106.15;
         speed: 240 km/h;
         power: 9119 hp;
         cargo_capacity: 0;

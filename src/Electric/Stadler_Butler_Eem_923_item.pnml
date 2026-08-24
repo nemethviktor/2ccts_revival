@@ -6,6 +6,33 @@
 // Template: TPL_01A.
 // Data from: https://en.wikipedia.org/wiki/SBB_Eem_923
 
+// Notes:
+//// POWER_DM_DIESEL: 389 -- This is correct 389
+
+
+
+// Dual-mode vehicle -> Check if the tile the vehicle is currently on provides power to this rail vehicle
+switch (FEAT_TRAINS, SELF, sw_loco_visual_effect_electric_stadler_butler_eem_923, tile_powers_railtype("ELRL")) {
+    1: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
+    visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 0, DISABLE_WAGON_POWER);
+}
+
+switch (FEAT_TRAINS, SELF, sw_loco_power_electric_stadler_butler_eem_923, tile_powers_railtype("ELRL")) {
+    1: return 2012;
+    return 389;
+}
+
+switch (FEAT_TRAINS, SELF, sw_loco_speed_electric_stadler_butler_eem_923, tile_powers_railtype("ELRL")) {
+    1: return 120;
+    return 120;
+}
+
+switch (FEAT_TRAINS, SELF, sw_loco_runningcost_electric_stadler_butler_eem_923, tile_powers_railtype("ELRL")) {
+    1: return int(56.94);
+    return int(53.12);
+}
+
+
 item(FEAT_TRAINS, item_electric_stadler_butler_eem_923) {
     property {
         name: string(str_electric_stadler_butler_eem_923);
@@ -15,10 +42,10 @@ item(FEAT_TRAINS, item_electric_stadler_butler_eem_923) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 49.90305;
-        running_cost_factor: 44.96487;
-        speed: 120 km/h;
-        power: 2012 hp;
+        cost_factor: 49.9;
+        running_cost_factor: 56.94;
+        speed: 120 km/h; // this needs to be here even though it's redefined in graphics further down
+        power: 2012 hp; // this needs to be here even though it's redefined in graphics further down
         cargo_capacity: 0;
         weight: 45 ton;
         tractive_effort_coefficient: 0.34;
@@ -32,26 +59,42 @@ item(FEAT_TRAINS, item_electric_stadler_butler_eem_923) {
         misc_flags: bitmask(TRAIN_FLAG_2CC);
         refit_cost: 0;
         ai_special_flag: AI_FLAG_PASSENGER | AI_FLAG_CARGO;
-        track_type: [STANDARD_GAUGE_RAILTYPE_25KV, STANDARD_GAUGE_RAILTYPE_15KV];
+        track_type: [STANDARD_GAUGE_RAILTYPE_25KV, STANDARD_GAUGE_RAILTYPE_15KV, STANDARD_GAUGE_RAILTYPE_NONE];
         running_cost_base: RUNNING_COST_ELECTRIC;
         engine_class: ENGINE_CLASS_ELECTRIC;
-        visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, -3, DISABLE_WAGON_POWER);
-
+        // visual_effect_and_powered: defined in graphics
         sprite_id: SPRITE_ID_NEW_TRAIN;
         dual_headed: 0;
         length: 5;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/europe/western", "power/electric/ac", "role/universal"];
+	badges: ["region/europe/western", "power/dual", "role/universal"];
 
     }
     graphics {
+        power: sw_loco_power_electric_stadler_butler_eem_923;
+        speed: sw_loco_speed_electric_stadler_butler_eem_923;
+        running_cost_factor: sw_loco_runningcost_electric_stadler_butler_eem_923;
+        additional_text: string(
+            STR_ADDITIONAL_DUAL_POWER_INFO,
+            string(STR_RATED_POWER),
+            string(STR_POWER_ELECTRIC),
+            2012,
+            string(STR_POWER_DIESEL),
+            389,
+            string(STR_SPEED),
+            string(STR_POWER_ELECTRIC),
+            120,
+            string(STR_POWER_DIESEL),
+            120
+        );
+        visual_effect_and_powered: sw_loco_visual_effect_electric_stadler_butler_eem_923;
         purchase: spriteset_electric_stadler_butler_eem_923_purchase;
         // no 'visual_effect' or 'visual_effect_and_powered'
         // no 'length'
         // no 'articulated_part'
         can_attach_wagon: switch_can_attach_vehicle;
-        default: spriteset_electric_stadler_butler_eem_923;
+        default: sw_electric_stadler_butler_eem_923_dual_mode_sprites;
     }
 }

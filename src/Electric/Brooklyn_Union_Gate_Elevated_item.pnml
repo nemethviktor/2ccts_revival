@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_mtro_brooklyn_union_gate_elevated) {
         vehicle_life: 50;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 120/2 : (param_loadingspeed == 2) ? 120*2 : 120;
-        cost_factor: 20.88454;
-        running_cost_factor: 17.7747;
+        cost_factor: 20.88;
+        running_cost_factor: 27.3;
         speed: 60 km/h;
         power: 200 hp;
         cargo_capacity: 48;

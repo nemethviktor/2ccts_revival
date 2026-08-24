@@ -19,8 +19,8 @@ item(FEAT_TRAINS, item_electric_ucw_6e) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 64.38603;
-        running_cost_factor: 55.06083;
+        cost_factor: 64.39;
+        running_cost_factor: 64.4;
         speed: 113 km/h;
         power: 3020 hp;
         cargo_capacity: 0;

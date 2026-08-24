@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_diesel_raba_m_030_m28) {
         vehicle_life: 75;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 13.8725;
-        running_cost_factor: 11.68966;
+        cost_factor: 13.87;
+        running_cost_factor: 18.52;
         speed: 50 km/h;
         power: 135 hp;
         cargo_capacity: 0;

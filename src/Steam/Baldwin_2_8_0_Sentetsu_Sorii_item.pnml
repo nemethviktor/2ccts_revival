@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_steam_baldwin_2_8_0_sentetsu_sorii) {
         vehicle_life: 30;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 39.82309;
-        running_cost_factor: 29.23843;
+        cost_factor: 39.82;
+        running_cost_factor: 33.04;
         speed: 70 km/h;
         power: 850 hp;
         cargo_capacity: 0;

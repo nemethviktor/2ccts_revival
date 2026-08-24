@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_dmu_cfd_amt_800) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 43.00496;
-        running_cost_factor: 39.10496;
+        cost_factor: 43.0;
+        running_cost_factor: 45.23;
         speed: 100 km/h;
         power: 1232 hp;
         cargo_capacity: 55;

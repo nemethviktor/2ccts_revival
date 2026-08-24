@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_emu_pullman_standard_lirr_mp75) {
         vehicle_life: 41;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 37.40524;
-        running_cost_factor: 34.34917;
+        cost_factor: 37.41;
+        running_cost_factor: 46.36;
         speed: 130 km/h;
         power: 800 hp;
         cargo_capacity: 130;

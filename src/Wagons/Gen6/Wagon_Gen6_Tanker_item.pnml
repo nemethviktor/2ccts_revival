@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_mu_wagon_gen6_tanker) {
         vehicle_life: 25;
         retire_early: 0;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 54.01623;
-        running_cost_factor: 39.42243;
+        cost_factor: 54.02;
+        running_cost_factor: 13.21;
         speed: 160 km/h;
         power: 0 hp;
         cargo_capacity: 105;

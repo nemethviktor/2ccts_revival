@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_electric_toshiba_cnr_dalian_hxd3) {
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 114.0363;
-        running_cost_factor: 98.59812;
+        cost_factor: 114.04;
+        running_cost_factor: 99.85;
         speed: 120 km/h;
         power: 9700 hp;
         cargo_capacity: 0;

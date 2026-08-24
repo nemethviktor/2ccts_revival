@@ -30,8 +30,8 @@ item(FEAT_TRAINS, item_rbd_hunslet_barclay_super_sprinter) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 25.95979;
-        running_cost_factor: 21.32161;
+        cost_factor: 25.96;
+        running_cost_factor: 30.06;
         speed: 120 km/h;
         power: 285 hp;
         cargo_capacity: 75;

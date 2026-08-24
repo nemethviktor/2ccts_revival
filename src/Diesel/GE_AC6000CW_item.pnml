@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_diesel_ge_ac6000cw) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 97.60739;
-        running_cost_factor: 77.56921;
+        cost_factor: 97.61;
+        running_cost_factor: 82.79;
         speed: 120 km/h;
         power: 6000 hp;
         cargo_capacity: 0;

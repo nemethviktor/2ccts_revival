@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_steam_cooke_4_2_2_t__d__judah) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 13.42809;
-        running_cost_factor: 11.30559;
+        cost_factor: 13.43;
+        running_cost_factor: 15.63;
         speed: 65 km/h;
         power: 126 hp;
         cargo_capacity: 0;

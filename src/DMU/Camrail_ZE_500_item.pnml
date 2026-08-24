@@ -34,8 +34,8 @@ item(FEAT_TRAINS, item_dmu_camrail_ze_500) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 27.72907;
-        running_cost_factor: 23.54959;
+        cost_factor: 27.73;
+        running_cost_factor: 30.49;
         speed: 90 km/h;
         power: 376 hp;
         cargo_capacity: 62;

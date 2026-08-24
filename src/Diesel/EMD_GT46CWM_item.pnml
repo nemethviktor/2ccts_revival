@@ -15,8 +15,8 @@ item(FEAT_TRAINS, item_diesel_emd_gt46cwm) {
         vehicle_life: 40;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 80.75432;
-        running_cost_factor: 63.82537;
+        cost_factor: 80.75;
+        running_cost_factor: 70.02;
         speed: 115 km/h;
         power: 4060 hp;
         cargo_capacity: 0;

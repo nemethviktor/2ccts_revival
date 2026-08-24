@@ -34,8 +34,8 @@ item(FEAT_TRAINS, item_rbd_wc_pr_drewry_railcar) {
         vehicle_life: 30;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
-        cost_factor: 10.47268;
-        running_cost_factor: 9.2197;
+        cost_factor: 10.47;
+        running_cost_factor: 14.3;
         speed: 40 km/h;
         power: 35 hp;
         cargo_capacity: 42;
