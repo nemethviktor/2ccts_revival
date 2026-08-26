@@ -222,3 +222,86 @@ Things with **front and back but no livery or loading states** use `TPL_017A`.
 I'd suggest not producing more of them though, it's a little too complex.
 
 You may ofc put your logo on the file(s) but don't move the template boxes. Any new additions will be merged into the existing template image standard.
+
+# Recycled Sprites
+
+The following is a likely incomplete list of sprites that have been recycled. Note that these may or may not be actual copies, usually though modifications have been made so they aren't _the same_ as the originals. Feel free to redesign them.
+Note: "b/o" = "based on"
+
+**Gen 6 / Gen 7 Wagons**
+- All of them use Gen5 graphics. G6s are clones of G5, G7s had modifications ref not having wheels given they are maglevs.
+
+**CargoEMU**
+- JNR_Container_Bullet_Train_Concept b/o Windhoff_CargoSprinter 
+- Kawasaki_Nippon_Sharyo_Toshiba_M250 b/o Windhoff_CargoSprinter 
+
+**Diesel**
+- Alsthom_AD30B b/o Alsthom_BB_BB_300
+- Faur_A20DP b/o RVR AR2
+- GE_AC6000CW b/o Dash 9
+- GMD_GT22LC_2 b/o Korail SD18
+- Henschel_GE_G16 b/o MAV M44
+- Ingeteam_TD2000_series b/o CIE001
+- LEW_V100 b/o MAK 100
+- LTZ_DR_130 b/o TEP80
+- LTZ_TE109 b/o TEP80
+- NOHAB_AA16 b/o EMD E8
+- VEB_LKM_V180 b/o FS E444
+
+**DMU**
+- Ganz_Arpad_Bariloche_DMU b/o VT04
+- Ganz_Arpad_CMU_4701_Transandino b/o VT04
+- Ganz_Hargita_M440 b/o VT04
+- RVR_DR1A b/o VT11.5 + VT04
+
+**Electric**
+- ABB_Henschel_Berlin_BVG_F74 b/o MVG-A
+- AEG_A1A_A1A b/o ONCFM E500
+- AEG_Krupp_E18 b/o NS 1000
+- Alsthom_EC_386 b/o CP2600
+- Breda_Marelli_E32 b/o VR DR12
+- Chesta_Casagrande_E650 b/o HXD2B
+- Ganz_MAVAG_VM7_V40 b/o ONCF E700
+- Ganz_MAVAG_VM15_V63 b/o MAV V43 + FF1
+- GE_2_C_C_2 b/o GE EP4
+- GE_289_Boxcab b/o DEKI 400
+- Kolomna_VL19 b/o VL22M
+- LEW_EL2 b/o VL41
+- SLM_BBC_1_D_1 b/o DEKI 400
+- TRC_E6800 b/o CD 38.0
+
+**EMU**
+- CRRC_Sifang_SFB_500 b/o GauTrain
+- Hitachi_Alstom_Zefiro_Class_895_HS2 b/o NS 4800 HSA
+- Kawasaki_Hitachi_AEZ_Railcar b/o ONCF ZMC
+- PESA_43WE_DART b/o NS 4800 HSA
+
+**Railbus**
+- Esslingen_MAN_Hohenzollern_Thomas b/o Victorian Rwy Rowan
+- Komarek_NOLB_30_33 b/o NOLB1
+
+**Steam**
+- Babcock_4_6_2_2_6_4T_462 b/o Zimbabwe Class 15 (Beyer__P___Co__4_6_4_4_6_4_15th)
+- Baldwin_0_22C_No8_Monsefu b/o PRR D16 4-4-0
+- Burnham_2_6_0_15857_15871 b/o Paraguay FCCP Q Class
+- Burnham_2_10_0_Dom_Pedro_Segundo_119 b/o SNCF 150B + CD5341
+- Falcon_Engine_and_Car_Works_F2 b/o SA Class NG6
+- FCCP_Q_Class b/o Uruguay AFE N1
+- Haine_Saint_Pierre_2_6_0_0_6_2T_Golwe b/o DSER 15 + SAR GMA
+- Hanomag_ALCO_4_8_0_240 b/o MAV 424
+- Henschel_4_4_2_19906 b/o generic 440 (undefined)
+- Hunslet_0_4_0ST_La_Portena b/o DHB B
+- Kitson_2_2_2_3166_3171 b/o Le Belge
+- Koechlin_0_6_0_030 b/o GS&WR 101
+- MAVAG_2_6_6_0_Class_601 b/o SAR MD
+- MAVAG_4_4_2_Class_203 b/o DSB Class E
+- NBLC_4_6_2_PS10_Class b/o FS 691
+- Norris___Brothers_4_4_0_La_Copiapo b/o NSW Z12
+- Porter_2_8_2_Class_200_Katanga_Mikado b/o SWA 280
+- Robert_Stephenson_and_Co_2_2_2_192 b/o Le Belge
+- SA_Franco_Belge_0_6_0_Class_4 b/o GS&WR 101
+- Sharp_2_2_2_Patriot b/o Le Belge
+- Sharp_BP_0_6_0_BDZ_142_150 b/o GS&WR 101
+- Stephenson_BP_2_2_2_LVCI_Class_1 b/o Le Belge
+- William_Fairbairn_2_2_2_Baroneza b/o Le Belge
+- Yorkshire_Engine_Co__4_8_4T_Nitrate_101 b/o NZR X Class
