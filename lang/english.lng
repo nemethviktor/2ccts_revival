@@ -2,7 +2,7 @@
 
 # Hardcoded Strings
 STR_GRF_NAME                                                      :{TITLE}
-STR_GRF_DESCRIPTION                                               :{SILVER}2cc Trains of the World in NML {}{}(c)2ccts Revival {}License GPLv2 or higher. {}See readme for details.{}{SILVER}Build: 2026-08-28-16:18:13
+STR_GRF_DESCRIPTION                                               :{SILVER}2cc Trains of the World in NML {}{}(c)2ccts Revival {}License GPLv2 or higher. {}See readme for details.{}{SILVER}Build: 2026-09-07-09:13:32
 STR_GRF_URL                                                       :https://github.com/nemethviktor/2ccts_revival
 STR_USED_WITH_DYNAMIC_ENGINES                                     :dynamic_engines = true (setting in openttd.cfg)
 STR_ERROR_REGION                                                  :No regions enabled, {STRING} has been disabled
@@ -1199,7 +1199,7 @@ str_rbm_acme_corp__turbobus                                       :ACME Corp. Tu
 str_mtro_brc_w_london_1903_stock                                  :BRC&W London 1903 Stock (Metro, Electric 4th Rail)
 str_mtro_buenos_aires_le_brugeoise                                :Buenos Aires 'Le Brugeoise' (Metro, Electric 3rd Rail)
 str_mtro_acf_new_york_r1                                          :ACF New York R1 (Metro, Electric 3rd Rail)
-str_mtro_london_1938_stock                                        :London 1938 Stock (Metro, Electric 4th Rail)
+str_mtro_london_1938_stock                                        :BRC&W London 1938 Stock (Metro, Electric 4th Rail)
 str_mtro_lhb_et_171                                               :LHB ET 171 (Metro, Electric 3rd Rail)
 str_mtro_gec_alsthom_paris_mp55                                   :GEC-Alsthom Paris MP55 (Metro, Electric 3rd Rail)
 str_mtro_lhb_lisbon_ml7                                           :LHB Lisbon ML7 (Metro, Electric 3rd Rail)

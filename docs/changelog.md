@@ -7,6 +7,9 @@
   - `Dual mode` badges and functionality are now available. "Current" Running cost, power and speed values are take from real values for the various operating modes. (ie "is it running on ELRL right now or not?")
   - Also changed some naming logic whereby special power types (dual mode, gas turbine) would no longer be doubled as "Diesel, Gas Turbine" or "Electric, Dual Mode".
   - Various changes to make build run more efficiently.
+  - See below ref running cost changes.
+  - `Powered/Unpowered **metro**` cars are allowed to run mail now. This is historically correct although a bit obscure.
+  - Refined the role definition for `metro`, this has very little other effect on the game, it's mostly a fad, unless you filter on roles.
 - VEHICLES ADDS:
   - `Siemens Vectron MS`
   - `Siemens Vectron DE`
@@ -27,6 +30,9 @@
   - `Stadler_Butler_Eem_923` is now Dual-Mode as it should be
   - `Alsthom_Pendolino_680` HP increased to 5260
   - `CAF_Alstom_Class_120` HP increased to 5400
+  - `EF-E 29 GE 2-C+C-2` intro date brought forward to 1940 and scrap-date extended to 1992
+  - `Hitachi/Kawasaki Shinkansen Series 100` speed increased to 240 km/h
+  - `Hitachi Shinkansen Series 700` speed increased to 285 km/h
 
 ## 4.0
 
