@@ -685,7 +685,7 @@
 | ![Ganz-MAVAG EM/ET](vehicle_graphics/str_emu_ganz_mavag_em_et.png) | Ganz-MAVAG EM/ET | 1982 | 110 / 68 | 540 / 402 | Express Passenger | 226 | NARROW_1500V | Oceania | No |
 | ![BN/ACEC ZMC](vehicle_graphics/str_emu_bn_acec_zmc.png) | BN/ACEC ZMC | 1984 | 160 / 99 | 1900 / 1416 | Express Passenger | 180 | STANDARD_3KV | Africa, Western Europe | No |
 | ![Ganz-MAVAG YZ-E](vehicle_graphics/str_emu_ganz_mavag_yz_e.png) | Ganz-MAVAG YZ-E | 1984 | 120 / 74 | 1609 / 1199 | Express Passenger | 300 | NARROW_25KV | Africa | No |
-| ![Hitachi/Kawasaki Shinkansen Series 100](vehicle_graphics/str_emu_hitachi_kawasaki_shinkansen_series_100.png) | Hitachi/Kawasaki Shinkansen Series 100 | 1985 | 210 / 130 | 2380 / 1774 | Express Passenger | 150 | STANDARD_25KV | Asia | No |
+| ![Hitachi/Kawasaki Shinkansen Series 100](vehicle_graphics/str_emu_hitachi_kawasaki_shinkansen_series_100.png) | Hitachi/Kawasaki Shinkansen Series 100 | 1985 | 240 / 149 | 2380 / 1774 | Express Passenger | 150 | STANDARD_25KV | Asia | No |
 | ![Nippon Sharyo Odakyu 10000 series HiSE](vehicle_graphics/str_emu_nippon_sharyo_odakyu_10000_series_hise.png) | Nippon Sharyo Odakyu 10000 series HiSE | 1986 | 110 / 68 | 1550 / 1155 | Express Passenger | 92 | NARROW_1500V | Asia | No |
 | ![Schindler RBDe 560](vehicle_graphics/str_emu_schindler_rbde_560.png) | Schindler RBDe 560 | 1987 | 140 / 86 | 2210 / 1647 | Commuter/Urban | 112 | STANDARD_15KV | Western Europe | No |
 | ![Ganz-MAVAG VM17 'BDVmot'](vehicle_graphics/str_emu_ganz_mavag_vm17_bdvmot.png) | Ganz-MAVAG VM17 'BDVmot' | 1988 | 120 / 74 | 2040 / 1521 | Commuter/Urban | 172 | STANDARD_25KV | Eastern Europe | No |
@@ -702,7 +702,7 @@
 | ![Alsthom S-Tog IV](vehicle_graphics/str_emu_alsthom_s_tog_iv.png) | Alsthom S-Tog IV | 1996 | 120 / 74 | 1150 / 857 | Commuter/Urban | 180 | STANDARD_1500V | Northern Europe | No |
 | ![AnsaldoBreda ALe 426](vehicle_graphics/str_emu_ansaldobreda_ale_426.png) | AnsaldoBreda ALe 426 | 1996 | 140 / 86 | 2508 / 1869 | Commuter/Urban | 204 | STANDARD_3KV | Southern Europe | No |
 | ![De Dietrich/Adtranz mDDm 390](vehicle_graphics/str_emu_de_dietrich_adtranz_mddm_390.png) | De Dietrich/Adtranz mDDm 390 | 1997 | 140 / 86 | 3219 / 2400 | Commuter/Urban | 128 | STANDARD_1500V | Western Europe | No |
-| ![Hitachi Shinkansen Series 700](vehicle_graphics/str_emu_hitachi_shinkansen_series_700.png) | Hitachi Shinkansen Series 700 | 1997 | 270 / 167 | 1810 / 1349 | Express Passenger | 130 | STANDARD_25KV | Asia | No |
+| ![Hitachi Shinkansen Series 700](vehicle_graphics/str_emu_hitachi_shinkansen_series_700.png) | Hitachi Shinkansen Series 700 | 1997 | 285 / 177 | 1810 / 1349 | Express Passenger | 130 | STANDARD_25KV | Asia | No |
 | ![Walkers Tilt Train 'ETT'](vehicle_graphics/str_emu_walkers_tilt_train_ett.png) | Walkers Tilt Train 'ETT' | 1997 | 160 / 99 | 1820 / 1356 | Ultra-High-Speed (Pax) | 94 | NARROW_25KV | Oceania | No |
 | ![Adtranz BM73](vehicle_graphics/str_emu_adtranz_bm73.png) | Adtranz BM73 | 1998 | 210 / 130 | 2332 / 1738 | Express Passenger | 108 | STANDARD_15KV | Northern Europe | No |
 | ![Alstom 'Coradia Duplex'](vehicle_graphics/str_emu_alstom_coradia_duplex.png) | Alstom 'Coradia Duplex' | 1999 | 160 / 99 | 3410 / 2542 | Express Passenger | 222 | STANDARD_25KV, STANDARD_15KV, STANDARD_1500V | Northern Europe, Western Europe | No |
@@ -764,7 +764,7 @@
 | ![ACF New York R1](vehicle_graphics/str_mtro_acf_new_york_r1.png) | ACF New York R1 | 1930 | 90 / 55 | 760 / 566 | Metro | 210 | STANDARD_3RD | North America | No |
 | ![Kawasaki Osaka 1000](vehicle_graphics/str_mtro_kawasaki_osaka_1000.png) | Kawasaki Osaka 1000 | 1933 | 65 / 40 | 615 / 458 | Metro | 240 | STANDARD_3RD | Asia | No |
 | ![MMZ Type A](vehicle_graphics/str_mtro_mmz_moscow_type_a.png) | MMZ Type A | 1934 | 65 / 40 | 535 / 398 | Metro | 270 | BROAD_3RD | Asia, Eastern Europe | No |
-| ![London 1938 Stock](vehicle_graphics/str_mtro_london_1938_stock.png) | London 1938 Stock | 1938 | 72 / 44 | 600 / 447 | Metro | 210 | STANDARD_4TH | Northern Europe | No |
+| ![BRC&W London 1938 Stock](vehicle_graphics/str_mtro_london_1938_stock.png) | BRC&W London 1938 Stock | 1938 | 72 / 44 | 600 / 447 | Metro | 210 | STANDARD_4TH | Northern Europe | No |
 | ![LHB ET 171](vehicle_graphics/str_mtro_lhb_et_171.png) | LHB ET 171 | 1942 | 80 / 49 | 800 / 596 | Metro | 190 | STANDARD_3RD | Western Europe | No |
 | ![ACF New York R10](vehicle_graphics/str_mtro_acf_new_york_r10.png) | ACF New York R10 | 1948 | 88 / 54 | 800 / 596 | Metro | 290 | STANDARD_3RD | North America | No |
 | ![St. Louis Car Company Chicago L 6000 Series](vehicle_graphics/str_mtro_st__louis_car_company_chicago_l_6000_series.png) | St. Louis Car Company Chicago L 6000 Series | 1950 | 80 / 49 | 440 / 328 | Metro | 250 | STANDARD_3RD | North America | No |
@@ -803,7 +803,7 @@
 | ![GEC-Alsthom Santiago NS-93](vehicle_graphics/str_mtro_gec_alsthom_santiago_ns_93.png) | GEC-Alsthom Santiago NS-93 | 1996 | 100 / 62 | 2400 / 1789 | Metro | 320 | STANDARD_3RD | South America | No |
 | ![CAF Amsterdam S3 90](vehicle_graphics/str_mtro_caf_amsterdam_s3_90.png) | CAF Amsterdam S3 90 | 1997 | 70 / 43 | 1020 / 760 | Metro | 250 | STANDARD_1500V, STANDARD_3RD | Western Europe | No |
 | ![GEC-Alsthom Paris MP89](vehicle_graphics/str_mtro_gec_alsthom_paris_mp89.png) | GEC-Alsthom Paris MP89 | 1997 | 80 / 49 | 2680 / 1998 | Metro | 240 | STANDARD_3RD | Western Europe | No |
-| ![Alstom Metropolis](vehicle_graphics/str_mtro_alstom_metropolis.png) | Alstom Metropolis | 1998 | 120 / 74 | 1500 / 1118 | Commuter/Urban | 300 | STANDARD_25KV, STANDARD_1500V, STANDARD_3RD, NARROW_3RD, BROAD_3KV | North America, South America, Asia, Eastern Europe, Western Europe, Oceania | No |
+| ![Alstom Metropolis](vehicle_graphics/str_mtro_alstom_metropolis.png) | Alstom Metropolis | 1998 | 120 / 74 | 1500 / 1118 | Metro | 300 | STANDARD_25KV, STANDARD_1500V, STANDARD_3RD, NARROW_3RD, BROAD_3KV | North America, South America, Asia, Eastern Europe, Western Europe, Oceania | No |
 | ![CAF Rome S/300](vehicle_graphics/str_mtro_caf_rome_s_300.png) | CAF Rome S/300 | 1999 | 80 / 49 | 1650 / 1230 | Metro | 420 | STANDARD_3RD | Southern Europe | No |
 | ![Hitachi Buenos Aires Serie 1200](vehicle_graphics/str_mtro_hitachi_buenos_aires_serie_1200.png) | Hitachi Buenos Aires Serie 1200 | 1999 | 75 / 46 | 640 / 477 | Metro | 230 | STANDARD_3RD | South America | No |
 | ![Kawasaki HI & Nippon Sharyo C751B](vehicle_graphics/str_mtro_kawasaki_hi___nippon_sharyo_c751b.png) | Kawasaki HI & Nippon Sharyo C751B | 2000 | 90 / 55 | 1000 / 745 | Metro | 320 | STANDARD_3RD | Asia | No |
