@@ -6,6 +6,10 @@
 // Template: TPL_02A.
 // Data from: https://www.railtram.com.au/diesel-tilt-train
 
+// Notes:
+//// HEAD_CAPACITY: 0 -- power cars had no pax carried
+
+
 // Cargo capacity
 
     switch(FEAT_TRAINS, SELF, switch_dmu_downer_edi_hitachi_tilt_train_capacity_engine, cargo_classes) { \
@@ -29,7 +33,7 @@ item(FEAT_TRAINS, item_dmu_downer_edi_hitachi_tilt_train) {
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 45;
         retire_early: 20;
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
         cost_factor: 91.88;
         running_cost_factor: 91.61;
         speed: 160 km/h;
@@ -40,9 +44,9 @@ item(FEAT_TRAINS, item_dmu_downer_edi_hitachi_tilt_train) {
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
-        // cargodeftype: PASSENGERS;
-        refittable_cargo_classes: bitmask(CC_PASSENGERS, CC_MAIL);
-        non_refittable_cargo_classes: 0;
+        // cargodeftype: NONE;
+        refittable_cargo_classes: bitmask(NO_CARGO_CLASS);
+        
         cargo_age_period: 185;
         misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU, TRAIN_FLAG_TILT);
         refit_cost: 0;
@@ -71,7 +75,7 @@ item(FEAT_TRAINS, item_dmu_downer_edi_hitachi_tilt_train) {
         default: switch_dmu_downer_edi_hitachi_tilt_train_reversed;
     }
     livery_override (item_mu_mu_wagon_unpowered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
         running_cost_factor: int(160/10);
         weight: int(60*1/2);
         cargo_capacity: 39;
@@ -79,7 +83,7 @@ item(FEAT_TRAINS, item_dmu_downer_edi_hitachi_tilt_train) {
         default: switch_dmu_downer_edi_hitachi_tilt_train_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
         running_cost_factor: round(33.92881895447306);
         power: int(7240*1/2);
         weight: int(60*3/4);

@@ -1543,7 +1543,7 @@ switch (FEAT_TRAINS, SELF, sw_loco_runningcost_{VEHIDCODE_lcase}, tile_powers_ra
 
             # At the moment there's just 1 CARGOxMU..
             overrideType = (
-                "cargo_" if row["LOADINGSPEED"] == "CARGO" and HAS_MU_FLAG else ""
+                "cargo_" if VEHIDCODE_lcase.startswith("cargo") and HAS_MU_FLAG else ""
             )
 
             if category in ["METRO"]:

@@ -7,7 +7,7 @@
 // Data from: https://en.wikipedia.org/wiki/New_South_Wales_XPT
 
 // Notes:
-//// HEAD_CAPACITY: 0 -- Power cars only
+//// HEAD_CAPACITY: 0 -- power cars had no pax carried
 //// TE_STARTING_KN: =178/2 -- Gemini. Wikipedia kindof disagrees but unclear if that latter is per unit or whole
 
 
@@ -34,7 +34,7 @@ item(FEAT_TRAINS, item_dmu_comeng_nsw_xpt) {
         model_life: 45;
         vehicle_life: 40;
         retire_early: 20;
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
         cost_factor: 71.6;
         running_cost_factor: 71.73;
         speed: 160 km/h;
@@ -45,9 +45,9 @@ item(FEAT_TRAINS, item_dmu_comeng_nsw_xpt) {
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
-        // cargodeftype: PASSENGERS;
-        refittable_cargo_classes: bitmask(CC_PASSENGERS, CC_MAIL);
-        non_refittable_cargo_classes: 0;
+        // cargodeftype: NONE;
+        refittable_cargo_classes: bitmask(NO_CARGO_CLASS);
+        
         cargo_age_period: 185;
         misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
         refit_cost: 0;
@@ -76,7 +76,7 @@ item(FEAT_TRAINS, item_dmu_comeng_nsw_xpt) {
         default: switch_dmu_comeng_nsw_xpt_reversed;
     }
     livery_override (item_mu_mu_wagon_unpowered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
         running_cost_factor: int(160/10);
         weight: int(76*1/2);
         cargo_capacity: 72;
@@ -84,7 +84,7 @@ item(FEAT_TRAINS, item_dmu_comeng_nsw_xpt) {
         default: switch_dmu_comeng_nsw_xpt_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
         running_cost_factor: round(31.368555320336757);
         power: int(4000*1/2);
         weight: int(76*3/4);

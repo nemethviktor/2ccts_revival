@@ -394,7 +394,7 @@
 | ![BREL 43 IC125](vehicle_graphics/str_dmu_brel_43_ic125.png) | BREL 43 IC125 | 1976 | 201 / 124 | 4500 / 3355 | Express | 0 | STANDARD_NONE | Northern Europe | No |
 | ![Camrail ZE 500](vehicle_graphics/str_dmu_camrail_ze_500.png) | Camrail ZE 500 | 1976 | 90 / 55 | 376 / 280 | Commuter/Urban | 124 | NARROW_NONE | Africa | No |
 | ![Sorefame CP 0600](vehicle_graphics/str_dmu_sorefame_cp_0600.png) | Sorefame CP 0600 | 1979 | 120 / 74 | 1552 / 1157 | Commuter/Urban | 194 | BROAD_NONE | Southern Europe | No |
-| ![Bombardier M6109](vehicle_graphics/str_dmu_bombardier_m6109.png) | Bombardier M6109 | 1980 | 153 / 95 | 5400 / 4026 | Commuter/Urban | 0 | STANDARD_NONE | North America | No |
+| ![Bombardier M6109](vehicle_graphics/str_dmu_bombardier_m6109.png) | Bombardier M6109 | 1980 | 153 / 95 | 5400 / 4026 | Freight | 0 | STANDARD_NONE | North America | No |
 | ![Duwag Wadloper](vehicle_graphics/str_dmu_duwag_wadloper.png) | Duwag Wadloper | 1981 | 101 / 62 | 562 / 419 | Commuter/Urban | 160 | STANDARD_NONE | South America, Northern Europe, Eastern Europe, Western Europe, Southern Europe | No |
 | ![CAF TLD-500](vehicle_graphics/str_dmu_caf_tld_500.png) | CAF TLD-500 | 1982 | 120 / 74 | 920 / 685 | Commuter/Urban | 144 | BROAD_NONE | South America | No |
 | ![Comeng NSW XPT](vehicle_graphics/str_dmu_comeng_nsw_xpt.png) | Comeng NSW XPT | 1982 | 160 / 99 | 4000 / 2982 | Express | 0 | STANDARD_NONE | Oceania | No |

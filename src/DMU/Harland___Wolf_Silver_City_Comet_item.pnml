@@ -8,6 +8,7 @@
 
 // Notes:
 //// WEB: https://en.wikipedia.org/wiki/Silver_City_Comet -- Not particularly useful
+//// HEAD_CAPACITY: 0 -- power cars had no pax carried
 //// TE_STARTING_KN: =85/2 -- Gemini
 //// WAGON_CAPACITY: 60 -- 2nd class, Gemini
 
@@ -35,7 +36,7 @@ item(FEAT_TRAINS, item_dmu_harland___wolf_silver_city_comet) {
         model_life: 45;
         vehicle_life: 52;
         retire_early: 20;
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
         cost_factor: 29.66;
         running_cost_factor: 37.56;
         speed: 160 km/h;
@@ -46,9 +47,9 @@ item(FEAT_TRAINS, item_dmu_harland___wolf_silver_city_comet) {
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
-        // cargodeftype: PASSENGERS;
-        refittable_cargo_classes: bitmask(CC_PASSENGERS, CC_MAIL);
-        non_refittable_cargo_classes: 0;
+        // cargodeftype: NONE;
+        refittable_cargo_classes: bitmask(NO_CARGO_CLASS);
+        
         cargo_age_period: 185;
         misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
         refit_cost: 0;
@@ -77,7 +78,7 @@ item(FEAT_TRAINS, item_dmu_harland___wolf_silver_city_comet) {
         default: switch_dmu_harland___wolf_silver_city_comet_reversed;
     }
     livery_override (item_mu_mu_wagon_unpowered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
         running_cost_factor: int(160/10);
         weight: int(32*1/2);
         cargo_capacity: 60;
@@ -85,7 +86,7 @@ item(FEAT_TRAINS, item_dmu_harland___wolf_silver_city_comet) {
         default: switch_dmu_harland___wolf_silver_city_comet_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
         running_cost_factor: round(22.889046515733025);
         power: int(660*1/2);
         weight: int(32*3/4);

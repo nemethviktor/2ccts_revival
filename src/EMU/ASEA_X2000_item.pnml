@@ -7,6 +7,7 @@
 // Data from: https://sv.wikipedia.org/wiki/X2_(t%C3%A5g)
 
 // Notes:
+//// HEAD_CAPACITY: 0 -- power cars had no pax carried
 //// WEIGHT: 73 -- 73t for power cars, each [wiki]
 //// TE_STARTING_KN: =160/2 -- Wikipedia
 //// WAGON_CAPACITY: 72 -- 2nd class. [wiki]
@@ -36,7 +37,7 @@ item(FEAT_TRAINS, item_emu_asea_x2000) {
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 40;
         retire_early: 20;
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
         cost_factor: 74.45;
         running_cost_factor: 80.23;
         speed: 200 km/h;
@@ -47,9 +48,9 @@ item(FEAT_TRAINS, item_emu_asea_x2000) {
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
-        // cargodeftype: PASSENGERS;
-        refittable_cargo_classes: bitmask(CC_PASSENGERS, CC_MAIL);
-        non_refittable_cargo_classes: 0;
+        // cargodeftype: NONE;
+        refittable_cargo_classes: bitmask(NO_CARGO_CLASS);
+        
         cargo_age_period: 185;
         misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU, TRAIN_FLAG_TILT);
         refit_cost: 0;
@@ -78,7 +79,7 @@ item(FEAT_TRAINS, item_emu_asea_x2000) {
         default: switch_emu_asea_x2000_reversed;
     }
     livery_override (item_mu_mu_wagon_unpowered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
         running_cost_factor: int(200/10);
         weight: int(73*1/2);
         cargo_capacity: 72;
@@ -86,7 +87,7 @@ item(FEAT_TRAINS, item_emu_asea_x2000) {
         default: switch_emu_asea_x2000_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
         running_cost_factor: round(34.8092495807108);
         power: int(4400*1/2);
         weight: int(73*3/4);

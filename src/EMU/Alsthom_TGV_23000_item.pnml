@@ -7,6 +7,7 @@
 // Data from: https://en.wikipedia.org/wiki/SNCF_TGV_Sud-Est
 
 // Notes:
+//// HEAD_CAPACITY: 0 -- power cars had no pax carried
 //// WEIGHT: 68 -- Not 38t; that's a simplified 380 total/10 cars division, but unlikely
 //// TE_STARTING_KN: =210/2 -- Gemini says 210 for the total set but unclear otherwise. "optimized for the 3.5% ramps of the LGV"
 
@@ -34,7 +35,7 @@ item(FEAT_TRAINS, item_emu_alsthom_tgv_23000) {
         model_life: 45;
         vehicle_life: 40;
         retire_early: 20;
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
         cost_factor: 103.23;
         running_cost_factor: 106.15;
         speed: 240 km/h;
@@ -45,9 +46,9 @@ item(FEAT_TRAINS, item_emu_alsthom_tgv_23000) {
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
-        // cargodeftype: PASSENGERS;
-        refittable_cargo_classes: bitmask(CC_PASSENGERS, CC_MAIL);
-        non_refittable_cargo_classes: 0;
+        // cargodeftype: NONE;
+        refittable_cargo_classes: bitmask(NO_CARGO_CLASS);
+        
         cargo_age_period: 185;
         misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
         refit_cost: 0;
@@ -76,7 +77,7 @@ item(FEAT_TRAINS, item_emu_alsthom_tgv_23000) {
         default: switch_emu_alsthom_tgv_23000_reversed;
     }
     livery_override (item_mu_mu_wagon_unpowered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
         running_cost_factor: int(240/10);
         weight: int(68*1/2);
         cargo_capacity: 43;
@@ -84,7 +85,7 @@ item(FEAT_TRAINS, item_emu_alsthom_tgv_23000) {
         default: switch_emu_alsthom_tgv_23000_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
         running_cost_factor: round(44.22534552731233);
         power: int(9119*1/2);
         weight: int(68*3/4);
