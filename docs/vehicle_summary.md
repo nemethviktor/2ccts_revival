@@ -248,7 +248,6 @@
 | ![CRRC Dalian DF4](vehicle_graphics/str_diesel_crrc_dalian_df4.png) | CRRC Dalian DF4 | 1984 | 120 / 74 | 3550 / 2646 | Freight | 0 | STANDARD_NONE | Asia | No |
 | ![EMD/Clyde JT26C-2SS](vehicle_graphics/str_diesel_emd_clyde_jt26c_2ss.png) | EMD/Clyde JT26C-2SS | 1984 | 114 / 70 | 3000 / 2236 | Freight | 0 | STANDARD_NONE | Oceania | No |
 | ![EMD/Clyde JT26C-2SS V-line G](vehicle_graphics/str_diesel_emd_clyde_jt26c_2ss_v_line_g.png) | EMD/Clyde JT26C-2SS V-line G | 1984 | 115 / 71 | 3000 / 2236 | Freight | 0 | STANDARD_NONE | Oceania | No |
-| ![Faur A20D-P](vehicle_graphics/str_diesel_faur_a20dp.png) | Faur A20D-P | 1984 | 60 / 37 | 189 / 140 | Commuter/Urban | 39 | NARROW_NONE | Eastern Europe | No |
 | ![GE C39-8](vehicle_graphics/str_diesel_ge_c39_8__fcca_.png) | GE C39-8 | 1984 | 110 / 68 | 3900 / 2907 | Heavy Freight | 0 | STANDARD_NONE | North America, South America | No |
 | ![Qishuyan DF8](vehicle_graphics/str_diesel_qishuyan_df8.png) | Qishuyan DF8 | 1984 | 100 / 62 | 4930 / 3675 | Heavy Freight | 0 | STANDARD_NONE | Asia | No |
 | ![UGOFE GM-EMD J16CW/AC](vehicle_graphics/str_diesel_ugofe_gm_emd_j16cw_ac.png) | UGOFE GM-EMD J16CW/AC | 1984 | 120 / 74 | 1870 / 1394 | Universal | 0 | BROAD_NONE | South America | No |
@@ -347,6 +346,7 @@
 | ![Alsthom Z-431](vehicle_graphics/str_rbd_alsthom_z_431.png) | Alsthom Z-431 | 1975 | 130 / 80 | 1045 / 779 | Commuter/Urban | 54 | STANDARD_NONE | Africa | No |
 | ![Budd SPV-2000](vehicle_graphics/str_rbd_budd_spv_2000.png) | Budd SPV-2000 | 1979 | 130 / 80 | 360 / 268 | Commuter/Urban | 86 | STANDARD_NONE | Africa, North America | No |
 | ![Ganz-MAVAG Ikarus 725.00](vehicle_graphics/str_rbd_ganz_mavag_ikarus.png) | Ganz-MAVAG Ikarus 725.00 | 1983 | 100 / 62 | 250 / 186 | Commuter/Urban | 43 | STANDARD_NONE, NARROW_NONE | Asia, Eastern Europe | No |
+| ![Faur A20D-P](vehicle_graphics/str_rbd_faur_a20dp.png) | Faur A20D-P | 1984 | 60 / 37 | 189 / 140 | Commuter/Urban | 39 | NARROW_NONE | Eastern Europe | No |
 | ![NS DH1](vehicle_graphics/str_rbd_ns_dh1.png) | NS DH1 | 1984 | 100 / 62 | 285 / 212 | Commuter/Urban | 56 | STANDARD_NONE | South America, Northern Europe, Eastern Europe, Western Europe, Southern Europe | No |
 | ![Vagonka Studenka 91M0 ](vehicle_graphics/str_rbd_vagonka_studenka_91m0_.png) | Vagonka Studenka 91M0  | 1984 | 120 / 74 | 990 / 738 | Commuter/Urban | 67 | BROAD_NONE | Asia, Eastern Europe | No |
 | ![MAV Ikarus 260](vehicle_graphics/str_rbd_mav_ikarus_260.png) | MAV Ikarus 260 | 1986 | 66 / 41 | 190 / 141 | Commuter/Urban | 100 | STANDARD_NONE | Eastern Europe | No |

@@ -1142,9 +1142,6 @@
 #include "src/Diesel/LTZ_TE10Ut_graphics.pnml"
 #include "src/Diesel/LTZ_TE10Ut_item.pnml"
 
-#include "src/Diesel/Faur_A20DP_graphics.pnml"
-#include "src/Diesel/Faur_A20DP_item.pnml"
-
 #include "src/Diesel/Faur_L45H_graphics.pnml"
 #include "src/Diesel/Faur_L45H_item.pnml"
 
@@ -2294,6 +2291,9 @@
 
 #include "src/Railbus/Railbus_Diesel/Ganz_MAVAG_Ikarus_graphics.pnml"
 #include "src/Railbus/Railbus_Diesel/Ganz_MAVAG_Ikarus_item.pnml"
+
+#include "src/Railbus/Railbus_Diesel/Faur_A20DP_graphics.pnml"
+#include "src/Railbus/Railbus_Diesel/Faur_A20DP_item.pnml"
 
 
 //// RAILBUS - RAILBUS_ELECTRIC

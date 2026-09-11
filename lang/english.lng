@@ -2,7 +2,7 @@
 
 # Hardcoded Strings
 STR_GRF_NAME                                                      :{TITLE}
-STR_GRF_DESCRIPTION                                               :{SILVER}2cc Trains of the World in NML {}{}(c)2ccts Revival {}License GPLv2 or higher. {}See readme for details.{}{SILVER}Build: 2026-09-11-16:46:34
+STR_GRF_DESCRIPTION                                               :{SILVER}2cc Trains of the World in NML {}{}(c)2ccts Revival {}License GPLv2 or higher. {}See readme for details.{}{SILVER}Build: 2026-09-11-16:52:31
 STR_GRF_URL                                                       :https://github.com/nemethviktor/2ccts_revival
 STR_USED_WITH_DYNAMIC_ENGINES                                     :dynamic_engines = true (setting in openttd.cfg)
 STR_ERROR_REGION                                                  :No regions enabled, {STRING} has been disabled
@@ -764,7 +764,6 @@ str_diesel_ge_es58aci                                             :GE ES58ACi (D
 str_diesel_ltz_te10m                                              :LTZ 2TE10M (Diesel)
 str_diesel_ltz_te126                                              :LTZ 2TE126 (Diesel)
 str_diesel_ltz_te10ut                                             :LTZ 2TE10Ut (Diesel)
-str_diesel_faur_a20dp                                             :Faur A20D-P (Diesel)
 str_diesel_faur_l45h                                              :Faur L45H (Diesel)
 str_diesel_kmz_tu7_tgm40                                          :KMZ TU7/TGM40 (Diesel)
 str_diesel_siemens_vectron_de                                     :Siemens Vectron DE (Diesel)
@@ -817,6 +816,7 @@ str_rbd_eritrean_railway_a_62_70_littorina                        :Eritrean Rail
 str_rbd_fiat_ferroviaria_aln_668_1400                             :Fiat Ferroviaria ALn 668.1400 (Diesel Railbus)
 str_rbd_mav_ikarus_260                                            :MAV Ikarus 260 (Diesel Railbus)
 str_rbd_ganz_mavag_ikarus                                         :Ganz-MAVAG Ikarus 725.00 (Diesel Railbus)
+str_rbd_faur_a20dp                                                :Faur A20D-P (Diesel Railbus)
 
 # Dmu
 str_dmu_ansaldobreda_ic4                                          :AnsaldoBreda IC4 (DMU)

@@ -59,6 +59,7 @@ item_rbd_budd_spv_2000, /*Year: 1979*/ \
 item_rbd_ganz_mavag_ikarus, /*Year: 1983*/ \
 item_rbd_vagonka_studenka_91m0_, /*Year: 1984*/ \
 item_rbd_ns_dh1, /*Year: 1984*/ \
+item_rbd_faur_a20dp, /*Year: 1984*/ \
 item_rbd_mav_ikarus_260, /*Year: 1986*/ \
 item_rbd_jenbacher_werke_5047, /*Year: 1987*/ \
 item_rbd_niigata_transys_shikoku_1000, /*Year: 1990*/ \
@@ -377,7 +378,6 @@ item_diesel_emd_clyde_jt26c_2ss, /*Year: 1984*/ \
 item_diesel_ge_c39_8__fcca_, /*Year: 1984*/ \
 item_diesel_emd_clyde_jt26c_2ss_v_line_g, /*Year: 1984*/ \
 item_diesel_crrc_dalian_df4, /*Year: 1984*/ \
-item_diesel_faur_a20dp, /*Year: 1984*/ \
 item_diesel_valmet_oy_dr16, /*Year: 1985*/ \
 item_diesel_faur_lde1300, /*Year: 1985*/ \
 item_diesel_emd_clyde_jt22hc_2, /*Year: 1985*/ \

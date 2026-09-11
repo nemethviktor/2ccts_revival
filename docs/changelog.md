@@ -33,6 +33,7 @@
   - `EF-E 29 GE 2-C+C-2` intro date brought forward to 1940 and scrap-date extended to 1992
   - `Hitachi/Kawasaki Shinkansen Series 100` speed increased to 240 km/h
   - `Hitachi Shinkansen Series 700` speed increased to 285 km/h
+  - `Faur A20DP` is now a railbus. This might break your game if you had that in an existing save.
 
 ## 4.0
 

@@ -559,7 +559,7 @@ item(FEAT_TRAINS, item_rbd_eritrean_railway_a_62_70_littorina, 2045) {}
 item(FEAT_TRAINS, item_rbd_fiat_ferroviaria_aln_668_1400, 2046) {}
 item(FEAT_TRAINS, item_rbd_mav_ikarus_260, 2047) {}
 item(FEAT_TRAINS, item_rbd_ganz_mavag_ikarus, 2048) {}
-// 2049 free
+item(FEAT_TRAINS, item_rbd_faur_a20dp, 2049) {}
 // 2050 free
 // 2051 free
 // 2052 free
@@ -2724,10 +2724,10 @@ item(FEAT_TRAINS, item_diesel_ge_es58aci, 5201) {}
 item(FEAT_TRAINS, item_diesel_ltz_te10m, 5202) {}
 item(FEAT_TRAINS, item_diesel_ltz_te126, 5203) {}
 item(FEAT_TRAINS, item_diesel_ltz_te10ut, 5204) {}
-item(FEAT_TRAINS, item_diesel_faur_a20dp, 5205) {}
-item(FEAT_TRAINS, item_diesel_faur_l45h, 5206) {}
-item(FEAT_TRAINS, item_diesel_kmz_tu7_tgm40, 5207) {}
-item(FEAT_TRAINS, item_diesel_siemens_vectron_de, 5208) {}
+item(FEAT_TRAINS, item_diesel_faur_l45h, 5205) {}
+item(FEAT_TRAINS, item_diesel_kmz_tu7_tgm40, 5206) {}
+item(FEAT_TRAINS, item_diesel_siemens_vectron_de, 5207) {}
+// 5208 free
 // 5209 free
 // 5210 free
 // 5211 free
