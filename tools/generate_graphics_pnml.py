@@ -2734,9 +2734,7 @@ def get_tpl_32(vid, gfx_path, row, template_amendment_code):
 
     if template_amendment_code in ["A", "D"]:
         position_in_vehid_chain = 4 if template_amendment_code == "A" else 2
-        deduct_from_position_for_first_return = (
-            4 if template_amendment_code == "A" else 2
-        )
+        deduct_from_position_for_first_return = position_in_vehid_chain
         deduct_from_position_for_second_return = 2
     elif template_amendment_code in ["B", "C"]:
         position_in_vehid_chain = 2
