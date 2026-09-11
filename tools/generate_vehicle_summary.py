@@ -185,7 +185,7 @@ def generate_markdown():
 
         cat_df = df[df["COST_CAT"] == cat].sort_values(["INTRODUCTION_YEAR", "ENGLISH"])
         for _, row in cat_df.iterrows():
-            if is_true(row["EXCLUDE"]):
+            if pd.isna(row["VEHIDCODE"]) or is_true(row["EXCLUDE"]):
                 continue
 
             v_id = str(row["NAME"]).strip().lower()

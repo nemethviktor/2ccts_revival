@@ -2714,8 +2714,8 @@ def get_tpl_32(vid, gfx_path, row, template_amendment_code):
                 first_item_location=0,
                 second_item_task="spriteset",
                 second_item_word=name_b,
-                second_item_location=2 if template_amendment_code == "A" else None,
-                third_item_task="empty" if template_amendment_code == "A" else None,
+                second_item_location=2,
+                third_item_task="empty",
             )
         )
 
@@ -2759,20 +2759,26 @@ def get_tpl_32(vid, gfx_path, row, template_amendment_code):
             )
         )
 
-    if template_amendment_code in ["A"]:  # no 'D'
+    if template_amendment_code in ["A", "D"]:
         nml_code.append(
             get_switch_length(
                 vid=vid,
                 row=row,
                 first_deduct_from_position_in_vehid_chain_location=deduct_from_position_for_first_return,
                 first_position_in_vehid_chain=position_in_vehid_chain,
-                second_deduct_from_position_in_vehid_chain_location=deduct_from_position_for_second_return,
-                second_position_in_vehid_chain=position_in_vehid_chain,
+                second_deduct_from_position_in_vehid_chain_location=(
+                    deduct_from_position_for_second_return
+                    if template_amendment_code == "A"
+                    else None
+                ),
+                second_position_in_vehid_chain=(
+                    position_in_vehid_chain if template_amendment_code == "A" else None
+                ),
                 fallback_length_defined=f"{row['WAGON_LENGTH']}",
             )
         )
 
-    if template_amendment_code in ["A", "B", "C"]:  # no 'D'
+    if template_amendment_code in ["A", "B", "C", "D"]:
         nml_code.append(f"""{get_articulated_return(
             vid=vid, endvalue=3 if template_amendment_code == 'A' else 1)}
 """)
@@ -3061,7 +3067,11 @@ def generate_graphics_pnml():
     print(f"Starting generation for {len(df_master)} vehicles...")
 
     for _, row in df_master.iterrows():
-        if row["VEHIDCODE"] == "" or isinstance(row["TEMPLATE_ID"], float):
+        if (
+            row["VEHIDCODE"] == ""
+            or isinstance(row["TEMPLATE_ID"], float)
+            or is_true(row["EXCLUDE"])
+        ):
             continue
 
         copyright_header = df_copyright.columns[0] if not df_gfx_props.empty else ""

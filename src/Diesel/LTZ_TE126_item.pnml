@@ -49,8 +49,8 @@ item(FEAT_TRAINS, item_diesel_ltz_te126) {
     graphics {
         purchase: spriteset_diesel_ltz_te126_purchase;
         // no 'visual_effect' or 'visual_effect_and_powered'
-        // no 'length'
-        // no 'articulated_part'
+        length: switch_diesel_ltz_te126_length;
+        articulated_part: switch_diesel_ltz_te126_articulated;
         can_attach_wagon: switch_can_attach_vehicle;
         default: switch_diesel_ltz_te126_position;
     }

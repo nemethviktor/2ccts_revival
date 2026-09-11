@@ -17,5 +17,20 @@ spriteset(spriteset_diesel_ltz_te126_b_unit, "gfx/diesel/ltz_te126.png") {templa
 
 switch(FEAT_TRAINS, SELF, switch_diesel_ltz_te126_position, position_in_vehid_chain % 4) {
 	0: spriteset_diesel_ltz_te126_a_unit;
-	spriteset_diesel_ltz_te126_b_unit;
+	2: spriteset_diesel_ltz_te126_b_unit;
+	EMPTY_SPRITESET
 }
+
+/// Length
+switch(FEAT_TRAINS, SELF, switch_diesel_ltz_te126_length, position_in_vehid_chain % 2) {
+    0: 8;
+	2;
+}
+
+/// Articulated Return
+/// extra_callback_info1 is the index of the part being added.
+switch(FEAT_TRAINS, SELF, switch_diesel_ltz_te126_articulated, extra_callback_info1) {
+    1: return item_diesel_ltz_te126;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+

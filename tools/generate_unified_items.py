@@ -1094,6 +1094,7 @@ def generate_unified_items():
                 "TPL_32A",
                 "TPL_32B",
                 "TPL_32C",
+                "TPL_32D",
             ]
             else "// no 'articulated_part'"
         )
@@ -1112,6 +1113,7 @@ def generate_unified_items():
                 "TPL_32A",
                 "TPL_32B",
                 "TPL_32C",
+                "TPL_32D",
             ]
             else "// no 'length'"
         )
