@@ -96,11 +96,7 @@ def load_master_data(excel_path):
             for col in cols_to_fix:
                 current_sheet[col] = current_sheet[col].astype(str).replace("nan", "")
 
-            overlapping_cols = [
-                c
-                for c in current_sheet.columns
-                if c in df_master.columns and c != "VEHIDCODE"
-            ]
+            overlapping_cols = [c for c in current_sheet.columns if c in df_master.columns and c != "VEHIDCODE"]
 
             df_master = df_master.drop(columns=overlapping_cols)
             df_master = pd.merge(df_master, current_sheet, on="VEHIDCODE", how="left")
@@ -111,9 +107,7 @@ def load_master_data(excel_path):
     copyright_txt = ""
     if not df_copyright.empty:
         copyright_txt = str(df_copyright.iloc[0, 0])
-    elif len(df_copyright.columns) > 0 and "Unnamed" not in str(
-        df_copyright.columns[0]
-    ):
+    elif len(df_copyright.columns) > 0 and "Unnamed" not in str(df_copyright.columns[0]):
         copyright_txt = str(df_copyright.columns[0])
 
     # Final safety check before returning from load_master_data
@@ -204,15 +198,7 @@ def get_badges(row: pd.Series) -> str:
         else:
             badges.append(f"power/{power}")
 
-    role = (
-        row["ROLE"]
-        .lower()
-        .replace(" ", "_")
-        .replace("/", "_")
-        .replace("-", "_")
-        .replace("(", "_")
-        .replace(")", "_")
-    )
+    role = row["ROLE"].lower().replace(" ", "_").replace("/", "_").replace("-", "_").replace("(", "_").replace(")", "_")
     if is_true(row["HAS_CAB"]):
         badges.append("attribute/push_pull")
 
@@ -551,9 +537,7 @@ def calculate_nml_cost(row: pd.Series, m, is_running_cost=False) -> float:
         else:
             # Matches PURCHASECOSTNONENGINEVALUE(SCALAR, WFACTOR, SFACTOR, CAPFACTOR)
             # Logic: SCALAR * (WFACTOR * WEIGHT + SFACTOR * SQRT(SPEED) + CAPFACTOR * CAPACITY)
-            inner_math = (
-                (m.get("P2") * W) + (m.get("P3") * sqrt_speed) + (m.get("P5") * C)
-            )
+            inner_math = (m.get("P2") * W) + (m.get("P3") * sqrt_speed) + (m.get("P5") * C)
             return round(m.get("P1") * inner_math, 2)
 
     else:
@@ -690,10 +674,7 @@ def get_cargo_definitions(row: pd.Series) -> str:
     STANDARD_DISALLOW = "PASS, MAIL, TOUR, COAL, OIL_, LVST, GRAI, WOOD, IORE, STEL, VALU, WHEA, GOLD, MAIZ, CORE, DIAM, SUGR, TOFF, CTCD, AORE, CLAY, CMNT, GRVL, LIME, OLSD, POTA, SAND, SCMT, SGBT, SGCN, SULP, VEHI, YETI, YETY"
 
     cargo_map = {
-        "NONE": (
-            f"// cargodeftype: NONE;\n{" "*8}"
-            f"refittable_cargo_classes: bitmask(NO_CARGO_CLASS);\n{" "*8}"
-        ),
+        "NONE": (f"// cargodeftype: NONE;\n{" "*8}" f"refittable_cargo_classes: bitmask(NO_CARGO_CLASS);\n{" "*8}"),
         # Pax & Mail, NO Valuables
         "PASSENGERS": (
             f"// cargodeftype: PASSENGERS;\n{" "*8}"
@@ -878,9 +859,7 @@ def parse_cargo_definitions(pnml_path):
         return cargo_dict
 
     # Regex captures the macro name and the entire body until the next #define or EOF
-    pattern = re.compile(
-        r"#define\s+(CARGODEF_[A-Z0-9_]+)\s+(.*?)(?=\s*#define|$)", re.DOTALL
-    )
+    pattern = re.compile(r"#define\s+(CARGODEF_[A-Z0-9_]+)\s+(.*?)(?=\s*#define|$)", re.DOTALL)
 
     with open(pnml_path, "r", encoding="utf-8") as f:
         content = f.read()
@@ -983,12 +962,8 @@ def generate_unified_items():
         r_cost = calculate_nml_cost(row, m, is_running_cost=True)
 
         if IS_DUAL_POWERED:
-            r_cost_diesel = calculate_nml_cost(
-                row, get_costs("DIESELENGINE"), is_running_cost=True
-            )
-            r_cost_electric = calculate_nml_cost(
-                row, get_costs("ELECTRICENGINE"), is_running_cost=True
-            )
+            r_cost_diesel = calculate_nml_cost(row, get_costs("DIESELENGINE"), is_running_cost=True)
+            r_cost_electric = calculate_nml_cost(row, get_costs("ELECTRICENGINE"), is_running_cost=True)
 
         # 2. Tracks Logic
         tracks = [
@@ -1070,11 +1045,11 @@ def generate_unified_items():
             "TPL_42B",
             "TPL_42C",
         ]:
-            graphics_switch_visual_effect_and_powered = f"visual_effect_and_powered: switch_{VEHIDCODE_lcase}_visual_effect_and_powered;"
-        else:
             graphics_switch_visual_effect_and_powered = (
-                "// no 'visual_effect' or 'visual_effect_and_powered'"
+                f"visual_effect_and_powered: switch_{VEHIDCODE_lcase}_visual_effect_and_powered;"
             )
+        else:
+            graphics_switch_visual_effect_and_powered = "// no 'visual_effect' or 'visual_effect_and_powered'"
 
         graphics_switch_articulated_part = (
             f"articulated_part: switch_{VEHIDCODE_lcase}_articulated;"
@@ -1123,19 +1098,13 @@ def generate_unified_items():
         # ... then it should look like xy so even though 1 and only 1 item has front/back, it's never been called even in legacy code.
         # Also no ending ";" for these on purpose.
         graphics_switch_front_livery = (
-            f"switch_{VEHIDCODE_lcase}_front_livery"
-            if TEMPLATE_ID_FULL in ["TPL_42A", "TPL_42C"]
-            else None
+            f"switch_{VEHIDCODE_lcase}_front_livery" if TEMPLATE_ID_FULL in ["TPL_42A", "TPL_42C"] else None
         )
         graphics_switch_middle_livery = (
-            f"switch_{VEHIDCODE_lcase}_middle_livery"
-            if TEMPLATE_ID_FULL in ["TPL_25A", "TPL_42A", "TPL_42C"]
-            else None
+            f"switch_{VEHIDCODE_lcase}_middle_livery" if TEMPLATE_ID_FULL in ["TPL_25A", "TPL_42A", "TPL_42C"] else None
         )
         graphics_switch_back_livery = (
-            f"switch_{VEHIDCODE_lcase}_back_livery"
-            if TEMPLATE_ID_FULL in ["TPL_42A", "TPL_42C"]
-            else None
+            f"switch_{VEHIDCODE_lcase}_back_livery" if TEMPLATE_ID_FULL in ["TPL_42A", "TPL_42C"] else None
         )
         graphics_switch_cargo_selection = (
             f"switch_{VEHIDCODE_lcase}_cargo_selection"
@@ -1179,22 +1148,16 @@ def generate_unified_items():
         )
 
         graphics_spritegroup_t42b_head_logic = (
-            f"spritegroup_{VEHIDCODE_lcase}_engine1_l1"
-            if TEMPLATE_ID_FULL in ["TPL_42B"]
-            else None
+            f"spritegroup_{VEHIDCODE_lcase}_engine1_l1" if TEMPLATE_ID_FULL in ["TPL_42B"] else None
         )
 
         graphics_switch_t42b_wagon_logic = (
-            f"switch_{VEHIDCODE_lcase}_wagon_logic"
-            if TEMPLATE_ID_FULL in ["TPL_42B"]
-            else None
+            f"switch_{VEHIDCODE_lcase}_wagon_logic" if TEMPLATE_ID_FULL in ["TPL_42B"] else None
         )
 
         content = []
         content.append(f"\n{copyright_text}\n\n")
-        content.append(
-            f"\n// Template: {TEMPLATE_ID_FULL}.\n// Data from: {row['WEB']}\n\n"
-        )
+        content.append(f"\n// Template: {TEMPLATE_ID_FULL}.\n// Data from: {row['WEB']}\n\n")
         if veh_notes:
             content.append("// Notes:\n")
             for k, v in veh_notes.items():
@@ -1203,8 +1166,7 @@ def generate_unified_items():
 
         # We need to port some of the random crap from _graphics here else it won't work because we are no longer defining HEAD_CAPACITY as a generic thing.
         if (
-            category in ["DMU", "EMU", "WAGON", "MMU"]
-            and VEHID_CATEGORY not in ["CARGOEMU", "CARGODMU"]
+            category in ["DMU", "EMU", "WAGON", "MMU"] and VEHID_CATEGORY not in ["CARGOEMU", "CARGODMU"]
         ) or category.endswith("RAILBUS"):
             content.append("// Cargo capacity" + "\n")
             content.append(get_expanded_engine_capacity_switch(row))
@@ -1247,23 +1209,17 @@ switch (FEAT_TRAINS, SELF, sw_loco_runningcost_{VEHIDCODE_lcase}, tile_powers_ra
         content.append("    property {\n")
         content.append(f"        name: string({row['NAME'].lower()});\n")
         content.append(f"        {get_climates(row)}\n")
-        content.append(
-            f"        introduction_date: date({int(row['INTRODUCTION_YEAR'])},1,1);\n"
-        )
+        content.append(f"        introduction_date: date({int(row['INTRODUCTION_YEAR'])},1,1);\n")
         content.append(
             f"        model_life: {"VEHICLE_NEVER_EXPIRES" if row['MODEL_LIFE'] == "VEHICLE_NEVER_EXPIRES" else int(row['MODEL_LIFE'])};\n"
         )
         content.append(f"        vehicle_life: {int(row['VEHICLE_LIFE'])};\n")
-        content.append(
-            f"        retire_early: {0 if is_true(row['IS_WAGON_OR_COACH']) else 20};\n"
-        )
+        content.append(f"        retire_early: {0 if is_true(row['IS_WAGON_OR_COACH']) else 20};\n")
         content.append(f"        loading_speed: {ls_logic};\n")
         content.append(f"        cost_factor: {p_cost};\n")
         content.append(f"        running_cost_factor: {r_cost};\n")
         dual_mode_comment = (
-            " // this needs to be here even though it's redefined in graphics further down"
-            if IS_DUAL_POWERED
-            else ""
+            " // this needs to be here even though it's redefined in graphics further down" if IS_DUAL_POWERED else ""
         )
         content.append(f"        speed: {int(row['SPEED'])} km/h;{dual_mode_comment}\n")
         content.append(f"        power: {int(row['POWER'])} hp;{dual_mode_comment}\n")
@@ -1271,9 +1227,7 @@ switch (FEAT_TRAINS, SELF, sw_loco_runningcost_{VEHIDCODE_lcase}, tile_powers_ra
             f"        cargo_capacity: {255 if int(row['HEAD_CAPACITY']) > 255 else int(row['HEAD_CAPACITY'])};\n"
         )
         content.append(f"        weight: {int(row['WEIGHT'])} ton;\n")
-        content.append(
-            f"        tractive_effort_coefficient: {row['TE_COEFFICIENT']};\n"
-        )
+        content.append(f"        tractive_effort_coefficient: {row['TE_COEFFICIENT']};\n")
         content.append(f"        air_drag_coefficient: {AIR_DRAG_COEFFICIENT};\n\n")
         content.append(f"        reliability_decay: {RELIABILITY_DECAY};\n")
         content.append(f"        {get_cargo_definitions(row)}\n")
@@ -1284,9 +1238,7 @@ switch (FEAT_TRAINS, SELF, sw_loco_runningcost_{VEHIDCODE_lcase}, tile_powers_ra
 
         # Push-pull DC (DT) logic where applicable
         if TEMPLATE_ID_FULL in ["TPL_04A", "TPL_04U"] and is_true(row["HAS_CAB"]):
-            content.append(
-                f"        extra_flags: bitmask(VEHICLE_FLAG_TRAIN_HAS_CAB);\n"
-            )
+            content.append(f"        extra_flags: bitmask(VEHICLE_FLAG_TRAIN_HAS_CAB);\n")
         content.append(f"        refit_cost: {REFIT_COST};\n")
         ai_special_flag = "AI_FLAG_PASSENGER | AI_FLAG_CARGO"
         if VEHID_CATEGORY in (
@@ -1309,20 +1261,16 @@ switch (FEAT_TRAINS, SELF, sw_loco_runningcost_{VEHIDCODE_lcase}, tile_powers_ra
         content.append(f"        ai_special_flag: " + ai_special_flag + ";\n")
         content.append(f"        track_type: {track_logic};\n")
         content.append(f"        running_cost_base: {RUNNING_COST_BASE};\n")
-        content.append(
-            f"        engine_class: {'ENGINE_CLASS_' + row['ENGINE_CLASS']};\n"
-        )
+        content.append(f"        engine_class: {'ENGINE_CLASS_' + row['ENGINE_CLASS']};\n")
         if IS_DUAL_POWERED:
-            content.append(
-                f"        // visual_effect_and_powered: defined in graphics\n"
-            )
+            content.append(f"        // visual_effect_and_powered: defined in graphics\n")
         else:
             content.append(
                 f"        visual_effect_and_powered: visual_effect_and_powered({visual_effect_flag_1}, {visual_effect_flag_2}, {visual_effect_flag_3});\n\n"
             )
         content.append(f"        sprite_id: {SPRITE_ID};\n")
         content.append(f"        dual_headed: {int(row['DUAL_HEADED'])};\n")
-        content.append(f"        length: {int(row['LENGTH'])};\n")
+        content.append(f"        length: {int(row['LENGTH_P1_HEAD'])};\n")
         content.append(f"        extra_power_per_wagon: {POWER_PER_WAGON};\n")
         content.append(f"        bitmask_vehicle_info: {BITMASK_VEHICLE_INFO};\n")
 
@@ -1333,9 +1281,7 @@ switch (FEAT_TRAINS, SELF, sw_loco_runningcost_{VEHIDCODE_lcase}, tile_powers_ra
         if IS_DUAL_POWERED:
             content.append(f"        power: sw_loco_power_{VEHIDCODE_lcase};\n")
             content.append(f"        speed: sw_loco_speed_{VEHIDCODE_lcase};\n")
-            content.append(
-                f"        running_cost_factor: sw_loco_runningcost_{VEHIDCODE_lcase};\n"
-            )
+            content.append(f"        running_cost_factor: sw_loco_runningcost_{VEHIDCODE_lcase};\n")
 
             content.append(
                 f"        additional_text: string(\n"
@@ -1352,14 +1298,10 @@ switch (FEAT_TRAINS, SELF, sw_loco_runningcost_{VEHIDCODE_lcase}, tile_powers_ra
                 f"            {row['SPEED_DM_DIESEL']}\n"
                 f"        );\n"
             )
-            content.append(
-                f"        visual_effect_and_powered: sw_loco_visual_effect_{VEHIDCODE_lcase};\n"
-            )
+            content.append(f"        visual_effect_and_powered: sw_loco_visual_effect_{VEHIDCODE_lcase};\n")
         cargo_capacity_defined = False
         if TEMPLATE_ID_FULL in ["TPL_32B"]:
-            content.append(
-                f"        cargo_capacity: switch_{VEHIDCODE_lcase}_capacity_position;\n"
-            )
+            content.append(f"        cargo_capacity: switch_{VEHIDCODE_lcase}_capacity_position;\n")
             cargo_capacity_defined = True
         purchase_cargo_cap = int(row["HEAD_CAPACITY"])
         if purchase_cargo_cap > 255:
@@ -1368,23 +1310,14 @@ switch (FEAT_TRAINS, SELF, sw_loco_runningcost_{VEHIDCODE_lcase}, tile_powers_ra
         if is_true(row["IS_POWERED_UNPOWERED_SUNDRY"]):
             # FML.
             purchasetext = "PURCHASETEXT"
-            cargodef = (
-                "PASSENGER"
-                if is_true(row["CARGODEF"].startswith("PASSENGER"))
-                else "CARGO"
-            )
-            powered_state = (
-                "UNPOWERED" if VEHIDCODE_lcase.endswith("unpowered") else "POWERED"
-            )
+            cargodef = "PASSENGER" if is_true(row["CARGODEF"].startswith("PASSENGER")) else "CARGO"
+            powered_state = "UNPOWERED" if VEHIDCODE_lcase.endswith("unpowered") else "POWERED"
             content.append(f"        {purchasetext}MUWAGON{cargodef}{powered_state}\n")
         elif (
-            category in ["DMU", "EMU", "WAGON", "MMU"]
-            and VEHID_CATEGORY not in ["CARGODMU", "CARGOEMU"]
+            category in ["DMU", "EMU", "WAGON", "MMU"] and VEHID_CATEGORY not in ["CARGODMU", "CARGOEMU"]
         ) or category.endswith("RAILBUS"):
             if not cargo_capacity_defined:
-                content.append(
-                    f"        cargo_capacity: switch_{VEHIDCODE_lcase}_capacity_engine;\n"
-                )
+                content.append(f"        cargo_capacity: switch_{VEHIDCODE_lcase}_capacity_engine;\n")
         # if not is_true(row['IS_POWERED_UNPOWERED_SUNDRY']):
         #    content.append(f"""        additional_text: string(str_{VEHIDCODE_lcase}_url);\n""")
         content.append(f"        {graphics_switch_visual_effect_and_powered}\n")
@@ -1411,9 +1344,7 @@ switch (FEAT_TRAINS, SELF, sw_loco_runningcost_{VEHIDCODE_lcase}, tile_powers_ra
         ]:
             content.append(f"        default: switch_{VEHIDCODE_lcase}_position;\n")
         elif TEMPLATE_ID_FULL in ["TPL_42B"]:
-            content.append(
-                f"        default: {graphics_spritegroup_t42b_head_logic};\n"
-            )
+            content.append(f"        default: {graphics_spritegroup_t42b_head_logic};\n")
         elif TEMPLATE_ID_FULL in [
             "TPL_03A",
             "TPL_03B",
@@ -1449,9 +1380,7 @@ switch (FEAT_TRAINS, SELF, sw_loco_runningcost_{VEHIDCODE_lcase}, tile_powers_ra
             ]:
                 content.append(f"        default: switch_{VEHIDCODE_lcase}_reversed;\n")
             elif IS_DUAL_POWERED:
-                content.append(
-                    f"        default: sw_{VEHIDCODE_lcase}_dual_mode_sprites;\n"
-                )
+                content.append(f"        default: sw_{VEHIDCODE_lcase}_dual_mode_sprites;\n")
             else:
                 content.append(f"        default: spriteset_{VEHIDCODE_lcase};\n")
         elif category in ["COACH", "WAGON"]:
@@ -1476,9 +1405,7 @@ switch (FEAT_TRAINS, SELF, sw_loco_runningcost_{VEHIDCODE_lcase}, tile_powers_ra
                 "TPL_04P",
                 "TPL_04Q",
             ]:
-                content.append(
-                    f"        default: switch_{VEHIDCODE_lcase}_cargo_selection;\n"
-                )
+                content.append(f"        default: switch_{VEHIDCODE_lcase}_cargo_selection;\n")
             elif TEMPLATE_ID_FULL in [
                 "TPL_04C",
                 "TPL_04D",
@@ -1488,13 +1415,9 @@ switch (FEAT_TRAINS, SELF, sw_loco_runningcost_{VEHIDCODE_lcase}, tile_powers_ra
             ]:
                 # Total cluserf.k but box-cars and some tanker-wagons have so-called standard liveries
                 # ....with a capital 'S'!
-                content.append(
-                    f"        default: switch_{VEHIDCODE_lcase}_standard_livery;\n"
-                )
+                content.append(f"        default: switch_{VEHIDCODE_lcase}_standard_livery;\n")
             elif TEMPLATE_ID_FULL in ["TPL_04T"]:
-                content.append(
-                    f"        default: switch_{VEHIDCODE_lcase}_livestock_livery;\n"
-                )
+                content.append(f"        default: switch_{VEHIDCODE_lcase}_livestock_livery;\n")
             elif TEMPLATE_ID_FULL in [
                 "TPL_02F",
                 "TPL_04A",
@@ -1503,9 +1426,7 @@ switch (FEAT_TRAINS, SELF, sw_loco_runningcost_{VEHIDCODE_lcase}, tile_powers_ra
             ] and not is_true(row["HAS_CAB"]):
                 content.append(f"        default: switch_{VEHIDCODE_lcase}_livery;\n")
             elif TEMPLATE_ID_FULL in ["TPL_04S"]:
-                content.append(
-                    f"        default: switch_{VEHIDCODE_lcase}_position_check;\n"
-                )
+                content.append(f"        default: switch_{VEHIDCODE_lcase}_position_check;\n")
             elif TEMPLATE_ID_FULL in [
                 "TPL_04U",
             ] and not is_true(row["HAS_CAB"]):
@@ -1518,12 +1439,8 @@ switch (FEAT_TRAINS, SELF, sw_loco_runningcost_{VEHIDCODE_lcase}, tile_powers_ra
                 content.append(f"        default: switch_{VEHIDCODE_lcase};\n")
 
             if row["COST_CAT"] == "COACH":
-                if TEMPLATE_ID_FULL in ["TPL_04A", "TPL_04U"] and is_true(
-                    row["HAS_CAB"]
-                ):
-                    content.append(
-                        f"        // Always flip because DT has to face backwards\n"
-                    )
+                if TEMPLATE_ID_FULL in ["TPL_04A", "TPL_04U"] and is_true(row["HAS_CAB"]):
+                    content.append(f"        // Always flip because DT has to face backwards\n")
                     content.append(f"        reverse_build_probability: return 100;\n")
                 elif TEMPLATE_ID_FULL in ["TPL_04S"]:
                     pass
@@ -1539,14 +1456,10 @@ switch (FEAT_TRAINS, SELF, sw_loco_runningcost_{VEHIDCODE_lcase}, tile_powers_ra
 
         # Livery Overrides for MUs - but not actual wagons.
         # TBH I have no idea why powered/unpowered wagons are generally classified as *MUs, rather than COACHes/WAGONs but I'll leave it as-is.
-        if category in ["DMU", "EMU", "METRO", "MMU"] and not is_true(
-            row["IS_POWERED_UNPOWERED_SUNDRY"]
-        ):
+        if category in ["DMU", "EMU", "METRO", "MMU"] and not is_true(row["IS_POWERED_UNPOWERED_SUNDRY"]):
 
             # At the moment there's just 1 CARGOxMU..
-            overrideType = (
-                "cargo_" if VEHIDCODE_lcase.startswith("cargo") and HAS_MU_FLAG else ""
-            )
+            overrideType = "cargo_" if VEHIDCODE_lcase.startswith("cargo") and HAS_MU_FLAG else ""
 
             if category in ["METRO"]:
                 overrideCategory = "mtro_metro"
@@ -1556,23 +1469,14 @@ switch (FEAT_TRAINS, SELF, sw_loco_runningcost_{VEHIDCODE_lcase}, tile_powers_ra
                 overrideCategory = "mu_mu"
 
             # Unpowered Wagon
-            content.append(
-                f"    livery_override (item_{overrideCategory}_{overrideType}wagon_unpowered) {{\n"
-            )
+            content.append(f"    livery_override (item_{overrideCategory}_{overrideType}wagon_unpowered) {{\n")
             content.append(f"        loading_speed: {ls_logic};\n")
-            content.append(
-                f"        running_cost_factor: int({int(row['SPEED'])}/10);\n"
-            )
+            content.append(f"        running_cost_factor: int({int(row['SPEED'])}/10);\n")
             content.append(f"        weight: int({int(row['WEIGHT'])}*1/2);\n")
-            if (
-                graphics_switch_visual_effect_and_powered_position
-                and TEMPLATE_ID_FULL not in ["TPL_02D"]
-            ):
-                content.append(
-                    f"        {graphics_switch_visual_effect_and_powered_position}\n"
-                )
+            if graphics_switch_visual_effect_and_powered_position and TEMPLATE_ID_FULL not in ["TPL_02D"]:
+                content.append(f"        {graphics_switch_visual_effect_and_powered_position}\n")
             content.append(f"        cargo_capacity: {int(row['WAGON_CAPACITY'])};\n")
-            content.append(f"        length: {int(row['WAGON_LENGTH'])};\n")
+            content.append(f"        length: {int(row['LENGTH_P3_WAGON'])};\n")
             content.append(
                 f"        default: {graphics_switch_middle_livery if graphics_switch_middle_livery
                                                else graphics_switch_cargo_selection if graphics_switch_cargo_selection
@@ -1583,31 +1487,20 @@ switch (FEAT_TRAINS, SELF, sw_loco_runningcost_{VEHIDCODE_lcase}, tile_powers_ra
 
             # Powered Wagon - Replicating complex RC eval
             p_sqrt = math.sqrt(row["POWER"])
-            rc_powered = (
-                (int(row["SPEED"]) / 10)
-                + (p_sqrt / 10)
-                + (row["TE_COEFFICIENT"] * row["WEIGHT"])
-            )
+            rc_powered = (int(row["SPEED"]) / 10) + (p_sqrt / 10) + (row["TE_COEFFICIENT"] * row["WEIGHT"])
 
-            content.append(
-                f"    livery_override (item_{overrideCategory}_{overrideType}wagon_powered) {{\n"
-            )
+            content.append(f"    livery_override (item_{overrideCategory}_{overrideType}wagon_powered) {{\n")
             content.append(f"        loading_speed: {ls_logic};\n")
             content.append(f"        running_cost_factor: round({rc_powered});\n")
             content.append(f"        power: int({int(row['POWER'])}*1/2);\n")
             content.append(f"        weight: int({int(row['WEIGHT'])}*3/4);\n")
-            if (
-                graphics_switch_visual_effect_and_powered_position
-                and TEMPLATE_ID_FULL not in ["TPL_02D"]
-            ):
-                content.append(
-                    f"        {graphics_switch_visual_effect_and_powered_position}\n"
-                )
+            if graphics_switch_visual_effect_and_powered_position and TEMPLATE_ID_FULL not in ["TPL_02D"]:
+                content.append(f"        {graphics_switch_visual_effect_and_powered_position}\n")
             content.append(f"        cargo_capacity: {int(row['WAGON_CAPACITY'])};\n")
             content.append(
                 f"        tractive_effort_coefficient: int({row['TE_COEFFICIENT']}*10*{int(row['WEIGHT'])});\n"
             )
-            content.append(f"        length: {int(row['WAGON_LENGTH'])};\n")
+            content.append(f"        length: {int(row['LENGTH_P3_WAGON'])};\n")
             content.append(
                 f"        default: {graphics_switch_middle_livery if graphics_switch_middle_livery
                                                else graphics_switch_cargo_selection if graphics_switch_cargo_selection
@@ -1629,10 +1522,7 @@ switch (FEAT_TRAINS, SELF, sw_loco_runningcost_{VEHIDCODE_lcase}, tile_powers_ra
         new_content = "".join(content) if isinstance(content, list) else content
 
         # Check existing content and write only if modified
-        if (
-            not file_path.exists()
-            or file_path.read_text(encoding="utf-8") != new_content
-        ):
+        if not file_path.exists() or file_path.read_text(encoding="utf-8") != new_content:
             file_path.write_text(new_content, encoding="utf-8")
 
     # Save as CSV - this takes quite a few seconds.

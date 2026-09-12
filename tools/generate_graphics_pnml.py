@@ -28,6 +28,11 @@ def is_true(val) -> bool:
     return (val == True or str(val).upper() == "TRUE") or (val == 1)
 
 
+def coalesce(a, b):
+    """If a is not None then returns a else b"""
+    return a if a else b
+
+
 def scrub_nml_data(func):
     @wraps(func)
     def wrapper(*args, **kwargs):
@@ -43,9 +48,7 @@ def scrub_nml_data(func):
             return val
 
         # Clean all keyword arguments EXCEPT 'vid' and 'gfx_path'
-        cleaned_kwargs = {
-            k: (clean(v) if k != "extra_comment" else v) for k, v in kwargs.items()
-        }
+        cleaned_kwargs = {k: (clean(v) if k != "extra_comment" else v) for k, v in kwargs.items()}
 
         # Clean positional arguments (if you use them)
         cleaned_args = [clean(a) for a in args]
@@ -112,9 +115,7 @@ switch(FEAT_TRAINS, SELF, switch_{vid}_visual_effect_and_powered, var[0xC8]) {{
 
 
 @scrub_nml_data
-def get_motion_counter(
-    *, vid: str, switch_name_suffix: str, state_0: str, state_default: str
-) -> str:
+def get_motion_counter(*, vid: str, switch_name_suffix: str, state_0: str, state_default: str) -> str:
     """
     Gets the motion_counter element
 
@@ -146,18 +147,10 @@ def get_switch_vid(
     second_item_location: int = None,
     third_item_location: int = None,
     fourth_item_location: int = None,
-    first_item_task: Optional[
-        Literal["spriteset", "spritegroup", "switch", "empty"]
-    ] = None,
-    second_item_task: Optional[
-        Literal["spriteset", "spritegroup", "switch", "empty"]
-    ] = None,
-    third_item_task: Optional[
-        Literal["spriteset", "spritegroup", "switch", "empty"]
-    ] = None,
-    fourth_item_task: Optional[
-        Literal["spriteset", "spritegroup", "switch", "empty"]
-    ] = None,
+    first_item_task: Optional[Literal["spriteset", "spritegroup", "switch", "empty"]] = None,
+    second_item_task: Optional[Literal["spriteset", "spritegroup", "switch", "empty"]] = None,
+    third_item_task: Optional[Literal["spriteset", "spritegroup", "switch", "empty"]] = None,
+    fourth_item_task: Optional[Literal["spriteset", "spritegroup", "switch", "empty"]] = None,
 ) -> str:
     """
     Gets the vid switch
@@ -176,42 +169,28 @@ def get_switch_vid(
     nml_code.append(
         f"{main_task}(FEAT_TRAINS, SELF, {main_task}_{vid}, position_in_vehid_chain % {position_in_vehid_chain}) {{"
     )
-    nml_code.append(
-        f"\t{first_item_location}: {first_item_task}_{vid}_{first_item_word};"
-    )
+    nml_code.append(f"\t{first_item_location}: {first_item_task}_{vid}_{first_item_word};")
     # Logic for the second item
     if second_item_task:
         if second_item_task != "empty":
-            prefix = (
-                f"{second_item_location}: " if second_item_location is not None else ""
-            )
+            prefix = f"{second_item_location}: " if second_item_location is not None else ""
             nml_code.append(f"\t{prefix}{second_item_task}_{vid}_{second_item_word};")
         else:
-            prefix = (
-                f"{second_item_location}: " if second_item_location is not None else ""
-            )
+            prefix = f"{second_item_location}: " if second_item_location is not None else ""
             nml_code.append(f"\t{prefix}EMPTY_SPRITESET")  # no ";"
     if third_item_task:
         if third_item_task != "empty":
-            prefix = (
-                f"{third_item_location}: " if third_item_location is not None else ""
-            )
+            prefix = f"{third_item_location}: " if third_item_location is not None else ""
             nml_code.append(f"\t{prefix}{third_item_task}_{vid}_{third_item_word};")
         else:
-            prefix = (
-                f"{third_item_location}: " if third_item_location is not None else ""
-            )
+            prefix = f"{third_item_location}: " if third_item_location is not None else ""
             nml_code.append(f"\t{prefix}EMPTY_SPRITESET")  # no ";"
     if fourth_item_task:
         if fourth_item_task != "empty":
-            prefix = (
-                f"{fourth_item_location}: " if fourth_item_location is not None else ""
-            )
+            prefix = f"{fourth_item_location}: " if fourth_item_location is not None else ""
             nml_code.append(f"\t{prefix}{fourth_item_task}_{vid}_{fourth_item_word};")
         else:
-            prefix = (
-                f"{fourth_item_location}: " if fourth_item_location is not None else ""
-            )
+            prefix = f"{fourth_item_location}: " if fourth_item_location is not None else ""
             nml_code.append(f"\t{prefix}EMPTY_SPRITESET")  # no ";"
     nml_code.append(f"}}")
 
@@ -268,43 +247,24 @@ def get_switch_length(
     *,
     vid: str,
     row,
-    first_position_in_vehid_chain: int = 2,
-    first_deduct_from_position_in_vehid_chain_location: int = 1,
-    first_force_location: int = None,
-    second_position_in_vehid_chain: Optional[int] = None,
-    second_deduct_from_position_in_vehid_chain_location: Optional[int] = None,
-    second_deduct_from_legnth_location: Optional[int] = None,
-    fallback_length_defined: int = None,
 ) -> str:
     nml_code = []
 
-    row_length = int(float(row["LENGTH"]))
-    fallback_length = (
-        fallback_length_defined
-        if fallback_length_defined
-        else (
-            row["WAGON_LENGTH"]
-            if first_position_in_vehid_chain == 2
-            else row["WAGON_LENGTH"] if row["WAGON_LENGTH"] != 0 else row["LENGTH"]
-        )
-    )
-    nml_code.append(
-        f"""
+    length_p1_head = int(float(row["LENGTH_P1_HEAD"]))
+    length_p2 = int(float(row["LENGTH_P2"]))
+    length_p3_wagon = int(float(row["LENGTH_P3_WAGON"]))
+
+    nml_code.append(f"""
 /// Length
-switch(FEAT_TRAINS, SELF, switch_{vid}_length, position_in_vehid_chain % {first_position_in_vehid_chain}) {{
-    {0 if first_position_in_vehid_chain == 2 else first_position_in_vehid_chain-first_deduct_from_position_in_vehid_chain_location}: {first_force_location if first_force_location else row_length};"""
-    )
-    if second_deduct_from_position_in_vehid_chain_location:
-        length_to_use = (
-            row["LENGTH"] - second_deduct_from_legnth_location
-            if second_deduct_from_legnth_location
-            else row["LENGTH"]
-        )
-        nml_code.append(
-            f"\t{0 if second_position_in_vehid_chain == 2 else second_position_in_vehid_chain-second_deduct_from_position_in_vehid_chain_location}: {int(float(length_to_use))};"
-            ""
-        )
-    nml_code.append(f"\t{int(float(fallback_length))};\n}}")
+switch(FEAT_TRAINS, SELF, switch_{vid}_length, position_in_vehid_chain % {3 if (length_p2 > 0 and length_p3_wagon > 0) else 2}) {{
+    0: {length_p1_head};""")
+    if length_p2 > 0:
+        nml_code.append(f"""\t1: {length_p2};
+\t{length_p3_wagon};
+}}""")
+    else:
+        nml_code.append(f"""\t{length_p3_wagon};
+}}""")
 
     return "\n".join(nml_code)
 
@@ -355,18 +315,10 @@ def get_switch_position(
     second_item_location: int = None,
     third_item_location: int = None,
     fourth_item_location: int = None,
-    first_item_task: Optional[
-        Literal["spriteset", "spritegroup", "switch", "empty"]
-    ] = None,
-    second_item_task: Optional[
-        Literal["spriteset", "spritegroup", "switch", "empty"]
-    ] = None,
-    third_item_task: Optional[
-        Literal["spriteset", "spritegroup", "switch", "empty"]
-    ] = None,
-    fourth_item_task: Optional[
-        Literal["spriteset", "spritegroup", "switch", "empty"]
-    ] = None,
+    first_item_task: Optional[Literal["spriteset", "spritegroup", "switch", "empty"]] = None,
+    second_item_task: Optional[Literal["spriteset", "spritegroup", "switch", "empty"]] = None,
+    third_item_task: Optional[Literal["spriteset", "spritegroup", "switch", "empty"]] = None,
+    fourth_item_task: Optional[Literal["spriteset", "spritegroup", "switch", "empty"]] = None,
 ) -> str:
     """
     Gets the position switch
@@ -385,42 +337,28 @@ def get_switch_position(
     nml_code.append(
         f"{main_task}(FEAT_TRAINS, SELF, {main_task}_{vid}_position, position_in_vehid_chain % {position_in_vehid_chain}) {{"
     )
-    nml_code.append(
-        f"\t{first_item_location}: {first_item_task}_{vid}_{first_item_word};"
-    )
+    nml_code.append(f"\t{first_item_location}: {first_item_task}_{vid}_{first_item_word};")
     # Logic for the second item
     if second_item_task:
         if second_item_task != "empty":
-            prefix = (
-                f"{second_item_location}: " if second_item_location is not None else ""
-            )
+            prefix = f"{second_item_location}: " if second_item_location is not None else ""
             nml_code.append(f"\t{prefix}{second_item_task}_{vid}_{second_item_word};")
         else:
-            prefix = (
-                f"{second_item_location}: " if second_item_location is not None else ""
-            )
+            prefix = f"{second_item_location}: " if second_item_location is not None else ""
             nml_code.append(f"\t{prefix}EMPTY_SPRITESET")  # no ";"
     if third_item_task:
         if third_item_task != "empty":
-            prefix = (
-                f"{third_item_location}: " if third_item_location is not None else ""
-            )
+            prefix = f"{third_item_location}: " if third_item_location is not None else ""
             nml_code.append(f"\t{prefix}{third_item_task}_{vid}_{third_item_word};")
         else:
-            prefix = (
-                f"{third_item_location}: " if third_item_location is not None else ""
-            )
+            prefix = f"{third_item_location}: " if third_item_location is not None else ""
             nml_code.append(f"\t{prefix}EMPTY_SPRITESET")  # no ";"
     if fourth_item_task:
         if fourth_item_task != "empty":
-            prefix = (
-                f"{fourth_item_location}: " if fourth_item_location is not None else ""
-            )
+            prefix = f"{fourth_item_location}: " if fourth_item_location is not None else ""
             nml_code.append(f"\t{prefix}{fourth_item_task}_{vid}_{fourth_item_word};")
         else:
-            prefix = (
-                f"{fourth_item_location}: " if fourth_item_location is not None else ""
-            )
+            prefix = f"{fourth_item_location}: " if fourth_item_location is not None else ""
             nml_code.append(f"\t{prefix}EMPTY_SPRITESET")  # no ";"
     nml_code.append(f"}}")
 
@@ -449,9 +387,7 @@ switch(FEAT_TRAINS, SELF, switch_{vid}_{switch_what}, [STORE_TEMP({store_value},
 
 
 @scrub_nml_data
-def get_visual_effects_and_power_with_store(
-    *, vid: str, store_value: int, id_range: str
-) -> str:
+def get_visual_effects_and_power_with_store(*, vid: str, store_value: int, id_range: str) -> str:
     visual_effect_type = get_visual_effect_and_powered(vid=vid)
 
     nml_code = f"""
@@ -495,9 +431,7 @@ def get_visual_effect_on_odd_even_position_with_range(
 
     nml_code = f"\n/// Visual Effect"
     nml_code += f"\nswitch(FEAT_TRAINS, SELF, switch_{vid}_visual_effect, position_in_vehid_chain % {position_in_vehid_chain}) {{"
-    first_line = (
-        f"visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER)"
-    )
+    first_line = f"visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER)"
     second_line = f"visual_effect_and_powered(VISUAL_EFFECT_{visual_effect_type}, -3, DISABLE_WAGON_POWER)"
 
     if reverse:
@@ -657,7 +591,7 @@ def get_spriteset(
     template_name_amendment: str,
     spritename_suffix: str = None,
 ) -> str:
-    sprite_suffix = f"_{spritename_suffix}" if spritename_suffix else ""
+    sprite_suffix = f"_{coalesce(spritename_suffix, '')}"
     if template_name_amendment[0] != "_":
         template_name_amendment = "_" + template_name_amendment
 
@@ -728,9 +662,7 @@ def get_spritegroup_with_loading_states(
         # Loading uses everything except the last (driving) sprite
         loading_list = ", ".join(created_sprites[0:-1])
         # Loaded/Driving uses First, Last, Last pattern
-        loaded_list = (
-            f"{created_sprites[0]}, {created_sprites[-1]}, {created_sprites[-1]}"
-        )
+        loaded_list = f"{created_sprites[0]}, {created_sprites[-1]}, {created_sprites[-1]}"
     else:
         # Standard behavior: loading and loaded are identical
         loading_list = ", ".join(created_sprites)
@@ -776,16 +708,12 @@ def get_random_livery_selector(
     :param cargo_string_is_dummy: if cargo=='dummy' (ie there isn't one)
     :param has_loading_states: whether we are using loading states
     """
-    nml_code = (
-        f"\n// Random Livery Selector{' ' + manual_suffix if manual_suffix else ''}"
-    )
+    nml_code = f"\n// Random Livery Selector{' ' + manual_suffix if manual_suffix else ''}"
     nml_code += f" for {cargo_string}" if not cargo_string_is_dummy else ""
     nml_code += f"\nrandom_switch(FEAT_TRAINS, SELF, {selector_name}) {{"
 
     for num in range(1, list_length + 1):
-        weight = (
-            first_chance if num == 1 else int((10 - first_chance) / (list_length - 1))
-        )
+        weight = first_chance if num == 1 else int((10 - first_chance) / (list_length - 1))
         if cargo_string_is_dummy:
             target = (
                 f"spritegroup_{vid}_l{num}"
@@ -840,11 +768,7 @@ def get_tpl_controller(row, copyright_header) -> str:
 
         # 4. Construct the FINAL string here, including the amendment
         # We don't need a list anymore, just a formatted string
-        full_output = (
-            f"{copyright_header}\n\n"
-            f"// Template: TPL_{template_id:02}{amendment}\n"
-            f"{body}"
-        )
+        full_output = f"{copyright_header}\n\n" f"// Template: TPL_{template_id:02}{amendment}\n" f"{body}"
         return full_output
 
     return f"// Error: Template {template_id} not implemented"
@@ -996,9 +920,7 @@ def get_tpl_02(vid, gfx_path, row, template_amendment_code):
 
         for level, val in active_levels.items():
             # Setup Dynamic Suffixes
-            suffix = (
-                f"_{level.lower().replace(' ', '_').replace('-', '_')}" if level else ""
-            )
+            suffix = f"_{level.lower().replace(' ', '_').replace('-', '_')}" if level else ""
 
             # Determine X/Y logic based on Code
             if template_amendment_code == "D":
@@ -1081,11 +1003,7 @@ def get_tpl_02(vid, gfx_path, row, template_amendment_code):
         # This comes here, rather than further down as for whichever other
         cargo_string_is_dummy = False
         cargo_string = "middlepass"
-        selector_name = (
-            f"switch_{vid}_livery"
-            if cargo_string_is_dummy
-            else f"switch_{vid}_{cargo_string}_livery"
-        )
+        selector_name = f"switch_{vid}_livery" if cargo_string_is_dummy else f"switch_{vid}_{cargo_string}_livery"
         nml_code.append(
             get_random_livery_selector(
                 vid=vid,
@@ -1153,9 +1071,7 @@ def get_tpl_02(vid, gfx_path, row, template_amendment_code):
         )
 
     if template_amendment_code in ["A"]:
-        nml_code.append(
-            get_xmu_power_switch_position_based(vid=vid, force_maglev_to_electric=True)
-        )
+        nml_code.append(get_xmu_power_switch_position_based(vid=vid, force_maglev_to_electric=True))
 
         nml_code.append(
             get_switch_cargo_class(
@@ -1185,19 +1101,13 @@ def get_tpl_02(vid, gfx_path, row, template_amendment_code):
     elif template_amendment_code in ["E", "F"]:
         suffix = "_length" if template_amendment_code == "E" else "_livery"
         suffix_fallback = "_length" if template_amendment_code == "E" else ""
-        nml_code.append(
-            get_xmu_power_switch_position_based(
-                vid=vid, panto_pos=row["PANTOGRAPH_POSITION"]
-            )
-        )
+        nml_code.append(get_xmu_power_switch_position_based(vid=vid, panto_pos=row["PANTOGRAPH_POSITION"]))
         nml_code.append(
             get_switch_cargo_class(
                 vid=vid,
                 # fk me sideways.
                 task="switch",
-                fallback_task=(
-                    "spriteset" if template_amendment_code == "F" else "switch"
-                ),
+                fallback_task=("spriteset" if template_amendment_code == "F" else "switch"),
                 bitmask_label="CC_PASSENGERS",
                 spriteset_suffix=f"middlepass{suffix}",
                 spriteset_suffix_fallback=f"middlemail{suffix_fallback}",
@@ -1205,9 +1115,7 @@ def get_tpl_02(vid, gfx_path, row, template_amendment_code):
         )
 
     elif template_amendment_code in ["G"]:
-        nml_code.append(
-            get_xmu_power_switch_position_based(vid=vid, force_maglev_to_electric=True)
-        )
+        nml_code.append(get_xmu_power_switch_position_based(vid=vid, force_maglev_to_electric=True))
 
         # Unsure we really need this..and yes it's middlepass x2
         nml_code.append(
@@ -1386,12 +1294,14 @@ def get_tpl_03(vid, gfx_path, row, template_amendment_code):
         )
 
     elif template_amendment_code == "D":
-        nml_code.append(
-            f"{get_visual_effect_on_odd_even_position(vid=vid,  position_in_vehid_chain=2)}"
-        )
-        nml_code.append(
-            f"{get_switch_length(vid=vid, row=row, first_deduct_from_position_in_vehid_chain_location=2, first_position_in_vehid_chain=2)}"
-        )
+        nml_code.append(f"{get_visual_effect_on_odd_even_position(
+                vid=vid,  
+                position_in_vehid_chain=2
+            )}")
+        nml_code.append(f"{get_switch_length(
+                vid=vid, 
+                row=row, 
+            )}")
         nml_code.append(f"{get_articulated_return(vid=vid, endvalue=1)}")
 
     if template_amendment_code in ["A"]:
@@ -1409,15 +1319,11 @@ def get_tpl_03(vid, gfx_path, row, template_amendment_code):
             )
         )
 
-        nml_code.append(
-            get_visual_effect_on_odd_even_position(vid=vid, position_in_vehid_chain=2)
-        )
+        nml_code.append(get_visual_effect_on_odd_even_position(vid=vid, position_in_vehid_chain=2))
         nml_code.append(
             get_switch_length(
                 vid=vid,
                 row=row,
-                first_deduct_from_position_in_vehid_chain_location=2,
-                first_position_in_vehid_chain=2,
             )
         )
         nml_code.append(get_articulated_return(vid=vid, endvalue=1))
@@ -1445,16 +1351,11 @@ def get_tpl_03(vid, gfx_path, row, template_amendment_code):
                 deduct_from_position_for_first_return=3,
             )
         )
+
         nml_code.append(
             get_switch_length(
                 vid=vid,
                 row=row,
-                first_position_in_vehid_chain=3,
-                first_deduct_from_position_in_vehid_chain_location=3,
-                second_position_in_vehid_chain=3,
-                second_deduct_from_position_in_vehid_chain_location=1,
-                second_deduct_from_legnth_location=1,
-                fallback_length_defined=2,
             )
         )
         nml_code.append(get_articulated_return(vid=vid, endvalue=2))
@@ -1490,9 +1391,7 @@ def get_tpl_04(vid, gfx_path, row, template_amendment_code):
     nml_code = []
 
     # 1. Header & Purchase
-    if (
-        template_amendment_code in ["A", "B", "S", "U"] and "coach" in vid
-    ):  # re-templated coaches
+    if template_amendment_code in ["A", "B", "S", "U"] and "coach" in vid:  # re-templated coaches
         nml_code.append(
             get_purchase(
                 vid=vid,
@@ -1635,9 +1534,7 @@ def get_tpl_04(vid, gfx_path, row, template_amendment_code):
     ]
     has_first_or_last_carriage_state = template_amendment_code in ["S"]
     has_driving_states = template_amendment_code in ["L", "N", "Q"]
-    has_reverse_state = template_amendment_code in ["A", "U"] and is_true(
-        row["HAS_CAB"]
-    )
+    has_reverse_state = template_amendment_code in ["A", "U"] and is_true(row["HAS_CAB"])
 
     cargo_with_driving_state = ["grain"]
     states = {1: 1}
@@ -1673,16 +1570,8 @@ def get_tpl_04(vid, gfx_path, row, template_amendment_code):
                 s_suffix: str = ""
                 s_suffix += f"{cargo_string}" if not cargo_string_is_dummy else ""
                 s_suffix += f"{'_' if not cargo_string_is_dummy else ''}L{livery_num}"
-                s_suffix += (
-                    f"_s{state_num}"
-                    if (has_loading_states or has_first_or_last_carriage_state)
-                    else ""
-                )
-                s_suffix += (
-                    f"_dt_{direction_states.get(state_num, '')}"
-                    if has_reverse_state
-                    else ""
-                )
+                s_suffix += f"_s{state_num}" if (has_loading_states or has_first_or_last_carriage_state) else ""
+                s_suffix += f"_dt_{direction_states.get(state_num, '')}" if has_reverse_state else ""
 
                 comment = f"Livery {livery_num}"
                 if has_loading_states:
@@ -1697,11 +1586,7 @@ def get_tpl_04(vid, gfx_path, row, template_amendment_code):
                 )
                 comment += f" - {cargo_string}" if not cargo_string_is_dummy else ""
 
-                if (
-                    cargo_string_is_dummy
-                    or has_reverse_state
-                    or has_first_or_last_carriage_state
-                ):
+                if cargo_string_is_dummy or has_reverse_state or has_first_or_last_carriage_state:
                     nml_code.append(
                         get_spriteset(
                             vid=vid,
@@ -1751,9 +1636,7 @@ def get_tpl_04(vid, gfx_path, row, template_amendment_code):
                 pass
             else:
                 selector_name = (
-                    f"switch_{vid}_livery"
-                    if cargo_string_is_dummy
-                    else f"switch_{vid}_{cargo_string}_livery"
+                    f"switch_{vid}_livery" if cargo_string_is_dummy else f"switch_{vid}_{cargo_string}_livery"
                 )
                 nml_code.append(
                     get_random_livery_selector(
@@ -2091,11 +1974,7 @@ switch(FEAT_TRAINS, SELF, switch_{vid}_cargo_selection, cargo_type_in_veh) {{
 
     elif has_reverse_state or has_first_or_last_carriage_state:
         if template_amendment_code in ["A"]:
-            selector_name = (
-                f"switch_{vid}_livery"
-                if cargo_string_is_dummy
-                else f"switch_{vid}_{cargo_string}_livery"
-            )
+            selector_name = f"switch_{vid}_livery" if cargo_string_is_dummy else f"switch_{vid}_{cargo_string}_livery"
 
             for _, direction_state in direction_states.items():
                 nml_code.append(
@@ -2168,11 +2047,7 @@ switch(FEAT_TRAINS, SELF, switch_{vid}_position_check, position_in_vehid_chain) 
 
         elif template_amendment_code in ["U"]:
 
-            selector_name = (
-                f"switch_{vid}_livery"
-                if cargo_string_is_dummy
-                else f"switch_{vid}_{cargo_string}_livery"
-            )
+            selector_name = f"switch_{vid}_livery" if cargo_string_is_dummy else f"switch_{vid}_{cargo_string}_livery"
 
             nml_code.append(f"""            
 // Driving backwards switch
@@ -2244,9 +2119,7 @@ def get_tpl_16(vid, gfx_path, row, template_amendment_code):
     )
 
     if template_amendment_code == "A":
-        nml_code.append(
-            get_visual_effect_on_odd_even_position(vid=vid, position_in_vehid_chain=2)
-        )
+        nml_code.append(get_visual_effect_on_odd_even_position(vid=vid, position_in_vehid_chain=2))
 
     nml_code.append(get_switch_length(vid=vid, row=row))
 
@@ -2276,11 +2149,7 @@ def get_tpl_17(vid, gfx_path, row, template_amendment_code):
     elif template_amendment_code == "D":
         purchase_y_coord = 192
 
-    nml_code.append(
-        get_purchase(
-            vid=vid, gfx_path=gfx_path, purchase_x=1, purchase_y=purchase_y_coord
-        )
-    )
+    nml_code.append(get_purchase(vid=vid, gfx_path=gfx_path, purchase_x=1, purchase_y=purchase_y_coord))
 
     # 2. Coordinate Mapping
     if template_amendment_code in ["A"]:
@@ -2349,13 +2218,11 @@ def get_tpl_17(vid, gfx_path, row, template_amendment_code):
             )
         )
 
-        nml_code.append(
-            get_visual_effect_on_odd_even_position(vid=vid, position_in_vehid_chain=2)
-        )
+        nml_code.append(get_visual_effect_on_odd_even_position(vid=vid, position_in_vehid_chain=2))
 
         nml_code.append(get_articulated_return(vid=vid, endvalue=1))
 
-    elif template_amendment_code == "B":
+    elif template_amendment_code in ["B"]:
         # Yes the order of things here is a little odd.
         nml_code.append(
             get_switch_position(
@@ -2393,16 +2260,12 @@ def get_tpl_17(vid, gfx_path, row, template_amendment_code):
             get_motion_counter(
                 vid=vid,
                 switch_name_suffix="animation_front",
-                state_0=(
-                    "front1" if template_amendment_code != "E" else "front_1"
-                ),  # underline!
-                state_default=(
-                    "front2" if template_amendment_code != "E" else "front_2"
-                ),  # underline!
+                state_0=("front1" if template_amendment_code != "E" else "front_1"),  # underline!
+                state_default=("front2" if template_amendment_code != "E" else "front_2"),  # underline!
             )
         )
 
-        if template_amendment_code == "D":
+        if template_amendment_code in ["D"]:
             nml_code.append(
                 get_motion_counter(
                     vid=vid,
@@ -2416,16 +2279,12 @@ def get_tpl_17(vid, gfx_path, row, template_amendment_code):
             get_motion_counter(
                 vid=vid,
                 switch_name_suffix="animation_back",
-                state_0=(
-                    "back1" if template_amendment_code != "E" else "back_1"
-                ),  # underline!
-                state_default=(
-                    "back2" if template_amendment_code != "E" else "back_2"
-                ),  # underline!
+                state_0=("back1" if template_amendment_code != "E" else "back_1"),  # underline!
+                state_default=("back2" if template_amendment_code != "E" else "back_2"),  # underline!
             )
         )
 
-        if template_amendment_code == "C":
+        if template_amendment_code in ["C"]:
             nml_code.append(
                 get_switch_position(
                     vid=vid,
@@ -2441,7 +2300,7 @@ def get_tpl_17(vid, gfx_path, row, template_amendment_code):
                     third_item_word="animation_back",
                 )
             )
-        elif template_amendment_code == "D":
+        elif template_amendment_code in ["D"]:
             nml_code.append(
                 get_switch_position(
                     vid=vid,
@@ -2458,7 +2317,7 @@ def get_tpl_17(vid, gfx_path, row, template_amendment_code):
                 )
             )
 
-        elif template_amendment_code == "E":
+        elif template_amendment_code in ["E"]:
             nml_code.append(
                 get_switch_position(
                     vid=vid,
@@ -2472,22 +2331,16 @@ def get_tpl_17(vid, gfx_path, row, template_amendment_code):
                 )
             )
 
-        if template_amendment_code == "C":
-            nml_code.append(
-                get_visual_effect_on_odd_even_position(
-                    vid=vid, position_in_vehid_chain=3
-                )
-            )
+        if template_amendment_code in ["C"]:
+            nml_code.append(get_visual_effect_on_odd_even_position(vid=vid, position_in_vehid_chain=3))
             nml_code.append(
                 get_switch_length(
                     vid=vid,
                     row=row,
-                    first_deduct_from_position_in_vehid_chain_location=1,
-                    first_position_in_vehid_chain=3,
                 )
             )
             nml_code.append(get_articulated_return(vid=vid, endvalue=2))
-        elif template_amendment_code == "D":
+        elif template_amendment_code in ["D"]:
             nml_code.append(
                 get_visual_effect_on_odd_even_position(
                     vid=vid,
@@ -2499,13 +2352,10 @@ def get_tpl_17(vid, gfx_path, row, template_amendment_code):
                 get_switch_length(
                     vid=vid,
                     row=row,
-                    first_deduct_from_position_in_vehid_chain_location=2,
-                    first_position_in_vehid_chain=3,
-                    first_force_location=6,
                 )
             )
             nml_code.append(get_articulated_return(vid=vid, endvalue=2))
-        elif template_amendment_code == "E":
+        elif template_amendment_code in ["E"]:
             nml_code.append(
                 get_visual_effect_on_odd_even_position(
                     vid=vid,
@@ -2517,8 +2367,6 @@ def get_tpl_17(vid, gfx_path, row, template_amendment_code):
                 get_switch_length(
                     vid=vid,
                     row=row,
-                    first_deduct_from_position_in_vehid_chain_location=2,
-                    first_position_in_vehid_chain=2,
                 )
             )
             nml_code.append(get_articulated_return(vid=vid, endvalue=1))
@@ -2667,9 +2515,7 @@ def get_tpl_32(vid, gfx_path, row, template_amendment_code):
     purchase_y = 128
 
     nml_code = []
-    nml_code.append(
-        get_purchase(vid=vid, gfx_path=gfx_path, purchase_x=1, purchase_y=purchase_y)
-    )
+    nml_code.append(get_purchase(vid=vid, gfx_path=gfx_path, purchase_x=1, purchase_y=purchase_y))
 
     extra_comment = f"""
 //// This vehicle uses the template for length 10.
@@ -2750,31 +2596,13 @@ def get_tpl_32(vid, gfx_path, row, template_amendment_code):
         )
 
     if template_amendment_code in ["B", "C"]:
-        nml_code.append(
-            get_switch_length(
-                vid=vid,
-                row=row,
-                first_deduct_from_position_in_vehid_chain_location=deduct_from_position_for_first_return,
-                first_position_in_vehid_chain=position_in_vehid_chain,
-            )
-        )
+        nml_code.append(get_switch_length(vid=vid, row=row))
 
     if template_amendment_code in ["A", "D"]:
         nml_code.append(
             get_switch_length(
                 vid=vid,
                 row=row,
-                first_deduct_from_position_in_vehid_chain_location=deduct_from_position_for_first_return,
-                first_position_in_vehid_chain=position_in_vehid_chain,
-                second_deduct_from_position_in_vehid_chain_location=(
-                    deduct_from_position_for_second_return
-                    if template_amendment_code == "A"
-                    else None
-                ),
-                second_position_in_vehid_chain=(
-                    position_in_vehid_chain if template_amendment_code == "A" else None
-                ),
-                fallback_length_defined=f"{row['WAGON_LENGTH']}",
             )
         )
 
@@ -2844,25 +2672,15 @@ def get_tpl_42(vid, gfx_path, row, template_amendment_code):
                         final_y = 1  # Force 1 for the very first row
 
                     s_suffix = ""
-                    s_suffix += (
-                        f"{position_string}" if not position_string_is_dummy else ""
-                    )
-                    s_suffix += (
-                        f"{'_' if not position_string_is_dummy else ''}L{livery_num}"
-                    )
+                    s_suffix += f"{position_string}" if not position_string_is_dummy else ""
+                    s_suffix += f"{'_' if not position_string_is_dummy else ''}L{livery_num}"
                     s_suffix += f"_s{state_num}" if has_loading_states else ""
                     s_suffix = s_suffix.lower()
 
                     comment = ""
-                    comment += (
-                        f"{position_string.upper()}"
-                        if not position_string_is_dummy
-                        else "N/A"
-                    )
+                    comment += f"{position_string.upper()}" if not position_string_is_dummy else "N/A"
                     comment += f" - Livery {livery_num}"
-                    comment += (
-                        f" - Loading State {state_num}" if has_loading_states else ""
-                    )
+                    comment += f" - Loading State {state_num}" if has_loading_states else ""
 
                     nml_code.append(
                         get_spriteset(
@@ -2894,9 +2712,7 @@ def get_tpl_42(vid, gfx_path, row, template_amendment_code):
 
             # 3. Livery Selector (Random Switch)
             selector_name = (
-                f"switch_{vid}_livery"
-                if position_string_is_dummy
-                else f"switch_{vid}_{position_string}_livery"
+                f"switch_{vid}_livery" if position_string_is_dummy else f"switch_{vid}_{position_string}_livery"
             )
             nml_code.append(
                 get_random_livery_selector(
@@ -3045,21 +2861,17 @@ def generate_graphics_pnml():
 
     # 2. Merge roster and track_types
     # We use suffixes=('', '_dup') to handle any overlapping columns gracefully
-    df_master = df_master.merge(
-        df_roster, on="VEHIDCODE", how="left", suffixes=("", "_roster")
-    )
-    df_master = df_master.merge(
-        df_tracks, on="VEHIDCODE", how="left", suffixes=("", "_tracks")
-    )
+    df_master = df_master.merge(df_roster, on="VEHIDCODE", how="left", suffixes=("", "_roster"))
+    df_master = df_master.merge(df_tracks, on="VEHIDCODE", how="left", suffixes=("", "_tracks"))
 
     # 3. Merge graphics properties
-    df_master = df_master.merge(
-        df_gfx_props, on="VEHIDCODE", how="left", suffixes=("", "_gfx")
-    )
+    df_master = df_master.merge(df_gfx_props, on="VEHIDCODE", how="left", suffixes=("", "_gfx"))
 
     # Final cleanup: Replace NaN in track columns with False
     track_cols = [c for c in df_master.columns if c.startswith("TRACK_TYPE_")]
     df_master[track_cols] = df_master[track_cols].fillna(False)
+
+    df_master["LENGTH_P2"] = df_master["LENGTH_P2"].fillna(0)
 
     min_templateID = 1
     max_templateID = 42
@@ -3067,11 +2879,7 @@ def generate_graphics_pnml():
     print(f"Starting generation for {len(df_master)} vehicles...")
 
     for _, row in df_master.iterrows():
-        if (
-            row["VEHIDCODE"] == ""
-            or isinstance(row["TEMPLATE_ID"], float)
-            or is_true(row["EXCLUDE"])
-        ):
+        if row["VEHIDCODE"] == "" or isinstance(row["TEMPLATE_ID"], float) or is_true(row["EXCLUDE"]):
             continue
 
         copyright_header = df_copyright.columns[0] if not df_gfx_props.empty else ""
@@ -3079,11 +2887,7 @@ def generate_graphics_pnml():
 
         if min_templateID <= template_id_int <= max_templateID:
             # Prepare file path and content
-            file_path = (
-                Path(project_root)
-                / row["SAVE_TO"]
-                / f"{row['FILENAMES_EXPECTED']}_graphics.pnml"
-            )
+            file_path = Path(project_root) / row["SAVE_TO"] / f"{row['FILENAMES_EXPECTED']}_graphics.pnml"
             nml_code = get_tpl_controller(row, copyright_header)
             new_content = "".join(nml_code) if isinstance(nml_code, list) else nml_code
 
@@ -3091,10 +2895,7 @@ def generate_graphics_pnml():
             file_path.parent.mkdir(parents=True, exist_ok=True)
 
             # Overwrite only if file doesn't exist or content has changed
-            if (
-                not file_path.exists()
-                or file_path.read_text(encoding="utf-8") != new_content
-            ):
+            if not file_path.exists() or file_path.read_text(encoding="utf-8") != new_content:
                 file_path.write_text(new_content, encoding="utf-8")
 
     print("Success: PNML graphics files generated based on Excel tables.")

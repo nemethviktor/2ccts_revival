@@ -2,7 +2,7 @@
 
 # Hardcoded Strings
 STR_GRF_NAME                                                      :{TITLE}
-STR_GRF_DESCRIPTION                                               :{SILVER}2cc Trains of the World in NML {}{}(c)2ccts Revival {}License GPLv2 or higher. {}See readme for details.{}{SILVER}Build: 2026-09-11-18:51:57
+STR_GRF_DESCRIPTION                                               :{SILVER}2cc Trains of the World in NML {}{}(c)2ccts Revival {}License GPLv2 or higher. {}See readme for details.{}{SILVER}Build: 2026-09-12-11:41:12
 STR_GRF_URL                                                       :https://github.com/nemethviktor/2ccts_revival
 STR_USED_WITH_DYNAMIC_ENGINES                                     :dynamic_engines = true (setting in openttd.cfg)
 STR_ERROR_REGION                                                  :No regions enabled, {STRING} has been disabled
@@ -1427,6 +1427,7 @@ str_steam_babcock_4_6_2_2_6_4t_462                                :Babcock 4-6-2
 str_steam_koechlin_0_6_0_030                                      :Koechlin 0-6-0 '030' (Steam)
 str_steam_hanomag_alco_4_8_0_240                                  :Hanomag/ALCO 4-8-0 '240' (Steam)
 str_steam_sharp_2_2_2_patriot                                     :Sharp Brothers 2-2-2 'Patriot' (Steam)
+str_steam_tours_chapelon_2_12_0_160a                              :Tours/Chapelon 2-12-0 SNCF 160A (Steam)
 
 # Steamrailbus
 str_rbs_komarek_nolb_1                                            :Komarek NOLB 1 (Steam Railbus)

@@ -43,7 +43,7 @@ item(FEAT_TRAINS, item_steam_beyer__p___co__4_8_2_2_8_4_7550_7552) {
 
         sprite_id: SPRITE_ID_NEW_TRAIN;
         dual_headed: 0;
-        length: 5;
+        length: 4;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 

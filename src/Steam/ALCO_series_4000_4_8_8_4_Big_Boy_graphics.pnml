@@ -40,8 +40,8 @@ switch(FEAT_TRAINS, SELF, switch_steam_alco_series_4000_4_8_8_4_big_boy_visual_e
 /// Length
 switch(FEAT_TRAINS, SELF, switch_steam_alco_series_4000_4_8_8_4_big_boy_length, position_in_vehid_chain % 3) {
     0: 8;
-	2: 7;
-	2;
+	1: 2;
+	7;
 }
 
 /// Articulated Return

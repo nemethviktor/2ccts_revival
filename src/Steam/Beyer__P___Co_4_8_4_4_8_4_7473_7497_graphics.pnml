@@ -52,7 +52,8 @@ switch(FEAT_TRAINS, SELF, switch_steam_beyer__p___co_4_8_4_4_8_4_7473_7497_visua
 
 /// Length
 switch(FEAT_TRAINS, SELF, switch_steam_beyer__p___co_4_8_4_4_8_4_7473_7497_length, position_in_vehid_chain % 3) {
-    2: 4;
+    0: 4;
+	1: 4;
 	4;
 }
 

@@ -6,10 +6,6 @@
 // Template: TPL_03A.
 // Data from: https://en.wikipedia.org/wiki/%C3%89tat_140-101_to_140-370
 
-// Notes:
-//// ACTUAL_LENGTH: 11 -- 7+4
-
-
 item(FEAT_TRAINS, item_steam_schneider_et_cie_140c) {
     property {
         name: string(str_steam_schneider_et_cie_140c);
