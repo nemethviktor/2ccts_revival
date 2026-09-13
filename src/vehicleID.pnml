@@ -1670,7 +1670,7 @@ item(FEAT_TRAINS, item_steam_babcock_4_6_2_2_6_4t_462, 4150) {}
 item(FEAT_TRAINS, item_steam_koechlin_0_6_0_030, 4151) {}
 item(FEAT_TRAINS, item_steam_hanomag_alco_4_8_0_240, 4152) {}
 item(FEAT_TRAINS, item_steam_sharp_2_2_2_patriot, 4153) {}
-// 4154 free
+item(FEAT_TRAINS, item_steam_tours_chapelon_2_12_0_160a, 4154) {}
 // 4155 free
 // 4156 free
 // 4157 free

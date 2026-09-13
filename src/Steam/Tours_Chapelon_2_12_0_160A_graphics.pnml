@@ -1,0 +1,52 @@
+//  Copyright (C) 2017 Transportman // V. Nemeth 2026+
+//  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
+
+// Template: TPL_03G
+
+// PURCHASE
+spriteset(spriteset_steam_tours_chapelon_2_12_0_160a_purchase, "gfx/steam/tours_chapelon_2_12_0_160a.png") {template_purchase(1, 192)}
+
+
+// VEHICLE
+/// Engine1
+spriteset(spriteset_steam_tours_chapelon_2_12_0_160a_engine1, "gfx/steam/tours_chapelon_2_12_0_160a.png") {template_2cc_l12(1, 1)}
+
+
+/// Engine2
+spriteset(spriteset_steam_tours_chapelon_2_12_0_160a_engine2, "gfx/steam/tours_chapelon_2_12_0_160a.png") {template_2cc_l12(1, 64)}
+
+
+/// Tender
+spriteset(spriteset_steam_tours_chapelon_2_12_0_160a_tender, "gfx/steam/tours_chapelon_2_12_0_160a.png") {template_2cc_l12(1, 128)}
+
+
+/// Animation states (animation)
+switch(FEAT_TRAINS, SELF, switch_steam_tours_chapelon_2_12_0_160a_animation, motion_counter % 2){
+	0: spriteset_steam_tours_chapelon_2_12_0_160a_engine1;
+	spriteset_steam_tours_chapelon_2_12_0_160a_engine2;
+}
+switch(FEAT_TRAINS, SELF, switch_steam_tours_chapelon_2_12_0_160a_position, position_in_vehid_chain % 3) {
+	0: switch_steam_tours_chapelon_2_12_0_160a_animation;
+	2: spriteset_steam_tours_chapelon_2_12_0_160a_tender;
+	EMPTY_SPRITESET
+}
+
+/// Visual Effect
+switch(FEAT_TRAINS, SELF, switch_steam_tours_chapelon_2_12_0_160a_visual_effect, position_in_vehid_chain % 3) {
+	0: return visual_effect_and_powered(VISUAL_EFFECT_STEAM, -3, DISABLE_WAGON_POWER);
+	return visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+/// Length
+switch(FEAT_TRAINS, SELF, switch_steam_tours_chapelon_2_12_0_160a_length, position_in_vehid_chain % 3) {
+    0: 6;
+	1: 3;
+	5;
+}
+
+/// Articulated Return
+/// extra_callback_info1 is the index of the part being added.
+switch(FEAT_TRAINS, SELF, switch_steam_tours_chapelon_2_12_0_160a_articulated, extra_callback_info1) {
+    1..2: return item_steam_tours_chapelon_2_12_0_160a;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}

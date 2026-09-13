@@ -972,6 +972,7 @@
 | ![Islington Railway Workshops 81-92 520](vehicle_graphics/str_steam_islington_railway_workshops_81_92_520.png) | Islington Railway Workshops 81-92 520 | 1943 | 112 / 69 | 2600 / 1938 | Heavy Freight | 0 | BROAD_NONE | Oceania | No |
 | ![North British Lb 2-10-0](vehicle_graphics/str_steam_north_british_lb_2_10_0.png) | North British Lb 2-10-0 | 1943 | 75 / 46 | 1600 / 1192 | Light Freight | 0 | STANDARD_NONE | Southern Europe | No |
 | ![ALCO 2-8-0 74707-74785 'Type 29'](vehicle_graphics/str_steam_alco_2_8_0_74707_74785_type_29.png) | ALCO 2-8-0 74707-74785 'Type 29' | 1945 | 96 / 59 | 1970 / 1468 | Universal | 0 | STANDARD_NONE | Western Europe | No |
+| ![Tours/Chapelon 2-12-0 SNCF 160A](vehicle_graphics/str_steam_tours_chapelon_2_12_0_160a.png) | Tours/Chapelon 2-12-0 SNCF 160A | 1946 | 100 / 62 | 2713 / 2022 | Freight | 0 | STANDARD_NONE | Western Europe | No |
 | ![Vulcan Foundry 2-8-0 'Liberation'](vehicle_graphics/str_steam_vulcan_foundry_2_8_0_liberation.png) | Vulcan Foundry 2-8-0 'Liberation' | 1946 | 80 / 49 | 1857 / 1384 | Heavy Freight | 0 | STANDARD_NONE | Eastern Europe | No |
 | ![Doncaster/Darlington 'Peppercorn'](vehicle_graphics/str_steam_doncaster_darlington_peppercorn.png) | Doncaster/Darlington 'Peppercorn' | 1948 | 160 / 99 | 2400 / 1789 | Express | 0 | STANDARD_NONE | Northern Europe | No |
 | ![Kisha Seizo 2-10-4T E10](vehicle_graphics/str_steam_kisha_seizo_2_10_4t_e10.png) | Kisha Seizo 2-10-4T E10 | 1948 | 65 / 40 | 1340 / 999 | Light Freight | 0 | NARROW_NONE | Asia | No |

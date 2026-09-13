@@ -13,7 +13,8 @@
 - VEHICLES ADDS:
   - `Siemens Vectron MS`
   - `Siemens Vectron DE`
-  - `Siemens Vectron Dual Mode`  
+  - `Siemens Vectron Dual Mode`
+  - `Tours/Chapelon 2-12-0 SNCF 160A`
 - VEHICLES CHANGES:
   - Various visual-only sprite changes.
   - Vehicle running costs have been re-balanced. Generally wagons and coaches have been a lot less expensive than before but as a counterbalance locos are now more expensive to run based on actual performance values specific to propulsion type.

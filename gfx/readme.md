@@ -304,3 +304,4 @@ Note: "b/o" = "based on"
 - Stephenson_BP_2_2_2_LVCI_Class_1 b/o Le Belge
 - William_Fairbairn_2_2_2_Baroneza b/o Le Belge
 - Yorkshire_Engine_Co__4_8_4T_Nitrate_101 b/o NZR X Class
+- Tours/Chapelon 2-12-0 SNCF 160A b/o ANF/DEL 150B

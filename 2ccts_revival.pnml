@@ -2886,6 +2886,9 @@
 #include "src/Steam/Sharp_2_2_2_Patriot_graphics.pnml"
 #include "src/Steam/Sharp_2_2_2_Patriot_item.pnml"
 
+#include "src/Steam/Tours_Chapelon_2_12_0_160A_graphics.pnml"
+#include "src/Steam/Tours_Chapelon_2_12_0_160A_item.pnml"
+
 
 //// WAGONS_MAGLEV - GEN7M
 #include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Flatcar_graphics.pnml"
