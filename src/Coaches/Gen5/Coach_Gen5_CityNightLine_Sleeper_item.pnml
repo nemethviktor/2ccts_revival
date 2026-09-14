@@ -4,7 +4,6 @@
 
 
 // Template: TPL_04A.
-// Data from: nan
 
 item(FEAT_TRAINS, item_mu_coach_gen5_citynightline_sleeper) {
     property {

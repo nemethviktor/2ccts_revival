@@ -37,24 +37,9 @@ flowchart TD
     WagonType{"Wagon Subtype?"}
     TPL_01F["TPL_01F"]
     TPL_25["TPL_25"]
-    TPL_04R["TPL_04R"]
-    TPL_04T["TPL_04T"]
     CargoWagon{"Specific Cargo or Gen?"}
-    TPL_04C["TPL_04C"]
-    TPL_04D["TPL_04D"]
-    TPL_04E["TPL_04E"]
-    TPL_04F["TPL_04F"]
-    TPL_04G["TPL_04G"]
-    TPL_04H["TPL_04H"]
-    TPL_04I["TPL_04I"]
-    TPL_04J["TPL_04J"]
-    TPL_04K["TPL_04K"]
-    TPL_04L["TPL_04L"]
-    TPL_04M["TPL_04M"]
-    TPL_04N["TPL_04N"]
-    TPL_04O["TPL_04O"]
-    TPL_04P["TPL_04P"]
-    TPL_04Q["TPL_04Q"]
+    TPL_04A["TPL_04A"]
+    TPL_04B["TPL_04B"]
 
     CoachType{"Coach Setup?"}
     TPL_04U["TPL_04U"]
@@ -114,26 +99,10 @@ flowchart TD
 
     WagonType --> TPL_01F
     WagonType --> TPL_25
-    WagonType --> TPL_04R
-    WagonType --> TPL_04T
     WagonType --> CargoWagon
 
-    CargoWagon --> TPL_04C
-    CargoWagon --> TPL_04D
-    CargoWagon --> TPL_04E
-    CargoWagon --> TPL_04F
-    CargoWagon --> TPL_04G
-    CargoWagon --> TPL_04H
-    CargoWagon --> TPL_04I
-    CargoWagon --> TPL_04J
-    CargoWagon --> TPL_04K
-    CargoWagon --> TPL_04L
-    CargoWagon --> TPL_04M
-    CargoWagon --> TPL_04N
-    CargoWagon --> TPL_04O
-    CargoWagon --> TPL_04P
-    CargoWagon --> TPL_04Q
-
+    CargoWagon --> TPL_04A
+    CargoWagon --> TPL_04B
     CoachType --> TPL_04U
     CoachType --> TPL_04A
     CoachType --> TPL_04B
@@ -173,28 +142,8 @@ Most **Metros** will be `TPL_02C`.
 - `03F` -> Asymmetrical single-unit engines NOT A/B, Single NOT articulated (2nd item will flip/reverse)
 - `03G` -> Same as A but 12 length
 
-For **Wagons**, it's a little chaotic because there are 'simple' (`TPL_01F`) ones with no loading states, then ones with liveries (`TPL_04A`) + loading states (`TPL_04B`) and ones _with liveries + loading states + different sprites per cargo type_
-
-- Box Car Type 1 -> `TPL_04C` (but not Gen 2/3/4 Type 2)
-- Box Car Type 2 -> `TPL_04D` (but not Gen 2/3/4 Type 2)
-- Centerbeam -> `TPL_04E`
-- Container-Carrier -> `TPL_04F`
-- Container-Doublestack -> `TPL_04G`
-- Hopper Types 1/2 -> `TPL_04H`
-- Flatcar/Flat Wagon -> `TPL_04I`
-- Tanker Non-2nd Gen -> `TPL_04J`
-- Tanker 2nd Gen -> `TPL_04K`
-- Open Wagon Gen2/Gen3 -> `TPL_04L` - This has 'Driving State' for GRAIN only
-- Box Car Gen3/4 Type 2 -> `TPL_04M`
-- Gondola -> `TPL_04N` - This has 'Driving State' for GRAIN only
-- Heavy Flatcar -> `TPL_04O`
-- Box Car Gen2 Type 2 -> `TPL_04P`
-- Superheavy -> `TPL_25` - [not 04x] This has Front/Back/Middle/Articulated + Loading states
-- Open Wagon Gen1 -> `TPL_04Q`
-- Service Cars -> `TPL_04R`
-- ~DC/Push-Pull~ Unused -> `TPL_04S`
-- Livestock _only_ wagon -> `TPL_04T`
-- Basic Coach Push-Pull and also not Push-Pull -> `TPL_04U`
+For **Wagons**, it's a little chaotic because there are 'simple' (`TPL_01F`) ones with no loading states, then ones with liveries (`TPL_04A`) + loading states (`TPL_04B`). 
+Basic Coach Push-Pull and also not Push-Pull -> `TPL_04U`.
 
 Basically don't create new types of Wagons. At the moment Gen 6/7 use G5 graphics, it'd be awesome if someone updated those but don't reinvent the wheel please.
 

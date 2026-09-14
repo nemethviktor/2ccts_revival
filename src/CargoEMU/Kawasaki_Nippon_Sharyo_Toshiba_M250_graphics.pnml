@@ -21,8 +21,16 @@ spriteset(spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_engine1_s3, "gf
 
 /// LIVERY 1 SPRITEGROUP - ENGINE1
 spritegroup spritegroup_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_engine1_l1 {
-    loading: [spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_engine1_s1, spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_engine1_s2, spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_engine1_s3];
-    loaded: [spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_engine1_s1, spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_engine1_s2, spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_engine1_s3];
+    loading: [
+	spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_engine1_s1,
+	spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_engine1_s2,
+	spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_engine1_s3
+];
+    loaded: [
+	spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_engine1_s1,
+	spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_engine1_s2,
+	spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_engine1_s3
+];
 }
 
 /// ENGINE2 STATE 1
@@ -39,8 +47,16 @@ spriteset(spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_engine2_s3, "gf
 
 /// LIVERY 1 SPRITEGROUP - ENGINE2
 spritegroup spritegroup_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_engine2_l1 {
-    loading: [spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_engine2_s1, spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_engine2_s2, spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_engine2_s3];
-    loaded: [spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_engine2_s1, spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_engine2_s2, spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_engine2_s3];
+    loading: [
+	spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_engine2_s1,
+	spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_engine2_s2,
+	spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_engine2_s3
+];
+    loaded: [
+	spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_engine2_s1,
+	spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_engine2_s2,
+	spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_engine2_s3
+];
 }
 
 /// ENGINE1 REV STATE 1
@@ -57,8 +73,16 @@ spriteset(spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_engine1_rev_s3,
 
 /// LIVERY 1 SPRITEGROUP - ENGINE1_REV
 spritegroup spritegroup_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_engine1_rev_l1 {
-    loading: [spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_engine1_rev_s1, spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_engine1_rev_s2, spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_engine1_rev_s3];
-    loaded: [spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_engine1_rev_s1, spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_engine1_rev_s2, spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_engine1_rev_s3];
+    loading: [
+	spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_engine1_rev_s1,
+	spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_engine1_rev_s2,
+	spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_engine1_rev_s3
+];
+    loaded: [
+	spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_engine1_rev_s1,
+	spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_engine1_rev_s2,
+	spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_engine1_rev_s3
+];
 }
 
 /// ENGINE2 REV STATE 1
@@ -75,8 +99,16 @@ spriteset(spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_engine2_rev_s3,
 
 /// LIVERY 1 SPRITEGROUP - ENGINE2_REV
 spritegroup spritegroup_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_engine2_rev_l1 {
-    loading: [spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_engine2_rev_s1, spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_engine2_rev_s2, spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_engine2_rev_s3];
-    loaded: [spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_engine2_rev_s1, spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_engine2_rev_s2, spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_engine2_rev_s3];
+    loading: [
+	spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_engine2_rev_s1,
+	spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_engine2_rev_s2,
+	spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_engine2_rev_s3
+];
+    loaded: [
+	spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_engine2_rev_s1,
+	spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_engine2_rev_s2,
+	spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_engine2_rev_s3
+];
 }
 
 /// TRAILER STATE 1
@@ -93,8 +125,16 @@ spriteset(spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_trailer_s3, "gf
 
 /// LIVERY 1 SPRITEGROUP - TRAILER
 spritegroup spritegroup_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_trailer_l1 {
-    loading: [spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_trailer_s1, spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_trailer_s2, spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_trailer_s3];
-    loaded: [spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_trailer_s1, spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_trailer_s2, spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_trailer_s3];
+    loading: [
+	spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_trailer_s1,
+	spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_trailer_s2,
+	spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_trailer_s3
+];
+    loaded: [
+	spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_trailer_s1,
+	spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_trailer_s2,
+	spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_trailer_s3
+];
 }
 
 // 1. Rear-facing Wagon Logic(The "Reversed" Look)

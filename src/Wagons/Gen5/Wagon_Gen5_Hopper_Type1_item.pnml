@@ -3,8 +3,7 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 
-// Template: TPL_04H.
-// Data from: nan
+// Template: TPL_04B.
 
 // Cargo capacity
 
@@ -40,7 +39,7 @@ item(FEAT_TRAINS, item_mu_wagon_gen5_hopper_type1) {
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
-        // cargodeftype: HOPPER_TYPE1;
+        // cargodeftype: HOPPER_TYPE_FOOD;
         refittable_cargo_classes: bitmask(CC_OPEN_BULK, CC_COVERED_BULK);
         non_refittable_cargo_classes: bitmask(CC_NON_POTABLE);
         cargo_allow_refit: [];

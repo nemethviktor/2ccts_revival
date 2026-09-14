@@ -4,7 +4,6 @@
 
 
 // Template: TPL_04U.
-// Data from: nan
 
 item(FEAT_TRAINS, item_mglv_coach_gen7m_chimaera_mail_coach) {
     property {

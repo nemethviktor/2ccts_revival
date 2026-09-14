@@ -616,7 +616,7 @@ def get_spritegroup_without_loading_states(
     """
 
     # 1. Determine Sprite Lists
-    loading_list = ", ".join(created_sprites)
+    loading_list = ",\n\t".join(created_sprites)
     loaded_list = loading_list
 
     # 2. Construct Group Name and Header
@@ -633,8 +633,8 @@ def get_spritegroup_without_loading_states(
     return f"""
 {comment.upper()}
 spritegroup {group_name} {{
-    loading: [{loading_list}];
-    loaded: [{loaded_list}];
+    loading: [\n\t{loading_list}\n];
+    loaded: [\n\t{loaded_list}\n];
 }}"""
 
 
@@ -658,14 +658,14 @@ def get_spritegroup_with_loading_states(
         return ""
 
     # 1. Determine Sprite Lists
-    if has_driving_states and cargo_string in cargo_with_driving_state:
+    if has_driving_states and ((cargo_string in cargo_with_driving_state) or "all" in cargo_with_driving_state):
         # Loading uses everything except the last (driving) sprite
-        loading_list = ", ".join(created_sprites[0:-1])
+        loading_list = "\n\t, ".join(created_sprites[0:-1])
         # Loaded/Driving uses First, Last, Last pattern
-        loaded_list = f"{created_sprites[0]}, {created_sprites[-1]}, {created_sprites[-1]}"
+        loaded_list = f"{created_sprites[0]}\n\t, {created_sprites[-1]}\n\t, {created_sprites[-1]}"
     else:
         # Standard behavior: loading and loaded are identical
-        loading_list = ", ".join(created_sprites)
+        loading_list = ",\n\t".join(created_sprites)
         loaded_list = loading_list
 
     # 2. Construct Group Name and Header
@@ -682,9 +682,40 @@ def get_spritegroup_with_loading_states(
     return f"""
 {comment.upper()}
 spritegroup {group_name} {{
-    loading: [{loading_list}];
-    loaded: [{loaded_list}];
+    loading: [\n\t{loading_list}\n];
+    loaded: [\n\t{loaded_list}\n];
 }}"""
+
+
+@scrub_nml_data
+def get_predefined_livery_selector(
+    *,
+    vid: str,
+    selector_name: str,
+    list_of_items: list,
+    first_chance: int = 7,
+    add_literal_selection_word: bool = False,
+) -> str:
+    """
+    Gets the random livery selector
+
+    :param selector_name: goes into random_switch(FEAT_TRAINS, SELF, {vid}_{selector_name}_livery
+    """
+    word = "livery" if not add_literal_selection_word else "livery_selection"
+
+    nml_code = f"\n// Random Livery Selector for {selector_name}\n"
+    nml_code += f"random_switch(FEAT_TRAINS, SELF, switch_{vid}_{selector_name}_{word}) {{"
+
+    for index, item in enumerate(list_of_items):
+        weight = first_chance if index == 0 else int((10 - first_chance) / (len(list_of_items) - 1))
+
+        target = f"switch_{vid}_{item}_livery"
+
+        target = target.lower()
+        nml_code += f"\n\t{weight}: {target};"
+    nml_code += "\n}"
+
+    return nml_code
 
 
 @scrub_nml_data
@@ -702,7 +733,7 @@ def get_random_livery_selector(
     """
     Gets the random livery selector
 
-    :param selector_name: goes into nrandom_switch(FEAT_TRAINS, SELF, {selector_name}
+    :param selector_name: goes into random_switch(FEAT_TRAINS, SELF, {selector_name}
     :param cargo_string: goes into spritexxx_{vid}_{cargo_string}_l{num}
     :param list_length: how many items in the list
     :param cargo_string_is_dummy: if cargo=='dummy' (ie there isn't one)
@@ -732,6 +763,106 @@ def get_random_livery_selector(
     nml_code += "\n}"
 
     return nml_code
+
+
+# 1. Single Source of Truth for 4-letter cargo codes per group
+CARGO_GROUPS = {
+    "armoured": ["DIAM", "GOLD", "VALU"],
+    "building_materials": ["BDMT"],
+    "cars": ["VEHI"],
+    "coal": ["COAL"],
+    "crates": ["CERE", "CTCD", "FRUT", "OLSD", "SUGR"],
+    "fruit": ["CERE", "CTCD", "FRUT", "OLSD", "SUGR"],
+    "goods": ["BDMT", "DIAM", "ENSP", "GOLD", "GOOD", "VALU"],
+    "grain": ["GRAI"],
+    "gray": ["BUBL", "CLAY", "CMNT", "SCMT"],
+    "oil": ["OIL_", "PETR", "RFPR"],
+    "ore": ["AORE", "CORE", "IORE"],
+    "planks": ["WDPR"],
+    "reefer": ["BEER", "FISH", "FOOD", "FRUT", "FZDR"],
+    "refrigerated": ["FISH", "FOOD", "FRUT", "FZDR"],
+    "sand": ["CERE", "CTCD", "GRVL", "LIME", "SAND", "SUGR", "TOFF", "SGBT"],
+    # no 'standard' - it's a label for goods but it's handled w goods.
+    "steel": ["STEL"],
+    "supplies": ["ENSP", "FMSP"],
+    "tanktainer": ["BEER", "COLA", "DYES", "PETR", "PLAS", "PLST", "RFPR", "RUBR", "WATR"],
+    "wood": ["POTA", "WDPR", "WOOD"],
+    "yeti": ["YETI", "YETY"],
+}
+
+# 2. Human-readable UI labels mapped directly to internal group keys
+CARGO_LABELS = {
+    "armoured": "Armoured",
+    "building_materials": "Machinery",
+    "cars": "Cars",
+    "coal": "Coal",
+    "crates": "Crates",
+    "fruit": "Fruit",
+    "goods": "Standard",
+    "grain": "Grain",
+    "gray": "Gray",
+    "livestock": "Livestock",
+    "oil": "Oil",
+    "ore": "Ore",
+    "planks": "Planks",
+    "reefer": "Reefer",
+    "refrigerated": "Refrigerated",
+    "sand": "Sand",
+    "standard": "Standard",
+    "steel": "Steel",
+    "supplies": "Machinery",
+    "tanktainer": "Tanktainer",
+    "wood": "Wood",
+    "yeti": "YETI",
+}
+
+# 3. Vehicle definitions mapping vehicle types to allowed cargo categories
+VEHICLE_CARGO_CATEGORIES = {
+    "BOXCAR": ["armoured", "reefer", "standard"],
+    "BOXCAR_TYPE_FOOD": ["armoured", "reefer", "goods"],
+    "CENTERBEAM": ["crates", "planks", "steel"],
+    "CONTAINER": ["container", "refrigerated", "tanktainer"],
+    "DOUBLECONTAINER": ["container", "refrigerated"],
+    "FLAT_WAGON": ["crates", "planks", "steel", "wood", "building_materials", "yeti"],
+    "GONDOLA": ["coal", "grain", "ore", "wood", "sand", "gray"],
+    "HEAVYFLAT": ["crates", "cars", "supplies", "steel", "yeti"],
+    "HOPPER": ["coal", "ore", "sand", "gray"],
+    "HOPPER_TYPE_FOOD": ["grain", "standard"],
+    "HOPPER_TYPE_NONFOOD": ["coal", "ore", "sand", "gray"],
+    "LIVESTOCK": ["livestock"],
+    "OPEN_WAGON_G1": ["coal", "grain", "ore", "wood", "gray", "sand", "fruit"],
+    "OPEN_WAGON_G2PLUS": ["coal", "grain", "ore", "wood", "gray", "sand", "crates"],
+    "REEFER": ["reefer", "goods"],
+    "TANKER": ["oil", "standard"],
+}
+
+
+def get_livery_by_cargo_in_veh(vid: str, cargodef: str, fallback: str, add_literal_selection_word: bool = False) -> str:
+    categories = VEHICLE_CARGO_CATEGORIES.get(cargodef.upper(), [])
+    word = "livery_selection" if add_literal_selection_word else "livery"
+
+    lines = [f"\nswitch(FEAT_TRAINS, SELF, switch_{vid}_cargo_selection, cargo_type_in_veh) {{"]
+
+    # Iterate categories -> flatten out to 4-letter cargo codes
+    for category in categories:
+        items = CARGO_GROUPS.get(category, [])
+        for cargo_code in items:
+            lines.append(f"    {cargo_code}: switch_{vid}_{category}_{word};")
+
+    lines.append(f"    switch_{vid}_{fallback}_livery;")
+    lines.append("}")
+
+    return "\n".join(lines)
+
+
+def get_cargotypes(cargodef: str) -> list:
+    categories = VEHICLE_CARGO_CATEGORIES.get(cargodef.upper(), [])
+    if not categories:
+        return ["dummy"]
+
+    # Map categories to UI names and deduplicate using dict.fromkeys (preserves order)
+    labels = [CARGO_LABELS.get(cat, cat.title()) for cat in categories]
+    return list(dict.fromkeys(labels))
 
 
 def get_tpl_controller(row, copyright_header) -> str:
@@ -768,7 +899,12 @@ def get_tpl_controller(row, copyright_header) -> str:
 
         # 4. Construct the FINAL string here, including the amendment
         # We don't need a list anymore, just a formatted string
-        full_output = f"{copyright_header}\n\n" f"// Template: TPL_{template_id:02}{amendment}\n" f"{body}"
+        full_output = (
+            f"{copyright_header}\n\n"
+            # f"// Template: TPL_{template_id:02}{amendment}\n// CargoDef: {row['CARGODEF']}\n// ID: {row['VEHID_ID']}\n"
+            f"// Template: TPL_{template_id:02}{amendment}\n"
+            f"{body}"
+        )
         return full_output
 
     return f"// Error: Template {template_id} not implemented"
@@ -1367,24 +1503,7 @@ def get_tpl_04(vid, gfx_path, row, template_amendment_code):
     Coaches & Wagons w / Cargo/Liveries
     Standard -> `TPL_04A` with or witout DT // technically it's just 'A' but I'm lazy. All of the params here are the same, 1 letter only.
     Loading States w / Cargo -> `TPL_04B`
-    Box Car Type 1 -> `TPL_04C` (but not Gen 3/4 Type 2)
-    Box Car Type 2 -> `TPL_04D` (but not Gen 3/4 Type 2)
-    Centerbeam -> `TPL_04E`
-    Container-Carrier -> `TPL_04F`
-    Container-Doublestack -> `TPL_04G`
-    Hopper Types 1/2 -> `TPL_04H`
-    Flatcar/Flat Wagon -> `TPL_04I`
-    Tanker Non-2nd Gen -> `TPL_04J`
-    Tanker 2nd Gen -> `TPL_04K`
-    Open Wagon Gen2/Gen3 -> `TPL_04L` - This has 'Driving State' for GRAIN only
-    Box Car Gen3/4 Type 2 -> `TPL_04M`
-    Gondola -> `TPL_04N` - This has 'Driving State' for GRAIN only
-    Heavy Flatcar -> `TPL_04O`
-    Box Car Gen2 Type 2 -> `TPL_04P`
-    Open Wagon Gen1 -> `TPL_04Q`
-    Service Cars -> `TPL_04R`
     Coach that has no pushpull but has a specific 'end' carriage sprite -> `TPL_04S`
-    Livestock Van -> `TPL_04T`
     Coaches without liveries or subtypes ('A' w/o extra columns) -> `TPL_04U` with or witout DT
     """
     gfx_purchase_amendment = "_Purchase"
@@ -1397,7 +1516,7 @@ def get_tpl_04(vid, gfx_path, row, template_amendment_code):
                 vid=vid,
                 gfx_path=gfx_path,
                 purchase_x=1,
-                purchase_y=107,
+                purchase_y=143,
                 template_suffix="_coach",
             )
         )
@@ -1420,142 +1539,47 @@ def get_tpl_04(vid, gfx_path, row, template_amendment_code):
     else:
         liveries = {1: 1, 2: 179, 3: 357, 4: 535}
 
-    # region templates for cargoes -> any cargo other than 'dummy' will be expected to sit in its own file
-    cargo_strings = ["Dummy"]
-    if template_amendment_code == "C":
-        cargo_strings = [
-            "Armoured",
-            "Reefer",
-            "Standard",
-        ]
-    elif template_amendment_code == "D":
-        cargo_strings = ["Standard"]
-    elif template_amendment_code == "E":
-        cargo_strings = [
-            "Crates",
-            "Planks",
-            "Steel",
-        ]
-    elif template_amendment_code == "F":
-        cargo_strings = [
-            "Container",
-            "Refrigerated",
-            "Tanktainer",
-        ]
-    elif template_amendment_code == "G":
-        cargo_strings = [
-            "Container",
-            "Refrigerated",
-        ]
-    elif template_amendment_code == "H":
-        cargo_strings = [
-            "Coal",
-            "Ore",
-            "Sand",
-            "Gray",
-        ]
-    elif template_amendment_code == "I":
-        cargo_strings = [
-            "Crates",
-            "Planks",
-            "Steel",
-            "Wood",
-            "Machinery",
-            "YETI",
-        ]
-    elif template_amendment_code == "J":
-        cargo_strings = [
-            "Oil",
-            "Standard",
-        ]
-    elif template_amendment_code == "K":
-        cargo_strings = [
-            "Oil",
-            "Standard",
-            "Rubber",
-            "Water",
-        ]
-    elif template_amendment_code == "L":
-        cargo_strings = [
-            "Coal",
-            "Grain",
-            "Ore",
-            "Wood",
-            "Gray",
-            "Sand",
-            "Crates",
-        ]
-    elif template_amendment_code == "M":
-        cargo_strings = [
-            "Reefer",
-            "Standard",
-        ]
-    elif template_amendment_code == "N":
-        cargo_strings = [
-            "Coal",
-            "Grain",
-            "Ore",
-            "Wood",
-            "Sand",
-            "Gray",
-        ]
-    elif template_amendment_code == "O":
-        cargo_strings = ["Crates", "Cars", "Machinery", "Steel", "YETI"]
-    elif template_amendment_code == "P":
-        cargo_strings = [
-            "Reefer",
-            "Standard",
-        ]
-    elif template_amendment_code == "Q":
-        cargo_strings = ["Coal", "Grain", "Ore", "Wood", "Gray", "Sand", "Fruit"]
-    elif template_amendment_code == "T":
-        cargo_strings = ["Livestock"]
+    loading_state_count = int(row["LOADING_STATE_COUNT"])
 
-    # endregion
-
-    has_loading_states = template_amendment_code in [
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P",
-        "Q",
-        "T",
-    ]
     has_first_or_last_carriage_state = template_amendment_code in ["S"]
-    has_driving_states = template_amendment_code in ["L", "N", "Q"]
+    has_driving_states = is_true(row["HAS_DRIVING_STATE"])
     has_reverse_state = template_amendment_code in ["A", "U"] and is_true(row["HAS_CAB"])
+    direction_states = {}
+    cargoes_with_driving_state = {
+        18005: ["all"],
+        18007: ["grain"],
+        12003: ["grain", "fruit"],
+        12007: ["grain"],
+        12013: ["grain"],
+        12020: ["grain"],
+        12022: ["all"],
+        12030: ["grain"],
+        12032: ["all"],
+        12053: ["grain"],
+        12055: ["all"],
+    }
 
-    cargo_with_driving_state = ["grain"]
-    states = {1: 1}
-    if has_first_or_last_carriage_state:
-        if template_amendment_code == "S":
-            states = {1: 1, 2: 32, 3: 64}
-            direction_states = {1: "Normal", 2: "Last", 3: "First"}
-
-    elif has_loading_states or has_reverse_state:
-        states = {1: 1, 2: 32, 3: 64}
+    if has_first_or_last_carriage_state and template_amendment_code == "S":
+        direction_states = {1: "Normal", 2: "Last", 3: "First"}
+    elif has_reverse_state:
         direction_states = {1: "Normal", 2: "Forward", 3: "Reverse"}
-        # This is a total clusterf.k - so basically some of the wagons have a 'Driving State' (S4)...
-        # BUT ONLY for GRAIN
-        if has_driving_states:
-            states = {1: 1, 2: 32, 3: 64, 4: 96}
 
-    for cargo_string in cargo_strings:
-        cargo_string = cargo_string.lower()
+    # 1. Determine the total number of states dynamically
+    total_states = 1 + loading_state_count + (1 if has_driving_states else 0) + max(len(direction_states) - 1, 0)
+
+    # 2. Build the states dict dynamically: {1: 1, 2: 32, 3: 64, 4: 96, ...}
+    states = {i: 1 if i == 1 else 32 * (i - 1) for i in range(1, total_states + 1)}
+
+    vehid_id_int = row["VEHID_ID"]
+    cargodef: str = row["CARGODEF"]
+    cargotypes = get_cargotypes(cargodef)
+
+    cargoes_with_driving_state_this_veh = cargoes_with_driving_state.get(vehid_id_int, [])
+    for cargo_string in cargotypes:
+        cargo_string: str = cargo_string.lower()
         cargo_string_is_dummy = cargo_string == "dummy"
         if not cargo_string_is_dummy:
-            nml_code.append(f"\n// {cargo_string}")
+            nml_code.append(f"\n// {cargo_string.upper()}")
 
         # 2. Sprite Generation Loop (Liveries 1-4 -- columns)
         for livery_num, x_coord in liveries.items():
@@ -1563,19 +1587,26 @@ def get_tpl_04(vid, gfx_path, row, template_amendment_code):
             created_sprites = []
 
             for state_num, y_coord in states.items():
-                if state_num > 3 and cargo_string not in cargo_with_driving_state:
-                    # We cut the loop here if it's not a real 'Driving State' situation
-                    continue
+
+                if state_num > 3 and has_driving_states:
+                    if cargo_string in cargoes_with_driving_state_this_veh:
+                        pass
+                    elif "all" in cargoes_with_driving_state_this_veh:
+                        pass
+                    else:
+                        # We cut the loop here if it's not a real 'Driving State' situation
+                        continue
 
                 s_suffix: str = ""
                 s_suffix += f"{cargo_string}" if not cargo_string_is_dummy else ""
                 s_suffix += f"{'_' if not cargo_string_is_dummy else ''}L{livery_num}"
-                s_suffix += f"_s{state_num}" if (has_loading_states or has_first_or_last_carriage_state) else ""
+                s_suffix += f"_s{state_num}" if (loading_state_count > 0 or has_first_or_last_carriage_state) else ""
                 s_suffix += f"_dt_{direction_states.get(state_num, '')}" if has_reverse_state else ""
 
                 comment = f"Livery {livery_num}"
-                if has_loading_states:
-                    extracomment = f" - Loading State {state_num}"
+                if loading_state_count > 0 and not has_first_or_last_carriage_state:
+                    state_word = "Driving" if state_num == 4 and has_driving_states else "Loading"
+                    extracomment = f" - {state_word} State {state_num}"
                 else:
                     extracomment = ""
                 comment += extracomment
@@ -1622,17 +1653,15 @@ def get_tpl_04(vid, gfx_path, row, template_amendment_code):
                     created_sprites=created_sprites,
                     cargo_string=cargo_string,
                     cargo_string_is_dummy=cargo_string_is_dummy,
-                    has_loading_states=has_loading_states,
+                    has_loading_states=(loading_state_count > 0),
                     has_driving_states=has_driving_states,
-                    cargo_with_driving_state=cargo_with_driving_state,
+                    cargo_with_driving_state=cargoes_with_driving_state_this_veh,
                 )
             nml_code.append(group_block)
 
         # 3. Livery Selector (Random Switch)
         if not is_true(row["HAS_CAB"]):
-            if template_amendment_code in ["U"]:
-                pass
-            elif template_amendment_code in ["S"]:
+            if template_amendment_code in ["S", "U"]:
                 pass
             else:
                 selector_name = (
@@ -1645,334 +1674,146 @@ def get_tpl_04(vid, gfx_path, row, template_amendment_code):
                         selector_name=selector_name,
                         list_length=4,
                         cargo_string_is_dummy=cargo_string_is_dummy,
-                        has_loading_states=has_loading_states,
+                        has_loading_states=loading_state_count > 0,
                     )
                 )
 
     # region Wagon cargo design allocations
-    if template_amendment_code == "C":
-        # 3. Livery Selector (Random Switch) - always 'Goods'
-        nml_code.append(f"\n// Goods have multiple liveries")
-        nml_code.append(f"""
-                       random_switch(FEAT_TRAINS, SELF, switch_{vid}_goods_livery) {{
-	7: switch_{vid}_standard_livery;
-	3: switch_{vid}_reefer_livery;
-}}""")
+    if cargodef in ["BOXCAR", "BOXCAR_TYPE_FOOD"]:
+        selector_name = "goods"
+        nml_code.append(
+            get_predefined_livery_selector(
+                vid=vid,
+                selector_name=selector_name,
+                list_of_items=["standard", "reefer"],
+                first_chance=7,
+            )
+        )
 
-        nml_code.append(f"\n// Random Goods Livery Selector")
-        nml_code.append(f"""
-        switch(FEAT_TRAINS, SELF, switch_{vid}_cargo_selection, cargo_type_in_veh) {{
-        GOOD: switch_{vid}_goods_livery;
-        VALU: switch_{vid}_armoured_livery;
-        FOOD: switch_{vid}_reefer_livery;
-        GOLD: switch_{vid}_armoured_livery;
-        FRUT: switch_{vid}_reefer_livery;
-        DIAM: switch_{vid}_armoured_livery;
-        FZDR: switch_{vid}_reefer_livery;
-        BEER: switch_{vid}_reefer_livery;
-        FISH: switch_{vid}_reefer_livery;
-        // GRAI, PAPR, WHEA, MAIZ, SUGR, TOYS, BATT, BUBL, BDMT, BRCK, CERA, CERE, COPR, ENSP,
-        // FERT, FMSP, GLAS, JAVA, MNSP, OLSD, POTA, RCYC, SGBT, SGCN, SULP, VEHI, WOOL
-        switch_{vid}_standard_livery;
-}}""")
+        nml_code.append(get_livery_by_cargo_in_veh(vid=vid, cargodef=cargodef, fallback="standard"))
 
-    elif template_amendment_code == "E":
-        nml_code.append(f"""
-                       random_switch(FEAT_TRAINS, SELF, switch_{vid}_supplies_livery) {{
-	1: switch_{vid}_crates_livery;
-	1: switch_{vid}_planks_livery;
-	1: switch_{vid}_steel_livery;
-}}
+    elif cargodef in ["BOXCAR_TYPE_NONFOOD"]:
+        pass
 
-switch(FEAT_TRAINS, SELF, switch_{vid}_cargo_selection, cargo_type_in_veh) {{
-	STEL: switch_{vid}_steel_livery;
-	BDMT: switch_{vid}_supplies_livery;
-	MNSP: switch_{vid}_supplies_livery;
-	WDPR: switch_{vid}_planks_livery;
-    // Goods, Paper
-	switch_{vid}_crates_livery;
-}}""")
+    elif cargodef in ["CENTERBEAM"]:
+        selector_name = "supplies"
+        nml_code.append(
+            get_predefined_livery_selector(
+                vid=vid,
+                selector_name=selector_name,
+                list_of_items=["crates", "planks", "steel"],
+                first_chance=4,
+            )
+        )
 
-    elif template_amendment_code == "F":
-        nml_code.append(f"""
-// Goods have multiple liveries
-random_switch(FEAT_TRAINS, SELF, switch_{vid}_goods_livery) {{
-	7: switch_{vid}_container_livery;
-	2: switch_{vid}_refrigerated_livery;
-	1: switch_{vid}_tanktainer_livery;
-}}
+        nml_code.append(get_livery_by_cargo_in_veh(vid=vid, cargodef=cargodef, fallback="crates"))
 
-switch(FEAT_TRAINS, SELF, switch_{vid}_cargo_selection, cargo_type_in_veh) {{
-	GOOD: switch_{vid}_goods_livery;
-	FOOD: switch_{vid}_refrigerated_livery;
-	RUBR: switch_{vid}_tanktainer_livery;
-	FRUT: switch_{vid}_refrigerated_livery;
-	WATR: switch_{vid}_tanktainer_livery;
-	COLA: switch_{vid}_tanktainer_livery;
-	PLST: switch_{vid}_tanktainer_livery;
-	FZDR: switch_{vid}_refrigerated_livery;
-	BEER: switch_{vid}_tanktainer_livery;
-	DYES: switch_{vid}_tanktainer_livery;
-	FISH: switch_{vid}_refrigerated_livery;
-	PETR: switch_{vid}_tanktainer_livery;
-	PLAS: switch_{vid}_tanktainer_livery;
-	RFPR: switch_{vid}_tanktainer_livery;
-	switch_{vid}_container_livery;
-}}""")
+    elif cargodef in ["CONTAINER"]:
+        selector_name = "goods"
+        nml_code.append(
+            get_predefined_livery_selector(
+                vid=vid,
+                selector_name=selector_name,
+                list_of_items=["container", "refrigerated", "tanktainer"],
+                first_chance=7,
+            )
+        )
 
-    elif template_amendment_code == "G":
-        nml_code.append(f"""
+        nml_code.append(get_livery_by_cargo_in_veh(vid=vid, cargodef=cargodef, fallback="container"))
 
-// Goods have multiple liveries
-random_switch(FEAT_TRAINS, SELF, switch_{vid}_goods_livery) {{
-	7: switch_{vid}_container_livery;
-	3: switch_{vid}_refrigerated_livery;
-}}
+    elif cargodef in ["DOUBLECONTAINER"]:
+        selector_name = "goods"
+        nml_code.append(
+            get_predefined_livery_selector(
+                vid=vid,
+                selector_name=selector_name,
+                list_of_items=["container", "refrigerated"],
+                first_chance=7,
+            )
+        )
 
-switch(FEAT_TRAINS, SELF, switch_{vid}_cargo_selection, cargo_type_in_veh) {{
-	GOOD: switch_{vid}_goods_livery;
-	FOOD: switch_{vid}_refrigerated_livery;
-	FRUT: switch_{vid}_refrigerated_livery;
-	FZDR: switch_{vid}_refrigerated_livery;
-	FISH: switch_{vid}_refrigerated_livery;
-    // PAPR, TOYS, BATT, SWET, BUBL, BDMT, BRCK, CERA, CERE, COPR, ENSP, FERT,
-    // FICR, FMSP, GLAS, JAVA, MNSP, RCYC, WDPR, WOOL, URAN
-	switch_{vid}_container_livery;
-}}""")
+        nml_code.append(get_livery_by_cargo_in_veh(vid=vid, cargodef=cargodef, fallback="container"))
 
-    elif template_amendment_code == "H":
-        nml_code.append(f"""
-        switch(FEAT_TRAINS, SELF, switch_{vid}_cargo_selection, cargo_type_in_veh) {{
-	COAL: switch_{vid}_coal_livery;
-	CLAY: switch_{vid}_gray_livery;
-	CMNT: switch_{vid}_gray_livery;
-	GRVL: switch_{vid}_sand_livery;
-	LIME: switch_{vid}_sand_livery;
-	SAND: switch_{vid}_sand_livery;
-	SGBT: switch_{vid}_sand_livery; // Use Sand livery for Sugar Beets
-	switch_{vid}_ore_livery; // IORE, CORE, AORE
-}}""")
+    elif cargodef in ["FLAT_WAGON"]:
+        selector_name = "goods"
+        nml_code.append(
+            get_predefined_livery_selector(
+                vid=vid,
+                selector_name=selector_name,
+                list_of_items=["crates", "machinery"],
+                first_chance=7,
+            )
+        )
 
-    elif template_amendment_code == "I":
-        nml_code.append(f"""
+        selector_name = "building_materials"
+        nml_code.append(
+            get_predefined_livery_selector(
+                vid=vid,
+                selector_name=selector_name,
+                list_of_items=["planks", "steel"],
+                first_chance=5,
+            )
+        )
 
-// Goods and Engineering Supplies have multiple liveries
-random_switch(FEAT_TRAINS, SELF, switch_{vid}_goods_livery) {{
-	7: switch_{vid}_crates_livery;
-	3: switch_{vid}_machinery_livery;
-}}
+        nml_code.append(get_livery_by_cargo_in_veh(vid=vid, cargodef=cargodef, fallback="crates"))
 
-// Building materials can be planks or steel rolls
-random_switch(FEAT_TRAINS, SELF, switch_{vid}_building_materials_livery) {{
-	1: switch_{vid}_planks_livery;
-	1: switch_{vid}_steel_livery;
-}}
+    elif cargodef in ["HOPPER", "HOPPER_TYPE_NONFOOD"]:
+        nml_code.append(get_livery_by_cargo_in_veh(vid=vid, cargodef=cargodef, fallback="ore"))
 
-switch(FEAT_TRAINS, SELF, switch_{vid}_cargo_selection, cargo_type_in_veh) {{
-	GOOD: switch_{vid}_goods_livery;
-	WOOD: switch_{vid}_wood_livery;
-	STEL: switch_{vid}_steel_livery;
-	BDMT: switch_{vid}_building_materials_livery;
-	ENSP: switch_{vid}_goods_livery;
-	WDPR: switch_{vid}_planks_livery;
-	YETI: switch_{vid}_yeti_livery;
-	YETY: switch_{vid}_yeti_livery;
-    // TOYS, BATT, SWET, BUBL, FZDR, BRCK, CERA, COPR, FICR, FMSP, JAVA, MNSP
-	switch_{vid}_crates_livery;
-}}""")
+    elif cargodef in ["HOPPER_TYPE_FOOD"]:
+        nml_code.append(get_livery_by_cargo_in_veh(vid=vid, cargodef=cargodef, fallback="standard"))
 
-    elif template_amendment_code == "J":
-        nml_code.append(f"""
-random_switch(FEAT_TRAINS, SELF, switch_{vid}_oil_livery_selection) {{
-	7: switch_{vid}_oil_livery;
-	3: switch_{vid}_standard_livery;
-}}
+    elif cargodef in ["GONDOLA"]:
+        nml_code.append(get_livery_by_cargo_in_veh(vid=vid, cargodef=cargodef, fallback="grain"))
 
-switch(FEAT_TRAINS, SELF, switch_{vid}_cargo_selection, cargo_type_in_veh) {{
-	OIL_: switch_{vid}_oil_livery_selection;
-	PETR: switch_{vid}_oil_livery_selection;
-	RFPR: switch_{vid}_oil_livery_selection;
-    // GOOD, RUBR, WATR, COLA, PLST, BEER, DYES, MILK, PLAS
-	switch_{vid}_standard_livery;
-}}
-""")
+    elif cargodef in ["OPEN_WAGON_G1"]:
+        nml_code.append(get_livery_by_cargo_in_veh(vid=vid, cargodef=cargodef, fallback="grain"))
 
-    elif template_amendment_code == "K":
-        nml_code.append(f"""
+    elif cargodef in ["OPEN_WAGON_G2PLUS"]:
+        nml_code.append(get_livery_by_cargo_in_veh(vid=vid, cargodef=cargodef, fallback="grain"))
 
+    elif cargodef in ["TANKER"]:
+        selector_name = "oil"
+        nml_code.append(
+            get_predefined_livery_selector(
+                vid=vid,
+                selector_name=selector_name,
+                list_of_items=["oil", "standard"],
+                first_chance=7,
+                add_literal_selection_word=True,
+            )
+        )
 
-// Goods can have multiple liveries
-random_switch(FEAT_TRAINS, SELF, switch_{vid}_goods_livery) {{
-	1: switch_{vid}_oil_livery;
-	1: switch_{vid}_rubber_livery;
-	1: switch_{vid}_water_livery;
-}}
+        nml_code.append(
+            get_livery_by_cargo_in_veh(vid=vid, cargodef=cargodef, fallback="standard", add_literal_selection_word=True)
+        )
 
-// Plastic can have multiple liveries
-random_switch(FEAT_TRAINS, SELF, switch_{vid}_plastic_livery) {{
-	1: switch_{vid}_oil_livery;
-	1: switch_{vid}_rubber_livery;
-}}
+    elif cargodef in ["HEAVYFLAT"]:
+        selector_name = "goods"
+        nml_code.append(
+            get_predefined_livery_selector(
+                vid=vid,
+                selector_name=selector_name,
+                list_of_items=["crates", "cars", "machinery"],
+                first_chance=7,
+            )
+        )
 
-switch(FEAT_TRAINS, SELF, switch_{vid}_cargo_selection, cargo_type_in_veh) {{
-	OIL_: switch_{vid}_oil_livery;
-	GOOD: switch_{vid}_goods_livery;
-	RUBR: switch_{vid}_rubber_livery;
-	PLST: switch_{vid}_plastic_livery;
-	PETR: switch_{vid}_oil_livery;
-	PLAS: switch_{vid}_plastic_livery;
-	RFPR: switch_{vid}_oil_livery;
-	switch_{vid}_water_livery; // WATR, COLA, BEER, DYES, MILK
-}}
-""")
+        selector_name = "supplies"
+        nml_code.append(
+            get_predefined_livery_selector(
+                vid=vid,
+                selector_name=selector_name,
+                list_of_items=["crates", "machinery"],
+                first_chance=7,
+            )
+        )
 
-    elif template_amendment_code == "L":
-        nml_code.append(f"""
+        nml_code.append(get_livery_by_cargo_in_veh(vid=vid, cargodef=cargodef, fallback="crates"))
 
-switch(FEAT_TRAINS, SELF, switch_{vid}_cargo_selection, cargo_type_in_veh) {{
-	COAL: switch_{vid}_coal_livery;
-	IORE: switch_{vid}_ore_livery;
-	FRUT: switch_{vid}_crates_livery;
-	CORE: switch_{vid}_ore_livery;
-	WOOD: switch_{vid}_wood_livery;
-	SUGR: switch_{vid}_crates_livery;
-	CTCD: switch_{vid}_crates_livery;
-	BUBL: switch_{vid}_gray_livery;
-	AORE: switch_{vid}_ore_livery;
-	CERE: switch_{vid}_crates_livery;
-	CLAY: switch_{vid}_gray_livery;
-	CMNT: switch_{vid}_gray_livery;
-	GRVL: switch_{vid}_sand_livery;
-	LIME: switch_{vid}_sand_livery;
-	OLSD: switch_{vid}_crates_livery;
-	POTA: switch_{vid}_wood_livery; // Potash is light brown-ish, so uses the Wood livery
-	SAND: switch_{vid}_sand_livery;
-	SCMT: switch_{vid}_gray_livery;
-    // GRAI, MAIZ, TOFF
-	switch_{vid}_grain_livery;
-}}""")
-
-    elif template_amendment_code == "M":
-        nml_code.append(f"""
-// Goods have multiple liveries
-random_switch(FEAT_TRAINS, SELF, switch_{vid}_goods_livery) {{
-	7: switch_{vid}_standard_livery;
-	3: switch_{vid}_reefer_livery;
-}}
-
-switch(FEAT_TRAINS, SELF, switch_{vid}_cargo_selection, cargo_type_in_veh) {{
-	GOOD: switch_{vid}_goods_livery;
-	VALU: switch_{vid}_goods_livery;
-	FOOD: switch_{vid}_reefer_livery;
-	GOLD: switch_{vid}_goods_livery;
-	FRUT: switch_{vid}_reefer_livery;
-	DIAM: switch_{vid}_goods_livery;
-	FZDR: switch_{vid}_reefer_livery;
-	BEER: switch_{vid}_reefer_livery;
-	FISH: switch_{vid}_reefer_livery;
-    // GRAI, PAPR, WHEA, MAIZ, SUGR, TOYS, BATT, BUBL, BDMT, BRCK, CERA, CERE, COPR, ENSP, FERT, FMSP, GLAS, JAVA, MNSP, OLSD, POTA, RCYC, SGBT, SGCN, SULP, VEHI, WOOL
-	switch_{vid}_standard_livery;
-}}""")
-
-    elif template_amendment_code == "N":
-        nml_code.append(f"""
-                       switch(FEAT_TRAINS, SELF, switch_{vid}_cargo_selection, cargo_type_in_veh) {{
-	COAL: switch_{vid}_coal_livery;
-	IORE: switch_{vid}_ore_livery;
-	CORE: switch_{vid}_ore_livery;
-	WOOD: switch_{vid}_wood_livery;
-	SUGR: switch_{vid}_sand_livery;
-	TOFF: switch_{vid}_sand_livery;
-	CTCD: switch_{vid}_sand_livery;
-	AORE: switch_{vid}_ore_livery;
-	CERE: switch_{vid}_sand_livery;
-	CLAY: switch_{vid}_gray_livery;
-	CMNT: switch_{vid}_gray_livery;
-	GRVL: switch_{vid}_sand_livery;
-	LIME: switch_{vid}_sand_livery;
-	POTA: switch_{vid}_wood_livery;
-	SAND: switch_{vid}_sand_livery;
-	SCMT: switch_{vid}_gray_livery;
-	WDPR: switch_{vid}_wood_livery;
-	switch_{vid}_grain_livery;
-}}""")
-
-    elif template_amendment_code == "O":
-        nml_code.append(f"""
-random_switch(FEAT_TRAINS, SELF, switch_{vid}_goods_livery) {{
-	7: switch_{vid}_crates_livery;
-	2: switch_{vid}_cars_livery;
-	1: switch_{vid}_machinery_livery;
-}}
-
-random_switch(FEAT_TRAINS, SELF, switch_{vid}_supplies_livery) {{
-	7: switch_{vid}_crates_livery;
-	3: switch_{vid}_machinery_livery;
-}}
-
-switch(FEAT_TRAINS, SELF, switch_{vid}_cargo_selection, cargo_type_in_veh) {{
-	GOOD: switch_{vid}_goods_livery;
-	STEL: switch_{vid}_steel_livery;
-	BDMT: switch_{vid}_goods_livery;
-	ENSP: switch_{vid}_supplies_livery;
-	FMSP: switch_{vid}_supplies_livery;
-	VEHI: switch_{vid}_cars_livery;
-	YETI: switch_{vid}_yeti_livery;
-	YETY: switch_{vid}_yeti_livery;
-	switch_{vid}_crates_livery;
-}}
-""")
-
-    elif template_amendment_code == "P":
-        nml_code.append(f"""
-// Goods have multiple liveries
-random_switch(FEAT_TRAINS, SELF, switch_{vid}_goods_livery) {{
-	7: switch_{vid}_standard_livery;
-	3: switch_{vid}_reefer_livery;
-}}
-
-switch(FEAT_TRAINS, SELF, switch_{vid}_cargo_selection, cargo_type_in_veh) {{
-	GOOD: switch_{vid}_goods_livery;
-	VALU: switch_{vid}_goods_livery;
-	FOOD: switch_{vid}_reefer_livery;
-	GOLD: switch_{vid}_goods_livery;
-	FRUT: switch_{vid}_reefer_livery;
-	DIAM: switch_{vid}_goods_livery;
-	FZDR: switch_{vid}_reefer_livery;
-	BEER: switch_{vid}_reefer_livery;
-	FISH: switch_{vid}_reefer_livery;
-    // GRAI, PAPR, WHEA, MAIZ, SUGR, TOYS, BATT, BUBL, BDMT, BRCK, CERA, CERE, COPR, ENSP, FERT, FMSP, GLAS, JAVA, MNSP, OLSD, POTA, RCYC, SGBT, SGCN, SULP, VEHI, WOOL
-	switch_{vid}_standard_livery;
-}}""")
-
-    elif template_amendment_code == "Q":
-        nml_code.append(f"""
-switch(FEAT_TRAINS, SELF, switch_{vid}_cargo_selection, cargo_type_in_veh) {{
-	COAL: switch_{vid}_coal_livery;
-	IORE: switch_{vid}_ore_livery;
-	FRUT: switch_{vid}_fruit_livery;
-	CORE: switch_{vid}_ore_livery;
-	WOOD: switch_{vid}_wood_livery;
-	SUGR: switch_{vid}_fruit_livery;
-	CTCD: switch_{vid}_fruit_livery;
-	BUBL: switch_{vid}_gray_livery;
-	AORE: switch_{vid}_ore_livery;
-	CERE: switch_{vid}_fruit_livery;
-	CLAY: switch_{vid}_gray_livery;
-	CMNT: switch_{vid}_gray_livery;
-	GRVL: switch_{vid}_sand_livery;
-	LIME: switch_{vid}_sand_livery;
-	OLSD: switch_{vid}_fruit_livery;
-	POTA: switch_{vid}_wood_livery; // Potash is light brown-ish, so uses the Wood livery
-	SAND: switch_{vid}_sand_livery;
-	SCMT: switch_{vid}_gray_livery;
-    // GRAI, MAIZ, TOFF
-	switch_{vid}_grain_livery;
-}}
-""")
     # endregion
 
-    elif has_reverse_state or has_first_or_last_carriage_state:
+    if has_reverse_state or has_first_or_last_carriage_state:
         if template_amendment_code in ["A"]:
             selector_name = f"switch_{vid}_livery" if cargo_string_is_dummy else f"switch_{vid}_{cargo_string}_livery"
 
@@ -1984,7 +1825,7 @@ switch(FEAT_TRAINS, SELF, switch_{vid}_cargo_selection, cargo_type_in_veh) {{
                         selector_name=f"{selector_name}_dt_{direction_state}",
                         list_length=4,
                         cargo_string_is_dummy=cargo_string_is_dummy,
-                        has_loading_states=has_loading_states,
+                        has_loading_states=loading_state_count > 0,
                         manual_suffix=f"dt_{direction_state}",
                     )
                 )
@@ -2003,47 +1844,27 @@ switch(FEAT_TRAINS, SELF, switch_{vid}_position, position_in_consist_from_end) {
 }}
 """)
         elif template_amendment_code in ["S"]:
-            # 4. Consist Logic
-            # We use 'position_in_consist' for the front and 'from_end' for the tail.
+            locations = [("middle", 1), ("tail", 2), ("head", 3)]
+            num_liveries = 4  # Easily change the number of liveries (l1..l4)
+
+            for loc_name, loc_id in locations:
+                sprites = "\n".join(f"    1: spriteset_{vid}_l{i}_s{loc_id};" for i in range(1, num_liveries + 1))
+                nml_code.append(
+                    f"random_switch(FEAT_TRAINS, SELF, switch_{vid}_{loc_name}_livery) {{\n" f"{sprites}\n" f"}}\n"
+                )
+
             nml_code.append(f"""
-/// RANDOM SWITCHES FOR REGULAR MIDDLE CARRIAGES (NORMAL VARIANTS)
-random_switch(FEAT_TRAINS, SELF, switch_{vid}_middle_livery) {{
-    1: spriteset_{vid}_l1_s1;
-    1: spriteset_{vid}_l2_s1;
-    1: spriteset_{vid}_l3_s1;
-    1: spriteset_{vid}_l4_s1;
-}}
-
-/// RANDOM SWITCHES FOR THE TAIL CARRIAGE (LAST VARIANTS)
-/// Uses the explicit .last property references inside the spritegroup definitions
-random_switch(FEAT_TRAINS, SELF, switch_{vid}_tail_livery) {{
-    1: spriteset_{vid}_l1_s2;
-    1: spriteset_{vid}_l2_s2;
-    1: spriteset_{vid}_l3_s2;
-    1: spriteset_{vid}_l4_s2;
-}}
-
-/// RANDOM SWITCHES FOR THE TAIL CARRIAGE (LAST VARIANTS)
-/// Uses the explicit .last property references inside the spritegroup definitions
-random_switch(FEAT_TRAINS, SELF, switch_{vid}_head_livery) {{
-    1: spriteset_{vid}_l1_s3;
-    1: spriteset_{vid}_l2_s3;
-    1: spriteset_{vid}_l3_s3;
-    1: spriteset_{vid}_l4_s3;
-}}
-
 // Logic via https://github.com/OpenTTD-JPplus/JPengines/blob/modular/src/pax/12_series.pnml
 switch(FEAT_TRAINS, SELF, switch_{vid}_end, position_in_vehid_chain_from_end) {{
-	0: switch_{vid}_tail_livery;
-	switch_{vid}_middle_livery;
-	}}
-	
+\t0: switch_{vid}_tail_livery;
+\tswitch_{vid}_middle_livery;
+\t}}
+    
 
 switch(FEAT_TRAINS, SELF, switch_{vid}_position_check, position_in_vehid_chain) {{
-	0: switch_{vid}_head_livery;
-	switch_{vid}_end;
-	}}
-""")
+\t0: switch_{vid}_head_livery;
+\tswitch_{vid}_end;
+\t}}""")
 
         elif template_amendment_code in ["U"]:
 

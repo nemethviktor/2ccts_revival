@@ -23,8 +23,16 @@ spriteset(spriteset_cargoemu_acme_corp__dd_cargoemu_front_l1_s3, "gfx/cargoemu/a
 
 /// LIVERY 1 SPRITEGROUP - FRONT
 spritegroup spritegroup_cargoemu_acme_corp__dd_cargoemu_front_l1 {
-    loading: [spriteset_cargoemu_acme_corp__dd_cargoemu_front_l1_s1, spriteset_cargoemu_acme_corp__dd_cargoemu_front_l1_s2, spriteset_cargoemu_acme_corp__dd_cargoemu_front_l1_s3];
-    loaded: [spriteset_cargoemu_acme_corp__dd_cargoemu_front_l1_s1, spriteset_cargoemu_acme_corp__dd_cargoemu_front_l1_s2, spriteset_cargoemu_acme_corp__dd_cargoemu_front_l1_s3];
+    loading: [
+	spriteset_cargoemu_acme_corp__dd_cargoemu_front_l1_s1,
+	spriteset_cargoemu_acme_corp__dd_cargoemu_front_l1_s2,
+	spriteset_cargoemu_acme_corp__dd_cargoemu_front_l1_s3
+];
+    loaded: [
+	spriteset_cargoemu_acme_corp__dd_cargoemu_front_l1_s1,
+	spriteset_cargoemu_acme_corp__dd_cargoemu_front_l1_s2,
+	spriteset_cargoemu_acme_corp__dd_cargoemu_front_l1_s3
+];
 }
 
 // Random Livery Selector for front
@@ -48,8 +56,16 @@ spriteset(spriteset_cargoemu_acme_corp__dd_cargoemu_back_l1_s3, "gfx/cargoemu/ac
 
 /// LIVERY 1 SPRITEGROUP - BACK
 spritegroup spritegroup_cargoemu_acme_corp__dd_cargoemu_back_l1 {
-    loading: [spriteset_cargoemu_acme_corp__dd_cargoemu_back_l1_s1, spriteset_cargoemu_acme_corp__dd_cargoemu_back_l1_s2, spriteset_cargoemu_acme_corp__dd_cargoemu_back_l1_s3];
-    loaded: [spriteset_cargoemu_acme_corp__dd_cargoemu_back_l1_s1, spriteset_cargoemu_acme_corp__dd_cargoemu_back_l1_s2, spriteset_cargoemu_acme_corp__dd_cargoemu_back_l1_s3];
+    loading: [
+	spriteset_cargoemu_acme_corp__dd_cargoemu_back_l1_s1,
+	spriteset_cargoemu_acme_corp__dd_cargoemu_back_l1_s2,
+	spriteset_cargoemu_acme_corp__dd_cargoemu_back_l1_s3
+];
+    loaded: [
+	spriteset_cargoemu_acme_corp__dd_cargoemu_back_l1_s1,
+	spriteset_cargoemu_acme_corp__dd_cargoemu_back_l1_s2,
+	spriteset_cargoemu_acme_corp__dd_cargoemu_back_l1_s3
+];
 }
 
 // Random Livery Selector for back
@@ -73,8 +89,16 @@ spriteset(spriteset_cargoemu_acme_corp__dd_cargoemu_middle_l1_s3, "gfx/cargoemu/
 
 /// LIVERY 1 SPRITEGROUP - MIDDLE
 spritegroup spritegroup_cargoemu_acme_corp__dd_cargoemu_middle_l1 {
-    loading: [spriteset_cargoemu_acme_corp__dd_cargoemu_middle_l1_s1, spriteset_cargoemu_acme_corp__dd_cargoemu_middle_l1_s2, spriteset_cargoemu_acme_corp__dd_cargoemu_middle_l1_s3];
-    loaded: [spriteset_cargoemu_acme_corp__dd_cargoemu_middle_l1_s1, spriteset_cargoemu_acme_corp__dd_cargoemu_middle_l1_s2, spriteset_cargoemu_acme_corp__dd_cargoemu_middle_l1_s3];
+    loading: [
+	spriteset_cargoemu_acme_corp__dd_cargoemu_middle_l1_s1,
+	spriteset_cargoemu_acme_corp__dd_cargoemu_middle_l1_s2,
+	spriteset_cargoemu_acme_corp__dd_cargoemu_middle_l1_s3
+];
+    loaded: [
+	spriteset_cargoemu_acme_corp__dd_cargoemu_middle_l1_s1,
+	spriteset_cargoemu_acme_corp__dd_cargoemu_middle_l1_s2,
+	spriteset_cargoemu_acme_corp__dd_cargoemu_middle_l1_s3
+];
 }
 
 // Random Livery Selector for middle

@@ -4,7 +4,6 @@
 
 
 // Template: TPL_04A.
-// Data from: nan
 
 item(FEAT_TRAINS, item_mu_coach_gen1_wooden_2_axle_regional_coach) {
     property {

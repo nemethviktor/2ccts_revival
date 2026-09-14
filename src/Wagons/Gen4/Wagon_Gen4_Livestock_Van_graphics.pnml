@@ -1,7 +1,7 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
-// Template: TPL_04T
+// Template: TPL_04B
 
 // PURCHASE
 spriteset(spriteset_mu_wagon_gen4_livestock_van_purchase, "gfx/wagons/gen4/wagon_gen4_livestock_van_purchase.png") {template_purchase_wagon(1, 1)}
@@ -9,7 +9,7 @@ spriteset(spriteset_mu_wagon_gen4_livestock_van_purchase, "gfx/wagons/gen4/wagon
 
 // VEHICLE
 
-// livestock
+// LIVESTOCK
 
 /// LIVERY 1   LOADING STATE 1   LIVESTOCK
 spriteset(spriteset_mu_wagon_gen4_livestock_van_livestock_l1_s1, "gfx/wagons/gen4/wagon_gen4_livestock_van_livestock.png") {template_2cc_wagons(1, 1)}
@@ -25,8 +25,16 @@ spriteset(spriteset_mu_wagon_gen4_livestock_van_livestock_l1_s3, "gfx/wagons/gen
 
 /// LIVERY 1 SPRITEGROUP - LIVESTOCK
 spritegroup spritegroup_mu_wagon_gen4_livestock_van_livestock_l1 {
-    loading: [spriteset_mu_wagon_gen4_livestock_van_livestock_l1_s1, spriteset_mu_wagon_gen4_livestock_van_livestock_l1_s2, spriteset_mu_wagon_gen4_livestock_van_livestock_l1_s3];
-    loaded: [spriteset_mu_wagon_gen4_livestock_van_livestock_l1_s1, spriteset_mu_wagon_gen4_livestock_van_livestock_l1_s2, spriteset_mu_wagon_gen4_livestock_van_livestock_l1_s3];
+    loading: [
+	spriteset_mu_wagon_gen4_livestock_van_livestock_l1_s1,
+	spriteset_mu_wagon_gen4_livestock_van_livestock_l1_s2,
+	spriteset_mu_wagon_gen4_livestock_van_livestock_l1_s3
+];
+    loaded: [
+	spriteset_mu_wagon_gen4_livestock_van_livestock_l1_s1,
+	spriteset_mu_wagon_gen4_livestock_van_livestock_l1_s2,
+	spriteset_mu_wagon_gen4_livestock_van_livestock_l1_s3
+];
 }
 
 /// LIVERY 2   LOADING STATE 1   LIVESTOCK
@@ -43,8 +51,16 @@ spriteset(spriteset_mu_wagon_gen4_livestock_van_livestock_l2_s3, "gfx/wagons/gen
 
 /// LIVERY 2 SPRITEGROUP - LIVESTOCK
 spritegroup spritegroup_mu_wagon_gen4_livestock_van_livestock_l2 {
-    loading: [spriteset_mu_wagon_gen4_livestock_van_livestock_l2_s1, spriteset_mu_wagon_gen4_livestock_van_livestock_l2_s2, spriteset_mu_wagon_gen4_livestock_van_livestock_l2_s3];
-    loaded: [spriteset_mu_wagon_gen4_livestock_van_livestock_l2_s1, spriteset_mu_wagon_gen4_livestock_van_livestock_l2_s2, spriteset_mu_wagon_gen4_livestock_van_livestock_l2_s3];
+    loading: [
+	spriteset_mu_wagon_gen4_livestock_van_livestock_l2_s1,
+	spriteset_mu_wagon_gen4_livestock_van_livestock_l2_s2,
+	spriteset_mu_wagon_gen4_livestock_van_livestock_l2_s3
+];
+    loaded: [
+	spriteset_mu_wagon_gen4_livestock_van_livestock_l2_s1,
+	spriteset_mu_wagon_gen4_livestock_van_livestock_l2_s2,
+	spriteset_mu_wagon_gen4_livestock_van_livestock_l2_s3
+];
 }
 
 /// LIVERY 3   LOADING STATE 1   LIVESTOCK
@@ -61,8 +77,16 @@ spriteset(spriteset_mu_wagon_gen4_livestock_van_livestock_l3_s3, "gfx/wagons/gen
 
 /// LIVERY 3 SPRITEGROUP - LIVESTOCK
 spritegroup spritegroup_mu_wagon_gen4_livestock_van_livestock_l3 {
-    loading: [spriteset_mu_wagon_gen4_livestock_van_livestock_l3_s1, spriteset_mu_wagon_gen4_livestock_van_livestock_l3_s2, spriteset_mu_wagon_gen4_livestock_van_livestock_l3_s3];
-    loaded: [spriteset_mu_wagon_gen4_livestock_van_livestock_l3_s1, spriteset_mu_wagon_gen4_livestock_van_livestock_l3_s2, spriteset_mu_wagon_gen4_livestock_van_livestock_l3_s3];
+    loading: [
+	spriteset_mu_wagon_gen4_livestock_van_livestock_l3_s1,
+	spriteset_mu_wagon_gen4_livestock_van_livestock_l3_s2,
+	spriteset_mu_wagon_gen4_livestock_van_livestock_l3_s3
+];
+    loaded: [
+	spriteset_mu_wagon_gen4_livestock_van_livestock_l3_s1,
+	spriteset_mu_wagon_gen4_livestock_van_livestock_l3_s2,
+	spriteset_mu_wagon_gen4_livestock_van_livestock_l3_s3
+];
 }
 
 /// LIVERY 4   LOADING STATE 1   LIVESTOCK
@@ -79,8 +103,16 @@ spriteset(spriteset_mu_wagon_gen4_livestock_van_livestock_l4_s3, "gfx/wagons/gen
 
 /// LIVERY 4 SPRITEGROUP - LIVESTOCK
 spritegroup spritegroup_mu_wagon_gen4_livestock_van_livestock_l4 {
-    loading: [spriteset_mu_wagon_gen4_livestock_van_livestock_l4_s1, spriteset_mu_wagon_gen4_livestock_van_livestock_l4_s2, spriteset_mu_wagon_gen4_livestock_van_livestock_l4_s3];
-    loaded: [spriteset_mu_wagon_gen4_livestock_van_livestock_l4_s1, spriteset_mu_wagon_gen4_livestock_van_livestock_l4_s2, spriteset_mu_wagon_gen4_livestock_van_livestock_l4_s3];
+    loading: [
+	spriteset_mu_wagon_gen4_livestock_van_livestock_l4_s1,
+	spriteset_mu_wagon_gen4_livestock_van_livestock_l4_s2,
+	spriteset_mu_wagon_gen4_livestock_van_livestock_l4_s3
+];
+    loaded: [
+	spriteset_mu_wagon_gen4_livestock_van_livestock_l4_s1,
+	spriteset_mu_wagon_gen4_livestock_van_livestock_l4_s2,
+	spriteset_mu_wagon_gen4_livestock_van_livestock_l4_s3
+];
 }
 
 // Random Livery Selector for livestock

@@ -25,8 +25,16 @@ spriteset(spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_l1, "gfx/wagons_m
 
 /// LIVERY 1 SPRITEGROUP - MIDDLE
 spritegroup spritegroup_mglv_wagon_gen7m_superheavy_flatcar_middle_l1 {
-    loading: [spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_empty, spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_l1, spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_l1];
-    loaded: [spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_empty, spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_l1, spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_l1];
+    loading: [
+	spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_empty,
+	spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_l1,
+	spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_l1
+];
+    loaded: [
+	spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_empty,
+	spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_l1,
+	spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_l1
+];
 }
 
 /// Middle L2
@@ -35,8 +43,16 @@ spriteset(spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_l2, "gfx/wagons_m
 
 /// LIVERY 2 SPRITEGROUP - MIDDLE
 spritegroup spritegroup_mglv_wagon_gen7m_superheavy_flatcar_middle_l2 {
-    loading: [spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_empty, spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_l2, spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_l2];
-    loaded: [spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_empty, spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_l2, spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_l2];
+    loading: [
+	spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_empty,
+	spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_l2,
+	spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_l2
+];
+    loaded: [
+	spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_empty,
+	spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_l2,
+	spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_l2
+];
 }
 
 /// Middle L3
@@ -45,8 +61,16 @@ spriteset(spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_l3, "gfx/wagons_m
 
 /// LIVERY 3 SPRITEGROUP - MIDDLE
 spritegroup spritegroup_mglv_wagon_gen7m_superheavy_flatcar_middle_l3 {
-    loading: [spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_empty, spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_l3, spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_l3];
-    loaded: [spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_empty, spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_l3, spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_l3];
+    loading: [
+	spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_empty,
+	spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_l3,
+	spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_l3
+];
+    loaded: [
+	spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_empty,
+	spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_l3,
+	spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_l3
+];
 }
 
 /// Middle L4
@@ -55,8 +79,16 @@ spriteset(spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_l4, "gfx/wagons_m
 
 /// LIVERY 4 SPRITEGROUP - MIDDLE
 spritegroup spritegroup_mglv_wagon_gen7m_superheavy_flatcar_middle_l4 {
-    loading: [spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_empty, spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_l4, spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_l4];
-    loaded: [spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_empty, spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_l4, spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_l4];
+    loading: [
+	spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_empty,
+	spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_l4,
+	spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_l4
+];
+    loaded: [
+	spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_empty,
+	spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_l4,
+	spriteset_mglv_wagon_gen7m_superheavy_flatcar_middle_l4
+];
 }
 
 // Random Livery Selector for middle

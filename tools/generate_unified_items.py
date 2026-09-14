@@ -91,10 +91,9 @@ def load_master_data(excel_path):
             # Extract notes from this sheet before merging
             extract_notes(sheet_name, current_sheet)
 
-            # --- Your existing merge logic ---
             cols_to_fix = [c for c in text_columns if c in current_sheet.columns]
             for col in cols_to_fix:
-                current_sheet[col] = current_sheet[col].astype(str).replace("nan", "")
+                current_sheet[col] = current_sheet[col].astype("string").fillna("")
 
             overlapping_cols = [c for c in current_sheet.columns if c in df_master.columns and c != "VEHIDCODE"]
 
@@ -119,6 +118,20 @@ def load_master_data(excel_path):
 def is_true(val) -> bool:
     """Checks if a value evals to true (ie is a string that says so, or 1, or just True)"""
     return (val == True or str(val).upper() == "TRUE") or (val == 1)
+
+
+def get_graphics_switch_cargo_selection(TEMPLATE_ID_FULL: str, ROW_CARGODEF: str, VEHIDCODE_lcase: str):
+    if TEMPLATE_ID_FULL in [
+        "TPL_02A",
+        "TPL_02D",
+        "TPL_02E",
+        "TPL_02F",
+        "TPL_02F",
+        "TPL_02G",
+    ] or (TEMPLATE_ID_FULL.startswith("TPL_04") and ROW_CARGODEF != "NONE"):
+        return f"switch_{VEHIDCODE_lcase}_cargo_selection"
+
+    return None
 
 
 def get_badges(row: pd.Series) -> str:
@@ -700,15 +713,15 @@ def get_cargo_definitions(row: pd.Series) -> str:
             f"cargo_allow_refit: [];\n{" "*8}"
             f"cargo_disallow_refit: [];\n{" "*8}"
         ),
-        "BOXCAR_TYPE1": (
-            f"// cargodeftype: BOXCAR_TYPE1;\n{" "*8}"
+        "BOXCAR_TYPE_FOOD": (
+            f"// cargodeftype: BOXCAR_TYPE_FOOD;\n{" "*8}"
             f"refittable_cargo_classes: bitmask(CC_REFRIGERATED);\n{" "*8}"
             f"non_refittable_cargo_classes: bitmask(CC_NON_POTABLE);\n{" "*8}"
             f"cargo_allow_refit: [];\n{" "*8}"
             f"cargo_disallow_refit: [];\n{" "*8}"
         ),
-        "BOXCAR_TYPE2": (
-            f"// cargodeftype: BOXCAR_TYPE2;\n{" "*8}"
+        "BOXCAR_TYPE_NONFOOD": (
+            f"// cargodeftype: BOXCAR_TYPE_NONFOOD;\n{" "*8}"
             f"refittable_cargo_classes: bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_ARMOURED);\n{" "*8}"
             f"non_refittable_cargo_classes: bitmask(CC_POTABLE);\n{" "*8}"
             f"cargo_allow_refit: [];\n{" "*8}"
@@ -777,15 +790,15 @@ def get_cargo_definitions(row: pd.Series) -> str:
             f"cargo_allow_refit: [];\n{" "*8}"
             f"cargo_disallow_refit: [];\n{" "*8}"
         ),
-        "HOPPER_TYPE1": (
-            f"// cargodeftype: HOPPER_TYPE1;\n{" "*8}"
+        "HOPPER_TYPE_FOOD": (
+            f"// cargodeftype: HOPPER_TYPE_FOOD;\n{" "*8}"
             f"refittable_cargo_classes: bitmask(CC_OPEN_BULK, CC_COVERED_BULK);\n{" "*8}"
             f"non_refittable_cargo_classes: bitmask(CC_NON_POTABLE);\n{" "*8}"
             f"cargo_allow_refit: [];\n{" "*8}"
             f"cargo_disallow_refit: [];\n{" "*8}"
         ),
-        "HOPPER_TYPE2": (
-            f"// cargodeftype: HOPPER_TYPE2;\n{" "*8}"
+        "HOPPER_TYPE_NONFOOD": (
+            f"// cargodeftype: HOPPER_TYPE_NONFOOD;\n{" "*8}"
             f"refittable_cargo_classes: bitmask(CC_OPEN_BULK, CC_COVERED_BULK);\n{" "*8}"
             f"non_refittable_cargo_classes: bitmask(CC_POTABLE);\n{" "*8}"
             f"cargo_allow_refit: [];\n{" "*8}"
@@ -798,7 +811,14 @@ def get_cargo_definitions(row: pd.Series) -> str:
             f"cargo_allow_refit: [LVST];\n{" "*8}"
             f"cargo_disallow_refit: [];\n{" "*8}"
         ),
-        "OPEN_WAGON": (
+        "OPEN_WAGON_G1": (
+            f"// cargodeftype: OPEN_WAGON;\n{" "*8}"
+            f"refittable_cargo_classes: bitmask(CC_PIECE_GOODS,CC_OPEN_BULK,CC_COVERED_BULK,CC_POWDER_BULK,CC_LIQUID_BULK,CC_GAS_BULK,CC_FLATBED,CC_EXPRESS,CC_WEIRD);\n{" "*8}"
+            f"{NO_NONREFITTABLE}\n{" "*8}"
+            f"cargo_allow_refit: [];\n{" "*8}"
+            f"cargo_disallow_refit: [];\n{" "*8}"
+        ),
+        "OPEN_WAGON_G2PLUS": (
             f"// cargodeftype: OPEN_WAGON;\n{" "*8}"
             f"refittable_cargo_classes: bitmask(CC_PIECE_GOODS,CC_OPEN_BULK,CC_COVERED_BULK,CC_POWDER_BULK,CC_LIQUID_BULK,CC_GAS_BULK,CC_FLATBED,CC_EXPRESS,CC_WEIRD);\n{" "*8}"
             f"{NO_NONREFITTABLE}\n{" "*8}"
@@ -819,15 +839,15 @@ def get_cargo_definitions(row: pd.Series) -> str:
             f"cargo_allow_refit: [];\n{" "*8}"
             f"cargo_disallow_refit: [];\n{" "*8}"
         ),
-        "SILO_TYPE1": (
-            f"// cargodeftype: SILO_TYPE1;\n{" "*8}"
+        "SILO_TYPE_FOOD": (
+            f"// cargodeftype: SILO_TYPE_FOOD;\n{" "*8}"
             f"refittable_cargo_classes: bitmask(CC_POWDER_BULK);\n{" "*8}"
             f"non_refittable_cargo_classes: bitmask(CC_NON_POTABLE);\n{" "*8}"
             f"cargo_allow_refit: [];\n{" "*8}"
             f"cargo_disallow_refit: [];\n{" "*8}"
         ),
-        "SILO_TYPE2": (
-            f"// cargodeftype: SILO_TYPE2;\n{" "*8}"
+        "SILO_TYPE_NONFOOD": (
+            f"// cargodeftype: SILO_TYPE_NONFOOD;\n{" "*8}"
             f"refittable_cargo_classes: bitmask(CC_POWDER_BULK);\n{" "*8}"
             f"non_refittable_cargo_classes: bitmask(CC_POTABLE);\n{" "*8}"
             f"cargo_allow_refit: [];\n{" "*8}"
@@ -928,10 +948,11 @@ def generate_unified_items():
         VEHID_ID_INT = int(row["VEHID_ID"])
         VEHIDCODE_lcase: str = row["VEHIDCODE"].lower()
         veh_notes: dict = notes_lookup.get(VEHIDCODE_lcase, {})
+        ROW_CARGODEF = str(row.get("CARGODEF", "NONE")).strip().upper()
         TEMPLATE_ID = row["TEMPLATE_ID"]
         TEMPLATE_AMENDMENT_CODE = row["TEMPLATE_AMENDMENT_CODE"]
 
-        TEMPLATE_ID_FULL = f"{TEMPLATE_ID}{TEMPLATE_AMENDMENT_CODE}"
+        TEMPLATE_ID_FULL: str = f"{TEMPLATE_ID}{TEMPLATE_AMENDMENT_CODE}"
 
         RUNNING_COST_BASE = f"RUNNING_COST_{'ELECTRIC' if row['ENGINE_CLASS'] == 'MAGLEV' else row['ENGINE_CLASS']}"
 
@@ -1106,33 +1127,6 @@ def generate_unified_items():
         graphics_switch_back_livery = (
             f"switch_{VEHIDCODE_lcase}_back_livery" if TEMPLATE_ID_FULL in ["TPL_42A", "TPL_42C"] else None
         )
-        graphics_switch_cargo_selection = (
-            f"switch_{VEHIDCODE_lcase}_cargo_selection"
-            if TEMPLATE_ID_FULL
-            in [
-                "TPL_02A",
-                "TPL_02D",
-                "TPL_02E",
-                "TPL_02F",
-                "TPL_02F",
-                "TPL_02G",
-                "TPL_04C",
-                "TPL_04E",
-                "TPL_04F",
-                "TPL_04G",
-                "TPL_04H",
-                "TPL_04I",
-                "TPL_04J",
-                "TPL_04K",
-                "TPL_04L",
-                "TPL_04M",
-                "TPL_04N",
-                "TPL_04O",
-                "TPL_04P",
-                "TPL_04Q",
-            ]
-            else None
-        )
 
         # This middle is not the middle above...[we ignore the 3-4 'steam' types that also actually have this because in legacy code i checked and it's not being applied.]
         graphics_spriteset_middle = (
@@ -1157,7 +1151,11 @@ def generate_unified_items():
 
         content = []
         content.append(f"\n{copyright_text}\n\n")
-        content.append(f"\n// Template: {TEMPLATE_ID_FULL}.\n// Data from: {row['WEB']}\n\n")
+        template_str = f"\n// Template: {TEMPLATE_ID_FULL}."
+        web_val = str(row["WEB"]) if pd.notna(row["WEB"]) else ""
+        data_str = f"\n// Data from: {web_val}" if web_val else ""
+
+        content.append(f"{template_str}{data_str}\n\n")
         if veh_notes:
             content.append("// Notes:\n")
             for k, v in veh_notes.items():
@@ -1390,50 +1388,46 @@ switch (FEAT_TRAINS, SELF, sw_loco_runningcost_{VEHIDCODE_lcase}, tile_powers_ra
                 "TPL_02E",
                 "TPL_02F",
                 "TPL_02G",
-                "TPL_04C",
-                "TPL_04E",
-                "TPL_04F",
-                "TPL_04G",
-                "TPL_04H",
-                "TPL_04I",
-                "TPL_04J",
-                "TPL_04K",
-                "TPL_04L",
-                "TPL_04M",
-                "TPL_04N",
-                "TPL_04O",
-                "TPL_04P",
-                "TPL_04Q",
             ]:
                 content.append(f"        default: switch_{VEHIDCODE_lcase}_cargo_selection;\n")
-            elif TEMPLATE_ID_FULL in [
-                "TPL_04C",
-                "TPL_04D",
-                "TPL_04J",
-                "TPL_04M",
-                "TPL_04P",
-            ]:
-                # Total cluserf.k but box-cars and some tanker-wagons have so-called standard liveries
-                # ....with a capital 'S'!
-                content.append(f"        default: switch_{VEHIDCODE_lcase}_standard_livery;\n")
-            elif TEMPLATE_ID_FULL in ["TPL_04T"]:
-                content.append(f"        default: switch_{VEHIDCODE_lcase}_livestock_livery;\n")
-            elif TEMPLATE_ID_FULL in [
-                "TPL_02F",
-                "TPL_04A",
-                "TPL_04B",
-                "TPL_04R",
-            ] and not is_true(row["HAS_CAB"]):
-                content.append(f"        default: switch_{VEHIDCODE_lcase}_livery;\n")
-            elif TEMPLATE_ID_FULL in ["TPL_04S"]:
-                content.append(f"        default: switch_{VEHIDCODE_lcase}_position_check;\n")
-            elif TEMPLATE_ID_FULL in [
-                "TPL_04U",
-            ] and not is_true(row["HAS_CAB"]):
-                content.append(f"        default: spriteset_{VEHIDCODE_lcase}_l1;\n")
-            elif TEMPLATE_ID_FULL in ["TPL_04A", "TPL_04U"] and is_true(row["HAS_CAB"]):
-                content.append(f"        default: switch_{VEHIDCODE_lcase}_position;\n")
-
+            elif TEMPLATE_ID_FULL.startswith("TPL_04"):
+                # these are TPL_04A (part of it), TPL_04S (part of it), TPL_04U
+                if ROW_CARGODEF in ["MAIL_ONLY", "PASSENGERS_ONLY", "PASSENGERS"]:
+                    if TEMPLATE_ID_FULL in ["TPL_04S"]:
+                        content.append(f"        default: switch_{VEHIDCODE_lcase}_position_check;\n")
+                    elif TEMPLATE_ID_FULL in [
+                        "TPL_04U",
+                    ] and not is_true(row["HAS_CAB"]):
+                        content.append(f"        default: spriteset_{VEHIDCODE_lcase}_l1;\n")
+                    elif TEMPLATE_ID_FULL in ["TPL_04A", "TPL_04U"] and is_true(row["HAS_CAB"]):
+                        content.append(f"        default: switch_{VEHIDCODE_lcase}_position;\n")
+                    else:
+                        content.append(f"        default: switch_{VEHIDCODE_lcase}_livery;\n")
+                elif ROW_CARGODEF in [
+                    "BOXCAR",
+                    "BOXCAR_TYPE_FOOD",
+                    "CENTERBEAM",
+                    "CONTAINER",
+                    "DOUBLECONTAINER",
+                    "FLAT_WAGON",
+                    "GONDOLA",
+                    "HEAVYFLAT",
+                    "HOPPER",
+                    "HOPPER_TYPE_FOOD",
+                    "HOPPER_TYPE_NONFOOD",
+                    "OPEN_WAGON_G1",
+                    "OPEN_WAGON_G2PLUS",
+                    "TANKER",
+                ]:
+                    content.append(f"        default: switch_{VEHIDCODE_lcase}_cargo_selection;\n")
+                elif ROW_CARGODEF in ["BOXCAR_TYPE_NONFOOD"]:
+                    content.append(f"        default: switch_{VEHIDCODE_lcase}_livery;\n")
+                elif ROW_CARGODEF in ["TANKER"]:
+                    content.append(f"        default: switch_{VEHIDCODE_lcase}_standard_livery;\n")
+                elif ROW_CARGODEF in ["LIVESTOCK"]:
+                    content.append(f"        default: switch_{VEHIDCODE_lcase}_livestock_livery;\n")
+                elif ROW_CARGODEF in ["SILO", "SILO_TYPE_FOOD", "SILO_TYPE_NONFOOD", "CARTRANSPORTER", "NONE"]:
+                    content.append(f"        default: switch_{VEHIDCODE_lcase}_livery;\n")
             else:
                 # I've lost track of this sh.t by now.
                 content.append(f"        default: switch_{VEHIDCODE_lcase};\n")
@@ -1479,7 +1473,7 @@ switch (FEAT_TRAINS, SELF, sw_loco_runningcost_{VEHIDCODE_lcase}, tile_powers_ra
             content.append(f"        length: {int(row['LENGTH_P3_WAGON'])};\n")
             content.append(
                 f"        default: {graphics_switch_middle_livery if graphics_switch_middle_livery
-                                               else graphics_switch_cargo_selection if graphics_switch_cargo_selection
+                                               else get_graphics_switch_cargo_selection(TEMPLATE_ID_FULL=TEMPLATE_ID_FULL, ROW_CARGODEF=ROW_CARGODEF, VEHIDCODE_lcase=VEHIDCODE_lcase) if get_graphics_switch_cargo_selection(TEMPLATE_ID_FULL=TEMPLATE_ID_FULL, ROW_CARGODEF=ROW_CARGODEF, VEHIDCODE_lcase=VEHIDCODE_lcase) 
                                                else graphics_spriteset_middle if graphics_spriteset_middle
                                                else graphics_switch_t42b_wagon_logic if graphics_switch_t42b_wagon_logic else None};\n"
             )
@@ -1503,7 +1497,7 @@ switch (FEAT_TRAINS, SELF, sw_loco_runningcost_{VEHIDCODE_lcase}, tile_powers_ra
             content.append(f"        length: {int(row['LENGTH_P3_WAGON'])};\n")
             content.append(
                 f"        default: {graphics_switch_middle_livery if graphics_switch_middle_livery
-                                               else graphics_switch_cargo_selection if graphics_switch_cargo_selection
+                                               else get_graphics_switch_cargo_selection(TEMPLATE_ID_FULL=TEMPLATE_ID_FULL, ROW_CARGODEF=ROW_CARGODEF, VEHIDCODE_lcase=VEHIDCODE_lcase) if get_graphics_switch_cargo_selection(TEMPLATE_ID_FULL=TEMPLATE_ID_FULL, ROW_CARGODEF=ROW_CARGODEF, VEHIDCODE_lcase=VEHIDCODE_lcase) 
                                                else graphics_spriteset_middle if graphics_spriteset_middle
                                                else graphics_switch_t42b_wagon_logic if graphics_switch_t42b_wagon_logic else None};\n"
             )

@@ -4,7 +4,7 @@
 // Template: TPL_04S
 
 // PURCHASE
-spriteset(spriteset_mu_coach_gen5_talgo_pendular_purchase, "gfx/coaches/gen5/coach_gen5_talgo_pendular.png") {template_purchase_coach(1, 107)}
+spriteset(spriteset_mu_coach_gen5_talgo_pendular_purchase, "gfx/coaches/gen5/coach_gen5_talgo_pendular.png") {template_purchase_coach(1, 143)}
 
 
 // VEHICLE
@@ -60,8 +60,6 @@ spriteset(spriteset_mu_coach_gen5_talgo_pendular_l4_s2, "gfx/coaches/gen5/coach_
 spriteset(spriteset_mu_coach_gen5_talgo_pendular_l4_s3, "gfx/coaches/gen5/coach_gen5_talgo_pendular.png") {template_2cc_wagons(535, 64)}
 
 
-
-/// RANDOM SWITCHES FOR REGULAR MIDDLE CARRIAGES (NORMAL VARIANTS)
 random_switch(FEAT_TRAINS, SELF, switch_mu_coach_gen5_talgo_pendular_middle_livery) {
     1: spriteset_mu_coach_gen5_talgo_pendular_l1_s1;
     1: spriteset_mu_coach_gen5_talgo_pendular_l2_s1;
@@ -69,8 +67,6 @@ random_switch(FEAT_TRAINS, SELF, switch_mu_coach_gen5_talgo_pendular_middle_live
     1: spriteset_mu_coach_gen5_talgo_pendular_l4_s1;
 }
 
-/// RANDOM SWITCHES FOR THE TAIL CARRIAGE (LAST VARIANTS)
-/// Uses the explicit .last property references inside the spritegroup definitions
 random_switch(FEAT_TRAINS, SELF, switch_mu_coach_gen5_talgo_pendular_tail_livery) {
     1: spriteset_mu_coach_gen5_talgo_pendular_l1_s2;
     1: spriteset_mu_coach_gen5_talgo_pendular_l2_s2;
@@ -78,8 +74,6 @@ random_switch(FEAT_TRAINS, SELF, switch_mu_coach_gen5_talgo_pendular_tail_livery
     1: spriteset_mu_coach_gen5_talgo_pendular_l4_s2;
 }
 
-/// RANDOM SWITCHES FOR THE TAIL CARRIAGE (LAST VARIANTS)
-/// Uses the explicit .last property references inside the spritegroup definitions
 random_switch(FEAT_TRAINS, SELF, switch_mu_coach_gen5_talgo_pendular_head_livery) {
     1: spriteset_mu_coach_gen5_talgo_pendular_l1_s3;
     1: spriteset_mu_coach_gen5_talgo_pendular_l2_s3;
@@ -87,12 +81,13 @@ random_switch(FEAT_TRAINS, SELF, switch_mu_coach_gen5_talgo_pendular_head_livery
     1: spriteset_mu_coach_gen5_talgo_pendular_l4_s3;
 }
 
+
 // Logic via https://github.com/OpenTTD-JPplus/JPengines/blob/modular/src/pax/12_series.pnml
 switch(FEAT_TRAINS, SELF, switch_mu_coach_gen5_talgo_pendular_end, position_in_vehid_chain_from_end) {
 	0: switch_mu_coach_gen5_talgo_pendular_tail_livery;
 	switch_mu_coach_gen5_talgo_pendular_middle_livery;
 	}
-	
+    
 
 switch(FEAT_TRAINS, SELF, switch_mu_coach_gen5_talgo_pendular_position_check, position_in_vehid_chain) {
 	0: switch_mu_coach_gen5_talgo_pendular_head_livery;

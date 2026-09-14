@@ -1,7 +1,7 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
-// Template: TPL_04E
+// Template: TPL_04B
 
 // PURCHASE
 spriteset(spriteset_mu_wagon_gen5_centerbeam_purchase, "gfx/wagons/gen5/wagon_gen5_centerbeam_purchase.png") {template_purchase_wagon(1, 1)}
@@ -9,7 +9,7 @@ spriteset(spriteset_mu_wagon_gen5_centerbeam_purchase, "gfx/wagons/gen5/wagon_ge
 
 // VEHICLE
 
-// crates
+// CRATES
 
 /// LIVERY 1   LOADING STATE 1   CRATES
 spriteset(spriteset_mu_wagon_gen5_centerbeam_crates_l1_s1, "gfx/wagons/gen5/wagon_gen5_centerbeam_crates.png") {template_2cc_wagons(1, 1)}
@@ -25,8 +25,16 @@ spriteset(spriteset_mu_wagon_gen5_centerbeam_crates_l1_s3, "gfx/wagons/gen5/wago
 
 /// LIVERY 1 SPRITEGROUP - CRATES
 spritegroup spritegroup_mu_wagon_gen5_centerbeam_crates_l1 {
-    loading: [spriteset_mu_wagon_gen5_centerbeam_crates_l1_s1, spriteset_mu_wagon_gen5_centerbeam_crates_l1_s2, spriteset_mu_wagon_gen5_centerbeam_crates_l1_s3];
-    loaded: [spriteset_mu_wagon_gen5_centerbeam_crates_l1_s1, spriteset_mu_wagon_gen5_centerbeam_crates_l1_s2, spriteset_mu_wagon_gen5_centerbeam_crates_l1_s3];
+    loading: [
+	spriteset_mu_wagon_gen5_centerbeam_crates_l1_s1,
+	spriteset_mu_wagon_gen5_centerbeam_crates_l1_s2,
+	spriteset_mu_wagon_gen5_centerbeam_crates_l1_s3
+];
+    loaded: [
+	spriteset_mu_wagon_gen5_centerbeam_crates_l1_s1,
+	spriteset_mu_wagon_gen5_centerbeam_crates_l1_s2,
+	spriteset_mu_wagon_gen5_centerbeam_crates_l1_s3
+];
 }
 
 /// LIVERY 2   LOADING STATE 1   CRATES
@@ -43,8 +51,16 @@ spriteset(spriteset_mu_wagon_gen5_centerbeam_crates_l2_s3, "gfx/wagons/gen5/wago
 
 /// LIVERY 2 SPRITEGROUP - CRATES
 spritegroup spritegroup_mu_wagon_gen5_centerbeam_crates_l2 {
-    loading: [spriteset_mu_wagon_gen5_centerbeam_crates_l2_s1, spriteset_mu_wagon_gen5_centerbeam_crates_l2_s2, spriteset_mu_wagon_gen5_centerbeam_crates_l2_s3];
-    loaded: [spriteset_mu_wagon_gen5_centerbeam_crates_l2_s1, spriteset_mu_wagon_gen5_centerbeam_crates_l2_s2, spriteset_mu_wagon_gen5_centerbeam_crates_l2_s3];
+    loading: [
+	spriteset_mu_wagon_gen5_centerbeam_crates_l2_s1,
+	spriteset_mu_wagon_gen5_centerbeam_crates_l2_s2,
+	spriteset_mu_wagon_gen5_centerbeam_crates_l2_s3
+];
+    loaded: [
+	spriteset_mu_wagon_gen5_centerbeam_crates_l2_s1,
+	spriteset_mu_wagon_gen5_centerbeam_crates_l2_s2,
+	spriteset_mu_wagon_gen5_centerbeam_crates_l2_s3
+];
 }
 
 /// LIVERY 3   LOADING STATE 1   CRATES
@@ -61,8 +77,16 @@ spriteset(spriteset_mu_wagon_gen5_centerbeam_crates_l3_s3, "gfx/wagons/gen5/wago
 
 /// LIVERY 3 SPRITEGROUP - CRATES
 spritegroup spritegroup_mu_wagon_gen5_centerbeam_crates_l3 {
-    loading: [spriteset_mu_wagon_gen5_centerbeam_crates_l3_s1, spriteset_mu_wagon_gen5_centerbeam_crates_l3_s2, spriteset_mu_wagon_gen5_centerbeam_crates_l3_s3];
-    loaded: [spriteset_mu_wagon_gen5_centerbeam_crates_l3_s1, spriteset_mu_wagon_gen5_centerbeam_crates_l3_s2, spriteset_mu_wagon_gen5_centerbeam_crates_l3_s3];
+    loading: [
+	spriteset_mu_wagon_gen5_centerbeam_crates_l3_s1,
+	spriteset_mu_wagon_gen5_centerbeam_crates_l3_s2,
+	spriteset_mu_wagon_gen5_centerbeam_crates_l3_s3
+];
+    loaded: [
+	spriteset_mu_wagon_gen5_centerbeam_crates_l3_s1,
+	spriteset_mu_wagon_gen5_centerbeam_crates_l3_s2,
+	spriteset_mu_wagon_gen5_centerbeam_crates_l3_s3
+];
 }
 
 /// LIVERY 4   LOADING STATE 1   CRATES
@@ -79,8 +103,16 @@ spriteset(spriteset_mu_wagon_gen5_centerbeam_crates_l4_s3, "gfx/wagons/gen5/wago
 
 /// LIVERY 4 SPRITEGROUP - CRATES
 spritegroup spritegroup_mu_wagon_gen5_centerbeam_crates_l4 {
-    loading: [spriteset_mu_wagon_gen5_centerbeam_crates_l4_s1, spriteset_mu_wagon_gen5_centerbeam_crates_l4_s2, spriteset_mu_wagon_gen5_centerbeam_crates_l4_s3];
-    loaded: [spriteset_mu_wagon_gen5_centerbeam_crates_l4_s1, spriteset_mu_wagon_gen5_centerbeam_crates_l4_s2, spriteset_mu_wagon_gen5_centerbeam_crates_l4_s3];
+    loading: [
+	spriteset_mu_wagon_gen5_centerbeam_crates_l4_s1,
+	spriteset_mu_wagon_gen5_centerbeam_crates_l4_s2,
+	spriteset_mu_wagon_gen5_centerbeam_crates_l4_s3
+];
+    loaded: [
+	spriteset_mu_wagon_gen5_centerbeam_crates_l4_s1,
+	spriteset_mu_wagon_gen5_centerbeam_crates_l4_s2,
+	spriteset_mu_wagon_gen5_centerbeam_crates_l4_s3
+];
 }
 
 // Random Livery Selector for crates
@@ -91,7 +123,7 @@ random_switch(FEAT_TRAINS, SELF, switch_mu_wagon_gen5_centerbeam_crates_livery) 
 	1: spritegroup_mu_wagon_gen5_centerbeam_crates_l4;
 }
 
-// planks
+// PLANKS
 
 /// LIVERY 1   LOADING STATE 1   PLANKS
 spriteset(spriteset_mu_wagon_gen5_centerbeam_planks_l1_s1, "gfx/wagons/gen5/wagon_gen5_centerbeam_planks.png") {template_2cc_wagons(1, 1)}
@@ -107,8 +139,16 @@ spriteset(spriteset_mu_wagon_gen5_centerbeam_planks_l1_s3, "gfx/wagons/gen5/wago
 
 /// LIVERY 1 SPRITEGROUP - PLANKS
 spritegroup spritegroup_mu_wagon_gen5_centerbeam_planks_l1 {
-    loading: [spriteset_mu_wagon_gen5_centerbeam_planks_l1_s1, spriteset_mu_wagon_gen5_centerbeam_planks_l1_s2, spriteset_mu_wagon_gen5_centerbeam_planks_l1_s3];
-    loaded: [spriteset_mu_wagon_gen5_centerbeam_planks_l1_s1, spriteset_mu_wagon_gen5_centerbeam_planks_l1_s2, spriteset_mu_wagon_gen5_centerbeam_planks_l1_s3];
+    loading: [
+	spriteset_mu_wagon_gen5_centerbeam_planks_l1_s1,
+	spriteset_mu_wagon_gen5_centerbeam_planks_l1_s2,
+	spriteset_mu_wagon_gen5_centerbeam_planks_l1_s3
+];
+    loaded: [
+	spriteset_mu_wagon_gen5_centerbeam_planks_l1_s1,
+	spriteset_mu_wagon_gen5_centerbeam_planks_l1_s2,
+	spriteset_mu_wagon_gen5_centerbeam_planks_l1_s3
+];
 }
 
 /// LIVERY 2   LOADING STATE 1   PLANKS
@@ -125,8 +165,16 @@ spriteset(spriteset_mu_wagon_gen5_centerbeam_planks_l2_s3, "gfx/wagons/gen5/wago
 
 /// LIVERY 2 SPRITEGROUP - PLANKS
 spritegroup spritegroup_mu_wagon_gen5_centerbeam_planks_l2 {
-    loading: [spriteset_mu_wagon_gen5_centerbeam_planks_l2_s1, spriteset_mu_wagon_gen5_centerbeam_planks_l2_s2, spriteset_mu_wagon_gen5_centerbeam_planks_l2_s3];
-    loaded: [spriteset_mu_wagon_gen5_centerbeam_planks_l2_s1, spriteset_mu_wagon_gen5_centerbeam_planks_l2_s2, spriteset_mu_wagon_gen5_centerbeam_planks_l2_s3];
+    loading: [
+	spriteset_mu_wagon_gen5_centerbeam_planks_l2_s1,
+	spriteset_mu_wagon_gen5_centerbeam_planks_l2_s2,
+	spriteset_mu_wagon_gen5_centerbeam_planks_l2_s3
+];
+    loaded: [
+	spriteset_mu_wagon_gen5_centerbeam_planks_l2_s1,
+	spriteset_mu_wagon_gen5_centerbeam_planks_l2_s2,
+	spriteset_mu_wagon_gen5_centerbeam_planks_l2_s3
+];
 }
 
 /// LIVERY 3   LOADING STATE 1   PLANKS
@@ -143,8 +191,16 @@ spriteset(spriteset_mu_wagon_gen5_centerbeam_planks_l3_s3, "gfx/wagons/gen5/wago
 
 /// LIVERY 3 SPRITEGROUP - PLANKS
 spritegroup spritegroup_mu_wagon_gen5_centerbeam_planks_l3 {
-    loading: [spriteset_mu_wagon_gen5_centerbeam_planks_l3_s1, spriteset_mu_wagon_gen5_centerbeam_planks_l3_s2, spriteset_mu_wagon_gen5_centerbeam_planks_l3_s3];
-    loaded: [spriteset_mu_wagon_gen5_centerbeam_planks_l3_s1, spriteset_mu_wagon_gen5_centerbeam_planks_l3_s2, spriteset_mu_wagon_gen5_centerbeam_planks_l3_s3];
+    loading: [
+	spriteset_mu_wagon_gen5_centerbeam_planks_l3_s1,
+	spriteset_mu_wagon_gen5_centerbeam_planks_l3_s2,
+	spriteset_mu_wagon_gen5_centerbeam_planks_l3_s3
+];
+    loaded: [
+	spriteset_mu_wagon_gen5_centerbeam_planks_l3_s1,
+	spriteset_mu_wagon_gen5_centerbeam_planks_l3_s2,
+	spriteset_mu_wagon_gen5_centerbeam_planks_l3_s3
+];
 }
 
 /// LIVERY 4   LOADING STATE 1   PLANKS
@@ -161,8 +217,16 @@ spriteset(spriteset_mu_wagon_gen5_centerbeam_planks_l4_s3, "gfx/wagons/gen5/wago
 
 /// LIVERY 4 SPRITEGROUP - PLANKS
 spritegroup spritegroup_mu_wagon_gen5_centerbeam_planks_l4 {
-    loading: [spriteset_mu_wagon_gen5_centerbeam_planks_l4_s1, spriteset_mu_wagon_gen5_centerbeam_planks_l4_s2, spriteset_mu_wagon_gen5_centerbeam_planks_l4_s3];
-    loaded: [spriteset_mu_wagon_gen5_centerbeam_planks_l4_s1, spriteset_mu_wagon_gen5_centerbeam_planks_l4_s2, spriteset_mu_wagon_gen5_centerbeam_planks_l4_s3];
+    loading: [
+	spriteset_mu_wagon_gen5_centerbeam_planks_l4_s1,
+	spriteset_mu_wagon_gen5_centerbeam_planks_l4_s2,
+	spriteset_mu_wagon_gen5_centerbeam_planks_l4_s3
+];
+    loaded: [
+	spriteset_mu_wagon_gen5_centerbeam_planks_l4_s1,
+	spriteset_mu_wagon_gen5_centerbeam_planks_l4_s2,
+	spriteset_mu_wagon_gen5_centerbeam_planks_l4_s3
+];
 }
 
 // Random Livery Selector for planks
@@ -173,7 +237,7 @@ random_switch(FEAT_TRAINS, SELF, switch_mu_wagon_gen5_centerbeam_planks_livery) 
 	1: spritegroup_mu_wagon_gen5_centerbeam_planks_l4;
 }
 
-// steel
+// STEEL
 
 /// LIVERY 1   LOADING STATE 1   STEEL
 spriteset(spriteset_mu_wagon_gen5_centerbeam_steel_l1_s1, "gfx/wagons/gen5/wagon_gen5_centerbeam_steel.png") {template_2cc_wagons(1, 1)}
@@ -189,8 +253,16 @@ spriteset(spriteset_mu_wagon_gen5_centerbeam_steel_l1_s3, "gfx/wagons/gen5/wagon
 
 /// LIVERY 1 SPRITEGROUP - STEEL
 spritegroup spritegroup_mu_wagon_gen5_centerbeam_steel_l1 {
-    loading: [spriteset_mu_wagon_gen5_centerbeam_steel_l1_s1, spriteset_mu_wagon_gen5_centerbeam_steel_l1_s2, spriteset_mu_wagon_gen5_centerbeam_steel_l1_s3];
-    loaded: [spriteset_mu_wagon_gen5_centerbeam_steel_l1_s1, spriteset_mu_wagon_gen5_centerbeam_steel_l1_s2, spriteset_mu_wagon_gen5_centerbeam_steel_l1_s3];
+    loading: [
+	spriteset_mu_wagon_gen5_centerbeam_steel_l1_s1,
+	spriteset_mu_wagon_gen5_centerbeam_steel_l1_s2,
+	spriteset_mu_wagon_gen5_centerbeam_steel_l1_s3
+];
+    loaded: [
+	spriteset_mu_wagon_gen5_centerbeam_steel_l1_s1,
+	spriteset_mu_wagon_gen5_centerbeam_steel_l1_s2,
+	spriteset_mu_wagon_gen5_centerbeam_steel_l1_s3
+];
 }
 
 /// LIVERY 2   LOADING STATE 1   STEEL
@@ -207,8 +279,16 @@ spriteset(spriteset_mu_wagon_gen5_centerbeam_steel_l2_s3, "gfx/wagons/gen5/wagon
 
 /// LIVERY 2 SPRITEGROUP - STEEL
 spritegroup spritegroup_mu_wagon_gen5_centerbeam_steel_l2 {
-    loading: [spriteset_mu_wagon_gen5_centerbeam_steel_l2_s1, spriteset_mu_wagon_gen5_centerbeam_steel_l2_s2, spriteset_mu_wagon_gen5_centerbeam_steel_l2_s3];
-    loaded: [spriteset_mu_wagon_gen5_centerbeam_steel_l2_s1, spriteset_mu_wagon_gen5_centerbeam_steel_l2_s2, spriteset_mu_wagon_gen5_centerbeam_steel_l2_s3];
+    loading: [
+	spriteset_mu_wagon_gen5_centerbeam_steel_l2_s1,
+	spriteset_mu_wagon_gen5_centerbeam_steel_l2_s2,
+	spriteset_mu_wagon_gen5_centerbeam_steel_l2_s3
+];
+    loaded: [
+	spriteset_mu_wagon_gen5_centerbeam_steel_l2_s1,
+	spriteset_mu_wagon_gen5_centerbeam_steel_l2_s2,
+	spriteset_mu_wagon_gen5_centerbeam_steel_l2_s3
+];
 }
 
 /// LIVERY 3   LOADING STATE 1   STEEL
@@ -225,8 +305,16 @@ spriteset(spriteset_mu_wagon_gen5_centerbeam_steel_l3_s3, "gfx/wagons/gen5/wagon
 
 /// LIVERY 3 SPRITEGROUP - STEEL
 spritegroup spritegroup_mu_wagon_gen5_centerbeam_steel_l3 {
-    loading: [spriteset_mu_wagon_gen5_centerbeam_steel_l3_s1, spriteset_mu_wagon_gen5_centerbeam_steel_l3_s2, spriteset_mu_wagon_gen5_centerbeam_steel_l3_s3];
-    loaded: [spriteset_mu_wagon_gen5_centerbeam_steel_l3_s1, spriteset_mu_wagon_gen5_centerbeam_steel_l3_s2, spriteset_mu_wagon_gen5_centerbeam_steel_l3_s3];
+    loading: [
+	spriteset_mu_wagon_gen5_centerbeam_steel_l3_s1,
+	spriteset_mu_wagon_gen5_centerbeam_steel_l3_s2,
+	spriteset_mu_wagon_gen5_centerbeam_steel_l3_s3
+];
+    loaded: [
+	spriteset_mu_wagon_gen5_centerbeam_steel_l3_s1,
+	spriteset_mu_wagon_gen5_centerbeam_steel_l3_s2,
+	spriteset_mu_wagon_gen5_centerbeam_steel_l3_s3
+];
 }
 
 /// LIVERY 4   LOADING STATE 1   STEEL
@@ -243,8 +331,16 @@ spriteset(spriteset_mu_wagon_gen5_centerbeam_steel_l4_s3, "gfx/wagons/gen5/wagon
 
 /// LIVERY 4 SPRITEGROUP - STEEL
 spritegroup spritegroup_mu_wagon_gen5_centerbeam_steel_l4 {
-    loading: [spriteset_mu_wagon_gen5_centerbeam_steel_l4_s1, spriteset_mu_wagon_gen5_centerbeam_steel_l4_s2, spriteset_mu_wagon_gen5_centerbeam_steel_l4_s3];
-    loaded: [spriteset_mu_wagon_gen5_centerbeam_steel_l4_s1, spriteset_mu_wagon_gen5_centerbeam_steel_l4_s2, spriteset_mu_wagon_gen5_centerbeam_steel_l4_s3];
+    loading: [
+	spriteset_mu_wagon_gen5_centerbeam_steel_l4_s1,
+	spriteset_mu_wagon_gen5_centerbeam_steel_l4_s2,
+	spriteset_mu_wagon_gen5_centerbeam_steel_l4_s3
+];
+    loaded: [
+	spriteset_mu_wagon_gen5_centerbeam_steel_l4_s1,
+	spriteset_mu_wagon_gen5_centerbeam_steel_l4_s2,
+	spriteset_mu_wagon_gen5_centerbeam_steel_l4_s3
+];
 }
 
 // Random Livery Selector for steel
@@ -255,17 +351,20 @@ random_switch(FEAT_TRAINS, SELF, switch_mu_wagon_gen5_centerbeam_steel_livery) {
 	1: spritegroup_mu_wagon_gen5_centerbeam_steel_l4;
 }
 
-                       random_switch(FEAT_TRAINS, SELF, switch_mu_wagon_gen5_centerbeam_supplies_livery) {
-	1: switch_mu_wagon_gen5_centerbeam_crates_livery;
-	1: switch_mu_wagon_gen5_centerbeam_planks_livery;
-	1: switch_mu_wagon_gen5_centerbeam_steel_livery;
+// Random Livery Selector for supplies
+random_switch(FEAT_TRAINS, SELF, switch_mu_wagon_gen5_centerbeam_supplies_livery) {
+	4: switch_mu_wagon_gen5_centerbeam_crates_livery;
+	3: switch_mu_wagon_gen5_centerbeam_planks_livery;
+	3: switch_mu_wagon_gen5_centerbeam_steel_livery;
 }
 
 switch(FEAT_TRAINS, SELF, switch_mu_wagon_gen5_centerbeam_cargo_selection, cargo_type_in_veh) {
-	STEL: switch_mu_wagon_gen5_centerbeam_steel_livery;
-	BDMT: switch_mu_wagon_gen5_centerbeam_supplies_livery;
-	MNSP: switch_mu_wagon_gen5_centerbeam_supplies_livery;
-	WDPR: switch_mu_wagon_gen5_centerbeam_planks_livery;
-    // Goods, Paper
-	switch_mu_wagon_gen5_centerbeam_crates_livery;
+    CERE: switch_mu_wagon_gen5_centerbeam_crates_livery;
+    CTCD: switch_mu_wagon_gen5_centerbeam_crates_livery;
+    FRUT: switch_mu_wagon_gen5_centerbeam_crates_livery;
+    OLSD: switch_mu_wagon_gen5_centerbeam_crates_livery;
+    SUGR: switch_mu_wagon_gen5_centerbeam_crates_livery;
+    WDPR: switch_mu_wagon_gen5_centerbeam_planks_livery;
+    STEL: switch_mu_wagon_gen5_centerbeam_steel_livery;
+    switch_mu_wagon_gen5_centerbeam_crates_livery;
 }

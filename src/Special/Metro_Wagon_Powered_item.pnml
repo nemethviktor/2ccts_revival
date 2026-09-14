@@ -4,7 +4,6 @@
 
 
 // Template: TPL_01F.
-// Data from: nan
 
 item(FEAT_TRAINS, item_mtro_metro_wagon_powered) {
     property {

@@ -4,7 +4,6 @@
 
 
 // Template: TPL_04B.
-// Data from: nan
 
 // Cargo capacity
 
@@ -40,7 +39,7 @@ item(FEAT_TRAINS, item_mu_wagon_gen4_silo_type2) {
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
-        // cargodeftype: SILO_TYPE2;
+        // cargodeftype: SILO_TYPE_NONFOOD;
         refittable_cargo_classes: bitmask(CC_POWDER_BULK);
         non_refittable_cargo_classes: bitmask(CC_POTABLE);
         cargo_allow_refit: [];

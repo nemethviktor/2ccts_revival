@@ -10,6 +10,7 @@
   - See below ref running cost changes.
   - `Powered/Unpowered **metro**` cars are allowed to run mail now. This is historically correct although a bit obscure.
   - Refined the role definition for `metro`, this has very little other effect on the game, it's mostly a fad, unless you filter on roles.
+  - Wagons have been re-templated and simplified in the code. Also now Type 1 Hoppers have Food graphics because they had been previous reallocated to food-only.
 - VEHICLES ADDS:
   - `Siemens Vectron MS`
   - `Siemens Vectron DE`

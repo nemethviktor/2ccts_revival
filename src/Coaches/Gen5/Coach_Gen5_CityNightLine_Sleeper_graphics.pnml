@@ -4,7 +4,7 @@
 // Template: TPL_04A
 
 // PURCHASE
-spriteset(spriteset_mu_coach_gen5_citynightline_sleeper_purchase, "gfx/coaches/gen5/coach_gen5_citynightline_sleeper.png") {template_purchase_coach(1, 107)}
+spriteset(spriteset_mu_coach_gen5_citynightline_sleeper_purchase, "gfx/coaches/gen5/coach_gen5_citynightline_sleeper.png") {template_purchase_coach(1, 143)}
 
 
 // VEHICLE

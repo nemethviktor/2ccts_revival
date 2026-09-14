@@ -4,7 +4,6 @@
 
 
 // Template: TPL_01A.
-// Data from: nan
 
 item(FEAT_TRAINS, item_diesel_clyde_emd_gt46cw_nr_concept) {
     property {

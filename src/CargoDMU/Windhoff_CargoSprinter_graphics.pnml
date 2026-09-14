@@ -23,8 +23,16 @@ spriteset(spriteset_cargodmu_windhoff_cargosprinter_front_l1_s3, "gfx/cargodmu/w
 
 /// LIVERY 1 SPRITEGROUP - FRONT
 spritegroup spritegroup_cargodmu_windhoff_cargosprinter_front_l1 {
-    loading: [spriteset_cargodmu_windhoff_cargosprinter_front_l1_s1, spriteset_cargodmu_windhoff_cargosprinter_front_l1_s2, spriteset_cargodmu_windhoff_cargosprinter_front_l1_s3];
-    loaded: [spriteset_cargodmu_windhoff_cargosprinter_front_l1_s1, spriteset_cargodmu_windhoff_cargosprinter_front_l1_s2, spriteset_cargodmu_windhoff_cargosprinter_front_l1_s3];
+    loading: [
+	spriteset_cargodmu_windhoff_cargosprinter_front_l1_s1,
+	spriteset_cargodmu_windhoff_cargosprinter_front_l1_s2,
+	spriteset_cargodmu_windhoff_cargosprinter_front_l1_s3
+];
+    loaded: [
+	spriteset_cargodmu_windhoff_cargosprinter_front_l1_s1,
+	spriteset_cargodmu_windhoff_cargosprinter_front_l1_s2,
+	spriteset_cargodmu_windhoff_cargosprinter_front_l1_s3
+];
 }
 
 /// FRONT   LIVERY 2   LOADING STATE 1
@@ -41,8 +49,22 @@ spriteset(spriteset_cargodmu_windhoff_cargosprinter_front_l2_s3, "gfx/cargodmu/w
 
 /// LIVERY 2 SPRITEGROUP - FRONT
 spritegroup spritegroup_cargodmu_windhoff_cargosprinter_front_l2 {
-    loading: [spriteset_cargodmu_windhoff_cargosprinter_front_l1_s1, spriteset_cargodmu_windhoff_cargosprinter_front_l1_s2, spriteset_cargodmu_windhoff_cargosprinter_front_l1_s3, spriteset_cargodmu_windhoff_cargosprinter_front_l2_s1, spriteset_cargodmu_windhoff_cargosprinter_front_l2_s2, spriteset_cargodmu_windhoff_cargosprinter_front_l2_s3];
-    loaded: [spriteset_cargodmu_windhoff_cargosprinter_front_l1_s1, spriteset_cargodmu_windhoff_cargosprinter_front_l1_s2, spriteset_cargodmu_windhoff_cargosprinter_front_l1_s3, spriteset_cargodmu_windhoff_cargosprinter_front_l2_s1, spriteset_cargodmu_windhoff_cargosprinter_front_l2_s2, spriteset_cargodmu_windhoff_cargosprinter_front_l2_s3];
+    loading: [
+	spriteset_cargodmu_windhoff_cargosprinter_front_l1_s1,
+	spriteset_cargodmu_windhoff_cargosprinter_front_l1_s2,
+	spriteset_cargodmu_windhoff_cargosprinter_front_l1_s3,
+	spriteset_cargodmu_windhoff_cargosprinter_front_l2_s1,
+	spriteset_cargodmu_windhoff_cargosprinter_front_l2_s2,
+	spriteset_cargodmu_windhoff_cargosprinter_front_l2_s3
+];
+    loaded: [
+	spriteset_cargodmu_windhoff_cargosprinter_front_l1_s1,
+	spriteset_cargodmu_windhoff_cargosprinter_front_l1_s2,
+	spriteset_cargodmu_windhoff_cargosprinter_front_l1_s3,
+	spriteset_cargodmu_windhoff_cargosprinter_front_l2_s1,
+	spriteset_cargodmu_windhoff_cargosprinter_front_l2_s2,
+	spriteset_cargodmu_windhoff_cargosprinter_front_l2_s3
+];
 }
 
 // Random Livery Selector for front
@@ -67,8 +89,16 @@ spriteset(spriteset_cargodmu_windhoff_cargosprinter_back_l1_s3, "gfx/cargodmu/wi
 
 /// LIVERY 1 SPRITEGROUP - BACK
 spritegroup spritegroup_cargodmu_windhoff_cargosprinter_back_l1 {
-    loading: [spriteset_cargodmu_windhoff_cargosprinter_back_l1_s1, spriteset_cargodmu_windhoff_cargosprinter_back_l1_s2, spriteset_cargodmu_windhoff_cargosprinter_back_l1_s3];
-    loaded: [spriteset_cargodmu_windhoff_cargosprinter_back_l1_s1, spriteset_cargodmu_windhoff_cargosprinter_back_l1_s2, spriteset_cargodmu_windhoff_cargosprinter_back_l1_s3];
+    loading: [
+	spriteset_cargodmu_windhoff_cargosprinter_back_l1_s1,
+	spriteset_cargodmu_windhoff_cargosprinter_back_l1_s2,
+	spriteset_cargodmu_windhoff_cargosprinter_back_l1_s3
+];
+    loaded: [
+	spriteset_cargodmu_windhoff_cargosprinter_back_l1_s1,
+	spriteset_cargodmu_windhoff_cargosprinter_back_l1_s2,
+	spriteset_cargodmu_windhoff_cargosprinter_back_l1_s3
+];
 }
 
 /// BACK   LIVERY 2   LOADING STATE 1
@@ -85,8 +115,22 @@ spriteset(spriteset_cargodmu_windhoff_cargosprinter_back_l2_s3, "gfx/cargodmu/wi
 
 /// LIVERY 2 SPRITEGROUP - BACK
 spritegroup spritegroup_cargodmu_windhoff_cargosprinter_back_l2 {
-    loading: [spriteset_cargodmu_windhoff_cargosprinter_back_l1_s1, spriteset_cargodmu_windhoff_cargosprinter_back_l1_s2, spriteset_cargodmu_windhoff_cargosprinter_back_l1_s3, spriteset_cargodmu_windhoff_cargosprinter_back_l2_s1, spriteset_cargodmu_windhoff_cargosprinter_back_l2_s2, spriteset_cargodmu_windhoff_cargosprinter_back_l2_s3];
-    loaded: [spriteset_cargodmu_windhoff_cargosprinter_back_l1_s1, spriteset_cargodmu_windhoff_cargosprinter_back_l1_s2, spriteset_cargodmu_windhoff_cargosprinter_back_l1_s3, spriteset_cargodmu_windhoff_cargosprinter_back_l2_s1, spriteset_cargodmu_windhoff_cargosprinter_back_l2_s2, spriteset_cargodmu_windhoff_cargosprinter_back_l2_s3];
+    loading: [
+	spriteset_cargodmu_windhoff_cargosprinter_back_l1_s1,
+	spriteset_cargodmu_windhoff_cargosprinter_back_l1_s2,
+	spriteset_cargodmu_windhoff_cargosprinter_back_l1_s3,
+	spriteset_cargodmu_windhoff_cargosprinter_back_l2_s1,
+	spriteset_cargodmu_windhoff_cargosprinter_back_l2_s2,
+	spriteset_cargodmu_windhoff_cargosprinter_back_l2_s3
+];
+    loaded: [
+	spriteset_cargodmu_windhoff_cargosprinter_back_l1_s1,
+	spriteset_cargodmu_windhoff_cargosprinter_back_l1_s2,
+	spriteset_cargodmu_windhoff_cargosprinter_back_l1_s3,
+	spriteset_cargodmu_windhoff_cargosprinter_back_l2_s1,
+	spriteset_cargodmu_windhoff_cargosprinter_back_l2_s2,
+	spriteset_cargodmu_windhoff_cargosprinter_back_l2_s3
+];
 }
 
 // Random Livery Selector for back
@@ -111,8 +155,16 @@ spriteset(spriteset_cargodmu_windhoff_cargosprinter_middle_l1_s3, "gfx/cargodmu/
 
 /// LIVERY 1 SPRITEGROUP - MIDDLE
 spritegroup spritegroup_cargodmu_windhoff_cargosprinter_middle_l1 {
-    loading: [spriteset_cargodmu_windhoff_cargosprinter_middle_l1_s1, spriteset_cargodmu_windhoff_cargosprinter_middle_l1_s2, spriteset_cargodmu_windhoff_cargosprinter_middle_l1_s3];
-    loaded: [spriteset_cargodmu_windhoff_cargosprinter_middle_l1_s1, spriteset_cargodmu_windhoff_cargosprinter_middle_l1_s2, spriteset_cargodmu_windhoff_cargosprinter_middle_l1_s3];
+    loading: [
+	spriteset_cargodmu_windhoff_cargosprinter_middle_l1_s1,
+	spriteset_cargodmu_windhoff_cargosprinter_middle_l1_s2,
+	spriteset_cargodmu_windhoff_cargosprinter_middle_l1_s3
+];
+    loaded: [
+	spriteset_cargodmu_windhoff_cargosprinter_middle_l1_s1,
+	spriteset_cargodmu_windhoff_cargosprinter_middle_l1_s2,
+	spriteset_cargodmu_windhoff_cargosprinter_middle_l1_s3
+];
 }
 
 /// MIDDLE   LIVERY 2   LOADING STATE 1
@@ -129,8 +181,22 @@ spriteset(spriteset_cargodmu_windhoff_cargosprinter_middle_l2_s3, "gfx/cargodmu/
 
 /// LIVERY 2 SPRITEGROUP - MIDDLE
 spritegroup spritegroup_cargodmu_windhoff_cargosprinter_middle_l2 {
-    loading: [spriteset_cargodmu_windhoff_cargosprinter_middle_l1_s1, spriteset_cargodmu_windhoff_cargosprinter_middle_l1_s2, spriteset_cargodmu_windhoff_cargosprinter_middle_l1_s3, spriteset_cargodmu_windhoff_cargosprinter_middle_l2_s1, spriteset_cargodmu_windhoff_cargosprinter_middle_l2_s2, spriteset_cargodmu_windhoff_cargosprinter_middle_l2_s3];
-    loaded: [spriteset_cargodmu_windhoff_cargosprinter_middle_l1_s1, spriteset_cargodmu_windhoff_cargosprinter_middle_l1_s2, spriteset_cargodmu_windhoff_cargosprinter_middle_l1_s3, spriteset_cargodmu_windhoff_cargosprinter_middle_l2_s1, spriteset_cargodmu_windhoff_cargosprinter_middle_l2_s2, spriteset_cargodmu_windhoff_cargosprinter_middle_l2_s3];
+    loading: [
+	spriteset_cargodmu_windhoff_cargosprinter_middle_l1_s1,
+	spriteset_cargodmu_windhoff_cargosprinter_middle_l1_s2,
+	spriteset_cargodmu_windhoff_cargosprinter_middle_l1_s3,
+	spriteset_cargodmu_windhoff_cargosprinter_middle_l2_s1,
+	spriteset_cargodmu_windhoff_cargosprinter_middle_l2_s2,
+	spriteset_cargodmu_windhoff_cargosprinter_middle_l2_s3
+];
+    loaded: [
+	spriteset_cargodmu_windhoff_cargosprinter_middle_l1_s1,
+	spriteset_cargodmu_windhoff_cargosprinter_middle_l1_s2,
+	spriteset_cargodmu_windhoff_cargosprinter_middle_l1_s3,
+	spriteset_cargodmu_windhoff_cargosprinter_middle_l2_s1,
+	spriteset_cargodmu_windhoff_cargosprinter_middle_l2_s2,
+	spriteset_cargodmu_windhoff_cargosprinter_middle_l2_s3
+];
 }
 
 // Random Livery Selector for middle

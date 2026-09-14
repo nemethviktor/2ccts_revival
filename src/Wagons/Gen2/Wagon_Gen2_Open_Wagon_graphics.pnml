@@ -1,7 +1,7 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
-// Template: TPL_04L
+// Template: TPL_04B
 
 // PURCHASE
 spriteset(spriteset_mu_wagon_gen2_open_wagon_purchase, "gfx/wagons/gen2/wagon_gen2_open_wagon_purchase.png") {template_purchase_wagon(1, 1)}
@@ -9,7 +9,7 @@ spriteset(spriteset_mu_wagon_gen2_open_wagon_purchase, "gfx/wagons/gen2/wagon_ge
 
 // VEHICLE
 
-// coal
+// COAL
 
 /// LIVERY 1   LOADING STATE 1   COAL
 spriteset(spriteset_mu_wagon_gen2_open_wagon_coal_l1_s1, "gfx/wagons/gen2/wagon_gen2_open_wagon_coal.png") {template_2cc_wagons(1, 1)}
@@ -25,8 +25,16 @@ spriteset(spriteset_mu_wagon_gen2_open_wagon_coal_l1_s3, "gfx/wagons/gen2/wagon_
 
 /// LIVERY 1 SPRITEGROUP - COAL
 spritegroup spritegroup_mu_wagon_gen2_open_wagon_coal_l1 {
-    loading: [spriteset_mu_wagon_gen2_open_wagon_coal_l1_s1, spriteset_mu_wagon_gen2_open_wagon_coal_l1_s2, spriteset_mu_wagon_gen2_open_wagon_coal_l1_s3];
-    loaded: [spriteset_mu_wagon_gen2_open_wagon_coal_l1_s1, spriteset_mu_wagon_gen2_open_wagon_coal_l1_s2, spriteset_mu_wagon_gen2_open_wagon_coal_l1_s3];
+    loading: [
+	spriteset_mu_wagon_gen2_open_wagon_coal_l1_s1,
+	spriteset_mu_wagon_gen2_open_wagon_coal_l1_s2,
+	spriteset_mu_wagon_gen2_open_wagon_coal_l1_s3
+];
+    loaded: [
+	spriteset_mu_wagon_gen2_open_wagon_coal_l1_s1,
+	spriteset_mu_wagon_gen2_open_wagon_coal_l1_s2,
+	spriteset_mu_wagon_gen2_open_wagon_coal_l1_s3
+];
 }
 
 /// LIVERY 2   LOADING STATE 1   COAL
@@ -43,8 +51,16 @@ spriteset(spriteset_mu_wagon_gen2_open_wagon_coal_l2_s3, "gfx/wagons/gen2/wagon_
 
 /// LIVERY 2 SPRITEGROUP - COAL
 spritegroup spritegroup_mu_wagon_gen2_open_wagon_coal_l2 {
-    loading: [spriteset_mu_wagon_gen2_open_wagon_coal_l2_s1, spriteset_mu_wagon_gen2_open_wagon_coal_l2_s2, spriteset_mu_wagon_gen2_open_wagon_coal_l2_s3];
-    loaded: [spriteset_mu_wagon_gen2_open_wagon_coal_l2_s1, spriteset_mu_wagon_gen2_open_wagon_coal_l2_s2, spriteset_mu_wagon_gen2_open_wagon_coal_l2_s3];
+    loading: [
+	spriteset_mu_wagon_gen2_open_wagon_coal_l2_s1,
+	spriteset_mu_wagon_gen2_open_wagon_coal_l2_s2,
+	spriteset_mu_wagon_gen2_open_wagon_coal_l2_s3
+];
+    loaded: [
+	spriteset_mu_wagon_gen2_open_wagon_coal_l2_s1,
+	spriteset_mu_wagon_gen2_open_wagon_coal_l2_s2,
+	spriteset_mu_wagon_gen2_open_wagon_coal_l2_s3
+];
 }
 
 /// LIVERY 3   LOADING STATE 1   COAL
@@ -61,8 +77,16 @@ spriteset(spriteset_mu_wagon_gen2_open_wagon_coal_l3_s3, "gfx/wagons/gen2/wagon_
 
 /// LIVERY 3 SPRITEGROUP - COAL
 spritegroup spritegroup_mu_wagon_gen2_open_wagon_coal_l3 {
-    loading: [spriteset_mu_wagon_gen2_open_wagon_coal_l3_s1, spriteset_mu_wagon_gen2_open_wagon_coal_l3_s2, spriteset_mu_wagon_gen2_open_wagon_coal_l3_s3];
-    loaded: [spriteset_mu_wagon_gen2_open_wagon_coal_l3_s1, spriteset_mu_wagon_gen2_open_wagon_coal_l3_s2, spriteset_mu_wagon_gen2_open_wagon_coal_l3_s3];
+    loading: [
+	spriteset_mu_wagon_gen2_open_wagon_coal_l3_s1,
+	spriteset_mu_wagon_gen2_open_wagon_coal_l3_s2,
+	spriteset_mu_wagon_gen2_open_wagon_coal_l3_s3
+];
+    loaded: [
+	spriteset_mu_wagon_gen2_open_wagon_coal_l3_s1,
+	spriteset_mu_wagon_gen2_open_wagon_coal_l3_s2,
+	spriteset_mu_wagon_gen2_open_wagon_coal_l3_s3
+];
 }
 
 /// LIVERY 4   LOADING STATE 1   COAL
@@ -79,8 +103,16 @@ spriteset(spriteset_mu_wagon_gen2_open_wagon_coal_l4_s3, "gfx/wagons/gen2/wagon_
 
 /// LIVERY 4 SPRITEGROUP - COAL
 spritegroup spritegroup_mu_wagon_gen2_open_wagon_coal_l4 {
-    loading: [spriteset_mu_wagon_gen2_open_wagon_coal_l4_s1, spriteset_mu_wagon_gen2_open_wagon_coal_l4_s2, spriteset_mu_wagon_gen2_open_wagon_coal_l4_s3];
-    loaded: [spriteset_mu_wagon_gen2_open_wagon_coal_l4_s1, spriteset_mu_wagon_gen2_open_wagon_coal_l4_s2, spriteset_mu_wagon_gen2_open_wagon_coal_l4_s3];
+    loading: [
+	spriteset_mu_wagon_gen2_open_wagon_coal_l4_s1,
+	spriteset_mu_wagon_gen2_open_wagon_coal_l4_s2,
+	spriteset_mu_wagon_gen2_open_wagon_coal_l4_s3
+];
+    loaded: [
+	spriteset_mu_wagon_gen2_open_wagon_coal_l4_s1,
+	spriteset_mu_wagon_gen2_open_wagon_coal_l4_s2,
+	spriteset_mu_wagon_gen2_open_wagon_coal_l4_s3
+];
 }
 
 // Random Livery Selector for coal
@@ -91,7 +123,7 @@ random_switch(FEAT_TRAINS, SELF, switch_mu_wagon_gen2_open_wagon_coal_livery) {
 	1: spritegroup_mu_wagon_gen2_open_wagon_coal_l4;
 }
 
-// grain
+// GRAIN
 
 /// LIVERY 1   LOADING STATE 1   GRAIN
 spriteset(spriteset_mu_wagon_gen2_open_wagon_grain_l1_s1, "gfx/wagons/gen2/wagon_gen2_open_wagon_grain.png") {template_2cc_wagons(1, 1)}
@@ -105,14 +137,22 @@ spriteset(spriteset_mu_wagon_gen2_open_wagon_grain_l1_s2, "gfx/wagons/gen2/wagon
 spriteset(spriteset_mu_wagon_gen2_open_wagon_grain_l1_s3, "gfx/wagons/gen2/wagon_gen2_open_wagon_grain.png") {template_2cc_wagons(1, 64)}
 
 
-/// LIVERY 1   LOADING STATE 4   GRAIN
+/// LIVERY 1   DRIVING STATE 4   GRAIN
 spriteset(spriteset_mu_wagon_gen2_open_wagon_grain_l1_s4, "gfx/wagons/gen2/wagon_gen2_open_wagon_grain.png") {template_2cc_wagons(1, 96)}
 
 
 /// LIVERY 1 SPRITEGROUP - GRAIN
 spritegroup spritegroup_mu_wagon_gen2_open_wagon_grain_l1 {
-    loading: [spriteset_mu_wagon_gen2_open_wagon_grain_l1_s1, spriteset_mu_wagon_gen2_open_wagon_grain_l1_s2, spriteset_mu_wagon_gen2_open_wagon_grain_l1_s3];
-    loaded: [spriteset_mu_wagon_gen2_open_wagon_grain_l1_s1, spriteset_mu_wagon_gen2_open_wagon_grain_l1_s4, spriteset_mu_wagon_gen2_open_wagon_grain_l1_s4];
+    loading: [
+	spriteset_mu_wagon_gen2_open_wagon_grain_l1_s1
+	, spriteset_mu_wagon_gen2_open_wagon_grain_l1_s2
+	, spriteset_mu_wagon_gen2_open_wagon_grain_l1_s3
+];
+    loaded: [
+	spriteset_mu_wagon_gen2_open_wagon_grain_l1_s1
+	, spriteset_mu_wagon_gen2_open_wagon_grain_l1_s4
+	, spriteset_mu_wagon_gen2_open_wagon_grain_l1_s4
+];
 }
 
 /// LIVERY 2   LOADING STATE 1   GRAIN
@@ -127,14 +167,22 @@ spriteset(spriteset_mu_wagon_gen2_open_wagon_grain_l2_s2, "gfx/wagons/gen2/wagon
 spriteset(spriteset_mu_wagon_gen2_open_wagon_grain_l2_s3, "gfx/wagons/gen2/wagon_gen2_open_wagon_grain.png") {template_2cc_wagons(179, 64)}
 
 
-/// LIVERY 2   LOADING STATE 4   GRAIN
+/// LIVERY 2   DRIVING STATE 4   GRAIN
 spriteset(spriteset_mu_wagon_gen2_open_wagon_grain_l2_s4, "gfx/wagons/gen2/wagon_gen2_open_wagon_grain.png") {template_2cc_wagons(179, 96)}
 
 
 /// LIVERY 2 SPRITEGROUP - GRAIN
 spritegroup spritegroup_mu_wagon_gen2_open_wagon_grain_l2 {
-    loading: [spriteset_mu_wagon_gen2_open_wagon_grain_l2_s1, spriteset_mu_wagon_gen2_open_wagon_grain_l2_s2, spriteset_mu_wagon_gen2_open_wagon_grain_l2_s3];
-    loaded: [spriteset_mu_wagon_gen2_open_wagon_grain_l2_s1, spriteset_mu_wagon_gen2_open_wagon_grain_l2_s4, spriteset_mu_wagon_gen2_open_wagon_grain_l2_s4];
+    loading: [
+	spriteset_mu_wagon_gen2_open_wagon_grain_l2_s1
+	, spriteset_mu_wagon_gen2_open_wagon_grain_l2_s2
+	, spriteset_mu_wagon_gen2_open_wagon_grain_l2_s3
+];
+    loaded: [
+	spriteset_mu_wagon_gen2_open_wagon_grain_l2_s1
+	, spriteset_mu_wagon_gen2_open_wagon_grain_l2_s4
+	, spriteset_mu_wagon_gen2_open_wagon_grain_l2_s4
+];
 }
 
 /// LIVERY 3   LOADING STATE 1   GRAIN
@@ -149,14 +197,22 @@ spriteset(spriteset_mu_wagon_gen2_open_wagon_grain_l3_s2, "gfx/wagons/gen2/wagon
 spriteset(spriteset_mu_wagon_gen2_open_wagon_grain_l3_s3, "gfx/wagons/gen2/wagon_gen2_open_wagon_grain.png") {template_2cc_wagons(357, 64)}
 
 
-/// LIVERY 3   LOADING STATE 4   GRAIN
+/// LIVERY 3   DRIVING STATE 4   GRAIN
 spriteset(spriteset_mu_wagon_gen2_open_wagon_grain_l3_s4, "gfx/wagons/gen2/wagon_gen2_open_wagon_grain.png") {template_2cc_wagons(357, 96)}
 
 
 /// LIVERY 3 SPRITEGROUP - GRAIN
 spritegroup spritegroup_mu_wagon_gen2_open_wagon_grain_l3 {
-    loading: [spriteset_mu_wagon_gen2_open_wagon_grain_l3_s1, spriteset_mu_wagon_gen2_open_wagon_grain_l3_s2, spriteset_mu_wagon_gen2_open_wagon_grain_l3_s3];
-    loaded: [spriteset_mu_wagon_gen2_open_wagon_grain_l3_s1, spriteset_mu_wagon_gen2_open_wagon_grain_l3_s4, spriteset_mu_wagon_gen2_open_wagon_grain_l3_s4];
+    loading: [
+	spriteset_mu_wagon_gen2_open_wagon_grain_l3_s1
+	, spriteset_mu_wagon_gen2_open_wagon_grain_l3_s2
+	, spriteset_mu_wagon_gen2_open_wagon_grain_l3_s3
+];
+    loaded: [
+	spriteset_mu_wagon_gen2_open_wagon_grain_l3_s1
+	, spriteset_mu_wagon_gen2_open_wagon_grain_l3_s4
+	, spriteset_mu_wagon_gen2_open_wagon_grain_l3_s4
+];
 }
 
 /// LIVERY 4   LOADING STATE 1   GRAIN
@@ -171,14 +227,22 @@ spriteset(spriteset_mu_wagon_gen2_open_wagon_grain_l4_s2, "gfx/wagons/gen2/wagon
 spriteset(spriteset_mu_wagon_gen2_open_wagon_grain_l4_s3, "gfx/wagons/gen2/wagon_gen2_open_wagon_grain.png") {template_2cc_wagons(535, 64)}
 
 
-/// LIVERY 4   LOADING STATE 4   GRAIN
+/// LIVERY 4   DRIVING STATE 4   GRAIN
 spriteset(spriteset_mu_wagon_gen2_open_wagon_grain_l4_s4, "gfx/wagons/gen2/wagon_gen2_open_wagon_grain.png") {template_2cc_wagons(535, 96)}
 
 
 /// LIVERY 4 SPRITEGROUP - GRAIN
 spritegroup spritegroup_mu_wagon_gen2_open_wagon_grain_l4 {
-    loading: [spriteset_mu_wagon_gen2_open_wagon_grain_l4_s1, spriteset_mu_wagon_gen2_open_wagon_grain_l4_s2, spriteset_mu_wagon_gen2_open_wagon_grain_l4_s3];
-    loaded: [spriteset_mu_wagon_gen2_open_wagon_grain_l4_s1, spriteset_mu_wagon_gen2_open_wagon_grain_l4_s4, spriteset_mu_wagon_gen2_open_wagon_grain_l4_s4];
+    loading: [
+	spriteset_mu_wagon_gen2_open_wagon_grain_l4_s1
+	, spriteset_mu_wagon_gen2_open_wagon_grain_l4_s2
+	, spriteset_mu_wagon_gen2_open_wagon_grain_l4_s3
+];
+    loaded: [
+	spriteset_mu_wagon_gen2_open_wagon_grain_l4_s1
+	, spriteset_mu_wagon_gen2_open_wagon_grain_l4_s4
+	, spriteset_mu_wagon_gen2_open_wagon_grain_l4_s4
+];
 }
 
 // Random Livery Selector for grain
@@ -189,7 +253,7 @@ random_switch(FEAT_TRAINS, SELF, switch_mu_wagon_gen2_open_wagon_grain_livery) {
 	1: spritegroup_mu_wagon_gen2_open_wagon_grain_l4;
 }
 
-// ore
+// ORE
 
 /// LIVERY 1   LOADING STATE 1   ORE
 spriteset(spriteset_mu_wagon_gen2_open_wagon_ore_l1_s1, "gfx/wagons/gen2/wagon_gen2_open_wagon_ore.png") {template_2cc_wagons(1, 1)}
@@ -205,8 +269,16 @@ spriteset(spriteset_mu_wagon_gen2_open_wagon_ore_l1_s3, "gfx/wagons/gen2/wagon_g
 
 /// LIVERY 1 SPRITEGROUP - ORE
 spritegroup spritegroup_mu_wagon_gen2_open_wagon_ore_l1 {
-    loading: [spriteset_mu_wagon_gen2_open_wagon_ore_l1_s1, spriteset_mu_wagon_gen2_open_wagon_ore_l1_s2, spriteset_mu_wagon_gen2_open_wagon_ore_l1_s3];
-    loaded: [spriteset_mu_wagon_gen2_open_wagon_ore_l1_s1, spriteset_mu_wagon_gen2_open_wagon_ore_l1_s2, spriteset_mu_wagon_gen2_open_wagon_ore_l1_s3];
+    loading: [
+	spriteset_mu_wagon_gen2_open_wagon_ore_l1_s1,
+	spriteset_mu_wagon_gen2_open_wagon_ore_l1_s2,
+	spriteset_mu_wagon_gen2_open_wagon_ore_l1_s3
+];
+    loaded: [
+	spriteset_mu_wagon_gen2_open_wagon_ore_l1_s1,
+	spriteset_mu_wagon_gen2_open_wagon_ore_l1_s2,
+	spriteset_mu_wagon_gen2_open_wagon_ore_l1_s3
+];
 }
 
 /// LIVERY 2   LOADING STATE 1   ORE
@@ -223,8 +295,16 @@ spriteset(spriteset_mu_wagon_gen2_open_wagon_ore_l2_s3, "gfx/wagons/gen2/wagon_g
 
 /// LIVERY 2 SPRITEGROUP - ORE
 spritegroup spritegroup_mu_wagon_gen2_open_wagon_ore_l2 {
-    loading: [spriteset_mu_wagon_gen2_open_wagon_ore_l2_s1, spriteset_mu_wagon_gen2_open_wagon_ore_l2_s2, spriteset_mu_wagon_gen2_open_wagon_ore_l2_s3];
-    loaded: [spriteset_mu_wagon_gen2_open_wagon_ore_l2_s1, spriteset_mu_wagon_gen2_open_wagon_ore_l2_s2, spriteset_mu_wagon_gen2_open_wagon_ore_l2_s3];
+    loading: [
+	spriteset_mu_wagon_gen2_open_wagon_ore_l2_s1,
+	spriteset_mu_wagon_gen2_open_wagon_ore_l2_s2,
+	spriteset_mu_wagon_gen2_open_wagon_ore_l2_s3
+];
+    loaded: [
+	spriteset_mu_wagon_gen2_open_wagon_ore_l2_s1,
+	spriteset_mu_wagon_gen2_open_wagon_ore_l2_s2,
+	spriteset_mu_wagon_gen2_open_wagon_ore_l2_s3
+];
 }
 
 /// LIVERY 3   LOADING STATE 1   ORE
@@ -241,8 +321,16 @@ spriteset(spriteset_mu_wagon_gen2_open_wagon_ore_l3_s3, "gfx/wagons/gen2/wagon_g
 
 /// LIVERY 3 SPRITEGROUP - ORE
 spritegroup spritegroup_mu_wagon_gen2_open_wagon_ore_l3 {
-    loading: [spriteset_mu_wagon_gen2_open_wagon_ore_l3_s1, spriteset_mu_wagon_gen2_open_wagon_ore_l3_s2, spriteset_mu_wagon_gen2_open_wagon_ore_l3_s3];
-    loaded: [spriteset_mu_wagon_gen2_open_wagon_ore_l3_s1, spriteset_mu_wagon_gen2_open_wagon_ore_l3_s2, spriteset_mu_wagon_gen2_open_wagon_ore_l3_s3];
+    loading: [
+	spriteset_mu_wagon_gen2_open_wagon_ore_l3_s1,
+	spriteset_mu_wagon_gen2_open_wagon_ore_l3_s2,
+	spriteset_mu_wagon_gen2_open_wagon_ore_l3_s3
+];
+    loaded: [
+	spriteset_mu_wagon_gen2_open_wagon_ore_l3_s1,
+	spriteset_mu_wagon_gen2_open_wagon_ore_l3_s2,
+	spriteset_mu_wagon_gen2_open_wagon_ore_l3_s3
+];
 }
 
 /// LIVERY 4   LOADING STATE 1   ORE
@@ -259,8 +347,16 @@ spriteset(spriteset_mu_wagon_gen2_open_wagon_ore_l4_s3, "gfx/wagons/gen2/wagon_g
 
 /// LIVERY 4 SPRITEGROUP - ORE
 spritegroup spritegroup_mu_wagon_gen2_open_wagon_ore_l4 {
-    loading: [spriteset_mu_wagon_gen2_open_wagon_ore_l4_s1, spriteset_mu_wagon_gen2_open_wagon_ore_l4_s2, spriteset_mu_wagon_gen2_open_wagon_ore_l4_s3];
-    loaded: [spriteset_mu_wagon_gen2_open_wagon_ore_l4_s1, spriteset_mu_wagon_gen2_open_wagon_ore_l4_s2, spriteset_mu_wagon_gen2_open_wagon_ore_l4_s3];
+    loading: [
+	spriteset_mu_wagon_gen2_open_wagon_ore_l4_s1,
+	spriteset_mu_wagon_gen2_open_wagon_ore_l4_s2,
+	spriteset_mu_wagon_gen2_open_wagon_ore_l4_s3
+];
+    loaded: [
+	spriteset_mu_wagon_gen2_open_wagon_ore_l4_s1,
+	spriteset_mu_wagon_gen2_open_wagon_ore_l4_s2,
+	spriteset_mu_wagon_gen2_open_wagon_ore_l4_s3
+];
 }
 
 // Random Livery Selector for ore
@@ -271,7 +367,7 @@ random_switch(FEAT_TRAINS, SELF, switch_mu_wagon_gen2_open_wagon_ore_livery) {
 	1: spritegroup_mu_wagon_gen2_open_wagon_ore_l4;
 }
 
-// wood
+// WOOD
 
 /// LIVERY 1   LOADING STATE 1   WOOD
 spriteset(spriteset_mu_wagon_gen2_open_wagon_wood_l1_s1, "gfx/wagons/gen2/wagon_gen2_open_wagon_wood.png") {template_2cc_wagons(1, 1)}
@@ -287,8 +383,16 @@ spriteset(spriteset_mu_wagon_gen2_open_wagon_wood_l1_s3, "gfx/wagons/gen2/wagon_
 
 /// LIVERY 1 SPRITEGROUP - WOOD
 spritegroup spritegroup_mu_wagon_gen2_open_wagon_wood_l1 {
-    loading: [spriteset_mu_wagon_gen2_open_wagon_wood_l1_s1, spriteset_mu_wagon_gen2_open_wagon_wood_l1_s2, spriteset_mu_wagon_gen2_open_wagon_wood_l1_s3];
-    loaded: [spriteset_mu_wagon_gen2_open_wagon_wood_l1_s1, spriteset_mu_wagon_gen2_open_wagon_wood_l1_s2, spriteset_mu_wagon_gen2_open_wagon_wood_l1_s3];
+    loading: [
+	spriteset_mu_wagon_gen2_open_wagon_wood_l1_s1,
+	spriteset_mu_wagon_gen2_open_wagon_wood_l1_s2,
+	spriteset_mu_wagon_gen2_open_wagon_wood_l1_s3
+];
+    loaded: [
+	spriteset_mu_wagon_gen2_open_wagon_wood_l1_s1,
+	spriteset_mu_wagon_gen2_open_wagon_wood_l1_s2,
+	spriteset_mu_wagon_gen2_open_wagon_wood_l1_s3
+];
 }
 
 /// LIVERY 2   LOADING STATE 1   WOOD
@@ -305,8 +409,16 @@ spriteset(spriteset_mu_wagon_gen2_open_wagon_wood_l2_s3, "gfx/wagons/gen2/wagon_
 
 /// LIVERY 2 SPRITEGROUP - WOOD
 spritegroup spritegroup_mu_wagon_gen2_open_wagon_wood_l2 {
-    loading: [spriteset_mu_wagon_gen2_open_wagon_wood_l2_s1, spriteset_mu_wagon_gen2_open_wagon_wood_l2_s2, spriteset_mu_wagon_gen2_open_wagon_wood_l2_s3];
-    loaded: [spriteset_mu_wagon_gen2_open_wagon_wood_l2_s1, spriteset_mu_wagon_gen2_open_wagon_wood_l2_s2, spriteset_mu_wagon_gen2_open_wagon_wood_l2_s3];
+    loading: [
+	spriteset_mu_wagon_gen2_open_wagon_wood_l2_s1,
+	spriteset_mu_wagon_gen2_open_wagon_wood_l2_s2,
+	spriteset_mu_wagon_gen2_open_wagon_wood_l2_s3
+];
+    loaded: [
+	spriteset_mu_wagon_gen2_open_wagon_wood_l2_s1,
+	spriteset_mu_wagon_gen2_open_wagon_wood_l2_s2,
+	spriteset_mu_wagon_gen2_open_wagon_wood_l2_s3
+];
 }
 
 /// LIVERY 3   LOADING STATE 1   WOOD
@@ -323,8 +435,16 @@ spriteset(spriteset_mu_wagon_gen2_open_wagon_wood_l3_s3, "gfx/wagons/gen2/wagon_
 
 /// LIVERY 3 SPRITEGROUP - WOOD
 spritegroup spritegroup_mu_wagon_gen2_open_wagon_wood_l3 {
-    loading: [spriteset_mu_wagon_gen2_open_wagon_wood_l3_s1, spriteset_mu_wagon_gen2_open_wagon_wood_l3_s2, spriteset_mu_wagon_gen2_open_wagon_wood_l3_s3];
-    loaded: [spriteset_mu_wagon_gen2_open_wagon_wood_l3_s1, spriteset_mu_wagon_gen2_open_wagon_wood_l3_s2, spriteset_mu_wagon_gen2_open_wagon_wood_l3_s3];
+    loading: [
+	spriteset_mu_wagon_gen2_open_wagon_wood_l3_s1,
+	spriteset_mu_wagon_gen2_open_wagon_wood_l3_s2,
+	spriteset_mu_wagon_gen2_open_wagon_wood_l3_s3
+];
+    loaded: [
+	spriteset_mu_wagon_gen2_open_wagon_wood_l3_s1,
+	spriteset_mu_wagon_gen2_open_wagon_wood_l3_s2,
+	spriteset_mu_wagon_gen2_open_wagon_wood_l3_s3
+];
 }
 
 /// LIVERY 4   LOADING STATE 1   WOOD
@@ -341,8 +461,16 @@ spriteset(spriteset_mu_wagon_gen2_open_wagon_wood_l4_s3, "gfx/wagons/gen2/wagon_
 
 /// LIVERY 4 SPRITEGROUP - WOOD
 spritegroup spritegroup_mu_wagon_gen2_open_wagon_wood_l4 {
-    loading: [spriteset_mu_wagon_gen2_open_wagon_wood_l4_s1, spriteset_mu_wagon_gen2_open_wagon_wood_l4_s2, spriteset_mu_wagon_gen2_open_wagon_wood_l4_s3];
-    loaded: [spriteset_mu_wagon_gen2_open_wagon_wood_l4_s1, spriteset_mu_wagon_gen2_open_wagon_wood_l4_s2, spriteset_mu_wagon_gen2_open_wagon_wood_l4_s3];
+    loading: [
+	spriteset_mu_wagon_gen2_open_wagon_wood_l4_s1,
+	spriteset_mu_wagon_gen2_open_wagon_wood_l4_s2,
+	spriteset_mu_wagon_gen2_open_wagon_wood_l4_s3
+];
+    loaded: [
+	spriteset_mu_wagon_gen2_open_wagon_wood_l4_s1,
+	spriteset_mu_wagon_gen2_open_wagon_wood_l4_s2,
+	spriteset_mu_wagon_gen2_open_wagon_wood_l4_s3
+];
 }
 
 // Random Livery Selector for wood
@@ -353,7 +481,7 @@ random_switch(FEAT_TRAINS, SELF, switch_mu_wagon_gen2_open_wagon_wood_livery) {
 	1: spritegroup_mu_wagon_gen2_open_wagon_wood_l4;
 }
 
-// gray
+// GRAY
 
 /// LIVERY 1   LOADING STATE 1   GRAY
 spriteset(spriteset_mu_wagon_gen2_open_wagon_gray_l1_s1, "gfx/wagons/gen2/wagon_gen2_open_wagon_gray.png") {template_2cc_wagons(1, 1)}
@@ -369,8 +497,16 @@ spriteset(spriteset_mu_wagon_gen2_open_wagon_gray_l1_s3, "gfx/wagons/gen2/wagon_
 
 /// LIVERY 1 SPRITEGROUP - GRAY
 spritegroup spritegroup_mu_wagon_gen2_open_wagon_gray_l1 {
-    loading: [spriteset_mu_wagon_gen2_open_wagon_gray_l1_s1, spriteset_mu_wagon_gen2_open_wagon_gray_l1_s2, spriteset_mu_wagon_gen2_open_wagon_gray_l1_s3];
-    loaded: [spriteset_mu_wagon_gen2_open_wagon_gray_l1_s1, spriteset_mu_wagon_gen2_open_wagon_gray_l1_s2, spriteset_mu_wagon_gen2_open_wagon_gray_l1_s3];
+    loading: [
+	spriteset_mu_wagon_gen2_open_wagon_gray_l1_s1,
+	spriteset_mu_wagon_gen2_open_wagon_gray_l1_s2,
+	spriteset_mu_wagon_gen2_open_wagon_gray_l1_s3
+];
+    loaded: [
+	spriteset_mu_wagon_gen2_open_wagon_gray_l1_s1,
+	spriteset_mu_wagon_gen2_open_wagon_gray_l1_s2,
+	spriteset_mu_wagon_gen2_open_wagon_gray_l1_s3
+];
 }
 
 /// LIVERY 2   LOADING STATE 1   GRAY
@@ -387,8 +523,16 @@ spriteset(spriteset_mu_wagon_gen2_open_wagon_gray_l2_s3, "gfx/wagons/gen2/wagon_
 
 /// LIVERY 2 SPRITEGROUP - GRAY
 spritegroup spritegroup_mu_wagon_gen2_open_wagon_gray_l2 {
-    loading: [spriteset_mu_wagon_gen2_open_wagon_gray_l2_s1, spriteset_mu_wagon_gen2_open_wagon_gray_l2_s2, spriteset_mu_wagon_gen2_open_wagon_gray_l2_s3];
-    loaded: [spriteset_mu_wagon_gen2_open_wagon_gray_l2_s1, spriteset_mu_wagon_gen2_open_wagon_gray_l2_s2, spriteset_mu_wagon_gen2_open_wagon_gray_l2_s3];
+    loading: [
+	spriteset_mu_wagon_gen2_open_wagon_gray_l2_s1,
+	spriteset_mu_wagon_gen2_open_wagon_gray_l2_s2,
+	spriteset_mu_wagon_gen2_open_wagon_gray_l2_s3
+];
+    loaded: [
+	spriteset_mu_wagon_gen2_open_wagon_gray_l2_s1,
+	spriteset_mu_wagon_gen2_open_wagon_gray_l2_s2,
+	spriteset_mu_wagon_gen2_open_wagon_gray_l2_s3
+];
 }
 
 /// LIVERY 3   LOADING STATE 1   GRAY
@@ -405,8 +549,16 @@ spriteset(spriteset_mu_wagon_gen2_open_wagon_gray_l3_s3, "gfx/wagons/gen2/wagon_
 
 /// LIVERY 3 SPRITEGROUP - GRAY
 spritegroup spritegroup_mu_wagon_gen2_open_wagon_gray_l3 {
-    loading: [spriteset_mu_wagon_gen2_open_wagon_gray_l3_s1, spriteset_mu_wagon_gen2_open_wagon_gray_l3_s2, spriteset_mu_wagon_gen2_open_wagon_gray_l3_s3];
-    loaded: [spriteset_mu_wagon_gen2_open_wagon_gray_l3_s1, spriteset_mu_wagon_gen2_open_wagon_gray_l3_s2, spriteset_mu_wagon_gen2_open_wagon_gray_l3_s3];
+    loading: [
+	spriteset_mu_wagon_gen2_open_wagon_gray_l3_s1,
+	spriteset_mu_wagon_gen2_open_wagon_gray_l3_s2,
+	spriteset_mu_wagon_gen2_open_wagon_gray_l3_s3
+];
+    loaded: [
+	spriteset_mu_wagon_gen2_open_wagon_gray_l3_s1,
+	spriteset_mu_wagon_gen2_open_wagon_gray_l3_s2,
+	spriteset_mu_wagon_gen2_open_wagon_gray_l3_s3
+];
 }
 
 /// LIVERY 4   LOADING STATE 1   GRAY
@@ -423,8 +575,16 @@ spriteset(spriteset_mu_wagon_gen2_open_wagon_gray_l4_s3, "gfx/wagons/gen2/wagon_
 
 /// LIVERY 4 SPRITEGROUP - GRAY
 spritegroup spritegroup_mu_wagon_gen2_open_wagon_gray_l4 {
-    loading: [spriteset_mu_wagon_gen2_open_wagon_gray_l4_s1, spriteset_mu_wagon_gen2_open_wagon_gray_l4_s2, spriteset_mu_wagon_gen2_open_wagon_gray_l4_s3];
-    loaded: [spriteset_mu_wagon_gen2_open_wagon_gray_l4_s1, spriteset_mu_wagon_gen2_open_wagon_gray_l4_s2, spriteset_mu_wagon_gen2_open_wagon_gray_l4_s3];
+    loading: [
+	spriteset_mu_wagon_gen2_open_wagon_gray_l4_s1,
+	spriteset_mu_wagon_gen2_open_wagon_gray_l4_s2,
+	spriteset_mu_wagon_gen2_open_wagon_gray_l4_s3
+];
+    loaded: [
+	spriteset_mu_wagon_gen2_open_wagon_gray_l4_s1,
+	spriteset_mu_wagon_gen2_open_wagon_gray_l4_s2,
+	spriteset_mu_wagon_gen2_open_wagon_gray_l4_s3
+];
 }
 
 // Random Livery Selector for gray
@@ -435,7 +595,7 @@ random_switch(FEAT_TRAINS, SELF, switch_mu_wagon_gen2_open_wagon_gray_livery) {
 	1: spritegroup_mu_wagon_gen2_open_wagon_gray_l4;
 }
 
-// sand
+// SAND
 
 /// LIVERY 1   LOADING STATE 1   SAND
 spriteset(spriteset_mu_wagon_gen2_open_wagon_sand_l1_s1, "gfx/wagons/gen2/wagon_gen2_open_wagon_sand.png") {template_2cc_wagons(1, 1)}
@@ -451,8 +611,16 @@ spriteset(spriteset_mu_wagon_gen2_open_wagon_sand_l1_s3, "gfx/wagons/gen2/wagon_
 
 /// LIVERY 1 SPRITEGROUP - SAND
 spritegroup spritegroup_mu_wagon_gen2_open_wagon_sand_l1 {
-    loading: [spriteset_mu_wagon_gen2_open_wagon_sand_l1_s1, spriteset_mu_wagon_gen2_open_wagon_sand_l1_s2, spriteset_mu_wagon_gen2_open_wagon_sand_l1_s3];
-    loaded: [spriteset_mu_wagon_gen2_open_wagon_sand_l1_s1, spriteset_mu_wagon_gen2_open_wagon_sand_l1_s2, spriteset_mu_wagon_gen2_open_wagon_sand_l1_s3];
+    loading: [
+	spriteset_mu_wagon_gen2_open_wagon_sand_l1_s1,
+	spriteset_mu_wagon_gen2_open_wagon_sand_l1_s2,
+	spriteset_mu_wagon_gen2_open_wagon_sand_l1_s3
+];
+    loaded: [
+	spriteset_mu_wagon_gen2_open_wagon_sand_l1_s1,
+	spriteset_mu_wagon_gen2_open_wagon_sand_l1_s2,
+	spriteset_mu_wagon_gen2_open_wagon_sand_l1_s3
+];
 }
 
 /// LIVERY 2   LOADING STATE 1   SAND
@@ -469,8 +637,16 @@ spriteset(spriteset_mu_wagon_gen2_open_wagon_sand_l2_s3, "gfx/wagons/gen2/wagon_
 
 /// LIVERY 2 SPRITEGROUP - SAND
 spritegroup spritegroup_mu_wagon_gen2_open_wagon_sand_l2 {
-    loading: [spriteset_mu_wagon_gen2_open_wagon_sand_l2_s1, spriteset_mu_wagon_gen2_open_wagon_sand_l2_s2, spriteset_mu_wagon_gen2_open_wagon_sand_l2_s3];
-    loaded: [spriteset_mu_wagon_gen2_open_wagon_sand_l2_s1, spriteset_mu_wagon_gen2_open_wagon_sand_l2_s2, spriteset_mu_wagon_gen2_open_wagon_sand_l2_s3];
+    loading: [
+	spriteset_mu_wagon_gen2_open_wagon_sand_l2_s1,
+	spriteset_mu_wagon_gen2_open_wagon_sand_l2_s2,
+	spriteset_mu_wagon_gen2_open_wagon_sand_l2_s3
+];
+    loaded: [
+	spriteset_mu_wagon_gen2_open_wagon_sand_l2_s1,
+	spriteset_mu_wagon_gen2_open_wagon_sand_l2_s2,
+	spriteset_mu_wagon_gen2_open_wagon_sand_l2_s3
+];
 }
 
 /// LIVERY 3   LOADING STATE 1   SAND
@@ -487,8 +663,16 @@ spriteset(spriteset_mu_wagon_gen2_open_wagon_sand_l3_s3, "gfx/wagons/gen2/wagon_
 
 /// LIVERY 3 SPRITEGROUP - SAND
 spritegroup spritegroup_mu_wagon_gen2_open_wagon_sand_l3 {
-    loading: [spriteset_mu_wagon_gen2_open_wagon_sand_l3_s1, spriteset_mu_wagon_gen2_open_wagon_sand_l3_s2, spriteset_mu_wagon_gen2_open_wagon_sand_l3_s3];
-    loaded: [spriteset_mu_wagon_gen2_open_wagon_sand_l3_s1, spriteset_mu_wagon_gen2_open_wagon_sand_l3_s2, spriteset_mu_wagon_gen2_open_wagon_sand_l3_s3];
+    loading: [
+	spriteset_mu_wagon_gen2_open_wagon_sand_l3_s1,
+	spriteset_mu_wagon_gen2_open_wagon_sand_l3_s2,
+	spriteset_mu_wagon_gen2_open_wagon_sand_l3_s3
+];
+    loaded: [
+	spriteset_mu_wagon_gen2_open_wagon_sand_l3_s1,
+	spriteset_mu_wagon_gen2_open_wagon_sand_l3_s2,
+	spriteset_mu_wagon_gen2_open_wagon_sand_l3_s3
+];
 }
 
 /// LIVERY 4   LOADING STATE 1   SAND
@@ -505,8 +689,16 @@ spriteset(spriteset_mu_wagon_gen2_open_wagon_sand_l4_s3, "gfx/wagons/gen2/wagon_
 
 /// LIVERY 4 SPRITEGROUP - SAND
 spritegroup spritegroup_mu_wagon_gen2_open_wagon_sand_l4 {
-    loading: [spriteset_mu_wagon_gen2_open_wagon_sand_l4_s1, spriteset_mu_wagon_gen2_open_wagon_sand_l4_s2, spriteset_mu_wagon_gen2_open_wagon_sand_l4_s3];
-    loaded: [spriteset_mu_wagon_gen2_open_wagon_sand_l4_s1, spriteset_mu_wagon_gen2_open_wagon_sand_l4_s2, spriteset_mu_wagon_gen2_open_wagon_sand_l4_s3];
+    loading: [
+	spriteset_mu_wagon_gen2_open_wagon_sand_l4_s1,
+	spriteset_mu_wagon_gen2_open_wagon_sand_l4_s2,
+	spriteset_mu_wagon_gen2_open_wagon_sand_l4_s3
+];
+    loaded: [
+	spriteset_mu_wagon_gen2_open_wagon_sand_l4_s1,
+	spriteset_mu_wagon_gen2_open_wagon_sand_l4_s2,
+	spriteset_mu_wagon_gen2_open_wagon_sand_l4_s3
+];
 }
 
 // Random Livery Selector for sand
@@ -517,7 +709,7 @@ random_switch(FEAT_TRAINS, SELF, switch_mu_wagon_gen2_open_wagon_sand_livery) {
 	1: spritegroup_mu_wagon_gen2_open_wagon_sand_l4;
 }
 
-// crates
+// CRATES
 
 /// LIVERY 1   LOADING STATE 1   CRATES
 spriteset(spriteset_mu_wagon_gen2_open_wagon_crates_l1_s1, "gfx/wagons/gen2/wagon_gen2_open_wagon_crates.png") {template_2cc_wagons(1, 1)}
@@ -533,8 +725,16 @@ spriteset(spriteset_mu_wagon_gen2_open_wagon_crates_l1_s3, "gfx/wagons/gen2/wago
 
 /// LIVERY 1 SPRITEGROUP - CRATES
 spritegroup spritegroup_mu_wagon_gen2_open_wagon_crates_l1 {
-    loading: [spriteset_mu_wagon_gen2_open_wagon_crates_l1_s1, spriteset_mu_wagon_gen2_open_wagon_crates_l1_s2, spriteset_mu_wagon_gen2_open_wagon_crates_l1_s3];
-    loaded: [spriteset_mu_wagon_gen2_open_wagon_crates_l1_s1, spriteset_mu_wagon_gen2_open_wagon_crates_l1_s2, spriteset_mu_wagon_gen2_open_wagon_crates_l1_s3];
+    loading: [
+	spriteset_mu_wagon_gen2_open_wagon_crates_l1_s1,
+	spriteset_mu_wagon_gen2_open_wagon_crates_l1_s2,
+	spriteset_mu_wagon_gen2_open_wagon_crates_l1_s3
+];
+    loaded: [
+	spriteset_mu_wagon_gen2_open_wagon_crates_l1_s1,
+	spriteset_mu_wagon_gen2_open_wagon_crates_l1_s2,
+	spriteset_mu_wagon_gen2_open_wagon_crates_l1_s3
+];
 }
 
 /// LIVERY 2   LOADING STATE 1   CRATES
@@ -551,8 +751,16 @@ spriteset(spriteset_mu_wagon_gen2_open_wagon_crates_l2_s3, "gfx/wagons/gen2/wago
 
 /// LIVERY 2 SPRITEGROUP - CRATES
 spritegroup spritegroup_mu_wagon_gen2_open_wagon_crates_l2 {
-    loading: [spriteset_mu_wagon_gen2_open_wagon_crates_l2_s1, spriteset_mu_wagon_gen2_open_wagon_crates_l2_s2, spriteset_mu_wagon_gen2_open_wagon_crates_l2_s3];
-    loaded: [spriteset_mu_wagon_gen2_open_wagon_crates_l2_s1, spriteset_mu_wagon_gen2_open_wagon_crates_l2_s2, spriteset_mu_wagon_gen2_open_wagon_crates_l2_s3];
+    loading: [
+	spriteset_mu_wagon_gen2_open_wagon_crates_l2_s1,
+	spriteset_mu_wagon_gen2_open_wagon_crates_l2_s2,
+	spriteset_mu_wagon_gen2_open_wagon_crates_l2_s3
+];
+    loaded: [
+	spriteset_mu_wagon_gen2_open_wagon_crates_l2_s1,
+	spriteset_mu_wagon_gen2_open_wagon_crates_l2_s2,
+	spriteset_mu_wagon_gen2_open_wagon_crates_l2_s3
+];
 }
 
 /// LIVERY 3   LOADING STATE 1   CRATES
@@ -569,8 +777,16 @@ spriteset(spriteset_mu_wagon_gen2_open_wagon_crates_l3_s3, "gfx/wagons/gen2/wago
 
 /// LIVERY 3 SPRITEGROUP - CRATES
 spritegroup spritegroup_mu_wagon_gen2_open_wagon_crates_l3 {
-    loading: [spriteset_mu_wagon_gen2_open_wagon_crates_l3_s1, spriteset_mu_wagon_gen2_open_wagon_crates_l3_s2, spriteset_mu_wagon_gen2_open_wagon_crates_l3_s3];
-    loaded: [spriteset_mu_wagon_gen2_open_wagon_crates_l3_s1, spriteset_mu_wagon_gen2_open_wagon_crates_l3_s2, spriteset_mu_wagon_gen2_open_wagon_crates_l3_s3];
+    loading: [
+	spriteset_mu_wagon_gen2_open_wagon_crates_l3_s1,
+	spriteset_mu_wagon_gen2_open_wagon_crates_l3_s2,
+	spriteset_mu_wagon_gen2_open_wagon_crates_l3_s3
+];
+    loaded: [
+	spriteset_mu_wagon_gen2_open_wagon_crates_l3_s1,
+	spriteset_mu_wagon_gen2_open_wagon_crates_l3_s2,
+	spriteset_mu_wagon_gen2_open_wagon_crates_l3_s3
+];
 }
 
 /// LIVERY 4   LOADING STATE 1   CRATES
@@ -587,8 +803,16 @@ spriteset(spriteset_mu_wagon_gen2_open_wagon_crates_l4_s3, "gfx/wagons/gen2/wago
 
 /// LIVERY 4 SPRITEGROUP - CRATES
 spritegroup spritegroup_mu_wagon_gen2_open_wagon_crates_l4 {
-    loading: [spriteset_mu_wagon_gen2_open_wagon_crates_l4_s1, spriteset_mu_wagon_gen2_open_wagon_crates_l4_s2, spriteset_mu_wagon_gen2_open_wagon_crates_l4_s3];
-    loaded: [spriteset_mu_wagon_gen2_open_wagon_crates_l4_s1, spriteset_mu_wagon_gen2_open_wagon_crates_l4_s2, spriteset_mu_wagon_gen2_open_wagon_crates_l4_s3];
+    loading: [
+	spriteset_mu_wagon_gen2_open_wagon_crates_l4_s1,
+	spriteset_mu_wagon_gen2_open_wagon_crates_l4_s2,
+	spriteset_mu_wagon_gen2_open_wagon_crates_l4_s3
+];
+    loaded: [
+	spriteset_mu_wagon_gen2_open_wagon_crates_l4_s1,
+	spriteset_mu_wagon_gen2_open_wagon_crates_l4_s2,
+	spriteset_mu_wagon_gen2_open_wagon_crates_l4_s3
+];
 }
 
 // Random Livery Selector for crates
@@ -599,26 +823,31 @@ random_switch(FEAT_TRAINS, SELF, switch_mu_wagon_gen2_open_wagon_crates_livery) 
 	1: spritegroup_mu_wagon_gen2_open_wagon_crates_l4;
 }
 
-
 switch(FEAT_TRAINS, SELF, switch_mu_wagon_gen2_open_wagon_cargo_selection, cargo_type_in_veh) {
-	COAL: switch_mu_wagon_gen2_open_wagon_coal_livery;
-	IORE: switch_mu_wagon_gen2_open_wagon_ore_livery;
-	FRUT: switch_mu_wagon_gen2_open_wagon_crates_livery;
-	CORE: switch_mu_wagon_gen2_open_wagon_ore_livery;
-	WOOD: switch_mu_wagon_gen2_open_wagon_wood_livery;
-	SUGR: switch_mu_wagon_gen2_open_wagon_crates_livery;
-	CTCD: switch_mu_wagon_gen2_open_wagon_crates_livery;
-	BUBL: switch_mu_wagon_gen2_open_wagon_gray_livery;
-	AORE: switch_mu_wagon_gen2_open_wagon_ore_livery;
-	CERE: switch_mu_wagon_gen2_open_wagon_crates_livery;
-	CLAY: switch_mu_wagon_gen2_open_wagon_gray_livery;
-	CMNT: switch_mu_wagon_gen2_open_wagon_gray_livery;
-	GRVL: switch_mu_wagon_gen2_open_wagon_sand_livery;
-	LIME: switch_mu_wagon_gen2_open_wagon_sand_livery;
-	OLSD: switch_mu_wagon_gen2_open_wagon_crates_livery;
-	POTA: switch_mu_wagon_gen2_open_wagon_wood_livery; // Potash is light brown-ish, so uses the Wood livery
-	SAND: switch_mu_wagon_gen2_open_wagon_sand_livery;
-	SCMT: switch_mu_wagon_gen2_open_wagon_gray_livery;
-    // GRAI, MAIZ, TOFF
-	switch_mu_wagon_gen2_open_wagon_grain_livery;
+    COAL: switch_mu_wagon_gen2_open_wagon_coal_livery;
+    GRAI: switch_mu_wagon_gen2_open_wagon_grain_livery;
+    AORE: switch_mu_wagon_gen2_open_wagon_ore_livery;
+    CORE: switch_mu_wagon_gen2_open_wagon_ore_livery;
+    IORE: switch_mu_wagon_gen2_open_wagon_ore_livery;
+    POTA: switch_mu_wagon_gen2_open_wagon_wood_livery;
+    WDPR: switch_mu_wagon_gen2_open_wagon_wood_livery;
+    WOOD: switch_mu_wagon_gen2_open_wagon_wood_livery;
+    BUBL: switch_mu_wagon_gen2_open_wagon_gray_livery;
+    CLAY: switch_mu_wagon_gen2_open_wagon_gray_livery;
+    CMNT: switch_mu_wagon_gen2_open_wagon_gray_livery;
+    SCMT: switch_mu_wagon_gen2_open_wagon_gray_livery;
+    CERE: switch_mu_wagon_gen2_open_wagon_sand_livery;
+    CTCD: switch_mu_wagon_gen2_open_wagon_sand_livery;
+    GRVL: switch_mu_wagon_gen2_open_wagon_sand_livery;
+    LIME: switch_mu_wagon_gen2_open_wagon_sand_livery;
+    SAND: switch_mu_wagon_gen2_open_wagon_sand_livery;
+    SUGR: switch_mu_wagon_gen2_open_wagon_sand_livery;
+    TOFF: switch_mu_wagon_gen2_open_wagon_sand_livery;
+    SGBT: switch_mu_wagon_gen2_open_wagon_sand_livery;
+    CERE: switch_mu_wagon_gen2_open_wagon_crates_livery;
+    CTCD: switch_mu_wagon_gen2_open_wagon_crates_livery;
+    FRUT: switch_mu_wagon_gen2_open_wagon_crates_livery;
+    OLSD: switch_mu_wagon_gen2_open_wagon_crates_livery;
+    SUGR: switch_mu_wagon_gen2_open_wagon_crates_livery;
+    switch_mu_wagon_gen2_open_wagon_grain_livery;
 }

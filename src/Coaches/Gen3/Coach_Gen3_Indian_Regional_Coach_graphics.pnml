@@ -4,7 +4,7 @@
 // Template: TPL_04B
 
 // PURCHASE
-spriteset(spriteset_mu_coach_gen3_indian_regional_coach_purchase, "gfx/coaches/gen3/coach_gen3_indian_regional_coach.png") {template_purchase_coach(1, 107)}
+spriteset(spriteset_mu_coach_gen3_indian_regional_coach_purchase, "gfx/coaches/gen3/coach_gen3_indian_regional_coach.png") {template_purchase_coach(1, 143)}
 
 
 // VEHICLE
@@ -23,8 +23,16 @@ spriteset(spriteset_mu_coach_gen3_indian_regional_coach_l1_s3, "gfx/coaches/gen3
 
 /// LIVERY 1 SPRITEGROUP
 spritegroup spritegroup_mu_coach_gen3_indian_regional_coach_l1 {
-    loading: [spriteset_mu_coach_gen3_indian_regional_coach_l1_s1, spriteset_mu_coach_gen3_indian_regional_coach_l1_s2, spriteset_mu_coach_gen3_indian_regional_coach_l1_s3];
-    loaded: [spriteset_mu_coach_gen3_indian_regional_coach_l1_s1, spriteset_mu_coach_gen3_indian_regional_coach_l1_s2, spriteset_mu_coach_gen3_indian_regional_coach_l1_s3];
+    loading: [
+	spriteset_mu_coach_gen3_indian_regional_coach_l1_s1,
+	spriteset_mu_coach_gen3_indian_regional_coach_l1_s2,
+	spriteset_mu_coach_gen3_indian_regional_coach_l1_s3
+];
+    loaded: [
+	spriteset_mu_coach_gen3_indian_regional_coach_l1_s1,
+	spriteset_mu_coach_gen3_indian_regional_coach_l1_s2,
+	spriteset_mu_coach_gen3_indian_regional_coach_l1_s3
+];
 }
 
 /// LIVERY 2   LOADING STATE 1
@@ -41,8 +49,16 @@ spriteset(spriteset_mu_coach_gen3_indian_regional_coach_l2_s3, "gfx/coaches/gen3
 
 /// LIVERY 2 SPRITEGROUP
 spritegroup spritegroup_mu_coach_gen3_indian_regional_coach_l2 {
-    loading: [spriteset_mu_coach_gen3_indian_regional_coach_l2_s1, spriteset_mu_coach_gen3_indian_regional_coach_l2_s2, spriteset_mu_coach_gen3_indian_regional_coach_l2_s3];
-    loaded: [spriteset_mu_coach_gen3_indian_regional_coach_l2_s1, spriteset_mu_coach_gen3_indian_regional_coach_l2_s2, spriteset_mu_coach_gen3_indian_regional_coach_l2_s3];
+    loading: [
+	spriteset_mu_coach_gen3_indian_regional_coach_l2_s1,
+	spriteset_mu_coach_gen3_indian_regional_coach_l2_s2,
+	spriteset_mu_coach_gen3_indian_regional_coach_l2_s3
+];
+    loaded: [
+	spriteset_mu_coach_gen3_indian_regional_coach_l2_s1,
+	spriteset_mu_coach_gen3_indian_regional_coach_l2_s2,
+	spriteset_mu_coach_gen3_indian_regional_coach_l2_s3
+];
 }
 
 /// LIVERY 3   LOADING STATE 1
@@ -59,8 +75,16 @@ spriteset(spriteset_mu_coach_gen3_indian_regional_coach_l3_s3, "gfx/coaches/gen3
 
 /// LIVERY 3 SPRITEGROUP
 spritegroup spritegroup_mu_coach_gen3_indian_regional_coach_l3 {
-    loading: [spriteset_mu_coach_gen3_indian_regional_coach_l3_s1, spriteset_mu_coach_gen3_indian_regional_coach_l3_s2, spriteset_mu_coach_gen3_indian_regional_coach_l3_s3];
-    loaded: [spriteset_mu_coach_gen3_indian_regional_coach_l3_s1, spriteset_mu_coach_gen3_indian_regional_coach_l3_s2, spriteset_mu_coach_gen3_indian_regional_coach_l3_s3];
+    loading: [
+	spriteset_mu_coach_gen3_indian_regional_coach_l3_s1,
+	spriteset_mu_coach_gen3_indian_regional_coach_l3_s2,
+	spriteset_mu_coach_gen3_indian_regional_coach_l3_s3
+];
+    loaded: [
+	spriteset_mu_coach_gen3_indian_regional_coach_l3_s1,
+	spriteset_mu_coach_gen3_indian_regional_coach_l3_s2,
+	spriteset_mu_coach_gen3_indian_regional_coach_l3_s3
+];
 }
 
 /// LIVERY 4   LOADING STATE 1
@@ -77,8 +101,16 @@ spriteset(spriteset_mu_coach_gen3_indian_regional_coach_l4_s3, "gfx/coaches/gen3
 
 /// LIVERY 4 SPRITEGROUP
 spritegroup spritegroup_mu_coach_gen3_indian_regional_coach_l4 {
-    loading: [spriteset_mu_coach_gen3_indian_regional_coach_l4_s1, spriteset_mu_coach_gen3_indian_regional_coach_l4_s2, spriteset_mu_coach_gen3_indian_regional_coach_l4_s3];
-    loaded: [spriteset_mu_coach_gen3_indian_regional_coach_l4_s1, spriteset_mu_coach_gen3_indian_regional_coach_l4_s2, spriteset_mu_coach_gen3_indian_regional_coach_l4_s3];
+    loading: [
+	spriteset_mu_coach_gen3_indian_regional_coach_l4_s1,
+	spriteset_mu_coach_gen3_indian_regional_coach_l4_s2,
+	spriteset_mu_coach_gen3_indian_regional_coach_l4_s3
+];
+    loaded: [
+	spriteset_mu_coach_gen3_indian_regional_coach_l4_s1,
+	spriteset_mu_coach_gen3_indian_regional_coach_l4_s2,
+	spriteset_mu_coach_gen3_indian_regional_coach_l4_s3
+];
 }
 
 // Random Livery Selector
