@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_01A
+// CargoDef: NONE
+// ID: 5168
 
 // PURCHASE
 spriteset(spriteset_diesel_eec_a_253_purchase, "gfx/diesel/eec_a_253.png") {template_purchase(1, 64)}

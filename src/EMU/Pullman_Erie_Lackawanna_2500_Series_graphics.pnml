@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02A
+// CargoDef: PASSENGERS
+// ID: 8048
 
 // PURCHASE
 spriteset(spriteset_emu_pullman_erie_lackawanna_2500_series_purchase, "gfx/emu/pullman_erie_lackawanna_2500_series.png") {template_purchase_dualheaded(1, 128)}

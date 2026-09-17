@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02F
+// CargoDef: PASSENGERS
+// ID: 8072
 
 // PURCHASE
 spriteset(spriteset_emu_acme_corp__sureot_purchase, "gfx/emu/acme_corp__sureot.png") {template_purchase_dualheaded(1, 128)}

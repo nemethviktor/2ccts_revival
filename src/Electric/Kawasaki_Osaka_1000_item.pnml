@@ -1,9 +1,10 @@
-
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
+// Template: TPL_02C
+// CargoDef: PASSENGERS_ONLY
+// ID: 9040
 
-// Template: TPL_02C.
 // Data from: https://ja.wikipedia.org/wiki/%E5%A4%A7%E9%98%AA%E5%B8%82%E9%9B%BB%E6%B0%97%E5%B1%80100%E5%BD%A2%E9%9B%BB%E8%BB%8A
 
 item(FEAT_TRAINS, item_mtro_kawasaki_osaka_1000) {

@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_03C
+// CargoDef: NONE
+// ID: 4130
 
 // PURCHASE
 spriteset(spriteset_steam_bp_2_8_2t_south_maitland_10_purchase, "gfx/steam/bp_2_8_2t_south_maitland_10.png") {template_purchase(1, 96)}

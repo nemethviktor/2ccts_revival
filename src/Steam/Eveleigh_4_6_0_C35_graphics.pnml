@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_03A
+// CargoDef: NONE
+// ID: 4113
 
 // PURCHASE
 spriteset(spriteset_steam_eveleigh_4_6_0_c35_purchase, "gfx/steam/eveleigh_4_6_0_c35.png") {template_purchase(1, 96)}

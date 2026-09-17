@@ -1,9 +1,10 @@
-
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
+// Template: TPL_01A
+// CargoDef: NONE
+// ID: 6026
 
-// Template: TPL_01A.
 // Data from: https://en.wikipedia.org/wiki/Indian_locomotive_class_WCM-1
 
 item(FEAT_TRAINS, item_electric_vulcan_foundry_ee_em_1) {

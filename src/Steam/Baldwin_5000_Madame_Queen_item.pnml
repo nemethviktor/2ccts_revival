@@ -1,9 +1,10 @@
-
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
+// Template: TPL_03A
+// CargoDef: NONE
+// ID: 4022
 
-// Template: TPL_03A.
 // Data from: https://en.wikipedia.org/wiki/Santa_Fe_5000
 
 item(FEAT_TRAINS, item_steam_baldwin_5000_madame_queen) {

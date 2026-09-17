@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_01A
+// CargoDef: NONE
+// ID: 6145
 
 // PURCHASE
 spriteset(spriteset_electric_aeg_a1a_a1a_purchase, "gfx/electric/aeg_a1a_a1a.png") {template_purchase(1, 64)}

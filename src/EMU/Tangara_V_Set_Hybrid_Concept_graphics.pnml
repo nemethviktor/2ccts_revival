@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02A
+// CargoDef: PASSENGERS
+// ID: 8081
 
 // PURCHASE
 spriteset(spriteset_emu_tangara_v_set_hybrid_concept_purchase, "gfx/emu/tangara_v_set_hybrid_concept.png") {template_purchase_dualheaded(1, 128)}

@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_04U
+// CargoDef: MAIL_ONLY
+// ID: 19501
 
 // PURCHASE
 spriteset(spriteset_mglv_coach_gen7m_chimaera_mail_coach_purchase, "gfx/coaches_maglev/gen7m/coach_gen7m_chimaera_mail_coach.png") {template_purchase_coach(1, 143)}

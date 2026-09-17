@@ -1,9 +1,10 @@
-
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
+// Template: TPL_04U
+// CargoDef: PASSENGERS_ONLY
+// ID: 11096
 
-// Template: TPL_04U.
 // Data from: https://www.sydneytramwaymuseum.com.au/tramway/wp-content/uploads/2023/07/143-Trolley-Wire-Dec-1972.pdf
 
 // Notes:

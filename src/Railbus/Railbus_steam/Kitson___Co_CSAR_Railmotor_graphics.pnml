@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_32B
+// CargoDef: PASSENGERS
+// ID: 1005
 
 // PURCHASE
 spriteset(spriteset_rbs_kitson___co_csar_railmotor_purchase, "gfx/railbus/railbus_steam/kitson___co_csar_railmotor.png") {template_purchase(1, 128)}

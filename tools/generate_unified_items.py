@@ -1150,8 +1150,8 @@ def generate_unified_items():
         )
 
         content = []
-        content.append(f"\n{copyright_text}\n\n")
-        template_str = f"\n// Template: {TEMPLATE_ID_FULL}."
+        content.append(f"{copyright_text}\n")
+        template_str = f"\n// Template: {TEMPLATE_ID_FULL}\n// CargoDef: {row['CARGODEF']}\n// ID: {row['VEHID_ID']}\n"
         web_val = str(row["WEB"]) if pd.notna(row["WEB"]) else ""
         data_str = f"\n// Data from: {web_val}" if web_val else ""
 

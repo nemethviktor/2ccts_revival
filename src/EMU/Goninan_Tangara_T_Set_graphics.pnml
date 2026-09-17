@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02A
+// CargoDef: PASSENGERS
+// ID: 8083
 
 // PURCHASE
 spriteset(spriteset_emu_goninan_tangara_t_set_purchase, "gfx/emu/goninan_tangara_t_set.png") {template_purchase_dualheaded(1, 128)}

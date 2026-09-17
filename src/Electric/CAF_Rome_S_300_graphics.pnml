@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02C
+// CargoDef: PASSENGERS_ONLY
+// ID: 9052
 
 // PURCHASE
 spriteset(spriteset_mtro_caf_rome_s_300_purchase, "gfx/electric/caf_rome_s_300.png") {template_purchase_dualheaded(1, 96)}

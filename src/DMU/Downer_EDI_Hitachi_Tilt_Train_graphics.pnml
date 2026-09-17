@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02A
+// CargoDef: NONE
+// ID: 7051
 
 // PURCHASE
 spriteset(spriteset_dmu_downer_edi_hitachi_tilt_train_purchase, "gfx/dmu/downer_edi_hitachi_tilt_train.png") {template_purchase_dualheaded(1, 128)}

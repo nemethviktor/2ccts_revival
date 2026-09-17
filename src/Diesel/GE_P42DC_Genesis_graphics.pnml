@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_03F
+// CargoDef: NONE
+// ID: 5050
 
 // PURCHASE
 spriteset(spriteset_diesel_ge_p42dc_genesis_purchase, "gfx/diesel/ge_p42dc_genesis.png") {template_purchase(1, 64)}

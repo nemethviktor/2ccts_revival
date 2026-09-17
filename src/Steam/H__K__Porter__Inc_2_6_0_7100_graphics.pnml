@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_03A
+// CargoDef: NONE
+// ID: 4075
 
 // PURCHASE
 spriteset(spriteset_steam_h__k__porter__inc_2_6_0_7100_purchase, "gfx/steam/h__k__porter__inc_2_6_0_7100.png") {template_purchase(1, 96)}

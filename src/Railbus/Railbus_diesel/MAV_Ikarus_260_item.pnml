@@ -1,9 +1,10 @@
-
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
+// Template: TPL_01A
+// CargoDef: PASSENGERS_ONLY
+// ID: 2047
 
-// Template: TPL_01A.
 // Data from: https://hu.wikipedia.org/wiki/M%C3%81V_Ikarus_260
 
 // Cargo capacity

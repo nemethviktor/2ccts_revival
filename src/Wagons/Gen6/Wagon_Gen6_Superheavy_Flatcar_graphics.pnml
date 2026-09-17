@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_25A
+// CargoDef: SUPERHEAVY
+// ID: 12060
 
 // PURCHASE
 spriteset(spriteset_mu_wagon_gen6_superheavy_flatcar_purchase, "gfx/wagons/gen6/wagon_gen6_superheavy_flatcar_purchase.png") {template_purchase_wagon(1, 1)}

@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_03A
+// CargoDef: NONE
+// ID: 4134
 
 // PURCHASE
 spriteset(spriteset_steam_burnham_2_10_0_dom_pedro_segundo_119_purchase, "gfx/steam/burnham_2_10_0_dom_pedro_segundo_119.png") {template_purchase(1, 96)}

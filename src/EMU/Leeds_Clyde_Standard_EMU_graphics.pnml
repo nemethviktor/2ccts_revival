@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02A
+// CargoDef: PASSENGERS
+// ID: 8085
 
 // PURCHASE
 spriteset(spriteset_emu_leeds_clyde_standard_emu_purchase, "gfx/emu/leeds_clyde_standard_emu.png") {template_purchase_dualheaded(1, 128)}

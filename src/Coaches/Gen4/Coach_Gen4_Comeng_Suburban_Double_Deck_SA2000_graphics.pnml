@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_04U
+// CargoDef: PASSENGERS_ONLY
+// ID: 11081
 
 // PURCHASE
 spriteset(spriteset_mu_coach_gen4_comeng_suburban_double_deck_sa2000_purchase, "gfx/coaches/gen4/coach_gen4_comeng_suburban_double_deck_sa2000.png") {template_purchase_coach(1, 143)}

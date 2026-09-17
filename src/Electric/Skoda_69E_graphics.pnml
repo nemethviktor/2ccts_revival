@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_01A
+// CargoDef: NONE
+// ID: 6108
 
 // PURCHASE
 spriteset(spriteset_electric_skoda_69e_purchase, "gfx/electric/skoda_69e.png") {template_purchase(1, 64)}

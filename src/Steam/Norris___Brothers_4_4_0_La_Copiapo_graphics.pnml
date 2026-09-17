@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_03A
+// CargoDef: NONE
+// ID: 4139
 
 // PURCHASE
 spriteset(spriteset_steam_norris___brothers_4_4_0_la_copiapo_purchase, "gfx/steam/norris___brothers_4_4_0_la_copiapo.png") {template_purchase(1, 96)}

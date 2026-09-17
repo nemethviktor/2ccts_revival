@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_04U
+// CargoDef: PASSENGERS_ONLY
+// ID: 11094
 
 // PURCHASE
 spriteset(spriteset_mu_coach_gen2_nzr_50ft_coach_purchase, "gfx/coaches/gen2/coach_gen2_nzr_50ft_coach.png") {template_purchase_coach(1, 143)}

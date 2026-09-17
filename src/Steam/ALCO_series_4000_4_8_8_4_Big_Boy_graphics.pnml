@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_03G
+// CargoDef: NONE
+// ID: 4039
 
 // PURCHASE
 spriteset(spriteset_steam_alco_series_4000_4_8_8_4_big_boy_purchase, "gfx/steam/alco_series_4000_4_8_8_4_big_boy.png") {template_purchase(1, 192)}

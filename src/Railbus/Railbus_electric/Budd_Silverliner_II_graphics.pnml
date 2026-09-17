@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_01B
+// CargoDef: PASSENGERS
+// ID: 3013
 
 // PURCHASE
 spriteset(spriteset_rbe_budd_silverliner_ii_purchase, "gfx/railbus/railbus_electric/budd_silverliner_ii.png") {template_purchase(1, 32)}

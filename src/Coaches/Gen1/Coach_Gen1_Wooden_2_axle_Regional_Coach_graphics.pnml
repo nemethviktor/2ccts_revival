@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_04A
+// CargoDef: PASSENGERS_ONLY
+// ID: 11001
 
 // PURCHASE
 spriteset(spriteset_mu_coach_gen1_wooden_2_axle_regional_coach_purchase, "gfx/coaches/gen1/coach_gen1_wooden_2_axle_regional_coach.png") {template_purchase_coach(1, 143)}

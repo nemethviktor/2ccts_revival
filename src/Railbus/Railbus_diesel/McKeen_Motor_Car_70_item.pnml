@@ -1,9 +1,10 @@
-
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
+// Template: TPL_01B
+// CargoDef: PASSENGERS
+// ID: 2020
 
-// Template: TPL_01B.
 // Data from: https://en.wikipedia.org/wiki/Virginia_and_Truckee_Railway_Motor_Car_22
 
 // Cargo capacity

@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02E
+// CargoDef: PASSENGERS
+// ID: 8043
 
 // PURCHASE
 spriteset(spriteset_emu_ns_4800_hsa_fyra_purchase, "gfx/emu/ns_4800_hsa_fyra.png") {template_purchase_dualheaded(1, 320)}

@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_03D
+// CargoDef: NONE
+// ID: 6095
 
 // PURCHASE
 spriteset(spriteset_electric_alstom_kz8a_purchase, "gfx/electric/alstom_kz8a.png") {template_purchase(1, 64)}

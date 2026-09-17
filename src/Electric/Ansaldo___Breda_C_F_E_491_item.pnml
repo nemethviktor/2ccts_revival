@@ -1,9 +1,10 @@
-
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
+// Template: TPL_01A
+// CargoDef: NONE
+// ID: 6115
 
-// Template: TPL_01A.
 // Data from: https://fr.wikipedia.org/wiki/FS_E.491_-_FS_E.492
 
 item(FEAT_TRAINS, item_electric_ansaldo___breda_c_f_e_491) {

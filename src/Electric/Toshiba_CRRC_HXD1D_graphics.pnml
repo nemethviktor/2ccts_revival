@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_01A
+// CargoDef: NONE
+// ID: 6093
 
 // PURCHASE
 spriteset(spriteset_electric_toshiba_crrc_hxd1d_purchase, "gfx/electric/toshiba_crrc_hxd1d.png") {template_purchase(1, 64)}

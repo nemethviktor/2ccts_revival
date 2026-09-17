@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02A
+// CargoDef: PASSENGERS
+// ID: 7024
 
 // PURCHASE
 spriteset(spriteset_dmu_fiat_tcdd_mt_5500_purchase, "gfx/dmu/fiat_tcdd_mt_5500.png") {template_purchase_dualheaded(1, 128)}

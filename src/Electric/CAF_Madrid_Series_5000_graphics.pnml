@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02C
+// CargoDef: PASSENGERS_ONLY
+// ID: 9051
 
 // PURCHASE
 spriteset(spriteset_mtro_caf_madrid_series_5000_purchase, "gfx/electric/caf_madrid_series_5000.png") {template_purchase_dualheaded(1, 96)}

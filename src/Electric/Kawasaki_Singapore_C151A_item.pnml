@@ -1,9 +1,10 @@
-
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
+// Template: TPL_02C
+// CargoDef: PASSENGERS_ONLY
+// ID: 9035
 
-// Template: TPL_02C.
 // Data from: https://en.wikipedia.org/wiki/Kawasaki_Heavy_Industries_%26_CSR_Qingdao_Sifang_C151A
 
 item(FEAT_TRAINS, item_mtro_kawasaki_singapore_c151a) {

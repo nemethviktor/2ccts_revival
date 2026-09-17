@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02A
+// CargoDef: PASSENGERS
+// ID: 7061
 
 // PURCHASE
 spriteset(spriteset_dmu_kawasaki_rm_silver_fern_purchase, "gfx/dmu/kawasaki_rm_silver_fern.png") {template_purchase_dualheaded(1, 128)}

@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_01A
+// CargoDef: NONE
+// ID: 5197
 
 // PURCHASE
 spriteset(spriteset_diesel_baldwin_lima_hamilton_rf_615_e_purchase, "gfx/diesel/baldwin_lima_hamilton_rf_615_e.png") {template_purchase(1, 64)}

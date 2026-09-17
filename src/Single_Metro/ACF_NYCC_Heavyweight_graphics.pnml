@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_01A
+// CargoDef: PASSENGERS_ONLY
+// ID: 14004
 
 // PURCHASE
 spriteset(spriteset_singlemtro_acf_nycc_heavyweight_purchase, "gfx/single_metro/acf_nycc_heavyweight.png") {template_purchase(1, 64)}

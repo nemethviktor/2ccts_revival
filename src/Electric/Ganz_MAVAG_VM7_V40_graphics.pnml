@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_01A
+// CargoDef: NONE
+// ID: 6151
 
 // PURCHASE
 spriteset(spriteset_electric_ganz_mavag_vm7_v40_purchase, "gfx/electric/ganz_mavag_vm7_v40.png") {template_purchase(1, 64)}

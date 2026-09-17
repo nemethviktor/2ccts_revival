@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02A
+// CargoDef: PASSENGERS
+// ID: 8020
 
 // PURCHASE
 spriteset(spriteset_emu_schindler_rbde_560_purchase, "gfx/emu/schindler_rbde_560.png") {template_purchase_dualheaded(1, 128)}

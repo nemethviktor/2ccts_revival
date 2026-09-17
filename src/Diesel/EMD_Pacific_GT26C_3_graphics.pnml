@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_17B
+// CargoDef: NONE
+// ID: 5127
 
 // PURCHASE
 spriteset(spriteset_diesel_emd_pacific_gt26c_3_purchase, "gfx/diesel/emd_pacific_gt26c_3.png") {template_purchase(1, 128)}

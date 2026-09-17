@@ -1,9 +1,10 @@
-
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
+// Template: TPL_03A
+// CargoDef: NONE
+// ID: 4120
 
-// Template: TPL_03A.
 // Data from: https://www.steamlocomotive.com/locobase.php?country=Egypt&wheel=2-2-2&railroad=es#10456
 
 item(FEAT_TRAINS, item_steam_robert_stephenson_and_co_2_2_2_192) {

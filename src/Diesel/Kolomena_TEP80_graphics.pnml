@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_01A
+// CargoDef: NONE
+// ID: 5048
 
 // PURCHASE
 spriteset(spriteset_diesel_kolomena_tep80_purchase, "gfx/diesel/kolomena_tep80.png") {template_purchase(1, 64)}

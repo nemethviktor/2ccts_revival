@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_01A
+// CargoDef: NONE
+// ID: 6168
 
 // PURCHASE
 spriteset(spriteset_electric_chesta_casagrande_e650_purchase, "gfx/electric/chesta_casagrande_e650.png") {template_purchase(1, 64)}

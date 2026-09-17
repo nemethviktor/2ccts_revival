@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_03B
+// CargoDef: NONE
+// ID: 6007
 
 // PURCHASE
 spriteset(spriteset_electric_elin_floridsdorf_1161_purchase, "gfx/electric/elin_floridsdorf_1161.png") {template_purchase(1, 64)}

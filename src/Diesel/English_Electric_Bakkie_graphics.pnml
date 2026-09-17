@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_03B
+// CargoDef: NONE
+// ID: 5010
 
 // PURCHASE
 spriteset(spriteset_diesel_english_electric_bakkie_purchase, "gfx/diesel/english_electric_bakkie.png") {template_purchase(1, 64)}

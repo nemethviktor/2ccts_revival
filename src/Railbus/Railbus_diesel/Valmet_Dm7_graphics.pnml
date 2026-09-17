@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_01B
+// CargoDef: PASSENGERS
+// ID: 2010
 
 // PURCHASE
 spriteset(spriteset_rbd_valmet_dm7_purchase, "gfx/railbus/railbus_diesel/valmet_dm7.png") {template_purchase(1, 32)}

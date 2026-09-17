@@ -1,9 +1,10 @@
-
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
+// Template: TPL_02C
+// CargoDef: PASSENGERS_ONLY
+// ID: 9055
 
-// Template: TPL_02C.
 // Data from: https://en.wikipedia.org/wiki/6000-series_(CTA)
 
 item(FEAT_TRAINS, item_mtro_st__louis_car_company_chicago_l_6000_series) {

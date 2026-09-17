@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02C
+// CargoDef: PASSENGERS_ONLY
+// ID: 9050
 
 // PURCHASE
 spriteset(spriteset_mtro_tudh_recife_vlt_mobile_3_purchase, "gfx/electric/tudh_recife_vlt_mobile_3.png") {template_purchase_dualheaded(1, 96)}

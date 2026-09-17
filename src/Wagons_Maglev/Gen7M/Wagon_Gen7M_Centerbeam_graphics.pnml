@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_04B
+// CargoDef: CENTERBEAM
+// ID: 18010
 
 // PURCHASE
 spriteset(spriteset_mglv_wagon_gen7m_centerbeam_purchase, "gfx/wagons_maglev/gen7m/wagon_gen7m_centerbeam_purchase.png") {template_purchase_wagon(1, 1)}

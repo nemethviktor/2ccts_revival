@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_03A
+// CargoDef: NONE
+// ID: 4029
 
 // PURCHASE
 spriteset(spriteset_steam_mlw_royal_hudson_purchase, "gfx/steam/mlw_royal_hudson.png") {template_purchase(1, 96)}

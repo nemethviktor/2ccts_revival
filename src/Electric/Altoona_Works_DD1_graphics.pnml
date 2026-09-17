@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_17E
+// CargoDef: NONE
+// ID: 6171
 
 // PURCHASE
 spriteset(spriteset_electric_altoona_works_dd1_purchase, "gfx/electric/altoona_works_dd1.png") {template_purchase(1, 128)}

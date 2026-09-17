@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_42B
+// CargoDef: CONTAINER
+// ID: 19002
 
 // PURCHASE
 spriteset(spriteset_cargoemu_jnr_container_bullet_train_concept_purchase, "gfx/cargoemu/jnr_container_bullet_train_concept.png") {template_purchase_dualheaded(1, 192)}

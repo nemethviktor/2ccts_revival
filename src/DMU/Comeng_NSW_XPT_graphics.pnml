@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02A
+// CargoDef: NONE
+// ID: 7058
 
 // PURCHASE
 spriteset(spriteset_dmu_comeng_nsw_xpt_purchase, "gfx/dmu/comeng_nsw_xpt.png") {template_purchase_dualheaded(1, 128)}

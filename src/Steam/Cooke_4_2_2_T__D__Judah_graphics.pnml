@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_03A
+// CargoDef: NONE
+// ID: 4043
 
 // PURCHASE
 spriteset(spriteset_steam_cooke_4_2_2_t__d__judah_purchase, "gfx/steam/cooke_4_2_2_t__d__judah.png") {template_purchase(1, 96)}

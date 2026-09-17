@@ -1,9 +1,10 @@
-
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
+// Template: TPL_02C
+// CargoDef: PASSENGERS_ONLY
+// ID: 9027
 
-// Template: TPL_02C.
 // Data from: https://en.wikipedia.org/wiki/Breda_A650
 
 item(FEAT_TRAINS, item_mtro_breda_la_a650) {

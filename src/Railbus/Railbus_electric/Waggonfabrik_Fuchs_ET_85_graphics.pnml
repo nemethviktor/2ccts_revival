@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_01B
+// CargoDef: PASSENGERS
+// ID: 3002
 
 // PURCHASE
 spriteset(spriteset_rbe_waggonfabrik_fuchs_et_85_purchase, "gfx/railbus/railbus_electric/waggonfabrik_fuchs_et_85.png") {template_purchase(1, 32)}

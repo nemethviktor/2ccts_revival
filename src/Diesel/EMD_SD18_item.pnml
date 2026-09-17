@@ -1,9 +1,10 @@
-
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
+// Template: TPL_01A
+// CargoDef: NONE
+// ID: 5085
 
-// Template: TPL_01A.
 // Data from: https://zh.wikipedia.org/wiki/SD18%E5%9E%8B%E6%9F%B4%E6%B2%B9%E6%9C%BA%E8%BD%A6
 
 // Notes:

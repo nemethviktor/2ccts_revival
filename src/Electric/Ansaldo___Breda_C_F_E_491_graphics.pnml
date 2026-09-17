@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_01A
+// CargoDef: NONE
+// ID: 6115
 
 // PURCHASE
 spriteset(spriteset_electric_ansaldo___breda_c_f_e_491_purchase, "gfx/electric/ansaldo___breda_c_f_e_491.png") {template_purchase(1, 64)}

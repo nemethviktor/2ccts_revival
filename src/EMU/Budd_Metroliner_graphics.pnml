@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02A
+// CargoDef: PASSENGERS
+// ID: 8062
 
 // PURCHASE
 spriteset(spriteset_emu_budd_metroliner_purchase, "gfx/emu/budd_metroliner.png") {template_purchase_dualheaded(1, 128)}

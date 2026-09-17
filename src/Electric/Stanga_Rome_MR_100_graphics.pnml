@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02C
+// CargoDef: PASSENGERS_ONLY
+// ID: 9043
 
 // PURCHASE
 spriteset(spriteset_mtro_stanga_rome_mr_100_purchase, "gfx/electric/stanga_rome_mr_100.png") {template_purchase_dualheaded(1, 96)}

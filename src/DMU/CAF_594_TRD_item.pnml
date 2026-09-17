@@ -1,9 +1,10 @@
-
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
+// Template: TPL_02A
+// CargoDef: PASSENGERS
+// ID: 7015
 
-// Template: TPL_02A.
 // Data from: https://es.wikipedia.org/wiki/Serie_594_de_Renfe
 
 // Cargo capacity

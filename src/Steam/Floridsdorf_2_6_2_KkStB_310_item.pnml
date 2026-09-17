@@ -1,9 +1,10 @@
-
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
+// Template: TPL_03A
+// CargoDef: NONE
+// ID: 4084
 
-// Template: TPL_03A.
 // Data from: https://hu.wikipedia.org/wiki/KkStB_310_sorozat
 
 item(FEAT_TRAINS, item_steam_floridsdorf_2_6_2_kkstb_310) {

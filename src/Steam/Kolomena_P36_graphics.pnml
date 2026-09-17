@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_03A
+// CargoDef: NONE
+// ID: 4035
 
 // PURCHASE
 spriteset(spriteset_steam_kolomena_p36_purchase, "gfx/steam/kolomena_p36.png") {template_purchase(1, 96)}

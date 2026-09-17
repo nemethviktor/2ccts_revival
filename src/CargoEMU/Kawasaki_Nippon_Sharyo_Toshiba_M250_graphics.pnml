@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_42B
+// CargoDef: CONTAINER
+// ID: 19000
 
 // PURCHASE
 spriteset(spriteset_cargoemu_kawasaki_nippon_sharyo_toshiba_m250_purchase, "gfx/cargoemu/kawasaki_nippon_sharyo_toshiba_m250.png") {template_purchase_dualheaded(1, 192)}

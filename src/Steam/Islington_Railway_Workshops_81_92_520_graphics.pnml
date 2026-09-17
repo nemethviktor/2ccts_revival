@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_03A
+// CargoDef: NONE
+// ID: 4101
 
 // PURCHASE
 spriteset(spriteset_steam_islington_railway_workshops_81_92_520_purchase, "gfx/steam/islington_railway_workshops_81_92_520.png") {template_purchase(1, 96)}

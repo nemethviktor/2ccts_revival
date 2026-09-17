@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_42A
+// CargoDef: CONTAINER
+// ID: 15501
 
 // PURCHASE
 spriteset(spriteset_cargodmu_windhoff_cargosprinter_purchase, "gfx/cargodmu/windhoff_cargosprinter.png") {template_purchase_dualheaded(1, 192)}

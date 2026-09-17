@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02A
+// CargoDef: PASSENGERS
+// ID: 7037
 
 // PURCHASE
 spriteset(spriteset_dmu_camrail_ze_500_purchase, "gfx/dmu/camrail_ze_500.png") {template_purchase_dualheaded(1, 128)}

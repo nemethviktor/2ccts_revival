@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_01A
+// CargoDef: NONE
+// ID: 6009
 
 // PURCHASE
 spriteset(spriteset_electric_maffei_ssw_lok_5_adolphine_purchase, "gfx/electric/maffei_ssw_lok_5_adolphine.png") {template_purchase(1, 64)}

@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_03A
+// CargoDef: NONE
+// ID: 4119
 
 // PURCHASE
 spriteset(spriteset_steam_haine_saint_pierre_2_6_0_0_6_2t_golwe_purchase, "gfx/steam/haine_saint_pierre_2_6_0_0_6_2t_golwe.png") {template_purchase(1, 96)}

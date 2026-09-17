@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_01A
+// CargoDef: NONE
+// ID: 5051
 
 // PURCHASE
 spriteset(spriteset_diesel_tulomsas_tcdd_dh7000_purchase, "gfx/diesel/tulomsas_tcdd_dh7000.png") {template_purchase(1, 64)}

@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02A
+// CargoDef: PASSENGERS_ONLY
+// ID: 8074
 
 // PURCHASE
 spriteset(spriteset_emu_evolution_rail_hcmt_munnel_purchase, "gfx/emu/evolution_rail_hcmt_munnel.png") {template_purchase_dualheaded(1, 128)}

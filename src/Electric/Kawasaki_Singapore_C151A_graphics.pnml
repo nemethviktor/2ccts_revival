@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02C
+// CargoDef: PASSENGERS_ONLY
+// ID: 9035
 
 // PURCHASE
 spriteset(spriteset_mtro_kawasaki_singapore_c151a_purchase, "gfx/electric/kawasaki_singapore_c151a.png") {template_purchase_dualheaded(1, 96)}

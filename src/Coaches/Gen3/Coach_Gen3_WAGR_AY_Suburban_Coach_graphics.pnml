@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_04U
+// CargoDef: PASSENGERS_ONLY
+// ID: 11091
 
 // PURCHASE
 spriteset(spriteset_mu_coach_gen3_wagr_ay_suburban_coach_purchase, "gfx/coaches/gen3/coach_gen3_wagr_ay_suburban_coach.png") {template_purchase_coach(1, 143)}

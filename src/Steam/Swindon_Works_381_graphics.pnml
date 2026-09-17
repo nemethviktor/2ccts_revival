@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_03C
+// CargoDef: NONE
+// ID: 4068
 
 // PURCHASE
 spriteset(spriteset_steam_swindon_works_381_purchase, "gfx/steam/swindon_works_381.png") {template_purchase(1, 96)}

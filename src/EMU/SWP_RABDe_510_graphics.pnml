@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02D
+// CargoDef: PASSENGERS
+// ID: 8012
 
 // PURCHASE
 spriteset(spriteset_emu_swp_rabde_510_purchase, "gfx/emu/swp_rabde_510.png") {template_purchase_dualheaded(1, 128)}

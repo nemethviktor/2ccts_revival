@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02A
+// CargoDef: PASSENGERS
+// ID: 7020
 
 // PURCHASE
 spriteset(spriteset_dmu_bombardier_talent_nsb_bm_93_purchase, "gfx/dmu/bombardier_talent_nsb_bm_93.png") {template_purchase_dualheaded(1, 128)}

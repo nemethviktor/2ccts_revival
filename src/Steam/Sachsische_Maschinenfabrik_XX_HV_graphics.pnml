@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_03A
+// CargoDef: NONE
+// ID: 4059
 
 // PURCHASE
 spriteset(spriteset_steam_sachsische_maschinenfabrik_xx_hv_purchase, "gfx/steam/sachsische_maschinenfabrik_xx_hv.png") {template_purchase(1, 96)}

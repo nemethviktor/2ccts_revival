@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_03A
+// CargoDef: NONE
+// ID: 4079
 
 // PURCHASE
 spriteset(spriteset_steam_baldwin_2_8_0_sentetsu_sorii_purchase, "gfx/steam/baldwin_2_8_0_sentetsu_sorii.png") {template_purchase(1, 96)}

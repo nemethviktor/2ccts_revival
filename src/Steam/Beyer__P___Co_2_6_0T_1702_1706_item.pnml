@@ -1,9 +1,10 @@
-
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
+// Template: TPL_03C
+// CargoDef: NONE
+// ID: 4045
 
-// Template: TPL_03C.
 // Data from: https://en.wikipedia.org/wiki/NGR_Class_K_2-6-0T
 
 item(FEAT_TRAINS, item_steam_beyer__p___co_2_6_0t_1702_1706) {

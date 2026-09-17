@@ -1,9 +1,10 @@
-
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
+// Template: TPL_02A
+// CargoDef: PASSENGERS
+// ID: 7008
 
-// Template: TPL_02A.
 // Data from: https://ja.wikipedia.org/wiki/%E8%A5%BF%E3%83%89%E3%82%A4%E3%83%84%E5%9B%BD%E9%89%84VT11.5%E5%9E%8B%E6%B0%97%E5%8B%95%E8%BB%8A#VT11.5%E5%BD%A2_%E2%86%92_601%E5%BD%A2
 
 // Notes:

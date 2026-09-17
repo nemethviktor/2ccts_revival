@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_01B
+// CargoDef: PASSENGERS
+// ID: 2024
 
 // PURCHASE
 spriteset(spriteset_rbd_emc_derm_purchase, "gfx/railbus/railbus_diesel/emc_derm.png") {template_purchase(1, 32)}

@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_04B
+// CargoDef: BOXCAR_TYPE_NONFOOD
+// ID: 12047
 
 // PURCHASE
 spriteset(spriteset_mu_wagon_gen3_boxcar_type2_purchase, "gfx/wagons/gen3/wagon_gen3_boxcar_type2_purchase.png") {template_purchase_wagon(1, 1)}

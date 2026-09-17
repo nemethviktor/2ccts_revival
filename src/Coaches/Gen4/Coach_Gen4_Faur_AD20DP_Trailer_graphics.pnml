@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_04U
+// CargoDef: PASSENGERS_ONLY
+// ID: 11105
 
 // PURCHASE
 spriteset(spriteset_mu_coach_gen4_faur_ad20dp_trailer_purchase, "gfx/coaches/gen4/coach_gen4_faur_ad20dp_trailer.png") {template_purchase_coach(1, 143)}

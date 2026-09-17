@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_01B
+// CargoDef: PASSENGERS
+// ID: 2003
 
 // PURCHASE
 spriteset(spriteset_rbd_simmering_vt42_purchase, "gfx/railbus/railbus_diesel/simmering_vt42.png") {template_purchase(1, 32)}

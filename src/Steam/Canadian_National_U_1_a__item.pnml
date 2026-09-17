@@ -1,9 +1,10 @@
-
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
+// Template: TPL_03A
+// CargoDef: NONE
+// ID: 4063
 
-// Template: TPL_03A.
 // Data from: https://en.wikipedia.org/wiki/CN_U-1-a_and_U-1-b
 
 item(FEAT_TRAINS, item_steam_canadian_national_u_1_a_) {

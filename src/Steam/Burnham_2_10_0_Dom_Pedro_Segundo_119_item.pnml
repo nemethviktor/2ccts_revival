@@ -1,9 +1,10 @@
-
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
+// Template: TPL_03A
+// CargoDef: NONE
+// ID: 4134
 
-// Template: TPL_03A.
 // Data from: https://www.steamlocomotive.com/locobase.php?country=Brazil&wheel=2-10-0&railroad=dps
 
 item(FEAT_TRAINS, item_steam_burnham_2_10_0_dom_pedro_segundo_119) {

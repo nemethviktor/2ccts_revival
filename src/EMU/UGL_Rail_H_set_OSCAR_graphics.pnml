@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02A
+// CargoDef: PASSENGERS
+// ID: 8040
 
 // PURCHASE
 spriteset(spriteset_emu_ugl_rail_h_set_oscar_purchase, "gfx/emu/ugl_rail_h_set_oscar.png") {template_purchase_dualheaded(1, 128)}

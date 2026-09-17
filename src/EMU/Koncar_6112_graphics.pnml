@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02A
+// CargoDef: PASSENGERS
+// ID: 8070
 
 // PURCHASE
 spriteset(spriteset_emu_koncar_6112_purchase, "gfx/emu/koncar_6112.png") {template_purchase_dualheaded(1, 128)}

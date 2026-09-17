@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02D
+// CargoDef: PASSENGERS
+// ID: 8030
 
 // PURCHASE
 spriteset(spriteset_emu_hitachi_shinkansen_series_700_purchase, "gfx/emu/hitachi_shinkansen_series_700.png") {template_purchase_dualheaded(1, 128)}

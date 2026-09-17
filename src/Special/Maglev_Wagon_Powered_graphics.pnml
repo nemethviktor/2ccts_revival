@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_01F
+// CargoDef: PASSENGERS
+// ID: 13005
 
 // PURCHASE
 spriteset(spriteset_mglv_maglev_wagon_powered_purchase, "gfx/special/maglev_wagon_powered.png") {template_purchase_wagon_special(1, 1)}

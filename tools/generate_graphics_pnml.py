@@ -901,8 +901,7 @@ def get_tpl_controller(row, copyright_header) -> str:
         # We don't need a list anymore, just a formatted string
         full_output = (
             f"{copyright_header}\n\n"
-            # f"// Template: TPL_{template_id:02}{amendment}\n// CargoDef: {row['CARGODEF']}\n// ID: {row['VEHID_ID']}\n"
-            f"// Template: TPL_{template_id:02}{amendment}\n"
+            f"// Template: TPL_{template_id:02}{amendment}\n// CargoDef: {row['CARGODEF']}\n// ID: {row['VEHID_ID']}\n"
             f"{body}"
         )
         return full_output

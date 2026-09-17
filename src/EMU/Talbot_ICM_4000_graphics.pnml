@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02A
+// CargoDef: PASSENGERS
+// ID: 8018
 
 // PURCHASE
 spriteset(spriteset_emu_talbot_icm_4000_purchase, "gfx/emu/talbot_icm_4000.png") {template_purchase_dualheaded(1, 128)}

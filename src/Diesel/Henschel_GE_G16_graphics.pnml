@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_16A
+// CargoDef: NONE
+// ID: 5136
 
 // PURCHASE
 spriteset(spriteset_diesel_henschel_ge_g16_purchase, "gfx/diesel/henschel_ge_g16.png") {template_purchase(1, 128)}

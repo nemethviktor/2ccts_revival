@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_01A
+// CargoDef: NONE
+// ID: 5019
 
 // PURCHASE
 spriteset(spriteset_diesel_raba_m_030_m28_purchase, "gfx/diesel/raba_m_030_m28.png") {template_purchase(1, 64)}

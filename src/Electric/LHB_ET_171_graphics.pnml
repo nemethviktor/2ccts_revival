@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02C
+// CargoDef: PASSENGERS_ONLY
+// ID: 9008
 
 // PURCHASE
 spriteset(spriteset_mtro_lhb_et_171_purchase, "gfx/electric/lhb_et_171.png") {template_purchase_dualheaded(1, 96)}

@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02E
+// CargoDef: PASSENGERS
+// ID: 7065
 
 // PURCHASE
 spriteset(spriteset_dmu_stadler_flirt_powerpack_dmu_purchase, "gfx/dmu/stadler_flirt_powerpack_dmu.png") {template_purchase_dualheaded(1, 320)}

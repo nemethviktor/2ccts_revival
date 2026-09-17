@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_03B
+// CargoDef: PASSENGERS
+// ID: 1003
 
 // PURCHASE
 spriteset(spriteset_rbs_esslingen_czm_1_2_purchase, "gfx/railbus/railbus_steam/esslingen_czm_1_2.png") {template_purchase(1, 64)}

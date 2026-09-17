@@ -1,9 +1,10 @@
-
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
+// Template: TPL_01B
+// CargoDef: PASSENGERS
+// ID: 2025
 
-// Template: TPL_01B.
 // Data from: https://cs.wikipedia.org/wiki/Motorov%C3%BD_v%C5%AFz_M_120.4
 
 // Cargo capacity

@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02A
+// CargoDef: PASSENGERS
+// ID: 8051
 
 // PURCHASE
 spriteset(spriteset_emu_breda_ale_801_purchase, "gfx/emu/breda_ale_801.png") {template_purchase_dualheaded(1, 128)}

@@ -1,9 +1,10 @@
-
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
+// Template: TPL_03A
+// CargoDef: NONE
+// ID: 4092
 
-// Template: TPL_03A.
 // Data from: https://hu.wikipedia.org/wiki/M%C3%81V_424_sorozat#Megl%C3%A9v%C5%91_424-esek_Magyasz%C3%A1gon_%C3%A9s_Horv%C3%A1torsz%C3%A1gban
 
 item(FEAT_TRAINS, item_steam_mavag_4_8_0_424) {

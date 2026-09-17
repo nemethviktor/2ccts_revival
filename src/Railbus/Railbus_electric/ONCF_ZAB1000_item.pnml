@@ -1,9 +1,10 @@
-
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
+// Template: TPL_01B
+// CargoDef: PASSENGERS
+// ID: 3001
 
-// Template: TPL_01B.
 // Data from: http://www.railfaneurope.net/list/morocco_oncfm_del.html
 
 // Notes:

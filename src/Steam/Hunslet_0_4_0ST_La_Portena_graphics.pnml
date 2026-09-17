@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_03A
+// CargoDef: NONE
+// ID: 4133
 
 // PURCHASE
 spriteset(spriteset_steam_hunslet_0_4_0st_la_portena_purchase, "gfx/steam/hunslet_0_4_0st_la_portena.png") {template_purchase(1, 96)}

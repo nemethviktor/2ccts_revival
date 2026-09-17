@@ -1,9 +1,10 @@
-
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
+// Template: TPL_01B
+// CargoDef: PASSENGERS
+// ID: 2041
 
-// Template: TPL_01B.
 // Data from: https://en.wikipedia.org/wiki/%C4%8CD_Class_840_and_841
 
 // Notes:

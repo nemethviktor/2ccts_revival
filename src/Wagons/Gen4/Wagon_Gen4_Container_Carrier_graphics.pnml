@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_04B
+// CargoDef: CONTAINER
+// ID: 12024
 
 // PURCHASE
 spriteset(spriteset_mu_wagon_gen4_container_carrier_purchase, "gfx/wagons/gen4/wagon_gen4_container_carrier_purchase.png") {template_purchase_wagon(1, 1)}

@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_03D
+// CargoDef: NONE
+// ID: 5063
 
 // PURCHASE
 spriteset(spriteset_diesel_voronezh_vniizht_gt1_purchase, "gfx/diesel/voronezh_vniizht_gt1.png") {template_purchase(1, 64)}

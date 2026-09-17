@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_01A
+// CargoDef: NONE
+// ID: 5114
 
 // PURCHASE
 spriteset(spriteset_diesel_faur_lde1300_purchase, "gfx/diesel/faur_lde1300.png") {template_purchase(1, 64)}

@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02A
+// CargoDef: PASSENGERS
+// ID: 8050
 
 // PURCHASE
 spriteset(spriteset_emu_sgp_aeg_bbc_4030_purchase, "gfx/emu/sgp_aeg_bbc_4030.png") {template_purchase_dualheaded(1, 128)}

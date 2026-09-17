@@ -1,9 +1,10 @@
-
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
+// Template: TPL_03A
+// CargoDef: NONE
+// ID: 4057
 
-// Template: TPL_03A.
 // Data from: https://en.wikipedia.org/wiki/South_West_African_2-8-0
 
 item(FEAT_TRAINS, item_steam_orenstein___koppel_2_8_0_8_tender) {

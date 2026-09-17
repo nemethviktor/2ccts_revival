@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_01D
+// CargoDef: PASSENGERS_ONLY
+// ID: 14000
 
 // PURCHASE
 spriteset(spriteset_singlemtro_brooklyn_union_gate_1300_purchase, "gfx/single_metro/brooklyn_union_gate_1300.png") {template_purchase(1, 32)}

@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02A
+// CargoDef: PASSENGERS
+// ID: 7017
 
 // PURCHASE
 spriteset(spriteset_dmu_adtranz_class_612_regio_swinger_purchase, "gfx/dmu/adtranz_class_612_regio_swinger.png") {template_purchase_dualheaded(1, 128)}

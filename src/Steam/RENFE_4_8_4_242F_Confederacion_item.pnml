@@ -1,9 +1,10 @@
-
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
+// Template: TPL_03A
+// CargoDef: NONE
+// ID: 4108
 
-// Template: TPL_03A.
 // Data from: https://www.steamlocomotive.com/locobase.php?country=Spain&wheel=4-8-4&railroad=renfe
 
 item(FEAT_TRAINS, item_steam_renfe_4_8_4_242f_confederacion) {

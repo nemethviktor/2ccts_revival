@@ -1,9 +1,10 @@
-
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
+// Template: TPL_02E
+// CargoDef: PASSENGERS
+// ID: 8043
 
-// Template: TPL_02E.
 
 // Notes:
 //// WEB: NA -- Actually, Gemini is adamant that this is the same as above (the V250 that is.) - more precisely it was a concept train that never really came to exist, then it became the v250 and failed altogether.

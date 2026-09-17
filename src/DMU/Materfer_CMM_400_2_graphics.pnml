@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02A
+// CargoDef: PASSENGERS
+// ID: 7053
 
 // PURCHASE
 spriteset(spriteset_dmu_materfer_cmm_400_2_purchase, "gfx/dmu/materfer_cmm_400_2.png") {template_purchase_dualheaded(1, 128)}

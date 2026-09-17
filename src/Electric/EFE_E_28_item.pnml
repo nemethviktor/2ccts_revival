@@ -1,9 +1,10 @@
-
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
+// Template: TPL_01A
+// CargoDef: NONE
+// ID: 6006
 
-// Template: TPL_01A.
 
 // Notes:
 //// TE_STARTING_KN: 200 -- All data Gemini bcs there doesn't appear to be anything else.

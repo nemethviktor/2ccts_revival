@@ -1,9 +1,10 @@
-
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
+// Template: TPL_03C
+// CargoDef: NONE
+// ID: 4072
 
-// Template: TPL_03C.
 // Data from: https://en.wikipedia.org/wiki/PPR_35_Tonner_4-6-0T_Portuguese
 
 item(FEAT_TRAINS, item_steam_nasmyth__wilson___co_35_tonner_4_6_0t) {

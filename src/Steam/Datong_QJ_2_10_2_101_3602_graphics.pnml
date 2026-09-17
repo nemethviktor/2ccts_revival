@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_03A
+// CargoDef: NONE
+// ID: 4116
 
 // PURCHASE
 spriteset(spriteset_steam_datong_qj_2_10_2_101_3602_purchase, "gfx/steam/datong_qj_2_10_2_101_3602.png") {template_purchase(1, 96)}

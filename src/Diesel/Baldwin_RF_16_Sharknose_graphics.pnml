@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_17B
+// CargoDef: NONE
+// ID: 5100
 
 // PURCHASE
 spriteset(spriteset_diesel_baldwin_rf_16_sharknose_purchase, "gfx/diesel/baldwin_rf_16_sharknose.png") {template_purchase(1, 128)}

@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02D
+// CargoDef: PASSENGERS
+// ID: 8066
 
 // PURCHASE
 spriteset(spriteset_emu_walkers_tilt_train_ett_purchase, "gfx/emu/walkers_tilt_train_ett.png") {template_purchase_dualheaded(1, 128)}

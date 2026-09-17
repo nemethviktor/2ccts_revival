@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02E
+// CargoDef: NONE
+// ID: 8027
 
 // PURCHASE
 spriteset(spriteset_emu_gec_alsthom_thalys_pbka_purchase, "gfx/emu/gec_alsthom_thalys_pbka.png") {template_purchase_dualheaded(1, 320)}

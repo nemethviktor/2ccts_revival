@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02A
+// CargoDef: PASSENGERS
+// ID: 10001
 
 // PURCHASE
 spriteset(spriteset_mmu_mistubishi_nippon_sharyo_mlx01_901_purchase, "gfx/mmu/mistubishi_nippon_sharyo_mlx01_901.png") {template_purchase_dualheaded(1, 128)}

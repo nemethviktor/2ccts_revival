@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_01A
+// CargoDef: NONE
+// ID: 5082
 
 // PURCHASE
 spriteset(spriteset_diesel_kisha_mitsubishi_ns_df50_purchase, "gfx/diesel/kisha_mitsubishi_ns_df50.png") {template_purchase(1, 64)}

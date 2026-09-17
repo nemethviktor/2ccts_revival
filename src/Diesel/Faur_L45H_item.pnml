@@ -1,9 +1,10 @@
-
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
+// Template: TPL_01A
+// CargoDef: NONE
+// ID: 5205
 
-// Template: TPL_01A.
 // Data from: https://de.wikipedia.org/wiki/FAUR_L45H
 
 item(FEAT_TRAINS, item_diesel_faur_l45h) {

@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_03B
+// CargoDef: NONE
+// ID: 5066
 
 // PURCHASE
 spriteset(spriteset_diesel_hohenzollern_emch3_purchase, "gfx/diesel/hohenzollern_emch3.png") {template_purchase(1, 64)}

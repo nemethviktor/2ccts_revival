@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_03A
+// CargoDef: NONE
+// ID: 4034
 
 // PURCHASE
 spriteset(spriteset_steam_henschel___son_condenser_purchase, "gfx/steam/henschel___son_condenser.png") {template_purchase(1, 96)}

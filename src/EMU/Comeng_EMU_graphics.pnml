@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02A
+// CargoDef: PASSENGERS_ONLY
+// ID: 8073
 
 // PURCHASE
 spriteset(spriteset_emu_comeng_emu_purchase, "gfx/emu/comeng_emu.png") {template_purchase_dualheaded(1, 128)}

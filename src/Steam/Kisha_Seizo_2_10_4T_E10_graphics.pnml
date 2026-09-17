@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_03C
+// CargoDef: NONE
+// ID: 4067
 
 // PURCHASE
 spriteset(spriteset_steam_kisha_seizo_2_10_4t_e10_purchase, "gfx/steam/kisha_seizo_2_10_4t_e10.png") {template_purchase(1, 96)}

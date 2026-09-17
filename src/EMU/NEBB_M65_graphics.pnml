@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02A
+// CargoDef: PASSENGERS
+// ID: 8005
 
 // PURCHASE
 spriteset(spriteset_emu_nebb_m65_purchase, "gfx/emu/nebb_m65.png") {template_purchase_dualheaded(1, 128)}

@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_01B
+// CargoDef: PASSENGERS
+// ID: 3020
 
 // PURCHASE
 spriteset(spriteset_rbe_raw_schoneweide_479_201_purchase, "gfx/railbus/railbus_electric/raw_schoneweide_479_201.png") {template_purchase(1, 32)}

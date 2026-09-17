@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02D
+// CargoDef: PASSENGERS
+// ID: 8036
 
 // PURCHASE
 spriteset(spriteset_emu_siemens_velero_purchase, "gfx/emu/siemens_velero.png") {template_purchase_dualheaded(1, 128)}

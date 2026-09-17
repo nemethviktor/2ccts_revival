@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_03A
+// CargoDef: NONE
+// ID: 4140
 
 // PURCHASE
 spriteset(spriteset_steam_avonside_0_6_0st_sao_paulo_no__13___14_purchase, "gfx/steam/avonside_0_6_0st_sao_paulo_no__13___14.png") {template_purchase(1, 96)}

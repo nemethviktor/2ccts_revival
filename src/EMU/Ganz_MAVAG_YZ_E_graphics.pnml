@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02D
+// CargoDef: PASSENGERS
+// ID: 8058
 
 // PURCHASE
 spriteset(spriteset_emu_ganz_mavag_yz_e_purchase, "gfx/emu/ganz_mavag_yz_e.png") {template_purchase_dualheaded(1, 128)}

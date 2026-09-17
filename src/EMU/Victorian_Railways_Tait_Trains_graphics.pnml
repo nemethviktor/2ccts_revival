@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02A
+// CargoDef: PASSENGERS_ONLY
+// ID: 8078
 
 // PURCHASE
 spriteset(spriteset_emu_victorian_railways_tait_trains_purchase, "gfx/emu/victorian_railways_tait_trains.png") {template_purchase_dualheaded(1, 128)}

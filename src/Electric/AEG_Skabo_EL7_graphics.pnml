@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_01A
+// CargoDef: NONE
+// ID: 6001
 
 // PURCHASE
 spriteset(spriteset_electric_aeg_skabo_el7_purchase, "gfx/electric/aeg_skabo_el7.png") {template_purchase(1, 64)}

@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_01D
+// CargoDef: PASSENGERS_ONLY
+// ID: 14003
 
 // PURCHASE
 spriteset(spriteset_singlemtro_berlin_u_bahn_c_ii_purchase, "gfx/single_metro/berlin_u_bahn_c_ii.png") {template_purchase(1, 32)}

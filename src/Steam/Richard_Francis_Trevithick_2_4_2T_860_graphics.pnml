@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_03E
+// CargoDef: NONE
+// ID: 4077
 
 // PURCHASE
 spriteset(spriteset_steam_richard_francis_trevithick_2_4_2t_860_purchase, "gfx/steam/richard_francis_trevithick_2_4_2t_860.png") {template_purchase(1, 96)}

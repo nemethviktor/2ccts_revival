@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_03B
+// CargoDef: PASSENGERS
+// ID: 1002
 
 // PURCHASE
 spriteset(spriteset_rbs_victorian_railways_rowan_railmotor_purchase, "gfx/railbus/railbus_steam/victorian_railways_rowan_railmotor.png") {template_purchase(1, 64)}

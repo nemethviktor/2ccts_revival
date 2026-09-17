@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02A
+// CargoDef: PASSENGERS
+// ID: 8080
 
 // PURCHASE
 spriteset(spriteset_emu_brel_gec_auckland_art_concept_purchase, "gfx/emu/brel_gec_auckland_art_concept.png") {template_purchase_dualheaded(1, 128)}

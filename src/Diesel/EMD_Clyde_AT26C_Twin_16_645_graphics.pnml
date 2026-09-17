@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_16A
+// CargoDef: NONE
+// ID: 5165
 
 // PURCHASE
 spriteset(spriteset_diesel_emd_clyde_at26c_twin_16_645_purchase, "gfx/diesel/emd_clyde_at26c_twin_16_645.png") {template_purchase(1, 128)}

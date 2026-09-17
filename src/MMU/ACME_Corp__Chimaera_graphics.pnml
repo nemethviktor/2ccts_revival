@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02A
+// CargoDef: PASSENGERS_ONLY
+// ID: 10002
 
 // PURCHASE
 spriteset(spriteset_mmu_acme_corp__chimaera_purchase, "gfx/mmu/acme_corp__chimaera.png") {template_purchase_dualheaded(1, 128)}

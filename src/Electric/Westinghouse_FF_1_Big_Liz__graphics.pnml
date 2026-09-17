@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_32C
+// CargoDef: NONE
+// ID: 6063
 
 // PURCHASE
 spriteset(spriteset_electric_westinghouse_ff_1_big_liz__purchase, "gfx/electric/westinghouse_ff_1_big_liz_.png") {template_purchase(1, 128)}

@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_03A
+// CargoDef: NONE
+// ID: 4038
 
 // PURCHASE
 spriteset(spriteset_steam_nohab_4_6_2_f_purchase, "gfx/steam/nohab_4_6_2_f.png") {template_purchase(1, 96)}

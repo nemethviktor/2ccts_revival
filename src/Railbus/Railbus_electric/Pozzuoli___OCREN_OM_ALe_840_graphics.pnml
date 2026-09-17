@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_01B
+// CargoDef: PASSENGERS
+// ID: 3004
 
 // PURCHASE
 spriteset(spriteset_rbe_pozzuoli___ocren_om_ale_840_purchase, "gfx/railbus/railbus_electric/pozzuoli___ocren_om_ale_840.png") {template_purchase(1, 32)}

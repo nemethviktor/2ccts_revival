@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02C
+// CargoDef: PASSENGERS_ONLY
+// ID: 9059
 
 // PURCHASE
 spriteset(spriteset_mtro_metro_cammell_london_1972_stock_purchase, "gfx/electric/metro_cammell_london_1972_stock.png") {template_purchase_dualheaded(1, 96)}

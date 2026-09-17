@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02D
+// CargoDef: PASSENGERS
+// ID: 8010
 
 // PURCHASE
 spriteset(spriteset_emu_nippon_sharyo_odakyu_3100_series_nse_purchase, "gfx/emu/nippon_sharyo_odakyu_3100_series_nse.png") {template_purchase_dualheaded(1, 128)}

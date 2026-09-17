@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02A
+// CargoDef: NONE
+// ID: 8023
 
 // PURCHASE
 spriteset(spriteset_emu_asea_x2000_purchase, "gfx/emu/asea_x2000.png") {template_purchase_dualheaded(1, 128)}

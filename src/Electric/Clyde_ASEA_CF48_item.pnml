@@ -1,9 +1,10 @@
-
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
+// Template: TPL_01A
+// CargoDef: NONE
+// ID: 6139
 
-// Template: TPL_01A.
 // Data from: https://en.wikipedia.org/wiki/Queensland_Railways_3500/3600_class
 
 item(FEAT_TRAINS, item_electric_clyde_asea_cf48) {

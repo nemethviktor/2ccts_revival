@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02A
+// CargoDef: PASSENGERS
+// ID: 7010
 
 // PURCHASE
 spriteset(spriteset_dmu_uac_turbo_train_purchase, "gfx/dmu/uac_turbo_train.png") {template_purchase_dualheaded(1, 128)}

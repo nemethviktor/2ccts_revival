@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02A
+// CargoDef: PASSENGERS
+// ID: 7026
 
 // PURCHASE
 spriteset(spriteset_dmu_vagonka_studenka_814_purchase, "gfx/dmu/vagonka_studenka_814.png") {template_purchase_dualheaded(1, 128)}

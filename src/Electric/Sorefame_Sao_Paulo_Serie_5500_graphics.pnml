@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02C
+// CargoDef: PASSENGERS_ONLY
+// ID: 9020
 
 // PURCHASE
 spriteset(spriteset_mtro_sorefame_sao_paulo_serie_5500_purchase, "gfx/electric/sorefame_sao_paulo_serie_5500.png") {template_purchase_dualheaded(1, 96)}

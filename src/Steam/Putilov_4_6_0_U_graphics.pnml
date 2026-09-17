@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_03A
+// CargoDef: NONE
+// ID: 4080
 
 // PURCHASE
 spriteset(spriteset_steam_putilov_4_6_0_u_purchase, "gfx/steam/putilov_4_6_0_u.png") {template_purchase(1, 96)}

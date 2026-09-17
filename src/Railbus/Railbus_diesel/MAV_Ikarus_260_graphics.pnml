@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_01A
+// CargoDef: PASSENGERS_ONLY
+// ID: 2047
 
 // PURCHASE
 spriteset(spriteset_rbd_mav_ikarus_260_purchase, "gfx/railbus/railbus_diesel/mav_ikarus_260.png") {template_purchase(1, 64)}

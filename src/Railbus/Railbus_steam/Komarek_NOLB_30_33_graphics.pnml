@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_01B
+// CargoDef: PASSENGERS
+// ID: 1009
 
 // PURCHASE
 spriteset(spriteset_rbs_komarek_nolb_30_33_purchase, "gfx/railbus/railbus_steam/komarek_nolb_30_33.png") {template_purchase(1, 32)}

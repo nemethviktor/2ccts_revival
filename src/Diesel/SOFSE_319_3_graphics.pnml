@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_01A
+// CargoDef: NONE
+// ID: 5118
 
 // PURCHASE
 spriteset(spriteset_diesel_sofse_319_3_purchase, "gfx/diesel/sofse_319_3.png") {template_purchase(1, 64)}

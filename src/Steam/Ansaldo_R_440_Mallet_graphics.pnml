@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_03E
+// CargoDef: NONE
+// ID: 4083
 
 // PURCHASE
 spriteset(spriteset_steam_ansaldo_r_440_mallet_purchase, "gfx/steam/ansaldo_r_440_mallet.png") {template_purchase(1, 96)}

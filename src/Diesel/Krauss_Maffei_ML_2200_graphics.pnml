@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_01A
+// CargoDef: NONE
+// ID: 5190
 
 // PURCHASE
 spriteset(spriteset_diesel_krauss_maffei_ml_2200_purchase, "gfx/diesel/krauss_maffei_ml_2200.png") {template_purchase(1, 64)}

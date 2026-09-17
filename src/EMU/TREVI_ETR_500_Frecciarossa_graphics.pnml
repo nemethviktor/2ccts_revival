@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02A
+// CargoDef: NONE
+// ID: 8024
 
 // PURCHASE
 spriteset(spriteset_emu_trevi_etr_500_frecciarossa_purchase, "gfx/emu/trevi_etr_500_frecciarossa.png") {template_purchase_dualheaded(1, 128)}

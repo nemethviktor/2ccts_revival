@@ -1,9 +1,10 @@
-
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
+// Template: TPL_03A
+// CargoDef: NONE
+// ID: 4149
 
-// Template: TPL_03A.
 // Data from: https://en.wikipedia.org/wiki/Locomotives_LVCI_1-50,_155-164
 
 item(FEAT_TRAINS, item_steam_stephenson_bp_2_2_2_lvci_class_1) {

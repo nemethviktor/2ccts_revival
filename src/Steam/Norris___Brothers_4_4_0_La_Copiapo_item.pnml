@@ -1,9 +1,10 @@
-
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
+// Template: TPL_03A
+// CargoDef: NONE
+// ID: 4139
 
-// Template: TPL_03A.
 // Data from: https://es.wikipedia.org/wiki/Locomotora_Copiap%C3%B3
 
 item(FEAT_TRAINS, item_steam_norris___brothers_4_4_0_la_copiapo) {

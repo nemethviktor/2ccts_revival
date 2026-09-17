@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_03D
+// CargoDef: NONE
+// ID: 6040
 
 // PURCHASE
 spriteset(spriteset_electric_nevz_vl85_purchase, "gfx/electric/nevz_vl85.png") {template_purchase(1, 64)}

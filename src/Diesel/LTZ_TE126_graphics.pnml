@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_32D
+// CargoDef: NONE
+// ID: 5203
 
 // PURCHASE
 spriteset(spriteset_diesel_ltz_te126_purchase, "gfx/diesel/ltz_te126.png") {template_purchase(1, 128)}

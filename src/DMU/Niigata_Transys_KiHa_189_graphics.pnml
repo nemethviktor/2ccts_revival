@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02A
+// CargoDef: PASSENGERS
+// ID: 7032
 
 // PURCHASE
 spriteset(spriteset_dmu_niigata_transys_kiha_189_purchase, "gfx/dmu/niigata_transys_kiha_189.png") {template_purchase_dualheaded(1, 128)}

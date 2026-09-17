@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_01A
+// CargoDef: NONE
+// ID: 6032
 
 // PURCHASE
 spriteset(spriteset_electric_aeg_bbc_henschel_siemens_e03_purchase, "gfx/electric/aeg_bbc_henschel_siemens_e03.png") {template_purchase(1, 64)}

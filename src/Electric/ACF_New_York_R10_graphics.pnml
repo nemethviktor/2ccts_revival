@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02C
+// CargoDef: PASSENGERS_ONLY
+// ID: 9042
 
 // PURCHASE
 spriteset(spriteset_mtro_acf_new_york_r10_purchase, "gfx/electric/acf_new_york_r10.png") {template_purchase_dualheaded(1, 96)}

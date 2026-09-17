@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_03A
+// CargoDef: NONE
+// ID: 4008
 
 // PURCHASE
 spriteset(spriteset_steam_slm_winterthur_a_3_5_purchase, "gfx/steam/slm_winterthur_a_3_5.png") {template_purchase(1, 96)}

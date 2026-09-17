@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_01A
+// CargoDef: NONE
+// ID: 5184
 
 // PURCHASE
 spriteset(spriteset_diesel_ge_c44_9w_dash_9_purchase, "gfx/diesel/ge_c44_9w_dash_9.png") {template_purchase(1, 64)}

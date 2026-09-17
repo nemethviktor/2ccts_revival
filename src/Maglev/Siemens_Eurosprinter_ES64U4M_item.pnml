@@ -1,9 +1,10 @@
-
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
+// Template: TPL_01A
+// CargoDef: NONE
+// ID: 15001
 
-// Template: TPL_01A.
 
 // Notes:
 //// POWER: 18875 -- ($14,000\text{ kW}$) Roughly double a standard Taurus. You need this to maintain $300\text{ km/h}$ with a heavy trailing load

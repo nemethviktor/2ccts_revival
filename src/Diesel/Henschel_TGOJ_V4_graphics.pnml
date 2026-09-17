@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_01A
+// CargoDef: NONE
+// ID: 5041
 
 // PURCHASE
 spriteset(spriteset_diesel_henschel_tgoj_v4_purchase, "gfx/diesel/henschel_tgoj_v4.png") {template_purchase(1, 64)}

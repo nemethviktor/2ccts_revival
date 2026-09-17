@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02C
+// CargoDef: PASSENGERS_ONLY
+// ID: 9015
 
 // PURCHASE
 spriteset(spriteset_mtro_st__louis_car_co_new_york_r44_purchase, "gfx/electric/st__louis_car_co_new_york_r44.png") {template_purchase_dualheaded(1, 96)}

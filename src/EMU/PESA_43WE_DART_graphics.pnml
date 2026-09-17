@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02E
+// CargoDef: PASSENGERS_ONLY
+// ID: 8096
 
 // PURCHASE
 spriteset(spriteset_emu_pesa_43we_dart_purchase, "gfx/emu/pesa_43we_dart.png") {template_purchase_dualheaded(1, 320)}

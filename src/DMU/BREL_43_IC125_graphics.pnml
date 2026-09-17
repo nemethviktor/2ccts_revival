@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02A
+// CargoDef: NONE
+// ID: 7012
 
 // PURCHASE
 spriteset(spriteset_dmu_brel_43_ic125_purchase, "gfx/dmu/brel_43_ic125.png") {template_purchase_dualheaded(1, 128)}

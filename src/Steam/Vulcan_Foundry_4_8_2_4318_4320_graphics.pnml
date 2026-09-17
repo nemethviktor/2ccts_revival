@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_03A
+// CargoDef: NONE
+// ID: 4093
 
 // PURCHASE
 spriteset(spriteset_steam_vulcan_foundry_4_8_2_4318_4320_purchase, "gfx/steam/vulcan_foundry_4_8_2_4318_4320.png") {template_purchase(1, 96)}

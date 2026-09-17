@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_01A
+// CargoDef: NONE
+// ID: 5144
 
 // PURCHASE
 spriteset(spriteset_diesel_alco_ae_goodwin_dl531_532_purchase, "gfx/diesel/alco_ae_goodwin_dl531_532.png") {template_purchase(1, 64)}

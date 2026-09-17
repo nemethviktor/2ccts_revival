@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02D
+// CargoDef: PASSENGERS
+// ID: 7063
 
 // PURCHASE
 spriteset(spriteset_dmu_rvr_dr1a_purchase, "gfx/dmu/rvr_dr1a.png") {template_purchase_dualheaded(1, 128)}

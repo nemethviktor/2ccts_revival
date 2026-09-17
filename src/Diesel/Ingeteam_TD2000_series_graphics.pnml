@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_01A
+// CargoDef: NONE
+// ID: 5199
 
 // PURCHASE
 spriteset(spriteset_diesel_ingeteam_td2000_series_purchase, "gfx/diesel/ingeteam_td2000_series.png") {template_purchase(1, 64)}

@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_03A
+// CargoDef: NONE
+// ID: 4025
 
 // PURCHASE
 spriteset(spriteset_steam_lms_5mt_black_five_purchase, "gfx/steam/lms_5mt_black_five.png") {template_purchase(1, 96)}

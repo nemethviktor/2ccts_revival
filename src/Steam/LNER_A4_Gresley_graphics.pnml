@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_03A
+// CargoDef: NONE
+// ID: 4028
 
 // PURCHASE
 spriteset(spriteset_steam_lner_a4_gresley_purchase, "gfx/steam/lner_a4_gresley.png") {template_purchase(1, 96)}

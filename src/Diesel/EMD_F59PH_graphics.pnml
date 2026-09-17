@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_01A
+// CargoDef: NONE
+// ID: 5094
 
 // PURCHASE
 spriteset(spriteset_diesel_emd_f59ph_purchase, "gfx/diesel/emd_f59ph.png") {template_purchase(1, 64)}

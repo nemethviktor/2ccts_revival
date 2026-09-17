@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_03D
+// CargoDef: PASSENGERS_ONLY
+// ID: 2048
 
 // PURCHASE
 spriteset(spriteset_rbd_ganz_mavag_ikarus_purchase, "gfx/railbus/railbus_diesel/ganz_mavag_ikarus.png") {template_purchase(1, 64)}

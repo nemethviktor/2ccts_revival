@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_03A
+// CargoDef: NONE
+// ID: 4044
 
 // PURCHASE
 spriteset(spriteset_steam_beyer__p___co_2_4_0_ss_9_16__21_78_purchase, "gfx/steam/beyer__p___co_2_4_0_ss_9_16__21_78.png") {template_purchase(1, 96)}

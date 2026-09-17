@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_01A
+// CargoDef: NONE
+// ID: 5122
 
 // PURCHASE
 spriteset(spriteset_diesel_baldwin_0_6_6_0_1000_purchase, "gfx/diesel/baldwin_0_6_6_0_1000.png") {template_purchase(1, 64)}

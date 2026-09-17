@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_01A
+// CargoDef: NONE
+// ID: 5096
 
 // PURCHASE
 spriteset(spriteset_diesel_vossloh_g_2000_bb_purchase, "gfx/diesel/vossloh_g_2000_bb.png") {template_purchase(1, 64)}

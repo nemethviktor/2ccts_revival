@@ -1,9 +1,10 @@
-
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
+// Template: TPL_02C
+// CargoDef: PASSENGERS_ONLY
+// ID: 9053
 
-// Template: TPL_02C.
 // Data from: https://fr.wikipedia.org/wiki/M%C3%A9tro_d%27Alger
 
 item(FEAT_TRAINS, item_mtro_caf_algiers_2011_stock) {

@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_01A
+// CargoDef: NONE
+// ID: 5186
 
 // PURCHASE
 spriteset(spriteset_diesel_pesa_111d_purchase, "gfx/diesel/pesa_111d.png") {template_purchase(1, 64)}

@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_01A
+// CargoDef: NONE
+// ID: 6074
 
 // PURCHASE
 spriteset(spriteset_electric_krauss_wasseg_e_91_9_purchase, "gfx/electric/krauss_wasseg_e_91_9.png") {template_purchase(1, 64)}

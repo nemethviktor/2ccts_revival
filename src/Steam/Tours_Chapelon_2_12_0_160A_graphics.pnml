@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_03G
+// CargoDef: NONE
+// ID: 4154
 
 // PURCHASE
 spriteset(spriteset_steam_tours_chapelon_2_12_0_160a_purchase, "gfx/steam/tours_chapelon_2_12_0_160a.png") {template_purchase(1, 192)}

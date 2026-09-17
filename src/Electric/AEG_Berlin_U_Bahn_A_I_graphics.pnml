@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02C
+// CargoDef: PASSENGERS_ONLY
+// ID: 9038
 
 // PURCHASE
 spriteset(spriteset_mtro_aeg_berlin_u_bahn_a_i_purchase, "gfx/electric/aeg_berlin_u_bahn_a_i.png") {template_purchase_dualheaded(1, 96)}

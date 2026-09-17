@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_04A
+// CargoDef: NONE
+// ID: 12046
 
 // PURCHASE
 spriteset(spriteset_mu_wagon_service_car_type2_purchase, "gfx/wagons/service_car/wagon_service_car_type2_purchase.png") {template_purchase_wagon(1, 1)}

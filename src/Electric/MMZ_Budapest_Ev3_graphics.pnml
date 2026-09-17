@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02C
+// CargoDef: PASSENGERS_ONLY
+// ID: 9011
 
 // PURCHASE
 spriteset(spriteset_mtro_mmz_budapest_ev3_purchase, "gfx/electric/mmz_budapest_ev3.png") {template_purchase_dualheaded(1, 96)}

@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_03C
+// CargoDef: NONE
+// ID: 4055
 
 // PURCHASE
 spriteset(spriteset_steam_machinefabriek_breda_661_667_purchase, "gfx/steam/machinefabriek_breda_661_667.png") {template_purchase(1, 96)}

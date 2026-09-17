@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_03A
+// CargoDef: NONE
+// ID: 4017
 
 // PURCHASE
 spriteset(spriteset_steam_schneider_et_cie_140c_purchase, "gfx/steam/schneider_et_cie_140c.png") {template_purchase(1, 96)}

@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_03A
+// CargoDef: NONE
+// ID: 4143
 
 // PURCHASE
 spriteset(spriteset_steam_kitson_2_2_2_3166_3171_purchase, "gfx/steam/kitson_2_2_2_3166_3171.png") {template_purchase(1, 96)}

@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02A
+// CargoDef: PASSENGERS
+// ID: 7009
 
 // PURCHASE
 spriteset(spriteset_dmu_werkspoor_plan_u_de_iii_purchase, "gfx/dmu/werkspoor_plan_u_de_iii.png") {template_purchase_dualheaded(1, 128)}

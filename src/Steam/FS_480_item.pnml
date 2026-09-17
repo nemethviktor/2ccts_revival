@@ -1,9 +1,10 @@
-
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
+// Template: TPL_03A
+// CargoDef: NONE
+// ID: 4089
 
-// Template: TPL_03A.
 // Data from: https://it.wikipedia.org/wiki/Locomotiva_FS_480
 
 item(FEAT_TRAINS, item_steam_fs_480) {

@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_01A
+// CargoDef: NONE
+// ID: 5153
 
 // PURCHASE
 spriteset(spriteset_diesel_emd_clyde_jt22hc_2_purchase, "gfx/diesel/emd_clyde_jt22hc_2.png") {template_purchase(1, 64)}

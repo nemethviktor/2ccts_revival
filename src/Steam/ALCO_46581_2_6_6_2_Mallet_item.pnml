@@ -1,9 +1,10 @@
-
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
+// Template: TPL_03A
+// CargoDef: NONE
+// ID: 4056
 
-// Template: TPL_03A.
 // Data from: https://en.wikipedia.org/wiki/South_African_Class_MD_2-6-6-2
 
 item(FEAT_TRAINS, item_steam_alco_46581_2_6_6_2_mallet) {

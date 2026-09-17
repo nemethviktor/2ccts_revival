@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02A
+// CargoDef: PASSENGERS
+// ID: 7039
 
 // PURCHASE
 spriteset(spriteset_dmu_metro_cammell_251_blue_pullman_purchase, "gfx/dmu/metro_cammell_251_blue_pullman.png") {template_purchase_dualheaded(1, 128)}

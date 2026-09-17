@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_02F
+// CargoDef: PASSENGERS
+// ID: 8055
 
 // PURCHASE
 spriteset(spriteset_emu_ansaldobreda_v250_albatros_purchase, "gfx/emu/ansaldobreda_v250_albatros.png") {template_purchase_dualheaded(1, 128)}

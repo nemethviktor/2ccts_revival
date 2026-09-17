@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_04A
+// CargoDef: MAIL_ONLY
+// ID: 11048
 
 // PURCHASE
 spriteset(spriteset_mu_coach_gen4_russian_mail_coach_purchase, "gfx/coaches/gen4/coach_gen4_russian_mail_coach.png") {template_purchase_coach(1, 143)}

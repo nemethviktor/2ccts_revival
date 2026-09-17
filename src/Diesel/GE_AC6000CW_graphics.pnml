@@ -2,6 +2,8 @@
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
 // Template: TPL_16A
+// CargoDef: NONE
+// ID: 5142
 
 // PURCHASE
 spriteset(spriteset_diesel_ge_ac6000cw_purchase, "gfx/diesel/ge_ac6000cw.png") {template_purchase(1, 128)}
