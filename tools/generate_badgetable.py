@@ -7,10 +7,12 @@ import warnings
 from pandas.api.types import is_number
 import re
 
+from helpers.read_excel_file import load_master_data
+
 warnings.filterwarnings("ignore", category=UserWarning, module="openpyxl")
 
 
-def generate_vehicle_id_pnml():
+def generate_vehicle_id_pnml(copyright_text: str):
     print("--- Starting BadgeTable Generation ---")
 
     # 1. Setup Paths
@@ -19,291 +21,8 @@ def generate_vehicle_id_pnml():
     excel_path = os.path.join(script_dir, "vehicle_report.xlsx")
     output_path = os.path.normpath(os.path.join(project_root, "src/badgetable.pnml"))
 
-    if not os.path.exists(excel_path):
-        print(f"Error: Could not find Excel file at {excel_path}")
-        return
-
-    try:
-        sheets = pd.read_excel(excel_path, sheet_name=None)
-        df_copyright = sheets["copyright_text"]
-    except Exception as e:
-        print(f"Error reading Excel sheets: {e}")
-        return
-
-    # 2. Extract Copyright
-    header_text = (
-        str(df_copyright.columns[0])
-        if "Unnamed" not in str(df_copyright.columns[0])
-        else ""
-    )
-    if not df_copyright.empty:
-        data_text = str(df_copyright.iloc[0, 0])
-        raw_copyright = (
-            data_text if header_text == "" else f"{header_text}\n{data_text}"
-        )
-    else:
-        raw_copyright = header_text
-
     content = []
-    content.append(f"\n{raw_copyright}\n\n\n")
-
-    flags = [
-        "flag",
-        "flag/AF",
-        "flag/AX",
-        "flag/AL",
-        "flag/DZ",
-        "flag/AS",
-        "flag/AD",
-        "flag/AO",
-        "flag/AI",
-        "flag/AQ",
-        "flag/AG",
-        "flag/AR",
-        "flag/AM",
-        "flag/AW",
-        "flag/AU",
-        "flag/AT",
-        "flag/AZ",
-        "flag/BS",
-        "flag/BH",
-        "flag/BD",
-        "flag/BB",
-        "flag/BY",
-        "flag/BE",
-        "flag/BZ",
-        "flag/BJ",
-        "flag/BM",
-        "flag/BT",
-        "flag/BO",
-        "flag/BQ",
-        "flag/BA",
-        "flag/BW",
-        "flag/BV",
-        "flag/BR",
-        "flag/IO",
-        "flag/BN",
-        "flag/BG",
-        "flag/BF",
-        "flag/BI",
-        "flag/KH",
-        "flag/CM",
-        "flag/CA",
-        "flag/CV",
-        "flag/KY",
-        "flag/CF",
-        "flag/TD",
-        "flag/CL",
-        "flag/CN",
-        "flag/CX",
-        "flag/CC",
-        "flag/CO",
-        "flag/KM",
-        "flag/CG",
-        "flag/CD",
-        "flag/CK",
-        "flag/CR",
-        "flag/CI",
-        "flag/HR",
-        "flag/CU",
-        "flag/CW",
-        "flag/CY",
-        "flag/CZ",
-        "flag/DK",
-        "flag/DJ",
-        "flag/DM",
-        "flag/DO",
-        "flag/EC",
-        "flag/EG",
-        "flag/SV",
-        "flag/GQ",
-        "flag/ER",
-        "flag/EE",
-        "flag/ET",
-        "flag/FK",
-        "flag/FO",
-        "flag/FJ",
-        "flag/FI",
-        "flag/FR",
-        "flag/GF",
-        "flag/PF",
-        "flag/TF",
-        "flag/GA",
-        "flag/GM",
-        "flag/GE",
-        "flag/DE",
-        "flag/GDR",
-        "flag/GH",
-        "flag/GI",
-        "flag/GR",
-        "flag/GL",
-        "flag/GD",
-        "flag/GP",
-        "flag/GU",
-        "flag/GT",
-        "flag/GG",
-        "flag/GN",
-        "flag/GW",
-        "flag/GY",
-        "flag/HT",
-        "flag/HM",
-        "flag/VA",
-        "flag/HN",
-        "flag/HK",
-        "flag/HU",
-        "flag/IS",
-        "flag/IN",
-        "flag/ID",
-        "flag/IR",
-        "flag/IQ",
-        "flag/IE",
-        "flag/IM",
-        "flag/IL",
-        "flag/IT",
-        "flag/JM",
-        "flag/JP",
-        "flag/JE",
-        "flag/JO",
-        "flag/KZ",
-        "flag/KE",
-        "flag/KI",
-        "flag/KP",
-        "flag/KR",
-        "flag/KW",
-        "flag/KG",
-        "flag/LA",
-        "flag/LV",
-        "flag/LB",
-        "flag/LS",
-        "flag/LR",
-        "flag/LY",
-        "flag/LI",
-        "flag/LT",
-        "flag/LU",
-        "flag/MO",
-        "flag/MK",
-        "flag/MG",
-        "flag/MW",
-        "flag/MY",
-        "flag/MV",
-        "flag/ML",
-        "flag/MT",
-        "flag/MH",
-        "flag/MQ",
-        "flag/MR",
-        "flag/MU",
-        "flag/YT",
-        "flag/YU",
-        "flag/MX",
-        "flag/FM",
-        "flag/MD",
-        "flag/MC",
-        "flag/MN",
-        "flag/ME",
-        "flag/MS",
-        "flag/MA",
-        "flag/MZ",
-        "flag/MM",
-        "flag/NA",
-        "flag/NR",
-        "flag/NP",
-        "flag/NL",
-        "flag/NC",
-        "flag/NZ",
-        "flag/NI",
-        "flag/NE",
-        "flag/NG",
-        "flag/NU",
-        "flag/NF",
-        "flag/MP",
-        "flag/NO",
-        "flag/OM",
-        "flag/PK",
-        "flag/PW",
-        "flag/PS",
-        "flag/PA",
-        "flag/PG",
-        "flag/PY",
-        "flag/PE",
-        "flag/PH",
-        "flag/PN",
-        "flag/PL",
-        "flag/PT",
-        "flag/PR",
-        "flag/QA",
-        "flag/RE",
-        "flag/RO",
-        "flag/RU",
-        "flag/SU",
-        "flag/RW",
-        "flag/BL",
-        "flag/SH",
-        "flag/KN",
-        "flag/LC",
-        "flag/MF",
-        "flag/PM",
-        "flag/VC",
-        "flag/WS",
-        "flag/SM",
-        "flag/ST",
-        "flag/SA",
-        "flag/SN",
-        "flag/RS",
-        "flag/SC",
-        "flag/SL",
-        "flag/SG",
-        "flag/SX",
-        "flag/SK",
-        "flag/SI",
-        "flag/SB",
-        "flag/SO",
-        "flag/ZA",
-        "flag/GS",
-        "flag/SS",
-        "flag/ES",
-        "flag/LK",
-        "flag/SD",
-        "flag/SR",
-        "flag/SJ",
-        "flag/SZ",
-        "flag/SE",
-        "flag/CH",
-        "flag/SY",
-        "flag/TW",
-        "flag/TJ",
-        "flag/TZ",
-        "flag/TH",
-        "flag/TL",
-        "flag/TG",
-        "flag/TK",
-        "flag/TO",
-        "flag/TT",
-        "flag/TN",
-        "flag/TR",
-        "flag/TM",
-        "flag/TC",
-        "flag/TV",
-        "flag/UG",
-        "flag/UA",
-        "flag/AE",
-        "flag/GB",
-        "flag/US",
-        "flag/UM",
-        "flag/UY",
-        "flag/UZ",
-        "flag/VU",
-        "flag/VE",
-        "flag/VN",
-        "flag/VG",
-        "flag/VI",
-        "flag/WF",
-        "flag/EH",
-        "flag/YE",
-        "flag/ZM",
-        "flag/ZW",
-        "flag/EU",
-        "flag/WRLD",
-    ]
+    content.append(f"\n{copyright_text}\n\n\n")
 
     powers = [
         "power",
@@ -391,20 +110,9 @@ def generate_vehicle_id_pnml():
                 f"""\nspriteset (sprite_{attribute_underlined}) {{[0, 0, 16, 12, 0, 0, "gfx/Badges/attributes/{attribute_underlined}.png"]}}"""
             )
 
-    for flag in flags:
-        flag_underlined = flag.replace("/", "_")
-        if "_" in flag_underlined:
-            content.append(
-                f"""\nspriteset (sprite_{flag_underlined}) {{[0, 0, 18, 12, 0, 0, "gfx/Badges/flag/{flag_underlined.lower().replace('flag_', '')}.png"]}}"""
-            )
-
     content.append("badgetable {")
 
     # List define
-
-    content.append("\n// Flags\n")
-    for flag in flags:
-        content.append(f"""\t"{flag}",\n""")
 
     content.append("\n// Powers\n")
     for power in powers:
@@ -426,24 +134,6 @@ def generate_vehicle_id_pnml():
 
     # Item defines
 
-    content.append("\n// Flag Items")
-    for flag in flags:
-        flag_underlined = flag.replace("/", "_")
-        content.append(f"""\n\t
-item (FEAT_BADGES, {flag_underlined}) {{
-    property {{
-        label: "{flag}";
-        name: string(STR_{flag_underlined.upper()});""")
-        if "_" in flag_underlined:
-            content.append(f"""
-        flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);""")
-        content.append(f"\n\t}}")
-        if "_" in flag_underlined:
-            content.append(f"""\n\tgraphics {{default: sprite_{flag_underlined};}}\n""")
-        content.append(f"}}\n")
-
-    content.append("\n")
-
     content.append("\n// Powers")
     for power in powers:
         power_underlined = power.replace("/", "_")
@@ -457,9 +147,7 @@ item (FEAT_BADGES, {power_underlined}) {{
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);""")
         content.append(f"\n\t}}")
         if "_" in power_underlined:
-            content.append(
-                f"""\n\tgraphics {{default: sprite_{power_underlined};}}\n"""
-            )
+            content.append(f"""\n\tgraphics {{default: sprite_{power_underlined};}}\n""")
         content.append(f"}}\n")
 
     content.append("\n")
@@ -477,9 +165,7 @@ item (FEAT_BADGES, {attribute_underlined}) {{
         flags: bitmask(BADGE_FLAG_COPY_TO_RELATED_ENTITY);""")
         content.append(f"\n\t}}")
         if "_" in attribute_underlined:
-            content.append(
-                f"""\n\tgraphics {{default: sprite_{attribute_underlined};}}\n"""
-            )
+            content.append(f"""\n\tgraphics {{default: sprite_{attribute_underlined};}}\n""")
         content.append(f"}}\n")
 
     content.append("\n")
@@ -527,5 +213,9 @@ item (FEAT_BADGES, {role_underlined}) {{
 
 
 if __name__ == "__main__":
-    generate_vehicle_id_pnml()
+    from helpers.read_excel_file import load_master_data, get_excel_path
+
+    # Direct execution test logic:
+    _, c_text, _ = load_master_data(get_excel_path())
+    generate_vehicle_id_pnml(copyright_text=c_text)
     print("--- BadgeTable Generation Complete ---")

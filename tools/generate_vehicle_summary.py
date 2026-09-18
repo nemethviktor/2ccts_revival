@@ -4,6 +4,8 @@ import os
 import base64
 from PIL import Image
 from io import BytesIO
+from helpers.role_rules import get_role
+
 import warnings
 
 # Silence openpyxl warnings
@@ -12,7 +14,6 @@ warnings.filterwarnings("ignore", category=UserWarning, module="openpyxl")
 # --- Configuration ---
 script_dir = os.path.dirname(os.path.abspath(__file__))
 project_root = os.path.dirname(script_dir)
-excel_path = os.path.join(script_dir, "vehicle_report.xlsx")
 templates_pnml_path = os.path.join(project_root, "src", "templates.pnml")
 output_path = os.path.normpath(os.path.join(project_root, "docs", "vehicle_summary.md"))
 gfx_output_dir = os.path.join(project_root, "docs", "vehicle_graphics")
@@ -32,9 +33,7 @@ def parse_templates(file_path):
     for match in matches:
         name = match.group(1)
         body = match.group(2)
-        coords = re.findall(
-            r"\[\s*(?:x\+?)?(\d+)?\s*,\s*(?:y\+?)?(\d+)?\s*,\s*(\d+)\s*,\s*(\d+)", body
-        )
+        coords = re.findall(r"\[\s*(?:x\+?)?(\d+)?\s*,\s*(?:y\+?)?(\d+)?\s*,\s*(\d+)\s*,\s*(\d+)", body)
         for c in coords:
             w, h = int(c[2]), int(c[3])
             if w > 1:
@@ -60,7 +59,9 @@ def process_and_save_image(v_id, pnml_path, excel_png_path, templates):
         with open(pnml_path, "r", encoding="utf-8") as f:
             content = f.read()
 
-        pattern = r'spriteset\s*\(\s*[^,]+_purchase\s*,\s*"([^"]+)"\s*\)\s*\{\s*(\w+)\s*\(\s*(\d+)\s*,\s*(\d+)\s*\)\s*\}'
+        pattern = (
+            r'spriteset\s*\(\s*[^,]+_purchase\s*,\s*"([^"]+)"\s*\)\s*\{\s*(\w+)\s*\(\s*(\d+)\s*,\s*(\d+)\s*\)\s*\}'
+        )
         match = re.search(pattern, content)
         if not match:
             return ""
@@ -77,11 +78,7 @@ def process_and_save_image(v_id, pnml_path, excel_png_path, templates):
         if "_purchase.png" in pnml_png_rel_path:
             pnml_dir = os.path.dirname(pnml_path)
             png_filename = os.path.basename(pnml_png_rel_path)
-            png_path = (
-                os.path.join(pnml_dir, png_filename)
-                .replace("src/", "gfx/")
-                .replace("src\\", "gfx/")
-            )
+            png_path = os.path.join(pnml_dir, png_filename).replace("src/", "gfx/").replace("src\\", "gfx/")
         else:
             png_path = excel_png_path
 
@@ -108,18 +105,8 @@ def is_true(val) -> bool:
     return (val == True or str(val).upper() == "TRUE") or (val == 1)
 
 
-def generate_markdown():
+def generate_markdown(df_master: pd.DataFrame):
     print("--- Generating Vehicle Summary (Markdown) ---")
-    sheets = pd.read_excel(excel_path, sheet_name=None)
-    df_control = sheets["control"]
-    df_props = sheets["properties"]
-    df_roster = sheets["roster"]
-    df_tracks = sheets["track_types"]
-
-    # Merge core data
-    df = df_control.merge(df_props, on="VEHIDCODE", how="inner")
-    df = df.merge(df_roster, on="VEHIDCODE", how="inner", suffixes=("", "_roster"))
-    df = df.merge(df_tracks, on="VEHIDCODE", how="inner", suffixes=("", "_tracks"))
 
     templates = parse_templates(templates_pnml_path)
 
@@ -171,19 +158,20 @@ def generate_markdown():
     # Identify track columns: Ignore VEHIDCODE and sundry columns
     track_cols = [
         c
-        for c in df_tracks.columns
+        for c in df_master.columns
         if c != "VEHIDCODE"
         and c not in ["CHECK_ANY_TT", "IS_STANDARD", "IS_NARROW", "IS_BROAD"]
+        and c.startswith("TRACK_TYPE_")
     ]
 
     markdown = "# Vehicle Summary\n\n"
 
-    for cat in sorted(df["COST_CAT"].unique()):
+    for cat in sorted(df_master["COST_CAT"].unique()):
         markdown += f"## {cat}\n\n"
         markdown += "| Graphics | Name | Intro | Speed kmh / mph | Power hp/kW | Role | Cap | Track Types | Regions | Concept? |\n"
         markdown += "| :---: | :--- | :---: | :---: | :---: | :--- | :---: | :--- | :--- | :--- |\n"
 
-        cat_df = df[df["COST_CAT"] == cat].sort_values(["INTRODUCTION_YEAR", "ENGLISH"])
+        cat_df = df_master[df_master["COST_CAT"] == cat].sort_values(["INTRODUCTION_YEAR", "ENGLISH"])
         for _, row in cat_df.iterrows():
             if pd.isna(row["VEHIDCODE"]) or is_true(row["EXCLUDE"]):
                 continue
@@ -192,13 +180,9 @@ def generate_markdown():
             save_to = str(row["SAVE_TO"]).replace("\\", "/")
             base_fn = str(row["FILENAMES_EXPECTED"])
 
-            pnml_p = os.path.normpath(
-                os.path.join(project_root, save_to, f"{base_fn}_graphics.pnml")
-            )
+            pnml_p = os.path.normpath(os.path.join(project_root, save_to, f"{base_fn}_graphics.pnml"))
             gfx_path = save_to.replace("src/", "gfx/").replace("src\\", "gfx/")
-            png_p = os.path.normpath(
-                os.path.join(project_root, gfx_path, f"{base_fn}.png")
-            )
+            png_p = os.path.normpath(os.path.join(project_root, gfx_path, f"{base_fn}.png"))
 
             img_rel_path = process_and_save_image(v_id, pnml_p, png_p, templates)
             img_tag = f"![{row['ENGLISH']}]({img_rel_path})" if img_rel_path else " "
@@ -207,9 +191,7 @@ def generate_markdown():
             active_tracks = []
             for tc in track_cols:
                 if row.get(tc) == True or str(row.get(tc)).upper() == "TRUE":
-                    cleaned_name = tc.replace("TRACK_TYPE_", "").replace(
-                        "_GAUGE_RAILTYPE", ""
-                    )
+                    cleaned_name = tc.replace("TRACK_TYPE_", "").replace("_GAUGE_RAILTYPE", "")
                     active_tracks.append(cleaned_name)
             track_str = ", ".join(active_tracks)
 
@@ -227,9 +209,7 @@ def generate_markdown():
                     # Format and append each sub-region
                     for r in mapped_regions:
                         formatted_region = r.replace("_", " ").title()
-                        if (
-                            formatted_region not in regions
-                        ):  # Prevent duplicates if multiple keys are True
+                        if formatted_region not in regions:  # Prevent duplicates if multiple keys are True
                             regions.append(formatted_region)
 
             speed_kmh = int(row["SPEED"]) if pd.notnull(row["SPEED"]) else 0
@@ -240,7 +220,7 @@ def generate_markdown():
 
             is_concept = row["IS_CONCEPT"] == "IS_CONCEPT"
 
-            markdown += f"| {img_tag} | {row['ENGLISH']} | {row['INTRODUCTION_YEAR']} | {speed_kmh} / {speed_mph} | {power_hp} / {power_kw} | {row['ROLE']} | {cap} | {track_str} | {', '.join(regions)} | {"Yes" if is_concept else "No"} |\n"
+            markdown += f"| {img_tag} | {row['ENGLISH']} | {row['INTRODUCTION_YEAR']} | {speed_kmh} / {speed_mph} | {power_hp} / {power_kw} | {get_role(row=row)} | {cap} | {track_str} | {', '.join(regions)} | {"Yes" if is_concept else "No"} |\n"
         markdown += "\n"
 
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
@@ -250,4 +230,8 @@ def generate_markdown():
 
 
 if __name__ == "__main__":
-    generate_markdown()
+    from helpers.read_excel_file import load_master_data, get_excel_path
+
+    # Direct execution test logic:
+    df_m, _, _ = load_master_data(get_excel_path())
+    generate_markdown(df_master=df_m)

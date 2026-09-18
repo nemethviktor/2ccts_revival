@@ -11,15 +11,7 @@ powershell -Command "Get-Date -Format 'yyyy-MM-dd:HH:mm:ss'"
 :: If user passed 'y' or 'Y', skip straight to the build process
 if /I "%BUILD_ONLY%"=="y" goto build_process
 
-python ./tools/custom_tags_generator.py
-python ./tools/generate_badgetable.py
-python ./tools/generate_languages.py
-python ./tools/generate_graphics_pnml.py
-python ./tools/generate_master_pnml.py
-python ./tools/generate_unified_items.py
-python ./tools/generate_vehicle_id_pnml.py
-python ./tools/generate_vehicle_sort.py
-python ./tools/generate_vehicle_summary.py
+python ./tools/master_py.py
 
 :build_process
 echo --- Build Start ---

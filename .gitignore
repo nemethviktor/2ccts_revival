@@ -38,3 +38,5 @@ Makefile.dep
 *.gsheet
 tools/~$vehicle_report.xlsx
 copygrftogoogledriveshare.bat
+/tools/helpers/__pycache__
+/tools/__pycache__
