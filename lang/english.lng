@@ -2,7 +2,7 @@
 
 # Hardcoded Strings
 STR_GRF_NAME                                                      :{TITLE}
-STR_GRF_DESCRIPTION                                               :{SILVER}2cc Trains of the World in NML {}{}(c)2ccts Revival {}License GPLv2 or higher. {}See readme for details.{}{SILVER}Build: 2026-09-26-21:23:40
+STR_GRF_DESCRIPTION                                               :{SILVER}2cc Trains of the World in NML {}{}(c)2ccts Revival {}License GPLv2 or higher. {}See readme for details.{}{SILVER}Build: 2026-09-26-23:45:23
 STR_GRF_URL                                                       :https://github.com/nemethviktor/2ccts_revival
 STR_USED_WITH_DYNAMIC_ENGINES                                     :dynamic_engines = true (setting in openttd.cfg)
 STR_ERROR_REGION                                                  :No regions enabled, {STRING} has been disabled
@@ -1442,6 +1442,22 @@ str_rbs_esslingen_man_hohenzollern_thomas                         :Esslingen/MAN
 str_rbs_komarek_nolb_30_33                                        :Komarek NOLB 30-33 (Steam Railbus)
 
 # Wagon
+str_mglv_wagon_gen7m_boxcar_type1                                 :7th Gen Boxcar [Food]
+str_mglv_wagon_gen7m_boxcar_type2                                 :7th Gen Boxcar [Non-Food]
+str_mglv_wagon_gen7m_car_transporter                              :7th Gen Car Transporter
+str_mglv_wagon_gen7m_centerbeam                                   :7th Gen Centerbeam Flatcar
+str_mglv_wagon_gen7m_container_carrier                            :7th Gen Container Carrier
+str_mglv_wagon_gen7m_container_doublestack                        :7th Gen Container Doublestack
+str_mglv_wagon_gen7m_flatcar                                      :7th Gen Flatcar
+str_mglv_wagon_gen7m_gondola                                      :7th Gen Gondola
+str_mglv_wagon_gen7m_heavy_flatcar                                :7th Gen Heavy Flatcar
+str_mglv_wagon_gen7m_hopper_type1                                 :7th Gen Self-discharging Hopper [Food]
+str_mglv_wagon_gen7m_hopper_type2                                 :7th Gen Self-discharging Hopper [Non-Food]
+str_mglv_wagon_gen7m_silo_type1                                   :7th Gen Silo [Food]
+str_mglv_wagon_gen7m_silo_type2                                   :7th Gen Silo [Non-Food]
+str_mglv_wagon_gen7m_superheavy_flatcar                           :7th Gen Superheavy Flatcar
+str_mglv_wagon_gen7m_tanker                                       :7th Gen Tanker
+str_mglv_wagon_gen7m_livestock_van                                :7th Gen Livestock Van
 str_mu_wagon_gen1_flat_wagon                                      :1st Gen Flat Wagon
 str_mu_wagon_gen1_boxcar                                          :1st Gen Wooden Box Van
 str_mu_wagon_gen1_tanker                                          :1st Gen Tanker
@@ -1512,19 +1528,3 @@ str_mu_wagon_gen3_livestock_van                                   :3rd Gen Lives
 str_mu_wagon_gen4_livestock_van                                   :4th Gen Livestock Van
 str_mu_wagon_gen5_livestock_van                                   :5th Gen Livestock Van
 str_mu_wagon_gen6_livestock_van                                   :6th Gen Livestock Van
-str_mglv_wagon_gen7m_flatcar                                      :7th Gen Flatcar
-str_mglv_wagon_gen7m_heavy_flatcar                                :7th Gen Heavy Flatcar
-str_mglv_wagon_gen7m_boxcar_type1                                 :7th Gen Boxcar [Food]
-str_mglv_wagon_gen7m_tanker                                       :7th Gen Tanker
-str_mglv_wagon_gen7m_gondola                                      :7th Gen Gondola
-str_mglv_wagon_gen7m_silo_type1                                   :7th Gen Silo [Food]
-str_mglv_wagon_gen7m_hopper_type1                                 :7th Gen Self-discharging Hopper [Food]
-str_mglv_wagon_gen7m_car_transporter                              :7th Gen Car Transporter
-str_mglv_wagon_gen7m_container_carrier                            :7th Gen Container Carrier
-str_mglv_wagon_gen7m_centerbeam                                   :7th Gen Centerbeam Flatcar
-str_mglv_wagon_gen7m_container_doublestack                        :7th Gen Container Doublestack
-str_mglv_wagon_gen7m_superheavy_flatcar                           :7th Gen Superheavy Flatcar
-str_mglv_wagon_gen7m_boxcar_type2                                 :7th Gen Boxcar [Non-Food]
-str_mglv_wagon_gen7m_silo_type2                                   :7th Gen Silo [Non-Food]
-str_mglv_wagon_gen7m_hopper_type2                                 :7th Gen Self-discharging Hopper [Non-Food]
-str_mglv_wagon_gen7m_livestock_van                                :7th Gen Livestock Van

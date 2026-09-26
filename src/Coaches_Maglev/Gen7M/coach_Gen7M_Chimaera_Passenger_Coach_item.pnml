@@ -3,7 +3,7 @@
 
 // Template: TPL_04U
 // CargoDef: PASSENGERS_ONLY
-// ID: 19500
+// ID: 13100
 
 
 item(FEAT_TRAINS, item_mglv_coach_gen7m_chimaera_passenger_coach) {

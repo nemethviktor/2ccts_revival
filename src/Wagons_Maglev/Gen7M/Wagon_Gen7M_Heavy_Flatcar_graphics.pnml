@@ -3,7 +3,7 @@
 
 // Template: TPL_04B
 // CargoDef: HEAVYFLAT
-// ID: 18002
+// ID: 10508
 
 // PURCHASE
 spriteset(spriteset_mglv_wagon_gen7m_heavy_flatcar_purchase, "gfx/wagons_maglev/gen7m/wagon_gen7m_heavy_flatcar_purchase.png") {template_purchase_wagon(1, 1)}

@@ -4,6 +4,7 @@
 
 ### 4.1 [2026xxxx]
 - CODE CHANGES:
+  - **Warning:** there is a likelihood that this version is not savegame compatible with 4.0 if you've used the `CargoEMU` or Maglev cargo (Gen7M) or pax (Coaches) classes. I had to re-number those IDs because they were >`16k` and as such broke the `articulated` callbacks.
   - `Dual mode` badges and functionality are now available. "Current" Running cost, power and speed values are take from real values for the various operating modes. (ie "is it running on ELRL right now or not?")
   - Also changed some naming logic whereby special power types (dual mode, gas turbine) would no longer be doubled as "Diesel, Gas Turbine" or "Electric, Dual Mode".
   - Various changes to make build run more efficiently.

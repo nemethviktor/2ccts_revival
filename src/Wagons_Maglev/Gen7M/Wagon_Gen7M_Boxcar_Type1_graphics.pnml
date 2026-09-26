@@ -3,7 +3,7 @@
 
 // Template: TPL_04B
 // CargoDef: BOXCAR_TYPE_FOOD
-// ID: 18003
+// ID: 10500
 
 // PURCHASE
 spriteset(spriteset_mglv_wagon_gen7m_boxcar_type1_purchase, "gfx/wagons_maglev/gen7m/wagon_gen7m_boxcar_type1_purchase.png") {template_purchase_wagon(1, 1)}

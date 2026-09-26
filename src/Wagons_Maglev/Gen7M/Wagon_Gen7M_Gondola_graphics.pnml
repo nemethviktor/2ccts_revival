@@ -3,7 +3,7 @@
 
 // Template: TPL_04B
 // CargoDef: GONDOLA
-// ID: 18005
+// ID: 10507
 
 // PURCHASE
 spriteset(spriteset_mglv_wagon_gen7m_gondola_purchase, "gfx/wagons_maglev/gen7m/wagon_gen7m_gondola_purchase.png") {template_purchase_wagon(1, 1)}
@@ -25,21 +25,17 @@ spriteset(spriteset_mglv_wagon_gen7m_gondola_coal_l1_s2, "gfx/wagons_maglev/gen7
 spriteset(spriteset_mglv_wagon_gen7m_gondola_coal_l1_s3, "gfx/wagons_maglev/gen7m/wagon_gen7m_gondola_coal.png") {template_2cc_wagons(1, 64)}
 
 
-/// LIVERY 1   DRIVING STATE 4   COAL
-spriteset(spriteset_mglv_wagon_gen7m_gondola_coal_l1_s4, "gfx/wagons_maglev/gen7m/wagon_gen7m_gondola_coal.png") {template_2cc_wagons(1, 96)}
-
-
 /// LIVERY 1 SPRITEGROUP - COAL
 spritegroup spritegroup_mglv_wagon_gen7m_gondola_coal_l1 {
     loading: [
-	spriteset_mglv_wagon_gen7m_gondola_coal_l1_s1
-	, spriteset_mglv_wagon_gen7m_gondola_coal_l1_s2
-	, spriteset_mglv_wagon_gen7m_gondola_coal_l1_s3
+	spriteset_mglv_wagon_gen7m_gondola_coal_l1_s1,
+	spriteset_mglv_wagon_gen7m_gondola_coal_l1_s2,
+	spriteset_mglv_wagon_gen7m_gondola_coal_l1_s3
 ];
     loaded: [
-	spriteset_mglv_wagon_gen7m_gondola_coal_l1_s1
-	, spriteset_mglv_wagon_gen7m_gondola_coal_l1_s4
-	, spriteset_mglv_wagon_gen7m_gondola_coal_l1_s4
+	spriteset_mglv_wagon_gen7m_gondola_coal_l1_s1,
+	spriteset_mglv_wagon_gen7m_gondola_coal_l1_s2,
+	spriteset_mglv_wagon_gen7m_gondola_coal_l1_s3
 ];
 }
 
@@ -55,21 +51,17 @@ spriteset(spriteset_mglv_wagon_gen7m_gondola_coal_l2_s2, "gfx/wagons_maglev/gen7
 spriteset(spriteset_mglv_wagon_gen7m_gondola_coal_l2_s3, "gfx/wagons_maglev/gen7m/wagon_gen7m_gondola_coal.png") {template_2cc_wagons(179, 64)}
 
 
-/// LIVERY 2   DRIVING STATE 4   COAL
-spriteset(spriteset_mglv_wagon_gen7m_gondola_coal_l2_s4, "gfx/wagons_maglev/gen7m/wagon_gen7m_gondola_coal.png") {template_2cc_wagons(179, 96)}
-
-
 /// LIVERY 2 SPRITEGROUP - COAL
 spritegroup spritegroup_mglv_wagon_gen7m_gondola_coal_l2 {
     loading: [
-	spriteset_mglv_wagon_gen7m_gondola_coal_l2_s1
-	, spriteset_mglv_wagon_gen7m_gondola_coal_l2_s2
-	, spriteset_mglv_wagon_gen7m_gondola_coal_l2_s3
+	spriteset_mglv_wagon_gen7m_gondola_coal_l2_s1,
+	spriteset_mglv_wagon_gen7m_gondola_coal_l2_s2,
+	spriteset_mglv_wagon_gen7m_gondola_coal_l2_s3
 ];
     loaded: [
-	spriteset_mglv_wagon_gen7m_gondola_coal_l2_s1
-	, spriteset_mglv_wagon_gen7m_gondola_coal_l2_s4
-	, spriteset_mglv_wagon_gen7m_gondola_coal_l2_s4
+	spriteset_mglv_wagon_gen7m_gondola_coal_l2_s1,
+	spriteset_mglv_wagon_gen7m_gondola_coal_l2_s2,
+	spriteset_mglv_wagon_gen7m_gondola_coal_l2_s3
 ];
 }
 
@@ -85,21 +77,17 @@ spriteset(spriteset_mglv_wagon_gen7m_gondola_coal_l3_s2, "gfx/wagons_maglev/gen7
 spriteset(spriteset_mglv_wagon_gen7m_gondola_coal_l3_s3, "gfx/wagons_maglev/gen7m/wagon_gen7m_gondola_coal.png") {template_2cc_wagons(357, 64)}
 
 
-/// LIVERY 3   DRIVING STATE 4   COAL
-spriteset(spriteset_mglv_wagon_gen7m_gondola_coal_l3_s4, "gfx/wagons_maglev/gen7m/wagon_gen7m_gondola_coal.png") {template_2cc_wagons(357, 96)}
-
-
 /// LIVERY 3 SPRITEGROUP - COAL
 spritegroup spritegroup_mglv_wagon_gen7m_gondola_coal_l3 {
     loading: [
-	spriteset_mglv_wagon_gen7m_gondola_coal_l3_s1
-	, spriteset_mglv_wagon_gen7m_gondola_coal_l3_s2
-	, spriteset_mglv_wagon_gen7m_gondola_coal_l3_s3
+	spriteset_mglv_wagon_gen7m_gondola_coal_l3_s1,
+	spriteset_mglv_wagon_gen7m_gondola_coal_l3_s2,
+	spriteset_mglv_wagon_gen7m_gondola_coal_l3_s3
 ];
     loaded: [
-	spriteset_mglv_wagon_gen7m_gondola_coal_l3_s1
-	, spriteset_mglv_wagon_gen7m_gondola_coal_l3_s4
-	, spriteset_mglv_wagon_gen7m_gondola_coal_l3_s4
+	spriteset_mglv_wagon_gen7m_gondola_coal_l3_s1,
+	spriteset_mglv_wagon_gen7m_gondola_coal_l3_s2,
+	spriteset_mglv_wagon_gen7m_gondola_coal_l3_s3
 ];
 }
 
@@ -115,21 +103,17 @@ spriteset(spriteset_mglv_wagon_gen7m_gondola_coal_l4_s2, "gfx/wagons_maglev/gen7
 spriteset(spriteset_mglv_wagon_gen7m_gondola_coal_l4_s3, "gfx/wagons_maglev/gen7m/wagon_gen7m_gondola_coal.png") {template_2cc_wagons(535, 64)}
 
 
-/// LIVERY 4   DRIVING STATE 4   COAL
-spriteset(spriteset_mglv_wagon_gen7m_gondola_coal_l4_s4, "gfx/wagons_maglev/gen7m/wagon_gen7m_gondola_coal.png") {template_2cc_wagons(535, 96)}
-
-
 /// LIVERY 4 SPRITEGROUP - COAL
 spritegroup spritegroup_mglv_wagon_gen7m_gondola_coal_l4 {
     loading: [
-	spriteset_mglv_wagon_gen7m_gondola_coal_l4_s1
-	, spriteset_mglv_wagon_gen7m_gondola_coal_l4_s2
-	, spriteset_mglv_wagon_gen7m_gondola_coal_l4_s3
+	spriteset_mglv_wagon_gen7m_gondola_coal_l4_s1,
+	spriteset_mglv_wagon_gen7m_gondola_coal_l4_s2,
+	spriteset_mglv_wagon_gen7m_gondola_coal_l4_s3
 ];
     loaded: [
-	spriteset_mglv_wagon_gen7m_gondola_coal_l4_s1
-	, spriteset_mglv_wagon_gen7m_gondola_coal_l4_s4
-	, spriteset_mglv_wagon_gen7m_gondola_coal_l4_s4
+	spriteset_mglv_wagon_gen7m_gondola_coal_l4_s1,
+	spriteset_mglv_wagon_gen7m_gondola_coal_l4_s2,
+	spriteset_mglv_wagon_gen7m_gondola_coal_l4_s3
 ];
 }
 
@@ -155,21 +139,17 @@ spriteset(spriteset_mglv_wagon_gen7m_gondola_grain_l1_s2, "gfx/wagons_maglev/gen
 spriteset(spriteset_mglv_wagon_gen7m_gondola_grain_l1_s3, "gfx/wagons_maglev/gen7m/wagon_gen7m_gondola_grain.png") {template_2cc_wagons(1, 64)}
 
 
-/// LIVERY 1   DRIVING STATE 4   GRAIN
-spriteset(spriteset_mglv_wagon_gen7m_gondola_grain_l1_s4, "gfx/wagons_maglev/gen7m/wagon_gen7m_gondola_grain.png") {template_2cc_wagons(1, 96)}
-
-
 /// LIVERY 1 SPRITEGROUP - GRAIN
 spritegroup spritegroup_mglv_wagon_gen7m_gondola_grain_l1 {
     loading: [
-	spriteset_mglv_wagon_gen7m_gondola_grain_l1_s1
-	, spriteset_mglv_wagon_gen7m_gondola_grain_l1_s2
-	, spriteset_mglv_wagon_gen7m_gondola_grain_l1_s3
+	spriteset_mglv_wagon_gen7m_gondola_grain_l1_s1,
+	spriteset_mglv_wagon_gen7m_gondola_grain_l1_s2,
+	spriteset_mglv_wagon_gen7m_gondola_grain_l1_s3
 ];
     loaded: [
-	spriteset_mglv_wagon_gen7m_gondola_grain_l1_s1
-	, spriteset_mglv_wagon_gen7m_gondola_grain_l1_s4
-	, spriteset_mglv_wagon_gen7m_gondola_grain_l1_s4
+	spriteset_mglv_wagon_gen7m_gondola_grain_l1_s1,
+	spriteset_mglv_wagon_gen7m_gondola_grain_l1_s2,
+	spriteset_mglv_wagon_gen7m_gondola_grain_l1_s3
 ];
 }
 
@@ -185,21 +165,17 @@ spriteset(spriteset_mglv_wagon_gen7m_gondola_grain_l2_s2, "gfx/wagons_maglev/gen
 spriteset(spriteset_mglv_wagon_gen7m_gondola_grain_l2_s3, "gfx/wagons_maglev/gen7m/wagon_gen7m_gondola_grain.png") {template_2cc_wagons(179, 64)}
 
 
-/// LIVERY 2   DRIVING STATE 4   GRAIN
-spriteset(spriteset_mglv_wagon_gen7m_gondola_grain_l2_s4, "gfx/wagons_maglev/gen7m/wagon_gen7m_gondola_grain.png") {template_2cc_wagons(179, 96)}
-
-
 /// LIVERY 2 SPRITEGROUP - GRAIN
 spritegroup spritegroup_mglv_wagon_gen7m_gondola_grain_l2 {
     loading: [
-	spriteset_mglv_wagon_gen7m_gondola_grain_l2_s1
-	, spriteset_mglv_wagon_gen7m_gondola_grain_l2_s2
-	, spriteset_mglv_wagon_gen7m_gondola_grain_l2_s3
+	spriteset_mglv_wagon_gen7m_gondola_grain_l2_s1,
+	spriteset_mglv_wagon_gen7m_gondola_grain_l2_s2,
+	spriteset_mglv_wagon_gen7m_gondola_grain_l2_s3
 ];
     loaded: [
-	spriteset_mglv_wagon_gen7m_gondola_grain_l2_s1
-	, spriteset_mglv_wagon_gen7m_gondola_grain_l2_s4
-	, spriteset_mglv_wagon_gen7m_gondola_grain_l2_s4
+	spriteset_mglv_wagon_gen7m_gondola_grain_l2_s1,
+	spriteset_mglv_wagon_gen7m_gondola_grain_l2_s2,
+	spriteset_mglv_wagon_gen7m_gondola_grain_l2_s3
 ];
 }
 
@@ -215,21 +191,17 @@ spriteset(spriteset_mglv_wagon_gen7m_gondola_grain_l3_s2, "gfx/wagons_maglev/gen
 spriteset(spriteset_mglv_wagon_gen7m_gondola_grain_l3_s3, "gfx/wagons_maglev/gen7m/wagon_gen7m_gondola_grain.png") {template_2cc_wagons(357, 64)}
 
 
-/// LIVERY 3   DRIVING STATE 4   GRAIN
-spriteset(spriteset_mglv_wagon_gen7m_gondola_grain_l3_s4, "gfx/wagons_maglev/gen7m/wagon_gen7m_gondola_grain.png") {template_2cc_wagons(357, 96)}
-
-
 /// LIVERY 3 SPRITEGROUP - GRAIN
 spritegroup spritegroup_mglv_wagon_gen7m_gondola_grain_l3 {
     loading: [
-	spriteset_mglv_wagon_gen7m_gondola_grain_l3_s1
-	, spriteset_mglv_wagon_gen7m_gondola_grain_l3_s2
-	, spriteset_mglv_wagon_gen7m_gondola_grain_l3_s3
+	spriteset_mglv_wagon_gen7m_gondola_grain_l3_s1,
+	spriteset_mglv_wagon_gen7m_gondola_grain_l3_s2,
+	spriteset_mglv_wagon_gen7m_gondola_grain_l3_s3
 ];
     loaded: [
-	spriteset_mglv_wagon_gen7m_gondola_grain_l3_s1
-	, spriteset_mglv_wagon_gen7m_gondola_grain_l3_s4
-	, spriteset_mglv_wagon_gen7m_gondola_grain_l3_s4
+	spriteset_mglv_wagon_gen7m_gondola_grain_l3_s1,
+	spriteset_mglv_wagon_gen7m_gondola_grain_l3_s2,
+	spriteset_mglv_wagon_gen7m_gondola_grain_l3_s3
 ];
 }
 
@@ -245,21 +217,17 @@ spriteset(spriteset_mglv_wagon_gen7m_gondola_grain_l4_s2, "gfx/wagons_maglev/gen
 spriteset(spriteset_mglv_wagon_gen7m_gondola_grain_l4_s3, "gfx/wagons_maglev/gen7m/wagon_gen7m_gondola_grain.png") {template_2cc_wagons(535, 64)}
 
 
-/// LIVERY 4   DRIVING STATE 4   GRAIN
-spriteset(spriteset_mglv_wagon_gen7m_gondola_grain_l4_s4, "gfx/wagons_maglev/gen7m/wagon_gen7m_gondola_grain.png") {template_2cc_wagons(535, 96)}
-
-
 /// LIVERY 4 SPRITEGROUP - GRAIN
 spritegroup spritegroup_mglv_wagon_gen7m_gondola_grain_l4 {
     loading: [
-	spriteset_mglv_wagon_gen7m_gondola_grain_l4_s1
-	, spriteset_mglv_wagon_gen7m_gondola_grain_l4_s2
-	, spriteset_mglv_wagon_gen7m_gondola_grain_l4_s3
+	spriteset_mglv_wagon_gen7m_gondola_grain_l4_s1,
+	spriteset_mglv_wagon_gen7m_gondola_grain_l4_s2,
+	spriteset_mglv_wagon_gen7m_gondola_grain_l4_s3
 ];
     loaded: [
-	spriteset_mglv_wagon_gen7m_gondola_grain_l4_s1
-	, spriteset_mglv_wagon_gen7m_gondola_grain_l4_s4
-	, spriteset_mglv_wagon_gen7m_gondola_grain_l4_s4
+	spriteset_mglv_wagon_gen7m_gondola_grain_l4_s1,
+	spriteset_mglv_wagon_gen7m_gondola_grain_l4_s2,
+	spriteset_mglv_wagon_gen7m_gondola_grain_l4_s3
 ];
 }
 
@@ -285,21 +253,17 @@ spriteset(spriteset_mglv_wagon_gen7m_gondola_ore_l1_s2, "gfx/wagons_maglev/gen7m
 spriteset(spriteset_mglv_wagon_gen7m_gondola_ore_l1_s3, "gfx/wagons_maglev/gen7m/wagon_gen7m_gondola_ore.png") {template_2cc_wagons(1, 64)}
 
 
-/// LIVERY 1   DRIVING STATE 4   ORE
-spriteset(spriteset_mglv_wagon_gen7m_gondola_ore_l1_s4, "gfx/wagons_maglev/gen7m/wagon_gen7m_gondola_ore.png") {template_2cc_wagons(1, 96)}
-
-
 /// LIVERY 1 SPRITEGROUP - ORE
 spritegroup spritegroup_mglv_wagon_gen7m_gondola_ore_l1 {
     loading: [
-	spriteset_mglv_wagon_gen7m_gondola_ore_l1_s1
-	, spriteset_mglv_wagon_gen7m_gondola_ore_l1_s2
-	, spriteset_mglv_wagon_gen7m_gondola_ore_l1_s3
+	spriteset_mglv_wagon_gen7m_gondola_ore_l1_s1,
+	spriteset_mglv_wagon_gen7m_gondola_ore_l1_s2,
+	spriteset_mglv_wagon_gen7m_gondola_ore_l1_s3
 ];
     loaded: [
-	spriteset_mglv_wagon_gen7m_gondola_ore_l1_s1
-	, spriteset_mglv_wagon_gen7m_gondola_ore_l1_s4
-	, spriteset_mglv_wagon_gen7m_gondola_ore_l1_s4
+	spriteset_mglv_wagon_gen7m_gondola_ore_l1_s1,
+	spriteset_mglv_wagon_gen7m_gondola_ore_l1_s2,
+	spriteset_mglv_wagon_gen7m_gondola_ore_l1_s3
 ];
 }
 
@@ -315,21 +279,17 @@ spriteset(spriteset_mglv_wagon_gen7m_gondola_ore_l2_s2, "gfx/wagons_maglev/gen7m
 spriteset(spriteset_mglv_wagon_gen7m_gondola_ore_l2_s3, "gfx/wagons_maglev/gen7m/wagon_gen7m_gondola_ore.png") {template_2cc_wagons(179, 64)}
 
 
-/// LIVERY 2   DRIVING STATE 4   ORE
-spriteset(spriteset_mglv_wagon_gen7m_gondola_ore_l2_s4, "gfx/wagons_maglev/gen7m/wagon_gen7m_gondola_ore.png") {template_2cc_wagons(179, 96)}
-
-
 /// LIVERY 2 SPRITEGROUP - ORE
 spritegroup spritegroup_mglv_wagon_gen7m_gondola_ore_l2 {
     loading: [
-	spriteset_mglv_wagon_gen7m_gondola_ore_l2_s1
-	, spriteset_mglv_wagon_gen7m_gondola_ore_l2_s2
-	, spriteset_mglv_wagon_gen7m_gondola_ore_l2_s3
+	spriteset_mglv_wagon_gen7m_gondola_ore_l2_s1,
+	spriteset_mglv_wagon_gen7m_gondola_ore_l2_s2,
+	spriteset_mglv_wagon_gen7m_gondola_ore_l2_s3
 ];
     loaded: [
-	spriteset_mglv_wagon_gen7m_gondola_ore_l2_s1
-	, spriteset_mglv_wagon_gen7m_gondola_ore_l2_s4
-	, spriteset_mglv_wagon_gen7m_gondola_ore_l2_s4
+	spriteset_mglv_wagon_gen7m_gondola_ore_l2_s1,
+	spriteset_mglv_wagon_gen7m_gondola_ore_l2_s2,
+	spriteset_mglv_wagon_gen7m_gondola_ore_l2_s3
 ];
 }
 
@@ -345,21 +305,17 @@ spriteset(spriteset_mglv_wagon_gen7m_gondola_ore_l3_s2, "gfx/wagons_maglev/gen7m
 spriteset(spriteset_mglv_wagon_gen7m_gondola_ore_l3_s3, "gfx/wagons_maglev/gen7m/wagon_gen7m_gondola_ore.png") {template_2cc_wagons(357, 64)}
 
 
-/// LIVERY 3   DRIVING STATE 4   ORE
-spriteset(spriteset_mglv_wagon_gen7m_gondola_ore_l3_s4, "gfx/wagons_maglev/gen7m/wagon_gen7m_gondola_ore.png") {template_2cc_wagons(357, 96)}
-
-
 /// LIVERY 3 SPRITEGROUP - ORE
 spritegroup spritegroup_mglv_wagon_gen7m_gondola_ore_l3 {
     loading: [
-	spriteset_mglv_wagon_gen7m_gondola_ore_l3_s1
-	, spriteset_mglv_wagon_gen7m_gondola_ore_l3_s2
-	, spriteset_mglv_wagon_gen7m_gondola_ore_l3_s3
+	spriteset_mglv_wagon_gen7m_gondola_ore_l3_s1,
+	spriteset_mglv_wagon_gen7m_gondola_ore_l3_s2,
+	spriteset_mglv_wagon_gen7m_gondola_ore_l3_s3
 ];
     loaded: [
-	spriteset_mglv_wagon_gen7m_gondola_ore_l3_s1
-	, spriteset_mglv_wagon_gen7m_gondola_ore_l3_s4
-	, spriteset_mglv_wagon_gen7m_gondola_ore_l3_s4
+	spriteset_mglv_wagon_gen7m_gondola_ore_l3_s1,
+	spriteset_mglv_wagon_gen7m_gondola_ore_l3_s2,
+	spriteset_mglv_wagon_gen7m_gondola_ore_l3_s3
 ];
 }
 
@@ -375,21 +331,17 @@ spriteset(spriteset_mglv_wagon_gen7m_gondola_ore_l4_s2, "gfx/wagons_maglev/gen7m
 spriteset(spriteset_mglv_wagon_gen7m_gondola_ore_l4_s3, "gfx/wagons_maglev/gen7m/wagon_gen7m_gondola_ore.png") {template_2cc_wagons(535, 64)}
 
 
-/// LIVERY 4   DRIVING STATE 4   ORE
-spriteset(spriteset_mglv_wagon_gen7m_gondola_ore_l4_s4, "gfx/wagons_maglev/gen7m/wagon_gen7m_gondola_ore.png") {template_2cc_wagons(535, 96)}
-
-
 /// LIVERY 4 SPRITEGROUP - ORE
 spritegroup spritegroup_mglv_wagon_gen7m_gondola_ore_l4 {
     loading: [
-	spriteset_mglv_wagon_gen7m_gondola_ore_l4_s1
-	, spriteset_mglv_wagon_gen7m_gondola_ore_l4_s2
-	, spriteset_mglv_wagon_gen7m_gondola_ore_l4_s3
+	spriteset_mglv_wagon_gen7m_gondola_ore_l4_s1,
+	spriteset_mglv_wagon_gen7m_gondola_ore_l4_s2,
+	spriteset_mglv_wagon_gen7m_gondola_ore_l4_s3
 ];
     loaded: [
-	spriteset_mglv_wagon_gen7m_gondola_ore_l4_s1
-	, spriteset_mglv_wagon_gen7m_gondola_ore_l4_s4
-	, spriteset_mglv_wagon_gen7m_gondola_ore_l4_s4
+	spriteset_mglv_wagon_gen7m_gondola_ore_l4_s1,
+	spriteset_mglv_wagon_gen7m_gondola_ore_l4_s2,
+	spriteset_mglv_wagon_gen7m_gondola_ore_l4_s3
 ];
 }
 
@@ -415,21 +367,17 @@ spriteset(spriteset_mglv_wagon_gen7m_gondola_wood_l1_s2, "gfx/wagons_maglev/gen7
 spriteset(spriteset_mglv_wagon_gen7m_gondola_wood_l1_s3, "gfx/wagons_maglev/gen7m/wagon_gen7m_gondola_wood.png") {template_2cc_wagons(1, 64)}
 
 
-/// LIVERY 1   DRIVING STATE 4   WOOD
-spriteset(spriteset_mglv_wagon_gen7m_gondola_wood_l1_s4, "gfx/wagons_maglev/gen7m/wagon_gen7m_gondola_wood.png") {template_2cc_wagons(1, 96)}
-
-
 /// LIVERY 1 SPRITEGROUP - WOOD
 spritegroup spritegroup_mglv_wagon_gen7m_gondola_wood_l1 {
     loading: [
-	spriteset_mglv_wagon_gen7m_gondola_wood_l1_s1
-	, spriteset_mglv_wagon_gen7m_gondola_wood_l1_s2
-	, spriteset_mglv_wagon_gen7m_gondola_wood_l1_s3
+	spriteset_mglv_wagon_gen7m_gondola_wood_l1_s1,
+	spriteset_mglv_wagon_gen7m_gondola_wood_l1_s2,
+	spriteset_mglv_wagon_gen7m_gondola_wood_l1_s3
 ];
     loaded: [
-	spriteset_mglv_wagon_gen7m_gondola_wood_l1_s1
-	, spriteset_mglv_wagon_gen7m_gondola_wood_l1_s4
-	, spriteset_mglv_wagon_gen7m_gondola_wood_l1_s4
+	spriteset_mglv_wagon_gen7m_gondola_wood_l1_s1,
+	spriteset_mglv_wagon_gen7m_gondola_wood_l1_s2,
+	spriteset_mglv_wagon_gen7m_gondola_wood_l1_s3
 ];
 }
 
@@ -445,21 +393,17 @@ spriteset(spriteset_mglv_wagon_gen7m_gondola_wood_l2_s2, "gfx/wagons_maglev/gen7
 spriteset(spriteset_mglv_wagon_gen7m_gondola_wood_l2_s3, "gfx/wagons_maglev/gen7m/wagon_gen7m_gondola_wood.png") {template_2cc_wagons(179, 64)}
 
 
-/// LIVERY 2   DRIVING STATE 4   WOOD
-spriteset(spriteset_mglv_wagon_gen7m_gondola_wood_l2_s4, "gfx/wagons_maglev/gen7m/wagon_gen7m_gondola_wood.png") {template_2cc_wagons(179, 96)}
-
-
 /// LIVERY 2 SPRITEGROUP - WOOD
 spritegroup spritegroup_mglv_wagon_gen7m_gondola_wood_l2 {
     loading: [
-	spriteset_mglv_wagon_gen7m_gondola_wood_l2_s1
-	, spriteset_mglv_wagon_gen7m_gondola_wood_l2_s2
-	, spriteset_mglv_wagon_gen7m_gondola_wood_l2_s3
+	spriteset_mglv_wagon_gen7m_gondola_wood_l2_s1,
+	spriteset_mglv_wagon_gen7m_gondola_wood_l2_s2,
+	spriteset_mglv_wagon_gen7m_gondola_wood_l2_s3
 ];
     loaded: [
-	spriteset_mglv_wagon_gen7m_gondola_wood_l2_s1
-	, spriteset_mglv_wagon_gen7m_gondola_wood_l2_s4
-	, spriteset_mglv_wagon_gen7m_gondola_wood_l2_s4
+	spriteset_mglv_wagon_gen7m_gondola_wood_l2_s1,
+	spriteset_mglv_wagon_gen7m_gondola_wood_l2_s2,
+	spriteset_mglv_wagon_gen7m_gondola_wood_l2_s3
 ];
 }
 
@@ -475,21 +419,17 @@ spriteset(spriteset_mglv_wagon_gen7m_gondola_wood_l3_s2, "gfx/wagons_maglev/gen7
 spriteset(spriteset_mglv_wagon_gen7m_gondola_wood_l3_s3, "gfx/wagons_maglev/gen7m/wagon_gen7m_gondola_wood.png") {template_2cc_wagons(357, 64)}
 
 
-/// LIVERY 3   DRIVING STATE 4   WOOD
-spriteset(spriteset_mglv_wagon_gen7m_gondola_wood_l3_s4, "gfx/wagons_maglev/gen7m/wagon_gen7m_gondola_wood.png") {template_2cc_wagons(357, 96)}
-
-
 /// LIVERY 3 SPRITEGROUP - WOOD
 spritegroup spritegroup_mglv_wagon_gen7m_gondola_wood_l3 {
     loading: [
-	spriteset_mglv_wagon_gen7m_gondola_wood_l3_s1
-	, spriteset_mglv_wagon_gen7m_gondola_wood_l3_s2
-	, spriteset_mglv_wagon_gen7m_gondola_wood_l3_s3
+	spriteset_mglv_wagon_gen7m_gondola_wood_l3_s1,
+	spriteset_mglv_wagon_gen7m_gondola_wood_l3_s2,
+	spriteset_mglv_wagon_gen7m_gondola_wood_l3_s3
 ];
     loaded: [
-	spriteset_mglv_wagon_gen7m_gondola_wood_l3_s1
-	, spriteset_mglv_wagon_gen7m_gondola_wood_l3_s4
-	, spriteset_mglv_wagon_gen7m_gondola_wood_l3_s4
+	spriteset_mglv_wagon_gen7m_gondola_wood_l3_s1,
+	spriteset_mglv_wagon_gen7m_gondola_wood_l3_s2,
+	spriteset_mglv_wagon_gen7m_gondola_wood_l3_s3
 ];
 }
 
@@ -505,21 +445,17 @@ spriteset(spriteset_mglv_wagon_gen7m_gondola_wood_l4_s2, "gfx/wagons_maglev/gen7
 spriteset(spriteset_mglv_wagon_gen7m_gondola_wood_l4_s3, "gfx/wagons_maglev/gen7m/wagon_gen7m_gondola_wood.png") {template_2cc_wagons(535, 64)}
 
 
-/// LIVERY 4   DRIVING STATE 4   WOOD
-spriteset(spriteset_mglv_wagon_gen7m_gondola_wood_l4_s4, "gfx/wagons_maglev/gen7m/wagon_gen7m_gondola_wood.png") {template_2cc_wagons(535, 96)}
-
-
 /// LIVERY 4 SPRITEGROUP - WOOD
 spritegroup spritegroup_mglv_wagon_gen7m_gondola_wood_l4 {
     loading: [
-	spriteset_mglv_wagon_gen7m_gondola_wood_l4_s1
-	, spriteset_mglv_wagon_gen7m_gondola_wood_l4_s2
-	, spriteset_mglv_wagon_gen7m_gondola_wood_l4_s3
+	spriteset_mglv_wagon_gen7m_gondola_wood_l4_s1,
+	spriteset_mglv_wagon_gen7m_gondola_wood_l4_s2,
+	spriteset_mglv_wagon_gen7m_gondola_wood_l4_s3
 ];
     loaded: [
-	spriteset_mglv_wagon_gen7m_gondola_wood_l4_s1
-	, spriteset_mglv_wagon_gen7m_gondola_wood_l4_s4
-	, spriteset_mglv_wagon_gen7m_gondola_wood_l4_s4
+	spriteset_mglv_wagon_gen7m_gondola_wood_l4_s1,
+	spriteset_mglv_wagon_gen7m_gondola_wood_l4_s2,
+	spriteset_mglv_wagon_gen7m_gondola_wood_l4_s3
 ];
 }
 
@@ -545,21 +481,17 @@ spriteset(spriteset_mglv_wagon_gen7m_gondola_sand_l1_s2, "gfx/wagons_maglev/gen7
 spriteset(spriteset_mglv_wagon_gen7m_gondola_sand_l1_s3, "gfx/wagons_maglev/gen7m/wagon_gen7m_gondola_sand.png") {template_2cc_wagons(1, 64)}
 
 
-/// LIVERY 1   DRIVING STATE 4   SAND
-spriteset(spriteset_mglv_wagon_gen7m_gondola_sand_l1_s4, "gfx/wagons_maglev/gen7m/wagon_gen7m_gondola_sand.png") {template_2cc_wagons(1, 96)}
-
-
 /// LIVERY 1 SPRITEGROUP - SAND
 spritegroup spritegroup_mglv_wagon_gen7m_gondola_sand_l1 {
     loading: [
-	spriteset_mglv_wagon_gen7m_gondola_sand_l1_s1
-	, spriteset_mglv_wagon_gen7m_gondola_sand_l1_s2
-	, spriteset_mglv_wagon_gen7m_gondola_sand_l1_s3
+	spriteset_mglv_wagon_gen7m_gondola_sand_l1_s1,
+	spriteset_mglv_wagon_gen7m_gondola_sand_l1_s2,
+	spriteset_mglv_wagon_gen7m_gondola_sand_l1_s3
 ];
     loaded: [
-	spriteset_mglv_wagon_gen7m_gondola_sand_l1_s1
-	, spriteset_mglv_wagon_gen7m_gondola_sand_l1_s4
-	, spriteset_mglv_wagon_gen7m_gondola_sand_l1_s4
+	spriteset_mglv_wagon_gen7m_gondola_sand_l1_s1,
+	spriteset_mglv_wagon_gen7m_gondola_sand_l1_s2,
+	spriteset_mglv_wagon_gen7m_gondola_sand_l1_s3
 ];
 }
 
@@ -575,21 +507,17 @@ spriteset(spriteset_mglv_wagon_gen7m_gondola_sand_l2_s2, "gfx/wagons_maglev/gen7
 spriteset(spriteset_mglv_wagon_gen7m_gondola_sand_l2_s3, "gfx/wagons_maglev/gen7m/wagon_gen7m_gondola_sand.png") {template_2cc_wagons(179, 64)}
 
 
-/// LIVERY 2   DRIVING STATE 4   SAND
-spriteset(spriteset_mglv_wagon_gen7m_gondola_sand_l2_s4, "gfx/wagons_maglev/gen7m/wagon_gen7m_gondola_sand.png") {template_2cc_wagons(179, 96)}
-
-
 /// LIVERY 2 SPRITEGROUP - SAND
 spritegroup spritegroup_mglv_wagon_gen7m_gondola_sand_l2 {
     loading: [
-	spriteset_mglv_wagon_gen7m_gondola_sand_l2_s1
-	, spriteset_mglv_wagon_gen7m_gondola_sand_l2_s2
-	, spriteset_mglv_wagon_gen7m_gondola_sand_l2_s3
+	spriteset_mglv_wagon_gen7m_gondola_sand_l2_s1,
+	spriteset_mglv_wagon_gen7m_gondola_sand_l2_s2,
+	spriteset_mglv_wagon_gen7m_gondola_sand_l2_s3
 ];
     loaded: [
-	spriteset_mglv_wagon_gen7m_gondola_sand_l2_s1
-	, spriteset_mglv_wagon_gen7m_gondola_sand_l2_s4
-	, spriteset_mglv_wagon_gen7m_gondola_sand_l2_s4
+	spriteset_mglv_wagon_gen7m_gondola_sand_l2_s1,
+	spriteset_mglv_wagon_gen7m_gondola_sand_l2_s2,
+	spriteset_mglv_wagon_gen7m_gondola_sand_l2_s3
 ];
 }
 
@@ -605,21 +533,17 @@ spriteset(spriteset_mglv_wagon_gen7m_gondola_sand_l3_s2, "gfx/wagons_maglev/gen7
 spriteset(spriteset_mglv_wagon_gen7m_gondola_sand_l3_s3, "gfx/wagons_maglev/gen7m/wagon_gen7m_gondola_sand.png") {template_2cc_wagons(357, 64)}
 
 
-/// LIVERY 3   DRIVING STATE 4   SAND
-spriteset(spriteset_mglv_wagon_gen7m_gondola_sand_l3_s4, "gfx/wagons_maglev/gen7m/wagon_gen7m_gondola_sand.png") {template_2cc_wagons(357, 96)}
-
-
 /// LIVERY 3 SPRITEGROUP - SAND
 spritegroup spritegroup_mglv_wagon_gen7m_gondola_sand_l3 {
     loading: [
-	spriteset_mglv_wagon_gen7m_gondola_sand_l3_s1
-	, spriteset_mglv_wagon_gen7m_gondola_sand_l3_s2
-	, spriteset_mglv_wagon_gen7m_gondola_sand_l3_s3
+	spriteset_mglv_wagon_gen7m_gondola_sand_l3_s1,
+	spriteset_mglv_wagon_gen7m_gondola_sand_l3_s2,
+	spriteset_mglv_wagon_gen7m_gondola_sand_l3_s3
 ];
     loaded: [
-	spriteset_mglv_wagon_gen7m_gondola_sand_l3_s1
-	, spriteset_mglv_wagon_gen7m_gondola_sand_l3_s4
-	, spriteset_mglv_wagon_gen7m_gondola_sand_l3_s4
+	spriteset_mglv_wagon_gen7m_gondola_sand_l3_s1,
+	spriteset_mglv_wagon_gen7m_gondola_sand_l3_s2,
+	spriteset_mglv_wagon_gen7m_gondola_sand_l3_s3
 ];
 }
 
@@ -635,21 +559,17 @@ spriteset(spriteset_mglv_wagon_gen7m_gondola_sand_l4_s2, "gfx/wagons_maglev/gen7
 spriteset(spriteset_mglv_wagon_gen7m_gondola_sand_l4_s3, "gfx/wagons_maglev/gen7m/wagon_gen7m_gondola_sand.png") {template_2cc_wagons(535, 64)}
 
 
-/// LIVERY 4   DRIVING STATE 4   SAND
-spriteset(spriteset_mglv_wagon_gen7m_gondola_sand_l4_s4, "gfx/wagons_maglev/gen7m/wagon_gen7m_gondola_sand.png") {template_2cc_wagons(535, 96)}
-
-
 /// LIVERY 4 SPRITEGROUP - SAND
 spritegroup spritegroup_mglv_wagon_gen7m_gondola_sand_l4 {
     loading: [
-	spriteset_mglv_wagon_gen7m_gondola_sand_l4_s1
-	, spriteset_mglv_wagon_gen7m_gondola_sand_l4_s2
-	, spriteset_mglv_wagon_gen7m_gondola_sand_l4_s3
+	spriteset_mglv_wagon_gen7m_gondola_sand_l4_s1,
+	spriteset_mglv_wagon_gen7m_gondola_sand_l4_s2,
+	spriteset_mglv_wagon_gen7m_gondola_sand_l4_s3
 ];
     loaded: [
-	spriteset_mglv_wagon_gen7m_gondola_sand_l4_s1
-	, spriteset_mglv_wagon_gen7m_gondola_sand_l4_s4
-	, spriteset_mglv_wagon_gen7m_gondola_sand_l4_s4
+	spriteset_mglv_wagon_gen7m_gondola_sand_l4_s1,
+	spriteset_mglv_wagon_gen7m_gondola_sand_l4_s2,
+	spriteset_mglv_wagon_gen7m_gondola_sand_l4_s3
 ];
 }
 
@@ -675,21 +595,17 @@ spriteset(spriteset_mglv_wagon_gen7m_gondola_gray_l1_s2, "gfx/wagons_maglev/gen7
 spriteset(spriteset_mglv_wagon_gen7m_gondola_gray_l1_s3, "gfx/wagons_maglev/gen7m/wagon_gen7m_gondola_gray.png") {template_2cc_wagons(1, 64)}
 
 
-/// LIVERY 1   DRIVING STATE 4   GRAY
-spriteset(spriteset_mglv_wagon_gen7m_gondola_gray_l1_s4, "gfx/wagons_maglev/gen7m/wagon_gen7m_gondola_gray.png") {template_2cc_wagons(1, 96)}
-
-
 /// LIVERY 1 SPRITEGROUP - GRAY
 spritegroup spritegroup_mglv_wagon_gen7m_gondola_gray_l1 {
     loading: [
-	spriteset_mglv_wagon_gen7m_gondola_gray_l1_s1
-	, spriteset_mglv_wagon_gen7m_gondola_gray_l1_s2
-	, spriteset_mglv_wagon_gen7m_gondola_gray_l1_s3
+	spriteset_mglv_wagon_gen7m_gondola_gray_l1_s1,
+	spriteset_mglv_wagon_gen7m_gondola_gray_l1_s2,
+	spriteset_mglv_wagon_gen7m_gondola_gray_l1_s3
 ];
     loaded: [
-	spriteset_mglv_wagon_gen7m_gondola_gray_l1_s1
-	, spriteset_mglv_wagon_gen7m_gondola_gray_l1_s4
-	, spriteset_mglv_wagon_gen7m_gondola_gray_l1_s4
+	spriteset_mglv_wagon_gen7m_gondola_gray_l1_s1,
+	spriteset_mglv_wagon_gen7m_gondola_gray_l1_s2,
+	spriteset_mglv_wagon_gen7m_gondola_gray_l1_s3
 ];
 }
 
@@ -705,21 +621,17 @@ spriteset(spriteset_mglv_wagon_gen7m_gondola_gray_l2_s2, "gfx/wagons_maglev/gen7
 spriteset(spriteset_mglv_wagon_gen7m_gondola_gray_l2_s3, "gfx/wagons_maglev/gen7m/wagon_gen7m_gondola_gray.png") {template_2cc_wagons(179, 64)}
 
 
-/// LIVERY 2   DRIVING STATE 4   GRAY
-spriteset(spriteset_mglv_wagon_gen7m_gondola_gray_l2_s4, "gfx/wagons_maglev/gen7m/wagon_gen7m_gondola_gray.png") {template_2cc_wagons(179, 96)}
-
-
 /// LIVERY 2 SPRITEGROUP - GRAY
 spritegroup spritegroup_mglv_wagon_gen7m_gondola_gray_l2 {
     loading: [
-	spriteset_mglv_wagon_gen7m_gondola_gray_l2_s1
-	, spriteset_mglv_wagon_gen7m_gondola_gray_l2_s2
-	, spriteset_mglv_wagon_gen7m_gondola_gray_l2_s3
+	spriteset_mglv_wagon_gen7m_gondola_gray_l2_s1,
+	spriteset_mglv_wagon_gen7m_gondola_gray_l2_s2,
+	spriteset_mglv_wagon_gen7m_gondola_gray_l2_s3
 ];
     loaded: [
-	spriteset_mglv_wagon_gen7m_gondola_gray_l2_s1
-	, spriteset_mglv_wagon_gen7m_gondola_gray_l2_s4
-	, spriteset_mglv_wagon_gen7m_gondola_gray_l2_s4
+	spriteset_mglv_wagon_gen7m_gondola_gray_l2_s1,
+	spriteset_mglv_wagon_gen7m_gondola_gray_l2_s2,
+	spriteset_mglv_wagon_gen7m_gondola_gray_l2_s3
 ];
 }
 
@@ -735,21 +647,17 @@ spriteset(spriteset_mglv_wagon_gen7m_gondola_gray_l3_s2, "gfx/wagons_maglev/gen7
 spriteset(spriteset_mglv_wagon_gen7m_gondola_gray_l3_s3, "gfx/wagons_maglev/gen7m/wagon_gen7m_gondola_gray.png") {template_2cc_wagons(357, 64)}
 
 
-/// LIVERY 3   DRIVING STATE 4   GRAY
-spriteset(spriteset_mglv_wagon_gen7m_gondola_gray_l3_s4, "gfx/wagons_maglev/gen7m/wagon_gen7m_gondola_gray.png") {template_2cc_wagons(357, 96)}
-
-
 /// LIVERY 3 SPRITEGROUP - GRAY
 spritegroup spritegroup_mglv_wagon_gen7m_gondola_gray_l3 {
     loading: [
-	spriteset_mglv_wagon_gen7m_gondola_gray_l3_s1
-	, spriteset_mglv_wagon_gen7m_gondola_gray_l3_s2
-	, spriteset_mglv_wagon_gen7m_gondola_gray_l3_s3
+	spriteset_mglv_wagon_gen7m_gondola_gray_l3_s1,
+	spriteset_mglv_wagon_gen7m_gondola_gray_l3_s2,
+	spriteset_mglv_wagon_gen7m_gondola_gray_l3_s3
 ];
     loaded: [
-	spriteset_mglv_wagon_gen7m_gondola_gray_l3_s1
-	, spriteset_mglv_wagon_gen7m_gondola_gray_l3_s4
-	, spriteset_mglv_wagon_gen7m_gondola_gray_l3_s4
+	spriteset_mglv_wagon_gen7m_gondola_gray_l3_s1,
+	spriteset_mglv_wagon_gen7m_gondola_gray_l3_s2,
+	spriteset_mglv_wagon_gen7m_gondola_gray_l3_s3
 ];
 }
 
@@ -765,21 +673,17 @@ spriteset(spriteset_mglv_wagon_gen7m_gondola_gray_l4_s2, "gfx/wagons_maglev/gen7
 spriteset(spriteset_mglv_wagon_gen7m_gondola_gray_l4_s3, "gfx/wagons_maglev/gen7m/wagon_gen7m_gondola_gray.png") {template_2cc_wagons(535, 64)}
 
 
-/// LIVERY 4   DRIVING STATE 4   GRAY
-spriteset(spriteset_mglv_wagon_gen7m_gondola_gray_l4_s4, "gfx/wagons_maglev/gen7m/wagon_gen7m_gondola_gray.png") {template_2cc_wagons(535, 96)}
-
-
 /// LIVERY 4 SPRITEGROUP - GRAY
 spritegroup spritegroup_mglv_wagon_gen7m_gondola_gray_l4 {
     loading: [
-	spriteset_mglv_wagon_gen7m_gondola_gray_l4_s1
-	, spriteset_mglv_wagon_gen7m_gondola_gray_l4_s2
-	, spriteset_mglv_wagon_gen7m_gondola_gray_l4_s3
+	spriteset_mglv_wagon_gen7m_gondola_gray_l4_s1,
+	spriteset_mglv_wagon_gen7m_gondola_gray_l4_s2,
+	spriteset_mglv_wagon_gen7m_gondola_gray_l4_s3
 ];
     loaded: [
-	spriteset_mglv_wagon_gen7m_gondola_gray_l4_s1
-	, spriteset_mglv_wagon_gen7m_gondola_gray_l4_s4
-	, spriteset_mglv_wagon_gen7m_gondola_gray_l4_s4
+	spriteset_mglv_wagon_gen7m_gondola_gray_l4_s1,
+	spriteset_mglv_wagon_gen7m_gondola_gray_l4_s2,
+	spriteset_mglv_wagon_gen7m_gondola_gray_l4_s3
 ];
 }
 

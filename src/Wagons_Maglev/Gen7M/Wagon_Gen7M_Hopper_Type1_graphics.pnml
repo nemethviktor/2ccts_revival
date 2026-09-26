@@ -3,7 +3,7 @@
 
 // Template: TPL_04B
 // CargoDef: HOPPER_TYPE_FOOD
-// ID: 18007
+// ID: 10509
 
 // PURCHASE
 spriteset(spriteset_mglv_wagon_gen7m_hopper_type1_purchase, "gfx/wagons_maglev/gen7m/wagon_gen7m_hopper_type1_purchase.png") {template_purchase_wagon(1, 1)}
@@ -25,21 +25,17 @@ spriteset(spriteset_mglv_wagon_gen7m_hopper_type1_grain_l1_s2, "gfx/wagons_magle
 spriteset(spriteset_mglv_wagon_gen7m_hopper_type1_grain_l1_s3, "gfx/wagons_maglev/gen7m/wagon_gen7m_hopper_type1_grain.png") {template_2cc_wagons(1, 64)}
 
 
-/// LIVERY 1   DRIVING STATE 4   GRAIN
-spriteset(spriteset_mglv_wagon_gen7m_hopper_type1_grain_l1_s4, "gfx/wagons_maglev/gen7m/wagon_gen7m_hopper_type1_grain.png") {template_2cc_wagons(1, 96)}
-
-
 /// LIVERY 1 SPRITEGROUP - GRAIN
 spritegroup spritegroup_mglv_wagon_gen7m_hopper_type1_grain_l1 {
     loading: [
-	spriteset_mglv_wagon_gen7m_hopper_type1_grain_l1_s1
-	, spriteset_mglv_wagon_gen7m_hopper_type1_grain_l1_s2
-	, spriteset_mglv_wagon_gen7m_hopper_type1_grain_l1_s3
+	spriteset_mglv_wagon_gen7m_hopper_type1_grain_l1_s1,
+	spriteset_mglv_wagon_gen7m_hopper_type1_grain_l1_s2,
+	spriteset_mglv_wagon_gen7m_hopper_type1_grain_l1_s3
 ];
     loaded: [
-	spriteset_mglv_wagon_gen7m_hopper_type1_grain_l1_s1
-	, spriteset_mglv_wagon_gen7m_hopper_type1_grain_l1_s4
-	, spriteset_mglv_wagon_gen7m_hopper_type1_grain_l1_s4
+	spriteset_mglv_wagon_gen7m_hopper_type1_grain_l1_s1,
+	spriteset_mglv_wagon_gen7m_hopper_type1_grain_l1_s2,
+	spriteset_mglv_wagon_gen7m_hopper_type1_grain_l1_s3
 ];
 }
 
@@ -55,21 +51,17 @@ spriteset(spriteset_mglv_wagon_gen7m_hopper_type1_grain_l2_s2, "gfx/wagons_magle
 spriteset(spriteset_mglv_wagon_gen7m_hopper_type1_grain_l2_s3, "gfx/wagons_maglev/gen7m/wagon_gen7m_hopper_type1_grain.png") {template_2cc_wagons(179, 64)}
 
 
-/// LIVERY 2   DRIVING STATE 4   GRAIN
-spriteset(spriteset_mglv_wagon_gen7m_hopper_type1_grain_l2_s4, "gfx/wagons_maglev/gen7m/wagon_gen7m_hopper_type1_grain.png") {template_2cc_wagons(179, 96)}
-
-
 /// LIVERY 2 SPRITEGROUP - GRAIN
 spritegroup spritegroup_mglv_wagon_gen7m_hopper_type1_grain_l2 {
     loading: [
-	spriteset_mglv_wagon_gen7m_hopper_type1_grain_l2_s1
-	, spriteset_mglv_wagon_gen7m_hopper_type1_grain_l2_s2
-	, spriteset_mglv_wagon_gen7m_hopper_type1_grain_l2_s3
+	spriteset_mglv_wagon_gen7m_hopper_type1_grain_l2_s1,
+	spriteset_mglv_wagon_gen7m_hopper_type1_grain_l2_s2,
+	spriteset_mglv_wagon_gen7m_hopper_type1_grain_l2_s3
 ];
     loaded: [
-	spriteset_mglv_wagon_gen7m_hopper_type1_grain_l2_s1
-	, spriteset_mglv_wagon_gen7m_hopper_type1_grain_l2_s4
-	, spriteset_mglv_wagon_gen7m_hopper_type1_grain_l2_s4
+	spriteset_mglv_wagon_gen7m_hopper_type1_grain_l2_s1,
+	spriteset_mglv_wagon_gen7m_hopper_type1_grain_l2_s2,
+	spriteset_mglv_wagon_gen7m_hopper_type1_grain_l2_s3
 ];
 }
 
@@ -85,21 +77,17 @@ spriteset(spriteset_mglv_wagon_gen7m_hopper_type1_grain_l3_s2, "gfx/wagons_magle
 spriteset(spriteset_mglv_wagon_gen7m_hopper_type1_grain_l3_s3, "gfx/wagons_maglev/gen7m/wagon_gen7m_hopper_type1_grain.png") {template_2cc_wagons(357, 64)}
 
 
-/// LIVERY 3   DRIVING STATE 4   GRAIN
-spriteset(spriteset_mglv_wagon_gen7m_hopper_type1_grain_l3_s4, "gfx/wagons_maglev/gen7m/wagon_gen7m_hopper_type1_grain.png") {template_2cc_wagons(357, 96)}
-
-
 /// LIVERY 3 SPRITEGROUP - GRAIN
 spritegroup spritegroup_mglv_wagon_gen7m_hopper_type1_grain_l3 {
     loading: [
-	spriteset_mglv_wagon_gen7m_hopper_type1_grain_l3_s1
-	, spriteset_mglv_wagon_gen7m_hopper_type1_grain_l3_s2
-	, spriteset_mglv_wagon_gen7m_hopper_type1_grain_l3_s3
+	spriteset_mglv_wagon_gen7m_hopper_type1_grain_l3_s1,
+	spriteset_mglv_wagon_gen7m_hopper_type1_grain_l3_s2,
+	spriteset_mglv_wagon_gen7m_hopper_type1_grain_l3_s3
 ];
     loaded: [
-	spriteset_mglv_wagon_gen7m_hopper_type1_grain_l3_s1
-	, spriteset_mglv_wagon_gen7m_hopper_type1_grain_l3_s4
-	, spriteset_mglv_wagon_gen7m_hopper_type1_grain_l3_s4
+	spriteset_mglv_wagon_gen7m_hopper_type1_grain_l3_s1,
+	spriteset_mglv_wagon_gen7m_hopper_type1_grain_l3_s2,
+	spriteset_mglv_wagon_gen7m_hopper_type1_grain_l3_s3
 ];
 }
 
@@ -115,21 +103,17 @@ spriteset(spriteset_mglv_wagon_gen7m_hopper_type1_grain_l4_s2, "gfx/wagons_magle
 spriteset(spriteset_mglv_wagon_gen7m_hopper_type1_grain_l4_s3, "gfx/wagons_maglev/gen7m/wagon_gen7m_hopper_type1_grain.png") {template_2cc_wagons(535, 64)}
 
 
-/// LIVERY 4   DRIVING STATE 4   GRAIN
-spriteset(spriteset_mglv_wagon_gen7m_hopper_type1_grain_l4_s4, "gfx/wagons_maglev/gen7m/wagon_gen7m_hopper_type1_grain.png") {template_2cc_wagons(535, 96)}
-
-
 /// LIVERY 4 SPRITEGROUP - GRAIN
 spritegroup spritegroup_mglv_wagon_gen7m_hopper_type1_grain_l4 {
     loading: [
-	spriteset_mglv_wagon_gen7m_hopper_type1_grain_l4_s1
-	, spriteset_mglv_wagon_gen7m_hopper_type1_grain_l4_s2
-	, spriteset_mglv_wagon_gen7m_hopper_type1_grain_l4_s3
+	spriteset_mglv_wagon_gen7m_hopper_type1_grain_l4_s1,
+	spriteset_mglv_wagon_gen7m_hopper_type1_grain_l4_s2,
+	spriteset_mglv_wagon_gen7m_hopper_type1_grain_l4_s3
 ];
     loaded: [
-	spriteset_mglv_wagon_gen7m_hopper_type1_grain_l4_s1
-	, spriteset_mglv_wagon_gen7m_hopper_type1_grain_l4_s4
-	, spriteset_mglv_wagon_gen7m_hopper_type1_grain_l4_s4
+	spriteset_mglv_wagon_gen7m_hopper_type1_grain_l4_s1,
+	spriteset_mglv_wagon_gen7m_hopper_type1_grain_l4_s2,
+	spriteset_mglv_wagon_gen7m_hopper_type1_grain_l4_s3
 ];
 }
 

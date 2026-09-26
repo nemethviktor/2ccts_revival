@@ -3,7 +3,7 @@
 
 // Template: TPL_04B
 // CargoDef: LIVESTOCK
-// ID: 18016
+// ID: 10515
 
 // PURCHASE
 spriteset(spriteset_mglv_wagon_gen7m_livestock_van_purchase, "gfx/wagons_maglev/gen7m/wagon_gen7m_livestock_van_purchase.png") {template_purchase_wagon(1, 1)}

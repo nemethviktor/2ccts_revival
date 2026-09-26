@@ -837,6 +837,24 @@ item_mmu_siemens_thyssenkrupp_transrapid, /*Year: 2004*/ \
 item_mmu_mistubishi_nippon_sharyo_mlx01_901, /*Year: 2025*/ \
 item_mmu_acme_corp__chimaera, /*Year: 2030*/
 
+#define SORTING_WAGONS_MGLV \
+item_mglv_wagon_gen7m_container_doublestack, /*Year: 2000*/ \
+item_mglv_wagon_gen7m_boxcar_type1, /*Year: 2010*/ \
+item_mglv_wagon_gen7m_boxcar_type2, /*Year: 2010*/ \
+item_mglv_wagon_gen7m_centerbeam, /*Year: 2010*/ \
+item_mglv_wagon_gen7m_container_carrier, /*Year: 2010*/ \
+item_mglv_wagon_gen7m_flatcar, /*Year: 2010*/ \
+item_mglv_wagon_gen7m_gondola, /*Year: 2010*/ \
+item_mglv_wagon_gen7m_superheavy_flatcar, /*Year: 2010*/ \
+item_mglv_wagon_gen7m_livestock_van, /*Year: 2010*/ \
+item_mglv_wagon_gen7m_car_transporter, /*Year: 2020*/ \
+item_mglv_wagon_gen7m_heavy_flatcar, /*Year: 2020*/ \
+item_mglv_wagon_gen7m_hopper_type1, /*Year: 2020*/ \
+item_mglv_wagon_gen7m_hopper_type2, /*Year: 2020*/ \
+item_mglv_wagon_gen7m_silo_type1, /*Year: 2020*/ \
+item_mglv_wagon_gen7m_silo_type2, /*Year: 2020*/ \
+item_mglv_wagon_gen7m_tanker, /*Year: 2020*/
+
 #define SORTING_COACHES \
 item_mu_coach_gen1_wooden_2_axle_compartment_coach, /*Year: 1830*/ \
 item_mu_coach_gen1_wooden_2_axle_regional_coach, /*Year: 1830*/ \
@@ -1034,12 +1052,21 @@ item_mglv_maglev_wagon_powered, /*Year: 2000*/
 item_mu_mu_cargo_wagon_unpowered, /*Year: 1992*/ \
 item_mu_mu_cargo_wagon_powered, /*Year: 1992*/
 
+#define SORTING_COACHES_MGLV \
+item_mglv_coach_gen7m_chimaera_passenger_coach, /*Year: 2010*/ \
+item_mglv_coach_gen7m_chimaera_mail_coach, /*Year: 2010*/
+
 #define SORTING_SINGLEMETRO \
 item_singlemtro_brooklyn_union_gate_1300, /*Year: 1880*/ \
 item_singlemtro_siemens___halske_budapest_1894_stock, /*Year: 1903*/ \
 item_singlemtro_acf_nycc_heavyweight, /*Year: 1906*/ \
 item_singlemtro_chicago_l_northwest_elevated_1907_stock, /*Year: 1907*/ \
 item_singlemtro_berlin_u_bahn_c_ii, /*Year: 1929*/
+
+#define SORTING_CARGOEMU \
+item_cargoemu_jnr_container_bullet_train_concept, /*Year: 1960*/ \
+item_cargoemu_kawasaki_nippon_sharyo_toshiba_m250, /*Year: 2003*/ \
+item_cargoemu_acme_corp__dd_cargoemu, /*Year: 2045*/
 
 #define SORTING_MAGLEV \
 item_mglv_siemens_eurosprinter_es64u4m, /*Year: 2005*/ \
@@ -1050,33 +1077,6 @@ item_cargodmu_windhoff_cargosprinter, /*Year: 1996*/
 
 #define SORTING_RBM \
 item_rbm_acme_corp__turbobus, /*Year: 2040*/
-
-#define SORTING_WAGONS_MGLV \
-item_mglv_wagon_gen7m_container_doublestack, /*Year: 2000*/ \
-item_mglv_wagon_gen7m_flatcar, /*Year: 2010*/ \
-item_mglv_wagon_gen7m_boxcar_type1, /*Year: 2010*/ \
-item_mglv_wagon_gen7m_gondola, /*Year: 2010*/ \
-item_mglv_wagon_gen7m_container_carrier, /*Year: 2010*/ \
-item_mglv_wagon_gen7m_centerbeam, /*Year: 2010*/ \
-item_mglv_wagon_gen7m_superheavy_flatcar, /*Year: 2010*/ \
-item_mglv_wagon_gen7m_boxcar_type2, /*Year: 2010*/ \
-item_mglv_wagon_gen7m_livestock_van, /*Year: 2010*/ \
-item_mglv_wagon_gen7m_heavy_flatcar, /*Year: 2020*/ \
-item_mglv_wagon_gen7m_tanker, /*Year: 2020*/ \
-item_mglv_wagon_gen7m_silo_type1, /*Year: 2020*/ \
-item_mglv_wagon_gen7m_hopper_type1, /*Year: 2020*/ \
-item_mglv_wagon_gen7m_car_transporter, /*Year: 2020*/ \
-item_mglv_wagon_gen7m_silo_type2, /*Year: 2020*/ \
-item_mglv_wagon_gen7m_hopper_type2, /*Year: 2020*/
-
-#define SORTING_CARGOEMU \
-item_cargoemu_jnr_container_bullet_train_concept, /*Year: 1960*/ \
-item_cargoemu_kawasaki_nippon_sharyo_toshiba_m250, /*Year: 2003*/ \
-item_cargoemu_acme_corp__dd_cargoemu, /*Year: 2045*/
-
-#define SORTING_COACHES_MGLV \
-item_mglv_coach_gen7m_chimaera_passenger_coach, /*Year: 2010*/ \
-item_mglv_coach_gen7m_chimaera_mail_coach, /*Year: 2010*/
 
 // Combine all categories into the final sort list
 sort(FEAT_TRAINS, [
@@ -1090,17 +1090,17 @@ sort(FEAT_TRAINS, [
     SORTING_EMU 
     SORTING_MULTIMETRO 
     SORTING_MMU 
+    SORTING_WAGONS_MGLV 
     SORTING_COACHES 
     SORTING_WAGONS 
     SORTING_UNIT_WAGONS_RAIL 
     SORTING_UNIT_WAGONS_MTRO 
     SORTING_UNIT_WAGONS_MGLV 
     SORTING_UNIT_WAGONS_RAIL_CARGO 
+    SORTING_COACHES_MGLV 
     SORTING_SINGLEMETRO 
+    SORTING_CARGOEMU 
     SORTING_MAGLEV 
     SORTING_CARGODMU 
-    SORTING_RBM 
-    SORTING_WAGONS_MGLV 
-    SORTING_CARGOEMU 
-    SORTING_COACHES_MGLV
+    SORTING_RBM
 ]);
