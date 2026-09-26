@@ -23,8 +23,6 @@
 #include "src/vehicleID.pnml"
 // Can (not) attach vehcile
 #include "src/wagon_attach.pnml"
-// Capacities
-#include "src/capacities.pnml"
 // Rail types
 #include "src/railtypetable.pnml"
 // Badges

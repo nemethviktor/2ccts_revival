@@ -817,7 +817,8 @@ def get_expanded_engine_capacity_switch(row: pd.Series) -> str:
 def get_expanded_wagon_capacity_switch(row: pd.Series) -> str:
     # We use \\ to produce a single literal \ in the output
     # We use {{ }} to produce literal { } in the NML code
-    cap = row["WAGON_CAPACITY"]
+
+    cap = row["WAGON_CAPACITY"] if str(row["COST_CAT"]).strip() not in ["WAGON"] else row["HEAD_CAPACITY"]
     vehid_lcase = row["VEHIDCODE"].lower()
 
     return f"""
@@ -1070,7 +1071,8 @@ def generate_unified_items(df_master: pd.DataFrame, copyright_text: str, notes_l
             category in ["DMU", "EMU", "WAGON", "MMU"] and VEHID_CATEGORY not in ["CARGOEMU", "CARGODMU"]
         ) or category.endswith("RAILBUS"):
             content.append("// Cargo capacity" + "\n")
-            content.append(get_expanded_engine_capacity_switch(row))
+            if category not in ["WAGON"]:
+                content.append(get_expanded_engine_capacity_switch(row))
             content.append(get_expanded_wagon_capacity_switch(row))
 
         # I've wholly failed to figure out why these two are special in a logical way so i'm just hardcoding them
@@ -1218,7 +1220,8 @@ switch (FEAT_TRAINS, SELF, sw_loco_runningcost_{VEHIDCODE_lcase}, tile_powers_ra
             category in ["DMU", "EMU", "WAGON", "MMU"] and VEHID_CATEGORY not in ["CARGODMU", "CARGOEMU"]
         ) or category.endswith("RAILBUS"):
             if not cargo_capacity_defined:
-                content.append(f"        cargo_capacity: switch_{VEHIDCODE_lcase}_capacity_engine;\n")
+                word = "engine" if category not in ["WAGON"] else "wagon"
+                content.append(f"        cargo_capacity: switch_{VEHIDCODE_lcase}_capacity_{word};\n")
         # if not is_true(row['IS_POWERED_UNPOWERED_SUNDRY']):
         #    content.append(f"""        additional_text: string(str_{VEHIDCODE_lcase}_url);\n""")
         content.append(f"        {graphics_switch_visual_effect_and_powered}\n")

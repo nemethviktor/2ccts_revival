@@ -8,13 +8,6 @@
 
 // Cargo capacity
 
-    switch(FEAT_TRAINS, SELF, switch_mu_wagon_service_car_type2_capacity_engine, cargo_classes) { \
-        bitmask(CC_MAIL): 0/2; \
-        bitmask(CC_ARMOURED): 0/4; \
-        0; \
-    }
-
-
     switch(FEAT_TRAINS, SELF, switch_mu_wagon_service_car_type2_capacity_wagon, cargo_classes) { \
         bitmask(CC_MAIL): 0/2; \
         bitmask(CC_ARMOURED): 0/4; \
@@ -63,7 +56,7 @@ item(FEAT_TRAINS, item_mu_wagon_service_car_type2) {
     }
     graphics {
         purchase: spriteset_mu_wagon_service_car_type2_purchase;
-        cargo_capacity: switch_mu_wagon_service_car_type2_capacity_engine;
+        cargo_capacity: switch_mu_wagon_service_car_type2_capacity_wagon;
         // no 'visual_effect' or 'visual_effect_and_powered'
         // no 'length'
         // no 'articulated_part'

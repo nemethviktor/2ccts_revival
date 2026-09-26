@@ -35,7 +35,6 @@ def generate_master_pnml(df_master: pd.DataFrame, copyright_text: str):
         ("// Cargo translation table", "src/cargotable.pnml"),
         ("// Give unique IDs to vehicles", "src/vehicleID.pnml"),
         ("// Can (not) attach vehcile", "src/wagon_attach.pnml"),
-        ("// Capacities", "src/capacities.pnml"),
         ("// Rail types", "src/railtypetable.pnml"),
         ("// Badges", "src/badgetable.pnml"),
         ("// Purchase text switch", "src/purchasetext.pnml"),
