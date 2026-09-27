@@ -800,33 +800,30 @@ def parse_cargo_definitions(pnml_path):
     return cargo_dict
 
 
-def get_expanded_engine_capacity_switch(row: pd.Series) -> str:
+def get_expanded_capacity_switch(TEMPLATE_ID_FULL: str, row: pd.Series, is_engine: bool) -> str:
     # We use \\ to produce a single literal \ in the output
     # We use {{ }} to produce literal { } in the NML code
-    cap = int(float(row["HEAD_CAPACITY"]))
+    word = "engine" if is_engine else "wagon"
+    cap = (
+        int(float(row["HEAD_CAPACITY"]))
+        if is_engine
+        else row["WAGON_CAPACITY"] if str(row["COST_CAT"]).strip() not in ["WAGON"] else row["HEAD_CAPACITY"]
+    )
     vehid_lcase = row["VEHIDCODE"].lower()
 
     return f"""
-    switch(FEAT_TRAINS, SELF, switch_{vehid_lcase}_capacity_engine, cargo_classes) {{ \\
-        bitmask(CC_MAIL): {cap}/2; \\
-        bitmask(CC_ARMOURED): {cap}/4; \\
-        {cap}; \\
+    switch(FEAT_TRAINS, SELF, switch_{vehid_lcase}_capacity_{word}, cargo_classes) {{ \\
+        bitmask(CC_MAIL): {int(cap/get_cargo_capacity_divide(TEMPLATE_ID_FULL=TEMPLATE_ID_FULL))}/2; \\
+        bitmask(CC_ARMOURED): {int(cap/get_cargo_capacity_divide(TEMPLATE_ID_FULL=TEMPLATE_ID_FULL))}/4; \\
+        {int(cap/get_cargo_capacity_divide(TEMPLATE_ID_FULL=TEMPLATE_ID_FULL))}; \\
     }}\n\n"""
 
 
-def get_expanded_wagon_capacity_switch(row: pd.Series) -> str:
-    # We use \\ to produce a single literal \ in the output
-    # We use {{ }} to produce literal { } in the NML code
-
-    cap = row["WAGON_CAPACITY"] if str(row["COST_CAT"]).strip() not in ["WAGON"] else row["HEAD_CAPACITY"]
-    vehid_lcase = row["VEHIDCODE"].lower()
-
-    return f"""
-    switch(FEAT_TRAINS, SELF, switch_{vehid_lcase}_capacity_wagon, cargo_classes) {{ \\
-        bitmask(CC_MAIL): {cap}/2; \\
-        bitmask(CC_ARMOURED): {cap}/4; \\
-        {cap}; \\
-    }}\n\n"""
+def get_cargo_capacity_divide(TEMPLATE_ID_FULL: str) -> int:
+    """Returns a manually assigned divisor for cargo volume purposes. Some vehicles are articulated and their capacity would be calculated incorrectly otherwise."""
+    if TEMPLATE_ID_FULL in ["TPL_25A"]:
+        return 3
+    return 1
 
 
 # --- Main Generation Function ---
@@ -1072,8 +1069,8 @@ def generate_unified_items(df_master: pd.DataFrame, copyright_text: str, notes_l
         ) or category.endswith("RAILBUS"):
             content.append("// Cargo capacity" + "\n")
             if category not in ["WAGON"]:
-                content.append(get_expanded_engine_capacity_switch(row))
-            content.append(get_expanded_wagon_capacity_switch(row))
+                content.append(get_expanded_capacity_switch(TEMPLATE_ID_FULL=TEMPLATE_ID_FULL, row=row, is_engine=True))
+            content.append(get_expanded_capacity_switch(TEMPLATE_ID_FULL=TEMPLATE_ID_FULL, row=row, is_engine=False))
 
         # I've wholly failed to figure out why these two are special in a logical way so i'm just hardcoding them
         if VEHID_ID_INT in [2021, 1005]:
@@ -1127,7 +1124,7 @@ switch (FEAT_TRAINS, SELF, sw_loco_runningcost_{VEHIDCODE_lcase}, tile_powers_ra
         content.append(f"        speed: {int(row['SPEED'])} km/h;{dual_mode_comment}\n")
         content.append(f"        power: {int(row['POWER'])} hp;{dual_mode_comment}\n")
         content.append(
-            f"        cargo_capacity: {255 if int(row['HEAD_CAPACITY']) > 255 else int(row['HEAD_CAPACITY'])};\n"
+            f"        cargo_capacity: {int(255/get_cargo_capacity_divide(TEMPLATE_ID_FULL=TEMPLATE_ID_FULL)) if int(row['HEAD_CAPACITY']) > 255 else int(row['HEAD_CAPACITY'])};\n"
         )
         content.append(f"        weight: {int(row['WEIGHT'])} ton;\n")
         content.append(f"        tractive_effort_coefficient: {row['TE_COEFFICIENT']};\n")
