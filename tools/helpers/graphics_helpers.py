@@ -477,3 +477,37 @@ switch(FEAT_TRAINS, SELF, switch_{vid}_articulated, extra_callback_info1) {{
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }}
 """
+
+
+@scrub_nml_data
+def get_articulated_graphics_switch(
+    *,
+    vid: str,
+    cargo_string: str,
+    cargo_string_is_dummy: bool,
+    part_switches: dict[str, str],
+) -> str:
+    """
+    Generates an NML switch that routes vehicle positions (0, 1, 2...)
+    to part-specific livery selector switches based on `position_in_articulated_veh`.
+    """
+    prefix = f"{vid}" if cargo_string_is_dummy else f"{vid}_{cargo_string}"
+    switch_id = f"switch_{prefix}"
+
+    # Default fallback to front part if position is outside expected range
+    fallback_switch = part_switches.get("front", list(part_switches.values())[0])
+
+    nml_code = f"/// Graphics routing switch for articulated parts\n"
+    nml_code += f"switch (FEAT_TRAINS, SELF, {switch_id}, position_in_articulated_veh) {{\n"
+
+    if "front" in part_switches:
+        nml_code += f"    0: {part_switches['front']};\n"
+    if "middle" in part_switches:
+        nml_code += f"    1: {part_switches['middle']};\n"
+    if "back" in part_switches:
+        nml_code += f"    2: {part_switches['back']};\n"
+
+    nml_code += f"    {fallback_switch};\n"
+    nml_code += "}\n"
+
+    return nml_code

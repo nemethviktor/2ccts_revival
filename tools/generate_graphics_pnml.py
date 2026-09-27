@@ -1052,8 +1052,7 @@ def get_tpl_04(vid, gfx_path, row, template_amendment_code):
                 template_suffix="_wagon",
             )
         )
-    nml_code.append(f"""
-// VEHICLE""")
+    nml_code.append(f"""\n// VEHICLE""")
 
     # Constants for offsets (this is for "columns")
     if template_amendment_code in ["U"]:
@@ -1720,12 +1719,19 @@ def get_tpl_17(vid, gfx_path, row, template_amendment_code):
 def get_tpl_25(vid, gfx_path, row, template_amendment_code):
     """
     Automation for the Superheavy Wagon(TPL_25).
-    Handles static Front/Back/Empty parts and 4 liveried middle sections.: param vid: The vehicle id: param gfx_path: The png path: param row: The row: param template_amendment_code: A -> Superheavy Wagon(articulated); no others atm.
+    Handles static Front/Back/Empty parts and 4 liveried middle sections.
+    : param vid: The vehicle id
+    : param gfx_path: The png path
+    : param row: The row
+    : param template_amendment_code: A -> Superheavy Wagon(articulated); no others atm.
     """
 
     nml_code = []
+    nml_code.append("\n// VEHICLE")
 
-    # 1. Header & Purchase
+    liveries = {1: 1, 2: 179, 3: 357, 4: 535}
+    loading_state_count = 2
+
     nml_code.append(
         get_purchase(
             vid=vid,
@@ -1736,111 +1742,119 @@ def get_tpl_25(vid, gfx_path, row, template_amendment_code):
         )
     )
 
-    # 2. Coordinate Mapping
-    all_sprites = {
-        "front": (1, 1),
-        "back": (1, 64),
-        "middle_empty": (1, 32),
-        "middle_l1": (1, 126),
-        "middle_l2": (179, 126),
-        "middle_l3": (357, 126),
-        "middle_l4": (535, 126),
+    sprite_groups = {
+        "front": {
+            1: ("front_empty", 1, 1),
+            2: ("front_50pct", 1, 95),
+            3: ("front_loaded", 1, 190),
+        },
+        "middle": {
+            1: ("middle_empty", 1, 32),
+            2: ("middle_50pct", 1, 126),
+            3: ("middle_loaded", 1, 221),
+        },
+        "back": {
+            1: ("back_empty", 1, 64),
+            2: ("back_50pct", 1, 157),
+            3: ("back_loaded", 1, 252),
+        },
     }
 
-    # 3. Sprite & Group Generation
-    for sprite_name, coords in all_sprites.items():
-        # Check if it's a livery (ends with L1, L2, etc)
-        is_livery = re.search(r"l\d+$", sprite_name)
+    vehid_id_int = row["VEHID_ID"]
+    cargodef: str = row["CARGODEF"]
+    cargotypes = get_cargotypes(cargodef)
 
-        if not is_livery:
-            # Static parts (front, back, middle_empty)
+    for cargo_string in cargotypes:
+        cargo_string: str = cargo_string.lower()
+        cargo_string_is_dummy = cargo_string == "dummy"
+        if not cargo_string_is_dummy:
+            nml_code.append(f"\n// {cargo_string.upper()}")
+
+        part_switches = {}
+
+        # 1. Loop through vehicle parts (front / middle / back)
+        for part_prefix, part_states in sprite_groups.items():
+
+            # 2. Loop through liveries (X offsets)
+            for livery_num, livery_x in liveries.items():
+                created_sprites = []
+
+                # 3. Loop through loading states
+                for state_num, (state_label, base_x, y_coord) in part_states.items():
+                    x_coord = base_x + (livery_x - 1)
+
+                    s_suffix = ""
+                    s_suffix += f"{cargo_string}_" if not cargo_string_is_dummy else ""
+                    s_suffix += f"{part_prefix}_L{livery_num}"
+                    s_suffix += f"_s{state_num}" if loading_state_count > 0 else ""
+
+                    comment = f"{part_prefix.title()} - Livery {livery_num}"
+                    if loading_state_count > 0:
+                        comment += f" - Loading State {state_num} ({state_label})"
+                    comment += f" - {cargo_string}" if not cargo_string_is_dummy else ""
+
+                    current_gfx_path = gfx_path if cargo_string_is_dummy else f"{gfx_path[:-4]}_{cargo_string}.png"
+
+                    nml_code.append(
+                        get_spriteset(
+                            vid=vid,
+                            gfx_path=current_gfx_path,
+                            comment_type=comment,
+                            template_name_amendment="2cc_wagons",
+                            template_x=x_coord,
+                            template_y=y_coord,
+                            spritename_suffix=s_suffix,
+                        )
+                    )
+
+                    sprite_name = f"spriteset_{vid}_{s_suffix}"
+                    created_sprites.append(sprite_name)
+
+                # Generate spritegroup per part and livery
+                group_block = get_spritegroup_with_loading_states(
+                    vid=f"{vid}_{part_prefix}",
+                    livery_num=livery_num,
+                    created_sprites=created_sprites,
+                    cargo_string=cargo_string,
+                    cargo_string_is_dummy=cargo_string_is_dummy,
+                    has_loading_states=(loading_state_count > 0),
+                    has_driving_states=False,
+                    cargo_with_driving_state=[],
+                )
+                nml_code.append(group_block)
+
+            # Generate random livery selector switch per part
+            part_selector_name = (
+                f"switch_{vid}_{part_prefix}_livery"
+                if cargo_string_is_dummy
+                else f"switch_{vid}_{cargo_string}_{part_prefix}_livery"
+            )
+
             nml_code.append(
-                get_vehicle(
-                    vid=vid,
-                    gfx_path=gfx_path,
-                    title_comment=sprite_name,
-                    use_comment_as_spritename_suffix=True,
-                    dont_show_main_comment=True,
-                    template_suffix="2cc_wagons",
-                    vehicle_x=coords[0],
-                    vehicle_y=coords[1],
+                get_random_livery_selector(
+                    vid=f"{vid}_{part_prefix}",
+                    cargo_string=cargo_string,
+                    selector_name=part_selector_name,
+                    list_length=4,
+                    cargo_string_is_dummy=cargo_string_is_dummy,
+                    has_loading_states=(loading_state_count > 0),
                 )
             )
 
-        else:
-            # 1. Generate the spriteset for the current livery (e.g., middle_L1)
-            nml_code.append(
-                get_vehicle(
-                    vid=vid,
-                    gfx_path=gfx_path,
-                    title_comment=sprite_name,
-                    use_comment_as_spritename_suffix=True,
-                    dont_show_main_comment=True,
-                    template_suffix="2cc_wagons",
-                    vehicle_x=coords[0],
-                    vehicle_y=coords[1],
-                )
+            # Record switch ID for graphics routing
+            part_switches[part_prefix] = part_selector_name
+
+        # Route graphics positions (0=front, 1=middle, 2=back)
+        nml_code.append(
+            graphics_helpers.get_articulated_graphics_switch(
+                vid=vid,
+                cargo_string=cargo_string,
+                cargo_string_is_dummy=cargo_string_is_dummy,
+                part_switches=part_switches,
             )
-
-            # 2. Build the specific list for THIS livery's spritegroup
-            # We want: [spriteset_mu_vid_middle_empty, spriteset_mu_vid_middle_LX, spriteset_mu_vid_middle_LX]
-
-            # The 'middle_empty' name is constant
-            empty_name = f"spriteset_{vid}_middle_empty"
-            # The current livery name (e.g., spriteset_mu_vid_middle_L1)
-            current_livery_name = f"spriteset_{vid}_{sprite_name}"
-
-            # This list will be used by your helper method to create the [First, Last, Last] pattern
-            # Or you can pass them directly if your helper supports it.
-            # Here we provide the two unique pieces needed:
-            # Twice.
-            current_group_sprites = [
-                empty_name,
-                current_livery_name,
-                current_livery_name,
-            ]
-
-            # 3. Call your spritegroup helper
-            nml_code.append(
-                get_spritegroup_without_loading_states(
-                    vid=vid,
-                    livery_num=sprite_name[-1],  # extracts '1' from 'middle_L1'
-                    created_sprites=current_group_sprites,
-                    # group_name = f"spritegroup_{vid}_{cargo_string}_l{livery_num}"
-                    cargo_string="middle",
-                    cargo_string_is_dummy=False,
-                )
-            )
-
-    # 4. Final Random Switch
-    nml_code.append(
-        get_random_livery_selector(
-            vid=vid,
-            selector_name=f"switch_{vid}_middle_livery",
-            # Yeah that's not a cargo but alas.
-            cargo_string="middle",
-            cargo_string_is_dummy=False,
-            has_loading_states=True,  # Force True
-            list_length=4,
         )
-    )
 
-    nml_code.append(
-        graphics_helpers.get_switch_vid(
-            vid=vid,
-            position_in_vehid_chain=3,
-            first_item_location=1,
-            first_item_task="switch",
-            first_item_word="middle_livery",
-            second_item_location=2,
-            second_item_task="spriteset",
-            second_item_word="back",
-            third_item_location=None,
-            third_item_task="spriteset",
-            third_item_word="front",
-        )
-    )
-
+    # Spawning callback switch (Adds 2 extra parts for a total 3-part train)
     nml_code.append(graphics_helpers.get_articulated_return(vid=vid, endvalue=2))
 
     return "\n".join(nml_code)
