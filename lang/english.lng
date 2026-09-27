@@ -2,7 +2,7 @@
 
 # Hardcoded Strings
 STR_GRF_NAME                                                      :{TITLE}
-STR_GRF_DESCRIPTION                                               :{SILVER}2cc Trains of the World in NML {}{}(c)2ccts Revival {}License GPLv2 or higher. {}See readme for details.{}{SILVER}Build: 2026-09-26-23:45:23
+STR_GRF_DESCRIPTION                                               :{SILVER}2cc Trains of the World in NML {}{}(c)2ccts Revival {}License GPLv2 or higher. {}See readme for details.{}{SILVER}Build: 2026-09-27-14:05:30
 STR_GRF_URL                                                       :https://github.com/nemethviktor/2ccts_revival
 STR_USED_WITH_DYNAMIC_ENGINES                                     :dynamic_engines = true (setting in openttd.cfg)
 STR_ERROR_REGION                                                  :No regions enabled, {STRING} has been disabled
@@ -767,6 +767,7 @@ str_diesel_ltz_te10ut                                             :LTZ 2TE10Ut (
 str_diesel_faur_l45h                                              :Faur L45H (Diesel)
 str_diesel_kmz_tu7_tgm40                                          :KMZ TU7/TGM40 (Diesel)
 str_diesel_siemens_vectron_de                                     :Siemens Vectron DE (Diesel)
+str_diesel_ltz_te166                                              :LTZ 2TE116 (Diesel)
 
 # Dieselrailbus
 str_rbd_aec_railmotor_rm1                                         :AEC railmotor RM1 (Diesel Railbus)

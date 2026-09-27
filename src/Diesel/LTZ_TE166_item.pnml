@@ -1,28 +1,28 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
-// Template: TPL_32D
+// Template: TPL_03F
 // CargoDef: NONE
-// ID: 5203
+// ID: 5208
 
-// Data from: https://zh.wikipedia.org/wiki/2TE126%E5%9E%8B%E6%9F%B4%E6%B2%B9%E6%9C%BA%E8%BD%A6
+// Data from: https://zh.wikipedia.org/wiki/2TE116%E5%9E%8B%E6%9F%B4%E6%B2%B9%E6%9C%BA%E8%BD%A6
 
-item(FEAT_TRAINS, item_diesel_ltz_te126) {
+item(FEAT_TRAINS, item_diesel_ltz_te166) {
     property {
-        name: string(str_diesel_ltz_te126);
+        name: string(str_diesel_ltz_te166);
         climates_available: (((param_region_asia || param_region_eastern_europe) || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
-        introduction_date: date(1988,1,1);
+        introduction_date: date(1971,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
-        vehicle_life: 40;
+        vehicle_life: 59;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 100.96;
-        running_cost_factor: 81.71;
+        cost_factor: 69.62;
+        running_cost_factor: 61.55;
         speed: 100 km/h;
-        power: 6000 hp;
+        power: 3060 hp;
         cargo_capacity: 0;
-        weight: 230 ton;
-        tractive_effort_coefficient: 0.208;
+        weight: 138 ton;
+        tractive_effort_coefficient: 0.183;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -33,7 +33,7 @@ item(FEAT_TRAINS, item_diesel_ltz_te126) {
         misc_flags: bitmask(TRAIN_FLAG_2CC);
         refit_cost: 0;
         ai_special_flag: AI_FLAG_PASSENGER | AI_FLAG_CARGO;
-        track_type: [BROAD_GAUGE_RAILTYPE_NONE];
+        track_type: [STANDARD_GAUGE_RAILTYPE_NONE, BROAD_GAUGE_RAILTYPE_NONE];
         running_cost_base: RUNNING_COST_DIESEL;
         engine_class: ENGINE_CLASS_DIESEL;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 0, DISABLE_WAGON_POWER);
@@ -44,15 +44,15 @@ item(FEAT_TRAINS, item_diesel_ltz_te126) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/asia", "region/europe/eastern", "power/diesel", "role/heavy_freight"];
+	badges: ["region/asia", "region/europe/eastern", "power/diesel", "role/freight"];
 
     }
     graphics {
-        purchase: spriteset_diesel_ltz_te126_purchase;
+        purchase: spriteset_diesel_ltz_te166_purchase;
         // no 'visual_effect' or 'visual_effect_and_powered'
-        length: switch_diesel_ltz_te126_length;
-        articulated_part: switch_diesel_ltz_te126_articulated;
+        // no 'length'
+        // no 'articulated_part'
         can_attach_wagon: switch_can_attach_vehicle;
-        default: switch_diesel_ltz_te126_position;
+        default: switch_diesel_ltz_te166_position;
     }
 }

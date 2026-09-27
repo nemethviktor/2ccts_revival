@@ -1149,6 +1149,9 @@
 #include "src/Diesel/Siemens_Vectron_DE_graphics.pnml"
 #include "src/Diesel/Siemens_Vectron_DE_item.pnml"
 
+#include "src/Diesel/LTZ_TE166_graphics.pnml"
+#include "src/Diesel/LTZ_TE166_item.pnml"
+
 
 //// EMU
 #include "src/EMU/Werkspoor_Mat24_graphics.pnml"

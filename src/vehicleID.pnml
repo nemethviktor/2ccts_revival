@@ -2427,7 +2427,7 @@ item(FEAT_TRAINS, item_diesel_ltz_te10ut, 5204) {}
 item(FEAT_TRAINS, item_diesel_faur_l45h, 5205) {}
 item(FEAT_TRAINS, item_diesel_kmz_tu7_tgm40, 5206) {}
 item(FEAT_TRAINS, item_diesel_siemens_vectron_de, 5207) {}
-// 5208 free
+item(FEAT_TRAINS, item_diesel_ltz_te166, 5208) {}
 // 5209 free
 // 5210 free
 // 5211 free

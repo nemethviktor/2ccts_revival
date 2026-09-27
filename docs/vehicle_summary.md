@@ -220,6 +220,7 @@
 | ![HCP 301D](vehicle_graphics/str_diesel_hcp_301d.png) | HCP 301D | 1970 | 120 / 74 | 1750 / 1304 | Universal | 0 | STANDARD_NONE | Africa, Eastern Europe | No |
 | ![Fiat Grandi Motori D.345](vehicle_graphics/str_diesel_fiat_grandi_motori_d_345.png) | Fiat Grandi Motori D.345 | 1971 | 130 / 80 | 1010 / 753 | Universal | 0 | STANDARD_NONE | Southern Europe | No |
 | ![KMZ TU7/TGM40](vehicle_graphics/str_diesel_kmz_tu7_tgm40.png) | KMZ TU7/TGM40 | 1971 | 40 / 24 | 400 / 298 | Shunting | 0 | STANDARD_NONE, NARROW_NONE, BROAD_NONE | Asia, Northern Europe, Eastern Europe, Western Europe, Southern Europe | No |
+| ![LTZ 2TE116](vehicle_graphics/str_diesel_ltz_te166.png) | LTZ 2TE116 | 1971 | 100 / 62 | 3060 / 2281 | Freight | 0 | STANDARD_NONE, BROAD_NONE | Asia, Eastern Europe | No |
 | ![EMD F40PH](vehicle_graphics/str_diesel_emd_f40ph.png) | EMD F40PH | 1972 | 165 / 102 | 3000 / 2236 | Express | 0 | STANDARD_NONE | North America, South America | No |
 | ![EMD G26](vehicle_graphics/str_diesel_emd_g26.png) | EMD G26 | 1972 | 124 / 77 | 2200 / 1640 | Universal | 0 | STANDARD_NONE, NARROW_NONE | Africa, Asia, Eastern Europe, Oceania | No |
 | ![EMD/NOHAB J30C-2DSB MZ III](vehicle_graphics/str_diesel_emd_nohab_j30c_2dsb_mz_iii.png) | EMD/NOHAB J30C-2DSB MZ III | 1972 | 165 / 102 | 3845 / 2866 | Express | 0 | STANDARD_NONE | Northern Europe, Oceania | No |
@@ -255,10 +256,10 @@
 | ![FAUR LDE1300](vehicle_graphics/str_diesel_faur_lde1300.png) | FAUR LDE1300 | 1985 | 100 / 62 | 1015 / 756 | Light Freight | 0 | STANDARD_NONE | Eastern Europe | No |
 | ![Valmet Oy Dr16](vehicle_graphics/str_diesel_valmet_oy_dr16.png) | Valmet Oy Dr16 | 1985 | 140 / 86 | 2250 / 1677 | Universal | 0 | BROAD_NONE | Northern Europe | No |
 | ![GE C40-8 'Dash-8'](vehicle_graphics/str_diesel_ge_c40_8_dash_8.png) | GE C40-8 'Dash-8' | 1987 | 113 / 70 | 4000 / 2982 | Heavy Freight | 0 | STANDARD_NONE, BROAD_NONE | North America, South America | No |
-| ![LTZ 2TE126](vehicle_graphics/str_diesel_ltz_te126.png) | LTZ 2TE126 | 1987 | 100 / 62 | 3017 / 2249 | Freight | 0 | BROAD_NONE | Asia, Eastern Europe | No |
 | ![EMD F59PH](vehicle_graphics/str_diesel_emd_f59ph.png) | EMD F59PH | 1988 | 177 / 109 | 3000 / 2236 | Express | 0 | STANDARD_NONE | North America | No |
 | ![EMD/Clyde AT42C ](vehicle_graphics/str_diesel_emd_clyde_at42c_.png) | EMD/Clyde AT42C  | 1988 | 153 / 95 | 3030 / 2259 | Freight | 0 | STANDARD_NONE | Oceania | No |
 | ![Kolomna TEP80](vehicle_graphics/str_diesel_kolomena_tep80.png) | Kolomna TEP80 | 1988 | 160 / 99 | 6000 / 4473 | Express | 0 | BROAD_NONE | Asia, Eastern Europe | No |
+| ![LTZ 2TE126](vehicle_graphics/str_diesel_ltz_te126.png) | LTZ 2TE126 | 1988 | 100 / 62 | 6000 / 4473 | Heavy Freight | 0 | BROAD_NONE | Asia, Eastern Europe | No |
 | ![MaK DE 6400](vehicle_graphics/str_diesel_mak_de_6400.png) | MaK DE 6400 | 1988 | 120 / 74 | 1580 / 1178 | Universal | 0 | STANDARD_NONE | Eastern Europe, Western Europe | No |
 | ![Brush Class 60](vehicle_graphics/str_diesel_brush_class_60.png) | Brush Class 60 | 1989 | 97 / 60 | 3100 / 2311 | Freight | 0 | STANDARD_NONE | Northern Europe | No |
 | ![GE/Goninan CM25-8](vehicle_graphics/str_diesel_ge_goninan_cm25_8.png) | GE/Goninan CM25-8 | 1989 | 90 / 55 | 2450 / 1826 | Universal | 0 | NARROW_NONE | Oceania | No |

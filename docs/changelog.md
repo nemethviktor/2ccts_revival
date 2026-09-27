@@ -4,7 +4,7 @@
 
 ### 4.1 [2026xxxx]
 - CODE CHANGES:
-  - **Warning:** there is a likelihood that this version is not savegame compatible with 4.0 if you've used the `CargoEMU` or Maglev cargo (Gen7M) or pax (Coaches) classes. I had to re-number those IDs because they were >`16k` and as such broke the `articulated` callbacks.
+  - **Warning:** there is a likelihood that this version is not savegame compatible with 4.0 if you've used the `CargoEMU` or Maglev (Gen7M Wagons or Coaches) classes. I had to re-number those IDs because they were >`16k` and as such broke the `articulated` callbacks.
   - `Dual mode` badges and functionality are now available. "Current" Running cost, power and speed values are take from real values for the various operating modes. (ie "is it running on ELRL right now or not?")
   - Also changed some naming logic whereby special power types (dual mode, gas turbine) would no longer be doubled as "Diesel, Gas Turbine" or "Electric, Dual Mode".
   - Various changes to make build run more efficiently.
@@ -17,6 +17,7 @@
   - `Siemens Vectron DE`
   - `Siemens Vectron Dual Mode`
   - `Tours/Chapelon 2-12-0 SNCF 160A`
+  - `LTZ 2TE116`  
 - VEHICLES CHANGES:
   - Various visual-only sprite changes.
   - Vehicle running costs have been re-balanced. Generally wagons and coaches have been a lot less expensive than before but as a counterbalance locos are now more expensive to run based on actual performance values specific to propulsion type.
@@ -37,6 +38,7 @@
   - `Hitachi/Kawasaki Shinkansen Series 100` speed increased to 240 km/h
   - `Hitachi Shinkansen Series 700` speed increased to 285 km/h
   - `Faur A20DP` is now a railbus. This might break your game if you had that in an existing save.
+  - `LTZ 2TE126` is now 6000hp each (can be doubled) - I had misread the source and confused it with the 116 version.
 
 ## 4.0
 
