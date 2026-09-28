@@ -1,12 +1,12 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
-// Template: TPL_03B
+// Template: TPL_03C
 // CargoDef: NONE
 // ID: 5072
 
 // PURCHASE
-spriteset(spriteset_diesel_queensland_railways_dl_purchase, "gfx/diesel/queensland_railways_dl.png") {template_purchase(1, 64)}
+spriteset(spriteset_diesel_queensland_railways_dl_purchase, "gfx/diesel/queensland_railways_dl.png") {template_purchase(1, 96)}
 
 
 // VEHICLE

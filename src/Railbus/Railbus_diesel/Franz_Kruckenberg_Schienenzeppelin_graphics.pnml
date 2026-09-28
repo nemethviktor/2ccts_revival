@@ -1,12 +1,12 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
-// Template: TPL_03B
+// Template: TPL_03C
 // CargoDef: PASSENGERS
 // ID: 2026
 
 // PURCHASE
-spriteset(spriteset_rbd_franz_kruckenberg_schienenzeppelin_purchase, "gfx/railbus/railbus_diesel/franz_kruckenberg_schienenzeppelin.png") {template_purchase(1, 64)}
+spriteset(spriteset_rbd_franz_kruckenberg_schienenzeppelin_purchase, "gfx/railbus/railbus_diesel/franz_kruckenberg_schienenzeppelin.png") {template_purchase(1, 96)}
 
 
 // VEHICLE

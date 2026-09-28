@@ -1,7 +1,7 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
-// Template: TPL_01D
+// Template: TPL_01B
 // CargoDef: PASSENGERS_ONLY
 // ID: 14003
 
@@ -11,4 +11,4 @@ spriteset(spriteset_singlemtro_berlin_u_bahn_c_ii_purchase, "gfx/single_metro/be
 
 // VEHICLE
 /// Engine
-spriteset(spriteset_singlemtro_berlin_u_bahn_c_ii, "gfx/single_metro/berlin_u_bahn_c_ii.png") {template_2cc_railbus_general(1, 1)}
+spriteset(spriteset_singlemtro_berlin_u_bahn_c_ii, "gfx/single_metro/berlin_u_bahn_c_ii.png") {template_2cc_engines_general(1, 1)}

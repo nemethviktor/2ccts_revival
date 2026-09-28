@@ -5,31 +5,31 @@
 // CargoDef: PASSENGERS
 // ID: 7054
 
-// Data from: https://www.academia.edu/24199573/The_Ganz_Jendrassik_Diesel_Rail_Cars_in_Argentina
+// Data from: https://hu.wikipedia.org/wiki/M%C3%81V_Hargita_t%C3%ADpus
 
 // Notes:
-//// WEB: https://www.academia.edu/24199573/The_Ganz_Jendrassik_Diesel_Rail_Cars_in_Argentina -- This is in hungarian and is an academic text, 60+ pages
+//// WEB: https://hu.wikipedia.org/wiki/M%C3%81V_Hargita_t%C3%ADpus -- Technically these are neither Hargita nor Arpad, these are predecessors to Hargita
 //// TE_STARTING_KN: 38 -- Guess (also remember this being a DMU means the game doubles the value)
 
 
 // Cargo capacity
 
-    switch(FEAT_TRAINS, SELF, switch_dmu_ganz_arpad_bariloche_dmu_capacity_engine, cargo_classes) { \
+    switch(FEAT_TRAINS, SELF, switch_dmu_ganz_bariloche_dmu_capacity_engine, cargo_classes) { \
         bitmask(CC_MAIL): 55/2; \
         bitmask(CC_ARMOURED): 55/4; \
         55; \
     }
 
 
-    switch(FEAT_TRAINS, SELF, switch_dmu_ganz_arpad_bariloche_dmu_capacity_wagon, cargo_classes) { \
+    switch(FEAT_TRAINS, SELF, switch_dmu_ganz_bariloche_dmu_capacity_wagon, cargo_classes) { \
         bitmask(CC_MAIL): 55/2; \
         bitmask(CC_ARMOURED): 55/4; \
         55; \
     }
 
-item(FEAT_TRAINS, item_dmu_ganz_arpad_bariloche_dmu) {
+item(FEAT_TRAINS, item_dmu_ganz_bariloche_dmu) {
     property {
-        name: string(str_dmu_ganz_arpad_bariloche_dmu);
+        name: string(str_dmu_ganz_bariloche_dmu);
         climates_available: ((param_region_south_america || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1938,1,1);
         model_life: 45;
@@ -68,13 +68,13 @@ item(FEAT_TRAINS, item_dmu_ganz_arpad_bariloche_dmu) {
 
     }
     graphics {
-        purchase: spriteset_dmu_ganz_arpad_bariloche_dmu_purchase;
-        cargo_capacity: switch_dmu_ganz_arpad_bariloche_dmu_capacity_engine;
-        visual_effect_and_powered: switch_dmu_ganz_arpad_bariloche_dmu_visual_effect_and_powered;
+        purchase: spriteset_dmu_ganz_bariloche_dmu_purchase;
+        cargo_capacity: switch_dmu_ganz_bariloche_dmu_capacity_engine;
+        visual_effect_and_powered: switch_dmu_ganz_bariloche_dmu_visual_effect_and_powered;
         // no 'length'
         // no 'articulated_part'
         can_attach_wagon: switch_can_attach_vehicle;
-        default: switch_dmu_ganz_arpad_bariloche_dmu_reversed;
+        default: switch_dmu_ganz_bariloche_dmu_reversed;
     }
     livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
@@ -82,7 +82,7 @@ item(FEAT_TRAINS, item_dmu_ganz_arpad_bariloche_dmu) {
         weight: int(46*1/2);
         cargo_capacity: 55;
         length: 8;
-        default: switch_dmu_ganz_arpad_bariloche_dmu_cargo_selection;
+        default: switch_dmu_ganz_bariloche_dmu_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
@@ -92,6 +92,6 @@ item(FEAT_TRAINS, item_dmu_ganz_arpad_bariloche_dmu) {
         cargo_capacity: 55;
         tractive_effort_coefficient: int(0.084*10*46);
         length: 8;
-        default: switch_dmu_ganz_arpad_bariloche_dmu_cargo_selection;
+        default: switch_dmu_ganz_bariloche_dmu_cargo_selection;
     }
 }

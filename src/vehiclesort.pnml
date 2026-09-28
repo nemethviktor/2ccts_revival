@@ -376,7 +376,6 @@ item_diesel_emd_clyde_jt42c_nsw82, /*Year: 1982*/ \
 item_diesel_emd_clyde_gl26c_2, /*Year: 1982*/ \
 item_diesel_ugofe_gm_emd_j16cw_ac, /*Year: 1984*/ \
 item_diesel_qishuyan_df8, /*Year: 1984*/ \
-item_diesel_emd_clyde_jt26c_2ss, /*Year: 1984*/ \
 item_diesel_ge_c39_8__fcca_, /*Year: 1984*/ \
 item_diesel_emd_clyde_jt26c_2ss_v_line_g, /*Year: 1984*/ \
 item_diesel_crrc_dalian_df4, /*Year: 1984*/ \
@@ -597,7 +596,7 @@ item_electric_stadler_he_4_4, /*Year: 2012*/ \
 item_electric_crrc_dalian_hxd3d, /*Year: 2012*/ \
 item_electric_zelc_20e_china_doll, /*Year: 2013*/ \
 item_electric_alstom_kz8a, /*Year: 2014*/ \
-item_electric_siemens_vectron, /*Year: 2015*/ \
+item_electric_siemens_vectron_ms, /*Year: 2015*/ \
 item_electric_pesa_111ms, /*Year: 2016*/ \
 item_electric_trc_e6800, /*Year: 2024*/ \
 item_electric_siemens_vectron_dual_mode, /*Year: 2026*/ \
@@ -607,7 +606,7 @@ item_electric_acme_corp__hs002, /*Year: 2051*/
 #define SORTING_DMU \
 item_dmu_lhb_vt_04_0_flying_hamburger, /*Year: 1932*/ \
 item_dmu_harland___wolf_silver_city_comet, /*Year: 1937*/ \
-item_dmu_ganz_arpad_bariloche_dmu, /*Year: 1938*/ \
+item_dmu_ganz_bariloche_dmu, /*Year: 1938*/ \
 item_dmu_ganz_hargita_m440, /*Year: 1944*/ \
 item_dmu_tatra_m131, /*Year: 1948*/ \
 item_dmu_nswgr_600_700, /*Year: 1949*/ \
@@ -618,7 +617,7 @@ item_dmu_fiat_aln_442_448, /*Year: 1955*/ \
 item_dmu_man_lhb_vt11_5___db_601_tee, /*Year: 1957*/ \
 item_dmu_werkspoor_plan_u_de_iii, /*Year: 1960*/ \
 item_dmu_metro_cammell_251_blue_pullman, /*Year: 1960*/ \
-item_dmu_ganz_arpad_cmu_4701_transandino, /*Year: 1960*/ \
+item_dmu_ganz_cmu_4701_transandino, /*Year: 1960*/ \
 item_dmu_fiat_tcdd_mt_5500, /*Year: 1961*/ \
 item_dmu_comeng_1100_railcar, /*Year: 1961*/ \
 item_dmu_rvr_dr1a, /*Year: 1963*/ \
@@ -641,7 +640,6 @@ item_dmu_mtm_2400_apollos, /*Year: 1983*/ \
 item_dmu_br_150_0_sprinter, /*Year: 1984*/ \
 item_dmu_brel_141_pacer, /*Year: 1984*/ \
 item_dmu_thai_comeng_xpt_concept, /*Year: 1985*/ \
-item_dmu_abb_ic3__israel_, /*Year: 1986*/ \
 item_dmu_duwag_628_2, /*Year: 1986*/ \
 item_dmu_comeng_3100, /*Year: 1987*/ \
 item_dmu_abb_ic3_y2, /*Year: 1990*/ \
@@ -746,7 +744,6 @@ item_emu_bombarier_alstom_acela_express, /*Year: 1999*/ \
 item_emu_siemens_velero, /*Year: 2000*/ \
 item_emu_caf_alstom_class_120, /*Year: 2001*/ \
 item_emu_itochu_kinki_kawasaki_sp1900, /*Year: 2001*/ \
-item_emu_alstom_xtrapolis_100_melbourne, /*Year: 2003*/ \
 item_emu_stadler_rabe_523_flirt, /*Year: 2004*/ \
 item_emu_siemens_desiro_bdz, /*Year: 2005*/ \
 item_emu_alstom_xtrapolis_100, /*Year: 2005*/ \

@@ -46,6 +46,7 @@ item(FEAT_TRAINS, item_emu_alstom_xtrapolis_100_melbourne) {
         non_refittable_cargo_classes: 0;
         cargo_age_period: 185;
         misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
+        variant_group: 8101;
         refit_cost: 0;
         ai_special_flag: AI_FLAG_PASSENGER;
         track_type: [BROAD_GAUGE_RAILTYPE_1500V];

@@ -14,22 +14,22 @@
 
 // Cargo capacity
 
-    switch(FEAT_TRAINS, SELF, switch_dmu_ganz_arpad_cmu_4701_transandino_capacity_engine, cargo_classes) { \
+    switch(FEAT_TRAINS, SELF, switch_dmu_ganz_cmu_4701_transandino_capacity_engine, cargo_classes) { \
         bitmask(CC_MAIL): 55/2; \
         bitmask(CC_ARMOURED): 55/4; \
         55; \
     }
 
 
-    switch(FEAT_TRAINS, SELF, switch_dmu_ganz_arpad_cmu_4701_transandino_capacity_wagon, cargo_classes) { \
+    switch(FEAT_TRAINS, SELF, switch_dmu_ganz_cmu_4701_transandino_capacity_wagon, cargo_classes) { \
         bitmask(CC_MAIL): 55/2; \
         bitmask(CC_ARMOURED): 55/4; \
         55; \
     }
 
-item(FEAT_TRAINS, item_dmu_ganz_arpad_cmu_4701_transandino) {
+item(FEAT_TRAINS, item_dmu_ganz_cmu_4701_transandino) {
     property {
-        name: string(str_dmu_ganz_arpad_cmu_4701_transandino);
+        name: string(str_dmu_ganz_cmu_4701_transandino);
         climates_available: ((param_region_south_america || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1960,1,1);
         model_life: 45;
@@ -68,13 +68,13 @@ item(FEAT_TRAINS, item_dmu_ganz_arpad_cmu_4701_transandino) {
 
     }
     graphics {
-        purchase: spriteset_dmu_ganz_arpad_cmu_4701_transandino_purchase;
-        cargo_capacity: switch_dmu_ganz_arpad_cmu_4701_transandino_capacity_engine;
-        visual_effect_and_powered: switch_dmu_ganz_arpad_cmu_4701_transandino_visual_effect_and_powered;
+        purchase: spriteset_dmu_ganz_cmu_4701_transandino_purchase;
+        cargo_capacity: switch_dmu_ganz_cmu_4701_transandino_capacity_engine;
+        visual_effect_and_powered: switch_dmu_ganz_cmu_4701_transandino_visual_effect_and_powered;
         // no 'length'
         // no 'articulated_part'
         can_attach_wagon: switch_can_attach_vehicle;
-        default: switch_dmu_ganz_arpad_cmu_4701_transandino_reversed;
+        default: switch_dmu_ganz_cmu_4701_transandino_reversed;
     }
     livery_override (item_mu_mu_wagon_unpowered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
@@ -82,7 +82,7 @@ item(FEAT_TRAINS, item_dmu_ganz_arpad_cmu_4701_transandino) {
         weight: int(46*1/2);
         cargo_capacity: 55;
         length: 8;
-        default: switch_dmu_ganz_arpad_cmu_4701_transandino_cargo_selection;
+        default: switch_dmu_ganz_cmu_4701_transandino_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
@@ -92,6 +92,6 @@ item(FEAT_TRAINS, item_dmu_ganz_arpad_cmu_4701_transandino) {
         cargo_capacity: 55;
         tractive_effort_coefficient: int(0.084*10*46);
         length: 8;
-        default: switch_dmu_ganz_arpad_cmu_4701_transandino_cargo_selection;
+        default: switch_dmu_ganz_cmu_4701_transandino_cargo_selection;
     }
 }

@@ -1,28 +1,28 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
-// Template: TPL_01A
+// Template: TPL_01G
 // CargoDef: NONE
-// ID: 6174
+// ID: 6176
 
 // Data from: https://en.wikipedia.org/wiki/Vectron_(locomotive)
 
 item(FEAT_TRAINS, item_electric_siemens_vectron) {
     property {
         name: string(str_electric_siemens_vectron);
-        climates_available: (((param_region_northern_europe || param_region_eastern_europe || param_region_southern_europe || param_region_western_europe) || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
-        introduction_date: date(2015,1,1);
+        climates_available: ((0 || 0) && 1) ? ALL_CLIMATES : NO_CLIMATE;
+        introduction_date: date(2000,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 45;
         retire_early: 20;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
-        cost_factor: 101.87;
-        running_cost_factor: 98.43;
-        speed: 160 km/h;
-        power: 8582 hp;
+        cost_factor: 0.0;
+        running_cost_factor: 1.0;
+        speed: 0 km/h;
+        power: 1 hp;
         cargo_capacity: 0;
-        weight: 86 ton;
-        tractive_effort_coefficient: 0.356;
+        weight: 0 ton;
+        tractive_effort_coefficient: 0.0;
         air_drag_coefficient: 0;
 
         reliability_decay: 20;
@@ -33,19 +33,15 @@ item(FEAT_TRAINS, item_electric_siemens_vectron) {
         misc_flags: bitmask(TRAIN_FLAG_2CC);
         refit_cost: 0;
         ai_special_flag: AI_FLAG_PASSENGER | AI_FLAG_CARGO;
-        track_type: [STANDARD_GAUGE_RAILTYPE_OHLE, BROAD_GAUGE_RAILTYPE_25KV];
+        track_type: [STANDARD_GAUGE_RAILTYPE_OHLE];
         running_cost_base: RUNNING_COST_ELECTRIC;
         engine_class: ENGINE_CLASS_ELECTRIC;
         visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 0, DISABLE_WAGON_POWER);
 
         sprite_id: SPRITE_ID_NEW_TRAIN;
-        dual_headed: 0;
         length: 8;
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
-
-	badges: ["region/europe/southern", "region/europe/western", "region/europe/eastern", "region/europe/northern", "power/electric/ac", "role/express"];
-
     }
     graphics {
         purchase: spriteset_electric_siemens_vectron_purchase;

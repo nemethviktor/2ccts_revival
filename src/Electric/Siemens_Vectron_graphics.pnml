@@ -1,9 +1,9 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
-// Template: TPL_01A
+// Template: TPL_01G
 // CargoDef: NONE
-// ID: 6174
+// ID: 6176
 
 // PURCHASE
 spriteset(spriteset_electric_siemens_vectron_purchase, "gfx/electric/siemens_vectron.png") {template_purchase(1, 64)}

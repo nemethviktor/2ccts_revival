@@ -2308,7 +2308,7 @@ item(FEAT_TRAINS, item_diesel_emd_sd18, 5085) {}
 item(FEAT_TRAINS, item_diesel_fiat_grandi_motori_d_345, 5086) {}
 item(FEAT_TRAINS, item_diesel_henschel_di4, 5087) {}
 item(FEAT_TRAINS, item_diesel_qishuyan_df8, 5088) {}
-item(FEAT_TRAINS, item_diesel_emd_clyde_jt26c_2ss, 5089) {}
+// item(FEAT_TRAINS, item_diesel_emd_clyde_jt26c_2ss, 5089) {} // vehicle is excluded
 item(FEAT_TRAINS, item_diesel_brush_class_60, 5090) {}
 item(FEAT_TRAINS, item_diesel_ge_goninan_cm25_8, 5091) {}
 // item(FEAT_TRAINS, item_diesel_emd_sd70acs, 5092) {} // vehicle is excluded
@@ -3396,7 +3396,7 @@ item(FEAT_TRAINS, item_electric_alco_ge_t_motor, 6170) {}
 item(FEAT_TRAINS, item_electric_altoona_works_dd1, 6171) {}
 item(FEAT_TRAINS, item_electric_alsthom_cc_7100, 6172) {}
 item(FEAT_TRAINS, item_electric_alsthom_f_series, 6173) {}
-item(FEAT_TRAINS, item_electric_siemens_vectron, 6174) {}
+item(FEAT_TRAINS, item_electric_siemens_vectron_ms, 6174) {}
 item(FEAT_TRAINS, item_electric_siemens_vectron_dual_mode, 6175) {}
 // 6176 free
 // 6177 free
@@ -4254,7 +4254,7 @@ item(FEAT_TRAINS, item_dmu_fuji_kiha_181, 7025) {}
 item(FEAT_TRAINS, item_dmu_vagonka_studenka_814, 7026) {}
 item(FEAT_TRAINS, item_dmu_br_150_0_sprinter, 7027) {}
 item(FEAT_TRAINS, item_dmu_brel_141_pacer, 7028) {}
-item(FEAT_TRAINS, item_dmu_abb_ic3__israel_, 7029) {}
+// item(FEAT_TRAINS, item_dmu_abb_ic3__israel_, 7029) {} // vehicle is excluded
 item(FEAT_TRAINS, item_dmu_comeng_3100, 7030) {}
 item(FEAT_TRAINS, item_dmu_abb_xplorer, 7031) {}
 item(FEAT_TRAINS, item_dmu_niigata_transys_kiha_189, 7032) {}
@@ -4279,8 +4279,8 @@ item(FEAT_TRAINS, item_dmu_cnr_tangshan_ghana_demu, 7050) {}
 item(FEAT_TRAINS, item_dmu_downer_edi_hitachi_tilt_train, 7051) {}
 item(FEAT_TRAINS, item_dmu_nippon_sharyo_1000_series, 7052) {}
 item(FEAT_TRAINS, item_dmu_materfer_cmm_400_2, 7053) {}
-item(FEAT_TRAINS, item_dmu_ganz_arpad_bariloche_dmu, 7054) {}
-item(FEAT_TRAINS, item_dmu_ganz_arpad_cmu_4701_transandino, 7055) {}
+item(FEAT_TRAINS, item_dmu_ganz_bariloche_dmu, 7054) {}
+item(FEAT_TRAINS, item_dmu_ganz_cmu_4701_transandino, 7055) {}
 item(FEAT_TRAINS, item_dmu_comeng_1100_railcar, 7056) {}
 item(FEAT_TRAINS, item_dmu_thai_comeng_xpt_concept, 7057) {}
 item(FEAT_TRAINS, item_dmu_comeng_nsw_xpt, 7058) {}
@@ -5315,7 +5315,7 @@ item(FEAT_TRAINS, item_emu_goninan_tangara_t_set, 8083) {}
 item(FEAT_TRAINS, item_emu_comeng_w_class_sputnik, 8084) {}
 item(FEAT_TRAINS, item_emu_leeds_clyde_standard_emu, 8085) {}
 item(FEAT_TRAINS, item_emu_nswgr_tulloch_emu, 8086) {}
-item(FEAT_TRAINS, item_emu_alstom_xtrapolis_100_melbourne, 8087) {}
+// item(FEAT_TRAINS, item_emu_alstom_xtrapolis_100_melbourne, 8087) {} // vehicle is excluded
 item(FEAT_TRAINS, item_emu_ganz_mavag_em_et, 8088) {}
 item(FEAT_TRAINS, item_emu_eec_dm_emu, 8089) {}
 item(FEAT_TRAINS, item_emu_hyundai_rotem__mitsui_matangi, 8090) {}

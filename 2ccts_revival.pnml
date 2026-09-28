@@ -475,9 +475,6 @@
 #include "src/DMU/BREL_141_Pacer_graphics.pnml"
 #include "src/DMU/BREL_141_Pacer_item.pnml"
 
-#include "src/DMU/ABB_IC3__Israel__graphics.pnml"
-#include "src/DMU/ABB_IC3__Israel__item.pnml"
-
 #include "src/DMU/Comeng_3100_graphics.pnml"
 #include "src/DMU/Comeng_3100_item.pnml"
 
@@ -547,11 +544,11 @@
 #include "src/DMU/Materfer_CMM_400_2_graphics.pnml"
 #include "src/DMU/Materfer_CMM_400_2_item.pnml"
 
-#include "src/DMU/Ganz_Arpad_Bariloche_DMU_graphics.pnml"
-#include "src/DMU/Ganz_Arpad_Bariloche_DMU_item.pnml"
+#include "src/DMU/Ganz_Bariloche_DMU_graphics.pnml"
+#include "src/DMU/Ganz_Bariloche_DMU_item.pnml"
 
-#include "src/DMU/Ganz_Arpad_CMU_4701_Transandino_graphics.pnml"
-#include "src/DMU/Ganz_Arpad_CMU_4701_Transandino_item.pnml"
+#include "src/DMU/Ganz_CMU_4701_Transandino_graphics.pnml"
+#include "src/DMU/Ganz_CMU_4701_Transandino_item.pnml"
 
 #include "src/DMU/Comeng_1100_Railcar_graphics.pnml"
 #include "src/DMU/Comeng_1100_Railcar_item.pnml"
@@ -836,9 +833,6 @@
 
 #include "src/Diesel/Qishuyan_DF8_graphics.pnml"
 #include "src/Diesel/Qishuyan_DF8_item.pnml"
-
-#include "src/Diesel/EMD_Clyde_JT26C_2SS_graphics.pnml"
-#include "src/Diesel/EMD_Clyde_JT26C_2SS_item.pnml"
 
 #include "src/Diesel/Brush_Class_60_graphics.pnml"
 #include "src/Diesel/Brush_Class_60_item.pnml"
@@ -1406,9 +1400,6 @@
 #include "src/EMU/NSWGR_Tulloch_EMU_graphics.pnml"
 #include "src/EMU/NSWGR_Tulloch_EMU_item.pnml"
 
-#include "src/EMU/Alstom_XTrapolis_100_Melbourne_graphics.pnml"
-#include "src/EMU/Alstom_XTrapolis_100_Melbourne_item.pnml"
-
 #include "src/EMU/Ganz_MAVAG_EM_ET_graphics.pnml"
 #include "src/EMU/Ganz_MAVAG_EM_ET_item.pnml"
 
@@ -1942,8 +1933,8 @@
 #include "src/Electric/Alsthom_F_Series_graphics.pnml"
 #include "src/Electric/Alsthom_F_Series_item.pnml"
 
-#include "src/Electric/Siemens_Vectron_graphics.pnml"
-#include "src/Electric/Siemens_Vectron_item.pnml"
+#include "src/Electric/Siemens_Vectron_MS_graphics.pnml"
+#include "src/Electric/Siemens_Vectron_MS_item.pnml"
 
 #include "src/Electric/Siemens_Vectron_Dual_Mode_graphics.pnml"
 #include "src/Electric/Siemens_Vectron_Dual_Mode_item.pnml"

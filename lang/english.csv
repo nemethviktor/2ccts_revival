@@ -39,6 +39,7 @@ STR_SUFFIX_OHLE,OHLE
 STR_SUFFIX_3RD,3rd Rail
 STR_SUFFIX_4TH,4th Rail
 STR_SUFFIX_DUAL,Dual Mode
+STR_SUFFIX_FAMILY,Family
 STR_UNIT_WAGON_PASSENGER,This generic wagon can ONLY be used with passenger MUs to create trains of the desired length
 STR_UNIT_WAGON_CARGO,This generic wagon can ONLY be used with cargo MUs to create trains of the desired length
 STR_CANNOT_ATTACH_WAGON_TO_MU,Cannot attach wagon to Multiple Unit engine
@@ -442,10 +443,10 @@ str_rbs_kerr__stuart___co__86,"Kerr, Stuart & Co. 86"
 str_rbs_victorian_railways_rowan_railmotor,Victorian Railways Rowan Railmotor
 str_rbs_esslingen_czm_1_2,Esslingen Czm 1/2
 str_rbs_maffei_mcci,Maffei MCCi
-str_rbs_kitson___co_csar_railmotor,Kitson & Co CSAR Railmotor
-str_rbs_kerr_stuart_steam_railmotor,Kerr Stuart steam railmotor
+str_rbs_kitson___co_csar_railmotor,Kitson & Co. CSAR Railmotor
+str_rbs_kerr_stuart_steam_railmotor,"Kerr, Stuart & Co. Motor Car 3"
 str_rbs_kkstb_4_0,KkStB 4.0
-str_rbd_aec_railmotor_rm1,AEC railmotor RM1
+str_rbd_aec_railmotor_rm1,AEC Railmotor RM1
 str_rbd_vt133_wismar_railcar,VT133 Wismar Railcar
 str_rbd_aec_railcar,AEC Railcar
 str_rbd_simmering_vt42,Simmering VT42
@@ -486,7 +487,7 @@ str_rbd_fiat_ferroviaria_aln_668_1400,Fiat Ferroviaria ALn 668.1400
 str_rbe_ringhoffer_40_001,Ringhoffer 40.001
 str_rbe_decauville_z_7100,Decauville Z 7100
 str_rbe_hawa_aeg_kleinbahn_nr__1_3,HAWA/AEG Kleinbahn Nr. 1-3
-str_rbe_raw_schoneweide_479_201,Raw Schoneweide 479.201
+str_rbe_raw_schoneweide_479_201,RAW Schoneweide 479.201
 str_rbe_studenka_425_95,Studenka 425.95
 str_rbe_pozzuoli___ocren_om_ale_840,Pozzuoli - OCREN OM ALe 840
 str_rbe_stanga_ale_80,Stanga ALe 80
@@ -500,7 +501,7 @@ str_rbe_asj_y6,ASJ Y6
 str_rbe_budd_silverliner_ii,Budd Silverliner II
 str_rbe_hyundai_rotem_silverliner_v,Hyundai Rotem Silverliner V
 str_steam_john_cockerill___cie__le_belge,John Cockerill & Cie. Le Belge
-str_steam_gwr_4_4_0_american,"Breese, Kneeland & Co 4-4-0 'No 1'"
+str_steam_gwr_4_4_0_american,"Breese, Kneeland & Co. 4-4-0 'No 1'"
 str_steam_esslingen_ec_2_5,Esslingen Ec 2/5
 str_steam_norris_4_6_0_ten_wheeler,Baldwin Class D 4-6-0 'Ten-wheeler'
 str_steam_baldwin_2_8_0_consolidation,Baldwin 2-8-0 'Consolidation'
@@ -528,22 +529,22 @@ str_steam_mlw_royal_hudson,MLW 'Royal Hudson'
 str_steam_nohab_4_6_2_f,NOHAB 4-6-2 'F'
 str_steam_ggl_has_52,GGL/HAS 52
 str_steam_doncaster_darlington_peppercorn,Doncaster/Darlington 'Peppercorn'
-str_steam_henschel___son_condenser,Henschel & Son 'Condenser'
+str_steam_henschel___son_condenser,Henschel & Sohn 'Condenser'
 str_steam_kolomena_p36,Kolomna P36
 str_steam_anf_del_150b,ANF/DEL 150B
 str_steam_henschel_895,Henschel 895
 str_steam_h__cegielski_okz32,H. Cegielski OKz32
 str_steam_slm_c_5_6_elephant,SLM C 5/6 'Elephant'
 str_steam_alco_series_4000_4_8_8_4_big_boy,ALCO series 4000 4-8-8-4 'Big Boy'
-str_steam_sharp_stewart_3557_3565,"Sharp, Stewart & Co 4-4-0 3557-3565"
+str_steam_sharp_stewart_3557_3565,"Sharp, Stewart & Co. 4-4-0 3557-3565"
 str_steam_gwr_iron_duke,GWR Iron Duke
 str_steam_stephenson_0_4_2_locomotive_no_1,Stephenson 0-4-2 'Locomotive No.1'
 str_steam_cooke_4_2_2_t__d__judah,Cooke 4-2-2 'T. D. Judah'
-str_steam_beyer__p___co_2_4_0_ss_9_16__21_78,"Beyer, P & Co 2-4-0 SS 9-16, 21-78"
-str_steam_beyer__p___co_2_6_0t_1702_1706,"Beyer, P & Co 2-6-0T 1702-1706"
-str_steam_beyer__p___co_2_6_0_2073_2092,"Beyer, P & Co 2-6-0 2073-2092"
+str_steam_beyer__p___co_2_4_0_ss_9_16__21_78,"Beyer, P & Co. 2-4-0 SS 9-16, 21-78"
+str_steam_beyer__p___co_2_6_0t_1702_1706,"Beyer, P & Co. 2-6-0T 1702-1706"
+str_steam_beyer__p___co_2_6_0_2073_2092,"Beyer, P & Co. 2-6-0 2073-2092"
 str_steam_canadian_pacific_374,Canadian Pacific 374
-str_steam_nasmyth__wilson___co_35_tonner_4_6_0t,"Nasmyth, Wilson & Co '35-tonner' 4-6-0T"
+str_steam_nasmyth__wilson___co_35_tonner_4_6_0t,"Nasmyth, Wilson & Co. '35-tonner' 4-6-0T"
 str_steam_schneider_renfe_040,Schneider RENFE 040
 str_steam_sachsische_maschinenfabrik_iv_k,Sächsische Maschinenfabrik IV K
 str_steam_hanomag_s_3,Hanomag S 3
@@ -554,8 +555,8 @@ str_steam_alco_46581_2_6_6_2_mallet,ALCO 46581 2-6-6-2 'Mallet'
 str_steam_orenstein___koppel_2_8_0_8_tender,Orenstein & Koppel 2-8-0 '8-Tender'
 str_steam_stratford_works_l77_lner_n7,Stratford Works L77 'LNER N7'
 str_steam_sachsische_maschinenfabrik_xx_hv,Sächsische Maschinenfabrik XX HV
-str_steam_beyer__p___co_2_4_0_ss_9_16,"Beyer, P & Co 2-4-0 SS 9-16"
-str_steam_beyer__p___co_2_6_0_6112_6113,"Beyer, P & Co 2-6-0 6112-6113"
+str_steam_beyer__p___co_2_4_0_ss_9_16,"Beyer, P & Co. 2-4-0 SS 9-16"
+str_steam_beyer__p___co_2_6_0_6112_6113,"Beyer, P & Co. 2-6-0 6112-6113"
 str_steam_baldwin_10_32_e_55246,Baldwin 10-32-E 55246
 str_steam_canadian_national_u_1_a_,Canadian National U-1-a
 str_steam_vulcan_foundry_2_6_4_class_xb,Vulcan Foundry 4-6-2 Class XB
@@ -568,7 +569,7 @@ str_steam_raw_meiningen_4_6_2_89_,RAW Meiningen 4-6-2 89
 str_steam_nzr_4_6_4t_wab,NZR 4-6-4T 'WAB'
 str_steam_clyde_4_8_2_d57,Clyde 4-8-2 'D57'
 str_steam_islington_railway_workshops_81_92_520,Islington Railway Workshops 81-92 520
-str_steam_beyer__p___co_4_8_4_4_8_4_7473_7497,"Beyer, P & Co 4-8-4+4-8-4 7473-7497"
+str_steam_beyer__p___co_4_8_4_4_8_4_7473_7497,"Beyer, P & Co. 4-8-4+4-8-4 7473-7497"
 str_steam_afe_n1_2_6_0,AFE N1 2-6-0
 str_steam_sir_armstrong_whithworth___co__ps11,Sir Armstrong Whithworth & Co. PS11
 str_steam_alexander_chaplin___co__1584_0_4_0vb,Alexander Chaplin & Co. 1584 0-4-0VB
@@ -580,7 +581,7 @@ str_steam_beyer__p___co__4_6_4_4_6_4_15th,"Beyer, P & Co. 4-6-4+4-6-4 '15th'"
 str_steam_beyer__p___co__4_8_2_2_8_4_7550_7552,"Beyer, P & Co. 4-8-2+2-8-4 7550-7552"
 str_steam_vulcan_foundry_2_8_4_6228,Vulcan Foundry 2-8-4 6228
 str_steam_kitson_2_2_2wt_481_fairy_queen,Kitson 2-2-2WT 481 'Fairy Queen'
-str_steam_sharp__stewart___co_0_4_0st_dhr_b,"Sharp, Stewart & Co 0-4-0ST DHR B"
+str_steam_sharp__stewart___co_0_4_0st_dhr_b,"Sharp, Stewart & Co. 0-4-0ST DHR B"
 str_steam_baldwin_2_8_0_sentetsu_sorii,Baldwin 2-8-0 Sentetsu Sorii
 str_steam_putilov_4_6_0_u,Putilov 4-6-0 U
 str_steam_baldwin_12_44_f_2_10_0_ye,Baldwin 12-44 F 2-10-0 'Ye'
@@ -932,7 +933,7 @@ str_dmu_caf_zz_2200_autorail,CAF ZZ 2200 Autorail
 str_dmu_cfd_amt_800,CFD AMT 800
 str_dmu_cnr_tangshan_ghana_demu,CNR Tangshan Ghana DEMU
 str_dmu_downer_edi_hitachi_tilt_train,Downer EDI/Hitachi Tilt Train
-str_dmu_nippon_sharyo_1000_series,Nippon-Sharyo 1000 Series
+str_dmu_nippon_sharyo_1000_series,Nippon Sharyo 1000 Series
 str_dmu_materfer_cmm_400_2,Materfer CMM 400-2
 str_dmu_fiat_aln_442_448,Fiat ALn 442-448
 str_dmu_sorefame_cp_0400,Sorefame CP 0400
@@ -978,7 +979,7 @@ str_emu_acme_corp__sureot,ACME Corp. Sureot
 str_emu_hitachi_shinkansen_series_0,Hitachi Shinkansen Series 0
 str_emu_hitachi_shinkansen_series_700,Hitachi Shinkansen Series 700
 str_emu_hitachi_kawasaki_shinkansen_series_e1_max,Hitachi/Kawasaki Shinkansen Series E1 Max
-str_emu_alstom_coradia_duplex,Alstom 'Coradia Duplex'
+str_emu_alstom_coradia_duplex,Alstom Coradia Duplex
 str_emu_rvr_er31,RVR ER31
 str_emu_carel_et_fouche_alsthom_z_6100,Carel et Fouche/Alsthom Z 6100
 str_emu_bombardier_ucw_electrostar_gautrain,Bombardier/UCW Electrostar 'Gautrain'
@@ -1482,9 +1483,21 @@ str_mu_coach_gen3_pafawag_3aw,Pafawag 3Aw
 str_diesel_kmz_tu7_tgm40,KMZ TU7/TGM40
 str_electric_alsthom_cc_7100,Alsthom CC 7100
 str_electric_alsthom_f_series,Alsthom F Series
-str_electric_siemens_vectron,Siemens Vectron MS
+str_electric_siemens_vectron,Siemens Vectron
 str_diesel_siemens_vectron_de,Siemens Vectron DE
 str_electric_siemens_vectron_dual_mode,Siemens Vectron Dual Mode
 str_rbd_faur_a20dp,Faur A20D-P
 str_steam_tours_chapelon_2_12_0_160a,Tours/Chapelon 2-12-0 SNCF 160A
 str_diesel_ltz_te166,LTZ 2TE116
+str_electric_siemens_vectron_ms,Siemens Vectron MS
+str_dmu_abb_ic3,ABB IC3
+str_dmu_siemens_desiro_family,Siemens Desiro
+str_electric_siemens_eurosprinter_family,Siemens Eurosprinter
+str_electric_siemens_vectron_family,Siemens Vectron
+str_dmu_abb_ic3_family,ABB IC3
+str_emu_alstom_xtrapolis_100_family,Alstom X'Trapolis 100
+str_dmu_ganz_bariloche_dmu,Ganz 'Bariloche' DMU
+str_dmu_ganz_cmu_4701_transandino,Ganz 'Transandino' CMU 4701
+str_emu_hitachi_kawasaki_shinkansen_family,Hitachi & Kawasaki Shinkansen
+str_electric_pesa_111_family,Pesa 111
+str_emu_prr_mp54_family,PRR MP54

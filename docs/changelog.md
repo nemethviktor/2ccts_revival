@@ -12,15 +12,17 @@
   - `Powered/Unpowered **metro**` cars are allowed to run mail now. This is historically correct although a bit obscure.
   - Refined the role definition for `metro`, this has very little other effect on the game, it's mostly a fad, unless you filter on roles.
   - Wagons have been re-templated and simplified in the code. Also now Type 1 Hoppers have Food graphics because they had been previous reallocated to food-only.
-- VEHICLES ADDS:
+  - Some superflous templates (on top of the above) have been merged, this shouldn't affect gamplay.
+- VEHICLE ADDS:
   - `Siemens Vectron MS`
   - `Siemens Vectron DE`
   - `Siemens Vectron Dual Mode`
   - `Tours/Chapelon 2-12-0 SNCF 160A`
   - `LTZ 2TE116`  
-- VEHICLES CHANGES:
+- VEHICLE CHANGES:
   - Various visual-only sprite changes.
   - Vehicle running costs have been re-balanced. Generally wagons and coaches have been a lot less expensive than before but as a counterbalance locos are now more expensive to run based on actual performance values specific to propulsion type.
+  - Some items have been renamed, notably various Ganz manufactured ones. This doesn't affect gameplay.
   - `Comeng XPT` is now 7 long, not 8.
   - `Comeng W Class 'Sputnik'` is now standard gauge as it should be
   - `Bombardier-Alstom HHP-8` speed reduced to 201 km/h
@@ -39,8 +41,14 @@
   - `Hitachi Shinkansen Series 700` speed increased to 285 km/h
   - `Faur A20DP` is now a railbus. This might break your game if you had that in an existing save.
   - `LTZ 2TE126` is now 6000hp each (can be doubled) - I had misread the source and confused it with the 116 version.
-  - `EMD G26` has been added to `South America`
+  - `EMD G26` was added to `South America`
   - `Superheavy` had incorrect calculation for running cost, it's now been corrected, it's therefore around double the cost now.
+  - `Burnham 2-6-0 15857-15871` had the wrong template and was missing the tender. It's now correct but is longer as such.
+- VEHICLE REMOVALS:
+  - `EMD/Clyde JT26C-2SS` was removed because it had been an identical duplicate of `EMD/Clyde JT26C-2SS V-line G`. One had a top speed of 114 km/h the other 115 km/h but otherwise identical specs.
+  - `ABB IC3 [Israel]` was removed because it had been an identical duplicate of `ABB IC3 Y2` where only the intro dates differed by 4 years.
+  - `Alstom X'Trapolis 100 Melbourne` was removed because apart from the region it had been the same as `Alstom X'Trapolis 100` so that latter had the regions extended.
+  
 
 ## 4.0
 
@@ -48,7 +56,7 @@
 - CODE CHANGES:
   - Removed railbus coupling rules
   - Updated AI rules relating to special flags esp wrt railbuses.
-- VEHICLES CHANGES:
+- VEHICLE CHANGES:
   - Further small changes here and there
   - Adds:
     - `Faur A20D-P` + Trailer
@@ -72,7 +80,7 @@
   - Modified the "retire early" logic. Since coaches and wagons don't decay in reliability, they shouldn't be retired early.
   - Replaced the obscure legacy sqrt calculation with the standard python libarary's method
   - Re-jigged some of the Role rules affecting `universal`/`freight` and `shunting`/`light freight`
-- VEHICLES CHANGES:
+- VEHICLE CHANGES:
   - Renamed almost everything to be more or less manufacturer naming rather than operator naming. The logic is that if we have idk NSW80 or whatever else in West Europe because it's idk an EMD something, with that operator name, it's silly. Also this way things are a lot less restrictive.
   - Changed Wagon upkeep costs to 75% of the original. Given they are pretty slow in the long run, they are way too expensive to maintain.
   - Changed `SuperHeavy` (wagon) to only allow Goods and Vehicles, otherwise it was a huge cheat.
@@ -165,7 +173,7 @@
   - Complicated the template logic for coaches and push-pull/DT because I've added `TPL_04U` for items that have no fancy liveries e.g. dining cars or first classes but it does support push-pull.
   - Added `Push-Pull` badge capability.
 
-- VEHICLES CHANGES:
+- VEHICLE CHANGES:
   - Changed cargo wagons to be all-region. Having split boxcars and silos into food/nonfood the regional splits weren't viable any longer
   - Renamed various items (see relevant commit messages)
   - Standardised some of the vehicle roles
@@ -314,7 +322,7 @@
   - Added support for Driving Cabs (sometimes referred to as DC or DT, just to keep things confusing) via new template `TPL_04S`
   - Added random flip to coaches that are non-DT
   - Fixed template `TPL_17B` (Sharknose etc with A/B units) not being articulated. This was a legacy bug.
-- VEHICLES CHANGES:
+- VEHICLE CHANGES:
   - Added `Hessian Ludwig Rlw Thomas` using `Victorian Railways Rowan Railmotor` graphics but different/relevant specs
   - Added `NÖLB 30-33` using `NÖLB 1` graphics but different/relevant specs
   - Changed `Harbour Board EL 0-4-0 'Little Bess'` properties to be lighter
@@ -338,7 +346,7 @@
 - CODE CHANGES:
   - Added template `TPL_03G` (12-len steam w tender)
   - Fix "Driving State S4" logic not working correctly
-- VEHICLES CHANGES:
+- VEHICLE CHANGES:
   - Reclassified `USA_UP_4000_Big_Boy` as template `TPL_03G`
   - Added `JR Freight M250` (basically a CargoEMU)
   - ~~Moved all "powered" generic coaches to be actually electric. They can't run on non-electrified tracks anymore.~~
@@ -350,7 +358,7 @@
 
 - CODE CHANGES:
   - Badges! #1 -- need testing ofc but tentatively works.
-- VEHICLES CHANGES:
+- VEHICLE CHANGES:
   - Added `Alsthom AD30B` (Standard/Diesel)
   - Added `Katanga Mikado 2-8-2` (Narrow/Steam)
   - Reclassified `FS ALn 668` as template `TPL_01B`
@@ -384,7 +392,7 @@
 - CODE CHANGES:
   - Automated English Language file creation
   - Automated the whole graphics and templating. This is likely to result in some bugs, please test.
-- VEHICLES CHANGES:
+- VEHICLE CHANGES:
   - Chile_EFE_XTrapolis_100 -> Modified to 1500V voltage, was None, incorrectly.
   - Corrected a number of wrong string values for voltage categorisation (ref above automation)
 
@@ -397,7 +405,7 @@
   - ~~Automated the 'property' file creation via Excel/Python~~
   - Automated the 'item' file creation and integrated the 'property' details into that.
     - Automated the puchase costs and running costs calcs. I've done several spot checks and apart from rounding differences, they all checked out.
-- VEHICLES CHANGES:
+- VEHICLE CHANGES:
   - Reiterating from above, separated out the various railtypes and voltages.
   - Turned the visual for DMUs to _DIESEL_ (was _DISABLE_)
 
@@ -408,7 +416,7 @@
   - Turned off extraneous warnings in the makefile config
   - Fixed some tags being incorrectly named as reported on the [OTTD Forums in 2020](https://www.tt-forums.net/viewtopic.php?p=1231342#p1231342)
   - Fixed template_2cc_L12 temple 2nd/4th sprite being off as reported on the [OTTD Forums in 2020](https://www.tt-forums.net/viewtopic.php?p=1239539#p1239539)
-- VEHICLES CHANGES:
+- VEHICLE CHANGES:
   - Added Cargo Gen6 Wagons (using Gen5 graphics) - **NO_CONCEPT**
     - These are a little faster and about 10% more capacity than G5s and are introduced around 2005-2020
   - Added Single Unit Maglev (_DB 182 ES64UM 'Mutus' (Maglev)_) + Cargo Gen7M Wagons - **IS_CONCEPT**

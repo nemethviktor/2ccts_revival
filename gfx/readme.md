@@ -17,9 +17,7 @@ flowchart TD
     
     EngineType{"Engine Type?"}
     TPL_01A["TPL_01A"]
-    TPL_03B["TPL_03B"]
     TPL_03A["TPL_03A"]
-    TPL_03E["TPL_03E"]
     TPL_03G["TPL_03G"]
     TPL_03C["TPL_03C"]
     TPL_03D["TPL_03D"]
@@ -80,13 +78,10 @@ flowchart TD
     EngineType --> SecType
 
     EngNoAnim --> TPL_01A
-    EngNoAnim --> TPL_03B
 
     SteamType --> TPL_03A
-    SteamType --> TPL_03E
     SteamType --> TPL_03G
 
-    SecType --> TPL_03B
     SecType --> TPL_03C
     SecType --> TPL_03D
     SecType --> TPL_03F
@@ -126,7 +121,7 @@ flowchart TD
 ```
 
 Most **Engines** _exc Steam_ will fall into `TPL_01`, whichever version of it assuming there is no animation involved. I'd suggest using `TPL_01A`;
-If your design is dual-headed, still use that, don't move any of the boxes, for those -> `TPL_03B`. 
+Steam with Tender `TPL_03A`. W/o Tender -> `TPL_03C`. 
 If the item in question is dual-mode (ie diesel and electric) then the filenaming is a bit different. You'll need 2 almost identical files, one with the panto up and the other with panto down. Check out the `Siemens Vectron Dual Mode` (`Siemens_Vectron_Dual_Mode_panto_up.png` and `Siemens_Vectron_Dual_Mode_panto_down.png` in the `Electric` folder if not clear.
 
 Most **xMUs** will be `TPL_02A` if the middle cars are only different pax/mail. `TPL_02D` is for EMUs where the unpowered/powered cars are visually different. Other templates exist but I suggest not using them. There is no `TPL_02B` - it has been removed during testing.
@@ -135,10 +130,8 @@ Most **Metros** will be `TPL_02C`.
 
 **Things with secondary items** are usually `TPL_03x`:
 - `03A` -> Steam w/ Tender
-- `03B` -> Items w/ 2 engine animation states
-- `03C` -> Same as B but different 'purchase' position (2nd item will flip/reverse)
+- `03C` -> Items w/ 2 engine animation states
 - `03D` -> Non-animated articulated engines (2nd item will flip/reverse)
-- `03E` -> Same as A but no Visual Effect
 - `03F` -> Asymmetrical single-unit engines NOT A/B, Single NOT articulated (2nd item will flip/reverse)
 - `03G` -> Same as A but 12 length
 

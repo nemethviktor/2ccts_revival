@@ -2,7 +2,7 @@
 
 # Hardcoded Strings
 STR_GRF_NAME                                                      :{TITLE}
-STR_GRF_DESCRIPTION                                               :{SILVER}2cc Trains of the World in NML {}{}(c)2ccts Revival {}License GPLv2 or higher. {}See readme for details.{}{SILVER}Build: 2026-09-28-12:09:20
+STR_GRF_DESCRIPTION                                               :{SILVER}2cc Trains of the World in NML {}{}(c)2ccts Revival {}License GPLv2 or higher. {}See readme for details.{}{SILVER}Build: 2026-10-02-13:47:14
 STR_GRF_URL                                                       :https://github.com/nemethviktor/2ccts_revival
 STR_USED_WITH_DYNAMIC_ENGINES                                     :dynamic_engines = true (setting in openttd.cfg)
 STR_ERROR_REGION                                                  :No regions enabled, {STRING} has been disabled
@@ -41,6 +41,7 @@ STR_SUFFIX_OHLE                                                   :OHLE
 STR_SUFFIX_3RD                                                    :3rd Rail
 STR_SUFFIX_4TH                                                    :4th Rail
 STR_SUFFIX_DUAL                                                   :Dual Mode
+STR_SUFFIX_FAMILY                                                 :Family
 STR_UNIT_WAGON_PASSENGER                                          :This generic wagon can ONLY be used with passenger MUs to create trains of the desired length
 STR_UNIT_WAGON_CARGO                                              :This generic wagon can ONLY be used with cargo MUs to create trains of the desired length
 STR_CANNOT_ATTACH_WAGON_TO_MU                                     :Cannot attach wagon to Multiple Unit engine
@@ -770,7 +771,7 @@ str_diesel_siemens_vectron_de                                     :Siemens Vectr
 str_diesel_ltz_te166                                              :LTZ 2TE116 (Diesel)
 
 # Dieselrailbus
-str_rbd_aec_railmotor_rm1                                         :AEC railmotor RM1 (Diesel Railbus)
+str_rbd_aec_railmotor_rm1                                         :AEC Railmotor RM1 (Diesel Railbus)
 str_rbd_vt133_wismar_railcar                                      :VT133 Wismar Railcar (Diesel Railbus)
 str_rbd_aec_railcar                                               :AEC Railcar (Diesel Railbus)
 str_rbd_simmering_vt42                                            :Simmering VT42 (Diesel Railbus)
@@ -870,10 +871,10 @@ str_dmu_caf_zz_2200_autorail                                      :CAF ZZ 2200 A
 str_dmu_cfd_amt_800                                               :CFD AMT 800 (DMU)
 str_dmu_cnr_tangshan_ghana_demu                                   :CNR Tangshan Ghana DEMU (DMU)
 str_dmu_downer_edi_hitachi_tilt_train                             :Downer EDI/Hitachi Tilt Train (DMU)
-str_dmu_nippon_sharyo_1000_series                                 :Nippon-Sharyo 1000 Series (DMU)
+str_dmu_nippon_sharyo_1000_series                                 :Nippon Sharyo 1000 Series (DMU)
 str_dmu_materfer_cmm_400_2                                        :Materfer CMM 400-2 (DMU)
-str_dmu_ganz_arpad_bariloche_dmu                                  :Ganz 'Arpad' Bariloche DMU (DMU)
-str_dmu_ganz_arpad_cmu_4701_transandino                           :Ganz 'Arpad' CMU 4701 Transandino (DMU)
+str_dmu_ganz_bariloche_dmu                                        :Ganz 'Bariloche' DMU (DMU)
+str_dmu_ganz_cmu_4701_transandino                                 :Ganz 'Transandino' CMU 4701 (DMU)
 str_dmu_comeng_1100_railcar                                       :Comeng 1100 Railcar (DMU)
 str_dmu_thai_comeng_xpt_concept                                   :Thai Comeng XPT Concept (DMU)
 str_dmu_comeng_nsw_xpt                                            :Comeng NSW XPT (DMU)
@@ -1057,7 +1058,7 @@ str_electric_alco_ge_t_motor                                      :ALCO-GE T-Mot
 str_electric_altoona_works_dd1                                    :Altoona Works Pennsylvania Railroad DD1 (Electric, 3rd Rail)
 str_electric_alsthom_cc_7100                                      :Alsthom CC 7100 (Electric, 3kV DC, 1500V DC)
 str_electric_alsthom_f_series                                     :Alsthom F Series (Electric, 25kV AC)
-str_electric_siemens_vectron                                      :Siemens Vectron MS (Electric, OHLE, 25kV AC)
+str_electric_siemens_vectron_ms                                   :Siemens Vectron MS (Electric, OHLE, 25kV AC)
 str_electric_siemens_vectron_dual_mode                            :Siemens Vectron Dual Mode (Dual Mode, 15kV AC)
 
 # Electricrailbus
@@ -1080,7 +1081,7 @@ str_rbe_mvr_beh_2_4                                               :MVR Beh 2/4 (
 str_rbe_lindner_talbot_et_10_109                                  :Lindner/Talbot ET 10.109 (Electric Railbus, 15kV AC)
 str_rbe_pesa_308b                                                 :Pesa 308B (Electric Railbus, 3kV DC)
 str_rbe_hyundai_rotem_silverliner_v                               :Hyundai Rotem Silverliner V (Electric Railbus, 25kV AC, 15kV AC)
-str_rbe_raw_schoneweide_479_201                                   :Raw Schoneweide 479.201 (Electric Railbus, 1500V DC)
+str_rbe_raw_schoneweide_479_201                                   :RAW Schoneweide 479.201 (Electric Railbus, 1500V DC)
 str_rbe_hawa_aeg_kleinbahn_nr__1_3                                :HAWA/AEG Kleinbahn Nr. 1-3 (Electric Railbus, 1500V DC)
 
 # Emu
@@ -1119,7 +1120,7 @@ str_emu_de_dietrich_adtranz_mddm_390                              :De Dietrich/A
 str_emu_adtranz_bm73                                              :Adtranz BM73 (EMU, 15kV AC)
 str_emu_alsthom_pendolino_680                                     :Alsthom 'Pendolino' 680 (EMU, 25kV AC, 15kV AC, 3kV DC, OHLE)
 str_emu_fiat_caf_sm4                                              :Fiat/CAF Sm4 (EMU, 25kV AC)
-str_emu_alstom_coradia_duplex                                     :Alstom 'Coradia Duplex' (EMU, 25kV AC, 15kV AC, 1500V DC)
+str_emu_alstom_coradia_duplex                                     :Alstom Coradia Duplex (EMU, 25kV AC, 15kV AC, 1500V DC)
 str_emu_siemens_velero                                            :Siemens Velero (EMU, OHLE)
 str_emu_caf_alstom_class_120                                      :CAF/Alstom Class 120 (EMU, 25kV AC, 3kV DC)
 str_emu_stadler_rabe_523_flirt                                    :Stadler RABe 523 'Flirt' (EMU, OHLE)
@@ -1309,19 +1310,19 @@ str_steam_lner_a4_gresley                                         :LNER A4 'Gres
 str_steam_mlw_royal_hudson                                        :MLW 'Royal Hudson' (Steam)
 str_steam_ggl_has_52                                              :GGL/HAS 52 (Steam)
 str_steam_doncaster_darlington_peppercorn                         :Doncaster/Darlington 'Peppercorn' (Steam)
-str_steam_henschel___son_condenser                                :Henschel & Son 'Condenser' (Steam)
+str_steam_henschel___son_condenser                                :Henschel & Sohn 'Condenser' (Steam)
 str_steam_kolomena_p36                                            :Kolomna P36 (Steam)
-str_steam_gwr_4_4_0_american                                      :Breese, Kneeland & Co 4-4-0 'No 1' (Steam)
+str_steam_gwr_4_4_0_american                                      :Breese, Kneeland & Co. 4-4-0 'No 1' (Steam)
 str_steam_norris_4_6_0_ten_wheeler                                :Baldwin Class D 4-6-0 'Ten-wheeler' (Steam)
 str_steam_nohab_4_6_2_f                                           :NOHAB 4-6-2 'F' (Steam)
 str_steam_alco_series_4000_4_8_8_4_big_boy                        :ALCO series 4000 4-8-8-4 'Big Boy' (Steam)
-str_steam_sharp_stewart_3557_3565                                 :Sharp, Stewart & Co 4-4-0 3557-3565 (Steam)
+str_steam_sharp_stewart_3557_3565                                 :Sharp, Stewart & Co. 4-4-0 3557-3565 (Steam)
 str_steam_gwr_iron_duke                                           :GWR Iron Duke (Steam)
 str_steam_stephenson_0_4_2_locomotive_no_1                        :Stephenson 0-4-2 'Locomotive No.1' (Steam)
 str_steam_cooke_4_2_2_t__d__judah                                 :Cooke 4-2-2 'T. D. Judah' (Steam)
-str_steam_beyer__p___co_2_4_0_ss_9_16__21_78                      :Beyer, P & Co 2-4-0 SS 9-16, 21-78 (Steam)
-str_steam_beyer__p___co_2_6_0t_1702_1706                          :Beyer, P & Co 2-6-0T 1702-1706 (Steam)
-str_steam_beyer__p___co_2_6_0_2073_2092                           :Beyer, P & Co 2-6-0 2073-2092 (Steam)
+str_steam_beyer__p___co_2_4_0_ss_9_16__21_78                      :Beyer, P & Co. 2-4-0 SS 9-16, 21-78 (Steam)
+str_steam_beyer__p___co_2_6_0t_1702_1706                          :Beyer, P & Co. 2-6-0T 1702-1706 (Steam)
+str_steam_beyer__p___co_2_6_0_2073_2092                           :Beyer, P & Co. 2-6-0 2073-2092 (Steam)
 str_steam_canadian_pacific_374                                    :Canadian Pacific 374 (Steam)
 str_steam_slm_g_3_4                                               :SLM G 3/4 (Steam)
 str_steam_schneider_renfe_040                                     :Schneider RENFE 040 (Steam)
@@ -1334,8 +1335,8 @@ str_steam_alco_46581_2_6_6_2_mallet                               :ALCO 46581 2-
 str_steam_orenstein___koppel_2_8_0_8_tender                       :Orenstein & Koppel 2-8-0 '8-Tender' (Steam)
 str_steam_stratford_works_l77_lner_n7                             :Stratford Works L77 'LNER N7' (Steam)
 str_steam_sachsische_maschinenfabrik_xx_hv                        :Sächsische Maschinenfabrik XX HV (Steam)
-str_steam_beyer__p___co_2_4_0_ss_9_16                             :Beyer, P & Co 2-4-0 SS 9-16 (Steam)
-str_steam_beyer__p___co_2_6_0_6112_6113                           :Beyer, P & Co 2-6-0 6112-6113 (Steam)
+str_steam_beyer__p___co_2_4_0_ss_9_16                             :Beyer, P & Co. 2-4-0 SS 9-16 (Steam)
+str_steam_beyer__p___co_2_6_0_6112_6113                           :Beyer, P & Co. 2-6-0 6112-6113 (Steam)
 str_steam_baldwin_10_32_e_55246                                   :Baldwin 10-32-E 55246 (Steam)
 str_steam_canadian_national_u_1_a_                                :Canadian National U-1-a (Steam)
 str_steam_vulcan_foundry_2_6_4_class_xb                           :Vulcan Foundry 4-6-2 Class XB (Steam)
@@ -1346,11 +1347,11 @@ str_steam_swindon_works_381                                       :Swindon Works
 str_steam_north_british_lc_r_4_6_4_hudson                         :North British LC R 4-6-4 Hudson (Steam)
 str_steam_veb_2_10_2t_99_77_79                                    :VEB 2-10-2T 99.77-79 (Steam)
 str_steam_raw_meiningen_4_6_2_89_                                 :RAW Meiningen 4-6-2 89 (Steam)
-str_steam_nasmyth__wilson___co_35_tonner_4_6_0t                   :Nasmyth, Wilson & Co '35-tonner' 4-6-0T (Steam)
+str_steam_nasmyth__wilson___co_35_tonner_4_6_0t                   :Nasmyth, Wilson & Co. '35-tonner' 4-6-0T (Steam)
 str_steam_kitson_2_2_2wt_481_fairy_queen                          :Kitson 2-2-2WT 481 'Fairy Queen' (Steam)
 str_steam_alexander_chaplin___co__1584_0_4_0vb                    :Alexander Chaplin & Co. 1584 0-4-0VB (Steam)
 str_steam_h__k__porter__inc_2_6_0_7100                            :H. K. Porter, Inc 2-6-0 7100 (Steam)
-str_steam_sharp__stewart___co_0_4_0st_dhr_b                       :Sharp, Stewart & Co 0-4-0ST DHR B (Steam)
+str_steam_sharp__stewart___co_0_4_0st_dhr_b                       :Sharp, Stewart & Co. 0-4-0ST DHR B (Steam)
 str_steam_richard_francis_trevithick_2_4_2t_860                   :Richard Francis Trevithick 2-4-2T 860 (Steam)
 str_steam_falcon_engine_and_car_works_f2                          :Falcon Engine and Car Works F2 (Steam)
 str_steam_baldwin_2_8_0_sentetsu_sorii                            :Baldwin 2-8-0 Sentetsu Sorii (Steam)
@@ -1379,7 +1380,7 @@ str_steam_islington_railway_workshops_81_92_520                   :Islington Rai
 str_steam_vulcan_foundry_2_8_0_liberation                         :Vulcan Foundry 2-8-0 'Liberation' (Steam)
 str_steam_alco_baldwin_2_8_0_usatc_s160                           :ALCO/Baldwin 2-8-0 'USATC S160' (Steam)
 str_steam_fablok_2_6_2_oi49                                       :Fablok 2-6-2 OI49 (Steam)
-str_steam_beyer__p___co_4_8_4_4_8_4_7473_7497                     :Beyer, P & Co 4-8-4+4-8-4 7473-7497 (Steam)
+str_steam_beyer__p___co_4_8_4_4_8_4_7473_7497                     :Beyer, P & Co. 4-8-4+4-8-4 7473-7497 (Steam)
 str_steam_beyer__p___co__4_8_2_2_8_4_7550_7552                    :Beyer, P & Co. 4-8-2+2-8-4 7550-7552 (Steam)
 str_steam_vulcan_foundry_2_8_4_6228                               :Vulcan Foundry 2-8-4 6228 (Steam)
 str_steam_renfe_4_8_4_242f_confederacion                          :RENFE 4-8-4 242F 'Confederacion' (Steam)
@@ -1436,8 +1437,8 @@ str_rbs_kerr__stuart___co__86                                     :Kerr, Stuart 
 str_rbs_victorian_railways_rowan_railmotor                        :Victorian Railways Rowan Railmotor (Steam Railbus)
 str_rbs_esslingen_czm_1_2                                         :Esslingen Czm 1/2 (Steam Railbus)
 str_rbs_maffei_mcci                                               :Maffei MCCi (Steam Railbus)
-str_rbs_kitson___co_csar_railmotor                                :Kitson & Co CSAR Railmotor (Steam Railbus)
-str_rbs_kerr_stuart_steam_railmotor                               :Kerr Stuart steam railmotor (Steam Railbus)
+str_rbs_kitson___co_csar_railmotor                                :Kitson & Co. CSAR Railmotor (Steam Railbus)
+str_rbs_kerr_stuart_steam_railmotor                               :Kerr, Stuart & Co. Motor Car 3 (Steam Railbus)
 str_rbs_kkstb_4_0                                                 :KkStB 4.0 (Steam Railbus)
 str_rbs_esslingen_man_hohenzollern_thomas                         :Esslingen/MAN/Hohenzollern 'Thomas' (Steam Railbus)
 str_rbs_komarek_nolb_30_33                                        :Komarek NOLB 30-33 (Steam Railbus)
