@@ -222,7 +222,7 @@
 | ![KMZ TU7/TGM40](vehicle_graphics/str_diesel_kmz_tu7_tgm40.png) | KMZ TU7/TGM40 | 1971 | 40 / 24 | 400 / 298 | Shunting | 0 | STANDARD_NONE, NARROW_NONE, BROAD_NONE | Asia, Northern Europe, Eastern Europe, Western Europe, Southern Europe | No |
 | ![LTZ 2TE116](vehicle_graphics/str_diesel_ltz_te166.png) | LTZ 2TE116 | 1971 | 100 / 62 | 3060 / 2281 | Freight | 0 | STANDARD_NONE, BROAD_NONE | Asia, Eastern Europe | No |
 | ![EMD F40PH](vehicle_graphics/str_diesel_emd_f40ph.png) | EMD F40PH | 1972 | 165 / 102 | 3000 / 2236 | Express | 0 | STANDARD_NONE | North America, South America | No |
-| ![EMD G26](vehicle_graphics/str_diesel_emd_g26.png) | EMD G26 | 1972 | 124 / 77 | 2200 / 1640 | Universal | 0 | STANDARD_NONE, NARROW_NONE | Africa, Asia, Eastern Europe, Oceania | No |
+| ![EMD G26](vehicle_graphics/str_diesel_emd_g26.png) | EMD G26 | 1972 | 124 / 77 | 2200 / 1640 | Universal | 0 | STANDARD_NONE, NARROW_NONE | Africa, South America, Asia, Eastern Europe, Oceania | No |
 | ![EMD/NOHAB J30C-2DSB MZ III](vehicle_graphics/str_diesel_emd_nohab_j30c_2dsb_mz_iii.png) | EMD/NOHAB J30C-2DSB MZ III | 1972 | 165 / 102 | 3845 / 2866 | Express | 0 | STANDARD_NONE | Northern Europe, Oceania | No |
 | ![GE U26C](vehicle_graphics/str_diesel_ge_u26c.png) | GE U26C | 1972 | 105 / 65 | 2750 / 2050 | Freight | 0 | STANDARD_NONE, NARROW_NONE | Africa, South America, Oceania | No |
 | ![Goninan 47 Class](vehicle_graphics/str_diesel_goninan_47_class.png) | Goninan 47 Class | 1972 | 113 / 70 | 1126 / 839 | Universal | 0 | STANDARD_NONE | Oceania | No |

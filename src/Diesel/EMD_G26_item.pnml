@@ -10,7 +10,7 @@
 item(FEAT_TRAINS, item_diesel_emd_g26) {
     property {
         name: string(str_diesel_emd_g26);
-        climates_available: ((param_region_eastern_europe || param_region_africa || (param_region_asia || param_region_oceania)) && 1) ? ALL_CLIMATES : NO_CLIMATE;
+        climates_available: ((param_region_eastern_europe || param_region_africa || (param_region_asia || param_region_oceania) || param_region_south_america) && 1) ? ALL_CLIMATES : NO_CLIMATE;
         introduction_date: date(1972,1,1);
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 58;
@@ -44,7 +44,7 @@ item(FEAT_TRAINS, item_diesel_emd_g26) {
         extra_power_per_wagon: 0;
         bitmask_vehicle_info: 0;
 
-	badges: ["region/africa", "region/asia", "region/europe/eastern", "region/oceania", "power/diesel", "role/universal"];
+	badges: ["region/africa", "region/asia", "region/america/south", "region/europe/eastern", "region/oceania", "power/diesel", "role/universal"];
 
     }
     graphics {

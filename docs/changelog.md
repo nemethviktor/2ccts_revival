@@ -39,6 +39,8 @@
   - `Hitachi Shinkansen Series 700` speed increased to 285 km/h
   - `Faur A20DP` is now a railbus. This might break your game if you had that in an existing save.
   - `LTZ 2TE126` is now 6000hp each (can be doubled) - I had misread the source and confused it with the 116 version.
+  - `EMD G26` has been added to `South America`
+  - `Superheavy` had incorrect calculation for running cost, it's now been corrected, it's therefore around double the cost now.
 
 ## 4.0
 
