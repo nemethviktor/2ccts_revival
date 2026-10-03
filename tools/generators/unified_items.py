@@ -7,12 +7,9 @@ import math
 from pathlib import Path
 from pandas.api.types import is_number
 import re
-from helpers.role_rules import get_role
-
-
-def is_true(val) -> bool:
-    """Checks if a value evals to true (ie is a string that says so, or 1, or just True)"""
-    return (val == True or str(val).upper() == "TRUE") or (val == 1)
+from tools.helpers.common import is_true
+from tools.helpers.paths import REPO_ROOT
+from tools.helpers.role_rules import get_role
 
 
 def get_graphics_switch_cargo_selection(TEMPLATE_ID_FULL: str, ROW_CARGODEF: str, VEHIDCODE_lcase: str):
@@ -831,8 +828,7 @@ def get_cargo_capacity_divide(TEMPLATE_ID_FULL: str) -> int:
 
 def generate_unified_items(df_master: pd.DataFrame, copyright_text: str, notes_lookup: dict):
     print("--- Starting Unified Item Generation ---")
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    project_root = os.path.dirname(script_dir)
+    project_root = REPO_ROOT
     AIR_DRAG_COEFFICIENT = 0
     BITMASK_VEHICLE_INFO = 0
     CARGO_AGE_PERIOD_NORMAL = 185  # 2.5 days
@@ -1430,7 +1426,7 @@ switch (FEAT_TRAINS, SELF, sw_loco_runningcost_{VEHIDCODE_lcase}, tile_powers_ra
 
 
 if __name__ == "__main__":
-    from helpers.read_excel_file import load_master_data, get_excel_path
+    from tools.helpers.read_excel_file import load_master_data, get_excel_path
 
     # Direct execution test logic:
     df_m, c_text, n_lookup = load_master_data(get_excel_path())

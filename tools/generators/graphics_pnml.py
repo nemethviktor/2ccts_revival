@@ -3,7 +3,9 @@ from typing import Literal, Optional
 import pandas as pd
 import os
 from functools import wraps
-from helpers import graphics_helpers
+from tools.helpers import graphics_helpers
+from tools.helpers.common import is_true
+from tools.helpers.paths import REPO_ROOT
 from pathlib import Path
 from pandas.api.types import is_number
 
@@ -19,11 +21,6 @@ from pandas.api.types import is_number
 # 0xFE: The very first vehicle in the train (The Engine/Front).
 # 0xFF: The very last vehicle in the train (The Caboose/End).
 # Default (no hex code): Every vehicle that isn't the first or the last.
-
-
-def is_true(val) -> bool:
-    """Checks if a value evals to true (ie is a string that says so, or 1, or just True)"""
-    return (val == True or str(val).upper() == "TRUE") or (val == 1)
 
 
 def coalesce(a, b):
@@ -2169,8 +2166,7 @@ switch(FEAT_TRAINS, SELF, switch_{vid}_wagon_logic, position_in_consist) {{
 
 def generate_graphics_pnml(df_master: pd.DataFrame, copyright_text: str, notes_lookup: dict, df_ranges: pd.DataFrame):
 
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    project_root = os.path.dirname(script_dir)
+    project_root = REPO_ROOT
 
     # Final cleanup: Replace NaN in track columns with False
     track_cols = [c for c in df_master.columns if c.startswith("TRACK_TYPE_")]
@@ -2206,7 +2202,7 @@ def generate_graphics_pnml(df_master: pd.DataFrame, copyright_text: str, notes_l
 
 
 if __name__ == "__main__":
-    from helpers.read_excel_file import load_master_data, load_vehicle_id_ranges, get_excel_path
+    from tools.helpers.read_excel_file import load_master_data, load_vehicle_id_ranges, get_excel_path
 
     # Direct execution test logic:
     df_m, c_text, n_lookup = load_master_data(get_excel_path())

@@ -1,24 +1,19 @@
 import pandas as pd
 import os
 import warnings
-from helpers.read_excel_file import load_master_data, load_vehicle_id_ranges
+from tools.helpers.common import is_true
+from tools.helpers.paths import REPO_ROOT
+from tools.helpers.read_excel_file import load_master_data, load_vehicle_id_ranges
 
 # Silence openpyxl warnings
 warnings.filterwarnings("ignore", category=UserWarning, module="openpyxl")
-
-
-def is_true(val) -> bool:
-    """Checks if a value evals to true (ie is a string that says so, or 1, or just True)"""
-    return (val == True or str(val).upper() == "TRUE") or (val == 1)
 
 
 def generate_vehiclesort_pnml(df_master: pd.DataFrame, copyright_text: str, df_ranges: pd.DataFrame):
     print("--- Starting Vehicle Sort File Generation ---")
 
     # 1. Setup Paths
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    project_root = os.path.dirname(script_dir)
-    output_path = os.path.normpath(os.path.join(project_root, "src/vehiclesort.pnml"))
+    output_path = os.path.normpath(os.path.join(REPO_ROOT, "src/vehiclesort.pnml"))
 
     df_master = df_master[~(df_master.get("EXCLUDE", False).apply(is_true))]
 
@@ -74,7 +69,7 @@ def generate_vehiclesort_pnml(df_master: pd.DataFrame, copyright_text: str, df_r
 
 
 if __name__ == "__main__":
-    from helpers.read_excel_file import load_master_data, load_vehicle_id_ranges, get_excel_path
+    from tools.helpers.read_excel_file import load_master_data, load_vehicle_id_ranges, get_excel_path
 
     # Direct execution test logic:
     df_m, c_text, _ = load_master_data(get_excel_path())

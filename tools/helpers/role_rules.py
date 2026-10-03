@@ -1,6 +1,4 @@
-def is_true(val) -> bool:
-    """Checks if a value evals to true (ie is a string that says so, or 1, or just True)"""
-    return (val == True or str(val).upper() == "TRUE") or (val == 1)
+from tools.helpers.common import is_true
 
 
 def get_role(row) -> str:

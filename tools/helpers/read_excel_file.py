@@ -1,21 +1,14 @@
 import openpyxl
 import pandas as pd
-from pathlib import Path
 import warnings
+
+from tools.helpers.paths import EXCEL_PATH
 
 warnings.filterwarnings("ignore", category=UserWarning, module="openpyxl")
 
 
-def is_true(val) -> bool:
-    """Checks if a value evals to true (ie is a string that says so, or 1, or just True)"""
-    return (val == True or str(val).upper() == "TRUE") or (val == 1)
-
-
 def get_excel_path() -> str:
-    project_root = Path(__file__).resolve().parent.parent
-
-    excel_path = project_root / "vehicle_report.xlsx"
-    return str(excel_path)
+    return EXCEL_PATH
 
 
 def load_master_data(excel_path: str):

@@ -14,15 +14,12 @@ import matplotlib.pyplot as plt
 import warnings
 import re
 
-from helpers.role_rules import get_role
+from tools.helpers.common import is_true
+from tools.helpers.paths import REPO_ROOT
+from tools.helpers.role_rules import get_role
 
 # Silence openpyxl warnings
 warnings.filterwarnings("ignore", category=UserWarning, module="openpyxl")
-
-
-def is_true(val) -> bool:
-    """Checks if a value evals to true (ie is a string that says so, or 1, or just True)"""
-    return (val == True or str(val).upper() == "TRUE") or (val == 1)
 
 
 def calculate_timeline(df_merged: pd.DataFrame) -> pd.DataFrame:
@@ -164,10 +161,8 @@ def generate_visualization_matrix(df_timeline: pd.DataFrame, output_path: str) -
 
 def main() -> None:
     """Execution entry point for the Excel layout compiler."""
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    project_root = os.path.dirname(script_dir)
-    output_path = os.path.normpath(os.path.join(project_root, "docs", "gap_analysis"))
-    from helpers.read_excel_file import load_master_data, get_excel_path
+    output_path = os.path.normpath(os.path.join(REPO_ROOT, "docs", "gap_analysis"))
+    from tools.helpers.read_excel_file import load_master_data, get_excel_path
 
     # Direct execution test logic:
 

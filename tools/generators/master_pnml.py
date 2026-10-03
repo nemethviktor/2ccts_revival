@@ -3,20 +3,17 @@ import os
 import warnings
 import shutil
 
+from tools.helpers.common import is_true
+from tools.helpers.paths import REPO_ROOT
+
 # Silence openpyxl warnings
 warnings.filterwarnings("ignore", category=UserWarning, module="openpyxl")
-
-
-def is_true(val) -> bool:
-    """Checks if a value evals to true (ie is a string that says so, or 1, or just True)"""
-    return (val == True or str(val).upper() == "TRUE") or (val == 1)
 
 
 def generate_master_pnml(df_master: pd.DataFrame, copyright_text: str):
     print("--- Starting Master PNML Generation ---")
 
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    project_root = os.path.dirname(script_dir)
+    project_root = REPO_ROOT
     output_path = os.path.join(project_root, "2ccts_revival.pnml")
 
     content = [f"\n{copyright_text}\n\n\n"]

@@ -4,9 +4,9 @@ import re
 import time
 from datetime import date
 
-# Determine the project root (one level up from this script in ./tools)
-SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-ROOT_DIR = os.path.abspath(os.path.join(SCRIPT_DIR, '..'))
+from tools.helpers.paths import REPO_ROOT
+
+ROOT_DIR = REPO_ROOT
 
 
 def get_git_info():

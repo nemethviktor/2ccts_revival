@@ -11,7 +11,7 @@ powershell -Command "Get-Date -Format 'yyyy-MM-dd:HH:mm:ss'"
 :: If user passed 'y' or 'Y', skip straight to the build process
 if /I "%BUILD_ONLY%"=="y" goto build_process
 
-python ./tools/master_py.py
+python -m tools.build
 
 :build_process
 echo --- Build Start ---
@@ -29,7 +29,7 @@ IF EXIST copygrftogoogledriveshare.bat (
 if /I "%BUILD_ONLY%"=="y" goto end_process
 
 rem the below takes ages and so we run it after the build. no need to wait just to test if build works.
-python ./tools/generate_gap_analysis.py
+python -m tools.generators.gap_analysis
 
 :end_process
 :: Print end time

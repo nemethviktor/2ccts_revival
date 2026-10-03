@@ -9,17 +9,14 @@ from datetime import datetime
 # Silence openpyxl warnings
 warnings.filterwarnings("ignore", category=UserWarning, module="openpyxl")
 
+from tools.helpers.common import is_true
+from tools.helpers.paths import REPO_ROOT
+
 # Paths
-script_dir = os.path.dirname(os.path.abspath(__file__))
-project_root = os.path.dirname(script_dir)
-lang_dir = os.path.join(project_root, "lang")
+lang_dir = os.path.join(REPO_ROOT, "lang")
 
 # BLACKLIST: Categories that should have NO technical tags at all
 BLACKLIST = ["COACH", "WAGON"]
-
-
-def is_true(val):
-    return (val == True or str(val).upper() == "TRUE") or (val == 1)
 
 
 def sync_csv_with_excel(df_vehicles):
@@ -285,7 +282,7 @@ def generate_languages(df_master: pd.DataFrame):
 
 
 if __name__ == "__main__":
-    from helpers.read_excel_file import load_master_data, get_excel_path
+    from tools.helpers.read_excel_file import load_master_data, get_excel_path
 
     # Direct execution test logic:
     df_m, _, _ = load_master_data(get_excel_path())

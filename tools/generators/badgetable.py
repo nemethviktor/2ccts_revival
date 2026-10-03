@@ -7,7 +7,8 @@ import warnings
 from pandas.api.types import is_number
 import re
 
-from helpers.read_excel_file import load_master_data
+from tools.helpers.paths import REPO_ROOT
+from tools.helpers.read_excel_file import load_master_data
 
 warnings.filterwarnings("ignore", category=UserWarning, module="openpyxl")
 
@@ -16,10 +17,7 @@ def generate_vehicle_id_pnml(copyright_text: str):
     print("--- Starting BadgeTable Generation ---")
 
     # 1. Setup Paths
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    project_root = os.path.dirname(script_dir)
-    excel_path = os.path.join(script_dir, "vehicle_report.xlsx")
-    output_path = os.path.normpath(os.path.join(project_root, "src/badgetable.pnml"))
+    output_path = os.path.normpath(os.path.join(REPO_ROOT, "src/badgetable.pnml"))
 
     content = []
     content.append(f"\n{copyright_text}\n\n\n")
@@ -213,7 +211,7 @@ item (FEAT_BADGES, {role_underlined}) {{
 
 
 if __name__ == "__main__":
-    from helpers.read_excel_file import load_master_data, get_excel_path
+    from tools.helpers.read_excel_file import load_master_data, get_excel_path
 
     # Direct execution test logic:
     _, c_text, _ = load_master_data(get_excel_path())

@@ -2,20 +2,15 @@ import pandas as pd
 import os
 import warnings
 
-
-def is_true(val) -> bool:
-    """Checks if a value evals to true (ie is a string that says so, or 1, or just True)"""
-    return (val == True or str(val).upper() == "TRUE") or (val == 1)
+from tools.helpers.common import is_true
+from tools.helpers.paths import REPO_ROOT
 
 
 def generate_vehicle_id_pnml(df_master: pd.DataFrame, copyright_text: str, df_ranges: pd.DataFrame):
     print("--- Starting Vehicle ID File Generation (with Free ID Comments) ---")
 
     # 1. Setup Paths
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    project_root = os.path.dirname(script_dir)
-    excel_path = os.path.join(script_dir, "vehicle_report.xlsx")
-    output_path = os.path.normpath(os.path.join(project_root, "src/vehicleID.pnml"))
+    output_path = os.path.normpath(os.path.join(REPO_ROOT, "src/vehicleID.pnml"))
 
     content = []
     content.append(f"\n{copyright_text}\n\n\n")
@@ -73,7 +68,7 @@ def generate_vehicle_id_pnml(df_master: pd.DataFrame, copyright_text: str, df_ra
 
 
 if __name__ == "__main__":
-    from helpers.read_excel_file import load_master_data, load_vehicle_id_ranges, get_excel_path
+    from tools.helpers.read_excel_file import load_master_data, load_vehicle_id_ranges, get_excel_path
 
     # Direct execution test logic:
     df_m, c_text, _ = load_master_data(get_excel_path())

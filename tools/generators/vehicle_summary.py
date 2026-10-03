@@ -4,7 +4,9 @@ import os
 import base64
 from PIL import Image
 from io import BytesIO
-from helpers.role_rules import get_role
+from tools.helpers.common import is_true
+from tools.helpers.paths import REPO_ROOT
+from tools.helpers.role_rules import get_role
 
 import warnings
 
@@ -12,8 +14,7 @@ import warnings
 warnings.filterwarnings("ignore", category=UserWarning, module="openpyxl")
 
 # --- Configuration ---
-script_dir = os.path.dirname(os.path.abspath(__file__))
-project_root = os.path.dirname(script_dir)
+project_root = REPO_ROOT
 templates_pnml_path = os.path.join(project_root, "src", "templates.pnml")
 output_path = os.path.normpath(os.path.join(project_root, "docs", "vehicle_summary.md"))
 gfx_output_dir = os.path.join(project_root, "docs", "vehicle_graphics")
@@ -98,11 +99,6 @@ def process_and_save_image(v_id, pnml_path, excel_png_path, templates):
         return rel_md_path
     except:
         return ""
-
-
-def is_true(val) -> bool:
-    """Checks if a value evals to true (ie is a string that says so, or 1, or just True)"""
-    return (val == True or str(val).upper() == "TRUE") or (val == 1)
 
 
 def generate_markdown(df_master: pd.DataFrame):
@@ -230,7 +226,7 @@ def generate_markdown(df_master: pd.DataFrame):
 
 
 if __name__ == "__main__":
-    from helpers.read_excel_file import load_master_data, get_excel_path
+    from tools.helpers.read_excel_file import load_master_data, get_excel_path
 
     # Direct execution test logic:
     df_m, _, _ = load_master_data(get_excel_path())
