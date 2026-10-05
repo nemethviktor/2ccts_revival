@@ -7,6 +7,10 @@ import warnings
 from pandas.api.types import is_number
 import re
 
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))  # allow running this file directly
 from tools.helpers.paths import REPO_ROOT
 from tools.helpers.read_excel_file import load_master_data
 

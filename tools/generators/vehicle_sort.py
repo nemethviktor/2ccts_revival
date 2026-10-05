@@ -1,6 +1,10 @@
 import pandas as pd
 import os
 import warnings
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))  # allow running this file directly
 from tools.helpers.common import is_true
 from tools.helpers.paths import REPO_ROOT
 from tools.helpers.read_excel_file import load_master_data, load_vehicle_id_ranges

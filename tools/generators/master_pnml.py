@@ -3,6 +3,10 @@ import os
 import warnings
 import shutil
 
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))  # allow running this file directly
 from tools.helpers.common import is_true
 from tools.helpers.paths import REPO_ROOT
 

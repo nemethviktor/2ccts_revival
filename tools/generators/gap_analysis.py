@@ -14,6 +14,10 @@ import matplotlib.pyplot as plt
 import warnings
 import re
 
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))  # allow running this file directly
 from tools.helpers.common import is_true
 from tools.helpers.paths import REPO_ROOT
 from tools.helpers.role_rules import get_role
