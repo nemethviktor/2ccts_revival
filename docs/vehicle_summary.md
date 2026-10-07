@@ -340,12 +340,13 @@
 | ![Valmet Dm7](vehicle_graphics/str_rbd_valmet_dm7.png) | Valmet Dm7 | 1955 | 95 / 59 | 180 / 134 | Commuter/Urban | 64 | BROAD_NONE | Northern Europe | No |
 | ![Fiat Ferroviaria ALn 668.1400](vehicle_graphics/str_rbd_fiat_ferroviaria_aln_668_1400.png) | Fiat Ferroviaria ALn 668.1400 | 1956 | 130 / 80 | 335 / 249 | Commuter/Urban | 68 | STANDARD_NONE | Southern Europe | No |
 | ![MaK GDT](vehicle_graphics/str_rbd_mak_gdt.png) | MaK GDT | 1959 | 70 / 43 | 440 / 328 | Commuter/Urban | 108 | STANDARD_NONE | Western Europe | No |
+| ![Ganz-MAVAG SN61](vehicle_graphics/str_rbd_ganz_mavag_sn61.png) | Ganz-MAVAG SN61 | 1960 | 108 / 67 | 500 / 372 | Commuter/Urban | 48 | STANDARD_NONE | Eastern Europe | No |
 | ![SGP 77783/1960](vehicle_graphics/str_rbd_sgp_77783_1960.png) | SGP 77783/1960 | 1960 | 125 / 77 | 530 / 395 | Commuter/Urban | 37 | STANDARD_NONE | Eastern Europe | No |
 | ![Ferrostaal SB-56](vehicle_graphics/str_rbd_efe_sb_56_buscarril.png) | Ferrostaal SB-56 | 1961 | 80 / 49 | 180 / 134 | Commuter/Urban | 40 | NARROW_NONE | South America | No |
 | ![Ferrostaal-Esslingen AA.71](vehicle_graphics/str_rbd_ferrostaal_esslingen_aa_71.png) | Ferrostaal-Esslingen AA.71 | 1962 | 105 / 65 | 790 / 589 | Commuter/Urban | 68 | STANDARD_NONE | Southern Europe | No |
 | ![Alsthom Z-431](vehicle_graphics/str_rbd_alsthom_z_431.png) | Alsthom Z-431 | 1975 | 130 / 80 | 1045 / 779 | Commuter/Urban | 54 | STANDARD_NONE | Africa | No |
 | ![Budd SPV-2000](vehicle_graphics/str_rbd_budd_spv_2000.png) | Budd SPV-2000 | 1979 | 130 / 80 | 360 / 268 | Commuter/Urban | 86 | STANDARD_NONE | Africa, North America | No |
-| ![Ganz-MAVAG Ikarus 725.00](vehicle_graphics/str_rbd_ganz_mavag_ikarus.png) | Ganz-MAVAG Ikarus 725.00 | 1983 | 100 / 62 | 250 / 186 | Commuter/Urban | 43 | STANDARD_NONE, NARROW_NONE | Asia, Eastern Europe | No |
+| ![Ganz-MAVAG Ikarus 725.00](vehicle_graphics/str_rbd_ganz_mavag_ikarus_725_00.png) | Ganz-MAVAG Ikarus 725.00 | 1983 | 100 / 62 | 250 / 186 | Commuter/Urban | 43 | STANDARD_NONE, NARROW_NONE | Asia, Eastern Europe | No |
 | ![Faur A20D-P](vehicle_graphics/str_rbd_faur_a20dp.png) | Faur A20D-P | 1984 | 60 / 37 | 189 / 140 | Commuter/Urban | 39 | NARROW_NONE | Eastern Europe | No |
 | ![NS DH1](vehicle_graphics/str_rbd_ns_dh1.png) | NS DH1 | 1984 | 100 / 62 | 285 / 212 | Commuter/Urban | 56 | STANDARD_NONE | South America, Northern Europe, Eastern Europe, Western Europe, Southern Europe | No |
 | ![Vagonka Studenka 91M0 ](vehicle_graphics/str_rbd_vagonka_studenka_91m0_.png) | Vagonka Studenka 91M0  | 1984 | 120 / 74 | 990 / 738 | Commuter/Urban | 67 | BROAD_NONE | Asia, Eastern Europe | No |

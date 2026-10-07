@@ -23,7 +23,8 @@ spriteset(spriteset_mu_coach_gen4_comeng_suburban_double_deck_sa2000_l1_dt_forwa
 spriteset(spriteset_mu_coach_gen4_comeng_suburban_double_deck_sa2000_l1_dt_reverse, "gfx/coaches/gen4/coach_gen4_comeng_suburban_double_deck_sa2000.png") {template_2cc_wagons(1, 64)}
 
 
-            
+
+
 // Driving backwards switch
 switch(FEAT_TRAINS, PARENT, switch_mu_coach_gen4_comeng_suburban_double_deck_sa2000_direction, train_is_driving_backwards) {
     1: spriteset_mu_coach_gen4_comeng_suburban_double_deck_sa2000_l1_dt_forward;

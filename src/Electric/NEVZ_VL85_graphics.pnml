@@ -14,12 +14,12 @@ spriteset(spriteset_electric_nevz_vl85_purchase, "gfx/electric/nevz_vl85.png") {
 spriteset(spriteset_electric_nevz_vl85_engine, "gfx/electric/nevz_vl85.png") {template_2cc_engines_general(1, 1)}
 
 
-/// Tender
-spriteset(spriteset_electric_nevz_vl85_tender, "gfx/electric/nevz_vl85.png") {template_2cc_engines_general(1, 32)}
+/// B Unit
+spriteset(spriteset_electric_nevz_vl85_b_unit, "gfx/electric/nevz_vl85.png") {template_2cc_engines_general(1, 32)}
 
 switch(FEAT_TRAINS, SELF, switch_electric_nevz_vl85_position, position_in_vehid_chain % 2) {
 	0: spriteset_electric_nevz_vl85_engine;
-	spriteset_electric_nevz_vl85_tender;
+	spriteset_electric_nevz_vl85_b_unit;
 }
 
 /// Visual Effect

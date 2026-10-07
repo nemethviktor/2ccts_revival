@@ -3,6 +3,10 @@ from typing import Literal, Optional
 import pandas as pd
 import os
 from functools import wraps
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))  # allow running this file directly
 from tools.helpers import graphics_helpers
 from tools.helpers.common import is_true
 from tools.helpers.paths import REPO_ROOT
@@ -427,9 +431,20 @@ def get_tpl_controller(row, copyright_header) -> str:
     return f"// Error: Template {template_id} not implemented"
 
 
+def _warn_if_unequal_lengths(vid, row):
+    """Swapped-part reverse sprites assume both units have the same length."""
+    # A blank/0 LENGTH_P2 means "same as part 1" (see get_switch_length)
+    if row["LENGTH_P2"] and row["LENGTH_P1_HEAD"] != row["LENGTH_P2"]:
+        print(
+            f"WARNING: {vid} reuses sprites for reverse driving but part lengths differ "
+            f"({row['LENGTH_P1_HEAD']} vs {row['LENGTH_P2']}); swapped sprites may be misaligned"
+        )
+
+
 def get_tpl_01(vid, gfx_path, row, template_amendment_code):
     """Simple Static (Engine/Wagon)"""
 
+    TEMPLATE_ID_FULL = f"TPL_01{template_amendment_code}"
     purchase_y = 64
     if template_amendment_code in ["B", "C", "D"]:
         purchase_y = 32
@@ -454,6 +469,12 @@ def get_tpl_01(vid, gfx_path, row, template_amendment_code):
     if template_amendment_code == "F":
         engine_x = 21
 
+    # A + HAS_CAB: reverse is derived from the normal row (see template_2cc_engines_general_rev)
+    reuse_sprites_for_reverse = graphics_helpers.should_have_pushpull_capability(row=row)
+    direction_states = {}
+    if reuse_sprites_for_reverse:
+        direction_states = {1: "Normal", 2: "Reverse"}
+
     nml_code = []
     nml_code.append(
         get_purchase(
@@ -465,17 +486,58 @@ def get_tpl_01(vid, gfx_path, row, template_amendment_code):
             is_dual_mode=row["POWER_SPECIAL"] == "DUAL",
         )
     )
-    nml_code.append(
-        get_vehicle(
-            vid=vid,
-            gfx_path=gfx_path,
-            title_comment="engine",
-            vehicle_x=engine_x,
-            vehicle_y=1,
-            template_suffix=engine_amendment,
-            is_dual_mode=row["POWER_SPECIAL"] == "DUAL",
+
+    if not direction_states:
+        nml_code.append(
+            get_vehicle(
+                vid=vid,
+                gfx_path=gfx_path,
+                title_comment="engine",
+                vehicle_x=engine_x,
+                vehicle_y=1,
+                template_suffix=engine_amendment,
+                is_dual_mode=row["POWER_SPECIAL"] == "DUAL",
+            )
         )
-    )
+        return "\n".join(nml_code)
+
+    nml_code.append("\n// VEHICLE")
+    is_dual_mode = row["POWER_SPECIAL"] == "DUAL"
+    # Dual-mode vehicles have a separate png per pantograph state, each needing its own normal/reverse pair
+    variants = ["panto_up", "panto_down"] if is_dual_mode else [""]
+    for variant in variants:
+        variant_gfx_path = f"{gfx_path.replace('.png', '')}_{variant}.png" if variant else gfx_path
+        variant_prefix = f"{variant}_" if variant else ""
+        for state_num, state_name in direction_states.items():
+            state_y = 1 if state_num == 1 else 32 * (state_num - 1)
+            nml_code.append(
+                get_spriteset(
+                    vid=vid,
+                    gfx_path=variant_gfx_path,
+                    comment_type=f"Engine - {variant_prefix}{state_name}".replace("_", " "),
+                    template_name_amendment=engine_amendment,
+                    template_x=engine_x,
+                    template_y=state_y,
+                    spritename_suffix=f"{variant_prefix}dt_{state_name}",
+                )
+            )
+        nml_code.append(
+            graphics_helpers.get_driving_backwards_switch(
+                vid=vid,
+                backwards_result=f"spriteset_{vid}_{variant_prefix}dt_reverse",
+                otherwise_result=f"spriteset_{vid}_{variant_prefix}dt_normal",
+                name_suffix=f"{variant_prefix}direction",
+                comment_suffix=f" - {variant}" if variant else "",
+            )
+            + "\n"
+        )
+
+    if is_dual_mode:
+        nml_code.append(f"""switch (FEAT_TRAINS, SELF, sw_{vid}_dual_mode_sprites, tile_powers_railtype("ELRL")) {{
+    1: switch_{vid}_panto_up_direction;
+    switch_{vid}_panto_down_direction;
+}}
+""")
 
     return "\n".join(nml_code)
 
@@ -793,20 +855,24 @@ def get_tpl_03(vid, gfx_path, row, template_amendment_code):
     :param str template_amendment_code:
         - '03A' -> Steam w/ Tender
         - '03B' -> Items w/ 2 engine animation states
-        - '03C' -> Same as B but different 'purhchase' position
+        - '03C' -> Same as B but different 'purchase' position
         - '03D' -> Non-animated articulated engines (2nd item will flip/reverse)
-        - '03E' -> Same as A but no Visual Effect
+        - '03E' -> Same as D (non-animated articulated engines, 2nd item flips) but w/ Normal/Reverse driving states
         - '03F' -> Asymmetrical single-unit engines NOT A/B, Single NOT articulated (2nd item will flip/reverse)
         - '03G' -> Same as A but 12 length
     """
 
     nml_code = []
-    if template_amendment_code in ["A", "C", "E"]:
+    TEMPLATE_ID_FULL = f"TPL_03{template_amendment_code}"
+    reuse_sprites_for_reverse = graphics_helpers.should_have_pushpull_capability(row=row)
+    if template_amendment_code in ["A", "C"]:
         purchase_coord_y = 96
     elif template_amendment_code in ["B", "D", "F"]:
         purchase_coord_y = 64
     elif template_amendment_code in ["G"]:
         purchase_coord_y = 192
+    elif template_amendment_code in ["E"]:
+        purchase_coord_y = 128
 
     nml_code.append(
         get_purchase(
@@ -818,7 +884,7 @@ def get_tpl_03(vid, gfx_path, row, template_amendment_code):
         )
     )
 
-    if template_amendment_code in ["A", "B", "C", "E"]:
+    if template_amendment_code in ["A", "B", "C"]:
         nml_code.append(
             get_vehicle(
                 vid=vid,
@@ -842,7 +908,9 @@ def get_tpl_03(vid, gfx_path, row, template_amendment_code):
                 dont_show_main_comment=True,
             )
         )
-    elif template_amendment_code in ["D", "F"]:
+    elif template_amendment_code in ["D", "E", "F"]:
+        if reuse_sprites_for_reverse:
+            _warn_if_unequal_lengths(vid, row)
         nml_code.append(
             get_vehicle(
                 vid=vid,
@@ -862,7 +930,7 @@ def get_tpl_03(vid, gfx_path, row, template_amendment_code):
                 title_comment="engine1",
                 vehicle_x=1,
                 vehicle_y=1,
-                template_suffix="2cc_L12",
+                template_suffix="2cc_l12",
                 use_comment_as_spritename_suffix=True,
             )
         )
@@ -873,13 +941,13 @@ def get_tpl_03(vid, gfx_path, row, template_amendment_code):
                 title_comment="engine2",
                 vehicle_x=1,
                 vehicle_y=64,
-                template_suffix="2cc_L12",
+                template_suffix="2cc_l12",
                 use_comment_as_spritename_suffix=True,
                 dont_show_main_comment=True,
             )
         )
 
-    if template_amendment_code in ["A", "E"]:
+    if template_amendment_code in ["A"]:
         nml_code.append(
             get_vehicle(
                 vid=vid,
@@ -900,16 +968,13 @@ def get_tpl_03(vid, gfx_path, row, template_amendment_code):
                 title_comment="tender",
                 vehicle_x=1,
                 vehicle_y=128,
-                template_suffix="2cc_L12",
+                template_suffix="2cc_l12",
                 use_comment_as_spritename_suffix=True,
                 dont_show_main_comment=True,
             )
         )
-    elif template_amendment_code in ["D", "F"]:
-        if template_amendment_code == "D":
-            comment_type = "tender"
-        elif template_amendment_code == "F":
-            comment_type = "b_unit"
+    elif template_amendment_code in ["D", "E", "F"]:
+        comment_type = "b_unit"
 
         nml_code.append(
             get_vehicle(
@@ -924,21 +989,61 @@ def get_tpl_03(vid, gfx_path, row, template_amendment_code):
             )
         )
 
-        nml_code.append(
-            graphics_helpers.get_switch_position(
-                vid=vid,
-                position_in_vehid_chain=2,
-                first_item_word="engine",
-                second_item_word=comment_type,
-                main_task="switch",
-                first_item_location=0,
-                second_item_location=None,
-                first_item_task="spriteset",
-                second_item_task="spriteset",
+        if template_amendment_code == "E":
+            # Reverse states: front reverse at y=64, flip reverse at y=96
+            for reverse_part, reverse_y in (("engine", 64), (comment_type, 96)):
+                nml_code.append(
+                    get_vehicle(
+                        vid=vid,
+                        gfx_path=gfx_path,
+                        title_comment=f"{reverse_part}_reverse",
+                        vehicle_x=1,
+                        vehicle_y=reverse_y,
+                        template_suffix="2cc_engines_general",
+                        use_comment_as_spritename_suffix=True,
+                        dont_show_main_comment=True,
+                    )
+                )
+            for part in ("engine", comment_type):
+                nml_code.append(
+                    graphics_helpers.get_driving_backwards_switch(
+                        vid=vid,
+                        backwards_result=f"spriteset_{vid}_{part}_reverse",
+                        otherwise_result=f"spriteset_{vid}_{part}",
+                        name_suffix=f"{part}_direction",
+                        comment_suffix=f" - {part}",
+                    )
+                    + "\n"
+                )
+            nml_code.append(
+                graphics_helpers.get_switch_position(
+                    vid=vid,
+                    position_in_vehid_chain=2,
+                    first_item_word="engine_direction",
+                    second_item_word=f"{comment_type}_direction",
+                    main_task="switch",
+                    first_item_location=0,
+                    second_item_location=None,
+                    first_item_task="switch",
+                    second_item_task="switch",
+                )
             )
-        )
+        else:
+            nml_code.append(
+                graphics_helpers.get_switch_position(
+                    vid=vid,
+                    position_in_vehid_chain=2,
+                    first_item_word="engine",
+                    second_item_word=comment_type,
+                    main_task="switch",
+                    first_item_location=0,
+                    second_item_location=None,
+                    first_item_task="spriteset",
+                    second_item_task="spriteset",
+                )
+            )
 
-    if template_amendment_code in ["A", "B", "C", "E", "G"]:
+    if template_amendment_code in ["A", "B", "C", "G"]:
         nml_code.append(
             graphics_helpers.get_motion_counter(
                 vid=vid,
@@ -948,7 +1053,7 @@ def get_tpl_03(vid, gfx_path, row, template_amendment_code):
             )
         )
 
-    elif template_amendment_code == "D":
+    elif template_amendment_code in ["D", "E"]:
         nml_code.append(f"{graphics_helpers.get_visual_effect_on_odd_even_position(
                 vid=vid,  
                 position_in_vehid_chain=2
@@ -1027,6 +1132,7 @@ def get_tpl_04(vid, gfx_path, row, template_amendment_code):
     """
     gfx_purchase_amendment = "_Purchase"
     nml_code = []
+    TEMPLATE_ID_FULL = f"TPL_04{template_amendment_code}"
 
     # 1. Header & Purchase
     if template_amendment_code in ["A", "B", "S", "U"] and "coach" in vid:  # re-templated coaches
@@ -1061,7 +1167,9 @@ def get_tpl_04(vid, gfx_path, row, template_amendment_code):
 
     has_first_or_last_carriage_state = template_amendment_code in ["S"]
     has_driving_states = is_true(row["HAS_DRIVING_STATE"])
-    has_reverse_state = template_amendment_code in ["A", "U"] and is_true(row["HAS_CAB"])
+
+    has_reverse_state = graphics_helpers.should_have_pushpull_capability(row=row)
+
     direction_states = {}
     cargoes_with_driving_state = {
         18005: ["all"],
@@ -1348,12 +1456,13 @@ def get_tpl_04(vid, gfx_path, row, template_amendment_code):
                     )
                 )
 
+            driving_backwards_switch = graphics_helpers.get_driving_backwards_switch(
+                vid=vid,
+                backwards_result=f"switch_{vid}_livery_dt_forward",
+                otherwise_result=f"switch_{vid}_livery_dt_reverse",
+            )
             nml_code.append(f"""
-// Driving backwards switch
-switch(FEAT_TRAINS, PARENT, switch_{vid}_direction, train_is_driving_backwards) {{
-    1: switch_{vid}_livery_dt_forward;
-    switch_{vid}_livery_dt_reverse;
-}}
+{driving_backwards_switch}
 
 // Consist position switch
 switch(FEAT_TRAINS, SELF, switch_{vid}_position, position_in_consist_from_end) {{
@@ -1388,12 +1497,13 @@ switch(FEAT_TRAINS, SELF, switch_{vid}_position_check, position_in_vehid_chain) 
 
             selector_name = f"switch_{vid}_livery" if cargo_string_is_dummy else f"switch_{vid}_{cargo_string}_livery"
 
-            nml_code.append(f"""            
-// Driving backwards switch
-switch(FEAT_TRAINS, PARENT, switch_{vid}_direction, train_is_driving_backwards) {{
-    1: spriteset_{vid}_l1_dt_forward;
-    spriteset_{vid}_l1_dt_reverse;
-}}
+            driving_backwards_switch = graphics_helpers.get_driving_backwards_switch(
+                vid=vid,
+                backwards_result=f"spriteset_{vid}_l1_dt_forward",
+                otherwise_result=f"spriteset_{vid}_l1_dt_reverse",
+            )
+            nml_code.append(f"""
+{driving_backwards_switch}
 
 // Consist position switch
 switch(FEAT_TRAINS, SELF, switch_{vid}_position, position_in_consist_from_end) {{
@@ -1438,7 +1548,7 @@ def get_tpl_16(vid, gfx_path, row, template_amendment_code):
             vid=vid,
             gfx_path=gfx_path,
             title_comment="engine",
-            template_suffix="_2cc_L12",
+            template_suffix="_2cc_l12",
             use_comment_as_spritename_suffix=True,
             vehicle_x=1,
             vehicle_y=1,
@@ -1470,7 +1580,7 @@ def get_tpl_16(vid, gfx_path, row, template_amendment_code):
 def get_tpl_17(vid, gfx_path, row, template_amendment_code):
     """
     Normal length vehicles with front and back parts(TPL_17): param template_amendment_code:
-        A -> Normal Front/Back (articulated)
+        A -> [merged into TPL_03D]
         B -> A/B Front/Back (non-articulated, normal length)
         C -> Front 1/2; Middle, Back 1/2 (articulated)
         D -> Front 1/2; Middle 1/2, Back 1/2 (articulated, basically just the mtab dm3)
@@ -1479,9 +1589,7 @@ def get_tpl_17(vid, gfx_path, row, template_amendment_code):
     """
     nml_code = []
 
-    if template_amendment_code == "A":
-        purchase_y_coord = 64
-    elif template_amendment_code in ["B", "E"]:
+    if template_amendment_code in ["B", "E"]:
         purchase_y_coord = 128
     elif template_amendment_code == "C":
         purchase_y_coord = 160
@@ -1491,12 +1599,7 @@ def get_tpl_17(vid, gfx_path, row, template_amendment_code):
     nml_code.append(get_purchase(vid=vid, gfx_path=gfx_path, purchase_x=1, purchase_y=purchase_y_coord))
 
     # 2. Coordinate Mapping
-    if template_amendment_code in ["A"]:
-        all_sprites = {
-            "front": (1, 1),
-            "back": (1, 32),
-        }
-    elif template_amendment_code == "B":
+    if template_amendment_code == "B":
         all_sprites = {
             "A_Front": (1, 1),
             "B_Front": (1, 32),
@@ -1545,23 +1648,7 @@ def get_tpl_17(vid, gfx_path, row, template_amendment_code):
             )
         )
 
-    if template_amendment_code in ["A"]:
-        nml_code.append(
-            graphics_helpers.get_switch_position(
-                vid=vid,
-                position_in_vehid_chain=2,
-                first_item_task="spriteset",
-                second_item_task="spriteset",
-                first_item_word="front",
-                second_item_word="back",
-            )
-        )
-
-        nml_code.append(graphics_helpers.get_visual_effect_on_odd_even_position(vid=vid, position_in_vehid_chain=2))
-
-        nml_code.append(graphics_helpers.get_articulated_return(vid=vid, endvalue=1))
-
-    elif template_amendment_code in ["B"]:
+    if template_amendment_code in ["B"]:
         # Yes the order of things here is a little odd.
         nml_code.append(
             graphics_helpers.get_switch_position(
@@ -1886,7 +1973,7 @@ def get_tpl_32(vid, gfx_path, row, template_amendment_code):
                 gfx_path=gfx_path,
                 title_comment=name,
                 dont_show_main_comment=name.lower() != name_a,
-                template_suffix="_2cc_L12",
+                template_suffix="_2cc_l12",
                 use_comment_as_spritename_suffix=True,
                 vehicle_x=coords[0],
                 vehicle_y=coords[1],

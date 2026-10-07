@@ -7,9 +7,14 @@ import math
 from pathlib import Path
 from pandas.api.types import is_number
 import re
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))  # allow running this file directly
 from tools.helpers.common import is_true
 from tools.helpers.paths import REPO_ROOT
 from tools.helpers.role_rules import get_role
+from tools.helpers import graphics_helpers
 
 
 def get_graphics_switch_cargo_selection(TEMPLATE_ID_FULL: str, ROW_CARGODEF: str, VEHIDCODE_lcase: str):
@@ -26,7 +31,7 @@ def get_graphics_switch_cargo_selection(TEMPLATE_ID_FULL: str, ROW_CARGODEF: str
     return None
 
 
-def get_badges(row: pd.Series) -> str:
+def get_badges(row: pd.Series, TEMPLATE_ID_FULL: str) -> str:
     # example: badges: ["type/bus", "power/diesel", "flag/flag_CC", "usage/city"];
     # ok that's from a bus-nml but docu is s.it and can't find a better one.
     vehidcode = row["VEHIDCODE"].lower()
@@ -114,7 +119,9 @@ def get_badges(row: pd.Series) -> str:
         .replace("(", "_")
         .replace(")", "_")
     )
-    if is_true(row["HAS_CAB"]):
+
+    # Don't tag/badge non-coaches with push-pull
+    if graphics_helpers.should_have_pushpull_capability(row=row) and is_true(row["IS_WAGON_OR_COACH"]):
         badges.append("attribute/push_pull")
 
     badges.append(f"role/{role}")
@@ -930,9 +937,9 @@ def generate_unified_items(df_master: pd.DataFrame, copyright_text: str, notes_l
         elif TEMPLATE_ID_FULL in [
             "TPL_03A",
             "TPL_03D",
+            "TPL_03E",
             "TPL_03G",
             "TPL_16A",
-            "TPL_17A",
             "TPL_17B",
             "TPL_17C",
             "TPL_17D",
@@ -975,11 +982,11 @@ def generate_unified_items(df_master: pd.DataFrame, copyright_text: str, notes_l
             in [
                 "TPL_03A",
                 "TPL_03D",
+                "TPL_03E",
                 "TPL_03G",
                 "TPL_16A",
                 "TPL_16A",
                 "TPL_16B",
-                "TPL_17A",
                 "TPL_17C",
                 "TPL_17D",
                 "TPL_17E",
@@ -997,6 +1004,7 @@ def generate_unified_items(df_master: pd.DataFrame, copyright_text: str, notes_l
             in [
                 "TPL_03A",
                 "TPL_03D",
+                "TPL_03E",
                 "TPL_03G",
                 "TPL_16A",
                 "TPL_16B",
@@ -1133,7 +1141,8 @@ switch (FEAT_TRAINS, SELF, sw_loco_runningcost_{VEHIDCODE_lcase}, tile_powers_ra
         content.append(f"        misc_flags: {misc_logic};\n")
 
         # Push-pull DC (DT) logic where applicable
-        if TEMPLATE_ID_FULL in ["TPL_04A", "TPL_04U"] and is_true(row["HAS_CAB"]):
+        # (TPL_01A/03D with HAS_CAB reuse their sprites for reverse driving, see get_tpl_01/get_tpl_03)
+        if graphics_helpers.should_have_pushpull_capability(row=row):
             content.append(f"        extra_flags: bitmask(VEHICLE_FLAG_TRAIN_HAS_CAB);\n")
         content.append(f"        refit_cost: {REFIT_COST};\n")
         ai_special_flag = "AI_FLAG_PASSENGER | AI_FLAG_CARGO"
@@ -1170,7 +1179,7 @@ switch (FEAT_TRAINS, SELF, sw_loco_runningcost_{VEHIDCODE_lcase}, tile_powers_ra
         content.append(f"        extra_power_per_wagon: {POWER_PER_WAGON};\n")
         content.append(f"        bitmask_vehicle_info: {BITMASK_VEHICLE_INFO};\n")
 
-        content.append(f"{get_badges(row)}\n")
+        content.append(f"{get_badges(row=row, TEMPLATE_ID_FULL=TEMPLATE_ID_FULL)}\n")
         content.append("    }\n")
         # Graphics selection/overrides
         content.append("    graphics {\n")
@@ -1225,11 +1234,11 @@ switch (FEAT_TRAINS, SELF, sw_loco_runningcost_{VEHIDCODE_lcase}, tile_powers_ra
         if TEMPLATE_ID_FULL in [
             "TPL_03A",
             "TPL_03D",
+            "TPL_03E",
             "TPL_03F",
             "TPL_03G",
             "TPL_16A",
             "TPL_16B",
-            "TPL_17A",
             "TPL_17B",
             "TPL_17C",
             "TPL_17D",
@@ -1246,7 +1255,6 @@ switch (FEAT_TRAINS, SELF, sw_loco_runningcost_{VEHIDCODE_lcase}, tile_powers_ra
             "TPL_03A",
             "TPL_03B",
             "TPL_03C",
-            "TPL_03E",
             "TPL_03G",
             "TPL_32B",
             "TPL_32C",
@@ -1277,7 +1285,11 @@ switch (FEAT_TRAINS, SELF, sw_loco_runningcost_{VEHIDCODE_lcase}, tile_powers_ra
             ]:
                 content.append(f"        default: switch_{VEHIDCODE_lcase}_reversed;\n")
             elif IS_DUAL_POWERED:
+                # (with HAS_CAB this switch picks between the panto up/down direction switches, see get_tpl_01)
                 content.append(f"        default: sw_{VEHIDCODE_lcase}_dual_mode_sprites;\n")
+            elif graphics_helpers.should_have_pushpull_capability(row=row):
+                # Normal/Reverse direction states, see get_tpl_01
+                content.append(f"        default: switch_{VEHIDCODE_lcase}_direction;\n")
             else:
                 content.append(f"        default: spriteset_{VEHIDCODE_lcase};\n")
         elif category in ["COACH", "WAGON"]:
@@ -1298,7 +1310,7 @@ switch (FEAT_TRAINS, SELF, sw_loco_runningcost_{VEHIDCODE_lcase}, tile_powers_ra
                         "TPL_04U",
                     ] and not is_true(row["HAS_CAB"]):
                         content.append(f"        default: spriteset_{VEHIDCODE_lcase}_l1;\n")
-                    elif TEMPLATE_ID_FULL in ["TPL_04A", "TPL_04U"] and is_true(row["HAS_CAB"]):
+                    elif graphics_helpers.should_have_pushpull_capability(row=row):
                         content.append(f"        default: switch_{VEHIDCODE_lcase}_position;\n")
                     else:
                         content.append(f"        default: switch_{VEHIDCODE_lcase}_livery;\n")
@@ -1332,7 +1344,7 @@ switch (FEAT_TRAINS, SELF, sw_loco_runningcost_{VEHIDCODE_lcase}, tile_powers_ra
                 content.append(f"        default: switch_{VEHIDCODE_lcase};\n")
 
             if row["COST_CAT"] == "COACH":
-                if TEMPLATE_ID_FULL in ["TPL_04A", "TPL_04U"] and is_true(row["HAS_CAB"]):
+                if graphics_helpers.should_have_pushpull_capability(row=row):
                     content.append(f"        // Always flip because DT has to face backwards\n")
                     content.append(f"        reverse_build_probability: return 100;\n")
                 elif TEMPLATE_ID_FULL in ["TPL_04S"]:

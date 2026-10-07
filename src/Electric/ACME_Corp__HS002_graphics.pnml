@@ -14,12 +14,12 @@ spriteset(spriteset_electric_acme_corp__hs002_purchase, "gfx/electric/acme_corp_
 spriteset(spriteset_electric_acme_corp__hs002_engine, "gfx/electric/acme_corp__hs002.png") {template_2cc_engines_general(1, 1)}
 
 
-/// Tender
-spriteset(spriteset_electric_acme_corp__hs002_tender, "gfx/electric/acme_corp__hs002.png") {template_2cc_engines_general(1, 32)}
+/// B Unit
+spriteset(spriteset_electric_acme_corp__hs002_b_unit, "gfx/electric/acme_corp__hs002.png") {template_2cc_engines_general(1, 32)}
 
 switch(FEAT_TRAINS, SELF, switch_electric_acme_corp__hs002_position, position_in_vehid_chain % 2) {
 	0: spriteset_electric_acme_corp__hs002_engine;
-	spriteset_electric_acme_corp__hs002_tender;
+	spriteset_electric_acme_corp__hs002_b_unit;
 }
 
 /// Visual Effect

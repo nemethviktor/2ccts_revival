@@ -17,10 +17,12 @@ flowchart TD
     
     EngineType{"Engine Type?"}
     TPL_01A["TPL_01A"]
+    TPL_01H["TPL_01H"]
     TPL_03A["TPL_03A"]
     TPL_03G["TPL_03G"]
     TPL_03C["TPL_03C"]
     TPL_03D["TPL_03D"]
+    TPL_03E["TPL_03E"]
     TPL_03F["TPL_03F"]
     EngNoAnim{"Dual-Headed?"}
     SteamType{"Steam Details?"}
@@ -31,38 +33,39 @@ flowchart TD
     xMuType{"xMU Config?"}
     TPL_02A["TPL_02A"]
     TPL_02D["TPL_02D"]
+    TPL_02E["TPL_02E"]
+    TPL_02G["TPL_02G"]
 
     WagonType{"Wagon Subtype?"}
     TPL_01F["TPL_01F"]
-    TPL_25["TPL_25"]
+    TPL_25A["TPL_25A"]
     CargoWagon{"Specific Cargo or Gen?"}
     TPL_04A["TPL_04A"]
     TPL_04B["TPL_04B"]
 
     CoachType{"Coach Setup?"}
     TPL_04U["TPL_04U"]
-    TPL_04A["TPL_04A"]
-    TPL_04B["TPL_04B"]
+    TPL_04S["TPL_04S"]
 
     LenType{"Length?"}
-    TPL_016["TPL_016"]
+    TPL_16A["TPL_16A"]
     Len10Type{"10 Length Config?"}
     TPL_32A["TPL_32A"]
     TPL_32D["TPL_32D"]
     TPL_32B["TPL_32B"]
     TPL_32C["TPL_32C"]
-    FbOnly["TPL_017A"]
+    FbOnly["TPL_17A"]
 
     MultiUnit{"Unit Configuration?"}
-    TPL_017B["TPL_017B"]
-    TPL_017C["TPL_017C"]
-    TPL_017D["TPL_017D"]
-    TPL_017E["TPL_017E"]
+    TPL_17B["TPL_17B"]
+    TPL_17C["TPL_17C"]
+    TPL_17D["TPL_17D"]
+    TPL_17E["TPL_17E"]
 
     SpecialType{"Special Vehicle?"}
-    TPL_042A["TPL_042A"]
-    TPL_042B["TPL_042B"]
-    TPL_042C["TPL_042C"]
+    TPL_42A["TPL_42A"]
+    TPL_42B["TPL_42B"]
+    TPL_42C["TPL_42C"]
 
     Start --> EngineType
     Start --> MuType
@@ -78,12 +81,14 @@ flowchart TD
     EngineType --> SecType
 
     EngNoAnim --> TPL_01A
+    EngNoAnim --> TPL_01H
 
     SteamType --> TPL_03A
     SteamType --> TPL_03G
 
     SecType --> TPL_03C
     SecType --> TPL_03D
+    SecType --> TPL_03E
     SecType --> TPL_03F
 
     MuType --> TPL_02C
@@ -91,18 +96,21 @@ flowchart TD
     
     xMuType --> TPL_02A
     xMuType --> TPL_02D
+    xMuType --> TPL_02E
+    xMuType --> TPL_02G
 
     WagonType --> TPL_01F
-    WagonType --> TPL_25
+    WagonType --> TPL_25A
     WagonType --> CargoWagon
 
     CargoWagon --> TPL_04A
     CargoWagon --> TPL_04B
     CoachType --> TPL_04U
+    CoachType --> TPL_04S
     CoachType --> TPL_04A
     CoachType --> TPL_04B
 
-    LenType --> TPL_016
+    LenType --> TPL_16A
     LenType --> Len10Type
     
     Len10Type --> TPL_32A
@@ -110,53 +118,54 @@ flowchart TD
     Len10Type --> TPL_32B
     Len10Type --> TPL_32C
 
-    MultiUnit --> TPL_017B
-    MultiUnit --> TPL_017C
-    MultiUnit --> TPL_017D
-    MultiUnit --> TPL_017E
+    MultiUnit --> TPL_17B
+    MultiUnit --> TPL_17C
+    MultiUnit --> TPL_17D
+    MultiUnit --> TPL_17E
 
-    SpecialType --> TPL_042A
-    SpecialType --> TPL_042B
-    SpecialType --> TPL_042C
+    SpecialType --> TPL_42A
+    SpecialType --> TPL_42B
+    SpecialType --> TPL_42C
 ```
 
-Most **Engines** _exc Steam_ will fall into `TPL_01`, whichever version of it assuming there is no animation involved. I'd suggest using `TPL_01A`;
+Most **Engines** _exc Steam_ will fall into `TPL_01`, whichever version of it assuming there is no animation involved. I'd suggest using `TPL_01A`. `TPL_01H` is the same idea but has a second row for when the vehicle is driving backwards (Normal/Reverse states, purchase at y=64). The other `TPL_01` letters (`B`-`G`) are special cases (dual-headed, railbus, special wagon sprites etc.) - check an existing item using it before picking one;
 Steam with Tender `TPL_03A`. W/o Tender -> `TPL_03C`. 
 If the item in question is dual-mode (ie diesel and electric) then the filenaming is a bit different. You'll need 2 almost identical files, one with the panto up and the other with panto down. Check out the `Siemens Vectron Dual Mode` (`Siemens_Vectron_Dual_Mode_panto_up.png` and `Siemens_Vectron_Dual_Mode_panto_down.png` in the `Electric` folder if not clear.
 
-Most **xMUs** will be `TPL_02A` if the middle cars are only different pax/mail. `TPL_02D` is for EMUs where the unpowered/powered cars are visually different. Other templates exist but I suggest not using them. There is no `TPL_02B` - it has been removed during testing.
+Most **xMUs** will be `TPL_02A` if the middle cars are only different pax/mail. `TPL_02D` is for EMUs where the unpowered/powered cars are visually different. Other templates exist but I suggest not using them. `TPL_02E` is for even longer EMUs with specific sprites for the last cars, `TPL_02G` is like `A` but PAX only (no mail). There is no `TPL_02B` - it has been removed during testing.
 
 Most **Metros** will be `TPL_02C`.
 
 **Things with secondary items** are usually `TPL_03x`:
 - `03A` -> Steam w/ Tender
-- `03C` -> Items w/ 2 engine animation states
+- `03C` -> Items w/ 2 engine animation states (there is no `03B` template image, use `C`)
 - `03D` -> Non-animated articulated engines (2nd item will flip/reverse)
+- `03E` -> Same as `03D` but with Normal/Reverse driving states. Rows: engine (y=1), 2nd item/flip (y=32), engine reverse (y=64), 2nd item/flip reverse (y=96), purchase (y=128)
 - `03F` -> Asymmetrical single-unit engines NOT A/B, Single NOT articulated (2nd item will flip/reverse)
 - `03G` -> Same as A but 12 length
 
 For **Wagons**, it's a little chaotic because there are 'simple' (`TPL_01F`) ones with no loading states, then ones with liveries (`TPL_04A`) + loading states (`TPL_04B`). 
-Basic Coach Push-Pull and also not Push-Pull -> `TPL_04U`.
+Basic Coach Push-Pull and also not Push-Pull -> `TPL_04U`. Coaches with a specific 'end' carriage sprite and no push-pull -> `TPL_04S`. Superheavy wagons (articulated) -> `TPL_25A`.
 
 Basically don't create new types of Wagons. At the moment Gen 6/7 use G5 graphics, it'd be awesome if someone updated those but don't reinvent the wheel please.
 
 **Coaches** are `TPL_04A`, with or without push-pull - Unless you want loading states like the Indian whichever coach that has people hanging on it when full - that's `TPL_04B`. If you are using a simple wagon with no alternatives (like dining coach, first class, that sorta stuff) it's `TPL_04U`, also supports push-pull.
 
-Vehicles with **12 length** use `TPL_016`.
-Vehicles with **10 length** use `TPL_032` 
+Vehicles with **12 length** use `TPL_16A` (`16B` is Turbobus only, don't use).
+Vehicles with **10 length** use `TPL_32`
 - `32A` for no animation (articulated) and 
 - `32B` for with animation. 
 - `32C` is the same as `B` but has `length` added to the visualisation switch. 
 - `32D` is same as A but no articulation
 
-Things with **front and back but no livery or loading states** use `TPL_017A`.
+Things with **front and back but no livery or loading states** use `TPL_17A`.
 
-- For **A/B Front/Back** it's `TPL_017B`
-- For **Front 1, Front 2, Middle, Back 1, Back 2** it's `TPL_017C`.
-- For **Front 1, Front 2, Middle 1, Middle 2, Back 1, Back 2** it's `TPL_017D`.
-- For **Front 1, Front 2, Back 1, Back 2** it's `TPL_017E`.
+- For **A/B Front/Back** it's `TPL_17B`
+- For **Front 1, Front 2, Middle, Back 1, Back 2** it's `TPL_17C`.
+- For **Front 1, Front 2, Middle 1, Middle 2, Back 1, Back 2** it's `TPL_17D`.
+- For **Front 1, Front 2, Back 1, Back 2** it's `TPL_17E`.
 
-`TPL_042` are for special vehicles
+`TPL_42` are for special vehicles
 - `042A`: CargoDMU
 - `042B`: M250 CargoEMU
 - `042C`: DD CargoEMU

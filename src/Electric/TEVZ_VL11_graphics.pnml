@@ -14,12 +14,12 @@ spriteset(spriteset_electric_tevz_vl11_purchase, "gfx/electric/tevz_vl11.png") {
 spriteset(spriteset_electric_tevz_vl11_engine, "gfx/electric/tevz_vl11.png") {template_2cc_engines_general(1, 1)}
 
 
-/// Tender
-spriteset(spriteset_electric_tevz_vl11_tender, "gfx/electric/tevz_vl11.png") {template_2cc_engines_general(1, 32)}
+/// B Unit
+spriteset(spriteset_electric_tevz_vl11_b_unit, "gfx/electric/tevz_vl11.png") {template_2cc_engines_general(1, 32)}
 
 switch(FEAT_TRAINS, SELF, switch_electric_tevz_vl11_position, position_in_vehid_chain % 2) {
 	0: spriteset_electric_tevz_vl11_engine;
-	spriteset_electric_tevz_vl11_tender;
+	spriteset_electric_tevz_vl11_b_unit;
 }
 
 /// Visual Effect

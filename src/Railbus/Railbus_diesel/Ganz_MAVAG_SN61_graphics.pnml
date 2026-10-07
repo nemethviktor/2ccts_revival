@@ -1,0 +1,26 @@
+//  Copyright (C) 2017 Transportman // V. Nemeth 2026+
+//  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
+
+// Template: TPL_01H
+// CargoDef: PASSENGERS_ONLY
+// ID: 2050
+
+// PURCHASE
+spriteset(spriteset_rbd_ganz_mavag_sn61_purchase, "gfx/railbus/railbus_diesel/ganz_mavag_sn61.png") {template_purchase(1, 64)}
+
+
+// VEHICLE
+
+/// ENGINE   NORMAL
+spriteset(spriteset_rbd_ganz_mavag_sn61_dt_normal, "gfx/railbus/railbus_diesel/ganz_mavag_sn61.png") {template_2cc_engines_general(1, 1)}
+
+
+/// ENGINE   REVERSE
+spriteset(spriteset_rbd_ganz_mavag_sn61_dt_reverse, "gfx/railbus/railbus_diesel/ganz_mavag_sn61.png") {template_2cc_engines_general(1, 32)}
+
+
+// Driving backwards switch
+switch(FEAT_TRAINS, PARENT, switch_rbd_ganz_mavag_sn61_direction, train_is_driving_backwards) {
+    1: spriteset_rbd_ganz_mavag_sn61_dt_reverse;
+    spriteset_rbd_ganz_mavag_sn61_dt_normal;
+}

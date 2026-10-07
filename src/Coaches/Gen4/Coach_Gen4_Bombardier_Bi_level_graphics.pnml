@@ -87,6 +87,7 @@ random_switch(FEAT_TRAINS, SELF, switch_mu_coach_gen4_bombardier_bi_level_livery
 	1: spriteset_mu_coach_gen4_bombardier_bi_level_l4_dt_reverse;
 }
 
+
 // Driving backwards switch
 switch(FEAT_TRAINS, PARENT, switch_mu_coach_gen4_bombardier_bi_level_direction, train_is_driving_backwards) {
     1: switch_mu_coach_gen4_bombardier_bi_level_livery_dt_forward;

@@ -87,6 +87,7 @@ random_switch(FEAT_TRAINS, SELF, switch_mu_coach_gen5_high_speed_double_decker_i
 	1: spriteset_mu_coach_gen5_high_speed_double_decker_ic2000_l4_dt_reverse;
 }
 
+
 // Driving backwards switch
 switch(FEAT_TRAINS, PARENT, switch_mu_coach_gen5_high_speed_double_decker_ic2000_direction, train_is_driving_backwards) {
     1: switch_mu_coach_gen5_high_speed_double_decker_ic2000_livery_dt_forward;

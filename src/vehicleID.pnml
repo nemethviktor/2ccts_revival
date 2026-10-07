@@ -258,9 +258,9 @@ item(FEAT_TRAINS, item_rbd_uerdingen_railbus, 2044) {}
 item(FEAT_TRAINS, item_rbd_eritrean_railway_a_62_70_littorina, 2045) {}
 item(FEAT_TRAINS, item_rbd_fiat_ferroviaria_aln_668_1400, 2046) {}
 item(FEAT_TRAINS, item_rbd_mav_ikarus_260, 2047) {}
-item(FEAT_TRAINS, item_rbd_ganz_mavag_ikarus, 2048) {}
+item(FEAT_TRAINS, item_rbd_ganz_mavag_ikarus_725_00, 2048) {}
 item(FEAT_TRAINS, item_rbd_faur_a20dp, 2049) {}
-// 2050 free
+item(FEAT_TRAINS, item_rbd_ganz_mavag_sn61, 2050) {}
 // 2051 free
 // 2052 free
 // 2053 free

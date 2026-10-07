@@ -52,11 +52,12 @@ item_rbd_valmet_dm7, /*Year: 1955*/ \
 item_rbd_fiat_ferroviaria_aln_668_1400, /*Year: 1956*/ \
 item_rbd_mak_gdt, /*Year: 1959*/ \
 item_rbd_sgp_77783_1960, /*Year: 1960*/ \
+item_rbd_ganz_mavag_sn61, /*Year: 1960*/ \
 item_rbd_efe_sb_56_buscarril, /*Year: 1961*/ \
 item_rbd_ferrostaal_esslingen_aa_71, /*Year: 1962*/ \
 item_rbd_alsthom_z_431, /*Year: 1975*/ \
 item_rbd_budd_spv_2000, /*Year: 1979*/ \
-item_rbd_ganz_mavag_ikarus, /*Year: 1983*/ \
+item_rbd_ganz_mavag_ikarus_725_00, /*Year: 1983*/ \
 item_rbd_vagonka_studenka_91m0_, /*Year: 1984*/ \
 item_rbd_ns_dh1, /*Year: 1984*/ \
 item_rbd_faur_a20dp, /*Year: 1984*/ \

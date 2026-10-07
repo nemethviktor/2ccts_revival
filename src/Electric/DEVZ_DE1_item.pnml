@@ -1,7 +1,7 @@
 //  Copyright (C) 2017 Transportman // V. Nemeth 2026+
 //  This file is part of the 2cc Trains In NML (Revival) - GNU General Public License v3
 
-// Template: TPL_17A
+// Template: TPL_03D
 // CargoDef: NONE
 // ID: 6117
 
@@ -54,7 +54,7 @@ item(FEAT_TRAINS, item_electric_devz_de1) {
     graphics {
         purchase: spriteset_electric_devz_de1_purchase;
         visual_effect_and_powered: switch_electric_devz_de1_visual_effect;
-        // no 'length'
+        length: switch_electric_devz_de1_length;
         articulated_part: switch_electric_devz_de1_articulated;
         can_attach_wagon: switch_can_attach_vehicle;
         default: switch_electric_devz_de1_position;

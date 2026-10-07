@@ -14,12 +14,12 @@ spriteset(spriteset_electric_toshiba_eh10_purchase, "gfx/electric/toshiba_eh10.p
 spriteset(spriteset_electric_toshiba_eh10_engine, "gfx/electric/toshiba_eh10.png") {template_2cc_engines_general(1, 1)}
 
 
-/// Tender
-spriteset(spriteset_electric_toshiba_eh10_tender, "gfx/electric/toshiba_eh10.png") {template_2cc_engines_general(1, 32)}
+/// B Unit
+spriteset(spriteset_electric_toshiba_eh10_b_unit, "gfx/electric/toshiba_eh10.png") {template_2cc_engines_general(1, 32)}
 
 switch(FEAT_TRAINS, SELF, switch_electric_toshiba_eh10_position, position_in_vehid_chain % 2) {
 	0: spriteset_electric_toshiba_eh10_engine;
-	spriteset_electric_toshiba_eh10_tender;
+	spriteset_electric_toshiba_eh10_b_unit;
 }
 
 /// Visual Effect

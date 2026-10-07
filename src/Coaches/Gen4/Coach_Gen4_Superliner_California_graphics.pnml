@@ -87,6 +87,7 @@ random_switch(FEAT_TRAINS, SELF, switch_mu_coach_gen4_superliner_california_live
 	1: spriteset_mu_coach_gen4_superliner_california_l4_dt_reverse;
 }
 
+
 // Driving backwards switch
 switch(FEAT_TRAINS, PARENT, switch_mu_coach_gen4_superliner_california_direction, train_is_driving_backwards) {
     1: switch_mu_coach_gen4_superliner_california_livery_dt_forward;

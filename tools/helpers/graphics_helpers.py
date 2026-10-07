@@ -1,6 +1,13 @@
 from functools import wraps
 from typing import Literal, Optional
 
+import sys
+
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))  # allow running this file directly
+from tools.helpers.common import is_true
+
 
 def scrub_nml_data(func):
     @wraps(func)
@@ -270,6 +277,30 @@ switch(FEAT_TRAINS, SELF, switch_{vid}_reversed, var[0xC8]) {{
     return nml_code
 
 
+def get_driving_backwards_switch(
+    *,
+    vid: str,
+    backwards_result: str,
+    otherwise_result: str,
+    name_suffix: str = "direction",
+    comment_suffix: str = "",
+) -> str:
+    """
+    Gets the 'driving backwards' switch, ie picks a different sprite/switch when the train is running in reverse.
+
+    :param backwards_result: what to return if train_is_driving_backwards == 1 (a full spriteset/switch name)
+    :param otherwise_result: the default (a full spriteset/switch name)
+    :param name_suffix: switch is called switch_{vid}_{name_suffix}
+    :param comment_suffix: appended to the comment, eg ' - engine'
+    """
+    return f"""
+// Driving backwards switch{comment_suffix}
+switch(FEAT_TRAINS, PARENT, switch_{vid}_{name_suffix}, train_is_driving_backwards) {{
+    1: {backwards_result};
+    {otherwise_result};
+}}"""
+
+
 @scrub_nml_data
 def get_switch_position(
     *,
@@ -511,3 +542,12 @@ def get_articulated_graphics_switch(
     nml_code += "}\n"
 
     return nml_code
+
+
+def should_have_pushpull_capability(row) -> bool:
+    if is_true(row["HAS_CAB"]) and is_true(row["IS_WAGON_OR_COACH"]):
+        return True
+    elif (row["TEMPLATE_ID"] + row["TEMPLATE_AMENDMENT_CODE"]) in ["TPL_01H", "TPL_03E"]:
+        return True
+    else:
+        return False

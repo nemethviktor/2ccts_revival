@@ -2281,11 +2281,14 @@
 #include "src/Railbus/Railbus_Diesel/MAV_Ikarus_260_graphics.pnml"
 #include "src/Railbus/Railbus_Diesel/MAV_Ikarus_260_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Ganz_MAVAG_Ikarus_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Ganz_MAVAG_Ikarus_item.pnml"
+#include "src/Railbus/Railbus_Diesel/Ganz_MAVAG_Ikarus_725_00_graphics.pnml"
+#include "src/Railbus/Railbus_Diesel/Ganz_MAVAG_Ikarus_725_00_item.pnml"
 
 #include "src/Railbus/Railbus_Diesel/Faur_A20DP_graphics.pnml"
 #include "src/Railbus/Railbus_Diesel/Faur_A20DP_item.pnml"
+
+#include "src/Railbus/Railbus_Diesel/Ganz_MAVAG_SN61_graphics.pnml"
+#include "src/Railbus/Railbus_Diesel/Ganz_MAVAG_SN61_item.pnml"
 
 
 //// RAILBUS - RAILBUS_ELECTRIC

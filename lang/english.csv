@@ -1501,3 +1501,5 @@ str_dmu_ganz_cmu_4701_transandino,Ganz 'Transandino' CMU 4701
 str_emu_hitachi_kawasaki_shinkansen_family,Hitachi & Kawasaki Shinkansen
 str_electric_pesa_111_family,Pesa 111
 str_emu_prr_mp54_family,PRR MP54
+str_rbd_ganz_mavag_sn61,Ganz-MAVAG SN61
+str_rbd_ganz_mavag_ikarus_725_00,Ganz-MAVAG Ikarus 725.00
