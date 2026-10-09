@@ -34,7 +34,7 @@ item(FEAT_TRAINS, item_emu_siemens_desiro_es1_lastochka) {
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 45;
         retire_early: 20;
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         cost_factor: 62.45;
         running_cost_factor: 67.18;
         speed: 160 km/h;
@@ -76,7 +76,7 @@ item(FEAT_TRAINS, item_emu_siemens_desiro_es1_lastochka) {
         default: switch_emu_siemens_desiro_es1_lastochka_reversed;
     }
     livery_override (item_mu_mu_wagon_unpowered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: int(160/10);
         weight: int(56*1/2);
         cargo_capacity: 88;
@@ -84,7 +84,7 @@ item(FEAT_TRAINS, item_emu_siemens_desiro_es1_lastochka) {
         default: switch_emu_siemens_desiro_es1_lastochka_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: round(30.380152422706633);
         power: int(2700*1/2);
         weight: int(56*3/4);

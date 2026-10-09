@@ -30,7 +30,7 @@ item(FEAT_TRAINS, item_rbe_pesa_308b) {
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 45;
         retire_early: 20;
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         cost_factor: 39.15;
         running_cost_factor: 44.84;
         speed: 120 km/h;

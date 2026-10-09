@@ -30,7 +30,7 @@ item(FEAT_TRAINS, item_rbe_budd_silverliner_ii) {
         model_life: 45;
         vehicle_life: 49;
         retire_early: 20;
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         cost_factor: 34.21;
         running_cost_factor: 43.03;
         speed: 137 km/h;

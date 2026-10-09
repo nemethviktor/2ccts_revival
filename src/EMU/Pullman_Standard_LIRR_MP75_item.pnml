@@ -30,7 +30,7 @@ item(FEAT_TRAINS, item_emu_pullman_standard_lirr_mp75) {
         model_life: 45;
         vehicle_life: 41;
         retire_early: 20;
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         cost_factor: 37.41;
         running_cost_factor: 46.36;
         speed: 130 km/h;
@@ -73,7 +73,7 @@ item(FEAT_TRAINS, item_emu_pullman_standard_lirr_mp75) {
         default: switch_emu_pullman_standard_lirr_mp75_reversed;
     }
     livery_override (item_mu_mu_wagon_unpowered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: int(130/10);
         weight: int(26*1/2);
         cargo_capacity: 130;
@@ -81,7 +81,7 @@ item(FEAT_TRAINS, item_emu_pullman_standard_lirr_mp75) {
         default: switch_emu_pullman_standard_lirr_mp75_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: round(22.32842712474619);
         power: int(800*1/2);
         weight: int(26*3/4);

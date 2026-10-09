@@ -18,7 +18,7 @@ item(FEAT_TRAINS, item_mu_coach_gen6_super_voyager_coach) {
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 25;
         retire_early: 0;
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
         cost_factor: 62.57;
         running_cost_factor: 24.94;
         speed: 350 km/h;

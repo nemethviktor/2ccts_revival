@@ -35,7 +35,7 @@ item(FEAT_TRAINS, item_emu_mmz_s) {
         model_life: 45;
         vehicle_life: 83;
         retire_early: 20;
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         cost_factor: 51.97;
         running_cost_factor: 51.5;
         speed: 85 km/h;
@@ -77,7 +77,7 @@ item(FEAT_TRAINS, item_emu_mmz_s) {
         default: switch_emu_mmz_s_reversed;
     }
     livery_override (item_mu_mu_wagon_unpowered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: int(85/10);
         weight: int(58*1/2);
         cargo_capacity: 110;
@@ -85,7 +85,7 @@ item(FEAT_TRAINS, item_emu_mmz_s) {
         default: switch_emu_mmz_s_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: round(27.296380529547775);
         power: int(1610*1/2);
         weight: int(58*3/4);

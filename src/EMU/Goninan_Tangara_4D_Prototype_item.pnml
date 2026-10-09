@@ -30,7 +30,7 @@ item(FEAT_TRAINS, item_emu_goninan_tangara_4d_prototype) {
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 40;
         retire_early: 20;
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         cost_factor: 55.97;
         running_cost_factor: 58.57;
         speed: 130 km/h;
@@ -72,7 +72,7 @@ item(FEAT_TRAINS, item_emu_goninan_tangara_4d_prototype) {
         default: switch_emu_goninan_tangara_4d_prototype_reversed;
     }
     livery_override (item_mu_mu_wagon_unpowered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: int(130/10);
         weight: int(46*1/2);
         cargo_capacity: 243;
@@ -80,7 +80,7 @@ item(FEAT_TRAINS, item_emu_goninan_tangara_4d_prototype) {
         default: switch_emu_goninan_tangara_4d_prototype_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: round(28.895831300812524);
         power: int(1824*1/2);
         weight: int(46*3/4);

@@ -36,7 +36,7 @@ item(FEAT_TRAINS, item_dmu_vagonka_studenka_814) {
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 45;
         retire_early: 20;
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         cost_factor: 25.67;
         running_cost_factor: 29.16;
         speed: 80 km/h;
@@ -78,7 +78,7 @@ item(FEAT_TRAINS, item_dmu_vagonka_studenka_814) {
         default: switch_dmu_vagonka_studenka_814_reversed;
     }
     livery_override (item_mu_mu_wagon_unpowered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: int(80/10);
         weight: int(22*1/2);
         cargo_capacity: 95;
@@ -86,7 +86,7 @@ item(FEAT_TRAINS, item_dmu_vagonka_studenka_814) {
         default: switch_dmu_vagonka_studenka_814_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: round(12.552775637731994);
         power: int(325*1/2);
         weight: int(22*3/4);

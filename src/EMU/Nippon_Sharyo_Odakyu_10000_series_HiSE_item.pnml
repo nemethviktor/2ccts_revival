@@ -30,7 +30,7 @@ item(FEAT_TRAINS, item_emu_nippon_sharyo_odakyu_10000_series_hise) {
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 40;
         retire_early: 20;
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         cost_factor: 46.69;
         running_cost_factor: 52.73;
         speed: 110 km/h;
@@ -72,7 +72,7 @@ item(FEAT_TRAINS, item_emu_nippon_sharyo_odakyu_10000_series_hise) {
         default: switch_emu_nippon_sharyo_odakyu_10000_series_hise_reversed;
     }
     livery_override (item_mu_mu_wagon_unpowered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: int(110/10);
         weight: int(32*1/2);
         cargo_capacity: 44;
@@ -80,7 +80,7 @@ item(FEAT_TRAINS, item_emu_nippon_sharyo_odakyu_10000_series_hise) {
         default: switch_emu_nippon_sharyo_odakyu_10000_series_hise_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: round(19.220703937005904);
         power: int(1550*1/2);
         weight: int(32*3/4);

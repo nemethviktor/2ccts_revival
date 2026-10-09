@@ -34,7 +34,7 @@ item(FEAT_TRAINS, item_dmu_camrail_ze_500) {
         model_life: 45;
         vehicle_life: 40;
         retire_early: 20;
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         cost_factor: 27.73;
         running_cost_factor: 30.49;
         speed: 90 km/h;
@@ -76,7 +76,7 @@ item(FEAT_TRAINS, item_dmu_camrail_ze_500) {
         default: switch_dmu_camrail_ze_500_reversed;
     }
     livery_override (item_mu_mu_wagon_unpowered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: int(90/10);
         weight: int(38*1/2);
         cargo_capacity: 62;
@@ -84,7 +84,7 @@ item(FEAT_TRAINS, item_dmu_camrail_ze_500) {
         default: switch_dmu_camrail_ze_500_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: round(15.765071942966532);
         power: int(376*1/2);
         weight: int(38*3/4);

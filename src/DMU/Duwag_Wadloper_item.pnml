@@ -30,7 +30,7 @@ item(FEAT_TRAINS, item_dmu_duwag_wadloper) {
         model_life: 45;
         vehicle_life: 40;
         retire_early: 20;
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         cost_factor: 32.18;
         running_cost_factor: 35.34;
         speed: 101 km/h;
@@ -72,7 +72,7 @@ item(FEAT_TRAINS, item_dmu_duwag_wadloper) {
         default: switch_dmu_duwag_wadloper_reversed;
     }
     livery_override (item_mu_mu_wagon_unpowered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: int(101/10);
         weight: int(34*1/2);
         cargo_capacity: 80;
@@ -80,7 +80,7 @@ item(FEAT_TRAINS, item_dmu_duwag_wadloper) {
         default: switch_dmu_duwag_wadloper_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: round(15.938653918225938);
         power: int(562*1/2);
         weight: int(34*3/4);

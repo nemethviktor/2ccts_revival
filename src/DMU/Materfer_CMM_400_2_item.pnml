@@ -34,7 +34,7 @@ item(FEAT_TRAINS, item_dmu_materfer_cmm_400_2) {
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 45;
         retire_early: 20;
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         cost_factor: 37.91;
         running_cost_factor: 40.36;
         speed: 120 km/h;
@@ -76,7 +76,7 @@ item(FEAT_TRAINS, item_dmu_materfer_cmm_400_2) {
         default: switch_dmu_materfer_cmm_400_2_reversed;
     }
     livery_override (item_mu_mu_wagon_unpowered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: int(120/10);
         weight: int(48*1/2);
         cargo_capacity: 70;
@@ -84,7 +84,7 @@ item(FEAT_TRAINS, item_dmu_materfer_cmm_400_2) {
         default: switch_dmu_materfer_cmm_400_2_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: round(19.148427124746192);
         power: int(800*1/2);
         weight: int(48*3/4);

@@ -30,7 +30,7 @@ item(FEAT_TRAINS, item_emu_victorian_railways_tait_trains) {
         model_life: 45;
         vehicle_life: 65;
         retire_early: 20;
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         cost_factor: 25.18;
         running_cost_factor: 31.98;
         speed: 80 km/h;
@@ -73,7 +73,7 @@ item(FEAT_TRAINS, item_emu_victorian_railways_tait_trains) {
         default: switch_emu_victorian_railways_tait_trains_reversed;
     }
     livery_override (item_mu_mu_wagon_unpowered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: int(80/10);
         weight: int(35*1/2);
         cargo_capacity: 72;
@@ -81,7 +81,7 @@ item(FEAT_TRAINS, item_emu_victorian_railways_tait_trains) {
         default: switch_emu_victorian_railways_tait_trains_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: round(16.679285562374666);
         power: int(282*1/2);
         weight: int(35*3/4);

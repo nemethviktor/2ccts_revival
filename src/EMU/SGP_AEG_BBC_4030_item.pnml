@@ -30,7 +30,7 @@ item(FEAT_TRAINS, item_emu_sgp_aeg_bbc_4030) {
         model_life: 45;
         vehicle_life: 48;
         retire_early: 20;
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         cost_factor: 45.88;
         running_cost_factor: 49.86;
         speed: 100 km/h;
@@ -72,7 +72,7 @@ item(FEAT_TRAINS, item_emu_sgp_aeg_bbc_4030) {
         default: switch_emu_sgp_aeg_bbc_4030_reversed;
     }
     livery_override (item_mu_mu_wagon_unpowered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: int(100/10);
         weight: int(44*1/2);
         cargo_capacity: 72;
@@ -80,7 +80,7 @@ item(FEAT_TRAINS, item_emu_sgp_aeg_bbc_4030) {
         default: switch_emu_sgp_aeg_bbc_4030_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: round(18.721966684720112);
         power: int(1341*1/2);
         weight: int(44*3/4);

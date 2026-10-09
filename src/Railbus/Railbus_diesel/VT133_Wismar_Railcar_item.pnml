@@ -30,7 +30,7 @@ item(FEAT_TRAINS, item_rbd_vt133_wismar_railcar) {
         model_life: 45;
         vehicle_life: 30;
         retire_early: 20;
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         cost_factor: 9.59;
         running_cost_factor: 15.4;
         speed: 56 km/h;

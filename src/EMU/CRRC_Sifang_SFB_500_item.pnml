@@ -30,7 +30,7 @@ item(FEAT_TRAINS, item_emu_crrc_sifang_sfb_500) {
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 45;
         retire_early: 20;
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
         cost_factor: 98.17;
         running_cost_factor: 96.84;
         speed: 180 km/h;
@@ -72,7 +72,7 @@ item(FEAT_TRAINS, item_emu_crrc_sifang_sfb_500) {
         default: switch_emu_crrc_sifang_sfb_500_reversed;
     }
     livery_override (item_mu_mu_wagon_unpowered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
         running_cost_factor: int(180/10);
         weight: int(51*1/2);
         cargo_capacity: 118;
@@ -80,7 +80,7 @@ item(FEAT_TRAINS, item_emu_crrc_sifang_sfb_500) {
         default: switch_emu_crrc_sifang_sfb_500_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
         running_cost_factor: round(38.87902561731732);
         power: int(7510*1/2);
         weight: int(51*3/4);

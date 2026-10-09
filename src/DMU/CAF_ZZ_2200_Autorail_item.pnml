@@ -30,7 +30,7 @@ item(FEAT_TRAINS, item_dmu_caf_zz_2200_autorail) {
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 45;
         retire_early: 20;
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         cost_factor: 48.01;
         running_cost_factor: 50.42;
         speed: 160 km/h;
@@ -72,7 +72,7 @@ item(FEAT_TRAINS, item_dmu_caf_zz_2200_autorail) {
         default: switch_dmu_caf_zz_2200_autorail_reversed;
     }
     livery_override (item_mu_mu_wagon_unpowered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: int(160/10);
         weight: int(55*1/2);
         cargo_capacity: 99;
@@ -80,7 +80,7 @@ item(FEAT_TRAINS, item_dmu_caf_zz_2200_autorail) {
         default: switch_dmu_caf_zz_2200_autorail_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: round(26.826955262170046);
         power: int(1352*1/2);
         weight: int(55*3/4);

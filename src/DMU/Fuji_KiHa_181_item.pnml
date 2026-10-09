@@ -34,7 +34,7 @@ item(FEAT_TRAINS, item_dmu_fuji_kiha_181) {
         model_life: 45;
         vehicle_life: 43;
         retire_early: 20;
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         cost_factor: 31.04;
         running_cost_factor: 34.65;
         speed: 120 km/h;
@@ -76,7 +76,7 @@ item(FEAT_TRAINS, item_dmu_fuji_kiha_181) {
         default: switch_dmu_fuji_kiha_181_reversed;
     }
     livery_override (item_mu_mu_wagon_unpowered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: int(120/10);
         weight: int(44*1/2);
         cargo_capacity: 76;
@@ -84,7 +84,7 @@ item(FEAT_TRAINS, item_dmu_fuji_kiha_181) {
         default: switch_dmu_fuji_kiha_181_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: round(19.73606797749979);
         power: int(500*1/2);
         weight: int(44*3/4);

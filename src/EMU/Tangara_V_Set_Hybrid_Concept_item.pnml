@@ -29,7 +29,7 @@ item(FEAT_TRAINS, item_emu_tangara_v_set_hybrid_concept) {
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 40;
         retire_early: 20;
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         cost_factor: 51.35;
         running_cost_factor: 55.52;
         speed: 130 km/h;
@@ -71,7 +71,7 @@ item(FEAT_TRAINS, item_emu_tangara_v_set_hybrid_concept) {
         default: switch_emu_tangara_v_set_hybrid_concept_reversed;
     }
     livery_override (item_mu_mu_wagon_unpowered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: int(130/10);
         weight: int(54*1/2);
         cargo_capacity: 100;
@@ -79,7 +79,7 @@ item(FEAT_TRAINS, item_emu_tangara_v_set_hybrid_concept) {
         default: switch_emu_tangara_v_set_hybrid_concept_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: round(37.412);
         power: int(1600*1/2);
         weight: int(54*3/4);

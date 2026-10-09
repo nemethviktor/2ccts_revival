@@ -30,7 +30,7 @@ item(FEAT_TRAINS, item_dmu_comeng_adk) {
         model_life: 45;
         vehicle_life: 40;
         retire_early: 20;
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         cost_factor: 28.56;
         running_cost_factor: 31.6;
         speed: 90 km/h;
@@ -72,7 +72,7 @@ item(FEAT_TRAINS, item_dmu_comeng_adk) {
         default: switch_dmu_comeng_adk_reversed;
     }
     livery_override (item_mu_mu_wagon_unpowered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: int(90/10);
         weight: int(33*1/2);
         cargo_capacity: 74;
@@ -80,7 +80,7 @@ item(FEAT_TRAINS, item_dmu_comeng_adk) {
         default: switch_dmu_comeng_adk_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: round(14.009607805437113);
         power: int(416*1/2);
         weight: int(33*3/4);

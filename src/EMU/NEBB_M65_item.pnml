@@ -35,7 +35,7 @@ item(FEAT_TRAINS, item_emu_nebb_m65) {
         model_life: 45;
         vehicle_life: 30;
         retire_early: 20;
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         cost_factor: 32.86;
         running_cost_factor: 37.16;
         speed: 70 km/h;
@@ -77,7 +77,7 @@ item(FEAT_TRAINS, item_emu_nebb_m65) {
         default: switch_emu_nebb_m65_reversed;
     }
     livery_override (item_mu_mu_wagon_unpowered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: int(70/10);
         weight: int(38*1/2);
         cargo_capacity: 50;
@@ -85,7 +85,7 @@ item(FEAT_TRAINS, item_emu_nebb_m65) {
         default: switch_emu_nebb_m65_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: round(13.844492782667984);
         power: int(622*1/2);
         weight: int(38*3/4);

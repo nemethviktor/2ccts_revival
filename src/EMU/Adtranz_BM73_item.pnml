@@ -35,7 +35,7 @@ item(FEAT_TRAINS, item_emu_adtranz_bm73) {
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 40;
         retire_early: 20;
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
         cost_factor: 58.2;
         running_cost_factor: 67.64;
         speed: 210 km/h;
@@ -77,7 +77,7 @@ item(FEAT_TRAINS, item_emu_adtranz_bm73) {
         default: switch_emu_adtranz_bm73_reversed;
     }
     livery_override (item_mu_mu_wagon_unpowered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
         running_cost_factor: int(210/10);
         weight: int(54*1/2);
         cargo_capacity: 54;
@@ -85,7 +85,7 @@ item(FEAT_TRAINS, item_emu_adtranz_bm73) {
         default: switch_emu_adtranz_bm73_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
         running_cost_factor: round(31.769078587059855);
         power: int(2332*1/2);
         weight: int(54*3/4);

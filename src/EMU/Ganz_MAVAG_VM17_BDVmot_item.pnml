@@ -30,7 +30,7 @@ item(FEAT_TRAINS, item_emu_ganz_mavag_vm17_bdvmot) {
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 42;
         retire_early: 20;
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         cost_factor: 57.06;
         running_cost_factor: 58.66;
         speed: 120 km/h;
@@ -72,7 +72,7 @@ item(FEAT_TRAINS, item_emu_ganz_mavag_vm17_bdvmot) {
         default: switch_emu_ganz_mavag_vm17_bdvmot_reversed;
     }
     livery_override (item_mu_mu_wagon_unpowered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: int(120/10);
         weight: int(66*1/2);
         cargo_capacity: 86;
@@ -80,7 +80,7 @@ item(FEAT_TRAINS, item_emu_ganz_mavag_vm17_bdvmot) {
         default: switch_emu_ganz_mavag_vm17_bdvmot_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: round(23.776635916254484);
         power: int(2040*1/2);
         weight: int(66*3/4);

@@ -34,7 +34,7 @@ item(FEAT_TRAINS, item_emu_ugl_rail_h_set_oscar) {
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 45;
         retire_early: 20;
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         cost_factor: 58.25;
         running_cost_factor: 60.7;
         speed: 130 km/h;
@@ -76,7 +76,7 @@ item(FEAT_TRAINS, item_emu_ugl_rail_h_set_oscar) {
         default: switch_emu_ugl_rail_h_set_oscar_reversed;
     }
     livery_override (item_mu_mu_wagon_unpowered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: int(130/10);
         weight: int(57*1/2);
         cargo_capacity: 120;
@@ -84,7 +84,7 @@ item(FEAT_TRAINS, item_emu_ugl_rail_h_set_oscar) {
         default: switch_emu_ugl_rail_h_set_oscar_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: round(28.859334761116088);
         power: int(2144*1/2);
         weight: int(57*3/4);

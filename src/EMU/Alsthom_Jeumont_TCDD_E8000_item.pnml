@@ -30,7 +30,7 @@ item(FEAT_TRAINS, item_emu_alsthom_jeumont_tcdd_e8000) {
         model_life: 45;
         vehicle_life: 56;
         retire_early: 20;
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         cost_factor: 42.32;
         running_cost_factor: 46.2;
         speed: 90 km/h;
@@ -72,7 +72,7 @@ item(FEAT_TRAINS, item_emu_alsthom_jeumont_tcdd_e8000) {
         default: switch_emu_alsthom_jeumont_tcdd_e8000_reversed;
     }
     livery_override (item_mu_mu_wagon_unpowered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: int(90/10);
         weight: int(40*1/2);
         cargo_capacity: 81;
@@ -80,7 +80,7 @@ item(FEAT_TRAINS, item_emu_alsthom_jeumont_tcdd_e8000) {
         default: switch_emu_alsthom_jeumont_tcdd_e8000_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: round(19.4366247903554);
         power: int(1100*1/2);
         weight: int(40*3/4);

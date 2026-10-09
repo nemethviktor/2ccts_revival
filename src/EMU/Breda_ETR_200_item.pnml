@@ -30,7 +30,7 @@ item(FEAT_TRAINS, item_emu_breda_etr_200) {
         model_life: 45;
         vehicle_life: 30;
         retire_early: 20;
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         cost_factor: 38.82;
         running_cost_factor: 49.95;
         speed: 160 km/h;
@@ -72,7 +72,7 @@ item(FEAT_TRAINS, item_emu_breda_etr_200) {
         default: switch_emu_breda_etr_200_reversed;
     }
     livery_override (item_mu_mu_wagon_unpowered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: int(160/10);
         weight: int(38*1/2);
         cargo_capacity: 52;
@@ -80,7 +80,7 @@ item(FEAT_TRAINS, item_emu_breda_etr_200) {
         default: switch_emu_breda_etr_200_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: round(21.593345232889376);
         power: int(938*1/2);
         weight: int(38*3/4);

@@ -35,7 +35,7 @@ item(FEAT_TRAINS, item_emu_stadler_4010_kiss) {
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 45;
         retire_early: 20;
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
         cost_factor: 85.59;
         running_cost_factor: 86.86;
         speed: 200 km/h;
@@ -77,7 +77,7 @@ item(FEAT_TRAINS, item_emu_stadler_4010_kiss) {
         default: switch_emu_stadler_4010_kiss_reversed;
     }
     livery_override (item_mu_mu_wagon_unpowered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
         running_cost_factor: int(200/10);
         weight: int(78*1/2);
         cargo_capacity: 140;
@@ -85,7 +85,7 @@ item(FEAT_TRAINS, item_emu_stadler_4010_kiss) {
         default: switch_emu_stadler_4010_kiss_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
         running_cost_factor: round(37.52553036257804);
         power: int(5340*1/2);
         weight: int(78*3/4);

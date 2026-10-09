@@ -36,7 +36,7 @@ item(FEAT_TRAINS, item_emu_lhb_420) {
         model_life: 45;
         vehicle_life: 40;
         retire_early: 20;
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         cost_factor: 57.77;
         running_cost_factor: 60.49;
         speed: 125 km/h;
@@ -78,7 +78,7 @@ item(FEAT_TRAINS, item_emu_lhb_420) {
         default: switch_emu_lhb_420_reversed;
     }
     livery_override (item_mu_mu_wagon_unpowered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: int(125/10);
         weight: int(46*1/2);
         cargo_capacity: 152;
@@ -86,7 +86,7 @@ item(FEAT_TRAINS, item_emu_lhb_420) {
         default: switch_emu_lhb_420_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: round(23.57033476111609);
         power: int(2144*1/2);
         weight: int(46*3/4);

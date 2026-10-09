@@ -36,7 +36,7 @@ item(FEAT_TRAINS, item_dmu_south_australian_railways_400_redhen) {
         model_life: 45;
         vehicle_life: 40;
         retire_early: 20;
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         cost_factor: 21.95;
         running_cost_factor: 26.52;
         speed: 88 km/h;
@@ -78,7 +78,7 @@ item(FEAT_TRAINS, item_dmu_south_australian_railways_400_redhen) {
         default: switch_dmu_south_australian_railways_400_redhen_reversed;
     }
     livery_override (item_mu_mu_wagon_unpowered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: int(88/10);
         weight: int(20*1/2);
         cargo_capacity: 80;
@@ -86,7 +86,7 @@ item(FEAT_TRAINS, item_dmu_south_australian_railways_400_redhen) {
         default: switch_dmu_south_australian_railways_400_redhen_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: round(13.233989697419133);
         power: int(220*1/2);
         weight: int(20*3/4);

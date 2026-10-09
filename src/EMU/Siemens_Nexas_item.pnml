@@ -30,7 +30,7 @@ item(FEAT_TRAINS, item_emu_siemens_nexas) {
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 45;
         retire_early: 20;
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         cost_factor: 46.72;
         running_cost_factor: 53.74;
         speed: 145 km/h;
@@ -73,7 +73,7 @@ item(FEAT_TRAINS, item_emu_siemens_nexas) {
         default: switch_emu_siemens_nexas_reversed;
     }
     livery_override (item_mu_mu_wagon_unpowered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: int(145/10);
         weight: int(40*1/2);
         cargo_capacity: 140;
@@ -81,7 +81,7 @@ item(FEAT_TRAINS, item_emu_siemens_nexas) {
         default: switch_emu_siemens_nexas_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: round(30.08608421540822);
         power: int(1286*1/2);
         weight: int(40*3/4);

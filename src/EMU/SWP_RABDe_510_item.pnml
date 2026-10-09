@@ -35,7 +35,7 @@ item(FEAT_TRAINS, item_emu_swp_rabde_510) {
         model_life: 45;
         vehicle_life: 45;
         retire_early: 20;
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         cost_factor: 57.82;
         running_cost_factor: 60.07;
         speed: 125 km/h;
@@ -77,7 +77,7 @@ item(FEAT_TRAINS, item_emu_swp_rabde_510) {
         default: switch_emu_swp_rabde_510_reversed;
     }
     livery_override (item_mu_mu_wagon_unpowered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: int(125/10);
         weight: int(66*1/2);
         cargo_capacity: 66;
@@ -85,7 +85,7 @@ item(FEAT_TRAINS, item_emu_swp_rabde_510) {
         default: switch_emu_swp_rabde_510_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: round(29.38332857821917);
         power: int(2184*1/2);
         weight: int(66*3/4);

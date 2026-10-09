@@ -34,7 +34,7 @@ item(FEAT_TRAINS, item_dmu_stadler_flirt_powerpack_dmu) {
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 45;
         retire_early: 20;
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         cost_factor: 59.39;
         running_cost_factor: 63.3;
         speed: 160 km/h;
@@ -76,7 +76,7 @@ item(FEAT_TRAINS, item_dmu_stadler_flirt_powerpack_dmu) {
         default: switch_dmu_stadler_flirt_powerpack_dmu_reversed;
     }
     livery_override (item_mu_mu_wagon_unpowered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: int(160/10);
         weight: int(31*1/2);
         cargo_capacity: 50;
@@ -84,7 +84,7 @@ item(FEAT_TRAINS, item_dmu_stadler_flirt_powerpack_dmu) {
         default: switch_dmu_stadler_flirt_powerpack_dmu_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: round(31.377802950489617);
         power: int(2682*1/2);
         weight: int(31*3/4);

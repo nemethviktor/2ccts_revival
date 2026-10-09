@@ -30,7 +30,7 @@ item(FEAT_TRAINS, item_dmu_kawasaki_rm_silver_fern) {
         model_life: 45;
         vehicle_life: 46;
         retire_early: 20;
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         cost_factor: 37.08;
         running_cost_factor: 41.17;
         speed: 120 km/h;
@@ -72,7 +72,7 @@ item(FEAT_TRAINS, item_dmu_kawasaki_rm_silver_fern) {
         default: switch_dmu_kawasaki_rm_silver_fern_reversed;
     }
     livery_override (item_mu_mu_wagon_unpowered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: int(120/10);
         weight: int(35*1/2);
         cargo_capacity: 32;
@@ -80,7 +80,7 @@ item(FEAT_TRAINS, item_dmu_kawasaki_rm_silver_fern) {
         default: switch_dmu_kawasaki_rm_silver_fern_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: round(22.0);
         power: int(900*1/2);
         weight: int(35*3/4);

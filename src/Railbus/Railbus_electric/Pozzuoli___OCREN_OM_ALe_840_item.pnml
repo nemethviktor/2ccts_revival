@@ -30,7 +30,7 @@ item(FEAT_TRAINS, item_rbe_pozzuoli___ocren_om_ale_840) {
         model_life: 45;
         vehicle_life: 56;
         retire_early: 20;
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         cost_factor: 39.28;
         running_cost_factor: 47.63;
         speed: 150 km/h;

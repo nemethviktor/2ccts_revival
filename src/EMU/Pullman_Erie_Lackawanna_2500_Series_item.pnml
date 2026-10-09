@@ -34,7 +34,7 @@ item(FEAT_TRAINS, item_emu_pullman_erie_lackawanna_2500_series) {
         model_life: 45;
         vehicle_life: 54;
         retire_early: 20;
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         cost_factor: 43.29;
         running_cost_factor: 46.31;
         speed: 101 km/h;
@@ -76,7 +76,7 @@ item(FEAT_TRAINS, item_emu_pullman_erie_lackawanna_2500_series) {
         default: switch_emu_pullman_erie_lackawanna_2500_series_reversed;
     }
     livery_override (item_mu_mu_wagon_unpowered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: int(101/10);
         weight: int(61*1/2);
         cargo_capacity: 84;
@@ -84,7 +84,7 @@ item(FEAT_TRAINS, item_emu_pullman_erie_lackawanna_2500_series) {
         default: switch_emu_pullman_erie_lackawanna_2500_series_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: round(27.07974388453426);
         power: int(1020*1/2);
         weight: int(61*3/4);

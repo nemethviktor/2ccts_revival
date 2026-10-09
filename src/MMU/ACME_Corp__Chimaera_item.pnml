@@ -30,7 +30,7 @@ item(FEAT_TRAINS, item_mmu_acme_corp__chimaera) {
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 45;
         retire_early: 20;
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
         cost_factor: 164.49;
         running_cost_factor: 133.54;
         speed: 643 km/h;
@@ -73,7 +73,7 @@ item(FEAT_TRAINS, item_mmu_acme_corp__chimaera) {
         default: switch_mmu_acme_corp__chimaera_reversed;
     }
     livery_override (item_mglv_maglev_wagon_unpowered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
         running_cost_factor: int(643/10);
         weight: int(150*1/2);
         cargo_capacity: 150;
@@ -81,7 +81,7 @@ item(FEAT_TRAINS, item_mmu_acme_corp__chimaera) {
         default: switch_mmu_acme_corp__chimaera_cargo_selection;
     }
     livery_override (item_mglv_maglev_wagon_powered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
         running_cost_factor: round(180.44213562373096);
         power: int(20000*1/2);
         weight: int(150*3/4);

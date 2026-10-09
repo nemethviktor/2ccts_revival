@@ -34,7 +34,7 @@ item(FEAT_TRAINS, item_dmu_tatra_m131) {
         model_life: 45;
         vehicle_life: 36;
         retire_early: 20;
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         cost_factor: 17.6;
         running_cost_factor: 22.08;
         speed: 60 km/h;
@@ -76,7 +76,7 @@ item(FEAT_TRAINS, item_dmu_tatra_m131) {
         default: switch_dmu_tatra_m131_reversed;
     }
     livery_override (item_mu_mu_wagon_unpowered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: int(60/10);
         weight: int(8*1/2);
         cargo_capacity: 69;
@@ -84,7 +84,7 @@ item(FEAT_TRAINS, item_dmu_tatra_m131) {
         default: switch_dmu_tatra_m131_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: round(8.710282800593795);
         power: int(152*1/2);
         weight: int(8*3/4);

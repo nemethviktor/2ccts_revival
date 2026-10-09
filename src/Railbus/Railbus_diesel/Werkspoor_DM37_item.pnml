@@ -34,7 +34,7 @@ item(FEAT_TRAINS, item_rbd_werkspoor_dm37) {
         model_life: 45;
         vehicle_life: 30;
         retire_early: 20;
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         cost_factor: 27.62;
         running_cost_factor: 29.72;
         speed: 105 km/h;

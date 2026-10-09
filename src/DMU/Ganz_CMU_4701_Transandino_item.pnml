@@ -35,7 +35,7 @@ item(FEAT_TRAINS, item_dmu_ganz_cmu_4701_transandino) {
         model_life: 45;
         vehicle_life: 40;
         retire_early: 20;
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         cost_factor: 42.01;
         running_cost_factor: 42.28;
         speed: 80 km/h;
@@ -77,7 +77,7 @@ item(FEAT_TRAINS, item_dmu_ganz_cmu_4701_transandino) {
         default: switch_dmu_ganz_cmu_4701_transandino_reversed;
     }
     livery_override (item_mu_mu_wagon_unpowered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: int(80/10);
         weight: int(46*1/2);
         cargo_capacity: 55;
@@ -85,7 +85,7 @@ item(FEAT_TRAINS, item_dmu_ganz_cmu_4701_transandino) {
         default: switch_dmu_ganz_cmu_4701_transandino_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 40/2 : (param_loadingspeed == 2) ? 40*2 : 40;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 60/2 : (param_loadingspeed == 2) ? 60*2 : 60;
         running_cost_factor: round(15.1806247903554);
         power: int(1100*1/2);
         weight: int(46*3/4);

@@ -35,7 +35,7 @@ item(FEAT_TRAINS, item_emu_alstom_avelia_horizon) {
         model_life: VEHICLE_NEVER_EXPIRES;
         vehicle_life: 45;
         retire_early: 20;
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
         cost_factor: 66.0;
         running_cost_factor: 82.47;
         speed: 360 km/h;
@@ -77,7 +77,7 @@ item(FEAT_TRAINS, item_emu_alstom_avelia_horizon) {
         default: switch_emu_alstom_avelia_horizon_reversed;
     }
     livery_override (item_mu_mu_wagon_unpowered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
         running_cost_factor: int(360/10);
         weight: int(44*1/2);
         cargo_capacity: 100;
@@ -85,7 +85,7 @@ item(FEAT_TRAINS, item_emu_alstom_avelia_horizon) {
         default: switch_emu_alstom_avelia_horizon_cargo_selection;
     }
     livery_override (item_mu_mu_wagon_powered) {
-        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 16/2 : (param_loadingspeed == 2) ? 16*2 : 16;
+        loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 20/2 : (param_loadingspeed == 2) ? 20*2 : 20;
         running_cost_factor: round(61.94335531087365);
         power: int(3104*1/2);
         weight: int(44*3/4);
