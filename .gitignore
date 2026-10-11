@@ -14,6 +14,7 @@ Makefile.fordist
 
 # The local makefile should be ignored:
 Makefile.local
+.venv
 
 # NML intermediate files
 parsetab.py
@@ -40,6 +41,6 @@ tools/data/~$vehicle_report.xlsx
 copygrftogoogledriveshare.bat
 tools/**/__pycache__/
 
-#experimental files ignoring
+#expiremental files ignored
 src.md
-Makefile*
+pybuild_deb_debug.sh
