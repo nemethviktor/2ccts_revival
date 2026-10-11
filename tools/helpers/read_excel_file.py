@@ -2,7 +2,7 @@ import openpyxl
 import pandas as pd
 import warnings
 
-from tools.helpers.paths import EXCEL_PATH
+from tools.helpers.paths import EXCEL_PATH, match_disk_case
 
 warnings.filterwarnings("ignore", category=UserWarning, module="openpyxl")
 
@@ -107,6 +107,12 @@ def load_master_data(excel_path: str):
         copyright_txt = str(df_copyright.iloc[0, 0])
     elif len(df_copyright.columns) > 0 and "Unnamed" not in str(df_copyright.columns[0]):
         copyright_txt = str(df_copyright.columns[0])
+
+    # Folder casing must match the disk (case-sensitive on Linux)
+    if "SAVE_TO" in df_master.columns:
+        df_master["SAVE_TO"] = df_master["SAVE_TO"].map(
+            lambda p: match_disk_case(p) if isinstance(p, str) else p
+        )
 
     # Final safety check before returning from load_master_data
     # df_master['COUNTRY_CODE'] = df_master['COUNTRY_CODE'].fillna('NA')

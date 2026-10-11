@@ -2281,11 +2281,14 @@
 #include "src/Railbus/Railbus_diesel/MAV_Ikarus_260_graphics.pnml"
 #include "src/Railbus/Railbus_diesel/MAV_Ikarus_260_item.pnml"
 
-#include "src/Railbus/Railbus_diesel/Ganz_MAVAG_Ikarus_graphics.pnml"
-#include "src/Railbus/Railbus_diesel/Ganz_MAVAG_Ikarus_item.pnml"
+#include "src/Railbus/Railbus_diesel/Ganz_MAVAG_Ikarus_725_00_graphics.pnml"
+#include "src/Railbus/Railbus_diesel/Ganz_MAVAG_Ikarus_725_00_item.pnml"
 
 #include "src/Railbus/Railbus_diesel/Faur_A20DP_graphics.pnml"
 #include "src/Railbus/Railbus_diesel/Faur_A20DP_item.pnml"
+
+#include "src/Railbus/Railbus_diesel/Ganz_MAVAG_SN61_graphics.pnml"
+#include "src/Railbus/Railbus_diesel/Ganz_MAVAG_SN61_item.pnml"
 
 
 //// RAILBUS - RAILBUS_ELECTRIC
@@ -2882,56 +2885,6 @@
 #include "src/Steam/Tours_Chapelon_2_12_0_160A_item.pnml"
 
 
-//// WAGONS_MAGLEV - GEN7M
-#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Boxcar_Type1_graphics.pnml"
-#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Boxcar_Type1_item.pnml"
-
-#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Boxcar_Type2_graphics.pnml"
-#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Boxcar_Type2_item.pnml"
-
-#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Car_Transporter_graphics.pnml"
-#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Car_Transporter_item.pnml"
-
-#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Centerbeam_graphics.pnml"
-#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Centerbeam_item.pnml"
-
-#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Container_Carrier_graphics.pnml"
-#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Container_Carrier_item.pnml"
-
-#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Container_Doublestack_graphics.pnml"
-#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Container_Doublestack_item.pnml"
-
-#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Flatcar_graphics.pnml"
-#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Flatcar_item.pnml"
-
-#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Gondola_graphics.pnml"
-#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Gondola_item.pnml"
-
-#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Heavy_Flatcar_graphics.pnml"
-#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Heavy_Flatcar_item.pnml"
-
-#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Hopper_Type1_graphics.pnml"
-#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Hopper_Type1_item.pnml"
-
-#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Hopper_Type2_graphics.pnml"
-#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Hopper_Type2_item.pnml"
-
-#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Silo_Type1_graphics.pnml"
-#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Silo_Type1_item.pnml"
-
-#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Silo_Type2_graphics.pnml"
-#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Silo_Type2_item.pnml"
-
-#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Superheavy_Flatcar_graphics.pnml"
-#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Superheavy_Flatcar_item.pnml"
-
-#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Tanker_graphics.pnml"
-#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Tanker_item.pnml"
-
-#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Livestock_Van_graphics.pnml"
-#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Livestock_Van_item.pnml"
-
-
 //// WAGONS - GEN1
 #include "src/Wagons/Gen1/Wagon_Gen1_Flat_Wagon_graphics.pnml"
 #include "src/Wagons/Gen1/Wagon_Gen1_Flat_Wagon_item.pnml"
@@ -3154,6 +3107,56 @@
 
 #include "src/Wagons/Service_Car/Wagon_Service_Car_Type2_graphics.pnml"
 #include "src/Wagons/Service_Car/Wagon_Service_Car_Type2_item.pnml"
+
+
+//// WAGONS_MAGLEV - GEN7M
+#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Boxcar_Type1_graphics.pnml"
+#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Boxcar_Type1_item.pnml"
+
+#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Boxcar_Type2_graphics.pnml"
+#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Boxcar_Type2_item.pnml"
+
+#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Car_Transporter_graphics.pnml"
+#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Car_Transporter_item.pnml"
+
+#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Centerbeam_graphics.pnml"
+#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Centerbeam_item.pnml"
+
+#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Container_Carrier_graphics.pnml"
+#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Container_Carrier_item.pnml"
+
+#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Container_Doublestack_graphics.pnml"
+#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Container_Doublestack_item.pnml"
+
+#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Flatcar_graphics.pnml"
+#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Flatcar_item.pnml"
+
+#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Gondola_graphics.pnml"
+#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Gondola_item.pnml"
+
+#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Heavy_Flatcar_graphics.pnml"
+#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Heavy_Flatcar_item.pnml"
+
+#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Hopper_Type1_graphics.pnml"
+#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Hopper_Type1_item.pnml"
+
+#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Hopper_Type2_graphics.pnml"
+#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Hopper_Type2_item.pnml"
+
+#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Silo_Type1_graphics.pnml"
+#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Silo_Type1_item.pnml"
+
+#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Silo_Type2_graphics.pnml"
+#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Silo_Type2_item.pnml"
+
+#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Superheavy_Flatcar_graphics.pnml"
+#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Superheavy_Flatcar_item.pnml"
+
+#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Tanker_graphics.pnml"
+#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Tanker_item.pnml"
+
+#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Livestock_Van_graphics.pnml"
+#include "src/Wagons_Maglev/Gen7M/Wagon_Gen7M_Livestock_Van_item.pnml"
 
 // Sort vehicles in purchase list
 #include "src/vehiclesort.pnml"
