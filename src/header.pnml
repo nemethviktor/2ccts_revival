@@ -11,7 +11,7 @@ grf {
 	name:	string(STR_GRF_NAME);
 	desc:	string(STR_GRF_DESCRIPTION);
     url:    string(STR_GRF_URL);
-	version:		9778;
+	version:		9780;
 	min_compatible_version:	9765;
     param {
         param_purchase_cost {
