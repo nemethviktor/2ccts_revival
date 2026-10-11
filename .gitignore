@@ -39,3 +39,7 @@ Makefile.dep
 tools/data/~$vehicle_report.xlsx
 copygrftogoogledriveshare.bat
 tools/**/__pycache__/
+
+#experimental files ignoring
+src.md
+Makefile*
