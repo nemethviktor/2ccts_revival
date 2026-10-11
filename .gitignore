@@ -44,3 +44,4 @@ tools/**/__pycache__/
 #experimental files ignoring
 src.md
 Makefile*
+pybuild_deb_debug.sh

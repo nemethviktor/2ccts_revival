@@ -5,6 +5,23 @@ BUILD_ONLY="${1:-n}"
 
 clear
 
+# Ask about venv activation
+read -p "Activate .venv? [y/N] " VENV_ANSWER
+if [[ "$VENV_ANSWER" == "y" || "$VENV_ANSWER" == "Y" ]]; then
+    if [[ ! -f ".venv/bin/activate" ]]; then
+        echo "Error: .venv not found. Create it first."
+        exit 1
+    fi
+    source .venv/bin/activate
+
+    # Verify requirements are installed
+    MISSING=$(pip check 2>&1 || true)
+    if [[ -n "$MISSING" ]]; then
+        echo "Warning: pip check reported issues:"
+        echo "$MISSING"
+    fi
+fi
+
 date '+%Y-%m-%d:%H:%M:%S'
 
 if [[ "$BUILD_ONLY" != "y" && "$BUILD_ONLY" != "Y" ]]; then
