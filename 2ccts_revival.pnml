@@ -2143,254 +2143,251 @@
 
 
 //// RAILBUS - RAILBUS_DIESEL
-#include "src/Railbus/Railbus_Diesel/AEC_railmotor_RM1_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/AEC_railmotor_RM1_item.pnml"
+#include "src/Railbus/Railbus_diesel/AEC_railmotor_RM1_graphics.pnml"
+#include "src/Railbus/Railbus_diesel/AEC_railmotor_RM1_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/VT133_Wismar_Railcar_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/VT133_Wismar_Railcar_item.pnml"
+#include "src/Railbus/Railbus_diesel/VT133_Wismar_Railcar_graphics.pnml"
+#include "src/Railbus/Railbus_diesel/VT133_Wismar_Railcar_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/AEC_Railcar_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/AEC_Railcar_item.pnml"
+#include "src/Railbus/Railbus_diesel/AEC_Railcar_graphics.pnml"
+#include "src/Railbus/Railbus_diesel/AEC_Railcar_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Simmering_VT42_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Simmering_VT42_item.pnml"
+#include "src/Railbus/Railbus_diesel/Simmering_VT42_graphics.pnml"
+#include "src/Railbus/Railbus_diesel/Simmering_VT42_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Hutt_RM31_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Hutt_RM31_item.pnml"
+#include "src/Railbus/Railbus_diesel/Hutt_RM31_graphics.pnml"
+#include "src/Railbus/Railbus_diesel/Hutt_RM31_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/NOHAB_CP_0100_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/NOHAB_CP_0100_item.pnml"
+#include "src/Railbus/Railbus_diesel/NOHAB_CP_0100_graphics.pnml"
+#include "src/Railbus/Railbus_diesel/NOHAB_CP_0100_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Budd_RDC_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Budd_RDC_item.pnml"
+#include "src/Railbus/Railbus_diesel/Budd_RDC_graphics.pnml"
+#include "src/Railbus/Railbus_diesel/Budd_RDC_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/MaK_GDT_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/MaK_GDT_item.pnml"
+#include "src/Railbus/Railbus_diesel/MaK_GDT_graphics.pnml"
+#include "src/Railbus/Railbus_diesel/MaK_GDT_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Allan_Kameel_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Allan_Kameel_item.pnml"
+#include "src/Railbus/Railbus_diesel/Allan_Kameel_graphics.pnml"
+#include "src/Railbus/Railbus_diesel/Allan_Kameel_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Valmet_Dm7_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Valmet_Dm7_item.pnml"
+#include "src/Railbus/Railbus_diesel/Valmet_Dm7_graphics.pnml"
+#include "src/Railbus/Railbus_diesel/Valmet_Dm7_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Vagonka_Studenka_91M0__graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Vagonka_Studenka_91M0__item.pnml"
+#include "src/Railbus/Railbus_diesel/Vagonka_Studenka_91M0__graphics.pnml"
+#include "src/Railbus/Railbus_diesel/Vagonka_Studenka_91M0__item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/NS_DH1_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/NS_DH1_item.pnml"
+#include "src/Railbus/Railbus_diesel/NS_DH1_graphics.pnml"
+#include "src/Railbus/Railbus_diesel/NS_DH1_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Jenbacher_Werke_5047_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Jenbacher_Werke_5047_item.pnml"
+#include "src/Railbus/Railbus_diesel/Jenbacher_Werke_5047_graphics.pnml"
+#include "src/Railbus/Railbus_diesel/Jenbacher_Werke_5047_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Hunslet_Barclay_Super_Sprinter_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Hunslet_Barclay_Super_Sprinter_item.pnml"
+#include "src/Railbus/Railbus_diesel/Hunslet_Barclay_Super_Sprinter_graphics.pnml"
+#include "src/Railbus/Railbus_diesel/Hunslet_Barclay_Super_Sprinter_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Vagonka_Studenka_809_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Vagonka_Studenka_809_item.pnml"
+#include "src/Railbus/Railbus_diesel/Vagonka_Studenka_809_graphics.pnml"
+#include "src/Railbus/Railbus_diesel/Vagonka_Studenka_809_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/DWA_670_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/DWA_670_item.pnml"
+#include "src/Railbus/Railbus_diesel/DWA_670_graphics.pnml"
+#include "src/Railbus/Railbus_diesel/DWA_670_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/RVR_AR2_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/RVR_AR2_item.pnml"
+#include "src/Railbus/Railbus_diesel/RVR_AR2_graphics.pnml"
+#include "src/Railbus/Railbus_diesel/RVR_AR2_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Austro_Daimler_Z1_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Austro_Daimler_Z1_item.pnml"
+#include "src/Railbus/Railbus_diesel/Austro_Daimler_Z1_graphics.pnml"
+#include "src/Railbus/Railbus_diesel/Austro_Daimler_Z1_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/McKeen_Motor_Car_70_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/McKeen_Motor_Car_70_item.pnml"
+#include "src/Railbus/Railbus_diesel/McKeen_Motor_Car_70_graphics.pnml"
+#include "src/Railbus/Railbus_diesel/McKeen_Motor_Car_70_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/BBC_DET_1_2_Sachsischer_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/BBC_DET_1_2_Sachsischer_item.pnml"
+#include "src/Railbus/Railbus_diesel/BBC_DET_1_2_Sachsischer_graphics.pnml"
+#include "src/Railbus/Railbus_diesel/BBC_DET_1_2_Sachsischer_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/WC_PR_Drewry_Railcar_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/WC_PR_Drewry_Railcar_item.pnml"
+#include "src/Railbus/Railbus_diesel/WC_PR_Drewry_Railcar_graphics.pnml"
+#include "src/Railbus/Railbus_diesel/WC_PR_Drewry_Railcar_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/LHW_BSt_6001_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/LHW_BSt_6001_item.pnml"
+#include "src/Railbus/Railbus_diesel/LHW_BSt_6001_graphics.pnml"
+#include "src/Railbus/Railbus_diesel/LHW_BSt_6001_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/EMC_DERM_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/EMC_DERM_item.pnml"
+#include "src/Railbus/Railbus_diesel/EMC_DERM_graphics.pnml"
+#include "src/Railbus/Railbus_diesel/EMC_DERM_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Tatra_M120_4_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Tatra_M120_4_item.pnml"
+#include "src/Railbus/Railbus_diesel/Tatra_M120_4_graphics.pnml"
+#include "src/Railbus/Railbus_diesel/Tatra_M120_4_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Franz_Kruckenberg_Schienenzeppelin_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Franz_Kruckenberg_Schienenzeppelin_item.pnml"
+#include "src/Railbus/Railbus_diesel/Franz_Kruckenberg_Schienenzeppelin_graphics.pnml"
+#include "src/Railbus/Railbus_diesel/Franz_Kruckenberg_Schienenzeppelin_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/DSB_MO_Serie_1_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/DSB_MO_Serie_1_item.pnml"
+#include "src/Railbus/Railbus_diesel/DSB_MO_Serie_1_graphics.pnml"
+#include "src/Railbus/Railbus_diesel/DSB_MO_Serie_1_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Strommens_Kristine_Valdresdatter_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Strommens_Kristine_Valdresdatter_item.pnml"
+#include "src/Railbus/Railbus_diesel/Strommens_Kristine_Valdresdatter_graphics.pnml"
+#include "src/Railbus/Railbus_diesel/Strommens_Kristine_Valdresdatter_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Tatra_M290_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Tatra_M290_item.pnml"
+#include "src/Railbus/Railbus_diesel/Tatra_M290_graphics.pnml"
+#include "src/Railbus/Railbus_diesel/Tatra_M290_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Werkspoor_DM37_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Werkspoor_DM37_item.pnml"
+#include "src/Railbus/Railbus_diesel/Werkspoor_DM37_graphics.pnml"
+#include "src/Railbus/Railbus_diesel/Werkspoor_DM37_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Eveleigh_400_Class_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Eveleigh_400_Class_item.pnml"
+#include "src/Railbus/Railbus_diesel/Eveleigh_400_Class_graphics.pnml"
+#include "src/Railbus/Railbus_diesel/Eveleigh_400_Class_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Vale_do_Vouga_ME51_55_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Vale_do_Vouga_ME51_55_item.pnml"
+#include "src/Railbus/Railbus_diesel/Vale_do_Vouga_ME51_55_graphics.pnml"
+#include "src/Railbus/Railbus_diesel/Vale_do_Vouga_ME51_55_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Ateliers_Germain_42_43_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Ateliers_Germain_42_43_item.pnml"
+#include "src/Railbus/Railbus_diesel/Ateliers_Germain_42_43_graphics.pnml"
+#include "src/Railbus/Railbus_diesel/Ateliers_Germain_42_43_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/SGP_77783_1960_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/SGP_77783_1960_item.pnml"
+#include "src/Railbus/Railbus_diesel/SGP_77783_1960_graphics.pnml"
+#include "src/Railbus/Railbus_diesel/SGP_77783_1960_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Ferrostaal_Esslingen_AA_71_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Ferrostaal_Esslingen_AA_71_item.pnml"
+#include "src/Railbus/Railbus_diesel/Ferrostaal_Esslingen_AA_71_graphics.pnml"
+#include "src/Railbus/Railbus_diesel/Ferrostaal_Esslingen_AA_71_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Alsthom_Z_431_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Alsthom_Z_431_item.pnml"
+#include "src/Railbus/Railbus_diesel/Alsthom_Z_431_graphics.pnml"
+#include "src/Railbus/Railbus_diesel/Alsthom_Z_431_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Budd_SPV_2000_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Budd_SPV_2000_item.pnml"
+#include "src/Railbus/Railbus_diesel/Budd_SPV_2000_graphics.pnml"
+#include "src/Railbus/Railbus_diesel/Budd_SPV_2000_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Niigata_Transys_Shikoku_1000_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Niigata_Transys_Shikoku_1000_item.pnml"
+#include "src/Railbus/Railbus_diesel/Niigata_Transys_Shikoku_1000_graphics.pnml"
+#include "src/Railbus/Railbus_diesel/Niigata_Transys_Shikoku_1000_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/CKD_Vagonka_Dm12_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/CKD_Vagonka_Dm12_item.pnml"
+#include "src/Railbus/Railbus_diesel/CKD_Vagonka_Dm12_graphics.pnml"
+#include "src/Railbus/Railbus_diesel/CKD_Vagonka_Dm12_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Niigata_Transys_KiHa_E120_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Niigata_Transys_KiHa_E120_item.pnml"
+#include "src/Railbus/Railbus_diesel/Niigata_Transys_KiHa_E120_graphics.pnml"
+#include "src/Railbus/Railbus_diesel/Niigata_Transys_KiHa_E120_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Stadler_Regio_Shuttle_RS1_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Stadler_Regio_Shuttle_RS1_item.pnml"
+#include "src/Railbus/Railbus_diesel/Stadler_Regio_Shuttle_RS1_graphics.pnml"
+#include "src/Railbus/Railbus_diesel/Stadler_Regio_Shuttle_RS1_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/EFE_SB_56_Buscarril_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/EFE_SB_56_Buscarril_item.pnml"
+#include "src/Railbus/Railbus_diesel/EFE_SB_56_Buscarril_graphics.pnml"
+#include "src/Railbus/Railbus_diesel/EFE_SB_56_Buscarril_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Sulzer_M_Railcar_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Sulzer_M_Railcar_item.pnml"
+#include "src/Railbus/Railbus_diesel/Sulzer_M_Railcar_graphics.pnml"
+#include "src/Railbus/Railbus_diesel/Sulzer_M_Railcar_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Uerdingen_railbus_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Uerdingen_railbus_item.pnml"
+#include "src/Railbus/Railbus_diesel/Uerdingen_railbus_graphics.pnml"
+#include "src/Railbus/Railbus_diesel/Uerdingen_railbus_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Eritrean_Railway_A_62_70_Littorina_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Eritrean_Railway_A_62_70_Littorina_item.pnml"
+#include "src/Railbus/Railbus_diesel/Eritrean_Railway_A_62_70_Littorina_graphics.pnml"
+#include "src/Railbus/Railbus_diesel/Eritrean_Railway_A_62_70_Littorina_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Fiat_Ferroviaria_ALn_668_1400_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Fiat_Ferroviaria_ALn_668_1400_item.pnml"
+#include "src/Railbus/Railbus_diesel/Fiat_Ferroviaria_ALn_668_1400_graphics.pnml"
+#include "src/Railbus/Railbus_diesel/Fiat_Ferroviaria_ALn_668_1400_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/MAV_Ikarus_260_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/MAV_Ikarus_260_item.pnml"
+#include "src/Railbus/Railbus_diesel/MAV_Ikarus_260_graphics.pnml"
+#include "src/Railbus/Railbus_diesel/MAV_Ikarus_260_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Ganz_MAVAG_Ikarus_725_00_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Ganz_MAVAG_Ikarus_725_00_item.pnml"
+#include "src/Railbus/Railbus_diesel/Ganz_MAVAG_Ikarus_graphics.pnml"
+#include "src/Railbus/Railbus_diesel/Ganz_MAVAG_Ikarus_item.pnml"
 
-#include "src/Railbus/Railbus_Diesel/Faur_A20DP_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Faur_A20DP_item.pnml"
-
-#include "src/Railbus/Railbus_Diesel/Ganz_MAVAG_SN61_graphics.pnml"
-#include "src/Railbus/Railbus_Diesel/Ganz_MAVAG_SN61_item.pnml"
+#include "src/Railbus/Railbus_diesel/Faur_A20DP_graphics.pnml"
+#include "src/Railbus/Railbus_diesel/Faur_A20DP_item.pnml"
 
 
 //// RAILBUS - RAILBUS_ELECTRIC
-#include "src/Railbus/Railbus_Electric/SLM_CFe_3_3_graphics.pnml"
-#include "src/Railbus/Railbus_Electric/SLM_CFe_3_3_item.pnml"
+#include "src/Railbus/Railbus_electric/SLM_CFe_3_3_graphics.pnml"
+#include "src/Railbus/Railbus_electric/SLM_CFe_3_3_item.pnml"
 
-#include "src/Railbus/Railbus_Electric/ONCF_ZAB1000_graphics.pnml"
-#include "src/Railbus/Railbus_Electric/ONCF_ZAB1000_item.pnml"
+#include "src/Railbus/Railbus_electric/ONCF_ZAB1000_graphics.pnml"
+#include "src/Railbus/Railbus_electric/ONCF_ZAB1000_item.pnml"
 
-#include "src/Railbus/Railbus_Electric/Waggonfabrik_Fuchs_ET_85_graphics.pnml"
-#include "src/Railbus/Railbus_Electric/Waggonfabrik_Fuchs_ET_85_item.pnml"
+#include "src/Railbus/Railbus_electric/Waggonfabrik_Fuchs_ET_85_graphics.pnml"
+#include "src/Railbus/Railbus_electric/Waggonfabrik_Fuchs_ET_85_item.pnml"
 
-#include "src/Railbus/Railbus_Electric/Pozzuoli___OCREN_OM_ALe_840_graphics.pnml"
-#include "src/Railbus/Railbus_Electric/Pozzuoli___OCREN_OM_ALe_840_item.pnml"
+#include "src/Railbus/Railbus_electric/Pozzuoli___OCREN_OM_ALe_840_graphics.pnml"
+#include "src/Railbus/Railbus_electric/Pozzuoli___OCREN_OM_ALe_840_item.pnml"
 
-#include "src/Railbus/Railbus_Electric/Ringhoffer_40_001_graphics.pnml"
-#include "src/Railbus/Railbus_Electric/Ringhoffer_40_001_item.pnml"
+#include "src/Railbus/Railbus_electric/Ringhoffer_40_001_graphics.pnml"
+#include "src/Railbus/Railbus_electric/Ringhoffer_40_001_item.pnml"
 
-#include "src/Railbus/Railbus_Electric/TPC_BVB_Be_2_2_graphics.pnml"
-#include "src/Railbus/Railbus_Electric/TPC_BVB_Be_2_2_item.pnml"
+#include "src/Railbus/Railbus_electric/TPC_BVB_Be_2_2_graphics.pnml"
+#include "src/Railbus/Railbus_electric/TPC_BVB_Be_2_2_item.pnml"
 
-#include "src/Railbus/Railbus_Electric/Ferrocarril_de_Soller_1_3_graphics.pnml"
-#include "src/Railbus/Railbus_Electric/Ferrocarril_de_Soller_1_3_item.pnml"
+#include "src/Railbus/Railbus_electric/Ferrocarril_de_Soller_1_3_graphics.pnml"
+#include "src/Railbus/Railbus_electric/Ferrocarril_de_Soller_1_3_item.pnml"
 
-#include "src/Railbus/Railbus_Electric/Studenka_425_95_graphics.pnml"
-#include "src/Railbus/Railbus_Electric/Studenka_425_95_item.pnml"
+#include "src/Railbus/Railbus_electric/Studenka_425_95_graphics.pnml"
+#include "src/Railbus/Railbus_electric/Studenka_425_95_item.pnml"
 
-#include "src/Railbus/Railbus_Electric/FS_E_623_graphics.pnml"
-#include "src/Railbus/Railbus_Electric/FS_E_623_item.pnml"
+#include "src/Railbus/Railbus_electric/FS_E_623_graphics.pnml"
+#include "src/Railbus/Railbus_electric/FS_E_623_item.pnml"
 
-#include "src/Railbus/Railbus_Electric/ASJ_Y6_graphics.pnml"
-#include "src/Railbus/Railbus_Electric/ASJ_Y6_item.pnml"
+#include "src/Railbus/Railbus_electric/ASJ_Y6_graphics.pnml"
+#include "src/Railbus/Railbus_electric/ASJ_Y6_item.pnml"
 
-#include "src/Railbus/Railbus_Electric/Hitachi_Choshi_DeHa_1000_graphics.pnml"
-#include "src/Railbus/Railbus_Electric/Hitachi_Choshi_DeHa_1000_item.pnml"
+#include "src/Railbus/Railbus_electric/Hitachi_Choshi_DeHa_1000_graphics.pnml"
+#include "src/Railbus/Railbus_electric/Hitachi_Choshi_DeHa_1000_item.pnml"
 
-#include "src/Railbus/Railbus_Electric/Decauville_Z_7100_graphics.pnml"
-#include "src/Railbus/Railbus_Electric/Decauville_Z_7100_item.pnml"
+#include "src/Railbus/Railbus_electric/Decauville_Z_7100_graphics.pnml"
+#include "src/Railbus/Railbus_electric/Decauville_Z_7100_item.pnml"
 
-#include "src/Railbus/Railbus_Electric/Budd_Silverliner_II_graphics.pnml"
-#include "src/Railbus/Railbus_Electric/Budd_Silverliner_II_item.pnml"
+#include "src/Railbus/Railbus_electric/Budd_Silverliner_II_graphics.pnml"
+#include "src/Railbus/Railbus_electric/Budd_Silverliner_II_item.pnml"
 
-#include "src/Railbus/Railbus_Electric/Stanga_ALe_80_graphics.pnml"
-#include "src/Railbus/Railbus_Electric/Stanga_ALe_80_item.pnml"
+#include "src/Railbus/Railbus_electric/Stanga_ALe_80_graphics.pnml"
+#include "src/Railbus/Railbus_electric/Stanga_ALe_80_item.pnml"
 
-#include "src/Railbus/Railbus_Electric/Franz_Knotz_4855_graphics.pnml"
-#include "src/Railbus/Railbus_Electric/Franz_Knotz_4855_item.pnml"
+#include "src/Railbus/Railbus_electric/Franz_Knotz_4855_graphics.pnml"
+#include "src/Railbus/Railbus_electric/Franz_Knotz_4855_item.pnml"
 
-#include "src/Railbus/Railbus_Electric/MVR_Beh_2_4_graphics.pnml"
-#include "src/Railbus/Railbus_Electric/MVR_Beh_2_4_item.pnml"
+#include "src/Railbus/Railbus_electric/MVR_Beh_2_4_graphics.pnml"
+#include "src/Railbus/Railbus_electric/MVR_Beh_2_4_item.pnml"
 
-#include "src/Railbus/Railbus_Electric/Lindner_Talbot_ET_10_109_graphics.pnml"
-#include "src/Railbus/Railbus_Electric/Lindner_Talbot_ET_10_109_item.pnml"
+#include "src/Railbus/Railbus_electric/Lindner_Talbot_ET_10_109_graphics.pnml"
+#include "src/Railbus/Railbus_electric/Lindner_Talbot_ET_10_109_item.pnml"
 
-#include "src/Railbus/Railbus_Electric/Pesa_308B_graphics.pnml"
-#include "src/Railbus/Railbus_Electric/Pesa_308B_item.pnml"
+#include "src/Railbus/Railbus_electric/Pesa_308B_graphics.pnml"
+#include "src/Railbus/Railbus_electric/Pesa_308B_item.pnml"
 
-#include "src/Railbus/Railbus_Electric/Hyundai_Rotem_Silverliner_V_graphics.pnml"
-#include "src/Railbus/Railbus_Electric/Hyundai_Rotem_Silverliner_V_item.pnml"
+#include "src/Railbus/Railbus_electric/Hyundai_Rotem_Silverliner_V_graphics.pnml"
+#include "src/Railbus/Railbus_electric/Hyundai_Rotem_Silverliner_V_item.pnml"
 
-#include "src/Railbus/Railbus_Electric/Raw_Schoneweide_479_201_graphics.pnml"
-#include "src/Railbus/Railbus_Electric/Raw_Schoneweide_479_201_item.pnml"
+#include "src/Railbus/Railbus_electric/Raw_Schoneweide_479_201_graphics.pnml"
+#include "src/Railbus/Railbus_electric/Raw_Schoneweide_479_201_item.pnml"
 
-#include "src/Railbus/Railbus_Electric/HAWA_AEG_Kleinbahn_Nr__1_3_graphics.pnml"
-#include "src/Railbus/Railbus_Electric/HAWA_AEG_Kleinbahn_Nr__1_3_item.pnml"
+#include "src/Railbus/Railbus_electric/HAWA_AEG_Kleinbahn_Nr__1_3_graphics.pnml"
+#include "src/Railbus/Railbus_electric/HAWA_AEG_Kleinbahn_Nr__1_3_item.pnml"
 
 
 //// RAILBUS - RAILBUS_MAGLEV
-#include "src/Railbus/Railbus_Maglev/ACME_Corp__Turbobus_graphics.pnml"
-#include "src/Railbus/Railbus_Maglev/ACME_Corp__Turbobus_item.pnml"
+#include "src/Railbus/Railbus_maglev/ACME_Corp__Turbobus_graphics.pnml"
+#include "src/Railbus/Railbus_maglev/ACME_Corp__Turbobus_item.pnml"
 
 
 //// RAILBUS - RAILBUS_STEAM
-#include "src/Railbus/Railbus_Steam/Komarek_NOLB_1_graphics.pnml"
-#include "src/Railbus/Railbus_Steam/Komarek_NOLB_1_item.pnml"
+#include "src/Railbus/Railbus_steam/Komarek_NOLB_1_graphics.pnml"
+#include "src/Railbus/Railbus_steam/Komarek_NOLB_1_item.pnml"
 
-#include "src/Railbus/Railbus_Steam/Kerr__Stuart___Co__86_graphics.pnml"
-#include "src/Railbus/Railbus_Steam/Kerr__Stuart___Co__86_item.pnml"
+#include "src/Railbus/Railbus_steam/Kerr__Stuart___Co__86_graphics.pnml"
+#include "src/Railbus/Railbus_steam/Kerr__Stuart___Co__86_item.pnml"
 
-#include "src/Railbus/Railbus_Steam/Victorian_Railways_Rowan_Railmotor_graphics.pnml"
-#include "src/Railbus/Railbus_Steam/Victorian_Railways_Rowan_Railmotor_item.pnml"
+#include "src/Railbus/Railbus_steam/Victorian_Railways_Rowan_Railmotor_graphics.pnml"
+#include "src/Railbus/Railbus_steam/Victorian_Railways_Rowan_Railmotor_item.pnml"
 
-#include "src/Railbus/Railbus_Steam/Esslingen_Czm_1_2_graphics.pnml"
-#include "src/Railbus/Railbus_Steam/Esslingen_Czm_1_2_item.pnml"
+#include "src/Railbus/Railbus_steam/Esslingen_Czm_1_2_graphics.pnml"
+#include "src/Railbus/Railbus_steam/Esslingen_Czm_1_2_item.pnml"
 
-#include "src/Railbus/Railbus_Steam/Maffei_MCCi_graphics.pnml"
-#include "src/Railbus/Railbus_Steam/Maffei_MCCi_item.pnml"
+#include "src/Railbus/Railbus_steam/Maffei_MCCi_graphics.pnml"
+#include "src/Railbus/Railbus_steam/Maffei_MCCi_item.pnml"
 
-#include "src/Railbus/Railbus_Steam/Kitson___Co_CSAR_Railmotor_graphics.pnml"
-#include "src/Railbus/Railbus_Steam/Kitson___Co_CSAR_Railmotor_item.pnml"
+#include "src/Railbus/Railbus_steam/Kitson___Co_CSAR_Railmotor_graphics.pnml"
+#include "src/Railbus/Railbus_steam/Kitson___Co_CSAR_Railmotor_item.pnml"
 
-#include "src/Railbus/Railbus_Steam/Kerr_Stuart_steam_railmotor_graphics.pnml"
-#include "src/Railbus/Railbus_Steam/Kerr_Stuart_steam_railmotor_item.pnml"
+#include "src/Railbus/Railbus_steam/Kerr_Stuart_steam_railmotor_graphics.pnml"
+#include "src/Railbus/Railbus_steam/Kerr_Stuart_steam_railmotor_item.pnml"
 
-#include "src/Railbus/Railbus_Steam/KkStB_4_0_graphics.pnml"
-#include "src/Railbus/Railbus_Steam/KkStB_4_0_item.pnml"
+#include "src/Railbus/Railbus_steam/KkStB_4_0_graphics.pnml"
+#include "src/Railbus/Railbus_steam/KkStB_4_0_item.pnml"
 
-#include "src/Railbus/Railbus_Steam/Esslingen_MAN_Hohenzollern_Thomas_graphics.pnml"
-#include "src/Railbus/Railbus_Steam/Esslingen_MAN_Hohenzollern_Thomas_item.pnml"
+#include "src/Railbus/Railbus_steam/Esslingen_MAN_Hohenzollern_Thomas_graphics.pnml"
+#include "src/Railbus/Railbus_steam/Esslingen_MAN_Hohenzollern_Thomas_item.pnml"
 
-#include "src/Railbus/Railbus_Steam/Komarek_NOLB_30_33_graphics.pnml"
-#include "src/Railbus/Railbus_Steam/Komarek_NOLB_30_33_item.pnml"
+#include "src/Railbus/Railbus_steam/Komarek_NOLB_30_33_graphics.pnml"
+#include "src/Railbus/Railbus_steam/Komarek_NOLB_30_33_item.pnml"
 
 
 //// SINGLE_METRO
@@ -2936,227 +2933,227 @@
 
 
 //// WAGONS - GEN1
-#include "src/wagons/Gen1/Wagon_Gen1_Flat_Wagon_graphics.pnml"
-#include "src/wagons/Gen1/Wagon_Gen1_Flat_Wagon_item.pnml"
+#include "src/Wagons/Gen1/Wagon_Gen1_Flat_Wagon_graphics.pnml"
+#include "src/Wagons/Gen1/Wagon_Gen1_Flat_Wagon_item.pnml"
 
-#include "src/wagons/Gen1/Wagon_Gen1_Boxcar_graphics.pnml"
-#include "src/wagons/Gen1/Wagon_Gen1_Boxcar_item.pnml"
+#include "src/Wagons/Gen1/Wagon_Gen1_Boxcar_graphics.pnml"
+#include "src/Wagons/Gen1/Wagon_Gen1_Boxcar_item.pnml"
 
-#include "src/wagons/Gen1/Wagon_Gen1_Tanker_graphics.pnml"
-#include "src/wagons/Gen1/Wagon_Gen1_Tanker_item.pnml"
+#include "src/Wagons/Gen1/Wagon_Gen1_Tanker_graphics.pnml"
+#include "src/Wagons/Gen1/Wagon_Gen1_Tanker_item.pnml"
 
-#include "src/wagons/Gen1/Wagon_Gen1_Open_Wagon_graphics.pnml"
-#include "src/wagons/Gen1/Wagon_Gen1_Open_Wagon_item.pnml"
+#include "src/Wagons/Gen1/Wagon_Gen1_Open_Wagon_graphics.pnml"
+#include "src/Wagons/Gen1/Wagon_Gen1_Open_Wagon_item.pnml"
 
-#include "src/wagons/Gen1/Wagon_Gen1_Livestock_Van_graphics.pnml"
-#include "src/wagons/Gen1/Wagon_Gen1_Livestock_Van_item.pnml"
+#include "src/Wagons/Gen1/Wagon_Gen1_Livestock_Van_graphics.pnml"
+#include "src/Wagons/Gen1/Wagon_Gen1_Livestock_Van_item.pnml"
 
 
 //// WAGONS - GEN2
-#include "src/wagons/Gen2/Wagon_Gen2_Flat_Wagon_graphics.pnml"
-#include "src/wagons/Gen2/Wagon_Gen2_Flat_Wagon_item.pnml"
+#include "src/Wagons/Gen2/Wagon_Gen2_Flat_Wagon_graphics.pnml"
+#include "src/Wagons/Gen2/Wagon_Gen2_Flat_Wagon_item.pnml"
 
-#include "src/wagons/Gen2/Wagon_Gen2_Boxcar_Type1_graphics.pnml"
-#include "src/wagons/Gen2/Wagon_Gen2_Boxcar_Type1_item.pnml"
+#include "src/Wagons/Gen2/Wagon_Gen2_Boxcar_Type1_graphics.pnml"
+#include "src/Wagons/Gen2/Wagon_Gen2_Boxcar_Type1_item.pnml"
 
-#include "src/wagons/Gen2/Wagon_Gen2_Tanker_graphics.pnml"
-#include "src/wagons/Gen2/Wagon_Gen2_Tanker_item.pnml"
+#include "src/Wagons/Gen2/Wagon_Gen2_Tanker_graphics.pnml"
+#include "src/Wagons/Gen2/Wagon_Gen2_Tanker_item.pnml"
 
-#include "src/wagons/Gen2/Wagon_Gen2_Open_Wagon_graphics.pnml"
-#include "src/wagons/Gen2/Wagon_Gen2_Open_Wagon_item.pnml"
+#include "src/Wagons/Gen2/Wagon_Gen2_Open_Wagon_graphics.pnml"
+#include "src/Wagons/Gen2/Wagon_Gen2_Open_Wagon_item.pnml"
 
-#include "src/wagons/Gen2/Wagon_Gen2_Silo_graphics.pnml"
-#include "src/wagons/Gen2/Wagon_Gen2_Silo_item.pnml"
+#include "src/Wagons/Gen2/Wagon_Gen2_Silo_graphics.pnml"
+#include "src/Wagons/Gen2/Wagon_Gen2_Silo_item.pnml"
 
-#include "src/wagons/Gen2/Wagon_Gen2_Hopper_graphics.pnml"
-#include "src/wagons/Gen2/Wagon_Gen2_Hopper_item.pnml"
+#include "src/Wagons/Gen2/Wagon_Gen2_Hopper_graphics.pnml"
+#include "src/Wagons/Gen2/Wagon_Gen2_Hopper_item.pnml"
 
-#include "src/wagons/Gen2/Wagon_Gen2_Boxcar_Type2_graphics.pnml"
-#include "src/wagons/Gen2/Wagon_Gen2_Boxcar_Type2_item.pnml"
+#include "src/Wagons/Gen2/Wagon_Gen2_Boxcar_Type2_graphics.pnml"
+#include "src/Wagons/Gen2/Wagon_Gen2_Boxcar_Type2_item.pnml"
 
-#include "src/wagons/Gen2/Wagon_Gen2_Livestock_Van_graphics.pnml"
-#include "src/wagons/Gen2/Wagon_Gen2_Livestock_Van_item.pnml"
+#include "src/Wagons/Gen2/Wagon_Gen2_Livestock_Van_graphics.pnml"
+#include "src/Wagons/Gen2/Wagon_Gen2_Livestock_Van_item.pnml"
 
 
 //// WAGONS - GEN3
-#include "src/wagons/Gen3/Wagon_Gen3_Flat_Wagon_graphics.pnml"
-#include "src/wagons/Gen3/Wagon_Gen3_Flat_Wagon_item.pnml"
+#include "src/Wagons/Gen3/Wagon_Gen3_Flat_Wagon_graphics.pnml"
+#include "src/Wagons/Gen3/Wagon_Gen3_Flat_Wagon_item.pnml"
 
-#include "src/wagons/Gen3/Wagon_Gen3_Boxcar_Type1_graphics.pnml"
-#include "src/wagons/Gen3/Wagon_Gen3_Boxcar_Type1_item.pnml"
+#include "src/Wagons/Gen3/Wagon_Gen3_Boxcar_Type1_graphics.pnml"
+#include "src/Wagons/Gen3/Wagon_Gen3_Boxcar_Type1_item.pnml"
 
-#include "src/wagons/Gen3/Wagon_Gen3_Tanker_graphics.pnml"
-#include "src/wagons/Gen3/Wagon_Gen3_Tanker_item.pnml"
+#include "src/Wagons/Gen3/Wagon_Gen3_Tanker_graphics.pnml"
+#include "src/Wagons/Gen3/Wagon_Gen3_Tanker_item.pnml"
 
-#include "src/wagons/Gen3/Wagon_Gen3_Open_Wagon_graphics.pnml"
-#include "src/wagons/Gen3/Wagon_Gen3_Open_Wagon_item.pnml"
+#include "src/Wagons/Gen3/Wagon_Gen3_Open_Wagon_graphics.pnml"
+#include "src/Wagons/Gen3/Wagon_Gen3_Open_Wagon_item.pnml"
 
-#include "src/wagons/Gen3/Wagon_Gen3_Silo_Type1_graphics.pnml"
-#include "src/wagons/Gen3/Wagon_Gen3_Silo_Type1_item.pnml"
+#include "src/Wagons/Gen3/Wagon_Gen3_Silo_Type1_graphics.pnml"
+#include "src/Wagons/Gen3/Wagon_Gen3_Silo_Type1_item.pnml"
 
-#include "src/wagons/Gen3/Wagon_Gen3_Hopper_graphics.pnml"
-#include "src/wagons/Gen3/Wagon_Gen3_Hopper_item.pnml"
+#include "src/Wagons/Gen3/Wagon_Gen3_Hopper_graphics.pnml"
+#include "src/Wagons/Gen3/Wagon_Gen3_Hopper_item.pnml"
 
-#include "src/wagons/Gen3/Wagon_Gen3_Silo_Type2_graphics.pnml"
-#include "src/wagons/Gen3/Wagon_Gen3_Silo_Type2_item.pnml"
+#include "src/Wagons/Gen3/Wagon_Gen3_Silo_Type2_graphics.pnml"
+#include "src/Wagons/Gen3/Wagon_Gen3_Silo_Type2_item.pnml"
 
-#include "src/wagons/Gen3/Wagon_Gen3_Boxcar_Type2_graphics.pnml"
-#include "src/wagons/Gen3/Wagon_Gen3_Boxcar_Type2_item.pnml"
+#include "src/Wagons/Gen3/Wagon_Gen3_Boxcar_Type2_graphics.pnml"
+#include "src/Wagons/Gen3/Wagon_Gen3_Boxcar_Type2_item.pnml"
 
-#include "src/wagons/Gen3/Wagon_Gen3_Livestock_Van_graphics.pnml"
-#include "src/wagons/Gen3/Wagon_Gen3_Livestock_Van_item.pnml"
+#include "src/Wagons/Gen3/Wagon_Gen3_Livestock_Van_graphics.pnml"
+#include "src/Wagons/Gen3/Wagon_Gen3_Livestock_Van_item.pnml"
 
 
 //// WAGONS - GEN4
-#include "src/wagons/Gen4/Wagon_Gen4_Flatcar_graphics.pnml"
-#include "src/wagons/Gen4/Wagon_Gen4_Flatcar_item.pnml"
+#include "src/Wagons/Gen4/Wagon_Gen4_Flatcar_graphics.pnml"
+#include "src/Wagons/Gen4/Wagon_Gen4_Flatcar_item.pnml"
 
-#include "src/wagons/Gen4/Wagon_Gen4_Heavy_Flatcar_graphics.pnml"
-#include "src/wagons/Gen4/Wagon_Gen4_Heavy_Flatcar_item.pnml"
+#include "src/Wagons/Gen4/Wagon_Gen4_Heavy_Flatcar_graphics.pnml"
+#include "src/Wagons/Gen4/Wagon_Gen4_Heavy_Flatcar_item.pnml"
 
-#include "src/wagons/Gen4/Wagon_Gen4_Boxcar_Type1_graphics.pnml"
-#include "src/wagons/Gen4/Wagon_Gen4_Boxcar_Type1_item.pnml"
+#include "src/Wagons/Gen4/Wagon_Gen4_Boxcar_Type1_graphics.pnml"
+#include "src/Wagons/Gen4/Wagon_Gen4_Boxcar_Type1_item.pnml"
 
-#include "src/wagons/Gen4/Wagon_Gen4_Tanker_graphics.pnml"
-#include "src/wagons/Gen4/Wagon_Gen4_Tanker_item.pnml"
+#include "src/Wagons/Gen4/Wagon_Gen4_Tanker_graphics.pnml"
+#include "src/Wagons/Gen4/Wagon_Gen4_Tanker_item.pnml"
 
-#include "src/wagons/Gen4/Wagon_Gen4_Gondola_graphics.pnml"
-#include "src/wagons/Gen4/Wagon_Gen4_Gondola_item.pnml"
+#include "src/Wagons/Gen4/Wagon_Gen4_Gondola_graphics.pnml"
+#include "src/Wagons/Gen4/Wagon_Gen4_Gondola_item.pnml"
 
-#include "src/wagons/Gen4/Wagon_Gen4_Silo_Type1_graphics.pnml"
-#include "src/wagons/Gen4/Wagon_Gen4_Silo_Type1_item.pnml"
+#include "src/Wagons/Gen4/Wagon_Gen4_Silo_Type1_graphics.pnml"
+#include "src/Wagons/Gen4/Wagon_Gen4_Silo_Type1_item.pnml"
 
-#include "src/wagons/Gen4/Wagon_Gen4_Hopper_Type1_graphics.pnml"
-#include "src/wagons/Gen4/Wagon_Gen4_Hopper_Type1_item.pnml"
+#include "src/Wagons/Gen4/Wagon_Gen4_Hopper_Type1_graphics.pnml"
+#include "src/Wagons/Gen4/Wagon_Gen4_Hopper_Type1_item.pnml"
 
-#include "src/wagons/Gen4/Wagon_Gen4_Car_Transporter_graphics.pnml"
-#include "src/wagons/Gen4/Wagon_Gen4_Car_Transporter_item.pnml"
+#include "src/Wagons/Gen4/Wagon_Gen4_Car_Transporter_graphics.pnml"
+#include "src/Wagons/Gen4/Wagon_Gen4_Car_Transporter_item.pnml"
 
-#include "src/wagons/Gen4/Wagon_Gen4_Container_Carrier_graphics.pnml"
-#include "src/wagons/Gen4/Wagon_Gen4_Container_Carrier_item.pnml"
+#include "src/Wagons/Gen4/Wagon_Gen4_Container_Carrier_graphics.pnml"
+#include "src/Wagons/Gen4/Wagon_Gen4_Container_Carrier_item.pnml"
 
-#include "src/wagons/Gen4/Wagon_Gen4_Centerbeam_graphics.pnml"
-#include "src/wagons/Gen4/Wagon_Gen4_Centerbeam_item.pnml"
+#include "src/Wagons/Gen4/Wagon_Gen4_Centerbeam_graphics.pnml"
+#include "src/Wagons/Gen4/Wagon_Gen4_Centerbeam_item.pnml"
 
-#include "src/wagons/Gen4/Wagon_Gen4_Silo_Type2_graphics.pnml"
-#include "src/wagons/Gen4/Wagon_Gen4_Silo_Type2_item.pnml"
+#include "src/Wagons/Gen4/Wagon_Gen4_Silo_Type2_graphics.pnml"
+#include "src/Wagons/Gen4/Wagon_Gen4_Silo_Type2_item.pnml"
 
-#include "src/wagons/Gen4/Wagon_Gen4_Hopper_Type2_graphics.pnml"
-#include "src/wagons/Gen4/Wagon_Gen4_Hopper_Type2_item.pnml"
+#include "src/Wagons/Gen4/Wagon_Gen4_Hopper_Type2_graphics.pnml"
+#include "src/Wagons/Gen4/Wagon_Gen4_Hopper_Type2_item.pnml"
 
-#include "src/wagons/Gen4/Wagon_Gen4_Boxcar_Type2_graphics.pnml"
-#include "src/wagons/Gen4/Wagon_Gen4_Boxcar_Type2_item.pnml"
+#include "src/Wagons/Gen4/Wagon_Gen4_Boxcar_Type2_graphics.pnml"
+#include "src/Wagons/Gen4/Wagon_Gen4_Boxcar_Type2_item.pnml"
 
-#include "src/wagons/Gen4/Wagon_Gen4_Livestock_Van_graphics.pnml"
-#include "src/wagons/Gen4/Wagon_Gen4_Livestock_Van_item.pnml"
+#include "src/Wagons/Gen4/Wagon_Gen4_Livestock_Van_graphics.pnml"
+#include "src/Wagons/Gen4/Wagon_Gen4_Livestock_Van_item.pnml"
 
 
 //// WAGONS - GEN5
-#include "src/wagons/Gen5/Wagon_Gen5_Flatcar_graphics.pnml"
-#include "src/wagons/Gen5/Wagon_Gen5_Flatcar_item.pnml"
+#include "src/Wagons/Gen5/Wagon_Gen5_Flatcar_graphics.pnml"
+#include "src/Wagons/Gen5/Wagon_Gen5_Flatcar_item.pnml"
 
-#include "src/wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_graphics.pnml"
-#include "src/wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_item.pnml"
+#include "src/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_graphics.pnml"
+#include "src/Wagons/Gen5/Wagon_Gen5_Heavy_Flatcar_item.pnml"
 
-#include "src/wagons/Gen5/Wagon_Gen5_Boxcar_Type1_graphics.pnml"
-#include "src/wagons/Gen5/Wagon_Gen5_Boxcar_Type1_item.pnml"
+#include "src/Wagons/Gen5/Wagon_Gen5_Boxcar_Type1_graphics.pnml"
+#include "src/Wagons/Gen5/Wagon_Gen5_Boxcar_Type1_item.pnml"
 
-#include "src/wagons/Gen5/Wagon_Gen5_Tanker_graphics.pnml"
-#include "src/wagons/Gen5/Wagon_Gen5_Tanker_item.pnml"
+#include "src/Wagons/Gen5/Wagon_Gen5_Tanker_graphics.pnml"
+#include "src/Wagons/Gen5/Wagon_Gen5_Tanker_item.pnml"
 
-#include "src/wagons/Gen5/Wagon_Gen5_Gondola_graphics.pnml"
-#include "src/wagons/Gen5/Wagon_Gen5_Gondola_item.pnml"
+#include "src/Wagons/Gen5/Wagon_Gen5_Gondola_graphics.pnml"
+#include "src/Wagons/Gen5/Wagon_Gen5_Gondola_item.pnml"
 
-#include "src/wagons/Gen5/Wagon_Gen5_Silo_Type1_graphics.pnml"
-#include "src/wagons/Gen5/Wagon_Gen5_Silo_Type1_item.pnml"
+#include "src/Wagons/Gen5/Wagon_Gen5_Silo_Type1_graphics.pnml"
+#include "src/Wagons/Gen5/Wagon_Gen5_Silo_Type1_item.pnml"
 
-#include "src/wagons/Gen5/Wagon_Gen5_Hopper_Type1_graphics.pnml"
-#include "src/wagons/Gen5/Wagon_Gen5_Hopper_Type1_item.pnml"
+#include "src/Wagons/Gen5/Wagon_Gen5_Hopper_Type1_graphics.pnml"
+#include "src/Wagons/Gen5/Wagon_Gen5_Hopper_Type1_item.pnml"
 
-#include "src/wagons/Gen5/Wagon_Gen5_Car_Transporter_graphics.pnml"
-#include "src/wagons/Gen5/Wagon_Gen5_Car_Transporter_item.pnml"
+#include "src/Wagons/Gen5/Wagon_Gen5_Car_Transporter_graphics.pnml"
+#include "src/Wagons/Gen5/Wagon_Gen5_Car_Transporter_item.pnml"
 
-#include "src/wagons/Gen5/Wagon_Gen5_Container_Carrier_graphics.pnml"
-#include "src/wagons/Gen5/Wagon_Gen5_Container_Carrier_item.pnml"
+#include "src/Wagons/Gen5/Wagon_Gen5_Container_Carrier_graphics.pnml"
+#include "src/Wagons/Gen5/Wagon_Gen5_Container_Carrier_item.pnml"
 
-#include "src/wagons/Gen5/Wagon_Gen5_Centerbeam_graphics.pnml"
-#include "src/wagons/Gen5/Wagon_Gen5_Centerbeam_item.pnml"
+#include "src/Wagons/Gen5/Wagon_Gen5_Centerbeam_graphics.pnml"
+#include "src/Wagons/Gen5/Wagon_Gen5_Centerbeam_item.pnml"
 
-#include "src/wagons/Gen5/Wagon_Gen5_Container_Doublestack_graphics.pnml"
-#include "src/wagons/Gen5/Wagon_Gen5_Container_Doublestack_item.pnml"
+#include "src/Wagons/Gen5/Wagon_Gen5_Container_Doublestack_graphics.pnml"
+#include "src/Wagons/Gen5/Wagon_Gen5_Container_Doublestack_item.pnml"
 
-#include "src/wagons/Gen5/Wagon_Gen5_Superheavy_Flatcar_graphics.pnml"
-#include "src/wagons/Gen5/Wagon_Gen5_Superheavy_Flatcar_item.pnml"
+#include "src/Wagons/Gen5/Wagon_Gen5_Superheavy_Flatcar_graphics.pnml"
+#include "src/Wagons/Gen5/Wagon_Gen5_Superheavy_Flatcar_item.pnml"
 
-#include "src/wagons/Gen5/Wagon_Gen5_Boxcar_Type2_graphics.pnml"
-#include "src/wagons/Gen5/Wagon_Gen5_Boxcar_Type2_item.pnml"
+#include "src/Wagons/Gen5/Wagon_Gen5_Boxcar_Type2_graphics.pnml"
+#include "src/Wagons/Gen5/Wagon_Gen5_Boxcar_Type2_item.pnml"
 
-#include "src/wagons/Gen5/Wagon_Gen5_Silo_Type2_graphics.pnml"
-#include "src/wagons/Gen5/Wagon_Gen5_Silo_Type2_item.pnml"
+#include "src/Wagons/Gen5/Wagon_Gen5_Silo_Type2_graphics.pnml"
+#include "src/Wagons/Gen5/Wagon_Gen5_Silo_Type2_item.pnml"
 
-#include "src/wagons/Gen5/Wagon_Gen5_Hopper_Type2_graphics.pnml"
-#include "src/wagons/Gen5/Wagon_Gen5_Hopper_Type2_item.pnml"
+#include "src/Wagons/Gen5/Wagon_Gen5_Hopper_Type2_graphics.pnml"
+#include "src/Wagons/Gen5/Wagon_Gen5_Hopper_Type2_item.pnml"
 
-#include "src/wagons/Gen5/Wagon_Gen5_Livestock_Van_graphics.pnml"
-#include "src/wagons/Gen5/Wagon_Gen5_Livestock_Van_item.pnml"
+#include "src/Wagons/Gen5/Wagon_Gen5_Livestock_Van_graphics.pnml"
+#include "src/Wagons/Gen5/Wagon_Gen5_Livestock_Van_item.pnml"
 
 
 //// WAGONS - GEN6
-#include "src/wagons/Gen6/Wagon_Gen6_Flatcar_graphics.pnml"
-#include "src/wagons/Gen6/Wagon_Gen6_Flatcar_item.pnml"
+#include "src/Wagons/Gen6/Wagon_Gen6_Flatcar_graphics.pnml"
+#include "src/Wagons/Gen6/Wagon_Gen6_Flatcar_item.pnml"
 
-#include "src/wagons/Gen6/Wagon_Gen6_Heavy_Flatcar_graphics.pnml"
-#include "src/wagons/Gen6/Wagon_Gen6_Heavy_Flatcar_item.pnml"
+#include "src/Wagons/Gen6/Wagon_Gen6_Heavy_Flatcar_graphics.pnml"
+#include "src/Wagons/Gen6/Wagon_Gen6_Heavy_Flatcar_item.pnml"
 
-#include "src/wagons/Gen6/Wagon_Gen6_Boxcar_Type1_graphics.pnml"
-#include "src/wagons/Gen6/Wagon_Gen6_Boxcar_Type1_item.pnml"
+#include "src/Wagons/Gen6/Wagon_Gen6_Boxcar_Type1_graphics.pnml"
+#include "src/Wagons/Gen6/Wagon_Gen6_Boxcar_Type1_item.pnml"
 
-#include "src/wagons/Gen6/Wagon_Gen6_Tanker_graphics.pnml"
-#include "src/wagons/Gen6/Wagon_Gen6_Tanker_item.pnml"
+#include "src/Wagons/Gen6/Wagon_Gen6_Tanker_graphics.pnml"
+#include "src/Wagons/Gen6/Wagon_Gen6_Tanker_item.pnml"
 
-#include "src/wagons/Gen6/Wagon_Gen6_Gondola_graphics.pnml"
-#include "src/wagons/Gen6/Wagon_Gen6_Gondola_item.pnml"
+#include "src/Wagons/Gen6/Wagon_Gen6_Gondola_graphics.pnml"
+#include "src/Wagons/Gen6/Wagon_Gen6_Gondola_item.pnml"
 
-#include "src/wagons/Gen6/Wagon_Gen6_Silo_Type1_graphics.pnml"
-#include "src/wagons/Gen6/Wagon_Gen6_Silo_Type1_item.pnml"
+#include "src/Wagons/Gen6/Wagon_Gen6_Silo_Type1_graphics.pnml"
+#include "src/Wagons/Gen6/Wagon_Gen6_Silo_Type1_item.pnml"
 
-#include "src/wagons/Gen6/Wagon_Gen6_Hopper_Type1_graphics.pnml"
-#include "src/wagons/Gen6/Wagon_Gen6_Hopper_Type1_item.pnml"
+#include "src/Wagons/Gen6/Wagon_Gen6_Hopper_Type1_graphics.pnml"
+#include "src/Wagons/Gen6/Wagon_Gen6_Hopper_Type1_item.pnml"
 
-#include "src/wagons/Gen6/Wagon_Gen6_Car_Transporter_graphics.pnml"
-#include "src/wagons/Gen6/Wagon_Gen6_Car_Transporter_item.pnml"
+#include "src/Wagons/Gen6/Wagon_Gen6_Car_Transporter_graphics.pnml"
+#include "src/Wagons/Gen6/Wagon_Gen6_Car_Transporter_item.pnml"
 
-#include "src/wagons/Gen6/Wagon_Gen6_Container_Carrier_graphics.pnml"
-#include "src/wagons/Gen6/Wagon_Gen6_Container_Carrier_item.pnml"
+#include "src/Wagons/Gen6/Wagon_Gen6_Container_Carrier_graphics.pnml"
+#include "src/Wagons/Gen6/Wagon_Gen6_Container_Carrier_item.pnml"
 
-#include "src/wagons/Gen6/Wagon_Gen6_Centerbeam_graphics.pnml"
-#include "src/wagons/Gen6/Wagon_Gen6_Centerbeam_item.pnml"
+#include "src/Wagons/Gen6/Wagon_Gen6_Centerbeam_graphics.pnml"
+#include "src/Wagons/Gen6/Wagon_Gen6_Centerbeam_item.pnml"
 
-#include "src/wagons/Gen6/Wagon_Gen6_Container_Doublestack_graphics.pnml"
-#include "src/wagons/Gen6/Wagon_Gen6_Container_Doublestack_item.pnml"
+#include "src/Wagons/Gen6/Wagon_Gen6_Container_Doublestack_graphics.pnml"
+#include "src/Wagons/Gen6/Wagon_Gen6_Container_Doublestack_item.pnml"
 
-#include "src/wagons/Gen6/Wagon_Gen6_Superheavy_Flatcar_graphics.pnml"
-#include "src/wagons/Gen6/Wagon_Gen6_Superheavy_Flatcar_item.pnml"
+#include "src/Wagons/Gen6/Wagon_Gen6_Superheavy_Flatcar_graphics.pnml"
+#include "src/Wagons/Gen6/Wagon_Gen6_Superheavy_Flatcar_item.pnml"
 
-#include "src/wagons/Gen6/Wagon_Gen6_Boxcar_Type2_graphics.pnml"
-#include "src/wagons/Gen6/Wagon_Gen6_Boxcar_Type2_item.pnml"
+#include "src/Wagons/Gen6/Wagon_Gen6_Boxcar_Type2_graphics.pnml"
+#include "src/Wagons/Gen6/Wagon_Gen6_Boxcar_Type2_item.pnml"
 
-#include "src/wagons/Gen6/Wagon_Gen6_Silo_Type2_graphics.pnml"
-#include "src/wagons/Gen6/Wagon_Gen6_Silo_Type2_item.pnml"
+#include "src/Wagons/Gen6/Wagon_Gen6_Silo_Type2_graphics.pnml"
+#include "src/Wagons/Gen6/Wagon_Gen6_Silo_Type2_item.pnml"
 
-#include "src/wagons/Gen6/Wagon_Gen6_Hopper_Type2_graphics.pnml"
-#include "src/wagons/Gen6/Wagon_Gen6_Hopper_Type2_item.pnml"
+#include "src/Wagons/Gen6/Wagon_Gen6_Hopper_Type2_graphics.pnml"
+#include "src/Wagons/Gen6/Wagon_Gen6_Hopper_Type2_item.pnml"
 
-#include "src/wagons/Gen6/Wagon_Gen6_Livestock_Van_graphics.pnml"
-#include "src/wagons/Gen6/Wagon_Gen6_Livestock_Van_item.pnml"
+#include "src/Wagons/Gen6/Wagon_Gen6_Livestock_Van_graphics.pnml"
+#include "src/Wagons/Gen6/Wagon_Gen6_Livestock_Van_item.pnml"
 
 
 //// WAGONS - SERVICE_CAR
-#include "src/wagons/Service_Car/Wagon_Service_Car_Type1_graphics.pnml"
-#include "src/wagons/Service_Car/Wagon_Service_Car_Type1_item.pnml"
+#include "src/Wagons/Service_Car/Wagon_Service_Car_Type1_graphics.pnml"
+#include "src/Wagons/Service_Car/Wagon_Service_Car_Type1_item.pnml"
 
-#include "src/wagons/Service_Car/Wagon_Service_Car_Type2_graphics.pnml"
-#include "src/wagons/Service_Car/Wagon_Service_Car_Type2_item.pnml"
+#include "src/Wagons/Service_Car/Wagon_Service_Car_Type2_graphics.pnml"
+#include "src/Wagons/Service_Car/Wagon_Service_Car_Type2_item.pnml"
 
 // Sort vehicles in purchase list
 #include "src/vehiclesort.pnml"
