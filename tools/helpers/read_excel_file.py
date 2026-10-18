@@ -7,6 +7,42 @@ from tools.helpers.paths import EXCEL_PATH, match_disk_case
 warnings.filterwarnings("ignore", category=UserWarning, module="openpyxl")
 
 
+# The old 'roster' sheet derived these from REGION1..4 (concatenated with "_") via substring searches.
+# The tokens are what its formulas looked for, in addition to the region's own name.
+REGION_FLAG_TOKENS = {
+    "AFRICA": ["ALL_REGION", "AFRICA", "OLD_WORLD", "NON_EUROPEAN"],
+    "ASIA": ["ALL_REGION", "ASIA", "OLD_WORLD", "NON_EUROPEAN", "APAC", "COMECON", "POST_SOVIET_BALTIC"],
+    "SOUTHERN_EUROPE": ["ALL_REGION", "ALL_EUROPE", "SOUTHERN_EUROPE", "OLD_WORLD"],
+    "EASTERN_EUROPE": ["ALL_REGION", "ALL_EUROPE", "EASTERN_EUROPE", "OLD_WORLD", "COMECON", "POST_SOVIET_BALTIC"],
+    "WESTERN_EUROPE": ["ALL_REGION", "ALL_EUROPE", "WESTERN_EUROPE", "OLD_WORLD", "NORTH_WEST_EUROPE"],
+    "NORTHERN_EUROPE": [
+        "ALL_REGION",
+        "ALL_EUROPE",
+        "NORTHERN_EUROPE",
+        "OLD_WORLD",
+        "NORTH_WEST_EUROPE",
+        "POST_SOVIET_BALTIC",
+    ],
+    "NORTH_AMERICA": ["ALL_REGION", "ALL_AMERICA", "NORTH_AMERICA", "NON_EUROPEAN"],
+    "SOUTH_AMERICA": ["ALL_REGION", "ALL_AMERICA", "SOUTH_AMERICA", "NON_EUROPEAN", "COMECON_EXTENDED"],
+    "OCEANIA": ["ALL_REGION", "OCEANIA", "APAC"],
+}
+
+
+def add_region_flags(df: pd.DataFrame) -> pd.DataFrame:
+    """Adds REGION_CONC plus one boolean column per region (AFRICA, ASIA, ...) based on REGION1..REGION4."""
+    region_cols = [c for c in ("REGION1", "REGION2", "REGION3", "REGION4") if c in df.columns]
+    region_conc = (
+        df[region_cols].astype("string").fillna("").agg("_".join, axis=1).str.upper()
+        if region_cols
+        else pd.Series("", index=df.index)
+    )
+    df["REGION_CONC"] = region_conc
+    for flag, tokens in REGION_FLAG_TOKENS.items():
+        df[flag] = region_conc.apply(lambda conc, t=tokens: any(tok in conc for tok in t))
+    return df
+
+
 def get_excel_path() -> str:
     return EXCEL_PATH
 
@@ -77,7 +113,6 @@ def load_master_data(excel_path: str):
         "properties",
         "track_types",
         "graphics_properties",
-        "roster",
     ]
 
     text_columns = ["ITEM", "NAME", "VEHIDCODE", "CARGODEF", "WEB"]
@@ -113,6 +148,9 @@ def load_master_data(excel_path: str):
         df_master["SAVE_TO"] = df_master["SAVE_TO"].map(
             lambda p: match_disk_case(p) if isinstance(p, str) else p
         )
+
+    # Region flags used to live in the (now removed) 'roster' sheet
+    df_master = add_region_flags(df_master)
 
     # Final safety check before returning from load_master_data
     # df_master['COUNTRY_CODE'] = df_master['COUNTRY_CODE'].fillna('NA')
