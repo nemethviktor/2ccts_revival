@@ -13,6 +13,9 @@
   - Refined the role definition for `metro`, this has very little other effect on the game, it's mostly a fad, unless you filter on roles.
   - Wagons have been re-templated and simplified in the code. Also now Type 1 Hoppers have Food graphics because they had been previous reallocated to food-only.
   - Some superflous templates (on top of the above) have been merged, this shouldn't affect gamplay.
+  - The Excel vehicle database is now Excel 2019 compatible: `XLOOKUP`, `XMATCH`, `LET`, `LAMBDA`/`BYROW`, `TEXTBEFORE`/`TEXTAFTER` and dynamic-array formulas were replaced with `INDEX`/`MATCH` and classic text functions. The generated output is identical.
+  - Region flags are now computed in python rather than in the Excel file.
+  - Added a Linux build script (`pybuild_deb.sh`) and made folder-name casing match the disk so the build works on case-sensitive file systems.
 - VEHICLE ADDS:
   - `Siemens Vectron MS`
   - `Siemens Vectron DE`
