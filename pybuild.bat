@@ -1,6 +1,11 @@
 @echo off
 cls
 
+:: Use the project venv (.venv in repo root); create it on first run
+set "PY=%~dp0.venv\Scripts\python.exe"
+if not exist "%PY%" call "%~dp0tools\installpyrequirements.bat"
+if not exist "%PY%" exit /b 1
+
 :: Capture the first argument, default to 'n' if empty
 set "BUILD_ONLY=%~1"
 if "%BUILD_ONLY%"=="" set "BUILD_ONLY=n"
@@ -11,7 +16,7 @@ powershell -Command "Get-Date -Format 'yyyy-MM-dd:HH:mm:ss'"
 :: If user passed 'y' or 'Y', skip straight to the build process
 if /I "%BUILD_ONLY%"=="y" goto build_process
 
-python -m tools.build
+"%PY%" -m tools.build
 
 :build_process
 echo --- Build Start ---
@@ -29,7 +34,7 @@ IF EXIST copygrftogoogledriveshare.bat (
 if /I "%BUILD_ONLY%"=="y" goto end_process
 
 rem the below takes ages and so we run it after the build. no need to wait just to test if build works.
-python -m tools.generators.gap_analysis
+"%PY%" -m tools.generators.gap_analysis
 
 :end_process
 :: Print end time
