@@ -48,6 +48,7 @@
   - `EMD G26` was added to `South America`
   - `Superheavy` had incorrect calculation for running cost, it's now been corrected, it's therefore around double the cost now.
   - `Burnham 2-6-0 15857-15871` had the wrong template and was missing the tender. It's now correct but is longer as such.
+  - `BREL Mk3 Coach` ( + mail) speeds bumped to 201km/h
 - VEHICLE REMOVALS:
   - `EMD/Clyde JT26C-2SS` was removed because it had been an identical duplicate of `EMD/Clyde JT26C-2SS V-line G`. One had a top speed of 114 km/h the other 115 km/h but otherwise identical specs.
   - `ABB IC3 [Israel]` was removed because it had been an identical duplicate of `ABB IC3 Y2` where only the intro dates differed by 4 years.

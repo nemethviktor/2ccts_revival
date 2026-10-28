@@ -16,9 +16,9 @@ item(FEAT_TRAINS, item_mu_coach_gen4_brel_mk3_mail_coach) {
         vehicle_life: 48;
         retire_early: 0;
         loading_speed: isUltraSpeed ? 255 : (param_loadingspeed == 0) ? 15/2 : (param_loadingspeed == 2) ? 15*2 : 15;
-        cost_factor: 47.57;
-        running_cost_factor: 18.83;
-        speed: 160 km/h;
+        cost_factor: 47.6;
+        running_cost_factor: 18.91;
+        speed: 201 km/h;
         power: 0 hp;
         cargo_capacity: 91;
         weight: 35 ton;
