@@ -2,7 +2,7 @@
 
 ## 4.1
 
-### 4.1 [2026xxxx]
+### 4.1 [20261111]
 - CODE CHANGES:
   - **Warning:** there is a likelihood that this version is not savegame compatible with 4.0 if you've used the `CargoEMU` or Maglev (Gen7M Wagons or Coaches) classes. I had to re-number those IDs because they were >`16k` and as such broke the `articulated` callbacks.
   - `Dual mode` badges and functionality are now available. "Current" Running cost, power and speed values are take from real values for the various operating modes. (ie "is it running on ELRL right now or not?")
