@@ -31,6 +31,7 @@ switch(FEAT_TRAINS, SELF, switch_electric_acme_corp__hs002_visual_effect, positi
 /// Length
 switch(FEAT_TRAINS, SELF, switch_electric_acme_corp__hs002_length, position_in_vehid_chain % 2) {
     0: 8;
+	1: 8;
 	0;
 }
 

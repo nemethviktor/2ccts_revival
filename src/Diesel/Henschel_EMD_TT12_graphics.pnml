@@ -32,7 +32,7 @@ switch(FEAT_TRAINS, SELF, switch_diesel_henschel_emd_tt12_visual_effect, positio
 /// Length
 switch(FEAT_TRAINS, SELF, switch_diesel_henschel_emd_tt12_length, position_in_vehid_chain % 2) {
     0: 8;
-	0;
+	1;
 }
 
 /// Articulated Return

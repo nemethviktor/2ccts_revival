@@ -2,6 +2,14 @@
 
 ## 4.1
 
+### 4.1.1 [2026xxxx]
+- CODE CHANGES:
+  - Fixed invalid `length` callback (0x11) results of `0` for the second part of some articulated vehicles. This caused repeated "provided invalid data" warnings in the debug console.
+- VEHICLE CHANGES:
+  - `Henschel EMD TT12`, `Alstom/CRRC Datong HXD2`, `DEVZ DE1`, `ACME Corp. V200D DMU`, `GE EL-2B` and `Skoda 82E` now have a valid length for their second part.
+  - `GE C-C 4400 RFFSA` is now a single-unit vehicle (was a two-part articulated vehicle).
+  - `Henschel EMD TT12` sprite update.
+
 ### 4.1 [20261111]
 - CODE CHANGES:
   - **Warning:** there is a likelihood that this version is not savegame compatible with 4.0 if you've used the `CargoEMU` or Maglev (Gen7M Wagons or Coaches) classes. I had to re-number those IDs because they were >`16k` and as such broke the `articulated` callbacks.

@@ -31,7 +31,7 @@ switch(FEAT_TRAINS, SELF, switch_electric_alstom_crrc_datong_hxd2_visual_effect,
 /// Length
 switch(FEAT_TRAINS, SELF, switch_electric_alstom_crrc_datong_hxd2_length, position_in_vehid_chain % 2) {
     0: 7;
-	0;
+	7;
 }
 
 /// Articulated Return
